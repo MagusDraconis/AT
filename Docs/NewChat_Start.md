@@ -166,10 +166,39 @@ Synchronization → long-range collective behaviour.
 Critical density → threshold for structure formation.
 Universal family F4 → the single robust resonance mode at current scale.
 
+### TQM-010
+
+Local resonance condensation with 2D spatial embedding (64 parameter combos).
+
+Result:
+
+PROTO-MATTER STATES DETECTED — the first TQM experiment to demonstrate
+localized coherent structures persisting in a globally incoherent background.
+
+- 64/64 combos produced condensates (local R ≥ 0.80)
+- 14 combos achieved proto-matter: global R < 0.5, local R > 0.80, τ ≥ 1000
+- Multiple Clusters placement: best model — 5.12 condensates/run, global R=0.20
+- Longest-lived: τ=4500 at N=500, λ=0.05, MultipleClusters, global R=0.28-0.44
+- 29/64 combos have ≥2 coexisting condensates (multi-particle states)
+- All placement models produce condensates but Uniform/Hierarchical tend toward global sync
+
+Key finding: Local resonance condensation is the correct mechanism for proto-matter.
+Structures emerge from local density enhancement, not global synchronization.
+
+## Current Working Hypothesis
+
+Matter is not fundamental. Matter consists of dynamically stabilized
+wave structures inside a temporal field.
+
+Confirmed: Local resonance condensates form stable, persistent structures
+embedded in a globally incoherent background. These are proto-matter states.
+
+Mechanism: Resonance → localized condensation → proto-matter structures.
+Synchronization → long-range collective behavior between structures.
+
 ## Next Open Questions
 
-1. What conditions produce multiple reproducible families?
-2. Do universal families persist at larger N (500, 1000)?
-3. Do clusters interact/scatter like proto-particles?
-4. Can heterogeneous natural frequencies seed diverse families?
-5. What about structured (non-random) coupling topologies?
+1. Do condensates interact/scatter like proto-particles?
+2. Are condensates robust against external perturbations?
+3. Do condensate properties scale with N and λ?
+4. Can 3D spatial embedding produce richer condensate structures?
