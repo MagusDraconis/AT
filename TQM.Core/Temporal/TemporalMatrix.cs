@@ -69,6 +69,45 @@ public sealed class TemporalMatrix
     }
 
     /// <summary>
+    /// Fills this matrix with distance-dependent coupling from spatial oscillator positions.
+    /// Kᵢⱼ = K · exp(−dᵢⱼ / λ), where dᵢⱼ is the Euclidean distance between oscillators i and j.
+    /// </summary>
+    public void FillSpatialCoupling(IReadOnlyList<TemporalNode> nodes, double k, double lambda, bool normalize)
+    {
+        if (nodes.Count != Size)
+            throw new ArgumentException($"Node count ({nodes.Count}) must match matrix size ({Size}).");
+
+        for (int i = 0; i < Size; i++)
+        {
+            for (int j = i + 1; j < Size; j++)
+            {
+                double dx = nodes[i].X - nodes[j].X;
+                double dy = nodes[i].Y - nodes[j].Y;
+                double dist = Math.Sqrt(dx * dx + dy * dy);
+                double coupling = k * Math.Exp(-dist / lambda);
+
+                _couplings[i, j] = coupling;
+                _couplings[j, i] = coupling;
+            }
+        }
+
+        // Normalize each row so row sum = 1 (optional).
+        if (normalize)
+        {
+            for (int i = 0; i < Size; i++)
+            {
+                double rowSum = 0;
+                for (int j = 0; j < Size; j++)
+                    if (i != j) rowSum += _couplings[i, j];
+
+                if (rowSum > 1e-15)
+                    for (int j = 0; j < Size; j++)
+                        if (i != j) _couplings[i, j] /= rowSum;
+            }
+        }
+    }
+
+    /// <summary>
     /// Creates a deep copy of the coupling matrix.
     /// </summary>
     public TemporalMatrix Clone()

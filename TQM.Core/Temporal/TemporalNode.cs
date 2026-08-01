@@ -12,6 +12,16 @@ public sealed class TemporalNode
     public double Frequency { get; set; }
     public double Energy { get; set; }
 
+    /// <summary>
+    /// Spatial X coordinate (for distance-dependent coupling). Default 0.
+    /// </summary>
+    public double X { get; set; }
+
+    /// <summary>
+    /// Spatial Y coordinate (for distance-dependent coupling). Default 0.
+    /// </summary>
+    public double Y { get; set; }
+
     public TemporalNode(int id, double phase = 0.0, double frequency = 1.0, double energy = 0.0)
     {
         if (id < 0)
