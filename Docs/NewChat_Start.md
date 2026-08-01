@@ -121,16 +121,27 @@ Resonance family discovery above critical density.
 
 Result:
 
-5 DISTINCT resonance families discovered from 51 clusters across 60 parameter
-combinations:
-- Family 0: transient (42 members, τ ≈ 12, size ≈ 7.5) — the "noise" family
-- Families 1-4: stable (2-3 members each, τ = 4000-4500, sizes 49-200)
-- Families 1,2,3 coexist at high (K=5, ρ=0.50) across all N
-- Family 4 appears at intermediate (K, ρ)
+5 resonance families were initially identified from 51 clusters across 60 parameter
+combinations. However, TQM-008 later showed only F4 is truly reproducible.
 
-Families have distinct frequency bands, lifetime profiles, and occupy
-different regions of (K, ρ, N) space. The spectrum is rich but not unlimited —
-homogeneous natural frequencies constrain family diversity.
+### TQM-008
+
+Reproducibility analysis of TQM-007 families (400 simulations, 100 seeds × 4 parameter sets).
+
+Result:
+
+Only F4 Stable Coherent is UNIVERSAL (74% occurrence, reproducibility score 0.721).
+- F4 appears in 97-100% of runs at K ≥ 5
+- F0 Transient: only at (ρ=0.30, K=3.0) — noise regime
+- F1 Stable Large: NOT DETECTED — TQM-007 artifact
+- F2 Ultra-Stable Compact: NOT DETECTED — TQM-007 artifact
+- F3 Stable Medium: Seed Artifact (1% occurrence)
+
+Best parameter set: (ρ=0.50, K=5.0) → F4 reproducibility 0.980.
+
+Conclusion: TQM-007's apparent family diversity was largely driven by a single
+seed. Only one robust, reproducible family exists at N=100 — the universal
+coherent mode. Higher N or heterogeneous coupling may be needed for true diversity.
 
 ## Current Working Hypothesis
 
@@ -142,28 +153,23 @@ A ↔ B
 
 The temporal field is both a synchronization medium AND a resonance medium.
 
-Confirmed: Stable resonance clusters form spontaneously in the temporal field.
-These clusters are the first TQM candidate for proto-particle structures.
+Confirmed: Stable resonance clusters form. A critical density ρc exists.
+Only ONE universal resonance family (F4) is robustly reproducible at N=100.
 
-Confirmed: A critical density ρc exists for cluster formation in Kuramoto networks.
-Stable structures emerge only above this threshold — analogous to a phase transition.
-
-Confirmed: Multiple distinct resonance families exist. Different (K, ρ, N)
-parameter combinations produce clusters with distinct frequency, lifetime,
-and size signatures. These families are candidates for proto-particle species.
+Multiple families appeared in TQM-007 but failed reproducibility —
+true family diversity may require larger systems or structured coupling.
 
 Current emerging interpretation:
 
-Resonance → formation of localized matter-like structures (clusters).
-Synchronization → long-range collective behaviour between structures.
-Critical density → threshold for spontaneous structure formation.
-Resonance families → distinct stable states (proto-particle species).
+Resonance → formation of localized matter-like structures.
+Synchronization → long-range collective behaviour.
+Critical density → threshold for structure formation.
+Universal family F4 → the single robust resonance mode at current scale.
 
 ## Next Open Questions
 
-1. Can cluster formation be enhanced with nonlinear coupling?
-2. Do clusters interact/scatter like proto-particles?
-3. What parameter regime (α, γ, N) maximizes cluster formation?
-4. Can clusters form in 2D fields with richer spatial structure?
-5. Does the critical density ρc scale with system size N?
-6. Can heterogeneous natural frequencies seed more diverse families?
+1. What conditions produce multiple reproducible families?
+2. Do universal families persist at larger N (500, 1000)?
+3. Do clusters interact/scatter like proto-particles?
+4. Can heterogeneous natural frequencies seed diverse families?
+5. What about structured (non-random) coupling topologies?
