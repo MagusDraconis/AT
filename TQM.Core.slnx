@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="TQM.Tests/TQM.Tests.csproj" />
+  <Project Path="TQM.Core/TQM.Core.csproj" />
+</Solution>

@@ -1,4 +1,0 @@
-<Solution>
-  <Project Path="../TQM.Tests/TQM.Tests.csproj" />
-  <Project Path="TQM.Core.csproj" />
-</Solution>
