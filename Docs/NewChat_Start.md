@@ -214,9 +214,22 @@ embedded in a globally incoherent background. These are proto-matter states.
 Mechanism: Resonance → localized condensation → proto-matter structures.
 Synchronization → long-range collective behavior between structures.
 
-## Next Open Questions
+### TQM-012
 
-1. Do condensates interact/scatter like proto-particles?
-2. Are condensates robust against external perturbations?
-3. Do condensate properties scale with N and λ?
-4. Can 3D spatial embedding produce richer condensate structures?
+Two-condensate interaction experiment (64 combos, 4 sep × 4 phase × 4 K).
+
+Result:
+
+Condensates overwhelmingly MERGE (80%, 51/64 cases) when within coupling range.
+The remaining 13 cases (20%) are NEUTRAL coexistence at large separation (0.50)
+with weak coupling (K=1,2).
+
+- No attraction or repulsion observed — binary outcome: merge or coexist
+- Merges occur at first checkpoint (250 iterations) — rapid phase-locking
+- Critical separation: ≤0.25 (5λ) → always merges; 0.50 (10λ) → K-dependent
+- Phase offset has minimal effect — merger dominates regardless
+- Separation stays constant (no drift) — condensate positions are fixed by oscillators
+- Final phase difference: ~0 for merged cases, ~2 rad for separated neutral cases
+
+Key insight: Condensate interaction is a threshold phenomenon, not a gradual force.
+Within coupling range → rapid merger. Beyond range → independent coexistence.
