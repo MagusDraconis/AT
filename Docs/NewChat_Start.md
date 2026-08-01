@@ -98,6 +98,23 @@ The hypothesis that matter = dynamically stabilized resonance structures
 is SUPPORTED — stable clusters DO form. But they do not yet dominate the
 field at current parameters.
 
+### TQM-006
+
+Critical resonance density in Kuramoto networks.
+
+Result:
+
+A SHARP phase transition was identified at ρc ≈ 0.09.
+- Below ρc: transient clusters, R < 0.5
+- Above ρc: persistent clusters, R → 1.0
+- 20/20 (N,K) combinations showed the transition
+- Higher K reduces ρc (K=5.0 → ρc=0.05)
+
+The transition is a percolation-like phenomenon: once the random coupling
+graph reaches sufficient connectivity, global coherent modes emerge.
+This is the first TQM experiment to identify a well-defined critical threshold
+for the emergence of stable ordered structures.
+
 ## Current Working Hypothesis
 
 A ↔ Temporal Field ↔ B
@@ -111,10 +128,14 @@ The temporal field is both a synchronization medium AND a resonance medium.
 Confirmed: Stable resonance clusters form spontaneously in the temporal field.
 These clusters are the first TQM candidate for proto-particle structures.
 
+Confirmed: A critical density ρc exists for cluster formation in Kuramoto networks.
+Stable structures emerge only above this threshold — analogous to a phase transition.
+
 Current emerging interpretation:
 
 Resonance → formation of localized matter-like structures (clusters).
 Synchronization → long-range collective behaviour between structures.
+Critical density → threshold for spontaneous structure formation.
 
 This distinction is now a primary research direction of TQM.
 
@@ -124,3 +145,4 @@ This distinction is now a primary research direction of TQM.
 2. Do clusters interact/scatter like proto-particles?
 3. What parameter regime (α, γ, N) maximizes cluster formation?
 4. Can clusters form in 2D fields with richer spatial structure?
+5. Does the critical density ρc scale with system size N (finite-size scaling)?
