@@ -52,6 +52,16 @@ public sealed class SynchronizationCluster
     /// </summary>
     public double AveragePhase { get; }
 
+    /// <summary>
+    /// Mean natural frequency of oscillators in this cluster (computed at detection).
+    /// </summary>
+    public double MeanFrequency { get; set; }
+
+    /// <summary>
+    /// Mean accumulated energy of oscillators in this cluster (computed at detection).
+    /// </summary>
+    public double MeanEnergy { get; set; }
+
     public SynchronizationCluster(
         int clusterId,
         List<int> nodeIds,

@@ -115,6 +115,23 @@ graph reaches sufficient connectivity, global coherent modes emerge.
 This is the first TQM experiment to identify a well-defined critical threshold
 for the emergence of stable ordered structures.
 
+### TQM-007
+
+Resonance family discovery above critical density.
+
+Result:
+
+5 DISTINCT resonance families discovered from 51 clusters across 60 parameter
+combinations:
+- Family 0: transient (42 members, τ ≈ 12, size ≈ 7.5) — the "noise" family
+- Families 1-4: stable (2-3 members each, τ = 4000-4500, sizes 49-200)
+- Families 1,2,3 coexist at high (K=5, ρ=0.50) across all N
+- Family 4 appears at intermediate (K, ρ)
+
+Families have distinct frequency bands, lifetime profiles, and occupy
+different regions of (K, ρ, N) space. The spectrum is rich but not unlimited —
+homogeneous natural frequencies constrain family diversity.
+
 ## Current Working Hypothesis
 
 A ↔ Temporal Field ↔ B
@@ -131,13 +148,16 @@ These clusters are the first TQM candidate for proto-particle structures.
 Confirmed: A critical density ρc exists for cluster formation in Kuramoto networks.
 Stable structures emerge only above this threshold — analogous to a phase transition.
 
+Confirmed: Multiple distinct resonance families exist. Different (K, ρ, N)
+parameter combinations produce clusters with distinct frequency, lifetime,
+and size signatures. These families are candidates for proto-particle species.
+
 Current emerging interpretation:
 
 Resonance → formation of localized matter-like structures (clusters).
 Synchronization → long-range collective behaviour between structures.
 Critical density → threshold for spontaneous structure formation.
-
-This distinction is now a primary research direction of TQM.
+Resonance families → distinct stable states (proto-particle species).
 
 ## Next Open Questions
 
@@ -145,4 +165,5 @@ This distinction is now a primary research direction of TQM.
 2. Do clusters interact/scatter like proto-particles?
 3. What parameter regime (α, γ, N) maximizes cluster formation?
 4. Can clusters form in 2D fields with richer spatial structure?
-5. Does the critical density ρc scale with system size N (finite-size scaling)?
+5. Does the critical density ρc scale with system size N?
+6. Can heterogeneous natural frequencies seed more diverse families?

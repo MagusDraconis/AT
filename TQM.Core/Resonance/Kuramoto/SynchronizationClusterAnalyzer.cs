@@ -116,12 +116,24 @@ public sealed class SynchronizationClusterAnalyzer
 
                 if (r >= MinSyncThreshold)
                 {
-                    clusters.Add(new SynchronizationCluster(
-                        -1, // id assigned during tracking
-                        component,
-                        r,
-                        iteration,
-                        avgPhase));
+                    // Compute mean frequency and energy for the cluster.
+                    double meanFreq = 0, meanEnergy = 0;
+                    foreach (int idx in component)
+                    {
+                        meanFreq += nodes[idx].Frequency;
+                        meanEnergy += nodes[idx].Energy;
+                    }
+                    meanFreq /= m;
+                    meanEnergy /= m;
+
+                    var cluster = new SynchronizationCluster(
+                        -1, component, r, iteration, avgPhase)
+                    {
+                        MeanFrequency = meanFreq,
+                        MeanEnergy = meanEnergy
+                    };
+
+                    clusters.Add(cluster);
                 }
             }
         }
