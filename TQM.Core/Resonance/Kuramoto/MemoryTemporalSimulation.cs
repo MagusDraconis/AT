@@ -69,4 +69,12 @@ public sealed class MemoryTemporalSimulation
     {
         for (int i = 0; i < iterations; i++) Step();
     }
+
+    /// <summary>
+    /// Zeros the memory between two oscillators.
+    /// </summary>
+    public void ZeroMemory(int i, int j)
+    {
+        _memory[i, j] = 0;
+    }
 }
