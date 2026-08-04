@@ -1705,6 +1705,29 @@ The PDE structure forces Q conservation. But what determines the
 MINIMUM viable condensate? Is there a critical width w_c below
 which diffusion overcomes reaction and the condensate evaporates?
 
+### TQM-118
+
+Topological Charge Creation (175 parameter combinations).
+D: FIRST-PRINCIPLES PROTO-MATTER GENESIS. Q=0 is a stable PDE
+equilibrium but finite-N fluctuations (⟨R⟩≈1/√N) make it
+metastable. Creation condition: c₀·M₀ > D_R/w². Critical
+density matches TQM-006's ρc≈0.09. Charge created as kink-
+antikink pairs (Q=+1 minimum). Nucleation process.
+
+## Current Working Hypothesis
+
+Proto-matter genesis is a NUCLEATION PROCESS governed by the
+reaction-diffusion threshold c₀·M₀ > D_R/w². Q=0 is the PDE
+vacuum (stable at N→∞). Finite-N fluctuations create local
+R and M enhancements; when both exceed threshold, a kink-antikink
+pair nucleates → Q=+1. TQM-006's ρc is this threshold.
+
+## Next Open Question
+
+If Q=0 is the PDE vacuum, can multiple vacua exist? Is there
+a phase transition between Q=0 (disordered) and Q>0 (ordered)
+states as a function of K, λ, N?
+
   dR/dt = N·M · R·(1-R) · g(K, λ)
 
 with N-dependence and logistic saturation. The linear form
