@@ -1538,10 +1538,43 @@ mathematical foundation for why synchronization is so robust
 
 The theory predicts R→1, M→K. But real Kuramoto systems don't always
 fully synchronize (TQM-080 showed R≈0.09 in initial states). What
-prevents the field collapse in practice? Is it:
-  (a) Finite-time observation (not enough time to converge)?
-  (b) Spatial heterogeneity breaking the mean-field?
-  (c) Noise or external driving counteracting the collapse?
+prevents the field collapse in practice?
+
+### TQM-107
+
+Local Structure Survival (4 spatial scenarios, 5000 iterations,
+position-dynamic Kuramoto with condensate detection).
+
+Result: C: STRONG SPATIAL EFFECTS — mean-field breaks down for
+multi-condensate systems.
+
+- **Single condensate**: R→1.0, mean-field ADEQUATE ✓
+- **Two condensates**: R stalls at 0.88, 2 condensates survive,
+  Local R=1.0 within each, mean-field FAILS ✗
+  The mean-field predicts dR/dt≈0.0007 but actual dR/dt≈0 —
+  condensates are internally synchronized but phase-incoherent.
+- **Multi (5 clusters)**: R→0.99, 4 condensates survive,
+  mean-field holds (condensates close enough to merge) ✓
+- **Random**: 6 condensates at R=0.81, mean-field FAILS ✗
+
+Key insight: THE MEAN-FIELD THEORY IS CORRECT LOCALLY but fails
+GLOBALLY for separated structures. Each condensate internally
+synchronizes (R_local→1) exactly as the theory predicts. But
+condensates separated beyond the coupling range (~3λ) cannot
+phase-lock to each other. Global R depends on the relative phases
+of condensates, which are random and frozen.
+
+This resolves the apparent contradiction between TQM-106
+(inevitable sync) and TQM-010-012 (persistent condensates):
+the mean-field is a SINGLE-CONDENSATE theory. Multi-condensate
+systems require spatial degrees of freedom beyond {R, M}.
+
+## Next Open Question
+
+If the mean-field theory describes single-condensate dynamics
+correctly, can it be extended to multi-condensate systems by
+treating each condensate as a separate {R_i, M_i} subsystem
+with weak inter-condensate coupling?
   c₀ ≈ 0.0047 (empirical, from spatial heterogeneity correction)
 
 The (1−R²) factor is NOT assumed — it emerges from the mean-field
