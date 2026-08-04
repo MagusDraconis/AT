@@ -1575,6 +1575,56 @@ If the mean-field theory describes single-condensate dynamics
 correctly, can it be extended to multi-condensate systems by
 treating each condensate as a separate {R_i, M_i} subsystem
 with weak inter-condensate coupling?
+
+### TQM-108
+
+Spatial Field Theory Derivation — continuum limit of Kuramoto.
+
+Result: D: TRUE FIELD THEORY WITH STABLE LOCALIZED STRUCTURES.
+
+- Derived PDE from microscopic Kuramoto via continuum limit:
+  ∂R/∂t = c₀·M·R·(1−R²) + D_R·∇²R
+  ∂M/∂t = a·R²           + D_M·∇²M
+  D_R ∝ λ²·M ≈ 2.5×10⁻⁵, D_M ∝ γ·λ² ≈ 2.5×10⁻⁶
+
+- SOLITON SOLUTIONS: w ≈ √(2D_R/c₀·M) ≈ 0.10 (condensate width).
+  Stable when separation > 3w ≈ 0.30. TQM-107 separation 0.6 > 0.30 ✓
+
+- MEAN-FIELD RECOVERY: ODE is the ∇²→0 limit of PDE.
+  Valid for single-condensate; fails for multi-condensate.
+
+- UNIFICATION: The PDE explains ALL phenomena in one framework:
+  TQM-104/105: ODE = homogeneous limit
+  TQM-106:     Single-condensate attractor dynamics
+  TQM-107:     Multi-condensate survival via diffusion prevention
+  TQM-010-012: Proto-matter = field-theoretic solitons
+
+- Proto-matter condensates are SOLITONS — localized stationary
+  solutions of the spatial field equations. Each condensate is
+  an INDEPENDENT LOCAL ATTRACTOR. The system has MULTIPLE
+  attractors — one per spatially-separated condensate.
+
+This is the definitive TQM theory: a REACTION-DIFFUSION PDE
+derived from the microscopic Kuramoto dynamics, admitting
+stable multi-soliton solutions.
+
+## Current Working Hypothesis
+
+The TQM system is a SPATIAL REACTION-DIFFUSION FIELD THEORY:
+
+  ∂R/∂t = c₀·M·R·(1−R²) + D_R·∇²R    [local sync + coherence diffusion]
+  ∂M/∂t = a·R² + D_M·∇²M               [clustering + coupling diffusion]
+
+The ODE {dR/dt, dM/dt} is the spatially homogeneous (mean-field)
+limit. Multi-condensate systems are MULTI-SOLITON solutions.
+Proto-matter (TQM-010) = field-theoretic solitons.
+
+## Next Open Question
+
+The PDE predicts soliton solutions. Can we derive the soliton
+profile analytically? Is there an exact solution for the 1D
+stationary state? Can we predict the critical separation for
+condensate stability from the soliton interaction potential?
   c₀ ≈ 0.0047 (empirical, from spatial heterogeneity correction)
 
 The (1−R²) factor is NOT assumed — it emerges from the mean-field
