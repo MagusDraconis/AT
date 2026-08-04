@@ -1682,8 +1682,28 @@ kinks) in the reaction-diffusion field theory.
 
 If Q is the fundamental conserved quantity, can a QUANTUM version be
 constructed? Does Q correspond to a particle number operator in a
-second-quantized field theory? Can the creation/annihilation of
-condensates be described by Q-changing operators?
+second-quantized field theory?
+
+### TQM-117
+
+Origin of Topological Charge. D: DERIVED, NOT DEFINED.
+Q = β₀({R>0.5}) = kink-pair count. Follows from one-way barrier:
+c₀·M·R·(1−R²) > 0 prevents R crossing 0.5 downward. Q is the
+inevitable consequence of the PDE reaction-diffusion structure.
+Equivalent to: connected domains, Betti number, Morse index.
+
+## Current Working Hypothesis
+
+Proto-matter is a TOPOLOGICAL CHARGE THEORY where Q = β₀({R>0.5})
+is the fundamental conserved quantity, derived from the PDE's
+one-way reaction barrier. Q is the Betti number of the superlevel
+set — a genuine topological invariant, not an empirical definition.
+
+## Next Open Question
+
+The PDE structure forces Q conservation. But what determines the
+MINIMUM viable condensate? Is there a critical width w_c below
+which diffusion overcomes reaction and the condensate evaporates?
 
   dR/dt = N·M · R·(1-R) · g(K, λ)
 
