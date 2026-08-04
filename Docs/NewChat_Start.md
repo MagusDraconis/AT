@@ -1623,11 +1623,55 @@ Proto-matter (TQM-010) = field-theoretic solitons.
 
 The PDE predicts soliton solutions. Can we derive the soliton
 profile analytically? Is there an exact solution for the 1D
-stationary state? Can we predict the critical separation for
-condensate stability from the soliton interaction potential?
-  c₀ ≈ 0.0047 (empirical, from spatial heterogeneity correction)
+stationary state?
 
-The (1−R²) factor is NOT assumed — it emerges from the mean-field
+### TQM-109
+
+Soliton Interaction Theory (50 pair simulations). C: Effective
+Particle Dynamics. PDE interaction force ~10⁻⁵ — negligible.
+Solitons are effectively independent at tested separations.
+
+### TQM-110
+
+PDE vs Discrete Regimes. C: Two Regime Theory. Coupling range
+= 5λ = 0.25. Discrete dominates at d<0.25; PDE at d>0.25 but
+PDE force is negligible. All observed condensate interactions
+are DISCRETE, not field-theoretic.
+
+### TQM-111
+
+Soliton Effective Mass. D: Proto-Particle Dynamics.
+m_eff = 4(1+M₀²)/(3w) ≈ 347. Resolves TQM-109 paradox:
+weak motion = small force × large inertia.
+
+### TQM-112
+
+Soliton Momentum. B: Weak Quasi-Momentum. P = m_eff·v defined
+but reaction-diffusion is dissipative — momentum not conserved.
+Solitons pinned by reaction terms, no free propagation.
+
+### TQM-113
+
+Topological Charge. D: TOPOLOGICAL PROTO-MATTER. Condensate
+count = #{R(x)>0.5} is an EXACT topological invariant (φ⁴-like
+kink). Explains TQM-011 96% stability: reaction ≫ diffusion
+prevents R crossing below 0.5.
+
+## Current Working Hypothesis
+
+Proto-matter condensates are TOPOLOGICAL SOLITONS (φ⁴-like kinks)
+in the spatial reaction-diffusion field theory. Their stability
+is topological (kink count conservation), not mechanical.
+They have effective mass (m_eff≈347) but cannot propagate freely
+(reaction-diffusion is dissipative). Interactions are dominated
+by discrete oscillator coupling within the coupling range (5λ),
+not by PDE soliton forces.
+
+## Next Open Question
+
+Can the topological kink model predict condensate FORMATION
+(not just stability)? What determines the MINIMUM condensate
+size? Is there a critical nucleus for proto-matter birth?
 ensemble average. N appears through M's definition (M depends on
 topology, K, λ, and weakly on N through finite-size effects).
 
