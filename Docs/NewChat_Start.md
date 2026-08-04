@@ -1650,46 +1650,40 @@ Soliton Momentum. B: Weak Quasi-Momentum. P = m_eff·v defined
 but reaction-diffusion is dissipative — momentum not conserved.
 Solitons pinned by reaction terms, no free propagation.
 
-### TQM-113
+### TQM-114
 
-Topological Charge. D: TOPOLOGICAL PROTO-MATTER. Condensate
-count = #{R(x)>0.5} is an EXACT topological invariant (φ⁴-like
-kink). Explains TQM-011 96% stability: reaction ≫ diffusion
-prevents R crossing below 0.5.
+Topological Species Spectrum (140 candidates, K∈[0.1..20],
+λ∈[0.01..0.5], N∈[10..500]). B: CONTINUOUS FAMILY — no discrete
+species. Width varies continuously with K,λ; mass ∝ 1/w.
+Only quantized property: Q ∈ ℕ (condensate count).
 
-## Current Working Hypothesis
+### TQM-115
 
-Proto-matter condensates are TOPOLOGICAL SOLITONS (φ⁴-like kinks)
-in the spatial reaction-diffusion field theory. Their stability
-is topological (kink count conservation), not mechanical.
-They have effective mass (m_eff≈347) but cannot propagate freely
-(reaction-diffusion is dissipative). Interactions are dominated
-by discrete oscillator coupling within the coupling range (5λ),
-not by PDE soliton forces.
+Topological Charge Robustness — hostile review. D: GENUINE
+CHARGE. Plateau of Q=1 spans T∈[0.10,0.85] (width 0.75, 15/17
+thresholds). Q is NOT a threshold artifact.
 
-## Next Open Question
+### TQM-116
 
-Can the topological kink model predict condensate FORMATION
-(not just stability)? What determines the MINIMUM condensate
-size? Is there a critical nucleus for proto-matter birth?
-ensemble average. N appears through M's definition (M depends on
-topology, K, λ, and weakly on N through finite-size effects).
-
-This is the FIRST-PRINCIPLES effective theory of the TQM system.
-
-## Next Open Question
-
-Can the coefficient c₀ be derived from the spatial structure of
-the coupling? Specifically:
-  c₀ = f(K, λ, topology)?
-Does c₀ vary systematically with K and λ in a way that can be
-predicted from the coupling distribution?
+Topological Charge Dynamics. D: TOPOLOGICAL CHARGE THEORY.
+Q conserved under PDE (dQ/dt=0). Allowed: Q→Q±1 (merger/split),
+Q→0 (collapse). Additive: Q(A∪B)=Q(A)+Q(B). Unified TQM-010..115.
 
 ## Current Working Hypothesis
 
-The {R, M} concept is CORRECT but INCOMPLETE. M is universal across
-coupling laws and topologies (confirmed by TQM-100 attacks 2, 3, 4).
-But the governing equation needs:
+Proto-matter is a TOPOLOGICAL CHARGE THEORY. The fundamental quantity
+is Q ∈ ℕ — the condensate count. Q is conserved under PDE evolution,
+additive, and integer-valued. All proto-matter phenomena (stability,
+mergers, multi-condensate states, identity exclusion) are manifestations
+of charge conservation. Condensates = Q=+1 topological solitons (φ⁴
+kinks) in the reaction-diffusion field theory.
+
+## Next Open Question
+
+If Q is the fundamental conserved quantity, can a QUANTUM version be
+constructed? Does Q correspond to a particle number operator in a
+second-quantized field theory? Can the creation/annihilation of
+condensates be described by Q-changing operators?
 
   dR/dt = N·M · R·(1-R) · g(K, λ)
 
