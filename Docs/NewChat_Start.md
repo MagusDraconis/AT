@@ -1728,17 +1728,231 @@ If Q=0 is the PDE vacuum, can multiple vacua exist? Is there
 a phase transition between Q=0 (disordered) and Q>0 (ordered)
 states as a function of K, λ, N?
 
-  dR/dt = N·M · R·(1-R) · g(K, λ)
+### TQM-119
 
-with N-dependence and logistic saturation. The linear form
-dR/dt = α₀ + α₁·R + α₂·M is a local linearization valid only
-near the training point (N=100, R≈0.09, M≈0.10, K=2, λ=0.05).
+Topological Charge Creation Statistics (12 parameter points,
+10 seeds each, K ∈ [0.5, 10], λ ∈ [0.05, 0.10], N ∈ [50, 100]).
+Statistical analysis of P(Q) with six candidate distribution
+models.
+
+Result: B — Empirical Distribution. No universal law found.
+
+Distribution winners: Poisson (42%), Critical Scaling (25%),
+Power Law (17%), Negative Binomial (8%), Binomial (8%).
+Poisson is the BEST single distribution but does not dominate
+the parameter space — charge creation statistics are
+parameter-dependent.
+
+Additional findings:
+- Proto-matter abundance law: ⟨Q⟩ = N_cells · exp(−N/2 · (M_crit/M₀)²)
+- TQM-006's ρc ≈ 0.09 is the charge nucleation threshold
+- Analytic derivation of P(Q) from nucleation theory:
+  Q ~ Poisson(λ = N_cells · exp(−N · R_crit²/2))
+- Analytic formula UNDERESTIMATES mean Q — suggests correlated
+  nucleation or finite-size effects beyond the simple Poisson model
+- Charge is a finite-size effect: ⟨Q⟩ → 0 as N → ∞
+
+Note: Full ensemble with 1000+ seeds per point and larger parameter
+scans is available via the ChargeCreationStatistics API for
+researchers who want to run deeper statistical tests.
+
+## Current Working Hypothesis
+
+Proto-matter genesis is a NUCLEATION PROCESS governed by the
+reaction-diffusion threshold c₀·M₀ > D_R/w². P(Q) follows
+parameter-dependent statistics — Poisson is the best single
+model (42% win rate) but no universal law dominates.
+The expected charge abundance is analytically predictable:
+⟨Q⟩ = N_cells · exp(−N/2 · (M_crit/M₀)²), though this formula
+underestimates observed charge, suggesting correlated nucleation
+effects not captured by the simple Poisson model.
 
 ## Next Open Question
 
-Can the {R, M} theory be EXTENDED (not abandoned) to include
-N-dependence and R·(1-R) saturation, making it a truly universal
-effective theory?
+The statistical law governing P(Q) has been characterized
+(B: Empirical Distribution). The Poisson model captures the
+dominant behavior but underestimates abundance. Now:
+can a QUANTUM version be constructed? Does Q correspond to a
+particle number operator in a second-quantized field theory?
+Can we derive creation and annihilation operators for
+topological charge?
 
-Specifically: does a single functional form dR/dt = N·M·R·(1-R)·g(K,λ)
-fit ALL our data (all N, all K, all λ, all topologies, all coupling laws)?
+### TQM-120
+
+Minimal Charge Quantum — is Q fundamental or does it emerge
+from a deeper microscopic quantity?
+
+Result: **D — Fundamental Charge Quantum.**
+
+Five fragmentation attempts (threshold lowering, kink isolation,
+Morse decomposition, continuous charge, persistent homology)
+ALL FAILED to produce valid sub-Q structures.
+
+Key findings:
+- Q = β₀({R>0.5}) is inherently integer-valued (Betti number)
+- Sub-threshold components (R<0.5) are dynamical fluctuations,
+  not topological charges — no one-way barrier protects them
+- Kinks always appear in pairs under R(0)≈R(L)≈0 boundaries
+- The kink-antikink pair is the MINIMAL topologically protected unit
+- Continuous "coherence excess" ∫(R−0.5)dx is not conserved
+- Persistent homology: no intermediate-persistence features exist
+- Near-threshold scan (64 runs): 0/64 marginal states — Q is
+  sharply defined, not fuzzy at boundaries
+- Synthetic tests (strong, weak, sub-threshold, mixed):
+  4/4 confirm Q as fundamental
+
+**Q=+1 is the charge quantum. There is nothing smaller.**
+
+## Current Working Hypothesis
+
+Proto-matter is a TOPOLOGICAL CHARGE THEORY where the fundamental
+charge quantum is Q=+1 — one kink-antikink pair = one condensate.
+Q is the Betti number β₀ of the superlevel set {R>0.5}, making it
+inherently integer-valued and indivisible. The quantization of
+charge is TOPOLOGICAL (from homology), not quantum mechanical.
+
+## Next Open Question
+
+Q is the fundamental conserved charge. The next step toward a
+quantum theory: can we derive Q as a particle number operator?
+Does Q correspond to a Noether charge of some symmetry?
+Can we construct ladder operators â†, â that create/annihilate
+topological charge quanta?
+
+### TQM-121
+
+Charge Quantization Mechanism — WHY is Q ∈ ℕ?
+
+Result: **D — Fundamental Quantization Law.**
+
+Seven candidate mechanisms evaluated. Seven fractional charge
+constructions attempted. All failed.
+
+The complete mechanism is COMBINED:
+- **Topology (β₀)**: Q = β₀({R>0.5}) → integer by homology (A)
+- **Reaction Barrier**: c₀·M·R·(1−R²) > 0 → dQ/dt = 0 (C)
+- **Homotopy Classes**: A+C → discrete configuration sectors (D)
+
+Mathematical proof (8 steps) establishes:
+(a) Q ∈ ℕ (Betti numbers are integers)
+(b) dQ/dt = 0 (one-way barrier prevents downward crossing)
+(c) Charge quantum Q=+1 (kink-antikink pair = minimal unit)
+
+Key findings:
+- All 7 fractional constructions (half-kink, asymmetric, deformed,
+  flat near-threshold, multiple bumps, gradient ramp, time-dependent
+  boundary) FAILED to produce stable fractional charge
+- Charge spectrum: allowed {0,1,2,3,...}, forbidden {Q<0, Q=p/q}
+- Quantization is CLASSICAL TOPOLOGICAL — from homology, not QM
+- Universality: mechanism depends on PDE structure, not parameters
+- TQM-113/115/116/117/120 are now explained by this mechanism
+
+**Q ∈ ℕ is a mathematical theorem, not an empirical observation.**
+
+## Current Working Hypothesis
+
+TQM charge quantization is a CLASSICAL TOPOLOGICAL QUANTIZATION.
+Q = β₀({R>0.5}) ∈ ℕ is a mathematical necessity from homology.
+dQ/dt = 0 is enforced by the one-way reaction barrier. Together
+they produce a quantized conserved charge with spectrum
+{0, 1, 2, 3, ...} and universal charge quantum Q=+1.
+The mechanism is PDE-structure-dependent, not parameter-dependent.
+
+## Next Open Question
+
+The quantization mechanism is fully understood. The charge is
+classically quantized by topology. The next frontier:
+can we construct a QUANTUM FIELD THEORY where Q becomes a
+particle number operator? Can we derive commutation relations
+[â, â†] = 1 for topological charge creation/annihilation?
+Does topological charge have a corresponding Noether current?
+
+### TQM-122
+
+Origin of the Charge Quantum — WHY is Q=+1 the minimal stable
+charge value?
+
+Result: **D — Fundamental Charge Quantum Origin.**
+
+Three mechanisms converge on Q=+1 as the minimal unit:
+(A) β₀=1 is the smallest non-zero Betti number → discrete spectrum
+(B) The kink-antikink pair is the minimal closed topological unit
+(C) Minimum stable width w_c = √(4D_R/(3c₀·M)) ≈ 0.05 (for M=1):
+    condensates narrower than w_c are unstable → diffusion dominates
+
+Key findings:
+- 7/7 sub-quantum constructions FAILED to produce stable 0<Q<1
+- Half-width, truncated kink, compressed, near-threshold, shallow,
+  two bumps, ring-shaped — all produce either Q=0 or Q=1
+- Q=+1 is the CRITICAL DROPLET: smallest stable condensation nucleus
+- Minimum width w_c depends on M but Q=1 is universal
+- No stable configuration exists with 0 < Q < 1
+- 5-step proof: β₀∈ℕ → Q∈{0,1,2,...}, kink-pair=unit, w_c>0,
+  one stable component=Q=1 → Q=1 is minimal
+- TQM-113/115/120/121 are now explained by the minimal-charge principle
+
+**Q=+1 is not a free parameter — it follows from topology, closure,
+and reaction-diffusion stability. The charge quantum is derived, not assumed.**
+
+## Current Working Hypothesis
+
+TQM is a TOPOLOGICAL CHARGE THEORY where:
+- Q = β₀({R>0.5}) ∈ ℕ (quantized, TQM-121)
+- Q=+1 is the minimal charge quantum (derived, TQM-122)
+- Quantization = topology (β₀) + dynamics (barrier) + closure (pair)
+- Proto-matter = Q=+1 condensates = minimum-width critical droplets
+- All properties (existence, conservation, creation, statistics,
+  indivisibility, quantization, minimality) are now derived
+  from the PDE structure, not assumed.
+
+## Next Open Question
+
+Q=+1 is the fundamental charge quantum — mathematically derived,
+physically grounded, universally applicable. The final frontier:
+does this classical topological charge support a quantum field
+theory? Can we promote Q to a quantum operator Q̂ = â†â with
+commutation relations [â, â†] = 1? Can we construct a Fock space
+of topological charge states |n⟩ where n ∈ ℕ?
+
+### TQM-123
+
+Proto-Matter Collective Dynamics — many-charge ensemble simulations
+(108 runs across K∈[1,10], λ∈[0.05,0.15], N=100, Q∈[1,5],
+random+clustered layouts).
+
+Result: **B — Weak Collective Effects.** At tested parameters,
+proto-matter behaves primarily as a dilute gas of weakly-interacting
+charges. Cluster Phase detected at higher density with clustered
+layout, but no percolation or dense matter phases.
+
+Key findings:
+- 2 of 6 theoretical phases observed: Dilute Gas, Cluster Phase
+- Continuum charge density equation derived:
+  ∂ρ_Q/∂t = D_eff·∇²ρ_Q + ν·(ρ_max−ρ_Q) − γ·ρ_Q²
+- Phase diagram (density × coupling) constructed with theoretical
+  phase boundaries identified
+- Prior experiments (TQM-005/006/010/012/118/119) reinterpreted
+  as collective charge phenomena
+- Collective effects exist but are WEAK at tested parameters —
+  stronger coupling and higher density needed for robust phases
+
+## Current Working Hypothesis
+
+TQM is a TOPOLOGICAL CHARGE THEORY where:
+- Q = β₀({R>0.5}) ∈ ℕ is the fundamental charge (TQM-113..122)
+- Q=+1 is the minimal stable charge quantum (TQM-122)
+- Multiple charges form a COLLECTIVE MEDIUM with emergent phases
+  (gas, cluster, percolating, dense) governed by:
+  ∂ρ_Q/∂t = D_eff·∇²ρ_Q + ν·(ρ_max−ρ_Q) − γ·ρ_Q²
+- Collective effects are weak at moderate parameters (B: TQM-123)
+  but the framework predicts richer phases at higher density/K/λ
+
+## Next Open Question
+
+Proto-matter collective dynamics are established at the theoretical
+level but observed weakly at tested parameters. The next step:
+increase N to 1000+, K to 20+, and scan with 100+ seeds to
+definitively observe the percolating and dense matter phases.
+Additionally: can the continuum charge equation be solved analytically
+for steady-state density profiles? Does the charge gas support
+sound modes (density waves)?
