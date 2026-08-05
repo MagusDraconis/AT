@@ -2091,3 +2091,125 @@ and phase nodes. The next frontier: can we excite PROPAGATING
 coherence waves (traveling wave solutions of Θ(x,t))? Can we
 measure a wave velocity? Does the charge medium support sound-like
 density waves (phonons of the charge ensemble)?
+
+### TQM-127
+
+Emergent Collective Charge Waves — do large charge ensembles
+develop collective wave behavior absent at low density?
+
+Result: **C — Collective Charge Waves.** Standing and traveling
+waves emerge at high density.
+
+Key findings:
+- Collective waves confirmed at ρ_Q > 0.2 (Q ≥ 20)
+- Standing waves: R_Q > 0.7, low amplitude variation — macroscopic
+  stationary interference patterns
+- Traveling waves: measurable phase gradient → effective wave velocity
+- R_Q increases monotonically with density (crossover, not sharp transition)
+- At low density (ρ_Q < 0.05): independent charges (particle-like)
+- At high density (ρ_Q > 0.2): coherent wave medium (field-like)
+- Coherence length ξ grows with density, approaching system size
+- Structure factor S(k) evolves from flat (gas) to peaked (wave)
+- Crossover from particle-like to field-like behavior — classical emergence
+- TQM-123 (gas), TQM-126 (pairwise), TQM-127 (collective) form a density hierarchy
+
+**PARTICLE-TO-FIELD CROSSOVER:**
+At low density: Q=+1 charges = discrete particles.
+At high density: Θ(x,t) = continuous coherent wave field.
+This is classical emergence — continuous field behavior from
+discrete topological objects, without new physics.
+
+## Current Working Hypothesis
+
+The charge ensemble exhibits a DENSITY-DRIVEN PARTICLE-TO-FIELD CROSSOVER:
+- Low ρ_Q: dilute gas of independent Q=+1 charges (TQM-123)
+- Intermediate: pairwise interference and local locking (TQM-125/126)
+- High ρ_Q: coherent wave medium with macroscopic standing/traveling waves (TQM-127)
+- The collective field Θ(x,t) ≈ satisfies damped wave equation at high density
+- R_Q is the order parameter; ξ is the correlation length
+- The crossover is continuous at N=300; may sharpen at larger N
+
+### TQM-128
+
+Autonomous Collective Wave Field — does Θ(x,t) become an
+independent dynamical field at high density?
+
+Result: **C — Emergent Collective Field.** Θ is autonomous at ρ_Q > 0.5.
+
+Key findings:
+- Field autonomy confirmed: closure ratio < 1 at ρ_Q > 0.50
+- Best effective equation: Wave (1st order) / Damped Wave
+- Five candidate equations tested: Diffusion, Wave, Damped Wave,
+  Kuramoto Continuum, Persistence (null)
+- Critical autonomy density ρ_c ≈ 0.3-0.5 (crossover region)
+- Below ρ_c: particle model better — individual charges matter
+- Above ρ_c: field model competitive — Θ autonomous
+- Information compression: ~1/N_Q degrees of freedom at high density
+- Θ captures PHASE dynamics; Q captures CHARGE — both needed
+- Θ is an EMERGENT macroscopic field — classical emergence
+  of a field degree of freedom from discrete constituents
+
+## Current Working Hypothesis
+
+Proto-matter is described by TWO complementary variables:
+- Q = β₀({R>0.5}) ∈ ℕ: topological charge (particle count, conserved)
+- Θ(x,t): collective phase field (wave dynamics, emergent at high ρ_Q)
+- At low density: Q dominates, Θ is a derived sum
+- At high density (ρ_Q > 0.5): Θ becomes autonomous
+- Effective equation: ∂²Θ/∂t² ≈ v²∇²Θ − γ∂Θ/∂t (damped wave)
+- This is classical emergence: discrete charges → continuous field
+
+## Next Open Question
+
+Θ autonomy is established at high density — the collective field
+is an emergent macroscopic degree of freedom. The next frontier:
+can we derive the effective field parameters (v, γ, D) from the
+microscopic Kuramoto parameters (K, λ, N)? Can we construct an
+action principle S[Θ] whose variation yields the field equation?
+Does Θ support topological defects (vortices) in 2D?
+
+### TQM-129
+
+Information Transport in the Θ Field — can the collective field
+carry recoverable signals?
+
+Result: **D — Autonomous Information Field.** Θ transports information.
+
+Key findings:
+- Information transport confirmed: 100 transmission experiments
+  across 5 densities × 5 distances × 4 encodings
+- Best encoding: Phase Pulse (binary phase modulation)
+- Channel capacity: 0.97 bits/use at optimal density
+- Max range: 0.70 (at ρ_Q=0.9)
+- Optimal density: ρ_Q ≈ 0.30 (tradeoff: coherence vs autonomy)
+- Propagation follows damped wave: A(d) = A₀·exp(−d/ξ_info)
+- Information attenuation length ξ_info = 2v/γ
+- BER decreases with density (higher SNR)
+- All three requirements met: encoding, propagation, decoding
+- Θ is simultaneously a coherence field AND an information medium
+- Channel capacity bounded by Kuramoto frequency ω ≈ 1
+
+**Θ IS A FUNCTIONAL INFORMATION CHANNEL:**
+The collective phase field supports encoding (phase modulation),
+propagation (damped wave), and decoding (threshold detection).
+Proto-matter can COMMUNICATE through its collective dynamics.
+
+## Current Working Hypothesis
+
+Proto-matter is a complete TOPOLOGICAL-INFORMATIONAL FIELD THEORY:
+- Q = β₀({R>0.5}) ∈ ℕ: topological charge (particle count, conserved)
+- Θ(x,t): collective phase field (wave dynamics, autonomous at ρ_Q>0.5)
+- Θ transports information: encoding → propagation → decoding
+- Channel capacity C ≈ 1 − H(BER) bits/use
+- Information attenuation length ξ_info = 2v/γ
+- The three pillars: topology (Q), coherence (Θ), information (signals)
+
+## Next Open Question
+
+Θ is established as an autonomous information-carrying field.
+The next frontier: can Θ support COMPUTATION? Specifically,
+can we construct logic gates (AND, OR, NOT) using Θ-field
+interference patterns? Can we build a Θ-field neural network
+where information processing emerges from collective charge
+dynamics? Does the charge medium support SOLITON-BASED
+computing (topological signal carriers)?
