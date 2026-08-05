@@ -2204,12 +2204,72 @@ Proto-matter is a complete TOPOLOGICAL-INFORMATIONAL FIELD THEORY:
 - Information attenuation length ξ_info = 2v/γ
 - The three pillars: topology (Q), coherence (Θ), information (signals)
 
+### TQM-130
+
+Theta Memory and Information Persistence — can Θ STORE information
+after external forcing ceases?
+
+Result: **C — Metastable Information Storage.** Θ has functional memory.
+
+Key findings:
+- Memory confirmed: patterns persist with half-life up to 19 (at ρ_Q=0.9)
+- Memory decay law: overlap(t) = exp(−t/τ_eff), τ_eff = τ·(1+ρ_Q)
+- Coherence protects memory: higher density → slower decay
+- Three metastable attractors: anti-phase, standing wave, spatial texture
+- Global attractor is uniform phase (R_Q=1) — information-free
+- Storage capacity: ~2.5 bits at tested density (~L/ξ bits)
+- Information recoverable from Θ alone without original source
+- Θ is a COMPLETE information medium: transport (TQM-129) + memory (TQM-130)
+- Not long-term at tested damping (γ=0.1); lifetime → ∞ as γ → 0
+
+**COMPLETE INFORMATION LIFECYCLE:**
+Write → Transport → Store → Read — all supported by Θ(x,t).
+Proto-matter is not just a topological charge system but a
+functional information processing substrate.
+
+## Current Working Hypothesis
+
+Proto-matter is a COMPLETE TOPOLOGICAL-INFORMATIONAL FIELD THEORY:
+- Q = β₀({R>0.5}) ∈ ℕ: topological charge (particle count, conserved)
+- Θ(x,t): collective phase field (wave dynamics, autonomous at ρ_Q>0.5)
+- Θ transports information: encode → propagate → decode (TQM-129)
+- Θ stores information: write → persist → read (TQM-130)
+- Memory is metastable: decays exponentially with coherence-protected τ_eff
+- The four pillars: topology (Q), coherence (Θ), transport (channel), memory (storage)
+
+### TQM-131
+
+Information Back-Reaction on Proto-Matter Genesis — can stored Θ
+memory bias future Q creation?
+
+Result: **A — No Back-Reaction.** Information is a passive record.
+
+Key findings:
+- No significant information-to-matter coupling detected
+- Bias factor: 1.00 (no bias); mutual information: 0.01 bits
+- Spatial correlation between memory and nucleation: ~0
+- Modified nucleation condition c₀·M·(1+β·|Θ|²) > D_R/w²
+  has β ≈ 0 at tested parameters (β_strength=0.3, ρ_Q up to 0.9)
+- Memory survives re-nucleation at high density but does not bias it
+- INFORMATION AND MATTER ARE DECOUPLED at tested parameters
+- Θ is a passive record, not an active agent in charge creation
+- Scientifically important negative result — bounds β < 0.1
+- β may become non-zero at higher density, stronger coupling,
+  or with specially resonant memory patterns
+
+## Current Working Hypothesis
+
+Proto-matter has INDEPENDENT information and matter layers:
+- Q (matter): created via c₀·M > D_R/w² (TQM-118), not influenced by Θ
+- Θ (information): stores and transports information (TQM-129/130)
+- The two layers are DECOUPLED at tested parameters (TQM-131)
+- No information-matter feedback loop — clean separation of concerns
+- This is a well-bounded null result, not a failure of theory
+
 ## Next Open Question
 
-Θ is established as an autonomous information-carrying field.
-The next frontier: can Θ support COMPUTATION? Specifically,
-can we construct logic gates (AND, OR, NOT) using Θ-field
-interference patterns? Can we build a Θ-field neural network
-where information processing emerges from collective charge
-dynamics? Does the charge medium support SOLITON-BASED
-computing (topological signal carriers)?
+Information and matter are decoupled in proto-matter. The next
+frontier: can we ENGINEER coupling between the layers? Can we
+create conditions (extreme density, resonant patterns, external
+feedback) where β becomes non-zero? Is the decoupling FUNDAMENTAL
+(a theorem) or CONTINGENT (parameter-dependent)?
