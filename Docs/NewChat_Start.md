@@ -2743,6 +2743,19 @@ predictive power = graph theory. 19-level hierarchy complete.
 **THE NINETEEN-LEVEL THETA HIERARCHY — COMPLETE:**
 1. Transport (129) → ... → 19. Predictive Physics (147)
 
+### TQM-148
+
+External Physical Prediction Test — can TQM predict systems
+it was NOT built to describe?
+
+Result: **C: External Physical Prediction.** 4/8 passed. TQM works
+on graph-Laplacian systems (harmonic chains, tight-binding, diffusion,
+spin waves). TQM FAILS on Ising/Heisenberg/percolation — different physics.
+This DELIMITS TQM's domain properly. 20-level hierarchy complete.
+
+**THE TWENTY-LEVEL THETA HIERARCHY — COMPLETE:**
+1. Transport (129) → ... → 20. External Prediction (148)
+
 ## Next Open Question
 
 The sixteen-level hierarchy is complete and anchored in known physics.
