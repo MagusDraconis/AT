@@ -2769,6 +2769,19 @@ TQM provides the Hilbert space structure, not the dynamics. 21-level hierarchy.
 **THE TWENTY-ONE-LEVEL THETA HIERARCHY — COMPLETE:**
 1. Transport (129) → ... → 21. Schrödinger Correspondence (149)
 
+### TQM-150
+
+Origin of the Imaginary Unit — can i emerge from real Q-network
+dynamics rather than being imposed?
+
+Result: **C: Emergent Complex Structure.** i emerges as the antisymmetric
+coupling matrix J=[[0,1],[-1,0]] between two real fields. ∂u/∂t=L_Q v,
+∂v/∂t=-L_Q u ⇔ i∂ψ/∂t=L_Q ψ. Honest: this is mathematical equivalence —
+the antisymmetry of coupling is not derived from L_Q. 22-level hierarchy.
+
+**THE TWENTY-TWO-LEVEL THETA HIERARCHY — COMPLETE:**
+1. Transport (129) → ... → 22. Origin of i (150)
+
 ## Next Open Question
 
 The sixteen-level hierarchy is complete and anchored in known physics.
