@@ -2782,6 +2782,19 @@ the antisymmetry of coupling is not derived from L_Q. 22-level hierarchy.
 **THE TWENTY-TWO-LEVEL THETA HIERARCHY — COMPLETE:**
 1. Transport (129) → ... → 22. Origin of i (150)
 
+### TQM-151
+
+Origin of the Antisymmetric Coupling — can J = [[0,1],[-1,0]]
+be derived rather than postulated?
+
+Result: **C: Emergent Antisymmetric Coupling.** J derived from norm
+conservation: d/dt(u²+v²)=0 ⇒ M^T=-M ⇒ J is the unique 2×2 antisymmetric
+matrix. Two irreducible postulates remain: Q exists + norm is conserved.
+23-level hierarchy complete.
+
+**THE TWENTY-THREE-LEVEL THETA HIERARCHY — COMPLETE:**
+1. Transport (129) → ... → 23. Origin of J (151)
+
 ## Next Open Question
 
 The sixteen-level hierarchy is complete and anchored in known physics.
