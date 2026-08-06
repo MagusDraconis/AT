@@ -4,7 +4,7 @@ using TQM.Core.Research;
 using TQM.Tests.Shared;
 using Xunit.Abstractions;
 
-namespace TQM.Tests.Research;
+namespace TQM.Tests.ResearchX;
 
 public class TQM_X001_AlternativeFoundationsAudit : ResearchTestBase
 {
