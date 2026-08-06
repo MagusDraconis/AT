@@ -2819,6 +2819,19 @@ still fewer than standard QM's ~5. 25-level hierarchy complete.
 **THE TWENTY-FIVE-LEVEL THETA HIERARCHY — COMPLETE:**
 1. Transport (129) → ... → 25. Born Rule (153)
 
+### TQM-154
+
+Origin of Quantum Measurement — can measurement/collapse emerge?
+
+Result: **B: Weak Decoherence Correspondence.** Decoherence explained
+(off-diagonal decay, pointer states, Born stats). But COLLAPSE is
+IRREDUCIBLE — the measurement problem affects ALL theories. TQM requires
+4 postulates. 26-level hierarchy complete. The measurement problem
+remains the last open postulate of quantum mechanics.
+
+**THE TWENTY-SIX-LEVEL THETA HIERARCHY — COMPLETE:**
+1. Transport (129) → ... → 26. Measurement (154)
+
 ## Next Open Question
 
 The sixteen-level hierarchy is complete and anchored in known physics.
