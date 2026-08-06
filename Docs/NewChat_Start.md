@@ -2834,26 +2834,30 @@ remains the last open postulate of quantum mechanics.
 
 ### TQM-155
 
-Unified Theory Documentation — comprehensive consolidation of the complete
-TQM framework from TQM-117 through TQM-154.
+Unified Theory Documentation — complete restructuring of all theory results
+from TQM-117 through TQM-154 into a coherent scientific framework.
 
-**Documentation created under `Docs/Theory/`:**
-- `TQM_Unified_Theory.md` — Complete 26-level framework (13,000+ words)
-- `TQM_Mathematical_Foundation.md` — All formulas with derivation sources
-- `TQM_Physics_Correspondence.md` — What TQM matches and where it fails
-- `TQM_Open_Questions.md` — Priority-ordered research roadmap
+**Complete documentation under `Docs/Theory/`:**
+- `00_Executive_Summary.md` — One-page to full summary
+- `01_History_and_Evolution.md` — Complete program history
+- `02_Fundamental_Postulates.md` — 4 irreducible postulates with derivations
+- `03_Q_Theory.md` — Topological charge Q foundations
+- `04_Q_Networks_and_Laplacian.md` — Graph Laplacian derivation
+- `05_Theta_Field.md` — Collective phase coherence
+- `06_Information_Layer.md` — Species, ecology, evolution
+- `07_Evolution_and_Attractors.md` — Darwinian dynamics
+- `08_Physical_Correspondence.md` — Exact matches and failures
+- `09_Quantum_Correspondence.md` — QM emergence from Q
+- `10_Mathematical_Foundation.md` — Complete formula collection
+- `11_Critical_Review.md` — Hostile assessment
+- `12_Open_Questions.md` — Priority-ranked (10 questions)
+- `13_Roadmap.md` — Future research phases
 
-**Key findings from consolidation:**
-- 4 irreducible postulates: Q exists, reversible dynamics, Born rule, measurement
-- Hilbert space + Schrödinger DERIVED from postulates 1-2
-- 9 exact mathematical identities with known physics
-- 4 systems where TQM fails (properly delimited domain)
-- Domain = graph-Laplacian-governed systems
-- Honest: no novel physical predictions beyond standard graph theory
-- TQM's contribution: evolutionary interpretation + minimal postulate count
-- 10 priority-ranked open questions (measurement problem #1)
+**Also includes**: `TQM_Unified_Theory.md` (comprehensive single-document version).
 
-**THE COMPLETE TQM FRAMEWORK — 26 levels, 4 postulates, fully documented.**
+**Key findings**: 4 postulates, 26-level hierarchy, properly delimited domain.
+TQM is a conceptual framework reinterpreting graph spectral theory as
+evolutionary physics, deriving Hilbert space + Schrödinger from Q + reversibility.
 
 ## Next Open Question
 
