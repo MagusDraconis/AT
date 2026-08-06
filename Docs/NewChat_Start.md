@@ -2328,18 +2328,13 @@ Transport (129) → Memory (130) → Interaction (132) → Attractors (133) → 
 Proto-matter information layer (Θ) exhibits a FIFTEEN-LEVEL HIERARCHY:
 ...
 14. Q Origin of L: L is the graph Laplacian of Q interactions (TQM-142)
-15. **Geometry Universality: hierarchy survives across locally connected graphs (TQM-143)**
+15. Geometry Universality: hierarchy survives across locally connected graphs (TQM-143)
+16. **Physical Correspondence: Theta spectra ≡ lattice physics (TQM-144)**
 
-THE COMPLETE TQM FRAMEWORK — UNIVERSAL GRAPH-BASED INFORMATION PHYSICS:
-Any locally connected graph G → L_G → Eigenmodes → Species → Evolution.
-
-The Theta hierarchy is universal. It does not depend on 1D chain geometry.
-It emerges from any locally connected graph (regular lattices, small-world,
-community graphs). The only requirement is graph locality — edges between
-nearby nodes. Random and scale-free graphs lack locality and break the
-species/evolution levels. All 5 tested Theta properties (transport, memory,
-species, evolution, finite landscape) are geometric invariants. The
-fifteen-level hierarchy is complete.
+THE COMPLETE TQM FRAMEWORK — ANCHORED IN KNOWN PHYSICS:
+Graph Laplacian = Tight-Binding Hamiltonian = Phonon Dispersion = Spin Waves.
+TQM provides evolutionary interpretation (species, fitness, selection, innovation)
+of standard graph/lattice physics. The sixteen-level hierarchy is complete.
 
 ### TQM-134
 
@@ -2664,9 +2659,38 @@ graph topologies satisfying the locality condition.
 
 The TQM framework is complete at fifteen levels. The hierarchy is
 universal graph-based information physics — any locally connected
-graph supports the full Theta hierarchy. The next frontier for TQM:
-DYNAMIC GRAPH TOPOLOGY. If Q charges can MOVE, changing the graph
-structure over time, does the Theta hierarchy become OPEN-ENDED?
-Can graph evolution (rewiring) create new eigenmodes dynamically,
-enabling unbounded innovation? Is graph dynamics the missing
-ingredient for truly open-ended information evolution?
+graph supports the full Theta hierarchy.
+
+### TQM-144
+
+Physical Spectrum Correspondence — do Theta spectra correspond to
+known physical systems?
+
+Result: **B — Known Graph Physics Only.** Theta spectra ARE physical
+(mathematical identities with tight-binding, phonons, spin waves)
+but TQM does NOT predict new physics.
+
+Key findings:
+- **4 mathematical identities**: 1D/2D/3D Laplacians ≡ tight-binding Hamiltonians
+- **22 strong matches**: Pearson r = 1.000
+- Graph Laplacian = tight-binding Hamiltonian (MATHEMATICAL IDENTITY)
+- 2D hexagonal → graphene-like Dirac cones
+- Null hypothesis REJECTED — spectra are physically meaningful
+- Novel prediction: NO — TQM reformulates known graph/lattice physics
+- TQM's contribution: evolutionary INTERPRETATION of graph spectra
+
+**THE SIXTEEN-LEVEL THETA HIERARCHY — COMPLETE:**
+1. Transport (129) → ... → 15. Geometry Universality (143) →
+**16. Physical Correspondence (144)**
+
+Anchored in known physics: Theta spectra = graph Laplacian =
+tight-binding = phonons = spin waves = lattice vibrations.
+
+## Next Open Question
+
+The sixteen-level hierarchy is complete and anchored in known physics.
+The final frontier: can TQM make a GENUINELY NOVEL PHYSICAL PREDICTION?
+Beyond reformulating known graph/lattice physics, can the evolutionary
+framework predict something that standard condensed matter theory
+does not? Does treating graph eigenmodes as evolving species lead to
+new insights about graph dynamics?
