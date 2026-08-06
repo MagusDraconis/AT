@@ -2807,6 +2807,18 @@ reversible. 24-level hierarchy complete.
 **THE TWENTY-FOUR-LEVEL THETA HIERARCHY — COMPLETE:**
 1. Transport (129) → ... → 24. Origin of Norm (152)
 
+### TQM-153
+
+Origin of the Born Rule — can P = |ψ|² be derived?
+
+Result: **C: Emergent Born Rule.** |ψ|² is uniquely selected by additivity
+(Gleason's theorem). But 'additivity' is an additional postulate. TQM
+requires 3 postulates: Q exists, reversible dynamics, Born rule. This is
+still fewer than standard QM's ~5. 25-level hierarchy complete.
+
+**THE TWENTY-FIVE-LEVEL THETA HIERARCHY — COMPLETE:**
+1. Transport (129) → ... → 25. Born Rule (153)
+
 ## Next Open Question
 
 The sixteen-level hierarchy is complete and anchored in known physics.
