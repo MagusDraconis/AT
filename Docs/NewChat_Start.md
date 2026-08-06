@@ -2832,6 +2832,29 @@ remains the last open postulate of quantum mechanics.
 **THE TWENTY-SIX-LEVEL THETA HIERARCHY — COMPLETE:**
 1. Transport (129) → ... → 26. Measurement (154)
 
+### TQM-155
+
+Unified Theory Documentation — comprehensive consolidation of the complete
+TQM framework from TQM-117 through TQM-154.
+
+**Documentation created under `Docs/Theory/`:**
+- `TQM_Unified_Theory.md` — Complete 26-level framework (13,000+ words)
+- `TQM_Mathematical_Foundation.md` — All formulas with derivation sources
+- `TQM_Physics_Correspondence.md` — What TQM matches and where it fails
+- `TQM_Open_Questions.md` — Priority-ordered research roadmap
+
+**Key findings from consolidation:**
+- 4 irreducible postulates: Q exists, reversible dynamics, Born rule, measurement
+- Hilbert space + Schrödinger DERIVED from postulates 1-2
+- 9 exact mathematical identities with known physics
+- 4 systems where TQM fails (properly delimited domain)
+- Domain = graph-Laplacian-governed systems
+- Honest: no novel physical predictions beyond standard graph theory
+- TQM's contribution: evolutionary interpretation + minimal postulate count
+- 10 priority-ranked open questions (measurement problem #1)
+
+**THE COMPLETE TQM FRAMEWORK — 26 levels, 4 postulates, fully documented.**
+
 ## Next Open Question
 
 The sixteen-level hierarchy is complete and anchored in known physics.
