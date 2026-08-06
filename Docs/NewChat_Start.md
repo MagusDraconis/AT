@@ -2686,6 +2686,31 @@ Key findings:
 Anchored in known physics: Theta spectra = graph Laplacian =
 tight-binding = phonons = spin waves = lattice vibrations.
 
+### TQM-145
+
+Physical Observables from Topological Charge — can Q directly generate
+measurable physical quantities?
+
+Result: **D — Direct Physical Observable Theory.** Q generates observables
+via the graph Laplacian without needing Theta/species/evolution.
+
+Key findings:
+- **6/11 observables** with R²>0.8, 4 universal across 1D/2D
+- Key scaling laws: m_eff ∝ Q², E ∝ Q, Δ ∝ 1/Q², ξ ∝ Q, D ∝ 1/Q², C ∝ log(Q)
+- All derivable analytically: λ_k = 2 - 2·cos(πk/(Q+1))
+- Effective mass: m_eff = 1/λ_1 ≈ Q²/π²
+- Total energy: E = trace(L) = 2(Q-1)
+- Mode density: ρ = 1 (trivial but exact)
+- Scaling depends on dimension: 1D (∝Q²) vs 2D (∝Q)
+- Q generates observables DIRECTLY via L_Q — no Theta required
+- Null hypothesis REJECTED — Q is NOT purely topological
+
+**THE SEVENTEEN-LEVEL THETA HIERARCHY — COMPLETE:**
+1. Transport (129) → ... → 16. Physical Correspondence (144) →
+**17. Physical Observables from Q (145)**
+
+Q → L_Q → Physical Observables. The complete chain is closed.
+
 ## Next Open Question
 
 The sixteen-level hierarchy is complete and anchored in known physics.
