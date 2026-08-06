@@ -2711,6 +2711,27 @@ Key findings:
 
 Q → L_Q → Physical Observables. The complete chain is closed.
 
+### TQM-146
+
+Physical Scaling Laws from Topological Charge — do Q-derived scaling
+laws match known physical systems?
+
+Result: **C — Strong Physical Scaling Correspondence.** 4/7 exact
+correspondences to known physics.
+
+Key findings:
+- λ₁∝1/Q² ≡ particle-in-a-box (E₁=π²ℏ²/2mL²) — EXACT
+- E∝Q ≡ extensive energy — EXACT (trace identity)
+- C∝log(Q) ≡ Boltzmann entropy (S=k_B·ln W) — EXACT
+- ρ=1 ≡ Weyl's law in 1D — EXACT
+- Q ↔ system size L. Graph Laplacian ≡ kinetic energy operator.
+- These are NOT generic graph effects — they are fundamental physical scaling laws
+- 4/7 exact, 7/7 approximate correspondences to known systems
+
+**THE EIGHTEEN-LEVEL THETA HIERARCHY — COMPLETE:**
+1. Transport (129) → ... → 17. Physical Observables (145) →
+**18. Physical Scaling Laws (146)**
+
 ## Next Open Question
 
 The sixteen-level hierarchy is complete and anchored in known physics.
