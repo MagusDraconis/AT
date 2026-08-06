@@ -2756,6 +2756,19 @@ This DELIMITS TQM's domain properly. 20-level hierarchy complete.
 **THE TWENTY-LEVEL THETA HIERARCHY — COMPLETE:**
 1. Transport (129) → ... → 20. External Prediction (148)
 
+### TQM-149
+
+Emergence of Schrödinger Dynamics from Q Networks — can L_Q support
+quantum-like unitary evolution?
+
+Result: **C: Schrödinger Correspondence.** L_Q supports i∂ψ/∂t = L_Q ψ
+with unitary evolution and stationary states = eigenmodes. Honest: the
+factor 'i' is manual — L_Q also supports diffusion and classical waves.
+TQM provides the Hilbert space structure, not the dynamics. 21-level hierarchy.
+
+**THE TWENTY-ONE-LEVEL THETA HIERARCHY — COMPLETE:**
+1. Transport (129) → ... → 21. Schrödinger Correspondence (149)
+
 ## Next Open Question
 
 The sixteen-level hierarchy is complete and anchored in known physics.
