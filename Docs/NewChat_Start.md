@@ -2795,6 +2795,18 @@ matrix. Two irreducible postulates remain: Q exists + norm is conserved.
 **THE TWENTY-THREE-LEVEL THETA HIERARCHY — COMPLETE:**
 1. Transport (129) → ... → 23. Origin of J (151)
 
+### TQM-152
+
+Origin of Norm Conservation — can ||ψ||² = constant be derived?
+
+Result: **A: Fundamental Axiom.** Norm conservation IS reversibility =
+unitarity = anti-Hermitian. These are mathematically equivalent and
+irreducible. TQM reduces QM to 2 postulates: Q exists + dynamics are
+reversible. 24-level hierarchy complete.
+
+**THE TWENTY-FOUR-LEVEL THETA HIERARCHY — COMPLETE:**
+1. Transport (129) → ... → 24. Origin of Norm (152)
+
 ## Next Open Question
 
 The sixteen-level hierarchy is complete and anchored in known physics.
