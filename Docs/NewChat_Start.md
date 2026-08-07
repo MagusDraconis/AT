@@ -2331,10 +2331,18 @@ Proto-matter information layer (Θ) exhibits a FIFTEEN-LEVEL HIERARCHY:
 15. Geometry Universality: hierarchy survives across locally connected graphs (TQM-143)
 16. **Physical Correspondence: Theta spectra ≡ lattice physics (TQM-144)**
 
-THE COMPLETE TQM FRAMEWORK — ANCHORED IN KNOWN PHYSICS:
+THE COMPLETE TQM FRAMEWORK — TWO-PILLAR FOUNDATION:
 Graph Laplacian = Tight-Binding Hamiltonian = Phonon Dispersion = Spin Waves.
 TQM provides evolutionary interpretation (species, fitness, selection, innovation)
-of standard graph/lattice physics. The sixteen-level hierarchy is complete.
+of standard graph/lattice physics.
+
+RESEARCHX FOUNDATIONS (TQM-X001 through TQM-X022):
+- Self-consistency F(x)=x is the deepest universal invariant (X010).
+- Reversibility ≠ Self-consistency — proven independent (X011).
+- R+S is minimally sufficient for full reality (X015, proven).
+- Complexity is a 6-level staircase; L6 (Open-Ended) NOT achieved (X018-X022).
+- Operator-family evolution via density-dependent nonlinearity is the
+  only known mechanism for L6, but α-space is bounded (X021-X022).
 
 ### TQM-134
 
@@ -2859,11 +2867,75 @@ from TQM-117 through TQM-154 into a coherent scientific framework.
 TQM is a conceptual framework reinterpreting graph spectral theory as
 evolutionary physics, deriving Hilbert space + Schrödinger from Q + reversibility.
 
+### ResearchX — Alternative Foundations and Cross-Cutting Investigations
+
+A parallel research track (TQM-X001 through TQM-X022) systematically
+challenged the deepest assumptions of the TQM framework.
+
+**PHASE 1 — Dynamic Graphs (X001–X004):**
+- X001: Audit identified 11 hidden assumptions. Static graph = #1 untested.
+- X002: Node motion (μ=0.02): quasi-static, no new phenomena.
+- X003: Mobility sweep (μ≤1.0): no phase transition to open-ended.
+- X004: Graph growth: trivial spectrum expansion (same Fourier modes).
+- **Conclusion**: Dynamic graphs alone do NOT produce open-ended innovation.
+
+**PHASE 2 — Nonlinear Physics (X005–X006):**
+- X005: Nonlinearity breaks eigenmodes, creates solitons. Most of TQM's
+  "quantum" results are linear algebra artifacts. Q, fitness, evolution survive.
+- X006: Solitons satisfy ALL 5 species criteria. 6+ soliton classes.
+  Solitons = nonlinear generalization of information species.
+
+**PHASE 3 — Universal Species Theory (X007–X008):**
+- X007: Universal Species Principle: species = persistent, identifiable,
+  information-carrying structure. 6/10 criteria shared across linear/nonlinear.
+- X008: Information Carrier Taxonomy: 16 classes across 5 regimes
+  (Linear, Weakly Nonlinear, Strongly Nonlinear, Topological, Hybrid).
+
+**PHASE 4 — Deepest Foundations (X009–X015):**
+- X009: Formation principle: self-consistency + dynamical stability.
+- X010: Self-consistency ≡ F(x)=x (fixed point). This IS the bottom.
+  No deeper universal invariant exists.
+- X011: Reversibility ≠ Self-consistency. PROVEN independent via counterexamples
+  (Hamiltonian chaos: Rev-only; diffusion eigenmodes: SC-only).
+- X012: Rev∩SC = Quantum Information Carriers. 7 classes at intersection.
+  Universal equation: i∂ψ/∂t=Hψ AND Hψ=λψ → ψ(t)=exp(-iλt)ψ(0).
+- X013: Information preservation = CONSEQUENCE, not cause. One-way causal arrow.
+- X014: FULL REALITY requires BOTH Rev+SC. SC-only: species but no evolution.
+  Rev-only: no persistent identity. Only Rev∩SC enables the complete hierarchy.
+- X015: R+S is MINIMALLY SUFFICIENT (proven by exhaustion over 16 combinations).
+  No smaller set achieves full reality. R+S uniquely minimal.
+
+**PHASE 5 — Reality Classification (X016–X017):**
+- X016: Universal (R,S) Reality Map. 24 systems across 6 domains classified.
+  4 regions: Quantum, Carrier, Dynamic, Noise. Only quantum occupies Rev∩SC corner.
+- X017: Reality Flow Theory. No universal flow laws exist. (R,S) is a MAP,
+  not a dynamical phase space. Anthropic selection creates apparent flow.
+
+**PHASE 6 — Complexity and Open-Ended Evolution (X018–X022):**
+- X018: 6-level Complexity Staircase: Noise(0.0)→Reality(1.0)→Carriers(2.5)→
+  Species(4.0)→Ecologies(6.5)→Evolution(9.0). Level 6 (Open-Ended, 10.0) NOT OBSERVED.
+- X019: L6 requires new CARRIER CLASSES. 0/8 requirements satisfied.
+  Root cause: finite state space → bounded innovation.
+- X020: Niche construction does NOT solve L6. Graph modification changes
+  parameters, not OPERATOR FAMILY. Deeper bottleneck found.
+- X021: Operator evolution IS necessary for L6. Carrier class = operator family.
+  7 families, only 2 reachable from L_Q. Nonlinearity α is the ONLY bridge.
+- X022: Mechanism FOUND: density-dependent nonlinearity α(population).
+  Real mechanism (BEC, optics, plasma). But α-space bounded → only 2 families.
+  Operator evolution EXISTS but INSUFFICIENT for full L6 alone.
+
+**TWO-PILLAR FOUNDATION OF TQM:**
+- Postulate 1: Q exists (topological charge → L_Q → Hilbert space)
+- Postulate 2: Reversible dynamics (→ unitary → Schrödinger)
+- Principle A: Self-consistency F(x)=x (→ fixed points → carriers)
+- Principle B: Reality = Rev + SC (minimal sufficient, proven)
+
 ## Next Open Question
 
-The sixteen-level hierarchy is complete and anchored in known physics.
-The final frontier: can TQM make a GENUINELY NOVEL PHYSICAL PREDICTION?
-Beyond reformulating known graph/lattice physics, can the evolutionary
-framework predict something that standard condensed matter theory
-does not? Does treating graph eigenmodes as evolving species lead to
-new insights about graph dynamics?
+The ResearchX program has mapped the deepest foundations of TQM:
+R+S is minimal, Rev≠SC, complexity is a 6-level staircase, and
+Open-Ended Evolution (L6) requires operator-family transitions
+that may only be achievable through density-dependent nonlinearity.
+The next frontier: can species MODULATE α through population dynamics
+to achieve actual operator evolution? Can the α-bridge be crossed in
+simulation, producing the first observed L5→L6 transition?
