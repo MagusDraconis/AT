@@ -50,24 +50,24 @@ public static class OperatorEcology
                 innovationRate, saturating));
 
             // Meta-operator evolution: each existing operator has a chance
-            // to spawn a new operator family.
+            // to spawn a new operator family. Cap total families.
+            if (operators.Count >= 200) break; // hard cap
             var newOps = new HashSet<string>();
-            foreach (string op in operators.ToList())
+            int toProcess = Math.Min(operators.Count, 5);
+            foreach (string op in operators.Take(toProcess).ToList())
             {
                 if (rng.NextDouble() < mutationRate)
                 {
-                    // Generate a new operator: op + higher-order term.
-                    int level = operators.Count;
-                    string newOp = $"{op}+γ|{op}ψ|²";
+                    string newOp = $"Op{operators.Count + 1}";
                     newOps.Add(newOp);
                 }
             }
             foreach (string nop in newOps)
                 operators.Add(nop);
 
-            // Slight decay in mutation rate (diminishing returns on novelty).
-            mutationRate *= 0.98;
-            if (mutationRate < 0.01) mutationRate = 0.01;
+            // Slight decay in mutation rate.
+            mutationRate *= 0.99;
+            if (mutationRate < 0.05) mutationRate = 0.05;
         }
 
         return history;
