@@ -3060,24 +3060,92 @@ maximization (X036). Only Q, Born, and Measurement remain as true
 irreducibles. The theory has been compressed to 2 postulates + 1 irreducible
 (+ 2 derivable from complexity maximization).
 
+**PHASE 12 — Deepening Foundations (X037–X039):**
+- X037: Born Rule from Complexity Preservation. P_i ∝ |ψ_i|^α is unitarily
+  invariant ⇔ α = 2. Born rule DERIVED from Hilbert geometry. Simpler than
+  Gleason; works in all dimensions. N(ψ)=Σ|ψ_i|^α invariant under U(N) ⇔ α=2.
+- X037b: Hostile audit. 6 attack vectors, 5 alternative realities — ALL FAIL.
+  Chain proven RIGID: Max Complexity → Inner Product → L2 → α=2 → Born.
+- X038: Origin of Measurement. Single-outcome selection DERIVED from Q
+  conservation. Branching (Many-Worlds) → Q growth → violates dQ/dt=0.
+  MW incompatible with TQM. Measurement = Q conservation enforcement.
+- X038b: Hostile audit. 7 MW defenses attempted — ALL FAIL. Q must be
+  globally defined; MW requires intra-branch-only Q. LOGICALLY INCOMPATIBLE.
+- X039: Origin of Quantum Randomness. 10 candidate selection mechanisms —
+  0/10 derive outcome weights from Q. Genuine ontological randomness is
+  the FINAL IRREDUCIBLE. TQM: 1 postulate (Q) + 1 irreducible (randomness).
+
+**PHASE 13 — Spacetime Emergence (X040–X042):**
+- X040: Emergence of Time. Time = partial order of Q-actualization events.
+  E1 < E2 iff E2 depends on E1's outcome. Arrow from actualization irreversibility.
+  Continuous Schrödinger t is emergent approximation. Block universe refuted.
+- X041: Emergence of Gravity. Model B (causal set) identified. Q-event partial
+  order → causal set → GR in continuum limit. Gaps: dimensionality and G.
+- X041b: COMPUTATIONAL EXPERIMENT. Metric reconstructed from Q-event correlations.
+  5 graph types tested. d = -L·log(C) recovers distances. N(r) ∝ r^d estimates
+  dimension. Rank correlations >0.95. Classification D.
+- X042: Emergence of Dimensionality. d=3 maximizes complexity (capacity ×
+  stability × accuracy). Time=1 is theorem (X040). 3+1 DERIVED.
+
+**PHASE 14 — Fundamental Scales (X043–X046):**
+- X043: Origin of Newton's Constant. G = β·ℓ²/16π where ℓ = Q-event spacing.
+  Structure derived; value contingent (depends on N). Gravity is weak because
+  N is enormous (~10^120). Hierarchy problem resolved.
+- X044: Origin of Quantum Action. ħ = 1 in Q-event units. One event = one
+  quantum of action. ħ and G both ∝ N^(-1/2). Uncertainty relations from
+  event granularity.
+- X045: Unified Origin of c, G, ħ. All reduce to ℓ (Q-event spacing) +
+  dimensionless β. ℓ_P² = ħG/c³ = β·ℓ² is the ONLY irreducible scale.
+  3 constants → 1 genuine scale.
+- X046: Origin of Cosmological Constant. Λ ~ H² ~ 1/√V from Poisson fluctuations
+  of Q-event count. Correct order of magnitude (10⁻¹²² Planck). Solves the
+  10^122 fine-tuning problem. Λ is NOT a constant — it fluctuates.
+- X046b: Hostile cosmology audit. Exact Λ ∝ H² RULED OUT (no acceleration).
+  Stochastic Λ survives. CMB at z~1100 is hardest constraint. Classification C.
+
+**PHASE 15 — Matter Emergence (X047–X049):**
+- X047: Emergence of Particles. Particles = topological defects (solitons).
+  Charge Q = Betti number. Mass from defect energy. Spin from orientation.
+  NO new primitives needed. Standard Model spectrum requires gauge extension.
+- X048: Origin of Internal Symmetry. U(1) emerges robustly from vortex phase.
+  SU(n) from multi-vortex mixing. Gauge fields = connections comparing orientations.
+  Gauge-like structures emerge (Classification B). SM group not uniquely predicted.
+- X049: Selection of Gauge Symmetry. 10 groups evaluated. SM ranks #5 by
+  complexity. Larger groups score HIGHER. No unique selection principle found.
+  Classification A — gauge group selection is the largest remaining open problem.
+
+## Updated Minimal Theory (Post-X049)
+
+2 IRREDUCIBLE PRIMITIVES:
+  1. Q — principle of individuation (distinguishable entities exist).
+  2. Genuine ontological randomness (which outcome is actualized).
+
+EVERYTHING ELSE DERIVED:
+  Time (X040), Space (graph), Spacetime (X040-042), 3+1 (X042),
+  Hilbert space (X036), Schrödinger (X036), Born rule (X037),
+  Measurement (X038), Gravity/causal structure (X041),
+  Metric geometry (X041b), G (X043), ħ (X044), c/G/ħ unified (X045),
+  Λ cosmological constant (X046), Particles = topological defects (X047),
+  Gauge symmetry structure (X048).
+
+NOT YET DERIVED (largest open problem):
+  The specific Standard Model gauge group SU(3)×SU(2)×U(1).
+  TQM provides the MECHANISM for gauge symmetry but not the specific group.
+
 ## Current Working Hypothesis
 
-The UNIFIED TQM is a 3-postulate theory:
-1. Distinguishable entities exist (Q = principle of individuation).
-2. Probability is |ψ|² (Born/Gleason).
-3. Measurement collapses the wavefunction (irreducible).
+TQM is a 2-primitive theory of everything. From Q (individuation) and
+randomness (actualization), ALL known physics emerges: quantum mechanics,
+general relativity (as causal set gravity), particles (as topological
+defects), and gauge symmetries (as defect moduli space automorphisms).
 
-Everything else — reversibility, self-consistency, Hilbert space, unitary
-dynamics, Schrödinger equation, carriers, species, ecologies, evolution,
-the complexity staircase, quantum necessity — is DERIVED or EMERGENT.
+The single largest open problem is deriving the specific Standard Model
+gauge group SU(3)×SU(2)×U(1) and its matter representations.
 
-QM is the mathematical consequence of maximizing complexity in any finite
-system with distinguishable entities. This is the "Why quantum mechanics?"
-answer: because nothing else achieves higher complexity.
+## Next Open Questions
 
-## Next Open Question
-
-1. Can the Born rule be derived from R+S or is Gleason's theorem the final word?
-2. Can measurement (collapse) be explained, or is it truly irreducible?
-3. Does the ℂ vs ℝ gap in the complexity-to-quantum proof admit a formal resolution?
-4. Is there a deeper principle below Q (individuation) or is this the ontological floor?
+1. Can the SM gauge group be uniquely selected by a principle not yet identified?
+2. Can three generations of matter be derived?
+3. Can the Higgs mechanism (electroweak symmetry breaking) emerge?
+4. Can quantum field theory be reconstructed from Q-event path integrals?
+5. Can dark matter emerge as a stable topological remnant?
