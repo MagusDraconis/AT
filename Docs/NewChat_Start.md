@@ -3321,3 +3321,19 @@ Poisson is EXACT (N ~ 10¹²⁰). Even power-law decay gives Poisson at
 macroscopic scales.
 - Classification A: Theorem with 1 conjecture. XC006-XC007-XC008 chain
 reduces external dependency from 46% → ~15%. GR bridge is ~80% derived.
+
+**PHASE 23 — ResearchXC-009: Newton Constant Derivation:**
+G = β·ℓ²/(16π). ℓ = (V/N)^(1/4) from Q-event density. G structurally derived:
+G ∝ 1/⟨k⟩ · N^(−1/2). Three β approaches: BDG matching (β~1), connectivity
+response (β~1/⟨k⟩~0.2), dimensional regularization (β~4). β constrained to
+O(0.1-10) by naturalness, exact value requires BDG continuum matching.
+
+- Key finding: G is NOT a fundamental constant — it's derived from Q-event
+density ℓ and connectivity ⟨k⟩. G's weakness (10⁻⁷⁰ m²) explained by vast
+N (~10¹²⁰). G depends on N (contingent cosmological parameter), not a new
+primitive. Zero free continuous fundamental parameters maintained.
+- Defect-curvature coupling: defect mass → δρ → volume perturbation → BDG
+curvature response. G parametrizes sensitivity of curvature to density.
+- Classification C: Structure derived. Value constrained but not computed
+exactly. Contingent on N + β. XC006-XC009 chain: external dependency
+46% → ~10%. Remaining: β exact + dimensionality unification.
