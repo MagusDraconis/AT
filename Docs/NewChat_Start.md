@@ -3389,3 +3389,18 @@ and complexity. All trace to ⟨k⟩ = f(d).
 - Classification C: Strong partial unification (~60% via ⟨k⟩). Remaining ~40%
 independent but convergent. Final conceptual gap between gravity (XC) and
 complexity (XE) closed. TQM now has a single explanation for d=3+1.
+
+**PHASE 27 — ResearchXD-004: Euclid Decision Tree:**
+Complete operational decision tree. 7 scenarios pre-classified: w=-1 (6 sectors
+killed, ~70% survives), weak deviation (0 killed), moderate deviation (0 killed,
+TQM validated), strong deviation (1 killed, recalibrate), wrong sign (4 killed),
+survey tension (0 killed, wait), DESI confirmation (0 killed, strengthen).
+
+- 21 sectors mapped for survival. 15/21 independent of w(z) — always survive.
+10 branches with Bayesian confidence updates under 4 outcomes. 16 revision
+actions defined (Preserve/Revise/Replace/Delete).
+- Worst case (w=-1): TQM becomes 1-parameter (M²) + unexplained constant Λ.
+Best case (w≠-1, correct sign): overall confidence 0.75→0.85, TQM validated.
+Any case: response is pre-committed, documented, binding.
+- Classification D: Fully decision-complete. TQM is ready for experimental
+judgment. No improvisation needed. The decision tree is complete.
