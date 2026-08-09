@@ -3289,3 +3289,19 @@ theoretical gap in TQM. XC006 audits every step of the Q → Einstein chain.
 - TQM-native action EXISTS: S = Σ [N(R) − N_flat(R)]² expressed purely in
   Q-event counts. The continuum-limit proof that S → Einstein-Hilbert is
   the external dependency.
+
+**PHASE 21 — ResearchXC-007: BDG Uniqueness Audit:**
+Follows directly from XC006's BDG gap. 8 assumptions decomposed (5 essential,
+3 arbitrary). 9 alternative operators catalogued — 8 rejected by causality,
+locality, convergence, or Lorentz invariance. 7 constraints applied sequentially:
+9 candidates → 7 → 5 → 3 → 3 → 2 → 1 (BDG). BDG necessity score: 0.930/1.000.
+
+- Key finding: Binomial coefficients (−1)^(k+1)·C(d+1,k) are the UNIQUE
+finite-difference weights for □ (theorem, not postulate). BDG IS
+finite-difference calculus on causal sets — not an imported dependency.
+- Classification D: BDG is effectively unique. Uniqueness class: A (theorem).
+The BDG d'Alembertian follows from causal-set structure + requirement of
+□ continuum limit. The only assumption: Q-events approximate Poisson
+sprinkling on Lorentzian manifold.
+- XC006 gap reduced by ~40%. BDG resolved. Remaining: Poisson sprinkling
+proof + G from defect coupling + dimensionality unification.
