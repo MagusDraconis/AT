@@ -3372,3 +3372,20 @@ naturally: β is a property of spacetime, not matter.
 (BDG literature) gives C₄ = 2/π. β is unique and computed.
 - GRAVITY SECTOR DONE: G = (2/π)·ℓ²/(16π). ℓ = (V/N)^(1/4) contingent on N.
 ZERO free structural parameters in the gravity sector.
+
+**PHASE 26 — ResearchXC-012: Dimensionality Unification:**
+Two independent d=3+1 derivations unified through ⟨k⟩/M² as bridge quantity.
+Path A (complexity, XE009): 6 requirements peak at M²≈5 → d=3+1. Path B
+(causal set, XC): Myrheim-Meyer estimator recovers d from event-count scaling.
+Both converge: d → ⟨k⟩=f(d) → M²≈5 → chemistry window → complexity → observers.
+
+- Connectivity bridge: ⟨k⟩ as function of d computed for 1+1 through 5+1D.
+Only d=3+1 gives ⟨k⟩≈5 within chemistry window [3, 5]. All other d fail.
+- 8 requirements matrix: 3+1 satisfies 8/8. No other d ≥ 3/8. Knots (codim-2),
+Huygens, GR DOF are independent but convergent — all select d=3+1.
+- Dimensionality Principle: d is the unique fixed point where causal connectivity
+simultaneously satisfies gravity, chemistry, topology, information, causality,
+and complexity. All trace to ⟨k⟩ = f(d).
+- Classification C: Strong partial unification (~60% via ⟨k⟩). Remaining ~40%
+independent but convergent. Final conceptual gap between gravity (XC) and
+complexity (XE) closed. TQM now has a single explanation for d=3+1.
