@@ -442,6 +442,18 @@ The most likely failure scenario is:
 
 This is not a catastrophic failure. A one-parameter framework that derives the Standard Model gauge structure, three generations, mass hierarchy patterns, and mixing from two primitives would still be a significant scientific achievement. The framework would abandon its cosmological predictions and focus on its particle physics and quantum gravity core.
 
+#### Known Recovery Paths (w(z) = −1 scenario)
+
+The following recovery paths define how the framework could be revised if the Λ(t) prediction fails, without abandoning the research program entirely.
+
+**Path A: Constant Λ, Modified Abundance.** Accept Λ as a fundamental constant (as in ΛCDM). Revise the abundance framework to use a freezeout criterion that does not depend on Λ(t). The identity/abundance distinction survives. The log-normal distribution law may survive if the cascade mechanism is reformulated with a different timescale. *Loss: cosmological constant derivation, time-varying dark energy prediction. Gain: clean separation of abundance physics from cosmology.*
+
+**Path B: Freezeout Independent of Λ.** Retain the abundance framework but decouple freezeout from cosmic expansion history. The cascade depth N would be set by a different physical timescale — perhaps the actualization rate itself, or the defect formation epoch. *Loss: the elegant Λ → freezeout connection. Gain: abundance framework survives in modified form.*
+
+**Path C: Alternative Dark Energy Emergence.** Abandon the Poisson fluctuation model but retain the broader idea that dark energy emerges from Q-event structure. Investigate alternative emergence mechanisms: entropic gravity, correlation-induced curvature, defect-density effects. *Loss: the specific X046 derivation. Gain: the research program's motivation survives.*
+
+**Path D: Full Cosmology Sector Replacement.** Accept that TQM's current cosmological predictions are wrong. Replace Tier 4 (cosmology, dark sector) with a new approach while retaining Tier 0-3 (QM, particles, gravity). This preserves the framework's strongest results — quantum mechanics emergence, particle physics from defects, gauge structure from topology. *Loss: all cosmological predictions. Gain: core framework intact.*
+
 ### 12.2 If the Framework Survives
 
 The strongest possible confirmation scenario is:
@@ -462,4 +474,54 @@ The framework will be tested. Some of it will survive. Some of it will fail. The
 
 ---
 
-*Hostile Audit Document, August 2026. This document will be updated as experimental results become available.*
+## 13. Framework Revision Protocol
+
+### 13.1 Motivation
+
+A scientific framework should define in advance what types of evidence would trigger what types of revision. This prevents post-hoc rationalization and ensures that the decision to modify or abandon components of the framework is based on pre-established criteria.
+
+### 13.2 Action Levels
+
+Three levels of response are defined, corresponding to increasing severity of the required revision:
+
+| Action Level | Trigger | Description |
+|:--:|----------|-------------|
+| **Model Update** | A specific model within the framework is falsified; the broader sector survives. | Revise or replace the specific model. Example: replace Model A (X060) with a different neutrino defect model. |
+| **Sector Replacement** | An entire sector (cosmology, DM, abundance) is falsified; the dependency tier above survives. | Replace the sector with a new approach while preserving the higher tiers. Example: replace Λ(t) cosmology with an alternative dark energy mechanism. |
+| **Framework Abandonment** | Internal logical contradiction demonstrated in Tier 0-1 derivations, or all predictions falsified. | Abandon the framework. Preserve salvageable mathematical results (causal set gravity bridge, defect topology insights) as standalone contributions. |
+
+### 13.3 Observation-to-Action Matrix
+
+The following matrix defines, for each possible experimental outcome, what action should be taken. This is a pre-commitment — the framework's proponents should not deviate from these responses when data arrives.
+
+| Observation | Certainty Required | Action Level | Specific Response |
+|------------|:--:|:--:|------------------|
+| w(z) = −1.000 ± 0.01 | >3σ (Euclid+Roman) | **Sector Replacement** | Abandon Λ(t) model. Replace Tier 4 cosmology with one of the recovery paths (Section 12.1). Tier 0-3 survives. |
+| Weak w(z) deviation (w ≈ −0.98) | ~2σ (Euclid alone) | **No action** | Wait for Roman. Do not revise. |
+| w(z) ≠ −1 at >3σ with correct sign | >3σ | **Model Update** | Refine Λ(t) model with measured parameters. Framework survives its most critical test. |
+| Inverted neutrino ordering | >5σ | **Model Update** | Replace Model A (φ⁴ kink). Develop alternative neutrino defect model (different defect type, different potential). Delocalized-defect ontology survives. |
+| WIMP detected at LHC/direct | >5σ | **Model Update** | Abandon neutral-vortex DM candidate. Investigate whether the detected particle can be identified with a different TQM defect type. If not, accept external DM. |
+| Axion detected | >5σ | **Model Update** | Compare to moduli-excitation prediction. If consistent: confirm TQM-axion. If inconsistent: abandon moduli DM candidate. |
+| α demonstrated constant beyond log-normal width | >3σ | **Sector Replacement** | Abandon quantitative abundance framework (XB series). Retain identity/abundance distinction as conceptual framework. |
+| M² ≠ ⟨k⟩ demonstrated | Proof | **Model Update** | Accept M² as measured input. Framework becomes one-parameter. Compression ratio still ~95%. |
+| Internal contradiction in Tier 1 (QM derivation) | Proof | **Framework Abandonment** | Publish the contradiction. Preserve salvageable mathematical results. |
+| All Tier 4 predictions fail | >3σ each | **Sector Replacement** | Replace entire cosmology + dark sector. Preserve Tier 0-3. |
+| All Tier 2-4 predictions fail | >3σ each | **Framework Abandonment** | Only Tier 0-1 survives — insufficient for a research program. Abandon framework. |
+
+### 13.4 Decision Rules
+
+The following rules govern when to escalate between action levels:
+
+1. **A single failed prediction at Model Update level** does not trigger Sector Replacement. Fix the model and continue.
+2. **Two or more failed predictions within the same sector** triggers Sector Replacement. The sector is likely fundamentally wrong.
+3. **Sector Replacement that fails to produce new testable predictions within 5 years** triggers a review of whether to abandon that sector entirely.
+4. **Framework Abandonment** requires either (a) an internal logical contradiction demonstrated by independent researchers, or (b) failure of all predictions within a tier that leaves no salvageable explanatory power.
+5. **No observation triggers Framework Abandonment from a single experiment.** The framework is modular by design. Only cumulative failure across multiple independent sectors justifies abandonment.
+
+### 13.5 The Pre-Commitment Principle
+
+This protocol is a pre-commitment. It is published before the relevant experimental results are available. The framework's proponents commit to following these decision rules regardless of the outcome. This is the strongest possible demonstration of scientific integrity: defining in advance what evidence would constitute falsification, and what action would follow.
+
+---
+
+*Hostile Audit Document, August 2026. This document will be updated as experimental results become available. The Revision Protocol (Section 13) is binding — future revisions may only add new observations and responses, not modify existing commitments.*
