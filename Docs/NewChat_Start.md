@@ -3224,9 +3224,43 @@ are all independently irreducible. The compression program is COMPLETE.
 ## Next Open Questions
 
 1. Can M² be derived from a deeper principle (e.g., uniquely selected by complexity maximization)?
-2. Can the exact value of α ≈ 1/137 be derived (currently weakly constrained, not predicted)?
+2. Can the exact value of α ≈ 1/137 be derived (currently understood as log-normal random variable)?
 3. Is M² related to the average causal degree of the Q-event graph (~O(1) in 3+1D)?
-4. Can dark matter emerge as a stable topological remnant?
-5. Can inflation emerge from early-universe Q-event dynamics?
-6. Can the baryon asymmetry be explained by defect topology?
-7. Can quantum field theory be fully reconstructed from Q-event path integrals?
+4. Can inflation emerge from early-universe Q-event dynamics?
+5. Can the baryon asymmetry be explained by defect topology?
+6. Can quantum field theory be fully reconstructed from Q-event path integrals?
+7. Can the relic abundance distribution of defect DM be predicted from first principles?
+8. Can the universal abundance law (all log-normal) be empirically tested?
+
+**PHASE 18 — Gravity & Cosmology (X060h–X065b):**
+- X060h: Gravity Emergence Audit. Gravity is Layer 4 — 11/14 structures exist
+  BEFORE gravity. Causal set → GR is the single largest external dependency.
+- X061: Emergent Macroscopic Gravity. Classification D. GR is the large-scale
+  limit: G_μν = 8πG_eff T_μν + O(ℓ_P²·R²) + O(1/√V). Two deviations from GR+ΛCDM:
+  time-varying Λ(t) and singularity-free black holes.
+- X062: Observable Deviations. 10 signatures audited. BEST TEST: w(z) ≠ -1 from
+  time-varying dark energy. Euclid (2024+) will measure w to σ≈0.02. TQM
+  falsifiable at >3σ by ~2030.
+- X063: Correlation-Induced Dark Matter Audit. Galaxy-scale successes (3/3):
+  rotation curves, BTFR, MOND-like a₀~cH₀ from Λ. Cosmological failures (0/4):
+  Bullet Cluster, CMB, structure formation require particle DM. Hybrid needed.
+- X064: Dark Matter as Hidden Topological Defects. Classification C. 7/8 DM
+  requirements satisfied. DM = neutral vortices (~TeV) + hidden moduli excitations
+  (~500 GeV). NO new particles — subset of existing defect taxonomy.
+- X065: Relic Abundance of Defect Dark Matter. Classification A. Ω_DM ~ 0.1-1 is
+  natural scale (Kibble + freezeout). Exact 0.27 not derivable — contingent on
+  initial conditions (same as ALL DM models).
+- X065b: Abundance vs Identity Audit. FUNDAMENTAL SPLIT DISCOVERED. Identity:
+  93% derived (topology determines WHAT). Abundance: 14% derived (history
+  determines HOW MUCH). Deepest meta-result of the TQM program.
+
+**PHASE 19 — ResearchXB: Abundance Physics (XB001–XB002):**
+- XB001: Origin of Abundance. New research program FOUNDED. Classification D —
+  Abundance identified as its own physical category. Two-layer ontology:
+  Identity (ResearchX, topology) + Abundance (ResearchXB, history). Universe
+  ensemble model: fix identity, vary history. Abundance = frozen initial conditions.
+- XB002: Universal Abundance Distribution Audit. UNIVERSAL ABUNDANCE LAW
+  DISCOVERED. All abundance quantities are LOG-NORMAL from multiplicative
+  actualization cascades. CLT in log-space → log(X) ~ N(μ,σ²). 3 universality
+  classes (coupling, mass scale, relic density). Explains WHY TQM cannot derive
+  exact values — they are random variables, not fixed constants.
