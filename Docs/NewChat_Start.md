@@ -3404,3 +3404,20 @@ Best case (w≠-1, correct sign): overall confidence 0.75→0.85, TQM validated.
 Any case: response is pre-committed, documented, binding.
 - Classification D: Fully decision-complete. TQM is ready for experimental
 judgment. No improvisation needed. The decision tree is complete.
+
+**PHASE 28 — ResearchXD-005: Roman + Euclid Joint Forecast:**
+CPL conversion: w0 ≈ -0.985, wa ≈ +0.060 (least-squares fit over z∈[0,2]).
+5 survey configurations forecast: Euclid alone (1.0σ), Roman alone (1.25σ),
+Euclid+Roman (1.9σ), all three (2.5σ w0, 3.0σ wa). Combined 3-survey ellipse
+excludes ΛCDM at ~3.9σ.
+
+- Key signature: wa > 0 (dark energy DECREASES with time). This is the opposite
+of freezing quintessence (wa < 0) — unique TQM signature. Lambda(t) =
+alpha/sqrt(V(t)) → V grows → Lambda decays → w becomes less negative.
+- 7 validation thresholds: Discovery (>5σ), Validation (3-5σ), Evidence (2-3σ),
+Hint (1-2σ), Null Result (w=-1 confirmed), Wrong Sign (phantom), Inconsistent.
+- Growth factor: fsigma8 ~3% below ΛCDM (consistency check, marginal).
+- Classification C: Strong observational forecast. Concrete, falsifiable
+prediction in observable CPL parameters. The experimental community just
+needs to do the measurement. Timeline: DESI Y1 2025 → Euclid DR1 2027 →
+Roman DR1 2029 → Combined decisive 2031.
