@@ -3421,3 +3421,17 @@ Hint (1-2σ), Null Result (w=-1 confirmed), Wrong Sign (phantom), Inconsistent.
 prediction in observable CPL parameters. The experimental community just
 needs to do the measurement. Timeline: DESI Y1 2025 → Euclid DR1 2027 →
 Roman DR1 2029 → Combined decisive 2031.
+
+**PHASE 29 — ResearchDATA-001: Pantheon+SH0ES Reality Check:**
+Real data analysis. 1701 SNe Ia from Pantheon+SH0ES parsed. LCDM and TQM both
+fitted via Omega_m grid scan (0.10-0.60) with numerical luminosity distance
+integration. TQM w(z) = -1 + 0.015·(1+z)^(3/2) used exactly as specified —
+NOT fitted. Same 2 free parameters for both models (Omega_m + M nuisance).
+
+- Results: |Delta_chi2| < 1 between models — INDISTINGUISHABLE. TQM deviation
+(~1.5% at z=0) is ~5x smaller than Pantheon sensitivity (~5-10%). Data are
+fully consistent with BOTH models. TQM survives first observational test.
+- This is EXPECTED: XD005 forecast predicted Pantheon alone cannot distinguish.
+Need DESI+Euclid+Roman combined for >3sigma.
+- Classification: TQM is CONSISTENT with current data. Not yet validated.
+Not yet falsified. Stronger tests await (2027-2031).
