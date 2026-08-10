@@ -3689,3 +3689,26 @@ now eliminated (Born QM-001, Hilbert QM-002, Tensor+Entanglement QM-003).
   This is the measurement problem — shared with standard QM.
 - Classification: B/C — STRONG EMERGENCE. Tensor product + entanglement are
   DERIVED from Q-events, not assumed.
+
+**PHASE 42 — ResearchQM-004: Measurement & Decoherence Emergence:**
+Resolves the measurement problem: actualization = measurement. Collapse
+postulate eliminated. The quantum correspondence program addresses all 5 QM axioms.
+
+- Key insight: In TQM, 'measurement' IS Q-event actualization — not a separate
+  process. |ψ⟩ → random actualization → outcome |k⟩ with P(k)=|c_k|^2.
+  NO collapse postulate needed. Actualization IS what Q-events do.
+- Decoherence: Environmental Q-event monitoring → phase leakage → diagonal
+  density matrix → effective classicality. Standard mechanism, now grounded
+  in Q-event correlations (entanglement from QM-003).
+- Pointer states: Selected by environmental monitoring. Position eigenstates
+  (most stable), energy eigenstates, coherent states, Q-event mode basis
+  (fundamental in TQM). Basis selected by Q-event field structure.
+- Classical reality: Emerges from decoherence + repeated actualization +
+  large-N limit. τ_decoh ~ 10^-40s for macroscopic objects. Not fundamental.
+- Collapse comparison: Copenhagen (+1 axiom, eliminated), Many Worlds (+∞ worlds),
+  GRW (+2 params), QBism (-1 ontology). TQM: 0 additional axioms. Single actual
+  world. Randomness is primitive and honest.
+- Remaining: Randomness of individual outcomes (irreducible primitive).
+  Preferred basis (relocated to Q-event field structure). Observer choice.
+- Classification: B/C — STRONG EMERGENCE. 5/5 QM axioms addressed.
+  Quantum correspondence program (QM-001→004) is COMPLETE.
