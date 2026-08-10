@@ -3736,3 +3736,23 @@ observational differences and their testability.
   important open problem — determines ALL potential deviations.
 - Classification: A/B — FULLY EQUIVALENT to QM at all accessible scales.
   Quantum correspondence program (QM-001→005) is COMPLETE.
+
+**PHASE 44 — ResearchQG-001: Quantum Gravity Emergence Audit:**
+First quantum gravity experiment. Positions gravity within TQM's emergence chain.
+Q-events (Level 0) → Causality (1) → Causal Set (2) → Distance (3) → Metric (4)
+→ Curvature (5) → Gravity/GR (6). 7 levels identified, gravity is the LAST.
+
+- Q-events exist BEFORE spacetime. NO geometry required at Level 0.
+- Causal order emerges from Q-event succession (temporality from Q primitive).
+- Distance emerges from causal link counting: d ≈ N_links × ℓ.
+- Metric g_μν emerges in the continuum limit (large-N Q-event approximation).
+- Curvature (Riemann) → Einstein tensor → Einstein equations (G_μν = 8πG T_μν).
+M^2 provides the nonlinear coupling that yields GR in the effective limit.
+- TQM comparison: Closest to Causal Set Theory (Sorkin+). Opposite to String Theory
+(spacetime is fundamental there). LQG shares emergence but starts from geometry.
+- Key insight: 'Quantum gravity' is redefined. Standard: 'How to quantize gravity?'
+TQM: 'Gravity IS quantum — it emerges from Q-events.' Entanglement exists BEFORE
+gravity. The problem is emergence, not quantization.
+- Gaps: ℓ unknown (single most important), Einstein equation derivation heuristic,
+causal set → metric external (Sorkin), dimension 3+1 unexplained, G_eff unknown.
+- Classification: C — STRONG EMERGENCE. Gravity = last structure from Q-events.
