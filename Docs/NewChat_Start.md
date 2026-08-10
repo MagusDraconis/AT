@@ -3781,3 +3781,25 @@ Similar to fuzzball program but Q-events replace strings.
 counting (vs string theory), Page curve not predicted, singularity unresolved.
 - Classification: B/C — PARTIAL EMERGENCE. Conceptual resolution strong.
 Quantitative derivation incomplete (gaps all trace to ℓ unknown).
+
+**PHASE 46 — ResearchQG-003: Hawking Radiation & Page Curve Audit:**
+Final quantum gravity experiment. Hawking radiation mechanism, Page curve
+reconstruction, information paradox resolution. QG program complete.
+
+- Hawking radiation: 6-step emergence from Q-event vacuum. Vacuum fluctuation →
+  Q-event pair → horizon separation → trapped + escape → entangled → thermal.
+  Thermality from random actualization (large-N Q-event statistics).
+  ~1/√N deviations from perfect thermality encode information.
+- Information encoding: 4 phases. Early: inaccessible (behind horizon). Mid:
+  emerging (horizon shrinks). Late: in radiation correlations. Final: Planck
+  remnant. Information is NEVER destroyed — Q-events cannot be destroyed.
+- Page Curve: 5 phases reconstructed. S_ent ↗ at t < t_Page → peaks at S_BH/2 →
+  ↘ at t > t_Page → 0 at evaporation. Natural from Q-event entanglement evolution.
+  No firewall needed (causal boundary preserves entanglement). No complementarity.
+- Comparison: TQM supports Page 1993 and ER=EPR. Rejects Hawking 1976 and
+  AMPS firewall. Supports information preservation from Q-event substrate.
+- Honest assessment: TQM provides the ONTOLOGICAL FOUNDATION for why the Page
+  curve must be true. But quantitative predictions (t_Page ~ M³, T_H, exact
+  encoding) remain imported from QFT+GR. TQM is an explanation, not a replacement.
+- Classification: B — PARTIAL EMERGENCE. Strong conceptual framework. The
+  quantum gravity program (QG-001→003, 3 experiments) is COMPLETE.
