@@ -3712,3 +3712,27 @@ postulate eliminated. The quantum correspondence program addresses all 5 QM axio
   Preferred basis (relocated to Q-event field structure). Observer choice.
 - Classification: B/C — STRONG EMERGENCE. 5/5 QM axioms addressed.
   Quantum correspondence program (QM-001→004) is COMPLETE.
+
+**PHASE 43 — ResearchQM-005: Quantum Novel Prediction Audit:**
+Honest equivalence audit between TQM and standard QM. Identifies all potential
+observational differences and their testability.
+
+- TQM = QM: ALL 6 core aspects (Hilbert space, Born Rule, Schrödinger equation,
+  tensor product, entanglement, measurement) are MATHEMATICALLY IDENTICAL to
+  standard QM at all tested scales.
+- Actualization residue: Discrete grain (~10^-40), randomness floor (~1/√N),
+  maximum coherence time (N_Q·τ_Q), irreversibility — ALL UNOBSERVABLE at
+  current experimental sensitivity.
+- Decoherence predictions: Residual decoherence, max entanglement size,
+  preferred basis deviation — all below experimental thresholds by >20 orders
+  of magnitude.
+- Falsification: No current experiment constrains TQM-specific effects. Born Rule
+  or Tsirelson violations would falsify BOTH TQM and QM — not TQM-specific.
+  The ONLY path to experimental distinctiveness is computing ℓ (Q-event spacing).
+- Honest verdict: TQM is EXPERIMENTALLY INDISTINGUISHABLE from standard QM.
+  Currently an ONTOLOGICAL REFORMULATION with superior compression (5 QM axioms
+  → 2 TQM primitives + M^2). NOT yet a distinct physical theory.
+- Critical unknown: ℓ (Q-event spacing). Computing ℓ is the single most
+  important open problem — determines ALL potential deviations.
+- Classification: A/B — FULLY EQUIVALENT to QM at all accessible scales.
+  Quantum correspondence program (QM-001→005) is COMPLETE.
