@@ -3803,3 +3803,23 @@ reconstruction, information paradox resolution. QG program complete.
   encoding) remain imported from QFT+GR. TQM is an explanation, not a replacement.
 - Classification: B — PARTIAL EMERGENCE. Strong conceptual framework. The
   quantum gravity program (QG-001→003, 3 experiments) is COMPLETE.
+
+**PHASE 47 — ResearchQG-004: Cosmic Expansion Emergence Audit:**
+Cosmic expansion reinterpreted as Q-event network growth. Links QG program
+directly to the DATA cosmology program (DATA-001→010).
+
+- Q-event growth: N(t) increases monotonically (actualization). New Q-events
+  create new causal links → effective volume grows → scale factor a(t) ∝ N(t)^(1/3).
+- Hubble: H(t) = ȧ/a = (1/3)Ṅ/N. Expansion rate = Q-event growth rate / 3.
+  Ṅ slows → H decreases (matter era). Ṅ → constant → H → H_∞ (Λ era).
+- Distance: d(A,B) ∝ (# causal links) × ℓ. New Q-events inserted → distance
+  grows → redshift z ∝ (a_now/a_then - 1). No 'expanding space' needed.
+- Dark Energy: Λ(t) = α/√V(t) emerges from Q-event volume growth. Not fundamental.
+  w(z) = -1 + 0.015·(1+z)^(3/2) is the unique TQM prediction (DATA-001→010).
+- Framework comparison: Closest to Causal Set Cosmology. ΛCDM is late-time
+  effective limit. Expansion is REINTERPRETED (not derived) — 'space expands'
+  becomes 'Q-event network grows.'
+- Honest assessment: TQM does not derive N(t) — the Q-event growth history.
+  N(t) is what nature gives us. TQM interprets it but doesn't predict it.
+- Classification: B — PARTIAL EMERGENCE. Unique w(z) prediction connects
+  QG theory to DATA observations (Euclid 2027+ will test Λ(t) vs constant Λ).
