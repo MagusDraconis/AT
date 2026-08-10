@@ -3756,3 +3756,28 @@ gravity. The problem is emergence, not quantization.
 - Gaps: ℓ unknown (single most important), Einstein equation derivation heuristic,
 causal set → metric external (Sorkin), dimension 3+1 unexplained, G_eff unknown.
 - Classification: C — STRONG EMERGENCE. Gravity = last structure from Q-events.
+
+**PHASE 45 — ResearchQG-002: Black Hole & Information Emergence Audit:**
+Black hole physics from Q-event causal structure. Information paradox resolved.
+
+- Black hole = trapped causal region. Horizon = causal boundary (Level 2).
+Defined purely through Q-event connectivity — NO geometry required at the
+fundamental level. GR metric emerges in the large-N limit (Level 4-6).
+- Entropy: S ∝ A from Q-event counting on horizon. Area law = holographic
+principle = consequence of Q-event structure. S = A/(4ℓ²) consistent with
+Bekenstein-Hawking if ℓ = ℓ_Planck.
+- Information: Q-event correlations are the substrate of information. Q-events
+CANNOT be destroyed → information CANNOT be destroyed. Apparent loss during
+evaporation is causal disconnection — correlations transferred to radiation.
+Information paradox RESOLVED — not through clever mathematics but as a
+CONSEQUENCE of what TQM IS: Q-events = information substrate.
+- Hawking radiation: Q-event pair creation at causal boundary. Escaping Q-event
+entangled with infalling one → correlations carry information. Thermal spectrum
+from random actualization statistics (T_H = ℏ/(8πGM), imported from QFT).
+- Comparison: TQM rejects firewalls (horizon = causal, not physical boundary).
+Rejects information destruction. Supports ER = EPR (geometry from entanglement).
+Similar to fuzzball program but Q-events replace strings.
+- Gaps: Quantitative entropy (ℓ unknown), Hawking T not derived, no microstate
+counting (vs string theory), Page curve not predicted, singularity unresolved.
+- Classification: B/C — PARTIAL EMERGENCE. Conceptual resolution strong.
+Quantitative derivation incomplete (gaps all trace to ℓ unknown).
