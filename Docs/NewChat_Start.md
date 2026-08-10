@@ -3671,3 +3671,21 @@ Reconstructs Hilbert space from Q-events in 6 steps. Second QM axiom eliminated.
   axioms of quantum mechanics from Q + oscillation alone.
 - Classification: B/C — STRONG EMERGENCE. Hilbert space is RECONSTRUCTED,
   not assumed. The quantum correspondence program is on track.
+
+**PHASE 41 — ResearchQM-003: Tensor Product & Entanglement Emergence:**
+Derives tensor product and entanglement from Q-event structure. 4/5 QM axioms
+now eliminated (Born QM-001, Hilbert QM-002, Tensor+Entanglement QM-003).
+
+- Subsystems: Q individuation creates boundaries between event networks.
+  Topological defects define particle-like subsystems.
+- Tensor product uniqueness: H_A⊗H_B is the ONLY structure preserving
+  amplitudes, interference, and normalization. Direct sum and Cartesian
+  product FAIL. ⊗ is MATHEMATICALLY FORCED by Q-event outcome counting.
+- Entanglement: Shared Q-event causal ancestry → correlated actualization →
+  non-factorizable amplitudes → entanglement. Emerges from causal structure.
+- Bell correlations: CHSH ≤ 2√2 follows from Hilbert space (QM-002) + Born
+  (QM-001). Tsirelson bound is a CONSEQUENCE. No deviation predicted.
+- Axioms eliminated: 4/5. Remaining: subsystem decomposition (observer choice).
+  This is the measurement problem — shared with standard QM.
+- Classification: B/C — STRONG EMERGENCE. Tensor product + entanglement are
+  DERIVED from Q-events, not assumed.
