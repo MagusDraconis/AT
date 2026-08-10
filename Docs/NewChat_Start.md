@@ -3843,3 +3843,25 @@ first principles. Honest conclusion: growth law is NOT fully derived.
 - Future: N saturates → H → H_∞ (small, non-zero) → eternal near-static expansion.
 - Classification: B — PARTIAL GROWTH MODEL. QG program (QG-001→005) COMPLETE.
   5 experiments establish TQM quantum gravity from Q-events through cosmic expansion.
+
+**PHASE 49 — ResearchQG-006: Random Actualization Irreducibility Audit:**
+Final QG experiment. Bedrock audit: determines whether Random Actualization can
+be reduced further or is the true foundation of TQM. QG program complete.
+
+- Random Actualization = the PROCESS by which Q-events become actual. Bridge
+  between potential (Q structure) and actual (reality). LOGICAL PRIMITIVE.
+- Dependency graph: 7/7 derived results break if actualization removed. Born
+  Rule, measurement, entanglement, gravity, black holes, cosmic expansion,
+  growth law — ALL depend on actualization. Single point of failure.
+- Deterministic replacements: Hidden variables (Bell-violating),
+  superdeterminism (unfalsifiable), many-worlds (ontologically extravagant),
+  algorithmic (pseudorandom — Bell-violating). ALL FAIL.
+- Ontology: 5 levels identified. Level 0 (primitives): Q + Randomness.
+  Level 1 (emergent): QM. Level 2: QG. Level 3: Cosmology. Level 4: Observables.
+  Everything above Level 0 is DERIVED.
+- Bedrock: Q (individuation) + Random Actualization. IRREDUCIBLE. M^2 and ℓ
+  are REDUCIBLE in principle. Ṅ_∞ uncertain. If M^2 derivable from Q-event
+  graph → TQM reduces to 2 primitives with ZERO free continuous parameters.
+- TQM has been compressed to its MINIMAL LOGICAL CORE. End of derivation chain.
+- Classification: D — FUNDAMENTAL BEDROCK. Random Actualization is the
+  irreducible foundation. QG program (QG-001→006, 6 experiments) COMPLETE.
