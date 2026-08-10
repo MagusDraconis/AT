@@ -3823,3 +3823,23 @@ directly to the DATA cosmology program (DATA-001→010).
   N(t) is what nature gives us. TQM interprets it but doesn't predict it.
 - Classification: B — PARTIAL EMERGENCE. Unique w(z) prediction connects
   QG theory to DATA observations (Euclid 2027+ will test Λ(t) vs constant Λ).
+
+**PHASE 48 — ResearchQG-005: Q-Event Growth Law Audit:**
+Deepest QG experiment. Attempts to derive N(t) — the Q-event growth law — from
+first principles. Honest conclusion: growth law is NOT fully derived.
+
+- Growth mechanism: Random actualization (primitive) + causal opportunity
+  (derivable). Actualization IS the creation mechanism — irreducible.
+  Causal structure channels growth: dN/dt ∝ N_links (causal connections).
+- Growth law candidates: Constant Ṅ (rejected — no evolution), Ṅ ∝ N
+  (rejected — no matter era), Ṅ ∝ √N (partial — no Λ era), Ṅ ∝ N_links
+  (BEST — causal saturation → matter → Λ transition naturally).
+- Cosmological eras: Single mechanism produces radiation era (N ∝ t², H ∝ 1/2t)
+  → matter era (N ∝ t², H ∝ 2/3t) → Λ era (N → constant rate, H → H_∞).
+- Dark Energy: w(z) = -1 + 0.015·(1+z)^(3/2). Functional form DERIVED from
+  Λ(t) = α/√V(t). η = 0.015 is FITTED (not derived from first principles).
+- Irreducible elements: 2 primitives (Q + Randomness) + 3 parameters
+  (ℓ, Ṅ_∞, M²). ΛCDM: 6 parameters. Genuine ontological compression.
+- Future: N saturates → H → H_∞ (small, non-zero) → eternal near-static expansion.
+- Classification: B — PARTIAL GROWTH MODEL. QG program (QG-001→005) COMPLETE.
+  5 experiments establish TQM quantum gravity from Q-events through cosmic expansion.
