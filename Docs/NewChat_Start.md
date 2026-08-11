@@ -3887,3 +3887,25 @@ Derivation paths for Newton's constant G. 5 independent paths converge on G ∝ 
 - Classification: B — PARTIAL EMERGENCE. Structure in place. Numerical value
   awaits ℓ. If ℓ is ever computed → G becomes a PREDICTION, not a measurement.
   QG program (QG-001→007, 7 experiments) continues.
+
+**PHASE 51 — ResearchQG-008: Q-Event Spacing Determination Audit:**
+Deepest QG experiment yet. Attempts to derive ℓ (Q-event spacing) from first
+principles. Honest conclusion: ℓ is NOT derived — it remains the final parameter.
+
+- ℓ = 1.616×10⁻³⁵ m (Planck length). Minimum causal separation between Q-events.
+  The GRAIN SIZE of reality. Defines all physical scales: G = ℓ²c³/ħ,
+  S = A/4ℓ², V_Q = ℓ³, absolute cosmological scale.
+- 6 candidate origins evaluated. Best: causal set consistency in 3+1D (Sorkin+)
+  constrains ℓ to ~Planck scale. Entropy bound saturation gives ℓ = ℓ_Planck
+  exactly. But BOTH are CONSISTENCY checks, not derivations.
+- 6 quantities depend on ℓ: G, S_BH, Planck scale, Q-event volume, T_H, H₀.
+  ALL of QG requires ℓ. Without it: no quantitative predictions.
+- Parameter elimination: G eliminated (replaced by ℓ). c partially redundant.
+  ħ and M² remain. ℓ is the FINAL FRONTIER — deriving it would mean 2 primitives
+  + 0 parameters. This has NOT been achieved.
+- Comparison: Standard Model + GR: ~26 fundamental parameters. TQM: 2 primitives
+  + 1-3 parameters (ℓ, ħ, M²). Genuine ontological compression (26 → 3-5).
+- The holy grail: derive ℓ from Q + Randomness → ZERO free continuous parameters.
+  The path is clear. The execution is incomplete.
+- Classification: A — COMPLETELY ASSUMED. ℓ is the final unexplained constant.
+  QG program (QG-001→008, 8 experiments) continues.
