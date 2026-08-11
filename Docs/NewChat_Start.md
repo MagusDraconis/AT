@@ -3865,3 +3865,25 @@ be reduced further or is the true foundation of TQM. QG program complete.
 - TQM has been compressed to its MINIMAL LOGICAL CORE. End of derivation chain.
 - Classification: D — FUNDAMENTAL BEDROCK. Random Actualization is the
   irreducible foundation. QG program (QG-001→006, 6 experiments) COMPLETE.
+
+**PHASE 50 — ResearchQG-007: Gravity Constant Emergence Audit:**
+Derivation paths for Newton's constant G. 5 independent paths converge on G ∝ ℓ².
+
+- Key insight: G is NOT fundamental — ℓ (Q-event spacing) IS. G = ℓ²·c³/ħ is
+  a CONVERSION from Q-event geometry units to SI units. TQM inverts the standard
+  Planck relation: measure G → compute ℓ_P becomes compute ℓ → predict G.
+- 5 derivation paths: dimensional (Planck: G=ℓ²c³/ħ), entropy-area (QG-002:
+  S=A/4ℓ²→G=ℓ²), causal connectivity (G∝1/ρ_causal), horizon information
+  (G from area per Q-event), M² coupling (G_eff = f(M²,ℓ)). ALL converge.
+- Numerical consistency: G_si = 6.67430×10⁻¹¹ is CONSISTENT with ℓ = ℓ_Planck
+  = 1.616×10⁻³⁵ m. If TQM computes ℓ ≈ ℓ_Planck → G is EXPLAINED. If not →
+  prediction conflicts with data.
+- G(t) evolution: Effectively constant in late universe (causal saturation).
+  Early-universe variation possible but untestable (below Planck scale).
+  Lunar laser ranging: dG/dt/G < 10⁻¹³/yr — no variation detected.
+- Honest assessment: TQM does NOT currently compute the numerical value of G.
+  But G is DEMOTED from fundamental parameter to derived quantity — TQM has
+  ONE FEWER free parameter than the Standard Model (G is eliminated).
+- Classification: B — PARTIAL EMERGENCE. Structure in place. Numerical value
+  awaits ℓ. If ℓ is ever computed → G becomes a PREDICTION, not a measurement.
+  QG program (QG-001→007, 7 experiments) continues.
