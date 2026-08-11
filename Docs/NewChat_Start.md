@@ -4218,3 +4218,18 @@ theoretically possible, practically impossible.
   (phase structure) but does not make it controllable.
 - Classification: A/B — NO EFFECT (practically) / WEAK CORRESPONDENCE
   (theoretically). 23 QG experiments.
+
+**PHASE 68 — ResearchQG-024: Resonance Leverage Audit:**
+Systematic search for structural leverage points. Result: NO leverage found.
+Stability = unmanipulability — they are the SAME THING.
+
+- 7 leverage candidates: M² (best theory, inaccessible), synchronization (N×,
+  gap 10¹⁵ to gravity), critical points (divergent, Q-event unknown), topological
+  defects (stable by design — NOT levers), causal horizons (natural, inaccessible).
+- Synchronization gap: BEC (10⁶ atoms → 10⁻¹⁹ kg), superconductors (10²³ e⁻ →
+  10⁻⁷ kg). Need 10³⁸ coherent Q-events. Gap: 10¹⁵. ALL lab systems insufficient.
+- Deep insight: TQM's attractors (QG-020) CREATE stability AND resist perturbation.
+  If the chain were easily perturbed → no stable particles → no matter → chaos.
+  The structural integrity enabling existence also prevents fundamental control.
+- Honest: NO practical leverage. Gravity manipulation via TQM is NOT possible.
+  This IS the final answer. Classification: A — NO LEVERAGE FOUND. 24 QG expts.
