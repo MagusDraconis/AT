@@ -3930,3 +3930,24 @@ Deepest QG result: proves ℓ > 0 is LOGICALLY REQUIRED, but the VALUE remains e
   Genuine progress: existence derived, value not yet.
 - Classification: C — LOGICALLY REQUIRED (existence). A — COMPLETELY ASSUMED
   (numerical value). QG program (QG-001→009, 9 experiments) continues.
+
+**PHASE 53 — ResearchQG-010: Speed of Causality & Planck Scale Selection:**
+Tenth QG experiment. Inverts the ℓ→G chain: c is MORE fundamental than ℓ.
+Redefines c as maximum causal update rate (not 'speed of light').
+
+- Key insight: c = maximum rate at which Q-event actualization propagates through
+  causal structure. Light travels at c because photons are massless Q-event
+  field excitations. c is NOT about light — light is about c.
+- c → ∞ audit: 4/6 aspects FATAL. Causal order destroyed (no partial order),
+  Q individuation violated (no temporal distinction), actualization meaningless
+  (no becoming), spacetime destroyed (no causal set → no manifold). c < ∞ is
+  LOGICALLY REQUIRED by the same reasoning as ℓ > 0 (QG-009).
+- Length emergence: ℓ = c·τ. Length is DERIVED from speed × time. ℓ is NOT
+  fundamental — c is. τ = minimum actualization interval (from discreteness).
+- Complete chain: Q + Randomness → c → τ → ℓ = cτ → G = ℓ²c³/ħ → Planck scale.
+  All of fundamental physics from 2 primitives + c + τ + ħ.
+- Honest assessment: Parameter count UNCHANGED. Standard physics: G, c, ħ (3).
+  TQM: c, τ, ħ (3). ℓ = cτ eliminates ℓ but introduces τ. Net reduction: 0.
+  This is ONTOLOGICAL progress (clarifies what constants mean), not parametric.
+- Classification: B/C — CONSTRAINED to STRONGLY EMERGENT. c < ∞ logically forced.
+  Value empirical. QG program (QG-001→010, 10 experiments) continues.
