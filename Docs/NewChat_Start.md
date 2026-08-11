@@ -3994,3 +3994,21 @@ QG program capstone. Honest audit: the numerical Planck scale is NOT derived.
 - QG program (QG-001→012, 12 experiments) is COMPLETE. Full chain established:
   Q+Randomness → ℓ>0, τ>0 → c=ℓ/τ → G=ℓ²c³/ħ → Planck scale → all physics.
   Parameters compressed ~5-8×. Remaining challenge: derive ℓ, ħ from Q-events.
+
+**PHASE 56 — ResearchQG-013: Causal Speed Stability Audit:**
+Proves c = 299792458 m/s is a UNIT CONVENTION, not a physical parameter.
+In natural units (ℓ = τ = 1), c = 1 automatically.
+
+- c → ∞: FATAL (causal order destroyed). c → 0: FATAL (frozen universe).
+  ANY finite c > 0 works. Stability window: (0, ∞) — effectively unbounded.
+- QM is INVARIANT under c rescaling (c does not appear in Hilbert space).
+  GR and cosmology are STABLE for any finite c (just rescale time dimension).
+- c = ℓ/τ is a DEFINITION, not a selection. The real parameters are ℓ and τ
+  (QG-012). c inherits its value from them.
+- The numerical value 299792458 comes from the historical ratio of meters to
+  seconds — a unit artifact. In natural units, c = 1. Asking "why 299792458?"
+  is like asking "why 3600 seconds per hour?"
+- TQM explains: c < ∞ (QG-010), c = ℓ/τ (QG-011). TQM does NOT explain why
+  ℓ and τ have their values (QG-012 — EMPIRICAL). c adds no new physics.
+- Classification: D — STABILITY-SELECTED. c is the UNIQUE causal speed for a
+  Q-event universe with spacing (ℓ, τ). QG program (QG-001→013, 13 experiments).
