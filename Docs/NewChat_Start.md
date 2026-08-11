@@ -4159,3 +4159,19 @@ dissolving into noise: Q (structure) + M² (nonlinear attractors) + Topology.
   foundation, not computational replacement.
 - Classification: B/C — PARTIAL to STRONG EMERGENCE. QG program (QG-001→020,
   20 experiments) COMPLETE.
+
+**PHASE 65 — ResearchQG-021: Oscillation Primacy Audit:**
+Meta-structural audit. Proves oscillation is the PRIMARY MECHANISM bridging
+Q-events to physical reality — the first manifestation of Actualization.
+
+- Removal: Removing oscillation destroys phase, interference, QM, particles,
+  atoms, gravity. Oscillation IS IRREDUCIBLE — built into Q succession.
+- Phase chain: Q succession → before/after → oscillation → phase θ → e^(iθ) →
+  complex amplitudes → interference → Hilbert space (QM-002).
+- Matter = stable oscillation patterns: particles = standing waves (topological
+  attractors), atoms = resonant bound states, molecules = coupled oscillators.
+- Geometry = oscillation density → causal set → metric (QG-001). Gravity =
+  phase gradients → curvature → Einstein equations (QG-001). Oscillation unifies
+  QM (temporal dynamics), matter (standing waves), geometry (spatial pattern),
+  and gravity (phase curvature).
+- Classification: D — PRIMARY MECHANISM. 21 QG experiments.
