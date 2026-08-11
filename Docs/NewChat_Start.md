@@ -3909,3 +3909,24 @@ principles. Honest conclusion: ℓ is NOT derived — it remains the final param
   The path is clear. The execution is incomplete.
 - Classification: A — COMPLETELY ASSUMED. ℓ is the final unexplained constant.
   QG program (QG-001→008, 8 experiments) continues.
+
+**PHASE 52 — ResearchQG-009: Minimal Causal Resolution Audit:**
+Deepest QG result: proves ℓ > 0 is LOGICALLY REQUIRED, but the VALUE remains empirical.
+
+- Three independent proofs: (1) LOGICAL — Q individuation requires distinct
+  events. ℓ = 0 → zero separation → same event → contradiction. (2) EMPIRICAL —
+  G > 0, S_BH finite, T_H finite all require ℓ > 0. (3) MATHEMATICAL — causal
+  set → continuum limit requires finite density. ℓ = 0 → infinite density →
+  limit undefined. All three converge on ℓ > 0.
+- ℓ→0 limit: 5/8 aspects FATAL (individuation, geometry, gravity, BH entropy,
+  cosmic expansion). 3/8 survive (causal order, Hilbert, entanglement). QM
+  SURVIVES ℓ→0. GRAVITY BREAKS. The split is definitive — QM does not require ℓ
+  (it needs only Hilbert space), gravity absolutely requires it.
+- Numerical value: ℓ = 1.616×10⁻³⁵ m is NOT forced by any argument. It is
+  contingent — empirically determined from G measurement. TQM explains WHY a
+  minimum scale must exist but not WHY it has this specific value.
+- Comparison: Standard physics — ℓ_P = √(ħG/c³) is purely empirical. TQM — ℓ > 0
+  is logically forced. The EXISTENCE is explained. The VALUE remains empirical.
+  Genuine progress: existence derived, value not yet.
+- Classification: C — LOGICALLY REQUIRED (existence). A — COMPLETELY ASSUMED
+  (numerical value). QG program (QG-001→009, 9 experiments) continues.
