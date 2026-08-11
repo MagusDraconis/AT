@@ -4364,3 +4364,27 @@ not from physical measurement.
   distinctness (events collapse).
 - Classification: D — LOGICAL CONTRADICTION. ℓ>0 and τ>0 are DEFINITIONAL truths,
   not empirical discoveries. They follow from metric axioms + individuation. 32 QG.
+
+**PHASE 77 — ResearchQG-033: Negative Phase and Anti-Phase Architecture Audit:**
+Phase is the true "negative" degree of freedom. Unlike ℓ and τ (magnitudes),
+phase lives on S¹ — a circle with no preferred origin.
+
+- Negative phase (θ→-θ): Coordinate convention on S¹. ≡ 2π-θ mod 2π. Same
+  point. Classification A.
+- Anti-phase (Δθ=π): REAL physical configuration. Destructive interference
+  in superpositions. Stable as pairwise relation, unstable as extended DOMAINS
+  (walls collapse at c). Classification B.
+- Phase gradient inversion (∇θ→-∇θ): This IS repulsive gravity (QG-029). NOT
+  the same as anti-phase — it's source inversion, not interference cancellation.
+  Unstable locally, stable cosmologically (DE). Classification B→C.
+- Phase winding (∮∇θ·dl=2πn): TOPOLOGICALLY PROTECTED stable architecture.
+  Vortices cannot be unwound by continuous deformation. n=1 is the fundamental
+  stable phase structure. Classification C.
+- Particles as compact phase winding: Electrons = n=1 confined vortex. Protons
+  = n=3 winding or skyrmion (π₃(S²)=Z). Photons = n=0 propagating wave. Unifies
+  particle identity, stability, mass, and charge via winding topology.
+  Classification C→D (speculative, compelling).
+- Phase sector hierarchy: Level 0 (θ→-θ, trivial), Level 1 (Δθ=π, interference),
+  Level 2 (∇θ→-∇θ, repulsive sector), Level 3 (winding, topological architecture),
+  Level 4 (particles as winding, fundamental).
+- Classification: A (sign flip) → C (winding) → C→D (particles). 33 QG.
