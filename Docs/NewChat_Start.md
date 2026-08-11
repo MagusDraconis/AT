@@ -4047,3 +4047,20 @@ constant. TQM's irreducible triple: (ℓ, τ, ħ) — spatial, temporal, action 
   TQM explains WHAT they mean — not their numerical values.
 - Classification: A — COMPLETELY EMPIRICAL. ħ is the final irreducible constant.
   QG program (QG-001→014, 15 experiments) is COMPLETE.
+
+**PHASE 59 — ResearchQG-015: Scale Pair Degeneracy Audit:**
+Analyzes whether ℓ and τ are truly independent or linked by hidden constraints.
+
+- ℓ and τ are LINKED by c = ℓ/τ → only 2 of (ℓ, τ, c) are independent.
+- Scaling degeneracy: (ℓ,τ,ħ)→(kℓ,kτ,k²ħ) preserves c and G. But m_P scales
+  as k, T_H scales as 1/k — broken by any mass/temperature measurement.
+  In practice, c, G, ħ measured → ℓ, τ uniquely fixed. NO physical degeneracy.
+- Independent variation: varying ℓ alone changes c (broken by measurement).
+  Varying τ alone changes c. Varying both to preserve c/ℓ=τ changes G.
+  ALL degeneracies BROKEN by observation.
+- Equivalence: Standard (c, G, ħ) ↔ TQM (ℓ, τ, ħ). One-to-one mapping via
+  c=ℓ/τ, G=ℓ²c³/ħ. Same 3 parameters — different names, same mathematics.
+  TQM adds ONTOLOGICAL MEANING (spatial grain, temporal grain, action grain)
+  but does not change the count or relationships.
+- Classification: A — FULLY INDEPENDENT. ℓ and τ are separate degrees of
+  freedom, linked by c but independently measurable. 16 QG experiments.
