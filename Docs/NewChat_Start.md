@@ -4064,3 +4064,21 @@ Analyzes whether ℓ and τ are truly independent or linked by hidden constraint
   but does not change the count or relationships.
 - Classification: A — FULLY INDEPENDENT. ℓ and τ are separate degrees of
   freedom, linked by c but independently measurable. 16 QG experiments.
+
+**PHASE 60 — ResearchQG-016: Causal Ratio Constraint Audit:**
+Resolves the apparent tension between QG-015 (ℓ, τ independent) and the observed
+constancy of c = ℓ/τ. c is a DEFINITION, not a hidden constraint.
+
+- Resolution: c = ℓ/τ IS the definition of the causal speed. "c is constant"
+  means "ℓ/τ is constant" — the same statement. No hidden mechanism forces ℓ/τ
+  to a specific value. The ratio is fixed because we MEASURE c.
+- Ratio variation: ℓ/τ << c_obs → slow causal propagation. ℓ/τ >> c_obs → fast
+  propagation. ANY ratio produces consistent physics — observers always measure
+  their own ℓ/τ as "c". No preferred value.
+- Parameter reduction: (ℓ, τ) have 2 DOF. Measuring c → 1 DOF. Measuring G →
+  0 DOF (both fixed). Standard dimensional analysis. No new physics.
+- Hidden ratio search: Causal consistency (no — any ratio works). Information
+  propagation (tautology — info speed IS ℓ/τ). Horizon entropy (constrains ℓ,
+  not ℓ/τ). No hidden constraint found.
+- Classification: A — FULLY INDEPENDENT. ℓ/τ = c is a definition, not a
+  constraint. 17 QG experiments.
