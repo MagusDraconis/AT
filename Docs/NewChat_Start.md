@@ -4082,3 +4082,24 @@ constancy of c = ℓ/τ. c is a DEFINITION, not a hidden constraint.
   not ℓ/τ). No hidden constraint found.
 - Classification: A — FULLY INDEPENDENT. ℓ/τ = c is a definition, not a
   constraint. 17 QG experiments.
+
+**PHASE 61 — ResearchQG-017: Fundamental Triple Audit:**
+QG program structural finale. Proves (ℓ, τ, ħ) is the IRREDUCIBLE physical
+triple — one process (actualization), three aspects.
+
+- Why exactly 3? Physics has 3 independent dimensions [L, T, M]. You need exactly
+  3 fundamental scales. Dimensional analysis — not TQM-specific. TQM gives them
+  ONTOLOGICAL MEANING: all three emerge from ONE process (actualization).
+- Pair derivations: ALL FAIL. ħ from (ℓ, τ): missing mass dimension [M]. ℓ from
+  (τ, ħ): missing [M]. τ from (ℓ, ħ): missing [M]. No pair derivation works.
+  The triple IS the minimum set.
+- Symmetries: (ℓ,τ,ħ)→(kℓ,kτ,k²ħ) preserves c, G (unit scaling). Lorentz
+  symmetry emerges from fixed ℓ/τ = c. Action quantization prevents continuous
+  symmetry in ħ. No deeper symmetry links all three.
+- Unification: Actualization is ONE process with THREE intrinsic attributes:
+  WHERE (ℓ), WHEN (τ), HOW MUCH (ħ). The triple IS the unified structure.
+  No deeper object X exists — this IS the bedrock.
+- Below: Q + Random Actualization (logical primitives, QG-006). Above: all
+  physics emerges (QM, GR, cosmology, RAR).
+- Classification: D — SINGLE DEEPER STRUCTURE (actualization). The triple are
+  three ASPECTS of one process. QG program (QG-001→017, 18 experiments) COMPLETE.
