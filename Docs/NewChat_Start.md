@@ -4012,3 +4012,16 @@ In natural units (ℓ = τ = 1), c = 1 automatically.
   ℓ and τ have their values (QG-012 — EMPIRICAL). c adds no new physics.
 - Classification: D — STABILITY-SELECTED. c is the UNIQUE causal speed for a
   Q-event universe with spacing (ℓ, τ). QG program (QG-001→013, 13 experiments).
+
+**PHASE 57 — ResearchQG-013a: Dimensionless Structure Audit:**
+Final QG audit (14th). Searches for hidden dimensionless invariants. None found.
+
+- 6 dimensionless quantities: 4 identities (=1), 1 derived (Sℓ²/A=1/4), 1
+  empirical (η=0.015). No hidden relations. All are definitions or derivations.
+- 2π appears 5 times: g†, Fourier norm, winding, causal diamond, Einstein 8π.
+  ALL are mathematical identities (circle measure, ω↔ν) — not coincidences.
+- Hidden constraint search: found nothing beyond definitions. ℓ, ℏ, M² are
+  TRULY FREE parameters. No dimensionless invariant constrains their values.
+- Deepest truth: TQM provides STRUCTURE (how things relate), not SCALE (why
+  things have values). ℓ, ℏ, M² remain empirical bedrock.
+- Classification: A — NO HIDDEN STRUCTURE. 14 QG experiments complete.
