@@ -4294,3 +4294,13 @@ energy, different architecture → different physics.
   Architecture affects gravity through phase structure.
 - Classification: D — ARCHITECTURE IS PRIMARY. Energy is the paint. Architecture
   is the painting. 28 QG experiments.
+
+**PHASE 73 — ResearchQG-029: Attractive vs Repulsive Gravity Audit:**
+Repulsive gravity: mathematically possible, unstable locally. Dark Energy is
+the only stable repulsive phenomenon (cosmological scale).
+
+- Attraction: +∇θ → positive curvature → dominant stable solution. All normal
+  matter. Repulsion: −∇θ → negative curvature → phase voids unstable (fill).
+- Dark Energy: Λ(t) = α/√V(t) → cosmic repulsion. STABLE (global, not local).
+  w(z) = -1 + 0.015·(1+z)^(3/2) — unique TQM prediction.
+- Classification: B — REPULSION POSSIBLE BUT UNSTABLE LOCALLY. 29 QG expts.
