@@ -4025,3 +4025,25 @@ Final QG audit (14th). Searches for hidden dimensionless invariants. None found.
 - Deepest truth: TQM provides STRUCTURE (how things relate), not SCALE (why
   things have values). ℓ, ℏ, M² remain empirical bedrock.
 - Classification: A — NO HIDDEN STRUCTURE. 14 QG experiments complete.
+
+**PHASE 58 — ResearchQG-014: Quantum of Action (ħ) Emergence Audit:**
+QG program finale. ħ (action quantum) is NOT derived — it's the final empirical
+constant. TQM's irreducible triple: (ℓ, τ, ħ) — spatial, temporal, action grain.
+
+- ħ = action per Q-event actualization. Converts oscillation frequency to energy
+  (E = ħω). Sets the scale of quantum interference (e^(iS/ħ)). DEFINITION, not
+  prediction — explains WHAT ħ is but not its numerical value.
+- ħ → 0: 3/6 QM aspects FATAL (interference, uncertainty, commutation). 3/6
+  SURVIVE (actualization, Born Rule, entanglement). QM becomes classical but
+  TQM's stochastic core survives.
+- Event counting: ħ = action/actualization = definition. Phase structure: ħ sets
+  phase scale (θ = S/ħ). Information: speculative (ħ·ln2 per bit).
+- Dependency: G = ℓ²c³/ħ — ħ is MORE fundamental than G. Planck scales, Hawking
+  temperature, Bekenstein entropy — all depend on ħ. ħ + ℓ + τ form the
+  irreducible triple from which all other scales emerge.
+- Final parameter count: ℓ, τ, ħ = 3 EMPIRICAL parameters. c = ℓ/τ (derived).
+  G = ℓ²c³/ħ (derived). M², Ṅ_∞ possibly reducible from Q-event structure.
+  Standard physics: G, c, ħ (3). TQM: ℓ, τ, ħ (3). Equivalent triple. Difference:
+  TQM explains WHAT they mean — not their numerical values.
+- Classification: A — COMPLETELY EMPIRICAL. ħ is the final irreducible constant.
+  QG program (QG-001→014, 15 experiments) is COMPLETE.
