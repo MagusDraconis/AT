@@ -4388,3 +4388,30 @@ phase lives on S¹ — a circle with no preferred origin.
   Level 2 (∇θ→-∇θ, repulsive sector), Level 3 (winding, topological architecture),
   Level 4 (particles as winding, fundamental).
 - Classification: A (sign flip) → C (winding) → C→D (particles). 33 QG.
+
+**PHASE 78 — ResearchQG-034: Topological Particle Genesis Audit:**
+Major unification experiment. Maps all known particles to topological phase structures.
+Derives particle stability, anti-matter, and spectrum selection from winding topology.
+
+- Winding sectors: n=0 (trivial — photon, gauge bosons), n=±1 (ABSOLUTELY STABLE
+  — electron, positron), n=±2 (UNSTABLE to fission — no known particle), n=±3
+  (METASTABLE with confinement — proton, anti-proton).
+- Fission criterion: E_n = n²·E₁. For n≥2: E_n > k·E₁ → exothermic fission.
+  n=1 is absolutely stable because no n=½, n=¼ exist (topology is integer).
+  Electron stability = TOPOLOGICAL THEOREM, not a dynamical accident.
+- Anti-matter: n → -n = opposite winding. Natural prediction of TQM. Positron =
+  n=-1 vortex. Same mass, opposite charge. Inevitable given S¹ topology.
+- Particle mapping: Leptons (e,μ,τ) = n=±1 vortices (C: strong). Baryons (p,n) =
+  confined n=3 (B: requires QCD). Gauge bosons (γ,W,Z,g) = n=0 phase waves (B).
+  Higgs = amplitude mode (B). Neutrinos = n=1 with decoupled core (A: weak).
+- Mass: topology gives STRUCTURE, architecture gives ENERGY SCALE. E_vortex at
+  Planck ~10²⁸ eV vs electron 0.511 MeV — 10²² mismatch. Mass comes from
+  frequency architecture (ħω/c²), not winding energy alone.
+- Charge: winding couples to U(1) gauge field. Q = g·n. Spin-½: requires
+  projective SO(3) representation — double-valued phase space. Plausible but
+  incomplete.
+- Spectrum: topology restricts to {0, ±1, confined ±3}. Explains why electrons
+  are stable, why no "di-electron" particle exists, why anti-matter exists.
+  3 generations require architecture (same topology, different frequency bands).
+- Classification: B→C. Leptons: C (strong). Baryons: B (external confinement).
+  Gauge bosons: B. Full spectrum: topology + architecture together. 34 QG.
