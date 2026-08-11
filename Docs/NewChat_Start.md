@@ -4343,3 +4343,24 @@ at Planck (vacuum fluctuations) and cosmological (Dark Energy) scales.
   QG-031 (metastable = DE only). Gravity manipulation: NOT POSSIBLE.
 - Classification: B→C. Planck: B (extremely short-lived). Cosmological: C
   (observable). Any intermediate: IMPOSSIBLE. 31 QG experiments.
+
+**PHASE 76 — ResearchQG-032: Negative Length and Time Audit:**
+Systematic audit of ℓ < 0 and τ < 0. Demonstrates positivity follows from DEFINITIONS,
+not from physical measurement.
+
+- ℓ < 0: Category error. ℓ is a DISTANCE — a metric. Metrics satisfy d ≥ 0 by
+  definition. "Negative distance" is as meaningless as "negative area" or
+  "negative probability." Confusion arises from conflating POSITION (coordinate,
+  can be negative) with DISTANCE (metric, cannot).
+- τ < 0: Logical contradiction. τ is a DURATION. τ < 0 means the next Q-event
+  occurs BEFORE the current one — succession runs backward. But "next" MEANS
+  "after." Becoming cannot un-become. Contradicts the definition of Q.
+- Domain audit: Distance (D: category error), Position (A: convention), Duration
+  (D: contradiction), Time coordinate (A: convention), Speed (D), Frequency (A:
+  convention equivalence), Phase gradient (B: sign real, not from ℓ), Action (B:
+  weak — ℓ² masks sign).
+- Combined: ℓ<0,τ<0 → c positive (signs cancel) — but individual values still
+  nonsensical. τ<0 destroys causality (closed timelike curves). ℓ<0 destroys
+  distinctness (events collapse).
+- Classification: D — LOGICAL CONTRADICTION. ℓ>0 and τ>0 are DEFINITIONAL truths,
+  not empirical discoveries. They follow from metric axioms + individuation. 32 QG.
