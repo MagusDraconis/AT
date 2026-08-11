@@ -4103,3 +4103,22 @@ triple — one process (actualization), three aspects.
   physics emerges (QM, GR, cosmology, RAR).
 - Classification: D — SINGLE DEEPER STRUCTURE (actualization). The triple are
   three ASPECTS of one process. QG program (QG-001→017, 18 experiments) COMPLETE.
+
+**PHASE 62 — ResearchQG-018: Local Time vs Actualization Time Audit:**
+Resolves the relationship between τ (actualization interval) and proper time
+(clock time). Discovers a necessary dual-time structure in TQM.
+
+- τ = 5.39×10⁻⁴⁴ s — universal actualization interval. Pre-geometric (Level 0).
+  INVARIANT — does not change with gravity. NOT what clocks measure.
+- Proper time — metric-dependent clock time. Emerges at Level 4 (causal set →
+  manifold). DILATES with gravity (GR). What observers experience.
+- Gravity-time interaction: Mass curves causal structure → different Q-event
+  density → same τ, different proper-time-to-event-count ratio → time dilation.
+  Near Earth: τ unchanged, proper time slower. Near BH: τ unchanged, proper time
+  freezes. c = ℓ/τ remains invariant everywhere because ℓ and τ are universal.
+- Reconciliation: [1] c = ℓ/τ constant (τ universal). [2] Local Lorentz
+  invariance (c always measured the same). [3] GR time dilation (proper time
+  varies). [4] τ > 0 (discrete actualization). All four coexist.
+- Classification: D — DUAL-TIME STRUCTURE REQUIRED. This is a FEATURE, not a
+  bug — it's the necessary reconciliation of discrete quantum time with
+  relativistic proper time. 19 QG experiments.
