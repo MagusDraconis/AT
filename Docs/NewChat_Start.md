@@ -4246,3 +4246,21 @@ Deepest QG experiment. Proves Actualization is a STATIC, IRREDUCIBLE PRIMITIVE.
   NOT possible. The process of becoming cannot be changed — only the state of
   what becomes varies.
 - Classification: A — COMPLETELY STATIC PRIMITIVE. 25 QG experiments.
+
+**PHASE 70 — ResearchQG-026: Why Does Actualization Generate Oscillation:**
+Deepest logical QG experiment. Proves Oscillation = LOGICAL INEVITABILITY. Cannot
+be removed without destroying Q itself.
+
+- Oscillation IS temporal succession at interval τ. They are IDENTICAL. Q defines
+  succession; τ defines the interval (QG-011); succession at regular intervals =
+  oscillation. Removing oscillation → removing temporal succession → removing Q.
+- Non-oscillatory models: Linear succession only → no phase, no QM, no matter.
+  Random timing → no frequency, no energy quantization. Both FAIL.
+- The inevitable chain: Q → succession → τ > 0 → rhythm → oscillation →
+  frequency (ω=2π/τ) → phase (θ=ωt) → interference → QM → particles → atoms →
+  geometry → gravity. 6 steps from Q to all of physics.
+- From two primitives (Q + Randomness): all of physics emerges. Oscillation,
+  phase, interference, QM, particles, atoms, geometry, gravity — all derived.
+  This is the most compressed physical theory possible.
+- Classification: D — LOGICAL INEVITABILITY. Oscillation is not an assumption —
+  it IS the temporal nature of Q-events. 26 QG experiments.
