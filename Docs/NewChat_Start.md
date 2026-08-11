@@ -4274,3 +4274,23 @@ Unifies all physics as a single frequency hierarchy rooted in τ.
 - Mass = ħω/c². Particles = frequency attractors. Atoms = resonant cavities.
   Molecules = coupled frequency networks. All from τ + emergent couplings.
 - Classification: D — UNIFIED FREQUENCY PICTURE. 27 QG experiments.
+
+**PHASE 72 — ResearchQG-028: Frequency Architecture Audit:**
+Proves frequency organization (architecture) is PRIMARY over raw energy. Same
+energy, different architecture → different physics.
+
+- Architecture taxonomy: Chaotic (random, unstable), Resonant (harmonic, stable),
+  Coherent (phase-locked, max structure), Topological (winding-protected,
+  permanent), Hierarchical (nested, all of reality). Organization determines
+  stability, mass, and gravity.
+- Same energy, different physics: Thermal gas vs BEC (same atoms, same energy →
+  gas is diffuse, BEC has sharp coherent phase gradient). Laser vs thermal source
+  (same power → laser has directed phase gradient). Proton mass (938 MeV) ≫
+  quark sum (9 MeV) due to QCD binding architecture.
+- Mass: E=ħω gives base mass. Binding energy, phase coherence, and topological
+  protection ADD architectural mass. Proton mass is ~99% architectural.
+- Gravity: Phase gradient depends on phase organization (QG-022). Coherent →
+  sharp gradient. Chaotic → diffuse. Same energy → different gravitational field.
+  Architecture affects gravity through phase structure.
+- Classification: D — ARCHITECTURE IS PRIMARY. Energy is the paint. Architecture
+  is the painting. 28 QG experiments.
