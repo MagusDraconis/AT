@@ -4175,3 +4175,24 @@ Q-events to physical reality — the first manifestation of Actualization.
   QM (temporal dynamics), matter (standing waves), geometry (spatial pattern),
   and gravity (phase curvature).
 - Classification: D — PRIMARY MECHANISM. 21 QG experiments.
+
+**PHASE 66 — ResearchQG-022: Phase Gradient & Gravity Audit:**
+Bridge audit connecting QG-001 (emergent gravity) to QG-021 (oscillation primacy).
+Proves gravity IS a phase-gradient phenomenon in TQM.
+
+- The chain: oscillation density → phase gradient → causal set density variation →
+  metric curvature → Einstein equations → gravity. All 6 links established by
+  previous experiments. This audit composes them into a single chain.
+- Phase→curvature mapping: Uniform phase → flat. Linear gradient → flat
+  (coordinate). Quadratic variation → curvature. Localized defect → mass.
+  Schwarzschild-like → black hole.
+- Mass reinterpreted: E=ħω (oscillation energy). Mass=E/c². Oscillation density
+  concentrates Q-events → curvature → effective mass. Inertial mass = resistance
+  to phase change. Gravitational mass = phase gradient source. Both from phase.
+- Gravity correspondence: Gravitational potential Φ = -GM/r ∝ θ (phase field)
+  in suitable units (conversion via ħc²). The phase field IS the gravitational
+  potential. Curvature is the second derivative of the phase field.
+- Honest: TQM reinterprets gravity ontologically but does not change GR equations.
+  Same predictions, same tests. Gravity is NOT a fundamental force — it's the
+  macroscopic shadow of Q-event phase organization.
+- Classification: D — GRAVITY EMERGES FROM PHASE STRUCTURE. 22 QG experiments.
