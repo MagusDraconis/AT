@@ -4264,3 +4264,13 @@ be removed without destroying Q itself.
   This is the most compressed physical theory possible.
 - Classification: D — LOGICAL INEVITABILITY. Oscillation is not an assumption —
   it IS the temporal nature of Q-events. 26 QG experiments.
+
+**PHASE 71 — ResearchQG-027: Frequency Hierarchy Audit:**
+Unifies all physics as a single frequency hierarchy rooted in τ.
+
+- Fundamental clock: ω₀ = 2π/τ = 1.17×10⁴⁴ Hz. CLOCK SPEED of reality.
+- Cascade: τ→proton(10²⁴Hz)→electron(10²⁰Hz)→Rydberg(10¹⁶Hz)→molecular(10¹³Hz)
+  →visible(10¹⁵Hz)→biological(1Hz). 44 orders. Ratios set by couplings.
+- Mass = ħω/c². Particles = frequency attractors. Atoms = resonant cavities.
+  Molecules = coupled frequency networks. All from τ + emergent couplings.
+- Classification: D — UNIFIED FREQUENCY PICTURE. 27 QG experiments.
