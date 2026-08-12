@@ -4506,3 +4506,24 @@ Deepest Standard Model question: why this specific gauge group. Honest partial s
 - Classification: B — WEAK CORRESPONDENCE. U(1): C (complete). SU(2): B. SU(3): B.
   Full group: A/B (still largely external). Gauge group selection = LARGEST
   remaining gap in TQM particle physics. Honest, not overclaimed. 38 QG.
+
+**PHASE 83 — ResearchQG-039: Three Generations Quantitative Audit:**
+Honest result: generations are DESCRIBED (excitation levels), not DERIVED. "3" remains empirical.
+
+- Generations = EXCITATION LEVELS of the SAME topology (n=1), NOT distinct
+  topological sectors. e = ground state, μ = 1st excited, τ = 2nd excited of
+  the n=1 vortex. Explains shared charge/spin and decay chains (τ→μ→e = frequency
+  de-excitation).
+- Mass ratios IRREGULAR: m_μ/m_e = 206.8, m_τ/m_μ = 16.8, m_τ/m_e = 3477.5.
+  No clean ladder, no geometric progression. Refuses to fabricate a pattern.
+- Koide relation: m_e+m_μ+m_τ = (2/3)(√m_e+√m_μ+√m_τ)² holds to 10⁻⁵ — the most
+  promising numerical clue to underlying architecture, but UNEXPLAINED by both
+  TQM and SM.
+- 4th generation EXCLUDED: LEP Z-width N_ν = 2.984±0.008 (light 4th ν excluded).
+  Higgs production gg→H enhanced ~9× with 4th heavy gen (LHC consistent with 3).
+- 3 = minimum for CP violation (CKM phase) → baryogenesis → matter survives.
+  But this is SELECTION/anthropic, not DERIVATION.
+- Neutrino generations: same mechanism but ~10⁶× lighter (decoupled cores,
+  no charge anchor). Asymmetry with charged leptons UNEXPLAINED.
+- Classification: B — QUALITATIVE. "Exactly three" remains empirical input to
+  TQM, exactly as to the SM. Koide relation is the key open clue. 39 QG.
