@@ -4932,3 +4932,25 @@ Determines whether Yukawas are arbitrary or eigenvalues of a deeper operator. Re
 - Classification: B — WEAK SPECTRAL STRUCTURE. Operator framework real; spectrum
   free with ONE unexplained eigenvalue constraint (Koide 45°, lepton-specific).
   56 QG.
+
+**PHASE 101 — ResearchQG-057: Koide Constraint Origin Audit:**
+Final synthesis on the origin of Koide Q=2/3. Result: REAL but UNEXPLAINED.
+
+- Koide is NOT a standard spectral sum rule: it is NON-POLYNOMIAL (√m), beyond
+  trace/determinant invariants. The √m is the TQM AMPLITUDE (m=ħω/c² → √m ∝
+  amplitude). Koide lives in the amplitude representation, not the mass one.
+- PARTICIPATION RATIO: p_i = √m_i/Σ√m → Q = Σp_i² = 0.6667 = 2/3 EXACTLY.
+  Q=2/3 is the MIDPOINT of [1/3 (uniform), 1 (concentrated)]. N_eff = 1/Q = 3/2
+  = 1.5 effective generations (halfway between 1 and 2). Elegant restatement.
+- INFORMATION GEOMETRY: (p_e,p_μ,p_τ)=(0.013,0.193,0.793). Shannon entropy
+  S=0.5595, S/S_max=0.5093 (≈half of max). NOT extremal — no optimization
+  principle selects Q=2/3. Descriptive, not derivational.
+- S3 textures FIT Q=2/3 (with fitted parameters) but don't DERIVE it. Exact S3
+  (democratic) gives Q=1, not 2/3. The "halfway" breaking is non-generic.
+- Coincidence disfavored: ~10⁻⁴ (look-elsewhere) + 1981 prediction (m_τ predicted
+  before measurement, confirmed 1992+).
+- Classification: B — WEAK STRUCTURAL CONSTRAINT. Koide is real (prediction
+  confirmed, 10⁻⁵, lepton-specific) but NO mechanism derives 2/3. Every
+  interpretation (45°, participation ratio, balanced S3) is a RESTATEMENT.
+  After 57 QG experiments, Koide = the cleanest statement of what TQM does not
+  yet explain: a single dimensionless number (2/3) at the heart of flavor. 57 QG.
