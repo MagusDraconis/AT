@@ -4758,3 +4758,26 @@ Tests whether Yukawa couplings form a deeper geometric structure. Key result: Ko
   coordinates. Geometry = the 4th (under test).
 - Classification: B — WEAK GEOMETRIC STRUCTURE. Leptons strong (45°), quarks none.
   Confinement-scrambling hypothesis is the next frontier. 48 QG.
+
+**PHASE 93 — ResearchQG-049: QCD Yukawa Scrambling Audit:**
+Tests whether QCD confinement scrambles the lepton 45° into quark angles. RESULT: FALSIFIED.
+
+- KEY MATHEMATICAL FACT: Koide Q = (Σy)/(Σ√y)² is INVARIANT under y_i → f·y_i
+  (all three scaled by same factor). The QCD beta function's DOMINANT term (-8g_s²)
+  is IDENTICAL for u,c,t (and d,s,b) — a COMMON factor. So QCD rescales all
+  Yukawas equally → θ is PRESERVED, not scrambled.
+- QCD confinement does NOT scramble the geometry. The "scrambling hypothesis" is
+  FALSIFIED by the common-factor structure.
+- Differential running (top's self-coupling (3/2)y_t² ~ 1.5) changes θ by only
+  ~2-3°, not the full 6° up-sector deviation. This is the TOP'S intrinsic large
+  Yukawa, NOT QCD confinement.
+- Georgi-Jarlskog GUT texture: m_b=m_τ, m_s=m_μ/3, m_d=3m_e → θ_down(GUT) ≈ 48°,
+  NOT 45°. Down quarks are NOT a 45° descendant. (Up quarks, IF ∝ lepton at GUT,
+  would be 45° — model-dependent.)
+- CKM is NOT differential scrambling (QCD common factor can't generate up/down
+  rotation). CKM remains empirical.
+- Null model (Koide lepton-specific) is SIMPLER and equally explanatory. Occam's
+  razor favors it.
+- Classification: B — WEAK CORRESPONDENCE. Koide is LEPTON-SPECIFIC. Quarks are
+  NOT its scrambled descendants, but a WEAK quark-lepton connection exists via
+  Georgi-Jarlskog (separate from Koide). Clean negative result. 49 QG.
