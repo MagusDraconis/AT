@@ -5119,3 +5119,23 @@ Capstone synthesis. Determines whether TQM has reached ontology completion. Resu
 - Classification: B — MOSTLY COMPLETE. Reality has fully-derivable FORM + contingent
   REALIZATION. Structure derived; content drawn. Resolving G (emergent vs
   fundamental) would reach C/D. 65 QG.
+
+**PHASE 110 — ResearchQG-066: Generation Space Origin Audit:**
+Determines where G comes from. Result: G is EMERGENT (the basin-index space).
+
+- KEY INSIGHT (spacetime analogy): spacetime : causal structure :: G : basin
+  structure. Both are INDEX SPACES of actualization (where vs which-family).
+- G = the space of the attractor landscape's stable minima (QG-064). The 3
+  generations = 3 attractor branches of the n=1 architecture (QG-039). G = the
+  family-index space of the landscape.
+- G is IRREDUCIBLE (mixing requires a space, QG-054) but EMERGENT (from the
+  landscape). Irreducible ≠ fundamental — spacetime is the same (irreducible yet
+  emergent from causal structure, QG-019).
+- G does NOT introduce new ontology: it's an index space, like spacetime.
+- dim(G)=3 remains SELECTED (CP violation, QG-053), NOT derived by any emergence
+  route. G's EXISTENCE is explained (emergence); its DIMENSION (3) is selected.
+- ONTOLOGY SIMPLIFIES (QG-065→QG-066): 3 primitives (Q, Randomness, triple) + G
+  EMERGENT. G joins spacetime, S¹, SU(3) as emergent spaces. Ontology now STRONGLY
+  COMPLETE (C).
+- Classification: B — WEAK EMERGENCE (emergence coherent, but dim=3 not derived).
+  66 QG.
