@@ -4622,3 +4622,27 @@ Deep-dive on the Koide relation (m_e+m_μ+m_τ = (2/3)(√m_e+√m_μ+√m_τ)²
 - Classification: B — WEAK CORRESPONDENCE. TQM explains √m (= amplitude) but not
   the 45° value. Koide = falsifiable TARGET: any future TQM Yukawa derivation must
   produce an amplitude vector at exactly 45°. 42 QG + 1 sub-experiment.
+
+**PHASE 87 — ResearchQG-043: Structure-to-Parameter Boundary Audit:**
+Refines QG-042's two-layer picture into a THREE-LAYER derivability gradient.
+
+- THREE LAYERS: Layer 1 STRUCTURE (derived: topology, U(1), gravity, inertia).
+  Layer 2 CONSTRAINTS (partially derived: stability bands, relations, flows).
+  Layer 3 PARAMETERS (contingent: α=1/137, Yukawas, λ).
+- Constraints are BANDS/SURFACES/TRAJECTORIES, not points: vacuum stability
+  gives an interval m_H ∈ [111,175] GeV; Koide gives a 2D surface (Q=2/3);
+  unification gives a 1D RG trajectory; charge quantization gives a discrete set.
+- NO known constraint determines an exact value — every one REDUCES the allowed
+  space (removes a dimension) but leaves a continuum.
+- Sparse constraints: ~3-4 on ~19 parameters (reduces dimension 19→~15-16).
+  Most parameters unconstrained.
+- Koide = structure acting on parameters: fixes the RELATION (45° surface) while
+  leaving masses (2 DOF) free. Contingency of VALUES ≠ contingency of RELATIONS.
+- Division of labor: Q → structure (manifold), Random Actualization → selection
+  (point in manifold), triple (ℓ,τ,ħ) → scale. Multiverse-free selection.
+- Boundary is a GRADIENT, not a cliff. Reality determines the MANIFOLD (allowed
+  space); actualization selects the POINT. Completeness = deriving the manifold,
+  not the point.
+- Falsifiable predictions: more Koide-like relations should exist (quark ~2%
+  off, neutrino unverified); stability bands should emerge from Q-event dynamics.
+- Classification: B — WEAK STRUCTURAL CONSTRAINTS. 43 QG.
