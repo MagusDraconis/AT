@@ -5057,3 +5057,24 @@ Determines where the Yukawa operator Y comes from. Result: EFFECTIVE overlap ope
   Every step characterized EXCEPT the first (architecture shapes) and last (45°).
   The middle (Y as overlap) is the one DERIVED link.
 - Classification: B — EFFECTIVE OPERATOR. 62 QG.
+
+**PHASE 107 — ResearchQG-063: Architecture Shape Origin Audit:**
+Determines what determines the SHAPES of frequency architectures. Result: ATTRACTOR-SELECTED but UNDERIVED.
+
+- Architecture = frequency distribution (QG-027/028) = stable attractor (QG-020)
+  = topological winding structure (QG-034). These are DERIVED (structure, type).
+- But the SPECIFIC shape (the frequency values / hierarchy 1:207:3478) is UNDERIVED.
+  The attractor LANDSCAPE (effective potential whose minima are the architectures)
+  is unspecified.
+- Three layers of architecture: STRUCTURE (derived: frequency organization),
+  TYPE (derived: winding n), SHAPE (underived: the frequencies).
+- Overlap Y = <arch|amplitude> (QG-037) explains the HIERARCHY mechanism (high
+  frequency → high overlap → high mass), but not the hierarchy VALUES.
+- Lepton/quark shape difference = BARE vs CONFINED architecture (QG-050), intrinsic
+  not scrambled (QG-049). Both families' shapes underived.
+- NEW HYPOTHESIS: the Koide 45° might live at the ARCHITECTURE-SHAPE level (their
+  mutual overlaps), not just the eigenvalue level (QG-056). Untested.
+- Flavor reduction has BOTTOMED OUT: Flavor → Y (overlap) → architecture shapes
+  (frequency) → [attractor landscape — unspecified]. The shapes are the FINAL
+  underived input; everything above them is derived/characterized.
+- Classification: B — WEAK SELECTION. 63 QG.
