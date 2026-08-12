@@ -5035,3 +5035,25 @@ Tests whether Q=2/3 is distinguished or arbitrary. Result: DISTINGUISHED (the 45
   lepton-specific, stable, underived.
 - Classification: B — WEAKLY DISTINGUISHED. 2/3 is the balance point (genuinely
   geometric-special) but no mechanism derives it. 61 QG.
+
+**PHASE 106 — ResearchQG-062: Yukawa Operator Origin Audit:**
+Determines where the Yukawa operator Y comes from. Result: EFFECTIVE overlap operator.
+
+- Y = the OVERLAP OPERATOR (QG-037): Y_ij = <arch_i | amplitude_mode | arch_j>.
+  This gives Y physical meaning (architecture-amplitude overlap), not just a matrix.
+- Y is EFFECTIVE, not fundamental: the 13 couplings reduce to "architecture shapes"
+  (more fundamental than "13 arbitrary numbers"). But the shapes are unspecified,
+  so the values remain free.
+- Y does NOT emerge from geometry alone: G=C³ gives the SPACE, not the OPERATOR.
+  Analogy: G (space) : Y (operator) :: manifold : metric. The metric is additional.
+- No unified flavor operator F: GUT relations (Georgi-Jarlskog) approximate
+  (10-30%); Koide lepton-specific. Four SEPARATE sector operators.
+- No flavor Hamiltonian H_G whose spectrum = masses (QG-056). Y IS the operator.
+- Y is IRREDUCIBLE: masses (eigenvalues), mixing (eigenvectors), Koide (eigenvalue
+  relation) all require Y. Elimination fails.
+- Koide (45°) suggests Ye is special (non-generic spectrum), but no hidden
+  structure identified.
+- TQM flavor chain (final): Architecture → overlap → Y → masses + mixing + Koide.
+  Every step characterized EXCEPT the first (architecture shapes) and last (45°).
+  The middle (Y as overlap) is the one DERIVED link.
+- Classification: B — EFFECTIVE OPERATOR. 62 QG.
