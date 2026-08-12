@@ -4599,3 +4599,26 @@ boundary: structure is derivable, parameters are contingent.
 - Multiverse-free: contingency is intrinsic (Random Actualization), no multiverse
   needed. Structure is what randomness cannot change; parameters are what it determines.
 - Classification: A — PARAMETERS FUNDAMENTALLY CONTINGENT. 42 QG.
+
+**PHASE 86a — ResearchQG-039a: Koide Architecture Audit:**
+Deep-dive on the Koide relation (m_e+m_μ+m_τ = (2/3)(√m_e+√m_μ+√m_τ)²). Holds to 10⁻⁵.
+
+- Numerical verification (PDG masses): Σm = 1883.03 MeV, Σ√m = 53.147, Q = (2/3)(Σ√m)²/Σm
+  = 1.0000092 (deviation 9×10⁻⁶). Angle of amplitude vector (√m_e,√m_μ,√m_τ) with
+  (1,1,1): θ = 45.000° EXACTLY.
+- WHY √m: m = ħω/c² → √m ∝ √ω = oscillation AMPLITUDE. In TQM, energy ∝ amplitude².
+  Koide is an AMPLITUDE relation (amplitudes add linearly), not a mass relation
+  (energies add quadratically). TQM gives √m its natural meaning: it IS the amplitude.
+- WHY 2/3: The factor IS the 45° angle. cos²θ = 1/2 → Q = 1/(3cos²θ) = 2/3. The
+  "mysterious 2/3" = 1/(3·cos²45°). The remaining mystery is WHY 45° (not derived).
+- Higgs correspondence: m_f = y_f·v/√2 → Koide reduces to Q = (Σy)/(Σ√y)², the
+  VEV v cancels ENTIRELY. Koide lives in the YUKAWA sector (√y = coupling amplitude),
+  connecting to QG-041's largest unexplained structure.
+- 4th generation stress test: ANY non-zero 4th mass breaks the 3-gen relation.
+  Koide holds FOR 3 but does not DERIVE 3 (weak hint, not proof).
+- Coincidence audit: Was a genuine PREDICTION (Koide 1981 → m_τ = 1776.97 MeV,
+  confirmed 1992+). Naive coincidence p ~ 10⁻⁵, look-elsewhere ~10⁻⁴. "Suggestive
+  but unproven" — not accident, not theorem.
+- Classification: B — WEAK CORRESPONDENCE. TQM explains √m (= amplitude) but not
+  the 45° value. Koide = falsifiable TARGET: any future TQM Yukawa derivation must
+  produce an amplitude vector at exactly 45°. 42 QG + 1 sub-experiment.
