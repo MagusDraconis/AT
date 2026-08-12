@@ -4484,3 +4484,25 @@ Result: Higgs = amplitude mode of the TQM phase field. Complementary, not compet
   couplings not predicted. Gauge group not derived. Hierarchy problem persists.
   Neutrino masses unexplained.
 - Classification: B — HIGGS RETAINED BUT REINTERPRETED as amplitude mode. 37 QG.
+
+**PHASE 82 — ResearchQG-038: SU(3)×SU(2)×U(1) Gauge Group Selection Audit:**
+Deepest Standard Model question: why this specific gauge group. Honest partial success.
+
+- U(1): FULLY DERIVED (C). Phase lives on S¹. S¹'s isometry group IS U(1).
+  Winding ∮∇θ·dl=2πn → conserved integer charge → U(1) gauge symmetry.
+  Gauge connection A_μ=∂_μθ. Photon = n=0 phase wave. Not chosen — it's the
+  symmetry of phase itself. Cleanest result of the gauge program.
+- SU(2): PARTIAL (B). Binary winding (n↔-n) = Z₂, spinor double-cover of SO(3)
+  = SU(2). Weak doublets map to binary winding pairs. But the LIFT from discrete
+  Z₂ to continuous SU(2) is NOT derived.
+- SU(3): PARTIAL (B). Tri-winding confinement (n=3, proton). Color triplets map
+  to 3 bound vortex substructures. The number 3 matches. But full SU(3) algebra
+  (8 gluons) not derived. Confinement borrowed from QCD.
+- 1-2-3 pattern: rank(U(1))=1, rank(SU(2))=2, rank(SU(3))=3 matches winding
+  sectors n=1,2,3. INTRIGUING but possibly numerology — no mechanism links them.
+- Alternative groups: SU(5)/SO(10) predict proton decay (NOT observed).
+  E6/E8 predict exotic particles (NOT observed). SM group = minimal that works.
+  But this is SELECTION (anthropic), not DERIVATION.
+- Classification: B — WEAK CORRESPONDENCE. U(1): C (complete). SU(2): B. SU(3): B.
+  Full group: A/B (still largely external). Gauge group selection = LARGEST
+  remaining gap in TQM particle physics. Honest, not overclaimed. 38 QG.
