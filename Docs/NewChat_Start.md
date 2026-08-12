@@ -5139,3 +5139,20 @@ Determines where G comes from. Result: G is EMERGENT (the basin-index space).
   COMPLETE (C).
 - Classification: B — WEAK EMERGENCE (emergence coherent, but dim=3 not derived).
   66 QG.
+
+**PHASE 111 — ResearchQG-067: Generation Dimension Derivation Audit:**
+Attempts to DERIVE dim(G)=3 from actualization/attractors WITHOUT observation. Result: SELECTED, not derived (honest negative).
+
+- All derivation attempts FAIL: attractor branching (landscape N-free), pitchfork
+  bifurcation (2 stable, not 3), cusp catastrophe (2 stable + 1 unstable), persistence
+  (no max branching), 3-spatial-dims (circular, QG-018 gap).
+- The lower bound N≥3 IS derived (mathematical): (N-1)(N-2)/2 ≥ 1 for CP violation;
+  S3 is the first non-abelian permutation group. But this gives a BOUND, not the value.
+- The upper bound N≤3 is EMPIRICAL (Z-width N_ν=3, Higgs production). So dim=3 =
+  derived-lower ∩ empirical-upper = SELECTION, not derivation.
+- No bifurcation/catastrophe gives exactly 3 STABLE branches (pitchfork=2, cusp=2+1).
+- Classification: A — PURE SELECTION. dim(G)=3 cannot be derived; it is the unique
+  intersection of a derived lower bound and an empirical upper bound.
+- FINAL TAXONOMY (3 depths of mystery, all now classified): dim=3 (strong selection,
+  unique), couplings (weak selection, band, QG-041), Koide 45° (no selection,
+  isolated, QG-047). Nothing remains unexplained in its category. 67 QG.
