@@ -4954,3 +4954,25 @@ Final synthesis on the origin of Koide Q=2/3. Result: REAL but UNEXPLAINED.
   interpretation (45°, participation ratio, balanced S3) is a RESTATEMENT.
   After 57 QG experiments, Koide = the cleanest statement of what TQM does not
   yet explain: a single dimensionless number (2/3) at the heart of flavor. 57 QG.
+
+**PHASE 102 — ResearchQG-058: Koide Midpoint Principle Audit:**
+Tests whether Q=2/3 = midpoint of [1/3,1] reveals a principle or is numerology.
+
+- THE MIDPOINT: Q=2/3 = (1/3+1)/2 EXACTLY. N_eff = 1/Q = 3/2 = 1.5 effective
+  generations. All equivalent: Q=2/3 ⟺ 45° ⟺ singlet=doublet (one fact).
+- N-DEPENDENCE (key): midpoint(N) = (N+1)/(2N). 2/3 is the midpoint FOR N=3.
+  For N=2: 3/4; N=4: 5/8. NOT universal — it is the N=3 selection (QG-053) plus
+  the balance. The midpoint adds NO new information.
+- Information geometry: entropy S/S_max ≈ 0.51 (close to but NOT exactly 1/2).
+  The midpoint is exact in Q-coordinate but NOT extremal in entropy. Geometric,
+  not informational.
+- Attractor picture: "two equal attractors → midpoint" is coherent but speculative
+  (no generation-sector dynamics specified). It's the 45° balance in dynamical clothing.
+- Cross-system analogies: participation ratio N_eff = 1/Σp_i² is UNIVERSAL
+  (Anderson IPR, Simpson diversity, effective parties, Schmidt number). But NO
+  field has a "1.5 effective components" law. The analogies share the FORMULA,
+  not the VALUE 2/3.
+- Classification: A/B — the "midpoint principle" does NOT exist as an independent
+  mechanism. Q=2/3 is the 45° balance repackaged. It CONFIRMS (in new coordinates)
+  that the spectrum sits at the balance point; the balance itself remains the core.
+  58 QG.
