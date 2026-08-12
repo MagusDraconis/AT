@@ -4646,3 +4646,26 @@ Refines QG-042's two-layer picture into a THREE-LAYER derivability gradient.
 - Falsifiable predictions: more Koide-like relations should exist (quark ~2%
   off, neutrino unverified); stability bands should emerge from Q-event dynamics.
 - Classification: B — WEAK STRUCTURAL CONSTRAINTS. 43 QG.
+
+**PHASE 88 — ResearchQG-044: Constraint Manifold Emergence Audit:**
+Unifies the constraint manifolds under a single mechanism: attractor persistence (QG-020).
+
+- KEY DEFINITION: Constraint Manifold = the set of parameter values for which a
+  stable frequency architecture (attractor) can exist. The attractor's existence
+  region in PARAMETER space IS the manifold.
+- TWO SPACES, ONE CONCEPT: configuration space (attractor = what a particle IS)
+  + parameter space (attractor basin = where parameters CAN BE). Same concept.
+- UNIFIED MECHANISM: 3 of 4 constraint types emerge from stability/topology:
+  Vacuum stability band = attractor basin boundary (continuous). Charge
+  quantization = topological invariant (discrete lattice). RG flow = basins of
+  fixed-point attractors (curves). All are "attractor persistence."
+- Koide is the OUTLIER: appears to be a SYMMETRY (S3 texture), not stability.
+  Exactness to 10⁻⁵ at low scale argues AGAINST RG running → favors symmetry.
+  The tentative "symmetry = stability" unification is speculative.
+- Division of labor: Q → structure (manifold shape), Stability → boundary (where
+  attractor persists), Randomness → selection (point in manifold). No 4th primitive.
+- Deepest result: constraint manifolds are NOT a new principle. They are QG-020's
+  attractor concept applied to parameter space. Reality permits only certain
+  regions because only certain regions support stable attractors.
+- Classification: B — WEAK CORRESPONDENCE. Stability unifies 3 of 4; Koide
+  (symmetry) resists. Unification partial but genuine. 44 QG.
