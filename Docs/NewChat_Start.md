@@ -4781,3 +4781,25 @@ Tests whether QCD confinement scrambles the lepton 45° into quark angles. RESUL
 - Classification: B — WEAK CORRESPONDENCE. Koide is LEPTON-SPECIFIC. Quarks are
   NOT its scrambled descendants, but a WEAK quark-lepton connection exists via
   Georgi-Jarlskog (separate from Koide). Clean negative result. 49 QG.
+
+**PHASE 94 — ResearchQG-050: Lepton-Specific Symmetry Audit:**
+Synthesizes QG-034→049 to answer WHY Koide is lepton-specific. Structural answer found.
+
+- THE SMOKING GUN: FRACTIONAL CHARGE. Leptons have integer charge (e = g·n, n=±1)
+  = pure S¹ winding. Quarks have fractional charge (+2/3, -1/3), which is IMPOSSIBLE
+  for S¹ winding (n ∈ Z). Quarks are NOT simple S¹ vortices — they need SU(3) color.
+- THE DEEP RESULT: Leptons ARE the S¹-winding fermions; quarks are NOT. The S3
+  generation symmetry (→ Koide 45°) acts on the excitation levels of the S¹ vortex
+  → STRUCTURALLY LEPTON-SPECIFIC.
+- The chain: colorlessness → integer charge → S¹ winding → clean S3 generation
+  geometry. Color is key not via RUNNING (QG-049: common factor preserves θ) but
+  because it PERMITS fractional charge (excludes quarks from the S¹ category).
+- Neutrino tension: neutrinos are colorless (leptons) but NEARLY DEGENERATE, not
+  hierarchical like charged leptons. The charge asymmetry suggests the 45° needs
+  the U(1) CHARGE coupling — making it CHARGED-lepton-specific, not lepton-specific.
+- Falsifiable predictions (mutually exclusive): (a) neutrino-Koide Q=2/3 if S3
+  governs all leptons; (b) neutrino-Koide FAILS if 45° needs charge. One must be wrong.
+- Classification: B — WEAK LEPTON-SPECIFIC EFFECT. TQM EXPLAINS lepton-specificity
+  (integer vs fractional charge → S¹ vs SU(3) topology), but the 45° VALUE itself
+  remains unexplained. The refined mystery: 45° = balanced S3 geometry of the S¹
+  vortex excitation spectrum, realized only in charged leptons. 50 QG.
