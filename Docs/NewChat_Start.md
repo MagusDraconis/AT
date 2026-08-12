@@ -4549,3 +4549,25 @@ Quantitative vacuum-stability scan of m_H. Why 125 GeV? Selected into a band, no
 - Classification: B — WEAK PREFERENCE. Vacuum stability selects a BAND, not a
   point. λ = 0.13 and v = 246 GeV remain empirical. To reach C/D, TQM must derive
   the amplitude stiffness λ from Q-event dynamics — a major open problem. 40 QG.
+
+**PHASE 85 — ResearchQG-041: Coupling Constant Origin Audit:**
+Honest result: couplings remain EMPIRICAL. TQM does not derive any coupling constant.
+
+- α_EM = 1/137.036 = g²/4π. TQM interpretation: g = winding-gauge coupling
+  strength (charge Q = g·n, QG-035). Explains WHY α is dimensionless (ratio of
+  phase quantities) but NOT its value. "Why 1/137?" remains the deepest mystery
+  of physics — Feynman's "greatest damn mystery."
+- α_s(M_Z) = 0.118: tri-winding confinement coupling. Running (asymptotic
+  freedom) is QCD property, external to TQM. NOT derived.
+- α_W = 1/30, sin²θ_W = 0.231: electroweak structure external. NOT derived.
+- Yukawas: y_f = architectural overlap with amplitude mode (QG-037 concept).
+  Hierarchy y_e:y_μ:y_τ:y_t = 3e-6:6e-4:1e-2:1 (10⁶ range) NOT computed. The
+  single largest unexplained structure in particle physics.
+- Numerology graveyard: Eddington, Wyler, Gilson, Robertson all FAILED to derive
+  1/137 (post-dictions, not predictions). TQM refuses to attempt numerology.
+- Coupling unification (α_s, α_W, α_EM converge at ~10¹⁶ GeV) is a HINT but not
+  a derivation. TQM consistent with it but doesn't explain it.
+- Parameter reduction: SM ~19 free params, TQM ~19 (NO numerical reduction).
+  TQM's reduction is ONTOLOGICAL (primitives), not numerical (couplings).
+- Classification: A — COUPLINGS REMAIN EMPIRICAL (weak B for conceptual mapping).
+  This is the largest numerical gap in the TQM program. 41 QG.
