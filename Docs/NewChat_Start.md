@@ -4716,3 +4716,23 @@ Tests whether S3 symmetry explains the 3-generation structure and Koide geometry
   measurements (KATRIN, cosmology).
 - Classification: B — WEAK CORRESPONDENCE. S3 restates Koide geometrically but
   does NOT derive 3 generations or the 45° angle. 46 QG.
+
+**PHASE 91 — ResearchQG-047: Koide 45° Selection Audit:**
+Focused deep-dive on the most precise unexplained number: the 45° angle.
+
+- Geometric meaning: 45° = arccos(1/√2) = balanced S3 decomposition (singlet =
+  doublet). NOT the midpoint of the allowed range [0°, 54.74°] (midpoint = 27.37°).
+  45° is at 82% of maximal hierarchy — a SPECIFIC, non-symmetric value.
+- Surface condition: on the unit sphere, Koide Q=2/3 ⟺ x+y+z = √(3/2) = 1.2247.
+  A clean "latitude circle" at 45°. The leptons sit exactly on it.
+- Robustness scan: Q(θ) = 1/(3cos²θ) monotonic from 1/3 (0°) to 1 (54.74°).
+  Q=2/3 at EXACTLY 45°. But no stability/robustness measure has a maximum at 45°.
+- Yukawa space: m_f = y_f·v/√2 → VEV cancels, Koide = (Σy)/(Σ√y)². The 45° angle
+  lives in YUKAWA space (generation coupling), not mass space. Same mystery, deeper.
+- Deterministic coincidence: fraction of octant within δ=0.01 is 1.16%; scaled to
+  δ=10⁻⁵ → 1.16×10⁻⁵; look-elsewhere (×20) → 2.3×10⁻⁴. Naive ~10⁻⁵, effective ~10⁻⁴.
+  1981 PREDICTION status (m_τ predicted, confirmed) makes coincidence much less likely.
+- Selection mechanisms all unproven: S3 "halfway" breaking (no Z2 found), attractor
+  balance (hypothesis), RG fixed point (unproven). No mechanism forces 45°.
+- Classification: B — WEAK PREFERENCE. 45° is geometrically meaningful (balanced)
+  but mechanistically unexplained. The sharpest unresolved number in TQM. 47 QG.
