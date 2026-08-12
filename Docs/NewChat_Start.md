@@ -5078,3 +5078,22 @@ Determines what determines the SHAPES of frequency architectures. Result: ATTRAC
   (frequency) → [attractor landscape — unspecified]. The shapes are the FINAL
   underived input; everything above them is derived/characterized.
 - Classification: B — WEAK SELECTION. 63 QG.
+
+**PHASE 108 — ResearchQG-064: Attractor Landscape Audit:**
+Determines what determines the attractor landscape. Result: landscape = actualization's effective potential (BEDROCK).
+
+- The landscape = the effective potential of the actualization dynamics (QG-006/020).
+  Its FORM is DERIVED (attractor basins exist, QG-020; discreteness from τ>0, QG-011).
+  Its CONTENT (specific minima/shapes/depths) is CONTINGENT (Random Actualization, QG-042).
+- Same structure/parameter split everywhere: form derived from ontology (Q,
+  oscillation), content contingent (Randomness, history). The landscape is no exception.
+- Discreteness of architectures (3 generations) DERIVED from τ>0 (discrete
+  actualization → discrete attractors). But the specific VALUES (frequencies) are contingent.
+- G = the landscape's basin structure (HYPOTHESIS, untested): connects QG-052 (G
+  independent) and QG-064 (landscape minima). But does NOT derive dim(G)=3.
+- Koide 45° = a landscape geometry (HYPOTHESIS, untested): the 3 minima might be
+  balanced. Would relocate (not resolve) the mystery.
+- THE REDUCTION CHAIN IS COMPLETE: Flavor → Y → shapes → landscape → actualization
+  (bedrock). The deepest link (actualization) is IRREDUCIBLE (QG-025). Flavor
+  physics has reached its bedrock: the landscape content is the final contingent input.
+- Classification: B — WEAK SELECTION (form derived, content contingent). 64 QG.
