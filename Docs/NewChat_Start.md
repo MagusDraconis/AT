@@ -4527,3 +4527,25 @@ Honest result: generations are DESCRIBED (excitation levels), not DERIVED. "3" r
   no charge anchor). Asymmetry with charged leptons UNEXPLAINED.
 - Classification: B — QUALITATIVE. "Exactly three" remains empirical input to
   TQM, exactly as to the SM. Koide relation is the key open clue. 39 QG.
+
+**PHASE 84 — ResearchQG-040: Higgs Mass Selection Audit:**
+Quantitative vacuum-stability scan of m_H. Why 125 GeV? Selected into a band, not derived to a point.
+
+- Higgs frequency: ω_H = m_H·c²/ħ = 1.9×10²⁶ rad/s (f_H = 3.0×10²⁵ Hz). The
+  amplitude mode of reality oscillates at 3×10²⁵ Hz. m_H = √(2λ)·v; λ = amplitude
+  stiffness = curvature of the Mexican-hat potential at the VEV.
+- Vacuum stability RGE scan (1-loop, coupled λ/yt/g_s RK4): m_H < ~111 GeV →
+  λ runs negative at low scale → UNSTABLE (matter destroyed). m_H = 125 GeV →
+  METASTABLE (borderline, lifetime >> universe age). m_H > ~175 GeV → TRIVIALITY
+  (λ blows up, architecture undefined).
+- 125 GeV is NEAR-CRITICAL: sits ~4 GeV BELOW the absolute-stability bound
+  (~129 GeV, full 2-loop) and ~14 GeV ABOVE the instability bound (~111 GeV).
+  The vacuum is "just barely" stable — the famous metastability result
+  (Degrassi et al., 2012).
+- Top quark is the "vacuum saboteur": the -6y_t⁴ term drives λ negative. m_H
+  being near m_t (172 GeV) is not coincidental — top loops dominate λ's running.
+- Survival band WIDE (~64 GeV, 111-175 GeV). Being "in the band" ≠ being
+  "at 125 exactly." A universe with m_H = 140 GeV would also have stable matter.
+- Classification: B — WEAK PREFERENCE. Vacuum stability selects a BAND, not a
+  point. λ = 0.13 and v = 246 GeV remain empirical. To reach C/D, TQM must derive
+  the amplitude stiffness λ from Q-event dynamics — a major open problem. 40 QG.
