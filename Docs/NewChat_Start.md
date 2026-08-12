@@ -4803,3 +4803,24 @@ Synthesizes QG-034→049 to answer WHY Koide is lepton-specific. Structural answ
   (integer vs fractional charge → S¹ vs SU(3) topology), but the 45° VALUE itself
   remains unexplained. The refined mystery: 45° = balanced S3 geometry of the S¹
   vortex excitation spectrum, realized only in charged leptons. 50 QG.
+
+**PHASE 95 — ResearchQG-051: S¹→S3 Geometry Emergence Audit:**
+Deepest derivation attempt: can S¹ topology generate S3 (and 45°)? RESULT: FAILS.
+
+- S¹ gives U(1) (continuous, abelian) + integer winding + Fourier modes e^{inθ}.
+  It does NOT give S3 (non-abelian, discrete, order 6). No group-theoretic path.
+- The circle has NO 3-fold structure. Fourier modes labeled by ONE integer, not
+  a triplet. No natural '3' arises. Z₃ (rotations by 2π/3) exists but is abelian ≠ S3.
+- TWO DISTINCT S3's: color-S3 (SU(3) Weyl, permutes 3 colors, acts on quarks)
+  vs generation-S3 (permutes e/μ/τ, acts on leptons). Different groups. Leptons
+  have no color → generation-S3 ≠ color-S3. Neither comes from S¹.
+- 45° derivation attempt FAILS: orthogonality gives cos²θ+sin²θ=1, NOT the balance
+  cos²θ=sin²θ=1/2. Completeness/normalization give no preferred angle. 45° = unknown
+  selection principle, not S¹ topology.
+- '3' candidates all fail: excitation bands (count not fixed by S¹), SU(3) color
+  (leptons colorless), 3+1 dims (not derived, QG-018 gap), CP violation minimum
+  (selection, not derivation).
+- Classification: B — WEAK CORRESPONDENCE. Strict S¹→S3→45° emergence = A (fails).
+  Excitation-band picture coherent but '3' and 45° are EXTERNAL. The generation
+  structure (3, S3, 45°) is an INDEPENDENT structure — the deepest open problem.
+  51 QG.
