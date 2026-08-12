@@ -4848,3 +4848,24 @@ Determines the minimal additional structure required for generations. Result: a 
   space G (dim 3). Honest minimal extension.
 - Classification: B — WEAK GENERATION SPACE. Generations require an independent
   3D layer; G is minimal but its dimension (3) and the 45° are underived. 52 QG.
+
+**PHASE 97 — ResearchQG-053: Generation Space Dimension Selection Audit:**
+Determines why dim(G)=3. Result: STRONGLY SELECTED (unique), not derived.
+
+- CP phases = (N-1)(N-2)/2 in the N×N mixing matrix. N=1,2: 0 phases (real, no CP).
+  N=3: 1 phase (MINIMAL CP violation). N=4,5: 3,6 phases (more than needed).
+- LOWER BOUND: N≥3 (CP violation → baryogenesis → matter; Kobayashi-Maskawa 1973
+  predicted N≥3 before observation). UPPER BOUND: N≤3 (Z-width N_ν=3, Higgs
+  production ~9× enhancement excludes N≥4).
+- N=3 is the UNIQUE intersection of the anthropic lower bound and empirical upper
+  bound. No other dimension satisfies both.
+- But this is SELECTION, not DERIVATION: the lower bound is anthropic (N<3 → no
+  observers), the upper bound is empirical (measured). N=4 is not logically
+  impossible — just not observed.
+- Generation geometry gives NO dimensional preference: S2, S3, S4, S5 all valid.
+  Koide 45° is specific to N=3 (S3) but does not SELECT N=3.
+- Classification: C — STRONG SELECTION. dim(G)=3 is the unique allowed value.
+  Unlike couplings (QG-041: wide band = weak selection), the dimension has a
+  UNIQUE value (strong selection). But still selection, not derivation (D).
+- Three depths of mystery: dim(G)=3 (strong selection), couplings (weak selection,
+  QG-041), 45° (no selection found, QG-047). 53 QG.
