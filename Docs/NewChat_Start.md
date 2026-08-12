@@ -4571,3 +4571,31 @@ Honest result: couplings remain EMPIRICAL. TQM does not derive any coupling cons
   TQM's reduction is ONTOLOGICAL (primitives), not numerical (couplings).
 - Classification: A — COUPLINGS REMAIN EMPIRICAL (weak B for conceptual mapping).
   This is the largest numerical gap in the TQM program. 41 QG.
+
+**PHASE 86 — ResearchQG-042: Parameter vs Structure Audit:**
+Deepest meta-epistemological result of the QG program. Locates the derivability
+boundary: structure is derivable, parameters are contingent.
+
+- DERIVABLE (structure): oscillation, phase, U(1), charge quantization, gravity,
+  inertia, equivalence principle, particle stability, anti-matter, Higgs
+  interpretation. All are FORM/SYMMETRY/TOPOLOGY — they follow from the ontology
+  of Q-events. They answer WHAT EXISTS and WHY.
+- RESISTANT (parameters): α=1/137, α_s=0.118, θ_W, Yukawas, λ, θ_QCD. ALL are
+  DIMENSIONLESS pure numbers. They answer HOW MUCH. Not forced by topology.
+- THE DEEP DIVIDE: Structure : Parameter :: Grammar : Vocabulary :: Law : Initial
+  Condition :: Identity : Abundance. Maps PERFECTLY to TQM's two primitives:
+  Q → structure (laws); Random Actualization → parameters (history).
+- Dimensionful vs dimensionless: c=ℓ/τ (definition), G=ℓ²c³/ħ (derived) — these
+  are dimensionful = unit conventions. The dimensionless couplings (α, λ, Yukawas)
+  are the TRUE parameters and resist derivation. NO combination of (ℓ,τ,ħ) can
+  produce a dimensionless number → α CANNOT come from the triple.
+- Hostile reduction: 5 attempts to derive α=1/137 all FAIL (topology gives n∈Z
+  not g∈R; no geometric object gives 1/137; architecture gives structure not
+  numbers; selection gives a band not a point; dimensionful→dimensionful only).
+- THE KEY RESULT: The inability to derive couplings is NOT a temporary limitation
+  — it is a FUNDAMENTAL FEATURE. Random Actualization (deepest primitive, QG-006)
+  makes parameters HISTORICAL OUTCOMES, not mathematical necessities. TQM doesn't
+  fail to derive the numbers — it EXPLAINS WHY they can't be derived.
+- Multiverse-free: contingency is intrinsic (Random Actualization), no multiverse
+  needed. Structure is what randomness cannot change; parameters are what it determines.
+- Classification: A — PARAMETERS FUNDAMENTALLY CONTINGENT. 42 QG.
