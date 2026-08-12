@@ -4692,3 +4692,27 @@ Tests whether constraints come from symmetry, stability, or a deeper common sour
   SUGGESTED but not FORMALLY derived (so D is the open goal). To reach D: formally
   derive S¹ invariance generates BOTH U(1) symmetry AND attractor stability, and
   derive Koide 45° from S3 texture. Both remain open. 45 QG.
+
+**PHASE 90 — ResearchQG-046: Generation Symmetry Architecture Audit:**
+Tests whether S3 symmetry explains the 3-generation structure and Koide geometry.
+
+- Generations = excitation levels / attractor branches of n=1 topology (QG-039).
+  The generation index is carried by the frequency band, not topology.
+- S3 = AUTOMATIC permutation symmetry of any 3-fold structure (trivial, not
+  derived). S3 has 1 singlet ((1,1,1)) + 1 doublet (2D). Any 3-vector decomposes
+  into singlet + doublet.
+- CONCRETE RESULT: decompose the amplitude vector A=(√m_e,√m_μ,√m_τ) into S3
+  singlet and doublet: |A|=43.394, singlet=30.684, doublet=30.684 — EXACTLY EQUAL.
+  This equality IS the 45° angle (cos²θ=1/2). Koide = balanced S3 decomposition.
+- 45° = "halfway" between democratic (singlet) and hierarchical (doublet).
+  Why balanced? NOT derived (restatement, not derivation).
+- Why 3? NOT derived. Selection: 3 = minimum N with CP violation (CKM 3×3 has 1
+  complex phase → baryogenesis). N<3: no CP → empty universe. N≥4: excluded
+  (Z-width N_ν=3, Higgs production ~9×). Anthropic, not ontological.
+- 4th generation stress test: breaks Koide (any 4th mass), replaces S3 with S4,
+  and is excluded by observation. Coherent but not necessary.
+- NEW FALSIFIABLE PREDICTION: if S3 governs generations, the NEUTRINO amplitudes
+  should ALSO satisfy Q=2/3 (neutrino-Koide). Testable with future neutrino mass
+  measurements (KATRIN, cosmology).
+- Classification: B — WEAK CORRESPONDENCE. S3 restates Koide geometrically but
+  does NOT derive 3 generations or the 45° angle. 46 QG.
