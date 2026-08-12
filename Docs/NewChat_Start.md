@@ -4415,3 +4415,26 @@ Derives particle stability, anti-matter, and spectrum selection from winding top
   3 generations require architecture (same topology, different frequency bands).
 - Classification: B→C. Leptons: C (strong). Baryons: B (external confinement).
   Gauge bosons: B. Full spectrum: topology + architecture together. 34 QG.
+
+**PHASE 79 — ResearchQG-035: Winding Sign & Gravity Coupling Audit:**
+Critical bridge between topology (QG-034) and gravity (QG-022/029). Determines
+whether winding sign influenecs gravity. Answer: NO — gravity is sign-blind.
+
+- Core argument: T_μν ~ (∂θ)². Under n→-n: ∂θ→-∂θ, but (∂θ)² unchanged.
+  Every component of stress-energy tensor is QUADRATIC in winding number.
+  Gravity couples to energy density, not to topological sign.
+- Charge vs gravity asymmetry EXPLAINED: Charge couples to J^μ ~ ∂^μθ (LINEAR —
+  sign-aware). Gravity couples to T^μν ~ (∂θ)² (QUADRATIC — sign-blind). Two
+  different couplings, two different sign behaviors. Mathematically inevitable.
+- Anti-matter prediction: ALL anti-matter falls DOWN at g=9.8 m/s². Positron
+  (n=-1) gravitates identically to electron (n=+1). Anti-proton (n=-3) same as
+  proton. Anti-hydrogen falls exactly like hydrogen.
+- ALPHA-g (2023): anti-hydrogen falls down — consistent with TQM. GBAR/AEGIS
+  will test at ~1% precision. If anti-matter ever falls UP, TQM is FALSIFIED.
+- Winding sign is NOT repulsive gravity: n→-n flips AZIMUTHAL gradient direction,
+  not RADIAL. Repulsive gravity requires radial ∇θ→-∇θ (QG-029). Totally
+  different operations.
+- Equivalence principle DERIVED, not postulated: GR postulates "all bodies fall
+  equally." TQM derives it from the quadratic structure of field energy. This is
+  ontological progress — explaining WHY, not just THAT.
+- Classification: A — GRAVITY COMPLETELY INDEPENDENT OF WINDING SIGN. 35 QG.
