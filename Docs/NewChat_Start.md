@@ -4910,3 +4910,25 @@ Determines the geometry of G. Result: G is COMPLEX C³ (with a real mass subsect
   geometry (mixing angles, CP phase, Koide 45°, participation ratio), but no
   UNIQUE geometry (C³ required for CP; R³/S²/simplex describe the mass subsector).
   55 QG.
+
+**PHASE 100 — ResearchQG-056: Yukawa Eigenstructure Audit:**
+Determines whether Yukawas are arbitrary or eigenvalues of a deeper operator. Result: OPERATOR on G, free spectrum + one constraint.
+
+- Y is a 3×3 complex operator on G=C³ (QG-055). Eigenvalues = masses, eigenvectors
+  = mixing bases. The eigenstructure is physical and observable.
+- BUT no deeper "generation operator" Ô_G derives the spectrum. The 13 flavor
+  parameters (9 masses + 4 mixing) are FREE. Y is an operator, but its eigenvalues
+  are not derived.
+- KEY CLARIFICATION: Koide is an EIGENVALUE (not eigenvector) property. Q = (Σm)/(Σ√m)²
+  uses ONLY the masses, never the mixing angles. The 45° is the angle of the
+  amplitude vector in "mass space" R³₊, not in G=C³. Koide constrains the spectrum,
+  not the mixing.
+- Eigenvalue hierarchy (10⁶ span) is TYPICAL (random spectra are hierarchical) —
+  not special. The Koide 45° is EXCEPTIONAL (~10⁻⁵, codimension-1).
+- Mixing = eigenvector geometry: CKM (small, ~13°/2°/0.2°) = up/down bases nearly
+  aligned; PMNS (large, ~33°/45°/8°) = lepton/neutrino misaligned. Asymmetry unexplained.
+- Sharpened mystery: the spectrum is "random + one relation" (Koide), not just
+  "free parameters". This is more precise.
+- Classification: B — WEAK SPECTRAL STRUCTURE. Operator framework real; spectrum
+  free with ONE unexplained eigenvalue constraint (Koide 45°, lepton-specific).
+  56 QG.
