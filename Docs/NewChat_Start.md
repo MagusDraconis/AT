@@ -4824,3 +4824,27 @@ Deepest derivation attempt: can S¹ topology generate S3 (and 45°)? RESULT: FAI
   Excitation-band picture coherent but '3' and 45° are EXTERNAL. The generation
   structure (3, S3, 45°) is an INDEPENDENT structure — the deepest open problem.
   51 QG.
+
+**PHASE 96 — ResearchQG-052: Generation Structure Minimality Audit:**
+Determines the minimal additional structure required for generations. Result: a 3D generation space G.
+
+- All single-mechanism approaches FAIL: topology only (S¹ no 3-fold), symmetry only
+  (S3 assumes 3), attractors only (branch count underived), architecture only
+  (level count underived). QG-051 already ruled out S¹.
+- MINIMAL STRUCTURE: a 3D INTERNAL GENERATION SPACE G (like flavor space). S3 =
+  its permutation group (automatic). Masses = eigenvalues of Yukawa matrix on G.
+  Mixing = rotations between sectors' G-bases. Koide 45° = a direction in G.
+- G is UNAVOIDABLE: hostile reductions all fail (excitation levels need an index,
+  winding doesn't distinguish generations, "3 copies" needs an index, QCD doesn't
+  apply to leptons). The generation index IS G. You cannot avoid it.
+- Dimension selection: 3 = minimum for CP violation (2×2 CKM real, 3×3 has 1
+  complex phase). Selection/anthropic, not derivation. dim<3 → empty universe;
+  dim>3 → excluded (Z-width, Higgs).
+- Mixing = rotation in G is clean and minimal. CKM (small) = up/down bases nearly
+  aligned; PMNS (large) = lepton/neutrino bases misaligned. Angles empirical.
+- Attractor families (QG-020/039) are coherent but LIVE IN G (points on its axes),
+  so they don't replace G.
+- TQM primitive count grows: Q + Random Actualization + (ℓ,τ,ħ) + generation
+  space G (dim 3). Honest minimal extension.
+- Classification: B — WEAK GENERATION SPACE. Generations require an independent
+  3D layer; G is minimal but its dimension (3) and the 45° are underived. 52 QG.
