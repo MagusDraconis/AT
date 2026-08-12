@@ -4736,3 +4736,25 @@ Focused deep-dive on the most precise unexplained number: the 45° angle.
   balance (hypothesis), RG fixed point (unproven). No mechanism forces 45°.
 - Classification: B — WEAK PREFERENCE. 45° is geometrically meaningful (balanced)
   but mechanistically unexplained. The sharpest unresolved number in TQM. 47 QG.
+
+**PHASE 92 — ResearchQG-048: Yukawa Geometry Audit:**
+Tests whether Yukawa couplings form a deeper geometric structure. Key result: Koide is LEPTON-SPECIFIC, not universal.
+
+- Koide in Yukawa space: m_f = y_f·v/√2 → VEV v cancels ENTIRELY. Koide =
+  Q = (Σy_f)/(Σ√y_f)² = 2/3. Pure dimensionless Yukawa relation, no scale.
+- COMPUTED (pole masses): charged leptons Q = 1.0000, θ = 45.000° (Koide EXACT).
+  Up quarks Q = 0.785, θ = 51.2° (21% off). Down quarks Q = 0.913, θ = 47.5°
+  (9% off). THE ASYMMETRY: Koide holds for leptons, FAILS for quarks.
+- Yukawa geometry is LEPTON-SPECIFIC, not universal. Falsifies a "universal
+  Yukawa manifold" but leaves the lepton 45° unexplained.
+- KEY NEW HYPOTHESIS (testable): QCD confinement scrambles the Yukawa geometry.
+  The 45° is the UNCONFINED (lepton) limit; quarks are the CONFINED (scrambled)
+  limit. Deriving this scrambling would turn Koide into a PREDICTION.
+- Mixing as geometry: CKM (small, ~13°,2°,0.2°) = up/down bases nearly aligned.
+  PMNS (large, ~33°,45°,8°, near-tribimaximal) = lepton/neutrino bases misaligned.
+  Mixing = relative orientation of Yukawa architectures (natural, angles not derived).
+- Yukawa = overlap integral between fermion architecture and Higgs amplitude mode
+  (QG-037). Four interpretations: overlap, projection, mode-coupling, phase-space
+  coordinates. Geometry = the 4th (under test).
+- Classification: B — WEAK GEOMETRIC STRUCTURE. Leptons strong (45°), quarks none.
+  Confinement-scrambling hypothesis is the next frontier. 48 QG.
