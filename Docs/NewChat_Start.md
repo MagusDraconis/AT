@@ -4669,3 +4669,26 @@ Unifies the constraint manifolds under a single mechanism: attractor persistence
   regions because only certain regions support stable attractors.
 - Classification: B — WEAK CORRESPONDENCE. Stability unifies 3 of 4; Koide
   (symmetry) resists. Unification partial but genuine. 44 QG.
+
+**PHASE 89 — ResearchQG-045: Symmetry as Constraint Generator Audit:**
+Tests whether constraints come from symmetry, stability, or a deeper common source.
+
+- Reduction attempts BOTH FAIL: symmetry→stability (symmetric top is unstable),
+  stability→symmetry (irregular-valley rock is stable but asymmetric). Symmetry
+  and stability are LOGICALLY INDEPENDENT properties.
+- Constraint classification: 4 HYBRID (charge quantization, U(1), RG fixed points,
+  particle stability), 1 pure STABILITY (vacuum band), 1 pure SYMMETRY (Koide).
+- U(1) deep unification: for the circle S¹, symmetry (compact U(1)) and topology
+  (integer winding) COINCIDE. 'Compact U(1)' ⟺ 'integer winding' — same fact.
+- Koide = S3 symmetry (democratic texture broken 'halfway': 45° = equal singlet/
+  doublet weight). Pure symmetry, no stability. Exactness at all scales is a
+  symmetry signature, not RG-flow attraction.
+- Deeper common source: PERSISTENCE = INVARIANCE. Symmetry = invariance under a
+  GROUP; Stability = invariance under PERTURBATIONS. Both = "staying the same
+  under change" = QG-020's attractor concept = derivable from Q.
+- No new primitive needed: symmetry is already implicit in Q (phase geometry).
+  Stability generates continuous manifolds; symmetry generates discrete manifolds.
+- Classification: C — HYBRID MECHANISM. Deeper common source (persistence) is
+  SUGGESTED but not FORMALLY derived (so D is the open goal). To reach D: formally
+  derive S¹ invariance generates BOTH U(1) symmetry AND attractor stability, and
+  derive Koide 45° from S3 texture. Both remain open. 45 QG.
