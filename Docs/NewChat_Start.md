@@ -5017,3 +5017,21 @@ Tests whether Koide is a boundary condition (surface) vs a dynamical law. Result
   coherent (explains lepton-specificity) but does NOT derive Q=2/3. The surface
   is real, stable, lepton-specific — a boundary condition whose VALUE remains the
   single unexplained number. 60 QG.
+
+**PHASE 105 — ResearchQG-061: Why This Number Audit:**
+Tests whether Q=2/3 is distinguished or arbitrary. Result: DISTINGUISHED (the 45° balance) but UNDERIVED.
+
+- "Why 2/3" = "why 45°" = "why balance": ONE question. 2/3 = 1/(3cos²45°), entirely
+  equivalent to the 45° balance (singlet=doublet). No independent content.
+- Rationalness is NOT special (0.65=13/20, 0.70=7/10 also rational). N_eff=3/2 is
+  suggestive (3 generations / 2 balance) but not derived.
+- NEARBY-VALUE SCAN (deterministic): Q=0.60 (θ=41.8°), 0.65 (44.2°), 2/3 (45.0°),
+  0.70 (46.4°), 0.75 (48.2°). ALL viable (θ∈[0,54.74°]). 2/3 is NOT selected by
+  viability or stability (weak RG preserves ANY value, QG-060).
+- 2/3 is distinguished ONLY by the balance (45°). No mechanism (symmetry, stability,
+  viability) forces it. No TQM primitive produces 2/3.
+- The final state of the flavor program: the entire mystery reduces to ONE statement
+  — "the charged-lepton amplitude vector is balanced (45°)". Real (10⁻⁵),
+  lepton-specific, stable, underived.
+- Classification: B — WEAKLY DISTINGUISHED. 2/3 is the balance point (genuinely
+  geometric-special) but no mechanism derives it. 61 QG.
