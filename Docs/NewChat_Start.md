@@ -4996,3 +4996,24 @@ Determines whether Koide is isolated, emergent, residual, or fundamental. Result
   crack revealing a deeper architecture. No other crack exists (no quark/neutrino
   analog). Single, precise, isolated mystery.
 - Classification: B — WEAK RESIDUAL STRUCTURE. 59 QG.
+
+**PHASE 104 — ResearchQG-060: Koide Boundary Condition Audit:**
+Tests whether Koide is a boundary condition (surface) vs a dynamical law. Result: BOUNDARY CONDITION.
+
+- Koide manifold Q=2/3 is a codimension-1 SURFACE in flavor space (one equation,
+  2 DOF remain: overall scale + shape). A "latitude" at 45° in the amplitude simplex.
+- NOT a dynamical law (would be universal; quarks fail). Best as a BOUNDARY
+  CONDITION (contingent, sector-specific) — explains lepton-specificity.
+- RG stability vs attraction: lepton Yukawas run weakly (QED/EW only), so ANY
+  relation is PRESERVED. Q=2/3 is STABLE (RG-invariant) but NOT ATTRACTIVE (no
+  fixed point). Stability ≠ selection.
+- No flavor flow has Q=2/3 as an attractor. Weak running preserves whatever Q a
+  spectrum has; it doesn't drive spectra toward 2/3.
+- Lepton distance to surface ~10⁻⁵ (essentially ON it). Random spectra are O(1)
+  away. Exceptional.
+- Boundary role: Q=2/3 = midpoint between democracy (1/3) and hierarchy (1) —
+  the "balance" boundary (a restatement of the 45°).
+- Classification: B — WEAK BOUNDARY STRUCTURE. The boundary interpretation is
+  coherent (explains lepton-specificity) but does NOT derive Q=2/3. The surface
+  is real, stable, lepton-specific — a boundary condition whose VALUE remains the
+  single unexplained number. 60 QG.
