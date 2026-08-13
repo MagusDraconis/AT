@@ -5714,3 +5714,28 @@ trivially; Level 4 partial; Level 5 fails. This CLOSES the whole QG-080–089 re
   event-count, event-structure, rate) collapses to FLRW or is falsified. NONE yields a distinct
   prediction. The ONLY decisive, falsifiable TQM test remains the g†(z) EVOLUTION (g† ∝ H vs a₀
   constant), which is mass-limited (QG-079) and requires next-gen resolved RAR data.
+
+**PHASE 137 — ResearchQG-090: Origin Of Change Audit (causality deeper; causal-set Λ prediction):**
+Investigated why change exists at all, and whether time/change/information/causality is more
+fundamental. Result: neither time nor change is fundamental — the CAUSAL PARTIAL ORDER is the
+deeper primitive; and Causal Set Theory yields the one quantitative 'prediction from change'.
+
+- Primitive realities classified: block universe, information state space (It from Bit), causal
+  network (Causal Set), quantum state (Wheeler-DeWitt), mathematical structure (MUH). All are
+  timeless at base; apparent evolution is structure/correlations.
+- Time vs change: change needs ordering (time), time needs something changing (change) → NEITHER
+  is fundamental; both emerge from the causal partial order. In quantum gravity H|Ψ⟩=0 the state
+  is static and time is emergent. Amount of change C(t)=N(t); d ln C/dt = 3H (causal-set 4-volume).
+- KEY QUANTITATIVE RESULT (Level 4/5): Causal Set Theory predicts the cosmological constant
+  magnitude Λ·l_P² ≈ 1/√N ≈ 1e-122 (N=(R_H/l_P)⁴≈1e244). Predicted 1.39e-122 vs observed
+  2.87e-122 — ratio 0.48, an order-unity match. This is the ONLY framework in QG-080–090 that is
+  not a FLRW re-parameterization: it derives Λ from spacetime discreteness. (Its fluctuation
+  ~1/√N is unobservably small.)
+- a₀ = c × (minimum rate of change) = cH = 6.5e-10 (the 'cH class', no 2π, order only).
+- VERDICT: Levels 1–4 PASS; Level 5 PARTIAL (Λ magnitude predicted, fluctuation untestable).
+  Cosmological evolution is the growth of causal structure; its one signature is Λ ~ 1/√N.
+- Outputs: OriginOfChangeModels.csv, ChangeHierarchy.csv, TimeVsChangeAnalysis.csv,
+  FundamentalChangeRanking.csv (Data/derived) + 1 PNG; Docs/PredictionsFromChange.md; 5 files + test.
+- NEXT: this is the natural terminus of the QG-080–090 "origin" investigation. The program now
+  has exactly TWO live quantitative anchors: (1) the causal-set Λ ~ 1/√N prediction (theoretical),
+  and (2) the g†(z) EVOLUTION test (observational, mass-limited). Both are documented.
