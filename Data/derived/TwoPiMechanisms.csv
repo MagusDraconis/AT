@@ -1,0 +1,5 @@
+Mechanism,PredictedGdagger,RatioToA0,RetainsTwoPi,Factor,Score
+Horizon (Unruh+GH),6.55E-010,5.46,0,1 (2π cancels),0.5
+Angular-frequency,1.04E-010,0.87,1,1/(2π),2.5
+Entropy/holographic,1.09E-010,0.91,0,1/6,2.5
+Coincidence,NaN,1.00,0,—,1.5

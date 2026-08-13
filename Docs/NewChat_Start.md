@@ -5603,3 +5603,24 @@ Result: the 2π factor is a falsifiable discriminator; coincidence is ~10% but n
   decisive test remains the g†(z) EVOLUTION (g† ∝ H vs a0 constant), which is mass-limited
   (QG-079). Return to it only with next-gen resolved data, or pursue a distinct observable
   in dwarf dynamics / weak lensing.
+
+**PHASE 132 — ResearchQG-085: The 2π Origin Audit (the 2π is a numerical accident):**
+Investigated whether the 1/(2π) in g† = cH/2π is a deep principle or coincidence.
+Result: NUMERICAL ACCIDENT — the data do NOT uniquely select 2π.
+
+- Catalog of 2π occurrences: Unruh/Hawking/Gibbons-Hawking (thermal circle β=2π/κ, 2π CANCELS
+  in acceleration), angular frequency ω=2πν (radians→cycles, 2π RETAINED), holographic area,
+  Fourier/Gaussian/Topology.
+- Mechanism evaluation: Horizon (Unruh+GH) → a=cH (2π cancels) = 5.4× too large → EXCLUDED.
+  Angular-frequency → g†=cH/2π (2π retained). Entropy/Verlinde → cH/6 (factor 6, not 2π).
+- KEY DEFLATIONARY RESULT: a₀/(cH)=0.183 is CLOSER to 1/5 (8%) and 1/6 (10%) than to 1/(2π)
+  (15%). The 2π is NOT the best, nor unique, 'nice-number' match. Coincidence ~26-30%.
+- VERDICT: Levels 1–4 PASS (catalog, classes, no-tuning angular derivation, why cH fails).
+  Level 5 FAIL: the data do not single out 2π; the 15% a₀−cH/2π offset disfavors exactness.
+  The 2π is one of several 'nice' O(1) factors near 0.18 — a coincidence, not deep structure.
+- Outputs: Fundamental2PiRelations.csv, TwoPiMechanisms.csv, TwoPiOriginRanking.csv,
+  CoincidenceAnalysis.csv (Data/derived) + 3 PNGs; 5 source files + test.
+- NEXT: the g†=cH/2π line is now fully deflated (numerical coincidence, not a principle).
+  The ONLY remaining decisive test is the g†(z) EVOLUTION (g† ∝ H vs a0 constant), which is
+  mass-limited (QG-079). The program should either (a) pursue that with next-gen data, or (b)
+  pivot to a genuinely distinct TQM observable elsewhere.

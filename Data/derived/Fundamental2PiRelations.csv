@@ -1,0 +1,10 @@
+Relation,Where2PiComesFrom,Class
+Unruh  T = ħ a/(2π k c),Euclidean periodicity β=2π/a,thermodynamic/geometric
+Hawking  T = ħ c³/(8π G M k),surface gravity κ=c²/2R,thermodynamic/geometric
+Gibbons–Hawking  T = ħ H/(2π k),de Sitter horizon,thermodynamic/geometric
+de Sitter entropy  S = π R²/G,horizon area,holographic
+Bekenstein  S = A/(4 G),area law (1/4; not 2π),holographic
+ω = 2πν  (angular frequency),radians → cycles,geometric/periodic
+e^{ikx}  (period 2π/k),wave periodicity,geometric
+Gaussian norm 1/(2π),wavepacket normalization,analytic
+Gauss–Bonnet  ∫K dA = 2πχ,Euler characteristic,topological
