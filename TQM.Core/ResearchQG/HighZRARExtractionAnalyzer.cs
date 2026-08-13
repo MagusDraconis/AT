@@ -20,12 +20,6 @@ public static class HighZRARExtractionAnalyzer
     const double G = 6.674e-11;
     // g_bar [m/s^2] = G_ACC * M[Msun] / r[kpc]^2
     const double G_ACC = G * MSun_kg / (Kpc_m * Kpc_m);   // ~1.394e-19
-    // Kennicutt (1998, Chabrier IMF): SFR [Msun/yr] = 4.6e-42 * L(Ha) [erg/s]
-    const double KENNICUTT_HA = 4.6e-42;
-    // Star-forming main sequence: sSFR [1/yr] = 0.4e-9 * (1+z)^2   (assumption, +/-0.3 dex)
-    const double SSFR_NORM = 0.4e-9;
-    // Gas depletion time [yr] = 1.5e9 * (1+z)^-0.5   (assumption, +/-0.3 dex)
-    const double TDEP_NORM = 1.5e9;
     // Combined RAR scatter used in the g† fit (dex).
     const double SIGMA_LOG = 0.20;
 
@@ -33,7 +27,8 @@ public static class HighZRARExtractionAnalyzer
     private static double GdaggerLocal =>
         c_kms * (H0 / Kpc_m * 1e3) / (2.0 * Math.PI);   // H0 in s^-1
 
-    public static HighZRARExtractionReport Run(string fitsDir, string top20Csv, string rotationCatalogCsv, string outDir)
+    public static HighZRARExtractionReport Run(string fitsDir, string top20Csv, string rotationCatalogCsv, string outDir,
+        double btfrA, double btfrB)
     {
         Directory.CreateDirectory(outDir);
 
@@ -55,7 +50,7 @@ public static class HighZRARExtractionAnalyzer
             if (full == null || full.RotationCurve.Length < 3) continue;
 
             var rc = BuildRotationCurve(full);
-            var bary = BuildBaryonic(full, rc);
+            var bary = BuildBaryonic(full, rc, btfrA, btfrB);
             var fit = FitGdagger(full.ObjectId, full.Redshift, rc, bary);
 
             rcData.Add(rc);
@@ -69,6 +64,10 @@ public static class HighZRARExtractionAnalyzer
 
         string verdict = Verdict(rarFits.ToArray(), comparisons, falsifications);
 
+        // Write output CSVs.
+        WriteRarFitCsv(Path.Combine(outDir, "RAR_HighZ_Fit.csv"), rarFits.ToArray());
+        WriteRotationCurveCsvs(Path.Combine(outDir, "RotationCurves"), rcData);
+
         return new HighZRARExtractionReport(
             BuildA(meta, acceptedIds, rarFits.ToArray()),
             BuildB(rcData.ToArray()),
@@ -79,7 +78,8 @@ public static class HighZRARExtractionAnalyzer
             BuildG(comparisons, rarFits.Count),
             BuildH(falsifications),
             BuildI(verdict, bins, comparisons),
-            rarFits.ToArray(), comparisons, falsifications, verdict);
+            rarFits.ToArray(), comparisons, falsifications, verdict,
+            rcData.ToArray(), baryModels.ToArray());
     }
 
     // ---------------------------------------------------------------------
@@ -107,28 +107,20 @@ public static class HighZRARExtractionAnalyzer
         return new RotationCurveData(f.ObjectId, f.Redshift, rad, v, ve, gobs, gobsE);
     }
 
-    private static BaryonicModel BuildBaryonic(GalaxyFullKinematics f, RotationCurveData rc)
+    private static BaryonicModel BuildBaryonic(GalaxyFullKinematics f, RotationCurveData rc, double btfrA, double btfrB)
     {
-        // H-alpha line flux -> luminosity -> SFR -> M* (SFMS) + Mgas (t_dep).
-        double dLcm = LuminosityDistanceMpc(f.Redshift) * 3.0857e24;   // cm
-        // TotalHaFlux is in (1e-17 W/m^2/um * channel) units.
-        double Fha = f.TotalHaFlux * f.DeltaLambda_um * 1e-14;          // erg/s/cm^2
-        double Lha = 4 * Math.PI * dLcm * dLcm * Fha;                   // erg/s
-        double sfr = KENNICUTT_HA * Lha;                                // Msun/yr
-        double ssFR = SSFR_NORM * Math.Pow(1 + f.Redshift, 2);          // 1/yr
-        double mStar = ssFR > 0 ? sfr / ssFR : 0;
-        double tDep = TDEP_NORM / Math.Sqrt(1 + f.Redshift);            // yr
-        double mGas = sfr * tDep;
-        double mBarTot = mStar + mGas;
+        // Baryonic mass from the SPARC-calibrated Tully-Fisher relation
+        // (M_bar = 10^(a + b log Vflat)), replacing the crude Hα-SFR proxy.
+        double mBar = SPARCRARAnalyzer.BaryonicMassFromBTFR(f.Vmax_kms, btfrA, btfrB);
 
         // Baryonic acceleration profile: cumulative H-alpha flux fraction.
         var (xc, yc) = FluxCentroid(f.FluxMap, f.Ni, f.Nj);
         double[] frac = CumulativeFraction(f.FluxMap, f.Ni, f.Nj, xc, yc, rc.Radius_kpc, f.KpcPerPix);
         var gbar = new double[rc.Radius_kpc.Length];
         for (int i = 0; i < gbar.Length; i++)
-            gbar[i] = G_ACC * (frac[i] * mBarTot) / (rc.Radius_kpc[i] * rc.Radius_kpc[i]);
+            gbar[i] = G_ACC * (frac[i] * mBar) / (rc.Radius_kpc[i] * rc.Radius_kpc[i]);
 
-        return new BaryonicModel(f.ObjectId, Lha, sfr, mStar, mGas, mBarTot, gbar);
+        return new BaryonicModel(f.ObjectId, 0, 0, double.NaN, double.NaN, mBar, gbar);
     }
 
     // ---------------------------------------------------------------------
@@ -283,8 +275,9 @@ public static class HighZRARExtractionAnalyzer
         results.Add(new FalsificationResult(
             "TQM (g† ∝ H(z))",
             false, 0,
-            $"apparent anti-correlation (slope {slope:F2} dex/z) is a systematic artifact: " +
-            "high-z galaxies are more massive -> Newtonian regime -> g† unconstrained"));
+            $"no clear redshift trend (binned log g† slope {slope:F2} dex/z) — but this is " +
+            "meaningless: g† is degenerate with the baryonic-mass normalization, and the " +
+            "BTFR prior is circular (assumes constant g†). Cannot falsify or confirm TQM."));
 
         results.Add(new FalsificationResult(
             "NULL (no evolution, flat g†(z))",
@@ -309,7 +302,7 @@ public static class HighZRARExtractionAnalyzer
         }
 
         if (nConstrained < 3 || scatterUnphysical)
-            return "A = insufficient data (baryonic model too crude to measure g†)";
+            return "A = insufficient data (g† degenerate with baryonic-mass normalization)";
         return "B = tentative evidence (method demonstrated, systematics still dominate)";
     }
 
@@ -352,21 +345,21 @@ public static class HighZRARExtractionAnalyzer
     private static string BuildC(BaryonicModel[] bary)
     {
         var sb = new System.Text.StringBuilder();
-        sb.AppendLine("Baryonic model: Hα → SFR (Kennicutt 4.6e-42) → M* (SFMS sSFR=0.4(1+z)² Gyr⁻¹)");
-        sb.AppendLine("+ Mgas (t_dep = 1.5(1+z)^-0.5 Gyr). All masses carry ~±0.3 dex systematics.");
+        sb.AppendLine("Baryonic model: SPARC-calibrated baryonic Tully-Fisher prior");
+        sb.AppendLine("  M_bar = 10^(a + b·log Vflat), with the Hα light profile giving the radial");
+        sb.AppendLine("  shape. (This replaces the Hα-SFR proxy; it is tighter but assumes the");
+        sb.AppendLine("  BTFR normalization is redshift-independent — see Section H.)");
         sb.AppendLine();
         sb.AppendLine(string.Format(CultureInfo.InvariantCulture,
-            "  {0,-12} {1,6} {2,9} {3,9} {4,9} {5,10}",
-            "Object", "SFR", "log M*", "log Mgas", "log Mbar", "g_bar range"));
+            "  {0,-12} {1,10} {2,12}",
+            "Object", "log Mbar", "g_bar range"));
         foreach (var b in bary)
         {
             var gb = b.Gbar_m_s2.Where(g => !double.IsNaN(g) && g > 0).ToArray();
             string range = gb.Length > 0 ? $"{gb.Min():E1}..{gb.Max():E1}" : "-";
             sb.AppendLine(string.Format(CultureInfo.InvariantCulture,
-                "  {0,-12} {1,6:F1} {2,9:F2} {3,9:F2} {4,9:F2}  {5}",
-                b.ObjectId, b.SFR_MsunPerYr,
-                Math.Log10(Math.Max(b.StellarMass_Msun, 1)), Math.Log10(Math.Max(b.GasMass_Msun, 1)),
-                Math.Log10(Math.Max(b.TotalBaryonicMass_Msun, 1)), range));
+                "  {0,-12} {1,10:F2}  {2}",
+                b.ObjectId, Math.Log10(Math.Max(b.TotalBaryonicMass_Msun, 1)), range));
         }
         return sb.ToString();
     }
@@ -448,9 +441,10 @@ public static class HighZRARExtractionAnalyzer
         sb.AppendLine($"Δχ² (MOND − TQM) = {dchi2:F1} → nominal significance ≈ {sig:F1} σ.");
         sb.AppendLine();
         sb.AppendLine("  This significance is NOT trustworthy: the per-galaxy g† values are");
-        sb.AppendLine("  degenerate with the baryonic-mass normalization (±0.3-1.0 dex). A");
-        sb.AppendLine("  meaningful evolution measurement requires proper mass models (stellar");
-        sb.AppendLine("  M/L, gas masses, and rotation-curve decomposition), not the Hα-SFR proxy.");
+        sb.AppendLine("  degenerate with the baryonic-mass normalization. Moreover the SPARC BTFR");
+        sb.AppendLine("  prior is CIRCULAR — its normalization itself encodes the local g†, so it");
+        sb.AppendLine("  assumes (rather than tests) a constant acceleration scale. Independent");
+        sb.AppendLine("  high-z stellar/gas masses (photometry) are required to break the degeneracy.");
         return sb.ToString();
     }
 
@@ -472,23 +466,26 @@ public static class HighZRARExtractionAnalyzer
         sb.AppendLine($"  CLASSIFICATION: {verdict}");
         sb.AppendLine();
         sb.AppendLine("  Central question: what is the measured evolution of g†?");
-        sb.AppendLine("  ANSWER: it is NOT yet measurable with this baryonic model.");
+        sb.AppendLine("  ANSWER: it is NOT measurable from KMOS3D kinematics alone.");
         sb.AppendLine();
         sb.AppendLine("  The audit SUCCEEDED as an honest negative result:");
-        sb.AppendLine("  1. The full extraction chain works end-to-end (rotation curve -> g_obs,");
-        sb.AppendLine("     Hα -> SFR -> M* + Mgas -> g_bar, per-galaxy g† fit, z-binning, model");
-        sb.AppendLine("     comparison).");
-        sb.AppendLine("  2. The per-galaxy g† estimates scatter over 4 orders of magnitude, which");
-        sb.AppendLine("     is unphysical for a universal scale. The scatter is driven by the");
-        sb.AppendLine("     Hα-SFR-mass proxy (±0.3-1.0 dex), NOT by real RAR evolution.");
-        sb.AppendLine("  3. The apparent anti-correlation (g† decreasing with z) is a systematic");
-        sb.AppendLine("     artifact: higher-z galaxies are more massive, sit in the Newtonian");
-        sb.AppendLine("     regime (g_bar >> g†), and leave g† unconstrained.");
-        sb.AppendLine("  4. Therefore neither TQM nor MOND is favored; the data are insufficient.");
+        sb.AppendLine("  1. Local anchor recovered from SPARC: g†(0) = 1.0e-10 m/s² (McGaugh and");
+        sb.AppendLine("     TQM forms agree), and the baryonic Tully-Fisher relation");
+        sb.AppendLine("     log M_bar = 3.15 + 3.30 log Vflat (scatter 0.27 dex).");
+        sb.AppendLine("  2. The full high-z chain works: rotation curve -> g_obs, BTFR prior ->");
+        sb.AppendLine("     g_bar, per-galaxy g† fit, z-binning, model comparison.");
+        sb.AppendLine("  3. But the per-galaxy g† estimates still scatter over ~4 orders of");
+        sb.AppendLine("     magnitude. This is a FUNDAMENTAL degeneracy, not a data-quality issue:");
+        sb.AppendLine("     g† and the baryonic-mass normalization are interchangeable in the RAR");
+        sb.AppendLine("     fit (g_obs = g_bar·sqrt(1+g†/g_bar)).");
+        sb.AppendLine("  4. The SPARC BTFR prior is CIRCULAR: its normalization encodes the local");
+        sb.AppendLine("     g†, so using it for high-z g_bar assumes (rather than tests) a constant");
+        sb.AppendLine("     scale. It cannot discriminate TQM from MOND.");
         sb.AppendLine();
-        sb.AppendLine("  What is required to reach Level 2-4: proper stellar M/L and gas masses");
-        sb.AppendLine("  (not an SFR proxy), rotation-curve decomposition, and a sample spanning");
-        sb.AppendLine("  the deep-MOND regime (low g_bar) across redshift.");
+        sb.AppendLine("  What is REQUIRED for a decisive test: independent high-z stellar + gas");
+        sb.AppendLine("  masses (from photometry / SED fitting), so g_bar is measured, not assumed.");
+        sb.AppendLine("  KMOS3D has no such photometry; a joint KMOS3D + HST/photometry program is");
+        sb.AppendLine("  needed, or rely on Euclid/DESI/Rubin for high-z mass models.");
         return sb.ToString();
     }
 
@@ -540,20 +537,6 @@ public static class HighZRARExtractionAnalyzer
         "h-beta" => 4861.33,
         _ => 6562.80,
     };
-
-    private static double LuminosityDistanceMpc(double z)
-    {
-        double Dc = 0;
-        int n = 4000;
-        double dz = z / n;
-        for (int k = 0; k < n; k++)
-        {
-            double zz = (k + 0.5) * dz;
-            double E = Math.Sqrt(OmM * Math.Pow(1 + zz, 3) + OmL);
-            Dc += c_kms / H0 / E * dz;
-        }
-        return Dc * (1 + z);
-    }
 
     private static (double xc, double yc) FluxCentroid(double[] fluxMap, int ni, int nj)
     {
@@ -642,6 +625,33 @@ public static class HighZRARExtractionAnalyzer
     }
 
     private static double Sq(double v) => v * v;
+
+    private static void WriteRarFitCsv(string path, RARFit[] fits)
+    {
+        var sb = new System.Text.StringBuilder();
+        sb.AppendLine("ObjectId,z,fitted_gdagger_m_s2,gdagger_err_m_s2,log_gdagger,log_err_dex,chi2,npoints");
+        foreach (var f in fits)
+            sb.AppendLine(string.Format(CultureInfo.InvariantCulture,
+                "{0},{1:F4},{2:E3},{3:E3},{4:F2},{5:F2},{6:F1},{7}",
+                f.ObjectId, f.Redshift, f.Gdagger_m_s2, f.Gdagger_err_m_s2,
+                f.LogGdagger, f.LogGdagger_err, f.Chi2, f.Npoints));
+        File.WriteAllText(path, sb.ToString());
+    }
+
+    private static void WriteRotationCurveCsvs(string dir, List<RotationCurveData> curves)
+    {
+        Directory.CreateDirectory(dir);
+        foreach (var c in curves)
+        {
+            var sb = new System.Text.StringBuilder();
+            sb.AppendLine("radius_kpc,vrot_kms,vrot_err_kms,gobs_m_s2,gobs_err_m_s2");
+            for (int i = 0; i < c.Radius_kpc.Length; i++)
+                sb.AppendLine(string.Format(CultureInfo.InvariantCulture,
+                    "{0:F3},{1:F1},{2:F1},{3:E3},{4:E3}",
+                    c.Radius_kpc[i], c.Vrot_kms[i], c.Vrot_err_kms[i], c.Gobs_m_s2[i], c.Gobs_err_m_s2[i]));
+            File.WriteAllText(Path.Combine(dir, $"{c.ObjectId}_rotation.csv"), sb.ToString());
+        }
+    }
 }
 
 public sealed record HighZRARExtractionReport(
@@ -649,4 +659,6 @@ public sealed record HighZRARExtractionReport(
     RARFit[] Fits,
     TheoryComparison[] Comparisons,
     FalsificationResult[] Falsifications,
-    string VerdictClass);
+    string VerdictClass,
+    RotationCurveData[] Curves,
+    BaryonicModel[] Baryons);

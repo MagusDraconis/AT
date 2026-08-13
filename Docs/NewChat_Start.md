@@ -5282,3 +5282,23 @@ First attempt to measure g†(z) directly from KMOS3D. Result: A = insufficient 
   regime across redshift.
 - Lesson: DATA-004's g†=cH₀/2π rests on SPARC's full mass models, NOT on an SFR
   proxy. The KMOS3D archival route needs real mass modeling before it can test g†(z).
+
+**PHASE 118 — QG-071 (re-run with SPARC calibration): fundamental degeneracy:**
+Added the SPARC local reference data (MassModels + Rotmod) to the RAR pipeline.
+Result: A = insufficient data — now diagnosed as a FUNDAMENTAL degeneracy.
+
+- SPARC local anchor recovered: g†(0) = 1.0e-10 m/s² (McGaugh and TQM forms agree);
+  baryonic Tully-Fisher relation log M_bar = 3.15 + 3.30 log Vflat (scatter 0.27 dex).
+- Replaced the Hα-SFR baryonic proxy with the SPARC BTFR prior (Vmax → M_bar),
+  the Hα light profile giving the radial shape. Tighter (0.27 dex) than the proxy.
+- High-z g† still scatters ~4 orders of magnitude. KEY DIAGNOSIS: this is not a
+  data-quality issue — g† and the baryonic-mass normalization are INTERCHANGEABLE in
+  the RAR fit (g_obs = g_bar·√(1+g†/g_bar)). They are fundamentally degenerate.
+- The BTFR prior is CIRCULAR: its normalization encodes the local g†, so using it
+  for high-z g_bar ASSUMES (not tests) a constant scale. It cannot discriminate
+  TQM from MOND by construction.
+- Honest verdict: g†(z) is NOT measurable from KMOS3D kinematics alone. KMOS3D has
+  no photometry for stellar/gas masses. A decisive test requires independent high-z
+  mass models (HST/SED photometry, or Euclid/DESI/Rubin).
+- Outputs: HighZGalaxyCatalog.csv, Top20, RotationCurves/*.csv, RAR_HighZ_Fit.csv,
+  Plots/{Local_RAR,HighZ_RAR,gdagger_vs_z,TQM_vs_MOND}.png.
