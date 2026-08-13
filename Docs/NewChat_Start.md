@@ -5216,3 +5216,27 @@ KMOS3D archival data.
 Immediately feasible (archival KMOS3D).
 - Classification: C — STRONGLY TESTABLE (bordering D). The single most decisive
 experiment, quantified and ready. 70 QG.
+
+**PHASE 115 — KMOS3D Kinematic Candidate Catalog (QG-070 observational step):**
+Built a kinematic catalog of the full KMOS3D cube set to select the best
+RAR-evolution targets. Result: 64 high-priority rotation-curve candidates.
+
+- Data: Data/FitsData/*.fits — 275 cubes (75 H, 66 K, 134 YJ band; z=0.54–3.94).
+- Pipeline: header read → emission-line ID (flux-weighted cross-correlation over a
+  rest-line catalogue) → redshift → per-spaxel line fit (median-3 CR rejection +
+  noise sanity check) → flux/SNR/velocity maps → size, axis ratio b/a, inclination
+  (intrinsic thickness q₀=0.15) → KinematicScore = SNR + inclination + flux score.
+- Line IDs: 257 Hα, 8 [OIII]5007, 1 Hβ (all physically dominant lines — no spurious
+  [NII]/[SII] identities).
+- Classification: 87 A unusable, 89 B science cube, 35 C velocity-field probable,
+  64 D high-priority rotation-curve target.
+- Key data caveats: (1) the KMOS3D "noise" extension is a 3D cube, not a 2D map;
+  (2) flux cubes contain ±1e5 cosmic-ray/bad-pixel spikes — median-3 filtering and
+  a 500σ CR guard are required for physical SNR (20–450 for detected lines).
+- Outputs: KMOS3D_KinematicCatalog.csv (275 rows) + Top20_KinematicCandidates.csv
+  (ObjectId, z, band, exposure, line, SNR, b/a, inclination, KinematicScore).
+- Top candidates (large size, high SNR, i≈40–65°, velocity span >400 km/s):
+  COS4_00779, COS4_15095, COS4_18435, COS4_12891, COS4_11343, COS4_13890.
+- NEXT: run the full kinematics pipeline (velocity field → disk fit → rotation
+  curve) on the top-ranked inclined, high-SNR targets to place them on the
+  g†(z) = c·H(z)/2π curve and test the rising-RAR prediction against MOND (flat).
