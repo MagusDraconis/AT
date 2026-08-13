@@ -5240,3 +5240,24 @@ RAR-evolution targets. Result: 64 high-priority rotation-curve candidates.
 - NEXT: run the full kinematics pipeline (velocity field → disk fit → rotation
   curve) on the top-ranked inclined, high-SNR targets to place them on the
   g†(z) = c·H(z)/2π curve and test the rising-RAR prediction against MOND (flat).
+
+**PHASE 116 — High-z RAR Pilot Sample (QG-070 observational step 2):**
+Ran the full velocity-field → disk-fit → rotation-curve pipeline on the Top-20
+catalog candidates. Result: first 9-galaxy high-z RAR pilot sample.
+
+- Pipeline: per-spaxel Hα fit (median-3 CR rejection) → velocity/dispersion/flux
+  maps → arctan disk-model grid fit (PA, i, r_t) → deprojected rotation curve →
+  g_obs = V_rot²/r at the outermost reliable radius.
+- Acceptance cuts: i ≥ 35°, velocity span ≥ 150 km/s, SNR ≥ 10. Of 20 processed:
+  11 rejected, 9 accepted (3 D = immediate RAR candidate, 5 C, 1 B).
+- Best10 (ranked by kinematic reliability = coherent-rotation FitQuality):
+  COS4_21318 (z=0.55, Vmax=464), COS4_12699 (z=0.55, 264), COS4_00779 (z=1.07,
+  227), COS4_18435 (z=1.82, 112), COS4_16369 (z=1.82, 99).
+- Output: HighZ_RotationCatalog.csv (ObjectId, Redshift, Inclination, Vmax,
+  TurnoverRadius, VelocitySpan, FitQuality).
+- Honest caveat: Vmax is the COHERENT rotation amplitude (turbulence left in the
+  residual rms ~100-250 km/s); g_obs carries deprojection uncertainty. Coarse
+  grid, no turbulent-dispersion term. First-cut estimates for follow-up.
+- The high-z galaxies (z≈1.8) place points at g†(z)/g†(0) ≈ 2.8 — exactly the
+  regime where TQM (rising) and MOND (flat) separate. NEXT: stack the pilot
+  sample and compare the g_obs(z) trend against g†(z)=c·H(z)/2π.
