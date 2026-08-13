@@ -5197,3 +5197,22 @@ Falsifiability is concentrated in the DERIVED predictions. g†(z) is the sharpe
 yr) neutrino-Koide; Phase 4 (5-10 yr) w(z).
 - Classification: B — MODERATELY TESTABLE. Core unfalsifiable; derived predictions
 testable. g†(z) is the highest-value experiment — fund it first. 69 QG.
+
+**PHASE 114 — ResearchQG-070: RAR Evolution Precision Audit:**
+Quantifies g†(z)=c·H(z)/2π numerically. Result: STRONGLY TESTABLE, immediately feasible.
+
+- g†(0) = 1.04×10⁻¹⁰ m/s² (H₀=67.4). Numerical table (flat ΛCDM):
+z=0: ×1.000; z=0.5: ×1.322; z=1: ×1.790; z=2: ×3.032; z=3: ×4.566.
+- The RATIO R(z) = g†(z)/g†(0) = √(0.315(1+z)³+0.685) is H₀-INDEPENDENT (depends
+only on Ωm) — ROBUST to the Hubble tension. This is the key clean test.
+- MOND comparison: constant a₀ (flat) vs TQM rising. At z=1: 79% difference; z=2:
+203%; z=3: 357%. O(1) signal — not subtle.
+- ΛCDM: no fundamental g† (RAR is emergent halo physics). THREE-WAY discriminator:
+TQM (rising) vs MOND (flat) vs ΛCDM (no scale). Clean science.
+- Falsification threshold: ~25% precision at z≈1 suffices (3σ). Achievable with
+KMOS3D archival data.
+- Dominant uncertainty: stellar M*/L. H₀ tension does NOT affect R(z).
+- THE KILL-SHOT: measure R(z) at z≈1-2 to ~25%. Rising → TQM; flat → MOND.
+Immediately feasible (archival KMOS3D).
+- Classification: C — STRONGLY TESTABLE (bordering D). The single most decisive
+experiment, quantified and ready. 70 QG.
