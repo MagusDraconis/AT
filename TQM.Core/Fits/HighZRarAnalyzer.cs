@@ -52,13 +52,14 @@ public static class HighZRarAnalyzer
     // Per-galaxy kinematics
     // ---------------------------------------------------------------------
 
-    private static GalaxyKinematics? AnalyzeGalaxy(string path, string objectId, double z, string line, double lineRest)
+    /// <summary>Full per-galaxy kinematics (velocity field, disk fit, rotation curve,
+    /// maps). Public so the QG-071 RAR extraction audit can reuse it.</summary>
+    public static GalaxyFullKinematics? AnalyzeFull(string path, string objectId, double z, string line, double lineRest)
     {
         var fits = new Fits(path);
         try
         {
-            BasicHDU[] hdus = fits.Read();
-            return AnalyzeHdus(hdus, objectId, z, line, lineRest);
+            return AnalyzeHdusFull(fits.Read(), objectId, z, line, lineRest);
         }
         catch
         {
@@ -70,7 +71,21 @@ public static class HighZRarAnalyzer
         }
     }
 
-    private static GalaxyKinematics? AnalyzeHdus(BasicHDU[] hdus, string objectId, double z, string line, double lineRest)
+    private static GalaxyKinematics? AnalyzeGalaxy(string path, string objectId, double z, string line, double lineRest)
+    {
+        var f = AnalyzeFull(path, objectId, z, line, lineRest);
+        if (f == null) return null;
+        double fitQuality = FitQuality(f.Vmax_kms, f.Rms_kms, f.SNR, f.GoodPixels);
+        string classification = Classify(f.InclinationDeg, f.VelocitySpan_kms, f.SNR, f.Vmax_kms, fitQuality);
+        var (gobs, rlast) = Gobslast(f.RotationCurve);
+        return new GalaxyKinematics(
+            f.ObjectId, f.Redshift, f.EmissionLine,
+            f.InclinationDeg, f.Vmax_kms, f.TurnoverRadius_kpc,
+            f.VelocitySpan_kms, fitQuality, f.SNR, f.GoodPixels,
+            f.Rms_kms, f.Vsys_kms, gobs, rlast, classification);
+    }
+
+    private static GalaxyFullKinematics? AnalyzeHdusFull(BasicHDU[] hdus, string objectId, double z, string line, double lineRest)
     {
         var fc = FitsCubeInspector.FindScienceCube(hdus);
         if (fc is not { } c) return null;
@@ -123,8 +138,9 @@ public static class HighZRarAnalyzer
         }
 
         if (fitted < 8)
-            return new GalaxyKinematics(objectId, z, line, 45, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-                "A = reject (insufficient pixels)");
+            return new GalaxyFullKinematics(objectId, z, line, 0, 0, 0, 45, 0, double.NaN,
+                0, 0, 0, 0, 0, 0, 0, 0, 0,
+                Array.Empty<RotationCurvePoint>(), fluxMap, velMap, snrMap, ni, nj);
 
         // Flux-weighted centre; PA from velocity gradient; disk fit.
         var (xc, yc) = FluxCentroid(fluxMap, ni, nj);
@@ -140,34 +156,33 @@ public static class HighZRarAnalyzer
         double arcsecPerPix = Math.Abs(FitsHeaderReport.SafeDouble(fluxHdu.Header, "CDELT2", 0)) * 3600.0;
         double kpcPerPix = KpcPerArcsec(z) * arcsecPerPix;
         double rturnKpc = disk.rturn_pix * kpcPerPix;
+        double deltaLambdaUm = Math.Abs(FitsHeaderReport.SafeDouble(fluxHdu.Header, "CDELT3", 0));
 
-        // Rotation curve (deprojected) for g_obs.
-        var rot = ExtractRotationCurve(velMap, snrMap, ni, nj, xc, yc, disk);
-        var (gobs, rlast) = Gobslast(rot, kpcPerPix);
+        // Rotation curve (deprojected, with MAD errors) for g_obs.
+        var rotPix = ExtractRotationCurve(velMap, snrMap, ni, nj, xc, yc, disk);
+        var rot = rotPix.Select(p => new RotationCurvePoint(
+            Math.Round(p.r_pix * kpcPerPix, 3),
+            Math.Round(p.vrot_kms, 1),
+            Math.Round(p.err_kms, 1),
+            p.npix)).ToArray();
 
-        // Fit quality (0..1): coherent rotation amplitude + S/N + sampling +
-        // coherence (rotation vs residual). Turbulence inflates the velocity
-        // SPAN, so Vmax (not span) is the physical rotation signal.
-        double fitQuality = Math.Clamp(
-            0.35 * Math.Min(1, disk.vmax_kms / 250.0)
-          + 0.20 * Math.Min(1, snr90 / 50.0)
-          + 0.25 * Math.Min(1, good / 100.0)
-          + 0.20 * Math.Min(1, disk.vmax_kms / Math.Max(rms, 20.0)), 0, 1);
+        double totalFlux = SumPositive(fluxMap);
 
-        string classification = Classify(disk.inclination_deg, velSpan, snr90, disk.vmax_kms, fitQuality);
-
-        return new GalaxyKinematics(
+        return new GalaxyFullKinematics(
             objectId, z, line,
-            Math.Round(disk.inclination_deg, 1),
+            Math.Round(disk.vsys_kms, 1),
             Math.Round(disk.vmax_kms, 1),
             Math.Round(rturnKpc, 2),
-            Math.Round(velSpan, 0),
-            Math.Round(fitQuality, 3),
-            Math.Round(snr90, 1),
-            good,
+            Math.Round(disk.inclination_deg, 1),
+            Math.Round(disk.pa_deg, 1),
+            disk.chi2,
             Math.Round(rms, 1),
-            Math.Round(disk.vsys_kms, 1),
-            gobs, rlast, classification);
+            Math.Round(velSpan, 0),
+            Math.Round(snr90, 1),
+            good, fitted,
+            totalFlux,
+            kpcPerPix, arcsecPerPix, deltaLambdaUm,
+            rot, fluxMap, velMap, snrMap, ni, nj);
     }
 
     // ---------------------------------------------------------------------
@@ -300,16 +315,25 @@ public static class HighZRarAnalyzer
         return best;
     }
 
-    private static (double gobs_m_s2, double rlast_kpc) Gobslast(
-        (double r_pix, double vrot_kms, int npix)[] rot, double kpcPerPix)
+    private static (double gobs_m_s2, double rlast_kpc) Gobslast(RotationCurvePoint[] rot)
     {
         // Outermost reliable bin (npix >= 2): g_obs = V_rot^2 / r.
-        var last = rot.Where(p => p.npix >= 2).OrderByDescending(p => p.r_pix).FirstOrDefault();
-        if (last.npix < 2) return (double.NaN, double.NaN);
-        double rKpc = last.r_pix * kpcPerPix;
-        double v = last.vrot_kms;
+        var last = rot.Where(p => p.Npix >= 2).OrderByDescending(p => p.Radius_kpc).FirstOrDefault();
+        if (last.Npix < 2) return (double.NaN, double.NaN);
+        double rKpc = last.Radius_kpc;
+        double v = last.Vrot_kms;
         double gobs = 3.241e-14 * v * v / rKpc;   // km/s, kpc -> m/s^2
         return (gobs, rKpc);
+    }
+
+    /// <summary>Coherent-rotation fit-quality score (0..1).</summary>
+    private static double FitQuality(double vmax, double rms, double snr, int good)
+    {
+        return Math.Clamp(
+            0.35 * Math.Min(1, vmax / 250.0)
+          + 0.20 * Math.Min(1, snr / 50.0)
+          + 0.25 * Math.Min(1, good / 100.0)
+          + 0.20 * Math.Min(1, vmax / Math.Max(rms, 20.0)), 0, 1);
     }
 
     // ---------------------------------------------------------------------
@@ -327,7 +351,7 @@ public static class HighZRarAnalyzer
         return "B = usable";
     }
 
-    private static (double r_pix, double vrot_kms, int npix)[] ExtractRotationCurve(
+    private static (double r_pix, double vrot_kms, double err_kms, int npix)[] ExtractRotationCurve(
         double[] velMap, double[] snrMap, int ni, int nj, double xc, double yc, DiskFit disk)
     {
         double sinI = Math.Sin(disk.inclination_deg * Math.PI / 180.0);
@@ -350,12 +374,13 @@ public static class HighZRarAnalyzer
             if (!bins.ContainsKey(bin)) bins[bin] = new List<double>();
             bins[bin].Add(vrot);
         }
-        var result = new List<(double, double, int)>();
+        var result = new List<(double, double, double, int)>();
         foreach (var kv in bins.OrderBy(k => k.Key))
         {
             var vals = kv.Value.OrderBy(x => x).ToArray();
             double med = Median(vals);
-            result.Add((kv.Key, med, vals.Length));
+            double mad = 1.4826 * Median(vals.Select(x => Math.Abs(x - med)).ToArray());
+            result.Add((kv.Key, med, mad, vals.Length));
         }
         return result.ToArray();
     }
@@ -664,5 +689,12 @@ public static class HighZRarAnalyzer
         if (a.Length == 0) return 0;
         int n = a.Length;
         return n % 2 == 1 ? a[n / 2] : 0.5 * (a[n / 2 - 1] + a[n / 2]);
+    }
+
+    private static double SumPositive(double[] map)
+    {
+        double s = 0;
+        foreach (var v in map) if (!double.IsNaN(v) && v > 0) s += v;
+        return s;
     }
 }

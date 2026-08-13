@@ -5261,3 +5261,24 @@ catalog candidates. Result: first 9-galaxy high-z RAR pilot sample.
 - The high-z galaxies (z≈1.8) place points at g†(z)/g†(0) ≈ 2.8 — exactly the
   regime where TQM (rising) and MOND (flat) separate. NEXT: stack the pilot
   sample and compare the g_obs(z) trend against g†(z)=c·H(z)/2π.
+
+**PHASE 117 — ResearchQG-071: High-z RAR Extraction Audit (honest negative):**
+First attempt to measure g†(z) directly from KMOS3D. Result: A = insufficient data.
+
+- Full extraction chain built and run end-to-end: rotation curve → g_obs=V²/r;
+  Hα→SFR (Kennicutt 4.6e-42)→M* (SFMS sSFR=0.4(1+z)² Gyr⁻¹)+Mgas (t_dep) → g_bar;
+  per-galaxy g† fit (g_obs=g_bar·√(1+g†/g_bar)); redshift bins; TQM vs MOND vs null
+  (χ²/AIC/BIC/Bayes factor); falsification.
+- 9 accepted galaxies produced g† estimates, but they scatter over ~4 orders of
+  magnitude (3e-13 .. 1e-8 m/s²) — unphysical for a universal scale.
+- ROOT CAUSE (the key scientific finding): the Hα→SFR→M* baryonic proxy is far too
+  crude (±0.3-1.0 dex). The apparent ANTI-correlation (g† decreasing with z, slope
+  ~-3 dex/z) is a SYSTEMATIC ARTIFACT: higher-z galaxies are more massive, sit in
+  the Newtonian regime (g_bar >> g†), and leave g† unconstrained (grid floor).
+- Honest verdict: g†(z) is NOT yet measurable with this baryonic model. Neither
+  TQM nor MOND is favored. Level 1 only (method demonstrated).
+- REQUIRED for progress: proper stellar M/L + gas masses (not an SFR proxy),
+  rotation-curve decomposition, and a sample spanning the deep-MOND (low g_bar)
+  regime across redshift.
+- Lesson: DATA-004's g†=cH₀/2π rests on SPARC's full mass models, NOT on an SFR
+  proxy. The KMOS3D archival route needs real mass modeling before it can test g†(z).
