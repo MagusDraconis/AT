@@ -1,0 +1,7 @@
+Mechanism,PredictedGdagger,RatioToA0,HasExactTwoPi,Matches,Falsifiable,Score
+Coincidence,NaN,1.00,0,1,0,1.5
+Mach-like,6.55E-010,5.46,0,0,1,0.5
+Cosmic-boundary,6.55E-010,5.46,0,0,1,0.5
+Causal-horizon,6.55E-010,5.46,0,0,1,0.5
+Information/holographic,1.04E-010,0.87,1,1,1,3.0
+Time-scale (QG-080),1.04E-010,0.87,1,1,0,3.0

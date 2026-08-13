@@ -1,0 +1,7 @@
+Rank,Mechanism,Description,Verdict,Score
+1,Information/holographic,entropic/holographic information flow; g† = cH/2π (2π from surface area),exact 2π; matches a0 within 15%; speculative but motivated,3.0
+2,Time-scale (QG-080),g† = c·d(ln γ)/dt/2π = cH/2π,EXACT 2π; matches within 15%; but = ΛCDM reinterpretation,3.0
+3,Coincidence,no coupling; a0 is a free fit parameter,cannot be excluded; ~10% chance; no explanation,1.5
+4,Mach-like,local inertia from global matter (Sciama); a_Mach ~ c²/R_H = cH,order-of-magnitude only; lacks 2π → 5.4× too large (EXCLUDED),0.5
+5,Cosmic-boundary,R_H = c/H as boundary; a_boundary ~ c²/R_H = cH,gives cH; lacks 2π → 5.4× too large (EXCLUDED),0.5
+6,Causal-horizon,causally connected volume sets a ~ c²/R_H,gives cH; lacks 2π → 5.4× too large (EXCLUDED),0.5

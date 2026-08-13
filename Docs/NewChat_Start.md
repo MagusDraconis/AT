@@ -5578,3 +5578,28 @@ but bounded to ~zero; g† is insensitive to it.
 - NEXT: the entire time-scale/clock line (QG-080–083) is now closed with a NEGATIVE for a
   distinct prediction. Return to the positive program: test g†=cH/2π in a NEW regime (dwarf
   dynamics, weak lensing, or a MOND a0 cross-check) where a distinct observable exists.
+
+**PHASE 131 — ResearchQG-084: Local–Cosmic Coupling Audit (Levels 1–4 pass, L5 partial):**
+Investigated WHY a local acceleration scale tracks a cosmic quantity (g† ≈ cH/2π).
+Result: the 2π factor is a falsifiable discriminator; coincidence is ~10% but not excluded.
+
+- Dimensional analysis: g†=cH0/2π=1.04e-10, a0(MOND)=1.2e-10, galactic GM/R²=1.39e-10 cluster
+  at ~1–1.4e-10; cH0=6.5e-10, c²√Λ=9.4e-10, c/t0=6.9e-10 cluster at ~6.5–9.4e-10. The 2π
+  separates the two clusters.
+- Coincidence (no coupling, log-uniform 4-decade prior): P(a0 within ±15% of cH0/2π)=3%,
+  look-elsewhere (4 cosmic scales) ~12%. Real but NOT compelling.
+- Mechanism evaluation: Mach/boundary/causal-horizon give g†~cH (no 2π) = 5.4× too large →
+  EXCLUDED. Information/holographic and time-scale give g†=cH/2π (with 2π) → match a0 within
+  15% → SURVIVE. The 2π factor is a genuine falsifiable discriminator of the coupling.
+- Ranking: Information/holographic (3.0) ≈ Time-scale (3.0) > Coincidence (1.5) > Mach/
+  boundary/causal (0.5, excluded).
+- VERDICT: Levels 1–4 PASS (mechanisms, coincidence quantified, consistent mechanism, explains
+  local-tracks-H via clock log-acceleration). Level 5 PARTIAL: 2π excludes no-2π mechanisms,
+  but survivors converge on g† ∝ H (TQM's existing mass-limited test). The time-scale
+  mechanism (QG-080) is cleanest but is a ΛCDM reinterpretation; information is speculative.
+- Outputs: NaturalAccelerationScales.csv, CouplingModelComparison.csv, CoincidenceProbability.csv,
+  LocalCosmicMechanisms.csv (Data/derived) + 3 PNGs; 5 source files + test.
+- NEXT: the "origin of g†" question is now mapped (2π selects time-scale/information). The
+  decisive test remains the g†(z) EVOLUTION (g† ∝ H vs a0 constant), which is mass-limited
+  (QG-079). Return to it only with next-gen resolved data, or pursue a distinct observable
+  in dwarf dynamics / weak lensing.
