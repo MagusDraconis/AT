@@ -5436,3 +5436,25 @@ Result: Level 2 = dominant hidden systematic isolated; it is KINEMATIC COHERENCE
   HiddenSystematicsRanking.csv + 4 PNGs.
 - NEXT: build a kinematic-quality cut (span/χ²/rms thresholds) and re-run the RAR stack
   on only the cleanest rotation curves, or defer g†(z) to Euclid/Rubin resolved samples.
+
+**PHASE 125 — ResearchQG-078: Gold Sample Kinematic Purity Audit (purity rejected as lever):**
+Tested whether a high-purity kinematic subset reduces the g† scatter below the TQM signal.
+Result: BELOW Level 1 — kinematic purity does NOT reduce scatter; it slightly INCREASES it.
+
+- Built KinematicPurityScore = 0.30·SNR/50 + 0.25·span/300 + 0.15·extent/2 +
+  0.20·(1−rms/Vmax) + 0.10·(1−log₁₀(χ²+1)/6), ranked 45 constrained galaxies, nested
+  samples (100/75/50/25/10%).
+- KEY NEGATIVE RESULT: scatter(log g†) does NOT fall with purity — it rises
+  0.58 → 0.59 → 0.61 → 0.62 → 0.71 dex. Extrapolated high-purity scatter = 0.76 dex.
+- Gold sample (top 11) has scatter 0.62 dex and MOND still preferred (Δχ² = −24.9);
+  TQM signal within the gold sample is only 0.13 dex (its redshift range is narrow).
+- CONCLUSION (reconciles QG-077): the velocity-span correlation is a BIAS (high-span
+  galaxies have systematically higher g†), NOT a scatter source. Selecting coherent
+  galaxies removes the low-g† population but does not shrink the remaining scatter,
+  which is intrinsic RAR diversity + baryonic-mass reconstruction. This CLOSES the
+  KMOS3D+COSMOS2015 route: no subset of this sample can discriminate MOND vs TQM at
+  current mass precision.
+- Outputs (persisted): GoldSampleCatalog.csv, PurityRanking.csv, ScatterVsPurity.csv + 3 PNGs.
+- NEXT (project-level): the g†(z)=cH(z)/2π test is NOT testable with KMOS3D archival data.
+  Options: (a) obtain resolved gas+stellar mass models for the best KMOS3D targets, or
+  (b) defer the RAR-evolution test to Euclid/Rubin/ELT resolved kinematics + SED masses.
