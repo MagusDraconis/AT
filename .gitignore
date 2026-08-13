@@ -367,3 +367,7 @@ FodyWeavers.xsd
 *.fits
 *.FITS
 *.fits.gz
+
+# Downloaded external photometric catalog (re-downloadable via the VizieR TAP
+# query documented in TQM_QG073_ExternalPhotometricCrossmatchAudit.cs).
+Data/COSMOS2015_KMOS3D_field.csv

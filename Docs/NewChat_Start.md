@@ -5319,3 +5319,23 @@ photometry, SED fits or COSMOS metadata. Result: A = no independent mass data fo
   KMOS3D galaxies. The SPARC BTFR prior remains the only route, and it is circular (QG-071).
   External photometric/SED catalogs are REQUIRED to test g†(z) decisively.
 - Outputs: FileInventory.csv + QG072_BaryonicMass_Report.txt.
+
+**PHASE 120 — ResearchQG-073: External Photometric Crossmatch Audit (success):**
+Queried the public COSMOS2015 catalog (VizieR J/ApJS/224/24) via TAP and matched it
+to the 275 KMOS3D targets. Result: C = high-z RAR sample available.
+
+- Downloaded the COSMOS2015 field subset (28,585 sources) via a TAP cone query over
+  the tight KMOS3D box (RA 150.02-150.23, DEC 2.16-2.50). Columns: RAJ2000, DEJ2000,
+  zPDF, MassMed (log M*), SFRMed, Rad.
+- Cross-match (nearest source within 1.5 arcsec): 272/275 (98.9%) KMOS3D targets
+  matched, median separation 0.08 arcsec (clean). Stellar masses log M* = 8.7-11.9,
+  median 10.4; SFR median log 1.37.
+- This BREAKS the QG-071 degeneracy: independent stellar masses (±0.15 dex) replace
+  the circular BTFR prior. g_bar(r) is now reconstructible without assuming g†.
+- Classification: C = high-z RAR sample available (263 galaxies with z>0.3 + M*).
+  D (direct TQM vs MOND) still needs gas masses (depletion-time relation) and a
+  re-derivation of M* at the KMOS3D spectroscopic z.
+- Output: KMOS3D_MassCatalog.csv (Object, RA, DEC, z, StellarMass, StellarMassErr,
+  SFR, Radius, SourceCatalog, SepArcsec, zPDF) + QG073 report.
+- NEXT: re-run the RAR extraction (QG-071) with COSMOS2015 masses instead of the
+  BTFR prior, to obtain the first non-circular g†(z) estimate.
