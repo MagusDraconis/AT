@@ -1,0 +1,6 @@
+ClockFamily,DriftDex,DEpsilonDLnA,CorrectionFactor,GdaggerLocal,GdaggerZ3
+Atomic,0.0E+000,0.0E+000,1.000000,1.04E-010,4.76E-010
+Nuclear,1.0E-006,7.2E-007,1.000001,1.04E-010,4.76E-010
+Gravitational,5.0E-003,3.6E-003,1.003607,1.05E-010,4.78E-010
+Orbital/Dynamical,1.0E-003,7.2E-004,1.000721,1.04E-010,4.76E-010
+Quantum,1.0E-006,7.2E-007,1.000001,1.04E-010,4.76E-010

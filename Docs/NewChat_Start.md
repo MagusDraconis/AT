@@ -5555,3 +5555,26 @@ observations without reducing to FLRW. Result: NO — γ=a is uniquely forced.
 - NEXT: the time-scale line (QG-080–082) is fully closed. The g†=cH/2π prediction must now
   be tested in a genuinely NEW observable regime (not a reinterpretation): e.g. an evolving
   a0 in dwarf/HSB galaxy dynamics, weak lensing, or a cross-check against MOND's a0.
+
+**PHASE 130 — ResearchQG-083: Cosmic Clock Non-Universality Audit (Levels 1–5 pass):**
+Tested whether different clock families (atomic/nuclear/gravitational/orbital/quantum) could
+evolve at slightly different rates, γ_i = a(1+ε_i). Result: clock non-universality is falsifiable
+but bounded to ~zero; g† is insensitive to it.
+
+- Clock families + drift bounds (ε_i over z=0→3): nuclear ≤1e-6 (Δα/α, Oklo), gravitational
+  ≤5e-3 (ΔG/G~1e-2, ε_G≈½ΔG/G), orbital ≤1e-3 (double pulsar), quantum ≤1e-6. Atomic defines z.
+- Consistency matrix: atomic↔nuclear ~1e-6, atomic↔gravitational ~5e-3 (LOOSEST), atomic↔orbital ~1e-3.
+- g†_i = cH/2π·(1+dε_i/d ln a): correction ≤0.4% (gravitational), ≪ observed RAR scatter
+  (0.57 dex ≈ 270%). g† = cH/2π is ESSENTIALLY clock-independent.
+- Falsifiable predictions (Level 5): GW–EM time-dilation comparison (standard siren GW waveform
+  = gravitational clock vs EM spectrum = atomic clock; a mismatch tests γ_G=γ_A at ~1%);
+  Δα/α many-multiplet; pulsar orbital decay. Current data bound all to ~zero.
+- VERDICT: Levels 1–5 all PASS (families defined, constraints, drift quantified, g† sensitivity
+  determined, falsifiable predictions identified). The Universe contains a single universal clock
+  to high precision; clock non-universality does NOT reopen the path beyond γ=a at any
+  observationally relevant level.
+- Outputs: ClockFamilyConstraints.csv, ClockConsistencyMatrix.csv, AllowedClockDrift.csv,
+  Gdagger_ClockFamilySensitivity.csv (Data/derived) + 4 PNGs; 4 source files + test.
+- NEXT: the entire time-scale/clock line (QG-080–083) is now closed with a NEGATIVE for a
+  distinct prediction. Return to the positive program: test g†=cH/2π in a NEW regime (dwarf
+  dynamics, weak lensing, or a MOND a0 cross-check) where a distinct observable exists.

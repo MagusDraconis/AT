@@ -1,0 +1,6 @@
+ClockFamily,Symbol,Mechanism,EpsilonOverZ03,Basis
+Atomic,A,electromagnetic transitions (α; m_e),0.0E+000,reference — defines z
+Nuclear,N,strong-force transitions / decays,1.0E-006,Δα/α ≲ 1e-6 (quasar many-multiplet); Oklo ≲1e-7
+Gravitational,G,free-fall / orbital timescale (G; ρ),5.0E-003,ΔG/G ≲ 1e-2 (BBN+CMB+lunar ranging); ε_G ≈ ½ΔG/G
+Orbital/Dynamical,D,Kepler orbits; pulsar binaries,1.0E-003,double pulsar GR orbital-decay test (~0.05%)
+Quantum,Q,quantum transition / phase evolution,1.0E-006,indistinguishable from atomic at current precision
