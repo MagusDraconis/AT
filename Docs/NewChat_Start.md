@@ -5302,3 +5302,20 @@ Result: A = insufficient data — now diagnosed as a FUNDAMENTAL degeneracy.
   mass models (HST/SED photometry, or Euclid/DESI/Rubin).
 - Outputs: HighZGalaxyCatalog.csv, Top20, RotationCurves/*.csv, RAR_HighZ_Fit.csv,
   Plots/{Local_RAR,HighZ_RAR,gdagger_vs_z,TQM_vs_MOND}.png.
+
+**PHASE 119 — ResearchQG-072: Baryonic Mass Reconstruction Audit (negative):**
+Searched the local Data folder for catalogs carrying stellar/gas/baryonic masses,
+photometry, SED fits or COSMOS metadata. Result: A = no independent mass data found.
+
+- File inventory: 283 files = 275 KMOS3D FITS cubes + 8 non-FITS datasets
+  (SPARC MassModels + sample, Rotmod zip, Pantheon+SH0ES, Coma Chandra x2, coma_v3344).
+- Candidate mass catalogs found: SPARC (L[3.6], MHI, Vgas/Vdisk/Vbul -> local masses),
+  Pantheon+SH0ES (HOST_LOGMASS = SN host stellar masses). Coma data: X-ray only, no masses.
+- Cross-match: 275 KMOS3D targets (OBJECT + RA/DEC from FITS headers) matched against
+  every catalog by object ID AND by position (RA/DEC and Pantheon HOST_RA/HOST_DEC,
+  within 3 arcsec). RESULT: 0 matches. No COSMOS/CANDELS/UltraVISTA/3D-HST catalog is
+  present; SPARC is local (z~0), Pantheon SN hosts are different galaxies.
+- CONCLUSION: the local Data folder CANNOT provide independent baryonic masses for the
+  KMOS3D galaxies. The SPARC BTFR prior remains the only route, and it is circular (QG-071).
+  External photometric/SED catalogs are REQUIRED to test g†(z) decisively.
+- Outputs: FileInventory.csv + QG072_BaryonicMass_Report.txt.
