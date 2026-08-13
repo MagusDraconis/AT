@@ -157,6 +157,53 @@ public static class RARPlotter
         img.Save(path);
     }
 
+    public static void PlotLinear(string path, Series[] series,
+        double xmin, double xmax, double ymin, double ymax)
+    {
+        using var img = new Image<Rgb24>(W, H);
+        for (int y = 0; y < H; y++)
+        for (int x = 0; x < W; x++) img[x, y] = White;
+
+        int ml = 60, mr = 20, mt = 20, mb = 50;
+        int Px(double v) => (int)(ml + (v - xmin) / (xmax - xmin) * (W - mr - ml));
+        int Py(double v) => (int)(H - mb - (v - ymin) / (ymax - ymin) * (H - mb - mt));
+
+        foreach (var s in series)
+        {
+            if (s.Line)
+            {
+                int prevX = -1, prevY = -1;
+                for (int i = 0; i < s.X.Length; i++)
+                {
+                    if (s.X[i] < xmin || s.X[i] > xmax || s.Y[i] < ymin || s.Y[i] > ymax) { prevX = -1; continue; }
+                    int px = Px(s.X[i]), py = Py(s.Y[i]);
+                    if (prevX >= 0) DrawLine(img, prevX, prevY, px, py, s.Color);
+                    prevX = px; prevY = py;
+                }
+            }
+            else
+            {
+                for (int i = 0; i < s.X.Length; i++)
+                {
+                    if (s.X[i] < xmin || s.X[i] > xmax || s.Y[i] < ymin || s.Y[i] > ymax) continue;
+                    int px = Px(s.X[i]), py = Py(s.Y[i]);
+                    int r = s.Size;
+                    for (int dy = -r; dy <= r; dy++)
+                    for (int dx = -r; dx <= r; dx++)
+                        if (dx * dx + dy * dy <= r * r)
+                        {
+                            int xx = px + dx, yy = py + dy;
+                            if (xx >= ml && xx < W - mr && yy >= mt && yy < H - mb) img[xx, yy] = s.Color;
+                        }
+                }
+            }
+        }
+
+        for (int x = ml; x < W - mr; x++) img[x, H - mb] = Black;
+        for (int y = mt; y < H - mb; y++) img[ml, y] = Black;
+        img.Save(path);
+    }
+
     private static int X(double lmin, double lmax, double lv, int ml, int mr) =>
         (int)(ml + (lv - lmin) / (lmax - lmin) * (mr - ml));
 

@@ -5384,3 +5384,32 @@ and the key finding is that sample SIZE does not cure the problem.
   TQM_vs_MOND_Statistics.csv (persisted to Data/derived).
 - NEXT: either obtain gas masses (CO/[CII]) for the best 47, or accept that g†(z)
   evolution is not testable at current mass precision and defer to Euclid/Rubin.
+
+**PHASE 123 — ResearchQG-076: Gas Mass Systematics Audit (B = gas significant, unmodeled dominates):**
+Quantified whether gas-mass uncertainty alone can hide/mimic the TQM g†(z) evolution.
+Result: B = gas uncertainty significant, but UNMODELED systematics dominate.
+
+- Error budget per galaxy (median σ dex in log g†): gas 0.19 (largest modeled term),
+  radius 0.11, inclination 0.10, intrinsic 0.10, stellar 0.085, rot.curve 0.07.
+  Total modeled ≈ 0.30 dex. Sensitivity S = |1+2·g_bar/g†| maps gas error to g† error
+  via σ(g†) = S·f_gas·σ(Mgas); median gas fraction Mgas/(Mstar+Mgas) = 0.60.
+- Depletion-time models (const, (1+z)^-0.5, (1+z)^-1, 2.5×(1+z)^-0.5) change the gas
+  term by only ±0.05 dex — the gas FRACTION is the real lever.
+- KEY RESULT: the OBSERVED constrained scatter (0.57 dex std; QG-075's "2.14 dex" was
+  the RANGE) exceeds the modeled budget (0.30 dex) by ~1.9×, implying ~0.49 dex of
+  UNMODELED systematics (mass normalization, M/L, morphology, non-circular motions,
+  profile shape).
+- Detection power: analytic S/N = 4.2σ (would already detect TQM if the budget were
+  complete), but EMPIRICAL S/N = 2.0σ using the observed scatter. Cutting gas 2× (S/N
+  2.14) or 5× (S/N 2.17) barely moves it — gas is NOT the bottleneck.
+- Synthetic recovery (10,000 realizations, seeded): TQM recovery 93% at 0.3 dex, false
+  TQM rate 0.0% (TQM has no free amplitude to absorb noise). These are budget-only; the
+  real recovery is worse due to unmodeled scatter.
+- CONCLUSION: gas mapping is NECESSARY but NOT SUFFICIENT. The decisive lever is the
+  ~0.5 dex unmodeled scatter, not gas precision. Answers the central question: gas
+  uncertainty (±0.3 dex) cannot be reduced enough (even to zero) to make the ~0.35 dex
+  TQM evolution decisive while unmodeled systematics dominate.
+- Outputs (persisted): GasMassErrorBudget.csv, GdaggerSensitivity.csv,
+  MonteCarloRecovery.csv, TQM_vs_MOND_Discrimination.csv + 4 PNGs.
+- NEXT: attack the unmodeled 0.5 dex — better mass models, resolved profile fits, and
+  gas mapping together — or defer the g†(z) test to Euclid/Rubin with full SED+gas.

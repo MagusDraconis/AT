@@ -1,0 +1,4 @@
+Model,chi2,AIC,BIC,BayesFactor
+TQM  (g† ∝ H(z)),215.52,215.52,215.52,0.0000
+MOND (g† = constant),155.13,157.13,158.98,1.0000
+NULL (g† = local),376.45,376.45,376.45,0.0000
