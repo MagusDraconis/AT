@@ -5692,3 +5692,25 @@ structural quantity evolves like H — structure is another reparametrization.
 - NEXT: the ENTIRE reinterpretation program (QG-080–088: time-scale, clock, event-count,
   event-structure) is conclusively closed — every alternative collapses to FLRW or is falsified.
   The positive program's single decisive test remains the g†(z) EVOLUTION (mass-limited).
+
+**PHASE 136 — ResearchQG-089: Cosmic Rate First Audit (rate-first is tautological; program CLOSED):**
+Tested whether H can be treated as a primitive rate from which time/scale-factor/redshift/a₀
+emerge. Result: rate-first is a tautological re-parameterization of FLRW — Levels 1–3 pass but
+trivially; Level 4 partial; Level 5 fails. This CLOSES the whole QG-080–089 reinterpretation program.
+
+- H and a are BIJECTIVE (information-equivalent): a(t)=exp(∫H dt), H=d ln a/dt, up to a(0)=1.
+  H carries no more information than a(t) or t.
+- 'Emergent time' t=∫dR⁻¹ is a tautology: a rate is a rate WITH RESPECT TO time, so R(t) already
+  requires t; reconstruction is exact by construction.
+- Redshift 1+z=exp(∫R dt)=a_obs/a_emit is identical to FLRW. a₀=c·R gives cH (no 2π) or cH/2π —
+  the same cH vs cH/2π ambiguity as QG-084/085, unresolved.
+- Links (thermal/relational/causal-set/computational time) all re-derive time as a gauge/clock,
+  not a new fundamental.
+- VERDICT: Level 1 PASS; Levels 2–3 PASS but tautological/equivalent; Level 4 PARTIAL (a₀=cH);
+  Level 5 FAIL. Rate-first is FLRW with H as the given function.
+- Outputs: RateFirstModels.csv, EmergentTimeFromRate.csv, EmergentExpansionFromRate.csv,
+  AccelerationFromRate.csv (Data/derived) + 1 PNG; Docs/RateFirstCosmology.md; 5 files + test.
+- PROGRAM CONCLUSION (QG-080–089): every "X-first" reinterpretation (expansion, time, clock,
+  event-count, event-structure, rate) collapses to FLRW or is falsified. NONE yields a distinct
+  prediction. The ONLY decisive, falsifiable TQM test remains the g†(z) EVOLUTION (g† ∝ H vs a₀
+  constant), which is mass-limited (QG-079) and requires next-gen resolved RAR data.
