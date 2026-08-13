@@ -39,6 +39,7 @@ public static class HighZRarAnalyzer
 
         string csvPath = Path.Combine(outDir, "HighZ_RotationCatalog.csv");
         WriteCsv(csvPath, accepted);
+        DerivedData.Persist(fitsDir, outDir, "HighZ_RotationCatalog.csv");
 
         return new HighZRarReport(
             BuildA(all.ToArray()),

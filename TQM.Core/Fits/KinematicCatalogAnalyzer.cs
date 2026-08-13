@@ -78,6 +78,7 @@ public static class KinematicCatalogAnalyzer
         string top20Path = Path.Combine(outDir, "Top20_KinematicCandidates.csv");
         WriteCatalogCsv(csvPath, rankedEntries);
         WriteTop20Csv(top20Path, rankedEntries.Take(20).ToArray(), rankedDetails.Take(20).ToArray());
+        DerivedData.Persist(fitsDir, outDir, "KMOS3D_KinematicCatalog.csv", "Top20_KinematicCandidates.csv");
 
         string top20Table = BuildTop20Table(rankedEntries.Take(20).ToArray(), rankedDetails.Take(20).ToArray());
         string summary = BuildSummary(rankedEntries, rankedDetails);

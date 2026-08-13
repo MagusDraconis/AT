@@ -54,6 +54,7 @@ public static class PhotometricCrossmatchAnalyzer
 
         string csv = Path.Combine(outDir, "KMOS3D_MassCatalog.csv");
         WriteMassCatalog(csv, matches);
+        DerivedData.Persist(fitsDir, outDir, "KMOS3D_MassCatalog.csv");
 
         return new PhotometricCrossmatchReport(
             BuildA(matches, targets.Count, cosmos.Count),
