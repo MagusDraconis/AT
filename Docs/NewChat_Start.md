@@ -5156,3 +5156,25 @@ Attempts to DERIVE dim(G)=3 from actualization/attractors WITHOUT observation. R
 - FINAL TAXONOMY (3 depths of mystery, all now classified): dim=3 (strong selection,
   unique), couplings (weak selection, band, QG-041), Koide 45° (no selection,
   isolated, QG-047). Nothing remains unexplained in its category. 67 QG.
+
+**PHASE 112 — ResearchQG-068: TQM Prediction Inventory Audit:**
+Honest scientific scorecard of the entire program. Classifies every claim.
+
+- METHODOLOGY: prediction = specific + falsifiable + novel. Excludes explanations,
+reinterpretations, compatibilities, selections, assumptions.
+- GENUINE PREDICTIONS (5 total, could have been wrong): 2 CONFIRMED — g†=cH₀/2π
+(SPARC, 0 free params, TQM's strongest) and anti-matter falls down (ALPHA-g 2023).
+3 UNTESTED — g†(z)=c·H(z)/2π, w(z)=-1+0.015(1+z)^(3/2), neutrino-Koide Q=2/3.
+- NEGATIVE PREDICTIONS (5 prohibitions): anti-gravity, stable local repulsive
+gravity, gravity manipulation, winding-sign coupling, counter-structure. All
+falsifiable; anti-gravity already confirmed (matter falls down).
+- REINTERPRETATIONS (~7, NOT predictions): Higgs=amplitude mode, G=C³, gravity=
+phase, inertia=attractor, Y=overlap, mass=architecture, particles=vortices.
+- DERIVATIONS (~20, structure not prediction): oscillation, U(1), gravity, inertia,
+particles, G geometry, G=ℓ²c³/ħ, c=ℓ/τ.
+- FALSIFICATION TESTS (4 direct): anti-matter free-fall (GBAR/AEGIS), neutrino-Koide,
+evolving RAR (KMOS3D), w(z) (Euclid). 2 passed, 2 pending.
+- OPEN PROBLEMS (4, all selections/contingent): Koide 45°, dim=3, couplings, minima.
+- Classification: B — MODERATE PREDICTIVE CONTENT. TQM = STRONG ONTOLOGY (explains
+WHY) + MODERATE prediction (2 confirmed). NOT "highly predictive" — most content
+is reinterpretation/structure. Honest scientific status after 68 audits. 68 QG.
