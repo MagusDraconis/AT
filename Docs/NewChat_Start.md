@@ -5506,3 +5506,28 @@ of ΛCDM, not a new theory.
 - NEXT: this closes the "time-scale" reinterpretation as non-predictive. The g†=cH/2π test
   remains: (a) a next-gen resolved-RAR measurement (QG-079), or (b) a distinct TQM prediction
   elsewhere (e.g. an evolving a0 in other regimes) that breaks the ΛCDM equivalence.
+
+**PHASE 128 — ResearchQG-081: Model Dependence Audit (Levels 1–4 pass, Level 5 fails):**
+Separated observation from interpretation in cosmology; mapped where the expanding-metric
+assumption is introduced. Result: expansion is an interpretation, not an observation.
+
+- DIRECTLY OBSERVED (model-light): redshift, flux, angular size, time dilation (SN b=1),
+  CMB T0=2.725K blackbody + C_l, surface brightness, source counts, line ratios.
+- INFERRED (FLRW): a(t), H(z), D_L, D_A, comoving χ, sound horizon r_s, Ωm/ΩΛ, dark energy,
+  proper distance, comoving volume.
+- Expansion enters at exactly 3 steps: D_L=(1+z)χ, D_A=χ/(1+z), and the Friedmann eqn for ΩΛ.
+  Redshift/flux/angle/dilation themselves are expansion-free; only their conversion to
+  distances needs the metric.
+- Dependency graph: z → a(t) → H(z) → distances → Ωm/ΩΛ → "dark energy" (4 nested FLRW
+  assumptions — the deepest, most model-dependent accepted conclusion).
+- Model-light islands: cosmic chronometers H(z)=−1/(1+z)dz/dt (no metric), Etherington
+  D_L=(1+z)²D_A (geometric), CMB blackbody.
+- VERDICT: Levels 1–4 PASS (obs/inference separated; assumptions identified; static+time
+  reconstruction viable via QG-080; ΩΛ/'dark energy' shown strongly model-dependent).
+  Level 5 FAIL: no new prediction — the time-first reframing relabels, not replaces, FLRW.
+- Outputs: Observables_vs_Inferences.csv, FLRW_Assumption_Map.csv (Data/derived);
+  Docs/{CosmologyDependencyGraph,ModelIndependentRedshift,TimeFirstCosmology}.md;
+  ModelDependenceAnalyzer.cs + test.
+- NEXT: the QG-080/081 line is exhausted (reinterpretation is sterile). Return to the
+  positive TQM program: find a distinct, falsifiable prediction of g†=cH/2π (e.g. an
+  evolving a0 observable in rotation curves, lensing, or a new regime).

@@ -1,0 +1,8 @@
+DerivedQuantity,AssumptionChain,FirstFLRWIntroduction
+flux → luminosity,F = L/(4π D_L²),metric surface area via D_L
+magnitude → D_L(z),m − M = 5 log₁₀(D_L/10 pc),D_L = (1+z)·χ (comoving χ)
+angular size → D_A(z),θ = s/D_A,D_A = χ/(1+z)
+D_A + r_s → H(z),θ_BAO = r_s/D_A,r_s (early universe) + comoving χ
+D_L(z) → ΩΛ,χ² fit to Friedmann D_L,Friedmann eqn + ΩΛ functional form
+redshift → a(t),1+z = a0/a,a(t) exists (metric expansion)
+growth → fσ8,δ̈ + 2H δ̇ = 4πG ρ δ,FLRW background H(t)

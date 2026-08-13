@@ -1,0 +1,20 @@
+Quantity,Type,RequiresFLRW,Probe,Notes
+redshift z,Observable,False,all,frequency ratio of spectral features
+apparent flux / magnitude,Observable,False,all,energy per area per time
+angular size θ,Observable,False,all,measured sky angle
+time dilation (SN stretch),Observable,False,SN Ia,light-curve width ∝ (1+z)^b; b=1 measured
+CMB temperature T0,Observable,False,CMB,2.725 K blackbody
+CMB angular spectrum C_l,Observable,False,CMB,peak positions (raw multipoles)
+surface brightness,Observable,False,all,flux / solid angle
+source counts N(S),Observable,False,surveys,number per flux bin
+line ratios / abundances,Observable,False,spectra,physics of emitting gas
+scale factor a(t),Inferred,True,all,a = 1/(1+z) under FLRW
+H(z),Inferred,True,all,chronometers nearly free; BAO/SNe assume FLRW
+luminosity distance D_L,Inferred,True,SN Ia,D_L = (1+z)·χ
+angular diameter distance D_A,Inferred,True,BAO/CMB,D_A = χ/(1+z)
+comoving distance χ,Inferred,True,all,χ = ∫ c dz / H(z)
+sound horizon r_s,Inferred,True,BAO/CMB,early-universe + recombination model
+Ωm, ΩΛ,Inferred,True,all,Friedmann-equation fit
+dark energy density,Inferred,True,SN Ia,the ΩΛ term itself
+proper distance,Inferred,True,all,a(t)·χ
+comoving volume,Inferred,True,surveys,dV = χ²dχ/H(z)
