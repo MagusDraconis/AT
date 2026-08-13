@@ -5178,3 +5178,22 @@ evolving RAR (KMOS3D), w(z) (Euclid). 2 passed, 2 pending.
 - Classification: B — MODERATE PREDICTIVE CONTENT. TQM = STRONG ONTOLOGY (explains
 WHY) + MODERATE prediction (2 confirmed). NOT "highly predictive" — most content
 is reinterpretation/structure. Honest scientific status after 68 audits. 68 QG.
+
+**PHASE 113 — ResearchQG-069: Prediction Priority Audit:**
+Ranks remaining predictions by falsifiability × feasibility. Determines the single most important experiment.
+
+- RANKING: #1 Evolving RAR g†(z)=c·H(z)/2π (KMOS3D archival, <1 yr, ~free, priority
+0.86). #2 Anti-matter gravity (GBAR/AEGIS, running, 1-3 yr, 0.68). #3 Neutrino-Koide
+(DUNE/Hyper-K, 5-10 yr, 0.38). #4 Dark energy w(z) (Euclid/DESI, 5-10 yr, 0.32).
+- THE SINGLE MOST IMPORTANT EXPERIMENT: g†(z). Fastest (<1 yr, archival), cheapest
+(~free), strongest (tests a DERIVED number g†, uniquely distinguishes TQM from
+MOND constant-g† and ΛCDM no-RAR). Sharpest discriminator.
+- Dependency: g†(z) failure = CATASTROPHIC (DATA-004 core collapses). Anti-matter
+falling up = CATASTROPHIC (GR+EP+TQM collapse). Neutrino-Koide fail = MODERATE
+(refinement to charged-lepton-only). w(z) fail = MODERATE (QG-004 already partial).
+- HONEST WEAKNESS: TQM's core (Q, Randomness, triple) is UNFALSIFIABLE (primitives).
+Falsifiability is concentrated in the DERIVED predictions. g†(z) is the sharpest.
+- ROADMAP: Phase 1 (0-12 mo) g†(z) archival; Phase 2 (1-3 yr) GBAR; Phase 3 (5-10
+yr) neutrino-Koide; Phase 4 (5-10 yr) w(z).
+- Classification: B — MODERATELY TESTABLE. Core unfalsifiable; derived predictions
+testable. g†(z) is the highest-value experiment — fund it first. 69 QG.
