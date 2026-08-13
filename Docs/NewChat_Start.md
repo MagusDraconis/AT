@@ -5482,3 +5482,27 @@ a lack of signal, and is decisively reachable with next-generation resolved data
 - Outputs (persisted): SignalBudget.csv, DetectabilityThresholds.csv, RequiredPrecision.csv + 2 PNGs.
 - NEXT: either (a) write a Euclid/ELT/JWST forecast proposal, or (b) return to TQM theory
   work — the archival RAR route is now conclusively characterized as mass-limited.
+
+**PHASE 127 — ResearchQG-080: Time-Scale Cosmology Audit (Levels 1–4 pass, Level 5 fails):**
+Tested whether cosmic expansion can be reinterpreted as evolution of physical time, and
+whether g† = cH/2π emerges naturally. Result: it is a self-consistent REINTERPRETATION
+of ΛCDM, not a new theory.
+
+- Model: two times t (coordinate) and τ (physical) with clock rate γ = dτ/dt; static comoving
+  space (da/dτ = 0). KEY RESULT: with γ(t)=a(t), τ is conformal time η=∫a dt, and the physical
+  metric is FLRW in conformal coordinates — observationally equivalent to ΛCDM.
+- Redshift: 1+z = γ_obs/γ_emit = a_obs/a_emit (from frequency shift of a fixed physical clock).
+  Time dilation Δτ_obs = (1+z)Δτ_emit — MATCHES SN Ia (b=+1). A "strong" TSC (γ≠a, clocks faster
+  in past) gives INVERSE dilation b=−1, excluded at 40σ by observed b=1.00±0.05.
+- g† derivation: d(ln γ)/dt = γ̇/γ = H, so g† = c·d(ln γ)/dt/2π = c·(τ̈/τ̇)/2π = cH/2π. g†(0)=1.04e-10,
+  rising to 6.60e-10 m/s² at z=4. (Corrected the task's "d(ln τ)/dt" — should be d(ln γ)/dt.)
+- VERDICT: Levels 1–4 PASS (self-consistent, redshift+dilation, g†∝H exact, g† = clock
+  log-acceleration explains why a local scale tracks global time). Level 5 FAILS: TSC is either
+  equivalent to ΛCDM or falsified — NO distinct falsifiable prediction. Its value is INTERPRETIVE,
+  not predictive; it does NOT independently confirm TQM.
+- Outputs: Docs/{TimeScaleCosmology,TimeScaleEquations,DerivedObservables,RAR_TimeInterpretation,
+  Predictions}.md; TQM.Core/ResearchQG/{TimeScaleModel,CosmicClock,TimeDrivenRedshift,
+  GdaggerTimeDerivation}.cs; test TQM_QG080_TimeScaleCosmologyAudit.
+- NEXT: this closes the "time-scale" reinterpretation as non-predictive. The g†=cH/2π test
+  remains: (a) a next-gen resolved-RAR measurement (QG-079), or (b) a distinct TQM prediction
+  elsewhere (e.g. an evolving a0 in other regimes) that breaks the ΛCDM equivalence.
