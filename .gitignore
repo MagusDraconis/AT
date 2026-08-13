@@ -361,3 +361,9 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+
+# Astronomy FITS data files (large binary cubes) are not committed.
+# See Data/FitsData/info.txt for the download source.
+*.fits
+*.FITS
+*.fits.gz

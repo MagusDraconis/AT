@@ -10,7 +10,7 @@ public class TQM_FitsAnalyzerTests : ResearchTestBase
     public void Fits_Kmos3D_COS4_25850_H_Analysis()
     {
         Thread.CurrentThread.CurrentCulture = CultureInfo.InvariantCulture;
-        string path = LocateFitsFile("Data", "COS4_25850_H.fits");
+        string path = LocateFitsFile("Data", "FitsData", "COS4_25850_H.fits");
         Assert.True(File.Exists(path), $"FITS file not found: {path}");
 
         var sb = new StringBuilder();

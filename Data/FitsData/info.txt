@@ -1,0 +1,56 @@
+KMOS3D Data — FITS files
+========================
+
+This directory holds KMOS3D survey data cubes in FITS format.
+
+IMPORTANT: The *.fits files in this directory are NOT committed to
+version control (see the repository .gitignore: *.fits). Only this
+info.txt is tracked. Re-download the cubes from the source below when
+needed.
+
+Source / download:
+    https://www.mpe.mpg.de/ir/KMOS3D/data
+
+About KMOS3D
+------------
+KMOS3D (Wisnioski et al. 2015, 2019) is a survey of ~740 star-forming
+galaxies at z ~ 0.7-2.7, observed with the KMOS integral-field
+spectrograph on the VLT. It provides resolved H-alpha and [NII]
+kinematics (velocity fields, dispersion maps, rotation curves).
+
+Per-galaxy data products include:
+  - flux cube   (science; 3D: RA x Dec x wavelength)
+  - noise cube  (per-channel uncertainty)
+  - exposure map
+  - PSF image
+plus derived kinematic maps in the reduced releases.
+
+Why this data is used by TQM
+----------------------------
+These cubes feed TQM's galaxy-kinematics analysis and the QG-070
+RAR-evolution test. TQM predicts the RAR acceleration scale grows with
+redshift:
+
+    g†(z) = c · H(z) / (2π)
+
+so the acceleration scale measured from a galaxy's rotation curve at
+redshift z should scale as
+
+    g†(z) / g†(0) = sqrt(Ωm·(1+z)^3 + ΩΛ).
+
+A high-z rotation curve (e.g. from H-alpha kinematics) is the sharpest
+single test distinguishing TQM (evolving g†) from MOND (constant a0)
+and LCDM (no fundamental scale).
+
+Current file(s)
+---------------
+  COS4_25850_H.fits   H-band cube, object COS4_25850 (z ~ 1.80).
+                      5 HDUs: primary + flux + noise + exposure + PSF.
+                      Wavelength 1.425-1.867 um (14250-18668 A),
+                      spectral resolution R ~ 2100-5200, flux units
+                      1e-17 W/m^2/um.
+
+How to analyze a cube
+---------------------
+  TQM.Core.Fits.FitsAnalyzer.Analyze(path)  (C#, CSharpFITS / nom.tam.fits)
+  or run the test TQM_FitsAnalyzerTests in TQM.Tests/ResearchQG/.
