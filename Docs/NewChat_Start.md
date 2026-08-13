@@ -5458,3 +5458,27 @@ Result: BELOW Level 1 — kinematic purity does NOT reduce scatter; it slightly 
 - NEXT (project-level): the g†(z)=cH(z)/2π test is NOT testable with KMOS3D archival data.
   Options: (a) obtain resolved gas+stellar mass models for the best KMOS3D targets, or
   (b) defer the RAR-evolution test to Euclid/Rubin/ELT resolved kinematics + SED masses.
+
+**PHASE 126 — ResearchQG-079: Detectability Limit Audit (C = observable with next-gen data):**
+Determined the theoretical detectability limit of the TQM evolution signal. Result: C —
+the signal is NOT fundamentally too small; it is hidden by mass reconstruction, not by
+a lack of signal, and is decisively reachable with next-generation resolved data.
+
+- TQM signal amplitude Δlog g† = ½ log₁₀[Ωm(1+z)³+ΩΛ]: 0 (z=0), 0.12 (z=0.5), 0.25 (z=1),
+  0.37 (z=1.5), 0.48 (z=2), 0.66 (z=3), 0.80 (z=4). Full z=0→2 span ≈ 0.48 dex.
+- Signal leverage (std of Δ across the actual 47-galaxy sample) = 0.169 dex vs intrinsic
+  RAR scatter 0.10 dex → ratio 1.7×. Observed scatter 0.568 dex → current S/N = 2.04 (marginal 2σ).
+- Detection thresholds (with the current z distribution): 5σ needs per-galaxy σ ≤ 0.232 dex,
+  or N = 282 (at observed 0.568), 79 (at 0.30 dex baryonic), 9 (at intrinsic 0.10 dex).
+  3σ needs σ ≤ 0.387 dex or N = 28 at 0.30 dex.
+- Required precision for 5σ: reducible mass/profile budget must improve ~1.35× uniformly
+  (gas 0.19→0.14, radius 0.11→0.08, stellar 0.085→0.06 dex).
+- Facility forecast (order-of-magnitude, σ~0.10 dex): ELT/HARMONI+ALMA (N=200) → 24σ;
+  JWST/NIRSpec+ALMA (N=100) → 17σ; Rubin+ELT (N=1000, σ=0.15) → 36σ. Euclid has no resolved
+  kinematics → not directly applicable.
+- CONCLUSION: g†(z)=cH(z)/2π is ~1.7× the intrinsic RAR scatter, so it is observable in
+  principle; ELT/JWST IFU + ALMA gas masses reach ≫5σ. The KMOS3D+COSMOS2015 failure
+  (QG-075–078) is a MASS-PRECISION failure, not a fundamental detectability failure.
+- Outputs (persisted): SignalBudget.csv, DetectabilityThresholds.csv, RequiredPrecision.csv + 2 PNGs.
+- NEXT: either (a) write a Euclid/ELT/JWST forecast proposal, or (b) return to TQM theory
+  work — the archival RAR route is now conclusively characterized as mass-limited.
