@@ -5359,3 +5359,28 @@ Result: A = inconclusive.
 - REQUIRED for C/D: a larger sample (all 272 mass-matched galaxies need rotation
   curves), gas mapping (CO or [CII]) to pin down Mgas, and a stack over many galaxies
   to beat the per-galaxy scatter. The methodology is now proven non-circular.
+
+**PHASE 122 — ResearchQG-075: Large-Sample High-z RAR Audit (scaled 8→98, still inconclusive):**
+Scaled the QG-074 pipeline to the full KMOS3D + COSMOS2015 sample. Result: A = inconclusive —
+and the key finding is that sample SIZE does not cure the problem.
+
+- Ran full kinematics (rotation curves) on all mass-matched galaxies with SNR≥8 and
+  inclination≥25: 98 galaxies produced a g† estimate (66 usable + 32 marginal, by
+  SNR/inclination/velocity-span). Up from 8 in QG-074.
+- Added a "constrained" gate: a per-galaxy g† only counts if the fit is interior to
+  the grid (not floor/ceiling-degenerate). 47/98 galaxies survive this gate.
+- KEY NEGATIVE RESULT: the full-sample g† scatter is 5 dex (all) / 2.14 dex
+  (constrained) — LARGER than QG-074's 1.7 dex, not smaller. Most added galaxies have
+  rotation curves too short or masses too uncertain to bracket the RAR transition
+  (g_obs << g_bar => g† floor-degenerate; g_obs >> g_bar => baryons underestimated).
+- Redshift bins are non-monotonic (median g†: 3.3e-10 → 5.0e-10 → 3.2e-10 → 1.4e-9),
+  consistent with no measurable evolution. MOND (constant) still nominally preferred
+  (χ² 688 vs 1059), but scatter (2.14 dex) dwarfs the TQM evolution signal (~0.35 dex).
+- CONCLUSION (consistent with QG-072): the bottleneck is BARYONIC MASS reconstruction
+  (gas ±0.3 dex, M/L, profile shape), NOT kinematics. Scaling from 8→98 galaxies does
+  not by itself yield a decisive g†(z) test. A decisive test requires gas mapping
+  (CO/[CII]) and/or a many-galaxy stack with well-characterized mass systematics.
+- Outputs: HighZ_RAR_LargeSample.csv (98 rows incl. Constrained flag), gdagger_vs_z.csv,
+  TQM_vs_MOND_Statistics.csv (persisted to Data/derived).
+- NEXT: either obtain gas masses (CO/[CII]) for the best 47, or accept that g†(z)
+  evolution is not testable at current mass precision and defer to Euclid/Rubin.
