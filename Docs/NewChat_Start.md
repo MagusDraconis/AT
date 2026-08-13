@@ -5339,3 +5339,23 @@ to the 275 KMOS3D targets. Result: C = high-z RAR sample available.
   SFR, Radius, SourceCatalog, SepArcsec, zPDF) + QG073 report.
 - NEXT: re-run the RAR extraction (QG-071) with COSMOS2015 masses instead of the
   BTFR prior, to obtain the first non-circular g†(z) estimate.
+
+**PHASE 121 — ResearchQG-074: First Direct High-z g† Measurement (inconclusive):**
+Combined COSMOS2015 stellar masses with KMOS3D rotation curves to reconstruct
+g_bar(r) NON-circularly (stellar exponential + gas depletion time, no BTFR).
+Result: A = inconclusive.
+
+- 8 galaxies usable (9 with rotation curves; 1 dropped). g_bar = G(M*(<r)+Mgas(<r))/r²
+  with M* from COSMOS2015 (±0.15 dex), Re from COSMOS2015 (exponential disk),
+  Mgas = SFR × 1.5(1+z)^-0.5 Gyr (±0.3 dex).
+- Per-galaxy g† (TQM form, free g†): 5 constrained (σ<0.8), 3 hit the grid floor
+  (Newtonian regime, g_bar >> g†). Constrained g† = 1.3e-10 .. 6.9e-9 m/s².
+- KEY PROGRESS vs QG-071: the independent stellar mass broke the circularity —
+  per-galaxy g† scatter fell from ~4 dex (SFR proxy) to ~1.7 dex. But it is still
+  not decisive.
+- Model comparison: MOND (constant) nominally fits better (χ² 189 vs 351), but the
+  scatter is dominated by gas-mass (±0.3 dex), inclination, and the small sample.
+  No significant preference. Verdict: A = inconclusive.
+- REQUIRED for C/D: a larger sample (all 272 mass-matched galaxies need rotation
+  curves), gas mapping (CO or [CII]) to pin down Mgas, and a stack over many galaxies
+  to beat the per-galaxy scatter. The methodology is now proven non-circular.

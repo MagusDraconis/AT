@@ -66,8 +66,10 @@ public static class HighZRARExtractionAnalyzer
 
         // Write output CSVs.
         WriteRarFitCsv(Path.Combine(outDir, "RAR_HighZ_Fit.csv"), rarFits.ToArray());
-        WriteRotationCurveCsvs(Path.Combine(outDir, "RotationCurves"), rcData);
+        string rotDir = Path.Combine(outDir, "RotationCurves");
+        WriteRotationCurveCsvs(rotDir, rcData);
         DerivedData.Persist(fitsDir, outDir, "RAR_HighZ_Fit.csv");
+        DerivedData.PersistDirectory(fitsDir, rotDir, "RotationCurves");
 
         return new HighZRARExtractionReport(
             BuildA(meta, acceptedIds, rarFits.ToArray()),
