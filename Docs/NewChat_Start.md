@@ -5671,3 +5671,24 @@ Result: only N = a reproduces H(z); event density is just another clock, not new
 - NEXT: the reinterpretation program (QG-080–087: time-scale, clock, event-density) is fully
   closed — every "expansion-first vs X-first" alternative collapses to FLRW or is falsified.
   The positive program's single decisive test remains the g†(z) EVOLUTION (mass-limited).
+
+**PHASE 135 — ResearchQG-088: Event Structure Cosmology Audit (structure is another clock):**
+Tested whether cosmology can be driven by evolving event STRUCTURE (connectivity, complexity,
+causal density, network dimension) rather than event count or metric expansion. Result: no
+structural quantity evolves like H — structure is another reparametrization.
+
+- Structural variables S ∝ a^p with H_S = p·H: node/link count p=3 (3H), average degree p=0,
+  clustering p=−9/4 (−2.25H), path length p≈0, network dimension p=0, causal density p=0.
+  Only the scale factor S=a has p=1 (H_S=H). No structural quantity reproduces H(z).
+- Redshift 1+z = S_obs/S_emit = (1+z)^p: only p=1 works; p=3 (node count) gives (1+z)³, excluded.
+- a₀ = c·p·H: all give ~cH (or 3cH), the 'cH class' (no 1/2π), order only.
+- Links: causal-set dimension d=4 is FIXED; quantum graphity is static; holographic entropy ∝
+  area (not H). Structure motivates but does not replace expansion.
+- VERDICT: Level 1 PASS; Level 2 FAIL (no S gives H); Level 3 PARTIAL (a₀=cH); Level 4 PASS but
+  reparametrization; Level 5 FAIL. The causal-information network picture is observationally
+  equivalent to FLRW (or falsified), consistent with QG-080–087.
+- Outputs: EventStructureModels.csv, StructuralEvolutionRates.csv, EmergentCosmologyComparison.csv,
+  A0_FromStructure.csv (Data/derived) + 1 PNG; Docs/EventStructureCosmology.md; 5 files + test.
+- NEXT: the ENTIRE reinterpretation program (QG-080–088: time-scale, clock, event-count,
+  event-structure) is conclusively closed — every alternative collapses to FLRW or is falsified.
+  The positive program's single decisive test remains the g†(z) EVOLUTION (mass-limited).

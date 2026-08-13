@@ -1,0 +1,9 @@
+Variable,PowerP,MatchesH,RedshiftAtZ1
+node count N,3.00,0,8.000
+link count E,3.00,0,8.000
+average degree k̄,0.00,0,1.000
+clustering C,-2.25,0,0.210
+path length L,0.00,0,1.000
+network dimension d,0.00,0,1.000
+causal density ρ_c,0.00,0,1.000
+scale factor S = a,1.00,1,2.000

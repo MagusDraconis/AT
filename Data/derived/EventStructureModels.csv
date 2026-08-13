@@ -1,0 +1,9 @@
+Variable,ScalingWithA,PowerP,SourceNetwork
+node count N,a³ (4-volume),3.00,causal set
+link count E,a³ (E ∝ N),3.00,causal set
+average degree k̄,const,0.00,all growing graphs
+clustering C,N^-3/4 = a^-9/4,-2.25,scale-free (BA)
+path length L,ln a,0.00,small-world
+network dimension d,const (d=4),0.00,causal set
+causal density ρ_c,const,0.00,causal set
+scale factor S = a,a,1.00,(reparametrization)
