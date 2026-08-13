@@ -1,0 +1,12 @@
+Level,Quantity,Value
+fundamental,c = 3.0E+008 m/s,,
+fundamental,G = 6.67E-011,,
+fundamental,hbar = 1.05E-034,,
+fundamental,Lambda = 1.10E-052,,
+derived,Planck length,1.62E-035 m
+derived,Planck acceleration,5.56E+051 m/s²
+cosmological,cH0,6.55E-010 m/s²
+cosmological,c²√Λ,9.43E-010 m/s²
+cosmological,c/t0,6.88E-010 m/s²
+galactic,GM/R²,1.39E-010 m/s²
+observed,a0 (MOND),1.20E-10 m/s²

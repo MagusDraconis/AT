@@ -5624,3 +5624,27 @@ Result: NUMERICAL ACCIDENT — the data do NOT uniquely select 2π.
   The ONLY remaining decisive test is the g†(z) EVOLUTION (g† ∝ H vs a0 constant), which is
   mass-limited (QG-079). The program should either (a) pursue that with next-gen data, or (b)
   pivot to a genuinely distinct TQM observable elsewhere.
+
+**PHASE 133 — ResearchQG-086: Fundamental Acceleration Scale Audit (a₀ is emergent/cosmological):**
+Investigated WHY a ~1e-10 m/s² universal acceleration scale exists at all, independent of
+MOND/TQM implementation. Result: a₀ is EMERGENT (cosmological), not fundamental — all 5 levels pass.
+
+- Acceleration landscape (log10 a): Planck 51.75, Earth orbit −2.23, galactic GM/R² −9.86,
+  cluster −10.86, a₀(MOND) −9.92, g† −9.98, cH −9.18, c²√Λ −9.03, c/t −9.16. a₀ sits in the
+  GALACTIC/COSMOLOGICAL band (−11..−9), ~61 decades below Planck.
+- Dimensional reduction: a₀ CANNOT be formed from {c, G, ħ} alone (a_P=c²/l_P=5.6e51); it
+  requires a cosmological rate. a₀ = c×(cosmic rate), with H≈2.2e-18, √Λ·c≈3.1e-18, 1/t≈2.3e-18 s⁻¹.
+- Origin hypotheses ranked: Cosmological (cH) 2.6 > (c²√Λ) 2.3 > (c/t) 2.0 > Information 1.8 >
+  Emergent/MOND 1.7 > Quantum 1.5 > Coincidence 0.6. Cosmological origin has 0 free parameters.
+- KEY: the cosmological origin has THREE sub-variants with DIFFERENT evolution — cH (rising ∝H,
+  TQM), c²√Λ (constant, =MOND at evolution level), c/t (rising, different slope). The EVOLUTION
+  test distinguishes them and separates ALL cosmological origins from MOND (constant).
+- VERDICT: Levels 1–5 all PASS. a₀ is not a fundamental constant; it is c×(cosmic rate), which is
+  why it coincides with cH/c²√Λ/galactic GM/R². The unique falsifiable prediction is a₀ EVOLUTION
+  (∝ H vs constant) — the mass-limited g†(z) test of QG-075–079.
+- Outputs: AccelerationLandscape.csv, AccelerationOriginRanking.csv, FundamentalScaleHierarchy.csv,
+  CoincidenceAnalysis.csv, UniquePredictions.csv (Data/derived) + 3 PNGs; 5 source files + test.
+- NEXT: the "origin of a₀" investigation (QG-084–086) is complete: a₀ is a cosmological scale
+  with a 0-parameter origin (cH), and its evolution is the decisive discriminator. The program's
+  single decisive test remains the g†(z) EVOLUTION (mass-limited), plus the cH vs c²√Λ vs c/t
+  sub-discrimination — all requiring next-gen resolved RAR data.
