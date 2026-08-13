@@ -1,0 +1,6 @@
+Model,A0_m_s2,RatioToObservedA0
+N = a (FLRW),6.55E-010,5.5
+N ∝ t (linear),6.88E-010,5.7
+N ∝ t^n (n=2),1.38E-009,11.5
+N ∝ e^{λt} (exponential),6.55E-010,5.5
+N ∝ ln t (saturation),6.55E-010,5.5

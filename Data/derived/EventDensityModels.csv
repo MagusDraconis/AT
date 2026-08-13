@@ -1,0 +1,6 @@
+Model,NOfT,HEventZ0,HEventZ1,HEventZ2
+N = a (FLRW),a(t),2.18E-018,3.91E-018,6.62E-018
+N ∝ t (linear),t/t0,2.30E-018,4.59E-018,6.89E-018
+N ∝ t^n (n=2),(t/t0)^2,4.59E-018,6.49E-018,7.95E-018
+N ∝ e^{λt} (exponential),e^{H0(t−t0)},2.18E-018,2.18E-018,2.18E-018
+N ∝ ln t (saturation),ln(t/tref)/ln(t0/tref),2.18E-018,7.39E-018,1.32E-017

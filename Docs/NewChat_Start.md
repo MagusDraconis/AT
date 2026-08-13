@@ -5648,3 +5648,26 @@ MOND/TQM implementation. Result: a₀ is EMERGENT (cosmological), not fundamenta
   with a 0-parameter origin (cH), and its evolution is the decisive discriminator. The program's
   single decisive test remains the g†(z) EVOLUTION (mass-limited), plus the cH vs c²√Λ vs c/t
   sub-discrimination — all requiring next-gen resolved RAR data.
+
+**PHASE 134 — ResearchQG-087: Event Density Cosmology Audit (N=a unique; another reparametrization):**
+Tested whether H = d ln(a)/dt can be replaced by H_event = d ln(N)/dt (event/information growth).
+Result: only N = a reproduces H(z); event density is just another clock, not new physics.
+
+- Event-growth models compared to H_ΛCDM(z): N = a (exact, trivial); N ∝ t (coasting, ~17% at
+  z≤2 but no acceleration → fails SN Ia/CMB); N ∝ t^n (coasting family); N ∝ e^λt (de Sitter,
+  no matter era); N ∝ ln t (wrong slope, ~60–90% high at z≥0.5). Only N = a reproduces the full
+  matter→de Sitter transition.
+- a₀ = c × d ln(N)/dt = cH_event: all event models give a₀ ~ cH = 6.5e-10 (the 'cH class', no
+  1/(2π)) — order-of-magnitude only, consistent with QG-084/085.
+- Redshift 1+z = N_obs/N_emit is equivalent to 1+z = a_obs/a_emit only for N = a; a physically
+  motivated N (causal-set cardinality ∝ volume, N ∝ a³) would give 1+z = (1+z)³, excluded.
+- Links: Causal Set gives N ∝ 4-volume → H_event ≈ 3H (factor 3, not observable); entropic/
+  information rate is mass-set, not H-set.
+- VERDICT: Level 1 PASS; Levels 2–3 PARTIAL (only N=a; a₀=cH no 2π); Level 4 PASS but
+  reparametrization; Level 5 FAIL (N≠a falsified, N=a sterile). H = d ln(N)/dt is trivially
+  true for N=a; event density is just another clock (consistent with QG-080/082).
+- Outputs: EventDensityModels.csv, EventCosmologyComparison.csv, A0_FromEvents.csv (Data/derived)
+  + 1 PNG; Docs/{ExpansionVsEvents,EventDrivenRedshift}.md; 5 source files + test.
+- NEXT: the reinterpretation program (QG-080–087: time-scale, clock, event-density) is fully
+  closed — every "expansion-first vs X-first" alternative collapses to FLRW or is falsified.
+  The positive program's single decisive test remains the g†(z) EVOLUTION (mass-limited).
