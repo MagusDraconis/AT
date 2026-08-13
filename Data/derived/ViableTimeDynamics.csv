@@ -1,0 +1,5 @@
+Family,Parameter,Note
+γ = a^1,1.00,reduces to gamma = a (FLRW-conformal)
+γ = a·(1+0.0z),0.00,reduces to gamma = a (FLRW-conformal)
+γ = a·exp(+0.0z),0.00,reduces to gamma = a (FLRW-conformal)
+γ = a/(1+0.0z),0.00,reduces to gamma = a (FLRW-conformal)

@@ -5531,3 +5531,27 @@ assumption is introduced. Result: expansion is an interpretation, not an observa
 - NEXT: the QG-080/081 line is exhausted (reinterpretation is sterile). Return to the
   positive TQM program: find a distinct, falsifiable prediction of g†=cH/2π (e.g. an
   evolving a0 observable in rotation curves, lensing, or a new regime).
+
+**PHASE 129 — ResearchQG-082: Beyond Conformal Time Audit (γ=a is UNIQUE; Levels 1–3 pass):**
+Tested whether alternative clock laws γ=a^p, γ=a(1+εz), γ=a·e^βz, γ=a/(1+αz) can reproduce
+observations without reducing to FLRW. Result: NO — γ=a is uniquely forced.
+
+- Core fact: in static space + evolving clock, redshift AND time dilation both equal
+  γ_obs/γ_emit, so 1+z = 1/γ(z) forces γ(z) = 1/(1+z) = a. Redshift alone determines γ;
+  SN Ia time dilation (b=1) is a redundant confirmation.
+- All 20 candidate families (p∈{0.5..1.5}, ε/β/α∈{±0.2,±0.1,0}) are excluded unless the
+  extra parameter → 0, in which case they reduce to γ=a. Power-law γ=a^p gives b=p exactly,
+  so SN Ia force p=1.00±0.05. Redshift (far more precise) forces p=1 exactly.
+- g† = c·d(ln γ)/dt/2π = f·cH/2π with f=a·γ'/γ. Only γ=a survives (f=1), so g†=cH/2π is
+  FORCED: any γ≠a would give g†=f·cH/2π and is excluded. The RAR relation is robust.
+- The only "beyond-conformal" escape is a drift between clock types (gravitational vs
+  atomic vs nuclear), which would appear as non-universal redshift or Δα/ΔG — both
+  constrained to ~zero. No surviving distinct prediction.
+- VERDICT: Levels 1–3 PASS (alternatives built, constraints applied, uniqueness proven).
+  Level 4 FAIL (no viable non-FLRW dynamics). Level 5 FAIL (no distinct prediction).
+  Cosmology uniquely requires γ=a; the conformal-time reinterpretation is complete/unique.
+- Outputs: ClockFamilies.csv, ViableTimeDynamics.csv, SN_TimeDilation_Constraints.csv
+  (Data/derived); Docs/{GammaVsScaleFactor,DistinctPredictions}.md; analyzer + test.
+- NEXT: the time-scale line (QG-080–082) is fully closed. The g†=cH/2π prediction must now
+  be tested in a genuinely NEW observable regime (not a reinterpretation): e.g. an evolving
+  a0 in dwarf/HSB galaxy dynamics, weak lensing, or a cross-check against MOND's a0.
