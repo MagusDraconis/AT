@@ -1,0 +1,8 @@
+Rank,Observable,IncrementalR2,CumulativeR2
+1,log VelocitySpan,0.124,0.124
+2,log VelRms,0.016,0.141
+3,log DiskChi2,0.034,0.175
+4,log RCextent/Re,0.038,0.213
+5,log Re,0.002,0.215
+6,log SFR,0.001,0.215
+7,Redshift,0.000,0.215

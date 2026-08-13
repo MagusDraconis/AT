@@ -1,0 +1,8 @@
+Component,R2,IncrementalR2,CumulativeR2
+log VelocitySpan,0.124,0.124,0.124
+log VelRms,0.141,0.016,0.141
+log DiskChi2,0.175,0.034,0.175
+log RCextent/Re,0.213,0.038,0.213
+log Re,0.215,0.002,0.215
+log SFR,0.215,0.001,0.215
+Redshift,0.215,0.000,0.215

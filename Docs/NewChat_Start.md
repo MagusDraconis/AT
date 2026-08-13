@@ -5413,3 +5413,26 @@ Result: B = gas uncertainty significant, but UNMODELED systematics dominate.
   MonteCarloRecovery.csv, TQM_vs_MOND_Discrimination.csv + 4 PNGs.
 - NEXT: attack the unmodeled 0.5 dex — better mass models, resolved profile fits, and
   gas mapping together — or defer the g†(z) test to Euclid/Rubin with full SED+gas.
+
+**PHASE 124 — ResearchQG-077: Hidden Systematics Decomposition Audit (Level 2):**
+Decomposed the ~0.49 dex of unexplained g† scatter (QG-076) against galaxy observables.
+Result: Level 2 = dominant hidden systematic isolated; it is KINEMATIC COHERENCE, not mass.
+
+- Residual Δ = log g†(fit) − log g†(best constant) computed for the 47 constrained
+  galaxies (std 0.57 dex). Correlated against 12 observables and hierarchically
+  decomposed via greedy multivariate OLS.
+- Dominant correlates (all kinematic-coherence proxies): log velocity span r=+0.35
+  (R² 0.12), log velocity rms r=+0.28, log disk-χ² r=+0.28. Interpretation: disturbed/
+  under-resolved rotation inflates g_obs = V²/r and biases g† UPWARD.
+- Decisively NOT the drivers: inclination, stellar mass, SFR, gas fraction, Re, redshift
+  all have |r| ≤ 0.10. So the hidden scatter is kinematic/morphological, not baryonic.
+- Multivariate decomposition explains 22% of total variance (30% of the hidden excess);
+  remaining scatter 0.50 dex — still ABOVE the TQM signal (~0.35 dex).
+- CONCLUSION: reducing gas/mass precision will not fix it (consistent with QG-076). The
+  missing scatter comes from unresolved morphology / non-circular flows. The lever is
+  CLEANER RESOLVED KINEMATICS (higher SNR, longer velocity spans, better disk fits),
+  plus rejecting disturbed galaxies — before any g†(z) test is decisive.
+- Outputs (persisted): ResidualCorrelationTable.csv, VarianceBreakdown.csv,
+  HiddenSystematicsRanking.csv + 4 PNGs.
+- NEXT: build a kinematic-quality cut (span/χ²/rms thresholds) and re-run the RAR stack
+  on only the cleanest rotation curves, or defer g†(z) to Euclid/Rubin resolved samples.

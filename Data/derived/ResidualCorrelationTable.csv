@@ -1,0 +1,13 @@
+Observable,PearsonR,R2,SlopeDexPerDex,Nvalid
+log VelocitySpan,0.345,0.119,0.796,47
+log VelRms,0.282,0.080,1.110,45
+log DiskChi2,0.282,0.080,0.555,45
+log RCextent/Re,-0.178,0.032,-1.067,47
+log Re,0.104,0.011,0.673,47
+log SFR,0.094,0.009,0.049,47
+Redshift,0.064,0.004,0.047,47
+log StellarMass,0.038,0.001,0.046,47
+KinematicScore,-0.038,0.001,-0.003,47
+log Vmax,-0.038,0.001,-0.043,45
+Inclination,0.033,0.001,0.003,47
+GasFraction,-0.007,0.000,-0.012,47
