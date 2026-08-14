@@ -6435,6 +6435,14 @@ candidate mechanism for the whole node. Spatial 3 is DERIVED and independent
 with two formally-unlinked manifestations (N, n) and one candidate path (m=3).
 See Docs/Audits/Why3MetaAudit.md.
 
+**Internal-3 Closure Audit (unified model of the node):**
+Unified the Internal-3 Problem as ONE node ("internal multiplicity/count saturates at
+3") with TWO faces — N≤3 (multiplicity, T-10 no-go 0.70) and n=3 (gauge count, T-09
+no-go 0.10) — no linking mechanism (A-10), ONE candidate mechanism (m=3 closure, path
+not theorem, unmapped to N/n), strongest no-go = T-10. Key asymmetry: T-09 (0.10) is
+the weaker no-go ⇒ the gauge-count face is the more tractable entry point. Relations:
+1 Same (generations≡N≤3) · 5 Related · 0 Independent. See Docs/Audits/Internal3_Report.md.
+
 **TRM Quantum Engine Reconciliation Audit (new mathematics, lattice contact only):**
 Reconciled the external "Quantum Engine" formulas (D(x)=1/(1+x+bx²+x⁴), UV damping
 exp(-p²/Λ²), Padé kernel, loop finiteness) against TQM's QG/causal-set/graph-Laplacian/
