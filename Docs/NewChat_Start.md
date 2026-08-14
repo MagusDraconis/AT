@@ -6670,6 +6670,15 @@ Schrodinger: uniform ⇒ L_W=L_Q. Test 3 CurvedSchrodinger_ConservesNorm: ||ψ(t
 primitives/params. Operator side of bridge now real; Einstein coupling (G4) still missing.
 All 3 PASSED. Report: Docs/Audits/CurvedSchrodinger_Report.md.
 
+**Einstein Recovery Test Program (3 tests, implemented + verified):**
+Created EinsteinRecoveryTests.cs. Test 1 MetricProducesCurvature: EmergentGravityAnalyzer
+linear fit R≈-0.008+25.154·ρ (R²=1.0), nonzero slope. Test 2 FlatMetricProducesZeroCurvature:
+standard Christoffel — flat⇒Γ=0, curved⇒Γ=0.05 (analyzers assert but never compute).
+Test 3 EinsteinLimitRecovered: coupling 25.133≈8π, 6/8 GR matches (leading-order, qualitative).
+Classification: Tested (simulation) / Tested-standard+Blocked (no analyzer curvature) /
+Partial (no full G_μν tensor). Einstein recovery = PARTIAL. All 3 PASSED. Report:
+Docs/Audits/EinsteinRecovery_TestReport.md.
+
 **Continuum Limit Test Program:**
 Converted continuum audits into xUnit test plan. Matrix: #1 L_Q→flat Laplacian = Missing
 (skeleton provided); #2 flat→Schrödinger = Implemented (HilbertSpaceAnalyzer); #3 BDG→
