@@ -6078,3 +6078,33 @@ Result: N≥4 is CONTINGENT — not impossible, not derived, not selected, merel
   N≥3 DERIVED (CP theorem), upper bound N≤3 EMPIRICAL (contingent), spatial 3 DERIVED (complexity),
   internal 3 SELECTED. The two empirical/contingent residuals are (1) N≤3 and (2) the specific
   contingent content (masses, Koide 45°, couplings). No further reduction without new primitives.
+
+**PHASE 152 — Random Actualization Contingent-Ensemble Audit (SEVERAL independent ensembles):**
+Focused audit of Random Actualization: enumerate all contingent outputs, identify their common form,
+and determine whether they form one ensemble or several. Result: they form FOUR independent ensembles
+(3 log-normal universality classes + 1 discrete selection).
+
+- CONTINGENT OUTPUTS: continuous — Yukawa spectrum (9 masses), Koide Q=2/3 (45°), couplings α/α_s/θ_W,
+  architecture frequencies, H, Ω_DM; discrete — N≤3, generations=3, color=3.
+- COMMON FORM: LOG-NORMAL (Universal Abundance Law, XB002): multiplicative actualization cascades ⇒
+  CLT in log-space ⇒ log(X)~N(μ,σ²). Explains WHY exact values are underivable (they are random
+  variables). 3 universality classes (coupling, mass scale, relic density).
+- STRUCTURE/CONTENT BOUNDARY: universal (QG-042/065), already located — form (log-normal) DERIVED,
+  content (μ,σ and drawn values) CONTINGENT. Not hidden: it sits between 'cascade→log-normal' and
+  'the realized draw'.
+- ENSEMBLES: FOUR — coupling, mass scale, relic density (3 log-normal, distinct μ,σ) + discrete N=3
+  selection. INDEPENDENT: no evidence of one shared distribution.
+- NEW PRIMITIVES REJECTED: the log-normal form is derived (CLT); μ,σ are contingent content, not
+  primitives; forcing 45° would be a hidden-parameter dodge.
+- OUTPUTS: DERIVED (spatial 3, U(1), N≥3, log-normal form); CONTINGENT (N≤3, generations=3, color=3,
+  Yukawas, Koide 45°, couplings, frequencies, H, Ω_DM). FIRST UNRESOLVED NODE: whether the 3 classes
+  share ONE (μ,σ) via a common cascade, and whether Koide 45° is hidden structure or a contingent
+  correlation. NO-GO: the specific contingent values are irreducible-CONTINGENT (realized draws, not
+  computable from the primitives).
+- Outputs: RandomActualizationEnsemble_Report.txt; TQM.Core/ResearchQG/ContingentEnsembleAnalyzer.cs +
+  TQM.Tests/ResearchQG/TQM_RandomActualizationEnsembleAudit.cs.
+- PROGRAM STATE (terminal, structure/content): the structure/content split is now FULLY characterized.
+  Structure (form) is derived; content is contingent, forming 4 independent ensembles under the
+  log-normal abundance law. The two live open sub-questions are (1) do the 3 log-normal classes share
+  one cascade, and (2) is Koide 45° hidden structure or a contingent correlation — both without new
+  primitives.
