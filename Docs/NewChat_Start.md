@@ -6180,3 +6180,27 @@ excluded; Koide is confirmed charged-lepton-specific (contingent).
   is now closed. Structure (form) derived; content contingent (4 ensembles, log-normal); Koide is a
   real, charged-lepton-specific hidden structure with a contingent origin; neutrino-Koide falsified.
   No further reduction without new primitives.
+
+**PHASE 156 — Internal Consistency Audit (Phases 148–155) — one flip + one ambiguity, confidence 0.81:**
+Searched ONLY for internal inconsistencies between Phases 148-155. Result: one genuine contradiction,
+one unresolved assumption, overall confidence 0.81.
+
+- STRONGEST CONTRADICTION: the internal multiplicity N=3 (generations=3, color=3) was classified
+  SELECTED in Phase 150 (derived-lower ∩ empirical-upper) but reclassified CONTINGENT in Phases
+  151-152 (because Phase 151 showed the upper bound N≤3 is empirical). The flip was not explicitly
+  reconciled: 'selected' emphasizes the derived lower bound + unique intersection; 'contingent'
+  emphasizes the empirical upper bound pinning the value to exactly 3. Both partially right.
+- MINOR: Phase 152 asserted the 3 log-normal classes are 'independent', but Phase 153 showed
+  independence is UNTESTABLE (one universe cannot distinguish one cascade from three).
+- STRONGEST UNRESOLVED ASSUMPTION: the binary structure/content dichotomy is insufficient. 'Contingent'
+  conflates (a) 'not derivable from primitives' (contingent ORIGIN) with (b) 'random draw, no
+  structure' (COINCIDENCE). Koide (Phase 154) is a REAL hidden structure with a contingent origin —
+  a THIRD category the framework lacks.
+- CONFIDENCE BREAKDOWN: U(1) 0.95, spatial-3 0.85, N≥3 0.90, N≤3 0.70, Koide-real 0.90, Koide-origin
+  0.70, neutrino-Koide-falsified 0.90, 3-class-independence 0.55. OVERALL 0.81.
+- Outputs: PhaseConsistency_Report.txt; TQM.Core/ResearchQG/PhaseConsistencyAnalyzer.cs +
+  TQM.Tests/ResearchQG/TQM_PhaseConsistencyAudit.cs.
+- PROGRAM STATE: the flavor/gauge/multiplicity/contingency audit chain (Phases 148-156) is now CLOSED
+  and self-audited. The two soft spots are (1) the selected↔contingent flip for the internal 3, and
+  (2) the 'contingent' ambiguity (origin vs coincidence), which needs a third category 'real structure
+  with contingent origin'. No further reduction without new primitives.
