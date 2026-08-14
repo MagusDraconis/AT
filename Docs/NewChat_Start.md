@@ -6426,6 +6426,15 @@ already resolved (frame dragging=GR, memory/theta/m=3 = candidate-math, not TQM 
 Scores: theory completeness ≈70%, encyclopedia completeness ≈81%. See
 Docs/Audits/TQM_Completeness_Report.md.
 
+**Why-3 Meta Audit (one unresolved node):**
+Compared gauge count=3, generations=3, N≤3, m=3 closure. Result: generations=3 and
+N≤3 are the SAME problem (N≤3 is the unresolved upper half); gauge count=3 is the
+"same underived 3" (Phase 149) but RELATED (no N↔n link, A-10); m=3 closure is the
+candidate mechanism for the whole node. Spatial 3 is DERIVED and independent
+(excluded). So all remaining "3"s collapse to ONE node — the internal-3 upper bound —
+with two formally-unlinked manifestations (N, n) and one candidate path (m=3).
+See Docs/Audits/Why3MetaAudit.md.
+
 **TRM Quantum Engine Reconciliation Audit (new mathematics, lattice contact only):**
 Reconciled the external "Quantum Engine" formulas (D(x)=1/(1+x+bx²+x⁴), UV damping
 exp(-p²/Λ²), Padé kernel, loop finiteness) against TQM's QG/causal-set/graph-Laplacian/
