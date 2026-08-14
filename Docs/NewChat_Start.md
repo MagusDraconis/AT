@@ -6228,3 +6228,23 @@ consistency improved 0.81 → 0.95.
   Final classification: DERIVED (form: U(1), spatial-3, N≥3, log-normal); EMERGENT (SU(2), SU(3)
   structure); STRUCTURED-UNDERIVED (Koide 45°); DRAWN (Yukawas, couplings, Ω_DM, N≤3, the '3' counts).
   The audit chain is fully closed and internally consistent.
+
+**PHASE 158 — Taxonomy Stress Test (minimal set = 3 categories; conflicts 0; composites 2):**
+Stress-tested the 4-category taxonomy against every result from Phases 148-157. Result: the minimal
+necessary set is 3 categories; one collapse (EMERGENT absorbed); no residual conflicts.
+
+- ENUMERATION (14 results): DERIVED (U(1), spatial-3, N≥3, log-normal form); REAL-UNDERIVED
+  (SU(2) group, SU(3) structure [emergent], Koide [structured]); DRAWN (Yukawas, couplings, Ω_DM,
+  N≤3, color count 3); 2 composites (internal N=3 = DERIVED∩DRAWN; SU(3) whole = REAL-UNDERIVED+DRAWN).
+- CONFLICT COUNT: 0 (Phase 157 already resolved the selected↔contingent flip and the 'contingent'
+  ambiguity). COMPOSITE COUNT: 2 (legitimate unions of two categories, not contradictions).
+- CATEGORY COLLAPSE: exactly ONE collapse — EMERGENT folds into REAL-UNDERIVED (both are real +
+  underived; 'emergent'/'structured' become modifiers meaning with/without a generating mechanism).
+  DERIVED and DRAWN cannot collapse.
+- MINIMAL TAXONOMY: 3 categories — DERIVED, REAL-UNDERIVED, DRAWN.
+- Outputs: TaxonomyStressTest_Report.txt; TQM.Core/ResearchQG/TaxonomyStressTest.cs +
+  TQM.Tests/ResearchQG/TQM_TaxonomyStressTest.cs.
+- PROGRAM STATE (terminal, classification line COMPLETE): the classification taxonomy is now MINIMAL
+  and stress-tested. Final: DERIVED / REAL-UNDERIVED (with emergent/structured modifiers) / DRAWN.
+  All Phases 148-157 results classify cleanly into 3 categories + 2 composites, with zero conflicts.
+  The audit program is closed.
