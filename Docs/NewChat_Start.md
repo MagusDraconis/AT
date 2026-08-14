@@ -6559,6 +6559,14 @@ on config space (Medium), (3) {x_i,θ_i} dynamics (High), (4) full symmetry grou
 physics; two genuine research items = config dynamics + continuum limit. See
 Docs/Audits/Q_Formalization_Program.md.
 
+**Random Actualization Formalization (A-03):**
+Determined the 4 probabilistic ingredients for A-03. Random variable = Formalized (log-normal
+X_N); generator = Formalized (multiplicative cascade X_{n+1}=X_n·exp(ε_n), noise primitive);
+(Ω,F,P) = Partially Formalized (implied by ε_n~N(0,σ₀²), never named); ensemble measure =
+Partially Formalized (log-normal form = T-04 theorem; μ,σ contingent). Tally 2 Formalized,
+2 Partial, 0 Missing. A-03 partially formalizable; output side already formal. See
+Docs/Audits/RandomActualization_Formalization.md.
+
 **TRM Quantum Engine Reconciliation Audit (new mathematics, lattice contact only):**
 Reconciled the external "Quantum Engine" formulas (D(x)=1/(1+x+bx²+x⁴), UV damping
 exp(-p²/Λ²), Padé kernel, loop finiteness) against TQM's QG/causal-set/graph-Laplacian/
