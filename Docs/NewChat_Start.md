@@ -6291,3 +6291,14 @@ unchanged. Conclusion: finite-width recombination is a second-order effect; the
 rarefaction peak is a PROJECTION effect (full Bessel ∫ v_b² j_l'² with correct
 ℓ-mapping), not a visibility effect. Next module = full LOS projection.
 See Docs/Audits/VisibilityAudit.md.
+
+**Velocity Projection Audit (full Doppler projection — 2nd peak is a velocity peak):**
+Implemented ∫ d(ln k) v_b² j_l'² → D_l^Doppler = (1/3) D_v² v_b² (Limber), located
+the velocity extrema (ℓ=164/470/760) and density extrema (compressions 318/910,
+rarefaction 620) and mapped them into ℓ-space. The velocity maxima (D_l~0.16-0.36)
+are ~5x the rarefaction density (S²~0.05), so the Doppler fills the gap. Ratios:
+D_l2/D_l1 = 0.074 (vs 0.44), D_l3/D_l1 = 0.624 (vs 0.68). Conclusion: the 2nd peak
+IS a velocity (Doppler) peak at ℓ≈537, between the velocity max (470) and the
+rarefaction (620); its exact position/amplitude needs the full LOS integral
+(ℓ±1 mapping + phase shift φ≈0.8 rad), not the Limber quadrature.
+See Docs/Audits/VelocityProjectionAudit.md.

@@ -304,6 +304,35 @@ public static class PeakHeightAnalyzer
         return peaks;
     }
 
+    /// <summary>Velocity extrema = local maxima of v_b^2 = Theta1^2 (the Doppler
+    /// peaks of the full projection Int d(ln k) v_b^2 j_l'^2 = (1/3) v_b^2).
+    /// Returns (l, D_l, S^2, v_b^2, D_v) at each maximum, with
+    /// D_l = S^2 + (1/3) D_v^2 v_b^2.</summary>
+    public static List<(double l, double dl, double s2, double vb2, double dv)> FindVelocityExtrema(
+        int count, int lMin = 60, int lMax = 960, int dl = 2)
+    {
+        double aStar = AStar();
+        double dM = DM();
+        var peaks = new List<(double, double, double, double, double)>();
+        double prev2 = double.NegativeInfinity, prev1 = double.NegativeInfinity;
+        double ps2 = 0, pvb2 = 0, pt2 = 0, pdv = 0;
+
+        for (int l = lMin; l <= lMax; l += dl)
+        {
+            double k = l / dM;
+            var (th0, th1, phi) = FullSolveNu(k, aStar);
+            double s2 = (th0 + phi) * (th0 + phi);
+            double vb2 = th1 * th1;
+            double dv = DopplerVisibilityDamping(k);
+            double d = s2 + (1.0 / 3.0) * dv * dv * vb2;
+            if (prev1 > prev2 && prev1 >= vb2 && l - dl > lMin && peaks.Count < count)
+                peaks.Add((l - dl, pt2, ps2, pvb2, pdv));
+            prev2 = prev1; prev1 = vb2;
+            ps2 = s2; pvb2 = vb2; pt2 = d; pdv = dv;
+        }
+        return peaks;
+    }
+
     /// <summary>Acoustic peaks = local maxima of |S| = |Theta0 + Phi| (density extrema).
     /// Returns (l, T^2 = S^2 + w*v_b^2, S^2, v_b^2) at each extremum, where w is
     /// the Doppler projection weight (1/3 correct, 1 = naive quadrature).</summary>
