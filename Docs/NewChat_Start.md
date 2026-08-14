@@ -6347,3 +6347,12 @@ one gap Phase 151 left open (no principle bounds N≤3). Independent predictions
 are unmapped to observables; γ≠2/3 so it does NOT directly constrain Koide. Highest
 value: a candidate mechanism for the N≤3 upper bound. Remains MISSING (TODO).
 See Docs/Audits/m3_Reconciliation_Audit.md.
+
+**m=3 Observable Mapping Audit (no strong matches):**
+Searched the repo for correspondences between Ω≈1.16-1.19, γ≈0.84-0.86 and TQM
+quantities. No STRONG match. Three WEAK numeric coincidences: (1) CMB acoustic phase
+shift φ≈0.885 rad vs γ≈0.84-0.86; (2) coupling log-normal σ≈1.2 vs Ω≈1.16-1.19;
+(3) m_τ/m_μ≈16.8 vs the implied mode-locking denominator q≈16-18. All No Match:
+Koide (γ≠2/3), complexity optimum (M²≈5), multiplicity, dark matter, CMB n_s/θ*,
+RAR, theta sector. Conclusion: m=3 closure values remain UNMAPPED to any observable —
+no structural map in either TRM or TQM docs. See Docs/Audits/m3_ObservableMappingAudit.md.
