@@ -6550,6 +6550,15 @@ stochastic mechanism A-03). (ℓ,τ,ħ) = Formalized (constants). M² = Partiall
 already formalized discretely; gaps = measure/action + probability space/generator. See
 Docs/Audits/FoundationFormalization.md.
 
+**Q Formalization Program (Partially → Fully Formalized):**
+Specified the 8 components for Q: object/state-space/operations = Present (3);
+configuration-space/dynamics/symmetries/continuum-limit = Partial (4); measure = Missing
+(1). To reach fully formalized: (1) S_N quotient + boundary conditions (Low), (2) measure
+on config space (Medium), (3) {x_i,θ_i} dynamics (High), (4) full symmetry group (Medium),
+(5) controlled continuum limit to curved-space Schrödinger + Einstein (High/Open). No new
+physics; two genuine research items = config dynamics + continuum limit. See
+Docs/Audits/Q_Formalization_Program.md.
+
 **TRM Quantum Engine Reconciliation Audit (new mathematics, lattice contact only):**
 Reconciled the external "Quantum Engine" formulas (D(x)=1/(1+x+bx²+x⁴), UV damping
 exp(-p²/Λ²), Padé kernel, loop finiteness) against TQM's QG/causal-set/graph-Laplacian/
