@@ -1,0 +1,43 @@
+cff-version: 1.2.0
+message: "If you use THE Q-MODEL (TQM), please cite it as below."
+type: software
+title: "THE Q-MODEL — From Q to Cosmology"
+abstract: >-
+  THE Q-MODEL (TQM) is a theory of structure and content that compresses observable
+  physics to four primitives (the individuation principle Q, Random Actualization, the
+  scale triad, and a single nonlinearity parameter M^2). It holds that the form of every
+  structure is derivable from these primitives while the content is realized by contingent
+  draw. The dynamical layer is the graph Laplacian L_Q; the derivation program yields U(1),
+  spatial dimension 3+1, the multiplicity lower bound, the log-normal abundance law, and
+  phase-gradient gravity whose leading order is the Einstein equations.
+authors:
+  - family-names: Wieser
+    given-names: Fabrice
+    email: fabrice.wieser@outlook.com
+keywords:
+  - THE Q-MODEL
+  - TQM
+  - emergence
+  - quantum foundations
+  - causal set theory
+  - graph Laplacian
+  - Schrödinger equation
+  - gauge structure
+  - radial acceleration relation
+  - dark energy
+  - structure/content split
+  - falsifiability
+license: MIT
+version: 1.0.0
+date-released: "2026-08-15"
+repository-code: "https://github.com/MagusDraconis/TQM"
+url: "https://github.com/MagusDraconis/TQM"
+preferred-citation:
+  type: article
+  title: "THE Q-MODEL — From Q to Cosmology: A Theory of Structure, Complexity and Random Actualization"
+  authors:
+    - family-names: Wieser
+      given-names: Fabrice
+  year: 2026
+  version: "1.0.0"
+  url: "https://github.com/MagusDraconis/TQM"

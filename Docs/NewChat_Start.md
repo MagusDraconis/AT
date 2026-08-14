@@ -6748,6 +6748,13 @@ RECOMMENDATION: READY_FOR_WHITEPAPER (Zenodo), NOT READY_FOR_JOURNAL (central de
 claim remains logical-not-mathematical at Einstein boundary). Report:
 Docs/Audits/PublicationReadiness_Final.md.
 
+**Publication Package (Zenodo, v1.0):**
+Created Docs/Publication/ bundle: TQM_v1_0.tex (LaTeX, title-page caveat), TQM_v1_0.pdf
+(compiled, 5 pages), README.md, CITATION.cff, CHANGELOG.md, Zenodo_Metadata.json,
+TQM_v1_0_PublicationPackage.md. Author Fabrice Wieser, MIT license, whitepaper type.
+Caveat: READY_FOR_WHITEPAPER / NOT_READY_FOR_JOURNAL. PDF compiled with pdflatex (lmodern
+for scalable fonts). Report: Docs/Publication/TQM_v1_0_PublicationPackage.md.
+
 **Continuum Limit Test Program:**
 Converted continuum audits into xUnit test plan. Matrix: #1 L_Q→flat Laplacian = Missing
 (skeleton provided); #2 flat→Schrödinger = Implemented (HilbertSpaceAnalyzer); #3 BDG→
