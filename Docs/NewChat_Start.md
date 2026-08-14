@@ -6716,6 +6716,16 @@ PRESENT, conformally-flat candidate CONSTRUCTIBLE, full g_uv (conformal class) M
 Metric tensor candidate PARTIALLY emergent: conformal factor native, conformal structure
 imported. All 4 PASSED. Report: Docs/Audits/MetricEmergenceProgram.md.
 
+**Conformal Structure Program (3 tests, verified):**
+Created ConformalStructureTests.cs. Test 1 CausalOrder_DefinesLightConeStructure: 4 axioms
+present (transitivity/antisymmetry/acyclicity/local finiteness); 1+1D causal order valid
+partial order, null boundary = light cone. PRESENT. Test 2 LightConeStructure_Determines
+ConformalClass: null structure invariant under g->f·g (f>0); non-conformal g=diag(-1,2)
+changes null cone. Standard holds. Test 3 ConformalClass_ReconstructibleOrImported: order
+native (TQM-derived), order->conformal class IMPORTED (Malament External theorem). Causal
+order contains enough info (Malament) but TQM imports the reconstruction. All 3 PASSED.
+Report: Docs/Audits/ConformalStructureProgram.md.
+
 **Continuum Limit Test Program:**
 Converted continuum audits into xUnit test plan. Matrix: #1 L_Q→flat Laplacian = Missing
 (skeleton provided); #2 flat→Schrödinger = Implemented (HilbertSpaceAnalyzer); #3 BDG→
