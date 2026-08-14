@@ -180,9 +180,11 @@ Legend: ✅ = present, 🔶 = partial, ❌ = missing (TODO).
 - **Source:** `RARModel.cs`, `TwoPiOriginAnalyzer.cs`, `LargeSampleGdaggerAnalyzer.cs`.
 
 ## 8.5 Clusters
-- **Existing:** 🔶 partial — Coma Cluster Chandra temperature data present only.
-- **Missing:** TODO — no dedicated cluster-mass/RAR audit.
-- **Source:** `Data/coma_v3344_ready.csv`, `Data/Coma_Cluster_Chandra_*.dat`.
+- **Existing:** ✅ Coma dynamical mass ($\sigma_v=947\ \mathrm{km/s}$, $M_{\rm vir}\approx8.8\times10^{14}\ M_\odot$,
+  $6.7\times$ baryon discrepancy); ACCEPT X-ray gas fraction ($f_{\rm gas}\approx0.15$);
+  Newtonian / ΛCDM / TQM-defect model comparison.
+- **Missing:** —
+- **Source:** `ClusterMassAudit.md`, `ClusterMassAudit.cs`, `TQM_ClusterMassAudit.cs`, `Data/coma_v3344_ready.csv`, `Data/Coma_Cluster_Chandra_*.dat`.
 
 ## 8.6 CMB
 - **Existing:** ❌ — referenced only as an external prior in DATA-002.
@@ -240,7 +242,6 @@ Legend: ✅ = present, 🔶 = partial, ❌ = missing (TODO).
 | VI | Theta Sector (gauge-like) |
 | VI | Memory channel |
 | VII | Unified Action (entire part) |
-| VIII | Cluster-mass audit |
 | VIII | CMB analysis |
 | — | TRM program (Memory Channel, m=3 Closure, Theta Sector, Frame Dragging, Unified Action) |
 | — | Prefixes MC/MEM/RBF/TO/TQK/LC/TOL/FD/UF/TRM |

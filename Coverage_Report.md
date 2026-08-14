@@ -50,7 +50,7 @@
 | **Unified Action** | *(none)* | 0 | MISSING | TODO |
 | **Cosmology** | QG-004, QG-080–100, causal-set Λ, DATA-001–010 | 100 | COMPLETE | — |
 | **Galaxies** | DATA-003–010, QG-070–079, SPARC/KMOS3D RAR | 100 | COMPLETE | — |
-| **Clusters** | Coma Cluster Chandra data (`Data/coma_*`) | 30 | PARTIAL | TODO — no dedicated cluster-mass / RAR audit |
+| **Clusters** | Coma catalog + ACCEPT profiles; `ClusterMassAudit.md` | 100 | COMPLETE | — |
 | **Pantheon+** | DATA-001, DATA-002, `Data/Pantheon+SH0ES.dat` | 100 | COMPLETE | — |
 | **CMB** | *(none — referenced only as external prior)* | 10 | MISSING | TODO — no CMB data or analysis |
 | **Dark Matter** | X063–X065b, `DefectDarkMatterAnalyzer`, `DarkMatterAuditAnalyzer` | 100 | COMPLETE | — |
@@ -90,6 +90,6 @@
 
 | Status | Count | Topics |
 |---|---|---|
-| COMPLETE | 19 | Foundations, Ontology, Q, Random Actualization, Complexity, Topology, Symmetry, Gauge, Flavor, Multiplicity, Cosmology, Galaxies, Pantheon+, Dark Matter, Dark Energy, Classification, Audit Results, + X/XE/XB/TQM/QG programs |
-| PARTIAL | 3 | m=3 Closure (25%), Theta Sector (60%), Clusters (30%) |
+| COMPLETE | 20 | Foundations, Ontology, Q, Random Actualization, Complexity, Topology, Symmetry, Gauge, Flavor, Multiplicity, Cosmology, Galaxies, Clusters, Pantheon+, Dark Matter, Dark Energy, Classification, Audit Results, + X/XE/XB/TQM/QG programs |
+| PARTIAL | 2 | m=3 Closure (25%), Theta Sector (60%) |
 | MISSING | 9 | TRM, Memory Channel, Frame Dragging, Unified Action, CMB, + prefixes MC/MEM/RBF/TO/TQK/LC/TOL/FD/UF/TRM |
