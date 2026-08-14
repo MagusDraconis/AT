@@ -1,0 +1,31 @@
+**Major Issues**
+
+- The four “primitives” are undefined as mathematical objects. \(Q\) is labeled “principle of individuation (ontology)” with no axioms, measure space, or dynamical law. “Random Actualization” is pure verbalism for “chance happens.” The scale triad is just unit conventions. \(M^2\) is an unspecified continuous parameter later tuned to \(\approx5\). A theory whose entire content is generated from undefined symbols is empty.
+- Every claimed “derivation” is either (a) a restatement of elementary group theory or topology already known for a century, or (b) an informal story. \(\mathrm{Aut}(S^1)=U(1)\) and \(\pi_1(S^1)=\mathbb{Z}\) do not derive electromagnetism, the photon, or Maxwell’s equations; they merely name the isometry group of a circle. Binary defects \(\to SU(2)\) and tri-defects \(\to SU(3)\) structure are likewise post-hoc labeling of known Lie groups, not derivations from the primitives.
+- Spatial dimensionality \(d=3+1\) is asserted to follow from “complexity maximization” at \(M^2\approx5\). No complexity functional, no variational principle, no calculation is exhibited. The number 5 is inserted by hand.
+- The three-category taxonomy (DERIVED / REAL-UNDERIVED / DRAWN) is a classification scheme, not a derivation engine. Labeling \(SU(2)\), \(SU(3)\) structure and the Koide relation “REAL-UNDERIVED” while still counting them as successes of the theory is category error: the theory is claiming credit for structures it admits it cannot derive.
+- The five “no-go theorems” are not theorems. T-09 (gauge-count no-go) is assigned confidence 0.10; a statement held at 10 % confidence cannot close a question. The remaining no-gos are exhaustive enumerations of failed attempts under the authors’ own self-imposed “no-new-primitives” rule, not logical impossibilities.
+- Gravity is declared to be a phase gradient \(\vec a=c^2\nabla\theta\) that “reduces to GR.” No metric, no curvature, no Einstein equation, no matching to the weak-field or post-Newtonian limits is derived. Newton’s constant is written \(G=\ell^2 c^3/\hbar\) by dimensional analysis alone; that is unit conversion, not a derivation of gravity.
+- The structure/content split is used to immunize the theory against every concrete failure. Whenever a number or group factor is not obtained, it is declared “DRAWN” or “REAL-UNDERIVED” and the theory is declared complete. This is not physics; it is a protective classification scheme.
+
+**Minor Issues**
+
+- Confidence numbers (0.95, 0.85, 0.70, 0.10 \ldots) are arbitrary and uncalibrated; they function as rhetorical padding.
+- The Koide relation is celebrated as “real, predictive, RG-stable” while its origin is simultaneously declared underivable. That is an admission that the theory has nothing to say about the only quantitative relation it highlights.
+- Neutrino-Koide is “falsified” by a maximal-\(Q\) calculation that simply restates existing oscillation data; no new content is generated.
+- Dark-matter abundance, Yukawa hierarchies, and the color multiplicity are all labeled DRAWN. The theory therefore makes no quantitative prediction that could distinguish it from the Standard Model plus \(\Lambda\)CDM.
+- The CMB is relegated to an “accepted partial computational layer.” A theory that cannot compute the acoustic peaks has not reached cosmology.
+
+**Fatal Issues**
+
+- There is no dynamical system. No action, no Hilbert space, no measure on configuration space, no evolution equation is ever written. The entire “derivation hierarchy” is a tree of English phrases.
+- Circular reasoning: the known existence of \(U(1)\), three spatial dimensions, three generations, and the Koide relation is used as evidence that the primitives “derive” them. The primitives are reverse-engineered from the target phenomenology.
+- Category error at the foundation: ontology (“individuation”) is smuggled in as a physical primitive and then used to underwrite gauge groups and spacetime dimension. No bridge from ontology to Hilbert-space operators or to the Einstein–Hilbert action is supplied.
+- The claim that “no in-scope derivation route remains open” is false by the paper’s own admission: the internal-3 node is left “unresolved-contingent,” the gauge-count no-go is only provisional (confidence 0.10), and the unified action is deferred to a separate “TRM roadmap.” The theory is incomplete on its own terms.
+- Zero novel, testable, quantitative predictions. Every concrete number that matches observation is either imported from the Standard Model or declared a contingent draw. A theory that cannot be wrong is not a scientific theory.
+
+**Accept/Reject**  
+Reject.
+
+**Confidence**  
+0.95
