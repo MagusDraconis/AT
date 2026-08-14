@@ -220,4 +220,59 @@ public static class PeakHeightAnalyzer
         double dPeak = norm * (s2 + vb2) * silk;
         return (lPeak, dPeak, phiAtPeak);
     }
+
+    /// <summary>First N local maxima of D_l = norm (S^2 + v_b^2) Silk.</summary>
+    public static List<(double l, double d, double s2, double vb2)> FindPeaks(
+        int count, int lMin = 40, int lMax = 900, int dl = 2)
+    {
+        double aStar = AStar();
+        double dM = DM();
+        double norm = (9.0 / 25.0) * As * TcmbMicroK * TcmbMicroK;
+        var peaks = new List<(double, double, double, double)>();
+        double prev2 = double.NegativeInfinity, prev1 = double.NegativeInfinity;
+        double ps2 = 0, pvb2 = 0, ps2prev = 0, pvb2prev = 0;
+
+        for (int l = lMin; l <= lMax; l += dl)
+        {
+            double k = l / dM;
+            var (th0, th1, phi) = FullSolveNu(k, aStar);
+            double s2 = (th0 + phi) * (th0 + phi);
+            double vb2 = th1 * th1;
+            var (kd, silk) = SilkDamping(k, aStar);
+            double d = norm * (s2 + vb2) * silk;
+
+            if (prev1 > prev2 && prev1 >= d && l - dl > lMin && peaks.Count < count)
+                peaks.Add((l - dl, prev1, ps2prev, pvb2prev));
+
+            prev2 = prev1; prev1 = d;
+            ps2prev = ps2; pvb2prev = pvb2;
+            ps2 = s2; pvb2 = vb2;
+        }
+        return peaks;
+    }
+
+    /// <summary>Acoustic peaks = local maxima of |S| = |Theta0 + Phi| (density extrema).
+    /// Returns (l, T^2 = S^2+v_b^2, S^2, v_b^2) at each extremum.</summary>
+    public static List<(double l, double t2, double s2, double vb2)> FindAcousticPeaks(
+        int count, int lMin = 60, int lMax = 900, int dl = 2)
+    {
+        double aStar = AStar();
+        double dM = DM();
+        var peaks = new List<(double, double, double, double)>();
+        double prev2 = double.NegativeInfinity, prev1 = double.NegativeInfinity;
+        double prevS2 = 0, prevVb2 = 0, prevT2 = 0;
+
+        for (int l = lMin; l <= lMax; l += dl)
+        {
+            double k = l / dM;
+            var (th0, th1, phi) = FullSolveNu(k, aStar);
+            double s2 = (th0 + phi) * (th0 + phi);
+            double vb2 = th1 * th1;
+            if (prev1 > prev2 && prev1 >= s2 && l - dl > lMin && peaks.Count < count)
+                peaks.Add((l - dl, prevT2, prevS2, prevVb2));
+            prev2 = prev1; prev1 = s2;
+            prevS2 = s2; prevVb2 = vb2; prevT2 = s2 + vb2;
+        }
+        return peaks;
+    }
 }

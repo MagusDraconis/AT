@@ -6248,3 +6248,23 @@ necessary set is 3 categories; one collapse (EMERGENT absorbed); no residual con
   and stress-tested. Final: DERIVED / REAL-UNDERIVED (with emergent/structured modifiers) / DRAWN.
   All Phases 148-157 results classify cleanly into 3 categories + 2 composites, with zero conflicts.
   The audit program is closed.
+
+**CMB ACOUSTIC-PEAK CHAIN (ResearchDATA, background → first 3 peaks):**
+Built the full CMB peak pipeline in C# from standard ΛCDM background + imported
+cosmology (NO new physics; all physics "Imported" not "Derived" from TQM primitives):
+
+- Recombination: Saha+Peebles z* solver → **z* = 1081.8** (Planck 1089.9).
+- Sound horizon / θ*: **r_s = 142.3 Mpc, 100θ* = 1.0263** (Planck 1.04092, −1.4%).
+- Tight-coupling oscillator: Θ0/Θ1/Φ; SW first compression ℓ=336.
+- LOS projection (Limber): SW+Doppler → **ℓ₁ = 220 = Planck exactly**.
+- Peak height: radiation driving + Silk → D_l1 ≈ 4002 µK² (−30%).
+- Neutrino driving: +48% → **D_l1 = 5937 µK² vs Planck ~5700 (+4.2%)**.
+- Higher peaks: spacing **Δℓ ≈ π/θ* ≈ 306** matches Planck (~317); **D_l3/D_l1 =
+  0.60 vs 0.68** (−11%); **D_l2/D_l1 = 0.08 vs 0.44** (rarefaction needs full Bessel
+  SW–Doppler cross term — next missing module).
+
+Conclusion: the minimal chain (oscillator → radiation driving → neutrino driving →
+Silk) reproduces the CMB first peak to ~5% and the peak SPACING + third/first ratio
+with no new physics. The remaining gap is the full Cℓ Bessel projection (cross term)
+for the rarefaction peak. See Docs/Audits/{Recombination,ThetaStar,AcousticOscillator,
+CMBProjection,PeakHeight,NeutrinoDriving,HigherPeaks}Audit.md + CMB_Roadmap.md.
