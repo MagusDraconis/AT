@@ -6609,6 +6609,13 @@ DIFFERENT operators/substrates (O3/O6 in BdgUniquenessAnalyzer reject L_Q for Lo
 No derivation connects them; curved-space Schrödinger missing. Classification: PARTIALLY
 CONNECTED (shared substrate, disjoint mathematics). See Docs/Audits/QuantumGravityBridge.md.
 
+**Quantum-Gravity Bridge Test (implemented + verified):**
+Created QuantumGravityBridgeTests.cs (TQM.Tests/ResearchXC) making the "Partially
+Connected" verdict executable. PASSED: L_Q eigenvalues [0.0023, 3.9977] all ≥0 (positive
+semi-definite, Riemannian); □ plane-wave eigenvalues k²−ω² = -3.16 (<0, k<ω) and +6.32
+(>0, k>ω) (indefinite, Lorentzian). Incompatible signatures ⇒ no bridge. Report:
+Docs/Audits/QuantumGravityBridge_Report.md.
+
 **Continuum Limit Test Program:**
 Converted continuum audits into xUnit test plan. Matrix: #1 L_Q→flat Laplacian = Missing
 (skeleton provided); #2 flat→Schrödinger = Implemented (HilbertSpaceAnalyzer); #3 BDG→
