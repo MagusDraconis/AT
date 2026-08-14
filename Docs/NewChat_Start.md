@@ -6479,6 +6479,14 @@ Shared Cascade, CMB Boltzmann, Unified Action); theory completeness ~70% → ~72
 not new derivation). Koide = canonical REAL-UNDERIVED example. See
 Docs/Main/Koide_Closure_Integration_Report.md.
 
+**Final Encyclopedia Audit (version readiness = v0.9 preview):**
+Verified cross-document consistency (0 conflicts). Added Phase 159 to Master Reference
+§13/§14; annotated Coverage Report TRM statuses as superseded. Created COMPLETE (11
+results) / PARTIAL (5 chapters) / CLOSED (10 questions) / OPEN (4 items) registries.
+Theory ~72%, encyclopedia ~81%, consistency 0.95. Version = v0.9 preview (not v1.0):
+blocked by the Internal-3 node (gauge count T-09=0.10 weakly closed) + Unified Action +
+CMB solver. See Docs/Main/TQM_VersionReadiness.md.
+
 **TRM Quantum Engine Reconciliation Audit (new mathematics, lattice contact only):**
 Reconciled the external "Quantum Engine" formulas (D(x)=1/(1+x+bx²+x⁴), UV damping
 exp(-p²/Λ²), Padé kernel, loop finiteness) against TQM's QG/causal-set/graph-Laplacian/

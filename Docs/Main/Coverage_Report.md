@@ -103,3 +103,10 @@
 | COMPLETE | 20 | Foundations, Ontology, Q, Random Actualization, Complexity, Topology, Symmetry, Gauge, Flavor, Multiplicity, Cosmology, Galaxies, Clusters, Pantheon+, Dark Matter, Dark Energy, Classification, Audit Results, + X/XE/XB/TQM/QG programs |
 | PARTIAL | 3 | m=3 Closure (25%), Theta Sector (60%), CMB (45%) |
 | MISSING | 8 | TRM, Memory Channel, Frame Dragging, Unified Action, + prefixes MC/MEM/RBF/TO/TQK/LC/TOL/FD/UF/TRM |
+
+> **Superseded (TRM items):** the TRM-related statuses above are the *repository-inventory*
+> snapshot. The authoritative final disposition of the TRM legacy modules is
+> `Audits/TRM_Legacy_Final.md`: **Absorbed** (Time Field, RAR, Frame Dragging),
+> **Rejected** (Temporal Drift, Quantum Engine), **Candidate Mathematics** (m=3 Closure,
+> Memory Channel, Theta Chain), **Open** (Unified Action). Frame Dragging is therefore
+> *not* a missing TQM capability — it is GR gravitomagnetism, already in TQM/GR.

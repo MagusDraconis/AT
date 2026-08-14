@@ -310,6 +310,7 @@ No speculative additions.
 | 156 | Internal consistency | One flip + one ambiguity; confidence 0.81 | Two soft spots found |
 | 157 | Minimal taxonomy | 4 categories; consistency 0.81→0.95 | Taxonomy disambiguated |
 | 158 | Taxonomy stress test | 3 minimal categories; 0 conflicts; 2 composites | Audit program closed |
+| 159 | Koide origin closure | 7 routes: 6 No-Go + 1 Blocked; 0 Open | Koide $45^\circ$ = REAL-UNDERIVED (closed question) |
 
 ---
 
@@ -328,6 +329,7 @@ No speculative additions.
 | 156 | Consistency 0.81 | Found selected↔contingent flip + contingency ambiguity |
 | 157 | Taxonomy 4 categories (0.95) | Split origin from coincidence |
 | 158 | Taxonomy 3 categories (EMERGENT→REAL-UNDERIVED) | Stress test: minimal necessary set |
+| 159 | Koide origin → CLOSED (underivable) | All in-scope derivation routes exhausted (`KoideClosureAudit`, `756b0e9`) |
 
 ---
 
