@@ -6623,6 +6623,14 @@ BDGOperator_IsIndefinite: discrete d'Alembertian □_hφ(0,0) = -3.158 (k<ω) / 
 Test 3 QuantumGravityBridge_OperatorsDifferInSignature: incompatible signatures ⇒ no bridge.
 All 3 PASSED. Report: Docs/Audits/QuantumGravityBridge_TestReport.md.
 
+**Curved-Space Bridge Test Program (3 tests, implemented + verified):**
+Created CurvedSpaceBridgeTests.cs (TQM.Tests/ResearchXC). Test 1 MetricDependentOperator_
+Exists: source scan finds 0 "Beltrami"/"curved-space Schrödinger" in TQM.Core (no Δ_g).
+Test 2 LaplaceBeltrami_ReducesToFlatLaplacian: flat g=I ⇒ Δ_g=∇² (relErr 3.2e-3→5.0e-5,
+O(h²)) on f=sin(πx)sin(πy). Test 3 CurvedSpaceBridge_PresentOrAbsent: ABSENT. Search: no
+Laplace-Beltrami, no curved/covariant Schrödinger; Christoffel only descriptive; metric only
+emergent/external. All 3 PASSED. Report: Docs/Audits/CurvedSpaceBridge_Report.md.
+
 **Continuum Limit Test Program:**
 Converted continuum audits into xUnit test plan. Matrix: #1 L_Q→flat Laplacian = Missing
 (skeleton provided); #2 flat→Schrödinger = Implemented (HilbertSpaceAnalyzer); #3 BDG→
