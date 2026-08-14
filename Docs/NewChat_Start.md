@@ -6417,6 +6417,15 @@ MATHEMATICS — m=3 Closure (Ω=(q+3)/q, γ=1/Ω, unmapped, targets N≤3 gap), 
 new enters TQM as physics; highest-value residue = m=3 Closure. See
 Docs/Audits/TRM_Legacy_Final.md; encyclopedia §10.4 updated.
 
+**TQM Completeness Audit (Q→Cosmology chapter status):**
+Classified the 10 encyclopedia chapters: COMPLETE 4 (Foundations, Mathematics,
+Classification, Audits), PARTIAL 5 (Gauge, Flavor, Gravity, Theta, Cosmology), OPEN 1
+(Unified Action). Genuine open items = Koide 45° (T-08), gauge count n=3 (T-09), N≤3
+bound (T-10), shared cascade (T-12), CMB solver, Unified Action. TRM legacy items
+already resolved (frame dragging=GR, memory/theta/m=3 = candidate-math, not TQM gaps).
+Scores: theory completeness ≈70%, encyclopedia completeness ≈81%. See
+Docs/Audits/TQM_Completeness_Report.md.
+
 **TRM Quantum Engine Reconciliation Audit (new mathematics, lattice contact only):**
 Reconciled the external "Quantum Engine" formulas (D(x)=1/(1+x+bx²+x⁴), UV damping
 exp(-p²/Λ²), Padé kernel, loop finiteness) against TQM's QG/causal-set/graph-Laplacian/
