@@ -6726,6 +6726,16 @@ native (TQM-derived), order->conformal class IMPORTED (Malament External theorem
 order contains enough info (Malament) but TQM imports the reconstruction. All 3 PASSED.
 Report: Docs/Audits/ConformalStructureProgram.md.
 
+**Metric Origin Closure Audit (3 tests, verified):**
+Created MetricOriginTests.cs. Test 1 CausalOrder_ContainsConformalInformation: order invariant
+under g->f·g; Malament cited. Test 2 ConformalClass_UniquenessCondition: class unique up to
+factor; factor free (sqrt|g|=1 vs 100). Test 3 MetricOrigin_NativeOrImported: Q-events NATIVE,
+causal order NATIVE, conformal class IMPORTED (Malament, PROVEN), conformal factor NATIVE.
+FINAL VERDICT: conformal-class gap = IMPORTED THEOREM, NOT a theory gap. Not a publication
+blocker; optional native re-derivation only; metric origin ALREADY SOLVED (closed:
+order + proven class + native factor -> g_uv determined). All 3 PASSED. Report:
+Docs/Audits/MetricOriginClosure.md.
+
 **Continuum Limit Test Program:**
 Converted continuum audits into xUnit test plan. Matrix: #1 L_Q→flat Laplacian = Missing
 (skeleton provided); #2 flat→Schrödinger = Implemented (HilbertSpaceAnalyzer); #3 BDG→
