@@ -6601,6 +6601,14 @@ signature (directed graph, non-symmetric) — the Lorentzian operator is the BDG
 → □, a DIFFERENT chain. L_Q→Δ_g would be wrong signature (Riemannian vs Lorentzian). Two
 chains (L_Q→flat Schrödinger; BDG→□→GR) remain disjoint. See Docs/Audits/CurvedSpaceSchrodinger.md.
 
+**Quantum-Gravity Bridge Audit:**
+Determined whether a bridge exists between L_Q→Schrödinger and BDG→□→Einstein. Compared 5
+operators (L_Q, Δ, Δ_g, □, BDG): L_Q = undirected positive graph Laplacian (→-∇² Riemannian);
+BDG = directed alternating causal-set operator (→□ Lorentzian). Same underlying Q-events but
+DIFFERENT operators/substrates (O3/O6 in BdgUniquenessAnalyzer reject L_Q for Lorentzian).
+No derivation connects them; curved-space Schrödinger missing. Classification: PARTIALLY
+CONNECTED (shared substrate, disjoint mathematics). See Docs/Audits/QuantumGravityBridge.md.
+
 **Continuum Limit Test Program:**
 Converted continuum audits into xUnit test plan. Matrix: #1 L_Q→flat Laplacian = Missing
 (skeleton provided); #2 flat→Schrödinger = Implemented (HilbertSpaceAnalyzer); #3 BDG→
