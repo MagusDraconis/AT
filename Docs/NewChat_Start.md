@@ -6024,3 +6024,31 @@ COUNT per sector; U(1) is derived, SU(2) emergent, SU(3) contingent.
   SU(2) emergent; SU(3) contingent (the underived '3'). The deep residual is the SAME 'why 3'
   (generations = color = spatial dims = dim(G)), which QG-067 classified as SELECTION (derived
   lower bound N≥3 ∩ empirical upper bound N≤3). No further reduction without new primitives.
+
+**PHASE 150 — The Recurring Integer 3 Multiplicity Audit (spatial DERIVED, internal SELECTED):**
+Treated all "3"s (spatial dims, generations, color, defect hierarchy, dim(G)) as one multiplicity
+variable N, and determined whether N=3 is derived/selected/emergent/contingent. Result: the
+"3"s have TWO statuses, not one — and the internal 3 does NOT inherit the spatial 3.
+
+- Occurrences: spatial 3+1 = DERIVED (complexity maximization peaks at M²≈5 → d=3+1, X042/XE009);
+  generations = SELECTED (stability cutoff, X051); color SU(3) = CONTINGENT/SELECTED (tri-winding,
+  8-gluon borrowed); defect n=3 = CONTINGENT; dim(G)=3 = SELECTED.
+- KEY SPLIT: the SPACETIME 3 is DERIVED; the INTERNAL 3s (generations/color/dim(G)) live in
+  DIFFERENT spaces and are SELECTED. No mechanism links spacetime N to internal N — the
+  '3=3=3=3' is a coincidence until a linking mechanism exists.
+- DERIVATION SEARCH: lower bound N≥3 IS derived (CP phases (N-1)(N-2)/2 ≥ 1 ⟹ N≥3; S3 first
+  non-abelian). Upper bound N≤3 is EMPIRICAL (Z-width N_ν=3, Higgs). Catastrophes: pitchfork=2,
+  cusp=2 (2 stable + 1 unstable), butterfly=3 but codim-2 → NO codim-1 catastrophe gives exactly 3.
+- REJECTED: topology-only (π₁=ℤ infinite), anthropics, numerology, hidden params, new primitives.
+- CLASSIFICATION: spacetime N=3 = DERIVED; internal N=3 = SELECTED (derived-lower ∩ empirical-upper),
+  NOT emergent (no codim-1 attractor), NOT purely contingent (lower bound is a theorem).
+- OUTPUTS: first unresolved node = the UPPER bound N≤3 (empirical, no symmetry/catastrophe/topology
+  excludes N≥4). Strongest path = derive N≤3 from a stability principle (blocked: no codim-1
+  catastrophe) OR link internal N to the derived spacetime N (blocked: no mechanism). No-go theorem:
+  internal N=3 is irreducible-SELECTED. Success probability ≈ 0.1–0.2.
+- Outputs: MultiplicityThree_Report.txt; TQM.Core/ResearchQG/MultiplicityThreeAnalyzer.cs +
+  TQM.Tests/ResearchQG/TQM_MultiplicityThreeAudit.cs.
+- PROGRAM STATE: the 'why 3' question is now fully resolved: the spacetime 3 is DERIVED (complexity),
+  the internal 3 is SELECTED (CP lower bound + empirical Z-width/Higgs upper bound), and they are
+  NOT linked. The single remaining gap is the empirical upper bound N≤3 — no deeper origin without
+  new primitives.
