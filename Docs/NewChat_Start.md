@@ -6398,6 +6398,13 @@ nothing contradicted. Observable: none; parameters: none explicit; testability: 
 Verdict: genuine new invariant but currently untestable (no observable map).
 See Docs/Audits/MemoryChannelReconciliationAudit.md.
 
+**Theta Chain Reconciliation Audit (homonyms, unrelated):**
+Extracted TRM Θ→O₅→λ_Θ→g_obs (TO/TQK/LC/TOL guards). vs TQM-128-133 (autonomous
+information field): the two Θ are HOMONYMS — TRM Θ is a nonlocal observable-extraction
+chain (gauge/physics), TQM Θ is an information medium (transport/memory/species). No
+equivalence/integration/contradiction. Observable g_obs unspecified; testability LOW.
+Verdict: unrelated; no migration warranted. See Docs/Audits/ThetaChainReconciliationAudit.md.
+
 **TRM Quantum Engine Reconciliation Audit (new mathematics, lattice contact only):**
 Reconciled the external "Quantum Engine" formulas (D(x)=1/(1+x+bx²+x⁴), UV damping
 exp(-p²/Λ²), Padé kernel, loop finiteness) against TQM's QG/causal-set/graph-Laplacian/
