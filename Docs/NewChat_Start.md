@@ -5942,3 +5942,24 @@ Result: H is PRIMITIVE (a boundary condition), not derivable. Levels 1–4 pass;
   causality (primitive) → H (primitive boundary condition) → {Λ ~ H²/c² (genuine, causal-set),
   a₀ ~ cH (order only, 2π coincidental)}. Two primitives (causality + H) with NO deeper origin.
   Single remaining observational test: g†(z) EVOLUTION (mass-limited, QG-079).
+
+**PHASE 147 — ResearchQG-100: Why This H Audit (H is arbitrary, NOT fine-tuned):**
+Determined why reality has H ≈ 2.2e-18 s⁻¹. Result: H is essentially ARBITRARY within a huge
+window — constrained only from above, NOT fine-tuned. Levels 1–4 pass; L5 fails.
+
+- Selection landscape: age t ∝ 1/H; min ages: chemistry ~0.01, stars ~0.1, galaxies ~0.5, complex
+  life ~3 Gyr. Varying H/H0 over 1e-6..1e6: complex life needs log(H/H0) ≲ 0.66; stars ≲ 2.1.
+- KEY: the age constraint is only an UPPER bound on H (H ≲ ~5×H0 for life); there is NO lower
+  bound from age (smaller H → older universe). The life window spans ~6–7 decades, and a
+  log-uniform H lands in it ~50% of the time. H is NOT fine-tuned.
+- Λ ~ H²/c² makes the 'why now' coincidence AUTOMATIC (one selection, not two), but does not
+  explain H.
+- VERDICT: L1–L4 PASS; L5 FAIL. H ≈ 2.2e-18 s⁻¹ is NOT special — it is arbitrary within a huge
+  window, weakly (if at all) selected, and is the single unexplained given input (QG-099: primitive).
+- Outputs: HSelectionLandscape.csv, AnthropicWindow.csv (Data/derived) + 1 PNG;
+  Docs/WhyThisH.md; 2 source files + test.
+- PROGRAM TERMINUS (final): the ENTIRE QG-080–100 foundational investigation is COMPLETE. The
+  terminal answer: causality (primitive) and H (primitive, arbitrary boundary condition) are the
+  two irreducible inputs; Λ ~ H²/c² (genuine causal-set result) and a₀ ~ cH (order only, 2π
+  coincidental) are their descendants. The single remaining OBSERVATIONAL test is the g†(z)
+  EVOLUTION (mass-limited, QG-079). No deeper origin or new falsifiable prediction exists.
