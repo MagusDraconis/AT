@@ -6593,6 +6593,14 @@ hostile review). Two disjoint chains that do not meet. Final verdict: RESEARCH P
 publication blocker IF honestly scoped; blocks only an unqualified "derive Einstein" claim).
 See Docs/Audits/Q_ContinuumLimit.md.
 
+**Curved-Space Schrödinger Audit:**
+Determined whether L_Q implies a Laplace-Beltrami operator. Result: NO (Missing). L_Q only
+gives the flat Euclidean Laplacian (-d²/dx², 1D chain); no Δ_g/metric-dependent Laplacian
+exists. BdgUniquenessAnalyzer O3 explicitly REJECTED the graph Laplacian for Lorentzian
+signature (directed graph, non-symmetric) — the Lorentzian operator is the BDG layer operator
+→ □, a DIFFERENT chain. L_Q→Δ_g would be wrong signature (Riemannian vs Lorentzian). Two
+chains (L_Q→flat Schrödinger; BDG→□→GR) remain disjoint. See Docs/Audits/CurvedSpaceSchrodinger.md.
+
 **TRM Quantum Engine Reconciliation Audit (new mathematics, lattice contact only):**
 Reconciled the external "Quantum Engine" formulas (D(x)=1/(1+x+bx²+x⁴), UV damping
 exp(-p²/Λ²), Padé kernel, loop finiteness) against TQM's QG/causal-set/graph-Laplacian/
