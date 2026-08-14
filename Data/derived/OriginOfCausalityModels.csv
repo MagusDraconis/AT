@@ -1,0 +1,5 @@
+Axiom,Statement,Status,Derivation
+Transitivity,A≺B ∧ B≺C ⇒ A≺C,Axiom (but follows from consistency: an intransitive order admits paradoxes),derivable from consistency
+Antisymmetry,A≺B ⇒ ¬(B≺A),Axiom (no closed cycles),derivable from consistency (no time loops)
+Acyclicity,no chain A≺...≺A,Axiom,equivalent to antisymmetry on chains
+Local finiteness,finitely many elements between A and B,Axiom (physical discreteness),postulated (causal sets)

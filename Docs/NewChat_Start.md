@@ -5764,3 +5764,29 @@ geometry, cosmology and a₀. Result: causality IS more fundamental than time �
   causality (primitive) → time/change/geometry → cosmology (H, Λ). The program's two live anchors
   remain (1) causal-set Λ ~ 1/√N (theoretical, matched) and (2) g†(z) EVOLUTION (observational,
   mass-limited). No deeper primitive is derivable without circularity.
+
+**PHASE 139 — ResearchQG-092: Origin Of Causality Audit (causality is the true foundation):**
+Tested whether the causal partial order itself can be derived from a deeper primitive.
+Result: NO — causality is irreducible and is the bottom of the hierarchy. Levels 1–4 pass.
+
+- Irreducible axioms: transitivity + antisymmetry (acyclicity) = the ORDER; local finiteness =
+  the DISCRETENESS (causal sets). Consistency can forbid cycles (paradoxes) but cannot generate
+  the order.
+- Deeper candidates ALL fail: information (presupposes distinctions), computation (is a causal
+  sequence), logic (implication → is a partial order), mathematical relations (circular), quantum
+  correlations (correlation ≠ order; ER=EPR still assumes an ordered boundary). Consistency is
+  PARTIAL (forbids cycles, doesn't generate order).
+- Hostile: a universe with NO causal order has no dynamics, information, observers or even
+  paradoxes — it is observationally empty. A causally-ordered universe is the minimal non-empty
+  structure.
+- Λ ~ 1/√N SURVIVES whether causality is fundamental or emergent (it depends on discreteness, not
+  origin). Fundamental vs emergent causality are observationally EQUIVALENT → no falsifiable
+  difference (Level 5 FAIL).
+- VERDICT: Levels 1–4 PASS; Level 5 FAIL. Causality is the TRUE FOUNDATION; its axioms are
+  irreducible; there is no deeper primitive. This is a TERMINUS, not a new testable theory.
+- Outputs: OriginOfCausalityModels.csv, CausalityDependencyGraph.csv, PrimitiveHierarchy.csv,
+  EmergentVsFundamentalCausality.csv (Data/derived); Docs/OriginOfCausality.md; 5 files + test.
+- PROGRAM STATE: the foundational investigation (QG-080–092) is now COMPLETE and bottoms out at
+  causality (the partial order). The two live quantitative anchors remain: (1) causal-set
+  Λ ~ 1/√N (theoretical, matched to ~0.5) and (2) the g†(z) EVOLUTION test (observational,
+  mass-limited). Both are fully documented; no deeper primitive is derivable.

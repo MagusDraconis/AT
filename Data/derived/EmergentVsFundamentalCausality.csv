@@ -1,0 +1,7 @@
+Candidate,CanReconstructCausality,Circularity
+Information,NO — 'information' already presupposes distinctions (a relation),distinctions are relations; order must be assumed
+Computation,NO — computation is a causal sequence of steps,computation needs a before/after
+Logic,NO — implication (→) is itself a partial order,logic already contains →
+Consistency,PARTIAL — rules out cycles but not the order itself,consistency forbids paradoxes; does not generate order
+Mathematical relations,NO — a relation IS the primitive being derived,circular: relation to explain relation
+Quantum correlations,PARTIAL — entanglement gives correlations; not order,order (causal) vs correlation (acausal) distinct
