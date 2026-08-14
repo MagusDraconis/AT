@@ -5900,3 +5900,23 @@ uncertainty. Result: A = 2π accidental — it is NOT robustly identified.
   only quantitative anchor that survives as GENUINE is the causal-set Λ ~ 1/√N (QG-093); the g†
   relation's 2π is coincidental and its evolution (g† ∝ H vs a₀ constant) remains the single
   observational test (mass-limited, QG-079).
+
+**PHASE 145 — ResearchQG-098: Cosmological Rate Emergence Audit (H is input, not emergent):**
+Tested whether H itself is emergent from causal discreteness so that Λ and a₀ both derive from a
+single emergent rate. Result: H is NOT emergent — it is the INPUT. Levels 2–3 pass; L1, L5 fail.
+
+- Circularity: N = (R_H/l_P)⁴ with R_H = c/H ⇒ H defines N; to get a rate (s⁻¹) from N one must
+  divide by a time, and the only natural time is 1/H — which is H again. So R = H is INSERTED.
+- Given H as input: Λ = 1/√N/l_P² = H²/c² = 5.3e-53 m⁻² (obs 1.1e-52, α≈2.07); a₀ = cH = 6.5e-10
+  (obs 1.2e-10, order of magnitude). Both are powers of the SAME rate H (Λ = H², a₀ = cH).
+- Hostile: independent model (Λ + a₀ = 2 params) vs common-rate (1 param H). Common-rate is more
+  economical by 1 param, but does NOT explain H — it re-expresses Λ and a₀ in terms of observed H.
+  Compact notation, not a deeper theory.
+- VERDICT: L1 FAIL (H not derived from N); L2 PASS (Λ ~ H²/c²); L3 PASS (a₀ ~ cH); L4 PARTIAL
+  (single INPUT rate, not emergent); L5 FAIL. The 'single cosmic rate' is the OBSERVED H.
+- Outputs: EmergentRateModels.csv, LambdaRateConnections.csv, AccelerationRateConnections.csv
+  (Data/derived) + 1 PNG; Docs/UnifiedEmergentScaleReport.md; 2 source files + test.
+- PROGRAM STATE: the emergence question is answered: Λ and a₀ are two projections of the SAME
+  (input) rate H, but H itself is not emergent from causal discreteness. The program's terminal
+  structure is now fixed: causality → (input H) → {Λ ~ H²/c² (genuine), a₀ ~ cH (order only, 2π
+  coincidental)}. Single observational test remains g†(z) EVOLUTION (mass-limited).

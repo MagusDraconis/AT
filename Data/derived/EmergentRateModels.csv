@@ -1,0 +1,5 @@
+Quantity,Value,Note
+N,5.20E+243,(R_H/l_P)^4 with R_H=c/H (H input)
+Lambda_pred,5.31E-053,= 1/sqrt(N)/l_P^2
+A0_pred,6.55E-010,= cH (order of magnitude)
+HEmergesFromN,False,
