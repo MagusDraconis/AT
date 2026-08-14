@@ -11,7 +11,9 @@ peer-reviewed journal article.
 | File | Purpose |
 |---|---|
 | `TQM_v1_0.tex` | LaTeX source of the paper (build with `pdflatex TQM_v1_0.tex`) |
-| `TQM_v1_0.pdf` | Compiled PDF (see checklist in `TQM_v1_0_PublicationPackage.md`) |
+| `TQM_v1_0.pdf` | Compiled PDF of the paper |
+| `TQM_v1_0_Monograph.tex` | LaTeX source of the reference monograph (build with `pdflatex TQM_v1_0_Monograph.tex`) |
+| `TQM_v1_0_Monograph.pdf` | Compiled PDF of the reference monograph (~75 pages) |
 | `Zenodo_Metadata.json` | Zenodo upload metadata (title, authors, keywords, license) |
 | `CITATION.cff` | Citation File Format metadata |
 | `CHANGELOG.md` | Version history |

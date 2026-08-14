@@ -6736,6 +6736,15 @@ blocker; optional native re-derivation only; metric origin ALREADY SOLVED (close
 order + proven class + native factor -> g_uv determined). All 3 PASSED. Report:
 Docs/Audits/MetricOriginClosure.md.
 
+**Reference Monograph (v1.0):**
+Created Docs/Publication/TQM_v1_0_Monograph.tex (+ PDF, ~75 pages, book class). Parts:
+I Foundations (primitives/formalization/dynamics), II Continuum-Limit Program (7 ch:
+flat Laplacian, d'Alembertian, bridge, weighted/Laplace-Beltrami, curved Schrodinger,
+Einstein tensor, metric emergence), III Derivation Hierarchy (complexity/gauge/flavor/
+gravity/cosmology), IV Classification/No-Gos/Predictions, V Verification (tests, hostile
+audit trail, conclusion). Appendices: test inventory, confidence tables, worked 2-sphere
+Einstein derivation, research programs, glossary, references. Compiled with pdflatex.
+
 **Publication Readiness Final Audit:**
 Re-evaluated all 12 Round-2 FATAL issues against completed tests + actual results.
 Tally: RESOLVED=6 (Schrodinger circularity, internal-3 framing, T-09, completeness

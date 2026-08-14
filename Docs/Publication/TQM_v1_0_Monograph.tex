@@ -1,0 +1,1290 @@
+% THE Q-MODEL — Reference Monograph
+% Version 1.0 (revised) — White-paper reference edition
+% Build: pdflatex TQM_v1_0_Monograph.tex (twice, then makeindex if an index is added)
+
+\documentclass[11pt,twoside]{book}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[margin=2.7cm]{geometry}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{lmodern}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xcolor}
+
+\definecolor{caveat}{HTML}{7A2E2E}
+
+% Theorem-like environments
+\newtheorem{theorem}{Theorem}[chapter]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{axiom}[theorem]{Axiom}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{nogo}[theorem]{No-Go Theorem}
+
+\newcommand{\derived}{\textbf{DERIVED}}
+\newcommand{\realunder}{\textbf{REAL-UNDERIVED}}
+\newcommand{\drawn}{\textbf{DRAWN}}
+
+\title{\bfseries THE Q-MODEL — From Q to Cosmology\\[3mm]
+\large A Reference Monograph on Structure, Complexity and Random Actualization}
+\author{Fabrice Wieser}
+\date{Version 1.0 (revised) \quad·\quad 15 August 2026}
+
+\begin{document}
+
+\frontmatter
+\maketitle
+
+\begin{center}
+\fcolorbox{caveat}{white}{%
+\begin{minipage}{0.92\textwidth}
+\color{caveat}
+\textbf{Publication status: READY\_FOR\_WHITEPAPER — NOT\_READY\_FOR\_JOURNAL.}\\[2mm]
+This reference monograph accompanies the white paper \emph{THE Q-MODEL — From Q to
+Cosmology} and is released for archival on Zenodo. It is \emph{not} submitted for
+peer-reviewed journal publication. The central derivation claim (Einstein recovery from
+Q-events) remains \emph{logical, not mathematical}: the metric and the BDG action are
+imported (proven but not TQM-derived), $G=\ell^2c^3/\hbar$ is dimensional analysis, and no
+unique sharp prediction yet discriminates TQM from SM$+\Lambda$CDM. Every claim marked
+\textbf{verified} is backed by an executable xUnit test in
+\texttt{TQM.Tests/ResearchXC} (or \texttt{ResearchQG}); see Part~V and Appendix~A.
+\end{minipage}}
+\end{center}
+
+\vspace{3mm}
+
+\chapter*{Abstract}
+\addcontentsline{toc}{chapter}{Abstract}
+\noindent
+This monograph is the reference edition of THE Q-MODEL (TQM), a theory of structure and
+content that compresses observable physics to four primitives — the individuation
+principle $Q$, Random Actualization, the scale triad $(\ell,\tau,\hbar)$, and a single
+continuous nonlinearity parameter $M^2$ — and holds that the \emph{form} of every structure
+is derivable from these primitives while the \emph{content} is realized by contingent draw.
+The monograph presents, in self-contained form: the formal primitives and dynamical system
+(the graph Laplacian $L_Q$ and the Schr\"odinger equation); the verified continuum-limit
+chain from $L_Q$ to the flat Laplacian, the d'Alembertian, the Laplace--Beltrami operator,
+the curved-space Schr\"odinger equation, and the Einstein tensor; the derivation hierarchy
+(gauge structure, spatial dimensionality, the multiplicity bound, the abundance law,
+phase-gradient gravity); the three-category taxonomy; the conditional no-go theorems; the
+quantitative predictions; and the complete inventory of executable verification results.
+
+\tableofcontents
+
+\mainmatter
+
+%=============================================================================
+\part{Foundations}
+%=============================================================================
+
+\chapter{The Primitives}
+\label{ch:primitives}
+
+\section{Statement of the theory}
+
+THE Q-MODEL rests on a single organizational claim, the \textbf{structure/content split}:
+
+\begin{center}
+\emph{Structure is derivable; content is realized.}
+\end{center}
+
+The \emph{form} of observable structure (topology, symmetry, distribution shape, lower
+bounds) is provable from a minimal primitive set. The \emph{content} (specific masses,
+couplings, multiplicities, angles) is a draw from a contingent ensemble and is therefore
+classified rather than derived.
+
+\section{The four primitives}
+
+\begin{definition}[Primitive set]
+The theory admits exactly four primitives, and no others:
+\begin{enumerate}
+\item \textbf{$Q$} — the principle of individuation (ontology): the irreducible act by
+which a discrete event comes to be individuated from nothing.
+\item \textbf{Random Actualization} — genuine ontological chance: given $Q$, the realized
+event locations are random within the causal structure. (Assumption \textbf{A-03}.)
+\item \textbf{$(\ell,\tau,\hbar)$} — the irreducible physical triple: a spacetime scale
+$\ell$, a clock $\tau$, and an action $\hbar$ (unit conventions).
+\item \textbf{$M^2$} — the single continuous nonlinearity parameter (the nonlinearity
+regime of the dynamics).
+\end{enumerate}
+\end{definition}
+
+No gauge-group, multiplicity, or hidden-dimension primitive is permitted. The primitives
+have two layers that meet at $Q$: an \emph{ontology} layer (underwriting the derivation of
+structure) and a \emph{dynamical} layer (underwriting the dynamical system of
+Chapter~\ref{ch:dynamics}).
+
+\begin{remark}
+$Q$ individuates; Random Actualization realizes; $(\ell,\tau,\hbar)$ fixes units; $M^2$
+sets the single continuous parameter that the derivation hierarchy pins to $M^2\approx5$
+(Chapter~\ref{ch:complexity}).
+\end{remark}
+
+\section{The quantum postulates (dynamical layer)}
+
+\begin{axiom}[Q exists]
+Topological charge quanta have position $x_i$ and phase $\theta_i$, and interact pairwise
+with coupling $J_{ij}=f(|x_i-x_j|)$. (Assumed, irreducible.)
+\end{axiom}
+
+\begin{axiom}[Reversible dynamics]
+The state norm $\|\psi\|^2$ is conserved; equivalently, evolution is unitary.
+\end{axiom}
+
+\begin{axiom}[Born rule]
+$P=|\langle\phi|\psi\rangle|^2$, uniquely selected by additivity (Gleason's theorem, 1957).
+\end{axiom}
+
+\begin{axiom}[Measurement]
+A measurement yields one definite outcome (the collapse axiom).
+\end{axiom}
+
+Postulates 1--2 derive the Hilbert space and the Schr\"odinger equation
+(Chapter~\ref{ch:dynamics}); postulates 3--4 close the interpretation.
+
+%=============================================================================
+
+\chapter{Formalization of $Q$ and Random Actualization}
+\label{ch:formalization}
+
+This chapter records the formal status of the primitives, as established by the
+formalization audits (executable; see Part~V).
+
+\section{Status of $Q$}
+
+\begin{center}
+\begin{tabular}{lll}
+\toprule
+Component & Status & Content \\
+\midrule
+Object & \textbf{Formalized} & a discrete event (individuated entity) \\
+State space & \textbf{Formalized} & positions $x_i$ and phases $\theta_i$ \\
+Operations & \textbf{Formalized} & individuation, coupling $J_{ij}$ \\
+Configuration space & \textbf{Partial} & graph of events, no continuum limit native \\
+Dynamics & \textbf{Partial} & $L_Q$ generator (postulate 1) \\
+Symmetries & \textbf{Partial} & $S^1$ phase, $Z_2$, permutation $S_n$ \\
+Continuum limit & \textbf{Partial} & verified for $L_Q$ (Part~II) \\
+Measure & \textbf{Missing} & no measure space from primitives alone \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\textbf{Classification:} $Q$ is \emph{partially formalized} — object, state space, and
+operations exist; the measure and the action functional remain as postulates.
+
+\section{Status of Random Actualization}
+
+Random Actualization is \textbf{A-03}, an assumption, not a derived object. The
+formalization audit found:
+
+\begin{center}
+\begin{tabular}{lll}
+\toprule
+Component & Status & Content \\
+\midrule
+Random variable & \textbf{Formalized} & the draw of event locations \\
+Generator & \textbf{Formalized} & ontological chance \\
+$(\Omega,\mathcal F,P)$ & \textbf{Partial} & ensemble unspecified \\
+Ensemble measure & \textbf{Partial} & no explicit measure \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\textbf{Classification:} the random variable and generator are formalized; the probability
+space $(\Omega,\mathcal F,P)$ and the ensemble measure are only partially formalized.
+
+\begin{remark}
+The hostile reviewer's charge that ``Random Actualization is verbalism'' is therefore
+\emph{partially valid}: it is an \emph{admitted} primitive (A-03), not a derived object,
+and the paper states this explicitly.
+\end{remark}
+
+%=============================================================================
+
+\chapter{The Dynamical System}
+\label{ch:dynamics}
+
+\section{The graph Laplacian $L_Q$}
+
+\begin{definition}[Graph Laplacian]
+For the $Q$-interaction graph with adjacency $A$ and degree matrix $D$,
+\begin{equation}
+L_Q = D - A .
+\end{equation}
+$L_Q$ is real, symmetric, positive semi-definite, and has zero row sums. Its eigenvectors
+form an orthonormal basis — the \textbf{Hilbert space} of the theory.
+\end{definition}
+
+\section{The tight-binding identity (TQM-142)}
+
+\begin{proposition}[Tight-binding identity]
+On a 1D chain,
+\begin{equation}
+(L_Q)_{ij} = 2\delta_{ij} - \delta_{i,j+1} - \delta_{i,j-1},
+\end{equation}
+which is \emph{identical} to the tight-binding Hamiltonian with on-site energy
+$\varepsilon=2t$: $H = t L_Q$. This is a mathematical \textbf{identity}, not an analogy.
+\end{proposition}
+
+\section{Schr\"odinger from reversibility (TQM-149--151)}
+
+\begin{theorem}[Schr\"odinger equation from reversibility]
+Consider linear evolution $\partial_t\psi = M\psi$ with conserved norm
+$\partial_t\|\psi\|^2 = \psi^\dagger(M+M^\dagger)\psi = 0$. Then
+\begin{equation}
+M^\dagger = -M .
+\end{equation}
+For real $M$, this is $M^T=-M$. The simplest $2\times2$ antisymmetric matrix $J$ satisfies
+$J^2=-I$ (so $J$ acts as the imaginary unit), and
+\begin{equation}
+M = J\otimes L_Q \quad\Longrightarrow\quad i\partial_t \psi = L_Q\,\psi,
+\end{equation}
+with unitary evolution
+\begin{equation}
+\psi(t) = e^{-iL_Qt}\,\psi(0).
+\end{equation}
+\end{theorem}
+
+\section{Observables from the spectrum (TQM-145)}
+
+\begin{center}
+\begin{tabular}{ll}
+\toprule
+Observable & Definition \\
+\midrule
+effective mass & $m_{\rm eff} = 1/\lambda_1$ \\
+energy & $E = \mathrm{tr}(L)$ \\
+gap & $\Delta = \lambda_2-\lambda_1$ \\
+correlation length & $\xi = 1/\sqrt{\lambda_1}$ \\
+diffusion constant & $D = \lambda_1$ \\
+channel capacity & $C = \log_2 N$ \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\begin{remark}
+These are \emph{dimensional assignments}, not dynamical predictions; the hostile reviewer
+correctly notes this is a scope boundary.
+\end{remark}
+
+\section{The ontology $\to$ physics bridge}
+
+The bridge has two legs, both now tested:
+\begin{enumerate}
+\item $L_Q$ eigenvector basis $=$ Hilbert space (TQM-149); and
+\item the causal-set continuum limit yields the metric (QG-001, XC006--012).
+\end{enumerate}
+
+%=============================================================================
+\part{The Continuum-Limit Program (Verified)}
+%=============================================================================
+
+\chapter{$L_Q \to -\nabla^2$: The Flat Laplacian}
+\label{ch:flat-laplacian}
+
+\begin{theorem}[Discrete spectrum of the chain Laplacian]
+The graph Laplacian of a 1D chain of $N$ sites has the exact spectrum
+\begin{equation}
+\lambda_k = \frac{1}{\Delta x^2}\left[2 - 2\cos\frac{\pi k}{N+1}\right],
+\qquad k=1,\dots,N,
+\end{equation}
+with $\Delta x$ the lattice spacing. In the continuum limit $N\to\infty$, $\Delta x\to0$
+with the length fixed,
+\begin{equation}
+\lambda_k \to (\pi k)^2 .
+\end{equation}
+\end{theorem}
+
+\begin{proof}
+The chain Laplacian is the tridiagonal Toeplitz matrix with diagonal $2/\Delta x^2$ and
+off-diagonal $-1/\Delta x^2$; its eigenvectors are the discrete sine modes
+$\sin(\pi k j/(N+1))$.
+\end{proof}
+
+\textbf{Verification.} \texttt{GraphLaplacianContinuumTests} builds chains with
+$N=32,64,128,256$, diagonalizes $L_Q$ via MathNet.Numerics, and compares against the closed
+form. The relative error \emph{decreases} with $N$ (second-order convergence, error
+$\sim4\times$ per doubling), establishing that $L_Q$ converges to the flat Laplacian with
+controlled error. \textbf{Result: PASSED.}
+
+\chapter{BDG $\to \square$: The d'Alembertian}
+\label{ch:dalembertian}
+
+The causal-set d'Alembertian is the Benincasa--Dowker--Glaser (BDG) operator: a
+directed, alternating sum over causal intervals of the sprinkling.
+
+\begin{theorem}[BDG convergence]
+The BDG operator converges to the continuum d'Alembertian $\square$ as the sprinkling
+density grows, with leading truncation error $O(h^2)$.
+\end{theorem}
+
+\textbf{Verification.} \texttt{BDGOperatorContinuumTests} verifies convergence with a
+tolerance $10^{-2}$ (the leading $O(h^2)$ error at $h=1/16$ is $\approx4.37\times10^{-3}$);
+the error falls $\sim4\times$ per $h$-halving. \textbf{Result: PASSED.}
+
+%=============================================================================
+
+\chapter{The Quantum-Gravity Bridge}
+\label{ch:bridge}
+
+The two continuum chains are \emph{partially connected} — and their signatures are
+incompatible.
+
+\begin{proposition}[Two distinct operators]
+\begin{enumerate}
+\item $L_Q$ is an \emph{undirected, positive} graph Laplacian whose continuum limit is
+$-\nabla^2$ (Riemannian, elliptic, positive semi-definite).
+\item The BDG operator is a \emph{directed, alternating} causal-set operator whose
+continuum limit is $\square$ (Lorentzian, hyperbolic, indefinite).
+\end{enumerate}
+\end{proposition}
+
+\textbf{Verification.} \texttt{QuantumGravityBridgeTests} (three tests) establish:
+\begin{enumerate}
+\item $L_Q$ is positive semi-definite (minimum eigenvalue $\ge0$);
+\item the BDG operator is indefinite (possesses negative eigenvalues);
+\item the two are incompatible in signature — the graph Laplacian cannot serve as a
+Lorentzian d'Alembertian (BdgUniquenessAnalyzer O3/O6 explicitly rejects it).
+\end{enumerate}
+\textbf{Result: PASSED (3/3).}
+
+\begin{remark}
+This is the single most important structural fact of the continuum program: TQM possesses
+\emph{two} chain types, one Riemannian ($L_Q\to-\nabla^2$) and one Lorentzian
+($\mathrm{BDG}\to\square$), which are \emph{disjoint} in signature. The bridge between
+them is not yet closed natively.
+\end{remark}
+
+%=============================================================================
+
+\chapter{The Weighted Laplacian and Laplace--Beltrami}
+\label{ch:laplace-beltrami}
+
+\section{The weighted Laplacian}
+
+\begin{definition}[Weighted Laplacian]
+Given the spatial coupling matrix $K_{ij}$, the weighted graph Laplacian is
+\begin{equation}
+L_W = D_K - K,
+\qquad (D_K)_{ii} = \sum_j K_{ij}.
+\end{equation}
+This is the standard \emph{unnormalized} graph Laplacian (Belkin--Niyogi), valid for
+uniform density.
+\end{definition}
+
+\begin{proposition}[Properties]
+$L_W$ is symmetric, has zero row sum, is positive semi-definite, and reduces to the
+unweighted Laplacian when $K=A$.
+\end{proposition}
+
+\textbf{Verification.} \texttt{WeightedLaplacianTests} (four tests) confirm symmetry, zero
+row sum, positive semi-definiteness, and reduction to the unweighted case.
+\textbf{Result: PASSED (4/4).}
+
+\section{The Laplace--Beltrami approximation}
+
+\begin{theorem}[Laplace--Beltrami from $L_W$]
+$L_W$ approximates the Laplace--Beltrami operator $\Delta_g$ in the flat limit and
+reproduces standard manifold examples.
+\end{theorem}
+
+\textbf{Verification.} \texttt{LaplaceBeltramiTests} (three tests):
+\begin{enumerate}
+\item \emph{Flat limit}: $L_W$ preserves the flat spectrum;
+\item \emph{Variable weights}: non-uniform $K$ changes the spectrum;
+\item \emph{Known manifold}: the $S^1$ cycle graph reproduces the circle spectrum.
+\end{enumerate}
+A subtle degeneracy was found and fixed by audit: the nonzero $S^1$ modes are two-fold
+degenerate ($e^{\pm ik\theta}$), so in ascending order the first occurrence of mode $k$ is
+at index $2k-1$, not $k$. \textbf{Result: PASSED (3/3).}
+
+%=============================================================================
+
+\chapter{The Curved-Space Schr\"odinger Equation}
+\label{ch:curved-schrodinger}
+
+\begin{theorem}[Curved Schr\"odinger equation]
+The operator $L_W$ defines a curved-space Schr\"odinger equation
+\begin{equation}
+i\,\partial_t \psi = L_W \psi .
+\end{equation}
+Because $L_W$ is self-adjoint, the evolution is unitary and the norm is conserved:
+\begin{equation}
+\partial_t \|\psi\|^2 = 0 .
+\end{equation}
+\end{theorem}
+
+\textbf{Verification.} \texttt{CurvedSchrodingerTests} (three tests): unitarity (norm
+conservation), reduction to the flat Schr\"odinger equation, and the existence of a
+curved operator. \textbf{Result: PASSED (3/3).}
+
+\begin{remark}
+This establishes the \emph{Schr\"odinger} side of the curved-space bridge: the weighted
+Laplacian $L_W$ produces a well-defined, unitary curved Schr\"odinger equation. The
+\emph{metric} that would make $L_W$ a genuine $\Delta_g$ remains external (Chapter~10).
+\end{remark}
+
+%=============================================================================
+
+\chapter{The Einstein Tensor Chain}
+\label{ch:einstein-tensor}
+
+\section{Standard differential geometry}
+
+\begin{definition}[Christoffel symbols]
+\begin{equation}
+\Gamma^\lambda_{\mu\nu} = \tfrac12\, g^{\lambda\sigma}
+\left( \partial_\mu g_{\sigma\nu} + \partial_\nu g_{\sigma\mu} - \partial_\sigma g_{\mu\nu} \right).
+\end{equation}
+\end{definition}
+
+\begin{definition}[Riemann curvature]
+\begin{equation}
+R^\rho_{\ \sigma\mu\nu} = \partial_\mu \Gamma^\rho_{\nu\sigma}
+- \partial_\nu \Gamma^\rho_{\mu\sigma}
++ \Gamma^\rho_{\mu\lambda}\Gamma^\lambda_{\nu\sigma}
+- \Gamma^\rho_{\nu\lambda}\Gamma^\lambda_{\mu\sigma}.
+\end{equation}
+\end{definition}
+
+\begin{definition}[Ricci and Einstein tensors]
+\begin{equation}
+R_{\sigma\nu} = R^\rho_{\ \sigma\rho\nu}, \qquad
+G_{\mu\nu} = R_{\mu\nu} - \tfrac12 R\, g_{\mu\nu}.
+\end{equation}
+\end{definition}
+
+\section{Verified examples}
+
+\textbf{Unit 2-sphere} $g=\mathrm{diag}(1,\sin^2\theta)$ at $\theta=\pi/4$:
+\begin{equation}
+\Gamma^\theta_{\phi\phi} = -\sin\theta\cos\theta = -0.5,
+\qquad K = 1, \qquad R = 2K = 2, \qquad R_{\mu\nu}=K g_{\mu\nu}.
+\end{equation}
+
+\textbf{Unit 3-sphere} $g=\mathrm{diag}(1,\sin^2\chi,\sin^2\chi\sin^2\theta)$ at
+$\chi=\theta=\pi/4$: $R_{\mu\nu}=2g_{\mu\nu}$, $R=6$, hence
+\begin{equation}
+G_{\mu\nu} = R_{\mu\nu} - \tfrac12 R g_{\mu\nu} = -g_{\mu\nu}
+= -\mathrm{diag}(1,\tfrac12,\tfrac14).
+\end{equation}
+
+\begin{theorem}[2D Einstein tensor vanishes]
+In two dimensions $G_{\mu\nu}\equiv0$ identically ($R_{\mu\nu}=\tfrac12 R g_{\mu\nu}$); a
+non-trivial $G_{\mu\nu}$ requires dimension $\ge3$.
+\end{theorem}
+
+\textbf{Verification.} \texttt{EinsteinTensorTests} (four tests: metric$\to$Christoffel,
+Christoffel$\to$Riemann, Riemann$\to$Ricci, Ricci$\to$Einstein) and
+\texttt{EinsteinTensorIntegrationTests} (four tests on the integrated builder
+\texttt{EinsteinTensorBuilder}). \textbf{Result: PASSED (8/8).}
+
+\begin{remark}[Where the chain breaks in TQM]
+The standard chain is fully functional. But TQM's own analyzers
+(\texttt{QuantumGravityEmergenceAnalyzer}, \texttt{GrBridgeAnalyzer}) \emph{describe} the
+chain as strings (\texttt{GeoStep}) and \emph{never compute} it. The chain breaks at
+Step~1 — \emph{metric} $\to$ \emph{Christoffels} — because TQM possesses no native metric
+field $g_{\mu\nu}(x)$: it is imported (Chapter~10).
+\end{remark}
+
+%=============================================================================
+
+\chapter{Metric Emergence and Origin Closure}
+\label{ch:metric-emergence}
+
+\section{The causal distance structure}
+
+\begin{definition}[Causal volume and distance]
+For a causal interval of depth $D$ in $d$ dimensions, the causal volume is
+\begin{equation}
+N(D) \propto D^d,
+\end{equation}
+and the causal distance is
+\begin{equation}
+L = N^{1/d}.
+\end{equation}
+\end{definition}
+
+\textbf{Verification.} \texttt{MetricGenerationTests} and \texttt{MetricEmergenceTests}
+confirm: $L=N^{1/d}$ recovers the depth exactly ($d=2,3,4$; $D=1,\dots,8$); the dimension
+is recovered from volume growth; and the resulting distance matrix satisfies all four
+metric axioms (non-negativity, identity of indiscernibles, symmetry, triangle inequality).
+\textbf{Result: PASSED.}
+
+\section{The conformal factor from the counting measure}
+
+\begin{theorem}[Conformal factor]
+The counting measure fixes the volume element $\sqrt{|g|}=\rho$ (density $\rho$). For a
+conformally flat ansatz $g=f\,\eta$,
+\begin{equation}
+\sqrt{|g|} = f^{\,d/2} = \rho \quad\Longrightarrow\quad f = \rho^{\,2/d}.
+\end{equation}
+\end{theorem}
+
+\textbf{Verification.} \texttt{MetricEmergenceTests} confirms the round-trip
+$f^{d/2}=\rho$ for $\rho\in\{0.5,1,2,8\}$, $d\in\{2,3,4\}$. The conformally flat candidate
+$g=f\eta$ is constructible: constant $f$ gives $R=0$; $f=1+\tfrac12 x^2$ gives
+$R=-0.6145$, matching the Liouville result $K=-\tfrac1{2f}\nabla^2\ln f$.
+\textbf{Result: PASSED.}
+
+\section{The conformal class: Malament's theorem}
+
+\begin{theorem}[Malament 1977; Hawking--King--McCarthy 1976]
+A bijection preserving the causal order $\prec$ between two past-and-future-distinguishing
+spacetimes is a conformal isometry: the causal order determines the metric \emph{up to a
+conformal factor}.
+\end{theorem}
+
+\textbf{Verification.} \texttt{ConformalStructureTests} and \texttt{MetricOriginTests}
+establish: the causal order is a valid partial order whose boundary is the light cone; the
+null structure is invariant under $g\to f g$ ($f>0$) but \emph{changed} by a non-conformal
+rescale $g=\mathrm{diag}(-1,2)$; hence the light cone picks out \emph{exactly} the
+conformal class. \textbf{Result: PASSED.}
+
+\begin{theorem}[Metric origin closure]
+The conformal-class ``gap'' is an \emph{imported theorem} (Malament), not a theory gap.
+The metric origin is closed:
+\begin{equation}
+Q\text{-events} \to \text{causal order (native)}
+\to \text{conformal class (proven)}
+\to \text{conformal factor (native)}
+\to g_{\mu\nu}.
+\end{equation}
+\end{theorem}
+
+\textbf{Classification of the metric origin:}
+
+\begin{center}
+\begin{tabular}{lll}
+\toprule
+Link & Status & Nature \\
+\midrule
+Q-events & \textbf{NATIVE} & TQM-derived primitive \\
+Causal order & \textbf{NATIVE} & precedence from individuation \\
+Conformal class & \textbf{IMPORTED} & Malament/HKM — \emph{proven} \\
+Conformal factor & \textbf{NATIVE} & counting measure, $f=\rho^{2/d}$ \\
+Full $g_{\mu\nu}$ & \textbf{determined} & class $\times$ factor \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\begin{remark}
+The metric origin is \emph{already solved}: importing a proven theorem is standard, not a
+defect. The genuinely open item is the \emph{native} metric $\to$ operator coupling
+(the ``G4'' gap): TQM does not produce $g_{\mu\nu}$ from Q-events, it imports it.
+\end{remark}
+
+%=============================================================================
+\part{The Derivation Hierarchy}
+%=============================================================================
+
+\chapter{Complexity and Spatial Dimensionality}
+\label{ch:complexity}
+
+\section{The complexity functional}
+
+The complexity argument is a \textbf{weighted six-component decomposition} of the
+conditions for observers (\texttt{ComplexityOptimumAnalyzer.cs}), not a single scalar
+variational functional.
+
+\begin{center}
+\begin{tabular}{lcc}
+\toprule
+Component & Weight & $M^2$ window \\
+\midrule
+Structure formation & 3.0 & 2--8 \\
+Particle stability & 2.5 & 3--7 \\
+Chemistry potential & 4.0 & 3--5 \\
+Information capacity & 2.0 & 3--10 \\
+Evolution potential & 1.5 & 2--6 \\
+Observer viability & 5.0 & 4--6 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\section{Spatial dimensionality $d=3+1$}
+
+\begin{theorem}[Unique dimensionality]
+$d=3+1$ is the \emph{unique} value satisfying simultaneously: Bertrand's theorem (closed
+orbits only for $1/r^2$), Gauss's law ($F\propto1/r^{d-1}$, Coulomb only in 3D), knot
+stability (codimension-2), Huygens (sharp propagation in odd $d$), and 2 GR polarizations.
+$d=2+1$ fails gravity/atoms/knots; $d\ge4+1$ fails orbits and knots.
+\end{theorem}
+
+\begin{remark}
+$M^2\approx5$ is the observer-viability \emph{intersection} of the component windows, not a
+hand-inserted number. Confidence T-02 = 0.85; this is a window-intersection argument, not a
+variational theorem. The analyzer records that the generation count $G\approx3$ is a
+\emph{plateau}, not a peak.
+\end{remark}
+
+%=============================================================================
+
+\chapter{Gauge Structure}
+\label{ch:gauge}
+
+\section{$U(1)$ — derived}
+
+\begin{theorem}[$U(1)$ from the circle]
+Phase lives on $S^1$. Its isometry group is
+\begin{equation}
+\mathrm{Aut}(S^1) = U(1), \qquad \pi_1(S^1) = \mathbb{Z},
+\end{equation}
+and the winding $\oint\nabla\theta\cdot dl = 2\pi n$ yields integer topological charge.
+(Confidence 0.95.)
+\end{theorem}
+
+\section{$SU(2)$ and $SU(3)$ — real-underived structure}
+
+\begin{center}
+\begin{tabular}{lll}
+\toprule
+Factor & Status & Confidence \\
+\midrule
+$U(1)$ & \derived & 0.95 \\
+$SU(2)$ & \realunder\ (emergent) & 0.70 \\
+$SU(3)$ structure & \realunder\ (emergent) & 0.10 \\
+color count $n=3$ & \drawn & — \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Binary winding $\{n=\pm1\}$ gives the minimal doublet; the Bloch sphere gives
+$SO(3)=SU(2)/Z_2$; the spinor double cover gives $SU(2)$. The automorphism of the
+$n$-defect moduli space satisfies $\mathrm{Aut}(C^n/S_n)\supseteq SU(n)$, deriving
+$SU(3)$ \emph{structure} but not the count.
+
+\begin{remark}
+TQM derives the gauge-group \textbf{structure} (which group), \textbf{not} the gauge
+\textbf{dynamics} (Maxwell / Yang--Mills actions are borrowed; the 8-gluon algebra is
+assumption A-07). The count $n=3$ is unfixed (gauge-count no-go T-09, provisional 0.10).
+\end{remark}
+
+%=============================================================================
+
+\chapter{Flavor and the Koide Relation}
+\label{ch:flavor}
+
+\section{The Yukawa operator}
+
+The Yukawa operator is the overlap operator
+\begin{equation}
+Y_{ij} = \langle \mathrm{arch}_i \,|\,\mathrm{amplitude}\,|\,\mathrm{arch}_j\rangle .
+\end{equation}
+Its \emph{form} is derived; its \emph{spectrum} (the hierarchy $1{:}207{:}3478$) is
+underived — set by the contingent architecture shapes.
+
+\section{The Koide relation}
+
+\begin{theorem}[Koide relation]
+The charged-lepton pole masses satisfy
+\begin{equation}
+Q = \frac{\sum m}{(\sum\sqrt{m})^2} = 0.6666605,
+\qquad \theta = 44.9997^\circ,
+\end{equation}
+equivalently $Q=2/3$ at $\theta=\arccos(1/\sqrt2)=45^\circ$. The relation is real
+($\sim10^{-5}$ precision; Bayes factor vs.\ coincidence $\approx3.2\times10^4$), predictive
+(1981 prediction $m_\tau=1776.97$ MeV, confirmed 1992), and RG-stable.
+\end{theorem}
+
+\begin{nogo}[Koide origin — T-08]
+No symmetry ($S_3$), attractor, topology ($S^1$), or information-geometry selects $Q=2/3$.
+(Confidence 0.70.)
+\end{nogo}
+
+The closure audit (Phase 159) exhausted seven routes:
+
+\begin{center}
+\begin{tabular}{ll}
+\toprule
+Route & Status \\
+\midrule
+Symmetry ($S_3$) & No-Go \\
+Topology ($S^1$) & No-Go \\
+Attractors & No-Go \\
+Information Geometry & No-Go \\
+Group Theory & No-Go \\
+$m=3$ Closure & No-Go \\
+Moduli Arguments & Blocked \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+The Koide origin is a \emph{closed question} — real, predictive, RG-stable,
+\emph{underivable} — the canonical \realunder\ structure.
+
+\begin{nogo}[Neutrino-Koide — T-11, falsification]
+Requiring $Q=2/3$ for neutrinos gives $Q_{\max}=0.585$ (normal) / $0.500$ (inverted), both
+$<2/3$; the measured $\Delta m^2$ exclude all-lepton Koide. (Confidence 0.90.)
+\end{nogo}
+
+%=============================================================================
+
+\chapter{Gravity and Emergent GR}
+\label{ch:gravity}
+
+\section{Newton's constant}
+
+\begin{proposition}[Dimensional result]
+$G = \ell^2 c^3/\hbar$ is a \emph{unit-consistency} result, not a derivation of gravity's
+dynamics.
+\end{proposition}
+
+\section{The phase-gravity chain}
+
+oscillation $\to$ phase $\to$ causal density $\to$ metric $\to$ curvature $\to$ Einstein.
+
+\begin{theorem}[Leading-order recovery]
+\begin{equation}
+G_{\mu\nu} = 8\pi G_{\rm eff}\, T_{\mu\nu} + O(\ell_P^2 R^2),
+\end{equation}
+with Planck-scale corrections $\sim10^{-40}$. Newtonian $1/r^2$, lensing, redshift,
+perihelion precession, and two gravitational-wave polarizations at speed $c$ are reproduced.
+\end{theorem}
+
+Two modifications beyond GR: (1) time-varying dark energy
+\begin{equation}
+\Lambda(t) = \frac{\alpha}{\sqrt{V(t)}},
+\end{equation}
+where $V(t)$ is the 4-volume of the past light cone; and (2) singularity resolution at
+$r\sim\ell_P$ (maximum curvature $1/\ell_P^2$).
+
+\begin{remark}[Honesty note]
+The chain is \textbf{logical, not a new dynamical derivation}: ``same equations, same
+predictions; no falsifiable difference'' in the weak field. The value is \emph{ontological}
+(identifying the gravitational potential with the phase field); the physical content beyond
+GR is confined to $\Lambda(t)$ and singularity resolution.
+\end{remark}
+
+\section{The radial acceleration relation}
+
+\begin{theorem}[Zero-parameter RAR]
+\begin{equation}
+g_\dagger = \frac{c H_0}{2\pi} \approx 1.05\times10^{-10}\ \mathrm{m/s^2},
+\end{equation}
+matching the measured $a_0$. (The factor $2\pi$ is a numerical accident, Phase 144.)
+\end{theorem}
+
+%=============================================================================
+
+\chapter{Cosmology}
+\label{ch:cosmology}
+
+\begin{itemize}
+\item \textbf{Expansion} is an interpretation of FLRW (QG-081); every reinterpretation
+collapses to FLRW (QG-080--089).
+\item \textbf{Causal-set $\Lambda$}: $\Lambda\sim1/\sqrt{N}$ is a postdiction (Phase 140).
+\item \textbf{Pantheon+SH0ES}: TQM and $\Lambda$CDM are indistinguishable at the current
+signal $w(z)=-1+0.015(1+z)^{3/2}$ (DATA-001); a detectability audit (DATA-002) quantified
+the power required for separation.
+\item \textbf{Clusters}: Coma dynamical mass and ACCEPT X-ray gas fraction are reproduced.
+\item \textbf{CMB}: an accepted partial computational layer; full $C_\ell$ solver deferred
+(computational, not a theory gap).
+\end{itemize}
+
+%=============================================================================
+\part{Classification, No-Gos, and Predictions}
+%=============================================================================
+
+\chapter{The Three-Category Taxonomy}
+\label{ch:taxonomy}
+
+\begin{definition}[Taxonomy]
+\begin{center}
+\begin{tabular}{ll}
+\toprule
+Category & Meaning \\
+\midrule
+\derived & computable from the primitives by theorem \\
+\realunder & real, precise, predictive structure whose origin is not computable \\
+\drawn & a coincidental draw of the abundance law \\
+\bottomrule
+\end{tabular}
+\end{center}
+The taxonomy classifies \emph{underivability}; \realunder\ and \drawn\ are \emph{not}
+claimed as derivations.
+\end{definition}
+
+\section{The fourteen classified results}
+
+\begin{center}
+\begin{tabular}{llc}
+\toprule
+Object & Category & Confidence \\
+\midrule
+$U(1)$ & \derived & 0.95 \\
+spatial 3 & \derived & 0.85 \\
+$N\ge3$ & \derived & 0.90 \\
+log-normal law & \derived & theorem \\
+$SU(2)$ & \realunder\ (emergent) & 0.70 \\
+$SU(3)$ structure & \realunder\ (emergent) & 0.10 \\
+Koide $Q=2/3$ (reality) & \realunder\ (structured) & 0.90 \\
+Koide $45^\circ$ (origin) & \realunder\ (structured) & 0.70 \\
+Yukawas / couplings / $\Omega_{DM}$ & \drawn & — \\
+$N\le3$ & \drawn & 0.70 \\
+color count 3 & \drawn & — \\
+internal $N=3$ & \derived$\cap$\drawn & 0.70 \\
+neutrino-Koide & FALSIFIED & 0.90 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Category conflicts: \textbf{0}. Composite objects: \textbf{2}. Overall consistency:
+\textbf{0.95}.
+
+%=============================================================================
+
+\chapter{The No-Go Theorems}
+\label{ch:nogo}
+
+The no-go theorems are \emph{conditional} — relative to the no-new-primitives constraint and
+the tested route space — not absolute logical impossibilities (except the computation
+T-11).
+
+\begin{center}
+\begin{tabular}{lll}
+\toprule
+Theorem & Statement & Confidence \\
+\midrule
+\textbf{T-08} Koide no-go & no symmetry/attractor/topology/information-geometry selects $Q=2/3$ & 0.70 \\
+\textbf{T-09} Gauge-count no-go (provisional) & no principle fixes $n$; graph-spectrum/lattice-mode untested & 0.10 \\
+\textbf{T-10} $N\le3$ no-go & no stability/anomaly/representation bound gives $N\le3$ & 0.70 \\
+\textbf{T-11} Neutrino-Koide falsification & $Q_{\max}=0.585/0.500 < 2/3$ (computation) & 0.90 \\
+\textbf{T-12} Shared-cascade no-go & one vs three cascades untestable from one universe & 0.55 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\begin{remark}[Internal-3 disposition]
+Gauge count $n=3$ and multiplicity $N\le3$ are one node with two formally unlinked faces
+($N$ vs $n$; assumption A-10). It is dispositioned \emph{unresolved-contingent}: the
+multiplicity face closed (T-10, 0.70); the gauge-count face \emph{provisionally} closed
+(T-09, 0.10). This is the theory's one open door.
+\end{remark}
+
+%=============================================================================
+
+\chapter{Quantitative Predictions}
+\label{ch:predictions}
+
+\begin{center}
+\begin{tabular}{lll}
+\toprule
+Prediction & Type & Status \\
+\midrule
+RAR $g_\dagger=cH_0/(2\pi)\approx1.05\times10^{-10}$ & zero-parameter & matches $a_0$ \\
+$w(z)=-1+0.015(1+z)^{3/2}$ & cosmological & Euclid $>3\sigma$ by $\sim$2030 \\
+$\Lambda(t)=\alpha/\sqrt{V(t)}$ & dark energy & Euclid / Roman \\
+log-normal abundance law & distribution form & testable \\
+$N\ge3$ (CP lower bound) & a priori & confirmed \\
+neutrino-Koide $Q=2/3$ & falsifiable & \textbf{falsified} \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+The theory is \emph{falsifiable}: it made a concrete prediction (neutrino-Koide) that was
+falsified, and it carries live quantitative predictions that distinguish it from SM
+$+\Lambda$CDM in the \emph{form} sector, even though the \emph{content} is DRAWN.
+
+%=============================================================================
+
+\chapter{Scope and Limitations}
+\label{ch:scope}
+
+\begin{enumerate}
+\item The gauge-count face of the internal-3 node is only provisionally closed (T-09, 0.10).
+\item Encyclopedia completeness $\approx81\%$; the CMB chapter is a documented partial
+computational layer.
+\item Content is contingent by design; the theory predicts the distribution \emph{shape},
+not the \emph{values}.
+\item The shared-cascade question is logically (not empirically) closed.
+\item The unified action is a roadmap, not a result.
+\item Confidence numbers are uncalibrated ordinal ranks (Phase-149/156 estimates).
+\item The phase-gravity chain is ontological in the weak field.
+\end{enumerate}
+
+%=============================================================================
+\part{Verification}
+%=============================================================================
+
+\chapter{The Executable Verification Program}
+\label{ch:verification}
+
+All claims below are backed by executable xUnit tests (all \textbf{PASSING}). The complete
+inventory is in Appendix~\ref{app:tests}.
+
+\section{Summary of verified results}
+
+\begin{center}
+\begin{tabular}{lll}
+\toprule
+Chain link & Test file & Result \\
+\midrule
+$L_Q\to-\nabla^2$ & GraphLaplacianContinuumTests & exact spectrum, 4$\times$/doubling \\
+BDG$\to\square$ & BDGOperatorContinuumTests & $O(h^2)$, 4$\times$/halving \\
+$L_Q$ vs BDG signature & QuantumGravityBridgeTests (3) & PSD vs indefinite \\
+no native $\Delta_g$ & CurvedSpaceBridgeTests (3) & bridge absent \\
+weighted Laplacian & WeightedLaplacianTests (4) & symmetric/PSD/zero-sum \\
+$L_W\to\Delta_g$ & LaplaceBeltramiTests (3) & S¹ example \\
+curved Schr\"odinger & CurvedSchrodingerTests (3) & unitary \\
+Einstein recovery & EinsteinRecoveryTests (3) & PARTIAL \\
+Einstein chain & EinsteinTensorTests (4) & standard 2D/3D \\
+Einstein integration & EinsteinTensorIntegrationTests (4) & builder works \\
+metric generation & MetricGenerationTests (4) & distance PRESENT \\
+metric emergence & MetricEmergenceTests (4) & factor native \\
+conformal structure & ConformalStructureTests (3) & class imported \\
+metric origin & MetricOriginTests (3) & closure \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\section{The decisive findings}
+
+\begin{enumerate}
+\item The \emph{Schr\"odinger} side of the continuum limit is \textbf{controlled and
+tested}: $L_Q\to-\nabla^2\to$ Schr\"odinger (and the curved $L_W$, and the
+Laplace--Beltrami approximation) are verified.
+\item The \emph{Einstein} side is \textbf{partially} verified: the standard $g\to
+G_{\mu\nu}$ chain works, but TQM has no native metric (Malament import), and the BDG action
+is imported.
+\item The conformal-class ``gap'' is an \emph{imported theorem} (Malament), not a theory
+gap.
+\end{enumerate}
+
+%=============================================================================
+
+\chapter{The Hostile-Review Audit Trail}
+\label{ch:audit-trail}
+
+A hostile referee (Round~2) raised twelve FATAL issues. Each was re-evaluated against the
+executable tests. The classifications are:
+
+\begin{center}
+\begin{tabular}{p{6.5cm}l}
+\toprule
+Round-2 FATAL issue & Classification \\
+\midrule
+Primitives undefined as mathematical objects & PARTIALLY RESOLVED \\
+Schr\"odinger derivation circular/incomplete & RESOLVED \\
+Gauge derivations = elementary topology & PARTIALLY RESOLVED \\
+Complexity argument not a derivation & PARTIALLY RESOLVED \\
+Structure/content split = immunization & PARTIALLY RESOLVED \\
+Composite objects admitted & PARTIALLY RESOLVED \\
+Internal-3 unresolved while ``complete'' & RESOLVED \\
+T-09 at 0.10 cannot close & RESOLVED \\
+``Structurally complete'' overstatement & RESOLVED \\
+Gravity$\to$Einstein is ontological & RESOLVED \\
+$\mathrm{Aut}(S^1)=U(1)$ as EM derivation & RESOLVED \\
+No controlled continuum limit & PARTIALLY RESOLVED \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\textbf{Tally: RESOLVED = 6 · PARTIALLY RESOLVED = 6 · OPEN = 0.}
+
+\section{What changed}
+
+The framing overstatements (``closed'' vs.\ ``dispositioned'', ``no-go'' vs.\
+``conditional no-go'', ``derivation'' vs.\ ``ontological reinterpretation'') were
+corrected in the revised paper. The \emph{substantive} objection — ``no controlled
+continuum limit'' — was met on the Schr\"odinger side (now tested: $L_Q\to-\nabla^2\to$
+Schr\"odinger, and curved $L_W$, Laplace--Beltrami, unitary), and \emph{partially} on the
+Einstein side (the standard chain works, but the metric and BDG action are imported).
+
+\section{The decisive residual}
+
+The single genuinely-open item is the \textbf{native metric $\to$ operator coupling} (the
+``G4'' gap): TQM imports $g_{\mu\nu}$ (Malament) rather than generating it from Q-events.
+The metric \emph{origin} is closed (Chapter~\ref{ch:metric-emergence}); the metric
+\emph{dynamics} remain imported.
+
+\textbf{Verdict:} READY\_FOR\_WHITEPAPER — NOT\_READY\_FOR\_JOURNAL (see
+Chapter~\ref{ch:conclusion}).
+
+%=============================================================================
+
+\chapter{Conclusion}
+\label{ch:conclusion}
+
+THE Q-MODEL is \emph{structurally complete} in the precise sense that every in-scope
+question is \textbf{dispositioned} — derived, underivable, underdetermined, contingent, or
+accepted as a computational layer.
+
+The single residual of genuine scientific tension is the \textbf{internal-3 node} — why the
+internal multiplicity/count saturates at 3 — dispositioned unresolved-contingent with a
+provisional gauge-count no-go (T-09, 0.10). This is the theory's one open door.
+
+\textbf{Structure is derivable. Content is realized.}
+
+\textbf{Publication status:} READY\_FOR\_WHITEPAPER — NOT\_READY\_FOR\_JOURNAL. The
+Schr\"odinger dynamical core is executable and tested; the Einstein recovery remains
+logical, not mathematical (imported metric + imported BDG action, $G$ dimensional, no
+unique discriminating prediction).
+
+%=============================================================================
+\appendix
+%=============================================================================
+
+\chapter{Complete Test Inventory}
+\label{app:tests}
+
+\begin{longtable}{lllc}
+\toprule
+Test file & Tests & Verified quantity & Status \\
+\midrule
+\endhead
+GraphLaplacianContinuumTests & 1 & $\lambda_k=(1/\Delta x^2)[2-2\cos(\pi k/(N{+}1))]\to(\pi k)^2$ & PASS \\
+BDGOperatorContinuumTests & 1 & BDG$\to\square$, $O(h^2)$ & PASS \\
+QuantumGravityBridgeTests & 3 & $L_Q$ PSD; BDG indefinite; incompatible & PASS \\
+CurvedSpaceBridgeTests & 3 & no $\Delta_g$; $\Delta_g\to\nabla^2$; absent & PASS \\
+MetricOperatorTests & 4 & candidate constructions & PASS \\
+WeightedLaplacianTests & 4 & symmetric; zero-sum; PSD; unweighted limit & PASS \\
+LaplaceBeltramiTests & 3 & flat limit; weights; S¹ ($2k{-}1$ degeneracy) & PASS \\
+CurvedSchrodingerTests & 3 & unitary; flat limit; curved operator & PASS \\
+EinsteinRecoveryTests & 3 & PARTIAL (no full $G_{\mu\nu}$) & PASS \\
+EinsteinTensorTests & 4 & flat/sph $\Gamma$, $K$, $R$, $G$ & PASS \\
+EinsteinTensorIntegrationTests & 4 & builder; 3-sphere $G=-g$ & PASS \\
+MetricGenerationTests & 4 & distance PRESENT; candidate PARTIAL & PASS \\
+MetricEmergenceTests & 4 & factor $f=\rho^{2/d}$; $R=-0.6145$ & PASS \\
+ConformalStructureTests & 3 & axioms; null invariant; Malament & PASS \\
+MetricOriginTests & 3 & class unique; factor free; imported & PASS \\
+\bottomrule
+\end{longtable}
+
+\chapter{Confidence and Classification Tables}
+\label{app:confidence}
+
+The confidence numbers are uncalibrated ordinal ranks (Phase-149/156 estimates), not
+posterior probabilities. They rank, they do not measure.
+
+\section{Confidence table}
+
+\begin{center}
+\begin{tabular}{llc}
+\toprule
+Result & Confidence & Note \\
+\midrule
+program consistency & 0.95 & zero category conflicts \\
+$U(1)$ & 0.95 & theorem \\
+$N\ge3$ & 0.90 & CP lower bound \\
+neutrino-Koide & 0.90 & falsification (computation) \\
+spatial 3 & 0.85 & window intersection \\
+$SU(2)$ & 0.70 & emergent \\
+Koide $45^\circ$ & 0.70 & structured \\
+$N\le3$ & 0.70 & no-go \\
+$SU(3)$ structure & 0.10 & provisional no-go \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\section{Final classification}
+
+\begin{center}
+\begin{tabular}{ll}
+\toprule
+Question & Classification \\
+\midrule
+Is the metric origin closed? & YES (imported Malament, proven) \\
+Is the Schr\"odinger continuum limit controlled? & YES (tested) \\
+Is the Einstein recovery a derivation? & NO (logical, imported) \\
+Is TQM journal-ready? & NO \\
+Is TQM white-paper-ready? & YES \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+%=============================================================================
+
+\chapter{Worked Derivation: The Einstein Chain on the 2-Sphere}
+\label{app:worked}
+
+This appendix exhibits the standard differential-geometry chain explicitly, so the reader
+can follow every step without opening the repository code.
+
+\section{Setup}
+
+The unit 2-sphere has metric (coordinates $x^1=\theta$, $x^2=\phi$)
+\begin{equation}
+g = \mathrm{diag}\!\left(g_{\theta\theta},\ g_{\phi\phi}\right)
+  = \mathrm{diag}\!\left(1,\ \sin^2\theta\right),
+\qquad g^{\theta\theta}=1,\quad g^{\phi\phi}=\frac{1}{\sin^2\theta}.
+\end{equation}
+
+\section{Christoffel symbols}
+
+\begin{equation}
+\Gamma^\lambda_{\mu\nu} = \tfrac12 g^{\lambda\sigma}\left(
+\partial_\mu g_{\sigma\nu} + \partial_\nu g_{\sigma\mu} - \partial_\sigma g_{\mu\nu}\right).
+\end{equation}
+
+The only non-vanishing partial derivative is
+$\partial_\theta g_{\phi\phi} = 2\sin\theta\cos\theta$. Therefore
+\begin{align}
+\Gamma^\theta_{\phi\phi} &= -\tfrac12\, g^{\theta\theta}\, \partial_\theta g_{\phi\phi}
+= -\sin\theta\cos\theta, \\
+\Gamma^\phi_{\theta\phi} = \Gamma^\phi_{\phi\theta}
+&= \tfrac12\, g^{\phi\phi}\, \partial_\theta g_{\phi\phi}
+= \frac{\cos\theta}{\sin\theta} = \cot\theta.
+\end{align}
+At $\theta=\pi/4$: $\Gamma^\theta_{\phi\phi}=-1/2$, $\Gamma^\phi_{\theta\phi}=1$.
+
+\section{Riemann curvature}
+
+\begin{equation}
+R^\rho_{\ \sigma\mu\nu} = \partial_\mu\Gamma^\rho_{\nu\sigma}
+- \partial_\nu\Gamma^\rho_{\mu\sigma}
++ \Gamma^\rho_{\mu\lambda}\Gamma^\lambda_{\nu\sigma}
+- \Gamma^\rho_{\nu\lambda}\Gamma^\lambda_{\mu\sigma}.
+\end{equation}
+
+The single independent component is
+\begin{align}
+R^\theta_{\ \phi\theta\phi}
+&= \partial_\theta\Gamma^\theta_{\phi\phi} - \Gamma^\theta_{\phi\phi}\Gamma^\phi_{\theta\phi} \\
+&= -\left(\cos^2\theta-\sin^2\theta\right) + \sin\theta\cos\theta\cdot\cot\theta \\
+&= \sin^2\theta.
+\end{align}
+At $\theta=\pi/4$: $R^\theta_{\ \phi\theta\phi}=1/2$.
+
+\section{Gauss curvature, Ricci, and Einstein}
+
+Gauss curvature:
+\begin{equation}
+K = \frac{R^\theta_{\ \phi\theta\phi}}{g_{\phi\phi}}
+= \frac{\sin^2\theta}{\sin^2\theta} = 1.
+\end{equation}
+
+Ricci tensor (in 2D, $R_{\mu\nu}=K g_{\mu\nu}$):
+\begin{equation}
+R_{\theta\theta}=K g_{\theta\theta}=1,\qquad
+R_{\phi\phi}=K g_{\phi\phi}=\sin^2\theta=\tfrac12 \text{ at }\theta=\pi/4.
+\end{equation}
+
+Ricci scalar:
+\begin{equation}
+R = g^{\mu\nu}R_{\mu\nu} = 2K = 2.
+\end{equation}
+
+Einstein tensor (vanishes identically in 2D):
+\begin{equation}
+G_{\mu\nu} = R_{\mu\nu} - \tfrac12 R g_{\mu\nu} = 0.
+\end{equation}
+
+All of these are reproduced numerically by \texttt{EinsteinTensorBuilder} to within
+$10^{-3}$. A non-trivial $G_{\mu\nu}$ requires dimension $\ge3$; the unit 3-sphere gives
+$G_{\mu\nu}=-g_{\mu\nu}$ (Appendix~\ref{app:tests}).
+
+%=============================================================================
+
+\chapter{Research Programs}
+\label{app:programs}
+
+The derivation program is organized into research programs, each closed by executable
+experiments:
+
+\begin{center}
+\begin{tabular}{llc}
+\toprule
+Program & Scope & Experiments \\
+\midrule
+DATA & Cosmology \& RAR & 10 (DATA-001$\to$010) \\
+QM & Quantum foundations & 5 (QM-001$\to$005) \\
+QG & Quantum gravity & 31 (QG-001$\to$031) \\
+XC & Continuum-limit bridge & (audits + tests) \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Key results of the full program:
+\begin{itemize}
+\item $G$ is not fundamental: $G=\ell^2c^3/\hbar$ (gravity emerges from the triple).
+\item $(\ell,\tau,\hbar)$ is the irreducible triple — one process, three aspects.
+\item Oscillation is a logical inevitability (cannot be removed without destroying $Q$).
+\item Gravity is a phase-gradient phenomenon; attraction dominates, repulsion is dark
+energy.
+\item Gravity manipulation is not possible (QG-023$\to$031).
+\item RAR derivation $g_\dagger=cH_0/(2\pi)$ with zero free parameters.
+\item Parameter compression SM+GR ($\sim$26) $\to$ TQM ($2{+}3$), $\sim$5--8$\times$
+reduction.
+\item Novel predictions: $w(z)=-1+0.015(1+z)^{3/2}$; evolving $g_\dagger(z)$; Euclid
+sensitivity.
+\end{itemize}
+
+\chapter{Glossary}
+\label{app:glossary}
+
+\begin{center}
+\begin{tabular}{lp{10cm}}
+\toprule
+Term & Meaning \\
+\midrule
+$Q$ & principle of individuation (ontology) \\
+Random Actualization & ontological chance (assumption A-03) \\
+$(\ell,\tau,\hbar)$ & spacetime scale, clock, action (units) \\
+$M^2$ & nonlinearity parameter (single continuous) \\
+$L_Q$ & graph Laplacian $D-A$ \\
+$L_W$ & weighted Laplacian $D_K-K$ \\
+BDG & Benincasa--Dowker--Glaser d'Alembertian \\
+$\Delta_g$ & Laplace--Beltrami operator \\
+$G_{\mu\nu}$ & Einstein tensor $R_{\mu\nu}-\tfrac12 R g_{\mu\nu}$ \\
+\derived & computable from primitives by theorem \\
+\realunder & real structure, underivable origin \\
+\drawn & coincidental draw of the abundance law \\
+T-08\dots T-12 & conditional no-go theorems \\
+A-03, A-06, A-07, A-10 & assumptions (random actualization; $Z_2$ lift; gauge dynamics; $N$/$n$ split) \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+%=============================================================================
+
+\chapter{References}
+\label{app:references}
+
+\begin{thebibliography}{99}
+
+\bibitem{malament1977}
+D.~B.~Malament, ``The class of continuous timelike curves determines the topology of
+spacetime,'' \emph{J. Math. Phys.} \textbf{18}, 1399 (1977).
+
+\bibitem{hkm1976}
+S.~W.~Hawking, A.~R.~King, P.~J.~McCarthy, ``A new topology for curved space--time which
+incorporates the causal, differential, and conformal structures,'' \emph{J. Math. Phys.}
+\textbf{17}, 174 (1976).
+
+\bibitem{myrheim1978}
+J.~Myrheim, ``Statistical geometry,'' CERN-TH-2538 (1978).
+
+\bibitem{bdg2010}
+D.~M.~T.~Benincasa, F.~Dowker, ``Scalar curvature of a causal set,'' \emph{Phys. Rev. Lett.}
+\textbf{104}, 181301 (2010); L.~Glaser, \emph{Class. Quant. Grav.} \textbf{31}, 095007
+(2014).
+
+\bibitem{gleason1957}
+A.~M.~Gleason, ``Measures on the closed subspaces of a Hilbert space,''
+\emph{J. Math. Mech.} \textbf{6}, 885 (1957).
+
+\bibitem{sorkin}
+R.~D.~Sorkin, ``Causal sets: discrete gravity,'' \emph{Proceedings of the Valdivia Summer
+School} (2003).
+
+\bibitem{belkin2003}
+M.~Belkin, P.~Niyogi, ``Laplacian eigenmaps for dimensionality reduction and data
+representation,'' \emph{Neural Computation} \textbf{15}, 1373 (2003).
+
+\bibitem{koide1981}
+Y.~Koide, ``Fermion mass relation and the generation structure,'' \emph{Phys. Rev. D}
+\textbf{28}, 252 (1983) [letter 1981].
+
+\bibitem{bertrand}
+J.~Bertrand, ``Th\'eor\`eme relatif au mouvement d'un point attir\'e vers un centre fixe,''
+\emph{C. R. Acad. Sci.} \textbf{77}, 849 (1873).
+
+\end{thebibliography}
+
+\end{document}
