@@ -6584,6 +6584,15 @@ minimization/phase-gradient/interaction-potential = Existing; graph rewiring = I
 causal updates = Missing. Full config dynamics = Kuramoto phase + interaction-potential
 position, both already implemented. See Docs/Audits/Q_PositionDynamics.md.
 
+**Q Continuum Limit Audit:**
+Evaluated chain L_Q → continuum operator → field equation → curved-space Schrödinger →
+Einstein. Present: L_Q→-d²/dx² (exact 1D limit). Partial: flat Schrödinger i∂ψ/∂t=-∇²ψ (no
+unique field eq). Missing: curved-space Schrödinger; Schrödinger→Einstein (Einstein reached
+only via separate external causal-set route QG-001/X061, "logical not mathematical" per own
+hostile review). Two disjoint chains that do not meet. Final verdict: RESEARCH PROGRAM (not
+publication blocker IF honestly scoped; blocks only an unqualified "derive Einstein" claim).
+See Docs/Audits/Q_ContinuumLimit.md.
+
 **TRM Quantum Engine Reconciliation Audit (new mathematics, lattice contact only):**
 Reconciled the external "Quantum Engine" formulas (D(x)=1/(1+x+bx²+x⁴), UV damping
 exp(-p²/Λ²), Padé kernel, loop finiteness) against TQM's QG/causal-set/graph-Laplacian/
