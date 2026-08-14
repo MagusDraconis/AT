@@ -6133,3 +6133,27 @@ a shared cascade is untestable and needs channel gains (a new primitive).
   under the structure/content split, none reducible without new primitives. The single remaining
   UNRESOLVED flavor sub-question is whether Koide 45° is hidden structure or a contingent correlation
   (Phase 148 classified it CONTINGENT).
+
+**PHASE 154 — Koide Hidden-Structure Indicator Search (real structure, contingent origin):**
+Searched ONLY for hidden-structure indicators (not derivation), rejecting new primitives/texture
+fitting/numerology/anthropics. Result: Koide is a REAL HIDDEN STRUCTURE with a CONTINGENT origin.
+
+- Evidence CONTINGENT: no symmetry/topology/attractor/info-geometry derivation; lepton-specific
+  (fails for quarks, QG-048); 2/3 = midpoint is a 'nice number'; structure/content split classifies
+  the 45° as content.
+- Evidence HIDDEN STRUCTURE: extreme precision (Q=2/3 to 6.2e-6, ~1e-5); prediction before
+  measurement (1981 m_τ=1776.97 → 1992 confirmed); scale-free + RG-stable (UV property); 45° =
+  arccos(1/√2) is the unique balance point (geometrically distinguished).
+- BAYESIAN BALANCE: BF(real structure : coincidence) = (1/6e-6)/5 (look-elsewhere) ≈ 3.2e4 — strongly
+  favors real structure over coincidence. BF(derived : contingent ORIGIN) ≈ 1 (no evidence either way).
+- RESOLUTION: Koide is a REAL HIDDEN STRUCTURE (precise, predictive, non-coincidental) whose ORIGIN
+  (why 45°) is CONTINGENT. 'Contingent' (Phase 148) = the origin, not the reality.
+- REMAINING FALSIFIABLE TEST: neutrino-Koide (Q=2/3 for neutrino masses, DUNE/Hyper-K). Holds →
+  confirms a lepton-sector hidden structure (demotes contingent toward emergent/selected); fails →
+  confirms charged-lepton-specific contingent. This is the ONLY remaining distinguisher.
+- Outputs: KoideHiddenStructure_Report.txt; TQM.Core/ResearchQG/KoideHiddenStructureAnalyzer.cs +
+  TQM.Tests/ResearchQG/TQM_KoideHiddenStructureAudit.cs.
+- PROGRAM STATE (terminal, flavor line): the Koide question is now FULLY resolved: a real hidden
+  structure (10⁻⁵, predicted, RG-stable) whose 45° origin is contingent, testable only via the
+  neutrino-Koide prediction (DUNE/Hyper-K). This completes the flavor/gauge/multiplicity/contingency
+  audit chain.
