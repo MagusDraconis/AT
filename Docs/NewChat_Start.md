@@ -6662,6 +6662,14 @@ is the standard unnormalized weighted graph Laplacian (Belkin-Niyogi/Coifman-Laf
 uniform density. Audit note: caught a 2-fold-degeneracy indexing bug (false pass) via
 audit-from-results. All 3 PASSED. Report: Docs/Audits/LaplaceBeltramiApproximation.md.
 
+**Curved Schrödinger Program (3 tests, implemented + verified):**
+Created CurvedSchrodingerTests.cs. Test 1 WeightedLaplacian_DefinesCurvedOperator: L_W
+symmetric/PSD/metric-dependent (spectrum diff 3.995). Test 2 CurvedOperator_ReducesToFlat
+Schrodinger: uniform ⇒ L_W=L_Q. Test 3 CurvedSchrodinger_ConservesNorm: ||ψ(t)||²=1 to 1e-16
+(unitary, self-adjoint). Curved Schrödinger i∂ψ/∂t=L_W ψ constructible from L_W, no new
+primitives/params. Operator side of bridge now real; Einstein coupling (G4) still missing.
+All 3 PASSED. Report: Docs/Audits/CurvedSchrodinger_Report.md.
+
 **Continuum Limit Test Program:**
 Converted continuum audits into xUnit test plan. Matrix: #1 L_Q→flat Laplacian = Missing
 (skeleton provided); #2 flat→Schrödinger = Implemented (HilbertSpaceAnalyzer); #3 BDG→
