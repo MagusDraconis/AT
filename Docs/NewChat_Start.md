@@ -5994,3 +5994,33 @@ reducible — Koide Q=2/3 is CONTINGENT, not derived/emergent/selected/irreducib
   contingent). Koide Q=2/3 is the final contingent number — the cleanest statement of what TQM does
   not derive. The remaining TESTABLE flavor item is the neutrino-Koide prediction (Q=2/3 for
   neutrino masses, DUNE/Hyper-K, QG-068/069).
+
+**PHASE 149 — Gauge-Origin Hostile Audit (U(1) DERIVED, SU(2) EMERGENT, SU(3) CONTINGENT):**
+Hostile audit of why SU(3)×SU(2)×U(1), under the accepted chain, rejecting anthropic/ecological/
+post-selection/numerology/hidden-dims/new-primitives. Result: the gauge group reduces to the DEFECT
+COUNT per sector; U(1) is derived, SU(2) emergent, SU(3) contingent.
+
+- Existing derivations (QG-038, X048–056, X060e): U(1) fully derived (Aut(S¹)=U(1), π₁(S¹)=ℤ);
+  SU(2) partial (binary winding Z₂ → SO(3)→SU(2) double cover, lift left as B); SU(3) partial
+  (tri-winding n=3, 8-gluon algebra borrowed). 1-2-3 rank=winding pattern "possibly numerology".
+- FIRST NON-DERIVED NODE: the defect COUNT n per sector (1 EM, 2 weak, 3 strong). The group
+  STRUCTURE is derivable/emergent from defect-moduli (Aut(moduli of n defects) ⊇ SU(n)), but the
+  COUNT n is not fixed by topology (π₁=ℤ infinite), attractor content (contingent), S_n (permutes),
+  or persistence (all classical groups stable). The '1-2-3' = the SAME underived 3 as generations/
+  spatial-dims/dim(G) (QG-067 SELECTED, not derived).
+- Four routes: topology-only (FAILS n>1), attractor-space (FAILS, contingent), defect-moduli
+  (STRONGEST, derives structure not count), persistence/symmetry (FAILS to select).
+- CLASSIFICATION: U(1)=DERIVED (theorem, success 1.0); SU(2)=EMERGENT (binary doublet {n=±1} is the
+  derived minimal winding pair + complex Hilbert → Bloch S² → SO(3)=SU(2)/Z₂ → spinor SU(2); the 2
+  is near-derived, success ~0.7); SU(3)=CONTINGENT (the 3 is underived, 8-gluon algebra borrowed,
+  success ~0.1).
+- NO-GO THEOREM: no topological/attractor/symmetry/persistence principle fixes the defect count n;
+  hence SU(3)'s '3' (and the 1-2-3 pattern) is irreducible-CONTINGENT under the no-new-primitives
+  constraint. STRONGEST REMAINING PATH: derive the count 1-2-3 from a single principle = the open
+  'why 3' (QG-067), already shown to be SELECTION not derivation.
+- Outputs: GaugeOrigin_Report.txt; TQM.Core/ResearchQG/GaugeOriginAnalyzer.cs +
+  TQM.Tests/ResearchQG/TQM_GaugeOriginAudit.cs.
+- PROGRAM STATE: the gauge sector is now classified. U(1) is the one FULLY derived gauge factor;
+  SU(2) emergent; SU(3) contingent (the underived '3'). The deep residual is the SAME 'why 3'
+  (generations = color = spatial dims = dim(G)), which QG-067 classified as SELECTION (derived
+  lower bound N≥3 ∩ empirical upper bound N≤3). No further reduction without new primitives.
