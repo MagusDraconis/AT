@@ -6326,3 +6326,14 @@ polarization, lensing, τ, tensors. All missing items are standard ΛCDM physics
 require a CAMB/CLASS-class solver, not new TQM physics. CMB chapter = PARTIAL
 (background + compression peaks complete; rarefaction peak + phase shift need the
 full solver). See Docs/Audits/CMBClosureAudit.md.
+
+**TRM Legacy Module Prioritization Audit (missing-module ranking):**
+Ranked the 5 missing TRM modules by theoretical value for TQM using only the
+TRM_Reconciliation_Audit + Coverage_Report evidence. Priority 1: m=3 Closure —
+attacks the central "why 3" mystery with a DIFFERENT, self-contained, falsifiable
+mechanism (rational mode-locking Ω=(q+3)/q, γ≈0.84-0.86), lowest old-wording risk.
+Priority 2: Frame Dragging — only route to extend TQM beyond scalar gravity
+(Lense-Thirring testable, but must not contradict QG-022). Priority 3: Memory
+Channel — genuine invariant φ²|μ̇| but no direct observable. Deprioritized: Theta
+Chain (homonym w/ TQM-128-133), Unified Action (roadmap, depends on all others).
+See Docs/Audits/TRMLegacyModulePrioritizationAudit.md.
