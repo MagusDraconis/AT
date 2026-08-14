@@ -6616,6 +6616,13 @@ semi-definite, Riemannian); □ plane-wave eigenvalues k²−ω² = -3.16 (<0, k
 (>0, k>ω) (indefinite, Lorentzian). Incompatible signatures ⇒ no bridge. Report:
 Docs/Audits/QuantumGravityBridge_Report.md.
 
+**Quantum-Gravity Bridge Test Program (3 tests, implemented + verified):**
+Split the bridge test into 3 xUnit tests in QuantumGravityBridgeTests.cs. Test 1
+GraphLaplacian_IsPositiveSemidefinite: L_Q eigenvalues [0.0023, 3.9977] all ≥0. Test 2
+BDGOperator_IsIndefinite: discrete d'Alembertian □_hφ(0,0) = -3.158 (k<ω) / +6.316 (k>ω).
+Test 3 QuantumGravityBridge_OperatorsDifferInSignature: incompatible signatures ⇒ no bridge.
+All 3 PASSED. Report: Docs/Audits/QuantumGravityBridge_TestReport.md.
+
 **Continuum Limit Test Program:**
 Converted continuum audits into xUnit test plan. Matrix: #1 L_Q→flat Laplacian = Missing
 (skeleton provided); #2 flat→Schrödinger = Implemented (HilbertSpaceAnalyzer); #3 BDG→
