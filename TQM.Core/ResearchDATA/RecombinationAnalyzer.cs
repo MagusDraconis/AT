@@ -25,6 +25,7 @@ public static class RecombinationAnalyzer
     public const double MeV = 9.10938370e-31;     // kg (electron)
     public const double Mp = 1.67262192e-27;      // kg (proton)
     public const double Mh = 1.6735575e-27;       // kg (hydrogen atom)
+    public const double Mpc = 3.08567758149e22;   // m (megaparsec)
     public const double Ev = 1.602176634e-19;     // J (1 eV)
     public const double SigmaT = 6.6524587321e-29;// m^2 (Thomson)
     public const double Lambda2s1s = 8.22458;     // s^-1 (two-photon decay)
@@ -34,6 +35,7 @@ public static class RecombinationAnalyzer
     public const double OmegaBh2 = 0.02237;
     public const double OmegaMh2 = 0.1430;
     public const double OmegaRh2 = 4.183e-5;
+    public const double OmegaGammaH2 = 2.469e-5; // photon density (T_CMB = 2.7255 K)
 
     // ── Hydrogen energies ──────────────────────────────────────────────────
     public const double EIon = 13.6057 * Ev;      // J (1s ionization)
@@ -163,5 +165,63 @@ public static class RecombinationAnalyzer
         }
 
         return new RecombinationResult(zStar, xeStar, tauStar, steps);
+    }
+
+    // ── Sound horizon & θ* (background only; no perturbation theory) ──────
+
+    public sealed record ThetaStarResult(
+        double ZStar, double RsMpc, double DmMpc,
+        double ThetaStar, double ThetaStar100);
+
+    static double OmegaG => OmegaGammaH2 / (H * H);
+
+    /// <summary>Sound speed c_s(z) = c / sqrt(3(1+R)), R = 3 rho_b / 4 rho_gamma.</summary>
+    public static double SoundSpeed(double z)
+    {
+        double R = 3.0 * OmegaB / (4.0 * OmegaG) / (1.0 + z);
+        return C / Math.Sqrt(3.0 * (1.0 + R));
+    }
+
+    /// <summary>Comoving sound horizon r_s = int_{z*}^{zMax} c_s / H dz (meters).</summary>
+    public static double SoundHorizon(double zStar, double zMax = 1e5)
+    {
+        int steps = 40000;
+        double dz = (zMax - zStar) / steps;
+        double sum = 0.0;
+        for (int i = 0; i <= steps; i++)
+        {
+            double zp = zStar + i * dz;
+            double f = SoundSpeed(zp) / Hubble(zp);
+            double w = (i == 0 || i == steps) ? 1.0 : (i % 2 == 0 ? 2.0 : 4.0);
+            sum += w * f;
+        }
+        return dz * sum / 3.0;
+    }
+
+    /// <summary>Comoving distance D_M(z) = int_0^z c / H dz (meters).</summary>
+    public static double ComovingDistance(double z)
+    {
+        int steps = 20000;
+        double dz = z / steps;
+        double sum = 0.0;
+        for (int i = 0; i <= steps; i++)
+        {
+            double zp = i * dz;
+            double f = C / Hubble(zp);
+            double w = (i == 0 || i == steps) ? 1.0 : (i % 2 == 0 ? 2.0 : 4.0);
+            sum += w * f;
+        }
+        return dz * sum / 3.0;
+    }
+
+    /// <summary>θ* = r_s / D_M(z*) (comoving ratio; equals physical r_s / angular D_A).</summary>
+    public static ThetaStarResult ComputeThetaStar()
+    {
+        var rec = Solve();
+        double zStar = rec.ZStar;
+        double rs = SoundHorizon(zStar);
+        double dM = ComovingDistance(zStar);
+        double theta = rs / dM;
+        return new ThetaStarResult(zStar, rs / Mpc, dM / Mpc, theta, theta * 100.0);
     }
 }
