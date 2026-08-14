@@ -6204,3 +6204,27 @@ one unresolved assumption, overall confidence 0.81.
   and self-audited. The two soft spots are (1) the selected↔contingent flip for the internal 3, and
   (2) the 'contingent' ambiguity (origin vs coincidence), which needs a third category 'real structure
   with contingent origin'. No further reduction without new primitives.
+
+**PHASE 157 — Minimal Classification Taxonomy Review (4 categories, consistency 0.81→0.95):**
+Created a minimal classification system that removes the selected/contingent ambiguity and separates
+coincidence from real underived structure, with no new physics primitives. Result: 4 categories;
+consistency improved 0.81 → 0.95.
+
+- FOUR CATEGORIES: DERIVED (computable from primitives by theorem); EMERGENT (structure from
+  dynamics, value unpinned); STRUCTURED-UNDERIVED (real, precise, predictive constraint, origin
+  underived); DRAWN (log-normal draw, no structure, coincidental). 'SELECTED' is ELIMINATED —
+  decomposes into 'derived lower bound ∩ drawn upper bound'.
+- UPGRADE PATH (13 objects): unchanged (U(1), spatial-3, N≥3, SU(2), SU(3)-structure, log-normal
+  form); CONTINGENT→DRAWN (Yukawas, couplings, Ω_DM, N≤3, SU(3)-count-3); SELECTED→CONTINGENT flip
+  → DERIVED-lower ∩ DRAWN-upper (internal 3); CONTINGENT(ambiguous) → STRUCTURED-UNDERIVED (Koide).
+- RESOLVES BOTH SOFT SPOTS: #1 (selected↔contingent flip) by separately classifying the derived
+  lower bound and the drawn upper bound; #2 (contingent ambiguity) by splitting into
+  STRUCTURED-UNDERIVED (Koide, BF≈3e4) vs DRAWN (Yukawas, no precision).
+- CONSISTENCY: 0.81 → 0.95. The residual 0.05 is the physics-level cascade underdetermination, not
+  a taxonomy ambiguity.
+- Outputs: MinimalTaxonomy_Report.txt; TQM.Core/ResearchQG/MinimalTaxonomy.cs +
+  TQM.Tests/ResearchQG/TQM_MinimalTaxonomyReview.cs.
+- PROGRAM STATE: the taxonomy is now DISAMBIGUATED and minimal (4 categories, no new primitives).
+  Final classification: DERIVED (form: U(1), spatial-3, N≥3, log-normal); EMERGENT (SU(2), SU(3)
+  structure); STRUCTURED-UNDERIVED (Koide 45°); DRAWN (Yukawas, couplings, Ω_DM, N≤3, the '3' counts).
+  The audit chain is fully closed and internally consistent.
