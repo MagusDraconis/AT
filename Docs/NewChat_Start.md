@@ -6374,6 +6374,14 @@ structure, untestable). 4: Frame dragging (testable-but-risky). 5: Memory channe
 with the TRM prioritization (m=3 first) and extended to TQM's own gaps.
 See Docs/Audits/OpenProblemsRanking.md.
 
+**m=3 Physical Mapping Audit (no observable match; two candidates):**
+Searched 7 categories (oscillation freq, abundance law, complexity hierarchy, defect
+dynamics, graph spectra, topology, lattice modes) for Ω≈1.16-1.19, γ≈0.84-0.86, q≈16-18.
+No OBSERVABLE match. Two CANDIDATES (low confidence): q≈16-18 ↔ m_τ/m_μ=16.8 (defect
+mass ratio); Ω ↔ coupling log-normal σ≈1.2. Five No Match. Ω,γ remain UNMAPPED — no
+structural map in any doc, so they cannot constrain multiplicity/flavor.
+See Docs/Audits/m3_PhysicalMapping.md.
+
 **TRM Quantum Engine Reconciliation Audit (new mathematics, lattice contact only):**
 Reconciled the external "Quantum Engine" formulas (D(x)=1/(1+x+bx²+x⁴), UV damping
 exp(-p²/Λ²), Padé kernel, loop finiteness) against TQM's QG/causal-set/graph-Laplacian/
