@@ -5835,3 +5835,25 @@ Planck-suppressed signature is unobservable. Levels 1–4 pass; Level 5 fails.
 - PROGRAM STATE: the causal-set line (QG-090–094) is now complete: Λ ~ 1/√N is genuine but
   untestable. The program's ONLY remaining OBSERVATIONAL test is the g†(z) EVOLUTION (mass-limited,
   QG-079). No deeper or alternative avenue has produced a falsifiable prediction.
+
+**PHASE 142 — ResearchQG-095: Unified Cosmological Scale Audit (common rate H; dimensional, not deep):**
+Tested whether the two surviving anchors Λ ~ 1/√N and g† share a common origin. Result: they share
+the single cosmic rate H, but only dimensionally — Levels 1–4 pass, Level 5 fails.
+
+- Dimensionless relations: Λ·l_P² = (H l_P/c)² (causal set) ⇒ Λ ~ H²/c²; g† = cH/2π (time scale).
+  BOTH are powers of H. H²/Λc² = 0.48 (the 'why now' coincidence). g†/(cH)=1/2π=0.159; g†/(c²√Λ)=0.11
+  (g† ~6× closer to H than √Λ).
+- Three hypotheses: A (independent, 2 params) < B=C (common origin: both track H, 0 params). B and C
+  (causal-set substrate) collapse to the same thing — H is the common rate.
+- Neither derives the other: Λ→H gives magnitude only (not Ωm/ΩΛ split); g†→Λ is circular (assumes
+  2π); Λ→g† re-introduces the 2π. They are linked only through H, dimensionally.
+- Tuning: Λ~H²/c² has α=2.07 (O(1), derived, no tuning); g†~cH/2π has the coincidental 2π. The
+  unification does NOT rescue g† from its 2π problem.
+- VERDICT: Levels 1–4 PASS (mapped, relations, common-origin B=C, best candidate = common H);
+  Level 5 FAIL (no new prediction beyond g†(z) evolution). Λ and g† are manifestations of one rate,
+  not one deep principle.
+- Outputs: UnifiedScaleRelations.csv, LambdaGdaggerComparison.csv, ScaleUnificationRanking.csv
+  (Data/derived) + 3 PNGs; Docs/UnifiedCosmologicalScaleReport.md; 4 source files + test.
+- PROGRAM STATE: the unification question is answered: Λ and g† both track H, but the 2π in g†
+  remains coincidental and un-unified. The single remaining OBSERVATIONAL test is the g†(z) EVOLUTION
+  (mass-limited). No avenue has produced a new falsifiable prediction.
