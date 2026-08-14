@@ -5790,3 +5790,24 @@ Result: NO — causality is irreducible and is the bottom of the hierarchy. Leve
   causality (the partial order). The two live quantitative anchors remain: (1) causal-set
   Λ ~ 1/√N (theoretical, matched to ~0.5) and (2) the g†(z) EVOLUTION test (observational,
   mass-limited). Both are fully documented; no deeper primitive is derivable.
+
+**PHASE 140 — ResearchQG-093: Causal Set Λ Audit (genuine derivation, not numerology; a POSTDICTION):**
+Stress-tested the surviving quantitative result Λ ~ 1/√N. Result: it is GENUINE (the strongest
+theoretical result in the program) but a POSTDICTION with no observable consequence. Levels 1–4 pass.
+
+- Dimensions verified: N = (R_H/l_P)⁴ ≈ 5.2e243; Λ·l_P² = 1/√N ≈ 1.39e-122 (predicted) vs
+  2.87e-122 (observed); amplitude α = Λ_obs/Λ_pred = 2.07 (O(1), no free parameter).
+- Sensitivity: Λ ∝ H0² (d ln Λ/d ln H0 = 2); a 1% H0 error → 2% Λ error. Insensitive to
+  H0/Ωm/ΩΛ/age. Monte Carlo (H0∈[65,75], 100k) keeps α = 1.67–2.23 (σ 0.16) — robust.
+- Exponent scan (Λ~N^e): e=−1/2 gives α=O(1); e=−1/4,−1/3,−2/3,−1 give α ~ 1e-61..1e+122
+  (extreme tuning). −1/2 is uniquely natural.
+- HOSTILE numerology audit: rival scales (1/N, 1/log N, 1/N^(1/3)) are off by ~40–122 dex, vs the
+  g†=cH/2π failure which was only a factor ~5. Λ~1/√N is FAR more robust than the g† numerology.
+- VERDICT: Levels 1–4 PASS; Level 5 FAIL. Λ ~ 1/√N is a GENUINE consequence of causal discreteness
+  (Sorkin's ever-present Λ): exponent derived, α=O(1) with zero tuning, rivals fail by ~1e±122. But
+  it is a POSTDICTION and its fluctuation ~1/√N ≈ 1e-122 is unobservably small.
+- Outputs: LambdaScalingAudit.csv, LambdaExponentScan.csv, LambdaMonteCarlo.csv,
+  NumerologyComparison.csv (Data/derived) + 1 PNG; Docs/CausalSetLambdaReport.md; 5 files + test.
+- PROGRAM STATE UPDATE: the Λ ~ 1/√N result is CONFIRMED as genuine (not the next coincidence) —
+  the single strongest theoretical anchor. The two live anchors remain (1) causal-set Λ ~ 1/√N
+  (theoretical, confirmed) and (2) g†(z) EVOLUTION (observational, mass-limited).
