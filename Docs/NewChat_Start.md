@@ -6365,6 +6365,15 @@ gap). Ω,γ physical meaning unspecified; "stability" is rule-family (RBF), not 
 relies on TRM phase-lattice machinery (not TQM primitives); avoids anthropics, partially
 avoids numerology. See Docs/Audits/m3_Viability_Audit.md.
 
+**Open Problems Re-Ranking Audit (final gap ranking):**
+Final ranking of the 7 remaining gaps by value/difficulty/testability/new-primitive
+dependence. Priority 1: Koide origin (deepest single number, no-go T-08, hardest).
+2: m=3 closure (candidate for N≤3, medium difficulty). 3: Shared cascade (abundance-law
+structure, untestable). 4: Frame dragging (testable-but-risky). 5: Memory channel
+(niche). 6: Theta chain (homonym). 7: Unified action (premature roadmap). Consistent
+with the TRM prioritization (m=3 first) and extended to TQM's own gaps.
+See Docs/Audits/OpenProblemsRanking.md.
+
 **TRM Quantum Engine Reconciliation Audit (new mathematics, lattice contact only):**
 Reconciled the external "Quantum Engine" formulas (D(x)=1/(1+x+bx²+x⁴), UV damping
 exp(-p²/Λ²), Padé kernel, loop finiteness) against TQM's QG/causal-set/graph-Laplacian/
