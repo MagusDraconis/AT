@@ -69,6 +69,32 @@ public sealed class TemporalMatrix
     }
 
     /// <summary>
+    /// Builds the weighted graph Laplacian L_W = D_K − K from this coupling matrix, where
+    /// D_K = diag(Σ_j K_ij) is the weighted degree. This is the discrete Laplace–Beltrami
+    /// operator for the weighted graph whose edge weights are the coupling strengths K_ij.
+    /// </summary>
+    public double[,] BuildWeightedLaplacian()
+    {
+        var laplacian = new double[Size, Size];
+        for (int i = 0; i < Size; i++)
+        {
+            double degree = 0.0;
+            for (int j = 0; j < Size; j++)
+            {
+                if (i == j) continue;
+                degree += _couplings[i, j];
+            }
+            laplacian[i, i] = degree;
+            for (int j = 0; j < Size; j++)
+            {
+                if (i == j) continue;
+                laplacian[i, j] = -_couplings[i, j];
+            }
+        }
+        return laplacian;
+    }
+
+    /// <summary>
     /// Fills this matrix with distance-dependent coupling from spatial oscillator positions.
     /// Kᵢⱼ = K · exp(−dᵢⱼ / λ), where dᵢⱼ is the Euclidean distance between oscillators i and j.
     /// </summary>

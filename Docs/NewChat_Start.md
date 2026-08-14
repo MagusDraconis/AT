@@ -6647,6 +6647,13 @@ Test 4 CausalSetDAlembertian_HasNoMetricData: BDG is binomial/metric-independent
 object = weighted Laplacian L_W=D_K−K from existing coupling K_ij=K·exp(-d/λ); missing piece =
 the metric weight rule. All 4 PASSED. Report: Docs/Audits/MetricOperatorProgram.md.
 
+**Weighted Laplacian Program (implemented + verified):**
+Added TemporalMatrix.BuildWeightedLaplacian() (L_W = D_K − K) using the existing coupling
+matrix K_ij. Created WeightedLaplacianTests.cs (4 tests): IsSymmetric (asym=0), HasZeroRowSum
+(1.9e-16), IsPositiveSemidefinite (min eig=0), ReducesToUnweighted (binary ⇒ L_W=L_Q exact).
+All 4 PASSED. Supplies the missing weight rule (discrete Laplace-Beltrami) over existing K_ij.
+Report: Docs/Audits/WeightedLaplacian_Report.md.
+
 **Continuum Limit Test Program:**
 Converted continuum audits into xUnit test plan. Matrix: #1 L_Q→flat Laplacian = Missing
 (skeleton provided); #2 flat→Schrödinger = Implemented (HilbertSpaceAnalyzer); #3 BDG→
