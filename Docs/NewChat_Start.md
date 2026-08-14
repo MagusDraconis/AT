@@ -6503,6 +6503,15 @@ v1.0) with theory status, 11 closed questions, 4 dispositioned open items, 5 kno
 limitations. 0 open chapters, 0 unresolved theory items under no-new-primitives. See
 Docs/Main/TQM_v1_0_Release.md.
 
+**TQM v1.0 Publication Paper:**
+Wrote publication-grade paper Docs/Papers/TQM_v1_0_Paper.md ("THE Q-MODEL — From Q to
+Cosmology", v1.0) for theoretical physicists. 13 sections (Abstract→Conclusion): primitive
+set, structure/content split, derivation hierarchy, gauge/flavor/gravity/cosmology,
+classification system, closed questions (no-gos T-08–T-12), open questions (4 dispositions),
+limitations. Distinguishes DERIVED/REAL-UNDERIVED/DRAWN with confidence assessments; includes
+Koide closure (7 routes), Internal-3 disposition (unresolved-contingent), CMB status (accepted
+partial computational layer). No new physics, no speculation. See Docs/Papers/TQM_v1_0_Paper.md.
+
 **TRM Quantum Engine Reconciliation Audit (new mathematics, lattice contact only):**
 Reconciled the external "Quantum Engine" formulas (D(x)=1/(1+x+bx²+x⁴), UV damping
 exp(-p²/Λ²), Padé kernel, loop finiteness) against TQM's QG/causal-set/graph-Laplacian/
