@@ -29,7 +29,7 @@ the specific no-go/TODO that prevents COMPLETE.
 | I | Foundations | **COMPLETE** | high | — |
 | II | Mathematics | **COMPLETE** | high | — |
 | III | Gauge | **PARTIAL** | U(1) 0.95 · SU(2) 0.70 · SU(3) 0.10 | defect count $n=3$ underived (T-09); 8-gluon algebra borrowed (A-07) |
-| IV | Flavor | **PARTIAL** | Koide 0.90 · $45^\circ$ 0.70 · $N\le3$ 0.70 | Koide $45^\circ$ origin (T-08); Yukawa hierarchy $1{:}207{:}3478$; $N\le3$ bound (T-10) |
+| IV | Flavor | **PARTIAL** | Koide 0.90 (closed) · $N\le3$ 0.70 | Yukawa hierarchy $1{:}207{:}3478$ (underived); $N\le3$ bound (T-10, → Internal-3 Node) |
 | V | Gravity | **PARTIAL** | high (5.1–5.3) | unified action absent (5.4); frame dragging = GR (resolved, not a gap) |
 | VI | Theta | **PARTIAL** | high (6.1) | gauge-like Theta sector absent — homonym only (TQM-128–133) |
 | VII | Unified Action | **OPEN** | — | roadmap $S_{\rm eff}[T,\vec A_T,\Theta]$, no derivation |
@@ -45,36 +45,28 @@ the specific no-go/TODO that prevents COMPLETE.
 
 The TRM reconciliation line has already **resolved** the legacy "missing" modules
 (Frame Dragging → GR gravitomagnetism = Absorbed; Memory Channel, Theta Chain, m=3
-Closure → Candidate Mathematics, not TQM content). The **genuine TQM** open items are:
+Closure → Candidate Mathematics, not TQM content). The Koide $45^\circ$ origin (former
+O1) is now **CLOSED** (Phase 159, `756b0e9`: underivable under the accepted primitives),
+so it is no longer an active gap. The **genuine TQM** open items are:
 
-### O1 — Koide $45^\circ$ origin (T-08 no-go)
-- **Importance:** high — the single most-precise unexplained real structure ($Q=2/3$, $\theta=44.9997^\circ$, BF≈3.2e4).
-- **Path to closure:** none known; T-08 proved no symmetry/attractor/topology/info-geometry selects it. Requires a *new* structural principle, not a re-derivation.
-- **Effort:** high / open-ended (a new primitive-level insight).
+### O1 — Internal-3 Node (gauge count $n=3$ + $N\le3$, T-09/T-10 no-gos)
+- **Importance:** high — the single remaining "why 3" residual: the internal multiplicity/count saturates at 3.
+- **Path to closure:** no repository principle bounds $N\le3$ (T-10, 0.70) or fixes $n=3$ (T-09, 0.10). TRM's $m=3$ closure is the *candidate* mechanism (a path, not a theorem; unmapped to $N$ or $n$). The gauge face ($n=3$) is the more open entry point (weaker no-go).
+- **Effort:** high (requires a defect-count / closure-order mechanism).
 
-### O2 — Gauge count $n=3$ (T-09 no-go)
-- **Importance:** high — fixes $SU(3)$ and the color count; the $SU(3)$ confidence is only 0.10 without it.
-- **Path to closure:** no repository principle bounds the defect count ($\pi_1(S^1)=\mathbb{Z}$ is infinite). TRM's $m=3$ closure is a *candidate* path (targets exactly this gap) but is a path, not a theorem.
-- **Effort:** high (requires a defect-count/closure-order mechanism).
-
-### O3 — Multiplicity upper bound $N\le3$ (T-10 no-go)
-- **Importance:** high — completes "why 3 generations" (lower bound already derived).
-- **Path to closure:** currently empirical (Z-width, Higgs). Same candidate as O2 (mode-locking closure order $m=3$), unmapped to $N$.
-- **Effort:** high.
-
-### O4 — Shared cascade / 3-class independence (T-12 no-go)
+### O2 — Shared cascade / 3-class independence (T-12 no-go)
 - **Importance:** medium — decides whether the 3 log-normal classes are one mechanism or three.
 - **Path to closure:** untestable from one universe without a new primitive (channel gains); currently OPEN (confidence 0.55).
 - **Effort:** high / requires a new primitive (blocked by the no-new-primitives constraint).
 
-### O5 — CMB full solver
+### O3 — Full CMB Boltzmann solver
 - **Importance:** medium — cosmology closure (the only sub-partial of Chapter VIII).
 - **Path to closure:** implement acoustic phase shift $\phi\approx0.84$ rad + finite-decoupling velocity phase + ISW (a CAMB-class Boltzmann solver). **Not new physics** — computational scope.
 - **Effort:** medium (engineering, not theory).
 
-### O6 — Unified Action
+### O4 — Unified Action
 - **Importance:** latent capstone (unifies $T$, $\vec A_T$, $\Theta$).
-- **Path to closure:** presupposes O1–O3 and the vector/theta sectors settle; a roadmap (UF01–09), not a result.
+- **Path to closure:** presupposes O1 and the vector/theta sectors settle; a roadmap (UF01–09), not a result.
 - **Effort:** highest / premature.
 
 ---
@@ -107,12 +99,14 @@ and Part VII (unified action) — two of which are now resolved as "not TQM cont
 All *derivable* structure is closed (spatial-3, U(1), $N\ge3$, log-normal law,
 causal-set $\Lambda$, $G=\ell^2c^3/\hbar$, phase-gradient gravity→GR, RAR
 $g_\dagger=cH_0/2\pi$, DM/DE architecture; content correctly classified contingent).
-The open residue is 4 no-go items (O1–O4) + CMB (O5) + Unified Action (O6):
+The open residue is now 4 items — Internal-3 Node, Shared Cascade, CMB Boltzmann
+solver, Unified Action:
 
-$$\frac{\text{closed results}}{\text{closed + open}} \approx \boxed{70\%}$$
+$$\frac{\text{closed results}}{\text{closed + open}} \approx \boxed{72\%}$$
 
-(Basis: ~12 closed structural results vs ~6 open items; the "why 3" cluster O2/O3
-dominates the residual.)
+(Basis: ~12 closed structural results vs ~4 open items; the Koide closure is a
+classification closure — it confirms the $45^\circ$ is *underivable*, not a new
+derivation — and the gauge-count / $N\le3$ faces consolidate into the Internal-3 Node.)
 
 ---
 
@@ -120,14 +114,15 @@ dominates the residual.)
 
 TQM is **structurally mature**: its derivation program is essentially complete, and its
 taxonomy/classification program is closed (consistency 0.95, 0 conflicts). What remains
-is **not new structure** but (a) four *proven-no-go* residues concentrated on the
-recurring integer 3 (gauge count $n=3$, $N\le3$, plus Koide $45^\circ$ and the shared
-cascade), (b) one computational task (CMB solver), and (c) one capstone roadmap (Unified
-Action). The encyclopedia is ~81% populated; the theory is ~70% closed, with the
-residual ~30% dominated by the single unresolved question — *why 3* — which Phase 151
-already localized and the TRM $m=3$ closure nominally targets (as a path, not a theorem).
+is **not new structure** but (a) the single Internal-3 node (gauge count $n=3$ ∩ $N\le3$,
+the residual "why 3"), (b) the shared-cascade no-go, (c) one computational task (CMB
+solver), and (d) one capstone roadmap (Unified Action). The Koide $45^\circ$ origin is
+now **CLOSED** (underivable — the canonical REAL-UNDERIVED structure, Phase 159). The
+encyclopedia is ~81% populated; the theory is ~72% closed, with the residual ~28%
+dominated by the Internal-3 node, which the TRM $m=3$ closure nominally targets (as a
+path, not a theorem).
 
 | Metric | Score |
 |---|---|
-| Theory completeness | **~70%** |
+| Theory completeness | **~72%** |
 | Encyclopedia completeness | **~81%** |

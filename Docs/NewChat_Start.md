@@ -6470,6 +6470,15 @@ Phases 90-104 + γ≠2/3), 1 Blocked (moduli), 0 Open. Neutrino-Koide falsificat
 no-new-primitives. Koide 45° = real hidden structure (BF≈3.2e4), contingent origin,
 underivable. See Docs/Audits/KoideClosureAudit.md.
 
+**Koide Closure Documentation Integration (Phase 159, `756b0e9`):**
+Integrated the Koide closure into all authoritative docs: Master Reference §1
+(executive summary) + §6 (flavor, closure table) + §11 (closed questions); Encyclopedia
+§4.2 (CLOSED) + missing-sections rollup; Completeness Report (removed O1 Koide,
+consolidated gauge-count+N≤3 → Internal-3 Node). Open problems 6 → 4 (Internal-3 Node,
+Shared Cascade, CMB Boltzmann, Unified Action); theory completeness ~70% → ~72% (bookkeeping,
+not new derivation). Koide = canonical REAL-UNDERIVED example. See
+Docs/Main/Koide_Closure_Integration_Report.md.
+
 **TRM Quantum Engine Reconciliation Audit (new mathematics, lattice contact only):**
 Reconciled the external "Quantum Engine" formulas (D(x)=1/(1+x+bx²+x⁴), UV damping
 exp(-p²/Λ²), Padé kernel, loop finiteness) against TQM's QG/causal-set/graph-Laplacian/

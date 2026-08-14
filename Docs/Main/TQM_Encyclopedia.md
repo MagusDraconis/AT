@@ -95,8 +95,11 @@ Legend: ✅ = present, 🔶 = partial, ❌ = missing (TODO).
 ## 4.2 Koide relation
 - **Existing:** Q=0.6666605, θ=44.9997°, REAL-UNDERIVED (real/predictive/RG-stable, origin contingent).
   BF≈3.2e4. Confidence 0.90.
-- **Missing:** TODO — derivation of the 45° origin (Koide no-go, T-08).
-- **Source:** `KoideHiddenStructureAnalyzer.cs`, `FlavorReducibilityAnalyzer.cs`.
+- **Status:** CLOSED (Phase 159, `756b0e9`) — all in-scope derivation routes exhausted
+  (symmetry / topology / attractors / info-geometry / group theory / m=3 → No-Go; moduli → Blocked).
+  The canonical REAL-UNDERIVED structure.
+- **Source:** `KoideHiddenStructureAnalyzer.cs`, `FlavorReducibilityAnalyzer.cs`,
+  `Audits/KoideClosureAudit.md`.
 
 ## 4.3 Neutrino-Koide
 - **Existing:** FALSIFIED — Q_max=0.585(NO)/0.500(IO) < 2/3 (Phase 155). Confidence 0.90.
@@ -264,7 +267,6 @@ Legend: ✅ = present, 🔶 = partial, ❌ = missing (TODO).
 | III | SU(2) double-cover lift derivation (A-06) |
 | III | Defect count n=3 derivation (T-09) |
 | IV | Architecture-shape frequency derivation |
-| IV | Koide 45° origin derivation (T-08) |
 | IV | Upper bound N≤3 derivation (T-10) |
 | V | Frame dragging |
 | V | Unified action |

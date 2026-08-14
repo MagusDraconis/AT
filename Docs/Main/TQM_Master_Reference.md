@@ -45,6 +45,10 @@ contingent ensemble — and is **DRAWN** / **REAL-UNDERIVED**, not computable.
 | **REAL-UNDERIVED** | Real, precise, predictive — but its origin is not computable |
 | **DRAWN** | Coincidental draw of the abundance law — no hidden structure |
 
+The strongest example of a REAL-UNDERIVED structure is the **Koide relation**
+($Q=2/3$, $\theta\approx45^\circ$) — real, predictive, RG-stable, and underivable
+under the accepted primitives (Phase 159, `756b0e9`).
+
 | Metric | Value |
 |---|---|
 | Classified results (Phases 148–157) | 14 |
@@ -152,6 +156,23 @@ $$Q = 0.6666605,\qquad \theta = 44.9997^\circ$$
 Classification: **REAL-UNDERIVED** — a real hidden structure whose $45^\circ$
 origin is contingent.
 
+**Koide origin — CLOSED QUESTION (Phase 159, Audit `756b0e9`).**
+Under the current primitive set $\{Q,\ \text{Random Actualization},\ (\ell,\tau,\hbar),\ M^2\}$
+with **no new primitives**, every in-scope derivation route is exhausted:
+
+| Route | Status |
+|---|---|
+| Symmetry ($S_3$) | No-Go |
+| Topology ($S^1$) | No-Go |
+| Attractors | No-Go |
+| Information Geometry | No-Go |
+| Group Theory | No-Go |
+| m=3 Closure | No-Go |
+| Moduli Arguments | Blocked |
+
+**Koide relation: REAL-UNDERIVED · Status: closed question · Reason: all in-scope
+derivation routes exhausted.** The canonical example of the REAL-UNDERIVED category.
+
 **Neutrino-Koide — FALSIFIED (Phase 155).**
 Solving $Q = 2/3$ with measured $\Delta m^2 = (7.53\times10^{-5},\ 2.453\times10^{-3})\ \mathrm{eV}^2$:
 
@@ -251,9 +272,14 @@ consistency: 0.95 (Phase 157).
 | # | Question | Status |
 |---|---|---|
 | 1 | Do the 3 log-normal classes share **one** cascade? | Underdetermined — one universe cannot distinguish 1 cascade from 3; needs a new primitive (channel gains) |
-| 2 | Is the Koide $45^\circ$ derivable? | No derivation exists; origin classified contingent (REAL-UNDERIVED) |
 
 No speculative additions.
+
+### Closed Questions
+
+| Question | Closure | Status |
+|---|---|---|
+| Koide $Q=2/3$, $\theta\approx45^\circ$ | Phase 159 (`756b0e9`) | **Closed** — real · predictive · RG-stable · **underivable** (REAL-UNDERIVED) |
 
 ---
 
