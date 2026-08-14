@@ -282,3 +282,61 @@ No speculative additions.
 | 156 | Consistency 0.81 | Found selected↔contingent flip + contingency ambiguity |
 | 157 | Taxonomy 4 categories (0.95) | Split origin from coincidence |
 | 158 | Taxonomy 3 categories (EMERGENT→REAL-UNDERIVED) | Stress test: minimal necessary set |
+
+---
+
+## 15 Definitions
+
+| ID | Term | Definition |
+|---|---|---|
+| D-01 | **DERIVED** | Computable from the primitives by theorem |
+| D-02 | **REAL-UNDERIVED** | Real, precise, predictive structure whose origin is not computable |
+| D-03 | **DRAWN** | Coincidental draw of the abundance law — no hidden structure |
+| D-04 | **emergent** (modifier) | REAL-UNDERIVED *with* a generating mechanism |
+| D-05 | **structured** (modifier) | REAL-UNDERIVED *without* a generating mechanism |
+| D-06 | **Structure/content split** | Form (topology, symmetry, lower bounds, distribution shape) is derived; content (drawn values, specific angles, upper bounds) is contingent |
+| D-07 | **Universal Abundance Law** | $\log X \sim \mathcal{N}(\mu,\sigma^2)$ — multiplicative cascade ⇒ CLT in log-space |
+| D-08 | **Random Actualization** | Genuine ontological chance realizes the contingent content |
+| D-09 | **Architecture shapes** | The frequency values of the landscape (e.g. hierarchy $1:207:3478$); underived |
+| D-10 | **Overlap operator $Y$** | Yukawa coupling as overlap of defect wavefunctions; form derived, spectrum free |
+| D-11 | **Koide relation** | $Q = 2/3$ at $\theta = 44.9997^\circ$; charged-lepton-specific |
+| D-12 | **CP lower bound** | $(N-1)(N-2)/2 \ge 1 \Rightarrow N \ge 3$ |
+| D-13 | **Defect count $n$** | Number of topological defects per sector ($1$ EM, $2$ weak, $3$ strong); underived |
+| D-14 | **Defect moduli** | $\mathrm{Aut}(\text{moduli of } n \text{ defects}) \supseteq SU(n)$ |
+| D-15 | **Composite object** | Union of two categories (e.g. internal $N=3$ = DERIVED ∩ DRAWN) |
+
+---
+
+## 16 Theorem Registry
+
+| ID | Theorem | Type | Statement | Confidence |
+|---|---|---|---|---|
+| T-01 | U(1) theorem | Derivation | $\mathrm{Aut}(S^1)=U(1)$, $\pi_1(S^1)=\mathbb{Z}$ | 0.95 (success 1.0) |
+| T-02 | Spatial-3 theorem | Derivation | Complexity maximization peaks at $M^2\approx 5 \Rightarrow d=3+1$ | 0.85 |
+| T-03 | CP lower-bound theorem | Derivation | $(N-1)(N-2)/2 \ge 1 \Rightarrow N\ge 3$; $S_3$ first non-abelian | 0.90 |
+| T-04 | Abundance-law theorem | Derivation | Multiplicative cascade ⇒ CLT ⇒ $\log X \sim \mathcal{N}(\mu,\sigma^2)$ | theorem |
+| T-05 | Yukawa-overlap theorem | Derivation | $Y =$ overlap operator (form derived; spectrum free) | derived |
+| T-06 | SU(2) emergence | Derivation | $Z_2$ winding $\to SO(3)=SU(2)/Z_2 \to$ spinor $SU(2)$ | 0.70 |
+| T-07 | SU(3) structure | Derivation | $\mathrm{Aut}(\text{moduli of } n\text{ defects}) \supseteq SU(n)$ | 0.10 |
+| T-08 | Koide no-go | No-go | No symmetry/attractor/topology/information-geometry selects $Q=2/3$ | 0.70 |
+| T-09 | Gauge-count no-go | No-go | No principle fixes the defect count $n$ ($\pi_1=\mathbb{Z}$ infinite) | 0.10 |
+| T-10 | $N\le 3$ no-go | No-go | No stability/anomaly/representation/defect/info bound gives $N\le 3$ | 0.70 |
+| T-11 | Neutrino-Koide falsification | No-go | $Q_{\max}=0.585$ (NO) / $0.500$ (IO) $< 2/3$ | 0.90 |
+| T-12 | Shared-cascade no-go | No-go | One cascade vs three is untestable from one universe | 0.55 |
+
+---
+
+## 17 Assumption Registry
+
+| ID | Assumption | Status | Confidence |
+|---|---|---|---|
+| A-01 | Primitive set $\{Q,\ \text{Random Actualization},\ (\ell,\tau,\hbar),\ M^2\}$ is complete | Assumed (no-new-primitives constraint) | — |
+| A-02 | Structure/content split is valid | Assumed; refined in 156→157 | 0.95 |
+| A-03 | Random Actualization is genuine ontological chance | Assumed | — |
+| A-04 | Multiplicative cascade is the actualization mechanism | Assumed (form derived, mechanism assumed) | — |
+| A-05 | Three log-normal universality classes (coupling, mass scale, relic density) | Assumed classification | 0.55 |
+| A-06 | SU(2) double-cover lift (the "$B$" left as given) | Assumed | 0.70 |
+| A-07 | SU(3) 8-gluon algebra | Borrowed (not derived) | 0.10 |
+| A-08 | Koide is charged-lepton-specific | Established (Phase 155) | 0.90 |
+| A-09 | $N\le 3$ is an empirical boundary condition (like $H$) | Assumed | 0.70 |
+| A-10 | No spacetime↔internal $N$ linking mechanism | No-go result | — |
