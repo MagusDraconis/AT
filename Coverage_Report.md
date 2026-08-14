@@ -52,7 +52,7 @@
 | **Galaxies** | DATA-003–010, QG-070–079, SPARC/KMOS3D RAR | 100 | COMPLETE | — |
 | **Clusters** | Coma catalog + ACCEPT profiles; `ClusterMassAudit.md` | 100 | COMPLETE | — |
 | **Pantheon+** | DATA-001, DATA-002, `Data/Pantheon+SH0ES.dat` | 100 | COMPLETE | — |
-| **CMB** | *(none — referenced only as external prior)* | 10 | MISSING | TODO — no CMB data or analysis |
+| **CMB** | X063 (DM requirement), X046b/X062 (peak-shift), QG-081 (r_s inferred); `CMB_Roadmap.md` | 45 | PARTIAL | TODO — no $C_\ell$ derivation, no $r_s$ computation, no Planck fit |
 | **Dark Matter** | X063–X065b, `DefectDarkMatterAnalyzer`, `DarkMatterAuditAnalyzer` | 100 | COMPLETE | — |
 | **Dark Energy** | X062, QG-031, DATA-001/002, `MetastableRepulsiveArchitectureAnalyzer` | 100 | COMPLETE | — |
 | **Classification** | Phases 148–158, `MinimalTaxonomy.cs`, `TaxonomyStressTest.cs` | 100 | COMPLETE | — |
@@ -91,5 +91,5 @@
 | Status | Count | Topics |
 |---|---|---|
 | COMPLETE | 20 | Foundations, Ontology, Q, Random Actualization, Complexity, Topology, Symmetry, Gauge, Flavor, Multiplicity, Cosmology, Galaxies, Clusters, Pantheon+, Dark Matter, Dark Energy, Classification, Audit Results, + X/XE/XB/TQM/QG programs |
-| PARTIAL | 2 | m=3 Closure (25%), Theta Sector (60%) |
-| MISSING | 9 | TRM, Memory Channel, Frame Dragging, Unified Action, CMB, + prefixes MC/MEM/RBF/TO/TQK/LC/TOL/FD/UF/TRM |
+| PARTIAL | 3 | m=3 Closure (25%), Theta Sector (60%), CMB (45%) |
+| MISSING | 8 | TRM, Memory Channel, Frame Dragging, Unified Action, + prefixes MC/MEM/RBF/TO/TQK/LC/TOL/FD/UF/TRM |

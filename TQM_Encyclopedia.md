@@ -187,9 +187,13 @@ Legend: ✅ = present, 🔶 = partial, ❌ = missing (TODO).
 - **Source:** `ClusterMassAudit.md`, `ClusterMassAudit.cs`, `TQM_ClusterMassAudit.cs`, `Data/coma_v3344_ready.csv`, `Data/Coma_Cluster_Chandra_*.dat`.
 
 ## 8.6 CMB
-- **Existing:** ❌ — referenced only as an external prior in DATA-002.
-- **Missing:** TODO — no CMB data, analysis, or constraint derivation.
-- **Source:** *(none)*.
+- **Existing:** 🔶 CMB as *constraint* — X063 (acoustic peaks require collisionless DM);
+  X046b/X062 (evolving $\Lambda$ ⇒ 0.5–1% peak-shift prediction); QG-081 ($r_s$, $D_A$, $\theta_*$
+  are FLRW-inferred).
+- **Missing:** TODO — no $C_\ell$ derivation, no $r_s$ computation, no recombination solver,
+  no Planck likelihood fit.
+- **Source:** `CMB_Roadmap.md`, `DarkMatterAuditAnalyzer.cs`, `CosmologyAudit.cs`,
+  `ObservableDeviationAnalyzer.cs`, `ModelDependenceAnalyzer.cs`.
 
 ---
 
