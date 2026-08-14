@@ -6706,6 +6706,16 @@ Test 4 MetricGeneration_PresentOrMissing: distance PRESENT, metric candidate PAR
 full g_uv MISSING (imported via Malament/HKM, not generated). TQM describes+imports g_uv,
 does not generate it. All 4 PASSED. Report: Docs/Audits/MetricGenerationAudit.md.
 
+**Metric Emergence Program (4 tests, verified):**
+Created MetricEmergenceTests.cs. Test 1 DistanceMatrix_IsMetric: causal distance matrix
+D[i,j]=|i-j| satisfies all 4 metric axioms. PRESENT. Test 2 CausalVolume_DefinesConformalFactor:
+f=rho^(2/d), round-trip sqrt|g|=rho holds (rho=0.5..8, d=2,3,4). PRESENT. Test 3
+ConformalMetricCandidate_IsConstructible: g=f·eta, constant f R=0, f=1+0.5x² R=-0.6145
+(matches Liouville). CONSTRUCTIBLE. Test 4 MetricEmergence_PresentOrMissing: distance+factor
+PRESENT, conformally-flat candidate CONSTRUCTIBLE, full g_uv (conformal class) MISSING/external.
+Metric tensor candidate PARTIALLY emergent: conformal factor native, conformal structure
+imported. All 4 PASSED. Report: Docs/Audits/MetricEmergenceProgram.md.
+
 **Continuum Limit Test Program:**
 Converted continuum audits into xUnit test plan. Matrix: #1 L_Q→flat Laplacian = Missing
 (skeleton provided); #2 flat→Schrödinger = Implemented (HilbertSpaceAnalyzer); #3 BDG→
