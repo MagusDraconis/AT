@@ -5857,3 +5857,25 @@ the single cosmic rate H, but only dimensionally — Levels 1–4 pass, Level 5 
 - PROGRAM STATE: the unification question is answered: Λ and g† both track H, but the 2π in g†
   remains coincidental and un-unified. The single remaining OBSERVATIONAL test is the g†(z) EVOLUTION
   (mass-limited). No avenue has produced a new falsifiable prediction.
+
+**PHASE 143 — ResearchQG-096: Can Causal Discreteness Generate g† (the 2π obstruction — NO unification):**
+Tested whether causal-set structure produces g† ~ 1e-10 m/s² the way it produces Λ ~ 1/√N.
+Result: NO — causal discreteness generates the cH SCALE but NOT the 1/(2π). Levels 1–2,4 pass.
+
+- All acceleration scales from {c, l_P, N, Λ, H}: Planck a_P=5.6e51 (61 decades off), cH=6.5e-10
+  (causal-depth growth), c²√Λ=9.4e-10, c/t=6.9e-10, cH/2π=1.04e-10. All cosmological candidates
+  are ~cH; only cH/2π matches a₀ (and it needs the 2π).
+- Candidate derivations (causal-depth growth, Poisson fluctuations, ever-present Λ, causal horizon)
+  ALL give a_eff ~ cH; NONE produces the 1/(2π). The 2π is an angular-frequency (radians→cycles)
+  geometric factor, not a counting/order quantity.
+- Λ vs g†: Λ ~ 1/√N is FULLY derived (0 params, exponent −1/2 from counting, α=O(1)); g† = cH/2π is
+  HALF derived (cH natural, 2π inserted). Causal discreteness does NOT unify them.
+- VERDICT: Levels 1–2,4 PASS; Level 3 (g† emerges) and Level 5 (falsifiable consequence) FAIL.
+  The 2π remains the un-unified coincidence (QG-085). Λ and g† are NOT manifestations of one
+  causal-discreteness principle.
+- Outputs: CausalSetAccelerationScales.csv, GdaggerFromCausalSets.csv, LambdaVsGdaggerOrigin.csv
+  (Data/derived) + 1 PNG; Docs/CausalScaleUnification.md; 4 source files + test.
+- PROGRAM CONCLUSION: the unification program (QG-095–096) is now complete and NEGATIVE: Λ is
+  fully derived from causal discreteness, g† is only half-derived (the 2π is not generated). The
+  two anchors are linked only through H, dimensionally. The single remaining OBSERVATIONAL test is
+  the g†(z) EVOLUTION (mass-limited, QG-079). No deeper derivation has produced a new prediction.
