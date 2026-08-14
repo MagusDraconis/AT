@@ -251,10 +251,25 @@ public static class PeakHeightAnalyzer
         return peaks;
     }
 
+    /// <summary>Correct Doppler projection weight.
+    /// Under the LOS projection with measure d(ln k):
+    ///   w_D = Int d(ln k) j_l'^2 / Int d(ln k) j_l^2 = 1/3
+    /// (the dipole/monopole angular-average ratio). This replaces the naive
+    /// weight 1 used in the original quadrature.</summary>
+    public static double DopplerProjectionWeight() => 1.0 / 3.0;
+
+    /// <summary>SW-Doppler cross-term weight.
+    /// The monopole (SW) and dipole (Doppler) transfer functions enter the LOS
+    /// integral with a relative phase -i (e^{ik.mu.D} -> i^-l vs i^-(l-1)), so
+    /// the interference 2 S v_b Re[-i j_l j_l'] is exactly zero. The cross term
+    /// cannot fill the rarefaction peak.</summary>
+    public static double CrossTermWeight() => 0.0;
+
     /// <summary>Acoustic peaks = local maxima of |S| = |Theta0 + Phi| (density extrema).
-    /// Returns (l, T^2 = S^2+v_b^2, S^2, v_b^2) at each extremum.</summary>
+    /// Returns (l, T^2 = S^2 + w*v_b^2, S^2, v_b^2) at each extremum, where w is
+    /// the Doppler projection weight (1/3 correct, 1 = naive quadrature).</summary>
     public static List<(double l, double t2, double s2, double vb2)> FindAcousticPeaks(
-        int count, int lMin = 60, int lMax = 900, int dl = 2)
+        int count, int lMin = 60, int lMax = 960, int dl = 2, double dopplerWeight = 1.0)
     {
         double aStar = AStar();
         double dM = DM();
@@ -271,7 +286,7 @@ public static class PeakHeightAnalyzer
             if (prev1 > prev2 && prev1 >= s2 && l - dl > lMin && peaks.Count < count)
                 peaks.Add((l - dl, prevT2, prevS2, prevVb2));
             prev2 = prev1; prev1 = s2;
-            prevS2 = s2; prevVb2 = vb2; prevT2 = s2 + vb2;
+            prevS2 = s2; prevVb2 = vb2; prevT2 = s2 + dopplerWeight * vb2;
         }
         return peaks;
     }

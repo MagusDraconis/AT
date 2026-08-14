@@ -6268,3 +6268,16 @@ Silk) reproduces the CMB first peak to ~5% and the peak SPACING + third/first ra
 with no new physics. The remaining gap is the full Cℓ Bessel projection (cross term)
 for the rarefaction peak. See Docs/Audits/{Recombination,ThetaStar,AcousticOscillator,
 CMBProjection,PeakHeight,NeutrinoDriving,HigherPeaks}Audit.md + CMB_Roadmap.md.
+
+**SW-Doppler Cross Audit (second-peak deficit — honest negative):**
+Investigated whether a missing SW-Doppler interference term explains D_l2/D_l1 =
+0.08 vs Planck 0.44. Result: the cross term is EXACTLY ZERO — the monopole (SW)
+and dipole (Doppler) enter the LOS integral with relative phase −i, so
+|Θ_l|² = S²j_l² + v_b²j_l'² (no interference). The correct Doppler projection
+weight is w_D = 1/3 (dipole/monopole angular-average, verified ~0.333 numerically;
+the original code used 1). Correcting it barely moves the ratios: D_l3/D_l1 0.60→0.62
+(vs 0.68), D_l2/D_l1 unchanged ~0.08 (v_b≈0 at density extrema). Conclusion: the
+second-peak deficit is NOT a missing cross term; it is the sudden-recombination +
+Limber limit. The rarefaction peak (Doppler-shifted to ℓ≈537) requires the full
+Bessel projection + visibility-function Doppler damping — the next missing module.
+See Docs/Audits/CrossTermAudit.md.
