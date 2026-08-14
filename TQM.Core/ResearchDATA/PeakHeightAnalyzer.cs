@@ -1,0 +1,138 @@
+using System.Globalization;
+
+namespace TQM.Core.ResearchDATA;
+
+/// <summary>
+/// CMB Peak Height Audit — first acoustic peak amplitude.
+/// Adds radiation driving (evolving Phi via the Poisson equation) and Silk
+/// damping (photon diffusion) to the acoustic oscillator, then estimates the
+/// first-peak amplitude D_l1. No polarization, no lensing, no full C_l.
+/// </summary>
+public static class PeakHeightAnalyzer
+{
+    public const double As = 2.105e-9;               // Planck scalar amplitude
+    public const double TcmbMicroK = 2.7255e6;       // K -> micro-K
+    const double Mpc = 3.08567758149e22;             // m
+    const double Gsi = 6.67430e-11;                  // m^3 kg^-1 s^-2
+    const double Mh = 1.6735575e-27;                 // kg (hydrogen atom)
+
+    static readonly double h = RecombinationAnalyzer.H0KmS / 100.0;
+    static readonly double H0Mpc = RecombinationAnalyzer.H0KmS / 2.99792458e5; // Mpc^-1
+    static readonly double Ob = RecombinationAnalyzer.OmegaBh2 / (h * h);
+    static readonly double Om = RecombinationAnalyzer.OmegaMh2 / (h * h);
+    static readonly double Or = RecombinationAnalyzer.OmegaRh2 / (h * h);
+    static readonly double Ol = 1.0 - Om - Or;
+    static readonly double Og = RecombinationAnalyzer.OmegaGammaH2 / (h * h);
+    static readonly double R0 = 3.0 * Ob / (4.0 * Og);
+
+    // Baryon number density today (m^-3), hydrogen-only.
+    static readonly double H0s = RecombinationAnalyzer.H0KmS * 1e3 / Mpc;
+    static readonly double RhoCrit = 3.0 * H0s * H0s / (8.0 * Math.PI * Gsi);
+    static readonly double NH0 = Ob * RhoCrit / Mh;
+
+    static double E(double a) => Math.Sqrt(Om / (a * a * a) + Or / (a * a * a * a) + Ol);
+    static double Htilde(double a) => a * H0Mpc * E(a);   // Mpc^-1
+    static double R(double a) => R0 * a;
+
+    public static double ZStar() => RecombinationAnalyzer.Solve().ZStar;
+    public static double AStar() => 1.0 / (1.0 + ZStar());
+    public static double DM() => RecombinationAnalyzer.ComovingDistance(ZStar()) / Mpc;
+
+    /// <summary>Full tight-coupling system with evolving Phi (radiation driving).
+    /// 5 ODEs: Theta0, Theta1, delta_matter, v_matter, Phi (0i Einstein eq.).</summary>
+    public static (double Th0, double Th1, double Phi, double Dm) FullSolve(
+        double k, double aStar, double aInit = 1e-6, int steps = 20000)
+    {
+        double a = aInit;
+        double th0 = -0.5, th1 = 0.0, dm = -1.5, vm = 0.0, phi = 1.0;  // adiabatic IC
+
+        double da = (aStar - aInit) / steps;
+        for (int i = 0; i < steps; i++)
+        {
+            void RHS(double aa, double t0, double t1, double d, double v, double p,
+                     out double dt0, out double dt1, out double dd, out double dv, out double dp)
+            {
+                double aH = aa * Htilde(aa);
+                double Ra = R(aa);
+                double h2 = H0Mpc * H0Mpc;
+                // 0i Einstein: Phi' = (4piG a^2)[rho_m v_m + (4/3)rho_g Theta1]/k - H Phi
+                double pdot = (1.5 * h2 * Om * v / aa + 2.0 * h2 * Og * t1 / (aa * aa)) / k
+                            - Htilde(aa) * p;
+                dt0 = (-k * t1 / 3.0 - pdot) / aH;
+                dt1 = (k * t0 + k * (1.0 + Ra) * p - Ra * Htilde(aa) * t1) / ((1.0 + Ra) * aH);
+                dd = (-k * v - 3.0 * pdot) / aH;
+                dv = (-Htilde(aa) * v + k * p) / aH;
+                dp = pdot / aH;
+            }
+
+            RHS(a, th0, th1, dm, vm, phi, out var k1t0, out var k1t1, out var k1d, out var k1v, out var k1p);
+            RHS(a + 0.5 * da, th0 + 0.5 * da * k1t0, th1 + 0.5 * da * k1t1, dm + 0.5 * da * k1d, vm + 0.5 * da * k1v, phi + 0.5 * da * k1p, out var k2t0, out var k2t1, out var k2d, out var k2v, out var k2p);
+            RHS(a + 0.5 * da, th0 + 0.5 * da * k2t0, th1 + 0.5 * da * k2t1, dm + 0.5 * da * k2d, vm + 0.5 * da * k2v, phi + 0.5 * da * k2p, out var k3t0, out var k3t1, out var k3d, out var k3v, out var k3p);
+            RHS(a + da, th0 + da * k3t0, th1 + da * k3t1, dm + da * k3d, vm + da * k3v, phi + da * k3p, out var k4t0, out var k4t1, out var k4d, out var k4v, out var k4p);
+
+            th0 += da * (k1t0 + 2 * k2t0 + 2 * k3t0 + k4t0) / 6.0;
+            th1 += da * (k1t1 + 2 * k2t1 + 2 * k3t1 + k4t1) / 6.0;
+            dm  += da * (k1d + 2 * k2d + 2 * k3d + k4d) / 6.0;
+            vm  += da * (k1v + 2 * k2v + 2 * k3v + k4v) / 6.0;
+            phi += da * (k1p + 2 * k2p + 2 * k3p + k4p) / 6.0;
+            a += da;
+        }
+        return (th0, th1, phi, dm);
+    }
+
+    /// <summary>Silk damping scale k_D (Mpc^-1) and factor exp(-k^2/k_D^2).
+    /// X_e = 1 before recombination (the dominant contribution).</summary>
+    public static (double kD, double silk) SilkDamping(double k, double aStar)
+    {
+        int steps = 20000;
+        double aInit = 1e-6;
+        double da = (aStar - aInit) / steps;
+        double sum = 0.0;
+        for (int i = 0; i <= steps; i++)
+        {
+            double a = aInit + i * da;
+            double Ra = R(a);
+            double tauDot = NH0 * RecombinationAnalyzer.SigmaT * Mpc / (a * a); // Mpc^-1
+            double f = (1.0 / 6.0) * (Ra * Ra + 16.0 * (1.0 + Ra) / 15.0)
+                     / ((1.0 + Ra) * (1.0 + Ra) * tauDot);
+            double dEtaDa = 1.0 / (a * Htilde(a));   // Mpc
+            double w = (i == 0 || i == steps) ? 1.0 : (i % 2 == 0 ? 2.0 : 4.0);
+            sum += w * f * dEtaDa;
+        }
+        double kD2inv = da * sum / 3.0;
+        double kD = 1.0 / Math.Sqrt(kD2inv);
+        return (kD, Math.Exp(-k * k / (kD * kD)));
+    }
+
+    /// <summary>First-peak amplitude D_l1 (micro-K^2) = (9/25) A_s T_cmb^2 (S^2+v_b^2) Silk.</summary>
+    public static (double lPeak, double dPeak, double s2, double vb2, double silk,
+                   double phi, double kD) FirstPeakAmplitude(
+        int lMin = 40, int lMax = 500, int dl = 2)
+    {
+        double aStar = AStar();
+        double dM = DM();
+
+        double prev2 = double.NegativeInfinity, prev1 = double.NegativeInfinity;
+        double s2 = 0, vb2 = 0, lPeak = 0, phiAtPeak = 0;
+
+        for (int l = lMin; l <= lMax; l += dl)
+        {
+            double k = l / dM;
+            var (th0, th1, phi, _) = FullSolve(k, aStar);
+            double p = (th0 + phi) * (th0 + phi) + th1 * th1;
+            if (prev1 > prev2 && prev1 >= p && l - dl > lMin)
+            {
+                lPeak = l - dl; phiAtPeak = phi; break;
+            }
+            prev2 = prev1; prev1 = p;
+            s2 = (th0 + phi) * (th0 + phi);
+            vb2 = th1 * th1;
+        }
+
+        double kPeak = lPeak / dM;
+        var (kd, silk) = SilkDamping(kPeak, aStar);
+        double norm = (9.0 / 25.0) * As * TcmbMicroK * TcmbMicroK;
+        double dPeak = norm * (s2 + vb2) * silk;
+        return (lPeak, dPeak, s2, vb2, silk, phiAtPeak, kd);
+    }
+}
