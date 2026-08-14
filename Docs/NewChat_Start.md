@@ -6639,6 +6639,14 @@ BDG → □_g) that is MISSING. Proven: L_Q→-∇², BDG→□, distinct signat
 (Malament, external). Missing: G1 Δ_g/□_g, G2 weighted L_W, G3 curved Schrödinger, G4 operator→
 Einstein. 5-step roadmap. See Docs/Audits/CurvedSpaceProgram.md.
 
+**Metric Operator Formalization Program (4 tests, implemented + verified):**
+Created MetricOperatorTests.cs (TQM.Tests/ResearchXC). Test 1 WeightedGraphLaplacian_
+IsConstructible: L_W=D_W−W valid (zero row-sum, PSD). Test 2 ReducesToUnweighted: uniform
+weights ⇒ L_W=L_Q exactly. Test 3 ConvergesToFlatLaplacian: N²[2-2cos(πk/N)]→(πk)² at O(1/N²).
+Test 4 CausalSetDAlembertian_HasNoMetricData: BDG is binomial/metric-independent. Minimal
+object = weighted Laplacian L_W=D_K−K from existing coupling K_ij=K·exp(-d/λ); missing piece =
+the metric weight rule. All 4 PASSED. Report: Docs/Audits/MetricOperatorProgram.md.
+
 **Continuum Limit Test Program:**
 Converted continuum audits into xUnit test plan. Matrix: #1 L_Q→flat Laplacian = Missing
 (skeleton provided); #2 flat→Schrödinger = Implemented (HilbertSpaceAnalyzer); #3 BDG→
