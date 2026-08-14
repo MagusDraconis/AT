@@ -6405,6 +6405,18 @@ chain (gauge/physics), TQM Θ is an information medium (transport/memory/species
 equivalence/integration/contradiction. Observable g_obs unspecified; testability LOW.
 Verdict: unrelated; no migration warranted. See Docs/Audits/ThetaChainReconciliationAudit.md.
 
+**TRM Legacy Final Classification Audit (migration summary):**
+Final disposition of all 9 TRM modules. 3 ABSORBED — Time Field (=phase-gradient
+gravity QG-022), RAR (=g_†=cH₀/2π), Frame Dragging (=GR gravitomagnetism/Lense-Thirring,
+already measured). 2 REJECTED — Temporal Drift (β_T tired-light, QG-080–089 falsified),
+Quantum Engine (non-unitary, no UV problem, worse than BDG lattice). 3 CANDIDATE
+MATHEMATICS — m=3 Closure (Ω=(q+3)/q, γ=1/Ω, unmapped, targets N≤3 gap), Memory Channel
+(φ²|μ̇|, no observable), Theta Chain (Θ→O₅→λ_Θ→g_obs, homonym, g_obs unspecified).
+0 CANDIDATE PHYSICS (no TRM module carries a genuinely new testable observable).
+1 OPEN — Unified Action (roadmap S_eff[T,A_T,Θ], depends on all others). Net: nothing
+new enters TQM as physics; highest-value residue = m=3 Closure. See
+Docs/Audits/TRM_Legacy_Final.md; encyclopedia §10.4 updated.
+
 **TRM Quantum Engine Reconciliation Audit (new mathematics, lattice contact only):**
 Reconciled the external "Quantum Engine" formulas (D(x)=1/(1+x+bx²+x⁴), UV damping
 exp(-p²/Λ²), Padé kernel, loop finiteness) against TQM's QG/causal-set/graph-Laplacian/

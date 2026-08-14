@@ -240,6 +240,21 @@ Legend: ✅ = present, 🔶 = partial, ❌ = missing (TODO).
 - **Missing:** —
 - **Source:** `TQM_Master_Reference.md` §13–14; `Docs/NewChat_Start.md` Phase headers.
 
+## 10.4 TRM legacy final classification (migration summary)
+- **Existing:** ✅ final disposition of all 9 TRM modules (`Docs/Audits/TRM_Legacy_Final.md`).
+- **Classification:** 3 **Absorbed** (Time Field, RAR, Frame Dragging); 2 **Rejected**
+  (Temporal Drift, Quantum Engine); 3 **Candidate Mathematics** (m=3 Closure, Memory Channel,
+  Theta Chain); 0 **Candidate Physics**; 1 **Open** (Unified Action).
+- **Net migration:** nothing new enters TQM as physics — Time Field → phase-gradient gravity
+  (QG-022), RAR → $g_\dagger=cH_0/2\pi$ (already derived), Frame Dragging → GR gravitomagnetism
+  (already measured). Temporal Drift / Quantum Engine rejected (falsified / non-viable).
+  The only genuine residues are three **unmapped** mathematics candidates, of which **m=3
+  Closure** (targets the Phase-151 $N\le3$ gap) is the highest-value TODO.
+- **Missing:** TODO — m=3 Closure needs an $\Omega,\gamma$ physical interpretation; Unified
+  Action remains a roadmap pending its dependencies.
+- **Source:** `Audits/TRM_Legacy_Final.md`, `Audits/TRM_Reconciliation_Audit.md`, the per-module
+  reconciliation/viability/mapping audits.
+
 ---
 
 ## Missing-Sections Rollup (TODO)
