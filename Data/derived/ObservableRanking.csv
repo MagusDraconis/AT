@@ -1,0 +1,7 @@
+Rank,Channel,SignalToNoise,Observable
+1,CMB low-l variance,7,True
+2,dark energy Λ,1,False
+3,photon time-delay,0,False
+4,GW phase noise,0,False
+5,Λ fluctuation,0,False
+6,LSS correlation excess,0,False

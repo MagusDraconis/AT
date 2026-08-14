@@ -5811,3 +5811,27 @@ theoretical result in the program) but a POSTDICTION with no observable conseque
 - PROGRAM STATE UPDATE: the Λ ~ 1/√N result is CONFIRMED as genuine (not the next coincidence) —
   the single strongest theoretical anchor. The two live anchors remain (1) causal-set Λ ~ 1/√N
   (theoretical, confirmed) and (2) g†(z) EVOLUTION (observational, mass-limited).
+
+**PHASE 141 — ResearchQG-094: Observable Consequences Of Causal Discreteness (untestable beyond Λ):**
+Searched for measurable traces of causal discreteness. Result: NONE beyond Λ — every
+Planck-suppressed signature is unobservable. Levels 1–4 pass; Level 5 fails.
+
+- Two suppression scales: (1) cosmological 1/√N ~ 1e-122 (Poisson fluctuations); (2) propagation
+  l_P/λ ~ 1e-28 (swerving / Lorentz violation). Both astronomically small.
+- Signal amplitudes vs detector sensitivities: Λ fluctuation δΛ/Λ ~1e-122 (S/N ~1e-118), GW phase
+  noise l_P·f/c ~1e-36 (S/N ~1e-14), photon time-delay l_P/c ~1e-43 s (S/N ~1e-37), LSS excess
+  ~1e-122 (S/N ~1e-118). All ≪1. Only dark energy Λ (already observed) and CMB low-l variance
+  (O(1) but identical in continuum) are O(1).
+- Detection feasibility: no instrument (JWST, Rubin, Euclid, LISA, ET, CE) reaches l_P; the Λ
+  fluctuation needs ~1e122 dynamic range — impossible.
+- HOSTILE continuum audit: continuum cosmology explains ALL candidate signatures with equal
+  economy (Λ = bare constant; CMB/LSS = cosmic variance; GW/photon = below noise floor). Explanatory
+  power TIED — no observation discreteness explains better.
+- VERDICT: Levels 1–4 PASS (cataloged, amplitudes, none promising, feasibility quantified);
+  Level 5 FAIL. Causal discreteness leaves NO observable trace beyond Λ itself: Λ ~ 1/√N is a
+  genuine but UNTESTABLE postdiction.
+- Outputs: CausalDiscretenessSignals.csv, ObservableRanking.csv, LambdaFluctuationAnalysis.csv,
+  DiscretenessVsContinuum.csv (Data/derived) + 3 PNGs; Docs/ObservableConsequences.md; 5 files + test.
+- PROGRAM STATE: the causal-set line (QG-090–094) is now complete: Λ ~ 1/√N is genuine but
+  untestable. The program's ONLY remaining OBSERVATIONAL test is the g†(z) EVOLUTION (mass-limited,
+  QG-079). No deeper or alternative avenue has produced a falsifiable prediction.

@@ -1,0 +1,7 @@
+Channel,Effect,Amplitude,DetectorSensitivity,SignalToNoise,Observable
+dark energy Λ,ever-present Λ = 1/√N in Planck units,1.0E+000,1.0E+000,1,0
+Λ fluctuation,δΛ/Λ ~ 1/√N,1.4E-122,1.0E-004,0,0
+GW phase noise,δφ ~ l_P·f/c,5.4E-042,1.0E-022,0,0
+photon time-delay,Δt ~ l_P/c · (E/Ep)^α,3.2E-029,1.0E-016,0,0
+CMB low-l variance,cosmic variance ~ 1/√l at l=2,7.1E-001,1.0E-001,7,1
+LSS correlation excess,δξ/ξ ~ 1/√N,1.4E-122,1.0E-004,0,0
