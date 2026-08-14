@@ -5739,3 +5739,28 @@ deeper primitive; and Causal Set Theory yields the one quantitative 'prediction 
 - NEXT: this is the natural terminus of the QG-080–090 "origin" investigation. The program now
   has exactly TWO live quantitative anchors: (1) the causal-set Λ ~ 1/√N prediction (theoretical),
   and (2) the g†(z) EVOLUTION test (observational, mass-limited). Both are documented.
+
+**PHASE 138 — ResearchQG-091: Is Causality More Fundamental Than Time Audit (causality is the bottom):**
+Tested whether a universe of events + causal relations (no time/space/change) can generate time,
+geometry, cosmology and a₀. Result: causality IS more fundamental than time — Levels 1–4 pass.
+
+- Pure causal framework: events + partial order ≺, no time/space/change inputs. Measures: causal
+  depth, chain length, branching, causal volume.
+- Time = causal depth (longest chain), a labeling of the order; change is automatic (differences
+  along chains). Geometry: causal relation → light cone → conformal metric; interval volume N ∝ D^d
+  recovers dimension d=4 (verified exactly). Both emerge without circularity.
+- Cosmology: H = growth rate of causal DEPTH (d ln depth/dt = H); event count grows as 4H
+  (4-volume). Causal-set discreteness predicts Λ ~ 1/√N ~ 1e-122 (QG-090).
+- a₀ = c × (causal-depth growth rate) = cH = 6.5e-10 (the 'cH class', no 2π).
+- HOSTILE: 'precedence' must be POSTULATED — deriving the partial order from a deeper structure
+  requires re-introducing the order, so causality is the minimal primitive (nothing deeper without
+  circularity). The reconstruction bottoms out at the partial order; it does not fail.
+- VERDICT: Levels 1–4 PASS; Level 5 PARTIAL (Λ magnitude matched; fluctuations ~1/√N tiny).
+  Causality is the bottom of the hierarchy; time, change, space, geometry and expansion all derive
+  from it. Unique signatures: Λ ~ 1/√N (already matched) and its ~1/√N fluctuations (unobservable).
+- Outputs: CausalHierarchy.csv, TimeFromCausality.csv, GeometryFromCausality.csv,
+  FundamentalityRanking.csv (Data/derived) + 1 PNG; Docs/CausalCosmology.md; 5 files + test.
+- NEXT: the QG-080–091 "what is fundamental" investigation is complete: the hierarchy is
+  causality (primitive) → time/change/geometry → cosmology (H, Λ). The program's two live anchors
+  remain (1) causal-set Λ ~ 1/√N (theoretical, matched) and (2) g†(z) EVOLUTION (observational,
+  mass-limited). No deeper primitive is derivable without circularity.
