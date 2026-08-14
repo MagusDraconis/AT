@@ -134,9 +134,11 @@ Legend: ✅ = present, 🔶 = partial, ❌ = missing (TODO).
 - **Source:** `DefectDarkMatterAnalyzer.cs`, `DefectRelicAbundanceAnalyzer.cs`, `DarkMatterAuditAnalyzer.cs`.
 
 ## 5.4 Frame dragging / unified action
-- **Existing:** ❌
-- **Missing:** TODO — no frame-dragging or unified-action derivation exists in the repository.
-- **Source:** *(none)*.
+- **Frame dragging:** ✅ **Absorbed** — $\vec A_T,\ \vec B_T=\nabla\times\vec A_T$ ≡ GR
+  gravitomagnetism (Lense–Thirring), already measured. Not a TQM gap.
+- **Unified action:** **TRM roadmap only** — $S_{\rm eff}[T,\vec A_T,\Theta]$ is not a TQM
+  result (v1.0 disposition).
+- **Source:** `Audits/FrameDraggingReconciliationAudit.md`, `Audits/TRM_Legacy_Final.md`.
 
 ---
 
@@ -162,9 +164,9 @@ Legend: ✅ = present, 🔶 = partial, ❌ = missing (TODO).
 
 # Part VII — Unified Action
 
-- **Existing:** ❌
-- **Missing:** TODO — the TRM "Unified Action" (and the m=3 closure) is absent from this repository.
-- **Source:** *(none)*.
+- **Existing:** ❌ (TRM roadmap only — $S_{\rm eff}[T,\vec A_T,\Theta]$; **not a TQM result**)
+- **Status:** **TRM roadmap only** — depends on the vector/theta sectors and the Internal-3 node (v1.0 disposition).
+- **Source:** `Audits/TRM_Legacy_Final.md`, `Audits/TRM_Reconciliation_Audit.md`.
 
 ---
 
@@ -202,11 +204,11 @@ Legend: ✅ = present, 🔶 = partial, ❌ = missing (TODO).
 ## 8.6 CMB
 - **Existing:** 🔶 CMB as *constraint* — X063 (acoustic peaks require collisionless DM);
   X046b/X062 (evolving $\Lambda$ ⇒ 0.5–1% peak-shift prediction); QG-081 ($r_s$, $D_A$, $\theta_*$
-  are FLRW-inferred).
-- **Missing:** TODO — no $C_\ell$ derivation, no $r_s$ computation, no recombination solver,
-  no Planck likelihood fit.
-- **Source:** `Reports/CMB_Roadmap.md`, `DarkMatterAuditAnalyzer.cs`, `CosmologyAudit.cs`,
-  `ObservableDeviationAnalyzer.cs`, `ModelDependenceAnalyzer.cs`.
+  are FLRW-inferred); recombination / θ* / oscillator / projection analyzers (CMB chain).
+- **Status:** **accepted partial computational layer** — a full $C_\ell$ Boltzmann solver
+  (acoustic phase shift $\phi\approx0.84$ rad + finite decoupling + ISW) is deferred as
+  computational, not a theory gap (v1.0 disposition).
+- **Source:** `Reports/CMB_Roadmap.md`, `Audits/CMBClosureAudit.md`, `ResearchDATA/*Analyzer.cs`.
 
 ---
 

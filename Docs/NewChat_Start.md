@@ -6494,6 +6494,15 @@ CMB as documented PARTIAL — no new physics, ~days. Conservative v1.0 = + CMB s
 (~100% encyclopedia). Full v1.0 = + resolve Internal-3 node (derive n=3 or strengthen
 T-09). Recommendation: adopt Minimal now. See Docs/Main/TQM_v1_0_Roadmap.md.
 
+**TQM v1.0 Release Audit (official v1.0):**
+Applied the four final dispositions: Internal-3 → unresolved-contingent, Shared Cascade →
+underdetermined, Unified Action → TRM roadmap only, CMB → accepted partial computational
+layer. Updated Master Reference §11 (dispositioned open questions), Encyclopedia §5.4 /
+Part VII / §8.6. Generated TQM_v1_0_Release.md (title "THE Q-MODEL — From Q to Cosmology",
+v1.0) with theory status, 11 closed questions, 4 dispositioned open items, 5 known
+limitations. 0 open chapters, 0 unresolved theory items under no-new-primitives. See
+Docs/Main/TQM_v1_0_Release.md.
+
 **TRM Quantum Engine Reconciliation Audit (new mathematics, lattice contact only):**
 Reconciled the external "Quantum Engine" formulas (D(x)=1/(1+x+bx²+x⁴), UV damping
 exp(-p²/Λ²), Padé kernel, loop finiteness) against TQM's QG/causal-set/graph-Laplacian/

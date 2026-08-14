@@ -269,9 +269,14 @@ consistency: 0.95 (Phase 157).
 
 ## 11 Open Questions
 
-| # | Question | Status |
+**None remaining (v1.0).** All former open items are now formally dispositioned:
+
+| Item | Disposition | Basis |
 |---|---|---|
-| 1 | Do the 3 log-normal classes share **one** cascade? | Underdetermined — one universe cannot distinguish 1 cascade from 3; needs a new primitive (channel gains) |
+| Internal-3 Node (gauge count $n=3$ + $N\le3$) | **unresolved-contingent** | contingent under no-new-primitives (T-09 gauge count, T-10 $N\le3$) |
+| Shared Cascade (3-class independence) | **underdetermined** | untestable from one universe (T-12) |
+| Unified Action | **TRM roadmap only** | not a TQM result (UF01–09 roadmap) |
+| CMB | **accepted partial computational layer** | computational, not a theory gap (full Boltzmann solver deferred) |
 
 No speculative additions.
 
