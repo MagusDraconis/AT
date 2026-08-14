@@ -6531,6 +6531,15 @@ variational functional (T-02 0.85); emergent-GR = leading-order Einstein recover
 phase-gradient chain is ontological (own hostile review); G=ℓ²c³/ħ = dimensional analysis.
 All doc fixes, no new physics. See Docs/Papers/TQM_v1_0_RevisionPlan.md.
 
+**TQM Paper Revision (P0 applied):**
+Implemented the revision plan into Docs/Papers/TQM_v1_0_Paper_Revision.md. Added 6 sections
+(Formal Primitive Definitions, Dynamical System Summary, Complexity Functional, Emergent-GR
+Derivation Summary, Quantitative Predictions, Scope & Limitations) + applied 3 wording fixes
+(Internal-3 → unresolved-contingent, "closed"→"dispositioned", classification vs derivation
+scope). Preserved all classifications/confidences/theorems/dispositions. Key honesty notes
+included: complexity = window-intersection (T-02 0.85), GR chain ontological, G = dimensional
+analysis, T-09 provisional. See Docs/Papers/TQM_v1_0_Paper_Revision.md.
+
 **TRM Quantum Engine Reconciliation Audit (new mathematics, lattice contact only):**
 Reconciled the external "Quantum Engine" formulas (D(x)=1/(1+x+bx²+x⁴), UV damping
 exp(-p²/Λ²), Padé kernel, loop finiteness) against TQM's QG/causal-set/graph-Laplacian/
