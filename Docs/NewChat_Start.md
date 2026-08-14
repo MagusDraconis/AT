@@ -6443,6 +6443,16 @@ not theorem, unmapped to N/n), strongest no-go = T-10. Key asymmetry: T-09 (0.10
 the weaker no-go ⇒ the gauge-count face is the more tractable entry point. Relations:
 1 Same (generations≡N≤3) · 5 Related · 0 Independent. See Docs/Audits/Internal3_Report.md.
 
+**Gauge-Count Deep Audit (n=3 focused):**
+Re-examined the defect-moduli route (derives STRUCTURE, leaves count n free). Searched
+5 argument categories for n=3 preference: topology FAILS (π₁=ℤ infinite), symmetry FAILS
+(S_n permutes), stability WEAK (5/6 models, butterfly codim-2), graph-spectrum and
+lattice-mode NOT TESTED in Phase 149 (no repo argument prefers n=3). Confidence: T-09
+(gauge count)=0.10 vs T-10 (N≤3)=0.70 → gauge face is the more OPEN/tractable entry
+point, but no working derivation exists. Cross-face touchpoint: S₃ appears in both
+faces (CP lower bound + Aut(C³/S₃)), no linking mechanism (A-10). See
+Docs/Audits/GaugeCountDeepAudit.md.
+
 **TRM Quantum Engine Reconciliation Audit (new mathematics, lattice contact only):**
 Reconciled the external "Quantum Engine" formulas (D(x)=1/(1+x+bx²+x⁴), UV damping
 exp(-p²/Λ²), Padé kernel, loop finiteness) against TQM's QG/causal-set/graph-Laplacian/
