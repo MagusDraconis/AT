@@ -6521,6 +6521,16 @@ overstatements — not fatal theory flaws. 3 genuine theory gaps (T-09 provision
 content, immunization risk). 7 release blockers (all doc fixes, no new physics). Publication
 verdict: NOT READY. See Docs/Audits/HostileReviewResponse.md.
 
+**TQM Paper Revision Plan:**
+Created publication-ready revision plan (Docs/Papers/TQM_v1_0_RevisionPlan.md). 7 P0
+blockers = 6 new sections (Formal Primitive Definitions, Dynamical System Summary,
+Complexity Functional, Emergent-GR Derivation Summary, Quantitative Predictions, Scope &
+Limitations) + 3 wording fixes (Internal-3 unresolved-contingent, "closed"→"dispositioned",
+classification vs derivation). Key honesty notes: complexity = window-intersection not
+variational functional (T-02 0.85); emergent-GR = leading-order Einstein recovery but
+phase-gradient chain is ontological (own hostile review); G=ℓ²c³/ħ = dimensional analysis.
+All doc fixes, no new physics. See Docs/Papers/TQM_v1_0_RevisionPlan.md.
+
 **TRM Quantum Engine Reconciliation Audit (new mathematics, lattice contact only):**
 Reconciled the external "Quantum Engine" formulas (D(x)=1/(1+x+bx²+x⁴), UV damping
 exp(-p²/Λ²), Padé kernel, loop finiteness) against TQM's QG/causal-set/graph-Laplacian/
