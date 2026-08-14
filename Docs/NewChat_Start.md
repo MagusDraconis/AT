@@ -6696,6 +6696,16 @@ Chain computable end-to-end. Integration mechanical at analyzers (GeoStep string
 blocked only at metric-source (external Malament, no native g_μν from Q-events). All 4 PASSED.
 Report: Docs/Audits/EinsteinTensorIntegration.md.
 
+**Metric Generation Audit (4 tests, verified):**
+Created MetricGenerationTests.cs. Test 1 QEvents_DefineDistanceStructure: causal distance
+N^(1/d) recovers depth D exactly (d=2,3,4); dimension=4 recovered. PRESENT. Test 2
+DistanceStructure_DefinesMetricCandidate: candidate is conformal class+factor TEXT only;
+GrBridge "Metric g_uv from N" = External theorem, native=False. PARTIAL. Test 3
+MetricCandidate_IsCoordinateInvariant: R=2 in two sphere charts (standard criterion holds).
+Test 4 MetricGeneration_PresentOrMissing: distance PRESENT, metric candidate PARTIAL,
+full g_uv MISSING (imported via Malament/HKM, not generated). TQM describes+imports g_uv,
+does not generate it. All 4 PASSED. Report: Docs/Audits/MetricGenerationAudit.md.
+
 **Continuum Limit Test Program:**
 Converted continuum audits into xUnit test plan. Matrix: #1 L_Q→flat Laplacian = Missing
 (skeleton provided); #2 flat→Schrödinger = Implemented (HilbertSpaceAnalyzer); #3 BDG→
