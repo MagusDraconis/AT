@@ -265,6 +265,45 @@ public static class PeakHeightAnalyzer
     /// cannot fill the rarefaction peak.</summary>
     public static double CrossTermWeight() => 0.0;
 
+    /// <summary>Doppler visibility damping D_v(k) = exp(-k^2 c_s^2 sigma_eta^2/2).
+    /// The finite recombination width averages the velocity v_b(eta) over the
+    /// visibility function g(eta), suppressing the Doppler term relative to the
+    /// SW offset (which does not oscillate and survives the averaging).</summary>
+    public static double DopplerVisibilityDamping(double k)
+    {
+        var (sigmaEta, _) = RecombinationAnalyzer.VisibilityWidth();
+        double cs = 1.0 / Math.Sqrt(3.0 * (1.0 + R(AStar())));   // sound speed / c at z*
+        return Math.Exp(-0.5 * k * k * cs * cs * sigmaEta * sigmaEta);
+    }
+
+    /// <summary>Density extrema (acoustic peaks) with the full projection:
+    /// D_l = S^2 + (1/3) D_v(k)^2 v_b^2, where D_v is the Doppler visibility
+    /// damping. Returns (l, T^2, S^2, v_b^2, D_v) at each extremum.</summary>
+    public static List<(double l, double t2, double s2, double vb2, double dv)> FindAcousticPeaksVisible(
+        int count, int lMin = 60, int lMax = 960, int dl = 2)
+    {
+        double aStar = AStar();
+        double dM = DM();
+        var peaks = new List<(double, double, double, double, double)>();
+        double prev2 = double.NegativeInfinity, prev1 = double.NegativeInfinity;
+        double ps2 = 0, pvb2 = 0, pt2 = 0, pdv = 0;
+
+        for (int l = lMin; l <= lMax; l += dl)
+        {
+            double k = l / dM;
+            var (th0, th1, phi) = FullSolveNu(k, aStar);
+            double s2 = (th0 + phi) * (th0 + phi);
+            double vb2 = th1 * th1;
+            double dv = DopplerVisibilityDamping(k);
+            double t2 = s2 + (1.0 / 3.0) * dv * dv * vb2;
+            if (prev1 > prev2 && prev1 >= s2 && l - dl > lMin && peaks.Count < count)
+                peaks.Add((l - dl, pt2, ps2, pvb2, pdv));
+            prev2 = prev1; prev1 = s2;
+            ps2 = s2; pvb2 = vb2; pt2 = t2; pdv = dv;
+        }
+        return peaks;
+    }
+
     /// <summary>Acoustic peaks = local maxima of |S| = |Theta0 + Phi| (density extrema).
     /// Returns (l, T^2 = S^2 + w*v_b^2, S^2, v_b^2) at each extremum, where w is
     /// the Doppler projection weight (1/3 correct, 1 = naive quadrature).</summary>

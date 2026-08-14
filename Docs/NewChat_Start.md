@@ -6281,3 +6281,13 @@ second-peak deficit is NOT a missing cross term; it is the sudden-recombination 
 Limber limit. The rarefaction peak (Doppler-shifted to ℓ≈537) requires the full
 Bessel projection + visibility-function Doppler damping — the next missing module.
 See Docs/Audits/CrossTermAudit.md.
+
+**Visibility Function Audit (finite-width recombination — implemented, small effect):**
+Implemented g(z) = σ_T n_e c/(H(1+z)) e^{-τ(z)} from the Peebles X_e(z) history:
+z_peak = 1073.1, σ_η = 21.3 Mpc (conformal RMS). Doppler visibility damping
+D_v(k) = exp(-k²c_s²σ_η²/2) is small (D_v² = 0.98/0.87/0.73 at ℓ=220/537/814).
+Result: D_l2/D_l1 = 0.074 (vs 0.44), D_l3/D_l1 = 0.624 (vs 0.68) — essentially
+unchanged. Conclusion: finite-width recombination is a second-order effect; the
+rarefaction peak is a PROJECTION effect (full Bessel ∫ v_b² j_l'² with correct
+ℓ-mapping), not a visibility effect. Next module = full LOS projection.
+See Docs/Audits/VisibilityAudit.md.

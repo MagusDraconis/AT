@@ -167,6 +167,63 @@ public static class RecombinationAnalyzer
         return new RecombinationResult(zStar, xeStar, tauStar, steps);
     }
 
+    /// <summary>Conformal time (comoving Mpc) at scale factor a (matter+radiation
+    /// closed form, Lambda negligible early).</summary>
+    public static double ConformalTimeMpc(double a)
+    {
+        double h0m = H0KmS / 2.99792458e5;   // H0 in Mpc^-1
+        return 2.0 / (h0m * OmegaM) * (Math.Sqrt(OmegaM * a + OmegaR) - Math.Sqrt(OmegaR));
+    }
+
+    /// <summary>Visibility function g(z) = sigma_T n_e c/(H(1+z)) e^{-tau(z)} over
+    /// the recombination epoch, and its conformal-time RMS width sigma_eta (Mpc).
+    /// Returns (sigma_eta, z_peak).</summary>
+    public static (double SigmaEtaMpc, double ZPeak) VisibilityWidth(
+        double zLo = 700.0, double zHi = 1600.0, int steps = 40000)
+    {
+        // pass 1: X_e(z) from Saha IC
+        double dz = (zLo - zHi) / steps;
+        var Z = new double[steps + 1];
+        var Xe = new double[steps + 1];
+        double z = zHi, xe = Saha(zHi);
+        Z[0] = z; Xe[0] = xe;
+        for (int i = 0; i < steps; i++)
+        {
+            double zNext = z + dz;
+            double k1 = Dxdz(z, xe);
+            double k2 = Dxdz(z + 0.5 * dz, xe + 0.5 * dz * k1);
+            double k3 = Dxdz(z + 0.5 * dz, xe + 0.5 * dz * k2);
+            double k4 = Dxdz(zNext, xe + dz * k3);
+            xe += dz * (k1 + 2 * k2 + 2 * k3 + k4) / 6.0;
+            if (xe < 0.0) xe = 0.0;
+            if (xe > 1.0) xe = 1.0;
+            z = zNext; Z[i + 1] = z; Xe[i + 1] = xe;
+        }
+
+        // pass 2: tau(z) from zLo (tau ~ 0) upward, then g(z) and its moments
+        double tau = 0.0;
+        double sumG = 0.0, sumEta = 0.0, sumEta2 = 0.0;
+        double gMax = 0.0, zPeak = 0.0;
+        for (int i = steps; i >= 1; i--)
+        {
+            double zLo2 = Z[i], zHi2 = Z[i - 1];
+            double zMid = 0.5 * (zLo2 + zHi2);
+            double xeMid = 0.5 * (Xe[i] + Xe[i - 1]);
+            double ne = xeMid * NH0 * Math.Pow(1.0 + zMid, 3);
+            double dTaudz = SigmaT * ne * C / (Hubble(zMid) * (1.0 + zMid));
+            double dTau = dTaudz * (zHi2 - zLo2);   // positive, integrating upward in z
+            double g = dTaudz * Math.Exp(-(tau + 0.5 * dTau));
+            double eta = ConformalTimeMpc(1.0 / (1.0 + zMid));
+            double w = g * (zHi2 - zLo2);
+            sumG += w; sumEta += w * eta; sumEta2 += w * eta * eta;
+            if (g > gMax) { gMax = g; zPeak = zMid; }
+            tau += dTau;
+        }
+        double mean = sumEta / sumG;
+        double variance = sumEta2 / sumG - mean * mean;
+        return (Math.Sqrt(variance), zPeak);
+    }
+
     // ── Sound horizon & θ* (background only; no perturbation theory) ──────
 
     public sealed record ThetaStarResult(
