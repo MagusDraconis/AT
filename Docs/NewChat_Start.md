@@ -6382,6 +6382,14 @@ mass ratio); Ω ↔ coupling log-normal σ≈1.2. Five No Match. Ω,γ remain UN
 structural map in any doc, so they cannot constrain multiplicity/flavor.
 See Docs/Audits/m3_PhysicalMapping.md.
 
+**Frame Dragging Reconciliation Audit (GR gravitomagnetism re-labeled, no new physics):**
+Extracted A_T, B_T=∇×A_T, coupling k_T (claimed "derived non-fitted"). vs TQM: vector
+sector ABSENT (scalar-only QG-022) → New relative to TQM. vs GR: structurally EQUIVALENT
+to gravitomagnetism (B_g=∇×A_g, Lense-Thirring). Not contradicted (TRM disclaims GR
+replacement). Observable = Lense-Thirring (already measured, GP-B/LAGEOS); free param k_T;
+benchmarks GP-B/LAGEOS/binary pulsar. Verdict: no genuinely new testable physics unless
+k_T differs from GR's fixed coupling (unestablished). See Docs/Audits/FrameDraggingReconciliationAudit.md.
+
 **TRM Quantum Engine Reconciliation Audit (new mathematics, lattice contact only):**
 Reconciled the external "Quantum Engine" formulas (D(x)=1/(1+x+bx²+x⁴), UV damping
 exp(-p²/Λ²), Padé kernel, loop finiteness) against TQM's QG/causal-set/graph-Laplacian/
