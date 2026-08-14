@@ -6052,3 +6052,29 @@ variable N, and determined whether N=3 is derived/selected/emergent/contingent. 
   the internal 3 is SELECTED (CP lower bound + empirical Z-width/Higgs upper bound), and they are
   NOT linked. The single remaining gap is the empirical upper bound N≤3 — no deeper origin without
   new primitives.
+
+**PHASE 151 — Why N≤3 Upper-Bound Audit (N≥4 = CONTINGENT, upper bound empirical):**
+Focused hostile audit of the upper bound N≤3 (why no N≥4), testing five derivation routes under the
+no-new-primitives/no-anthropics/no-numerology/no-hidden-dims/no-post-selection constraints.
+Result: N≥4 is CONTINGENT — not impossible, not derived, not selected, merely unobserved.
+
+- Empirical facts: asymptotic freedom permits up to 8 generations (N_f < 33/2); Z-width bounds only
+  LIGHT neutrinos (N_ν=3, m<M_Z/2); Higgs production excludes a 4th SM-like generation up to ~TeV.
+- Five routes: stability (defect excitation cutoff X051 = 5/6 models, model-dependent; Higgs λ→negative
+  is quantitative) → WEAK; anomaly cancellation (per-generation, bounds representation not multiplicity)
+  → FAILS; representation theory (any multiplicity allowed) → FAILS; defect saturation (no theorem)
+  → FAILS; information capacity (no argument) → FAILS.
+- CLASSIFICATION: N≥4 = CONTINGENT. Not impossible (small-Yukawa/heavy-neutrino 4th gen consistent),
+  not derived, not selected (a heavy 4th gen wouldn't prevent observers). N≤3 is an EMPIRICAL
+  boundary condition, same character as H≈2.2e-18 (QG-100): a given, not a derived fact.
+- NO-GO THEOREM: no stability/anomaly/representation/defect/info principle bounds N≤3; hence N≤3 is
+  irreducible-CONTINGENT under the no-new-primitives constraint. STRONGEST REMAINING PATH: promote the
+  Higgs-vacuum-stability bound (heavy 4th gen → λ<0 below Planck) to a categorical N≤3 theorem — but
+  it is model-dependent/quantitative, and a defect-moduli topological-instability argument for n≥4 is
+  absent.
+- Outputs: UpperBoundThree_Report.txt; TQM.Core/ResearchQG/UpperBoundThreeAnalyzer.cs +
+  TQM.Tests/ResearchQG/TQM_UpperBoundThreeAudit.cs.
+- PROGRAM STATE (terminal, gauge/multiplicity line): the full 'why 3' chain is resolved: lower bound
+  N≥3 DERIVED (CP theorem), upper bound N≤3 EMPIRICAL (contingent), spatial 3 DERIVED (complexity),
+  internal 3 SELECTED. The two empirical/contingent residuals are (1) N≤3 and (2) the specific
+  contingent content (masses, Koide 45°, couplings). No further reduction without new primitives.
