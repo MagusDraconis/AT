@@ -6157,3 +6157,26 @@ fitting/numerology/anthropics. Result: Koide is a REAL HIDDEN STRUCTURE with a C
   structure (10⁻⁵, predicted, RG-stable) whose 45° origin is contingent, testable only via the
   neutrino-Koide prediction (DUNE/Hyper-K). This completes the flavor/gauge/multiplicity/contingency
   audit chain.
+
+**PHASE 155 — Neutrino-Koide Audit (ALL-LEPTON FALSIFIED — Koide is charged-lepton-specific):**
+Assumed Koide Q=2/3 is a flavor constraint and derived the neutrino-mass implications. Result:
+NEUTRINO-KOIDE IS ALREADY FALSIFIED by the measured Δm² — the all-lepton-sector hypothesis is
+excluded; Koide is confirmed charged-lepton-specific (contingent).
+
+- Solving Q=2/3 + measured Δm² (7.53e-5, 2.453e-3 eV²) for the lightest mass: NO solution for EITHER
+  ordering. WHY: the neutrino mass spectrum is CAPPED below 2/3 — Q_max = 0.585 (normal ordering,
+  m_light→0) and 0.500 (inverted ordering), both < 2/3 = 0.667, for ANY absolute scale.
+- DECISIVE: the neutrino eigenvalues cannot satisfy the standard Koide relation, no matter the
+  absolute scale or ordering. All-lepton-Koide is EXCLUDED by existing oscillation data (no DUNE
+  needed). The counterfactual likelihood shift had it held would have been ~1e5, but it does not hold.
+- CLASSIFICATION RESOLVED: Koide stays CONTINGENT, confirmed CHARGED-LEPTON-SPECIFIC. The 'hidden
+  structure' (Phase 154) is sector-LOCAL (charged leptons only), not a universal lepton structure.
+- NOTE: this REFINES QG-068/069, which listed 'neutrino-Koide Q=2/3' as an UNTESTED prediction; the
+  measured Δm² already falsify the eigenvalue form. A MODIFIED neutrino relation (different Q, or a
+  mass-MATRIX relation) would be a NEW hypothesis outside this audit.
+- Outputs: NeutrinoKoide_Report.txt; TQM.Core/ResearchQG/NeutrinoKoideAnalyzer.cs +
+  TQM.Tests/ResearchQG/TQM_NeutrinoKoideAudit.cs.
+- PROGRAM STATE (terminal, flavor/gauge/multiplicity/contingency line COMPLETE): the full audit chain
+  is now closed. Structure (form) derived; content contingent (4 ensembles, log-normal); Koide is a
+  real, charged-lepton-specific hidden structure with a contingent origin; neutrino-Koide falsified.
+  No further reduction without new primitives.
