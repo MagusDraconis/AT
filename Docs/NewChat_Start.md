@@ -6302,3 +6302,15 @@ IS a velocity (Doppler) peak at ℓ≈537, between the velocity max (470) and th
 rarefaction (620); its exact position/amplitude needs the full LOS integral
 (ℓ±1 mapping + phase shift φ≈0.8 rad), not the Limber quadrature.
 See Docs/Audits/VelocityProjectionAudit.md.
+
+**LOS Projection Audit (exact j_l/j_l' — honest negative, chain closed):**
+Implemented the exact LOS projection Θ_l = S j_l(kD) - i v_b j_l'(kD) with the
+exact Bessel integrals (∫d ln k j_l² = 1/2l(l+1), ∫ j_l'² = (1/3)∫ j_l²). Result:
+only the COMPRESSION peaks are reproduced (l1=304 vs 220 +38%, l3=904 vs 814 +11%,
+D_l3/D_l1=0.65 vs 0.68); the rarefaction peak (l2~537) is MISSING (a dip), and the
+acoustic phase shift φ~0.88 rad is absent. Conclusion: the sudden-recombination +
+Limber pipeline CANNOT produce the 2nd peak — D_l = S² + v_b²/3 is monotonic
+between compressions (the Doppler fills the density zero-crossing, not the
+rarefaction). The 2nd peak requires finite-width velocity weighting / baryon-photon
+decoupling / ISW = a full Boltzmann (CAMB-class) solver, not new physics.
+See Docs/Audits/LOSProjectionAudit.md.
