@@ -23,6 +23,7 @@ public static class PeakHeightAnalyzer
     static readonly double Or = RecombinationAnalyzer.OmegaRh2 / (h * h);
     static readonly double Ol = 1.0 - Om - Or;
     static readonly double Og = RecombinationAnalyzer.OmegaGammaH2 / (h * h);
+    static readonly double Onu = Or - Og;   // neutrino density (N_eff ~ 3.04)
     static readonly double R0 = 3.0 * Ob / (4.0 * Og);
 
     // Baryon number density today (m^-3), hydrogen-only.
@@ -80,6 +81,59 @@ public static class PeakHeightAnalyzer
         return (th0, th1, phi, dm);
     }
 
+    /// <summary>Full system with free-streaming neutrinos (7 ODEs). Neutrino
+    /// density is damped by the free-streaming factor 3 j1(x)/x.</summary>
+    public static (double Th0, double Th1, double Phi) FullSolveNu(
+        double k, double aStar, double aInit = 1e-6, int steps = 20000)
+    {
+        double a = aInit;
+        double th0 = -0.5, th1 = 0.0, dm = -1.5, vm = 0.0, phi = 1.0;
+        double dnu = -2.0, vnu = 0.0;   // adiabatic: dnu = dgamma = 4 Th0 = -2 Phi
+
+        double da = (aStar - aInit) / steps;
+        for (int i = 0; i < steps; i++)
+        {
+            void RHS(double aa, double t0, double t1, double d, double v, double p,
+                     double dn, double vn,
+                     out double dt0, out double dt1, out double dd, out double dv,
+                     out double dp, out double ddn, out double dvn)
+            {
+                double aH = aa * Htilde(aa);
+                double Ra = R(aa);
+                double h2 = H0Mpc * H0Mpc;
+                // conformal time (Mpc), matter+radiation closed form (Lambda negligible early)
+                double eta = 2.0 / (H0Mpc * Om) * (Math.Sqrt(Om * aa + Or) - Math.Sqrt(Or));
+                double x = k * eta;
+                double fs = x < 1e-6 ? 1.0 : 3.0 * (Math.Sin(x) - x * Math.Cos(x)) / (x * x * x);
+                // 0i Einstein with photon + matter + (free-streaming-damped) neutrino
+                double pdot = (1.5 * h2 * Om * v / aa + 2.0 * h2 * Og * t1 / (aa * aa)
+                             + 2.0 * h2 * Onu * vn * fs / (aa * aa)) / k - Htilde(aa) * p;
+                dt0 = (-k * t1 / 3.0 - pdot) / aH;
+                dt1 = (k * t0 + k * (1.0 + Ra) * p - Ra * Htilde(aa) * t1) / ((1.0 + Ra) * aH);
+                dd = (-k * v - 3.0 * pdot) / aH;
+                dv = (-Htilde(aa) * v + k * p) / aH;
+                dp = pdot / aH;
+                ddn = (-4.0 / 3.0 * k * vn - 4.0 * pdot) / aH;
+                dvn = (k / 4.0 * dn + k * p) / aH;
+            }
+
+            RHS(a, th0, th1, dm, vm, phi, dnu, vnu, out var k1t0, out var k1t1, out var k1d, out var k1v, out var k1p, out var k1n, out var k1vn);
+            RHS(a + 0.5 * da, th0 + 0.5 * da * k1t0, th1 + 0.5 * da * k1t1, dm + 0.5 * da * k1d, vm + 0.5 * da * k1v, phi + 0.5 * da * k1p, dnu + 0.5 * da * k1n, vnu + 0.5 * da * k1vn, out var k2t0, out var k2t1, out var k2d, out var k2v, out var k2p, out var k2n, out var k2vn);
+            RHS(a + 0.5 * da, th0 + 0.5 * da * k2t0, th1 + 0.5 * da * k2t1, dm + 0.5 * da * k2d, vm + 0.5 * da * k2v, phi + 0.5 * da * k2p, dnu + 0.5 * da * k2n, vnu + 0.5 * da * k2vn, out var k3t0, out var k3t1, out var k3d, out var k3v, out var k3p, out var k3n, out var k3vn);
+            RHS(a + da, th0 + da * k3t0, th1 + da * k3t1, dm + da * k3d, vm + da * k3v, phi + da * k3p, dnu + da * k3n, vnu + da * k3vn, out var k4t0, out var k4t1, out var k4d, out var k4v, out var k4p, out var k4n, out var k4vn);
+
+            th0 += da * (k1t0 + 2 * k2t0 + 2 * k3t0 + k4t0) / 6.0;
+            th1 += da * (k1t1 + 2 * k2t1 + 2 * k3t1 + k4t1) / 6.0;
+            dm  += da * (k1d + 2 * k2d + 2 * k3d + k4d) / 6.0;
+            vm  += da * (k1v + 2 * k2v + 2 * k3v + k4v) / 6.0;
+            phi += da * (k1p + 2 * k2p + 2 * k3p + k4p) / 6.0;
+            dnu += da * (k1n + 2 * k2n + 2 * k3n + k4n) / 6.0;
+            vnu += da * (k1vn + 2 * k2vn + 2 * k3vn + k4vn) / 6.0;
+            a += da;
+        }
+        return (th0, th1, phi);
+    }
+
     /// <summary>Silk damping scale k_D (Mpc^-1) and factor exp(-k^2/k_D^2).
     /// X_e = 1 before recombination (the dominant contribution).</summary>
     public static (double kD, double silk) SilkDamping(double k, double aStar)
@@ -134,5 +188,36 @@ public static class PeakHeightAnalyzer
         double norm = (9.0 / 25.0) * As * TcmbMicroK * TcmbMicroK;
         double dPeak = norm * (s2 + vb2) * silk;
         return (lPeak, dPeak, s2, vb2, silk, phiAtPeak, kd);
+    }
+
+    /// <summary>First-peak amplitude WITH free-streaming neutrinos.</summary>
+    public static (double lPeak, double dPeak, double phi) FirstPeakAmplitudeNu(
+        int lMin = 40, int lMax = 500, int dl = 2)
+    {
+        double aStar = AStar();
+        double dM = DM();
+
+        double prev2 = double.NegativeInfinity, prev1 = double.NegativeInfinity;
+        double s2 = 0, vb2 = 0, lPeak = 0, phiAtPeak = 0;
+
+        for (int l = lMin; l <= lMax; l += dl)
+        {
+            double k = l / dM;
+            var (th0, th1, phi) = FullSolveNu(k, aStar);
+            double p = (th0 + phi) * (th0 + phi) + th1 * th1;
+            if (prev1 > prev2 && prev1 >= p && l - dl > lMin)
+            {
+                lPeak = l - dl; phiAtPeak = phi; break;
+            }
+            prev2 = prev1; prev1 = p;
+            s2 = (th0 + phi) * (th0 + phi);
+            vb2 = th1 * th1;
+        }
+
+        double kPeak = lPeak / dM;
+        var (kd, silk) = SilkDamping(kPeak, aStar);
+        double norm = (9.0 / 25.0) * As * TcmbMicroK * TcmbMicroK;
+        double dPeak = norm * (s2 + vb2) * silk;
+        return (lPeak, dPeak, phiAtPeak);
     }
 }

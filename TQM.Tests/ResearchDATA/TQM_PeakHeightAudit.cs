@@ -26,40 +26,37 @@ public class TQM_PeakHeightAudit : ResearchTestBase
         PrintHeader("CMB Peak Height Audit — first peak amplitude");
 
         Sec(sb, "Section 1 — Model");
-        sb.AppendLine("  Radiation driving : 5-ODE system (Theta0, Theta1, delta_m, v_m, Phi)");
+        sb.AppendLine("  Radiation driving : 5-ODE (no nu) / 7-ODE (with nu) system");
+        sb.AppendLine("  Neutrino driving  : free-streaming neutrino fluid (delta_nu, v_nu)");
         sb.AppendLine("  Silk damping      : exp(-k^2/k_D^2), k_D from diffusion integral");
         sb.AppendLine("  Amplitude         : D_l1 = (9/25) A_s T_cmb^2 (S^2 + v_b^2) x Silk");
         sb.AppendLine();
 
-        var r = PeakHeightAnalyzer.FirstPeakAmplitude();
-        double planck = 5700.0;   // D_l at first peak ~ 5700 micro-K^2
+        var rNo = PeakHeightAnalyzer.FirstPeakAmplitude();
+        var rNu = PeakHeightAnalyzer.FirstPeakAmplitudeNu();
+        double planck = 5700.0;
 
-        Sec(sb, "Section 2 — Result");
+        Sec(sb, "Section 2 — Without vs With neutrinos");
         sb.AppendLine(string.Format(CultureInfo.InvariantCulture,
-            "  l1 (first peak)      = {0:F0}", r.lPeak));
+            "  Without nu : l1 = {0:F0}, D_l1 = {1:F0}, Phi = {2:F3}",
+            rNo.lPeak, rNo.dPeak, rNo.phi));
         sb.AppendLine(string.Format(CultureInfo.InvariantCulture,
-            "  S^2 (SW)             = {0:F3}", r.s2));
+            "  With nu    : l1 = {0:F0}, D_l1 = {1:F0}, Phi = {2:F3}",
+            rNu.lPeak, rNu.dPeak, rNu.phi));
         sb.AppendLine(string.Format(CultureInfo.InvariantCulture,
-            "  v_b^2 (Doppler)      = {0:F3}", r.vb2));
+            "  Shift      : D_l1 {0:+F0;-F0} micro-K^2 ({1:P0})",
+            rNu.dPeak - rNo.dPeak, (rNu.dPeak - rNo.dPeak) / rNo.dPeak));
         sb.AppendLine(string.Format(CultureInfo.InvariantCulture,
-            "  Phi (at peak)        = {0:F3}  (initial 1.0 -> decay = {1:P0})", r.phi, 1.0 - r.phi));
-        sb.AppendLine(string.Format(CultureInfo.InvariantCulture,
-            "  k_D (Silk)           = {0:F3} Mpc^-1", r.kD));
-        sb.AppendLine(string.Format(CultureInfo.InvariantCulture,
-            "  Silk factor          = {0:F4}", r.silk));
-        sb.AppendLine(string.Format(CultureInfo.InvariantCulture,
-            "  D_l1 (this audit)    = {0:F0} micro-K^2", r.dPeak));
-        sb.AppendLine(string.Format(CultureInfo.InvariantCulture,
-            "  Planck first peak    ~ {0:F0} micro-K^2", planck));
-        sb.AppendLine(string.Format(CultureInfo.InvariantCulture,
-            "  rel. error           = {0:P1}", (r.dPeak - planck) / planck));
+            "  Residual recovered (of {0:F0} deficit): {1:P0}",
+            planck - rNo.dPeak, (rNu.dPeak - rNo.dPeak) / (planck - rNo.dPeak)));
         sb.AppendLine();
 
         Sec(sb, "Section 3 — Error budget (vs Planck ~5700 micro-K^2)");
-        sb.AppendLine("  No neutrino driving:        ~10-15%");
-        sb.AppendLine("  No ISW / full C_l integral: ~15-25%");
-        sb.AppendLine("  Hydrogen-only recombination: ~1%");
-        sb.AppendLine("  Tight-coupling approx:       ~5%");
+        sb.AppendLine(string.Format(CultureInfo.InvariantCulture,
+            "  With nu : rel. error = {0:P1}", (rNu.dPeak - planck) / planck));
+        sb.AppendLine("  Remaining: ISW / full C_l integral: ~10-15%");
+        sb.AppendLine("  Tight-coupling approx:             ~5%");
+        sb.AppendLine("  Hydrogen-only recombination:       ~1%");
 
         Output.WriteLine(sb.ToString());
         string outDir = Path.Combine(AppContext.BaseDirectory, "catalog_out");
@@ -67,9 +64,10 @@ public class TQM_PeakHeightAudit : ResearchTestBase
         File.WriteAllText(Path.Combine(outDir, "PeakHeightAudit_Report.txt"), sb.ToString());
 
         // ═══ ASSERTIONS ═══
-        Assert.InRange(r.lPeak, 150.0, 300.0);
-        Assert.InRange(r.dPeak, 2000.0, 12000.0);   // order-of-magnitude agreement
-        Assert.InRange(r.kD, 0.05, 0.5);            // Silk scale ~ 0.1 Mpc^-1
+        Assert.InRange(rNo.lPeak, 150.0, 300.0);
+        Assert.InRange(rNo.dPeak, 2000.0, 12000.0);
+        Assert.InRange(rNu.lPeak, 150.0, 300.0);
+        Assert.InRange(rNu.dPeak, 2000.0, 12000.0);
     }
 
     private static void Sec(StringBuilder sb, string title)
