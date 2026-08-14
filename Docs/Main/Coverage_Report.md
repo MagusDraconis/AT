@@ -50,9 +50,9 @@
 | **Unified Action** | *(none)* | 0 | MISSING | TODO |
 | **Cosmology** | QG-004, QG-080–100, causal-set Λ, DATA-001–010 | 100 | COMPLETE | — |
 | **Galaxies** | DATA-003–010, QG-070–079, SPARC/KMOS3D RAR | 100 | COMPLETE | — |
-| **Clusters** | Coma catalog + ACCEPT profiles; `ClusterMassAudit.md` | 100 | COMPLETE | — |
+| **Clusters** | Coma catalog + ACCEPT profiles; `Audits/ClusterMassAudit.md` | 100 | COMPLETE | — |
 | **Pantheon+** | DATA-001, DATA-002, `Data/Pantheon+SH0ES.dat` | 100 | COMPLETE | — |
-| **CMB** | X063 (DM requirement), X046b/X062 (peak-shift), QG-081 (r_s inferred); `CMB_Roadmap.md` | 45 | PARTIAL | TODO — no $C_\ell$ derivation, no $r_s$ computation, no Planck fit |
+| **CMB** | X063 (DM requirement), X046b/X062 (peak-shift), QG-081 (r_s inferred); `Reports/CMB_Roadmap.md` | 45 | PARTIAL | TODO — no $C_\ell$ derivation, no $r_s$ computation, no Planck fit |
 | **Dark Matter** | X063–X065b, `DefectDarkMatterAnalyzer`, `DarkMatterAuditAnalyzer` | 100 | COMPLETE | — |
 | **Dark Energy** | X062, QG-031, DATA-001/002, `MetastableRepulsiveArchitectureAnalyzer` | 100 | COMPLETE | — |
 | **Classification** | Phases 148–158, `MinimalTaxonomy.cs`, `TaxonomyStressTest.cs` | 100 | COMPLETE | — |

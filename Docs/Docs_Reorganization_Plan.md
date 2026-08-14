@@ -1,5 +1,7 @@
 # Documentation Reorganization Plan
 
+> **Status: EXECUTED** (2026-08-14). All moves applied via `git mv`; links updated.
+
 **Goal:** organize every `*.md` by purpose into five folders.
 **Not moved:** `README.md`, `.github/copilot-instructions.md`, and gitignored `LegacyDocs/`.
 
@@ -86,6 +88,7 @@
 | TheoryRepairReport.md | Docs |
 | UnifiedPhysicsCandidate.md | Docs |
 | WhyThisH.md | Docs |
+| CausalScaleUnification.md | Docs |
 | TQM-WhitePaper-Experimental-Priorities-2025-2035-V1.md | Docs/WhitePapers |
 
 ### 2.4 `Docs/Theory/`
@@ -113,6 +116,7 @@
 | ProtoMatterAbundanceTheory.md | Docs |
 | SpectralInformationTheory.md | Docs |
 | ThetaFieldTheory.md | Docs |
+| CausalCosmology.md | Docs |
 | ThetaInformationFieldTheory.md | Docs |
 | ThetaMemoryFieldTheory.md | Docs |
 | TopologicalWaveQuantum.md | Docs |

@@ -184,7 +184,7 @@ Legend: ✅ = present, 🔶 = partial, ❌ = missing (TODO).
   $6.7\times$ baryon discrepancy); ACCEPT X-ray gas fraction ($f_{\rm gas}\approx0.15$);
   Newtonian / ΛCDM / TQM-defect model comparison.
 - **Missing:** —
-- **Source:** `ClusterMassAudit.md`, `ClusterMassAudit.cs`, `TQM_ClusterMassAudit.cs`, `Data/coma_v3344_ready.csv`, `Data/Coma_Cluster_Chandra_*.dat`.
+- **Source:** `Audits/ClusterMassAudit.md`, `ClusterMassAudit.cs`, `TQM_ClusterMassAudit.cs`, `Data/coma_v3344_ready.csv`, `Data/Coma_Cluster_Chandra_*.dat`.
 
 ## 8.6 CMB
 - **Existing:** 🔶 CMB as *constraint* — X063 (acoustic peaks require collisionless DM);
@@ -192,7 +192,7 @@ Legend: ✅ = present, 🔶 = partial, ❌ = missing (TODO).
   are FLRW-inferred).
 - **Missing:** TODO — no $C_\ell$ derivation, no $r_s$ computation, no recombination solver,
   no Planck likelihood fit.
-- **Source:** `CMB_Roadmap.md`, `DarkMatterAuditAnalyzer.cs`, `CosmologyAudit.cs`,
+- **Source:** `Reports/CMB_Roadmap.md`, `DarkMatterAuditAnalyzer.cs`, `CosmologyAudit.cs`,
   `ObservableDeviationAnalyzer.cs`, `ModelDependenceAnalyzer.cs`.
 
 ---
