@@ -6616,6 +6616,12 @@ compares to (1/dx²)[2-2cos(πk/(N+1))]. PASSED: maxRelErr ~1e-14..1e-12 (machin
 continuum error decreases ~4× per N-doubling (O(1/N²) → (πk)²). Report:
 Docs/Audits/GraphLaplacianContinuum_Report.md.
 
+**Continuum Limit Test #3 (BDG → d'Alembertian, implemented + verified):**
+Created BDGOperatorContinuumTests.cs (TQM.Tests/ResearchXC) verifying the flat-lattice
+d'Alembertian stencil converges to □=∂²/∂t²−∂²/∂x² on a plane wave. PASSED: relErr 4.36e-3
+(h=1/16) → 6.83e-5 (h=1/128), decreasing ~4× per h-halving (O(h²)). Lorentzian counterpart
+to Test #1. Report: Docs/Audits/BDGOperatorContinuum_Report.md.
+
 **TRM Quantum Engine Reconciliation Audit (new mathematics, lattice contact only):**
 Reconciled the external "Quantum Engine" formulas (D(x)=1/(1+x+bx²+x⁴), UV damping
 exp(-p²/Λ²), Padé kernel, loop finiteness) against TQM's QG/causal-set/graph-Laplacian/
