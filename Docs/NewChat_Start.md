@@ -6337,3 +6337,13 @@ Priority 2: Frame Dragging — only route to extend TQM beyond scalar gravity
 Channel — genuine invariant φ²|μ̇| but no direct observable. Deprioritized: Theta
 Chain (homonym w/ TQM-128-133), Unified Action (roadmap, depends on all others).
 See Docs/Audits/TRMLegacyModulePrioritizationAudit.md.
+
+**m=3 Closure Reconciliation Audit (new mathematics confirmed):**
+Extracted the exact TRM m=3 equations: Ω=(q+3)/q, γ=1/Ω, Ω≈1.16-1.19, γ≈0.84-0.86
+(rational-band mode-locking, RBF16-23; "strongly constrained path", NOT theorem-level).
+vs TQM Phases 150-151 (N≥3 CP-derived ∩ N≤3 empirical): the m=3 mode-locking is
+genuinely NEW mathematics (not equivalent/integrated/contradicted) — it sits in the
+one gap Phase 151 left open (no principle bounds N≤3). Independent predictions Ω, γ
+are unmapped to observables; γ≠2/3 so it does NOT directly constrain Koide. Highest
+value: a candidate mechanism for the N≤3 upper bound. Remains MISSING (TODO).
+See Docs/Audits/m3_Reconciliation_Audit.md.
