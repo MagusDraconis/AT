@@ -6575,6 +6575,15 @@ Minimal candidate: Kuramoto θ̇_i + static ẋ_i=0 (RECONSTRUCTED; no new primi
 θ_i = Derived; x_i = Missing (static input). Open question: is there a ẋ_i law? See
 Docs/Audits/Q_ConfigurationDynamics.md.
 
+**Q Position Dynamics Audit (CORRECTION to Q_ConfigurationDynamics):**
+Found x_i dynamics IS present (not Missing). Extracted equation: ẋ_i = η Σ_j K_ij cos(θ_j-θ_i)
+(x_j-x_i)/|x_j-x_i| = -η∇_{x_i}E, E = -Σ K_ij cos(θ_j-θ_i)|x_j-x_i| (gradient descent on
+coupling energy), implemented in ~15 analyzers (MeanCouplingDerivationAnalyzer.PositionStep,
+CurvatureMotionAnalyzer, CriticalCouplingAnalyzer, etc.). Classification: Existing. Energy
+minimization/phase-gradient/interaction-potential = Existing; graph rewiring = Implicit;
+causal updates = Missing. Full config dynamics = Kuramoto phase + interaction-potential
+position, both already implemented. See Docs/Audits/Q_PositionDynamics.md.
+
 **TRM Quantum Engine Reconciliation Audit (new mathematics, lattice contact only):**
 Reconciled the external "Quantum Engine" formulas (D(x)=1/(1+x+bx²+x⁴), UV damping
 exp(-p²/Λ²), Padé kernel, loop finiteness) against TQM's QG/causal-set/graph-Laplacian/
