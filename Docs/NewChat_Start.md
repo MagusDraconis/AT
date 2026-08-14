@@ -6390,6 +6390,14 @@ replacement). Observable = Lense-Thirring (already measured, GP-B/LAGEOS); free 
 benchmarks GP-B/LAGEOS/binary pulsar. Verdict: no genuinely new testable physics unless
 k_T differs from GR's fixed coupling (unestablished). See Docs/Audits/FrameDraggingReconciliationAudit.md.
 
+**Memory Channel Reconciliation Audit (new mathematics, untestable):**
+Extracted φ²|μ̇| invariant (A_dyn∝φ→A²|μ̇|→φ²|μ̇|, MC09-12). vs TQM: no overlap with
+random actualization/abundance law/complexity/theta layer/graph dynamics; TQM-130
+"memory" is a homonym (persistence, not the invariant). Classify: New Mathematics,
+nothing contradicted. Observable: none; parameters: none explicit; testability: LOW.
+Verdict: genuine new invariant but currently untestable (no observable map).
+See Docs/Audits/MemoryChannelReconciliationAudit.md.
+
 **TRM Quantum Engine Reconciliation Audit (new mathematics, lattice contact only):**
 Reconciled the external "Quantum Engine" formulas (D(x)=1/(1+x+bx²+x⁴), UV damping
 exp(-p²/Λ²), Padé kernel, loop finiteness) against TQM's QG/causal-set/graph-Laplacian/
