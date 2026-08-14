@@ -6356,3 +6356,13 @@ shift φ≈0.885 rad vs γ≈0.84-0.86; (2) coupling log-normal σ≈1.2 vs Ω�
 Koide (γ≠2/3), complexity optimum (M²≈5), multiplicity, dark matter, CMB n_s/θ*,
 RAR, theta sector. Conclusion: m=3 closure values remain UNMAPPED to any observable —
 no structural map in either TRM or TQM docs. See Docs/Audits/m3_ObservableMappingAudit.md.
+
+**TRM Quantum Engine Reconciliation Audit (new mathematics, lattice contact only):**
+Reconciled the external "Quantum Engine" formulas (D(x)=1/(1+x+bx²+x⁴), UV damping
+exp(-p²/Λ²), Padé kernel, loop finiteness) against TQM's QG/causal-set/graph-Laplacian/
+lattice programs. Result: all four are NEW mathematics (absent from repo, nothing
+contradicted). Single contact: UV regularization — TQM's graph-Laplacian LATTICE does
+the same job by discreteness (finite spectrum), not a Gaussian momentum cutoff. Q1
+partially yes (lattice), Q2 no (no loop program), Q3 not derivable (different kernel),
+Q4 Λ,b fitted (TRM "tested-effective" boundary, a₀/β_T fitted). Quantum Engine remains
+MISSING (TODO). See Docs/Audits/QuantumEngineReconciliationAudit.md.
