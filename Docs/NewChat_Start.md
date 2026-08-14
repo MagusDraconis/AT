@@ -6357,6 +6357,14 @@ Koide (γ≠2/3), complexity optimum (M²≈5), multiplicity, dark matter, CMB n
 RAR, theta sector. Conclusion: m=3 closure values remain UNMAPPED to any observable —
 no structural map in either TRM or TQM docs. See Docs/Audits/m3_ObservableMappingAudit.md.
 
+**m=3 Closure Viability Audit (candidate only, not a mechanism):**
+Determined whether m=3 provides a genuine N≤3 mechanism. Result: does NOT explain N≤3
+(path not theorem; closure-order derivation absent from repo); is POTENTIALLY constraining
+(sits exactly in the Phase-151 gap) but Ω,γ are UNMAPPED to N; not unrelated (targets the
+gap). Ω,γ physical meaning unspecified; "stability" is rule-family (RBF), not physical;
+relies on TRM phase-lattice machinery (not TQM primitives); avoids anthropics, partially
+avoids numerology. See Docs/Audits/m3_Viability_Audit.md.
+
 **TRM Quantum Engine Reconciliation Audit (new mathematics, lattice contact only):**
 Reconciled the external "Quantum Engine" formulas (D(x)=1/(1+x+bx²+x⁴), UV damping
 exp(-p²/Λ²), Padé kernel, loop finiteness) against TQM's QG/causal-set/graph-Laplacian/
