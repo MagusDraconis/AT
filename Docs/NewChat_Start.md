@@ -5879,3 +5879,24 @@ Result: NO — causal discreteness generates the cH SCALE but NOT the 1/(2π). L
   fully derived from causal discreteness, g† is only half-derived (the 2π is not generated). The
   two anchors are linked only through H, dimensionally. The single remaining OBSERVATIONAL test is
   the g†(z) EVOLUTION (mass-limited, QG-079). No deeper derivation has produced a new prediction.
+
+**PHASE 144 — ResearchQG-097: Is The 2π Bias Audit (A — 2π is a selection artifact):**
+Tested whether the observed g† ≈ cH/2π is a genuine constant or the best fit inside broad O(1)
+uncertainty. Result: A = 2π accidental — it is NOT robustly identified.
+
+- Compiled literature a₀ estimates (Begeman 1.21±0.14, McGaugh 1.20±0.20, Lelli 1.20±0.15,
+  Rodrigues 1.00±0.10, Li 1.20±0.15, Chae 1.20±0.30, all ×1e-10). Combined x = a₀/(cH) = 0.172±0.009
+  (statistical only).
+- Bayesian comparison: 1/6 (0.167) fits BEST (+0.6σ, BF=1.0); 1/(2π) (0.159) is +1.4σ (BF=0.43);
+  1/5 (−3.0σ) and 1/7 (+3.2σ) DISFAVORED. So 1/6 (not 1/(2π)) is the preferred factor.
+- CRITICAL CAVEAT: the ~20% SYSTEMATIC spread between datasets (Rodrigues 1.0 vs others 1.2) is
+  larger than the statistical error; with σ~0.02–0.03, ALL of 1/5, 1/6, 1/(2π), 1/7 are within ~1σ
+  and indistinguishable.
+- VERDICT: A = 2π accidental. g† ≈ cH/2π is a SELECTION ARTIFACT inside a broad O(1) uncertainty,
+  NOT a robustly identified constant (consistent with QG-085's coincidence conclusion).
+- Outputs: A0OverCH_Distribution.csv, FactorComparison.csv, BayesFactorComparison.csv (Data/derived)
+  + 1 PNG; 2 source files + test.
+- PROGRAM STATE: the 2π factor is now definitively characterized as a selection artifact (A). The
+  only quantitative anchor that survives as GENUINE is the causal-set Λ ~ 1/√N (QG-093); the g†
+  relation's 2π is coincidental and its evolution (g† ∝ H vs a₀ constant) remains the single
+  observational test (mass-limited, QG-079).
