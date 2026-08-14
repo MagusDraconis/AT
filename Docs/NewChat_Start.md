@@ -6631,6 +6631,14 @@ O(h²)) on f=sin(πx)sin(πy). Test 3 CurvedSpaceBridge_PresentOrAbsent: ABSENT.
 Laplace-Beltrami, no curved/covariant Schrödinger; Christoffel only descriptive; metric only
 emergent/external. All 3 PASSED. Report: Docs/Audits/CurvedSpaceBridge_Report.md.
 
+**Curved-Space Program (formal gap analysis):**
+Defined the minimal operator needed for the bridge: Δ_g/□_g (metric-dependent Laplace-Beltrami
+/d'Alembertian). Determined it arises from NEITHER L_Q nor BDG as-implemented (both give only
+the flat limit); each has a natural curved generalization (weighted L_W → Δ_g; curved-causal-set
+BDG → □_g) that is MISSING. Proven: L_Q→-∇², BDG→□, distinct signatures; imported: metric g_μν
+(Malament, external). Missing: G1 Δ_g/□_g, G2 weighted L_W, G3 curved Schrödinger, G4 operator→
+Einstein. 5-step roadmap. See Docs/Audits/CurvedSpaceProgram.md.
+
 **Continuum Limit Test Program:**
 Converted continuum audits into xUnit test plan. Matrix: #1 L_Q→flat Laplacian = Missing
 (skeleton provided); #2 flat→Schrödinger = Implemented (HilbertSpaceAnalyzer); #3 BDG→
