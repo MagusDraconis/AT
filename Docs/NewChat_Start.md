@@ -6366,3 +6366,12 @@ the same job by discreteness (finite spectrum), not a Gaussian momentum cutoff. 
 partially yes (lattice), Q2 no (no loop program), Q3 not derivable (different kernel),
 Q4 Λ,b fitted (TRM "tested-effective" boundary, a₀/β_T fitted). Quantum Engine remains
 MISSING (TODO). See Docs/Audits/QuantumEngineReconciliationAudit.md.
+
+**Quantum Engine Viability Audit (no UV problem to solve; not recommended):**
+Located TQM's UV divergences: 1/τ² kernel (O4, REJECTED), nonlocal K(τ) (O2, REJECTED),
+continuum limit N→∞ (not physical, lattice finite), V(φ)=-|λ|φ⁴ (vacuum instability).
+TQM's ACCEPTED operator = BDG layer operator (finite difference), already UV-finite/
+causal/unitary/stable. Quantum Engine: finite+stable but NON-UNITARY (Gaussian cutoff)
+and causality-ambiguous (Padé poles), with 2 fitted params (Λ,b). Conclusion: no live UV
+problem; Quantum Engine is strictly worse on unitarity, not recommended.
+See Docs/Audits/QuantumEngineViabilityAudit.md.
