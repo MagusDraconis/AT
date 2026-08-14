@@ -1,0 +1,7 @@
+Model,Classification,Circular,Verdict
+FLRW (ȧ/a),Input (boundary condition),False,H0 not predicted — it is set by initial data
+Inflation,Dynamically generated,False,H_early derived; but V(φ) is tuned; H_today set by reheating
+de Sitter,Derived from Λ,True,circular: Λ ~ H²/c² (causal set); so H from Λ is H from H
+Causal set,Input,True,H defines N; H is not derived from N (QG-098)
+Anthropic,Selection,False,selects Λ (and hence H~c√Λ); not H's specific value
+Fundamental constant,Primitive,False,1 new parameter; no derivation

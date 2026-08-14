@@ -5920,3 +5920,25 @@ single emergent rate. Result: H is NOT emergent — it is the INPUT. Levels 2–
   (input) rate H, but H itself is not emergent from causal discreteness. The program's terminal
   structure is now fixed: causality → (input H) → {Λ ~ H²/c² (genuine), a₀ ~ cH (order only, 2π
   coincidental)}. Single observational test remains g†(z) EVOLUTION (mass-limited).
+
+**PHASE 146 — ResearchQG-099: Origin Of H Audit (H is PRIMITIVE — a boundary condition):**
+Determined the true status of H: derived, boundary condition, selection effect, or fundamental.
+Result: H is PRIMITIVE (a boundary condition), not derivable. Levels 1–4 pass; L5 fails.
+
+- Catalog: FLRW (input/BC), Inflation (dynamical but V(φ) tuned), de Sitter (H=√(Λ/3), circular
+  since Λ~H²/c²), Causal set (input, H defines N), Anthropic (selects Λ, not H), Fundamental
+  constant (primitive).
+- H NOT calculable from {c,G,ħ,Λ,N} without circularity: {c,G,ħ} gives only 1/t_P = 1.9e43 s⁻¹ vs
+  H0=2.2e-18 s⁻¹ (Planck hierarchy 61 decades); H~c√Λ is circular (Λ~H²/c², H-from-H); N is defined
+  by H. Only non-circular relation is Λ~H² (explains Λ FROM H, not H from Λ).
+- Ranking: Fundamental-constant and FLRW-boundary-condition are least circular and most economical
+  (1 param). 'Derived from Λ/N' routes are all circular.
+- VERDICT: L1–L4 PASS; L5 FAIL. H is the final PRIMITIVE scale-setting parameter — a boundary
+  condition. Λ and a₀ are its descendants (Λ~H²/c² genuine, a₀~cH order-of-magnitude), but H has no
+  deeper origin in the current program.
+- Outputs: OriginOfH.csv, HDependencyGraph.csv, DerivedVsInputH.csv (Data/derived) + 1 PNG;
+  Docs/OriginOfHReport.md; 2 source files + test.
+- PROGRAM TERMINUS: the full causal-cosmological hierarchy is now COMPLETE and bottomed out:
+  causality (primitive) → H (primitive boundary condition) → {Λ ~ H²/c² (genuine, causal-set),
+  a₀ ~ cH (order only, 2π coincidental)}. Two primitives (causality + H) with NO deeper origin.
+  Single remaining observational test: g†(z) EVOLUTION (mass-limited, QG-079).

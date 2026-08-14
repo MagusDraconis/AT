@@ -1,0 +1,3 @@
+Source,Rate_s,H0PerS,Log10Ratio,Circular
+Planck,1.85E+043,2.18E-018,60.9,false
+FromLambda,3.14E-018,2.18E-018,0.16,true
