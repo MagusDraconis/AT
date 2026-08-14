@@ -6687,6 +6687,15 @@ Chain breaks at Step 1 (metric→Christoffels): TQM has external metric + string
 no tensor computations. TQM does NOT contain enough to compute G_μν. All 4 PASSED. Report:
 Docs/Audits/EinsteinTensorProgram.md.
 
+**Einstein Tensor Integration Program (4 tests + minimal builder, verified):**
+Created EinsteinTensorIntegrationTests.cs + EinsteinTensorBuilder.cs (TQM.Core/ResearchXC,
+~200 lines, pure differential geometry). Christoffel/Riemann/Ricci/Einstein methods via
+finite differences. Test 1 flat Γ=0. Test 2 sphere Γ_θφφ=-0.5. Test 3 Ricci: flat R=0,
+sphere R_θθ=1,R_φφ=0.5,R=2. Test 4 Einstein: 2D G=0, 3-sphere G=-diag(1,0.5,0.25) (non-trivial).
+Chain computable end-to-end. Integration mechanical at analyzers (GeoStep string→computed);
+blocked only at metric-source (external Malament, no native g_μν from Q-events). All 4 PASSED.
+Report: Docs/Audits/EinsteinTensorIntegration.md.
+
 **Continuum Limit Test Program:**
 Converted continuum audits into xUnit test plan. Matrix: #1 L_Q→flat Laplacian = Missing
 (skeleton provided); #2 flat→Schrödinger = Implemented (HilbertSpaceAnalyzer); #3 BDG→
