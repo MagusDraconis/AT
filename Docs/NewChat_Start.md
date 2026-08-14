@@ -6609,6 +6609,13 @@ Blocked (no Δ_g; gap placeholder); #5 Einstein recovery = Implemented (GrBridge
 EmergentGravityAnalyzer, external theorem). 3 implemented, 1 missing (skeleton), 1 blocked.
 See Docs/Audits/ContinuumLimit_TestPlan.md.
 
+**Continuum Limit Test #1 (implemented + verified):**
+Created GraphLaplacianContinuumTests.cs (TQM.Tests/ResearchQG) verifying L_Q → flat
+Laplacian. Builds 1D chain Laplacian (N=32..256), computes eigenvalues via MathNet EVD,
+compares to (1/dx²)[2-2cos(πk/(N+1))]. PASSED: maxRelErr ~1e-14..1e-12 (machine precision),
+continuum error decreases ~4× per N-doubling (O(1/N²) → (πk)²). Report:
+Docs/Audits/GraphLaplacianContinuum_Report.md.
+
 **TRM Quantum Engine Reconciliation Audit (new mathematics, lattice contact only):**
 Reconciled the external "Quantum Engine" formulas (D(x)=1/(1+x+bx²+x⁴), UV damping
 exp(-p²/Λ²), Padé kernel, loop finiteness) against TQM's QG/causal-set/graph-Laplacian/
