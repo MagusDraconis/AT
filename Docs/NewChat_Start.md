@@ -6654,6 +6654,14 @@ matrix K_ij. Created WeightedLaplacianTests.cs (4 tests): IsSymmetric (asym=0), 
 All 4 PASSED. Supplies the missing weight rule (discrete Laplace-Beltrami) over existing K_ij.
 Report: Docs/Audits/WeightedLaplacian_Report.md.
 
+**Laplace-Beltrami Approximation Program (3 tests, implemented + verified):**
+Created LaplaceBeltramiTests.cs. Test 1 PreservesFlatLimit: uniform path → (πk)², O(1/N²).
+Test 2 VariableWeightsChangeSpectrum: alternating weights shift spectrum by ~4 (metric-
+dependent). Test 3 MatchesKnownManifoldExample: cycle → S¹ spectrum k², O(1/N²). L_W = D_K−K
+is the standard unnormalized weighted graph Laplacian (Belkin-Niyogi/Coifman-Lafon), valid for
+uniform density. Audit note: caught a 2-fold-degeneracy indexing bug (false pass) via
+audit-from-results. All 3 PASSED. Report: Docs/Audits/LaplaceBeltramiApproximation.md.
+
 **Continuum Limit Test Program:**
 Converted continuum audits into xUnit test plan. Matrix: #1 L_Q→flat Laplacian = Missing
 (skeleton provided); #2 flat→Schrödinger = Implemented (HilbertSpaceAnalyzer); #3 BDG→
