@@ -6601,6 +6601,14 @@ signature (directed graph, non-symmetric) — the Lorentzian operator is the BDG
 → □, a DIFFERENT chain. L_Q→Δ_g would be wrong signature (Riemannian vs Lorentzian). Two
 chains (L_Q→flat Schrödinger; BDG→□→GR) remain disjoint. See Docs/Audits/CurvedSpaceSchrodinger.md.
 
+**Continuum Limit Test Program:**
+Converted continuum audits into xUnit test plan. Matrix: #1 L_Q→flat Laplacian = Missing
+(skeleton provided); #2 flat→Schrödinger = Implemented (HilbertSpaceAnalyzer); #3 BDG→
+d'Alembertian = Implemented (BdgUniquenessAnalyzer); #4 curved-space Schrödinger bridge =
+Blocked (no Δ_g; gap placeholder); #5 Einstein recovery = Implemented (GrBridgeAnalyzer/
+EmergentGravityAnalyzer, external theorem). 3 implemented, 1 missing (skeleton), 1 blocked.
+See Docs/Audits/ContinuumLimit_TestPlan.md.
+
 **TRM Quantum Engine Reconciliation Audit (new mathematics, lattice contact only):**
 Reconciled the external "Quantum Engine" formulas (D(x)=1/(1+x+bx²+x⁴), UV damping
 exp(-p²/Λ²), Padé kernel, loop finiteness) against TQM's QG/causal-set/graph-Laplacian/
