@@ -1,3 +1,13 @@
+# THE Q-MODEL
+
+*From Q to Cosmology*
+
+**TQM**
+
+*A Theory of Structure, Complexity and Random Actualization*
+
+---
+
 # TQM Results Overview
 
 ## Master Index: TQM-117 through TQM-154

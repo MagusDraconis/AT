@@ -1,6 +1,6 @@
 # 11. Critical Review
 
-## Hostile Assessment of the TQM Framework
+## Hostile Assessment of TQM (THE Q-MODEL)
 
 ---
 

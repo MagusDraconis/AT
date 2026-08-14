@@ -10,7 +10,7 @@
 
 ## Executive Summary
 
-The TQM (Topological Quantum Matrix) program demonstrates that a rich hierarchy of physical phenomena — from signal propagation to Darwinian evolution to quantum mechanics — emerges from two minimal postulates: topological charge Q exists, and dynamics are reversible. Hilbert space, Schrödinger evolution, complex structure, information species, Darwinian selection, and physical observables are all DERIVED from Q interaction networks. The Born rule (additivity) and measurement (collapse) remain as additional postulates, shared with standard quantum mechanics.
+The TQM (THE Q-MODEL) program demonstrates that a rich hierarchy of physical phenomena — from signal propagation to Darwinian evolution to quantum mechanics — emerges from two minimal postulates: topological charge Q exists, and dynamics are reversible. Hilbert space, Schrödinger evolution, complex structure, information species, Darwinian selection, and physical observables are all DERIVED from Q interaction networks. The Born rule (additivity) and measurement (collapse) remain as additional postulates, shared with standard quantum mechanics.
 
 **Core result**: Q → interaction graph → graph Laplacian L_Q → Hilbert space → Schrödinger → species → evolution → physical observables. The graph Laplacian IS the tight-binding Hamiltonian, the kinetic energy operator, and the dynamical matrix for coupled oscillators. TQM provides an evolutionary interpretation of graph spectral theory.
 

@@ -2,7 +2,7 @@
 
 ## Mission
 
-TQM (Temporal Quantum Matrix) investigates whether matter,
+TQM (THE Q-MODEL) investigates whether matter,
 quantum behaviour and later gravitation emerge from
 self-organizing oscillations of a temporal field.
 

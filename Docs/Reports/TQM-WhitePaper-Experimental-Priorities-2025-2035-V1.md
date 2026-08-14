@@ -7,7 +7,7 @@
 
 ## Executive Summary
 
-The TQM (Temporal Quantum Matrix) research program investigates whether all known fundamental physics can be derived from two primitives: **Q** — the principle of individuation (distinguishable entities exist) — and **Randomness** — the principle of actualization (among quantum possibilities, one is realized). No continuous free parameters are introduced.
+The TQM (THE Q-MODEL) research program investigates whether all known fundamental physics can be derived from two primitives: **Q** — the principle of individuation (distinguishable entities exist) — and **Randomness** — the principle of actualization (among quantum possibilities, one is realized). No continuous free parameters are introduced.
 
 Research conducted within this framework has produced four interconnected programs addressing complementary questions:
 
@@ -35,7 +35,7 @@ This white paper catalogs the predictions, assesses their internal confidence an
 
 ---
 
-## 1. The TQM Framework
+## 1. TQM (THE Q-MODEL)
 
 ### 1.1 Foundational Principles
 

@@ -1,6 +1,6 @@
 # TQM-X001: Alternative Foundations Audit
 
-## Hostile Review of the TQM Framework
+## Hostile Review of TQM (THE Q-MODEL)
 
 **Status**: 11 assumptions tracked, 7 alternative operators evaluated, 5 path dependencies identified.
 

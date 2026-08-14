@@ -1,6 +1,22 @@
-# TQM — Temporal Quantum Matrix
+# THE Q-MODEL
+
+*From Q to Cosmology*
+
+**TQM**
+
+*A Theory of Structure, Complexity and Random Actualization*
+
+---
 
 TQM investigates whether matter, quantum behavior, and gravitation emerge from self-organizing oscillations of a temporal field.
+
+## Naming
+
+TQM is the project acronym.
+
+The official theory name is **THE Q-MODEL** — *From Q to Cosmology*.
+
+The acronym TQM is retained for historical continuity and repository compatibility.
 
 ## Core Hypothesis
 

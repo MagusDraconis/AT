@@ -1,3 +1,13 @@
+# THE Q-MODEL
+
+*From Q to Cosmology*
+
+**TQM**
+
+*A Theory of Structure, Complexity and Random Actualization*
+
+---
+
 # TQM Repository-Wide Consolidation Audit — Coverage Report
 
 **Scope:** entire repository scan (`D:\Coding\Test\TQM`), all research threads.
@@ -68,7 +78,7 @@
 | `X*` | Foundations X (X001–X065b) | ✓ 195 core / 78 tests | COMPLETE |
 | `XE*` | Dimensionality/viability | ✓ 9 / 9 | COMPLETE |
 | `XB*` | Abundance physics | ✓ 10 / 10 | COMPLETE |
-| `TQM*` | Temporal Quantum Matrix (TQM-001–155) | ✓ 218 resonance + 138 tests | COMPLETE |
+| `TQM*` | THE Q-MODEL (TQM-001–155) | ✓ 218 resonance + 138 tests | COMPLETE |
 | `MC*` | *(unmapped)* | ✗ | MISSING |
 | `MEM*` | *(unmapped — likely memory)* | ✗ | MISSING |
 | `RBF*` | *(unmapped)* | ✗ | MISSING |

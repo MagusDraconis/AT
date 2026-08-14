@@ -1,4 +1,4 @@
-# TQM Framework Revision Protocol
+# TQM (THE Q-MODEL) Revision Protocol
 
 ## Evidence-Based Modification, Preservation, and Retirement Procedures
 

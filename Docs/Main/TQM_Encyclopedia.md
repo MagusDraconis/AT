@@ -1,3 +1,13 @@
+# THE Q-MODEL
+
+*From Q to Cosmology*
+
+**TQM**
+
+*A Theory of Structure, Complexity and Random Actualization*
+
+---
+
 # TQM Encyclopedia — Proposed Final Structure
 
 **Status:** consolidation plan. A single authoritative encyclopedia will be built

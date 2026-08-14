@@ -1,3 +1,13 @@
+# THE Q-MODEL
+
+*From Q to Cosmology*
+
+**TQM**
+
+*A Theory of Structure, Complexity and Random Actualization*
+
+---
+
 # Foundations of TQM — Executive Summary
 
 **Version**: Post TQM-154 (August 2026)
@@ -7,7 +17,7 @@
 
 ## One-Paragraph Summary
 
-The TQM (Topological Quantum Matrix) framework demonstrates that a rich hierarchy of physical phenomena — from signal propagation to quantum mechanics — emerges from two minimal postulates: topological charge Q exists, and dynamics are reversible. Hilbert space, Schrödinger evolution, complex structure, information species, Darwinian selection, and physical observables are all DERIVED from Q interaction networks. The graph Laplacian of the Q network IS the tight-binding Hamiltonian, the phonon dynamical matrix, and the quantum kinetic energy operator. Evolution (reproduction, variation, selection) emerges naturally as graph spectral dynamics. The Born rule and measurement remain as additional postulates. TQM reduces quantum mechanics from ~5 postulates to 4.
+The TQM (THE Q-MODEL) framework demonstrates that a rich hierarchy of physical phenomena — from signal propagation to quantum mechanics — emerges from two minimal postulates: topological charge Q exists, and dynamics are reversible. Hilbert space, Schrödinger evolution, complex structure, information species, Darwinian selection, and physical observables are all DERIVED from Q interaction networks. The graph Laplacian of the Q network IS the tight-binding Hamiltonian, the phonon dynamical matrix, and the quantum kinetic energy operator. Evolution (reproduction, variation, selection) emerges naturally as graph spectral dynamics. The Born rule and measurement remain as additional postulates. TQM reduces quantum mechanics from ~5 postulates to 4.
 
 ---
 

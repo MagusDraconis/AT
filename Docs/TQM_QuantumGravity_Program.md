@@ -1,4 +1,18 @@
+# THE Q-MODEL
+
+*From Q to Cosmology*
+
+**TQM**
+
+*A Theory of Structure, Complexity and Random Actualization*
+
+---
+
 # TQM Quantum Gravity Program — 31 Experiments
+
+## Naming
+
+TQM is the project acronym. The official theory name is **THE Q-MODEL** — *From Q to Cosmology*. The acronym TQM is retained for historical continuity and repository compatibility.
 
 ## Overview
 
