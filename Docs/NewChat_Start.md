@@ -6314,3 +6314,15 @@ between compressions (the Doppler fills the density zero-crossing, not the
 rarefaction). The 2nd peak requires finite-width velocity weighting / baryon-photon
 decoupling / ISW = a full Boltzmann (CAMB-class) solver, not new physics.
 See Docs/Audits/LOSProjectionAudit.md.
+
+**CMB Closure Audit (closure analysis — chain complete, PARTIAL):**
+Inventory + classification of everything needed to reach CAMB-level first 3 peaks.
+Present: background, z*, r_s, θ*, oscillator, radiation driving, neutrino fluid,
+Silk, baryon loading, Doppler (w_D=1/3), visibility. Missing (impact order):
+(1) acoustic phase shift φ≈0.84 rad (fixes ℓ₁ 304→220, ℓ₃ 904→814); (2) finite
+decoupling velocity phase (fills rarefaction, D_l2/D_l1 0.24→0.44); (3) ISW +
+full Boltzmann hierarchy (~10-15% amplitude). Not needed: cross term (zero),
+polarization, lensing, τ, tensors. All missing items are standard ΛCDM physics —
+require a CAMB/CLASS-class solver, not new TQM physics. CMB chapter = PARTIAL
+(background + compression peaks complete; rarefaction peak + phase shift need the
+full solver). See Docs/Audits/CMBClosureAudit.md.
