@@ -6679,6 +6679,14 @@ Classification: Tested (simulation) / Tested-standard+Blocked (no analyzer curva
 Partial (no full G_μν tensor). Einstein recovery = PARTIAL. All 3 PASSED. Report:
 Docs/Audits/EinsteinRecovery_TestReport.md.
 
+**Einstein Tensor Program (4 tests, implemented + verified):**
+Created EinsteinTensorTests.cs (standard 2D differential geometry). Test 1 MetricProduces
+Christoffels: flat Γ=0, sphere Γ_θφφ=-0.5. Test 2 ChristoffelsProduceRiemann: K=0 / K=1.
+Test 3 RiemannProducesRicci: R=0 / R=2, R_θθ=1. Test 4 RicciProducesEinsteinTensor: G=0 (2D).
+Chain breaks at Step 1 (metric→Christoffels): TQM has external metric + string descriptions,
+no tensor computations. TQM does NOT contain enough to compute G_μν. All 4 PASSED. Report:
+Docs/Audits/EinsteinTensorProgram.md.
+
 **Continuum Limit Test Program:**
 Converted continuum audits into xUnit test plan. Matrix: #1 L_Q→flat Laplacian = Missing
 (skeleton provided); #2 flat→Schrödinger = Implemented (HilbertSpaceAnalyzer); #3 BDG→
