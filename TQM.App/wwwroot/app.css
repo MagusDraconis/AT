@@ -125,3 +125,10 @@ a { color: inherit; }
     font-size: 1.15rem;
     background: rgba(100,181,246,0.05);
 }
+
+/* Heritage tree (genealogy layout) */
+.heritage-wrap { width: 100%; overflow-x: auto; margin-top: 0.75rem; }
+.heritage-svg { width: 100%; height: auto; min-width: 640px; display: block; }
+.heritage-node { cursor: pointer; }
+.heritage-node:hover rect { fill-opacity: 0.3; }
+.heritage-node text { fill: #E6EDF3; font-size: 13px; font-weight: 600; pointer-events: none; }
