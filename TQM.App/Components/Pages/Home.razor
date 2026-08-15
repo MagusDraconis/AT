@@ -1,0 +1,118 @@
+@page "/"
+
+<PageTitle>TQM · Research Atlas</PageTitle>
+
+<div class="hero">
+    <div class="hero-kicker">Research Atlas · v1.0</div>
+    <div class="hero-title">THE Q-MODEL</div>
+    <div class="hero-subtitle">From Q to Cosmology</div>
+    <div class="hero-tagline">Structure is derivable. Content is realized.</div>
+
+    <div class="hero-stats">
+        @foreach (var s in AtlasDataService.HeroStats)
+        {
+            <div class="stat-tile">
+                <div class="stat-value" style="color:@s.Color">@s.Value</div>
+                <div class="stat-label">@s.Label</div>
+            </div>
+        }
+    </div>
+
+    <div class="hero-chain">
+        @for (int i = 0; i < AtlasDataService.HeroChain.Count; i++)
+        {
+            <span class="chain-node">@AtlasDataService.HeroChain[i]</span>
+            @if (i < AtlasDataService.HeroChain.Count - 1)
+            {
+                <span class="chain-arrow">&rarr;</span>
+            }
+        }
+    </div>
+</div>
+
+<div class="page-section mt-4">
+    <h2 class="section-heading">Why TQM?</h2>
+    <div class="why-grid">
+        @foreach (var q in AtlasDataService.WhyQuestions)
+        {
+            <div class="why-tile"><span class="q">@q</span></div>
+        }
+    </div>
+    <p class="mt-2">
+        TQM investigates whether observable physics can emerge from a smaller primitive foundation.
+        <a href="/story">Read the full story &rarr;</a>
+    </p>
+</div>
+
+<div class="page-section">
+    <h2 class="section-heading">Research Journey</h2>
+    <div class="story-flow">
+        @for (int i = 0; i < AtlasDataService.StoryChapters.Count; i++)
+        {
+            <span class="@($"badge tone-{AtlasDataService.StoryChapters[i].Tone}")"><i class="@($"bi {AtlasDataService.StoryChapters[i].Icon}")"></i>&nbsp;@AtlasDataService.StoryChapters[i].Era</span>
+            @if (i < AtlasDataService.StoryChapters.Count - 1)
+            {
+                <span class="chain-arrow">&darr;</span>
+            }
+        }
+    </div>
+    <p class="muted mt-2">TRM &rarr; Problems Found &rarr; ResearchX &rarr; Structure/Content Split &rarr; Hostile Reviews &rarr; TQM v1.0.</p>
+</div>
+
+<div class="page-section">
+    <h2 class="section-heading">From TRM to TQM</h2>
+    <MudCard Elevation="1" Class="theory-card">
+        <MudCardContent>
+            <MudText Typo="Typo.body2" Class="muted">
+                TQM's predecessor, the Temporal Resonance Model, assembled striking pieces but carried zero
+                candidate physics. The legacy audit absorbed three modules, rejected two, and kept three as
+                candidate mathematics. TQM re-derived the surviving structure from two primitives plus one number.
+            </MudText>
+        </MudCardContent>
+    </MudCard>
+</div>
+
+<div class="page-section">
+    <h2 class="section-heading">Key Discoveries</h2>
+    <MudGrid Spacing="3">
+        @foreach (var d in AtlasDataService.KeyDiscoveries)
+        {
+            <MudItem xs="12" sm="6" lg="4">
+                <TheoryCard Title="@d.Title">
+                    <ClassificationBadge Kind="@d.Kind" />
+                    <MudText Typo="Typo.body2" Class="muted mt-2">@d.Description</MudText>
+                </TheoryCard>
+            </MudItem>
+        }
+    </MudGrid>
+</div>
+
+<div class="page-section">
+    <h2 class="section-heading">The Open Door</h2>
+    <MudCard Elevation="1" Class="theory-card">
+        <MudCardContent>
+            <MudText Typo="Typo.subtitle1" Class="fw-bold">
+                <i class="bi bi-door-open story-icon"></i>The internal-3 node
+            </MudText>
+            <MudText Typo="Typo.body2" Class="muted">
+                One question remains open: why the internal multiplicity/count saturates at 3. Two faces
+                &mdash; N &le; 3 and the gauge count n = 3 &mdash; with one provisional no-go (T-09). The
+                derivation-paper blockers are the G4 metric&rarr;operator coupling, a native BDG derivation,
+                and a discriminating prediction.
+            </MudText>
+            <MudButton Variant="Variant.Outlined" Color="Color.Warning" Href="/open-problems" StartIcon="@Icons.Material.Filled.OpenInNew" Class="mt-2">
+                Open Problems
+            </MudButton>
+        </MudCardContent>
+    </MudCard>
+</div>
+
+<div class="page-section">
+    <div class="mb-2">
+        <span class="badge badge-derived">DERIVED</span>
+        <span class="badge badge-real">REAL-UNDERIVED</span>
+        <span class="badge badge-drawn">DRAWN</span>
+        <span class="muted">&mdash; the taxonomy used throughout this atlas.</span>
+    </div>
+</div>
+

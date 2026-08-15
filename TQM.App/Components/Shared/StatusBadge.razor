@@ -1,0 +1,19 @@
+@namespace TQM.App.Components.Shared
+
+<span class="badge @CssClass">@Status</span>
+
+@code {
+    [Parameter] public string Status { get; set; } = "";
+
+    private string CssClass => (Status ?? "").Trim().ToUpperInvariant() switch
+    {
+        "PASS" or "PASSED" or "RESOLVED" or "VERIFIED" => "badge-pass",
+        "DERIVED" or "FOUNDATION" => "badge-derived",
+        "REAL-UNDERIVED" or "PARTIAL" or "PARTIALLY RESOLVED" or "PARTIALLY VERIFIED" => "badge-real",
+        "DRAWN" => "badge-drawn",
+        "OPEN" => "badge-open",
+        "FALSIFIED" => "badge-falsified",
+        "IMPORTED" => "badge-imported",
+        _ => "badge-neutral"
+    };
+}

@@ -1,0 +1,127 @@
+/* TQM Research Atlas — dark, scientific, story-driven */
+
+html, body { background: #0B0E13; color: #E6EDF3; }
+a { color: inherit; }
+
+.hide-on-mobile { display: inline; }
+@media (max-width: 640px) { .hide-on-mobile { display: none; } }
+
+.nav-icon { margin-right: 0.5rem; }
+.nav-brand { border-bottom: 1px solid rgba(255,255,255,0.08); margin-bottom: 0.5rem; }
+
+/* Hero */
+.hero {
+  position: relative;
+  padding: 2.5rem 2rem 1.75rem;
+  border-radius: 14px;
+  background:
+    radial-gradient(ellipse at 15% 0%, rgba(100,181,246,0.12), transparent 55%),
+    radial-gradient(ellipse at 85% 0%, rgba(129,199,132,0.09), transparent 55%),
+    radial-gradient(ellipse at 50% 130%, rgba(255,183,77,0.07), transparent 60%),
+    #0F141B;
+  border: 1px solid rgba(255,255,255,0.06);
+  overflow: hidden;
+}
+.hero-kicker { text-transform: uppercase; letter-spacing: 0.18em; font-size: 0.72rem; color: #64B5F6; font-weight: 700; }
+.hero-title { font-family: Georgia, 'Times New Roman', serif; font-size: 3rem; font-weight: 700; letter-spacing: 0.5px; line-height: 1.05; }
+.hero-subtitle { font-family: Georgia, 'Times New Roman', serif; font-size: 1.45rem; color: #8B949E; margin-top: 0.4rem; }
+.hero-tagline { font-family: Georgia, 'Times New Roman', serif; font-style: italic; font-size: 1.2rem; color: #C9D1D9; margin-top: 0.6rem; }
+.hero-stats { display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 1.6rem; }
+.hero-chain { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem; margin-top: 1.75rem; }
+
+.chain-node {
+  padding: 0.35rem 0.85rem;
+  border-radius: 999px;
+  border: 1px solid rgba(100,181,246,0.45);
+  background: rgba(100,181,246,0.08);
+  font-size: 0.8rem;
+  color: #C9D1D9;
+  font-weight: 600;
+}
+.chain-arrow { color: #8B949E; font-size: 0.9rem; }
+
+/* Stat tiles */
+.stat-row { display: flex; flex-wrap: wrap; gap: 1rem; }
+.stat-tile { background: #151A21; border: 1px solid rgba(255,255,255,0.08); border-radius: 10px; padding: 1rem 1.25rem; min-width: 110px; text-align: center; }
+.stat-value { font-size: 1.8rem; font-weight: 700; line-height: 1.1; }
+.stat-label { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.06em; color: #8B949E; }
+
+/* Cards */
+.theory-card, .timeline-card, .node-card, .story-card { background: #151A21; border: 1px solid rgba(255,255,255,0.07); border-radius: 10px; }
+.theory-card:hover { border-color: rgba(100,181,246,0.5); }
+
+/* Badges — taxonomy colors, global */
+.badge { display: inline-block; padding: 0.15rem 0.55rem; border-radius: 999px; font-size: 0.68rem; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; border: 1px solid transparent; vertical-align: middle; }
+.badge-derived { color: #81C784; border-color: #81C784; background: rgba(129,199,132,0.12); }
+.badge-pass { color: #4DD0E1; border-color: #4DD0E1; background: rgba(77,208,225,0.12); }
+.badge-real { color: #FFC107; border-color: #FFC107; background: rgba(255,193,7,0.12); }
+.badge-drawn { color: #E57373; border-color: #E57373; background: rgba(229,115,115,0.12); }
+.badge-open { color: #FF9800; border-color: #FF9800; background: rgba(255,152,0,0.12); }
+.badge-falsified { color: #E57373; border-color: #E57373; background: rgba(229,115,115,0.12); }
+.badge-imported, .badge-partial, .badge-neutral { color: #90A4AE; border-color: #90A4AE; background: rgba(144,164,174,0.12); }
+
+/* Why TQM */
+.why-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1rem; }
+.why-tile { background: #151A21; border: 1px solid rgba(255,255,255,0.07); border-radius: 10px; padding: 1rem 1.1rem; }
+.why-tile .q { font-family: Georgia, 'Times New Roman', serif; font-size: 1.05rem; }
+
+/* Story */
+.story-card { padding: 1rem 1.1rem; }
+.story-icon { font-size: 1.35rem; margin-right: 0.6rem; }
+.story-flow { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem; }
+
+/* Node graph */
+.node-graph { margin-top: 0.5rem; }
+.node-graph-item { margin: 0.35rem 0; }
+.node-card { display: flex; align-items: center; gap: 0.5rem; padding: 0.5rem 0.75rem; cursor: pointer; }
+.node-card:hover { border-color: rgba(100,181,246,0.5); }
+.node-caret { color: #8B949E; width: 1rem; display: inline-block; }
+.node-title { font-weight: 600; }
+.node-details { margin: 0.35rem 0 0.5rem 1.75rem; padding: 0.75rem; background: #0C0F14; border-left: 2px solid #64B5F6; border-radius: 4px; font-size: 0.85rem; }
+
+/* Sections */
+.page-section { margin-bottom: 2.5rem; }
+.section-heading { font-family: Georgia, 'Times New Roman', serif; }
+.muted { color: #8B949E; }
+
+/* Utility classes */
+.fw-bold { font-weight: 700; }
+.text-uppercase { text-transform: uppercase; letter-spacing: 0.05em; }
+.h-100 { height: 100%; }
+.mt-2 { margin-top: 0.5rem; }
+.mt-4 { margin-top: 1.5rem; }
+.mb-1 { margin-bottom: 0.25rem; }
+.mb-2 { margin-bottom: 0.5rem; }
+.mb-3 { margin-bottom: 1rem; }
+.mb-4 { margin-bottom: 1.5rem; }
+.px-2 { padding-left: 0.5rem; padding-right: 0.5rem; }
+.px-3 { padding-left: 1rem; padding-right: 1rem; }
+.px-4 { padding-left: 1.5rem; padding-right: 1.5rem; }
+.py-3 { padding-top: 1rem; padding-bottom: 1rem; }
+.py-5 { padding-top: 3rem; padding-bottom: 3rem; }
+.pb-3 { padding-bottom: 1rem; }
+
+/* Tone accents (story flow) */
+.tone-cyan { border-color: rgba(77,208,225,0.5); background: rgba(77,208,225,0.08); color: #4DD0E1; }
+.tone-blue { border-color: rgba(100,181,246,0.5); background: rgba(100,181,246,0.08); color: #64B5F6; }
+.tone-green { border-color: rgba(129,199,132,0.5); background: rgba(129,199,132,0.08); color: #81C784; }
+.tone-amber { border-color: rgba(255,193,7,0.5); background: rgba(255,193,7,0.08); color: #FFC107; }
+.tone-orange { border-color: rgba(255,152,0,0.5); background: rgba(255,152,0,0.08); color: #FF9800; }
+.tone-red { border-color: rgba(229,115,115,0.5); background: rgba(229,115,115,0.08); color: #E57373; }
+
+/* Long-form prose (book/blog-like) */
+.prose { max-width: 72ch; line-height: 1.75; font-size: 1.03rem; }
+.prose p { margin-bottom: 1.1rem; }
+.prose .lead { font-size: 1.18rem; color: #C9D1D9; font-family: Georgia, 'Times New Roman', serif; }
+.prose h2 { font-family: Georgia, 'Times New Roman', serif; margin-top: 2.2rem; margin-bottom: 0.6rem; }
+.prose h2 .num { color: #64B5F6; margin-right: 0.5rem; }
+.prose blockquote {
+    border-left: 3px solid #64B5F6;
+    margin: 1.2rem 0;
+    padding: 0.5rem 1.1rem;
+    color: #C9D1D9;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 1.15rem;
+    background: rgba(100,181,246,0.05);
+}

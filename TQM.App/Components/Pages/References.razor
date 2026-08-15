@@ -1,0 +1,12 @@
+@page "/references"
+
+<PageTitle>References · TQM</PageTitle>
+
+<h2 class="section-heading">References</h2>
+
+<ol>
+    @foreach (var r in AtlasDataService.References)
+    {
+        <li class="mb-2">@r.Citation</li>
+    }
+</ol>

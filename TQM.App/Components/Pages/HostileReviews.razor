@@ -1,0 +1,19 @@
+@page "/hostile-reviews"
+
+<PageTitle>Hostile Reviews · TQM</PageTitle>
+
+<h2 class="section-heading">Hostile Reviews</h2>
+<p class="muted">Round 2 raised twelve FATAL issues; each was re-evaluated against the executable tests. Tally: 6 resolved · 6 partially resolved · 0 open.</p>
+
+<MudTable Items="AtlasDataService.HostileReviews" Hover="true" Dense="true">
+    <HeaderContent>
+        <MudTh>Issue</MudTh>
+        <MudTh>Criticism</MudTh>
+        <MudTh>Disposition</MudTh>
+    </HeaderContent>
+    <RowTemplate>
+        <MudTd>@context.Issue</MudTd>
+        <MudTd>@context.Criticism</MudTd>
+        <MudTd><StatusBadge Status="@context.Disposition" /></MudTd>
+    </RowTemplate>
+</MudTable>

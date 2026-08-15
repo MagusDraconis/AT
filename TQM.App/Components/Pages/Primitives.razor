@@ -1,0 +1,23 @@
+@page "/primitives"
+
+<PageTitle>Primitives · TQM</PageTitle>
+
+<h2 class="section-heading">Primitives</h2>
+<p class="muted">The theory admits exactly four primitives and no others. No gauge-group, multiplicity, or hidden-dimension primitive is permitted.</p>
+
+<MudGrid Spacing="3">
+    @foreach (var p in AtlasDataService.Primitives)
+    {
+        <MudItem xs="12" sm="6" lg="3">
+            <MudCard Elevation="1" Class="theory-card h-100">
+                <MudCardContent>
+                    <div class="mb-2"><StatusBadge Status="@p.Status" /></div>
+                    <MudText Typo="Typo.h6">@p.Symbol</MudText>
+                    <MudText Typo="Typo.subtitle2">@p.Name</MudText>
+                    <MudText Typo="Typo.body2" Class="muted">@p.Description</MudText>
+                    <MudText Typo="Typo.caption" Color="Color.Primary" Class="mt-2"><strong>Role.</strong> @p.Role</MudText>
+                </MudCardContent>
+            </MudCard>
+        </MudItem>
+    }
+</MudGrid>

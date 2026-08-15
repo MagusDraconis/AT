@@ -1,0 +1,17 @@
+@page "/open-problems"
+
+<PageTitle>Open Problems · TQM</PageTitle>
+
+<h2 class="section-heading">Open Problems</h2>
+<p class="muted">The three derivation-paper blockers.</p>
+
+@foreach (var p in AtlasDataService.OpenProblems)
+{
+    <MudCard Elevation="1" Class="theory-card mb-3">
+        <MudCardContent>
+            <MudText Typo="Typo.caption" Color="Color.Error">@p.Id</MudText>
+            <MudText Typo="Typo.subtitle1" Class="fw-bold">@p.Title</MudText>
+            <MudText Typo="Typo.body2" Class="muted">@p.Description</MudText>
+        </MudCardContent>
+    </MudCard>
+}
