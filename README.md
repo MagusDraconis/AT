@@ -10,6 +10,10 @@
 
 TQM investigates whether matter, quantum behavior, and gravitation emerge from self-organizing oscillations of a temporal field.
 
+## Publication
+
+Zenodo archive: https://doi.org/10.5281/zenodo.20681734
+
 ## Naming
 
 TQM is the project acronym.
