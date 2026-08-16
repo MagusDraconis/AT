@@ -387,6 +387,10 @@ Trilogy: QG-029 (attraction dominates) + QG-030 (no counter-structure) + QG-031 
 - kinetic T not conserved; unique symmetric conserved 2nd-order tensor is G; density flux curvature-sourced
 - G = κT is an unavoidable identity, not an imported field equation
 
+### G4-O0: Physical Observables (G4-O Phase 0)
+**Status:** Complete. Mixed spectrum: weak-field GR-like; curvature-sourced Poisson TQM-specific.
+- Φ=(1/d)lnρ; a=−∇Φ, redshift=−ΔΦ, lensing∝ΔΦ, H=ρ̇/ρ (GR-like); curvature-sourced Poisson + 1/d scaling (TQM)
+
 ---
 
 ## Overall Statistics
@@ -396,8 +400,8 @@ Trilogy: QG-029 (attraction dominates) + QG-030 (no counter-structure) + QG-031 
 | DATA | 10 | Complete |
 | QM | 5 | Complete |
 | QG | 31 | Complete |
-| G4 | 39 | Complete |
-| **Total** | **85** | |
+| G4 | 40 | Complete |
+| **Total** | **86** | |
 
 ## Key Unsolved Problems
 

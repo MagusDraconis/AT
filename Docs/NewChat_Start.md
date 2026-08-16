@@ -7385,3 +7385,16 @@ has divergence Delta rho = 2a != 0 (curvature-sourced, Delta rho ~ -R). CONCLUSI
 sector — the kinetic T is not conserved, the unique conserved symmetric 2nd-order tensor is G (up to
 scale), so T=G/kappa is FORCED; rho is both geometric and matter source. G=kappa T is an unavoidable
 identity, not an imported field equation. Report: Docs/Research/G4G_IndependentMatterSector.md.
+
+**G4-O Phase 0 (Physical Observables) — COMPLETED (3/3 tests pass):**
+Question: what measurable consequences follow from Q-events -> rho -> G_uv? Added PhysicalObservables.cs
+(effective potential Phi=(1/d)ln rho, acceleration a=-grad Phi, redshift, lensing, expansion, native
+Poisson residual). G4-O00: R=-(ln rho)''/rho exact (d=2) + native Poisson relation Delta Phi +
+((d-2)/2)|grad Phi|^2 = -rho^(2/d) R/(2(d-1)) (d=3, residual <1e-12) — curvature ALGEBRAIC in rho, source
+is CURVATURE (rho'') not density (TQM-SPECIFIC). G4-O01: a=-grad Phi + redshift=-Delta Phi standard GR
+weak-field form (KNOWN GR-LIKE, with Phi=(1/d)ln rho). G4-O02: lensing ~ Delta Phi (GR-like), expansion
+H=rho-dot/rho=0 static (GR-like), Phi/a scale as 1/d (TQM-SPECIFIC conformal-weight). CLASSIFICATION:
+weak-field phenomenology (acceleration/redshift/lensing/expansion) KNOWN GR-LIKE; curvature-sourced
+Poisson + algebraic curvature-density + 1/d scaling TQM-SPECIFIC. Decisive prediction: gravitational
+source is rho's second-derivative (curvature), not its value (differs from Delta Phi = 4 pi G rho).
+Report: Docs/Research/G4O_PhysicalObservables.md.
