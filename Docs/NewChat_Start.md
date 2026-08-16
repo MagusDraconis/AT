@@ -7170,3 +7170,15 @@ CONCLUSION: YES — H = R1 + A3 + D with negated local-degree diagonal suppresse
 to 0.428 (<0.50) while preserving retarded/indefinite/alternating; diagonal is native, only its
 strength is calibrated. Code: TQM.Tests/ResearchXH/G4L_Phase7_NativeDiagonalTests.cs (G4-L70/71/72);
 report: Docs/Research/G4L_Phase7_NativeDiagonal.md.
+
+**G4-L Phase 8 (Refinement Convergence) — COMPLETED (3/3 tests pass; NEGATIVE result; all 27 G4-L re-verified):**
+Question: does refinement reduce the remaining Feynman tail (does H = R1+A3+D converge to BDG)?
+Added NativeLorentzian (Phase-7 best, fixed s=0.75) to LorentzianOperator. Ran N = 72->506 (diamond
+grids 7x4/9x5/11x6/15x8/21x11). Leakage: 0.428 -> 0.546 -> 0.503 -> 0.417 -> 0.412 (NON-monotonic,
+Delta=-0.016, PLATEAU). KS->BDG: 0.2639 -> 0.2727 -> 0.2564 -> 0.2500 -> 0.2372 (non-monotonic, weak
+~10% drift, stays far from 0, PLATEAU). Mode ratio stays <1 (indefiniteness survives). CLASSIFICATION:
+PLATEAU. CONCLUSION: NO — refinement does NOT eliminate the tail; the residual ~40-55% Feynman tail
+is INTRINSIC to the native symmetric off-diagonal, not a discretization artifact. Confirms Phases 5-7:
+the missing BDG diagonal -2 is a genuine gap that does NOT close under N->infinity. Code:
+TQM.Tests/ResearchXH/G4L_Phase8_RefinementConvergenceTests.cs (G4-L80/81/82); report:
+Docs/Research/G4L_Phase8_RefinementConvergence.md.

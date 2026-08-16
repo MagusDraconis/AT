@@ -309,6 +309,11 @@ Trilogy: QG-029 (attraction dominates) + QG-030 (no counter-structure) + QG-031 
   indefinite + alternating + refinement-stable
 - All 5 causal diagonals reach < 0.50; BDG's own −2 (=−degree/2) overshoots (0.734)
 
+### G4-L8: Refinement Convergence (G4-L Phase 8)
+**Status:** Complete (NEGATIVE). Refinement does NOT eliminate the Feynman tail — PLATEAU.
+- leakage 0.428→0.546→0.503→0.417→0.412 (non-monotonic, N=72→506); KS→BDG 0.264→0.237 (weak)
+- residual ~40–55% tail is intrinsic to the symmetric off-diagonal, not a refinement artifact
+
 ---
 
 ## Overall Statistics
@@ -318,8 +323,8 @@ Trilogy: QG-029 (attraction dominates) + QG-030 (no counter-structure) + QG-031 
 | DATA | 10 | Complete |
 | QM | 5 | Complete |
 | QG | 31 | Complete |
-| G4 | 23 | Complete |
-| **Total** | **69** | |
+| G4 | 24 | Complete |
+| **Total** | **70** | |
 
 ## Key Unsolved Problems
 

@@ -289,6 +289,21 @@ public static class LorentzianOperator
     public static double[,] RetardedInterval(CausalSetData cs)
         => Add(PastDirectedLayer(cs), IntervalWeightedAlternation(cs));
 
+    /// <summary>
+    /// NativeLorentzian — the G4-L Phase 7 best operator: H = R1 + A3 + D, where D = −s·(degree/
+    /// max-degree) is the negated local-degree self-term at the calibrated strength s (default
+    /// 0.75). Size-independent (grid-interior max link degree is 4), so D = −s·degree/4.
+    /// Retarded-biased, indefinite, alternating, Feynman tail suppressed to ~0.43.
+    /// </summary>
+    public static double[,] NativeLorentzian(CausalSetData cs, double strength = 0.75)
+    {
+        var h0 = RetardedInterval(cs);
+        var deg = LocalDegree(cs).Select(x => (double)x).ToArray();
+        double norm = deg.Length == 0 ? 1.0 : deg.Max();
+        if (norm == 0.0) return h0;
+        return AddDiagonal(h0, deg.Select(x => -strength * x / norm).ToArray());
+    }
+
     /// <summary>Add a per-vertex diagonal d to a square matrix (returns a copy).</summary>
     public static double[,] AddDiagonal(double[,] m, double[] d)
     {
