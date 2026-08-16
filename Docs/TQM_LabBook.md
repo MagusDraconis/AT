@@ -359,6 +359,11 @@ Trilogy: QG-029 (attraction dominates) + QG-030 (no counter-structure) + QG-031 
 - binomial structure + truncation + constant-annihilation native; only the scale −2 is imported
 - raw layer occupancy/interval counts are noisy (NO MATCH for naive counting)
 
+### G4-L12: BDG Normalization (G4-L Phase 12)
+**Status:** Complete (NO MATCH). The scale −2 does not emerge natively.
+- constant-annihilation leaves s free; −degree/2 = −3 ≠ −2; past count [8,57] position-dependent
+- scale pinned only by second-moment/continuum matching — closes the G4-L coefficient story
+
 ---
 
 ## Overall Statistics
@@ -368,8 +373,8 @@ Trilogy: QG-029 (attraction dominates) + QG-030 (no counter-structure) + QG-031 
 | DATA | 10 | Complete |
 | QM | 5 | Complete |
 | QG | 31 | Complete |
-| G4 | 33 | Complete |
-| **Total** | **79** | |
+| G4 | 34 | Complete |
+| **Total** | **80** | |
 
 ## Key Unsolved Problems
 

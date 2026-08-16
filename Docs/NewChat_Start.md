@@ -7318,3 +7318,15 @@ CLASSIFICATION: PARTIAL MATCH — binomial structure + truncation + constant-ann
 only the overall scale -2 is imported (continuum normalization to Box). Sharpens G4-L10: native operators
 have the right SHAPE (alternating layers); only the global scale -2 separates them from BDG. Report:
 Docs/Research/G4L_BDGCoefficientOrigin.md.
+
+**G4-L Phase 12 (BDG Normalization) — COMPLETED (3/3 tests pass; 39/39 G4-L verified):**
+Question: can the BDG scale -2 emerge natively? Family a(s)=s*(-1,+2,-1). G4-L120: constants AND
+linear annihilated for ALL s (sum=0, first moment=0) — native 0th/1st-order constraints leave s FREE
+(only M2=-2s varies). G4-L121: causal-set Hasse degree is grid-independent (6) but -degree/2 = -3 != -2;
+past count position-dependent [8,57] — no native count gives constant -2. G4-L122: M2(s)=-2s, s pinned
+UNIQUELY by second moment (s=2 -> M2=-4, the continuum d'Alembertian normalization); BDG stencil =
+a(s=2)={-2,+4,-2}. CLASSIFICATION: NO MATCH — scale -2 does NOT emerge from any native quantity
+(interval-volume, density, constant-annihilation, propagator all fail); it is pinned only by
+second-moment/continuum matching (a conformal-scale datum, not causal-structure datum). CLOSES the G4-L
+coefficient story: native operators have the exact BDG SHAPE; only the global scale -2 remains imported.
+Report: Docs/Research/G4L_BDGNormalization.md.
