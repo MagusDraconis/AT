@@ -7480,3 +7480,16 @@ decays (0.3:-0.19, 1.0:-0.03) vs Newton grows (-0.08,-0.15). CLASSIFICATION: PAR
 matter is ATTRACTIVE (correct sign, resolves G4-O repulsion) but LOCALIZED (short-range), NOT Newtonian
 1/r^2. Full Newtonian gravity needs an additional non-conformal (long-range) sector — open question.
 Report: Docs/Research/G4ME_DeficitMatterGravity.md.
+
+**G4-ME Phase 2 (Long-Range Gravity) — COMPLETED (3/3 tests pass; 9/9 G4-ME verified):**
+Question: can long-range attraction emerge from COLLECTIVE deficit structures? Added DeficitCollective
+(3D radial TqmAcceleration3D/NewtonianPointMass/NewtonianAcceleration3D/EffectiveEnclosedMass,
+PowerLawDeficit, GaussianVoid, CompactVoid, NestedVoidField, LogLogFit). G4-ME20 deficit network: a
+collection of localized voids STILL localized (superposition of exponential fields can't make 1/r^2). G4-ME21
+nested SELF-SIMILAR hierarchy (radii R_k=r0*lambda^k, amplitudes A_k=A0*lambda^-k, widths sigma_k=sigma0*lambda^k,
+one void per octave): cumulative deficit m(r) ~ 1/r (log-log slope -1.09), field a ~ 1/r^2 (slope -2.01),
+attractive everywhere. G4-ME22 abundance-law continuum limit n(R)~1/R: smooth power-law deficit rho=rho-bar-m0/(1+r/r0)
+gives a = -(1/d)m'/rho -> -m0*r0/(d*rho-bar*r^2) EXACT Newtonian 1/r^2; effective enclosed mass M_eff=-a*r^2 ->
+m0*r0/(d*rho-bar)=0.0833 (const, point-mass form; M_eff(12)=0.0784, 94%). CLASSIFICATION: MECHANISM IDENTIFIED —
+long-range gravity = the conformal 1/r tail (rho ~ 1 - d*M/r) of a SCALE-FREE (self-similar, abundance-law)
+deficit hierarchy; single localized voids are insufficient. Report: Docs/Research/G4ME_LongRangeGravity.md.

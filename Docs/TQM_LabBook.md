@@ -419,6 +419,10 @@ Trilogy: QG-029 (attraction dominates) + QG-030 (no counter-structure) + QG-031 
 **Status:** Complete (PARTIAL MATCH). Deficit matter is attractive but localized (not 1/r²).
 - correct attractive sign; field ∝ ∇m (short-range), no Newtonian long-range exterior
 
+### G4-ME2: Long-Range Gravity (G4-ME Phase 2)
+**Status:** Complete (MECHANISM IDENTIFIED). Long-range gravity = conformal 1/r tail of a scale-free deficit hierarchy.
+- networks of localized voids stay localized; a SELF-SIMILAR (one-void-per-octave) hierarchy → m ∝ 1/r → a ∝ 1/r²; abundance-law continuum → exact 1/r² with M_eff → const
+
 ---
 
 ## Overall Statistics
@@ -428,8 +432,8 @@ Trilogy: QG-029 (attraction dominates) + QG-030 (no counter-structure) + QG-031 
 | DATA | 10 | Complete |
 | QM | 5 | Complete |
 | QG | 31 | Complete |
-| G4 | 47 | Complete |
-| **Total** | **93** | |
+| G4 | 48 | Complete |
+| **Total** | **94** | |
 
 ## Key Unsolved Problems
 
