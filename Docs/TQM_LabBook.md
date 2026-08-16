@@ -344,6 +344,11 @@ Trilogy: QG-029 (attraction dominates) + QG-030 (no counter-structure) + QG-031 
 - relative error net-decreases 1.8%→0.8% under t∝h²; fixed-t/t∝h drift; adaptive t* overfits
 - resolves the G4-C5 refinement-convergence gap
 
+### G4-L10: Lorentzian Continuum Limit (G4-L Phase 10)
+**Status:** Complete (PARTIAL MATCH). S/G carry signature/causality but not the exact continuum operators.
+- S indefinite+alternating but not the d'Alembertian (uniform weights, no binomial coefficients)
+- G strictly retarded/causal; the final step to exact □/retarded-Green is blocked by missing BDG weights
+
 ---
 
 ## Overall Statistics
@@ -353,8 +358,8 @@ Trilogy: QG-029 (attraction dominates) + QG-030 (no counter-structure) + QG-031 
 | DATA | 10 | Complete |
 | QM | 5 | Complete |
 | QG | 31 | Complete |
-| G4 | 30 | Complete |
-| **Total** | **76** | |
+| G4 | 31 | Complete |
+| **Total** | **77** | |
 
 ## Key Unsolved Problems
 

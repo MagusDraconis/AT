@@ -7282,3 +7282,15 @@ adaptive t* overfits (0.0001 -> 0.0015, hits t=0.02 floor). CONCLUSION: the asym
 t ~ h^2 (graph-Laplacian eigenvalue scale) — it net-decreases the error and reaches <1% at N=48,
 RESOLVING the G4-C5 refinement-convergence gap. Absolute |R| reconstruction is now
 refinement-convergent in the t~h^2 regime. Report: Docs/Research/G4P_HeatKernelAsymptotics.md.
+
+**G4-L Phase 10 (Lorentzian Continuum Limit) — COMPLETED (3/3 tests pass; 33/33 G4-L verified):**
+Question: what continuum equation do the native dual-object operators generate? S = SignatureOperator
+(2R1+R2+D), G = RetardedPropagator (D+2R1). G4-L100: S spectrum (27+,45-) indefinite + alternating
+(Lorentzian signature) BUT H2 applied to harmonic t^2+x^2 gives 464.1 (true d'Alembertian would give
+~0) — S is a UNIFORM-weight alternating-layer operator, NOT the exact Box (no binomial weights).
+G4-L101: G future entries = 0 (strictly retarded/lower-triangular), uniform weights. G4-L102: G causal
+(leak 0.082, dir 1.0), S symmetric/Feynman (leak 0.770, dir 0.537). CLASSIFICATION: PARTIAL MATCH for
+both — S carries the Lorentzian signature, G carries causality, but neither is the exact d'Alembertian /
+retarded Green function (BDG binomial coefficients missing). Confirms+sharpens the G4-L audit: the final
+step to exact Box/retarded-Green is blocked by the missing BDG weights. Report:
+Docs/Research/G4L_ContinuumLimit.md.
