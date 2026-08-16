@@ -7420,3 +7420,17 @@ a_TQM~4e-10 localized; aggregated robustness TRUE. CLASSIFICATION: ROBUST — TQ
 peaks (field points toward minima) + zero-field in uniform/exterior regions, across Gaussian/NFW/
 exponential/uniform-sphere/shell. Both follow from source=(ln rho)'' not rho, so profile-independent.
 Report: Docs/Research/G4O_PredictionStressTest.md.
+
+**G4-O Phase 3 (Falsification Attempt) — COMPLETED (3/3 tests pass; 12/12 G4-O verified):**
+Question: is the repulsive/localized prediction physical or an artifact (sign/gauge/weak-field)? Added
+MetricG00/Ginv, GeodesicAcceleration (a = -Gamma^x_00 direct from metric), WeakFieldPotential to
+PhysicalObservables. G4-O30: Newtonian Phi=-GM/r gives a=-GM/r^2=-0.100 attractive with the SAME a=-Gamma
+convention; TQM rho=1+ax^2 (density MINIMUM at origin) gives a=-0.123 toward the minimum; TQM Gaussian
+(PEAK) gives a=+0.231 REPULSIVE. Sign FIXED by g_00=-rho^(2/d), not free. G4-O31: exact Phi=(rho^(2/d)-1)/2
+and linearized sigma give SAME sign (positive where rho>1, opposite Newton). G4-O32: a_geodesic = a_Phi
+exactly (diff<1e-9), Poisson Delta Phi+(1/2)rho R=0 (d=2) consistent, g_00=-1.053 != -1 (physical gauge).
+CLASSIFICATION: ROBUST — native acceleration is the genuine geodesic acceleration a=-Gamma^x_00=-(1/d)
+grad ln rho, pointing toward density MINIMA (repulsive around peaks, toward minima), opposite Newtonian
+gravity (toward mass). IMPORTANT CORRECTION: rho=1+ax^2 (used in G4-G) has a MINIMUM at origin so its
+field points inward; "repulsive" applies to PEAKS (Gaussian/NFW/shell). Report:
+Docs/Research/G4O_FalsificationAttempt.md.

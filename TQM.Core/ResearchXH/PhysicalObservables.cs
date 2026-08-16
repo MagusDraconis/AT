@@ -111,4 +111,28 @@ public static class PhysicalObservables
     /// <summary>Uniform sphere ρ = ρ₀ for |x| &lt; R, ρ = 1 outside (compact, uniform core).</summary>
     public static double UniformSphere(double x, double rho0 = 2.0, double R = 0.5)
         => Math.Abs(x) < R ? rho0 : 1.0;
+
+    // ── Direct geodesic extraction (falsification machinery) ───────────────────────────
+
+    /// <summary>Metric time-time component g_00 = −ρ^(2/d) (Lorentzian signature).</summary>
+    public static double MetricG00(double x, double a, int d) => -Math.Pow(1.0 + a * x * x, 2.0 / d);
+
+    /// <summary>Inverse spatial metric g^xx = ρ^(−2/d).</summary>
+    public static double MetricGinv(double x, double a, int d) => Math.Pow(1.0 + a * x * x, -2.0 / d);
+
+    /// <summary>
+    /// Geodesic acceleration DIRECTLY from the Christoffel symbol: a = −Γ^x_00 = −(1/2)g^xx ∂_x g_00.
+    /// For g_00 = −ρ^(2/d) this equals −(1/d)(ln ρ)′ — the repulsive (−∇σ) result.
+    /// </summary>
+    public static double GeodesicAcceleration(double x, double a, int d, double h = 1e-6)
+    {
+        double dg00 = (MetricG00(x + h, a, d) - MetricG00(x - h, a, d)) / (2.0 * h);
+        double ginv = MetricGinv(x, a, d);
+        double gamma = -0.5 * ginv * dg00;   // Γ^x_00
+        return -gamma;                        // a = −Γ^x_00
+    }
+
+    /// <summary>Exact weak-field potential Φ = (e^{2σ} − 1)/2 = (ρ^(2/d) − 1)/2.</summary>
+    public static double WeakFieldPotential(double x, double a, int d)
+        => 0.5 * (Math.Pow(1.0 + a * x * x, 2.0 / d) - 1.0);
 }

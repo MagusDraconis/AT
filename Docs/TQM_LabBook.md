@@ -399,6 +399,10 @@ Trilogy: QG-029 (attraction dominates) + QG-030 (no counter-structure) + QG-031 
 **Status:** Complete (ROBUST). Difference persists under realistic profiles (Gaussian/NFW/exponential/sphere/shell).
 - TQM repulsive at peaks + zero-field in uniform regions; pure-exponential → MOND-like constant a
 
+### G4-O3: Falsification Attempt (G4-O Phase 3)
+**Status:** Complete (ROBUST, not artifact). Native a = −Γ^x_00 = −(1/d)∇lnρ points toward density minima.
+- sign fixed by g_00=−ρ^(2/d), matches Newton convention; ρ=1+ax² has a minimum (field inward), peaks repulsive
+
 ---
 
 ## Overall Statistics
@@ -408,8 +412,8 @@ Trilogy: QG-029 (attraction dominates) + QG-030 (no counter-structure) + QG-031 
 | DATA | 10 | Complete |
 | QM | 5 | Complete |
 | QG | 31 | Complete |
-| G4 | 42 | Complete |
-| **Total** | **88** | |
+| G4 | 43 | Complete |
+| **Total** | **89** | |
 
 ## Key Unsolved Problems
 
