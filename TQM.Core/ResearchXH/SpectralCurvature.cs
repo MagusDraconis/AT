@@ -160,4 +160,31 @@ public static class SpectralCurvature
         }
         return d;
     }
+
+    /// <summary>
+    /// Diagonal (local) heat kernel of a symmetric operator: K_t(x_i) = Σ_k e^(−t λ_k) φ_k(x_i)².
+    /// A LOCAL spectral observable — its deviation from the flat value encodes the local scalar
+    /// curvature via the heat-kernel expansion K_t(x,x) ≈ (4πt)^(−d/2)(1 + (t/6)R(x) + …).
+    /// Requires the full eigendecomposition (eigenvalues AND eigenvectors).
+    /// </summary>
+    public static double[] LocalHeatKernel(double[,] matrix, double t)
+    {
+        var mat = Matrix<double>.Build.DenseOfArray(matrix);
+        var evd = mat.Evd(Symmetricity.Symmetric);
+        var lambdas = evd.EigenValues.Select(c => c.Real).ToArray();
+        var vecs = evd.EigenVectors; // columns are eigenvectors
+        int n = matrix.GetLength(0);
+        var k = new double[n];
+        for (int i = 0; i < n; i++)
+        {
+            double sum = 0.0;
+            for (int kk = 0; kk < n; kk++)
+            {
+                double v = vecs[i, kk];
+                sum += Math.Exp(-t * lambdas[kk]) * v * v;
+            }
+            k[i] = sum;
+        }
+        return k;
+    }
 }

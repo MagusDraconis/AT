@@ -7234,3 +7234,16 @@ SECONDARY (inverted, degenerating). CORRECTS Phase-0 attribution: the curvature 
 driven by Delta_g (heat trace encodes Int R_g via Weyl), NOT the potential V (~ -R inverted). Lc =
 -Delta_g + V with Delta_g dominant, V a subdominant sign-flipped correction; V's role is flagging
 metric degeneracy (a->-1). Report: Docs/Research/G4P_CurvaturePotentialAnalysis.md.
+
+**G4-D Phase 1 (Field Dynamics) — COMPLETED (3/3 tests pass; 6/6 G4-D verified):**
+Question: can local rho(x,t) generate local curvature R(x,t)? Added CurvatureField.cs (uniform-grid
+density field + local heat-kernel reconstruction) and SpectralCurvature.LocalHeatKernel (diagonal heat
+kernel K_t(x)=Sum e^{-t*lambda} phi(x)^2). Reconstructed local curvature R_hat(x) = (K_geo-K_flat)/K_flat
+from Lc = rho^-1 L rho^-1. Gaussian bump rho=1+0.5*e^{-(x/0.5)^2}: G4-D10 local map Pearson(R_hat,R_analytic)
+= 0.956, localized (center 1.03 vs tail 0.05), correct sign. G4-D11 moving bump: peak tracks x0(t),
+Pearson 0.995. G4-D12 field vs mean-field: local R_hat(center) CORRECT (+1, analytic R(0)>0) while global
+(mean-field) score INVERTED (-1.82) — the x^2-calibrated mean field misattributes a localized perturbation;
+refinement-stable (n=16->20 Pearson 0.996). CONCLUSION: native field-level curvature dynamics achieved:
+local rho -> local R (Pearson 0.96), propagation (0.995), stability (0.996); field resolves local sign the
+mean field inverts. No new primitives (rho, L, spectral decomposition only). Report:
+Docs/Research/G4D_FieldDynamics.md.

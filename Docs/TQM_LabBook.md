@@ -324,6 +324,11 @@ Trilogy: QG-029 (attraction dominates) + QG-030 (no counter-structure) + QG-031 
 - Phase 0: Lc = ρ⁻¹Lρ⁻¹ → −cΔ_g + c(Δρ/ρ²) (d=2); Δ_g is leading differential part (PARTIAL)
 - Phase 1: Δ_g recovers the correct sign (−/+), V = Δρ/ρ² is INVERTED (∝−R) + diverges near degeneracy
 
+### G4-D1: Field Dynamics (G4-D Phase 1)
+**Status:** Complete. Native field-level curvature dynamics via the local heat kernel.
+- Local ρ(x) → local R̂(x): Pearson 0.956 vs analytic; peak propagates (0.995); refinement-stable (0.996)
+- Field resolves the local sign the mean-field inverts (global score −1.82 vs local +1.03)
+
 ---
 
 ## Overall Statistics
@@ -333,8 +338,8 @@ Trilogy: QG-029 (attraction dominates) + QG-030 (no counter-structure) + QG-031 
 | DATA | 10 | Complete |
 | QM | 5 | Complete |
 | QG | 31 | Complete |
-| G4 | 26 | Complete |
-| **Total** | **72** | |
+| G4 | 27 | Complete |
+| **Total** | **73** | |
 
 ## Key Unsolved Problems
 
