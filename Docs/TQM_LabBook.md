@@ -303,6 +303,12 @@ Trilogy: QG-029 (attraction dominates) + QG-030 (no counter-structure) + QG-031 
 - A3 (past full, future 1/(k+1)): leakage 0.759→0.669, indefinite (31+/41−), refinement-stable
 - A1 (pure lower-tri) reduces most (0.569) but is nilpotent; A2 no effect; A4 marginal (0.750)
 
+### G4-L7: Native Diagonal (G4-L Phase 7)
+**Status:** Complete. A native diagonal self-term pushes the Feynman tail below 0.50.
+- H0 = R1 + A3 baseline 0.548; negated local-degree diagonal → 0.428 (< 0.50), dir 0.879,
+  indefinite + alternating + refinement-stable
+- All 5 causal diagonals reach < 0.50; BDG's own −2 (=−degree/2) overshoots (0.734)
+
 ---
 
 ## Overall Statistics
@@ -312,8 +318,8 @@ Trilogy: QG-029 (attraction dominates) + QG-030 (no counter-structure) + QG-031 
 | DATA | 10 | Complete |
 | QM | 5 | Complete |
 | QG | 31 | Complete |
-| G4 | 22 | Complete |
-| **Total** | **68** | |
+| G4 | 23 | Complete |
+| **Total** | **69** | |
 
 ## Key Unsolved Problems
 

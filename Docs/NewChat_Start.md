@@ -7155,3 +7155,18 @@ Malament). VERDICT: metric->operator gap MOSTLY CLOSED — Riemannian sector CLO
 sector MOSTLY SOLVED (was OPEN); original blocker "operator is imported" RESOLVED; only remaining
 import is the BDG diagonal coefficient closing the Feynman tail into a fully causal propagator.
 Report: Docs/Research/G4_Final_Reassessment.md.
+
+**G4-L Phase 7 (Native Diagonal) — COMPLETED (3/3 tests pass; all 24 G4-L re-verified):**
+Question: can the BDG-like diagonal emerge from causal structure alone? Added IntervalCount,
+LayerOccupancy, CausalVolume, RetardedInterval (H0 = R1 + A3) to LorentzianOperator. H0 baseline
+leak 0.548. Tested negated diagonals D1 degree, D2 interval-count, D3 comparable, D4 occupancy,
+D5 causal volume on H0. Natural forms: D1 0.598, D2 0.503, D4 occupancy 0.488 (<0.50), D3 0.322
+and D5 0.073 kill indefiniteness. Strength sweep: ALL 5 reach <0.50 preserving structure — D1
+degree BEST at s=0.75 -> leak 0.428 (dir 0.879, indefinite, alternating, KS 0.2639), D2 0.442,
+D4 0.460, D5 0.440, D3 0.481. Refinement-stable (N=72 0.428 -> N=110 0.443). KEY: importing BDG's
+own -2 (=-degree/2) OVERSHOOTS (leak 0.734 worse than baseline) — the native +/-1 coupling needs a
+smaller native-calibrated self-term; over-suppression (comparable/volume) kills indefiniteness.
+CONCLUSION: YES — H = R1 + A3 + D with negated local-degree diagonal suppresses the Feynman tail
+to 0.428 (<0.50) while preserving retarded/indefinite/alternating; diagonal is native, only its
+strength is calibrated. Code: TQM.Tests/ResearchXH/G4L_Phase7_NativeDiagonalTests.cs (G4-L70/71/72);
+report: Docs/Research/G4L_Phase7_NativeDiagonal.md.

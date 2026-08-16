@@ -230,6 +230,65 @@ public static class LorentzianOperator
         return d;
     }
 
+    /// <summary>
+    /// D2 — interval count: sum over comparable j of 1/(k+1) (near-layer weighted cardinality).
+    /// Emphasises the immediate causal layers (links weight 1, next layer 1/2, …).
+    /// </summary>
+    public static double[] IntervalCount(CausalSetData cs)
+    {
+        var c = new double[cs.Count];
+        for (int i = 0; i < cs.Count; i++)
+            for (int j = 0; j < cs.Count; j++)
+            {
+                int k;
+                if (cs.Order[i, j]) k = cs.Interval[i, j];
+                else if (cs.Order[j, i]) k = cs.Interval[j, i];
+                else continue;
+                c[i] += 1.0 / (k + 1.0);
+            }
+        return c;
+    }
+
+    /// <summary>
+    /// D4 — layer occupancy: number of events on the same time slice (simultaneous layer) as i.
+    /// Degenerate (constant) on a uniform grid — reported as such.
+    /// </summary>
+    public static double[] LayerOccupancy(CausalSetData cs)
+    {
+        var c = new double[cs.Count];
+        for (int i = 0; i < cs.Count; i++)
+            for (int j = 0; j < cs.Count; j++)
+                if (cs.Time[j] == cs.Time[i]) c[i]++;
+        return c;
+    }
+
+    /// <summary>
+    /// D5 — causal volume: sum over comparable j of (k+1) (interval size + 1). Emphasises the
+    /// full causal-interval volume through i (far layers weighted more).
+    /// </summary>
+    public static double[] CausalVolume(CausalSetData cs)
+    {
+        var c = new double[cs.Count];
+        for (int i = 0; i < cs.Count; i++)
+            for (int j = 0; j < cs.Count; j++)
+            {
+                int k;
+                if (cs.Order[i, j]) k = cs.Interval[i, j];
+                else if (cs.Order[j, i]) k = cs.Interval[j, i];
+                else continue;
+                c[i] += k + 1.0;
+            }
+        return c;
+    }
+
+    /// <summary>
+    /// H0 — retarded interval operator: R1 + A3. Doubles the past (retarded) alternation and
+    /// keeps only the interval-decayed future (symmetric remnant) alternation. The Phase-7
+    /// base onto which a native diagonal self-term is added.
+    /// </summary>
+    public static double[,] RetardedInterval(CausalSetData cs)
+        => Add(PastDirectedLayer(cs), IntervalWeightedAlternation(cs));
+
     /// <summary>Add a per-vertex diagonal d to a square matrix (returns a copy).</summary>
     public static double[,] AddDiagonal(double[,] m, double[] d)
     {
