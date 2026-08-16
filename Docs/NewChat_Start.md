@@ -7434,3 +7434,15 @@ grad ln rho, pointing toward density MINIMA (repulsive around peaks, toward mini
 gravity (toward mass). IMPORTANT CORRECTION: rho=1+ax^2 (used in G4-G) has a MINIMUM at origin so its
 field points inward; "repulsive" applies to PEAKS (Gaussian/NFW/shell). Report:
 Docs/Research/G4O_FalsificationAttempt.md.
+
+**G4-O Phase 4 (Rho Interpretation Audit) — COMPLETED (3/3 tests pass; 15/15 G4-O verified):**
+Question: is rho matter/actualization/event/conformal density, and is the repulsive prediction a
+misidentification? G4-O40: peak a=+0.231 repulsive, minimum a=-0.124 toward-min, vacuum a=0 (localized
+log-density gradient). G4-O41: raw rho (matter a=-int rho) ATTRACTIVE -0.525 vs ln rho (conformal
+a=-grad ln rho) REPULSIVE +0.231 vs grad rho +0.751 — matter and conformal DISAGREE. G4-O42: rho =
+counting measure = event/actualization density (G4-F), the VOLUME element (sqrt(g)=rho), forcing conformal
+factor f=rho^(2/d) (positive power). CLASSIFICATION: repulsive prediction is GENUINE (conformal/scale-factor
+physics), NOT matter anti-gravity — rho is NOT matter; it acts as the conformal factor, so test particles
+accelerate toward LOWER-actualization regions (expansive anti-screening). A Newtonian attractive matter
+sector needs a SEPARATE density primitive (not imported; G4-G4 has no independent matter). Report:
+Docs/Research/G4O_RhoInterpretationAudit.md.

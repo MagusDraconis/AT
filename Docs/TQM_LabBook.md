@@ -403,6 +403,10 @@ Trilogy: QG-029 (attraction dominates) + QG-030 (no counter-structure) + QG-031 
 **Status:** Complete (ROBUST, not artifact). Native a = −Γ^x_00 = −(1/d)∇lnρ points toward density minima.
 - sign fixed by g_00=−ρ^(2/d), matches Newton convention; ρ=1+ax² has a minimum (field inward), peaks repulsive
 
+### G4-O4: ρ Interpretation Audit (G4-O Phase 4)
+**Status:** Complete (GENUINE). ρ = counting measure = conformal factor (f=ρ^(2/d)), NOT matter.
+- repulsion is the expansive effect of the conformal factor; matter sector needs a separate primitive
+
 ---
 
 ## Overall Statistics
@@ -412,8 +416,8 @@ Trilogy: QG-029 (attraction dominates) + QG-030 (no counter-structure) + QG-031 
 | DATA | 10 | Complete |
 | QM | 5 | Complete |
 | QG | 31 | Complete |
-| G4 | 43 | Complete |
-| **Total** | **89** | |
+| G4 | 44 | Complete |
+| **Total** | **90** | |
 
 ## Key Unsolved Problems
 
