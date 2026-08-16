@@ -65,4 +65,32 @@ public static class HigherDimEinstein
         double go = EinsteinOther(x, a, d);
         return Math.Pow(Rho(x, a), -2.0 / d) * (g11p + (d - 3.0) * sp * g11 - (d - 1.0) * sp * go);
     }
+
+    // ── Direct reconstruction from ρ, ρ′, ρ″ (no intermediate metric/σ objects) ────────
+
+    /// <summary>
+    /// Direct Einstein x-component from ρ and ρ′ alone: G_11 = (d−1)(d−2)/(2d²)·(ρ′/ρ)².
+    /// Uses only the counting measure and its first derivative — no metric, no conformal exponent.
+    /// </summary>
+    public static double DirectEinstein11(double rho, double rhoPrime, int d)
+    {
+        double r = rhoPrime / rho;
+        return 0.5 * (d - 1.0) * (d - 2.0) * r * r / (d * d);
+    }
+
+    /// <summary>
+    /// Direct Einstein transverse component from ρ, ρ′, ρ″:
+    /// G_ii = (d−2)/d·(ρ″/ρ) − (d−2)(d+3)/(2d²)·(ρ′/ρ)².
+    /// </summary>
+    public static double DirectEinsteinOther(double rho, double rhoPrime, double rhoSecond, int d)
+    {
+        double r = rhoPrime / rho;
+        return (d - 2.0) / d * (rhoSecond / rho) - 0.5 * (d - 2.0) * (d + 3.0) * r * r / (d * d);
+    }
+
+    /// <summary>Analytic ρ′ = 2ax.</summary>
+    public static double RhoPrime(double x, double a) => 2.0 * a * x;
+
+    /// <summary>Analytic ρ″ = 2a.</summary>
+    public static double RhoSecond(double x, double a) => 2.0 * a;
 }

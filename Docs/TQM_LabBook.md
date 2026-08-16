@@ -373,6 +373,11 @@ Trilogy: QG-029 (attraction dominates) + QG-030 (no counter-structure) + QG-031 
 **Status:** Complete. First non-trivial Einstein-like tensor appears at d=3.
 - G_11=((d−1)(d−2)/2)(σ′)², G_ii=(d−2)[σ″+((d−3)/2)(σ′)²]; symmetric, trace −(d−2)R/2, divergence-free
 
+### G4-G2: ρ → Einstein (G4-G Phase 2)
+**Status:** Complete. G_μν fully encoded in ρ's local derivatives.
+- G_11=(d−1)(d−2)/(2d²)(ρ′/ρ)², G_ii=(d−2)/d·(ρ″/ρ)−(d−2)(d+3)/(2d²)(ρ′/ρ)²; no metric/σ needed
+- direct ≡ metric-based <1e−12; refinement-stable; dimension-generic
+
 ---
 
 ## Overall Statistics
@@ -382,8 +387,8 @@ Trilogy: QG-029 (attraction dominates) + QG-030 (no counter-structure) + QG-031 
 | DATA | 10 | Complete |
 | QM | 5 | Complete |
 | QG | 31 | Complete |
-| G4 | 36 | Complete |
-| **Total** | **82** | |
+| G4 | 37 | Complete |
+| **Total** | **83** | |
 
 ## Key Unsolved Problems
 

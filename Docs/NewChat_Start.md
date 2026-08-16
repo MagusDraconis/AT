@@ -7352,3 +7352,13 @@ For g = rho^(2/d)*eta, x-only rho=1+a x^2: G_11 = ((d-1)(d-2)/2)(sigma')^2, G_ii
 div G = 0 (max < 1e-8). CONCLUSION: first non-trivial Einstein-like tensor appears at d=3, persists at
 d=4 — symmetric, trace-structured, divergence-free (the conservation law identifying G), built natively
 from rho's derivatives. Recovers G4-G0 (G=0) in d=2. Report: Docs/Research/G4G_Phase1_3D4D_EinsteinStructure.md.
+
+**G4-G Phase 2 (rho -> Einstein) — COMPLETED (3/3 tests pass; 9/9 G4-G verified):**
+Question: is G_uv fully encoded in rho (no intermediate metric objects)? Substituting sigma=(1/d)ln rho
+gives DIRECT reconstruction: G_11 = (d-1)(d-2)/(2d^2)*(rho'/rho)^2, G_ii = (d-2)/d*(rho''/rho) -
+(d-2)(d+3)/(2d^2)*(rho'/rho)^2 — pure function of rho, drho, d^2rho. G4-G20: direct == metric-based to
+<1e-12 for d=2,3,4 (exact algebraic agreement). G4-G21: finite-difference reconstruction (non-quadratic
+rho=1+0.5x^4) converges to analytic G under h->0 (refinement-stable). G4-G22: dimension-generic — trace
+=-(d-2)R/2 and non-triviality hold for d=2..6, d=2 degenerate. CONCLUSION: Einstein structure is FULLY
+encoded in rho's local derivatives — no metric, no Christoffel, no GR import. The decisive native result
+of G4-G. Report: Docs/Research/G4G_RhoToEinstein.md.
