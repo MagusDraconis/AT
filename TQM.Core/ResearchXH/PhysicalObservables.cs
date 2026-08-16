@@ -135,4 +135,13 @@ public static class PhysicalObservables
     /// <summary>Exact weak-field potential Φ = (e^{2σ} − 1)/2 = (ρ^(2/d) − 1)/2.</summary>
     public static double WeakFieldPotential(double x, double a, int d)
         => 0.5 * (Math.Pow(1.0 + a * x * x, 2.0 / d) - 1.0);
+
+    // ── Matter-emergence machinery (deficit / abundance structures) ───────────────────
+
+    /// <summary>Void (density minimum) profile ρ = 1 − A·e^(−(x/σ)²).</summary>
+    public static double Void(double x, double A = 0.5, double sigma = 0.3)
+        => 1.0 - A * Math.Exp(-(x * x) / (sigma * sigma));
+
+    /// <summary>Derived matter density m = ρ̄ − ρ (the density DEFICIT; positive in voids, negative in peaks).</summary>
+    public static double MatterDensity(double rho, double rhoBar = 1.0) => rhoBar - rho;
 }

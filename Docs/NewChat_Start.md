@@ -7457,3 +7457,15 @@ A) repulsion is a REAL TQM prediction (direct geodesic equation, not a map), AND
 counting) is the CONFORMAL factor, NOT matter — Newtonian attraction needs a separate matter primitive
 (absent per G4-G4). The observable acceleration is correctly identified; TQM gravity is expansive
 anti-screening, not matter attraction. Report: Docs/Research/G4O_ObservableBridgeAudit.md.
+
+**G4-ME Phase 0 (Matter Emergence Audit) — COMPLETED (3/3 tests pass):**
+Question: is observable matter identical to rho, or a derived structure? KEY RESOLUTION: define the
+derived matter density m = rho-bar - rho (the density DEFICIT, positive in voids, negative in peaks).
+Then a = -(1/d) grad ln rho = -(1/d)(grad rho/rho) = +(1/d)(grad m/rho) ~ +grad m, which points TOWARD
+m>0 (matter) — ATTRACTIVE. G4-ME00: rho-peak (m=-0.085) repulsive a=+0.231; rho-void (m=+0.085) attractive
+a=-0.274. G4-ME01: void Int m dV = +0.266 positive abundance, peak -0.266 negative (conserved deficit).
+G4-ME02: rho REAL-UNDERIVED (counting primitive), matter DERIVED (deficit excitation). CONCLUSION: matter
+is NOT rho — it is the derived DEFICIT m=rho-bar-rho; the repulsion was an artifact of identifying matter
+with rho. Picture: rho-EXCESS (peaks)=repulsive dark-energy sector; rho-DEFICIT (voids)=attractive matter
+sector. Same conformal geodesics, different derived structure. Resolves G4-O tension natively. Report:
+Docs/Research/G4ME_MatterEmergenceAudit.md.

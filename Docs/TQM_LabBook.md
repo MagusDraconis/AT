@@ -411,6 +411,10 @@ Trilogy: QG-029 (attraction dominates) + QG-030 (no counter-structure) + QG-031 
 **Status:** Complete (A+C). a=−(1/d)∇lnρ is the genuine geodesic acceleration; ρ ≠ matter.
 - particle physically moves repulsively (numerical geodesic); ρ is conformal factor, not matter
 
+### G4-ME0: Matter Emergence Audit (G4-ME Phase 0)
+**Status:** Complete. Matter = derived deficit m=ρ̄−ρ, NOT ρ — resolves the repulsion.
+- a = +(1/d)∇m/ρ is attractive toward matter (voids); ρ-excess repulsive (dark-energy), ρ-deficit attractive (matter)
+
 ---
 
 ## Overall Statistics
@@ -420,8 +424,8 @@ Trilogy: QG-029 (attraction dominates) + QG-030 (no counter-structure) + QG-031 
 | DATA | 10 | Complete |
 | QM | 5 | Complete |
 | QG | 31 | Complete |
-| G4 | 45 | Complete |
-| **Total** | **91** | |
+| G4 | 46 | Complete |
+| **Total** | **92** | |
 
 ## Key Unsolved Problems
 
