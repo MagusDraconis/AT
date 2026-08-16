@@ -7029,3 +7029,16 @@ R=F(rho), F'<0, feedback anti-diffusive + stabilizable; full field dynamics OPEN
 Meaning of rho SOLVED (event density/rate, 0 new primitives). (6) Remaining: Lorentzian BDG,
 absolute magnitude, field dynamics, analytic continuum proof, diffusion-generator closure,
 (optional) native Malament. Report: Docs/Research/G4_Reassessment.md.
+
+**G4-F Phase 1 (Riemannian Reassessment) — COMPLETED (synthesis, no new tests):**
+Question: does TQM now contain a native Riemannian geometry program? Classified the chain
+Q-events -> rho -> conformal factor -> Lc -> curvature -> dynamics -> restoring as DERIVED /
+REAL-UNDERIVED / OPEN. Chain is DERIVED end-to-end at the structure level: Q-events
+REAL-UNDERIVED (primitive); rho DERIVED (counting measure); f=rho^(2/d) DERIVED; Lc=rho^-1 L
+rho^-1 DERIVED (construction; analytic proof OPEN); curvature reconstruction DERIVED
+(sign+ordering; magnitude OPEN); dynamics DERIVED (mean-field; field OPEN); restoring DERIVED.
+Remains imported: conformal CLASS (Malament, proven theorem), Delta_g BENCHMARK (validation
+only), BDG weights (Lorentzian). Changed vs v1.0: operator now NATIVE (was imported weighted
+Laplacian L_W); operator->coupling gap MOSTLY CLOSED. VERDICT: YES — native Riemannian geometry
+program exists (conformally-flat sector); original G4 blocker MOSTLY CLOSED. Report:
+Docs/Research/G4F1_RiemannianReassessment.md.
