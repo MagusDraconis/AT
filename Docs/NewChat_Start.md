@@ -7506,3 +7506,16 @@ staircase m=m0*(K-k)/K matches log deficit (<=14% inner octaves), vanishes beyon
 (depends only on m0, Rmax, r0, not void spacing lambda). CLASSIFICATION: PLAUSIBLE/MATCH — galaxy-scale profiles
 reproducible: power-law -> Keplerian, log-deficit -> flat rotation curve (the dark-matter signature) + halo M~r,
 NO dark-matter sector. Report: Docs/Research/G4ME_AstrophysicalProfiles.md.
+
+**G4-ME Phase 4 (Reality Check) — COMPLETED (3/3 tests pass; 15/15 G4-ME verified):**
+Question: does the flat-rotation-curve hierarchy emerge naturally or is it tuned? Added AbundanceDeficit
+(power-law family m ~ r^-alpha, alpha=0 -> log) to DeficitCollective. G4-ME40: rotation-curve ratio v^2(3)/v^2(9)
+= 3^alpha (alpha=0: 1.18 flat, 0.25:1.49, 0.5:1.90, 1.0:3.15 Keplerian, 2.0:9.09) — flat curve is EXACTLY the
+marginal alpha=0 (log) member, boundary between falling (alpha>0) and rising (alpha<0). G4-ME41: log deficit has
+CONSTANT per-octave increment m(r)-m(2r)=0.0926 (spread<1e-6, = m0*ln2/ln20); power-law increment decays 6x — log
+is the UNIQUE scale-invariant (self-similar) profile (its gradient a~1/r is the only scale-free radial field).
+G4-ME42: self-similar growth (equal increment m0/K per octave) accumulates to staircase m=m0(K-k)/K ~ ln(Rmax/r),
+matching discrete hierarchy exactly and log envelope <=14%. CLASSIFICATION: SEMI-NATURAL — log deficit is the
+UNIQUE scale-invariant profile (natural constant-per-octave growth, no fine-tuning), but it is the MARGINAL alpha=0
+member of the self-similar family; dynamic selection of alpha=0 is a symmetry assumption, not a derived attractor.
+Free params m0, Rmax = total mass/size (also free in GR). Report: Docs/Research/G4ME_RealityCheck.md.

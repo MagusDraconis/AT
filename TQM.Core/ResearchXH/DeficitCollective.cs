@@ -107,6 +107,21 @@ public static class DeficitCollective
         return rhoBar; // beyond Rmax = r0·λ^K
     }
 
+    /// <summary>
+    /// Power-law abundance deficit m(r) = m₀·(r^(−α) − Rmax^(−α))/(r₀^(−α) − Rmax^(−α)); α=0 → LogDeficit.
+    /// The scaling exponent α is the per-octave amplitude law: m ∝ r^(−α) for α≠0, m ∝ ln(Rmax/r) for α=0.
+    /// </summary>
+    public static double AbundanceDeficit(double r, double alpha, double rhoBar = 1.0, double m0 = 0.4,
+        double r0 = 0.5, double Rmax = 10.0)
+    {
+        double m;
+        if (Math.Abs(alpha) < 1e-9)
+            m = m0 * Math.Log(Rmax / r) / Math.Log(Rmax / r0);
+        else
+            m = m0 * (Math.Pow(r, -alpha) - Math.Pow(Rmax, -alpha)) / (Math.Pow(r0, -alpha) - Math.Pow(Rmax, -alpha));
+        return rhoBar - m;
+    }
+
     /// <summary>Least-squares linear fit of log y vs log x (power-law y ∝ x^slope); returns (slope, intercept).</summary>
     public static (double slope, double intercept) LogLogFit(double[] xs, double[] ys)
     {

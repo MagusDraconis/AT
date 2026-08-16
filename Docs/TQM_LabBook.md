@@ -427,6 +427,10 @@ Trilogy: QG-029 (attraction dominates) + QG-030 (no counter-structure) + QG-031 
 **Status:** Complete (PLAUSIBLE/MATCH). Galaxy-scale profiles reproducible from deficit hierarchies.
 - power-law deficit → Keplerian v² ∝ 1/r (point mass); log-deficit (constant deficit/octave) → flat rotation curve + halo M_eff ∝ r, no dark-matter sector
 
+### G4-ME4: Reality Check (G4-ME Phase 4)
+**Status:** Complete (SEMI-NATURAL). Flat-rotation-curve hierarchy is the unique scale-invariant profile, not a tuned ansatz.
+- log deficit m ∝ ln(Rmax/r) = marginal α=0 member of m ∝ r^(−α); constant per-octave increment (self-similar); selection of α=0 is a symmetry assumption, not derived
+
 ---
 
 ## Overall Statistics
@@ -436,8 +440,8 @@ Trilogy: QG-029 (attraction dominates) + QG-030 (no counter-structure) + QG-031 
 | DATA | 10 | Complete |
 | QM | 5 | Complete |
 | QG | 31 | Complete |
-| G4 | 49 | Complete |
-| **Total** | **95** | |
+| G4 | 50 | Complete |
+| **Total** | **96** | |
 
 ## Key Unsolved Problems
 
