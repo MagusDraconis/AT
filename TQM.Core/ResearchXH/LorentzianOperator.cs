@@ -201,6 +201,44 @@ public static class LorentzianOperator
         return rho;
     }
 
+    /// <summary>Number of events comparable to i (causal density over the full order).</summary>
+    public static int[] ComparableCount(CausalSetData cs)
+    {
+        var c = new int[cs.Count];
+        for (int i = 0; i < cs.Count; i++)
+            for (int j = 0; j < cs.Count; j++)
+                if (cs.Order[i, j] || cs.Order[j, i]) c[i]++;
+        return c;
+    }
+
+    /// <summary>Number of events in the causal past of i (layer-count self-term source).</summary>
+    public static int[] PastCount(CausalSetData cs)
+    {
+        var c = new int[cs.Count];
+        for (int i = 0; i < cs.Count; i++)
+            for (int j = 0; j < cs.Count; j++)
+                if (cs.Order[j, i]) c[i]++;
+        return c;
+    }
+
+    /// <summary>Local link degree of i (past + future Hasse links).</summary>
+    public static int[] LocalDegree(CausalSetData cs)
+    {
+        var d = new int[cs.Count];
+        for (int i = 0; i < cs.Count; i++)
+            d[i] = cs.PastDegree[i] + cs.FutureDegree[i];
+        return d;
+    }
+
+    /// <summary>Add a per-vertex diagonal d to a square matrix (returns a copy).</summary>
+    public static double[,] AddDiagonal(double[,] m, double[] d)
+    {
+        int n = m.GetLength(0);
+        var r = (double[,])m.Clone();
+        for (int i = 0; i < n; i++) r[i, i] += d[i];
+        return r;
+    }
+
     /// <summary>Matrix addition.</summary>
     public static double[,] Add(double[,] a, double[,] b)
     {
@@ -257,6 +295,36 @@ public static class LorentzianOperator
             // singular — fall through to pseudoinverse
         }
         return (m.PseudoInverse() * e).ToArray();
+    }
+
+    /// <summary>
+    /// Measures a Green response relative to a source at (tc, xc): past/future support, causal
+    /// front velocity (within the light cone |Δx| &lt; Δt), and spacelike leakage (response
+    /// outside the causal future, as a fraction of the total).
+    /// </summary>
+    public static (double past, double future, double causalFront, double leak) GreenResponseMetrics(
+        CausalSetData cs, double[] resp, int tc, int xc)
+    {
+        double maxAbs = resp.Max(x => Math.Abs(x));
+        double thresh = 1e-9 * Math.Max(maxAbs, 1.0);
+        double past = 0.0, future = 0.0, causalFront = 0.0, leak = 0.0, total = 0.0;
+        for (int j = 0; j < cs.Count; j++)
+        {
+            double a = Math.Abs(resp[j]);
+            if (a < thresh) continue;
+            total += a;
+            int dt = cs.Time[j] - tc;
+            int dx = Math.Abs(cs.Space[j] - xc);
+            if (dt < 0) { past += a; leak += a; }
+            else if (dt == 0) { if (dx > 0) leak += a; }
+            else
+            {
+                future += a;
+                if (dx < dt) causalFront = Math.Max(causalFront, dx / (double)dt);
+                else leak += a;
+            }
+        }
+        return (past, future, causalFront, total > 0.0 ? leak / total : 0.0);
     }
 
     /// <summary>

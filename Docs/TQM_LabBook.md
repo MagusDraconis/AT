@@ -292,6 +292,12 @@ Trilogy: QG-029 (attraction dominates) + QG-030 (no counter-structure) + QG-031 
 - SC2/SC3/SC4 pass; SC1 partial — H2 has a ~73% Feynman tail (R1 nilpotent, no diagonal)
 - Corrected retarded/advanced indexing convention (Phases 2-3 re-verified)
 
+### G4-L5: Diagonal Self-Term Study (G4-L Phase 5)
+**Status:** Complete. Local-degree diagonal reduces the Feynman tail natively.
+- D4 degree: leakage 0.759→0.697, retardation 0.626→0.703, preserves indefiniteness/alternation
+- D2 comparable-count suppresses most (0.473) but kills indefiniteness; constant diagonal negligible
+- Residual tail (~73%) is intrinsic to the symmetric off-diagonal L3
+
 ---
 
 ## Overall Statistics
@@ -301,8 +307,8 @@ Trilogy: QG-029 (attraction dominates) + QG-030 (no counter-structure) + QG-031 
 | DATA | 10 | Complete |
 | QM | 5 | Complete |
 | QG | 31 | Complete |
-| G4 | 20 | Complete |
-| **Total** | **66** | |
+| G4 | 21 | Complete |
+| **Total** | **67** | |
 
 ## Key Unsolved Problems
 

@@ -7112,3 +7112,18 @@ propagator has a Feynman tail (~73%) because R1 is nilpotent (no diagonal self-t
 causality needs the diagonal (BDG's -2 coefficient, which is forbidden here). Code:
 TQM.Tests/ResearchXH/G4L_Phase4_WavePropagationTests.cs (G4-L40/41/42); report:
 Docs/Research/G4L_Phase4_WavePropagation.md.
+
+**G4-L Phase 5 (Diagonal Self-Term Study) — COMPLETED (3/3 tests pass):**
+Question: can a native diagonal suppress the Feynman tail without BDG coefficients? Added
+ComparableCount, PastCount, LocalDegree, AddDiagonal, GreenResponseMetrics to LorentzianOperator.
+Tested D1 constant(-1), D2 comparable-count, D3 past-count, D4 degree diagonals on H2=R1+L3
+(baseline leakage 0.759, direction 0.626, indefinite, KS 0.1389). G4-L50: D2 comparable reduces
+leakage most (0.473) but kills indefiniteness; D4 degree reduces to 0.697; D1 no change (0.759);
+D3 worse (0.890). G4-L51: D4 degree is the SUCCESS — leak-reduced (0.697<0.759), retarded
+(0.703>0.5, MORE retarded than H2), indefinite, alternating (KS worsens 0.3056); D2 over-
+suppresses (indefinite False). G4-L52: constant sweep s=0..8 never below 0.717 (marginal);
+refinement N=72->110 stable. CONCLUSION: YES — native LOCAL-DEGREE diagonal (D4) reduces the
+Feynman tail while preserving retardation/indefiniteness/alternation; but only ~8% (residual tail
+is intrinsic to the symmetric off-diagonal L3). Code:
+TQM.Tests/ResearchXH/G4L_Phase5_DiagonalTermStudyTests.cs (G4-L50/51/52); report:
+Docs/Research/G4L_Phase5_DiagonalTermStudy.md.
