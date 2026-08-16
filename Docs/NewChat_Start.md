@@ -7222,3 +7222,15 @@ rho=1+a x^2, V(0)=2ac = -(c/2)R(0) — curvature-proportional. d!=2: FAILED (wro
 IMPLICATION: explains G4-C empirically (sign separation driven by the Delta rho/rho^2 potential, not
 bare Delta_g); the metric->operator correspondence is Delta_g + native curvature potential. Next:
 G4-P Phase 1 numeric confirmation. Report: Docs/Research/G4P_AnalyticContinuumProof.md.
+
+**G4-P Phase 1 (Curvature Potential Analysis) — COMPLETED (3/3 tests pass; 18 G4-C+G4-P verified):**
+Question: which term of Lc = -Delta_g + V (V = Delta rho/rho^2) produces the curvature reconstruction?
+Added CurvaturePotential.cs (term decomposition + ScoreRobust guard). Measured sign/ordering/refinement
+per term. SIGN: Delta_g only CORRECT (neg -24.4, pos +49.5); V only INVERTED (neg +0.67, pos -1202.7,
+V ~ -R); Full Lc correct (neg -3.24, pos +4.34). ORDERING: Lc monotonic; Delta_g near-monotonic (one
+near-flat hiccup); V decreasing+diverging (-> -1202 as a->-1). REFINEMENT: Delta_g stable (49.5->39.2),
+V diverging (1202->15343), Lc stable. CLASSIFICATION: Delta_g DOMINANT (correct sign driver), V
+SECONDARY (inverted, degenerating). CORRECTS Phase-0 attribution: the curvature reconstruction is
+driven by Delta_g (heat trace encodes Int R_g via Weyl), NOT the potential V (~ -R inverted). Lc =
+-Delta_g + V with Delta_g dominant, V a subdominant sign-flipped correction; V's role is flagging
+metric degeneracy (a->-1). Report: Docs/Research/G4P_CurvaturePotentialAnalysis.md.

@@ -319,6 +319,11 @@ Trilogy: QG-029 (attraction dominates) + QG-030 (no counter-structure) + QG-031 
 - S = H2+D (signature, indefinite 27+/45−, leak 0.770); G = D+2R1 (retarded, leak 0.082, dir 1.0)
 - S = G + R2 exact; the pair jointly satisfies causality (G) + signature (S)
 
+### G4-P: Analytic Continuum + Curvature Potential (G4-P Phases 0–1)
+**Status:** Complete. Lc = −Δ_g + V analytically derived; Δ_g is the DOMINANT curvature driver.
+- Phase 0: Lc = ρ⁻¹Lρ⁻¹ → −cΔ_g + c(Δρ/ρ²) (d=2); Δ_g is leading differential part (PARTIAL)
+- Phase 1: Δ_g recovers the correct sign (−/+), V = Δρ/ρ² is INVERTED (∝−R) + diverges near degeneracy
+
 ---
 
 ## Overall Statistics
@@ -328,8 +333,8 @@ Trilogy: QG-029 (attraction dominates) + QG-030 (no counter-structure) + QG-031 
 | DATA | 10 | Complete |
 | QM | 5 | Complete |
 | QG | 31 | Complete |
-| G4 | 25 | Complete |
-| **Total** | **71** | |
+| G4 | 26 | Complete |
+| **Total** | **72** | |
 
 ## Key Unsolved Problems
 

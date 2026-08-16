@@ -10,23 +10,49 @@ namespace TQM.Core.ResearchXH;
 public static class CurvatureReconstruction
 {
     public static double Score(GeometricGraph flat, GeometricGraph geometry)
-    {
-        double[] ef = ConformalOperator.Eigenvalues(flat, ConformalOperatorKind.RhoInverseSquared);
-        double[] eg = ConformalOperator.Eigenvalues(geometry, ConformalOperatorKind.RhoInverseSquared);
+        => Score(
+            ConformalOperator.Eigenvalues(flat, ConformalOperatorKind.RhoInverseSquared),
+            ConformalOperator.Eigenvalues(geometry, ConformalOperatorKind.RhoInverseSquared));
 
-        double gapF = SpectralCurvature.SpectralGap(ef);
-        double gapG = SpectralCurvature.SpectralGap(eg);
-        double zF = SpectralCurvature.HeatTrace(ef, 1.0);
-        double zG = SpectralCurvature.HeatTrace(eg, 1.0);
-        double zetaF = SpectralCurvature.SpectralZeta(ef, 2.0);
-        double zetaG = SpectralCurvature.SpectralZeta(eg, 2.0);
-        double entF = SpectralCurvature.SpectralEntropy(ef, 1.0);
-        double entG = SpectralCurvature.SpectralEntropy(eg, 1.0);
+    /// <summary>Curvature score from two (ascending) eigenvalue spectra.</summary>
+    public static double Score(double[] eFlat, double[] eGeo)
+    {
+        double gapF = SpectralCurvature.SpectralGap(eFlat);
+        double gapG = SpectralCurvature.SpectralGap(eGeo);
+        double zF = SpectralCurvature.HeatTrace(eFlat, 1.0);
+        double zG = SpectralCurvature.HeatTrace(eGeo, 1.0);
+        double zetaF = SpectralCurvature.SpectralZeta(eFlat, 2.0);
+        double zetaG = SpectralCurvature.SpectralZeta(eGeo, 2.0);
+        double entF = SpectralCurvature.SpectralEntropy(eFlat, 1.0);
+        double entG = SpectralCurvature.SpectralEntropy(eGeo, 1.0);
 
         // Each term has sign = sign(R):  + ⇒ positive curvature, − ⇒ negative curvature.
         double dGap = (gapG - gapF) / gapF;
         double dZ = (zF - zG) / zF;
         double dZeta = (zetaF - zetaG) / zetaF;
+        double dEnt = (entF - entG) / entF;
+        return dGap + dZ + dZeta + dEnt;
+    }
+
+    /// <summary>
+    /// Robust curvature score: identical to Score but guards against ill-defined observables
+    /// (the spectral gap and ζ(2) of a sign-definite/zero spectrum, e.g. the pure potential
+    /// term V = Δρ/ρ²). Such terms are dropped rather than poisoning the score with NaN.
+    /// </summary>
+    public static double ScoreRobust(double[] eFlat, double[] eGeo)
+    {
+        double gapF = SpectralCurvature.SpectralGap(eFlat);
+        double gapG = SpectralCurvature.SpectralGap(eGeo);
+        double zF = SpectralCurvature.HeatTrace(eFlat, 1.0);
+        double zG = SpectralCurvature.HeatTrace(eGeo, 1.0);
+        double zetaF = SpectralCurvature.SpectralZeta(eFlat, 2.0);
+        double zetaG = SpectralCurvature.SpectralZeta(eGeo, 2.0);
+        double entF = SpectralCurvature.SpectralEntropy(eFlat, 1.0);
+        double entG = SpectralCurvature.SpectralEntropy(eGeo, 1.0);
+
+        double dGap = (double.IsFinite(gapF) && double.IsFinite(gapG) && gapF > 1e-12) ? (gapG - gapF) / gapF : 0.0;
+        double dZ = (zF - zG) / zF;
+        double dZeta = zetaF > 1e-12 ? (zetaF - zetaG) / zetaF : 0.0;
         double dEnt = (entF - entG) / entF;
         return dGap + dZ + dZeta + dEnt;
     }
