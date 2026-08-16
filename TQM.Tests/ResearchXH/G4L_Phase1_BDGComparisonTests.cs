@@ -130,14 +130,14 @@ public class G4L_Phase1_BDGComparisonTests : ResearchTestBase
         {
             double s = 0.0;
             for (int j = 0; j < cs.Count; j++)
-                if (cs.Time[j] < tc) s += Math.Abs(m[c, j]);
+                if (cs.Time[j] < tc) s += Math.Abs(m[j, c]);
             return s;
         }
         double FutureResponse(double[,] m)
         {
             double s = 0.0;
             for (int j = 0; j < cs.Count; j++)
-                if (cs.Time[j] > tc) s += Math.Abs(m[c, j]);
+                if (cs.Time[j] > tc) s += Math.Abs(m[j, c]);
             return s;
         }
 

@@ -286,6 +286,12 @@ Trilogy: QG-029 (attraction dominates) + QG-030 (no counter-structure) + QG-031 
 - Retarded-biased (0.762 > L3 0.615) + indefinite (31+/41−) + alternating, KS to BDG 0.1389 < 0.2222
 - Refinement-stable (N=72→110); resolves the Phase-2 direction-vs-spectrum trade-off
 
+### G4-L4: Wave Propagation (G4-L Phase 4)
+**Status:** Complete. H2 propagates forward-biased + finite-speed, more causal than L3.
+- δ-source: BDG leak 0.021 (causal) < H2 0.759 < L3 0.772; front-v ≤ 1
+- SC2/SC3/SC4 pass; SC1 partial — H2 has a ~73% Feynman tail (R1 nilpotent, no diagonal)
+- Corrected retarded/advanced indexing convention (Phases 2-3 re-verified)
+
 ---
 
 ## Overall Statistics
@@ -295,8 +301,8 @@ Trilogy: QG-029 (attraction dominates) + QG-030 (no counter-structure) + QG-031 
 | DATA | 10 | Complete |
 | QM | 5 | Complete |
 | QG | 31 | Complete |
-| G4 | 19 | Complete |
-| **Total** | **65** | |
+| G4 | 20 | Complete |
+| **Total** | **66** | |
 
 ## Key Unsolved Problems
 

@@ -7098,3 +7098,17 @@ operator, satisfying all 4 success criteria (retarded+alternating+indefinite+clo
 L3). Resolves the Phase-2 direction-vs-spectrum trade-off. Code:
 TQM.Tests/ResearchXH/G4L_Phase3_RetardedIndefiniteOperatorTests.cs (G4-L30/31/32); report:
 Docs/Research/G4L_Phase3_RetardedIndefiniteOperator.md.
+
+**G4-L Phase 4 (Wave Propagation) — COMPLETED (3/3 tests pass; all 15 G4-L re-verified):**
+Question: does H2 propagate as a Lorentzian wave operator? Added GreenResponse (solve-with-
+fallback) to LorentzianOperator and CORRECTED the retarded/advanced convention (PastDirectedLayer/
+RetardedBdg now lower-triangular so Green response propagates FORWARD; Phases 2-3 re-verified).
+G4-L40 (delta): BDG directionality 1.0 leak 0.021 (causal); H2 0.626 leak 0.759; L3 0.596 leak
+0.772. G4-L41 (3 sources): mean leak BDG 0.061 < H2 0.725 < L3 0.755; front-v 0.75<=1. G4-L42:
+refinement-stable (N=72/110). SC1 PARTIAL (front-v<=1 no superluminal, but H2 leaks ~73% Feynman
+tail); SC2 finite-speed YES; SC3 closer to BDG YES (H2 leak < L3 leak); SC4 YES. CONCLUSION: H2
+propagates forward-biased + finite-speed + more causal than L3, but NOT fully retarded — its
+propagator has a Feynman tail (~73%) because R1 is nilpotent (no diagonal self-term); full
+causality needs the diagonal (BDG's -2 coefficient, which is forbidden here). Code:
+TQM.Tests/ResearchXH/G4L_Phase4_WavePropagationTests.cs (G4-L40/41/42); report:
+Docs/Research/G4L_Phase4_WavePropagation.md.

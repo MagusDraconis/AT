@@ -44,8 +44,8 @@ public class G4L_Phase2_RetardedOperatorTests : ResearchTestBase
         for (int i = 0; i < cs.Count; i++)
             for (int j = 0; j < cs.Count; j++)
             {
-                if (Math.Abs(r1[i, j]) > 1e-12 && !cs.Order[i, j]) r1PastOnly = false; // R1 nonzero only past→future
-                if (Math.Abs(r2[i, j]) > 1e-12 && !cs.Order[j, i]) r2FutureOnly = false; // R2 nonzero only future→past
+                if (Math.Abs(r1[i, j]) > 1e-12 && !cs.Order[j, i]) r1PastOnly = false; // R1 nonzero only future→past (retarded)
+                if (Math.Abs(r2[i, j]) > 1e-12 && !cs.Order[i, j]) r2FutureOnly = false; // R2 nonzero only past→future (advanced)
             }
 
         bool r2IsTranspose = true;
@@ -127,8 +127,8 @@ public class G4L_Phase2_RetardedOperatorTests : ResearchTestBase
 
         var (r1p, r1f) = LorentzianOperator.DirectedLayerProfile(cs, r1);
         var (r2p, r2f) = LorentzianOperator.DirectedLayerProfile(cs, r2);
-        Assert.True(r1p[0] < 0 && r1p[1] > 0 && r1f.All(v => Math.Abs(v) < 1e-9), "R1 not past-only alternating");
-        Assert.True(r2f[0] < 0 && r2f[1] > 0 && r2p.All(v => Math.Abs(v) < 1e-9), "R2 not future-only alternating");
+        Assert.True(r1f[0] < 0 && r1f[1] > 0 && r1p.All(v => Math.Abs(v) < 1e-9), "R1 not future-only alternating");
+        Assert.True(r2p[0] < 0 && r2p[1] > 0 && r2f.All(v => Math.Abs(v) < 1e-9), "R2 not past-only alternating");
     }
 
     // ── G4-L22: propagation asymmetry + KS distance to BDG ─────────────────────────────
@@ -146,13 +146,13 @@ public class G4L_Phase2_RetardedOperatorTests : ResearchTestBase
         double Past(double[,] m)
         {
             double s = 0.0;
-            for (int j = 0; j < cs.Count; j++) if (cs.Time[j] < tc) s += Math.Abs(m[c, j]);
+            for (int j = 0; j < cs.Count; j++) if (cs.Time[j] < tc) s += Math.Abs(m[j, c]);
             return s;
         }
         double Future(double[,] m)
         {
             double s = 0.0;
-            for (int j = 0; j < cs.Count; j++) if (cs.Time[j] > tc) s += Math.Abs(m[c, j]);
+            for (int j = 0; j < cs.Count; j++) if (cs.Time[j] > tc) s += Math.Abs(m[j, c]);
             return s;
         }
 

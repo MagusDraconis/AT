@@ -32,8 +32,8 @@ public class G4L_Phase3_RetardedIndefiniteOperatorTests : ResearchTestBase
         double past = 0.0, future = 0.0;
         for (int j = 0; j < cs.Count; j++)
         {
-            if (cs.Time[j] < tc) past += Math.Abs(m[c, j]);
-            else if (cs.Time[j] > tc) future += Math.Abs(m[c, j]);
+            if (cs.Time[j] < tc) past += Math.Abs(m[j, c]);
+            else if (cs.Time[j] > tc) future += Math.Abs(m[j, c]);
         }
         return (past, future);
     }

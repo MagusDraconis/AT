@@ -1,5 +1,7 @@
 namespace TQM.Core.ResearchXH;
 
+using MathNet.Numerics.LinearAlgebra;
+
 /// <summary>
 /// Native Lorentzian operator candidates (G4-L Phase 0). Each is a symmetric matrix built
 /// ONLY from the causal order and counting measure (links, intervals, layers, density) — no
@@ -115,8 +117,9 @@ public static class LorentzianOperator
     }
 
     /// <summary>
-    /// Retarded (past-only) BDG d'Alembertian: B[i,j] ≠ 0 only for i ≺ j (forward propagation).
-    /// Lower-triangular in time order. Used to probe directionality vs the symmetric candidates.
+    /// Retarded (past-only) BDG d'Alembertian: B[j,i] ≠ 0 only for i ≺ j (i past, j future),
+    /// so (Bφ)_j sums over past events. Lower-triangular in time order → forward (causal)
+    /// Green response.
     /// </summary>
     public static double[,] RetardedBdg(CausalSetData cs)
     {
@@ -125,8 +128,8 @@ public static class LorentzianOperator
         for (int i = 0; i < n; i++) m[i, i] = -2.0;
         for (int i = 0; i < n; i++)
             for (int j = 0; j < n; j++)
-                if (cs.Order[i, j])
-                    m[i, j] = BdgCoefficient(cs.Interval[i, j]);
+                if (cs.Order[i, j])  // i ≺ j (i past, j future)
+                    m[j, i] = BdgCoefficient(cs.Interval[i, j]);
         return m;
     }
 
@@ -158,7 +161,8 @@ public static class LorentzianOperator
 
     /// <summary>
     /// R1 — past-directed (retarded) layer operator: (−1)^(k+1) over past layers only
-    /// (i ≺ j). Strictly lower-triangular in time order → nilpotent (zero spectrum).
+    /// (j ≺ i). Lower-triangular in time order → nilpotent (zero spectrum); its Green
+    /// response propagates FORWARD (causal).
     /// </summary>
     public static double[,] PastDirectedLayer(CausalSetData cs)
     {
@@ -166,8 +170,8 @@ public static class LorentzianOperator
         var m = new double[n, n];
         for (int i = 0; i < n; i++)
             for (int j = 0; j < n; j++)
-                if (cs.Order[i, j])
-                    m[i, j] = (cs.Interval[i, j] % 2 == 0) ? -1.0 : 1.0;
+                if (cs.Order[j, i])  // j ≺ i (j in past of i)
+                    m[i, j] = (cs.Interval[j, i] % 2 == 0) ? -1.0 : 1.0;
         return m;
     }
 
@@ -230,6 +234,29 @@ public static class LorentzianOperator
             for (int j = 0; j < n; j++)
                 m[i, j] = h[i, j] / (rho[i] * rho[j]);
         return m;
+    }
+
+    /// <summary>
+    /// Green response: the propagated field φ solving op · φ = δ_source. Uses a direct solve
+    /// (exact inverse) when op is invertible, and the pseudoinverse (minimum-norm) otherwise.
+    /// Its support reveals the propagation cone, directionality, and wave speed.
+    /// </summary>
+    public static double[] GreenResponse(double[,] op, int source)
+    {
+        int n = op.GetLength(0);
+        var m = Matrix<double>.Build.DenseOfArray(op);
+        var e = Vector<double>.Build.Dense(n, 0.0);
+        e[source] = 1.0;
+        try
+        {
+            var r = m.Solve(e).ToArray();
+            if (r.All(x => !double.IsNaN(x) && !double.IsInfinity(x))) return r;
+        }
+        catch
+        {
+            // singular — fall through to pseudoinverse
+        }
+        return (m.PseudoInverse() * e).ToArray();
     }
 
     /// <summary>
