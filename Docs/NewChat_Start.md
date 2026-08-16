@@ -7182,3 +7182,18 @@ is INTRINSIC to the native symmetric off-diagonal, not a discretization artifact
 the missing BDG diagonal -2 is a genuine gap that does NOT close under N->infinity. Code:
 TQM.Tests/ResearchXH/G4L_Phase8_RefinementConvergenceTests.cs (G4-L80/81/82); report:
 Docs/Research/G4L_Phase8_RefinementConvergence.md.
+
+**G4-L Analytical Audit (Leakage Source) — COMPLETED (verified matrix decomposition; no new tests):**
+Question: why does the native operator plateau at ~40-55% leakage? Verified: L3 = R1+R2, H2 = 2R1+R2,
+A3 = R1+R2_decayed, H = D+2R1+R2_decayed. Tail source = the FUTURE (upper-triangular) component.
+Measured: D+2R1 (future removed) leak 0.082 but NOT indefinite (0+,72- elliptic); +full future 0.770;
++decayed future (native) 0.428 indefinite (30+,42-). BDG_ret (lower-tri) leak 0.021 but NOT indefinite
+(0+,72-); BDG_sym (BdgReference) indefinite (29+,43-). Term-by-term: native has 1344 future entries vs
+BDG's 0 (strictly retarded) — this is the minimal difference. CENTRAL THEOREM (signature-causality
+tension): a single strictly-retarded matrix has sign-definite spectrum (eigenvalues = diagonal, never
+indefinite); indefiniteness REQUIRES the future component; the future component IS the Feynman tail.
+BDG resolves this with TWO objects (symmetric Box = signature; retarded Green = causality); the native
+single-matrix program cannot. CLASSIFICATION: future/symmetric L3 contribution ESSENTIAL (dual
+role); BDG diagonal ESSENTIAL role/OPTIONAL value; non-truncation OPTIONAL; R1 nilpotence ARTIFACT.
+The ~40-55% plateau is the irreducible signature-causality trade-off, NOT a missing coefficient or
+refinement artifact. Report: Docs/Research/G4L_LeakageSourceAudit.md.
