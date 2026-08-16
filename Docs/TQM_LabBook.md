@@ -415,6 +415,10 @@ Trilogy: QG-029 (attraction dominates) + QG-030 (no counter-structure) + QG-031 
 **Status:** Complete. Matter = derived deficit m=ρ̄−ρ, NOT ρ — resolves the repulsion.
 - a = +(1/d)∇m/ρ is attractive toward matter (voids); ρ-excess repulsive (dark-energy), ρ-deficit attractive (matter)
 
+### G4-ME1: Deficit Matter Gravity (G4-ME Phase 1)
+**Status:** Complete (PARTIAL MATCH). Deficit matter is attractive but localized (not 1/r²).
+- correct attractive sign; field ∝ ∇m (short-range), no Newtonian long-range exterior
+
 ---
 
 ## Overall Statistics
@@ -424,8 +428,8 @@ Trilogy: QG-029 (attraction dominates) + QG-030 (no counter-structure) + QG-031 
 | DATA | 10 | Complete |
 | QM | 5 | Complete |
 | QG | 31 | Complete |
-| G4 | 46 | Complete |
-| **Total** | **92** | |
+| G4 | 47 | Complete |
+| **Total** | **93** | |
 
 ## Key Unsolved Problems
 

@@ -7469,3 +7469,14 @@ is NOT rho — it is the derived DEFICIT m=rho-bar-rho; the repulsion was an art
 with rho. Picture: rho-EXCESS (peaks)=repulsive dark-energy sector; rho-DEFICIT (voids)=attractive matter
 sector. Same conformal geodesics, different derived structure. Resolves G4-O tension natively. Report:
 Docs/Research/G4ME_MatterEmergenceAudit.md.
+
+**G4-ME Phase 1 (Deficit Matter Gravity) — COMPLETED (3/3 tests pass; 6/6 G4-ME verified):**
+Question: does the derived deficit matter m=rho-bar-rho reproduce Newton-like attraction? Added
+SphericalDeficit, NewtonianDeficitAcceleration to PhysicalObservables. G4-ME10 Gaussian deficit:
+attractive (a<0) everywhere, but TQM falloff ~ grad m (exponential, localized) vs Newton ~ -int m (1/r^2,
+long-range); |a_TQM/a_Newton| shrinks outward. G4-ME11 spherical deficit: a~0 inside AND outside (no 1/r^2
+exterior); two deficits attract toward nearest void (local superposition). G4-ME12 extended halo: TQM
+decays (0.3:-0.19, 1.0:-0.03) vs Newton grows (-0.08,-0.15). CLASSIFICATION: PARTIAL MATCH — deficit
+matter is ATTRACTIVE (correct sign, resolves G4-O repulsion) but LOCALIZED (short-range), NOT Newtonian
+1/r^2. Full Newtonian gravity needs an additional non-conformal (long-range) sector — open question.
+Report: Docs/Research/G4ME_DeficitMatterGravity.md.

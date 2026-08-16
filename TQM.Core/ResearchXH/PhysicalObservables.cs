@@ -144,4 +144,21 @@ public static class PhysicalObservables
 
     /// <summary>Derived matter density m = ρ̄ − ρ (the density DEFICIT; positive in voids, negative in peaks).</summary>
     public static double MatterDensity(double rho, double rhoBar = 1.0) => rhoBar - rho;
+
+    /// <summary>Compact spherical deficit ρ = 1−A for |x| &lt; R, ρ = 1 outside (a "void sphere").</summary>
+    public static double SphericalDeficit(double x, double A = 0.3, double R = 0.5)
+        => Math.Abs(x) < R ? 1.0 - A : 1.0;
+
+    /// <summary>Newtonian acceleration from the DEFICIT matter m = ρ̄−ρ: a = −∫₀^x m(u) du.</summary>
+    public static double NewtonianDeficitAcceleration(Func<double, double> rho, double x, double rhoBar = 1.0, int n = 4000)
+    {
+        double dx = x / n;
+        double sum = 0.0;
+        for (int i = 0; i < n; i++)
+        {
+            double u = (i + 0.5) * dx;
+            sum += (rhoBar - rho(u)) * dx;
+        }
+        return -sum;
+    }
 }
