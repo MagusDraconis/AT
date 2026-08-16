@@ -468,6 +468,10 @@ OPEN/WEAK: matter emergence + dynamics.
 **Status:** Complete (PREFERRED, DERIVED-conditional). η is the unique minimum-curvature (R=0) reference; ψ costs curvature.
 - √(−g)=ρ fixes only det; η=R=0; R² minimized at η (stable minimum); DERIVED iff causal vacuum is Minkowskian
 
+### TQM-F1: Indifference Principle (TQM-F Phase 1)
+**Status:** Complete (PREFERRED, DERIVED-conditional). Scale-freeness = the unique renormalization-invariant abundance law.
+- power law = unique scale-covariant form + RG fixed point; primitives carry no intrinsic scale; indifference reduced to renormalization invariance
+
 ---
 
 ## Overall Statistics
@@ -478,7 +482,8 @@ OPEN/WEAK: matter emergence + dynamics.
 | QM | 5 | Complete |
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
-| **Total** | **103** | |
+| TQM-F | 2 | Complete |
+| **Total** | **105** | |
 
 ## Key Unsolved Problems
 

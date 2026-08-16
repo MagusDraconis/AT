@@ -120,4 +120,35 @@ public static class RhoDynamics
         }
         return h;
     }
+
+    // ── TQM-F Phase 1: indifference / scale-freeness (renormalization invariance) ─────
+
+    /// <summary>Block-spin coarse-graining: merge adjacent octaves (pairs).</summary>
+    public static double[] CoarseGrain(double[] a)
+    {
+        int k2 = a.Length / 2;
+        var b = new double[k2];
+        for (int k = 0; k < k2; k++) b[k] = a[2 * k] + a[2 * k + 1];
+        return b;
+    }
+
+    /// <summary>Scale-setting (non-scale-free) abundance: a Gaussian bump at octave center.</summary>
+    public static double[] GaussianAbundance(int K, int center, double sigma)
+    {
+        var a = new double[K];
+        for (int k = 0; k < K; k++)
+        {
+            double z = (k - center) / sigma;
+            a[k] = Math.Exp(-z * z);
+        }
+        return a;
+    }
+
+    /// <summary>Successive-increment ratio A_{k+1}/A_k of an abundance vector (constant for a power law).</summary>
+    public static double[] SuccessiveRatios(double[] a)
+    {
+        var r = new double[a.Length - 1];
+        for (int k = 0; k < r.Length; k++) r[k] = a[k + 1] / a[k];
+        return r;
+    }
 }

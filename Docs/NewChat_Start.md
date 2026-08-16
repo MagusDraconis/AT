@@ -7629,3 +7629,15 @@ order + counting measure (they fix conformal factor + determinant, leave conform
 minimum-curvature principle (parallel to alpha=0 entropy selection); DERIVED iff causal vacuum is Minkowskian
 (Malament). Downgrades conformal flatness from load-bearing axiom to preferred minimum-information gauge choice.
 Report: Docs/Research/G4A_ConformalFlatness.md.
+
+**TQM-F Phase 1 (Indifference Principle) — COMPLETED (3/3 tests pass):**
+Question: why is actualization unbiased across scales? Added CoarseGrain, GaussianAbundance, SuccessiveRatios to
+RhoDynamics. TQMF10 primitives are scale-covariant: counting measure is a density (N=int rho dV invariant under
+x->lambda x, rho->lambda^-d rho); causal order is a scale-invariant partial order; power law n~R^-p is the UNIQUE
+scale-covariant form (n(2R)/n(R)=2^-1 constant vs Gaussian ratio varies 0.472->0.018). TQMF11 renormalization
+invariance: coarse-graining preserves power laws (successive ratios stay constant -> RG fixed point); Gaussian bump
+is NOT self-similar (ratios vary, characteristic scale washes out). TQMF12 CLASSIFICATION: PREFERRED (unique
+renormalization-invariant), DERIVED-conditional — scale-freeness = unique RG-invariant abundance; primitives carry
+no intrinsic scale; indifference DERIVED iff renormalization invariance (natural for a theory with no external
+scale). Downgrades indifference postulate (G4-RHO3) to renormalization-invariance requirement, parallel to
+conformal flatness = minimum-information (G4-A1). Report: Docs/Research/TQMF_IndifferencePrinciple.md.
