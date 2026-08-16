@@ -364,6 +364,11 @@ Trilogy: QG-029 (attraction dominates) + QG-030 (no counter-structure) + QG-031 
 - constant-annihilation leaves s free; −degree/2 = −3 ≠ −2; past count [8,57] position-dependent
 - scale pinned only by second-moment/continuum matching — closes the G4-L coefficient story
 
+### G4-G0: Einstein Structure (G4-G Phase 0)
+**Status:** Complete (degenerate in 2D). Native Ricci (R/2)g + Gauss–Bonnet conservation emerge; G ≡ 0.
+- R_μν = (R/2)g_μν symmetric/trace-consistent; Einstein tensor vanishes identically in d=2
+- non-trivial Einstein structure requires d ≥ 3
+
 ---
 
 ## Overall Statistics
@@ -373,8 +378,8 @@ Trilogy: QG-029 (attraction dominates) + QG-030 (no counter-structure) + QG-031 
 | DATA | 10 | Complete |
 | QM | 5 | Complete |
 | QG | 31 | Complete |
-| G4 | 34 | Complete |
-| **Total** | **80** | |
+| G4 | 35 | Complete |
+| **Total** | **81** | |
 
 ## Key Unsolved Problems
 

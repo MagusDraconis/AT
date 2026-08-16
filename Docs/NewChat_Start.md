@@ -7330,3 +7330,15 @@ a(s=2)={-2,+4,-2}. CLASSIFICATION: NO MATCH — scale -2 does NOT emerge from an
 second-moment/continuum matching (a conformal-scale datum, not causal-structure datum). CLOSES the G4-L
 coefficient story: native operators have the exact BDG SHAPE; only the global scale -2 remains imported.
 Report: Docs/Research/G4L_BDGNormalization.md.
+
+**G4-G Phase 0 (Einstein Structure) — COMPLETED (3/3 tests pass):**
+Question: can Einstein-like quantities emerge from native curvature fields (no Einstein/GR import)?
+Added EinsteinStructure.cs (native Ricci, scalar curvature, Einstein candidate, Gauss-Bonnet from rho
+alone). For g = rho*eta (rho=1+a x^2, d=2): G4-G00 Ricci R_uv = (R/2)g_uv = (R*rho/2)delta_uv — symmetric,
+trace-consistent (g^uv R_uv = R), fully determined by native R(x) and g. G4-G01 Einstein tensor G = R_uv
+- (R/2)g_uv = 0 IDENTICALLY (max|G| = 2.8e-17) — in d=2 R_uv=(R/2)g_uv ALWAYS, so G=0 (a theorem, not an
+import). G4-G02 Gauss-Bonnet conservation: total curvature Int R sqrt(g) dA = -8a/(1+a) (boundary/
+topological term), refinement-stable (rel err 4.3% -> 1.7%). CONCLUSION: native 2D program yields Ricci
+(R/2)g, scalar field R, and Gauss-Bonnet conservation, but the Einstein tensor VANISHES in d=2 — Einstein
+structure is DEGENERATE in 2D; non-trivial G requires d>=3 (next step: 3+1D native geometry). Report:
+Docs/Research/G4G_EinsteinStructure.md.
