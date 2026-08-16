@@ -7342,3 +7342,13 @@ topological term), refinement-stable (rel err 4.3% -> 1.7%). CONCLUSION: native 
 (R/2)g, scalar field R, and Gauss-Bonnet conservation, but the Einstein tensor VANISHES in d=2 — Einstein
 structure is DEGENERATE in 2D; non-trivial G requires d>=3 (next step: 3+1D native geometry). Report:
 Docs/Research/G4G_EinsteinStructure.md.
+
+**G4-G Phase 1 (3D/4D Einstein Structure) — COMPLETED (3/3 tests pass; 6/6 G4-G verified):**
+Question: can native geometry generate non-trivial Einstein-like tensors in d=3,4? Added
+HigherDimEinstein.cs (d-dimensional Ricci/Einstein from rho via conformal transformation, no GR import).
+For g = rho^(2/d)*eta, x-only rho=1+a x^2: G_11 = ((d-1)(d-2)/2)(sigma')^2, G_ii = (d-2)[sigma'' +
+((d-3)/2)(sigma')^2]. G4-G10: G=0 in d=2, NON-TRIVIAL in d=3 (G_ii=0.133) and d=4 (G_ii=0.288), symmetric
+(diagonal). G4-G11: trace G^u_u = -(d-2)R/2 for d=2,3,4 (0, -R/2, -R). G4-G12: Bianchi divergence-free
+div G = 0 (max < 1e-8). CONCLUSION: first non-trivial Einstein-like tensor appears at d=3, persists at
+d=4 — symmetric, trace-structured, divergence-free (the conservation law identifying G), built natively
+from rho's derivatives. Recovers G4-G0 (G=0) in d=2. Report: Docs/Research/G4G_Phase1_3D4D_EinsteinStructure.md.

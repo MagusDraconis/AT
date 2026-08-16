@@ -369,6 +369,10 @@ Trilogy: QG-029 (attraction dominates) + QG-030 (no counter-structure) + QG-031 
 - R_μν = (R/2)g_μν symmetric/trace-consistent; Einstein tensor vanishes identically in d=2
 - non-trivial Einstein structure requires d ≥ 3
 
+### G4-G1: 3D/4D Einstein Structure (G4-G Phase 1)
+**Status:** Complete. First non-trivial Einstein-like tensor appears at d=3.
+- G_11=((d−1)(d−2)/2)(σ′)², G_ii=(d−2)[σ″+((d−3)/2)(σ′)²]; symmetric, trace −(d−2)R/2, divergence-free
+
 ---
 
 ## Overall Statistics
@@ -378,8 +382,8 @@ Trilogy: QG-029 (attraction dominates) + QG-030 (no counter-structure) + QG-031 
 | DATA | 10 | Complete |
 | QM | 5 | Complete |
 | QG | 31 | Complete |
-| G4 | 35 | Complete |
-| **Total** | **81** | |
+| G4 | 36 | Complete |
+| **Total** | **82** | |
 
 ## Key Unsolved Problems
 
