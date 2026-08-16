@@ -391,6 +391,10 @@ Trilogy: QG-029 (attraction dominates) + QG-030 (no counter-structure) + QG-031 
 **Status:** Complete. Mixed spectrum: weak-field GR-like; curvature-sourced Poisson TQM-specific.
 - Φ=(1/d)lnρ; a=−∇Φ, redshift=−ΔΦ, lensing∝ΔΦ, H=ρ̇/ρ (GR-like); curvature-sourced Poisson + 1/d scaling (TQM)
 
+### G4-O1: Discriminating Prediction (G4-O Phase 1)
+**Status:** Complete (STRONG DIFFERENCE). TQM predicts no long-range field in uniform/shell regions.
+- a∝∇ρ (localized) vs GR 1/r²; TQM source sign-changing (lnρ)″ vs GR positive-definite ρ
+
 ---
 
 ## Overall Statistics
@@ -400,8 +404,8 @@ Trilogy: QG-029 (attraction dominates) + QG-030 (no counter-structure) + QG-031 
 | DATA | 10 | Complete |
 | QM | 5 | Complete |
 | QG | 31 | Complete |
-| G4 | 40 | Complete |
-| **Total** | **86** | |
+| G4 | 41 | Complete |
+| **Total** | **87** | |
 
 ## Key Unsolved Problems
 

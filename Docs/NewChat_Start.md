@@ -7398,3 +7398,14 @@ weak-field phenomenology (acceleration/redshift/lensing/expansion) KNOWN GR-LIKE
 Poisson + algebraic curvature-density + 1/d scaling TQM-SPECIFIC. Decisive prediction: gravitational
 source is rho's second-derivative (curvature), not its value (differs from Delta Phi = 4 pi G rho).
 Report: Docs/Research/G4O_PhysicalObservables.md.
+
+**G4-O Phase 1 (Discriminating Prediction) — COMPLETED (3/3 tests pass; 6/6 G4-O verified):**
+Question: does the rho-only Einstein structure predict an observable difference from GR? Added profiles +
+GrSource/TqmSource/GrAcceleration/TqmAcceleration to PhysicalObservables. G4-O10 uniform density: a_GR =
+-rho0 x != 0 (linear field) vs a_TQM = 0 (a ~ grad rho = 0) — STRONG. G4-O11 shell density: GR long-range
+field outside shell (a_GR ~ -0.85) vs TQM localized (a_TQM ~ 1e-4, exponentially zero outside/inside) —
+STRONG. G4-O12 double-peak: TQM source SIGN-CHANGES ((ln rho)'' > 0 at density min +0.96, < 0 at max -29.6)
+vs GR always-positive — STRONG. CONCLUSION: STRONG qualitative falsifiable difference — TQM predicts NO
+long-range field in uniform/shell-exterior regions (field ~ grad rho, localized), unlike GR's 1/r^2 Newtonian
+field; TQM source = sign-changing log-density curvature, not the density value. Decisive prediction: no
+Newtonian field where actualization density is uniform. Report: Docs/Research/G4O_DiscriminatingPrediction.md.

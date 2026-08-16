@@ -53,4 +53,49 @@ public static class PhysicalObservables
         double term = Math.Pow(rho, 2.0 / d) * r / (2.0 * (d - 1.0));
         return lap + 0.5 * (d - 2.0) * g2 + term;
     }
+
+    // ── Discriminating-observable machinery (GR density-source vs TQM curvature-source) ──
+
+    /// <summary>Uniform density profile ρ = ρ₀.</summary>
+    public static double Uniform(double x, double rho0 = 1.0) => rho0;
+
+    /// <summary>Gaussian density profile ρ = 1 + A·e^(−(x/σ)²).</summary>
+    public static double Gaussian(double x, double A = 0.5, double sigma = 0.3)
+        => 1.0 + A * Math.Exp(-(x * x) / (sigma * sigma));
+
+    /// <summary>Shell/ring density profile ρ = 1 + A·e^(−((|x|−r)/σ)²).</summary>
+    public static double Shell(double x, double A = 0.5, double r = 0.6, double sigma = 0.15)
+    {
+        double z = (Math.Abs(x) - r) / sigma;
+        return 1.0 + A * Math.Exp(-z * z);
+    }
+
+    /// <summary>Double-peak density ρ = 1 + A·(e^(−((x−x₀)/σ)²) + e^(−((x+x₀)/σ)²)).</summary>
+    public static double DoublePeak(double x, double A = 0.5, double x0 = 0.4, double sigma = 0.15)
+        => 1.0 + A * (Math.Exp(-Math.Pow((x - x0) / sigma, 2)) + Math.Exp(-Math.Pow((x + x0) / sigma, 2)));
+
+    /// <summary>GR Poisson source: S_GR = ρ (the density VALUE, up to 4πG).</summary>
+    public static double GrSource(Func<double, double> rho, double x) => rho(x);
+
+    /// <summary>TQM Poisson source: S_TQM = (ln ρ)″ (the log-density curvature).</summary>
+    public static double TqmSource(Func<double, double> rho, double x, double h = 1e-5)
+    {
+        double lp = Math.Log(rho(x));
+        double lm = Math.Log(rho(x - h));
+        double lpp = Math.Log(rho(x + h));
+        return (lpp - 2.0 * lp + lm) / (h * h);
+    }
+
+    /// <summary>GR acceleration (1D Poisson enclosed mass): a_GR = −∫₀^x ρ(u) du.</summary>
+    public static double GrAcceleration(Func<double, double> rho, double x, int n = 4000)
+    {
+        double dx = x / n;
+        double sum = 0.0;
+        for (int i = 0; i < n; i++) sum += rho((i + 0.5) * dx) * dx;
+        return -sum;
+    }
+
+    /// <summary>TQM acceleration: a_TQM = −(1/d)(ln ρ)′ = −(1/d)ρ′/ρ.</summary>
+    public static double TqmAcceleration(Func<double, double> rho, double x, int d, double h = 1e-5)
+        => -(rho(x + h) - rho(x - h)) / (2.0 * h * d * rho(x));
 }
