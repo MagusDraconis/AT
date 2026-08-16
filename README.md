@@ -8,6 +8,8 @@
 
 ---
 
+**Version 1.1** — *Native Metric-to-Operator Coupling (Program G4)*
+
 TQM investigates whether matter, quantum behavior, and gravitation emerge from self-organizing oscillations of a temporal field.
 
 ## Publication
@@ -53,7 +55,8 @@ Phase Gradients → Geometry → Gravity
 | **DATA** — Cosmology & RAR | 10 (DATA-001→010) | Complete |
 | **QM** — Quantum Foundations | 5 (QM-001→005) | Complete |
 | **QG** — Quantum Gravity | 31 (QG-001→031) | Complete |
-| **Total** | **46** | |
+| **G4** — Native Metric-to-Operator Coupling | 13 phases / 39 tests | Complete |
+| **Total** | **59** | |
 
 ## Key Results
 
@@ -67,6 +70,9 @@ Phase Gradients → Geometry → Gravity
 - **RAR derivation**: g† = c·H₀/(2π) — zero free parameters
 - **Parameter compression**: SM+GR (~26) → TQM (2+3) — ~5-8× reduction
 - **Novel predictions**: w(z) = -1 + 0.015·(1+z)^(3/2), evolving g†(z), Euclid sensitivity
+- **Native conformal operator** (G4): Lc = ρ⁻¹ L ρ⁻¹ ≈ Δ_g reconstructs curvature sign and magnitude from density and adjacency alone — no metric tensor, no Laplace–Beltrami import
+- **Native curvature evolution law** (G4-E): R = F(ρ), Ṙ = F′(ρ)·ρ̇ with F′(ρ) < 0 — a closed curvature–density relation
+- **Curvature feedback is anti-diffusive** (G4-E1): the naive feedback is a positive-feedback instability — a bounded cosmology requires an additional restoring term
 
 ## Build & Test
 
@@ -82,3 +88,4 @@ Requirements: .NET 10, MathNet.Numerics 5.0
 - `Docs/NewChat_Start.md` — Primary project memory and research direction
 - `Docs/TQM_QuantumGravity_Program.md` — Complete QG program summary
 - `Docs/TQM_LabBook.md` — Detailed experiment results
+- `Docs/Research/G4*.md` — Program G4 phase reports (native metric-to-operator coupling)

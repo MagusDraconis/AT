@@ -3,6 +3,30 @@
 All notable changes to THE Q-MODEL (TQM) are documented here. Versions follow the
 repository's release cadence; this file covers the publication-relevant milestones.
 
+## [1.1.0] — 2026-08-16
+
+**Release status: Program G4 complete (native metric-to-operator coupling).**
+
+### Added
+- **Program G4** — Native Metric-to-Operator Coupling (13 phases, 39 deterministic research
+  tests; `TQM.Core/ResearchXH/`, `TQM.Tests/ResearchXH/`, `Docs/Research/G4*.md`):
+  - Spectral curvature (Phase 0/1/2A): curvature encoded in graph spectra; SCI calibrated.
+  - Time-rate hypothesis (G4-T): rate gradients define conformal geometry.
+  - Conformal operator selection (G4-C): Lc = ρ⁻¹ L ρ⁻¹ ≈ Δ_g identified and benchmarked.
+  - Curvature reconstruction (G4-C2/3): sign and magnitude recovered from Lc spectra.
+  - Uniqueness (G4-U): (1,1) is one member of a large empirical family, the unique conformal
+    Laplace–Beltrami representative.
+  - Curvature dynamics (G4-D): Lc evolves consistently with the density field.
+  - Curvature evolution law (G4-E): R = F(ρ), Ṙ = F′(ρ)·ρ̇ with F′(ρ) < 0.
+  - Feedback dynamics (G4-E1): self-consistent but anti-diffusive — bounded cosmology needs a
+    restoring term.
+
+### Changed
+- `README.md`: version bumped to 1.1; Research Programs table + key results updated.
+- `Docs/TQM_LabBook.md`: G4 program section added (Total 46 → 59).
+
+---
+
 ## [1.0.0] — 2026-08-15 (revised)
 
 **Release status: READY_FOR_WHITEPAPER — NOT_READY_FOR_JOURNAL.**
