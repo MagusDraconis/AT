@@ -374,3 +374,6 @@ Data/COSMOS2015_KMOS3D_field.csv
 
 # Legacy/reference-only documents (PDFs) — not part of the active program.
 LegacyDocs/
+
+# Scratch / exploratory code (local console runner against TQM.Core).
+temp/
