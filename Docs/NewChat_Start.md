@@ -7362,3 +7362,14 @@ rho=1+0.5x^4) converges to analytic G under h->0 (refinement-stable). G4-G22: di
 =-(d-2)R/2 and non-triviality hold for d=2..6, d=2 degenerate. CONCLUSION: Einstein structure is FULLY
 encoded in rho's local derivatives — no metric, no Christoffel, no GR import. The decisive native result
 of G4-G. Report: Docs/Research/G4G_RhoToEinstein.md.
+
+**G4-G Phase 3 (Native Einstein Equation) — COMPLETED (3/3 tests pass; 12/12 G4-G verified):**
+Question: can a native stress-energy analogue + G = kappa T relation emerge? Added KineticStress*,
+NativeStress* to HigherDimEinstein. G4-G30: T = G/kappa is symmetric (diagonal) + divergence-free
+(div T = (1/kappa)div G = 0 by Bianchi). G4-G31: G_uv = kappa T_uv holds exactly at all x, d=3,4, with
+trace T^u_u = -(d-2)R/(2kappa). G4-G32: KINETIC stress-energy (grad rho only) T_kin = du sigma dv sigma -
+(1/2)eta(d sigma)^2 is ~ (rho')^2 in BOTH components, but G_ii has a d^2rho (sigma'') term — NO single
+kappa relates them. CONCLUSION: a native Einstein relation emerges (T = G/kappa symmetric+conserved), but
+the source is the FULL conformal structure (rho, drho, d^2rho), NOT the kinetic/gradient part; rho acts as
+matter through its complete geometric content, not a scalar-field kinetic sector. kappa = coupling (units,
+not native). Report: Docs/Research/G4G_NativeEinsteinEquation.md.

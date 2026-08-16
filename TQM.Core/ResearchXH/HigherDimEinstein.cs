@@ -93,4 +93,38 @@ public static class HigherDimEinstein
 
     /// <summary>Analytic ρ″ = 2a.</summary>
     public static double RhoSecond(double x, double a) => 2.0 * a;
+
+    // ── Stress-energy candidates (the native "matter" sector) ──────────────────────────
+
+    /// <summary>
+    /// Kinetic (gradient) stress-energy of the conformal field σ from ∇σ alone:
+    /// T^kin_μν = ∂_μσ ∂_νσ − (1/2)η_μν(∂σ)². x-component = (1/2)(σ′)².
+    /// </summary>
+    public static double KineticStress11(double x, double a, int d)
+    {
+        double sp = SigmaPrime(x, a, d);
+        return 0.5 * sp * sp;
+    }
+
+    /// <summary>Kinetic stress-energy transverse component = −(1/2)(σ′)².</summary>
+    public static double KineticStressOther(double x, double a, int d)
+    {
+        double sp = SigmaPrime(x, a, d);
+        return -0.5 * sp * sp;
+    }
+
+    /// <summary>
+    /// Native conserved stress-energy T_μν = G_μν/κ (κ the gravitational coupling). Symmetric and
+    /// divergence-free (Bianchi), fully determined by ρ — the stress-energy that sources g = ρ^(2/d)η.
+    /// </summary>
+    public static double NativeStress11(double x, double a, int d, double kappa = 1.0)
+        => Einstein11(x, a, d) / kappa;
+
+    /// <summary>Native conserved stress-energy transverse component.</summary>
+    public static double NativeStressOther(double x, double a, int d, double kappa = 1.0)
+        => EinsteinOther(x, a, d) / kappa;
+
+    /// <summary>Trace of the native stress-energy T^μ_μ = −(d−2)R/(2κ).</summary>
+    public static double TraceNativeStress(double x, double a, int d, double kappa = 1.0)
+        => TraceEinstein(x, a, d) / kappa;
 }

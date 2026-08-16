@@ -378,6 +378,10 @@ Trilogy: QG-029 (attraction dominates) + QG-030 (no counter-structure) + QG-031 
 - G_11=(d−1)(d−2)/(2d²)(ρ′/ρ)², G_ii=(d−2)/d·(ρ″/ρ)−(d−2)(d+3)/(2d²)(ρ′/ρ)²; no metric/σ needed
 - direct ≡ metric-based <1e−12; refinement-stable; dimension-generic
 
+### G4-G3: Native Einstein Equation (G4-G Phase 3)
+**Status:** Complete. T = G/κ is symmetric + conserved (native matter); G = κT holds.
+- kinetic (∇ρ) stress-energy insufficient — the ∂²ρ term is essential; source is the full conformal structure
+
 ---
 
 ## Overall Statistics
@@ -387,8 +391,8 @@ Trilogy: QG-029 (attraction dominates) + QG-030 (no counter-structure) + QG-031 
 | DATA | 10 | Complete |
 | QM | 5 | Complete |
 | QG | 31 | Complete |
-| G4 | 37 | Complete |
-| **Total** | **83** | |
+| G4 | 38 | Complete |
+| **Total** | **84** | |
 
 ## Key Unsolved Problems
 
