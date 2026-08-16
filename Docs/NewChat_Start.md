@@ -7084,3 +7084,17 @@ directionality (propagation-distance -> 0). TRADE-OFF: directionality (R1, nilpo
 spectrum) vs spectrum (R3, indefinite) pull opposite ways; full retarded BDG (diagonal -2 +
 off-diagonal) remains next. Code: TQM.Tests/ResearchXH/G4L_Phase2_RetardedOperatorTests.cs
 (G4-L20/21/22); report: Docs/Research/G4L_Phase2_RetardedOperator.md.
+
+**G4-L Phase 3 (Retarded-Indefinite Operator) — COMPLETED (3/3 tests pass):**
+Question: can a hybrid operator preserve BOTH retarded propagation AND indefinite (Lorentzian)
+spectral structure? Added CausalDensity, Add, HybridRetardedAlternating (H2 = R1+L3),
+HybridRetardedDensityWeighted (H3 = rho^-1(R1+L3)rho^-1) to LorentzianOperator. G4-L30: H2
+retarded-ness 0.762 (past 15/future 48) > L3 0.615 (past 15/future 24); H1=1.0. G4-L31: H2
+INDEFINITE (31+/41-) AND alternating (profile -2,+2,-2) AND closer to BDG than L3 (KS 0.1389 vs
+0.2222 — symmetric part (3/2)L3 rescales to BDG range); H3 also indefinite but KS 0.5278 (density
+distorts); H1 nilpotent. G4-L32: refinement-stable (N=72->110: forward-biased+indefinite+
+alternating all persist). CONCLUSION: YES — H2 = R1 + L3 is the native retarded-INDEFINITE
+operator, satisfying all 4 success criteria (retarded+alternating+indefinite+closer to BDG than
+L3). Resolves the Phase-2 direction-vs-spectrum trade-off. Code:
+TQM.Tests/ResearchXH/G4L_Phase3_RetardedIndefiniteOperatorTests.cs (G4-L30/31/32); report:
+Docs/Research/G4L_Phase3_RetardedIndefiniteOperator.md.

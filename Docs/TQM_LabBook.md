@@ -281,6 +281,11 @@ Trilogy: QG-029 (attraction dominates) + QG-030 (no counter-structure) + QG-031 
 - R1 matches BDG's forward-only directionality (propagation-distance → 0); R3 stays spectrally closest
 - Trade-off: directionality (nilpotent) vs spectrum (indefinite) pull opposite ways
 
+### G4-L3: Retarded-Indefinite Operator (G4-L Phase 3)
+**Status:** Complete. H2 = R1 + L3 is the native retarded-INDEFINITE operator.
+- Retarded-biased (0.762 > L3 0.615) + indefinite (31+/41−) + alternating, KS to BDG 0.1389 < 0.2222
+- Refinement-stable (N=72→110); resolves the Phase-2 direction-vs-spectrum trade-off
+
 ---
 
 ## Overall Statistics
@@ -290,8 +295,8 @@ Trilogy: QG-029 (attraction dominates) + QG-030 (no counter-structure) + QG-031 
 | DATA | 10 | Complete |
 | QM | 5 | Complete |
 | QG | 31 | Complete |
-| G4 | 18 | Complete |
-| **Total** | **64** | |
+| G4 | 19 | Complete |
+| **Total** | **65** | |
 
 ## Key Unsolved Problems
 

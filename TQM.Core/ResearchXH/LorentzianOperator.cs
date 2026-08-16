@@ -188,6 +188,50 @@ public static class LorentzianOperator
         return t;
     }
 
+    /// <summary>Native causal density ρ_i = past-degree + future-degree (counting measure proxy).</summary>
+    public static double[] CausalDensity(CausalSetData cs)
+    {
+        var rho = new double[cs.Count];
+        for (int i = 0; i < cs.Count; i++)
+            rho[i] = Math.Max(cs.PastDegree[i] + cs.FutureDegree[i], 1.0);
+        return rho;
+    }
+
+    /// <summary>Matrix addition.</summary>
+    public static double[,] Add(double[,] a, double[,] b)
+    {
+        int n = a.GetLength(0);
+        var m = new double[n, n];
+        for (int i = 0; i < n; i++)
+            for (int j = 0; j < n; j++)
+                m[i, j] = a[i, j] + b[i, j];
+        return m;
+    }
+
+    /// <summary>
+    /// H2 — retarded alternating-layer operator: R1 + L3. Combines the retarded (past-only)
+    /// layer operator with the symmetric alternating operator to be forward-BIASED (retarded)
+    /// while keeping an indefinite (both-sign) spectral structure.
+    /// </summary>
+    public static double[,] HybridRetardedAlternating(CausalSetData cs)
+        => Add(PastDirectedLayer(cs), BidirectionalLayer(cs));
+
+    /// <summary>
+    /// H3 — retarded density-weighted layer operator: ρ⁻¹ (R1 + L3) ρ⁻¹, the hybrid weighted
+    /// by the native causal density (the Lorentzian analogue of Lc's density weighting).
+    /// </summary>
+    public static double[,] HybridRetardedDensityWeighted(CausalSetData cs)
+    {
+        var h = HybridRetardedAlternating(cs);
+        var rho = CausalDensity(cs);
+        int n = cs.Count;
+        var m = new double[n, n];
+        for (int i = 0; i < n; i++)
+            for (int j = 0; j < n; j++)
+                m[i, j] = h[i, j] / (rho[i] * rho[j]);
+        return m;
+    }
+
     /// <summary>
     /// Directed layer profile: (past, future) mean entries per interval size k, where
     /// past[k] = mean over i ≺ j and future[k] = mean over i ≻ j.
