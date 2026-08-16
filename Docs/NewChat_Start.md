@@ -7069,3 +7069,18 @@ density-weighted WEAK, L2 interval REJECT. REMAINING GAPS: L3 has uniform (not b
 no diagonal, and is time-symmetric not retarded. Code:
 TQM.Tests/ResearchXH/G4L_Phase1_BDGComparisonTests.cs (G4-L10/11/12); report:
 Docs/Research/G4L_Phase1_BDGComparison.md.
+
+**G4-L Phase 2 (Retarded Operator) — COMPLETED (3/3 tests pass):**
+Question: can retarded causal propagation be produced natively from causal order? Added
+PastDirectedLayer (R1 retarded), FutureDirectedLayer (R2 advanced), BidirectionalLayer (R3 =
+R1+R2 symmetric baseline), Transpose, DirectedLayerProfile to LorentzianOperator +
+GeneralEigenvalues to SpectralCurvature. G4-L20: R1 past-only, R2=R1^T future-only, R3 symmetric.
+G4-L21: R1/R2 NILPOTENT (strictly triangular, max|lambda|~0) vs R3 indefinite (31+/41-, max 18.8);
+interval response R1 past-only (-1,+1,-1,+1), R2 future-only, R3 both. G4-L22: BDG retarded
+forward-only (past 0, future 16); R1 forward-only (past 0, future 24) -> directionality matches
+BDG; R2 backward-only; R3 both-ways. KS to symmetric BDG: R3=0.2222 (closest), R1=R2=0.5972.
+CONCLUSION: YES — retarded propagation is natively produced; R1 matches BDG's forward-only
+directionality (propagation-distance -> 0). TRADE-OFF: directionality (R1, nilpotent degenerate
+spectrum) vs spectrum (R3, indefinite) pull opposite ways; full retarded BDG (diagonal -2 +
+off-diagonal) remains next. Code: TQM.Tests/ResearchXH/G4L_Phase2_RetardedOperatorTests.cs
+(G4-L20/21/22); report: Docs/Research/G4L_Phase2_RetardedOperator.md.

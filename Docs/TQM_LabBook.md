@@ -275,6 +275,12 @@ Trilogy: QG-029 (attraction dominates) + QG-030 (no counter-structure) + QG-031 
 - Only L3 alternates layer sign (BDG's defining feature); BDG is retarded, candidates symmetric
 - Ranking: L3 BEST MATCH, L1 PROMISING, L4 WEAK, L2 REJECT (uniform weights/diagonal still open)
 
+### G4-L2: Retarded Operator (G4-L Phase 2)
+**Status:** Complete. Retarded propagation is produced natively from causal order.
+- R1 (past-directed) → forward-only, nilpotent; R2 (advanced) → backward-only, nilpotent; R3 → symmetric
+- R1 matches BDG's forward-only directionality (propagation-distance → 0); R3 stays spectrally closest
+- Trade-off: directionality (nilpotent) vs spectrum (indefinite) pull opposite ways
+
 ---
 
 ## Overall Statistics
@@ -284,8 +290,8 @@ Trilogy: QG-029 (attraction dominates) + QG-030 (no counter-structure) + QG-031 
 | DATA | 10 | Complete |
 | QM | 5 | Complete |
 | QG | 31 | Complete |
-| G4 | 17 | Complete |
-| **Total** | **63** | |
+| G4 | 18 | Complete |
+| **Total** | **64** | |
 
 ## Key Unsolved Problems
 

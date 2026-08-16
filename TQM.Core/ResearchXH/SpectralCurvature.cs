@@ -18,6 +18,20 @@ public static class SpectralCurvature
         return evals;
     }
 
+    /// <summary>
+    /// Sorted real parts of the eigenvalues of a general (possibly non-symmetric) matrix.
+    /// For a strictly triangular (retarded/advanced) operator the spectrum is the diagonal
+    /// (zero for a zero diagonal → nilpotent).
+    /// </summary>
+    public static double[] GeneralEigenvalues(double[,] matrix)
+    {
+        var mat = Matrix<double>.Build.DenseOfArray(matrix);
+        var evd = mat.Evd();
+        double[] evals = evd.EigenValues.Select(c => c.Real).ToArray();
+        Array.Sort(evals);
+        return evals;
+    }
+
     /// <summary>Heat trace Z(t) = Σ_k exp(−t λ_k).</summary>
     public static double HeatTrace(double[] evals, double t)
     {

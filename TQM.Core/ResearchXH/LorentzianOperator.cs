@@ -156,6 +156,72 @@ public static class LorentzianOperator
     public static bool Alternates(double[] profile)
         => Math.Sign(profile[0]) != 0 && Math.Sign(profile[0]) * Math.Sign(profile[1]) < 0.0;
 
+    /// <summary>
+    /// R1 — past-directed (retarded) layer operator: (−1)^(k+1) over past layers only
+    /// (i ≺ j). Strictly lower-triangular in time order → nilpotent (zero spectrum).
+    /// </summary>
+    public static double[,] PastDirectedLayer(CausalSetData cs)
+    {
+        int n = cs.Count;
+        var m = new double[n, n];
+        for (int i = 0; i < n; i++)
+            for (int j = 0; j < n; j++)
+                if (cs.Order[i, j])
+                    m[i, j] = (cs.Interval[i, j] % 2 == 0) ? -1.0 : 1.0;
+        return m;
+    }
+
+    /// <summary>R2 — future-directed (advanced) layer operator = transpose of R1.</summary>
+    public static double[,] FutureDirectedLayer(CausalSetData cs) => Transpose(PastDirectedLayer(cs));
+
+    /// <summary>R3 — bidirectional layer operator (baseline) = R1 + R2 = symmetric L3.</summary>
+    public static double[,] BidirectionalLayer(CausalSetData cs) => LayerOperator(cs);
+
+    /// <summary>Matrix transpose.</summary>
+    public static double[,] Transpose(double[,] m)
+    {
+        int n = m.GetLength(0);
+        var t = new double[n, n];
+        for (int i = 0; i < n; i++)
+            for (int j = 0; j < n; j++)
+                t[i, j] = m[j, i];
+        return t;
+    }
+
+    /// <summary>
+    /// Directed layer profile: (past, future) mean entries per interval size k, where
+    /// past[k] = mean over i ≺ j and future[k] = mean over i ≻ j.
+    /// </summary>
+    public static (double[] past, double[] future) DirectedLayerProfile(CausalSetData cs, double[,] m, int maxK = 3)
+    {
+        var pastSum = new double[maxK + 1];
+        var pastCnt = new int[maxK + 1];
+        var futSum = new double[maxK + 1];
+        var futCnt = new int[maxK + 1];
+        for (int i = 0; i < cs.Count; i++)
+            for (int j = 0; j < cs.Count; j++)
+            {
+                if (cs.Order[i, j])
+                {
+                    int k = cs.Interval[i, j];
+                    if (k <= maxK) { pastSum[k] += m[i, j]; pastCnt[k]++; }
+                }
+                else if (cs.Order[j, i])
+                {
+                    int k = cs.Interval[j, i];
+                    if (k <= maxK) { futSum[k] += m[i, j]; futCnt[k]++; }
+                }
+            }
+        var past = new double[maxK + 1];
+        var fut = new double[maxK + 1];
+        for (int k = 0; k <= maxK; k++)
+        {
+            past[k] = pastCnt[k] > 0 ? pastSum[k] / pastCnt[k] : 0.0;
+            fut[k] = futCnt[k] > 0 ? futSum[k] / futCnt[k] : 0.0;
+        }
+        return (past, fut);
+    }
+
     /// <summary>Real ascending eigenvalues of a symmetric operator.</summary>
     public static double[] Eigenvalues(double[,] m) => SpectralCurvature.Eigenvalues(m);
 
