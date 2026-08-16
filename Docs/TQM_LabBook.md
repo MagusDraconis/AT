@@ -452,6 +452,10 @@ OPEN/WEAK: matter emergence + dynamics.
 **Status:** Complete (DERIVED). α=0 is the unique maximum-entropy (uniform) allocation + scale-free-field member.
 - entropy H(α) maximized at α=0 (uniform); RG preserves all α (not selective); entropy breaks the degeneracy; caveat: "why entropy is maximized" open
 
+### G4-RHO2: Evolution Equation (G4-RHO Phase 2)
+**Status:** Complete (DERIVED). ρ generated as the stable attractor of scale-space diffusion (entropy gradient flow).
+- ∂_t A_k = D·Δ_k A_k → uniform (α=0) fixed point = log-deficit; dα/dt=μ∂H/∂α stable attractor; closes the ρ-dynamics arc
+
 ---
 
 ## Overall Statistics
@@ -461,8 +465,8 @@ OPEN/WEAK: matter emergence + dynamics.
 | DATA | 10 | Complete |
 | QM | 5 | Complete |
 | QG | 31 | Complete |
-| G4 | 54 | Complete |
-| **Total** | **100** | |
+| G4 | 55 | Complete |
+| **Total** | **101** | |
 
 ## Key Unsolved Problems
 

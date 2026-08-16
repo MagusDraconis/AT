@@ -74,4 +74,31 @@ public static class RhoDynamics
         double ratio = ap[1] / ap[0];
         return -Math.Log(ratio) / (2.0 * Math.Log(lambda));
     }
+
+    // ── G4-RHO Phase 2: evolution equation (entropy gradient flow, scale-space diffusion) ──
+
+    /// <summary>dH/dα (central difference) — the entropy gradient driving the abundance-law evolution.</summary>
+    public static double EntropyDerivative(double alpha, int K = 8, double lambda = 1.5, double h = 1e-4)
+        => (Entropy(alpha + h, K, lambda) - Entropy(alpha - h, K, lambda)) / (2.0 * h);
+
+    /// <summary>d²H/dα² (central difference) — stability of the entropy fixed point.</summary>
+    public static double EntropySecondDerivative(double alpha, int K = 8, double lambda = 1.5, double h = 1e-4)
+        => (Entropy(alpha + h, K, lambda) - 2.0 * Entropy(alpha, K, lambda) + Entropy(alpha - h, K, lambda)) / (h * h);
+
+    /// <summary>
+    /// One Euler step of scale-space diffusion ∂_t A_k = D·(A_{k+1} − 2A_k + A_{k−1}) (reflecting boundaries),
+    /// conserving total deficit while equilibrating the per-octave increments toward uniformity (α=0).
+    /// </summary>
+    public static double[] DiffuseStep(double[] a, double d)
+    {
+        int k = a.Length;
+        var b = new double[k];
+        for (int i = 0; i < k; i++)
+        {
+            double left = (i == 0) ? a[i] : a[i - 1];        // Neumann ghost A[−1] = A[0]
+            double right = (i == k - 1) ? a[i] : a[i + 1];   // Neumann ghost A[K] = A[K−1]
+            b[i] = a[i] + d * (left - 2.0 * a[i] + right);
+        }
+        return b;
+    }
 }
