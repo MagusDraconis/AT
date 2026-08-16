@@ -460,6 +460,10 @@ OPEN/WEAK: matter emergence + dynamics.
 **Status:** Complete (DERIVED). Entropy maximization = maximum likelihood (counting statistics); indifference is the one postulate.
 - uniform allocation has the most microstates (W maximized at α=0, W(0)/W(1)~10^148); diffusion is entropy-increasing
 
+### TQM-F0: Foundation Audit (TQM-F Phase 0)
+**Status:** Complete (synthesis, no new tests). Minimal axiom set: 2 primitives + 2 structural + 2 postulates + 2 parameters + framework base.
+- conformal flatness ASSUMED (exponent 2/d DERIVED); indifference POSTULATED; d and G not derived. See Docs/Research/TQM_FoundationAudit.md
+
 ---
 
 ## Overall Statistics

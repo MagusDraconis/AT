@@ -7606,3 +7606,14 @@ a pure combinatorial fact); the one POSTULATE is INDIFFERENCE (actualization unb
 scale-freeness). Closes full rho-dynamics arc: G4-RHO0 PREFERRED -> G4-RHO1 DERIVED (max entropy) -> G4-RHO2
 DERIVED (attractor/evolution eq) -> G4-RHO3 DERIVED (microscopic maximum-likelihood origin). Report:
 Docs/Research/G4RHO_EntropyOrigin.md.
+
+**TQM-F Phase 0 (Foundation Audit) — COMPLETED (synthesis, no new tests):**
+Audit of remaining foundation assumptions. MINIMAL AXIOM SET: two PRIMITIVES (causal order Q-events; counting
+measure rho), two STRUCTURAL (metric origin sqrt(-g)=rho PREFERRED; conformal flatness g=rho^(2/d)eta ASSUMED —
+exponent 2/d DERIVED from sqrt(-g)=rho), two POSTULATES (matter attracts — G4-ME5's input; indifference/
+scale-freeness — G4-RHO3), two FREE PARAMETERS (spacetime dimension d; Newton's G / BDG scale -2 IMPORTED,
+G4-L12 NO MATCH), plus the temporal-field framework base. ALREADY DERIVED (not assumptions): Lorentzian
+signature (G4-L0), conformal structure (G4-M0), curvature R(rho)+Lc->Delta_g (G4-P/P3), Einstein tensor
+G(rho)+Bianchi (G4-G), geodesic a=-(1/d)grad ln rho (G4-O3), matter=deficit (G4-ME5), 1/r^2 + flat rotation
+(G4-ME2/3), alpha=0 (G4-RHO1/2/3). Sharpest gap: conformal-flatness assumption (freezes the one non-trivial
+metric d.o.f.) and non-derivation of d and G. Report: Docs/Research/TQM_FoundationAudit.md.
