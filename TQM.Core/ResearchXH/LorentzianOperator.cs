@@ -296,13 +296,31 @@ public static class LorentzianOperator
     /// Retarded-biased, indefinite, alternating, Feynman tail suppressed to ~0.43.
     /// </summary>
     public static double[,] NativeLorentzian(CausalSetData cs, double strength = 0.75)
+        => AddDiagonal(RetardedInterval(cs), DegreeDiagonal(cs, strength));
+
+    /// <summary>Negated local-degree self-term: D_i = −s·degree_i/max(degree) (s = 0.75 default).</summary>
+    public static double[] DegreeDiagonal(CausalSetData cs, double strength = 0.75)
     {
-        var h0 = RetardedInterval(cs);
         var deg = LocalDegree(cs).Select(x => (double)x).ToArray();
         double norm = deg.Length == 0 ? 1.0 : deg.Max();
-        if (norm == 0.0) return h0;
-        return AddDiagonal(h0, deg.Select(x => -strength * x / norm).ToArray());
+        return norm == 0.0 ? new double[deg.Length] : deg.Select(x => -strength * x / norm).ToArray();
     }
+
+    /// <summary>
+    /// RetardedPropagator — the strictly causal dual object: G = D + 2R1 (lower-triangular, no
+    /// future coupling). Causal (leak ≈ 0) but elliptic (not indefinite) — the native analogue
+    /// of the retarded Green function's kernel.
+    /// </summary>
+    public static double[,] RetardedPropagator(CausalSetData cs, double strength = 0.75)
+        => AddDiagonal(Scale(PastDirectedLayer(cs), 2.0), DegreeDiagonal(cs, strength));
+
+    /// <summary>
+    /// SignatureOperator — the indefinite dual object: S = H2 + D = 2R1 + R2 + D (full future
+    /// coupling). Lorentzian signature (indefinite) but Feynman (time-symmetric, leaks) — the
+    /// native analogue of the symmetric d'Alembertian □.
+    /// </summary>
+    public static double[,] SignatureOperator(CausalSetData cs, double strength = 0.75)
+        => AddDiagonal(HybridRetardedAlternating(cs), DegreeDiagonal(cs, strength));
 
     /// <summary>Add a per-vertex diagonal d to a square matrix (returns a copy).</summary>
     public static double[,] AddDiagonal(double[,] m, double[] d)

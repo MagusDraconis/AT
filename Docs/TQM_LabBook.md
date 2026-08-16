@@ -314,6 +314,11 @@ Trilogy: QG-029 (attraction dominates) + QG-030 (no counter-structure) + QG-031 
 - leakage 0.428→0.546→0.503→0.417→0.412 (non-monotonic, N=72→506); KS→BDG 0.264→0.237 (weak)
 - residual ~40–55% tail is intrinsic to the symmetric off-diagonal, not a refinement artifact
 
+### G4-L9: Dual-Object Lorentzian (G4-L Phase 9)
+**Status:** Complete. Causality and signature split into two operators, resolving the tension.
+- S = H2+D (signature, indefinite 27+/45−, leak 0.770); G = D+2R1 (retarded, leak 0.082, dir 1.0)
+- S = G + R2 exact; the pair jointly satisfies causality (G) + signature (S)
+
 ---
 
 ## Overall Statistics
@@ -323,8 +328,8 @@ Trilogy: QG-029 (attraction dominates) + QG-030 (no counter-structure) + QG-031 
 | DATA | 10 | Complete |
 | QM | 5 | Complete |
 | QG | 31 | Complete |
-| G4 | 24 | Complete |
-| **Total** | **70** | |
+| G4 | 25 | Complete |
+| **Total** | **71** | |
 
 ## Key Unsolved Problems
 

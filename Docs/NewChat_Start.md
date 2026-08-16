@@ -7197,3 +7197,16 @@ single-matrix program cannot. CLASSIFICATION: future/symmetric L3 contribution E
 role); BDG diagonal ESSENTIAL role/OPTIONAL value; non-truncation OPTIONAL; R1 nilpotence ARTIFACT.
 The ~40-55% plateau is the irreducible signature-causality trade-off, NOT a missing coefficient or
 refinement artifact. Report: Docs/Research/G4L_LeakageSourceAudit.md.
+
+**G4-L Phase 9 (Dual-Object Lorentzian) — COMPLETED (3/3 tests pass; all 30 G4-L re-verified):**
+Question: must causality and Lorentzian signature be TWO operators, not one? Added DegreeDiagonal,
+RetardedPropagator (G = D + 2R1), SignatureOperator (S = H2 + D = 2R1 + R2 + D) to LorentzianOperator.
+Measured: S indefinite (27+,45-) leak 0.770 time-symmetric/Feynman; G strictly causal leak 0.082
+direction 1.000 front-v 0.75<=1 but elliptic (0+,72-); single-object H leak 0.428 compromise.
+Structural link VERIFIED exact: S = G + R2 (max|diff|=0). CONCLUSION: YES — the dual-object pair
+RESOLVES the signature-causality tension: G carries causality (leak 0.082 ~ BDG_ret 0.021) and S
+carries the signature (indefinite), jointly satisfying both criteria no single matrix met. Mirrors
+BDG's symmetric Box (signature) + retarded Green function (causality) split. The Phase-8 ~40-55%
+tail is the price of conflating the two objects. Code:
+TQM.Tests/ResearchXH/G4L_Phase9_DualObjectLorentzianTests.cs (G4-L90/91/92); report:
+Docs/Research/G4L_DualObjectLorentzian.md.
