@@ -298,6 +298,11 @@ Trilogy: QG-029 (attraction dominates) + QG-030 (no counter-structure) + QG-031 
 - D2 comparable-count suppresses most (0.473) but kills indefiniteness; constant diagonal negligible
 - Residual tail (~73%) is intrinsic to the symmetric off-diagonal L3
 
+### G4-L6: Retarded Alternation (G4-L Phase 6)
+**Status:** Complete. Interval-weighted alternation reduces the Feynman tail at its source.
+- A3 (past full, future 1/(k+1)): leakage 0.759→0.669, indefinite (31+/41−), refinement-stable
+- A1 (pure lower-tri) reduces most (0.569) but is nilpotent; A2 no effect; A4 marginal (0.750)
+
 ---
 
 ## Overall Statistics
@@ -307,8 +312,8 @@ Trilogy: QG-029 (attraction dominates) + QG-030 (no counter-structure) + QG-031 
 | DATA | 10 | Complete |
 | QM | 5 | Complete |
 | QG | 31 | Complete |
-| G4 | 21 | Complete |
-| **Total** | **67** | |
+| G4 | 22 | Complete |
+| **Total** | **68** | |
 
 ## Key Unsolved Problems
 

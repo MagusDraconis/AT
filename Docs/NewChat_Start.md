@@ -7127,3 +7127,17 @@ Feynman tail while preserving retardation/indefiniteness/alternation; but only ~
 is intrinsic to the symmetric off-diagonal L3). Code:
 TQM.Tests/ResearchXH/G4L_Phase5_DiagonalTermStudyTests.cs (G4-L50/51/52); report:
 Docs/Research/G4L_Phase5_DiagonalTermStudy.md.
+
+**G4-L Phase 6 (Retarded Alternation) — COMPLETED (3/3 tests pass):**
+Question: can the alternating layer operator be made partially retarded while preserving its
+indefinite spectrum? Added Scale + IntervalWeightedAlternation to LorentzianOperator. Tested A1
+lower-triangular (R1), A2 causal-weighted (R1+0.5R2), A3 interval-weighted (past full, future
+1/(k+1)), A4 hybrid (R1+0.5L3) vs H2 baseline (leak 0.759). G4-L60: A1 0.569 (most, but
+nilpotent), A2 0.759 (no change), A3 0.669, A4 0.750. G4-L61: A3 interval-weighted is the WINNER
+— leak 0.669<0.759, indefinite (31+/41-), alternating, directionality 0.720; A4 also satisfies
+(0.750). G4-L62: A3 refinement-stable (N=72 leak 0.669 -> N=110 0.589). CONCLUSION: YES —
+interval-weighted alternation (down-weight future layers 1/(k+1)) reduces the Feynman tail at its
+source (~12%) while preserving indefiniteness+alternation+refinement. Caveat: residual tail is the
+irreducible symmetric remnant; full causality needs BDG diagonal (-2). Code:
+TQM.Tests/ResearchXH/G4L_Phase6_RetardedAlternationTests.cs (G4-L60/61/62); report:
+Docs/Research/G4L_Phase6_RetardedAlternation.md.

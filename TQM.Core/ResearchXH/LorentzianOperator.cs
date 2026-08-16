@@ -239,6 +239,42 @@ public static class LorentzianOperator
         return r;
     }
 
+    /// <summary>Scale a square matrix by a scalar (returns a copy).</summary>
+    public static double[,] Scale(double[,] m, double s)
+    {
+        int n = m.GetLength(0);
+        var r = new double[n, n];
+        for (int i = 0; i < n; i++)
+            for (int j = 0; j < n; j++)
+                r[i, j] = s * m[i, j];
+        return r;
+    }
+
+    /// <summary>
+    /// A3 — retarded interval alternation: past layers carry full weight (−1)^(k+1), future
+    /// layers carry a decayed weight (−1)^(k+1)/(k+1). Retarded-biased by interval distance.
+    /// </summary>
+    public static double[,] IntervalWeightedAlternation(CausalSetData cs)
+    {
+        int n = cs.Count;
+        var m = new double[n, n];
+        for (int i = 0; i < n; i++)
+            for (int j = 0; j < n; j++)
+            {
+                if (cs.Order[j, i])  // j ≺ i (past): full weight
+                {
+                    int k = cs.Interval[j, i];
+                    m[i, j] = (k % 2 == 0) ? -1.0 : 1.0;
+                }
+                else if (cs.Order[i, j])  // i ≺ j (future): interval-decayed
+                {
+                    int k = cs.Interval[i, j];
+                    m[i, j] = ((k % 2 == 0) ? -1.0 : 1.0) / (k + 1.0);
+                }
+            }
+        return m;
+    }
+
     /// <summary>Matrix addition.</summary>
     public static double[,] Add(double[,] a, double[,] b)
     {
