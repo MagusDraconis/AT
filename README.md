@@ -55,8 +55,8 @@ Phase Gradients → Geometry → Gravity
 | **DATA** — Cosmology & RAR | 10 (DATA-001→010) | Complete |
 | **QM** — Quantum Foundations | 5 (QM-001→005) | Complete |
 | **QG** — Quantum Gravity | 31 (QG-001→031) | Complete |
-| **G4** — Native Metric-to-Operator Coupling | 15 phases / 45 tests | Complete |
-| **Total** | **61** | |
+| **G4** — Native Metric-to-Operator Coupling | 16 phases / 48 tests | Complete |
+| **Total** | **62** | |
 
 ## Key Results
 

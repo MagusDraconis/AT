@@ -263,6 +263,12 @@ Trilogy: QG-029 (attraction dominates) + QG-030 (no counter-structure) + QG-031 
 - C3 information density (needs Θ layer) / C4 hybrid: rejected (non-minimal, non-native)
 - Self-consistent with Metric Origin (f = ρ^(2/d)) and the structure/content split
 
+### G4-L0: Native Lorentzian Operators (G4-L Phase 0)
+**Status:** Complete. Causal order alone yields the Lorentzian signature (indefiniteness).
+- L1 causal-link / L2 interval / L3 layer / L4 density-weighted — all 4 indefinite (non-elliptic)
+- L1 (36+/36−) perfectly balanced; L4 preserves L1 inertia (Sylvester)
+- Distinguishable from Lc (PSD) by spectrum sign; continuum limit to □ still open
+
 ---
 
 ## Overall Statistics
@@ -272,8 +278,8 @@ Trilogy: QG-029 (attraction dominates) + QG-030 (no counter-structure) + QG-031 
 | DATA | 10 | Complete |
 | QM | 5 | Complete |
 | QG | 31 | Complete |
-| G4 | 15 | Complete |
-| **Total** | **61** | |
+| G4 | 16 | Complete |
+| **Total** | **62** | |
 
 ## Key Unsolved Problems
 

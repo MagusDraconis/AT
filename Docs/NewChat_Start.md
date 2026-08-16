@@ -7042,3 +7042,18 @@ only), BDG weights (Lorentzian). Changed vs v1.0: operator now NATIVE (was impor
 Laplacian L_W); operator->coupling gap MOSTLY CLOSED. VERDICT: YES — native Riemannian geometry
 program exists (conformally-flat sector); original G4 blocker MOSTLY CLOSED. Report:
 Docs/Research/G4F1_RiemannianReassessment.md.
+
+**G4-L Phase 0 (Native Lorentzian Operators) — COMPLETED (3/3 tests pass):**
+Question: can causal order alone produce a Lorentzian operator analogous to Lc in the
+Riemannian sector? Added CausalSet (deterministic 1+1D Minkowski grid, 72 events, order
+i<j iff t_j-t_i>|x_j-x_i|, 175 links) + LorentzianOperator (L1 causal-link A+A^T, L2 interval
+|[i,j]|, L3 layer alternating (-1)^(k+1), L4 density-weighted rho^-1(A+A^T)rho^-1). G4-L00: DAG
++ directed links + all symmetric. G4-L01: ALL 4 indefinite (L1 36+/36-, L2 45+/27-, L3 31+/41-,
+L4 36+/36-; L1/L4 perfectly balanced, L4 preserves L1 inertia by Sylvester). G4-L02: Lc PSD
+(255+/0-/1 zero) vs causal operators indefinite -> clean spectral separation of elliptic vs
+Lorentzian. CONCLUSION: YES — causal order alone gives native Lorentzian-SIGNATURE operators;
+L3 is closest native BDG analogue (alternating layers). CAVEAT: signature (indefiniteness) not
+yet the wave operator — continuum limit to Box (Lorentzian analogue of G4-C1) and BDG weights
+still open. Code: TQM.Core/ResearchXH/CausalSet.cs + LorentzianOperator.cs; tests:
+TQM.Tests/ResearchXH/G4L_Phase0_NativeLorentzianOperatorsTests.cs (G4-L00/01/02); report:
+Docs/Research/G4L_Phase0_NativeLorentzianOperators.md.
