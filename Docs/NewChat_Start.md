@@ -7519,3 +7519,17 @@ matching discrete hierarchy exactly and log envelope <=14%. CLASSIFICATION: SEMI
 UNIQUE scale-invariant profile (natural constant-per-octave growth, no fine-tuning), but it is the MARGINAL alpha=0
 member of the self-similar family; dynamic selection of alpha=0 is a symmetry assumption, not a derived attractor.
 Free params m0, Rmax = total mass/size (also free in GR). Report: Docs/Research/G4ME_RealityCheck.md.
+
+**GRAVITY REASSESSMENT (full program G4/G4-L/G4-G/G4-O/G4-ME) — COMPLETED (synthesis, no new tests):**
+Classified all major results. DERIVED (high confidence): conformal structure + Lorentzian signature from causal
+order; Lc -> -c*Delta_g continuum limit (exact all d); curvature R(rho); Ricci/Einstein tensor G(rho) with Bianchi
+auto; geodesic a = -(1/d)grad ln rho. REAL-UNDERIVED: the metric ansatz g = rho^(2/d)eta (metric-origin axiom);
+counting measure rho; causal order; Newton's G / BDG scale -2 (G4-L12 NO MATCH). OPEN/WEAK: matter emergence —
+Lovelock forces T=G/kappa VACUOUS (no independent sector); matter=deficit m=rho-bar-rho is a HYPOTHESIS not
+derived; no DYNAMICAL origin of rho (program is kinematic). PARTIAL: Newton-like 1/r^2 (needs matter=deficit +
+scale-free hierarchy); flat rotation curves (log-deficit SEMI-NATURAL, alpha=0 marginal). Failure modes: SCI
+degree-dependent; refinement non-monotonicity; repulsion-at-peaks fixed only by redefining matter; G=kappa*T is
+identity not field equation. TOP OPEN PROBLEMS: (1) dynamical origin of rho, (2) metric ansatz underived, (3) no
+independent matter/energy sector, (4) exact normalization imported, (5) alpha=0 selection not derived. Bottom
+line: TQM derives exact KINEMATIC gravity (correspondence), not DYNAMICS or MATTER. Report:
+Docs/Research/TQM_Gravity_Reassessment.md.

@@ -431,6 +431,11 @@ Trilogy: QG-029 (attraction dominates) + QG-030 (no counter-structure) + QG-031 
 **Status:** Complete (SEMI-NATURAL). Flat-rotation-curve hierarchy is the unique scale-invariant profile, not a tuned ansatz.
 - log deficit m ∝ ln(Rmax/r) = marginal α=0 member of m ∝ r^(−α); constant per-octave increment (self-similar); selection of α=0 is a symmetry assumption, not derived
 
+### Gravity Reassessment (full G4/G4-L/G4-G/G4-O/G4-ME)
+**Status:** Complete (synthesis, no new tests). DERIVED: geometry/curvature/Einstein-structure (high confidence);
+OPEN/WEAK: matter emergence + dynamics.
+- metric ansatz g=ρ^(2/d)η, matter=deficit, and the scale-free hierarchy are the only non-derived ingredients; T=G/κ is vacuous (Lovelock); no dynamical origin of ρ. See Docs/Research/TQM_Gravity_Reassessment.md
+
 ---
 
 ## Overall Statistics
