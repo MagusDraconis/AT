@@ -67,6 +67,46 @@ public static class DeficitCollective
         return rhoBar - m;
     }
 
+    // ── G4-ME Phase 3: astrophysical profiles (rotation curves, finite cutoffs, populations) ──
+
+    /// <summary>Rotation-curve proxy v²(r) = r·|a(r)| (circular-velocity squared for the TQM field).</summary>
+    public static double RotationCurveProxy(Func<double, double> rho, double r, int d = 3, double h = 1e-6)
+        => r * Math.Abs(TqmAcceleration3D(rho, r, d, h));
+
+    /// <summary>Newtonian rotation curve v²(r) = M_encl(r)/r for a distributed deficit m = ρ̄−ρ.</summary>
+    public static double NewtonianRotationCurve(Func<double, double> rho, double r, double rhoBar = 1.0, int n = 20000)
+        => r * Math.Abs(NewtonianAcceleration3D(rho, r, rhoBar, n));
+
+    /// <summary>
+    /// Log-deficit profile ρ = ρ̄ − m₀·ln(Rmax/r)/ln(Rmax/r₀) for r₀ ≤ r ≤ Rmax (constant deficit per octave,
+    /// finite-size cutoff at Rmax). Its field a = −m₀/(d·ρ·r·ln(Rmax/r₀)) ∝ −1/r, giving a FLAT rotation curve.
+    /// </summary>
+    public static double LogDeficit(double r, double rhoBar = 1.0, double m0 = 0.4, double r0 = 0.5, double Rmax = 10.0)
+    {
+        if (r <= r0) return rhoBar - m0;
+        if (r >= Rmax) return rhoBar;
+        return rhoBar - m0 * Math.Log(Rmax / r) / Math.Log(Rmax / r0);
+    }
+
+    /// <summary>
+    /// Discrete annular deficit hierarchy (constant amplitude per octave, finite K): a staircase deficit
+    /// m(r) = m₀·(K−k)/K in octave k (R_k = r₀λ^k), the discrete form of LogDeficit m ∝ ln(Rmax/r).
+    /// </summary>
+    public static double AnnularDeficit(double r, double rhoBar = 1.0, double m0 = 0.4, double r0 = 0.5,
+        double lambda = 1.5, int K = 8)
+    {
+        if (r <= r0) return rhoBar - m0;
+        double Rk = r0;
+        for (int k = 0; k < K; k++)
+        {
+            double Rnext = Rk * lambda;
+            if (r >= Rk && r < Rnext)
+                return rhoBar - m0 * (K - k) / (double)K;
+            Rk = Rnext;
+        }
+        return rhoBar; // beyond Rmax = r0·λ^K
+    }
+
     /// <summary>Least-squares linear fit of log y vs log x (power-law y ∝ x^slope); returns (slope, intercept).</summary>
     public static (double slope, double intercept) LogLogFit(double[] xs, double[] ys)
     {

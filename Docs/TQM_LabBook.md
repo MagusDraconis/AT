@@ -423,6 +423,10 @@ Trilogy: QG-029 (attraction dominates) + QG-030 (no counter-structure) + QG-031 
 **Status:** Complete (MECHANISM IDENTIFIED). Long-range gravity = conformal 1/r tail of a scale-free deficit hierarchy.
 - networks of localized voids stay localized; a SELF-SIMILAR (one-void-per-octave) hierarchy → m ∝ 1/r → a ∝ 1/r²; abundance-law continuum → exact 1/r² with M_eff → const
 
+### G4-ME3: Astrophysical Plausibility (G4-ME Phase 3)
+**Status:** Complete (PLAUSIBLE/MATCH). Galaxy-scale profiles reproducible from deficit hierarchies.
+- power-law deficit → Keplerian v² ∝ 1/r (point mass); log-deficit (constant deficit/octave) → flat rotation curve + halo M_eff ∝ r, no dark-matter sector
+
 ---
 
 ## Overall Statistics
@@ -432,8 +436,8 @@ Trilogy: QG-029 (attraction dominates) + QG-030 (no counter-structure) + QG-031 
 | DATA | 10 | Complete |
 | QM | 5 | Complete |
 | QG | 31 | Complete |
-| G4 | 48 | Complete |
-| **Total** | **94** | |
+| G4 | 49 | Complete |
+| **Total** | **95** | |
 
 ## Key Unsolved Problems
 

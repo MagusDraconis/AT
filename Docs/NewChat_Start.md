@@ -7493,3 +7493,16 @@ gives a = -(1/d)m'/rho -> -m0*r0/(d*rho-bar*r^2) EXACT Newtonian 1/r^2; effectiv
 m0*r0/(d*rho-bar)=0.0833 (const, point-mass form; M_eff(12)=0.0784, 94%). CLASSIFICATION: MECHANISM IDENTIFIED —
 long-range gravity = the conformal 1/r tail (rho ~ 1 - d*M/r) of a SCALE-FREE (self-similar, abundance-law)
 deficit hierarchy; single localized voids are insufficient. Report: Docs/Research/G4ME_LongRangeGravity.md.
+
+**G4-ME Phase 3 (Astrophysical Plausibility) — COMPLETED (3/3 tests pass; 12/12 G4-ME verified):**
+Question: can realistic galaxy-scale mass profiles emerge? Added RotationCurveProxy, NewtonianRotationCurve,
+LogDeficit, AnnularDeficit to DeficitCollective. G4-ME30 power-law hierarchy: rotation curve v^2 = r|a| ~ 1/r
+(KEPLERIAN point-mass; v^2(3)/v^2(9)=2.5), M_eff=v^2*r -> m0*r0/(d*rho-bar)=0.0833 const. G4-ME31 log-deficit
+(constant-deficit-per-octave abundance law): m = m0*ln(Rmax/r)/ln(Rmax/r0), a = -m0/(d*rho*r*ln(Rmax/r0)) ~ -1/r,
+FLAT rotation curve v^2 ~ const (v^2(3)/v^2(9)=1.18, Keplerian would be ~3); v^2(9)=0.0451 matches analytic
+0.0445 (1%); M_eff = v^2*r GROWS ~ r (0.159->0.406, dark-matter-halo form M~r); finite cutoff at Rmax (field
+vanishes beyond). G4-ME32 hierarchical void population: discrete annular hierarchy (const amplitude/octave, K) =
+staircase m=m0*(K-k)/K matches log deficit (<=14% inner octaves), vanishes beyond Rmax; flat v^2 STABLE
+(depends only on m0, Rmax, r0, not void spacing lambda). CLASSIFICATION: PLAUSIBLE/MATCH — galaxy-scale profiles
+reproducible: power-law -> Keplerian, log-deficit -> flat rotation curve (the dark-matter signature) + halo M~r,
+NO dark-matter sector. Report: Docs/Research/G4ME_AstrophysicalProfiles.md.
