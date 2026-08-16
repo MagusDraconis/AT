@@ -7141,3 +7141,17 @@ source (~12%) while preserving indefiniteness+alternation+refinement. Caveat: re
 irreducible symmetric remnant; full causality needs BDG diagonal (-2). Code:
 TQM.Tests/ResearchXH/G4L_Phase6_RetardedAlternationTests.cs (G4-L60/61/62); report:
 Docs/Research/G4L_Phase6_RetardedAlternation.md.
+
+**G4 Final Reassessment — COMPLETED (synthesis of 22 phases / 66 tests; no new experiments):**
+Question: how much of the original metric->operator coupling gap remains open? Classification of 7
+areas: (1) Metric Origin SOLVED; (2) Native Riemannian Operator SOLVED (Lc = rho^-1 L rho^-1,
+SC1-SC4, unique (a=b)); (3) Curvature Reconstruction MOSTLY SOLVED (sign+ordering, magnitude open);
+(4) Curvature Dynamics MOSTLY SOLVED (mean-field R=F(rho), F'<0; field open); (5) Native Lorentzian
+Operator SOLVED (L1-L4 indefinite, L3 best BDG match KS 0.2222); (6) Native Retarded Lorentzian
+Operator MOSTLY SOLVED (R1 retarded, H2=R1+L3 retarded-indefinite KS 0.1389, D4/A3 reduce Feynman
+tail 0.759->0.697/0.669 but full causality open); (7) Remaining Blockers OPEN (5 items: BDG diagonal
+-2 full causality, absolute magnitude, field dynamics, analytic continuum proof, optional native
+Malament). VERDICT: metric->operator gap MOSTLY CLOSED — Riemannian sector CLOSED, Lorentzian
+sector MOSTLY SOLVED (was OPEN); original blocker "operator is imported" RESOLVED; only remaining
+import is the BDG diagonal coefficient closing the Feynman tail into a fully causal propagator.
+Report: Docs/Research/G4_Final_Reassessment.md.
