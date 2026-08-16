@@ -7446,3 +7446,14 @@ physics), NOT matter anti-gravity — rho is NOT matter; it acts as the conforma
 accelerate toward LOWER-actualization regions (expansive anti-screening). A Newtonian attractive matter
 sector needs a SEPARATE density primitive (not imported; G4-G4 has no independent matter). Report:
 Docs/Research/G4O_RhoInterpretationAudit.md.
+
+**G4-O Phase 5 (Observable Bridge Audit) — COMPLETED (3/3 tests pass; 18/18 G4-O verified):**
+Question: is a=-(1/d)grad ln rho the physical test-particle acceleration, or an incorrect observable map?
+G4-O50: numerical geodesic integration — particle in a Gaussian peak moves AWAY (x 0.300->0.331, repulsive),
+confirming a is the genuine geodesic motion. G4-O51: a=-grad Phi exactly + curvature consistency Delta Phi
++(1/2)rho R=0 (d=2), profile-independent across Gaussian/NFW/exponential/uniform-sphere. G4-O52: TQM map
+(rho as conformal) a=+0.231 repulsive vs Newton map (rho as matter) a=-0.525 attractive. CLASSIFICATION:
+A) repulsion is a REAL TQM prediction (direct geodesic equation, not a map), AND C) rho (actualization/
+counting) is the CONFORMAL factor, NOT matter — Newtonian attraction needs a separate matter primitive
+(absent per G4-G4). The observable acceleration is correctly identified; TQM gravity is expansive
+anti-screening, not matter attraction. Report: Docs/Research/G4O_ObservableBridgeAudit.md.

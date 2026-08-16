@@ -407,6 +407,10 @@ Trilogy: QG-029 (attraction dominates) + QG-030 (no counter-structure) + QG-031 
 **Status:** Complete (GENUINE). ρ = counting measure = conformal factor (f=ρ^(2/d)), NOT matter.
 - repulsion is the expansive effect of the conformal factor; matter sector needs a separate primitive
 
+### G4-O5: Observable Bridge Audit (G4-O Phase 5)
+**Status:** Complete (A+C). a=−(1/d)∇lnρ is the genuine geodesic acceleration; ρ ≠ matter.
+- particle physically moves repulsively (numerical geodesic); ρ is conformal factor, not matter
+
 ---
 
 ## Overall Statistics
@@ -416,8 +420,8 @@ Trilogy: QG-029 (attraction dominates) + QG-030 (no counter-structure) + QG-031 
 | DATA | 10 | Complete |
 | QM | 5 | Complete |
 | QG | 31 | Complete |
-| G4 | 44 | Complete |
-| **Total** | **90** | |
+| G4 | 45 | Complete |
+| **Total** | **91** | |
 
 ## Key Unsolved Problems
 
