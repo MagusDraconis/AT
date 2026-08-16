@@ -6982,3 +6982,19 @@ unstable and trajectories run away; a bounded cosmology needs an ADDITIONAL rest
 (next phase: restoring terms / attractors). Code:
 TQM.Tests/ResearchXH/G4E_Phase1_FeedbackDynamicsTests.cs (G4-E10/11/12); report:
 Docs/Research/G4E_Phase1_FeedbackDynamics.md.
+
+**G4-E Phase 2 (Restoring Mechanisms) — COMPLETED (3/3 tests pass):**
+Question: can any primitive-native term stabilize rho around flat? Added RestoringTerm enum +
+SimulateRestoring to CurvatureFeedback. Tested (1) diffusion rhodot=-kR-d(rho-1), (2) logistic
+rhodot=-kR-c(rho-1)^3, (3) conservation mean(rho)=1. Critical diffusion d*=k|F'(1)|=10.68
+(linearization lambda=k|F'(1)|-d). G4-E20: d<d* -> flat unstable but bounded (bistable off-flat
+attractors -0.445/+2.588 at d=3); d>d* -> flat GLOBALLY stable (d=15/25 -> rho_T=1.000); d=d*
+marginal (asymmetric: flat from below, 1.446 from above). G4-E21 logistic: no linear part so flat
+stays unstable; two stable finite attractors (c=1 -> -0.631/+2.683, asymmetric because F clamps
+at +4.335/-4.764), 0/12 oscillatory, all bounded+converged. G4-E22 conservation pins flat
+(degenerate). CONCLUSION: YES — primitive-native restoring terms stabilize the anti-diffusive
+feedback with NO new primitives. Diffusion (d>d*) stabilizes flat; logistic gives bistable finite
+attractors; conservation is degenerate. A stable bounded cosmology is reachable natively; the
+anti-diffusive instability is just the ABSENCE of a restoring term. Closes G4-E feedback program.
+Code: TQM.Tests/ResearchXH/G4E_Phase2_RestoringMechanismsTests.cs (G4-E20/21/22); report:
+Docs/Research/G4E_Phase2_RestoringMechanisms.md.

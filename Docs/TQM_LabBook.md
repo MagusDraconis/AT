@@ -249,6 +249,14 @@ Trilogy: QG-029 (attraction dominates) + QG-030 (no counter-structure) + QG-031 
 - F(1)=0, F′(1)=−10.68; flat unstable (λ=+10.68); 0/12 oscillatory; 2217/2217 anti-diffusive
 - Bounded cosmology requires an ADDITIONAL restoring term
 
+### G4-E2: Restoring Mechanisms (G4-E Phase 2)
+**Status:** Complete. Primitive-native restoring terms DO stabilize the feedback.
+- Critical diffusion d* = k|F′(1)| = 10.68; d < d* → flat unstable but bounded (bistable);
+  d > d* → flat globally stable
+- Logistic −c(ρ−1)³ → bistable finite attractors (c=1: −0.631 / +2.683), 0/12 oscillatory
+- Conservation mean(ρ)=1 → pins flat (degenerate stabilizer)
+- Stable finite attractor reachable with NO new primitives (diffusion → flat; logistic → pair)
+
 ---
 
 ## Overall Statistics
@@ -258,8 +266,8 @@ Trilogy: QG-029 (attraction dominates) + QG-030 (no counter-structure) + QG-031 
 | DATA | 10 | Complete |
 | QM | 5 | Complete |
 | QG | 31 | Complete |
-| G4 | 13 | Complete |
-| **Total** | **59** | |
+| G4 | 14 | Complete |
+| **Total** | **60** | |
 
 ## Key Unsolved Problems
 

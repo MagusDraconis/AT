@@ -13,6 +13,22 @@ public enum FeedbackModel
     Product
 }
 
+/// <summary>Primitive-native restoring terms added to ρ̇ = −kR (G4-E Phase 2).</summary>
+public enum RestoringTerm
+{
+    /// <summary>No restoring term (pure anti-diffusive feedback).</summary>
+    None,
+
+    /// <summary>Linear diffusion: −d·(ρ−1).</summary>
+    Diffusion,
+
+    /// <summary>Cubic (logistic) restoring: −c·(ρ−1)³.</summary>
+    Logistic,
+
+    /// <summary>Hard conservation constraint mean(ρ) = 1 (pins the mean density to flat).</summary>
+    Conservation
+}
+
 /// <summary>
 /// G4-E Phase 1: closed-loop curvature–density feedback. Given the native reconstruction
 /// R̂ = F(ρ̄) (a monotonically decreasing map, F′(ρ) &lt; 0), evolve ρ in discrete time under
@@ -79,6 +95,36 @@ public static class CurvatureFeedback
         {
             double r = Interpolate(rhoMap, scoreMap, rho[t]);
             rho[t + 1] = rho[t] + dt * FeedbackRate(model, rho[t], r, k);
+        }
+        return rho;
+    }
+
+    /// <summary>
+    /// Discrete-time feedback with a primitive-native restoring term:
+    /// ρ_{t+1} = ρ_t + Δt·(−k·F(ρ_t) + restoring(ρ_t)). The Conservation term applies a hard
+    /// projection ρ_{t+1} = 1 (mean pinned to flat) rather than an additive force.
+    /// </summary>
+    public static double[] SimulateRestoring(double[] rhoMap, double[] scoreMap,
+        double k, double dt, int steps, double rho0, RestoringTerm term, double strength)
+    {
+        var rho = new double[steps + 1];
+        rho[0] = rho0;
+        for (int t = 0; t < steps; t++)
+        {
+            if (term == RestoringTerm.Conservation)
+            {
+                rho[t + 1] = 1.0;
+                continue;
+            }
+            double r = Interpolate(rhoMap, scoreMap, rho[t]);
+            double feedback = -k * r;
+            double restoring = term switch
+            {
+                RestoringTerm.Diffusion => -strength * (rho[t] - 1.0),
+                RestoringTerm.Logistic => -strength * Math.Pow(rho[t] - 1.0, 3),
+                _ => 0.0
+            };
+            rho[t + 1] = rho[t] + dt * (feedback + restoring);
         }
         return rho;
     }
