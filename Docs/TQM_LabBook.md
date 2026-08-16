@@ -436,6 +436,10 @@ Trilogy: QG-029 (attraction dominates) + QG-030 (no counter-structure) + QG-031 
 OPEN/WEAK: matter emergence + dynamics.
 - metric ansatz g=ρ^(2/d)η, matter=deficit, and the scale-free hierarchy are the only non-derived ingredients; T=G/κ is vacuous (Lovelock); no dynamical origin of ρ. See Docs/Research/TQM_Gravity_Reassessment.md
 
+### G4-A0: Metric Ansatz Audit (G4-A Phase 0)
+**Status:** Complete (PREFERRED). Exponent k=2/d is UNIQUE; conformal flatness is ASSUMED.
+- √(−g)=ρ ⇒ k=2/d uniquely; scale invariance k-independent; ψ-perturbed non-flat metric with same √(−g)=ρ gives different acceleration
+
 ---
 
 ## Overall Statistics
@@ -445,8 +449,8 @@ OPEN/WEAK: matter emergence + dynamics.
 | DATA | 10 | Complete |
 | QM | 5 | Complete |
 | QG | 31 | Complete |
-| G4 | 50 | Complete |
-| **Total** | **96** | |
+| G4 | 51 | Complete |
+| **Total** | **97** | |
 
 ## Key Unsolved Problems
 

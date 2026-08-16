@@ -7533,3 +7533,14 @@ identity not field equation. TOP OPEN PROBLEMS: (1) dynamical origin of rho, (2)
 independent matter/energy sector, (4) exact normalization imported, (5) alpha=0 selection not derived. Bottom
 line: TQM derives exact KINEMATIC gravity (correspondence), not DYNAMICS or MATTER. Report:
 Docs/Research/TQM_Gravity_Reassessment.md.
+
+**G4-A Phase 0 (Metric Ansatz Audit) — COMPLETED (3/3 tests pass):**
+Question: why exactly g = rho^(2/d)eta? Added MetricAnsatzAudit (general-k g_00/g_11, sqrt(-g)=rho^(kd/2),
+geodesic a=-(k/2)d(ln rho)/dx, volume error, psi-perturbed non-flat counterexample). G4-A00 volume-element/
+counting-measure consistency sqrt(-g)=rho UNIQUELY selects k=2/d (kd/2=1; only k=2/3 gives error 0, others 7-16%).
+G4-A01 scale invariance + conformal covariance are k-INDEPENDENT (a=-(k/2)grad ln rho invariant under rho->c*rho
+for every k; only grad ln rho, not k, is the invariant) -> not selective. G4-A02 conformal flatness is ASSUMED:
+psi-perturbed metric g_00=-rho^(2/d)e^{2psi}, g_11=rho^(2/d)e^{-2psi/(d-1)} has SAME sqrt(-g)=rho but different
+acceleration (-0.760 vs -0.230) -> sqrt(-g)=rho fixes only det, not the metric. CLASSIFICATION: PREFERRED —
+exponent k=2/d UNIQUE (derived), conformal flatness ASSUMED (preferred by minimality: rho is the only scalar).
+Report: Docs/Research/G4A_MetricAnsatzAudit.md.
