@@ -7210,3 +7210,15 @@ BDG's symmetric Box (signature) + retarded Green function (causality) split. The
 tail is the price of conflating the two objects. Code:
 TQM.Tests/ResearchXH/G4L_Phase9_DualObjectLorentzianTests.cs (G4-L90/91/92); report:
 Docs/Research/G4L_DualObjectLorentzian.md.
+
+**G4-P Phase 0 (Analytic Continuum Proof) — COMPLETED (formal derivation; no new tests/experiments):**
+Question: what operator does Lc = rho^-1 L rho^-1 become as h -> 0? DERIVATION: unnormalized
+Laplacian L psi = -c[rho Delta psi + 2 grad(rho).grad(psi)] = -c(1/rho) div(rho^2 grad psi). Then
+Lc phi = rho^-1 L(phi/rho) = -c[rho^-1 Delta phi - (Delta rho / rho^2) phi]. For d=2, Delta_g = rho^-1
+Delta_eta, so Lc = -c Delta_g + c(Delta rho/rho^2) phi. CLASSIFICATION: PARTIAL — Lc reproduces the
+Laplace-Beltrami Delta_g at leading DIFFERENTIAL order, but with an unavoidable zeroth-order native
+potential V = c(Delta rho/rho^2) that is NOT in Delta_g (vanishes iff rho harmonic/const). For
+rho=1+a x^2, V(0)=2ac = -(c/2)R(0) — curvature-proportional. d!=2: FAILED (wrong density power).
+IMPLICATION: explains G4-C empirically (sign separation driven by the Delta rho/rho^2 potential, not
+bare Delta_g); the metric->operator correspondence is Delta_g + native curvature potential. Next:
+G4-P Phase 1 numeric confirmation. Report: Docs/Research/G4P_AnalyticContinuumProof.md.
