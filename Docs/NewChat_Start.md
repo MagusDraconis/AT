@@ -7570,3 +7570,15 @@ power law -> no uniqueness. CLASSIFICATION: PREFERRED (alpha=0), NOT DERIVED fro
 flat rotation requires the DEFICIT m=rho-bar-rho, whose unique scale-invariant form is alpha=0 (log, a SYMMETRY
 selection); conservation favors the repulsive rho~r^-2; dynamical origin of rho (why deficit/attractive over
 raw/repulsive) remains OPEN (#1 unresolved). Report: Docs/Research/G4RHO_DynamicalOrigin.md.
+
+**G4-RHO Phase 1 (Alpha-Selection) — COMPLETED (3/3 tests pass; 6/6 G4-RHO verified):**
+Question: why is alpha=0 selected? Added DeficitFractions, Entropy, Increments, CoarseGrainedAlpha to
+RhoDynamics. G4-RHO10 ENTROPY MAXIMIZATION uniquely selects alpha=0: Shannon entropy H(alpha)=-sum p_k ln p_k of
+per-octave deficit fractions p_k ~ lambda^(-alpha k) is MAXIMIZED at alpha=0 (uniform p_k=1/K; H(0)=ln 8=2.079 vs
+H(+-1)=1.738, H(+-0.5)=1.978). G4-RHO11 RG/scale-invariance NOT selective: block-spin coarse-graining preserves
+alpha for ALL alpha (CoarseGrainedAlpha(alpha)=alpha exactly) -> every alpha a fixed point (continuum). G4-RHO12
+uniformity (spread 0 at alpha=0 vs 0.319 at alpha=1) + scale-free field (v^2(3)/v^2(9)=3^alpha, closest to 1 at
+alpha=0: 1.18/1.90/3.15) COINCIDE at alpha=0. CLASSIFICATION: DERIVED — alpha=0 is the UNIQUE maximum-entropy
+(uniform, least-bias) allocation of deficit across scales + unique scale-free-field member; entropy breaks the RG
+degeneracy. Caveat: maximum entropy is a statistical (least-bias) principle, not a dynamical equation — "why entropy
+is maximized" remains open. Upgrades alpha=0 from PREFERRED to DERIVED. Report: Docs/Research/G4RHO_AlphaSelection.md.

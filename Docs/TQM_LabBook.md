@@ -448,6 +448,10 @@ OPEN/WEAK: matter emergence + dynamics.
 **Status:** Complete (PREFERRED, not DERIVED). α=0 (log) is the unique scale-invariant abundance law, but no dynamics selects it.
 - scale-free ρ∝r^s → continuum (all flat, sign set by s); conservation → repulsive ρ∝r⁻² (rejects log); α=0 is a symmetry selection, not an attractor
 
+### G4-RHO1: α-Selection (G4-RHO Phase 1)
+**Status:** Complete (DERIVED). α=0 is the unique maximum-entropy (uniform) allocation + scale-free-field member.
+- entropy H(α) maximized at α=0 (uniform); RG preserves all α (not selective); entropy breaks the degeneracy; caveat: "why entropy is maximized" open
+
 ---
 
 ## Overall Statistics
@@ -457,8 +461,8 @@ OPEN/WEAK: matter emergence + dynamics.
 | DATA | 10 | Complete |
 | QM | 5 | Complete |
 | QG | 31 | Complete |
-| G4 | 53 | Complete |
-| **Total** | **99** | |
+| G4 | 54 | Complete |
+| **Total** | **100** | |
 
 ## Key Unsolved Problems
 

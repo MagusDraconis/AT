@@ -29,4 +29,49 @@ public static class RhoDynamics
     /// </summary>
     public static double Flux(Func<double, double> rho, double r, double beta = 0.0, double v0 = 1.0, int d = 3)
         => rho(r) * v0 * Math.Pow(r, beta + d - 1.0);
+
+    // ── G4-RHO Phase 1: α-selection (entropy, RG fixed points) ───────────────────────
+
+    /// <summary>Per-octave deficit fractions p_k ∝ λ^(−αk), normalized (Σ p_k = 1).</summary>
+    public static double[] DeficitFractions(double alpha, int K = 8, double lambda = 1.5)
+    {
+        var p = new double[K];
+        double sum = 0.0;
+        for (int k = 0; k < K; k++) { p[k] = Math.Pow(lambda, -alpha * k); sum += p[k]; }
+        for (int k = 0; k < K; k++) p[k] /= sum;
+        return p;
+    }
+
+    /// <summary>Shannon entropy H(α) = −Σ p_k ln p_k of the per-octave deficit allocation.</summary>
+    public static double Entropy(double alpha, int K = 8, double lambda = 1.5)
+    {
+        var p = DeficitFractions(alpha, K, lambda);
+        double h = 0.0;
+        foreach (double pk in p) if (pk > 0.0) h -= pk * Math.Log(pk);
+        return h;
+    }
+
+    /// <summary>Per-octave deficit increments A_k ∝ λ^(−αk), normalized to total m₀.</summary>
+    public static double[] Increments(double alpha, int K = 8, double lambda = 1.5, double m0 = 1.0)
+    {
+        var a = new double[K];
+        double sum = 0.0;
+        for (int k = 0; k < K; k++) { a[k] = Math.Pow(lambda, -alpha * k); sum += a[k]; }
+        for (int k = 0; k < K; k++) a[k] *= m0 / sum;
+        return a;
+    }
+
+    /// <summary>
+    /// Effective α after block-spin coarse-graining (merging adjacent octaves). For increments
+    /// A_k ∝ λ^(−αk), the merged increments have ratio λ^(−2α), so α is INVARIANT (all α are RG fixed points).
+    /// </summary>
+    public static double CoarseGrainedAlpha(double alpha, int K = 8, double lambda = 1.5)
+    {
+        var a = Increments(alpha, K, lambda);
+        int k2 = K / 2;
+        var ap = new double[k2];
+        for (int k = 0; k < k2; k++) ap[k] = a[2 * k] + a[2 * k + 1];
+        double ratio = ap[1] / ap[0];
+        return -Math.Log(ratio) / (2.0 * Math.Log(lambda));
+    }
 }
