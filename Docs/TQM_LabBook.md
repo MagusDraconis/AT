@@ -269,6 +269,12 @@ Trilogy: QG-029 (attraction dominates) + QG-030 (no counter-structure) + QG-031 
 - L1 (36+/36−) perfectly balanced; L4 preserves L1 inertia (Sylvester)
 - Distinguishable from Lc (PSD) by spectrum sign; continuum limit to □ still open
 
+### G4-L1: BDG Comparison (G4-L Phase 1)
+**Status:** Complete. L3 (layer operator) is the closest native operator to BDG.
+- KS to BDG: L3 0.2222 (closest) < L2 0.3194 < L1 0.3750 < L4 0.5972
+- Only L3 alternates layer sign (BDG's defining feature); BDG is retarded, candidates symmetric
+- Ranking: L3 BEST MATCH, L1 PROMISING, L4 WEAK, L2 REJECT (uniform weights/diagonal still open)
+
 ---
 
 ## Overall Statistics
@@ -278,8 +284,8 @@ Trilogy: QG-029 (attraction dominates) + QG-030 (no counter-structure) + QG-031 
 | DATA | 10 | Complete |
 | QM | 5 | Complete |
 | QG | 31 | Complete |
-| G4 | 16 | Complete |
-| **Total** | **62** | |
+| G4 | 17 | Complete |
+| **Total** | **63** | |
 
 ## Key Unsolved Problems
 

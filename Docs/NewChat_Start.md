@@ -7057,3 +7057,15 @@ yet the wave operator — continuum limit to Box (Lorentzian analogue of G4-C1) 
 still open. Code: TQM.Core/ResearchXH/CausalSet.cs + LorentzianOperator.cs; tests:
 TQM.Tests/ResearchXH/G4L_Phase0_NativeLorentzianOperatorsTests.cs (G4-L00/01/02); report:
 Docs/Research/G4L_Phase0_NativeLorentzianOperators.md.
+
+**G4-L Phase 1 (BDG Comparison) — COMPLETED (3/3 tests pass):**
+Question: which native Lorentzian operator is closest to BDG? Added BdgReference (symmetric
+d=2: -2I+4*link-2*next-layer), RetardedBdg (past-only), LayerProfile, Alternates to
+LorentzianOperator. G4-L10: KS distance to BDG: L3 layer 0.2222 (closest) < L2 interval 0.3194
+< L1 link 0.3750 < L4 density 0.5972. G4-L11: BDG layer profile (4,-2,0,0) alternates; only L3
+alternates (-1,+1,-1,+1). G4-L12: BDG retarded forward-only (past 0, future 16); all candidates
+time-symmetric (Feynman-like). RANKING: L3 layer BEST MATCH, L1 causal-link PROMISING, L4
+density-weighted WEAK, L2 interval REJECT. REMAINING GAPS: L3 has uniform (not binomial) weights,
+no diagonal, and is time-symmetric not retarded. Code:
+TQM.Tests/ResearchXH/G4L_Phase1_BDGComparisonTests.cs (G4-L10/11/12); report:
+Docs/Research/G4L_Phase1_BDGComparison.md.

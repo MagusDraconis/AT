@@ -82,6 +82,80 @@ public static class LorentzianOperator
         return m;
     }
 
+    /// <summary>
+    /// BDG d'Alembertian coefficient for interval size k (d = 2): diagonal −2, links (k=0) +4,
+    /// next layer (k=1) −2, and 0 beyond. The standard 2D light-cone finite difference.
+    /// </summary>
+    public static double BdgCoefficient(int k)
+        => k switch
+        {
+            0 => 4.0,
+            1 => -2.0,
+            _ => 0.0
+        };
+
+    /// <summary>
+    /// Symmetric d=2 BDG reference operator: B = −2·I + 4·(link adjacency)ᵗ − 2·(next-layer)ᵗ.
+    /// A benchmark (not a construction source): used to rank native candidates by similarity.
+    /// </summary>
+    public static double[,] BdgReference(CausalSetData cs)
+    {
+        int n = cs.Count;
+        var m = new double[n, n];
+        for (int i = 0; i < n; i++) m[i, i] = -2.0;
+        for (int i = 0; i < n; i++)
+            for (int j = i + 1; j < n; j++)
+            {
+                int k = Math.Max(cs.Interval[i, j], cs.Interval[j, i]);
+                if (k < 0) continue;
+                double v = BdgCoefficient(k);
+                if (v != 0.0) { m[i, j] = v; m[j, i] = v; }
+            }
+        return m;
+    }
+
+    /// <summary>
+    /// Retarded (past-only) BDG d'Alembertian: B[i,j] ≠ 0 only for i ≺ j (forward propagation).
+    /// Lower-triangular in time order. Used to probe directionality vs the symmetric candidates.
+    /// </summary>
+    public static double[,] RetardedBdg(CausalSetData cs)
+    {
+        int n = cs.Count;
+        var m = new double[n, n];
+        for (int i = 0; i < n; i++) m[i, i] = -2.0;
+        for (int i = 0; i < n; i++)
+            for (int j = 0; j < n; j++)
+                if (cs.Order[i, j])
+                    m[i, j] = BdgCoefficient(cs.Interval[i, j]);
+        return m;
+    }
+
+    /// <summary>
+    /// Layer profile: mean off-diagonal matrix entry per interval size k (k = 0..maxK).
+    /// Captures how an operator weights causal layers (its "interval/layer response").
+    /// </summary>
+    public static double[] LayerProfile(CausalSetData cs, double[,] m, int maxK = 3)
+    {
+        var sums = new double[maxK + 1];
+        var counts = new int[maxK + 1];
+        for (int i = 0; i < cs.Count; i++)
+            for (int j = i + 1; j < cs.Count; j++)
+            {
+                int k = Math.Max(cs.Interval[i, j], cs.Interval[j, i]);
+                if (k < 0 || k > maxK) continue;
+                sums[k] += m[i, j];
+                counts[k]++;
+            }
+        var p = new double[maxK + 1];
+        for (int k = 0; k <= maxK; k++)
+            p[k] = counts[k] > 0 ? sums[k] / counts[k] : 0.0;
+        return p;
+    }
+
+    /// <summary>True if the layer profile alternates sign between layers 0 and 1 (BDG's signature).</summary>
+    public static bool Alternates(double[] profile)
+        => Math.Sign(profile[0]) != 0 && Math.Sign(profile[0]) * Math.Sign(profile[1]) < 0.0;
+
     /// <summary>Real ascending eigenvalues of a symmetric operator.</summary>
     public static double[] Eigenvalues(double[,] m) => SpectralCurvature.Eigenvalues(m);
 
