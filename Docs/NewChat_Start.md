@@ -6998,3 +6998,20 @@ attractors; conservation is degenerate. A stable bounded cosmology is reachable 
 anti-diffusive instability is just the ABSENCE of a restoring term. Closes G4-E feedback program.
 Code: TQM.Tests/ResearchXH/G4E_Phase2_RestoringMechanismsTests.cs (G4-E20/21/22); report:
 Docs/Research/G4E_Phase2_RestoringMechanisms.md.
+
+**G4-F Phase 0 (Physical Meaning of rho) — COMPLETED (3/3 tests pass):**
+Question: which interpretation of rho is most self-consistent in TQM? Evaluated C1 event
+density, C2 actualization rate, C3 information density, C4 hybrid against 4 criteria (Metric
+Origin, Structure/Content split, G4-C, G4-E). Grounding: rho IS the counting measure (Metric
+Origin: f=rho^(2/d) is the NATIVE conformal factor; programmatically rho is a positive
+per-vertex scalar, flat rho=1, curved rho varies 1.003->1.452). G4-F00: C1/C2 metric-origin
+compatible, C3/C4 not. G4-F01: C1/C2 require 0 new primitives (Q-events + counting measure /
+Q-events + tau, rate=density*omega0); C3 requires the emergent information/Theta layer, C4
+composite. G4-F02: C1/C2 score 4/4, C3/C4 0/4; minimal set {C1, C2}. Tiebreak: rate=density
+*omega0 (omega0 universal constant) and conformal factor defined up to constant rescaling -> C1
+and C2 are the SAME primitive. CONCLUSION: rho is the COUNTING MEASURE, canonically EVENT
+DENSITY (C1), equivalently ACTUALIZATION RATE (C2); no new primitive required. The whole native
+operator program (rho->Lc->R->dynamics->feedback) is built on the counting measure, consistent
+with Metric Origin and the structure/content split. Code:
+TQM.Tests/ResearchXH/G4F_PhysicalMeaningOfRhoTests.cs (G4-F00/01/02); report:
+Docs/Research/G4F_PhysicalMeaningOfRho.md.

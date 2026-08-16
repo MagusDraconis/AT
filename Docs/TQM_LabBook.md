@@ -257,6 +257,12 @@ Trilogy: QG-029 (attraction dominates) + QG-030 (no counter-structure) + QG-031 
 - Conservation mean(ρ)=1 → pins flat (degenerate stabilizer)
 - Stable finite attractor reachable with NO new primitives (diffusion → flat; logistic → pair)
 
+### G4-F0: Physical Meaning of ρ (G4-F Phase 0)
+**Status:** Complete. ρ = counting measure, canonically event density (equivalently rate).
+- C1 event density / C2 actualization rate: 4/4 criteria, 0 new primitives (same primitive)
+- C3 information density (needs Θ layer) / C4 hybrid: rejected (non-minimal, non-native)
+- Self-consistent with Metric Origin (f = ρ^(2/d)) and the structure/content split
+
 ---
 
 ## Overall Statistics
@@ -266,8 +272,8 @@ Trilogy: QG-029 (attraction dominates) + QG-030 (no counter-structure) + QG-031 
 | DATA | 10 | Complete |
 | QM | 5 | Complete |
 | QG | 31 | Complete |
-| G4 | 14 | Complete |
-| **Total** | **60** | |
+| G4 | 15 | Complete |
+| **Total** | **61** | |
 
 ## Key Unsolved Problems
 
