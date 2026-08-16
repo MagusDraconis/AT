@@ -329,6 +329,11 @@ Trilogy: QG-029 (attraction dominates) + QG-030 (no counter-structure) + QG-031 
 - Local ρ(x) → local R̂(x): Pearson 0.956 vs analytic; peak propagates (0.995); refinement-stable (0.996)
 - Field resolves the local sign the mean-field inverts (global score −1.82 vs local +1.03)
 
+### G4-M0: Native Conformal Structure (G4-M Phase 0)
+**Status:** Complete. Causal order + counting measure recover conformal structure natively.
+- Causal distance (longest chain) is a conformal invariant (8 = tMax+1 for all geometries)
+- Interval volume / layer growth natively classify flat/pos/neg (no Malament, no metric)
+
 ---
 
 ## Overall Statistics
@@ -338,8 +343,8 @@ Trilogy: QG-029 (attraction dominates) + QG-030 (no counter-structure) + QG-031 
 | DATA | 10 | Complete |
 | QM | 5 | Complete |
 | QG | 31 | Complete |
-| G4 | 27 | Complete |
-| **Total** | **73** | |
+| G4 | 28 | Complete |
+| **Total** | **74** | |
 
 ## Key Unsolved Problems
 

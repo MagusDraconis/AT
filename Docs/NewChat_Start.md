@@ -7247,3 +7247,15 @@ refinement-stable (n=16->20 Pearson 0.996). CONCLUSION: native field-level curva
 local rho -> local R (Pearson 0.96), propagation (0.995), stability (0.996); field resolves local sign the
 mean field inverts. No new primitives (rho, L, spectral decomposition only). Report:
 Docs/Research/G4D_FieldDynamics.md.
+
+**G4-M Phase 0 (Native Conformal Structure) — COMPLETED (3/3 tests pass):**
+Question: can causal order + counting measure recover conformal info WITHOUT Malament/metric/imported
+class? Added ConformalStructure.cs (density rho=1+a x^2, interval-volume profile, layer growth, longest
+chain). On the 1+1D Minkowski grid: causal distance (longest chain (0,0)->(7,0)) = 8 = tMax+1 for ALL
+geometries (CONFORMAL INVARIANT — the causal order IS the conformal class, recovered natively). Counting
+measure rho carries the conformal factor: interval-volume center-edge = 16.40 (pos a=-0.8) > 12.00 (flat)
+> 6.50 (neg a=+1); layer-0 (link) mass = 6 + a/4 analytic = 6.25 (neg) > 6.00 (flat) > 5.80 (pos).
+CONCLUSION: native conformal classification from causal data alone achieved — causal order natively
+reconstructs the conformal class (invariant), counting measure natively reconstructs the conformal
+factor, distinguishing flat/pos/neg. No Malament, no metric, no imported conformal class. Report:
+Docs/Research/G4M_Phase0_NativeConformalStructure.md.
