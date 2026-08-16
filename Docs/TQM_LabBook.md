@@ -334,6 +334,11 @@ Trilogy: QG-029 (attraction dominates) + QG-030 (no counter-structure) + QG-031 
 - Causal distance (longest chain) is a conformal invariant (8 = tMax+1 for all geometries)
 - Interval volume / layer growth natively classify flat/pos/neg (no Malament, no metric)
 
+### G4-C5: Absolute Curvature Calibration (G4-C Phase 5)
+**Status:** Complete (PARTIAL). |R| reconstructed quantitatively via the local heat kernel.
+- local heat kernel: Pearson −0.9999, 2.1% relative error; global Lc spectrum is ordinal (26.6%)
+- refinement does NOT converge (non-monotonic 2.1%→13.6%→9.6% — fixed t not in asymptotic regime)
+
 ---
 
 ## Overall Statistics
@@ -343,8 +348,8 @@ Trilogy: QG-029 (attraction dominates) + QG-030 (no counter-structure) + QG-031 
 | DATA | 10 | Complete |
 | QM | 5 | Complete |
 | QG | 31 | Complete |
-| G4 | 28 | Complete |
-| **Total** | **74** | |
+| G4 | 29 | Complete |
+| **Total** | **75** | |
 
 ## Key Unsolved Problems
 

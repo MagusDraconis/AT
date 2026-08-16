@@ -7259,3 +7259,15 @@ CONCLUSION: native conformal classification from causal data alone achieved — 
 reconstructs the conformal class (invariant), counting measure natively reconstructs the conformal
 factor, distinguishing flat/pos/neg. No Malament, no metric, no imported conformal class. Report:
 Docs/Research/G4M_Phase0_NativeConformalStructure.md.
+
+**G4-C Phase 5 (Absolute Curvature Calibration) — COMPLETED (3/3 tests pass; 18/18 G4-C verified):**
+Question: can |R| be reconstructed quantitatively (sign/ordering/magnitude-ordering already solved)?
+Generated multiple +/- strengths (a=+-0.2..0.8), reconstructed via local heat kernel + global Lc
+spectrum, fit R_true = alpha*R_hat + beta. CALIBRATION: local heat kernel R_true = -807.17*R_hat +
+0.046, Pearson -0.9999 (negative slope = sign convention: Lc ~ -Delta_g so R_hat ~ -R); global score
+R_true = 0.911*R_hat + 0.605, Pearson 0.9784. ACCURACY: local relative error 0.0210 (2.1%), global
+0.2657 (26.6%, ORDINAL). REFINEMENT: local 0.021 -> 0.136 -> 0.096 (NON-monotonic), global ~0.27
+constant. CLASSIFICATION: PARTIAL — absolute |R| reconstructed quantitatively by the local channel
+(2.1% at n=16), but refinement does NOT converge (fixed heat-kernel t=0.5 not in t->0 asymptotic, so
+the calibration constant drifts with n). Original "absolute magnitude" blocker PARTIALLY closed.
+Report: Docs/Research/G4C_AbsoluteMagnitude.md.
