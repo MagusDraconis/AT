@@ -163,6 +163,32 @@ public static class PhysicalObservables
         return a - dm / (d * rho(x));
     }
 
+    // ── TQM-F Phase 2: matter attraction (geodesic convergence) ──────────────────────
+
+    /// <summary>
+    /// Timelike convergence scalar R₀₀ = (1/d)[(ln ρ)″ + ((d−2)/d)((ln ρ)′)²] for g = ρ^(2/d)η.
+    /// R₀₀ > 0 ⇒ geodesics focus (attraction); R₀₀ < 0 ⇒ diverge (repulsion) — the Raychaudhuri condition.
+    /// </summary>
+    public static double TimelikeConvergence(Func<double, double> rho, double x, int d, double h = 1e-5)
+    {
+        double lm = Math.Log(rho(x - h));
+        double l0 = Math.Log(rho(x));
+        double lp = Math.Log(rho(x + h));
+        double lpp = (lp - 2.0 * l0 + lm) / (h * h);
+        double lp1 = (lp - lm) / (2.0 * h);
+        return (lpp + (d - 2.0) * lp1 * lp1 / d) / d;
+    }
+
+    /// <summary>Divergence of the geodesic acceleration ∇·a = −(1/d)(ln ρ)″ (negative = focusing/convergence).</summary>
+    public static double AccelerationDivergence(Func<double, double> rho, double x, int d, double h = 1e-5)
+    {
+        double lm = Math.Log(rho(x - h));
+        double l0 = Math.Log(rho(x));
+        double lp = Math.Log(rho(x + h));
+        double lpp = (lp - 2.0 * l0 + lm) / (h * h);
+        return -lpp / d;
+    }
+
     /// <summary>Compact spherical deficit ρ = 1−A for |x| &lt; R, ρ = 1 outside (a "void sphere").</summary>
     public static double SphericalDeficit(double x, double A = 0.3, double R = 0.5)
         => Math.Abs(x) < R ? 1.0 - A : 1.0;

@@ -7641,3 +7641,15 @@ renormalization-invariant), DERIVED-conditional — scale-freeness = unique RG-i
 no intrinsic scale; indifference DERIVED iff renormalization invariance (natural for a theory with no external
 scale). Downgrades indifference postulate (G4-RHO3) to renormalization-invariance requirement, parallel to
 conformal flatness = minimum-information (G4-A1). Report: Docs/Research/TQMF_IndifferencePrinciple.md.
+
+**TQM-F Phase 2 (Matter Attraction) — COMPLETED (3/3 tests pass; 6/6 TQM-F verified):**
+Question: can attraction itself be derived? Added TimelikeConvergence (R_00) and AccelerationDivergence (grad.a)
+to PhysicalObservables. TQMF20 geodesic convergence: Raychaudhuri d(theta)/d(tau) = -R_00; R_00 = (1/d)[(ln rho)''
++ ((d-2)/d)((ln rho)')²] = +0.667 at void (density min, focusing/attraction) vs -0.222 at peak (divergence/repulsion)
+-> sign of gravity DERIVED from metric g=rho^(2/d)eta. TQMF21 stability: grad.a = -(1/d)(ln rho)'' < 0 at deficit
+(converges, matter clumps, self-bound stable) vs > 0 at peak (disperses, unstable). TQMF22 CLASSIFICATION: DERIVED
+(conditional on stability of matter) — sign DERIVED from metric via Raychaudhuri; matter=deficit DERIVED from
+STABILITY (matter = stable self-bound structure, only converging/deficit branch clumps); one input is "matter is
+stable" (QM program's defining property, not a gravitational postulate). Downgrades "matter attracts" (G4-ME5) from
+postulate to consequence. All three foundation postulates reduced: conformal flatness PREFERRED (min-info), indifference
+PREFERRED (renorm-inv), matter attraction DERIVED (convergence+stability). Report: Docs/Research/TQMF_MatterAttraction.md.

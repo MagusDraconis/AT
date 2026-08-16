@@ -472,6 +472,10 @@ OPEN/WEAK: matter emergence + dynamics.
 **Status:** Complete (PREFERRED, DERIVED-conditional). Scale-freeness = the unique renormalization-invariant abundance law.
 - power law = unique scale-covariant form + RG fixed point; primitives carry no intrinsic scale; indifference reduced to renormalization invariance
 
+### TQM-F2: Matter Attraction (TQM-F Phase 2)
+**Status:** Complete (DERIVED, conditional on stability). Attraction = geodesic convergence (R₀₀>0 at deficits).
+- Raychaudhuri derives the sign; stability selects the converging deficit branch; "matter attracts" reduced to convergence + stability
+
 ---
 
 ## Overall Statistics
@@ -482,8 +486,8 @@ OPEN/WEAK: matter emergence + dynamics.
 | QM | 5 | Complete |
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
-| TQM-F | 2 | Complete |
-| **Total** | **105** | |
+| TQM-F | 3 | Complete |
+| **Total** | **106** | |
 
 ## Key Unsolved Problems
 
