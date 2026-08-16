@@ -7271,3 +7271,14 @@ constant. CLASSIFICATION: PARTIAL — absolute |R| reconstructed quantitatively 
 (2.1% at n=16), but refinement does NOT converge (fixed heat-kernel t=0.5 not in t->0 asymptotic, so
 the calibration constant drifts with n). Original "absolute magnitude" blocker PARTIALLY closed.
 Report: Docs/Research/G4C_AbsoluteMagnitude.md.
+
+**G4-P Phase 2 (Heat-Kernel Asymptotics) — COMPLETED (3/3 tests pass):**
+Question: does the G4-C5 calibration drift resolve when heat time scales with graph spacing? Added
+CurvatureField.CenterHeatKernel/EigenDecompositionOf/HeatKernelAt (single EVD per geometry + cheap
+t-sweep). Ran N=16,20,32,48 (h=2/(N-1)), swept t. FINDING: t* ~ h^1.275 (fits log t* = 1.275 log h
+- 0.096, truncated at sweep floor). SCALING COMPARISON: relative error converges ONLY for t ~ h^2
+(0.0183 -> 0.0081 at n=48); fixed t=0.5 drifts (0.018 -> 0.110), t~h drifts (0.018 -> 0.034),
+adaptive t* overfits (0.0001 -> 0.0015, hits t=0.02 floor). CONCLUSION: the asymptotic regime is
+t ~ h^2 (graph-Laplacian eigenvalue scale) — it net-decreases the error and reaches <1% at N=48,
+RESOLVING the G4-C5 refinement-convergence gap. Absolute |R| reconstruction is now
+refinement-convergent in the t~h^2 regime. Report: Docs/Research/G4P_HeatKernelAsymptotics.md.

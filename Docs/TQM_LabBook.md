@@ -339,6 +339,11 @@ Trilogy: QG-029 (attraction dominates) + QG-030 (no counter-structure) + QG-031 
 - local heat kernel: Pearson −0.9999, 2.1% relative error; global Lc spectrum is ordinal (26.6%)
 - refinement does NOT converge (non-monotonic 2.1%→13.6%→9.6% — fixed t not in asymptotic regime)
 
+### G4-P2: Heat-Kernel Asymptotics (G4-P Phase 2)
+**Status:** Complete. Identifies t ∝ h² as the asymptotic regime with refinement convergence.
+- relative error net-decreases 1.8%→0.8% under t∝h²; fixed-t/t∝h drift; adaptive t* overfits
+- resolves the G4-C5 refinement-convergence gap
+
 ---
 
 ## Overall Statistics
@@ -348,8 +353,8 @@ Trilogy: QG-029 (attraction dominates) + QG-030 (no counter-structure) + QG-031 
 | DATA | 10 | Complete |
 | QM | 5 | Complete |
 | QG | 31 | Complete |
-| G4 | 29 | Complete |
-| **Total** | **75** | |
+| G4 | 30 | Complete |
+| **Total** | **76** | |
 
 ## Key Unsolved Problems
 

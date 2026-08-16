@@ -1,5 +1,7 @@
 namespace TQM.Core.ResearchXH;
 
+using MathNet.Numerics.LinearAlgebra;
+
 /// <summary>
 /// G4-D Phase 1 — local curvature fields. Builds a graph from a per-vertex density field on a
 /// FIXED uniform grid (so the adjacency is density-independent and only the counting measure ρ
@@ -89,6 +91,69 @@ public static class CurvatureField
             r[i] = -2.0 * d2 / rhoX[i];
         }
         return r;
+    }
+
+    /// <summary>
+    /// Diagonal heat kernel K_t(x_c) = Σ_k e^(−t λ_k) φ_k(x_c)² at a single vertex, for MANY
+    /// heat times from ONE eigendecomposition. Enables an efficient t-sweep.
+    /// </summary>
+    public static double[] CenterHeatKernel(GeometricGraph g, double[] ts, int centerIndex)
+    {
+        var lc = ConformalOperator.Build(g, ConformalOperatorKind.RhoInverseSquared);
+        var (lambdas, vecs) = EigenDecomposition(lc);
+        int n = lc.GetLength(0);
+        var result = new double[ts.Length];
+        for (int i = 0; i < ts.Length; i++)
+        {
+            double sum = 0.0;
+            for (int k = 0; k < n; k++)
+            {
+                double v = vecs[centerIndex, k];
+                sum += Math.Exp(-ts[i] * lambdas[k]) * v * v;
+            }
+            result[i] = sum;
+        }
+        return result;
+    }
+
+    /// <summary>
+    /// Local heat-kernel curvature at a single vertex, evaluated at MANY heat times from ONE
+    /// eigendecomposition per operator: R̂(x_c, t) = (K_geo(x_c,t) − K_flat(x_c,t))/K_flat(x_c,t).
+    /// Enables an efficient t-sweep for the G4-P asymptotic calibration.
+    /// </summary>
+    public static double[] CenterCurvatureAtTimes(GeometricGraph flat, GeometricGraph geo, double[] ts, int centerIndex)
+    {
+        var kFlat = CenterHeatKernel(flat, ts, centerIndex);
+        var kGeo = CenterHeatKernel(geo, ts, centerIndex);
+        var result = new double[ts.Length];
+        for (int i = 0; i < ts.Length; i++)
+            result[i] = (kGeo[i] - kFlat[i]) / kFlat[i];
+        return result;
+    }
+
+    private static (double[] evals, double[,] vecs) EigenDecomposition(double[,] matrix)
+    {
+        var mat = Matrix<double>.Build.DenseOfArray(matrix);
+        var evd = mat.Evd(Symmetricity.Symmetric);
+        double[] evals = evd.EigenValues.Select(c => c.Real).ToArray();
+        double[,] vecs = evd.EigenVectors.ToArray();
+        return (evals, vecs);
+    }
+
+    /// <summary>Eigendecomposition of Lc = ρ⁻¹ L ρ⁻¹ for a geometry (eigenvalues + eigenvectors).</summary>
+    public static (double[] evals, double[,] vecs) EigenDecompositionOf(GeometricGraph g)
+        => EigenDecomposition(ConformalOperator.Build(g, ConformalOperatorKind.RhoInverseSquared));
+
+    /// <summary>Diagonal heat kernel at one vertex from a precomputed eigendecomposition.</summary>
+    public static double HeatKernelAt((double[] evals, double[,] vecs) eig, double t, int centerIndex)
+    {
+        double sum = 0.0;
+        for (int k = 0; k < eig.evals.Length; k++)
+        {
+            double v = eig.vecs[centerIndex, k];
+            sum += Math.Exp(-t * eig.evals[k]) * v * v;
+        }
+        return sum;
     }
 
     private static double Dist((double x, double y) a, (double x, double y) b)
