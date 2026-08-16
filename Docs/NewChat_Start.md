@@ -7373,3 +7373,15 @@ kappa relates them. CONCLUSION: a native Einstein relation emerges (T = G/kappa 
 the source is the FULL conformal structure (rho, drho, d^2rho), NOT the kinetic/gradient part; rho acts as
 matter through its complete geometric content, not a scalar-field kinetic sector. kappa = coupling (units,
 not native). Report: Docs/Research/G4G_NativeEinsteinEquation.md.
+
+**G4-G Phase 4 (Independent Matter Sector) — COMPLETED (3/3 tests pass; 15/15 G4-G verified):**
+Question: can T_uv emerge independently from actualization-density dynamics (NOT as T=G/kappa)? Added
+KineticDivergence to HigherDimEinstein. G4-G40: kinetic stress-energy T_kin = du sigma dv sigma -
+(1/2)g(d sigma)^2 is symmetric but NOT conserved (div T_kin = rho^(-2/d) sigma'[sigma'' + (d-1)(sigma')^2]
+!= 0). G4-G41: LOVELOCK UNIQUENESS — the divergence-free condition on the general 2nd-order symmetric
+ansatz T_11=A(sigma')^2+B sigma'', T_ii=C(sigma')^2+D sigma'' forces B=0, C=(d-3)A/(d-1), D=2A/(d-1)
+(1-dim solution space), and the unique solution (A=(d-1)(d-2)/2) is G_uv. G4-G42: density flux J=grad rho
+has divergence Delta rho = 2a != 0 (curvature-sourced, Delta rho ~ -R). CONCLUSION: NO independent matter
+sector — the kinetic T is not conserved, the unique conserved symmetric 2nd-order tensor is G (up to
+scale), so T=G/kappa is FORCED; rho is both geometric and matter source. G=kappa T is an unavoidable
+identity, not an imported field equation. Report: Docs/Research/G4G_IndependentMatterSector.md.

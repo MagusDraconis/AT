@@ -127,4 +127,18 @@ public static class HigherDimEinstein
     /// <summary>Trace of the native stress-energy T^μ_μ = −(d−2)R/(2κ).</summary>
     public static double TraceNativeStress(double x, double a, int d, double kappa = 1.0)
         => TraceEinstein(x, a, d) / kappa;
+
+    /// <summary>
+    /// Covariant divergence ∇^μ T_kin_μ1 of the KINETIC stress-energy (∇ρ only). For the diagonal
+    /// tensor T_11=(1/2)(σ′)², T_ii=−(1/2)(σ′)² this equals
+    /// ρ^(−2/d)[σ′σ″ + (d−1)(σ′)³] — non-zero unless σ′ = 0 or σ is harmonic.
+    /// </summary>
+    public static double KineticDivergence(double x, double a, int d)
+    {
+        double sp = SigmaPrime(x, a, d), s2 = SigmaSecond(x, a, d);
+        double t11p = sp * s2;              // d/dx[(1/2)(σ′)²] = σ′σ″
+        double t11 = 0.5 * sp * sp;
+        double tii = -0.5 * sp * sp;
+        return Math.Pow(Rho(x, a), -2.0 / d) * (t11p + (d - 3.0) * sp * t11 - (d - 1.0) * sp * tii);
+    }
 }

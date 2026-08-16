@@ -382,6 +382,11 @@ Trilogy: QG-029 (attraction dominates) + QG-030 (no counter-structure) + QG-031 
 **Status:** Complete. T = G/κ is symmetric + conserved (native matter); G = κT holds.
 - kinetic (∇ρ) stress-energy insufficient — the ∂²ρ term is essential; source is the full conformal structure
 
+### G4-G4: Independent Matter Sector (G4-G Phase 4)
+**Status:** Complete (no independent sector). Lovelock uniqueness forces T = G/κ.
+- kinetic T not conserved; unique symmetric conserved 2nd-order tensor is G; density flux curvature-sourced
+- G = κT is an unavoidable identity, not an imported field equation
+
 ---
 
 ## Overall Statistics
@@ -391,8 +396,8 @@ Trilogy: QG-029 (attraction dominates) + QG-030 (no counter-structure) + QG-031 
 | DATA | 10 | Complete |
 | QM | 5 | Complete |
 | QG | 31 | Complete |
-| G4 | 38 | Complete |
-| **Total** | **84** | |
+| G4 | 39 | Complete |
+| **Total** | **85** | |
 
 ## Key Unsolved Problems
 
