@@ -7594,3 +7594,15 @@ profile). CLASSIFICATION: DERIVED — rho profiles GENERATED as stable attractor
 d(A_k)/dt = D*Delta_k A_k <=> d(alpha)/dt = mu*dH/d(alpha); unique stable fixed point alpha=0 (log-deficit). Closes
 rho-dynamics arc: G4-RHO0 PREFERRED -> G4-RHO1 DERIVED (max entropy) -> G4-RHO2 DERIVED (stable attractor/evolution
 equation). Remaining gap: microscopic mechanism enforcing entropy maximization. Report: Docs/Research/G4RHO_EvolutionEquation.md.
+
+**G4-RHO Phase 3 (Entropy Origin) — COMPLETED (3/3 tests pass; 12/12 G4-RHO verified):**
+Question: why does actualization maximize entropy? Added LogMicrostates, EntropyOf to RhoDynamics. G4-RHO30
+counting statistics: microstates W=N!/(prod n_k!) with ln W=N*H(alpha) maximized at alpha=0 (ln W 2079.4 vs
+1738.0 at alpha=1; W(0)/W(1)~10^148 astronomically). G4-RHO31 maximum-likelihood evolution: scale-space diffusion
+(G4-RHO2) is exactly the entropy-INCREASING evolution — H rises monotonically 1.738->2.079=ln 8 (each step adds
+microstates). G4-RHO32 exact counting: uniform [3,3,3,3] (alpha=0) W=369600 > biased [4,3,3,2] W=277200.
+CLASSIFICATION: DERIVED — entropy maximization = maximum likelihood (uniform allocation has the most microstates,
+a pure combinatorial fact); the one POSTULATE is INDIFFERENCE (actualization unbiased across scales = TQM's
+scale-freeness). Closes full rho-dynamics arc: G4-RHO0 PREFERRED -> G4-RHO1 DERIVED (max entropy) -> G4-RHO2
+DERIVED (attractor/evolution eq) -> G4-RHO3 DERIVED (microscopic maximum-likelihood origin). Report:
+Docs/Research/G4RHO_EntropyOrigin.md.

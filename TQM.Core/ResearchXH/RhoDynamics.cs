@@ -101,4 +101,23 @@ public static class RhoDynamics
         }
         return b;
     }
+
+    // ── G4-RHO Phase 3: microscopic origin (counting statistics / maximum likelihood) ──
+
+    /// <summary>Log number of microstates ln W = N·H(α) (Stirling), for N deficit quanta over K octaves.</summary>
+    public static double LogMicrostates(double alpha, double n = 1000.0, int k = 8, double lambda = 1.5)
+        => n * Entropy(alpha, k, lambda);
+
+    /// <summary>Shannon entropy of an increment vector (normalized to fractions).</summary>
+    public static double EntropyOf(double[] a)
+    {
+        double sum = a.Sum();
+        double h = 0.0;
+        foreach (double x in a)
+        {
+            double p = x / sum;
+            if (p > 0.0) h -= p * Math.Log(p);
+        }
+        return h;
+    }
 }

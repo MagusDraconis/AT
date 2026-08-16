@@ -456,6 +456,10 @@ OPEN/WEAK: matter emergence + dynamics.
 **Status:** Complete (DERIVED). ρ generated as the stable attractor of scale-space diffusion (entropy gradient flow).
 - ∂_t A_k = D·Δ_k A_k → uniform (α=0) fixed point = log-deficit; dα/dt=μ∂H/∂α stable attractor; closes the ρ-dynamics arc
 
+### G4-RHO3: Entropy Origin (G4-RHO Phase 3)
+**Status:** Complete (DERIVED). Entropy maximization = maximum likelihood (counting statistics); indifference is the one postulate.
+- uniform allocation has the most microstates (W maximized at α=0, W(0)/W(1)~10^148); diffusion is entropy-increasing
+
 ---
 
 ## Overall Statistics
@@ -465,8 +469,8 @@ OPEN/WEAK: matter emergence + dynamics.
 | DATA | 10 | Complete |
 | QM | 5 | Complete |
 | QG | 31 | Complete |
-| G4 | 55 | Complete |
-| **Total** | **101** | |
+| G4 | 56 | Complete |
+| **Total** | **102** | |
 
 ## Key Unsolved Problems
 
