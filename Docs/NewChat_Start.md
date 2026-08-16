@@ -7015,3 +7015,17 @@ operator program (rho->Lc->R->dynamics->feedback) is built on the counting measu
 with Metric Origin and the structure/content split. Code:
 TQM.Tests/ResearchXH/G4F_PhysicalMeaningOfRhoTests.cs (G4-F00/01/02); report:
 Docs/Research/G4F_PhysicalMeaningOfRho.md.
+
+**G4 Publication Reassessment — COMPLETED (synthesis, no new tests):**
+Reassessed the original metric->operator coupling gap using all 15 completed G4 phases (45
+tests). Verdict: the gap is MOSTLY CLOSED in the Riemannian/conformal sector. (1) Metric Origin
+SOLVED (chain closed pre-G4; G4-F confirms rho=counting measure). (2) Native Operator PARTIALLY
+SOLVED: Lc=rho^-1 L rho^-1 is native, benchmarked vs Delta_g (SC1-SC4), unique conformal
+representative; KEY REFINEMENT: winner is analytic-density-weighted (not the original C2
+degree-normalized); Lorentzian BDG (C5/G4-13) still OPEN. (3) Curvature Reconstruction PARTIALLY
+SOLVED: sign+ordering recovered (score -3.24/0/+4.34); absolute magnitude OPEN (SCI degree-
+dependent, S1/R10 not established). (4) Curvature Dynamics PARTIALLY SOLVED: mean-field law
+R=F(rho), F'<0, feedback anti-diffusive + stabilizable; full field dynamics OPEN. (5) Physical
+Meaning of rho SOLVED (event density/rate, 0 new primitives). (6) Remaining: Lorentzian BDG,
+absolute magnitude, field dynamics, analytic continuum proof, diffusion-generator closure,
+(optional) native Malament. Report: Docs/Research/G4_Reassessment.md.
