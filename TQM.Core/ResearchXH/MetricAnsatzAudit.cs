@@ -62,4 +62,18 @@ public static class MetricAnsatzAudit
         double dg00 = (PerturbedG00(x + h, d, b, a) - PerturbedG00(x - h, d, b, a)) / (2.0 * h);
         return 0.5 * dg00 / g11;
     }
+
+    // ── G4-A Phase 1: selecting η (minimum-curvature reference) ─────────────────────
+
+    /// <summary>
+    /// Ricci scalar of the d=2 reference metric h_ψ = diag(−e^{2ψ}, e^{−2ψ}) (det = −1), with ψ = b·x²:
+    /// R = (2ψ″ + 4ψ′²)·e^{2ψ} = (4b + 16b²x²)·e^{2bx²}. Zero iff ψ=const (flat η); grows with |b|.
+    /// </summary>
+    public static double ReferenceRicciScalar(double x, double b)
+    {
+        double psi = b * x * x;
+        double dpsi = 2.0 * b * x;
+        double ddpsi = 2.0 * b;
+        return (2.0 * ddpsi + 4.0 * dpsi * dpsi) * Math.Exp(2.0 * psi);
+    }
 }

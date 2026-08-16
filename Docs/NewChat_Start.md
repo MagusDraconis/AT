@@ -7617,3 +7617,15 @@ signature (G4-L0), conformal structure (G4-M0), curvature R(rho)+Lc->Delta_g (G4
 G(rho)+Bianchi (G4-G), geodesic a=-(1/d)grad ln rho (G4-O3), matter=deficit (G4-ME5), 1/r^2 + flat rotation
 (G4-ME2/3), alpha=0 (G4-RHO1/2/3). Sharpest gap: conformal-flatness assumption (freezes the one non-trivial
 metric d.o.f.) and non-derivation of d and G. Report: Docs/Research/TQM_FoundationAudit.md.
+
+**G4-A Phase 1 (Conformal Flatness) — COMPLETED (3/3 tests pass; 6/6 G4-A verified):**
+Question: can causal order + counting measure select eta? Added ReferenceRicciScalar (d=2 Ricci of psi-perturbed
+reference h_psi=diag(-e^{2psi}, e^{-2psi}), R=(2psi''+4psi'^2)e^{2psi}). G4-A10 sqrt(-g)=rho fixes only det g;
+reference h (det=-1) has d(d+1)/2-1 free functions; eta (psi=0) has R=0 (flat, structureless), any psi!=0 has R!=0.
+G4-A11 curvature CONTENT R^2 minimized (zero) at eta and increases monotonically with |psi| (R^2: 0 -> 0.814 -> 7.081)
+-> eta is minimum-information representative. G4-A12 dR^2/dpsi(0)=0, d^2R^2/dpsi^2(0)=32>0 (stable minimum).
+CLASSIFICATION: PREFERRED (minimum-curvature/information), DERIVED-conditional — eta NOT uniquely forced by causal
+order + counting measure (they fix conformal factor + determinant, leave conformal class free); uniquely selected by
+minimum-curvature principle (parallel to alpha=0 entropy selection); DERIVED iff causal vacuum is Minkowskian
+(Malament). Downgrades conformal flatness from load-bearing axiom to preferred minimum-information gauge choice.
+Report: Docs/Research/G4A_ConformalFlatness.md.

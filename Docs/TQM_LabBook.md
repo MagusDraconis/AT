@@ -464,6 +464,10 @@ OPEN/WEAK: matter emergence + dynamics.
 **Status:** Complete (synthesis, no new tests). Minimal axiom set: 2 primitives + 2 structural + 2 postulates + 2 parameters + framework base.
 - conformal flatness ASSUMED (exponent 2/d DERIVED); indifference POSTULATED; d and G not derived. See Docs/Research/TQM_FoundationAudit.md
 
+### G4-A1: Conformal Flatness (G4-A Phase 1)
+**Status:** Complete (PREFERRED, DERIVED-conditional). η is the unique minimum-curvature (R=0) reference; ψ costs curvature.
+- √(−g)=ρ fixes only det; η=R=0; R² minimized at η (stable minimum); DERIVED iff causal vacuum is Minkowskian
+
 ---
 
 ## Overall Statistics
@@ -473,8 +477,8 @@ OPEN/WEAK: matter emergence + dynamics.
 | DATA | 10 | Complete |
 | QM | 5 | Complete |
 | QG | 31 | Complete |
-| G4 | 56 | Complete |
-| **Total** | **102** | |
+| G4 | 57 | Complete |
+| **Total** | **103** | |
 
 ## Key Unsolved Problems
 
