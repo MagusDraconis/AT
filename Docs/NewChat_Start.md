@@ -6803,3 +6803,182 @@ causal/unitary/stable. Quantum Engine: finite+stable but NON-UNITARY (Gaussian c
 and causality-ambiguous (Padé poles), with 2 fitted params (Λ,b). Conclusion: no live UV
 problem; Quantum Engine is strictly worse on unitarity, not recommended.
 See Docs/Audits/QuantumEngineViabilityAudit.md.
+
+**Research Program G4 adopted (Native Metric-to-Operator Coupling, PROPOSED):**
+New research direction: construct a geometric operator directly from causal density and event
+structure, without importing Laplace-Beltrami or BDG machinery. Prior metric-operator work
+(MetricOperatorProgram/WeightedLaplacian/LaplaceBeltrami/BDG) established the operator is
+currently IMPORTED (graph Laplacian L_W over spatial coupling; BDG binomial weights) while the
+metric is natively determined (conformal class × ρ^(2/d)). G4 proposes: (C1) causal-link
+Laplacian, (C2) density-normalized Laplacian (I−D⁻¹A), (C3) interval/overlap kernel, (C4) the
+Δ_g correspondence benchmark, (C5) native layer operator with requirement-derived weights;
+plus spectral curvature indicators (heat trace → ∫R, Weyl → d) and native-diffusion emergence.
+Defines 12 requirements (R1–R12), 8 failure modes (F1–F8), and a 14-test xUnit program
+(G4-01…G4-14). No experiment executed yet. Spec: Docs/Research/G4_NativeMetricOperatorProgram.md.
+
+**G4 Phase 0 (Spectral Curvature) — COMPLETED (3/3 tests pass):**
+Question: is curvature already encoded in graph spectra? Built three deterministic
+constant-curvature 2D graphs (flat 16×16 torus, Fibonacci S² ε-graph, Poincaré-disk H²
+ε-graph; N≈256, TQM.Core/ResearchXH). Computed normalized-Laplacian spectrum, heat trace,
+spectral zeta, Weyl dimension (d≈2.28 all — control: same dimension), spectral gap, and
+pairwise KS distance between eigenvalue CDFs. RESULT: distinct geometries are pairwise
+distinguishable — min KS=0.1322 (≫0.05); ζ(2)=4296/1067/2365; gap ordering flat 0.038 < sphere
+0.065 (hyperbolic 0.047 between). CONCLUSION: curvature information IS encoded in graph
+spectra; no metric/LB/BDG machinery imported. Phase-1 next: calibrate heat-trace curvature
+sign (flat≈0, sphere>0, hyperbolic<0). Code: TQM.Tests/ResearchXH/G4Phase0SpectralCurvatureTests.cs;
+report: Docs/Research/G4_Phase0_SpectralCurvature.md.
+
+**G4 Phase 1 (Curvature Indicator) — COMPLETED (3/3 tests pass, partial sign result):**
+Added HeatTraceDerivative, MeanEigenvalue, SpectralEntropy and a SpectralCurvatureIndicator
+SCI(t)=2t⟨λ⟩(t)−2 (deviation of heat-kernel spectral dimension from d=2) to
+TQM.Core/ResearchXH/SpectralCurvature.cs. At calibrated t=1.5 (normalized Laplacian):
+SCI(flat)=−0.053 (≈0 ✓), SCI(sphere)=+0.585 (>0 ✓), SCI(hyperbolic disk)=+0.062 (NOT negative ✗).
+KEY FINDING: the Poincaré-disk is topologically a disk (χ=1) and boundary-dominated, so its
+finite spectrum sits BETWEEN flat and sphere on every observable (gap/ζ/Z/entropy/SCI) and
+cannot yield a negative SCI; the negative-curvature signature lives in the heat-trace χ/6
+subleading term, masked by the O(t^−1/2) boundary term. NEXT: use a compact genus-≥2
+boundary-free hyperbolic surface for the R<0 calibration. Code:
+TQM.Tests/ResearchXH/G4Phase1CurvatureIndicatorTests.cs (G4-10/11/12); report:
+Docs/Research/G4_Phase1_CurvatureIndicator.md.
+
+**G4-T Phase 0 (Time-Rate Hypothesis) — COMPLETED (3/3 tests pass):**
+Question: can local actualization-rate variations alone generate curvature-like spectra?
+Added UniformSquareGraph + VariableRateGraph (flat square, Chebyshev non-uniform density, same
+ε-threshold construction; TQM.Core/ResearchXH). RESULT (KS UniFlat vs VarRate): normalized
+Laplacian KS=0.160, unnormalized KS=0.488; unnormalized gap 0.038→0.065 (mimics curvature),
+normalized gap stays flat-like (0.0076 ≪ sphere 0.065). CONCLUSION: rate variations DO mimic
+curvature in the density-weighted (unnormalized) operator — the conformal-factor effect
+(ρ→f=ρ^(2/d)→g=f·η) — but the density-invariant (normalized) operator removes it and recovers
+flatness. This makes the G4 C1-vs-C2 distinction executable: a native metric-operator must be
+density-invariant, else rate fluctuations masquerade as curvature. Code:
+TQM.Tests/ResearchXH/G4T_TimeRateTests.cs (G4-T00/01/02); report:
+Docs/Research/G4T_TimeRateHypothesis.md.
+
+**G4 Phase 2A (Hyperbolic Calibration) — COMPLETED (3/3 tests pass, with degree caveat):**
+Replaced the open Poincaré disk with compact genus-≥2 surfaces (Desargues G(10,3) χ=−2, Nauru
+G(12,5) χ=−6; generalized Petersen, cubic, TQM.Core/ResearchXH/CompactHyperbolicGraph.cs).
+Nominal target MET at t=1.5: SCI(flat)=−0.053≈0, SCI(sphere)=+0.585>0, SCI(Desargues/Nauru)
+=−0.30<0. CRITICAL FINDING: SCI=2t⟨λ⟩−2 is DEGREE-dependent, not curvature-signed — a
+low-degree sphere (deg 3.64) gives −0.14 (negative), and cubic graphs with χ=+2/0/−2
+(dodecahedron/Petersen/Desargues) ALL give ≈−0.30. Phase 1's positive-sphere result was a
+degree artifact. Curvature SIGN requires a metric (weighted/ε-) graph of the genus-2 surface
+with intrinsic hyperbolic distance, whose heat trace carries the χ/6 Euler-characteristic
+subleading term — deferred to Phase 2B. Code:
+TQM.Tests/ResearchXH/G4Phase2AHyperbolicCalibrationTests.cs (G4-2A-00/01/02); report:
+Docs/Research/G4_Phase2A_HyperbolicCalibration.md.
+
+**G4-T Phase 1 (Conformal Actualization) — COMPLETED (3/3 tests pass):**
+Question: do actualization-rate gradients generate effective conformal geometry? Added
+ConformalRateGraph (flat square, density ρ=1+a·x² via deterministic inverse-CDF, ε-graph;
+TQM.Core/ResearchXH). Conformal factor f=ρ^(2/d)=ρ (d=2) ⇒ g=f·η with analytic curvature
+R(0)=−4a. RESULT: BOTH R<0 (ρ=1+x²) and R>0 (ρ=1−0.8x²) shift unnormalized ζ(2) DOWNWARD
+(1767→1012 and →341) — the graph Laplacian's response is density-MAGNITUDE-dominated and
+SIGN-BLIND; normalized Laplacian reduces it (KS→flat 0.254/0.422 → 0.113/0.152). True curvature
+(sphere/hyper ε-graphs) is a distinct, much larger signal (KS 0.94/0.39). CONCLUSION: rate
+gradients DO define conformal geometry (R≠0), but reading its SIGN requires the conformal
+operator Δ_g=ρ⁻¹Δ_η=L/ρ² (density-weighted by ρ²), not the plain graph Laplacian. Code:
+TQM.Tests/ResearchXH/G4T_Phase1_ConformalActualizationTests.cs (G4-T1-00/01/02); report:
+Docs/Research/G4T_Phase1_ConformalActualization.md.
+
+**G4-C Phase 0 (Conformal Operator Program) — COMPLETED (3/3 tests pass):**
+Question: can a density-weighted graph operator reproduce conformal curvature without importing
+Δ_g? Added ConformalOperator (family {L, D^-1/2LD^-1/2, ρ^-1/2Lρ^-1/2, ρ^-1Lρ^-1}) and per-vertex
+density on GeometricGraph/ConformalRateGraph (TQM.Core/ResearchXH). RESULT (ζ(2), flat/R<0/R>0):
+L=1767/1012/341 (sign-blind, magnitude artifact); D^-1/2LD^-1/2=23134/30236/9391 (sign-separates,
+sep 0.90); ρ^-1/2Lρ^-1/2=1767/2264/173 (sep 1.18); ρ^-1Lρ^-1=1767/5615/110 (sep 3.12, LARGEST).
+CONCLUSION: YES — the conformal operator ρ^-1Lρ^-1 ≈ ρ^-2L → Δ_g is the native operator most
+sensitive to curvature sign AND least degree-artifact-prone (uses analytic density, not degree).
+This fixes the G4-T Phase-1 sign-blind gap. Code:
+TQM.Tests/ResearchXH/G4C_ConformalOperatorTests.cs (G4-C-00/01/02); report:
+Docs/Research/G4C_ConformalOperatorProgram.md.
+
+**G4-C Phase 1 (Laplace-Beltrami Benchmark) — COMPLETED (3/3 tests pass, SC1-SC4 all satisfied):**
+Validated Lc=ρ^-1Lρ^-1 behaves like a Laplace-Beltrami operator on 3 conformal geometries
+(ρ=1+x² R<0, ρ=1 R=0, ρ=1-0.8x² R>0). SC1: Lc sign-separates ζ(2) (5615/1767/110: R<0 up, R>0
+down); L sign-blind (1012/1767/341). SC2: L's ζ(2) decreases monotonically with degree
+(artifact); Lc does not (genuine sign signal). SC3: Lc monotonic in curvature for 5/5
+observables (gap/Z/Z'/ζ/entropy); L 0/5, normalized 2/5. SC4: sign-separation persists under
+refinement (n=16→24: 5615/1767/110 → 4411/1062/163). CONCLUSION: Lc=ρ^-1Lρ^-1 is the native
+conformal operator reproducing Δ_g qualitatively without importing Δ_g or a metric tensor.
+Code: TQM.Tests/ResearchXH/G4C_Phase1_LaplaceBeltramiBenchmarkTests.cs (G4-C10/11/12); report:
+Docs/Research/G4C_Phase1_LaplaceBeltramiBenchmark.md.
+
+**G4-C Phase 2 (Curvature Reconstruction) — COMPLETED (3/3 tests pass, SC1-SC4 satisfied):**
+Question: can curvature be inferred from Lc=ρ^-1Lρ^-1 spectral observables? Added
+CurvatureReconstruction (TQM.Core/ResearchXH): score = sum of normalized deviations from flat
+(gap, Z(1), ζ(2), entropy), each with sign = sign(R). On conformal geometries ρ=1+a·x²:
+score negative=−3.240, flat=0.000, positive=+4.335 ⇒ signs (−1,0,+1), ordering R<0<R=0<R>0,
+refinement-stable (n=16→24), degree-insensitive (deg 5.16/3.75/6.33). CONCLUSION: curvature sign
+AND ordering are recovered from Lc spectral observables using only ρ, L, Lc, spectral
+observables — no metric tensor, no Laplace-Beltrami import. Completes G4-C objective. Code:
+TQM.Tests/ResearchXH/G4C_Phase2_CurvatureReconstructionTests.cs (G4-C20/21/22); report:
+Docs/Research/G4C_Phase2_CurvatureReconstruction.md.
+
+**G4-C Phase 3 (Curvature Magnitude) — COMPLETED (3/3 tests pass, SC1+SC3 full, SC2 with caveat):**
+Reconstructed curvature MAGNITUDE from Lc=ρ^-1Lρ^-1 across 10 strengths ρ=1+a·x²
+(R(0)=-4a). Score (CurvatureReconstruction.Score): a=1.0→-3.240, 0.8→-4.764, 0.6→-3.144,
+0.4→-1.860, 0.2→-0.833, 0→0, -0.2→+0.582, -0.4→+1.001, -0.6→+3.661, -0.8→+4.335. SC1: sign
+correct for all 10. SC2: magnitude ordering monotonic for 9/10 (a∈[-0.8,0.8]); a=1.0 is a
+non-monotonic outlier EXPLAINED by the profile node R(±1)=0 in R(x)=-4(1-x²)/(1+x²)³ — the
+global curvature is non-monotonic in local R(0), not a reconstruction defect. SC3: ordering
+refinement-stable (n=16→24). CONCLUSION: Lc reconstructs sign AND magnitude ordering of
+conformal curvature using only ρ, L, Lc, spectral observables — no metric tensor, no
+Laplace-Beltrami import. Code:
+TQM.Tests/ResearchXH/G4C_Phase3_CurvatureMagnitudeTests.cs (G4-C30/31/32); report:
+Docs/Research/G4C_Phase3_CurvatureMagnitude.md.
+**G4-C Uniqueness — COMPLETED (3/3 tests pass):**
+Question: is Lc=rho^-1 L rho^-1 uniquely selected? Tested two-parameter family
+M(a,b)=rho^-a L rho^-b (symmetrized), a,b in [0,2] (5x5 grid). PSD map: ONLY diagonal a=b is
+positive semi-definite (off-diagonal indefinite -> excluded). Sign recovery: 22/25; magnitude
+monotonic: 24/25; robust (sign+magnitude): 22/25. Among VALID (a=b) operators, sign recovery
+holds for a=b>=0.5 — a LARGE family (0.5/1/1.5/2), NOT unique. Refinement (n=24): a=b=0.5/1/1.5
+all sign-recover (4411/1062/163 for a=1). CONCLUSION: (1,1) is ONE MEMBER OF A LARGE FAMILY for
+empirical criteria, but the UNIQUE conformal Laplace-Beltrami representative (continuum limit
+Delta_g = rho^-1 Delta_eta) with largest sign separation (3.12). This CLOSES the G4-C program:
+the native conformal operator is a distinguished, theoretically-selected member of a large
+empirical equivalence class. Code: TQM.Tests/ResearchXH/G4C_UniquenessTests.cs (G4-U00/01/02);
+report: Docs/Research/G4C_Uniqueness.md.
+
+**G4-D Phase 0 (Curvature Dynamics) — COMPLETED (3/3 tests pass):**
+Question: can changes in rho produce predictable changes in reconstructed curvature (does Lc
+generate curvature dynamics)? Added CurvatureDynamics (TQM.Core/ResearchXH): evolves
+rho(x,t)=1+A(t)x^2 (R(0,t)=-4A) and returns CurvatureFrame records (score+gap+Z+zeta+entropy).
+G4-D00: full cosine oscillation A(t)=0.8cos(2pi t/16) crosses flat twice -> reconstructed
+sign matches R(0) at 17/17 frames (score -4.764/+4.335/+4.335/-4.764 symmetric, exact 0 at
+flat). G4-D01: linear sweep -0.8->+0.8, dRhat/dt sign-consistent with dR/dt at 16/16 steps,
+score strictly monotonic +4.335->-4.764, |dscore| grows with |R|. G4-D02: all 4 Lc observables
+(gap/Z/zeta/entropy) monotonic (no reversal); Pearson(score,R)=0.9796. CONCLUSION: Lc generates
+curvature dynamics — reconstructed curvature is a continuous near-linear function of the
+density field (r=0.98), closing the native chain rho->L->Lc->R(t). Code:
+TQM.Tests/ResearchXH/G4D_Phase0_CurvatureDynamicsTests.cs (G4-D00/01/02); report:
+Docs/Research/G4D_CurvatureDynamics.md.
+
+**G4-E Phase 0 (Curvature Evolution Law) — COMPLETED (3/3 tests pass):**
+Question: is there a closed native law relating R, dR/dt, rho, drho/dt, independent of graph
+size? Evolved rho(x,t)=1+A(t)x^2 through 4 time profiles (linear/quadratic/oscillatory/
+localized; added to CurvatureDynamics) and measured mean density rho-bar vs reconstructed
+score Rhat. G4-E00: all 68 (rho-bar, Rhat) pairs from the 4 profiles collapse onto ONE
+monotonic curve (67/67, 0% noise) -> R=F(rho) single-valued. G4-E01: 64/64 steps have
+sign(dRhat/dt)=-sign(drho-bar/dt) -> Rdot=F'(rho)*rho-dot with F'(rho)<0 (more density -> more
+negative curvature). G4-E02 graph-size: n=16 collapse 67/67+rate 64/64 (0% noise); n=24
+63/67+61/64 (5.29% noise floor) -> law size-independent up to fine-scale discretization
+artifact (piecewise-constant epsilon-adjacency while rho varies continuously). CANDIDATE LAW:
+Rdot=F'(rho)*rho-dot, F'<0, R=F(rho) (form Rdot=F(rho), NOT F(R,rho)) — a native
+curvature-density relation with no Einstein equations, no metric, no Laplace-Beltrami import.
+Code: TQM.Tests/ResearchXH/G4E_Phase0_CurvatureEvolutionLawTests.cs (G4-E00/01/02); report:
+Docs/Research/G4E_CurvatureEvolutionLaw.md.
+
+**G4-E Phase 1 (Curvature-Density Feedback) — COMPLETED (3/3 tests pass):**
+Question: can reconstructed curvature modify future density evolution? Closed the loop from
+Phase 0 with 3 feedback models rhodot=-kR, -k*sign(R), -k*R*rho (added CurvatureFeedback to
+TQM.Core/ResearchXH: BuildMap/Simulate/Interpolate/SlopeAtFlat/Classify). Native F map: 17
+points, F(1)=0, F'(1)=-10.68 (<0). G4-E10: flat rho-bar=1 is the unique curvature-neutral
+fixed point and UNSTABLE for all 3 models (lambda=-kF'(1)=+10.68>0). G4-E11: 0/12 oscillatory
+trajectories; all runaway (linear -kR -> +/-42; sign -> +/-9-11 constant speed; product -kR*rho
+converges to unphysical rho=0 from below flat, exponential runaway from above). G4-E12: 2217/2217
+(100%) steps anti-diffusive, sign(rhodot)=sign(rho-1). CONCLUSION: the closed system
+rho->R=F(rho)->rhodot is self-consistent but ANTI-DIFFUSIVE (positive feedback): flat is
+unstable and trajectories run away; a bounded cosmology needs an ADDITIONAL restoring term
+(next phase: restoring terms / attractors). Code:
+TQM.Tests/ResearchXH/G4E_Phase1_FeedbackDynamicsTests.cs (G4-E10/11/12); report:
+Docs/Research/G4E_Phase1_FeedbackDynamics.md.

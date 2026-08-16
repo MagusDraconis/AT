@@ -190,6 +190,67 @@ Trilogy: QG-029 (attraction dominates) + QG-030 (no counter-structure) + QG-031 
 
 ---
 
+## G4 Program — Native Metric-to-Operator Coupling (13 phases)
+
+### G4-00: Spectral Curvature (Phase 0)
+**Status:** Complete. Curvature IS encoded in graph spectra.
+- FlatGraph (R=0), SphereGraph (R>0), HyperbolicGraph (R<0) built deterministically
+- 3 geometries pairwise distinguishable (min KS = 0.1322), Weyl d ≈ 2.28
+- Distinct geometries produce statistically distinguishable spectral signatures
+
+### G4-10: Spectral Curvature Indicator (Phase 1)
+**Status:** Complete with caveat. SCI = 2t⟨λ⟩ − 2 sign-calibrated on flat/sphere/disk.
+- flat = −0.053, sphere = +0.585, open Poincaré disk = +0.062 (FAILED negative target)
+- Root cause: open disk is boundary-dominated → needs compact genus-≥2 surface
+
+### G4-T0: Time-Rate Hypothesis (G4-T Phase 0)
+**Status:** Complete. Rate variations mimic curvature in the UNNORMALIZED Laplacian.
+- Variable-rate flat graph: unnormalized KS = 0.488 (mimics curvature), normalized KS = 0.160
+- Rate distortions generate curvature-like signatures; normalization removes the artifact
+
+### G4-2A: Hyperbolic Calibration (Phase 2A)
+**Status:** Complete with critical finding. SCI is degree-dependent, not curvature-signed.
+- Compact genus-≥2 cage graphs (Desargues χ=−2, Nauru χ=−6) give SCI ≈ −0.30
+- Cubic graphs χ=+2/0/−2 all ≈ −0.30 → SCI tracks DEGREE, not curvature sign
+
+### G4-T1: Conformal Actualization (G4-T Phase 1)
+**Status:** Complete. Rate gradients define conformal geometry.
+- ρ = 1+a·x², analytic R(0) = −4a; graph Laplacian is sign-blind (magnitude-dominated)
+
+### G4-C0: Conformal Operators (G4-C Phase 0)
+**Status:** Complete. Lc = ρ⁻¹Lρ⁻¹ is the strongest native conformal operator.
+- L vs D⁻¹ᐟ²LD⁻¹ᐟ² vs ρ⁻¹ᐟ²Lρ⁻¹ᐟ² vs ρ⁻¹Lρ⁻¹ → Lc wins (sign separation 3.12)
+
+### G4-C1: Laplace–Beltrami Benchmark (G4-C Phase 1)
+**Status:** Complete. SC1–SC4 all satisfied.
+- Lc ≈ Δ_g: sign-separates ζ(2), degree-artifact-free, 5/5 observables monotonic, refinement-stable
+
+### G4-C2: Curvature Reconstruction (G4-C Phase 2)
+**Status:** Complete. SC1–SC4 all satisfied.
+- Score from gap/Z/ζ/entropy deviations recovers sign (−1/0/+1) and ordering R<0<R=0<R>0
+
+### G4-C3: Curvature Magnitude (G4-C Phase 3)
+**Status:** Complete. Sign 10/10; magnitude 9/10 (a=1.0 profile node R(±1)=0 documented).
+
+### G4-U: Uniqueness (G4-C Uniqueness)
+**Status:** Complete. (1,1) = one member of a large family, but the unique conformal Δ_g.
+- Only diagonal a=b is PSD; sign recovery for a=b ≥ 0.5 (robust 22/25)
+
+### G4-D0: Curvature Dynamics (G4-D Phase 0)
+**Status:** Complete. Lc generates curvature dynamics.
+- Sign tracks through 2 flips (17/17); dR̂/dt sign-consistent (16/16); Pearson(R̂,R) = 0.9796
+
+### G4-E0: Curvature Evolution Law (G4-E Phase 0)
+**Status:** Complete. Candidate law Ṙ = F′(ρ)·ρ̇, F′(ρ) < 0, R = F(ρ).
+- 4 profiles collapse onto one curve (67/67); rate law 64/64; size-independent (n=24 94 %/95 %)
+
+### G4-E1: Curvature–Density Feedback (G4-E Phase 1)
+**Status:** Complete. Self-consistent but anti-diffusive (positive feedback).
+- F(1)=0, F′(1)=−10.68; flat unstable (λ=+10.68); 0/12 oscillatory; 2217/2217 anti-diffusive
+- Bounded cosmology requires an ADDITIONAL restoring term
+
+---
+
 ## Overall Statistics
 
 | Program | Count | Status |
@@ -197,7 +258,8 @@ Trilogy: QG-029 (attraction dominates) + QG-030 (no counter-structure) + QG-031 
 | DATA | 10 | Complete |
 | QM | 5 | Complete |
 | QG | 31 | Complete |
-| **Total** | **46** | |
+| G4 | 13 | Complete |
+| **Total** | **59** | |
 
 ## Key Unsolved Problems
 
