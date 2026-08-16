@@ -440,6 +440,10 @@ OPEN/WEAK: matter emergence + dynamics.
 **Status:** Complete (PREFERRED). Exponent k=2/d is UNIQUE; conformal flatness is ASSUMED.
 - √(−g)=ρ ⇒ k=2/d uniquely; scale invariance k-independent; ψ-perturbed non-flat metric with same √(−g)=ρ gives different acceleration
 
+### G4-ME5: Derive Deficit Matter (G4-ME Phase 5)
+**Status:** Complete (DERIVED). m=ρ̄−ρ is the unique scalar, density-valued, conserved, first-order excitation with a=+(1/d)∇m/ρ.
+- abundance conservation + gradient-source form uniquely select the deficit; log/ratio matter fail (nonlinear, different force law)
+
 ---
 
 ## Overall Statistics
@@ -449,8 +453,8 @@ OPEN/WEAK: matter emergence + dynamics.
 | DATA | 10 | Complete |
 | QM | 5 | Complete |
 | QG | 31 | Complete |
-| G4 | 51 | Complete |
-| **Total** | **97** | |
+| G4 | 52 | Complete |
+| **Total** | **98** | |
 
 ## Key Unsolved Problems
 

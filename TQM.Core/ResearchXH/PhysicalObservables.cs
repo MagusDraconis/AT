@@ -145,6 +145,24 @@ public static class PhysicalObservables
     /// <summary>Derived matter density m = ρ̄ − ρ (the density DEFICIT; positive in voids, negative in peaks).</summary>
     public static double MatterDensity(double rho, double rhoBar = 1.0) => rhoBar - rho;
 
+    /// <summary>Alternative matter m = ln(ρ̄/ρ) (log-deficit; dimensionless).</summary>
+    public static double LogMatter(double rho, double rhoBar = 1.0) => Math.Log(rhoBar / rho);
+
+    /// <summary>Alternative matter m = ρ̄/ρ − 1 (relative deficit; dimensionless).</summary>
+    public static double RatioMatter(double rho, double rhoBar = 1.0) => rhoBar / rho - 1.0;
+
+    /// <summary>
+    /// Gradient-source residual a − (1/d)∇m/ρ for a matter definition m = m(ρ). Zero if and only if
+    /// m = ρ̄ − ρ (the deficit), because a = −(1/d)∇lnρ = +(1/d)∇(ρ̄−ρ)/ρ exactly.
+    /// </summary>
+    public static double GradientSourceResidual(Func<double, double> rho, Func<double, double> matter,
+        double x, int d, double h = 1e-6)
+    {
+        double a = TqmAcceleration(rho, x, d, h);
+        double dm = (matter(rho(x + h)) - matter(rho(x - h))) / (2.0 * h);
+        return a - dm / (d * rho(x));
+    }
+
     /// <summary>Compact spherical deficit ρ = 1−A for |x| &lt; R, ρ = 1 outside (a "void sphere").</summary>
     public static double SphericalDeficit(double x, double A = 0.3, double R = 0.5)
         => Math.Abs(x) < R ? 1.0 - A : 1.0;

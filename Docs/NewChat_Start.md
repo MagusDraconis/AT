@@ -7544,3 +7544,16 @@ psi-perturbed metric g_00=-rho^(2/d)e^{2psi}, g_11=rho^(2/d)e^{-2psi/(d-1)} has 
 acceleration (-0.760 vs -0.230) -> sqrt(-g)=rho fixes only det, not the metric. CLASSIFICATION: PREFERRED —
 exponent k=2/d UNIQUE (derived), conformal flatness ASSUMED (preferred by minimality: rho is the only scalar).
 Report: Docs/Research/G4A_MetricAnsatzAudit.md.
+
+**G4-ME Phase 5 (Derive Deficit Matter) — COMPLETED (3/3 tests pass; 18/18 G4-ME verified):**
+Question: can m = rho-bar - rho emerge uniquely from TQM principles? Added LogMatter, RatioMatter,
+GradientSourceResidual to PhysicalObservables. G4-ME50 normalization m(rho-bar)=0 + positivity m>0 for rho<rho-bar
+satisfied by ALL monotonic alternatives (NOT selective); abundance conservation int(m)dV = rho-bar*V - int(rho)dV
+(count deviation) holds EXACTLY only for the LINEAR deficit (0.2659 vs log 0.3322, ratio 0.4286). G4-ME51
+gradient-source form a = +(1/d)grad(m)/rho is EXACT (residual 0) only for m=rho-bar-rho (a=-(1/d)grad ln rho =
+-(1/d)grad rho/rho, so grad m = -grad rho => f'(rho)=-1 => m=rho-bar-rho unique); log gives a=+(1/d)grad m WITHOUT
+1/rho (different force law), ratio residual 5.3e-2. G4-ME52 gradient matter (vector, a=-(1/d)grad rho/rho) and
+curvature matter (second-order sigma'', mismatched) rejected. CLASSIFICATION: DERIVED (unique form) — deficit is the
+unique SCALAR, density-valued, conserved, FIRST-ORDER excitation satisfying a=+(1/d)grad m/rho exactly; one physical
+input is "matter attracts" (a points toward deficit). Upgrades G4-ME0 identification from hypothesis to uniqueness.
+Report: Docs/Research/G4ME_DeriveDeficitMatter.md.
