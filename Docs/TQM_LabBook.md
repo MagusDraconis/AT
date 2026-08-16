@@ -444,6 +444,10 @@ OPEN/WEAK: matter emergence + dynamics.
 **Status:** Complete (DERIVED). m=ρ̄−ρ is the unique scalar, density-valued, conserved, first-order excitation with a=+(1/d)∇m/ρ.
 - abundance conservation + gradient-source form uniquely select the deficit; log/ratio matter fail (nonlinear, different force law)
 
+### G4-RHO0: Dynamical Origin of ρ (G4-RHO Phase 0)
+**Status:** Complete (PREFERRED, not DERIVED). α=0 (log) is the unique scale-invariant abundance law, but no dynamics selects it.
+- scale-free ρ∝r^s → continuum (all flat, sign set by s); conservation → repulsive ρ∝r⁻² (rejects log); α=0 is a symmetry selection, not an attractor
+
 ---
 
 ## Overall Statistics
@@ -453,8 +457,8 @@ OPEN/WEAK: matter emergence + dynamics.
 | DATA | 10 | Complete |
 | QM | 5 | Complete |
 | QG | 31 | Complete |
-| G4 | 52 | Complete |
-| **Total** | **98** | |
+| G4 | 53 | Complete |
+| **Total** | **99** | |
 
 ## Key Unsolved Problems
 

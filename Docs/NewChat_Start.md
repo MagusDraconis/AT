@@ -7557,3 +7557,16 @@ curvature matter (second-order sigma'', mismatched) rejected. CLASSIFICATION: DE
 unique SCALAR, density-valued, conserved, FIRST-ORDER excitation satisfying a=+(1/d)grad m/rho exactly; one physical
 input is "matter attracts" (a points toward deficit). Upgrades G4-ME0 identification from hypothesis to uniqueness.
 Report: Docs/Research/G4ME_DeriveDeficitMatter.md.
+
+**G4-RHO Phase 0 (Dynamical Origin of rho) — COMPLETED (3/3 tests pass):**
+Question: what determines rho itself? Added RhoDynamics (ScaleFreeDensity, LogDensity, Acceleration3D,
+RotationCurve, Flux). G4-RHO00 scale-free (self-similar) densities rho~r^s form a CONTINUUM: all give flat
+v^2=|s|/d (v^2(3)=v^2(9)), sign flips at s=0 (s<0 repulsive a>0, s>0 attractive a<0) -> no unique profile.
+G4-RHO01 flux conservation F=rho*v*r^(d-1)=const selects rho~r^-(d-1)=r^-2 (F const exactly), REJECTS the log
+density rho=rho-bar+c*ln r (F grows 24x); the conserved-flux power law is REPULSIVE (a=+0.222), log is
+attractive (a=-0.031) -> raw actualization flux gives WRONG (repulsive) sector, log not a steady state.
+G4-RHO02 scale-free field a~1/r (a(9)/a(3)=1/3 for all s) is the symmetry giving flatness, satisfied by every
+power law -> no uniqueness. CLASSIFICATION: PREFERRED (alpha=0), NOT DERIVED from dynamics — the attractive
+flat rotation requires the DEFICIT m=rho-bar-rho, whose unique scale-invariant form is alpha=0 (log, a SYMMETRY
+selection); conservation favors the repulsive rho~r^-2; dynamical origin of rho (why deficit/attractive over
+raw/repulsive) remains OPEN (#1 unresolved). Report: Docs/Research/G4RHO_DynamicalOrigin.md.
