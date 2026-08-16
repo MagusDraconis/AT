@@ -7409,3 +7409,14 @@ vs GR always-positive — STRONG. CONCLUSION: STRONG qualitative falsifiable dif
 long-range field in uniform/shell-exterior regions (field ~ grad rho, localized), unlike GR's 1/r^2 Newtonian
 field; TQM source = sign-changing log-density curvature, not the density value. Decisive prediction: no
 Newtonian field where actualization density is uniform. Report: Docs/Research/G4O_DiscriminatingPrediction.md.
+
+**G4-O Phase 2 (Prediction Stress Test) — COMPLETED (3/3 tests pass; 9/9 G4-O verified):**
+Question: does the GR/TQM difference survive realistic profiles? Added Nfw/Exponential/UniformSphere to
+PhysicalObservables. G4-O20 Gaussian halo: a_GR=-0.525 attractive vs a_TQM=+0.231 REPULSIVE (sign flip);
+uniform sphere: a_GR linear/long-range vs a_TQM=0 inside+outside (localization). G4-O21 NFW: sign flip
+(-1.021 vs +0.061); exponential disk: sign flip (-0.973 vs +0.053); PURE exponential rho=A e^(-r/r_d):
+a_TQM=1/(d r_d) CONSTANT (MOND-like repulsive) vs GR saturation. G4-O22 shell: a_GR=-0.853 long-range vs
+a_TQM~4e-10 localized; aggregated robustness TRUE. CLASSIFICATION: ROBUST — TQM repulsive around density
+peaks (field points toward minima) + zero-field in uniform/exterior regions, across Gaussian/NFW/
+exponential/uniform-sphere/shell. Both follow from source=(ln rho)'' not rho, so profile-independent.
+Report: Docs/Research/G4O_PredictionStressTest.md.

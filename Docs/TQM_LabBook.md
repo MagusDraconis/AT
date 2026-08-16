@@ -395,6 +395,10 @@ Trilogy: QG-029 (attraction dominates) + QG-030 (no counter-structure) + QG-031 
 **Status:** Complete (STRONG DIFFERENCE). TQM predicts no long-range field in uniform/shell regions.
 - a∝∇ρ (localized) vs GR 1/r²; TQM source sign-changing (lnρ)″ vs GR positive-definite ρ
 
+### G4-O2: Prediction Stress Test (G4-O Phase 2)
+**Status:** Complete (ROBUST). Difference persists under realistic profiles (Gaussian/NFW/exponential/sphere/shell).
+- TQM repulsive at peaks + zero-field in uniform regions; pure-exponential → MOND-like constant a
+
 ---
 
 ## Overall Statistics
@@ -404,8 +408,8 @@ Trilogy: QG-029 (attraction dominates) + QG-030 (no counter-structure) + QG-031 
 | DATA | 10 | Complete |
 | QM | 5 | Complete |
 | QG | 31 | Complete |
-| G4 | 41 | Complete |
-| **Total** | **87** | |
+| G4 | 42 | Complete |
+| **Total** | **88** | |
 
 ## Key Unsolved Problems
 

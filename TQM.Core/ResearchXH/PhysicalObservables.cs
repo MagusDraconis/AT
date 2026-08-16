@@ -98,4 +98,17 @@ public static class PhysicalObservables
     /// <summary>TQM acceleration: a_TQM = −(1/d)(ln ρ)′ = −(1/d)ρ′/ρ.</summary>
     public static double TqmAcceleration(Func<double, double> rho, double x, int d, double h = 1e-5)
         => -(rho(x + h) - rho(x - h)) / (2.0 * h * d * rho(x));
+
+    // ── Realistic (stress-test) profiles ───────────────────────────────────────────────
+
+    /// <summary>Cored NFW-like halo ρ = 1 + A/(1 + (x/r_s)²) (peak at origin, ∝ x⁻² tail).</summary>
+    public static double Nfw(double x, double A = 0.5, double rs = 0.4) => 1.0 + A / (1.0 + (x * x) / (rs * rs));
+
+    /// <summary>Exponential disk ρ = 1 + A·e^(−|x|/r_d) (peak at origin, exponential tail).</summary>
+    public static double Exponential(double x, double A = 0.5, double rd = 0.4)
+        => 1.0 + A * Math.Exp(-Math.Abs(x) / rd);
+
+    /// <summary>Uniform sphere ρ = ρ₀ for |x| &lt; R, ρ = 1 outside (compact, uniform core).</summary>
+    public static double UniformSphere(double x, double rho0 = 2.0, double R = 0.5)
+        => Math.Abs(x) < R ? rho0 : 1.0;
 }
