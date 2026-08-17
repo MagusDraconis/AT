@@ -595,6 +595,11 @@ OPEN/WEAK: matter emergence + dynamics.
 - TRM effective medium (t=1, n=e^Φ) reproduces GR lensing exactly; TQM geometry (t=0, n=1) gives NO EFFECT
 - TQM ρ can lens only under TRM's temporal-only optics (imported rule, not a new tensor field)
 
+### TQM-QG28: Derive the Propagation Law (TQM-QG Phase 28)
+**Status:** Complete (null geodesics DERIVED). Native optics are conformally invariant.
+- causal order → conformal class (light cone); ρ is a conformal factor that leaves it invariant → n=1
+- TRM effective medium (n=e^Φ) is IMPORTED = the ψ≠0 non-conformal sector in disguise
+
 ---
 
 ## Overall Statistics
@@ -606,8 +611,8 @@ OPEN/WEAK: matter emergence + dynamics.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 28 | Complete |
-| **Total** | **135** | |
+| TQM-QG | 29 | Complete |
+| **Total** | **136** | |
 
 ## Key Unsolved Problems
 

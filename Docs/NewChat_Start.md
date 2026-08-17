@@ -7957,6 +7957,17 @@ is the LIGHT-PROPAGATION PRESCRIPTION (null geodesic vs effective medium), NOT t
 n=e^Phi = the non-conformal coupling QG21 flagged (imported propagation rule, not a new tensor field). Report:
 Docs/Research/TQMQG_TRMObservableBridge.md.
 
+**TQM-QG Phase 28 (Derive the propagation law) — COMPLETED (3/3 tests pass; 87/87 TQM-QG verified):**
+Question: which light-propagation rule follows from actualization dynamics (null geodesics or TRM kernel)? Added
+PropagationLaw: causal order fixes the CONFORMAL CLASS (light cone); rho supplies only the conformal factor
+rho^(2/d) which leaves the light cone invariant. TQMQG280 null-geodesic index n=sqrt(g_ii/-g_00)=1 (independent of
+rho, no refraction); TRM index n=rho^(1/d)=e^Phi refracts. TQMQG281 mechanism census: 4 NATIVE (event-to-event,
+branching-path, correlation-kernel, null-geodesic-limit all give n=1) + 1 IMPORTED (effective-refractive-index
+gives n=e^Phi). TQMQG282 CLASSIFICATION: NULL GEODESICS DERIVED (native), TRM EFFECTIVE MEDIUM IMPORTED — n=e^Phi
+is the non-conformal psi!=0 sector in disguise (n=e^(-psi d/(d-1))). No refractive medium emerges from
+actualization; native optics = conformally invariant null geodesics; lensing needs the imported non-conformal
+extension. Report: Docs/Research/TQMQG_PropagationLaw.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.
