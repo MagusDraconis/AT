@@ -560,6 +560,10 @@ OPEN/WEAK: matter emergence + dynamics.
 **Status:** Complete (NEW PRIMITIVE). No emergent tensor channel; GWs require a third (tensor/ψ) primitive.
 - spin-0 → spin-2 impossible; conformal invariance; all collective/anisotropic/higher-D/effective-ψ channels fail
 
+### TQM-QG20: Temporal-Wave Observables (TQM-QG Phase 20)
+**Status:** Complete (NO MATCH). Temporal waves doubly invisible to LIGO (conformal light travel + common-mode breathing).
+- round-trip time independent of ρ; breathing zero differential strain; tensor visible
+
 ---
 
 ## Overall Statistics
@@ -571,8 +575,8 @@ OPEN/WEAK: matter emergence + dynamics.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 20 | Complete |
-| **Total** | **127** | |
+| TQM-QG | 21 | Complete |
+| **Total** | **128** | |
 
 ## Key Unsolved Problems
 

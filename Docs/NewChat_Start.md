@@ -7873,6 +7873,16 @@ Definitive structural conclusion of QG15-19 arc: TQM's two primitives (causal or
 scalar gravity only; gravitational waves require a THIRD tensor primitive; no emergent tensor channel.
 Report: Docs/Research/TQMQG_GWReconciliation.md.
 
+**TQM-QG Phase 20 (Temporal-Wave Observables) — COMPLETED (3/3 tests pass; 63/63 TQM-QG verified):**
+Question: can temporal (time-rate) waves generate the LIGO/Virgo observables? Added TemporalWaveObservables
+(RoundTripTime=2L, RoundTripTimeChange=0, BreathingDifferentialStrain=0, TensorDifferentialStrain=2h0). TQMQG200
+null geodesics are CONFORMALLY INVARIANT: g_00=-rho^(2/d), g_ii=rho^(2/d) multiply equally so rho cancels from
+ds^2=0; round-trip time tau=2L independent of rho; temporal wave drho -> zero change. TQMQG201 breathing (scalar)
+mode is COMMON-MODE (both arms stretch equally -> zero differential strain, invisible to Michelson); tensor (+)
+mode is differential (2h0, visible). TQMQG202 CLASSIFICATION: NO MATCH — temporal waves doubly invisible
+(conformal light travel + common-mode breathing); observed GWs are tensor (spin-2). Closes QG18-20 arc: no
+scalar/temporal interpretation can mimic the interferometer signal. Report: Docs/Research/TQMQG_TemporalWaveObservables.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.
