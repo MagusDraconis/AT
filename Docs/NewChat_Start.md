@@ -7664,3 +7664,16 @@ v^2(3)/v^2(9)=1.18. TQMQG02 CLASSIFICATION: FULL MATCH (matter/gravity chain) wi
 actualization -> rho -> gravity CLOSED; but raw conserved flux selects repulsive rho~r^-2 (dark-energy sector) while
 entropy-maximized deficit selects attractive alpha=0 (matter sector); only matter sector unified, raw-rho channel
 remains separate. Report: Docs/Research/TQMQG_ActualizationToGravity.md.
+
+**TQM-QG Phase 1 (Microscopic Origin of rho) — COMPLETED (3/3 tests pass; 6/6 TQM-QG verified):**
+Question: can rho emerge uniquely from microscopic Q-event dynamics? Added QEventBranching (Galton-Watson
+branching over octaves: A_k=A0*mu^k, cumulative deficit, mu<->alpha mapping mu=lambda^(-alpha), branching density,
+scale length). TQMQG10 branching->alpha: mu=lambda^(-alpha) round-trips exactly (alpha=0->mu=1, 0.5->0.8165,
+1->0.6667); critical mu=1 -> uniform per-octave counts -> cumulative deficit = log deficit EXACTLY
+(m_k=m0*ln(Rmax/R_k)/ln(Rmax/r0)). TQMQG11 branching density = gravity-required AbundanceDeficit EXACTLY (1e-12 all
+alpha); at alpha=0 reproduces rho>0, m>0, G non-trivial, flat rotation v^2(3)/v^2(9)=1.18. TQMQG12 criticality is
+the UNIQUE scale-free branching point: scale length L=1/|ln mu| infinite only at mu=1 (sub/supercritical have
+finite L); scale-freeness (renormalization invariance, TQM-F1) selects mu=1=alpha=0 uniquely. CLASSIFICATION: FULL
+MATCH (conditional on scale-freeness=criticality) — chain Q-events -> critical branching -> alpha=0 -> log-deficit
+rho -> gravity CLOSED at microscopic level; single remaining input = scale-freeness (already reduced in TQM-F1).
+Report: Docs/Research/TQMQG_MicroscopicOriginOfRho.md.

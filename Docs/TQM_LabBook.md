@@ -480,6 +480,10 @@ OPEN/WEAK: matter emergence + dynamics.
 **Status:** Complete (FULL MATCH + sector caveat). The actualization attractor (α=0) is exactly the gravity-required ρ.
 - chain Q-events → actualization → ρ → gravity CLOSED; ρ reproduces metric origin, deficit matter, Einstein, flat rotation; raw-ρ (repulsive) sector remains separate
 
+### TQM-QG1: Microscopic Origin of ρ (TQM-QG Phase 1)
+**Status:** Complete (FULL MATCH, conditional on criticality). Critical Q-event branching (μ=1) = α=0 = log-deficit ρ.
+- μ=λ^(−α) maps branching to abundance; μ=1 is the unique scale-free (critical) point; branching density = gravity density exactly
+
 ---
 
 ## Overall Statistics
@@ -491,8 +495,8 @@ OPEN/WEAK: matter emergence + dynamics.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 3 | Complete |
-| TQM-QG | 1 | Complete |
-| **Total** | **107** | |
+| TQM-QG | 2 | Complete |
+| **Total** | **108** | |
 
 ## Key Unsolved Problems
 
