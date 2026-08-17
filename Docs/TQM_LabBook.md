@@ -556,6 +556,10 @@ OPEN/WEAK: matter emergence + dynamics.
 **Status:** Complete (PARTIAL MATCH). Scalar sector gives breathing mode, not +/× GWs.
 - 1 breathing vs 2 traceless polarizations; energy/speed compatible but polarization excluded by LIGO/Virgo
 
+### TQM-QG19: GW Reconciliation (TQM-QG Phase 19)
+**Status:** Complete (NEW PRIMITIVE). No emergent tensor channel; GWs require a third (tensor/ψ) primitive.
+- spin-0 → spin-2 impossible; conformal invariance; all collective/anisotropic/higher-D/effective-ψ channels fail
+
 ---
 
 ## Overall Statistics
@@ -567,8 +571,8 @@ OPEN/WEAK: matter emergence + dynamics.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 19 | Complete |
-| **Total** | **126** | |
+| TQM-QG | 20 | Complete |
+| **Total** | **127** | |
 
 ## Key Unsolved Problems
 

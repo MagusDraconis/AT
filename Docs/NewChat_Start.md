@@ -7861,6 +7861,18 @@ LIGO/Virgo pure-tensor excludes breathing; recovering GWs requires the frozen gr
 arc: TQM scalar gravity has only a breathing monopole mode, not the observed +/x gravitational waves.
 Report: Docs/Research/TQMQG_GravitationalWaves.md.
 
+**TQM-QG Phase 19 (GW Reconciliation) — COMPLETED (3/3 tests pass; 60/60 TQM-QG verified):**
+Question: do GW observations require a new primitive or an emergent tensor channel? Added GWReconciliation
+(Spin0Polarizations=1, Spin2Polarizations=(d+1)(d-2)/2, WeylOfConformalMetric=0, ReferenceMetricDof=Weyl).
+TQMQG190 spin mismatch: scalar spin-0 (1 polarization) vs graviton spin-2 (2 polarizations); Weyl conformally
+invariant (0 for any scalar rho) -> emergent tensor IMPOSSIBLE (representation theory). TQMQG191 all channels fail:
+branching anisotropy still 1 scalar conformally flat; higher-D support still conformally flat; effective psi needs
+2 d.o.f. vs scalar 1 (new d.o.f. required). TQMQG192 CLASSIFICATION: NEW PRIMITIVE — reconciling GW observations
+requires a tensor/psi (reference-metric) field with Weyl d.o.f. (10 at d=3), i.e. relaxing conformal flatness.
+Definitive structural conclusion of QG15-19 arc: TQM's two primitives (causal order + counting measure) yield
+scalar gravity only; gravitational waves require a THIRD tensor primitive; no emergent tensor channel.
+Report: Docs/Research/TQMQG_GWReconciliation.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.
