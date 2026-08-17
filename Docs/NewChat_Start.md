@@ -7924,6 +7924,17 @@ helicities). TQMQG242 CLASSIFICATION: MINIMAL NEW PRIMITIVE — a single transve
 2 d.o.f. is the smallest extension; closes QG arc with a precise cost (exactly one new primitive = the graviton).
 Report: Docs/Research/TQMQG_MinimalTensorExtension.md.
 
+**TQM-QG Phase 25 (Observable reconstruction audit) — COMPLETED (3/3 tests pass; 78/78 TQM-QG verified):**
+Question: do lensing/horizon/GW failures require tensor gravity DIRECTLY, or only specific observables? Added
+ObservableReconstructionAudit (separate OBSERVED EFFECT spin from GR EXPLANATION: deflection/time-delay/
+magnification/shadow/temperature are each spin-0 scalars; only gw-strain h+/hx is spin-2). TQMQG250: 5 scalar + 1
+spin-2 observed effects. TQMQG251: TENSOR REQUIRED=1 (gw-strain only), OBSERVABLE AMBIGUITY=4 (lensing/time-delay/
+magnification/shadow — need non-conformal metric, scalar psi suffices), UNDECIDED=1 (Hawking T, scalar-tensor
+recovers T~1/M but TQM psi-extension not re-derived). TQMQG252 REFINEMENT of QG24: 1-d.o.f. scalar psi restores
+lensing+shadow; the full 2-d.o.f. spin-2 graviton is required SPECIFICALLY by the GW polarization observable.
+Two-tier cost: 1 scalar d.o.f. (lensing/horizon) vs 2 d.o.f. (GW). Report:
+Docs/Research/TQMQG_ObservableReconstructionAudit.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.

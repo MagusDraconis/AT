@@ -580,6 +580,11 @@ OPEN/WEAK: matter emergence + dynamics.
 **Status:** Complete (MINIMAL NEW PRIMITIVE). Smallest extra primitive restoring all three observables.
 - ψ-field (spin-2, 2 d.o.f.) is the unique minimum; rank-2 over-complete (6), vector spin-1 insufficient (3)
 
+### TQM-QG25: Observable Reconstruction Audit (TQM-QG Phase 25)
+**Status:** Complete (two-tier cost). Only the GW polarization observable is a true tensor requirement.
+- 5 scalar observables (lensing/time-delay/magnification/shadow) need only non-conformal geometry; Hawking T UNDECIDED
+- 1-d.o.f. scalar ψ restores lensing+shadow; 2-d.o.f. graviton required only by the GW strain
+
 ---
 
 ## Overall Statistics
@@ -591,8 +596,8 @@ OPEN/WEAK: matter emergence + dynamics.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 25 | Complete |
-| **Total** | **132** | |
+| TQM-QG | 26 | Complete |
+| **Total** | **133** | |
 
 ## Key Unsolved Problems
 
