@@ -7988,6 +7988,16 @@ emergent bilocal kernels) -> jitter + scalar renormalization, none breaks confor
 correlations CANNOT replace psi — systematic lensing needs the anisotropic rank-2 psi; correlations add only a
 stochastic jitter layer (new observable, not lensing). Report: Docs/Research/TQMQG_QEventCorrelations.md.
 
+**TQM-QG Phase 31 (Derive the TRM propagator) — COMPLETED (3/3 tests pass; 96/96 TQM-QG verified):**
+Question: what rule governs tick propagation, and is TRM's kernel a propagation law or a correlation? Added
+TRMPropagatorOrigin: tick propagates along generation relation -> light cone (conformal), native index n=1, M_eff
+= n-1 = 0 (massless null). TQMQG310 native M_eff=0 vs TRM M_eff=e^Phi-1 (refractive/massive); shared causal
+structure. TQMQG311 NOT derivable as native propagation law (native gives only M_eff=0); as correlation = zero-mean
+jitter (QG30), as propagation = psi sector; coincide only at M_eff=0. TQMQG312 CLASSIFICATION: PARTIAL MATCH —
+shared causal (retarded light-cone) structure, differing refractive content (0 vs e^Phi-1); SAME OBJECT only at
+psi=0. TRM kernel is not native in either reading — remains the imported psi. Report:
+Docs/Research/TQMQG_TRMPropagatorOrigin.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.

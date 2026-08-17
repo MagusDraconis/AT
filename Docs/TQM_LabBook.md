@@ -610,6 +610,11 @@ OPEN/WEAK: matter emergence + dynamics.
 - background metric is 1-point ρ̄ (conformal); correlations are 2-point variance (zero mean)
 - scalar renormalization stays conformal; systematic lensing still needs the rank-2 ψ
 
+### TQM-QG31: Derive the TRM Propagator (TQM-QG Phase 31)
+**Status:** Complete (PARTIAL MATCH). TRM kernel is the ψ sector, not native propagation.
+- native tick propagation = massless null (M_eff=0, n=1); TRM kernel M_eff=e^Φ−1 is refractive
+- shared causal structure, differing refractive content; coincide only at ψ=0
+
 ---
 
 ## Overall Statistics
@@ -621,8 +626,8 @@ OPEN/WEAK: matter emergence + dynamics.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 31 | Complete |
-| **Total** | **138** | |
+| TQM-QG | 32 | Complete |
+| **Total** | **139** | |
 
 ## Key Unsolved Problems
 
