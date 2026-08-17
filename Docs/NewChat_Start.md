@@ -7832,6 +7832,15 @@ graviton-like (tensor): graviton modes frozen by conformal flatness (Weyl=0, QG1
 dynamical Weyl/psi-field. Consistent: TQM gravity is scalar/conformal; the graviton sector is exactly the frozen
 d.o.f. Report: Docs/Research/TQMQG_SpacetimeFluctuations.md.
 
+**TQM-QG Phase 16 (Frozen Tensor Sector) — COMPLETED (3/3 tests pass; 51/51 TQM-QG verified):**
+Question: is the graviton sector absent or frozen? Added TensorSector (TensorDegreesOfFreedom=Weyl+graviton,
+ReferenceCurvature=psi-mode R). TQMQG160 tensor (Weyl+graviton) sector EXISTS for d>=3 (10+2=12 at d=3, 35+5=40 at
+d=4), ABSENT for d<=2 (D<=3). TQMQG161 psi-perturbation h_psi=diag(-e^{2psi}, e^{-2psi}) activates the non-conformal
+mode: R=0 at psi=0 (frozen), R=0.203,0.643,1.124 for b=0.1,0.3,0.5 (active). TQMQG162 CLASSIFICATION: FROZEN (not
+absent) — tensor sector is genuine countable d.o.f. (Weyl+graviton) set to zero by conformal flatness (psi=0);
+relaxing it (psi!=0) EMERGES the graviton. Closes QG10/QG15 arc: TQM is scalar gravity because it FREEZES the
+tensor sector. Report: Docs/Research/TQMQG_TensorSector.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.
