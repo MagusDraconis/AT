@@ -7781,6 +7781,17 @@ conformal-complete (it has 2 graviton + 10 Weyl); conformal-complete is d=2 (FOR
 picture: 3+1 = unique MINIMAL DYNAMICAL gravity (first non-trivial + first propagating). Fixed tests TQMQG21/31/
 81/90 and corrected QG2/3/8/9 reports. Report: Docs/Research/TQMQG_InformationDimension.md.
 
+**TQM-QG Phase 11 (Origin of Causal Order) — COMPLETED (3/3 tests pass; 36/36 TQM-QG verified):**
+Question: can causal order emerge from a more primitive actualization process? Added CausalOrder (branching-tree
+Parent/Generation/EventCount/IsAncestor + Irreflexive/Antisymmetric/Transitive/GenerationIsLinearExtension).
+TQMQG110 ancestor relation (transitive closure of parent->child generation relation) is a STRICT PARTIAL ORDER
+(irreflexive + antisymmetric + transitive) -> causal order = ancestor relation. TQMQG111 generation order is a
+LINEAR EXTENSION (temporal ordering); branching CONSISTENT (unique parent, strictly earlier generation, acyclic).
+TQMQG112 CLASSIFICATION: DERIVED — full causal order = transitive closure of generation relation; remaining
+REAL-UNDERIVED primitive = the generation relation itself ("event generates descendants" = actualization dynamics,
+critical branching QG1/QG7). Replaces primitive pair (Q-events + causal order) with (Q-events + generation relation).
+Deepest primitive = actualization dynamics itself. Report: Docs/Research/TQMQG_OriginOfCausalOrder.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.

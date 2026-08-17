@@ -524,6 +524,10 @@ OPEN/WEAK: matter emergence + dynamics.
 **Status:** Complete (NOT SPECIAL; d=3 PREFERRED). No interior maximum; propagation efficiency d-independent.
 - capacity/connectivity/complexity grow, entropy/d shrinks (monotonic); propagation = R exactly; d=3 boundary. CORRECTS QG2/3/8/9 Weyl/graviton index (3+1 = minimal dynamical, not conformal-complete)
 
+### TQM-QG11: Origin of Causal Order (TQM-QG Phase 11)
+**Status:** Complete (DERIVED). Causal order = transitive closure of the generation relation.
+- ancestor relation is a partial order; generation = linear extension; primitive reduces to "event generates descendants"
+
 ---
 
 ## Overall Statistics
@@ -535,8 +539,8 @@ OPEN/WEAK: matter emergence + dynamics.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 11 | Complete |
-| **Total** | **118** | |
+| TQM-QG | 12 | Complete |
+| **Total** | **119** | |
 
 ## Key Unsolved Problems
 
