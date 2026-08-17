@@ -7811,6 +7811,16 @@ T~1/R — root cause = TQM counting makes mass a VOLUME quantity (enclosed defic
 SURFACE quantity (M~R); native T~1/R needs holographic mass definition (mass from horizon area). Entropy S~Area is
 the MATCH (QG12); temperature is NO MATCH. Report: Docs/Research/TQMQG_HorizonThermodynamics.md.
 
+**TQM-QG Phase 14 (Planck-Regime Audit) — COMPLETED (3/3 tests pass; 45/45 TQM-QG verified):**
+Question: does actualization imply a natural minimum length / maximum density? Added PlanckRegime
+(CurvatureDivergence=rho^(-2/d), BranchingDensity=mu^k, MinimumCellSize=rhoMax^(-1/d)). TQMQG140 curvature
+R~rho^(-2/3) DIVERGES as rho->0 (metric sqrt(-g)=rho degenerates at horizon; |R| grows -2.7,-8.3,-36.5,-170) ->
+NATIVE lower bound rho>0 (maximum deficit = horizon). TQMQG141 critical mu=1 is MAX sustained branching (mu^50=1;
+supercritical 1.1^50=117 diverges, subcritical 0.9^50=0.005 dies); minimum cell size l=rhoMax^(-1/d) set by FREE
+rhoMax (no native length). TQMQG142 CLASSIFICATION: PARTIAL — native BOUNDS (rho>0, mu=1) but NO native minimum
+length (Planck l=sqrt(G*hbar/c^3) involves hbar, free). Consistent with LabBook open problem "numerical values of
+l, tau, hbar empirical". Report: Docs/Research/TQMQG_PlanckRegime.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.

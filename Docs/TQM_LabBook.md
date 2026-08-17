@@ -536,6 +536,10 @@ OPEN/WEAK: matter emergence + dynamics.
 **Status:** Complete (NO MATCH for T∝1/R). TQM gives T ∝ R (anti-Hawking); entropy S∝Area is the match.
 - first law T=dE/dS with E∝R^d → T∝R; needs holographic mass (M∝R) for T∝1/R
 
+### TQM-QG14: Planck Regime (TQM-QG Phase 14)
+**Status:** Complete (PARTIAL). Native bounds (ρ>0, μ=1) but no native minimum length.
+- curvature diverges at ρ=0 (metric degeneracy); critical μ=1 max sustained; ℓ free (needs ħ)
+
 ---
 
 ## Overall Statistics
@@ -547,8 +551,8 @@ OPEN/WEAK: matter emergence + dynamics.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 14 | Complete |
-| **Total** | **121** | |
+| TQM-QG | 15 | Complete |
+| **Total** | **122** | |
 
 ## Key Unsolved Problems
 
