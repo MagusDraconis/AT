@@ -7701,3 +7701,16 @@ entropy/abundance d-independent. TQMQG31 d=4 = MINIMAL PROPAGATING gravity: grav
 natively (all monotonic, d=3 is the natively-special conformal-complete dimension but static-only); PREFERRED
 only as minimal dynamical gravity conditional on IMPORTED "gravity must propagate" (GR input, not native).
 d=4 NOT DERIVED; observed 3+1 remains open non-derived input. Report: Docs/Research/TQMQG_DimensionSelection.md.
+
+**TQM-QG Phase 4 (Effective Dimension) — COMPLETED (3/3 tests pass; 15/15 TQM-QG verified):**
+Question: is d=4 fundamental or emergent? Added EffectiveDimension (Observable/TotalEinsteinComponents,
+ObservableFraction, TransverseDirections, EffectiveVolumeExponent, MetricOriginMismatch). TQMQG40 dimensional
+reduction: observable sector = support of rho (where it varies); Einstein non-trivial only in d×d block
+(d(d+1)/2=10 comps fixed by d), transverse D-d dirs have drho=0 -> empty; observable fraction decreases with D
+(1.0,0.667,0.476,0.357). TQMQG41 metric-origin consistency: restricting g=rho^(2/D)eta_D to d-dim submanifold gives
+sqrt(-g_eff)=rho^(d/D) != rho (d<D); sqrt(-g)=rho is dimension-specific (exponent 2/d), so observable sector
+re-derives its own metric origin in dimension d, decoupled from D (mismatch |2/D-2/d| = 0.1,0.167,0.214 for D=5,6,7).
+TQMQG42 CLASSIFICATION: EMERGENT — d=4 = dimension of actualization support, not fundamental; framework
+dimension-agnostic (D not fixed, higher-D not excluded); observable dim = rank of actualization. Reformulates
+"3+1 dimensionality" -> "why does actualization vary along exactly 3 spatial directions" (property of rho-field,
+not embedding). Report: Docs/Research/TQMQG_EffectiveDimension.md.

@@ -492,6 +492,10 @@ OPEN/WEAK: matter emergence + dynamics.
 **Status:** Complete (NOT SPECIAL native; PREFERRED conditional). d=4 not derived; all scores monotonic; d=4 = minimal propagating gravity.
 - no native criterion peaks at d=4; d=3 conformal-complete but static-only; d=4 preferred only under imported "gravity propagates"
 
+### TQM-QG4: Effective Dimension (TQM-QG Phase 4)
+**Status:** Complete (EMERGENT). d=4 = the dimension of the actualization support, not fundamental.
+- observable sector = support of ρ (transverse dirs empty); √(−g)=ρ dimension-specific; framework dimension-agnostic (D not fixed)
+
 ---
 
 ## Overall Statistics
@@ -503,8 +507,8 @@ OPEN/WEAK: matter emergence + dynamics.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 3 | Complete |
-| TQM-QG | 4 | Complete |
-| **Total** | **110** | |
+| TQM-QG | 5 | Complete |
+| **Total** | **111** | |
 
 ## Key Unsolved Problems
 
