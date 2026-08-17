@@ -568,6 +568,10 @@ OPEN/WEAK: matter emergence + dynamics.
 **Status:** Complete (NULL-GEODESIC). TQM predicts redshift WITHOUT lensing (conformal invariance).
 - light speed c, redshift present, bending absent; corrects G4-O "lensing"
 
+### TQM-QG22: Conformal-Flatness Audit (TQM-QG Phase 22)
+**Status:** Complete (CONFORMAL-FLATNESS ARTIFACT). Failures (lensing, tensor GWs, Hawking T) trace to ψ=0.
+- no lensing + no tensor GWs are direct artifacts; single cure = ψ/Weyl field (new primitive QG19)
+
 ---
 
 ## Overall Statistics
@@ -579,8 +583,8 @@ OPEN/WEAK: matter emergence + dynamics.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 22 | Complete |
-| **Total** | **129** | |
+| TQM-QG | 23 | Complete |
+| **Total** | **130** | |
 
 ## Key Unsolved Problems
 

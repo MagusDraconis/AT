@@ -7893,6 +7893,17 @@ clock rate but not null light); specific falsifiable difference from GR (which p
 'lensing' (was potential difference, not deflection); EMERGENT modification needs non-conformal coupling (new
 primitive). Report: Docs/Research/TQMQG_LightPropagation.md.
 
+**TQM-QG Phase 22 (Conformal-Flatness Audit) — COMPLETED (3/3 tests pass; 69/69 TQM-QG verified):**
+Question: are the failures consequences of conformal flatness itself? Added ConformalFlatnessAudit
+(LightBending=ReferenceRicciScalar, TensorModes=TensorSector.TensorDegreesOfFreedom). TQMQG220 light bending = 0
+at psi=0 (conformal flatness) and non-zero at psi!=0 (weakly non-conformal) -> "no lensing" is a DIRECT
+conformal-flatness artifact. TQMQG221 tensor sector 12 d.o.f. at d=3 frozen by psi=0, activated by psi!=0 (same
+knob) -> "no tensor GWs" is a direct artifact. TQMQG222 CLASSIFICATION: CONFORMAL-FLATNESS ARTIFACT — no lensing +
+no tensor GWs direct; no Hawking T partly (main failure = mass-radius relation, separate). Failures NOT fundamental
+TQM results; they trace to conformal-flatness ASSUMPTION (min-info, PREFERRED not derived); single cure = weakly
+non-conformal psi/Weyl field (new primitive QG19). Key insight of GW arc. Report:
+Docs/Research/TQMQG_ConformalFlatnessAudit.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.
