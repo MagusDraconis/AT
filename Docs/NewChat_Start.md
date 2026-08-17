@@ -7677,3 +7677,16 @@ finite L); scale-freeness (renormalization invariance, TQM-F1) selects mu=1=alph
 MATCH (conditional on scale-freeness=criticality) — chain Q-events -> critical branching -> alpha=0 -> log-deficit
 rho -> gravity CLOSED at microscopic level; single remaining input = scale-freeness (already reduced in TQM-F1).
 Report: Docs/Research/TQMQG_MicroscopicOriginOfRho.md.
+
+**TQM-QG Phase 2 (Origin of Dimension) — COMPLETED (3/3 tests pass; 9/9 TQM-QG verified):**
+Question: can preferred dimension emerge from actualization statistics? Added DimensionAnalysis (Einstein
+prefactors, conformal weight, metric exponent, Weyl components, graviton polarizations vs d). TQMQG20 Einstein
+non-triviality requires d>=3: G_11=(d-1)(d-2)/2(σ')² vanishes for d=1,2 (degenerate), non-zero d>=3 (d=1 no radial
+term + no transverse dirs, d=2 G≡0, d=3 first non-trivial). TQMQG21 conformal-flatness cost: Weyl tensor
+d(d+1)(d+2)(d-3)/12 components = 0 for d<=3 (vanishes identically), non-zero d>=4 (10 at d=4); graviton d(d-3)/2
+polarizations = 0 for d<=3, 2 at d=4; conformal weight a_d=(d+2)/(2d) + exponent 2/d MONOTONIC (no special d) ->
+conformal flatness FREE in d<=3, restrictive (freezes graviton) in d>=4. TQMQG22 CLASSIFICATION: SUPPLIED (d>=3
+derived, no unique selection) — entropy H=ln K d-independent; all dimension-dependent quantities monotonic; one
+derived constraint d>=3 (gravity); d=3 is the conformal-COMPLETE dimension (Weyl=0, nothing frozen); d=4 first with
+frozen gravitational waves (2 polarizations). d not derivable; consistent with LabBook open problem #5.
+Report: Docs/Research/TQMQG_OriginOfDimension.md.

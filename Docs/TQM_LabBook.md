@@ -484,6 +484,10 @@ OPEN/WEAK: matter emergence + dynamics.
 **Status:** Complete (FULL MATCH, conditional on criticality). Critical Q-event branching (μ=1) = α=0 = log-deficit ρ.
 - μ=λ^(−α) maps branching to abundance; μ=1 is the unique scale-free (critical) point; branching density = gravity density exactly
 
+### TQM-QG2: Origin of Dimension (TQM-QG Phase 2)
+**Status:** Complete (SUPPLIED, d≥3 derived). Dimension not derivable; d≥3 required for gravity; d=3 conformal-complete.
+- Weyl vanishes d≤3 (conformal flatness free), non-zero d≥4 (graviton frozen); entropy/quantities monotonic (no special d)
+
 ---
 
 ## Overall Statistics
@@ -495,8 +499,8 @@ OPEN/WEAK: matter emergence + dynamics.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 3 | Complete |
-| TQM-QG | 2 | Complete |
-| **Total** | **108** | |
+| TQM-QG | 3 | Complete |
+| **Total** | **109** | |
 
 ## Key Unsolved Problems
 
