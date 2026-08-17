@@ -7725,3 +7725,13 @@ is dimension-blind (radial/octave-index only), so support rank d is a CONSERVED 
 fixed point, neither selected nor destabilized). d=4 supplied as actualization configuration, not derived.
 Completes dimension arc: QG2 d>=3 bound -> QG3 d=4 not native-special -> QG4 d emergent (support rank) -> QG5
 support rank NOT selected (conserved input). Report: Docs/Research/TQMQG_ObservableDimension.md.
+
+**TQM-QG Phase 6 (Origin of G) — COMPLETED (3/3 tests pass; 21/21 TQM-QG verified):**
+Question: can G emerge from counting statistics/actualization dynamics? Added CouplingOrigin (DeficitMass,
+RescaledDeficitMass). TQMQG60 conformal gravity a=-(1/d)grad ln rho has NO free coupling (1/d fixed, profile is
+all); power-law deficit asymptotic M_eff = m0*r0/(d*rho-bar) = 0.0833 (M_eff at r=12 = 0.0784, 6% of asymptote)
+-> gravitational scale = deficit abundance (m0,r0,rho-bar) DERIVED. TQMQG61 G-M DEGENERACY: GM_eff invariant under
+m0->c*m0, r0->r0/c -> G and M NOT separable, only GM_eff physical. TQMQG62 CLASSIFICATION: IMPORTED as discrete
+BDG -2 normalization (G4-L12 second-moment continuum matching); DERIVED as physical scale GM_eff=m0*r0/(d*rho-bar).
+Resolves foundation audit "G imported": physical gravitational strength native (deficit mass); only discrete
+operator normalization imported. Report: Docs/Research/TQMQG_OriginOfG.md.

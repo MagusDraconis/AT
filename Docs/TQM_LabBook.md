@@ -500,6 +500,10 @@ OPEN/WEAK: matter emergence + dynamics.
 **Status:** Complete (NOT SELECTED). Support rank of ρ is a conserved input, not a dynamical attractor.
 - entropy/dilution/branching all monotonic in d; α=0 dynamics dimension-blind; d=4 supplied, not derived
 
+### TQM-QG6: Origin of G (TQM-QG Phase 6)
+**Status:** Complete (DERIVED physical scale; IMPORTED BDG −2). Gravitational coupling is native as the deficit mass.
+- GM_eff = m0·r0/(d·ρ̄); G–M non-separable; BDG −2 is a discretization normalization, not G
+
 ---
 
 ## Overall Statistics
@@ -511,8 +515,8 @@ OPEN/WEAK: matter emergence + dynamics.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 3 | Complete |
-| TQM-QG | 6 | Complete |
-| **Total** | **112** | |
+| TQM-QG | 7 | Complete |
+| **Total** | **113** | |
 
 ## Key Unsolved Problems
 
