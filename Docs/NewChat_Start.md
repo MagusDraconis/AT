@@ -7802,6 +7802,15 @@ conditional — caveat 1 (holographic): entropy = boundary (not bulk) d.o.f., na
 (mass scaling): TQM deficit mass ~ R^d vs Schwarzschild M ~ R, so S~M^2 and exact 1/4 coefficient NOT reproduced,
 only the area law (radius scaling). Report: Docs/Research/TQMQG_BlackHoleEntropy.md.
 
+**TQM-QG Phase 13 (Horizon Thermodynamics) — COMPLETED (3/3 tests pass; 42/42 TQM-QG verified):**
+Question: can a Hawking-like temperature emerge? Added HorizonThermodynamics (Entropy~R^(d-1), EntropyGradient,
+DeficitEnergy~R^d, SchwarzschildEnergy~R, TemperatureDeficit=d/(d-1)*R, TemperatureHawking=1/((d-1)R^(d-2))).
+TQMQG130 S~R² + dS/dR~R correct (area law). TQMQG131 first law T=dE/dS: TQM deficit E~R^d -> T~R (GROWS, ratio 2,
+ANTI-Hawking); Schwarzschild E~R -> T~1/R (falls, ratio 0.5, Hawking). TQMQG132 CLASSIFICATION: NO MATCH for
+T~1/R — root cause = TQM counting makes mass a VOLUME quantity (enclosed deficit ~ R^d) vs black-hole mass a
+SURFACE quantity (M~R); native T~1/R needs holographic mass definition (mass from horizon area). Entropy S~Area is
+the MATCH (QG12); temperature is NO MATCH. Report: Docs/Research/TQMQG_HorizonThermodynamics.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.

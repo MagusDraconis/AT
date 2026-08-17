@@ -532,6 +532,10 @@ OPEN/WEAK: matter emergence + dynamics.
 **Status:** Complete (MATCH, conditional). S ∝ Area from horizon counting; microstates exponential in area.
 - boundary count ∝ R^(d−1) vs bulk ∝ R^d; S = A·ln 2; caveats: holographic identification + S∝M² not reproduced
 
+### TQM-QG13: Horizon Thermodynamics (TQM-QG Phase 13)
+**Status:** Complete (NO MATCH for T∝1/R). TQM gives T ∝ R (anti-Hawking); entropy S∝Area is the match.
+- first law T=dE/dS with E∝R^d → T∝R; needs holographic mass (M∝R) for T∝1/R
+
 ---
 
 ## Overall Statistics
@@ -543,8 +547,8 @@ OPEN/WEAK: matter emergence + dynamics.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 13 | Complete |
-| **Total** | **120** | |
+| TQM-QG | 14 | Complete |
+| **Total** | **121** | |
 
 ## Key Unsolved Problems
 
