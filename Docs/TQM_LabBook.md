@@ -605,6 +605,11 @@ OPEN/WEAK: matter emergence + dynamics.
 - a Q-event = one local time-state change (a tick of actualization), not a bare point, not emergent
 - generation relation = update rule; ρ = update density
 
+### TQM-QG30: Q-Event Correlation Dynamics (TQM-QG Phase 30)
+**Status:** Complete (correlations cannot replace ψ). Only zero-mean jitter, no systematic lensing.
+- background metric is 1-point ρ̄ (conformal); correlations are 2-point variance (zero mean)
+- scalar renormalization stays conformal; systematic lensing still needs the rank-2 ψ
+
 ---
 
 ## Overall Statistics
@@ -616,8 +621,8 @@ OPEN/WEAK: matter emergence + dynamics.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 30 | Complete |
-| **Total** | **137** | |
+| TQM-QG | 31 | Complete |
+| **Total** | **138** | |
 
 ## Key Unsolved Problems
 

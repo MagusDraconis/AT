@@ -7977,6 +7977,17 @@ TQMQG290 all 4 transition pictures (TRM temporal-lattice, clock-network, time-st
 REAL-UNDERIVED NETWORK TRANSITION — one local time-state change (a tick of actualization); generation relation =
 update rule, rho = update density. Report: Docs/Research/TQMQG_PhysicalMeaningOfQEvents.md.
 
+**TQM-QG Phase 30 (Q-event correlation dynamics) — COMPLETED (3/3 tests pass; 93/93 TQM-QG verified):**
+Question: can Q-event correlations generate the systematic effects (lensing/delay/magnification) without psi?
+Added QEventCorrelations: background metric set by 1-point rho-bar (conformal n=1); correlations are 2-point
+variance K(x,y)=<drho drho> with ZERO mean. TQMQG300 mean deflection/delay=0, mean magnification=1 (systematic
+vanishes); deflection variance=8 pi sigma^2 xi^2 >0 (jitter). TQMQG301 correlations produce only zero-mean JITTER
+(scintillation), not systematic lensing; scalar renormalization of rho-bar stays conformal (n=1). TQMQG302 all five
+mechanisms (tick correlations, synchronization defects, branching covariance, temporal-network propagation,
+emergent bilocal kernels) -> jitter + scalar renormalization, none breaks conformal flatness. DETERMINATION:
+correlations CANNOT replace psi — systematic lensing needs the anisotropic rank-2 psi; correlations add only a
+stochastic jitter layer (new observable, not lensing). Report: Docs/Research/TQMQG_QEventCorrelations.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.
