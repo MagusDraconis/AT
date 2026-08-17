@@ -7841,6 +7841,16 @@ absent) — tensor sector is genuine countable d.o.f. (Weyl+graviton) set to zer
 relaxing it (psi!=0) EMERGES the graviton. Closes QG10/QG15 arc: TQM is scalar gravity because it FREEZES the
 tensor sector. Report: Docs/Research/TQMQG_TensorSector.md.
 
+**TQM-QG Phase 17 (Unfreeze Tensor Sector) — COMPLETED (3/3 tests pass; 54/54 TQM-QG verified):**
+Question: can actualization dynamics source psi (graviton)? Added UnfreezeTensor (TensorPartFromScalarSource=0,
+FrozenTensorDof=Weyl, ScalarDof=1). TQMQG170 Weyl is CONFORMALLY INVARIANT: scalar rho (any profile, even
+anisotropic) never generates Weyl/tensor curvature; traceless part of metric fluctuation from scalar source = 0.
+TQMQG171 Weyl sector has d(d+1)(d+2)(d-3)/12 d.o.f. (10 at d=3) requiring NON-SCALAR (tensor) source; scalar (1
+d.o.f.) structurally insufficient. TQMQG172 CLASSIFICATION: FROZEN — no native scalar source for psi; graviton
+cannot be unfrozen by ANY scalar actualization; native graviton requires a NEW tensor primitive (anisotropic
+reference/dynamical psi-field) beyond TQM primitives. Deepest form of QG16: graviton genuinely absent from scalar
+sector. Report: Docs/Research/TQMQG_UnfreezeTensorSector.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.

@@ -548,6 +548,10 @@ OPEN/WEAK: matter emergence + dynamics.
 **Status:** Complete (FROZEN, not absent). Graviton/Weyl sector exists for d≥3 but is frozen by conformal flatness.
 - tensor d.o.f. non-zero (10 Weyl + 2 graviton at d=3); ψ-mode activates it; relaxing conformal flatness emerges graviton
 
+### TQM-QG17: Unfreeze Tensor Sector (TQM-QG Phase 17)
+**Status:** Complete (FROZEN, no native source). Scalar ρ cannot source ψ (Weyl conformally invariant).
+- scalar source → zero tensor part; non-scalar (tensor) source required; graviton absent from scalar sector
+
 ---
 
 ## Overall Statistics
@@ -559,8 +563,8 @@ OPEN/WEAK: matter emergence + dynamics.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 17 | Complete |
-| **Total** | **124** | |
+| TQM-QG | 18 | Complete |
+| **Total** | **125** | |
 
 ## Key Unsolved Problems
 
