@@ -7714,3 +7714,14 @@ TQMQG42 CLASSIFICATION: EMERGENT — d=4 = dimension of actualization support, n
 dimension-agnostic (D not fixed, higher-D not excluded); observable dim = rank of actualization. Reformulates
 "3+1 dimensionality" -> "why does actualization vary along exactly 3 spatial directions" (property of rho-field,
 not embedding). Report: Docs/Research/TQMQG_EffectiveDimension.md.
+
+**TQM-QG Phase 5 (Observable Dimension) — COMPLETED (3/3 tests pass; 18/18 TQM-QG verified):**
+Question: why does rho vary along exactly d directions? Added ObservableDimension (MaxEntropy=ln d+ln K,
+DilutionExponent=-d, CriticalBranching=lambda^d, BranchingEfficiency=lambda^-d). TQMQG50 configurational entropy
+per active dimension MONOTONIC (H_max=ln d+ln K: 3.178,3.466,3.689,3.871) -> no max at d=4. TQMQG51 dilution
+R^-d (-3,-4,-5,-6) + critical branching lambda^d (3.375,5.063,7.594,11.391) + efficiency lambda^-d all MONOTONIC
+-> no special d. TQMQG52 CLASSIFICATION: NOT SELECTED — the alpha=0 dynamics (scale-space diffusion/DiffuseStep)
+is dimension-blind (radial/octave-index only), so support rank d is a CONSERVED initial condition (any d a stable
+fixed point, neither selected nor destabilized). d=4 supplied as actualization configuration, not derived.
+Completes dimension arc: QG2 d>=3 bound -> QG3 d=4 not native-special -> QG4 d emergent (support rank) -> QG5
+support rank NOT selected (conserved input). Report: Docs/Research/TQMQG_ObservableDimension.md.

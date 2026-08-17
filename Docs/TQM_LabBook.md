@@ -496,6 +496,10 @@ OPEN/WEAK: matter emergence + dynamics.
 **Status:** Complete (EMERGENT). d=4 = the dimension of the actualization support, not fundamental.
 - observable sector = support of ρ (transverse dirs empty); √(−g)=ρ dimension-specific; framework dimension-agnostic (D not fixed)
 
+### TQM-QG5: Observable Dimension (TQM-QG Phase 5)
+**Status:** Complete (NOT SELECTED). Support rank of ρ is a conserved input, not a dynamical attractor.
+- entropy/dilution/branching all monotonic in d; α=0 dynamics dimension-blind; d=4 supplied, not derived
+
 ---
 
 ## Overall Statistics
@@ -507,8 +511,8 @@ OPEN/WEAK: matter emergence + dynamics.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 3 | Complete |
-| TQM-QG | 5 | Complete |
-| **Total** | **111** | |
+| TQM-QG | 6 | Complete |
+| **Total** | **112** | |
 
 ## Key Unsolved Problems
 
