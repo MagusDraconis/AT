@@ -488,6 +488,10 @@ OPEN/WEAK: matter emergence + dynamics.
 **Status:** Complete (SUPPLIED, d≥3 derived). Dimension not derivable; d≥3 required for gravity; d=3 conformal-complete.
 - Weyl vanishes d≤3 (conformal flatness free), non-zero d≥4 (graviton frozen); entropy/quantities monotonic (no special d)
 
+### TQM-QG3: Dimension Selection (TQM-QG Phase 3)
+**Status:** Complete (NOT SPECIAL native; PREFERRED conditional). d=4 not derived; all scores monotonic; d=4 = minimal propagating gravity.
+- no native criterion peaks at d=4; d=3 conformal-complete but static-only; d=4 preferred only under imported "gravity propagates"
+
 ---
 
 ## Overall Statistics
@@ -499,8 +503,8 @@ OPEN/WEAK: matter emergence + dynamics.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 3 | Complete |
-| TQM-QG | 3 | Complete |
-| **Total** | **109** | |
+| TQM-QG | 4 | Complete |
+| **Total** | **110** | |
 
 ## Key Unsolved Problems
 

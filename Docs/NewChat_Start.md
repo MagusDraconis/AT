@@ -7690,3 +7690,14 @@ derived, no unique selection) — entropy H=ln K d-independent; all dimension-de
 derived constraint d>=3 (gravity); d=3 is the conformal-COMPLETE dimension (Weyl=0, nothing frozen); d=4 first with
 frozen gravitational waves (2 polarizations). d not derivable; consistent with LabBook open problem #5.
 Report: Docs/Research/TQMQG_OriginOfDimension.md.
+
+**TQM-QG Phase 3 (Dimension Selection) — COMPLETED (3/3 tests pass; 12/12 TQM-QG verified):**
+Question: can any native criterion prefer d=4? Added EinsteinRichness, FrozenFraction, ComplexityPerDof to
+DimensionAnalysis. TQMQG30 all native dimension-scores MONOTONIC in d (richness (d+1)(d+2)/2: 10,15,21,28,36;
+graviton d(d-3)/2: 0,2,5,9,14; Weyl: 0,10,35,84,168; a_d=(d+2)/(2d): 0.833,0.75,0.70,0.667,0.643; frozen
+graviton/(graviton+1): 0,0.667,0.833,0.9,0.933; complexity/dof ↑) -> NO local extremum at d=4 (or any d>=3);
+entropy/abundance d-independent. TQMQG31 d=4 = MINIMAL PROPAGATING gravity: graviton polarizations 0 at d=3
+(static-only), 2 at d=4 (first propagating, fewest non-zero), 5 at d=5. TQMQG32 CLASSIFICATION: NOT SPECIAL
+natively (all monotonic, d=3 is the natively-special conformal-complete dimension but static-only); PREFERRED
+only as minimal dynamical gravity conditional on IMPORTED "gravity must propagate" (GR input, not native).
+d=4 NOT DERIVED; observed 3+1 remains open non-derived input. Report: Docs/Research/TQMQG_DimensionSelection.md.

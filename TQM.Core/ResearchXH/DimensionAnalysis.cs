@@ -35,4 +35,20 @@ public static class DimensionAnalysis
     /// <summary>Propagating graviton polarizations d(d−3)/2 (0 for d≤3, 2 for d=4).</summary>
     public static double GravitonPolarizations(int d)
         => d < 4 ? 0.0 : d * (d - 3.0) / 2.0;
+
+    // ── TQM-QG Phase 3: dimension-selection "scores" ─────────────────────────────────
+
+    /// <summary>Einstein-structure richness = independent components of the symmetric Ricci/Einstein tensor in
+    /// (d+1)-dimensional spacetime: (d+1)(d+2)/2 — all determined by the single scalar ρ (monotonic in d).</summary>
+    public static double EinsteinRichness(int d) => (d + 1.0) * (d + 2.0) / 2.0;
+
+    /// <summary>Frozen fraction = graviton d.o.f. / (graviton + 1 active conformal scalar) — monotonic in d.</summary>
+    public static double FrozenFraction(int d)
+    {
+        double g = GravitonPolarizations(d);
+        return g / (g + 1.0);
+    }
+
+    /// <summary>Complexity per active degree of freedom = Einstein components per conformal scalar = (d+1)(d+2)/2.</summary>
+    public static double ComplexityPerDof(int d) => EinsteinRichness(d);
 }
