@@ -572,6 +572,10 @@ OPEN/WEAK: matter emergence + dynamics.
 **Status:** Complete (CONFORMAL-FLATNESS ARTIFACT). Failures (lensing, tensor GWs, Hawking T) trace to ψ=0.
 - no lensing + no tensor GWs are direct artifacts; single cure = ψ/Weyl field (new primitive QG19)
 
+### TQM-QG23: Origin of ψ-Field (TQM-QG Phase 23)
+**Status:** Complete (NEW PRIMITIVE). ψ cannot emerge from the single scalar actualization.
+- anisotropic actualization still scalar/conformal; rank-2 tensor needs 2 scalars; ψ is the minimal third primitive
+
 ---
 
 ## Overall Statistics
@@ -583,8 +587,8 @@ OPEN/WEAK: matter emergence + dynamics.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 23 | Complete |
-| **Total** | **130** | |
+| TQM-QG | 24 | Complete |
+| **Total** | **131** | |
 
 ## Key Unsolved Problems
 

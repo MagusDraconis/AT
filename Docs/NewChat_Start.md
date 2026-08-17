@@ -7904,6 +7904,16 @@ TQM results; they trace to conformal-flatness ASSUMPTION (min-info, PREFERRED no
 non-conformal psi/Weyl field (new primitive QG19). Key insight of GW arc. Report:
 Docs/Research/TQMQG_ConformalFlatnessAudit.md.
 
+**TQM-QG Phase 23 (Origin of psi-Field) — COMPLETED (3/3 tests pass; 72/72 TQM-QG verified):**
+Question: can psi emerge from actualization rather than a new primitive? Added OriginOfPsi (ScalarDof=1,
+TensorDof=(d+1)(d-2)/2, WeylOfAnisotropicScalar=0, MultiFieldRequired=2). TQMQG230 anisotropic/directional
+actualization -> anisotropic SCALAR rho (1 d.o.f.), still conformally flat (Weyl=0) — spin-0 cannot source spin-2.
+TQMQG231 rank-2 tensor (d_i rho1 d_j rho2) requires 2 scalars; TQM has 1 counting measure -> multi-field
+actualization is a new primitive. TQMQG232 CLASSIFICATION: NEW PRIMITIVE — psi cannot be derived or emerge from the
+single scalar actualization; the psi/Weyl field is the minimal third primitive that relaxes conformal flatness and
+restores lensing/tensor GWs/horizon thermodynamics. Definitive answer to GW arc. Report:
+Docs/Research/TQMQG_OriginOfPsi.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.
