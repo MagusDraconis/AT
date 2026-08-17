@@ -26,15 +26,16 @@ public static class DimensionAnalysis
     public static double FlatRotation(int d, double s) => Math.Abs(s) / d;
 
     /// <summary>
-    /// Independent components of the Weyl tensor: 0 for d≤3 (vanishes identically), d(d+1)(d+2)(d−3)/12 for d≥4.
-    /// Non-zero Weyl is the "conformal" degree of freedom frozen out by the conformal-flatness assumption.
+    /// Independent components of the Weyl tensor of the (d+1)-dimensional spacetime (d = spatial dimension):
+    /// 0 for d≤2 (D≤3), (d+1)(d+2)(d+3)(d−2)/12 for d≥3 (D=d+1 ≥ 4). Non-zero Weyl is the "conformal" degree of
+    /// freedom frozen out by the conformal-flatness assumption.
     /// </summary>
     public static double WeylComponents(int d)
-        => d < 4 ? 0.0 : d * (d + 1.0) * (d + 2.0) * (d - 3.0) / 12.0;
+        => d < 3 ? 0.0 : (d + 1.0) * (d + 2.0) * (d + 3.0) * (d - 2.0) / 12.0;
 
-    /// <summary>Propagating graviton polarizations d(d−3)/2 (0 for d≤3, 2 for d=4).</summary>
+    /// <summary>Propagating graviton polarizations of the (d+1)-dim spacetime: (d+1)(d−2)/2 (0 for d≤2, 2 for d=3).</summary>
     public static double GravitonPolarizations(int d)
-        => d < 4 ? 0.0 : d * (d - 3.0) / 2.0;
+        => d < 3 ? 0.0 : (d + 1.0) * (d - 2.0) / 2.0;
 
     // ── TQM-QG Phase 3: dimension-selection "scores" ─────────────────────────────────
 

@@ -7767,6 +7767,20 @@ rotation defined for all d>=3. TQMQG82 landscape summary: 2 FORBIDDEN, 2 PREFERR
 unique efficient point d=3, unique minimal-dynamical point d=4; observed 3+1 = combination of conformal-complete +
 minimal-propagating. Report: Docs/Research/TQMQG_DimensionLandscape.md.
 
+**TQM-QG Phase 10 (Information-Theoretic Dimension Selection) — COMPLETED (3/3 tests pass; 33/33 TQM-QG):**
+Question: how much information can an actualization of dimension d carry? Added InformationDimension
+(InformationCapacity=(d+1)(d+2)/2, EntropyDensity=(ln d+ln K)/d, CausalConnectivity=lambda^d,
+Reach/Intensity/PropagationEfficiency, GeometryComplexity=Weyl, InformationEfficiency=1/(1+graviton)).
+TQMQG100 capacity/connectivity/complexity GROW with d, entropy density DECREASES — all monotonic (no interior
+max). TQMQG101 propagation efficiency = reach*intensity = R^d*R^-(d-1) = R EXACTLY dimension-INDEPENDENT;
+information efficiency max at smallest allowed d=3. TQMQG102 CLASSIFICATION: NOT SPECIAL (no interior max), d=3
+(3+1) PREFERRED as boundary (minimal dynamical + max efficiency among allowed).
+**CORRECTION to QG2/QG3/QG8/QG9 (index error):** Weyl/graviton formulas were spacetime-form but spatial-indexed;
+correct Weyl=(d+1)(d+2)(d+3)(d-2)/12 (=10 at d=3) and graviton=(d+1)(d-2)/2 (=2 at d=3). So d=3 (3+1) is NOT
+conformal-complete (it has 2 graviton + 10 Weyl); conformal-complete is d=2 (FORBIDDEN, no gravity). Corrected
+picture: 3+1 = unique MINIMAL DYNAMICAL gravity (first non-trivial + first propagating). Fixed tests TQMQG21/31/
+81/90 and corrected QG2/3/8/9 reports. Report: Docs/Research/TQMQG_InformationDimension.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.

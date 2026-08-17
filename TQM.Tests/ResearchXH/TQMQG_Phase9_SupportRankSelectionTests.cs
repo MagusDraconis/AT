@@ -26,33 +26,33 @@ public class TQMQG_Phase9_SupportRankSelectionTests : ResearchTestBase
     {
         Thread.CurrentThread.CurrentCulture = CultureInfo.InvariantCulture;
         var sb = new StringBuilder();
-        PrintHeader("TQMQG90: conformal efficiency is maximized at d=3 (independent of D)");
+        PrintHeader("TQMQG90: conformal efficiency is maximized at d=2 (forbidden), then d=3");
 
         sb.AppendLine($"{"d",4} {"graviton",9} {"conformal eff",14} {"curv/d.o.f.",13}");
-        bool maxAt3 = true, monotonic = true;
+        bool effAt2 = true, monotonic = true;
         double prev = double.MaxValue;
-        for (int d = 3; d <= 12; d++)
+        for (int d = 2; d <= 12; d++)
         {
             double g = DimensionAnalysis.GravitonPolarizations(d);
             double eff = EffectiveDimension.ConformalEfficiency(d);
             double cpd = EffectiveDimension.CurvaturePerDof(d);
-            if (d == 3 && eff != 1.0) maxAt3 = false;
-            if (d > 3 && eff >= prev) monotonic = false;   // strictly decreasing
+            if (d == 2 && eff != 1.0) effAt2 = false;          // efficiency 1 (nothing frozen) at d=2
+            if (d > 2 && eff >= prev) monotonic = false;       // strictly decreasing for d≥3
             prev = eff;
             sb.AppendLine($"{d,4} {g,9:F0} {eff,14:F4} {cpd,13:F0}");
         }
 
         sb.AppendLine();
-        sb.AppendLine($"efficiency = 1 at d=3 (nothing frozen): {maxAt3}");
-        sb.AppendLine($"efficiency strictly decreasing for d≥4: {monotonic}");
+        sb.AppendLine($"efficiency = 1 at d=2 (nothing frozen): {effAt2}");
+        sb.AppendLine($"efficiency strictly decreasing for d≥3: {monotonic}");
         sb.AppendLine();
-        sb.AppendLine("CONCLUSION: d=3 is the MOST EFFICIENT observable support rank — the only dimension where");
-        sb.AppendLine("conformal flatness freezes nothing (efficiency 1). Efficiency is a property of d alone,");
-        sb.AppendLine("independent of the fundamental D, and decreases monotonically for d≥4.");
+        sb.AppendLine("CONCLUSION: conformal efficiency is 1 only at d=2 (D=3, Weyl=0) — which is FORBIDDEN (no");
+        sb.AppendLine("gravity). Among allowed dimensions (d≥3), efficiency is maximized at d=3 (1/3) and decreases");
+        sb.AppendLine("monotonically. Efficiency is a property of d alone, independent of the fundamental D.");
         Output.WriteLine(sb.ToString());
 
-        Assert.True(maxAt3, "efficiency should be maximized (1.0) at d=3");
-        Assert.True(monotonic, "efficiency should decrease monotonically for d≥4");
+        Assert.True(effAt2, "efficiency should be 1.0 at d=2");
+        Assert.True(monotonic, "efficiency should decrease monotonically for d≥3");
     }
 
     // ── TQMQG91: efficiency vs coverage trade-off ────────────────────────────────────
@@ -62,7 +62,7 @@ public class TQMQG_Phase9_SupportRankSelectionTests : ResearchTestBase
     {
         Thread.CurrentThread.CurrentCulture = CultureInfo.InvariantCulture;
         var sb = new StringBuilder();
-        PrintHeader("TQMQG91: conformal efficiency (prefers d=3) vs coverage (prefers d=D)");
+        PrintHeader("TQMQG91: conformal efficiency (prefers low d) vs coverage (prefers d=D)");
 
         int D = 10;
         sb.AppendLine($"fundamental D = {D}; observable d = 3..10:");
@@ -74,13 +74,13 @@ public class TQMQG_Phase9_SupportRankSelectionTests : ResearchTestBase
             sb.AppendLine($"{d,4} {eff,14:F4} {cov,24:F4}");
         }
 
-        bool efficiencyPrefers3 = EffectiveDimension.ConformalEfficiency(3) > EffectiveDimension.ConformalEfficiency(4);
+        bool efficiencyPrefersLow = EffectiveDimension.ConformalEfficiency(3) > EffectiveDimension.ConformalEfficiency(4);
         bool coveragePrefersD = EffectiveDimension.ObservableFraction(D, D) > EffectiveDimension.ObservableFraction(D, D - 1);
         bool tradeOff = EffectiveDimension.ConformalEfficiency(D) < EffectiveDimension.ConformalEfficiency(3)
                      && EffectiveDimension.ObservableFraction(D, 3) < EffectiveDimension.ObservableFraction(D, D);
 
         sb.AppendLine();
-        sb.AppendLine($"conformal efficiency prefers d=3 (nothing frozen): {efficiencyPrefers3}");
+        sb.AppendLine($"conformal efficiency prefers low d (d=3 among allowed): {efficiencyPrefersLow}");
         sb.AppendLine($"coverage prefers d=D (no reduction): {coveragePrefersD}");
         sb.AppendLine($"the two metrics pull in OPPOSITE directions (trade-off): {tradeOff}");
         sb.AppendLine();
@@ -88,7 +88,7 @@ public class TQMQG_Phase9_SupportRankSelectionTests : ResearchTestBase
         sb.AppendLine("small d (d=3), while coverage favors large d (d=D). They trade off.");
         Output.WriteLine(sb.ToString());
 
-        Assert.True(efficiencyPrefers3, "efficiency should prefer d=3");
+        Assert.True(efficiencyPrefersLow, "efficiency should prefer low d");
         Assert.True(coveragePrefersD, "coverage should prefer d=D");
         Assert.True(tradeOff, "the two metrics should trade off");
     }
@@ -102,17 +102,16 @@ public class TQMQG_Phase9_SupportRankSelectionTests : ResearchTestBase
         var sb = new StringBuilder();
         PrintHeader("TQMQG92: is a specific support rank DERIVED, PREFERRED, or NOT SELECTED?");
 
-        sb.AppendLine("CLASSIFICATION: PREFERRED (d=3 for efficiency, d=4 for minimal dynamics); NOT SELECTED uniquely.");
+        sb.AppendLine("CLASSIFICATION: PREFERRED (d=3 = 3+1, minimal dynamical); NOT SELECTED uniquely.");
         sb.AppendLine();
-        sb.AppendLine("  • d=3 is PREFERRED by conformal efficiency: it is the unique dimension where conformal flatness");
-        sb.AppendLine("    freezes nothing (efficiency 1, Weyl=0), so it is the most efficient observable universe");
-        sb.AppendLine("    (TQMQG90), independent of the fundamental D.");
-        sb.AppendLine("  • d=4 is PREFERRED as the minimal propagating dimension (2 graviton modes, QG3/QG8) — the");
-        sb.AppendLine("    lowest d with gravitational waves, at the cost of efficiency 1/3.");
-        sb.AppendLine("  • Efficiency (prefers d=3) and coverage (prefers d=D) trade off (TQMQG91), so NO unique support");
+        sb.AppendLine("  • d=3 (3+1) is PREFERRED as the minimal dynamical gravity: the lowest d with non-trivial Einstein");
+        sb.AppendLine("    structure AND propagating graviton modes (2 polarizations, QG2/QG3/QG8).");
+        sb.AppendLine("  • Conformal efficiency is 1 only at d=2 (Weyl=0), which is FORBIDDEN (no gravity); among allowed");
+        sb.AppendLine("    d≥3, efficiency is maximized at d=3 (1/3) and decreases (TQMQG90).");
+        sb.AppendLine("  • Efficiency (prefers low d) and coverage (prefers d=D) trade off (TQMQG91), so NO unique support");
         sb.AppendLine("    rank is SELECTED by a single criterion — the choice depends on the chosen efficiency metric.");
-        sb.AppendLine("  • Therefore the observable support rank is NOT SELECTED uniquely; d=3 and d=4 are the two");
-        sb.AppendLine("    quality-PREFERRED candidates (conformal-complete vs minimal-propagating), not DERIVED.");
+        sb.AppendLine("  • Therefore the observable support rank is NOT SELECTED uniquely; d=3 (3+1) is the quality-");
+        sb.AppendLine("    PREFERRED candidate (minimal dynamical gravity), not DERIVED.");
         Output.WriteLine(sb.ToString());
 
         Assert.True(true);   // classification (no numeric assertion)

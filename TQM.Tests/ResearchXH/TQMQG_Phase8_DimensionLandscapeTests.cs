@@ -32,18 +32,18 @@ public class TQMQG_Phase8_DimensionLandscapeTests : ResearchTestBase
             sb.AppendLine($"{d,4} {p.richness,9:F0} {p.graviton,9:F0} {p.weyl,9:F0} {p.deficitGravity,11:F3} {p.rotationCurve,8:F3} {p.frozenFraction,8:F3} {DimensionLandscape.Classify(d),11}");
         }
 
-        // Classification checks: d≤2 FORBIDDEN, d=3,4 PREFERRED, d≥5 ALLOWED.
+        // Classification checks: d≤2 FORBIDDEN, d=3 PREFERRED, d≥4 ALLOWED.
         bool forbidden = DimensionLandscape.Classify(1) == "FORBIDDEN" && DimensionLandscape.Classify(2) == "FORBIDDEN";
-        bool preferred = DimensionLandscape.Classify(3) == "PREFERRED" && DimensionLandscape.Classify(4) == "PREFERRED";
-        bool allowed = DimensionLandscape.Classify(5) == "ALLOWED" && DimensionLandscape.Classify(20) == "ALLOWED";
+        bool preferred = DimensionLandscape.Classify(3) == "PREFERRED" && DimensionLandscape.Classify(4) != "PREFERRED";
+        bool allowed = DimensionLandscape.Classify(4) == "ALLOWED" && DimensionLandscape.Classify(20) == "ALLOWED";
 
         sb.AppendLine();
-        sb.AppendLine($"FORBIDDEN (d≤2): {forbidden};  PREFERRED (d=3,4): {preferred};  ALLOWED (d≥5): {allowed}");
+        sb.AppendLine($"FORBIDDEN (d≤2): {forbidden};  PREFERRED (d=3 only): {preferred};  ALLOWED (d≥4): {allowed}");
         Output.WriteLine(sb.ToString());
 
         Assert.True(forbidden, "d=1,2 should be FORBIDDEN");
-        Assert.True(preferred, "d=3,4 should be PREFERRED");
-        Assert.True(allowed, "d≥5 should be ALLOWED");
+        Assert.True(preferred, "only d=3 should be PREFERRED");
+        Assert.True(allowed, "d≥4 should be ALLOWED");
     }
 
     // ── TQMQG81: viability categories (pathological / efficient / minimal-dynamical) ─
@@ -58,37 +58,37 @@ public class TQMQG_Phase8_DimensionLandscapeTests : ResearchTestBase
         // Pathological: d≤2 has no gravity (Einstein degenerate).
         bool pathological = !DimensionLandscape.HasGravity(1) && !DimensionLandscape.HasGravity(2);
 
-        // Efficient (conformal-complete): d=3 has Weyl=0, frozen fraction=0.
+        // Conformal-complete (Weyl=0): d=2 (D=3) — but it is FORBIDDEN (no gravity).
+        var p2 = DimensionLandscape.Profile(2);
+        bool conformalCompleteForbidden = DimensionLandscape.ConformalComplete(2) && p2.frozenFraction == 0.0 && p2.graviton == 0.0 && !DimensionLandscape.HasGravity(2);
+
+        // Minimal dynamical: d=3 (3+1) has the fewest non-zero graviton modes (2).
         var p3 = DimensionLandscape.Profile(3);
-        bool efficient = DimensionLandscape.ConformalComplete(3) && p3.frozenFraction == 0.0 && p3.graviton == 0.0;
+        bool minimalDynamical = p3.graviton == 2.0 && p3.graviton < DimensionLandscape.Profile(4).graviton;
 
-        // Minimal dynamical: d=4 has the fewest non-zero graviton modes (2).
+        // Inefficient (frozen): d≥4 has frozen fraction > 0.9 by d=20 (most metric d.o.f. frozen).
         var p4 = DimensionLandscape.Profile(4);
-        bool minimalDynamical = p4.graviton == 2.0 && p4.graviton < DimensionLandscape.Profile(5).graviton;
-
-        // Inefficient (frozen): d≥5 has frozen fraction > 0.9 by d=20 (most metric d.o.f. frozen).
-        var p5 = DimensionLandscape.Profile(5);
         var p20 = DimensionLandscape.Profile(20);
-        bool inefficient = p5.frozenFraction > p4.frozenFraction && p20.frozenFraction > 0.9;
+        bool inefficient = p4.frozenFraction > p3.frozenFraction && p20.frozenFraction > 0.9;
 
         // Deficit gravity and rotation curves are defined for all d≥3 (gravity 1/d > 0, rotation |s|/d > 0).
         bool deficitDefined = p3.deficitGravity > 0.0 && p20.deficitGravity > 0.0;
 
         sb.AppendLine($"pathological (d≤2, no gravity): {pathological}");
-        sb.AppendLine($"efficient (d=3, conformal-complete, frozen=0): {efficient}");
-        sb.AppendLine($"minimal-dynamical (d=4, 2 graviton modes): {minimalDynamical}");
-        sb.AppendLine($"inefficient (d≥5, frozen fraction → 1): {inefficient}");
+        sb.AppendLine($"conformal-complete d=2 but FORBIDDEN (no gravity): {conformalCompleteForbidden}");
+        sb.AppendLine($"minimal-dynamical (d=3, 2 graviton modes): {minimalDynamical}");
+        sb.AppendLine($"inefficient (d≥4, frozen fraction → 1): {inefficient}");
         sb.AppendLine($"deficit gravity + rotation defined for all d≥3: {deficitDefined}");
 
         sb.AppendLine();
-        sb.AppendLine("CONCLUSION: the landscape separates into pathological (d≤2), efficient (d=3),");
-        sb.AppendLine("minimal-dynamical (d=4), and increasingly inefficient (d≥5) dimensions.");
+        sb.AppendLine("CONCLUSION: the landscape separates into pathological (d≤2), the conformal-complete-but-forbidden");
+        sb.AppendLine("d=2, the minimal-dynamical d=3 (3+1), and increasingly inefficient (d≥4) dimensions.");
         Output.WriteLine(sb.ToString());
 
         Assert.True(pathological, "d≤2 should be pathological (no gravity)");
-        Assert.True(efficient, "d=3 should be conformal-complete/efficient");
-        Assert.True(minimalDynamical, "d=4 should be minimal dynamical");
-        Assert.True(inefficient && deficitDefined, "d≥5 should be inefficient; gravity defined");
+        Assert.True(conformalCompleteForbidden, "d=2 should be conformal-complete but forbidden");
+        Assert.True(minimalDynamical, "d=3 should be minimal dynamical");
+        Assert.True(inefficient && deficitDefined, "d≥4 should be inefficient; gravity defined");
     }
 
     // ── TQMQG82: landscape summary ───────────────────────────────────────────────────
@@ -111,23 +111,21 @@ public class TQMQG_Phase8_DimensionLandscapeTests : ResearchTestBase
 
         sb.AppendLine($"dimensions d=1..20:");
         sb.AppendLine($"  FORBIDDEN  (d≤2, no gravity):            {forbidden}");
-        sb.AppendLine($"  PREFERRED  (d=3 conformal-complete, d=4 minimal dynamical): {preferred}");
-        sb.AppendLine($"  ALLOWED    (d≥5, frozen fraction grows): {allowed}");
+        sb.AppendLine($"  PREFERRED  (d=3, 3+1 minimal dynamical): {preferred}");
+        sb.AppendLine($"  ALLOWED    (d≥4, frozen fraction grows): {allowed}");
         sb.AppendLine();
         sb.AppendLine("LANDSCAPE CONCLUSION:");
         sb.AppendLine("  • d=1,2: FORBIDDEN — Einstein tensor identically zero (no gravity).");
-        sb.AppendLine("  • d=3:   PREFERRED — first non-trivial gravity AND conformal-complete (Weyl=0, nothing frozen);");
-        sb.AppendLine("           the unique dimension where TQM's conformally-flat scalar gravity is COMPLETE.");
-        sb.AppendLine("  • d=4:   PREFERRED — minimal PROPAGATING gravity (2 graviton polarizations); the unique dimension");
-        sb.AppendLine("           where gravity has the fewest non-zero wave modes.");
-        sb.AppendLine("  • d≥5:   ALLOWED — gravity exists but the conformal-flatness assumption freezes an ever-growing");
+        sb.AppendLine("  • d=3:   PREFERRED — first non-trivial gravity AND minimal PROPAGATING gravity (2 graviton");
+        sb.AppendLine("           polarizations, 10 Weyl components) — the unique 3+1 minimal dynamical gravity.");
+        sb.AppendLine("  • d≥4:   ALLOWED — gravity exists but the conformal-flatness assumption freezes an ever-growing");
         sb.AppendLine("           fraction of the metric (frozen fraction → 1), making them increasingly 'inefficient'.");
         sb.AppendLine();
-        sb.AppendLine("The phase space has a unique efficient point (d=3) and a unique minimal-dynamical point (d=4),");
-        sb.AppendLine("with all d≥5 viable-but-inefficient and d≤2 forbidden.");
+        sb.AppendLine("The phase space has a unique minimal-dynamical point (d=3 = 3+1), with all d≥4 viable-but-inefficient");
+        sb.AppendLine("and d≤2 forbidden (the conformal-complete d=2 is forbidden by the absence of gravity).");
         Output.WriteLine(sb.ToString());
 
-        Assert.True(forbidden == 2 && preferred == 2 && allowed == 16,
-            "d=1..20 should give 2 forbidden, 2 preferred, 16 allowed");
+        Assert.True(forbidden == 2 && preferred == 1 && allowed == 17,
+            "d=1..20 should give 2 forbidden, 1 preferred, 17 allowed");
     }
 }

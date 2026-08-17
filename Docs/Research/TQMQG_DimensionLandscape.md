@@ -1,5 +1,9 @@
 # TQM-QG Phase 8 — Dimension Landscape
 
+> **CORRECTION (QG10):** the landscape table used the wrong Weyl/graviton index. Corrected: graviton = (d+1)(d−2)/2
+> and Weyl = (d+1)(d+2)(d+3)(d−2)/12, so **d=3 (3+1) is the single PREFERRED (minimal dynamical) dimension**, and
+> d≥4 is ALLOWED (not d≥5). The conformal-complete d=2 is FORBIDDEN. See `TQMQG_InformationDimension.md`.
+
 **Program:** TQM-QG (Unification)
 **Phase:** 8 — what dimensions are physically viable?
 **Status:** COMPLETED — 3/3 xUnit tests pass (27/27 TQM-QG)

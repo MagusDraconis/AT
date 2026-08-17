@@ -62,7 +62,7 @@ public class TQMQG_Phase2_OriginOfDimensionTests : ResearchTestBase
     {
         Thread.CurrentThread.CurrentCulture = CultureInfo.InvariantCulture;
         var sb = new StringBuilder();
-        PrintHeader("TQMQG21: conformal flatness is automatic for d≤3, restrictive for d≥4");
+        PrintHeader("TQMQG21: conformal flatness is automatic for d≤2, restrictive for d≥3");
 
         sb.AppendLine($"{"d",4} {"Weyl comps",12} {"graviton pols",14} {"a_d=(d+2)/2d",14} {"2/d",8}");
         for (int d = 2; d <= 6; d++)
@@ -74,27 +74,27 @@ public class TQMQG_Phase2_OriginOfDimensionTests : ResearchTestBase
             sb.AppendLine($"{d,4} {weyl,12:F0} {grav,14:F0} {a,14:F4} {k,8:F4}");
         }
 
-        bool weylVanishes3 = DimensionAnalysis.WeylComponents(3) == 0.0;
-        bool weylNonzero4 = DimensionAnalysis.WeylComponents(4) > 0.0;
-        bool gravitonNone3 = DimensionAnalysis.GravitonPolarizations(3) == 0.0;
-        bool gravitonTwo4 = DimensionAnalysis.GravitonPolarizations(4) == 2.0;
+        bool weylVanishes2 = DimensionAnalysis.WeylComponents(2) == 0.0;   // D=3 (2+1) Weyl ≡ 0
+        bool weylNonzero3 = DimensionAnalysis.WeylComponents(3) > 0.0;     // D=4 (3+1) Weyl = 10
+        bool gravitonNone2 = DimensionAnalysis.GravitonPolarizations(2) == 0.0;   // D=3 no graviton
+        bool gravitonTwo3 = DimensionAnalysis.GravitonPolarizations(3) == 2.0;    // D=4 two polarizations
         // conformal weight + metric exponent are monotonic (no special d)
         bool aMonotonic = DimensionAnalysis.ConformalWeight(2) > DimensionAnalysis.ConformalWeight(3)
                        && DimensionAnalysis.ConformalWeight(3) > DimensionAnalysis.ConformalWeight(4);
 
         sb.AppendLine();
-        sb.AppendLine($"Weyl vanishes at d=3 (conformal flatness automatic): {weylVanishes3}");
-        sb.AppendLine($"Weyl non-zero at d=4 (conformal flatness restrictive): {weylNonzero4}");
-        sb.AppendLine($"d=3: no propagating graviton; d=4: two polarizations: {gravitonNone3 && gravitonTwo4}");
+        sb.AppendLine($"Weyl vanishes at d=2 (D=3, conformal flatness automatic): {weylVanishes2}");
+        sb.AppendLine($"Weyl non-zero at d=3 (D=4, conformal flatness restrictive): {weylNonzero3}");
+        sb.AppendLine($"d=2: no propagating graviton; d=3: two polarizations: {gravitonNone2 && gravitonTwo3}");
         sb.AppendLine($"conformal weight a_d and exponent 2/d monotonic (no special d): {aMonotonic}");
         sb.AppendLine();
-        sb.AppendLine("CONCLUSION: in d≤3 the Weyl tensor vanishes identically, so conformal flatness is FREE (no");
-        sb.AppendLine("frozen-out degrees of freedom). In d≥4 the conformal-flatness assumption freezes the graviton");
-        sb.AppendLine("(2 polarizations at d=4). TQM gravity is 'scalar-only' (conformal), complete in d≤3.");
+        sb.AppendLine("CONCLUSION: in d≤2 (D≤3) the Weyl tensor vanishes identically, so conformal flatness is FREE.");
+        sb.AppendLine("In d≥3 (D≥4) the conformal-flatness assumption freezes the graviton (2 polarizations at d=3).");
+        sb.AppendLine("The conformal-complete dimension is d=2 (D=3), which is FORBIDDEN (no gravity).");
         Output.WriteLine(sb.ToString());
 
-        Assert.True(weylVanishes3 && gravitonNone3, "d=3 should have no Weyl/graviton degrees of freedom");
-        Assert.True(weylNonzero4 && gravitonTwo4, "d=4 should have Weyl components and 2 graviton polarizations");
+        Assert.True(weylVanishes2 && gravitonNone2, "d=2 (D=3) should have no Weyl/graviton degrees of freedom");
+        Assert.True(weylNonzero3 && gravitonTwo3, "d=3 (D=4) should have Weyl components and 2 graviton polarizations");
         Assert.True(aMonotonic, "conformal weight should be monotonic (no special d)");
     }
 

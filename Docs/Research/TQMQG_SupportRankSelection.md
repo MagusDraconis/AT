@@ -1,5 +1,9 @@
 # TQM-QG Phase 9 — Support Rank Selection
 
+> **CORRECTION (QG10):** "conformal efficiency = 1 at d=3" was off by one. Corrected: efficiency = 1/(1+graviton)
+> is 1 at **d=2** (forbidden), and among allowed dimensions is maximized at **d=3** (1/3). d=3 (3+1) is the
+> single quality-preferred (minimal dynamical) candidate, not d=4. See `TQMQG_InformationDimension.md`.
+
 **Program:** TQM-QG (Unification)
 **Phase:** 9 — which support rank d is favored inside higher-dimensional D?
 **Status:** COMPLETED — 3/3 xUnit tests pass (30/30 TQM-QG)

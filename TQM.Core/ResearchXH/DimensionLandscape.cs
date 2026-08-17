@@ -28,15 +28,15 @@ public static class DimensionLandscape
     }
 
     /// <summary>
-    /// Dimension classification:
-    /// FORBIDDEN  — d≤2 (Einstein tensor degenerate: no gravity, no transverse structure);
-    /// PREFERRED  — d=3 (conformal-complete: Weyl=0, frozen=0) and d=4 (minimal propagating: 2 graviton modes);
-    /// ALLOWED    — d≥5 (increasing frozen metric fraction).
+    /// Dimension classification (d = spatial dimension, spacetime = d+1):
+    /// FORBIDDEN  — d≤2 (Einstein tensor degenerate: no gravity);
+    /// PREFERRED  — d=3 (3+1: first non-trivial gravity AND minimal propagating, 2 graviton modes);
+    /// ALLOWED    — d≥4 (increasing frozen metric fraction).
     /// </summary>
     public static string Classify(int d)
     {
         if (d <= 2) return "FORBIDDEN";
-        if (d == 3 || d == 4) return "PREFERRED";
+        if (d == 3) return "PREFERRED";
         return "ALLOWED";
     }
 

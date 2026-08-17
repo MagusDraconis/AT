@@ -1,5 +1,10 @@
 # TQM-QG Phase 2 — Origin of Spacetime Dimension
 
+> **CORRECTION (QG10):** the Weyl/graviton formulas here used the spatial index `d` in the spacetime form.
+> Corrected: Weyl = (d+1)(d+2)(d+3)(d−2)/12 and graviton = (d+1)(d−2)/2. So Weyl/graviton vanish for **d≤2**
+> (not d≤3), and d=3 (3+1) has 2 graviton + 10 Weyl. The conformal-complete dimension is d=2 (forbidden), not d=3.
+> See `TQMQG_InformationDimension.md`.
+
 **Program:** TQM-QG (Unification)
 **Phase:** 2 — can the preferred dimension emerge from actualization statistics?
 **Status:** COMPLETED — 3/3 xUnit tests pass (9/9 TQM-QG)

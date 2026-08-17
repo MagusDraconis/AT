@@ -1,5 +1,9 @@
 # TQM-QG Phase 3 — Dimension Selection
 
+> **CORRECTION (QG10):** "d=4 minimal propagating" was off by one. Corrected graviton = (d+1)(d−2)/2, so **d=3
+> (3+1)** is the minimal propagating dimension (2 polarizations); d=2 is static/forbidden. The natively-special
+> conformal-complete dimension is d=2 (forbidden). See `TQMQG_InformationDimension.md`.
+
 **Program:** TQM-QG (Unification)
 **Phase:** 3 — search for a preferred spacetime dimension (is d=4 special?).
 **Status:** COMPLETED — 3/3 xUnit tests pass (12/12 TQM-QG)

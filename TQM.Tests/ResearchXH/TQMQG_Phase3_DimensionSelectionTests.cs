@@ -61,36 +61,36 @@ public class TQMQG_Phase3_DimensionSelectionTests : ResearchTestBase
         Assert.True(allMonotonic, "all native dimension-scores should be monotonic in d");
     }
 
-    // ── TQMQG31: d=4 is the minimal PROPAGATING-gravity dimension ────────────────────
+    // ── TQMQG31: d=3 is the minimal PROPAGATING-gravity dimension ────────────────────
 
     [Fact]
     public void TQMQG31_MinimalPropagatingGravity()
     {
         Thread.CurrentThread.CurrentCulture = CultureInfo.InvariantCulture;
         var sb = new StringBuilder();
-        PrintHeader("TQMQG31: d=4 is the lowest dimension with propagating graviton modes");
+        PrintHeader("TQMQG31: d=3 is the lowest dimension with propagating graviton modes");
 
+        double g2 = DimensionAnalysis.GravitonPolarizations(2);
         double g3 = DimensionAnalysis.GravitonPolarizations(3);
         double g4 = DimensionAnalysis.GravitonPolarizations(4);
-        double g5 = DimensionAnalysis.GravitonPolarizations(5);
 
-        sb.AppendLine($"graviton polarizations: d=3 → {g3:F0}, d=4 → {g4:F0}, d=5 → {g5:F0}");
-        sb.AppendLine($"d=3: static-only gravity (no propagating modes); d=4: first propagating gravity (2 polarizations)");
+        sb.AppendLine($"graviton polarizations: d=2 → {g2:F0}, d=3 → {g3:F0}, d=4 → {g4:F0}");
+        sb.AppendLine($"d=2 (D=3): no gravity (static/topological); d=3 (D=4): first propagating gravity (2 polarizations)");
 
-        bool staticAt3 = g3 == 0.0;
-        bool firstPropagating4 = g4 == 2.0 && g3 == 0.0;
-        bool minimalNonzero = g4 < g5;   // 2 is the fewest non-zero graviton modes
+        bool staticAt2 = g2 == 0.0;
+        bool firstPropagating3 = g3 == 2.0 && g2 == 0.0;
+        bool minimalNonzero = g3 < g4;   // 2 is the fewest non-zero graviton modes
 
         sb.AppendLine();
-        sb.AppendLine($"d=3 static-only (0 polarizations): {staticAt3}");
-        sb.AppendLine($"d=4 first propagating (2 polarizations, minimal non-zero): {firstPropagating4 && minimalNonzero}");
+        sb.AppendLine($"d=2 static-only (0 polarizations, no gravity): {staticAt2}");
+        sb.AppendLine($"d=3 first propagating (2 polarizations, minimal non-zero): {firstPropagating3 && minimalNonzero}");
         sb.AppendLine();
-        sb.AppendLine("CONCLUSION: if gravity must PROPAGATE (have wave modes), the minimal dimension is d=4 with");
-        sb.AppendLine("exactly 2 polarizations. d=3 has non-trivial gravity but no propagating modes.");
+        sb.AppendLine("CONCLUSION: if gravity must PROPAGATE (have wave modes), the minimal dimension is d=3 (3+1");
+        sb.AppendLine("spacetime) with exactly 2 polarizations. d=2 (D=3) has no gravity at all.");
         Output.WriteLine(sb.ToString());
 
-        Assert.True(staticAt3, "d=3 should have no propagating graviton");
-        Assert.True(firstPropagating4 && minimalNonzero, "d=4 should be the minimal propagating dimension");
+        Assert.True(staticAt2, "d=2 (D=3) should have no propagating graviton");
+        Assert.True(firstPropagating3 && minimalNonzero, "d=3 (D=4) should be the minimal propagating dimension");
     }
 
     // ── TQMQG32: classification ───────────────────────────────────────────────────────
@@ -100,21 +100,21 @@ public class TQMQG_Phase3_DimensionSelectionTests : ResearchTestBase
     {
         Thread.CurrentThread.CurrentCulture = CultureInfo.InvariantCulture;
         var sb = new StringBuilder();
-        PrintHeader("TQMQG32: is d=4 DERIVED, PREFERRED, or NOT SPECIAL?");
+        PrintHeader("TQMQG32: is d=3 (3+1) DERIVED, PREFERRED, or NOT SPECIAL?");
 
-        sb.AppendLine("CLASSIFICATION: NOT SPECIAL natively; PREFERRED only as minimal propagating gravity.");
+        sb.AppendLine("CLASSIFICATION: NOT SPECIAL natively; PREFERRED as minimal propagating gravity.");
         sb.AppendLine();
         sb.AppendLine("  • NOT SPECIAL (native): every native dimension-score (information density, curvature efficiency,");
         sb.AppendLine("    Einstein richness, graviton d.o.f., complexity/d.o.f.) is MONOTONIC in d — no criterion peaks at");
-        sb.AppendLine("    d=4 (TQMQG30). Entropy is d-independent; abundance statistics are d-independent.");
-        sb.AppendLine("  • The natively-special dimension is d=3: the conformal-COMPLETE dimension (Weyl=0, nothing frozen,");
-        sb.AppendLine("    QG2) and the first non-trivial gravity — but it has NO propagating modes.");
-        sb.AppendLine("  • PREFERRED (conditional): d=4 is the LOWEST dimension with propagating graviton modes (2");
-        sb.AppendLine("    polarizations) — the minimal dynamical gravity. This prefers d=4 only under the IMPORTED");
+        sb.AppendLine("    d=3 (TQMQG30). Entropy is d-independent; abundance statistics are d-independent.");
+        sb.AppendLine("  • The conformal-COMPLETE dimension is d=2 (D=3, Weyl=0, nothing frozen) — but it is FORBIDDEN");
+        sb.AppendLine("    (no gravity). The first non-trivial gravity is d=3 (D=4).");
+        sb.AppendLine("  • PREFERRED (conditional): d=3 (3+1) is the LOWEST dimension with propagating graviton modes (2");
+        sb.AppendLine("    polarizations) — the minimal dynamical gravity. This prefers d=3 only under the IMPORTED");
         sb.AppendLine("    requirement that gravity propagates (has wave degrees of freedom), which is a GR input, not a");
         sb.AppendLine("    native TQM consequence (TQM gravity is conformally-flat / scalar-only).");
-        sb.AppendLine("  • Therefore d=4 is NOT DERIVED; it is weakly PREFERRED as minimal dynamical gravity, and NOT SPECIAL");
-        sb.AppendLine("    under purely native criteria.");
+        sb.AppendLine("  • Therefore d=3 (3+1) is NOT DERIVED; it is weakly PREFERRED as minimal dynamical gravity, and NOT");
+        sb.AppendLine("    SPECIAL under purely native criteria.");
         Output.WriteLine(sb.ToString());
 
         Assert.True(true);   // classification (no numeric assertion)

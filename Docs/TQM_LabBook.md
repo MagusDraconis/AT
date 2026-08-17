@@ -520,6 +520,10 @@ OPEN/WEAK: matter emergence + dynamics.
 **Status:** Complete (PREFERRED, not uniquely selected). Conformal efficiency maximizes at d=3; coverage prefers d=D.
 - d=3 most efficient (efficiency 1, independent of D); d=4 minimal propagating; efficiency vs coverage trade-off
 
+### TQM-QG10: Information Dimension (TQM-QG Phase 10)
+**Status:** Complete (NOT SPECIAL; d=3 PREFERRED). No interior maximum; propagation efficiency d-independent.
+- capacity/connectivity/complexity grow, entropy/d shrinks (monotonic); propagation = R exactly; d=3 boundary. CORRECTS QG2/3/8/9 Weyl/graviton index (3+1 = minimal dynamical, not conformal-complete)
+
 ---
 
 ## Overall Statistics
@@ -531,8 +535,8 @@ OPEN/WEAK: matter emergence + dynamics.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 10 | Complete |
-| **Total** | **117** | |
+| TQM-QG | 11 | Complete |
+| **Total** | **118** | |
 
 ## Key Unsolved Problems
 
