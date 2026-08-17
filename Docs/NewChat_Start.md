@@ -7945,6 +7945,18 @@ geometry -> 5/5 NO MATCH. OVERALL: NO MATCH — no non-tensor mechanism produces
 survives. Resolves QG25 ambiguity in the negative: lensing needs a non-conformal extension (scalar psi or spin-2)
 to move gamma off -1. Report: Docs/Research/TQMQG_NonTensorLensing.md.
 
+**TQM-QG Phase 27 (TRM/TQM observable bridge) — COMPLETED (3/3 tests pass; 84/84 TQM-QG verified):**
+Question: can TQM rho generate lensing/time-delay/magnification via EFFECTIVE propagation (TRM time-rate medium)
+without tensor curvature? Added TRMObservableBridge: temporal-fraction t in [0,1] interpolates optics — t=0 full
+conformal metric (n=1, factor cancels) vs t=1 temporal-only (n=e^Phi, TRM). Every lensing observable scales as t:
+deflection=4GM/b·t, Shapiro=2GM/c^3·t, kappa=Sigma·t. TQMQG270/271: TQM geometry (t=0) -> n=1, alpha=0, dt=0, mu=1
+(NO EFFECT); TRM effective (t=1) -> n=e^Phi, deflection/delay/magnification EXACTLY GR (SAME EFFECT). TQMQG272
+three-way: GR reference / TRM SAME EFFECT / TQM NO EFFECT. BRIDGE: TQM rho CAN give full GR lensing but only under
+TRM temporal-only optics (ignores spatial g_ii); TQM's own metric cancels the conformal factor. Lensing discrepancy
+is the LIGHT-PROPAGATION PRESCRIPTION (null geodesic vs effective medium), NOT the tensor sector. Effective-medium
+n=e^Phi = the non-conformal coupling QG21 flagged (imported propagation rule, not a new tensor field). Report:
+Docs/Research/TQMQG_TRMObservableBridge.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.

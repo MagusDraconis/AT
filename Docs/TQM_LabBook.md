@@ -590,6 +590,11 @@ OPEN/WEAK: matter emergence + dynamics.
 - deflection/magnification/Shapiro-delay all vanish; only gravitational redshift survives (g_00 alone)
 - no scalar mechanism produces apparent lensing; needs a non-conformal extension to move γ off −1
 
+### TQM-QG27: TRM/TQM Observable Bridge (TQM-QG Phase 27)
+**Status:** Complete (optics, not tensor). Lensing discrepancy is the light-propagation prescription.
+- TRM effective medium (t=1, n=e^Φ) reproduces GR lensing exactly; TQM geometry (t=0, n=1) gives NO EFFECT
+- TQM ρ can lens only under TRM's temporal-only optics (imported rule, not a new tensor field)
+
 ---
 
 ## Overall Statistics
@@ -601,8 +606,8 @@ OPEN/WEAK: matter emergence + dynamics.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 27 | Complete |
-| **Total** | **134** | |
+| TQM-QG | 28 | Complete |
+| **Total** | **135** | |
 
 ## Key Unsolved Problems
 
