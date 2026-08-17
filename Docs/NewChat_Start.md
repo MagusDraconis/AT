@@ -7914,6 +7914,16 @@ single scalar actualization; the psi/Weyl field is the minimal third primitive t
 restores lensing/tensor GWs/horizon thermodynamics. Definitive answer to GW arc. Report:
 Docs/Research/TQMQG_OriginOfPsi.md.
 
+**TQM-QG Phase 24 (Minimal tensor extension audit) — COMPLETED (3/3 tests pass; 75/75 TQM-QG verified):**
+Question: what is the SMALLEST extra primitive restoring lensing + tensor GWs + Hawking T? Added
+MinimalTensorExtension (candidate d.o.f.: tensor counting measure=6, directional actualization=3 spin-1
+INSUFFICIENT, anisotropic causal structure=6, psi-field spin-2=2; observable needs: lensing=1, GW=2, Hawking=0).
+TQMQG240 census: rank-2 candidates over-complete (6>2); directional is spin-1 (cannot make helicity-2); only
+psi delivers exactly 2 graviton d.o.f. TQMQG241 minimal additional d.o.f. = max(1,2,0) = 2 (the 2 graviton
+helicities). TQMQG242 CLASSIFICATION: MINIMAL NEW PRIMITIVE — a single transverse-traceless spin-2 psi-field with
+2 d.o.f. is the smallest extension; closes QG arc with a precise cost (exactly one new primitive = the graviton).
+Report: Docs/Research/TQMQG_MinimalTensorExtension.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.

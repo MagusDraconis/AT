@@ -576,6 +576,10 @@ OPEN/WEAK: matter emergence + dynamics.
 **Status:** Complete (NEW PRIMITIVE). ψ cannot emerge from the single scalar actualization.
 - anisotropic actualization still scalar/conformal; rank-2 tensor needs 2 scalars; ψ is the minimal third primitive
 
+### TQM-QG24: Minimal Tensor Extension (TQM-QG Phase 24)
+**Status:** Complete (MINIMAL NEW PRIMITIVE). Smallest extra primitive restoring all three observables.
+- ψ-field (spin-2, 2 d.o.f.) is the unique minimum; rank-2 over-complete (6), vector spin-1 insufficient (3)
+
 ---
 
 ## Overall Statistics
@@ -587,8 +591,8 @@ OPEN/WEAK: matter emergence + dynamics.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 24 | Complete |
-| **Total** | **131** | |
+| TQM-QG | 25 | Complete |
+| **Total** | **132** | |
 
 ## Key Unsolved Problems
 
