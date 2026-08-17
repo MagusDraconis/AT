@@ -7654,6 +7654,16 @@ stable" (QM program's defining property, not a gravitational postulate). Downgra
 postulate to consequence. All three foundation postulates reduced: conformal flatness PREFERRED (min-info), indifference
 PREFERRED (renorm-inv), matter attraction DERIVED (convergence+stability). Report: Docs/Research/TQMF_MatterAttraction.md.
 
+**TQM-F Phase 3 (Metric Origin) — COMPLETED (3/3 tests pass; 9/9 TQM-F verified):**
+Question: can sqrt(-g)=rho emerge from counting-measure consistency alone? Added MetricOrigin (Count, Volume,
+SqrtMinusG candidates, Mismatch). TQMF30 count and metric volume are both additive measures; sqrt(-g)=rho makes
+volume = count for every region (causal-set "number = volume"). TQMF31 UNIQUENESS: sqrt(-g)=rho is the unique
+volume element with zero mismatch (alternatives rho^2, sqrt rho, const all fail: mismatch 0.6, 0.3, 0.5).
+TQMF32 CLASSIFICATION: DERIVED (unique form) with PREFERRED identification — the form sqrt(-g)=rho is uniquely
+derived from "metric volume = counting measure"; the identification itself is the causal-set "number = volume"
+principle (minimal/definitional). Upgrades metric origin from PREFERRED (TQM-F0) to DERIVED-in-form. Report:
+Docs/Research/TQMF_MetricOrigin.md.
+
 **TQM-QG Phase 0 (Actualization -> Gravity) — COMPLETED (3/3 tests pass):**
 Question: does the actualization program generate the gravity-required rho? Added ActualizationGravity bridge.
 TQMQG00 the alpha=0 actualization attractor (uniform per-octave increments A_k=m0/K) accumulates to m_k=m0(K-k)/K

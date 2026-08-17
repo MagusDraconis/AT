@@ -476,6 +476,10 @@ OPEN/WEAK: matter emergence + dynamics.
 **Status:** Complete (DERIVED, conditional on stability). Attraction = geodesic convergence (R₀₀>0 at deficits).
 - Raychaudhuri derives the sign; stability selects the converging deficit branch; "matter attracts" reduced to convergence + stability
 
+### TQM-F3: Metric Origin (TQM-F Phase 3)
+**Status:** Complete (DERIVED form; PREFERRED identification). √(−g)=ρ is the unique volume element = counting measure.
+- count & volume are measures; √(−g)=ρ unique (alternatives fail); identification = causal-set "number = volume"
+
 ### TQM-QG0: Actualization → Gravity (TQM-QG Phase 0)
 **Status:** Complete (FULL MATCH + sector caveat). The actualization attractor (α=0) is exactly the gravity-required ρ.
 - chain Q-events → actualization → ρ → gravity CLOSED; ρ reproduces metric origin, deficit matter, Einstein, flat rotation; raw-ρ (repulsive) sector remains separate
@@ -514,9 +518,9 @@ OPEN/WEAK: matter emergence + dynamics.
 | QM | 5 | Complete |
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
-| TQM-F | 3 | Complete |
+| TQM-F | 4 | Complete |
 | TQM-QG | 7 | Complete |
-| **Total** | **113** | |
+| **Total** | **114** | |
 
 ## Key Unsolved Problems
 
