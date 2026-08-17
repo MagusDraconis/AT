@@ -7792,6 +7792,16 @@ REAL-UNDERIVED primitive = the generation relation itself ("event generates desc
 critical branching QG1/QG7). Replaces primitive pair (Q-events + causal order) with (Q-events + generation relation).
 Deepest primitive = actualization dynamics itself. Report: Docs/Research/TQMQG_OriginOfCausalOrder.md.
 
+**TQM-QG Phase 12 (Black-Hole Microstate Test) — COMPLETED (3/3 tests pass; 39/39 TQM-QG verified):**
+Question: can horizon entropy emerge from counting statistics? Added BlackHoleEntropy (HorizonAreaScale=R^(d-1),
+BulkVolumeScale=R^d, HorizonEntropy=A*ln2, BulkEntropy, Microstates=e^S, EntropyRatio). TQMQG120 counting measure
+gives BOTH boundary (area, R^(d-1), ratio 2^2=4) and bulk (volume, R^d, ratio 2^3=8) counts; horizon = boundary so
+its count is area-like. TQMQG121 horizon microstates (1 bit/cell) give S = A*ln2 ~ R^(d-1) (area law, S(2R)/S(R)=4
+NOT 8) and W = e^(A ln2) exponential in area. TQMQG122 CLASSIFICATION: MATCH (S ~ Area from horizon counting),
+conditional — caveat 1 (holographic): entropy = boundary (not bulk) d.o.f., natural minimal not derived; caveat 2
+(mass scaling): TQM deficit mass ~ R^d vs Schwarzschild M ~ R, so S~M^2 and exact 1/4 coefficient NOT reproduced,
+only the area law (radius scaling). Report: Docs/Research/TQMQG_BlackHoleEntropy.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.

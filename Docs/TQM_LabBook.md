@@ -528,6 +528,10 @@ OPEN/WEAK: matter emergence + dynamics.
 **Status:** Complete (DERIVED). Causal order = transitive closure of the generation relation.
 - ancestor relation is a partial order; generation = linear extension; primitive reduces to "event generates descendants"
 
+### TQM-QG12: Black-Hole Entropy (TQM-QG Phase 12)
+**Status:** Complete (MATCH, conditional). S ∝ Area from horizon counting; microstates exponential in area.
+- boundary count ∝ R^(d−1) vs bulk ∝ R^d; S = A·ln 2; caveats: holographic identification + S∝M² not reproduced
+
 ---
 
 ## Overall Statistics
@@ -539,8 +543,8 @@ OPEN/WEAK: matter emergence + dynamics.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 12 | Complete |
-| **Total** | **119** | |
+| TQM-QG | 13 | Complete |
+| **Total** | **120** | |
 
 ## Key Unsolved Problems
 
