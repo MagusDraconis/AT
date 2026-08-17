@@ -564,6 +564,10 @@ OPEN/WEAK: matter emergence + dynamics.
 **Status:** Complete (NO MATCH). Temporal waves doubly invisible to LIGO (conformal light travel + common-mode breathing).
 - round-trip time independent of ρ; breathing zero differential strain; tensor visible
 
+### TQM-QG21: Light Propagation (TQM-QG Phase 21)
+**Status:** Complete (NULL-GEODESIC). TQM predicts redshift WITHOUT lensing (conformal invariance).
+- light speed c, redshift present, bending absent; corrects G4-O "lensing"
+
 ---
 
 ## Overall Statistics
@@ -575,8 +579,8 @@ OPEN/WEAK: matter emergence + dynamics.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 21 | Complete |
-| **Total** | **128** | |
+| TQM-QG | 22 | Complete |
+| **Total** | **129** | |
 
 ## Key Unsolved Problems
 

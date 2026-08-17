@@ -7883,6 +7883,16 @@ mode is differential (2h0, visible). TQMQG202 CLASSIFICATION: NO MATCH — tempo
 (conformal light travel + common-mode breathing); observed GWs are tensor (spin-2). Closes QG18-20 arc: no
 scalar/temporal interpretation can mimic the interferometer signal. Report: Docs/Research/TQMQG_TemporalWaveObservables.md.
 
+**TQM-QG Phase 21 (Light Propagation) — COMPLETED (3/3 tests pass; 66/66 TQM-QG verified):**
+Question: must light follow null geodesics in TQM? Added LightPropagation (LightSpeed=1 independent of rho,
+GravitationalRedshift=(rho1/rho2)^(1/d)-1, LightBending=0). TQMQG210 null geodesics conformally invariant: light
+speed c (independent of rho); redshift PRESENT (g_00=-rho^(2/d) varies, z>0); bending ABSENT (null geodesics
+straight). TQMQG211 effective light speed c for ALL rho (no native refractive index). TQMQG212 CLASSIFICATION:
+NULL-GEODESIC — TQM predicts gravitational REDSHIFT but NO LENSING (conformal factor affects timelike matter +
+clock rate but not null light); specific falsifiable difference from GR (which predicts both); CORRECTS G4-O
+'lensing' (was potential difference, not deflection); EMERGENT modification needs non-conformal coupling (new
+primitive). Report: Docs/Research/TQMQG_LightPropagation.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.
