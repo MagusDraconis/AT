@@ -7766,3 +7766,12 @@ conformal-complete), minimal-dynamical (d=4 graviton=2), inefficient (d>=5 froze
 rotation defined for all d>=3. TQMQG82 landscape summary: 2 FORBIDDEN, 2 PREFERRED (d=3,4), 16 ALLOWED (d=5..20) —
 unique efficient point d=3, unique minimal-dynamical point d=4; observed 3+1 = combination of conformal-complete +
 minimal-propagating. Report: Docs/Research/TQMQG_DimensionLandscape.md.
+
+**TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
+Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
+fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.
+TQMQG90 conformal efficiency MAXIMIZED at d=3 (=1.0, Weyl=0 nothing frozen; 0.333,0.167,0.1 for d=4,5,6),
+decreasing monotonically d>=4, INDEPENDENT of D. TQMQG91 efficiency vs coverage TRADE-OFF: conformal efficiency
+prefers d=3, coverage d(d+1)/(D(D+1)) prefers d=D, opposite directions. TQMQG92 CLASSIFICATION: PREFERRED (d=3
+efficiency, d=4 minimal dynamics) NOT SELECTED uniquely — no single criterion selects a support rank; d=3,4
+quality-preferred (conformal-complete vs minimal-propagating), not derived. Report: Docs/Research/TQMQG_SupportRankSelection.md.

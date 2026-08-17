@@ -516,6 +516,10 @@ OPEN/WEAK: matter emergence + dynamics.
 **Status:** Complete (phase space). 2 FORBIDDEN (d≤2), 2 PREFERRED (d=3 conformal-complete, d=4 minimal dynamical), 16 ALLOWED (d≥5).
 - d=3 efficient (nothing frozen); d=4 minimal propagating (2 graviton); d≥5 inefficient (frozen fraction → 1)
 
+### TQM-QG9: Support Rank Selection (TQM-QG Phase 9)
+**Status:** Complete (PREFERRED, not uniquely selected). Conformal efficiency maximizes at d=3; coverage prefers d=D.
+- d=3 most efficient (efficiency 1, independent of D); d=4 minimal propagating; efficiency vs coverage trade-off
+
 ---
 
 ## Overall Statistics
@@ -527,8 +531,8 @@ OPEN/WEAK: matter emergence + dynamics.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 9 | Complete |
-| **Total** | **116** | |
+| TQM-QG | 10 | Complete |
+| **Total** | **117** | |
 
 ## Key Unsolved Problems
 
