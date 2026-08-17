@@ -508,6 +508,10 @@ OPEN/WEAK: matter emergence + dynamics.
 **Status:** Complete (DERIVED physical scale; IMPORTED BDG −2). Gravitational coupling is native as the deficit mass.
 - GM_eff = m0·r0/(d·ρ̄); G–M non-separable; BDG −2 is a discretization normalization, not G
 
+### TQM-QG7: Critical Branching (TQM-QG Phase 7)
+**Status:** Complete (DERIVED, conditional on scale-freeness). μ=1 is the unique marginal, scale-free, max-entropy point.
+- extinction vs runaway → μ=1 marginal; three criteria coincide; criticality derived not postulated
+
 ---
 
 ## Overall Statistics
@@ -519,8 +523,8 @@ OPEN/WEAK: matter emergence + dynamics.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 7 | Complete |
-| **Total** | **114** | |
+| TQM-QG | 8 | Complete |
+| **Total** | **115** | |
 
 ## Key Unsolved Problems
 

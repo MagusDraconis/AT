@@ -47,4 +47,26 @@ public static class QEventBranching
     /// Critical (μ=1) has L → ∞ (no preferred scale). This is the microscopic statement of scale-freeness.
     /// </summary>
     public static double BranchingScaleLength(double mu) => mu == 1.0 ? double.PositiveInfinity : 1.0 / Math.Abs(Math.Log(mu));
+
+    // ── TQM-QG Phase 7: critical branching (extinction vs runaway stability) ─────────
+
+    /// <summary>
+    /// Extinction probability for a Poisson(μ)-offspring Galton–Watson process: the smallest non-negative
+    /// fixed point of q = e^(μ(q−1)). q = 1 for μ≤1 (certain extinction, but critical at μ=1); q &lt; 1 for μ&gt;1.
+    /// </summary>
+    public static double ExtinctionProbability(double mu, int iters = 2000)
+    {
+        if (mu <= 1.0) return 1.0;   // subcritical and critical: extinction is certain (q = 1 exactly)
+        double q = 0.0;
+        for (int i = 0; i < iters; i++) q = Math.Exp(mu * (q - 1.0));
+        return q;
+    }
+
+    /// <summary>Total expected population over K generations: Σ μ^k (finite for μ&lt;1, linear at μ=1, exponential for μ&gt;1).</summary>
+    public static double TotalExpectedPopulation(double mu, int K)
+    {
+        double s = 0.0;
+        for (int k = 0; k < K; k++) s += Math.Pow(mu, k);
+        return s;
+    }
 }

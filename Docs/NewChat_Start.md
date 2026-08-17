@@ -7745,3 +7745,14 @@ m0->c*m0, r0->r0/c -> G and M NOT separable, only GM_eff physical. TQMQG62 CLASS
 BDG -2 normalization (G4-L12 second-moment continuum matching); DERIVED as physical scale GM_eff=m0*r0/(d*rho-bar).
 Resolves foundation audit "G imported": physical gravitational strength native (deficit mass); only discrete
 operator normalization imported. Report: Docs/Research/TQMQG_OriginOfG.md.
+
+**TQM-QG Phase 7 (Critical Branching) — COMPLETED (3/3 tests pass; 24/24 TQM-QG verified):**
+Question: why must actualization be critical? Added ExtinctionProbability, TotalExpectedPopulation to
+QEventBranching. TQMQG70 extinction vs runaway: subcritical mu<1 q=1 (certain extinction, finite total),
+supercritical mu>1 q<1 + exponential runaway (mu^100 explodes), mu=1 the UNIQUE marginal point (q=1 but no
+growth/decay). TQMQG71 THREE criteria coincide at mu=1: marginal stability + scale-freeness (L=1/|ln mu|=inf,
+renormalization-invariant) + max entropy (alpha=0 uniform). TQMQG72 CLASSIFICATION: DERIVED (unique), conditional
+on scale-freeness/renormalization invariance — mu=1 uniquely selected by stability (non-extinction + non-runaway)
++ scale-freeness (TQM-F1) + max entropy (G4-RHO1); single conditioning input = scale-freeness. Closes chain
+Q-events -> critical branching -> alpha=0 -> rho -> gravity with criticality itself derived. Report:
+Docs/Research/TQMQG_CriticalBranching.md.
