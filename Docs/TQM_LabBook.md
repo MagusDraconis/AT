@@ -600,6 +600,11 @@ OPEN/WEAK: matter emergence + dynamics.
 - causal order → conformal class (light cone); ρ is a conformal factor that leaves it invariant → n=1
 - TRM effective medium (n=e^Φ) is IMPORTED = the ψ≠0 non-conformal sector in disguise
 
+### TQM-QG29: Physical Meaning of Q-Events (TQM-QG Phase 29)
+**Status:** Complete (REAL-UNDERIVED NETWORK TRANSITION). Minimal content of a Q-event.
+- a Q-event = one local time-state change (a tick of actualization), not a bare point, not emergent
+- generation relation = update rule; ρ = update density
+
 ---
 
 ## Overall Statistics
@@ -611,8 +616,8 @@ OPEN/WEAK: matter emergence + dynamics.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 29 | Complete |
-| **Total** | **136** | |
+| TQM-QG | 30 | Complete |
+| **Total** | **137** | |
 
 ## Key Unsolved Problems
 

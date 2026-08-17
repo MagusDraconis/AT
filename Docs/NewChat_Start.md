@@ -7968,6 +7968,15 @@ is the non-conformal psi!=0 sector in disguise (n=e^(-psi d/(d-1))). No refracti
 actualization; native optics = conformally invariant null geodesics; lensing needs the imported non-conformal
 extension. Report: Docs/Research/TQMQG_PropagationLaw.md.
 
+**TQM-QG Phase 29 (Physical meaning of Q-events) — COMPLETED (3/3 tests pass; 90/90 TQM-QG verified):**
+Question: what is a Q-event physically (primitive point vs state transition)? Added PhysicalMeaningOfQEvents:
+four criteria (actualization-content, counting-compatibility, causal-order-compatibility, primitive-status).
+TQMQG290 all 4 transition pictures (TRM temporal-lattice, clock-network, time-state-change, network-update) score
+4/4; bare primitive-point scores 1/4 (fails actualization — a static point cannot 'happen'). TQMQG291 NOT EMERGENT
+(primitive, no deeper substrate), REAL-UNDERIVED, rho counts Q-events. TQMQG292 MINIMAL MEANING: a Q-event is a
+REAL-UNDERIVED NETWORK TRANSITION — one local time-state change (a tick of actualization); generation relation =
+update rule, rho = update density. Report: Docs/Research/TQMQG_PhysicalMeaningOfQEvents.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.
