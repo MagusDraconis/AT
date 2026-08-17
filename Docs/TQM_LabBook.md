@@ -585,6 +585,11 @@ OPEN/WEAK: matter emergence + dynamics.
 - 5 scalar observables (lensing/time-delay/magnification/shadow) need only non-conformal geometry; Hawking T UNDECIDED
 - 1-d.o.f. scalar ψ restores lensing+shadow; 2-d.o.f. graviton required only by the GW strain
 
+### TQM-QG26: Non-Tensor Lensing (TQM-QG Phase 26)
+**Status:** Complete (NO MATCH). Conformal geometry γ=−1 cancels all lensing observables.
+- deflection/magnification/Shapiro-delay all vanish; only gravitational redshift survives (g_00 alone)
+- no scalar mechanism produces apparent lensing; needs a non-conformal extension to move γ off −1
+
 ---
 
 ## Overall Statistics
@@ -596,8 +601,8 @@ OPEN/WEAK: matter emergence + dynamics.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 26 | Complete |
-| **Total** | **133** | |
+| TQM-QG | 27 | Complete |
+| **Total** | **134** | |
 
 ## Key Unsolved Problems
 

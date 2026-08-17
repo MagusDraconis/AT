@@ -7935,6 +7935,16 @@ lensing+shadow; the full 2-d.o.f. spin-2 graviton is required SPECIFICALLY by th
 Two-tier cost: 1 scalar d.o.f. (lensing/horizon) vs 2 d.o.f. (GW). Report:
 Docs/Research/TQMQG_ObservableReconstructionAudit.md.
 
+**TQM-QG Phase 26 (Non-tensor explanation of lensing) — COMPLETED (3/3 tests pass; 81/81 TQM-QG verified):**
+Question: can apparent lensing emerge from scalar mechanisms (density gradients, time-delay statistics, path
+selection, conformal optical depth, horizon counting)? Added NonTensorLensing: conformally-flat g=rho^(2/d)eta has
+PPN gamma=-1; every lensing observable scales as (1+gamma)/2 (deflection, convergence, shear, Shapiro delay) so all
+vanish. TQMQG260 deflection=0, magnification=1 (NO MATCH). TQMQG261 Shapiro delay=0 (NO MATCH); gravitational
+redshift z=(rho2/rho1)^(1/d)-1 SURVIVES (g_00 alone, MATCH). TQMQG262 all five mechanisms reduce to the same gamma=-1
+geometry -> 5/5 NO MATCH. OVERALL: NO MATCH — no non-tensor mechanism produces apparent lensing; only redshift
+survives. Resolves QG25 ambiguity in the negative: lensing needs a non-conformal extension (scalar psi or spin-2)
+to move gamma off -1. Report: Docs/Research/TQMQG_NonTensorLensing.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.
