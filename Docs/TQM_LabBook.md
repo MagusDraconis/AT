@@ -512,6 +512,10 @@ OPEN/WEAK: matter emergence + dynamics.
 **Status:** Complete (DERIVED, conditional on scale-freeness). μ=1 is the unique marginal, scale-free, max-entropy point.
 - extinction vs runaway → μ=1 marginal; three criteria coincide; criticality derived not postulated
 
+### TQM-QG8: Dimension Landscape (TQM-QG Phase 8)
+**Status:** Complete (phase space). 2 FORBIDDEN (d≤2), 2 PREFERRED (d=3 conformal-complete, d=4 minimal dynamical), 16 ALLOWED (d≥5).
+- d=3 efficient (nothing frozen); d=4 minimal propagating (2 graviton); d≥5 inefficient (frozen fraction → 1)
+
 ---
 
 ## Overall Statistics
@@ -523,8 +527,8 @@ OPEN/WEAK: matter emergence + dynamics.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 8 | Complete |
-| **Total** | **115** | |
+| TQM-QG | 9 | Complete |
+| **Total** | **116** | |
 
 ## Key Unsolved Problems
 

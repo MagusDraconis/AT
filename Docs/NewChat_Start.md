@@ -7756,3 +7756,13 @@ on scale-freeness/renormalization invariance — mu=1 uniquely selected by stabi
 + scale-freeness (TQM-F1) + max entropy (G4-RHO1); single conditioning input = scale-freeness. Closes chain
 Q-events -> critical branching -> alpha=0 -> rho -> gravity with criticality itself derived. Report:
 Docs/Research/TQMQG_CriticalBranching.md.
+
+**TQM-QG Phase 8 (Dimension Landscape) — COMPLETED (3/3 tests pass; 27/27 TQM-QG verified):**
+Question: what dimensions are physically viable? Added DimensionLandscape (Profile(d) 8-quantity tuple, Classify,
+HasGravity, ConformalComplete). TQMQG80 phase space d=1..20 across 8 criteria: FORBIDDEN d=1,2 (Einstein
+degenerate, no gravity); PREFERRED d=3 (conformal-complete Weyl=0 frozen=0) + d=4 (minimal propagating, 2 graviton);
+ALLOWED d>=5 (frozen fraction -> 1). TQMQG81 viability categories: pathological (d<=2 no gravity), efficient (d=3
+conformal-complete), minimal-dynamical (d=4 graviton=2), inefficient (d>=5 frozen>0.9 at d=20); deficit gravity +
+rotation defined for all d>=3. TQMQG82 landscape summary: 2 FORBIDDEN, 2 PREFERRED (d=3,4), 16 ALLOWED (d=5..20) —
+unique efficient point d=3, unique minimal-dynamical point d=4; observed 3+1 = combination of conformal-complete +
+minimal-propagating. Report: Docs/Research/TQMQG_DimensionLandscape.md.
