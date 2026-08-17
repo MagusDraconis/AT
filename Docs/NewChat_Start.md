@@ -7653,3 +7653,14 @@ STABILITY (matter = stable self-bound structure, only converging/deficit branch 
 stable" (QM program's defining property, not a gravitational postulate). Downgrades "matter attracts" (G4-ME5) from
 postulate to consequence. All three foundation postulates reduced: conformal flatness PREFERRED (min-info), indifference
 PREFERRED (renorm-inv), matter attraction DERIVED (convergence+stability). Report: Docs/Research/TQMF_MatterAttraction.md.
+
+**TQM-QG Phase 0 (Actualization -> Gravity) — COMPLETED (3/3 tests pass):**
+Question: does the actualization program generate the gravity-required rho? Added ActualizationGravity bridge.
+TQMQG00 the alpha=0 actualization attractor (uniform per-octave increments A_k=m0/K) accumulates to m_k=m0(K-k)/K
+= m0*ln(Rmax/R_k)/ln(Rmax/r0) = LOG-DEFICIT density rho=rho-bar-m0*ln(Rmax/r)/ln(Rmax/r0) (inner octaves <=25%).
+TQMQG01 this single rho reproduces ALL FOUR gravity requirements: metric origin sqrt(-g)=rho (rho=0.839>0), deficit
+matter m=rho-bar-rho (0.161>0), Einstein structure G_11=3.1e-4 / G_ii=-6.8e-3 non-trivial, flat rotation
+v^2(3)/v^2(9)=1.18. TQMQG02 CLASSIFICATION: FULL MATCH (matter/gravity chain) with sector caveat — chain Q-events ->
+actualization -> rho -> gravity CLOSED; but raw conserved flux selects repulsive rho~r^-2 (dark-energy sector) while
+entropy-maximized deficit selects attractive alpha=0 (matter sector); only matter sector unified, raw-rho channel
+remains separate. Report: Docs/Research/TQMQG_ActualizationToGravity.md.
