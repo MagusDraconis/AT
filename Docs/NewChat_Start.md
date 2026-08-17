@@ -7851,6 +7851,16 @@ cannot be unfrozen by ANY scalar actualization; native graviton requires a NEW t
 reference/dynamical psi-field) beyond TQM primitives. Deepest form of QG16: graviton genuinely absent from scalar
 sector. Report: Docs/Research/TQMQG_UnfreezeTensorSector.md.
 
+**TQM-QG Phase 18 (Gravitational Waves) — COMPLETED (3/3 tests pass; 57/57 TQM-QG verified):**
+Question: can observed GW phenomena arise in the scalar sector? Added GravitationalWaves (ScalarPolarizations=1,
+TensorPolarizations=(d+1)(d-2)/2, ScalarModeTrace non-zero, TensorModeTrace=0). TQMQG180 scalar = 1 breathing mode
+vs graviton = 2 (+/x) modes at d=3 (count mismatch). TQMQG181 scalar disturbance NON-zero trace (breathing/volume
+change) vs tensor traceless (transverse-traceless shear) — physically distinct. TQMQG182 CLASSIFICATION: PARTIAL
+MATCH — energy transport + speed conceptually compatible, POLARIZATION decisive NO MATCH (breathing vs +/x);
+LIGO/Virgo pure-tensor excludes breathing; recovering GWs requires the frozen graviton (QG16/17). Closes QG15-18
+arc: TQM scalar gravity has only a breathing monopole mode, not the observed +/x gravitational waves.
+Report: Docs/Research/TQMQG_GravitationalWaves.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.

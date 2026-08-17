@@ -552,6 +552,10 @@ OPEN/WEAK: matter emergence + dynamics.
 **Status:** Complete (FROZEN, no native source). Scalar ρ cannot source ψ (Weyl conformally invariant).
 - scalar source → zero tensor part; non-scalar (tensor) source required; graviton absent from scalar sector
 
+### TQM-QG18: Gravitational Waves (TQM-QG Phase 18)
+**Status:** Complete (PARTIAL MATCH). Scalar sector gives breathing mode, not +/× GWs.
+- 1 breathing vs 2 traceless polarizations; energy/speed compatible but polarization excluded by LIGO/Virgo
+
 ---
 
 ## Overall Statistics
@@ -563,8 +567,8 @@ OPEN/WEAK: matter emergence + dynamics.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 18 | Complete |
-| **Total** | **125** | |
+| TQM-QG | 19 | Complete |
+| **Total** | **126** | |
 
 ## Key Unsolved Problems
 
