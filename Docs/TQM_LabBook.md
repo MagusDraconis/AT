@@ -540,6 +540,10 @@ OPEN/WEAK: matter emergence + dynamics.
 **Status:** Complete (PARTIAL). Native bounds (ρ>0, μ=1) but no native minimum length.
 - curvature diverges at ρ=0 (metric degeneracy); critical μ=1 max sustained; ℓ free (needs ħ)
 
+### TQM-QG15: Spacetime Fluctuations (TQM-QG Phase 15)
+**Status:** Complete (PARTIAL). Scalar (conformal) fluctuations emerge; not graviton-like.
+- Poisson δρ/ρ=1/√N → δg, δR; pure-trace (traceless/graviton part = 0)
+
 ---
 
 ## Overall Statistics
@@ -551,8 +555,8 @@ OPEN/WEAK: matter emergence + dynamics.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 15 | Complete |
-| **Total** | **122** | |
+| TQM-QG | 16 | Complete |
+| **Total** | **123** | |
 
 ## Key Unsolved Problems
 

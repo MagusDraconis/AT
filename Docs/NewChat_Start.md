@@ -7821,6 +7821,17 @@ rhoMax (no native length). TQMQG142 CLASSIFICATION: PARTIAL — native BOUNDS (r
 length (Planck l=sqrt(G*hbar/c^3) involves hbar, free). Consistent with LabBook open problem "numerical values of
 l, tau, hbar empirical". Report: Docs/Research/TQMQG_PlanckRegime.md.
 
+**TQM-QG Phase 15 (Spacetime Fluctuations) — COMPLETED (3/3 tests pass; 48/48 TQM-QG verified):**
+Question: do event-count fluctuations generate metric fluctuations? Added SpacetimeFluctuations (Density
+Fluctuation=1/sqrt(N), MetricFluctuation=(2/d)/sqrt(N), CurvatureFluctuation, MetricFluctuationTrace=(d+1)(2/d)/sqrt(N),
+MetricFluctuationTraceless). TQMQG150 Poisson drho/rho = 1/sqrt(N) (0.316,0.1,0.032,0.01) — spacetime-foam scaling
+(suppressed 1/sqrt N). TQMQG151 dg/g=(2/d)drho/rho + dR/R~drho/rho inherit the fluctuation (correlation length =
+cell size). TQMQG152 metric fluctuation dg_uv=(2/d)(drho/rho)g_uv is PURE TRACE (traceless/graviton part = 0).
+CLASSIFICATION: PARTIAL — scalar (conformal) fluctuations emerge with correct Poisson 1/sqrt(N) scaling, but NOT
+graviton-like (tensor): graviton modes frozen by conformal flatness (Weyl=0, QG10); tensor fluctuations need a
+dynamical Weyl/psi-field. Consistent: TQM gravity is scalar/conformal; the graviton sector is exactly the frozen
+d.o.f. Report: Docs/Research/TQMQG_SpacetimeFluctuations.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.
