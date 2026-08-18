@@ -8271,6 +8271,13 @@ emerge natively. TQMQG622 CLASSIFICATION: REQUIRES NEW PRIMITIVE (compatible, no
 (U(1) phase) is a new d.o.f., parallel to psi needing a new spin-2 primitive (QG23). Report:
 Docs/Research/TQMQG_OriginOfQuantumAmplitudes.md.
 
+**TQM-QG Phase 63 (Physical location of the quantum phase) — COMPLETED (3/3 tests pass; 192/192 TQM-QG verified):**
+Question: where can a U(1) phase live in the network? Added PhaseLocation. TQMQG630 three homes: matter phases on
+NODES, gauge phases on LINKS, loop holonomies DERIVED (Wilson loops); no new object needed. TQMQG631 lattice gauge
+theory: connection A_ij=e^(i theta_ij) is a link variable; Wilson loop = product of link phases (gauge-invariant,
+interference/Aharonov-Bohm). TQMQG632 CLASSIFICATION: LINKS (canonical gauge-phase home), nodes for matter, loops
+derived; the existing node/link structure suffices. Report: Docs/Research/TQMQG_PhaseLocation.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.

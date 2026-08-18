@@ -770,6 +770,11 @@ OPEN/WEAK: matter emergence + dynamics.
 - network has no native phase; links can host a U(1) connection; loops trivial without a phase
 - complex amplitude (U(1) phase) is a new d.o.f., parallel to ψ (QG23)
 
+### TQM-QG63: Physical Location of the Quantum Phase (TQM-QG Phase 63)
+**Status:** Complete (LINKS). Gauge phase on links, matter on nodes, loops derived.
+- connection A_ij is a link variable; Wilson loop = product of link phases (interference observable)
+- no new object needed; the node/link structure suffices
+
 ---
 
 ## Overall Statistics
@@ -781,8 +786,8 @@ OPEN/WEAK: matter emergence + dynamics.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 63 | Complete |
-| **Total** | **170** | |
+| TQM-QG | 64 | Complete |
+| **Total** | **171** | |
 
 ## Key Unsolved Problems
 
