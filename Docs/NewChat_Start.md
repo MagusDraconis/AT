@@ -8348,6 +8348,14 @@ rule present, collapse missing) -> 5/1/0. TQMQG721 the one missing piece is the 
 — no native mechanism. TQMQG722 OVERALL: PARTIAL — quantum sector almost complete; only the collapse (measurement
 problem) remains open. Report: Docs/Research/TQMQG_QuantumSectorAudit.md.
 
+**TQM-QG Phase 73 (Measurement from actualization) — COMPLETED (3/3 tests pass; 222/222 TQM-QG verified):**
+Question: can the measurement process be identified with Q-event actualization? Added
+MeasurementFromActualization. TQMQG730 a Q-event is a discrete BORN-WEIGHTED projection (collapse to a definite
+state, P=|amplitude|^2=rho), beyond unitary decoherence. TQMQG731 the projection is BINARY (tick/no-tick), not a
+general measurement basis. TQMQG732 CLASSIFICATION: PARTIAL MATCH — collapse identified with actualization
+(resolves QG72's missing piece), but as a binary projection. Closes quantum picture (QG60-73). Report:
+Docs/Research/TQMQG_MeasurementFromActualization.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.

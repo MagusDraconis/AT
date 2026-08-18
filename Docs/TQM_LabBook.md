@@ -819,6 +819,11 @@ OPEN/WEAK: matter emergence + dynamics.
 - 5/6 features COMPLETE (superposition, interference, Born rule, entanglement, Bell); measurement PARTIAL
 - only the measurement collapse (the quantum measurement problem) remains open
 
+### TQM-QG73: Measurement from Actualization (TQM-QG Phase 73)
+**Status:** Complete (PARTIAL MATCH). Collapse = Born-weighted actualization.
+- a Q-event is a discrete Born-weighted projection (the collapse), beyond decoherence
+- limitation: binary (tick/no-tick) projection, not a general measurement basis
+
 ---
 
 ## Overall Statistics
@@ -830,8 +835,8 @@ OPEN/WEAK: matter emergence + dynamics.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 73 | Complete |
-| **Total** | **180** | |
+| TQM-QG | 74 | Complete |
+| **Total** | **181** | |
 
 ## Key Unsolved Problems
 
