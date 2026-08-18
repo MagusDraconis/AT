@@ -8168,6 +8168,15 @@ sectors = MINIMAL, not arbitrary. TQMQG502 CLASSIFICATION: FORCED (minimal), tie
 (intrinsic), tensor half contingent (spin-2 observation, QG48). Terminal statement: one scalar source + one tensor
 propagator = the minimal complete universe. Report: Docs/Research/TQMQG_TwoSectorNecessity.md.
 
+**TQM-QG Phase 51 (Origin of the two-primitive structure) — COMPLETED (3/3 tests pass; 156/156 TQM-QG verified):**
+Question: why are two primitives needed instead of one? Added OriginOfTwoPrimitives. TQMQG510 Q-events = spin-0
+DISCRETE PROCESS (counting), psi = spin-2 CONTINUOUS FIELD; differ in both spin (0 vs 2) and kind (process vs
+field). TQMQG511 a single primitive would have to be both a spin-0 source and a spin-2 propagator; a field has a
+definite spin and a process is not a field -> two is the minimum. TQMQG512 CLASSIFICATION: FORCED (minimal),
+tiered — Q-events half forced (intrinsic), psi half contingent (spin-2 observation, QG48). Structural chain:
+Q-events (scalar source) + psi (tensor propagator) = minimal two-primitive universe. Report:
+Docs/Research/TQMQG_OriginOfTwoPrimitives.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.

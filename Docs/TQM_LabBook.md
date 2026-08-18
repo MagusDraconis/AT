@@ -710,6 +710,11 @@ OPEN/WEAK: matter emergence + dynamics.
 - actualization is intrinsically scalar (counting); spin-2 propagation is intrinsically tensor; neither alone suffices
 - minimal complete structure = two sectors (scalar half forced, tensor half contingent on observation)
 
+### TQM-QG51: Origin of Two Primitives (TQM-QG Phase 51)
+**Status:** Complete (FORCED, minimal). Process vs field, spin 0 vs 2.
+- Q-events = discrete scalar process; ψ = continuous tensor field; a single primitive cannot be both
+- minimal two-primitive universe = Q-events (source) + ψ (propagator)
+
 ---
 
 ## Overall Statistics
@@ -721,8 +726,8 @@ OPEN/WEAK: matter emergence + dynamics.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 51 | Complete |
-| **Total** | **158** | |
+| TQM-QG | 52 | Complete |
+| **Total** | **159** | |
 
 ## Key Unsolved Problems
 
