@@ -8186,6 +8186,14 @@ CLASSIFICATION: FUNDAMENTAL — spin-2 cannot emerge from scalar constituents; p
 of freedom, confirming it as a true primitive (not emergent). Report:
 Docs/Research/TQMQG_FundamentalVsEffectivePsi.md.
 
+**TQM-QG Phase 53 (Dependency audit) — COMPLETED (3/3 tests pass; 162/162 TQM-QG verified):**
+Question: which conclusions depend on which assumptions? Added DependencyAudit over 8 nodes. TQMQG530 graph:
+q-events ASSUMPTION-FREE (root), rho/geometry/matter/gravity/saturation DERIVED (5), psi MODEL-DEPENDENT,
+gw-interpretation MODEL-DEPENDENT -> 1/5/0/2. TQMQG531 scalar chain (q-events -> rho -> geometry -> gravity; rho ->
+matter; q-events -> saturation) fully derived. TQMQG532 WEAKEST LINKS: psi + gw-interpretation (both
+model-dependent). Terminal map: one assumption-free root (Q-events), five derived consequences, one model-dependent
+branch (psi via GW interpretation). Report: Docs/Research/TQMQG_DependencyAudit.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.

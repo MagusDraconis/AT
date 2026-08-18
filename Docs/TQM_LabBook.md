@@ -720,6 +720,11 @@ OPEN/WEAK: matter emergence + dynamics.
 - coarse-graining is spin-preserving; scalar Q-events have no tensor collective mode
 - ψ is a genuine microscopic degree of freedom, not a continuum-limit artifact
 
+### TQM-QG53: Dependency Audit (TQM-QG Phase 53)
+**Status:** Complete (weakest links found). Scalar backbone derived; tensor branch model-dependent.
+- 1 ASSUMPTION-FREE (Q-events) / 5 DERIVED / 2 MODEL-DEPENDENT (ψ, GW interpretation)
+- the entire tensor sector hangs on the model-dependent spin-2 reconstruction
+
 ---
 
 ## Overall Statistics
@@ -731,8 +736,8 @@ OPEN/WEAK: matter emergence + dynamics.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 53 | Complete |
-| **Total** | **160** | |
+| TQM-QG | 54 | Complete |
+| **Total** | **161** | |
 
 ## Key Unsolved Problems
 
