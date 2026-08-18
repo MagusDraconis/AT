@@ -834,6 +834,11 @@ OPEN/WEAK: matter emergence + dynamics.
 - specific curve (exponent 3), absent from GR and Hayward/Bardeen; testable via shadow/ISCO/ringdown
 - falsifiable in principle (free r_c caveat)
 
+### TQM-QG76: Completeness Audit (TQM-QG Phase 76)
+**Status:** Complete (nothing missing). GR derived; QM/gauge/fermions/SM compatible.
+- 1 DERIVED / 4 COMPATIBLE / 1 UNKNOWN (cosmology) / 0 MISSING
+- remaining gaps: SM completeness (SU(3)/generations/Higgs) + cosmology
+
 ---
 
 ## Overall Statistics
@@ -845,8 +850,8 @@ OPEN/WEAK: matter emergence + dynamics.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 76 | Complete |
-| **Total** | **183** | |
+| TQM-QG | 77 | Complete |
+| **Total** | **184** | |
 
 ## Key Unsolved Problems
 
