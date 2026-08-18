@@ -894,6 +894,12 @@ OPEN/WEAK: matter emergence + dynamics.
 - link capacity is ample but only PERMITS (not determines) values; symmetries fix form not values; hierarchy free
 - masses, couplings, generation count, and color count are POSTULATED (compatible, not derived)
 
+### TQM-QG86: Parameter Origin Audit (TQM-QG Phase 86)
+**Status:** Complete (PARTIAL). Network constrains count+form, not values.
+- capacity only permits values; symmetry fixes form (which terms exist) not magnitudes
+- parameter COUNT (19) is structurally fixed; entropy/minimal-description selection is NOT native
+- PARTIAL: count + form constrained; values remain free
+
 ---
 
 ## Overall Statistics
@@ -905,8 +911,8 @@ OPEN/WEAK: matter emergence + dynamics.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 86 | Complete |
-| **Total** | **193** | |
+| TQM-QG | 87 | Complete |
+| **Total** | **194** | |
 
 ## Key Unsolved Problems
 

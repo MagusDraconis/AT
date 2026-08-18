@@ -8447,6 +8447,13 @@ link capacity is ample but only PERMITS, not determines, the values. TQMQG851 sy
 family count free; mass hierarchy (up vs top) is empirical. TQMQG852 CLASSIFICATION: POSTULATED — masses, couplings,
 generation count, and color count are free inputs (compatible, not derivable). Report: Docs/Research/TQMQG_SMParameters.md.
 
+**TQM-QG Phase 86 (Parameter Origin Audit) — COMPLETED (3/3 tests pass; 261/261 TQM-QG verified):**
+Question: is there any network mechanism that can constrain the free SM parameters? Added ParameterOriginAudit.
+TQMQG860 capacity only permits values; symmetry fixes form (which terms exist) not magnitudes — neither pins values.
+TQMQG861 the COUNT (19) is structurally fixed (gauge dims + reps + family index) and symmetry fixes FORM, but
+entropy/minimal-description selection is NOT native (would be an additional postulate). TQMQG862 CLASSIFICATION:
+PARTIAL — count + form are constrained; values remain free. Report: Docs/Research/TQMQG_ParameterOriginAudit.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.
