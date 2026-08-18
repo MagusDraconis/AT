@@ -8502,6 +8502,15 @@ constraints further restrict lengths, and (via QG91 encoding) induce bounds/rela
 specific values stay free. TQMQG922 CLASSIFICATION: PARTIAL CONSTRAINT — bounds + correlations, not value
 determination. Report: Docs/Research/TQMQG_NetworkConsistencyParameters.md.
 
+**TQM-QG Phase 93 (Global network consistency) — COMPLETED (3/3 tests pass; 282/282 TQM-QG verified):**
+Question: can global consistency conditions reduce the freedom of SM parameters? Added GlobalConsistency.
+TQMQG930 closed loops grow with network size (E−V+1) and the global metric must be single-valued, so a large
+network becomes OVER-CONSTRAINED, collapsing link lengths to the metric-field d.o.f. (ρ, ψ). TQMQG931 global
+consistency strongly constrains the metric, but SM parameters are only COMPATIBLY encoded in link length (QG91),
+so their freedom is only partially reduced (narrowed region, correlations). TQMQG932 CLASSIFICATION: PARTIAL
+REDUCTION — geometric freedom collapses strongly; SM parameter freedom narrows weakly. Report:
+Docs/Research/TQMQG_GlobalConsistency.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.

@@ -936,6 +936,12 @@ OPEN/WEAK: matter emergence + dynamics.
 - via QG91 encoding these induce bounds/relations among parameters, but specific values stay free
 - PARTIAL CONSTRAINT: bounds + correlations, not value determination
 
+### TQM-QG93: Global Network Consistency (TQM-QG Phase 93)
+**Status:** Complete (PARTIAL REDUCTION). Geometric freedom collapses; SM parameters narrow weakly.
+- closed loops grow with size (E−V+1); global metric single-valued → large network OVER-CONSTRAINED
+- global consistency strongly reduces metric freedom, but SM parameters are only compatibly encoded (QG91)
+- PARTIAL REDUCTION: geometric strong, SM parameter reduction weak
+
 ---
 
 ## Overall Statistics
@@ -947,8 +953,8 @@ OPEN/WEAK: matter emergence + dynamics.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 93 | Complete |
-| **Total** | **200** | |
+| TQM-QG | 94 | Complete |
+| **Total** | **201** | |
 
 ## Key Unsolved Problems
 
