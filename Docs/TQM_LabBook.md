@@ -795,6 +795,11 @@ OPEN/WEAK: matter emergence + dynamics.
 - orientation (Z2) ≠ double cover; network lacks the SU(2) spin-connection data
 - compatible (can be added), confirming QG66
 
+### TQM-QG68: Unified Primitive Audit (TQM-QG Phase 68)
+**Status:** Complete (ONE NETWORK PRIMITIVE). Terminal unification.
+- one causal network whose complete link carries four irreducible sectors (ρ/ψ/θ/S)
+- progression QG55 → QG64 → QG68: one primitive, four sectors
+
 ---
 
 ## Overall Statistics
@@ -806,8 +811,8 @@ OPEN/WEAK: matter emergence + dynamics.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 68 | Complete |
-| **Total** | **175** | |
+| TQM-QG | 69 | Complete |
+| **Total** | **176** | |
 
 ## Key Unsolved Problems
 
