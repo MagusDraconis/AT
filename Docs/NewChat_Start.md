@@ -8551,6 +8551,14 @@ geometric triangle angles — the correspondence is an ANALOGY (both are angles)
 CLASSIFICATION: PARTIAL RELATION — real geometric angles exist, but geometric vs internal rotations live in
 different spaces; no native mapping identifies them. Report: Docs/Research/TQMQG_NetworkAngles.md.
 
+**TQM-QG Phase 99 (Network motifs as parameter origin) — COMPLETED (3/3 tests pass; 300/300 TQM-QG):**
+Question: can SM parameters correspond to invariant local network motifs? Added NetworkMotifs. TQMQG990 triangle
+and loop motifs are recurring subgraph patterns with invariants (area, holonomy) — richer than individual lengths/
+angles. TQMQG991 branching motifs, motif spectra, and stability classes provide a structural organizing principle,
+but motifs are DERIVED composites (no independent dof) and no native mapping selects specific values. TQMQG992
+CLASSIFICATION: PARTIAL RELATION — organizing structure (motif spectra) without value determination. Report:
+Docs/Research/TQMQG_NetworkMotifs.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.
