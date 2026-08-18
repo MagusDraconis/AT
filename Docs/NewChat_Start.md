@@ -8036,6 +8036,16 @@ mass-profile NO MATCH -> OVERALL PARTIAL MATCH. psi is necessary for regular BH 
 profile; the regular-core shape is a parameterization, not a derivation. Report:
 Docs/Research/TQMQG_PsiVsRegularCore.md.
 
+**TQM-QG Phase 36 (Derive the TRM regular-core profile) — COMPLETED (3/3 tests pass; 111/111 TQM-QG verified):**
+Question: can Meff(r)=M(1-e^(-r^3/rc^3)) be derived from a psi-dynamics? Added TRMProfileOrigin: the form is the
+POISSON SATURATION function — N(r)=rho_c(4pi/3)r^3=(r/rc)^3, Meff=M(1-e^(-N))=M(1-e^(-r^3/rc^3)); exponent 3 =
+spatial dimension. TQMQG360 reproduces the profile exactly. TQMQG361 mechanism census: max-entropy (scale-free)
+NO scale, diffusion (alpha=0) NO profile, network propagation NO; finite-density saturation (Poisson) YES; Q-event
+update sets rc via rho_c. TQMQG362 CLASSIFICATION: DERIVED — not an ansatz (Poisson form + exponent=d), derived
+from finite-density saturation; caveat rc is a free (supplied) scale = critical density rho_c (TQM has bounds but
+no native cutoff, QG14); Poisson independence = max-entropy counting (TQM-F Phase 1). Report:
+Docs/Research/TQMQG_TRMProfileOrigin.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.

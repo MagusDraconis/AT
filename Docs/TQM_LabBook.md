@@ -635,6 +635,11 @@ OPEN/WEAK: matter emergence + dynamics.
 - core regularity + curvature finiteness FULL MATCH; horizon PARTIAL; exact mass profile NO MATCH
 - the r³/r_c³ form is an ansatz requiring a functional form + a new scale r_c
 
+### TQM-QG36: Derive the TRM Regular-Core Profile (TQM-QG Phase 36)
+**Status:** Complete (DERIVED). Profile = Poisson saturation with exponent = spatial dimension.
+- M_eff(r)=M(1−e^(−r³/r_c³)) = M·(fraction of Q-events activated); r_c from critical density ρ_c (free scale)
+- max-entropy/diffusion give scale-free (no core); only finite-density saturation yields the profile
+
 ---
 
 ## Overall Statistics
@@ -646,8 +651,8 @@ OPEN/WEAK: matter emergence + dynamics.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 36 | Complete |
-| **Total** | **143** | |
+| TQM-QG | 37 | Complete |
+| **Total** | **144** | |
 
 ## Key Unsolved Problems
 
