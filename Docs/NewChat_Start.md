@@ -8432,6 +8432,14 @@ generations are INTERNAL gauge/flavor structure, independent of valence and spat
 nor dimension d=3 determines N_color/N_family. TQMQG832 CLASSIFICATION: COINCIDENCE — the shared number 3 (valence,
 dimension, color, family) has no causal link / no common origin. Report: Docs/Research/TQMQG_NetworkValenceThree.md.
 
+**TQM-QG Phase 84 (Origin of the Higgs sector) — COMPLETED (3/3 tests pass; 255/255 TQM-QG verified):**
+Question: can mass generation emerge from network structure? Added HiggsOrigin. TQMQG840 the scalar ρ (node
+occupancy / trace, spin-0) already exists (derived QG23-24); a link condensate can serve as the VEV. TQMQG841
+the Higgs analog is representable within the existing scalar sector (ρ condensate → VEV), but the symmetry-breaking
+potential (VEV != 0) and Yukawa/gauge couplings are ADDITIONAL (postulated), not derived. TQMQG842 CLASSIFICATION:
+COMPATIBLE — no new representation needed (spin-0 exists), but mass generation is not derived. Report:
+Docs/Research/TQMQG_HiggsOrigin.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.

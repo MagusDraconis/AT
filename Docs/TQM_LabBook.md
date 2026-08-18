@@ -881,6 +881,13 @@ OPEN/WEAK: matter emergence + dynamics.
 - color and generations are internal gauge/flavor structure, independent of valence and spatial dimension d=3
 - the shared 3 (valence, dimension, color, family) is a numerical coincidence with no causal link
 
+### TQM-QG84: Origin of the Higgs Sector (TQM-QG Phase 84)
+**Status:** Complete (COMPATIBLE). Mass generation is representable, not derived.
+- the scalar ρ (node occupancy, spin-0) already exists; a link condensate can serve as the VEV
+- the Higgs analog is representable in the scalar sector, but the symmetry-breaking potential and Yukawa/gauge
+  couplings are additional (postulated) content
+- no new representation needed (spin-0 exists); mass generation is COMPATIBLE, not DERIVED
+
 ---
 
 ## Overall Statistics
@@ -892,8 +899,8 @@ OPEN/WEAK: matter emergence + dynamics.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 84 | Complete |
-| **Total** | **191** | |
+| TQM-QG | 85 | Complete |
+| **Total** | **192** | |
 
 ## Key Unsolved Problems
 
