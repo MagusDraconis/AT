@@ -8416,6 +8416,14 @@ replication is ACCOMMODATED, not generated. TQMQG812 CLASSIFICATION: COMPATIBLE 
 primitive needed for existence (only the count 3 remains postulatory, QG80). Report:
 Docs/Research/TQMQG_FamilyReplication.md.
 
+**TQM-QG Phase 82 (Origin of flavor mixing) — COMPLETED (3/3 tests pass; 249/249 TQM-QG verified):**
+Question: can CKM/PMNS mixing emerge from network family indices? Added FlavorMixing. TQMQG820 once the family
+index exists (QG81), off-diagonal couplings between indices are representable on the link (family-index dynamics
+hosts mixing). TQMQG821 mixing is a unitary rotation between flavor and mass bases; oscillations follow; CKM
+(4 params: 3 angles + 1 CP phase) and PMNS (4 Dirac + 2 Majorana) are representable but their specific entries
+are FREE inputs. TQMQG822 CLASSIFICATION: COMPATIBLE — representable, not derived, no new sector needed.
+Report: Docs/Research/TQMQG_FlavorMixing.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.

@@ -868,6 +868,12 @@ OPEN/WEAK: matter emergence + dynamics.
   is additional structure; the count stays free
 - existence of multiple families is COMPATIBLE (not derived); only the count 3 remains postulatory (QG80)
 
+### TQM-QG82: Origin of Flavor Mixing (TQM-QG Phase 82)
+**Status:** Complete (COMPATIBLE). CKM/PMNS mixing is representable, not derived.
+- off-diagonal couplings between family indices are representable on the link (family-index dynamics)
+- mixing = unitary rotation between flavor and mass bases; oscillations follow; CKM (4 params), PMNS (4+2) free inputs
+- mixing needs no new sector beyond the QG81 family index
+
 ---
 
 ## Overall Statistics
@@ -879,8 +885,8 @@ OPEN/WEAK: matter emergence + dynamics.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 82 | Complete |
-| **Total** | **189** | |
+| TQM-QG | 83 | Complete |
+| **Total** | **190** | |
 
 ## Key Unsolved Problems
 
