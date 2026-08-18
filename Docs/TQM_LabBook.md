@@ -680,6 +680,11 @@ OPEN/WEAK: matter emergence + dynamics.
 - □ψ_μν=0 (Fierz-Pauli), transverse-traceless → 2 helicities, light speed, linearized GR
 - one new primitive + one new equation, uniquely fixed by observation
 
+### TQM-QG45: Minimal Coupling of ψ (TQM-QG Phase 45)
+**Status:** Complete (INDEPENDENT). Zero coupling for polarization, weak for sourcing.
+- 2 helicities intrinsic to the free field → polarization needs zero coupling to the scalar backbone
+- sourcing needs weak κ=8πG; ψ is the most decoupled possible new primitive
+
 ---
 
 ## Overall Statistics
@@ -691,8 +696,8 @@ OPEN/WEAK: matter emergence + dynamics.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 45 | Complete |
-| **Total** | **152** | |
+| TQM-QG | 46 | Complete |
+| **Total** | **153** | |
 
 ## Key Unsolved Problems
 

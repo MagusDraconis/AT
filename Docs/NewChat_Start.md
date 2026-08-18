@@ -8118,6 +8118,14 @@ primitive), form PREFERRED=yes (unique ghost-free massless spin-2), POSTULATED=y
 PREFERRED (form) + POSTULATED (status); final step — one new primitive, one new equation, uniquely fixed by
 observation. Report: Docs/Research/TQMQG_MinimalPsiEquation.md.
 
+**TQM-QG Phase 45 (Minimal coupling of psi) — COMPLETED (3/3 tests pass; 138/138 TQM-QG verified):**
+Question: what is the weakest coupling between psi and the scalar backbone? Added MinimalPsiCoupling over 4
+couplings (psi-rho, psi-deficit, psi-saturation, psi-qevent-density). TQMQG450 the 2 helicities are intrinsic to
+the FREE massless spin-2 field -> GW POLARIZATION requires ZERO coupling to the scalar sector. TQMQG451 sourcing
+(nonzero amplitude h~kappa*source) needs a weak coupling kappa=8pi G. TQMQG452 CLASSIFICATION: INDEPENDENT (for
+polarization) / WEAKLY COUPLED (only when sourced); not strongly coupled. psi is the most decoupled new primitive:
+free for polarization, weak source coupling only. Report: Docs/Research/TQMQG_MinimalPsiCoupling.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.
