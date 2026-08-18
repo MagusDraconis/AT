@@ -8494,6 +8494,14 @@ length could encode values, but exponents/couplings/mixing angles stay free. TQM
 metric geometry derived; value encoding compatible but not derivational. Report:
 Docs/Research/TQMQG_LinkLengthPhysics.md.
 
+**TQM-QG Phase 92 (Network consistency constraints) — COMPLETED (3/3 tests pass; 279/279 TQM-QG verified):**
+Question: do consistency conditions restrict link lengths and therefore parameter values? Added
+NetworkConsistencyParameters. TQMQG920 the metric must be a valid distance — triangle inequalities bound triples
+of lengths and closed loops impose holonomy consistency; both restrict link lengths. TQMQG921 neighbor/stability
+constraints further restrict lengths, and (via QG91 encoding) induce bounds/relations among parameters, but the
+specific values stay free. TQMQG922 CLASSIFICATION: PARTIAL CONSTRAINT — bounds + correlations, not value
+determination. Report: Docs/Research/TQMQG_NetworkConsistencyParameters.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.

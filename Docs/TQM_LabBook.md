@@ -930,6 +930,12 @@ OPEN/WEAK: matter emergence + dynamics.
 - Yukawa suppression e^(−m r) and distance-suppressed mixing are compatible, but exponents/couplings/angles stay free
 - PARTIAL: geometry derived; value encoding compatible but not derivational
 
+### TQM-QG92: Network Consistency Constraints (TQM-QG Phase 92)
+**Status:** Complete (PARTIAL CONSTRAINT). Consistency bounds + correlates parameters.
+- triangle inequalities bound triples of lengths; loop closure imposes holonomy consistency; neighbor/stability restrict lengths
+- via QG91 encoding these induce bounds/relations among parameters, but specific values stay free
+- PARTIAL CONSTRAINT: bounds + correlations, not value determination
+
 ---
 
 ## Overall Statistics
@@ -941,8 +947,8 @@ OPEN/WEAK: matter emergence + dynamics.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 92 | Complete |
-| **Total** | **199** | |
+| TQM-QG | 93 | Complete |
+| **Total** | **200** | |
 
 ## Key Unsolved Problems
 
