@@ -725,6 +725,11 @@ OPEN/WEAK: matter emergence + dynamics.
 - 1 ASSUMPTION-FREE (Q-events) / 5 DERIVED / 2 MODEL-DEPENDENT (ψ, GW interpretation)
 - the entire tensor sector hangs on the model-dependent spin-2 reconstruction
 
+### TQM-QG54: ψ as Connectivity (TQM-QG Phase 54)
+**Status:** Complete (BOTH). ψ = the Weyl content of the causal links.
+- rank-2 adjacency tensor carries exactly 2 spin-2 polarizations; ψ = Weyl ≠ 0 (non-conformal connectivity)
+- field and connectivity are equivalent descriptions; elegant reframing, still a new primitive
+
 ---
 
 ## Overall Statistics
@@ -736,8 +741,8 @@ OPEN/WEAK: matter emergence + dynamics.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 54 | Complete |
-| **Total** | **161** | |
+| TQM-QG | 55 | Complete |
+| **Total** | **162** | |
 
 ## Key Unsolved Problems
 

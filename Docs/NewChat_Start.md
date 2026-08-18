@@ -8194,6 +8194,15 @@ matter; q-events -> saturation) fully derived. TQMQG532 WEAKEST LINKS: psi + gw-
 model-dependent). Terminal map: one assumption-free root (Q-events), five derived consequences, one model-dependent
 branch (psi via GW interpretation). Report: Docs/Research/TQMQG_DependencyAudit.md.
 
+**TQM-QG Phase 54 (Is psi a connectivity primitive?) — COMPLETED (3/3 tests pass; 165/165 TQM-QG verified):**
+Question: can spin-2 originate from link (connectivity) DOF rather than nodes? Added PsiAsConnectivity. TQMQG540 a
+symmetric rank-2 adjacency tensor has 6 components = 1 trace + 5 traceless, carrying exactly 2 transverse-traceless
+(spin-2) polarizations -> connectivity CAN carry spin-2. TQMQG541 psi = the WEYL (non-conformal) content of the
+causal connectivity (the scalar sector froze Weyl=0); field and connectivity descriptions EQUIVALENT; does NOT
+eliminate the new primitive. TQMQG542 CLASSIFICATION: BOTH — the graviton is the non-conformal Weyl content of the
+causal link structure, equivalent to a rank-2 field; elegant reframing (psi = connectivity, not an external field).
+Report: Docs/Research/TQMQG_PsiAsConnectivity.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.
