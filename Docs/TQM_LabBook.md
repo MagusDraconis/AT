@@ -740,6 +740,11 @@ OPEN/WEAK: matter emergence + dynamics.
 - rank-2 link tensor always has a traceless part; conformal-only links are an incomplete restriction
 - ψ is the general (complete-link) case; the scalar sector was the Weyl=0 restriction
 
+### TQM-QG57: Excitation of the Traceless Link Sector (TQM-QG Phase 57)
+**Status:** Complete (DERIVED mechanism, triggered instances). Quadrupole sources excite Weyl.
+- anisotropic/moving/binary/network-stress sources excite ψ; propagation stability is a property, not a source
+- spin-2 couples to T_μν → traceless sources traceless (Weinberg)
+
 ---
 
 ## Overall Statistics
@@ -751,8 +756,8 @@ OPEN/WEAK: matter emergence + dynamics.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 57 | Complete |
-| **Total** | **164** | |
+| TQM-QG | 58 | Complete |
+| **Total** | **165** | |
 
 ## Key Unsolved Problems
 

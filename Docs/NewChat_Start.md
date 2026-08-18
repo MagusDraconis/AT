@@ -8221,6 +8221,14 @@ relation (trace + traceless); link completeness FORCES the Weyl CAPACITY. TQMQG5
 non-conformal DOF is the traceless part of the complete link relation, frozen by conformal flatness. Report:
 Docs/Research/TQMQG_OriginOfWeylLinks.md.
 
+**TQM-QG Phase 57 (Excitation of the traceless link sector) — COMPLETED (3/3 tests pass; 174/174 TQM-QG verified):**
+Question: what excites the traceless content of network links? Added WeylExcitation. TQMQG570 quadrupole
+(traceless) sources excite Weyl: anisotropic-sources, moving-deficits, binary-systems, network-stress (4 sources);
+propagation-stability is a necessary property, not a source. TQMQG571 mechanism DERIVED (spin-2 couples to full
+T_mu_nu, so traceless sources traceless; Weinberg), instances OBSERVATION-TRIGGERED (binary mergers). TQMQG572
+CLASSIFICATION: DERIVED (mechanism) + observation-triggered (instances). Excitation story: Weyl capacity forced
+(QG56), excitation = quadrupole sourcing of a spin-2 field. Report: Docs/Research/TQMQG_WeylExcitation.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.
