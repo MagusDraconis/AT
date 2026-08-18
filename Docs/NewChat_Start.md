@@ -8407,6 +8407,15 @@ gives 3 families. TQMQG801 link has 5 irreducible sectors (not 3), no map to gen
 minimal family count forced. TQMQG802 CLASSIFICATION: NEW POSTULATE — the 3-generation count is postulated,
 coincidental with (not derived from) the 3-color postulate. Report: Docs/Research/TQMQG_WhyThreeGenerations.md.
 
+**TQM-QG Phase 81 (Origin of family replication) — COMPLETED (3/3 tests pass; 246/246 TQM-QG verified):**
+Question: can the EXISTENCE of multiple families emerge from network structure at all? Added FamilyReplication.
+TQMQG810 spin structure S gives a single spin-1/2 rep (no replication); no topological invariant produces families.
+TQMQG811 the network CAN host replication via a degenerate family index (discrete internal label) on the node/link
+(as SU(3) attaches to the link); a horizontal family symmetry is ADDITIONAL structure; the count stays free —
+replication is ACCOMMODATED, not generated. TQMQG812 CLASSIFICATION: COMPATIBLE — not derived, but no new
+primitive needed for existence (only the count 3 remains postulatory, QG80). Report:
+Docs/Research/TQMQG_FamilyReplication.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.

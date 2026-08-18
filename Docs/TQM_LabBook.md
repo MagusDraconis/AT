@@ -861,6 +861,13 @@ OPEN/WEAK: matter emergence + dynamics.
 - link has 5 sectors (not 3); color N=3 is gauge (horizontal), generations are flavor (vertical) — the 3s coincide
 - the 3-generation count is a new postulate, not the same structure that hosts color
 
+### TQM-QG81: Origin of Family Replication (TQM-QG Phase 81)
+**Status:** Complete (COMPATIBLE). Multiple families can be accommodated, not generated.
+- no spin/topological mechanism replicates families spontaneously
+- the network CAN host replication via a degenerate family index (discrete label) on the node/link; family symmetry
+  is additional structure; the count stays free
+- existence of multiple families is COMPATIBLE (not derived); only the count 3 remains postulatory (QG80)
+
 ---
 
 ## Overall Statistics
@@ -872,8 +879,8 @@ OPEN/WEAK: matter emergence + dynamics.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 81 | Complete |
-| **Total** | **188** | |
+| TQM-QG | 82 | Complete |
+| **Total** | **189** | |
 
 ## Key Unsolved Problems
 
