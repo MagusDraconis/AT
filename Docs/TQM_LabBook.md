@@ -924,6 +924,12 @@ OPEN/WEAK: matter emergence + dynamics.
 - they share one carrier (the single link QG68) but that does not force a single group
 - a GUT (SU(5)/SO(10)) is an additional postulate; the product structure is empirical
 
+### TQM-QG91: Physical Meaning of Link Length (TQM-QG Phase 91)
+**Status:** Complete (PARTIAL). Link length encodes geometry (derived), values compatible.
+- link length IS the network metric (derived from ρ); lattice/Yukawa analogies relate it to coupling/mass
+- Yukawa suppression e^(−m r) and distance-suppressed mixing are compatible, but exponents/couplings/angles stay free
+- PARTIAL: geometry derived; value encoding compatible but not derivational
+
 ---
 
 ## Overall Statistics
@@ -935,8 +941,8 @@ OPEN/WEAK: matter emergence + dynamics.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 91 | Complete |
-| **Total** | **198** | |
+| TQM-QG | 92 | Complete |
+| **Total** | **199** | |
 
 ## Key Unsolved Problems
 

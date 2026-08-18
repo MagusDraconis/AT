@@ -8486,6 +8486,14 @@ single group. TQMQG901 no symmetry-breaking chain derives a unified group — a 
 TQMQG902 CLASSIFICATION: POSTULATED — the three sectors are independent postulates; the product structure is
 empirical. Report: Docs/Research/TQMQG_GaugeSectorSplitting.md.
 
+**TQM-QG Phase 91 (Physical meaning of link length) — COMPLETED (3/3 tests pass; 276/276 TQM-QG verified):**
+Question: can link length/distance encode physical parameter values? Added LinkLengthPhysics. TQMQG910 link length
+IS the network metric (derived from ρ) and can relate to coupling/mass via lattice-gauge and Yukawa analogies.
+TQMQG911 Yukawa suppression e^(−m r) and distance-suppressed mixing are COMPATIBLE mechanisms showing HOW link
+length could encode values, but exponents/couplings/mixing angles stay free. TQMQG912 CLASSIFICATION: PARTIAL —
+metric geometry derived; value encoding compatible but not derivational. Report:
+Docs/Research/TQMQG_LinkLengthPhysics.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.
