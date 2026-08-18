@@ -715,6 +715,11 @@ OPEN/WEAK: matter emergence + dynamics.
 - Q-events = discrete scalar process; ψ = continuous tensor field; a single primitive cannot be both
 - minimal two-primitive universe = Q-events (source) + ψ (propagator)
 
+### TQM-QG52: Fundamental vs Effective ψ (TQM-QG Phase 52)
+**Status:** Complete (FUNDAMENTAL). Spin-2 cannot emerge from scalars.
+- coarse-graining is spin-preserving; scalar Q-events have no tensor collective mode
+- ψ is a genuine microscopic degree of freedom, not a continuum-limit artifact
+
 ---
 
 ## Overall Statistics
@@ -726,8 +731,8 @@ OPEN/WEAK: matter emergence + dynamics.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 52 | Complete |
-| **Total** | **159** | |
+| TQM-QG | 53 | Complete |
+| **Total** | **160** | |
 
 ## Key Unsolved Problems
 

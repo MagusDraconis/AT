@@ -8177,6 +8177,15 @@ tiered — Q-events half forced (intrinsic), psi half contingent (spin-2 observa
 Q-events (scalar source) + psi (tensor propagator) = minimal two-primitive universe. Report:
 Docs/Research/TQMQG_OriginOfTwoPrimitives.md.
 
+**TQM-QG Phase 52 (Is psi fundamental or effective?) — COMPLETED (3/3 tests pass; 159/159 TQM-QG verified):**
+Question: must psi exist microscopically, or emerge only in the continuum limit? Added FundamentalVsEffectivePsi.
+TQMQG520 coarse-graining (averaging) is spin-preserving: scalar Q-events average to a scalar continuum field, never
+a tensor. TQMQG521 collective modes inherit microscopic symmetry: scalar constituents have scalar (breathing) modes
+only; transverse-traceless spin-2 requires microscopic tensor DOF that Q-events lack (QG23/37/49). TQMQG522
+CLASSIFICATION: FUNDAMENTAL — spin-2 cannot emerge from scalar constituents; psi is a genuine microscopic degree
+of freedom, confirming it as a true primitive (not emergent). Report:
+Docs/Research/TQMQG_FundamentalVsEffectivePsi.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.
