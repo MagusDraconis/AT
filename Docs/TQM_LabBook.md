@@ -809,6 +809,11 @@ OPEN/WEAK: matter emergence + dynamics.
 - shared phases give classical correlations, not Bell non-separability; θ+superposition, S+spinor are prerequisites
 - full QM (entanglement) needs one more primitive: the entangling interaction
 
+### TQM-QG71: Origin of the Entangling Sector (TQM-QG Phase 71)
+**Status:** Complete (NEW SECTOR). The joint link state is the minimal addition.
+- a single-DOF phase is separable; a joint (2-qubit) link state (Bell pair) is the minimal non-separable content
+- compatible with the link, but new; completes the quantum picture
+
 ---
 
 ## Overall Statistics
@@ -820,8 +825,8 @@ OPEN/WEAK: matter emergence + dynamics.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 71 | Complete |
-| **Total** | **178** | |
+| TQM-QG | 72 | Complete |
+| **Total** | **179** | |
 
 ## Key Unsolved Problems
 

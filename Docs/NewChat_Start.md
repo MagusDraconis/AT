@@ -8333,6 +8333,14 @@ interactions (a quantum link/gate) beyond theta + S. Completes quantum picture: 
 hosted, but full QM (entanglement) needs one more primitive. Report:
 Docs/Research/TQMQG_EntanglementFromLinks.md.
 
+**TQM-QG Phase 71 (Origin of the entangling sector) — COMPLETED (3/3 tests pass; 216/216 TQM-QG verified):**
+Question: what minimal additional link content produces non-separable correlations? Added EntanglingSector.
+TQMQG710 a single-DOF phase e^(i theta) is SEPARABLE (gives interference QG65, not non-separability). TQMQG711 the
+minimal addition is a JOINT (2-qubit) LINK STATE (e.g. Bell pair (|00>+|11>)/sqrt2), the natural home of a pair
+being the link; compatible but new. TQMQG712 CLASSIFICATION: NEW SECTOR — entangling (joint link state) is new
+content beyond theta + S. Completes quantum picture: theta (superposition) + S (spin) + entangling sector (joint
+link states) for full QM. Report: Docs/Research/TQMQG_EntanglingSector.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.
