@@ -8134,6 +8134,16 @@ attraction rules out spin-1, (3) light bending (full T_mu_nu) rules out spin-0. 
 — not derived (psi is new primitive), not bare postulate (uniquely selected); spin-2 is the unique viable spin for
 gravity. Report: Docs/Research/TQMQG_WhySpin2.md.
 
+**TQM-QG Phase 47 (Why does Primitive 2 exist?) — COMPLETED (3/3 tests pass; 144/144 TQM-QG verified):**
+Question: what principle forces psi's existence? Added WhyPsiExists. TQMQG470 Q-event-only universe still has
+redshift/attraction/flat-curves/regular-cores but CANNOT produce lensing, Shapiro delay, PPN gamma=+1, GW
+polarization (4 observations; only GW polarization uniquely needs tensor psi). TQMQG471 scalar universe is
+internally SELF-CONSISTENT (no contradiction) -> psi NOT forced by internal consistency; motivated by
+observational completeness (light bending/GWs); scalar responds only to trace. TQMQG472 CLASSIFICATION: NEW
+POSTULATE — not forced, contingent (GW observation), preferred form only, primitive axiom. Why psi exists: the
+universe demonstrably has spin-2 GWs + light bending which the scalar sector cannot produce; psi is the minimal
+new postulate, the second and final primitive. Report: Docs/Research/TQMQG_WhyPsiExists.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.

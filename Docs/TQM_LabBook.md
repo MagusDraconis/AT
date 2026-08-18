@@ -690,6 +690,11 @@ OPEN/WEAK: matter emergence + dynamics.
 - 2 polarizations (rules out spin-0), attraction (rules out spin-1), light bending (rules out spin-0)
 - spin-2 is the unique viable spin for a gravity field
 
+### TQM-QG47: Why Does Primitive 2 Exist? (TQM-QG Phase 47)
+**Status:** Complete (NEW POSTULATE). No internal principle forces ψ.
+- scalar universe self-consistent; ψ added for observational completeness (light bending + GWs)
+- ψ = the minimal new postulate, the second and final primitive
+
 ---
 
 ## Overall Statistics
@@ -701,8 +706,8 @@ OPEN/WEAK: matter emergence + dynamics.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 47 | Complete |
-| **Total** | **154** | |
+| TQM-QG | 48 | Complete |
+| **Total** | **155** | |
 
 ## Key Unsolved Problems
 
