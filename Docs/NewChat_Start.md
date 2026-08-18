@@ -8084,6 +8084,14 @@ Conclusion: TQM's QG boundary is TWO primitives (Q-events + psi) and nothing els
 psi pinned by exactly two imported observables (lensing + GW). No emergent sector. Report:
 Docs/Research/TQMQG_FinalBoundaryAudit.md.
 
+**TQM-QG Phase 41 (Derive the TRM acceleration law) — COMPLETED (3/3 tests pass; 126/126 TQM-QG verified):**
+Question: can the sqrt(g_N*a0) term emerge from Q-event saturation? Added TRMAccelerationOrigin. TQMQG410
+saturation g_sat=g_N(1-e^(-r^3/rc^3)) has a regular core (suppression at small r) + Newtonian recovery (large r),
+NO 1/r (sqrt) regime. TQMQG411 saturation factor in [0,1] (suppression <=g_N) vs MOND g_TRM>=g_N (enhancement at
+large r) — OPPOSITE sign and regime. TQMQG412 CLASSIFICATION: IMPORTED — sqrt(g_N*a0)/lambda is a MOND ansatz with
+scale a0, not produced by saturation; TQM's flat rotation curves come from the log-deficit (alpha=0 scale-free)
+profile (G4-ME Phases 3-4), a DIFFERENT derived mechanism. Report: Docs/Research/TQMQG_TRMAccelerationOrigin.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.

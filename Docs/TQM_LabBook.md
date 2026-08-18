@@ -660,6 +660,11 @@ OPEN/WEAK: matter emergence + dynamics.
 - 7 DERIVED / 0 EMERGENT / 2 NEW PRIMITIVE (Q-events + ψ) / 2 IMPORTED (GW + lensing)
 - scalar backbone fully derived; ψ pinned by exactly two imported observables; no emergent sector
 
+### TQM-QG41: TRM Acceleration Law (TQM-QG Phase 41)
+**Status:** Complete (IMPORTED). √(g_N·a0) does not emerge from saturation.
+- saturation = core suppression (≤ g_N); MOND = large-r enhancement (≥ g_N); opposite regimes
+- flat curves come from log-deficit (α=0), not saturation; the MOND √ term is an imported ansatz
+
 ---
 
 ## Overall Statistics
@@ -671,8 +676,8 @@ OPEN/WEAK: matter emergence + dynamics.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 41 | Complete |
-| **Total** | **148** | |
+| TQM-QG | 42 | Complete |
+| **Total** | **149** | |
 
 ## Key Unsolved Problems
 
