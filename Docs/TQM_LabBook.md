@@ -745,6 +745,11 @@ OPEN/WEAK: matter emergence + dynamics.
 - anisotropic/moving/binary/network-stress sources excite ψ; propagation stability is a property, not a source
 - spin-2 couples to T_μν → traceless sources traceless (Weinberg)
 
+### TQM-QG58: Discrete or Continuous Links? (TQM-QG Phase 58)
+**Status:** Complete (BOTH). Links are discrete microscopically, continuous in the continuum limit.
+- adjacency 0/1 quantized, links countable, Weyl discrete (parallel to Q-events)
+- continuum limit → smooth ψ field, exactly like discrete Q-events → continuous ρ
+
 ---
 
 ## Overall Statistics
@@ -756,8 +761,8 @@ OPEN/WEAK: matter emergence + dynamics.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 58 | Complete |
-| **Total** | **165** | |
+| TQM-QG | 59 | Complete |
+| **Total** | **166** | |
 
 ## Key Unsolved Problems
 

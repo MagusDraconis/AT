@@ -8229,6 +8229,14 @@ T_mu_nu, so traceless sources traceless; Weinberg), instances OBSERVATION-TRIGGE
 CLASSIFICATION: DERIVED (mechanism) + observation-triggered (instances). Excitation story: Weyl capacity forced
 (QG56), excitation = quadrupole sourcing of a spin-2 field. Report: Docs/Research/TQMQG_WeylExcitation.md.
 
+**TQM-QG Phase 58 (Discrete or continuous links?) — COMPLETED (3/3 tests pass; 177/177 TQM-QG verified):**
+Question: are links discrete network objects or continuous fields? Added DiscreteOrContinuousLinks. TQMQG580
+microscopic: adjacency A_ij is 0/1 (quantized), link count |E| countable, Weyl content discrete, finite-graph
+propagation is hopping — links are DISCRETE network objects (parallel to Q-events). TQMQG581 continuum limit (large
+N) gives the smooth Weyl field psi (parallel to discrete Q-events -> continuous rho). TQMQG582 CLASSIFICATION: BOTH
+— discrete microscopically, continuous in the continuum limit; reconciles QG52 (psi fundamental) with the network
+picture. Report: Docs/Research/TQMQG_DiscreteOrContinuousLinks.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.
