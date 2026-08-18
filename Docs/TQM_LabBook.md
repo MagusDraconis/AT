@@ -855,6 +855,12 @@ OPEN/WEAK: matter emergence + dynamics.
 - N = 3 colors is empirical (baryon statistics), not a network output; GIVEN N=3, SU(3) is unique/forced (8 gluons)
 - the 3-color count — not the group — is the new postulate
 
+### TQM-QG80: Why Three Generations? (TQM-QG Phase 80)
+**Status:** Complete (NEW POSTULATE). The 3-generation count is coincidental, not derived from color.
+- spin structure S gives one spin-1/2 rep (no replication); no topological invariant gives 3 families
+- link has 5 sectors (not 3); color N=3 is gauge (horizontal), generations are flavor (vertical) — the 3s coincide
+- the 3-generation count is a new postulate, not the same structure that hosts color
+
 ---
 
 ## Overall Statistics
@@ -866,8 +872,8 @@ OPEN/WEAK: matter emergence + dynamics.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 80 | Complete |
-| **Total** | **187** | |
+| TQM-QG | 81 | Complete |
+| **Total** | **188** | |
 
 ## Key Unsolved Problems
 

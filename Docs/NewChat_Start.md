@@ -8399,6 +8399,14 @@ unitary det=1 group is SU(3) with N^2-1=8 gluons; confinement non-perturbative; 
 CLASSIFICATION: NEW POSTULATE — the 3-color count (not the group) is the new postulate; SU(3) is forced/unique
 (conditionally PREFERRED) once 3 colors are accepted. Report: Docs/Research/TQMQG_WhySU3.md.
 
+**TQM-QG Phase 80 (Why three generations?) — COMPLETED (3/3 tests pass; 243/243 TQM-QG verified):**
+Question: is the 3-generation count related to the network structure that hosts color? Added WhyThreeGenerations.
+TQMQG800 spin structure S yields a single spin-1/2 rep, does NOT replicate into 3 copies; no topological invariant
+gives 3 families. TQMQG801 link has 5 irreducible sectors (not 3), no map to generations; color N=3 is GAUGE
+(horizontal), generations are FLAVOR multiplicity (3 vertical mass replicas) — the two 3s are COINCIDENTAL; no
+minimal family count forced. TQMQG802 CLASSIFICATION: NEW POSTULATE — the 3-generation count is postulated,
+coincidental with (not derived from) the 3-color postulate. Report: Docs/Research/TQMQG_WhyThreeGenerations.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.
