@@ -8160,6 +8160,14 @@ breathing (monopole), never the quadrupole +/x (QG23/QG37). TQMQG492 CLASSIFICAT
 (collective or otherwise) can source spin-2; the graviton cannot be faked by network dynamics; psi remains required.
 Report: Docs/Research/TQMQG_NetworkModeGW.md.
 
+**TQM-QG Phase 50 (Necessity of two sectors) — COMPLETED (3/3 tests pass; 153/153 TQM-QG verified):**
+Question: why does nature require both a scalar and a tensor sector? Added TwoSectorNecessity. TQMQG500 scalar
+sector = actualization/source (Q-events -> rho, spin-0 counting), tensor sector = propagation/geometry (psi, spin-2
+GWs); roles irreducible. TQMQG501 neither alone suffices (scalar no spin-2, tensor no counting) -> exactly two
+sectors = MINIMAL, not arbitrary. TQMQG502 CLASSIFICATION: FORCED (minimal), tiered — scalar half forced
+(intrinsic), tensor half contingent (spin-2 observation, QG48). Terminal statement: one scalar source + one tensor
+propagator = the minimal complete universe. Report: Docs/Research/TQMQG_TwoSectorNecessity.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.

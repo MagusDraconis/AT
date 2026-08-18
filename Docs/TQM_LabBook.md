@@ -705,6 +705,11 @@ OPEN/WEAK: matter emergence + dynamics.
 - breathing mode = common-mode (zero differential, invisible); tensor = differential 2h₀
 - the graviton cannot be faked by network dynamics; ψ remains the irreducible spin-2 primitive
 
+### TQM-QG50: Necessity of Two Sectors (TQM-QG Phase 50)
+**Status:** Complete (FORCED, minimal). Scalar source + tensor propagator.
+- actualization is intrinsically scalar (counting); spin-2 propagation is intrinsically tensor; neither alone suffices
+- minimal complete structure = two sectors (scalar half forced, tensor half contingent on observation)
+
 ---
 
 ## Overall Statistics
@@ -716,8 +721,8 @@ OPEN/WEAK: matter emergence + dynamics.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 50 | Complete |
-| **Total** | **157** | |
+| TQM-QG | 51 | Complete |
+| **Total** | **158** | |
 
 ## Key Unsolved Problems
 
