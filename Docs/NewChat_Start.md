@@ -8535,6 +8535,14 @@ PARTIALLY select/narrow the region, but nothing selects a unique preferred state
 parameters. TQMQG962 CLASSIFICATION: PARTIAL SELECTION — stability/attractors partially select; full state
 selection absent. Report: Docs/Research/TQMQG_StableStateSelection.md.
 
+**TQM-QG Phase 97 (Parameter ratios from network geometry) — COMPLETED (3/3 tests pass; 294/294 TQM-QG):**
+Question: can dimensionless ratios of link lengths determine physical parameters? Added LinkRatioParameters.
+TQMQG970 physical parameters are dimensionless and length RATIOS are scale-invariant; triangle geometry converts
+ratios into ANGLES. TQMQG971 loop holonomy gives dimensionless phases; CKM/PMNS mixing angles literally ARE
+angles (direct network analog) and mass hierarchies have a length-ratio analog, but the network does not specify
+WHICH ratio corresponds to WHICH parameter. TQMQG972 CLASSIFICATION: PARTIAL RELATION — direct geometric analog
+(angles → angles, ratios → ratios), not a full ratio origin. Report: Docs/Research/TQMQG_LinkRatioParameters.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.

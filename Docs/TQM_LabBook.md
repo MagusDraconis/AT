@@ -960,6 +960,12 @@ OPEN/WEAK: matter emergence + dynamics.
 - stability + RG attractors PARTIALLY select/narrow the region; nothing selects a unique preferred state
 - PARTIAL SELECTION: partial selection achieved, full state selection absent
 
+### TQM-QG97: Parameter Ratios from Network Geometry (TQM-QG Phase 97)
+**Status:** Complete (PARTIAL RELATION). Direct geometric analog, not ratio origin.
+- dimensionless length ratios are scale-invariant; triangle geometry turns ratios into angles; loop holonomy gives phases
+- CKM/PMNS mixing angles literally ARE angles (network analog); mass hierarchies have a length-ratio analog
+- the network does not specify WHICH ratio maps to WHICH parameter — values stay free
+
 ---
 
 ## Overall Statistics
@@ -971,8 +977,8 @@ OPEN/WEAK: matter emergence + dynamics.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 97 | Complete |
-| **Total** | **204** | |
+| TQM-QG | 98 | Complete |
+| **Total** | **205** | |
 
 ## Key Unsolved Problems
 
