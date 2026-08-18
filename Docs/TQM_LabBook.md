@@ -700,6 +700,11 @@ OPEN/WEAK: matter emergence + dynamics.
 - polarization/templates/spin-2 are MODEL-DEPENDENT; ψ justified by an inference, not a raw measurement
 - ψ is a model-consistent postulate, one model-deep
 
+### TQM-QG49: Network-Mode GW (TQM-QG Phase 49)
+**Status:** Complete (IMPOSSIBLE). Collective modes are scalar → no differential +/×.
+- breathing mode = common-mode (zero differential, invisible); tensor = differential 2h₀
+- the graviton cannot be faked by network dynamics; ψ remains the irreducible spin-2 primitive
+
 ---
 
 ## Overall Statistics
@@ -711,8 +716,8 @@ OPEN/WEAK: matter emergence + dynamics.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 49 | Complete |
-| **Total** | **156** | |
+| TQM-QG | 50 | Complete |
+| **Total** | **157** | |
 
 ## Key Unsolved Problems
 

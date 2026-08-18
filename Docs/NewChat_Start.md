@@ -8152,6 +8152,14 @@ is RECONSTRUCTED, not directly measured (only the strain is direct). TQMQG482 re
 INFERENCE (model-dependent reconstruction), not a raw measurement; psi is a model-consistent postulate, one
 model-deep, not directly-forced. Report: Docs/Research/TQMQG_GWObservationAudit.md.
 
+**TQM-QG Phase 49 (Network-mode explanation of GW strain) — COMPLETED (3/3 tests pass; 150/150 TQM-QG verified):**
+Question: can collective Q-event network modes reproduce the observed strain without a fundamental psi? Added
+NetworkModeGW. TQMQG490 Michelson measures DIFFERENTIAL arm strain: scalar breathing = common-mode (differential
+0, invisible), tensor +/x = differential 2h0. TQMQG491 collective network modes are SCALAR (rho spin-0) -> only
+breathing (monopole), never the quadrupole +/x (QG23/QG37). TQMQG492 CLASSIFICATION: IMPOSSIBLE — no scalar
+(collective or otherwise) can source spin-2; the graviton cannot be faked by network dynamics; psi remains required.
+Report: Docs/Research/TQMQG_NetworkModeGW.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.
