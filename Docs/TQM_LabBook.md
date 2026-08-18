@@ -814,6 +814,11 @@ OPEN/WEAK: matter emergence + dynamics.
 - a single-DOF phase is separable; a joint (2-qubit) link state (Bell pair) is the minimal non-separable content
 - compatible with the link, but new; completes the quantum picture
 
+### TQM-QG72: Complete Quantum Sector Audit (TQM-QG Phase 72)
+**Status:** Complete (PARTIAL). Quantum sector almost complete; collapse missing.
+- 5/6 features COMPLETE (superposition, interference, Born rule, entanglement, Bell); measurement PARTIAL
+- only the measurement collapse (the quantum measurement problem) remains open
+
 ---
 
 ## Overall Statistics
@@ -825,8 +830,8 @@ OPEN/WEAK: matter emergence + dynamics.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 72 | Complete |
-| **Total** | **179** | |
+| TQM-QG | 73 | Complete |
+| **Total** | **180** | |
 
 ## Key Unsolved Problems
 
