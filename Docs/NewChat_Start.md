@@ -8363,6 +8363,13 @@ node is MULTI-STATE (theta continuous + S spin), not merely binary. TQMQG741 arb
 arbitrary measurement bases reproduced; resolves QG73's binary limitation; requires full quantum structure (theta
 +S+J). Closes quantum measurement arc (QG72-74). Report: Docs/Research/TQMQG_GeneralMeasurement.md.
 
+**TQM-QG Phase 75 (First quantitative prediction) — COMPLETED (3/3 tests pass; 228/228 TQM-QG verified):**
+Question: what observable curve/spectrum is uniquely predicted? Added FirstQuantitativePrediction. TQMQG750 the
+regular-core profile M_eff(r)=M(1-e^(-r^3/rc^3)) with exponent 3 (spatial dimension), M_eff(0)=0, ->M. TQMQG751
+UNIQUE: differs from GR (singular M=const) AND Hayward (M r^3/(r^3+2M l^2)) and Bardeen (M r^3/(r^2+r_g^2)^(3/2)).
+TQMQG752 CLASSIFICATION: UNIQUE + TESTABLE (shadow/ISCO/lensing/ringdown) + FALSIFIABLE (free rc caveat). Report:
+Docs/Research/TQMQG_FirstQuantitativePrediction.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.

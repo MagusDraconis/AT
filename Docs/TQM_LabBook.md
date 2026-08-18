@@ -829,6 +829,11 @@ OPEN/WEAK: matter emergence + dynamics.
 - multi-state actualization + unitary rotation (θ+S+J) + POVM via ancillas; resolves QG73's binary limitation
 - completes the quantum measurement arc (QG72–74)
 
+### TQM-QG75: First Quantitative Prediction (TQM-QG Phase 75)
+**Status:** Complete (UNIQUE). The regular-core profile M(1−e^(−r³/r_c³)).
+- specific curve (exponent 3), absent from GR and Hayward/Bardeen; testable via shadow/ISCO/ringdown
+- falsifiable in principle (free r_c caveat)
+
 ---
 
 ## Overall Statistics
@@ -840,8 +845,8 @@ OPEN/WEAK: matter emergence + dynamics.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 75 | Complete |
-| **Total** | **182** | |
+| TQM-QG | 76 | Complete |
+| **Total** | **183** | |
 
 ## Key Unsolved Problems
 
