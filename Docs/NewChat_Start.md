@@ -8470,6 +8470,14 @@ TQMQG880 entropy extremization is NOT native; stability IS native and bounds par
 TQMQG882 CLASSIFICATION: PARTIAL CONSTRAINT — stability bounds ranges, RG relates couplings, values stay free.
 Report: Docs/Research/TQMQG_ParameterValueSelection.md.
 
+**TQM-QG Phase 89 (Origin of energy) — COMPLETED (3/3 tests pass; 270/270 TQM-QG verified):**
+Question: what is energy in the network? Added OriginOfEnergy. TQMQG890 network time = causal order (from Q-events);
+energy is the conserved generator of time translation (conjugate of causal-order evolution), measured as the
+actualization rate (Q-event activity); link updates carry its flux. TQMQG891 energy is stored in ψ/ρ excitation;
+E = mc² links the Higgs condensate (rest mass) to energy; conservation follows from Noether. TQMQG892 CLASSIFICATION:
+DERIVED (concept) — energy = Noether conjugate of causal order, not a new sector; specific energy VALUES remain
+empirical (QG85). Report: Docs/Research/TQMQG_OriginOfEnergy.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.

@@ -912,6 +912,12 @@ OPEN/WEAK: matter emergence + dynamics.
 - stability IS native (bounds ranges: λ>0, positive m^2); RG attractors ARE native (asymptotic freedom) and relate couplings
 - PARTIAL CONSTRAINT: values are bounded/related, not fully selected
 
+### TQM-QG89: Origin of Energy (TQM-QG Phase 89)
+**Status:** Complete (DERIVED — the concept). Energy = conjugate of causal-order evolution.
+- network time = causal order; energy = its Noether conjugate, measured as actualization rate (Q-event activity)
+- energy stored in ψ/ρ excitation; E=mc² links the Higgs condensate; conservation via Noether
+- the CONCEPT is DERIVED; specific energy VALUES remain empirical (QG85)
+
 ---
 
 ## Overall Statistics
@@ -923,8 +929,8 @@ OPEN/WEAK: matter emergence + dynamics.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 89 | Complete |
-| **Total** | **196** | |
+| TQM-QG | 90 | Complete |
+| **Total** | **197** | |
 
 ## Key Unsolved Problems
 
