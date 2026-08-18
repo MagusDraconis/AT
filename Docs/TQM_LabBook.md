@@ -765,6 +765,11 @@ OPEN/WEAK: matter emergence + dynamics.
 - superposition/interference/measurement UNKNOWN; entanglement PARTIAL (classical correlations)
 - whether QM emerges from actualization is an open question (mirrors QG60 fermions)
 
+### TQM-QG62: Origin of Quantum Amplitudes (TQM-QG Phase 62)
+**Status:** Complete (REQUIRES NEW PRIMITIVE). Phase is not native, not emergent.
+- network has no native phase; links can host a U(1) connection; loops trivial without a phase
+- complex amplitude (U(1) phase) is a new d.o.f., parallel to ψ (QG23)
+
 ---
 
 ## Overall Statistics
@@ -776,8 +781,8 @@ OPEN/WEAK: matter emergence + dynamics.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 62 | Complete |
-| **Total** | **169** | |
+| TQM-QG | 63 | Complete |
+| **Total** | **170** | |
 
 ## Key Unsolved Problems
 

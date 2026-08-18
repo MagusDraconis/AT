@@ -8263,6 +8263,14 @@ probabilities + classical correlations). TQMQG612 QM is not natively hosted; whe
 is an open question (mirrors fermion result QG60). Report:
 Docs/Research/TQMQG_QuantumMechanicsCompatibility.md.
 
+**TQM-QG Phase 62 (Origin of quantum amplitudes) — COMPLETED (3/3 tests pass; 189/189 TQM-QG verified):**
+Question: can complex amplitudes emerge from network structure? Added OriginOfQuantumAmplitudes. TQMQG620 network
+has NO native phase (scalar+rank-2 only); links CAN host a U(1) connection (lattice gauge theory, QG60) — compatible
+not native. TQMQG621 closed loop WITHOUT a phase has trivial holonomy (=1, no interference) -> amplitudes do NOT
+emerge natively. TQMQG622 CLASSIFICATION: REQUIRES NEW PRIMITIVE (compatible, not emergent) — the complex amplitude
+(U(1) phase) is a new d.o.f., parallel to psi needing a new spin-2 primitive (QG23). Report:
+Docs/Research/TQMQG_OriginOfQuantumAmplitudes.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.
