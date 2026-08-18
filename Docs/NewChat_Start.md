@@ -8007,6 +8007,15 @@ psi-perturbation (g_00=-rho^(2/d)e^{2psi}, g_ii=rho^(2/d)e^{-2psi/(d-1)}) has de
 (volume-preserving) -> metric-origin survives unchanged. TQMQG322 CLEAN extension: add psi, keep all scalar
 derivations, replace only the Einstein sector. Report: Docs/Research/TQMQG_TRMCompatibilityAudit.md.
 
+**TQM-QG Phase 33 (Interpret TRM as a UV completion) — COMPLETED (3/3 tests pass; 102/102 TQM-QG verified):**
+Question: can TRM be purely a high-density/UV extension of TQM? Added TRMasUVCompletion: psi=b*x, g_00 correction
+e^(2psi). TQMQG330 weak-field: e^(2psi)->1 exactly as x->0 -> TRM reduces EXACTLY to TQM (TQM is the IR limit).
+TQMQG331 departure |e^(2psi)-1| grows with field strength (strong-field/UV); core stays regular (rho(0)=1 finite,
+sqrt(-g)=rho volume-preserving). TQMQG332 CLASSIFICATION: PARTIAL EXTENSION — NOT separate theory (exact IR
+reduction), NOT pure UV completion (graviton spin-2 d.o.f. exists at ALL scales, GWs observed in IR); TRM = TQM (IR)
++ strong-field correction + all-scale tensor sector. It regularizes nothing TQM left divergent (core already
+regular) and changes only the Einstein sector (QG32). Report: Docs/Research/TQMQG_TRMasUVCompletion.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.

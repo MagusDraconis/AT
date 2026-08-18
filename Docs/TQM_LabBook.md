@@ -620,6 +620,11 @@ OPEN/WEAK: matter emergence + dynamics.
 - 5 UNCHANGED (counting/metric-origin/matter/α=0/branching), 1 MODIFIED (Einstein structure), 0 BROKEN
 - ψ-perturbation is volume-preserving (√(−g)=ρ); only the Einstein/Weyl sector is enriched
 
+### TQM-QG33: Interpret TRM as a UV Completion (TQM-QG Phase 33)
+**Status:** Complete (PARTIAL EXTENSION). Not a pure UV completion, not a separate theory.
+- reduces exactly to TQM in the IR (e^{2ψ}→1); departure grows in the strong field; core stays regular
+- graviton d.o.f. is all-scale (not UV-confined); changes only the Einstein sector
+
 ---
 
 ## Overall Statistics
@@ -631,8 +636,8 @@ OPEN/WEAK: matter emergence + dynamics.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 33 | Complete |
-| **Total** | **140** | |
+| TQM-QG | 34 | Complete |
+| **Total** | **141** | |
 
 ## Key Unsolved Problems
 
