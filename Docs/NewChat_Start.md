@@ -8046,6 +8046,16 @@ from finite-density saturation; caveat rc is a free (supplied) scale = critical 
 no native cutoff, QG14); Poisson independence = max-entropy counting (TQM-F Phase 1). Report:
 Docs/Research/TQMQG_TRMProfileOrigin.md.
 
+**TQM-QG Phase 37 (Can saturation generate psi?) — COMPLETED (3/3 tests pass; 114/114 TQM-QG verified):**
+Question: can nonlinear saturation of the Q-event network generate an effective tensor sector? Added
+SaturationToPsi. TQMQG370 spin census: nonlinear scalar function spin 0, gradient spin 1, anisotropic front spin 1,
+tensor needs spin 2 -> no scalar saturation reaches spin 2. TQMQG371 saturation = scalar reparameterization
+rho->f(rho), adds NO independent d.o.f. (f(rho) determined by rho); generates the scalar regular-core profile
+(QG36) only. TQMQG372 CLASSIFICATION: NEW PRIMITIVE — tensor does NOT emerge from saturation; saturation gives the
+scalar profile (partial, scalar side only); the graviton still needs an independent rank-2 field. Two-layer
+resolution: scalar layer DERIVED (saturation, QG36), tensor layer NEW PRIMITIVE. Report:
+Docs/Research/TQMQG_SaturationToPsi.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.

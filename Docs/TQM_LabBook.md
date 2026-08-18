@@ -640,6 +640,11 @@ OPEN/WEAK: matter emergence + dynamics.
 - M_eff(r)=M(1−e^(−r³/r_c³)) = M·(fraction of Q-events activated); r_c from critical density ρ_c (free scale)
 - max-entropy/diffusion give scale-free (no core); only finite-density saturation yields the profile
 
+### TQM-QG37: Can Saturation Generate ψ? (TQM-QG Phase 37)
+**Status:** Complete (NEW PRIMITIVE). Saturation is scalar; it cannot produce spin-2.
+- scalar nonlinearity/gradient/front reach ≤ spin 1; saturation adds no independent d.o.f.
+- scalar layer DERIVED (saturation), tensor layer NEW PRIMITIVE
+
 ---
 
 ## Overall Statistics
@@ -651,8 +656,8 @@ OPEN/WEAK: matter emergence + dynamics.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 37 | Complete |
-| **Total** | **144** | |
+| TQM-QG | 38 | Complete |
+| **Total** | **145** | |
 
 ## Key Unsolved Problems
 
