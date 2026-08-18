@@ -8440,6 +8440,13 @@ potential (VEV != 0) and Yukawa/gauge couplings are ADDITIONAL (postulated), not
 COMPATIBLE — no new representation needed (spin-0 exists), but mass generation is not derived. Report:
 Docs/Research/TQMQG_HiggsOrigin.md.
 
+**TQM-QG Phase 85 (Origin of Standard Model parameters) — COMPLETED (3/3 tests pass; 258/258 TQM-QG verified):**
+Question: can masses/couplings/generations/color emerge from network information content? Added SMParameters.
+TQMQG850 SM has 19 free parameters (3 gauge + 2 Higgs + 9 masses + 4 CKM + 1 theta; +7 for massive neutrinos);
+link capacity is ample but only PERMITS, not determines, the values. TQMQG851 symmetries fix FORM not VALUES;
+family count free; mass hierarchy (up vs top) is empirical. TQMQG852 CLASSIFICATION: POSTULATED — masses, couplings,
+generation count, and color count are free inputs (compatible, not derivable). Report: Docs/Research/TQMQG_SMParameters.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.

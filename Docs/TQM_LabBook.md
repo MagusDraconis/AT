@@ -888,6 +888,12 @@ OPEN/WEAK: matter emergence + dynamics.
   couplings are additional (postulated) content
 - no new representation needed (spin-0 exists); mass generation is COMPATIBLE, not DERIVED
 
+### TQM-QG85: Origin of Standard Model Parameters (TQM-QG Phase 85)
+**Status:** Complete (POSTULATED). SM parameters are free inputs, not derivable.
+- SM has 19 free parameters (3 gauge + 2 Higgs + 9 masses + 4 CKM + 1 theta; +7 for massive neutrinos)
+- link capacity is ample but only PERMITS (not determines) values; symmetries fix form not values; hierarchy free
+- masses, couplings, generation count, and color count are POSTULATED (compatible, not derived)
+
 ---
 
 ## Overall Statistics
@@ -899,8 +905,8 @@ OPEN/WEAK: matter emergence + dynamics.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 85 | Complete |
-| **Total** | **192** | |
+| TQM-QG | 86 | Complete |
+| **Total** | **193** | |
 
 ## Key Unsolved Problems
 
