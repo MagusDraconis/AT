@@ -665,6 +665,11 @@ OPEN/WEAK: matter emergence + dynamics.
 - saturation = core suppression (≤ g_N); MOND = large-r enhancement (≥ g_N); opposite regimes
 - flat curves come from log-deficit (α=0), not saturation; the MOND √ term is an imported ansatz
 
+### TQM-QG42: Final TRM Decomposition (TQM-QG Phase 42)
+**Status:** Complete (terminal accounting). ~33–42% of TRM derived from TQM.
+- 2 DERIVED (saturation core, redshift) / 1 PARTIAL (Schwarzschild) / 2 IMPORTED (rotation-curve, temporal) / 1 NEW PRIMITIVE (ψ)
+- TQM supplies the scalar backbone; TRM's observational payload needs imported rules + ψ
+
 ---
 
 ## Overall Statistics
@@ -676,8 +681,8 @@ OPEN/WEAK: matter emergence + dynamics.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 42 | Complete |
-| **Total** | **149** | |
+| TQM-QG | 43 | Complete |
+| **Total** | **150** | |
 
 ## Key Unsolved Problems
 

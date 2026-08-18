@@ -8092,6 +8092,15 @@ large r) — OPPOSITE sign and regime. TQMQG412 CLASSIFICATION: IMPORTED — sqr
 scale a0, not produced by saturation; TQM's flat rotation curves come from the log-deficit (alpha=0 scale-free)
 profile (G4-ME Phases 3-4), a DIFFERENT derived mechanism. Report: Docs/Research/TQMQG_TRMAccelerationOrigin.md.
 
+**TQM-QG Phase 42 (Final TRM decomposition) — COMPLETED (3/3 tests pass; 129/129 TQM-QG verified):**
+Question: what percentage of TRM is now derived from TQM? Added FinalTRMAudit over 6 components. TQMQG420:
+saturation-core DERIVED, redshift DERIVED, schwarzschild-recovery PARTIAL (scalar g_00 yes, gamma=+1 needs psi),
+rotation-curve-term IMPORTED (MOND ansatz), temporal-propagation IMPORTED (n=e^Phi medium), psi-sector NEW
+PRIMITIVE -> 2 DERIVED / 1 PARTIAL / 2 IMPORTED / 1 NEW PRIMITIVE. TQMQG421 fully derived 2/6=33.3%, derived score
+(DERIVED+0.5*PARTIAL)=41.7%. TQMQG422 terminal accounting: TQM supplies the scalar backbone (saturation + redshift);
+TRM's observational payload (lensing, rotation curves, GWs) requires imported rules + psi primitive. Report:
+Docs/Research/TQMQG_FinalTRMAudit.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.
