@@ -8356,6 +8356,13 @@ general measurement basis. TQMQG732 CLASSIFICATION: PARTIAL MATCH — collapse i
 (resolves QG72's missing piece), but as a binary projection. Closes quantum picture (QG60-73). Report:
 Docs/Research/TQMQG_MeasurementFromActualization.md.
 
+**TQM-QG Phase 74 (General measurement basis) — COMPLETED (3/3 tests pass; 225/225 TQM-QG verified):**
+Question: can actualization reproduce arbitrary quantum measurement bases? Added GeneralMeasurement. TQMQG740 the
+node is MULTI-STATE (theta continuous + S spin), not merely binary. TQMQG741 arbitrary basis via unitary rotation
+(theta+S+J); POVMs via ancillas (Naimark dilation); Born rule consistent. TQMQG742 CLASSIFICATION: MATCH —
+arbitrary measurement bases reproduced; resolves QG73's binary limitation; requires full quantum structure (theta
++S+J). Closes quantum measurement arc (QG72-74). Report: Docs/Research/TQMQG_GeneralMeasurement.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.

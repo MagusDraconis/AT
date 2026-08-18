@@ -824,6 +824,11 @@ OPEN/WEAK: matter emergence + dynamics.
 - a Q-event is a discrete Born-weighted projection (the collapse), beyond decoherence
 - limitation: binary (tick/no-tick) projection, not a general measurement basis
 
+### TQM-QG74: General Measurement Basis (TQM-QG Phase 74)
+**Status:** Complete (MATCH). Arbitrary measurement bases reproduced.
+- multi-state actualization + unitary rotation (θ+S+J) + POVM via ancillas; resolves QG73's binary limitation
+- completes the quantum measurement arc (QG72–74)
+
 ---
 
 ## Overall Statistics
@@ -835,8 +840,8 @@ OPEN/WEAK: matter emergence + dynamics.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 74 | Complete |
-| **Total** | **181** | |
+| TQM-QG | 75 | Complete |
+| **Total** | **182** | |
 
 ## Key Unsolved Problems
 
