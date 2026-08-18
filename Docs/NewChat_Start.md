@@ -8278,6 +8278,14 @@ theory: connection A_ij=e^(i theta_ij) is a link variable; Wilson loop = product
 interference/Aharonov-Bohm). TQMQG632 CLASSIFICATION: LINKS (canonical gauge-phase home), nodes for matter, loops
 derived; the existing node/link structure suffices. Report: Docs/Research/TQMQG_PhaseLocation.md.
 
+**TQM-QG Phase 64 (Unify link content) — COMPLETED (3/3 tests pass; 195/195 TQM-QG verified):**
+Question: are trace/traceless/phase independent d.o.f. or components of one link object? Added LinkUnification.
+TQMQG640 three sectors: trace=spin-0 (magnitude), traceless=spin-2 (shape), phase=U(1) — independent
+representations. TQMQG641 complete link = single complex rank-2 object L_ij = a_ij e^(i theta_ij) (magnitude
+a_ij = trace + traceless, phase theta). TQMQG642 CLASSIFICATION: UNIFIED (one link object, irreducible sectors) —
+exactly as QG55 unified nodes+links. Final synthesis: one link, three sectors. Report:
+Docs/Research/TQMQG_LinkUnification.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.

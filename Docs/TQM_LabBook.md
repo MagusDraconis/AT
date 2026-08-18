@@ -775,6 +775,11 @@ OPEN/WEAK: matter emergence + dynamics.
 - connection A_ij is a link variable; Wilson loop = product of link phases (interference observable)
 - no new object needed; the node/link structure suffices
 
+### TQM-QG64: Unify Link Content (TQM-QG Phase 64)
+**Status:** Complete (UNIFIED). One complex rank-2 link with three sectors.
+- L_ij = a_ij e^(iθ_ij): magnitude (trace ρ + traceless ψ) × phase (U(1))
+- one link object with irreducible sectors, in the spirit of QG55
+
 ---
 
 ## Overall Statistics
@@ -786,8 +791,8 @@ OPEN/WEAK: matter emergence + dynamics.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 64 | Complete |
-| **Total** | **171** | |
+| TQM-QG | 65 | Complete |
+| **Total** | **172** | |
 
 ## Key Unsolved Problems
 
