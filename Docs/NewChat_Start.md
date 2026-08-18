@@ -8110,6 +8110,14 @@ lensing/delay/gamma. TQMQG432 REFINES QG40: the tensor psi is observationally UN
 the graviton is the single spin-2 requirement, every other gap is scalar. Report:
 Docs/Research/TQMQG_ObservationalUniqueness.md.
 
+**TQM-QG Phase 44 (Minimal psi field equation) — COMPLETED (3/3 tests pass; 135/135 TQM-QG verified):**
+Question: what is the simplest dynamics consistent with observed psi effects? Added MinimalPsiEquation: massless
+spin-2 wave equation (Fierz-Pauli) box(psi_mu_nu)=0, transverse-traceless -> 2 helicities, light speed, weak-field
+= linearized GR. TQMQG440 confirms 2 helicities + speed c + weak-field GR. TQMQG441 DERIVED=no (psi new
+primitive), form PREFERRED=yes (unique ghost-free massless spin-2), POSTULATED=yes. TQMQG442 two-layer status:
+PREFERRED (form) + POSTULATED (status); final step — one new primitive, one new equation, uniquely fixed by
+observation. Report: Docs/Research/TQMQG_MinimalPsiEquation.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.

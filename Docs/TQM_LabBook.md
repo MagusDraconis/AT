@@ -675,6 +675,11 @@ OPEN/WEAK: matter emergence + dynamics.
 - lensing/Shapiro/PPN γ are SCALAR (1-d.o.f. scalar ψ suffices); GW polarization is PSI (spin-2); horizon AMBIGUOUS
 - refines QG40: tensor ψ demanded by exactly one observation — GW polarization
 
+### TQM-QG44: Minimal ψ Field Equation (TQM-QG Phase 44)
+**Status:** Complete (POSTULATED, preferred form). Massless spin-2 wave equation.
+- □ψ_μν=0 (Fierz-Pauli), transverse-traceless → 2 helicities, light speed, linearized GR
+- one new primitive + one new equation, uniquely fixed by observation
+
 ---
 
 ## Overall Statistics
@@ -686,8 +691,8 @@ OPEN/WEAK: matter emergence + dynamics.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 44 | Complete |
-| **Total** | **151** | |
+| TQM-QG | 45 | Complete |
+| **Total** | **152** | |
 
 ## Key Unsolved Problems
 
