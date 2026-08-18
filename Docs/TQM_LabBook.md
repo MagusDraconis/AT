@@ -755,6 +755,11 @@ OPEN/WEAK: matter emergence + dynamics.
 - 7/7 results preserved (trace→scalar, traceless→tensor); interpretation changed, physics unchanged
 - one-network-primitive picture fully consistent with the entire arc
 
+### TQM-QG60: Standard Model Compatibility (TQM-QG Phase 60)
+**Status:** Complete (gravity framework). Charge natural, gauge compatible, fermions unknown.
+- network natively gives spin-0 + spin-2; gauge fields fit on links (connections), charge on nodes
+- fermions (spin-1/2) need a new primitive; TQM is a gravitational/completion framework
+
 ---
 
 ## Overall Statistics
@@ -766,8 +771,8 @@ OPEN/WEAK: matter emergence + dynamics.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 60 | Complete |
-| **Total** | **167** | |
+| TQM-QG | 61 | Complete |
+| **Total** | **168** | |
 
 ## Key Unsolved Problems
 

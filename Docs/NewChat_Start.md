@@ -8245,6 +8245,15 @@ regular-cores (trace), lensing/gw-polarization (traceless), schwarzschild-limit 
 same spin-2 (now link content); interpretation changed, physics unchanged. The unified network theory is fully
 consistent with the entire arc. Report: Docs/Research/TQMQG_UnifiedNetworkRevalidation.md.
 
+**TQM-QG Phase 60 (Standard Model compatibility) — COMPLETED (3/3 tests pass; 183/183 TQM-QG verified):**
+Question: can network(V,E) host gauge fields, fermions, charge, spin-1 interactions? Added
+StandardModelCompatibility over 4 ingredients. TQMQG600 charge NATURAL (scalar node label), gauge-fields COMPATIBLE
+(connections on links), spin-1-interactions COMPATIBLE, fermions UNKNOWN (spinors not native) -> 1 NATURAL / 2
+COMPATIBLE / 1 UNKNOWN. TQMQG601 network natively gives spin-0 (trace) + spin-2 (traceless); gauge on links
+(lattice gauge theory), charge scalar, fermions no home. TQMQG602 TQM is a gravity (spin-0+spin-2) framework; charge
++ gauge accommodated, fermions need a new spin-1/2 primitive. Report:
+Docs/Research/TQMQG_StandardModelCompatibility.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.
