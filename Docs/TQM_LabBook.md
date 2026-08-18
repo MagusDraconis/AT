@@ -849,6 +849,12 @@ OPEN/WEAK: matter emergence + dynamics.
 - 3 colors / 8 generators ≠ U(1)/SU(2); link can carry an SU(3) connection (lattice QCD)
 - compatible but not derived; confirms the strong-force gap of QG76
 
+### TQM-QG79: Why SU(3)? (TQM-QG Phase 79)
+**Status:** Complete (NEW POSTULATE). SU(3) is conditionally preferred but the 3-color count is postulated.
+- SU(2) (dim 3) is the minimal non-Abelian group and is already present as spin S; SU(3) (dim 8) is NOT minimal
+- N = 3 colors is empirical (baryon statistics), not a network output; GIVEN N=3, SU(3) is unique/forced (8 gluons)
+- the 3-color count — not the group — is the new postulate
+
 ---
 
 ## Overall Statistics
@@ -860,8 +866,8 @@ OPEN/WEAK: matter emergence + dynamics.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 79 | Complete |
-| **Total** | **186** | |
+| TQM-QG | 80 | Complete |
+| **Total** | **187** | |
 
 ## Key Unsolved Problems
 

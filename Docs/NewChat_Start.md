@@ -8391,6 +8391,14 @@ connection (lattice QCD, a group element of G); Wilson loops/gluons are SU(3) an
 TQMQG782 CLASSIFICATION: NEW SECTOR (compatible, not derived). Confirms QG76 gap: the strong force is additional.
 Report: Docs/Research/TQMQG_ColorOrigin.md.
 
+**TQM-QG Phase 79 (Why SU(3)?) — COMPLETED (3/3 tests pass; 240/240 TQM-QG verified):**
+Question: is SU(3) the minimal non-Abelian extension of the link? Added WhySU3. TQMQG790 SU(2) (dim 3) is the
+smallest non-Abelian group and is already present as spin S, so SU(3) (dim 8) is NOT minimal in the abstract.
+TQMQG791 color count N=3 is an empirical input (baryon statistics), not a network output; GIVEN N=3 the maximal
+unitary det=1 group is SU(3) with N^2-1=8 gluons; confinement non-perturbative; link capacity ample. TQMQG792
+CLASSIFICATION: NEW POSTULATE — the 3-color count (not the group) is the new postulate; SU(3) is forced/unique
+(conditionally PREFERRED) once 3 colors are accepted. Report: Docs/Research/TQMQG_WhySU3.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.
