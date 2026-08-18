@@ -735,6 +735,11 @@ OPEN/WEAK: matter emergence + dynamics.
 - nodes (Q-events) + links (Weyl/ψ) = one causal-network primitive; scalar sector was the Weyl=0 restriction
 - refines QG40: two "primitives" unify into one network primitive
 
+### TQM-QG56: Origin of Weyl-Capable Links (TQM-QG Phase 56)
+**Status:** Complete (FORCED capacity, CONTINGENT value). Weyl is the traceless part of a complete link.
+- rank-2 link tensor always has a traceless part; conformal-only links are an incomplete restriction
+- ψ is the general (complete-link) case; the scalar sector was the Weyl=0 restriction
+
 ---
 
 ## Overall Statistics
@@ -746,8 +751,8 @@ OPEN/WEAK: matter emergence + dynamics.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 56 | Complete |
-| **Total** | **163** | |
+| TQM-QG | 57 | Complete |
+| **Total** | **164** | |
 
 ## Key Unsolved Problems
 

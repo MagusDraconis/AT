@@ -8212,6 +8212,15 @@ interior) — primitive count reduces from two to ONE causal-network primitive; 
 restriction. Refines QG40: two "primitives" unify into one network primitive. Report:
 Docs/Research/TQMQG_NetworkPrimitiveAudit.md.
 
+**TQM-QG Phase 56 (Origin of Weyl-capable links) — COMPLETED (3/3 tests pass; 171/171 TQM-QG verified):**
+Question: why do links carry a non-conformal (traceless) DOF? Added OriginOfWeylLinks. TQMQG560 a link relation is
+a symmetric rank-2 tensor A_ij that ALWAYS decomposes into trace (scalar/conformal) + traceless (spin-2/Weyl);
+conformal-only links (Weyl=0) are a RESTRICTION, not the general case. TQMQG561 a complete link carries the full
+relation (trace + traceless); link completeness FORCES the Weyl CAPACITY. TQMQG562 CLASSIFICATION: FORCED (capacity)
++ CONTINGENT (value): the scalar sector was the Weyl=0 restriction, psi is the general complete-link case; the
+non-conformal DOF is the traceless part of the complete link relation, frozen by conformal flatness. Report:
+Docs/Research/TQMQG_OriginOfWeylLinks.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.
