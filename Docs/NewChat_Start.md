@@ -8377,6 +8377,13 @@ DERIVED / 4 COMPATIBLE / 1 UNKNOWN / 0 MISSING. TQMQG761 GR derived; QM/gauge/fe
 sectors. TQMQG762 REMAINING GAPS: SM completeness (SU(3), 3 generations, Higgs) + cosmology (inflation, CMB, Lambda,
 dark matter/energy). Nothing fundamental missing. Report: Docs/Research/TQMQG_CompletenessAudit.md.
 
+**TQM-QG Phase 77 (Cosmology compatibility audit) — COMPLETED (3/3 tests pass; 234/234 TQM-QG verified):**
+Question: can the unified network reproduce basic cosmological observations? Added CosmologyAudit over 6 features.
+TQMQG770 expansion DERIVED (redshift QG26 + scale-free rho G4-RHO), frw-geometry COMPATIBLE (a=rho^(1/d)),
+cmb-isotropy COMPATIBLE, structure-formation UNKNOWN, dark-matter COMPATIBLE (log-deficit flat curves G4-ME),
+dark-energy UNKNOWN -> 1 DERIVED / 3 COMPATIBLE / 2 UNKNOWN / 0 MISSING. TQMQG772 gaps: structure formation +
+dark energy. Report: Docs/Research/TQMQG_CosmologyAudit.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.

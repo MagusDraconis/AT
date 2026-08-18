@@ -839,6 +839,11 @@ OPEN/WEAK: matter emergence + dynamics.
 - 1 DERIVED / 4 COMPATIBLE / 1 UNKNOWN (cosmology) / 0 MISSING
 - remaining gaps: SM completeness (SU(3)/generations/Higgs) + cosmology
 
+### TQM-QG77: Cosmology Compatibility Audit (TQM-QG Phase 77)
+**Status:** Complete (2 gaps). Expansion derived; FRW/CMB/dark-matter compatible.
+- structure formation and dark energy UNKNOWN; nothing MISSING
+- same open problems as standard cosmology
+
 ---
 
 ## Overall Statistics
@@ -850,8 +855,8 @@ OPEN/WEAK: matter emergence + dynamics.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 77 | Complete |
-| **Total** | **184** | |
+| TQM-QG | 78 | Complete |
+| **Total** | **185** | |
 
 ## Key Unsolved Problems
 
