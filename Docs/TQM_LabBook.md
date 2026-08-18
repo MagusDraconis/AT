@@ -650,6 +650,11 @@ OPEN/WEAK: matter emergence + dynamics.
 - 5 mechanisms all reduce to "Q-event = discrete tick"; existence DERIVED, value ρ_c IMPORTED (QG14)
 - chain: discreteness → saturation → Poisson profile → regular BH
 
+### TQM-QG39: TRM Sector Audit (TQM-QG Phase 39)
+**Status:** Complete (sector separation). TRM payload is overwhelmingly ψ/tensor.
+- redshift SATURATION; lensing/PPN/horizon-therm/GW PSI; regular BH BOTH (core + horizon)
+- final: one derived scalar sector + one irreducible tensor primitive
+
 ---
 
 ## Overall Statistics
@@ -661,8 +666,8 @@ OPEN/WEAK: matter emergence + dynamics.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 39 | Complete |
-| **Total** | **146** | |
+| TQM-QG | 40 | Complete |
+| **Total** | **147** | |
 
 ## Key Unsolved Problems
 

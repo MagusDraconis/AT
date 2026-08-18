@@ -8065,6 +8065,15 @@ native cutoff). TQMQG382 CLASSIFICATION: DERIVED (mechanism/existence) with impo
 hand-inserted assumption. Completes chain: discreteness -> saturation (QG38) -> Poisson profile (QG36) -> regular
 BH; tensor psi remains the one new primitive (QG37). Report: Docs/Research/TQMQG_SaturationOrigin.md.
 
+**TQM-QG Phase 39 (Separate TRM into derived/non-derived sectors) — COMPLETED (3/3 tests pass; 120/120 TQM-QG
+verified):**
+Question: which TRM results are saturation physics vs psi/tensor physics? Added TRMSectorAudit. TQMQG390 census:
+redshift SATURATION (g_00 scalar, no psi), lensing PSI, PPN PSI, regular-black-hole BOTH, horizon-thermodynamics
+PSI, GW PSI -> 1 SATURATION / 4 PSI / 1 BOTH. TQMQG391 regular BH composite: core from saturation (QG36) + horizon
+from psi (QG33/35). TQMQG392 summary: derived scalar sector = redshift + regular core; new tensor primitive =
+lensing/PPN/horizon-therm/GW + the horizon. Final sector separation: one derived scalar sector, one irreducible
+tensor primitive. Report: Docs/Research/TQMQG_TRMSectorAudit.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.
