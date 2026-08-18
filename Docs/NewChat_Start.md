@@ -8324,6 +8324,15 @@ scale for all four sectors (rho/psi/theta/S); caveat scale is a free parameter (
 UNIQUE + TESTABLE + FALSIFIABLE (in principle; free scale makes falsification challenging). Report:
 Docs/Research/TQMQG_FirstPrediction.md.
 
+**TQM-QG Phase 70 (Quantum entanglement from link structure) — COMPLETED (3/3 tests pass; 213/213 TQM-QG verified):**
+Question: can entanglement emerge from shared link phases and spin structure? Added EntanglementFromLinks.
+TQMQG700 shared fixed phases give CLASSICAL (deterministic) correlations, not Bell non-separability (QG30).
+TQMQG701 prerequisites present: theta gives single-DOF superposition (QG65), S gives spinor DOF (QG66); but the
+entangling interaction is missing. TQMQG702 CLASSIFICATION: REQUIRES NEW SECTOR — entanglement needs entangling
+interactions (a quantum link/gate) beyond theta + S. Completes quantum picture: superposition (theta) + spinor (S)
+hosted, but full QM (entanglement) needs one more primitive. Report:
+Docs/Research/TQMQG_EntanglementFromLinks.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.

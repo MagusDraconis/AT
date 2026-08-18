@@ -804,6 +804,11 @@ OPEN/WEAK: matter emergence + dynamics.
 **Status:** Complete (UNIQUE). Network discreteness is the first prediction.
 - common granularity scale for all four sectors, absent from GR + SM; testable + falsifiable (free scale caveat)
 
+### TQM-QG70: Quantum Entanglement from Link Structure (TQM-QG Phase 70)
+**Status:** Complete (REQUIRES NEW SECTOR). Entangling interaction is the missing piece.
+- shared phases give classical correlations, not Bell non-separability; θ+superposition, S+spinor are prerequisites
+- full QM (entanglement) needs one more primitive: the entangling interaction
+
 ---
 
 ## Overall Statistics
@@ -815,8 +820,8 @@ OPEN/WEAK: matter emergence + dynamics.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 70 | Complete |
-| **Total** | **177** | |
+| TQM-QG | 71 | Complete |
+| **Total** | **178** | |
 
 ## Key Unsolved Problems
 
