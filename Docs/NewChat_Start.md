@@ -8203,6 +8203,15 @@ eliminate the new primitive. TQMQG542 CLASSIFICATION: BOTH — the graviton is t
 causal link structure, equivalent to a rank-2 field; elegant reframing (psi = connectivity, not an external field).
 Report: Docs/Research/TQMQG_PsiAsConnectivity.md.
 
+**TQM-QG Phase 55 (Network primitive audit) — COMPLETED (3/3 tests pass; 168/168 TQM-QG verified):**
+Question: are Q-events and psi truly independent; can (nodes, links) be ONE primitive? Added NetworkPrimitiveAudit.
+TQMQG550 node-only (no structure) and link-only (no endpoints) both incomplete; nodes+links = complete network (V,E).
+TQMQG551 (nodes, links) is ONE network primitive; psi (Weyl content) remains a NEW d.o.f. (scalar sector froze
+Weyl=0); nodes (spin-0) and links (spin-2) are two irreducible aspects. TQMQG552 CLASSIFICATION: UNIFIED (with dual
+interior) — primitive count reduces from two to ONE causal-network primitive; scalar sector was the Weyl=0
+restriction. Refines QG40: two "primitives" unify into one network primitive. Report:
+Docs/Research/TQMQG_NetworkPrimitiveAudit.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.

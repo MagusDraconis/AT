@@ -730,6 +730,11 @@ OPEN/WEAK: matter emergence + dynamics.
 - rank-2 adjacency tensor carries exactly 2 spin-2 polarizations; ψ = Weyl ≠ 0 (non-conformal connectivity)
 - field and connectivity are equivalent descriptions; elegant reframing, still a new primitive
 
+### TQM-QG55: Network Primitive Audit (TQM-QG Phase 55)
+**Status:** Complete (UNIFIED). One network primitive with a dual interior.
+- nodes (Q-events) + links (Weyl/ψ) = one causal-network primitive; scalar sector was the Weyl=0 restriction
+- refines QG40: two "primitives" unify into one network primitive
+
 ---
 
 ## Overall Statistics
@@ -741,8 +746,8 @@ OPEN/WEAK: matter emergence + dynamics.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 55 | Complete |
-| **Total** | **162** | |
+| TQM-QG | 56 | Complete |
+| **Total** | **163** | |
 
 ## Key Unsolved Problems
 

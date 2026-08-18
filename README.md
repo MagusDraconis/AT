@@ -57,8 +57,8 @@ Phase Gradients → Geometry → Gravity
 | **QG** — Quantum Gravity | 31 (QG-001→031) | Complete |
 | **G4** — Native Metric-to-Operator Coupling | 57 phases / 171 tests | Complete |
 | **TQM-F** — Foundation | 4 phases / 9 tests | Complete |
-| **TQM-QG** — Actualization→Gravity Unification | 55 phases / 165 tests | Complete |
-| **Total** | **162** | |
+| **TQM-QG** — Actualization→Gravity Unification | 56 phases / 168 tests | Complete |
+| **Total** | **163** | |
 
 ## Key Results
 
