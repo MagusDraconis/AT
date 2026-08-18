@@ -790,6 +790,11 @@ OPEN/WEAK: matter emergence + dynamics.
 - integer spins native (0/2/1); spin-1/2 needs a double cover (SU(2) spin structure)
 - compatible via a spin structure, not derivable; fermions need a new primitive
 
+### TQM-QG67: Network Spin Structure (TQM-QG Phase 67)
+**Status:** Complete (REQUIRES NEW PRIMITIVE). Spin structure is new data, not native.
+- orientation (Z2) ≠ double cover; network lacks the SU(2) spin-connection data
+- compatible (can be added), confirming QG66
+
 ---
 
 ## Overall Statistics
@@ -801,8 +806,8 @@ OPEN/WEAK: matter emergence + dynamics.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 67 | Complete |
-| **Total** | **174** | |
+| TQM-QG | 68 | Complete |
+| **Total** | **175** | |
 
 ## Key Unsolved Problems
 

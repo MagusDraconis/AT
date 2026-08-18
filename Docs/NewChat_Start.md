@@ -8302,6 +8302,13 @@ scalar+rank-2. TQMQG662 CLASSIFICATION: REQUIRES NEW PRIMITIVE (compatible via a
 fermions need a new spin-1/2 primitive; completes matter picture (gravity spin-0+2, gauge spin-1 hosted; fermions
 not). Report: Docs/Research/TQMQG_OriginOfSpinHalf.md.
 
+**TQM-QG Phase 67 (Network spin structure) — COMPLETED (3/3 tests pass; 204/204 TQM-QG verified):**
+Question: can a causal network naturally carry a spin structure? Added NetworkSpinStructure. TQMQG670 graph
+orientation (Z2) is NOT a spin structure (double cover with signs on cycles). TQMQG671 network naturally has
+orientation (Z2) + U(1) phase, NOT the double-cover/SU(2) data; a spin structure can be added (compatible) but is
+new data. TQMQG672 CLASSIFICATION: REQUIRES NEW PRIMITIVE (compatible, not derivable) — confirms QG66: fermions
+need a new spin-1/2 (spin structure) primitive. Report: Docs/Research/TQMQG_NetworkSpinStructure.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.
