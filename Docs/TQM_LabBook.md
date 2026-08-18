@@ -685,6 +685,11 @@ OPEN/WEAK: matter emergence + dynamics.
 - 2 helicities intrinsic to the free field → polarization needs zero coupling to the scalar backbone
 - sourcing needs weak κ=8πG; ψ is the most decoupled possible new primitive
 
+### TQM-QG46: Why Spin-2? (TQM-QG Phase 46)
+**Status:** Complete (PREFERRED). Three constraints uniquely select spin-2.
+- 2 polarizations (rules out spin-0), attraction (rules out spin-1), light bending (rules out spin-0)
+- spin-2 is the unique viable spin for a gravity field
+
 ---
 
 ## Overall Statistics
@@ -696,8 +701,8 @@ OPEN/WEAK: matter emergence + dynamics.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 46 | Complete |
-| **Total** | **153** | |
+| TQM-QG | 47 | Complete |
+| **Total** | **154** | |
 
 ## Key Unsolved Problems
 

@@ -8126,6 +8126,14 @@ the FREE massless spin-2 field -> GW POLARIZATION requires ZERO coupling to the 
 polarization) / WEAKLY COUPLED (only when sourced); not strongly coupled. psi is the most decoupled new primitive:
 free for polarization, weak source coupling only. Report: Docs/Research/TQMQG_MinimalPsiCoupling.md.
 
+**TQM-QG Phase 46 (Why spin-2?) — COMPLETED (3/3 tests pass; 141/141 TQM-QG verified):**
+Question: why is the minimal extension spin-2 instead of spin-1 or spin-0? Added WhySpin2: three independent
+constraints uniquely select spin-2. TQMQG460: spin-0 fails (1 helicity, couples to trace T), spin-1 fails
+(repulsive odd spin), only spin-2 passes all. TQMQG461: (1) 2 polarizations rules out spin-0, (2) universal
+attraction rules out spin-1, (3) light bending (full T_mu_nu) rules out spin-0. TQMQG462 CLASSIFICATION: PREFERRED
+— not derived (psi is new primitive), not bare postulate (uniquely selected); spin-2 is the unique viable spin for
+gravity. Report: Docs/Research/TQMQG_WhySpin2.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.
