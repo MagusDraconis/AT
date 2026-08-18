@@ -760,6 +760,11 @@ OPEN/WEAK: matter emergence + dynamics.
 - network natively gives spin-0 + spin-2; gauge fields fit on links (connections), charge on nodes
 - fermions (spin-1/2) need a new primitive; TQM is a gravitational/completion framework
 
+### TQM-QG61: Quantum Mechanics Compatibility (TQM-QG Phase 61)
+**Status:** Complete (classical network). QM not natively reproduced.
+- superposition/interference/measurement UNKNOWN; entanglement PARTIAL (classical correlations)
+- whether QM emerges from actualization is an open question (mirrors QG60 fermions)
+
 ---
 
 ## Overall Statistics
@@ -771,8 +776,8 @@ OPEN/WEAK: matter emergence + dynamics.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 61 | Complete |
-| **Total** | **168** | |
+| TQM-QG | 62 | Complete |
+| **Total** | **169** | |
 
 ## Key Unsolved Problems
 

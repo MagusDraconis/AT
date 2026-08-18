@@ -8254,6 +8254,15 @@ COMPATIBLE / 1 UNKNOWN. TQMQG601 network natively gives spin-0 (trace) + spin-2 
 + gauge accommodated, fermions need a new spin-1/2 primitive. Report:
 Docs/Research/TQMQG_StandardModelCompatibility.md.
 
+**TQM-QG Phase 61 (Quantum mechanics compatibility) — COMPLETED (3/3 tests pass; 186/186 TQM-QG verified):**
+Question: how do network ticks reproduce superposition/interference/entanglement/measurement? Added
+QuantumMechanicsCompatibility over 4 features. TQMQG610 superposition UNKNOWN (no complex amplitudes), interference
+UNKNOWN (no phases), entanglement PARTIAL (classical correlations QG30, not quantum non-separability), measurement
+UNKNOWN (no collapse) -> 0 MATCH / 1 PARTIAL / 3 UNKNOWN. TQMQG611 network is CLASSICAL (discrete ticks +
+probabilities + classical correlations). TQMQG612 QM is not natively hosted; whether it emerges from actualization
+is an open question (mirrors fermion result QG60). Report:
+Docs/Research/TQMQG_QuantumMechanicsCompatibility.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.
