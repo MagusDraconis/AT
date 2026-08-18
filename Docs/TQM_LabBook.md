@@ -966,6 +966,12 @@ OPEN/WEAK: matter emergence + dynamics.
 - CKM/PMNS mixing angles literally ARE angles (network analog); mass hierarchies have a length-ratio analog
 - the network does not specify WHICH ratio maps to WHICH parameter — values stay free
 
+### TQM-QG98: Physical Meaning of Network Angles (TQM-QG Phase 98)
+**Status:** Complete (PARTIAL RELATION). Geometric vs internal rotations — analogy across spaces.
+- real GEOMETRIC angles exist (triangle + link orientation) in spacetime geometry
+- CKM/PMNS mixing and gauge rotations are INTERNAL-space rotations, distinct from geometric angles
+- correspondence is an ANALOGY (angles ↔ angles), not an identification — PARTIAL RELATION, not angle origin
+
 ---
 
 ## Overall Statistics
@@ -977,8 +983,8 @@ OPEN/WEAK: matter emergence + dynamics.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 98 | Complete |
-| **Total** | **205** | |
+| TQM-QG | 99 | Complete |
+| **Total** | **206** | |
 
 ## Key Unsolved Problems
 

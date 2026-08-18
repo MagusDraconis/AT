@@ -8543,6 +8543,14 @@ angles (direct network analog) and mass hierarchies have a length-ratio analog, 
 WHICH ratio corresponds to WHICH parameter. TQMQG972 CLASSIFICATION: PARTIAL RELATION — direct geometric analog
 (angles → angles, ratios → ratios), not a full ratio origin. Report: Docs/Research/TQMQG_LinkRatioParameters.md.
 
+**TQM-QG Phase 98 (Physical meaning of network angles) — COMPLETED (3/3 tests pass; 297/297 TQM-QG):**
+Question: can network angles correspond to physical mixing angles and internal symmetry rotations? Added
+NetworkAngles. TQMQG980 the network genuinely has GEOMETRIC angles (triangle + orientation) in spacetime geometry.
+TQMQG981 CKM/PMNS mixing angles and gauge rotations are INTERNAL-space rotations (flavor/gauge), distinct from
+geometric triangle angles — the correspondence is an ANALOGY (both are angles), not an identification. TQMQG982
+CLASSIFICATION: PARTIAL RELATION — real geometric angles exist, but geometric vs internal rotations live in
+different spaces; no native mapping identifies them. Report: Docs/Research/TQMQG_NetworkAngles.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.
