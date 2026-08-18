@@ -615,6 +615,11 @@ OPEN/WEAK: matter emergence + dynamics.
 - native tick propagation = massless null (M_eff=0, n=1); TRM kernel M_eff=e^Φ−1 is refractive
 - shared causal structure, differing refractive content; coincide only at ψ=0
 
+### TQM-QG32: TRM Compatibility Audit (TQM-QG Phase 32)
+**Status:** Complete (clean extension). Adding the ψ kernel breaks nothing.
+- 5 UNCHANGED (counting/metric-origin/matter/α=0/branching), 1 MODIFIED (Einstein structure), 0 BROKEN
+- ψ-perturbation is volume-preserving (√(−g)=ρ); only the Einstein/Weyl sector is enriched
+
 ---
 
 ## Overall Statistics
@@ -626,8 +631,8 @@ OPEN/WEAK: matter emergence + dynamics.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 32 | Complete |
-| **Total** | **139** | |
+| TQM-QG | 33 | Complete |
+| **Total** | **140** | |
 
 ## Key Unsolved Problems
 

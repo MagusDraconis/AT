@@ -7998,6 +7998,15 @@ shared causal (retarded light-cone) structure, differing refractive content (0 v
 psi=0. TRM kernel is not native in either reading — remains the imported psi. Report:
 Docs/Research/TQMQG_TRMPropagatorOrigin.md.
 
+**TQM-QG Phase 32 (TRM compatibility audit) — COMPLETED (3/3 tests pass; 99/99 TQM-QG verified):**
+Question: which TQM derivations break if the TRM (psi) kernel is added? Added TRMCompatibilityAudit: classify 6
+derivations. TQMQG320 matrix: counting-measure UNCHANGED, metric-origin sqrt(-g)=rho UNCHANGED (det g=-rho^2
+independent of psi), matter-deficit UNCHANGED, einstein-structure MODIFIED (gains psi/Weyl tensor terms),
+alpha-zero-attractor UNCHANGED, critical-branching UNCHANGED -> 5 UNCHANGED / 1 MODIFIED / 0 BROKEN. TQMQG321 the
+psi-perturbation (g_00=-rho^(2/d)e^{2psi}, g_ii=rho^(2/d)e^{-2psi/(d-1)}) has det=-rho^2 so sqrt(-g)=rho preserved
+(volume-preserving) -> metric-origin survives unchanged. TQMQG322 CLEAN extension: add psi, keep all scalar
+derivations, replace only the Einstein sector. Report: Docs/Research/TQMQG_TRMCompatibilityAudit.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.
