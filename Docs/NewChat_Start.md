@@ -8286,6 +8286,14 @@ a_ij = trace + traceless, phase theta). TQMQG642 CLASSIFICATION: UNIFIED (one li
 exactly as QG55 unified nodes+links. Final synthesis: one link, three sectors. Report:
 Docs/Research/TQMQG_LinkUnification.md.
 
+**TQM-QG Phase 65 (Can quantum interference emerge?) — COMPLETED (3/3 tests pass; 198/198 TQM-QG verified):**
+Question: are interference phenomena naturally recovered from link phases? Added InterferenceFromLinks (uses
+System.Numerics.Complex). TQMQG650 path accumulates theta=sum(theta_links), amplitude e^(i theta), loop holonomy
+gauge-invariant, |e^(i theta)|=1. TQMQG651 double-slit |e^(i theta1)+e^(i theta2)|^2 = 2+2cos(theta1-theta2)
+(constructive 4, destructive 0, partial 2). TQMQG652 Born rule P=|amplitude|^2 consistent. CLASSIFICATION: MATCH —
+interference naturally recovered from link phases; caveat: the U(1) phase is the new primitive (QG62), so it
+emerges GIVEN the phase. Report: Docs/Research/TQMQG_InterferenceFromLinks.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.

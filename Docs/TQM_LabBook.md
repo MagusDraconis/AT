@@ -780,6 +780,11 @@ OPEN/WEAK: matter emergence + dynamics.
 - L_ij = a_ij e^(iθ_ij): magnitude (trace ρ + traceless ψ) × phase (U(1))
 - one link object with irreducible sectors, in the spirit of QG55
 
+### TQM-QG65: Can Quantum Interference Emerge? (TQM-QG Phase 65)
+**Status:** Complete (MATCH). Interference naturally recovered from link phases.
+- path amplitude e^(iΣθ); double-slit 2+2cos(Δθ); Born rule |amplitude|²; loop holonomies
+- caveat: the U(1) phase is the new primitive (QG62)
+
 ---
 
 ## Overall Statistics
@@ -791,8 +796,8 @@ OPEN/WEAK: matter emergence + dynamics.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 65 | Complete |
-| **Total** | **172** | |
+| TQM-QG | 66 | Complete |
+| **Total** | **173** | |
 
 ## Key Unsolved Problems
 
