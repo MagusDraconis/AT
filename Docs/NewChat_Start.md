@@ -8025,6 +8025,17 @@ ESSENTIAL=3 (psi under three names but ONE object), SECONDARY=0, REDUNDANT=1 (UV
 INGREDIENT = the temporal-rate modification psi (non-conformal factor); Meff/kernel are the same object; UV cutoff
 is decorative. Report: Docs/Research/TQMQG_IrreducibleTRMIngredient.md.
 
+**TQM-QG Phase 35 (Does psi alone reproduce the regular-core structure?) — COMPLETED (3/3 tests pass; 108/108
+TQM-QG verified):**
+Question: can psi generate M_eff(r)=M(1-e^(-r^3/rc^3)) without additional assumptions? Added PsiVsRegularCore:
+target profile M_eff(0)=0 (finite core), asymptote M. TQMQG350 confirms M_eff(0)=0, M_eff(r_c)=M(1-1/e), ->M.
+TQMQG351 psi is a FREE field: smooth psi(0)=0 gives QUALITATIVE regular core (finite M_eff + finite curvature) for
+free, but the specific r^3/rc^3 form is an ansatz requiring 2 inputs (functional form + core scale rc).
+TQMQG352 per-aspect: core-regularity FULL MATCH, curvature-finiteness FULL MATCH, horizon-structure PARTIAL MATCH,
+mass-profile NO MATCH -> OVERALL PARTIAL MATCH. psi is necessary for regular BH but not sufficient to fix the mass
+profile; the regular-core shape is a parameterization, not a derivation. Report:
+Docs/Research/TQMQG_PsiVsRegularCore.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.

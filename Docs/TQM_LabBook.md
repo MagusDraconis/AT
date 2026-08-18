@@ -630,6 +630,11 @@ OPEN/WEAK: matter emergence + dynamics.
 - redshift needs no ψ (TQM g_00 provides it); weak-field GR + regular BH need ψ; UV cutoff is REDUNDANT
 - irreducible ingredient = the non-conformal ψ factor
 
+### TQM-QG35: ψ vs Regular Core (TQM-QG Phase 35)
+**Status:** Complete (PARTIAL MATCH). ψ gives the regular-core structure but not the exact profile.
+- core regularity + curvature finiteness FULL MATCH; horizon PARTIAL; exact mass profile NO MATCH
+- the r³/r_c³ form is an ansatz requiring a functional form + a new scale r_c
+
 ---
 
 ## Overall Statistics
@@ -641,8 +646,8 @@ OPEN/WEAK: matter emergence + dynamics.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 35 | Complete |
-| **Total** | **142** | |
+| TQM-QG | 36 | Complete |
+| **Total** | **143** | |
 
 ## Key Unsolved Problems
 
