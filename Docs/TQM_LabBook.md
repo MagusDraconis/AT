@@ -670,6 +670,11 @@ OPEN/WEAK: matter emergence + dynamics.
 - 2 DERIVED (saturation core, redshift) / 1 PARTIAL (Schwarzschild) / 2 IMPORTED (rotation-curve, temporal) / 1 NEW PRIMITIVE (ψ)
 - TQM supplies the scalar backbone; TRM's observational payload needs imported rules + ψ
 
+### TQM-QG43: Observational Uniqueness of ψ (TQM-QG Phase 43)
+**Status:** Complete (ψ unique for GW only). The graviton is the single spin-2 requirement.
+- lensing/Shapiro/PPN γ are SCALAR (1-d.o.f. scalar ψ suffices); GW polarization is PSI (spin-2); horizon AMBIGUOUS
+- refines QG40: tensor ψ demanded by exactly one observation — GW polarization
+
 ---
 
 ## Overall Statistics
@@ -681,8 +686,8 @@ OPEN/WEAK: matter emergence + dynamics.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 43 | Complete |
-| **Total** | **150** | |
+| TQM-QG | 44 | Complete |
+| **Total** | **151** | |
 
 ## Key Unsolved Problems
 

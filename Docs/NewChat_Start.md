@@ -8101,6 +8101,15 @@ PRIMITIVE -> 2 DERIVED / 1 PARTIAL / 2 IMPORTED / 1 NEW PRIMITIVE. TQMQG421 full
 TRM's observational payload (lensing, rotation curves, GWs) requires imported rules + psi primitive. Report:
 Docs/Research/TQMQG_FinalTRMAudit.md.
 
+**TQM-QG Phase 43 (Observational uniqueness of psi) — COMPLETED (3/3 tests pass; 132/132 TQM-QG verified):**
+Question: which observations require the tensor psi and cannot be reproduced by a scalar? Added
+ObservationalUniqueness over 5 observables. TQMQG430: lensing SCALAR (spin 0), gw-polarization PSI (spin 2),
+shapiro-delay SCALAR, ppn-gamma SCALAR, horizon-physics AMBIGUOUS (shadow/entropy scalar, Hawking T UNDECIDED) ->
+3 SCALAR / 1 PSI / 1 AMBIGUOUS. TQMQG431 only GW polarization needs spin-2; a 1-d.o.f. scalar psi suffices for
+lensing/delay/gamma. TQMQG432 REFINES QG40: the tensor psi is observationally UNIQUE only for GW polarization;
+the graviton is the single spin-2 requirement, every other gap is scalar. Report:
+Docs/Research/TQMQG_ObservationalUniqueness.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.
