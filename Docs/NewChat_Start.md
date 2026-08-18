@@ -8478,6 +8478,14 @@ E = mc² links the Higgs condensate (rest mass) to energy; conservation follows 
 DERIVED (concept) — energy = Noether conjugate of causal order, not a new sector; specific energy VALUES remain
 empirical (QG85). Report: Docs/Research/TQMQG_OriginOfEnergy.md.
 
+**TQM-QG Phase 90 (Origin of gauge sector splitting) — COMPLETED (3/3 tests pass; 273/273 TQM-QG verified):**
+Question: why does the link decompose into three gauge sectors instead of one unified structure? Added
+GaugeSectorSplitting. TQMQG900 θ (charge), S (spin), C (color) act on DIFFERENT internal spaces, so the gauge
+group is the PRODUCT U(1)×SU(2)×SU(3); they share one carrier (the single link QG68) but that does not force a
+single group. TQMQG901 no symmetry-breaking chain derives a unified group — a GUT (SU(5)/SO(10)) is ADDITIONAL.
+TQMQG902 CLASSIFICATION: POSTULATED — the three sectors are independent postulates; the product structure is
+empirical. Report: Docs/Research/TQMQG_GaugeSectorSplitting.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.

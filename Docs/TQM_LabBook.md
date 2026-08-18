@@ -918,6 +918,12 @@ OPEN/WEAK: matter emergence + dynamics.
 - energy stored in ψ/ρ excitation; E=mc² links the Higgs condensate; conservation via Noether
 - the CONCEPT is DERIVED; specific energy VALUES remain empirical (QG85)
 
+### TQM-QG90: Origin of Gauge Sector Splitting (TQM-QG Phase 90)
+**Status:** Complete (POSTULATED). Three sectors are independent postulates.
+- θ (charge), S (spin), C (color) act on different internal spaces → gauge group is the PRODUCT U(1)×SU(2)×SU(3)
+- they share one carrier (the single link QG68) but that does not force a single group
+- a GUT (SU(5)/SO(10)) is an additional postulate; the product structure is empirical
+
 ---
 
 ## Overall Statistics
@@ -929,8 +935,8 @@ OPEN/WEAK: matter emergence + dynamics.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 90 | Complete |
-| **Total** | **197** | |
+| TQM-QG | 91 | Complete |
+| **Total** | **198** | |
 
 ## Key Unsolved Problems
 
