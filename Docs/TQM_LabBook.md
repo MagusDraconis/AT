@@ -655,6 +655,11 @@ OPEN/WEAK: matter emergence + dynamics.
 - redshift SATURATION; lensing/PPN/horizon-therm/GW PSI; regular BH BOTH (core + horizon)
 - final: one derived scalar sector + one irreducible tensor primitive
 
+### TQM-QG40: Final Quantum-Gravity Boundary Audit (TQM-QG Phase 40)
+**Status:** Complete (two primitives). Final boundary across 11 items.
+- 7 DERIVED / 0 EMERGENT / 2 NEW PRIMITIVE (Q-events + ψ) / 2 IMPORTED (GW + lensing)
+- scalar backbone fully derived; ψ pinned by exactly two imported observables; no emergent sector
+
 ---
 
 ## Overall Statistics
@@ -666,8 +671,8 @@ OPEN/WEAK: matter emergence + dynamics.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 40 | Complete |
-| **Total** | **147** | |
+| TQM-QG | 41 | Complete |
+| **Total** | **148** | |
 
 ## Key Unsolved Problems
 

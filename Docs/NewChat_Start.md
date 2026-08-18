@@ -8074,6 +8074,16 @@ from psi (QG33/35). TQMQG392 summary: derived scalar sector = redshift + regular
 lensing/PPN/horizon-therm/GW + the horizon. Final sector separation: one derived scalar sector, one irreducible
 tensor primitive. Report: Docs/Research/TQMQG_TRMSectorAudit.md.
 
+**TQM-QG Phase 40 (Final Quantum-Gravity Boundary Audit) — COMPLETED (3/3 tests pass; 123/123 TQM-QG verified):**
+Question: after all phases, what is derived, primitive, and observationally required? Added FinalBoundaryAudit over
+11 items. TQMQG400 census: Q-events NEW PRIMITIVE, counting-measure/causal-order/geometry/einstein-structure/
+matter/scalar-gravity/saturation-physics DERIVED (7), tensor-sector (psi) NEW PRIMITIVE, gw-observables +
+lensing-observables IMPORTED (2) -> 7 DERIVED / 0 EMERGENT / 2 NEW PRIMITIVE / 2 IMPORTED. TQMQG401 two primitives
+(Q-events + psi) + 7-item derived chain. TQMQG402 FINAL BOUNDARY: 2 primitives, 7 derived, 2 imported, 0 emergent.
+Conclusion: TQM's QG boundary is TWO primitives (Q-events + psi) and nothing else; scalar backbone fully derived;
+psi pinned by exactly two imported observables (lensing + GW). No emergent sector. Report:
+Docs/Research/TQMQG_FinalBoundaryAudit.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.
