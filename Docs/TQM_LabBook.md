@@ -844,6 +844,11 @@ OPEN/WEAK: matter emergence + dynamics.
 - structure formation and dark energy UNKNOWN; nothing MISSING
 - same open problems as standard cosmology
 
+### TQM-QG78: Origin of SU(3) Color (TQM-QG Phase 78)
+**Status:** Complete (NEW SECTOR). SU(3) is a new gauge sector.
+- 3 colors / 8 generators ≠ U(1)/SU(2); link can carry an SU(3) connection (lattice QCD)
+- compatible but not derived; confirms the strong-force gap of QG76
+
 ---
 
 ## Overall Statistics
@@ -855,8 +860,8 @@ OPEN/WEAK: matter emergence + dynamics.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 78 | Complete |
-| **Total** | **185** | |
+| TQM-QG | 79 | Complete |
+| **Total** | **186** | |
 
 ## Key Unsolved Problems
 

@@ -8384,6 +8384,13 @@ cmb-isotropy COMPATIBLE, structure-formation UNKNOWN, dark-matter COMPATIBLE (lo
 dark-energy UNKNOWN -> 1 DERIVED / 3 COMPATIBLE / 2 UNKNOWN / 0 MISSING. TQMQG772 gaps: structure formation +
 dark energy. Report: Docs/Research/TQMQG_CosmologyAudit.md.
 
+**TQM-QG Phase 78 (Origin of SU(3) color) — COMPLETED (3/3 tests pass; 237/237 TQM-QG verified):**
+Question: can color charge emerge from link structure? Added ColorOrigin. TQMQG780 SU(3) (3 colors, 8 generators)
+is a DIFFERENT Lie algebra from U(1) theta / SU(2) S — not derivable. TQMQG781 the link CAN carry an SU(3)
+connection (lattice QCD, a group element of G); Wilson loops/gluons are SU(3) analogues; confinement is dynamical.
+TQMQG782 CLASSIFICATION: NEW SECTOR (compatible, not derived). Confirms QG76 gap: the strong force is additional.
+Report: Docs/Research/TQMQG_ColorOrigin.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.
