@@ -8527,6 +8527,14 @@ gives a discrete spectrum so quantization is natural, but no NATIVE dynamics is 
 the SM parameters. TQMQG952 CLASSIFICATION: PARTIAL RELATION — resonance modes exist, mapping speculative (not a
 full resonance origin). Report: Docs/Research/TQMQG_NetworkResonanceParameters.md.
 
+**TQM-QG Phase 96 (Stable State Selection) — COMPLETED (3/3 tests pass; 291/291 TQM-QG verified):**
+Question: does the network possess preferred stable states whose spectra could select physical parameters? Added
+StableStateSelection. TQMQG960 stable modes exist but there is NO native energy functional whose minima select a
+state (energy is derived as a concept QG89, not a selection functional). TQMQG961 stability + RG attractors
+PARTIALLY select/narrow the region, but nothing selects a unique preferred state whose spectrum equals the SM
+parameters. TQMQG962 CLASSIFICATION: PARTIAL SELECTION — stability/attractors partially select; full state
+selection absent. Report: Docs/Research/TQMQG_StableStateSelection.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.

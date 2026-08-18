@@ -954,6 +954,12 @@ OPEN/WEAK: matter emergence + dynamics.
 - mass = resonance frequency (E = mc² = ħω) is a structural analogy; discrete spectrum makes quantization natural
 - no native dynamics identified whose spectrum equals the SM params — PARTIAL RELATION, not resonance origin
 
+### TQM-QG96: Stable State Selection (TQM-QG Phase 96)
+**Status:** Complete (PARTIAL SELECTION). Stability/attractors narrow; no unique state.
+- no NATIVE energy functional whose minima select a state (energy is a concept, QG89); stable modes exist
+- stability + RG attractors PARTIALLY select/narrow the region; nothing selects a unique preferred state
+- PARTIAL SELECTION: partial selection achieved, full state selection absent
+
 ---
 
 ## Overall Statistics
@@ -965,8 +971,8 @@ OPEN/WEAK: matter emergence + dynamics.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 96 | Complete |
-| **Total** | **203** | |
+| TQM-QG | 97 | Complete |
+| **Total** | **204** | |
 
 ## Key Unsolved Problems
 
