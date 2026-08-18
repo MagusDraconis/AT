@@ -8567,6 +8567,14 @@ SM parameters are INTERNAL, so deficit-angle mass/mixing analogs are suggestive,
 CLASSIFICATION: PARTIAL RELATION — real derived curvature + analogy, without value determination. Report:
 Docs/Research/TQMQG_CurvatureParameters.md.
 
+**TQM-QG Phase 101 (Parameter origin from network dynamics) — COMPLETED (3/3 tests pass; 306/306 TQM-QG):**
+Question: can masses/couplings/mixing emerge from stable dynamic activity patterns? Added DynamicParameterOrigin.
+TQMQG1010 the network has genuine dynamics — actualization-rate patterns (QG89) and RG attractors (QG88).
+TQMQG1011 oscillatory link states, metastable configurations, and parameter families provide an organizing
+structure, but no native dynamics selects the specific SM values. TQMQG1012 CLASSIFICATION: PARTIAL RELATION —
+real dynamics + organizing structure, without value selection (not a dynamic origin). Report:
+Docs/Research/TQMQG_DynamicParameterOrigin.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.

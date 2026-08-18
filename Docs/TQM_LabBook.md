@@ -984,6 +984,12 @@ OPEN/WEAK: matter emergence + dynamics.
 - curvature is derived from the metric (ρ, ψ, no independent dof); SM parameters are INTERNAL
 - deficit-angle mass/mixing analogs are suggestive, not determinative — PARTIAL RELATION, not curvature origin
 
+### TQM-QG101: Parameter Origin from Network Dynamics (TQM-QG Phase 101)
+**Status:** Complete (PARTIAL RELATION). Real dynamics, no value selection.
+- actualization-rate patterns (QG89) + RG attractors (QG88) are native dynamics
+- oscillatory link states, metastable configurations, and parameter families organize but do not select values
+- PARTIAL RELATION: dynamic organizing structure without value determination
+
 ---
 
 ## Overall Statistics
@@ -995,8 +1001,8 @@ OPEN/WEAK: matter emergence + dynamics.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 101 | Complete |
-| **Total** | **208** | |
+| TQM-QG | 102 | Complete |
+| **Total** | **209** | |
 
 ## Key Unsolved Problems
 
