@@ -750,6 +750,11 @@ OPEN/WEAK: matter emergence + dynamics.
 - adjacency 0/1 quantized, links countable, Weyl discrete (parallel to Q-events)
 - continuum limit → smooth ψ field, exactly like discrete Q-events → continuous ρ
 
+### TQM-QG59: Revalidate the Unified Network Theory (TQM-QG Phase 59)
+**Status:** Complete (all PRESERVED). The unified picture is a faithful re-description.
+- 7/7 results preserved (trace→scalar, traceless→tensor); interpretation changed, physics unchanged
+- one-network-primitive picture fully consistent with the entire arc
+
 ---
 
 ## Overall Statistics
@@ -761,8 +766,8 @@ OPEN/WEAK: matter emergence + dynamics.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 59 | Complete |
-| **Total** | **166** | |
+| TQM-QG | 60 | Complete |
+| **Total** | **167** | |
 
 ## Key Unsolved Problems
 

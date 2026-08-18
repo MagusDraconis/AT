@@ -8237,6 +8237,14 @@ N) gives the smooth Weyl field psi (parallel to discrete Q-events -> continuous 
 — discrete microscopically, continuous in the continuum limit; reconciles QG52 (psi fundamental) with the network
 picture. Report: Docs/Research/TQMQG_DiscreteOrContinuousLinks.md.
 
+**TQM-QG Phase 59 (Revalidate the unified network theory) — COMPLETED (3/3 tests pass; 180/180 TQM-QG verified):**
+Question: does the unified (V,E) -> rho(trace)+psi(traceless) picture reproduce all previous results? Added
+UnifiedNetworkRevalidation over 7 results. TQMQG590 all PRESERVED: matter/scalar-gravity/rotation-curves/
+regular-cores (trace), lensing/gw-polarization (traceless), schwarzschild-limit (both) -> 7 PRESERVED / 0 MODIFIED
+/ 0 BROKEN. TQMQG591 trace/traceless split 4/2/1. TQMQG592 faithful RE-DESCRIPTION: rho same counting measure, psi
+same spin-2 (now link content); interpretation changed, physics unchanged. The unified network theory is fully
+consistent with the entire arc. Report: Docs/Research/TQMQG_UnifiedNetworkRevalidation.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.
