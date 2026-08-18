@@ -8559,6 +8559,14 @@ but motifs are DERIVED composites (no independent dof) and no native mapping sel
 CLASSIFICATION: PARTIAL RELATION — organizing structure (motif spectra) without value determination. Report:
 Docs/Research/TQMQG_NetworkMotifs.md.
 
+**TQM-QG Phase 100 (Parameter origin from network curvature) — COMPLETED (3/3 tests pass; 303/303 TQM-QG):**
+Question: can local curvature/deficit patterns determine physical parameters? Added CurvatureParameters. TQMQG1000
+discrete curvature (deficit angle = 2π − sum of face angles) is real and derived — the object the G4 program used
+to extract curvature from spectra. TQMQG1001 curvature is derived from the metric (ρ, ψ, no independent dof) and
+SM parameters are INTERNAL, so deficit-angle mass/mixing analogs are suggestive, not determinative. TQMQG1002
+CLASSIFICATION: PARTIAL RELATION — real derived curvature + analogy, without value determination. Report:
+Docs/Research/TQMQG_CurvatureParameters.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.

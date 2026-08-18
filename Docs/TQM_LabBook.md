@@ -978,6 +978,12 @@ OPEN/WEAK: matter emergence + dynamics.
 - motifs are DERIVED composites (no independent dof, QG87); no native mapping selects specific values
 - PARTIAL RELATION: structural organizing principle without value determination
 
+### TQM-QG100: Parameter Origin from Network Curvature (TQM-QG Phase 100)
+**Status:** Complete (PARTIAL RELATION). Derived curvature + analogy, no value determination.
+- deficit angle = 2π − sum of face angles; deficit distributions, defect angles, curvature invariants are real and derived
+- curvature is derived from the metric (ρ, ψ, no independent dof); SM parameters are INTERNAL
+- deficit-angle mass/mixing analogs are suggestive, not determinative — PARTIAL RELATION, not curvature origin
+
 ---
 
 ## Overall Statistics
@@ -989,8 +995,8 @@ OPEN/WEAK: matter emergence + dynamics.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 100 | Complete |
-| **Total** | **207** | |
+| TQM-QG | 101 | Complete |
+| **Total** | **208** | |
 
 ## Key Unsolved Problems
 
