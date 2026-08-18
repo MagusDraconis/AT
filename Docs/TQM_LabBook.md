@@ -645,6 +645,11 @@ OPEN/WEAK: matter emergence + dynamics.
 - scalar nonlinearity/gradient/front reach ≤ spin 1; saturation adds no independent d.o.f.
 - scalar layer DERIVED (saturation), tensor layer NEW PRIMITIVE
 
+### TQM-QG38: Origin of Finite-Density Saturation (TQM-QG Phase 38)
+**Status:** Complete (DERIVED). Discreteness forces a maximal density.
+- 5 mechanisms all reduce to "Q-event = discrete tick"; existence DERIVED, value ρ_c IMPORTED (QG14)
+- chain: discreteness → saturation → Poisson profile → regular BH
+
 ---
 
 ## Overall Statistics
@@ -656,8 +661,8 @@ OPEN/WEAK: matter emergence + dynamics.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 38 | Complete |
-| **Total** | **145** | |
+| TQM-QG | 39 | Complete |
+| **Total** | **146** | |
 
 ## Key Unsolved Problems
 

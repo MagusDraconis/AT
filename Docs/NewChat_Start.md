@@ -8056,6 +8056,15 @@ scalar profile (partial, scalar side only); the graviton still needs an independ
 resolution: scalar layer DERIVED (saturation, QG36), tensor layer NEW PRIMITIVE. Report:
 Docs/Research/TQMQG_SaturationToPsi.md.
 
+**TQM-QG Phase 38 (Origin of finite-density saturation) — COMPLETED (3/3 tests pass; 117/117 TQM-QG verified):**
+Question: why do Q-events saturate at a critical density? Added SaturationOrigin. TQMQG380 all 5 mechanisms
+(occupancy-limit, update-conflict, exclusion-principle, branching-congestion, tick-capacity) reduce to ONE root:
+Q-event = discrete tick (QG29) -> discrete counting measure has maximal density; no new primitive needed. TQMQG381
+EXISTENCE of critical density DERIVED (discreteness => max density); VALUE rho_c IMPORTED/supplied (QG14: bounds no
+native cutoff). TQMQG382 CLASSIFICATION: DERIVED (mechanism/existence) with imported scale; saturation is not a
+hand-inserted assumption. Completes chain: discreteness -> saturation (QG38) -> Poisson profile (QG36) -> regular
+BH; tensor psi remains the one new primitive (QG37). Report: Docs/Research/TQMQG_SaturationOrigin.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.
