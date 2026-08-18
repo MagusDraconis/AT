@@ -8016,6 +8016,15 @@ reduction), NOT pure UV completion (graviton spin-2 d.o.f. exists at ALL scales,
 + strong-field correction + all-scale tensor sector. It regularizes nothing TQM left divergent (core already
 regular) and changes only the Einstein sector (QG32). Report: Docs/Research/TQMQG_TRMasUVCompletion.md.
 
+**TQM-QG Phase 34 (Identify the irreducible TRM ingredient) — COMPLETED (3/3 tests pass; 105/105 TQM-QG verified):**
+Question: which single mathematical ingredient is responsible for TRM's successes (redshift, regular BH, weak-field
+GR)? Added IrreducibleTRMIngredient. TQMQG340 Meff=e^Phi-1, kernel n=e^Phi, temporal-rate psi are ONE object
+(n=1+Meff). TQMQG341 removal analysis: redshift needs NO psi (TQM g_00=-rho^(2/d) already gives it);
+weak-field GR + regular BH need psi; removing psi kills 2/3, removing UV cutoff kills 0/3. TQMQG342 CLASSIFICATION:
+ESSENTIAL=3 (psi under three names but ONE object), SECONDARY=0, REDUNDANT=1 (UV cutoff scale). IRREDUCIBLE
+INGREDIENT = the temporal-rate modification psi (non-conformal factor); Meff/kernel are the same object; UV cutoff
+is decorative. Report: Docs/Research/TQMQG_IrreducibleTRMIngredient.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.

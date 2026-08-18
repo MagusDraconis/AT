@@ -625,6 +625,11 @@ OPEN/WEAK: matter emergence + dynamics.
 - reduces exactly to TQM in the IR (e^{2ψ}→1); departure grows in the strong field; core stays regular
 - graviton d.o.f. is all-scale (not UV-confined); changes only the Einstein sector
 
+### TQM-QG34: Irreducible TRM Ingredient (TQM-QG Phase 34)
+**Status:** Complete (ψ is the single ingredient). M_eff/kernel/temporal-rate are one object.
+- redshift needs no ψ (TQM g_00 provides it); weak-field GR + regular BH need ψ; UV cutoff is REDUNDANT
+- irreducible ingredient = the non-conformal ψ factor
+
 ---
 
 ## Overall Statistics
@@ -636,8 +641,8 @@ OPEN/WEAK: matter emergence + dynamics.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 34 | Complete |
-| **Total** | **141** | |
+| TQM-QG | 35 | Complete |
+| **Total** | **142** | |
 
 ## Key Unsolved Problems
 
