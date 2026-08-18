@@ -8144,6 +8144,14 @@ POSTULATE — not forced, contingent (GW observation), preferred form only, prim
 universe demonstrably has spin-2 GWs + light bending which the scalar sector cannot produce; psi is the minimal
 new postulate, the second and final primitive. Report: Docs/Research/TQMQG_WhyPsiExists.md.
 
+**TQM-QG Phase 48 (GW observation audit) — COMPLETED (3/3 tests pass; 147/147 TQM-QG verified):**
+Question: what is directly observed vs inferred in GW data? Added GWObservationAudit over 4 layers. TQMQG480:
+detector-signal DIRECT (raw strain h(t)), polarization-reconstruction MODEL-DEPENDENT, model-assumptions
+MODEL-DEPENDENT (GR templates), spin-assignment MODEL-DEPENDENT -> 1 DIRECT / 3 MODEL-DEPENDENT. TQMQG481 spin-2
+is RECONSTRUCTED, not directly measured (only the strain is direct). TQMQG482 refines QG47: psi is justified by an
+INFERENCE (model-dependent reconstruction), not a raw measurement; psi is a model-consistent postulate, one
+model-deep, not directly-forced. Report: Docs/Research/TQMQG_GWObservationAudit.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.

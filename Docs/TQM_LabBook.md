@@ -695,6 +695,11 @@ OPEN/WEAK: matter emergence + dynamics.
 - scalar universe self-consistent; ψ added for observational completeness (light bending + GWs)
 - ψ = the minimal new postulate, the second and final primitive
 
+### TQM-QG48: GW Observation Audit (TQM-QG Phase 48)
+**Status:** Complete (spin-2 reconstructed). Only the strain signal is direct.
+- polarization/templates/spin-2 are MODEL-DEPENDENT; ψ justified by an inference, not a raw measurement
+- ψ is a model-consistent postulate, one model-deep
+
 ---
 
 ## Overall Statistics
@@ -706,8 +711,8 @@ OPEN/WEAK: matter emergence + dynamics.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 48 | Complete |
-| **Total** | **155** | |
+| TQM-QG | 49 | Complete |
+| **Total** | **156** | |
 
 ## Key Unsolved Problems
 
