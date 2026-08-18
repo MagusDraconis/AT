@@ -906,6 +906,12 @@ OPEN/WEAK: matter emergence + dynamics.
 - curvature/flux lives on faces (derived), but family/color/mass already live on nodes/links (QG81/QG78/QG84)
 - higher cells are IRRELEVANT for the unresolved SM structure
 
+### TQM-QG88: Origin of Parameter Values (TQM-QG Phase 88)
+**Status:** Complete (PARTIAL CONSTRAINT). Stability/RG bound values; no full selection.
+- entropy extremization, information minimization, and criticality are NOT native selection principles
+- stability IS native (bounds ranges: λ>0, positive m^2); RG attractors ARE native (asymptotic freedom) and relate couplings
+- PARTIAL CONSTRAINT: values are bounded/related, not fully selected
+
 ---
 
 ## Overall Statistics
@@ -917,8 +923,8 @@ OPEN/WEAK: matter emergence + dynamics.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 88 | Complete |
-| **Total** | **195** | |
+| TQM-QG | 89 | Complete |
+| **Total** | **196** | |
 
 ## Key Unsolved Problems
 

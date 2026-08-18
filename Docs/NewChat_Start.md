@@ -8462,6 +8462,14 @@ index (QG81), color connection (QG78), and Higgs ρ (QG84) already live on nodes
 IRRELEVANT — higher cells host derived curvature but cannot resolve structure already on nodes/links. Report:
 Docs/Research/TQMQG_FacesAndVolumes.md.
 
+**TQM-QG Phase 88 (Origin of parameter values) — COMPLETED (3/3 tests pass; 267/267 TQM-QG verified):**
+Question: can dynamical selection principles determine preferred parameter values? Added ParameterValueSelection.
+TQMQG880 entropy extremization is NOT native; stability IS native and bounds parameter ranges (vacuum stability
+λ>0, positive m^2). TQMQG881 information minimization and criticality are NOT native; RG attractors ARE native
+(asymptotic freedom) and relate/constrain couplings, but no principle fully selects the specific 19 numbers.
+TQMQG882 CLASSIFICATION: PARTIAL CONSTRAINT — stability bounds ranges, RG relates couplings, values stay free.
+Report: Docs/Research/TQMQG_ParameterValueSelection.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.
