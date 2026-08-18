@@ -8454,6 +8454,14 @@ TQMQG861 the COUNT (19) is structurally fixed (gauge dims + reps + family index)
 entropy/minimal-description selection is NOT native (would be an additional postulate). TQMQG862 CLASSIFICATION:
 PARTIAL — count + form are constrained; values remain free. Report: Docs/Research/TQMQG_ParameterOriginAudit.md.
 
+**TQM-QG Phase 87 (Role of higher-dimensional network structure) — COMPLETED (3/3 tests pass; 264/264 TQM-QG):**
+Question: can unresolved SM structure live on faces/volumes rather than nodes/links? Added FacesAndVolumes.
+TQMQG870 faces (2-cells) are closed cycles of links and volumes are composites — higher cells are DERIVED, adding
+no independent dof. TQMQG871 curvature/magnetic flux lives on faces (derived from link holonomies), but family
+index (QG81), color connection (QG78), and Higgs ρ (QG84) already live on nodes/links. TQMQG872 CLASSIFICATION:
+IRRELEVANT — higher cells host derived curvature but cannot resolve structure already on nodes/links. Report:
+Docs/Research/TQMQG_FacesAndVolumes.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.

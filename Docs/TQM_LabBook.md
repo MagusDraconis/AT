@@ -900,6 +900,12 @@ OPEN/WEAK: matter emergence + dynamics.
 - parameter COUNT (19) is structurally fixed; entropy/minimal-description selection is NOT native
 - PARTIAL: count + form constrained; values remain free
 
+### TQM-QG87: Role of Higher-Dimensional Network Structure (TQM-QG Phase 87)
+**Status:** Complete (IRRELEVANT). Faces/volumes are derived, not independent.
+- a face is a closed cycle of links; a volume is a composite of faces — higher cells add no independent dof
+- curvature/flux lives on faces (derived), but family/color/mass already live on nodes/links (QG81/QG78/QG84)
+- higher cells are IRRELEVANT for the unresolved SM structure
+
 ---
 
 ## Overall Statistics
@@ -911,8 +917,8 @@ OPEN/WEAK: matter emergence + dynamics.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 87 | Complete |
-| **Total** | **194** | |
+| TQM-QG | 88 | Complete |
+| **Total** | **195** | |
 
 ## Key Unsolved Problems
 
