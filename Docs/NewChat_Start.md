@@ -8519,6 +8519,14 @@ eigenvalues is a PLAUSIBLE analogy (spectral gap → mass, eigenvectors → mixi
 identified whose spectrum equals the SM parameters. TQMQG942 CLASSIFICATION: PARTIAL RELATION — spectra exist,
 quantization plausible, mapping speculative (not derived). Report: Docs/Research/TQMQG_ParameterEigenvalues.md.
 
+**TQM-QG Phase 95 (Global resonance origin of parameters) — COMPLETED (3/3 tests pass; 288/288 TQM-QG verified):**
+Question: can masses/couplings/mixing be interpreted as stable global resonance modes? Added
+NetworkResonanceParameters. TQMQG950 the network HAS normal modes, and link states (ρ, ψ, θ, S, J) resonate at
+eigenfrequencies. TQMQG951 mass = resonance frequency (E = mc² = ħω) is a structural analogy; a finite network
+gives a discrete spectrum so quantization is natural, but no NATIVE dynamics is identified whose spectrum equals
+the SM parameters. TQMQG952 CLASSIFICATION: PARTIAL RELATION — resonance modes exist, mapping speculative (not a
+full resonance origin). Report: Docs/Research/TQMQG_NetworkResonanceParameters.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.

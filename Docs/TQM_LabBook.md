@@ -948,6 +948,12 @@ OPEN/WEAK: matter emergence + dynamics.
 - parameters-as-eigenvalues is PLAUSIBLE (spectral gap → mass, eigenvectors → mixing), but no native operator is identified
 - PARTIAL RELATION: analogy real, derivation absent
 
+### TQM-QG95: Global Resonance Origin of Parameters (TQM-QG Phase 95)
+**Status:** Complete (PARTIAL RELATION). Resonance modes exist; mapping speculative.
+- network HAS normal modes; link states resonate at eigenfrequencies; actualization has native frequency (energy = ħω)
+- mass = resonance frequency (E = mc² = ħω) is a structural analogy; discrete spectrum makes quantization natural
+- no native dynamics identified whose spectrum equals the SM params — PARTIAL RELATION, not resonance origin
+
 ---
 
 ## Overall Statistics
@@ -959,8 +965,8 @@ OPEN/WEAK: matter emergence + dynamics.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 95 | Complete |
-| **Total** | **202** | |
+| TQM-QG | 96 | Complete |
+| **Total** | **203** | |
 
 ## Key Unsolved Problems
 
