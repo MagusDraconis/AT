@@ -8294,6 +8294,14 @@ gauge-invariant, |e^(i theta)|=1. TQMQG651 double-slit |e^(i theta1)+e^(i theta2
 interference naturally recovered from link phases; caveat: the U(1) phase is the new primitive (QG62), so it
 emerges GIVEN the phase. Report: Docs/Research/TQMQG_InterferenceFromLinks.md.
 
+**TQM-QG Phase 66 (Origin of spin-1/2) — COMPLETED (3/3 tests pass; 201/201 TQM-QG verified):**
+Question: can fermionic spin-1/2 emerge from network structure? Added OriginOfSpinHalf. TQMQG660 network natively
+hosts integer spins (0 nodes, 2 links, 1 gauge); spin-1/2 is half-integer spinor (SU(2) double cover); link
+orientation gives only a Z2 sign. TQMQG661 spinor = section of a spin bundle (double cover), not derivable from
+scalar+rank-2. TQMQG662 CLASSIFICATION: REQUIRES NEW PRIMITIVE (compatible via a spin structure, not derivable) —
+fermions need a new spin-1/2 primitive; completes matter picture (gravity spin-0+2, gauge spin-1 hosted; fermions
+not). Report: Docs/Research/TQMQG_OriginOfSpinHalf.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.

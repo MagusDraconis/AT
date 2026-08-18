@@ -785,6 +785,11 @@ OPEN/WEAK: matter emergence + dynamics.
 - path amplitude e^(iΣθ); double-slit 2+2cos(Δθ); Born rule |amplitude|²; loop holonomies
 - caveat: the U(1) phase is the new primitive (QG62)
 
+### TQM-QG66: Origin of Spin-1/2 (TQM-QG Phase 66)
+**Status:** Complete (REQUIRES NEW PRIMITIVE). Fermions are spinors, not tensors.
+- integer spins native (0/2/1); spin-1/2 needs a double cover (SU(2) spin structure)
+- compatible via a spin structure, not derivable; fermions need a new primitive
+
 ---
 
 ## Overall Statistics
@@ -796,8 +801,8 @@ OPEN/WEAK: matter emergence + dynamics.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 66 | Complete |
-| **Total** | **173** | |
+| TQM-QG | 67 | Complete |
+| **Total** | **174** | |
 
 ## Key Unsolved Problems
 
