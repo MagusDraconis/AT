@@ -800,6 +800,10 @@ OPEN/WEAK: matter emergence + dynamics.
 - one causal network whose complete link carries four irreducible sectors (ρ/ψ/θ/S)
 - progression QG55 → QG64 → QG68: one primitive, four sectors
 
+### TQM-QG69: First Unique Prediction (TQM-QG Phase 69)
+**Status:** Complete (UNIQUE). Network discreteness is the first prediction.
+- common granularity scale for all four sectors, absent from GR + SM; testable + falsifiable (free scale caveat)
+
 ---
 
 ## Overall Statistics
@@ -811,8 +815,8 @@ OPEN/WEAK: matter emergence + dynamics.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 69 | Complete |
-| **Total** | **176** | |
+| TQM-QG | 70 | Complete |
+| **Total** | **177** | |
 
 ## Key Unsolved Problems
 
