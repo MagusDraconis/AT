@@ -942,6 +942,12 @@ OPEN/WEAK: matter emergence + dynamics.
 - global consistency strongly reduces metric freedom, but SM parameters are only compatibly encoded (QG91)
 - PARTIAL REDUCTION: geometric strong, SM parameter reduction weak
 
+### TQM-QG94: Parameters as Network Eigenvalues (TQM-QG Phase 94)
+**Status:** Complete (PARTIAL RELATION). Spectra exist; mapping speculative.
+- loop/consistency equations form a system; network HAS spectra (graph Laplacian) and stable-mode eigenfrequencies
+- parameters-as-eigenvalues is PLAUSIBLE (spectral gap → mass, eigenvectors → mixing), but no native operator is identified
+- PARTIAL RELATION: analogy real, derivation absent
+
 ---
 
 ## Overall Statistics
@@ -953,8 +959,8 @@ OPEN/WEAK: matter emergence + dynamics.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 94 | Complete |
-| **Total** | **201** | |
+| TQM-QG | 95 | Complete |
+| **Total** | **202** | |
 
 ## Key Unsolved Problems
 

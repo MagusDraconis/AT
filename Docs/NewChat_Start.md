@@ -8511,6 +8511,14 @@ so their freedom is only partially reduced (narrowed region, correlations). TQMQ
 REDUCTION — geometric freedom collapses strongly; SM parameter freedom narrows weakly. Report:
 Docs/Research/TQMQG_GlobalConsistency.md.
 
+**TQM-QG Phase 94 (Parameters as network eigenvalues) — COMPLETED (3/3 tests pass; 285/285 TQM-QG verified):**
+Question: can masses/couplings/mixing emerge as eigenvalues of global network consistency? Added ParameterEigenvalues.
+TQMQG940 loop closure and global metric consistency form a system of equations (the arena for eigenvalues).
+TQMQG941 the network HAS spectra (graph Laplacian) and stable normal-mode eigenfrequencies, so parameters-as-
+eigenvalues is a PLAUSIBLE analogy (spectral gap → mass, eigenvectors → mixing), but no NATIVE operator is
+identified whose spectrum equals the SM parameters. TQMQG942 CLASSIFICATION: PARTIAL RELATION — spectra exist,
+quantization plausible, mapping speculative (not derived). Report: Docs/Research/TQMQG_ParameterEigenvalues.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.
