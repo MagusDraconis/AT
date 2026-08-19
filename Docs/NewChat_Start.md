@@ -8591,6 +8591,60 @@ MercuryRevalidation (real PPN computation from Mercury orbital elements). TQMQG1
 MATCH (via the ψ spin-2 graviton) — perihelion is a tensor observable the scalar-only sector cannot reproduce,
 confirming ψ as the graviton. Report: Docs/Research/TQMQG_MercuryRevalidation.md.
 
+**TQM-QG Phase 104 (Network Spectrum) — COMPLETED (3/3 tests pass; 315/315 TQM-QG verified; COMPUTATIONAL):**
+Question: for a concrete causal network, what are the eigenvalues of the native network operator? Added
+NetworkSpectrum (computes spectra of the deterministic 1+1D causal-set grid). TQMQG1040 the concrete network
+possesses a real adjacency spectrum (bipartite-symmetric, spectral radius ≤ max degree) and a PSD graph
+Laplacian with a single zero mode and spectral gap λ_2=0.099. TQMQG1041 the actualization operator ρ⁻¹Lρ⁻¹
+(ρ=causal counting density, QG89) is PSD with the same connectivity; the network has 90 STABLE normal-mode
+frequencies ω=√λ (monotone, span 10.7) and discrete spectral ratios — a genuine hierarchical spectrum.
+TQMQG1042 CLASSIFICATION: PARTIAL MATCH — network spectra are discrete + hierarchical (structural analogy to SM
+mass hierarchies) but NO numerical correspondence: best ratio match to leptons is ~16× off, to quarks 8.6%
+(>1%), confirming QG94/95 (spectra exist, mapping speculative) with a real computation. Report:
+Docs/Research/TQMQG_NetworkSpectrum.md.
+
+**TQM-QG Phase 105 (Spectrum robustness audit) — COMPLETED (3/3 tests pass; 318/318 TQM-QG verified; COMPUTATIONAL):**
+Question: are the QG104 spectral ratios stable under changes of network size and topology? Added
+SpectrumRobustness (causal grids at 91/200/500 events + aspect variant + deterministic link removal).
+TQMQG1050 the hierarchy persists at ALL sizes (span 10.7→20.4→19.9), the spectral gap shrinks with size
+(Weyl regime λ_2→0), and low-mode ratio RMS deviation stays ≤ 10.8%. TQMQG1051 topology perturbations at
+fixed N: aspect-ratio change → 11.9% deviation, deterministic link removal 5/10/20% → ≤ 3.8%, hierarchy
+persists (span > 5). TQMQG1052 CLASSIFICATION: ROBUST — low-mode ratios stable under size + topology to
+~12%, but normalized shape drifts with size (KS > 0.1, bulk fills in via Weyl law), so NOT UNIVERSAL and NOT
+RANDOM. Report: Docs/Research/TQMQG_SpectrumRobustness.md.
+
+**TQM-QG Phase 106 (Network spectral classes) — COMPLETED (3/3 tests pass; 321/321 TQM-QG verified; COMPUTATIONAL):**
+Question: does the network possess distinct spectral classes corresponding to different stable network states?
+Added SpectralClasses (5 topology classes: square/tall grids N=91, grids N=200/500, 2D threshold graph).
+TQMQG1060 distinct topology classes give DISTINCT normalized spectra (KS 0.075–0.135 vs square; same-size tall
+variant KS=0.10) — MULTIPLE spectral classes, no single universal shape. TQMQG1061 the stable modes group into
+OCTAVE-BAND mode families (frequency doubling, the native per-octave A_k structure of QG00): square grid has 4
+families (2/7/55/26 modes), every topology class has ≥ 3 — the spectrum is not a continuum. TQMQG1062 stable
+branches: octave-family count persists across all topology classes (4–5); parameter-family analog: SM 3
+generations (QG80/81 postulate) ↔ network 4–5 octave families — structural analog, count not derived.
+TQMQG1062 CLASSIFICATION: FAMILY STRUCTURE — distinct classes + internal octave families with stable branches.
+Report: Docs/Research/TQMQG_SpectralClasses.md.
+
+**TQM-QG Phase 107 (Family structure robustness) — COMPLETED (3/3 tests pass; 324/324 TQM-QG verified; COMPUTATIONAL):**
+Question: are spectral families a generic feature of causal networks? Added FamilyStructureRobustness (ER
+random graphs with fixed seeds, causal grids, perturbed networks, sparse/dense threshold graphs).
+TQMQG1070 causal grids ALWAYS have ≥4 octave families; sparse ER graphs show 2–3 (families not accidental to
+grid) but dense ER (p≥0.2) collapse to 1 — family count tracks spectral hierarchy span, eroded by density.
+TQMQG1071 perturbed networks (link removal 5–20%) keep 4–5 families (100% ≥3); 2D threshold graphs all ≥3.
+TQMQG1072 statistics over 30 networks: causal class 100% ≥3, overall 80% ≥3, min 1 (dense random collapse);
+TQMQG1072 CLASSIFICATION: ROBUST — families are a robust property of the CAUSAL class (not accidental, not
+universal). Report: Docs/Research/TQMQG_FamilyStructureRobustness.md.
+
+**TQM-QG Phase 108 (Family count statistics) — COMPLETED (3/3 tests pass; 327/327 TQM-QG verified; COMPUTATIONAL):**
+Question: what family counts are statistically preferred in causal networks? Added FamilyCountStatistics (77-graph
+deterministic ensemble: 60 ER random, 8 causal grids, 6 threshold, 3 perturbed). TQMQG1080 family-count
+distribution is BROAD (1–5 octave families): modal = 1 (28.6%), N=3 = 26%, N=4 = 20.8%, N=5 = 2.6%, mean 2.47.
+TQMQG1081 hierarchy span median 3.85; across the mixed ensemble the count is DENSITY-dominated (r=0.06 with ln N)
+but WITHIN causal grids it grows with size (r=0.69, count ≈ ½log₂N). TQMQG1082 CLASSIFICATION: WEAK PREFERENCE —
+N=3 is common (26%) but NOT the dominant mode (modal = 1); the SM 3-generation count is a size/density-window
+phenomenon, not a derived universal count (consistent with QG80/81). Report:
+Docs/Research/TQMQG_FamilyCountStatistics.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.

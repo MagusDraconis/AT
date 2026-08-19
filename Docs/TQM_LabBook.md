@@ -1002,6 +1002,46 @@ OPEN/WEAK: matter emergence + dynamics.
 - ρ-only conformal γ=−1, β=+1 → factor −1/3 → RETROGRADE −14.33 "/century (FAIL)
 - ρ+ψ unified restores γ=β=+1 → +42.98 "/century (MATCH) — confirms ψ as the graviton sector
 
+### TQM-QG104: Network Spectrum (TQM-QG Phase 104)
+**Status:** Complete (PARTIAL MATCH). Native operator spectra computed on a concrete causal network.
+- concrete network = deterministic 1+1D causal-set grid (91 events, Hasse links); adjacency spectrum real &
+  bipartite-symmetric, graph Laplacian PSD with 1 zero mode, spectral gap λ_2=0.099
+- actualization operator ρ⁻¹Lρ⁻¹ (ρ = causal counting density, QG89) PSD, same connectivity; 90 STABLE
+  normal-mode frequencies ω=√λ (monotone, span 10.7), discrete spectral ratios — genuine hierarchical spectrum
+- vs SM hierarchies: best ratio match to leptons ~16× off, to quarks 8.6% (>1%) → NO numerical correspondence
+- PARTIAL MATCH: structural analogy (discrete + hierarchical) without value determination; confirms QG94/95
+
+### TQM-QG105: Spectrum Robustness Audit (TQM-QG Phase 105)
+**Status:** Complete (ROBUST). QG104 spectral ratios stable under size + topology.
+- hierarchy persists at 91/200/500 events (span 10.7 → 20.4 → 19.9); spectral gap shrinks with size (Weyl regime)
+- low-mode ratio RMS deviation: size ≤ 10.8%, aspect variant 11.9%, deterministic link removal ≤ 3.8%
+- normalized shape drifts with size (KS > 0.1 — bulk fills in), so ROBUST not UNIVERSAL, not RANDOM
+
+### TQM-QG106: Network Spectral Classes (TQM-QG Phase 106)
+**Status:** Complete (FAMILY STRUCTURE). Distinct spectral classes with octave-band mode families.
+- 5 topology classes (square/tall N=91, N=200/500 grids, 2D threshold graph) give DISTINCT normalized spectra
+  (KS 0.075–0.135) — multiple spectral classes, no single universal shape
+- stable modes group into OCTAVE-BAND mode families (frequency doubling, the QG00 per-octave A_k structure):
+  square grid = 4 families, every topology class ≥ 3 — the spectrum is not a continuum
+- stable branches: octave-family count persists (4–5) across topology; SM 3 generations (QG80/81 postulate) ↔
+  network 4–5 octave families = structural analog; FAMILY STRUCTURE, count not derived
+
+### TQM-QG107: Family Structure Robustness (TQM-QG Phase 107)
+**Status:** Complete (ROBUST). Spectral families robust in the causal class, density-dependent outside.
+- causal grids ALWAYS ≥4 octave families; perturbed grids (link removal 5–20%) keep 4–5 (100% ≥3)
+- sparse ER graphs show 2–3 (families NOT accidental to grid); dense ER (p≥0.2) collapse to 1 — the family
+  count tracks the spectral hierarchy span, which density erodes
+- 30-network population: causal class 100% ≥3, overall 80% ≥3, min 1 → ROBUST (not accidental, not universal)
+
+### TQM-QG108: Family Count Statistics (TQM-QG Phase 108)
+**Status:** Complete (WEAK PREFERENCE). Family count broadly distributed; N=3 common, not dominant.
+- 77-graph deterministic ensemble (60 ER random, 8 causal grids, 6 threshold, 3 perturbed): family-count
+  distribution broad (1–5), modal 1 (28.6%), N=3 26%, N=4 20.8%, N=5 2.6%, mean 2.47
+- hierarchy span median 3.85; count density-dominated across mixed ensemble (r=0.06 with ln N) but grows
+  with size WITHIN causal grids (r=0.69, count ≈ ½log₂N)
+- WEAK PREFERENCE: N=3 is common (26%) but not dominant — SM 3-generation count is a size/density-window
+  phenomenon, not a derived universal count (consistent with QG80/81)
+
 ---
 
 ## Overall Statistics
@@ -1013,8 +1053,8 @@ OPEN/WEAK: matter emergence + dynamics.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 104 | Complete |
-| **Total** | **211** | |
+| TQM-QG | 109 | Complete |
+| **Total** | **216** | |
 
 ## Key Unsolved Problems
 
