@@ -8842,6 +8842,21 @@ QG117 ladder: its range grows with energy while the discreteness (QG121 FUNDAMEN
 regime (radius > K) = local connectivity exceeding the link-length parameter, a candidate SM-hierarchy probe
 (consistent with QG118–120 family arc). Report: Docs/Research/TQMQG_EnergyDependentAttractors.md.
 
+**TQM-QG Phase 123 (Structure hierarchy from energy) — COMPLETED (3/3 tests pass; 375/375 TQM-QG verified; COMPUTATIONAL):**
+Question: does increasing actualization energy generate a hierarchy of network geometries from which particle
+sectors emerge? Added EnergyGeometryHierarchy (radius ladder per energy level, accessible class count per
+energy, family evolution, sector clustering of the full energy×feedback landscape, energy-ordering checks).
+TQMQG1230 the radius ladder GROWS with energy (2 rungs at E=1.0 → 9 at E=4.0) and the accessible spectral
+class count grows monotonically 2→8 — an energy-ordered sequence of geometry transitions. TQMQG1231 family
+structure (≥2 octave families) PERSISTS across the whole energy axis while the ladder expands; the full
+energy×feedback landscape decomposes into 12 SECTORS of which 10 are reachable ONLY above baseline energy —
+higher energy genuinely unlocks new sectors. TQMQG1232 energy-ordered hierarchy: classes grow monotonically
+AND high-energy-only sectors exist; TQMQG1232 CLASSIFICATION: SECTOR HIERARCHY — energy orders the network
+geometries into a discrete, energy-ordered hierarchy of sectors from which particle-sector-like structures
+could emerge (connects QG89 energy = actualization rate, QG117 discrete ladder, QG121 fundamental
+discreteness, QG122 energy order parameter, and the QG118–120 family arc). Report:
+Docs/Research/TQMQG_EnergyGeometryHierarchy.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.

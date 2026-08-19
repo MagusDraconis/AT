@@ -1186,6 +1186,15 @@ OPEN/WEAK: matter emergence + dynamics.
   FUNDAMENTAL) persists; radius > K regime = connectivity beyond link-length, candidate SM-hierarchy probe
   (consistent with QG118–120 family arc)
 
+### TQM-QG123: Structure Hierarchy from Energy (TQM-QG Phase 123)
+**Status:** Complete (SECTOR HIERARCHY). Energy orders network geometries into an energy-ordered sector hierarchy.
+- radius ladder GROWS with energy (2 rungs at E=1.0 → 9 at E=4.0); accessible spectral class count grows
+  monotonically 2→8 — energy-ordered geometry transitions
+- family structure (≥2 octave families) PERSISTS across the whole energy axis while the ladder expands
+- full energy×feedback landscape decomposes into 12 SECTORS, 10 reachable ONLY above baseline energy → higher
+  energy unlocks new sectors; classes grow monotonically AND high-energy-only sectors exist → SECTOR
+  HIERARCHY (connects QG89, QG117, QG121, QG122, and the QG118–120 family arc)
+
 ---
 
 ## Overall Statistics
@@ -1197,8 +1206,8 @@ OPEN/WEAK: matter emergence + dynamics.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 124 | Complete |
-| **Total** | **231** | |
+| TQM-QG | 125 | Complete |
+| **Total** | **232** | |
 
 ## Key Unsolved Problems
 
