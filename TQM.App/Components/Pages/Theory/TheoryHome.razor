@@ -1,0 +1,69 @@
+@page "/theory"
+@layout TheoryLayout
+@using MudBlazor
+@using TQM.App.Services
+
+<PageTitle>Theory Book · TQM</PageTitle>
+
+<div class="hero theory-hero">
+    <div class="hero-kicker">TQM Theory Book</div>
+    <div class="hero-title">THE Q-MODEL</div>
+    <div class="hero-subtitle">From Q to Cosmology</div>
+    <div class="hero-tagline">A structured theory book built from the 108 verified TQM-QG phases.</div>
+    <div class="hero-stats">
+        <div class="stat-tile"><div class="stat-value" style="color:#64B5F6">11</div><div class="stat-label">Parts</div></div>
+        <div class="stat-tile"><div class="stat-value" style="color:#81C784">@TheoryBookDataService.Sections.Sum(s => s.Chapters.Count)</div><div class="stat-label">Chapters</div></div>
+        <div class="stat-tile"><div class="stat-value" style="color:#FFB74D">108</div><div class="stat-label">Phases</div></div>
+        <div class="stat-tile"><div class="stat-value" style="color:#4DD0E1">324</div><div class="stat-label">Verified Tests</div></div>
+    </div>
+</div>
+
+<div class="page-section mt-4">
+    <h2 class="section-heading">Table of Contents</h2>
+    <MudGrid Spacing="3">
+        @for (int i = 0; i < TheoryBookDataService.Sections.Count; i++)
+        {
+            var sec = TheoryBookDataService.Sections[i];
+            var phaseIds = sec.Chapters.SelectMany(c => c.Results).SelectMany(r => r.PhaseIds).Distinct().Count();
+            <MudItem xs="12" md="6" lg="4">
+                <MudCard Elevation="1" Class="theory-card h-100 theory-toc-card" OnClick="() => GoTo(sec.Slug)">
+                    <MudCardContent>
+                        <div class="theory-toc-num">@((i + 1).ToString("00"))</div>
+                        <MudText Typo="Typo.subtitle1" Class="fw-bold theory-toc-title">@sec.Title</MudText>
+                        <MudText Typo="Typo.caption" Class="muted">
+                            @sec.Chapters.Count chapters · @phaseIds phases
+                        </MudText>
+                        <MudText Typo="Typo.body2" Class="muted mt-2">@sec.Summary</MudText>
+                    </MudCardContent>
+                </MudCard>
+            </MudItem>
+        }
+    </MudGrid>
+</div>
+
+<div class="page-section">
+    <h2 class="section-heading">Badge Legend</h2>
+    <MudCard Elevation="1" Class="theory-card">
+        <MudCardContent>
+            <span class="badge badge-derived">DERIVED</span> closed argument chain from primitives
+            &nbsp;&middot;&nbsp;
+            <span class="badge badge-compatible">COMPATIBLE</span> representable without contradiction
+            &nbsp;&middot;&nbsp;
+            <span class="badge badge-postulated">POSTULATED</span> empirical input
+            &nbsp;&middot;&nbsp;
+            <span class="badge badge-partial">PARTIAL</span> analogy / organizing structure
+            &nbsp;&middot;&nbsp;
+            <span class="badge badge-match">MATCH</span> matches observation
+            &nbsp;&middot;&nbsp;
+            <span class="badge badge-preferred">PREFERRED</span> uniquely selected form
+            &nbsp;&middot;&nbsp;
+            <span class="badge badge-falsified">FALSIFIED</span> excluded by the network
+        </MudCardContent>
+    </MudCard>
+</div>
+
+@code {
+    [Inject] private NavigationManager Nav { get; set; } = default!;
+
+    private void GoTo(string slug) => Nav.NavigateTo($"/theory/{slug}");
+}

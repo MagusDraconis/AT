@@ -59,6 +59,11 @@ a { color: inherit; }
 .badge-open { color: #FF9800; border-color: #FF9800; background: rgba(255,152,0,0.12); }
 .badge-falsified { color: #E57373; border-color: #E57373; background: rgba(229,115,115,0.12); }
 .badge-imported, .badge-partial, .badge-neutral { color: #90A4AE; border-color: #90A4AE; background: rgba(144,164,174,0.12); }
+/* Theory-book badge variants */
+.badge-compatible { color: #64B5F6; border-color: #64B5F6; background: rgba(100,181,246,0.12); }
+.badge-postulated { color: #FFB74D; border-color: #FFB74D; background: rgba(255,183,77,0.12); }
+.badge-match { color: #4DD0E1; border-color: #4DD0E1; background: rgba(77,208,225,0.12); }
+.badge-preferred { color: #BA68C8; border-color: #BA68C8; background: rgba(186,104,200,0.12); }
 
 /* Why TQM */
 .why-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1rem; }
@@ -132,3 +137,64 @@ a { color: inherit; }
 .heritage-node { cursor: pointer; }
 .heritage-node:hover rect { fill-opacity: 0.3; }
 .heritage-node text { fill: #E6EDF3; font-size: 13px; font-weight: 600; pointer-events: none; }
+
+/* ── Theory Book ─────────────────────────────────────────────────────────── */
+
+.theory-book-layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.theory-main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+.theory-topbar {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1.25rem;
+  background: #10141B;
+  border-bottom: 1px solid rgba(255,255,255,0.07);
+  position: sticky;
+  top: 0;
+  z-index: 20;
+}
+.theory-menu-btn { display: inline-flex; }
+.theory-brand { color: #E6EDF3; letter-spacing: 0.04em; }
+.theory-content {
+  padding: 1.75rem 1.5rem 3rem;
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+}
+.theory-nav-tree .mud-nav-link { font-size: 0.9rem; }
+.theory-nav-chapter { color: #C9D1D9; font-size: 0.85rem; }
+.theory-nav-overview { color: #64B5F6; font-size: 0.8rem; }
+
+.theory-hero { margin-bottom: 1.5rem; }
+.theory-section-header { margin-bottom: 2rem; }
+.theory-title { font-family: Georgia, 'Times New Roman', serif; }
+
+.theory-toc-card { cursor: pointer; transition: border-color 0.15s ease; }
+.theory-toc-card:hover { border-color: rgba(100,181,246,0.6); }
+.theory-toc-num {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #64B5F6;
+  line-height: 1;
+  margin-bottom: 0.35rem;
+}
+.theory-toc-title { margin-bottom: 0.2rem; }
+
+.theory-result-row { display: flex; gap: 0.75rem; align-items: flex-start; width: 100%; }
+.theory-result-body { flex: 1; min-width: 0; }
+
+/* mobile responsiveness */
+@media (max-width: 640px) {
+  .theory-content { padding: 1.25rem 1rem 2.5rem; }
+  .theory-brand { font-size: 0.85rem; }
+}

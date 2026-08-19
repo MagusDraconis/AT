@@ -1,0 +1,58 @@
+@namespace TQM.App.Components.Pages.Theory
+@using MudBlazor
+@using TQM.App.Services
+
+<MudNavMenu Class="px-2 py-3 theory-nav-tree">
+    <div class="nav-brand px-3 pb-3">
+        <MudText Typo="Typo.subtitle1" Class="fw-bold">TQM Theory Book</MudText>
+        <MudText Typo="Typo.caption" Class="muted">Phases → Chapters</MudText>
+    </div>
+
+    <MudNavLink Href="/theory" Match="NavLinkMatch.All">
+        <i class="bi bi-book nav-icon"></i>Book Home
+    </MudNavLink>
+
+    @foreach (var sec in TheoryBookDataService.Sections)
+    {
+        <MudNavGroup Title="@sec.Title" Expanded="IsExpanded(sec.Slug)" Icon="@SectionIcon(sec.Slug)">
+            @foreach (var chapter in sec.Chapters)
+            {
+                <MudNavLink Href="@SectionUrl(sec.Slug)">
+                    <span class="theory-nav-chapter">@chapter.Title</span>
+                </MudNavLink>
+            }
+        </MudNavGroup>
+    }
+</MudNavMenu>
+
+@code {
+    [Inject] private NavigationManager NavigationManager { get; set; } = default!;
+
+    private string _current = "";
+
+    protected override void OnParametersSet()
+    {
+        _current = NavigationManager.ToBaseRelativePath(NavigationManager.Uri).TrimStart('/').ToLowerInvariant();
+    }
+
+    private bool IsExpanded(string slug)
+        => _current.StartsWith($"theory/{slug}", StringComparison.OrdinalIgnoreCase);
+
+    private static string SectionUrl(string slug) => $"/theory/{slug}";
+
+    private static string SectionIcon(string slug) => slug switch
+    {
+        "introduction" => Icons.Material.Filled.Home,
+        "ontology" => Icons.Material.Filled.AccountTree,
+        "gravity" => Icons.Material.Filled.Explore,
+        "tensor" => Icons.Material.Filled.Waves,
+        "quantum" => Icons.Material.Filled.AutoAwesome,
+        "matter" => Icons.Material.Filled.BlurOn,
+        "gauge" => Icons.Material.Filled.PublishedWithChanges,
+        "cosmology" => Icons.Material.Filled.Public,
+        "parameters" => Icons.Material.Filled.Tune,
+        "predictions" => Icons.Material.Filled.Bolt,
+        "status" => Icons.Material.Filled.FactCheck,
+        _ => Icons.Material.Filled.MenuBook
+    };
+}

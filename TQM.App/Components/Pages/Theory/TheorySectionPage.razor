@@ -1,0 +1,19 @@
+@page "/theory/{Slug}"
+@layout TheoryLayout
+@using TQM.App.Services
+@using TQM.App.Components.Shared
+
+@if (Section is null)
+{
+    <MudAlert Severity="Severity.Warning" Class="mt-4">Section "@Slug" not found.</MudAlert>
+}
+else
+{
+    <TheorySectionView Section="@Section" />
+}
+
+@code {
+    [Parameter] public string Slug { get; set; } = "";
+
+    private TheorySection? Section => TheoryBookDataService.GetSection(Slug);
+}

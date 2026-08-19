@@ -1,0 +1,59 @@
+@namespace TQM.App.Components.Pages.Theory
+@inherits LayoutComponentBase
+@using MudBlazor
+@using TQM.App.Components.Shared
+
+<MudThemeProvider Theme="_theme" @bind-IsDarkMode="_isDark" />
+<MudPopoverProvider />
+<MudDialogProvider />
+<MudSnackbarProvider />
+
+<div class="theory-book-layout">
+    <MudDrawer @bind-Open="_drawerOpen"
+               Variant="DrawerVariant.Responsive"
+               Breakpoint="Breakpoint.Md"
+               Anchor="Anchor.Left"
+               ClipMode="DrawerClipMode.Always"
+               Elevation="1">
+        <TheoryNavigation />
+    </MudDrawer>
+
+    <MudMainContent Class="theory-main-content">
+        <div class="theory-topbar">
+            <MudIconButton Icon="@Icons.Material.Filled.Menu" Color="Color.Inherit" OnClick="@ToggleDrawer" Class="theory-menu-btn" />
+            <MudText Typo="Typo.subtitle2" Class="theory-brand">TQM Theory Book</MudText>
+            <MudSpacer />
+            <MudButton Variant="Variant.Text" Color="Color.Primary" Href="/" StartIcon="@Icons.Material.Filled.ArrowBack" Size="Size.Small">
+                Research Atlas
+            </MudButton>
+        </div>
+        <div class="theory-content">
+            @Body
+        </div>
+    </MudMainContent>
+</div>
+
+@code {
+    private bool _isDark = true;
+    private bool _drawerOpen = true;
+
+    private static readonly MudTheme _theme = new()
+    {
+        PaletteDark = new PaletteDark
+        {
+            Primary = "#64B5F6",
+            Secondary = "#81C784",
+            Tertiary = "#FFB74D",
+            Background = "#0E1116",
+            Surface = "#151A21",
+            AppbarBackground = "#10141B",
+            DrawerBackground = "#0C0F14",
+            DrawerText = "#E6EDF3",
+            DrawerIcon = "#8B949E",
+            TextPrimary = "#E6EDF3",
+            TextSecondary = "#8B949E"
+        }
+    };
+
+    private void ToggleDrawer() => _drawerOpen = !_drawerOpen;
+}
