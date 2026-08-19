@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="CSharpFITS" Version="1.1.0" />
+    <PackageReference Include="FITS.Lib" Version="5.0.381" />
     <PackageReference Include="MathNet.Numerics" Version="5.0.0" />
     <PackageReference Include="SixLabors.ImageSharp" Version="4.1.0" />
   </ItemGroup>

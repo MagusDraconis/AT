@@ -24,19 +24,33 @@ public class TQMQG_Phase101_DynamicParameterOriginTests : ResearchTestBase
         Thread.CurrentThread.CurrentCulture = CultureInfo.InvariantCulture;
         var sb = new StringBuilder();
         PrintHeader("TQMQG1010: do actualization patterns and attractors exist?");
+        var evidence = DynamicParameterOrigin.ComputeEvidence();
 
-        bool rates = DynamicParameterOrigin.ActualizationRatePatternsExist();
-        bool attractors = DynamicParameterOrigin.DynamicAttractorsExist();
+        bool rates = DynamicParameterOrigin.ActualizationRatePatternsExist(evidence);
+        bool attractors = DynamicParameterOrigin.DynamicAttractorsExist(evidence);
 
-        sb.AppendLine($"actualization-rate patterns exist (Q-event activity): {rates}");
-        sb.AppendLine($"dynamic RG attractors native: {attractors}");
+        sb.AppendLine("ASSUMPTIONS:");
+        sb.AppendLine("  A1: Evidence scores are normalized to [0,1].");
+        sb.AppendLine($"  A2: Presence threshold = {DynamicParameterOrigin.PresenceThreshold:F2}.");
         sb.AppendLine();
-        sb.AppendLine("CONCLUSION: the network has genuine dynamics — actualization activity and RG attractors — providing a");
-        sb.AppendLine("dynamic substrate for a parameter origin (vs static geometry).");
+
+        sb.AppendLine("INTERMEDIATE CALCULATIONS:");
+        sb.AppendLine($"  rate-pattern score = {evidence.ActualizationRatePatternScore:F3}");
+        sb.AppendLine($"  attractor score = {evidence.DynamicAttractorScore:F3}");
+        sb.AppendLine($"  rate-pattern pass? {evidence.ActualizationRatePatternScore:F3} >= {DynamicParameterOrigin.PresenceThreshold:F2} => {rates}");
+        sb.AppendLine($"  attractor pass? {evidence.DynamicAttractorScore:F3} >= {DynamicParameterOrigin.PresenceThreshold:F2} => {attractors}");
+        sb.AppendLine();
+
+        sb.AppendLine("FINAL CONCLUSION:");
+        sb.AppendLine($"  actualization-rate patterns exist: {rates}");
+        sb.AppendLine($"  dynamic RG attractors exist: {attractors}");
+        sb.AppendLine("  Therefore, dynamic substrate is present (not static-only structure).");
         Output.WriteLine(sb.ToString());
 
         Assert.True(rates, "rate patterns exist");
         Assert.True(attractors, "attractors exist");
+        Assert.True(evidence.ActualizationRatePatternScore >= DynamicParameterOrigin.PresenceThreshold);
+        Assert.True(evidence.DynamicAttractorScore >= DynamicParameterOrigin.PresenceThreshold);
     }
 
     // ── TQMQG1011: oscillatory states, metastable configurations, parameter families ─
@@ -47,25 +61,43 @@ public class TQMQG_Phase101_DynamicParameterOriginTests : ResearchTestBase
         Thread.CurrentThread.CurrentCulture = CultureInfo.InvariantCulture;
         var sb = new StringBuilder();
         PrintHeader("TQMQG1011: oscillatory states, metastable, parameter families");
+        var evidence = DynamicParameterOrigin.ComputeEvidence();
 
-        bool oscillatory = DynamicParameterOrigin.OscillatoryLinkStatesExist();
-        bool metastable = DynamicParameterOrigin.MetastableConfigurationsExist();
-        bool families = DynamicParameterOrigin.ParameterFamiliesFromDynamics();
-        bool selects = DynamicParameterOrigin.DynamicsSelectsValues();
+        bool oscillatory = DynamicParameterOrigin.OscillatoryLinkStatesExist(evidence);
+        bool metastable = DynamicParameterOrigin.MetastableConfigurationsExist(evidence);
+        bool families = DynamicParameterOrigin.ParameterFamiliesFromDynamics(evidence);
+        bool selects = DynamicParameterOrigin.DynamicsSelectsValues(evidence);
 
-        sb.AppendLine($"oscillatory link states exist: {oscillatory}");
-        sb.AppendLine($"metastable configurations exist: {metastable}");
-        sb.AppendLine($"dynamics can organize parameters into families: {families}");
-        sb.AppendLine($"native dynamics SELECTS specific SM values: {selects}");
+        sb.AppendLine("ASSUMPTIONS:");
+        sb.AppendLine($"  A1: Presence threshold = {DynamicParameterOrigin.PresenceThreshold:F2} for structure signals.");
+        sb.AppendLine($"  A2: Selection threshold = {DynamicParameterOrigin.SelectionThreshold:F2} for value-fixing claim.");
         sb.AppendLine();
-        sb.AppendLine("CONCLUSION: dynamics provides an organizing structure (frequencies, attractor families), but no native");
-        sb.AppendLine("dynamics selects the specific SM parameter values.");
+
+        sb.AppendLine("INTERMEDIATE CALCULATIONS:");
+        sb.AppendLine($"  oscillatory score = {evidence.OscillatoryStateScore:F3}");
+        sb.AppendLine($"  metastable score = {evidence.MetastableConfigurationScore:F3}");
+        sb.AppendLine($"  family-organization score = {evidence.ParameterFamilyOrganizationScore:F3}");
+        sb.AppendLine($"  value-selection score = {evidence.ValueSelectionScore:F3}");
+        sb.AppendLine($"  oscillatory pass? {evidence.OscillatoryStateScore:F3} >= {DynamicParameterOrigin.PresenceThreshold:F2} => {oscillatory}");
+        sb.AppendLine($"  metastable pass? {evidence.MetastableConfigurationScore:F3} >= {DynamicParameterOrigin.PresenceThreshold:F2} => {metastable}");
+        sb.AppendLine($"  families pass? {evidence.ParameterFamilyOrganizationScore:F3} >= {DynamicParameterOrigin.PresenceThreshold:F2} => {families}");
+        sb.AppendLine($"  selects values? {evidence.ValueSelectionScore:F3} >= {DynamicParameterOrigin.SelectionThreshold:F2} => {selects}");
+        sb.AppendLine();
+
+        sb.AppendLine("FINAL CONCLUSION:");
+        sb.AppendLine($"  oscillatory link states exist: {oscillatory}");
+        sb.AppendLine($"  metastable configurations exist: {metastable}");
+        sb.AppendLine($"  dynamics organizes parameter families: {families}");
+        sb.AppendLine($"  dynamics selects specific SM values: {selects}");
+        sb.AppendLine("  Therefore, dynamics provides organization without value selection.");
         Output.WriteLine(sb.ToString());
 
         Assert.True(oscillatory, "oscillatory states exist");
         Assert.True(metastable, "metastable states exist");
         Assert.True(families, "families organizable");
         Assert.False(selects, "dynamics does not select values");
+        Assert.True(evidence.ParameterFamilyOrganizationScore >= DynamicParameterOrigin.PresenceThreshold);
+        Assert.True(evidence.ValueSelectionScore < DynamicParameterOrigin.SelectionThreshold);
     }
 
     // ── TQMQG1012: classification ──────────────────────────────────────────────────
@@ -76,18 +108,28 @@ public class TQMQG_Phase101_DynamicParameterOriginTests : ResearchTestBase
         Thread.CurrentThread.CurrentCulture = CultureInfo.InvariantCulture;
         var sb = new StringBuilder();
         PrintHeader("TQMQG1012: NO RELATION / PARTIAL RELATION / DYNAMIC ORIGIN?");
+        var evidence = DynamicParameterOrigin.ComputeEvidence();
+        string classification = DynamicParameterOrigin.Classify(evidence);
 
-        sb.AppendLine($"CLASSIFICATION: {DynamicParameterOrigin.Classify()}");
+        sb.AppendLine("ASSUMPTIONS:");
+        sb.AppendLine("  A1: Classification is derived from thresholded evidence flags.");
+        sb.AppendLine("  A2: DYNAMIC ORIGIN requires all structure flags true and value-selection true.");
         sb.AppendLine();
-        sb.AppendLine("  • NOT NO RELATION: actualization dynamics, attractors, and oscillations are real network structure.");
-        sb.AppendLine("  • NOT DYNAMIC ORIGIN: no native dynamics is identified whose activity pattern equals the SM parameters.");
-        sb.AppendLine("  • PARTIAL RELATION: real dynamics + organizing structure, without value selection.");
+
+        sb.AppendLine("INTERMEDIATE CALCULATIONS:");
+        sb.AppendLine($"  structure flags: rates={DynamicParameterOrigin.ActualizationRatePatternsExist(evidence)}, attractors={DynamicParameterOrigin.DynamicAttractorsExist(evidence)}, oscillatory={DynamicParameterOrigin.OscillatoryLinkStatesExist(evidence)}, metastable={DynamicParameterOrigin.MetastableConfigurationsExist(evidence)}, families={DynamicParameterOrigin.ParameterFamiliesFromDynamics(evidence)}");
+        sb.AppendLine($"  value-selection flag: {DynamicParameterOrigin.DynamicsSelectsValues(evidence)}");
+        sb.AppendLine($"  computed classification: {classification}");
         sb.AppendLine();
-        sb.AppendLine("So network dynamics gives a PARTIAL RELATION to parameters (organizing structure, not dynamic origin).");
+
+        sb.AppendLine("FINAL CONCLUSION:");
+        sb.AppendLine("  • NOT NO RELATION: dynamic structure evidence passes threshold.");
+        sb.AppendLine("  • NOT DYNAMIC ORIGIN: value-selection evidence remains below threshold.");
+        sb.AppendLine("  • PARTIAL RELATION: organization exists without selecting SM values.");
         Output.WriteLine(sb.ToString());
 
-        Assert.Equal("PARTIAL RELATION", DynamicParameterOrigin.Classify());
-        Assert.True(DynamicParameterOrigin.ActualizationRatePatternsExist());
-        Assert.False(DynamicParameterOrigin.DynamicsSelectsValues());
+        Assert.Equal("PARTIAL RELATION", classification);
+        Assert.True(DynamicParameterOrigin.ActualizationRatePatternsExist(evidence));
+        Assert.False(DynamicParameterOrigin.DynamicsSelectsValues(evidence));
     }
 }
