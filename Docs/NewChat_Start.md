@@ -8583,6 +8583,14 @@ parameter correlations, but it is non-unique — nothing selects a unique soluti
 parameters. TQMQG1022 CLASSIFICATION: PARTIAL RELATION — coherent global organizing principle without value
 determination (not a solution-space origin). Report: Docs/Research/TQMQG_GlobalSolutionSpace.md.
 
+**TQM-QG Phase 103 (Mercury Perihelion Revalidation) — COMPLETED (3/3 tests pass; 312/312 TQM-QG verified; COMPUTATIONAL):**
+Question: does the unified network still recover Mercury's 42.98 "/century perihelion advance? Added
+MercuryRevalidation (real PPN computation from Mercury orbital elements). TQMQG1030 GR baseline γ=β=1 → factor 1 →
+42.98 "/century (matches observation). TQMQG1031 ρ-only conformal sector γ=−1, β=+1 → factor −1/3 → RETROGRADE
+−14.33 "/century (FAIL); ρ+ψ unified network restores γ=β=+1 → +42.98 "/century (MATCH). TQMQG1032 CLASSIFICATION:
+MATCH (via the ψ spin-2 graviton) — perihelion is a tensor observable the scalar-only sector cannot reproduce,
+confirming ψ as the graviton. Report: Docs/Research/TQMQG_MercuryRevalidation.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.

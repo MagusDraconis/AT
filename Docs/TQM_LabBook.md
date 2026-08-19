@@ -996,6 +996,12 @@ OPEN/WEAK: matter emergence + dynamics.
 - the solution space has a topology and induces parameter correlations, but is non-unique
 - PARTIAL RELATION: global organizing principle without value determination
 
+### TQM-QG103: Mercury Perihelion Revalidation (TQM-QG Phase 103)
+**Status:** Complete (MATCH). Unified network recovers 42.98 "/century via ψ (spin-2).
+- GR baseline γ=β=1 → factor 1 → 42.98 "/century (from Mercury orbital elements)
+- ρ-only conformal γ=−1, β=+1 → factor −1/3 → RETROGRADE −14.33 "/century (FAIL)
+- ρ+ψ unified restores γ=β=+1 → +42.98 "/century (MATCH) — confirms ψ as the graviton sector
+
 ---
 
 ## Overall Statistics
@@ -1007,8 +1013,8 @@ OPEN/WEAK: matter emergence + dynamics.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 103 | Complete |
-| **Total** | **210** | |
+| TQM-QG | 104 | Complete |
+| **Total** | **211** | |
 
 ## Key Unsolved Problems
 
