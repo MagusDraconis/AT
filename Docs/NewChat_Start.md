@@ -8669,6 +8669,17 @@ trade off → CLASSIFICATION: PARTIAL SELECTION — information capacity narrows
 not uniquely determine the physical network (consistent with QG109 stability + QG102 non-unique solution
 space). Report: Docs/Research/TQMQG_NetworkInformationSelection.md.
 
+**TQM-QG Phase 111 (Multi-objective network selection) — COMPLETED (3/3 tests pass; 336/336 TQM-QG verified; COMPUTATIONAL):**
+Question: can simultaneous optimization of stability, memory, information flow, causal depth, and
+actualization efficiency select a unique network class? Added MultiObjectiveSelection (Pareto front over the
+77-network ensemble). TQMQG1110 the Pareto-optimal front has 37 of 77 networks — the multi-objective optimum
+is not a single point. TQMQG1111 the five objectives CONFLICT: ER wins flow (2.24 vs 1.38), causal grids win
+depth (16 vs 5) and efficiency (0.374 vs 0.122); no network maximizes all five. TQMQG1112 the front spans ALL
+four classes (ER 78% of the front = its 78% of the ensemble) → CLASSIFICATION: NO SELECTION — adding more
+objectives (QG109 stability → QG110 info → QG111 multi-objective) WIDENS the ambiguity rather than resolving
+it; consistent with the QG102 non-unique solution space. Report:
+Docs/Research/TQMQG_MultiObjectiveSelection.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.

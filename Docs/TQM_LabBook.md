@@ -1060,6 +1060,15 @@ OPEN/WEAK: matter emergence + dynamics.
 - composite capacity functional (depth × memory × stable) strongly prefers the causal family (~2.5× ER), but
   many members + trade-offs → PARTIAL SELECTION, consistent with QG109 (stability) + QG102 (non-unique)
 
+### TQM-QG111: Multi-Objective Network Selection (TQM-QG Phase 111)
+**Status:** Complete (NO SELECTION). Pareto front spans all classes — objectives conflict.
+- five objectives (stability, memory, flow, causal depth, efficiency) computed over the 77-network ensemble;
+  Pareto-optimal front = 37 of 77 networks (not a single point)
+- objectives CONFLICT: ER wins flow (2.24 vs 1.38), causal grids win depth (16 vs 5) and efficiency (0.374 vs
+  0.122); no network maximizes all five
+- front spans ALL four classes (ER 78% of the front = its 78% of the ensemble) → NO SELECTION; adding more
+  objectives (QG109 → QG110 → QG111) widens the ambiguity, consistent with the QG102 non-unique solution space
+
 ---
 
 ## Overall Statistics
@@ -1071,8 +1080,8 @@ OPEN/WEAK: matter emergence + dynamics.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 111 | Complete |
-| **Total** | **218** | |
+| TQM-QG | 112 | Complete |
+| **Total** | **219** | |
 
 ## Key Unsolved Problems
 
