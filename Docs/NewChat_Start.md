@@ -8786,6 +8786,19 @@ robust while the total family COUNT is not (qualifies QG117 ATTRACTOR ORIGIN; co
 QG106–108 discreteness, QG109–117 parameter dependence). Report:
 Docs/Research/TQMQG_FamiliesFromAttractors.md.
 
+**TQM-QG Phase 119 (Local vs global attractor classes) — COMPLETED (3/3 tests pass; 363/363 TQM-QG verified; COMPUTATIONAL):**
+Question: do local observers sample only a subset of the network's attractor classes? Added
+LocalVsGlobalAttractors (global vs local radius ladder over the parameter plane, hidden-class check, local
+window patches, observable-vs-total family counts). TQMQG1190 the geometry-class ladder is IDENTICAL at every
+global size ({2, 6} for K=6, size-invariant) and FULLY ACCESSIBLE to every local horizon (16/24/32 reach all
+rungs; 2.25/2.06 vs 2.00 are finite-size distortions within tolerance). TQMQG1191 NO hidden geometry classes
+at any horizon, but the locally observable FAMILY COUNT is suppressed at every horizon (total grows 2→3→4 as
+N=48→96→192 while a fixed horizon-24 window saturates at 2 families). TQMQG1192 observable-vs-total: total 2/3/4
+vs local 2/2/2; TQMQG1192 CLASSIFICATION: LOCAL SUBSET — local observers lose no geometry class but the higher
+octave families (QG118 scaling) are suppressed beyond the local horizon; physically, an observable-universe
+horizon inside a larger network would see a fixed small family count (2–3) while the SM's 3-family structure
+at K=5/6 remains the locally observable one. Report: Docs/Research/TQMQG_LocalVsGlobalAttractors.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.

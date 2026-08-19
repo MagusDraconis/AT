@@ -1144,6 +1144,16 @@ OPEN/WEAK: matter emergence + dynamics.
   PARTIAL RELATION: class-dependent family structure partially emerges, size-independent discrete family
   spectrum not achieved (qualifies QG117; consistent with QG79/80, QG106–108, QG109–117)
 
+### TQM-QG119: Local vs Global Attractor Classes (TQM-QG Phase 119)
+**Status:** Complete (LOCAL SUBSET). Local observers lose family content, not geometry classes.
+- geometry-class ladder IDENTICAL at every global size ({2, 6} for K=6) and FULLY ACCESSIBLE to every local
+  horizon (16/24/32); no hidden stable classes (2.25/2.06 vs 2.00 = finite-size distortion)
+- locally observable family count SUPPRESSED at every horizon: total grows 2→3→4 as N=48→96→192 while a fixed
+  horizon-24 window saturates at 2 families
+- observable-vs-total: total 2/3/4 vs local 2/2/2 → LOCAL SUBSET: higher octave families (QG118 scaling)
+  suppressed beyond the local horizon; an observable-universe horizon would see a fixed small family count
+  (2–3), with the SM 3-family structure (K=5/6) as the locally observable one
+
 ---
 
 ## Overall Statistics
@@ -1155,8 +1165,8 @@ OPEN/WEAK: matter emergence + dynamics.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 120 | Complete |
-| **Total** | **227** | |
+| TQM-QG | 121 | Complete |
+| **Total** | **228** | |
 
 ## Key Unsolved Problems
 
