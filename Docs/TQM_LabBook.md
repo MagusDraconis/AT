@@ -1097,6 +1097,15 @@ OPEN/WEAK: matter emergence + dynamics.
 - distinct connectivity classes = 4 vs SM 3 (QG79/80) → PARTIAL RELATION (structural analog, no count
   determination; consistent with QG83 valence-3 coincidence + QG87 higher cells derived)
 
+### TQM-QG115: Structure from Content (TQM-QG Phase 115)
+**Status:** Complete (PARTIAL FEEDBACK). Content shapes structure; not full self-organization.
+- deterministic activity-driven model: active nodes create links, degree feeds back into activity; feedback
+  grows the network (130→357 links) and changes geometry (span 1.00→8.50) — Q-events and links are coupled
+- loop builds a bounded structured network; DIFFERENT content gives DIFFERENT geometry (concentrated 4
+  families / spread 3 / uniform 0 links) — structure-from-content in the weak sense
+- uniform featureless content produces NO structure (0 links) → PARTIAL FEEDBACK (content-driven, not
+  emergent from nothing)
+
 ---
 
 ## Overall Statistics
@@ -1108,8 +1117,8 @@ OPEN/WEAK: matter emergence + dynamics.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 115 | Complete |
-| **Total** | **222** | |
+| TQM-QG | 116 | Complete |
+| **Total** | **223** | |
 
 ## Key Unsolved Problems
 

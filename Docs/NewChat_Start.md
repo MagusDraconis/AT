@@ -8715,6 +8715,18 @@ classes = 4 vs SM 3 (QG79/80); TQMQG1142 CLASSIFICATION: PARTIAL RELATION — co
 discrete classes (structural analog) without determining the SM counts (consistent with QG83 valence-3
 coincidence + QG87 higher cells derived). Report: Docs/Research/TQMQG_3DConnectivityClasses.md.
 
+**TQM-QG Phase 115 (Structure from content) — COMPLETED (3/3 tests pass; 348/348 TQM-QG verified; COMPUTATIONAL):**
+Question: can the network emerge dynamically from its own activity (does content determine structure)? Added
+StructureFromContent (deterministic activity-driven model: active nodes create links, degree feeds back into
+activity, iterated). TQMQG1150 the feedback loop grows the network (130→357 links) and changes the geometry
+(span 1.00→8.50) — Q-events (activity) and links (structure) are genuinely coupled; activity-driven
+connectivity exists. TQMQG1151 the loop builds a bounded structured network (growth decelerates, span>1, ≥3
+families); DIFFERENT content gives DIFFERENT geometry (concentrated 4 families / spread 3 / uniform 0 links) —
+structure-from-content in the weak sense; but UNIFORM featureless content produces NO structure (0 links), so
+structure is content-driven, not emergent from nothing. TQMQG1152 CLASSIFICATION: PARTIAL FEEDBACK — content
+shapes structure via the feedback loop, but the network does not fully self-organize from its own activity
+alone. Report: Docs/Research/TQMQG_StructureFromContent.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.
