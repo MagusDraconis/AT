@@ -64,6 +64,17 @@ a { color: inherit; }
 .badge-postulated { color: #FFB74D; border-color: #FFB74D; background: rgba(255,183,77,0.12); }
 .badge-match { color: #4DD0E1; border-color: #4DD0E1; background: rgba(77,208,225,0.12); }
 .badge-preferred { color: #BA68C8; border-color: #BA68C8; background: rgba(186,104,200,0.12); }
+.badge-milestone { color: #FFB74D; border-color: #FFB74D; background: rgba(255,183,77,0.16); }
+
+/* Research News */
+.news-block { border-left: 2px solid rgba(100,181,246,0.5); padding-left: 1rem; }
+.news-label { color: #64B5F6; letter-spacing: 0.08em; }
+.news-keyresult { background: rgba(186,104,200,0.07); border: 1px solid rgba(186,104,200,0.25); border-radius: 8px; }
+.news-tagline { font-family: Georgia, 'Times New Roman', serif; font-style: italic; color: #C9D1D9; }
+.news-phase-row { padding: 0.6rem 0; border-bottom: 1px solid rgba(255,255,255,0.06); }
+.news-phase-row:last-child { border-bottom: none; }
+.news-phase-name { display: inline-block; font-weight: 700; margin-right: 0.6rem; }
+.news-report-link { display: inline-block; margin-top: 0.25rem; color: #64B5F6; font-size: 0.82rem; }
 
 /* Why TQM */
 .why-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1rem; }

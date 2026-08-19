@@ -1,0 +1,21 @@
+@page "/research-news"
+
+<PageTitle>Research News · TQM</PageTitle>
+
+<h2 class="section-heading">Research News</h2>
+<p class="muted">Latest breakthroughs from the TQM-QG unification program.</p>
+
+<div class="stat-row mb-4">
+    @foreach (var m in AtlasDataService.ResearchMilestones)
+    {
+        <div class="stat-tile">
+            <div class="stat-value" style="color:@m.Color">@m.Value</div>
+            <div class="stat-label">@m.Label</div>
+        </div>
+    }
+</div>
+
+@foreach (var item in AtlasDataService.ResearchNews)
+{
+    <ResearchNewsCard Item="@item" />
+}

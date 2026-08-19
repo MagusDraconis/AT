@@ -8,12 +8,15 @@
     private string CssClass => (Status ?? "").Trim().ToUpperInvariant() switch
     {
         "PASS" or "PASSED" or "RESOLVED" or "VERIFIED" => "badge-pass",
-        "DERIVED" or "FOUNDATION" => "badge-derived",
-        "REAL-UNDERIVED" or "PARTIAL" or "PARTIALLY RESOLVED" or "PARTIALLY VERIFIED" => "badge-real",
+        "DERIVED" or "FOUNDATION" or "STRUCTURE ORIGIN" or "ATTRACTOR ORIGIN" or "FAMILY ORIGIN" => "badge-derived",
+        "REAL-UNDERIVED" or "PARTIAL" or "PARTIALLY RESOLVED" or "PARTIALLY VERIFIED"
+            or "PARTIAL FEEDBACK" or "PARTIAL RELATION" or "PARTIAL SECTORING" or "PARTIAL FORMATION"
+            or "PARTIAL MATCH" or "PARTIAL SELECTION" or "DYNAMICAL" => "badge-real",
         "DRAWN" => "badge-drawn",
         "OPEN" => "badge-open",
         "FALSIFIED" => "badge-falsified",
         "IMPORTED" => "badge-imported",
+        "MILESTONE" => "badge-milestone",
         _ => "badge-neutral"
     };
 }

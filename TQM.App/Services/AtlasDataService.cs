@@ -150,6 +150,42 @@ public static class AtlasDataService
         ]),
     ];
 
+    public static IReadOnlyList<ResearchNewsModel> ResearchNews { get; } =
+    [
+        new(
+            "qg115-117-structure-from-actualization",
+            "Structure Emerges From Actualization",
+            "TQM-QG Breakthrough · Phases 115–117",
+            "Actualization patterns actively shape network geometry (QG115, PARTIAL FEEDBACK). Strong-feedback dynamics drives all tested content patterns toward a single universal geometry class (QG116, STRUCTURE ORIGIN). The universal attractor is DYNAMICAL — not accidental, not inevitable — and geometry is controlled by feedback/damping parameters (QG116b). Dynamic parameters then generate discrete attractor geometry classes (QG117, ATTRACTOR ORIGIN).",
+            "The activity→links→activity feedback loop of the QG115 model couples Q-events (activity) to structure (links). Weak feedback gives PARTIAL FEEDBACK (content shapes geometry, uniform content builds nothing). Sustained strong feedback (damping 0.2, feedback 0.7, K=6) drives every tested pattern to one universal geometry class — the N·K circulant, an exact fixed point (residual 0) with 100% basin and size universality (QG116b). The (feedback, damping) parameter plane maps to a discrete ladder of stable geometry classes (radius 2 and 6 for K=6) with sharp threshold at f/d ≈ 2.",
+            "For non-experts: we tested whether the network that underlies reality builds itself. It can — activity creates links, links feed back into activity. With strong feedback every starting pattern converges to the same geometry (a single universal attractor), and tuning two knobs (feedback strength and damping) produces a small set of distinct, stable geometries — the kind of discrete structure particle families would need.",
+            "The direction of explanation is reversed: Actualization → Structure → Physics (instead of Structure → Physics).",
+            "“Geometry is not primary. Geometry emerges from actualization.”",
+            true,
+            [
+                new("TQM-QG 115", "PARTIAL FEEDBACK",
+                    "Activity-driven feedback changes the geometry; content shapes structure (concentrated 4 families / spread 3 / uniform 0 links).",
+                    "https://github.com/MagusDraconis/TQM/blob/TQM_v1.1/Docs/Research/TQMQG_StructureFromContent.md"),
+                new("TQM-QG 116", "STRUCTURE ORIGIN",
+                    "Sustained self-reinforcing dynamics drives every activity pattern to the same geometry class (single universal attractor, 576 links, span 6.40).",
+                    "https://github.com/MagusDraconis/TQM/blob/TQM_v1.1/Docs/Research/TQMQG_ActualizationStructures.md"),
+                new("TQM-QG 116b", "DYNAMICAL",
+                    "The universal attractor is an exact stable fixed point (residual 0, 100% basin, size-universal) but its radius depends on the feedback/damping ratio — a dynamical selection, not an accident.",
+                    "https://github.com/MagusDraconis/TQM/blob/TQM_v1.1/Docs/Research/TQMQG_UniversalAttractor.md"),
+                new("TQM-QG 117", "ATTRACTOR ORIGIN",
+                    "The parameter plane generates discrete attractor geometry classes (radius 2↔6, sharp threshold f/d≈2) — distinct stable geometries controlled by dynamics parameters.",
+                    "https://github.com/MagusDraconis/TQM/blob/TQM_v1.1/Docs/Research/TQMQG_AttractorParameterOrigin.md"),
+            ]),
+    ];
+
+    public static IReadOnlyList<MilestoneCounterModel> ResearchMilestones { get; } =
+    [
+        new("119", "TQM-QG Phases", "#4DD0E1"),
+        new("357", "Tests Passing", "#81C784"),
+        new("4", "Structure-From-Actualization Phases", "#BA68C8"),
+        new("1", "Milestone Breakthrough", "#FFB74D"),
+    ];
+
     public static IReadOnlyList<TimelineEventModel> Timeline { get; } =
     [
         new("TRM", "Temporal Resonance Model",
@@ -164,6 +200,8 @@ public static class AtlasDataService
             "Framing corrections, not retracted physics: 6 resolved, 6 partially resolved, 0 open (Round 2)."),
         new("TQM v1.0", "Release",
             "The compressed theory: two primitives plus one number; READY AS A FOUNDATION MONOGRAPH."),
+        new("TQM-QG 115–117", "Structure emerges from actualization",
+            "Actualization patterns shape network geometry (QG115, PARTIAL FEEDBACK); strong feedback drives every pattern to one universal geometry class (QG116, STRUCTURE ORIGIN); the attractor is dynamical, not accidental (QG116b); dynamic parameters generate discrete attractor geometry classes (QG117, ATTRACTOR ORIGIN) — the direction of explanation reverses: Actualization → Structure → Physics."),
     ];
 
     public static IReadOnlyList<HostileReviewModel> HostileReviews { get; } =

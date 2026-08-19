@@ -1,0 +1,58 @@
+@namespace TQM.App.Components.Shared
+@using TQM.App.Models
+
+@if (Item.IsMilestone)
+{
+    <div class="mb-2">
+        <span class="badge badge-milestone">MAJOR MILESTONE</span>
+    </div>
+}
+
+<MudCard Elevation="1" Class="theory-card h-100">
+    <MudCardContent>
+        <MudText Typo="Typo.caption" Color="Color.Primary" Class="text-uppercase fw-bold">@Item.Kicker</MudText>
+        <MudText Typo="Typo.subtitle1" Class="fw-bold">@Item.Title</MudText>
+
+        <MudText Typo="Typo.body2" Class="muted mt-2">@Item.Summary</MudText>
+
+        <div class="news-block mt-4">
+            <MudText Typo="Typo.caption" Class="text-uppercase fw-bold news-label">Technical summary</MudText>
+            <MudText Typo="Typo.body2" Class="mt-1">@Item.TechnicalSummary</MudText>
+        </div>
+
+        <div class="news-block mt-4">
+            <MudText Typo="Typo.caption" Class="text-uppercase fw-bold news-label">Plain-language summary</MudText>
+            <MudText Typo="Typo.body2" Class="mt-1">@Item.NonTechnicalSummary</MudText>
+        </div>
+
+        <MudCard Elevation="0" Class="news-keyresult mt-4">
+            <MudCardContent>
+                <MudText Typo="Typo.caption" Class="text-uppercase fw-bold news-label">Key result</MudText>
+                <MudText Typo="Typo.body2" Class="mt-1">@Item.KeyResult</MudText>
+            </MudCardContent>
+        </MudCard>
+
+        <MudText Typo="Typo.subtitle2" Class="fw-bold news-tagline mt-4">
+            <i class="bi bi-quote"></i>@Item.VisualTagline
+        </MudText>
+
+        <div class="news-phases mt-4">
+            <MudText Typo="Typo.caption" Class="text-uppercase fw-bold news-label">Linked phases</MudText>
+            @foreach (var p in Item.Phases)
+            {
+                <div class="news-phase-row">
+                    <span class="news-phase-name">@p.Phase</span>
+                    <StatusBadge Status="@p.Classification" />
+                    <MudText Typo="Typo.body2" Class="muted">@p.Result</MudText>
+                    <a href="@p.ReportUrl" target="_blank" rel="noopener" class="news-report-link">
+                        Report <i class="bi bi-box-arrow-up-right"></i>
+                    </a>
+                </div>
+            }
+        </div>
+    </MudCardContent>
+</MudCard>
+
+@code {
+    [Parameter, EditorRequired] public ResearchNewsModel Item { get; set; } = null!;
+}
