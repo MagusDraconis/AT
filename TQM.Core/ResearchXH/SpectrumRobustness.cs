@@ -129,6 +129,7 @@ public static class SpectrumRobustness
         var pos = new List<double>();
         foreach (double x in ev)
             if (x > 1e-8) pos.Add(x);
+        if (pos.Count == 0) return Array.Empty<double>();   // degenerate (all-zero) spectrum
         pos.Sort();
         double max = pos[^1];
         var norm = new double[pos.Count];

@@ -8727,6 +8727,20 @@ structure is content-driven, not emergent from nothing. TQMQG1152 CLASSIFICATION
 shapes structure via the feedback loop, but the network does not fully self-organize from its own activity
 alone. Report: Docs/Research/TQMQG_StructureFromContent.md.
 
+**TQM-QG Phase 116 (Stable structures from actualization) — COMPLETED (3/3 tests pass; 351/351 TQM-QG verified; COMPUTATIONAL):**
+Question: can stable actualization patterns generate DISCRETE network geometries? Added ActualizationStructures
+(extends QG115 model: clustered activity, persistent activity loops with no damping collapse, self-reinforcing
+link creation, topology fixed-point convergence, KS geometry-class sweep). TQMQG1160 clustered activity
+nucleates a structured network (3 clusters → 576 links, 3 families, span 6.40) and sustained loops drive the
+topology to a fixed point (link growth → 0). TQMQG1161 link creation is self-reinforcing yet BOUNDED
+(saturated/seed ≈ 13, no runaway) and a stable topology forms. TQMQG1162 the geometry sweep is DECISIVE: all
+activity patterns (1–6 clusters, offsets, uniform) converge to the SAME final geometry — identical link counts
+(576), identical span (6.40), pairwise KS ≈ 0.032 between final spectral shapes = 1 single geometry class;
+TQMQG1162 CLASSIFICATION: STRUCTURE ORIGIN — the sustained self-reinforcing dynamics FULLY determines the
+geometry as a unique content-independent attractor (strongest form of structure-from-actualization; the QG115
+PARTIAL FEEDBACK result becomes full structure-origin in the strong-feedback limit). Report:
+Docs/Research/TQMQG_ActualizationStructures.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.
