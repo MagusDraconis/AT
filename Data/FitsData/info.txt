@@ -52,5 +52,5 @@ Current file(s)
 
 How to analyze a cube
 ---------------------
-  TQM.Core.Fits.FitsAnalyzer.Analyze(path)  (C#, CSharpFITS / nom.tam.fits)
+  TQM.Core.Fits.FitsAnalyzer.Analyze(path)  (C#, FITS.Lib / nom.tam.fits)
   or run the test TQM_FitsAnalyzerTests in TQM.Tests/ResearchQG/.

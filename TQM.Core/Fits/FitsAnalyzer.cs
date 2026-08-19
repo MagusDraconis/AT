@@ -11,7 +11,7 @@ public static class FitsAnalyzer
 {
     public static FitsReport Analyze(string path)
     {
-        // Keep the FITS stream open during the whole analysis: CSharpFITS reads
+        // Keep the FITS stream open during the whole analysis: FITS.Lib reads
         // image data lazily on first DataArray access, which needs the stream.
         var fits = new Fits(path);
         try
