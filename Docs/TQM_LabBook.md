@@ -1042,6 +1042,15 @@ OPEN/WEAK: matter emergence + dynamics.
 - WEAK PREFERENCE: N=3 is common (26%) but not dominant — SM 3-generation count is a size/density-window
   phenomenon, not a derived universal count (consistent with QG80/81)
 
+### TQM-QG109: Selection of the Physical Network (TQM-QG Phase 109)
+**Status:** Complete (PARTIAL SELECTION). Native criteria narrow, conflicting criteria prevent uniqueness.
+- stability criteria CONFLICT: spectral gap prefers ER random (9.03 vs 0.10), family-structure persistence
+  prefers causal grids (100% vs 98.3%); 17 attractor basins, none dominates
+- counting-measure variance statistically prefers the causal grid (1.73 vs 13.27); growth history drifts the
+  family count (3→4→4→5→4→5→5, no convergence)
+- anthropic-free mechanisms narrow toward the causal grid but no unique network is selected — PARTIAL
+  SELECTION, consistent with QG96 (partial) and QG102 (non-unique solution space)
+
 ---
 
 ## Overall Statistics
@@ -1053,8 +1062,8 @@ OPEN/WEAK: matter emergence + dynamics.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 109 | Complete |
-| **Total** | **216** | |
+| TQM-QG | 110 | Complete |
+| **Total** | **217** | |
 
 ## Key Unsolved Problems
 

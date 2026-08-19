@@ -8645,6 +8645,18 @@ N=3 is common (26%) but NOT the dominant mode (modal = 1); the SM 3-generation c
 phenomenon, not a derived universal count (consistent with QG80/81). Report:
 Docs/Research/TQMQG_FamilyCountStatistics.md.
 
+**TQM-QG Phase 109 (Selection of the physical network) — COMPLETED (3/3 tests pass; 330/330 TQM-QG verified; COMPUTATIONAL):**
+Question: why does nature realize one specific network class? Added PhysicalNetworkSelection (77-network
+ensemble; stability gap, family persistence, KS attractor basins, counting-measure variance, growth sequence,
+anthropic-free functional). TQMQG1090 stability criteria CONFLICT: spectral gap prefers ER random (9.03 vs
+0.10) but family-structure persistence prefers causal grids (100% vs 98.3%); 17 attractor basins, none
+dominates. TQMQG1091 counting-measure variance statistically prefers the causal grid (1.73 vs 13.27), but the
+growth history drifts the family count (3→4→4→5→4→5→5, no convergence). TQMQG1092 CLASSIFICATION: PARTIAL
+SELECTION — native anthropic-free mechanisms (counting measure, family persistence) narrow toward the causal
+grid, but conflicting criteria (spectral gap prefers ER) and non-uniqueness prevent PHYSICAL SELECTION,
+consistent with QG96 (partial) and QG102 (non-unique solution space). Report:
+Docs/Research/TQMQG_PhysicalNetworkSelection.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.
