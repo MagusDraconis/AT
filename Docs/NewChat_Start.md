@@ -8799,6 +8799,20 @@ octave families (QG118 scaling) are suppressed beyond the local horizon; physica
 horizon inside a larger network would see a fixed small family count (2–3) while the SM's 3-family structure
 at K=5/6 remains the locally observable one. Report: Docs/Research/TQMQG_LocalVsGlobalAttractors.md.
 
+**TQM-QG Phase 120 (Horizon suppression of families) — COMPLETED (3/3 tests pass; 366/366 TQM-QG verified; COMPUTATIONAL):**
+Question: does a finite horizon naturally suppress higher-family modes? Added HorizonFamilies (horizon-grid
+window patches of a fixed N=192 global network: observable family count vs horizon, mean IPR per octave
+family, suppression profile, monotonicity checks). TQMQG1200 a smaller horizon genuinely sees FEWER families
+(h=8 → 1 family vs h=64 → 4; total 4) — the finite horizon limits family visibility. TQMQG1201 all family
+modes are DELOCALIZED (mean IPR 0.007–0.008 ≈ 1/N — plane waves on the ring), so suppression is SPECTRAL
+(window truncates the resolvable frequency range), not a localization effect; but the suppression profile is
+NOT perfectly monotone — the open-path window boundary ADDS spectral span (h=128 patch shows 5 families,
+exceeding the closed total 4). TQMQG1202 observable count grows monotonically: False; saturates at full
+horizon: True; TQMQG1202 CLASSIFICATION: PARTIAL SUPPRESSION — a finite horizon suppresses higher families at
+small scales (spectral window mechanism), but the window-boundary structure perturbs the count, so the
+suppression is not a clean HORIZON ORIGIN law (qualifies QG119 LOCAL SUBSET: suppression real, mechanism
+spectral, exact count window-structure dependent). Report: Docs/Research/TQMQG_HorizonFamilies.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.

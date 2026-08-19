@@ -1154,6 +1154,16 @@ OPEN/WEAK: matter emergence + dynamics.
   suppressed beyond the local horizon; an observable-universe horizon would see a fixed small family count
   (2–3), with the SM 3-family structure (K=5/6) as the locally observable one
 
+### TQM-QG120: Horizon Suppression of Families (TQM-QG Phase 120)
+**Status:** Complete (PARTIAL SUPPRESSION). Finite horizon suppresses families; window boundary perturbs count.
+- smaller horizon genuinely sees FEWER families (h=8 → 1 vs h=64 → 4; total 4 at N=192) — horizon limits
+  family visibility
+- all family modes DELOCALIZED (mean IPR 0.007–0.008 ≈ 1/N, plane waves on the ring) → suppression is
+  SPECTRAL (window truncates resolvable frequency range), not a localization effect
+- suppression NOT perfectly monotone: open-path window boundary ADDS spectral span (h=128 patch shows 5
+  families > closed total 4) → PARTIAL SUPPRESSION: suppression real at small scales, mechanism spectral,
+  exact count window-structure dependent (qualifies QG119 LOCAL SUBSET; not a clean HORIZON ORIGIN law)
+
 ---
 
 ## Overall Statistics
@@ -1165,8 +1175,8 @@ OPEN/WEAK: matter emergence + dynamics.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 121 | Complete |
-| **Total** | **228** | |
+| TQM-QG | 122 | Complete |
+| **Total** | **229** | |
 
 ## Key Unsolved Problems
 
