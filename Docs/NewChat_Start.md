@@ -8704,6 +8704,17 @@ PARTIAL RELATION — the boundary generates the FORM (mixing structure) but not 
 (consistent with QG82: mixing representable, entries free). Report:
 Docs/Research/TQMQG_SectorBoundaryPhysics.md.
 
+**TQM-QG Phase 114 (3D connectivity classes) — COMPLETED (3/3 tests pass; 345/345 TQM-QG verified; COMPUTATIONAL):**
+Question: can local 3D connectivity (valence + neighborhood geometry) generate discrete classes of network
+states? Added ConnectivityClasses3D (circulant valence graphs 3/4/5/6, K4 tetrahedra, 3D threshold graph,
+eigenvalue degeneracies). TQMQG1140 valences 3,4,5,6 give 4 DISTINCT spectral classes (all pairwise KS>0.1);
+tetrahedral K4 structure requires sufficient connectivity (valence 6 → 1.0/node; valence 3/4/5 ring-like → 0).
+TQMQG1141 local volume geometry is 3D-SPECIFIC: 1+1D causal grid 0.00 tetrahedra/node vs 3D threshold 361.7;
+high-symmetry valence classes are DEGENERATE (distinct eigenval/N 0.48-0.51). TQMQG1142 distinct connectivity
+classes = 4 vs SM 3 (QG79/80); TQMQG1142 CLASSIFICATION: PARTIAL RELATION — connectivity generates real
+discrete classes (structural analog) without determining the SM counts (consistent with QG83 valence-3
+coincidence + QG87 higher cells derived). Report: Docs/Research/TQMQG_3DConnectivityClasses.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.
