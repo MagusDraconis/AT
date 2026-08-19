@@ -1124,6 +1124,16 @@ OPEN/WEAK: matter emergence + dynamics.
 - geometry emerges monotonically (192→384→576 links); saturated link radius DEPENDS on feedback/damping ratio
   (6.0 vs 2.0 links/node) → DYNAMICAL (not accidental, not inevitable; consistent with QG109–111)
 
+### TQM-QG117: Attractor Parameter Origin (TQM-QG Phase 117)
+**Status:** Complete (ATTRACTOR ORIGIN). Parameters control a discrete ladder of stable geometry classes.
+- parameter-plane sweep (4×4 feedback×damping, K=6): distinct radii [2.0, 6.0] — a discrete ladder, not a
+  continuum; monotone non-decreasing in feedback, non-increasing in damping; sharp threshold at f/d≈2
+- 2 DISCRETE geometry classes (KS 0.12): radius-2 (span 11.90, 4 families) vs radius-6 (span 6.40, 3
+  families); geometry robust within plateaus (intra-class 0.0421)
+- adjacent-point shape distance 0.6211 (sharp jumps) vs intra-plateau 0.0421 (stable) → ATTRACTOR ORIGIN:
+  radius = round(K·feedback/damping), each a distinct spectral class; rung count structural, values
+  parameter-dependent (consistent with QG79/80 families, QG82 mixing, QG109–116b)
+
 ---
 
 ## Overall Statistics
@@ -1135,8 +1145,8 @@ OPEN/WEAK: matter emergence + dynamics.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 118 | Complete |
-| **Total** | **225** | |
+| TQM-QG | 119 | Complete |
+| **Total** | **226** | |
 
 ## Key Unsolved Problems
 

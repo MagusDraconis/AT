@@ -8756,6 +8756,21 @@ parameter-determined in its radius and content-gated (NOT inevitable). Consisten
 physical selection; parameters carry SM-matching freedom). Report:
 Docs/Research/TQMQG_UniversalAttractor.md.
 
+**TQM-QG Phase 117 (Attractor parameter origin) — COMPLETED (3/3 tests pass; 357/357 TQM-QG verified; COMPUTATIONAL):**
+Question: can changes in attractor parameters produce distinct stable geometries analogous to masses, families,
+or interaction strengths? Added AttractorParameterOrigin (4×4 feedback×damping parameter-plane sweep of the
+QG115/116 map: attractor radius = links/node, span, octave-family count, KS geometry classes, adjacent-point
+sensitivity). TQMQG1170 the radius is a DISCRETE ladder, not a continuum: distinct radii [2.0, 6.0] for K=6;
+monotone non-decreasing in feedback (f=0.3→2, f=0.7→6 at d=0.3) and non-increasing in damping (d=0.1→6,
+d=0.3→2 at f=0.5); sharp plateau threshold at f/d≈2. TQMQG1171 the parameter plane maps to 2 DISCRETE
+geometry classes (KS ε=0.12): radius-2 class (span 11.90, 4 families) vs radius-6 class (span 6.40, 3
+families); geometry robust WITHIN plateaus (intra-class distance 0.0421). TQMQG1172 adjacent-point shape
+distance 0.6211 (sharp jumps) vs intra-plateau 0.0421 (stable); TQMQG1172 CLASSIFICATION: ATTRACTOR ORIGIN —
+parameters control a discrete ladder of stable geometry classes (radius = round(K·feedback/damping), each a
+distinct spectral class) exactly as masses/families/interaction strengths would require; the number of rungs
+is structural, the specific values parameter-dependent (consistent with QG79/80 families, QG82 mixing, and
+QG109–116b). Report: Docs/Research/TQMQG_AttractorParameterOrigin.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.
