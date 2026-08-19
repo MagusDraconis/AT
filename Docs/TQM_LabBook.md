@@ -1115,6 +1115,15 @@ OPEN/WEAK: matter emergence + dynamics.
   span 6.40, pairwise KS ≈ 0.032 = 1 single class → STRUCTURE ORIGIN (unique content-independent attractor;
   QG115 PARTIAL FEEDBACK becomes full structure-origin in the strong-feedback limit)
 
+### TQM-QG116b: Origin of the Universal Attractor (TQM-QG Phase 116b)
+**Status:** Complete (DYNAMICAL). Genuine stable fixed point, but parameter-determined radius.
+- attractor is an EXACT fixed point of the activity→links→activity map (residual 0); dynamics returns to the
+  identical network after removing up to 50% of links (shape distance 0.080) — strongly stable
+- basin essentially UNIVERSAL (100% of 30 random patterns); links = N·K exactly at N=48/96/192 (size-
+  universal); featureless all-sub-threshold content stays EMPTY (trivial attractor)
+- geometry emerges monotonically (192→384→576 links); saturated link radius DEPENDS on feedback/damping ratio
+  (6.0 vs 2.0 links/node) → DYNAMICAL (not accidental, not inevitable; consistent with QG109–111)
+
 ---
 
 ## Overall Statistics
@@ -1126,8 +1135,8 @@ OPEN/WEAK: matter emergence + dynamics.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 117 | Complete |
-| **Total** | **224** | |
+| TQM-QG | 118 | Complete |
+| **Total** | **225** | |
 
 ## Key Unsolved Problems
 

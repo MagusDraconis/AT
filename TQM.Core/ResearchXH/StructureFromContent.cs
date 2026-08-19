@@ -60,6 +60,14 @@ public static class StructureFromContent
     /// </summary>
     public static double[,] AdaptiveNetwork(double[] initialActivity, int K = 6, double damping = 0.25,
         double feedback = 0.6, int steps = 30)
+        => AdaptiveNetworkFull(initialActivity, K, damping, feedback, steps).Adjacency;
+
+    /// <summary>
+    /// Full adaptive dynamics: returns the final activity vector as well as the adjacency (both needed for
+    /// fixed-point analysis). Same update rule as <see cref="AdaptiveNetwork"/>.
+    /// </summary>
+    public static (double[] Activity, double[,] Adjacency) AdaptiveNetworkFull(double[] initialActivity,
+        int K = 6, double damping = 0.25, double feedback = 0.6, int steps = 30)
     {
         int n = initialActivity.Length;
         var a = (double[])initialActivity.Clone();
@@ -87,7 +95,7 @@ public static class StructureFromContent
                 a[i] = Math.Clamp(a[i], 0.0, 1.0);
             }
         }
-        return adj;
+        return (a, adj);
     }
 
     /// <summary>The FIXED network: the initial activity creates ONE round of links and then freezes (no feedback).</summary>

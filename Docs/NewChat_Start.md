@@ -8741,6 +8741,21 @@ geometry as a unique content-independent attractor (strongest form of structure-
 PARTIAL FEEDBACK result becomes full structure-origin in the strong-feedback limit). Report:
 Docs/Research/TQMQG_ActualizationStructures.md.
 
+**TQM-QG Phase 116b (Origin of the universal attractor) — COMPLETED (3/3 tests pass; 354/354 TQM-QG verified; COMPUTATIONAL):**
+Question: why does actualization converge to THIS specific attractor (the N·K circulant of QG116) — accidental,
+dynamical, or inevitable? Added UniversalAttractor (fixed-point study of the QG115/116 activity→links→activity
+map: perturbation recovery, basin sweep, size universality, exact fixed point, geometry emergence, saturated
+link radius vs feedback/damping). TQMQG1163 the attractor is an EXACT fixed point (residual 0.00e+000) and the
+dynamics RETURNS to the identical network after removing 20% or even 50% of its links (shape distance 0.080) —
+genuinely stable, not fragile. TQMQG1164 the basin is essentially UNIVERSAL (100% of 30 random patterns) and
+links = N·K exactly at N=48/96/192 (288/576/1152) — size-universal; but featureless all-sub-threshold content
+stays EMPTY (a second, trivial attractor). TQMQG1165 geometry emerges monotonically (192→384→576 links) and the
+saturated link radius DEPENDS on the feedback/damping ratio (6.0 vs 2.0 links/node); TQMQG1165 CLASSIFICATION:
+DYNAMICAL — a genuine stable exact fixed point with universal basin and size (NOT accidental), but
+parameter-determined in its radius and content-gated (NOT inevitable). Consistent with QG109–111 (no unique
+physical selection; parameters carry SM-matching freedom). Report:
+Docs/Research/TQMQG_UniversalAttractor.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.
