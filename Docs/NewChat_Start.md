@@ -8828,6 +8828,20 @@ the ladder (intermediate rungs 3,4,5 stable but seed-unreachable — basin nuanc
 discrete ladder; connects to QG79/80 families and QG118 family-count discreteness. Report:
 Docs/Research/TQMQG_AttractorLadder.md.
 
+**TQM-QG Phase 122 (Energy-dependent attractors) — COMPLETED (3/3 tests pass; 372/372 TQM-QG verified; COMPUTATIONAL):**
+Question: can higher actualization-energy regimes generate new attractor classes not accessible in the current
+parameter range? Added EnergyDependentAttractors (activity-ceiling sweep as the energy regime, seed energy
+scale, spectral class count, family evolution, high-energy classes). TQMQG1220 raising the seed energy scale
+grows the attractor radius (0 → 22 as E goes 0.25 → 8 at baseline ceiling); raising the activity ceiling
+extends the radius ladder from {2, 6} (baseline) to 19.67 (ceiling 4, saturates by 8). TQMQG1221 the number
+of accessible spectral classes GROWS with the energy regime (2 at ceiling 1 → 8 at ceiling 4); the octave-
+family count COMPRESSES at high energy (3 → 2 families; span 6.40 → 2.98) — new geometry classes come with
+merged family structure. TQMQG1222 high-energy classes exist beyond the baseline K=6 cap (19.67 > 6.00);
+TQMQG1222 CLASSIFICATION: NEW CLASSES — energy (actualization rate, QG89) acts as an order parameter over the
+QG117 ladder: its range grows with energy while the discreteness (QG121 FUNDAMENTAL) persists; high-energy
+regime (radius > K) = local connectivity exceeding the link-length parameter, a candidate SM-hierarchy probe
+(consistent with QG118–120 family arc). Report: Docs/Research/TQMQG_EnergyDependentAttractors.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.

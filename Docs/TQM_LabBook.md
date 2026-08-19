@@ -1175,6 +1175,17 @@ OPEN/WEAK: matter emergence + dynamics.
   spectrum of geometries (intermediate rungs stable but seed-unreachable — basin nuance). Explains QG117
   ladder; connects to QG79/80 families + QG118 family discreteness
 
+### TQM-QG122: Energy-Dependent Attractors (TQM-QG Phase 122)
+**Status:** Complete (NEW CLASSES). Energy (actualization rate) is an order parameter over the attractor ladder.
+- raising seed energy scale grows attractor radius (0 → 22 as E goes 0.25 → 8 at baseline ceiling); raising
+  activity ceiling extends radius ladder from {2, 6} to 19.67 (ceiling 4, saturates by 8)
+- accessible spectral classes GROW with energy regime (2 at ceiling 1 → 8 at ceiling 4); octave-family count
+  COMPRESSES at high energy (3 → 2 families; span 6.40 → 2.98) — new geometry classes, merged families
+- high-energy classes exist beyond baseline K=6 cap (19.67 > 6.00) → NEW CLASSES: energy = actualization rate
+  (QG89) is an order parameter over the QG117 ladder — range grows with energy, discreteness (QG121
+  FUNDAMENTAL) persists; radius > K regime = connectivity beyond link-length, candidate SM-hierarchy probe
+  (consistent with QG118–120 family arc)
+
 ---
 
 ## Overall Statistics
@@ -1186,8 +1197,8 @@ OPEN/WEAK: matter emergence + dynamics.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 123 | Complete |
-| **Total** | **230** | |
+| TQM-QG | 124 | Complete |
+| **Total** | **231** | |
 
 ## Key Unsolved Problems
 
