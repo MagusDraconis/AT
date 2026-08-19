@@ -21,6 +21,7 @@ Research tests **must**:
 - Output **final conclusions** summarizing findings
 - Save all important numerical results in the output
 - Be **deterministic** and **reproducible** — no randomness, no external dependencies that can change results between runs
+- Serve as reproducible/readable documentation, ensuring results are reproducible over time rather than static report assertions
 
 Research tests should be placed under `TQM.Tests/Research/` and follow the naming convention `TQM_###_Tests.cs`.
 
