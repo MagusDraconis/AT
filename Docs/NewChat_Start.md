@@ -8771,6 +8771,21 @@ distinct spectral class) exactly as masses/families/interaction strengths would 
 is structural, the specific values parameter-dependent (consistent with QG79/80 families, QG82 mixing, and
 QG109–116b). Report: Docs/Research/TQMQG_AttractorParameterOrigin.md.
 
+**TQM-QG Phase 118 (Families from attractors) — COMPLETED (3/3 tests pass; 360/360 TQM-QG verified; COMPUTATIONAL):**
+Question: can particle-family structure emerge from the different attractor geometry classes? Added
+FamiliesFromAttractors (per-geometry-class octave-family count, class counts across K=3..6, transition
+sensitivity, internal low-mode ratio ladders, family-count stability under perturbation and across size).
+TQMQG1180 geometry classes carry DISTINCT internal family content (K=6: radius-2 → 4 families/span 11.90 vs
+radius-6 → 3 families/span 6.40); 2 classes for every K; a THREE-family class exists at K=5 and K=6 (the SM
+count). TQMQG1181 classes are sharply separated (adjacent sensitivity 0.62) with distinct hierarchy depths
+and nearly size-stable low-mode ladders (deviations 0.03–0.07). TQMQG1182 family counts are robust under 10%
+link-removal but NOT size-invariant (radius-2: 3→4→5 families as N=48→96→192); TQMQG1182 CLASSIFICATION:
+PARTIAL RELATION — class-dependent family structure partially emerges (three-family class, perturbation-
+robust), but a size-independent discrete family spectrum is not achieved; the internal RELATIVE hierarchy is
+robust while the total family COUNT is not (qualifies QG117 ATTRACTOR ORIGIN; consistent with QG79/80,
+QG106–108 discreteness, QG109–117 parameter dependence). Report:
+Docs/Research/TQMQG_FamiliesFromAttractors.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.

@@ -1134,6 +1134,16 @@ OPEN/WEAK: matter emergence + dynamics.
   radius = round(K·feedback/damping), each a distinct spectral class; rung count structural, values
   parameter-dependent (consistent with QG79/80 families, QG82 mixing, QG109–116b)
 
+### TQM-QG118: Families from Attractors (TQM-QG Phase 118)
+**Status:** Complete (PARTIAL RELATION). Class-dependent family structure; not size-invariant.
+- geometry classes carry DISTINCT internal family content (K=6: radius-2 → 4 octave families/span 11.90 vs
+  radius-6 → 3/span 6.40); 2 classes for every K; a THREE-family class exists at K=5,6 (SM count)
+- classes sharply separated (adjacent sensitivity 0.62); distinct hierarchy depths; low-mode ladders nearly
+  size-stable (0.03–0.07 deviations)
+- family counts robust under 10% link-removal but NOT size-invariant (radius-2: 3→4→5 as N=48→96→192) →
+  PARTIAL RELATION: class-dependent family structure partially emerges, size-independent discrete family
+  spectrum not achieved (qualifies QG117; consistent with QG79/80, QG106–108, QG109–117)
+
 ---
 
 ## Overall Statistics
@@ -1145,8 +1155,8 @@ OPEN/WEAK: matter emergence + dynamics.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 119 | Complete |
-| **Total** | **226** | |
+| TQM-QG | 120 | Complete |
+| **Total** | **227** | |
 
 ## Key Unsolved Problems
 
