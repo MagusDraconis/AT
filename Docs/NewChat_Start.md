@@ -8657,6 +8657,18 @@ grid, but conflicting criteria (spectral gap prefers ER) and non-uniqueness prev
 consistent with QG96 (partial) and QG102 (non-unique solution space). Report:
 Docs/Research/TQMQG_PhysicalNetworkSelection.md.
 
+**TQM-QG Phase 110 (Network information selection) — COMPLETED (3/3 tests pass; 333/333 TQM-QG verified; COMPUTATIONAL):**
+Question: can information-processing capacity select a unique network class? Added NetworkInformationSelection
+(77-network ensemble; spanning-tree flow, all-pairs-BFS communication efficiency, diameter causal depth, spectral
+memory capacity, family-persistence stable computation). TQMQG1100 information flow + communication efficiency
+distinguish classes but PREFER ER random (flow 2.24 vs 1.38, efficiency 0.50 vs 0.24). TQMQG1101 causal depth
+(grid 15.8 vs ER 4.6) + memory capacity (152 vs 108 modes) + stable computation (100% exact vs ER 107%
+fluctuating) PREFER the causal grid — an information trade-off. TQMQG1102 composite capacity functional (depth ×
+memory × stable) strongly prefers the causal family (~2.5× ER), but the class has many members and the metrics
+trade off → CLASSIFICATION: PARTIAL SELECTION — information capacity narrows toward the causal class but does
+not uniquely determine the physical network (consistent with QG109 stability + QG102 non-unique solution
+space). Report: Docs/Research/TQMQG_NetworkInformationSelection.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.

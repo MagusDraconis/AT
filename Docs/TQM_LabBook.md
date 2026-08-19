@@ -1051,6 +1051,15 @@ OPEN/WEAK: matter emergence + dynamics.
 - anthropic-free mechanisms narrow toward the causal grid but no unique network is selected — PARTIAL
   SELECTION, consistent with QG96 (partial) and QG102 (non-unique solution space)
 
+### TQM-QG110: Network Information Selection (TQM-QG Phase 110)
+**Status:** Complete (PARTIAL SELECTION). Information capacity narrows toward the causal class, not uniquely.
+- information flow + communication efficiency distinguish classes but PREFER ER random (flow 2.24 vs 1.38,
+  efficiency 0.50 vs 0.24)
+- causal depth (grid 15.8 vs ER 4.6), memory capacity (152 vs 108 modes), stable computation (100% exact vs ER
+  107% fluctuating) PREFER the causal grid — an information trade-off
+- composite capacity functional (depth × memory × stable) strongly prefers the causal family (~2.5× ER), but
+  many members + trade-offs → PARTIAL SELECTION, consistent with QG109 (stability) + QG102 (non-unique)
+
 ---
 
 ## Overall Statistics
@@ -1062,8 +1071,8 @@ OPEN/WEAK: matter emergence + dynamics.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 110 | Complete |
-| **Total** | **217** | |
+| TQM-QG | 111 | Complete |
+| **Total** | **218** | |
 
 ## Key Unsolved Problems
 
