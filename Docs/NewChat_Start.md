@@ -8813,6 +8813,21 @@ small scales (spectral window mechanism), but the window-boundary structure pert
 suppression is not a clean HORIZON ORIGIN law (qualifies QG119 LOCAL SUBSET: suppression real, mechanism
 spectral, exact count window-structure dependent). Report: Docs/Research/TQMQG_HorizonFamilies.md.
 
+**TQM-QG Phase 121 (Origin of the attractor ladder) — COMPLETED (3/3 tests pass; 369/369 TQM-QG verified; COMPUTATIONAL):**
+Question: why does the feedback dynamics produce a discrete ladder instead of a continuous family of
+geometries? Added AttractorLadder (generalized dynamics with configurable threshold and link discretization
+round/floor/ceil/continuous; algebraic fixed point a*=min(1,f/d) → radius round(K·a*); transition points;
+ladder-by-K). TQMQG1210 the ladder {2,6} is IDENTICAL for activity thresholds 0.3/0.5/0.7 — not a gate
+artifact. TQMQG1211 the ladder persists under Round/Floor/Ceil AND the CONTINUOUS-WEIGHT variant (no integer
+rounding) still gives {2,6} — the discreteness is NOT a rounding artifact. TQMQG1212 the saturated activity
+fixed point a*=min(1,f/d) is continuous but the link radius round(K·a*) is a STEP function of it (7 algebraic
+rungs for K=6; high-f/d matches; sharp transition at f/d≈2.07; discrete ladder for every K=3..8);
+TQMQG1212 CLASSIFICATION: FUNDAMENTAL — continuous parameters map through the network's discrete link
+structure into a discrete spectrum of stable geometries; bounded-activity × discrete-link architecture forces
+the ladder (intermediate rungs 3,4,5 stable but seed-unreachable — basin nuance). Explains WHY QG117 saw a
+discrete ladder; connects to QG79/80 families and QG118 family-count discreteness. Report:
+Docs/Research/TQMQG_AttractorLadder.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.

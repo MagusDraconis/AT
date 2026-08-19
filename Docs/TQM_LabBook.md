@@ -1164,6 +1164,17 @@ OPEN/WEAK: matter emergence + dynamics.
   families > closed total 4) → PARTIAL SUPPRESSION: suppression real at small scales, mechanism spectral,
   exact count window-structure dependent (qualifies QG119 LOCAL SUBSET; not a clean HORIZON ORIGIN law)
 
+### TQM-QG121: Origin of the Attractor Ladder (TQM-QG Phase 121)
+**Status:** Complete (FUNDAMENTAL). Discreteness intrinsic to bounded-activity × discrete-link structure.
+- ladder {2, 6} IDENTICAL for activity thresholds 0.3/0.5/0.7 — not a gate artifact
+- ladder persists under Round/Floor/Ceil AND the CONTINUOUS-WEIGHT variant (no integer rounding) still gives
+  {2, 6} — the discreteness is NOT a rounding artifact
+- saturated activity fixed point a* = min(1, f/d) is continuous but link radius round(K·a*) is a STEP
+  function (7 algebraic rungs for K=6; high-f/d matches; sharp transition f/d≈2.07; discrete ladder for every
+  K=3..8) → FUNDAMENTAL: continuous parameters map through the discrete link structure into a discrete
+  spectrum of geometries (intermediate rungs stable but seed-unreachable — basin nuance). Explains QG117
+  ladder; connects to QG79/80 families + QG118 family discreteness
+
 ---
 
 ## Overall Statistics
@@ -1175,8 +1186,8 @@ OPEN/WEAK: matter emergence + dynamics.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 122 | Complete |
-| **Total** | **229** | |
+| TQM-QG | 123 | Complete |
+| **Total** | **230** | |
 
 ## Key Unsolved Problems
 
