@@ -8691,6 +8691,19 @@ comparable but not exact. TQMQG1122 sector interactions are STRONG (85.7% bounda
 CLASSIFICATION: PARTIAL SECTORING — coexisting interacting sectors, not a sharp phase structure (consistent
 with QG90 gauge sectors postulated + QG106 spectral classes). Report: Docs/Research/TQMQG_NetworkSectors.md.
 
+**TQM-QG Phase 113 (Sector boundary physics) — COMPLETED (3/3 tests pass; 342/342 TQM-QG verified; COMPUTATIONAL):**
+Question: can unresolved SM parameters originate from sector boundaries rather than within sectors? Added
+SectorBoundaryPhysics (two-sector composites: causal grid + ER random joined by deterministic boundary links;
+boundary-link count, inter-sector coupling κ, delocalized transition modes, two-state mixing angle
+tan(2θ)=2κ/(ε_A−ε_B), IPR localization). TQMQG1130 boundary links form as requested (2%→2.0%, 20%→20.0%) with
+tunable coupling κ (0.02→0.20) and distinct sector energies (23.1 vs 27.5) — the boundary is a real layer,
+but κ is a FREE input. TQMQG1131 the boundary generates REAL mixing: delocalized family-transition modes (182
+weak / 41 strong) and a determined mixing angle θ=+89.7° (weak) / +87.4° (strong) — the QG82 rotation picture;
+the angle DEPENDS on the free coupling κ. TQMQG1132 mean IPR 0.024 (delocalized); TQMQG1132 CLASSIFICATION:
+PARTIAL RELATION — the boundary generates the FORM (mixing structure) but not the specific SM values
+(consistent with QG82: mixing representable, entries free). Report:
+Docs/Research/TQMQG_SectorBoundaryPhysics.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.

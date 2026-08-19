@@ -1078,6 +1078,16 @@ OPEN/WEAK: matter emergence + dynamics.
 - strong sector interactions (85.7% boundary networks); PARTIAL SECTORING — consistent with QG90 (gauge sectors
   postulated) + QG106 (spectral classes)
 
+### TQM-QG113: Sector Boundary Physics (TQM-QG Phase 113)
+**Status:** Complete (PARTIAL RELATION). Boundaries generate mixing structure, not specific SM values.
+- two-sector composites (causal grid + ER random) with deterministic boundary links; inter-sector coupling κ
+  tunable (0.02→0.20), sector energies distinct (23.1 vs 27.5)
+- boundary generates REAL mixing: delocalized family-transition modes (182 weak / 41 strong) and determined
+  mixing angle tan(2θ)=2κ/(ε_A−ε_B): θ=+89.7° weak / +87.4° strong — the QG82 rotation picture; angle depends
+  on the free coupling κ
+- mean IPR 0.024 (delocalized); PARTIAL RELATION — boundary generates the FORM (mixing structure) without
+  determining specific SM values (consistent with QG82: mixing representable, entries free)
+
 ---
 
 ## Overall Statistics
@@ -1089,8 +1099,8 @@ OPEN/WEAK: matter emergence + dynamics.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 113 | Complete |
-| **Total** | **220** | |
+| TQM-QG | 114 | Complete |
+| **Total** | **221** | |
 
 ## Key Unsolved Problems
 
