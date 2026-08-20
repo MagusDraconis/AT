@@ -9549,3 +9549,28 @@ Milestone counters:
 
 TQM-QG 156 phases
 432+ TQM-QG tests verified
+
+### QG154: Neutrino Sector Origin
+
+Summary:
+
+QG154 shows that neutrinos are
+the unique Q=0 fermion sector.
+
+Without charge amplification,
+the neutrino cannot access the
+charge×isospin enhancement channel.
+
+Result:
+
+neutrino hierarchy follows
+pure isospin doublet access.
+
+Status:
+
+NEUTRINO ORIGIN
+
+Milestone counters:
+
+TQM-QG 156 phases
+432+ TQM-QG tests verified
