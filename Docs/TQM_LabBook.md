@@ -1360,6 +1360,17 @@ parameter-sensitive.
   an effective-size band (N/K ≈ 10–25), not an absolute size (resolves QG136; connects QG119/120 horizon,
   QG115/116, QG117)
 
+### TQM-QG138: Origin of the Effective-Size Law (TQM-QG Phase 138)
+**Status:** Complete (FUNDAMENTAL). The N/K law is a spectral/combinatorial identity.
+- 95 modes distributed as octave 0: [0.622,1.243)→4, octave 1: [1.243,2.486)→4, octave 2: [2.486,4.973)→87;
+  octave boundaries approximately follow frequency-doubling (mean ratio 1.19)
+- spectral crowding: 91.6% of modes in the TOP octave (why 95 modes give only 3 families); effective horizon
+  = fundamental 0.622, N/K = 16; Pearson r(log2(span), log2(N/K)) = 0.999
+- identity familyCount = floor(log2(span)) + 1 holds at default (floor(log2 6.40)+1 = 3) AND across the
+  whole (N,K) grid → FUNDAMENTAL: family count IS the octave-band count, spectral span ∝ N/K (w_min ~
+  K^(3/2)/N, w_max ~ √K), a spectral/combinatorial law independent of dynamics parameters (explains QG137;
+  QG106 octave families and QG137 effective-size law share one origin)
+
 ---
 
 ## Overall Statistics
@@ -1371,8 +1382,8 @@ parameter-sensitive.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 139 | Complete |
-| **Total** | **246** | |
+| TQM-QG | 140 | Complete |
+| **Total** | **247** | |
 
 ## Key Unsolved Problems
 

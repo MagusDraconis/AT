@@ -9081,6 +9081,23 @@ not an absolute size (resolves QG136 "specific size range"; connects QG119/120 h
 of local-actualization steps across the network, a horizon-like quantity; QG115/116 emergence from
 actualization; QG117 ladder). Report: Docs/Research/TQMQG_EffectiveSizeFamilies.md.
 
+**TQM-QG Phase 138 (Origin of the effective-size law) — COMPLETED (3/3 tests pass; 420/420 TQM-QG verified; COMPUTATIONAL):**
+Question: why does N/K control the family count? Added EffectiveSizeLaw (mode density per octave band,
+octave spacing ratios vs ideal w1·2^k, top-octave spectral crowding, effective horizon = fundamental mode +
+N/K, span-effective-size Pearson correlation, family-count octave identity, identity across the whole N×K
+grid, origin score). TQMQG1380 the observable sector has 95 modes distributed as octave 0: [0.622,1.243)→4,
+octave 1: [1.243,2.486)→4, octave 2: [2.486,4.973)→87 — the octave band boundaries approximately follow
+the frequency-doubling rule (mean ratio 1.19). TQMQG1381 spectral crowding: 91.6% of modes sit in the TOP
+octave (this crowding is why 95 modes give only 3 families); effective horizon = fundamental mode 0.622,
+N/K = 16; Pearson r(log2(span), log2(N/K)) = 0.999 over the (N,K) grid — the spectral span tracks the
+effective size almost perfectly. TQMQG1382 the identity familyCount = floor(log2(ωmax/ωmin)) + 1 holds at
+the default point (floor(log2 6.40)+1 = 3) AND across the whole (N,K) grid; TQMQG1382 CLASSIFICATION:
+FUNDAMENTAL — the family count IS the octave-band count = floor(log2(spectral span)) + 1, and the spectral
+span ∝ N/K for the K-neighbor network (w_min ~ K^(3/2)/N longest wavelength, w_max ~ √K), a
+spectral/combinatorial law independent of dynamics parameters (explains QG137's r=0.950; octave-family
+structure QG106 and effective-size law share one origin: octave quantization of the Laplacian spectrum;
+connects QG119/120 horizon). Report: Docs/Research/TQMQG_EffectiveSizeLaw.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.
