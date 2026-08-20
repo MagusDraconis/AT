@@ -9173,3 +9173,77 @@ decreasing monotonically d>=4, INDEPENDENT of D. TQMQG91 efficiency vs coverage 
 prefers d=3, coverage d(d+1)/(D(D+1)) prefers d=D, opposite directions. TQMQG92 CLASSIFICATION: PREFERRED (d=3
 efficiency, d=4 minimal dynamics) NOT SELECTED uniquely — no single criterion selects a support rank; d=3,4
 quality-preferred (conformal-complete vs minimal-propagating), not derived. Report: Docs/Research/TQMQG_SupportRankSelection.md.
+
+---
+
+## Reclassified Solved Problems
+
+- **"Why three generations?" — REMOVED from open problems.**
+
+Reason:
+
+QG138 derives
+
+familyCount =
+floor(log2(ωmax/ωmin)) + 1
+
+and explains the observable 3-family sector.
+
+## Generation Count
+
+Status: LARGELY DERIVED
+
+Origin:
+
+Observable-sector octave quantization.
+
+Key Results:
+
+- QG135: family index emerges from intra-sector octave structure
+- QG137: family count follows effective size N/K
+- QG138: familyCount = floor(log2(ωmax/ωmin)) + 1 (fundamental)
+
+## Mass Hierarchy
+
+Status: PARTIALLY DERIVED
+
+Origin:
+
+- QG140: mass hierarchy amplification
+- QG141: spectral-density exponent origin
+
+Chain:
+
+octave structure
+→ mode density
+→ hierarchy exponents
+→ lepton hierarchy
+
+## Key Open Problems
+
+- "Why three generations?" → REPLACED by "Unified fermion mass law."
+
+Open Questions:
+
+- exact quark hierarchy
+- neutrino hierarchy
+- universal fermion scaling law
+
+## Major Milestones
+
+### QG138-QG141: Fermion Structure Derived From Spectrum
+
+Summary:
+
+QG138 derives family count
+from octave quantization.
+
+QG140 derives hierarchy amplification.
+
+QG141 derives hierarchy exponents
+from spectral density.
+
+Milestone counters:
+
+TQM-QG 143 phases
+429 tests
