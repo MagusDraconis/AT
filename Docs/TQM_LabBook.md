@@ -1231,6 +1231,19 @@ sectors: the observable 3-family sector = observed families; high-energy sectors
   high-energy sectors = heavier particle-sector analogs, decay chains = particle decays ending in the stable
   observable remnant (connects QG124, QG125, QG119-120, QG118)
 
+### TQM-QG127: Observable Signatures of High-Energy Sectors (TQM-QG Phase 127)
+**Status:** Complete (OBSERVABLE SIGNATURE). Metastable high-energy sectors leave detectable decay traces.
+- gradual energy decline (30 ramp × 3 evolutions) visits 10 DISTINCT decay-signature classes: 6/3-fam → 7/3 →
+  9/3 → 10/2 → 12/2 → 13/2 → 14/2 → 16/2 → 17/2 → 17.333/2-fam; 10 radius classes + 2 family structures →
+  spectrally structured cascade (not smooth slide or single jump)
+- intermediate classes measurably occupied: 24/93 steps (transient fraction 0.258), max intermediate dwell 3
+  steps; fine ceiling sweep shows 8 DISCRETE energy thresholds (1.25→1.5→1.75→2.0→2.25→2.5→2.75→3.0) where
+  new sector classes appear
+- after full decay the system settles in the observable 3-family remnant (radius 6.000, families 3) →
+  OBSERVABLE SIGNATURE: past high-energy sectors leave a spectrally structured cascade with measurable
+  transients and discrete energy thresholds (candidate discrete excitation-spectrum-like signature; connects
+  QG125, QG126, QG119-120)
+
 ---
 
 ## Overall Statistics
@@ -1242,8 +1255,8 @@ sectors: the observable 3-family sector = observed families; high-energy sectors
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 128 | Complete |
-| **Total** | **235** | |
+| TQM-QG | 129 | Complete |
+| **Total** | **236** | |
 
 ## Key Unsolved Problems
 

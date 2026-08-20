@@ -8903,6 +8903,23 @@ particle-sector analogs, and sector decay chains map to particle decays terminat
 remnant (connects QG124 SECTOR ORIGIN, QG125 METASTABLE decay, QG119-120 horizon suppression of higher
 sectors, QG118 3-family scaling). Report: Docs/Research/TQMQG_ParticleSectorMapping.md.
 
+**TQM-QG Phase 127 (Observable signatures of high-energy sectors) — COMPLETED (3/3 tests pass; 387/387 TQM-QG verified; COMPUTATIONAL):**
+Question: can metastable high-energy sectors leave observable remnants? Added HighEnergySectorSignatures
+(gradual-decay trajectory, decay-signature classes, cascade radius/family states, transient occupation, fine
+energy-threshold sweep, observable-remnant check, signature score). TQMQG1270 a gradual energy decline (30
+ramp steps × 3 evolutions) visits 10 DISTINCT decay-signature classes (radius+families states: 6/3-fam →
+7/3 → 9/3 → 10/2 → 12/2 → 13/2 → 14/2 → 16/2 → 17/2 → 17.333/2-fam), 10 distinct radius classes and 2
+distinct family structures — a SPECTRALLY STRUCTURED cascade, not a smooth slide or single jump. TQMQG1271
+intermediate (non-endpoint) classes are measurably occupied (24/93 steps, transient fraction 0.258, max
+intermediate dwell 3 steps) and a fine ceiling sweep reveals 8 DISCRETE energy thresholds (1.25→1.5→1.75→2.0→
+2.25→2.5→2.75→3.0) at which new sector classes appear. TQMQG1272 after full decay the system settles in the
+observable 3-family remnant (radius 6.000, families 3); TQMQG1272 CLASSIFICATION: OBSERVABLE SIGNATURE —
+the decay leaves a spectrally structured multi-class cascade with measurable transient occupation and
+discrete energy thresholds, settling in the observable 3-family remnant, i.e. past high-energy sectors leave
+detectable traces (candidate discrete excitation-spectrum-like signature for observable searches; connects
+QG125 METASTABLE decay, QG126 SECTOR-PARTICLE MAPPING, QG119-120 horizon suppression hides steady-state
+sectors but not their decay). Report: Docs/Research/TQMQG_HighEnergySectorSignatures.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.
