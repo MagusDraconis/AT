@@ -9098,6 +9098,22 @@ spectral/combinatorial law independent of dynamics parameters (explains QG137's 
 structure QG106 and effective-size law share one origin: octave quantization of the Laplacian spectrum;
 connects QG119/120 horizon). Report: Docs/Research/TQMQG_EffectiveSizeLaw.md.
 
+**TQM-QG Phase 139 (Mass hierarchy from octave structure) — COMPLETED (3/3 tests pass; 423/423 TQM-QG verified; COMPUTATIONAL):**
+Question: can fermion mass hierarchies emerge from octave-band structure? Added MassHierarchyFromOctaves
+(octave band positions start/center/modes, spectral gaps, octave center ratios, geometric-scaling check,
+octave-implied vs observed lepton mass-ratio analogs, family-count/monotonicity hierarchy, hierarchy score).
+TQMQG1390 the observable sector's spectrum splits into 3 octave bands with monotone positions (band 0:
+start 0.622 center 0.879 modes 4; band 1: start 1.799 center 1.758 modes 4; band 2: start 2.790 center
+3.516 modes 87); spectral gaps ~1.45, 0.78 (contiguous bands). TQMQG1391 the octave center ratios =
+[1.000, 2.000, 4.000] — a perfect geometric factor-2 ladder — but the octave-implied generation ratios
+(1:2:4) do NOT match the observed lepton ratios (mu/e 206.8, tau/mu 16.8, tau/e 3477.2): 0 octave lines
+match within 25%, max deviation 15.8×. TQMQG1392 the octave family count = 3 (matches the generation count)
+with a monotone hierarchy; TQMQG1392 CLASSIFICATION: PARTIAL RELATION — the generation COUNT and monotone
+ordering emerge from octave structure, but the numerical mass ratios (1:2:4 vs 1:17:207) do not (the
+octave quantization fixes the family count, not the mass values; connects QG138 FUNDAMENTAL octave law,
+QG85 POSTULATED, QG129 PARTIAL MAPPING, QG134 FUNDAMENTAL SPLIT; open question: what steepens 1:2:4 into
+1:17:207). Report: Docs/Research/TQMQG_MassHierarchyFromOctaves.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.

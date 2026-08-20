@@ -1371,6 +1371,19 @@ parameter-sensitive.
   K^(3/2)/N, w_max ~ √K), a spectral/combinatorial law independent of dynamics parameters (explains QG137;
   QG106 octave families and QG137 effective-size law share one origin)
 
+### TQM-QG139: Mass Hierarchy from Octave Structure (TQM-QG Phase 139)
+**Status:** Complete (PARTIAL RELATION). Octave structure gives the generation COUNT, not the mass ratios.
+- observable sector spectrum splits into 3 octave bands with monotone positions (band 0: start 0.622 center
+  0.879 modes 4; band 1: start 1.799 center 1.758 modes 4; band 2: start 2.790 center 3.516 modes 87);
+  spectral gaps ~1.45, 0.78 (contiguous)
+- octave center ratios = [1.000, 2.000, 4.000] (perfect geometric factor-2 ladder) but octave-implied
+  generation ratios (1:2:4) do NOT match observed lepton ratios (mu/e 206.8, tau/mu 16.8, tau/e 3477.2):
+  0 matches within 25%, max deviation 15.8×
+- octave family count = 3 (matches generation count) with monotone hierarchy → PARTIAL RELATION: generation
+  COUNT and ordering emerge from octave structure, numerical ratios (1:2:4 vs 1:17:207) do not (octave
+  quantization fixes the family count, not mass values; connects QG138, QG85, QG129, QG134; open question:
+  what steepens 1:2:4 into 1:17:207)
+
 ---
 
 ## Overall Statistics
@@ -1382,8 +1395,8 @@ parameter-sensitive.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 140 | Complete |
-| **Total** | **247** | |
+| TQM-QG | 141 | Complete |
+| **Total** | **248** | |
 
 ## Key Unsolved Problems
 
