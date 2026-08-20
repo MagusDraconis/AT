@@ -9035,6 +9035,22 @@ explains QG129 PARTIAL MAPPING and QG133 MODERATE, and is a candidate structural
 boson/fermion distinction (rung states vs family-index states). Report:
 Docs/Research/TQMQG_BosonFermionSplit.md.
 
+**TQM-QG Phase 135 (Origin of the family index) — COMPLETED (3/3 tests pass; 411/411 TQM-QG verified; COMPUTATIONAL):**
+Question: can the family index emerge from internal attractor structure within a single sector? Added
+FamilyIndexOrigin (observable-sector intra-sector modes ω=√λ, octave-family splitting of the single sector's
+spectrum, family stability across the feedback×damping grid, hierarchy formation, generation count, origin
+score). TQMQG1350 the single observable sector has 95 internal modes with a banded structure
+(0.622,0.622,1.227,1.227,1.799,1.799,...) that splits into 3 OCTAVE FAMILIES sizes [4,4,87] — the family
+index EMERGES from intra-sector modes, not separate rungs. TQMQG1351 the 3-family structure is the DEFAULT
+regime (f=0.9,d=0.3) and holds for 6/9 parameter combos, but HIGHER DAMPING (d=0.4) produces a 4th octave
+family [4,6,53,32] — the count is parameter-sensitive; the octave hierarchy is fully formed at default
+(family starts 0.622, 1.799, 2.790, a frequency-doubling ladder). TQMQG1352 intra-sector generation count at
+default = 3 (exactly the observed 3 generations) but not fully stable; TQMQG1352 CLASSIFICATION: PARTIAL
+ORIGIN — the family index emerges from intra-sector octave structure (3 families at default, NOT
+postulated) but the count is parameter-sensitive (not a robust FAMILY ORIGIN); connects QG134 FUNDAMENTAL
+SPLIT, QG106 octave-family structure, QG118 family scaling, QG122 regime-dependent family compression.
+Report: Docs/Research/TQMQG_FamilyIndexOrigin.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.

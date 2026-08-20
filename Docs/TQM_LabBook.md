@@ -1326,6 +1326,18 @@ sector family index.
   (anchors spread); explains QG129 PARTIAL MAPPING and QG133 MODERATE; candidate structural origin of the
   boson/fermion distinction
 
+### TQM-QG135: Origin of the Family Index (TQM-QG Phase 135)
+**Status:** Complete (PARTIAL ORIGIN). The family index emerges from intra-sector octave structure but is
+parameter-sensitive.
+- the single observable sector has 95 internal modes with a banded spectrum (0.622,0.622,1.227,1.227,
+  1.799,1.799,...) that splits into 3 OCTAVE FAMILIES sizes [4,4,87] — the family index EMERGES from
+  intra-sector modes, not separate rungs
+- 3-family structure is the DEFAULT regime (f=0.9,d=0.3, holds 6/9 combos) but HIGHER DAMPING (d=0.4)
+  produces a 4th octave family [4,6,53,32] — parameter-sensitive; octave hierarchy fully formed at default
+  (family starts 0.622, 1.799, 2.790)
+- intra-sector generation count at default = 3 (the observed 3 generations) but not fully stable → PARTIAL
+  ORIGIN (not POSTULATED, not robust FAMILY ORIGIN); connects QG134 FUNDAMENTAL SPLIT, QG106, QG118, QG122
+
 ---
 
 ## Overall Statistics
@@ -1337,8 +1349,8 @@ sector family index.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 136 | Complete |
-| **Total** | **243** | |
+| TQM-QG | 137 | Complete |
+| **Total** | **244** | |
 
 ## Key Unsolved Problems
 
