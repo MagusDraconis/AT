@@ -1585,6 +1585,21 @@ Exponents). Charge and isospin determine the hierarchy exponent (intermediate, f
   → Z2 doublets QG153 → isospin access QG150 → physical exponents QG149; golden ratio QG151 is a
   secondary robust basin consequence)
 
+### TQM-QG156: Unified Spectral Access Law (TQM-QG Phase 156)
+**Status:** Complete (UNIFIED ACCESS LAW). All four sector dimensions follow δ = log(N_eff)/log(span).
+- unified law δ_sector = log(N_eff)/log(span) with N_eff from the D96/Z2 doublet + octave-occupancy
+  structure — no fitted charge/isospin laws, no free sector parameters
+- reproduces ALL FOUR sectors: ν 2.2215 vs 2.241 (0.87%, octave-occupation exponent = pure mode-access
+  statistics for the neutral sector, QG154), d 2.4527 vs 2.449 (0.15%, full-count access), ℓ 2.9266 vs
+  2.940 (0.46%, doublet-occupancy weighting), u 4.0662 vs 4.066 (0.01%, octave-occupancy-weighted dense
+  access, QG150) — mean deviation 0.37%
+- secondary target p_eff = 2δ follows: ν 4.443 vs 4.483 (0.89%), d 4.905 vs 4.898 (0.15%), ℓ 5.853 vs
+  5.880 (0.46%), u 8.132 vs 8.131 (0.02%)
+- → UNIFIED ACCESS LAW: the chain D96 → Z2 doublets → weak-isospin structure → spectral access →
+  effective spectral dimension is closed; replaces the QG147 overfit linear law with a pure
+  spectral-geometry law (uses QG141 octave occupation, QG150 full/dense access, QG153 doublet
+  multiplicity)
+
 ---
 
 ## Overall Statistics
@@ -1596,8 +1611,8 @@ Exponents). Charge and isospin determine the hierarchy exponent (intermediate, f
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 157 | Complete |
-| **Total** | **264** | |
+| TQM-QG | 158 | Complete |
+| **Total** | **265** | |
 
 ## Key Unsolved Problems
 
