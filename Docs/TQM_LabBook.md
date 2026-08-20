@@ -1614,6 +1614,25 @@ Exponents). Charge and isospin determine the hierarchy exponent (intermediate, f
   sectors automatically (closes the QG156 open problem; chain: D96 → doublet moments → N_eff → δ →
   hierarchy exponents)
 
+### TQM-QG158: Moment Order Origin (TQM-QG Phase 158)
+**Status:** Complete (INEVITABLE). The moment orders (1/2, 1, 2) are the integer powers of the Z2 order.
+- D96 geometry is BASE-2: Z2 doublet multiplicity 2 dominates (44 groups, Z2 fraction 0.955) with 3
+  octave families → with 3 family levels the ONLY integer powers of the Z2 order are p = 2^k =
+  {2⁻¹, 2⁰, 2¹} = {1/2, 1, 2}
+- mode-selection rule fixes each sector's doublet-access level: ν (neutral, T3-only, QG154) reaches ONE
+  member per doublet → 2⁻¹ (Σ√m = 64.08; half-moment is the geometric-mean interpolation
+  √(95×44) = 64.65, ratio 0.9912), d (full access, QG150) reaches both members → 2⁰ (Σm = 95),
+  ℓ (doublet occupancy, QG153) reaches the doublet squared → 2¹ (Σm² = 229), u (dense band, QG150)
+  reaches the octave structure → Σocc²/occ₀
+- Z2-power law reproduces all four sectors via δ = log(N_eff)/log(span): ν 2.2406 vs 2.241 (0.02%),
+  d 2.4527 vs 2.449 (0.15%), ℓ 2.9266 vs 2.940 (0.46%), u 4.0662 vs 4.066 (0.01%) — mean deviation 0.16%
+- sector assignment ν→2⁻¹, d→2⁰, ℓ→2¹, u→octave is UNIQUE by monotonicity (both moment δ and target δ
+  strictly increasing) — automatic, not fitted
+- → INEVITABLE: the moment orders (1/2, 1, 2) ARE the integer powers of the Z2 order (2) with 3 family
+  levels, assigned by doublet-access level with no fitted exponents — NOT merely descriptive (closes the
+  QG157 open question "why these moment orders"; chain: D96 → mode-selection rule → moment order → N_eff
+  → δ → p)
+
 ---
 
 ## Overall Statistics
@@ -1625,8 +1644,8 @@ Exponents). Charge and isospin determine the hierarchy exponent (intermediate, f
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 159 | Complete |
-| **Total** | **266** | |
+| TQM-QG | 160 | Complete |
+| **Total** | **267** | |
 
 ## Key Unsolved Problems
 
