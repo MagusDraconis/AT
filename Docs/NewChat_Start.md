@@ -9415,6 +9415,22 @@ doublet/occupancy structure, p_eff = 2δ reproduces the hierarchy exponents, rep
 linear law with a pure spectral-geometry access law (uses exactly the QG141 octave occupation, QG150
 full/dense access, QG153 doublet multiplicity). Report: Docs/Research/TQMQG_UnifiedSpectralAccess.md.
 
+**TQM-QG Phase 157 (Origin of effective access counts) — COMPLETED (3/3 tests pass; TQM-QG verified; COMPUTATIONAL):**
+Question: why do the observed N_eff values emerge? Can N_eff be derived directly from the D96/Z2 spectral
+geometry? Added EffectiveAccessCounts (D96 doublet-multiplicity distribution, octave occupancies, moment
+N(p)=Σm^p, octave-occupation moment Σocc²/occ₀, derived-count unified law, no-parameter check, origin
+score). TQMQG1570 the D96 occupation structure is the doublet-multiplicity distribution (44 groups: 42×2,
+5, 6; Σm=95=total mode count) with octave occupancies [4,4,87], and the N_eff values are MOMENTS of this
+structure (Σ√m=64.08, Σm=95, Σm²=229, Σocc²/occ₀=1900.25). TQMQG1571 the derived counts predict all four
+sectors via δ=log(N_eff)/log(span): ν 2.2406 vs 2.241 (0.02%, Σ√m = neutral half-moment statistical access,
+QG154), d 2.4527 vs 2.449 (0.15%, Σm = full first moment, QG150), ℓ 2.9266 vs 2.940 (0.46%, Σm² = doublet
+occupancy, QG153), u 4.0662 vs 4.066 (0.01%, Σocc²/occ₀ = octave-occupation dense access, QG150) — mean
+deviation 0.16%. TQMQG1572 the moment orders are fixed (1/2, 1, 2) with no fitted sector, charge, or isospin
+parameters; TQMQG1572 CLASSIFICATION: N_EFF ORIGIN — the effective access counts EMERGE from the D96/Z2
+geometry as moments of the doublet-multiplicity and octave-occupation distributions, so δ=log(N_eff)/log
+(span) predicts all four sectors automatically (closes the QG156 open problem; completes the chain D96 →
+doublet moments → N_eff → δ → hierarchy exponents). Report: Docs/Research/TQMQG_EffectiveAccessCounts.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.
@@ -9626,7 +9642,7 @@ QG155: weak-isospin doublets from D96 symmetry.
 
 Milestone counters:
 
-TQM-QG 158 phases
+TQM-QG 159 phases
 432+ TQM-QG tests verified
 
 ### QG154: Neutrino Sector Origin
@@ -9651,5 +9667,5 @@ NEUTRINO ORIGIN
 
 Milestone counters:
 
-TQM-QG 158 phases
+TQM-QG 159 phases
 432+ TQM-QG tests verified

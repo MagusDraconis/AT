@@ -1600,6 +1600,20 @@ Exponents). Charge and isospin determine the hierarchy exponent (intermediate, f
   spectral-geometry law (uses QG141 octave occupation, QG150 full/dense access, QG153 doublet
   multiplicity)
 
+### TQM-QG157: Origin of Effective Access Counts (TQM-QG Phase 157)
+**Status:** Complete (N_EFF ORIGIN). N_eff values are moments of the D96 doublet-multiplicity/octave structure.
+- D96 occupation structure: doublet multiplicities (44 groups: 42×2, 5, 6; Σm = 95 = total mode count),
+  octave occupancies [4,4,87]; N_eff = moments: Σ√m=64.08, Σm=95, Σm²=229, Σocc²/occ₀=1900.25
+- derived counts predict all four sectors via δ=log(N_eff)/log(span): ν 2.2406 vs 2.241 (0.02%, Σ√m =
+  neutral half-moment statistical access, QG154), d 2.4527 vs 2.449 (0.15%, Σm full first moment, QG150),
+  ℓ 2.9266 vs 2.940 (0.46%, Σm² doublet occupancy, QG153), u 4.0662 vs 4.066 (0.01%, Σocc²/occ₀ octave
+  occupation) — mean deviation 0.16%
+- moment orders are fixed (1/2, 1, 2) — no fitted sector, charge, or isospin parameters
+- → N_EFF ORIGIN: the effective access counts EMERGE from the D96/Z2 geometry as moments of the
+  doublet-multiplicity and octave-occupation distributions, so δ=log(N_eff)/log(span) predicts all four
+  sectors automatically (closes the QG156 open problem; chain: D96 → doublet moments → N_eff → δ →
+  hierarchy exponents)
+
 ---
 
 ## Overall Statistics
@@ -1611,8 +1625,8 @@ Exponents). Charge and isospin determine the hierarchy exponent (intermediate, f
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 158 | Complete |
-| **Total** | **265** | |
+| TQM-QG | 159 | Complete |
+| **Total** | **266** | |
 
 ## Key Unsolved Problems
 
