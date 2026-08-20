@@ -9440,6 +9440,28 @@ QG151–152:
 - Weak-isospin mode selection is associated with this doublet structure.
 - Golden-ratio shift appears as a robust consequence within the observable-dynamics basin, but is not yet established as fundamental.
 
+## Fermion Structure Derived From Spectral Geometry
+
+Chain:
+
+QG138:
+Family count from octave quantization
+
+QG141:
+Hierarchy exponents from spectral density
+
+QG149:
+Sector exponents from mode access
+
+QG150:
+Mode access from isospin selection
+
+QG153:
+Z2 doublet symmetry origin
+
+QG154:
+Neutrino origin from neutral-charge limit
+
 ## Key Open Problems
 
 - "Why three generations?" → REMOVED (solved: QG138 derives familyCount = floor(log2(ωmax/ωmin)) + 1).
