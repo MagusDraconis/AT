@@ -1291,6 +1291,18 @@ hierarchy.
   on ladder rungs (candidate falsifiable prediction: 95 GeV excess as ladder-rung signature for FCC/HL-LHC;
   connects QG130, QG125, QG128, QG129)
 
+### TQM-QG132: First Falsifiable Collider Prediction (TQM-QG Phase 132)
+**Status:** Complete (FALSIFIABLE PREDICTION). The sector hierarchy predicts 9 specific unobserved resonances.
+- Z-anchor ladder has 9 MISSING rungs (not near observed Z/H/t): predicted resonances at 106.39, 136.78,
+  151.98, 182.38, 197.58, 212.78, 227.97, 243.17, 263.43 GeV; PRIMARY = 106.39 GeV in the clean Z–H window
+  (search window 98.6–114.2 GeV)
+- decay cascade emits characteristic quanta (unit→15.20 GeV × 10, top→20.26 GeV × 1) terminating in the
+  observable 3-family sector (radius 6, families 3); 8 discrete threshold regions
+- all predicted resonances below LHC13 and FCC-hh (testable) → FALSIFIABLE PREDICTION: 9 specific
+  yet-unobserved resonances (primary ~106 GeV) with defined decay signature, all in LHC/FCC reach — the
+  FIRST falsifiable collider prediction of the sector hierarchy (null result at ~106 GeV would rule out the
+  Z-anchor electroweak calibration; connects QG131, 95 GeV excess hint, QG125, QG128)
+
 ---
 
 ## Overall Statistics
@@ -1302,8 +1314,8 @@ hierarchy.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 133 | Complete |
-| **Total** | **240** | |
+| TQM-QG | 134 | Complete |
+| **Total** | **241** | |
 
 ## Key Unsolved Problems
 

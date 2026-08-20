@@ -8987,6 +8987,22 @@ electroweak masses, and pair thresholds all sit on sector-ladder rungs and null 
 ACCESSIBLE, QG125 METASTABLE, QG128 PREDICTIVE SPECTRUM, QG129 PARTIAL MAPPING). Report:
 Docs/Research/TQMQG_ColliderDataAudit.md.
 
+**TQM-QG Phase 132 (First falsifiable collider prediction) — COMPLETED (3/3 tests pass; 402/402 TQM-QG verified; COMPUTATIONAL):**
+Question: does the sector hierarchy predict a specific yet-unobserved energy region or decay signature? Added
+FirstFalsifiablePrediction (missing-rung identification vs observed Z/H/t within 5%, predicted-resonance
+list, primary resonance + search window, cascade endpoints with calibrated quanta, threshold regions,
+collider reach, prediction score). TQMQG1320 the Z-anchor ladder has 9 MISSING rungs (rungs not near
+Z/H/t): predicted resonances at 106.39, 136.78, 151.98, 182.38, 197.58, 212.78, 227.97, 243.17, 263.43 GeV;
+the PRIMARY prediction is 106.39 GeV in the clean Z–H window (search window 98.6–114.2 GeV). TQMQG1321 the
+decay cascade emits a characteristic quantum signature (unit→15.20 GeV × 10, top→20.26 GeV × 1) and
+terminates in the observable 3-family sector (radius 6, families 3), with 8 discrete threshold regions.
+TQMQG1322 all predicted resonances are below LHC13 and FCC-hh (testable); TQMQG1322 CLASSIFICATION:
+FALSIFIABLE PREDICTION — 9 specific yet-unobserved resonances (primary ~106 GeV) with a defined decay
+signature, all within LHC/FCC reach: THE FIRST FALSIFIABLE COLLIDER PREDICTION of the sector hierarchy (a
+null result at ~106 GeV would rule out the Z-anchor electroweak calibration; connects QG131 CONSISTENT
+SIGNATURE, the 95 GeV excess hint, QG125 METASTABLE decay, QG128 PREDICTIVE SPECTRUM). Report:
+Docs/Research/TQMQG_FirstFalsifiablePrediction.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.
