@@ -9051,6 +9051,21 @@ postulated) but the count is parameter-sensitive (not a robust FAMILY ORIGIN); c
 SPLIT, QG106 octave-family structure, QG118 family scaling, QG122 regime-dependent family compression.
 Report: Docs/Research/TQMQG_FamilyIndexOrigin.md.
 
+**TQM-QG Phase 136 (Robustness of the 3-family sector) — COMPLETED (3/3 tests pass; 414/414 TQM-QG verified; COMPUTATIONAL):**
+Question: is there a dynamical regime where the 3-family structure becomes stable and parameter-independent?
+Added ThreeFamilyRobustness (feedback sweep, damping sweep, size scaling 48–192, refined family-stability
+basin, universality check, robustness score). TQMQG1360 HIGH feedback (f≥0.7) and LOW-to-moderate damping
+(d≤0.4) give exactly 3 families (f<0.7 → 4; d=0.5 → 4) — the 3-family regime is feedback-gated.
+TQMQG1361 size scaling at default: n=48 → 2 families, n=64 → 3, n=96 → 3, n=128 → 4, n=192 → 4 (moderate
+sizes 64–96 give 3; NOT size-independent); the refined f×d basin (f 0.6–1.0, d 0.05–0.35) at n=96 has a
+3-family fraction of 0.937 (coherent basin). TQMQG1362 the default point gives 3 and the basin is coherent
+but the structure is NOT universal across sizes; TQMQG1362 CLASSIFICATION: PARTIAL ROBUSTNESS — the
+3-family state is stable in a coherent dynamical basin (high feedback, low damping; 93.7% of the grid) but
+is not universal across network sizes (finite-size selection of the family count: 2 at small n, 4 at large
+n — the observed 3 generations correspond to a specific size range; connects QG135, QG119/120 finite-size
+effects, QG116 strong-feedback universal attractor). Report:
+Docs/Research/TQMQG_ThreeFamilyRobustness.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.

@@ -1338,6 +1338,17 @@ parameter-sensitive.
 - intra-sector generation count at default = 3 (the observed 3 generations) but not fully stable → PARTIAL
   ORIGIN (not POSTULATED, not robust FAMILY ORIGIN); connects QG134 FUNDAMENTAL SPLIT, QG106, QG118, QG122
 
+### TQM-QG136: Robustness of the 3-Family Sector (TQM-QG Phase 136)
+**Status:** Complete (PARTIAL ROBUSTNESS). The 3-family state is stable in a coherent dynamical basin.
+- feedback sweep: HIGH feedback (f≥0.7) gives exactly 3 families, f<0.7 gives 4 (feedback-gated); damping
+  sweep: d≤0.4 gives 3, d=0.5 gives 4
+- size scaling at default: n=48 → 2, n=64 → 3, n=96 → 3, n=128 → 4, n=192 → 4 (moderate sizes 64–96 give 3;
+  NOT size-independent); refined f×d basin at n=96 has 3-family fraction 0.937 (coherent basin)
+- default point gives 3, basin coherent, but structure NOT universal across sizes → PARTIAL ROBUSTNESS:
+  stable in a coherent dynamical basin (high feedback, low damping, 93.7% of grid) but finite-size selection
+  of the family count (2 at small n, 4 at large n — the observed 3 generations correspond to a specific size
+  range; connects QG135, QG119/120 finite-size effects, QG116)
+
 ---
 
 ## Overall Statistics
@@ -1349,8 +1360,8 @@ parameter-sensitive.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 137 | Complete |
-| **Total** | **244** | |
+| TQM-QG | 138 | Complete |
+| **Total** | **245** | |
 
 ## Key Unsolved Problems
 
