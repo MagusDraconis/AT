@@ -8857,6 +8857,19 @@ could emerge (connects QG89 energy = actualization rate, QG117 discrete ladder, 
 discreteness, QG122 energy order parameter, and the QG118–120 family arc). Report:
 Docs/Research/TQMQG_EnergyGeometryHierarchy.md.
 
+**TQM-QG Phase 124 (Standard Model sectors from energy hierarchy) — COMPLETED (3/3 tests pass; 378/378 TQM-QG verified; COMPUTATIONAL):**
+Question: can observed particle-sector structure (families, charges, interactions) correspond to specific
+energy-defined attractor sectors? Added SMFromEnergySectors (energy-ordered sector listing, observable-vs-total
+sector selection, observable 3-family check, discrete transition test, mapping score). TQMQG1240 sectors are
+cleanly energy-ordered; total sectors = 12, observable baseline sectors (E≤1.0) = 2, high-energy-only sectors
+= 10 — observable sector set is a strict subset of the full hierarchy. TQMQG1241 geometry classes grow with
+energy and baseline regime includes a 3-family class; family structure persists across the energy axis. TQMQG1242
+sector transitions are discrete and all correspondence conditions hold (ordered hierarchy, class growth,
+observable 3-family class, discrete transitions, observable subset selection); TQMQG1242 CLASSIFICATION:
+SECTOR ORIGIN — observed Standard-Model-like sector structure can be interpreted as the low-energy-visible
+projection of a broader energy-defined attractor sector hierarchy. Report:
+Docs/Research/TQMQG_SMFromEnergySectors.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.

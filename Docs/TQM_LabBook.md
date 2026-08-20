@@ -1195,6 +1195,14 @@ OPEN/WEAK: matter emergence + dynamics.
   energy unlocks new sectors; classes grow monotonically AND high-energy-only sectors exist → SECTOR
   HIERARCHY (connects QG89, QG117, QG121, QG122, and the QG118–120 family arc)
 
+### TQM-QG124: Standard Model Sectors from Energy Hierarchy (TQM-QG Phase 124)
+**Status:** Complete (SECTOR ORIGIN). Observed sector structure maps to low-energy-visible attractor sectors.
+- sectors are cleanly energy-ordered; total sectors = 12, observable baseline sectors (E≤1.0) = 2, high-energy-only
+  sectors = 10 → observable sector set is a strict subset of the full hierarchy
+- baseline regime includes a 3-family class; geometry classes grow with energy; family structure persists
+- sector transitions are discrete; all correspondence conditions hold (ordered hierarchy, class growth,
+  observable 3-family class, discrete transitions, observable subset selection) → SECTOR ORIGIN
+
 ---
 
 ## Overall Statistics
@@ -1206,8 +1214,8 @@ OPEN/WEAK: matter emergence + dynamics.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 125 | Complete |
-| **Total** | **232** | |
+| TQM-QG | 126 | Complete |
+| **Total** | **233** | |
 
 ## Key Unsolved Problems
 
