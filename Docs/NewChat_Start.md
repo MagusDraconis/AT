@@ -8920,6 +8920,23 @@ detectable traces (candidate discrete excitation-spectrum-like signature for obs
 QG125 METASTABLE decay, QG126 SECTOR-PARTICLE MAPPING, QG119-120 horizon suppression hides steady-state
 sectors but not their decay). Report: Docs/Research/TQMQG_HighEnergySectorSignatures.md.
 
+**TQM-QG Phase 128 (Observable spectrum from sector transitions) — COMPLETED (3/3 tests pass; 390/390 TQM-QG verified; COMPUTATIONAL):**
+Question: do sector transitions generate a predictable spectrum of emitted energy/information quanta? Added
+SectorTransitionSpectrum (transition ladder rungs, ladder spacings, emitted-quantum multiset with
+multiplicities, dominant quantum, discrete-spectrum check, spectrum reproducibility across decay speeds,
+energy thresholds, spectrum score). TQMQG1280 the decay ladder has 12 rungs (17.333→16→15→14→13→12→11→10→9→
+8→7→6.000); each transition emits a quantum = |Δradius| (rung 0→1 emits 1.333, the ten lower transitions
+each emit 1.000). TQMQG1281 the cascade spectrum has 2 lines: quantum 1.000 × 10 (dominant, fraction 0.909)
+and quantum 1.333 × 1 — a discrete spectrum with a dominant line — and the fine ceiling sweep reveals 8
+DISCRETE energy thresholds (1.25→1.5→1.75→2.0→2.25→2.5→2.75→3.0) that predict the ladder. TQMQG1282 the
+spectrum is REPRODUCIBLE across decay speeds (same rungs and dominant quantum for 3 vs 6 evolutions per ramp
+step) and dominated by the fundamental UNIT quantum (Δradius=1); TQMQG1282 CLASSIFICATION: PREDICTIVE
+SPECTRUM — sector transitions emit a discrete, reproducible spectrum dominated by a fundamental unit quantum,
+with the transition ladder predicted by discrete energy thresholds (candidate origin of discrete quantum
+emission / atomic-like spectra from network-sector transitions; connects QG127 decay signatures, QG89 energy
+= actualization rate, QG126 SECTOR-PARTICLE MAPPING). Report:
+Docs/Research/TQMQG_SectorTransitionSpectrum.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.

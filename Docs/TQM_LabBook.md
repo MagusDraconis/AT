@@ -1244,6 +1244,18 @@ sectors: the observable 3-family sector = observed families; high-energy sectors
   transients and discrete energy thresholds (candidate discrete excitation-spectrum-like signature; connects
   QG125, QG126, QG119-120)
 
+### TQM-QG128: Observable Spectrum from Sector Transitions (TQM-QG Phase 128)
+**Status:** Complete (PREDICTIVE SPECTRUM). Sector transitions emit a discrete, reproducible spectrum.
+- decay ladder has 12 rungs (17.333→16→15→14→13→12→11→10→9→8→7→6.000); each transition emits a quantum =
+  |Δradius| (top transition emits 1.333, ten lower transitions each emit 1.000)
+- cascade spectrum has 2 lines: quantum 1.000 × 10 (dominant, fraction 0.909) and 1.333 × 1 → discrete
+  spectrum with a dominant line; 8 discrete energy thresholds (1.25→1.5→1.75→2.0→2.25→2.5→2.75→3.0) predict
+  the ladder
+- spectrum REPRODUCIBLE across decay speeds (same rungs + dominant quantum at 3 vs 6 evolutions/ramp step);
+  dominated by fundamental UNIT quantum (Δradius=1) → PREDICTIVE SPECTRUM: candidate origin of discrete
+  quantum emission / atomic-like spectra from network-sector transitions (connects QG127, QG89 energy =
+  actualization rate, QG126)
+
 ---
 
 ## Overall Statistics
@@ -1255,8 +1267,8 @@ sectors: the observable 3-family sector = observed families; high-energy sectors
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 129 | Complete |
-| **Total** | **236** | |
+| TQM-QG | 130 | Complete |
+| **Total** | **237** | |
 
 ## Key Unsolved Problems
 
