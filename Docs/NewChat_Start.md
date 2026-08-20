@@ -9259,6 +9259,23 @@ main signal via the partial T3-only LOO success, but the 3-parameter law is over
 points; tempers QG147 EXPONENT ORIGIN; open: can a law with fewer parameters or a spectral origin predict
 the neutrino exponent ~4.48). Report: Docs/Research/TQMQG_ExponentLawValidation.md.
 
+**TQM-QG Phase 149 (Physical origin of sector exponents) — COMPLETED (3/3 tests pass; TQM-QG verified; COMPUTATIONAL):**
+Question: can sector exponents emerge from a physical interaction mechanism rather than parameter fitting?
+Added PhysicalSectorExponentOrigin (local Weyl exponents per spectral sub-range, octave mode occupation
+weighting, effective spectral dimension δ_eff = p_eff/2 per sector, isospin up/down exponent splitting,
+2×Weyl mechanism check for the down sector, origin score). TQMQG1490 the spectral density shifts
+substantially across octave bands (full δ=2.473; octave0 δ=1.318; octave1 δ=3.496; octave2 δ=14.171) with
+mode occupation [4,4,87] (top-octave fraction 0.916) — multiple "available dimensions". TQMQG1491 the
+effective dimensions are leptons 2.940, up 4.066, down 2.449 and the up/down exponent splitting is 3.233 (a
+substantial isospin-dependent spectral access). TQMQG1492 the MECHANISM: down p_eff = 4.898 vs 2×Weyl_full
+= 4.946 — deviation 0.96%, i.e. the DOWN sector exponent IS twice the full spectral dimension (no free
+parameters); TQMQG1492 CLASSIFICATION: PHYSICAL ORIGIN — the sector exponents emerge from the spectral
+density (occupation-weighted mode access); the down exponent = 2×Weyl and the up/down splitting is an
+isospin-dependent spectral access — a physical mechanism rather than parameter fitting (replaces the QG148
+OVERFIT linear law; connects QG141 spectral-density exponents, QG145 charge×isospin interaction grounded in
+the spectral structure; open: does up δ_eff = 4.07 correspond to a spectral sub-range such as the octave-1
+band δ = 3.50). Report: Docs/Research/TQMQG_PhysicalSectorExponentOrigin.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.
