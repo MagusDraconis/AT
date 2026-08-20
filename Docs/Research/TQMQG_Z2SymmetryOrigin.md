@@ -125,7 +125,8 @@ CLASSIFICATION: SYMMETRY ORIGIN
 - QG153 found the Z2 symmetries; QG155 explains WHERE they come from: the attractor dynamics generate a
   circulant ring, and the dihedral group D_n's 2D irreps produce the doublets.
 - This closes the chain: circulant dynamics (QG155) → Z2 doublets (QG153) → isospin-constrained access
-  (QG150) → golden-ratio splitting (QG151) → physical exponents (QG149).
+  (QG150) → physical exponents (QG149). The golden-ratio splitting (QG151) is a secondary robust basin
+  consequence (QG152), not a fundamental law.
 - The reflection-from-dynamics + half-shift-from-seed decomposition shows the symmetry is neither fully
   accidental nor fully pre-ordained — it is selected by the dynamics from the seed structure, connecting
   to the dynamical-attractor program (QG116-124).

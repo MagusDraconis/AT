@@ -129,7 +129,10 @@ CLASSIFICATION: DOUBLET ORIGIN
 - The symmetry origin explains WHY the isospin-constrained mode access (QG150) and the golden-ratio
   splitting (QG151) exist: they are properties of a spectrum with an exact Z2 reflection/half-shift
   symmetry.
-- This connects to the physical mechanism chain: Z2 symmetry (QG153) → doublets (QG151) → isospin-guided
-  access (QG150) → physical exponents (QG149).
+- **PRIMARY vs SECONDARY:** the Z2 doublet structure is the primary result (symmetry-generated, QG153; the
+  D96 circulant-ring symmetry is its dynamical origin, QG155). The golden-ratio splitting (QG151) is a
+  secondary robust basin consequence (QG152) — it is NOT a fundamental law.
+- This connects to the physical mechanism chain: circulant dynamics → Z2 symmetry (QG153/155) → doublets
+  (QG151) → isospin-guided access (QG150) → physical exponents (QG149).
 - Fragility under link removal mirrors QG152's finding that the golden ratio holds only within the
   coherent observable basin.
