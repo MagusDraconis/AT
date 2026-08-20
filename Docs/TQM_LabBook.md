@@ -1521,6 +1521,16 @@ lepton hierarchy.
   structure — down = full-spectrum access (δ_eff = Weyl_full), up = golden-ratio-elevated
   (δ_eff = δ_down + φ), T3 guides (r = 0.955; unifies QG145/QG149/QG150)
 
+### TQM-QG152: Golden-Ratio Robustness Audit (TQM-QG Phase 152)
+**Status:** Complete (PARTIAL ROBUSTNESS). The golden ratio is robust within the observable basin, not universal.
+- spectral realization: up δ_eff ≈ Weyl_full + φ holds at default at 0.6% deviation (4.066 vs 4.091)
+- fully damping-robust (all 0.6%) and perturbation-robust (≤0.9% at 5% mode-frequency noise); coherent
+  feedback basin (≥0.7, 0.5 fails at 24.7%)
+- mild size sensitivity (3-8% over n = 64..160) but strongly K-peaked (extreme K 12-20%)
+- → PARTIAL ROBUSTNESS: 18/25 settings <5%, 20/25 <10%; a robust spectral consequence of mode competition
+  within the observable dynamics basin (default K, damping-insensitive, feedback ≥0.7) but not universal —
+  K-sensitivity mirrors the effective-size law QG137/138 and the QG135/136 3-family basin
+
 ---
 
 ## Overall Statistics
@@ -1532,8 +1542,8 @@ lepton hierarchy.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 153 | Complete |
-| **Total** | **260** | |
+| TQM-QG | 154 | Complete |
+| **Total** | **261** | |
 
 ## Key Unsolved Problems
 

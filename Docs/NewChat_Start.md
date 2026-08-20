@@ -9314,6 +9314,23 @@ sector is elevated by the golden-ratio mode-competition fixed point δ_eff(up) =
 the guiding quantum number (r = 0.955; unifies QG145 up-sector enhancement, QG149 down = 2×Weyl physical
 origin, QG150 isospin-constrained mode access). Report: Docs/Research/TQMQG_IsospinModeAccess.md.
 
+**TQM-QG Phase 152 (Golden-ratio robustness audit) — COMPLETED (3/3 tests pass; TQM-QG verified; COMPUTATIONAL):**
+Question: is the golden-ratio relation δ(up)−δ(down)≈φ a fundamental consequence of spectral mode
+competition or a numerical coincidence? Added GoldenRatioAudit (spectral realization up ≈ Weyl_full+φ;
+sweeps over size n=64..160, K=3..10, damping 0.2..0.4, feedback 0.5..1.1, and seeded spectral perturbations
+0.1%..5%; deviation |up−(Weyl+φ)|/(Weyl+φ) at each of 25 settings; robust/weak basin counts; robustness
+score). TQMQG1520 the relation holds at the default dynamics at 0.6% deviation (up=4.066 vs Weyl_full+φ=
+4.091), is mild under size variation (n=64: 7.8%, n=80: 3.5%, n=96: 0.6%, n=128: 3.2%, n=160: 5.7%) but
+strongly K-peaked (K=3: 20.5%, K=4: 12.3%, K=6: 0.6%, K=8: 10.8%, K=10: 19.5%). TQMQG1521 the relation is
+fully damping-robust (all 0.6%), robust to spectral perturbations (≤0.9% even at 5% mode-frequency noise),
+and holds across a coherent feedback basin (feedback ≥0.7; 0.5 fails at 24.7%). TQMQG1522 audit aggregates:
+18/25 settings robust (dev<5%), 20/25 weak (dev<10%), not all below 5%; TQMQG1522 CLASSIFICATION: PARTIAL
+ROBUSTNESS — the golden-ratio relation is a robust spectral consequence of mode competition (0.6% at
+default, damping/perturbation-robust, coherent feedback basin) within the observable-dynamics basin, but
+not universal: extreme K and size settings deviate 12-25% (K-sensitivity mirrors the effective-size law
+QG137/138; consistent with the QG135/136 3-family parameter basin; ties to QG105 spectral universality).
+Report: Docs/Research/TQMQG_GoldenRatioAudit.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.
