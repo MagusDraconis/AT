@@ -1432,6 +1432,17 @@ lepton hierarchy.
   coupling (n≈6.5), but no single sector factor (color, charge, or isospin alone) reproduces all deviations
   (connects QG141/142, QG134; open: what sets n≈6.5)
 
+### TQM-QG144: Weak-Isospin Amplification Origin (TQM-QG Phase 144)
+**Status:** Complete (PARTIAL EFFECT). The up/down split is isospin-signed, but no clean weak-isospin law.
+- up/down split strongly isospin-signed (up T3=+1/2 factor 22.67, down T3=-1/2 factor 0.26, up/down 88.6);
+  raw T3 correlation with log2(factor) weak (0.325; |T3| 0.000)
+- best charge/isospin combination |Q| (r = 0.588, Q·T3 also 0.588) — moderate; up sector cleanly separated
+  (up / max other = 22.6×); charge-SIGN gate FAILS (leptons Q=-1 track the octave law, factor ≈ 1)
+- observed deviation ordering (neutrino 0.144 < down 0.256 < leptons 1.003 < up 22.673) IS reconstructed →
+  PARTIAL EFFECT: strongly signed up/down split + reconstructed ordering, but no single isospin/charge
+  combination reproduces the full hierarchy (amplification specific to the up sector Q=+2/3, T3=+1/2; not a
+  linear charge-magnitude law; connects QG143; open: what orders neutrino<down<lepton<up at octave baseline)
+
 ---
 
 ## Overall Statistics
@@ -1443,8 +1454,8 @@ lepton hierarchy.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 145 | Complete |
-| **Total** | **252** | |
+| TQM-QG | 146 | Complete |
+| **Total** | **253** | |
 
 ## Key Unsolved Problems
 

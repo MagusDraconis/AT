@@ -9182,6 +9182,22 @@ coupling (n≈6.5), but no single sector factor (color, charge, or isospin alone
 (connects QG141/142 spectral law, QG134 FUNDAMENTAL SPLIT; open: what sets n≈6.5). Report:
 Docs/Research/TQMQG_QuarkAmplification.md.
 
+**TQM-QG Phase 144 (Weak-isospin amplification origin) — COMPLETED (3/3 tests pass; TQM-QG verified; COMPUTATIONAL):**
+Question: can weak-isospin coupling explain the quark hierarchy amplification? Added WeakIsospinAmplification
+(T3 and |T3| correlations with log2(deviation factor), up/down asymmetry, charge/isospin combination
+correlations, charge-sign gate, sector separation, hierarchy ordering reconstruction, origin score).
+TQMQG1440 the up/down split is STRONGLY isospin-signed (up T3=+1/2 factor 22.67, down T3=-1/2 factor 0.26,
+up/down = 88.6) though raw T3 correlation with log2(factor) is weak (0.325; |T3| 0.000). TQMQG1441 the best
+charge/isospin combination is |Q| (r = 0.588; Q·T3 also 0.588) — only moderate — and the up sector is
+cleanly separated (up / max other = 22.6×), but the charge-SIGN gate FAILS (leptons with Q=-1 still track
+the octave law, factor ≈ 1, not suppressed like down). TQMQG1442 the observed deviation ordering
+(neutrino 0.144 < down 0.256 < leptons 1.003 < up 22.673) IS reconstructed; TQMQG1442 CLASSIFICATION:
+PARTIAL EFFECT — the up/down split is strongly isospin-signed and the ordering reconstructed, but no single
+isospin/charge combination reproduces the full hierarchy (moderate correlations, charge-sign gate fails —
+the amplification is specific to the up sector Q=+2/3, T3=+1/2, not a linear charge-magnitude law; connects
+QG143 PARTIAL FACTOR; open: what single quantity orders neutrino<down<lepton<up while leaving leptons at
+the octave baseline). Report: Docs/Research/TQMQG_WeakIsospinAmplification.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.
