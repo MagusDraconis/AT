@@ -9448,11 +9448,10 @@ QG151–152:
 
 Open Questions:
 
-- exact neutrino-sector origin (mass values, normal vs inverted ordering, Majorana character)
+- exact neutrino mass law (mass values, normal vs inverted ordering, Majorana character)
 - unified quark-sector hierarchy law (single law reproducing up AND down hierarchies)
-- physical origin of Z2 doublet symmetry (why the reflection/half-shift automorphism of the 12-regular adjacency)
-- experimental validation of the 106 GeV prediction (QG132 primary falsifiable resonance)
-- observable tests of sector-ladder physics (collider signatures of the energy-ladder rung states)
+- physical meaning of Z2 doublet symmetry (why the reflection/half-shift automorphism of the 12-regular adjacency)
+- experimental validation of the 106 GeV resonance (QG132 primary falsifiable prediction)
 
 ## Status Table
 
@@ -9464,11 +9463,11 @@ Open Questions:
 | Sector Exponents (physical) | QG149 | PHYSICAL ORIGIN |
 | Mode Access | QG150 | MODE-ACCESS ORIGIN |
 | Z2 Doublet Structure | QG153 | DOUBLET ORIGIN |
-| Neutrino Sector | QG154 | NEUTRINO ORIGIN (structural; exact masses open) |
+| Neutrino Sector | QG154 | NEUTRINO ORIGIN (structural) — exact mass law OPEN |
 | Quark Hierarchy (unified law) | — | OPEN |
-| Neutrino Hierarchy (exact) | — | OPEN |
-| Z2 Symmetry Origin (physical) | — | OPEN |
-| 106 GeV Prediction (validation) | QG132 | FALSIFIABLE PREDICTION (not yet validated) |
+| Neutrino Mass Law (exact) | — | OPEN |
+| Z2 Doublet Symmetry (meaning) | — | OPEN |
+| 106 GeV Resonance (validation) | QG132 | FALSIFIABLE PREDICTION (not yet observed) |
 | Sector-Ladder Observables | QG130 | PREDICTED (no data yet) |
 | Sector Exponent Law p(Q,T3) | QG147 | HISTORICAL (overfit) — superseded by QG149 |
 
