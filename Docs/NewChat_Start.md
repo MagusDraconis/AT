@@ -9244,6 +9244,21 @@ p = p0 + a·Q + b·T3 (resolves QG146 PARTIAL LAW; the full fermion mass law = o
 spectral exponents QG141 × sector exponents p(Q,T3); the up sector's elevated δ_eff = 4.07 is a candidate
 signature of up-type amplification). Report: Docs/Research/TQMQG_SectorExponentLaw.md.
 
+**TQM-QG Phase 148 (Independent validation of the exponent law) — COMPLETED (3/3 tests pass; TQM-QG verified; COMPUTATIONAL):**
+Question: does the QG147 law p = 6.760 − 1.473·Q + 4.706·T3 correctly predict fermion sectors NOT used to
+construct it? Added ExponentLawValidation (neutrino sector prediction with Q=0, T3=+1/2, leave-one-out with
+2-parameter reduced models p = p0 + k·T3 and p = p0 + k·Q, saturated-fit overfitting check, overall
+out-of-sample deviation, validation score). TQMQG1480 the NEUTRINO prediction (the only fully unseen
+fermion sector) is 9.113 vs observed 4.483 — deviation 103.3%, a genuine out-of-sample failure. TQMQG1481
+leave-one-out with the T3-only reduced model generalizes partially (held-out deviations leptons 16.7%, up
+27.7%, down 20.1%, mean 21.5%) but the Q-only model is worse (leptons 53.4%, up 57.9%, down 38.4%, mean
+49.9%). TQMQG1482 the 3-parameter law is a SATURATED fit (3 params, 3 points — exact interpolation) and
+the overall deviation (neutrino + best LOO) is 0.624; TQMQG1482 CLASSIFICATION: OVERFIT — the law
+reproduces its training sectors exactly but does NOT predict the unseen neutrino sector (isospin carries the
+main signal via the partial T3-only LOO success, but the 3-parameter law is over-parameterized for 3
+points; tempers QG147 EXPONENT ORIGIN; open: can a law with fewer parameters or a spectral origin predict
+the neutrino exponent ~4.48). Report: Docs/Research/TQMQG_ExponentLawValidation.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.

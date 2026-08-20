@@ -1476,6 +1476,17 @@ lepton hierarchy.
   octave count × QG141 spectral exponents × sector exponents p(Q,T3); up δ_eff = 4.07 signature of
   up-type amplification)
 
+### TQM-QG148: Independent Validation of the Exponent Law (TQM-QG Phase 148)
+**Status:** Complete (OVERFIT). The QG147 law interpolates training sectors but fails out-of-sample.
+- NEUTRINO prediction (the only fully unseen fermion sector, Q=0, T3=+1/2) = 9.113 vs observed 4.483 —
+  deviation 103.3% (genuine out-of-sample failure)
+- leave-one-out with T3-only reduced model generalizes partially (leptons 16.7%, up 27.7%, down 20.1%, mean
+  21.5%); Q-only worse (mean 49.9%)
+- 3-parameter law is a SATURATED fit (3 params, 3 points — exact interpolation); overall deviation (neutrino
+  + best LOO) = 0.624 → OVERFIT: reproduces training exactly but does NOT predict the unseen neutrino
+  (isospin carries the main signal; 3-param law over-parameterized for 3 points; tempers QG147 EXPONENT
+  ORIGIN; open: fewer-parameter or spectral law predicting neutrino exponent ~4.48)
+
 ---
 
 ## Overall Statistics
@@ -1487,8 +1498,8 @@ lepton hierarchy.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 149 | Complete |
-| **Total** | **256** | |
+| TQM-QG | 150 | Complete |
+| **Total** | **257** | |
 
 ## Key Unsolved Problems
 
