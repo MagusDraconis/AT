@@ -1279,6 +1279,18 @@ hierarchy.
   metastable decay signatures (15-20 GeV quanta), not new stable particles (consistent with no new stable LHC
   resonances; connects QG129, QG125, QG128, QG127, QG119-120)
 
+### TQM-QG131: Existing Collider Anomaly Audit (TQM-QG Phase 131)
+**Status:** Complete (CONSISTENT SIGNATURE). Observed collider data contain ladder-consistent structures.
+- the documented ~95 GeV diphoton/diboson excess (CMS/ATLAS/LEP) sits 4.0% from the lowest ladder rung
+  (91.19 GeV); transient 750 GeV (65%) and 2 TeV (87%) excesses do NOT match (consistent with fluctuations)
+- 3 SM masses (Z 0.0%, H 2.8%, t 3.4%) sit on distinct rungs within 5% (cascade-like); 3/4 electroweak
+  masses cluster on rungs (W 13.5% off = QG129 generation gap); all 3 pair thresholds cluster (W pair 4.0%,
+  Z pair 0.0%, H pair 2.8%)
+- null LHC results consistent with QG125 METASTABLE (no stable new resonances predicted; sectors appear only
+  as decay signatures) → CONSISTENT SIGNATURE: 95 GeV excess + electroweak masses + pair thresholds all sit
+  on ladder rungs (candidate falsifiable prediction: 95 GeV excess as ladder-rung signature for FCC/HL-LHC;
+  connects QG130, QG125, QG128, QG129)
+
 ---
 
 ## Overall Statistics
@@ -1290,8 +1302,8 @@ hierarchy.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 132 | Complete |
-| **Total** | **239** | |
+| TQM-QG | 133 | Complete |
+| **Total** | **240** | |
 
 ## Key Unsolved Problems
 

@@ -8970,6 +8970,23 @@ window), appearing as metastable decay signatures (15-20 GeV quanta) rather than
 QG128 PREDICTIVE SPECTRUM, QG127 OBSERVABLE SIGNATURES, QG119-120). Report:
 Docs/Research/TQMQG_ColliderSectorPredictions.md.
 
+**TQM-QG Phase 131 (Existing collider anomaly audit) — COMPLETED (3/3 tests pass; 399/399 TQM-QG verified; COMPUTATIONAL):**
+Question: do already observed collider data contain structures consistent with the sector ladder? Added
+ColliderDataAudit (documented SM masses and anomaly candidates vs Z-anchor ladder rungs, nearest-rung
+deviation, excess-event match, cascade-like signature, resonance clustering, pair-threshold clustering,
+null-result consistency, audit score). TQMQG1310 the documented ~95 GeV diphoton/diboson excess (CMS/ATLAS/
+LEP) sits only 4.0% from the lowest ladder rung (91.19 GeV) — the matching excess — while transient 750 GeV
+and 2 TeV excesses do NOT match (deviations 65% and 87%, consistent with fluctuations); 3 SM masses (Z 0.0%,
+H 2.8%, t 3.4%) sit on DISTINCT rungs within 5% (cascade-like signature). TQMQG1311 resonance clustering: 3/4
+electroweak masses on rungs within 5% (W is 13.5% off — the QG129 generation gap); threshold structures: all
+3 pair-production thresholds cluster on rungs (W pair 4.0%, Z pair 0.0%, H pair 2.8%). TQMQG1312 null LHC
+results are CONSISTENT with the QG125 metastable prediction (no stable new resonances expected — sectors
+appear only as decay signatures); TQMQG1312 CLASSIFICATION: CONSISTENT SIGNATURE — the 95 GeV excess,
+electroweak masses, and pair thresholds all sit on sector-ladder rungs and null results are consistent
+(candidate falsifiable prediction: 95 GeV excess as a ladder-rung signature for FCC/HL-LHC; connects QG130
+ACCESSIBLE, QG125 METASTABLE, QG128 PREDICTIVE SPECTRUM, QG129 PARTIAL MAPPING). Report:
+Docs/Research/TQMQG_ColliderDataAudit.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.
