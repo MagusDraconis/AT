@@ -1218,6 +1218,19 @@ downward into the observable 3-family sector when energy is removed, and re-emer
   built fresh from the seed → the observable 3-family sector is the DECAY PRODUCT of higher sectors (QG124
   SECTOR ORIGIN strengthened); connects QG119/120 family suppression (both remove higher families from view)
 
+### TQM-QG126: Particle Interpretation of Attractor Sectors (TQM-QG Phase 126)
+**Status:** Complete (SECTOR-PARTICLE MAPPING). The attractor sector hierarchy maps onto observed particle
+sectors: the observable 3-family sector = observed families; high-energy sectors = heavier particle analogs.
+- sector inventory (decay dynamics): E=1.0 radius 6.0/3 families (observable); E=1.5 radius 9.0/3 families;
+  E=2.0 radius 12.0/2 families; E≥3.0 radius 17.333/2 families → 4 sector classes, 3 high-energy classes,
+  family counts {2,3} → distinct generation-structure classes across sectors
+- decay chain from the highest sector passes through 9 rungs (17.333→17→16→14→13→12→10→9→7) and terminates
+  at observable radius 6.000; decayed remnant family structure matches observable sector exactly
+- mapping score 5/5 (observable 3-family, multiple high-energy classes, distinct family structure, decay
+  cascade, chains settle at observable) → SECTOR-PARTICLE MAPPING: observable 3-family = observed families,
+  high-energy sectors = heavier particle-sector analogs, decay chains = particle decays ending in the stable
+  observable remnant (connects QG124, QG125, QG119-120, QG118)
+
 ---
 
 ## Overall Statistics
@@ -1229,8 +1242,8 @@ downward into the observable 3-family sector when energy is removed, and re-emer
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 127 | Complete |
-| **Total** | **234** | |
+| TQM-QG | 128 | Complete |
+| **Total** | **235** | |
 
 ## Key Unsolved Problems
 

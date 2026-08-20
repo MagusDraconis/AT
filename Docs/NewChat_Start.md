@@ -8887,6 +8887,22 @@ observable 3-family sector is thus the DECAY PRODUCT / low-energy attractor of h
 QG117 ladder traversed both ways, QG122-124 high-energy sectors, QG119-120 family suppression). Report:
 Docs/Research/TQMQG_HighEnergySectorStability.md.
 
+**TQM-QG Phase 126 (Particle interpretation of attractor sectors) — COMPLETED (3/3 tests pass; 384/384 TQM-QG verified; COMPUTATIONAL):**
+Question: can observed particle sectors be mapped onto attractor sectors? Added ParticleSectorMapping (sector
+inventory per energy level with radius/links/families, low-energy sector, high-energy sector classes, family
+correspondence, decay-chain rungs, observable-remnant consistency, mapping score). TQMQG1260 sector inventory
+(decay dynamics): E=1.0 radius 6.0 families 3 (observable 3-family sector); E=1.5 radius 9.0 families 3;
+E=2.0 radius 12.0 families 2; E≥3.0 radius 17.333 families 2 — 4 distinct sector classes, 3 high-energy
+classes, family counts across hierarchy = {2,3} (distinct generation-structure classes). TQMQG1261 the decay
+chain from the highest sector passes through 9 distinct rungs (17.333→17→16→14→13→12→10→9→7) and TERMINATES
+at the observable radius 6.000; the decayed remnant family structure matches the observable sector exactly.
+TQMQG1262 mapping score 5/5 (observable 3-family sector, multiple high-energy classes, distinct family
+structure, decay cascade, chains settle at observable); TQMQG1262 CLASSIFICATION: SECTOR-PARTICLE MAPPING —
+the observable 3-family sector maps to observed particle families, distinct high-energy sectors are heavier
+particle-sector analogs, and sector decay chains map to particle decays terminating in the stable observable
+remnant (connects QG124 SECTOR ORIGIN, QG125 METASTABLE decay, QG119-120 horizon suppression of higher
+sectors, QG118 3-family scaling). Report: Docs/Research/TQMQG_ParticleSectorMapping.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.
