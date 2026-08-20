@@ -9131,6 +9131,23 @@ amplification input (positions + occupations); open question: what fixes p≈7.7
 (connects QG139, QG138 FUNDAMENTAL, QG134 FUNDAMENTAL SPLIT steepening). Report:
 Docs/Research/TQMQG_HierarchyAmplification.md.
 
+**TQM-QG Phase 141 (Origin of hierarchy exponents) — COMPLETED (3/3 tests pass; 429/429 TQM-QG verified; COMPUTATIONAL):**
+Question: can the hierarchy amplification exponents (p≈7.69, q≈-0.82) emerge from spectral or actualization
+dynamics rather than fitting? Added HierarchyExponentOrigin (Weyl-like spectral scaling exponent N(w)~w^δ,
+mode-density exponent, octave occupancy power law modes~center^δ, density-occupation consistency,
+actualization statistics of the final activity, net mass exponent, derived occupation exponent δ_derived=
+(p_net-p)/q, derivation deviation, origin score). TQMQG1410 the spectrum has a well-defined Weyl-like
+scaling exponent δ=2.473 (mode density g(w)~w^1.473) and the octave occupancy follows a power law in the
+band center (occupation exponent 2.221). TQMQG1411 the octave occupancy tracks the spectral density
+(|Weyl δ - occupation δ|=0.251) and the final activity is fully SATURATED (min=max=1.000, 1 distinct level)
+— the raw actualization rates carry NO hierarchy, so the exponents must come from the spectrum. TQMQG1412
+the derived occupation exponent δ_derived=(p_net-p)/q = 2.221 matches the measured spectral density exponent
+2.473 within 10.2% (relative deviation 0.102); TQMQG1412 CLASSIFICATION: DERIVED EXPONENTS — the hierarchy
+amplification exponents EMERGE from the spectral (Weyl/mode-density) scaling of the observable sector, not
+from free fitting (net mass exponent 5.882; the spectral dimension δ≈2.2-2.5 links the mass hierarchy to the
+network's spectral geometry; connects QG140 HIERARCHY ORIGIN, QG138 FUNDAMENTAL octave law, QG115/116
+saturated activity). Report: Docs/Research/TQMQG_HierarchyExponentOrigin.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.
