@@ -9018,6 +9018,23 @@ experimental/parameter uncertainty, but not robust against re-anchoring on the f
 (H→146, t→202); the ~106 GeV (window 99-114) prediction survives as the best falsifiable target of the
 boson-calibrated sector ladder. Report: Docs/Research/TQMQG_PredictionRobustness.md.
 
+**TQM-QG Phase 134 (Boson-fermion calibration split) — COMPLETED (3/3 tests pass; 408/408 TQM-QG verified; COMPUTATIONAL):**
+Question: why does the attractor ladder calibrate consistently to bosons but not to fermions? Added
+BosonFermionSplit (boson vs fermion mass ratios vs ladder radius span, observable-sector family count,
+family-index classes, generation-gap factor, boson-anchor agreement vs fermion-anchor spread, split score).
+TQMQG1340 all boson ratios (W/Z 0.881, H/Z 1.372, t/Z 1.897) lie WITHIN the ladder radius span 2.889
+(single-index O(1)-few scale), while all lepton generation ratios (mu/e 206.8, tau/e 3477.2, tau/mu 16.8)
+lie FAR beyond the span. TQMQG1341 the observable sector (radius 6) is a 3-FAMILY sector (family-index
+classes = 3) — fermion generations are carried by a family index WITHIN the observable sector, not by
+separate ladder rungs; the generation-gap factor (largest lepton ratio / ladder span) is 1203.7 (large).
+TQMQG1342 boson-anchor agreement (Z vs W) is 0.74% while fermion-anchor spread (H vs t) is 38.3% — bosons
+calibrate universally; TQMQG1342 CLASSIFICATION: FUNDAMENTAL SPLIT — bosons are single family-index states
+on ladder rungs (ratios within span, anchors agree) while fermions are 3-family states whose generations
+are resolved by a family index WITHIN the observable sector (ratios far beyond span, anchors spread). This
+explains QG129 PARTIAL MAPPING and QG133 MODERATE, and is a candidate structural origin of the
+boson/fermion distinction (rung states vs family-index states). Report:
+Docs/Research/TQMQG_BosonFermionSplit.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.

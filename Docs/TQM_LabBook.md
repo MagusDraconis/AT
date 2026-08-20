@@ -1313,6 +1313,19 @@ hierarchy.
   experimental/parameter uncertainty, but not robust against re-anchoring on fermion states (H→146, t→202);
   ~106 GeV (window 99-114) survives as the best falsifiable target of the boson-calibrated ladder
 
+### TQM-QG134: Boson-Fermion Calibration Split (TQM-QG Phase 134)
+**Status:** Complete (FUNDAMENTAL SPLIT). Bosons are ladder-rung states; fermion generations are a within-
+sector family index.
+- all boson ratios (W/Z 0.881, H/Z 1.372, t/Z 1.897) lie WITHIN the ladder radius span 2.889 (single-index
+  O(1)-few scale); all lepton generation ratios (mu/e 206.8, tau/e 3477.2, tau/mu 16.8) lie FAR beyond it
+- observable sector (radius 6) is a 3-FAMILY sector (family-index classes 3) → generations are carried by a
+  family index WITHIN the observable sector, not by separate rungs; generation-gap factor (largest lepton
+  ratio / ladder span) = 1203.7
+- boson-anchor agreement (Z vs W) 0.74% vs fermion-anchor spread (H vs t) 38.3% → FUNDAMENTAL SPLIT: bosons
+  = single family-index rung states (calibrate universally), fermions = 3-family within-sector states
+  (anchors spread); explains QG129 PARTIAL MAPPING and QG133 MODERATE; candidate structural origin of the
+  boson/fermion distinction
+
 ---
 
 ## Overall Statistics
@@ -1324,8 +1337,8 @@ hierarchy.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 135 | Complete |
-| **Total** | **242** | |
+| TQM-QG | 136 | Complete |
+| **Total** | **243** | |
 
 ## Key Unsolved Problems
 
