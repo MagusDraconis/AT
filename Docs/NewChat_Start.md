@@ -9221,13 +9221,44 @@ octave structure
 
 ## Key Open Problems
 
-- "Why three generations?" → REPLACED by "Unified fermion mass law."
+- "Origin of lepton hierarchy" → REPLACED by "Sector-dependent hierarchy amplification."
+
+Open Question:
+
+Why do leptons follow the spectral law while
+quarks and neutrinos do not?
 
 Open Questions:
 
 - exact quark hierarchy
 - neutrino hierarchy
 - universal fermion scaling law
+
+## Status Table
+
+| Quantity | Phase | Status |
+|----------|-------|--------|
+| Family Count | QG138 | DERIVED |
+| Hierarchy Exponents | QG141 | DERIVED |
+| Lepton Hierarchy | QG142 | PARTIAL LAW |
+| Quark Hierarchy | — | OPEN |
+| Neutrino Hierarchy | — | OPEN |
+
+## Architecture Summary
+
+Bosons:
+
+Energy
+→ Sector Ladder
+→ Rung States
+
+Fermions:
+
+Sector Spectrum
+→ Octave Bands
+→ Family Count
+→ Spectral Density
+→ Mass Hierarchy
 
 ## Major Milestones
 
@@ -9247,3 +9278,27 @@ Milestone counters:
 
 TQM-QG 143 phases
 429 tests
+
+### QG142: Lepton Hierarchy Law
+
+Summary:
+
+A single octave spectral law
+reproduces the lepton hierarchy
+with high accuracy.
+
+Leptons:
+
+predicted ratios
+{1, 59, 3468}
+
+observed:
+{1, 206, 3477}
+
+tau/e deviation:
+0.26%
+
+Milestone counters:
+
+TQM-QG 144 phases
+432 tests
