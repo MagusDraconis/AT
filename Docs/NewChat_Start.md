@@ -9521,3 +9521,22 @@ Milestone counters:
 
 TQM-QG 144 phases
 432 tests
+
+### QG138/141/149/150/153: Fermion Structure from Spectral Geometry
+
+Summary:
+
+QG138: family count from octave quantization.
+
+QG141: hierarchy exponents from spectral density.
+
+QG149: sector exponents from occupation-weighted access.
+
+QG150: mode access from isospin selection.
+
+QG153: Z2 doublet symmetry origin.
+
+Milestone counters:
+
+TQM-QG 156 phases
+432+ TQM-QG tests verified
