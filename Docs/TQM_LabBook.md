@@ -1546,6 +1546,22 @@ lepton hierarchy.
   explicit symmetry-breaking); explains WHY QG150 isospin-constrained access and QG151 golden-ratio
   splitting exist; connects QG152 coherent-basin fragility
 
+### TQM-QG154: Origin of the Neutrino Sector (TQM-QG Phase 154)
+**Status:** Complete (NEUTRINO ORIGIN). The neutrino is the unique neutral sector; its charge channel vanishes.
+- neutrino p_eff = log(500)/log(4) = 4.483, δ_eff = 2.241 — the LOWEST dimension of all fermion sectors
+  (leptons 2.940, up 4.066, down 2.449), below even the full-spectrum Weyl (0.906×)
+- neutrino is the UNIQUE Q=0 fermion; charge amplification Q^n (n=6.47) vanishes identically (0.000E+000);
+  with no charge channel it reverts to T3-only access — δ matches the T3=+1/2 Z2 channel Weyl (2.319)
+  within 3.3%
+- doublet occupancy is inverted for the neutrino: quark (u,d) ratio 88.4 (log2=6.47, up enhanced) vs
+  lepton (ν,e) ratio 6.95 (log2=2.80, electron enhanced) — the neutrino is the suppressed neutral member
+- QG147 linear law predicts p=9.113 vs observed 4.483 (103.3% deviation) — it overfits because it predicts
+  a charge-enhanced neutrino that cannot exist
+- → NEUTRINO ORIGIN: the neutrino deviates because it is the ONLY neutral fermion — the charge-dependent
+  mode amplification vanishes (Q^n=0), the QG145 charge×isospin enhancement cannot act, and the neutrino
+  reverts to T3-only Z2-channel spectral access as the lowest suppressed sector (explains the QG148
+  neutrino failure; gives the open neutrino-hierarchy problem a structural origin)
+
 ---
 
 ## Overall Statistics
@@ -1557,8 +1573,8 @@ lepton hierarchy.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 155 | Complete |
-| **Total** | **262** | |
+| TQM-QG | 156 | Complete |
+| **Total** | **263** | |
 
 ## Key Unsolved Problems
 

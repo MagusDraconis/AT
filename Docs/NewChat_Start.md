@@ -9348,6 +9348,25 @@ across size and dynamics parameters; the QG151 weak-isospin doublets are a real 
 only under explicit symmetry-breaking; explains WHY QG150 isospin-constrained access and QG151 golden-ratio
 splitting exist; connects QG152 coherent-basin fragility). Report: Docs/Research/TQMQG_DoubletOrigin.md.
 
+**TQM-QG Phase 154 (Origin of the neutrino sector) — COMPLETED (3/3 tests pass; TQM-QG verified; COMPUTATIONAL):**
+Question: why does the neutrino sector deviate from the lepton and quark scaling laws? Added NeutrinoOrigin
+(neutral-charge limit with Q^n charge amplification, T3-only Z2-channel spectral access, doublet occupancy
+inversion, spectral-accessibility minimum, QG147 linear-law failure, origin score). TQMQG1540 the neutrino
+is the UNIQUE neutral fermion (Q=0, the only one) and its charge amplification Q^n (n=6.47) vanishes
+identically (0.000E+000); with no charge channel the neutrino reverts to T3-only access — its effective
+dimension δ=2.241 matches the T3=+1/2 Z2 channel Weyl (2.319) within 3.3%. TQMQG1541 the doublet occupancy
+is inverted for the neutrino: quark (u,d) r31 ratio 88.4 (log2=6.47, up enhanced) but lepton (ν,e) ratio
+6.95 (log2=2.80, electron enhanced); the neutrino has the LOWEST effective dimension of all sectors
+(2.241 vs leptons 2.940, up 4.066, down 2.449), below even the full-spectrum Weyl (0.906×). TQMQG1542 the
+QG147 linear law predicts p=9.113 vs observed 4.483 (103.3% deviation — it overfits because it predicts a
+charge-enhanced neutrino that cannot exist); TQMQG1542 CLASSIFICATION: NEUTRINO ORIGIN — the neutrino
+deviates because it is the ONLY neutral fermion: the charge-dependent mode amplification vanishes
+identically (Q^n=0), the charge×isospin enhancement (QG145) that boosts other T3=+1/2 sectors cannot act,
+and the neutrino reverts to T3-only Z2-channel spectral access, making it the lowest suppressed sector —
+explains the QG148 neutrino prediction failure and gives the open neutrino-hierarchy problem a structural
+origin (consistent with QG153 Z2 doublets, QG150 dense-band access). Report:
+Docs/Research/TQMQG_NeutrinoOrigin.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.
