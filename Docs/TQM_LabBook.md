@@ -1443,6 +1443,16 @@ lepton hierarchy.
   combination reproduces the full hierarchy (amplification specific to the up sector Q=+2/3, T3=+1/2; not a
   linear charge-magnitude law; connects QG143; open: what orders neutrino<down<lepton<up at octave baseline)
 
+### TQM-QG145: Origin of Up-Sector Enhancement (TQM-QG Phase 145)
+**Status:** Complete (UP-SECTOR ORIGIN). The up-type enhancement is an interaction of spectral × quantum numbers.
+- deviation couples positively to charge (r = 0.532) and isospin (r = 0.325) given the octave baseline
+- ALL 8 charge×isospin cross terms (Q·(1+T3), |Q|·(1+T3), Q·(1+T3)², Q·(1+2T3), Q²·T3, (1+Q)·T3,
+  Q·(T3+1/2)², |Q|·(T3+1)) peak UNIQUELY at the up sector (up-peak 8/8, robust)
+- octave spectral occupancy 0.916 (amplification channel); interaction reconstructs the full hierarchy
+  (neutrino<down<leptons<up + up-peak) → UP-SECTOR ORIGIN: up enhancement = spectral structure ×
+  charge×isospin cross term singling out the only sector with BOTH Q>0 and T3>0 (completes the quark-side
+  hierarchy; connects QG143/144, QG141)
+
 ---
 
 ## Overall Statistics
@@ -1454,8 +1464,8 @@ lepton hierarchy.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 146 | Complete |
-| **Total** | **253** | |
+| TQM-QG | 147 | Complete |
+| **Total** | **254** | |
 
 ## Key Unsolved Problems
 

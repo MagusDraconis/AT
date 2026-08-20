@@ -9198,6 +9198,22 @@ the amplification is specific to the up sector Q=+2/3, T3=+1/2, not a linear cha
 QG143 PARTIAL FACTOR; open: what single quantity orders neutrino<down<lepton<up while leaving leptons at
 the octave baseline). Report: Docs/Research/TQMQG_WeakIsospinAmplification.md.
 
+**TQM-QG Phase 145 (Origin of up-sector enhancement) — COMPLETED (3/3 tests pass; TQM-QG verified; COMPUTATIONAL):**
+Question: can the quark hierarchy emerge from interactions between spectral structure and internal quantum
+numbers rather than a single factor? Added UpSectorEnhancement (spectral×charge and spectral×isospin
+correlations, 8 candidate charge×isospin cross terms, up-peak signature = cross term uniquely maximized at
+the up sector, sector occupancy, hierarchy reconstruction, interaction score). TQMQG1450 the deviation
+couples positively to both charge (r = 0.532) and isospin (r = 0.325) given the octave baseline — quantum
+numbers matter beyond spectral structure. TQMQG1451 ALL 8 charge×isospin cross terms (Q·(1+T3), |Q|·(1+T3),
+Q·(1+T3)², Q·(1+2T3), Q²·T3, (1+Q)·T3, Q·(T3+1/2)², |Q|·(T3+1)) peak UNIQUELY at the up sector
+(up-peak count 8/8, robust) — the interaction signature of up-type enhancement. TQMQG1452 the octave
+spectral occupancy is 0.916 (strong amplification channel) and the interaction reconstructs the full
+hierarchy (neutrino < down < leptons < up + up-peak); TQMQG1452 CLASSIFICATION: UP-SECTOR ORIGIN — the
+up-type enhancement emerges from the INTERACTION of the spectral structure with a charge×isospin cross term
+that robustly singles out the up sector (the only sector with BOTH Q>0 and T3>0) and reconstructs the
+hierarchy (completes the quark-side hierarchy: octave law + up-sector cross-term enhancement; connects
+QG143/144, QG141 spectral-density exponents). Report: Docs/Research/TQMQG_UpSectorEnhancement.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.
