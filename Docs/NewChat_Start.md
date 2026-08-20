@@ -9003,6 +9003,21 @@ null result at ~106 GeV would rule out the Z-anchor electroweak calibration; con
 SIGNATURE, the 95 GeV excess hint, QG125 METASTABLE decay, QG128 PREDICTIVE SPECTRUM). Report:
 Docs/Research/TQMQG_FirstFalsifiablePrediction.md.
 
+**TQM-QG Phase 133 (Robustness of the 106 GeV prediction) — COMPLETED (3/3 tests pass; 405/405 TQM-QG verified; COMPUTATIONAL):**
+Question: how sensitive is the 106 GeV prediction to calibration assumptions? Added PredictionRobustness
+(primary predicted resonance recomputed under each electroweak anchor Z/W/H/t, anchor agreements, per-anchor
+experimental-uncertainty widths, observed-tolerance sensitivity, robustness score). TQMQG1330 the primary
+predicted resonance under Z is 106.39 GeV, under W is 107.17 GeV (boson anchors AGREE within 0.74%), under
+H is 145.95 GeV and under t is 201.83 GeV (fermion anchors shift the prediction upward — the same
+generation-gap incompleteness as QG129). TQMQG1331 experimental mass uncertainties shift the primary by at
+most 0.93 GeV (0.9% of the Z prediction; Z±0.000, W±0.02, H±0.40, t±0.93 GeV) and the observed-tolerance
+sweep (3%→10%) leaves the Z-anchor primary unchanged at 106.39 GeV (fully tolerance-insensitive).
+TQMQG1332 robustness score 3/5; TQMQG1332 CLASSIFICATION: MODERATE — the ~106 GeV prediction is stable
+within the electroweak-BOSON calibration family (Z/W agree within 1%) and insensitive to
+experimental/parameter uncertainty, but not robust against re-anchoring on the fermion-sector states
+(H→146, t→202); the ~106 GeV (window 99-114) prediction survives as the best falsifiable target of the
+boson-calibrated sector ladder. Report: Docs/Research/TQMQG_PredictionRobustness.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.

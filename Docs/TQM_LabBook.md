@@ -1303,6 +1303,16 @@ hierarchy.
   FIRST falsifiable collider prediction of the sector hierarchy (null result at ~106 GeV would rule out the
   Z-anchor electroweak calibration; connects QG131, 95 GeV excess hint, QG125, QG128)
 
+### TQM-QG133: Robustness of the 106 GeV Prediction (TQM-QG Phase 133)
+**Status:** Complete (MODERATE). The ~106 GeV prediction is robust within the boson calibration family.
+- primary predicted resonance under each anchor: Z 106.39, W 107.17 (boson anchors agree within 0.74%), H
+  145.95, t 201.83 GeV (fermion anchors shift upward — QG129 generation gap)
+- experimental mass uncertainties shift the primary by at most 0.93 GeV (0.9%; Z±0.000, W±0.02, H±0.40,
+  t±0.93 GeV); observed-tolerance sweep (3%→10%) leaves Z-anchor primary unchanged at 106.39 GeV
+- robustness score 3/5 → MODERATE: stable within the electroweak-BOSON family (Z/W <1%), insensitive to
+  experimental/parameter uncertainty, but not robust against re-anchoring on fermion states (H→146, t→202);
+  ~106 GeV (window 99-114) survives as the best falsifiable target of the boson-calibrated ladder
+
 ---
 
 ## Overall Statistics
@@ -1314,8 +1324,8 @@ hierarchy.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 134 | Complete |
-| **Total** | **241** | |
+| TQM-QG | 135 | Complete |
+| **Total** | **242** | |
 
 ## Key Unsolved Problems
 
