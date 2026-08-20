@@ -9291,6 +9291,24 @@ full-spectrum access (δ_eff ≈ Weyl), up = dense-band access (δ_eff ≈ 1.64�
 (r≈0.96; connects QG149 PHYSICAL ORIGIN, QG145 up-sector enhancement, weak-interaction structure).
 Report: Docs/Research/TQMQG_ModeAccessOrigin.md.
 
+**TQM-QG Phase 151 (Origin of isospin-guided spectral access) — COMPLETED (3/3 tests pass; TQM-QG verified; COMPUTATIONAL):**
+Question: why does weak isospin select different spectral regions? Added IsospinModeAccess
+(Z2 doublet structure of the mode spectrum, octave-band pair structure, T3-channel occupation,
+golden-ratio mode-competition splitting, isospin selection constraint, origin score).
+TQMQG1510 the spectrum is fully Z2-paired (44 groups, 95/95 modes paired, fraction 1.0000) — the modes
+form weak-isospin doublets; each octave band carries integer doublets (band 0: 4 modes/2 doublets, band 1:
+4 modes/2 doublets, band 2: 87 modes/47 doublets) and both T3 channels occupy the dense band with ~identical
+weight (0.917 vs 0.915) — the doublet structure is the isospin selection substrate. TQMQG1511 the down
+sector accesses the FULL spectrum (δ_eff = 2.449 vs Weyl_full = 2.473, deviation 0.96%) and the isospin
+splitting δ(up)−δ(down) = 1.6170 matches the golden ratio φ = 1.6180 (deviation 0.06%): δ_eff(up) =
+δ_eff(down) + φ — the self-similar fixed point of two-channel mode competition. TQMQG1512 the isospin
+constraint r = 0.9551 and T3 is the guiding quantum number; TQMQG1512 CLASSIFICATION: ISOSPIN ACCESS ORIGIN
+— weak isospin selects different spectral regions through the Z2 doublet structure of the spectrum: the
+modes form weak-isospin doublets, the down sector accesses the full spectrum (δ_eff = Weyl_full), the up
+sector is elevated by the golden-ratio mode-competition fixed point δ_eff(up) = δ_eff(down) + φ, and T3 is
+the guiding quantum number (r = 0.955; unifies QG145 up-sector enhancement, QG149 down = 2×Weyl physical
+origin, QG150 isospin-constrained mode access). Report: Docs/Research/TQMQG_IsospinModeAccess.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.

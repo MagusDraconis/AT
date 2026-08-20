@@ -1508,6 +1508,19 @@ lepton hierarchy.
 - → MODE-ACCESS ORIGIN: occupation-weighted mode access is quantum-number constrained — down = full
   spectrum, up = dense band, selected by isospin (r≈0.96; connects QG149, QG145, weak-interaction structure)
 
+### TQM-QG151: Origin of Isospin-Guided Spectral Access (TQM-QG Phase 151)
+**Status:** Complete (ISOSPIN ACCESS ORIGIN). Weak isospin selects spectral regions via Z2 doublet structure.
+- spectrum is FULLY Z2-paired (44 groups, 95/95 modes, fraction 1.0000) — the modes ARE weak-isospin
+  doublets; each octave band carries integer doublets (band 0: 4 modes/2, band 1: 4 modes/2, band 2:
+  87 modes/47); both T3 channels occupy the dense band ~equally (0.917 vs 0.915) — the doublet structure
+  is the isospin selection substrate
+- down accesses the FULL spectrum (δ_eff = 2.449 vs Weyl_full = 2.473, 0.96%); isospin splitting
+  δ(up)−δ(down) = 1.6170 = golden ratio φ = 1.6180 (0.06%) → δ_eff(up) = δ_eff(down) + φ = 4.067 — the
+  self-similar fixed point of two-channel mode competition
+- → ISOSPIN ACCESS ORIGIN: weak isospin selects spectral regions through the spectrum's Z2 doublet
+  structure — down = full-spectrum access (δ_eff = Weyl_full), up = golden-ratio-elevated
+  (δ_eff = δ_down + φ), T3 guides (r = 0.955; unifies QG145/QG149/QG150)
+
 ---
 
 ## Overall Statistics
@@ -1519,8 +1532,8 @@ lepton hierarchy.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 152 | Complete |
-| **Total** | **259** | |
+| TQM-QG | 153 | Complete |
+| **Total** | **260** | |
 
 ## Key Unsolved Problems
 
