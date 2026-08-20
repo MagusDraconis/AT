@@ -9229,10 +9229,15 @@ each sector deviates strongly from the octave law, but the full up AND down hier
 sector-dependent exponents (up 8.13 vs down 4.90), not a single law (consistent with QG142 PARTIAL LAW; open:
 what sets the sector-dependent exponent 8.13/4.90/5.88). Report: Docs/Research/TQMQG_QuarkHierarchyLaw.md.
 
-> **SUPERSESSION NOTE:** QG147's exponent law p = 6.760 − 1.473·Q + 4.706·T3 is a **historical exponent fit**.
-> It is superseded by QG149 (physical spectral-density mechanism, down p_eff = 2×Weyl) and QG150/151
-> (isospin-constrained mode access via the Z2 doublet spectrum). QG147 must NOT be cited as an equal
-> explanation alongside QG149–151.
+> **SUPERSESSION NOTE:** QG147's exponent law p = 6.760 − 1.473·Q + 4.706·T3 is a **historical fitted law**
+> (a 3-parameter fit to 3 sectors, exact by interpolation; QG148 showed it OVERFITS).
+>
+> Superseded by:
+> - **QG149 — Physical Origin of Sector Exponents** (spectral-density mechanism, down p_eff = 2×Weyl).
+> - QG150/151 (isospin-constrained mode access via the Z2 doublet spectrum).
+>
+> QG147 must NOT be cited as an equal explanation alongside QG149–151. Keep it only as a historical
+> intermediate result.
 
 **TQM-QG Phase 147 (Sector-dependent exponent law) — COMPLETED (3/3 tests pass; TQM-QG verified; COMPUTATIONAL):**
 Question: can charge and isospin determine the hierarchy exponent itself? Added SectorExponentLaw
@@ -9455,6 +9460,8 @@ Open Questions:
 | Lepton Hierarchy | QG142 | PARTIAL LAW |
 | Quark Hierarchy | — | OPEN |
 | Neutrino Hierarchy | — | OPEN |
+| Sector Exponent Law p(Q,T3) | QG147 | HISTORICAL (overfit) — superseded by QG149 |
+| Sector Exponents (physical) | QG149 | PHYSICAL ORIGIN |
 
 ## Architecture Summary
 

@@ -1465,16 +1465,18 @@ lepton hierarchy.
   QG142; open: what sets 8.13/4.90/5.88)
 
 ### TQM-QG147: Sector-Dependent Exponent Law (TQM-QG Phase 147)
-**Status:** Complete (EXPONENT ORIGIN). Charge and isospin determine the hierarchy exponent.
+**Status:** Complete — HISTORICAL FITTED LAW (overfit; superseded by QG149 Physical Origin of Sector
+Exponents). Charge and isospin determine the hierarchy exponent (intermediate, fitted result).
 - hierarchy exponent correlates strongly with isospin (Pearson r = 0.955) and well with charge (r = 0.759),
   weakly with Q×T3 (0.296)
 - effective spectral dimensions: leptons 2.940, up 4.066 (EXCEEDS octave Weyl 2.473), down 2.449; linear law
   p = 6.760 − 1.473·Q + 4.706·T3 reproduces lepton/up/down exponents EXACTLY (max residual 0.00000)
 - predictive: neutrino exponent prediction (Q=0, T3=+1/2) = 9.113 vs observed 4.483 (testable difference —
-  neutrino masses least constrained) → EXPONENT ORIGIN: sector-dependent hierarchy exponents are DETERMINED
-  by charge and isospin via p = p0 + a·Q + b·T3 (resolves QG146 PARTIAL LAW; full fermion mass law = QG138
-  octave count × QG141 spectral exponents × sector exponents p(Q,T3); up δ_eff = 4.07 signature of
-  up-type amplification)
+  neutrino masses least constrained)
+- **SUPERSEDED BY: QG149 Physical Origin of Sector Exponents** (the down exponent = 2×Weyl spectral-density
+  mechanism; the fitted p(Q,T3) law was a historical intermediate — QG148 showed it OVERFITS, 3 params /
+  3 points, neutrino prediction off by 103%). Historical classification: EXPONENT ORIGIN was the
+  contemporary conclusion; do NOT cite it as an equal explanation alongside QG149–151.
 
 ### TQM-QG148: Independent Validation of the Exponent Law (TQM-QG Phase 148)
 **Status:** Complete (OVERFIT). The QG147 law interpolates training sectors but fails out-of-sample.
@@ -1495,8 +1497,9 @@ lepton hierarchy.
   dependent spectral access)
 - MECHANISM: down p_eff = 4.898 vs 2×Weyl_full = 4.946 (deviation 0.96%) — the down exponent IS twice the
   full spectral dimension, no free parameters → PHYSICAL ORIGIN: sector exponents emerge from the spectral
-  density (occupation-weighted mode access), replacing the QG148 OVERFIT linear law (connects QG141, QG145;
-  open: does up δ_eff = 4.07 correspond to a spectral sub-range like octave-1 δ = 3.50)
+  density (occupation-weighted mode access), replacing the QG147/QG148 OVERFIT fitted law (supersedes
+  QG147's historical p(Q,T3) fit; connects QG141, QG145; open: does up δ_eff = 4.07 correspond to a
+  spectral sub-range like octave-1 δ = 3.50)
 
 ### TQM-QG150: Origin of Mode Access (TQM-QG Phase 150)
 **Status:** Complete (MODE-ACCESS ORIGIN). Sectors access different parts of the same spectrum by isospin.
