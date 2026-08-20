@@ -8953,6 +8953,23 @@ reach the generation hierarchy (calibration exists for the electroweak scale, no
 connects QG128 PREDICTIVE SPECTRUM, QG118/122 family hierarchy beyond linear ladder span, QG85 POSTULATED
 SM parameters). Report: Docs/Research/TQMQG_PhysicalCalibration.md.
 
+**TQM-QG Phase 130 (Collider-accessible sector prediction) — COMPLETED (3/3 tests pass; 396/396 TQM-QG verified; COMPUTATIONAL):**
+Question: which sector transitions are accessible within current and next-generation collider energies? Added
+ColliderSectorPredictions (8 sector thresholds, 12-rung ladder calibrated under the QG129 electroweak
+calibration family anchored on W/Z/H/t, rung masses, per-collider accessible counts, decay-spectrum quanta,
+decay-signature observability, reach summary, accessibility score). TQMQG1300 the 8 discrete thresholds and
+Z-anchor ladder span 91.2→263.4 GeV; LEP reaches 8/12 rungs (top NOT accessible) but LHC13, HL-LHC, FCC-ee
+and FCC-hh each reach 12/12 with the top sector accessible. TQMQG1301 the emitted quanta under Z calibration
+are unit→15.20 GeV and top→20.26 GeV, and the top-sector decay signature is observable at both LHC13 and
+FCC-hh (accessible sectors decay as metastable signatures per QG125). TQMQG1302 the reach summary for ALL
+electroweak anchors (W 232 GeV, Z 263 GeV, H 361 GeV, t 500 GeV top-rung masses) is LHC13- and FCC-hh-
+accessible with fraction 1.000 at LHC; TQMQG1302 CLASSIFICATION: ACCESSIBLE — the highest-energy sectors
+fall within LHC13 and FCC-hh reach for the entire plausible electroweak calibration family (~90-500 GeV
+window), appearing as metastable decay signatures (15-20 GeV quanta) rather than new stable particles
+(consistent with absence of new stable LHC resonances; connects QG129 PARTIAL MAPPING, QG125 METASTABLE,
+QG128 PREDICTIVE SPECTRUM, QG127 OBSERVABLE SIGNATURES, QG119-120). Report:
+Docs/Research/TQMQG_ColliderSectorPredictions.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.

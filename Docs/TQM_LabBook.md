@@ -1268,6 +1268,17 @@ hierarchy.
   hierarchy (mu/e = 206.8) → PARTIAL MAPPING: electroweak H/Z reproduced (~3%), generation hierarchy beyond
   the ladder span (connects QG128, QG118/122, QG85 POSTULATED SM parameters)
 
+### TQM-QG130: Collider-Accessible Sector Prediction (TQM-QG Phase 130)
+**Status:** Complete (ACCESSIBLE). The sector ladder is within LHC/FCC reach under the electroweak calibration.
+- 8 discrete sector thresholds; Z-anchor ladder spans 91.2→263.4 GeV; LEP reaches 8/12 rungs (top NOT
+  accessible), LHC13/HL-LHC/FCC-ee/FCC-hh each reach 12/12 with the top sector accessible
+- emitted quanta (Z calibration): unit→15.20 GeV, top→20.26 GeV; top-sector decay signature observable at
+  LHC13 and FCC-hh (accessible sectors decay as metastable signatures, QG125)
+- reach summary: all electroweak anchors (W 232, Z 263, H 361, t 500 GeV top rungs) are LHC13- and FCC-hh-
+  accessible with fraction 1.000 at LHC → ACCESSIBLE: highest sectors in the ~90-500 GeV window appear as
+  metastable decay signatures (15-20 GeV quanta), not new stable particles (consistent with no new stable LHC
+  resonances; connects QG129, QG125, QG128, QG127, QG119-120)
+
 ---
 
 ## Overall Statistics
@@ -1279,8 +1290,8 @@ hierarchy.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 131 | Complete |
-| **Total** | **238** | |
+| TQM-QG | 132 | Complete |
+| **Total** | **239** | |
 
 ## Key Unsolved Problems
 
