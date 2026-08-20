@@ -1420,6 +1420,18 @@ lepton hierarchy.
   dependent amplification; connects QG138/141, QG134; open question: what modifies the octave exponent for
   quarks/neutrinos)
 
+### TQM-QG143: Origin of Quark Amplification (TQM-QG Phase 143)
+**Status:** Complete (PARTIAL FACTOR). The quark/neutrino deviation is isospin-signed, not color.
+- deviation factors f = r31_obs / r31_octave (octave = 4^5.88 = 3468): leptons 1.003 (tracks octave law),
+  up 22.673 (strongly amplified), down 0.256 (suppressed), neutrino 0.144 (strongly suppressed)
+- color alone does NOT explain it: up and down are both color N=3 but differ by factor ratio 88.4 (single
+  color factor = False); charge correlation weak (Pearson r = 0.290 with |Q|)
+- amplification is ISOSPIN-SIGNED: up (T3=+1/2) 22.67 vs down (T3=-1/2) 0.26 (up ↑, down ↓, up/down 88.4);
+  sector occupation density (top-octave) 0.916; up/down split implies steep charge-power exponent n = 6.47
+  → PARTIAL FACTOR: isospin-signed amplification (up ~23×, down/neutrino suppressed) with steep charge-power
+  coupling (n≈6.5), but no single sector factor (color, charge, or isospin alone) reproduces all deviations
+  (connects QG141/142, QG134; open: what sets n≈6.5)
+
 ---
 
 ## Overall Statistics
@@ -1431,8 +1443,8 @@ lepton hierarchy.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 144 | Complete |
-| **Total** | **251** | |
+| TQM-QG | 145 | Complete |
+| **Total** | **252** | |
 
 ## Key Unsolved Problems
 

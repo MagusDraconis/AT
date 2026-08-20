@@ -9165,6 +9165,23 @@ QG138/141 spectral origin, QG134 FUNDAMENTAL SPLIT refined to lepton-vs-quark/ne
 sector-dependent factor modifies the octave exponent for quarks/neutrinos). Report:
 Docs/Research/TQMQG_UnifiedMassLaw.md.
 
+**TQM-QG Phase 143 (Origin of quark amplification) — COMPLETED (3/3 tests pass; TQM-QG verified; COMPUTATIONAL):**
+Question: what extra sector-dependent factor amplifies quark and neutrino masses beyond the octave hierarchy?
+Added QuarkAmplification (deviation factors f = r31_obs / r31_octave with r31_octave = 4^5.88 = 3468;
+color-sector single-factor test, charge correlation, isospin up/down asymmetry, sector occupation density,
+implied charge-power coupling exponent, factor score). TQMQG1430 the deviation factors are strongly
+sector-dependent: leptons 1.003 (tracks the octave law), up 22.673 (strongly amplified), down 0.256
+(suppressed), neutrino 0.144; color alone does NOT explain it (up and down, both color N=3, differ by
+up/down factor ratio 88.4 — a single color factor is False). TQMQG1431 the charge correlation is weak
+(Pearson r = 0.290 with |Q|) but the amplification is ISOSPIN-SIGNED: up (T3=+1/2) factor 22.67, down
+(T3=-1/2) factor 0.26 (up ↑, down ↓, up/down 88.4). TQMQG1432 the sector occupation density (top-octave
+fraction) is 0.916 and the up/down split implies a STEEP charge-power coupling exponent n = 6.47
+((|Q_up|/|Q_down|)^n = up/down); TQMQG1432 CLASSIFICATION: PARTIAL FACTOR — the amplification is
+isospin-signed (up-type amplified ~23×, down-type and neutrino suppressed) with a steep charge-power
+coupling (n≈6.5), but no single sector factor (color, charge, or isospin alone) reproduces all deviations
+(connects QG141/142 spectral law, QG134 FUNDAMENTAL SPLIT; open: what sets n≈6.5). Report:
+Docs/Research/TQMQG_QuarkAmplification.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.
