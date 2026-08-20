@@ -1498,6 +1498,16 @@ lepton hierarchy.
   density (occupation-weighted mode access), replacing the QG148 OVERFIT linear law (connects QG141, QG145;
   open: does up δ_eff = 4.07 correspond to a spectral sub-range like octave-1 δ = 3.50)
 
+### TQM-QG150: Origin of Mode Access (TQM-QG Phase 150)
+**Status:** Complete (MODE-ACCESS ORIGIN). Sectors access different parts of the same spectrum by isospin.
+- octave band structure: band 0 occupancy 4/local Weyl 1.318, band 1 occupancy 4/local Weyl 3.496, band 2
+  occupancy 87/local Weyl 14.171 (top-band fraction 0.916) — distinct mode-selection rules
+- effective dimension strongly isospin-constrained (r = 0.955; charge r = 0.759); down δ_eff = 2.449 matches
+  full-spectrum Weyl 2.473 within 0.96% (full-spectrum access); up δ_eff = 4.066 = 1.644× full Weyl (dense
+  top-band access)
+- → MODE-ACCESS ORIGIN: occupation-weighted mode access is quantum-number constrained — down = full
+  spectrum, up = dense band, selected by isospin (r≈0.96; connects QG149, QG145, weak-interaction structure)
+
 ---
 
 ## Overall Statistics
@@ -1509,8 +1519,8 @@ lepton hierarchy.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 151 | Complete |
-| **Total** | **258** | |
+| TQM-QG | 152 | Complete |
+| **Total** | **259** | |
 
 ## Key Unsolved Problems
 

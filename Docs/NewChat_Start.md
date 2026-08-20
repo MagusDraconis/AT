@@ -9276,6 +9276,21 @@ OVERFIT linear law; connects QG141 spectral-density exponents, QG145 charge×iso
 the spectral structure; open: does up δ_eff = 4.07 correspond to a spectral sub-range such as the octave-1
 band δ = 3.50). Report: Docs/Research/TQMQG_PhysicalSectorExponentOrigin.md.
 
+**TQM-QG Phase 150 (Origin of mode access) — COMPLETED (3/3 tests pass; TQM-QG verified; COMPUTATIONAL):**
+Question: why do different particle sectors access different parts of the same spectrum? Added ModeAccessOrigin
+(octave band structure with occupancy and local Weyl per band, charge and isospin constraints on the effective
+dimension, full-spectrum Weyl, down full-spectrum accessibility, up dense-band ratio, origin score).
+TQMQG1500 the spectrum offers distinct mode-selection rules (band 0: occupancy 4 local Weyl 1.318; band 1:
+occupancy 4 local Weyl 3.496; band 2: occupancy 87 local Weyl 14.171; top-band fraction 0.916) and the
+effective dimension is strongly isospin-constrained (r = 0.955; charge r = 0.759). TQMQG1501 the down
+sector's effective dimension (2.449) matches the full-spectrum Weyl (2.473) within 0.96% — the down sector
+accesses the FULL spectrum. TQMQG1502 the up sector's dimension (4.066) is 1.644× the full Weyl — the up
+sector accesses the DENSE top band; TQMQG1502 CLASSIFICATION: MODE-ACCESS ORIGIN — sectors access different
+parts of the same spectrum because occupation-weighted mode access is quantum-number constrained: down =
+full-spectrum access (δ_eff ≈ Weyl), up = dense-band access (δ_eff ≈ 1.64× Weyl), selected by isospin
+(r≈0.96; connects QG149 PHYSICAL ORIGIN, QG145 up-sector enhancement, weak-interaction structure).
+Report: Docs/Research/TQMQG_ModeAccessOrigin.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.
