@@ -1531,6 +1531,21 @@ lepton hierarchy.
   within the observable dynamics basin (default K, damping-insensitive, feedback ≥0.7) but not universal —
   K-sensitivity mirrors the effective-size law QG137/138 and the QG135/136 3-family basin
 
+### TQM-QG153: Origin of the Z2 Doublet Structure (TQM-QG Phase 153)
+**Status:** Complete (DOUBLET ORIGIN). The Z2 doublets are a real network symmetry.
+- pairs EXACT to machine precision (max relative split 4.5e-14, 51 pairs, doubled fraction 1.074) — genuine
+  degenerate eigenvalues, not coincidences
+- observable-sector adjacency is 12-regular, symmetric, and invariant under BOTH reflection (i→n−1−i) and
+  half-shift (i→i+n/2) — fixed-point-free Z2 involutions forcing the eigenvalue degeneracy; the doublets
+  are SYMMETRY-GENERATED
+- every octave band carries integer doublets (2, 2, 47); pairing persists across n=48..200 (0.984–1.149)
+  and K/damping/feedback, but ANY link removal destroys it (0.0000 after 2%) — the signature of
+  symmetry-induced degeneracy
+- → DOUBLET ORIGIN: the Z2 weak-isospin doublet structure is a fundamental property of the observable
+  sector spectrum (symmetry-forced, octave-band-ubiquitous, size/parameter-robust, fragile only under
+  explicit symmetry-breaking); explains WHY QG150 isospin-constrained access and QG151 golden-ratio
+  splitting exist; connects QG152 coherent-basin fragility
+
 ---
 
 ## Overall Statistics
@@ -1542,8 +1557,8 @@ lepton hierarchy.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 154 | Complete |
-| **Total** | **261** | |
+| TQM-QG | 155 | Complete |
+| **Total** | **262** | |
 
 ## Key Unsolved Problems
 

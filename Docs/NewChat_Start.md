@@ -9331,6 +9331,23 @@ not universal: extreme K and size settings deviate 12-25% (K-sensitivity mirrors
 QG137/138; consistent with the QG135/136 3-family parameter basin; ties to QG105 spectral universality).
 Report: Docs/Research/TQMQG_GoldenRatioAudit.md.
 
+**TQM-QG Phase 153 (Origin of the Z2 doublet structure) — COMPLETED (3/3 tests pass; TQM-QG verified; COMPUTATIONAL):**
+Question: is the weak-isospin doublet structure a fundamental property of the observable sector spectrum?
+Added DoubletOrigin (pair exactness, graph-automorphism symmetry origin, octave-band pairing, size scaling,
+parameter robustness, link-removal fragility, origin score). TQMQG1530 the pairs are EXACT to machine
+precision (max relative split 4.5e-14, 51 pairs, doubled fraction 1.074) and the observable-sector
+adjacency (12-regular, symmetric) is invariant under BOTH a reflection (i→n−1−i) and a half-shift
+(i→i+n/2) — fixed-point-free Z2 involutions that force the eigenvalue degeneracy; the doublets are
+symmetry-generated, not accidental. TQMQG1531 every octave band carries integer doublets (band 0: 2, band
+1: 2, band 2: 47) and the pairing persists across sizes n=48..200 (fraction 0.984–1.149). TQMQG1532 the
+pairing is robust across K=3..10, damping 0.2..0.4, and feedback 0.7..1.1 but ANY link removal destroys it
+(0.0000 after 2%) — the signature of a symmetry-induced degeneracy; TQMQG1532 CLASSIFICATION: DOUBLET
+ORIGIN — the Z2 doublet structure is a fundamental property of the observable sector spectrum, forced by
+the reflection/half-shift automorphisms of the 12-regular adjacency, present in every octave band, robust
+across size and dynamics parameters; the QG151 weak-isospin doublets are a real network symmetry (fragile
+only under explicit symmetry-breaking; explains WHY QG150 isospin-constrained access and QG151 golden-ratio
+splitting exist; connects QG152 coherent-basin fragility). Report: Docs/Research/TQMQG_DoubletOrigin.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.
