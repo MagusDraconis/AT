@@ -1453,6 +1453,17 @@ lepton hierarchy.
   charge×isospin cross term singling out the only sector with BOTH Q>0 and T3>0 (completes the quark-side
   hierarchy; connects QG143/144, QG141)
 
+### TQM-QG146: Quark Mass Hierarchy Law (TQM-QG Phase 146)
+**Status:** Complete (PARTIAL LAW). The charge×isospin amplification is real but not a single universal law.
+- up within-sector ratios r21=577.3 r31=78636 (deviations r21×9.8, r31×22.7 — amplified); down r21=20.2
+  r31=889 (deviations r21×0.34, r31×0.26 — suppressed); spectral density Weyl 2.473, occupancy 0.916
+- charge×isospin cross term correlates STRONGLY with deviations (Pearson r = 0.767 with Q·(1+T3)); effective
+  within-sector exponents differ: up 8.131 (steeper than 5.88 baseline), down 4.898 (shallower)
+- exponent split 0.398; a single universal law does NOT reproduce both quark hierarchies → PARTIAL LAW:
+  real cross-term amplification (r≈0.77) and strong per-sector deviations, but the full up AND down
+  hierarchies need sector-dependent exponents (up 8.13 vs down 4.90), not a single law (consistent with
+  QG142; open: what sets 8.13/4.90/5.88)
+
 ---
 
 ## Overall Statistics
@@ -1464,8 +1475,8 @@ lepton hierarchy.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 147 | Complete |
-| **Total** | **254** | |
+| TQM-QG | 148 | Complete |
+| **Total** | **255** | |
 
 ## Key Unsolved Problems
 

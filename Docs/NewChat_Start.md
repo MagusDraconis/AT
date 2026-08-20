@@ -9214,6 +9214,21 @@ that robustly singles out the up sector (the only sector with BOTH Q>0 and T3>0)
 hierarchy (completes the quark-side hierarchy: octave law + up-sector cross-term enhancement; connects
 QG143/144, QG141 spectral-density exponents). Report: Docs/Research/TQMQG_UpSectorEnhancement.md.
 
+**TQM-QG Phase 146 (Quark mass hierarchy law) — COMPLETED (3/3 tests pass; TQM-QG verified; COMPUTATIONAL):**
+Question: can the full up/down quark mass hierarchy be reproduced from one spectral-interaction law? Added
+QuarkHierarchyLaw (up/down within-sector ratios and deviation factors, spectral Weyl exponent and occupancy,
+effective within-sector exponent per sector, charge×isospin cross-term correlation, exponent split,
+universal-law and single-law-reproduces-both checks, law score). TQMQG1460 up within-sector ratios r21=577.3
+r31=78636 (deviations r21×9.8, r31×22.7 — amplified) and down r21=20.2 r31=889 (deviations r21×0.34,
+r31×0.26 — suppressed), on a well-defined spectral density (Weyl 2.473, occupancy 0.916). TQMQG1461 the
+charge×isospin cross term correlates STRONGLY with the deviations (Pearson r = 0.767 with Q·(1+T3)) and the
+effective within-sector exponents differ: up 8.131 (steeper than the 5.88 octave baseline), down 4.898
+(shallower). TQMQG1462 the exponent split is 0.398 and a single universal law does NOT reproduce both quark
+hierarchies; TQMQG1462 CLASSIFICATION: PARTIAL LAW — the charge×isospin amplification is real (r≈0.77) and
+each sector deviates strongly from the octave law, but the full up AND down hierarchies require
+sector-dependent exponents (up 8.13 vs down 4.90), not a single law (consistent with QG142 PARTIAL LAW; open:
+what sets the sector-dependent exponent 8.13/4.90/5.88). Report: Docs/Research/TQMQG_QuarkHierarchyLaw.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.
