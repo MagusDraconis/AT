@@ -1651,6 +1651,23 @@ Exponents). Charge and isospin determine the hierarchy exponent (intermediate, f
   (span∈[4,8), n∈[60,120)) + unique octave rung n=3·2^k select n=96 with no fitted constants (closes the
   QG155 open question "why D96"; selection is structural, not stability-driven)
 
+### TQM-QG160: Period-3 Seed Origin (TQM-QG Phase 160)
+**Status:** Complete (INEVITABLE). Period-3 is the unique seed period whose natural size has complete Z2.
+- general periodic seed: high activity (0.95) at i%p==0, low (0.2) elsewhere; each period p has a NATURAL
+  octave-rung size n = p·2^k; in the 3-family window [60,120): p=2→64, p=3→96, p=4→64, p=5→80, p=6→96
+- stability: periods p≥6 fail to converge to the D96 radius-6 attractor (active density ≤ 1/6 → radius
+  collapses to ≤1); p=2..5 converge at their natural sizes
+- Z2 completeness: COMPLETE doublet pairing (0 unpaired modes, QG153 weak-isospin structure) holds ONLY
+  at n=96 — n=64 (p=2,4) and n=80 (p=5) have 1 unpaired mode (INCOMPLETE), n=96 (p=3) has 0 unpaired
+- automorphism: seed half-shift 3 | 48 holds at n=96 (Z2 origin, QG155)
+- entropy does NOT select: seed entropy is nearly identical across p=2..6 (4.27–4.33)
+- candidate discrimination: p=2→64 incomplete, p=3→96 COMPLETE, p=4→64 incomplete, p=5→80 incomplete,
+  p=6→96 non-convergent
+- → INEVITABLE: period-3 is the unique seed period whose natural 3-family size (n=96) has complete Z2
+  doublet pairing — derived from attractor dynamics and spectral structure with no fitted constants
+  (NOT merely empirical; closes the QG159 open question "why period 3"; chain: period-3 seed → D96 →
+  Z2 doublets → moment orders → N_eff → δ → p)
+
 ---
 
 ## Overall Statistics
@@ -1662,8 +1679,8 @@ Exponents). Charge and isospin determine the hierarchy exponent (intermediate, f
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 161 | Complete |
-| **Total** | **268** | |
+| TQM-QG | 162 | Complete |
+| **Total** | **269** | |
 
 ## Key Unsolved Problems
 

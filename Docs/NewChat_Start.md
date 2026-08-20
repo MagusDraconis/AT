@@ -3578,6 +3578,22 @@ TQMQG1592 CLASSIFICATION: INEVITABLE — D96 is the inevitable attractor geometr
 3-family window (span∈[4,8), n∈[60,120)) + unique octave rung n=3·2^k select n=96 with no fitted constants.
 Report: Docs/Research/TQMQG_D96SelectionOrigin.md.
 
+**TQM-QG Phase 160 (Period-3 seed origin) — COMPLETED (3/3 tests pass; TQM-QG verified; COMPUTATIONAL):**
+Question: why is the seed period exactly 3 — inevitable (derived from attractor dynamics + spectral
+structure) or merely empirical? Added Period3SeedOrigin (general periodic seed, natural octave-rung size
+n = p·2^k, convergence threshold, Z2-completeness check, seed half-shift automorphism, entropy non-select,
+candidate discrimination, origin score). TQMQG1600 each seed period p has a NATURAL octave-rung size
+n = p·2^k; in the 3-family window [60,120): p=2→64, p=3→96, p=4→64, p=5→80, p=6→96; periods p≥6 fail to
+converge to the D96 radius-6 attractor (active density ≤ 1/6 → radius collapses to ≤1). TQMQG1601 COMPLETE
+Z2 doublet pairing (0 unpaired modes, the weak-isospin structure QG153) holds ONLY at n=96: n=64 (p=2,4)
+and n=80 (p=5) have 1 unpaired mode (INCOMPLETE doublets), n=96 (p=3) has 0 unpaired; the seed half-shift
+automorphism (3|48) is satisfied; seed entropy is nearly identical across periods (does NOT select).
+TQMQG1602 discrimination: p=2→64 incomplete, p=3→96 COMPLETE ✓, p=4→64 incomplete, p=5→80 incomplete,
+p=6→96 non-convergent; TQMQG1602 CLASSIFICATION: INEVITABLE — p=3 is the unique seed period whose natural
+3-family size (n=96) has complete Z2 doublet pairing, derived from attractor dynamics and spectral structure
+with no fitted constants (NOT merely empirical; closes the QG159 open question "why period 3"). Report:
+Docs/Research/TQMQG_Period3SeedOrigin.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.
@@ -3701,6 +3717,7 @@ Open Questions:
 | Quark Hierarchy (unified law) | — | OPEN |
 | Neutrino Mass Law (exact) | — | OPEN |
 | D96 Symmetry Selection | QG159 | INEVITABLE (Z2 automorphism + 3-family window + unique octave rung) |
+| Seed Period Origin | QG160 | INEVITABLE (period-3 unique: natural size 96 has complete Z2) |
 | 106 GeV Resonance (validation) | QG132 | FALSIFIABLE PREDICTION (not yet observed) |
 | Collider Test of Sector-Ladder | QG130 | PREDICTED (no data yet) |
 | Sector Exponent Law p(Q,T3) | QG147 | HISTORICAL (overfit) — superseded by QG149 |
@@ -3715,7 +3732,8 @@ Energy
 
 Fermions:
 
-D96 Selection (QG159: Z2 + 3-family window)
+Period-3 Seed (QG160: unique complete-Z2 natural size)
+→ D96 Selection (QG159: Z2 + 3-family window)
 → Sector Spectrum
 → Octave Bands
 → Family Count
@@ -3767,7 +3785,7 @@ Milestone counters:
 TQM-QG 144 phases
 432 tests
 
-### QG138-159: Fermion Structure from Spectral Geometry
+### QG138-160: Fermion Structure from Spectral Geometry
 
 Status: **Major milestone**
 
@@ -3791,21 +3809,15 @@ QG156: unified spectral access law.
 
 QG157: effective access counts from D96 moments.
 
-QG158: moment orders from Z2 powers.
-
-QG159: D96 selection origin.
-
-QG156: unified spectral access law.
-
-QG157: effective access counts from D96 moments.
-
 QG158: moment orders from Z2 powers (INEVITABLE).
 
 QG159: D96 selection origin (INEVITABLE).
 
+QG160: period-3 seed origin (INEVITABLE).
+
 Milestone counters:
 
-TQM-QG 161 phases
+TQM-QG 162 phases
 432+ TQM-QG tests verified
 
 ### QG154: Neutrino Sector Origin
@@ -3830,5 +3842,5 @@ NEUTRINO ORIGIN
 
 Milestone counters:
 
-TQM-QG 161 phases
+TQM-QG 162 phases
 432+ TQM-QG tests verified
