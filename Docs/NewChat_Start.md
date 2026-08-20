@@ -9480,6 +9480,12 @@ Z2 doublet symmetry origin
 QG154:
 Neutrino origin from neutral-charge limit
 
+QG155:
+Weak-isospin doublets from D96 symmetry
+
+QG154:
+Neutrino origin from neutral-charge limit
+
 ## Key Open Problems
 
 - "Why three generations?" → REMOVED (solved: QG138 derives familyCount = floor(log2(ωmax/ωmin)) + 1).
@@ -9526,6 +9532,8 @@ Sector Spectrum
 → Family Count
 → Spectral Density
 → Mass Hierarchy
+→ Z2 Doublets (D96 symmetry)
+→ Sector Hierarchies (lepton / quark / neutrino)
 
 ## Major Milestones
 
@@ -9570,7 +9578,9 @@ Milestone counters:
 TQM-QG 144 phases
 432 tests
 
-### QG138/141/149/150/153: Fermion Structure from Spectral Geometry
+### QG138-155: Fermion Structure from Spectral Geometry
+
+Status: **Major milestone**
 
 Summary:
 
@@ -9578,11 +9588,15 @@ QG138: family count from octave quantization.
 
 QG141: hierarchy exponents from spectral density.
 
-QG149: sector exponents from occupation-weighted access.
+QG149: sector exponents from occupation-weighted mode access.
 
 QG150: mode access from isospin selection.
 
 QG153: Z2 doublet symmetry origin.
+
+QG154: neutrino origin from neutral-charge limit.
+
+QG155: weak-isospin doublets from D96 symmetry.
 
 Milestone counters:
 
