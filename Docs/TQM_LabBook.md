@@ -1256,6 +1256,18 @@ sectors: the observable 3-family sector = observed families; high-energy sectors
   quantum emission / atomic-like spectra from network-sector transitions (connects QG127, QG89 energy =
   actualization rate, QG126)
 
+### TQM-QG129: Physical Calibration of the Sector Ladder (TQM-QG Phase 129)
+**Status:** Complete (PARTIAL MAPPING). The ladder calibrates to the electroweak scale but not the generation
+hierarchy.
+- the TOP transition quantum (1.333) reproduces the SM H/Z mass ratio (1.372) within 2.9% (best match); unit
+  quantum → Z/W (13.5%), ladder span 2.889 → t/W (25.5%); ladder spacing uniform (rel. std 0.0929) =
+  harmonic-like resonance spacing
+- 8 discrete energy thresholds (span 2.4); energy range to the highest sector = 0.123 of the collider scale
+  span (LHC/LEP ~ 65) → all sectors in a NARROW collider window (reachable at modest energies)
+- ladder radius span (2.889, linear-calibration hostable mass ratio) CANNOT host the lepton generation
+  hierarchy (mu/e = 206.8) → PARTIAL MAPPING: electroweak H/Z reproduced (~3%), generation hierarchy beyond
+  the ladder span (connects QG128, QG118/122, QG85 POSTULATED SM parameters)
+
 ---
 
 ## Overall Statistics
@@ -1267,8 +1279,8 @@ sectors: the observable 3-family sector = observed families; high-energy sectors
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 130 | Complete |
-| **Total** | **237** | |
+| TQM-QG | 131 | Complete |
+| **Total** | **238** | |
 
 ## Key Unsolved Problems
 

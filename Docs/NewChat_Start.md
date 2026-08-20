@@ -8937,6 +8937,22 @@ emission / atomic-like spectra from network-sector transitions; connects QG127 d
 = actualization rate, QG126 SECTOR-PARTICLE MAPPING). Report:
 Docs/Research/TQMQG_SectorTransitionSpectrum.md.
 
+**TQM-QG Phase 129 (Physical calibration of the sector ladder) — COMPLETED (3/3 tests pass; 393/393 TQM-QG verified; COMPUTATIONAL):**
+Question: can the ladder be calibrated to known particle masses or collider energy scales? Added
+PhysicalCalibration (network characteristic ratios vs documented SM mass ratios, best-match deviation,
+mass-match count, resonance-spacing uniformity, threshold span, collider accessibility ratio, hostable
+lepton ratio, calibration score). TQMQG1290 the TOP transition quantum (1.333) reproduces the SM H/Z mass
+ratio (1.372) within 2.9% (best overall match); the unit quantum maps to Z/W within 13.5%, the ladder span
+(2.889) to t/W within 25.5%; the ladder spacing is UNIFORM (rel. std 0.0929, harmonic-like resonance
+spacing). TQMQG1291 there are 8 discrete energy thresholds (span 2.400) and the energy range to the highest
+sector is only 0.123 of the approximate collider scale span (LHC/LEP ~ 65) — all sectors lie in a NARROW
+collider window (reachable at modest energies). TQMQG1292 the ladder radius span (2.889, linear
+calibration hostable mass ratio) CANNOT host the lepton generation hierarchy (mu/e = 206.8); TQMQG1292
+CLASSIFICATION: PARTIAL MAPPING — the electroweak H/Z ratio is reproduced (~3%) but the ladder span cannot
+reach the generation hierarchy (calibration exists for the electroweak scale, not the generation hierarchy;
+connects QG128 PREDICTIVE SPECTRUM, QG118/122 family hierarchy beyond linear ladder span, QG85 POSTULATED
+SM parameters). Report: Docs/Research/TQMQG_PhysicalCalibration.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.
