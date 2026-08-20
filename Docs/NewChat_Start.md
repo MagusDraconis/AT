@@ -9114,6 +9114,23 @@ octave quantization fixes the family count, not the mass values; connects QG138 
 QG85 POSTULATED, QG129 PARTIAL MAPPING, QG134 FUNDAMENTAL SPLIT; open question: what steepens 1:2:4 into
 1:17:207). Report: Docs/Research/TQMQG_MassHierarchyFromOctaves.md.
 
+**TQM-QG Phase 140 (Mass hierarchy amplification) — COMPLETED (3/3 tests pass; 426/426 TQM-QG verified; COMPUTATIONAL):**
+Question: can a secondary amplification mechanism transform the octave ladder (1:2:4) into steep fermion mass
+hierarchies? Added HierarchyAmplification (mode occupation per octave band, crowding ratio, amplification
+exponent p=log(lepton span)/log(octave span), damping robustness of the octave centers, least-squares fit of
+the amplification law mass=A·center^p·modes^q, predicted lepton masses, amplification factor, amplification
+score). TQMQG1400 the octave bands carry mode counts [4,4,87] (crowding ratio 21.75) and the amplification
+exponent needed to reach the lepton span is p=5.88 — a steep power-law amplification. TQMQG1401 the octave
+structure is fully damping-robust (1 distinct pattern across d=0.2,0.3,0.4) and the fitted amplification law
+mass=0.511·center^7.692·modes^-0.815 reproduces the lepton masses within 2.9% (pred [0.51, 105.66, 1828.40]
+vs obs [0.51, 105.66, 1776.86] MeV). TQMQG1402 the amplification factor is 894.5× (the octave ladder is
+steepened ~900× into the observed hierarchy); TQMQG1402 CLASSIFICATION: HIERARCHY ORIGIN — a secondary
+power-law amplification in band position/occupation transforms the octave ladder into the observed fermion
+mass hierarchy (e, μ, τ within ~3%); the octave structure supplies both the family count (QG138) and the
+amplification input (positions + occupations); open question: what fixes p≈7.7 and q≈-0.8 dynamically
+(connects QG139, QG138 FUNDAMENTAL, QG134 FUNDAMENTAL SPLIT steepening). Report:
+Docs/Research/TQMQG_HierarchyAmplification.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.

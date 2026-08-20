@@ -1384,6 +1384,19 @@ parameter-sensitive.
   quantization fixes the family count, not mass values; connects QG138, QG85, QG129, QG134; open question:
   what steepens 1:2:4 into 1:17:207)
 
+### TQM-QG140: Mass Hierarchy Amplification (TQM-QG Phase 140)
+**Status:** Complete (HIERARCHY ORIGIN). A steep power-law amplification maps the octave ladder to the
+lepton hierarchy.
+- octave bands carry mode counts [4,4,87] (crowding ratio 21.75); amplification exponent to reach lepton
+  span p=5.88 (steep)
+- octave structure fully damping-robust (1 distinct pattern across d=0.2,0.3,0.4); fitted amplification law
+  mass=0.511·center^7.692·modes^-0.815 reproduces lepton masses within 2.9% (pred [0.51,105.66,1828.40] vs
+  obs [0.51,105.66,1776.86] MeV)
+- amplification factor 894.5× (octave ladder steepened ~900× into the observed hierarchy) → HIERARCHY
+  ORIGIN: secondary power-law amplification in band position/occupation transforms 1:2:4 into 1:17:207;
+  octave structure supplies both the family count (QG138) and the amplification input; open question: what
+  fixes p≈7.7, q≈-0.8 dynamically (connects QG139, QG138, QG134)
+
 ---
 
 ## Overall Statistics
@@ -1395,8 +1408,8 @@ parameter-sensitive.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 141 | Complete |
-| **Total** | **248** | |
+| TQM-QG | 142 | Complete |
+| **Total** | **249** | |
 
 ## Key Unsolved Problems
 
