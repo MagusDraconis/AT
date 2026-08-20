@@ -9402,6 +9402,16 @@ octave structure
 → hierarchy exponents
 → lepton hierarchy
 
+## Weak-Isospin Doublet Structure
+
+Status: DERIVED (symmetry origin)
+
+QG151–152:
+
+- Observable-sector spectrum is fully Z2 paired (95/95 modes).
+- Weak-isospin mode selection is associated with this doublet structure.
+- Golden-ratio shift appears as a robust consequence within the observable-dynamics basin, but is not yet established as fundamental.
+
 ## Key Open Problems
 
 - "Origin of lepton hierarchy" → REPLACED by "Sector-dependent hierarchy amplification."
