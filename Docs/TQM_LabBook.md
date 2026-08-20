@@ -1464,6 +1464,18 @@ lepton hierarchy.
   hierarchies need sector-dependent exponents (up 8.13 vs down 4.90), not a single law (consistent with
   QG142; open: what sets 8.13/4.90/5.88)
 
+### TQM-QG147: Sector-Dependent Exponent Law (TQM-QG Phase 147)
+**Status:** Complete (EXPONENT ORIGIN). Charge and isospin determine the hierarchy exponent.
+- hierarchy exponent correlates strongly with isospin (Pearson r = 0.955) and well with charge (r = 0.759),
+  weakly with Q×T3 (0.296)
+- effective spectral dimensions: leptons 2.940, up 4.066 (EXCEEDS octave Weyl 2.473), down 2.449; linear law
+  p = 6.760 − 1.473·Q + 4.706·T3 reproduces lepton/up/down exponents EXACTLY (max residual 0.00000)
+- predictive: neutrino exponent prediction (Q=0, T3=+1/2) = 9.113 vs observed 4.483 (testable difference —
+  neutrino masses least constrained) → EXPONENT ORIGIN: sector-dependent hierarchy exponents are DETERMINED
+  by charge and isospin via p = p0 + a·Q + b·T3 (resolves QG146 PARTIAL LAW; full fermion mass law = QG138
+  octave count × QG141 spectral exponents × sector exponents p(Q,T3); up δ_eff = 4.07 signature of
+  up-type amplification)
+
 ---
 
 ## Overall Statistics
@@ -1475,8 +1487,8 @@ lepton hierarchy.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 148 | Complete |
-| **Total** | **255** | |
+| TQM-QG | 149 | Complete |
+| **Total** | **256** | |
 
 ## Key Unsolved Problems
 

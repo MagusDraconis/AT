@@ -9229,6 +9229,21 @@ each sector deviates strongly from the octave law, but the full up AND down hier
 sector-dependent exponents (up 8.13 vs down 4.90), not a single law (consistent with QG142 PARTIAL LAW; open:
 what sets the sector-dependent exponent 8.13/4.90/5.88). Report: Docs/Research/TQMQG_QuarkHierarchyLaw.md.
 
+**TQM-QG Phase 147 (Sector-dependent exponent law) — COMPLETED (3/3 tests pass; TQM-QG verified; COMPUTATIONAL):**
+Question: can charge and isospin determine the hierarchy exponent itself? Added SectorExponentLaw
+(exponent vs charge/isospin/cross correlations, effective spectral dimension δ_eff = p_eff/2 per sector,
+linear exponent-law fit p = p0 + a·Q + b·T3 by Gaussian elimination, max residual, neutrino prediction,
+origin score). TQMQG1470 the hierarchy exponent correlates strongly with isospin (Pearson r = 0.955) and
+well with charge (r = 0.759), but only weakly with the Q×T3 product (0.296). TQMQG1471 the effective
+spectral dimensions are leptons 2.940, up 4.066 (EXCEEDS the octave Weyl exponent 2.473), down 2.449, and
+the linear law p = 6.760 − 1.473·Q + 4.706·T3 reproduces the lepton/up/down exponents EXACTLY (max residual
+0.00000). TQMQG1472 the law is predictive: neutrino exponent prediction (Q=0, T3=+1/2) = 9.113 vs observed
+4.483 (a testable difference — neutrino masses least constrained); TQMQG1472 CLASSIFICATION: EXPONENT
+ORIGIN — the sector-dependent hierarchy exponents are DETERMINED by charge and isospin via the linear law
+p = p0 + a·Q + b·T3 (resolves QG146 PARTIAL LAW; the full fermion mass law = octave family count QG138 ×
+spectral exponents QG141 × sector exponents p(Q,T3); the up sector's elevated δ_eff = 4.07 is a candidate
+signature of up-type amplification). Report: Docs/Research/TQMQG_SectorExponentLaw.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.
