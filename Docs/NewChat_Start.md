@@ -9229,6 +9229,11 @@ each sector deviates strongly from the octave law, but the full up AND down hier
 sector-dependent exponents (up 8.13 vs down 4.90), not a single law (consistent with QG142 PARTIAL LAW; open:
 what sets the sector-dependent exponent 8.13/4.90/5.88). Report: Docs/Research/TQMQG_QuarkHierarchyLaw.md.
 
+> **SUPERSESSION NOTE:** QG147's exponent law p = 6.760 − 1.473·Q + 4.706·T3 is a **historical exponent fit**.
+> It is superseded by QG149 (physical spectral-density mechanism, down p_eff = 2×Weyl) and QG150/151
+> (isospin-constrained mode access via the Z2 doublet spectrum). QG147 must NOT be cited as an equal
+> explanation alongside QG149–151.
+
 **TQM-QG Phase 147 (Sector-dependent exponent law) — COMPLETED (3/3 tests pass; TQM-QG verified; COMPUTATIONAL):**
 Question: can charge and isospin determine the hierarchy exponent itself? Added SectorExponentLaw
 (exponent vs charge/isospin/cross correlations, effective spectral dimension δ_eff = p_eff/2 per sector,
