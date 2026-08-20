@@ -3562,6 +3562,22 @@ monotonicity (both moment δ and target δ strictly increasing); TQMQG1582 CLASS
 moment orders (1/2, 1, 2) ARE the integer powers of the Z2 order (2) with 3 family levels, assigned by
 doublet-access level with no fitting (NOT merely descriptive). Report: Docs/Research/TQMQG_MomentOrderOrigin.md.
 
+**TQM-QG Phase 159 (D96 selection origin) — COMPLETED (3/3 tests pass; TQM-QG verified; COMPUTATIONAL):**
+Question: why does the observable attractor select D96 over D64, D128, D192? Added D96SelectionOrigin
+(Z2 automorphism constraint, family-count window, span scaling, octave-rung selection, candidate
+discrimination, selection score). TQMQG1590 the Z2 doublet symmetry requires the half-shift automorphism
+i→i+n/2; the period-3 seed makes this a symmetry only when 6|n — D64 (64 mod 6 = 4) and D128 (128 mod 6 = 2)
+FAIL the Z2 constraint (no doublets), while 48/96/192 pass; the 3-family constraint requires span ∈ [4, 8):
+n=48 span 3.24 → 2 families (too few), n=96 span 6.40 → 3 families ✓, n=192 span 12.8 → 4 families (too many).
+TQMQG1591 span scales as span ≈ 0.0667·n so the 3-family window fixes n ∈ [60, 120); the octave rung chain
+n = 3·2^k (period-3 × frequency doubling) contains n = 48, 96, 192 — and D96 is the UNIQUE rung in the
+3-family window (the 3-family rung set is exactly [96]). TQMQG1592 discrimination: D64 fails Z2 despite 3
+families, D128 fails Z2 and has 4 families, D192 passes Z2 but has 4 families (span 12.8), D96 passes Z2
+AND has exactly 3 families; stability is NOT size-selecting (all candidates are stable radius-6 attractors);
+TQMQG1592 CLASSIFICATION: INEVITABLE — D96 is the inevitable attractor geometry: Z2 automorphism (6|n) +
+3-family window (span∈[4,8), n∈[60,120)) + unique octave rung n=3·2^k select n=96 with no fitted constants.
+Report: Docs/Research/TQMQG_D96SelectionOrigin.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.
@@ -3668,7 +3684,6 @@ Open Questions:
 
 - exact neutrino mass law (mass values, normal vs inverted ordering, Majorana character)
 - unified quark-sector hierarchy law (single law reproducing up AND down hierarchies)
-- origin of D96 symmetry selection (why the attractor selects the circulant ring C_n(1..6) / dihedral D_n)
 - experimental validation of the 106 GeV resonance (QG132 primary falsifiable prediction)
 - collider test of sector-ladder physics (collider signatures of the energy-ladder rung states)
 
@@ -3685,7 +3700,7 @@ Open Questions:
 | Neutrino Sector | QG154 | NEUTRINO ORIGIN (structural) — exact mass law OPEN |
 | Quark Hierarchy (unified law) | — | OPEN |
 | Neutrino Mass Law (exact) | — | OPEN |
-| D96 Symmetry Selection | — | OPEN |
+| D96 Symmetry Selection | QG159 | INEVITABLE (Z2 automorphism + 3-family window + unique octave rung) |
 | 106 GeV Resonance (validation) | QG132 | FALSIFIABLE PREDICTION (not yet observed) |
 | Collider Test of Sector-Ladder | QG130 | PREDICTED (no data yet) |
 | Sector Exponent Law p(Q,T3) | QG147 | HISTORICAL (overfit) — superseded by QG149 |
@@ -3700,7 +3715,8 @@ Energy
 
 Fermions:
 
-Sector Spectrum
+D96 Selection (QG159: Z2 + 3-family window)
+→ Sector Spectrum
 → Octave Bands
 → Family Count
 → Spectral Density
@@ -3751,7 +3767,7 @@ Milestone counters:
 TQM-QG 144 phases
 432 tests
 
-### QG138-155: Fermion Structure from Spectral Geometry
+### QG138-159: Fermion Structure from Spectral Geometry
 
 Status: **Major milestone**
 
@@ -3775,11 +3791,21 @@ QG156: unified spectral access law.
 
 QG157: effective access counts from D96 moments.
 
+QG158: moment orders from Z2 powers.
+
+QG159: D96 selection origin.
+
+QG156: unified spectral access law.
+
+QG157: effective access counts from D96 moments.
+
 QG158: moment orders from Z2 powers (INEVITABLE).
+
+QG159: D96 selection origin (INEVITABLE).
 
 Milestone counters:
 
-TQM-QG 160 phases
+TQM-QG 161 phases
 432+ TQM-QG tests verified
 
 ### QG154: Neutrino Sector Origin
@@ -3804,5 +3830,5 @@ NEUTRINO ORIGIN
 
 Milestone counters:
 
-TQM-QG 160 phases
+TQM-QG 161 phases
 432+ TQM-QG tests verified

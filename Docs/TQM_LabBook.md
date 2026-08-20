@@ -1633,6 +1633,24 @@ Exponents). Charge and isospin determine the hierarchy exponent (intermediate, f
   QG157 open question "why these moment orders"; chain: D96 → mode-selection rule → moment order → N_eff
   → δ → p)
 
+### TQM-QG159: D96 Selection Origin (TQM-QG Phase 159)
+**Status:** Complete (INEVITABLE). D96 is the unique octave rung satisfying the Z2 and family-count constraints.
+- Z2 automorphism constraint: the Z2 doublet symmetry requires the half-shift automorphism i → i+n/2;
+  the period-3 seed makes this a seed symmetry only when n/2 ≡ 0 (mod 3), i.e. 6 | n → D64 (64 mod 6 = 4)
+  and D128 (128 mod 6 = 2) FAIL the Z2 constraint (no doublets); 48/96/192 pass
+- family-count constraint: exactly 3 octave families requires span ∈ [4, 8): n=48 span 3.24 → 2 families
+  (too few), n=96 span 6.40 → 3 families ✓, n=192 span 12.8 → 4 families (too many)
+- spectral optimality: span scales as span ≈ 0.0667·n (0.0675, 0.0667, 0.0666 at n=48/96/192), so the
+  3-family window [4, 8) fixes n ∈ [60, 120)
+- octave-rung selection: the natural doubling chain n = 3·2^k (period-3 × frequency doubling) contains
+  n = 48, 96, 192 — D96 is the UNIQUE rung in the 3-family window (the 3-family rung set is exactly [96])
+- candidate discrimination: D64 fails Z2 despite 3 families, D128 fails Z2 and has 4 families (span 8.5),
+  D192 passes Z2 but has 4 families (span 12.8), D96 passes Z2 AND has exactly 3 families
+- stability is NOT size-selecting: all octave rungs converge to the same radius-6 attractor
+- → INEVITABLE: D96 is the inevitable attractor geometry — Z2 automorphism (6|n) + 3-family window
+  (span∈[4,8), n∈[60,120)) + unique octave rung n=3·2^k select n=96 with no fitted constants (closes the
+  QG155 open question "why D96"; selection is structural, not stability-driven)
+
 ---
 
 ## Overall Statistics
@@ -1644,8 +1662,8 @@ Exponents). Charge and isospin determine the hierarchy exponent (intermediate, f
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 160 | Complete |
-| **Total** | **267** | |
+| TQM-QG | 161 | Complete |
+| **Total** | **268** | |
 
 ## Key Unsolved Problems
 
@@ -1657,6 +1675,7 @@ Exponents). Charge and isospin determine the hierarchy exponent (intermediate, f
 6. Hawking temperature, Page time — imported from QFT+GR
 7. Exact neutrino mass law (values, ordering, Majorana character) — open (structural origin: QG154)
 8. Unified quark-sector hierarchy law (up AND down in one law) — open
-9. Origin of D96 symmetry selection — open (structure: QG155 SYMMETRY ORIGIN)
+9. Origin of D96 symmetry selection — RESOLVED (QG159 INEVITABLE: Z2 automorphism 6|n + 3-family window
+   span∈[4,8) + unique octave rung n=3·2^k select n=96; QG155 SYMMETRY ORIGIN of the doublet structure)
 10. Experimental validation of the 106 GeV resonance (QG132) — unobserved
 11. Collider test of sector-ladder physics (QG130) — no data yet
