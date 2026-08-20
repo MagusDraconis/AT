@@ -9148,6 +9148,23 @@ from free fitting (net mass exponent 5.882; the spectral dimension δ≈2.2-2.5 
 network's spectral geometry; connects QG140 HIERARCHY ORIGIN, QG138 FUNDAMENTAL octave law, QG115/116
 saturated activity). Report: Docs/Research/TQMQG_HierarchyExponentOrigin.md.
 
+**TQM-QG Phase 142 (Unified fermion mass law) — COMPLETED (3/3 tests pass; 432/432 TQM-QG verified; COMPUTATIONAL):**
+Question: can a single spectral law reproduce all fermion generations simultaneously (leptons, up quarks,
+down quarks, neutrinos)? Added UnifiedMassLaw (octave-predicted within-sector ratios from the QG140/141
+law mass~center^5.88: {1, 2^5.88, 4^5.88} = {1, 59, 3468}; per-sector observed ratios for leptons e/mu/tau,
+up u/c/t, down d/s/b, neutrinos normal ordering; deviation of the highest ratio from the octave prediction;
+universal-scaling spread across sectors; law score). TQMQG1420 the LEPTON sector reproduces the octave law
+almost EXACTLY (tau/e = 3477.2 vs octave prediction 3468.3, deviation 0.26%). TQMQG1421 the up-quark sector
+(t/u = 78636, deviation 2167%) is far steeper and the down-quark sector (b/d = 889, deviation 74%) is
+shallower than the octave law — quarks do NOT match. TQMQG1422 the neutrino sector (nu3/nu1 = 500, deviation
+86%) is much shallower; the highest-ratio spread across sectors is 157× and the log2(r31) spread is 2.83 —
+sectors do NOT share a universal ratio pattern; TQMQG1422 CLASSIFICATION: PARTIAL LAW — the lepton sector
+reproduces the octave law (~0.3%) but up/down/neutrino sectors do not, so a single universal spectral law
+fails (a sector-dependent element remains; candidate color/charge/isospin-dependent amplification; connects
+QG138/141 spectral origin, QG134 FUNDAMENTAL SPLIT refined to lepton-vs-quark/neutrino; open question: what
+sector-dependent factor modifies the octave exponent for quarks/neutrinos). Report:
+Docs/Research/TQMQG_UnifiedMassLaw.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.

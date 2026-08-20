@@ -1408,6 +1408,18 @@ lepton hierarchy.
   (Weyl/mode-density) scaling, not free fitting (net mass exponent 5.882; spectral dimension δ≈2.2-2.5 links
   mass hierarchy to network spectral geometry; connects QG140, QG138, QG115/116)
 
+### TQM-QG142: Unified Fermion Mass Law (TQM-QG Phase 142)
+**Status:** Complete (PARTIAL LAW). The octave law holds for leptons, not for quarks/neutrinos.
+- octave-predicted within-sector ratios from mass~center^5.88: {1, 59, 3468}; LEPTON sector reproduces it
+  almost exactly (tau/e = 3477.2 vs 3468.3, deviation 0.26%)
+- up-quark sector (t/u = 78636, deviation 2167%) far steeper, down-quark (b/d = 889, deviation 74%) and
+  neutrino (nu3/nu1 = 500, deviation 86%) shallower than the octave law
+- highest-ratio spread across sectors 157×, log2(r31) spread 2.83 → sectors do NOT share a universal ratio
+  pattern → PARTIAL LAW: lepton sector reproduces the octave law (~0.3%) but up/down/neutrino do not (a
+  single universal spectral law fails; sector-dependent element remains — candidate color/charge/isospin-
+  dependent amplification; connects QG138/141, QG134; open question: what modifies the octave exponent for
+  quarks/neutrinos)
+
 ---
 
 ## Overall Statistics
@@ -1419,8 +1431,8 @@ lepton hierarchy.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 143 | Complete |
-| **Total** | **250** | |
+| TQM-QG | 144 | Complete |
+| **Total** | **251** | |
 
 ## Key Unsolved Problems
 
