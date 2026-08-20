@@ -9418,13 +9418,17 @@ Origin:
 
 - QG140: mass hierarchy amplification
 - QG141: spectral-density exponent origin
+- QG149: sector exponents from occupation-weighted access (supersedes QG147 fit)
+- QG150: mode access from isospin selection
+- QG154: neutrino sector neutral-charge origin
 
 Chain:
 
 octave structure
 → mode density
 → hierarchy exponents
-→ lepton hierarchy
+→ occupation-weighted mode access
+→ sector hierarchies
 
 ## Weak-Isospin Doublet Structure
 
@@ -9438,18 +9442,17 @@ QG151–152:
 
 ## Key Open Problems
 
+- "Why three generations?" → REMOVED (solved: QG138 derives familyCount = floor(log2(ωmax/ωmin)) + 1).
+- "Generic fermion hierarchy origin" → REMOVED (largely derived: QG140/141 spectral-density amplification; QG149 occupation-weighted access; QG154 neutrino neutral-charge origin).
 - "Origin of lepton hierarchy" → REPLACED by "Sector-dependent hierarchy amplification."
-
-Open Question:
-
-Why do leptons follow the spectral law while
-quarks and neutrinos do not?
 
 Open Questions:
 
-- exact quark hierarchy
-- neutrino hierarchy
-- universal fermion scaling law
+- exact neutrino-sector origin (mass values, normal vs inverted ordering, Majorana character)
+- unified quark-sector hierarchy law (single law reproducing up AND down hierarchies)
+- physical origin of Z2 doublet symmetry (why the reflection/half-shift automorphism of the 12-regular adjacency)
+- experimental validation of the 106 GeV prediction (QG132 primary falsifiable resonance)
+- observable tests of sector-ladder physics (collider signatures of the energy-ladder rung states)
 
 ## Status Table
 
@@ -9458,10 +9461,16 @@ Open Questions:
 | Family Count | QG138 | DERIVED |
 | Hierarchy Exponents | QG141 | DERIVED |
 | Lepton Hierarchy | QG142 | PARTIAL LAW |
-| Quark Hierarchy | — | OPEN |
-| Neutrino Hierarchy | — | OPEN |
-| Sector Exponent Law p(Q,T3) | QG147 | HISTORICAL (overfit) — superseded by QG149 |
 | Sector Exponents (physical) | QG149 | PHYSICAL ORIGIN |
+| Mode Access | QG150 | MODE-ACCESS ORIGIN |
+| Z2 Doublet Structure | QG153 | DOUBLET ORIGIN |
+| Neutrino Sector | QG154 | NEUTRINO ORIGIN (structural; exact masses open) |
+| Quark Hierarchy (unified law) | — | OPEN |
+| Neutrino Hierarchy (exact) | — | OPEN |
+| Z2 Symmetry Origin (physical) | — | OPEN |
+| 106 GeV Prediction (validation) | QG132 | FALSIFIABLE PREDICTION (not yet validated) |
+| Sector-Ladder Observables | QG130 | PREDICTED (no data yet) |
+| Sector Exponent Law p(Q,T3) | QG147 | HISTORICAL (overfit) — superseded by QG149 |
 
 ## Architecture Summary
 

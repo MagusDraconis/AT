@@ -1587,3 +1587,8 @@ Exponents). Charge and isospin determine the hierarchy exponent (intermediate, f
 4. Causal set → GR mathematical bridge — external
 5. 3+1 dimensionality — not derived
 6. Hawking temperature, Page time — imported from QFT+GR
+7. Exact neutrino-sector origin (masses, ordering, Majorana character) — open (structural origin: QG154)
+8. Unified quark-sector hierarchy law (up AND down in one law) — open
+9. Physical origin of the Z2 doublet symmetry — open (existence: QG153 DOUBLET ORIGIN)
+10. Experimental validation of the 106 GeV prediction (QG132) — unobserved
+11. Observable tests of sector-ladder physics (QG130) — no data yet
