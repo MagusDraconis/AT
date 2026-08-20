@@ -9066,6 +9066,21 @@ n — the observed 3 generations correspond to a specific size range; connects Q
 effects, QG116 strong-feedback universal attractor). Report:
 Docs/Research/TQMQG_ThreeFamilyRobustness.md.
 
+**TQM-QG Phase 137 (Effective-size invariance) — COMPLETED (3/3 tests pass; 417/417 TQM-QG verified; COMPUTATIONAL):**
+Question: does the family count depend on absolute size N or on an effective size determined by
+actualization? Added EffectiveSizeFamilies (active-node fraction per size, occupied fraction, effective size
+N/K, family count vs absolute N and vs link radius K, Pearson correlation of family count with log2(N/K) over
+an N×K grid, origin score). TQMQG1370 the active-node and occupied fractions are 1.000 for every size
+(48–192) — the raw active fraction is size-independent and does NOT discriminate the family count.
+TQMQG1371 the family count changes with N (n=48 → 2, n=64/96 → 3, n=128/192 → 4 at K=6) AND with the link
+radius K at fixed N (K=3 → 4, K=6 → 3, K=10 → 2 at N=96) — actualization (K) controls the family count.
+TQMQG1372 Pearson r(log2(N/K), family count) = 0.950 over 29 (N,K) points; TQMQG1372 CLASSIFICATION:
+EFFECTIVE-SIZE ORIGIN — the family count is controlled by the EFFECTIVE size N/K (actualization link radius
+K sets the size unit), so the observed 3-family regime corresponds to an effective-size band (N/K ≈ 10–25),
+not an absolute size (resolves QG136 "specific size range"; connects QG119/120 horizon — N/K is the number
+of local-actualization steps across the network, a horizon-like quantity; QG115/116 emergence from
+actualization; QG117 ladder). Report: Docs/Research/TQMQG_EffectiveSizeFamilies.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.

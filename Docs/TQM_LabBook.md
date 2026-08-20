@@ -1349,6 +1349,17 @@ parameter-sensitive.
   of the family count (2 at small n, 4 at large n — the observed 3 generations correspond to a specific size
   range; connects QG135, QG119/120 finite-size effects, QG116)
 
+### TQM-QG137: Effective-Size Invariance (TQM-QG Phase 137)
+**Status:** Complete (EFFECTIVE-SIZE ORIGIN). The family count is controlled by the effective size N/K.
+- active-node and occupied fractions are 1.000 for every size (48–192) — the raw active fraction does NOT
+  discriminate the family count
+- family count changes with N (n=48→2, 64/96→3, 128/192→4 at K=6) AND with link radius K at fixed N (K=3→4,
+  K=6→3, K=10→2 at N=96) — actualization (K) controls the family count
+- Pearson r(log2(N/K), family count) = 0.950 over 29 (N,K) points → EFFECTIVE-SIZE ORIGIN: family count
+  controlled by effective size N/K (actualization link radius K sets the size unit); the 3-family regime is
+  an effective-size band (N/K ≈ 10–25), not an absolute size (resolves QG136; connects QG119/120 horizon,
+  QG115/116, QG117)
+
 ---
 
 ## Overall Statistics
@@ -1360,8 +1371,8 @@ parameter-sensitive.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 138 | Complete |
-| **Total** | **245** | |
+| TQM-QG | 139 | Complete |
+| **Total** | **246** | |
 
 ## Key Unsolved Problems
 
