@@ -1565,6 +1565,21 @@ Exponents). Charge and isospin determine the hierarchy exponent (intermediate, f
   reverts to T3-only Z2-channel spectral access as the lowest suppressed sector (explains the QG148
   neutrino failure; gives the open neutrino-hierarchy problem a structural origin)
 
+### TQM-QG155: Origin of the Z2 Doublet Symmetry (TQM-QG Phase 155)
+**Status:** Complete (SYMMETRY ORIGIN). The Z2 symmetry is dynamically selected from the circulant attractor.
+- REFLECTION symmetry originates in the DYNAMICS (period-3 seed is NOT reflection-invariant; converged
+  12-regular adjacency is); HALF-SHIFT symmetry originates in the seed (n/2=48, 48 mod 3=0 → period-3
+  inheritance)
+- symmetries EMERGE as the attractor saturates (half-shift from step 1, reflection at step 5 when the
+  network becomes 12-regular; both stable through step 200); spectrum carries the 3-family octave
+  structure (bands 4/4/87)
+- dynamics generate a CIRCULANT ring C_96(1..6) — fully rotationally invariant (11/11 shifts) with
+  reflection → automorphism group = dihedral D_96; the 2D irreps of D_96 generate the Z2 doublets
+- → SYMMETRY ORIGIN: the Z2 doublet symmetry is a genuine dynamically-selected property — the attractor
+  dynamics generate a circulant ring (dihedral D_n = rotation Z_n + reflection); reflection from dynamics,
+  half-shift from period-3 seed, and the 2D irreps of D_n produce the doublets (closes: circulant dynamics
+  → Z2 doublets QG153 → isospin access QG150 → golden ratio QG151 → physical exponents QG149)
+
 ---
 
 ## Overall Statistics
@@ -1576,8 +1591,8 @@ Exponents). Charge and isospin determine the hierarchy exponent (intermediate, f
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 156 | Complete |
-| **Total** | **263** | |
+| TQM-QG | 157 | Complete |
+| **Total** | **264** | |
 
 ## Key Unsolved Problems
 

@@ -9372,6 +9372,24 @@ explains the QG148 neutrino prediction failure and gives the open neutrino-hiera
 origin (consistent with QG153 Z2 doublets, QG150 dense-band access). Report:
 Docs/Research/TQMQG_NeutrinoOrigin.md.
 
+**TQM-QG Phase 155 (Origin of the Z2 doublet symmetry) — COMPLETED (3/3 tests pass; TQM-QG verified; COMPUTATIONAL):**
+Question: why does the observable sector possess the Z2 symmetry that generates the doublets? Added
+Z2SymmetryOrigin (seed vs final reflection/half-shift invariance, symmetry emergence during attractor
+evolution, circulant-ring detection, connection radius, rotation symmetry count, symmetry-selection
+mechanism, origin score). TQMQG1550 the REFLECTION symmetry originates in the DYNAMICS (the period-3 seed
+is NOT reflection-invariant but the converged 12-regular adjacency is) while the HALF-SHIFT symmetry
+originates in the seed (n/2=48, 48 mod 3=0 → period-3 inheritance). TQMQG1551 the symmetries EMERGE as the
+attractor saturates (half-shift present from step 1, reflection appears at step 5 when the network becomes
+12-regular, both stable through step 200) and the resulting spectrum carries the 3-family octave structure
+(bands 4/4/87). TQMQG1552 the dynamics generate a CIRCULANT ring C_96(1..6) — fully rotationally invariant
+(11/11 tested shifts) with reflection, so the automorphism group is the dihedral group D_96 whose 2D
+irreducible representations generate the Z2 doublets; TQMQG1552 CLASSIFICATION: SYMMETRY ORIGIN — the Z2
+doublet symmetry is a genuine dynamically-selected property: the attractor dynamics generate a circulant
+ring (dihedral D_n = rotation Z_n + reflection), the reflection arises from the dynamics, the half-shift
+from the period-3 seed, and the 2D irreps of D_n produce the doublets — the symmetry origin of the
+weak-isospin structure (closes the chain: circulant dynamics → Z2 doublets QG153 → isospin access QG150 →
+golden ratio QG151 → physical exponents QG149). Report: Docs/Research/TQMQG_Z2SymmetryOrigin.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.
@@ -9568,7 +9586,7 @@ QG153: Z2 doublet symmetry origin.
 
 Milestone counters:
 
-TQM-QG 156 phases
+TQM-QG 157 phases
 432+ TQM-QG tests verified
 
 ### QG154: Neutrino Sector Origin
@@ -9593,5 +9611,5 @@ NEUTRINO ORIGIN
 
 Milestone counters:
 
-TQM-QG 156 phases
+TQM-QG 157 phases
 432+ TQM-QG tests verified
