@@ -1203,6 +1203,21 @@ OPEN/WEAK: matter emergence + dynamics.
 - sector transitions are discrete; all correspondence conditions hold (ordered hierarchy, class growth,
   observable 3-family class, discrete transitions, observable subset selection) → SECTOR ORIGIN
 
+### TQM-QG125: Stability of High-Energy Sectors (TQM-QG Phase 125)
+**Status:** Complete (METASTABLE). Higher sectors are energy-supported: stable at their own ceiling, decay
+downward into the observable 3-family sector when energy is removed, and re-emerge when energy is restored.
+- new primitive: de-actualization (link decay) — a link is removed when BOTH endpoints' activity falls below
+  the decay threshold; sectors persist only while actualization energy is maintained
+- high-energy sector (ceiling 8) radius 17.333 is a fixed point at its own ceiling (stable over 400 extra
+  steps), but collapses to observable baseline 6.000 within 2 steps of energy removal (radius 6.000 ≤ baseline)
+- downward ceiling ramp visits 9 DISTINCT radius rungs (17.333→17→16→14→13→12→10→9→7→6): decay is a discrete
+  multi-rung cascade down the QG117 ladder, not a single jump
+- energy dip (5 steps) decays sector 17.333→6.000; restoring the high ceiling RE-GROWS it to 18.000 →
+  energy-supported, re-emerges on restoration (metastable, not permanent loss)
+- after full decay the remnant radius = 6.000 and family count = 3, matching the observable baseline sector
+  built fresh from the seed → the observable 3-family sector is the DECAY PRODUCT of higher sectors (QG124
+  SECTOR ORIGIN strengthened); connects QG119/120 family suppression (both remove higher families from view)
+
 ---
 
 ## Overall Statistics
@@ -1214,8 +1229,8 @@ OPEN/WEAK: matter emergence + dynamics.
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 126 | Complete |
-| **Total** | **233** | |
+| TQM-QG | 127 | Complete |
+| **Total** | **234** | |
 
 ## Key Unsolved Problems
 

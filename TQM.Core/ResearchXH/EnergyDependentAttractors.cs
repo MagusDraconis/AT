@@ -75,6 +75,51 @@ public static class EnergyDependentAttractors
     public static double RadiusOf(double[,] adjacency) => StructureFromContent.LinkCount(adjacency) /
         (double)adjacency.GetLength(0);
 
+    /// <summary>
+    /// Activity-driven dynamics with LINK DECAY (de-actualization): links are created by active nodes as in
+    /// <see cref="AdaptiveNetworkWithCeiling"/>, but a link is REMOVED when BOTH endpoints' activity falls below
+    /// the decay threshold (a link de-actualizes when neither endpoint sustains it). The geometry is therefore
+    /// energy-SUPPORTED: sectors persist only while actualization energy maintains the activity. Deterministic.
+    /// </summary>
+    public static (double[] Activity, double[,] Adjacency) AdaptiveNetworkWithDecayFull(double[] initialActivity,
+        int K = 6, double damping = 0.2, double feedback = 0.7, int steps = 120, double ceiling = 1.0,
+        double decayThreshold = 0.5)
+    {
+        int n = initialActivity.Length;
+        var a = (double[])initialActivity.Clone();
+        var adj = new double[n, n];
+        for (int t = 0; t < steps; t++)
+        {
+            for (int i = 0; i < n; i++)
+            {
+                if (a[i] <= 0.5) continue;
+                int k = (int)Math.Round(a[i] * K);
+                for (int d = 1; d <= k; d++)
+                {
+                    int j = (i + d) % n;
+                    adj[i, j] = 1.0; adj[j, i] = 1.0;
+                }
+            }
+            // de-actualization: remove links where BOTH endpoints have fallen below the decay threshold
+            for (int i = 0; i < n; i++)
+                for (int j = i + 1; j < n; j++)
+                    if (adj[i, j] != 0.0 && a[i] <= decayThreshold && a[j] <= decayThreshold)
+                    {
+                        adj[i, j] = 0.0; adj[j, i] = 0.0;
+                    }
+            int[] deg = new int[n];
+            for (int i = 0; i < n; i++)
+                for (int j = 0; j < n; j++) if (adj[i, j] != 0.0) deg[i]++;
+            int maxDeg = Math.Max(deg.Max(), 1);
+            for (int i = 0; i < n; i++)
+            {
+                a[i] = a[i] * (1.0 - damping) + feedback * (deg[i] / (double)maxDeg);
+                a[i] = Math.Clamp(a[i], 0.0, ceiling);
+            }
+        }
+        return (a, adj);
+    }
+
     /// <summary>Seed activity pattern scaled by an energy scale E.</summary>
     public static double[] EnergyScaledSeed(int n, double energyScale)
     {

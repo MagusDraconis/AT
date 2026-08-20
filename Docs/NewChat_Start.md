@@ -8870,6 +8870,23 @@ SECTOR ORIGIN — observed Standard-Model-like sector structure can be interpret
 projection of a broader energy-defined attractor sector hierarchy. Report:
 Docs/Research/TQMQG_SMFromEnergySectors.md.
 
+**TQM-QG Phase 125 (Stability of high-energy sectors) — COMPLETED (3/3 tests pass; 381/381 TQM-QG verified; COMPUTATIONAL):**
+Question: do higher sectors remain stable or decay into the observable 3-family sector? Added the
+de-actualization (link-decay) primitive to the QG115/122 dynamics (a link is removed when BOTH endpoints'
+activity falls below the decay threshold) plus HighEnergySectorStability (sector lifetime, fixed-point test,
+downward ramp, energy-dip recovery, observable-remnant family check). TQMQG1250 the high-energy sector
+(ceiling 8, radius 17.333) is a FIXED POINT at its own ceiling (no spontaneous decay over 400 extra steps),
+but collapses to the observable baseline radius 6.000 within 2 steps when the energy regime is removed.
+TQMQG1251 ramping the ceiling down visits 9 DISTINCT downward radius rungs (17.333→17→16→14→13→12→10→9→7→6)
+— higher sectors decay stepwise down the QG117 ladder — and after a 5-step energy dip the sector decays to
+6.000 but RE-EMERGES to 18.000 when the high ceiling is restored. TQMQG1252 after full decay the remnant has
+radius 6.000 and family count 3 = observable baseline family count 3; TQMQG1252 CLASSIFICATION: METASTABLE —
+high-energy sectors are energy-supported: stable while energy is present, decay downward (multi-rung cascade)
+into the observable 3-family sector when energy is removed, and re-emerge when energy is restored. The
+observable 3-family sector is thus the DECAY PRODUCT / low-energy attractor of higher sectors (connects
+QG117 ladder traversed both ways, QG122-124 high-energy sectors, QG119-120 family suppression). Report:
+Docs/Research/TQMQG_HighEnergySectorStability.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.
