@@ -9496,8 +9496,9 @@ Open Questions:
 
 - exact neutrino mass law (mass values, normal vs inverted ordering, Majorana character)
 - unified quark-sector hierarchy law (single law reproducing up AND down hierarchies)
-- physical meaning of Z2 doublet symmetry (why the reflection/half-shift automorphism of the 12-regular adjacency)
+- origin of D96 symmetry selection (why the attractor selects the circulant ring C_n(1..6) / dihedral D_n)
 - experimental validation of the 106 GeV resonance (QG132 primary falsifiable prediction)
+- collider test of sector-ladder physics (collider signatures of the energy-ladder rung states)
 
 ## Status Table
 
@@ -9512,9 +9513,9 @@ Open Questions:
 | Neutrino Sector | QG154 | NEUTRINO ORIGIN (structural) — exact mass law OPEN |
 | Quark Hierarchy (unified law) | — | OPEN |
 | Neutrino Mass Law (exact) | — | OPEN |
-| Z2 Doublet Symmetry (meaning) | — | OPEN |
+| D96 Symmetry Selection | — | OPEN |
 | 106 GeV Resonance (validation) | QG132 | FALSIFIABLE PREDICTION (not yet observed) |
-| Sector-Ladder Observables | QG130 | PREDICTED (no data yet) |
+| Collider Test of Sector-Ladder | QG130 | PREDICTED (no data yet) |
 | Sector Exponent Law p(Q,T3) | QG147 | HISTORICAL (overfit) — superseded by QG149 |
 
 ## Architecture Summary

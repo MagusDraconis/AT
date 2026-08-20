@@ -1604,5 +1604,6 @@ Exponents). Charge and isospin determine the hierarchy exponent (intermediate, f
 6. Hawking temperature, Page time — imported from QFT+GR
 7. Exact neutrino mass law (values, ordering, Majorana character) — open (structural origin: QG154)
 8. Unified quark-sector hierarchy law (up AND down in one law) — open
-9. Physical meaning of the Z2 doublet symmetry — open (existence: QG153 DOUBLET ORIGIN)
+9. Origin of D96 symmetry selection — open (structure: QG155 SYMMETRY ORIGIN)
 10. Experimental validation of the 106 GeV resonance (QG132) — unobserved
+11. Collider test of sector-ladder physics (QG130) — no data yet
