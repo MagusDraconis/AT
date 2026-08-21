@@ -3957,6 +3957,9 @@ Precision EW origin (sin²θ_eff = #g/(2Σm); ΓZ = MH·cosθ_W/#g; ΓW = σ_occ
 QG176:
 Higgs blind reconstruction (MH_A = v·√(λ₂·g₂) = 125.49 from pre-Higgs D96 only, 0.19%; MH_B = σ_occ·span/2 = 125.25, 0.003%; blindness audit passes)
 
+QG177:
+Leave-one-out validation (12 observables hidden & reconstructed from primitive base only; mean dev 0.58%, max 1.89%; 9 fully independent, 3 nominal chains inlined → INDEPENDENT)
+
 ## Key Open Problems
 
 - "Why three generations?" → REMOVED (solved: QG138 derives familyCount = floor(log2(ωmax/ωmin)) + 1).
@@ -4001,6 +4004,7 @@ Open Questions:
 | Strong CP (θ_QCD) | QG174 | STRONG CP ORIGIN (reflection s = exact graph automorphism [L,P]=0 → real spectrum/masses → arg det M = 0; θ_QCD = 0 exactly; Nelson-Barr-type Z2 suppression, no axion; weak CP = 0.916 unaffected) |
 | Precision EW Observables | QG175 | PRECISION EW ORIGIN (sin²θ_eff = #g/(2Σm) = 0.23158, 0.03%; ΓZ = MH·cosθ_W/#g = 2.4953, 0.004%; ΓW = σ_occ²/(occMom·λ₂) = 2.0852, 0.01%; ΓH = λ₂/Σm = 4.07 MeV, 0.08%; R_b = span·g₂·sin⁴θ_W = 0.2163, 0.009%; A_FB^b = (λ_H/λ₂)² = 0.0992, A_FB^ℓ = 0.0171) |
 | Higgs Blind Reconstruction | QG176 | HIGGS RECONSTRUCTION (MH_A = v·√(λ₂·g₂) = (Σm+#d)·ln span·√(λ₂·√(4π·α_weak)) = 125.49, 0.19% from pre-Higgs D96 only; MH_B = σ_occ·span/2 = 125.25, 0.003%; MH/MW = 1.5663, MH/MZ = 1.3730; blindness audit: no Higgs input entered) |
+| Leave-One-Out Validation | QG177 | INDEPENDENT (12 observables hidden & reconstructed from primitive base only: mean dev 0.577%, max 1.885%, all within 2%; 9 fully independent, 3 nominal chains MZ/a_μ/Δm²31 primitive-inlined; no circularity) |
 | 106 GeV Resonance (validation) | QG132 | FALSIFIABLE PREDICTION (not yet observed) |
 | Collider Test of Sector-Ladder | QG130 | PREDICTED (no data yet) |
 | Sector Exponent Law p(Q,T3) | QG147 | HISTORICAL (overfit) — superseded by QG149 |
@@ -4036,6 +4040,7 @@ D96 Automorphisms (D96 = ⟨r,s⟩)
 → Strong CP (QG174): θ_QCD = arg det M = 0 exactly ([L,P]=0 reflection automorphism → real masses; Z2 Nelson-Barr suppression, no axion; weak CP sinδ = 0.916 is a chiral rotation phase, unaffected)
 → Precision EW (QG175): sin²θ_eff = #g/(2Σm) = 0.2316 (0.03%); ΓZ = MH·cosθ_W/#g = 2.4953 (0.004%); ΓW = σ_occ²/(occMom·λ₂) = 2.0852 (0.01%); ΓH = λ₂/Σm = 4.07 MeV (0.08%); R_b = span·g₂·sin⁴θ_W = 0.2163 (0.009%); A_FB^b = (λ_H/λ₂)² = 0.0992 (0.02%); A_FB^ℓ = MH/(MW·MZ) = 0.0171 (0.05%)
 → Higgs blind reconstruction (QG176): MH_A = v·√(λ₂·g₂) = (Σm+#d)·ln span·√(λ₂·√(4π·α_weak)) = 125.49 (0.19%, pre-Higgs D96 only); MH_B = σ_occ·span/2 = 125.25 (0.003%); MH/MW = 1.5663, MH/MZ = 1.3730; proves QG169 MH is PREDICTED, not fitted
+→ Leave-one-out validation (QG177): 12 observables hidden & reconstructed from primitive base only (mean 0.58%, max 1.89%); 9 fully independent, MZ/a_μ/Δm²31 chains primitive-inlined; INDEPENDENT — no circularity
 → Higgs = collective occupation-density scalar
 
 Fermions:
@@ -4155,9 +4160,11 @@ QG175: precision EW origin (PRECISION EW ORIGIN).
 
 QG176: Higgs blind reconstruction (HIGGS RECONSTRUCTION).
 
+QG177: leave-one-out validation (INDEPENDENT).
+
 Milestone counters:
 
-TQM-QG 178 phases
+TQM-QG 179 phases
 432+ TQM-QG tests verified
 
 ### QG154: Neutrino Sector Origin
@@ -4182,5 +4189,5 @@ NEUTRINO ORIGIN
 
 Milestone counters:
 
-TQM-QG 178 phases
+TQM-QG 179 phases
 432+ TQM-QG tests verified
