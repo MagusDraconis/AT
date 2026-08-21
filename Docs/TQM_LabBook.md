@@ -1826,6 +1826,24 @@ Exponents). Charge and isospin determine the hierarchy exponent (intermediate, f
   scalar amplitude σ_occ × octave-band radius span/2 → MH, emergent quartic λ_H = λ₂·g₂/2) — no
   fitted masses, no SM mass inputs (chain: D96 → gauge couplings → weak scale → Higgs mass)
 
+### TQM-QG170: Standard Model Audit (TQM-QG Phase 170)
+**Status:** Complete (COVERAGE AUDIT). All major measured SM quantities classified against TQM-QG.
+- catalog of 48 major measured SM quantities: 25 TESTED / 9 PARTIAL / 14 UNTESTED
+- TESTED (25): electron/muon/tau masses (QG140, 0.2%/0%/2.9%), CKM Vus/Vcb/Vub + δ_CP + J (QG165/166),
+  PMNS θ12/θ23/θ13 + δ_ν (QG167), 1/α_em = 137 (0.03%), α_weak (6.6%), α_strong (5.9%), sin²θ_W
+  (0.2%), running + continuous (QG163/164), MW/MZ/MH (0.3%/0.2%/0.003%), ρ = 1, 3 generations, gauge
+  sector 1+3+8
+- PARTIAL (9): quark masses (QG146 amplification factors only), CKM diagonal/unitarity, 106 GeV
+  resonance (falsifiable prediction)
+- UNTESTED (14): muon g-2, electron g-2, neutrino mass values, mass ordering, Δm²_solar/atm, Majorana,
+  Γ_Z/Γ_W/Γ_H, S/T/U, R_b/R_c, A_FB/A_POL, sin²θ_eff, θ_QCD
+- coverage: tested-only 64%, weighted (1.0/0.5/0.0) 61.5%, mass-observable 60.5%
+- ranked remaining tests: (1) muon g-2, (2) neutrino masses, (3) Δm², (4) mass ordering, (5) quark
+  absolute masses, (6) θ_QCD, (7) sin²θ_eff, (8) S/T/U, (9-11) widths, (12) electron g-2, (13-14)
+  R_b/A_FB, (15) Majorana, (16) CKM diagonal, (17) 106 GeV
+- → the electroweak sector is essentially fully covered; the largest remaining gaps are muon g-2 and
+  the absolute neutrino mass scale (chain: QG138-169 record → coverage 64% → ranked remaining tests)
+
 ---
 
 ## Overall Statistics
@@ -1837,8 +1855,8 @@ Exponents). Charge and isospin determine the hierarchy exponent (intermediate, f
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 171 | Complete |
-| **Total** | **278** | |
+| TQM-QG | 172 | Complete |
+| **Total** | **279** | |
 
 ## Key Unsolved Problems
 

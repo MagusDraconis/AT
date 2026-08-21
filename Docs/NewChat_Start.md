@@ -3746,6 +3746,23 @@ cross-checked by the SM relation MH = v·√(λ₂·g₂) = 125.49 GeV (0.19%) w
 λ₂·g₂/2 = 0.1217 (SM λ ≈ 0.13); ratios MH/MW = 1.5634 (0.33%), MH/MZ = 1.3704 (0.23%) — no fitted
 masses, no SM mass inputs. Report: Docs/Research/TQMQG_HiggsMassOrigin.md.
 
+**TQM-QG Phase 170 (Standard Model audit) — COMPLETED (3/3 tests pass; TQM-QG verified; COMPUTATIONAL):**
+Question: which major measured SM quantities have NOT yet been tested against TQM-QG? Added
+StandardModelAudit (a 48-quantity catalog classified TESTED / PARTIAL / UNTESTED, tested-only and
+weighted coverage, ranked remaining tests). TQMQG1700 fermion masses, CKM, PMNS, CP audit: electron/
+muon/tau masses TESTED (QG140, 0.2%/0%/2.9%), CKM Vus/Vcb/Vub + δ_CP + J TESTED (QG165/166), PMNS
+θ12/θ23/θ13 + δ_ν TESTED (QG167), all with deviations 0.1-3%; quark masses PARTIAL (QG146: amplification
+factors only). TQMQG1701 couplings, running, bosons, g-2, neutrinos, EW audit: 1/α_em = 137 (0.03%),
+α_weak (6.6%), α_strong (5.9%), sin²θ_W (0.2%), running + continuous (QG163/164), MW/MZ/MH (0.3%/0.2%/
+0.003%), ρ = 1 TESTED; muon g-2, electron g-2, neutrino mass values, mass ordering, Δm², Majorana,
+Γ_Z/Γ_W/Γ_H, S/T/U, R_b/R_c, A_FB, sin²θ_eff, θ_QCD all UNTESTED. TQMQG1702 coverage: 48 quantities =
+25 TESTED / 9 PARTIAL / 14 UNTESTED; tested-only coverage 64%, weighted coverage 61.5%, mass-observable
+60.5%; ranked remaining tests: (1) muon g-2, (2) neutrino masses, (3) Δm², (4) mass ordering, (5) quark
+absolute masses, (6) θ_QCD, (7) sin²θ_eff, (8) S/T/U, (9-11) widths, (12) electron g-2, (13-14) R_b/A_FB,
+(15) Majorana, (16) CKM diagonal, (17) 106 GeV. The electroweak sector is essentially fully covered; the
+largest gaps are muon g-2 and the absolute neutrino mass scale. Report:
+Docs/Research/TQMQG_StandardModelAudit.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.
@@ -3884,6 +3901,9 @@ Weak boson mass origin (v = 137·ln span → MW, MZ)
 QG169:
 Higgs mass origin (σ_occ·span/2 → MH)
 
+QG170:
+Standard model audit (48 quantities: 25 tested / 9 partial / 14 untested)
+
 ## Key Open Problems
 
 - "Why three generations?" → REMOVED (solved: QG138 derives familyCount = floor(log2(ωmax/ωmin)) + 1).
@@ -3921,6 +3941,7 @@ Open Questions:
 | PMNS Matrix | QG167 | PMNS ORIGIN (θ12 = 33.35°; θ23 = 49.72°; θ13 = 8.34°; δ_ν = 66.4°; mean dev 1.5%) |
 | Weak Boson Masses | QG168 | MASS ORIGIN (v = (Σm+#doublets)·ln span = 254 GeV; MW = 80.1, MZ = 91.4; ρ = 1) |
 | Higgs Mass | QG169 | HIGGS ORIGIN (MH = σ_occ·(span/2) = 125.25 GeV, 0.003%; λ_H = λ₂·g₂/2; MH/MW 0.33%) |
+| Standard Model Audit | QG170 | COVERAGE AUDIT (48 quantities: 25 tested / 9 partial / 14 untested; 64% tested-only, 61.5% weighted) |
 | 106 GeV Resonance (validation) | QG132 | FALSIFIABLE PREDICTION (not yet observed) |
 | Collider Test of Sector-Ladder | QG130 | PREDICTED (no data yet) |
 | Sector Exponent Law p(Q,T3) | QG147 | HISTORICAL (overfit) — superseded by QG149 |
@@ -3949,6 +3970,7 @@ D96 Automorphisms (D96 = ⟨r,s⟩)
 → PMNS (QG167): θ12 = √(#d/(Σm+#g)), θ23 = Σ√m/(2#d), θ13 = √(occ0/(2Σm)), δ_ν = 66.4°
 → Weak Masses (QG168): v = (Σm+#d)·ln span = 254 GeV, MW = g₂v/2 = 80.1, MZ = MW/cosθ_W = 91.4
 → Higgs Mass (QG169): MH = σ_occ·span/2 = 39.13·3.20 = 125.25 GeV (λ_H = λ₂·g₂/2 = 0.1217)
+→ SM Audit (QG170): 25/48 tested (64%), 9 partial, 14 untested; gaps: g-2, neutrino masses, θ_QCD
 → Higgs = collective occupation-density scalar
 
 Fermions:
@@ -4006,7 +4028,7 @@ Milestone counters:
 TQM-QG 144 phases
 432 tests
 
-### QG138-169: Fermion, Gauge, Mass & Higgs Structure from Spectral Geometry
+### QG138-170: Fermion, Gauge, Mass, Higgs & SM Audit from Spectral Geometry
 
 Status: **Major milestone**
 
@@ -4054,9 +4076,11 @@ QG168: weak boson mass origin (MASS ORIGIN).
 
 QG169: Higgs mass origin (HIGGS ORIGIN).
 
+QG170: standard model audit (COVERAGE: 25/9/14, 64%).
+
 Milestone counters:
 
-TQM-QG 171 phases
+TQM-QG 172 phases
 432+ TQM-QG tests verified
 
 ### QG154: Neutrino Sector Origin
@@ -4081,5 +4105,5 @@ NEUTRINO ORIGIN
 
 Milestone counters:
 
-TQM-QG 171 phases
+TQM-QG 172 phases
 432+ TQM-QG tests verified
