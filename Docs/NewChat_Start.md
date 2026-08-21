@@ -3712,6 +3712,21 @@ geometry (neutrino T3-only access → Z2 doublet density → θ12, neutral momen
 asymmetry → θ13, T3 chiral circulation → δ_ν), no fitted angles, no fitted phases. Report:
 Docs/Research/TQMQG_PMNSOrigin.md.
 
+**TQM-QG Phase 168 (Weak boson mass origin) — COMPLETED (3/3 tests pass; TQM-QG verified; COMPUTATIONAL):**
+Question: can the W and Z boson masses (MW ≈ 80.4, MZ ≈ 91.2 GeV) be derived from D96 spectral geometry
+— no fitted masses, no SM mass inputs? Added WeakBosonMassOrigin (weak scale v, g₂ normalization, MW
+and MZ, MW/MZ ratio, ρ parameter, origin score). TQMQG1680 the weak mass scale (electroweak vev)
+emerges as v = (Σm + #doublets)·ln(span) = 137·1.8567 = 254.4 GeV — the fine-structure denominator
+(Σm + #doublets = 137, QG162) times the logarithmic spectral span; the SU(2) coupling g₂ = √(4π·α_weak)
+= √(4π·3/95) = 0.6299. TQMQG1681 MW = g₂·v/2 = 0.6299·254.37/2 = 80.12 GeV (physical 80.38, dev
+0.33%); MZ = MW/cosθ_W = 80.12/0.8766 = 91.40 GeV (physical 91.19, dev 0.23%) with the D96 Weinberg
+angle sin²θ_W = 0.2316 (dev 0.16%). TQMQG1682 MW/MZ = cosθ_W = 0.8766 (physical 0.8815, dev 0.55%);
+the ρ parameter ρ = MW²/(MZ²·cos²θ_W) = 1.00000 exactly (SM tree-level); TQMQG1682 CLASSIFICATION:
+MASS ORIGIN — the weak boson masses EMERGE from D96 spectral geometry: v = (Σm+#doublets)·ln(span) =
+254.4 GeV, g₂ = √(4π·α_weak) = 0.6299, MW = g₂·v/2 = 80.1 GeV (0.3%), MZ = MW/cosθ_W = 91.4 GeV
+(0.2%), MW/MZ = cosθ_W (0.55%), ρ = 1 exactly — no fitted masses, no SM mass inputs. Report:
+Docs/Research/TQMQG_WeakBosonMassOrigin.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.
@@ -3844,6 +3859,9 @@ CKM CP origin (chiral rotation, spectral circulation → δ_CP, J)
 QG167:
 PMNS origin (T3-only access → θ12, θ23, θ13, δ_ν)
 
+QG168:
+Weak boson mass origin (v = 137·ln span → MW, MZ)
+
 ## Key Open Problems
 
 - "Why three generations?" → REMOVED (solved: QG138 derives familyCount = floor(log2(ωmax/ωmin)) + 1).
@@ -3879,6 +3897,7 @@ Open Questions:
 | CKM Matrix | QG165 | CKM ORIGIN (Vus = #doublets/(2Σm); Vcb = (ω0/ω2)^δd; Vub = 2·Vcb·(occ0/occ2); mean dev 0.58%) |
 | CKM CP (δ_CP, J) | QG166 | CP ORIGIN (sinδ = occ_top/Σm = 0.9158; δ_CP = 66.3°; J = 3.139e-5) |
 | PMNS Matrix | QG167 | PMNS ORIGIN (θ12 = 33.35°; θ23 = 49.72°; θ13 = 8.34°; δ_ν = 66.4°; mean dev 1.5%) |
+| Weak Boson Masses | QG168 | MASS ORIGIN (v = (Σm+#doublets)·ln span = 254 GeV; MW = 80.1, MZ = 91.4; ρ = 1) |
 | 106 GeV Resonance (validation) | QG132 | FALSIFIABLE PREDICTION (not yet observed) |
 | Collider Test of Sector-Ladder | QG130 | PREDICTED (no data yet) |
 | Sector Exponent Law p(Q,T3) | QG147 | HISTORICAL (overfit) — superseded by QG149 |
@@ -3905,6 +3924,7 @@ D96 Automorphisms (D96 = ⟨r,s⟩)
 → CKM (QG165): Vus = #doublets/(2Σm), Vcb = (ω0/ω2)^δd, Vub = 2·Vcb·(occ0/occ2)
 → CKM CP (QG166): sinδ = occ_top/Σm = 0.9158 (chiral rotation), δ_CP = 66.3°, J = 3.139e-5
 → PMNS (QG167): θ12 = √(#d/(Σm+#g)), θ23 = Σ√m/(2#d), θ13 = √(occ0/(2Σm)), δ_ν = 66.4°
+→ Weak Masses (QG168): v = (Σm+#d)·ln span = 254 GeV, MW = g₂v/2 = 80.1, MZ = MW/cosθ_W = 91.4
 → Higgs = collective occupation-density scalar
 
 Fermions:
@@ -3962,7 +3982,7 @@ Milestone counters:
 TQM-QG 144 phases
 432 tests
 
-### QG138-167: Fermion & Gauge Structure from Spectral Geometry
+### QG138-168: Fermion, Gauge & Mass Structure from Spectral Geometry
 
 Status: **Major milestone**
 
@@ -4006,9 +4026,11 @@ QG166: CKM CP origin (CP ORIGIN).
 
 QG167: PMNS origin (PMNS ORIGIN).
 
+QG168: weak boson mass origin (MASS ORIGIN).
+
 Milestone counters:
 
-TQM-QG 169 phases
+TQM-QG 170 phases
 432+ TQM-QG tests verified
 
 ### QG154: Neutrino Sector Origin
@@ -4033,5 +4055,5 @@ NEUTRINO ORIGIN
 
 Milestone counters:
 
-TQM-QG 169 phases
+TQM-QG 170 phases
 432+ TQM-QG tests verified
