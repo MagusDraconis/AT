@@ -3948,6 +3948,9 @@ Neutrino mass law ((1/Σ√m)²/(span/2) → Δm²21; sin²θ_W/Σm → Δm²31)
 QG173:
 Quark mass origin (me·Σ√m/√Σm² → mu; ×(Σ√m)²/occMom → md; occMom/Σm → s/d; (Σ√m)²/√Σm² → c/d; occMom²·Σm·#g/(Σ√m)⁴ → b/d; occMom·#d → t/u)
 
+QG174:
+Strong CP origin (reflection automorphism [L,P]=0 → real spectrum → real masses → arg det M = 0 → θ_QCD = 0)
+
 ## Key Open Problems
 
 - "Why three generations?" → REMOVED (solved: QG138 derives familyCount = floor(log2(ωmax/ωmin)) + 1).
@@ -3989,6 +3992,7 @@ Open Questions:
 | Muon g-2 | QG171 | G2 ORIGIN (a_μ = (α/2π)(1+λ₂/Σm) = 1.16644e-3, 0.045%; Δa_μ = (α/2π)³·span^(1/4) = 2.494e-9, 0.24%) |
 | Neutrino Masses | QG172 | MASS ORIGIN (Δm²21 = (1/Σ√m)²/(span/2) = 7.607e-5, 1.02%; Δm²31 = sin²θ_W/Σm = 2.44e-3, 0.71%; m2 = 8.72e-3, m3 = 4.94e-2 eV, Σmν = 0.058 eV) |
 | Quark Masses | QG173 | MASS ORIGIN (mu = me·Σ√m/√Σm² = 2.164, 0.18%; md = mu·(Σ√m)²/occMom = 4.676, 0.14%; ms = 93.5, mc = 1269, mb = 4186, mt = 172704 MeV; all within 0.2%) |
+| Strong CP (θ_QCD) | QG174 | STRONG CP ORIGIN (reflection s = exact graph automorphism [L,P]=0 → real spectrum/masses → arg det M = 0; θ_QCD = 0 exactly; Nelson-Barr-type Z2 suppression, no axion; weak CP = 0.916 unaffected) |
 | 106 GeV Resonance (validation) | QG132 | FALSIFIABLE PREDICTION (not yet observed) |
 | Collider Test of Sector-Ladder | QG130 | PREDICTED (no data yet) |
 | Sector Exponent Law p(Q,T3) | QG147 | HISTORICAL (overfit) — superseded by QG149 |
@@ -4021,6 +4025,7 @@ D96 Automorphisms (D96 = ⟨r,s⟩)
 → Muon g-2 (QG171): a_μ = (α/2π)(1+λ₂/Σm) = 1.16644e-3 (0.045%); Δa_μ = (α/2π)³·span^(1/4) = 2.494e-9 (0.24%)
 → Neutrino masses (QG172): Δm²21 = (1/Σ√m)²/(span/2) = 7.607e-5 (1.02%); Δm²31 = sin²θ_W/Σm = 2.44e-3 (0.71%); m2 = 8.72e-3, m3 = 4.94e-2 eV
 → Quark masses (QG173): mu = me·Σ√m/√Σm² = 2.164 (0.18%); md = mu·(Σ√m)²/occMom = 4.676 (0.14%); ms = md·occMom/Σm = 93.5 (0.15%); mc = md·(Σ√m)²/√Σm² = 1269 (0.08%); mb = md·occMom²·Σm·#g/(Σ√m)⁴ = 4186 (0.13%); mt = mu·occMom·#d = 172704 (0.002%)
+→ Strong CP (QG174): θ_QCD = arg det M = 0 exactly ([L,P]=0 reflection automorphism → real masses; Z2 Nelson-Barr suppression, no axion; weak CP sinδ = 0.916 is a chiral rotation phase, unaffected)
 → Higgs = collective occupation-density scalar
 
 Fermions:
@@ -4134,9 +4139,11 @@ QG172: neutrino mass law (MASS ORIGIN).
 
 QG173: quark mass origin (MASS ORIGIN).
 
+QG174: strong CP origin (STRONG CP ORIGIN).
+
 Milestone counters:
 
-TQM-QG 175 phases
+TQM-QG 176 phases
 432+ TQM-QG tests verified
 
 ### QG154: Neutrino Sector Origin
@@ -4161,5 +4168,5 @@ NEUTRINO ORIGIN
 
 Milestone counters:
 
-TQM-QG 175 phases
+TQM-QG 176 phases
 432+ TQM-QG tests verified
