@@ -311,3 +311,33 @@ a { color: inherit; }
 }
 .mini-arrow { color: #8B949E; font-size: 0.9rem; }
 
+/* ── Coverage Audit (QG170) ─────────────────────────────────────────────── */
+
+.status-chip {
+  display: inline-block; padding: 0.12rem 0.5rem; border-radius: 999px;
+  font-size: 0.66rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase;
+  border: 1px solid;
+}
+.status-tested { color: #81C784; border-color: #81C784; background: rgba(129,199,132,0.10); }
+.status-partial { color: #FFB74D; border-color: #FFB74D; background: rgba(255,183,77,0.10); }
+.status-untested { color: #E57373; border-color: #E57373; background: rgba(229,115,115,0.10); }
+
+.audit-cat {
+  font-size: 0.74rem; color: #64B5F6; font-weight: 600; white-space: nowrap;
+}
+.audit-phase {
+  font-size: 0.78rem; color: #C9D1D9; font-weight: 600; white-space: nowrap;
+  font-family: 'Consolas', 'Menlo', monospace;
+}
+.audit-num { font-variant-numeric: tabular-nums; font-weight: 600; white-space: nowrap; }
+.audit-dev { font-weight: 700; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.audit-rank {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 1.7rem; height: 1.7rem; border-radius: 50%;
+  background: rgba(100,181,246,0.12); border: 1px solid rgba(100,181,246,0.4);
+  color: #64B5F6; font-weight: 700; font-size: 0.82rem;
+}
+.audit-limits { margin: 0; padding-left: 1.2rem; }
+.audit-limits li { margin-bottom: 0.55rem; }
+
+
