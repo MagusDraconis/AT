@@ -3594,6 +3594,25 @@ p=6→96 non-convergent; TQMQG1602 CLASSIFICATION: INEVITABLE — p=3 is the uni
 with no fitted constants (NOT merely empirical; closes the QG159 open question "why period 3"). Report:
 Docs/Research/TQMQG_Period3SeedOrigin.md.
 
+**TQM-QG Phase 161 (Gauge sector origin) — COMPLETED (3/3 tests pass; TQM-QG verified; COMPUTATIONAL):**
+Question: can the gauge bosons (photon, W/Z, gluons, Higgs) be derived directly from D96 spectral
+geometry with no fitted parameters and no SM inputs? Added GaugeSectorOrigin (D96 automorphism
+generators r/s, 2D-irrep su(2) closure, 3-family su(3) count, total 1+3+8 vs degree-12 match, Higgs
+collective-mode check, origin score). TQMQG1610 the observable attractor C_96(1..6) is 12-regular with
+automorphism group D96 = ⟨r, s⟩ (rotation order 96, reflection order 2, s·r·s = r⁻¹, |D96| = 192,
+irrep check 4·1 + 47·4 = 192); the rotation subgroup Z_96 is the U(1) photon (unique neutral global
+generator, 1); the 2D irreps (47 = n/2−1) generate the Z2 doublets and restricted to a doublet span
+su(2): σ_z = ρ(s) (reflection = T3), σ_y = rotation generator, [σ_z, σ_y] = −2σ_x (closure True) —
+WEAK = exactly 3 generators. TQMQG1611 the 3 octave families form a 3D color space; su(3) has 3²−1 = 8
+generators (STRONG); total 1 + 3 + 8 = 12 equals the degree of the 12-regular circulant C_96(1..6) — the
+12 link-directions from each node ARE the 12 gauge generators. TQMQG1612 the Higgs is NOT a generator:
+it is the collective occupation-density scalar mode (Σocc²/occ₀ = 1900.25, occupation variance 1530.9,
+spectral gap λ₂ = 0.386 as mass-gap scale), a (0,0,0) singlet; TQMQG1612 CLASSIFICATION: GAUGE ORIGIN —
+gauge bosons EMERGE from D96 spectral geometry: photon = Z_96 (U(1)), weak = su(2) from 2D irreps
+(reflection = T3, rotation, commutator), strong = su(3) from 3 families (3²−1 = 8), total = degree 12,
+Higgs = collective scalar (not a generator), with no fitted parameters and no SM inputs. Report:
+Docs/Research/TQMQG_GaugeSectorOrigin.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.
@@ -3690,6 +3709,24 @@ Neutrino origin from neutral-charge limit
 QG155:
 Weak-isospin doublets from D96 symmetry
 
+QG156:
+Unified spectral access law
+
+QG157:
+Effective access counts from D96 moments
+
+QG158:
+Moment orders from Z2 powers
+
+QG159:
+D96 selection origin
+
+QG160:
+Period-3 seed origin
+
+QG161:
+Gauge sector origin (1+3+8 from D96)
+
 ## Key Open Problems
 
 - "Why three generations?" → REMOVED (solved: QG138 derives familyCount = floor(log2(ωmax/ωmin)) + 1).
@@ -3718,6 +3755,7 @@ Open Questions:
 | Neutrino Mass Law (exact) | — | OPEN |
 | D96 Symmetry Selection | QG159 | INEVITABLE (Z2 automorphism + 3-family window + unique octave rung) |
 | Seed Period Origin | QG160 | INEVITABLE (period-3 unique: natural size 96 has complete Z2) |
+| Gauge Sector | QG161 | GAUGE ORIGIN (1+3+8 = degree 12 of C_96(1..6); Higgs = collective scalar) |
 | 106 GeV Resonance (validation) | QG132 | FALSIFIABLE PREDICTION (not yet observed) |
 | Collider Test of Sector-Ladder | QG130 | PREDICTED (no data yet) |
 | Sector Exponent Law p(Q,T3) | QG147 | HISTORICAL (overfit) — superseded by QG149 |
@@ -3729,6 +3767,15 @@ Bosons:
 Energy
 → Sector Ladder
 → Rung States
+
+Gauge (QG161):
+
+D96 Automorphisms (D96 = ⟨r,s⟩)
+→ U(1) Photon (Z_96 rotation)
+→ SU(2) Weak (2D irreps → doublets)
+→ SU(3) Strong (3 families → color)
+→ 1 + 3 + 8 = 12 = degree(C_96(1..6))
+→ Higgs = collective occupation-density scalar
 
 Fermions:
 
@@ -3785,7 +3832,7 @@ Milestone counters:
 TQM-QG 144 phases
 432 tests
 
-### QG138-160: Fermion Structure from Spectral Geometry
+### QG138-161: Fermion & Gauge Structure from Spectral Geometry
 
 Status: **Major milestone**
 
@@ -3815,9 +3862,11 @@ QG159: D96 selection origin (INEVITABLE).
 
 QG160: period-3 seed origin (INEVITABLE).
 
+QG161: gauge sector origin (GAUGE ORIGIN).
+
 Milestone counters:
 
-TQM-QG 162 phases
+TQM-QG 163 phases
 432+ TQM-QG tests verified
 
 ### QG154: Neutrino Sector Origin
@@ -3842,5 +3891,5 @@ NEUTRINO ORIGIN
 
 Milestone counters:
 
-TQM-QG 162 phases
+TQM-QG 163 phases
 432+ TQM-QG tests verified

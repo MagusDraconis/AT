@@ -1668,6 +1668,27 @@ Exponents). Charge and isospin determine the hierarchy exponent (intermediate, f
   (NOT merely empirical; closes the QG159 open question "why period 3"; chain: period-3 seed → D96 →
   Z2 doublets → moment orders → N_eff → δ → p)
 
+### TQM-QG161: Gauge Sector Origin (TQM-QG Phase 161)
+**Status:** Complete (GAUGE ORIGIN). The gauge bosons (1+3+8) emerge from D96 spectral geometry.
+- observable attractor C_96(1..6) is 12-regular (degree 12 = 1 + 3 + 8) with automorphism group
+  D96 = ⟨r, s⟩: rotation r order 96, reflection s order 2, s·r·s = r⁻¹, |D96| = 192, irrep check
+  4·1 + 47·4 = 192
+- PHOTON (1): the rotation subgroup Z_96 ⊂ D96 is the U(1) charge — unique neutral global generator
+- WEAK (3): the 2D irreps of D96 (47 = n/2−1) generate the Z2 doublets; restricted to a doublet they
+  span su(2) — σ_z = ρ(s) (reflection = isospin T3), σ_y = rotation generator, [σ_z, σ_y] = −2σ_x
+  (closure True); exactly 3 generators (Z2/isospin origin of doublet-changing weak operators)
+- STRONG (8): the 3 octave families form a 3D color space; su(3) has 3²−1 = 8 generators (internal
+  family/color rotations)
+- TOTAL: 1 + 3 + 8 = 12 equals the degree of the 12-regular circulant C_96(1..6) — the 12
+  link-directions from each node ARE the 12 gauge generators
+- HIGGS: NOT a generator — the collective occupation-density scalar mode (Σocc²/occ₀ = 1900.25,
+  occupation variance 1530.9, spectral gap λ₂ = 0.386 as mass-gap scale), a (0,0,0) singlet and
+  symmetry-breaking candidate (QG125 metastability / QG131 rung ladder)
+- → GAUGE ORIGIN: gauge bosons EMERGE from D96 spectral geometry — photon = Z_96 (U(1)), weak = su(2)
+  from 2D irreps (reflection = T3, rotation, commutator), strong = su(3) from 3 families (3²−1 = 8),
+  total = degree 12, Higgs = collective scalar — no fitted parameters, no SM inputs (closes the open
+  problem "derive gauge bosons from D96"; chain: D96 → gauge generators → photon + W/Z + gluons)
+
 ---
 
 ## Overall Statistics
@@ -1679,8 +1700,8 @@ Exponents). Charge and isospin determine the hierarchy exponent (intermediate, f
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 162 | Complete |
-| **Total** | **269** | |
+| TQM-QG | 163 | Complete |
+| **Total** | **270** | |
 
 ## Key Unsolved Problems
 
