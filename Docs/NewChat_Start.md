@@ -3646,6 +3646,23 @@ ladder; TQMQG1632 CLASSIFICATION: RUNNING ORIGIN — the running of the gauge co
 spectral geometry (spectral scale + occupation flow + scale-dependent access + mode activation), with no
 fitted beta functions. Report: Docs/Research/TQMQG_RunningCouplingOrigin.md.
 
+**TQM-QG Phase 164 (Continuous running origin) — COMPLETED (3/3 tests pass; TQM-QG verified; COMPUTATIONAL):**
+Question: how does CONTINUOUS running emerge from the discrete D96 octave structure — no fitted beta
+functions, D96 spectral geometry only? Added ContinuousRunningOrigin (partial mode activation, linear-
+in-doublet beta flow, fractional interpolation, log-scale continuity, continuum limit, origin score).
+TQMQG1640 activating modes one-by-one evolves the denominators as a FINE STAIRCASE (each activated Z2
+doublet adds +2 to Σm, +1 to #doublets, +√2 to Σ√m): the octave rungs 4 → 8 → 95 are a coarse sampling
+of this staircase. TQMQG1641 in the doublet-dominated regime the inverse couplings are LINEAR in the
+activated doublet count G(E): 1/α_em = Σm + #doublets = 2G + G = 3G, 1/α_weak = Σm/3 = 2G/3, 1/α_strong =
+Σ√m/8 = (√2/8)·G — the EMERGENT BETA COEFFICIENTS (3, 2/3, √2/8) are D96 constants (verified exact at
+low activation), no fitting; fractional interpolation between adjacent modes gives a CONTINUOUS monotone
+α(L) (spectral interpolation). TQMQG1642 the log-scale flow recovers log-like running: 1/α grows
+monotonically with the logarithmic spectral scale (octave ladder), reproducing the QFT beta-function form
+1/α(E) = 1/α(E0) + b·ln(E/E0) as an EMERGENT spectral flow; continuum limit holds (relative step
+0.500 → 0.0219); TQMQG1642 CLASSIFICATION: CONTINUOUS ORIGIN — continuous running EMERGES from D96
+spectral geometry (partial mode activation → linear-in-G beta flow → fractional interpolation → log-like
+emergent flow), with no fitted beta functions. Report: Docs/Research/TQMQG_ContinuousRunningOrigin.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.
@@ -3766,6 +3783,9 @@ Gauge coupling origin (1/α_em = 137 from D96)
 QG163:
 Running coupling origin (octave ladder, occupation flow)
 
+QG164:
+Continuous running origin (linear-in-G beta flow)
+
 ## Key Open Problems
 
 - "Why three generations?" → REMOVED (solved: QG138 derives familyCount = floor(log2(ωmax/ωmin)) + 1).
@@ -3797,6 +3817,7 @@ Open Questions:
 | Gauge Sector | QG161 | GAUGE ORIGIN (1+3+8 = degree 12 of C_96(1..6); Higgs = collective scalar) |
 | Gauge Couplings | QG162 | COUPLING ORIGIN (1/α_em = Σm+#doublets = 137; α_weak = 3/Σm; α_strong = 8/Σ√m; sin²θ_W = 0.2316) |
 | Running Couplings | QG163 | RUNNING ORIGIN (octave ladder + occupation flow; α_i(E) = g_i/D_i(N(E)); no in-sector unification) |
+| Continuous Running | QG164 | CONTINUOUS ORIGIN (linear-in-G beta flow 3, 2/3, √2/8; fractional interpolation; log-like emergent flow) |
 | 106 GeV Resonance (validation) | QG132 | FALSIFIABLE PREDICTION (not yet observed) |
 | Collider Test of Sector-Ladder | QG130 | PREDICTED (no data yet) |
 | Sector Exponent Law p(Q,T3) | QG147 | HISTORICAL (overfit) — superseded by QG149 |
@@ -3819,6 +3840,7 @@ D96 Automorphisms (D96 = ⟨r,s⟩)
 → Couplings (QG162): 1/α_em = 137, α_weak = 3/Σm, α_strong = 8/Σ√m
 → sin²θ_W = #groups/(2Σm) = 0.2316
 → Running (QG163): α_i(E) = g_i/D_i(N(E)) via octave ladder + occupation flow
+→ Continuous Running (QG164): linear-in-G beta flow (3, 2/3, √2/8) → log-like emergent flow
 → Higgs = collective occupation-density scalar
 
 Fermions:
@@ -3876,7 +3898,7 @@ Milestone counters:
 TQM-QG 144 phases
 432 tests
 
-### QG138-163: Fermion & Gauge Structure from Spectral Geometry
+### QG138-164: Fermion & Gauge Structure from Spectral Geometry
 
 Status: **Major milestone**
 
@@ -3912,9 +3934,11 @@ QG162: gauge coupling origin (COUPLING ORIGIN, 1/α_em = 137).
 
 QG163: running coupling origin (RUNNING ORIGIN).
 
+QG164: continuous running origin (CONTINUOUS ORIGIN).
+
 Milestone counters:
 
-TQM-QG 165 phases
+TQM-QG 166 phases
 432+ TQM-QG tests verified
 
 ### QG154: Neutrino Sector Origin
@@ -3939,5 +3963,5 @@ NEUTRINO ORIGIN
 
 Milestone counters:
 
-TQM-QG 165 phases
+TQM-QG 166 phases
 432+ TQM-QG tests verified

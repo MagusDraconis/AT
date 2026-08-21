@@ -1724,6 +1724,25 @@ Exponents). Charge and isospin determine the hierarchy exponent (intermediate, f
   (closes the QG162 open question "why do couplings run"; chain: D96 → spectral scale → occupancy
   evolution → coupling evolution)
 
+### TQM-QG164: Continuous Running Origin (TQM-QG Phase 164)
+**Status:** Complete (CONTINUOUS ORIGIN). Continuous running emerges from the discrete D96 octave structure.
+- partial mode activation: activating modes one-by-one evolves the denominators as a FINE STAIRCASE
+  (each activated Z2 doublet adds +2 to Σm, +1 to #doublets, +√2 to Σ√m); the octave rungs 4 → 8 → 95
+  are a coarse sampling of this staircase
+- linear-in-doublet beta flow: in the doublet regime the inverse couplings are LINEAR in G = activated
+  doublet count — 1/α_em = Σm + #doublets = 2G + G = 3G, 1/α_weak = Σm/3 = 2G/3, 1/α_strong = Σ√m/8 =
+  (√2/8)·G; the EMERGENT BETA COEFFICIENTS (3, 2/3, √2/8) are D96 constants (verified exact at low
+  activation), no fitting
+- fractional interpolation: linear interpolation between adjacent modes gives a CONTINUOUS monotone
+  α(L) (spectral interpolation) — the octave rungs become a smooth flow
+- log-like running: 1/α grows monotonically with the logarithmic spectral scale (octave ladder),
+  recovering the QFT beta-function form 1/α(E) = 1/α(E0) + b·ln(E/E0) as an EMERGENT spectral flow
+- continuum limit: relative step 0.500 (N=4) → 0.0219 (N=95) — the staircase becomes a continuous flow
+- → CONTINUOUS ORIGIN: continuous running EMERGES from D96 spectral geometry (partial mode activation →
+  linear-in-G beta flow → fractional interpolation → log-like emergent flow), with no fitted beta
+  functions (closes the QG163 open question "how does continuous running emerge"; chain: D96 → discrete
+  octave rungs → continuous spectral flow)
+
 ---
 
 ## Overall Statistics
@@ -1735,8 +1754,8 @@ Exponents). Charge and isospin determine the hierarchy exponent (intermediate, f
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 165 | Complete |
-| **Total** | **272** | |
+| TQM-QG | 166 | Complete |
+| **Total** | **273** | |
 
 ## Key Unsolved Problems
 
