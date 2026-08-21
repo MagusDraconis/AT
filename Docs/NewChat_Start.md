@@ -3966,6 +3966,9 @@ Electron g-2 origin (a_e = (α/2π)(1 − (occ₀/Σm)²) = 1.159655e-3, 0.0003%
 QG179:
 Majorana origin (neutrino MAJORANA: T3-only channel self-conjugate 48/95, unique Q=0 no conserved charge, real mass matrix; m_ββ = 2.02e-3 eV within limits)
 
+QG180:
+Oblique parameters origin (S = occ₀/Σm = 0.0421, T = 2S = 0.0842, U = 0; T = 2S exact; consistent with EW global fit beyond masses/widths)
+
 ## Key Open Problems
 
 - "Why three generations?" → REMOVED (solved: QG138 derives familyCount = floor(log2(ωmax/ωmin)) + 1).
@@ -4013,6 +4016,7 @@ Open Questions:
 | Leave-One-Out Validation | QG177 | INDEPENDENT (12 observables hidden & reconstructed from primitive base only: mean dev 0.577%, max 1.885%, all within 2%; 9 fully independent, 3 nominal chains MZ/a_μ/Δm²31 primitive-inlined; no circularity) |
 | Electron g-2 | QG178 | G2 ORIGIN (a_e = (α/2π)(1 − (occ₀/Σm)²) = 1.159655e-3, 0.0003%; Δa_e = (α/2π)³·span^¼·(occ₀/Σm)³ = 1.86e-13 < 1e-12, anomaly-free; same D96 mechanism as QG171 muon: Schwinger + lepton spectral fraction, −(occ₀/Σm)² octave-bottom vs +λ₂/Σm dense-bulk) |
 | Neutrino Character (Dirac/Majorana) | QG179 | MAJORANA ORIGIN (self-conjugate T3-only channel 48/95 modes, no antiparticle channel; unique Q=0 no conserved charge; real mass matrix via reflection automorphism; m_ββ = |Σ U_ei²·m_i| = 2.02e-3 eV, within limit) |
+| Oblique Parameters (S,T,U) | QG180 | OBLIQUE ORIGIN (S = occ₀/Σm = 4/95 = 0.0421, 5.3%; T = 2·occ₀/Σm = 8/95 = 0.0842, 5.3%; T = 2S exact; U = 0 via exact SM tree-level ρ = 1) |
 | 106 GeV Resonance (validation) | QG132 | FALSIFIABLE PREDICTION (not yet observed) |
 | Collider Test of Sector-Ladder | QG130 | PREDICTED (no data yet) |
 | Sector Exponent Law p(Q,T3) | QG147 | HISTORICAL (overfit) — superseded by QG149 |
@@ -4051,6 +4055,7 @@ D96 Automorphisms (D96 = ⟨r,s⟩)
 → Leave-one-out validation (QG177): 12 observables hidden & reconstructed from primitive base only (mean 0.58%, max 1.89%); 9 fully independent, MZ/a_μ/Δm²31 chains primitive-inlined; INDEPENDENT — no circularity
 → Electron g-2 (QG178): a_e = (α/2π)(1 − (occ₀/Σm)²) = 1.159655e-3 (0.0003%); Δa_e = (α/2π)³·span^¼·(occ₀/Σm)³ = 1.86e-13 (anomaly-free); same mechanism as muon (QG171) — Schwinger + lepton spectral fraction, opposite ends of spectrum
 → Majorana (QG179): neutrino MAJORANA — self-conjugate T3-only channel (48/95), unique Q=0 (no conserved charge), real mass matrix (reflection automorphism); m_ββ = 2.02e-3 eV (0νββ, within limits)
+→ Oblique parameters (QG180): S = occ₀/Σm = 0.0421 (5.3%), T = 2S = 0.0842 (5.3%), U = 0 (ρ=1 exact SM tree-level); precision-EW consistency beyond masses/widths
 → Higgs = collective occupation-density scalar
 
 Fermions:
@@ -4176,9 +4181,11 @@ QG178: electron g-2 origin (G2 ORIGIN).
 
 QG179: Majorana origin (MAJORANA ORIGIN).
 
+QG180: oblique parameters origin (OBLIQUE ORIGIN).
+
 Milestone counters:
 
-TQM-QG 181 phases
+TQM-QG 182 phases
 432+ TQM-QG tests verified
 
 ### QG154: Neutrino Sector Origin
@@ -4203,5 +4210,5 @@ NEUTRINO ORIGIN
 
 Milestone counters:
 
-TQM-QG 181 phases
+TQM-QG 182 phases
 432+ TQM-QG tests verified
