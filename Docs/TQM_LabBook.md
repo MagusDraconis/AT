@@ -1861,6 +1861,22 @@ Exponents). Charge and isospin determine the hierarchy exponent (intermediate, f
   geometry only (closes the QG170 #1 remaining test; chain: D96 → couplings → electroweak masses →
   muon g-2)
 
+### TQM-QG172: Neutrino Mass Law (TQM-QG Phase 172)
+**Status:** Complete (MASS ORIGIN). The neutrino masses and splittings emerge from D96 spectral geometry.
+- the Q=0 T3-ONLY sector (QG154) has effective access Σ√m = 64.083 (QG157), giving the natural mass
+  scale 1/Σ√m = 0.0156 eV
+- SOLAR splitting: Δm²21 = (1/Σ√m)²/(span/2) = 2.4351e-4/3.2013 = 7.607e-5 eV² (physical 7.53e-5,
+  dev 1.02%) — the neutral access scale squared over the octave-band radius
+- ATMOSPHERIC splitting: Δm²31 = sin²θ_W/Σm = 0.2316/95 = 2.4377e-3 eV² (physical 2.455e-3, dev
+  0.71%) — the Weinberg angle over the total mode count
+- masses (normal ordering): m1 = 0 (massless zero-mode of the T3-only channel), m2 = √Δm²21 =
+  8.72e-3 eV, m3 = √Δm²31 = 4.94e-2 eV
+- Σmν = m1 + m2 + m3 = 0.0581 eV, consistent with the cosmological bound < 0.12 eV; ratio Δm²21/Δm²31
+  = 0.0312 (observed 0.0307, dev 1.7%)
+- → MASS ORIGIN: the neutrino masses EMERGE from D96 spectral geometry (neutral access scale 1/Σ√m,
+  octave-band radius span/2, Weinberg-angle group density) — no fitted masses, D96 only (closes the
+  QG170 #2 remaining test; chain: QG154 → QG157 → QG167 → neutrino mass law)
+
 ---
 
 ## Overall Statistics
@@ -1872,8 +1888,8 @@ Exponents). Charge and isospin determine the hierarchy exponent (intermediate, f
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 173 | Complete |
-| **Total** | **280** | |
+| TQM-QG | 174 | Complete |
+| **Total** | **281** | |
 
 ## Key Unsolved Problems
 
