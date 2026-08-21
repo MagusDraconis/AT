@@ -3679,6 +3679,22 @@ highest octave-family center (ω = [0.924, 2.062, 3.385]) raised to the down-sec
 Vcb, occupancy ratio → Vub, unitarity → diagonal), no fitted angles, no SM inputs. Report:
 Docs/Research/TQMQG_CKMOrigin.md.
 
+**TQM-QG Phase 166 (CKM CP origin) — COMPLETED (3/3 tests pass; TQM-QG verified; COMPUTATIONAL):**
+Question: can the CKM COMPLEX PHASE δ_CP and the Jarlskog invariant J be derived from D96 spectral
+geometry — no fitted phase, D96 geometry only? Added CKMCPOrigin (chiral automorphisms, rotation
+orientation, reflection reversal, spectral-circulation phase, Jarlskog invariant, origin score).
+TQMQG1660 the dihedral D96 = ⟨r, s⟩ has an ORIENTED rotation r (i→i+1, r ≠ r⁻¹) and a reflection s
+(i→−i) that REVERSES it (s·r·s = r⁻¹) — the parity-breaking structure; the half-shift acts with
+eigenvalue (−1)^k = e^{iπk} on mode k (Z2 phase structure). TQMQG1661 the CP phase is the chiral
+asymmetry between the forward (up-sector) and backward (down-sector) spectral circulation:
+sinδ_CP = occ_top/Σm = 87/95 = 0.9158 → δ_CP = 1.1575 rad (66.3°, physical 1.144 rad, dev 1.18%) —
+the up sector circulates in the dense top octave band, the down over the full spectrum; the phase is
+numerically near the 18-step D96 rotation (67.5° = 3π/8). TQMQG1662 the Jarlskog invariant follows
+from the D96 CKM magnitudes (QG165) and the D96 phase: J = c12·s12·c23·s23·c13²·s13·sinδ =
+3.139e-5 (physical 3.18e-5, dev 1.28%); TQMQG1662 CLASSIFICATION: CP ORIGIN — CP violation EMERGES
+from D96 spectral geometry (chiral rotation + reflection reversal + spectral-circulation asymmetry),
+no fitted phase. Report: Docs/Research/TQMQG_CKMCPOrigin.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.
@@ -3805,6 +3821,9 @@ Continuous running origin (linear-in-G beta flow)
 QG165:
 CKM origin (doublet coupling, octave transition, occupancy ratio)
 
+QG166:
+CKM CP origin (chiral rotation, spectral circulation → δ_CP, J)
+
 ## Key Open Problems
 
 - "Why three generations?" → REMOVED (solved: QG138 derives familyCount = floor(log2(ωmax/ωmin)) + 1).
@@ -3838,6 +3857,7 @@ Open Questions:
 | Running Couplings | QG163 | RUNNING ORIGIN (octave ladder + occupation flow; α_i(E) = g_i/D_i(N(E)); no in-sector unification) |
 | Continuous Running | QG164 | CONTINUOUS ORIGIN (linear-in-G beta flow 3, 2/3, √2/8; fractional interpolation; log-like emergent flow) |
 | CKM Matrix | QG165 | CKM ORIGIN (Vus = #doublets/(2Σm); Vcb = (ω0/ω2)^δd; Vub = 2·Vcb·(occ0/occ2); mean dev 0.58%) |
+| CKM CP (δ_CP, J) | QG166 | CP ORIGIN (sinδ = occ_top/Σm = 0.9158; δ_CP = 66.3°; J = 3.139e-5) |
 | 106 GeV Resonance (validation) | QG132 | FALSIFIABLE PREDICTION (not yet observed) |
 | Collider Test of Sector-Ladder | QG130 | PREDICTED (no data yet) |
 | Sector Exponent Law p(Q,T3) | QG147 | HISTORICAL (overfit) — superseded by QG149 |
@@ -3862,6 +3882,7 @@ D96 Automorphisms (D96 = ⟨r,s⟩)
 → Running (QG163): α_i(E) = g_i/D_i(N(E)) via octave ladder + occupation flow
 → Continuous Running (QG164): linear-in-G beta flow (3, 2/3, √2/8) → log-like emergent flow
 → CKM (QG165): Vus = #doublets/(2Σm), Vcb = (ω0/ω2)^δd, Vub = 2·Vcb·(occ0/occ2)
+→ CKM CP (QG166): sinδ = occ_top/Σm = 0.9158 (chiral rotation), δ_CP = 66.3°, J = 3.139e-5
 → Higgs = collective occupation-density scalar
 
 Fermions:
@@ -3919,7 +3940,7 @@ Milestone counters:
 TQM-QG 144 phases
 432 tests
 
-### QG138-165: Fermion & Gauge Structure from Spectral Geometry
+### QG138-166: Fermion & Gauge Structure from Spectral Geometry
 
 Status: **Major milestone**
 
@@ -3959,9 +3980,11 @@ QG164: continuous running origin (CONTINUOUS ORIGIN).
 
 QG165: CKM origin (CKM ORIGIN).
 
+QG166: CKM CP origin (CP ORIGIN).
+
 Milestone counters:
 
-TQM-QG 167 phases
+TQM-QG 168 phases
 432+ TQM-QG tests verified
 
 ### QG154: Neutrino Sector Origin
@@ -3986,5 +4009,5 @@ NEUTRINO ORIGIN
 
 Milestone counters:
 
-TQM-QG 167 phases
+TQM-QG 168 phases
 432+ TQM-QG tests verified

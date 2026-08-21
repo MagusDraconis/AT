@@ -1761,6 +1761,20 @@ Exponents). Charge and isospin determine the hierarchy exponent (intermediate, f
   occupancy ratio → Vub, unitarity → diagonal — no fitted angles, no SM inputs (closes the open problem
   "derive CKM"; chain: D96 → fermion hierarchies → CKM mixing)
 
+### TQM-QG166: CKM CP Origin (TQM-QG Phase 166)
+**Status:** Complete (CP ORIGIN). The CKM complex phase and Jarlskog invariant emerge from D96 chirality.
+- chiral automorphisms: the dihedral D96 = ⟨r, s⟩ has an ORIENTED rotation r (i→i+1, r ≠ r⁻¹) and a
+  reflection s (i→−i) that REVERSES it (s·r·s = r⁻¹) — the parity-breaking structure; the half-shift
+  acts with eigenvalue (−1)^k = e^{iπk} on mode k (Z2 phase structure)
+- spectral circulation → δ_CP: the CP phase is the chiral asymmetry between the forward (up-sector) and
+  backward (down-sector) circulation — sinδ_CP = occ_top/Σm = 87/95 = 0.9158 → δ_CP = 1.1575 rad
+  (66.3°, physical 1.144 rad, dev 1.18%); the up sector circulates in the dense top octave band, the
+  down over the full spectrum; the phase is numerically near the 18-step D96 rotation (67.5° = 3π/8)
+- Jarlskog invariant: J = c12·s12·c23·s23·c13²·s13·sinδ = 3.139e-5 (physical 3.18e-5, dev 1.28%)
+- → CP ORIGIN: CP violation EMERGES from D96 spectral geometry (chiral rotation + reflection reversal +
+  spectral-circulation asymmetry) — δ_CP = 66.3° and J = 3.139e-5, no fitted phase (closes the QG165
+  open problem "derive the CKM phase"; chain: D96 → CKM magnitudes → CP phase → Jarlskog)
+
 ---
 
 ## Overall Statistics
@@ -1772,8 +1786,8 @@ Exponents). Charge and isospin determine the hierarchy exponent (intermediate, f
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 167 | Complete |
-| **Total** | **274** | |
+| TQM-QG | 168 | Complete |
+| **Total** | **275** | |
 
 ## Key Unsolved Problems
 
