@@ -1990,6 +1990,26 @@ Exponents). Charge and isospin determine the hierarchy exponent (intermediate, f
   fitted parameters (closes the QG170 remaining electron g-2 test; chain: QG162 → QG140 → QG171 →
   electron g-2)
 
+### TQM-QG179: Majorana Origin (TQM-QG Phase 179)
+**Status:** Complete (MAJORANA ORIGIN). The neutrino is Majorana by D96 spectral geometry.
+- DEGREES OF FREEDOM: a Dirac neutrino needs a particle/antiparticle pair over the full spectrum; the
+  neutrino has T3-ONLY access (QG154) reaching exactly the T3=+1/2 (even) channel — 48 of 95 modes.
+  There is no separate T3=−1/2 antiparticle channel, so the neutrino is SELF-CONJUGATE
+- CHARGE: Majorana requires NO conserved charge; the neutrino is the UNIQUE Q=0 sector (QG154), so no
+  charge distinguishes ν from ν̄; Dirac requires such a charge — absent
+- Z2 DOUBLETS: the neutrino accesses one member of each Z2 doublet (the T3=+1/2 member); each accessed
+  member is its own conjugate
+- REFLECTION SYMMETRY: the reflection is an exact graph automorphism (QG174: [L,P]=0), so the spectrum
+  and masses are real; a real Majorana mass term M·ν·ν is allowed, no complex Dirac phase exists
+  (arg det M = 0)
+- 0νββ EXPECTATION: m_ββ = |Σ U_ei²·m_i| = 2.02e-3 eV from the D96 masses (QG172) and PMNS angles
+  (QG167, δ_ν = 66.4°) — non-zero, within the current experimental limit (0.036–0.156 eV), in reach of
+  next-generation experiments
+- → MAJORANA ORIGIN: the neutrino is MAJORANA — self-conjugate T3-only channel, unique Q=0 (no
+  conserved charge), real mass matrix via the reflection automorphism, with a testable 0νββ
+  expectation m_ββ = 2.02e-3 eV — no fitted assumptions (closes the QG170 remaining Majorana test;
+  chain: QG154 → QG172 → QG167 → QG174 → Majorana origin)
+
 ---
 
 ## Overall Statistics
@@ -2001,8 +2021,8 @@ Exponents). Charge and isospin determine the hierarchy exponent (intermediate, f
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 180 | Complete |
-| **Total** | **287** | |
+| TQM-QG | 181 | Complete |
+| **Total** | **288** | |
 
 ## Key Unsolved Problems
 
@@ -2028,5 +2048,7 @@ Exponents). Charge and isospin determine the hierarchy exponent (intermediate, f
     from primitive base only, mean 0.58%, max 1.89%; no circularity)
 14. Electron g-2 — RESOLVED (QG178 G2 ORIGIN: a_e = 1.159655e-3, 0.0003%; anomaly-free Δa_e = 1.86e-13;
     same mechanism as muon QG171)
-15. Experimental validation of the 106 GeV resonance (QG132) — unobserved
-16. Collider test of sector-ladder physics (QG130) — no data yet
+15. Neutrino Majorana character — RESOLVED (QG179 MAJORANA ORIGIN: self-conjugate T3-only channel,
+    unique Q=0, real mass matrix; m_ββ = 2.02e-3 eV; awaiting 0νββ experimental confirmation)
+16. Experimental validation of the 106 GeV resonance (QG132) — unobserved
+17. Collider test of sector-ladder physics (QG130) — no data yet
