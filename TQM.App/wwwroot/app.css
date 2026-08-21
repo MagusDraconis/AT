@@ -209,3 +209,105 @@ a { color: inherit; }
   .theory-content { padding: 1.25rem 1rem 2.5rem; }
   .theory-brand { font-size: 0.85rem; }
 }
+
+/* ── Blind Validation (QG176–QG177) ─────────────────────────────────────── */
+
+/* Formula blocks */
+.formula-block {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  background: #0C0F14;
+  border: 1px solid rgba(100,181,246,0.25);
+  border-left: 3px solid #64B5F6;
+  border-radius: 6px;
+  padding: 0.75rem 1rem;
+  margin: 0.5rem 0;
+}
+.formula-block-small { padding: 0.5rem 0.75rem; }
+.formula-line {
+  font-family: 'Cambria Math', Cambria, Georgia, serif;
+  font-size: 1.02rem;
+  color: #E6EDF3;
+}
+.formula-sub { font-size: 0.72em; vertical-align: sub; }
+
+/* Result rows and banner */
+.result-row { display: flex; align-items: baseline; gap: 0.6rem; }
+.result-label {
+  font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.07em;
+  color: #8B949E; font-weight: 700; min-width: 6.5rem;
+}
+.result-value { font-family: 'Cambria Math', Cambria, Georgia, serif; font-size: 1.15rem; font-weight: 700; color: #E6EDF3; }
+.result-banner {
+  display: flex; flex-wrap: wrap; align-items: center; gap: 1.5rem;
+}
+.result-banner-label { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.07em; color: #8B949E; font-weight: 700; }
+.result-banner-value { font-family: Georgia, 'Times New Roman', serif; font-size: 1.7rem; font-weight: 700; color: #E6EDF3; }
+.result-banner-ok { color: #81C784; }
+.result-banner-divider { width: 1px; height: 2.6rem; background: rgba(255,255,255,0.1); }
+.result-highlight { border-color: rgba(129,199,132,0.35); }
+
+/* Dependency tags */
+.deps-tag {
+  display: inline-block; padding: 0.2rem 0.65rem; border-radius: 999px;
+  font-size: 0.8rem; font-weight: 700; letter-spacing: 0.02em;
+  border: 1px solid; margin-right: 0.35rem;
+}
+.deps-sub { font-size: 0.75em; vertical-align: sub; }
+.deps-primitive { color: #64B5F6; border-color: #64B5F6; background: rgba(100,181,246,0.10); }
+.deps-derived  { color: #4DD0E1; border-color: #4DD0E1; background: rgba(77,208,225,0.10); }
+.deps-hidden   { color: #E57373; border-color: #E57373; background: rgba(229,115,115,0.10); }
+.deps-output   { color: #81C784; border-color: #81C784; background: rgba(129,199,132,0.12); }
+
+/* Dependency graph */
+.dep-graph {
+  display: flex; flex-wrap: wrap; align-items: stretch; gap: 0.5rem;
+  padding: 1.1rem; background: #0F141B; border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 10px;
+}
+.dep-node {
+  display: flex; flex-direction: column; justify-content: center; gap: 0.15rem;
+  min-width: 108px; padding: 0.6rem 0.9rem; border-radius: 8px; text-align: center;
+  font-weight: 700; font-size: 0.92rem; border: 1px solid;
+}
+.dep-node-sub { font-size: 0.74rem; font-weight: 500; opacity: 0.85; }
+.dep-arrow { display: flex; align-items: center; color: #8B949E; font-size: 1.15rem; }
+.dep-legend { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+.dep-legend .deps-tag { font-size: 0.72rem; }
+
+/* Leave-one-out table */
+.loo-name { font-weight: 700; font-family: 'Cambria Math', Cambria, Georgia, serif; font-size: 1.0rem; }
+.loo-formula { font-size: 0.82rem; color: #C9D1D9; font-family: 'Cambria Math', Cambria, Georgia, serif; }
+.loo-num { font-variant-numeric: tabular-nums; font-weight: 600; }
+.loo-dev { font-weight: 700; font-variant-numeric: tabular-nums; }
+.dev-good { color: #81C784; }
+.dev-ok   { color: #FFB74D; }
+.loo-deps { font-size: 0.78rem; color: #8B949E; }
+
+/* Interpretation quote */
+.interpretation-quote {
+  border-left: 3px solid #64B5F6;
+  margin: 0.5rem 0;
+  padding: 0.75rem 1.2rem;
+  color: #C9D1D9;
+  font-style: italic;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 1.12rem;
+  background: rgba(100,181,246,0.05);
+  border-radius: 0 6px 6px 0;
+}
+
+/* Interactive explorer */
+.deps-section { padding-top: 0.4rem; border-top: 1px solid rgba(255,255,255,0.07); }
+.mini-graph {
+  display: flex; flex-wrap: wrap; align-items: center; gap: 0.35rem;
+  padding: 0.6rem; background: #0C0F14; border: 1px solid rgba(255,255,255,0.07);
+  border-radius: 8px; min-height: 3rem;
+}
+.mini-node {
+  padding: 0.25rem 0.6rem; border-radius: 6px; font-size: 0.78rem; font-weight: 700;
+  border: 1px solid;
+}
+.mini-arrow { color: #8B949E; font-size: 0.9rem; }
+

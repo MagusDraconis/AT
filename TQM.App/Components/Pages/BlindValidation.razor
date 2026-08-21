@@ -1,0 +1,433 @@
+@page "/blind-validation"
+
+<PageTitle>TQM-QG Blind Validation · TQM</PageTitle>
+
+<h2 class="section-heading">TQM-QG Blind Validation</h2>
+<p class="muted">Blind reconstruction tests (QG176–QG177) showing that key Standard Model observables were reconstructed without using their measured values as inputs.</p>
+
+<!-- ── 1. Why Blind Tests Matter ─────────────────────────────────────────── -->
+<div class="page-section">
+    <h3 class="section-heading">1 · Why Blind Tests Matter</h3>
+    <div class="prose">
+        <p>
+            A physical theory must reproduce known measurements without directly using them. A model that
+            reads a measured value back into its own inputs reproduces that value by construction — this
+            is post-hoc fitting, not prediction. A <strong>blind reconstruction</strong> hides the
+            observable completely and rebuilds it from the remaining theoretical quantities alone. If the
+            hidden value still emerges with small deviation, the theory is doing predictive work rather
+            than echoing its own inputs.
+        </p>
+        <p>
+            The two phases presented here perform exactly this test on the D96 framework: QG176 hides the
+            Higgs mass and rebuilds it from pre-Higgs D96 structure; QG177 hides each of twelve
+            observables in turn and rebuilds it from the remaining D96 quantities.
+        </p>
+    </div>
+</div>
+
+<!-- ── 2. QG176 — Higgs Blind Reconstruction ─────────────────────────────── -->
+<div class="page-section">
+    <h3 class="section-heading">2 · QG176 — Higgs Blind Reconstruction</h3>
+
+    <MudGrid Spacing="3">
+        <MudItem xs="12" md="5">
+            <MudCard Elevation="1" Class="theory-card h-100">
+                <MudCardContent>
+                    <MudText Typo="Typo.subtitle2" Class="text-uppercase fw-bold muted mb-2">Hidden observables</MudText>
+                    <div class="deps-tag deps-hidden mb-1">M<span class="deps-sub">H</span></div>
+                    <div class="deps-tag deps-hidden mb-1">Γ<span class="deps-sub">H</span></div>
+                    <div class="deps-tag deps-hidden mb-1">M<span class="deps-sub">H</span>/M<span class="deps-sub">W</span></div>
+                    <div class="deps-tag deps-hidden mb-1">M<span class="deps-sub">H</span>/M<span class="deps-sub">Z</span></div>
+                    <div class="deps-tag deps-hidden mb-1">λ<span class="deps-sub">H</span> from M<span class="deps-sub">H</span></div>
+                </MudCardContent>
+            </MudCard>
+        </MudItem>
+        <MudItem xs="12" md="7">
+            <MudCard Elevation="1" Class="theory-card h-100">
+                <MudCardContent>
+                    <MudText Typo="Typo.subtitle2" Class="text-uppercase fw-bold muted mb-2">Allowed inputs (pre-Higgs D96)</MudText>
+                    <div class="deps-tag deps-primitive">Σm</div>
+                    <div class="deps-tag deps-primitive">#doublets</div>
+                    <div class="deps-tag deps-primitive">Σ√m</div>
+                    <div class="deps-tag deps-primitive">span</div>
+                    <div class="deps-tag deps-primitive">λ₂</div>
+                    <div class="deps-tag deps-primitive">α<sub>weak</sub></div>
+                    <div class="deps-tag deps-derived">M<span class="deps-sub">W</span></div>
+                    <div class="deps-tag deps-derived">M<span class="deps-sub">Z</span></div>
+                </MudCardContent>
+            </MudCard>
+        </MudItem>
+    </MudGrid>
+
+    <MudGrid Spacing="3" Class="mt-2">
+        <MudItem xs="12" md="6">
+            <MudCard Elevation="1" Class="theory-card h-100">
+                <MudCardContent>
+                    <MudText Typo="Typo.subtitle1" Class="fw-bold">Formula A — quartic relation</MudText>
+                    <div class="formula-block">
+                        <span class="formula-line">M<span class="formula-sub">H</span> = v · √(λ₂ · g₂)</span>
+                        <span class="formula-line">v = (Σm + #doublets) · ln(span)</span>
+                        <span class="formula-line">g₂ = √(4π · α<sub>weak</sub>)</span>
+                    </div>
+                    <MudText Typo="Typo.body2" Class="muted">
+                        v = 137 · 1.8567 = 254.37 GeV · g₂ = 0.6299 · λ₂ = 0.3864
+                    </MudText>
+                    <div class="result-row mt-2">
+                        <span class="result-label">Result</span>
+                        <span class="result-value">125.49 GeV</span>
+                    </div>
+                </MudCardContent>
+            </MudCard>
+        </MudItem>
+        <MudItem xs="12" md="6">
+            <MudCard Elevation="1" Class="theory-card h-100">
+                <MudCardContent>
+                    <MudText Typo="Typo.subtitle1" Class="fw-bold">Formula B — occupancy geometry</MudText>
+                    <div class="formula-block">
+                        <span class="formula-line">M<span class="formula-sub">H</span> = σ<sub>occ</sub> · (span / 2)</span>
+                        <span class="formula-line">σ<sub>occ</sub> = √(variance of occupancies)</span>
+                    </div>
+                    <MudText Typo="Typo.body2" Class="muted">
+                        σ<sub>occ</sub> = 39.127 · span/2 = 3.2013
+                    </MudText>
+                    <div class="result-row mt-2">
+                        <span class="result-label">Result</span>
+                        <span class="result-value">125.25 GeV</span>
+                    </div>
+                </MudCardContent>
+            </MudCard>
+        </MudItem>
+    </MudGrid>
+
+    <MudCard Elevation="1" Class="theory-card mt-3 result-highlight">
+        <MudCardContent>
+            <div class="result-banner">
+                <div>
+                    <div class="result-banner-label">Physical Higgs mass</div>
+                    <div class="result-banner-value">125.25 GeV</div>
+                </div>
+                <div class="result-banner-divider"></div>
+                <div>
+                    <div class="result-banner-label">Best blind reconstruction</div>
+                    <div class="result-banner-value">125.25 GeV (Formula B)</div>
+                </div>
+                <div class="result-banner-divider"></div>
+                <div>
+                    <div class="result-banner-label">Deviation</div>
+                    <div class="result-banner-value result-banner-ok">0.003%</div>
+                </div>
+            </div>
+        </MudCardContent>
+    </MudCard>
+</div>
+
+<!-- ── 3. Dependency Graph ───────────────────────────────────────────────── -->
+<div class="page-section">
+    <h3 class="section-heading">3 · Dependency Graph</h3>
+    <p class="muted">No Higgs observable appears as an input. The flow is one-way: D96 structure → weak scale → Higgs mass.</p>
+
+    <div class="dep-graph">
+        <div class="dep-node dep-primitive"><span>D96</span><span class="dep-node-sub">spectrum</span></div>
+        <div class="dep-arrow">&rarr;</div>
+        <div class="dep-node dep-primitive"><span>occupancies</span><span class="dep-node-sub">σ<sub>occ</sub> = 39.13</span></div>
+        <div class="dep-arrow">&rarr;</div>
+        <div class="dep-node dep-derived"><span>spectral gap λ₂</span><span class="dep-node-sub">0.3864</span></div>
+        <div class="dep-arrow">&rarr;</div>
+        <div class="dep-node dep-derived"><span>couplings</span><span class="dep-node-sub">g₂, α<sub>weak</sub></span></div>
+        <div class="dep-arrow">&rarr;</div>
+        <div class="dep-node dep-derived"><span>weak scale v</span><span class="dep-node-sub">254.4 GeV</span></div>
+        <div class="dep-arrow">&rarr;</div>
+        <div class="dep-node dep-output"><span>M<span class="deps-sub">H</span></span><span class="dep-node-sub">125.25 GeV</span></div>
+    </div>
+
+    <div class="dep-legend mt-2">
+        <span class="deps-tag deps-primitive">D96 primitive</span>
+        <span class="deps-tag deps-derived">derived quantity</span>
+        <span class="deps-tag deps-hidden">hidden observable</span>
+        <span class="deps-tag deps-output">reconstructed output</span>
+    </div>
+
+    <div class="prose mt-2">
+        <p>
+            The diagram shows that the Higgs mass is reached through <em>spectral</em> and
+            <em>coupling</em> structure only. The hidden observables (M<sub>H</sub>, Γ<sub>H</sub>,
+            M<sub>H</sub>/M<sub>W</sub>, M<sub>H</sub>/M<sub>Z</sub>, λ<sub>H</sub> from M<sub>H</sub>)
+            never enter the left-hand side of the graph.
+        </p>
+    </div>
+</div>
+
+<!-- ── 4. QG177 — Leave-One-Out Validation ───────────────────────────────── -->
+<div class="page-section">
+    <h3 class="section-heading">4 · QG177 — Leave-One-Out Validation</h3>
+    <div class="prose">
+        <p>
+            For each observable in the table below the value was hidden completely, rebuilt from the
+            remaining D96 quantities, and compared against the measured value.
+        </p>
+    </div>
+
+    <MudTable Items="_loo" Hover="true" Dense="true" Class="mt-2">
+        <HeaderContent>
+            <MudTh>Observable</MudTh>
+            <MudTh>Formula (reconstruction)</MudTh>
+            <MudTh>Prediction</MudTh>
+            <MudTh>Measurement</MudTh>
+            <MudTh>Deviation</MudTh>
+            <MudTh>Dependency set</MudTh>
+        </HeaderContent>
+        <RowTemplate>
+            <MudTd>
+                <span class="loo-name">@context.Symbol</span>
+                <span class="muted" style="font-size:0.78rem">(@context.Name)</span>
+            </MudTd>
+            <MudTd><span class="loo-formula">@context.FormulaHtml</span></MudTd>
+            <MudTd><span class="loo-num">@FormatNum(context.Predicted, context.Precision)</span>@context.Units</MudTd>
+            <MudTd><span class="loo-num">@FormatNum(context.Measurement, context.Precision)</span>@context.Units</MudTd>
+            <MudTd><span class="loo-dev @(context.DeviationPercent < 1 ? "dev-good" : "dev-ok")">@context.DeviationPercent.ToString("F3", System.Globalization.CultureInfo.InvariantCulture)%</span></MudTd>
+            <MudTd><span class="loo-deps">@context.Deps</span></MudTd>
+        </RowTemplate>
+    </MudTable>
+
+    <div class="prose mt-2">
+        <p>
+            Nine observables are pure primitive functions of the D96 structure. Three — M<sub>Z</sub>,
+            a<sub>μ</sub>, Δm²31 — have canonical derivation chains that nominally route through another
+            observable (M<sub>W</sub>/cosθ<sub>W</sub>, α, sin²θ<sub>W</sub>), but all three admit
+            primitive-inlined equivalents with identical accuracy, so none is truly dependent.
+        </p>
+    </div>
+</div>
+
+<!-- ── 5. Results ────────────────────────────────────────────────────────── -->
+<div class="page-section">
+    <h3 class="section-heading">5 · Results</h3>
+    <MudGrid Spacing="3">
+        <MudItem xs="12" sm="6" md="4">
+            <div class="stat-tile">
+                <div class="stat-value" style="color:#81C784">0.577%</div>
+                <div class="stat-label">Mean deviation</div>
+            </div>
+        </MudItem>
+        <MudItem xs="12" sm="6" md="4">
+            <div class="stat-tile">
+                <div class="stat-value" style="color:#4DD0E1">1.885%</div>
+                <div class="stat-label">Maximum deviation</div>
+            </div>
+        </MudItem>
+        <MudItem xs="12" sm="6" md="4">
+            <div class="stat-tile">
+                <div class="stat-value" style="color:#FFB74D">&lt; 2%</div>
+                <div class="stat-label">All twelve observables</div>
+            </div>
+        </MudItem>
+    </MudGrid>
+
+    <MudCard Elevation="1" Class="theory-card mt-3 result-highlight">
+        <MudCardContent>
+            <div class="result-banner">
+                <div>
+                    <div class="result-banner-label">Leave-one-out verdict</div>
+                    <div class="result-banner-value">12 / 12 within 2%</div>
+                </div>
+                <div class="result-banner-divider"></div>
+                <div>
+                    <div class="result-banner-label">Fully independent</div>
+                    <div class="result-banner-value">9 observables</div>
+                </div>
+                <div class="result-banner-divider"></div>
+                <div>
+                    <div class="result-banner-label">Nominal chains (inlined)</div>
+                    <div class="result-banner-value">3 observables</div>
+                </div>
+            </div>
+        </MudCardContent>
+    </MudCard>
+</div>
+
+<!-- ── 6. Why This Is Important ──────────────────────────────────────────── -->
+<div class="page-section">
+    <h3 class="section-heading">6 · Why This Is Important</h3>
+    <div class="prose">
+        <p>
+            A set of derived quantities can hide its dependence on the measured values it is meant to
+            explain. The leave-one-out protocol checks for three failure modes:
+        </p>
+        <ul>
+            <li><strong>Circular reasoning</strong> — an observable that appears on both sides of its own derivation.</li>
+            <li><strong>Hidden fitting</strong> — a parameter silently tuned so the formula lands on the measurement.</li>
+            <li><strong>Parameter dependence</strong> — results that change when the supporting quantities are removed.</li>
+        </ul>
+        <p>
+            The test result: <strong>no observable required itself as an input</strong>. Each of the
+            twelve quantities was reconstructed from the remaining D96 structure alone, with mean
+            deviation 0.577% and maximum deviation 1.885%.
+        </p>
+    </div>
+</div>
+
+<!-- ── 7. Scientific Interpretation ──────────────────────────────────────── -->
+<div class="page-section">
+    <h3 class="section-heading">7 · Scientific Interpretation</h3>
+    <MudCard Elevation="1" Class="theory-card">
+        <MudCardContent>
+            <blockquote class="interpretation-quote">
+                The blind-validation results demonstrate internal predictive consistency of the D96
+                framework. They do not by themselves prove physical correctness, but they provide
+                evidence that the reported results are not simple direct fits of the hidden observables.
+            </blockquote>
+            <MudText Typo="Typo.body2" Class="muted mt-2">
+                Blind reconstruction establishes <em>predictive consistency</em>: the framework's
+                quantities are mutually coherent and are not obtained by reading measured values back
+                into the inputs. It does not, on its own, establish that the D96 structure is the unique
+                or correct description of nature — that would require independent experimental
+                discrimination beyond self-consistency.
+            </MudText>
+        </MudCardContent>
+    </MudCard>
+</div>
+
+<!-- ── 8. Interactive Element ────────────────────────────────────────────── -->
+<div class="page-section">
+    <h3 class="section-heading">8 · Interactive Reconstruction Explorer</h3>
+    <p class="muted">Select an observable to see its reconstruction formula, dependency graph, and numbers.</p>
+
+    <MudGrid Spacing="3">
+        <MudItem xs="12" md="4">
+            <MudCard Elevation="1" Class="theory-card h-100">
+                <MudCardContent>
+                    <MudText Typo="Typo.subtitle2" Class="text-uppercase fw-bold muted mb-2">Observable selector</MudText>
+                    <MudSelect T="LooObservableModel" Value="@_selected" ValueChanged="e => { _selected = e; }"
+                               Label="Observable" AnchorOrigin="Origin.BottomCenter" Dense="true">
+                        @foreach (var o in _loo)
+                        {
+                            <MudSelectItem Value="o">@o.Symbol — @o.Name</MudSelectItem>
+                        }
+                    </MudSelect>
+                    <div class="mt-3">
+                        <div class="result-row">
+                            <span class="result-label">Prediction</span>
+                            <span class="result-value">@FormatNum(_selected.Predicted, _selected.Precision)@_selected.Units</span>
+                        </div>
+                        <div class="result-row">
+                            <span class="result-label">Measurement</span>
+                            <span class="result-value">@FormatNum(_selected.Measurement, _selected.Precision)@_selected.Units</span>
+                        </div>
+                        <div class="result-row">
+                            <span class="result-label">Deviation</span>
+                            <span class="result-value dev-good">@_selected.DeviationPercent.ToString("F3", System.Globalization.CultureInfo.InvariantCulture)%</span>
+                        </div>
+                    </div>
+                </MudCardContent>
+            </MudCard>
+        </MudItem>
+
+        <MudItem xs="12" md="4">
+            <MudCard Elevation="1" Class="theory-card h-100">
+                <MudCardContent>
+                    <MudText Typo="Typo.subtitle2" Class="text-uppercase fw-bold muted mb-2">Formula viewer</MudText>
+                    <div class="formula-block formula-block-small">
+                        <span class="formula-line">@_selected.FormulaHtml</span>
+                    </div>
+                    <MudText Typo="Typo.body2" Class="muted mt-2">Phase: @_selected.Phase</MudText>
+                    <div class="deps-section mt-2">
+                        <MudText Typo="Typo.caption" Class="text-uppercase fw-bold muted">Dependency set</MudText>
+                        <div class="mt-1">
+                            @foreach (var d in SplitDeps(_selected.Deps))
+                            {
+                                <span class="deps-tag deps-primitive">@d</span>
+                            }
+                        </div>
+                        @if (!string.IsNullOrEmpty(_selected.Chain))
+                        {
+                            <MudText Typo="Typo.caption" Class="text-uppercase fw-bold muted mt-2">Canonical chain reads</MudText>
+                            <div class="mt-1">
+                                @foreach (var c in SplitDeps(_selected.Chain))
+                                {
+                                    <span class="deps-tag deps-derived">@c</span>
+                                }
+                            </div>
+                            <MudText Typo="Typo.caption" Class="muted mt-1">(primitive-inlined with identical accuracy)</MudText>
+                        }
+                    </div>
+                </MudCardContent>
+            </MudCard>
+        </MudItem>
+
+        <MudItem xs="12" md="4">
+            <MudCard Elevation="1" Class="theory-card h-100">
+                <MudCardContent>
+                    <MudText Typo="Typo.subtitle2" Class="text-uppercase fw-bold muted mb-2">Dependency graph viewer</MudText>
+                    <div class="mini-graph">
+                        <div class="mini-node deps-primitive">D96</div>
+                        <div class="mini-arrow">&rarr;</div>
+                        @foreach (var d in SplitDeps(_selected.Deps))
+                        {
+                            <div class="mini-node deps-derived">@d</div>
+                            <div class="mini-arrow">&rarr;</div>
+                        }
+                        <div class="mini-node deps-output">@_selected.Symbol</div>
+                    </div>
+                    <MudText Typo="Typo.caption" Class="muted mt-2">
+                        Hidden: @_selected.Symbol — not used anywhere in the reconstruction. The result
+                        is a pure function of the remaining D96 quantities.
+                    </MudText>
+                </MudCardContent>
+            </MudCard>
+        </MudItem>
+    </MudGrid>
+</div>
+
+<!-- ── Reproducibility note ──────────────────────────────────────────────── -->
+<div class="page-section">
+    <h3 class="section-heading">Reproducibility</h3>
+    <div class="prose">
+        <p>
+            All numbers on this page come from deterministic C# computations in the TQM core library and
+            are backed by executable xUnit tests:
+        </p>
+        <ul>
+            <li>QG176: <code>TQMQG_Phase176_HiggsBlindReconstructionTests</code> (TQMQG1760–1762)</li>
+            <li>QG177: <code>TQMQG_Phase177_LeaveOneOutValidationTests</code> (TQMQG1770–1772)</li>
+            <li>Core classes: <code>HiggsBlindReconstruction</code>, <code>LeaveOneOutValidation</code></li>
+        </ul>
+    </div>
+</div>
+
+@code {
+    private LooObservableModel _selected = _loo[0];
+
+    private static readonly LooObservableModel[] _loo =
+    [
+        new("alpha_em", "αem", "1/(Σm + #doublets)", "1 / (Σm + #doublets)", 7.2993e-3, 7.2974e-3, 0.026,
+            "Σm, #doublets", "", "", "QG162", 6),
+        new("sin2_theta_eff", "sin²θ_eff", "#groups/(2Σm)", "#groups / (2Σm)", 0.23158, 0.23150, 0.034,
+            "#groups, Σm", "", "", "QG162", 5),
+        new("MW", "MW", "g₂·v/2 (inlined)", "√(4π·3/Σm) · (Σm+#d) · ln(span) / 2", 80.12, 80.38, 0.325,
+            "Σm, #doublets, span", "", "GeV", "QG168", 2),
+        new("MZ", "MZ", "MW/cosθ_W (inlined)", "√(4π·3/Σm) · (Σm+#d) · ln(span) / (2·cosθ_W)", 91.40, 91.19, 0.228,
+            "Σm, #doublets, #groups, span", "MW, sin²θW", "GeV", "QG168", 2),
+        new("MH", "MH", "σ_occ·(span/2)", "σ<sub>occ</sub> · (span / 2)", 125.25, 125.25, 0.003,
+            "octave occupancies, span", "", "GeV", "QG169", 2),
+        new("a_mu", "aμ", "(α/2π)(1+λ₂/Σm) (inlined)", "(1/(Σm+#d)) / 2π · (1 + λ₂/Σm)", 1.16644e-3, 1.16592e-3, 0.046,
+            "Σm, #doublets, λ₂", "αem", "", "QG171", 5),
+        new("dmsq21", "Δm²21", "(1/Σ√m)²/(span/2)", "(1/Σ√m)² / (span/2)", 7.607e-5, 7.53e-5, 1.019,
+            "Σ√m, span", "", "eV²", "QG172", 5),
+        new("dmsq31", "Δm²31", "sin²θ_W/Σm (inlined)", "#groups / (2Σm²)", 2.438e-3, 2.455e-3, 0.706,
+            "#groups, Σm", "sin²θW", "eV²", "QG172", 5),
+        new("Vus", "Vus", "#doublets/(2Σm)", "#doublets / (2Σm)", 0.2211, 0.2253, 1.885,
+            "#doublets, Σm", "", "", "QG165", 4),
+        new("Vcb", "Vcb", "(ω0/ω2)^δd", "(ω₀/ω₂)^δd", 0.04160, 0.04110, 1.222,
+            "octave centers, δd", "", "", "QG165", 5),
+        new("theta12", "θ12", "asin(√(#d/(Σm+#g)))", "asin(√(#doublets/(Σm+#groups)))", 33.35, 33.40, 0.163,
+            "#doublets, Σm, #groups", "", "°", "QG167", 2),
+        new("theta23", "θ23", "asin(Σ√m/(2·#d))", "asin(Σ√m / (2·#doublets))", 49.72, 49.10, 1.261,
+            "Σ√m, #doublets", "", "°", "QG167", 2),
+    ];
+
+    private static string[] SplitDeps(string deps)
+        => string.IsNullOrEmpty(deps) ? Array.Empty<string>() : deps.Split(",", StringSplitOptions.RemoveEmptyEntries);
+
+    private static string FormatNum(double value, int precision)
+        => value.ToString("F" + precision, System.Globalization.CultureInfo.InvariantCulture);
+}
