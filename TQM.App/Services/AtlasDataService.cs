@@ -222,12 +222,18 @@ public static class AtlasDataService
 
     public static IReadOnlyList<OpenProblemModel> OpenProblems { get; } =
     [
+        new("106GEV", "Experimental validation of the ~106 GeV resonance",
+            "QG132's primary falsifiable prediction (~106 GeV, window 99–114 GeV, with a defined decay signature) has not yet been observed. A null result at ~106 GeV would rule out the Z-anchor electroweak calibration; validation remains the sharpest test separating the framework from SM + ΛCDM."),
+        new("NEUTRINO", "Exact neutrino mass values — Majorana character still open",
+            "The neutrino mass splittings and normal-ordered masses are derived (QG172: m1 = 0, m2 = 8.72e-3, m3 = 4.94e-2 eV, Σmν = 0.058 eV, all within the cosmological bound), but the Majorana character of the neutrinos and an independent experimental confirmation of the absolute scale remain open."),
+        new("QUARKRUN", "Quark running-scale / MS̄ conversion of the D96 mass law",
+            "All six absolute quark masses are derived from the electron anchor times D96 spectral moments (QG173, all within 0.2%), but the running-scale and MS̄-scheme conversion of the derived law — connecting the D96 masses to the scale-dependent PDG values — is not yet closed."),
+        new("COLLIDER", "Collider test of sector-ladder physics",
+            "The sector-ladder rung states and their collider signatures (QG130) are predicted but not yet tested: no dedicated collider search for the energy-ladder rung states has been run, so the ladder structure lacks direct experimental validation."),
         new("G4", "Native metric → operator coupling",
             "TQM imports g_μν via Malament rather than generating it from Q-events; the metric-dependent operator Δ_g / □_g is absent. The metric origin is closed; the metric dynamics are not."),
         new("BDG", "Native BDG derivation",
             "The Einstein–Hilbert side flows through the imported causal-set BDG action; a native re-derivation from the Q-event primitives is missing."),
-        new("PRED", "Discriminating prediction",
-            "No unique, sharp, currently-testable prediction yet separates TQM from SM + ΛCDM (RAR 2π admitted accidental; w(z) a small, undetected deviation)."),
     ];
 
     public static IReadOnlyList<ReferenceModel> References { get; } =
