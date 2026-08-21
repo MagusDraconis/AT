@@ -3945,6 +3945,9 @@ Muon g-2 origin ((α/2π)(1+λ₂/Σm) → a_μ; (α/2π)³·span^(1/4) → anom
 QG172:
 Neutrino mass law ((1/Σ√m)²/(span/2) → Δm²21; sin²θ_W/Σm → Δm²31)
 
+QG173:
+Quark mass origin (me·Σ√m/√Σm² → mu; ×(Σ√m)²/occMom → md; occMom/Σm → s/d; (Σ√m)²/√Σm² → c/d; occMom²·Σm·#g/(Σ√m)⁴ → b/d; occMom·#d → t/u)
+
 ## Key Open Problems
 
 - "Why three generations?" → REMOVED (solved: QG138 derives familyCount = floor(log2(ωmax/ωmin)) + 1).
@@ -3954,7 +3957,7 @@ Neutrino mass law ((1/Σ√m)²/(span/2) → Δm²21; sin²θ_W/Σm → Δm²31)
 Open Questions:
 
 - exact neutrino mass values (splittings derived in QG172; absolute scale/ordering via m1=0 normal ordering; Majorana character still open)
-- unified quark-sector hierarchy law (single law reproducing up AND down hierarchies)
+- quark absolute masses (derived in QG173; running-scale/MS̄ conversion of the D96 mass law still open)
 - experimental validation of the 106 GeV resonance (QG132 primary falsifiable prediction)
 - collider test of sector-ladder physics (collider signatures of the energy-ladder rung states)
 
@@ -3969,8 +3972,8 @@ Open Questions:
 | Mode Access | QG150 | MODE-ACCESS ORIGIN |
 | Z2 Doublet Structure | QG153 | DOUBLET ORIGIN |
 | Neutrino Sector | QG154 | NEUTRINO ORIGIN (structural) — exact mass law OPEN |
-| Quark Hierarchy (unified law) | — | OPEN |
-| Neutrino Mass Law (exact) | — | OPEN |
+| Quark Hierarchy (unified law) | QG173 | MASS ORIGIN (all six absolute masses within 0.2%) |
+| Neutrino Mass Law (exact) | QG172 | MASS ORIGIN |
 | D96 Symmetry Selection | QG159 | INEVITABLE (Z2 automorphism + 3-family window + unique octave rung) |
 | Seed Period Origin | QG160 | INEVITABLE (period-3 unique: natural size 96 has complete Z2) |
 | Gauge Sector | QG161 | GAUGE ORIGIN (1+3+8 = degree 12 of C_96(1..6); Higgs = collective scalar) |
@@ -3985,6 +3988,7 @@ Open Questions:
 | Standard Model Audit | QG170 | COVERAGE AUDIT (48 quantities: 25 tested / 9 partial / 14 untested; 64% tested-only, 61.5% weighted) |
 | Muon g-2 | QG171 | G2 ORIGIN (a_μ = (α/2π)(1+λ₂/Σm) = 1.16644e-3, 0.045%; Δa_μ = (α/2π)³·span^(1/4) = 2.494e-9, 0.24%) |
 | Neutrino Masses | QG172 | MASS ORIGIN (Δm²21 = (1/Σ√m)²/(span/2) = 7.607e-5, 1.02%; Δm²31 = sin²θ_W/Σm = 2.44e-3, 0.71%; m2 = 8.72e-3, m3 = 4.94e-2 eV, Σmν = 0.058 eV) |
+| Quark Masses | QG173 | MASS ORIGIN (mu = me·Σ√m/√Σm² = 2.164, 0.18%; md = mu·(Σ√m)²/occMom = 4.676, 0.14%; ms = 93.5, mc = 1269, mb = 4186, mt = 172704 MeV; all within 0.2%) |
 | 106 GeV Resonance (validation) | QG132 | FALSIFIABLE PREDICTION (not yet observed) |
 | Collider Test of Sector-Ladder | QG130 | PREDICTED (no data yet) |
 | Sector Exponent Law p(Q,T3) | QG147 | HISTORICAL (overfit) — superseded by QG149 |
@@ -4016,6 +4020,7 @@ D96 Automorphisms (D96 = ⟨r,s⟩)
 → SM Audit (QG170): 25/48 tested (64%), 9 partial, 14 untested; gaps: g-2, neutrino masses, θ_QCD
 → Muon g-2 (QG171): a_μ = (α/2π)(1+λ₂/Σm) = 1.16644e-3 (0.045%); Δa_μ = (α/2π)³·span^(1/4) = 2.494e-9 (0.24%)
 → Neutrino masses (QG172): Δm²21 = (1/Σ√m)²/(span/2) = 7.607e-5 (1.02%); Δm²31 = sin²θ_W/Σm = 2.44e-3 (0.71%); m2 = 8.72e-3, m3 = 4.94e-2 eV
+→ Quark masses (QG173): mu = me·Σ√m/√Σm² = 2.164 (0.18%); md = mu·(Σ√m)²/occMom = 4.676 (0.14%); ms = md·occMom/Σm = 93.5 (0.15%); mc = md·(Σ√m)²/√Σm² = 1269 (0.08%); mb = md·occMom²·Σm·#g/(Σ√m)⁴ = 4186 (0.13%); mt = mu·occMom·#d = 172704 (0.002%)
 → Higgs = collective occupation-density scalar
 
 Fermions:
@@ -4127,9 +4132,11 @@ QG171: muon g-2 origin (G2 ORIGIN).
 
 QG172: neutrino mass law (MASS ORIGIN).
 
+QG173: quark mass origin (MASS ORIGIN).
+
 Milestone counters:
 
-TQM-QG 174 phases
+TQM-QG 175 phases
 432+ TQM-QG tests verified
 
 ### QG154: Neutrino Sector Origin
@@ -4154,5 +4161,5 @@ NEUTRINO ORIGIN
 
 Milestone counters:
 
-TQM-QG 174 phases
+TQM-QG 175 phases
 432+ TQM-QG tests verified
