@@ -3629,6 +3629,23 @@ functions of automorphism structure, occupancy statistics, and spectral moments:
 = 137 (0.03%), α_weak = 3/Σm, α_strong = 8/Σ√m, α_weak/α_em = 4.326 (= 1/sin²θ_W), sin²θ_W = 0.2316 —
 no fitted constants. Report: Docs/Research/TQMQG_GaugeCouplingOrigin.md.
 
+**TQM-QG Phase 163 (Running coupling origin) — COMPLETED (3/3 tests pass; TQM-QG verified; COMPUTATIONAL):**
+Question: why do the gauge couplings run with energy, and does a unification scale emerge — using only
+D96 spectral geometry, no fitted beta functions? Added RunningCouplingOrigin (octave-ladder spectral
+scale, occupation flow, scale-dependent access α_i(E) = g_i/D_i(N(E)), running factors, monotone
+decrease, hierarchy preservation, origin score). TQMQG1630 the octave-band structure [4,4,87] defines
+the natural spectral (energy) scale: activation ladder 4 → 8 → 95 modes; the denominators (Σm, #doublets,
+Σ√m) GROW with the occupation flow. TQMQG1631 α_i(E) = g_i/D_i(N(E)) runs monotonically: 1/α_em
+6.0 → 12.0 → 137.0, α_weak 0.75 → 0.375 → 0.0316, α_strong 2.83 → 1.41 → 0.1248 — all three decrease by
+comparable factors (α_em⁻¹ 22.8x, α_weak 23.8x, α_strong 22.7x, ~23x) driven by the shared occupation
+flow (D96 → spectral scale → occupancy evolution → coupling evolution; no fitted beta function).
+TQMQG1632 the structural bound 1/α_em = Σm + #doublets > Σm/3 = 1/α_weak holds at EVERY scale, so the
+hierarchy α_em < α_weak < α_strong is preserved and the couplings do NOT unify within the observable
+sector — consistent with the observed low-energy hierarchy and a GUT scale BEYOND the observable octave
+ladder; TQMQG1632 CLASSIFICATION: RUNNING ORIGIN — the running of the gauge couplings EMERGES from D96
+spectral geometry (spectral scale + occupation flow + scale-dependent access + mode activation), with no
+fitted beta functions. Report: Docs/Research/TQMQG_RunningCouplingOrigin.md.
+
 **TQM-QG Phase 9 (Support Rank Selection) — COMPLETED (3/3 tests pass; 30/30 TQM-QG verified):**
 Question: which support rank d is favored inside higher-dimensional D? Added ConformalEfficiency (=1/(1+d(d-3)/2),
 fraction of observable d.o.f. NOT frozen by conformal flatness) and CurvaturePerDof to EffectiveDimension.
@@ -3746,6 +3763,9 @@ Gauge sector origin (1+3+8 from D96)
 QG162:
 Gauge coupling origin (1/α_em = 137 from D96)
 
+QG163:
+Running coupling origin (octave ladder, occupation flow)
+
 ## Key Open Problems
 
 - "Why three generations?" → REMOVED (solved: QG138 derives familyCount = floor(log2(ωmax/ωmin)) + 1).
@@ -3776,6 +3796,7 @@ Open Questions:
 | Seed Period Origin | QG160 | INEVITABLE (period-3 unique: natural size 96 has complete Z2) |
 | Gauge Sector | QG161 | GAUGE ORIGIN (1+3+8 = degree 12 of C_96(1..6); Higgs = collective scalar) |
 | Gauge Couplings | QG162 | COUPLING ORIGIN (1/α_em = Σm+#doublets = 137; α_weak = 3/Σm; α_strong = 8/Σ√m; sin²θ_W = 0.2316) |
+| Running Couplings | QG163 | RUNNING ORIGIN (octave ladder + occupation flow; α_i(E) = g_i/D_i(N(E)); no in-sector unification) |
 | 106 GeV Resonance (validation) | QG132 | FALSIFIABLE PREDICTION (not yet observed) |
 | Collider Test of Sector-Ladder | QG130 | PREDICTED (no data yet) |
 | Sector Exponent Law p(Q,T3) | QG147 | HISTORICAL (overfit) — superseded by QG149 |
@@ -3788,7 +3809,7 @@ Energy
 → Sector Ladder
 → Rung States
 
-Gauge (QG161-162):
+Gauge (QG161-163):
 
 D96 Automorphisms (D96 = ⟨r,s⟩)
 → U(1) Photon (Z_96 rotation)
@@ -3797,6 +3818,7 @@ D96 Automorphisms (D96 = ⟨r,s⟩)
 → 1 + 3 + 8 = 12 = degree(C_96(1..6))
 → Couplings (QG162): 1/α_em = 137, α_weak = 3/Σm, α_strong = 8/Σ√m
 → sin²θ_W = #groups/(2Σm) = 0.2316
+→ Running (QG163): α_i(E) = g_i/D_i(N(E)) via octave ladder + occupation flow
 → Higgs = collective occupation-density scalar
 
 Fermions:
@@ -3854,7 +3876,7 @@ Milestone counters:
 TQM-QG 144 phases
 432 tests
 
-### QG138-162: Fermion & Gauge Structure from Spectral Geometry
+### QG138-163: Fermion & Gauge Structure from Spectral Geometry
 
 Status: **Major milestone**
 
@@ -3888,9 +3910,11 @@ QG161: gauge sector origin (GAUGE ORIGIN).
 
 QG162: gauge coupling origin (COUPLING ORIGIN, 1/α_em = 137).
 
+QG163: running coupling origin (RUNNING ORIGIN).
+
 Milestone counters:
 
-TQM-QG 164 phases
+TQM-QG 165 phases
 432+ TQM-QG tests verified
 
 ### QG154: Neutrino Sector Origin
@@ -3915,5 +3939,5 @@ NEUTRINO ORIGIN
 
 Milestone counters:
 
-TQM-QG 164 phases
+TQM-QG 165 phases
 432+ TQM-QG tests verified

@@ -1704,6 +1704,26 @@ Exponents). Charge and isospin determine the hierarchy exponent (intermediate, f
   constants (closes the QG161 open problem "derive gauge couplings"; chain: D96 → gauge generators →
   couplings → 137)
 
+### TQM-QG163: Running Coupling Origin (TQM-QG Phase 163)
+**Status:** Complete (RUNNING ORIGIN). The running of the gauge couplings emerges from D96 spectral geometry.
+- spectral scale: the octave-band structure [4,4,87] defines the natural energy scale — activation
+  ladder 4 → 8 → 95 modes (3 octave rungs)
+- occupation flow: the denominators (Σm, #doublets, Σ√m) GROW with the occupation flow
+  (N=4: 4/2/2.83, N=8: 8/4/5.66, N=95: 95/42/64.08)
+- scale-dependent access: α_i(E) = g_i/D_i(N(E)) runs monotonically — 1/α_em 6.0 → 12.0 → 137.0,
+  α_weak 0.75 → 0.375 → 0.0316, α_strong 2.83 → 1.41 → 0.1248; all decrease by comparable factors
+  (~23x: α_em⁻¹ 22.8x, α_weak 23.8x, α_strong 22.7x) driven by the shared occupation flow
+- mechanism: D96 → spectral scale (octave ladder) → occupancy evolution → coupling evolution — NO fitted
+  beta function
+- unification: the structural bound 1/α_em = Σm + #doublets > Σm/3 = 1/α_weak holds at EVERY scale, so
+  the hierarchy α_em < α_weak < α_strong is preserved and the couplings do NOT unify within the
+  observable sector — consistent with the observed low-energy hierarchy and a GUT scale BEYOND the
+  observable octave ladder
+- → RUNNING ORIGIN: the running of the gauge couplings EMERGES from D96 spectral geometry (spectral
+  scale + occupation flow + scale-dependent access + mode activation), with no fitted beta functions
+  (closes the QG162 open question "why do couplings run"; chain: D96 → spectral scale → occupancy
+  evolution → coupling evolution)
+
 ---
 
 ## Overall Statistics
@@ -1715,8 +1735,8 @@ Exponents). Charge and isospin determine the hierarchy exponent (intermediate, f
 | QG | 31 | Complete |
 | G4 | 57 | Complete |
 | TQM-F | 4 | Complete |
-| TQM-QG | 164 | Complete |
-| **Total** | **271** | |
+| TQM-QG | 165 | Complete |
+| **Total** | **272** | |
 
 ## Key Unsolved Problems
 
