@@ -3,16 +3,16 @@
     "file": "Docs/TQMQG_PhysicsCoverage.md|json",
     "purpose": "single source of truth for all TQM-QG physics validation",
     "last_updated": "2026-08-22",
-    "phases_count": 194,
+    "phases_count": 195,
     "note": "Historical entries are never removed. Additive updates only."
   },
   "coverage": {
-    "total_phases": 194,
-    "tested": 181,
+    "total_phases": 195,
+    "tested": 182,
     "partial": 12,
     "untested": 0,
     "audit": 1,
-    "weighted_coverage": 0.9652,
+    "weighted_coverage": 0.9654,
     "domains": {
       "cosmology": {
         "tested": 1,
@@ -50,11 +50,11 @@
         "total": 42
       },
       "predictions": {
-        "tested": 9,
+        "tested": 10,
         "partial": 0,
         "untested": 0,
         "audit": 0,
-        "total": 9
+        "total": 10
       },
       "psi": {
         "tested": 7,
@@ -256,7 +256,7 @@
     {
       "prediction": "Sector-ladder collider signatures (energy-ladder rung states)",
       "phase": "QG130",
-      "status": "PREDICTED — no data"
+      "status": "PREDICTED — no data; QG192 PRE-REGISTERED (9 rungs 106.4–263.4 GeV, CONFIRMED within 5% of frozen rung)"
     },
     {
       "prediction": "0νββ rate: m_ββ = 2.02e-3 eV (Majorana neutrino)",
@@ -2136,6 +2136,14 @@
       "domain": "predictions",
       "validation": "tested",
       "key_result": "m_ββ = |Σ U_ei²·m_i| = 2.02 meV frozen from QG167 PMNS (s12=0.5497, s13=0.1451, δ_ν=66.4°) + QG172 masses (m1=0, m2=8.72, m3=49.4 meV, NORMAL ordering) + QG179 Majorana (real matrix ⇒ α2=α3=0); computed 2.0222 meV, dominated by m2·s12²·c13² (2.52 meV); forbidden: experimental limits, detector sensitivities, future measurements (guard); CONFIRMED = ±10%, FALSIFIED = exclusion below 2.02 meV"
+    },
+    {
+      "phase": 193,
+      "file": "TQMQG_PreRegisteredLadderSpectrum.md",
+      "classification": "PRE-REGISTERED",
+      "domain": "predictions",
+      "validation": "tested",
+      "key_result": "full 12-rung ladder frozen from QG121-132 (forbidden: collider bumps, resonance catalogs, fitted energies; guard): 9 predicted resonances 106.39 (PRIMARY) → 136.78 → 151.98 → 182.38 → 197.58 → 212.78 → 227.97 → 243.17 → 263.43 GeV (Z-anchor scale MZ/6=15.198; rungs 6/9/11 aligned with t/H/Z); multiplicities unit 15.20 GeV ×10 (0.909) + top 20.26 GeV ×1; width scale 15.20 GeV; production ascending by mass below LHC13/FCC-hh; CONFIRMED = resonance within 5% of frozen rung, FALSIFIED = sensitive search excludes rung"
     }
   ]
 }
