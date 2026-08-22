@@ -3,9 +3,9 @@
 **Single source of truth for all TQM-QG physics validation.**
 
 - Last updated: 2026-08-22
-- Total phases: 203
-- Tested: 188 | Partial: 12 | Untested: 0 | Audit: 3
-- Weighted coverage: 95.9%
+- Total phases: 204
+- Tested: 188 | Partial: 12 | Untested: 0 | Audit: 4
+- Weighted coverage: 95.6%
 
 > Maintenance rule: whenever a QG phase completes, scan its classification, update
 > tested/partial/untested, contradictions, open questions, predictions, and statistics.
@@ -17,12 +17,12 @@
 
 | Metric | Value |
 |---|---|
-| Phases total | 203 |
+| Phases total | 204 |
 | Tested | 188 |
 | Partially tested | 12 |
 | Untested | 0 |
-| Audit (QG170) | 3 |
-| Weighted coverage | 95.9% |
+| Audit (QG170) | 4 |
+| Weighted coverage | 95.6% |
 | SM tested | 49 |
 | Gravity tested | 29 |
 
@@ -49,7 +49,7 @@
 | Foundations | 17 | 0 | 0 | 0 | 17 |
 | Gravity / GR | 29 | 2 | 0 | 0 | 31 |
 | Network & Spectrum | 42 | 0 | 0 | 0 | 42 |
-| Predictions | 11 | 0 | 0 | 2 | 13 |
+| Predictions | 11 | 0 | 0 | 3 | 14 |
 | ψ / Tensor Sector | 7 | 0 | 0 | 0 | 7 |
 | Quantum Mechanics | 11 | 0 | 0 | 0 | 11 |
 | Standard Model | 49 | 9 | 0 | 1 | 59 |
@@ -521,3 +521,4 @@ Historical entries are preserved; updates are additive.
 
 - **QG200** — P1 EVIDENCE UPDATE (audit) — P1 status re-audited (evidence-only, cited): PENDING — the 99–114 GeV window is neither confirmed nor excluded; classic low-mass scalar excesses persist at ~95 GeV (CMS 2.9σ, ATLAS 1.7σ, combined γγ 3.1σ, LEP bb̄ 2.3σ) = the 91.19 GeV rung not P1 (−10.4%); NEW ~152 GeV diphoton excess (local 3.6σ, global up to 5.4σ, arXiv:2503.16245) aligns with the NEXT ladder rung 151.98 GeV (0.01% dev, P3 not P1); null searches in the window (CMS 15–73 fb, ATLAS 19–102 fb) do NOT exclude P1 (suppressed couplings allowed); LEP2 114.4 GeV bound is SM-coupling only; HL-LHC (3000 fb⁻¹) projects 1–3 fb → decisive; registry outcome unchanged (PENDING) `TQMQG_P1EvidenceUpdate.md`
 - **QG201** — SECTOR LADDER EVIDENCE AUDIT (audit) — frozen 12-rung ladder (QG192) vs ATLAS/CMS/LEP record (evidence-only, cited): CONFIRMED 3 (SM anchors 91.19 Z, 121.59 H, 167.18 t — within 5% tolerance), SUPPORTED 1 (151.98 rung = the combined ~152 GeV diphoton excess, local 3.6σ / global up to 5.4σ, arXiv:2503.16245, 0.01% dev), PENDING 8 (106.39 PRIMARY, 136.78, 182.38, 197.58, 212.78, 227.97, 243.17, 263.43 — no excess, not excluded); DISFAVORED 0, FALSIFIED 0; LEP2 114.4 GeV bound is SM-coupling only (does not constrain ladder); no predicted rung falsified `TQMQG_SectorLadderEvidenceAudit.md`
+- **QG202** — LADDER STATISTICS AUDIT (audit) — 152 GeV ↔ 151.98 rung alignment significance (frozen QG192 only, deterministic): τ = |152/151.98−1| = 0.0132% (0.020 GeV, ~760× closer than the 15.2 GeV spacing); null = uniform over [95,270] GeV (span 175); p(any of 9 rungs) = Σ(2τ·E)/175 = 0.259% (1 in 386) → ALREADY look-elsewhere corrected → z = 2.80σ; p(151.98 alone) = 0.023% (1 in 4375) → z = 3.50σ; classification MODERATE SUPPORT (0.1–1% band, 2.80σ) — meaningful but not 5σ; reinforces the ~152 GeV excess's own global significance (up to 5.4σ) `TQMQG_LadderStatisticsAudit.md`

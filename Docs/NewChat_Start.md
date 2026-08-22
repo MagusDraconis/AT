@@ -181,7 +181,7 @@ Open Questions:
 
 - the authoritative catalog of ALL unresolved physics questions is the QG198 Top-20 audit (Docs/Research/TQMQG_FinalOpenProblemsAudit.md), ranked by impact·3+feasibility·2+falsifiability·2; top item = 106 GeV resonance (P1, score 35), runner-up cluster = neutrino sector (SM1 exact masses, SM3 mass ordering, P2 0νββ, scores 31–33)
 - P1 (106 GeV) status after QG199: PENDING — window 99–114 GeV neither confirmed nor excluded; 95 GeV cluster = 91.19 rung; new 152 GeV excess = 151.98 rung (P3, not P1); HL-LHC decisive
-- sector ladder (P3) after QG200: 12 rungs audited — CONFIRMED 3 (SM anchors Z/H/t), SUPPORTED 1 (151.98 = ~152 GeV excess), PENDING 8, none falsified
+- sector ladder (P3) after QG200/QG201: 12 rungs audited — CONFIRMED 3 (SM anchors Z/H/t), SUPPORTED 1 (151.98 = ~152 GeV excess, MODERATE SUPPORT alignment 2.80σ, 1-in-386), PENDING 8, none falsified
 - key open items: exact neutrino mass values (QG172), quark running-scale/MS̄ conversion (QG173), 106 GeV resonance validation (QG132/QG188A/QG190/QG199), sector-ladder collider test (QG130/QG192/QG200), Hawking T with ψ≠0 (QG24), flat rotation-curve α=0 (G4-ME4), metric ansatz uniqueness (G4-A0), Bekenstein 1/4 (QG196, proven impossible without imported π)
 
 ## Status Table
@@ -463,10 +463,12 @@ QG199: P1 evidence update (P1 EVIDENCE UPDATE — P1 remains PENDING: the 99–1
 
 QG200: sector ladder evidence audit (SECTOR LADDER EVIDENCE AUDIT — frozen 12-rung ladder QG192 vs ATLAS/CMS/LEP record: CONFIRMED 3 [SM anchors 91.19 Z, 121.59 H, 167.18 t, all within 5% tolerance], SUPPORTED 1 [151.98 rung = combined ~152 GeV diphoton excess, local 3.6σ / global up to 5.4σ, arXiv:2503.16245, 0.01% dev], PENDING 8 [106.39 PRIMARY, 136.78, 182.38, 197.58, 212.78, 227.97, 243.17, 263.43], DISFAVORED 0, FALSIFIED 0; LEP2 bound is SM-coupling only; no predicted rung falsified — the ladder scale is corroborated by its Z/H/t anchors).
 
+QG201: ladder statistics audit (LADDER STATISTICS AUDIT — is the 152 GeV ↔ 151.98 rung alignment significant? MODERATE SUPPORT: τ = |152/151.98−1| = 0.0132% (0.020 GeV, ~760× closer than the 15.2 GeV spacing); null = uniform over [95,270] GeV → p(any of 9 rungs) = Σ(2τ·E)/175 = 0.259% [1 in 386, ALREADY look-elsewhere corrected] → z = 2.80σ; p(151.98 alone) = 0.023% [1 in 4375] → z = 3.50σ; meaningful but not 5σ; reinforces the ~152 GeV excess's own global significance [up to 5.4σ]; no ladder-value changes).
+
 Milestone counters:
 
-TQM-QG 203 phases
-495+ TQM-QG tests verified
+TQM-QG 204 phases
+498+ TQM-QG tests verified
 
 ### QG154: Neutrino Sector Origin
 
@@ -490,5 +492,5 @@ NEUTRINO ORIGIN
 
 Milestone counters:
 
-TQM-QG 203 phases
-495+ TQM-QG tests verified
+TQM-QG 204 phases
+498+ TQM-QG tests verified
