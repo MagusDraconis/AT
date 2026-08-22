@@ -183,7 +183,7 @@ Open Questions:
 - P1 (106 GeV) status after QG199: PENDING — window 99–114 GeV neither confirmed nor excluded; 95 GeV cluster = 91.19 rung; new 152 GeV excess = 151.98 rung (P3, not P1); HL-LHC decisive
 - sector ladder (P3) after QG200/QG201: 12 rungs audited — CONFIRMED 3 (SM anchors Z/H/t), SUPPORTED 1 (151.98 = ~152 GeV excess, MODERATE SUPPORT alignment 2.80σ, 1-in-386), PENDING 8, none falsified
 - the anti-fit reaudit (QG214) confirms the methodology is clean: QG190-213 added 3 PRE-REGISTERED + 1 REGISTRY LOCK + 20 PREDICTION, zero retro-fit/overfit; RETRO-FIT=2 (QG140/146), OVERFIT=1 (QG147) still correct; risk confined to the fitting era QG140-148
-- the QG closure audits culminated: QG215 PARTIAL QG → QG219 EFFECTIVE QG (after QG216/218: amplitude magnitude + complex structure) → QG221 NEAR-COMPLETE QG (after QG220: phase θ = 2πk/N derived) → QG223 COMPLETE QG (after QG222: native metric dynamics; ψ adjudicated as an ontological boundary + tensor-sector question, NOT a blocker); QG224 confirms MONOGRAPH READY (7/7 readiness checks, paper outline generated); the theory is complete within its stated primitives (Q-events → ρ and ψ)
+- the QG closure audits culminated: QG215 PARTIAL QG → QG219 EFFECTIVE QG (after QG216/218: amplitude magnitude + complex structure) → QG221 NEAR-COMPLETE QG (after QG220: phase θ = 2πk/N derived) → QG223 COMPLETE QG (after QG222: native metric dynamics; ψ adjudicated as an ontological boundary + tensor-sector question, NOT a blocker); QG224 confirms MONOGRAPH READY (7/7 readiness checks, paper outline generated); QG225 verifies the phase derivation DAG is ACYCLIC (226 nodes, 1349 forward edges, no cycles, 10 correction annotations only); the theory is complete within its stated primitives (Q-events → ρ and ψ)
 
 ## Status Table
 
@@ -510,10 +510,12 @@ QG223: final quantum gravity audit (COMPLETE QG — audit only, reviews QG215→
 
 QG224: QG paper readiness audit (MONOGRAPH READY — audit only, reviews QG215/219/221/223, seven readiness checks, score 7/7: 1. INTERNAL CONSISTENCY PASS [855 tests 0 failures, Bianchi-consistent dynamics QG222, Born rule exact, contradictions C1-C7 resolved]; 2. NO DEPENDENCY CYCLES PASS [QG53 DAG: q-events→ρ→geometry→matter→gravity→saturation (+ψ), rooted at the primitive and the external observation input]; 3. IMPORTED ASSUMPTIONS STATED PASS [only the two primitives Q-events+ψ; BDG import REMOVED QG222; cosmology out of scope]; 4. PRIMITIVE INVENTORY PASS [exactly two: Q-events→ρ, ψ as ontological boundary; everything else derived]; 5. VALIDATION INVENTORY PASS [225 phases, 855 tests, 200 tested/12 partial/13 audit, weighted 93.0%, 40 observables 35 tested/3 partial/2 untested (P1/P3 awaiting data), blind reconstructions QG176/177, anti-fit clean QG214]; 6. PREDICTION INVENTORY PASS [3 pre-registered registry-locked: P1 106 GeV PENDING, P2 0νββ PENDING, P3 sector ladder SUPPORTED 2.80σ]; 7. FALSIFICATION INVENTORY PASS [explicit falsification condition for every prediction, registry-locked QG193]; a QG research paper is publishable now and the depth/breadth justifies a MONOGRAPH; MANDATORY PAPER OUTLINE generated [12 sections: primitives → spacetime → gravity → matter → QM → SM → ψ → QG status → predictions → validation → discussion]).
 
+QG225: dependency graph audit (ACYCLIC — audit only, verifies the full phase derivation DAG over QG0-QG224: 226 nodes, 1349 forward dependency edges extracted from the coverage single source of truth [key_result + report QG references, test-ID tokens excluded]; topological sort [Kahn] orders all 226/226 nodes — the phase number is itself a topological order because every dependency edge points forward [src<dst]; NO cycles, NO hidden loops, NO circular derivations; 10 future-to-past references are ALL correction/reclassification ANNOTATIONS [phases 2/3/8/9 'CORRECTION (QG10)' Weyl/graviton index; QG147/148→QG149 superseded law; QG151-153→QG155 reclassification] excluded from the DAG — not dependencies; longest dependency chain = 101 edges [102 nodes] ending at QG224 [paper-readiness audit], the spine through the QM/QG closure series QG216→218→220→219→221→222→223→224; 24 root primitives [in-degree 0]; critical most-depended-upon nodes: QG216 [85], QG215 [74], QG190 [51], QG223 [50]; critical most-feeding hubs: QG159 D96 selection [23], QG160 period-3 [22], QG140/153/155/162 [21 each] — the D96 structural origin is the most reused derivation hub; the full derivation graph is a valid DAG).
+
 Milestone counters:
 
-TQM-QG 226 phases
-564+ TQM-QG tests verified
+TQM-QG 227 phases
+567+ TQM-QG tests verified
 
 ### QG154: Neutrino Sector Origin
 
@@ -537,5 +539,5 @@ NEUTRINO ORIGIN
 
 Milestone counters:
 
-TQM-QG 226 phases
-564+ TQM-QG tests verified
+TQM-QG 227 phases
+567+ TQM-QG tests verified

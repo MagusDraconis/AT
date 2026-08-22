@@ -3,9 +3,9 @@
 **Single source of truth for all TQM-QG physics validation.**
 
 - Last updated: 2026-08-22
-- Total phases: 226
-- Tested: 200 | Partial: 12 | Untested: 0 | Audit: 14
-- Weighted coverage: 92.7%
+- Total phases: 227
+- Tested: 200 | Partial: 12 | Untested: 0 | Audit: 15
+- Weighted coverage: 92.4%
 
 > Maintenance rule: whenever a QG phase completes, scan its classification, update
 > tested/partial/untested, contradictions, open questions, predictions, and statistics.
@@ -17,12 +17,12 @@
 
 | Metric | Value |
 |---|---|
-| Phases total | 226 |
+| Phases total | 227 |
 | Tested | 200 |
 | Partially tested | 12 |
 | Untested | 0 |
-| Audit (QG170) | 14 |
-| Weighted coverage | 92.7% |
+| Audit (QG170) | 15 |
+| Weighted coverage | 92.4% |
 | SM tested | 53 |
 | Gravity tested | 33 |
 
@@ -46,7 +46,7 @@
 |---|---|---|---|---|---|
 | Cosmology | 1 | 0 | 0 | 0 | 1 |
 | High-Energy Sector | 6 | 1 | 0 | 0 | 7 |
-| Foundations | 18 | 0 | 0 | 9 | 27 |
+| Foundations | 18 | 0 | 0 | 10 | 28 |
 | Gravity / GR | 33 | 2 | 0 | 0 | 35 |
 | Network & Spectrum | 42 | 0 | 0 | 0 | 42 |
 | Predictions | 11 | 0 | 0 | 4 | 15 |
@@ -589,3 +589,4 @@ Historical entries are preserved; updates are additive.
 
 - **QG223** — COMPLETE QG (audit) — final quantum gravity audit (audit only, reviews QG215→QG219→QG221→QG222, adjudicates the ψ origin): QG status UPGRADED to COMPLETE QG — score 6/6, all six criteria fully hold; QM fully derived [magnitude QG216 + phase QG220 + structure QG218 + measurement QG74]; gravity derived [structure QG197/207 + observables QG181-213 + native dynamics QG222]; common primitive [both from ρ + the same actualization circulation]; SPACETIME EMERGENT — upgraded from PARTIAL [QG221] to YES because QG222 derived the metric dynamics natively [g_{k+1}=μ^(2/d)g_k from the branching flow, BDG import replaced]; matter emergent [QG195/196/203-210]; NO remaining blockers; THE ψ ORIGIN STATUS ADJUDICATION: NOT a QG blocker [capacity forced QG56, excitation derived QG57, all ψ observables derived QG103/186/212] — IS an ontological boundary [ψ is the second of exactly two primitives QG51/40; existence observationally demanded via GW spin-2 QG47, not derivable from the scalar sector QG19/23/52] — IS a separate tensor-sector question [distinct spin 0 vs 2, role source vs propagation QG50, equation Fierz-Pauli preferred QG44]; progression PARTIAL QG [QG215 2/6] → EFFECTIVE QG [QG219 4/6] → NEAR-COMPLETE QG [QG221 5/6] → COMPLETE QG [QG223 6/6]; the theory is complete within its stated primitives (Q-events→ρ and ψ) `TQMQG_FinalQuantumGravityAudit.md`
 - **QG224** — MONOGRAPH READY (audit) — QG paper readiness audit (audit only, reviews QG215/219/221/223, seven readiness checks): MONOGRAPH READY — readiness score 7/7; 1. INTERNAL CONSISTENCY PASS [855 tests 0 failures, Bianchi-consistent dynamics QG222, Born rule exact, contradictions C1-C7 resolved]; 2. NO DEPENDENCY CYCLES PASS [QG53 DAG: q-events→ρ→geometry→matter→gravity→saturation (+ψ), rooted at the primitive and the external observation input]; 3. IMPORTED ASSUMPTIONS STATED PASS [only the two primitives Q-events+ψ; BDG import REMOVED QG222; cosmology out of scope]; 4. PRIMITIVE INVENTORY PASS [exactly two: Q-events→ρ, ψ as ontological boundary; everything else derived]; 5. VALIDATION INVENTORY PASS [225 phases, 855 tests, 200 tested/12 partial/13 audit, weighted 93.0%, 40 observables 35 tested/3 partial/2 untested (P1/P3 awaiting data), blind reconstructions QG176/177, anti-fit clean QG214]; 6. PREDICTION INVENTORY PASS [3 pre-registered registry-locked: P1 106 GeV PENDING, P2 0νββ PENDING, P3 sector ladder SUPPORTED 2.80σ]; 7. FALSIFICATION INVENTORY PASS [explicit falsification condition for every prediction, registry-locked QG193]; a QG research paper is publishable now and the depth/breadth justifies a MONOGRAPH; MANDATORY PAPER OUTLINE generated [12 sections: primitives → spacetime → gravity → matter → QM → SM → ψ → QG status → predictions → validation → discussion] `TQMQG_QgPaperReadinessAudit.md`
+- **QG225** — ACYCLIC (audit) — dependency graph audit (audit only, verifies the full phase derivation DAG over QG0-QG224): ACYCLIC — 226 nodes, 1349 forward dependency edges extracted from the coverage single source of truth (key_result + report QG references, test-ID tokens excluded); topological sort (Kahn) orders all 226/226 nodes — the phase number is itself a topological order because every dependency edge points forward (src<dst); NO cycles, NO hidden loops, NO circular derivations; 10 future-to-past references are ALL correction/reclassification ANNOTATIONS [phases 2/3/8/9 'CORRECTION (QG10)' Weyl/graviton index; QG147/148→QG149 superseded law; QG151-153→QG155 reclassification] excluded from the DAG — not dependencies; longest dependency chain = 101 edges (102 nodes) ending at QG224 (paper-readiness audit), the spine through the QM/QG closure series QG216→218→220→219→221→222→223→224; 24 root primitives (in-degree 0); critical most-depended-upon nodes: QG216 (85), QG215 (74), QG190 (51), QG223 (50); critical most-feeding hubs: QG159 D96 selection (23), QG160 period-3 (22), QG140/153/155/162 (21 each) — the D96 structural origin is the most reused derivation hub; the full derivation graph is a valid DAG `TQMQG_DependencyGraphAudit.md`
