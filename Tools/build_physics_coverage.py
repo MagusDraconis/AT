@@ -407,6 +407,8 @@ add(189,"TQMQG_106GeVResonanceAudit.md","INCONCLUSIVE","predictions","tested",
     "published record: ~95 GeV scalar excess cluster (CMS γγ 2.9σ, ATLAS γγ 1.7σ, combined 3.1σ; CMS ττ 2.6σ; LEP bb̄ 2.3σ) aligns with 91.19 GeV rung (dev 4.5%) NOT predicted 106.39 GeV (−10.4%); CMS 70–110 & ATLAS 66–110 GeV full-Run-2 diphoton null searches cover 106 GeV (limits 15–102 fb, no excess); LEP2 SM-like < 114.4 GeV (SM-strength hZZ only); prediction NOT excluded; Run 3 no confirmed increase; HL-LHC decisive")
 add(190,"TQMQG_AntiFitAudit.md","PREDICTION AUDIT","predictions","tested",
     "methodology audit of QG140-188: 49 phases — 36 PREDICTION, 2 BLIND (QG176 Higgs, QG177 leave-one-out), 8 DEPENDENT, 2 RETRO-FIT (QG140/146 fitted exponents, superseded by QG141/149), 1 OVERFIT (QG147, 3 params/3 sectors, CONFIRMED by QG148 out-of-sample); 3 high-risk all in fitting era QG140-148; structural era QG149+ no fitted parameters")
+add(191,"TQMQG_PreRegistered106GeV.md","PRE-REGISTERED","predictions","tested",
+    "prediction frozen BEFORE future data (D96/QG128-132 only; forbidden: ATLAS/CMS excess, fitted masses, new constants): central mass 106.39 GeV (lowest missing Z-anchor rung, scale MZ/6=15.198), window 98.79–113.99 GeV (stated 99–114), production 9 rungs 106.4→263.4 GeV below LHC13/FCC-hh, decay unit 15.20 GeV ×10 + top 20.26 GeV ×1 → 3-family sector; CONFIRMED = signal in window with 15–20 GeV quanta, DISFAVORED = null")
 
 # ── Observable-level SM audit (supersedes QG170's 25/9/14 with QG171-182 results) ──
 OBSERVABLES = [
@@ -449,7 +451,7 @@ OBSERVABLES = [
     dict(name="exact neutrino masses m1,m2,m3", status="untested", phase="—", detail="splittings derived (QG172); absolute values open"),
     dict(name="quark running-scale/MS̄ conversion", status="untested", phase="—", detail="D96 mass law at MS̄ scale open"),
     dict(name="mass ordering (ν)", status="partial", phase="QG179", detail="m1=0 normal ordering derived; experiment pending"),
-    dict(name="106 GeV resonance", status="untested", phase="QG132/QG188A", detail="falsifiable prediction, not yet observed; INCONCLUSIVE audit (95 GeV excess cluster at 91.19 rung; window not excluded)"),
+    dict(name="106 GeV resonance", status="untested", phase="QG132/QG188A/QG190", detail="falsifiable prediction, not yet observed; INCONCLUSIVE evidence audit (95 GeV excess at 91.19 rung); PRE-REGISTERED window 99–114 GeV, central 106.39 GeV (QG190)"),
     dict(name="collider sector-ladder signatures", status="untested", phase="QG130", detail="predicted, no data"),
 ]
 
@@ -541,7 +543,7 @@ OPEN_QUESTIONS = [
 
 # ── Predictions ──
 PREDICTIONS = [
-    dict(prediction="106 GeV resonance (scalar sector transition)", phase="QG132", status="FALSIFIABLE — not yet observed; QG188A audit INCONCLUSIVE"),
+    dict(prediction="106 GeV resonance (scalar sector transition)", phase="QG132", status="FALSIFIABLE — not yet observed; QG188A audit INCONCLUSIVE; QG190 PRE-REGISTERED window 99–114 GeV"),
     dict(prediction="Sector-ladder collider signatures (energy-ladder rung states)", phase="QG130", status="PREDICTED — no data"),
     dict(prediction="0νββ rate: m_ββ = 2.02e-3 eV (Majorana neutrino)", phase="QG179", status="PREDICTED — awaiting experiment"),
     dict(prediction="Gravitational redshift WITHOUT lensing in conformal (ψ=0) sector", phase="QG21", status="FALSIFIABLE — differs from GR"),
