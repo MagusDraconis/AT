@@ -3,16 +3,16 @@
     "file": "Docs/TQMQG_PhysicsCoverage.md|json",
     "purpose": "single source of truth for all TQM-QG physics validation",
     "last_updated": "2026-08-22",
-    "phases_count": 204,
+    "phases_count": 205,
     "note": "Historical entries are never removed. Additive updates only."
   },
   "coverage": {
-    "total_phases": 204,
+    "total_phases": 205,
     "tested": 188,
     "partial": 12,
     "untested": 0,
-    "audit": 4,
-    "weighted_coverage": 0.9559,
+    "audit": 5,
+    "weighted_coverage": 0.9524,
     "domains": {
       "cosmology": {
         "tested": 1,
@@ -53,8 +53,8 @@
         "tested": 11,
         "partial": 0,
         "untested": 0,
-        "audit": 3,
-        "total": 14
+        "audit": 4,
+        "total": 15
       },
       "psi": {
         "tested": 7,
@@ -2216,6 +2216,14 @@
       "domain": "predictions",
       "validation": "audit",
       "key_result": "152 GeV ↔ 151.98 rung alignment significance (frozen QG192 only, deterministic): τ = |152/151.98−1| = 0.0132% (0.020 GeV, ~760× closer than the 15.2 GeV spacing); null = uniform over [95,270] GeV (span 175); p(any of 9 rungs) = Σ(2τ·E)/175 = 0.259% (1 in 386) → ALREADY look-elsewhere corrected → z = 2.80σ; p(151.98 alone) = 0.023% (1 in 4375) → z = 3.50σ; classification MODERATE SUPPORT (0.1–1% band, 2.80σ) — meaningful but not 5σ; reinforces the ~152 GeV excess's own global significance (up to 5.4σ)"
+    },
+    {
+      "phase": 203,
+      "file": "TQMQG_PredictionOutcomeDashboard.md",
+      "classification": "PREDICTION OUTCOME DASHBOARD",
+      "domain": "predictions",
+      "validation": "audit",
+      "key_result": "single source of truth for external validation: per-prediction outcome monitor (frozen value, current evidence, support level, last audit, next experiment, state) — P1 106 GeV PENDING [window 99–114 neither confirmed nor excluded; QG199; next HL-LHC 3000 fb⁻¹ diphoton], P2 0νββ m_ββ=2.02 meV PENDING [below current reach; QG191; next nEXO/LEGEND-1000], P3 sector-ladder SUPPORTED [151.98 rung = ~152 GeV excess, MODERATE 2.80σ, QG200/201; next HL-LHC confirmation]; states PENDING/SUPPORTED/CONFIRMED/DISFAVORED/FALSIFIED; frozen values immutable (QG193); generated Docs/TQMQG_PredictionOutcomes.md|json (Tools/build_prediction_outcomes.py)"
     }
   ]
 }

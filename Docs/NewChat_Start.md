@@ -465,10 +465,12 @@ QG200: sector ladder evidence audit (SECTOR LADDER EVIDENCE AUDIT — frozen 12-
 
 QG201: ladder statistics audit (LADDER STATISTICS AUDIT — is the 152 GeV ↔ 151.98 rung alignment significant? MODERATE SUPPORT: τ = |152/151.98−1| = 0.0132% (0.020 GeV, ~760× closer than the 15.2 GeV spacing); null = uniform over [95,270] GeV → p(any of 9 rungs) = Σ(2τ·E)/175 = 0.259% [1 in 386, ALREADY look-elsewhere corrected] → z = 2.80σ; p(151.98 alone) = 0.023% [1 in 4375] → z = 3.50σ; meaningful but not 5σ; reinforces the ~152 GeV excess's own global significance [up to 5.4σ]; no ladder-value changes).
 
+QG202: prediction outcome dashboard (PREDICTION OUTCOME DASHBOARD — single source of truth for external validation: per-prediction monitor with frozen value, current evidence, support level, last audit, next experiment, state; P1 = PENDING [window 99–114 open, QG199, next HL-LHC 3000 fb⁻¹], P2 = PENDING [below current 0νββ reach, QG191, next nEXO/LEGEND-1000], P3 = SUPPORTED [151.98 rung = ~152 GeV excess, MODERATE 2.80σ, QG200/201, next HL-LHC confirmation]; frozen values immutable; generated Docs/TQMQG_PredictionOutcomes.md|json via Tools/build_prediction_outcomes.py).
+
 Milestone counters:
 
-TQM-QG 204 phases
-498+ TQM-QG tests verified
+TQM-QG 205 phases
+501+ TQM-QG tests verified
 
 ### QG154: Neutrino Sector Origin
 
@@ -492,5 +494,5 @@ NEUTRINO ORIGIN
 
 Milestone counters:
 
-TQM-QG 204 phases
-498+ TQM-QG tests verified
+TQM-QG 205 phases
+501+ TQM-QG tests verified
