@@ -3,8 +3,8 @@
 **Single source of truth for all TQM-QG physics validation.**
 
 - Last updated: 2026-08-22
-- Total phases: 209
-- Tested: 191 | Partial: 12 | Untested: 0 | Audit: 6
+- Total phases: 210
+- Tested: 192 | Partial: 12 | Untested: 0 | Audit: 6
 - Weighted coverage: 95.0%
 
 > Maintenance rule: whenever a QG phase completes, scan its classification, update
@@ -17,8 +17,8 @@
 
 | Metric | Value |
 |---|---|
-| Phases total | 209 |
-| Tested | 191 |
+| Phases total | 210 |
+| Tested | 192 |
 | Partially tested | 12 |
 | Untested | 0 |
 | Audit (QG170) | 6 |
@@ -46,7 +46,7 @@
 |---|---|---|---|---|---|
 | Cosmology | 1 | 0 | 0 | 0 | 1 |
 | High-Energy Sector | 6 | 1 | 0 | 0 | 7 |
-| Foundations | 17 | 0 | 0 | 1 | 18 |
+| Foundations | 18 | 0 | 0 | 1 | 19 |
 | Gravity / GR | 30 | 2 | 0 | 0 | 32 |
 | Network & Spectrum | 42 | 0 | 0 | 0 | 42 |
 | Predictions | 11 | 0 | 0 | 4 | 15 |
@@ -82,7 +82,7 @@
 | Exact origin of the Bekenstein 1/4 coefficient: QG196 PROVES IMPOSSIBLE within D96/TRM without fitting and without importing π — the required bits-per-cell is π, and 1/occ₀=1/4 is wrong-units (1/(16π)); the exact 1/4 is a quantum/geometric statement requiring the imported 2π factor | QG12/QG13/QG184/QG185/QG196 | PARTIALLY-OPEN (proven impossible without imported π) |
 | ψ/Weyl field: new fundamental primitive (capacity FORCED by link completeness QG56; excitation mechanism DERIVED QG57; existence observationally required QG47) — PARTIALLY SOLVED, see TQMQG_PsiOriginAudit.md | QG23/24/47/52/54/56/57 | PARTIALLY-SOLVED |
 | Matter = deficit: RESOLVED by QG194 (DEFICIT ORIGIN) — the actualization deficit IS the energy deficit (QG89), carries rest mass, is exactly conserved (Noether), and is the unique linear form (G4-ME5) | G4-ME/QG194 | RESOLVED |
-| Metric ansatz g = ρ^(2/d)η is PREFERRED but not UNIQUE; flat η is a defining axiom | G4-A0 | OPEN-AXIOM |
+| Metric ansatz g = ρ^(2/d)η: QG207 determines PARTIAL UNIQUE — uniquely selected within the conformal-flat class (measure preservation √(−g)=ρ ⇒ k=2/d; derived acceleration ⇒ k=2/d; Einstein/Bianchi recovery = QG197), but the ψ tensor sector (QG44/186) provides alternative counting-preserving metrics with the same √(−g)=ρ and different observables (frame dragging, lensing); the ansatz is the ψ=0 isotropic member, completed by the tensor sector | G4-A0/QG207 | PARTIALLY-RESOLVED (unique within conformal class; ψ sector completes it) |
 | No independent matter sector: RESOLVED by QG195 (MATTER ORIGIN) — the deficit dust T_μν = (ρ̄−ρ)·v_μ·v_ν is an independent, conserved matter tensor built from ρ_m and v (escapes the G4-G4 Lovelock obstruction); G = κT is a dynamical relation, not an identity | G4-G3/QG195 | RESOLVED |
 | Hawking temperature after ψ: no phase derives T ∝ 1/R explicitly with ψ≠0 | QG24 | OPEN |
 | Flat rotation-curve α=0: RESOLVED by QG206 (ALPHA-ZERO ORIGIN) — v² ∝ r^(−α) ⇒ flat requires exactly α=0; α=0 is the equal-deficit-per-octave self-similar profile, the unique stable scale-free point of the octave-organized counting measure, from actualization scaling (QG194/155); consistent with M ∝ R (QG184) | G4-ME4/QG206 | RESOLVED |
@@ -536,3 +536,7 @@ Historical entries are preserved; updates are additive.
 ### Gravity / GR
 
 - **QG207** — ALPHA-ZERO ORIGIN (tested) — flat rotation-curve α=0 DERIVED (no new primitives): the general abundance deficit m ∝ r^(−α) gives a ∝ r^(−α−1) and v² = r·|a| ∝ r^(−α) — flat rotation (v=const) requires EXACTLY α = 0 (any α≠0 gives rising/falling curve); α=0 = log deficit = EQUAL deficit per octave (0.0926 const, self-similar) = unique scale-free point (spread 0 vs 0.14 for α=±0.3); follows from actualization scaling (matter = ρ̄−ρ conserved deficit QG194 over the octave-organized counting measure QG155); consistent with M ∝ R (QG184, exponent 1−α=1) and Hawking T ∝ 1/R; closes the 'flat rotation-curve α=0' open question (G4-ME4) `TQMQG_AlphaZeroOrigin.md`
+
+### Foundations
+
+- **QG208** — PARTIAL UNIQUE (tested) — metric ansatz uniqueness determined (no new primitives): √(−g) = ρ^(kd/2) = ρ requires k·d/2 = 1 ⇒ k = 2/d (measure preservation UNIQUE — every other power breaks √(−g) = ρ); derived geodesic acceleration a = −(1/d)ρ′/ρ requires k/2 = 1/d ⇒ k = 2/d (UNIQUE); Einstein/Bianchi recovery at k = 2/d = QG197 structure; BUT the ψ tensor sector (QG44/186) gives alternative counting-preserving metrics g_00 = −ρ^(2/d)e^(2ψ), g_ii = ρ^(2/d)e^(−2ψ/(d−1)) with the same √(−g) = ρ and different observables (frame dragging, lensing) — so g = ρ^(2/d)η is PARTIAL UNIQUE: unique within the conformal-flat class, completed by the ψ tensor sector `TQMQG_MetricAnsatzUniqueness.md`

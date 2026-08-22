@@ -3,16 +3,16 @@
     "file": "Docs/TQMQG_PhysicsCoverage.md|json",
     "purpose": "single source of truth for all TQM-QG physics validation",
     "last_updated": "2026-08-22",
-    "phases_count": 209,
+    "phases_count": 210,
     "note": "Historical entries are never removed. Additive updates only."
   },
   "coverage": {
-    "total_phases": 209,
-    "tested": 191,
+    "total_phases": 210,
+    "tested": 192,
     "partial": 12,
     "untested": 0,
     "audit": 6,
-    "weighted_coverage": 0.9498,
+    "weighted_coverage": 0.95,
     "domains": {
       "cosmology": {
         "tested": 1,
@@ -29,11 +29,11 @@
         "total": 7
       },
       "foundation": {
-        "tested": 17,
+        "tested": 18,
         "partial": 0,
         "untested": 0,
         "audit": 1,
-        "total": 18
+        "total": 19
       },
       "gravity": {
         "tested": 30,
@@ -222,9 +222,9 @@
       "status": "RESOLVED"
     },
     {
-      "question": "Metric ansatz g = ρ^(2/d)η is PREFERRED but not UNIQUE; flat η is a defining axiom",
-      "phase": "G4-A0",
-      "status": "OPEN-AXIOM"
+      "question": "Metric ansatz g = ρ^(2/d)η: QG207 determines PARTIAL UNIQUE — uniquely selected within the conformal-flat class (measure preservation √(−g)=ρ ⇒ k=2/d; derived acceleration ⇒ k=2/d; Einstein/Bianchi recovery = QG197), but the ψ tensor sector (QG44/186) provides alternative counting-preserving metrics with the same √(−g)=ρ and different observables (frame dragging, lensing); the ansatz is the ψ=0 isotropic member, completed by the tensor sector",
+      "phase": "G4-A0/QG207",
+      "status": "PARTIALLY-RESOLVED (unique within conformal class; ψ sector completes it)"
     },
     {
       "question": "No independent matter sector: RESOLVED by QG195 (MATTER ORIGIN) — the deficit dust T_μν = (ρ̄−ρ)·v_μ·v_ν is an independent, conserved matter tensor built from ρ_m and v (escapes the G4-G4 Lovelock obstruction); G = κT is a dynamical relation, not an identity",
@@ -2256,6 +2256,14 @@
       "domain": "gravity",
       "validation": "tested",
       "key_result": "flat rotation-curve α=0 DERIVED (no new primitives): the general abundance deficit m ∝ r^(−α) gives a ∝ r^(−α−1) and v² = r·|a| ∝ r^(−α) — flat rotation (v=const) requires EXACTLY α = 0 (any α≠0 gives rising/falling curve); α=0 = log deficit = EQUAL deficit per octave (0.0926 const, self-similar) = unique scale-free point (spread 0 vs 0.14 for α=±0.3); follows from actualization scaling (matter = ρ̄−ρ conserved deficit QG194 over the octave-organized counting measure QG155); consistent with M ∝ R (QG184, exponent 1−α=1) and Hawking T ∝ 1/R; closes the 'flat rotation-curve α=0' open question (G4-ME4)"
+    },
+    {
+      "phase": 208,
+      "file": "TQMQG_MetricAnsatzUniqueness.md",
+      "classification": "PARTIAL UNIQUE",
+      "domain": "foundation",
+      "validation": "tested",
+      "key_result": "metric ansatz uniqueness determined (no new primitives): √(−g) = ρ^(kd/2) = ρ requires k·d/2 = 1 ⇒ k = 2/d (measure preservation UNIQUE — every other power breaks √(−g) = ρ); derived geodesic acceleration a = −(1/d)ρ′/ρ requires k/2 = 1/d ⇒ k = 2/d (UNIQUE); Einstein/Bianchi recovery at k = 2/d = QG197 structure; BUT the ψ tensor sector (QG44/186) gives alternative counting-preserving metrics g_00 = −ρ^(2/d)e^(2ψ), g_ii = ρ^(2/d)e^(−2ψ/(d−1)) with the same √(−g) = ρ and different observables (frame dragging, lensing) — so g = ρ^(2/d)η is PARTIAL UNIQUE: unique within the conformal-flat class, completed by the ψ tensor sector"
     }
   ]
 }

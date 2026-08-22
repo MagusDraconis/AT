@@ -441,6 +441,8 @@ add(206,"TQMQG_Post200CoverageAudit.md","POST-200 COVERAGE AUDIT","foundation","
     "true post-QG204 status (recomputed from coverage, removing resolved SM1/SM2/Matter=Deficit/Matter Sector/2D→3D Bridge): 207 phases, 190 tested (91.8%), 12 partial, 5 audit, 95.3% weighted; observables 40: 33 tested / 5 partial / 2 untested; Top-10 remaining open problems ranked by impact·3+feas·2+fals·2 → P1 106 GeV (35) > P2 0νββ (31) > P3 ladder (30) > G2 rotation-curve (26) > G3 conformal optics (22) > F1 metric ansatz (21) = SM4 lepton hierarchy (21) > G1 Hawking-ψ (20) = F2 Bekenstein 1/4 (20) > SM6 family index (17); category PREDICTION 3 / GRAVITY 3 / FOUNDATIONAL 2 / SM 2; the open frontier is now experimental (3 pre-registered predictions) + structural gaps")
 add(207,"TQMQG_AlphaZeroOrigin.md","ALPHA-ZERO ORIGIN","gravity","tested",
     "flat rotation-curve α=0 DERIVED (no new primitives): the general abundance deficit m ∝ r^(−α) gives a ∝ r^(−α−1) and v² = r·|a| ∝ r^(−α) — flat rotation (v=const) requires EXACTLY α = 0 (any α≠0 gives rising/falling curve); α=0 = log deficit = EQUAL deficit per octave (0.0926 const, self-similar) = unique scale-free point (spread 0 vs 0.14 for α=±0.3); follows from actualization scaling (matter = ρ̄−ρ conserved deficit QG194 over the octave-organized counting measure QG155); consistent with M ∝ R (QG184, exponent 1−α=1) and Hawking T ∝ 1/R; closes the 'flat rotation-curve α=0' open question (G4-ME4)")
+add(208,"TQMQG_MetricAnsatzUniqueness.md","PARTIAL UNIQUE","foundation","tested",
+    "metric ansatz uniqueness determined (no new primitives): √(−g) = ρ^(kd/2) = ρ requires k·d/2 = 1 ⇒ k = 2/d (measure preservation UNIQUE — every other power breaks √(−g) = ρ); derived geodesic acceleration a = −(1/d)ρ′/ρ requires k/2 = 1/d ⇒ k = 2/d (UNIQUE); Einstein/Bianchi recovery at k = 2/d = QG197 structure; BUT the ψ tensor sector (QG44/186) gives alternative counting-preserving metrics g_00 = −ρ^(2/d)e^(2ψ), g_ii = ρ^(2/d)e^(−2ψ/(d−1)) with the same √(−g) = ρ and different observables (frame dragging, lensing) — so g = ρ^(2/d)η is PARTIAL UNIQUE: unique within the conformal-flat class, completed by the ψ tensor sector")
 
 # ── Observable-level SM audit (supersedes QG170's 25/9/14 with QG171-182 results) ──
 OBSERVABLES = [
@@ -561,8 +563,8 @@ OPEN_QUESTIONS = [
          phase="QG23/24/47/52/54/56/57", status="PARTIALLY-SOLVED"),
     dict(question="Matter = deficit: RESOLVED by QG194 (DEFICIT ORIGIN) — the actualization deficit IS the energy deficit (QG89), carries rest mass, is exactly conserved (Noether), and is the unique linear form (G4-ME5)",
          phase="G4-ME/QG194", status="RESOLVED"),
-    dict(question="Metric ansatz g = ρ^(2/d)η is PREFERRED but not UNIQUE; flat η is a defining axiom",
-         phase="G4-A0", status="OPEN-AXIOM"),
+    dict(question="Metric ansatz g = ρ^(2/d)η: QG207 determines PARTIAL UNIQUE — uniquely selected within the conformal-flat class (measure preservation √(−g)=ρ ⇒ k=2/d; derived acceleration ⇒ k=2/d; Einstein/Bianchi recovery = QG197), but the ψ tensor sector (QG44/186) provides alternative counting-preserving metrics with the same √(−g)=ρ and different observables (frame dragging, lensing); the ansatz is the ψ=0 isotropic member, completed by the tensor sector",
+         phase="G4-A0/QG207", status="PARTIALLY-RESOLVED (unique within conformal class; ψ sector completes it)"),
     dict(question="No independent matter sector: RESOLVED by QG195 (MATTER ORIGIN) — the deficit dust T_μν = (ρ̄−ρ)·v_μ·v_ν is an independent, conserved matter tensor built from ρ_m and v (escapes the G4-G4 Lovelock obstruction); G = κT is a dynamical relation, not an identity",
          phase="G4-G3/QG195", status="RESOLVED"),
     dict(question="Hawking temperature after ψ: no phase derives T ∝ 1/R explicitly with ψ≠0",
