@@ -403,4 +403,10 @@ a { color: inherit; }
 
 .derivation-drawer { background: #151A21; }
 
+/* The MudDrawer temporary overlay scrim covers the whole page and would
+   swallow node clicks after the first one. Make it click-through so the
+   graph stays interactive while the detail panel is open. */
+.derivation-drawer + .mud-drawer-overlay { pointer-events: none; }
+.derivation-drawer + .mud-drawer-overlay .mud-overlay-scrim { pointer-events: none; }
+
 
