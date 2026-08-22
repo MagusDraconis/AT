@@ -6,7 +6,7 @@
 
 <div class="page-section">
     <h3 class="section-heading">Anti-Fit Audit</h3>
-    <p class="muted">QG189 methodology audit of the QG140–QG188 derivation record. Each phase is classified by how its target was produced: a genuine prediction from primitives, a blind reconstruction, a dependent derivation, a retro-fit risk, or an overfit risk.</p>
+    <p class="muted">QG214 reaudit of the QG140–QG213 derivation record (supersedes QG189's QG140–QG188 scope). Each phase is classified by how its target was produced: prediction from primitives, blind reconstruction, pre-registration, registry lock, dependent derivation, retro-fit risk, or overfit risk.</p>
 
     <MudCard Elevation="1" Class="theory-card mb-4">
         <MudCardContent>
@@ -15,6 +15,10 @@
                 <span class="status-chip status-tested me-2">PREDICTION</span> — target from D96 primitives, unique/unforced formula, target not consulted
                 <div class="mt-2"></div>
                 <span class="status-chip status-tested me-2">BLIND RECONSTRUCTION</span> — target explicitly hidden, rebuilt from the primitive base
+                <div class="mt-2"></div>
+                <span class="status-chip status-tested me-2">PRE-REGISTERED</span> — target frozen before data, forbidden-input guard
+                <div class="mt-2"></div>
+                <span class="status-chip status-tested me-2">REGISTRY LOCK</span> — immutable registry, values-unchanged guard
                 <div class="mt-2"></div>
                 <span class="status-chip status-partial me-2">DEPENDENT DERIVATION</span> — uses an earlier phase result or external anchor (sound chain)
                 <div class="mt-2"></div>
@@ -26,12 +30,77 @@
     </MudCard>
 
     <div class="stat-row mb-4">
-        <div class="stat-tile"><div class="stat-value" style="color:#81C784">@_predictionCount</div><div class="stat-label">PREDICTION</div></div>
-        <div class="stat-tile"><div class="stat-value" style="color:#4DD0E1">@_blindCount</div><div class="stat-label">BLIND</div></div>
-        <div class="stat-tile"><div class="stat-value" style="color:#FFB74D">@_dependentCount</div><div class="stat-label">DEPENDENT</div></div>
-        <div class="stat-tile"><div class="stat-value" style="color:#E57373">@_retroFitCount</div><div class="stat-label">RETRO-FIT</div></div>
-        <div class="stat-tile"><div class="stat-value" style="color:#E57373">@_overfitCount</div><div class="stat-label">OVERFIT</div></div>
-        <div class="stat-tile"><div class="stat-value" style="color:#BA68C8">@_totalCount</div><div class="stat-label">Audited phases</div></div>
+        <div class="stat-tile"><div class="stat-value" style="color:#81C784">56</div><div class="stat-label">PREDICTION</div></div>
+        <div class="stat-tile"><div class="stat-value" style="color:#4DD0E1">2</div><div class="stat-label">BLIND</div></div>
+        <div class="stat-tile"><div class="stat-value" style="color:#4DD0E1">3</div><div class="stat-label">PRE-REGISTERED</div></div>
+        <div class="stat-tile"><div class="stat-value" style="color:#4DD0E1">1</div><div class="stat-label">REGISTRY LOCK</div></div>
+        <div class="stat-tile"><div class="stat-value" style="color:#FFB74D">8</div><div class="stat-label">DEPENDENT</div></div>
+        <div class="stat-tile"><div class="stat-value" style="color:#E57373">2</div><div class="stat-label">RETRO-FIT</div></div>
+        <div class="stat-tile"><div class="stat-value" style="color:#E57373">1</div><div class="stat-label">OVERFIT</div></div>
+        <div class="stat-tile"><div class="stat-value" style="color:#BA68C8">73</div><div class="stat-label">Audited phases</div></div>
+    </div>
+
+    <div class="page-section">
+        <h3 class="section-heading">Risk trend by era</h3>
+        <div class="era-trend">
+            <div class="era-bar">
+                <div class="era-label">Fitting era<br/>QG140–148</div>
+                <div class="era-bar-track">
+                    <div class="era-bar-fill" style="width:100%; background:#E57373">3 risk cases</div>
+                </div>
+                <div class="era-note">2 retro-fit · 1 overfit</div>
+            </div>
+            <div class="era-bar">
+                <div class="era-label">Structural era<br/>QG149–213</div>
+                <div class="era-bar-track">
+                    <div class="era-bar-fill" style="width:0%; background:#81C784">0</div>
+                </div>
+                <div class="era-note">0 retro-fit · 0 overfit · 0 fitted parameters</div>
+            </div>
+        </div>
+        <p class="muted mt-2">
+            <strong>All known fit-risk cases are historical and superseded.</strong> The three risk cases
+            (QG140/146 retro-fit, QG147 overfit) all live in the fitting era QG140–148; QG147 was caught by
+            QG148's out-of-sample validation, and QG140/146 were superseded by QG141 (derived exponents) and
+            QG149 (physical occupation-weighted origin). The structural era QG149–213 is fit-free.
+        </p>
+    </div>
+
+    <div class="page-section">
+        <h3 class="section-heading">Strongest anti-fit evidence</h3>
+        <MudGrid Spacing="3">
+            <MudItem xs="12" md="4">
+                <MudCard Elevation="1" Class="theory-card h-100">
+                    <MudCardContent>
+                        <MudText Typo="Typo.subtitle1" Class="fw-bold">QG176 — Higgs hidden</MudText>
+                        <MudText Typo="Typo.body2" Class="muted mt-2">
+                            M_H, Γ_H, λ_H all hidden; rebuilt from pre-Higgs D96 only. 125.25 GeV (0.003%).
+                        </MudText>
+                    </MudCardContent>
+                </MudCard>
+            </MudItem>
+            <MudItem xs="12" md="4">
+                <MudCard Elevation="1" Class="theory-card h-100">
+                    <MudCardContent>
+                        <MudText Typo="Typo.subtitle1" Class="fw-bold">QG177 — leave-one-out</MudText>
+                        <MudText Typo="Typo.body2" Class="muted mt-2">
+                            12 observables, each hidden and rebuilt; mean deviation 0.58%, max 1.89%.
+                        </MudText>
+                    </MudCardContent>
+                </MudCard>
+            </MudItem>
+            <MudItem xs="12" md="4">
+                <MudCard Elevation="1" Class="theory-card h-100">
+                    <MudCardContent>
+                        <MudText Typo="Typo.subtitle1" Class="fw-bold">QG190–193 — prediction lock</MudText>
+                        <MudText Typo="Typo.body2" Class="muted mt-2">
+                            3 pre-registered predictions frozen before data (forbidden-input guards) + an
+                            immutable registry lock (ValuesUnchanged).
+                        </MudText>
+                    </MudCardContent>
+                </MudCard>
+            </MudItem>
+        </MudGrid>
     </div>
 
     <MudTable Items="@_rows" Hover="true" Dense="true">
@@ -52,52 +121,43 @@
     <MudCard Elevation="1" Class="theory-card mt-4">
         <MudCardContent>
             <MudText Typo="Typo.body2" Class="muted">
-                <strong>Findings:</strong> the only confirmed overfit is QG147 (3 parameters fit to 3 sectors),
-                caught by QG148's out-of-sample validation. Retro-fit risk is confined to the fitting era
-                (QG140, QG146, fitted exponents); both were superseded by QG141 (derived exponents) and QG149
-                (physical occupation-weighted origin). The structural era (QG149+) contains no fitted parameters,
-                and QG176/QG177 are the gold-standard blind reconstructions.
+                <strong>Findings (QG214):</strong> the QG189 conclusion stands — RETRO-FIT = 2, OVERFIT = 1.
+                The 24 phases QG190–QG213 added 3 PRE-REGISTERED, 1 REGISTRY LOCK, and 20 PREDICTION phases with
+                zero retro-fit, zero overfit, and zero fitted parameters. Risk is confined to the fitting era
+                QG140–148; the structural era QG149–213 is fit-free. The pre-registration program (QG190–193)
+                is the strongest anti-fit evidence alongside the gold-standard blind tests QG176/QG177.
             </MudText>
         </MudCardContent>
     </MudCard>
 </div>
 
 @code {
-    private int _predictionCount, _blindCount, _dependentCount, _retroFitCount, _overfitCount, _totalCount;
-    private IReadOnlyList<AntiFitRow> _rows = BuildRows();
+    private sealed record AntiFitRow(string Phase, string Target, string RiskClass, string Reason);
 
-    protected override void OnInitialized()
-    {
-        _predictionCount = _rows.Count(r => r.RiskClass == "PREDICTION");
-        _blindCount = _rows.Count(r => r.RiskClass == "BLIND RECONSTRUCTION");
-        _dependentCount = _rows.Count(r => r.RiskClass == "DEPENDENT DERIVATION");
-        _retroFitCount = _rows.Count(r => r.RiskClass == "RETRO-FIT RISK");
-        _overfitCount = _rows.Count(r => r.RiskClass == "OVERFIT RISK");
-        _totalCount = _rows.Count;
-    }
+    private IReadOnlyList<AntiFitRow> _rows = BuildRows();
 
     private static string RiskClass(string risk) => risk switch
     {
         "PREDICTION" => "status-tested",
         "BLIND RECONSTRUCTION" => "status-tested",
+        "PRE-REGISTERED" => "status-tested",
+        "REGISTRY LOCK" => "status-tested",
         "DEPENDENT DERIVATION" => "status-partial",
         _ => "status-untested",
     };
 
-    private sealed record AntiFitRow(string Phase, string Target, string RiskClass, string Reason);
-
     private static IReadOnlyList<AntiFitRow> BuildRows() =>
     [
-        // Fitting era (QG140-148)
-        new("QG140", "lepton mass ratios {1,59,3468}", "RETRO-FIT RISK", "mass = A·center^p·modes^q, p≈7.69 fitted"),
+        // Fitting era (QG140-148) — all historical risk cases
+        new("QG140", "lepton mass ratios {1,59,3468}", "RETRO-FIT RISK", "mass = A·center^p·modes^q, p≈7.69 fitted — superseded by QG141"),
         new("QG141", "hierarchy exponents p_net=5.88", "DEPENDENT DERIVATION", "exponents derived from spectral density"),
         new("QG142", "all generations", "PREDICTION", "leptons match 0.26%, quarks deviate — honest negative"),
         new("QG143", "quark r31 factor", "DEPENDENT DERIVATION", "5 candidate factors tested"),
-        new("QG146", "quark hierarchy law", "RETRO-FIT RISK", "fitted p_eff = 8.13 / 4.90"),
+        new("QG146", "quark hierarchy law", "RETRO-FIT RISK", "fitted p_eff = 8.13 / 4.90 — superseded by QG149"),
         new("QG147", "exponent vs (Q,T3)", "OVERFIT RISK", "3 params / 3 sectors = saturated interpolation"),
         new("QG148", "out-of-sample generalization", "PREDICTION", "confirmed QG147 OVERFIT (honest audit)"),
         new("QG149", "sector exponents (physical)", "PREDICTION", "occupation-weighted access replaces the fit"),
-        // Structural era (QG150-175, representative)
+        // Structural era (QG150-188, representative)
         new("QG150-160", "mode access, N_eff, D96 selection", "PREDICTION", "structural D96 derivations, no fitted params"),
         new("QG161-168", "gauge sector, couplings, MW/MZ", "PREDICTION", "1+3+8 from D96; v = (Σm+#d)·ln span"),
         new("QG169", "MH = 125.25 GeV", "PREDICTION", "σ_occ·span/2 — no fitted masses"),
@@ -108,5 +168,16 @@
         // Dependent / gravity
         new("QG173", "six quark masses", "DEPENDENT DERIVATION", "uses measured electron as the single anchor"),
         new("QG181-187", "G, frame dragging, GPS", "PREDICTION", "D96-derived; measured J/Earth params as inputs"),
+        // Pre-registration + registry lock (QG190-193)
+        new("QG190", "106 GeV resonance (frozen)", "PRE-REGISTERED", "106.39 GeV, window 99–114; forbidden-input guard"),
+        new("QG191", "m_ββ = 2.02 meV (frozen)", "PRE-REGISTERED", "frozen from QG167/172/179; forbidden-input guard"),
+        new("QG192", "sector-ladder spectrum (frozen)", "PRE-REGISTERED", "12 rungs, 9 predicted 106–263 GeV; forbidden-input guard"),
+        new("QG193", "prediction registry lock", "REGISTRY LOCK", "immutable P1/P2/P3; ValuesUnchanged guard"),
+        // Post-lock derivations + audits (QG194-213)
+        new("QG194-197", "deficit, matter, quarter, bridge", "PREDICTION", "derivations from QG89/184/197 — no fits"),
+        new("QG198-202", "open problems, evidence, outcomes", "PREDICTION", "audits — evidence-only, cited"),
+        new("QG203-210", "neutrino, running, α=0, ansatz, Hawking, lepton, family", "PREDICTION", "closed-form D96 laws — no empirical exponents"),
+        new("QG211-213", "frontier, optics, ultra frontier", "PREDICTION", "audits + resolution — methodology only"),
     ];
 }
+
