@@ -435,6 +435,8 @@ add(203,"TQMQG_PredictionOutcomeDashboard.md","PREDICTION OUTCOME DASHBOARD","pr
     "single source of truth for external validation: per-prediction outcome monitor (frozen value, current evidence, support level, last audit, next experiment, state) — P1 106 GeV PENDING [window 99–114 neither confirmed nor excluded; QG199; next HL-LHC 3000 fb⁻¹ diphoton], P2 0νββ m_ββ=2.02 meV PENDING [below current reach; QG191; next nEXO/LEGEND-1000], P3 sector-ladder SUPPORTED [151.98 rung = ~152 GeV excess, MODERATE 2.80σ, QG200/201; next HL-LHC confirmation]; states PENDING/SUPPORTED/CONFIRMED/DISFAVORED/FALSIFIED; frozen values immutable (QG193); generated Docs/TQMQG_PredictionOutcomes.md|json (Tools/build_prediction_outcomes.py)")
 add(204,"TQMQG_AbsoluteNeutrinoMassOrigin.md","ABSOLUTE MASS ORIGIN","sm","tested",
     "absolute neutrino masses as closed-form D96 expressions (no oscillation-fit masses): N = 1/Σ√m = 0.015605 eV (QG157 neutral scale); m1 = 0 (zero-mode, normal ordering QG179), m2 = 1/(Σ√m·√(span/2)) = 8.7216e-3 eV (phys 8.72 meV, dev 0.019%), m3 = √#g/(Σm·√2) = 49.3728e-3 eV (phys 49.4 meV, dev 0.055%); exact ratio m2/m3 = 2Σm/(Σ√m·√(span·#g)) = 0.176648 (phys 0.1765, dev 0.07%); PMNS cross-check m2/m3 ≈ 8.39·s13² (s13=√(occ0/(2Σm)), QG167); Σm_ν = 0.0581 eV < 0.12; closes the 'exact neutrino masses' open question (QG198 SM1)")
+add(205,"TQMQG_QuarkRunningOrigin.md","RUNNING ORIGIN","sm","tested",
+    "quark running-scale/MS̄ conversion derived from D96 (no fitted QCD factors): the D96 mass law is NATIVELY an MS̄-scheme law at the natural scale — u/d/s at 2 GeV and c/b/t at μ=m_q all match PDG MS̄ within 0.2% (mc(mc)=1269 vs 1270, mb(mb)=4186 vs 4180, mt(mt)=172704 vs 172700); spectral α_s = 8/Σ√m = 0.1248 (PDG α_s(MZ)=0.1184, dev 5.4%, QG163); running exponent q = #d/(2·#g) = 42/88 = 0.4773 reproduces the QCD γ_m0/β0 = 0.48 within 0.6% (no QCD import); running law m(μ) = m(m)·[α_s(μ)/α_s(m)]^q; closes the 'quark running-scale/MS̄ conversion' open question (QG198 SM2)")
 
 # ── Observable-level SM audit (supersedes QG170's 25/9/14 with QG171-182 results) ──
 OBSERVABLES = [
@@ -475,7 +477,7 @@ OBSERVABLES = [
     dict(name="golden-ratio hierarchy", status="partial", phase="QG152", detail="PARTIAL ROBUSTNESS"),
     dict(name="physical calibration ladder", status="partial", phase="QG129", detail="PARTIAL MAPPING"),
     dict(name="exact neutrino masses m1,m2,m3", status="tested", phase="QG172/QG203", detail="CLOSED-FORM D96: m1=0, m2=1/(Σ√m·√(span/2))=8.72 meV (0.02%), m3=√#g/(Σm·√2)=49.4 meV (0.06%), ratio=2Σm/(Σ√m·√(span·#g))=0.1766 exact; ABSOLUTE MASS ORIGIN, no oscillation-fit masses"),
-    dict(name="quark running-scale/MS̄ conversion", status="untested", phase="—", detail="D96 mass law at MS̄ scale open"),
+    dict(name="quark running-scale/MS̄ conversion", status="tested", phase="QG173/QG204", detail="RUNNING ORIGIN — D96 mass law natively MS̄ at natural scale (all six within 0.2%); spectral α_s=8/Σ√m=0.1248 (5.4%); exponent q=#d/(2·#g)=0.4773 matches QCD γ/β=0.48 (0.6%); m(μ)=m(m)·[α_s(μ)/α_s(m)]^q"),
     dict(name="mass ordering (ν)", status="tested", phase="QG179/QG203", detail="m1=0 normal ordering derived; absolute masses closed-form (QG203)"),
     dict(name="106 GeV resonance", status="untested", phase="QG132/QG188A/QG190/QG199", detail="falsifiable prediction, not yet observed; INCONCLUSIVE evidence audit (95 GeV excess at 91.19 rung); PRE-REGISTERED window 99–114 GeV, central 106.39 GeV (QG190); QG199 P1 update: PENDING — no confirmed signal in window, limits 15–102 fb do not exclude; 152 GeV excess aligns with 151.98 rung (not P1); HL-LHC 3000 fb⁻¹ projects 1–3 fb"),
     dict(name="collider sector-ladder signatures", status="untested", phase="QG130/QG192/QG200", detail="predicted, no data; QG192 PRE-REGISTERED 9 rungs; QG200 evidence audit: CONFIRMED 3 (SM anchors), SUPPORTED 1 (151.98 = ~152 GeV excess, arXiv:2503.16245), PENDING 8, FALSIFIED 0"),
@@ -543,8 +545,8 @@ CONTRADICTIONS = [
 OPEN_QUESTIONS = [
     dict(question="Exact neutrino mass values m1,m2,m3: RESOLVED by QG203 (ABSOLUTE MASS ORIGIN) — closed-form D96 expressions m1=0, m2=1/(Σ√m·√(span/2))=8.72 meV (0.02%), m3=√#g/(Σm·√2)=49.4 meV (0.06%); ratio m2/m3=2Σm/(Σ√m·√(span·#g))=0.1766 exact; no oscillation-fit masses; experiment (KATRIN/production) still pending for confirmation",
          phase="QG172/QG203", status="RESOLVED"),
-    dict(question="Quark absolute mass running-scale/MS̄ conversion of the D96 mass law",
-         phase="QG173", status="OPEN"),
+    dict(question="Quark absolute mass running-scale/MS̄ conversion of the D96 mass law: RESOLVED by QG204 (RUNNING ORIGIN) — the D96 mass law is natively an MS̄-scheme law at the natural scale (all six within 0.2%); spectral α_s=8/Σ√m reproduces α_s(MZ) within 5.4%; exponent q=#d/(2·#g) matches the QCD ratio within 0.6%",
+         phase="QG173/QG204", status="RESOLVED"),
     dict(question="Experimental validation of the 106 GeV resonance (primary falsifiable prediction; QG188A audit: INCONCLUSIVE — 95 GeV excess at 91.19 rung, 106 GeV window neither confirmed nor excluded; QG199 P1 update: still PENDING — no confirmed signal in 99–114 GeV; new ~152 GeV excess aligns with the 151.98 rung, not P1; HL-LHC 3000 fb⁻¹ projects 1–3 fb, decisive)",
          phase="QG132/QG188A/QG190/QG199", status="FALSIFIABLE-PENDING"),
     dict(question="Collider test of sector-ladder physics (energy-ladder rung states)",

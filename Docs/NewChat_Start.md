@@ -182,7 +182,7 @@ Open Questions:
 - the authoritative catalog of ALL unresolved physics questions is the QG198 Top-20 audit (Docs/Research/TQMQG_FinalOpenProblemsAudit.md), ranked by impact·3+feasibility·2+falsifiability·2; top item = 106 GeV resonance (P1, score 35), runner-up cluster = neutrino sector (SM1 exact masses, SM3 mass ordering, P2 0νββ, scores 31–33)
 - P1 (106 GeV) status after QG199: PENDING — window 99–114 GeV neither confirmed nor excluded; 95 GeV cluster = 91.19 rung; new 152 GeV excess = 151.98 rung (P3, not P1); HL-LHC decisive
 - sector ladder (P3) after QG200/QG201: 12 rungs audited — CONFIRMED 3 (SM anchors Z/H/t), SUPPORTED 1 (151.98 = ~152 GeV excess, MODERATE SUPPORT alignment 2.80σ, 1-in-386), PENDING 8, none falsified
-- key open items: quark running-scale/MS̄ conversion (QG173), 106 GeV resonance validation (QG132/QG188A/QG190/QG199), sector-ladder collider test (QG130/QG192/QG200), Hawking T with ψ≠0 (QG24), flat rotation-curve α=0 (G4-ME4), metric ansatz uniqueness (G4-A0), Bekenstein 1/4 (QG196, proven impossible without imported π); exact neutrino masses RESOLVED (QG203 ABSOLUTE MASS ORIGIN)
+- key open items: 106 GeV resonance validation (QG132/QG188A/QG190/QG199), sector-ladder collider test (QG130/QG192/QG200), Hawking T with ψ≠0 (QG24), flat rotation-curve α=0 (G4-ME4), metric ansatz uniqueness (G4-A0), Bekenstein 1/4 (QG196, proven impossible without imported π); exact neutrino masses RESOLVED (QG203), quark MS̄ conversion RESOLVED (QG204)
 
 ## Status Table
 
@@ -469,10 +469,12 @@ QG202: prediction outcome dashboard (PREDICTION OUTCOME DASHBOARD — single sou
 
 QG203: absolute neutrino mass origin (ABSOLUTE MASS ORIGIN — the neutrino masses are closed-form D96 expressions, no oscillation-fit masses: N = 1/Σ√m = 0.015605 eV neutral scale [QG157]; m1 = 0 [zero-mode, QG179 normal ordering], m2 = 1/(Σ√m·√(span/2)) = 8.7216 meV [phys 8.72, dev 0.019%], m3 = √#g/(Σm·√2) = 49.3728 meV [phys 49.4, dev 0.055%]; exact ratio m2/m3 = 2Σm/(Σ√m·√(span·#g)) = 0.176648 [phys 0.1765, dev 0.07%]; PMNS cross-check m2/m3 ≈ 8.39·s13² [s13 = √(occ0/(2Σm)) QG167]; Σm_ν = 0.0581 eV < 0.12; closes the 'exact neutrino masses' open question [QG198 SM1]; standard-model page observable updated to TESTED).
 
+QG204: quark running origin (RUNNING ORIGIN — the D96 quark mass law is NATIVELY an MS̄-scheme law at the natural scale: u/d/s at 2 GeV and c/b/t at μ=m_q all match PDG MS̄ within 0.2% [mc(mc)=1269 vs 1270, mb(mb)=4186 vs 4180, mt(mt)=172704 vs 172700]; spectral α_s = 8/Σ√m = 0.1248 [PDG α_s(MZ)=0.1184, dev 5.4%, QG163]; running exponent q = #d/(2·#g) = 42/88 = 0.4773 reproduces the QCD γ_m0/β0 = 0.48 within 0.6% [no QCD import]; running law m(μ) = m(m)·[α_s(μ)/α_s(m)]^q; closes the 'quark running-scale/MS̄ conversion' open question [QG198 SM2]; standard-model page observable updated to TESTED).
+
 Milestone counters:
 
-TQM-QG 206 phases
-504+ TQM-QG tests verified
+TQM-QG 207 phases
+507+ TQM-QG tests verified
 
 ### QG154: Neutrino Sector Origin
 
@@ -496,5 +498,5 @@ NEUTRINO ORIGIN
 
 Milestone counters:
 
-TQM-QG 206 phases
-504+ TQM-QG tests verified
+TQM-QG 207 phases
+507+ TQM-QG tests verified

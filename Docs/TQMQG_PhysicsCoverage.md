@@ -3,8 +3,8 @@
 **Single source of truth for all TQM-QG physics validation.**
 
 - Last updated: 2026-08-22
-- Total phases: 206
-- Tested: 189 | Partial: 12 | Untested: 0 | Audit: 5
+- Total phases: 207
+- Tested: 190 | Partial: 12 | Untested: 0 | Audit: 5
 - Weighted coverage: 95.3%
 
 > Maintenance rule: whenever a QG phase completes, scan its classification, update
@@ -17,13 +17,13 @@
 
 | Metric | Value |
 |---|---|
-| Phases total | 206 |
-| Tested | 189 |
+| Phases total | 207 |
+| Tested | 190 |
 | Partially tested | 12 |
 | Untested | 0 |
 | Audit (QG170) | 5 |
 | Weighted coverage | 95.3% |
-| SM tested | 50 |
+| SM tested | 51 |
 | Gravity tested | 29 |
 
 ### Observable-level coverage (SM quantities)
@@ -31,10 +31,10 @@
 | Metric | Value |
 |---|---|
 | Observables catalogued | 40 |
-| Tested | 32 |
+| Tested | 33 |
 | Partially tested | 5 |
-| Untested | 3 |
-| Observable coverage | 86.2% |
+| Untested | 2 |
+| Observable coverage | 88.8% |
 
 > QG170's original audit (25 tested / 9 partial / 14 untested of 48 quantities, 64%)
 > is superseded at observable level by QG171-182; the phase register below is the
@@ -52,7 +52,7 @@
 | Predictions | 11 | 0 | 0 | 4 | 15 |
 | ψ / Tensor Sector | 7 | 0 | 0 | 0 | 7 |
 | Quantum Mechanics | 11 | 0 | 0 | 0 | 11 |
-| Standard Model | 50 | 9 | 0 | 1 | 60 |
+| Standard Model | 51 | 9 | 0 | 1 | 61 |
 | TRM Dynamics | 15 | 0 | 0 | 0 | 15 |
 
 ---
@@ -76,7 +76,7 @@
 | Question | Phase | Status |
 |---|---|---|
 | Exact neutrino mass values m1,m2,m3: RESOLVED by QG203 (ABSOLUTE MASS ORIGIN) — closed-form D96 expressions m1=0, m2=1/(Σ√m·√(span/2))=8.72 meV (0.02%), m3=√#g/(Σm·√2)=49.4 meV (0.06%); ratio m2/m3=2Σm/(Σ√m·√(span·#g))=0.1766 exact; no oscillation-fit masses; experiment (KATRIN/production) still pending for confirmation | QG172/QG203 | RESOLVED |
-| Quark absolute mass running-scale/MS̄ conversion of the D96 mass law | QG173 | OPEN |
+| Quark absolute mass running-scale/MS̄ conversion of the D96 mass law: RESOLVED by QG204 (RUNNING ORIGIN) — the D96 mass law is natively an MS̄-scheme law at the natural scale (all six within 0.2%); spectral α_s=8/Σ√m reproduces α_s(MZ) within 5.4%; exponent q=#d/(2·#g) matches the QCD ratio within 0.6% | QG173/QG204 | RESOLVED |
 | Experimental validation of the 106 GeV resonance (primary falsifiable prediction; QG188A audit: INCONCLUSIVE — 95 GeV excess at 91.19 rung, 106 GeV window neither confirmed nor excluded; QG199 P1 update: still PENDING — no confirmed signal in 99–114 GeV; new ~152 GeV excess aligns with the 151.98 rung, not P1; HL-LHC 3000 fb⁻¹ projects 1–3 fb, decisive) | QG132/QG188A/QG190/QG199 | FALSIFIABLE-PENDING |
 | Collider test of sector-ladder physics (energy-ladder rung states) | QG130/QG192/QG200 | PREDICTED-NO-DATA (QG200 audit: 151.98 rung SUPPORTED by ~152 GeV excess, arXiv:2503.16245; 8 rungs PENDING, none falsified) |
 | Exact origin of the Bekenstein 1/4 coefficient: QG196 PROVES IMPOSSIBLE within D96/TRM without fitting and without importing π — the required bits-per-cell is π, and 1/occ₀=1/4 is wrong-units (1/(16π)); the exact 1/4 is a quantum/geometric statement requiring the imported 2π factor | QG12/QG13/QG184/QG185/QG196 | PARTIALLY-OPEN (proven impossible without imported π) |
@@ -163,7 +163,7 @@ incorporating QG171-182 results.
 | golden-ratio hierarchy | partial | QG152 | PARTIAL ROBUSTNESS |
 | physical calibration ladder | partial | QG129 | PARTIAL MAPPING |
 | exact neutrino masses m1,m2,m3 | tested | QG172/QG203 | CLOSED-FORM D96: m1=0, m2=1/(Σ√m·√(span/2))=8.72 meV (0.02%), m3=√#g/(Σm·√2)=49.4 meV (0.06%), ratio=2Σm/(Σ√m·√(span·#g))=0.1766 exact; ABSOLUTE MASS ORIGIN, no oscillation-fit masses |
-| quark running-scale/MS̄ conversion | untested | — | D96 mass law at MS̄ scale open |
+| quark running-scale/MS̄ conversion | tested | QG173/QG204 | RUNNING ORIGIN — D96 mass law natively MS̄ at natural scale (all six within 0.2%); spectral α_s=8/Σ√m=0.1248 (5.4%); exponent q=#d/(2·#g)=0.4773 matches QCD γ/β=0.48 (0.6%); m(μ)=m(m)·[α_s(μ)/α_s(m)]^q |
 | mass ordering (ν) | tested | QG179/QG203 | m1=0 normal ordering derived; absolute masses closed-form (QG203) |
 | 106 GeV resonance | untested | QG132/QG188A/QG190/QG199 | falsifiable prediction, not yet observed; INCONCLUSIVE evidence audit (95 GeV excess at 91.19 rung); PRE-REGISTERED window 99–114 GeV, central 106.39 GeV (QG190); QG199 P1 update: PENDING — no confirmed signal in window, limits 15–102 fb do not exclude; 152 GeV excess aligns with 151.98 rung (not P1); HL-LHC 3000 fb⁻¹ projects 1–3 fb |
 | collider sector-ladder signatures | untested | QG130/QG192/QG200 | predicted, no data; QG192 PRE-REGISTERED 9 rungs; QG200 evidence audit: CONFIRMED 3 (SM anchors), SUPPORTED 1 (151.98 = ~152 GeV excess, arXiv:2503.16245), PENDING 8, FALSIFIED 0 |
@@ -527,3 +527,4 @@ Historical entries are preserved; updates are additive.
 ### Standard Model
 
 - **QG204** — ABSOLUTE MASS ORIGIN (tested) — absolute neutrino masses as closed-form D96 expressions (no oscillation-fit masses): N = 1/Σ√m = 0.015605 eV (QG157 neutral scale); m1 = 0 (zero-mode, normal ordering QG179), m2 = 1/(Σ√m·√(span/2)) = 8.7216e-3 eV (phys 8.72 meV, dev 0.019%), m3 = √#g/(Σm·√2) = 49.3728e-3 eV (phys 49.4 meV, dev 0.055%); exact ratio m2/m3 = 2Σm/(Σ√m·√(span·#g)) = 0.176648 (phys 0.1765, dev 0.07%); PMNS cross-check m2/m3 ≈ 8.39·s13² (s13=√(occ0/(2Σm)), QG167); Σm_ν = 0.0581 eV < 0.12; closes the 'exact neutrino masses' open question (QG198 SM1) `TQMQG_AbsoluteNeutrinoMassOrigin.md`
+- **QG205** — RUNNING ORIGIN (tested) — quark running-scale/MS̄ conversion derived from D96 (no fitted QCD factors): the D96 mass law is NATIVELY an MS̄-scheme law at the natural scale — u/d/s at 2 GeV and c/b/t at μ=m_q all match PDG MS̄ within 0.2% (mc(mc)=1269 vs 1270, mb(mb)=4186 vs 4180, mt(mt)=172704 vs 172700); spectral α_s = 8/Σ√m = 0.1248 (PDG α_s(MZ)=0.1184, dev 5.4%, QG163); running exponent q = #d/(2·#g) = 42/88 = 0.4773 reproduces the QCD γ_m0/β0 = 0.48 within 0.6% (no QCD import); running law m(μ) = m(m)·[α_s(μ)/α_s(m)]^q; closes the 'quark running-scale/MS̄ conversion' open question (QG198 SM2) `TQMQG_QuarkRunningOrigin.md`
