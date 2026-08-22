@@ -8,14 +8,6 @@ namespace TQM.App.Services;
 /// </summary>
 public static class AtlasDataService
 {
-    public static IReadOnlyList<HeroStat> HeroStats { get; } =
-    [
-        new("4", "Primitives", "#4DD0E1"),
-        new("15", "Test Suites", "#64B5F6"),
-        new("47", "Tests", "#81C784"),
-        new("1", "Open Door", "#FFB74D"),
-    ];
-
     public static IReadOnlyList<string> HeroChain { get; } =
     [
         "Network", "Quantum", "Space", "Gravity", "Cosmology",
@@ -153,6 +145,27 @@ public static class AtlasDataService
     public static IReadOnlyList<ResearchNewsModel> ResearchNews { get; } =
     [
         new(
+            "qg203-209-sm-closure",
+            "The Standard-Model Layer Closes in Closed-Form D96 Laws",
+            "TQM-QG Milestone · Phases 203–209",
+            "The last open standard-model derivations are now exact closed-form D96 laws. Absolute neutrino masses (m1 = 0, m2 = 8.72 meV, m3 = 49.4 meV), the quark MS̄ running (native at the natural scale), and the lepton hierarchy (m_μ = me·Σm²/√occMom, m_τ = me·Σm²·λ₂) are all derived with no fitted parameters.",
+            "QG203 derives the absolute neutrino masses as closed-form D96 expressions: m2 = 1/(Σ√m·√(span/2)), m3 = √#g/(Σm·√2), with the exact ratio m2/m3 = 2Σm/(Σ√m·√(span·#g)). QG204 shows the quark mass law is natively MS̄ at the natural scale (all six within 0.2%) with spectral α_s = 8/Σ√m and the running exponent q = #d/(2·#g). QG209 closes the lepton hierarchy: m_μ = me·Σm²/√occMom (0.13%), m_τ = me·Σm²·λ₂ (0.28%). The gravity side closed in parallel: α=0 derived (QG206), metric ansatz PARTIAL UNIQUE (QG207), Hawking T ∝ 1/R preserved in the ψ sector (QG208).",
+            "For non-experts: the framework now derives the fermion mass spectrum — electrons, muons, taus, neutrinos, quarks — from the same D96 spectral geometry, with no fitted exponents. The remaining open frontier is experimental: the three pre-registered predictions await data.",
+            "The standard-model layer is complete: 212 research phases, 95% weighted coverage, and the open frontier is now experimental.",
+            "“The derivations are done. The experiments decide.”",
+            true,
+            [
+                new("TQM-QG 203", "ABSOLUTE MASS ORIGIN",
+                    "Neutrino masses m2 = 1/(Σ√m·√(span/2)) = 8.72 meV, m3 = √#g/(Σm·√2) = 49.4 meV; exact ratio.",
+                    "https://github.com/MagusDraconis/TQM/blob/TQM_v1.1/Docs/Research/TQMQG_AbsoluteNeutrinoMassOrigin.md"),
+                new("TQM-QG 204", "RUNNING ORIGIN",
+                    "Quark MS̄ running: native at natural scale (0.2%); spectral α_s; exponent q = #d/(2·#g).",
+                    "https://github.com/MagusDraconis/TQM/blob/TQM_v1.1/Docs/Research/TQMQG_QuarkRunningOrigin.md"),
+                new("TQM-QG 209", "EXACT LAW",
+                    "Lepton hierarchy: m_μ = me·Σm²/√occMom (0.13%), m_τ = me·Σm²·λ₂ (0.28%).",
+                    "https://github.com/MagusDraconis/TQM/blob/TQM_v1.1/Docs/Research/TQMQG_LeptonHierarchyExactLaw.md"),
+            ]),
+        new(
             "qg115-117-structure-from-actualization",
             "Structure Emerges From Actualization",
             "TQM-QG Breakthrough · Phases 115–117",
@@ -176,14 +189,6 @@ public static class AtlasDataService
                     "The parameter plane generates discrete attractor geometry classes (radius 2↔6, sharp threshold f/d≈2) — distinct stable geometries controlled by dynamics parameters.",
                     "https://github.com/MagusDraconis/TQM/blob/TQM_v1.1/Docs/Research/TQMQG_AttractorParameterOrigin.md"),
             ]),
-    ];
-
-    public static IReadOnlyList<MilestoneCounterModel> ResearchMilestones { get; } =
-    [
-        new("119", "TQM-QG Phases", "#4DD0E1"),
-        new("357", "Tests Passing", "#81C784"),
-        new("4", "Structure-From-Actualization Phases", "#BA68C8"),
-        new("1", "Milestone Breakthrough", "#FFB74D"),
     ];
 
     public static IReadOnlyList<TimelineEventModel> Timeline { get; } =

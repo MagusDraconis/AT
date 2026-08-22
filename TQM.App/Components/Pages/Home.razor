@@ -1,36 +1,55 @@
 @page "/"
 
 <PageTitle>TQM · Research Atlas</PageTitle>
+@using TQM.App.Services
+@inject ValidationDataService ValidationDataService
+
 <div>
     <MudImage Src="/images/tqm-image1_web_small.jpg" Height="150" ObjectFit="ObjectFit.Cover" style="width:100%"/>
 </div>
 
 <div class="hero">
-    <div class="hero-kicker">Research Atlas · v1.0</div>
+    <div class="hero-kicker">Research Atlas · v1.1</div>
     <div class="hero-title">THE Q-MODEL</div>
     <div class="hero-subtitle">From Q to Cosmology</div>
     <div class="hero-tagline">Structure is derivable. Content is realized.</div>
 
-    <div class="hero-stats">
-        @foreach (var s in AtlasDataService.HeroStats)
-        {
+    @if (_coverage is null)
+    {
+        <MudProgressCircular Indeterminate="true" Size="Size.Medium" Class="mt-4" />
+    }
+    else
+    {
+        <div class="hero-stats">
             <div class="stat-tile">
-                <div class="stat-value" style="color:@s.Color">@s.Value</div>
-                <div class="stat-label">@s.Label</div>
+                <div class="stat-value" style="color:#4DD0E1">@_coverage.Coverage.TotalPhases</div>
+                <div class="stat-label">TQM-QG Phases</div>
             </div>
-        }
-    </div>
+            <div class="stat-tile">
+                <div class="stat-value" style="color:#81C784">@_coverage.Coverage.Tested</div>
+                <div class="stat-label">Tested</div>
+            </div>
+            <div class="stat-tile">
+                <div class="stat-value" style="color:#FFB74D">@_coverage.Coverage.Partial</div>
+                <div class="stat-label">Partial</div>
+            </div>
+            <div class="stat-tile">
+                <div class="stat-value" style="color:#64B5F6">@(_coverage.Coverage.WeightedCoverage.ToString("P1", System.Globalization.CultureInfo.InvariantCulture))</div>
+                <div class="stat-label">Weighted coverage</div>
+            </div>
+        </div>
 
-    <div class="hero-chain">
-        @for (int i = 0; i < AtlasDataService.HeroChain.Count; i++)
-        {
-            <span class="chain-node">@AtlasDataService.HeroChain[i]</span>
-            @if (i < AtlasDataService.HeroChain.Count - 1)
+        <div class="hero-chain">
+            @for (int i = 0; i < AtlasDataService.HeroChain.Count; i++)
             {
-                <span class="chain-arrow">&rarr;</span>
+                <span class="chain-node">@AtlasDataService.HeroChain[i]</span>
+                @if (i < AtlasDataService.HeroChain.Count - 1)
+                {
+                    <span class="chain-arrow">&rarr;</span>
+                }
             }
-        }
-    </div>
+        </div>
+    }
 </div>
 
 <div class="page-section mt-4">
@@ -48,6 +67,61 @@
 </div>
 
 <div class="page-section">
+    <h2 class="section-heading">Recent Findings</h2>
+    <p class="muted">The latest TQM-QG results (phases 203–209): the standard-model derivations are now closed-form D96 laws.</p>
+    <MudGrid Spacing="3">
+        <MudItem xs="12" sm="6" lg="4">
+            <MudCard Elevation="1" Class="theory-card h-100">
+                <MudCardContent>
+                    <MudText Typo="Typo.caption" Class="text-uppercase fw-bold muted">QG203 · ABSOLUTE MASS ORIGIN</MudText>
+                    <MudText Typo="Typo.subtitle1" Class="fw-bold mt-1">Exact neutrino masses</MudText>
+                    <MudText Typo="Typo.body2" Class="muted mt-2">
+                        m1 = 0, m2 = 1/(Σ√m·√(span/2)) = 8.72 meV, m3 = √#g/(Σm·√2) = 49.4 meV.
+                        Closed-form D96 expressions; ratio m2/m3 = 2Σm/(Σ√m·√(span·#g)) exact.
+                    </MudText>
+                </MudCardContent>
+            </MudCard>
+        </MudItem>
+        <MudItem xs="12" sm="6" lg="4">
+            <MudCard Elevation="1" Class="theory-card h-100">
+                <MudCardContent>
+                    <MudText Typo="Typo.caption" Class="text-uppercase fw-bold muted">QG204 · RUNNING ORIGIN</MudText>
+                    <MudText Typo="Typo.subtitle1" Class="fw-bold mt-1">Quark MS̄ running</MudText>
+                    <MudText Typo="Typo.body2" Class="muted mt-2">
+                        The D96 mass law is natively MS̄ at the natural scale (all six within 0.2%);
+                        spectral α_s = 8/Σ√m; exponent q = #d/(2·#g) reproduces the QCD ratio.
+                    </MudText>
+                </MudCardContent>
+            </MudCard>
+        </MudItem>
+        <MudItem xs="12" sm="6" lg="4">
+            <MudCard Elevation="1" Class="theory-card h-100">
+                <MudCardContent>
+                    <MudText Typo="Typo.caption" Class="text-uppercase fw-bold muted">QG206–208 · GRAVITY CLOSURE</MudText>
+                    <MudText Typo="Typo.subtitle1" Class="fw-bold mt-1">α=0, metric ansatz, Hawking</MudText>
+                    <MudText Typo="Typo.body2" Class="muted mt-2">
+                        α = 0 derived (flat rotation curves are the scale-free deficit); metric ansatz
+                        PARTIAL UNIQUE; Hawking T ∝ 1/R preserved in the ψ sector.
+                    </MudText>
+                </MudCardContent>
+            </MudCard>
+        </MudItem>
+        <MudItem xs="12" sm="6" lg="4">
+            <MudCard Elevation="1" Class="theory-card h-100">
+                <MudCardContent>
+                    <MudText Typo="Typo.caption" Class="text-uppercase fw-bold muted">QG209 · EXACT LAW</MudText>
+                    <MudText Typo="Typo.subtitle1" Class="fw-bold mt-1">Lepton hierarchy</MudText>
+                    <MudText Typo="Typo.body2" Class="muted mt-2">
+                        m_μ = me·Σm²/√occMom, m_τ = me·Σm²·λ₂. Exact D96 ratios, no empirical
+                        exponents: m_μ 0.13%, m_τ 0.28%.
+                    </MudText>
+                </MudCardContent>
+            </MudCard>
+        </MudItem>
+    </MudGrid>
+</div>
+
+<div class="page-section">
     <h2 class="section-heading">Research Journey</h2>
     <div class="story-flow">
         @for (int i = 0; i < AtlasDataService.StoryChapters.Count; i++)
@@ -59,7 +133,7 @@
             }
         }
     </div>
-    <p class="muted mt-2">TRM &rarr; Problems Found &rarr; ResearchX &rarr; Structure/Content Split &rarr; Hostile Reviews &rarr; TQM v1.0.</p>
+    <p class="muted mt-2">TRM &rarr; Problems Found &rarr; ResearchX &rarr; Structure/Content Split &rarr; Hostile Reviews &rarr; TQM v1.0 &rarr; D96 Program &rarr; QG209.</p>
 </div>
 
 <div class="page-section">
@@ -91,21 +165,27 @@
 </div>
 
 <div class="page-section">
-    <h2 class="section-heading">The Open Door</h2>
+    <h2 class="section-heading">Prediction Status</h2>
     <MudCard Elevation="1" Class="theory-card">
         <MudCardContent>
-            <MudText Typo="Typo.subtitle1" Class="fw-bold">
-                <i class="bi bi-door-open story-icon"></i>The internal-3 node
-            </MudText>
-            <MudText Typo="Typo.body2" Class="muted">
-                One question remains open: why the internal multiplicity/count saturates at 3. Two faces
-                &mdash; N &le; 3 and the gauge count n = 3 &mdash; with one provisional no-go (T-09). The
-                derivation-paper blockers are the G4 metric&rarr;operator coupling, a native BDG derivation,
-                and a discriminating prediction.
-            </MudText>
-            <MudButton Variant="Variant.Outlined" Color="Color.Warning" Href="/open-problems" StartIcon="@Icons.Material.Filled.OpenInNew" Class="mt-2">
-                Open Problems
-            </MudButton>
+            @if (_outcomes is null)
+            {
+                <MudProgressCircular Indeterminate="true" Size="Size.Small" />
+            }
+            else
+            {
+                <MudText Typo="Typo.body2" Class="muted">
+                    The three pre-registered predictions (P1 106 GeV, P2 0νββ 2.02 meV, P3 sector-ladder)
+                    are immutable. Current states:
+                    <span class="status-chip status-pending">P1 PENDING</span>
+                    <span class="status-chip status-pending">P2 PENDING</span>
+                    <span class="status-chip status-partial">P3 SUPPORTED</span>
+                    &nbsp;(151.98 rung = ~152 GeV excess)
+                </MudText>
+                <MudButton Variant="Variant.Outlined" Color="Color.Primary" Href="/validation/prediction-status" Class="mt-2">
+                    Prediction status
+                </MudButton>
+            }
         </MudCardContent>
     </MudCard>
 </div>
@@ -118,4 +198,16 @@
         <span class="muted">&mdash; the taxonomy used throughout this atlas.</span>
     </div>
 </div>
+
+@code {
+    private PhysicsCoverageFile? _coverage;
+    private PredictionOutcomeFile? _outcomes;
+
+    protected override async Task OnInitializedAsync()
+    {
+        _coverage = await ValidationDataService.GetCoverageAsync();
+        _outcomes = await ValidationDataService.GetOutcomesAsync();
+    }
+}
+
 

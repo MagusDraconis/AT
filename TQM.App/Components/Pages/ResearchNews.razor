@@ -1,21 +1,47 @@
 @page "/research-news"
 
 <PageTitle>Research News · TQM</PageTitle>
+@inject ValidationDataService ValidationDataService
 
 <h2 class="section-heading">Research News</h2>
 <p class="muted">Latest breakthroughs from the TQM-QG unification program.</p>
 
-<div class="stat-row mb-4">
-    @foreach (var m in AtlasDataService.ResearchMilestones)
-    {
-        <div class="stat-tile">
-            <div class="stat-value" style="color:@m.Color">@m.Value</div>
-            <div class="stat-label">@m.Label</div>
-        </div>
-    }
-</div>
-
-@foreach (var item in AtlasDataService.ResearchNews)
+@if (_coverage is null)
 {
-    <ResearchNewsCard Item="@item" />
+    <MudProgressCircular Indeterminate="true" Size="Size.Medium" Class="mt-4" />
+}
+else
+{
+    <div class="stat-row mb-4">
+        <div class="stat-tile">
+            <div class="stat-value" style="color:#4DD0E1">@_coverage.Coverage.TotalPhases</div>
+            <div class="stat-label">TQM-QG Phases</div>
+        </div>
+        <div class="stat-tile">
+            <div class="stat-value" style="color:#81C784">@_coverage.Coverage.Tested</div>
+            <div class="stat-label">Tested</div>
+        </div>
+        <div class="stat-tile">
+            <div class="stat-value" style="color:#FFB74D">@_coverage.Coverage.Partial</div>
+            <div class="stat-label">Partial</div>
+        </div>
+        <div class="stat-tile">
+            <div class="stat-value" style="color:#64B5F6">@(_coverage.Coverage.WeightedCoverage.ToString("P1", System.Globalization.CultureInfo.InvariantCulture))</div>
+            <div class="stat-label">Weighted coverage</div>
+        </div>
+    </div>
+
+    @foreach (var item in AtlasDataService.ResearchNews)
+    {
+        <ResearchNewsCard Item="@item" />
+    }
+}
+
+@code {
+    private PhysicsCoverageFile? _coverage;
+
+    protected override async Task OnInitializedAsync()
+    {
+        _coverage = await ValidationDataService.GetCoverageAsync();
+    }
 }
