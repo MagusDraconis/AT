@@ -399,6 +399,8 @@ add(185,"TQMQG_BekensteinQuarterOrigin.md","PARTIAL ORIGIN","gravity","partial",
     "structure derived (S∝A QG12, M∝R QG184, T∝1/R QG184); deficit first-law gives S = A_cell/2 = A/(8π), not 1/4; exact 1/4 requires the 2π quantum factor T = κ/(2π) absent in D96/TRM (span/(2π)=1.019); 1/occ₀=1/4 is a label identity")
 add(186,"TQMQG_FrameDraggingOrigin.md","FRAME-DRAGGING ORIGIN","gravity","tested",
     "gravitomagnetic h_0i sector is a ψ-sector observable: conformally-flat ρ-only has h_0i=0 (no frame dragging); ψ spin-2 (QG44) restores linearized Einstein incl. h_0i; rotating deficit (matter=deficit G4ME) sources J; Ω_LT=G(3(J·r̂)r̂−J)/(2c²r³) → GP-B 41.1 vs 39.2 mas/yr, LAGEOS 30.7 vs ~31; D96 G (QG181) shifts <1%")
+add(187,"TQMQG_GpsCorrectionOrigin.md","GPS ORIGIN","gravity","tested",
+    "gravitational time dilation IS the QG21 redshift law: clock rate dτ/dt = ρ^(1/d) = √(−g_00), Δτ/τ = (ρ1/ρ2)^(1/d)−1 = redshift; weak-field (GM/c²)(1/r1−1/r2) → +45.7 μs/day vs GR 45.9 (−0.4%); + SR orbital −v²/(2c²) = −7.2 → NET +38.5 vs observed +38.6 μs/day (−0.2%) = −4.465e-10 GPS rate offset; ρ source = deficit field (G4ME)")
 
 # ── Observable-level SM audit (supersedes QG170's 25/9/14 with QG171-182 results) ──
 OBSERVABLES = [
@@ -449,10 +451,10 @@ OBSERVABLES = [
 GR_TOPICS = [
     dict(topic="Gravitational redshift", phase="QG21/G4-O0", status="tested",
          detail="Δν/ν = −ΔΦ; g₀₀ varies → redshift YES; redshift WITHOUT lensing in conformal sector"),
-    dict(topic="Time dilation (gravitational)", phase="—", status="untested",
-         detail="Only clock-rate via g₀₀ (QG21); no dedicated test"),
-    dict(topic="GPS correction", phase="—", status="untested",
-         detail="No dedicated report"),
+    dict(topic="Time dilation (gravitational)", phase="QG187", status="tested",
+         detail="IS the QG21 redshift law (clock ∝ ρ^(1/d) = √(−g_00)); +45.7 vs GR 45.9 μs/day"),
+    dict(topic="GPS correction", phase="QG187", status="tested",
+         detail="GPS ORIGIN: net +38.5 vs observed +38.6 μs/day (−0.2%); −4.465e-10 rate offset"),
     dict(topic="Shapiro delay", phase="QG26", status="tested",
          detail="= 0 in conformal (PPN γ=−1); would need ψ≠0 (QG22)"),
     dict(topic="Light bending", phase="QG26/G4-O0", status="tested",
@@ -529,8 +531,6 @@ OPEN_QUESTIONS = [
          phase="G4-ME4", status="OPEN"),
     dict(question="2D native program: Einstein tensor ≡ 0 in d=2; 2D→3D bridge not in one report",
          phase="G4-G0", status="OPEN-BRIDGE"),
-    dict(question="GPS correction / gravitational time dilation: no dedicated test (only clock-rate in QG21)",
-         phase="—", status="NOT-STARTED"),
 ]
 
 # ── Predictions ──

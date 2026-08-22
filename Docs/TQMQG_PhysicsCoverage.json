@@ -3,16 +3,16 @@
     "file": "Docs/TQMQG_PhysicsCoverage.md|json",
     "purpose": "single source of truth for all TQM-QG physics validation",
     "last_updated": "2026-08-22",
-    "phases_count": 188,
+    "phases_count": 189,
     "note": "Historical entries are never removed. Additive updates only."
   },
   "coverage": {
-    "total_phases": 188,
-    "tested": 175,
+    "total_phases": 189,
+    "tested": 176,
     "partial": 12,
     "untested": 0,
     "audit": 1,
-    "weighted_coverage": 0.9641,
+    "weighted_coverage": 0.9643,
     "domains": {
       "cosmology": {
         "tested": 1,
@@ -36,11 +36,11 @@
         "total": 16
       },
       "gravity": {
-        "tested": 24,
+        "tested": 25,
         "partial": 2,
         "untested": 0,
         "audit": 0,
-        "total": 26
+        "total": 27
       },
       "network": {
         "tested": 42,
@@ -245,11 +245,6 @@
       "question": "2D native program: Einstein tensor ≡ 0 in d=2; 2D→3D bridge not in one report",
       "phase": "G4-G0",
       "status": "OPEN-BRIDGE"
-    },
-    {
-      "question": "GPS correction / gravitational time dilation: no dedicated test (only clock-rate in QG21)",
-      "phase": "—",
-      "status": "NOT-STARTED"
     }
   ],
   "predictions": [
@@ -530,15 +525,15 @@
     },
     {
       "topic": "Time dilation (gravitational)",
-      "phase": "—",
-      "status": "untested",
-      "detail": "Only clock-rate via g₀₀ (QG21); no dedicated test"
+      "phase": "QG187",
+      "status": "tested",
+      "detail": "IS the QG21 redshift law (clock ∝ ρ^(1/d) = √(−g_00)); +45.7 vs GR 45.9 μs/day"
     },
     {
       "topic": "GPS correction",
-      "phase": "—",
-      "status": "untested",
-      "detail": "No dedicated report"
+      "phase": "QG187",
+      "status": "tested",
+      "detail": "GPS ORIGIN: net +38.5 vs observed +38.6 μs/day (−0.2%); −4.465e-10 rate offset"
     },
     {
       "topic": "Shapiro delay",
@@ -2093,6 +2088,14 @@
       "domain": "gravity",
       "validation": "tested",
       "key_result": "gravitomagnetic h_0i sector is a ψ-sector observable: conformally-flat ρ-only has h_0i=0 (no frame dragging); ψ spin-2 (QG44) restores linearized Einstein incl. h_0i; rotating deficit (matter=deficit G4ME) sources J; Ω_LT=G(3(J·r̂)r̂−J)/(2c²r³) → GP-B 41.1 vs 39.2 mas/yr, LAGEOS 30.7 vs ~31; D96 G (QG181) shifts <1%"
+    },
+    {
+      "phase": 187,
+      "file": "TQMQG_GpsCorrectionOrigin.md",
+      "classification": "GPS ORIGIN",
+      "domain": "gravity",
+      "validation": "tested",
+      "key_result": "gravitational time dilation IS the QG21 redshift law: clock rate dτ/dt = ρ^(1/d) = √(−g_00), Δτ/τ = (ρ1/ρ2)^(1/d)−1 = redshift; weak-field (GM/c²)(1/r1−1/r2) → +45.7 μs/day vs GR 45.9 (−0.4%); + SR orbital −v²/(2c²) = −7.2 → NET +38.5 vs observed +38.6 μs/day (−0.2%) = −4.465e-10 GPS rate offset; ρ source = deficit field (G4ME)"
     }
   ]
 }

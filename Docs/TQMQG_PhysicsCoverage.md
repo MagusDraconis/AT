@@ -3,8 +3,8 @@
 **Single source of truth for all TQM-QG physics validation.**
 
 - Last updated: 2026-08-22
-- Total phases: 188
-- Tested: 175 | Partial: 12 | Untested: 0 | Audit: 1
+- Total phases: 189
+- Tested: 176 | Partial: 12 | Untested: 0 | Audit: 1
 - Weighted coverage: 96.4%
 
 > Maintenance rule: whenever a QG phase completes, scan its classification, update
@@ -17,14 +17,14 @@
 
 | Metric | Value |
 |---|---|
-| Phases total | 188 |
-| Tested | 175 |
+| Phases total | 189 |
+| Tested | 176 |
 | Partially tested | 12 |
 | Untested | 0 |
 | Audit (QG170) | 1 |
 | Weighted coverage | 96.4% |
 | SM tested | 49 |
-| Gravity tested | 24 |
+| Gravity tested | 25 |
 
 ### Observable-level coverage (SM quantities)
 
@@ -47,7 +47,7 @@
 | Cosmology | 1 | 0 | 0 | 0 | 1 |
 | High-Energy Sector | 6 | 1 | 0 | 0 | 7 |
 | Foundations | 16 | 0 | 0 | 0 | 16 |
-| Gravity / GR | 24 | 2 | 0 | 0 | 26 |
+| Gravity / GR | 25 | 2 | 0 | 0 | 27 |
 | Network & Spectrum | 42 | 0 | 0 | 0 | 42 |
 | Predictions | 4 | 0 | 0 | 0 | 4 |
 | ψ / Tensor Sector | 7 | 0 | 0 | 0 | 7 |
@@ -87,7 +87,6 @@
 | Hawking temperature after ψ: no phase derives T ∝ 1/R explicitly with ψ≠0 | QG24 | OPEN |
 | Flat rotation-curve α=0: SEMI-NATURAL, symmetry assumption not derived | G4-ME4 | OPEN |
 | 2D native program: Einstein tensor ≡ 0 in d=2; 2D→3D bridge not in one report | G4-G0 | OPEN-BRIDGE |
-| GPS correction / gravitational time dilation: no dedicated test (only clock-rate in QG21) | — | NOT-STARTED |
 
 ---
 
@@ -108,8 +107,8 @@
 | Topic | Phase | Status | Detail |
 |---|---|---|---|
 | Gravitational redshift | QG21/G4-O0 | tested | Δν/ν = −ΔΦ; g₀₀ varies → redshift YES; redshift WITHOUT lensing in conformal sector |
-| Time dilation (gravitational) | — | untested | Only clock-rate via g₀₀ (QG21); no dedicated test |
-| GPS correction | — | untested | No dedicated report |
+| Time dilation (gravitational) | QG187 | tested | IS the QG21 redshift law (clock ∝ ρ^(1/d) = √(−g_00)); +45.7 vs GR 45.9 μs/day |
+| GPS correction | QG187 | tested | GPS ORIGIN: net +38.5 vs observed +38.6 μs/day (−0.2%); −4.465e-10 rate offset |
 | Shapiro delay | QG26 | tested | = 0 in conformal (PPN γ=−1); would need ψ≠0 (QG22) |
 | Light bending | QG26/G4-O0 | tested | QG26: NO MATCH (δ=0); G4-O0: weak-field lensing ∝ ΔΦ (potential diff, corrected by QG21) |
 | Mercury perihelion | QG103 | tested | +42.98″/century via ψ (γ=β=+1); ρ-only retrograde |
@@ -495,3 +494,4 @@ Historical entries are preserved; updates are additive.
 - **QG184** — MASS-RADIUS ORIGIN (tested) — M ∝ R from per-octave/log deficit (G4ME flat-rotation-curve profile): a ∝ −1/r → GM_eff ∝ R; QG13's E ∝ R^d was compact-void assumption; S ∝ R^(d−1) (QG12) → T ∝ 1/R Hawking restored `TQMQG_MassRadiusOrigin.md`
 - **QG185** — PARTIAL ORIGIN (partial) — structure derived (S∝A QG12, M∝R QG184, T∝1/R QG184); deficit first-law gives S = A_cell/2 = A/(8π), not 1/4; exact 1/4 requires the 2π quantum factor T = κ/(2π) absent in D96/TRM (span/(2π)=1.019); 1/occ₀=1/4 is a label identity `TQMQG_BekensteinQuarterOrigin.md`
 - **QG186** — FRAME-DRAGGING ORIGIN (tested) — gravitomagnetic h_0i sector is a ψ-sector observable: conformally-flat ρ-only has h_0i=0 (no frame dragging); ψ spin-2 (QG44) restores linearized Einstein incl. h_0i; rotating deficit (matter=deficit G4ME) sources J; Ω_LT=G(3(J·r̂)r̂−J)/(2c²r³) → GP-B 41.1 vs 39.2 mas/yr, LAGEOS 30.7 vs ~31; D96 G (QG181) shifts <1% `TQMQG_FrameDraggingOrigin.md`
+- **QG187** — GPS ORIGIN (tested) — gravitational time dilation IS the QG21 redshift law: clock rate dτ/dt = ρ^(1/d) = √(−g_00), Δτ/τ = (ρ1/ρ2)^(1/d)−1 = redshift; weak-field (GM/c²)(1/r1−1/r2) → +45.7 μs/day vs GR 45.9 (−0.4%); + SR orbital −v²/(2c²) = −7.2 → NET +38.5 vs observed +38.6 μs/day (−0.2%) = −4.465e-10 GPS rate offset; ρ source = deficit field (G4ME) `TQMQG_GpsCorrectionOrigin.md`
