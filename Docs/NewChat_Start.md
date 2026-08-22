@@ -183,7 +183,7 @@ Open Questions:
 - P1 (106 GeV) status after QG199: PENDING — window 99–114 GeV neither confirmed nor excluded; 95 GeV cluster = 91.19 rung; new 152 GeV excess = 151.98 rung (P3, not P1); HL-LHC decisive
 - sector ladder (P3) after QG200/QG201: 12 rungs audited — CONFIRMED 3 (SM anchors Z/H/t), SUPPORTED 1 (151.98 = ~152 GeV excess, MODERATE SUPPORT alignment 2.80σ, 1-in-386), PENDING 8, none falsified
 - the anti-fit reaudit (QG214) confirms the methodology is clean: QG190-213 added 3 PRE-REGISTERED + 1 REGISTRY LOCK + 20 PREDICTION, zero retro-fit/overfit; RETRO-FIT=2 (QG140/146), OVERFIT=1 (QG147) still correct; risk confined to the fitting era QG140-148
-- the QG closure audits culminated: QG215 PARTIAL QG → QG219 EFFECTIVE QG (after QG216/218: amplitude magnitude + complex structure) → QG221 NEAR-COMPLETE QG (after QG220: phase θ = 2πk/N derived) → QG223 COMPLETE QG (after QG222: native metric dynamics; ψ adjudicated as an ontological boundary + tensor-sector question, NOT a blocker); QG224 confirms MONOGRAPH READY (7/7 readiness checks, paper outline generated); QG225 verifies the phase derivation DAG is ACYCLIC (226 nodes, 1349 forward edges, no cycles, 10 correction annotations only); MONO001 assembles the complete 18-chapter monograph structure (161 distinct phases referenced); the theory is complete within its stated primitives (Q-events → ρ and ψ)
+- the QG closure audits culminated: QG215 PARTIAL QG → QG219 EFFECTIVE QG (after QG216/218: amplitude magnitude + complex structure) → QG221 NEAR-COMPLETE QG (after QG220: phase θ = 2πk/N derived) → QG223 COMPLETE QG (after QG222: native metric dynamics; ψ adjudicated as an ontological boundary + tensor-sector question, NOT a blocker); QG224 confirms MONOGRAPH READY (7/7 readiness checks, paper outline generated); QG225 verifies the phase derivation DAG is ACYCLIC (226 nodes, 1349 forward edges, no cycles, 10 correction annotations only); MONO001 assembles the complete 18-chapter monograph structure (161 distinct phases referenced); MONO003 runs a hostile-referee objection audit — STRONG (38/50 closed, 12 partial, 0 open, no FATAL survives); the theory is complete within its stated primitives (Q-events → ρ and ψ)
 
 ## Status Table
 
@@ -514,10 +514,12 @@ QG225: dependency graph audit (ACYCLIC — audit only, verifies the full phase d
 
 MONO001: quantum gravity monograph assembly (MONOGRAPH STRUCTURE — MONO001, assembly only from QG0-QG225, no new physics: complete 18-chapter monograph structure assembled with source QG phases per chapter — 1 Executive Summary [QG0/51/215/219/221/223/224/225], 2 Primitive Ontology [QG1/11/23/24/40/50/51/53/55/68], 3 Q-Events [QG1/7/11/29/30/34/104], 4 Emergent Density ρ [QG0/1/4/89/116/155], 5 Quantum Mechanics [QG61-74 + QG216/218/220], 6 Spacetime Emergence [QG2/3/5/10/14/15/197/207/222], 7 Gravity [QG0/6/12/13/103/181-187/196/198/209/213/222], 8 Matter [QG89/194/195/196/206], 9 Standard Model [QG60/78-85/118/134/138/140/149-169/171-180/203-205/209-211], 10 Tensor Sector ψ [QG16-25/43-59/103/186/208/213/223], 11 Validation Program [QG76/104-119/170/224/225], 12 Blind Tests [QG176/177], 13 Anti-Fit Audits [QG147/148/189/190/215], 14 Prediction Registry [QG132/188/190-194], 15 Prediction Outcomes [QG199-203], 16 Discussion [QG212/214/223/224], 17 Limitations [QG76/77/85/135/136/139/142-144/146/152/185/196/223], 18 Falsification Paths [QG132/190-193/202/203]; structure checks: 18 sequential chapters, all with sources, 161 distinct phases referenced [71.2% of the 226-phase register], 260 total references; title 'Quantum Gravity from a Counting Measure'; assembly only).
 
+MONO003: referee objection audit (STRONG [no open objections] — MONO003, hostile-referee review of QG0-QG225, no new physics: Top-50 objections catalogued across five focus areas [imported physics 10, circularity 10, hidden assumptions 10, prediction ambiguity 10, falsification weaknesses 10]; severity FATAL 1 / MAJOR 14 / MINOR 23 / EDITORIAL 12; resolution RESOLVED 30 / BOUNDARY 6 / PARTIAL 12 / OPEN 0; VERDICT STRONG — 38/50 closed [resolved+boundary], 12 partial [documented gaps + experiment-ahead-of-data predictions], 0 open, no FATAL objection survives; the strongest objections are each resolved or explicit boundaries: ψ new primitive [BOUNDARY, second of two primitives QG51/223], BDG dynamics imported [RESOLVED QG222 native dynamics], Bekenstein 1/4 requires imported π [BOUNDARY, QG185/196 impossibility proof], cosmology not derived [BOUNDARY, QG76/77 out of scope], Born rule 'by construction' circularity [RESOLVED QG216 |ψ|²=ρ is the measure], D96 self-selection [RESOLVED QG159/160], weak-scale circularity [RESOLVED QG168], P1 window wide [PARTIAL pre-registered ±half-spacing QG190], P3 look-elsewhere [RESOLVED QG202 1-in-386 z=2.80σ], P2 below 0νββ reach [PARTIAL explicit falsification condition, nEXO/LEGEND-1000]; genuine open items are all PARTIAL or BOUNDARY: ψ existence [boundary], Bekenstein 1/4 [impossibility boundary], cosmology [out of scope], P1/P2 falsification reach [awaiting HL-LHC/nEXO], ladder multiplicity derivation transparency [O35], branching distribution [O22]).
+
 Milestone counters:
 
-TQM-QG 228 phases
-570+ TQM-QG tests verified
+TQM-QG 229 phases
+573+ TQM-QG tests verified
 
 ### QG154: Neutrino Sector Origin
 
@@ -541,5 +543,5 @@ NEUTRINO ORIGIN
 
 Milestone counters:
 
-TQM-QG 228 phases
-570+ TQM-QG tests verified
+TQM-QG 229 phases
+573+ TQM-QG tests verified
