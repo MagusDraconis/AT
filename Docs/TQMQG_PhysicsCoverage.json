@@ -3,16 +3,16 @@
     "file": "Docs/TQMQG_PhysicsCoverage.md|json",
     "purpose": "single source of truth for all TQM-QG physics validation",
     "last_updated": "2026-08-23",
-    "phases_count": 231,
+    "phases_count": 232,
     "note": "Historical entries are never removed. Additive updates only."
   },
   "coverage": {
-    "total_phases": 231,
-    "tested": 201,
+    "total_phases": 232,
+    "tested": 202,
     "partial": 12,
     "untested": 0,
     "audit": 18,
-    "weighted_coverage": 0.9156,
+    "weighted_coverage": 0.9159,
     "domains": {
       "cosmology": {
         "tested": 1,
@@ -29,11 +29,11 @@
         "total": 7
       },
       "foundation": {
-        "tested": 19,
+        "tested": 20,
         "partial": 0,
         "untested": 0,
         "audit": 13,
-        "total": 32
+        "total": 33
       },
       "gravity": {
         "tested": 33,
@@ -2432,6 +2432,14 @@
       "domain": "foundation",
       "validation": "tested",
       "key_result": "initial conditions DERIVED (no new primitives, deterministic): the universe's initial state is the UNIFORM CRITICAL STATE ρ_k = 1/K (μ=1, α=0); (1) STATIONARITY — an initial state must be a fixed point of the actualization flow, ∂_t ρ = (ln μ)·ρ = 0 [QG222] requires μ=1 [critical]; any μ≠1 is a transient, not an initial state; (2) SCALE-FREENESS — α=0 [equal deficit per octave, QG206] is the unique scale-free state [spread 0 vs >0 for α=±0.3]; α≠0 introduces a preferred scale = information with no source; (3) MINIMUM-INFORMATION — among critical states the least-committal allocation is uniform ρ_k = 1/K, which maximizes the native entropy H(α) [H(0)=ln K ≥ H(α), G4-RHO] — zero initial-condition input needed; (4) CRITICAL BRANCHING — the uniform state IS the critical branching state [QG216 at μ=1: ρ_k = μ^k/S → 1/K]; (5) ATTRACTOR — the universal attractor [QG116b] is a stable exact fixed point with basin ≥ 0.9, so residual content is ERASED and no fine-tuning is required; initial conditions are DERIVED, not assumed — the unique minimum-information fixed point of the actualization flow; CLOSES the QG226 TOE criterion 6 [initial conditions: OPEN → DERIVED]; TOE score rises from 6.5/10 toward 7.0/10"
+    },
+    {
+      "phase": 230,
+      "file": "TQMQG_InformationContentOrigin.md",
+      "classification": "INFORMATION ORIGIN",
+      "domain": "foundation",
+      "validation": "tested",
+      "key_result": "information content DERIVED (no new primitives, deterministic): non-zero information appears from the minimum-information state [QG227] through the actualization process itself — information IS the deviation of the REALIZED record from the UNIFORM state, I = ln K − H = KL(ρ‖uniform) ≥ 0; (1) ACTUALIZATION EVENTS are discrete counts [QG1/29]; counting is Poisson — realized counts have non-zero variance [QG15/30]; the uniform state is only the EXPECTED profile; (2) SYMMETRY BREAKING — the uniform state ρ_k=1/K is permutation-symmetric; actualization realizes ONE branching history, breaking the symmetry; (3) BRANCH DIFFERENTIATION — realized per-generation populations A_k = μ^k·(1+δ_k) differ from the uniform mean [per-generation variance]; (4) ENTROPY GROWTH — I = ln K − H(ρ_real) = KL(ρ‖uniform) ≥ 0, zero at uniform, positive for any departure [I(μ=0.5)=0.48 nats, I(μ=2)=0.48]; (5) RECORD FORMATION — the realized record is the D96 octave spectrum [4,4,87] [95 modes, QG210] with I_occ ≈ 0.75 nats ≈ 1.08 bits; information appears because actualization is a DISCRETE counting process whose intrinsic fluctuations generate non-uniformity — no information is imported; CLOSES the QG226 TOE criterion 8 [information origin: PARTIAL → DERIVED]; TOE score rises from 6.5 toward 7.5/10"
     }
   ]
 }
