@@ -182,7 +182,7 @@ Open Questions:
 - the authoritative catalog of ALL unresolved physics questions is the QG198 Top-20 audit (Docs/Research/TQMQG_FinalOpenProblemsAudit.md), ranked by impact·3+feasibility·2+falsifiability·2; top item = 106 GeV resonance (P1, score 35), runner-up cluster = neutrino sector (SM1 exact masses, SM3 mass ordering, P2 0νββ, scores 31–33); post-QG204 Top-10 (QG205): P1 106 GeV (35) > P2 0νββ (31) > P3 ladder (30) > G2 rotation-curve (26) > G3 conformal optics (22) > F1 metric ansatz (21) = SM4 lepton hierarchy (21) > G1 Hawking-ψ (20) = F2 Bekenstein 1/4 (20) > SM6 family index (17)
 - P1 (106 GeV) status after QG199: PENDING — window 99–114 GeV neither confirmed nor excluded; 95 GeV cluster = 91.19 rung; new 152 GeV excess = 151.98 rung (P3, not P1); HL-LHC decisive
 - sector ladder (P3) after QG200/QG201: 12 rungs audited — CONFIRMED 3 (SM anchors Z/H/t), SUPPORTED 1 (151.98 = ~152 GeV excess, MODERATE SUPPORT alignment 2.80σ, 1-in-386), PENDING 8, none falsified
-- key open items: 106 GeV resonance validation (QG132/QG188A/QG190/QG199), sector-ladder collider test (QG130/QG192/QG200), Bekenstein 1/4 (QG196, proven impossible without imported π); exact neutrino masses RESOLVED (QG203), quark MS̄ conversion RESOLVED (QG204), flat rotation-curve α=0 RESOLVED (QG206), metric ansatz PARTIALLY-RESOLVED (QG207), Hawking-with-ψ RESOLVED (QG208), lepton hierarchy EXACT LAW (QG209), family index EXACT ORIGIN (QG210)
+- key open items: 106 GeV resonance validation (QG132/QG188A/QG190/QG199), sector-ladder collider test (QG130/QG192/QG200), Bekenstein 1/4 (QG196, proven impossible without imported π); the QG211 frontier audit is authoritative (Top-10: P1 106 GeV, P2 0νββ, P3 ladder, G3 conformal optics, F2 Bekenstein 1/4, P4 redshift-no-lensing, SM5 quark hierarchy, F3 ψ origin, P5 curvature-Poisson, SM7 golden ratio)
 
 ## Status Table
 
@@ -483,10 +483,12 @@ QG209: lepton hierarchy exact law (EXACT LAW — the lepton hierarchy is an exac
 
 QG210: family index exact origin (EXACT ORIGIN — familyCount = floor(log2(span)) + 1 = floor(2.6786) + 1 = 3 with D96 span = 6.4025 [QG161]; family = 1,2,3 are the three octave bands [4,4,87] modes [band 1 [ω_min,2ω_min) 4 modes, band 2 [2ω_min,4ω_min) 4, band 3 [4ω_min,8ω_min) 87]; NO FOURTH family because span 6.4025 < 8 [4th-octave threshold, margin 1.5975 = 20%]; the family index is the octave-band index — an exact D96 spectral identity; consistent with the lepton hierarchy [QG209] and gauge sector [QG161]; upgrades QG135 PARTIAL ORIGIN to EXACT ORIGIN and closes the QG80 'why three generations' question).
 
+QG211: frontier audit (FRONTIER AUDIT — the true final research frontier after QG210, excluding resolved/partial-resolved/superseded [SM1 QG203, SM2 QG204, G2 QG206, F1 QG207, G1 QG208, SM4 QG209, SM6 QG210]: Top-10 → P1 106 GeV [35] > P2 0νββ [31] > P3 ladder [30] > G3 conformal optics [22] > F2 Bekenstein 1/4 [20] > P4 redshift-no-lensing [19] = SM5 quark hierarchy [19] > F3 ψ origin [18] > P5 curvature-Poisson [17] > SM7 golden ratio [14]; PREDICTION 5 / GRAVITY 1 / FOUNDATIONAL 2 / SM 2; the frontier is now experimental [top-3 pre-registered predictions] + the conformal/tensor gap + Bekenstein 1/4 [proven impossible] + ψ origin; no SM mass derivation remains open).
+
 Milestone counters:
 
-TQM-QG 213 phases
-525+ TQM-QG tests verified
+TQM-QG 214 phases
+528+ TQM-QG tests verified
 
 ### QG154: Neutrino Sector Origin
 
@@ -510,5 +512,5 @@ NEUTRINO ORIGIN
 
 Milestone counters:
 
-TQM-QG 213 phases
-525+ TQM-QG tests verified
+TQM-QG 214 phases
+528+ TQM-QG tests verified
