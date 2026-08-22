@@ -179,10 +179,8 @@ Oblique parameters origin (S = occ₀/Σm = 0.0421, T = 2S = 0.0842, U = 0; T = 
 
 Open Questions:
 
-- exact neutrino mass values (splittings derived in QG172; m1=0 normal ordering; Majorana character derived QG179, awaiting 0νββ experimental confirmation)
-- quark absolute masses (derived in QG173; running-scale/MS̄ conversion of the D96 mass law still open)
-- experimental validation of the 106 GeV resonance (QG132 primary falsifiable prediction)
-- collider test of sector-ladder physics (collider signatures of the energy-ladder rung states)
+- the authoritative catalog of ALL unresolved physics questions is the QG198 Top-20 audit (Docs/Research/TQMQG_FinalOpenProblemsAudit.md), ranked by impact·3+feasibility·2+falsifiability·2; top item = 106 GeV resonance (P1, score 35), runner-up cluster = neutrino sector (SM1 exact masses, SM3 mass ordering, P2 0νββ, scores 31–33)
+- key open items: exact neutrino mass values (QG172), quark running-scale/MS̄ conversion (QG173), 106 GeV resonance validation (QG132/QG188A/QG190), sector-ladder collider test (QG130/QG192), Hawking T with ψ≠0 (QG24), flat rotation-curve α=0 (G4-ME4), metric ansatz uniqueness (G4-A0), Bekenstein 1/4 (QG196, proven impossible without imported π)
 
 ## Status Table
 
@@ -457,10 +455,12 @@ QG196: quarter coefficient origin (PARTIAL ORIGIN — impossibility proof: exact
 
 QG197: 2D→3D bridge (FULL BRIDGE — dimension-generic conformal ansatz; the (d−2) factor connects 2D degeneracy to 3D Einstein structure).
 
+QG198: final open problems audit (OPEN PROBLEMS AUDIT — Top-20 unresolved questions from coverage + prediction registry, excluding resolved/partial-resolved/audits; ranked by impact·3+feasibility·2+falsifiability·2 → P1 106 GeV (35) > SM1 neutrino masses (33) > SM3 mass ordering (32) > P2 0νββ (31) > P3 ladder (30); priorities HIGH 5 / MEDIUM 10 / LOW 5; recommended next target = 106 GeV at LHC Run 3).
+
 Milestone counters:
 
-TQM-QG 200 phases
-486+ TQM-QG tests verified
+TQM-QG 201 phases
+489+ TQM-QG tests verified
 
 ### QG154: Neutrino Sector Origin
 
@@ -484,5 +484,5 @@ NEUTRINO ORIGIN
 
 Milestone counters:
 
-TQM-QG 200 phases
-486+ TQM-QG tests verified
+TQM-QG 201 phases
+489+ TQM-QG tests verified

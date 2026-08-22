@@ -3,8 +3,8 @@
 **Single source of truth for all TQM-QG physics validation.**
 
 - Last updated: 2026-08-22
-- Total phases: 200
-- Tested: 187 | Partial: 12 | Untested: 0 | Audit: 1
+- Total phases: 201
+- Tested: 188 | Partial: 12 | Untested: 0 | Audit: 1
 - Weighted coverage: 96.6%
 
 > Maintenance rule: whenever a QG phase completes, scan its classification, update
@@ -17,8 +17,8 @@
 
 | Metric | Value |
 |---|---|
-| Phases total | 200 |
-| Tested | 187 |
+| Phases total | 201 |
+| Tested | 188 |
 | Partially tested | 12 |
 | Untested | 0 |
 | Audit (QG170) | 1 |
@@ -46,7 +46,7 @@
 |---|---|---|---|---|---|
 | Cosmology | 1 | 0 | 0 | 0 | 1 |
 | High-Energy Sector | 6 | 1 | 0 | 0 | 7 |
-| Foundations | 16 | 0 | 0 | 0 | 16 |
+| Foundations | 17 | 0 | 0 | 0 | 17 |
 | Gravity / GR | 29 | 2 | 0 | 0 | 31 |
 | Network & Spectrum | 42 | 0 | 0 | 0 | 42 |
 | Predictions | 11 | 0 | 0 | 0 | 11 |
@@ -512,3 +512,7 @@ Historical entries are preserved; updates are additive.
 - **QG196** — MATTER ORIGIN (tested) — independent T_μν recovered WITHOUT defining T ≡ G/κ: matter sector = DEFICIT DUST T_μν = (ρ̄−ρ)·v_μ·v_ν (network stress = deficit mass ρ_m QG194, link energy = actualization deficit QG89, flow = native geodesics QG20-21); conserved (Noether deficit-mass conservation + geodesic flow); independent of G (built from ρ_m and v, NOT the metric geometry — escapes G4-G4 Lovelock obstruction); G = κT becomes a DYNAMICAL relation not an identity; resolves the 'G=κT is an identity' open question `TQMQG_MatterSectorOrigin.md`
 - **QG197** — PARTIAL ORIGIN (tested) — impossibility proof: exact 1/4 in S=A/4 CANNOT be derived from D96/TRM without fitting and without importing π — structure (S∝A, M∝R, T∝1/R) fully derived; QG12 boundary counting gives S/A = ln2/(4π) = 0.055; deficit first-law 1/(8π) = 0.040; S/A = 1/4 forces b = π bits/cell (imported); 1/occ₀ = 1/4 is wrong-units (gives 1/(16π) ≈ 0.020, needs π = 1/4); strengthens QG185 `TQMQG_QuarterCoefficientOrigin.md`
 - **QG198** — FULL BRIDGE (tested) — native 2D program connects to d≥3 gravity: ρ and conformal ansatz g = ρ^(2/d)η are dimension-generic; Einstein tensor G_11=((d−1)(d−2)/2)(σ′)², G_ii=(d−2)[σ″+((d−3)/2)(σ′)²] analytic in d; the (d−2) factor is the bridge — zero at d=2 (G≡0, G4-G0 geometric identity), non-zero at d≥3 (G4-G2/G3); SAME ρ at d=3 → G_11=0.053, G_ii=0.416, conserved (Bianchi <1e-8), d≥3 derived (QG2); closes the G4-G0 OPEN-BRIDGE gap `TQMQG_D2ToD3Bridge.md`
+
+### Foundations
+
+- **QG199** — OPEN PROBLEMS AUDIT (tested) — final unresolved-problem audit (Top-20): catalog of 20 open problems from coverage + prediction registry, excluding resolved/partial-resolved/audits; categories FOUNDATIONAL(2) GRAVITY(5) STANDARD MODEL(8) PREDICTION(5); ranked by impact·3+feasibility·2+falsifiability·2 → P1 106 GeV (35) > SM1 neutrino masses (33) > SM3 mass ordering (32) > P2 0νββ (31) > P3 ladder (30); priorities HIGH 5 / MEDIUM 10 / LOW 5; recommended next target = 106 GeV (LHC Run 3); runner-up cluster = neutrino sector (SM1/SM3/P2) `TQMQG_FinalOpenProblemsAudit.md`
