@@ -3,16 +3,16 @@
     "file": "Docs/TQMQG_PhysicsCoverage.md|json",
     "purpose": "single source of truth for all TQM-QG physics validation",
     "last_updated": "2026-08-22",
-    "phases_count": 190,
+    "phases_count": 191,
     "note": "Historical entries are never removed. Additive updates only."
   },
   "coverage": {
-    "total_phases": 190,
-    "tested": 177,
+    "total_phases": 191,
+    "tested": 178,
     "partial": 12,
     "untested": 0,
     "audit": 1,
-    "weighted_coverage": 0.9645,
+    "weighted_coverage": 0.9647,
     "domains": {
       "cosmology": {
         "tested": 1,
@@ -50,11 +50,11 @@
         "total": 42
       },
       "predictions": {
-        "tested": 5,
+        "tested": 6,
         "partial": 0,
         "untested": 0,
         "audit": 0,
-        "total": 5
+        "total": 6
       },
       "psi": {
         "tested": 7,
@@ -197,8 +197,8 @@
       "status": "OPEN"
     },
     {
-      "question": "Experimental validation of the 106 GeV resonance (primary falsifiable prediction)",
-      "phase": "QG132",
+      "question": "Experimental validation of the 106 GeV resonance (primary falsifiable prediction; QG188A audit: INCONCLUSIVE — 95 GeV excess at 91.19 rung, 106 GeV window neither confirmed nor excluded)",
+      "phase": "QG132/QG188A",
       "status": "FALSIFIABLE-PENDING"
     },
     {
@@ -251,7 +251,7 @@
     {
       "prediction": "106 GeV resonance (scalar sector transition)",
       "phase": "QG132",
-      "status": "FALSIFIABLE — not yet observed"
+      "status": "FALSIFIABLE — not yet observed; QG188A audit INCONCLUSIVE"
     },
     {
       "prediction": "Sector-ladder collider signatures (energy-ladder rung states)",
@@ -506,8 +506,8 @@
     {
       "name": "106 GeV resonance",
       "status": "untested",
-      "phase": "QG132",
-      "detail": "falsifiable prediction, not yet observed"
+      "phase": "QG132/QG188A",
+      "detail": "falsifiable prediction, not yet observed; INCONCLUSIVE audit (95 GeV excess cluster at 91.19 rung; window not excluded)"
     },
     {
       "name": "collider sector-ladder signatures",
@@ -2104,6 +2104,14 @@
       "domain": "predictions",
       "validation": "tested",
       "key_result": "10 remaining falsifiable predictions from coverage JSON: 2 testable NOW (106 GeV P1, sector-ladder P2), 3 SOON (0νββ P3, mass-ordering P6, neutrino masses P7), 5 inaccessible (P4,P5,P8,P9,P10); ranked by impact·3+feas·2+fals·2 → Top-1 = 106 GeV (QG132, score 35.0, LHC Run 3), Top-SOON = 0νββ m_ββ=2.02e-3 eV (QG179)"
+    },
+    {
+      "phase": 189,
+      "file": "TQMQG_106GeVResonanceAudit.md",
+      "classification": "INCONCLUSIVE",
+      "domain": "predictions",
+      "validation": "tested",
+      "key_result": "published record: ~95 GeV scalar excess cluster (CMS γγ 2.9σ, ATLAS γγ 1.7σ, combined 3.1σ; CMS ττ 2.6σ; LEP bb̄ 2.3σ) aligns with 91.19 GeV rung (dev 4.5%) NOT predicted 106.39 GeV (−10.4%); CMS 70–110 & ATLAS 66–110 GeV full-Run-2 diphoton null searches cover 106 GeV (limits 15–102 fb, no excess); LEP2 SM-like < 114.4 GeV (SM-strength hZZ only); prediction NOT excluded; Run 3 no confirmed increase; HL-LHC decisive"
     }
   ]
 }

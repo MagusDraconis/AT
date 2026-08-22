@@ -403,6 +403,8 @@ add(187,"TQMQG_GpsCorrectionOrigin.md","GPS ORIGIN","gravity","tested",
     "gravitational time dilation IS the QG21 redshift law: clock rate dτ/dt = ρ^(1/d) = √(−g_00), Δτ/τ = (ρ1/ρ2)^(1/d)−1 = redshift; weak-field (GM/c²)(1/r1−1/r2) → +45.7 μs/day vs GR 45.9 (−0.4%); + SR orbital −v²/(2c²) = −7.2 → NET +38.5 vs observed +38.6 μs/day (−0.2%) = −4.465e-10 GPS rate offset; ρ source = deficit field (G4ME)")
 add(188,"TQMQG_PredictionAudit.md","PREDICTION AUDIT","predictions","tested",
     "10 remaining falsifiable predictions from coverage JSON: 2 testable NOW (106 GeV P1, sector-ladder P2), 3 SOON (0νββ P3, mass-ordering P6, neutrino masses P7), 5 inaccessible (P4,P5,P8,P9,P10); ranked by impact·3+feas·2+fals·2 → Top-1 = 106 GeV (QG132, score 35.0, LHC Run 3), Top-SOON = 0νββ m_ββ=2.02e-3 eV (QG179)")
+add(189,"TQMQG_106GeVResonanceAudit.md","INCONCLUSIVE","predictions","tested",
+    "published record: ~95 GeV scalar excess cluster (CMS γγ 2.9σ, ATLAS γγ 1.7σ, combined 3.1σ; CMS ττ 2.6σ; LEP bb̄ 2.3σ) aligns with 91.19 GeV rung (dev 4.5%) NOT predicted 106.39 GeV (−10.4%); CMS 70–110 & ATLAS 66–110 GeV full-Run-2 diphoton null searches cover 106 GeV (limits 15–102 fb, no excess); LEP2 SM-like < 114.4 GeV (SM-strength hZZ only); prediction NOT excluded; Run 3 no confirmed increase; HL-LHC decisive")
 
 # ── Observable-level SM audit (supersedes QG170's 25/9/14 with QG171-182 results) ──
 OBSERVABLES = [
@@ -445,7 +447,7 @@ OBSERVABLES = [
     dict(name="exact neutrino masses m1,m2,m3", status="untested", phase="—", detail="splittings derived (QG172); absolute values open"),
     dict(name="quark running-scale/MS̄ conversion", status="untested", phase="—", detail="D96 mass law at MS̄ scale open"),
     dict(name="mass ordering (ν)", status="partial", phase="QG179", detail="m1=0 normal ordering derived; experiment pending"),
-    dict(name="106 GeV resonance", status="untested", phase="QG132", detail="falsifiable prediction, not yet observed"),
+    dict(name="106 GeV resonance", status="untested", phase="QG132/QG188A", detail="falsifiable prediction, not yet observed; INCONCLUSIVE audit (95 GeV excess cluster at 91.19 rung; window not excluded)"),
     dict(name="collider sector-ladder signatures", status="untested", phase="QG130", detail="predicted, no data"),
 ]
 
@@ -513,8 +515,8 @@ OPEN_QUESTIONS = [
          phase="QG172", status="OPEN"),
     dict(question="Quark absolute mass running-scale/MS̄ conversion of the D96 mass law",
          phase="QG173", status="OPEN"),
-    dict(question="Experimental validation of the 106 GeV resonance (primary falsifiable prediction)",
-         phase="QG132", status="FALSIFIABLE-PENDING"),
+    dict(question="Experimental validation of the 106 GeV resonance (primary falsifiable prediction; QG188A audit: INCONCLUSIVE — 95 GeV excess at 91.19 rung, 106 GeV window neither confirmed nor excluded)",
+         phase="QG132/QG188A", status="FALSIFIABLE-PENDING"),
     dict(question="Collider test of sector-ladder physics (energy-ladder rung states)",
          phase="QG130", status="PREDICTED-NO-DATA"),
     dict(question="Exact origin of the Bekenstein 1/4 coefficient (structure S∝A, M∝R, T∝1/R fully derived QG12/QG184; deficit first-law gives 1/2 = A/(8π); exact 1/4 needs the 2π quantum factor T = κ/(2π), not in D96/TRM; 1/occ₀=1/4 is numerological)",
@@ -537,7 +539,7 @@ OPEN_QUESTIONS = [
 
 # ── Predictions ──
 PREDICTIONS = [
-    dict(prediction="106 GeV resonance (scalar sector transition)", phase="QG132", status="FALSIFIABLE — not yet observed"),
+    dict(prediction="106 GeV resonance (scalar sector transition)", phase="QG132", status="FALSIFIABLE — not yet observed; QG188A audit INCONCLUSIVE"),
     dict(prediction="Sector-ladder collider signatures (energy-ladder rung states)", phase="QG130", status="PREDICTED — no data"),
     dict(prediction="0νββ rate: m_ββ = 2.02e-3 eV (Majorana neutrino)", phase="QG179", status="PREDICTED — awaiting experiment"),
     dict(prediction="Gravitational redshift WITHOUT lensing in conformal (ψ=0) sector", phase="QG21", status="FALSIFIABLE — differs from GR"),

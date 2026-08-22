@@ -3,9 +3,9 @@
 **Single source of truth for all TQM-QG physics validation.**
 
 - Last updated: 2026-08-22
-- Total phases: 190
-- Tested: 177 | Partial: 12 | Untested: 0 | Audit: 1
-- Weighted coverage: 96.4%
+- Total phases: 191
+- Tested: 178 | Partial: 12 | Untested: 0 | Audit: 1
+- Weighted coverage: 96.5%
 
 > Maintenance rule: whenever a QG phase completes, scan its classification, update
 > tested/partial/untested, contradictions, open questions, predictions, and statistics.
@@ -17,12 +17,12 @@
 
 | Metric | Value |
 |---|---|
-| Phases total | 190 |
-| Tested | 177 |
+| Phases total | 191 |
+| Tested | 178 |
 | Partially tested | 12 |
 | Untested | 0 |
 | Audit (QG170) | 1 |
-| Weighted coverage | 96.4% |
+| Weighted coverage | 96.5% |
 | SM tested | 49 |
 | Gravity tested | 25 |
 
@@ -49,7 +49,7 @@
 | Foundations | 16 | 0 | 0 | 0 | 16 |
 | Gravity / GR | 25 | 2 | 0 | 0 | 27 |
 | Network & Spectrum | 42 | 0 | 0 | 0 | 42 |
-| Predictions | 5 | 0 | 0 | 0 | 5 |
+| Predictions | 6 | 0 | 0 | 0 | 6 |
 | ψ / Tensor Sector | 7 | 0 | 0 | 0 | 7 |
 | Quantum Mechanics | 11 | 0 | 0 | 0 | 11 |
 | Standard Model | 49 | 9 | 0 | 1 | 59 |
@@ -77,7 +77,7 @@
 |---|---|---|
 | Exact neutrino mass values m1,m2,m3 (splittings derived QG172; m1=0 normal ordering) | QG172 | OPEN |
 | Quark absolute mass running-scale/MS̄ conversion of the D96 mass law | QG173 | OPEN |
-| Experimental validation of the 106 GeV resonance (primary falsifiable prediction) | QG132 | FALSIFIABLE-PENDING |
+| Experimental validation of the 106 GeV resonance (primary falsifiable prediction; QG188A audit: INCONCLUSIVE — 95 GeV excess at 91.19 rung, 106 GeV window neither confirmed nor excluded) | QG132/QG188A | FALSIFIABLE-PENDING |
 | Collider test of sector-ladder physics (energy-ladder rung states) | QG130 | PREDICTED-NO-DATA |
 | Exact origin of the Bekenstein 1/4 coefficient (structure S∝A, M∝R, T∝1/R fully derived QG12/QG184; deficit first-law gives 1/2 = A/(8π); exact 1/4 needs the 2π quantum factor T = κ/(2π), not in D96/TRM; 1/occ₀=1/4 is numerological) | QG12/QG13/QG184/QG185 | PARTIALLY-OPEN |
 | ψ/Weyl field: new fundamental primitive (capacity FORCED by link completeness QG56; excitation mechanism DERIVED QG57; existence observationally required QG47) — PARTIALLY SOLVED, see TQMQG_PsiOriginAudit.md | QG23/24/47/52/54/56/57 | PARTIALLY-SOLVED |
@@ -94,7 +94,7 @@
 
 | Prediction | Phase | Status |
 |---|---|---|
-| 106 GeV resonance (scalar sector transition) | QG132 | FALSIFIABLE — not yet observed |
+| 106 GeV resonance (scalar sector transition) | QG132 | FALSIFIABLE — not yet observed; QG188A audit INCONCLUSIVE |
 | Sector-ladder collider signatures (energy-ladder rung states) | QG130 | PREDICTED — no data |
 | 0νββ rate: m_ββ = 2.02e-3 eV (Majorana neutrino) | QG179 | PREDICTED — awaiting experiment |
 | Gravitational redshift WITHOUT lensing in conformal (ψ=0) sector | QG21 | FALSIFIABLE — differs from GR |
@@ -165,7 +165,7 @@ incorporating QG171-182 results.
 | exact neutrino masses m1,m2,m3 | untested | — | splittings derived (QG172); absolute values open |
 | quark running-scale/MS̄ conversion | untested | — | D96 mass law at MS̄ scale open |
 | mass ordering (ν) | partial | QG179 | m1=0 normal ordering derived; experiment pending |
-| 106 GeV resonance | untested | QG132 | falsifiable prediction, not yet observed |
+| 106 GeV resonance | untested | QG132/QG188A | falsifiable prediction, not yet observed; INCONCLUSIVE audit (95 GeV excess cluster at 91.19 rung; window not excluded) |
 | collider sector-ladder signatures | untested | QG130 | predicted, no data |
 
 ---
@@ -499,3 +499,4 @@ Historical entries are preserved; updates are additive.
 ### Predictions
 
 - **QG188** — PREDICTION AUDIT (tested) — 10 remaining falsifiable predictions from coverage JSON: 2 testable NOW (106 GeV P1, sector-ladder P2), 3 SOON (0νββ P3, mass-ordering P6, neutrino masses P7), 5 inaccessible (P4,P5,P8,P9,P10); ranked by impact·3+feas·2+fals·2 → Top-1 = 106 GeV (QG132, score 35.0, LHC Run 3), Top-SOON = 0νββ m_ββ=2.02e-3 eV (QG179) `TQMQG_PredictionAudit.md`
+- **QG189** — INCONCLUSIVE (tested) — published record: ~95 GeV scalar excess cluster (CMS γγ 2.9σ, ATLAS γγ 1.7σ, combined 3.1σ; CMS ττ 2.6σ; LEP bb̄ 2.3σ) aligns with 91.19 GeV rung (dev 4.5%) NOT predicted 106.39 GeV (−10.4%); CMS 70–110 & ATLAS 66–110 GeV full-Run-2 diphoton null searches cover 106 GeV (limits 15–102 fb, no excess); LEP2 SM-like < 114.4 GeV (SM-strength hZZ only); prediction NOT excluded; Run 3 no confirmed increase; HL-LHC decisive `TQMQG_106GeVResonanceAudit.md`
