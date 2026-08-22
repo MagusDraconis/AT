@@ -425,6 +425,8 @@ add(198,"TQMQG_D2ToD3Bridge.md","FULL BRIDGE","gravity","tested",
     "native 2D program connects to d≥3 gravity: ρ and conformal ansatz g = ρ^(2/d)η are dimension-generic; Einstein tensor G_11=((d−1)(d−2)/2)(σ′)², G_ii=(d−2)[σ″+((d−3)/2)(σ′)²] analytic in d; the (d−2) factor is the bridge — zero at d=2 (G≡0, G4-G0 geometric identity), non-zero at d≥3 (G4-G2/G3); SAME ρ at d=3 → G_11=0.053, G_ii=0.416, conserved (Bianchi <1e-8), d≥3 derived (QG2); closes the G4-G0 OPEN-BRIDGE gap")
 add(199,"TQMQG_FinalOpenProblemsAudit.md","OPEN PROBLEMS AUDIT","foundation","tested",
     "final unresolved-problem audit (Top-20): catalog of 20 open problems from coverage + prediction registry, excluding resolved/partial-resolved/audits; categories FOUNDATIONAL(2) GRAVITY(5) STANDARD MODEL(8) PREDICTION(5); ranked by impact·3+feasibility·2+falsifiability·2 → P1 106 GeV (35) > SM1 neutrino masses (33) > SM3 mass ordering (32) > P2 0νββ (31) > P3 ladder (30); priorities HIGH 5 / MEDIUM 10 / LOW 5; recommended next target = 106 GeV (LHC Run 3); runner-up cluster = neutrino sector (SM1/SM3/P2)")
+add(200,"TQMQG_P1EvidenceUpdate.md","P1 EVIDENCE UPDATE","predictions","audit",
+    "P1 status re-audited (evidence-only, cited): PENDING — the 99–114 GeV window is neither confirmed nor excluded; classic low-mass scalar excesses persist at ~95 GeV (CMS 2.9σ, ATLAS 1.7σ, combined γγ 3.1σ, LEP bb̄ 2.3σ) = the 91.19 GeV rung not P1 (−10.4%); NEW ~152 GeV diphoton excess (local 3.6σ, global up to 5.4σ, arXiv:2503.16245) aligns with the NEXT ladder rung 151.98 GeV (0.01% dev, P3 not P1); null searches in the window (CMS 15–73 fb, ATLAS 19–102 fb) do NOT exclude P1 (suppressed couplings allowed); LEP2 114.4 GeV bound is SM-coupling only; HL-LHC (3000 fb⁻¹) projects 1–3 fb → decisive; registry outcome unchanged (PENDING)")
 
 # ── Observable-level SM audit (supersedes QG170's 25/9/14 with QG171-182 results) ──
 OBSERVABLES = [
@@ -467,7 +469,7 @@ OBSERVABLES = [
     dict(name="exact neutrino masses m1,m2,m3", status="untested", phase="—", detail="splittings derived (QG172); absolute values open"),
     dict(name="quark running-scale/MS̄ conversion", status="untested", phase="—", detail="D96 mass law at MS̄ scale open"),
     dict(name="mass ordering (ν)", status="partial", phase="QG179", detail="m1=0 normal ordering derived; experiment pending"),
-    dict(name="106 GeV resonance", status="untested", phase="QG132/QG188A/QG190", detail="falsifiable prediction, not yet observed; INCONCLUSIVE evidence audit (95 GeV excess at 91.19 rung); PRE-REGISTERED window 99–114 GeV, central 106.39 GeV (QG190)"),
+    dict(name="106 GeV resonance", status="untested", phase="QG132/QG188A/QG190/QG199", detail="falsifiable prediction, not yet observed; INCONCLUSIVE evidence audit (95 GeV excess at 91.19 rung); PRE-REGISTERED window 99–114 GeV, central 106.39 GeV (QG190); QG199 P1 update: PENDING — no confirmed signal in window, limits 15–102 fb do not exclude; 152 GeV excess aligns with 151.98 rung (not P1); HL-LHC 3000 fb⁻¹ projects 1–3 fb"),
     dict(name="collider sector-ladder signatures", status="untested", phase="QG130", detail="predicted, no data"),
 ]
 
@@ -535,8 +537,8 @@ OPEN_QUESTIONS = [
          phase="QG172", status="OPEN"),
     dict(question="Quark absolute mass running-scale/MS̄ conversion of the D96 mass law",
          phase="QG173", status="OPEN"),
-    dict(question="Experimental validation of the 106 GeV resonance (primary falsifiable prediction; QG188A audit: INCONCLUSIVE — 95 GeV excess at 91.19 rung, 106 GeV window neither confirmed nor excluded)",
-         phase="QG132/QG188A", status="FALSIFIABLE-PENDING"),
+    dict(question="Experimental validation of the 106 GeV resonance (primary falsifiable prediction; QG188A audit: INCONCLUSIVE — 95 GeV excess at 91.19 rung, 106 GeV window neither confirmed nor excluded; QG199 P1 update: still PENDING — no confirmed signal in 99–114 GeV; new ~152 GeV excess aligns with the 151.98 rung, not P1; HL-LHC 3000 fb⁻¹ projects 1–3 fb, decisive)",
+         phase="QG132/QG188A/QG190/QG199", status="FALSIFIABLE-PENDING"),
     dict(question="Collider test of sector-ladder physics (energy-ladder rung states)",
          phase="QG130", status="PREDICTED-NO-DATA"),
     dict(question="Exact origin of the Bekenstein 1/4 coefficient: QG196 PROVES IMPOSSIBLE within D96/TRM without fitting and without importing π — the required bits-per-cell is π, and 1/occ₀=1/4 is wrong-units (1/(16π)); the exact 1/4 is a quantum/geometric statement requiring the imported 2π factor",

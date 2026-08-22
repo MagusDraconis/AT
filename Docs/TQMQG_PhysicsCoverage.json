@@ -3,16 +3,16 @@
     "file": "Docs/TQMQG_PhysicsCoverage.md|json",
     "purpose": "single source of truth for all TQM-QG physics validation",
     "last_updated": "2026-08-22",
-    "phases_count": 201,
+    "phases_count": 202,
     "note": "Historical entries are never removed. Additive updates only."
   },
   "coverage": {
-    "total_phases": 201,
+    "total_phases": 202,
     "tested": 188,
     "partial": 12,
     "untested": 0,
-    "audit": 1,
-    "weighted_coverage": 0.9664,
+    "audit": 2,
+    "weighted_coverage": 0.9629,
     "domains": {
       "cosmology": {
         "tested": 1,
@@ -53,8 +53,8 @@
         "tested": 11,
         "partial": 0,
         "untested": 0,
-        "audit": 0,
-        "total": 11
+        "audit": 1,
+        "total": 12
       },
       "psi": {
         "tested": 7,
@@ -197,8 +197,8 @@
       "status": "OPEN"
     },
     {
-      "question": "Experimental validation of the 106 GeV resonance (primary falsifiable prediction; QG188A audit: INCONCLUSIVE — 95 GeV excess at 91.19 rung, 106 GeV window neither confirmed nor excluded)",
-      "phase": "QG132/QG188A",
+      "question": "Experimental validation of the 106 GeV resonance (primary falsifiable prediction; QG188A audit: INCONCLUSIVE — 95 GeV excess at 91.19 rung, 106 GeV window neither confirmed nor excluded; QG199 P1 update: still PENDING — no confirmed signal in 99–114 GeV; new ~152 GeV excess aligns with the 151.98 rung, not P1; HL-LHC 3000 fb⁻¹ projects 1–3 fb, decisive)",
+      "phase": "QG132/QG188A/QG190/QG199",
       "status": "FALSIFIABLE-PENDING"
     },
     {
@@ -506,8 +506,8 @@
     {
       "name": "106 GeV resonance",
       "status": "untested",
-      "phase": "QG132/QG188A/QG190",
-      "detail": "falsifiable prediction, not yet observed; INCONCLUSIVE evidence audit (95 GeV excess at 91.19 rung); PRE-REGISTERED window 99–114 GeV, central 106.39 GeV (QG190)"
+      "phase": "QG132/QG188A/QG190/QG199",
+      "detail": "falsifiable prediction, not yet observed; INCONCLUSIVE evidence audit (95 GeV excess at 91.19 rung); PRE-REGISTERED window 99–114 GeV, central 106.39 GeV (QG190); QG199 P1 update: PENDING — no confirmed signal in window, limits 15–102 fb do not exclude; 152 GeV excess aligns with 151.98 rung (not P1); HL-LHC 3000 fb⁻¹ projects 1–3 fb"
     },
     {
       "name": "collider sector-ladder signatures",
@@ -2192,6 +2192,14 @@
       "domain": "foundation",
       "validation": "tested",
       "key_result": "final unresolved-problem audit (Top-20): catalog of 20 open problems from coverage + prediction registry, excluding resolved/partial-resolved/audits; categories FOUNDATIONAL(2) GRAVITY(5) STANDARD MODEL(8) PREDICTION(5); ranked by impact·3+feasibility·2+falsifiability·2 → P1 106 GeV (35) > SM1 neutrino masses (33) > SM3 mass ordering (32) > P2 0νββ (31) > P3 ladder (30); priorities HIGH 5 / MEDIUM 10 / LOW 5; recommended next target = 106 GeV (LHC Run 3); runner-up cluster = neutrino sector (SM1/SM3/P2)"
+    },
+    {
+      "phase": 200,
+      "file": "TQMQG_P1EvidenceUpdate.md",
+      "classification": "P1 EVIDENCE UPDATE",
+      "domain": "predictions",
+      "validation": "audit",
+      "key_result": "P1 status re-audited (evidence-only, cited): PENDING — the 99–114 GeV window is neither confirmed nor excluded; classic low-mass scalar excesses persist at ~95 GeV (CMS 2.9σ, ATLAS 1.7σ, combined γγ 3.1σ, LEP bb̄ 2.3σ) = the 91.19 GeV rung not P1 (−10.4%); NEW ~152 GeV diphoton excess (local 3.6σ, global up to 5.4σ, arXiv:2503.16245) aligns with the NEXT ladder rung 151.98 GeV (0.01% dev, P3 not P1); null searches in the window (CMS 15–73 fb, ATLAS 19–102 fb) do NOT exclude P1 (suppressed couplings allowed); LEP2 114.4 GeV bound is SM-coupling only; HL-LHC (3000 fb⁻¹) projects 1–3 fb → decisive; registry outcome unchanged (PENDING)"
     }
   ]
 }

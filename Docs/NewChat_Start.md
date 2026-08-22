@@ -180,7 +180,8 @@ Oblique parameters origin (S = occ₀/Σm = 0.0421, T = 2S = 0.0842, U = 0; T = 
 Open Questions:
 
 - the authoritative catalog of ALL unresolved physics questions is the QG198 Top-20 audit (Docs/Research/TQMQG_FinalOpenProblemsAudit.md), ranked by impact·3+feasibility·2+falsifiability·2; top item = 106 GeV resonance (P1, score 35), runner-up cluster = neutrino sector (SM1 exact masses, SM3 mass ordering, P2 0νββ, scores 31–33)
-- key open items: exact neutrino mass values (QG172), quark running-scale/MS̄ conversion (QG173), 106 GeV resonance validation (QG132/QG188A/QG190), sector-ladder collider test (QG130/QG192), Hawking T with ψ≠0 (QG24), flat rotation-curve α=0 (G4-ME4), metric ansatz uniqueness (G4-A0), Bekenstein 1/4 (QG196, proven impossible without imported π)
+- P1 (106 GeV) status after QG199: PENDING — window 99–114 GeV neither confirmed nor excluded; 95 GeV cluster = 91.19 rung; new 152 GeV excess = 151.98 rung (P3, not P1); HL-LHC decisive
+- key open items: exact neutrino mass values (QG172), quark running-scale/MS̄ conversion (QG173), 106 GeV resonance validation (QG132/QG188A/QG190/QG199), sector-ladder collider test (QG130/QG192), Hawking T with ψ≠0 (QG24), flat rotation-curve α=0 (G4-ME4), metric ansatz uniqueness (G4-A0), Bekenstein 1/4 (QG196, proven impossible without imported π)
 
 ## Status Table
 
@@ -457,10 +458,12 @@ QG197: 2D→3D bridge (FULL BRIDGE — dimension-generic conformal ansatz; the (
 
 QG198: final open problems audit (OPEN PROBLEMS AUDIT — Top-20 unresolved questions from coverage + prediction registry, excluding resolved/partial-resolved/audits; ranked by impact·3+feasibility·2+falsifiability·2 → P1 106 GeV (35) > SM1 neutrino masses (33) > SM3 mass ordering (32) > P2 0νββ (31) > P3 ladder (30); priorities HIGH 5 / MEDIUM 10 / LOW 5; recommended next target = 106 GeV at LHC Run 3).
 
+QG199: P1 evidence update (P1 EVIDENCE UPDATE — P1 remains PENDING: the 99–114 GeV window is neither confirmed nor excluded; classic low-mass scalar excesses persist at ~95 GeV [CMS 2.9σ, ATLAS 1.7σ, combined γγ 3.1σ, LEP bb̄ 2.3σ] = the 91.19 rung, not P1; NEW ~152 GeV diphoton excess [local 3.6σ, global up to 5.4σ, arXiv:2503.16245] aligns with the NEXT ladder rung 151.98 GeV [0.01% dev — P3, not P1]; null searches in the window [CMS 15–73 fb, ATLAS 19–102 fb] do NOT exclude P1; LEP2 114.4 GeV bound is SM-coupling only; HL-LHC 3000 fb⁻¹ projects 1–3 fb → decisive; registry outcome unchanged).
+
 Milestone counters:
 
-TQM-QG 201 phases
-489+ TQM-QG tests verified
+TQM-QG 202 phases
+492+ TQM-QG tests verified
 
 ### QG154: Neutrino Sector Origin
 
@@ -484,5 +487,5 @@ NEUTRINO ORIGIN
 
 Milestone counters:
 
-TQM-QG 201 phases
-489+ TQM-QG tests verified
+TQM-QG 202 phases
+492+ TQM-QG tests verified
