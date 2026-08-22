@@ -82,8 +82,9 @@ window.tqmDerivationGraph = {
     });
   },
 
-  // Zoom of the rendered SVG inside its scroll container. We scale both the
-  // width attribute (so layout/scroll matches) and the CSS transform (crisper).
+  // Zoom of the rendered SVG inside its scroll container. The SVG is sized
+  // from its viewBox * scale, so the container scrolls naturally at the
+  // zoomed size. Panning is implemented as container scroll (drag below).
   setZoom: function (elementId, scale) {
     const container = document.getElementById(elementId);
     if (!container) return scale;
@@ -91,11 +92,12 @@ window.tqmDerivationGraph = {
     if (!svg) return scale;
     const viewBox = svg.viewBox && svg.viewBox.baseVal;
     const vbW = viewBox && viewBox.width > 0 ? viewBox.width : svg.getBoundingClientRect().width;
+    const vbH = viewBox && viewBox.height > 0 ? viewBox.height : svg.getBoundingClientRect().height;
     svg.style.width = (vbW * scale) + 'px';
-    svg.style.height = 'auto';
+    svg.style.height = (vbH * scale) + 'px';
     svg.style.maxWidth = 'none';
-    svg.style.transform = 'scale(' + scale + ')';
-    svg.style.transformOrigin = '0 0';
+    svg.removeAttribute('width');
+    svg.removeAttribute('height');
     return scale;
   },
 
@@ -132,5 +134,60 @@ window.tqmDerivationGraph = {
     const scale = Math.min(1, availW / vbW);
     svg.setAttribute('data-tqm-zoom', String(scale));
     this.setZoom(elementId, scale);
+  },
+
+  // Drag-to-pan: mousedown + mousemove pans the container's scroll position.
+  // A movement threshold distinguishes a drag from a plain click; after a
+  // drag the imminent click is suppressed so node-detail clicks still work
+  // for short clicks but not after panning.
+  enablePan: function (elementId) {
+    const container = document.getElementById(elementId);
+    if (!container || container.getAttribute('data-tqm-pan')) return;
+    container.setAttribute('data-tqm-pan', 'true');
+
+    let drag = null;
+    let suppressClick = false;
+
+    container.addEventListener('mousedown', (e) => {
+      if (e.button !== 0) return;
+      drag = { x: e.clientX, y: e.clientY, moved: false };
+      container.classList.add('tqm-grabbing');
+    });
+
+    window.addEventListener('mousemove', (e) => {
+      if (!drag) return;
+      const dx = e.clientX - drag.x;
+      const dy = e.clientY - drag.y;
+      if (!drag.moved && Math.abs(dx) + Math.abs(dy) < 4) return;
+      drag.moved = true;
+      container.scrollLeft -= dx;
+      container.scrollTop -= dy;
+      drag.x = e.clientX;
+      drag.y = e.clientY;
+    });
+
+    window.addEventListener('mouseup', () => {
+      if (drag && drag.moved) suppressClick = true;
+      drag = null;
+      container.classList.remove('tqm-grabbing');
+    });
+
+    // Capture-phase click handler: swallow the click that follows a drag.
+    container.addEventListener('click', (e) => {
+      if (suppressClick) {
+        suppressClick = false;
+        e.preventDefault();
+        e.stopPropagation();
+      }
+    }, true);
+
+    // Wheel over the graph zooms (ctrl/meta) or pans vertically (default scroll).
+    // We keep the native scroll behaviour but allow ctrl+wheel to zoom.
+    container.addEventListener('wheel', (e) => {
+      if (!e.ctrlKey && !e.metaKey) return;
+      e.preventDefault();
+      const factor = e.deltaY < 0 ? 1.15 : 1 / 1.15;
+      this.zoomBy(elementId, factor);
+    }, { passive: false });
   }
 };

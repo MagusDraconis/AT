@@ -49,6 +49,7 @@ else
         <MudIconButton Size="Size.Small" Icon="@Icons.Material.Filled.FitScreen" OnClick="@ZoomFit" Title="Fit to width" />
         <MudIconButton Size="Size.Small" Icon="@Icons.Material.Filled.Refresh" OnClick="@ZoomReset" Title="Reset to 100%" />
         <span class="zoom-value">@($"{_zoomScale * 100:F0}%")</span>
+        <span class="zoom-hint ms-3"><i class="bi bi-arrows-move"></i> drag to pan · ctrl+wheel to zoom</span>
     </div>
     <div id="derivation-graph-container" class="derivation-graph-container"></div>
 
@@ -112,6 +113,7 @@ else
         if (_renderedFor == key) return;
         _renderedFor = key;
         await RenderGraphAsync();
+        await Js.InvokeVoidAsync("tqmDerivationGraph.enablePan", "derivation-graph-container");
         await Js.InvokeVoidAsync("tqmDerivationGraph.fitToWidth", "derivation-graph-container");
         _zoomScale = 1.0;
     }
