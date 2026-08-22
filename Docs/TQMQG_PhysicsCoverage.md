@@ -3,9 +3,9 @@
 **Single source of truth for all TQM-QG physics validation.**
 
 - Last updated: 2026-08-22
-- Total phases: 214
-- Tested: 195 | Partial: 12 | Untested: 0 | Audit: 7
-- Weighted coverage: 94.7%
+- Total phases: 215
+- Tested: 196 | Partial: 12 | Untested: 0 | Audit: 7
+- Weighted coverage: 94.8%
 
 > Maintenance rule: whenever a QG phase completes, scan its classification, update
 > tested/partial/untested, contradictions, open questions, predictions, and statistics.
@@ -17,14 +17,14 @@
 
 | Metric | Value |
 |---|---|
-| Phases total | 214 |
-| Tested | 195 |
+| Phases total | 215 |
+| Tested | 196 |
 | Partially tested | 12 |
 | Untested | 0 |
 | Audit (QG170) | 7 |
-| Weighted coverage | 94.7% |
+| Weighted coverage | 94.8% |
 | SM tested | 53 |
-| Gravity tested | 31 |
+| Gravity tested | 32 |
 
 ### Observable-level coverage (SM quantities)
 
@@ -47,7 +47,7 @@
 | Cosmology | 1 | 0 | 0 | 0 | 1 |
 | High-Energy Sector | 6 | 1 | 0 | 0 | 7 |
 | Foundations | 18 | 0 | 0 | 2 | 20 |
-| Gravity / GR | 31 | 2 | 0 | 0 | 33 |
+| Gravity / GR | 32 | 2 | 0 | 0 | 34 |
 | Network & Spectrum | 42 | 0 | 0 | 0 | 42 |
 | Predictions | 11 | 0 | 0 | 4 | 15 |
 | ψ / Tensor Sector | 7 | 0 | 0 | 0 | 7 |
@@ -97,7 +97,7 @@
 | 106 GeV resonance (scalar sector transition) | QG132 | FALSIFIABLE — not yet observed; QG188A audit INCONCLUSIVE; QG190 PRE-REGISTERED window 99–114 GeV |
 | Sector-ladder collider signatures (energy-ladder rung states) | QG130/QG192/QG200 | PREDICTED — no data; QG192 PRE-REGISTERED (9 rungs 106.4–263.4 GeV); QG200 EVIDENCE AUDIT: CONFIRMED 3 (SM anchors Z/H/t), SUPPORTED 1 (151.98 = ~152 GeV excess, local 3.6σ/global up to 5.4σ, arXiv:2503.16245), PENDING 8, DISFAVORED 0, FALSIFIED 0 |
 | 0νββ rate: m_ββ = 2.02e-3 eV (Majorana neutrino) | QG179/QG191 | PREDICTED — awaiting experiment; QG191 PRE-REGISTERED (CONFIRMED ±10%, FALSIFIED below 2.02 meV) |
-| Gravitational redshift WITHOUT lensing in conformal (ψ=0) sector | QG21 | FALSIFIABLE — differs from GR |
+| Gravitational redshift WITHOUT lensing in conformal (ψ=0) sector | QG21/QG212 | RESOLVED — QG212 OPTICS RESOLVED: no-lensing is the ψ=0 restricted sector (γ=−1); the physical ψ≠0 tensor sector restores GR lensing + Shapiro (γ=+1) |
 | Curvature-sourced Poisson equation (source = ρ″, not density value) | G4-O0 | TQM-SPECIFIC — testable in principle |
 
 ---
@@ -109,8 +109,8 @@
 | Gravitational redshift | QG21/G4-O0 | tested | Δν/ν = −ΔΦ; g₀₀ varies → redshift YES; redshift WITHOUT lensing in conformal sector |
 | Time dilation (gravitational) | QG187 | tested | IS the QG21 redshift law (clock ∝ ρ^(1/d) = √(−g_00)); +45.7 vs GR 45.9 μs/day |
 | GPS correction | QG187 | tested | GPS ORIGIN: net +38.5 vs observed +38.6 μs/day (−0.2%); −4.465e-10 rate offset |
-| Shapiro delay | QG26 | tested | = 0 in conformal (PPN γ=−1); would need ψ≠0 (QG22) |
-| Light bending | QG26/G4-O0 | tested | QG26: NO MATCH (δ=0); G4-O0: weak-field lensing ∝ ΔΦ (potential diff, corrected by QG21) |
+| Shapiro delay | QG26/QG212 | tested | = 0 in conformal (PPN γ=−1); RESTORED at full GR strength in the ψ≠0 tensor sector (QG212 OPTICS RESOLVED, γ=+1) |
+| Light bending | QG26/G4-O0/QG212 | tested | QG26: δ=0 in conformal (γ=−1); G4-O0: potential-diff corrected by QG21; RESOLVED QG212: no-lensing is the ψ=0 restricted sector, GR lensing restored by ψ (γ=+1) |
 | Mercury perihelion | QG103 | tested | +42.98″/century via ψ (γ=β=+1); ρ-only retrograde |
 | Frame dragging / Lense-Thirring | QG186 | tested | FRAME-DRAGGING ORIGIN: h_0i sector via ψ (ρ-only has h_0i=0); GP-B 41.1 vs 39.2 mas/yr, LAGEOS 30.7 vs ~31 |
 | Black holes | QG12 | tested | S ∝ Area (conditional); S∝M² mass-radius gap resolved QG184; exact 1/4 PARTIALLY OPEN (QG185) |
@@ -553,3 +553,7 @@ Historical entries are preserved; updates are additive.
 ### Foundations
 
 - **QG212** — FRONTIER AUDIT (audit) — true final research frontier after QG210 (excluding resolved/partial-resolved/superseded: SM1 QG203, SM2 QG204, G2 QG206, F1 QG207, G1 QG208, SM4 QG209, SM6 QG210): Top-10 frontier ranked by impact·3+feas·2+fals·2 → P1 106 GeV (35) > P2 0νββ (31) > P3 ladder (30) > G3 conformal optics (22) > F2 Bekenstein 1/4 (20) > P4 redshift-no-lensing (19) = SM5 quark hierarchy (19) > F3 ψ origin (18) > P5 curvature-Poisson (17) > SM7 golden ratio (14); category PREDICTION 5 / GRAVITY 1 / FOUNDATIONAL 2 / SM 2; the frontier is now experimental (top-3 pre-registered predictions) + conformal/tensor gap + Bekenstein 1/4 (proven impossible) + ψ origin; no SM mass derivation remains open `TQMQG_FrontierAudit.md`
+
+### Gravity / GR
+
+- **QG213** — OPTICS RESOLVED (tested) — conformal-optics frontier resolved (no new primitives): ψ=0 sector g=ρ^(2/d)η has PPN γ=−1 ⇒ (1+γ)/2=0 so ALL lensing observables (deflection, convergence, shear, magnification) and the Shapiro delay VANISH — only redshift survives (g_00 governs); ψ≠0 sector (ψ-completed metric g_00=−ρ^(2/d)e^(2ψ), QG207) is the Fierz-Pauli tensor sector (QG44) with PPN γ=+1 ⇒ (1+γ)/2=1 so lensing, Shapiro, and frame dragging (QG186) are restored at full GR strength; QG207: the conformal ansatz is the ψ=0 ISOTROPIC MEMBER (restricted sector), completed by the ψ tensor sector ⇒ no-lensing is a RESTRICTED SECTOR (real within ψ=0, but ψ=0 is an assumption; physical optics is GR-like); closes C1 (lensing present vs absent) and C5 (no-lensing fundamental vs artifact); resolves the G3 frontier item `TQMQG_ConformalOpticsResolution.md`

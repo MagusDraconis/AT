@@ -451,6 +451,8 @@ add(211,"TQMQG_FamilyIndexExactOrigin.md","EXACT ORIGIN","sm","tested",
     "family index exact origin derived (D96 only, no fitted parameters): familyCount = floor(log2(span)) + 1 = floor(2.6786) + 1 = 3 with D96 span = 6.4025 (QG161); family = 1,2,3 are the three octave bands [4,4,87] modes [band 1 [ω_min,2ω_min) 4 modes, band 2 [2ω_min,4ω_min) 4, band 3 [4ω_min,8ω_min) 87]; NO FOURTH family because span 6.4025 < 8 (the 4th octave threshold; margin 1.5975 = 20%); the family index is the octave-band index — an exact D96 spectral identity; consistent with the lepton hierarchy (QG209) and gauge sector (QG161); upgrades QG135 PARTIAL ORIGIN to EXACT ORIGIN and closes the QG80 'why three generations' question")
 add(212,"TQMQG_FrontierAudit.md","FRONTIER AUDIT","foundation","audit",
     "true final research frontier after QG210 (excluding resolved/partial-resolved/superseded: SM1 QG203, SM2 QG204, G2 QG206, F1 QG207, G1 QG208, SM4 QG209, SM6 QG210): Top-10 frontier ranked by impact·3+feas·2+fals·2 → P1 106 GeV (35) > P2 0νββ (31) > P3 ladder (30) > G3 conformal optics (22) > F2 Bekenstein 1/4 (20) > P4 redshift-no-lensing (19) = SM5 quark hierarchy (19) > F3 ψ origin (18) > P5 curvature-Poisson (17) > SM7 golden ratio (14); category PREDICTION 5 / GRAVITY 1 / FOUNDATIONAL 2 / SM 2; the frontier is now experimental (top-3 pre-registered predictions) + conformal/tensor gap + Bekenstein 1/4 (proven impossible) + ψ origin; no SM mass derivation remains open")
+add(213,"TQMQG_ConformalOpticsResolution.md","OPTICS RESOLVED","gravity","tested",
+    "conformal-optics frontier resolved (no new primitives): ψ=0 sector g=ρ^(2/d)η has PPN γ=−1 ⇒ (1+γ)/2=0 so ALL lensing observables (deflection, convergence, shear, magnification) and the Shapiro delay VANISH — only redshift survives (g_00 governs); ψ≠0 sector (ψ-completed metric g_00=−ρ^(2/d)e^(2ψ), QG207) is the Fierz-Pauli tensor sector (QG44) with PPN γ=+1 ⇒ (1+γ)/2=1 so lensing, Shapiro, and frame dragging (QG186) are restored at full GR strength; QG207: the conformal ansatz is the ψ=0 ISOTROPIC MEMBER (restricted sector), completed by the ψ tensor sector ⇒ no-lensing is a RESTRICTED SECTOR (real within ψ=0, but ψ=0 is an assumption; physical optics is GR-like); closes C1 (lensing present vs absent) and C5 (no-lensing fundamental vs artifact); resolves the G3 frontier item")
 
 # ── Observable-level SM audit (supersedes QG170's 25/9/14 with QG171-182 results) ──
 OBSERVABLES = [
@@ -505,10 +507,10 @@ GR_TOPICS = [
          detail="IS the QG21 redshift law (clock ∝ ρ^(1/d) = √(−g_00)); +45.7 vs GR 45.9 μs/day"),
     dict(topic="GPS correction", phase="QG187", status="tested",
          detail="GPS ORIGIN: net +38.5 vs observed +38.6 μs/day (−0.2%); −4.465e-10 rate offset"),
-    dict(topic="Shapiro delay", phase="QG26", status="tested",
-         detail="= 0 in conformal (PPN γ=−1); would need ψ≠0 (QG22)"),
-    dict(topic="Light bending", phase="QG26/G4-O0", status="tested",
-         detail="QG26: NO MATCH (δ=0); G4-O0: weak-field lensing ∝ ΔΦ (potential diff, corrected by QG21)"),
+    dict(topic="Shapiro delay", phase="QG26/QG212", status="tested",
+         detail="= 0 in conformal (PPN γ=−1); RESTORED at full GR strength in the ψ≠0 tensor sector (QG212 OPTICS RESOLVED, γ=+1)"),
+    dict(topic="Light bending", phase="QG26/G4-O0/QG212", status="tested",
+         detail="QG26: δ=0 in conformal (γ=−1); G4-O0: potential-diff corrected by QG21; RESOLVED QG212: no-lensing is the ψ=0 restricted sector, GR lensing restored by ψ (γ=+1)"),
     dict(topic="Mercury perihelion", phase="QG103", status="tested",
          detail="+42.98″/century via ψ (γ=β=+1); ρ-only retrograde"),
     dict(topic="Frame dragging / Lense-Thirring", phase="QG186", status="tested",
@@ -588,7 +590,7 @@ PREDICTIONS = [
     dict(prediction="106 GeV resonance (scalar sector transition)", phase="QG132", status="FALSIFIABLE — not yet observed; QG188A audit INCONCLUSIVE; QG190 PRE-REGISTERED window 99–114 GeV"),
     dict(prediction="Sector-ladder collider signatures (energy-ladder rung states)", phase="QG130/QG192/QG200", status="PREDICTED — no data; QG192 PRE-REGISTERED (9 rungs 106.4–263.4 GeV); QG200 EVIDENCE AUDIT: CONFIRMED 3 (SM anchors Z/H/t), SUPPORTED 1 (151.98 = ~152 GeV excess, local 3.6σ/global up to 5.4σ, arXiv:2503.16245), PENDING 8, DISFAVORED 0, FALSIFIED 0"),
     dict(prediction="0νββ rate: m_ββ = 2.02e-3 eV (Majorana neutrino)", phase="QG179/QG191", status="PREDICTED — awaiting experiment; QG191 PRE-REGISTERED (CONFIRMED ±10%, FALSIFIED below 2.02 meV)"),
-    dict(prediction="Gravitational redshift WITHOUT lensing in conformal (ψ=0) sector", phase="QG21", status="FALSIFIABLE — differs from GR"),
+    dict(prediction="Gravitational redshift WITHOUT lensing in conformal (ψ=0) sector", phase="QG21/QG212", status="RESOLVED — QG212 OPTICS RESOLVED: no-lensing is the ψ=0 restricted sector (γ=−1); the physical ψ≠0 tensor sector restores GR lensing + Shapiro (γ=+1)"),
     dict(prediction="Curvature-sourced Poisson equation (source = ρ″, not density value)", phase="G4-O0", status="TQM-SPECIFIC — testable in principle"),
 ]
 

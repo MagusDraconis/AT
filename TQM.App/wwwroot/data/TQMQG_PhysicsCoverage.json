@@ -3,16 +3,16 @@
     "file": "Docs/TQMQG_PhysicsCoverage.md|json",
     "purpose": "single source of truth for all TQM-QG physics validation",
     "last_updated": "2026-08-22",
-    "phases_count": 214,
+    "phases_count": 215,
     "note": "Historical entries are never removed. Additive updates only."
   },
   "coverage": {
-    "total_phases": 214,
-    "tested": 195,
+    "total_phases": 215,
+    "tested": 196,
     "partial": 12,
     "untested": 0,
     "audit": 7,
-    "weighted_coverage": 0.9474,
+    "weighted_coverage": 0.9477,
     "domains": {
       "cosmology": {
         "tested": 1,
@@ -36,11 +36,11 @@
         "total": 20
       },
       "gravity": {
-        "tested": 31,
+        "tested": 32,
         "partial": 2,
         "untested": 0,
         "audit": 0,
-        "total": 33
+        "total": 34
       },
       "network": {
         "tested": 42,
@@ -265,8 +265,8 @@
     },
     {
       "prediction": "Gravitational redshift WITHOUT lensing in conformal (ψ=0) sector",
-      "phase": "QG21",
-      "status": "FALSIFIABLE — differs from GR"
+      "phase": "QG21/QG212",
+      "status": "RESOLVED — QG212 OPTICS RESOLVED: no-lensing is the ψ=0 restricted sector (γ=−1); the physical ψ≠0 tensor sector restores GR lensing + Shapiro (γ=+1)"
     },
     {
       "prediction": "Curvature-sourced Poisson equation (source = ρ″, not density value)",
@@ -537,15 +537,15 @@
     },
     {
       "topic": "Shapiro delay",
-      "phase": "QG26",
+      "phase": "QG26/QG212",
       "status": "tested",
-      "detail": "= 0 in conformal (PPN γ=−1); would need ψ≠0 (QG22)"
+      "detail": "= 0 in conformal (PPN γ=−1); RESTORED at full GR strength in the ψ≠0 tensor sector (QG212 OPTICS RESOLVED, γ=+1)"
     },
     {
       "topic": "Light bending",
-      "phase": "QG26/G4-O0",
+      "phase": "QG26/G4-O0/QG212",
       "status": "tested",
-      "detail": "QG26: NO MATCH (δ=0); G4-O0: weak-field lensing ∝ ΔΦ (potential diff, corrected by QG21)"
+      "detail": "QG26: δ=0 in conformal (γ=−1); G4-O0: potential-diff corrected by QG21; RESOLVED QG212: no-lensing is the ψ=0 restricted sector, GR lensing restored by ψ (γ=+1)"
     },
     {
       "topic": "Mercury perihelion",
@@ -2296,6 +2296,14 @@
       "domain": "foundation",
       "validation": "audit",
       "key_result": "true final research frontier after QG210 (excluding resolved/partial-resolved/superseded: SM1 QG203, SM2 QG204, G2 QG206, F1 QG207, G1 QG208, SM4 QG209, SM6 QG210): Top-10 frontier ranked by impact·3+feas·2+fals·2 → P1 106 GeV (35) > P2 0νββ (31) > P3 ladder (30) > G3 conformal optics (22) > F2 Bekenstein 1/4 (20) > P4 redshift-no-lensing (19) = SM5 quark hierarchy (19) > F3 ψ origin (18) > P5 curvature-Poisson (17) > SM7 golden ratio (14); category PREDICTION 5 / GRAVITY 1 / FOUNDATIONAL 2 / SM 2; the frontier is now experimental (top-3 pre-registered predictions) + conformal/tensor gap + Bekenstein 1/4 (proven impossible) + ψ origin; no SM mass derivation remains open"
+    },
+    {
+      "phase": 213,
+      "file": "TQMQG_ConformalOpticsResolution.md",
+      "classification": "OPTICS RESOLVED",
+      "domain": "gravity",
+      "validation": "tested",
+      "key_result": "conformal-optics frontier resolved (no new primitives): ψ=0 sector g=ρ^(2/d)η has PPN γ=−1 ⇒ (1+γ)/2=0 so ALL lensing observables (deflection, convergence, shear, magnification) and the Shapiro delay VANISH — only redshift survives (g_00 governs); ψ≠0 sector (ψ-completed metric g_00=−ρ^(2/d)e^(2ψ), QG207) is the Fierz-Pauli tensor sector (QG44) with PPN γ=+1 ⇒ (1+γ)/2=1 so lensing, Shapiro, and frame dragging (QG186) are restored at full GR strength; QG207: the conformal ansatz is the ψ=0 ISOTROPIC MEMBER (restricted sector), completed by the ψ tensor sector ⇒ no-lensing is a RESTRICTED SECTOR (real within ψ=0, but ψ=0 is an assumption; physical optics is GR-like); closes C1 (lensing present vs absent) and C5 (no-lensing fundamental vs artifact); resolves the G3 frontier item"
     }
   ]
 }

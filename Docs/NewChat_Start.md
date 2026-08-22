@@ -182,7 +182,7 @@ Open Questions:
 - the authoritative catalog of ALL unresolved physics questions is the QG198 Top-20 audit (Docs/Research/TQMQG_FinalOpenProblemsAudit.md), ranked by impact·3+feasibility·2+falsifiability·2; top item = 106 GeV resonance (P1, score 35), runner-up cluster = neutrino sector (SM1 exact masses, SM3 mass ordering, P2 0νββ, scores 31–33); post-QG204 Top-10 (QG205): P1 106 GeV (35) > P2 0νββ (31) > P3 ladder (30) > G2 rotation-curve (26) > G3 conformal optics (22) > F1 metric ansatz (21) = SM4 lepton hierarchy (21) > G1 Hawking-ψ (20) = F2 Bekenstein 1/4 (20) > SM6 family index (17)
 - P1 (106 GeV) status after QG199: PENDING — window 99–114 GeV neither confirmed nor excluded; 95 GeV cluster = 91.19 rung; new 152 GeV excess = 151.98 rung (P3, not P1); HL-LHC decisive
 - sector ladder (P3) after QG200/QG201: 12 rungs audited — CONFIRMED 3 (SM anchors Z/H/t), SUPPORTED 1 (151.98 = ~152 GeV excess, MODERATE SUPPORT alignment 2.80σ, 1-in-386), PENDING 8, none falsified
-- key open items: 106 GeV resonance validation (QG132/QG188A/QG190/QG199), sector-ladder collider test (QG130/QG192/QG200), Bekenstein 1/4 (QG196, proven impossible without imported π); the QG211 frontier audit is authoritative (Top-10: P1 106 GeV, P2 0νββ, P3 ladder, G3 conformal optics, F2 Bekenstein 1/4, P4 redshift-no-lensing, SM5 quark hierarchy, F3 ψ origin, P5 curvature-Poisson, SM7 golden ratio)
+- key open items: 106 GeV resonance validation (QG132/QG188A/QG190/QG199), sector-ladder collider test (QG130/QG192/QG200), Bekenstein 1/4 (QG196, proven impossible without imported π), ψ/Weyl origin (QG23/47/56/57, partial); the QG211 frontier audit is authoritative (Top-10 after QG210; G3 conformal optics RESOLVED by QG212)
 
 ## Status Table
 
@@ -485,10 +485,12 @@ QG210: family index exact origin (EXACT ORIGIN — familyCount = floor(log2(span
 
 QG211: frontier audit (FRONTIER AUDIT — the true final research frontier after QG210, excluding resolved/partial-resolved/superseded [SM1 QG203, SM2 QG204, G2 QG206, F1 QG207, G1 QG208, SM4 QG209, SM6 QG210]: Top-10 → P1 106 GeV [35] > P2 0νββ [31] > P3 ladder [30] > G3 conformal optics [22] > F2 Bekenstein 1/4 [20] > P4 redshift-no-lensing [19] = SM5 quark hierarchy [19] > F3 ψ origin [18] > P5 curvature-Poisson [17] > SM7 golden ratio [14]; PREDICTION 5 / GRAVITY 1 / FOUNDATIONAL 2 / SM 2; the frontier is now experimental [top-3 pre-registered predictions] + the conformal/tensor gap + Bekenstein 1/4 [proven impossible] + ψ origin; no SM mass derivation remains open).
 
+QG212: conformal optics resolution (OPTICS RESOLVED — the conformal-optics frontier is closed: ψ=0 sector g=ρ^(2/d)η has PPN γ=−1 ⇒ (1+γ)/2=0 so ALL lensing observables [deflection, convergence, shear, magnification] and the Shapiro delay VANISH — only redshift survives [g_00 governs]; ψ≠0 sector [ψ-completed metric g_00=−ρ^(2/d)e^(2ψ), QG207] is the Fierz-Pauli tensor sector [QG44] with PPN γ=+1 ⇒ (1+γ)/2=1 so lensing, Shapiro, and frame dragging [QG186] are restored at full GR strength; QG207: the conformal ansatz is the ψ=0 ISOTROPIC MEMBER [restricted sector], completed by the ψ tensor sector ⇒ no-lensing is a RESTRICTED SECTOR [real within ψ=0, but ψ=0 is an assumption; physical optics is GR-like]; closes C1 [lensing present vs absent] and C5 [no-lensing fundamental vs artifact]; resolves the G3 frontier item).
+
 Milestone counters:
 
-TQM-QG 214 phases
-528+ TQM-QG tests verified
+TQM-QG 215 phases
+531+ TQM-QG tests verified
 
 ### QG154: Neutrino Sector Origin
 
@@ -512,5 +514,5 @@ NEUTRINO ORIGIN
 
 Milestone counters:
 
-TQM-QG 214 phases
-528+ TQM-QG tests verified
+TQM-QG 215 phases
+531+ TQM-QG tests verified
