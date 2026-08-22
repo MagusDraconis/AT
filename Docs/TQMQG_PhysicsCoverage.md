@@ -3,8 +3,8 @@
 **Single source of truth for all TQM-QG physics validation.**
 
 - Last updated: 2026-08-22
-- Total phases: 221
-- Tested: 198 | Partial: 12 | Untested: 0 | Audit: 11
+- Total phases: 222
+- Tested: 199 | Partial: 12 | Untested: 0 | Audit: 11
 - Weighted coverage: 93.6%
 
 > Maintenance rule: whenever a QG phase completes, scan its classification, update
@@ -17,8 +17,8 @@
 
 | Metric | Value |
 |---|---|
-| Phases total | 221 |
-| Tested | 198 |
+| Phases total | 222 |
+| Tested | 199 |
 | Partially tested | 12 |
 | Untested | 0 |
 | Audit (QG170) | 11 |
@@ -51,7 +51,7 @@
 | Network & Spectrum | 42 | 0 | 0 | 0 | 42 |
 | Predictions | 11 | 0 | 0 | 4 | 15 |
 | ψ / Tensor Sector | 7 | 0 | 0 | 0 | 7 |
-| Quantum Mechanics | 13 | 0 | 0 | 0 | 13 |
+| Quantum Mechanics | 14 | 0 | 0 | 0 | 14 |
 | Standard Model | 53 | 9 | 0 | 1 | 63 |
 | TRM Dynamics | 15 | 0 | 0 | 0 | 15 |
 
@@ -572,3 +572,7 @@ Historical entries are preserved; updates are additive.
 ### Foundations
 
 - **QG219** — EFFECTIVE QG (audit) — quantum gravity reclosure audit (audit only, re-evaluates QG215 with QG216+QG218): QG status UPGRADED from PARTIAL QG to EFFECTIVE QG — score 4/6; QM now SUBSTANTIALLY DERIVED [magnitude |ψ|²=ρ from Q-events QG216, complex structure forced QG218, phase hosted on existing U(1) links QG63]; both pillars share the SAME primitive ρ [gravity sources from ρ AND |ψ|²=ρ]; gravity derived [QG181-213]; matter emergent [QG195/196/203-210]; spacetime PARTIAL [metric derived QG207, BDG dynamics imported QG6]; remaining QG215 gaps: (a) phase origin [located QG63 but value/mechanism not derived], (b) native metric dynamics [BDG imported], (c) ψ origin status [PARTIAL]; resolved: amplitude magnitude + complex structure [QG216/218], measurement basis [QG74 MATCH]; EFFECTIVE rather than COMPLETE because the phase value, BDG dynamics, and ψ status remain `TQMQG_QuantumGravityReclosureAudit.md`
+
+### Quantum Mechanics
+
+- **QG220** — PHASE ORIGIN (tested) — quantum PHASE θ derived from Q-events (no new primitives): θ_k = 2π·k/N — the circulation phase of the actualization cycle; causal ordering [QG1/11] fixes the position k (branch depth = actualization tick); network periodicity [circulant ring C_N, N=96, QG155/159] fixes the phase quantum Δθ=2π/N by cycle closure [N ticks advance 2π, uniform circulation]; link orientation gives signed link phases ±2π/N and the path phase = Σ θ_links = 2πL/N [QG65 compatible]; loop holonomies DERIVED [2πL/N, full cycle L=N trivial=gauge]; connectivity phase: Δθ = 2π·(graph distance)/N, interference P = 2+2cos(Δθ) connectivity-determined; complete amplitude ψ_k = √(μ^k/S)·e^(2πik/N) — magnitude [QG216] + phase [this phase] both from Q-events; Born rule preserved [Σ|ψ|²=1, phase is a rotation]; scope: global phase gauge, phase DIFFERENCES fully derived; the phase is the same rotational structure as the Z2 doublets [QG155] and the CP phase [QG166]; closes the QG219 gap (a) 'phase origin' `TQMQG_PhaseOrigin.md`

@@ -183,7 +183,7 @@ Open Questions:
 - P1 (106 GeV) status after QG199: PENDING — window 99–114 GeV neither confirmed nor excluded; 95 GeV cluster = 91.19 rung; new 152 GeV excess = 151.98 rung (P3, not P1); HL-LHC decisive
 - sector ladder (P3) after QG200/QG201: 12 rungs audited — CONFIRMED 3 (SM anchors Z/H/t), SUPPORTED 1 (151.98 = ~152 GeV excess, MODERATE SUPPORT alignment 2.80σ, 1-in-386), PENDING 8, none falsified
 - the anti-fit reaudit (QG214) confirms the methodology is clean: QG190-213 added 3 PRE-REGISTERED + 1 REGISTRY LOCK + 20 PREDICTION, zero retro-fit/overfit; RETRO-FIT=2 (QG140/146), OVERFIT=1 (QG147) still correct; risk confined to the fitting era QG140-148
-- the QG closure audit (QG215) classified TQM as PARTIAL QG; after QG216 (amplitude magnitude |ψ|² = ρ from Q-events) and QG218 (complex structure derived), the QG219 reclosure audit upgrades the status to EFFECTIVE QG — both pillars now derive from the common primitive ρ; remaining gaps: phase origin (hosted but not derived), native BDG dynamics (imported QG6), ψ origin status
+- the QG closure audit (QG215) classified TQM as PARTIAL QG; after QG216 (amplitude magnitude |ψ|² = ρ from Q-events), QG218 (complex structure derived) and QG220 (phase θ = 2πk/N derived from the actualization circulation), the QG219 reclosure audit upgrades the status to EFFECTIVE QG — both pillars now derive from the common primitive ρ; the phase origin is CLOSED (QG220); remaining gaps: native BDG dynamics (imported QG6), ψ origin status
 
 ## Status Table
 
@@ -500,10 +500,12 @@ QG218: hilbert origin (HILBERT ORIGIN — the complex-state structure is derived
 
 QG219: quantum gravity reclosure audit (EFFECTIVE QG — audit only, re-evaluates QG215 with QG216+QG218: QG status UPGRADED from PARTIAL QG to EFFECTIVE QG, score 4/6; QM now SUBSTANTIALLY DERIVED [magnitude |ψ|²=ρ from Q-events QG216, complex structure forced QG218, phase hosted on existing U(1) links QG63]; both pillars share the SAME primitive ρ [gravity sources from ρ AND |ψ|²=ρ]; gravity derived [QG181-213]; matter emergent [QG195/196/203-210]; spacetime PARTIAL [metric derived QG207, BDG dynamics imported QG6]; remaining QG215 gaps: [a] phase origin [located QG63 but value/mechanism not derived], [b] native metric dynamics [BDG imported], [c] ψ origin status [PARTIAL]; resolved: amplitude magnitude + complex structure [QG216/218], measurement basis [QG74 MATCH]; EFFECTIVE rather than COMPLETE because the phase value, BDG dynamics, and ψ status remain).
 
+QG220: phase origin (PHASE ORIGIN — the quantum PHASE θ is derived from Q-events, no new primitives: θ_k = 2π·k/N is the circulation phase of the actualization cycle; causal ordering [QG1/11] fixes the position k [branch depth = actualization tick]; network periodicity [circulant ring C_N, N=96, QG155/159] fixes the phase quantum Δθ=2π/N by cycle closure [N ticks advance 2π, uniform circulation]; link orientation gives signed link phases ±2π/N and the path phase = Σ θ_links = 2πL/N [QG65 compatible]; loop holonomies DERIVED [2πL/N, full cycle L=N trivial = gauge]; connectivity phase: Δθ = 2π·(graph distance)/N, interference P = 2+2cos(Δθ) connectivity-determined; complete amplitude ψ_k = √(μ^k/S)·e^(2πik/N) — magnitude [QG216] + phase [this phase] both from Q-events; Born rule preserved [Σ|ψ|²=1, the phase is a rotation]; scope: a single global phase is gauge, phase DIFFERENCES fully derived from the network; the phase is the same rotational structure as the Z2 doublets [QG155] and the CP phase [QG166]; CLOSES the QG219 gap [a] 'phase origin' — the last QM primitive is now derived, leaving only the metric-dynamics and ψ-origin gaps in the gravity sector).
+
 Milestone counters:
 
-TQM-QG 221 phases
-549+ TQM-QG tests verified
+TQM-QG 222 phases
+552+ TQM-QG tests verified
 
 ### QG154: Neutrino Sector Origin
 
@@ -527,5 +529,5 @@ NEUTRINO ORIGIN
 
 Milestone counters:
 
-TQM-QG 221 phases
-549+ TQM-QG tests verified
+TQM-QG 222 phases
+552+ TQM-QG tests verified
