@@ -27,9 +27,6 @@ a { color: inherit; }
 .hero-subtitle { font-family: Georgia, 'Times New Roman', serif; font-size: 1.45rem; color: #8B949E; margin-top: 0.4rem; }
 .hero-tagline { font-family: Georgia, 'Times New Roman', serif; font-style: italic; font-size: 1.2rem; color: #C9D1D9; margin-top: 0.6rem; }
 .hero-project-path { display: flex; flex-wrap: wrap; align-items: center; gap: 0.55rem; margin-top: 0.9rem; font-size: 0.85rem; }
-.project-path-label { text-transform: uppercase; letter-spacing: 0.12em; font-size: 0.68rem; color: #8B949E; font-weight: 700; }
-.project-path { background: rgba(100,181,246,0.10); border: 1px solid rgba(100,181,246,0.30); border-radius: 6px; padding: 0.2rem 0.55rem; color: #64B5F6; font-family: 'Cascadia Mono', Consolas, monospace; font-size: 0.8rem; }
-.project-path-sep { color: #484F58; }
 .project-path-link { color: #4DD0E1; text-decoration: none; }
 .project-path-link:hover { text-decoration: underline; color: #81D4FA; }
 .hero-stats { display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 1.6rem; }
