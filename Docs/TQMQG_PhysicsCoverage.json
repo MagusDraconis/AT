@@ -3,16 +3,16 @@
     "file": "Docs/TQMQG_PhysicsCoverage.md|json",
     "purpose": "single source of truth for all TQM-QG physics validation",
     "last_updated": "2026-08-22",
-    "phases_count": 198,
+    "phases_count": 199,
     "note": "Historical entries are never removed. Additive updates only."
   },
   "coverage": {
-    "total_phases": 198,
-    "tested": 185,
+    "total_phases": 199,
+    "tested": 186,
     "partial": 12,
     "untested": 0,
     "audit": 1,
-    "weighted_coverage": 0.9659,
+    "weighted_coverage": 0.9661,
     "domains": {
       "cosmology": {
         "tested": 1,
@@ -36,11 +36,11 @@
         "total": 16
       },
       "gravity": {
-        "tested": 27,
+        "tested": 28,
         "partial": 2,
         "untested": 0,
         "audit": 0,
-        "total": 29
+        "total": 30
       },
       "network": {
         "tested": 42,
@@ -207,9 +207,9 @@
       "status": "PREDICTED-NO-DATA"
     },
     {
-      "question": "Exact origin of the Bekenstein 1/4 coefficient (structure S∝A, M∝R, T∝1/R fully derived QG12/QG184; deficit first-law gives 1/2 = A/(8π); exact 1/4 needs the 2π quantum factor T = κ/(2π), not in D96/TRM; 1/occ₀=1/4 is numerological)",
-      "phase": "QG12/QG13/QG184/QG185",
-      "status": "PARTIALLY-OPEN"
+      "question": "Exact origin of the Bekenstein 1/4 coefficient: QG196 PROVES IMPOSSIBLE within D96/TRM without fitting and without importing π — the required bits-per-cell is π, and 1/occ₀=1/4 is wrong-units (1/(16π)); the exact 1/4 is a quantum/geometric statement requiring the imported 2π factor",
+      "phase": "QG12/QG13/QG184/QG185/QG196",
+      "status": "PARTIALLY-OPEN (proven impossible without imported π)"
     },
     {
       "question": "ψ/Weyl field: new fundamental primitive (capacity FORCED by link completeness QG56; excitation mechanism DERIVED QG57; existence observationally required QG47) — PARTIALLY SOLVED, see TQMQG_PsiOriginAudit.md",
@@ -2168,6 +2168,14 @@
       "domain": "gravity",
       "validation": "tested",
       "key_result": "independent T_μν recovered WITHOUT defining T ≡ G/κ: matter sector = DEFICIT DUST T_μν = (ρ̄−ρ)·v_μ·v_ν (network stress = deficit mass ρ_m QG194, link energy = actualization deficit QG89, flow = native geodesics QG20-21); conserved (Noether deficit-mass conservation + geodesic flow); independent of G (built from ρ_m and v, NOT the metric geometry — escapes G4-G4 Lovelock obstruction); G = κT becomes a DYNAMICAL relation not an identity; resolves the 'G=κT is an identity' open question"
+    },
+    {
+      "phase": 197,
+      "file": "TQMQG_QuarterCoefficientOrigin.md",
+      "classification": "PARTIAL ORIGIN",
+      "domain": "gravity",
+      "validation": "tested",
+      "key_result": "impossibility proof: exact 1/4 in S=A/4 CANNOT be derived from D96/TRM without fitting and without importing π — structure (S∝A, M∝R, T∝1/R) fully derived; QG12 boundary counting gives S/A = ln2/(4π) = 0.055; deficit first-law 1/(8π) = 0.040; S/A = 1/4 forces b = π bits/cell (imported); 1/occ₀ = 1/4 is wrong-units (gives 1/(16π) ≈ 0.020, needs π = 1/4); strengthens QG185"
     }
   ]
 }

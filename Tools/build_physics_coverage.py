@@ -419,6 +419,8 @@ add(195,"TQMQG_MatterDeficitOrigin.md","DEFICIT ORIGIN","gravity","tested",
     "matter = ρ̄−ρ DERIVED not postulated: actualization deficit IS the energy deficit (QG89 energy = actualization rate ⇒ E_def = m), carries rest mass (E=mc²), EXACTLY conserved (Noether: ∫m dV = ρ̄V−∫ρ dV exact), unique form (gradient-source identity a=+(1/d)∇m/ρ ⇒ m=ρ̄−ρ, G4-ME5); closes the 'matter = deficit is a hypothesis' open question")
 add(196,"TQMQG_MatterSectorOrigin.md","MATTER ORIGIN","gravity","tested",
     "independent T_μν recovered WITHOUT defining T ≡ G/κ: matter sector = DEFICIT DUST T_μν = (ρ̄−ρ)·v_μ·v_ν (network stress = deficit mass ρ_m QG194, link energy = actualization deficit QG89, flow = native geodesics QG20-21); conserved (Noether deficit-mass conservation + geodesic flow); independent of G (built from ρ_m and v, NOT the metric geometry — escapes G4-G4 Lovelock obstruction); G = κT becomes a DYNAMICAL relation not an identity; resolves the 'G=κT is an identity' open question")
+add(197,"TQMQG_QuarterCoefficientOrigin.md","PARTIAL ORIGIN","gravity","tested",
+    "impossibility proof: exact 1/4 in S=A/4 CANNOT be derived from D96/TRM without fitting and without importing π — structure (S∝A, M∝R, T∝1/R) fully derived; QG12 boundary counting gives S/A = ln2/(4π) = 0.055; deficit first-law 1/(8π) = 0.040; S/A = 1/4 forces b = π bits/cell (imported); 1/occ₀ = 1/4 is wrong-units (gives 1/(16π) ≈ 0.020, needs π = 1/4); strengthens QG185")
 
 # ── Observable-level SM audit (supersedes QG170's 25/9/14 with QG171-182 results) ──
 OBSERVABLES = [
@@ -533,8 +535,8 @@ OPEN_QUESTIONS = [
          phase="QG132/QG188A", status="FALSIFIABLE-PENDING"),
     dict(question="Collider test of sector-ladder physics (energy-ladder rung states)",
          phase="QG130", status="PREDICTED-NO-DATA"),
-    dict(question="Exact origin of the Bekenstein 1/4 coefficient (structure S∝A, M∝R, T∝1/R fully derived QG12/QG184; deficit first-law gives 1/2 = A/(8π); exact 1/4 needs the 2π quantum factor T = κ/(2π), not in D96/TRM; 1/occ₀=1/4 is numerological)",
-         phase="QG12/QG13/QG184/QG185", status="PARTIALLY-OPEN"),
+    dict(question="Exact origin of the Bekenstein 1/4 coefficient: QG196 PROVES IMPOSSIBLE within D96/TRM without fitting and without importing π — the required bits-per-cell is π, and 1/occ₀=1/4 is wrong-units (1/(16π)); the exact 1/4 is a quantum/geometric statement requiring the imported 2π factor",
+         phase="QG12/QG13/QG184/QG185/QG196", status="PARTIALLY-OPEN (proven impossible without imported π)"),
     dict(question="ψ/Weyl field: new fundamental primitive (capacity FORCED by link completeness QG56; excitation mechanism DERIVED QG57; existence observationally required QG47) — PARTIALLY SOLVED, see TQMQG_PsiOriginAudit.md",
          phase="QG23/24/47/52/54/56/57", status="PARTIALLY-SOLVED"),
     dict(question="Matter = deficit: RESOLVED by QG194 (DEFICIT ORIGIN) — the actualization deficit IS the energy deficit (QG89), carries rest mass, is exactly conserved (Noether), and is the unique linear form (G4-ME5)",

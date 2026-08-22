@@ -3,8 +3,8 @@
 **Single source of truth for all TQM-QG physics validation.**
 
 - Last updated: 2026-08-22
-- Total phases: 198
-- Tested: 185 | Partial: 12 | Untested: 0 | Audit: 1
+- Total phases: 199
+- Tested: 186 | Partial: 12 | Untested: 0 | Audit: 1
 - Weighted coverage: 96.6%
 
 > Maintenance rule: whenever a QG phase completes, scan its classification, update
@@ -17,14 +17,14 @@
 
 | Metric | Value |
 |---|---|
-| Phases total | 198 |
-| Tested | 185 |
+| Phases total | 199 |
+| Tested | 186 |
 | Partially tested | 12 |
 | Untested | 0 |
 | Audit (QG170) | 1 |
 | Weighted coverage | 96.6% |
 | SM tested | 49 |
-| Gravity tested | 27 |
+| Gravity tested | 28 |
 
 ### Observable-level coverage (SM quantities)
 
@@ -47,7 +47,7 @@
 | Cosmology | 1 | 0 | 0 | 0 | 1 |
 | High-Energy Sector | 6 | 1 | 0 | 0 | 7 |
 | Foundations | 16 | 0 | 0 | 0 | 16 |
-| Gravity / GR | 27 | 2 | 0 | 0 | 29 |
+| Gravity / GR | 28 | 2 | 0 | 0 | 30 |
 | Network & Spectrum | 42 | 0 | 0 | 0 | 42 |
 | Predictions | 11 | 0 | 0 | 0 | 11 |
 | ψ / Tensor Sector | 7 | 0 | 0 | 0 | 7 |
@@ -79,7 +79,7 @@
 | Quark absolute mass running-scale/MS̄ conversion of the D96 mass law | QG173 | OPEN |
 | Experimental validation of the 106 GeV resonance (primary falsifiable prediction; QG188A audit: INCONCLUSIVE — 95 GeV excess at 91.19 rung, 106 GeV window neither confirmed nor excluded) | QG132/QG188A | FALSIFIABLE-PENDING |
 | Collider test of sector-ladder physics (energy-ladder rung states) | QG130 | PREDICTED-NO-DATA |
-| Exact origin of the Bekenstein 1/4 coefficient (structure S∝A, M∝R, T∝1/R fully derived QG12/QG184; deficit first-law gives 1/2 = A/(8π); exact 1/4 needs the 2π quantum factor T = κ/(2π), not in D96/TRM; 1/occ₀=1/4 is numerological) | QG12/QG13/QG184/QG185 | PARTIALLY-OPEN |
+| Exact origin of the Bekenstein 1/4 coefficient: QG196 PROVES IMPOSSIBLE within D96/TRM without fitting and without importing π — the required bits-per-cell is π, and 1/occ₀=1/4 is wrong-units (1/(16π)); the exact 1/4 is a quantum/geometric statement requiring the imported 2π factor | QG12/QG13/QG184/QG185/QG196 | PARTIALLY-OPEN (proven impossible without imported π) |
 | ψ/Weyl field: new fundamental primitive (capacity FORCED by link completeness QG56; excitation mechanism DERIVED QG57; existence observationally required QG47) — PARTIALLY SOLVED, see TQMQG_PsiOriginAudit.md | QG23/24/47/52/54/56/57 | PARTIALLY-SOLVED |
 | Matter = deficit: RESOLVED by QG194 (DEFICIT ORIGIN) — the actualization deficit IS the energy deficit (QG89), carries rest mass, is exactly conserved (Noether), and is the unique linear form (G4-ME5) | G4-ME/QG194 | RESOLVED |
 | Metric ansatz g = ρ^(2/d)η is PREFERRED but not UNIQUE; flat η is a defining axiom | G4-A0 | OPEN-AXIOM |
@@ -510,3 +510,4 @@ Historical entries are preserved; updates are additive.
 
 - **QG195** — DEFICIT ORIGIN (tested) — matter = ρ̄−ρ DERIVED not postulated: actualization deficit IS the energy deficit (QG89 energy = actualization rate ⇒ E_def = m), carries rest mass (E=mc²), EXACTLY conserved (Noether: ∫m dV = ρ̄V−∫ρ dV exact), unique form (gradient-source identity a=+(1/d)∇m/ρ ⇒ m=ρ̄−ρ, G4-ME5); closes the 'matter = deficit is a hypothesis' open question `TQMQG_MatterDeficitOrigin.md`
 - **QG196** — MATTER ORIGIN (tested) — independent T_μν recovered WITHOUT defining T ≡ G/κ: matter sector = DEFICIT DUST T_μν = (ρ̄−ρ)·v_μ·v_ν (network stress = deficit mass ρ_m QG194, link energy = actualization deficit QG89, flow = native geodesics QG20-21); conserved (Noether deficit-mass conservation + geodesic flow); independent of G (built from ρ_m and v, NOT the metric geometry — escapes G4-G4 Lovelock obstruction); G = κT becomes a DYNAMICAL relation not an identity; resolves the 'G=κT is an identity' open question `TQMQG_MatterSectorOrigin.md`
+- **QG197** — PARTIAL ORIGIN (tested) — impossibility proof: exact 1/4 in S=A/4 CANNOT be derived from D96/TRM without fitting and without importing π — structure (S∝A, M∝R, T∝1/R) fully derived; QG12 boundary counting gives S/A = ln2/(4π) = 0.055; deficit first-law 1/(8π) = 0.040; S/A = 1/4 forces b = π bits/cell (imported); 1/occ₀ = 1/4 is wrong-units (gives 1/(16π) ≈ 0.020, needs π = 1/4); strengthens QG185 `TQMQG_QuarterCoefficientOrigin.md`
