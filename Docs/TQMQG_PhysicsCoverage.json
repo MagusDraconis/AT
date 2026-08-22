@@ -1,0 +1,2095 @@
+{
+  "meta": {
+    "file": "Docs/TQMQG_PhysicsCoverage.md|json",
+    "purpose": "single source of truth for all TQM-QG physics validation",
+    "last_updated": "2026-08-22",
+    "phases_count": 187,
+    "note": "Historical entries are never removed. Additive updates only."
+  },
+  "coverage": {
+    "total_phases": 187,
+    "tested": 174,
+    "partial": 12,
+    "untested": 0,
+    "audit": 1,
+    "weighted_coverage": 0.9639,
+    "domains": {
+      "cosmology": {
+        "tested": 1,
+        "partial": 0,
+        "untested": 0,
+        "audit": 0,
+        "total": 1
+      },
+      "energy": {
+        "tested": 6,
+        "partial": 1,
+        "untested": 0,
+        "audit": 0,
+        "total": 7
+      },
+      "foundation": {
+        "tested": 16,
+        "partial": 0,
+        "untested": 0,
+        "audit": 0,
+        "total": 16
+      },
+      "gravity": {
+        "tested": 23,
+        "partial": 2,
+        "untested": 0,
+        "audit": 0,
+        "total": 25
+      },
+      "network": {
+        "tested": 42,
+        "partial": 0,
+        "untested": 0,
+        "audit": 0,
+        "total": 42
+      },
+      "predictions": {
+        "tested": 4,
+        "partial": 0,
+        "untested": 0,
+        "audit": 0,
+        "total": 4
+      },
+      "psi": {
+        "tested": 7,
+        "partial": 0,
+        "untested": 0,
+        "audit": 0,
+        "total": 7
+      },
+      "qm": {
+        "tested": 11,
+        "partial": 0,
+        "untested": 0,
+        "audit": 0,
+        "total": 11
+      },
+      "sm": {
+        "tested": 49,
+        "partial": 9,
+        "untested": 0,
+        "audit": 1,
+        "total": 59
+      },
+      "trm": {
+        "tested": 15,
+        "partial": 0,
+        "untested": 0,
+        "audit": 0,
+        "total": 15
+      }
+    },
+    "observables": {
+      "total": 40,
+      "tested": 30,
+      "partial": 6,
+      "untested": 4
+    }
+  },
+  "contradictions": [
+    {
+      "id": "C1",
+      "topic": "Lensing present vs absent",
+      "a": "G4-O0: lensing ∝ ΔΦ KNOWN GR-LIKE",
+      "b": "QG21/QG26: deflection = 0 (PPN γ=−1)",
+      "status": "RESOLVED",
+      "resolution": "QG21 corrects G4-O0: 'lensing' was a potential difference, not a deflection angle",
+      "phases": [
+        "G4-O0",
+        "QG21",
+        "QG26"
+      ]
+    },
+    {
+      "id": "C2",
+      "topic": "Newton constant: magnitude free vs derived",
+      "a": "QG6: GM_eff magnitude free, BDG−2 imported",
+      "b": "QG181: G = 1/M_Pl² absolute from D96",
+      "status": "RESOLVED",
+      "resolution": "QG182 bridges them: m₀=occ₀/Σm, r₀=ln span → GM_eff = 1/ln(M_Pl/v) (0.097%)",
+      "phases": [
+        "QG6",
+        "QG181",
+        "QG182"
+      ]
+    },
+    {
+      "id": "C3",
+      "topic": "Hawking T: 0 d.o.f. needed vs NO MATCH",
+      "a": "QG24: Hawking T costs 0 additional d.o.f.",
+      "b": "QG13: NO MATCH (T∝R from E∝R^d)",
+      "status": "RESOLVED",
+      "resolution": "QG184: the M ∝ R mass-radius relation follows from the per-octave/log deficit (field a ∝ −1/r → GM_eff ∝ R), so T ∝ 1/R (Hawking) with S ∝ R^(d−1); QG13's E ∝ R^d was the compact-void assumption",
+      "phases": [
+        "QG13",
+        "QG22",
+        "QG24",
+        "QG184"
+      ]
+    },
+    {
+      "id": "C4",
+      "topic": "Perihelion: tensor vs scalar",
+      "a": "QG103: 'tensor observable' via spin-2 ψ",
+      "b": "QG43: perihelion/γ is SCALAR; only GW pol spin-2",
+      "status": "PARTIALLY RESOLVED",
+      "resolution": "Different questions: which sector is needed (tensor) vs which observable is spin-2 (only GW); scalar ψ also restores γ=+1",
+      "phases": [
+        "QG43",
+        "QG103"
+      ]
+    },
+    {
+      "id": "C5",
+      "topic": "No-lensing: fundamental vs artifact",
+      "a": "QG21/QG26: no lensing is a definitive prediction",
+      "b": "QG22: no lensing is a conformal-flatness artifact (ψ=0)",
+      "status": "RESOLVED",
+      "resolution": "QG22 supersedes: real within ψ=0, but ψ=0 is an assumption; prediction stands only in conformal sector",
+      "phases": [
+        "QG21",
+        "QG22",
+        "QG26"
+      ]
+    },
+    {
+      "id": "C6",
+      "topic": "Hawking T: partial artifact vs undecided",
+      "a": "QG22: partly conformal-flatness artifact",
+      "b": "QG25/QG43: hawking-temperature UNDECIDED / horizon AMBIGUOUS",
+      "status": "RESOLVED",
+      "resolution": "Consistent: QG22 mechanism + QG25/43 epistemic status",
+      "phases": [
+        "QG22",
+        "QG25",
+        "QG43"
+      ]
+    },
+    {
+      "id": "C7",
+      "topic": "Sector exponent law: derived vs overfit",
+      "a": "QG147: sector exponent law (EXPONENT ORIGIN)",
+      "b": "QG148: the law is OVERFIT",
+      "status": "RESOLVED",
+      "resolution": "QG148 validates the fit; QG149 supersedes with physical occupation-weighted origin",
+      "phases": [
+        "QG147",
+        "QG148",
+        "QG149"
+      ]
+    }
+  ],
+  "open_questions": [
+    {
+      "question": "Exact neutrino mass values m1,m2,m3 (splittings derived QG172; m1=0 normal ordering)",
+      "phase": "QG172",
+      "status": "OPEN"
+    },
+    {
+      "question": "Quark absolute mass running-scale/MS̄ conversion of the D96 mass law",
+      "phase": "QG173",
+      "status": "OPEN"
+    },
+    {
+      "question": "Experimental validation of the 106 GeV resonance (primary falsifiable prediction)",
+      "phase": "QG132",
+      "status": "FALSIFIABLE-PENDING"
+    },
+    {
+      "question": "Collider test of sector-ladder physics (energy-ladder rung states)",
+      "phase": "QG130",
+      "status": "PREDICTED-NO-DATA"
+    },
+    {
+      "question": "Exact origin of the Bekenstein 1/4 coefficient (structure S∝A, M∝R, T∝1/R fully derived QG12/QG184; deficit first-law gives 1/2 = A/(8π); exact 1/4 needs the 2π quantum factor T = κ/(2π), not in D96/TRM; 1/occ₀=1/4 is numerological)",
+      "phase": "QG12/QG13/QG184/QG185",
+      "status": "PARTIALLY-OPEN"
+    },
+    {
+      "question": "ψ/Weyl field: new fundamental primitive (capacity FORCED by link completeness QG56; excitation mechanism DERIVED QG57; existence observationally required QG47) — PARTIALLY SOLVED, see TQMQG_PsiOriginAudit.md",
+      "phase": "QG23/24/47/52/54/56/57",
+      "status": "PARTIALLY-SOLVED"
+    },
+    {
+      "question": "Matter = deficit hypothesis: m = ρ̄−ρ is a hypothesis, not derived",
+      "phase": "G4-ME",
+      "status": "OPEN"
+    },
+    {
+      "question": "Metric ansatz g = ρ^(2/d)η is PREFERRED but not UNIQUE; flat η is a defining axiom",
+      "phase": "G4-A0",
+      "status": "OPEN-AXIOM"
+    },
+    {
+      "question": "No independent matter sector: G=κT is an identity (Lovelock); kinetic T not conserved",
+      "phase": "G4-G3",
+      "status": "OPEN"
+    },
+    {
+      "question": "Hawking temperature after ψ: no phase derives T ∝ 1/R explicitly with ψ≠0",
+      "phase": "QG24",
+      "status": "OPEN"
+    },
+    {
+      "question": "Flat rotation-curve α=0: SEMI-NATURAL, symmetry assumption not derived",
+      "phase": "G4-ME4",
+      "status": "OPEN"
+    },
+    {
+      "question": "2D native program: Einstein tensor ≡ 0 in d=2; 2D→3D bridge not in one report",
+      "phase": "G4-G0",
+      "status": "OPEN-BRIDGE"
+    },
+    {
+      "question": "Frame dragging / Lense-Thirring: listed as future Priority 2, no completed phase",
+      "phase": "—",
+      "status": "NOT-STARTED"
+    },
+    {
+      "question": "GPS correction / gravitational time dilation: no dedicated test (only clock-rate in QG21)",
+      "phase": "—",
+      "status": "NOT-STARTED"
+    }
+  ],
+  "predictions": [
+    {
+      "prediction": "106 GeV resonance (scalar sector transition)",
+      "phase": "QG132",
+      "status": "FALSIFIABLE — not yet observed"
+    },
+    {
+      "prediction": "Sector-ladder collider signatures (energy-ladder rung states)",
+      "phase": "QG130",
+      "status": "PREDICTED — no data"
+    },
+    {
+      "prediction": "0νββ rate: m_ββ = 2.02e-3 eV (Majorana neutrino)",
+      "phase": "QG179",
+      "status": "PREDICTED — awaiting experiment"
+    },
+    {
+      "prediction": "Gravitational redshift WITHOUT lensing in conformal (ψ=0) sector",
+      "phase": "QG21",
+      "status": "FALSIFIABLE — differs from GR"
+    },
+    {
+      "prediction": "Curvature-sourced Poisson equation (source = ρ″, not density value)",
+      "phase": "G4-O0",
+      "status": "TQM-SPECIFIC — testable in principle"
+    }
+  ],
+  "observables": [
+    {
+      "name": "electron mass",
+      "status": "tested",
+      "phase": "QG140",
+      "detail": "0.511 MeV, dev 0.2%"
+    },
+    {
+      "name": "muon mass",
+      "status": "tested",
+      "phase": "QG140",
+      "detail": "105.66 MeV, dev ~0%"
+    },
+    {
+      "name": "tau mass",
+      "status": "tested",
+      "phase": "QG140",
+      "detail": "1776.86 MeV, dev 2.9%"
+    },
+    {
+      "name": "CKM |Vus|",
+      "status": "tested",
+      "phase": "QG165",
+      "detail": "dev 1.9%"
+    },
+    {
+      "name": "CKM |Vcb|",
+      "status": "tested",
+      "phase": "QG165",
+      "detail": "dev 1.2%"
+    },
+    {
+      "name": "CKM |Vub|",
+      "status": "tested",
+      "phase": "QG165",
+      "detail": "dev 0.1%"
+    },
+    {
+      "name": "CKM δ_CP",
+      "status": "tested",
+      "phase": "QG166",
+      "detail": "66.3°, dev 1.2%"
+    },
+    {
+      "name": "Jarlskog J",
+      "status": "tested",
+      "phase": "QG166",
+      "detail": "dev 1.3%"
+    },
+    {
+      "name": "PMNS θ12/θ23/θ13/δ_ν",
+      "status": "tested",
+      "phase": "QG167",
+      "detail": "dev 0.1-3%"
+    },
+    {
+      "name": "1/α_em",
+      "status": "tested",
+      "phase": "QG162",
+      "detail": "= Σm+#doublets = 137"
+    },
+    {
+      "name": "sin²θ_W",
+      "status": "tested",
+      "phase": "QG162",
+      "detail": "0.2316"
+    },
+    {
+      "name": "MW",
+      "status": "tested",
+      "phase": "QG168",
+      "detail": "80.1 GeV (phys 80.38, dev 0.3%)"
+    },
+    {
+      "name": "MZ",
+      "status": "tested",
+      "phase": "QG168",
+      "detail": "91.4 GeV (phys 91.19, dev 0.2%)"
+    },
+    {
+      "name": "ρ parameter",
+      "status": "tested",
+      "phase": "QG168",
+      "detail": "1.00000 (exact SM tree-level)"
+    },
+    {
+      "name": "MH",
+      "status": "tested",
+      "phase": "QG169",
+      "detail": "125.25 GeV (dev 0.003%)"
+    },
+    {
+      "name": "muon g-2 a_μ",
+      "status": "tested",
+      "phase": "QG171",
+      "detail": "(α/2π)(1+λ₂/Σm); anomaly (α/2π)³·span^¼"
+    },
+    {
+      "name": "Δm²21",
+      "status": "tested",
+      "phase": "QG172",
+      "detail": "(1/Σ√m)²/(span/2)"
+    },
+    {
+      "name": "Δm²31",
+      "status": "tested",
+      "phase": "QG172",
+      "detail": "sin²θ_W/Σm"
+    },
+    {
+      "name": "quark masses (6)",
+      "status": "tested",
+      "phase": "QG173",
+      "detail": "all within 0.2%"
+    },
+    {
+      "name": "θ_QCD (strong CP)",
+      "status": "tested",
+      "phase": "QG174",
+      "detail": "= 0 via [L,P]=0 reflection"
+    },
+    {
+      "name": "sin²θ_eff",
+      "status": "tested",
+      "phase": "QG175",
+      "detail": "#g/(2Σm)"
+    },
+    {
+      "name": "ΓZ",
+      "status": "tested",
+      "phase": "QG175",
+      "detail": "MH·cosθ_W/#g"
+    },
+    {
+      "name": "ΓW",
+      "status": "tested",
+      "phase": "QG175",
+      "detail": "σ_occ²/(occMom·λ₂)"
+    },
+    {
+      "name": "ΓH",
+      "status": "tested",
+      "phase": "QG175",
+      "detail": "λ₂/Σm"
+    },
+    {
+      "name": "R_b",
+      "status": "tested",
+      "phase": "QG175",
+      "detail": "span·g₂·sin⁴θ_W"
+    },
+    {
+      "name": "A_FB",
+      "status": "tested",
+      "phase": "QG175",
+      "detail": "(λ_H/λ₂)² and MH/(MW·MZ)"
+    },
+    {
+      "name": "electron g-2 a_e",
+      "status": "tested",
+      "phase": "QG178",
+      "detail": "1.159655e-3, dev 0.0003%"
+    },
+    {
+      "name": "Majorana character",
+      "status": "tested",
+      "phase": "QG179",
+      "detail": "m_ββ = 2.02e-3 eV"
+    },
+    {
+      "name": "oblique S,T,U",
+      "status": "tested",
+      "phase": "QG180",
+      "detail": "S 5.3%, T 5.3%, U=0; T=2S exact"
+    },
+    {
+      "name": "Newton constant G",
+      "status": "tested",
+      "phase": "QG181",
+      "detail": "6.6476e-11, dev 0.4%"
+    },
+    {
+      "name": "lepton hierarchy",
+      "status": "partial",
+      "phase": "QG142",
+      "detail": "PARTIAL LAW"
+    },
+    {
+      "name": "quark hierarchy law",
+      "status": "partial",
+      "phase": "QG146",
+      "detail": "PARTIAL LAW"
+    },
+    {
+      "name": "family index origin",
+      "status": "partial",
+      "phase": "QG135",
+      "detail": "PARTIAL ORIGIN"
+    },
+    {
+      "name": "golden-ratio hierarchy",
+      "status": "partial",
+      "phase": "QG152",
+      "detail": "PARTIAL ROBUSTNESS"
+    },
+    {
+      "name": "physical calibration ladder",
+      "status": "partial",
+      "phase": "QG129",
+      "detail": "PARTIAL MAPPING"
+    },
+    {
+      "name": "exact neutrino masses m1,m2,m3",
+      "status": "untested",
+      "phase": "—",
+      "detail": "splittings derived (QG172); absolute values open"
+    },
+    {
+      "name": "quark running-scale/MS̄ conversion",
+      "status": "untested",
+      "phase": "—",
+      "detail": "D96 mass law at MS̄ scale open"
+    },
+    {
+      "name": "mass ordering (ν)",
+      "status": "partial",
+      "phase": "QG179",
+      "detail": "m1=0 normal ordering derived; experiment pending"
+    },
+    {
+      "name": "106 GeV resonance",
+      "status": "untested",
+      "phase": "QG132",
+      "detail": "falsifiable prediction, not yet observed"
+    },
+    {
+      "name": "collider sector-ladder signatures",
+      "status": "untested",
+      "phase": "QG130",
+      "detail": "predicted, no data"
+    }
+  ],
+  "gr_topics": [
+    {
+      "topic": "Gravitational redshift",
+      "phase": "QG21/G4-O0",
+      "status": "tested",
+      "detail": "Δν/ν = −ΔΦ; g₀₀ varies → redshift YES; redshift WITHOUT lensing in conformal sector"
+    },
+    {
+      "topic": "Time dilation (gravitational)",
+      "phase": "—",
+      "status": "untested",
+      "detail": "Only clock-rate via g₀₀ (QG21); no dedicated test"
+    },
+    {
+      "topic": "GPS correction",
+      "phase": "—",
+      "status": "untested",
+      "detail": "No dedicated report"
+    },
+    {
+      "topic": "Shapiro delay",
+      "phase": "QG26",
+      "status": "tested",
+      "detail": "= 0 in conformal (PPN γ=−1); would need ψ≠0 (QG22)"
+    },
+    {
+      "topic": "Light bending",
+      "phase": "QG26/G4-O0",
+      "status": "tested",
+      "detail": "QG26: NO MATCH (δ=0); G4-O0: weak-field lensing ∝ ΔΦ (potential diff, corrected by QG21)"
+    },
+    {
+      "topic": "Mercury perihelion",
+      "phase": "QG103",
+      "status": "tested",
+      "detail": "+42.98″/century via ψ (γ=β=+1); ρ-only retrograde"
+    },
+    {
+      "topic": "Frame dragging / Lense-Thirring",
+      "phase": "—",
+      "status": "untested",
+      "detail": "Future Priority 2 only"
+    },
+    {
+      "topic": "Black holes",
+      "phase": "QG12",
+      "status": "tested",
+      "detail": "S ∝ Area (conditional); S∝M² mass-radius gap resolved QG184; exact 1/4 PARTIALLY OPEN (QG185)"
+    },
+    {
+      "topic": "Hawking radiation",
+      "phase": "QG13/QG22",
+      "status": "tested",
+      "detail": "T ∝ R native (NO MATCH for 1/R); partly conformal-flatness artifact; mass-radius gap resolved QG184 (T ∝ 1/R restored); exact coefficient open (QG185)"
+    },
+    {
+      "topic": "Newton constant",
+      "phase": "QG6/QG181/QG182",
+      "status": "tested",
+      "detail": "QG6 native scale; QG181 M_Pl = v·A³ (0.2%); QG182 bridges both (0.097%)"
+    },
+    {
+      "topic": "Einstein equations",
+      "phase": "G4-G0/G2/G3",
+      "status": "tested",
+      "detail": "G_μν from ρ (exact); G=κT as identity (no independent matter)"
+    }
+  ],
+  "phases": [
+    {
+      "phase": 0,
+      "file": "TQMQG_ActualizationToGravity.md",
+      "classification": "GRAVITY BRIDGE",
+      "domain": "gravity",
+      "validation": "tested",
+      "key_result": "Q-events → ρ → metric → gravity (base chain)"
+    },
+    {
+      "phase": 1,
+      "file": "TQMQG_MicroscopicOriginOfRho.md",
+      "classification": "RHO ORIGIN",
+      "domain": "foundation",
+      "validation": "tested",
+      "key_result": "ρ as microscopic actualization density (primitive)"
+    },
+    {
+      "phase": 2,
+      "file": "TQMQG_OriginOfDimension.md",
+      "classification": "DIMENSION ORIGIN",
+      "domain": "foundation",
+      "validation": "tested",
+      "key_result": "dimension from network structure"
+    },
+    {
+      "phase": 3,
+      "file": "TQMQG_DimensionSelection.md",
+      "classification": "SELECTED",
+      "domain": "foundation",
+      "validation": "tested",
+      "key_result": "dimension selected by stability"
+    },
+    {
+      "phase": 4,
+      "file": "TQMQG_EffectiveDimension.md",
+      "classification": "EFFECTIVE DIMENSION",
+      "domain": "foundation",
+      "validation": "tested",
+      "key_result": "effective dimension of actualization"
+    },
+    {
+      "phase": 5,
+      "file": "TQMQG_ObservableDimension.md",
+      "classification": "OBSERVABLE DIMENSION",
+      "domain": "foundation",
+      "validation": "tested",
+      "key_result": "observable dimension consistent with 3+1"
+    },
+    {
+      "phase": 6,
+      "file": "TQMQG_OriginOfG.md",
+      "classification": "DERIVED (scale) / IMPORTED (BDG−2)",
+      "domain": "gravity",
+      "validation": "partial",
+      "key_result": "GM_eff = m₀r₀/(d·ρ̄) native, no free coupling; BDG −2 normalization imported"
+    },
+    {
+      "phase": 7,
+      "file": "TQMQG_CriticalBranching.md",
+      "classification": "CRITICAL BRANCHING",
+      "domain": "foundation",
+      "validation": "tested",
+      "key_result": "critical branching of actualization dynamics"
+    },
+    {
+      "phase": 8,
+      "file": "TQMQG_DimensionLandscape.md",
+      "classification": "LANDSCAPE",
+      "domain": "foundation",
+      "validation": "tested",
+      "key_result": "dimension landscape over parameters"
+    },
+    {
+      "phase": 9,
+      "file": "TQMQG_SupportRankSelection.md",
+      "classification": "RANK SELECTED",
+      "domain": "foundation",
+      "validation": "tested",
+      "key_result": "support-rank selection of states"
+    },
+    {
+      "phase": 10,
+      "file": "TQMQG_InformationDimension.md",
+      "classification": "INFORMATION DIMENSION",
+      "domain": "foundation",
+      "validation": "tested",
+      "key_result": "information-theoretic dimension"
+    },
+    {
+      "phase": 11,
+      "file": "TQMQG_OriginOfCausalOrder.md",
+      "classification": "CAUSAL ORDER ORIGIN",
+      "domain": "foundation",
+      "validation": "tested",
+      "key_result": "causal order from Q-events (primitive)"
+    },
+    {
+      "phase": 12,
+      "file": "TQMQG_BlackHoleEntropy.md",
+      "classification": "MATCH (conditional)",
+      "domain": "gravity",
+      "validation": "tested",
+      "key_result": "S ∝ Area from horizon counting; no 1/4, no S∝M² (mass-radius gap)"
+    },
+    {
+      "phase": 13,
+      "file": "TQMQG_HorizonThermodynamics.md",
+      "classification": "NO MATCH",
+      "domain": "gravity",
+      "validation": "tested",
+      "key_result": "T ∝ R (deficit E∝R^d), not Hawking T ∝ 1/R"
+    },
+    {
+      "phase": 14,
+      "file": "TQMQG_PlanckRegime.md",
+      "classification": "PLANCK REGIME",
+      "domain": "gravity",
+      "validation": "tested",
+      "key_result": "natural minimum length/maximum density"
+    },
+    {
+      "phase": 15,
+      "file": "TQMQG_SpacetimeFluctuations.md",
+      "classification": "FLUCTUATIONS",
+      "domain": "gravity",
+      "validation": "tested",
+      "key_result": "Poisson event-count fluctuations → metric/curvature fluctuations"
+    },
+    {
+      "phase": 16,
+      "file": "TQMQG_TensorSector.md",
+      "classification": "TENSOR SECTOR",
+      "domain": "gravity",
+      "validation": "tested",
+      "key_result": "tensor sector exists but unsourced by scalar actualization"
+    },
+    {
+      "phase": 17,
+      "file": "TQMQG_UnfreezeTensorSector.md",
+      "classification": "FROZEN TENSOR",
+      "domain": "gravity",
+      "validation": "tested",
+      "key_result": "tensor sector frozen (ψ=0)"
+    },
+    {
+      "phase": 18,
+      "file": "TQMQG_GravitationalWaves.md",
+      "classification": "PARTIAL MATCH",
+      "domain": "gravity",
+      "validation": "tested",
+      "key_result": "scalar GW: energy/speed OK, polarization NO MATCH"
+    },
+    {
+      "phase": 19,
+      "file": "TQMQG_GWReconciliation.md",
+      "classification": "NEW PRIMITIVE",
+      "domain": "gravity",
+      "validation": "tested",
+      "key_result": "GW requires tensor/ψ primitive (spin-2); emergent impossible"
+    },
+    {
+      "phase": 20,
+      "file": "TQMQG_TemporalWaveObservables.md",
+      "classification": "TEMPORAL WAVE",
+      "domain": "gravity",
+      "validation": "tested",
+      "key_result": "temporal wave observables"
+    },
+    {
+      "phase": 21,
+      "file": "TQMQG_LightPropagation.md",
+      "classification": "NULL-GEODESIC",
+      "domain": "gravity",
+      "validation": "tested",
+      "key_result": "redshift YES, lensing NO (conformally flat; falsifiable)"
+    },
+    {
+      "phase": 22,
+      "file": "TQMQG_ConformalFlatnessAudit.md",
+      "classification": "CONFORMAL-FLATNESS ARTIFACT",
+      "domain": "gravity",
+      "validation": "tested",
+      "key_result": "no-lensing/no-GW are ψ=0 artifacts, not fundamental"
+    },
+    {
+      "phase": 23,
+      "file": "TQMQG_OriginOfPsi.md",
+      "classification": "PSI ORIGIN (absent)",
+      "domain": "gravity",
+      "validation": "tested",
+      "key_result": "ψ cannot emerge from scalar actualization"
+    },
+    {
+      "phase": 24,
+      "file": "TQMQG_MinimalTensorExtension.md",
+      "classification": "MINIMAL NEW PRIMITIVE",
+      "domain": "gravity",
+      "validation": "tested",
+      "key_result": "ψ spin-2 (2 d.o.f.) is the minimal completion"
+    },
+    {
+      "phase": 25,
+      "file": "TQMQG_ObservableReconstructionAudit.md",
+      "classification": "OBSERVABLE AMBIGUITY (4) / TENSOR REQUIRED (1) / UNDECIDED (1)",
+      "domain": "gravity",
+      "validation": "tested",
+      "key_result": "only GW-strain requires tensor; Hawking T undecided"
+    },
+    {
+      "phase": 26,
+      "file": "TQMQG_NonTensorLensing.md",
+      "classification": "NO MATCH",
+      "domain": "gravity",
+      "validation": "tested",
+      "key_result": "PPN γ=−1 → no lensing, no Shapiro delay; redshift survives"
+    },
+    {
+      "phase": 27,
+      "file": "TQMQG_TRMObservableBridge.md",
+      "classification": "BRIDGE",
+      "domain": "trm",
+      "validation": "tested",
+      "key_result": "TRM observables (lensing, delay) bridge"
+    },
+    {
+      "phase": 28,
+      "file": "TQMQG_PropagationLaw.md",
+      "classification": "PROPAGATION LAW",
+      "domain": "trm",
+      "validation": "tested",
+      "key_result": "propagation law from TRM dynamics"
+    },
+    {
+      "phase": 29,
+      "file": "TQMQG_PhysicalMeaningOfQEvents.md",
+      "classification": "Q-EVENT MEANING",
+      "domain": "foundation",
+      "validation": "tested",
+      "key_result": "physical meaning of Q-events"
+    },
+    {
+      "phase": 30,
+      "file": "TQMQG_QEventCorrelations.md",
+      "classification": "CORRELATIONS",
+      "domain": "trm",
+      "validation": "tested",
+      "key_result": "Q-event correlations (Shapiro-delay stats → 0)"
+    },
+    {
+      "phase": 31,
+      "file": "TQMQG_TRMPropagatorOrigin.md",
+      "classification": "PROPAGATOR ORIGIN",
+      "domain": "trm",
+      "validation": "tested",
+      "key_result": "TRM propagator origin"
+    },
+    {
+      "phase": 32,
+      "file": "TQMQG_TRMCompatibilityAudit.md",
+      "classification": "COMPATIBLE",
+      "domain": "trm",
+      "validation": "tested",
+      "key_result": "TRM compatible with scalar results; ψ adds tensor terms"
+    },
+    {
+      "phase": 33,
+      "file": "TQMQG_TRMasUVCompletion.md",
+      "classification": "UV COMPLETION",
+      "domain": "trm",
+      "validation": "tested",
+      "key_result": "TRM as UV completion"
+    },
+    {
+      "phase": 34,
+      "file": "TQMQG_IrreducibleTRMIngredient.md",
+      "classification": "IRREDUCIBLE",
+      "domain": "trm",
+      "validation": "tested",
+      "key_result": "irreducible TRM ingredient"
+    },
+    {
+      "phase": 35,
+      "file": "TQMQG_PsiVsRegularCore.md",
+      "classification": "PSI VS CORE",
+      "domain": "trm",
+      "validation": "tested",
+      "key_result": "ψ vs regular core distinction"
+    },
+    {
+      "phase": 36,
+      "file": "TQMQG_TRMProfileOrigin.md",
+      "classification": "PROFILE ORIGIN",
+      "domain": "trm",
+      "validation": "tested",
+      "key_result": "TRM profile origin"
+    },
+    {
+      "phase": 37,
+      "file": "TQMQG_SaturationToPsi.md",
+      "classification": "SATURATION→PSI",
+      "domain": "trm",
+      "validation": "tested",
+      "key_result": "saturation maps to ψ"
+    },
+    {
+      "phase": 38,
+      "file": "TQMQG_SaturationOrigin.md",
+      "classification": "SATURATION ORIGIN",
+      "domain": "trm",
+      "validation": "tested",
+      "key_result": "saturation origin"
+    },
+    {
+      "phase": 39,
+      "file": "TQMQG_TRMSectorAudit.md",
+      "classification": "SECTOR AUDIT",
+      "domain": "trm",
+      "validation": "tested",
+      "key_result": "TRM sector audit (lensing/γ scalar)"
+    },
+    {
+      "phase": 40,
+      "file": "TQMQG_FinalBoundaryAudit.md",
+      "classification": "BOUNDARY",
+      "domain": "trm",
+      "validation": "tested",
+      "key_result": "final boundary audit"
+    },
+    {
+      "phase": 41,
+      "file": "TQMQG_TRMAccelerationOrigin.md",
+      "classification": "ACCELERATION ORIGIN",
+      "domain": "trm",
+      "validation": "tested",
+      "key_result": "TRM acceleration origin"
+    },
+    {
+      "phase": 42,
+      "file": "TQMQG_FinalTRMAudit.md",
+      "classification": "FINAL TRM",
+      "domain": "trm",
+      "validation": "tested",
+      "key_result": "final TRM audit"
+    },
+    {
+      "phase": 43,
+      "file": "TQMQG_ObservationalUniqueness.md",
+      "classification": "PSI UNIQUE ONLY FOR GW POLARIZATION",
+      "domain": "gravity",
+      "validation": "tested",
+      "key_result": "lensing/Shapiro/γ scalar (1 d.o.f.); only GW pol needs spin-2"
+    },
+    {
+      "phase": 44,
+      "file": "TQMQG_MinimalPsiEquation.md",
+      "classification": "MINIMAL PSI",
+      "domain": "psi",
+      "validation": "tested",
+      "key_result": "minimal ψ equation"
+    },
+    {
+      "phase": 45,
+      "file": "TQMQG_MinimalPsiCoupling.md",
+      "classification": "MINIMAL COUPLING",
+      "domain": "psi",
+      "validation": "tested",
+      "key_result": "minimal ψ coupling"
+    },
+    {
+      "phase": 46,
+      "file": "TQMQG_WhySpin2.md",
+      "classification": "SPIN-2 ORIGIN",
+      "domain": "psi",
+      "validation": "tested",
+      "key_result": "why ψ is spin-2"
+    },
+    {
+      "phase": 47,
+      "file": "TQMQG_WhyPsiExists.md",
+      "classification": "WHY PSI",
+      "domain": "psi",
+      "validation": "tested",
+      "key_result": "why ψ exists (lensing/γ/delay need 1 d.o.f.)"
+    },
+    {
+      "phase": 48,
+      "file": "TQMQG_GWObservationAudit.md",
+      "classification": "OBSERVATION AUDIT",
+      "domain": "gravity",
+      "validation": "tested",
+      "key_result": "GW observation audit: what is observed vs inferred"
+    },
+    {
+      "phase": 49,
+      "file": "TQMQG_NetworkModeGW.md",
+      "classification": "NETWORK MODE",
+      "domain": "network",
+      "validation": "tested",
+      "key_result": "network-mode GW"
+    },
+    {
+      "phase": 50,
+      "file": "TQMQG_TwoSectorNecessity.md",
+      "classification": "TWO SECTOR",
+      "domain": "psi",
+      "validation": "tested",
+      "key_result": "two-sector necessity (scalar+tensor)"
+    },
+    {
+      "phase": 51,
+      "file": "TQMQG_OriginOfTwoPrimitives.md",
+      "classification": "TWO PRIMITIVES",
+      "domain": "foundation",
+      "validation": "tested",
+      "key_result": "origin of two primitives"
+    },
+    {
+      "phase": 52,
+      "file": "TQMQG_FundamentalVsEffectivePsi.md",
+      "classification": "FUNDAMENTAL VS EFFECTIVE",
+      "domain": "psi",
+      "validation": "tested",
+      "key_result": "ψ fundamental vs effective"
+    },
+    {
+      "phase": 53,
+      "file": "TQMQG_DependencyAudit.md",
+      "classification": "DEPENDENCY",
+      "domain": "foundation",
+      "validation": "tested",
+      "key_result": "dependency audit of derivations"
+    },
+    {
+      "phase": 54,
+      "file": "TQMQG_PsiAsConnectivity.md",
+      "classification": "PSI AS CONNECTIVITY",
+      "domain": "psi",
+      "validation": "tested",
+      "key_result": "ψ as connectivity"
+    },
+    {
+      "phase": 55,
+      "file": "TQMQG_NetworkPrimitiveAudit.md",
+      "classification": "PRIMITIVE AUDIT",
+      "domain": "network",
+      "validation": "tested",
+      "key_result": "network primitive audit"
+    },
+    {
+      "phase": 56,
+      "file": "TQMQG_OriginOfWeylLinks.md",
+      "classification": "WEYL LINK ORIGIN",
+      "domain": "network",
+      "validation": "tested",
+      "key_result": "origin of Weyl links"
+    },
+    {
+      "phase": 57,
+      "file": "TQMQG_WeylExcitation.md",
+      "classification": "WEYL EXCITATION",
+      "domain": "network",
+      "validation": "tested",
+      "key_result": "Weyl excitation"
+    },
+    {
+      "phase": 58,
+      "file": "TQMQG_DiscreteOrContinuousLinks.md",
+      "classification": "DISCRETE LINKS",
+      "domain": "network",
+      "validation": "tested",
+      "key_result": "discrete vs continuous links"
+    },
+    {
+      "phase": 59,
+      "file": "TQMQG_UnifiedNetworkRevalidation.md",
+      "classification": "REVALIDATED",
+      "domain": "network",
+      "validation": "tested",
+      "key_result": "unified network revalidation"
+    },
+    {
+      "phase": 60,
+      "file": "TQMQG_StandardModelCompatibility.md",
+      "classification": "COMPATIBLE",
+      "domain": "sm",
+      "validation": "tested",
+      "key_result": "network compatible with SM structure"
+    },
+    {
+      "phase": 61,
+      "file": "TQMQG_QuantumMechanicsCompatibility.md",
+      "classification": "COMPATIBLE",
+      "domain": "qm",
+      "validation": "tested",
+      "key_result": "network compatible with QM"
+    },
+    {
+      "phase": 62,
+      "file": "TQMQG_OriginOfQuantumAmplitudes.md",
+      "classification": "AMPLITUDE ORIGIN",
+      "domain": "qm",
+      "validation": "tested",
+      "key_result": "quantum amplitudes from actualization"
+    },
+    {
+      "phase": 63,
+      "file": "TQMQG_PhaseLocation.md",
+      "classification": "PHASE LOCATION",
+      "domain": "qm",
+      "validation": "tested",
+      "key_result": "phase location"
+    },
+    {
+      "phase": 64,
+      "file": "TQMQG_LinkUnification.md",
+      "classification": "LINK UNIFICATION",
+      "domain": "network",
+      "validation": "tested",
+      "key_result": "link unification"
+    },
+    {
+      "phase": 65,
+      "file": "TQMQG_InterferenceFromLinks.md",
+      "classification": "INTERFERENCE",
+      "domain": "qm",
+      "validation": "tested",
+      "key_result": "interference from links"
+    },
+    {
+      "phase": 66,
+      "file": "TQMQG_OriginOfSpinHalf.md",
+      "classification": "SPIN-1/2 ORIGIN",
+      "domain": "qm",
+      "validation": "tested",
+      "key_result": "spin-1/2 origin"
+    },
+    {
+      "phase": 67,
+      "file": "TQMQG_NetworkSpinStructure.md",
+      "classification": "SPIN STRUCTURE",
+      "domain": "qm",
+      "validation": "tested",
+      "key_result": "network spin structure"
+    },
+    {
+      "phase": 68,
+      "file": "TQMQG_FinalNetworkPrimitive.md",
+      "classification": "FINAL PRIMITIVE",
+      "domain": "network",
+      "validation": "tested",
+      "key_result": "final network primitive"
+    },
+    {
+      "phase": 69,
+      "file": "TQMQG_FirstPrediction.md",
+      "classification": "PREDICTION",
+      "domain": "predictions",
+      "validation": "tested",
+      "key_result": "first network prediction"
+    },
+    {
+      "phase": 70,
+      "file": "TQMQG_EntanglementFromLinks.md",
+      "classification": "ENTANGLEMENT ORIGIN",
+      "domain": "qm",
+      "validation": "tested",
+      "key_result": "entanglement from links"
+    },
+    {
+      "phase": 71,
+      "file": "TQMQG_EntanglingSector.md",
+      "classification": "ENTANGLING SECTOR",
+      "domain": "qm",
+      "validation": "tested",
+      "key_result": "entangling sector"
+    },
+    {
+      "phase": 72,
+      "file": "TQMQG_QuantumSectorAudit.md",
+      "classification": "QUANTUM AUDIT",
+      "domain": "qm",
+      "validation": "tested",
+      "key_result": "quantum sector audit"
+    },
+    {
+      "phase": 73,
+      "file": "TQMQG_MeasurementFromActualization.md",
+      "classification": "MEASUREMENT ORIGIN",
+      "domain": "qm",
+      "validation": "tested",
+      "key_result": "measurement from actualization"
+    },
+    {
+      "phase": 74,
+      "file": "TQMQG_GeneralMeasurement.md",
+      "classification": "GENERAL MEASUREMENT",
+      "domain": "qm",
+      "validation": "tested",
+      "key_result": "arbitrary bases via actualization (Born rule)"
+    },
+    {
+      "phase": 75,
+      "file": "TQMQG_FirstQuantitativePrediction.md",
+      "classification": "QUANTITATIVE PREDICTION",
+      "domain": "predictions",
+      "validation": "tested",
+      "key_result": "first quantitative prediction"
+    },
+    {
+      "phase": 76,
+      "file": "TQMQG_CompletenessAudit.md",
+      "classification": "COMPLETENESS",
+      "domain": "foundation",
+      "validation": "tested",
+      "key_result": "completeness audit"
+    },
+    {
+      "phase": 77,
+      "file": "TQMQG_CosmologyAudit.md",
+      "classification": "COSMOLOGY DERIVED",
+      "domain": "cosmology",
+      "validation": "tested",
+      "key_result": "expansion = redshift + scale-free ρ; H primitive"
+    },
+    {
+      "phase": 78,
+      "file": "TQMQG_ColorOrigin.md",
+      "classification": "COLOR ORIGIN",
+      "domain": "sm",
+      "validation": "tested",
+      "key_result": "color from network"
+    },
+    {
+      "phase": 79,
+      "file": "TQMQG_WhySU3.md",
+      "classification": "SU(3) ORIGIN",
+      "domain": "sm",
+      "validation": "tested",
+      "key_result": "why SU(3)"
+    },
+    {
+      "phase": 80,
+      "file": "TQMQG_WhyThreeGenerations.md",
+      "classification": "3 GENERATIONS",
+      "domain": "sm",
+      "validation": "tested",
+      "key_result": "why three generations"
+    },
+    {
+      "phase": 81,
+      "file": "TQMQG_FamilyReplication.md",
+      "classification": "FAMILY REPLICATION",
+      "domain": "sm",
+      "validation": "tested",
+      "key_result": "family replication"
+    },
+    {
+      "phase": 82,
+      "file": "TQMQG_FlavorMixing.md",
+      "classification": "FLAVOR MIXING",
+      "domain": "sm",
+      "validation": "tested",
+      "key_result": "flavor mixing"
+    },
+    {
+      "phase": 83,
+      "file": "TQMQG_NetworkValenceThree.md",
+      "classification": "VALENCE 3",
+      "domain": "network",
+      "validation": "tested",
+      "key_result": "network valence three"
+    },
+    {
+      "phase": 84,
+      "file": "TQMQG_HiggsOrigin.md",
+      "classification": "HIGGS ORIGIN",
+      "domain": "sm",
+      "validation": "tested",
+      "key_result": "Higgs = collective occupation-density scalar"
+    },
+    {
+      "phase": 85,
+      "file": "TQMQG_SMParameters.md",
+      "classification": "SM PARAMETERS",
+      "domain": "sm",
+      "validation": "partial",
+      "key_result": "SM parameters surveyed"
+    },
+    {
+      "phase": 86,
+      "file": "TQMQG_ParameterOriginAudit.md",
+      "classification": "PARAMETER ORIGIN AUDIT",
+      "domain": "sm",
+      "validation": "tested",
+      "key_result": "parameter origin audit"
+    },
+    {
+      "phase": 87,
+      "file": "TQMQG_FacesAndVolumes.md",
+      "classification": "FACES & VOLUMES",
+      "domain": "network",
+      "validation": "tested",
+      "key_result": "faces and volumes"
+    },
+    {
+      "phase": 88,
+      "file": "TQMQG_ParameterValueSelection.md",
+      "classification": "VALUE SELECTION",
+      "domain": "foundation",
+      "validation": "tested",
+      "key_result": "parameter value selection"
+    },
+    {
+      "phase": 89,
+      "file": "TQMQG_OriginOfEnergy.md",
+      "classification": "ENERGY ORIGIN",
+      "domain": "foundation",
+      "validation": "tested",
+      "key_result": "origin of energy"
+    },
+    {
+      "phase": 90,
+      "file": "TQMQG_GaugeSectorSplitting.md",
+      "classification": "GAUGE SPLITTING",
+      "domain": "sm",
+      "validation": "tested",
+      "key_result": "gauge sector splitting"
+    },
+    {
+      "phase": 91,
+      "file": "TQMQG_LinkLengthPhysics.md",
+      "classification": "LINK LENGTH",
+      "domain": "network",
+      "validation": "tested",
+      "key_result": "link-length physics"
+    },
+    {
+      "phase": 92,
+      "file": "TQMQG_NetworkConsistencyParameters.md",
+      "classification": "CONSISTENCY",
+      "domain": "network",
+      "validation": "tested",
+      "key_result": "network consistency parameters"
+    },
+    {
+      "phase": 93,
+      "file": "TQMQG_GlobalConsistency.md",
+      "classification": "GLOBAL CONSISTENCY",
+      "domain": "network",
+      "validation": "tested",
+      "key_result": "global consistency"
+    },
+    {
+      "phase": 94,
+      "file": "TQMQG_ParameterEigenvalues.md",
+      "classification": "PARAMETER EIGENVALUES",
+      "domain": "network",
+      "validation": "tested",
+      "key_result": "parameter eigenvalues"
+    },
+    {
+      "phase": 95,
+      "file": "TQMQG_NetworkResonanceParameters.md",
+      "classification": "RESONANCE",
+      "domain": "network",
+      "validation": "tested",
+      "key_result": "network resonance parameters"
+    },
+    {
+      "phase": 96,
+      "file": "TQMQG_StableStateSelection.md",
+      "classification": "STABLE STATE",
+      "domain": "network",
+      "validation": "tested",
+      "key_result": "stable state selection"
+    },
+    {
+      "phase": 97,
+      "file": "TQMQG_LinkRatioParameters.md",
+      "classification": "LINK RATIO",
+      "domain": "network",
+      "validation": "tested",
+      "key_result": "link ratio parameters"
+    },
+    {
+      "phase": 98,
+      "file": "TQMQG_NetworkAngles.md",
+      "classification": "NETWORK ANGLES",
+      "domain": "network",
+      "validation": "tested",
+      "key_result": "network angles"
+    },
+    {
+      "phase": 99,
+      "file": "TQMQG_NetworkMotifs.md",
+      "classification": "MOTIFS",
+      "domain": "network",
+      "validation": "tested",
+      "key_result": "network motifs"
+    },
+    {
+      "phase": 100,
+      "file": "TQMQG_CurvatureParameters.md",
+      "classification": "CURVATURE PARAMETERS",
+      "domain": "network",
+      "validation": "tested",
+      "key_result": "curvature parameters"
+    },
+    {
+      "phase": 101,
+      "file": "TQMQG_DynamicParameterOrigin.md",
+      "classification": "DYNAMIC PARAMETER",
+      "domain": "network",
+      "validation": "tested",
+      "key_result": "dynamic parameter origin"
+    },
+    {
+      "phase": 102,
+      "file": "TQMQG_GlobalSolutionSpace.md",
+      "classification": "SOLUTION SPACE",
+      "domain": "network",
+      "validation": "tested",
+      "key_result": "global solution space"
+    },
+    {
+      "phase": 103,
+      "file": "TQMQG_MercuryRevalidation.md",
+      "classification": "MATCH (via ψ)",
+      "domain": "gravity",
+      "validation": "tested",
+      "key_result": "perihelion +42.98″/century via ψ (γ=β=+1); ρ-only retrograde"
+    },
+    {
+      "phase": 104,
+      "file": "TQMQG_NetworkSpectrum.md",
+      "classification": "HIERARCHICAL SPECTRUM",
+      "domain": "network",
+      "validation": "tested",
+      "key_result": "91-event causal network → hierarchical discrete spectrum"
+    },
+    {
+      "phase": 105,
+      "file": "TQMQG_SpectrumRobustness.md",
+      "classification": "ROBUST",
+      "domain": "network",
+      "validation": "tested",
+      "key_result": "spectral ratios stable under size/topology changes"
+    },
+    {
+      "phase": 106,
+      "file": "TQMQG_SpectralClasses.md",
+      "classification": "MULTIPLE CLASSES",
+      "domain": "network",
+      "validation": "tested",
+      "key_result": "distinct spectral classes ↔ stable network states"
+    },
+    {
+      "phase": 107,
+      "file": "TQMQG_FamilyStructureRobustness.md",
+      "classification": "ROBUST",
+      "domain": "network",
+      "validation": "tested",
+      "key_result": "family structure robustness"
+    },
+    {
+      "phase": 108,
+      "file": "TQMQG_FamilyCountStatistics.md",
+      "classification": "STATISTICS",
+      "domain": "network",
+      "validation": "tested",
+      "key_result": "family count statistics"
+    },
+    {
+      "phase": 109,
+      "file": "TQMQG_PhysicalNetworkSelection.md",
+      "classification": "SELECTED",
+      "domain": "network",
+      "validation": "tested",
+      "key_result": "physical network selection"
+    },
+    {
+      "phase": 110,
+      "file": "TQMQG_NetworkInformationSelection.md",
+      "classification": "INFORMATION SELECTION",
+      "domain": "network",
+      "validation": "tested",
+      "key_result": "network information selection"
+    },
+    {
+      "phase": 111,
+      "file": "TQMQG_MultiObjectiveSelection.md",
+      "classification": "MULTI-OBJECTIVE",
+      "domain": "network",
+      "validation": "tested",
+      "key_result": "multi-objective selection"
+    },
+    {
+      "phase": 112,
+      "file": "TQMQG_NetworkSectors.md",
+      "classification": "NETWORK SECTORS",
+      "domain": "network",
+      "validation": "tested",
+      "key_result": "network sectors"
+    },
+    {
+      "phase": 113,
+      "file": "TQMQG_SectorBoundaryPhysics.md",
+      "classification": "SECTOR BOUNDARY",
+      "domain": "network",
+      "validation": "tested",
+      "key_result": "sector boundary physics"
+    },
+    {
+      "phase": 114,
+      "file": "TQMQG_3DConnectivityClasses.md",
+      "classification": "3D CONNECTIVITY",
+      "domain": "network",
+      "validation": "tested",
+      "key_result": "3D connectivity classes"
+    },
+    {
+      "phase": 115,
+      "file": "TQMQG_StructureFromContent.md",
+      "classification": "STRUCTURE FROM CONTENT",
+      "domain": "network",
+      "validation": "tested",
+      "key_result": "structure from content"
+    },
+    {
+      "phase": 116,
+      "file": "TQMQG_ActualizationStructures.md",
+      "classification": "ACTUALIZATION STRUCTURES",
+      "domain": "network",
+      "validation": "tested",
+      "key_result": "actualization structures"
+    },
+    {
+      "phase": 116.5,
+      "file": "TQMQG_UniversalAttractor.md",
+      "classification": "UNIVERSAL ATTRACTOR",
+      "domain": "network",
+      "validation": "tested",
+      "key_result": "universal attractor (N·K circulant)"
+    },
+    {
+      "phase": 117,
+      "file": "TQMQG_AttractorParameterOrigin.md",
+      "classification": "ATTRACTOR ORIGIN",
+      "domain": "network",
+      "validation": "tested",
+      "key_result": "parameter plane → discrete attractor ladder"
+    },
+    {
+      "phase": 118,
+      "file": "TQMQG_FamiliesFromAttractors.md",
+      "classification": "FAMILIES FROM ATTRACTORS",
+      "domain": "sm",
+      "validation": "tested",
+      "key_result": "families from attractor geometry"
+    },
+    {
+      "phase": 119,
+      "file": "TQMQG_LocalVsGlobalAttractors.md",
+      "classification": "LOCAL VS GLOBAL",
+      "domain": "network",
+      "validation": "tested",
+      "key_result": "local vs global attractors"
+    },
+    {
+      "phase": 120,
+      "file": "TQMQG_HorizonFamilies.md",
+      "classification": "HORIZON FAMILIES",
+      "domain": "network",
+      "validation": "tested",
+      "key_result": "finite horizon suppresses higher families"
+    },
+    {
+      "phase": 121,
+      "file": "TQMQG_AttractorLadder.md",
+      "classification": "LADDER ORIGIN",
+      "domain": "network",
+      "validation": "tested",
+      "key_result": "discrete radius ladder from fixed-point bifurcations"
+    },
+    {
+      "phase": 122,
+      "file": "TQMQG_EnergyDependentAttractors.md",
+      "classification": "ENERGY-DEPENDENT",
+      "domain": "network",
+      "validation": "tested",
+      "key_result": "energy-dependent attractors"
+    },
+    {
+      "phase": 123,
+      "file": "TQMQG_EnergyGeometryHierarchy.md",
+      "classification": "ENERGY-GEOMETRY HIERARCHY",
+      "domain": "network",
+      "validation": "tested",
+      "key_result": "energy-geometry hierarchy"
+    },
+    {
+      "phase": 124,
+      "file": "TQMQG_SMFromEnergySectors.md",
+      "classification": "SM FROM ENERGY SECTORS",
+      "domain": "sm",
+      "validation": "tested",
+      "key_result": "SM from energy sectors"
+    },
+    {
+      "phase": 125,
+      "file": "TQMQG_HighEnergySectorStability.md",
+      "classification": "METASTABLE",
+      "domain": "energy",
+      "validation": "tested",
+      "key_result": "high-energy sector metastable"
+    },
+    {
+      "phase": 126,
+      "file": "TQMQG_ParticleSectorMapping.md",
+      "classification": "SECTOR-PARTICLE MAPPING",
+      "domain": "energy",
+      "validation": "tested",
+      "key_result": "energy-sector ↔ particle mapping"
+    },
+    {
+      "phase": 127,
+      "file": "TQMQG_HighEnergySectorSignatures.md",
+      "classification": "OBSERVABLE SIGNATURE",
+      "domain": "energy",
+      "validation": "tested",
+      "key_result": "high-energy sector signatures"
+    },
+    {
+      "phase": 128,
+      "file": "TQMQG_SectorTransitionSpectrum.md",
+      "classification": "PREDICTIVE SPECTRUM",
+      "domain": "energy",
+      "validation": "tested",
+      "key_result": "sector-transition discrete spectrum (8 thresholds, 12-rung ladder)"
+    },
+    {
+      "phase": 129,
+      "file": "TQMQG_PhysicalCalibration.md",
+      "classification": "PARTIAL MAPPING",
+      "domain": "energy",
+      "validation": "partial",
+      "key_result": "ladder ratios vs SM mass ratios — partial mapping"
+    },
+    {
+      "phase": 130,
+      "file": "TQMQG_ColliderSectorPredictions.md",
+      "classification": "ACCESSIBLE",
+      "domain": "energy",
+      "validation": "tested",
+      "key_result": "sector ladder collider-accessible"
+    },
+    {
+      "phase": 131,
+      "file": "TQMQG_ColliderDataAudit.md",
+      "classification": "CONSISTENT SIGNATURE",
+      "domain": "energy",
+      "validation": "tested",
+      "key_result": "collider data consistent"
+    },
+    {
+      "phase": 132,
+      "file": "TQMQG_FirstFalsifiablePrediction.md",
+      "classification": "FALSIFIABLE PREDICTION",
+      "domain": "predictions",
+      "validation": "tested",
+      "key_result": "106 GeV resonance (not yet observed)"
+    },
+    {
+      "phase": 133,
+      "file": "TQMQG_PredictionRobustness.md",
+      "classification": "MODERATE",
+      "domain": "predictions",
+      "validation": "tested",
+      "key_result": "prediction robustness moderate"
+    },
+    {
+      "phase": 134,
+      "file": "TQMQG_BosonFermionSplit.md",
+      "classification": "FUNDAMENTAL SPLIT",
+      "domain": "sm",
+      "validation": "tested",
+      "key_result": "boson-fermion split fundamental"
+    },
+    {
+      "phase": 135,
+      "file": "TQMQG_FamilyIndexOrigin.md",
+      "classification": "PARTIAL ORIGIN",
+      "domain": "sm",
+      "validation": "partial",
+      "key_result": "family index partial origin"
+    },
+    {
+      "phase": 136,
+      "file": "TQMQG_ThreeFamilyRobustness.md",
+      "classification": "PARTIAL ROBUSTNESS",
+      "domain": "sm",
+      "validation": "partial",
+      "key_result": "three-family robustness partial"
+    },
+    {
+      "phase": 137,
+      "file": "TQMQG_EffectiveSizeFamilies.md",
+      "classification": "EFFECTIVE-SIZE ORIGIN",
+      "domain": "sm",
+      "validation": "tested",
+      "key_result": "effective-size families origin"
+    },
+    {
+      "phase": 138,
+      "file": "TQMQG_EffectiveSizeLaw.md",
+      "classification": "FUNDAMENTAL",
+      "domain": "sm",
+      "validation": "tested",
+      "key_result": "familyCount = floor(log2(ωmax/ωmin)) + 1 (fundamental)"
+    },
+    {
+      "phase": 139,
+      "file": "TQMQG_MassHierarchyFromOctaves.md",
+      "classification": "PARTIAL RELATION",
+      "domain": "sm",
+      "validation": "partial",
+      "key_result": "mass hierarchy from octave structure"
+    },
+    {
+      "phase": 140,
+      "file": "TQMQG_HierarchyAmplification.md",
+      "classification": "HIERARCHY ORIGIN",
+      "domain": "sm",
+      "validation": "tested",
+      "key_result": "mass-hierarchy amplification; me/mu/tau ratios (0.2-2.9%)"
+    },
+    {
+      "phase": 141,
+      "file": "TQMQG_HierarchyExponentOrigin.md",
+      "classification": "DERIVED EXPONENTS",
+      "domain": "sm",
+      "validation": "tested",
+      "key_result": "hierarchy exponents from spectral density"
+    },
+    {
+      "phase": 142,
+      "file": "TQMQG_UnifiedMassLaw.md",
+      "classification": "PARTIAL LAW",
+      "domain": "sm",
+      "validation": "partial",
+      "key_result": "unified mass law"
+    },
+    {
+      "phase": 143,
+      "file": "TQMQG_QuarkAmplification.md",
+      "classification": "PARTIAL FACTOR",
+      "domain": "sm",
+      "validation": "partial",
+      "key_result": "quark amplification factor"
+    },
+    {
+      "phase": 144,
+      "file": "TQMQG_WeakIsospinAmplification.md",
+      "classification": "PARTIAL EFFECT",
+      "domain": "sm",
+      "validation": "partial",
+      "key_result": "weak-isospin amplification"
+    },
+    {
+      "phase": 145,
+      "file": "TQMQG_UpSectorEnhancement.md",
+      "classification": "UP-SECTOR ORIGIN",
+      "domain": "sm",
+      "validation": "tested",
+      "key_result": "up-sector enhancement origin"
+    },
+    {
+      "phase": 146,
+      "file": "TQMQG_QuarkHierarchyLaw.md",
+      "classification": "PARTIAL LAW",
+      "domain": "sm",
+      "validation": "partial",
+      "key_result": "quark hierarchy law"
+    },
+    {
+      "phase": 147,
+      "file": "TQMQG_SectorExponentLaw.md",
+      "classification": "EXPONENT ORIGIN",
+      "domain": "sm",
+      "validation": "tested",
+      "key_result": "sector exponent law (historical, superseded by QG149)"
+    },
+    {
+      "phase": 148,
+      "file": "TQMQG_ExponentLawValidation.md",
+      "classification": "OVERFIT",
+      "domain": "sm",
+      "validation": "tested",
+      "key_result": "QG147 law is OVERFIT — superseded by QG149"
+    },
+    {
+      "phase": 149,
+      "file": "TQMQG_PhysicalSectorExponentOrigin.md",
+      "classification": "PHYSICAL ORIGIN",
+      "domain": "sm",
+      "validation": "tested",
+      "key_result": "sector exponents from occupation-weighted mode access (supersedes QG147)"
+    },
+    {
+      "phase": 150,
+      "file": "TQMQG_ModeAccessOrigin.md",
+      "classification": "MODE-ACCESS ORIGIN",
+      "domain": "sm",
+      "validation": "tested",
+      "key_result": "sector exponents from octave-band occupancy-weighted access"
+    },
+    {
+      "phase": 151,
+      "file": "TQMQG_IsospinModeAccess.md",
+      "classification": "ISOSPIN ACCESS ORIGIN",
+      "domain": "sm",
+      "validation": "tested",
+      "key_result": "isospin-dependent mode access"
+    },
+    {
+      "phase": 152,
+      "file": "TQMQG_GoldenRatioAudit.md",
+      "classification": "PARTIAL ROBUSTNESS",
+      "domain": "sm",
+      "validation": "partial",
+      "key_result": "golden ratio in hierarchy — partial"
+    },
+    {
+      "phase": 153,
+      "file": "TQMQG_DoubletOrigin.md",
+      "classification": "DOUBLET ORIGIN",
+      "domain": "sm",
+      "validation": "tested",
+      "key_result": "Z2 doublet origin (spectrum multiplicities 2)"
+    },
+    {
+      "phase": 154,
+      "file": "TQMQG_NeutrinoOrigin.md",
+      "classification": "NEUTRINO ORIGIN",
+      "domain": "sm",
+      "validation": "tested",
+      "key_result": "neutrino = unique Q=0 fermion sector (neutral-charge limit)"
+    },
+    {
+      "phase": 155,
+      "file": "TQMQG_Z2SymmetryOrigin.md",
+      "classification": "SYMMETRY ORIGIN",
+      "domain": "sm",
+      "validation": "tested",
+      "key_result": "weak-isospin Z2 from D96 symmetry"
+    },
+    {
+      "phase": 156,
+      "file": "TQMQG_UnifiedSpectralAccess.md",
+      "classification": "UNIFIED ACCESS LAW",
+      "domain": "sm",
+      "validation": "tested",
+      "key_result": "δ = log(N_eff)/log(span) unified law"
+    },
+    {
+      "phase": 157,
+      "file": "TQMQG_EffectiveAccessCounts.md",
+      "classification": "N_EFF ORIGIN",
+      "domain": "sm",
+      "validation": "tested",
+      "key_result": "N_eff from D96 moments (Σ√m, Σm, Σm², Σocc²/occ₀)"
+    },
+    {
+      "phase": 158,
+      "file": "TQMQG_MomentOrderOrigin.md",
+      "classification": "INEVITABLE",
+      "domain": "sm",
+      "validation": "tested",
+      "key_result": "moment orders from Z2 powers"
+    },
+    {
+      "phase": 159,
+      "file": "TQMQG_D96SelectionOrigin.md",
+      "classification": "INEVITABLE",
+      "domain": "sm",
+      "validation": "tested",
+      "key_result": "D96 = Z2 automorphism + 3-family window + unique octave rung"
+    },
+    {
+      "phase": 160,
+      "file": "TQMQG_Period3SeedOrigin.md",
+      "classification": "INEVITABLE",
+      "domain": "sm",
+      "validation": "tested",
+      "key_result": "period-3 seed = unique complete-Z2 natural size (96)"
+    },
+    {
+      "phase": 161,
+      "file": "TQMQG_GaugeSectorOrigin.md",
+      "classification": "GAUGE ORIGIN",
+      "domain": "sm",
+      "validation": "tested",
+      "key_result": "1+3+8 = degree-12 of C_96(1..6)"
+    },
+    {
+      "phase": 162,
+      "file": "TQMQG_GaugeCouplingOrigin.md",
+      "classification": "COUPLING ORIGIN",
+      "domain": "sm",
+      "validation": "tested",
+      "key_result": "1/α_em = 137, α_weak = 3/Σm, α_s = 8/Σ√m, sin²θ_W = 0.2316"
+    },
+    {
+      "phase": 163,
+      "file": "TQMQG_RunningCouplingOrigin.md",
+      "classification": "RUNNING ORIGIN",
+      "domain": "sm",
+      "validation": "tested",
+      "key_result": "α_i(E) = g_i/D_i(N(E)) octave ladder; no in-sector unification"
+    },
+    {
+      "phase": 164,
+      "file": "TQMQG_ContinuousRunningOrigin.md",
+      "classification": "CONTINUOUS ORIGIN",
+      "domain": "sm",
+      "validation": "tested",
+      "key_result": "continuous running limit"
+    },
+    {
+      "phase": 165,
+      "file": "TQMQG_CKMOrigin.md",
+      "classification": "CKM ORIGIN",
+      "domain": "sm",
+      "validation": "tested",
+      "key_result": "CKM: |Vus| 1.9%, |Vcb| 1.2%, |Vub| 0.1%"
+    },
+    {
+      "phase": 166,
+      "file": "TQMQG_CKMCPOrigin.md",
+      "classification": "CP ORIGIN",
+      "domain": "sm",
+      "validation": "tested",
+      "key_result": "δ_CP 66.3° (1.2%), Jarlskog J (1.3%)"
+    },
+    {
+      "phase": 167,
+      "file": "TQMQG_PMNSOrigin.md",
+      "classification": "PMNS ORIGIN",
+      "domain": "sm",
+      "validation": "tested",
+      "key_result": "T3-only access → θ12/θ23/θ13/δ_ν (0.1-3%)"
+    },
+    {
+      "phase": 168,
+      "file": "TQMQG_WeakBosonMassOrigin.md",
+      "classification": "MASS ORIGIN",
+      "domain": "sm",
+      "validation": "tested",
+      "key_result": "v = 137·ln span = 254.37 GeV; MW = 80.1, MZ = 91.4, ρ = 1"
+    },
+    {
+      "phase": 169,
+      "file": "TQMQG_HiggsMassOrigin.md",
+      "classification": "HIGGS ORIGIN",
+      "domain": "sm",
+      "validation": "tested",
+      "key_result": "σ_occ·span/2 → MH = 125.25 GeV"
+    },
+    {
+      "phase": 170,
+      "file": "TQMQG_StandardModelAudit.md",
+      "classification": "COVERAGE AUDIT",
+      "domain": "sm",
+      "validation": "audit",
+      "key_result": "48 quantities: 25 tested / 9 partial / 14 untested = 64% (weighted)"
+    },
+    {
+      "phase": 171,
+      "file": "TQMQG_MuonG2Origin.md",
+      "classification": "G2 ORIGIN",
+      "domain": "sm",
+      "validation": "tested",
+      "key_result": "a_μ = (α/2π)(1+λ₂/Σm); anomaly (α/2π)³·span^¼"
+    },
+    {
+      "phase": 172,
+      "file": "TQMQG_NeutrinoMassLaw.md",
+      "classification": "MASS ORIGIN",
+      "domain": "sm",
+      "validation": "tested",
+      "key_result": "Δm²21 = (1/Σ√m)²/(span/2), Δm²31 = sin²θ_W/Σm"
+    },
+    {
+      "phase": 173,
+      "file": "TQMQG_QuarkMassOrigin.md",
+      "classification": "MASS ORIGIN",
+      "domain": "sm",
+      "validation": "tested",
+      "key_result": "all six quark masses from me·D96-moments (within 0.2%)"
+    },
+    {
+      "phase": 174,
+      "file": "TQMQG_StrongCPOrigin.md",
+      "classification": "STRONG CP ORIGIN",
+      "domain": "sm",
+      "validation": "tested",
+      "key_result": "[L,P]=0 reflection → real spectrum → θ_QCD = 0"
+    },
+    {
+      "phase": 175,
+      "file": "TQMQG_PrecisionElectroweakOrigin.md",
+      "classification": "PRECISION EW ORIGIN",
+      "domain": "sm",
+      "validation": "tested",
+      "key_result": "sin²θ_eff, ΓZ, ΓW, ΓH, R_b, A_FB from D96"
+    },
+    {
+      "phase": 176,
+      "file": "TQMQG_HiggsBlindReconstruction.md",
+      "classification": "HIGGS RECONSTRUCTION",
+      "domain": "sm",
+      "validation": "tested",
+      "key_result": "MH_A = 125.49 (0.19%), MH_B = 125.25 (0.003%); blind, no Higgs input"
+    },
+    {
+      "phase": 177,
+      "file": "TQMQG_LeaveOneOutValidation.md",
+      "classification": "INDEPENDENT",
+      "domain": "sm",
+      "validation": "tested",
+      "key_result": "12 observables leave-one-out: mean 0.58%, max 1.89%; 9 independent"
+    },
+    {
+      "phase": 178,
+      "file": "TQMQG_ElectronG2Origin.md",
+      "classification": "G2 ORIGIN",
+      "domain": "sm",
+      "validation": "tested",
+      "key_result": "a_e = (α/2π)(1−(occ₀/Σm)²) = 1.159655e-3 (0.0003%); same mechanism as muon"
+    },
+    {
+      "phase": 179,
+      "file": "TQMQG_MajoranaOrigin.md",
+      "classification": "MAJORANA ORIGIN",
+      "domain": "sm",
+      "validation": "tested",
+      "key_result": "neutrino Majorana: T3-only self-conjugate 48/95; m_ββ = 2.02e-3 eV"
+    },
+    {
+      "phase": 180,
+      "file": "TQMQG_ObliqueParametersOrigin.md",
+      "classification": "OBLIQUE ORIGIN",
+      "domain": "sm",
+      "validation": "tested",
+      "key_result": "S = 0.0421 (5.3%), T = 2S = 0.0842 (5.3%), U = 0; T = 2S exact"
+    },
+    {
+      "phase": 181,
+      "file": "TQMQG_NewtonConstantOrigin.md",
+      "classification": "GRAVITY ORIGIN",
+      "domain": "gravity",
+      "validation": "tested",
+      "key_result": "M_Pl = v·(Σm·#g·occ₂)³ = 1.22335e19 GeV (0.201%); G = 6.6476e-11 (0.400%)"
+    },
+    {
+      "phase": 182,
+      "file": "TQMQG_GravityBridgeOrigin.md",
+      "classification": "BRIDGE ORIGIN",
+      "domain": "gravity",
+      "validation": "tested",
+      "key_result": "m₀=occ₀/Σm, r₀=ln span → GM_eff = 1/ln(M_Pl/v) (0.097%); QG6≡QG181"
+    },
+    {
+      "phase": 183,
+      "file": "TQMQG_PlanckScaleRobustness.md",
+      "classification": "ROBUST ORIGIN",
+      "domain": "gravity",
+      "validation": "tested",
+      "key_result": "physical exponent p = ln(M_Pl/v)/ln(A) = 2.99984 (cubic to 1e-4); only A³ reproduces M_Pl (0.2%); A¹/A²/A⁴ fail 100%/100%/3.6e7%; no alternative A selects cubic"
+    },
+    {
+      "phase": 184,
+      "file": "TQMQG_MassRadiusOrigin.md",
+      "classification": "MASS-RADIUS ORIGIN",
+      "domain": "gravity",
+      "validation": "tested",
+      "key_result": "M ∝ R from per-octave/log deficit (G4ME flat-rotation-curve profile): a ∝ −1/r → GM_eff ∝ R; QG13's E ∝ R^d was compact-void assumption; S ∝ R^(d−1) (QG12) → T ∝ 1/R Hawking restored"
+    },
+    {
+      "phase": 185,
+      "file": "TQMQG_BekensteinQuarterOrigin.md",
+      "classification": "PARTIAL ORIGIN",
+      "domain": "gravity",
+      "validation": "partial",
+      "key_result": "structure derived (S∝A QG12, M∝R QG184, T∝1/R QG184); deficit first-law gives S = A_cell/2 = A/(8π), not 1/4; exact 1/4 requires the 2π quantum factor T = κ/(2π) absent in D96/TRM (span/(2π)=1.019); 1/occ₀=1/4 is a label identity"
+    }
+  ]
+}
