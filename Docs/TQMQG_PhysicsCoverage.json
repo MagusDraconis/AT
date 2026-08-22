@@ -3,16 +3,16 @@
     "file": "Docs/TQMQG_PhysicsCoverage.md|json",
     "purpose": "single source of truth for all TQM-QG physics validation",
     "last_updated": "2026-08-22",
-    "phases_count": 196,
+    "phases_count": 197,
     "note": "Historical entries are never removed. Additive updates only."
   },
   "coverage": {
-    "total_phases": 196,
-    "tested": 183,
+    "total_phases": 197,
+    "tested": 184,
     "partial": 12,
     "untested": 0,
     "audit": 1,
-    "weighted_coverage": 0.9656,
+    "weighted_coverage": 0.9657,
     "domains": {
       "cosmology": {
         "tested": 1,
@@ -36,11 +36,11 @@
         "total": 16
       },
       "gravity": {
-        "tested": 25,
+        "tested": 26,
         "partial": 2,
         "untested": 0,
         "audit": 0,
-        "total": 27
+        "total": 28
       },
       "network": {
         "tested": 42,
@@ -217,9 +217,9 @@
       "status": "PARTIALLY-SOLVED"
     },
     {
-      "question": "Matter = deficit hypothesis: m = ρ̄−ρ is a hypothesis, not derived",
-      "phase": "G4-ME",
-      "status": "OPEN"
+      "question": "Matter = deficit: RESOLVED by QG194 (DEFICIT ORIGIN) — the actualization deficit IS the energy deficit (QG89), carries rest mass, is exactly conserved (Noether), and is the unique linear form (G4-ME5)",
+      "phase": "G4-ME/QG194",
+      "status": "RESOLVED"
     },
     {
       "question": "Metric ansatz g = ρ^(2/d)η is PREFERRED but not UNIQUE; flat η is a defining axiom",
@@ -2152,6 +2152,14 @@
       "domain": "predictions",
       "validation": "tested",
       "key_result": "immutable registry of the 3 pre-registered predictions (P1 106 GeV [QG132/190: 106.39 GeV, window 99–114], P2 0νββ m_ββ [QG179/191: 2.02 meV], P3 sector-ladder [QG128-132/192: 9 rungs 106.4–263.4 GeV]); each records derivation phase, formula, inputs, frozen value, uncertainty, falsification; readonly field + init-only records + values-unchanged guard; only CONFIRMED/DISFAVORED/FALSIFIED may be added later, never value edits; generated Docs/TQMQG_Predictions.md + .json via Tools/build_predictions_registry.py"
+    },
+    {
+      "phase": 195,
+      "file": "TQMQG_MatterDeficitOrigin.md",
+      "classification": "DEFICIT ORIGIN",
+      "domain": "gravity",
+      "validation": "tested",
+      "key_result": "matter = ρ̄−ρ DERIVED not postulated: actualization deficit IS the energy deficit (QG89 energy = actualization rate ⇒ E_def = m), carries rest mass (E=mc²), EXACTLY conserved (Noether: ∫m dV = ρ̄V−∫ρ dV exact), unique form (gradient-source identity a=+(1/d)∇m/ρ ⇒ m=ρ̄−ρ, G4-ME5); closes the 'matter = deficit is a hypothesis' open question"
     }
   ]
 }

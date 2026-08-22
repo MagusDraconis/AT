@@ -3,8 +3,8 @@
 **Single source of truth for all TQM-QG physics validation.**
 
 - Last updated: 2026-08-22
-- Total phases: 196
-- Tested: 183 | Partial: 12 | Untested: 0 | Audit: 1
+- Total phases: 197
+- Tested: 184 | Partial: 12 | Untested: 0 | Audit: 1
 - Weighted coverage: 96.6%
 
 > Maintenance rule: whenever a QG phase completes, scan its classification, update
@@ -17,14 +17,14 @@
 
 | Metric | Value |
 |---|---|
-| Phases total | 196 |
-| Tested | 183 |
+| Phases total | 197 |
+| Tested | 184 |
 | Partially tested | 12 |
 | Untested | 0 |
 | Audit (QG170) | 1 |
 | Weighted coverage | 96.6% |
 | SM tested | 49 |
-| Gravity tested | 25 |
+| Gravity tested | 26 |
 
 ### Observable-level coverage (SM quantities)
 
@@ -47,7 +47,7 @@
 | Cosmology | 1 | 0 | 0 | 0 | 1 |
 | High-Energy Sector | 6 | 1 | 0 | 0 | 7 |
 | Foundations | 16 | 0 | 0 | 0 | 16 |
-| Gravity / GR | 25 | 2 | 0 | 0 | 27 |
+| Gravity / GR | 26 | 2 | 0 | 0 | 28 |
 | Network & Spectrum | 42 | 0 | 0 | 0 | 42 |
 | Predictions | 11 | 0 | 0 | 0 | 11 |
 | ψ / Tensor Sector | 7 | 0 | 0 | 0 | 7 |
@@ -81,7 +81,7 @@
 | Collider test of sector-ladder physics (energy-ladder rung states) | QG130 | PREDICTED-NO-DATA |
 | Exact origin of the Bekenstein 1/4 coefficient (structure S∝A, M∝R, T∝1/R fully derived QG12/QG184; deficit first-law gives 1/2 = A/(8π); exact 1/4 needs the 2π quantum factor T = κ/(2π), not in D96/TRM; 1/occ₀=1/4 is numerological) | QG12/QG13/QG184/QG185 | PARTIALLY-OPEN |
 | ψ/Weyl field: new fundamental primitive (capacity FORCED by link completeness QG56; excitation mechanism DERIVED QG57; existence observationally required QG47) — PARTIALLY SOLVED, see TQMQG_PsiOriginAudit.md | QG23/24/47/52/54/56/57 | PARTIALLY-SOLVED |
-| Matter = deficit hypothesis: m = ρ̄−ρ is a hypothesis, not derived | G4-ME | OPEN |
+| Matter = deficit: RESOLVED by QG194 (DEFICIT ORIGIN) — the actualization deficit IS the energy deficit (QG89), carries rest mass, is exactly conserved (Noether), and is the unique linear form (G4-ME5) | G4-ME/QG194 | RESOLVED |
 | Metric ansatz g = ρ^(2/d)η is PREFERRED but not UNIQUE; flat η is a defining axiom | G4-A0 | OPEN-AXIOM |
 | No independent matter sector: G=κT is an identity (Lovelock); kinetic T not conserved | G4-G3 | OPEN |
 | Hawking temperature after ψ: no phase derives T ∝ 1/R explicitly with ψ≠0 | QG24 | OPEN |
@@ -505,3 +505,7 @@ Historical entries are preserved; updates are additive.
 - **QG192** — PRE-REGISTERED (tested) — m_ββ = |Σ U_ei²·m_i| = 2.02 meV frozen from QG167 PMNS (s12=0.5497, s13=0.1451, δ_ν=66.4°) + QG172 masses (m1=0, m2=8.72, m3=49.4 meV, NORMAL ordering) + QG179 Majorana (real matrix ⇒ α2=α3=0); computed 2.0222 meV, dominated by m2·s12²·c13² (2.52 meV); forbidden: experimental limits, detector sensitivities, future measurements (guard); CONFIRMED = ±10%, FALSIFIED = exclusion below 2.02 meV `TQMQG_PreRegisteredMbb.md`
 - **QG193** — PRE-REGISTERED (tested) — full 12-rung ladder frozen from QG121-132 (forbidden: collider bumps, resonance catalogs, fitted energies; guard): 9 predicted resonances 106.39 (PRIMARY) → 136.78 → 151.98 → 182.38 → 197.58 → 212.78 → 227.97 → 243.17 → 263.43 GeV (Z-anchor scale MZ/6=15.198; rungs 6/9/11 aligned with t/H/Z); multiplicities unit 15.20 GeV ×10 (0.909) + top 20.26 GeV ×1; width scale 15.20 GeV; production ascending by mass below LHC13/FCC-hh; CONFIRMED = resonance within 5% of frozen rung, FALSIFIED = sensitive search excludes rung `TQMQG_PreRegisteredLadderSpectrum.md`
 - **QG194** — REGISTRY LOCK (tested) — immutable registry of the 3 pre-registered predictions (P1 106 GeV [QG132/190: 106.39 GeV, window 99–114], P2 0νββ m_ββ [QG179/191: 2.02 meV], P3 sector-ladder [QG128-132/192: 9 rungs 106.4–263.4 GeV]); each records derivation phase, formula, inputs, frozen value, uncertainty, falsification; readonly field + init-only records + values-unchanged guard; only CONFIRMED/DISFAVORED/FALSIFIED may be added later, never value edits; generated Docs/TQMQG_Predictions.md + .json via Tools/build_predictions_registry.py `TQMQG_PredictionRegistry.md`
+
+### Gravity / GR
+
+- **QG195** — DEFICIT ORIGIN (tested) — matter = ρ̄−ρ DERIVED not postulated: actualization deficit IS the energy deficit (QG89 energy = actualization rate ⇒ E_def = m), carries rest mass (E=mc²), EXACTLY conserved (Noether: ∫m dV = ρ̄V−∫ρ dV exact), unique form (gradient-source identity a=+(1/d)∇m/ρ ⇒ m=ρ̄−ρ, G4-ME5); closes the 'matter = deficit is a hypothesis' open question `TQMQG_MatterDeficitOrigin.md`

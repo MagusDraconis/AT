@@ -415,6 +415,8 @@ add(193,"TQMQG_PreRegisteredLadderSpectrum.md","PRE-REGISTERED","predictions","t
     "full 12-rung ladder frozen from QG121-132 (forbidden: collider bumps, resonance catalogs, fitted energies; guard): 9 predicted resonances 106.39 (PRIMARY) → 136.78 → 151.98 → 182.38 → 197.58 → 212.78 → 227.97 → 243.17 → 263.43 GeV (Z-anchor scale MZ/6=15.198; rungs 6/9/11 aligned with t/H/Z); multiplicities unit 15.20 GeV ×10 (0.909) + top 20.26 GeV ×1; width scale 15.20 GeV; production ascending by mass below LHC13/FCC-hh; CONFIRMED = resonance within 5% of frozen rung, FALSIFIED = sensitive search excludes rung")
 add(194,"TQMQG_PredictionRegistry.md","REGISTRY LOCK","predictions","tested",
     "immutable registry of the 3 pre-registered predictions (P1 106 GeV [QG132/190: 106.39 GeV, window 99–114], P2 0νββ m_ββ [QG179/191: 2.02 meV], P3 sector-ladder [QG128-132/192: 9 rungs 106.4–263.4 GeV]); each records derivation phase, formula, inputs, frozen value, uncertainty, falsification; readonly field + init-only records + values-unchanged guard; only CONFIRMED/DISFAVORED/FALSIFIED may be added later, never value edits; generated Docs/TQMQG_Predictions.md + .json via Tools/build_predictions_registry.py")
+add(195,"TQMQG_MatterDeficitOrigin.md","DEFICIT ORIGIN","gravity","tested",
+    "matter = ρ̄−ρ DERIVED not postulated: actualization deficit IS the energy deficit (QG89 energy = actualization rate ⇒ E_def = m), carries rest mass (E=mc²), EXACTLY conserved (Noether: ∫m dV = ρ̄V−∫ρ dV exact), unique form (gradient-source identity a=+(1/d)∇m/ρ ⇒ m=ρ̄−ρ, G4-ME5); closes the 'matter = deficit is a hypothesis' open question")
 
 # ── Observable-level SM audit (supersedes QG170's 25/9/14 with QG171-182 results) ──
 OBSERVABLES = [
@@ -533,8 +535,8 @@ OPEN_QUESTIONS = [
          phase="QG12/QG13/QG184/QG185", status="PARTIALLY-OPEN"),
     dict(question="ψ/Weyl field: new fundamental primitive (capacity FORCED by link completeness QG56; excitation mechanism DERIVED QG57; existence observationally required QG47) — PARTIALLY SOLVED, see TQMQG_PsiOriginAudit.md",
          phase="QG23/24/47/52/54/56/57", status="PARTIALLY-SOLVED"),
-    dict(question="Matter = deficit hypothesis: m = ρ̄−ρ is a hypothesis, not derived",
-         phase="G4-ME", status="OPEN"),
+    dict(question="Matter = deficit: RESOLVED by QG194 (DEFICIT ORIGIN) — the actualization deficit IS the energy deficit (QG89), carries rest mass, is exactly conserved (Noether), and is the unique linear form (G4-ME5)",
+         phase="G4-ME/QG194", status="RESOLVED"),
     dict(question="Metric ansatz g = ρ^(2/d)η is PREFERRED but not UNIQUE; flat η is a defining axiom",
          phase="G4-A0", status="OPEN-AXIOM"),
     dict(question="No independent matter sector: G=κT is an identity (Lovelock); kinetic T not conserved",
