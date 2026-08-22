@@ -1,0 +1,98 @@
+@page "/validation/prediction-status"
+
+<PageTitle>Prediction Status · Validation · TQM</PageTitle>
+
+<ValidationHeader />
+
+<div class="page-section">
+    <h3 class="section-heading">Prediction Status</h3>
+    <p class="muted">
+        The live status of every registered prediction, read from the immutable registry
+        (<span class="mono">Docs/TQMQG_Predictions.json</span>). Frozen values never change;
+        only the outcome status advances, and only along the two pre-defined paths below.
+    </p>
+
+    @if (_registry is null)
+    {
+        <MudProgressCircular Indeterminate="true" Size="Size.Medium" Class="mt-4" />
+    }
+    else
+    {
+        <MudCard Elevation="1" Class="theory-card mb-4">
+            <MudCardContent>
+                <MudText Typo="Typo.body2" Class="muted">
+                    <span class="status-chip status-tested me-2">@(_registry.Immutable ? "IMMUTABLE" : "MUTABLE")</span>
+                    @_registry.Rule
+                </MudText>
+            </MudCardContent>
+        </MudCard>
+
+        <MudTable Items="_registry.Predictions" Hover="true" Dense="true" Class="mb-4">
+            <HeaderContent>
+                <MudTh>Prediction</MudTh>
+                <MudTh>Frozen value</MudTh>
+                <MudTh>Current status</MudTh>
+            </HeaderContent>
+            <RowTemplate>
+                <MudTd>
+                    <span class="audit-phase me-2">@context.Id</span>@context.Name
+                </MudTd>
+                <MudTd><span class="audit-num">@context.FrozenValue</span></MudTd>
+                <MudTd>
+                    <span class="status-chip @OutcomeClass(context.Outcome)">@(string.IsNullOrEmpty(context.Outcome) ? "PENDING" : context.Outcome)</span>
+                </MudTd>
+            </RowTemplate>
+        </MudTable>
+
+        <MudCard Elevation="1" Class="theory-card">
+            <MudCardContent>
+                <MudText Typo="Typo.subtitle2" Class="text-uppercase fw-bold muted mb-3">Status paths — never edited, only advanced</MudText>
+                <div class="status-path">
+                    <div class="status-path-label">Falsifiable path</div>
+                    <div class="status-flow">
+                        <span class="status-chip status-pending">PENDING</span>
+                        <span class="status-arrow">&rarr;</span>
+                        <span class="status-chip status-partial">SUPPORTED</span>
+                        <span class="status-arrow">&rarr;</span>
+                        <span class="status-chip status-tested">CONFIRMED</span>
+                    </div>
+                </div>
+                <div class="status-path">
+                    <div class="status-path-label">Falsification path</div>
+                    <div class="status-flow">
+                        <span class="status-chip status-pending">PENDING</span>
+                        <span class="status-arrow">&rarr;</span>
+                        <span class="status-chip status-partial">DISFAVORED</span>
+                        <span class="status-arrow">&rarr;</span>
+                        <span class="status-chip status-untested">FALSIFIED</span>
+                    </div>
+                </div>
+                <MudText Typo="Typo.body2" Class="muted mt-4">
+                    A status may only move forward along its own path. No registered prediction's frozen
+                    value, formula, or falsification condition may ever be modified (registry lock, QG193).
+                    The current status is stored in the registry JSON as <span class="mono">outcome</span>.
+                </MudText>
+            </MudCardContent>
+        </MudCard>
+    }
+</div>
+
+@code {
+    [Inject] private ValidationDataService ValidationDataService { get; set; } = default!;
+
+    private PredictionRegistryFile? _registry;
+
+    protected override async Task OnInitializedAsync()
+    {
+        _registry = await ValidationDataService.GetRegistryAsync();
+    }
+
+    private static string OutcomeClass(string? outcome) => outcome?.ToUpperInvariant() switch
+    {
+        "CONFIRMED" => "status-tested",
+        "SUPPORTED" => "status-partial",
+        "DISFAVORED" => "status-partial",
+        "FALSIFIED" => "status-untested",
+        _ => "status-pending",
+    };
+}

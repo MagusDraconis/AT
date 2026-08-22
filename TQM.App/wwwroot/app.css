@@ -321,6 +321,7 @@ a { color: inherit; }
 .status-tested { color: #81C784; border-color: #81C784; background: rgba(129,199,132,0.10); }
 .status-partial { color: #FFB74D; border-color: #FFB74D; background: rgba(255,183,77,0.10); }
 .status-untested { color: #E57373; border-color: #E57373; background: rgba(229,115,115,0.10); }
+.status-pending { color: #64B5F6; border-color: #64B5F6; background: rgba(100,181,246,0.10); }
 
 .audit-cat {
   font-size: 0.74rem; color: #64B5F6; font-weight: 600; white-space: nowrap;
@@ -402,6 +403,16 @@ a { color: inherit; }
 .graph-error { color: #E57373; }
 
 .derivation-drawer { background: #151A21; }
+
+/* ── Prediction status paths ────────────────────────────────────────────── */
+
+.status-path { margin-bottom: 1.1rem; }
+.status-path-label {
+  font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.06em;
+  color: #8B949E; margin-bottom: 0.35rem;
+}
+.status-flow { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem; }
+.status-arrow { color: #8B949E; font-size: 1rem; }
 
 /* The MudDrawer temporary overlay scrim covers the whole page and would
    swallow node clicks after the first one. Make it click-through so the
