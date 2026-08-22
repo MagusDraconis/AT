@@ -3,9 +3,9 @@
 **Single source of truth for all TQM-QG physics validation.**
 
 - Last updated: 2026-08-23
-- Total phases: 234
-- Tested: 203 | Partial: 12 | Untested: 0 | Audit: 19
-- Weighted coverage: 91.3%
+- Total phases: 235
+- Tested: 204 | Partial: 12 | Untested: 0 | Audit: 19
+- Weighted coverage: 91.4%
 
 > Maintenance rule: whenever a QG phase completes, scan its classification, update
 > tested/partial/untested, contradictions, open questions, predictions, and statistics.
@@ -17,12 +17,12 @@
 
 | Metric | Value |
 |---|---|
-| Phases total | 234 |
-| Tested | 203 |
+| Phases total | 235 |
+| Tested | 204 |
 | Partially tested | 12 |
 | Untested | 0 |
 | Audit (QG170) | 19 |
-| Weighted coverage | 91.3% |
+| Weighted coverage | 91.4% |
 | SM tested | 53 |
 | Gravity tested | 33 |
 
@@ -44,7 +44,7 @@
 
 | Domain | Tested | Partial | Untested | Audit | Total |
 |---|---|---|---|---|---|
-| Cosmology | 2 | 0 | 0 | 1 | 3 |
+| Cosmology | 3 | 0 | 0 | 1 | 4 |
 | High-Energy Sector | 6 | 1 | 0 | 0 | 7 |
 | Foundations | 20 | 0 | 0 | 13 | 33 |
 | Gravity / GR | 33 | 2 | 0 | 0 | 35 |
@@ -600,3 +600,4 @@ Historical entries are preserved; updates are additive.
 
 - **QG231** — PARTIAL COSMOLOGY (audit) — cosmology closure audit (audit only, reviews QG77 + QG194-228, six features): PARTIAL COSMOLOGY — score 2.0/6; DERIVED 1 [1 Expansion: QG77 expansion = redshift QG26 + scale-free ρ evolution, FRW a = ρ^(1/d)], PARTIAL 2 [3 Dark matter: derived as an EFFECT — matter = deficit QG194/195, α=0 flat rotation QG206, M∝R QG184 — not a particle, no CMB/structure implications; 6 CMB-compatible structure: conformal metric hosts FRW + CMB isotropy compatible QG77, anisotropy spectrum needs structure formation], OPEN 3 [2 Structure formation: no growth law for deficit perturbations, QG227/228 give seeds not dynamics; 4 Dark energy: no mechanism for cosmic acceleration in QG194-228; 5 Λ: no origin, QG88 value selection PARTIAL CONSTRAINT does not select it]; SINGLE HIGHEST-IMPACT BLOCKER: Dark energy / Λ — constitutes the majority of the universe's energy budget (accelerated expansion), completely underived (no candidate mechanism in QG194-228), the largest single cosmological feature; structure formation is the runner-up; the cosmology sector is substantially closer than QG77's 'UNKNOWN' [dark-matter effect now derived via deficit + α=0 + M∝R] but not closed `TQMQG_CosmologyClosureAudit.md`
 - **QG232** — LAMBDA ORIGIN (tested) — cosmological constant Λ DERIVED from Q-events (no new primitives, deterministic): Λ is the RESIDUAL ACTUALIZATION PRESSURE of the critical branching vacuum; EXISTENCE — at criticality (μ=1) the Galton-Watson MEAN is constant but the VARIANCE GROWS [Var(Z_k) = k·σ², the residual pressure]; the realized vacuum never equals its uniform expectation [QG228], and its positive information I_vac = KL(ρ‖uniform) > 0 is a positive vacuum energy [energy = actualization rate, QG89] — Λ exists because the uniform state is unattainable by a discrete process; SIGN — positive: a constant positive vacuum energy drives the conformal scale factor a = ρ^(1/d) [QG77] to accelerate [H = √(ρ_Λ/3) > 0, repulsive vacuum, accelerating expansion]; SCALING — Λ ∝ 1/R²: M∝R [QG184] gives ρ̄ ~ M/R³ ~ 1/R², the vacuum is a fixed fraction Ω_Λ of ρ̄, so Λ = 8πG·ρ_Λ ∝ 1/R² — Λ ~ H² ~ ρ̄ AUTOMATICALLY, the cosmological coincidence is a STRUCTURAL IDENTITY of the single counting-measure scale R, not an independent tiny constant; UNIFORM-STATE INSTABILITY — the uniform critical state is only the EXPECTED fixed point [QG222]; the realized vacuum rolls off it via the growing variance; no imported vacuum energy, no fitted Λ; CLOSES the QG229 highest-impact blocker [dark energy / Λ]; cosmology closure score rises from 2.0/6 toward 4.0/6 [dark energy + Λ now derived; remaining open: structure formation] `TQMQG_LambdaOrigin.md`
+- **QG233** — STRUCTURE ORIGIN (tested) — structure formation DERIVED from Q-event statistics (no new primitives, deterministic): the density contrast is seeded by the POISSON counting variance of Q-events and grows LINEARLY with the scale factor; (1) POISSON SEED — the initial field is uniform critical + Poisson counting noise [QG15/228]: δ_i = 1/√⟨N⟩ [δ_i(1e6)=1e-3, δ_i(1e10)=1e-5], derived not fitted; (2) SCALE-FREE ACTUALIZATION VARIANCE — at criticality Var(Z_k) = k·σ² is scale-free [Var(2k)/Var(k)=2], the seed spectrum needs NO INFLATION; (3) CRITICAL BRANCHING — scale-free, the same self-similarity as α=0 [QG206]; (4) DENSITY CONTRAST GROWTH — the deficit dust T_μν = ρ_m·v_μ·v_ν [QG195/196] is PRESSURELESS and SELF-GRAVITATING ⇒ over-densities amplify: δ(a) = δ_i·a/a_i [linear with a = ρ^(1/d), QG77], Var(δρ/ρ) = (1/⟨N⟩)·(a/a_i)², growth ratio δ(2)/δ(1)=2 [deterministic, independent of the seed]; (5) ATTRACTOR FORMATION & NETWORK CLUSTERING — the universal attractor [QG116b, exact FP + basin ≥ 0.9] builds the self-similar geometry, the causal network spectrum is hierarchical and robust [QG104/105]; NO INFLATION, NO imported perturbation spectrum, NO fitted seeds; CLOSES the QG229 last open cosmology feature [structure formation]; cosmology closure score rises toward 6.0/6 — all six features now derived or partial [expansion QG77, structure formation this phase, dark matter effect QG206, dark energy + Λ QG230, CMB isotropy QG77] `TQMQG_StructureFormationOrigin.md`
