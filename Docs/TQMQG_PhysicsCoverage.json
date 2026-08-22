@@ -3,16 +3,16 @@
     "file": "Docs/TQMQG_PhysicsCoverage.md|json",
     "purpose": "single source of truth for all TQM-QG physics validation",
     "last_updated": "2026-08-22",
-    "phases_count": 219,
+    "phases_count": 220,
     "note": "Historical entries are never removed. Additive updates only."
   },
   "coverage": {
-    "total_phases": 219,
-    "tested": 197,
+    "total_phases": 220,
+    "tested": 198,
     "partial": 12,
     "untested": 0,
     "audit": 10,
-    "weighted_coverage": 0.9384,
+    "weighted_coverage": 0.9386,
     "domains": {
       "cosmology": {
         "tested": 1,
@@ -64,11 +64,11 @@
         "total": 7
       },
       "qm": {
-        "tested": 12,
+        "tested": 13,
         "partial": 0,
         "untested": 0,
         "audit": 0,
-        "total": 12
+        "total": 13
       },
       "sm": {
         "tested": 53,
@@ -2336,6 +2336,14 @@
       "domain": "qm",
       "validation": "tested",
       "key_result": "quantum amplitude MAGNITUDE derived from Q-events (no new primitives): |ψ_k|² = ρ_k = μ^k/S where μ is the branching ratio of the Galton-Watson actualization process [QG1] and S = Σ_{j<K} μ^j — the counting measure share IS the amplitude magnitude squared [QG73 confirmed, now derived not asserted]; path multiplicity to generation k = μ^k; Born rule Σ|ψ|² = 1 EXACT by construction (normalization of the actualization share) for any μ; criticality [μ=1] gives uniform shares |ψ|² = 1/K, consistent with α=0 [QG206]; SCOPE: the magnitude is derived from Q-events, the PHASE [U(1) argument] remains a separate degree of freedom [QG62] — closes the magnitude half of the QG215 gap"
+    },
+    {
+      "phase": 218,
+      "file": "TQMQG_HilbertOrigin.md",
+      "classification": "HILBERT ORIGIN",
+      "domain": "qm",
+      "validation": "tested",
+      "key_result": "complex-state structure derived (no new primitives): quantum states MUST be complex because a state carries exactly TWO independent real DOFs — the MAGNITUDE |ψ| = √ρ (branching counting measure, QG216, node property) and the PHASE θ (U(1) link connection, QG63, link property); interference P = |e^(iθ₁)+e^(iθ₂)|² = 2+2cos(θ₁−θ₂) is phase-dependent [QG65] — a real-only state space gives classical addition P=P₁+P₂ (no interference); a state with magnitude AND phase is exactly a complex number ψ = |ψ|·e^(iθ) (polar form); the Hilbert space is over ℂ — superposition with complex coefficients, ℂ-bilinear inner product, Born rule P=|⟨φ|ψ⟩|²; ℂ is uniquely forced [real: no interference; quaternionic: no source]; consistent with QG74 unitary general measurement [ℂ-linear]; the complexity is forced by the (magnitude, phase) pair — no new primitive; the graph-Laplacian eigenbasis [TQM-149] is the standard ℂ Hilbert space"
     }
   ]
 }

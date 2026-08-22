@@ -3,9 +3,9 @@
 **Single source of truth for all TQM-QG physics validation.**
 
 - Last updated: 2026-08-22
-- Total phases: 219
-- Tested: 197 | Partial: 12 | Untested: 0 | Audit: 10
-- Weighted coverage: 93.8%
+- Total phases: 220
+- Tested: 198 | Partial: 12 | Untested: 0 | Audit: 10
+- Weighted coverage: 93.9%
 
 > Maintenance rule: whenever a QG phase completes, scan its classification, update
 > tested/partial/untested, contradictions, open questions, predictions, and statistics.
@@ -17,12 +17,12 @@
 
 | Metric | Value |
 |---|---|
-| Phases total | 219 |
-| Tested | 197 |
+| Phases total | 220 |
+| Tested | 198 |
 | Partially tested | 12 |
 | Untested | 0 |
 | Audit (QG170) | 10 |
-| Weighted coverage | 93.8% |
+| Weighted coverage | 93.9% |
 | SM tested | 53 |
 | Gravity tested | 32 |
 
@@ -51,7 +51,7 @@
 | Network & Spectrum | 42 | 0 | 0 | 0 | 42 |
 | Predictions | 11 | 0 | 0 | 4 | 15 |
 | ψ / Tensor Sector | 7 | 0 | 0 | 0 | 7 |
-| Quantum Mechanics | 12 | 0 | 0 | 0 | 12 |
+| Quantum Mechanics | 13 | 0 | 0 | 0 | 13 |
 | Standard Model | 53 | 9 | 0 | 1 | 63 |
 | TRM Dynamics | 15 | 0 | 0 | 0 | 15 |
 
@@ -567,3 +567,4 @@ Historical entries are preserved; updates are additive.
 ### Quantum Mechanics
 
 - **QG217** — AMPLITUDE ORIGIN (tested) — quantum amplitude MAGNITUDE derived from Q-events (no new primitives): |ψ_k|² = ρ_k = μ^k/S where μ is the branching ratio of the Galton-Watson actualization process [QG1] and S = Σ_{j<K} μ^j — the counting measure share IS the amplitude magnitude squared [QG73 confirmed, now derived not asserted]; path multiplicity to generation k = μ^k; Born rule Σ|ψ|² = 1 EXACT by construction (normalization of the actualization share) for any μ; criticality [μ=1] gives uniform shares |ψ|² = 1/K, consistent with α=0 [QG206]; SCOPE: the magnitude is derived from Q-events, the PHASE [U(1) argument] remains a separate degree of freedom [QG62] — closes the magnitude half of the QG215 gap `TQMQG_QuantumAmplitudeOrigin.md`
+- **QG218** — HILBERT ORIGIN (tested) — complex-state structure derived (no new primitives): quantum states MUST be complex because a state carries exactly TWO independent real DOFs — the MAGNITUDE |ψ| = √ρ (branching counting measure, QG216, node property) and the PHASE θ (U(1) link connection, QG63, link property); interference P = |e^(iθ₁)+e^(iθ₂)|² = 2+2cos(θ₁−θ₂) is phase-dependent [QG65] — a real-only state space gives classical addition P=P₁+P₂ (no interference); a state with magnitude AND phase is exactly a complex number ψ = |ψ|·e^(iθ) (polar form); the Hilbert space is over ℂ — superposition with complex coefficients, ℂ-bilinear inner product, Born rule P=|⟨φ|ψ⟩|²; ℂ is uniquely forced [real: no interference; quaternionic: no source]; consistent with QG74 unitary general measurement [ℂ-linear]; the complexity is forced by the (magnitude, phase) pair — no new primitive; the graph-Laplacian eigenbasis [TQM-149] is the standard ℂ Hilbert space `TQMQG_HilbertOrigin.md`

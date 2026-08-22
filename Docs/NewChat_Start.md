@@ -183,7 +183,7 @@ Open Questions:
 - P1 (106 GeV) status after QG199: PENDING — window 99–114 GeV neither confirmed nor excluded; 95 GeV cluster = 91.19 rung; new 152 GeV excess = 151.98 rung (P3, not P1); HL-LHC decisive
 - sector ladder (P3) after QG200/QG201: 12 rungs audited — CONFIRMED 3 (SM anchors Z/H/t), SUPPORTED 1 (151.98 = ~152 GeV excess, MODERATE SUPPORT alignment 2.80σ, 1-in-386), PENDING 8, none falsified
 - the anti-fit reaudit (QG214) confirms the methodology is clean: QG190-213 added 3 PRE-REGISTERED + 1 REGISTRY LOCK + 20 PREDICTION, zero retro-fit/overfit; RETRO-FIT=2 (QG140/146), OVERFIT=1 (QG147) still correct; risk confined to the fitting era QG140-148
-- the QG closure audit (QG215) classifies TQM as PARTIAL QG: gravity + matter derived from ρ, but QM requires a new primitive (the amplitude/phase, QG62); QG216 derives the amplitude MAGNITUDE |ψ|² = ρ = μ^k/S from Q-events (Born rule exact by construction) — the phase (U(1)) remains the open half
+- the QG closure audit (QG215) classifies TQM as PARTIAL QG: gravity + matter derived from ρ, but QM requires a new primitive (the amplitude/phase, QG62); QG216 derives the amplitude MAGNITUDE |ψ|² = ρ = μ^k/S from Q-events (Born rule exact by construction); QG218 derives the complex-state structure (HILBERT ORIGIN) — a state carries magnitude (branching) + phase (U(1) links) = a complex number, so the Hilbert space is over ℂ
 
 ## Status Table
 
@@ -496,10 +496,12 @@ QG215: quantum gravity closure audit (PARTIAL QG — audit only, no new physics:
 
 QG216: quantum amplitude origin (AMPLITUDE ORIGIN — the amplitude MAGNITUDE is derived from Q-events, no new primitives: |ψ_k|² = ρ_k = μ^k/S where μ is the branching ratio of the Galton-Watson actualization process [QG1] and S = Σ_{j<K} μ^j — the counting-measure share IS |amplitude|² [QG73 confirmed, now derived]; path multiplicity to generation k = μ^k; Born rule Σ|ψ|² = 1 EXACT by construction for any μ; criticality [μ=1] gives uniform shares |ψ|²=1/K, consistent with α=0 [QG206]; SCOPE: the magnitude is derived from Q-events, the PHASE [U(1) argument] remains a separate degree of freedom [QG62] — closes the magnitude half of the QG215 gap).
 
+QG218: hilbert origin (HILBERT ORIGIN — the complex-state structure is derived, no new primitives: quantum states MUST be complex because a state carries exactly TWO independent real DOFs — the MAGNITUDE |ψ| = √ρ [branching counting measure, QG216, node property] and the PHASE θ [U(1) link connection, QG63, link property]; interference P = |e^(iθ₁)+e^(iθ₂)|² = 2+2cos(θ₁−θ₂) is phase-dependent [QG65] — a real-only state space gives classical addition P=P₁+P₂ [no interference]; a state with magnitude AND phase is exactly a complex number ψ = |ψ|·e^(iθ); the Hilbert space is over ℂ [superposition with complex coefficients, ℂ-bilinear inner product, Born rule P=|⟨φ|ψ⟩|²]; ℂ is uniquely forced [real: no interference; quaternionic: no source]; consistent with QG74 unitary general measurement [ℂ-linear]; the complexity is forced by the [magnitude, phase] pair — no new primitive; the graph-Laplacian eigenbasis [TQM-149] is the standard ℂ Hilbert space).
+
 Milestone counters:
 
-TQM-QG 219 phases
-543+ TQM-QG tests verified
+TQM-QG 220 phases
+546+ TQM-QG tests verified
 
 ### QG154: Neutrino Sector Origin
 
@@ -523,5 +525,5 @@ NEUTRINO ORIGIN
 
 Milestone counters:
 
-TQM-QG 219 phases
-543+ TQM-QG tests verified
+TQM-QG 220 phases
+546+ TQM-QG tests verified
