@@ -3,9 +3,9 @@
 **Single source of truth for all TQM-QG physics validation.**
 
 - Last updated: 2026-08-23
-- Total phases: 230
-- Tested: 200 | Partial: 12 | Untested: 0 | Audit: 18
-- Weighted coverage: 91.5%
+- Total phases: 231
+- Tested: 201 | Partial: 12 | Untested: 0 | Audit: 18
+- Weighted coverage: 91.6%
 
 > Maintenance rule: whenever a QG phase completes, scan its classification, update
 > tested/partial/untested, contradictions, open questions, predictions, and statistics.
@@ -17,12 +17,12 @@
 
 | Metric | Value |
 |---|---|
-| Phases total | 230 |
-| Tested | 200 |
+| Phases total | 231 |
+| Tested | 201 |
 | Partially tested | 12 |
 | Untested | 0 |
 | Audit (QG170) | 18 |
-| Weighted coverage | 91.5% |
+| Weighted coverage | 91.6% |
 | SM tested | 53 |
 | Gravity tested | 33 |
 
@@ -46,7 +46,7 @@
 |---|---|---|---|---|---|
 | Cosmology | 1 | 0 | 0 | 0 | 1 |
 | High-Energy Sector | 6 | 1 | 0 | 0 | 7 |
-| Foundations | 18 | 0 | 0 | 13 | 31 |
+| Foundations | 19 | 0 | 0 | 13 | 32 |
 | Gravity / GR | 33 | 2 | 0 | 0 | 35 |
 | Network & Spectrum | 42 | 0 | 0 | 0 | 42 |
 | Predictions | 11 | 0 | 0 | 4 | 15 |
@@ -593,3 +593,4 @@ Historical entries are preserved; updates are additive.
 - **QG226** — MONOGRAPH STRUCTURE (audit) — quantum gravity monograph assembly (MONO001, assembly only from QG0-QG225, no new physics): complete 18-chapter monograph structure assembled with source QG phases per chapter — 1 Executive Summary [QG0/51/215/219/221/223/224/225], 2 Primitive Ontology [QG1/11/23/24/40/50/51/53/55/68], 3 Q-Events [QG1/7/11/29/30/34/104], 4 Emergent Density ρ [QG0/1/4/89/116/155], 5 Quantum Mechanics [QG61-74 + QG216/218/220], 6 Spacetime Emergence [QG2/3/5/10/14/15/197/207/222], 7 Gravity [QG0/6/12/13/103/181-187/196/198/209/213/222], 8 Matter [QG89/194/195/196/206], 9 Standard Model [QG60/78-85/118/134/138/140/149-169/171-180/203-205/209-211], 10 Tensor Sector ψ [QG16-25/43-59/103/186/208/213/223], 11 Validation Program [QG76/104-119/170/224/225], 12 Blind Tests [QG176/177], 13 Anti-Fit Audits [QG147/148/189/190/215], 14 Prediction Registry [QG132/188/190-194], 15 Prediction Outcomes [QG199-203], 16 Discussion [QG212/214/223/224], 17 Limitations [QG76/77/85/135/136/139/142-144/146/152/185/196/223], 18 Falsification Paths [QG132/190-193/202/203]; structure checks: 18 sequential chapters, all with sources, 161 distinct phases referenced (71.2% of the 226-phase register), 260 total references; title 'Quantum Gravity from a Counting Measure'; assembly only `TQMQG_MonographAssembly.md`
 - **QG227** — STRONG (no open objections) (audit) — referee objection audit (MONO003, hostile-referee review of QG0-QG225, no new physics): Top-50 objections catalogued across five focus areas [imported physics 10, circularity 10, hidden assumptions 10, prediction ambiguity 10, falsification weaknesses 10]; severity FATAL 1 / MAJOR 14 / MINOR 23 / EDITORIAL 12; resolution RESOLVED 30 / BOUNDARY 6 / PARTIAL 12 / OPEN 0; VERDICT STRONG — 38/50 closed (resolved+boundary), 12 partial (documented gaps + experiment-ahead-of-data predictions), 0 open, no FATAL objection survives; the strongest objections are each resolved or explicit boundaries: ψ new primitive [BOUNDARY, second of two primitives QG51/223], BDG dynamics imported [RESOLVED QG222 native dynamics], Bekenstein 1/4 requires imported π [BOUNDARY, QG185/196 impossibility proof], cosmology not derived [BOUNDARY, QG76/77 out of scope], Born rule 'by construction' circularity [RESOLVED QG216 |ψ|²=ρ is the measure], D96 self-selection [RESOLVED QG159/160], weak-scale circularity [RESOLVED QG168], P1 window wide [PARTIAL pre-registered ±half-spacing QG190], P3 look-elsewhere [RESOLVED QG202 1-in-386 z=2.80σ], P2 below 0νββ reach [PARTIAL explicit falsification condition, nEXO/LEGEND-1000]; genuine open items are all PARTIAL or BOUNDARY: ψ existence [boundary], Bekenstein 1/4 [impossibility boundary], cosmology [out of scope], P1/P2 falsification reach [awaiting HL-LHC/nEXO], ladder multiplicity derivation transparency [O35], branching distribution [O22] `TQMQG_RefereeObjectionAudit.md`
 - **QG228** — PARTIAL TOE (audit) — theory of everything audit (audit only, reviews QG0-QG223, ten TOE criteria): PARTIAL TOE — score 6.5/10; DERIVED 4 [1 QM: magnitude QG216 + phase QG220 + complex structure QG218 + measurement QG74; 2 Gravity: structure QG197/207 + observables QG181-213 + native dynamics QG222; 3 Matter: deficit ρ̄−ρ QG194/195 + deficit dust QG196 + mass laws QG203-211; 7 Dimensionality: QG2/3/5/159/160], PARTIAL 5 [4 SM: masses/couplings/mixing derived QG161-180/203-211 but gauge-fermion-Higgs dynamics hosted/compatible QG60/76/85; 5 Cosmology: expansion + FRW + dark-matter effect QG77, structure formation and Λ UNKNOWN; 8 Information origin: ρ IS the information content QG1/73, capacity QG10, origin not; 9 Primitive completeness: two primitives FORCED minimal QG50/51/40, ψ existence observational QG47 boundary QG223; 10 Parameter completeness: many derived QG168-180, survey PARTIAL QG85, value selection PARTIAL CONSTRAINT QG88], OPEN 1 [6 Initial conditions: no phase derives the universe's initial state]; MISSING REQUIREMENTS: structure formation, dark energy Λ, initial conditions, full SM dynamics, full parameter completeness, information-content origin, primitive-closure; the theory is a COMPLETE QUANTUM GRAVITY (QG223) and MONOGRAPH READY (QG224) but as a TOE it is PARTIAL — the missing pieces are the cosmological/initial-condition sector and the final completeness closure, not the core physics pillars `TQMQG_TheoryOfEverythingAudit.md`
+- **QG229** — INITIAL-CONDITION ORIGIN (tested) — initial conditions DERIVED (no new primitives, deterministic): the universe's initial state is the UNIFORM CRITICAL STATE ρ_k = 1/K (μ=1, α=0); (1) STATIONARITY — an initial state must be a fixed point of the actualization flow, ∂_t ρ = (ln μ)·ρ = 0 [QG222] requires μ=1 [critical]; any μ≠1 is a transient, not an initial state; (2) SCALE-FREENESS — α=0 [equal deficit per octave, QG206] is the unique scale-free state [spread 0 vs >0 for α=±0.3]; α≠0 introduces a preferred scale = information with no source; (3) MINIMUM-INFORMATION — among critical states the least-committal allocation is uniform ρ_k = 1/K, which maximizes the native entropy H(α) [H(0)=ln K ≥ H(α), G4-RHO] — zero initial-condition input needed; (4) CRITICAL BRANCHING — the uniform state IS the critical branching state [QG216 at μ=1: ρ_k = μ^k/S → 1/K]; (5) ATTRACTOR — the universal attractor [QG116b] is a stable exact fixed point with basin ≥ 0.9, so residual content is ERASED and no fine-tuning is required; initial conditions are DERIVED, not assumed — the unique minimum-information fixed point of the actualization flow; CLOSES the QG226 TOE criterion 6 [initial conditions: OPEN → DERIVED]; TOE score rises from 6.5/10 toward 7.0/10 `TQMQG_InitialConditionsOrigin.md`
