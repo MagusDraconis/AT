@@ -230,6 +230,7 @@ Open Questions:
 | 106 GeV Resonance Evidence | QG188A | INCONCLUSIVE (published record: ~95 GeV scalar excess cluster — CMS γγ 2.9σ, ATLAS γγ 1.7σ, combined 3.1σ, CMS ττ 2.6σ, LEP bb̄ 2.3σ — aligns with the 91.19 GeV ladder rung (dev 4.5%), NOT the predicted 106.39 GeV (−10.4%); CMS 70–110 & ATLAS 66–110 GeV full-Run-2 diphoton null searches cover 106 GeV with no excess; limits 15–102 fb; LEP2 excludes SM-like < 114.4 GeV but only SM-strength hZZ; prediction NOT excluded (suppressed couplings allowed); Run 3 no confirmed increase; HL-LHC decisive) |
 | Anti-Fit Audit | QG189 | PREDICTION AUDIT (49 phases QG140-188 audited: 36 PREDICTION, 2 BLIND [QG176 Higgs, QG177 leave-one-out], 8 DEPENDENT, 2 RETRO-FIT [QG140, QG146 fitted exponents, superseded], 1 OVERFIT [QG147, 3 params/3 sectors, CONFIRMED by QG148 out-of-sample]; 3 high-risk all in fitting era QG140-148; structural era QG149+ has no fitted parameters; gold-standard blind tests = QG176/177) |
 | Pre-Registered 106 GeV Resonance | QG190 | PRE-REGISTERED (prediction frozen BEFORE future data, D96/QG128-132 only — forbidden: ATLAS/CMS excess, fitted masses, new constants; CENTRAL MASS = 106.39 GeV [lowest missing Z-anchor rung, radius 7.0, scale MZ/6=15.198]; WINDOW = 98.79–113.99 GeV [stated 99–114, ±half rung-spacing 7.60]; PRODUCTION hierarchy = 9 rungs 106.4→263.4 GeV all below LHC13/FCC-hh; DECAY hierarchy = unit quantum 15.20 GeV ×10 [0.909] + top 20.26 GeV ×1 → observable 3-family sector; CONFIRMED = signal in window with 15–20 GeV quanta; DISFAVORED = null; forbidden-input guard asserts no ATLAS/CMS/fitted-mass constant enters) |
+| Pre-Registered 0νββ (m_ββ) | QG191 | PRE-REGISTERED (m_ββ = |Σ U_ei²·m_i| = 2.02 meV frozen from QG167 PMNS [s12=0.5497, s13=0.1451, δ_ν=66.4°] + QG172 masses [m1=0, m2=8.72, m3=49.4 meV, normal ordering] + QG179 Majorana [real matrix ⇒ α2=α3=0]; computed = 2.0222 meV; forbidden: experimental limits, detector sensitivities, future measurements [guard asserts none used]; CONFIRMED = future measurement within ±10% of 2.02 meV; FALSIFIED = significant exclusion below 2.02 meV; dominated by m2·s12²·c13² term [2.52 meV], robust to CP phase) |
 | 106 GeV Resonance (validation) | QG132 | FALSIFIABLE PREDICTION (not yet observed) |
 | Collider Test of Sector-Ladder | QG130 | PREDICTED (no data yet) |
 | Sector Exponent Law p(Q,T3) | QG147 | HISTORICAL (overfit) — superseded by QG149 |
@@ -280,6 +281,7 @@ D96 Automorphisms (D96 = ⟨r,s⟩)
 → 106 GeV evidence audit (QG188A): INCONCLUSIVE — published record shows a ~95 GeV scalar excess cluster (CMS γγ 2.9σ, ATLAS γγ 1.7σ, combined 3.1σ; CMS ττ 2.6σ; LEP bb̄ 2.3σ) aligning with the 91.19 GeV ladder rung (dev 4.5%) NOT the predicted 106.39 GeV (−10.4%); CMS 70–110 & ATLAS 66–110 GeV full-Run-2 diphoton null searches cover 106 GeV (limits 15–102 fb, no excess); LEP2 SM-like < 114.4 GeV (SM-strength hZZ only); prediction NOT excluded; Run 3 no confirmed increase; HL-LHC decisive
 → Anti-fit audit (QG189): methodology audit of QG140-188 — 49 phases: 36 PREDICTION, 2 BLIND RECONSTRUCTION (QG176 Higgs, QG177 leave-one-out), 8 DEPENDENT, 2 RETRO-FIT (QG140, QG146 fitted exponents, superseded by QG141/149), 1 OVERFIT (QG147, 3 params/3 sectors, CONFIRMED by QG148 out-of-sample); all 3 high-risk phases in the fitting era QG140-148; structural era QG149+ has no fitted parameters; gold-standard anti-fit evidence = the two blind tests
 → Pre-registered 106 GeV (QG190): prediction FROZEN before future data — central mass 106.39 GeV (lowest missing Z-anchor rung, radius 7.0, scale MZ/6 = 15.198 GeV/radius), window 98.79–113.99 GeV (stated 99–114, ±half rung-spacing 7.60), production hierarchy 9 rungs 106.4→263.4 GeV all below LHC13/FCC-hh, decay hierarchy unit quantum 15.20 GeV ×10 (0.909) + top 20.26 GeV ×1 → observable 3-family sector; forbidden-input guard (no ATLAS/CMS/fitted mass/new constant); CONFIRMED = signal in window with 15–20 GeV quanta, DISFAVORED = null
+→ Pre-registered 0νββ (QG191): m_ββ = |Σ U_ei²·m_i| = 2.02 meV frozen from QG167 PMNS (s12=0.5497, s13=0.1451, δ_ν=66.4°) + QG172 masses (m1=0, m2=8.72, m3=49.4 meV, NORMAL ordering) + QG179 Majorana (real matrix ⇒ α2=α3=0); computed 2.0222 meV, dominated by m2·s12²·c13² term (2.52 meV); forbidden-input guard (no experimental limit/detector sensitivity/future measurement); CONFIRMED = measurement within ±10%, FALSIFIED = exclusion below 2.02 meV
 → Higgs = collective occupation-density scalar
 
 Fermions:
@@ -429,10 +431,12 @@ QG189: anti-fit audit (PREDICTION AUDIT — 49 phases QG140-188; 36 prediction, 
 
 QG190: pre-registered 106 GeV resonance (PRE-REGISTERED — prediction frozen from D96/QG128-132 only; central mass 106.39 GeV, window 99–114 GeV).
 
+QG191: pre-registered 0νββ (PRE-REGISTERED — m_ββ = 2.02 meV frozen from QG167/172/179 only; normal ordering; α2=α3=0).
+
 Milestone counters:
 
-TQM-QG 193 phases
-465+ TQM-QG tests verified
+TQM-QG 194 phases
+468+ TQM-QG tests verified
 
 ### QG154: Neutrino Sector Origin
 
@@ -456,5 +460,5 @@ NEUTRINO ORIGIN
 
 Milestone counters:
 
-TQM-QG 193 phases
-465+ TQM-QG tests verified
+TQM-QG 194 phases
+468+ TQM-QG tests verified

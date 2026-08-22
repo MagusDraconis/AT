@@ -409,6 +409,8 @@ add(190,"TQMQG_AntiFitAudit.md","PREDICTION AUDIT","predictions","tested",
     "methodology audit of QG140-188: 49 phases — 36 PREDICTION, 2 BLIND (QG176 Higgs, QG177 leave-one-out), 8 DEPENDENT, 2 RETRO-FIT (QG140/146 fitted exponents, superseded by QG141/149), 1 OVERFIT (QG147, 3 params/3 sectors, CONFIRMED by QG148 out-of-sample); 3 high-risk all in fitting era QG140-148; structural era QG149+ no fitted parameters")
 add(191,"TQMQG_PreRegistered106GeV.md","PRE-REGISTERED","predictions","tested",
     "prediction frozen BEFORE future data (D96/QG128-132 only; forbidden: ATLAS/CMS excess, fitted masses, new constants): central mass 106.39 GeV (lowest missing Z-anchor rung, scale MZ/6=15.198), window 98.79–113.99 GeV (stated 99–114), production 9 rungs 106.4→263.4 GeV below LHC13/FCC-hh, decay unit 15.20 GeV ×10 + top 20.26 GeV ×1 → 3-family sector; CONFIRMED = signal in window with 15–20 GeV quanta, DISFAVORED = null")
+add(192,"TQMQG_PreRegisteredMbb.md","PRE-REGISTERED","predictions","tested",
+    "m_ββ = |Σ U_ei²·m_i| = 2.02 meV frozen from QG167 PMNS (s12=0.5497, s13=0.1451, δ_ν=66.4°) + QG172 masses (m1=0, m2=8.72, m3=49.4 meV, NORMAL ordering) + QG179 Majorana (real matrix ⇒ α2=α3=0); computed 2.0222 meV, dominated by m2·s12²·c13² (2.52 meV); forbidden: experimental limits, detector sensitivities, future measurements (guard); CONFIRMED = ±10%, FALSIFIED = exclusion below 2.02 meV")
 
 # ── Observable-level SM audit (supersedes QG170's 25/9/14 with QG171-182 results) ──
 OBSERVABLES = [
@@ -545,7 +547,7 @@ OPEN_QUESTIONS = [
 PREDICTIONS = [
     dict(prediction="106 GeV resonance (scalar sector transition)", phase="QG132", status="FALSIFIABLE — not yet observed; QG188A audit INCONCLUSIVE; QG190 PRE-REGISTERED window 99–114 GeV"),
     dict(prediction="Sector-ladder collider signatures (energy-ladder rung states)", phase="QG130", status="PREDICTED — no data"),
-    dict(prediction="0νββ rate: m_ββ = 2.02e-3 eV (Majorana neutrino)", phase="QG179", status="PREDICTED — awaiting experiment"),
+    dict(prediction="0νββ rate: m_ββ = 2.02e-3 eV (Majorana neutrino)", phase="QG179/QG191", status="PREDICTED — awaiting experiment; QG191 PRE-REGISTERED (CONFIRMED ±10%, FALSIFIED below 2.02 meV)"),
     dict(prediction="Gravitational redshift WITHOUT lensing in conformal (ψ=0) sector", phase="QG21", status="FALSIFIABLE — differs from GR"),
     dict(prediction="Curvature-sourced Poisson equation (source = ρ″, not density value)", phase="G4-O0", status="TQM-SPECIFIC — testable in principle"),
 ]
