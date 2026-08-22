@@ -226,6 +226,7 @@ Open Questions:
 | Bekenstein Quarter (S = A/4) | QG185 | PARTIAL ORIGIN (structure fully derived: S ∝ A (QG12), M ∝ R (QG184), T ∝ 1/R (QG184); deficit first-law gives S = R²/2 = A_cell/2 = A/(8π) — coefficient 1/2, not 1/4; exact Bekenstein 1/4 requires the 2π QUANTUM factor T = κ/(2π) (Hawking/Unruh), not in D96/TRM — span/(2π) = 1.019 ≠ 1; candidate 1/occ₀ = 1/4 (occ₀ = 4) is a label identity without a mechanism) |
 | Frame Dragging (Lense–Thirring) | QG186 | FRAME-DRAGGING ORIGIN (gravitomagnetic h_0i sector is a ψ-sector observable: conformally-flat ρ-only metric has h_0i = 0 → NO frame dragging; ψ spin-2 (QG44) restores full linearized Einstein incl. h_0i; rotating deficit field (matter = deficit, G4ME) sources J; Ω_LT = G(3(J·r̂)r̂−J)/(2c²r³) → GP-B 41.1 vs 39.2 mas/yr (+4.8%, inside 37.2±7.2 measured), LAGEOS 30.7 vs ~31 (−1.1%); D96 G (QG181) shifts <1%) |
 | GPS Correction / Grav. Time Dilation | QG187 | GPS ORIGIN (gravitational time dilation IS the QG21 redshift law: clock rate dτ/dt = ρ^(1/d) = √(−g_00), Δτ/τ = (ρ1/ρ2)^(1/d)−1 = redshift; weak-field Δτ/τ = (GM/c²)(1/r1−1/r2) → +45.7 μs/day vs GR 45.9 (−0.4%); + SR orbital term −v²/(2c²) → −7.2 μs/day → NET +38.5 vs observed +38.6 μs/day (−0.2%), the −4.465e-10 GPS rate offset; ρ source = deficit field (G4ME), surface clock slower) |
+| Prediction Audit | QG188 | PREDICTION AUDIT (10 remaining falsifiable predictions from coverage JSON: 2 testable NOW [106 GeV P1, sector-ladder P2], 3 SOON [0νββ P3, mass-ordering P6, neutrino masses P7], 5 inaccessible [P4,P5,P8,P9,P10]; ranked by impact·3+feas·2+fals·2 → Top-1 = 106 GeV resonance (QG132, score 35.0, LHC Run 3), Top-SOON = 0νββ m_ββ=2.02e-3 eV (QG179); recommended next target = 106 GeV) |
 | 106 GeV Resonance (validation) | QG132 | FALSIFIABLE PREDICTION (not yet observed) |
 | Collider Test of Sector-Ladder | QG130 | PREDICTED (no data yet) |
 | Sector Exponent Law p(Q,T3) | QG147 | HISTORICAL (overfit) — superseded by QG149 |
@@ -272,6 +273,7 @@ D96 Automorphisms (D96 = ⟨r,s⟩)
 → Bekenstein quarter (QG185): structure derived (S ∝ A, M ∝ R, T ∝ 1/R) but deficit first-law gives S = R²/2 = A_cell/2 = A/(8π) — coefficient 1/2, not 1/4; exact 1/4 requires 2π quantum factor T = κ/(2π) (Hawking/Unruh), absent in D96/TRM (span/(2π) = 1.019 ≠ 1); 1/occ₀ = 1/4 (occ₀ = 4) is label identity, no mechanism; PARTIAL ORIGIN — open: derive 2π or a mechanism for the quarter
 → Frame dragging (QG186): gravitomagnetic h_0i sector is a ψ-sector observable — conformally-flat ρ-only metric has h_0i = 0 (NO frame dragging, analogue of QG26 no-lensing/QG103 retrograde perihelion); ψ spin-2 (QG44) restores full linearized Einstein incl. h_0i; rotating deficit field (matter = deficit, G4ME) sources J; Ω_LT = G(3(J·r̂)r̂−J)/(2c²r³) → GP-B 41.1 vs 39.2 mas/yr (+4.8%, inside measured 37.2±7.2), LAGEOS 30.7 vs ~31 (−1.1%); D96 G (QG181) shifts <1%; FRAME-DRAGGING ORIGIN — closes the GR observable chain (redshift, perihelion, G, Einstein structure, frame dragging)
 → GPS correction (QG187): gravitational time dilation IS the QG21 redshift law — clock rate dτ/dt = ρ^(1/d) = √(−g_00), Δτ/τ = (ρ1/ρ2)^(1/d)−1 = redshift; weak-field (GM/c²)(1/r1−1/r2) → +45.7 μs/day vs GR 45.9 (−0.4%); + SR orbital −v²/(2c²) = −7.2 → NET +38.5 vs observed +38.6 μs/day (−0.2%) = the −4.465e-10 GPS rate offset; ρ source = deficit field (G4ME), surface clock slower; GPS ORIGIN — the first practical application derived directly from the redshift law
+→ Prediction audit (QG188): 10 remaining falsifiable predictions from coverage JSON — 2 testable NOW (106 GeV P1, sector-ladder P2 at LHC Run 3), 3 SOON (0νββ P3, mass-ordering P6, neutrino masses P7), 5 inaccessible (redshift-no-lensing P4, curvature-Poisson P5, MS̄ conversion P8, granularity P9, regular-core P10); ranked by impact·3+feas·2+fals·2 → recommended next target = 106 GeV resonance (score 35.0); top SOON = 0νββ m_ββ=2.02e-3 eV
 → Higgs = collective occupation-density scalar
 
 Fermions:
@@ -413,10 +415,12 @@ QG186: frame dragging origin (FRAME-DRAGGING ORIGIN — gravitomagnetic h_0i sec
 
 QG187: GPS correction origin (GPS ORIGIN — gravitational time dilation IS the QG21 redshift law; net +38.5 vs observed +38.6 μs/day).
 
+QG188: prediction audit (PREDICTION AUDIT — 10 remaining falsifiable predictions ranked; recommended next target = 106 GeV resonance).
+
 Milestone counters:
 
-TQM-QG 189 phases
-453+ TQM-QG tests verified
+TQM-QG 190 phases
+456+ TQM-QG tests verified
 
 ### QG154: Neutrino Sector Origin
 
@@ -440,5 +444,5 @@ NEUTRINO ORIGIN
 
 Milestone counters:
 
-TQM-QG 189 phases
-453+ TQM-QG tests verified
+TQM-QG 190 phases
+456+ TQM-QG tests verified

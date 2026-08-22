@@ -3,8 +3,8 @@
 **Single source of truth for all TQM-QG physics validation.**
 
 - Last updated: 2026-08-22
-- Total phases: 189
-- Tested: 176 | Partial: 12 | Untested: 0 | Audit: 1
+- Total phases: 190
+- Tested: 177 | Partial: 12 | Untested: 0 | Audit: 1
 - Weighted coverage: 96.4%
 
 > Maintenance rule: whenever a QG phase completes, scan its classification, update
@@ -17,8 +17,8 @@
 
 | Metric | Value |
 |---|---|
-| Phases total | 189 |
-| Tested | 176 |
+| Phases total | 190 |
+| Tested | 177 |
 | Partially tested | 12 |
 | Untested | 0 |
 | Audit (QG170) | 1 |
@@ -49,7 +49,7 @@
 | Foundations | 16 | 0 | 0 | 0 | 16 |
 | Gravity / GR | 25 | 2 | 0 | 0 | 27 |
 | Network & Spectrum | 42 | 0 | 0 | 0 | 42 |
-| Predictions | 4 | 0 | 0 | 0 | 4 |
+| Predictions | 5 | 0 | 0 | 0 | 5 |
 | ψ / Tensor Sector | 7 | 0 | 0 | 0 | 7 |
 | Quantum Mechanics | 11 | 0 | 0 | 0 | 11 |
 | Standard Model | 49 | 9 | 0 | 1 | 59 |
@@ -495,3 +495,7 @@ Historical entries are preserved; updates are additive.
 - **QG185** — PARTIAL ORIGIN (partial) — structure derived (S∝A QG12, M∝R QG184, T∝1/R QG184); deficit first-law gives S = A_cell/2 = A/(8π), not 1/4; exact 1/4 requires the 2π quantum factor T = κ/(2π) absent in D96/TRM (span/(2π)=1.019); 1/occ₀=1/4 is a label identity `TQMQG_BekensteinQuarterOrigin.md`
 - **QG186** — FRAME-DRAGGING ORIGIN (tested) — gravitomagnetic h_0i sector is a ψ-sector observable: conformally-flat ρ-only has h_0i=0 (no frame dragging); ψ spin-2 (QG44) restores linearized Einstein incl. h_0i; rotating deficit (matter=deficit G4ME) sources J; Ω_LT=G(3(J·r̂)r̂−J)/(2c²r³) → GP-B 41.1 vs 39.2 mas/yr, LAGEOS 30.7 vs ~31; D96 G (QG181) shifts <1% `TQMQG_FrameDraggingOrigin.md`
 - **QG187** — GPS ORIGIN (tested) — gravitational time dilation IS the QG21 redshift law: clock rate dτ/dt = ρ^(1/d) = √(−g_00), Δτ/τ = (ρ1/ρ2)^(1/d)−1 = redshift; weak-field (GM/c²)(1/r1−1/r2) → +45.7 μs/day vs GR 45.9 (−0.4%); + SR orbital −v²/(2c²) = −7.2 → NET +38.5 vs observed +38.6 μs/day (−0.2%) = −4.465e-10 GPS rate offset; ρ source = deficit field (G4ME) `TQMQG_GpsCorrectionOrigin.md`
+
+### Predictions
+
+- **QG188** — PREDICTION AUDIT (tested) — 10 remaining falsifiable predictions from coverage JSON: 2 testable NOW (106 GeV P1, sector-ladder P2), 3 SOON (0νββ P3, mass-ordering P6, neutrino masses P7), 5 inaccessible (P4,P5,P8,P9,P10); ranked by impact·3+feas·2+fals·2 → Top-1 = 106 GeV (QG132, score 35.0, LHC Run 3), Top-SOON = 0νββ m_ββ=2.02e-3 eV (QG179) `TQMQG_PredictionAudit.md`
