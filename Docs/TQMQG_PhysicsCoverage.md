@@ -3,8 +3,8 @@
 **Single source of truth for all TQM-QG physics validation.**
 
 - Last updated: 2026-08-22
-- Total phases: 197
-- Tested: 184 | Partial: 12 | Untested: 0 | Audit: 1
+- Total phases: 198
+- Tested: 185 | Partial: 12 | Untested: 0 | Audit: 1
 - Weighted coverage: 96.6%
 
 > Maintenance rule: whenever a QG phase completes, scan its classification, update
@@ -17,14 +17,14 @@
 
 | Metric | Value |
 |---|---|
-| Phases total | 197 |
-| Tested | 184 |
+| Phases total | 198 |
+| Tested | 185 |
 | Partially tested | 12 |
 | Untested | 0 |
 | Audit (QG170) | 1 |
 | Weighted coverage | 96.6% |
 | SM tested | 49 |
-| Gravity tested | 26 |
+| Gravity tested | 27 |
 
 ### Observable-level coverage (SM quantities)
 
@@ -47,7 +47,7 @@
 | Cosmology | 1 | 0 | 0 | 0 | 1 |
 | High-Energy Sector | 6 | 1 | 0 | 0 | 7 |
 | Foundations | 16 | 0 | 0 | 0 | 16 |
-| Gravity / GR | 26 | 2 | 0 | 0 | 28 |
+| Gravity / GR | 27 | 2 | 0 | 0 | 29 |
 | Network & Spectrum | 42 | 0 | 0 | 0 | 42 |
 | Predictions | 11 | 0 | 0 | 0 | 11 |
 | ψ / Tensor Sector | 7 | 0 | 0 | 0 | 7 |
@@ -83,7 +83,7 @@
 | ψ/Weyl field: new fundamental primitive (capacity FORCED by link completeness QG56; excitation mechanism DERIVED QG57; existence observationally required QG47) — PARTIALLY SOLVED, see TQMQG_PsiOriginAudit.md | QG23/24/47/52/54/56/57 | PARTIALLY-SOLVED |
 | Matter = deficit: RESOLVED by QG194 (DEFICIT ORIGIN) — the actualization deficit IS the energy deficit (QG89), carries rest mass, is exactly conserved (Noether), and is the unique linear form (G4-ME5) | G4-ME/QG194 | RESOLVED |
 | Metric ansatz g = ρ^(2/d)η is PREFERRED but not UNIQUE; flat η is a defining axiom | G4-A0 | OPEN-AXIOM |
-| No independent matter sector: G=κT is an identity (Lovelock); kinetic T not conserved | G4-G3 | OPEN |
+| No independent matter sector: RESOLVED by QG195 (MATTER ORIGIN) — the deficit dust T_μν = (ρ̄−ρ)·v_μ·v_ν is an independent, conserved matter tensor built from ρ_m and v (escapes the G4-G4 Lovelock obstruction); G = κT is a dynamical relation, not an identity | G4-G3/QG195 | RESOLVED |
 | Hawking temperature after ψ: no phase derives T ∝ 1/R explicitly with ψ≠0 | QG24 | OPEN |
 | Flat rotation-curve α=0: SEMI-NATURAL, symmetry assumption not derived | G4-ME4 | OPEN |
 | 2D native program: Einstein tensor ≡ 0 in d=2; 2D→3D bridge not in one report | G4-G0 | OPEN-BRIDGE |
@@ -509,3 +509,4 @@ Historical entries are preserved; updates are additive.
 ### Gravity / GR
 
 - **QG195** — DEFICIT ORIGIN (tested) — matter = ρ̄−ρ DERIVED not postulated: actualization deficit IS the energy deficit (QG89 energy = actualization rate ⇒ E_def = m), carries rest mass (E=mc²), EXACTLY conserved (Noether: ∫m dV = ρ̄V−∫ρ dV exact), unique form (gradient-source identity a=+(1/d)∇m/ρ ⇒ m=ρ̄−ρ, G4-ME5); closes the 'matter = deficit is a hypothesis' open question `TQMQG_MatterDeficitOrigin.md`
+- **QG196** — MATTER ORIGIN (tested) — independent T_μν recovered WITHOUT defining T ≡ G/κ: matter sector = DEFICIT DUST T_μν = (ρ̄−ρ)·v_μ·v_ν (network stress = deficit mass ρ_m QG194, link energy = actualization deficit QG89, flow = native geodesics QG20-21); conserved (Noether deficit-mass conservation + geodesic flow); independent of G (built from ρ_m and v, NOT the metric geometry — escapes G4-G4 Lovelock obstruction); G = κT becomes a DYNAMICAL relation not an identity; resolves the 'G=κT is an identity' open question `TQMQG_MatterSectorOrigin.md`

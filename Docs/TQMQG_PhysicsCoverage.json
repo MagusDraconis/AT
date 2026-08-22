@@ -3,16 +3,16 @@
     "file": "Docs/TQMQG_PhysicsCoverage.md|json",
     "purpose": "single source of truth for all TQM-QG physics validation",
     "last_updated": "2026-08-22",
-    "phases_count": 197,
+    "phases_count": 198,
     "note": "Historical entries are never removed. Additive updates only."
   },
   "coverage": {
-    "total_phases": 197,
-    "tested": 184,
+    "total_phases": 198,
+    "tested": 185,
     "partial": 12,
     "untested": 0,
     "audit": 1,
-    "weighted_coverage": 0.9657,
+    "weighted_coverage": 0.9659,
     "domains": {
       "cosmology": {
         "tested": 1,
@@ -36,11 +36,11 @@
         "total": 16
       },
       "gravity": {
-        "tested": 26,
+        "tested": 27,
         "partial": 2,
         "untested": 0,
         "audit": 0,
-        "total": 28
+        "total": 29
       },
       "network": {
         "tested": 42,
@@ -227,9 +227,9 @@
       "status": "OPEN-AXIOM"
     },
     {
-      "question": "No independent matter sector: G=κT is an identity (Lovelock); kinetic T not conserved",
-      "phase": "G4-G3",
-      "status": "OPEN"
+      "question": "No independent matter sector: RESOLVED by QG195 (MATTER ORIGIN) — the deficit dust T_μν = (ρ̄−ρ)·v_μ·v_ν is an independent, conserved matter tensor built from ρ_m and v (escapes the G4-G4 Lovelock obstruction); G = κT is a dynamical relation, not an identity",
+      "phase": "G4-G3/QG195",
+      "status": "RESOLVED"
     },
     {
       "question": "Hawking temperature after ψ: no phase derives T ∝ 1/R explicitly with ψ≠0",
@@ -2160,6 +2160,14 @@
       "domain": "gravity",
       "validation": "tested",
       "key_result": "matter = ρ̄−ρ DERIVED not postulated: actualization deficit IS the energy deficit (QG89 energy = actualization rate ⇒ E_def = m), carries rest mass (E=mc²), EXACTLY conserved (Noether: ∫m dV = ρ̄V−∫ρ dV exact), unique form (gradient-source identity a=+(1/d)∇m/ρ ⇒ m=ρ̄−ρ, G4-ME5); closes the 'matter = deficit is a hypothesis' open question"
+    },
+    {
+      "phase": 196,
+      "file": "TQMQG_MatterSectorOrigin.md",
+      "classification": "MATTER ORIGIN",
+      "domain": "gravity",
+      "validation": "tested",
+      "key_result": "independent T_μν recovered WITHOUT defining T ≡ G/κ: matter sector = DEFICIT DUST T_μν = (ρ̄−ρ)·v_μ·v_ν (network stress = deficit mass ρ_m QG194, link energy = actualization deficit QG89, flow = native geodesics QG20-21); conserved (Noether deficit-mass conservation + geodesic flow); independent of G (built from ρ_m and v, NOT the metric geometry — escapes G4-G4 Lovelock obstruction); G = κT becomes a DYNAMICAL relation not an identity; resolves the 'G=κT is an identity' open question"
     }
   ]
 }

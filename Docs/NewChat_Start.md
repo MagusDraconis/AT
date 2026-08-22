@@ -234,6 +234,7 @@ Open Questions:
 | Pre-Registered Sector-Ladder Spectrum | QG192 | PRE-REGISTERED (full 12-rung ladder frozen from QG121-132 only — forbidden: collider bumps, resonance catalogs, fitted energies [guard]; Z-anchor scale MZ/6=15.198 GeV/radius; 9 predicted resonances 106.39 [PRIMARY] → 136.78 → 151.98 → 182.38 → 197.58 → 212.78 → 227.97 → 243.17 → 263.43 GeV, rungs 6/9/11 aligned with t/H/Z [not predicted]; multiplicities = unit quantum 15.20 GeV ×10 [0.909] + top 20.26 GeV ×1; width scale = 15.20 GeV metastable decay step; production ascending by mass, all below LHC13/FCC-hh; CONFIRMED = new resonance matches a frozen rung within 5%; FALSIFIED = sensitive search excludes a rung) |
 | Prediction Registry Lock | QG193 | REGISTRY LOCK (immutable registry of the 3 pre-registered predictions — P1 106 GeV [QG132/190: 106.39 GeV, window 99–114], P2 0νββ m_ββ [QG179/191: 2.02 meV], P3 sector-ladder [QG128-132/192: 9 rungs 106.4–263.4 GeV]; each records derivation phase, formula, inputs, frozen value, uncertainty, falsification; readonly field + init-only records + values-unchanged guard; only CONFIRMED/DISFAVORED/FALSIFIED may be added later, never value edits; generated Docs/TQMQG_Predictions.md + .json via Tools/build_predictions_registry.py) |
 | Matter Deficit Origin | QG194 | DEFICIT ORIGIN (matter = ρ̄−ρ DERIVED not postulated: the actualization deficit IS the energy deficit [QG89 energy = actualization rate ⇒ E_def = m]; carries rest mass [E=mc² QG89]; EXACTLY conserved [Noether count: ∫m dV = ρ̄V−∫ρ dV = 0.529249 exact]; unique form [gradient-source identity a=+(1/d)∇m/ρ ⇒ ∇m=−∇ρ ⇒ m=ρ̄−ρ, G4-ME5]; closes the "matter = deficit is a hypothesis" open question — no new primitives) |
+| Matter Sector Origin | QG195 | MATTER ORIGIN (independent T_μν recovered WITHOUT defining T ≡ G/κ: matter sector = DEFICIT DUST T_μν = (ρ̄−ρ)·v_μ·v_ν [network stress = deficit mass ρ_m=ρ̄−ρ QG194; link energy = actualization deficit QG89; flow = native geodesics QG20-21]; conserved [Noether deficit-mass conservation + geodesic flow]; independent of G [built from ρ_m and v, NOT the metric geometry — escapes G4-G4 Lovelock obstruction]; G = κT becomes a DYNAMICAL relation [deficit sources curvature], not an identity; resolves the "G=κT is an identity" open question) |
 | 106 GeV Resonance (validation) | QG132 | FALSIFIABLE PREDICTION (not yet observed) |
 | Collider Test of Sector-Ladder | QG130 | PREDICTED (no data yet) |
 | Sector Exponent Law p(Q,T3) | QG147 | HISTORICAL (overfit) — superseded by QG149 |
@@ -288,6 +289,7 @@ D96 Automorphisms (D96 = ⟨r,s⟩)
 → Pre-registered sector-ladder spectrum (QG192): full 12-rung ladder frozen from QG121-132 — 9 predicted resonances 106.39 (PRIMARY) → 136.78 → 151.98 → 182.38 → 197.58 → 212.78 → 227.97 → 243.17 → 263.43 GeV (Z-anchor scale MZ/6 = 15.198 GeV/radius; rungs 6/9/11 aligned with t/H/Z, not predicted); multiplicities unit 15.20 GeV ×10 (0.909) + top 20.26 GeV ×1; width scale 15.20 GeV (metastable unit-quantum decay step); production ascending by mass, all below LHC13/FCC-hh; forbidden-input guard (no collider bump/catalog/fitted energy); CONFIRMED = new resonance within 5% of a frozen rung, FALSIFIED = sensitive search excludes a rung
 → Prediction registry lock (QG193): immutable registry of the 3 pre-registered predictions (P1 106 GeV, P2 0νββ m_ββ, P3 sector-ladder) with derivation phase, formula, inputs, frozen value, uncertainty, falsification per entry; readonly field + init-only records + values-unchanged guard (re-derives from QG190/191/192); only CONFIRMED/DISFAVORED/FALSIFIED may be added as outcome, never value edits; generated Docs/TQMQG_Predictions.md + .json (immutable: true) via Tools/build_predictions_registry.py; REGISTRY LOCK — permanent prediction record
 → Matter deficit origin (QG194): matter = ρ̄−ρ DERIVED, not postulated — the actualization deficit IS the energy deficit (QG89 energy = actualization rate ⇒ E_def = m), carries rest mass (E=mc²), EXACTLY conserved (Noether: ∫m dV = ρ̄V−∫ρ dV exact), unique form (gradient-source identity ⇒ m = ρ̄−ρ, G4-ME5); closes the "matter = deficit is a hypothesis" open question; no new primitives
+→ Matter sector origin (QG195): independent T_μν recovered WITHOUT defining T ≡ G/κ — the matter sector is the DEFICIT DUST T_μν = (ρ̄−ρ)·v_μ·v_ν (network stress = deficit mass ρ_m, link energy = actualization deficit QG89, flow = native geodesics QG20-21); conserved (Noether deficit-mass conservation + geodesic flow); independent of G (built from ρ_m and v, NOT the metric geometry — escapes the G4-G4 Lovelock obstruction that forces geometry-only tensors to G/κ); G = κT becomes a DYNAMICAL relation (deficit sources curvature), not an identity; resolves the "G=κT is an identity" open question; no new primitives
 → Higgs = collective occupation-density scalar
 
 Fermions:
@@ -445,10 +447,12 @@ QG193: prediction registry lock (REGISTRY LOCK — immutable registry of P1/P2/P
 
 QG194: matter deficit origin (DEFICIT ORIGIN — matter = ρ̄−ρ derived from energy = actualization rate + conservation + uniqueness; not postulated).
 
+QG195: matter sector origin (MATTER ORIGIN — independent T_μν = deficit dust (ρ̄−ρ)·v·v, escapes Lovelock; G = κT dynamical not identity).
+
 Milestone counters:
 
-TQM-QG 197 phases
-477+ TQM-QG tests verified
+TQM-QG 198 phases
+480+ TQM-QG tests verified
 
 ### QG154: Neutrino Sector Origin
 
@@ -472,5 +476,5 @@ NEUTRINO ORIGIN
 
 Milestone counters:
 
-TQM-QG 197 phases
-477+ TQM-QG tests verified
+TQM-QG 198 phases
+480+ TQM-QG tests verified
