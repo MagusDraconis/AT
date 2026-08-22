@@ -3,8 +3,8 @@
 **Single source of truth for all TQM-QG physics validation.**
 
 - Last updated: 2026-08-22
-- Total phases: 208
-- Tested: 190 | Partial: 12 | Untested: 0 | Audit: 6
+- Total phases: 209
+- Tested: 191 | Partial: 12 | Untested: 0 | Audit: 6
 - Weighted coverage: 95.0%
 
 > Maintenance rule: whenever a QG phase completes, scan its classification, update
@@ -17,14 +17,14 @@
 
 | Metric | Value |
 |---|---|
-| Phases total | 208 |
-| Tested | 190 |
+| Phases total | 209 |
+| Tested | 191 |
 | Partially tested | 12 |
 | Untested | 0 |
 | Audit (QG170) | 6 |
 | Weighted coverage | 95.0% |
 | SM tested | 51 |
-| Gravity tested | 29 |
+| Gravity tested | 30 |
 
 ### Observable-level coverage (SM quantities)
 
@@ -47,7 +47,7 @@
 | Cosmology | 1 | 0 | 0 | 0 | 1 |
 | High-Energy Sector | 6 | 1 | 0 | 0 | 7 |
 | Foundations | 17 | 0 | 0 | 1 | 18 |
-| Gravity / GR | 29 | 2 | 0 | 0 | 31 |
+| Gravity / GR | 30 | 2 | 0 | 0 | 32 |
 | Network & Spectrum | 42 | 0 | 0 | 0 | 42 |
 | Predictions | 11 | 0 | 0 | 4 | 15 |
 | ψ / Tensor Sector | 7 | 0 | 0 | 0 | 7 |
@@ -85,7 +85,7 @@
 | Metric ansatz g = ρ^(2/d)η is PREFERRED but not UNIQUE; flat η is a defining axiom | G4-A0 | OPEN-AXIOM |
 | No independent matter sector: RESOLVED by QG195 (MATTER ORIGIN) — the deficit dust T_μν = (ρ̄−ρ)·v_μ·v_ν is an independent, conserved matter tensor built from ρ_m and v (escapes the G4-G4 Lovelock obstruction); G = κT is a dynamical relation, not an identity | G4-G3/QG195 | RESOLVED |
 | Hawking temperature after ψ: no phase derives T ∝ 1/R explicitly with ψ≠0 | QG24 | OPEN |
-| Flat rotation-curve α=0: SEMI-NATURAL, symmetry assumption not derived | G4-ME4 | OPEN |
+| Flat rotation-curve α=0: RESOLVED by QG206 (ALPHA-ZERO ORIGIN) — v² ∝ r^(−α) ⇒ flat requires exactly α=0; α=0 is the equal-deficit-per-octave self-similar profile, the unique stable scale-free point of the octave-organized counting measure, from actualization scaling (QG194/155); consistent with M ∝ R (QG184) | G4-ME4/QG206 | RESOLVED |
 | 2D native program: RESOLVED by QG197 (FULL BRIDGE) — ρ and the conformal ansatz g = ρ^(2/d)η are dimension-generic; the (d−2) factor connects the 2D degeneracy (G≡0) to the non-trivial d=3 Einstein structure (same ρ, analytic continuation, Bianchi-conserved) | G4-G0/QG197 | RESOLVED |
 
 ---
@@ -532,3 +532,7 @@ Historical entries are preserved; updates are additive.
 ### Foundations
 
 - **QG206** — POST-200 COVERAGE AUDIT (audit) — true post-QG204 status (recomputed from coverage, removing resolved SM1/SM2/Matter=Deficit/Matter Sector/2D→3D Bridge): 207 phases, 190 tested (91.8%), 12 partial, 5 audit, 95.3% weighted; observables 40: 33 tested / 5 partial / 2 untested; Top-10 remaining open problems ranked by impact·3+feas·2+fals·2 → P1 106 GeV (35) > P2 0νββ (31) > P3 ladder (30) > G2 rotation-curve (26) > G3 conformal optics (22) > F1 metric ansatz (21) = SM4 lepton hierarchy (21) > G1 Hawking-ψ (20) = F2 Bekenstein 1/4 (20) > SM6 family index (17); category PREDICTION 3 / GRAVITY 3 / FOUNDATIONAL 2 / SM 2; the open frontier is now experimental (3 pre-registered predictions) + structural gaps `TQMQG_Post200CoverageAudit.md`
+
+### Gravity / GR
+
+- **QG207** — ALPHA-ZERO ORIGIN (tested) — flat rotation-curve α=0 DERIVED (no new primitives): the general abundance deficit m ∝ r^(−α) gives a ∝ r^(−α−1) and v² = r·|a| ∝ r^(−α) — flat rotation (v=const) requires EXACTLY α = 0 (any α≠0 gives rising/falling curve); α=0 = log deficit = EQUAL deficit per octave (0.0926 const, self-similar) = unique scale-free point (spread 0 vs 0.14 for α=±0.3); follows from actualization scaling (matter = ρ̄−ρ conserved deficit QG194 over the octave-organized counting measure QG155); consistent with M ∝ R (QG184, exponent 1−α=1) and Hawking T ∝ 1/R; closes the 'flat rotation-curve α=0' open question (G4-ME4) `TQMQG_AlphaZeroOrigin.md`

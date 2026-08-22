@@ -439,6 +439,8 @@ add(205,"TQMQG_QuarkRunningOrigin.md","RUNNING ORIGIN","sm","tested",
     "quark running-scale/MS̄ conversion derived from D96 (no fitted QCD factors): the D96 mass law is NATIVELY an MS̄-scheme law at the natural scale — u/d/s at 2 GeV and c/b/t at μ=m_q all match PDG MS̄ within 0.2% (mc(mc)=1269 vs 1270, mb(mb)=4186 vs 4180, mt(mt)=172704 vs 172700); spectral α_s = 8/Σ√m = 0.1248 (PDG α_s(MZ)=0.1184, dev 5.4%, QG163); running exponent q = #d/(2·#g) = 42/88 = 0.4773 reproduces the QCD γ_m0/β0 = 0.48 within 0.6% (no QCD import); running law m(μ) = m(m)·[α_s(μ)/α_s(m)]^q; closes the 'quark running-scale/MS̄ conversion' open question (QG198 SM2)")
 add(206,"TQMQG_Post200CoverageAudit.md","POST-200 COVERAGE AUDIT","foundation","audit",
     "true post-QG204 status (recomputed from coverage, removing resolved SM1/SM2/Matter=Deficit/Matter Sector/2D→3D Bridge): 207 phases, 190 tested (91.8%), 12 partial, 5 audit, 95.3% weighted; observables 40: 33 tested / 5 partial / 2 untested; Top-10 remaining open problems ranked by impact·3+feas·2+fals·2 → P1 106 GeV (35) > P2 0νββ (31) > P3 ladder (30) > G2 rotation-curve (26) > G3 conformal optics (22) > F1 metric ansatz (21) = SM4 lepton hierarchy (21) > G1 Hawking-ψ (20) = F2 Bekenstein 1/4 (20) > SM6 family index (17); category PREDICTION 3 / GRAVITY 3 / FOUNDATIONAL 2 / SM 2; the open frontier is now experimental (3 pre-registered predictions) + structural gaps")
+add(207,"TQMQG_AlphaZeroOrigin.md","ALPHA-ZERO ORIGIN","gravity","tested",
+    "flat rotation-curve α=0 DERIVED (no new primitives): the general abundance deficit m ∝ r^(−α) gives a ∝ r^(−α−1) and v² = r·|a| ∝ r^(−α) — flat rotation (v=const) requires EXACTLY α = 0 (any α≠0 gives rising/falling curve); α=0 = log deficit = EQUAL deficit per octave (0.0926 const, self-similar) = unique scale-free point (spread 0 vs 0.14 for α=±0.3); follows from actualization scaling (matter = ρ̄−ρ conserved deficit QG194 over the octave-organized counting measure QG155); consistent with M ∝ R (QG184, exponent 1−α=1) and Hawking T ∝ 1/R; closes the 'flat rotation-curve α=0' open question (G4-ME4)")
 
 # ── Observable-level SM audit (supersedes QG170's 25/9/14 with QG171-182 results) ──
 OBSERVABLES = [
@@ -565,8 +567,8 @@ OPEN_QUESTIONS = [
          phase="G4-G3/QG195", status="RESOLVED"),
     dict(question="Hawking temperature after ψ: no phase derives T ∝ 1/R explicitly with ψ≠0",
          phase="QG24", status="OPEN"),
-    dict(question="Flat rotation-curve α=0: SEMI-NATURAL, symmetry assumption not derived",
-         phase="G4-ME4", status="OPEN"),
+    dict(question="Flat rotation-curve α=0: RESOLVED by QG206 (ALPHA-ZERO ORIGIN) — v² ∝ r^(−α) ⇒ flat requires exactly α=0; α=0 is the equal-deficit-per-octave self-similar profile, the unique stable scale-free point of the octave-organized counting measure, from actualization scaling (QG194/155); consistent with M ∝ R (QG184)",
+         phase="G4-ME4/QG206", status="RESOLVED"),
     dict(question="2D native program: RESOLVED by QG197 (FULL BRIDGE) — ρ and the conformal ansatz g = ρ^(2/d)η are dimension-generic; the (d−2) factor connects the 2D degeneracy (G≡0) to the non-trivial d=3 Einstein structure (same ρ, analytic continuation, Bianchi-conserved)",
          phase="G4-G0/QG197", status="RESOLVED"),
 ]
