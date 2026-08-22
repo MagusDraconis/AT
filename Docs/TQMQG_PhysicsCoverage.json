@@ -3,23 +3,23 @@
     "file": "Docs/TQMQG_PhysicsCoverage.md|json",
     "purpose": "single source of truth for all TQM-QG physics validation",
     "last_updated": "2026-08-23",
-    "phases_count": 232,
+    "phases_count": 233,
     "note": "Historical entries are never removed. Additive updates only."
   },
   "coverage": {
-    "total_phases": 232,
+    "total_phases": 233,
     "tested": 202,
     "partial": 12,
     "untested": 0,
-    "audit": 18,
-    "weighted_coverage": 0.9159,
+    "audit": 19,
+    "weighted_coverage": 0.9131,
     "domains": {
       "cosmology": {
         "tested": 1,
         "partial": 0,
         "untested": 0,
-        "audit": 0,
-        "total": 1
+        "audit": 1,
+        "total": 2
       },
       "energy": {
         "tested": 6,
@@ -2440,6 +2440,14 @@
       "domain": "foundation",
       "validation": "tested",
       "key_result": "information content DERIVED (no new primitives, deterministic): non-zero information appears from the minimum-information state [QG227] through the actualization process itself — information IS the deviation of the REALIZED record from the UNIFORM state, I = ln K − H = KL(ρ‖uniform) ≥ 0; (1) ACTUALIZATION EVENTS are discrete counts [QG1/29]; counting is Poisson — realized counts have non-zero variance [QG15/30]; the uniform state is only the EXPECTED profile; (2) SYMMETRY BREAKING — the uniform state ρ_k=1/K is permutation-symmetric; actualization realizes ONE branching history, breaking the symmetry; (3) BRANCH DIFFERENTIATION — realized per-generation populations A_k = μ^k·(1+δ_k) differ from the uniform mean [per-generation variance]; (4) ENTROPY GROWTH — I = ln K − H(ρ_real) = KL(ρ‖uniform) ≥ 0, zero at uniform, positive for any departure [I(μ=0.5)=0.48 nats, I(μ=2)=0.48]; (5) RECORD FORMATION — the realized record is the D96 octave spectrum [4,4,87] [95 modes, QG210] with I_occ ≈ 0.75 nats ≈ 1.08 bits; information appears because actualization is a DISCRETE counting process whose intrinsic fluctuations generate non-uniformity — no information is imported; CLOSES the QG226 TOE criterion 8 [information origin: PARTIAL → DERIVED]; TOE score rises from 6.5 toward 7.5/10"
+    },
+    {
+      "phase": 231,
+      "file": "TQMQG_CosmologyClosureAudit.md",
+      "classification": "PARTIAL COSMOLOGY",
+      "domain": "cosmology",
+      "validation": "audit",
+      "key_result": "cosmology closure audit (audit only, reviews QG77 + QG194-228, six features): PARTIAL COSMOLOGY — score 2.0/6; DERIVED 1 [1 Expansion: QG77 expansion = redshift QG26 + scale-free ρ evolution, FRW a = ρ^(1/d)], PARTIAL 2 [3 Dark matter: derived as an EFFECT — matter = deficit QG194/195, α=0 flat rotation QG206, M∝R QG184 — not a particle, no CMB/structure implications; 6 CMB-compatible structure: conformal metric hosts FRW + CMB isotropy compatible QG77, anisotropy spectrum needs structure formation], OPEN 3 [2 Structure formation: no growth law for deficit perturbations, QG227/228 give seeds not dynamics; 4 Dark energy: no mechanism for cosmic acceleration in QG194-228; 5 Λ: no origin, QG88 value selection PARTIAL CONSTRAINT does not select it]; SINGLE HIGHEST-IMPACT BLOCKER: Dark energy / Λ — constitutes the majority of the universe's energy budget (accelerated expansion), completely underived (no candidate mechanism in QG194-228), the largest single cosmological feature; structure formation is the runner-up; the cosmology sector is substantially closer than QG77's 'UNKNOWN' [dark-matter effect now derived via deficit + α=0 + M∝R] but not closed"
     }
   ]
 }

@@ -3,9 +3,9 @@
 **Single source of truth for all TQM-QG physics validation.**
 
 - Last updated: 2026-08-23
-- Total phases: 232
-- Tested: 202 | Partial: 12 | Untested: 0 | Audit: 18
-- Weighted coverage: 91.6%
+- Total phases: 233
+- Tested: 202 | Partial: 12 | Untested: 0 | Audit: 19
+- Weighted coverage: 91.3%
 
 > Maintenance rule: whenever a QG phase completes, scan its classification, update
 > tested/partial/untested, contradictions, open questions, predictions, and statistics.
@@ -17,12 +17,12 @@
 
 | Metric | Value |
 |---|---|
-| Phases total | 232 |
+| Phases total | 233 |
 | Tested | 202 |
 | Partially tested | 12 |
 | Untested | 0 |
-| Audit (QG170) | 18 |
-| Weighted coverage | 91.6% |
+| Audit (QG170) | 19 |
+| Weighted coverage | 91.3% |
 | SM tested | 53 |
 | Gravity tested | 33 |
 
@@ -44,7 +44,7 @@
 
 | Domain | Tested | Partial | Untested | Audit | Total |
 |---|---|---|---|---|---|
-| Cosmology | 1 | 0 | 0 | 0 | 1 |
+| Cosmology | 1 | 0 | 0 | 1 | 2 |
 | High-Energy Sector | 6 | 1 | 0 | 0 | 7 |
 | Foundations | 20 | 0 | 0 | 13 | 33 |
 | Gravity / GR | 33 | 2 | 0 | 0 | 35 |
@@ -595,3 +595,7 @@ Historical entries are preserved; updates are additive.
 - **QG228** — PARTIAL TOE (audit) — theory of everything audit (audit only, reviews QG0-QG223, ten TOE criteria): PARTIAL TOE — score 6.5/10; DERIVED 4 [1 QM: magnitude QG216 + phase QG220 + complex structure QG218 + measurement QG74; 2 Gravity: structure QG197/207 + observables QG181-213 + native dynamics QG222; 3 Matter: deficit ρ̄−ρ QG194/195 + deficit dust QG196 + mass laws QG203-211; 7 Dimensionality: QG2/3/5/159/160], PARTIAL 5 [4 SM: masses/couplings/mixing derived QG161-180/203-211 but gauge-fermion-Higgs dynamics hosted/compatible QG60/76/85; 5 Cosmology: expansion + FRW + dark-matter effect QG77, structure formation and Λ UNKNOWN; 8 Information origin: ρ IS the information content QG1/73, capacity QG10, origin not; 9 Primitive completeness: two primitives FORCED minimal QG50/51/40, ψ existence observational QG47 boundary QG223; 10 Parameter completeness: many derived QG168-180, survey PARTIAL QG85, value selection PARTIAL CONSTRAINT QG88], OPEN 1 [6 Initial conditions: no phase derives the universe's initial state]; MISSING REQUIREMENTS: structure formation, dark energy Λ, initial conditions, full SM dynamics, full parameter completeness, information-content origin, primitive-closure; the theory is a COMPLETE QUANTUM GRAVITY (QG223) and MONOGRAPH READY (QG224) but as a TOE it is PARTIAL — the missing pieces are the cosmological/initial-condition sector and the final completeness closure, not the core physics pillars `TQMQG_TheoryOfEverythingAudit.md`
 - **QG229** — INITIAL-CONDITION ORIGIN (tested) — initial conditions DERIVED (no new primitives, deterministic): the universe's initial state is the UNIFORM CRITICAL STATE ρ_k = 1/K (μ=1, α=0); (1) STATIONARITY — an initial state must be a fixed point of the actualization flow, ∂_t ρ = (ln μ)·ρ = 0 [QG222] requires μ=1 [critical]; any μ≠1 is a transient, not an initial state; (2) SCALE-FREENESS — α=0 [equal deficit per octave, QG206] is the unique scale-free state [spread 0 vs >0 for α=±0.3]; α≠0 introduces a preferred scale = information with no source; (3) MINIMUM-INFORMATION — among critical states the least-committal allocation is uniform ρ_k = 1/K, which maximizes the native entropy H(α) [H(0)=ln K ≥ H(α), G4-RHO] — zero initial-condition input needed; (4) CRITICAL BRANCHING — the uniform state IS the critical branching state [QG216 at μ=1: ρ_k = μ^k/S → 1/K]; (5) ATTRACTOR — the universal attractor [QG116b] is a stable exact fixed point with basin ≥ 0.9, so residual content is ERASED and no fine-tuning is required; initial conditions are DERIVED, not assumed — the unique minimum-information fixed point of the actualization flow; CLOSES the QG226 TOE criterion 6 [initial conditions: OPEN → DERIVED]; TOE score rises from 6.5/10 toward 7.0/10 `TQMQG_InitialConditionsOrigin.md`
 - **QG230** — INFORMATION ORIGIN (tested) — information content DERIVED (no new primitives, deterministic): non-zero information appears from the minimum-information state [QG227] through the actualization process itself — information IS the deviation of the REALIZED record from the UNIFORM state, I = ln K − H = KL(ρ‖uniform) ≥ 0; (1) ACTUALIZATION EVENTS are discrete counts [QG1/29]; counting is Poisson — realized counts have non-zero variance [QG15/30]; the uniform state is only the EXPECTED profile; (2) SYMMETRY BREAKING — the uniform state ρ_k=1/K is permutation-symmetric; actualization realizes ONE branching history, breaking the symmetry; (3) BRANCH DIFFERENTIATION — realized per-generation populations A_k = μ^k·(1+δ_k) differ from the uniform mean [per-generation variance]; (4) ENTROPY GROWTH — I = ln K − H(ρ_real) = KL(ρ‖uniform) ≥ 0, zero at uniform, positive for any departure [I(μ=0.5)=0.48 nats, I(μ=2)=0.48]; (5) RECORD FORMATION — the realized record is the D96 octave spectrum [4,4,87] [95 modes, QG210] with I_occ ≈ 0.75 nats ≈ 1.08 bits; information appears because actualization is a DISCRETE counting process whose intrinsic fluctuations generate non-uniformity — no information is imported; CLOSES the QG226 TOE criterion 8 [information origin: PARTIAL → DERIVED]; TOE score rises from 6.5 toward 7.5/10 `TQMQG_InformationContentOrigin.md`
+
+### Cosmology
+
+- **QG231** — PARTIAL COSMOLOGY (audit) — cosmology closure audit (audit only, reviews QG77 + QG194-228, six features): PARTIAL COSMOLOGY — score 2.0/6; DERIVED 1 [1 Expansion: QG77 expansion = redshift QG26 + scale-free ρ evolution, FRW a = ρ^(1/d)], PARTIAL 2 [3 Dark matter: derived as an EFFECT — matter = deficit QG194/195, α=0 flat rotation QG206, M∝R QG184 — not a particle, no CMB/structure implications; 6 CMB-compatible structure: conformal metric hosts FRW + CMB isotropy compatible QG77, anisotropy spectrum needs structure formation], OPEN 3 [2 Structure formation: no growth law for deficit perturbations, QG227/228 give seeds not dynamics; 4 Dark energy: no mechanism for cosmic acceleration in QG194-228; 5 Λ: no origin, QG88 value selection PARTIAL CONSTRAINT does not select it]; SINGLE HIGHEST-IMPACT BLOCKER: Dark energy / Λ — constitutes the majority of the universe's energy budget (accelerated expansion), completely underived (no candidate mechanism in QG194-228), the largest single cosmological feature; structure formation is the runner-up; the cosmology sector is substantially closer than QG77's 'UNKNOWN' [dark-matter effect now derived via deficit + α=0 + M∝R] but not closed `TQMQG_CosmologyClosureAudit.md`
