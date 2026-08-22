@@ -3,16 +3,16 @@
     "file": "Docs/TQMQG_PhysicsCoverage.md|json",
     "purpose": "single source of truth for all TQM-QG physics validation",
     "last_updated": "2026-08-22",
-    "phases_count": 220,
+    "phases_count": 221,
     "note": "Historical entries are never removed. Additive updates only."
   },
   "coverage": {
-    "total_phases": 220,
+    "total_phases": 221,
     "tested": 198,
     "partial": 12,
     "untested": 0,
-    "audit": 10,
-    "weighted_coverage": 0.9386,
+    "audit": 11,
+    "weighted_coverage": 0.9355,
     "domains": {
       "cosmology": {
         "tested": 1,
@@ -32,8 +32,8 @@
         "tested": 18,
         "partial": 0,
         "untested": 0,
-        "audit": 5,
-        "total": 23
+        "audit": 6,
+        "total": 24
       },
       "gravity": {
         "tested": 32,
@@ -2344,6 +2344,14 @@
       "domain": "qm",
       "validation": "tested",
       "key_result": "complex-state structure derived (no new primitives): quantum states MUST be complex because a state carries exactly TWO independent real DOFs — the MAGNITUDE |ψ| = √ρ (branching counting measure, QG216, node property) and the PHASE θ (U(1) link connection, QG63, link property); interference P = |e^(iθ₁)+e^(iθ₂)|² = 2+2cos(θ₁−θ₂) is phase-dependent [QG65] — a real-only state space gives classical addition P=P₁+P₂ (no interference); a state with magnitude AND phase is exactly a complex number ψ = |ψ|·e^(iθ) (polar form); the Hilbert space is over ℂ — superposition with complex coefficients, ℂ-bilinear inner product, Born rule P=|⟨φ|ψ⟩|²; ℂ is uniquely forced [real: no interference; quaternionic: no source]; consistent with QG74 unitary general measurement [ℂ-linear]; the complexity is forced by the (magnitude, phase) pair — no new primitive; the graph-Laplacian eigenbasis [TQM-149] is the standard ℂ Hilbert space"
+    },
+    {
+      "phase": 219,
+      "file": "TQMQG_QuantumGravityReclosureAudit.md",
+      "classification": "EFFECTIVE QG",
+      "domain": "foundation",
+      "validation": "audit",
+      "key_result": "quantum gravity reclosure audit (audit only, re-evaluates QG215 with QG216+QG218): QG status UPGRADED from PARTIAL QG to EFFECTIVE QG — score 4/6; QM now SUBSTANTIALLY DERIVED [magnitude |ψ|²=ρ from Q-events QG216, complex structure forced QG218, phase hosted on existing U(1) links QG63]; both pillars share the SAME primitive ρ [gravity sources from ρ AND |ψ|²=ρ]; gravity derived [QG181-213]; matter emergent [QG195/196/203-210]; spacetime PARTIAL [metric derived QG207, BDG dynamics imported QG6]; remaining QG215 gaps: (a) phase origin [located QG63 but value/mechanism not derived], (b) native metric dynamics [BDG imported], (c) ψ origin status [PARTIAL]; resolved: amplitude magnitude + complex structure [QG216/218], measurement basis [QG74 MATCH]; EFFECTIVE rather than COMPLETE because the phase value, BDG dynamics, and ψ status remain"
     }
   ]
 }
