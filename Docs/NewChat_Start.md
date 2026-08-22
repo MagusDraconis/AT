@@ -183,6 +183,7 @@ Open Questions:
 - P1 (106 GeV) status after QG199: PENDING — window 99–114 GeV neither confirmed nor excluded; 95 GeV cluster = 91.19 rung; new 152 GeV excess = 151.98 rung (P3, not P1); HL-LHC decisive
 - sector ladder (P3) after QG200/QG201: 12 rungs audited — CONFIRMED 3 (SM anchors Z/H/t), SUPPORTED 1 (151.98 = ~152 GeV excess, MODERATE SUPPORT alignment 2.80σ, 1-in-386), PENDING 8, none falsified
 - the anti-fit reaudit (QG214) confirms the methodology is clean: QG190-213 added 3 PRE-REGISTERED + 1 REGISTRY LOCK + 20 PREDICTION, zero retro-fit/overfit; RETRO-FIT=2 (QG140/146), OVERFIT=1 (QG147) still correct; risk confined to the fitting era QG140-148
+- the QG closure audit (QG215) classifies TQM as PARTIAL QG: gravity + matter derived from ρ, but QM requires a new primitive (the amplitude/phase, QG62) — the decisive missing piece for a publishable QG paper is the quantum-amplitude origin
 
 ## Status Table
 
@@ -491,10 +492,12 @@ QG213: ultra frontier audit (ULTRA FRONTIER AUDIT — frontier after QG212, excl
 
 QG214: anti-fit reaudit 2 (PREDICTION AUDIT — methodology audit of QG140-213, comparing against QG189: QG190-213 [24 phases] = 3 PRE-REGISTERED [QG190/191/192, forbidden-input guards], 1 REGISTRY LOCK [QG193, ValuesUnchanged guard], 20 PREDICTION [derivations QG194-197/203-210/212 + audits QG198-202/205/211/213]; ZERO retro-fit, ZERO overfit, ZERO fitted parameters in the new phases; updated totals QG140-213 [73 phases]: PREDICTION 56, BLIND 2, PRE-REGISTERED 3, REGISTRY LOCK 1, DEPENDENT 8, RETRO-FIT 2 [QG140/146], OVERFIT 1 [QG147] — RETRO-FIT=2, OVERFIT=1 STILL CORRECT; risk confined to the fitting era QG140-148; structural era QG149-213 fit-free; the pre-registration program [QG190-193] is the strongest anti-fit evidence alongside QG176/177 blind tests).
 
+QG215: quantum gravity closure audit (PARTIAL QG — audit only, no new physics: gravity IS derived from the counting measure ρ [QG181 Newton G, G4-G2/G3 Einstein structure, QG184 M∝R, QG209 Hawking, QG186/187/207/213 frame dragging/GPS/ansatz/optics], matter IS emergent [QG195 matter=ρ̄−ρ, QG196 T_μν, QG203-210 mass laws], spacetime PARTIALLY emergent [metric derived QG207, but BDG dynamics imported QG6]; BUT quantum mechanics is NOT derived [QG61 network classical; QG62 complex amplitudes require a NEW PRIMITIVE — compatible but not emergent; QG73 collapse binary]; the two pillars are not based on the same primitive; missing pieces for a publishable QG paper: 1) derive the amplitude/phase origin, 2) full measurement basis, 3) native metric dynamics, 4) ψ origin closure, 5) Bekenstein 1/4 as a stated boundary).
+
 Milestone counters:
 
-TQM-QG 217 phases
-537+ TQM-QG tests verified
+TQM-QG 218 phases
+540+ TQM-QG tests verified
 
 ### QG154: Neutrino Sector Origin
 
@@ -518,5 +521,5 @@ NEUTRINO ORIGIN
 
 Milestone counters:
 
-TQM-QG 217 phases
-537+ TQM-QG tests verified
+TQM-QG 218 phases
+540+ TQM-QG tests verified
