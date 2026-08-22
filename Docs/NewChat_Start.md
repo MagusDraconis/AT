@@ -183,7 +183,7 @@ Open Questions:
 - P1 (106 GeV) status after QG199: PENDING — window 99–114 GeV neither confirmed nor excluded; 95 GeV cluster = 91.19 rung; new 152 GeV excess = 151.98 rung (P3, not P1); HL-LHC decisive
 - sector ladder (P3) after QG200/QG201: 12 rungs audited — CONFIRMED 3 (SM anchors Z/H/t), SUPPORTED 1 (151.98 = ~152 GeV excess, MODERATE SUPPORT alignment 2.80σ, 1-in-386), PENDING 8, none falsified
 - the anti-fit reaudit (QG214) confirms the methodology is clean: QG190-213 added 3 PRE-REGISTERED + 1 REGISTRY LOCK + 20 PREDICTION, zero retro-fit/overfit; RETRO-FIT=2 (QG140/146), OVERFIT=1 (QG147) still correct; risk confined to the fitting era QG140-148
-- the QG closure audit (QG215) classifies TQM as PARTIAL QG: gravity + matter derived from ρ, but QM requires a new primitive (the amplitude/phase, QG62) — the decisive missing piece for a publishable QG paper is the quantum-amplitude origin
+- the QG closure audit (QG215) classifies TQM as PARTIAL QG: gravity + matter derived from ρ, but QM requires a new primitive (the amplitude/phase, QG62); QG216 derives the amplitude MAGNITUDE |ψ|² = ρ = μ^k/S from Q-events (Born rule exact by construction) — the phase (U(1)) remains the open half
 
 ## Status Table
 
@@ -494,10 +494,12 @@ QG214: anti-fit reaudit 2 (PREDICTION AUDIT — methodology audit of QG140-213, 
 
 QG215: quantum gravity closure audit (PARTIAL QG — audit only, no new physics: gravity IS derived from the counting measure ρ [QG181 Newton G, G4-G2/G3 Einstein structure, QG184 M∝R, QG209 Hawking, QG186/187/207/213 frame dragging/GPS/ansatz/optics], matter IS emergent [QG195 matter=ρ̄−ρ, QG196 T_μν, QG203-210 mass laws], spacetime PARTIALLY emergent [metric derived QG207, but BDG dynamics imported QG6]; BUT quantum mechanics is NOT derived [QG61 network classical; QG62 complex amplitudes require a NEW PRIMITIVE — compatible but not emergent; QG73 collapse binary]; the two pillars are not based on the same primitive; missing pieces for a publishable QG paper: 1) derive the amplitude/phase origin, 2) full measurement basis, 3) native metric dynamics, 4) ψ origin closure, 5) Bekenstein 1/4 as a stated boundary).
 
+QG216: quantum amplitude origin (AMPLITUDE ORIGIN — the amplitude MAGNITUDE is derived from Q-events, no new primitives: |ψ_k|² = ρ_k = μ^k/S where μ is the branching ratio of the Galton-Watson actualization process [QG1] and S = Σ_{j<K} μ^j — the counting-measure share IS |amplitude|² [QG73 confirmed, now derived]; path multiplicity to generation k = μ^k; Born rule Σ|ψ|² = 1 EXACT by construction for any μ; criticality [μ=1] gives uniform shares |ψ|²=1/K, consistent with α=0 [QG206]; SCOPE: the magnitude is derived from Q-events, the PHASE [U(1) argument] remains a separate degree of freedom [QG62] — closes the magnitude half of the QG215 gap).
+
 Milestone counters:
 
-TQM-QG 218 phases
-540+ TQM-QG tests verified
+TQM-QG 219 phases
+543+ TQM-QG tests verified
 
 ### QG154: Neutrino Sector Origin
 
@@ -521,5 +523,5 @@ NEUTRINO ORIGIN
 
 Milestone counters:
 
-TQM-QG 218 phases
-540+ TQM-QG tests verified
+TQM-QG 219 phases
+543+ TQM-QG tests verified

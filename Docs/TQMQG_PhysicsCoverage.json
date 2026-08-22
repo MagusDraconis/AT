@@ -3,16 +3,16 @@
     "file": "Docs/TQMQG_PhysicsCoverage.md|json",
     "purpose": "single source of truth for all TQM-QG physics validation",
     "last_updated": "2026-08-22",
-    "phases_count": 218,
+    "phases_count": 219,
     "note": "Historical entries are never removed. Additive updates only."
   },
   "coverage": {
-    "total_phases": 218,
-    "tested": 196,
+    "total_phases": 219,
+    "tested": 197,
     "partial": 12,
     "untested": 0,
     "audit": 10,
-    "weighted_coverage": 0.9381,
+    "weighted_coverage": 0.9384,
     "domains": {
       "cosmology": {
         "tested": 1,
@@ -64,11 +64,11 @@
         "total": 7
       },
       "qm": {
-        "tested": 11,
+        "tested": 12,
         "partial": 0,
         "untested": 0,
         "audit": 0,
-        "total": 11
+        "total": 12
       },
       "sm": {
         "tested": 53,
@@ -2328,6 +2328,14 @@
       "domain": "foundation",
       "validation": "audit",
       "key_result": "quantum gravity closure audit (audit only, no new physics): PARTIAL QG — gravity IS derived from the counting measure ρ [QG181 Newton G, G4-G2/G3 Einstein structure, QG184 M∝R, QG209 Hawking, QG186/187/207/213 frame dragging/GPS/ansatz/optics], matter IS emergent [QG195 matter=ρ̄−ρ, QG196 T_μν, QG203-210 mass laws], spacetime PARTIALLY emergent [metric derived QG207, but BDG dynamics imported QG6]; BUT quantum mechanics is NOT derived [QG61 network classical; QG62 complex amplitudes require a NEW PRIMITIVE — compatible but not emergent; QG73 collapse binary]; the two pillars are not based on the same primitive; missing pieces for a publishable QG paper: 1) derive the amplitude/phase origin, 2) full measurement basis, 3) native metric dynamics, 4) ψ origin closure, 5) Bekenstein 1/4 as a stated boundary"
+    },
+    {
+      "phase": 217,
+      "file": "TQMQG_QuantumAmplitudeOrigin.md",
+      "classification": "AMPLITUDE ORIGIN",
+      "domain": "qm",
+      "validation": "tested",
+      "key_result": "quantum amplitude MAGNITUDE derived from Q-events (no new primitives): |ψ_k|² = ρ_k = μ^k/S where μ is the branching ratio of the Galton-Watson actualization process [QG1] and S = Σ_{j<K} μ^j — the counting measure share IS the amplitude magnitude squared [QG73 confirmed, now derived not asserted]; path multiplicity to generation k = μ^k; Born rule Σ|ψ|² = 1 EXACT by construction (normalization of the actualization share) for any μ; criticality [μ=1] gives uniform shares |ψ|² = 1/K, consistent with α=0 [QG206]; SCOPE: the magnitude is derived from Q-events, the PHASE [U(1) argument] remains a separate degree of freedom [QG62] — closes the magnitude half of the QG215 gap"
     }
   ]
 }

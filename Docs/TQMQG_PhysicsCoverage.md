@@ -3,8 +3,8 @@
 **Single source of truth for all TQM-QG physics validation.**
 
 - Last updated: 2026-08-22
-- Total phases: 218
-- Tested: 196 | Partial: 12 | Untested: 0 | Audit: 10
+- Total phases: 219
+- Tested: 197 | Partial: 12 | Untested: 0 | Audit: 10
 - Weighted coverage: 93.8%
 
 > Maintenance rule: whenever a QG phase completes, scan its classification, update
@@ -17,8 +17,8 @@
 
 | Metric | Value |
 |---|---|
-| Phases total | 218 |
-| Tested | 196 |
+| Phases total | 219 |
+| Tested | 197 |
 | Partially tested | 12 |
 | Untested | 0 |
 | Audit (QG170) | 10 |
@@ -51,7 +51,7 @@
 | Network & Spectrum | 42 | 0 | 0 | 0 | 42 |
 | Predictions | 11 | 0 | 0 | 4 | 15 |
 | ψ / Tensor Sector | 7 | 0 | 0 | 0 | 7 |
-| Quantum Mechanics | 11 | 0 | 0 | 0 | 11 |
+| Quantum Mechanics | 12 | 0 | 0 | 0 | 12 |
 | Standard Model | 53 | 9 | 0 | 1 | 63 |
 | TRM Dynamics | 15 | 0 | 0 | 0 | 15 |
 
@@ -563,3 +563,7 @@ Historical entries are preserved; updates are additive.
 - **QG214** — ULTRA FRONTIER AUDIT (audit) — ultra frontier audit after QG212 (excluding resolved/partial-resolved/impossibility-closed: SM1 QG203, SM2 QG204, G2 QG206, F1 QG207, G1 QG208, SM4 QG209, SM6 QG210, G3 QG212, F2 Bekenstein 1/4 [QG196 impossibility proof]): theory completion ~95% (weighted 94.8%, phase 94.2%, observable 91.3%; 215 phases 196 tested/12 partial/7 audit); Top-10 frontier → P1 106 GeV (35) > P2 0νββ (31) > P3 ladder (30) > SM5 quark hierarchy (19) > F3 ψ origin (18) > P4 curvature-Poisson (17) > SM7 golden ratio (14) = SM8 calibration ladder (14) = P5 redshift partition (14) > F4 two primitives (12); PREDICTION 4 / SM 3 / FOUNDATIONAL 2 / GRAVITY 0; the frontier is PRIMARILY EXPERIMENTAL — top-3 are pre-registered predictions awaiting data; no gravity item remains; the derivation program is effectively complete `TQMQG_UltraFrontierAudit.md`
 - **QG215** — PREDICTION AUDIT (audit) — anti-fit reaudit 2 (methodology audit of QG140-213, comparing against QG189): QG190-213 (24 phases) = 3 PRE-REGISTERED (QG190/191/192, forbidden-input guards), 1 REGISTRY LOCK (QG193, ValuesUnchanged guard), 20 PREDICTION (derivations QG194-197/203-210/212 + audits QG198-202/205/211/213); ZERO retro-fit, ZERO overfit, ZERO fitted parameters in the new phases; updated totals QG140-213 (73 phases): PREDICTION 56, BLIND 2, PRE-REGISTERED 3, REGISTRY LOCK 1, DEPENDENT 8, RETRO-FIT 2 [QG140/146], OVERFIT 1 [QG147] — RETRO-FIT=2, OVERFIT=1 STILL CORRECT; risk confined to the fitting era QG140-148; structural era QG149-213 fit-free; the pre-registration program (QG190-193) is the strongest anti-fit evidence alongside QG176/177 blind tests `TQMQG_AntiFitReaudit2.md`
 - **QG216** — PARTIAL QG (audit) — quantum gravity closure audit (audit only, no new physics): PARTIAL QG — gravity IS derived from the counting measure ρ [QG181 Newton G, G4-G2/G3 Einstein structure, QG184 M∝R, QG209 Hawking, QG186/187/207/213 frame dragging/GPS/ansatz/optics], matter IS emergent [QG195 matter=ρ̄−ρ, QG196 T_μν, QG203-210 mass laws], spacetime PARTIALLY emergent [metric derived QG207, but BDG dynamics imported QG6]; BUT quantum mechanics is NOT derived [QG61 network classical; QG62 complex amplitudes require a NEW PRIMITIVE — compatible but not emergent; QG73 collapse binary]; the two pillars are not based on the same primitive; missing pieces for a publishable QG paper: 1) derive the amplitude/phase origin, 2) full measurement basis, 3) native metric dynamics, 4) ψ origin closure, 5) Bekenstein 1/4 as a stated boundary `TQMQG_QuantumGravityClosureAudit.md`
+
+### Quantum Mechanics
+
+- **QG217** — AMPLITUDE ORIGIN (tested) — quantum amplitude MAGNITUDE derived from Q-events (no new primitives): |ψ_k|² = ρ_k = μ^k/S where μ is the branching ratio of the Galton-Watson actualization process [QG1] and S = Σ_{j<K} μ^j — the counting measure share IS the amplitude magnitude squared [QG73 confirmed, now derived not asserted]; path multiplicity to generation k = μ^k; Born rule Σ|ψ|² = 1 EXACT by construction (normalization of the actualization share) for any μ; criticality [μ=1] gives uniform shares |ψ|² = 1/K, consistent with α=0 [QG206]; SCOPE: the magnitude is derived from Q-events, the PHASE [U(1) argument] remains a separate degree of freedom [QG62] — closes the magnitude half of the QG215 gap `TQMQG_QuantumAmplitudeOrigin.md`
