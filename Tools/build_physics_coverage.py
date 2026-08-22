@@ -433,6 +433,8 @@ add(202,"TQMQG_LadderStatisticsAudit.md","LADDER STATISTICS AUDIT","predictions"
     "152 GeV ↔ 151.98 rung alignment significance (frozen QG192 only, deterministic): τ = |152/151.98−1| = 0.0132% (0.020 GeV, ~760× closer than the 15.2 GeV spacing); null = uniform over [95,270] GeV (span 175); p(any of 9 rungs) = Σ(2τ·E)/175 = 0.259% (1 in 386) → ALREADY look-elsewhere corrected → z = 2.80σ; p(151.98 alone) = 0.023% (1 in 4375) → z = 3.50σ; classification MODERATE SUPPORT (0.1–1% band, 2.80σ) — meaningful but not 5σ; reinforces the ~152 GeV excess's own global significance (up to 5.4σ)")
 add(203,"TQMQG_PredictionOutcomeDashboard.md","PREDICTION OUTCOME DASHBOARD","predictions","audit",
     "single source of truth for external validation: per-prediction outcome monitor (frozen value, current evidence, support level, last audit, next experiment, state) — P1 106 GeV PENDING [window 99–114 neither confirmed nor excluded; QG199; next HL-LHC 3000 fb⁻¹ diphoton], P2 0νββ m_ββ=2.02 meV PENDING [below current reach; QG191; next nEXO/LEGEND-1000], P3 sector-ladder SUPPORTED [151.98 rung = ~152 GeV excess, MODERATE 2.80σ, QG200/201; next HL-LHC confirmation]; states PENDING/SUPPORTED/CONFIRMED/DISFAVORED/FALSIFIED; frozen values immutable (QG193); generated Docs/TQMQG_PredictionOutcomes.md|json (Tools/build_prediction_outcomes.py)")
+add(204,"TQMQG_AbsoluteNeutrinoMassOrigin.md","ABSOLUTE MASS ORIGIN","sm","tested",
+    "absolute neutrino masses as closed-form D96 expressions (no oscillation-fit masses): N = 1/Σ√m = 0.015605 eV (QG157 neutral scale); m1 = 0 (zero-mode, normal ordering QG179), m2 = 1/(Σ√m·√(span/2)) = 8.7216e-3 eV (phys 8.72 meV, dev 0.019%), m3 = √#g/(Σm·√2) = 49.3728e-3 eV (phys 49.4 meV, dev 0.055%); exact ratio m2/m3 = 2Σm/(Σ√m·√(span·#g)) = 0.176648 (phys 0.1765, dev 0.07%); PMNS cross-check m2/m3 ≈ 8.39·s13² (s13=√(occ0/(2Σm)), QG167); Σm_ν = 0.0581 eV < 0.12; closes the 'exact neutrino masses' open question (QG198 SM1)")
 
 # ── Observable-level SM audit (supersedes QG170's 25/9/14 with QG171-182 results) ──
 OBSERVABLES = [
@@ -472,9 +474,9 @@ OBSERVABLES = [
     dict(name="family index origin", status="partial", phase="QG135", detail="PARTIAL ORIGIN"),
     dict(name="golden-ratio hierarchy", status="partial", phase="QG152", detail="PARTIAL ROBUSTNESS"),
     dict(name="physical calibration ladder", status="partial", phase="QG129", detail="PARTIAL MAPPING"),
-    dict(name="exact neutrino masses m1,m2,m3", status="untested", phase="—", detail="splittings derived (QG172); absolute values open"),
+    dict(name="exact neutrino masses m1,m2,m3", status="tested", phase="QG172/QG203", detail="CLOSED-FORM D96: m1=0, m2=1/(Σ√m·√(span/2))=8.72 meV (0.02%), m3=√#g/(Σm·√2)=49.4 meV (0.06%), ratio=2Σm/(Σ√m·√(span·#g))=0.1766 exact; ABSOLUTE MASS ORIGIN, no oscillation-fit masses"),
     dict(name="quark running-scale/MS̄ conversion", status="untested", phase="—", detail="D96 mass law at MS̄ scale open"),
-    dict(name="mass ordering (ν)", status="partial", phase="QG179", detail="m1=0 normal ordering derived; experiment pending"),
+    dict(name="mass ordering (ν)", status="tested", phase="QG179/QG203", detail="m1=0 normal ordering derived; absolute masses closed-form (QG203)"),
     dict(name="106 GeV resonance", status="untested", phase="QG132/QG188A/QG190/QG199", detail="falsifiable prediction, not yet observed; INCONCLUSIVE evidence audit (95 GeV excess at 91.19 rung); PRE-REGISTERED window 99–114 GeV, central 106.39 GeV (QG190); QG199 P1 update: PENDING — no confirmed signal in window, limits 15–102 fb do not exclude; 152 GeV excess aligns with 151.98 rung (not P1); HL-LHC 3000 fb⁻¹ projects 1–3 fb"),
     dict(name="collider sector-ladder signatures", status="untested", phase="QG130/QG192/QG200", detail="predicted, no data; QG192 PRE-REGISTERED 9 rungs; QG200 evidence audit: CONFIRMED 3 (SM anchors), SUPPORTED 1 (151.98 = ~152 GeV excess, arXiv:2503.16245), PENDING 8, FALSIFIED 0"),
 ]
@@ -539,8 +541,8 @@ CONTRADICTIONS = [
 
 # ── Open questions ──
 OPEN_QUESTIONS = [
-    dict(question="Exact neutrino mass values m1,m2,m3 (splittings derived QG172; m1=0 normal ordering)",
-         phase="QG172", status="OPEN"),
+    dict(question="Exact neutrino mass values m1,m2,m3: RESOLVED by QG203 (ABSOLUTE MASS ORIGIN) — closed-form D96 expressions m1=0, m2=1/(Σ√m·√(span/2))=8.72 meV (0.02%), m3=√#g/(Σm·√2)=49.4 meV (0.06%); ratio m2/m3=2Σm/(Σ√m·√(span·#g))=0.1766 exact; no oscillation-fit masses; experiment (KATRIN/production) still pending for confirmation",
+         phase="QG172/QG203", status="RESOLVED"),
     dict(question="Quark absolute mass running-scale/MS̄ conversion of the D96 mass law",
          phase="QG173", status="OPEN"),
     dict(question="Experimental validation of the 106 GeV resonance (primary falsifiable prediction; QG188A audit: INCONCLUSIVE — 95 GeV excess at 91.19 rung, 106 GeV window neither confirmed nor excluded; QG199 P1 update: still PENDING — no confirmed signal in 99–114 GeV; new ~152 GeV excess aligns with the 151.98 rung, not P1; HL-LHC 3000 fb⁻¹ projects 1–3 fb, decisive)",

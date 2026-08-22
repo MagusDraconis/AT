@@ -182,7 +182,7 @@ Open Questions:
 - the authoritative catalog of ALL unresolved physics questions is the QG198 Top-20 audit (Docs/Research/TQMQG_FinalOpenProblemsAudit.md), ranked by impact·3+feasibility·2+falsifiability·2; top item = 106 GeV resonance (P1, score 35), runner-up cluster = neutrino sector (SM1 exact masses, SM3 mass ordering, P2 0νββ, scores 31–33)
 - P1 (106 GeV) status after QG199: PENDING — window 99–114 GeV neither confirmed nor excluded; 95 GeV cluster = 91.19 rung; new 152 GeV excess = 151.98 rung (P3, not P1); HL-LHC decisive
 - sector ladder (P3) after QG200/QG201: 12 rungs audited — CONFIRMED 3 (SM anchors Z/H/t), SUPPORTED 1 (151.98 = ~152 GeV excess, MODERATE SUPPORT alignment 2.80σ, 1-in-386), PENDING 8, none falsified
-- key open items: exact neutrino mass values (QG172), quark running-scale/MS̄ conversion (QG173), 106 GeV resonance validation (QG132/QG188A/QG190/QG199), sector-ladder collider test (QG130/QG192/QG200), Hawking T with ψ≠0 (QG24), flat rotation-curve α=0 (G4-ME4), metric ansatz uniqueness (G4-A0), Bekenstein 1/4 (QG196, proven impossible without imported π)
+- key open items: quark running-scale/MS̄ conversion (QG173), 106 GeV resonance validation (QG132/QG188A/QG190/QG199), sector-ladder collider test (QG130/QG192/QG200), Hawking T with ψ≠0 (QG24), flat rotation-curve α=0 (G4-ME4), metric ansatz uniqueness (G4-A0), Bekenstein 1/4 (QG196, proven impossible without imported π); exact neutrino masses RESOLVED (QG203 ABSOLUTE MASS ORIGIN)
 
 ## Status Table
 
@@ -467,10 +467,12 @@ QG201: ladder statistics audit (LADDER STATISTICS AUDIT — is the 152 GeV ↔ 1
 
 QG202: prediction outcome dashboard (PREDICTION OUTCOME DASHBOARD — single source of truth for external validation: per-prediction monitor with frozen value, current evidence, support level, last audit, next experiment, state; P1 = PENDING [window 99–114 open, QG199, next HL-LHC 3000 fb⁻¹], P2 = PENDING [below current 0νββ reach, QG191, next nEXO/LEGEND-1000], P3 = SUPPORTED [151.98 rung = ~152 GeV excess, MODERATE 2.80σ, QG200/201, next HL-LHC confirmation]; frozen values immutable; generated Docs/TQMQG_PredictionOutcomes.md|json via Tools/build_prediction_outcomes.py).
 
+QG203: absolute neutrino mass origin (ABSOLUTE MASS ORIGIN — the neutrino masses are closed-form D96 expressions, no oscillation-fit masses: N = 1/Σ√m = 0.015605 eV neutral scale [QG157]; m1 = 0 [zero-mode, QG179 normal ordering], m2 = 1/(Σ√m·√(span/2)) = 8.7216 meV [phys 8.72, dev 0.019%], m3 = √#g/(Σm·√2) = 49.3728 meV [phys 49.4, dev 0.055%]; exact ratio m2/m3 = 2Σm/(Σ√m·√(span·#g)) = 0.176648 [phys 0.1765, dev 0.07%]; PMNS cross-check m2/m3 ≈ 8.39·s13² [s13 = √(occ0/(2Σm)) QG167]; Σm_ν = 0.0581 eV < 0.12; closes the 'exact neutrino masses' open question [QG198 SM1]; standard-model page observable updated to TESTED).
+
 Milestone counters:
 
-TQM-QG 205 phases
-501+ TQM-QG tests verified
+TQM-QG 206 phases
+504+ TQM-QG tests verified
 
 ### QG154: Neutrino Sector Origin
 
@@ -494,5 +496,5 @@ NEUTRINO ORIGIN
 
 Milestone counters:
 
-TQM-QG 205 phases
-501+ TQM-QG tests verified
+TQM-QG 206 phases
+504+ TQM-QG tests verified

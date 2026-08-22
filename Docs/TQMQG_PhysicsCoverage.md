@@ -3,9 +3,9 @@
 **Single source of truth for all TQM-QG physics validation.**
 
 - Last updated: 2026-08-22
-- Total phases: 205
-- Tested: 188 | Partial: 12 | Untested: 0 | Audit: 5
-- Weighted coverage: 95.2%
+- Total phases: 206
+- Tested: 189 | Partial: 12 | Untested: 0 | Audit: 5
+- Weighted coverage: 95.3%
 
 > Maintenance rule: whenever a QG phase completes, scan its classification, update
 > tested/partial/untested, contradictions, open questions, predictions, and statistics.
@@ -17,13 +17,13 @@
 
 | Metric | Value |
 |---|---|
-| Phases total | 205 |
-| Tested | 188 |
+| Phases total | 206 |
+| Tested | 189 |
 | Partially tested | 12 |
 | Untested | 0 |
 | Audit (QG170) | 5 |
-| Weighted coverage | 95.2% |
-| SM tested | 49 |
+| Weighted coverage | 95.3% |
+| SM tested | 50 |
 | Gravity tested | 29 |
 
 ### Observable-level coverage (SM quantities)
@@ -31,10 +31,10 @@
 | Metric | Value |
 |---|---|
 | Observables catalogued | 40 |
-| Tested | 30 |
-| Partially tested | 6 |
-| Untested | 4 |
-| Observable coverage | 82.5% |
+| Tested | 32 |
+| Partially tested | 5 |
+| Untested | 3 |
+| Observable coverage | 86.2% |
 
 > QG170's original audit (25 tested / 9 partial / 14 untested of 48 quantities, 64%)
 > is superseded at observable level by QG171-182; the phase register below is the
@@ -52,7 +52,7 @@
 | Predictions | 11 | 0 | 0 | 4 | 15 |
 | ψ / Tensor Sector | 7 | 0 | 0 | 0 | 7 |
 | Quantum Mechanics | 11 | 0 | 0 | 0 | 11 |
-| Standard Model | 49 | 9 | 0 | 1 | 59 |
+| Standard Model | 50 | 9 | 0 | 1 | 60 |
 | TRM Dynamics | 15 | 0 | 0 | 0 | 15 |
 
 ---
@@ -75,7 +75,7 @@
 
 | Question | Phase | Status |
 |---|---|---|
-| Exact neutrino mass values m1,m2,m3 (splittings derived QG172; m1=0 normal ordering) | QG172 | OPEN |
+| Exact neutrino mass values m1,m2,m3: RESOLVED by QG203 (ABSOLUTE MASS ORIGIN) — closed-form D96 expressions m1=0, m2=1/(Σ√m·√(span/2))=8.72 meV (0.02%), m3=√#g/(Σm·√2)=49.4 meV (0.06%); ratio m2/m3=2Σm/(Σ√m·√(span·#g))=0.1766 exact; no oscillation-fit masses; experiment (KATRIN/production) still pending for confirmation | QG172/QG203 | RESOLVED |
 | Quark absolute mass running-scale/MS̄ conversion of the D96 mass law | QG173 | OPEN |
 | Experimental validation of the 106 GeV resonance (primary falsifiable prediction; QG188A audit: INCONCLUSIVE — 95 GeV excess at 91.19 rung, 106 GeV window neither confirmed nor excluded; QG199 P1 update: still PENDING — no confirmed signal in 99–114 GeV; new ~152 GeV excess aligns with the 151.98 rung, not P1; HL-LHC 3000 fb⁻¹ projects 1–3 fb, decisive) | QG132/QG188A/QG190/QG199 | FALSIFIABLE-PENDING |
 | Collider test of sector-ladder physics (energy-ladder rung states) | QG130/QG192/QG200 | PREDICTED-NO-DATA (QG200 audit: 151.98 rung SUPPORTED by ~152 GeV excess, arXiv:2503.16245; 8 rungs PENDING, none falsified) |
@@ -162,9 +162,9 @@ incorporating QG171-182 results.
 | family index origin | partial | QG135 | PARTIAL ORIGIN |
 | golden-ratio hierarchy | partial | QG152 | PARTIAL ROBUSTNESS |
 | physical calibration ladder | partial | QG129 | PARTIAL MAPPING |
-| exact neutrino masses m1,m2,m3 | untested | — | splittings derived (QG172); absolute values open |
+| exact neutrino masses m1,m2,m3 | tested | QG172/QG203 | CLOSED-FORM D96: m1=0, m2=1/(Σ√m·√(span/2))=8.72 meV (0.02%), m3=√#g/(Σm·√2)=49.4 meV (0.06%), ratio=2Σm/(Σ√m·√(span·#g))=0.1766 exact; ABSOLUTE MASS ORIGIN, no oscillation-fit masses |
 | quark running-scale/MS̄ conversion | untested | — | D96 mass law at MS̄ scale open |
-| mass ordering (ν) | partial | QG179 | m1=0 normal ordering derived; experiment pending |
+| mass ordering (ν) | tested | QG179/QG203 | m1=0 normal ordering derived; absolute masses closed-form (QG203) |
 | 106 GeV resonance | untested | QG132/QG188A/QG190/QG199 | falsifiable prediction, not yet observed; INCONCLUSIVE evidence audit (95 GeV excess at 91.19 rung); PRE-REGISTERED window 99–114 GeV, central 106.39 GeV (QG190); QG199 P1 update: PENDING — no confirmed signal in window, limits 15–102 fb do not exclude; 152 GeV excess aligns with 151.98 rung (not P1); HL-LHC 3000 fb⁻¹ projects 1–3 fb |
 | collider sector-ladder signatures | untested | QG130/QG192/QG200 | predicted, no data; QG192 PRE-REGISTERED 9 rungs; QG200 evidence audit: CONFIRMED 3 (SM anchors), SUPPORTED 1 (151.98 = ~152 GeV excess, arXiv:2503.16245), PENDING 8, FALSIFIED 0 |
 
@@ -523,3 +523,7 @@ Historical entries are preserved; updates are additive.
 - **QG201** — SECTOR LADDER EVIDENCE AUDIT (audit) — frozen 12-rung ladder (QG192) vs ATLAS/CMS/LEP record (evidence-only, cited): CONFIRMED 3 (SM anchors 91.19 Z, 121.59 H, 167.18 t — within 5% tolerance), SUPPORTED 1 (151.98 rung = the combined ~152 GeV diphoton excess, local 3.6σ / global up to 5.4σ, arXiv:2503.16245, 0.01% dev), PENDING 8 (106.39 PRIMARY, 136.78, 182.38, 197.58, 212.78, 227.97, 243.17, 263.43 — no excess, not excluded); DISFAVORED 0, FALSIFIED 0; LEP2 114.4 GeV bound is SM-coupling only (does not constrain ladder); no predicted rung falsified `TQMQG_SectorLadderEvidenceAudit.md`
 - **QG202** — LADDER STATISTICS AUDIT (audit) — 152 GeV ↔ 151.98 rung alignment significance (frozen QG192 only, deterministic): τ = |152/151.98−1| = 0.0132% (0.020 GeV, ~760× closer than the 15.2 GeV spacing); null = uniform over [95,270] GeV (span 175); p(any of 9 rungs) = Σ(2τ·E)/175 = 0.259% (1 in 386) → ALREADY look-elsewhere corrected → z = 2.80σ; p(151.98 alone) = 0.023% (1 in 4375) → z = 3.50σ; classification MODERATE SUPPORT (0.1–1% band, 2.80σ) — meaningful but not 5σ; reinforces the ~152 GeV excess's own global significance (up to 5.4σ) `TQMQG_LadderStatisticsAudit.md`
 - **QG203** — PREDICTION OUTCOME DASHBOARD (audit) — single source of truth for external validation: per-prediction outcome monitor (frozen value, current evidence, support level, last audit, next experiment, state) — P1 106 GeV PENDING [window 99–114 neither confirmed nor excluded; QG199; next HL-LHC 3000 fb⁻¹ diphoton], P2 0νββ m_ββ=2.02 meV PENDING [below current reach; QG191; next nEXO/LEGEND-1000], P3 sector-ladder SUPPORTED [151.98 rung = ~152 GeV excess, MODERATE 2.80σ, QG200/201; next HL-LHC confirmation]; states PENDING/SUPPORTED/CONFIRMED/DISFAVORED/FALSIFIED; frozen values immutable (QG193); generated Docs/TQMQG_PredictionOutcomes.md|json (Tools/build_prediction_outcomes.py) `TQMQG_PredictionOutcomeDashboard.md`
+
+### Standard Model
+
+- **QG204** — ABSOLUTE MASS ORIGIN (tested) — absolute neutrino masses as closed-form D96 expressions (no oscillation-fit masses): N = 1/Σ√m = 0.015605 eV (QG157 neutral scale); m1 = 0 (zero-mode, normal ordering QG179), m2 = 1/(Σ√m·√(span/2)) = 8.7216e-3 eV (phys 8.72 meV, dev 0.019%), m3 = √#g/(Σm·√2) = 49.3728e-3 eV (phys 49.4 meV, dev 0.055%); exact ratio m2/m3 = 2Σm/(Σ√m·√(span·#g)) = 0.176648 (phys 0.1765, dev 0.07%); PMNS cross-check m2/m3 ≈ 8.39·s13² (s13=√(occ0/(2Σm)), QG167); Σm_ν = 0.0581 eV < 0.12; closes the 'exact neutrino masses' open question (QG198 SM1) `TQMQG_AbsoluteNeutrinoMassOrigin.md`

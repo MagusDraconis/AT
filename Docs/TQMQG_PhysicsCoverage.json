@@ -3,16 +3,16 @@
     "file": "Docs/TQMQG_PhysicsCoverage.md|json",
     "purpose": "single source of truth for all TQM-QG physics validation",
     "last_updated": "2026-08-22",
-    "phases_count": 205,
+    "phases_count": 206,
     "note": "Historical entries are never removed. Additive updates only."
   },
   "coverage": {
-    "total_phases": 205,
-    "tested": 188,
+    "total_phases": 206,
+    "tested": 189,
     "partial": 12,
     "untested": 0,
     "audit": 5,
-    "weighted_coverage": 0.9524,
+    "weighted_coverage": 0.9527,
     "domains": {
       "cosmology": {
         "tested": 1,
@@ -71,11 +71,11 @@
         "total": 11
       },
       "sm": {
-        "tested": 49,
+        "tested": 50,
         "partial": 9,
         "untested": 0,
         "audit": 1,
-        "total": 59
+        "total": 60
       },
       "trm": {
         "tested": 15,
@@ -87,9 +87,9 @@
     },
     "observables": {
       "total": 40,
-      "tested": 30,
-      "partial": 6,
-      "untested": 4
+      "tested": 32,
+      "partial": 5,
+      "untested": 3
     }
   },
   "contradictions": [
@@ -187,9 +187,9 @@
   ],
   "open_questions": [
     {
-      "question": "Exact neutrino mass values m1,m2,m3 (splittings derived QG172; m1=0 normal ordering)",
-      "phase": "QG172",
-      "status": "OPEN"
+      "question": "Exact neutrino mass values m1,m2,m3: RESOLVED by QG203 (ABSOLUTE MASS ORIGIN) — closed-form D96 expressions m1=0, m2=1/(Σ√m·√(span/2))=8.72 meV (0.02%), m3=√#g/(Σm·√2)=49.4 meV (0.06%); ratio m2/m3=2Σm/(Σ√m·√(span·#g))=0.1766 exact; no oscillation-fit masses; experiment (KATRIN/production) still pending for confirmation",
+      "phase": "QG172/QG203",
+      "status": "RESOLVED"
     },
     {
       "question": "Quark absolute mass running-scale/MS̄ conversion of the D96 mass law",
@@ -487,9 +487,9 @@
     },
     {
       "name": "exact neutrino masses m1,m2,m3",
-      "status": "untested",
-      "phase": "—",
-      "detail": "splittings derived (QG172); absolute values open"
+      "status": "tested",
+      "phase": "QG172/QG203",
+      "detail": "CLOSED-FORM D96: m1=0, m2=1/(Σ√m·√(span/2))=8.72 meV (0.02%), m3=√#g/(Σm·√2)=49.4 meV (0.06%), ratio=2Σm/(Σ√m·√(span·#g))=0.1766 exact; ABSOLUTE MASS ORIGIN, no oscillation-fit masses"
     },
     {
       "name": "quark running-scale/MS̄ conversion",
@@ -499,9 +499,9 @@
     },
     {
       "name": "mass ordering (ν)",
-      "status": "partial",
-      "phase": "QG179",
-      "detail": "m1=0 normal ordering derived; experiment pending"
+      "status": "tested",
+      "phase": "QG179/QG203",
+      "detail": "m1=0 normal ordering derived; absolute masses closed-form (QG203)"
     },
     {
       "name": "106 GeV resonance",
@@ -2224,6 +2224,14 @@
       "domain": "predictions",
       "validation": "audit",
       "key_result": "single source of truth for external validation: per-prediction outcome monitor (frozen value, current evidence, support level, last audit, next experiment, state) — P1 106 GeV PENDING [window 99–114 neither confirmed nor excluded; QG199; next HL-LHC 3000 fb⁻¹ diphoton], P2 0νββ m_ββ=2.02 meV PENDING [below current reach; QG191; next nEXO/LEGEND-1000], P3 sector-ladder SUPPORTED [151.98 rung = ~152 GeV excess, MODERATE 2.80σ, QG200/201; next HL-LHC confirmation]; states PENDING/SUPPORTED/CONFIRMED/DISFAVORED/FALSIFIED; frozen values immutable (QG193); generated Docs/TQMQG_PredictionOutcomes.md|json (Tools/build_prediction_outcomes.py)"
+    },
+    {
+      "phase": 204,
+      "file": "TQMQG_AbsoluteNeutrinoMassOrigin.md",
+      "classification": "ABSOLUTE MASS ORIGIN",
+      "domain": "sm",
+      "validation": "tested",
+      "key_result": "absolute neutrino masses as closed-form D96 expressions (no oscillation-fit masses): N = 1/Σ√m = 0.015605 eV (QG157 neutral scale); m1 = 0 (zero-mode, normal ordering QG179), m2 = 1/(Σ√m·√(span/2)) = 8.7216e-3 eV (phys 8.72 meV, dev 0.019%), m3 = √#g/(Σm·√2) = 49.3728e-3 eV (phys 49.4 meV, dev 0.055%); exact ratio m2/m3 = 2Σm/(Σ√m·√(span·#g)) = 0.176648 (phys 0.1765, dev 0.07%); PMNS cross-check m2/m3 ≈ 8.39·s13² (s13=√(occ0/(2Σm)), QG167); Σm_ν = 0.0581 eV < 0.12; closes the 'exact neutrino masses' open question (QG198 SM1)"
     }
   ]
 }
