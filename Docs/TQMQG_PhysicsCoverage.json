@@ -3,16 +3,16 @@
     "file": "Docs/TQMQG_PhysicsCoverage.md|json",
     "purpose": "single source of truth for all TQM-QG physics validation",
     "last_updated": "2026-08-22",
-    "phases_count": 191,
+    "phases_count": 192,
     "note": "Historical entries are never removed. Additive updates only."
   },
   "coverage": {
-    "total_phases": 191,
-    "tested": 178,
+    "total_phases": 192,
+    "tested": 179,
     "partial": 12,
     "untested": 0,
     "audit": 1,
-    "weighted_coverage": 0.9647,
+    "weighted_coverage": 0.9648,
     "domains": {
       "cosmology": {
         "tested": 1,
@@ -50,11 +50,11 @@
         "total": 42
       },
       "predictions": {
-        "tested": 6,
+        "tested": 7,
         "partial": 0,
         "untested": 0,
         "audit": 0,
-        "total": 6
+        "total": 7
       },
       "psi": {
         "tested": 7,
@@ -2112,6 +2112,14 @@
       "domain": "predictions",
       "validation": "tested",
       "key_result": "published record: ~95 GeV scalar excess cluster (CMS γγ 2.9σ, ATLAS γγ 1.7σ, combined 3.1σ; CMS ττ 2.6σ; LEP bb̄ 2.3σ) aligns with 91.19 GeV rung (dev 4.5%) NOT predicted 106.39 GeV (−10.4%); CMS 70–110 & ATLAS 66–110 GeV full-Run-2 diphoton null searches cover 106 GeV (limits 15–102 fb, no excess); LEP2 SM-like < 114.4 GeV (SM-strength hZZ only); prediction NOT excluded; Run 3 no confirmed increase; HL-LHC decisive"
+    },
+    {
+      "phase": 190,
+      "file": "TQMQG_AntiFitAudit.md",
+      "classification": "PREDICTION AUDIT",
+      "domain": "predictions",
+      "validation": "tested",
+      "key_result": "methodology audit of QG140-188: 49 phases — 36 PREDICTION, 2 BLIND (QG176 Higgs, QG177 leave-one-out), 8 DEPENDENT, 2 RETRO-FIT (QG140/146 fitted exponents, superseded by QG141/149), 1 OVERFIT (QG147, 3 params/3 sectors, CONFIRMED by QG148 out-of-sample); 3 high-risk all in fitting era QG140-148; structural era QG149+ no fitted parameters"
     }
   ]
 }

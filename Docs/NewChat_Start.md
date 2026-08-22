@@ -228,6 +228,7 @@ Open Questions:
 | GPS Correction / Grav. Time Dilation | QG187 | GPS ORIGIN (gravitational time dilation IS the QG21 redshift law: clock rate dτ/dt = ρ^(1/d) = √(−g_00), Δτ/τ = (ρ1/ρ2)^(1/d)−1 = redshift; weak-field Δτ/τ = (GM/c²)(1/r1−1/r2) → +45.7 μs/day vs GR 45.9 (−0.4%); + SR orbital term −v²/(2c²) → −7.2 μs/day → NET +38.5 vs observed +38.6 μs/day (−0.2%), the −4.465e-10 GPS rate offset; ρ source = deficit field (G4ME), surface clock slower) |
 | Prediction Audit | QG188 | PREDICTION AUDIT (10 remaining falsifiable predictions from coverage JSON: 2 testable NOW [106 GeV P1, sector-ladder P2], 3 SOON [0νββ P3, mass-ordering P6, neutrino masses P7], 5 inaccessible [P4,P5,P8,P9,P10]; ranked by impact·3+feas·2+fals·2 → Top-1 = 106 GeV resonance (QG132, score 35.0, LHC Run 3), Top-SOON = 0νββ m_ββ=2.02e-3 eV (QG179); recommended next target = 106 GeV) |
 | 106 GeV Resonance Evidence | QG188A | INCONCLUSIVE (published record: ~95 GeV scalar excess cluster — CMS γγ 2.9σ, ATLAS γγ 1.7σ, combined 3.1σ, CMS ττ 2.6σ, LEP bb̄ 2.3σ — aligns with the 91.19 GeV ladder rung (dev 4.5%), NOT the predicted 106.39 GeV (−10.4%); CMS 70–110 & ATLAS 66–110 GeV full-Run-2 diphoton null searches cover 106 GeV with no excess; limits 15–102 fb; LEP2 excludes SM-like < 114.4 GeV but only SM-strength hZZ; prediction NOT excluded (suppressed couplings allowed); Run 3 no confirmed increase; HL-LHC decisive) |
+| Anti-Fit Audit | QG189 | PREDICTION AUDIT (49 phases QG140-188 audited: 36 PREDICTION, 2 BLIND [QG176 Higgs, QG177 leave-one-out], 8 DEPENDENT, 2 RETRO-FIT [QG140, QG146 fitted exponents, superseded], 1 OVERFIT [QG147, 3 params/3 sectors, CONFIRMED by QG148 out-of-sample]; 3 high-risk all in fitting era QG140-148; structural era QG149+ has no fitted parameters; gold-standard blind tests = QG176/177) |
 | 106 GeV Resonance (validation) | QG132 | FALSIFIABLE PREDICTION (not yet observed) |
 | Collider Test of Sector-Ladder | QG130 | PREDICTED (no data yet) |
 | Sector Exponent Law p(Q,T3) | QG147 | HISTORICAL (overfit) — superseded by QG149 |
@@ -276,6 +277,7 @@ D96 Automorphisms (D96 = ⟨r,s⟩)
 → GPS correction (QG187): gravitational time dilation IS the QG21 redshift law — clock rate dτ/dt = ρ^(1/d) = √(−g_00), Δτ/τ = (ρ1/ρ2)^(1/d)−1 = redshift; weak-field (GM/c²)(1/r1−1/r2) → +45.7 μs/day vs GR 45.9 (−0.4%); + SR orbital −v²/(2c²) = −7.2 → NET +38.5 vs observed +38.6 μs/day (−0.2%) = the −4.465e-10 GPS rate offset; ρ source = deficit field (G4ME), surface clock slower; GPS ORIGIN — the first practical application derived directly from the redshift law
 → Prediction audit (QG188): 10 remaining falsifiable predictions from coverage JSON — 2 testable NOW (106 GeV P1, sector-ladder P2 at LHC Run 3), 3 SOON (0νββ P3, mass-ordering P6, neutrino masses P7), 5 inaccessible (redshift-no-lensing P4, curvature-Poisson P5, MS̄ conversion P8, granularity P9, regular-core P10); ranked by impact·3+feas·2+fals·2 → recommended next target = 106 GeV resonance (score 35.0); top SOON = 0νββ m_ββ=2.02e-3 eV
 → 106 GeV evidence audit (QG188A): INCONCLUSIVE — published record shows a ~95 GeV scalar excess cluster (CMS γγ 2.9σ, ATLAS γγ 1.7σ, combined 3.1σ; CMS ττ 2.6σ; LEP bb̄ 2.3σ) aligning with the 91.19 GeV ladder rung (dev 4.5%) NOT the predicted 106.39 GeV (−10.4%); CMS 70–110 & ATLAS 66–110 GeV full-Run-2 diphoton null searches cover 106 GeV (limits 15–102 fb, no excess); LEP2 SM-like < 114.4 GeV (SM-strength hZZ only); prediction NOT excluded; Run 3 no confirmed increase; HL-LHC decisive
+→ Anti-fit audit (QG189): methodology audit of QG140-188 — 49 phases: 36 PREDICTION, 2 BLIND RECONSTRUCTION (QG176 Higgs, QG177 leave-one-out), 8 DEPENDENT, 2 RETRO-FIT (QG140, QG146 fitted exponents, superseded by QG141/149), 1 OVERFIT (QG147, 3 params/3 sectors, CONFIRMED by QG148 out-of-sample); all 3 high-risk phases in the fitting era QG140-148; structural era QG149+ has no fitted parameters; gold-standard anti-fit evidence = the two blind tests
 → Higgs = collective occupation-density scalar
 
 Fermions:
@@ -421,10 +423,12 @@ QG188: prediction audit (PREDICTION AUDIT — 10 remaining falsifiable predictio
 
 QG188A: 106 GeV resonance evidence audit (INCONCLUSIVE — ~95 GeV excess cluster aligns with 91.19 GeV rung, not the 106 GeV prediction; window neither confirmed nor excluded).
 
+QG189: anti-fit audit (PREDICTION AUDIT — 49 phases QG140-188; 36 prediction, 2 blind, 8 dependent, 2 retro-fit, 1 overfit [QG147 confirmed by QG148]).
+
 Milestone counters:
 
-TQM-QG 191 phases
-459+ TQM-QG tests verified
+TQM-QG 192 phases
+462+ TQM-QG tests verified
 
 ### QG154: Neutrino Sector Origin
 
@@ -448,5 +452,5 @@ NEUTRINO ORIGIN
 
 Milestone counters:
 
-TQM-QG 191 phases
-459+ TQM-QG tests verified
+TQM-QG 192 phases
+462+ TQM-QG tests verified
