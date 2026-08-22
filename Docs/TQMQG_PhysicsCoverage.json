@@ -3,16 +3,16 @@
     "file": "Docs/TQMQG_PhysicsCoverage.md|json",
     "purpose": "single source of truth for all TQM-QG physics validation",
     "last_updated": "2026-08-22",
-    "phases_count": 207,
+    "phases_count": 208,
     "note": "Historical entries are never removed. Additive updates only."
   },
   "coverage": {
-    "total_phases": 207,
+    "total_phases": 208,
     "tested": 190,
     "partial": 12,
     "untested": 0,
-    "audit": 5,
-    "weighted_coverage": 0.9529,
+    "audit": 6,
+    "weighted_coverage": 0.9495,
     "domains": {
       "cosmology": {
         "tested": 1,
@@ -32,8 +32,8 @@
         "tested": 17,
         "partial": 0,
         "untested": 0,
-        "audit": 0,
-        "total": 17
+        "audit": 1,
+        "total": 18
       },
       "gravity": {
         "tested": 29,
@@ -2240,6 +2240,14 @@
       "domain": "sm",
       "validation": "tested",
       "key_result": "quark running-scale/MS̄ conversion derived from D96 (no fitted QCD factors): the D96 mass law is NATIVELY an MS̄-scheme law at the natural scale — u/d/s at 2 GeV and c/b/t at μ=m_q all match PDG MS̄ within 0.2% (mc(mc)=1269 vs 1270, mb(mb)=4186 vs 4180, mt(mt)=172704 vs 172700); spectral α_s = 8/Σ√m = 0.1248 (PDG α_s(MZ)=0.1184, dev 5.4%, QG163); running exponent q = #d/(2·#g) = 42/88 = 0.4773 reproduces the QCD γ_m0/β0 = 0.48 within 0.6% (no QCD import); running law m(μ) = m(m)·[α_s(μ)/α_s(m)]^q; closes the 'quark running-scale/MS̄ conversion' open question (QG198 SM2)"
+    },
+    {
+      "phase": 206,
+      "file": "TQMQG_Post200CoverageAudit.md",
+      "classification": "POST-200 COVERAGE AUDIT",
+      "domain": "foundation",
+      "validation": "audit",
+      "key_result": "true post-QG204 status (recomputed from coverage, removing resolved SM1/SM2/Matter=Deficit/Matter Sector/2D→3D Bridge): 207 phases, 190 tested (91.8%), 12 partial, 5 audit, 95.3% weighted; observables 40: 33 tested / 5 partial / 2 untested; Top-10 remaining open problems ranked by impact·3+feas·2+fals·2 → P1 106 GeV (35) > P2 0νββ (31) > P3 ladder (30) > G2 rotation-curve (26) > G3 conformal optics (22) > F1 metric ansatz (21) = SM4 lepton hierarchy (21) > G1 Hawking-ψ (20) = F2 Bekenstein 1/4 (20) > SM6 family index (17); category PREDICTION 3 / GRAVITY 3 / FOUNDATIONAL 2 / SM 2; the open frontier is now experimental (3 pre-registered predictions) + structural gaps"
     }
   ]
 }

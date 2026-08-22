@@ -3,9 +3,9 @@
 **Single source of truth for all TQM-QG physics validation.**
 
 - Last updated: 2026-08-22
-- Total phases: 207
-- Tested: 190 | Partial: 12 | Untested: 0 | Audit: 5
-- Weighted coverage: 95.3%
+- Total phases: 208
+- Tested: 190 | Partial: 12 | Untested: 0 | Audit: 6
+- Weighted coverage: 95.0%
 
 > Maintenance rule: whenever a QG phase completes, scan its classification, update
 > tested/partial/untested, contradictions, open questions, predictions, and statistics.
@@ -17,12 +17,12 @@
 
 | Metric | Value |
 |---|---|
-| Phases total | 207 |
+| Phases total | 208 |
 | Tested | 190 |
 | Partially tested | 12 |
 | Untested | 0 |
-| Audit (QG170) | 5 |
-| Weighted coverage | 95.3% |
+| Audit (QG170) | 6 |
+| Weighted coverage | 95.0% |
 | SM tested | 51 |
 | Gravity tested | 29 |
 
@@ -46,7 +46,7 @@
 |---|---|---|---|---|---|
 | Cosmology | 1 | 0 | 0 | 0 | 1 |
 | High-Energy Sector | 6 | 1 | 0 | 0 | 7 |
-| Foundations | 17 | 0 | 0 | 0 | 17 |
+| Foundations | 17 | 0 | 0 | 1 | 18 |
 | Gravity / GR | 29 | 2 | 0 | 0 | 31 |
 | Network & Spectrum | 42 | 0 | 0 | 0 | 42 |
 | Predictions | 11 | 0 | 0 | 4 | 15 |
@@ -528,3 +528,7 @@ Historical entries are preserved; updates are additive.
 
 - **QG204** — ABSOLUTE MASS ORIGIN (tested) — absolute neutrino masses as closed-form D96 expressions (no oscillation-fit masses): N = 1/Σ√m = 0.015605 eV (QG157 neutral scale); m1 = 0 (zero-mode, normal ordering QG179), m2 = 1/(Σ√m·√(span/2)) = 8.7216e-3 eV (phys 8.72 meV, dev 0.019%), m3 = √#g/(Σm·√2) = 49.3728e-3 eV (phys 49.4 meV, dev 0.055%); exact ratio m2/m3 = 2Σm/(Σ√m·√(span·#g)) = 0.176648 (phys 0.1765, dev 0.07%); PMNS cross-check m2/m3 ≈ 8.39·s13² (s13=√(occ0/(2Σm)), QG167); Σm_ν = 0.0581 eV < 0.12; closes the 'exact neutrino masses' open question (QG198 SM1) `TQMQG_AbsoluteNeutrinoMassOrigin.md`
 - **QG205** — RUNNING ORIGIN (tested) — quark running-scale/MS̄ conversion derived from D96 (no fitted QCD factors): the D96 mass law is NATIVELY an MS̄-scheme law at the natural scale — u/d/s at 2 GeV and c/b/t at μ=m_q all match PDG MS̄ within 0.2% (mc(mc)=1269 vs 1270, mb(mb)=4186 vs 4180, mt(mt)=172704 vs 172700); spectral α_s = 8/Σ√m = 0.1248 (PDG α_s(MZ)=0.1184, dev 5.4%, QG163); running exponent q = #d/(2·#g) = 42/88 = 0.4773 reproduces the QCD γ_m0/β0 = 0.48 within 0.6% (no QCD import); running law m(μ) = m(m)·[α_s(μ)/α_s(m)]^q; closes the 'quark running-scale/MS̄ conversion' open question (QG198 SM2) `TQMQG_QuarkRunningOrigin.md`
+
+### Foundations
+
+- **QG206** — POST-200 COVERAGE AUDIT (audit) — true post-QG204 status (recomputed from coverage, removing resolved SM1/SM2/Matter=Deficit/Matter Sector/2D→3D Bridge): 207 phases, 190 tested (91.8%), 12 partial, 5 audit, 95.3% weighted; observables 40: 33 tested / 5 partial / 2 untested; Top-10 remaining open problems ranked by impact·3+feas·2+fals·2 → P1 106 GeV (35) > P2 0νββ (31) > P3 ladder (30) > G2 rotation-curve (26) > G3 conformal optics (22) > F1 metric ansatz (21) = SM4 lepton hierarchy (21) > G1 Hawking-ψ (20) = F2 Bekenstein 1/4 (20) > SM6 family index (17); category PREDICTION 3 / GRAVITY 3 / FOUNDATIONAL 2 / SM 2; the open frontier is now experimental (3 pre-registered predictions) + structural gaps `TQMQG_Post200CoverageAudit.md`
