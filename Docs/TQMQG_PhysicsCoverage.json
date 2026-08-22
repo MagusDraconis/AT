@@ -3,16 +3,16 @@
     "file": "Docs/TQMQG_PhysicsCoverage.md|json",
     "purpose": "single source of truth for all TQM-QG physics validation",
     "last_updated": "2026-08-22",
-    "phases_count": 195,
+    "phases_count": 196,
     "note": "Historical entries are never removed. Additive updates only."
   },
   "coverage": {
-    "total_phases": 195,
-    "tested": 182,
+    "total_phases": 196,
+    "tested": 183,
     "partial": 12,
     "untested": 0,
     "audit": 1,
-    "weighted_coverage": 0.9654,
+    "weighted_coverage": 0.9656,
     "domains": {
       "cosmology": {
         "tested": 1,
@@ -50,11 +50,11 @@
         "total": 42
       },
       "predictions": {
-        "tested": 10,
+        "tested": 11,
         "partial": 0,
         "untested": 0,
         "audit": 0,
-        "total": 10
+        "total": 11
       },
       "psi": {
         "tested": 7,
@@ -2144,6 +2144,14 @@
       "domain": "predictions",
       "validation": "tested",
       "key_result": "full 12-rung ladder frozen from QG121-132 (forbidden: collider bumps, resonance catalogs, fitted energies; guard): 9 predicted resonances 106.39 (PRIMARY) → 136.78 → 151.98 → 182.38 → 197.58 → 212.78 → 227.97 → 243.17 → 263.43 GeV (Z-anchor scale MZ/6=15.198; rungs 6/9/11 aligned with t/H/Z); multiplicities unit 15.20 GeV ×10 (0.909) + top 20.26 GeV ×1; width scale 15.20 GeV; production ascending by mass below LHC13/FCC-hh; CONFIRMED = resonance within 5% of frozen rung, FALSIFIED = sensitive search excludes rung"
+    },
+    {
+      "phase": 194,
+      "file": "TQMQG_PredictionRegistry.md",
+      "classification": "REGISTRY LOCK",
+      "domain": "predictions",
+      "validation": "tested",
+      "key_result": "immutable registry of the 3 pre-registered predictions (P1 106 GeV [QG132/190: 106.39 GeV, window 99–114], P2 0νββ m_ββ [QG179/191: 2.02 meV], P3 sector-ladder [QG128-132/192: 9 rungs 106.4–263.4 GeV]); each records derivation phase, formula, inputs, frozen value, uncertainty, falsification; readonly field + init-only records + values-unchanged guard; only CONFIRMED/DISFAVORED/FALSIFIED may be added later, never value edits; generated Docs/TQMQG_Predictions.md + .json via Tools/build_predictions_registry.py"
     }
   ]
 }

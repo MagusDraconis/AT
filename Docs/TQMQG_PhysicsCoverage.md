@@ -3,9 +3,9 @@
 **Single source of truth for all TQM-QG physics validation.**
 
 - Last updated: 2026-08-22
-- Total phases: 195
-- Tested: 182 | Partial: 12 | Untested: 0 | Audit: 1
-- Weighted coverage: 96.5%
+- Total phases: 196
+- Tested: 183 | Partial: 12 | Untested: 0 | Audit: 1
+- Weighted coverage: 96.6%
 
 > Maintenance rule: whenever a QG phase completes, scan its classification, update
 > tested/partial/untested, contradictions, open questions, predictions, and statistics.
@@ -17,12 +17,12 @@
 
 | Metric | Value |
 |---|---|
-| Phases total | 195 |
-| Tested | 182 |
+| Phases total | 196 |
+| Tested | 183 |
 | Partially tested | 12 |
 | Untested | 0 |
 | Audit (QG170) | 1 |
-| Weighted coverage | 96.5% |
+| Weighted coverage | 96.6% |
 | SM tested | 49 |
 | Gravity tested | 25 |
 
@@ -49,7 +49,7 @@
 | Foundations | 16 | 0 | 0 | 0 | 16 |
 | Gravity / GR | 25 | 2 | 0 | 0 | 27 |
 | Network & Spectrum | 42 | 0 | 0 | 0 | 42 |
-| Predictions | 10 | 0 | 0 | 0 | 10 |
+| Predictions | 11 | 0 | 0 | 0 | 11 |
 | ψ / Tensor Sector | 7 | 0 | 0 | 0 | 7 |
 | Quantum Mechanics | 11 | 0 | 0 | 0 | 11 |
 | Standard Model | 49 | 9 | 0 | 1 | 59 |
@@ -504,3 +504,4 @@ Historical entries are preserved; updates are additive.
 - **QG191** — PRE-REGISTERED (tested) — prediction frozen BEFORE future data (D96/QG128-132 only; forbidden: ATLAS/CMS excess, fitted masses, new constants): central mass 106.39 GeV (lowest missing Z-anchor rung, scale MZ/6=15.198), window 98.79–113.99 GeV (stated 99–114), production 9 rungs 106.4→263.4 GeV below LHC13/FCC-hh, decay unit 15.20 GeV ×10 + top 20.26 GeV ×1 → 3-family sector; CONFIRMED = signal in window with 15–20 GeV quanta, DISFAVORED = null `TQMQG_PreRegistered106GeV.md`
 - **QG192** — PRE-REGISTERED (tested) — m_ββ = |Σ U_ei²·m_i| = 2.02 meV frozen from QG167 PMNS (s12=0.5497, s13=0.1451, δ_ν=66.4°) + QG172 masses (m1=0, m2=8.72, m3=49.4 meV, NORMAL ordering) + QG179 Majorana (real matrix ⇒ α2=α3=0); computed 2.0222 meV, dominated by m2·s12²·c13² (2.52 meV); forbidden: experimental limits, detector sensitivities, future measurements (guard); CONFIRMED = ±10%, FALSIFIED = exclusion below 2.02 meV `TQMQG_PreRegisteredMbb.md`
 - **QG193** — PRE-REGISTERED (tested) — full 12-rung ladder frozen from QG121-132 (forbidden: collider bumps, resonance catalogs, fitted energies; guard): 9 predicted resonances 106.39 (PRIMARY) → 136.78 → 151.98 → 182.38 → 197.58 → 212.78 → 227.97 → 243.17 → 263.43 GeV (Z-anchor scale MZ/6=15.198; rungs 6/9/11 aligned with t/H/Z); multiplicities unit 15.20 GeV ×10 (0.909) + top 20.26 GeV ×1; width scale 15.20 GeV; production ascending by mass below LHC13/FCC-hh; CONFIRMED = resonance within 5% of frozen rung, FALSIFIED = sensitive search excludes rung `TQMQG_PreRegisteredLadderSpectrum.md`
+- **QG194** — REGISTRY LOCK (tested) — immutable registry of the 3 pre-registered predictions (P1 106 GeV [QG132/190: 106.39 GeV, window 99–114], P2 0νββ m_ββ [QG179/191: 2.02 meV], P3 sector-ladder [QG128-132/192: 9 rungs 106.4–263.4 GeV]); each records derivation phase, formula, inputs, frozen value, uncertainty, falsification; readonly field + init-only records + values-unchanged guard; only CONFIRMED/DISFAVORED/FALSIFIED may be added later, never value edits; generated Docs/TQMQG_Predictions.md + .json via Tools/build_predictions_registry.py `TQMQG_PredictionRegistry.md`
