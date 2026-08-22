@@ -3,16 +3,16 @@
     "file": "Docs/TQMQG_PhysicsCoverage.md|json",
     "purpose": "single source of truth for all TQM-QG physics validation",
     "last_updated": "2026-08-22",
-    "phases_count": 202,
+    "phases_count": 203,
     "note": "Historical entries are never removed. Additive updates only."
   },
   "coverage": {
-    "total_phases": 202,
+    "total_phases": 203,
     "tested": 188,
     "partial": 12,
     "untested": 0,
-    "audit": 2,
-    "weighted_coverage": 0.9629,
+    "audit": 3,
+    "weighted_coverage": 0.9594,
     "domains": {
       "cosmology": {
         "tested": 1,
@@ -53,8 +53,8 @@
         "tested": 11,
         "partial": 0,
         "untested": 0,
-        "audit": 1,
-        "total": 12
+        "audit": 2,
+        "total": 13
       },
       "psi": {
         "tested": 7,
@@ -203,8 +203,8 @@
     },
     {
       "question": "Collider test of sector-ladder physics (energy-ladder rung states)",
-      "phase": "QG130",
-      "status": "PREDICTED-NO-DATA"
+      "phase": "QG130/QG192/QG200",
+      "status": "PREDICTED-NO-DATA (QG200 audit: 151.98 rung SUPPORTED by ~152 GeV excess, arXiv:2503.16245; 8 rungs PENDING, none falsified)"
     },
     {
       "question": "Exact origin of the Bekenstein 1/4 coefficient: QG196 PROVES IMPOSSIBLE within D96/TRM without fitting and without importing π — the required bits-per-cell is π, and 1/occ₀=1/4 is wrong-units (1/(16π)); the exact 1/4 is a quantum/geometric statement requiring the imported 2π factor",
@@ -255,8 +255,8 @@
     },
     {
       "prediction": "Sector-ladder collider signatures (energy-ladder rung states)",
-      "phase": "QG130",
-      "status": "PREDICTED — no data; QG192 PRE-REGISTERED (9 rungs 106.4–263.4 GeV, CONFIRMED within 5% of frozen rung)"
+      "phase": "QG130/QG192/QG200",
+      "status": "PREDICTED — no data; QG192 PRE-REGISTERED (9 rungs 106.4–263.4 GeV); QG200 EVIDENCE AUDIT: CONFIRMED 3 (SM anchors Z/H/t), SUPPORTED 1 (151.98 = ~152 GeV excess, local 3.6σ/global up to 5.4σ, arXiv:2503.16245), PENDING 8, DISFAVORED 0, FALSIFIED 0"
     },
     {
       "prediction": "0νββ rate: m_ββ = 2.02e-3 eV (Majorana neutrino)",
@@ -512,8 +512,8 @@
     {
       "name": "collider sector-ladder signatures",
       "status": "untested",
-      "phase": "QG130",
-      "detail": "predicted, no data"
+      "phase": "QG130/QG192/QG200",
+      "detail": "predicted, no data; QG192 PRE-REGISTERED 9 rungs; QG200 evidence audit: CONFIRMED 3 (SM anchors), SUPPORTED 1 (151.98 = ~152 GeV excess, arXiv:2503.16245), PENDING 8, FALSIFIED 0"
     }
   ],
   "gr_topics": [
@@ -2200,6 +2200,14 @@
       "domain": "predictions",
       "validation": "audit",
       "key_result": "P1 status re-audited (evidence-only, cited): PENDING — the 99–114 GeV window is neither confirmed nor excluded; classic low-mass scalar excesses persist at ~95 GeV (CMS 2.9σ, ATLAS 1.7σ, combined γγ 3.1σ, LEP bb̄ 2.3σ) = the 91.19 GeV rung not P1 (−10.4%); NEW ~152 GeV diphoton excess (local 3.6σ, global up to 5.4σ, arXiv:2503.16245) aligns with the NEXT ladder rung 151.98 GeV (0.01% dev, P3 not P1); null searches in the window (CMS 15–73 fb, ATLAS 19–102 fb) do NOT exclude P1 (suppressed couplings allowed); LEP2 114.4 GeV bound is SM-coupling only; HL-LHC (3000 fb⁻¹) projects 1–3 fb → decisive; registry outcome unchanged (PENDING)"
+    },
+    {
+      "phase": 201,
+      "file": "TQMQG_SectorLadderEvidenceAudit.md",
+      "classification": "SECTOR LADDER EVIDENCE AUDIT",
+      "domain": "predictions",
+      "validation": "audit",
+      "key_result": "frozen 12-rung ladder (QG192) vs ATLAS/CMS/LEP record (evidence-only, cited): CONFIRMED 3 (SM anchors 91.19 Z, 121.59 H, 167.18 t — within 5% tolerance), SUPPORTED 1 (151.98 rung = the combined ~152 GeV diphoton excess, local 3.6σ / global up to 5.4σ, arXiv:2503.16245, 0.01% dev), PENDING 8 (106.39 PRIMARY, 136.78, 182.38, 197.58, 212.78, 227.97, 243.17, 263.43 — no excess, not excluded); DISFAVORED 0, FALSIFIED 0; LEP2 114.4 GeV bound is SM-coupling only (does not constrain ladder); no predicted rung falsified"
     }
   ]
 }

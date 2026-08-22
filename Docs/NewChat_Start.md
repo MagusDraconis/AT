@@ -181,7 +181,8 @@ Open Questions:
 
 - the authoritative catalog of ALL unresolved physics questions is the QG198 Top-20 audit (Docs/Research/TQMQG_FinalOpenProblemsAudit.md), ranked by impact·3+feasibility·2+falsifiability·2; top item = 106 GeV resonance (P1, score 35), runner-up cluster = neutrino sector (SM1 exact masses, SM3 mass ordering, P2 0νββ, scores 31–33)
 - P1 (106 GeV) status after QG199: PENDING — window 99–114 GeV neither confirmed nor excluded; 95 GeV cluster = 91.19 rung; new 152 GeV excess = 151.98 rung (P3, not P1); HL-LHC decisive
-- key open items: exact neutrino mass values (QG172), quark running-scale/MS̄ conversion (QG173), 106 GeV resonance validation (QG132/QG188A/QG190/QG199), sector-ladder collider test (QG130/QG192), Hawking T with ψ≠0 (QG24), flat rotation-curve α=0 (G4-ME4), metric ansatz uniqueness (G4-A0), Bekenstein 1/4 (QG196, proven impossible without imported π)
+- sector ladder (P3) after QG200: 12 rungs audited — CONFIRMED 3 (SM anchors Z/H/t), SUPPORTED 1 (151.98 = ~152 GeV excess), PENDING 8, none falsified
+- key open items: exact neutrino mass values (QG172), quark running-scale/MS̄ conversion (QG173), 106 GeV resonance validation (QG132/QG188A/QG190/QG199), sector-ladder collider test (QG130/QG192/QG200), Hawking T with ψ≠0 (QG24), flat rotation-curve α=0 (G4-ME4), metric ansatz uniqueness (G4-A0), Bekenstein 1/4 (QG196, proven impossible without imported π)
 
 ## Status Table
 
@@ -460,10 +461,12 @@ QG198: final open problems audit (OPEN PROBLEMS AUDIT — Top-20 unresolved ques
 
 QG199: P1 evidence update (P1 EVIDENCE UPDATE — P1 remains PENDING: the 99–114 GeV window is neither confirmed nor excluded; classic low-mass scalar excesses persist at ~95 GeV [CMS 2.9σ, ATLAS 1.7σ, combined γγ 3.1σ, LEP bb̄ 2.3σ] = the 91.19 rung, not P1; NEW ~152 GeV diphoton excess [local 3.6σ, global up to 5.4σ, arXiv:2503.16245] aligns with the NEXT ladder rung 151.98 GeV [0.01% dev — P3, not P1]; null searches in the window [CMS 15–73 fb, ATLAS 19–102 fb] do NOT exclude P1; LEP2 114.4 GeV bound is SM-coupling only; HL-LHC 3000 fb⁻¹ projects 1–3 fb → decisive; registry outcome unchanged).
 
+QG200: sector ladder evidence audit (SECTOR LADDER EVIDENCE AUDIT — frozen 12-rung ladder QG192 vs ATLAS/CMS/LEP record: CONFIRMED 3 [SM anchors 91.19 Z, 121.59 H, 167.18 t, all within 5% tolerance], SUPPORTED 1 [151.98 rung = combined ~152 GeV diphoton excess, local 3.6σ / global up to 5.4σ, arXiv:2503.16245, 0.01% dev], PENDING 8 [106.39 PRIMARY, 136.78, 182.38, 197.58, 212.78, 227.97, 243.17, 263.43], DISFAVORED 0, FALSIFIED 0; LEP2 bound is SM-coupling only; no predicted rung falsified — the ladder scale is corroborated by its Z/H/t anchors).
+
 Milestone counters:
 
-TQM-QG 202 phases
-492+ TQM-QG tests verified
+TQM-QG 203 phases
+495+ TQM-QG tests verified
 
 ### QG154: Neutrino Sector Origin
 
@@ -487,5 +490,5 @@ NEUTRINO ORIGIN
 
 Milestone counters:
 
-TQM-QG 202 phases
-492+ TQM-QG tests verified
+TQM-QG 203 phases
+495+ TQM-QG tests verified

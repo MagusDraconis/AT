@@ -427,6 +427,8 @@ add(199,"TQMQG_FinalOpenProblemsAudit.md","OPEN PROBLEMS AUDIT","foundation","te
     "final unresolved-problem audit (Top-20): catalog of 20 open problems from coverage + prediction registry, excluding resolved/partial-resolved/audits; categories FOUNDATIONAL(2) GRAVITY(5) STANDARD MODEL(8) PREDICTION(5); ranked by impact·3+feasibility·2+falsifiability·2 → P1 106 GeV (35) > SM1 neutrino masses (33) > SM3 mass ordering (32) > P2 0νββ (31) > P3 ladder (30); priorities HIGH 5 / MEDIUM 10 / LOW 5; recommended next target = 106 GeV (LHC Run 3); runner-up cluster = neutrino sector (SM1/SM3/P2)")
 add(200,"TQMQG_P1EvidenceUpdate.md","P1 EVIDENCE UPDATE","predictions","audit",
     "P1 status re-audited (evidence-only, cited): PENDING — the 99–114 GeV window is neither confirmed nor excluded; classic low-mass scalar excesses persist at ~95 GeV (CMS 2.9σ, ATLAS 1.7σ, combined γγ 3.1σ, LEP bb̄ 2.3σ) = the 91.19 GeV rung not P1 (−10.4%); NEW ~152 GeV diphoton excess (local 3.6σ, global up to 5.4σ, arXiv:2503.16245) aligns with the NEXT ladder rung 151.98 GeV (0.01% dev, P3 not P1); null searches in the window (CMS 15–73 fb, ATLAS 19–102 fb) do NOT exclude P1 (suppressed couplings allowed); LEP2 114.4 GeV bound is SM-coupling only; HL-LHC (3000 fb⁻¹) projects 1–3 fb → decisive; registry outcome unchanged (PENDING)")
+add(201,"TQMQG_SectorLadderEvidenceAudit.md","SECTOR LADDER EVIDENCE AUDIT","predictions","audit",
+    "frozen 12-rung ladder (QG192) vs ATLAS/CMS/LEP record (evidence-only, cited): CONFIRMED 3 (SM anchors 91.19 Z, 121.59 H, 167.18 t — within 5% tolerance), SUPPORTED 1 (151.98 rung = the combined ~152 GeV diphoton excess, local 3.6σ / global up to 5.4σ, arXiv:2503.16245, 0.01% dev), PENDING 8 (106.39 PRIMARY, 136.78, 182.38, 197.58, 212.78, 227.97, 243.17, 263.43 — no excess, not excluded); DISFAVORED 0, FALSIFIED 0; LEP2 114.4 GeV bound is SM-coupling only (does not constrain ladder); no predicted rung falsified")
 
 # ── Observable-level SM audit (supersedes QG170's 25/9/14 with QG171-182 results) ──
 OBSERVABLES = [
@@ -470,7 +472,7 @@ OBSERVABLES = [
     dict(name="quark running-scale/MS̄ conversion", status="untested", phase="—", detail="D96 mass law at MS̄ scale open"),
     dict(name="mass ordering (ν)", status="partial", phase="QG179", detail="m1=0 normal ordering derived; experiment pending"),
     dict(name="106 GeV resonance", status="untested", phase="QG132/QG188A/QG190/QG199", detail="falsifiable prediction, not yet observed; INCONCLUSIVE evidence audit (95 GeV excess at 91.19 rung); PRE-REGISTERED window 99–114 GeV, central 106.39 GeV (QG190); QG199 P1 update: PENDING — no confirmed signal in window, limits 15–102 fb do not exclude; 152 GeV excess aligns with 151.98 rung (not P1); HL-LHC 3000 fb⁻¹ projects 1–3 fb"),
-    dict(name="collider sector-ladder signatures", status="untested", phase="QG130", detail="predicted, no data"),
+    dict(name="collider sector-ladder signatures", status="untested", phase="QG130/QG192/QG200", detail="predicted, no data; QG192 PRE-REGISTERED 9 rungs; QG200 evidence audit: CONFIRMED 3 (SM anchors), SUPPORTED 1 (151.98 = ~152 GeV excess, arXiv:2503.16245), PENDING 8, FALSIFIED 0"),
 ]
 
 # ── GR/relativity topic-level coverage (folds in the former GR topic audit) ──
@@ -540,7 +542,7 @@ OPEN_QUESTIONS = [
     dict(question="Experimental validation of the 106 GeV resonance (primary falsifiable prediction; QG188A audit: INCONCLUSIVE — 95 GeV excess at 91.19 rung, 106 GeV window neither confirmed nor excluded; QG199 P1 update: still PENDING — no confirmed signal in 99–114 GeV; new ~152 GeV excess aligns with the 151.98 rung, not P1; HL-LHC 3000 fb⁻¹ projects 1–3 fb, decisive)",
          phase="QG132/QG188A/QG190/QG199", status="FALSIFIABLE-PENDING"),
     dict(question="Collider test of sector-ladder physics (energy-ladder rung states)",
-         phase="QG130", status="PREDICTED-NO-DATA"),
+         phase="QG130/QG192/QG200", status="PREDICTED-NO-DATA (QG200 audit: 151.98 rung SUPPORTED by ~152 GeV excess, arXiv:2503.16245; 8 rungs PENDING, none falsified)"),
     dict(question="Exact origin of the Bekenstein 1/4 coefficient: QG196 PROVES IMPOSSIBLE within D96/TRM without fitting and without importing π — the required bits-per-cell is π, and 1/occ₀=1/4 is wrong-units (1/(16π)); the exact 1/4 is a quantum/geometric statement requiring the imported 2π factor",
          phase="QG12/QG13/QG184/QG185/QG196", status="PARTIALLY-OPEN (proven impossible without imported π)"),
     dict(question="ψ/Weyl field: new fundamental primitive (capacity FORCED by link completeness QG56; excitation mechanism DERIVED QG57; existence observationally required QG47) — PARTIALLY SOLVED, see TQMQG_PsiOriginAudit.md",
@@ -562,7 +564,7 @@ OPEN_QUESTIONS = [
 # ── Predictions ──
 PREDICTIONS = [
     dict(prediction="106 GeV resonance (scalar sector transition)", phase="QG132", status="FALSIFIABLE — not yet observed; QG188A audit INCONCLUSIVE; QG190 PRE-REGISTERED window 99–114 GeV"),
-    dict(prediction="Sector-ladder collider signatures (energy-ladder rung states)", phase="QG130", status="PREDICTED — no data; QG192 PRE-REGISTERED (9 rungs 106.4–263.4 GeV, CONFIRMED within 5% of frozen rung)"),
+    dict(prediction="Sector-ladder collider signatures (energy-ladder rung states)", phase="QG130/QG192/QG200", status="PREDICTED — no data; QG192 PRE-REGISTERED (9 rungs 106.4–263.4 GeV); QG200 EVIDENCE AUDIT: CONFIRMED 3 (SM anchors Z/H/t), SUPPORTED 1 (151.98 = ~152 GeV excess, local 3.6σ/global up to 5.4σ, arXiv:2503.16245), PENDING 8, DISFAVORED 0, FALSIFIED 0"),
     dict(prediction="0νββ rate: m_ββ = 2.02e-3 eV (Majorana neutrino)", phase="QG179/QG191", status="PREDICTED — awaiting experiment; QG191 PRE-REGISTERED (CONFIRMED ±10%, FALSIFIED below 2.02 meV)"),
     dict(prediction="Gravitational redshift WITHOUT lensing in conformal (ψ=0) sector", phase="QG21", status="FALSIFIABLE — differs from GR"),
     dict(prediction="Curvature-sourced Poisson equation (source = ρ″, not density value)", phase="G4-O0", status="TQM-SPECIFIC — testable in principle"),

@@ -3,9 +3,9 @@
 **Single source of truth for all TQM-QG physics validation.**
 
 - Last updated: 2026-08-22
-- Total phases: 202
-- Tested: 188 | Partial: 12 | Untested: 0 | Audit: 2
-- Weighted coverage: 96.3%
+- Total phases: 203
+- Tested: 188 | Partial: 12 | Untested: 0 | Audit: 3
+- Weighted coverage: 95.9%
 
 > Maintenance rule: whenever a QG phase completes, scan its classification, update
 > tested/partial/untested, contradictions, open questions, predictions, and statistics.
@@ -17,12 +17,12 @@
 
 | Metric | Value |
 |---|---|
-| Phases total | 202 |
+| Phases total | 203 |
 | Tested | 188 |
 | Partially tested | 12 |
 | Untested | 0 |
-| Audit (QG170) | 2 |
-| Weighted coverage | 96.3% |
+| Audit (QG170) | 3 |
+| Weighted coverage | 95.9% |
 | SM tested | 49 |
 | Gravity tested | 29 |
 
@@ -49,7 +49,7 @@
 | Foundations | 17 | 0 | 0 | 0 | 17 |
 | Gravity / GR | 29 | 2 | 0 | 0 | 31 |
 | Network & Spectrum | 42 | 0 | 0 | 0 | 42 |
-| Predictions | 11 | 0 | 0 | 1 | 12 |
+| Predictions | 11 | 0 | 0 | 2 | 13 |
 | ψ / Tensor Sector | 7 | 0 | 0 | 0 | 7 |
 | Quantum Mechanics | 11 | 0 | 0 | 0 | 11 |
 | Standard Model | 49 | 9 | 0 | 1 | 59 |
@@ -78,7 +78,7 @@
 | Exact neutrino mass values m1,m2,m3 (splittings derived QG172; m1=0 normal ordering) | QG172 | OPEN |
 | Quark absolute mass running-scale/MS̄ conversion of the D96 mass law | QG173 | OPEN |
 | Experimental validation of the 106 GeV resonance (primary falsifiable prediction; QG188A audit: INCONCLUSIVE — 95 GeV excess at 91.19 rung, 106 GeV window neither confirmed nor excluded; QG199 P1 update: still PENDING — no confirmed signal in 99–114 GeV; new ~152 GeV excess aligns with the 151.98 rung, not P1; HL-LHC 3000 fb⁻¹ projects 1–3 fb, decisive) | QG132/QG188A/QG190/QG199 | FALSIFIABLE-PENDING |
-| Collider test of sector-ladder physics (energy-ladder rung states) | QG130 | PREDICTED-NO-DATA |
+| Collider test of sector-ladder physics (energy-ladder rung states) | QG130/QG192/QG200 | PREDICTED-NO-DATA (QG200 audit: 151.98 rung SUPPORTED by ~152 GeV excess, arXiv:2503.16245; 8 rungs PENDING, none falsified) |
 | Exact origin of the Bekenstein 1/4 coefficient: QG196 PROVES IMPOSSIBLE within D96/TRM without fitting and without importing π — the required bits-per-cell is π, and 1/occ₀=1/4 is wrong-units (1/(16π)); the exact 1/4 is a quantum/geometric statement requiring the imported 2π factor | QG12/QG13/QG184/QG185/QG196 | PARTIALLY-OPEN (proven impossible without imported π) |
 | ψ/Weyl field: new fundamental primitive (capacity FORCED by link completeness QG56; excitation mechanism DERIVED QG57; existence observationally required QG47) — PARTIALLY SOLVED, see TQMQG_PsiOriginAudit.md | QG23/24/47/52/54/56/57 | PARTIALLY-SOLVED |
 | Matter = deficit: RESOLVED by QG194 (DEFICIT ORIGIN) — the actualization deficit IS the energy deficit (QG89), carries rest mass, is exactly conserved (Noether), and is the unique linear form (G4-ME5) | G4-ME/QG194 | RESOLVED |
@@ -95,7 +95,7 @@
 | Prediction | Phase | Status |
 |---|---|---|
 | 106 GeV resonance (scalar sector transition) | QG132 | FALSIFIABLE — not yet observed; QG188A audit INCONCLUSIVE; QG190 PRE-REGISTERED window 99–114 GeV |
-| Sector-ladder collider signatures (energy-ladder rung states) | QG130 | PREDICTED — no data; QG192 PRE-REGISTERED (9 rungs 106.4–263.4 GeV, CONFIRMED within 5% of frozen rung) |
+| Sector-ladder collider signatures (energy-ladder rung states) | QG130/QG192/QG200 | PREDICTED — no data; QG192 PRE-REGISTERED (9 rungs 106.4–263.4 GeV); QG200 EVIDENCE AUDIT: CONFIRMED 3 (SM anchors Z/H/t), SUPPORTED 1 (151.98 = ~152 GeV excess, local 3.6σ/global up to 5.4σ, arXiv:2503.16245), PENDING 8, DISFAVORED 0, FALSIFIED 0 |
 | 0νββ rate: m_ββ = 2.02e-3 eV (Majorana neutrino) | QG179/QG191 | PREDICTED — awaiting experiment; QG191 PRE-REGISTERED (CONFIRMED ±10%, FALSIFIED below 2.02 meV) |
 | Gravitational redshift WITHOUT lensing in conformal (ψ=0) sector | QG21 | FALSIFIABLE — differs from GR |
 | Curvature-sourced Poisson equation (source = ρ″, not density value) | G4-O0 | TQM-SPECIFIC — testable in principle |
@@ -166,7 +166,7 @@ incorporating QG171-182 results.
 | quark running-scale/MS̄ conversion | untested | — | D96 mass law at MS̄ scale open |
 | mass ordering (ν) | partial | QG179 | m1=0 normal ordering derived; experiment pending |
 | 106 GeV resonance | untested | QG132/QG188A/QG190/QG199 | falsifiable prediction, not yet observed; INCONCLUSIVE evidence audit (95 GeV excess at 91.19 rung); PRE-REGISTERED window 99–114 GeV, central 106.39 GeV (QG190); QG199 P1 update: PENDING — no confirmed signal in window, limits 15–102 fb do not exclude; 152 GeV excess aligns with 151.98 rung (not P1); HL-LHC 3000 fb⁻¹ projects 1–3 fb |
-| collider sector-ladder signatures | untested | QG130 | predicted, no data |
+| collider sector-ladder signatures | untested | QG130/QG192/QG200 | predicted, no data; QG192 PRE-REGISTERED 9 rungs; QG200 evidence audit: CONFIRMED 3 (SM anchors), SUPPORTED 1 (151.98 = ~152 GeV excess, arXiv:2503.16245), PENDING 8, FALSIFIED 0 |
 
 ---
 
@@ -520,3 +520,4 @@ Historical entries are preserved; updates are additive.
 ### Predictions
 
 - **QG200** — P1 EVIDENCE UPDATE (audit) — P1 status re-audited (evidence-only, cited): PENDING — the 99–114 GeV window is neither confirmed nor excluded; classic low-mass scalar excesses persist at ~95 GeV (CMS 2.9σ, ATLAS 1.7σ, combined γγ 3.1σ, LEP bb̄ 2.3σ) = the 91.19 GeV rung not P1 (−10.4%); NEW ~152 GeV diphoton excess (local 3.6σ, global up to 5.4σ, arXiv:2503.16245) aligns with the NEXT ladder rung 151.98 GeV (0.01% dev, P3 not P1); null searches in the window (CMS 15–73 fb, ATLAS 19–102 fb) do NOT exclude P1 (suppressed couplings allowed); LEP2 114.4 GeV bound is SM-coupling only; HL-LHC (3000 fb⁻¹) projects 1–3 fb → decisive; registry outcome unchanged (PENDING) `TQMQG_P1EvidenceUpdate.md`
+- **QG201** — SECTOR LADDER EVIDENCE AUDIT (audit) — frozen 12-rung ladder (QG192) vs ATLAS/CMS/LEP record (evidence-only, cited): CONFIRMED 3 (SM anchors 91.19 Z, 121.59 H, 167.18 t — within 5% tolerance), SUPPORTED 1 (151.98 rung = the combined ~152 GeV diphoton excess, local 3.6σ / global up to 5.4σ, arXiv:2503.16245, 0.01% dev), PENDING 8 (106.39 PRIMARY, 136.78, 182.38, 197.58, 212.78, 227.97, 243.17, 263.43 — no excess, not excluded); DISFAVORED 0, FALSIFIED 0; LEP2 114.4 GeV bound is SM-coupling only (does not constrain ladder); no predicted rung falsified `TQMQG_SectorLadderEvidenceAudit.md`
