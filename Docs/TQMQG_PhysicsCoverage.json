@@ -3,16 +3,16 @@
     "file": "Docs/TQMQG_PhysicsCoverage.md|json",
     "purpose": "single source of truth for all TQM-QG physics validation",
     "last_updated": "2026-08-22",
-    "phases_count": 199,
+    "phases_count": 200,
     "note": "Historical entries are never removed. Additive updates only."
   },
   "coverage": {
-    "total_phases": 199,
-    "tested": 186,
+    "total_phases": 200,
+    "tested": 187,
     "partial": 12,
     "untested": 0,
     "audit": 1,
-    "weighted_coverage": 0.9661,
+    "weighted_coverage": 0.9663,
     "domains": {
       "cosmology": {
         "tested": 1,
@@ -36,11 +36,11 @@
         "total": 16
       },
       "gravity": {
-        "tested": 28,
+        "tested": 29,
         "partial": 2,
         "untested": 0,
         "audit": 0,
-        "total": 30
+        "total": 31
       },
       "network": {
         "tested": 42,
@@ -242,9 +242,9 @@
       "status": "OPEN"
     },
     {
-      "question": "2D native program: Einstein tensor ≡ 0 in d=2; 2D→3D bridge not in one report",
-      "phase": "G4-G0",
-      "status": "OPEN-BRIDGE"
+      "question": "2D native program: RESOLVED by QG197 (FULL BRIDGE) — ρ and the conformal ansatz g = ρ^(2/d)η are dimension-generic; the (d−2) factor connects the 2D degeneracy (G≡0) to the non-trivial d=3 Einstein structure (same ρ, analytic continuation, Bianchi-conserved)",
+      "phase": "G4-G0/QG197",
+      "status": "RESOLVED"
     }
   ],
   "predictions": [
@@ -2176,6 +2176,14 @@
       "domain": "gravity",
       "validation": "tested",
       "key_result": "impossibility proof: exact 1/4 in S=A/4 CANNOT be derived from D96/TRM without fitting and without importing π — structure (S∝A, M∝R, T∝1/R) fully derived; QG12 boundary counting gives S/A = ln2/(4π) = 0.055; deficit first-law 1/(8π) = 0.040; S/A = 1/4 forces b = π bits/cell (imported); 1/occ₀ = 1/4 is wrong-units (gives 1/(16π) ≈ 0.020, needs π = 1/4); strengthens QG185"
+    },
+    {
+      "phase": 198,
+      "file": "TQMQG_D2ToD3Bridge.md",
+      "classification": "FULL BRIDGE",
+      "domain": "gravity",
+      "validation": "tested",
+      "key_result": "native 2D program connects to d≥3 gravity: ρ and conformal ansatz g = ρ^(2/d)η are dimension-generic; Einstein tensor G_11=((d−1)(d−2)/2)(σ′)², G_ii=(d−2)[σ″+((d−3)/2)(σ′)²] analytic in d; the (d−2) factor is the bridge — zero at d=2 (G≡0, G4-G0 geometric identity), non-zero at d≥3 (G4-G2/G3); SAME ρ at d=3 → G_11=0.053, G_ii=0.416, conserved (Bianchi <1e-8), d≥3 derived (QG2); closes the G4-G0 OPEN-BRIDGE gap"
     }
   ]
 }

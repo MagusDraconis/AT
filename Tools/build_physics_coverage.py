@@ -421,6 +421,8 @@ add(196,"TQMQG_MatterSectorOrigin.md","MATTER ORIGIN","gravity","tested",
     "independent T_μν recovered WITHOUT defining T ≡ G/κ: matter sector = DEFICIT DUST T_μν = (ρ̄−ρ)·v_μ·v_ν (network stress = deficit mass ρ_m QG194, link energy = actualization deficit QG89, flow = native geodesics QG20-21); conserved (Noether deficit-mass conservation + geodesic flow); independent of G (built from ρ_m and v, NOT the metric geometry — escapes G4-G4 Lovelock obstruction); G = κT becomes a DYNAMICAL relation not an identity; resolves the 'G=κT is an identity' open question")
 add(197,"TQMQG_QuarterCoefficientOrigin.md","PARTIAL ORIGIN","gravity","tested",
     "impossibility proof: exact 1/4 in S=A/4 CANNOT be derived from D96/TRM without fitting and without importing π — structure (S∝A, M∝R, T∝1/R) fully derived; QG12 boundary counting gives S/A = ln2/(4π) = 0.055; deficit first-law 1/(8π) = 0.040; S/A = 1/4 forces b = π bits/cell (imported); 1/occ₀ = 1/4 is wrong-units (gives 1/(16π) ≈ 0.020, needs π = 1/4); strengthens QG185")
+add(198,"TQMQG_D2ToD3Bridge.md","FULL BRIDGE","gravity","tested",
+    "native 2D program connects to d≥3 gravity: ρ and conformal ansatz g = ρ^(2/d)η are dimension-generic; Einstein tensor G_11=((d−1)(d−2)/2)(σ′)², G_ii=(d−2)[σ″+((d−3)/2)(σ′)²] analytic in d; the (d−2) factor is the bridge — zero at d=2 (G≡0, G4-G0 geometric identity), non-zero at d≥3 (G4-G2/G3); SAME ρ at d=3 → G_11=0.053, G_ii=0.416, conserved (Bianchi <1e-8), d≥3 derived (QG2); closes the G4-G0 OPEN-BRIDGE gap")
 
 # ── Observable-level SM audit (supersedes QG170's 25/9/14 with QG171-182 results) ──
 OBSERVABLES = [
@@ -549,8 +551,8 @@ OPEN_QUESTIONS = [
          phase="QG24", status="OPEN"),
     dict(question="Flat rotation-curve α=0: SEMI-NATURAL, symmetry assumption not derived",
          phase="G4-ME4", status="OPEN"),
-    dict(question="2D native program: Einstein tensor ≡ 0 in d=2; 2D→3D bridge not in one report",
-         phase="G4-G0", status="OPEN-BRIDGE"),
+    dict(question="2D native program: RESOLVED by QG197 (FULL BRIDGE) — ρ and the conformal ansatz g = ρ^(2/d)η are dimension-generic; the (d−2) factor connects the 2D degeneracy (G≡0) to the non-trivial d=3 Einstein structure (same ρ, analytic continuation, Bianchi-conserved)",
+         phase="G4-G0/QG197", status="RESOLVED"),
 ]
 
 # ── Predictions ──

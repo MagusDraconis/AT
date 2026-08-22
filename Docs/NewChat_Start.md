@@ -236,6 +236,7 @@ Open Questions:
 | Matter Deficit Origin | QG194 | DEFICIT ORIGIN (matter = ρ̄−ρ DERIVED not postulated: the actualization deficit IS the energy deficit [QG89 energy = actualization rate ⇒ E_def = m]; carries rest mass [E=mc² QG89]; EXACTLY conserved [Noether count: ∫m dV = ρ̄V−∫ρ dV = 0.529249 exact]; unique form [gradient-source identity a=+(1/d)∇m/ρ ⇒ ∇m=−∇ρ ⇒ m=ρ̄−ρ, G4-ME5]; closes the "matter = deficit is a hypothesis" open question — no new primitives) |
 | Matter Sector Origin | QG195 | MATTER ORIGIN (independent T_μν recovered WITHOUT defining T ≡ G/κ: matter sector = DEFICIT DUST T_μν = (ρ̄−ρ)·v_μ·v_ν [network stress = deficit mass ρ_m=ρ̄−ρ QG194; link energy = actualization deficit QG89; flow = native geodesics QG20-21]; conserved [Noether deficit-mass conservation + geodesic flow]; independent of G [built from ρ_m and v, NOT the metric geometry — escapes G4-G4 Lovelock obstruction]; G = κT becomes a DYNAMICAL relation [deficit sources curvature], not an identity; resolves the "G=κT is an identity" open question) |
 | Quarter Coefficient Origin | QG196 | PARTIAL ORIGIN (impossibility proof: exact 1/4 in S=A/4 CANNOT be derived from D96/TRM without fitting and without importing π — structure [S∝A, M∝R, T∝1/R] fully derived; QG12 boundary counting gives S/A = ln2/(4π) = 0.055; deficit first-law gives 1/(8π) = 0.040; S/A = 1/4 forces b = π bits/cell [imported]; 1/occ₀ = 1/4 is a wrong-units coincidence [gives 1/(16π) ≈ 0.020 physical, needs π = 1/4]; STRENGTHENS QG185 from "2π missing" to "proven impossible") |
+| 2D To 3D Bridge | QG197 | FULL BRIDGE (native 2D program connects to d≥3 gravity: the counting measure ρ and the conformal ansatz g = ρ^(2/d)η are DIMENSION-GENERIC; Einstein tensor G_11 = ((d−1)(d−2)/2)(σ′)², G_ii = (d−2)[σ″+((d−3)/2)(σ′)²] analytic in d; the (d−2) factor is THE BRIDGE — zero at d=2 [G≡0, G4-G0 geometric identity], non-zero at d≥3 [G4-G2/G3]; SAME ρ at d=3 → G_11=0.053, G_ii=0.416, conserved [Bianchi <1e-8], d≥3 derived [QG2]; closes the G4-G0 OPEN-BRIDGE gap — no new primitives) |
 | 106 GeV Resonance (validation) | QG132 | FALSIFIABLE PREDICTION (not yet observed) |
 | Collider Test of Sector-Ladder | QG130 | PREDICTED (no data yet) |
 | Sector Exponent Law p(Q,T3) | QG147 | HISTORICAL (overfit) — superseded by QG149 |
@@ -292,6 +293,7 @@ D96 Automorphisms (D96 = ⟨r,s⟩)
 → Matter deficit origin (QG194): matter = ρ̄−ρ DERIVED, not postulated — the actualization deficit IS the energy deficit (QG89 energy = actualization rate ⇒ E_def = m), carries rest mass (E=mc²), EXACTLY conserved (Noether: ∫m dV = ρ̄V−∫ρ dV exact), unique form (gradient-source identity ⇒ m = ρ̄−ρ, G4-ME5); closes the "matter = deficit is a hypothesis" open question; no new primitives
 → Matter sector origin (QG195): independent T_μν recovered WITHOUT defining T ≡ G/κ — the matter sector is the DEFICIT DUST T_μν = (ρ̄−ρ)·v_μ·v_ν (network stress = deficit mass ρ_m, link energy = actualization deficit QG89, flow = native geodesics QG20-21); conserved (Noether deficit-mass conservation + geodesic flow); independent of G (built from ρ_m and v, NOT the metric geometry — escapes the G4-G4 Lovelock obstruction that forces geometry-only tensors to G/κ); G = κT becomes a DYNAMICAL relation (deficit sources curvature), not an identity; resolves the "G=κT is an identity" open question; no new primitives
 → Quarter coefficient origin (QG196): IMPOSSIBILITY PROOF — the exact 1/4 in S = A/4 cannot be derived from D96/TRM without fitting and without importing π: QG12 boundary counting gives S/A = ln2/(4π) ≈ 0.055, deficit first-law gives 1/(8π) ≈ 0.040, and S/A = 1/4 forces b = π bits/cell (imported); 1/occ₀ = 1/4 is a wrong-units coincidence (gives 1/(16π) ≈ 0.020 physical, needs π = 1/4); structure fully derived, coefficient proven impossible; PARTIAL ORIGIN (strengthens QG185)
+→ 2D→3D bridge (QG197): FULL BRIDGE — the native 2D program's ρ and conformal ansatz g = ρ^(2/d)η are dimension-generic; the Einstein tensor is analytic in d with the (d−2) factor the bridge (G≡0 at d=2 [G4-G0 geometric identity], G≠0 at d=3 [G4-G2/G3]); SAME ρ at d=3 gives G_11=0.053, G_ii=0.416, conserved (Bianchi <1e-8), d≥3 derived (QG2); closes the G4-G0 OPEN-BRIDGE gap; no new primitives
 → Higgs = collective occupation-density scalar
 
 Fermions:
@@ -453,10 +455,12 @@ QG195: matter sector origin (MATTER ORIGIN — independent T_μν = deficit dust
 
 QG196: quarter coefficient origin (PARTIAL ORIGIN — impossibility proof: exact 1/4 needs imported π, not derivable from D96/TRM).
 
+QG197: 2D→3D bridge (FULL BRIDGE — dimension-generic conformal ansatz; the (d−2) factor connects 2D degeneracy to 3D Einstein structure).
+
 Milestone counters:
 
-TQM-QG 199 phases
-483+ TQM-QG tests verified
+TQM-QG 200 phases
+486+ TQM-QG tests verified
 
 ### QG154: Neutrino Sector Origin
 
@@ -480,5 +484,5 @@ NEUTRINO ORIGIN
 
 Milestone counters:
 
-TQM-QG 199 phases
-483+ TQM-QG tests verified
+TQM-QG 200 phases
+486+ TQM-QG tests verified
