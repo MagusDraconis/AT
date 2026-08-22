@@ -1,0 +1,77 @@
+@page "/validation/predictions"
+@layout ValidationLayout
+
+<PageTitle>Prediction Registry · Validation · TQM</PageTitle>
+
+<div class="page-section">
+    <h3 class="section-heading">Prediction Registry</h3>
+    <p class="muted">The immutable record of the three pre-registered predictions. No future phase may modify a registered prediction — only CONFIRMED, DISFAVORED, or FALSIFIED may be added later.</p>
+
+    @if (_registry is null)
+    {
+        <MudProgressCircular Indeterminate="true" Size="Size.Medium" Class="mt-4" />
+    }
+    else
+    {
+        <MudCard Elevation="1" Class="theory-card mb-4">
+            <MudCardContent>
+                <MudText Typo="Typo.body2" Class="muted">
+                    <span class="status-chip status-tested me-2">@(_registry.Immutable ? "IMMUTABLE" : "MUTABLE")</span>
+                    @_registry.Rule
+                </MudText>
+            </MudCardContent>
+        </MudCard>
+
+        @foreach (var p in _registry.Predictions)
+        {
+            <div class="page-section">
+                <h4 class="section-heading">@p.Id — @p.Name</h4>
+                <MudCard Elevation="1" Class="theory-card">
+                    <MudCardContent>
+                        <MudTable Items="@ToRows(p)" Hover="true" Dense="true">
+                            <HeaderContent><MudTh>Field</MudTh><MudTh>Value</MudTh></HeaderContent>
+                            <RowTemplate>
+                                <MudTd><span class="audit-cat">@context.Field</span></MudTd>
+                                <MudTd>@context.Value</MudTd>
+                            </RowTemplate>
+                        </MudTable>
+                        <div class="mt-2">
+                            <span class="status-chip @OutcomeClass(p.Outcome)">@(string.IsNullOrEmpty(p.Outcome) ? "PENDING" : p.Outcome)</span>
+                        </div>
+                    </MudCardContent>
+                </MudCard>
+            </div>
+        }
+    }
+</div>
+
+@code {
+    [Inject] private ValidationDataService ValidationDataService { get; set; } = default!;
+
+    private PredictionRegistryFile? _registry;
+
+    protected override async Task OnInitializedAsync()
+    {
+        _registry = await ValidationDataService.GetRegistryAsync();
+    }
+
+    private static IReadOnlyList<FieldRow> ToRows(RegisteredPredictionModel p) =>
+    [
+        new("Derivation phase", p.DerivationPhase),
+        new("Formula", p.Formula),
+        new("Inputs", p.Inputs),
+        new("Frozen value", p.FrozenValue),
+        new("Uncertainty", p.Uncertainty),
+        new("Falsification condition", p.Falsification),
+    ];
+
+    private static string OutcomeClass(string? outcome) => outcome?.ToUpperInvariant() switch
+    {
+        "CONFIRMED" => "status-tested",
+        "DISFAVORED" => "status-partial",
+        "FALSIFIED" => "status-untested",
+        _ => "status-partial",
+    };
+
+    private sealed record FieldRow(string Field, string Value);
+}

@@ -340,4 +340,23 @@ a { color: inherit; }
 .audit-limits { margin: 0; padding-left: 1.2rem; }
 .audit-limits li { margin-bottom: 0.55rem; }
 
+/* ── Validation section ─────────────────────────────────────────────────── */
+
+.validation-tabs {
+  display: flex; flex-wrap: wrap; gap: 0.35rem;
+  padding-bottom: 0.6rem; border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+.validation-tab {
+  display: inline-block; padding: 0.42rem 0.9rem; border-radius: 8px;
+  font-size: 0.8rem; font-weight: 600; letter-spacing: 0.02em;
+  color: #8B949E; text-decoration: none;
+  border: 1px solid rgba(255,255,255,0.08); background: rgba(255,255,255,0.02);
+  transition: all 0.15s ease;
+}
+.validation-tab:hover { color: #E6EDF3; border-color: rgba(100,181,246,0.5); }
+.validation-tab-active {
+  color: #0E1116; background: #64B5F6; border-color: #64B5F6;
+}
+.validation-tab-active:hover { color: #0E1116; }
+
 

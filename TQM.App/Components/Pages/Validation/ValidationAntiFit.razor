@@ -1,0 +1,111 @@
+@page "/validation/anti-fit"
+@layout ValidationLayout
+
+<PageTitle>Anti-Fit Audit · Validation · TQM</PageTitle>
+
+<div class="page-section">
+    <h3 class="section-heading">Anti-Fit Audit</h3>
+    <p class="muted">QG189 methodology audit of the QG140–QG188 derivation record. Each phase is classified by how its target was produced: a genuine prediction from primitives, a blind reconstruction, a dependent derivation, a retro-fit risk, or an overfit risk.</p>
+
+    <MudCard Elevation="1" Class="theory-card mb-4">
+        <MudCardContent>
+            <MudText Typo="Typo.subtitle1" Class="fw-bold">Risk classes</MudText>
+            <div class="mt-2">
+                <span class="status-chip status-tested me-2">PREDICTION</span> — target from D96 primitives, unique/unforced formula, target not consulted
+                <div class="mt-2"></div>
+                <span class="status-chip status-tested me-2">BLIND RECONSTRUCTION</span> — target explicitly hidden, rebuilt from the primitive base
+                <div class="mt-2"></div>
+                <span class="status-chip status-partial me-2">DEPENDENT DERIVATION</span> — uses an earlier phase result or external anchor (sound chain)
+                <div class="mt-2"></div>
+                <span class="status-chip status-untested me-2">RETRO-FIT RISK</span> — fitted parameter/formula chosen with the target visible
+                <div class="mt-2"></div>
+                <span class="status-chip status-untested me-2">OVERFIT RISK</span> — free parameters ≥ data points (saturated interpolation)
+            </div>
+        </MudCardContent>
+    </MudCard>
+
+    <div class="stat-row mb-4">
+        <div class="stat-tile"><div class="stat-value" style="color:#81C784">@_predictionCount</div><div class="stat-label">PREDICTION</div></div>
+        <div class="stat-tile"><div class="stat-value" style="color:#4DD0E1">@_blindCount</div><div class="stat-label">BLIND</div></div>
+        <div class="stat-tile"><div class="stat-value" style="color:#FFB74D">@_dependentCount</div><div class="stat-label">DEPENDENT</div></div>
+        <div class="stat-tile"><div class="stat-value" style="color:#E57373">@_retroFitCount</div><div class="stat-label">RETRO-FIT</div></div>
+        <div class="stat-tile"><div class="stat-value" style="color:#E57373">@_overfitCount</div><div class="stat-label">OVERFIT</div></div>
+        <div class="stat-tile"><div class="stat-value" style="color:#BA68C8">@_totalCount</div><div class="stat-label">Audited phases</div></div>
+    </div>
+
+    <MudTable Items="@_rows" Hover="true" Dense="true">
+        <HeaderContent>
+            <MudTh>Phase</MudTh>
+            <MudTh>Target</MudTh>
+            <MudTh>Risk level</MudTh>
+            <MudTh>Reason</MudTh>
+        </HeaderContent>
+        <RowTemplate>
+            <MudTd><span class="audit-phase">@context.Phase</span></MudTd>
+            <MudTd>@context.Target</MudTd>
+            <MudTd><span class="status-chip @RiskClass(context.RiskClass)">@context.RiskClass</span></MudTd>
+            <MudTd><span class="muted" style="font-size:0.8rem">@context.Reason</span></MudTd>
+        </RowTemplate>
+    </MudTable>
+
+    <MudCard Elevation="1" Class="theory-card mt-4">
+        <MudCardContent>
+            <MudText Typo="Typo.body2" Class="muted">
+                <strong>Findings:</strong> the only confirmed overfit is QG147 (3 parameters fit to 3 sectors),
+                caught by QG148's out-of-sample validation. Retro-fit risk is confined to the fitting era
+                (QG140, QG146, fitted exponents); both were superseded by QG141 (derived exponents) and QG149
+                (physical occupation-weighted origin). The structural era (QG149+) contains no fitted parameters,
+                and QG176/QG177 are the gold-standard blind reconstructions.
+            </MudText>
+        </MudCardContent>
+    </MudCard>
+</div>
+
+@code {
+    private int _predictionCount, _blindCount, _dependentCount, _retroFitCount, _overfitCount, _totalCount;
+    private IReadOnlyList<AntiFitRow> _rows = BuildRows();
+
+    protected override void OnInitialized()
+    {
+        _predictionCount = _rows.Count(r => r.RiskClass == "PREDICTION");
+        _blindCount = _rows.Count(r => r.RiskClass == "BLIND RECONSTRUCTION");
+        _dependentCount = _rows.Count(r => r.RiskClass == "DEPENDENT DERIVATION");
+        _retroFitCount = _rows.Count(r => r.RiskClass == "RETRO-FIT RISK");
+        _overfitCount = _rows.Count(r => r.RiskClass == "OVERFIT RISK");
+        _totalCount = _rows.Count;
+    }
+
+    private static string RiskClass(string risk) => risk switch
+    {
+        "PREDICTION" => "status-tested",
+        "BLIND RECONSTRUCTION" => "status-tested",
+        "DEPENDENT DERIVATION" => "status-partial",
+        _ => "status-untested",
+    };
+
+    private sealed record AntiFitRow(string Phase, string Target, string RiskClass, string Reason);
+
+    private static IReadOnlyList<AntiFitRow> BuildRows() =>
+    [
+        // Fitting era (QG140-148)
+        new("QG140", "lepton mass ratios {1,59,3468}", "RETRO-FIT RISK", "mass = A·center^p·modes^q, p≈7.69 fitted"),
+        new("QG141", "hierarchy exponents p_net=5.88", "DEPENDENT DERIVATION", "exponents derived from spectral density"),
+        new("QG142", "all generations", "PREDICTION", "leptons match 0.26%, quarks deviate — honest negative"),
+        new("QG143", "quark r31 factor", "DEPENDENT DERIVATION", "5 candidate factors tested"),
+        new("QG146", "quark hierarchy law", "RETRO-FIT RISK", "fitted p_eff = 8.13 / 4.90"),
+        new("QG147", "exponent vs (Q,T3)", "OVERFIT RISK", "3 params / 3 sectors = saturated interpolation"),
+        new("QG148", "out-of-sample generalization", "PREDICTION", "confirmed QG147 OVERFIT (honest audit)"),
+        new("QG149", "sector exponents (physical)", "PREDICTION", "occupation-weighted access replaces the fit"),
+        // Structural era (QG150-175, representative)
+        new("QG150-160", "mode access, N_eff, D96 selection", "PREDICTION", "structural D96 derivations, no fitted params"),
+        new("QG161-168", "gauge sector, couplings, MW/MZ", "PREDICTION", "1+3+8 from D96; v = (Σm+#d)·ln span"),
+        new("QG169", "MH = 125.25 GeV", "PREDICTION", "σ_occ·span/2 — no fitted masses"),
+        new("QG171-175", "g-2, neutrino masses, precision EW", "PREDICTION", "D96 moments, no fitted parameters"),
+        // Blind reconstructions
+        new("QG176", "MH (hidden)", "BLIND RECONSTRUCTION", "MH, ΓH, λ_H all hidden; rebuilt from pre-Higgs D96"),
+        new("QG177", "12 observables (each hidden)", "BLIND RECONSTRUCTION", "leave-one-out; mean dev 0.58%"),
+        // Dependent / gravity
+        new("QG173", "six quark masses", "DEPENDENT DERIVATION", "uses measured electron as the single anchor"),
+        new("QG181-187", "G, frame dragging, GPS", "PREDICTION", "D96-derived; measured J/Earth params as inputs"),
+    ];
+}

@@ -8,6 +8,12 @@ builder.Services.AddRazorComponents()
 
 builder.Services.AddMudServices();
 
+builder.Services.AddScoped(sp => new HttpClient
+{
+    BaseAddress = new Uri(sp.GetRequiredService<Microsoft.AspNetCore.Components.NavigationManager>().BaseUri)
+});
+builder.Services.AddScoped<TQM.App.Services.ValidationDataService>();
+
 var app = builder.Build();
 
 if (!app.Environment.IsDevelopment())
