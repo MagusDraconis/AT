@@ -3,16 +3,16 @@
     "file": "Docs/TQMQG_PhysicsCoverage.md|json",
     "purpose": "single source of truth for all TQM-QG physics validation",
     "last_updated": "2026-08-22",
-    "phases_count": 187,
+    "phases_count": 188,
     "note": "Historical entries are never removed. Additive updates only."
   },
   "coverage": {
-    "total_phases": 187,
-    "tested": 174,
+    "total_phases": 188,
+    "tested": 175,
     "partial": 12,
     "untested": 0,
     "audit": 1,
-    "weighted_coverage": 0.9639,
+    "weighted_coverage": 0.9641,
     "domains": {
       "cosmology": {
         "tested": 1,
@@ -36,11 +36,11 @@
         "total": 16
       },
       "gravity": {
-        "tested": 23,
+        "tested": 24,
         "partial": 2,
         "untested": 0,
         "audit": 0,
-        "total": 25
+        "total": 26
       },
       "network": {
         "tested": 42,
@@ -245,11 +245,6 @@
       "question": "2D native program: Einstein tensor ≡ 0 in d=2; 2D→3D bridge not in one report",
       "phase": "G4-G0",
       "status": "OPEN-BRIDGE"
-    },
-    {
-      "question": "Frame dragging / Lense-Thirring: listed as future Priority 2, no completed phase",
-      "phase": "—",
-      "status": "NOT-STARTED"
     },
     {
       "question": "GPS correction / gravitational time dilation: no dedicated test (only clock-rate in QG21)",
@@ -565,9 +560,9 @@
     },
     {
       "topic": "Frame dragging / Lense-Thirring",
-      "phase": "—",
-      "status": "untested",
-      "detail": "Future Priority 2 only"
+      "phase": "QG186",
+      "status": "tested",
+      "detail": "FRAME-DRAGGING ORIGIN: h_0i sector via ψ (ρ-only has h_0i=0); GP-B 41.1 vs 39.2 mas/yr, LAGEOS 30.7 vs ~31"
     },
     {
       "topic": "Black holes",
@@ -2090,6 +2085,14 @@
       "domain": "gravity",
       "validation": "partial",
       "key_result": "structure derived (S∝A QG12, M∝R QG184, T∝1/R QG184); deficit first-law gives S = A_cell/2 = A/(8π), not 1/4; exact 1/4 requires the 2π quantum factor T = κ/(2π) absent in D96/TRM (span/(2π)=1.019); 1/occ₀=1/4 is a label identity"
+    },
+    {
+      "phase": 186,
+      "file": "TQMQG_FrameDraggingOrigin.md",
+      "classification": "FRAME-DRAGGING ORIGIN",
+      "domain": "gravity",
+      "validation": "tested",
+      "key_result": "gravitomagnetic h_0i sector is a ψ-sector observable: conformally-flat ρ-only has h_0i=0 (no frame dragging); ψ spin-2 (QG44) restores linearized Einstein incl. h_0i; rotating deficit (matter=deficit G4ME) sources J; Ω_LT=G(3(J·r̂)r̂−J)/(2c²r³) → GP-B 41.1 vs 39.2 mas/yr, LAGEOS 30.7 vs ~31; D96 G (QG181) shifts <1%"
     }
   ]
 }
