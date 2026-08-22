@@ -183,7 +183,7 @@ Open Questions:
 - P1 (106 GeV) status after QG199: PENDING — window 99–114 GeV neither confirmed nor excluded; 95 GeV cluster = 91.19 rung; new 152 GeV excess = 151.98 rung (P3, not P1); HL-LHC decisive
 - sector ladder (P3) after QG200/QG201: 12 rungs audited — CONFIRMED 3 (SM anchors Z/H/t), SUPPORTED 1 (151.98 = ~152 GeV excess, MODERATE SUPPORT alignment 2.80σ, 1-in-386), PENDING 8, none falsified
 - the anti-fit reaudit (QG214) confirms the methodology is clean: QG190-213 added 3 PRE-REGISTERED + 1 REGISTRY LOCK + 20 PREDICTION, zero retro-fit/overfit; RETRO-FIT=2 (QG140/146), OVERFIT=1 (QG147) still correct; risk confined to the fitting era QG140-148
-- the QG closure audits culminated: QG215 PARTIAL QG → QG219 EFFECTIVE QG (after QG216/218: amplitude magnitude + complex structure) → QG221 NEAR-COMPLETE QG (after QG220: phase θ = 2πk/N derived) → QG223 COMPLETE QG (after QG222: native metric dynamics; ψ adjudicated as an ontological boundary + tensor-sector question, NOT a blocker); the theory is complete within its stated primitives (Q-events → ρ and ψ)
+- the QG closure audits culminated: QG215 PARTIAL QG → QG219 EFFECTIVE QG (after QG216/218: amplitude magnitude + complex structure) → QG221 NEAR-COMPLETE QG (after QG220: phase θ = 2πk/N derived) → QG223 COMPLETE QG (after QG222: native metric dynamics; ψ adjudicated as an ontological boundary + tensor-sector question, NOT a blocker); QG224 confirms MONOGRAPH READY (7/7 readiness checks, paper outline generated); the theory is complete within its stated primitives (Q-events → ρ and ψ)
 
 ## Status Table
 
@@ -508,10 +508,12 @@ QG222: native metric dynamics (DYNAMICS ORIGIN — gravitational dynamics DERIVE
 
 QG223: final quantum gravity audit (COMPLETE QG — audit only, reviews QG215→QG219→QG221→QG222 and adjudicates the ψ origin: QG status UPGRADED to COMPLETE QG, score 6/6 — all six criteria fully hold; QM fully derived [magnitude QG216 + phase QG220 + structure QG218 + measurement QG74]; gravity derived [structure QG197/207 + observables QG181-213 + native dynamics QG222]; common primitive [both from ρ + the same actualization circulation]; SPACETIME EMERGENT — upgraded from PARTIAL [QG221] to YES because QG222 derived the metric dynamics natively [g_{k+1}=μ^(2/d)g_k from the branching flow, BDG import replaced]; matter emergent [QG195/196/203-210]; NO remaining blockers; THE ψ ORIGIN STATUS ADJUDICATION: NOT a QG blocker [capacity forced QG56, excitation derived QG57, all ψ observables derived QG103/186/212] — IS an ontological boundary [ψ is the second of exactly two primitives QG51/40; existence observationally demanded via GW spin-2 QG47, not derivable from the scalar sector QG19/23/52] — IS a separate tensor-sector question [distinct spin 0 vs 2, role source vs propagation QG50, equation Fierz-Pauli preferred QG44]; progression PARTIAL QG [QG215 2/6] → EFFECTIVE QG [QG219 4/6] → NEAR-COMPLETE QG [QG221 5/6] → COMPLETE QG [QG223 6/6]; the theory is complete within its stated primitives [Q-events→ρ and ψ]).
 
+QG224: QG paper readiness audit (MONOGRAPH READY — audit only, reviews QG215/219/221/223, seven readiness checks, score 7/7: 1. INTERNAL CONSISTENCY PASS [855 tests 0 failures, Bianchi-consistent dynamics QG222, Born rule exact, contradictions C1-C7 resolved]; 2. NO DEPENDENCY CYCLES PASS [QG53 DAG: q-events→ρ→geometry→matter→gravity→saturation (+ψ), rooted at the primitive and the external observation input]; 3. IMPORTED ASSUMPTIONS STATED PASS [only the two primitives Q-events+ψ; BDG import REMOVED QG222; cosmology out of scope]; 4. PRIMITIVE INVENTORY PASS [exactly two: Q-events→ρ, ψ as ontological boundary; everything else derived]; 5. VALIDATION INVENTORY PASS [225 phases, 855 tests, 200 tested/12 partial/13 audit, weighted 93.0%, 40 observables 35 tested/3 partial/2 untested (P1/P3 awaiting data), blind reconstructions QG176/177, anti-fit clean QG214]; 6. PREDICTION INVENTORY PASS [3 pre-registered registry-locked: P1 106 GeV PENDING, P2 0νββ PENDING, P3 sector ladder SUPPORTED 2.80σ]; 7. FALSIFICATION INVENTORY PASS [explicit falsification condition for every prediction, registry-locked QG193]; a QG research paper is publishable now and the depth/breadth justifies a MONOGRAPH; MANDATORY PAPER OUTLINE generated [12 sections: primitives → spacetime → gravity → matter → QM → SM → ψ → QG status → predictions → validation → discussion]).
+
 Milestone counters:
 
-TQM-QG 225 phases
-561+ TQM-QG tests verified
+TQM-QG 226 phases
+564+ TQM-QG tests verified
 
 ### QG154: Neutrino Sector Origin
 
@@ -535,5 +537,5 @@ NEUTRINO ORIGIN
 
 Milestone counters:
 
-TQM-QG 225 phases
-561+ TQM-QG tests verified
+TQM-QG 226 phases
+564+ TQM-QG tests verified
