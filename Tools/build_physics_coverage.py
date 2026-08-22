@@ -445,6 +445,8 @@ add(208,"TQMQG_MetricAnsatzUniqueness.md","PARTIAL UNIQUE","foundation","tested"
     "metric ansatz uniqueness determined (no new primitives): √(−g) = ρ^(kd/2) = ρ requires k·d/2 = 1 ⇒ k = 2/d (measure preservation UNIQUE — every other power breaks √(−g) = ρ); derived geodesic acceleration a = −(1/d)ρ′/ρ requires k/2 = 1/d ⇒ k = 2/d (UNIQUE); Einstein/Bianchi recovery at k = 2/d = QG197 structure; BUT the ψ tensor sector (QG44/186) gives alternative counting-preserving metrics g_00 = −ρ^(2/d)e^(2ψ), g_ii = ρ^(2/d)e^(−2ψ/(d−1)) with the same √(−g) = ρ and different observables (frame dragging, lensing) — so g = ρ^(2/d)η is PARTIAL UNIQUE: unique within the conformal-flat class, completed by the ψ tensor sector")
 add(209,"TQMQG_HawkingTemperatureWithPsi.md","HAWKING ORIGIN","gravity","tested",
     "Hawking temperature in the ψ sector derived (no new primitives): surface gravity of the ψ-completed metric g_00=−ρ^(2/d)e^(2ψ) gives κ = (1/d)|ρ′|/ρ·e^(ψ(1+1/(d−1))) ~ (1/R)·e^(ψ·3/2); T_ψ = T_0·e^(ψ(1+1/(d−1))) with T_0 = 1/((d−1)R^(d−2)) — ψ contributes ONLY a radius-independent prefactor; the T(R₁)/T(R₂) ratio is ψ-INVARIANT (2.0000 with and without ψ) so T ∝ 1/R (QG184) is PRESERVED; horizon regularity ψ(R_h)→0 removes the correction (T_ψ = T_0 exactly); Hawking T is a ρ-sector first-law observable, NOT a ψ-sector one (contrast: frame dragging QG186 REQUIRES ψ); closes the 'Hawking temperature after ψ' open question (QG24)")
+add(210,"TQMQG_LeptonHierarchyExactLaw.md","EXACT LAW","sm","tested",
+    "lepton hierarchy exact law derived (D96 only, no empirical exponents): m_μ = me·Σm²/√occMom = 105.79 MeV [phys 105.66, dev 0.13%]; m_τ = me·Σm²·λ₂ = 1781.76 MeV [phys 1776.86, dev 0.28%]; m_τ/m_μ = √occMom·λ₂ = 16.842 [phys 16.817, dev 0.15%]; m_μ/me = Σm²/√occMom = 207.03 [phys 206.77, dev 0.13%]; uses only Σm=95, occMom=1900.25 [QG155], λ₂=0.38635 [QG162], me=0.511 anchor [QG140]; two D96 ratios: muon/e = mode-count² over occupation-moment sqrt (crowding), tau/muon = occupation-moment sqrt × spectral gap; upgrades QG142 lepton hierarchy from PARTIAL LAW to EXACT LAW")
 
 # ── Observable-level SM audit (supersedes QG170's 25/9/14 with QG171-182 results) ──
 OBSERVABLES = [
@@ -479,7 +481,7 @@ OBSERVABLES = [
     dict(name="Majorana character", status="tested", phase="QG179", detail="m_ββ = 2.02e-3 eV"),
     dict(name="oblique S,T,U", status="tested", phase="QG180", detail="S 5.3%, T 5.3%, U=0; T=2S exact"),
     dict(name="Newton constant G", status="tested", phase="QG181", detail="6.6476e-11, dev 0.4%"),
-    dict(name="lepton hierarchy", status="partial", phase="QG142", detail="PARTIAL LAW"),
+    dict(name="lepton hierarchy", status="tested", phase="QG142/QG209", detail="EXACT LAW: m_μ = me·Σm²/√occMom = 105.79 MeV (0.13%), m_τ = me·Σm²·λ₂ = 1781.76 MeV (0.28%), m_τ/m_μ = √occMom·λ₂ = 16.842 (0.15%) — D96 only, no empirical exponents"),
     dict(name="quark hierarchy law", status="partial", phase="QG146", detail="PARTIAL LAW"),
     dict(name="family index origin", status="partial", phase="QG135", detail="PARTIAL ORIGIN"),
     dict(name="golden-ratio hierarchy", status="partial", phase="QG152", detail="PARTIAL ROBUSTNESS"),

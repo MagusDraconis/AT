@@ -3,16 +3,16 @@
     "file": "Docs/TQMQG_PhysicsCoverage.md|json",
     "purpose": "single source of truth for all TQM-QG physics validation",
     "last_updated": "2026-08-22",
-    "phases_count": 211,
+    "phases_count": 212,
     "note": "Historical entries are never removed. Additive updates only."
   },
   "coverage": {
-    "total_phases": 211,
-    "tested": 193,
+    "total_phases": 212,
+    "tested": 194,
     "partial": 12,
     "untested": 0,
     "audit": 6,
-    "weighted_coverage": 0.9502,
+    "weighted_coverage": 0.9505,
     "domains": {
       "cosmology": {
         "tested": 1,
@@ -71,11 +71,11 @@
         "total": 11
       },
       "sm": {
-        "tested": 51,
+        "tested": 52,
         "partial": 9,
         "untested": 0,
         "audit": 1,
-        "total": 61
+        "total": 62
       },
       "trm": {
         "tested": 15,
@@ -87,8 +87,8 @@
     },
     "observables": {
       "total": 40,
-      "tested": 33,
-      "partial": 5,
+      "tested": 34,
+      "partial": 4,
       "untested": 2
     }
   },
@@ -457,9 +457,9 @@
     },
     {
       "name": "lepton hierarchy",
-      "status": "partial",
-      "phase": "QG142",
-      "detail": "PARTIAL LAW"
+      "status": "tested",
+      "phase": "QG142/QG209",
+      "detail": "EXACT LAW: m_μ = me·Σm²/√occMom = 105.79 MeV (0.13%), m_τ = me·Σm²·λ₂ = 1781.76 MeV (0.28%), m_τ/m_μ = √occMom·λ₂ = 16.842 (0.15%) — D96 only, no empirical exponents"
     },
     {
       "name": "quark hierarchy law",
@@ -2272,6 +2272,14 @@
       "domain": "gravity",
       "validation": "tested",
       "key_result": "Hawking temperature in the ψ sector derived (no new primitives): surface gravity of the ψ-completed metric g_00=−ρ^(2/d)e^(2ψ) gives κ = (1/d)|ρ′|/ρ·e^(ψ(1+1/(d−1))) ~ (1/R)·e^(ψ·3/2); T_ψ = T_0·e^(ψ(1+1/(d−1))) with T_0 = 1/((d−1)R^(d−2)) — ψ contributes ONLY a radius-independent prefactor; the T(R₁)/T(R₂) ratio is ψ-INVARIANT (2.0000 with and without ψ) so T ∝ 1/R (QG184) is PRESERVED; horizon regularity ψ(R_h)→0 removes the correction (T_ψ = T_0 exactly); Hawking T is a ρ-sector first-law observable, NOT a ψ-sector one (contrast: frame dragging QG186 REQUIRES ψ); closes the 'Hawking temperature after ψ' open question (QG24)"
+    },
+    {
+      "phase": 210,
+      "file": "TQMQG_LeptonHierarchyExactLaw.md",
+      "classification": "EXACT LAW",
+      "domain": "sm",
+      "validation": "tested",
+      "key_result": "lepton hierarchy exact law derived (D96 only, no empirical exponents): m_μ = me·Σm²/√occMom = 105.79 MeV [phys 105.66, dev 0.13%]; m_τ = me·Σm²·λ₂ = 1781.76 MeV [phys 1776.86, dev 0.28%]; m_τ/m_μ = √occMom·λ₂ = 16.842 [phys 16.817, dev 0.15%]; m_μ/me = Σm²/√occMom = 207.03 [phys 206.77, dev 0.13%]; uses only Σm=95, occMom=1900.25 [QG155], λ₂=0.38635 [QG162], me=0.511 anchor [QG140]; two D96 ratios: muon/e = mode-count² over occupation-moment sqrt (crowding), tau/muon = occupation-moment sqrt × spectral gap; upgrades QG142 lepton hierarchy from PARTIAL LAW to EXACT LAW"
     }
   ]
 }

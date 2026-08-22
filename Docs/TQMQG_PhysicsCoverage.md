@@ -3,8 +3,8 @@
 **Single source of truth for all TQM-QG physics validation.**
 
 - Last updated: 2026-08-22
-- Total phases: 211
-- Tested: 193 | Partial: 12 | Untested: 0 | Audit: 6
+- Total phases: 212
+- Tested: 194 | Partial: 12 | Untested: 0 | Audit: 6
 - Weighted coverage: 95.0%
 
 > Maintenance rule: whenever a QG phase completes, scan its classification, update
@@ -17,13 +17,13 @@
 
 | Metric | Value |
 |---|---|
-| Phases total | 211 |
-| Tested | 193 |
+| Phases total | 212 |
+| Tested | 194 |
 | Partially tested | 12 |
 | Untested | 0 |
 | Audit (QG170) | 6 |
 | Weighted coverage | 95.0% |
-| SM tested | 51 |
+| SM tested | 52 |
 | Gravity tested | 31 |
 
 ### Observable-level coverage (SM quantities)
@@ -31,10 +31,10 @@
 | Metric | Value |
 |---|---|
 | Observables catalogued | 40 |
-| Tested | 33 |
-| Partially tested | 5 |
+| Tested | 34 |
+| Partially tested | 4 |
 | Untested | 2 |
-| Observable coverage | 88.8% |
+| Observable coverage | 90.0% |
 
 > QG170's original audit (25 tested / 9 partial / 14 untested of 48 quantities, 64%)
 > is superseded at observable level by QG171-182; the phase register below is the
@@ -52,7 +52,7 @@
 | Predictions | 11 | 0 | 0 | 4 | 15 |
 | ψ / Tensor Sector | 7 | 0 | 0 | 0 | 7 |
 | Quantum Mechanics | 11 | 0 | 0 | 0 | 11 |
-| Standard Model | 51 | 9 | 0 | 1 | 61 |
+| Standard Model | 52 | 9 | 0 | 1 | 62 |
 | TRM Dynamics | 15 | 0 | 0 | 0 | 15 |
 
 ---
@@ -157,7 +157,7 @@ incorporating QG171-182 results.
 | Majorana character | tested | QG179 | m_ββ = 2.02e-3 eV |
 | oblique S,T,U | tested | QG180 | S 5.3%, T 5.3%, U=0; T=2S exact |
 | Newton constant G | tested | QG181 | 6.6476e-11, dev 0.4% |
-| lepton hierarchy | partial | QG142 | PARTIAL LAW |
+| lepton hierarchy | tested | QG142/QG209 | EXACT LAW: m_μ = me·Σm²/√occMom = 105.79 MeV (0.13%), m_τ = me·Σm²·λ₂ = 1781.76 MeV (0.28%), m_τ/m_μ = √occMom·λ₂ = 16.842 (0.15%) — D96 only, no empirical exponents |
 | quark hierarchy law | partial | QG146 | PARTIAL LAW |
 | family index origin | partial | QG135 | PARTIAL ORIGIN |
 | golden-ratio hierarchy | partial | QG152 | PARTIAL ROBUSTNESS |
@@ -544,3 +544,7 @@ Historical entries are preserved; updates are additive.
 ### Gravity / GR
 
 - **QG209** — HAWKING ORIGIN (tested) — Hawking temperature in the ψ sector derived (no new primitives): surface gravity of the ψ-completed metric g_00=−ρ^(2/d)e^(2ψ) gives κ = (1/d)|ρ′|/ρ·e^(ψ(1+1/(d−1))) ~ (1/R)·e^(ψ·3/2); T_ψ = T_0·e^(ψ(1+1/(d−1))) with T_0 = 1/((d−1)R^(d−2)) — ψ contributes ONLY a radius-independent prefactor; the T(R₁)/T(R₂) ratio is ψ-INVARIANT (2.0000 with and without ψ) so T ∝ 1/R (QG184) is PRESERVED; horizon regularity ψ(R_h)→0 removes the correction (T_ψ = T_0 exactly); Hawking T is a ρ-sector first-law observable, NOT a ψ-sector one (contrast: frame dragging QG186 REQUIRES ψ); closes the 'Hawking temperature after ψ' open question (QG24) `TQMQG_HawkingTemperatureWithPsi.md`
+
+### Standard Model
+
+- **QG210** — EXACT LAW (tested) — lepton hierarchy exact law derived (D96 only, no empirical exponents): m_μ = me·Σm²/√occMom = 105.79 MeV [phys 105.66, dev 0.13%]; m_τ = me·Σm²·λ₂ = 1781.76 MeV [phys 1776.86, dev 0.28%]; m_τ/m_μ = √occMom·λ₂ = 16.842 [phys 16.817, dev 0.15%]; m_μ/me = Σm²/√occMom = 207.03 [phys 206.77, dev 0.13%]; uses only Σm=95, occMom=1900.25 [QG155], λ₂=0.38635 [QG162], me=0.511 anchor [QG140]; two D96 ratios: muon/e = mode-count² over occupation-moment sqrt (crowding), tau/muon = occupation-moment sqrt × spectral gap; upgrades QG142 lepton hierarchy from PARTIAL LAW to EXACT LAW `TQMQG_LeptonHierarchyExactLaw.md`

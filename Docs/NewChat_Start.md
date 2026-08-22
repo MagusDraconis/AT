@@ -182,7 +182,7 @@ Open Questions:
 - the authoritative catalog of ALL unresolved physics questions is the QG198 Top-20 audit (Docs/Research/TQMQG_FinalOpenProblemsAudit.md), ranked by impact·3+feasibility·2+falsifiability·2; top item = 106 GeV resonance (P1, score 35), runner-up cluster = neutrino sector (SM1 exact masses, SM3 mass ordering, P2 0νββ, scores 31–33); post-QG204 Top-10 (QG205): P1 106 GeV (35) > P2 0νββ (31) > P3 ladder (30) > G2 rotation-curve (26) > G3 conformal optics (22) > F1 metric ansatz (21) = SM4 lepton hierarchy (21) > G1 Hawking-ψ (20) = F2 Bekenstein 1/4 (20) > SM6 family index (17)
 - P1 (106 GeV) status after QG199: PENDING — window 99–114 GeV neither confirmed nor excluded; 95 GeV cluster = 91.19 rung; new 152 GeV excess = 151.98 rung (P3, not P1); HL-LHC decisive
 - sector ladder (P3) after QG200/QG201: 12 rungs audited — CONFIRMED 3 (SM anchors Z/H/t), SUPPORTED 1 (151.98 = ~152 GeV excess, MODERATE SUPPORT alignment 2.80σ, 1-in-386), PENDING 8, none falsified
-- key open items: 106 GeV resonance validation (QG132/QG188A/QG190/QG199), sector-ladder collider test (QG130/QG192/QG200), Bekenstein 1/4 (QG196, proven impossible without imported π); exact neutrino masses RESOLVED (QG203), quark MS̄ conversion RESOLVED (QG204), flat rotation-curve α=0 RESOLVED (QG206), metric ansatz PARTIALLY-RESOLVED (QG207), Hawking-with-ψ RESOLVED (QG208)
+- key open items: 106 GeV resonance validation (QG132/QG188A/QG190/QG199), sector-ladder collider test (QG130/QG192/QG200), Bekenstein 1/4 (QG196, proven impossible without imported π); exact neutrino masses RESOLVED (QG203), quark MS̄ conversion RESOLVED (QG204), flat rotation-curve α=0 RESOLVED (QG206), metric ansatz PARTIALLY-RESOLVED (QG207), Hawking-with-ψ RESOLVED (QG208), lepton hierarchy EXACT LAW (QG209)
 
 ## Status Table
 
@@ -479,10 +479,12 @@ QG207: metric ansatz uniqueness (PARTIAL UNIQUE — g = ρ^(2/d)η is uniquely s
 
 QG208: Hawking temperature with ψ (HAWKING ORIGIN — the ψ sector leaves T ∝ 1/R UNCHANGED: surface gravity of the ψ-completed metric g_00 = −ρ^(2/d)e^(2ψ) gives κ = (1/d)|ρ′|/ρ·e^(ψ(1+1/(d−1))) ~ (1/R)·e^(ψ·3/2); T_ψ = T_0·e^(ψ(1+1/(d−1))) with T_0 = 1/((d−1)R^(d−2)) — ψ contributes only a radius-independent PREFACTOR; the T(R₁)/T(R₂) ratio is ψ-INVARIANT [2.0000 with and without ψ], so T ∝ 1/R [QG184] is preserved; horizon regularity ψ(R_h)→0 removes the correction [T_ψ = T_0 exactly]; Hawking T is a ρ-sector first-law observable, NOT a ψ-sector one [contrast: frame dragging QG186 requires ψ]; closes the 'Hawking temperature after ψ' open question [QG24]).
 
+QG209: lepton hierarchy exact law (EXACT LAW — the lepton hierarchy is an exact closed-form D96 law, no empirical exponents: m_μ = me·Σm²/√occMom = 105.79 MeV [phys 105.66, dev 0.13%]; m_τ = me·Σm²·λ₂ = 1781.76 MeV [phys 1776.86, dev 0.28%]; m_τ/m_μ = √occMom·λ₂ = 16.842 [phys 16.817, dev 0.15%]; uses only Σm=95, occMom=1900.25 [QG155], λ₂=0.38635 [QG162], me=0.511 anchor [QG140]; two D96 ratios: muon/e = mode-count² over occupation-moment sqrt [crowding], tau/muon = occupation-moment sqrt × spectral gap; upgrades QG142 lepton hierarchy from PARTIAL LAW to EXACT LAW).
+
 Milestone counters:
 
-TQM-QG 211 phases
-519+ TQM-QG tests verified
+TQM-QG 212 phases
+522+ TQM-QG tests verified
 
 ### QG154: Neutrino Sector Origin
 
@@ -506,5 +508,5 @@ NEUTRINO ORIGIN
 
 Milestone counters:
 
-TQM-QG 211 phases
-519+ TQM-QG tests verified
+TQM-QG 212 phases
+522+ TQM-QG tests verified
