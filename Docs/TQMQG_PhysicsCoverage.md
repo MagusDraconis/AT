@@ -3,9 +3,9 @@
 **Single source of truth for all TQM-QG physics validation.**
 
 - Last updated: 2026-08-22
-- Total phases: 212
-- Tested: 194 | Partial: 12 | Untested: 0 | Audit: 6
-- Weighted coverage: 95.0%
+- Total phases: 213
+- Tested: 195 | Partial: 12 | Untested: 0 | Audit: 6
+- Weighted coverage: 95.1%
 
 > Maintenance rule: whenever a QG phase completes, scan its classification, update
 > tested/partial/untested, contradictions, open questions, predictions, and statistics.
@@ -17,13 +17,13 @@
 
 | Metric | Value |
 |---|---|
-| Phases total | 212 |
-| Tested | 194 |
+| Phases total | 213 |
+| Tested | 195 |
 | Partially tested | 12 |
 | Untested | 0 |
 | Audit (QG170) | 6 |
-| Weighted coverage | 95.0% |
-| SM tested | 52 |
+| Weighted coverage | 95.1% |
+| SM tested | 53 |
 | Gravity tested | 31 |
 
 ### Observable-level coverage (SM quantities)
@@ -31,10 +31,10 @@
 | Metric | Value |
 |---|---|
 | Observables catalogued | 40 |
-| Tested | 34 |
-| Partially tested | 4 |
+| Tested | 35 |
+| Partially tested | 3 |
 | Untested | 2 |
-| Observable coverage | 90.0% |
+| Observable coverage | 91.2% |
 
 > QG170's original audit (25 tested / 9 partial / 14 untested of 48 quantities, 64%)
 > is superseded at observable level by QG171-182; the phase register below is the
@@ -52,7 +52,7 @@
 | Predictions | 11 | 0 | 0 | 4 | 15 |
 | ψ / Tensor Sector | 7 | 0 | 0 | 0 | 7 |
 | Quantum Mechanics | 11 | 0 | 0 | 0 | 11 |
-| Standard Model | 52 | 9 | 0 | 1 | 62 |
+| Standard Model | 53 | 9 | 0 | 1 | 63 |
 | TRM Dynamics | 15 | 0 | 0 | 0 | 15 |
 
 ---
@@ -159,7 +159,7 @@ incorporating QG171-182 results.
 | Newton constant G | tested | QG181 | 6.6476e-11, dev 0.4% |
 | lepton hierarchy | tested | QG142/QG209 | EXACT LAW: m_μ = me·Σm²/√occMom = 105.79 MeV (0.13%), m_τ = me·Σm²·λ₂ = 1781.76 MeV (0.28%), m_τ/m_μ = √occMom·λ₂ = 16.842 (0.15%) — D96 only, no empirical exponents |
 | quark hierarchy law | partial | QG146 | PARTIAL LAW |
-| family index origin | partial | QG135 | PARTIAL ORIGIN |
+| family index origin | tested | QG135/QG210 | EXACT ORIGIN: familyCount = floor(log2(span)) + 1 = 3 (span 6.4025); families 1,2,3 = octave bands [4,4,87]; no 4th because span < 8 |
 | golden-ratio hierarchy | partial | QG152 | PARTIAL ROBUSTNESS |
 | physical calibration ladder | partial | QG129 | PARTIAL MAPPING |
 | exact neutrino masses m1,m2,m3 | tested | QG172/QG203 | CLOSED-FORM D96: m1=0, m2=1/(Σ√m·√(span/2))=8.72 meV (0.02%), m3=√#g/(Σm·√2)=49.4 meV (0.06%), ratio=2Σm/(Σ√m·√(span·#g))=0.1766 exact; ABSOLUTE MASS ORIGIN, no oscillation-fit masses |
@@ -548,3 +548,4 @@ Historical entries are preserved; updates are additive.
 ### Standard Model
 
 - **QG210** — EXACT LAW (tested) — lepton hierarchy exact law derived (D96 only, no empirical exponents): m_μ = me·Σm²/√occMom = 105.79 MeV [phys 105.66, dev 0.13%]; m_τ = me·Σm²·λ₂ = 1781.76 MeV [phys 1776.86, dev 0.28%]; m_τ/m_μ = √occMom·λ₂ = 16.842 [phys 16.817, dev 0.15%]; m_μ/me = Σm²/√occMom = 207.03 [phys 206.77, dev 0.13%]; uses only Σm=95, occMom=1900.25 [QG155], λ₂=0.38635 [QG162], me=0.511 anchor [QG140]; two D96 ratios: muon/e = mode-count² over occupation-moment sqrt (crowding), tau/muon = occupation-moment sqrt × spectral gap; upgrades QG142 lepton hierarchy from PARTIAL LAW to EXACT LAW `TQMQG_LeptonHierarchyExactLaw.md`
+- **QG211** — EXACT ORIGIN (tested) — family index exact origin derived (D96 only, no fitted parameters): familyCount = floor(log2(span)) + 1 = floor(2.6786) + 1 = 3 with D96 span = 6.4025 (QG161); family = 1,2,3 are the three octave bands [4,4,87] modes [band 1 [ω_min,2ω_min) 4 modes, band 2 [2ω_min,4ω_min) 4, band 3 [4ω_min,8ω_min) 87]; NO FOURTH family because span 6.4025 < 8 (the 4th octave threshold; margin 1.5975 = 20%); the family index is the octave-band index — an exact D96 spectral identity; consistent with the lepton hierarchy (QG209) and gauge sector (QG161); upgrades QG135 PARTIAL ORIGIN to EXACT ORIGIN and closes the QG80 'why three generations' question `TQMQG_FamilyIndexExactOrigin.md`
