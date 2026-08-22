@@ -3,9 +3,9 @@
 **Single source of truth for all TQM-QG physics validation.**
 
 - Last updated: 2026-08-22
-- Total phases: 216
-- Tested: 196 | Partial: 12 | Untested: 0 | Audit: 8
-- Weighted coverage: 94.4%
+- Total phases: 217
+- Tested: 196 | Partial: 12 | Untested: 0 | Audit: 9
+- Weighted coverage: 94.1%
 
 > Maintenance rule: whenever a QG phase completes, scan its classification, update
 > tested/partial/untested, contradictions, open questions, predictions, and statistics.
@@ -17,12 +17,12 @@
 
 | Metric | Value |
 |---|---|
-| Phases total | 216 |
+| Phases total | 217 |
 | Tested | 196 |
 | Partially tested | 12 |
 | Untested | 0 |
-| Audit (QG170) | 8 |
-| Weighted coverage | 94.4% |
+| Audit (QG170) | 9 |
+| Weighted coverage | 94.1% |
 | SM tested | 53 |
 | Gravity tested | 32 |
 
@@ -46,7 +46,7 @@
 |---|---|---|---|---|---|
 | Cosmology | 1 | 0 | 0 | 0 | 1 |
 | High-Energy Sector | 6 | 1 | 0 | 0 | 7 |
-| Foundations | 18 | 0 | 0 | 3 | 21 |
+| Foundations | 18 | 0 | 0 | 4 | 22 |
 | Gravity / GR | 32 | 2 | 0 | 0 | 34 |
 | Network & Spectrum | 42 | 0 | 0 | 0 | 42 |
 | Predictions | 11 | 0 | 0 | 4 | 15 |
@@ -561,3 +561,4 @@ Historical entries are preserved; updates are additive.
 ### Foundations
 
 - **QG214** — ULTRA FRONTIER AUDIT (audit) — ultra frontier audit after QG212 (excluding resolved/partial-resolved/impossibility-closed: SM1 QG203, SM2 QG204, G2 QG206, F1 QG207, G1 QG208, SM4 QG209, SM6 QG210, G3 QG212, F2 Bekenstein 1/4 [QG196 impossibility proof]): theory completion ~95% (weighted 94.8%, phase 94.2%, observable 91.3%; 215 phases 196 tested/12 partial/7 audit); Top-10 frontier → P1 106 GeV (35) > P2 0νββ (31) > P3 ladder (30) > SM5 quark hierarchy (19) > F3 ψ origin (18) > P4 curvature-Poisson (17) > SM7 golden ratio (14) = SM8 calibration ladder (14) = P5 redshift partition (14) > F4 two primitives (12); PREDICTION 4 / SM 3 / FOUNDATIONAL 2 / GRAVITY 0; the frontier is PRIMARILY EXPERIMENTAL — top-3 are pre-registered predictions awaiting data; no gravity item remains; the derivation program is effectively complete `TQMQG_UltraFrontierAudit.md`
+- **QG215** — PREDICTION AUDIT (audit) — anti-fit reaudit 2 (methodology audit of QG140-213, comparing against QG189): QG190-213 (24 phases) = 3 PRE-REGISTERED (QG190/191/192, forbidden-input guards), 1 REGISTRY LOCK (QG193, ValuesUnchanged guard), 20 PREDICTION (derivations QG194-197/203-210/212 + audits QG198-202/205/211/213); ZERO retro-fit, ZERO overfit, ZERO fitted parameters in the new phases; updated totals QG140-213 (73 phases): PREDICTION 56, BLIND 2, PRE-REGISTERED 3, REGISTRY LOCK 1, DEPENDENT 8, RETRO-FIT 2 [QG140/146], OVERFIT 1 [QG147] — RETRO-FIT=2, OVERFIT=1 STILL CORRECT; risk confined to the fitting era QG140-148; structural era QG149-213 fit-free; the pre-registration program (QG190-193) is the strongest anti-fit evidence alongside QG176/177 blind tests `TQMQG_AntiFitReaudit2.md`

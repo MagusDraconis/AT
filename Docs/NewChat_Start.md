@@ -179,10 +179,10 @@ Oblique parameters origin (S = occ₀/Σm = 0.0421, T = 2S = 0.0842, U = 0; T = 
 
 Open Questions:
 
-- the authoritative catalog of ALL unresolved physics questions is the QG198 Top-20 audit (Docs/Research/TQMQG_FinalOpenProblemsAudit.md), ranked by impact·3+feasibility·2+falsifiability·2; top item = 106 GeV resonance (P1, score 35), runner-up cluster = neutrino sector (SM1 exact masses, SM3 mass ordering, P2 0νββ, scores 31–33); post-QG204 Top-10 (QG205): P1 106 GeV (35) > P2 0νββ (31) > P3 ladder (30) > G2 rotation-curve (26) > G3 conformal optics (22) > F1 metric ansatz (21) = SM4 lepton hierarchy (21) > G1 Hawking-ψ (20) = F2 Bekenstein 1/4 (20) > SM6 family index (17)
+- the authoritative frontier catalog is the QG213 ultra frontier audit (Docs/Research/TQMQG_UltraFrontierAudit.md): theory ~95% complete, frontier primarily experimental — Top-10 after QG212: P1 106 GeV (35) > P2 0νββ (31) > P3 ladder (30) > SM5 quark hierarchy (19) > F3 ψ origin (18) > P4 curvature-Poisson (17) > SM7 golden ratio (14) = SM8 calibration ladder (14) = P5 redshift partition (14) > F4 two primitives (12); no gravity item remains
 - P1 (106 GeV) status after QG199: PENDING — window 99–114 GeV neither confirmed nor excluded; 95 GeV cluster = 91.19 rung; new 152 GeV excess = 151.98 rung (P3, not P1); HL-LHC decisive
 - sector ladder (P3) after QG200/QG201: 12 rungs audited — CONFIRMED 3 (SM anchors Z/H/t), SUPPORTED 1 (151.98 = ~152 GeV excess, MODERATE SUPPORT alignment 2.80σ, 1-in-386), PENDING 8, none falsified
-- key open items: 106 GeV resonance validation (QG132/QG188A/QG190/QG199), sector-ladder collider test (QG130/QG192/QG200), ψ/Weyl origin (QG23/47/56/57, partial); the QG213 ultra frontier audit is authoritative (Top-10 after QG212, ~95% theory complete, frontier primarily experimental; G3 conformal optics RESOLVED by QG212)
+- the anti-fit reaudit (QG214) confirms the methodology is clean: QG190-213 added 3 PRE-REGISTERED + 1 REGISTRY LOCK + 20 PREDICTION, zero retro-fit/overfit; RETRO-FIT=2 (QG140/146), OVERFIT=1 (QG147) still correct; risk confined to the fitting era QG140-148
 
 ## Status Table
 
@@ -489,10 +489,12 @@ QG212: conformal optics resolution (OPTICS RESOLVED — the conformal-optics fro
 
 QG213: ultra frontier audit (ULTRA FRONTIER AUDIT — frontier after QG212, excluding resolved/partial-resolved/impossibility-closed [SM1 QG203, SM2 QG204, G2 QG206, F1 QG207, G1 QG208, SM4 QG209, SM6 QG210, G3 QG212, F2 Bekenstein 1/4 via QG196 impossibility proof]: theory completion ~95% [weighted 94.4%, phase 94.2%, observable 91.3%; 216 phases 196 tested/12 partial/8 audit]; Top-10 → P1 106 GeV [35] > P2 0νββ [31] > P3 ladder [30] > SM5 quark hierarchy [19] > F3 ψ origin [18] > P4 curvature-Poisson [17] > SM7 golden ratio [14] = SM8 calibration ladder [14] = P5 redshift partition [14] > F4 two primitives [12]; PREDICTION 4 / SM 3 / FOUNDATIONAL 2 / GRAVITY 0; the frontier is PRIMARILY EXPERIMENTAL — top-3 pre-registered predictions await data; no gravity item remains; the derivation program is effectively complete).
 
+QG214: anti-fit reaudit 2 (PREDICTION AUDIT — methodology audit of QG140-213, comparing against QG189: QG190-213 [24 phases] = 3 PRE-REGISTERED [QG190/191/192, forbidden-input guards], 1 REGISTRY LOCK [QG193, ValuesUnchanged guard], 20 PREDICTION [derivations QG194-197/203-210/212 + audits QG198-202/205/211/213]; ZERO retro-fit, ZERO overfit, ZERO fitted parameters in the new phases; updated totals QG140-213 [73 phases]: PREDICTION 56, BLIND 2, PRE-REGISTERED 3, REGISTRY LOCK 1, DEPENDENT 8, RETRO-FIT 2 [QG140/146], OVERFIT 1 [QG147] — RETRO-FIT=2, OVERFIT=1 STILL CORRECT; risk confined to the fitting era QG140-148; structural era QG149-213 fit-free; the pre-registration program [QG190-193] is the strongest anti-fit evidence alongside QG176/177 blind tests).
+
 Milestone counters:
 
-TQM-QG 216 phases
-534+ TQM-QG tests verified
+TQM-QG 217 phases
+537+ TQM-QG tests verified
 
 ### QG154: Neutrino Sector Origin
 
@@ -516,5 +518,5 @@ NEUTRINO ORIGIN
 
 Milestone counters:
 
-TQM-QG 216 phases
-534+ TQM-QG tests verified
+TQM-QG 217 phases
+537+ TQM-QG tests verified
