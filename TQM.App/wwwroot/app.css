@@ -359,4 +359,42 @@ a { color: inherit; }
 }
 .validation-tab-active:hover { color: #0E1116; }
 
+/* ── Derivation Map (graph) ─────────────────────────────────────────────── */
+
+.derivation-controls { display: flex; flex-wrap: wrap; gap: 1rem; align-items: center; }
+.derivation-domain-select { min-width: 220px; }
+
+.derivation-legend { display: flex; flex-wrap: wrap; gap: 0.9rem; align-items: center; font-size: 0.78rem; color: #8B949E; }
+.legend-node { display: inline-flex; align-items: center; gap: 0.35rem; }
+.legend-tested { color: #81C784; }
+.legend-partial { color: #FFB74D; }
+.legend-untested { color: #E57373; }
+.legend-edges { color: #8B949E; }
+
+.derivation-graph-container {
+  background: #0E1116; border: 1px solid rgba(255,255,255,0.07);
+  border-radius: 10px; padding: 1rem; overflow: auto;
+  max-height: 74vh; min-height: 420px;
+}
+.derivation-graph-container svg { max-width: none; }
+.derivation-graph-container .node { cursor: pointer; }
+.tqm-node-highlight rect { stroke: #64B5F6 !important; stroke-width: 2.5 !important; }
+
+.derivation-zoombar {
+  display: flex; align-items: center; gap: 0.25rem;
+}
+.derivation-zoombar .zoom-label {
+  font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.06em;
+  color: #8B949E; margin-right: 0.35rem;
+}
+.derivation-zoombar .zoom-value {
+  font-size: 0.78rem; color: #64B5F6; font-weight: 600; margin-left: 0.5rem;
+  font-variant-numeric: tabular-nums; min-width: 2.6rem;
+}
+
+.graph-loading, .graph-error { color: #8B949E; font-size: 0.9rem; padding: 1.5rem; }
+.graph-error { color: #E57373; }
+
+.derivation-drawer { background: #151A21; }
+
 

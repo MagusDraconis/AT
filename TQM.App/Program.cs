@@ -13,6 +13,7 @@ builder.Services.AddScoped(sp => new HttpClient
     BaseAddress = new Uri(sp.GetRequiredService<Microsoft.AspNetCore.Components.NavigationManager>().BaseUri)
 });
 builder.Services.AddScoped<TQM.App.Services.ValidationDataService>();
+builder.Services.AddScoped<TQM.App.Services.DerivationGraphService>();
 
 var app = builder.Build();
 
