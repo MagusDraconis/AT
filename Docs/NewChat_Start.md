@@ -182,7 +182,7 @@ Open Questions:
 - the authoritative catalog of ALL unresolved physics questions is the QG198 Top-20 audit (Docs/Research/TQMQG_FinalOpenProblemsAudit.md), ranked by impact·3+feasibility·2+falsifiability·2; top item = 106 GeV resonance (P1, score 35), runner-up cluster = neutrino sector (SM1 exact masses, SM3 mass ordering, P2 0νββ, scores 31–33); post-QG204 Top-10 (QG205): P1 106 GeV (35) > P2 0νββ (31) > P3 ladder (30) > G2 rotation-curve (26) > G3 conformal optics (22) > F1 metric ansatz (21) = SM4 lepton hierarchy (21) > G1 Hawking-ψ (20) = F2 Bekenstein 1/4 (20) > SM6 family index (17)
 - P1 (106 GeV) status after QG199: PENDING — window 99–114 GeV neither confirmed nor excluded; 95 GeV cluster = 91.19 rung; new 152 GeV excess = 151.98 rung (P3, not P1); HL-LHC decisive
 - sector ladder (P3) after QG200/QG201: 12 rungs audited — CONFIRMED 3 (SM anchors Z/H/t), SUPPORTED 1 (151.98 = ~152 GeV excess, MODERATE SUPPORT alignment 2.80σ, 1-in-386), PENDING 8, none falsified
-- key open items: 106 GeV resonance validation (QG132/QG188A/QG190/QG199), sector-ladder collider test (QG130/QG192/QG200), Hawking T with ψ≠0 (QG24), Bekenstein 1/4 (QG196, proven impossible without imported π); exact neutrino masses RESOLVED (QG203), quark MS̄ conversion RESOLVED (QG204), flat rotation-curve α=0 RESOLVED (QG206), metric ansatz PARTIALLY-RESOLVED (QG207, unique within conformal class, ψ sector completes it)
+- key open items: 106 GeV resonance validation (QG132/QG188A/QG190/QG199), sector-ladder collider test (QG130/QG192/QG200), Bekenstein 1/4 (QG196, proven impossible without imported π); exact neutrino masses RESOLVED (QG203), quark MS̄ conversion RESOLVED (QG204), flat rotation-curve α=0 RESOLVED (QG206), metric ansatz PARTIALLY-RESOLVED (QG207), Hawking-with-ψ RESOLVED (QG208)
 
 ## Status Table
 
@@ -477,10 +477,12 @@ QG206: alpha zero origin (ALPHA-ZERO ORIGIN — flat rotation-curve α=0 DERIVED
 
 QG207: metric ansatz uniqueness (PARTIAL UNIQUE — g = ρ^(2/d)η is uniquely selected WITHIN the conformal-flat class: measure preservation √(−g) = ρ^(kd/2) = ρ ⇒ k = 2/d [only power with zero error], derived geodesic acceleration a = −(1/d)ρ′/ρ ⇒ k/2 = 1/d ⇒ k = 2/d [unique], Einstein/Bianchi recovery = QG197 structure; BUT the ψ tensor sector [QG44/186] gives alternative counting-preserving metrics g_00 = −ρ^(2/d)e^(2ψ), g_ii = ρ^(2/d)e^(−2ψ/(d−1)) with the same √(−g) = ρ and different observables [frame dragging, lensing] — the ansatz is the ψ=0 isotropic member, completed by the tensor sector; open question G4-A0 → PARTIALLY-RESOLVED).
 
+QG208: Hawking temperature with ψ (HAWKING ORIGIN — the ψ sector leaves T ∝ 1/R UNCHANGED: surface gravity of the ψ-completed metric g_00 = −ρ^(2/d)e^(2ψ) gives κ = (1/d)|ρ′|/ρ·e^(ψ(1+1/(d−1))) ~ (1/R)·e^(ψ·3/2); T_ψ = T_0·e^(ψ(1+1/(d−1))) with T_0 = 1/((d−1)R^(d−2)) — ψ contributes only a radius-independent PREFACTOR; the T(R₁)/T(R₂) ratio is ψ-INVARIANT [2.0000 with and without ψ], so T ∝ 1/R [QG184] is preserved; horizon regularity ψ(R_h)→0 removes the correction [T_ψ = T_0 exactly]; Hawking T is a ρ-sector first-law observable, NOT a ψ-sector one [contrast: frame dragging QG186 requires ψ]; closes the 'Hawking temperature after ψ' open question [QG24]).
+
 Milestone counters:
 
-TQM-QG 210 phases
-516+ TQM-QG tests verified
+TQM-QG 211 phases
+519+ TQM-QG tests verified
 
 ### QG154: Neutrino Sector Origin
 
@@ -504,5 +506,5 @@ NEUTRINO ORIGIN
 
 Milestone counters:
 
-TQM-QG 210 phases
-516+ TQM-QG tests verified
+TQM-QG 211 phases
+519+ TQM-QG tests verified

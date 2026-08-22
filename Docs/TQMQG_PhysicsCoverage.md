@@ -3,8 +3,8 @@
 **Single source of truth for all TQM-QG physics validation.**
 
 - Last updated: 2026-08-22
-- Total phases: 210
-- Tested: 192 | Partial: 12 | Untested: 0 | Audit: 6
+- Total phases: 211
+- Tested: 193 | Partial: 12 | Untested: 0 | Audit: 6
 - Weighted coverage: 95.0%
 
 > Maintenance rule: whenever a QG phase completes, scan its classification, update
@@ -17,14 +17,14 @@
 
 | Metric | Value |
 |---|---|
-| Phases total | 210 |
-| Tested | 192 |
+| Phases total | 211 |
+| Tested | 193 |
 | Partially tested | 12 |
 | Untested | 0 |
 | Audit (QG170) | 6 |
 | Weighted coverage | 95.0% |
 | SM tested | 51 |
-| Gravity tested | 30 |
+| Gravity tested | 31 |
 
 ### Observable-level coverage (SM quantities)
 
@@ -47,7 +47,7 @@
 | Cosmology | 1 | 0 | 0 | 0 | 1 |
 | High-Energy Sector | 6 | 1 | 0 | 0 | 7 |
 | Foundations | 18 | 0 | 0 | 1 | 19 |
-| Gravity / GR | 30 | 2 | 0 | 0 | 32 |
+| Gravity / GR | 31 | 2 | 0 | 0 | 33 |
 | Network & Spectrum | 42 | 0 | 0 | 0 | 42 |
 | Predictions | 11 | 0 | 0 | 4 | 15 |
 | ψ / Tensor Sector | 7 | 0 | 0 | 0 | 7 |
@@ -84,7 +84,7 @@
 | Matter = deficit: RESOLVED by QG194 (DEFICIT ORIGIN) — the actualization deficit IS the energy deficit (QG89), carries rest mass, is exactly conserved (Noether), and is the unique linear form (G4-ME5) | G4-ME/QG194 | RESOLVED |
 | Metric ansatz g = ρ^(2/d)η: QG207 determines PARTIAL UNIQUE — uniquely selected within the conformal-flat class (measure preservation √(−g)=ρ ⇒ k=2/d; derived acceleration ⇒ k=2/d; Einstein/Bianchi recovery = QG197), but the ψ tensor sector (QG44/186) provides alternative counting-preserving metrics with the same √(−g)=ρ and different observables (frame dragging, lensing); the ansatz is the ψ=0 isotropic member, completed by the tensor sector | G4-A0/QG207 | PARTIALLY-RESOLVED (unique within conformal class; ψ sector completes it) |
 | No independent matter sector: RESOLVED by QG195 (MATTER ORIGIN) — the deficit dust T_μν = (ρ̄−ρ)·v_μ·v_ν is an independent, conserved matter tensor built from ρ_m and v (escapes the G4-G4 Lovelock obstruction); G = κT is a dynamical relation, not an identity | G4-G3/QG195 | RESOLVED |
-| Hawking temperature after ψ: no phase derives T ∝ 1/R explicitly with ψ≠0 | QG24 | OPEN |
+| Hawking temperature after ψ: RESOLVED by QG208 (HAWKING ORIGIN) — the ψ-completed metric g_00=−ρ^(2/d)e^(2ψ) gives surface gravity κ ~ (1/R)·e^(ψ(1+1/(d−1))); T_ψ = T_0·e^(ψ(1+1/(d−1))) is a radius-independent prefactor, so T ∝ 1/R (QG184) is PRESERVED (ratio ψ-invariant); horizon regularity ψ(R_h)→0 removes the correction; Hawking T is a ρ-sector first-law observable, not a ψ-sector one (contrast frame dragging QG186) | QG24/QG208 | RESOLVED |
 | Flat rotation-curve α=0: RESOLVED by QG206 (ALPHA-ZERO ORIGIN) — v² ∝ r^(−α) ⇒ flat requires exactly α=0; α=0 is the equal-deficit-per-octave self-similar profile, the unique stable scale-free point of the octave-organized counting measure, from actualization scaling (QG194/155); consistent with M ∝ R (QG184) | G4-ME4/QG206 | RESOLVED |
 | 2D native program: RESOLVED by QG197 (FULL BRIDGE) — ρ and the conformal ansatz g = ρ^(2/d)η are dimension-generic; the (d−2) factor connects the 2D degeneracy (G≡0) to the non-trivial d=3 Einstein structure (same ρ, analytic continuation, Bianchi-conserved) | G4-G0/QG197 | RESOLVED |
 
@@ -540,3 +540,7 @@ Historical entries are preserved; updates are additive.
 ### Foundations
 
 - **QG208** — PARTIAL UNIQUE (tested) — metric ansatz uniqueness determined (no new primitives): √(−g) = ρ^(kd/2) = ρ requires k·d/2 = 1 ⇒ k = 2/d (measure preservation UNIQUE — every other power breaks √(−g) = ρ); derived geodesic acceleration a = −(1/d)ρ′/ρ requires k/2 = 1/d ⇒ k = 2/d (UNIQUE); Einstein/Bianchi recovery at k = 2/d = QG197 structure; BUT the ψ tensor sector (QG44/186) gives alternative counting-preserving metrics g_00 = −ρ^(2/d)e^(2ψ), g_ii = ρ^(2/d)e^(−2ψ/(d−1)) with the same √(−g) = ρ and different observables (frame dragging, lensing) — so g = ρ^(2/d)η is PARTIAL UNIQUE: unique within the conformal-flat class, completed by the ψ tensor sector `TQMQG_MetricAnsatzUniqueness.md`
+
+### Gravity / GR
+
+- **QG209** — HAWKING ORIGIN (tested) — Hawking temperature in the ψ sector derived (no new primitives): surface gravity of the ψ-completed metric g_00=−ρ^(2/d)e^(2ψ) gives κ = (1/d)|ρ′|/ρ·e^(ψ(1+1/(d−1))) ~ (1/R)·e^(ψ·3/2); T_ψ = T_0·e^(ψ(1+1/(d−1))) with T_0 = 1/((d−1)R^(d−2)) — ψ contributes ONLY a radius-independent prefactor; the T(R₁)/T(R₂) ratio is ψ-INVARIANT (2.0000 with and without ψ) so T ∝ 1/R (QG184) is PRESERVED; horizon regularity ψ(R_h)→0 removes the correction (T_ψ = T_0 exactly); Hawking T is a ρ-sector first-law observable, NOT a ψ-sector one (contrast: frame dragging QG186 REQUIRES ψ); closes the 'Hawking temperature after ψ' open question (QG24) `TQMQG_HawkingTemperatureWithPsi.md`

@@ -3,16 +3,16 @@
     "file": "Docs/TQMQG_PhysicsCoverage.md|json",
     "purpose": "single source of truth for all TQM-QG physics validation",
     "last_updated": "2026-08-22",
-    "phases_count": 210,
+    "phases_count": 211,
     "note": "Historical entries are never removed. Additive updates only."
   },
   "coverage": {
-    "total_phases": 210,
-    "tested": 192,
+    "total_phases": 211,
+    "tested": 193,
     "partial": 12,
     "untested": 0,
     "audit": 6,
-    "weighted_coverage": 0.95,
+    "weighted_coverage": 0.9502,
     "domains": {
       "cosmology": {
         "tested": 1,
@@ -36,11 +36,11 @@
         "total": 19
       },
       "gravity": {
-        "tested": 30,
+        "tested": 31,
         "partial": 2,
         "untested": 0,
         "audit": 0,
-        "total": 32
+        "total": 33
       },
       "network": {
         "tested": 42,
@@ -232,9 +232,9 @@
       "status": "RESOLVED"
     },
     {
-      "question": "Hawking temperature after ψ: no phase derives T ∝ 1/R explicitly with ψ≠0",
-      "phase": "QG24",
-      "status": "OPEN"
+      "question": "Hawking temperature after ψ: RESOLVED by QG208 (HAWKING ORIGIN) — the ψ-completed metric g_00=−ρ^(2/d)e^(2ψ) gives surface gravity κ ~ (1/R)·e^(ψ(1+1/(d−1))); T_ψ = T_0·e^(ψ(1+1/(d−1))) is a radius-independent prefactor, so T ∝ 1/R (QG184) is PRESERVED (ratio ψ-invariant); horizon regularity ψ(R_h)→0 removes the correction; Hawking T is a ρ-sector first-law observable, not a ψ-sector one (contrast frame dragging QG186)",
+      "phase": "QG24/QG208",
+      "status": "RESOLVED"
     },
     {
       "question": "Flat rotation-curve α=0: RESOLVED by QG206 (ALPHA-ZERO ORIGIN) — v² ∝ r^(−α) ⇒ flat requires exactly α=0; α=0 is the equal-deficit-per-octave self-similar profile, the unique stable scale-free point of the octave-organized counting measure, from actualization scaling (QG194/155); consistent with M ∝ R (QG184)",
@@ -2264,6 +2264,14 @@
       "domain": "foundation",
       "validation": "tested",
       "key_result": "metric ansatz uniqueness determined (no new primitives): √(−g) = ρ^(kd/2) = ρ requires k·d/2 = 1 ⇒ k = 2/d (measure preservation UNIQUE — every other power breaks √(−g) = ρ); derived geodesic acceleration a = −(1/d)ρ′/ρ requires k/2 = 1/d ⇒ k = 2/d (UNIQUE); Einstein/Bianchi recovery at k = 2/d = QG197 structure; BUT the ψ tensor sector (QG44/186) gives alternative counting-preserving metrics g_00 = −ρ^(2/d)e^(2ψ), g_ii = ρ^(2/d)e^(−2ψ/(d−1)) with the same √(−g) = ρ and different observables (frame dragging, lensing) — so g = ρ^(2/d)η is PARTIAL UNIQUE: unique within the conformal-flat class, completed by the ψ tensor sector"
+    },
+    {
+      "phase": 209,
+      "file": "TQMQG_HawkingTemperatureWithPsi.md",
+      "classification": "HAWKING ORIGIN",
+      "domain": "gravity",
+      "validation": "tested",
+      "key_result": "Hawking temperature in the ψ sector derived (no new primitives): surface gravity of the ψ-completed metric g_00=−ρ^(2/d)e^(2ψ) gives κ = (1/d)|ρ′|/ρ·e^(ψ(1+1/(d−1))) ~ (1/R)·e^(ψ·3/2); T_ψ = T_0·e^(ψ(1+1/(d−1))) with T_0 = 1/((d−1)R^(d−2)) — ψ contributes ONLY a radius-independent prefactor; the T(R₁)/T(R₂) ratio is ψ-INVARIANT (2.0000 with and without ψ) so T ∝ 1/R (QG184) is PRESERVED; horizon regularity ψ(R_h)→0 removes the correction (T_ψ = T_0 exactly); Hawking T is a ρ-sector first-law observable, NOT a ψ-sector one (contrast: frame dragging QG186 REQUIRES ψ); closes the 'Hawking temperature after ψ' open question (QG24)"
     }
   ]
 }
