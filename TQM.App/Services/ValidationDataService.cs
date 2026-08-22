@@ -19,6 +19,7 @@ public class ValidationDataService
 
     private PhysicsCoverageFile? _coverage;
     private PredictionRegistryFile? _registry;
+    private PredictionOutcomeFile? _outcomes;
 
     public ValidationDataService(HttpClient http)
     {
@@ -37,5 +38,12 @@ public class ValidationDataService
         if (_registry is null)
             _registry = await _http.GetFromJsonAsync<PredictionRegistryFile>("data/TQMQG_Predictions.json", _json);
         return _registry!;
+    }
+
+    public async Task<PredictionOutcomeFile> GetOutcomesAsync()
+    {
+        if (_outcomes is null)
+            _outcomes = await _http.GetFromJsonAsync<PredictionOutcomeFile>("data/TQMQG_PredictionOutcomes.json", _json);
+        return _outcomes!;
     }
 }

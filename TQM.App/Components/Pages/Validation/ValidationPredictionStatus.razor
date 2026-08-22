@@ -7,12 +7,13 @@
 <div class="page-section">
     <h3 class="section-heading">Prediction Status</h3>
     <p class="muted">
-        The live status of every registered prediction, read from the immutable registry
-        (<span class="mono">Docs/TQMQG_Predictions.json</span>). Frozen values never change;
-        only the outcome status advances, and only along the two pre-defined paths below.
+        Live status of every registered prediction, from the outcome dashboard
+        (<span class="mono">Docs/TQMQG_PredictionOutcomes.json</span>) — the single source of truth for
+        external validation. Frozen values never change; only the state advances, and only along the two
+        pre-defined paths below.
     </p>
 
-    @if (_registry is null)
+    @if (_outcomes is null)
     {
         <MudProgressCircular Indeterminate="true" Size="Size.Medium" Class="mt-4" />
     }
@@ -21,28 +22,49 @@
         <MudCard Elevation="1" Class="theory-card mb-4">
             <MudCardContent>
                 <MudText Typo="Typo.body2" Class="muted">
-                    <span class="status-chip status-tested me-2">@(_registry.Immutable ? "IMMUTABLE" : "MUTABLE")</span>
-                    @_registry.Rule
+                    <span class="status-chip status-tested me-2">IMMUTABLE</span>
+                    @_outcomes.Meta.RegistryRule
                 </MudText>
             </MudCardContent>
         </MudCard>
 
-        <MudTable Items="_registry.Predictions" Hover="true" Dense="true" Class="mb-4">
+        <MudTable Items="_outcomes.Outcomes" Hover="true" Dense="true" Class="mb-4">
             <HeaderContent>
                 <MudTh>Prediction</MudTh>
                 <MudTh>Frozen value</MudTh>
-                <MudTh>Current status</MudTh>
+                <MudTh>Support level</MudTh>
+                <MudTh>Last audit</MudTh>
+                <MudTh>Next experiment</MudTh>
+                <MudTh>State</MudTh>
             </HeaderContent>
             <RowTemplate>
-                <MudTd>
-                    <span class="audit-phase me-2">@context.Id</span>@context.Name
-                </MudTd>
+                <MudTd><span class="audit-phase me-2">@context.Id</span>@context.Name</MudTd>
                 <MudTd><span class="audit-num">@context.FrozenValue</span></MudTd>
-                <MudTd>
-                    <span class="status-chip @OutcomeClass(context.Outcome)">@(string.IsNullOrEmpty(context.Outcome) ? "PENDING" : context.Outcome)</span>
-                </MudTd>
+                <MudTd><span class="muted" style="font-size:0.8rem">@context.SupportLevel</span></MudTd>
+                <MudTd><span class="muted" style="font-size:0.8rem">@context.LastAudit</span></MudTd>
+                <MudTd><span class="muted" style="font-size:0.8rem">@context.NextExperiment</span></MudTd>
+                <MudTd><span class="status-chip @StateClass(context.State)">@context.State</span></MudTd>
             </RowTemplate>
         </MudTable>
+
+        @foreach (var o in _outcomes.Outcomes)
+        {
+            <div class="page-section">
+                <h4 class="section-heading">@o.Id — @o.Name <span class="status-chip @StateClass(o.State)">@o.State</span></h4>
+                <MudCard Elevation="1" Class="theory-card">
+                    <MudCardContent>
+                        <div class="result-row"><span class="result-label">Frozen value</span><span class="result-value">@o.FrozenValue</span></div>
+                        <div class="result-row"><span class="result-label">Support level</span><span class="result-value" style="color:#FFB74D">@o.SupportLevel</span></div>
+                        <div class="result-row"><span class="result-label">Last audit</span><span class="result-value">@o.LastAudit</span></div>
+                        <div class="result-row"><span class="result-label">Next experiment</span><span class="result-value">@o.NextExperiment</span></div>
+                        <MudText Typo="Typo.caption" Class="text-uppercase fw-bold muted mt-3 mb-1">Current evidence</MudText>
+                        <MudText Typo="Typo.body2" Class="muted">@o.CurrentEvidence</MudText>
+                        <MudText Typo="Typo.caption" Class="text-uppercase fw-bold muted mt-3 mb-1">Falsification condition</MudText>
+                        <MudText Typo="Typo.body2" Class="muted">@o.Falsification</MudText>
+                    </MudCardContent>
+                </MudCard>
+            </div>
+        }
 
         <MudCard Elevation="1" Class="theory-card">
             <MudCardContent>
@@ -70,7 +92,6 @@
                 <MudText Typo="Typo.body2" Class="muted mt-4">
                     A status may only move forward along its own path. No registered prediction's frozen
                     value, formula, or falsification condition may ever be modified (registry lock, QG193).
-                    The current status is stored in the registry JSON as <span class="mono">outcome</span>.
                 </MudText>
             </MudCardContent>
         </MudCard>
@@ -80,14 +101,14 @@
 @code {
     [Inject] private ValidationDataService ValidationDataService { get; set; } = default!;
 
-    private PredictionRegistryFile? _registry;
+    private PredictionOutcomeFile? _outcomes;
 
     protected override async Task OnInitializedAsync()
     {
-        _registry = await ValidationDataService.GetRegistryAsync();
+        _outcomes = await ValidationDataService.GetOutcomesAsync();
     }
 
-    private static string OutcomeClass(string? outcome) => outcome?.ToUpperInvariant() switch
+    private static string StateClass(string? state) => state?.ToUpperInvariant() switch
     {
         "CONFIRMED" => "status-tested",
         "SUPPORTED" => "status-partial",

@@ -1,5 +1,30 @@
 namespace TQM.App.Models;
 
+// ── Docs/TQMQG_PredictionOutcomes.json ────────────────────────────────────
+
+public sealed record PredictionOutcomeFile(
+    OutcomeMeta Meta,
+    List<PredictionOutcomeModel> Outcomes);
+
+public sealed record OutcomeMeta(
+    string Title,
+    string Purpose,
+    List<string> States,
+    string RegistryRule,
+    string LockedBy,
+    string LastUpdated);
+
+public sealed record PredictionOutcomeModel(
+    string Id,
+    string Name,
+    string State,
+    string FrozenValue,
+    string CurrentEvidence,
+    string SupportLevel,
+    string LastAudit,
+    string NextExperiment,
+    string Falsification);
+
 // ── Docs/TQMQG_Predictions.json ────────────────────────────────────────────
 
 public sealed record PredictionRegistryFile(
