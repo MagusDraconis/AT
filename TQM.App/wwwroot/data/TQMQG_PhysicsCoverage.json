@@ -3,16 +3,16 @@
     "file": "Docs/TQMQG_PhysicsCoverage.md|json",
     "purpose": "single source of truth for all TQM-QG physics validation",
     "last_updated": "2026-08-23",
-    "phases_count": 248,
+    "phases_count": 249,
     "note": "Historical entries are never removed. Additive updates only."
   },
   "coverage": {
-    "total_phases": 248,
+    "total_phases": 249,
     "tested": 210,
     "partial": 12,
     "untested": 0,
-    "audit": 26,
-    "weighted_coverage": 0.8972,
+    "audit": 27,
+    "weighted_coverage": 0.8946,
     "domains": {
       "cosmology": {
         "tested": 7,
@@ -32,8 +32,8 @@
         "tested": 20,
         "partial": 0,
         "untested": 0,
-        "audit": 19,
-        "total": 39
+        "audit": 20,
+        "total": 40
       },
       "gravity": {
         "tested": 33,
@@ -2575,6 +2575,14 @@
       "domain": "standard-model",
       "validation": "tested",
       "key_result": "lagrangian origin (no new primitives, D96 only, deterministic, no imported SM Lagrangian): the Lagrangian density is the ACTUALIZATION-FLOW ACTION of the D96 generator fields; L = −(1/4) F^a_μν F^aμν + iψ̄γ^μD_μψ − mψ̄ψ; (1) NOETHER CURRENTS [QG89/QG243] — the D96 symmetries generate conserved currents: U(1) electric, SU(2) isospin, SU(3) color; (2) GENERATOR ALGEBRA / FIELD STRENGTH — F^a_μν = ∂_μA^a_ν − ∂_νA^a_μ + g f^abc A^b_μA^c_ν with the structure constants from the D96 generator commutators [su(2) closes: [σ_z,σ_y]=−2iσ_x, QG161]; the gauge kinetic term −(1/4)F^aF^a is the field-strength norm; (3) MODE COUPLING — the covariant derivative D_μ = ∂_μ − igT^aA^a_μ from the generator action [QG243]; (4) ACTUALIZATION FLOW — the matter term iψ̄γ^μD_μψ − mψ̄ψ from the actualization-flow energy [QG89]; THE THREE SECTORS: QED [Abelian F_μν, e = √(4π/137), T=1], weak [su(2) F^a, g = √(4π·3/Σm), T^a=σ^a/2], strong [su(3) F^a, g_s = √(4π·8/Σ√m), T^a=λ^a/2] — the field equations are the Euler-Lagrange equations with D96-determined couplings; NO IMPORTED SM LAGRANGIAN — the form is the unique minimal action consistent with the D96 symmetries + the actualization-flow energy, the structure constants come from the D96 generator commutators; CLASSIFICATION: LAGRANGIAN ORIGIN [score 5/5 — Noether currents, generator algebra closes, QED/weak/strong Lagrangians, no imports]; closes QG243's remaining Lagrangian-form partial; the Higgs/Yukawa sector [Higgs = collective occupation-density scalar QG84] is the remaining partial item"
+    },
+    {
+      "phase": 247,
+      "file": "TQMQG_HiggsYukawaOriginAudit.md",
+      "classification": "SM DYNAMICS NOT COMPLETE",
+      "domain": "foundation",
+      "validation": "audit",
+      "key_result": "higgs yukawa origin audit (audit only, reviews QG84/140-180/203-210/244): 0 DERIVED / 2 PARTIAL / 0 HOSTED / 2 OPEN — the four Higgs/Yukawa components; HIGGS FIELD ORIGIN PARTIAL [the Higgs is the collective occupation-density scalar QG161/169 σ_occ=39.127, a (0,0,0) singlet; QG84: the scalar representation exists and a ρ-condensate serves as the VEV [COMPATIBLE], but the symmetry-breaking potential is not native]; YUKAWA INTERACTION ORIGIN OPEN [no QG phase derives the Yukawa vertices y_f ψ̄ψ φ; QG244 derives the GAUGE Lagrangian, the Yukawa sector is not part of it — the coupling VALUES are indirectly reproduced [fermion masses QG140-210], the interaction FORM is not]; FERMION MASS GENERATION PARTIAL [the mass VALUES are DERIVED from D96 QG140/173/203/209/210; the mass-generation MECHANISM m_f = y_f·v [Higgs VEV × Yukawa] is NOT derived — the masses are spectral/octave identities, not y_f·v]; HIGGS POTENTIAL ORIGIN OPEN [V(φ) = μ²|φ|² + λ|φ|⁴ is NOT derived QG84 SymmetryBreakingNative=false; the quartic λ_H = λ₂·g₂/2 QG169 and the VEV v = 254.37 GeV QG168 are derived, the potential FORM is not]; EXACT MISSING SM DYNAMICS COMPONENTS: [1] the YUKAWA interaction form y_f ψ̄ψ φ, [2] the HIGGS POTENTIAL V(φ) = μ²|φ|² + λ|φ|⁴ and its SSB minimum, [3] the MASS-GENERATION MECHANISM m_f = y_f·v; the Higgs FIELD is derived/identified, the potential, the Yukawa form, and the VEV×Yukawa mechanism are the remaining OPEN/PARTIAL components; the gauge dynamics is now derived [QG243/244], the Higgs/Yukawa sector has 2 OPEN + 2 PARTIAL — these are the exact remaining Standard Model dynamics components"
     }
   ]
 }
