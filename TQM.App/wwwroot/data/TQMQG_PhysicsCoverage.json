@@ -3,16 +3,16 @@
     "file": "Docs/TQMQG_PhysicsCoverage.md|json",
     "purpose": "single source of truth for all TQM-QG physics validation",
     "last_updated": "2026-08-23",
-    "phases_count": 261,
+    "phases_count": 262,
     "note": "Historical entries are never removed. Additive updates only."
   },
   "coverage": {
-    "total_phases": 261,
+    "total_phases": 262,
     "tested": 212,
     "partial": 12,
     "untested": 0,
-    "audit": 37,
-    "weighted_coverage": 0.8707,
+    "audit": 38,
+    "weighted_coverage": 0.8683,
     "domains": {
       "cosmology": {
         "tested": 7,
@@ -32,8 +32,8 @@
         "tested": 20,
         "partial": 0,
         "untested": 0,
-        "audit": 30,
-        "total": 50
+        "audit": 31,
+        "total": 51
       },
       "gravity": {
         "tested": 33,
@@ -593,6 +593,16 @@
   ],
   "recent_findings": [
     {
+      "phase": 260,
+      "file": "TQMQG_BlindFormulaTournament.md",
+      "title": "Blind Formula Tournament",
+      "classification": "WEAK BLIND PREDICTION",
+      "domain": "foundation",
+      "validation": "audit",
+      "summary": "blind formula tournament (audit only",
+      "report_url": "https://github.com/MagusDraconis/TQM/blob/TQM_v1.1/Docs/Research/TQMQG_BlindFormulaTournament.md"
+    },
+    {
       "phase": 259,
       "file": "TQMQG_PrincipleCompetitionAudit.md",
       "title": "Principle Competition Audit",
@@ -641,16 +651,6 @@
       "validation": "audit",
       "summary": "formula uniqueness audit (methodology only, no new physics",
       "report_url": "https://github.com/MagusDraconis/TQM/blob/TQM_v1.1/Docs/Research/TQMQG_FormulaUniquenessAudit.md"
-    },
-    {
-      "phase": 254,
-      "file": "TQMQG_IndependentPredictionAudit.md",
-      "title": "Independent Prediction Audit",
-      "classification": "MEDIUM INDEPENDENT EVIDENCE",
-      "domain": "foundation",
-      "validation": "audit",
-      "summary": "independent prediction audit (audit only, measures how much of TQM's validation comes from genuine prediction vs reconstruction",
-      "report_url": "https://github.com/MagusDraconis/TQM/blob/TQM_v1.1/Docs/Research/TQMQG_IndependentPredictionAudit.md"
     }
   ],
   "phases": [
@@ -2741,6 +2741,14 @@
       "domain": "foundation",
       "validation": "audit",
       "key_result": "principle competition audit (audit only, no targets, selection quality only; compares the seven formula-selection principles using QG253/254/255: octave preservation, moment closure, MDL, maximum symmetry, maximum invariance, Noether consistency, full spectrum usage; for each measure selection power, number of surviving formulas, consistency across observables, number of ad-hoc exceptions): THE MEASUREMENTS — OCTAVE PRESERVATION [power 1/7, survivors 2.0, consistent, 0 exceptions — the strongest single filter: removes all 5 non-native alternatives, uniquely selects r₃₁, leaves 3 octave-preserving ties], MOMENT CLOSURE [power 2/7, survivors 1.5, consistent, 0 exceptions — resolves the m_τ/m_μ tie (occMom+λ₂=3 beats √#d/λ₂=1 and √3·√Σm=0.5)], MDL [power 1/7, survivors 3.0, consistent, 0 exceptions — lowest power alone: uniquely selects r₃₁ only, 4/7 have simpler non-native alternatives], MAXIMUM SYMMETRY [power 1/7, survivors 2.5 — overlaps octave preservation, not independently sufficient], MAXIMUM INVARIANCE [power 0/7, survivors 7.0 — occ₀=occ₁=4 so every formula is trivially permutation-invariant: zero discriminating power, the weakest principle], NOETHER CONSISTENCY [power 3/7, survivors 1.3, INCONSISTENT, 1 exception — resolves the m_μ/me tie by rejecting 5/4·Σ√m/λ₂ but the PUBLISHED QG238 ℓ₁ = Σm·ln(span)·(5/4) uses 5/4 — the strongest by raw power but requires an ad-hoc carve-out], FULL SPECTRUM USAGE [power 1/7, survivors 2.5 — overlaps moment closure, not independently sufficient]; RANKING by power: Noether consistency > moment closure > octave preservation/MDL/maximum symmetry/full spectrum > maximum invariance; DETERMINATION: NO UNIVERSAL PRINCIPLE — no single principle uniquely selects all 7 observables; the QG255 'unique selection' came only from a SEQUENCE (octave preservation → MDL → Noether → moment closure) with one inconsistency (the 5/4 exception); the best consistent filter (octave preservation) achieves only 1-3/7 uniqueness; the selection-principle program (QG253-255) is a useful HEURISTIC NARROWING, not a universal derivation-choice rule"
+    },
+    {
+      "phase": 260,
+      "file": "TQMQG_BlindFormulaTournament.md",
+      "classification": "WEAK BLIND PREDICTION",
+      "domain": "foundation",
+      "validation": "audit",
+      "key_result": "blind formula tournament (audit only; the decisive test of whether the QG254/QG255 D96 selection rules have PREDICTIVE power; input D96 quantities only, forbidden observable/target values during selection, generate all expressions up to complexity 6 restricted to ratio-form, apply QG254 octave preservation + QG255 moment-closure MDL, select top formula only, lock, then reveal target, score success iff within 1%): THE RESULT — the target-free rule chain is DEGENERATE: it selects the SAME formula (λ₂/occMom = 0.000203, the globally minimal-complexity octave-preserving ratio) for every observable, because it has no reference to which observable it is selecting for; that locked formula matches NONE of the seven revealed targets (1−n_s, r₂₁, r₃₁, m₂/m₃, y_t/y_b, m_μ/me, m_τ/m_μ) — success rate 0/7; the rules only 'work' when the candidate pool is PRE-RESTRICTED BY THE TARGET (as in QG253, which found matches within 0.5% of each target) — that is, when the target was already used to build the pool; in a genuine blind setting the rules collapse to a single global formula that predicts nothing; CLASSIFICATION: WEAK — the selection rules have NO blind predictive power; the QG253-255 'selection principle' program is a POST-HOC DESCRIPTIVE narrowing of pools that were built using the targets they claim to predict; this is the decisive confirmation of QG256 (HIGH selection-principle risk) and QG257 (NO UNIVERSAL PRINCIPLE): a formula cannot be selected for a specific observable without reference to what that observable is"
     }
   ]
 }
