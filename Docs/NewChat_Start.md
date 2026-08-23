@@ -570,10 +570,12 @@ QG251: parameter independence audit (LOW PARAMETER LEAKAGE — audit only, tests
 
 QG252: independent prediction audit (MEDIUM INDEPENDENT EVIDENCE — audit only, measures how much of TQM's validation comes from genuine prediction vs reconstruction; reviews QG176/177/190-193/199-202/240; classifies every result POSTDICTION / BLIND RECONSTRUCTION / PRE-REGISTERED PREDICTION / EXTERNAL SUPPORT: the inventory of 60 evidence units — POSTDICTION 35 [the tested observable register: masses, mixings, couplings, EW precision, gravity, cosmological fractions — targets KNOWN when derived], BLIND RECONSTRUCTION 21 [QG176 Higgs 5 (MH, ΓH, MH/MW, MH/MZ, λ_H hidden, rebuilt from pre-Higgs D96, 0.19%), QG177 leave-one-out 12 (each observable hidden, mean dev 0.58%), QG240 cosmology blind 4 (n_s, ℓ₁, ℓ₂/ℓ₁, ℓ₃/ℓ₁ locked from D96 only, max dev 0.058%)], PRE-REGISTERED PREDICTION 3 [P1 106 GeV QG190, P2 m_ββ=2.02 meV QG191, P3 sector-ladder QG192 — frozen before measurement], EXTERNAL SUPPORT 1 [P3 151.98 rung ~ 152 GeV diphoton excess (arXiv:2503.16245), local 3.6σ / global up to 5.4σ, z=2.80σ, QG200/201]; P1/P2 remain PENDING (0 external units yet); EVIDENCE FRACTIONS — methodological independence (derivation machinery never sees the target: blind + pre-registered + external) = 25/60 = 41.7%; temporal independence (strictest: the target did not exist at derivation time) = 4/60 = 6.7%; postdiction (target known) = 35/60 = 58.3%; DETERMINATION: MEDIUM independent-evidence strength — 42% of validation units are produced with the target hidden from the derivation machinery (methodological blindness), of which the temporally-predictive core is 6.7%; the QG250 F2 self-confirmation claim is only PARTIALLY mitigated — the genuinely temporal prediction content is small but nonzero and externally supported (P3), while 58% of the numerical evidence base remains postdiction against known targets).
 
+QG253: formula uniqueness audit (UNIQUE 1 / NON-UNIQUE 2 / MULTIPLE MATCHES 4 — methodology only, no new physics; reviews QG203/209/234/237/238/247; replaces empirical formula choice with a derivation-choice rule: generate ALL dimensionless combinations of the D96 quantities (Σm, #d, #g, span, λ₂, occ₀, occ₁, occ₃, occMom, Σ√m) — a candidate pool of hundreds of thousands of expressions; complexity = distinct quantities + operators + (1 if non-trivial constant); for each observable find every candidate within 0.5% and determine whether the published formula is the SIMPLEST; THE RESULTS (7 observables): UNIQUE 1 [r₃₁ = span/√3 — the sole minimal-complexity match (c=3); λ₂³·Σ√m matches only at c=4], NON-UNIQUE 2 [m_μ/me = Σm²/√occMom (c=5, ties with #g²/√occ₃ dev 0.26% and 5/4·Σ√m/λ₂ dev 0.15%), m_τ/m_μ = √occMom·λ₂ (c=4, ties with √3·√Σm dev 0.24% and √#d/λ₂ dev 0.40%)], MULTIPLE MATCHES 4 [1−n_s = ln(span)/(Σm−#d) (c=7, SIMPLER 1/(span·ln occ₃) c=5 dev 0.16% exists), r₂₁ = (Σm−#d)·occ₁/occ₃ (c=6, SIMPLER √Σm/occ₀ c=4 dev 0.004%), m₂/m₃ = 2Σm/(Σ√m·√(span·#g)) (c=8, SIMPLER 1/(occ₀·√2) c=4 dev 0.100%), y_t/y_b mass-law ratio (c=8, SIMPLER occ₀²/λ₂ c=4 dev 0.37%)]; DETERMINATION: only r₃₁ is the unique minimal-complexity expression; SIX of SEVEN published formulas are NOT forced by a minimal-complexity derivation-choice rule — the choice was TARGET-INFORMED (empirical), confirming the QG239/QG250 RETRO-SELECTION RISK for all but r₃₁; a blind minimal-complexity search does NOT reproduce the published formulas as the unique simplest expressions — simpler D96 combinations reproduce the same observables (the strongest quantitative support for the selection risk on n_s, acoustic peaks, neutrino ratio, quark hierarchy)).
+
 Milestone counters:
 
-TQM-QG 256 phases
-654+ TQM-QG tests verified
+TQM-QG 257 phases
+657+ TQM-QG tests verified
 
 ### QG154: Neutrino Sector Origin
 
@@ -597,5 +599,5 @@ NEUTRINO ORIGIN
 
 Milestone counters:
 
-TQM-QG 256 phases
-654+ TQM-QG tests verified
+TQM-QG 257 phases
+657+ TQM-QG tests verified
