@@ -3,9 +3,9 @@
 **Single source of truth for all TQM-QG physics validation.**
 
 - Last updated: 2026-08-23
-- Total phases: 244
-- Tested: 208 | Partial: 12 | Untested: 0 | Audit: 24
-- Weighted coverage: 90.2%
+- Total phases: 245
+- Tested: 208 | Partial: 12 | Untested: 0 | Audit: 25
+- Weighted coverage: 89.9%
 
 > Maintenance rule: whenever a QG phase completes, scan its classification, update
 > tested/partial/untested, contradictions, open questions, predictions, and statistics.
@@ -17,12 +17,12 @@
 
 | Metric | Value |
 |---|---|
-| Phases total | 244 |
+| Phases total | 245 |
 | Tested | 208 |
 | Partially tested | 12 |
 | Untested | 0 |
-| Audit (QG170) | 24 |
-| Weighted coverage | 90.2% |
+| Audit (QG170) | 25 |
+| Weighted coverage | 89.9% |
 | SM tested | 53 |
 | Gravity tested | 33 |
 
@@ -46,7 +46,7 @@
 |---|---|---|---|---|---|
 | Cosmology | 7 | 0 | 0 | 2 | 9 |
 | High-Energy Sector | 6 | 1 | 0 | 0 | 7 |
-| Foundations | 20 | 0 | 0 | 17 | 37 |
+| Foundations | 20 | 0 | 0 | 18 | 38 |
 | Gravity / GR | 33 | 2 | 0 | 0 | 35 |
 | Network & Spectrum | 42 | 0 | 0 | 0 | 42 |
 | Predictions | 11 | 0 | 0 | 4 | 15 |
@@ -628,3 +628,7 @@ Historical entries are preserved; updates are additive.
 ### Cosmology
 
 - **QG242** — BLIND SUCCESS (tested) — cosmology blind reproduction (hidden-target audit of QG237/QG238): hide the observed n_s and acoustic peak values; recompute from D96 quantities ONLY [span, Σm, #d, occupancies] using the SAME QG237/QG238 formulas — no new formulas, no target values, no fitting; LOCK STEP computes the predictions from D96 primitives alone [the observed values are not accessible in the derivation path], then the COMPARISON STEP consults the observed values only AFTER the predictions are frozen into a locked record; LOCKED PREDICTIONS: n_s = 1 − ln(span)/(Σm−#d) = 0.96497 [observed 0.9649, dev 0.007%], ℓ₁ = Σm·ln(span)·(5/4) = 220.48 [observed 220.5, dev 0.008%], ℓ₂/ℓ₁ = (Σm−#d)·occ₁/occ₃ = 2.4368 [observed 2.4376, dev 0.035%], ℓ₃/ℓ₁ = span/√3 = 3.6965 [observed 3.6943, dev 0.058%]; MAX DEVIATION 0.058% — all four locked predictions match to sub-0.1%; CLASSIFICATION: BLIND SUCCESS — the formulas are NOT fitted to the observed values, they follow from the D96 spectrum alone; QG237/QG238 SURVIVE the hidden-target audit, answering the QG239 retro-selection concern `TQMQG_CosmologyBlindReproduction.md`
+
+### Foundations
+
+- **QG243** — NEAR-COMPLETE TOE (audit) — TOE closure audit (audit only, re-evaluates the ten QG226 TOE criteria after QG227-240): NEAR-COMPLETE TOE — completeness 8.5/10 (85%); 6 DERIVED / 2 PARTIAL / 2 BOUNDARY / 0 OPEN; DERIVED — QM [QG216/218/220/74], Gravity [QG197/207/222], Matter [QG194/195/196], Initial conditions [QG227 uniform critical state, was OPEN], Dimensionality [QG2/3/5/159/160], Information origin [QG228, was PARTIAL]; PARTIAL — Standard Model [masses/couplings/mixings derived QG203-211, gauge/fermion/Higgs interaction DYNAMICS hosted QG60/76/85], Cosmology [all six features derived or partial: expansion QG77, structure QG231, dark matter QG206, Λ QG230, Ω_Λ/Ω_m QG234, n_s QG237; acoustic-peak recombination mechanism partial QG238]; BOUNDARY — Primitive completeness [ψ ontological boundary QG223, was PARTIAL], Parameter completeness [all parameters derived or documented boundary: Bekenstein 1/4 needs π QG196, H epoch scale, Ω_Λ/Ω_m derived QG234]; REMAINING TRUE BLOCKERS: none OPEN — the two PARTIAL items are derivations-in-progress [SM interaction dynamics, CMB acoustic recombination mechanism], the BOUNDARY items are documented; QG227-240 resolved 3 QG226 gaps [initial conditions, information origin, cosmology/parameters]; progression PARTIAL TOE [6.5/10 QG226] → NEAR-COMPLETE TOE [8.5/10 QG241]; path to COMPLETE TOE: complete the two partial derivations, then only documented boundaries remain `TQMQG_ToeClosureAudit.md`

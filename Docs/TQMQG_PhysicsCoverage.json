@@ -3,16 +3,16 @@
     "file": "Docs/TQMQG_PhysicsCoverage.md|json",
     "purpose": "single source of truth for all TQM-QG physics validation",
     "last_updated": "2026-08-23",
-    "phases_count": 244,
+    "phases_count": 245,
     "note": "Historical entries are never removed. Additive updates only."
   },
   "coverage": {
-    "total_phases": 244,
+    "total_phases": 245,
     "tested": 208,
     "partial": 12,
     "untested": 0,
-    "audit": 24,
-    "weighted_coverage": 0.9016,
+    "audit": 25,
+    "weighted_coverage": 0.899,
     "domains": {
       "cosmology": {
         "tested": 7,
@@ -32,8 +32,8 @@
         "tested": 20,
         "partial": 0,
         "untested": 0,
-        "audit": 17,
-        "total": 37
+        "audit": 18,
+        "total": 38
       },
       "gravity": {
         "tested": 33,
@@ -2536,6 +2536,14 @@
       "domain": "cosmology",
       "validation": "tested",
       "key_result": "cosmology blind reproduction (hidden-target audit of QG237/QG238): hide the observed n_s and acoustic peak values; recompute from D96 quantities ONLY [span, Σm, #d, occupancies] using the SAME QG237/QG238 formulas — no new formulas, no target values, no fitting; LOCK STEP computes the predictions from D96 primitives alone [the observed values are not accessible in the derivation path], then the COMPARISON STEP consults the observed values only AFTER the predictions are frozen into a locked record; LOCKED PREDICTIONS: n_s = 1 − ln(span)/(Σm−#d) = 0.96497 [observed 0.9649, dev 0.007%], ℓ₁ = Σm·ln(span)·(5/4) = 220.48 [observed 220.5, dev 0.008%], ℓ₂/ℓ₁ = (Σm−#d)·occ₁/occ₃ = 2.4368 [observed 2.4376, dev 0.035%], ℓ₃/ℓ₁ = span/√3 = 3.6965 [observed 3.6943, dev 0.058%]; MAX DEVIATION 0.058% — all four locked predictions match to sub-0.1%; CLASSIFICATION: BLIND SUCCESS — the formulas are NOT fitted to the observed values, they follow from the D96 spectrum alone; QG237/QG238 SURVIVE the hidden-target audit, answering the QG239 retro-selection concern"
+    },
+    {
+      "phase": 243,
+      "file": "TQMQG_ToeClosureAudit.md",
+      "classification": "NEAR-COMPLETE TOE",
+      "domain": "foundation",
+      "validation": "audit",
+      "key_result": "TOE closure audit (audit only, re-evaluates the ten QG226 TOE criteria after QG227-240): NEAR-COMPLETE TOE — completeness 8.5/10 (85%); 6 DERIVED / 2 PARTIAL / 2 BOUNDARY / 0 OPEN; DERIVED — QM [QG216/218/220/74], Gravity [QG197/207/222], Matter [QG194/195/196], Initial conditions [QG227 uniform critical state, was OPEN], Dimensionality [QG2/3/5/159/160], Information origin [QG228, was PARTIAL]; PARTIAL — Standard Model [masses/couplings/mixings derived QG203-211, gauge/fermion/Higgs interaction DYNAMICS hosted QG60/76/85], Cosmology [all six features derived or partial: expansion QG77, structure QG231, dark matter QG206, Λ QG230, Ω_Λ/Ω_m QG234, n_s QG237; acoustic-peak recombination mechanism partial QG238]; BOUNDARY — Primitive completeness [ψ ontological boundary QG223, was PARTIAL], Parameter completeness [all parameters derived or documented boundary: Bekenstein 1/4 needs π QG196, H epoch scale, Ω_Λ/Ω_m derived QG234]; REMAINING TRUE BLOCKERS: none OPEN — the two PARTIAL items are derivations-in-progress [SM interaction dynamics, CMB acoustic recombination mechanism], the BOUNDARY items are documented; QG227-240 resolved 3 QG226 gaps [initial conditions, information origin, cosmology/parameters]; progression PARTIAL TOE [6.5/10 QG226] → NEAR-COMPLETE TOE [8.5/10 QG241]; path to COMPLETE TOE: complete the two partial derivations, then only documented boundaries remain"
     }
   ]
 }
