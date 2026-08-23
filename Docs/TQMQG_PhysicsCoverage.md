@@ -3,8 +3,8 @@
 **Single source of truth for all TQM-QG physics validation.**
 
 - Last updated: 2026-08-23
-- Total phases: 247
-- Tested: 209 | Partial: 12 | Untested: 0 | Audit: 26
+- Total phases: 248
+- Tested: 210 | Partial: 12 | Untested: 0 | Audit: 26
 - Weighted coverage: 89.7%
 
 > Maintenance rule: whenever a QG phase completes, scan its classification, update
@@ -17,8 +17,8 @@
 
 | Metric | Value |
 |---|---|
-| Phases total | 247 |
-| Tested | 209 |
+| Phases total | 248 |
+| Tested | 210 |
 | Partially tested | 12 |
 | Untested | 0 |
 | Audit (QG170) | 26 |
@@ -53,7 +53,7 @@
 | ψ / Tensor Sector | 7 | 0 | 0 | 0 | 7 |
 | Quantum Mechanics | 14 | 0 | 0 | 0 | 14 |
 | Standard Model | 53 | 9 | 0 | 1 | 63 |
-| Standard-Model | 1 | 0 | 0 | 0 | 1 |
+| Standard-Model | 2 | 0 | 0 | 0 | 2 |
 | TRM Dynamics | 15 | 0 | 0 | 0 | 15 |
 
 ---
@@ -638,3 +638,4 @@ Historical entries are preserved; updates are additive.
 ### Standard-Model
 
 - **QG245** — PARTIAL ORIGIN (tested) — gauge dynamics origin (no new primitives, D96 only, deterministic, no imported SM Lagrangian): the interaction dynamics IS the generator action on the spectral modes — the D96 gauge generators [QG161 1+3+8] act on the modes; an interaction is the generator's action on the mode [lattice-gauge link, QG63/65]; a gauge boson is a LINK excitation [QG57 Weyl] exchanged between modes; the vertex IS the generator matrix element ⟨f|T^a|i⟩; CONSERVATION — each gauge generator is a conserved Noether current [QG89]: U(1) → charge, SU(2) → isospin, SU(3) → color; THE THREE INTERACTION EQUATIONS: QED ∂_μ J^μ = 0 with e = √(4πα_em) [1/α_em = 137, QG162], weak isospin-current conservation with g = √(4π·3/95), strong color-current conservation with g_s = √(4π·8/Σ√m) — all three derived from generator action + coupling values [QG162] + Noether conservation; SUBSTANTIALLY CLOSES QG242's dynamics gap: the OPEN item [interaction vertices] is CLOSED [vertex = generator matrix element], the HOSTED item [interaction dynamics] is now DERIVED [equations = generator action + Noether conservation]; SCOPE — the explicit Lorentz-invariant LAGRANGIAN FORM [kinetic terms, Feynman propagators] remains HOSTED [the standard gauge structure, not re-derived line-by-line]; CLASSIFICATION: PARTIAL ORIGIN [score 5/5 — generator action, couplings derived, QED/weak/strong equations, no imports — but the Lagrangian form is the remaining partial item] `TQMQG_GaugeDynamicsOrigin.md`
+- **QG246** — LAGRANGIAN ORIGIN (tested) — lagrangian origin (no new primitives, D96 only, deterministic, no imported SM Lagrangian): the Lagrangian density is the ACTUALIZATION-FLOW ACTION of the D96 generator fields; L = −(1/4) F^a_μν F^aμν + iψ̄γ^μD_μψ − mψ̄ψ; (1) NOETHER CURRENTS [QG89/QG243] — the D96 symmetries generate conserved currents: U(1) electric, SU(2) isospin, SU(3) color; (2) GENERATOR ALGEBRA / FIELD STRENGTH — F^a_μν = ∂_μA^a_ν − ∂_νA^a_μ + g f^abc A^b_μA^c_ν with the structure constants from the D96 generator commutators [su(2) closes: [σ_z,σ_y]=−2iσ_x, QG161]; the gauge kinetic term −(1/4)F^aF^a is the field-strength norm; (3) MODE COUPLING — the covariant derivative D_μ = ∂_μ − igT^aA^a_μ from the generator action [QG243]; (4) ACTUALIZATION FLOW — the matter term iψ̄γ^μD_μψ − mψ̄ψ from the actualization-flow energy [QG89]; THE THREE SECTORS: QED [Abelian F_μν, e = √(4π/137), T=1], weak [su(2) F^a, g = √(4π·3/Σm), T^a=σ^a/2], strong [su(3) F^a, g_s = √(4π·8/Σ√m), T^a=λ^a/2] — the field equations are the Euler-Lagrange equations with D96-determined couplings; NO IMPORTED SM LAGRANGIAN — the form is the unique minimal action consistent with the D96 symmetries + the actualization-flow energy, the structure constants come from the D96 generator commutators; CLASSIFICATION: LAGRANGIAN ORIGIN [score 5/5 — Noether currents, generator algebra closes, QED/weak/strong Lagrangians, no imports]; closes QG243's remaining Lagrangian-form partial; the Higgs/Yukawa sector [Higgs = collective occupation-density scalar QG84] is the remaining partial item `TQMQG_LagrangianOrigin.md`
