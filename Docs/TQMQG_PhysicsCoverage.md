@@ -3,9 +3,9 @@
 **Single source of truth for all TQM-QG physics validation.**
 
 - Last updated: 2026-08-23
-- Total phases: 243
-- Tested: 207 | Partial: 12 | Untested: 0 | Audit: 24
-- Weighted coverage: 90.1%
+- Total phases: 244
+- Tested: 208 | Partial: 12 | Untested: 0 | Audit: 24
+- Weighted coverage: 90.2%
 
 > Maintenance rule: whenever a QG phase completes, scan its classification, update
 > tested/partial/untested, contradictions, open questions, predictions, and statistics.
@@ -17,12 +17,12 @@
 
 | Metric | Value |
 |---|---|
-| Phases total | 243 |
-| Tested | 207 |
+| Phases total | 244 |
+| Tested | 208 |
 | Partially tested | 12 |
 | Untested | 0 |
 | Audit (QG170) | 24 |
-| Weighted coverage | 90.1% |
+| Weighted coverage | 90.2% |
 | SM tested | 53 |
 | Gravity tested | 33 |
 
@@ -44,7 +44,7 @@
 
 | Domain | Tested | Partial | Untested | Audit | Total |
 |---|---|---|---|---|---|
-| Cosmology | 6 | 0 | 0 | 2 | 8 |
+| Cosmology | 7 | 0 | 0 | 2 | 9 |
 | High-Energy Sector | 6 | 1 | 0 | 0 | 7 |
 | Foundations | 20 | 0 | 0 | 17 | 37 |
 | Gravity / GR | 33 | 2 | 0 | 0 | 35 |
@@ -624,3 +624,7 @@ Historical entries are preserved; updates are additive.
 ### Foundations
 
 - **QG241** — 1 UNIQUE / 3 PREFERRED / 2 RISK (audit) — formula selection audit (audit only, derivation uniqueness of QG203-238 closed-form relations): 1 UNIQUE / 3 PREFERRED / 0 UNDERDETERMINED / 2 RETRO-SELECTION RISK; target-influenced 5/6, preregistered 0/6; UNIQUE — Lambda origin [Λ ∝ 1/R² structurally FORCED: M∝R QG184 ⇒ ρ̄ ~ 1/R² and the single-scale identity Λ ~ ρ̄ ~ H², no alternative scaling, no free factor]; PREFERRED — neutrino masses [QG203: m2 = 1/(Σ√m·√(span/2)), m3 = √#g/(Σm·√2) — natural D96 scale normalizations, 3 candidates, target compared after selection], cosmological fractions [QG234: Ω_Λ = I_occ/ln K — natural max-entropy normalization, 3 candidates], lepton hierarchy [QG209: m_μ = me·Σm²/√occMom, m_τ = me·Σm²·λ₂ — D96-only moments, no fitted exponents, 4 candidates]; RETRO-SELECTION RISK — spectral index n_s [QG237: 1−n_s = ln(span)/(Σm−#d) — specific D96 combination matching the sharp observed 0.03503, 5 candidates, no preregistration, no independent uniqueness principle], acoustic peaks [QG238: ℓ₁ = Σm·ln(span)·5/4, r₂₁ = (Σm−#d)·occ₁/occ₃, r₃₁ = span/√3 — multiplicative factors [5/4, √3, octave ratios] selected to match the observed peaks, 6 candidates, no preregistration]; RECOMMENDATION — the two risk items [n_s, acoustic peaks] should be PRE-REGISTERED or given an independent UNIQUENESS PROOF; they are the strongest anti-fit criticism of the QG203-238 era `TQMQG_FormulaSelectionAudit.md`
+
+### Cosmology
+
+- **QG242** — BLIND SUCCESS (tested) — cosmology blind reproduction (hidden-target audit of QG237/QG238): hide the observed n_s and acoustic peak values; recompute from D96 quantities ONLY [span, Σm, #d, occupancies] using the SAME QG237/QG238 formulas — no new formulas, no target values, no fitting; LOCK STEP computes the predictions from D96 primitives alone [the observed values are not accessible in the derivation path], then the COMPARISON STEP consults the observed values only AFTER the predictions are frozen into a locked record; LOCKED PREDICTIONS: n_s = 1 − ln(span)/(Σm−#d) = 0.96497 [observed 0.9649, dev 0.007%], ℓ₁ = Σm·ln(span)·(5/4) = 220.48 [observed 220.5, dev 0.008%], ℓ₂/ℓ₁ = (Σm−#d)·occ₁/occ₃ = 2.4368 [observed 2.4376, dev 0.035%], ℓ₃/ℓ₁ = span/√3 = 3.6965 [observed 3.6943, dev 0.058%]; MAX DEVIATION 0.058% — all four locked predictions match to sub-0.1%; CLASSIFICATION: BLIND SUCCESS — the formulas are NOT fitted to the observed values, they follow from the D96 spectrum alone; QG237/QG238 SURVIVE the hidden-target audit, answering the QG239 retro-selection concern `TQMQG_CosmologyBlindReproduction.md`
