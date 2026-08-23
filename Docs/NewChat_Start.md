@@ -556,10 +556,12 @@ QG244: lagrangian origin (LAGRANGIAN ORIGIN — no new primitives, D96 only, det
 
 QG245: higgs yukawa origin audit (SM DYNAMICS NOT COMPLETE — audit only, reviews QG84/140-180/203-210/244: 0 DERIVED / 2 PARTIAL / 0 HOSTED / 2 OPEN — the four Higgs/Yukawa components; HIGGS FIELD ORIGIN PARTIAL [the Higgs is the collective occupation-density scalar QG161/169 σ_occ=39.127, a (0,0,0) singlet; QG84: the scalar representation exists and a ρ-condensate serves as the VEV [COMPATIBLE], but the symmetry-breaking potential is not native]; YUKAWA INTERACTION ORIGIN OPEN [no QG phase derives the Yukawa vertices y_f ψ̄ψ φ; QG244 derives the GAUGE Lagrangian, the Yukawa sector is not part of it — the coupling VALUES are indirectly reproduced [fermion masses QG140-210], the interaction FORM is not]; FERMION MASS GENERATION PARTIAL [the mass VALUES are DERIVED from D96 QG140/173/203/209/210; the mass-generation MECHANISM m_f = y_f·v [Higgs VEV × Yukawa] is NOT derived — the masses are spectral/octave identities, not y_f·v]; HIGGS POTENTIAL ORIGIN OPEN [V(φ) = μ²|φ|² + λ|φ|⁴ is NOT derived QG84 SymmetryBreakingNative=false; the quartic λ_H = λ₂·g₂/2 QG169 and the VEV v = 254.37 GeV QG168 are derived, the potential FORM is not]; EXACT MISSING SM DYNAMICS COMPONENTS: [1] the YUKAWA interaction form y_f ψ̄ψ φ, [2] the HIGGS POTENTIAL V(φ) = μ²|φ|² + λ|φ|⁴ and its SSB minimum, [3] the MASS-GENERATION MECHANISM m_f = y_f·v; the Higgs FIELD is derived/identified, the potential, the Yukawa form, and the VEV×Yukawa mechanism are the remaining OPEN/PARTIAL components; the gauge dynamics is now derived [QG243/244], the Higgs/Yukawa sector has 2 OPEN + 2 PARTIAL — these are the exact remaining Standard Model dynamics components).
 
+QG246: higgs potential origin (POTENTIAL ORIGIN — no new primitives, D96 only, deterministic, rejects the imported Higgs potential: the Higgs potential is the ACTUALIZATION-FLOW SELF-ENERGY of the collective occupation-density field φ = ρ − ρ̄ [QG84/161/169, energy = actualization rate QG89]; 1 Z2 SYMMETRY FORCES THE EVEN FORM [QG151-155 — the D96 dihedral automorphism reflection maps φ → −φ (the Z2 doublet structure), so a reflection-invariant potential has only even powers: V(φ) = μ²|φ|² + λ|φ|⁴, the leading renormalizable invariant polynomial — the FORM is derived from the D96 dihedral symmetry, not imported]; 2 μ² < 0 — THE UNIFORM CRITICAL STATE IS UNSTABLE [the origin φ=0 is the uniform critical state QG227; the critical branching vacuum has GROWING VARIANCE Var(Z_k) = k·σ² QG230, so the origin is not a local minimum of the energy: curvature 2μ² < 0, the tachyonic direction of the collective mode]; 3 λ > 0 — OCCUPATION-DENSITY SATURATION [the quartic is the emergent D96 self-coupling λ_H = λ₂·g₂/2 QG169, the self-limiting nonlinearity]; 4 VACUUM MINIMUM / SSB [stationary point |φ|²_min = −μ²/(2λ) = v²/2 with v = (Σm+#d)·ln(span) = 254.37 GeV QG168 — a NONZERO occupation-density condensate (the ρ-condensate VEV QG84 VacuumAsCondensate); the degenerate minima V(±v/√2) = −λ_H·v⁴/4 lie BELOW the symmetric origin V(0)=0 — the D96 reflection symmetry is spontaneously broken]; 5 THE RADIAL MODE [M_H² = 2λ_H·v² → M_H = v·√(λ₂·g₂) = 125.49 GeV, physical 125.25, dev 0.19% — the QG169 cross-check]; DERIVED POTENTIAL: V(φ) = μ²|φ|² + λ|φ|⁴ with μ² = −λ_H·v² = −7873 GeV² (|μ| = 88.7 GeV = M_H/√2), λ = λ_H = 0.1217, v = 254.37 GeV, |φ|_min = v/√2 = 179.9 GeV, V_min = −λ_H·v⁴/4, M_H = 125.49 GeV; CLASSIFICATION: POTENTIAL ORIGIN [score 5/5 — Z2-forced form, μ²<0 from the vacuum instability, λ>0 from QG169, nonzero condensate VEV from QG168, radial mode 0.19%]; closes QG245's OPEN Higgs-potential component; the leading-even-polynomial truncation and the doublet VEV normalization are stated conventions, not new primitives; remaining SM dynamics gaps: the YUKAWA interaction form y_f ψ̄ψ φ and the MASS-GENERATION MECHANISM m_f = y_f·v).
+
 Milestone counters:
 
-TQM-QG 249 phases
-633+ TQM-QG tests verified
+TQM-QG 250 phases
+636+ TQM-QG tests verified
 
 ### QG154: Neutrino Sector Origin
 
@@ -583,5 +585,5 @@ NEUTRINO ORIGIN
 
 Milestone counters:
 
-TQM-QG 249 phases
-633+ TQM-QG tests verified
+TQM-QG 250 phases
+636+ TQM-QG tests verified
