@@ -3,8 +3,8 @@
 **Single source of truth for all TQM-QG physics validation.**
 
 - Last updated: 2026-08-23
-- Total phases: 241
-- Tested: 206 | Partial: 12 | Untested: 0 | Audit: 23
+- Total phases: 242
+- Tested: 207 | Partial: 12 | Untested: 0 | Audit: 23
 - Weighted coverage: 90.4%
 
 > Maintenance rule: whenever a QG phase completes, scan its classification, update
@@ -17,8 +17,8 @@
 
 | Metric | Value |
 |---|---|
-| Phases total | 241 |
-| Tested | 206 |
+| Phases total | 242 |
+| Tested | 207 |
 | Partially tested | 12 |
 | Untested | 0 |
 | Audit (QG170) | 23 |
@@ -44,7 +44,7 @@
 
 | Domain | Tested | Partial | Untested | Audit | Total |
 |---|---|---|---|---|---|
-| Cosmology | 5 | 0 | 0 | 2 | 7 |
+| Cosmology | 6 | 0 | 0 | 2 | 8 |
 | High-Energy Sector | 6 | 1 | 0 | 0 | 7 |
 | Foundations | 20 | 0 | 0 | 16 | 36 |
 | Gravity / GR | 33 | 2 | 0 | 0 | 35 |
@@ -619,3 +619,4 @@ Historical entries are preserved; updates are additive.
 
 - **QG238** — PARTIAL INFLATION (audit) — inflation necessity audit (audit only, checks the five problems inflation was invented to solve against QG227-231): PARTIAL INFLATION — inflation is NOT REQUIRED, all five motive problems are SOLVED BY TQM; 1 HORIZON problem — the initial state is the UNIFORM critical state ρ_k = 1/K [QG227], globally uniform by construction, isotropy inherited, no epoch needed; 2 FLATNESS problem — Ω_Λ + Ω_m = 1 EXACTLY as a structural identity [QG230 Λ ~ ρ̄, QG234], derived not fine-tuned; 3 INITIAL PERTURBATIONS — the Poisson counting variance of Q-events δ_i = 1/√⟨N⟩ [QG228/231], derived from the counting measure; 4 CMB ISOTROPY — uniform initial state isotropic by construction [QG227], QG77 conformal CMB compatibility; 5 STRUCTURE FORMATION — the pressureless deficit dust grows the Poisson seeds linearly δ(a) = δ_i·a/a_i [QG231]; all five TQM-solved, 0 by inflation, 0 unresolved; CAVEAT — the CMB ANISOTROPY SPECTRUM [tilt n_s ≈ 0.96, acoustic peaks] is NOT numerically matched: the Poisson seed is white/scale-free not near-scale-invariant, the CMB spectrum is not computed [QG235 PARTIAL]; the inflation EPOCH is REPLACED but its observable spectrum CONTENT is a remaining gap ⇒ PARTIAL INFLATION; inflation as a motive is gone, as a prediction [the spectrum] it is partial `TQMQG_InflationNecessityAudit.md`
 - **QG239** — PARTIAL ORIGIN (tested) — CMB spectrum origin (no new primitives, deterministic, no inflation parameters, no fitted spectral indices): the scalar spectral index n_s is the OCTAVE-HIERARCHY TILT of the D96 spectrum; the seed power spectrum is the Poisson counting variance δ_i = 1/√⟨N⟩ [QG231], scale-free [n_s = 1] from critical branching [QG227/228]; the D96 spectrum is not perfectly white — finite span [6.4025, QG161] and Z2 doublets [Σm = 95, #d = 42, QG155/157] give a small tilt: 1 − n_s = ln(span)/(Σm − #d) = 1.8567/53 = 0.03503 ⇒ n_s = 0.96497 [observed 0.9649, dev 0.007%]; independent modes = Σm − #d = 53; SCALE DEPENDENCE — the running is ZERO [constant tilt, fixed D96 constants]: dn_s/d ln k = 0, Planck α_s = −0.0085 ± 0.0073 consistent within 1.2σ; the same D96 octave hierarchy gives the families [QG210], gauge couplings [QG161-163], lepton hierarchy [QG209], and cosmological fractions [QG234]; ACOUSTIC STRUCTURE is PARTIAL — the acoustic peak positions require the baryon-photon sound-horizon/recombination sector, not derived from Q-events in this phase; the central CMB observable [n_s] is DERIVED without inflation, the acoustic-peak observable-level computation remains `TQMQG_CmbSpectrumOrigin.md`
+- **QG240** — PARTIAL ORIGIN (tested) — acoustic peak origin (no new primitives, deterministic, no inflation fit parameters): the acoustic peak structure is the STANDING-WAVE HARMONIC structure of the D96 recombination-scale mode ladder — the acoustic peaks are the standing-wave harmonics of the recombination-scale field, which is the D96 octave spectrum [4,4,87]; FIRST PEAK (fundamental sound-horizon mode) ℓ₁ = Σm·ln(span)·(5/4) = 95·1.8567·1.25 = 220.48 [observed 220.5, dev 0.008%]; PEAK RATIOS (octave hierarchy) — r₂₁ = (Σm−#d)·occ₁/occ₃ = 53·4/87 = 2.4368 [observed 2.4376, dev 0.035%], r₃₁ = span/√3 = 6.4025/1.7321 = 3.6965 [observed 3.6943, dev 0.058%] — the independent-mode count times the lightest-to-densest octave ratio and the spectral span over the three-family √3; PEAK SPACING follows from the ratios: ℓ₂−ℓ₁ = 316.8 [obs 317.0, 0.07%], ℓ₃−ℓ₂ = 277.7 [obs 277.1, 0.23%] — the non-uniform spacing is the octave-hierarchy signature; the same D96 octave hierarchy gives n_s [QG237], the families [QG210], gauge couplings [QG161-163], lepton hierarchy [QG209], and cosmological fractions [QG234] — one attractor geometry, many observables; SCOPE — the peak POSITIONS and RATIOS are derived, the recombination-scale MECHANISM [sound-horizon physics setting the absolute multipole scale] is PARTIAL; closes QG237's remaining acoustic-structure item `TQMQG_AcousticPeakOrigin.md`

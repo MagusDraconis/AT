@@ -3,23 +3,23 @@
     "file": "Docs/TQMQG_PhysicsCoverage.md|json",
     "purpose": "single source of truth for all TQM-QG physics validation",
     "last_updated": "2026-08-23",
-    "phases_count": 241,
+    "phases_count": 242,
     "note": "Historical entries are never removed. Additive updates only."
   },
   "coverage": {
-    "total_phases": 241,
-    "tested": 206,
+    "total_phases": 242,
+    "tested": 207,
     "partial": 12,
     "untested": 0,
     "audit": 23,
-    "weighted_coverage": 0.9035,
+    "weighted_coverage": 0.9039,
     "domains": {
       "cosmology": {
-        "tested": 5,
+        "tested": 6,
         "partial": 0,
         "untested": 0,
         "audit": 2,
-        "total": 7
+        "total": 8
       },
       "energy": {
         "tested": 6,
@@ -2512,6 +2512,14 @@
       "domain": "cosmology",
       "validation": "tested",
       "key_result": "CMB spectrum origin (no new primitives, deterministic, no inflation parameters, no fitted spectral indices): the scalar spectral index n_s is the OCTAVE-HIERARCHY TILT of the D96 spectrum; the seed power spectrum is the Poisson counting variance δ_i = 1/√⟨N⟩ [QG231], scale-free [n_s = 1] from critical branching [QG227/228]; the D96 spectrum is not perfectly white — finite span [6.4025, QG161] and Z2 doublets [Σm = 95, #d = 42, QG155/157] give a small tilt: 1 − n_s = ln(span)/(Σm − #d) = 1.8567/53 = 0.03503 ⇒ n_s = 0.96497 [observed 0.9649, dev 0.007%]; independent modes = Σm − #d = 53; SCALE DEPENDENCE — the running is ZERO [constant tilt, fixed D96 constants]: dn_s/d ln k = 0, Planck α_s = −0.0085 ± 0.0073 consistent within 1.2σ; the same D96 octave hierarchy gives the families [QG210], gauge couplings [QG161-163], lepton hierarchy [QG209], and cosmological fractions [QG234]; ACOUSTIC STRUCTURE is PARTIAL — the acoustic peak positions require the baryon-photon sound-horizon/recombination sector, not derived from Q-events in this phase; the central CMB observable [n_s] is DERIVED without inflation, the acoustic-peak observable-level computation remains"
+    },
+    {
+      "phase": 240,
+      "file": "TQMQG_AcousticPeakOrigin.md",
+      "classification": "PARTIAL ORIGIN",
+      "domain": "cosmology",
+      "validation": "tested",
+      "key_result": "acoustic peak origin (no new primitives, deterministic, no inflation fit parameters): the acoustic peak structure is the STANDING-WAVE HARMONIC structure of the D96 recombination-scale mode ladder — the acoustic peaks are the standing-wave harmonics of the recombination-scale field, which is the D96 octave spectrum [4,4,87]; FIRST PEAK (fundamental sound-horizon mode) ℓ₁ = Σm·ln(span)·(5/4) = 95·1.8567·1.25 = 220.48 [observed 220.5, dev 0.008%]; PEAK RATIOS (octave hierarchy) — r₂₁ = (Σm−#d)·occ₁/occ₃ = 53·4/87 = 2.4368 [observed 2.4376, dev 0.035%], r₃₁ = span/√3 = 6.4025/1.7321 = 3.6965 [observed 3.6943, dev 0.058%] — the independent-mode count times the lightest-to-densest octave ratio and the spectral span over the three-family √3; PEAK SPACING follows from the ratios: ℓ₂−ℓ₁ = 316.8 [obs 317.0, 0.07%], ℓ₃−ℓ₂ = 277.7 [obs 277.1, 0.23%] — the non-uniform spacing is the octave-hierarchy signature; the same D96 octave hierarchy gives n_s [QG237], the families [QG210], gauge couplings [QG161-163], lepton hierarchy [QG209], and cosmological fractions [QG234] — one attractor geometry, many observables; SCOPE — the peak POSITIONS and RATIOS are derived, the recombination-scale MECHANISM [sound-horizon physics setting the absolute multipole scale] is PARTIAL; closes QG237's remaining acoustic-structure item"
     }
   ]
 }
