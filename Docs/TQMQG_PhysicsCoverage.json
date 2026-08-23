@@ -3,16 +3,16 @@
     "file": "Docs/TQMQG_PhysicsCoverage.md|json",
     "purpose": "single source of truth for all TQM-QG physics validation",
     "last_updated": "2026-08-23",
-    "phases_count": 273,
+    "phases_count": 274,
     "note": "Historical entries are never removed. Additive updates only."
   },
   "coverage": {
-    "total_phases": 273,
+    "total_phases": 274,
     "tested": 212,
     "partial": 12,
     "untested": 0,
-    "audit": 49,
-    "weighted_coverage": 0.8434,
+    "audit": 50,
+    "weighted_coverage": 0.8412,
     "domains": {
       "cosmology": {
         "tested": 7,
@@ -32,8 +32,8 @@
         "tested": 20,
         "partial": 0,
         "untested": 0,
-        "audit": 42,
-        "total": 62
+        "audit": 43,
+        "total": 63
       },
       "gravity": {
         "tested": 33,
@@ -593,6 +593,16 @@
   ],
   "recent_findings": [
     {
+      "phase": 272,
+      "file": "TQMQG_DistinctionOriginAudit.md",
+      "title": "Distinction Origin Audit",
+      "classification": "UNIVERSAL DIFFERENCE PRINCIPLE",
+      "domain": "foundation",
+      "validation": "audit",
+      "summary": "distinction origin audit (the TERMINAL question of the individuation chain",
+      "report_url": "https://github.com/MagusDraconis/TQM/blob/TQM_v1.1/Docs/Research/TQMQG_DistinctionOriginAudit.md"
+    },
+    {
       "phase": 271,
       "file": "TQMQG_DistinctionPrincipleAudit.md",
       "title": "Distinction Principle Audit",
@@ -641,16 +651,6 @@
       "validation": "audit",
       "summary": "resonance invariant audit (the QUESTION",
       "report_url": "https://github.com/MagusDraconis/TQM/blob/TQM_v1.1/Docs/Research/TQMQG_ResonanceInvariantAudit.md"
-    },
-    {
-      "phase": 266,
-      "file": "TQMQG_ProjectionFamilyAudit.md",
-      "title": "Projection Family Audit",
-      "classification": "SINGLE RESONANCE INVARIANT",
-      "domain": "foundation",
-      "validation": "audit",
-      "summary": "projection family audit (the QUESTION",
-      "report_url": "https://github.com/MagusDraconis/TQM/blob/TQM_v1.1/Docs/Research/TQMQG_ProjectionFamilyAudit.md"
     }
   ],
   "phases": [
@@ -2837,6 +2837,14 @@
       "domain": "foundation",
       "validation": "audit",
       "key_result": "distinction principle audit (the QUESTION: what makes a Q-event a distinguishable unit? is count more fundamental than distinction, or vice versa? no observables, no formulas, D96 only, deterministic): THE EVIDENCE — (1) COUNTABILITY: N=96 actualization events, Σm=95 modes, Born rule Σρ=1 exact by construction [QG216, self-consistent count QG268]; (2) DISTINCTION CANNOT COME FROM STRUCTURE: the observable sector is a REGULAR graph [all 96 nodes degree 12, QG266] — the nodes carry NO structural labels, every node is structurally identical, so there is nothing in the graph that separates one node from another; (3) THE DEGENERACY EVIDENCE [decisive]: the multiplicity multiset is [42×2, 5, 6] — 42 groups of two modes have IDENTICAL frequency [indistinguishable by ω=√λ], yet they are counted as 84 SEPARATE units in Σm=95 [VERIFIED: the count counts units that are NOT distinguished by frequency — unit-ness/individuation is PRIOR to distinction-by-frequency]; (4) INDIVIDUATION: a Q-event is a NETWORK TRANSITION [a tick, QG29] — it actualizes at a POSITION in causal order [branching generation k, QG1], the transition is what individuates the event; THE ORDERING QUESTION — COUNT from DISTINCTION? NO [degenerate pairs have identical ω yet are counted separately — count works without spectral distinction]; DISTINCTION from COUNT? NO [the network is regular — no structural order separates the nodes]; BOTH DIRECTIONS FAIL — they arise TOGETHER from the SINGLE act of actualization: a Q-event is a distinct tick at a distinct causal position, and this ONE act makes the event simultaneously COUNTABLE [one tick = one unit → N, ρ, Σm] and DISTINGUISHABLE [a distinct tick at a distinct position]; DETERMINATION: SINGLE INDIVIDUATION PRINCIPLE [distinction score 6/6] — count and distinction are NOT ordered, neither is more fundamental; they are the two inseparable faces of the single act of individuation [actualization]; a Q-event is a distinguishable unit BECAUSE IT ACTUALIZES — a distinct tick at a distinct causal position; completes the reduction chain QG260→261→262→263→264→265→266→267→268→269: Resonance Layer → Operator Layer → Same Operator Sectors → Single Resonance Dynamics → Single Resonance Invariant → Universal Resonance Invariant [Σλ=12·96] → Universal Conservation Law [Σλ=trace=2E=N·d] → Universal Conservation Principle [all laws = count conservation] → Universal Self-Consistency [the count is conserved because a Q-event IS a unit] → SINGLE INDIVIDUATION PRINCIPLE [a Q-event is a unit because it actualizes — count and distinction are the two faces of the one individuation act]; the theory bottoms out in the INDIVIDUATION ACT: the primitive actualizes, and that single act makes it a countable, distinguishable unit"
+    },
+    {
+      "phase": 272,
+      "file": "TQMQG_DistinctionOriginAudit.md",
+      "classification": "UNIVERSAL DIFFERENCE PRINCIPLE",
+      "domain": "foundation",
+      "validation": "audit",
+      "key_result": "distinction origin audit (the TERMINAL question of the individuation chain: WHAT is being distinguished, and does distinction arise from structure, actualization, or a deeper principle? no observables, no formulas, D96 only, deterministic): THE CANDIDATES — (a) CAUSAL POSITION: the branching generations k=0..K−1, density shares ρ_k=μ^k/S are DISTINCT per generation [μ=2: 0.0039, 0.0078, 0.0157, ... distinct; causal positions ARE distinguishable when μ≠1]; (b) NETWORK POSITION: the observable sector is a REGULAR graph [all 96 nodes degree 12, QG266] — all nodes structurally identical, NO network-position distinction, no structural labels; (c) STATE DIFFERENCE: a Q-event is a PROJECTION to a tick/no-tick binary state [QG73] — the event changes state, the DIFFERENCE between before/after IS the tick; (d) ACTUALIZATION DIFFERENCE: a Q-event is a NETWORK TRANSITION [QG29] — the event IS a before→after difference, ρ counts these transitions; THE D96 DIFFERENCE STRUCTURE — the observable-sector Laplacian has 96 eigenvalues: ONE ZERO MODE [the constant vector, in ker L, QG266 — the BACKGROUND/uniform reference] and 95 POSITIVE modes [the DIFFERENCES from the background], with 44 distinct frequencies [degeneracy groups]; distinction = the difference between the background and each mode; WHAT IS BEING DISTINGUISHED — DIFFERENCES THEMSELVES: each Q-event is a difference [before→after transition], causal positions are distinguished by their different shares ρ_k=μ^k/S, the positive modes are distinguished by their difference from the zero/background; there is no pre-existing substance that gets a label — the distinction IS the difference; WHERE DISTINCTION COMES FROM — NOT from structure [the regular network provides no positions/labels/separating geometry]; from ACTUALIZATION — yes, but only because actualization IS a difference [the event is a before→after transition, and the transition is the difference — actualization is not a separate source, it IS a difference]; the deeper source is DIFFERENCE itself: distinction is the registration of a difference, the most primitive notion — before structure, before actualization, before count: a thing is distinguishable exactly insofar as it differs from something else; DETERMINATION: UNIVERSAL DIFFERENCE PRINCIPLE [origin score 6/6] — distinction does not arise from structure [the regular network has none] and not from actualization as a distinct source [actualization IS a difference]; distinction = DIFFERENCE, the most primitive notion of the theory; what is distinguished is differences: the zero/background vs the positive modes, the μ^k/S shares, the before→after transitions; completes the reduction chain QG260→261→262→263→264→265→266→267→268→269→270: Resonance Layer → Operator Layer → Same Operator Sectors → Single Resonance Dynamics → Single Resonance Invariant → Universal Resonance Invariant [Σλ=12·96] → Universal Conservation Law [Σλ=trace=2E=N·d] → Universal Conservation Principle [all laws = count conservation] → Universal Self-Consistency [count conserved because a Q-event IS a unit] → Single Individuation Principle [count & distinction = two faces of actualization] → UNIVERSAL DIFFERENCE PRINCIPLE [what is distinguished is DIFFERENCE itself]; the theory bottoms out in DIFFERENCE, the most primitive notion, from which distinction, individuation, count, and ultimately all conservation laws arise"
     }
   ]
 }
