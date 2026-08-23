@@ -11,13 +11,17 @@
         <MudIconButton Icon="@Icons.Material.Filled.Menu" Color="Color.Inherit" OnClick="@ToggleDrawer" />
         <MudText Typo="Typo.h6">THE Q-MODEL</MudText>
         <MudSpacer />
-        <MudLink Href="https://doi.org/10.5281/zenodo.20681734" Target="_blank" Underline="Underline.None" Class="top-nav-link mx-1" AriaLabel="Zenodo DOI">
-            <MudImage Src="images/zenodo.20681734.svg" Alt="Zenodo DOI badge" Class="top-nav-badge" />
-        </MudLink>
-        <MudTooltip Text="https://github.com/MagusDraconis/TQM" Placement="Placement.Bottom" Arrow="true">
-            <MudIconButton Href="https://github.com/MagusDraconis/TQM" Target="_blank" Icon="@Icons.Custom.Brands.GitHub" Color="Color.Primary" Class="top-nav-link" AriaLabel="GitHub repository" Size="Size.Medium" />
+        <MudTooltip Text="Zenodo DOI: https://doi.org/10.5281/zenodo.20681734" Placement="Placement.Bottom" Arrow="true">
+            <MudLink Href="https://doi.org/10.5281/zenodo.20681734" Target="_blank" Underline="Underline.None" Class="top-nav-link mx-1" AriaLabel="Zenodo DOI">
+                <MudImage Src="images/zenodo.20681734.svg" Alt="Zenodo DOI badge" Class="top-nav-badge zenodo-badge-desktop" />
+                <MudIcon Icon="@Icons.Material.Filled.Inventory" Class="zenodo-badge-mobile" />
+            </MudLink>
         </MudTooltip>
-        <MudText Typo="Typo.caption" Class="hide-on-mobile muted">Research Atlas · v1.1</MudText>
+        <MudTooltip Text="https://github.com/MagusDraconis/TQM" Placement="Placement.Bottom" Arrow="true">
+            <MudIconButton Href="https://github.com/MagusDraconis/TQM" Target="_blank" Icon="@Icons.Custom.Brands.GitHub" Color="Color.Primary" Class="top-nav-link github-icon-desktop" AriaLabel="GitHub repository" Size="Size.Medium" />
+            <MudIconButton Href="https://github.com/MagusDraconis/TQM" Target="_blank" Icon="@Icons.Custom.Brands.GitHub" Color="Color.Primary" Class="top-nav-link github-icon-mobile" AriaLabel="GitHub repository" Size="Size.Small" />
+        </MudTooltip>
+        
     </MudAppBar>
 
     <MudDrawer @bind-Open="_drawerOpen" Variant="DrawerVariant.Responsive" Breakpoint="Breakpoint.Lg" Anchor="Anchor.Left" Elevation="1">

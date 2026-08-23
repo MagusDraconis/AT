@@ -13,6 +13,15 @@ a { color: inherit; }
 .top-nav-link:hover { color: #81D4FA; }
 .top-nav-link .bi-github { font-size: 2rem; line-height: 1; }
 .top-nav-badge { display: block; height: 28px; width: auto; }
+.github-icon-desktop { display: inline-flex !important; }
+.github-icon-mobile { display: none !important; }
+.zenodo-badge-mobile { display: none !important; }
+@media (max-width: 640px) {
+  .github-icon-desktop { display: none !important; }
+  .github-icon-mobile { display: inline-flex !important; }
+  .top-nav-badge.zenodo-badge-desktop { display: none !important; }
+  .zenodo-badge-mobile { display: inline-flex !important; font-size: 1.15rem; line-height: 1; }
+}
 
 /* Hero */
 .hero {
