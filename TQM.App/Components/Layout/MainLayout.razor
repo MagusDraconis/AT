@@ -11,7 +11,13 @@
         <MudIconButton Icon="@Icons.Material.Filled.Menu" Color="Color.Inherit" OnClick="@ToggleDrawer" />
         <MudText Typo="Typo.h6">THE Q-MODEL</MudText>
         <MudSpacer />
-        <MudText Typo="Typo.caption" Class="hide-on-mobile muted">Research Atlas · v1.0</MudText>
+        <MudLink Href="https://doi.org/10.5281/zenodo.20681734" Target="_blank" Underline="Underline.None" Class="top-nav-link mx-1" AriaLabel="Zenodo DOI">
+            <MudImage Src="images/zenodo.20681734.svg" Alt="Zenodo DOI badge" Class="top-nav-badge" />
+        </MudLink>
+        <MudTooltip Text="https://github.com/MagusDraconis/TQM" Placement="Placement.Bottom" Arrow="true">
+            <MudIconButton Href="https://github.com/MagusDraconis/TQM" Target="_blank" Icon="@Icons.Custom.Brands.GitHub" Color="Color.Primary" Class="top-nav-link" AriaLabel="GitHub repository" Size="Size.Medium" />
+        </MudTooltip>
+        <MudText Typo="Typo.caption" Class="hide-on-mobile muted">Research Atlas · v1.1</MudText>
     </MudAppBar>
 
     <MudDrawer @bind-Open="_drawerOpen" Variant="DrawerVariant.Responsive" Breakpoint="Breakpoint.Lg" Anchor="Anchor.Left" Elevation="1">
