@@ -568,10 +568,12 @@ QG250: external referee audit (2 FATAL / 14 MAJOR / 8 MINOR / 1 EDITORIAL — ho
 
 QG251: parameter independence audit (LOW PARAMETER LEAKAGE — audit only, tests the QG250 F1 FATAL attack's premise 'the D96 moment set is eight independent knobs': the nine D96 parameters classified DERIVED/DEPENDENT/INDEPENDENT; THE DEPENDENCY STRUCTURE — all eight spectral quantities (Σm=95, #d=42, #g=44, span=6.4025, λ₂=0.38635, Σ√m=64.08, occ=[4,4,87], occMom=1900.25) descend from ONE object: the D96 network spectrum, the degeneracy multiset [42×2, 5, 6] (#g=44 groups, Σm=95 modes) + the octave band occupancies of that same spectrum; DEPENDENT — Σm [Σ of the multiset], #d [count of m_i=2], #g [group count], span [eigenvalue ratio of the same spectrum], λ₂ [gap of the same network's Laplacian], Σ√m [half-moment of the same multiset], occ [band occupancies of the same spectrum]; DERIVED — occMom [Σ occ²/occ₀, a function of occ]; INDEPENDENT — me=0.511 [the single free empirical anchor]; NONE of the eight is independently adjustable — each is fixed the moment the D96 network (universal attractor QG116b/159/160) is given; EFFECTIVE INDEPENDENT PARAMETER COUNT = 2 [me + the D96 structural selection]; derived-target ratio ≈ 20:1 [~40 observables / 2 free inputs — an order of magnitude above the 1:1 that signals fitting]; DETERMINATION: LOW parameter-leakage risk on the count basis — the F1 premise of eight independent knobs is factually wrong; the eight quantities collapse to one spectrum; the RESIDUAL and separate risk is FORMULA SELECTION [which combination of the locked quantities was picked post-hoc — n_s/acoustic peaks QG239, QG250 #6 — already disclosed as RETRO-SELECTION RISK and blind-tested QG240 BLIND SUCCESS], a distinct claim not adjudicated here).
 
+QG252: independent prediction audit (MEDIUM INDEPENDENT EVIDENCE — audit only, measures how much of TQM's validation comes from genuine prediction vs reconstruction; reviews QG176/177/190-193/199-202/240; classifies every result POSTDICTION / BLIND RECONSTRUCTION / PRE-REGISTERED PREDICTION / EXTERNAL SUPPORT: the inventory of 60 evidence units — POSTDICTION 35 [the tested observable register: masses, mixings, couplings, EW precision, gravity, cosmological fractions — targets KNOWN when derived], BLIND RECONSTRUCTION 21 [QG176 Higgs 5 (MH, ΓH, MH/MW, MH/MZ, λ_H hidden, rebuilt from pre-Higgs D96, 0.19%), QG177 leave-one-out 12 (each observable hidden, mean dev 0.58%), QG240 cosmology blind 4 (n_s, ℓ₁, ℓ₂/ℓ₁, ℓ₃/ℓ₁ locked from D96 only, max dev 0.058%)], PRE-REGISTERED PREDICTION 3 [P1 106 GeV QG190, P2 m_ββ=2.02 meV QG191, P3 sector-ladder QG192 — frozen before measurement], EXTERNAL SUPPORT 1 [P3 151.98 rung ~ 152 GeV diphoton excess (arXiv:2503.16245), local 3.6σ / global up to 5.4σ, z=2.80σ, QG200/201]; P1/P2 remain PENDING (0 external units yet); EVIDENCE FRACTIONS — methodological independence (derivation machinery never sees the target: blind + pre-registered + external) = 25/60 = 41.7%; temporal independence (strictest: the target did not exist at derivation time) = 4/60 = 6.7%; postdiction (target known) = 35/60 = 58.3%; DETERMINATION: MEDIUM independent-evidence strength — 42% of validation units are produced with the target hidden from the derivation machinery (methodological blindness), of which the temporally-predictive core is 6.7%; the QG250 F2 self-confirmation claim is only PARTIALLY mitigated — the genuinely temporal prediction content is small but nonzero and externally supported (P3), while 58% of the numerical evidence base remains postdiction against known targets).
+
 Milestone counters:
 
-TQM-QG 255 phases
-651+ TQM-QG tests verified
+TQM-QG 256 phases
+654+ TQM-QG tests verified
 
 ### QG154: Neutrino Sector Origin
 
@@ -595,5 +597,5 @@ NEUTRINO ORIGIN
 
 Milestone counters:
 
-TQM-QG 255 phases
-651+ TQM-QG tests verified
+TQM-QG 256 phases
+654+ TQM-QG tests verified
