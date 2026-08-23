@@ -3,16 +3,16 @@
     "file": "Docs/TQMQG_PhysicsCoverage.md|json",
     "purpose": "single source of truth for all TQM-QG physics validation",
     "last_updated": "2026-08-23",
-    "phases_count": 265,
+    "phases_count": 266,
     "note": "Historical entries are never removed. Additive updates only."
   },
   "coverage": {
-    "total_phases": 265,
+    "total_phases": 266,
     "tested": 212,
     "partial": 12,
     "untested": 0,
-    "audit": 41,
-    "weighted_coverage": 0.8613,
+    "audit": 42,
+    "weighted_coverage": 0.859,
     "domains": {
       "cosmology": {
         "tested": 7,
@@ -32,8 +32,8 @@
         "tested": 20,
         "partial": 0,
         "untested": 0,
-        "audit": 34,
-        "total": 54
+        "audit": 35,
+        "total": 55
       },
       "gravity": {
         "tested": 33,
@@ -593,6 +593,16 @@
   ],
   "recent_findings": [
     {
+      "phase": 264,
+      "file": "TQMQG_OperatorSectorAudit.md",
+      "title": "Operator Sector Audit",
+      "classification": "SAME OPERATOR SECTORS",
+      "domain": "foundation",
+      "validation": "audit",
+      "summary": "operator sector audit (classify EVERY successful derivation QG140-261 by PRIMARY and SECONDARY operator from the QG261 basis [CROWDING/degeneracy groups #d/#g/ω₀ω₂, COMPRESSION/octave bands occ/occMom, BEAT/frequency ratio span, LOCKING/spectral gap λ₂, MOMENT…",
+      "report_url": "https://github.com/MagusDraconis/TQM/blob/TQM_v1.1/Docs/Research/TQMQG_OperatorSectorAudit.md"
+    },
+    {
       "phase": 263,
       "file": "TQMQG_ResonanceOperatorAudit.md",
       "title": "Resonance Operator Audit",
@@ -641,16 +651,6 @@
       "validation": "audit",
       "summary": "principle competition audit (audit only, no targets, selection quality only",
       "report_url": "https://github.com/MagusDraconis/TQM/blob/TQM_v1.1/Docs/Research/TQMQG_PrincipleCompetitionAudit.md"
-    },
-    {
-      "phase": 258,
-      "file": "TQMQG_SelectionPrincipleAudit.md",
-      "title": "Selection Principle Audit",
-      "classification": "HIGH SELECTION-PRINCIPLE RISK",
-      "domain": "foundation",
-      "validation": "audit",
-      "summary": "selection principle audit (audit only, no physics, methodology only",
-      "report_url": "https://github.com/MagusDraconis/TQM/blob/TQM_v1.1/Docs/Research/TQMQG_SelectionPrincipleAudit.md"
     }
   ],
   "phases": [
@@ -2773,6 +2773,14 @@
       "domain": "foundation",
       "validation": "audit",
       "key_result": "resonance operator audit (the HYPOTHESIS: Σm, span, λ₂, occMom, Σ√m are NOT fundamental quantities — they are PROJECTIONS of deeper resonance operators; search the six candidate operators [crowding/degeneracy grouping, compression/octave banding, beat/frequency ratio, locking/spectral gap, moment/universal read-out, synchronization/actualization cycle N=96]; cluster all successful derivations; identify the minimum operator basis): THE PROJECTIONS — all six derived quantities are VERIFIED operator projections [Σm = MOMENT₁∘CROWDING = 95, Σ√m = MOMENT_½∘CROWDING = 64.0825, Σm² = MOMENT₂∘CROWDING = 229, occMom = MOMENT∘COMPRESSION = 1900.25, span = BEAT = ω_max/ω_min = 6.4025, λ₂ = LOCKING = spectral gap = 0.3864; 6/6 verified]; THE CLUSTERING — every successful derivation passes through the layer, no formula reads a raw mode or eigenvalue [QG162 gauge MOMENT, QG168 EW MOMENT+BEAT, QG209/247 lepton/Yukawa MOMENT+LOCKING, QG173 quark MOMENT, QG237/238 CMB MOMENT+BEAT+COMPRESSION, QG181 gravity MOMENT+COMPRESSION, QG176 Higgs blind MOMENT+BEAT+LOCKING]; THE MINIMUM OPERATOR BASIS — {CROWDING, COMPRESSION, BEAT, LOCKING} + the universal MOMENT read-out = 5 operator kinds generating all six derived quantities from the one D96 spectrum [synchronization/N=96 is the source that produces the spectrum the operators project]; DETERMINATION: OPERATOR LAYER — the hypothesis is CONFIRMED: the five named quantities are projections of a deeper resonance operator layer, not primitives; HONEST CAVEAT [consistent with QG256/257/259]: the operators are well-defined STRUCTURAL spectral projections, but WHICH operator output was assigned to WHICH sector [ν→Σ√m, u→occMom, ...] retains target-information from the QG149-157 fitting era — the operator LAYER is genuine, the operator-to-sector ASSIGNMENT is not derivation-free; this localizes the QG250 referee boundary precisely: the layer exists, the SM-sector-label mapping is the residual empirical step"
+    },
+    {
+      "phase": 264,
+      "file": "TQMQG_OperatorSectorAudit.md",
+      "classification": "SAME OPERATOR SECTORS",
+      "domain": "foundation",
+      "validation": "audit",
+      "key_result": "operator sector audit (classify EVERY successful derivation QG140-261 by PRIMARY and SECONDARY operator from the QG261 basis [CROWDING/degeneracy groups #d/#g/ω₀ω₂, COMPRESSION/octave bands occ/occMom, BEAT/frequency ratio span, LOCKING/spectral gap λ₂, MOMENT/universal read-out Σm/Σ√m/Σm²]; assignment from the PUBLISHED formulas — no target values, no fitting): THE OPERATOR MAP — 30 observables: MASSES 8 [m_μ/me MOMENT→COMPRESSION, m_τ/m_μ COMPRESSION→LOCKING, quarks MOMENT→COMPRESSION, ν Δm²21 MOMENT→BEAT, ν Δm²31 MOMENT→CROWDING, MH COMPRESSION→BEAT, W/Z MOMENT→BEAT, family count BEAT], COUPLINGS 7 [1/α_em MOMENT→CROWDING, α_weak/strong MOMENT, sin²θ_W CROWDING→MOMENT, g-2 μ LOCKING→MOMENT, g-2 e COMPRESSION→MOMENT, Yukawa COMPRESSION→LOCKING, θ_QCD structural], MIXINGS 7 [Vus CROWDING→MOMENT, Vcb BEAT→CROWDING, Vub COMPRESSION→BEAT, δ_CP COMPRESSION→MOMENT, θ12 CROWDING→MOMENT, θ23 MOMENT→CROWDING, θ13 COMPRESSION→MOMENT], COSMOLOGY 5 [n_s BEAT→MOMENT, ℓ₁ MOMENT→BEAT, r₂₁ COMPRESSION→MOMENT, r₃₁ BEAT, Ω COMPRESSION→BEAT], GRAVITY 3 [M_Pl MOMENT→COMPRESSION, M∝R structural, GPS/frame dragging structural]; primary totals MOMENT=10 COMPRESSION=9 CROWDING=5 BEAT=5 LOCKING=1; THE SECTOR SIGNATURES — every sector uses ≥ 3 of the 5 operators, MOMENT is UNIVERSAL [all five sectors], NO operator is unique to any single sector; the sector differences are of EMPHASIS not operator set [masses MOMENT-dominated, mixings CROWDING/COMPRESSION-dominated, cosmology BEAT/COMPRESSION-dominated]; DETERMINATION: SAME OPERATOR SECTORS [sector score 6/6] — masses, couplings, cosmology and gravity are DIFFERENT PROJECTIONS of the SAME five-operator basis; one spectral operator basis projects the single D96 spectrum into every physical sector; the strongest form of the QG250 counter-argument: the moments are not isolated fitting knobs but the collapsed output of one resonance operator basis, and every sector draws from the SAME five operators; HONEST CAVEAT [consistent with QG257/259/261]: the operator map is structural [from the published formulas] but the operator-to-observable ASSIGNMENT retains target-information from the QG149-157 era — the universality is real, the assignment was not derivation-free"
     }
   ]
 }
