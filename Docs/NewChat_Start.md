@@ -576,10 +576,12 @@ QG254: formula selection principle (SELECTION PRINCIPLE — methodology only, no
 
 QG255: secondary selection principle (UNIQUE SELECTION PRINCIPLE — methodology only, no new physics; known QG254 octave preservation; requirements no observables, no target values, D96 only, deterministic; derives ONE secondary rule resolving the QG254 octave-preserving ties: THE RULE — MOMENT-CLOSURE MINIMUM DESCRIPTION LENGTH, applied in order to the octave-preserving candidate set: (1) MINIMAL COMPLEXITY [fewest operators/quantities], (2) NOETHER CONSISTENCY [no free constant multiplier — a genuine D96 coupling is a ratio of D96 quantities only; √3 is NOT flagged because it is D96-native √#families QG210], (3) MOMENT CLOSURE / FULL-SPECTRUM USAGE [highest total moment order: occMom (2nd octave moment) and Σm² (2nd mode moment) beat half-moments Σ√m and counts #d/#g]; APPLICATION TO THE QG254 TIES (structure-only, no target): m_μ/me [Σm²/√occMom (c=5) vs 5/4·Σ√m/λ₂ (c=5) — Noether drops the free 5/4 → SELECTS Σm²/√occMom], m_τ/m_μ [√occMom·λ₂ (c=4) vs √3·√Σm (c=4) vs √#d/λ₂ (c=4) — moment closure: occMom(2)+λ₂(1)=3 beats Σ√m(0.5) and #d(0)+λ₂(1)=1 → SELECTS √occMom·λ₂], r₃₁ [span/√3 (c=3) vs λ₂³·Σ√m (c=4) — minimal complexity → SELECTS span/√3]; ALL THREE tie cases resolve to a unique formula (the published one) with NO target information; CLASSIFICATION: UNIQUE SELECTION PRINCIPLE — the combined chain QG253 (search space) + QG254 (octave preservation) + QG255 (moment-closure MDL) uniquely selects the published formulas for all audited observables from D96 structure alone, before any comparison).
 
+QG256: selection principle audit (HIGH SELECTION-PRINCIPLE RISK — audit only, no physics, methodology only; reviews QG254 octave preservation and QG255 moment-closure MDL; determines whether these rules are FORCED by D96 or selected post-hoc: for each rule — derivable? necessary? alternative rules? competing principles?; RULE 1 OCTAVE PRESERVATION — PREFERRED [derivable PARTIALLY: the octave bands occ=[4,4,87] ARE D96-native (QG155/210) but the PROHIBITION FORM (no isolated band) was calibrated on the QG253 alternatives; necessary NO — competing symmetry projections exist (prefer occMom-based forms, band-permutation invariance trivially true since occ₀=occ₁=4, full-spectrum usage, the λ₂ scale)]; RULE 2 MOMENT-CLOSURE MDL — ARBITRARY [derivable NO — MDL is imported from information theory and the moment-order ranking is conventional; necessary NO; alternatives: prefer λ₂ as the mass scale, fewest distinct quantities, octave-permutation invariance, 3rd-moment closure; CONSISTENCY DECISIVE — INCONSISTENT: QG255 rejects 5/4·Σ√m/λ₂ because '5/4 is a free constant', but the PUBLISHED QG238 formula ℓ₁ = Σm·ln(span)·(5/4) uses 5/4 — the exclusion was calibrated on the tie candidate, not on a uniform D96 principle]; SELECTION-PRINCIPLE RISK: HIGH — 1 PREFERRED / 1 ARBITRARY / 0 FORCED; NEITHER rule is FORCED; the rules were introduced AFTER QG253 revealed the non-uniqueness, so they carry the same retro-selection character they were intended to remove — at the meta-level; the honest status of the QG253-255 selection-principle program is a reasonable heuristic narrowing, not a derivation of forced selection rules).
+
 Milestone counters:
 
-TQM-QG 259 phases
-663+ TQM-QG tests verified
+TQM-QG 260 phases
+666+ TQM-QG tests verified
 
 ### QG154: Neutrino Sector Origin
 
@@ -603,5 +605,5 @@ NEUTRINO ORIGIN
 
 Milestone counters:
 
-TQM-QG 259 phases
-663+ TQM-QG tests verified
+TQM-QG 260 phases
+666+ TQM-QG tests verified
