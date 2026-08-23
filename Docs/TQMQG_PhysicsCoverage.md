@@ -3,9 +3,9 @@
 **Single source of truth for all TQM-QG physics validation.**
 
 - Last updated: 2026-08-23
-- Total phases: 238
-- Tested: 205 | Partial: 12 | Untested: 0 | Audit: 21
-- Weighted coverage: 90.9%
+- Total phases: 239
+- Tested: 205 | Partial: 12 | Untested: 0 | Audit: 22
+- Weighted coverage: 90.6%
 
 > Maintenance rule: whenever a QG phase completes, scan its classification, update
 > tested/partial/untested, contradictions, open questions, predictions, and statistics.
@@ -17,12 +17,12 @@
 
 | Metric | Value |
 |---|---|
-| Phases total | 238 |
+| Phases total | 239 |
 | Tested | 205 |
 | Partially tested | 12 |
 | Untested | 0 |
-| Audit (QG170) | 21 |
-| Weighted coverage | 90.9% |
+| Audit (QG170) | 22 |
+| Weighted coverage | 90.6% |
 | SM tested | 53 |
 | Gravity tested | 33 |
 
@@ -46,7 +46,7 @@
 |---|---|---|---|---|---|
 | Cosmology | 4 | 0 | 0 | 1 | 5 |
 | High-Energy Sector | 6 | 1 | 0 | 0 | 7 |
-| Foundations | 20 | 0 | 0 | 15 | 35 |
+| Foundations | 20 | 0 | 0 | 16 | 36 |
 | Gravity / GR | 33 | 2 | 0 | 0 | 35 |
 | Network & Spectrum | 42 | 0 | 0 | 0 | 42 |
 | Predictions | 11 | 0 | 0 | 4 | 15 |
@@ -610,3 +610,7 @@ Historical entries are preserved; updates are additive.
 ### Cosmology
 
 - **QG236** — FRACTION ORIGIN (tested) — cosmological density fractions Ω_Λ and Ω_m DERIVED from the counting measure (no new primitives, deterministic, no Planck-fit/ΛCDM/observed inputs): the fractions are the INFORMATION-DENSITY FRACTIONS of the D96 octave record; Ω_Λ = I_occ/ln K where I_occ = KL(p‖uniform) = 0.7513 nats is the realized octave record's information [D96 occupancies [4,4,87], 95 modes, QG210/QG228] and ln K = ln 3 = 1.0986 nats is the maximum possible information over the K=3 octaves [family count, QG210] ⇒ Ω_Λ = 0.6839 [observed 0.6847, dev 0.12%]; Ω_m = 1 − Ω_Λ = 0.3161 [observed 0.3153, dev 0.26%] — the deficit matter [QG195/196] is the complement of the vacuum in the single-scale R universe [flatness, QG230]; Ω_Λ + Ω_m = 1 EXACTLY — the single-scale flatness identity [Λ ~ ρ̄, one scale R]; the octave record is the universal attractor's spectral geometry [QG116b/QG210], the equilibrium configuration; observed Planck values used only as comparison anchors; CLOSES the QG233 last two open parameters [Ω_Λ and Ω_m] — every fundamental parameter is now DERIVED or a documented BOUNDARY, the parameter sector is PARAMETER COMPLETE `TQMQG_CosmologicalFractionsOrigin.md`
+
+### Foundations
+
+- **QG237** — MISSING: INFLATION (audit) — external TOE checklist audit (audit only, compares TQM against GENERIC Theory-of-Everything requirements, not TQM's own; reviews QG0-QG234, 31 criteria across six categories): 23 DERIVED / 1 COMPATIBLE / 6 PARTIAL / 0 UNTESTED / 1 OPEN; derived fraction 74.2%, weighted 83.9%; STANDARD MODEL 7 [SU(3)xSU(2)xU(1) COMPATIBLE QG60/161, 3 generations DERIVED QG210, Higgs mechanism PARTIAL QG84/169, masses DERIVED QG203/204/209/210, couplings DERIVED QG162/163/204, mixing DERIVED QG165-167, θ_QCD DERIVED QG174]; GRAVITY 5 [Einstein eqs DERIVED QG197/198/222, G DERIVED QG181/182, GR observables DERIVED QG103/186/187/212/209, BH thermodynamics PARTIAL [exact 1/4 BOUNDARY needs π QG185/196], GW DERIVED QG43/44]; QUANTUM GRAVITY 3 [QM same primitive DERIVED QG216/218/220, QG regime/Planck PARTIAL QG14 no LQG/string-comparable framework, quantization of gravity PARTIAL no quantum-gravitational corrections]; COSMOLOGY 7 [expansion DERIVED QG77, dark matter DERIVED QG195/206, Λ DERIVED QG230, Ω_Λ/Ω_m DERIVED QG234, structure formation DERIVED QG231, CMB spectrum PARTIAL QG77 anisotropy not numerically derived, INFLATION OPEN, initial conditions DERIVED QG227]; EXPERIMENTAL PREDICTIONS 3 [pre-registered DERIVED QG190-193, tested PARTIAL P3 2.80σ P1/P2 PENDING, novel signatures DERIVED]; PRECISION TESTS 6 [EW DERIVED QG175, g-2 DERIVED QG171/178, CKM/PMNS DERIVED QG165-167, gravitational precision DERIVED QG187/186, blind/LOO DERIVED QG176/177]; VERDICT: MISSING: Inflation — the single genuinely OPEN generic TOE criterion; TQM derives structure formation from Poisson seeds without needing inflation [QG231]; the partials are stated boundaries [Bekenstein 1/4], framework-completeness items [Higgs mechanism, QG phenomenology/quantization, CMB spectrum], and experiment-ahead-of-data [tested predictions] `TQMQG_ExternalToeChecklistAudit.md`
