@@ -3,16 +3,16 @@
     "file": "Docs/TQMQG_PhysicsCoverage.md|json",
     "purpose": "single source of truth for all TQM-QG physics validation",
     "last_updated": "2026-08-23",
-    "phases_count": 263,
+    "phases_count": 264,
     "note": "Historical entries are never removed. Additive updates only."
   },
   "coverage": {
-    "total_phases": 263,
+    "total_phases": 264,
     "tested": 212,
     "partial": 12,
     "untested": 0,
-    "audit": 39,
-    "weighted_coverage": 0.866,
+    "audit": 40,
+    "weighted_coverage": 0.8636,
     "domains": {
       "cosmology": {
         "tested": 7,
@@ -32,8 +32,8 @@
         "tested": 20,
         "partial": 0,
         "untested": 0,
-        "audit": 32,
-        "total": 52
+        "audit": 33,
+        "total": 53
       },
       "gravity": {
         "tested": 33,
@@ -593,6 +593,16 @@
   ],
   "recent_findings": [
     {
+      "phase": 262,
+      "file": "TQMQG_ResonanceLayerAudit.md",
+      "title": "Resonance Layer Audit",
+      "classification": "RESONANCE LAYER",
+      "domain": "foundation",
+      "validation": "audit",
+      "summary": "resonance layer audit (the QUESTION",
+      "report_url": "https://github.com/MagusDraconis/TQM/blob/TQM_v1.1/Docs/Research/TQMQG_ResonanceLayerAudit.md"
+    },
+    {
       "phase": 261,
       "file": "TQMQG_ObservableOriginAudit.md",
       "title": "Observable Origin Audit",
@@ -641,16 +651,6 @@
       "validation": "audit",
       "summary": "secondary selection principle (methodology only, no new physics",
       "report_url": "https://github.com/MagusDraconis/TQM/blob/TQM_v1.1/Docs/Research/TQMQG_SecondarySelectionPrinciple.md"
-    },
-    {
-      "phase": 256,
-      "file": "TQMQG_FormulaSelectionPrinciple.md",
-      "title": "Formula Selection Principle",
-      "classification": "SELECTION PRINCIPLE",
-      "domain": "foundation",
-      "validation": "audit",
-      "summary": "formula selection principle (methodology only, no new physics",
-      "report_url": "https://github.com/MagusDraconis/TQM/blob/TQM_v1.1/Docs/Research/TQMQG_FormulaSelectionPrinciple.md"
     }
   ],
   "phases": [
@@ -2757,6 +2757,14 @@
       "domain": "foundation",
       "validation": "audit",
       "key_result": "observable origin audit (observable audit only — no formula complexity, no uniqueness [that is QG253]; for each major result [masses, couplings, mixings, cosmology, GR observables] determine whether the OBSERVABLE was selected because a D96 formula matched it [post-hoc] or because D96 naturally points to it; classification: NATURAL = D96 structure alone leads to it [identity / octave-forced class / value frozen-or-hidden before measurement], SECONDARY = catalog value known at derivation but D96 class-consistent, POST-HOC = entered the register because a formula matched it [QG239/250 flags]): THE REGISTER — 29 observables: NATURAL 7 [family count = 3 [exact identity, QG138/210], Higgs blind MH + MH/MW/MH/MZ/λ_H [QG176, hidden target], θ_QCD = 0 [exact automorphism, QG174], P1 106 GeV [QG190 pre-registered], P2 m_ββ [QG191 pre-registered], P3 sector ladder [QG192 pre-registered]], SECONDARY 19 [lepton hierarchy, quark masses, neutrino masses, MW/MZ, α_weak/strong, sin²θ_W, g-2 μ/e, Yukawa ratios, CKM, CKM CP, PMNS, Λ, Ω fractions, G/M_Pl, M∝R, Bekenstein, frame dragging, GPS — all catalog values known at derivation], POST-HOC 3 [n_s + acoustic peaks [QG239 explicit RETRO-SELECTION RISK], 1/α_em = 137 [QG250 asserted-dictionary attack]]; RISK SCORE = (0.5·19 + 1.0·3)/29 = 0.431; DETERMINATION: MEDIUM observable-selection risk — the register is predominantly CATALOG-DRIVEN [19/29 secondary: D96 produces the right class, the specific target came from the measured catalog], the genuine NATURAL core [7/29] is temporally independent [pre-registered + blind], the post-hoc minority [3/29] is small and already flagged, and the honest BEKENSTEIN FAILURE [QG185/196 impossibility proof — a catalog target D96 CANNOT match without importing π] is anti-retro evidence that selection is not pure fitting; consistent with QG252 [MEDIUM independent evidence] and QG253 [formula-level target-information]: the observables are mostly catalog-driven but the D96 structural classes they belong to are genuine — the risk is concentrated in the specific numerical choices of n_s, the acoustic peaks, and the 1/α_em dictionary"
+    },
+    {
+      "phase": 262,
+      "file": "TQMQG_ResonanceLayerAudit.md",
+      "classification": "RESONANCE LAYER",
+      "domain": "foundation",
+      "validation": "audit",
+      "key_result": "resonance layer audit (the QUESTION: did the later D96 derivations QG140-258 collapse a MISSING resonance layer between D96 and the observables? TQM originates from time → oscillation → resonance → actualization; search the five resonance operators — resonance [octave/family locking], beat [integer moment ratios], locking [near-degenerate crowding], crowding [top-band compression], compression [octave collapse]; computed from the D96 spectrum, no new physics): THE EVIDENCE — layer score 6/6: octave-locked family count = floor(log2 span)+1 = 3 [QG210, frequency-doubling bands [4,4,87]], top-band crowding = 87/95 = 91.6% [occupancy [4,4,87]], mode locking = 93.6% of successive frequency ratios near-degenerate [94 ratios, 88 near log2≈0], sector ladder = fixed-spacing MZ/6 = 15.198 GeV beat comb [12 rungs, max dev 2.0%], and THREE near-integer beat identities among the collapsed moments [Σ√m/span = 10.009 ≈ 10, dev 0.09%; Σm²/Σm = 2.411 ≈ 12/5, dev 0.4%; occMom/Σm² = 8.298 ≈ 25/3, dev 0.4%]; DETERMINATION: RESONANCE LAYER — the D96 spectrum IS organized as a resonance structure: octave-locked families, mode crowding, the MZ/6 ladder beat comb, and integer moment ratios; this layer is DIRECTLY USED in the family-index [QG210], sector-ladder [QG192] and CMB acoustic-peak [QG238] derivations [the octave hierarchy, the beat comb and the occupancy ratios ARE the resonance operators in those formulas], and was COLLAPSED into the moment set {Σm, span, λ₂, occMom, Σ√m, Σm²} for the mass/coupling sector [QG165-247 use the collapsed moments directly rather than re-exposing the beat/locking operators]; the layer is REAL and not MISSING — the derivations did not lose a resonance step, they encoded it into the moments; this REFRAMES the QG250 parameter-leakage attack: the moments are not arbitrary knobs, they are the collapsed output of one underlying resonance structure"
     }
   ]
 }
