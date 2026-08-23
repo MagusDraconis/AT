@@ -3,8 +3,8 @@
 **Single source of truth for all TQM-QG physics validation.**
 
 - Last updated: 2026-08-23
-- Total phases: 250
-- Tested: 211 | Partial: 12 | Untested: 0 | Audit: 27
+- Total phases: 251
+- Tested: 212 | Partial: 12 | Untested: 0 | Audit: 27
 - Weighted coverage: 89.5%
 
 > Maintenance rule: whenever a QG phase completes, scan its classification, update
@@ -17,8 +17,8 @@
 
 | Metric | Value |
 |---|---|
-| Phases total | 250 |
-| Tested | 211 |
+| Phases total | 251 |
+| Tested | 212 |
 | Partially tested | 12 |
 | Untested | 0 |
 | Audit (QG170) | 27 |
@@ -53,7 +53,7 @@
 | ψ / Tensor Sector | 7 | 0 | 0 | 0 | 7 |
 | Quantum Mechanics | 14 | 0 | 0 | 0 | 14 |
 | Standard Model | 53 | 9 | 0 | 1 | 63 |
-| Standard-Model | 3 | 0 | 0 | 0 | 3 |
+| Standard-Model | 4 | 0 | 0 | 0 | 4 |
 | TRM Dynamics | 15 | 0 | 0 | 0 | 15 |
 
 ---
@@ -647,3 +647,4 @@ Historical entries are preserved; updates are additive.
 ### Standard-Model
 
 - **QG248** — POTENTIAL ORIGIN (tested) — higgs potential origin (no new primitives, D96 only, deterministic, rejects the imported Higgs potential): the Higgs potential is the ACTUALIZATION-FLOW SELF-ENERGY of the collective occupation-density field φ = ρ − ρ̄ [QG84/161/169, energy = actualization rate QG89]; (1) Z2 SYMMETRY FORCES THE EVEN FORM [QG151-155 — the D96 dihedral automorphism reflection maps φ → −φ (the Z2 doublet structure), so a reflection-invariant potential has only even powers: V(φ) = μ²|φ|² + λ|φ|⁴, the leading renormalizable invariant polynomial — the FORM is derived from the D96 dihedral symmetry, not imported]; (2) μ² < 0 — THE UNIFORM CRITICAL STATE IS UNSTABLE [the origin φ=0 is the uniform critical state QG227; the critical branching vacuum has GROWING VARIANCE Var(Z_k) = k·σ² QG230, so the origin is not a local minimum of the energy: curvature 2μ² < 0, the tachyonic direction of the collective mode]; (3) λ > 0 — OCCUPATION-DENSITY SATURATION [the quartic is the emergent D96 self-coupling λ_H = λ₂·g₂/2 QG169, the self-limiting nonlinearity: the density cannot grow without bound]; (4) VACUUM MINIMUM / SSB [stationary point: |φ|²_min = −μ²/(2λ) = v²/2 with v = (Σm+#d)·ln(span) = 254.37 GeV QG168 — a NONZERO occupation-density condensate (the ρ-condensate VEV QG84 VacuumAsCondensate); the degenerate minima V(±v/√2) = −λ_H·v⁴/4 lie BELOW the symmetric origin V(0)=0 — the D96 reflection symmetry is spontaneously broken]; (5) THE RADIAL MODE [M_H² = 2λ_H·v² → M_H = v·√(λ₂·g₂) = 125.49 GeV, physical 125.25, dev 0.19% — the QG169 cross-check]; DERIVED POTENTIAL: V(φ) = μ²|φ|² + λ|φ|⁴ with μ² = −λ_H·v² = −7873 GeV² (|μ| = 88.7 GeV = M_H/√2), λ = λ_H = 0.1217, v = 254.37 GeV, |φ|_min = v/√2 = 179.9 GeV, V_min = −λ_H·v⁴/4, M_H = 125.49 GeV; CLASSIFICATION: POTENTIAL ORIGIN [score 5/5 — Z2-forced form, μ²<0 from the vacuum instability, λ>0 from QG169, nonzero condensate VEV from QG168, radial mode 0.19%]; closes QG245's OPEN Higgs-potential component; the leading-even-polynomial truncation and the doublet VEV normalization are stated conventions, not new primitives; remaining SM dynamics gaps: the YUKAWA interaction form y_f ψ̄ψ φ and the MASS-GENERATION MECHANISM m_f = y_f·v `TQMQG_HiggsPotentialOrigin.md`
+- **QG249** — YUKAWA ORIGIN (tested) — yukawa origin (no new primitives, D96 only, deterministic, rejects the imported Yukawa vertices and the imported SM mechanism): the Yukawa interaction is the OCCUPATION-DENSITY COUPLING between the fermion-mode density ψ̄ψ and the collective occupation-density scalar φ; (1) OCCUPATION-DENSITY SCALAR [the Higgs is the collective occupation-density deviation φ = ρ − ρ̄, QG84/161/246, potential + VEV derived]; (2) MODE COUPLING — the FORM y_f ψ̄ψ φ is the DENSITY ACTION on the fermion mode [the QG243 generator-action analog in the scalar sector: where a gauge vertex is the generator matrix element ⟨f|T^a|i⟩, the Yukawa vertex is the density weight ⟨ψ|ρ|ψ⟩ of the mode — the mode occupancy contracting with the collective density field]; (3) GENERATOR ACTION / COUPLING VALUES — y_f is the mode's occupation-density WEIGHT, the mass-to-VEV ratio y_f = m_f/v [all m_f from the D96 octave mass laws QG140/173/203/209/210, v = (Σm+#d)·ln(span) = 254.37 GeV QG168 — NO free Yukawa parameters]; (4) FERMION-FAMILY STRUCTURE / HIERARCHY — the Yukawa matrix in the mass basis is DIAGONAL with eigenvalues y_f = m_f/v [the three families are the three octave bands QG210]; the hierarchy equals the derived mass hierarchy: y_τ/y_μ = √occMom·λ₂ = 16.842 [dev 0.15%], y_μ/y_e = Σm²/√occMom = 207.03 [dev 0.13%], y_t/y_b = 41.26 [dev 0.13%]; (5) THE MECHANISM m_f = y_f·v CLOSES QG245's OPEN item [after SSB φ = v + h: y_f ψ̄ψ(v+h) = m_f ψ̄ψ + y_f h ψ̄ψ — the mass AND the Higgs-fermion coupling are both D96-derived]; DERIVED COUPLINGS (y_f = m_f/v, v = 254.37 GeV): y_t = 0.6789, y_b = 0.01646, y_c = 0.004988, y_τ = 0.006985, y_s = 3.677e-4, y_μ = 4.159e-4, y_d = 1.838e-5, y_u = 8.507e-6, y_e = 2.009e-6; the absolute scale carries the documented v-normalization boundary [v = 254.37 vs 246.22, QG168]; the hierarchy ratios are exact convention-independent D96 octave identities; CLASSIFICATION: YUKAWA ORIGIN [score 5/5 — density-action form, couplings = mass-to-VEV, exact octave hierarchy, mechanism m_f = y_f·v closes, no imports]; closes QG245's OPEN Yukawa interaction AND PARTIAL mass-generation mechanism; SM dynamics now complete except the SU(3) color-count postulate trace [QG79] and the framework-completeness boundaries [QG235] `TQMQG_YukawaOrigin.md`
