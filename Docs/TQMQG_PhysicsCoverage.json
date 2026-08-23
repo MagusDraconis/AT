@@ -3,23 +3,23 @@
     "file": "Docs/TQMQG_PhysicsCoverage.md|json",
     "purpose": "single source of truth for all TQM-QG physics validation",
     "last_updated": "2026-08-23",
-    "phases_count": 237,
+    "phases_count": 238,
     "note": "Historical entries are never removed. Additive updates only."
   },
   "coverage": {
-    "total_phases": 237,
-    "tested": 204,
+    "total_phases": 238,
+    "tested": 205,
     "partial": 12,
     "untested": 0,
     "audit": 21,
-    "weighted_coverage": 0.9082,
+    "weighted_coverage": 0.9086,
     "domains": {
       "cosmology": {
-        "tested": 3,
+        "tested": 4,
         "partial": 0,
         "untested": 0,
         "audit": 1,
-        "total": 4
+        "total": 5
       },
       "energy": {
         "tested": 6,
@@ -2480,6 +2480,14 @@
       "domain": "foundation",
       "validation": "audit",
       "key_result": "remaining parameter closure audit (audit only, re-adjudicates the 8 PARTIAL parameters from QG232): 3 DERIVED / 3 BOUNDARY / 2 ACTUALLY OPEN; DERIVED — Majorana phases α2/α3 [QG174 [L,P]=0 reflection ⇒ real mass matrix, arg det M = 0 ⇒ α2=α3=0 mod π, 0νββ fixed and CP-robust QG179/191], quark hierarchy law [QG146 PARTIAL as a single law but QG173 derives all six quark masses within 0.2% + QG204 MS̄-running — the hierarchy is reproduced], calibration ladder [QG129 partial mapping superseded by the Z-anchor QG130 MZ/6 and weak scale QG168, ladder scale fixed P3 QG192]; BOUNDARY — Bekenstein 1/4 [QG185/196 impossibility: exact 1/4 requires imported π], Hubble constant H [expansion + H ~ √ρ̄ ~ 1/R derived QG77/230, the current value is a contingent epoch scale input], golden-ratio hierarchy [QG152 SECONDARY basin consequence, explicitly not a fundamental law]; ACTUALLY OPEN — Ω_Λ [QG230 bounds in (0,1) but does not derive the specific fraction ~0.68], Ω_m [deficit matter density derived QG195/206 but Ω_m = ρ_m/ρ_crit not uniquely derived]; with Ω_Λ + Ω_m ≈ 1 one determines the other, neither individually pinned; VERDICT: remaining exact gaps = Ω_Λ and Ω_m — the parameter sector is PARAMETER COMPLETE except these two cosmological density fractions; all other partial parameters are resolved or documented boundaries"
+    },
+    {
+      "phase": 236,
+      "file": "TQMQG_CosmologicalFractionsOrigin.md",
+      "classification": "FRACTION ORIGIN",
+      "domain": "cosmology",
+      "validation": "tested",
+      "key_result": "cosmological density fractions Ω_Λ and Ω_m DERIVED from the counting measure (no new primitives, deterministic, no Planck-fit/ΛCDM/observed inputs): the fractions are the INFORMATION-DENSITY FRACTIONS of the D96 octave record; Ω_Λ = I_occ/ln K where I_occ = KL(p‖uniform) = 0.7513 nats is the realized octave record's information [D96 occupancies [4,4,87], 95 modes, QG210/QG228] and ln K = ln 3 = 1.0986 nats is the maximum possible information over the K=3 octaves [family count, QG210] ⇒ Ω_Λ = 0.6839 [observed 0.6847, dev 0.12%]; Ω_m = 1 − Ω_Λ = 0.3161 [observed 0.3153, dev 0.26%] — the deficit matter [QG195/196] is the complement of the vacuum in the single-scale R universe [flatness, QG230]; Ω_Λ + Ω_m = 1 EXACTLY — the single-scale flatness identity [Λ ~ ρ̄, one scale R]; the octave record is the universal attractor's spectral geometry [QG116b/QG210], the equilibrium configuration; observed Planck values used only as comparison anchors; CLOSES the QG233 last two open parameters [Ω_Λ and Ω_m] — every fundamental parameter is now DERIVED or a documented BOUNDARY, the parameter sector is PARAMETER COMPLETE"
     }
   ]
 }

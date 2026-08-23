@@ -3,9 +3,9 @@
 **Single source of truth for all TQM-QG physics validation.**
 
 - Last updated: 2026-08-23
-- Total phases: 237
-- Tested: 204 | Partial: 12 | Untested: 0 | Audit: 21
-- Weighted coverage: 90.8%
+- Total phases: 238
+- Tested: 205 | Partial: 12 | Untested: 0 | Audit: 21
+- Weighted coverage: 90.9%
 
 > Maintenance rule: whenever a QG phase completes, scan its classification, update
 > tested/partial/untested, contradictions, open questions, predictions, and statistics.
@@ -17,12 +17,12 @@
 
 | Metric | Value |
 |---|---|
-| Phases total | 237 |
-| Tested | 204 |
+| Phases total | 238 |
+| Tested | 205 |
 | Partially tested | 12 |
 | Untested | 0 |
 | Audit (QG170) | 21 |
-| Weighted coverage | 90.8% |
+| Weighted coverage | 90.9% |
 | SM tested | 53 |
 | Gravity tested | 33 |
 
@@ -44,7 +44,7 @@
 
 | Domain | Tested | Partial | Untested | Audit | Total |
 |---|---|---|---|---|---|
-| Cosmology | 3 | 0 | 0 | 1 | 4 |
+| Cosmology | 4 | 0 | 0 | 1 | 5 |
 | High-Energy Sector | 6 | 1 | 0 | 0 | 7 |
 | Foundations | 20 | 0 | 0 | 15 | 35 |
 | Gravity / GR | 33 | 2 | 0 | 0 | 35 |
@@ -606,3 +606,7 @@ Historical entries are preserved; updates are additive.
 
 - **QG234** — PARTIAL COMPLETE (audit) — parameter completeness audit (audit only, reviews QG140-231, six categories): PARTIAL COMPLETE — 37 fundamental parameters: 29 DERIVED / 8 PARTIAL / 0 OPEN; derived fraction 78.4%, weighted 89.2%; MASSES 9/9 derived [me/mμ/mτ QG140/209, quarks QG173/204, neutrinos QG203, MW/MZ QG168, MH QG169/176]; MIXINGS 6/7 derived [CKM QG165/166, PMNS QG167; Majorana phases α2/α3 PARTIAL QG179 assumed zero, m_ββ robust]; COUPLINGS 6/6 derived [1/α_em=137 QG162, α_weak QG162, α_s QG163/204, sin²θ_W QG162, θ_QCD QG174, running exponents QG163/164/204]; GRAVITY 3/4 derived [G QG181/182, M_Pl QG181, α=0 QG206; Bekenstein 1/4 PARTIAL QG185/196 requires π = BOUNDARY]; COSMOLOGY 4/6 derived [Λ QG230, seeds + growth QG231; H PARTIAL QG77 scale input, Ω_Λ/Ω_m PARTIAL not unique values]; HIERARCHY 3/5 derived [family count QG210, lepton ratios QG209; quark hierarchy law PARTIAL QG146, golden-ratio PARTIAL QG152, calibration ladder PARTIAL QG129]; NO parameter OPEN; the SM parameter problem [QG85 POSTULATED] is largely resolved by QG140-231 — every mass, mixing, and coupling is derived; remaining partials are stated boundaries [Bekenstein 1/4 needs π], scale/fraction inputs [H, Ω_Λ, Ω_m], and secondary structure items [Majorana phases, quark hierarchy law, golden-ratio, calibration ladder] `TQMQG_ParameterCompletenessAudit.md`
 - **QG235** — REMAINING GAPS: Ω_Λ, Ω_m (audit) — remaining parameter closure audit (audit only, re-adjudicates the 8 PARTIAL parameters from QG232): 3 DERIVED / 3 BOUNDARY / 2 ACTUALLY OPEN; DERIVED — Majorana phases α2/α3 [QG174 [L,P]=0 reflection ⇒ real mass matrix, arg det M = 0 ⇒ α2=α3=0 mod π, 0νββ fixed and CP-robust QG179/191], quark hierarchy law [QG146 PARTIAL as a single law but QG173 derives all six quark masses within 0.2% + QG204 MS̄-running — the hierarchy is reproduced], calibration ladder [QG129 partial mapping superseded by the Z-anchor QG130 MZ/6 and weak scale QG168, ladder scale fixed P3 QG192]; BOUNDARY — Bekenstein 1/4 [QG185/196 impossibility: exact 1/4 requires imported π], Hubble constant H [expansion + H ~ √ρ̄ ~ 1/R derived QG77/230, the current value is a contingent epoch scale input], golden-ratio hierarchy [QG152 SECONDARY basin consequence, explicitly not a fundamental law]; ACTUALLY OPEN — Ω_Λ [QG230 bounds in (0,1) but does not derive the specific fraction ~0.68], Ω_m [deficit matter density derived QG195/206 but Ω_m = ρ_m/ρ_crit not uniquely derived]; with Ω_Λ + Ω_m ≈ 1 one determines the other, neither individually pinned; VERDICT: remaining exact gaps = Ω_Λ and Ω_m — the parameter sector is PARAMETER COMPLETE except these two cosmological density fractions; all other partial parameters are resolved or documented boundaries `TQMQG_ParameterClosureAudit.md`
+
+### Cosmology
+
+- **QG236** — FRACTION ORIGIN (tested) — cosmological density fractions Ω_Λ and Ω_m DERIVED from the counting measure (no new primitives, deterministic, no Planck-fit/ΛCDM/observed inputs): the fractions are the INFORMATION-DENSITY FRACTIONS of the D96 octave record; Ω_Λ = I_occ/ln K where I_occ = KL(p‖uniform) = 0.7513 nats is the realized octave record's information [D96 occupancies [4,4,87], 95 modes, QG210/QG228] and ln K = ln 3 = 1.0986 nats is the maximum possible information over the K=3 octaves [family count, QG210] ⇒ Ω_Λ = 0.6839 [observed 0.6847, dev 0.12%]; Ω_m = 1 − Ω_Λ = 0.3161 [observed 0.3153, dev 0.26%] — the deficit matter [QG195/196] is the complement of the vacuum in the single-scale R universe [flatness, QG230]; Ω_Λ + Ω_m = 1 EXACTLY — the single-scale flatness identity [Λ ~ ρ̄, one scale R]; the octave record is the universal attractor's spectral geometry [QG116b/QG210], the equilibrium configuration; observed Planck values used only as comparison anchors; CLOSES the QG233 last two open parameters [Ω_Λ and Ω_m] — every fundamental parameter is now DERIVED or a documented BOUNDARY, the parameter sector is PARAMETER COMPLETE `TQMQG_CosmologicalFractionsOrigin.md`
