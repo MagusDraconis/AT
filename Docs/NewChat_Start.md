@@ -574,10 +574,12 @@ QG253: formula uniqueness audit (UNIQUE 1 / NON-UNIQUE 2 / MULTIPLE MATCHES 4 �
 
 QG254: formula selection principle (SELECTION PRINCIPLE — methodology only, no new physics; reviews QG203/209/234/237/238/247/253; derives a target-free D96-only deterministic formula-choice rule that selects BEFORE any comparison: THE PRINCIPLE — OCTAVE PRESERVATION: a formula is selectable iff it does NOT isolate a single octave band occ₀/occ₁/occ₃ (or ln of a single band); the D96 sector is octave-organized (occ=[4,4,87], three octave families QG155/210), so isolating one band privileges one octave with no D96 principle; ALLOWED: octave ratios occᵢ/occⱼ (scale-invariant band structure), the full aggregate occMom=Σocc²/occ₀ (QG155), and the spectral aggregates (Σm, #d, #g, span, λ₂, Σ√m); this is the D96 symmetry projection of Noether consistency (formulas invariant under the octave band symmetry); WHY IT SELECTS — applied to the QG253 candidate pool it EXCLUDES all 5 non-native minimal-complexity alternatives [r₂₁ alt √Σm/occ₀ isolates occ₀, 1−n_s alt 1/(span·ln occ₃) isolates occ₃, m₂/m₃ alt 1/(occ₀√2) isolates occ₀, y_t/y_b alt occ₀²/λ₂ isolates occ₀, m_μ/me alt #g²/√occ₃ isolates occ₃]; all published formulas SATISFY octave preservation [Σm²/√occMom, √occMom·λ₂, ln(span)/(Σm−#d), (Σm−#d)·occ₁/occ₃ (octave ratio), span/√3, 2Σm/(Σ√m·√(span·#g))]; RESIDUAL — 3 octave-preserving ties survive (√3·√Σm, λ₂³·Σ√m, 5/4·Σ√m/λ₂), so the principle narrows to the octave-preserving class (a strong prior) but does not uniquely fix every formula without additional symmetry selection; CLASSIFICATION: SELECTION PRINCIPLE — target-free, deterministic, D96-only, removes the non-native alternatives that drove the QG253 non-uniqueness; the published formulas are the octave-preserving members of the D96 expression class selected BEFORE comparison).
 
+QG255: secondary selection principle (UNIQUE SELECTION PRINCIPLE — methodology only, no new physics; known QG254 octave preservation; requirements no observables, no target values, D96 only, deterministic; derives ONE secondary rule resolving the QG254 octave-preserving ties: THE RULE — MOMENT-CLOSURE MINIMUM DESCRIPTION LENGTH, applied in order to the octave-preserving candidate set: (1) MINIMAL COMPLEXITY [fewest operators/quantities], (2) NOETHER CONSISTENCY [no free constant multiplier — a genuine D96 coupling is a ratio of D96 quantities only; √3 is NOT flagged because it is D96-native √#families QG210], (3) MOMENT CLOSURE / FULL-SPECTRUM USAGE [highest total moment order: occMom (2nd octave moment) and Σm² (2nd mode moment) beat half-moments Σ√m and counts #d/#g]; APPLICATION TO THE QG254 TIES (structure-only, no target): m_μ/me [Σm²/√occMom (c=5) vs 5/4·Σ√m/λ₂ (c=5) — Noether drops the free 5/4 → SELECTS Σm²/√occMom], m_τ/m_μ [√occMom·λ₂ (c=4) vs √3·√Σm (c=4) vs √#d/λ₂ (c=4) — moment closure: occMom(2)+λ₂(1)=3 beats Σ√m(0.5) and #d(0)+λ₂(1)=1 → SELECTS √occMom·λ₂], r₃₁ [span/√3 (c=3) vs λ₂³·Σ√m (c=4) — minimal complexity → SELECTS span/√3]; ALL THREE tie cases resolve to a unique formula (the published one) with NO target information; CLASSIFICATION: UNIQUE SELECTION PRINCIPLE — the combined chain QG253 (search space) + QG254 (octave preservation) + QG255 (moment-closure MDL) uniquely selects the published formulas for all audited observables from D96 structure alone, before any comparison).
+
 Milestone counters:
 
-TQM-QG 258 phases
-660+ TQM-QG tests verified
+TQM-QG 259 phases
+663+ TQM-QG tests verified
 
 ### QG154: Neutrino Sector Origin
 
@@ -601,5 +603,5 @@ NEUTRINO ORIGIN
 
 Milestone counters:
 
-TQM-QG 258 phases
-660+ TQM-QG tests verified
+TQM-QG 259 phases
+663+ TQM-QG tests verified
