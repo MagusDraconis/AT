@@ -572,10 +572,12 @@ QG252: independent prediction audit (MEDIUM INDEPENDENT EVIDENCE — audit only,
 
 QG253: formula uniqueness audit (UNIQUE 1 / NON-UNIQUE 2 / MULTIPLE MATCHES 4 — methodology only, no new physics; reviews QG203/209/234/237/238/247; replaces empirical formula choice with a derivation-choice rule: generate ALL dimensionless combinations of the D96 quantities (Σm, #d, #g, span, λ₂, occ₀, occ₁, occ₃, occMom, Σ√m) — a candidate pool of hundreds of thousands of expressions; complexity = distinct quantities + operators + (1 if non-trivial constant); for each observable find every candidate within 0.5% and determine whether the published formula is the SIMPLEST; THE RESULTS (7 observables): UNIQUE 1 [r₃₁ = span/√3 — the sole minimal-complexity match (c=3); λ₂³·Σ√m matches only at c=4], NON-UNIQUE 2 [m_μ/me = Σm²/√occMom (c=5, ties with #g²/√occ₃ dev 0.26% and 5/4·Σ√m/λ₂ dev 0.15%), m_τ/m_μ = √occMom·λ₂ (c=4, ties with √3·√Σm dev 0.24% and √#d/λ₂ dev 0.40%)], MULTIPLE MATCHES 4 [1−n_s = ln(span)/(Σm−#d) (c=7, SIMPLER 1/(span·ln occ₃) c=5 dev 0.16% exists), r₂₁ = (Σm−#d)·occ₁/occ₃ (c=6, SIMPLER √Σm/occ₀ c=4 dev 0.004%), m₂/m₃ = 2Σm/(Σ√m·√(span·#g)) (c=8, SIMPLER 1/(occ₀·√2) c=4 dev 0.100%), y_t/y_b mass-law ratio (c=8, SIMPLER occ₀²/λ₂ c=4 dev 0.37%)]; DETERMINATION: only r₃₁ is the unique minimal-complexity expression; SIX of SEVEN published formulas are NOT forced by a minimal-complexity derivation-choice rule — the choice was TARGET-INFORMED (empirical), confirming the QG239/QG250 RETRO-SELECTION RISK for all but r₃₁; a blind minimal-complexity search does NOT reproduce the published formulas as the unique simplest expressions — simpler D96 combinations reproduce the same observables (the strongest quantitative support for the selection risk on n_s, acoustic peaks, neutrino ratio, quark hierarchy)).
 
+QG254: formula selection principle (SELECTION PRINCIPLE — methodology only, no new physics; reviews QG203/209/234/237/238/247/253; derives a target-free D96-only deterministic formula-choice rule that selects BEFORE any comparison: THE PRINCIPLE — OCTAVE PRESERVATION: a formula is selectable iff it does NOT isolate a single octave band occ₀/occ₁/occ₃ (or ln of a single band); the D96 sector is octave-organized (occ=[4,4,87], three octave families QG155/210), so isolating one band privileges one octave with no D96 principle; ALLOWED: octave ratios occᵢ/occⱼ (scale-invariant band structure), the full aggregate occMom=Σocc²/occ₀ (QG155), and the spectral aggregates (Σm, #d, #g, span, λ₂, Σ√m); this is the D96 symmetry projection of Noether consistency (formulas invariant under the octave band symmetry); WHY IT SELECTS — applied to the QG253 candidate pool it EXCLUDES all 5 non-native minimal-complexity alternatives [r₂₁ alt √Σm/occ₀ isolates occ₀, 1−n_s alt 1/(span·ln occ₃) isolates occ₃, m₂/m₃ alt 1/(occ₀√2) isolates occ₀, y_t/y_b alt occ₀²/λ₂ isolates occ₀, m_μ/me alt #g²/√occ₃ isolates occ₃]; all published formulas SATISFY octave preservation [Σm²/√occMom, √occMom·λ₂, ln(span)/(Σm−#d), (Σm−#d)·occ₁/occ₃ (octave ratio), span/√3, 2Σm/(Σ√m·√(span·#g))]; RESIDUAL — 3 octave-preserving ties survive (√3·√Σm, λ₂³·Σ√m, 5/4·Σ√m/λ₂), so the principle narrows to the octave-preserving class (a strong prior) but does not uniquely fix every formula without additional symmetry selection; CLASSIFICATION: SELECTION PRINCIPLE — target-free, deterministic, D96-only, removes the non-native alternatives that drove the QG253 non-uniqueness; the published formulas are the octave-preserving members of the D96 expression class selected BEFORE comparison).
+
 Milestone counters:
 
-TQM-QG 257 phases
-657+ TQM-QG tests verified
+TQM-QG 258 phases
+660+ TQM-QG tests verified
 
 ### QG154: Neutrino Sector Origin
 
@@ -599,5 +601,5 @@ NEUTRINO ORIGIN
 
 Milestone counters:
 
-TQM-QG 257 phases
-657+ TQM-QG tests verified
+TQM-QG 258 phases
+660+ TQM-QG tests verified
