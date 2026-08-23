@@ -3,16 +3,16 @@
     "file": "Docs/TQMQG_PhysicsCoverage.md|json",
     "purpose": "single source of truth for all TQM-QG physics validation",
     "last_updated": "2026-08-23",
-    "phases_count": 269,
+    "phases_count": 270,
     "note": "Historical entries are never removed. Additive updates only."
   },
   "coverage": {
-    "total_phases": 269,
+    "total_phases": 270,
     "tested": 212,
     "partial": 12,
     "untested": 0,
-    "audit": 45,
-    "weighted_coverage": 0.8522,
+    "audit": 46,
+    "weighted_coverage": 0.85,
     "domains": {
       "cosmology": {
         "tested": 7,
@@ -32,8 +32,8 @@
         "tested": 20,
         "partial": 0,
         "untested": 0,
-        "audit": 38,
-        "total": 58
+        "audit": 39,
+        "total": 59
       },
       "gravity": {
         "tested": 33,
@@ -593,6 +593,16 @@
   ],
   "recent_findings": [
     {
+      "phase": 268,
+      "file": "TQMQG_InvariantOriginAudit.md",
+      "title": "Invariant Origin Audit",
+      "classification": "UNIVERSAL CONSERVATION LAW",
+      "domain": "foundation",
+      "validation": "audit",
+      "summary": "invariant origin audit (the QUESTION",
+      "report_url": "https://github.com/MagusDraconis/TQM/blob/TQM_v1.1/Docs/Research/TQMQG_InvariantOriginAudit.md"
+    },
+    {
       "phase": 267,
       "file": "TQMQG_ResonanceInvariantAudit.md",
       "title": "Resonance Invariant Audit",
@@ -641,16 +651,6 @@
       "validation": "audit",
       "summary": "resonance operator audit (the HYPOTHESIS",
       "report_url": "https://github.com/MagusDraconis/TQM/blob/TQM_v1.1/Docs/Research/TQMQG_ResonanceOperatorAudit.md"
-    },
-    {
-      "phase": 262,
-      "file": "TQMQG_ResonanceLayerAudit.md",
-      "title": "Resonance Layer Audit",
-      "classification": "RESONANCE LAYER",
-      "domain": "foundation",
-      "validation": "audit",
-      "summary": "resonance layer audit (the QUESTION",
-      "report_url": "https://github.com/MagusDraconis/TQM/blob/TQM_v1.1/Docs/Research/TQMQG_ResonanceLayerAudit.md"
     }
   ],
   "phases": [
@@ -2805,6 +2805,14 @@
       "domain": "foundation",
       "validation": "audit",
       "key_result": "resonance invariant audit (the QUESTION: what is the ACTUAL invariant? search for the common conserved quantity behind BEAT, LOCKING, CROWDING, COMPRESSION; determine whether all successful sectors are different measurements of one invariant; D96 only, no observables, structure only): THE CONSERVED QUANTITY — the total spectral weight of the D96 observable-sector Laplacian Σλ = Σω² over the 95 positive modes = 1152.00000000 EXACTLY [this is the TRACE of the Laplacian, a graph invariant that is basis-independent (Σλ = Σ degrees = 2·edges = 2·576), therefore CONSERVED under the N=96 resonance dynamics — the network fixes the spectrum which fixes the total spectral weight]; THE STRUCTURAL FACTORIZATION — Σλ = 1152 = 12 × 96 = (gauge degree 1+3+8, QG161) × (cycle size N) — the invariant IS the product of the two most fundamental D96 integers; THE OPERATORS MEASURE THE SAME INVARIANT — each operator is a deterministic read of the ONE 95-mode list ω=√λ [CROWDING = degeneracy read [multiset → Σm/Σ√m/Σm²], COMPRESSION = octave-band read [occupancies → occMom], BEAT = extent read [span = ω_max/ω_min], LOCKING = gap read [λ₂ = ω_min²]] — a conserved quantity cannot change under any read of the system, so the operators are exactly the different measurements of the one invariant; ALL SECTORS MEASURE THE SAME INVARIANT — masses consume {Σm², occMom, λ₂, span, Σ√m}, couplings {Σm, Σ√m, λ₂, occ₀}, mixings {#d, #g, occ ratios, ω₀/ω₂}, cosmology {Σm, span, occ}, gravity {Σm, #g, occ₂} — every sector consumes reads of the same spectrum whose total weight is conserved; THE BEAT IDENTITIES couple the reads [Σ√m/span ≈ 10, occMom/Σm ≈ 20, Σm²/Σm ≈ 12/5, occMom/Σm² ≈ 25/3]; DETERMINATION: UNIVERSAL RESONANCE INVARIANT [invariant score 6/6] — the conserved quantity is the total spectral weight Σλ = Σω² = 1152 = 12×96 [gauge degree × cycle], and all four operators — hence all five sectors — are different measurements of this ONE invariant; completes the reduction chain QG260→261→262→263→264→265: Resonance Layer → Operator Layer → Same Operator Sectors → Single Resonance Dynamics → Single Resonance Invariant → UNIVERSAL RESONANCE INVARIANT [Σλ = 12·96]; HONEST CAVEAT [consistent with QG261-264]: the operator-to-sector assignment retains QG149-157-era target information; the conserved quantity itself is D96-only and EXACT — Σλ = 1152 = 12·96 is a structural identity independent of any observable"
+    },
+    {
+      "phase": 268,
+      "file": "TQMQG_InvariantOriginAudit.md",
+      "classification": "UNIVERSAL CONSERVATION LAW",
+      "domain": "foundation",
+      "validation": "audit",
+      "key_result": "invariant origin audit (the QUESTION: is the invariant Σλ = 12×96 fundamental or the projection of a deeper conservation law? no observables, no formulas, D96 only, deterministic, structure only): THE TRACE IDENTITY — Σλ = Σω² is the TRACE of the graph Laplacian L = D − A of the D96 observable sector; for ANY graph, by construction, trace(L) = Σ degrees = 2·(number of edges) — the HANDSHAKE LEMMA, a universal identity of every Laplacian, not a fitted constant; VERIFIED N=96, edges=576, trace(L)=1152=2·576=Σ degrees=Σλ; WHY THE VALUE IS 12×96 — the observable sector is a REGULAR graph [every one of the 96 nodes has degree 12 = the gauge sector 1+3+8, QG161; degree distribution {12}], so trace(L) = N·d = 96·12 = 1152 — the factorization is the degree structure of a regular graph, not an independent relation; WHY IT IS CONSERVED — (1) UNIVERSAL TRACE CONSERVATION [trace(L) = Σ degrees = 2E holds for every Laplacian — a mathematical identity of the L=D−A construction, the diagonal is the degree sequence of a fixed network]; (2) KERNEL/TOTAL-MASS CONSERVATION [every Laplacian has the constant vector in its kernel — row sums EXACTLY zero, verified max |row sum|=0; the Laplacian dynamics ẋ=−Lx conserves the total sum Σx — the ACTUALIZATION CONSERVATION, and the trace identity is its scalar projection]; (3) NETWORK/CYCLE CONSERVATION [the N=96 network is the CONVERGED ATTRACTOR of the actualization dynamics QG115/125/159/160 — the D96 selection is INEVITABLE; the dynamics conserves its attractor → N, E, degree sequence fixed → trace=2E fixed]; DETERMINATION: UNIVERSAL CONSERVATION LAW [origin score 6/6] — Σλ is NOT fundamental; it is the projection of a UNIVERSAL conservation law [the Laplacian trace identity: handshake lemma trace=Σdegrees=2E + kernel conservation: constant vector in ker L → total actualization conserved] instantiated on the conserved N=96 actualization attractor; the specific value 1152 = 96×12 = N·d follows from the network being degree-12 regular [degree = gauge sector 1+3+8]; completes the reduction chain QG260→261→262→263→264→265→266: Resonance Layer → Operator Layer → Same Operator Sectors → Single Resonance Dynamics → Single Resonance Invariant → Universal Resonance Invariant [Σλ=12·96] → UNIVERSAL CONSERVATION LAW [Σλ = trace = 2E = N·d, handshake lemma]; WHY Σλ IS CONSERVED — because it is the trace of the Laplacian, a quantity every graph conserves by the handshake lemma, on a network the actualization dynamics itself conserves; the invariant is DERIVED from a universal law, not a primitive constant"
     }
   ]
 }
