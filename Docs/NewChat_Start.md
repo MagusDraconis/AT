@@ -578,10 +578,12 @@ QG255: secondary selection principle (UNIQUE SELECTION PRINCIPLE — methodology
 
 QG256: selection principle audit (HIGH SELECTION-PRINCIPLE RISK — audit only, no physics, methodology only; reviews QG254 octave preservation and QG255 moment-closure MDL; determines whether these rules are FORCED by D96 or selected post-hoc: for each rule — derivable? necessary? alternative rules? competing principles?; RULE 1 OCTAVE PRESERVATION — PREFERRED [derivable PARTIALLY: the octave bands occ=[4,4,87] ARE D96-native (QG155/210) but the PROHIBITION FORM (no isolated band) was calibrated on the QG253 alternatives; necessary NO — competing symmetry projections exist (prefer occMom-based forms, band-permutation invariance trivially true since occ₀=occ₁=4, full-spectrum usage, the λ₂ scale)]; RULE 2 MOMENT-CLOSURE MDL — ARBITRARY [derivable NO — MDL is imported from information theory and the moment-order ranking is conventional; necessary NO; alternatives: prefer λ₂ as the mass scale, fewest distinct quantities, octave-permutation invariance, 3rd-moment closure; CONSISTENCY DECISIVE — INCONSISTENT: QG255 rejects 5/4·Σ√m/λ₂ because '5/4 is a free constant', but the PUBLISHED QG238 formula ℓ₁ = Σm·ln(span)·(5/4) uses 5/4 — the exclusion was calibrated on the tie candidate, not on a uniform D96 principle]; SELECTION-PRINCIPLE RISK: HIGH — 1 PREFERRED / 1 ARBITRARY / 0 FORCED; NEITHER rule is FORCED; the rules were introduced AFTER QG253 revealed the non-uniqueness, so they carry the same retro-selection character they were intended to remove — at the meta-level; the honest status of the QG253-255 selection-principle program is a reasonable heuristic narrowing, not a derivation of forced selection rules).
 
+QG257: principle competition audit (NO UNIVERSAL PRINCIPLE — audit only, no targets, selection quality only; compares the seven formula-selection principles using QG253/254/255: octave preservation, moment closure, MDL, maximum symmetry, maximum invariance, Noether consistency, full spectrum usage; for each measure selection power, number of surviving formulas, consistency across observables, number of ad-hoc exceptions: THE MEASUREMENTS — OCTAVE PRESERVATION [power 1/7, survivors 2.0, consistent, 0 exceptions — the strongest single filter: removes all 5 non-native alternatives, uniquely selects r₃₁, leaves 3 octave-preserving ties], MOMENT CLOSURE [power 2/7, survivors 1.5, consistent, 0 exceptions — resolves the m_τ/m_μ tie (occMom+λ₂=3 beats √#d/λ₂=1 and √3·√Σm=0.5)], MDL [power 1/7, survivors 3.0, consistent, 0 exceptions — lowest power alone: uniquely selects r₃₁ only, 4/7 have simpler non-native alternatives], MAXIMUM SYMMETRY [power 1/7, survivors 2.5 — overlaps octave preservation, not independently sufficient], MAXIMUM INVARIANCE [power 0/7, survivors 7.0 — occ₀=occ₁=4 so every formula is trivially permutation-invariant: zero discriminating power, the weakest principle], NOETHER CONSISTENCY [power 3/7, survivors 1.3, INCONSISTENT, 1 exception — resolves the m_μ/me tie by rejecting 5/4·Σ√m/λ₂ but the PUBLISHED QG238 ℓ₁ = Σm·ln(span)·(5/4) uses 5/4 — the strongest by raw power but requires an ad-hoc carve-out], FULL SPECTRUM USAGE [power 1/7, survivors 2.5 — overlaps moment closure, not independently sufficient]; RANKING by power: Noether consistency > moment closure > octave preservation/MDL/maximum symmetry/full spectrum > maximum invariance; DETERMINATION: NO UNIVERSAL PRINCIPLE — no single principle uniquely selects all 7 observables; the QG255 'unique selection' came only from a SEQUENCE (octave preservation → MDL → Noether → moment closure) with one inconsistency (the 5/4 exception); the best consistent filter (octave preservation) achieves only 1-3/7 uniqueness; the selection-principle program (QG253-255) is a useful HEURISTIC NARROWING, not a universal derivation-choice rule).
+
 Milestone counters:
 
-TQM-QG 260 phases
-666+ TQM-QG tests verified
+TQM-QG 261 phases
+669+ TQM-QG tests verified
 
 ### QG154: Neutrino Sector Origin
 
@@ -605,5 +607,5 @@ NEUTRINO ORIGIN
 
 Milestone counters:
 
-TQM-QG 260 phases
-666+ TQM-QG tests verified
+TQM-QG 261 phases
+669+ TQM-QG tests verified
