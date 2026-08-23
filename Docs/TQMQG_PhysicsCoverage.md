@@ -3,9 +3,9 @@
 **Single source of truth for all TQM-QG physics validation.**
 
 - Last updated: 2026-08-23
-- Total phases: 245
-- Tested: 208 | Partial: 12 | Untested: 0 | Audit: 25
-- Weighted coverage: 89.9%
+- Total phases: 246
+- Tested: 208 | Partial: 12 | Untested: 0 | Audit: 26
+- Weighted coverage: 89.6%
 
 > Maintenance rule: whenever a QG phase completes, scan its classification, update
 > tested/partial/untested, contradictions, open questions, predictions, and statistics.
@@ -17,12 +17,12 @@
 
 | Metric | Value |
 |---|---|
-| Phases total | 245 |
+| Phases total | 246 |
 | Tested | 208 |
 | Partially tested | 12 |
 | Untested | 0 |
-| Audit (QG170) | 25 |
-| Weighted coverage | 89.9% |
+| Audit (QG170) | 26 |
+| Weighted coverage | 89.6% |
 | SM tested | 53 |
 | Gravity tested | 33 |
 
@@ -46,7 +46,7 @@
 |---|---|---|---|---|---|
 | Cosmology | 7 | 0 | 0 | 2 | 9 |
 | High-Energy Sector | 6 | 1 | 0 | 0 | 7 |
-| Foundations | 20 | 0 | 0 | 18 | 38 |
+| Foundations | 20 | 0 | 0 | 19 | 39 |
 | Gravity / GR | 33 | 2 | 0 | 0 | 35 |
 | Network & Spectrum | 42 | 0 | 0 | 0 | 42 |
 | Predictions | 11 | 0 | 0 | 4 | 15 |
@@ -632,3 +632,4 @@ Historical entries are preserved; updates are additive.
 ### Foundations
 
 - **QG243** — NEAR-COMPLETE TOE (audit) — TOE closure audit (audit only, re-evaluates the ten QG226 TOE criteria after QG227-240): NEAR-COMPLETE TOE — completeness 8.5/10 (85%); 6 DERIVED / 2 PARTIAL / 2 BOUNDARY / 0 OPEN; DERIVED — QM [QG216/218/220/74], Gravity [QG197/207/222], Matter [QG194/195/196], Initial conditions [QG227 uniform critical state, was OPEN], Dimensionality [QG2/3/5/159/160], Information origin [QG228, was PARTIAL]; PARTIAL — Standard Model [masses/couplings/mixings derived QG203-211, gauge/fermion/Higgs interaction DYNAMICS hosted QG60/76/85], Cosmology [all six features derived or partial: expansion QG77, structure QG231, dark matter QG206, Λ QG230, Ω_Λ/Ω_m QG234, n_s QG237; acoustic-peak recombination mechanism partial QG238]; BOUNDARY — Primitive completeness [ψ ontological boundary QG223, was PARTIAL], Parameter completeness [all parameters derived or documented boundary: Bekenstein 1/4 needs π QG196, H epoch scale, Ω_Λ/Ω_m derived QG234]; REMAINING TRUE BLOCKERS: none OPEN — the two PARTIAL items are derivations-in-progress [SM interaction dynamics, CMB acoustic recombination mechanism], the BOUNDARY items are documented; QG227-240 resolved 3 QG226 gaps [initial conditions, information origin, cosmology/parameters]; progression PARTIAL TOE [6.5/10 QG226] → NEAR-COMPLETE TOE [8.5/10 QG241]; path to COMPLETE TOE: complete the two partial derivations, then only documented boundaries remain `TQMQG_ToeClosureAudit.md`
+- **QG244** — SYMMETRY DERIVED, DYNAMICS HOSTED (audit) — standard model dynamics audit (audit only, reviews QG60/76/78-85/149-180): 3 DERIVED / 1 HOSTED / 1 PARTIAL / 1 OPEN — the gauge SYMMETRY is DERIVED, the gauge DYNAMICS is HOSTED; DERIVED — gauge symmetry origin [QG161 GAUGE ORIGIN: D96 automorphism group gives 1+3+8=12 generators, the 12 link-directions of C_96(1..6) ARE the gauge generators], U(1) origin [rotation subgroup Z_96 ⊂ D96 is the photon charge], SU(2) origin [restricted to a Z2 doublet the D96 generators span su(2): reflection = σ_z (T3), rotation generator = σ_y, commutator = σ_x — exactly 3, algebra closes]; PARTIAL — SU(3) origin [QG161 derives su(3) 3²−1=8 from the 3 octave families; but QG79 notes the 3-color count was a NEW POSTULATE pre-D96 — structure derived, color-count identification retains a postulate trace]; HOSTED — gauge interactions [QG60/76: gauge theory COMPATIBLE/HOSTED — the 12-generator structure is hosted, but the interaction LAGRANGIAN, vertices, and propagators are not derived from Q-events; coupling VALUES derived QG162/163, the dynamics not]; OPEN — interaction vertices [no QG phase derives γ-e-e, W-u-d, gluon-quark, Higgs Yukawa vertices]; EXACT MISSING DYNAMICS: [1] the gauge interaction Lagrangian/equations of motion, [2] the interaction vertices, [3] the propagators/momentum dependence, [4] the SU(3)-color-count identification with the 3-family space [QG79 postulate trace]; this is the exact content of the QG241 'SM dynamics' partial criterion — the gauge structure is derived, the dynamical content [Lagrangian, vertices, propagators] remains hosted/open `TQMQG_StandardModelDynamicsAudit.md`
