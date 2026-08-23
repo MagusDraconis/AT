@@ -4,12 +4,13 @@
 Single source of truth for all TQM-QG physics validation.
 Run:  python Tools/build_physics_coverage.py
 """
-import json, datetime, os, sys
+import json, datetime, os, sys, re
 
 sys.stdout.reconfigure(encoding='utf-8')
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 MD = os.path.join(ROOT, "Docs", "TQMQG_PhysicsCoverage.md")
 JSON = os.path.join(ROOT, "Docs", "TQMQG_PhysicsCoverage.json")
+REPO_BLOB = "https://github.com/MagusDraconis/TQM/blob/TQM_v1.1/Docs/Research/"
 
 # ── Phase dataset: (number, file, classification, domain, validation, key_result) ──
 P = {}
@@ -708,6 +709,34 @@ meta = dict(
     note="Historical entries are never removed. Additive updates only.",
 )
 
+# ── Recent findings (latest N phases, for the app homepage / news feed) ──
+def title_from_file(f):
+    """TQMQG_HiggsPotentialOrigin.md -> 'Higgs Potential Origin'."""
+    name = os.path.basename(f).replace("TQMQG_", "").replace(".md", "")
+    words = re.findall(r"[A-Z]+(?![a-z])|[A-Z][a-z]*|[a-z]+", name)
+    return " ".join(words)
+
+def summarize(key, limit=260):
+    """First sentence (falling back to a trimmed prefix) of a key_result."""
+    s = key.strip()
+    m = re.match(r"^[^.;:!?]{10,}(?=[.;:])", s)
+    return (m.group(0) if m else s)[:limit] + "…" if len((m.group(0) if m else s)) > limit else (m.group(0) if m else s)
+
+RECENT_COUNT = 6
+recent_findings = [
+    dict(
+        phase=p["phase"],
+        file=p["file"],
+        title=title_from_file(p["file"]),
+        classification=p["classification"],
+        domain=p["domain"],
+        validation=p["validation"],
+        summary=summarize(p["key_result"]),
+        report_url=REPO_BLOB + p["file"],
+    )
+    for n, p in sorted(P.items(), reverse=True)[:RECENT_COUNT]
+]
+
 data = dict(
     meta=meta,
     coverage=coverage,
@@ -716,6 +745,7 @@ data = dict(
     predictions=PREDICTIONS,
     observables=OBSERVABLES,
     gr_topics=GR_TOPICS,
+    recent_findings=recent_findings,
     phases=[P[n] for n in sorted(P.keys())],
 )
 

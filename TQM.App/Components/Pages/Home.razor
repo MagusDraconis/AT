@@ -14,9 +14,6 @@
     <div class="hero-subtitle">From Q to Cosmology</div>
     <div class="hero-tagline">Structure is derivable. Content is realized.</div>
 
-    <div class="hero-project-path">
-        <a class="project-path-link" href="https://github.com/MagusDraconis/TQM" target="_blank" rel="noopener">github.com/MagusDraconis/TQM</a>
-    </div>
 
     @if (_coverage is null)
     {
@@ -72,57 +69,38 @@
 
 <div class="page-section">
     <h2 class="section-heading">Recent Findings</h2>
-    <p class="muted">The latest TQM-QG results (phases 203–209): the standard-model derivations are now closed-form D96 laws.</p>
-    <MudGrid Spacing="3">
-        <MudItem xs="12" sm="6" lg="4">
-            <MudCard Elevation="1" Class="theory-card h-100">
-                <MudCardContent>
-                    <MudText Typo="Typo.caption" Class="text-uppercase fw-bold muted">QG203 · ABSOLUTE MASS ORIGIN</MudText>
-                    <MudText Typo="Typo.subtitle1" Class="fw-bold mt-1">Exact neutrino masses</MudText>
-                    <MudText Typo="Typo.body2" Class="muted mt-2">
-                        m1 = 0, m2 = 1/(Σ√m·√(span/2)) = 8.72 meV, m3 = √#g/(Σm·√2) = 49.4 meV.
-                        Closed-form D96 expressions; ratio m2/m3 = 2Σm/(Σ√m·√(span·#g)) exact.
-                    </MudText>
-                </MudCardContent>
-            </MudCard>
-        </MudItem>
-        <MudItem xs="12" sm="6" lg="4">
-            <MudCard Elevation="1" Class="theory-card h-100">
-                <MudCardContent>
-                    <MudText Typo="Typo.caption" Class="text-uppercase fw-bold muted">QG204 · RUNNING ORIGIN</MudText>
-                    <MudText Typo="Typo.subtitle1" Class="fw-bold mt-1">Quark MS̄ running</MudText>
-                    <MudText Typo="Typo.body2" Class="muted mt-2">
-                        The D96 mass law is natively MS̄ at the natural scale (all six within 0.2%);
-                        spectral α_s = 8/Σ√m; exponent q = #d/(2·#g) reproduces the QCD ratio.
-                    </MudText>
-                </MudCardContent>
-            </MudCard>
-        </MudItem>
-        <MudItem xs="12" sm="6" lg="4">
-            <MudCard Elevation="1" Class="theory-card h-100">
-                <MudCardContent>
-                    <MudText Typo="Typo.caption" Class="text-uppercase fw-bold muted">QG206–208 · GRAVITY CLOSURE</MudText>
-                    <MudText Typo="Typo.subtitle1" Class="fw-bold mt-1">α=0, metric ansatz, Hawking</MudText>
-                    <MudText Typo="Typo.body2" Class="muted mt-2">
-                        α = 0 derived (flat rotation curves are the scale-free deficit); metric ansatz
-                        PARTIAL UNIQUE; Hawking T ∝ 1/R preserved in the ψ sector.
-                    </MudText>
-                </MudCardContent>
-            </MudCard>
-        </MudItem>
-        <MudItem xs="12" sm="6" lg="4">
-            <MudCard Elevation="1" Class="theory-card h-100">
-                <MudCardContent>
-                    <MudText Typo="Typo.caption" Class="text-uppercase fw-bold muted">QG209 · EXACT LAW</MudText>
-                    <MudText Typo="Typo.subtitle1" Class="fw-bold mt-1">Lepton hierarchy</MudText>
-                    <MudText Typo="Typo.body2" Class="muted mt-2">
-                        m_μ = me·Σm²/√occMom, m_τ = me·Σm²·λ₂. Exact D96 ratios, no empirical
-                        exponents: m_μ 0.13%, m_τ 0.28%.
-                    </MudText>
-                </MudCardContent>
-            </MudCard>
-        </MudItem>
-    </MudGrid>
+    <p class="muted">The latest TQM-QG phases (auto-updated from the coverage JSON).</p>
+    @if (_coverage is not null && _coverage.RecentFindings.Count > 0)
+    {
+        <MudGrid Spacing="3">
+            @foreach (var f in _coverage.RecentFindings)
+            {
+                <MudItem xs="12" sm="6" lg="4">
+                    <MudCard Elevation="1" Class="theory-card h-100">
+                        <MudCardContent>
+                            <MudText Typo="Typo.caption" Class="text-uppercase fw-bold muted">TQM-QG @((int)f.Phase) · @f.Classification</MudText>
+                            <MudText Typo="Typo.subtitle1" Class="fw-bold mt-1">@f.Title</MudText>
+                            <MudText Typo="Typo.body2" Class="muted mt-2">
+                                @f.Summary
+                            </MudText>
+                            <div class="mt-3">
+                                <span class="badge @BadgeClassFor(f.Validation)">@f.Validation</span>
+                                <span class="badge badge-neutral">@f.Domain</span>
+                            </div>
+                            <MudButton Variant="Variant.Text" Color="Color.Primary" Href="@f.ReportUrl"
+                                       Target="_blank" Rel="noopener" Class="mt-2 px-0" Size="Size.Small">
+                                Report <i class="bi bi-box-arrow-up-right"></i>
+                            </MudButton>
+                        </MudCardContent>
+                    </MudCard>
+                </MudItem>
+            }
+        </MudGrid>
+    }
+    else
+    {
+        <MudProgressCircular Indeterminate="true" Size="Size.Small" />
+    }
 </div>
 
 <div class="page-section">
@@ -137,7 +115,7 @@
             }
         }
     </div>
-    <p class="muted mt-2">TRM &rarr; Problems Found &rarr; ResearchX &rarr; Structure/Content Split &rarr; Hostile Reviews &rarr; TQM v1.0 &rarr; D96 Program &rarr; QG209.</p>
+    <p class="muted mt-2">TRM &rarr; Problems Found &rarr; ResearchX &rarr; Structure/Content Split &rarr; Hostile Reviews &rarr; TQM v1.0 &rarr; D96 Program &rarr; @(_coverage is not null ? $"QG{_coverage.Coverage.TotalPhases - 1}" : "QG…").</p>
 </div>
 
 <div class="page-section">
@@ -206,6 +184,16 @@
 @code {
     private PhysicsCoverageFile? _coverage;
     private PredictionOutcomeFile? _outcomes;
+
+    /// <summary>Maps a phase validation status to a badge CSS class.</summary>
+    private static string BadgeClassFor(string validation)
+        => validation switch
+        {
+            "tested" => "badge-derived",
+            "partial" => "badge-partial",
+            "audit" => "badge-compatible",
+            _ => "badge-neutral",
+        };
 
     protected override async Task OnInitializedAsync()
     {

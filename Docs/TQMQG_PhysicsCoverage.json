@@ -591,6 +591,68 @@
       "detail": "G_μν from ρ (exact); G=κT as identity (no independent matter)"
     }
   ],
+  "recent_findings": [
+    {
+      "phase": 248,
+      "file": "TQMQG_HiggsPotentialOrigin.md",
+      "title": "Higgs Potential Origin",
+      "classification": "POTENTIAL ORIGIN",
+      "domain": "standard-model",
+      "validation": "tested",
+      "summary": "higgs potential origin (no new primitives, D96 only, deterministic, rejects the imported Higgs potential)",
+      "report_url": "https://github.com/MagusDraconis/TQM/blob/TQM_v1.1/Docs/Research/TQMQG_HiggsPotentialOrigin.md"
+    },
+    {
+      "phase": 247,
+      "file": "TQMQG_HiggsYukawaOriginAudit.md",
+      "title": "Higgs Yukawa Origin Audit",
+      "classification": "SM DYNAMICS NOT COMPLETE",
+      "domain": "foundation",
+      "validation": "audit",
+      "summary": "higgs yukawa origin audit (audit only, reviews QG84/140-180/203-210/244)",
+      "report_url": "https://github.com/MagusDraconis/TQM/blob/TQM_v1.1/Docs/Research/TQMQG_HiggsYukawaOriginAudit.md"
+    },
+    {
+      "phase": 246,
+      "file": "TQMQG_LagrangianOrigin.md",
+      "title": "Lagrangian Origin",
+      "classification": "LAGRANGIAN ORIGIN",
+      "domain": "standard-model",
+      "validation": "tested",
+      "summary": "lagrangian origin (no new primitives, D96 only, deterministic, no imported SM Lagrangian)",
+      "report_url": "https://github.com/MagusDraconis/TQM/blob/TQM_v1.1/Docs/Research/TQMQG_LagrangianOrigin.md"
+    },
+    {
+      "phase": 245,
+      "file": "TQMQG_GaugeDynamicsOrigin.md",
+      "title": "Gauge Dynamics Origin",
+      "classification": "PARTIAL ORIGIN",
+      "domain": "standard-model",
+      "validation": "tested",
+      "summary": "gauge dynamics origin (no new primitives, D96 only, deterministic, no imported SM Lagrangian)",
+      "report_url": "https://github.com/MagusDraconis/TQM/blob/TQM_v1.1/Docs/Research/TQMQG_GaugeDynamicsOrigin.md"
+    },
+    {
+      "phase": 244,
+      "file": "TQMQG_StandardModelDynamicsAudit.md",
+      "title": "Standard Model Dynamics Audit",
+      "classification": "SYMMETRY DERIVED, DYNAMICS HOSTED",
+      "domain": "foundation",
+      "validation": "audit",
+      "summary": "standard model dynamics audit (audit only, reviews QG60/76/78-85/149-180)",
+      "report_url": "https://github.com/MagusDraconis/TQM/blob/TQM_v1.1/Docs/Research/TQMQG_StandardModelDynamicsAudit.md"
+    },
+    {
+      "phase": 243,
+      "file": "TQMQG_ToeClosureAudit.md",
+      "title": "Toe Closure Audit",
+      "classification": "NEAR-COMPLETE TOE",
+      "domain": "foundation",
+      "validation": "audit",
+      "summary": "TOE closure audit (audit only, re-evaluates the ten QG226 TOE criteria after QG227-240)",
+      "report_url": "https://github.com/MagusDraconis/TQM/blob/TQM_v1.1/Docs/Research/TQMQG_ToeClosureAudit.md"
+    }
+  ],
   "phases": [
     {
       "phase": 0,
