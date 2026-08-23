@@ -3,9 +3,9 @@
 **Single source of truth for all TQM-QG physics validation.**
 
 - Last updated: 2026-08-23
-- Total phases: 239
-- Tested: 205 | Partial: 12 | Untested: 0 | Audit: 22
-- Weighted coverage: 90.6%
+- Total phases: 240
+- Tested: 205 | Partial: 12 | Untested: 0 | Audit: 23
+- Weighted coverage: 90.3%
 
 > Maintenance rule: whenever a QG phase completes, scan its classification, update
 > tested/partial/untested, contradictions, open questions, predictions, and statistics.
@@ -17,12 +17,12 @@
 
 | Metric | Value |
 |---|---|
-| Phases total | 239 |
+| Phases total | 240 |
 | Tested | 205 |
 | Partially tested | 12 |
 | Untested | 0 |
-| Audit (QG170) | 22 |
-| Weighted coverage | 90.6% |
+| Audit (QG170) | 23 |
+| Weighted coverage | 90.3% |
 | SM tested | 53 |
 | Gravity tested | 33 |
 
@@ -44,7 +44,7 @@
 
 | Domain | Tested | Partial | Untested | Audit | Total |
 |---|---|---|---|---|---|
-| Cosmology | 4 | 0 | 0 | 1 | 5 |
+| Cosmology | 4 | 0 | 0 | 2 | 6 |
 | High-Energy Sector | 6 | 1 | 0 | 0 | 7 |
 | Foundations | 20 | 0 | 0 | 16 | 36 |
 | Gravity / GR | 33 | 2 | 0 | 0 | 35 |
@@ -614,3 +614,7 @@ Historical entries are preserved; updates are additive.
 ### Foundations
 
 - **QG237** — MISSING: INFLATION (audit) — external TOE checklist audit (audit only, compares TQM against GENERIC Theory-of-Everything requirements, not TQM's own; reviews QG0-QG234, 31 criteria across six categories): 23 DERIVED / 1 COMPATIBLE / 6 PARTIAL / 0 UNTESTED / 1 OPEN; derived fraction 74.2%, weighted 83.9%; STANDARD MODEL 7 [SU(3)xSU(2)xU(1) COMPATIBLE QG60/161, 3 generations DERIVED QG210, Higgs mechanism PARTIAL QG84/169, masses DERIVED QG203/204/209/210, couplings DERIVED QG162/163/204, mixing DERIVED QG165-167, θ_QCD DERIVED QG174]; GRAVITY 5 [Einstein eqs DERIVED QG197/198/222, G DERIVED QG181/182, GR observables DERIVED QG103/186/187/212/209, BH thermodynamics PARTIAL [exact 1/4 BOUNDARY needs π QG185/196], GW DERIVED QG43/44]; QUANTUM GRAVITY 3 [QM same primitive DERIVED QG216/218/220, QG regime/Planck PARTIAL QG14 no LQG/string-comparable framework, quantization of gravity PARTIAL no quantum-gravitational corrections]; COSMOLOGY 7 [expansion DERIVED QG77, dark matter DERIVED QG195/206, Λ DERIVED QG230, Ω_Λ/Ω_m DERIVED QG234, structure formation DERIVED QG231, CMB spectrum PARTIAL QG77 anisotropy not numerically derived, INFLATION OPEN, initial conditions DERIVED QG227]; EXPERIMENTAL PREDICTIONS 3 [pre-registered DERIVED QG190-193, tested PARTIAL P3 2.80σ P1/P2 PENDING, novel signatures DERIVED]; PRECISION TESTS 6 [EW DERIVED QG175, g-2 DERIVED QG171/178, CKM/PMNS DERIVED QG165-167, gravitational precision DERIVED QG187/186, blind/LOO DERIVED QG176/177]; VERDICT: MISSING: Inflation — the single genuinely OPEN generic TOE criterion; TQM derives structure formation from Poisson seeds without needing inflation [QG231]; the partials are stated boundaries [Bekenstein 1/4], framework-completeness items [Higgs mechanism, QG phenomenology/quantization, CMB spectrum], and experiment-ahead-of-data [tested predictions] `TQMQG_ExternalToeChecklistAudit.md`
+
+### Cosmology
+
+- **QG238** — PARTIAL INFLATION (audit) — inflation necessity audit (audit only, checks the five problems inflation was invented to solve against QG227-231): PARTIAL INFLATION — inflation is NOT REQUIRED, all five motive problems are SOLVED BY TQM; 1 HORIZON problem — the initial state is the UNIFORM critical state ρ_k = 1/K [QG227], globally uniform by construction, isotropy inherited, no epoch needed; 2 FLATNESS problem — Ω_Λ + Ω_m = 1 EXACTLY as a structural identity [QG230 Λ ~ ρ̄, QG234], derived not fine-tuned; 3 INITIAL PERTURBATIONS — the Poisson counting variance of Q-events δ_i = 1/√⟨N⟩ [QG228/231], derived from the counting measure; 4 CMB ISOTROPY — uniform initial state isotropic by construction [QG227], QG77 conformal CMB compatibility; 5 STRUCTURE FORMATION — the pressureless deficit dust grows the Poisson seeds linearly δ(a) = δ_i·a/a_i [QG231]; all five TQM-solved, 0 by inflation, 0 unresolved; CAVEAT — the CMB ANISOTROPY SPECTRUM [tilt n_s ≈ 0.96, acoustic peaks] is NOT numerically matched: the Poisson seed is white/scale-free not near-scale-invariant, the CMB spectrum is not computed [QG235 PARTIAL]; the inflation EPOCH is REPLACED but its observable spectrum CONTENT is a remaining gap ⇒ PARTIAL INFLATION; inflation as a motive is gone, as a prediction [the spectrum] it is partial `TQMQG_InflationNecessityAudit.md`
