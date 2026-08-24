@@ -3,16 +3,16 @@
     "file": "Docs/TQMQG_PhysicsCoverage.md|json",
     "purpose": "single source of truth for all TQM-QG physics validation",
     "last_updated": "2026-08-24",
-    "phases_count": 280,
+    "phases_count": 281,
     "note": "Historical entries are never removed. Additive updates only."
   },
   "coverage": {
-    "total_phases": 280,
+    "total_phases": 281,
     "tested": 212,
     "partial": 12,
     "untested": 0,
-    "audit": 56,
-    "weighted_coverage": 0.8286,
+    "audit": 57,
+    "weighted_coverage": 0.8265,
     "domains": {
       "cosmology": {
         "tested": 7,
@@ -32,8 +32,8 @@
         "tested": 20,
         "partial": 0,
         "untested": 0,
-        "audit": 49,
-        "total": 69
+        "audit": 50,
+        "total": 70
       },
       "gravity": {
         "tested": 33,
@@ -593,6 +593,16 @@
   ],
   "recent_findings": [
     {
+      "phase": 279,
+      "file": "TQMQG_QuestionLayerAudit.md",
+      "title": "Question Layer Audit",
+      "classification": "QUESTION LAYER",
+      "domain": "foundation",
+      "validation": "audit",
+      "summary": "question layer audit (the HYPOTHESIS",
+      "report_url": "https://github.com/MagusDraconis/TQM/blob/TQM_v1.1/Docs/Research/TQMQG_QuestionLayerAudit.md"
+    },
+    {
       "phase": 278,
       "file": "TQMQG_EquationClassAudit.md",
       "title": "Equation Class Audit",
@@ -641,16 +651,6 @@
       "validation": "audit",
       "summary": "sector emergence audit (the QUESTION",
       "report_url": "https://github.com/MagusDraconis/TQM/blob/TQM_v1.1/Docs/Research/TQMQG_SectorEmergenceAudit.md"
-    },
-    {
-      "phase": 273,
-      "file": "TQMQG_PostResonanceIntegrityAudit.md",
-      "title": "Post Resonance Integrity Audit",
-      "classification": "RESOLVED 2 / REFRAMED 7 / STILL OPEN 8",
-      "domain": "foundation",
-      "validation": "audit",
-      "summary": "post-resonance integrity audit (re-evaluate ALL remaining issues through the QG260-270 resonance hierarchy",
-      "report_url": "https://github.com/MagusDraconis/TQM/blob/TQM_v1.1/Docs/Research/TQMQG_PostResonanceIntegrityAudit.md"
     }
   ],
   "phases": [
@@ -2893,6 +2893,14 @@
       "domain": "foundation",
       "validation": "audit",
       "key_result": "equation class audit (the QUESTION: why do different equation types exist? where is the layer between Role and Observable? no observables, no target values, D96 only, deterministic): THE EQUATION FORMS PER SECTOR — each sector has a characteristic equation form DETERMINED BY THE MEASUREMENT CLASS [mass → SCALAR EQUALITY [m_f = me·(Σ√m/√Σm²), VALUE class — a value equals a value]; coupling → RATIO/INVERSE-RATIO [α_weak = 3/Σm, 1/α_em = Σm+#d, STRENGTH class — a strength equals a normalized ratio]; mixing → ANGLE + UNITARITY CONSTRAINT [Vus = #d/(2Σm), V†V=I, ORIENTATION class — a rotation preserving the norm]; gravity → POWER LAW [M_Pl = v·(Σm·#g·occ₂)³, G = 1/M_Pl², GEOMETRY class — a dimensionful combination to a power]; cosmology → LOG-RATIO [n_s = 1−ln(span)/(Σm−#d), Ω_Λ = I_occ/ln K, GLOBAL class — scale-invariant]]; THE FORM SHARING — the equation forms are PROJECTION CLASSES not fundamental: the ratio-equality form appears in MASS [m_τ/m_μ = √occMom·λ₂], COUPLING [y_τ/y_μ = √occMom·λ₂], AND MIXING [Vus = #d/(2Σm) has the same ratio structure as sin²θ_W = #g/(2Σm)] — NO equation form is sector-unique, the equation class is determined by the measurement class [structural] and shared across the sectors that use that class; THE LAYER STRUCTURE — ROLE [measurement class → sector] → EQUATION FORM [the class's natural relation] → OBSERVABLE [the concrete quantity] — the equation form is the BRIDGE between the role and the observable: the structural relation type the observable satisfies, set by its measurement class; DETERMINATION: EQUATION CLASS LAYER [equation-layer score 6/6] — a structural equation-class layer exists BETWEEN Role and Observable; the equation forms are projection classes of the measurement classes [each class's natural relation form: value→equality, strength→ratio, orientation→unitary, global→log, geometry→power], shared across the sectors that use the class; completes the chain QG260→261→262→263→264→265→266→267→268→269→270→271→272→273→274→275→276: Resonance Layer → Operator Layer → Same Operator Sectors → Single Resonance Dynamics → Single Resonance Invariant → Universal Conservation → Self-Consistency → Individuation → Difference Principle → Post-Resonance Integrity [frontier=assignment] → Sector Emergence → Partial Assignment → Measurement Class Layer → Partial Role Principle [role=ontological category] → EQUATION CLASS LAYER [ROLE → EQUATION FORM → OBSERVABLE]; the frontier remains the relational-subclass role [which equation a strength read enters], but the equation layer itself is structural and shared"
+    },
+    {
+      "phase": 279,
+      "file": "TQMQG_QuestionLayerAudit.md",
+      "classification": "QUESTION LAYER",
+      "domain": "foundation",
+      "validation": "audit",
+      "key_result": "question layer audit (the HYPOTHESIS: measurement classes emerge from more fundamental QUESTION classes — how much? how strong? how oriented? how global? what shape? no observables, no target values, D96 only, deterministic): THE FIVE QUESTION CLASSES — ONE-TO-ONE with the measurement classes [how much? asks for a magnitude → VALUE → mass; how strong? asks for an interaction → STRENGTH → coupling; how oriented? asks for an alignment → ORIENTATION → mixing; how global? asks for the whole → GLOBAL → cosmology; what shape? asks for the geometry → GEOMETRY → gravity]; THE GENERATIVE STRUCTURE — the question determines WHAT KIND of read is needed ['how much?' → magnitude → value read [dimensional]; 'how strong?' → interaction → ratio read [dimensionless]; 'how oriented?' → alignment → angle read [unitary]; 'how global?' → the whole → log read [scale-invariant]; 'what shape?' → geometry → power/deficit read] — the question class SELECTS the measurement class; THE QUESTION CLASSES ARE THE QG275 AXIS POSITIONS [LEVEL × NATURE: how much? = (local, absolute) → VALUE; how strong? = (local, relational) → STRENGTH; how oriented? = (relational, frame) → ORIENTATION; how global? = (global, relational) → GLOBAL; what shape? = (arena, absolute) → GEOMETRY] — the most primitive classification of what is asked about the spectrum; THE QUESTION LAYER — QUESTION [how much/strong/oriented/global/shape] → MEASUREMENT CLASS [value/strength/orientation/global/geometry] → EQUATION FORM [equality/ratio/unitary/log/power] → OBSERVABLE — the question is the ORIGIN: it selects what kind of read is needed, which determines the class, the equation form, and the observable; DETERMINATION: QUESTION LAYER [question-layer score 6/6] — a structural question layer GENERATES the measurement classes; the question classes are the most primitive classification of what is asked about the spectrum [the QG275 axis positions LEVEL × NATURE]; HONEST CAVEAT [QG275]: the question→sector completion [which sector a how-strong read belongs to — coupling vs mixing vs mass-ratio] retains the relational-subclass context-dependence; the QUESTION layer is the structural origin, the SECTOR role is the residual; completes the chain QG260→261→262→263→264→265→266→267→268→269→270→271→272→273→274→275→276→277: Resonance Layer → Operator Layer → Same Operator Sectors → Single Resonance Dynamics → Single Resonance Invariant → Universal Conservation → Self-Consistency → Individuation → Difference Principle → Post-Resonance Integrity [frontier=assignment] → Sector Emergence → Partial Assignment → Measurement Class Layer → Partial Role Principle → Equation Class Layer → QUESTION LAYER [question → measurement class → equation form → observable]; the structure that generates all measurement classes is the question layer: how much, how strong, how oriented, how global, what shape — the primitive questions that select the kind of read the theory must produce"
     }
   ]
 }
