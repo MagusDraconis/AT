@@ -3,16 +3,16 @@
     "file": "Docs/TQMQG_PhysicsCoverage.md|json",
     "purpose": "single source of truth for all TQM-QG physics validation",
     "last_updated": "2026-08-24",
-    "phases_count": 285,
+    "phases_count": 286,
     "note": "Historical entries are never removed. Additive updates only."
   },
   "coverage": {
-    "total_phases": 285,
+    "total_phases": 286,
     "tested": 212,
     "partial": 12,
     "untested": 0,
-    "audit": 61,
-    "weighted_coverage": 0.8184,
+    "audit": 62,
+    "weighted_coverage": 0.8164,
     "domains": {
       "cosmology": {
         "tested": 7,
@@ -32,8 +32,8 @@
         "tested": 20,
         "partial": 0,
         "untested": 0,
-        "audit": 54,
-        "total": 74
+        "audit": 55,
+        "total": 75
       },
       "gravity": {
         "tested": 33,
@@ -593,6 +593,16 @@
   ],
   "recent_findings": [
     {
+      "phase": 284,
+      "file": "TQMQG_BoundaryOriginAudit.md",
+      "title": "Boundary Origin Audit",
+      "classification": "CLOSURE PRINCIPLE",
+      "domain": "foundation",
+      "validation": "audit",
+      "summary": "boundary origin audit (the QUESTION",
+      "report_url": "https://github.com/MagusDraconis/TQM/blob/TQM_v1.1/Docs/Research/TQMQG_BoundaryOriginAudit.md"
+    },
+    {
       "phase": 283,
       "file": "TQMQG_BoundaryConditionAudit.md",
       "title": "Boundary Condition Audit",
@@ -641,16 +651,6 @@
       "validation": "audit",
       "summary": "question layer audit (the HYPOTHESIS",
       "report_url": "https://github.com/MagusDraconis/TQM/blob/TQM_v1.1/Docs/Research/TQMQG_QuestionLayerAudit.md"
-    },
-    {
-      "phase": 278,
-      "file": "TQMQG_EquationClassAudit.md",
-      "title": "Equation Class Audit",
-      "classification": "EQUATION CLASS LAYER",
-      "domain": "foundation",
-      "validation": "audit",
-      "summary": "equation class audit (the QUESTION",
-      "report_url": "https://github.com/MagusDraconis/TQM/blob/TQM_v1.1/Docs/Research/TQMQG_EquationClassAudit.md"
     }
   ],
   "phases": [
@@ -2933,6 +2933,14 @@
       "domain": "foundation",
       "validation": "audit",
       "key_result": "boundary condition audit (the HYPOTHESIS: observable structure is determined PRIMARILY by boundary conditions, not by energy content; investigate via the pot-with-lid / vibrating-string / resonance-chamber analogy applied to D96; no observables, no target values, D96 only, deterministic): THE CLASSICAL ANALOGY — in every case energy sets the AMPLITUDE, the boundary sets the FREQUENCY [vibrating string: string length fixes the frequencies, energy sets the amplitude; pot with a lid: cavity walls fix the standing waves, fill level does not change them; resonance chamber: chamber geometry fixes the resonances, power does not change them]; THE D96 APPLICATION — (1) THE SPECTRUM IS A LAPLACIAN EIGENSPECTRUM: the 95 modes ω=√λ are eigenvalues of the graph Laplacian L=D−A of the N=96 network, determined by the ADJACENCY [the network structure = the boundary], NOT by the activity array [the energy content / actualization amplitude]; (2) FREQUENCY INVARIANCE UNDER ENERGY: the eigenvalues of L do not change if the activity [energy] is rescaled — the activity enters the DYNAMICS [what oscillates], not the SPECTRUM [the frequencies]; (3) CONSERVATION × BOUNDARY = THE TOTAL: Σλ = trace(L) = 2·edges = 1152 = N·d = 96·12 [QG266] — the CONSERVATION part [handshake lemma] × the BOUNDARY part [N=96 degree-12 regularity] fix the TOTAL spectral weight; (4) THE INDIVIDUAL MODES ARE BOUNDARY-SET: the octave families [family count = floor(log2 span)+1 = 3 from span = a boundary-set ratio], the occupancies [4,4,87], the ladder, and the acoustic peaks are ALL determined by the boundary-set spectrum; (5) THE D96 ATTRACTOR IS THE BOUNDARY: the N=96 network is the CONVERGED ATTRACTOR of actualization [QG116: 0% residual link growth] — the attractor is the BOUNDARY, the network closure fixes the spectrum, the 'pot with a lid' whose walls fix the resonances; DETERMINATION: RESONANCE = CONSERVATION + BOUNDARY [boundary-role score 6/6] — the resonance does NOT come from the energy content; it EMERGES from CONSERVATION [the trace identity Σλ = 2E = N·d fixes the TOTAL spectral weight] PLUS BOUNDARY CONDITIONS [the N=96 closure fixes the INDIVIDUAL modes, the frequencies]; the energy content sets the amplitudes, NOT the structure; observable structure is BOUNDARY-DOMINANT — resonance = conservation [total] + boundary [modes]; completes the chain QG260→261→262→263→264→265→266→267→268→269→270→271→272→273→274→275→276→277→278→279→280→281: Resonance Layer → Operator Layer → Same Operator Sectors → Single Resonance Dynamics → Single Resonance Invariant → Universal Conservation → Self-Consistency → Individuation → Difference Principle → Post-Resonance Integrity → Sector Emergence → Partial Assignment → Measurement Class Layer → Partial Role Principle → Equation Class Layer → Question Layer → Fundamental Boundary → True Fundamental Boundary → Final Frontier Inventory → RESONANCE = CONSERVATION + BOUNDARY; the boundary-condition role in the reduction chain: the boundary [N=96 closure] selects the individual resonances, conservation [the trace] fixes the total — the observable structure is the boundary's mode structure"
+    },
+    {
+      "phase": 284,
+      "file": "TQMQG_BoundaryOriginAudit.md",
+      "classification": "CLOSURE PRINCIPLE",
+      "domain": "foundation",
+      "validation": "audit",
+      "key_result": "boundary origin audit (the QUESTION: what is the origin of the boundary [N=96 closure]? is the boundary DERIVED or PRIMITIVE? no observables, no formulas, D96 only, deterministic): THE EVIDENCE — (1) THE N=96 ATTRACTOR: the observable sector is the CONVERGED ATTRACTOR of the actualization dynamics — the topology SATURATES [0% residual link growth, verified] and EVERY initial activity pattern converges to the SAME final geometry [QG116: identical link counts, identical span, content-independent]; (2) THE FIXED-POINT MECHANISM: the actualization dynamics [QG115: activity → links → activity feedback] has a FIXED POINT — the self-reinforcing link creation saturates [positive feedback bounded by network capacity]; the boundary IS the stable fixed point of the actualization flow; (3) STABILITY: the attractor is STABLE [small perturbations return to the same geometry] — the boundary is the stable limit, not a fragile coincidence; (4) THE D96 SELECTION IS THE ATTRACTOR NOT A MENU: N=96 is NOT picked from [64, 96, 128, 192] — it is what the dynamics converges to; the Z2 symmetry [QG159], octave families, and degree-12 regularity [QG266] are ATTRACTOR PROPERTIES, not inputs; (5) THE CLOSURE PRINCIPLE: the boundary is the CLOSURE of the dynamics — the network COMPLETES ITSELF, closure = the dynamics reaching its own completion [no more links form]; THE DETERMINATION — the boundary is DERIVED [the CLOSURE PRINCIPLE]: the actualization DYNAMICS [the primitive process] → its stable FIXED POINT [the closure] → the boundary [N=96]; the boundary is NOT a primitive input, it is the stable fixed point [closure] of the actualization dynamics; every initial pattern converges to the same N=96 geometry; the symmetries are attractor PROPERTIES, derived not assumed; THE PRIMITIVE IS THE PROCESS [actualization]; THE BOUNDARY IS THE PROCESS'S FIXED POINT; DETERMINATION: CLOSURE PRINCIPLE [origin score 6/6] — the boundary is the closure of the actualization dynamics: the N=96 network is the stable fixed point the dynamics converges to from every initial pattern, so the boundary is DERIVED, not primitive; completes the chain QG260→261→262→263→264→265→266→267→268→269→270→271→272→273→274→275→276→277→278→279→280→281→282: Resonance Layer → Operator Layer → Same Operator Sectors → Single Resonance Dynamics → Single Resonance Invariant → Universal Conservation → Self-Consistency → Individuation → Difference Principle → Post-Resonance Integrity → Sector Emergence → Partial Assignment → Measurement Class Layer → Partial Role Principle → Equation Class Layer → Question Layer → Fundamental Boundary → True Fundamental Boundary → Final Frontier Inventory → Resonance = Conservation + Boundary → CLOSURE PRINCIPLE [the boundary is the closure of the dynamics]; the boundary is not a given — it is the self-completion of the actualization process: the primitive is the process, and the boundary is where the process can go no further"
     }
   ]
 }
