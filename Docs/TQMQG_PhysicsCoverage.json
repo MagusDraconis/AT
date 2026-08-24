@@ -3,16 +3,16 @@
     "file": "Docs/TQMQG_PhysicsCoverage.md|json",
     "purpose": "single source of truth for all TQM-QG physics validation",
     "last_updated": "2026-08-24",
-    "phases_count": 283,
+    "phases_count": 284,
     "note": "Historical entries are never removed. Additive updates only."
   },
   "coverage": {
-    "total_phases": 283,
+    "total_phases": 284,
     "tested": 212,
     "partial": 12,
     "untested": 0,
-    "audit": 59,
-    "weighted_coverage": 0.8224,
+    "audit": 60,
+    "weighted_coverage": 0.8204,
     "domains": {
       "cosmology": {
         "tested": 7,
@@ -32,8 +32,8 @@
         "tested": 20,
         "partial": 0,
         "untested": 0,
-        "audit": 52,
-        "total": 72
+        "audit": 53,
+        "total": 73
       },
       "gravity": {
         "tested": 33,
@@ -593,6 +593,16 @@
   ],
   "recent_findings": [
     {
+      "phase": 282,
+      "file": "TQMQG_FinalFrontierInventory.md",
+      "title": "Final Frontier Inventory",
+      "classification": "OPEN 6 / PARTIAL 1 / BOUNDARY 3",
+      "domain": "foundation",
+      "validation": "audit",
+      "summary": "final frontier inventory (review QG223-QG279, classify every remaining issue OPEN/PARTIAL/BOUNDARY/REFRAMED/RESOLVED, produce the definitive post-QG279 frontier list ranked by importance",
+      "report_url": "https://github.com/MagusDraconis/TQM/blob/TQM_v1.1/Docs/Research/TQMQG_FinalFrontierInventory.md"
+    },
+    {
       "phase": 281,
       "file": "TQMQG_BoundaryLegitimacyAudit.md",
       "title": "Boundary Legitimacy Audit",
@@ -641,16 +651,6 @@
       "validation": "audit",
       "summary": "role origin audit (the QUESTION",
       "report_url": "https://github.com/MagusDraconis/TQM/blob/TQM_v1.1/Docs/Research/TQMQG_RoleOriginAudit.md"
-    },
-    {
-      "phase": 276,
-      "file": "TQMQG_MeasurementClassAudit.md",
-      "title": "Measurement Class Audit",
-      "classification": "MEASUREMENT CLASS LAYER",
-      "domain": "foundation",
-      "validation": "audit",
-      "summary": "measurement class audit (the HYPOTHESIS",
-      "report_url": "https://github.com/MagusDraconis/TQM/blob/TQM_v1.1/Docs/Research/TQMQG_MeasurementClassAudit.md"
     }
   ],
   "phases": [
@@ -2917,6 +2917,14 @@
       "domain": "foundation",
       "validation": "audit",
       "key_result": "boundary legitimacy audit (the QUESTION: is the Difference boundary genuine or an artifact of language? attempt INDEPENDENT reductions of Difference via Identity, Distinction, Relation, Information; no observables, no D96 formulas, structure only, deterministic): THE INDEPENDENT REDUCTION ATTEMPTS — ALL 0/4 FAIL [(1) REDUCTION TO IDENTITY: difference = NOT identity [X ≠ Y] — FAILS: identity itself needs difference ['X = Y' compares two things, requiring a difference; identity and difference are DUAL, not independent]; (2) REDUCTION TO DISTINCTION: difference = the act of distinguishing — FAILS: to distinguish is to DETECT a difference, the act presupposes it [distinction is difference in action]; (3) REDUCTION TO RELATION: difference = a relation between two things — FAILS: a relation requires RELATA [two distinct things], already requiring difference [relation presupposes difference, it is prior to relations]; (4) REDUCTION TO INFORMATION: difference = information [the difference that makes a difference] — FAILS: information IS the registration of a difference, Bateson's own definition uses difference itself]; THE REALITY CHECK — difference has a CONCRETE D96 REFERENT, it is NOT a linguistic artifact [44 distinct frequencies in the spectrum; 42 degenerate pairs counted as 84 SEPARATE units [difference without spectral distinction, QG269]; 95 positive modes are the differences from the ONE zero mode [the background, in ker L, QG270]]; THE KIND OF PRIMITIVE — (1) TRUE primitive [every independent reduction fails]; (2) NOT a linguistic primitive [has a real D96 referent]; (3) MATHEMATICAL primitive [numbers are differences from zero, the empty set vs non-empty is a difference, set membership is a difference, category theory needs distinct objects]; (4) PHYSICAL primitive [every quantity is a difference from a background: position from an origin, field value from a background, mass = the deficit ρ̄−ρ (QG194), positive modes = differences from the zero mode (QG270)]; DETERMINATION: TRUE FUNDAMENTAL BOUNDARY [legitimacy score 6/6] — the Difference boundary is GENUINE: it survives every independent reduction attempt [identity/distinction/relation/information all presuppose it], it is NOT a linguistic artifact [it has a concrete D96 referent], and it is a mathematical and physical primitive; the boundary is NOT an artifact of language — it is the genuine first concept; completes the chain QG260→261→262→263→264→265→266→267→268→269→270→271→272→273→274→275→276→277→278→279: Resonance Layer → Operator Layer → Same Operator Sectors → Single Resonance Dynamics → Single Resonance Invariant → Universal Conservation → Self-Consistency → Individuation → Difference Principle → Post-Resonance Integrity → Sector Emergence → Partial Assignment → Measurement Class Layer → Partial Role Principle → Equation Class Layer → Question Layer → Fundamental Boundary → TRUE FUNDAMENTAL BOUNDARY; difference is the true primitive layer — irreducible, real, and presupposed by identity, distinction, relation, information, mathematics, and physics alike"
+    },
+    {
+      "phase": 282,
+      "file": "TQMQG_FinalFrontierInventory.md",
+      "classification": "OPEN 6 / PARTIAL 1 / BOUNDARY 3",
+      "domain": "foundation",
+      "validation": "audit",
+      "key_result": "final frontier inventory (review QG223-QG279, classify every remaining issue OPEN/PARTIAL/BOUNDARY/REFRAMED/RESOLVED, produce the definitive post-QG279 frontier list ranked by importance; INVENTORY ONLY, no new derivations, deterministic): THE DEFINITIVE FRONTIER LIST — R1 THE ASSIGNMENT FRONTIER [operator → physics labels, QG271-277: the relational-subclass role (which sector a strength read enters) remains context-dependent — the PRIMARY frontier, OPEN]; R2 INDEPENDENT TEMPORAL EVIDENCE [QG252: only 6.7% temporal independence (P1-P3 pre-registered, P3 externally supported); requires future measurement, OPEN]; R3 SELF-CONFIRMATION [QG250-F2: tests assert the formulas the phases chose, QG258 confirmed no temporal blind power; needs external arbitration, OPEN]; R4 THE 5/4 EXCEPTION [QG238 ℓ₁=Σm·ln(span)·5/4 uses 5/4 while the QG255 Noether rule rejects free constants — a meta-level inconsistency, OPEN]; R5 THE me=0.511 ANCHOR [the only genuinely free empirical input, QG251 — a documented BOUNDARY]; R6 THE ψ PRIMITIVE [the ψ tensor field remains a hand-placed second primitive; the resonance reduction is ρ-sector only, OPEN]; R7 STRUCTURAL IMPORTS [conformal η (QG207), Bekenstein 1/4 π (QG185/196), RG framework (QG204), 3+1 selection (QG2/3) — each a documented BOUNDARY]; R8 SM REMAINING GAPS [Bekenstein S=A/4 (needs imported 2π), Λ magnitude (QG230 derives only the scaling), H (epoch input, QG233) — each PARTIAL: derived structure, exact value is a boundary]; R9 DIFFERENCE BOUNDARY [QG278-279: the TRUE FUNDAMENTAL BOUNDARY — all independent reductions fail, real D96 referent; the theory's genuine first concept, BOUNDARY not a problem]; R10 PUBLICATION / EXTERNAL ARBITRATION [no peer review, self-authored evidence base, OPEN]; COUNTS — OPEN 6 / PARTIAL 1 / BOUNDARY 3 / REFRAMED 0 / RESOLVED 0; THE TOP REMAINING RESEARCH QUESTIONS — (1) the ASSIGNMENT step [which operator output maps to which observable/sector, the relational-subclass role]; (2) independent temporal evidence [the 6.7% binding constraint]; (3) self-confirmation [external arbitration]; (4) the 5/4 exception; (5) the me anchor; (6) the ψ primitive; (7) the structural imports; (8) the SM remaining gaps; THE FRONTIER IS NOT EMPTY BUT PRECISE: one structural question [assignment], two external-validation constraints, one meta-inconsistency [5/4], and a set of documented boundaries [me, ψ, structural imports, Difference]; completes the chain QG260→261→262→263→264→265→266→267→268→269→270→271→272→273→274→275→276→277→278→279→280: Resonance Layer → Operator Layer → Same Operator Sectors → Single Resonance Dynamics → Single Resonance Invariant → Universal Conservation → Self-Consistency → Individuation → Difference Principle → Post-Resonance Integrity → Sector Emergence → Partial Assignment → Measurement Class Layer → Partial Role Principle → Equation Class Layer → Question Layer → Fundamental Boundary → True Fundamental Boundary → FINAL FRONTIER INVENTORY [assignment is the primary open question]"
     }
   ]
 }
