@@ -3,16 +3,16 @@
     "file": "Docs/TQMQG_PhysicsCoverage.md|json",
     "purpose": "single source of truth for all TQM-QG physics validation",
     "last_updated": "2026-08-24",
-    "phases_count": 289,
+    "phases_count": 290,
     "note": "Historical entries are never removed. Additive updates only."
   },
   "coverage": {
-    "total_phases": 289,
+    "total_phases": 290,
     "tested": 212,
     "partial": 12,
     "untested": 0,
-    "audit": 65,
-    "weighted_coverage": 0.8106,
+    "audit": 66,
+    "weighted_coverage": 0.8086,
     "domains": {
       "cosmology": {
         "tested": 7,
@@ -32,8 +32,8 @@
         "tested": 20,
         "partial": 0,
         "untested": 0,
-        "audit": 58,
-        "total": 78
+        "audit": 59,
+        "total": 79
       },
       "gravity": {
         "tested": 33,
@@ -593,6 +593,16 @@
   ],
   "recent_findings": [
     {
+      "phase": 288,
+      "file": "TQMQG_DifferenceDualityAudit.md",
+      "title": "Difference Duality Audit",
+      "classification": "DIFFERENCE DUALITY",
+      "domain": "foundation",
+      "validation": "audit",
+      "summary": "difference duality audit (the QUESTION",
+      "report_url": "https://github.com/MagusDraconis/TQM/blob/TQM_v1.1/Docs/Research/TQMQG_DifferenceDualityAudit.md"
+    },
+    {
       "phase": 287,
       "file": "TQMQG_PsiReinterpretationAudit.md",
       "title": "Psi Reinterpretation Audit",
@@ -641,16 +651,6 @@
       "validation": "audit",
       "summary": "boundary condition audit (the HYPOTHESIS",
       "report_url": "https://github.com/MagusDraconis/TQM/blob/TQM_v1.1/Docs/Research/TQMQG_BoundaryConditionAudit.md"
-    },
-    {
-      "phase": 282,
-      "file": "TQMQG_FinalFrontierInventory.md",
-      "title": "Final Frontier Inventory",
-      "classification": "OPEN 6 / PARTIAL 1 / BOUNDARY 3",
-      "domain": "foundation",
-      "validation": "audit",
-      "summary": "final frontier inventory (review QG223-QG279, classify every remaining issue OPEN/PARTIAL/BOUNDARY/REFRAMED/RESOLVED, produce the definitive post-QG279 frontier list ranked by importance",
-      "report_url": "https://github.com/MagusDraconis/TQM/blob/TQM_v1.1/Docs/Research/TQMQG_FinalFrontierInventory.md"
     }
   ],
   "phases": [
@@ -2965,6 +2965,14 @@
       "domain": "foundation",
       "validation": "audit",
       "key_result": "psi reinterpretation audit (the QUESTION: what role does ψ [the spin-2 tensor primitive] play in the reduced hierarchy Difference → Actualization → Resonance → Measurement → Physics? no observables, no target values, D96 only, deterministic): THE ESTABLISHED ψ FACTS — ψ is FUNDAMENTAL [cannot emerge from scalar Q-events, QG52: coarse-graining preserves spin, so a spin-2 mode requires microscopic tensor degrees of freedom]; ψ is the WEYL [non-conformal] content of the connectivity [QG54: 6 adjacency components → 2 transverse-traceless polarizations]; ψ is CONTINGENT [not forced by internal consistency, QG47: the scalar universe is self-consistent, ψ is for the spin-2 observables]; THE REINTERPRETATION — 5/5 LINKS HOLD [ψ AS DIFFERENCE: the Weyl tensor IS the difference from conformal flatness — the non-conformal content of the metric [strong link to Difference QG270/278]; ψ AS ACTUALIZATION: the anisotropic [traceless] stress — the scalar sector is the trace/density ρ, ψ is the anisotropy; ψ AS RESONANCE: the spin-2 transverse-traceless modes of the connectivity [2 polarizations, QG54]; ψ AS ORIENTATION: the + and × gravitational-wave polarization modes; ψ AS INFORMATION: the anisotropic information ρ=|ψ|² does not contain]; THE DETERMINATION — PSI REINTERPRETATION [reinterpretation score 6/6]: ψ is REINTERPRETED — fully LOCATED in the reduced hierarchy as the ANISOTROPIC DIFFERENCE CONTENT [difference from conformal flatness [Weyl], anisotropic actualization [traceless stress], spin-2 resonance content of the connectivity, orientation of the anisotropic stress [polarization], anisotropic information [what ρ lacks]]; BUT ψ is NOT ELIMINATED: the spin-2 content is FUNDAMENTAL [QG52: cannot emerge from scalar constituents] — the reinterpretation LOCATES ψ without reducing it away; ψ is the tensor [anisotropic] face of the same Difference the scalar sector reads as density; the QG280 frontier item R6 [ψ primitive] is now REINTERPRETED — ψ is no longer a disconnected hand-placed postulate, it is the anisotropic face of Difference in the reduced hierarchy; it remains fundamental [a documented boundary], but its role is located; completes the chain QG260→261→262→263→264→265→266→267→268→269→270→271→272→273→274→275→276→277→278→279→280→281→282→283→284→285: Resonance Layer → Operator Layer → Same Operator Sectors → Single Resonance Dynamics → Single Resonance Invariant → Universal Conservation → Self-Consistency → Individuation → Difference Principle → Post-Resonance Integrity → Sector Emergence → Partial Assignment → Measurement Class Layer → Partial Role Principle → Equation Class Layer → Question Layer → Fundamental Boundary → True Fundamental Boundary → Final Frontier Inventory → Resonance = Conservation + Boundary → Closure Principle → Assignment Closed → Post-Assignment Frontier Audit → PSI REINTERPRETATION [ψ = the anisotropic face of Difference]; frontier status: ψ is reinterpreted and located; its fundamental status remains a documented boundary"
+    },
+    {
+      "phase": 288,
+      "file": "TQMQG_DifferenceDualityAudit.md",
+      "classification": "DIFFERENCE DUALITY",
+      "domain": "foundation",
+      "validation": "audit",
+      "key_result": "difference duality audit (the QUESTION: are ρ [scalar counting measure, QG216] and ψ [tensor field, spin-2 Weyl content, QG285] INDEPENDENT primitives, or DUAL PROJECTIONS of Difference? no observables, no target values, D96 only, deterministic): THE TWO SECTORS — ρ = the SCALAR counting measure [normalized count share, |ψ|²=ρ, QG216] = the ISOTROPIC difference from the uniform background = the COUNT difference; ψ = the TENSOR field [spin-2, Weyl content, QG285] = the ANISOTROPIC difference from conformal flatness = the ORIENTATION difference [the + and × polarization]; THE DUALITY STRUCTURE [trace vs traceless] — the adjacency tensor A_ij has d(d+1)/2 = 6 components at d=3: 1 TRACE component = the SCALAR [ρ, the isotropic part], 5 TRACELESS = the TENSOR [ψ, the anisotropic part, with 2 transverse-traceless polarizations] — ρ and ψ are the TRACE and TRACELESS decomposition of the SAME rank-2 object [the connectivity / the stress / the difference structure]; THE NON-INDEPENDENCE [the decomposition theorem] — any rank-2 object A_ij = (1/d)·Tr(A)·δ_ij + traceless; the trace [ρ] and the traceless part [ψ] are DETERMINED BY A_ij — neither is an independent input, both are PROJECTIONS of the same difference structure — ρ and ψ are NOT independent primitives; THE COUNT/ORIENTATION DUALITY [parallel to QG269] — count [ρ] = HOW MANY units of difference [the magnitude, |ψ|²=ρ], orientation [ψ] = WHICH DIRECTION [the + and × modes] — ρ = the scalar difference [how much], ψ = the tensor difference [which way], the two faces of ONE difference; THE COMPLETE DUALITY — a rank-2 difference is FULLY captured by trace + traceless [the exhaustive decomposition]; Difference → {ρ [scalar/trace/count], ψ [tensor/traceless/orientation]} is the COMPLETE duality — no third component, the rank-2 decomposition is exhaustive [6 = 1 + 5]; DETERMINATION: DIFFERENCE DUALITY [duality score 6/6] — ρ and ψ are DUAL PROJECTIONS of Difference: ρ = the scalar [trace, isotropic, count] face, ψ = the tensor [traceless, anisotropic, orientation] face of the ONE rank-2 difference structure; the decomposition is exhaustive, so {ρ, ψ} is the COMPLETE duality — THE TWO PRIMITIVES OF TQM ARE THE TWO FACES OF THE SINGLE DIFFERENCE, the true primitive; the ψ fundamental status [QG285] remains, but ρ and ψ are no longer independent; completes the chain QG260→261→262→263→264→265→266→267→268→269→270→271→272→273→274→275→276→277→278→279→280→281→282→283→284→285→286: Resonance Layer → Operator Layer → Same Operator Sectors → Single Resonance Dynamics → Single Resonance Invariant → Universal Conservation → Self-Consistency → Individuation → Difference Principle → Post-Resonance Integrity → Sector Emergence → Partial Assignment → Measurement Class Layer → Partial Role Principle → Equation Class Layer → Question Layer → Fundamental Boundary → True Fundamental Boundary → Final Frontier Inventory → Resonance = Conservation + Boundary → Closure Principle → Assignment Closed → Post-Assignment Frontier Audit → Psi Reinterpretation → DIFFERENCE DUALITY [ρ = the scalar face, ψ = the tensor face of the one Difference]"
     }
   ]
 }
