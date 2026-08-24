@@ -2,17 +2,17 @@
   "meta": {
     "file": "Docs/TQMQG_PhysicsCoverage.md|json",
     "purpose": "single source of truth for all TQM-QG physics validation",
-    "last_updated": "2026-08-23",
-    "phases_count": 274,
+    "last_updated": "2026-08-24",
+    "phases_count": 275,
     "note": "Historical entries are never removed. Additive updates only."
   },
   "coverage": {
-    "total_phases": 274,
+    "total_phases": 275,
     "tested": 212,
     "partial": 12,
     "untested": 0,
-    "audit": 50,
-    "weighted_coverage": 0.8412,
+    "audit": 51,
+    "weighted_coverage": 0.8391,
     "domains": {
       "cosmology": {
         "tested": 7,
@@ -32,8 +32,8 @@
         "tested": 20,
         "partial": 0,
         "untested": 0,
-        "audit": 43,
-        "total": 63
+        "audit": 44,
+        "total": 64
       },
       "gravity": {
         "tested": 33,
@@ -593,6 +593,16 @@
   ],
   "recent_findings": [
     {
+      "phase": 273,
+      "file": "TQMQG_PostResonanceIntegrityAudit.md",
+      "title": "Post Resonance Integrity Audit",
+      "classification": "RESOLVED 2 / REFRAMED 7 / STILL OPEN 8",
+      "domain": "foundation",
+      "validation": "audit",
+      "summary": "post-resonance integrity audit (re-evaluate ALL remaining issues through the QG260-270 resonance hierarchy",
+      "report_url": "https://github.com/MagusDraconis/TQM/blob/TQM_v1.1/Docs/Research/TQMQG_PostResonanceIntegrityAudit.md"
+    },
+    {
       "phase": 272,
       "file": "TQMQG_DistinctionOriginAudit.md",
       "title": "Distinction Origin Audit",
@@ -641,16 +651,6 @@
       "validation": "audit",
       "summary": "invariant origin audit (the QUESTION",
       "report_url": "https://github.com/MagusDraconis/TQM/blob/TQM_v1.1/Docs/Research/TQMQG_InvariantOriginAudit.md"
-    },
-    {
-      "phase": 267,
-      "file": "TQMQG_ResonanceInvariantAudit.md",
-      "title": "Resonance Invariant Audit",
-      "classification": "UNIVERSAL RESONANCE INVARIANT",
-      "domain": "foundation",
-      "validation": "audit",
-      "summary": "resonance invariant audit (the QUESTION",
-      "report_url": "https://github.com/MagusDraconis/TQM/blob/TQM_v1.1/Docs/Research/TQMQG_ResonanceInvariantAudit.md"
     }
   ],
   "phases": [
@@ -2845,6 +2845,14 @@
       "domain": "foundation",
       "validation": "audit",
       "key_result": "distinction origin audit (the TERMINAL question of the individuation chain: WHAT is being distinguished, and does distinction arise from structure, actualization, or a deeper principle? no observables, no formulas, D96 only, deterministic): THE CANDIDATES — (a) CAUSAL POSITION: the branching generations k=0..K−1, density shares ρ_k=μ^k/S are DISTINCT per generation [μ=2: 0.0039, 0.0078, 0.0157, ... distinct; causal positions ARE distinguishable when μ≠1]; (b) NETWORK POSITION: the observable sector is a REGULAR graph [all 96 nodes degree 12, QG266] — all nodes structurally identical, NO network-position distinction, no structural labels; (c) STATE DIFFERENCE: a Q-event is a PROJECTION to a tick/no-tick binary state [QG73] — the event changes state, the DIFFERENCE between before/after IS the tick; (d) ACTUALIZATION DIFFERENCE: a Q-event is a NETWORK TRANSITION [QG29] — the event IS a before→after difference, ρ counts these transitions; THE D96 DIFFERENCE STRUCTURE — the observable-sector Laplacian has 96 eigenvalues: ONE ZERO MODE [the constant vector, in ker L, QG266 — the BACKGROUND/uniform reference] and 95 POSITIVE modes [the DIFFERENCES from the background], with 44 distinct frequencies [degeneracy groups]; distinction = the difference between the background and each mode; WHAT IS BEING DISTINGUISHED — DIFFERENCES THEMSELVES: each Q-event is a difference [before→after transition], causal positions are distinguished by their different shares ρ_k=μ^k/S, the positive modes are distinguished by their difference from the zero/background; there is no pre-existing substance that gets a label — the distinction IS the difference; WHERE DISTINCTION COMES FROM — NOT from structure [the regular network provides no positions/labels/separating geometry]; from ACTUALIZATION — yes, but only because actualization IS a difference [the event is a before→after transition, and the transition is the difference — actualization is not a separate source, it IS a difference]; the deeper source is DIFFERENCE itself: distinction is the registration of a difference, the most primitive notion — before structure, before actualization, before count: a thing is distinguishable exactly insofar as it differs from something else; DETERMINATION: UNIVERSAL DIFFERENCE PRINCIPLE [origin score 6/6] — distinction does not arise from structure [the regular network has none] and not from actualization as a distinct source [actualization IS a difference]; distinction = DIFFERENCE, the most primitive notion of the theory; what is distinguished is differences: the zero/background vs the positive modes, the μ^k/S shares, the before→after transitions; completes the reduction chain QG260→261→262→263→264→265→266→267→268→269→270: Resonance Layer → Operator Layer → Same Operator Sectors → Single Resonance Dynamics → Single Resonance Invariant → Universal Resonance Invariant [Σλ=12·96] → Universal Conservation Law [Σλ=trace=2E=N·d] → Universal Conservation Principle [all laws = count conservation] → Universal Self-Consistency [count conserved because a Q-event IS a unit] → Single Individuation Principle [count & distinction = two faces of actualization] → UNIVERSAL DIFFERENCE PRINCIPLE [what is distinguished is DIFFERENCE itself]; the theory bottoms out in DIFFERENCE, the most primitive notion, from which distinction, individuation, count, and ultimately all conservation laws arise"
+    },
+    {
+      "phase": 273,
+      "file": "TQMQG_PostResonanceIntegrityAudit.md",
+      "classification": "RESOLVED 2 / REFRAMED 7 / STILL OPEN 8",
+      "domain": "foundation",
+      "validation": "audit",
+      "key_result": "post-resonance integrity audit (re-evaluate ALL remaining issues through the QG260-270 resonance hierarchy: Resonance Layer → Operator Layer → Same Operator Sectors → Single Resonance Dynamics → Single Resonance Invariant → Universal Resonance Invariant [Σλ=12·96] → Universal Conservation Law [Σλ=2E=N·d] → Universal Conservation Principle → Universal Self-Consistency → Single Individuation Principle → Universal Difference Principle; for every remaining criticism determine RESOLVED/REFRAMED/STILL OPEN/FALSE PROBLEM; focus QG250/252/253/256/257/258): THE RE-EVALUATION — 17 critiques: RESOLVED 2 [QG250-F1 parameter leakage — FALSE PREMISE: the 8 moments are reads of ONE invariant (Σλ=2E=N·d, QG266) via CROWDING/COMPRESSION/BEAT/LOCKING (QG261), not 8 free knobs [QG251 already showed 2 effective params]; QG250 octave-grouping circularity — the [4,4,87] occupancies are the COMPRESSION read of the spectrum (QG261), derived not chosen]; REFRAMED 7 [QG252 independent evidence — fractions unchanged but the operator layer (QG261) and invariant Σλ (QG266) add STRUCTURAL derivation units that never see a target; temporal 6.7% remains binding; QG253 formula uniqueness — the simpler alternatives isolate a single octave band, they project the WRONG operator, octave preservation is now DERIVED, r₃₁ remains UNIQUE; QG256 selection-principle — octave preservation UPGRADED to derived, the 5/4 exception remains STILL OPEN; QG257 principle competition — the seven ad-hoc principles collapse into ONE structural requirement [project the correct operator family, QG263], the assignment remains target-informed; QG258 blind tournament — the WEAK result is EXPLAINED: the operators are UNIVERSAL (QG262) so a target-free chain CANNOT discriminate observables, a structural consequence not a selection defect; QG250 N=96 selection — the network is the actualization attractor, Σλ=12·96=N·d makes the degree-12 regularity structural; QG250 per-particle mass fits — the mass formulas consume the SAME operator basis in every sector (QG262), projections of one layer]; STILL OPEN 8 [QG250-F2 self-confirmation — structural reduction adds no independent validation; me=0.511 anchor — the only genuinely free input; conformal η import; Bekenstein π gap; ψ primitive; y_f=m_f/v definitional; 3+1 selection; QG250 minors+editorial [Λ value, H, RG import, ρ→metric non-uniqueness, publication]]; FALSE PROBLEM 0; THE ANSWER — YES, the resonance reduction changed the interpretation: it RESOLVED the structural critiques [parameter leakage was a false premise, octave grouping is derived], REFRAMED the selection-principle critiques [octave preservation is a derived projection, the principle competition collapses to one structural requirement, the blind-tournament weakness is explained by operator universality], and left the genuinely EMPIRICAL/METHODOLOGICAL critiques unchanged [F2, me anchor, temporal evidence, structural imports]; THE TRUE REMAINING FRONTIER AFTER QG270 — (1) THE ASSIGNMENT STEP [which operator output maps to which observable/sector, QG262 caveat — the operator basis is universal but the structure→physics-label mapping retains target-information, QG257/258/259]; (2) THE 5/4 EXCEPTION [acoustic-peak factor inconsistent with the Noether rule, QG256]; (3) THE me=0.511 ANCHOR; (4) INDEPENDENT TEMPORAL EVIDENCE [6.7% temporal, QG252]; (5) STRUCTURAL IMPORTS [conformal η, Bekenstein π, ψ primitive, RG, 3+1]; the ASSIGNMENT step [structure → physics labels] is the true frontier"
     }
   ]
 }
