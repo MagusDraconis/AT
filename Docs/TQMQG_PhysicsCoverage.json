@@ -3,16 +3,16 @@
     "file": "Docs/TQMQG_PhysicsCoverage.md|json",
     "purpose": "single source of truth for all TQM-QG physics validation",
     "last_updated": "2026-08-24",
-    "phases_count": 282,
+    "phases_count": 283,
     "note": "Historical entries are never removed. Additive updates only."
   },
   "coverage": {
-    "total_phases": 282,
+    "total_phases": 283,
     "tested": 212,
     "partial": 12,
     "untested": 0,
-    "audit": 58,
-    "weighted_coverage": 0.8245,
+    "audit": 59,
+    "weighted_coverage": 0.8224,
     "domains": {
       "cosmology": {
         "tested": 7,
@@ -32,8 +32,8 @@
         "tested": 20,
         "partial": 0,
         "untested": 0,
-        "audit": 51,
-        "total": 71
+        "audit": 52,
+        "total": 72
       },
       "gravity": {
         "tested": 33,
@@ -593,6 +593,16 @@
   ],
   "recent_findings": [
     {
+      "phase": 281,
+      "file": "TQMQG_BoundaryLegitimacyAudit.md",
+      "title": "Boundary Legitimacy Audit",
+      "classification": "TRUE FUNDAMENTAL BOUNDARY",
+      "domain": "foundation",
+      "validation": "audit",
+      "summary": "boundary legitimacy audit (the QUESTION",
+      "report_url": "https://github.com/MagusDraconis/TQM/blob/TQM_v1.1/Docs/Research/TQMQG_BoundaryLegitimacyAudit.md"
+    },
+    {
       "phase": 280,
       "file": "TQMQG_FundamentalBoundaryAudit.md",
       "title": "Fundamental Boundary Audit",
@@ -641,16 +651,6 @@
       "validation": "audit",
       "summary": "measurement class audit (the HYPOTHESIS",
       "report_url": "https://github.com/MagusDraconis/TQM/blob/TQM_v1.1/Docs/Research/TQMQG_MeasurementClassAudit.md"
-    },
-    {
-      "phase": 275,
-      "file": "TQMQG_AssignmentPrincipleAudit.md",
-      "title": "Assignment Principle Audit",
-      "classification": "PARTIAL ASSIGNMENT",
-      "domain": "foundation",
-      "validation": "audit",
-      "summary": "assignment principle audit (the QUESTION",
-      "report_url": "https://github.com/MagusDraconis/TQM/blob/TQM_v1.1/Docs/Research/TQMQG_AssignmentPrincipleAudit.md"
     }
   ],
   "phases": [
@@ -2909,6 +2909,14 @@
       "domain": "foundation",
       "validation": "audit",
       "key_result": "fundamental boundary audit (the QUESTION: have we reached a true primitive layer? what is the FIRST concept that cannot be reduced further without reintroducing itself? review Difference, Actualization, Question, Self-consistency; no observables, no target values, D96 only, deterministic): THE REDUCTION ANALYSIS — (1) ACTUALIZATION → presupposes DIFFERENCE [an act of actualizing is a CHANGE — a before→after difference; the Q-event is a transition (QG270); DERIVABLE from Difference]; (2) QUESTION → presupposes DIFFERENCE [a question is a GAP — the difference between known and unknown; the QG277 question classes are the (level, nature) distinctions; DERIVABLE from Difference]; (3) SELF-CONSISTENCY → presupposes DIFFERENCE [non-contradiction requires COMPARING parts — a difference; identity is the zero difference (QG268); DERIVABLE from Difference]; (4) DIFFERENCE → the first concept [any attempt to reduce difference reintroduces it: 'two distinct things' uses distinct=difference, 'a boundary' is where things differ, 'a transition' is a before/after difference, 'empty vs non-empty' is itself a difference — EVERY reduction attempt uses the very notion it is defining]; THE SELF-REFERENTIAL CHECK — a concept is a SELF-REFERENTIAL BOUNDARY iff every attempt to reduce it must use the concept itself; difference passes this test — it is NOT DERIVABLE [nothing more fundamental], NOT MUTUALLY DEPENDENT [presupposed by the others, not presupposing them], PRIMITIVE [unreduced] AND MORE — a SELF-REFERENTIAL BOUNDARY; THE DEPENDENCE GRAPH — Actualization → Difference; Question → Difference; Self-consistency → Difference; Difference → unreducible; DETERMINATION: FUNDAMENTAL BOUNDARY [boundary score 6/6] — the reduction chain TERMINATES at DIFFERENCE, the first concept that cannot be reduced without reintroducing itself; Actualization, Question, and Self-consistency are all DERIVABLE from Difference; Difference itself is the true primitive layer [the most primitive notion, presupposed by actualization, question, and self-consistency alike — unreducible because any attempt to define it must already use it]; completes the chain QG260→261→262→263→264→265→266→267→268→269→270→271→272→273→274→275→276→277→278: Resonance Layer → Operator Layer → Same Operator Sectors → Single Resonance Dynamics → Single Resonance Invariant → Universal Conservation → Self-Consistency → Individuation → Difference Principle → Post-Resonance Integrity → Sector Emergence → Partial Assignment → Measurement Class Layer → Partial Role Principle → Equation Class Layer → Question Layer → FUNDAMENTAL BOUNDARY [Difference is the first unreducible concept]"
+    },
+    {
+      "phase": 281,
+      "file": "TQMQG_BoundaryLegitimacyAudit.md",
+      "classification": "TRUE FUNDAMENTAL BOUNDARY",
+      "domain": "foundation",
+      "validation": "audit",
+      "key_result": "boundary legitimacy audit (the QUESTION: is the Difference boundary genuine or an artifact of language? attempt INDEPENDENT reductions of Difference via Identity, Distinction, Relation, Information; no observables, no D96 formulas, structure only, deterministic): THE INDEPENDENT REDUCTION ATTEMPTS — ALL 0/4 FAIL [(1) REDUCTION TO IDENTITY: difference = NOT identity [X ≠ Y] — FAILS: identity itself needs difference ['X = Y' compares two things, requiring a difference; identity and difference are DUAL, not independent]; (2) REDUCTION TO DISTINCTION: difference = the act of distinguishing — FAILS: to distinguish is to DETECT a difference, the act presupposes it [distinction is difference in action]; (3) REDUCTION TO RELATION: difference = a relation between two things — FAILS: a relation requires RELATA [two distinct things], already requiring difference [relation presupposes difference, it is prior to relations]; (4) REDUCTION TO INFORMATION: difference = information [the difference that makes a difference] — FAILS: information IS the registration of a difference, Bateson's own definition uses difference itself]; THE REALITY CHECK — difference has a CONCRETE D96 REFERENT, it is NOT a linguistic artifact [44 distinct frequencies in the spectrum; 42 degenerate pairs counted as 84 SEPARATE units [difference without spectral distinction, QG269]; 95 positive modes are the differences from the ONE zero mode [the background, in ker L, QG270]]; THE KIND OF PRIMITIVE — (1) TRUE primitive [every independent reduction fails]; (2) NOT a linguistic primitive [has a real D96 referent]; (3) MATHEMATICAL primitive [numbers are differences from zero, the empty set vs non-empty is a difference, set membership is a difference, category theory needs distinct objects]; (4) PHYSICAL primitive [every quantity is a difference from a background: position from an origin, field value from a background, mass = the deficit ρ̄−ρ (QG194), positive modes = differences from the zero mode (QG270)]; DETERMINATION: TRUE FUNDAMENTAL BOUNDARY [legitimacy score 6/6] — the Difference boundary is GENUINE: it survives every independent reduction attempt [identity/distinction/relation/information all presuppose it], it is NOT a linguistic artifact [it has a concrete D96 referent], and it is a mathematical and physical primitive; the boundary is NOT an artifact of language — it is the genuine first concept; completes the chain QG260→261→262→263→264→265→266→267→268→269→270→271→272→273→274→275→276→277→278→279: Resonance Layer → Operator Layer → Same Operator Sectors → Single Resonance Dynamics → Single Resonance Invariant → Universal Conservation → Self-Consistency → Individuation → Difference Principle → Post-Resonance Integrity → Sector Emergence → Partial Assignment → Measurement Class Layer → Partial Role Principle → Equation Class Layer → Question Layer → Fundamental Boundary → TRUE FUNDAMENTAL BOUNDARY; difference is the true primitive layer — irreducible, real, and presupposed by identity, distinction, relation, information, mathematics, and physics alike"
     }
   ]
 }
