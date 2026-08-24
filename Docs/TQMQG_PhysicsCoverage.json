@@ -3,16 +3,16 @@
     "file": "Docs/TQMQG_PhysicsCoverage.md|json",
     "purpose": "single source of truth for all TQM-QG physics validation",
     "last_updated": "2026-08-24",
-    "phases_count": 279,
+    "phases_count": 280,
     "note": "Historical entries are never removed. Additive updates only."
   },
   "coverage": {
-    "total_phases": 279,
+    "total_phases": 280,
     "tested": 212,
     "partial": 12,
     "untested": 0,
-    "audit": 55,
-    "weighted_coverage": 0.8306,
+    "audit": 56,
+    "weighted_coverage": 0.8286,
     "domains": {
       "cosmology": {
         "tested": 7,
@@ -32,8 +32,8 @@
         "tested": 20,
         "partial": 0,
         "untested": 0,
-        "audit": 48,
-        "total": 68
+        "audit": 49,
+        "total": 69
       },
       "gravity": {
         "tested": 33,
@@ -593,6 +593,16 @@
   ],
   "recent_findings": [
     {
+      "phase": 278,
+      "file": "TQMQG_EquationClassAudit.md",
+      "title": "Equation Class Audit",
+      "classification": "EQUATION CLASS LAYER",
+      "domain": "foundation",
+      "validation": "audit",
+      "summary": "equation class audit (the QUESTION",
+      "report_url": "https://github.com/MagusDraconis/TQM/blob/TQM_v1.1/Docs/Research/TQMQG_EquationClassAudit.md"
+    },
+    {
       "phase": 277,
       "file": "TQMQG_RoleOriginAudit.md",
       "title": "Role Origin Audit",
@@ -641,16 +651,6 @@
       "validation": "audit",
       "summary": "post-resonance integrity audit (re-evaluate ALL remaining issues through the QG260-270 resonance hierarchy",
       "report_url": "https://github.com/MagusDraconis/TQM/blob/TQM_v1.1/Docs/Research/TQMQG_PostResonanceIntegrityAudit.md"
-    },
-    {
-      "phase": 272,
-      "file": "TQMQG_DistinctionOriginAudit.md",
-      "title": "Distinction Origin Audit",
-      "classification": "UNIVERSAL DIFFERENCE PRINCIPLE",
-      "domain": "foundation",
-      "validation": "audit",
-      "summary": "distinction origin audit (the TERMINAL question of the individuation chain",
-      "report_url": "https://github.com/MagusDraconis/TQM/blob/TQM_v1.1/Docs/Research/TQMQG_DistinctionOriginAudit.md"
     }
   ],
   "phases": [
@@ -2885,6 +2885,14 @@
       "domain": "foundation",
       "validation": "audit",
       "key_result": "role origin audit (the QUESTION: why does a measurement class receive a sector role? what determines the Measurement Class → Sector Role assignment? no observables, no target values, D96 only, deterministic): THE ONTOLOGICAL AXES — LEVEL [local per-object / global whole-universe / arena spacetime] × NATURE [absolute intrinsic / relational between-things] × KIND [magnitude / orientation] × DOMAIN [geometry / interaction]; THE CLASS POSITIONS AND FORCED ROLES — 4/5 are FORCED by the read's position on the axes [VALUE = local-absolute-magnitude-intrinsic → mass [the only dimensional absolute read, FORCED]; ORIENTATION = relational-orientation-between-frames → mixing [the only unitary arrangement V†V=I, FORCED]; GLOBAL = global-scale-invariant-whole → cosmology [the only whole-universe read, FORCED]; GEOMETRY = arena-geometry-spacetime → gravity [the only arena read, FORCED]; STRENGTH = local-relational-interaction → coupling [NOT forced, context-dependent]]; THE ROLE PRINCIPLE — ROLE = THE ONTOLOGICAL CATEGORY of the read's position [local-absolute → mass, local-relational → coupling, relational-orientation → mixing, global → cosmology, arena → gravity] — determined by the structure of the read, not by any target value; THE RESIDUAL [the decisive blocker] — the RELATIONAL SUBCLASS [STRENGTH] is context-dependent: the same read √occMom·λ₂ is m_τ/m_μ [mass-ratio role], y_τ/y_μ [coupling role], and Vus=#d/(2Σm) is a strength read in the mixing role via unitarity — the role within the relational category is set by ADDITIONAL structure [the unitary arrangement or the equation context], not by the read form alone; note STRENGTH and ORIENTATION share the (local, relational) position — the kind/domain axes [magnitude vs orientation] are needed to separate them; DETERMINATION: PARTIAL ROLE PRINCIPLE — the role assignment is STRUCTURALLY DETERMINED for 4/5 classes [value→mass, orientation→mixing, global→cosmology, geometry→gravity FORCED by the read's position on the axes], but the RELATIONAL SUBCLASS [strength, 1/5] is CONTEXT-DEPENDENT: the same read is a mass-ratio, a coupling, or a mixing entry depending on the unitary arrangement or equation context — this is the decisive blocker [a complete role assignment principle would require every class→role map to be forced]; completes the chain QG260→261→262→263→264→265→266→267→268→269→270→271→272→273→274→275: Resonance Layer → Operator Layer → Same Operator Sectors → Single Resonance Dynamics → Single Resonance Invariant → Universal Conservation → Self-Consistency → Individuation → Difference Principle → Post-Resonance Integrity [frontier=assignment] → Sector Emergence → Partial Assignment → Measurement Class Layer → PARTIAL ROLE PRINCIPLE [role = ontological category; the relational subclass is the residual target-informed step: whether a strength read enters the mass hierarchy, the Yukawa Lagrangian, or the unitary mixing matrix]"
+    },
+    {
+      "phase": 278,
+      "file": "TQMQG_EquationClassAudit.md",
+      "classification": "EQUATION CLASS LAYER",
+      "domain": "foundation",
+      "validation": "audit",
+      "key_result": "equation class audit (the QUESTION: why do different equation types exist? where is the layer between Role and Observable? no observables, no target values, D96 only, deterministic): THE EQUATION FORMS PER SECTOR — each sector has a characteristic equation form DETERMINED BY THE MEASUREMENT CLASS [mass → SCALAR EQUALITY [m_f = me·(Σ√m/√Σm²), VALUE class — a value equals a value]; coupling → RATIO/INVERSE-RATIO [α_weak = 3/Σm, 1/α_em = Σm+#d, STRENGTH class — a strength equals a normalized ratio]; mixing → ANGLE + UNITARITY CONSTRAINT [Vus = #d/(2Σm), V†V=I, ORIENTATION class — a rotation preserving the norm]; gravity → POWER LAW [M_Pl = v·(Σm·#g·occ₂)³, G = 1/M_Pl², GEOMETRY class — a dimensionful combination to a power]; cosmology → LOG-RATIO [n_s = 1−ln(span)/(Σm−#d), Ω_Λ = I_occ/ln K, GLOBAL class — scale-invariant]]; THE FORM SHARING — the equation forms are PROJECTION CLASSES not fundamental: the ratio-equality form appears in MASS [m_τ/m_μ = √occMom·λ₂], COUPLING [y_τ/y_μ = √occMom·λ₂], AND MIXING [Vus = #d/(2Σm) has the same ratio structure as sin²θ_W = #g/(2Σm)] — NO equation form is sector-unique, the equation class is determined by the measurement class [structural] and shared across the sectors that use that class; THE LAYER STRUCTURE — ROLE [measurement class → sector] → EQUATION FORM [the class's natural relation] → OBSERVABLE [the concrete quantity] — the equation form is the BRIDGE between the role and the observable: the structural relation type the observable satisfies, set by its measurement class; DETERMINATION: EQUATION CLASS LAYER [equation-layer score 6/6] — a structural equation-class layer exists BETWEEN Role and Observable; the equation forms are projection classes of the measurement classes [each class's natural relation form: value→equality, strength→ratio, orientation→unitary, global→log, geometry→power], shared across the sectors that use the class; completes the chain QG260→261→262→263→264→265→266→267→268→269→270→271→272→273→274→275→276: Resonance Layer → Operator Layer → Same Operator Sectors → Single Resonance Dynamics → Single Resonance Invariant → Universal Conservation → Self-Consistency → Individuation → Difference Principle → Post-Resonance Integrity [frontier=assignment] → Sector Emergence → Partial Assignment → Measurement Class Layer → Partial Role Principle [role=ontological category] → EQUATION CLASS LAYER [ROLE → EQUATION FORM → OBSERVABLE]; the frontier remains the relational-subclass role [which equation a strength read enters], but the equation layer itself is structural and shared"
     }
   ]
 }
