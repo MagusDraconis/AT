@@ -3,16 +3,16 @@
     "file": "Docs/TQMQG_PhysicsCoverage.md|json",
     "purpose": "single source of truth for all TQM-QG physics validation",
     "last_updated": "2026-08-24",
-    "phases_count": 281,
+    "phases_count": 282,
     "note": "Historical entries are never removed. Additive updates only."
   },
   "coverage": {
-    "total_phases": 281,
+    "total_phases": 282,
     "tested": 212,
     "partial": 12,
     "untested": 0,
-    "audit": 57,
-    "weighted_coverage": 0.8265,
+    "audit": 58,
+    "weighted_coverage": 0.8245,
     "domains": {
       "cosmology": {
         "tested": 7,
@@ -32,8 +32,8 @@
         "tested": 20,
         "partial": 0,
         "untested": 0,
-        "audit": 50,
-        "total": 70
+        "audit": 51,
+        "total": 71
       },
       "gravity": {
         "tested": 33,
@@ -593,6 +593,16 @@
   ],
   "recent_findings": [
     {
+      "phase": 280,
+      "file": "TQMQG_FundamentalBoundaryAudit.md",
+      "title": "Fundamental Boundary Audit",
+      "classification": "FUNDAMENTAL BOUNDARY",
+      "domain": "foundation",
+      "validation": "audit",
+      "summary": "fundamental boundary audit (the QUESTION",
+      "report_url": "https://github.com/MagusDraconis/TQM/blob/TQM_v1.1/Docs/Research/TQMQG_FundamentalBoundaryAudit.md"
+    },
+    {
       "phase": 279,
       "file": "TQMQG_QuestionLayerAudit.md",
       "title": "Question Layer Audit",
@@ -641,16 +651,6 @@
       "validation": "audit",
       "summary": "assignment principle audit (the QUESTION",
       "report_url": "https://github.com/MagusDraconis/TQM/blob/TQM_v1.1/Docs/Research/TQMQG_AssignmentPrincipleAudit.md"
-    },
-    {
-      "phase": 274,
-      "file": "TQMQG_SectorEmergenceAudit.md",
-      "title": "Sector Emergence Audit",
-      "classification": "SECTOR EMERGENCE",
-      "domain": "foundation",
-      "validation": "audit",
-      "summary": "sector emergence audit (the QUESTION",
-      "report_url": "https://github.com/MagusDraconis/TQM/blob/TQM_v1.1/Docs/Research/TQMQG_SectorEmergenceAudit.md"
     }
   ],
   "phases": [
@@ -2901,6 +2901,14 @@
       "domain": "foundation",
       "validation": "audit",
       "key_result": "question layer audit (the HYPOTHESIS: measurement classes emerge from more fundamental QUESTION classes — how much? how strong? how oriented? how global? what shape? no observables, no target values, D96 only, deterministic): THE FIVE QUESTION CLASSES — ONE-TO-ONE with the measurement classes [how much? asks for a magnitude → VALUE → mass; how strong? asks for an interaction → STRENGTH → coupling; how oriented? asks for an alignment → ORIENTATION → mixing; how global? asks for the whole → GLOBAL → cosmology; what shape? asks for the geometry → GEOMETRY → gravity]; THE GENERATIVE STRUCTURE — the question determines WHAT KIND of read is needed ['how much?' → magnitude → value read [dimensional]; 'how strong?' → interaction → ratio read [dimensionless]; 'how oriented?' → alignment → angle read [unitary]; 'how global?' → the whole → log read [scale-invariant]; 'what shape?' → geometry → power/deficit read] — the question class SELECTS the measurement class; THE QUESTION CLASSES ARE THE QG275 AXIS POSITIONS [LEVEL × NATURE: how much? = (local, absolute) → VALUE; how strong? = (local, relational) → STRENGTH; how oriented? = (relational, frame) → ORIENTATION; how global? = (global, relational) → GLOBAL; what shape? = (arena, absolute) → GEOMETRY] — the most primitive classification of what is asked about the spectrum; THE QUESTION LAYER — QUESTION [how much/strong/oriented/global/shape] → MEASUREMENT CLASS [value/strength/orientation/global/geometry] → EQUATION FORM [equality/ratio/unitary/log/power] → OBSERVABLE — the question is the ORIGIN: it selects what kind of read is needed, which determines the class, the equation form, and the observable; DETERMINATION: QUESTION LAYER [question-layer score 6/6] — a structural question layer GENERATES the measurement classes; the question classes are the most primitive classification of what is asked about the spectrum [the QG275 axis positions LEVEL × NATURE]; HONEST CAVEAT [QG275]: the question→sector completion [which sector a how-strong read belongs to — coupling vs mixing vs mass-ratio] retains the relational-subclass context-dependence; the QUESTION layer is the structural origin, the SECTOR role is the residual; completes the chain QG260→261→262→263→264→265→266→267→268→269→270→271→272→273→274→275→276→277: Resonance Layer → Operator Layer → Same Operator Sectors → Single Resonance Dynamics → Single Resonance Invariant → Universal Conservation → Self-Consistency → Individuation → Difference Principle → Post-Resonance Integrity [frontier=assignment] → Sector Emergence → Partial Assignment → Measurement Class Layer → Partial Role Principle → Equation Class Layer → QUESTION LAYER [question → measurement class → equation form → observable]; the structure that generates all measurement classes is the question layer: how much, how strong, how oriented, how global, what shape — the primitive questions that select the kind of read the theory must produce"
+    },
+    {
+      "phase": 280,
+      "file": "TQMQG_FundamentalBoundaryAudit.md",
+      "classification": "FUNDAMENTAL BOUNDARY",
+      "domain": "foundation",
+      "validation": "audit",
+      "key_result": "fundamental boundary audit (the QUESTION: have we reached a true primitive layer? what is the FIRST concept that cannot be reduced further without reintroducing itself? review Difference, Actualization, Question, Self-consistency; no observables, no target values, D96 only, deterministic): THE REDUCTION ANALYSIS — (1) ACTUALIZATION → presupposes DIFFERENCE [an act of actualizing is a CHANGE — a before→after difference; the Q-event is a transition (QG270); DERIVABLE from Difference]; (2) QUESTION → presupposes DIFFERENCE [a question is a GAP — the difference between known and unknown; the QG277 question classes are the (level, nature) distinctions; DERIVABLE from Difference]; (3) SELF-CONSISTENCY → presupposes DIFFERENCE [non-contradiction requires COMPARING parts — a difference; identity is the zero difference (QG268); DERIVABLE from Difference]; (4) DIFFERENCE → the first concept [any attempt to reduce difference reintroduces it: 'two distinct things' uses distinct=difference, 'a boundary' is where things differ, 'a transition' is a before/after difference, 'empty vs non-empty' is itself a difference — EVERY reduction attempt uses the very notion it is defining]; THE SELF-REFERENTIAL CHECK — a concept is a SELF-REFERENTIAL BOUNDARY iff every attempt to reduce it must use the concept itself; difference passes this test — it is NOT DERIVABLE [nothing more fundamental], NOT MUTUALLY DEPENDENT [presupposed by the others, not presupposing them], PRIMITIVE [unreduced] AND MORE — a SELF-REFERENTIAL BOUNDARY; THE DEPENDENCE GRAPH — Actualization → Difference; Question → Difference; Self-consistency → Difference; Difference → unreducible; DETERMINATION: FUNDAMENTAL BOUNDARY [boundary score 6/6] — the reduction chain TERMINATES at DIFFERENCE, the first concept that cannot be reduced without reintroducing itself; Actualization, Question, and Self-consistency are all DERIVABLE from Difference; Difference itself is the true primitive layer [the most primitive notion, presupposed by actualization, question, and self-consistency alike — unreducible because any attempt to define it must already use it]; completes the chain QG260→261→262→263→264→265→266→267→268→269→270→271→272→273→274→275→276→277→278: Resonance Layer → Operator Layer → Same Operator Sectors → Single Resonance Dynamics → Single Resonance Invariant → Universal Conservation → Self-Consistency → Individuation → Difference Principle → Post-Resonance Integrity → Sector Emergence → Partial Assignment → Measurement Class Layer → Partial Role Principle → Equation Class Layer → Question Layer → FUNDAMENTAL BOUNDARY [Difference is the first unreducible concept]"
     }
   ]
 }
