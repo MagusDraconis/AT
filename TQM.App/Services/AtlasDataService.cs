@@ -8,11 +8,6 @@ namespace TQM.App.Services;
 /// </summary>
 public static class AtlasDataService
 {
-    public static IReadOnlyList<string> HeroChain { get; } =
-    [
-        "Network", "Quantum", "Space", "Gravity", "Cosmology",
-    ];
-
     public static IReadOnlyList<string> WhyQuestions { get; } =
     [
         "The Standard Model explains much.",

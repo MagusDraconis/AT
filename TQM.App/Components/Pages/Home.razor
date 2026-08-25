@@ -12,45 +12,24 @@
     <div class="hero-kicker">Research Atlas · v1.1</div>
     <div class="hero-title">THE Q-MODEL</div>
     <div class="hero-subtitle">From Q to Cosmology</div>
-    <div class="hero-tagline">Structure is derivable. Content is realized.</div>
+    <div class="hero-tagline">A theory book and validation atlas for the TQM program.</div>
+</div>
 
-
-    @if (_coverage is null)
-    {
-        <MudProgressCircular Indeterminate="true" Size="Size.Medium" Class="mt-4" />
-    }
-    else
-    {
-        <div class="hero-stats">
-            <div class="stat-tile">
-                <div class="stat-value" style="color:#4DD0E1">@_coverage.Coverage.TotalPhases</div>
-                <div class="stat-label">TQM-QG Phases</div>
-            </div>
-            <div class="stat-tile">
-                <div class="stat-value" style="color:#81C784">@_coverage.Coverage.Tested</div>
-                <div class="stat-label">Tested</div>
-            </div>
-            <div class="stat-tile">
-                <div class="stat-value" style="color:#FFB74D">@_coverage.Coverage.Partial</div>
-                <div class="stat-label">Partial</div>
-            </div>
-            <div class="stat-tile">
-                <div class="stat-value" style="color:#64B5F6">@(_coverage.Coverage.WeightedCoverage.ToString("P1", System.Globalization.CultureInfo.InvariantCulture))</div>
-                <div class="stat-label">Weighted coverage</div>
-            </div>
-        </div>
-
-        <div class="hero-chain">
-            @for (int i = 0; i < AtlasDataService.HeroChain.Count; i++)
-            {
-                <span class="chain-node">@AtlasDataService.HeroChain[i]</span>
-                @if (i < AtlasDataService.HeroChain.Count - 1)
-                {
-                    <span class="chain-arrow">&rarr;</span>
-                }
-            }
-        </div>
-    }
+<div class="page-section mt-4">
+    <h2 class="section-heading">Quantum gravity highlight</h2>
+    <MudCard Elevation="1" Class="theory-card">
+        <MudCardContent>
+            <MudText Typo="Typo.body2" Class="muted">
+                The newer base is <strong>Difference → Actualization → Spectrum → Physics</strong>.
+                Q-events are part of the derived chain, not the root primitive anymore.
+            </MudText>
+            <MudText Typo="Typo.body2" Class="muted mt-2">
+                In practice, the closure came from the D96 program: QG294 sealed the minimal hierarchy,
+                QG295 showed the spectrum is inevitable, QG296 reconstructed the full chain, and QG223
+                closed the quantum-gravity loop.
+            </MudText>
+        </MudCardContent>
+    </MudCard>
 </div>
 
 <div class="page-section mt-4">
@@ -201,5 +180,3 @@
         _outcomes = await ValidationDataService.GetOutcomesAsync();
     }
 }
-
-

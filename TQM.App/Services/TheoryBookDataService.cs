@@ -16,35 +16,34 @@ public static class TheoryBookDataService
         Title: "Introduction",
         Subtitle: "What is TQM?",
         Summary:
-            "TQM (THE Q-MODEL) investigates whether matter, quantum behaviour and later gravitation emerge from " +
-            "self-organizing oscillations of a temporal field. Matter is not fundamental: it consists of " +
-            "dynamically stabilized wave structures inside a temporal field. Synchronization and resonance are " +
-            "considered more fundamental than particles.",
+            "TQM now frames the program around the minimal hierarchy Difference → Actualization → Spectrum → Physics. " +
+            "Q-events, geometry, and the rest of the physics chain sit downstream of that base structure, not above it. " +
+            "The theory book is therefore an overview of how the hierarchy grows into gravity, quantum theory, matter, gauge sectors, and cosmology.",
         KeyResults:
         [
-            new("Mission", "Emergence of matter, quantum behaviour, and gravity from a temporal field.", TheoryBadge.Derived, ["QG-001"]),
-            new("Research path", "Temporal Oscillators → Synchronization → Resonance Clusters → Wave Structures → Proto Particles → Quantum → Gravity → Cosmology.", TheoryBadge.Derived, ["QG-001"]),
-            new("Core principle", "Structure is derivable; content is realized. Physics before interpretation.", TheoryBadge.Derived, ["QG-001", "QG-006"]),
+            new("Mission", "Show how Difference → Actualization → Spectrum → Physics grows into the full theory.", TheoryBadge.Derived, ["QG294", "QG295"]),
+            new("Research path", "Difference → Actualization → Spectrum → Physics → Q-events → ρ → geometry → gravity → quantum → matter → gauge → cosmology.", TheoryBadge.Derived, ["QG294", "QG296"]),
+            new("Core principle", "Structure is derivable; content is realized. Q-events are downstream of the minimal base.", TheoryBadge.Derived, ["QG294", "QG296"]),
         ],
         Chapters:
         [
             new("what-is-tqm", "What is TQM?",
-                "Matter, quantum behaviour and gravitation emerge from self-organizing oscillations of a temporal field. Synchronization and resonance are more fundamental than particles.",
+                "TQM is now presented as a hierarchy book: the minimal base is Difference → Actualization → Spectrum → Physics, and the familiar Q-event layer is a derived stage of that chain.",
                 [
-                    new("Emergence hypothesis", "Matter = dynamically stabilized wave structures inside a temporal field.", TheoryBadge.Derived, ["QG-001"]),
-                    new("No-particle-first", "No particle assumptions: emergence first, physics before interpretation.", TheoryBadge.Derived, ["QG-001"]),
+                    new("Minimal base", "Difference → Actualization → Spectrum → Physics is the newest base layer.", TheoryBadge.Derived, ["QG294", "QG295"]),
+                    new("No q-events-first", "Q-events are downstream, not the primitive root.", TheoryBadge.Derived, ["QG296"]),
                 ]),
             new("historical-path", "Historical Path (TRM → TQM)",
                 "TQM's predecessor, the Temporal Resonance Model (TRM), assembled striking pieces but carried zero candidate physics. TQM re-derived the surviving structure from minimal primitives.",
                 [
                     new("Legacy audit", "TRM modules: three absorbed, two rejected, three kept as candidate mathematics.", TheoryBadge.Derived, ["QG-029", "QG-031"]),
-                    new("Re-derivation", "TQM re-derived surviving structure from Q-events + counting measure + (ℓ,τ,ℏ).", TheoryBadge.Derived, ["QG-001", "QG-006"]),
+                    new("Re-derivation", "TQM re-derived surviving structure from the minimal hierarchy, with Q-events placed downstream.", TheoryBadge.Derived, ["QG294", "QG296"]),
                 ]),
             new("core-principles", "Core Principles",
-                "No cosmology first, no gravity first, no particle assumptions. Emergence first; physics before interpretation. Synchronization and resonance are considered more fundamental than particles.",
+                "No q-events-first framing. Difference, actualization, spectrum, and physics are the minimal layers; everything else is a downstream readout.",
                 [
-                    new("Emergence ladder", "7-level emergence: Q-events → causal set → manifold → metric → curvature → Einstein equations → gravity.", TheoryBadge.Derived, ["QG-001"]),
-                    new("Minimal primitives", "Q + Random Actualization + (ℓ, τ, ℏ) — two primitives plus a unit triad.", TheoryBadge.Postulated, ["QG-006", "QG-012"]),
+                    new("Emergence ladder", "Difference → Actualization → Spectrum → Physics → Q-events → ρ → geometry → gravity.", TheoryBadge.Derived, ["QG294", "QG295", "QG296"]),
+                    new("Minimal primitives", "Difference + Actualization + Spectrum + Physics — the minimal hierarchy.", TheoryBadge.Derived, ["QG294"]),
                 ]),
         ]);
 
@@ -53,38 +52,38 @@ public static class TheoryBookDataService
     private static readonly TheorySection Ontology = new(
         Slug: "ontology",
         Title: "Part I — Network Ontology",
-        Subtitle: "Q-Events, Actualization, Causal Order, Nodes and Links",
+        Subtitle: "Difference, Actualization, Spectrum, Physics, Causal Order, Nodes and Links",
         Summary:
-            "The network (V,E) is the single causal-network primitive. Its vertices are Q-events — real-underived " +
-            "network transitions (ticks of actualization) — and its links carry four irreducible sectors: ρ (spin-0), " +
-            "ψ (spin-2), θ (U(1) phase), and S (SU(2) spin). Causal order is derived from the generation relation, and " +
-            "energy is the Noether conjugate of causal-order evolution.",
+            "The network (V,E) is still the working causal representation, but the base has moved one layer deeper: " +
+            "Difference → Actualization → Spectrum → Physics now underlies the Q-event layer. Q-events are the derived " +
+            "actualization ticks, while the links carry the familiar ρ, ψ, θ, and S sectors. Causal order is still " +
+            "derived from the generation relation, and energy remains the Noether conjugate of causal-order evolution.",
         KeyResults:
         [
             new("Causal order derived", "Full causal order = transitive closure of the generation relation.", TheoryBadge.Derived, ["TQMQG110", "TQMQG111", "TQMQG112"]),
-            new("One network primitive", "(V,E) unifies Q-events and psi into ONE causal-network primitive.", TheoryBadge.Derived, ["TQMQG550", "TQMQG551", "TQMQG552"]),
+            new("One network primitive", "(V,E) unifies the downstream Q-event layer and psi into one causal-network representation.", TheoryBadge.Derived, ["TQMQG550", "TQMQG551", "TQMQG552"]),
             new("Energy derived", "Energy = Noether conjugate of causal order; measured as actualization rate.", TheoryBadge.Derived, ["TQMQG890", "TQMQG891", "TQMQG892"]),
         ],
         Chapters:
         [
             new("q-events", "Q-Events",
-                "A Q-event is a REAL-UNDERIVED NETWORK TRANSITION — one local time-state change (a tick of actualization).",
+                "A Q-event is a derived actualization tick — one local time-state change inside the downstream network picture.",
                 [
                     new("Transition picture", "All 4 transition pictures score 4/4; a bare primitive point fails (a static point cannot happen).", TheoryBadge.Derived, ["TQMQG290", "TQMQG292"]),
-                    new("Not emergent", "Q-events are primitive — no deeper substrate; ρ counts Q-events.", TheoryBadge.Postulated, ["TQMQG291"]),
+                    new("Not primitive anymore", "Q-events are downstream of Difference → Actualization → Spectrum → Physics.", TheoryBadge.Derived, ["QG294", "QG296"]),
                 ]),
             new("actualization", "Actualization",
-                "Actualization is the static, irreducible process by which Q-events are realized. Entropy maximization (α=0) selects the uniform per-octave attractor.",
+                "Actualization is the process layer that generates the downstream event picture. Entropy maximization (α=0) selects the uniform per-octave attractor.",
                 [
                     new("α=0 attractor", "Uniform per-octave increments A_k=m₀/K accumulate to the log-deficit density ρ.", TheoryBadge.Derived, ["TQMQG00"]),
                     new("Criticality", "μ=1 is the unique scale-free branching point (L=1/|ln μ| infinite only at criticality).", TheoryBadge.Derived, ["TQMQG12", "TQMQG72"]),
-                    new("Irreducibility", "Actualization is static and irreducible — a fundamental primitive.", TheoryBadge.Postulated, ["QG-006", "QG-025"]),
+                    new("Irreducibility", "Actualization remains a fundamental layer in the minimal hierarchy.", TheoryBadge.Derived, ["QG294"]),
                 ]),
             new("causal-order", "Causal Order",
                 "Causal order is not primitive: it is the transitive closure of the generation relation (event → descendants).",
                 [
                     new("Derived partial order", "Ancestor relation is irreflexive + antisymmetric + transitive — a strict partial order.", TheoryBadge.Derived, ["TQMQG110"]),
-                    new("Generation primitive", "Remaining real-underived primitive = the generation relation (actualization dynamics).", TheoryBadge.Postulated, ["TQMQG112"]),
+                    new("Generation primitive", "Generation still supplies the downstream event sequence, but it now sits below the new minimal base.", TheoryBadge.Postulated, ["TQMQG112"]),
                 ]),
             new("nodes-and-links", "Nodes and Links",
                 "The network (V,E) is ONE primitive. Nodes carry spin-0 content; links carry spin-2 (Weyl) + U(1) phase + SU(2) spin.",

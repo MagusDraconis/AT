@@ -1,0 +1,22 @@
+.theory-intro-strip,
+.theory-legend-strip {
+    background: #151A21;
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    border-radius: 10px;
+    padding: 16px 20px;
+}
+
+.theory-toc-card-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.theory-toc-card-link:hover .theory-toc-card {
+    border-color: rgba(100, 181, 246, 0.6);
+    transform: translateY(-1px);
+}
+
+.theory-toc-card {
+    transition: border-color 0.15s ease, transform 0.15s ease;
+}
