@@ -99,7 +99,7 @@ public static class OrganizationPredictorAudit
     /// trivially near SOME rational (rational density), but only an organized spectrum lands exactly on a
     /// ratio with a SMALL numerator (the D96 locks are 10, 20, 12/5, 25/3).
     /// </summary>
-    private static double LockCoherence(double ratio)
+    public static double LockCoherence(double ratio)
     {
         if (ratio <= 0.0) return 0.0;                    // undefined (span ≤ 1) — no lock structure
         if (Math.Abs(ratio - 1.0) < 1e-9) return 0.0;    // trivial degenerate ratio — no lock information
@@ -126,7 +126,8 @@ public static class OrganizationPredictorAudit
         return bestVal;
     }
 
-    private static bool IsStableLock(double ratio)
+    /// <summary>Is a ratio a stable lock (within 0.5% of a small-fraction rational p/q, q ≤ 5, p ≤ 120)?</summary>
+    public static bool IsStableLock(double ratio)
     {
         if (ratio <= 0.0 || Math.Abs(ratio - 1.0) < 1e-9) return false;
         double nearest = NearestSimpleRational(ratio, 120);
