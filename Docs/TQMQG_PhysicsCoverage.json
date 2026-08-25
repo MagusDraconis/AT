@@ -3,16 +3,16 @@
     "file": "Docs/TQMQG_PhysicsCoverage.md|json",
     "purpose": "single source of truth for all TQM-QG physics validation",
     "last_updated": "2026-08-25",
-    "phases_count": 318,
+    "phases_count": 319,
     "note": "Historical entries are never removed. Additive updates only."
   },
   "coverage": {
-    "total_phases": 318,
+    "total_phases": 319,
     "tested": 212,
     "partial": 12,
     "untested": 7,
-    "audit": 87,
-    "weighted_coverage": 0.7539,
+    "audit": 88,
+    "weighted_coverage": 0.7524,
     "domains": {
       "cosmology": {
         "tested": 7,
@@ -32,8 +32,8 @@
         "tested": 20,
         "partial": 0,
         "untested": 7,
-        "audit": 80,
-        "total": 107
+        "audit": 81,
+        "total": 108
       },
       "gravity": {
         "tested": 33,
@@ -593,6 +593,16 @@
   ],
   "recent_findings": [
     {
+      "phase": 317,
+      "file": "TQMQG_OperatorSpecificityAudit.md",
+      "title": "Operator Specificity Audit",
+      "classification": "MIXED",
+      "domain": "foundation",
+      "validation": "audit",
+      "summary": "operator specificity audit (determine whether the four operators {CROWDING, COMPRESSION, BEAT, LOCKING} measure ORGANIZATION [the arrangement] or merely INEQUALITY [the distribution]",
+      "report_url": "https://github.com/MagusDraconis/TQM/blob/TQM_v1.1/Docs/Research/TQMQG_OperatorSpecificityAudit.md"
+    },
+    {
       "phase": 316,
       "file": "TQMQG_OrganizationMetricPrediction.md",
       "title": "Organization Metric Prediction",
@@ -641,16 +651,6 @@
       "validation": "audit",
       "summary": "red team audit (assume QG260-QG308 are WRONG",
       "report_url": "https://github.com/MagusDraconis/TQM/blob/TQM_v1.1/Docs/Research/TQMQG_RedTeamAudit.md"
-    },
-    {
-      "phase": 311,
-      "file": "TQMQG_AlienDomainAudit.md",
-      "title": "Alien Domain Audit",
-      "classification": "UNIVERSAL ORGANIZATION LAW",
-      "domain": "foundation",
-      "validation": "audit",
-      "summary": "alien domain audit (ATTACK universality",
-      "report_url": "https://github.com/MagusDraconis/TQM/blob/TQM_v1.1/Docs/Research/TQMQG_AlienDomainAudit.md"
     }
   ],
   "phases": [
@@ -3197,6 +3197,14 @@
       "domain": "foundation",
       "validation": "prediction",
       "key_result": "organization metric prediction (the HYPOTHESIS: operator strength predicts organization level — QG309 established organized systems carry {CROWDING, COMPRESSION, BEAT, LOCKING} and unorganized systems lose them; compute an ORGANIZATION SCORE from the four operators and rank the domains [random, uniform, language, DNA, software, finance]; no observables, no target values, deterministic): THE ORGANIZATION SCORE [CROWDING = 1 − (#distinct/#units) [the degeneracy density], COMPRESSION = log2(octave count) normalized [the octave depth], BEAT = log2(span) normalized [the frequency extent], LOCKING = log2(#distinct) normalized [the spectral-gap structure]; Score = (CROWDING + COMPRESSION + BEAT + LOCKING)/4, normalized to [0,1]]; THE MEASURED SCORES [uniform 0.244, random 0.383, DNA 0.635, language 0.739, software 0.779, finance 0.796 — computed order uniform → random → DNA → language → software → finance]; THE CLASS-LEVEL RANKING [unorganized below organized ✓ [uniform 0.244 and random 0.383 rank below all four organized systems 0.635+], heavy-tailed above Zipf ✓ [software 0.779 and finance 0.796 above language 0.739 and DNA 0.635]; the intra-Zipf order [language vs DNA] is not asserted — both are organized, their relative score depends on the degeneracy-vs-span balance]; DETERMINATION: ORGANIZATION LAW [prediction score 5/5] — the operator strength is a genuine organization metric: the organization score from {CROWDING, COMPRESSION, BEAT, LOCKING} ranks the domains at the class level — unorganized < Zipf < heavy-tailed — separating the unorganized systems [uniform, random] from the organized [language, DNA, software, finance] and ranking the heavy-tailed systems above the Zipf systems; the operator structure ranks organization strength, not just detects it; completes the chain QG260→261→262→263→264→265→266→267→268→269→270→271→272→273→274→275→276→277→278→279→280→281→282→283→284→285→286→287→288→289→290→291→292→293→294→295→296→297→298→299→300→301→302→303→304→305→306→307→308→309→310: Resonance Layer → Operator Layer → Same Operator Sectors → Single Resonance Dynamics → Single Resonance Invariant → Universal Conservation → Self-Consistency → Individuation → Difference Principle → Post-Resonance Integrity → Sector Emergence → Partial Assignment → Measurement Class Layer → Partial Role Principle → Equation Class Layer → Question Layer → Fundamental Boundary → True Fundamental Boundary → Final Frontier Inventory → Resonance = Conservation + Boundary → Closure Principle → Assignment Closed → Post-Assignment Frontier Audit → Psi Reinterpretation → Difference Duality → Post-Duality Invariance → Dependency Rebuild → Anchor Inventory → Framework Inventory → Framework Necessity → Foundation Stress Test → Hierarchy Necessity → Minimal Theory → Spectrum Necessity → Reconstruction → Exception Audit → First Peak Origin → Remaining Frontier Re-Audit → Operator Universality Prediction → Duality Prediction Audit → Cross-Domain Universality → Hidden Dual Prediction → Real Network Universality → Missing Dual Search → Compression Law Prediction → Fifth Operator Search → Operator Necessity → Alien Domain Audit → Red Team Audit → Anti-Organization Prediction → Anti-Hierarchy Audit → Null Spectrum Audit → ORGANIZATION METRIC PREDICTION [operator strength ranks organization level]"
+    },
+    {
+      "phase": 317,
+      "file": "TQMQG_OperatorSpecificityAudit.md",
+      "classification": "MIXED",
+      "domain": "foundation",
+      "validation": "audit",
+      "key_result": "operator specificity audit (determine whether the four operators {CROWDING, COMPRESSION, BEAT, LOCKING} measure ORGANIZATION [the arrangement] or merely INEQUALITY [the distribution]; construct pairs: same inequality/different organization and same organization/different inequality; D96 only, deterministic): PAIR (a) — SAME INEQUALITY, DIFFERENT ARRANGEMENT [FREQUENCY READ]: power law [f_k = round(N/k)] vs shuffled power law [the SAME multiset reordered] — the operators are ORDER-BLIND: the frequency reading CANNOT distinguish them [identical CROWDING/COMPRESSION/BEAT/LOCKING] → the frequency read measures INEQUALITY, not arrangement; PAIR (b) — SAME DEGREE SEQUENCE, DIFFERENT ARRANGEMENT [GRAPH READ]: modular graph [two clusters + one bridge] vs degree-preserving rewiring [the SAME degrees, clustering destroyed] — the graph-spectral reading SEES the arrangement QUANTITATIVELY: the modular graph spans ≈15.5 while its rewiring spans ≈6.3 [a 2.4× difference with the SAME degrees] → the spectral read measures ORGANIZATION; PAIR (c) — SAME ORGANIZATION, DIFFERENT INEQUALITY: power-law exponent 1 vs 2 [same rank-ordered form, different inequality] — the operators track inequality MONOTONICALLY [higher exponent → larger span]; THE DECISIVE RESULT — MIXED [the operators measure BOTH, depending on the READ: as frequency statistics they are INEQUALITY-specific [order-blind — a power law and its shuffle are indistinguishable], as graph spectra they are ORGANIZATION-specific [a modular graph differs from its degree-preserving rewiring], and within one organizational form they track inequality monotonically]; DETERMINATION: MIXED [specificity score 5/5] — the operator basis is a SPECTRAL read of the underlying structure: when the structure is a distribution it sees inequality; when it is an arrangement it sees organization; completes the chain QG260→261→262→263→264→265→266→267→268→269→270→271→272→273→274→275→276→277→278→279→280→281→282→283→284→285→286→287→288→289→290→291→292→293→294→295→296→297→298→299→300→301→302→303→304→305→306→307→308→309→310→311: Resonance Layer → Operator Layer → Same Operator Sectors → Single Resonance Dynamics → Single Resonance Invariant → Universal Conservation → Self-Consistency → Individuation → Difference Principle → Post-Resonance Integrity → Sector Emergence → Partial Assignment → Measurement Class Layer → Partial Role Principle → Equation Class Layer → Question Layer → Fundamental Boundary → True Fundamental Boundary → Final Frontier Inventory → Resonance = Conservation + Boundary → Closure Principle → Assignment Closed → Post-Assignment Frontier Audit → Psi Reinterpretation → Difference Duality → Post-Duality Invariance → Dependency Rebuild → Anchor Inventory → Framework Inventory → Framework Necessity → Foundation Stress Test → Hierarchy Necessity → Minimal Theory → Spectrum Necessity → Reconstruction → Exception Audit → First Peak Origin → Remaining Frontier Re-Audit → Operator Universality Prediction → Duality Prediction Audit → Cross-Domain Universality → Hidden Dual Prediction → Real Network Universality → Missing Dual Search → Compression Law Prediction → Fifth Operator Search → Operator Necessity → Alien Domain Audit → Red Team Audit → Anti-Organization Prediction → Anti-Hierarchy Audit → Null Spectrum Audit → Organization Metric Prediction → OPERATOR SPECIFICITY AUDIT [the operators measure both organization and inequality, depending on the read]"
     }
   ]
 }
