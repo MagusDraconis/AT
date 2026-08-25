@@ -558,12 +558,13 @@ public static class TheoryBookDataService
         Summary:
             "TQM's status: GR is derived (spin-2); QM, gauge, fermions, and the SM are compatible via new sectors; " +
             "cosmology is partially compatible. The open problems are the empirical values of (ℓ,τ,ℏ), the SM " +
-            "parameter values, structure formation, and dark energy. 108 TQM-QG phases (324 tests) are verified.",
+            "parameter values, structure formation, and dark energy. 330 TQM-QG phases (876+ tests) are verified " +
+            "at 73.2% weighted coverage; the canonical architecture is Difference → Actualization → Spectrum → Physics.",
         KeyResults:
         [
             new("GR derived", "GR (spin-2) is DERIVED in the completeness audit.", TheoryBadge.Derived, ["TQMQG760"]),
             new("QM/SM compatible", "QM, gauge, fermions, SM are COMPATIBLE via new sectors (θ, S, J, C).", TheoryBadge.Compatible, ["TQMQG761"]),
-            new("108 phases verified", "108 TQM-QG phases, 324 tests — all verified.", TheoryBadge.Match, ["TQMQG1080"]),
+            new("330 phases verified", "330 TQM-QG phases, 876+ tests — verified (73.2% weighted coverage).", TheoryBadge.Match, ["TQMQG3300"]),
         ],
         Chapters:
         [
