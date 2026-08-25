@@ -61,7 +61,7 @@ Actualization is a **DERIVED LAYER** in the minimal hierarchy, not a third primi
 
 The **QG318(2) Final Theory Architecture** classified Actualization as `Layer.Primitive / FOUNDATIONAL`. This is **INCONSISTENT** with QG292 Case A: if Actualization were a primitive, removing Difference would leave it intact — it does not. The **canonical monograph {Difference, η} is CORRECT**; the QG318(2) primitive classification must be corrected to `Layer.Dynamic / Derived`.
 
-**Documentation-level caveat:** the NewChat_Start prose references "QG282 CLOSURE PRINCIPLE" and "QG286 difference duality" while the coverage register places them at QG284 and QG288 — a numbering drift that does not affect the dependency content.
+**Documentation-level caveat (resolved):** the report originally noted a numbering drift between the NewChat_Start prose ("QG282 CLOSURE PRINCIPLE", "QG286 difference duality") and the coverage register. The register has since been renumbered to match the true QG phase numbers [286 = 286]; the drift is closed and does not affect the dependency content.
 
 ---
 
@@ -71,7 +71,7 @@ The **QG318(2) Final Theory Architecture** classified Actualization as `Layer.Pr
 - Difference-removal collapses Actualization [excludes primitive status];
 - η-removal leaves it intact [excludes the Difference+η classification].
 
-The only caveat is the documentation-level numbering drift, which does not affect the dependency content.
+The only prior caveat was a documentation-level numbering drift, which has since been resolved by renumbering the coverage register to the true QG phase numbers.
 
 ---
 
