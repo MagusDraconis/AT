@@ -179,7 +179,8 @@ Oblique parameters origin (S = occ₀/Σm = 0.0421, T = 2S = 0.0842, U = 0; T = 
 
 Open Questions:
 
-- the authoritative frontier catalog is the QG213 ultra frontier audit (Docs/Research/TQMQG_UltraFrontierAudit.md): theory ~95% complete, frontier primarily experimental — Top-10 after QG212: P1 106 GeV (35) > P2 0νββ (31) > P3 ladder (30) > SM5 quark hierarchy (19) > F3 ψ origin (18) > P4 curvature-Poisson (17) > SM7 golden ratio (14) = SM8 calibration ladder (14) = P5 redshift partition (14) > F4 two primitives (12); no gravity item remains
+- current working hypothesis: QG300 makes the first-peak normalization structural — 5/4 is the boundary projection of the absolute first harmonic, so only ℓ₁ carries the extra factor while peak ratios cancel it.
+- the authoritative frontier catalog is now the QG295–QG300 closure run: QG296 reconstruction completes the QG223–295 map, QG297 isolates the 5/4 exception, QG298 resolves the first peak, and the remaining frontier is primarily experimental — P1 106 GeV, P2 0νββ, P3 ladder; no gravity item remains
 - P1 (106 GeV) status after QG199: PENDING — window 99–114 GeV neither confirmed nor excluded; 95 GeV cluster = 91.19 rung; new 152 GeV excess = 151.98 rung (P3, not P1); HL-LHC decisive
 - sector ladder (P3) after QG200/QG201: 12 rungs audited — CONFIRMED 3 (SM anchors Z/H/t), SUPPORTED 1 (151.98 = ~152 GeV excess, MODERATE SUPPORT alignment 2.80σ, 1-in-386), PENDING 8, none falsified
 - the anti-fit reaudit (QG214) confirms the methodology is clean: QG190-213 added 3 PRE-REGISTERED + 1 REGISTRY LOCK + 20 PREDICTION, zero retro-fit/overfit; RETRO-FIT=2 (QG140/146), OVERFIT=1 (QG147) still correct; risk confined to the fitting era QG140-148
