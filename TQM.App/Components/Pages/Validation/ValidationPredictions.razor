@@ -33,7 +33,16 @@
                             <HeaderContent><MudTh>Field</MudTh><MudTh>Value</MudTh></HeaderContent>
                             <RowTemplate>
                                 <MudTd><span class="audit-cat">@context.Field</span></MudTd>
-                                <MudTd>@context.Value</MudTd>
+                                <MudTd>
+                                    @if (context.Field == "Formula")
+                                    {
+                                        <Latex Content="@context.Value" />
+                                    }
+                                    else
+                                    {
+                                        @context.Value
+                                    }
+                                </MudTd>
                             </RowTemplate>
                         </MudTable>
                         <div class="mt-2">

@@ -66,6 +66,8 @@ public class TQMQG_Phase162_GaugeCouplingOriginTests : ResearchTestBase
         sb.AppendLine("SU(2) DOUBLET-TRANSITION DENSITY:");
         sb.AppendLine($"  α_weak = 3/Σm = 3/{GaugeCouplingOrigin.TotalModes()} = {aW:F6}");
         sb.AppendLine($"  physical α_2(MZ) ≈ 0.0338 → deviation {Deviation(aW, 0.0338):P3}");
+        sb.AppendLine($"  current audit row: 0.0316 vs 0.0338 → deviation {Deviation(0.0316, 0.0338):P3}");
+        sb.AppendLine($"  doublet-transition density = 3/{GaugeCouplingOrigin.TotalModes()} = {3.0 / GaugeCouplingOrigin.TotalModes():F6}");
         sb.AppendLine();
         sb.AppendLine("SU(3) FAMILY-TRANSITION DENSITY:");
         sb.AppendLine($"  α_strong = 8/Σ√m = 8/{GaugeCouplingOrigin.NeutralMoment():F3} = {aS:F6}");
@@ -83,6 +85,7 @@ public class TQMQG_Phase162_GaugeCouplingOriginTests : ResearchTestBase
 
         Assert.True(GaugeCouplingOrigin.AlphaWeak() > 0.02, "weak coupling should be of order 0.03");
         Assert.True(GaugeCouplingOrigin.AlphaWeak() < 0.05, "weak coupling should be of order 0.03");
+        Assert.Equal(3.0 / GaugeCouplingOrigin.TotalModes(), GaugeCouplingOrigin.AlphaWeak(), 6);
         Assert.True(GaugeCouplingOrigin.AlphaStrong() > 0.08, "strong coupling should be of order 0.12");
         Assert.True(GaugeCouplingOrigin.AlphaStrong() < 0.18, "strong coupling should be of order 0.12");
         Assert.True(GaugeCouplingOrigin.WeakOverEmRatio() > 4.0, "weak/em ratio near 1/sin²θ_W");

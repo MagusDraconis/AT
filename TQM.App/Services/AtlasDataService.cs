@@ -68,25 +68,6 @@ public static class AtlasDataService
         new("Neutrino-Koide", ClassificationKind.Falsified, "0.90"),
     ];
 
-    public static IReadOnlyList<ContinuumChainModel> ContinuumChains { get; } =
-    [
-        new("The elliptic chain",
-            "L_Q  →  −∇²  →  Schrödinger",
-            "Controlled and tested",
-            "GraphLaplacianContinuumTests, CurvedSchrodingerTests",
-            "One-dimensional, unweighted, elliptic only."),
-        new("The Lorentzian chain",
-            "BDG  →  □",
-            "Controlled, O(h²)",
-            "BDGOperatorContinuumTests",
-            "Operator imported from causal-set theory; leading-order tolerance."),
-        new("The metric-origin chain",
-            "Q-events → causal order → conformal class (Malament) → conformal factor (ρ^{2/d}) → metric",
-            "Origin closed; dynamics imported",
-            "MetricGenerationTests, MetricEmergenceTests, ConformalStructureTests, MetricOriginTests",
-            "Native metric→operator coupling (G4) remains open."),
-    ];
-
     public static IReadOnlyList<TestGroupModel> TestGroups { get; } =
     [
         new("Continuum",

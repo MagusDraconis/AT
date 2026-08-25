@@ -3,7 +3,7 @@
 <PageTitle>TQM-QG Blind Validation · TQM</PageTitle>
 
 <h2 class="section-heading">TQM-QG Blind Validation</h2>
-<p class="muted">Blind reconstruction tests (QG176–QG177) showing that key Standard Model observables were reconstructed without using their measured values as inputs.</p>
+<p class="muted">Blind reconstruction tests (QG176–QG177) showing that key observables were reconstructed without using their measured values as inputs. The results remain consistent with the newer minimal hierarchy Difference → Actualization → Spectrum → Physics.</p>
 
 <!-- ── 1. Why Blind Tests Matter ─────────────────────────────────────────── -->
 <div class="page-section">
@@ -21,6 +21,11 @@
             The two phases presented here perform exactly this test on the D96 framework: QG176 hides the
             Higgs mass and rebuilds it from pre-Higgs D96 structure; QG177 hides each of twelve
             observables in turn and rebuilds it from the remaining D96 quantities.
+        </p>
+        <p>
+            The later hierarchy audits (QG293–QG296) compress the explanatory base further, but they do
+            not invalidate these blind reconstructions: the same D96 structure still reconstructs the
+            hidden observables without reading their values back into the inputs.
         </p>
     </div>
 </div>
@@ -65,12 +70,12 @@
                 <MudCardContent>
                     <MudText Typo="Typo.subtitle1" Class="fw-bold">Formula A — quartic relation</MudText>
                     <div class="formula-block">
-                        <span class="formula-line">M<span class="formula-sub">H</span> = v · √(λ₂ · g₂)</span>
-                        <span class="formula-line">v = (Σm + #doublets) · ln(span)</span>
-                        <span class="formula-line">g₂ = √(4π · α<sub>weak</sub>)</span>
+                        <Latex Class="formula-line" Content="$M_H = v \cdot \sqrt{\lambda_2 \cdot g_2}$" />
+                        <Latex Class="formula-line" Content="$v = (\Sigma m + \#\mathrm{doublets}) \cdot \ln(\mathrm{span})$" />
+                        <Latex Class="formula-line" Content="$g_2 = \sqrt{4\pi \cdot \alpha_{\mathrm{weak}}}$" />
                     </div>
                     <MudText Typo="Typo.body2" Class="muted">
-                        v = 137 · 1.8567 = 254.37 GeV · g₂ = 0.6299 · λ₂ = 0.3864
+                        <Latex Content="$v = 137 \cdot 1.8567 = 254.37\,\text{GeV},\quad g_2 = 0.6299,\quad \lambda_2 = 0.3864$" />
                     </MudText>
                     <div class="result-row mt-2">
                         <span class="result-label">Result</span>
@@ -84,11 +89,11 @@
                 <MudCardContent>
                     <MudText Typo="Typo.subtitle1" Class="fw-bold">Formula B — occupancy geometry</MudText>
                     <div class="formula-block">
-                        <span class="formula-line">M<span class="formula-sub">H</span> = σ<sub>occ</sub> · (span / 2)</span>
-                        <span class="formula-line">σ<sub>occ</sub> = √(variance of occupancies)</span>
+                        <Latex Class="formula-line" Content="$M_H = \sigma_{\mathrm{occ}} \cdot (\mathrm{span} / 2)$" />
+                        <Latex Class="formula-line" Content="$\sigma_{\mathrm{occ}} = \sqrt{\text{variance of occupancies}}$" />
                     </div>
                     <MudText Typo="Typo.body2" Class="muted">
-                        σ<sub>occ</sub> = 39.127 · span/2 = 3.2013
+                        <Latex Content="$\sigma_{\mathrm{occ}} = 39.127,\quad \mathrm{span}/2 = 3.2013$" />
                     </MudText>
                     <div class="result-row mt-2">
                         <span class="result-label">Result</span>
@@ -129,15 +134,15 @@
     <div class="dep-graph">
         <div class="dep-node dep-primitive"><span>D96</span><span class="dep-node-sub">spectrum</span></div>
         <div class="dep-arrow">&rarr;</div>
-        <div class="dep-node dep-primitive"><span>occupancies</span><span class="dep-node-sub">σ<sub>occ</sub> = 39.13</span></div>
+        <div class="dep-node dep-primitive"><span>occupancies</span><span class="dep-node-sub"><Latex Content="$\sigma_{\mathrm{occ}} = 39.13$" /></span></div>
         <div class="dep-arrow">&rarr;</div>
-        <div class="dep-node dep-derived"><span>spectral gap λ₂</span><span class="dep-node-sub">0.3864</span></div>
+        <div class="dep-node dep-derived"><span>spectral gap λ₂</span><span class="dep-node-sub"><Latex Content="$0.3864$" /></span></div>
         <div class="dep-arrow">&rarr;</div>
-        <div class="dep-node dep-derived"><span>couplings</span><span class="dep-node-sub">g₂, α<sub>weak</sub></span></div>
+        <div class="dep-node dep-derived"><span>couplings</span><span class="dep-node-sub"><Latex Content="$g_2,\ \alpha_{\mathrm{weak}}$" /></span></div>
         <div class="dep-arrow">&rarr;</div>
-        <div class="dep-node dep-derived"><span>weak scale v</span><span class="dep-node-sub">254.4 GeV</span></div>
+        <div class="dep-node dep-derived"><span>weak scale v</span><span class="dep-node-sub"><Latex Content="$254.4\,\text{GeV}$" /></span></div>
         <div class="dep-arrow">&rarr;</div>
-        <div class="dep-node dep-output"><span>M<span class="deps-sub">H</span></span><span class="dep-node-sub">125.25 GeV</span></div>
+        <div class="dep-node dep-output"><span>M<span class="deps-sub">H</span></span><span class="dep-node-sub"><Latex Content="$125.25\,\text{GeV}$" /></span></div>
     </div>
 
     <div class="dep-legend mt-2">
@@ -273,15 +278,17 @@
         <MudCardContent>
             <blockquote class="interpretation-quote">
                 The blind-validation results demonstrate internal predictive consistency of the D96
-                framework. They do not by themselves prove physical correctness, but they provide
-                evidence that the reported results are not simple direct fits of the hidden observables.
+                framework. They remain compatible with the newer minimal hierarchy, and they do not
+                by themselves prove physical correctness — but they do show that the reported results
+                are not simple direct fits of the hidden observables.
             </blockquote>
             <MudText Typo="Typo.body2" Class="muted mt-2">
                 Blind reconstruction establishes <em>predictive consistency</em>: the framework's
                 quantities are mutually coherent and are not obtained by reading measured values back
-                into the inputs. It does not, on its own, establish that the D96 structure is the unique
-                or correct description of nature — that would require independent experimental
-                discrimination beyond self-consistency.
+                into the inputs. The newer minimal theory audits compress the base further, but the
+                blind validation still serves as anti-fit evidence. It does not, on its own, establish
+                that the D96 structure is the unique or correct description of nature — that would
+                require independent experimental discrimination beyond self-consistency.
             </MudText>
         </MudCardContent>
     </MudCard>
