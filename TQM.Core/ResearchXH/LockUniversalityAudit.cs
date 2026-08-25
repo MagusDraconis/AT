@@ -142,6 +142,21 @@ public static class LockUniversalityAudit
         return a;
     }
 
+    // ── Public spectrum accessor (reused by QG314) ─────────────────────────────
+
+    /// <summary>The deterministic spectrum for a named domain.</summary>
+    public static double[] Spectrum(string name) => name switch
+    {
+        "physics (D96)" => PhysicsSpectrum(),
+        "language" => LanguageSpectrum(),
+        "music" => MusicSpectrum(),
+        "DNA" => DnaSpectrum(),
+        "software" => SoftwareSpectrum(),
+        "finance" => FinanceSpectrum(),
+        "networks" => NetworkSpectrum(),
+        _ => throw new ArgumentException($"unknown spectrum '{name}'", nameof(name)),
+    };
+
     // ── The normalized lock identities ─────────────────────────────────────────
 
     private static double Span(double[] f)
@@ -176,19 +191,25 @@ public static class LockUniversalityAudit
 
     private static DomainLocks Build(string name, string law, double[] f)
     {
+        var ids = LockIdentities(f);
+        int stable = 0;
+        if (IsStableLock(ids.MomentSpan)) stable++;
+        if (IsStableLock(ids.CompressionCount)) stable++;
+        if (IsStableLock(ids.HigherMoment)) stable++;
+        if (IsStableLock(ids.SqrtMomentSpan)) stable++;
+        return new DomainLocks(name, law, ids.MomentSpan, ids.CompressionCount, ids.HigherMoment,
+            ids.SqrtMomentSpan, stable >= 2);
+    }
+
+    /// <summary>The four normalized lock identities of a spectrum.</summary>
+    public static (double MomentSpan, double CompressionCount, double HigherMoment, double SqrtMomentSpan) LockIdentities(double[] f)
+    {
         double span = Span(f);
         double sum = Sum(f), sum2 = Sum2(f), sum3 = Sum3(f), sqrtSum = SqrtSum(f);
-        double momentSpan = span > 1 ? sum / span : 0.0;
-        double compressionCount = sum > 0 ? sum2 / sum : 0.0;
-        double higherMoment = sum2 > 0 ? sum3 / sum2 : 0.0;
-        double sqrtMomentSpan = span > 1 ? sqrtSum / span : 0.0;
-        int stable = 0;
-        if (IsStableLock(momentSpan)) stable++;
-        if (IsStableLock(compressionCount)) stable++;
-        if (IsStableLock(higherMoment)) stable++;
-        if (IsStableLock(sqrtMomentSpan)) stable++;
-        return new DomainLocks(name, law, momentSpan, compressionCount, higherMoment, sqrtMomentSpan,
-            stable >= 2);
+        return (span > 1 ? sum / span : 0.0,
+                sum > 0 ? sum2 / sum : 0.0,
+                sum2 > 0 ? sum3 / sum2 : 0.0,
+                span > 1 ? sqrtSum / span : 0.0);
     }
 
     /// <summary>The seven domains with their lock identities.</summary>
