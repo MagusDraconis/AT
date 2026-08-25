@@ -171,9 +171,10 @@
                 <li><strong>Falsifiable predictions remain untested.</strong> The ~106 GeV resonance
                     (QG132) is a sharp, currently-testable prediction that has not yet been observed; a
                     null result would rule out the Z-anchor calibration.</li>
-                <li><strong>Untested sectors.</strong> Electron g-2, S/T/U oblique parameters, and the
-                    neutrino Majorana character have no derivation yet — the framework does not cover the
-                    full measured SM information space.</li>
+                <li><strong>Experimental validation remains open.</strong> Electron g-2 (a_e), S/T/U oblique
+                    parameters, and the neutrino Majorana character are all DERIVED (QG178/180/179) but
+                    await experimental validation — the derivations are complete, the experiments are the
+                    open item.</li>
                 <li><strong>Selection.</strong> The 48 quantities are a major-measured-SM catalog, not an
                     exhaustive list; a different selection would change the coverage percentages.</li>
             </ul>
@@ -264,13 +265,13 @@
 
         // ── g-2 ────────────────────────────────────────────────────────────
         new("muon g-2 (a_μ)", CoverageStatus.Tested, "g-2", "QG171", "1.16644e-3", "1.16592e-3", 0.00045, "Schwinger + spectral-gap"),
-        new("electron g-2 (a_e)", CoverageStatus.Untested, "g-2", "—", "—", "1159652180.7e-12", null, "no derivation"),
+        new("electron g-2 (a_e)", CoverageStatus.Tested, "g-2", "QG178", "1.159655e-3", "1.159652e-3", 0.000003, "(α/2π)(1−(occ₀/Σm)²); Δa_e<1e-12"),
 
         // ── Neutrino masses ────────────────────────────────────────────────
         new("neutrino masses ν1,ν2,ν3", CoverageStatus.Tested, "Neutrino masses", "QG172", "0, 8.72e-3, 4.94e-2 eV", "normal ordering", 0.0102, "neutral-sector law"),
         new("mass ordering (normal)", CoverageStatus.Tested, "Neutrino masses", "QG172", "m1=0 normal", "normal", null, "normal ordering derived"),
         new("Δm²_solar, Δm²_atm", CoverageStatus.Tested, "Neutrino masses", "QG172", "7.61e-5, 2.44e-3 eV²", "7.53e-5, 2.455e-3", 0.0102, "splittings derived"),
-        new("Majorana character", CoverageStatus.Untested, "Neutrino masses", "—", "—", "open", null, "not derived"),
+        new("Majorana character", CoverageStatus.Tested, "Neutrino masses", "QG179", "MAJORANA, m_ββ=2.02e-3 eV", "self-conjugate, Q=0", null, "0νββ in reach of next-gen"),
 
         // ── Precision EW ───────────────────────────────────────────────────
         new("Z width Γ_Z", CoverageStatus.Tested, "Precision EW", "QG175", "2.4953 GeV", "2.4952 GeV", 0.00004, "MH·cosθ_W/#groups"),
@@ -279,7 +280,7 @@
         new("sin²θ_eff (leptonic)", CoverageStatus.Tested, "Precision EW", "QG175", "0.23158", "0.23153", 0.0003, "effective mixing angle"),
         new("R_b, R_c", CoverageStatus.Partial, "Precision EW", "QG175", "R_b 0.2163", "0.2163, 0.1721", 0.0001, "R_b derived; R_c not"),
         new("A_FB, A_POL", CoverageStatus.Partial, "Precision EW", "QG175", "A_FB^b 0.0992", "various", 0.0002, "A_FB derived; A_POL not"),
-        new("S, T, U oblique", CoverageStatus.Untested, "Precision EW", "—", "—", "≈0", null, "no derivation"),
+        new("S, T, U oblique", CoverageStatus.Tested, "Precision EW", "QG180", "S 0.0421, T 0.0842, U 0", "S≈0.04, T≈0.08", 0.053, "T=2S exact"),
 
         // ── QCD / misc ─────────────────────────────────────────────────────
         new("θ_QCD (strong CP)", CoverageStatus.Tested, "QCD / misc", "QG174", "0 (exactly)", "<1e-10", 0.0, "Z2 reflection suppression"),
@@ -291,9 +292,9 @@
 
     private static IReadOnlyList<AuditRoadmapItemModel> BuildRoadmap() =>
     [
-        new(1, "S, T, U oblique parameters", "UNTESTED", "precision-EW test of new-physics reach"),
-        new(2, "electron g-2 (a_e)", "UNTESTED", "second g-2 target"),
-        new(3, "Majorana character", "UNTESTED", "0νββ test of the D96 neutrino"),
+        new(1, "0νββ (Majorana m_ββ)", "PARTIAL", "derived QG179 (m_ββ=2.02e-3 eV); awaits nEXO/LEGEND-1000"),
+        new(2, "electron g-2 (a_e)", "PARTIAL", "derived QG178 (0.0003%); awaits lattice-limited measurement"),
+        new(3, "S, T, U oblique parameters", "TESTED", "derived QG180 (S,T,U within 5.3% of EW fit)"),
         new(4, "R_c (Z→cc̄ ratio)", "PARTIAL", "R_b derived (QG175); R_c remains"),
         new(5, "A_POL (Z-pole polarization)", "PARTIAL", "A_FB derived (QG175); A_POL remains"),
         new(6, "CKM diagonal/unitarity", "PARTIAL", "explicit Vtd/Vts/Vtb not derived"),
