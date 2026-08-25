@@ -600,7 +600,7 @@
       "domain": "foundation",
       "validation": "audit",
       "summary": "hostile referee audit of the final canonical monograph structure (MONO005, input TQMQG_CanonicalMonograph",
-      "report_url": "https://github.com/MagusDraconis/TQM/blob/TQM_v1.1/Docs/Research/TQMQG_CanonicalMonographRefereeAudit.md"
+      "report_url": "https://github.com/MagusDraconis/TQM/blob/TQM_v1.1/Docs/Zenodo/Monograph/TQMQG_CanonicalMonographRefereeAudit.md"
     },
     {
       "phase": 329,
@@ -610,7 +610,7 @@
       "domain": "foundation",
       "validation": "audit",
       "summary": "final canonical monograph structure (MONO004, assembly only from the canonical end-state post-QG319",
-      "report_url": "https://github.com/MagusDraconis/TQM/blob/TQM_v1.1/Docs/Research/TQMQG_CanonicalMonograph.md"
+      "report_url": "https://github.com/MagusDraconis/TQM/blob/TQM_v1.1/Docs/Zenodo/Monograph/TQMQG_CanonicalMonograph.md"
     },
     {
       "phase": 328,

@@ -12,6 +12,15 @@ MD = os.path.join(ROOT, "Docs", "TQMQG_PhysicsCoverage.md")
 JSON = os.path.join(ROOT, "Docs", "TQMQG_PhysicsCoverage.json")
 REPO_BLOB = "https://github.com/MagusDraconis/TQM/blob/TQM_v1.1/Docs/Research/"
 
+# Reports moved to the Zenodo monograph folder: (filename, override blob URL prefix).
+ZENODO_BLOB = "https://github.com/MagusDraconis/TQM/blob/TQM_v1.1/Docs/Zenodo/Monograph/"
+REPORT_BLOB_OVERRIDES = {
+    "TQMQG_MonographAssembly.md": ZENODO_BLOB,
+    "TQMQG_RefereeObjectionAudit.md": ZENODO_BLOB,
+    "TQMQG_CanonicalMonograph.md": ZENODO_BLOB,
+    "TQMQG_CanonicalMonographRefereeAudit.md": ZENODO_BLOB,
+}
+
 # ── Phase dataset: (number, file, classification, domain, validation, key_result) ──
 P = {}
 def add(n, f, cls, dom, val, key):
@@ -896,7 +905,7 @@ recent_findings = [
         domain=p["domain"],
         validation=p["validation"],
         summary=summarize(p["key_result"]),
-        report_url=REPO_BLOB + p["file"],
+        report_url=REPORT_BLOB_OVERRIDES.get(p["file"], REPO_BLOB) + p["file"],
     )
     for n, p in sorted(P.items(), reverse=True)[:RECENT_COUNT]
 ]

@@ -3,7 +3,7 @@
 **Status:** COMPLETE — **FAIL** (with required corrections before Zenodo)
 **Tests:** TQMMONO0050, TQMMONO0051, TQMMONO0052 (all passed)
 **Core class:** `TQM.Core/ResearchXH/CanonicalMonographRefereeAudit.cs`
-**Input:** `Docs/Research/TQMQG_CanonicalMonograph.md` (the MONO004 17-chapter structure)
+**Input:** `Docs/Zenodo/Monograph/TQMQG_CanonicalMonograph.md` (the MONO004 17-chapter structure)
 **Scope:** theory architecture only — circularity, dependency, hidden assumptions, boundary leakage, unsupported completeness. Style, grammar, missing citations ignored. No new physics, no theory extension.
 
 ---
