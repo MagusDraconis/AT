@@ -1,280 +1,147 @@
 @page "/derivation-map"
-@using System.Net.Http
-@using System.Text
-@using Microsoft.JSInterop
-@using TQM.App.Services
 @using TQM.App.Models
+@using TQM.App.Services
 
-<PageTitle>Derivation Map · TQM</PageTitle>
+<PageTitle>Theory Hierarchy · TQM</PageTitle>
 
-<h2 class="section-heading">Derivation Map</h2>
+<h2 class="section-heading">Theory Hierarchy</h2>
 <p class="muted">
-    Full TQM-QG derivation graph — all 200 phases from the physics-coverage single source of truth.
-    Each node carries the formula actually used in that phase. Edges are the known derivation links
-    (explicit cross-phase references plus the in-domain sequence). Click a node for details.
+    Overview of the TQM derivation path from the base q-modes / Q-events to cosmology.
+    This is a hierarchy map, not a phase-test graph.
 </p>
 
-@if (_graph is null)
-{
-    <MudProgressCircular Indeterminate="true" Size="Size.Medium" Class="mt-4" />
-}
-else
-{
-    <div class="derivation-controls mb-3">
-        <MudSelect T="string" Label="Domain" Value="_domainFilter" ValueChanged="OnDomainChanged"
-                   Class="derivation-domain-select" Variant="Variant.Outlined" Dense="true">
-            <MudSelectItem Value="@("__all__")">All domains (@_graph.Nodes.Count nodes)</MudSelectItem>
-            @foreach (var d in _graph.Domains)
-            {
-                <MudSelectItem Value="@d">@d (@_graph.DomainCounts[d])</MudSelectItem>
-            }
-        </MudSelect>
-        <MudSwitch T="bool" Value="_showFormulas" ValueChanged="OnShowFormulasChanged"
-                   Label="Show formulas" Color="Color.Primary" />
-        <MudSwitch T="bool" Value="_showDomains" ValueChanged="OnShowDomainsChanged"
-                   Label="Group by domain" Color="Color.Secondary" />
-    </div>
+<MudCard Elevation="1" Class="theory-card mb-4">
+    <MudCardContent>
+        <MudText Typo="Typo.body2" Class="muted">
+            The map follows the theory book structure: base ontology, geometry, gravity, tensor sector,
+            quantum sector, matter, gauge, and cosmology. Each stage shows the core formula or structural
+            relation used in the current theory book.
+        </MudText>
+    </MudCardContent>
+</MudCard>
 
-    <div class="derivation-legend mb-3">
-        <span class="legend-node legend-tested">● tested</span>
-        <span class="legend-node legend-partial">● partial</span>
-        <span class="legend-node legend-untested">● untested</span>
-        <span class="legend-node legend-edges ms-3">→ derivation edge</span>
-    </div>
-
-    <div class="derivation-zoombar mb-2">
-        <span class="zoom-label">Zoom</span>
-        <MudIconButton Size="Size.Small" Icon="@Icons.Material.Filled.Remove" OnClick="@(() => ZoomBy(1 / 1.3))" />
-        <MudIconButton Size="Size.Small" Icon="@Icons.Material.Filled.Add" OnClick="@(() => ZoomBy(1.3))" />
-        <MudIconButton Size="Size.Small" Icon="@Icons.Material.Filled.FitScreen" OnClick="@ZoomFit" Title="Fit to width" />
-        <MudIconButton Size="Size.Small" Icon="@Icons.Material.Filled.Refresh" OnClick="@ZoomReset" Title="Reset to 100%" />
-        <span class="zoom-value">@($"{_zoomScale * 100:F0}%")</span>
-        <span class="zoom-hint ms-3"><i class="bi bi-arrows-move"></i> drag to pan · ctrl+wheel to zoom</span>
-    </div>
-    <div id="derivation-graph-container" class="derivation-graph-container"></div>
-
-    <MudDrawer Open="_detailOpen" Variant="DrawerVariant.Temporary" Anchor="Anchor.Right" Class="derivation-drawer">
-        <MudDrawerHeader>
-            <MudText Typo="Typo.h6">@_selected?.Id</MudText>
-            <MudIconButton Icon="@Icons.Material.Filled.Close" OnClick="@(() => _detailOpen = false)" />
-        </MudDrawerHeader>
-        @if (_selected is not null)
-        {
-            <MudCard Elevation="0" Class="theory-card mb-2">
-                <MudCardContent>
-                    <div class="mb-2">
-                        <span class="status-chip @StatusClass(_selected.Validation)">@_selected.Validation.ToUpperInvariant()</span>
-                        <span class="audit-phase ms-2">@_selected.Domain</span>
+<MudStack Spacing="2">
+    @for (var i = 0; i < _stages.Count; i++)
+    {
+        var stage = _stages[i];
+        <MudCard Elevation="1" Class="theory-card">
+            <MudCardContent>
+                <div class="d-flex justify-content-between align-items-start gap-3 flex-wrap">
+                    <div>
+                        <MudText Typo="Typo.caption" Class="text-uppercase fw-bold muted">
+                            Step @((i + 1).ToString("00"))
+                        </MudText>
+                        <MudText Typo="Typo.subtitle1" Class="fw-bold">@stage.Title</MudText>
+                        <MudText Typo="Typo.body2" Class="muted mt-2">@stage.Summary</MudText>
                     </div>
-                    <MudText Typo="Typo.subtitle1" Class="fw-bold">@_selected.Classification</MudText>
-                    <MudText Typo="Typo.caption" Class="muted">@_selected.File</MudText>
-                </MudCardContent>
-            </MudCard>
 
-            <MudText Typo="Typo.subtitle2" Class="text-uppercase fw-bold muted mb-1">Formula used</MudText>
-            <div class="formula-block">@_selected.Formula</div>
+                    <div class="text-end">
+                        <span class="badge badge-neutral">@stage.SectionTitle</span>
+                        <div class="mt-2">
+                            <span class="status-chip @BadgeClass(stage.Badge)">@stage.Badge.ToString().ToUpperInvariant()</span>
+                        </div>
+                    </div>
+                </div>
 
-            <div class="mt-3">
-                <h4 class="section-heading" style="font-size:1rem">Connected phases</h4>
-                @foreach (var n in _connectedNodes)
+                <div class="formula-block mt-3">@stage.Formula</div>
+
+                @if (!string.IsNullOrWhiteSpace(stage.SectionSlug))
                 {
-                    <MudButton Variant="Variant.Text" Color="Color.Primary" Size="Size.Small"
-                               OnClick="@(() => SelectNode(n.Id))">@n.Title</MudButton>
+                    <MudButton Variant="Variant.Text" Color="Color.Primary" Href="@($"/theory/{stage.SectionSlug}")"
+                               Class="mt-2 px-0" Size="Size.Small">
+                        Open theory section <i class="bi bi-arrow-right"></i>
+                    </MudButton>
                 }
+            </MudCardContent>
+        </MudCard>
+
+        @if (i < _stages.Count - 1)
+        {
+            <div class="text-center muted">
+                <i class="bi bi-arrow-down"></i>
             </div>
         }
-    </MudDrawer>
-}
+    }
+</MudStack>
 
 @code {
-    [Inject] private DerivationGraphService DerivationGraphService { get; set; } = default!;
-    [Inject] private IJSRuntime Js { get; set; } = default!;
+    private static readonly IReadOnlyList<HierarchyStage> _stages =
+    [
+        new(
+            "Base (q-modes / Q-events)",
+            "The primitive counting-measure layer: Q-events actualize the network and seed ρ.",
+            "Q-events \u2192 ρ; ρ_k = μ^k/S; μ = 1 criticality",
+            TQM.App.Models.TheoryBadge.Derived,
+            "Introduction",
+            "introduction"),
+        new(
+            "Causal order and spacetime",
+            "From actualization to causal order and the emergent metric class.",
+            "E1 < E2 iff E2 depends on E1; g = ρ^(2/d)\u03b7; sqrt(-g) = ρ",
+            TQM.App.Models.TheoryBadge.Derived,
+            "Network Ontology",
+            "ontology"),
+        new(
+            "Gravity",
+            "The conformal sector generates scalar gravity, regular cores, and rotation-curve behavior.",
+            "a = -(1/d)\u2207ln ρ; GM_eff = m0r0/(d·\u03c1\u0304); M_eff(r)=M(1-e^(−r^3/r_c^3))",
+            TQM.App.Models.TheoryBadge.Derived,
+            "Gravity",
+            "gravity"),
+        new(
+            "Tensor sector \u03c8",
+            "The non-conformal Weyl content restores lensing, Shapiro delay, and spin-2 observables.",
+            "g = ρ^(2/d)e^(2\u03c8); \u03b3 = +1 in the full sector; h_0i \u2260 0",
+            TQM.App.Models.TheoryBadge.Partial,
+            "Tensor Sector",
+            "tensor"),
+        new(
+            "Quantum sector",
+            "Link phases generate interference; actualization implements Born-weighted collapse.",
+            "P = |\u03c8|^2; |e^(i\u03b8\u2081)+e^(i\u03b8\u2082)|^2 = 2+2cos(\u03b8\u2081-\u03b8\u2082)",
+            TQM.App.Models.TheoryBadge.Partial,
+            "Quantum Sector",
+            "quantum"),
+        new(
+            "Matter sector",
+            "Spin structure, fermions, families, and masses are represented through additional sector content.",
+            "Spinor = section of a spin bundle; U(1) \u00d7 SU(2) \u00d7 SU(3); m_f = y_f·v",
+            TQM.App.Models.TheoryBadge.Postulated,
+            "Matter Sector",
+            "matter"),
+        new(
+            "Gauge sector",
+            "Charge, weak isospin, and color are hosted by distinct internal spaces.",
+            "U(1) \u00d7 SU(2) \u00d7 SU(3); phase, spin, and color act on different spaces",
+            TQM.App.Models.TheoryBadge.Postulated,
+            "Gauge Sector",
+            "gauge"),
+        new(
+            "Cosmology",
+            "The same counting-measure picture extends to expansion, FRW compatibility, and dark-matter-like effects.",
+            "a(t) = ρ^(1/d); \u039b(t) = \u03b1/\u221aV(t); g\u2020 = cH_0/(2\u03c0)",
+            TQM.App.Models.TheoryBadge.Compatible,
+            "Cosmology",
+            "cosmology"),
+    ];
 
-    private DerivationGraphData? _graph;
-    private DerivationGraphNode? _selected;
-    private IReadOnlyList<DerivationGraphNode> _connectedNodes = [];
-    private bool _detailOpen;
-    private string _domainFilter = "__all__";
-    private bool _showFormulas = true;
-    private bool _showDomains = true;
-
-    private string _renderedFor = "";
-    private double _zoomScale = 1.0;
-
-    protected override async Task OnInitializedAsync()
+    private static string BadgeClass(TQM.App.Models.TheoryBadge badge) => badge switch
     {
-        _graph = await DerivationGraphService.GetGraphAsync();
-    }
-
-    protected override async Task OnAfterRenderAsync(bool firstRender)
-    {
-        if (_graph is null) return;
-        var key = $"{_domainFilter}|{_showFormulas}|{_showDomains}";
-        if (_renderedFor == key) return;
-        _renderedFor = key;
-        await RenderGraphAsync();
-        await Js.InvokeVoidAsync("tqmDerivationGraph.enablePan", "derivation-graph-container");
-        await Js.InvokeVoidAsync("tqmDerivationGraph.fitToWidth", "derivation-graph-container");
-        _zoomScale = 1.0;
-    }
-
-    private async Task ZoomBy(double factor)
-    {
-        _zoomScale = Math.Clamp(_zoomScale * factor, 0.15, 4.0);
-        await Js.InvokeVoidAsync("tqmDerivationGraph.zoomBy", "derivation-graph-container", factor);
-        StateHasChanged();
-    }
-
-    private async Task ZoomFit()
-    {
-        await Js.InvokeVoidAsync("tqmDerivationGraph.fitToWidth", "derivation-graph-container");
-        _zoomScale = 1.0;
-        StateHasChanged();
-    }
-
-    private async Task ZoomReset()
-    {
-        await Js.InvokeVoidAsync("tqmDerivationGraph.resetZoom", "derivation-graph-container");
-        _zoomScale = 1.0;
-        StateHasChanged();
-    }
-
-    private async Task RenderGraphAsync()
-    {
-        if (_graph is null) return;
-        var definition = BuildMermaid();
-        var dotnetRef = DotNetObjectReference.Create(this);
-        await Js.InvokeVoidAsync("tqmDerivationGraph.render", "derivation-graph-container", definition, dotnetRef);
-    }
-
-    private void OnDomainChanged(string value)
-    {
-        _domainFilter = value;
-        _renderedFor = "";
-        StateHasChanged();
-    }
-
-    private void OnShowFormulasChanged(bool value)
-    {
-        _showFormulas = value;
-        _renderedFor = "";
-        StateHasChanged();
-    }
-
-    private void OnShowDomainsChanged(bool value)
-    {
-        _showDomains = value;
-        _renderedFor = "";
-        StateHasChanged();
-    }
-
-    private string BuildMermaid()
-    {
-        if (_graph is null) return "";
-
-        var nodes = _graph.Nodes;
-        if (_domainFilter != "__all__")
-            nodes = nodes.Where(n => string.Equals(n.Domain, _domainFilter, StringComparison.OrdinalIgnoreCase)).ToList();
-
-        var sb = new StringBuilder();
-        sb.AppendLine("flowchart TD");
-
-        var domains = nodes.Select(n => n.Domain).Distinct().ToList();
-        if (_showDomains && domains.Count > 1)
-        {
-            foreach (var domain in domains)
-            {
-                var id = "sub_" + Sanitize(domain);
-                sb.AppendLine($"  subgraph {id}[\"{domain}\"]");
-                foreach (var n in nodes.Where(n => string.Equals(n.Domain, domain, StringComparison.OrdinalIgnoreCase)))
-                    sb.AppendLine($"    {NodeLine(n)}");
-                sb.AppendLine("  end");
-            }
-        }
-        else
-        {
-            foreach (var n in nodes)
-                sb.AppendLine($"  {NodeLine(n)}");
-        }
-
-        var ids = nodes.Select(n => n.Id).ToHashSet(StringComparer.OrdinalIgnoreCase);
-        foreach (var e in _graph.Edges)
-        {
-            if (!ids.Contains(e.From) || !ids.Contains(e.To)) continue;
-            var label = _showFormulas && !string.IsNullOrEmpty(e.Label) ? $"|{Escape(e.Label)}|" : "";
-            sb.AppendLine($"  {e.From} --> {label}{e.To}");
-        }
-
-        // Node styling by validation status.
-        sb.AppendLine("  classDef tested fill:#152B20,stroke:#81C784,color:#E6EDF3");
-        sb.AppendLine("  classDef partial fill:#2B2415,stroke:#FFB74D,color:#E6EDF3");
-        sb.AppendLine("  classDef audit fill:#23152B,stroke:#BA68C8,color:#E6EDF3");
-        sb.AppendLine("  classDef untested fill:#2B1515,stroke:#E57373,color:#E6EDF3");
-        foreach (var v in nodes.GroupBy(n => n.Validation))
-        {
-            var cls = v.Key switch
-            {
-                "tested" => "tested",
-                "partial" => "partial",
-                "audit" => "audit",
-                _ => "untested",
-            };
-            sb.AppendLine($"  class {string.Join(",", v.Select(n => n.Id))} {cls}");
-        }
-
-        return sb.ToString();
-    }
-
-    private string NodeLine(DerivationGraphNode n) =>
-        $"{n.Id}[\"{Escape(NodeLabel(n))}\"]";
-
-    private string NodeLabel(DerivationGraphNode n)
-    {
-        var parts = new List<string> { Escape(n.Title) };
-        if (_showFormulas && !string.IsNullOrEmpty(n.FormulaShort))
-            parts.Add($"<span style=\"font-size:0.72em;color:#8B949E\">{Escape(n.FormulaShort)}</span>");
-        return string.Join("<br/>", parts);
-    }
-
-    private static string Escape(string s) =>
-        s.Replace("\"", "&quot;").Replace("<", "&lt;").Replace(">", "&gt;").Replace("[", "(").Replace("]", ")");
-
-    private static string Sanitize(string s) =>
-        new string(s.Where(char.IsLetterOrDigit).ToArray());
-
-    [JSInvokable]
-    public void OnGraphNodeClick(string id)
-    {
-        SelectNode(id);
-    }
-
-    private void SelectNode(string id)
-    {
-        if (_graph is null) return;
-        _selected = _graph.Nodes.FirstOrDefault(n => string.Equals(n.Id, id, StringComparison.OrdinalIgnoreCase));
-        if (_selected is not null)
-        {
-            _connectedNodes = _graph.Edges
-                .Where(e => string.Equals(e.From, id, StringComparison.OrdinalIgnoreCase) ||
-                            string.Equals(e.To, id, StringComparison.OrdinalIgnoreCase))
-                .SelectMany(e => new[] { e.From, e.To })
-                .Where(x => !string.Equals(x, id, StringComparison.OrdinalIgnoreCase))
-                .Distinct()
-                .Select(x => _graph.Nodes.FirstOrDefault(n => string.Equals(n.Id, x, StringComparison.OrdinalIgnoreCase)))
-                .Where(n => n is not null)
-                .Cast<DerivationGraphNode>()
-                .ToList();
-        }
-        _detailOpen = _selected is not null;
-        StateHasChanged();
-    }
-
-    private static string StatusClass(string status) => status switch
-    {
-        "tested" => "status-tested",
-        "partial" => "status-partial",
-        "audit" => "status-partial",
-        _ => "status-untested",
+        TQM.App.Models.TheoryBadge.Derived => "badge-derived",
+        TQM.App.Models.TheoryBadge.Compatible => "badge-compatible",
+        TQM.App.Models.TheoryBadge.Postulated => "badge-postulated",
+        TQM.App.Models.TheoryBadge.Partial => "badge-partial",
+        TQM.App.Models.TheoryBadge.Match => "badge-match",
+        TQM.App.Models.TheoryBadge.Preferred => "badge-preferred",
+        TQM.App.Models.TheoryBadge.Falsified => "badge-falsified",
+        _ => "badge-neutral",
     };
-}
 
+    private sealed record HierarchyStage(
+        string Title,
+        string Summary,
+        string Formula,
+        TQM.App.Models.TheoryBadge Badge,
+        string SectionTitle,
+        string SectionSlug);
+}
