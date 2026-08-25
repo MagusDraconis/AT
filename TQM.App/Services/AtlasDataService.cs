@@ -54,22 +54,6 @@ public static class AtlasDataService
             "bi-rocket-takeoff", "cyan"),
     ];
 
-    public static IReadOnlyList<PrimitiveModel> Primitives { get; } =
-    [
-        new("Q", "Individuation",
-            "The irreducible act by which a discrete event comes to be individuated from nothing. Q underwrites the derivation of structure.",
-            "Partially formalized", "Underwrites structure (ontology layer)"),
-        new("RA", "Random Actualization",
-            "Genuine ontological chance (assumption A-03): given Q, the realized event locations are random within the causal structure.",
-            "Assumption (A-03)", "Underwrites content"),
-        new("(ℓ, τ, ℏ)", "The scale triad",
-            "The irreducible physical triple: a spacetime scale ℓ, a clock τ, and an action ℏ. Unit conventions, not free parameters.",
-            "Formalized (constants)", "Fixes units"),
-        new("M²", "Nonlinearity parameter",
-            "The single continuous nonlinearity parameter of the dynamics, pinned by the derivation hierarchy to M² ≈ 5.",
-            "Partially formalized (parameter)", "Single continuous number"),
-    ];
-
     public static IReadOnlyList<DerivationNodeModel> DerivationRoots { get; } = BuildDerivationGraph();
 
     public static IReadOnlyList<ClassificationItemModel> Taxonomy { get; } =
