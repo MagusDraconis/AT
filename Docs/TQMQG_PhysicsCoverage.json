@@ -3,16 +3,16 @@
     "file": "Docs/TQMQG_PhysicsCoverage.md|json",
     "purpose": "single source of truth for all TQM-QG physics validation",
     "last_updated": "2026-08-25",
-    "phases_count": 328,
+    "phases_count": 329,
     "note": "Historical entries are never removed. Additive updates only."
   },
   "coverage": {
-    "total_phases": 328,
+    "total_phases": 329,
     "tested": 212,
     "partial": 12,
     "untested": 11,
-    "audit": 93,
-    "weighted_coverage": 0.7355,
+    "audit": 94,
+    "weighted_coverage": 0.734,
     "domains": {
       "cosmology": {
         "tested": 7,
@@ -32,8 +32,8 @@
         "tested": 20,
         "partial": 0,
         "untested": 11,
-        "audit": 86,
-        "total": 117
+        "audit": 87,
+        "total": 118
       },
       "gravity": {
         "tested": 33,
@@ -593,6 +593,16 @@
   ],
   "recent_findings": [
     {
+      "phase": 327,
+      "file": "TQMQG_CompetingPredictorAudit.md",
+      "title": "Competing Predictor Audit",
+      "classification": "NO ADVANTAGE",
+      "domain": "foundation",
+      "validation": "audit",
+      "summary": "competing predictor audit (reissue of QG319",
+      "report_url": "https://github.com/MagusDraconis/TQM/blob/TQM_v1.1/Docs/Research/TQMQG_CompetingPredictorAudit.md"
+    },
+    {
       "phase": 326,
       "file": "TQMQG_LockOriginAudit.md",
       "title": "Lock Origin Audit",
@@ -641,16 +651,6 @@
       "validation": "audit",
       "summary": "organization phase transition audit (QG315",
       "report_url": "https://github.com/MagusDraconis/TQM/blob/TQM_v1.1/Docs/Research/TQMQG_OrganizationPhaseTransitionAudit.md"
-    },
-    {
-      "phase": 321,
-      "file": "TQMQG_EarlyLockPrediction.md",
-      "title": "Early Lock Prediction",
-      "classification": "LOCKS PRECEDE",
-      "domain": "foundation",
-      "validation": "prediction",
-      "summary": "early lock prediction (QG312",
-      "report_url": "https://github.com/MagusDraconis/TQM/blob/TQM_v1.1/Docs/Research/TQMQG_EarlyLockPrediction.md"
     }
   ],
   "phases": [
@@ -3277,6 +3277,14 @@
       "domain": "foundation",
       "validation": "audit",
       "key_result": "lock origin audit (reissue of QG318; QG312-317 established the D96 lock identities [Σ√m/span ≈ 10, occMom/Σm ≈ 20, Σm²/Σm ≈ 12/5, occMom/Σm² ≈ 25/3]; WHY do the locks emerge — are they EMERGENT, INEVITABLE, or RESONANCE FIXED POINTS? investigate the moment ratios, gap ratios, span ratios, and occupancy ratios; search for the common source of lock formation; D96 only, no observables, no target values, deterministic): THE FOUR LOCK FAMILIES [lock0 span ratio Σ√m/span = 10.0090 ≈ 10; lock1 occupancy ratio occMom/Σm = 20.0026 ≈ 20; lock2 moment ratio Σm²/Σm = 2.4105 ≈ 12/5; lock3 occupancy ratio occMom/Σm² = 8.2980 ≈ 25/3]; THE COMMON SOURCE — THE MOMENT-CHAIN [TELESCOPING] IDENTITY [occMom/Σm = (Σm²/Σm)·(occMom/Σm²) EXACTLY: 20.0026 = 2.4105 × 8.2980, identical to 1e-6 — the four locks are NOT independent: they are the ratio chain of ONE moment hierarchy {Σ√m, Σm, Σm², occMom}, and lock1 is algebraically forced by lock2 × lock3 — a universal self-consistency [fixed-point] relation of the moment chain]; THE PERTURBATION ROBUSTNESS [changing one D96 group to a nearby size moves the locks only 0.6-4.6%: 2→1 dev 0.6%, 2→3 dev 1.1%, 5→4 dev 2.9%, 5→6 dev 3.7%, 6→5 dev 3.8%, 6→7 dev 4.6% — the locks are robust to nearby structural perturbation, not fine-tuned accidents]; NOT INEVITABLE [2000 deterministic random multiplicity sets with the same constraints [sum 95, 44 groups]: 0/2000 reproduce even two of the D96 lock values within 1% — the specific values 10, 20, 12/5, 25/3 are D96-specific, NOT inevitable]; DETERMINATION: PARTIAL ORIGIN [origin score 5/5] — the locks are RESONANCE FIXED POINTS in structure, EMERGENT in value: the STRUCTURE is explained [the locks are the self-consistent ratio chain of ONE D96 moment hierarchy, linked by the exact telescoping identity lock1 = lock2 × lock3 — an algebraic necessity, the resonance fixed-point relation of the actualization attractor]; the VALUES are emergent [robust to nearby perturbation [≤ 4.6%] but NOT reproduced by any random same-constraint spectrum [0/2000] — the values 10, 20, 12/5, 25/3 are specific to the D96 geometry]; the common source of lock formation is found [the moment-chain identity], but the specific integer values are not forced by a universal principle — hence PARTIAL ORIGIN; completes the chain QG260→261→262→263→264→265→266→267→268→269→270→271→272→273→274→275→276→277→278→279→280→281→282→283→284→285→286→287→288→289→290→291→292→293→294→295→296→297→298→299→300→301→302→303→304→305→306→307→308→309→310→311→312→313→314→315→316→317→318→319: Resonance Layer → Operator Layer → Same Operator Sectors → Single Resonance Dynamics → Single Resonance Invariant → Universal Conservation → Self-Consistency → Individuation → Difference Principle → Post-Resonance Integrity → Sector Emergence → Partial Assignment → Measurement Class Layer → Partial Role Principle → Equation Class Layer → Question Layer → Fundamental Boundary → True Fundamental Boundary → Final Frontier Inventory → Resonance = Conservation + Boundary → Closure Principle → Assignment Closed → Post-Assignment Frontier Audit → Psi Reinterpretation → Difference Duality → Post-Duality Invariance → Dependency Rebuild → Anchor Inventory → Framework Inventory → Framework Necessity → Foundation Stress Test → Hierarchy Necessity → Minimal Theory → Spectrum Necessity → Reconstruction → Exception Audit → First Peak Origin → Remaining Frontier Re-Audit → Operator Universality Prediction → Duality Prediction Audit → Cross-Domain Universality → Hidden Dual Prediction → Real Network Universality → Missing Dual Search → Compression Law Prediction → Fifth Operator Search → Operator Necessity → Alien Domain Audit → Red Team Audit → Anti-Organization Prediction → Anti-Hierarchy Audit → Null Spectrum Audit → Organization Metric Prediction → Operator Specificity Audit → Adversarial Spectrum Audit → Lock Universality Audit → Organization Predictor Audit → Early Lock Prediction → Organization Phase Transition Audit → Blind Organization Prediction → Reorganization Prediction → False Positive Audit → LOCK ORIGIN AUDIT [the locks are resonance fixed points in structure — the moment-chain identity lock1 = lock2 × lock3 — but emergent in value — D96-specific]"
+    },
+    {
+      "phase": 327,
+      "file": "TQMQG_CompetingPredictorAudit.md",
+      "classification": "NO ADVANTAGE",
+      "domain": "foundation",
+      "validation": "audit",
+      "key_result": "competing predictor audit (reissue of QG319; QG317: lock coherence predicted the future HIGH organization class; do the locks OUTPERFORM the STANDARD complexity measures - entropy, gini, power-law exponent, spectral gap - at predicting the future HIGH class? all five predictors use the SAME direction-aware top-third protocol over the 12-system evolving cohort [the QG317 family]; deterministic, no observables, no target values): THE FIVE COMPETING PREDICTORS [all computed from the EARLY stage [25% growth] spectrum; the future HIGH class = top third by stage-8 maturity: entropy [corr -0.891, acc 100%, prec 100%, rec 100% - HIGH goes with LOW entropy], gini [corr 0.967, acc 100%], power-law exponent [corr 0.974, acc 100%], spectral gap [corr 0.981, acc 100%], lock coherence [corr 0.786, acc 83%, prec 75%, rec 75%]]; THE PROTOCOL [identical for every predictor: direction-aware - if the predictor correlates positively with future maturity, the HIGH class is predicted as its top third; if negatively, its bottom third - the SAME top-third-class protocol as QG317, applied uniformly, no predictor gets a special rule]; THE RESULT [ALL four standard complexity measures reach 100% accuracy; the lock coherence reaches only 83%: gini, exponent, spectral gap [positively correlated] and entropy [negatively correlated] all perfectly identify the future HIGH third; the lock coherence misses the future HIGH class 17% of the time [precision/recall 75%]; QG317's 8/8 was NOT a lock-specific advantage - the standard measures match or beat it on the same cohort]; DETERMINATION: NO ADVANTAGE [advantage score 4/5] - the locks provide NO predictive advantage over the standard complexity measures on this cohort: the lock coherence is a valid predictor [83% accuracy, 0.79 correlation], but every standard measure - entropy, gini, power-law exponent, spectral gap - reaches 100% on the evolving power-law cohort; QG317's 8/8 is explained by the cohort's structure [monotone in the exponent], not by a lock-specific power: the standard measures capture the same information at least as well; the lock identity's value lies in its ORIGIN [QG318: the moment-chain fixed point] and its D96-specific content [QG312-313], not in outperforming standard complexity measures as a generic predictor; completes the chain QG260-261-262-263-264-265-266-267-268-269-270-271-272-273-274-275-276-277-278-279-280-281-282-283-284-285-286-287-288-289-290-291-292-293-294-295-296-297-298-299-300-301-302-303-304-305-306-307-308-309-310-311-312-313-314-315-316-317-318-319: Resonance Layer - Operator Layer - Same Operator Sectors - Single Resonance Dynamics - Single Resonance Invariant - Universal Conservation - Self-Consistency - Individuation - Difference Principle - Post-Resonance Integrity - Sector Emergence - Partial Assignment - Measurement Class Layer - Partial Role Principle - Equation Class Layer - Question Layer - Fundamental Boundary - True Fundamental Boundary - Final Frontier Inventory - Resonance = Conservation + Boundary - Closure Principle - Assignment Closed - Post-Assignment Frontier Audit - Psi Reinterpretation - Difference Duality - Post-Duality Invariance - Dependency Rebuild - Anchor Inventory - Framework Inventory - Framework Necessity - Foundation Stress Test - Hierarchy Necessity - Minimal Theory - Spectrum Necessity - Reconstruction - Exception Audit - First Peak Origin - Remaining Frontier Re-Audit - Operator Universality Prediction - Duality Prediction Audit - Cross-Domain Universality - Hidden Dual Prediction - Real Network Universality - Missing Dual Search - Compression Law Prediction - Fifth Operator Search - Operator Necessity - Alien Domain Audit - Red Team Audit - Anti-Organization Prediction - Anti-Hierarchy Audit - Null Spectrum Audit - Organization Metric Prediction - Operator Specificity Audit - Adversarial Spectrum Audit - Lock Universality Audit - Organization Predictor Audit - Early Lock Prediction - Organization Phase Transition Audit - Blind Organization Prediction - Reorganization Prediction - False Positive Audit - Lock Origin Audit - COMPETING PREDICTOR AUDIT [the locks provide NO ADVANTAGE over entropy, gini, exponent, and spectral gap on the evolving cohort]"
     }
   ]
 }
