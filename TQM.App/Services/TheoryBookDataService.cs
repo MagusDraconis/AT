@@ -154,14 +154,14 @@ public static class TheoryBookDataService
                 "The unified network recovers Mercury's 42.98 \"/century perihelion advance through the ψ spin-2 graviton.",
                 [
                     new("GR baseline", "γ=β=1 → factor 1 → 42.98 \"/century.", TheoryBadge.Match, ["TQMQG1030"]),
-                    new("ρ-only fails", "Conformal γ=−1 → factor −1/3 → RETROGRADE −14.33 \"/century.", TheoryBadge.Falsified, ["TQMQG1031"]),
+                    new("ρ-only limit", "Conformal γ=−1 → factor −1/3 → RETROGRADE −14.33 \"/century; this marks the scalar-only limit, not the final theory.", TheoryBadge.Partial, ["TQMQG1031"]),
                     new("ρ+ψ matches", "The ψ graviton restores γ=β=+1 → +42.98 \"/century (MATCH).", TheoryBadge.Match, ["TQMQG1032"]),
                 ]),
             new("schwarzschild-limit", "Schwarzschild Limit",
                 "Horizon structure: entropy S ~ Area from horizon counting (area law). Mass-radius relation diverges from Schwarzschild (deficit mass ~ R^d vs M ~ R).",
                 [
                     new("Area law", "S = A·ln2 ~ R^(d−1) — entropy scales with area.", TheoryBadge.Match, ["TQMQG120", "TQMQG121"]),
-                    new("Temperature no-match", "Native T~R (anti-Hawking) because deficit mass is a volume quantity.", TheoryBadge.Falsified, ["TQMQG131", "TQMQG132"]),
+                    new("Temperature mismatch", "Native T~R (anti-Hawking) is a mismatched scaling for the Schwarzschild limit, while the deficit-mass picture remains intact.", TheoryBadge.Partial, ["TQMQG131", "TQMQG132"]),
                 ]),
         ]);
 

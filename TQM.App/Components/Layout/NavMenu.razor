@@ -1,4 +1,6 @@
 @namespace TQM.App.Components.Layout
+@using MudBlazor
+@using TQM.App.Services
 
 <MudNavMenu Class="px-2 py-3">
     <div class="nav-brand px-3 pb-3">
@@ -15,9 +17,17 @@
     <MudNavLink Href="/derivation-map">
         <i class="bi bi-diagram-3 nav-icon"></i>Theory Hierarchy
     </MudNavLink>
-    <MudNavLink Href="/theory">
-        <i class="bi bi-book nav-icon"></i>Theory Book
-    </MudNavLink>
+    <MudNavGroup Title="Theory Book" Icon="@Icons.Material.Filled.Book">
+        <MudNavLink Href="/theory" Match="NavLinkMatch.All">
+            <span class="theory-nav-part">Book Home</span>
+        </MudNavLink>
+        @foreach (var sec in TheoryBookDataService.Sections)
+        {
+            <MudNavLink Href="@($"/theory/{sec.Slug}")">
+                <span class="theory-nav-part">@sec.Title</span>
+            </MudNavLink>
+        }
+    </MudNavGroup>
     <MudNavLink Href="/taxonomy">
         <i class="bi bi-tags nav-icon"></i>Taxonomy
     </MudNavLink>
