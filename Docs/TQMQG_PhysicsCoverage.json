@@ -3,16 +3,16 @@
     "file": "Docs/TQMQG_PhysicsCoverage.md|json",
     "purpose": "single source of truth for all TQM-QG physics validation",
     "last_updated": "2026-08-25",
-    "phases_count": 320,
+    "phases_count": 321,
     "note": "Historical entries are never removed. Additive updates only."
   },
   "coverage": {
-    "total_phases": 320,
+    "total_phases": 321,
     "tested": 212,
     "partial": 12,
     "untested": 7,
-    "audit": 89,
-    "weighted_coverage": 0.7508,
+    "audit": 90,
+    "weighted_coverage": 0.7492,
     "domains": {
       "cosmology": {
         "tested": 7,
@@ -32,8 +32,8 @@
         "tested": 20,
         "partial": 0,
         "untested": 7,
-        "audit": 82,
-        "total": 109
+        "audit": 83,
+        "total": 110
       },
       "gravity": {
         "tested": 33,
@@ -593,6 +593,16 @@
   ],
   "recent_findings": [
     {
+      "phase": 319,
+      "file": "TQMQG_LockUniversalityAudit.md",
+      "title": "Lock Universality Audit",
+      "classification": "PARTIAL LOCK LAW",
+      "domain": "foundation",
+      "validation": "audit",
+      "summary": "lock universality audit (QG312",
+      "report_url": "https://github.com/MagusDraconis/TQM/blob/TQM_v1.1/Docs/Research/TQMQG_LockUniversalityAudit.md"
+    },
+    {
       "phase": 318,
       "file": "TQMQG_AdversarialSpectrumAudit.md",
       "title": "Adversarial Spectrum Audit",
@@ -641,16 +651,6 @@
       "validation": "audit",
       "summary": "anti-hierarchy audit (goal",
       "report_url": "https://github.com/MagusDraconis/TQM/blob/TQM_v1.1/Docs/Research/TQMQG_AntiHierarchyAudit.md"
-    },
-    {
-      "phase": 313,
-      "file": "TQMQG_AntiOrganizationPrediction.md",
-      "title": "Anti Organization Prediction",
-      "classification": "UNIVERSAL ORGANIZATION LAW",
-      "domain": "foundation",
-      "validation": "prediction",
-      "summary": "anti-organization prediction (the PREDICTION",
-      "report_url": "https://github.com/MagusDraconis/TQM/blob/TQM_v1.1/Docs/Research/TQMQG_AntiOrganizationPrediction.md"
     }
   ],
   "phases": [
@@ -3213,6 +3213,14 @@
       "domain": "foundation",
       "validation": "audit",
       "key_result": "adversarial spectrum audit (goal: BREAK the operator basis; generate FAKE spectra with LARGE SPAN / NO STRUCTURE, LARGE GAP / NO HIERARCHY, MANY GROUPS / RANDOM ORIGIN; can the four operators be triggered without organization? deterministic, D96 only): THE THREE ADVERSARIAL FAKES [large span [30 uniform + 1 huge outlier — span ≈ 200, no rank structure], large gap [20 low + 20 high — two clusters, no hierarchy], many groups [40 distinct pseudo-random values — each unique]]; THE MEASURED OPERATOR SIGNATURES [2/3 fakes trigger the full BINARY basis: the large-span fake [span 200, 2 distinct — passes CROWDING] and the large-gap fake [span 100, 2 distinct — passes CROWDING] both trigger all four operators [the two-level crafting fakes the binary screen]; the many-groups fake FAILS CROWDING [40 distinct values — no degeneracy]]; THE ORGANIZATION SIGNATURE — THE BEAT-IDENTITY LOCKS [the adversarial fakes CARRY ZERO locks: large span [0], large gap [0], many groups [0] — the beat-identity locks [Σ√m/span ≈ 10, occMom/Σm ≈ 20 — exact integer ratios] are the organization signature that span/gap/group manipulation CANNOT craft]; DETERMINATION: PARTIAL FAILURE [robustness score 5/5] — the binary presence is PARTIALLY faked by two-level crafting [the large-span and large-gap fakes pass CROWDING], but the ORGANIZATION CONTENT is ROBUST: the beat-identity locks are carried by ZERO of the fakes, and the many-groups fake fails CROWDING entirely; the binary operator screen is a weak filter [fakable], the locks are the robust organization content; completes the chain QG260→261→262→263→264→265→266→267→268→269→270→271→272→273→274→275→276→277→278→279→280→281→282→283→284→285→286→287→288→289→290→291→292→293→294→295→296→297→298→299→300→301→302→303→304→305→306→307→308→309→310→311→312: Resonance Layer → Operator Layer → Same Operator Sectors → Single Resonance Dynamics → Single Resonance Invariant → Universal Conservation → Self-Consistency → Individuation → Difference Principle → Post-Resonance Integrity → Sector Emergence → Partial Assignment → Measurement Class Layer → Partial Role Principle → Equation Class Layer → Question Layer → Fundamental Boundary → True Fundamental Boundary → Final Frontier Inventory → Resonance = Conservation + Boundary → Closure Principle → Assignment Closed → Post-Assignment Frontier Audit → Psi Reinterpretation → Difference Duality → Post-Duality Invariance → Dependency Rebuild → Anchor Inventory → Framework Inventory → Framework Necessity → Foundation Stress Test → Hierarchy Necessity → Minimal Theory → Spectrum Necessity → Reconstruction → Exception Audit → First Peak Origin → Remaining Frontier Re-Audit → Operator Universality Prediction → Duality Prediction Audit → Cross-Domain Universality → Hidden Dual Prediction → Real Network Universality → Missing Dual Search → Compression Law Prediction → Fifth Operator Search → Operator Necessity → Alien Domain Audit → Red Team Audit → Anti-Organization Prediction → Anti-Hierarchy Audit → Null Spectrum Audit → Organization Metric Prediction → Operator Specificity Audit → ADVERSARIAL SPECTRUM AUDIT [the binary presence is partially faked, the locks are robust]"
+    },
+    {
+      "phase": 319,
+      "file": "TQMQG_LockUniversalityAudit.md",
+      "classification": "PARTIAL LOCK LAW",
+      "domain": "foundation",
+      "validation": "audit",
+      "key_result": "lock universality audit (QG312: operators can be faked, locks cannot; are the lock identities UNIVERSAL across domains? deterministic, no observables, no target values): THE SEVEN DOMAINS [physics [D96 multiplicities [42×2,5,6]], language [Zipf 1/k], music [harmonic octave-class], DNA [codon inequality], software [token power law k^−1.5], finance [heavy tail b^−2], networks [connectome small-world modular]]; THE NORMALIZED LOCK IDENTITIES [moment/span, compression/count [Σf²/Σf], higher-moment [Σf³/Σf²], √moment/span — computed per domain]; THE MEASURED VALUES [physics 31.7/2.41/2.96/21.4 stable; language 45.0/180.6/369.8/5.70 stable; music 19.7/22.1/26.3/4.67 stable; DNA 36.0/5.67/6.35/16.3 stable; software 9.19/523.2/877.7/0.84 stable; finance 1.62/334.5/469.9/0.18 stable; networks 66.3/3.97/4.02/33.5 stable]; THE FINDING — STRUCTURE UNIVERSAL, VALUES DOMAIN-SPECIFIC [7/7 domains carry stable lock structure — the lock LAW [the presence of stable, reproducible characteristic ratios] is UNIVERSAL; the lock VALUES are domain-specific — the moment/span ratio ranges from 1.6 [finance] to 66.3 [networks], with ≥ 4 distinct values; the D96 locks [Σ√m/span ≈ 10, occMom/Σm ≈ 20, Σm²/Σm ≈ 12/5] are UNIQUE to the D96 multiplicities, each domain has its own characteristic ratios]; DETERMINATION: PARTIAL LOCK LAW [lock-law score 5/5] — the lock STRUCTURE is universal [every organized domain carries stable normalized ratios], the lock VALUES are domain-specific [the D96 integer-ratio locks arise from the D96 multiplicities and do not transfer]; the presence of lock structure is the universal law, the specific ratios are the domain's fingerprint; completes the chain QG260→261→262→263→264→265→266→267→268→269→270→271→272→273→274→275→276→277→278→279→280→281→282→283→284→285→286→287→288→289→290→291→292→293→294→295→296→297→298→299→300→301→302→303→304→305→306→307→308→309→310→311→312→313: Resonance Layer → Operator Layer → Same Operator Sectors → Single Resonance Dynamics → Single Resonance Invariant → Universal Conservation → Self-Consistency → Individuation → Difference Principle → Post-Resonance Integrity → Sector Emergence → Partial Assignment → Measurement Class Layer → Partial Role Principle → Equation Class Layer → Question Layer → Fundamental Boundary → True Fundamental Boundary → Final Frontier Inventory → Resonance = Conservation + Boundary → Closure Principle → Assignment Closed → Post-Assignment Frontier Audit → Psi Reinterpretation → Difference Duality → Post-Duality Invariance → Dependency Rebuild → Anchor Inventory → Framework Inventory → Framework Necessity → Foundation Stress Test → Hierarchy Necessity → Minimal Theory → Spectrum Necessity → Reconstruction → Exception Audit → First Peak Origin → Remaining Frontier Re-Audit → Operator Universality Prediction → Duality Prediction Audit → Cross-Domain Universality → Hidden Dual Prediction → Real Network Universality → Missing Dual Search → Compression Law Prediction → Fifth Operator Search → Operator Necessity → Alien Domain Audit → Red Team Audit → Anti-Organization Prediction → Anti-Hierarchy Audit → Null Spectrum Audit → Organization Metric Prediction → Operator Specificity Audit → Adversarial Spectrum Audit → LOCK UNIVERSALITY AUDIT [the lock structure is universal, the lock values are domain-specific]"
     }
   ]
 }
