@@ -6,12 +6,15 @@ namespace TQM.Core.ResearchXH;
 ///
 /// THE FOUR LAYERS (topological order — every concept depends only on concepts in the same or lower
 /// layers):
-///   LAYER 1 PRIMITIVE  — the irreducible primitives: the Difference (ρ, the scalar counting measure),
-///     the Actualization cycle (N = 96, the synchronization/difference-application), and η (the tensor
-///     reference metric). These are FOUNDATIONAL: removing any one collapses the theory (QG292).
-///   LAYER 2 DYNAMIC    — the actualization dynamics derived from the primitives: Resonance
-///     [= Conservation + Boundary], Self-Consistency, Individuation, the Difference Principle, and the
-///     actualization ATTRACTOR [the dynamics' fixed state]. DERIVED from the primitive layer.
+///   LAYER 1 PRIMITIVE  — the irreducible primitives: the Difference (ρ, the scalar counting measure)
+///     and η (the tensor reference metric). These are FOUNDATIONAL: removing any one collapses the
+///     theory (QG292). CORRECTED per MONO006/A01: Actualization is NOT a primitive — removing Difference
+///     collapses it (QG292 Case A) while removing η leaves it intact (QG292 Case B).
+///   LAYER 2 DYNAMIC    — the actualization dynamics derived from the primitives: ACTUALIZATION
+///     [Difference's count-producing process — a Q-event IS a unit QG268, N=96 its attractor fixed point
+///     QG284; derived from Difference, independent of η (MONO006)], Resonance [= Conservation +
+///     Boundary], Self-Consistency, Individuation, the Difference Principle, and the actualization
+///     ATTRACTOR [the dynamics' fixed state]. DERIVED from the primitive layer.
 ///   LAYER 3 SPECTRUM   — the D96 spectrum [the inevitable output of the attractor, QG295], the four
 ///     operators {CROWDING, COMPRESSION, BEAT, LOCKING}, the lock identities [moment-chain fixed points,
 ///     QG318], and the organization/maturity structure. EMERGENT from the dynamics.
@@ -57,14 +60,16 @@ public static class FinalTheoryArchitecture
         // ── Layer 1 — Primitive (FOUNDATIONAL) ──────────────────────────────
         new Concept("Difference", Layer.Primitive, ConceptKind.Foundational,
             "ρ — the scalar counting measure, the sole irreducible primitive (QG278/286/292)"),
-        new Concept("Actualization", Layer.Primitive, ConceptKind.Foundational,
-            "the N=96 synchronization/difference-application cycle (QG272/294)"),
         new Concept("η", Layer.Primitive, ConceptKind.Foundational,
             "the tensor reference metric (QG290-292 — the irreducible framework)"),
         new Concept("π", Layer.Primitive, ConceptKind.Boundary,
             "numerical constant — not derivable inside the framework (QG291: framework necessity)"),
 
         // ── Layer 2 — Dynamic (DERIVED from primitives) ─────────────────────
+        new Concept("Actualization", Layer.Dynamic, ConceptKind.Derived,
+            "Difference's count-producing process — a Q-event IS a unit (QG268), N=96 is its attractor " +
+            "fixed point (QG284); derived from Difference (QG292 removal test), independent of η",
+            "Difference"),
         new Concept("Resonance", Layer.Dynamic, ConceptKind.Derived,
             "Resonance = Conservation + Boundary (QG275)", "Difference", "Actualization"),
         new Concept("Self-Consistency", Layer.Dynamic, ConceptKind.Derived,
@@ -183,7 +188,8 @@ public static class FinalTheoryArchitecture
     /// 3. the dependency graph is ACYCLIC [Kahn's topological sort succeeds];
     /// 4. the layering is topological [no edge points to a higher layer];
     /// 5. the primitives are irreducible [Foundational/Boundary only];
-    /// 6. no primitive is derivable from the others [Difference, Actualization, η are independent].
+    /// 6. no primitive is derivable from the others [Difference and η are independent — CORRECTED per
+    ///    MONO006/A01: Actualization is derived from Difference and is not a primitive].
     /// </summary>
     public static int ArchitectureScore()
     {
@@ -200,7 +206,7 @@ public static class FinalTheoryArchitecture
     private static bool PrimitivesIndependent()
     {
         var prims = Concepts().Where(c => c.Layer == Layer.Primitive && c.Kind == ConceptKind.Foundational).ToArray();
-        return prims.Length == 3 && prims.All(p => p.DependsOn.Length == 0);
+        return prims.Length == 2 && prims.All(p => p.DependsOn.Length == 0);
     }
 
     /// <summary>
@@ -225,8 +231,9 @@ public static class FinalTheoryArchitecture
         var spec = Concepts().Where(c => c.Layer == Layer.Spectrum).ToArray();
         var phys = Concepts().Where(c => c.Layer == Layer.Physics).ToArray();
         return $"{Classify()} — architecture score {score}/6. The canonical minimal architecture has " +
-               $"{prim.Length} primitives [Difference, Actualization, η — irreducible], {dyn.Length} dynamic " +
-               $"concepts [Resonance = Conservation + Boundary → actualization attractor], {spec.Length} " +
+               $"{prim.Length} primitives [Difference, η — irreducible], {dyn.Length} dynamic " +
+               $"concepts [Actualization derived from Difference → Resonance = Conservation + Boundary → " +
+               $"actualization attractor], {spec.Length} " +
                $"spectrum concepts [D96 spectrum → operators → locks → physics], and {phys.Length} physics " +
                $"concepts [fermions, gauge, gravity, cosmology — emergent; SM dynamics, Bekenstein 1/4, ψ, " +
                $"experimental frontier — boundary]. Dependency graph acyclic: {IsAcyclic()}; layering " +

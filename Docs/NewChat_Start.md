@@ -667,7 +667,7 @@ MONO005: hostile referee audit of the final canonical monograph structure (FAIL 
 
 Milestone counters:
 
-TQM-QG 332 phases
+TQM-QG 328 phases + 4 MONO
 882+ TQM-QG tests verified
 
 ### QG154: Neutrino Sector Origin
@@ -692,5 +692,5 @@ NEUTRINO ORIGIN
 
 Milestone counters:
 
-TQM-QG 332 phases
+TQM-QG 328 phases + 4 MONO
 882+ TQM-QG tests verified

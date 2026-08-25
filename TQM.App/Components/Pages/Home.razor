@@ -59,7 +59,7 @@
                 <MudItem xs="12" sm="6" lg="4">
                     <MudCard Elevation="1" Class="theory-card h-100">
                         <MudCardContent>
-                            <MudText Typo="Typo.caption" Class="text-uppercase fw-bold muted">TQM-QG @((int)f.Phase) · @f.Classification</MudText>
+                            <MudText Typo="Typo.caption" Class="text-uppercase fw-bold muted">@(f.PhaseLabel ?? $"TQM-QG {(int)f.Phase}") · @f.Classification</MudText>
                             <MudText Typo="Typo.subtitle1" Class="fw-bold mt-1">@f.Title</MudText>
                             <MudText Typo="Typo.body2" Class="muted mt-2">
                                 @f.Summary

@@ -24,7 +24,8 @@ public class TQMQG_Phase318_FinalTheoryArchitectureTests : ResearchTestBase
         PrintHeader("TQMQG3180: the four-layer canonical architecture");
 
         sb.AppendLine("HYPOTHESES:");
-        sb.AppendLine("  - Layer 1 primitive: Difference, Actualization, η — irreducible (plus π boundary);");
+        sb.AppendLine("  - Layer 1 primitive: Difference, η — irreducible (plus π boundary); Actualization");
+        sb.AppendLine("    is DERIVED from Difference (MONO006/A01 correction);");
         sb.AppendLine("  - Layer 2 dynamic: Resonance → attractor — derived from primitives;");
         sb.AppendLine("  - Layer 3 spectrum: D96 spectrum → operators → locks — emergent;");
         sb.AppendLine("  - Layer 4 physics: fermions, gauge, gravity, cosmology — emergent; SM dynamics and");
@@ -48,7 +49,7 @@ public class TQMQG_Phase318_FinalTheoryArchitectureTests : ResearchTestBase
             "every concept must be classified in exactly one category");
         Assert.True(FinalTheoryArchitecture.PrimitivesIrreducible(),
             "the primitive layer must be Foundational or Boundary only");
-        Assert.Equal(3, FinalTheoryArchitecture.Concepts().Count(
+        Assert.Equal(2, FinalTheoryArchitecture.Concepts().Count(
             c => c.Layer == FinalTheoryArchitecture.Layer.Primitive && c.Kind == FinalTheoryArchitecture.ConceptKind.Foundational));
     }
 
@@ -96,7 +97,7 @@ public class TQMQG_Phase318_FinalTheoryArchitectureTests : ResearchTestBase
         sb.AppendLine($"CLASSIFICATION = {FinalTheoryArchitecture.Classify()}");
         sb.AppendLine();
         sb.AppendLine("DEPENDENCY GRAPH (canonical):");
-        sb.AppendLine("  Difference, Actualization, η [primitives]");
+        sb.AppendLine("  Difference, η [primitives] → Actualization [derived from Difference]");
         sb.AppendLine("    → Resonance = Conservation + Boundary → Self-Consistency → Individuation");
         sb.AppendLine("    → Difference Principle → Actualization Attractor → Spectrum Necessity");
         sb.AppendLine("    → D96 Spectrum → Operator Basis → Lock Identities → Organization Maturity");
@@ -105,7 +106,8 @@ public class TQMQG_Phase318_FinalTheoryArchitectureTests : ResearchTestBase
         sb.AppendLine();
         sb.AppendLine("INTERPRETATION:");
         sb.AppendLine("  - the minimal base is Difference → Actualization → Spectrum → Physics;");
-        sb.AppendLine("  - the primitives [Difference, Actualization, η] are irreducible and independent;");
+        sb.AppendLine("  - the primitives [Difference, η] are irreducible and independent; Actualization is");
+        sb.AppendLine("    derived from Difference (MONO006/A01 correction);");
         sb.AppendLine("  - the dynamics are DERIVED, the spectrum and physics are EMERGENT, and the");
         sb.AppendLine("    remaining open questions are BOUNDARY.");
 
