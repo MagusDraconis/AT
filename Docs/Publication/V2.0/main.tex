@@ -1,0 +1,112 @@
+% ======================================================================
+%  TQM-MONO115 — The Actualization Theory: Complete Monograph Assembly
+%  A Reconstruction of Physics from Difference, Actualization and Spectrum
+%
+%  Canonical Monograph (v2.0) · Zenodo-ready book structure
+%  Master file — compiles the complete monograph.
+%
+%  Status: COMPLETE — publication-ready core (Ch1-14), universality appendix
+%  Method: assembly only — no new physics, no new derivations
+%
+%  Build: pdflatex main.tex (twice for references and the TOC)
+%  Preamble defines the theorem environments shared by all chapters.
+% ======================================================================
+
+\documentclass[11pt]{book}
+
+% ---- Fonts and encoding ------------------------------------------------
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+
+% ---- Mathematics and theorem environments ------------------------------
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{mathtools}
+
+% ---- Links, colors, graphics -------------------------------------------
+\usepackage[hidelinks]{hyperref}
+\usepackage{xcolor}
+\usepackage{graphicx}
+
+% ---- Page geometry ------------------------------------------------------
+\usepackage[a4paper,margin=2.5cm]{geometry}
+\usepackage{setspace}
+\onehalfspacing
+
+% ---- Header/footer ------------------------------------------------------
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE]{\leftmark}
+\fancyhead[RO]{\rightmark}
+\fancyfoot[C]{\thepage}
+
+% ---- Table of contents depth -------------------------------------------
+\setcounter{tocdepth}{2}
+\setcounter{secnumdepth}{3}
+
+% ---- Theorem environments (shared by all chapters) ---------------------
+\newtheorem{definition}{Definition}[chapter]
+\newtheorem{lemma}[definition]{Lemma}
+\newtheorem{theorem}[definition]{Theorem}
+\newtheorem{corollary}[definition]{Corollary}
+\newtheorem{remark}[definition]{Remark}
+
+% ---- Metadata -----------------------------------------------------------
+\title{The Actualization Theory\\[0.4em]
+  \large A Reconstruction of Physics from Difference, Actualization and Spectrum}
+\author{Fabrice Wieser}
+\date{\today}
+
+% ======================================================================
+\begin{document}
+
+% ---- Front matter -------------------------------------------------------
+\frontmatter
+\input{FrontMatter.tex}
+
+% ---- Main matter --------------------------------------------------------
+\mainmatter
+
+% Part I — Foundation
+\part{Foundation}
+\input{Chapter01_Difference.tex}
+\input{Chapter02_Eta.tex}
+
+% Part II — Derived Dynamics
+\part{Derived Dynamics}
+\input{Chapter03_Actualization.tex}
+\input{Chapter04_ClosureAndMinimalTheory.tex}
+\input{Chapter05_InevitableSpectrum.tex}
+
+% Part III — Spectrum
+\part{Spectrum}
+\input{Chapter06_D96Spectrum.tex}
+\input{Chapter07_OperatorBasis.tex}
+\input{Chapter08_LockLaw.tex}
+
+% Part IV — Physics
+\part{Physics}
+\input{Chapter09_QuantumMechanics.tex}
+\input{Chapter10_GravityAndSpacetime.tex}
+\input{Chapter11_StandardModel.tex}
+\input{Chapter12_Cosmology.tex}
+
+% Part V — Boundary Layer
+\part{Boundary Layer}
+\input{Chapter13_BoundariesOfTheActualizationTheory.tex}
+\input{Chapter14_FrontierAndFalsification.tex}
+
+% ---- General conclusion --------------------------------------------------
+\input{Conclusion.tex}
+
+% ---- Appendices -----------------------------------------------------------
+\appendix
+\input{Appendices.tex}
+
+% ---- Back matter ----------------------------------------------------------
+\backmatter
+% References are structured per-chapter (each chapter carries its own
+% thebibliography); a consolidated bibliography may be added here if desired.
+
+\end{document}
