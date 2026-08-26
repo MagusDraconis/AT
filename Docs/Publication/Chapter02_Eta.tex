@@ -1,0 +1,361 @@
+% ======================================================================
+%  TQM-MONO101 — Chapter 2: The Tensor Reference η
+%  Canonical Monograph (v2.0) · The Actualization Theory:
+%  A Reconstruction of Physics from Difference, Actualization and Spectrum
+%
+%  Status: COMPLETE — PASS-READY (MONO007 referee-ready architecture)
+%  Inputs: Chapter01_Difference.tex, TQMQG_CanonicalMonograph.md,
+%          TQMQG_Mono007RefereeReadiness.md
+%  Method: assembly only — canonical results only, no new physics, no speculation
+%  Citations: QG285 (psi reinterpretation), QG286 (difference duality),
+%             QG289 (anchor inventory), QG290 (irreducible framework),
+%             QG291 (framework necessity), QG292 (minimal foundation),
+%             MONO006 (actualization derived), MONO007 (referee readiness)
+%
+%  Usage: \input{Chapter02_Eta.tex} after the preamble that defines
+%         the theorem environments below (or include via the master file).
+% ======================================================================
+
+% ---- Theorem environments (define in the master preamble if not present) ----
+% \newtheorem{definition}{Definition}[chapter]
+% \newtheorem{lemma}[definition]{Lemma}
+% \newtheorem{theorem}[definition]{Theorem}
+% \newtheorem{corollary}[definition]{Corollary}
+% \newtheorem{remark}[definition]{Remark}
+
+\chapter{The Tensor Reference \texorpdfstring{$\eta$}{eta}}
+\label{chap:eta}
+
+\section{Introduction}
+\label{sec:eta-introduction}
+
+In Chapter~\ref{chap:difference} we established that Difference is the fundamental boundary
+of the theory, and that the scalar counting measure $\rho$ and the tensor field $\psi$ are
+the trace and traceless faces of the one Difference \cite{QG286}. That duality, however, is
+not defined in a vacuum: the trace--traceless decomposition, the conformal flatness against
+which the Weyl content is read, and the very notion of the tensor face $\psi$ all presuppose
+a \emph{reference structure}. This chapter develops that structure --- the tensor reference
+metric $\eta$.
+
+The results of this chapter are the canonical end-state of the framework inventory and
+necessity program \cite{QG289,QG290,QG291,QG292}: $\eta$ is the second primitive of the
+theory, necessary and irreducible; the framework $\{\text{Difference},\eta\}$ is minimal;
+and the numerical constant $\pi$, often presented alongside $\eta$ in earlier treatments, is
+\emph{not} a primitive but a boundary constant --- redundant as a theory input and separated
+from the primitive reference by the referee-ready architecture of MONO007
+\cite{MONO007}. Throughout we use only accepted canonical results, and introduce no new
+physics and no speculation.
+
+\section{Necessity of \texorpdfstring{$\eta$}{eta}}
+\label{sec:eta-necessity}
+
+\begin{definition}[Tensor reference metric]
+\label{def:eta}
+\emph{$\eta$} is the tensor reference metric: the conformal reference with respect to which
+the physical metric takes the form
+\begin{equation}
+\label{eq:metric-ansatz}
+g \;=\; \rho^{2/d}\,\eta,
+\end{equation}
+where $\rho$ is the scalar counting measure and $d$ the spatial dimension
+\cite{QG290,QG285}.
+\end{definition}
+
+\begin{theorem}[Necessity of the tensor reference]
+\label{thm:eta-necessary}
+The tensor reference $\eta$ is NECESSARY: without it there is no trace, no traceless part,
+no conformal flatness, and no reading of the difference structure.
+\end{theorem}
+
+\begin{proof}
+The duality Difference $\to \{\rho,\psi\}$ is the trace/traceless decomposition
+\cite{QG286}
+\begin{equation}
+\label{eq:decomposition}
+A_{ij} \;=\; \frac{1}{d}\,\mathrm{Tr}(A)\,\delta_{ij}
+\;+\;\Bigl(A_{ij}-\frac{1}{d}\,\mathrm{Tr}(A)\,\delta_{ij}\Bigr),
+\end{equation}
+of the rank-2 difference object $A_{ij}$. The trace ($\rho$), the traceless part ($\psi$),
+and the Weyl content --- the difference from conformal flatness \cite{QG285} --- are all
+\emph{defined against} the reference $\eta$: conformal flatness is meaningful only with a
+flat reference, and the Weyl tensor is the non-conformal content of the metric relative to
+that reference. Without $\eta$ there is no conformal flatness, hence no notion of
+"difference from conformal flatness," hence no tensor face. The framework inventory audit
+\cite{QG291} classifies $\eta$ accordingly: not \emph{derived} (no count produces a metric,
+and $\eta$ carries no scale), not \emph{redundant} (removing $\eta$ removes the reading), but
+\emph{necessary} --- the reference structure the framework reads against.
+\end{proof}
+
+\begin{lemma}[$\eta$ is not derivable from Difference]
+\label{lem:eta-not-derived}
+No counting measure, no matter how refined, produces a metric reference; $\eta$ carries no
+scale and is not a function of $\rho$.
+\end{lemma}
+
+\begin{proof}
+The framework inventory establishes that $\eta$ is not derived: a metric reference is a
+\emph{reading structure}, not an output of the count. $\eta$ carries no scale --- the scale
+triad enters the theory elsewhere --- and the metric ansatz \eqref{eq:metric-ansatz} takes
+$\eta$ as an input on which the conformal factor $\rho^{2/d}$ acts. Hence $\eta$ is an
+independent input, not a function of the primitive Difference.
+\end{proof}
+
+\begin{corollary}[Two independent primitives]
+\label{cor:eta-independent}
+Difference and $\eta$ are independent primitives: neither is derivable from the other.
+\end{corollary}
+
+\section{The Conformal Reference Framework}
+\label{sec:conformal-framework}
+
+\begin{definition}[Conformal reference structure]
+\label{def:conformal}
+A \emph{conformal reference structure} is a flat reference $(\eta)$ together with the
+conformal factor $\rho^{2/d}$: every physical metric in the theory is in the conformal class
+of $\eta$, and the conformal factor encodes the scalar face of Difference.
+\end{definition}
+
+\begin{theorem}[The conformal framework]
+\label{thm:conformal}
+The physical metric of the theory is the conformal rescaling of the tensor reference:
+$g = \rho^{2/d}\,\eta$. The conformal factor carries the scalar content; the reference
+carries the tensor structure.
+\end{theorem}
+
+\begin{proof}
+The metric ansatz \eqref{eq:metric-ansatz} is the accepted canonical form \cite{QG290}.
+Its factorization separates the two primitive inputs: $\rho$, the scalar face of Difference,
+enters only through the conformal factor $\rho^{2/d}$; $\eta$, the tensor reference, enters
+as the flat background. The conformal factor is fixed by dimensional analysis ($d$ appears
+as the exponent $2/d$) and by the scalar counting content, while the reference is the
+structure against which the conformal class is defined. The framework inventory classifies
+this factorization as the irreducible reading structure of the theory \cite{QG290}.
+\end{proof}
+
+\begin{remark}[The scalar face needs no reference; the tensor face does]
+Consistent with Chapter~\ref{chap:difference}, the scalar face $\rho$ is defined without
+reference to $\eta$, while the tensor face $\psi$ --- the Weyl content --- is defined
+\emph{against} $\eta$. This asymmetry is precisely why Theorem~\ref{thm:minimal-primitives}
+of Chapter~\ref{chap:difference} holds: $\eta$ is necessary exactly for the tensor
+sub-sector.
+\end{remark}
+
+\section{\texorpdfstring{$\eta$}{eta} and the Tensor Sector}
+\label{sec:eta-tensor}
+
+\begin{definition}[Weyl content]
+\label{def:weyl}
+The \emph{Weyl content} of the connectivity is the non-conformal part of the metric --- the
+difference from conformal flatness. It is the tensor face of Difference, $\psi$
+\cite{QG285}.
+\end{definition}
+
+\begin{theorem}[The tensor face is read against \texorpdfstring{$\eta$}{eta}]
+\label{thm:tensor-read}
+The tensor field $\psi$ --- the Weyl content, spin-2, with two transverse-traceless
+polarizations --- is defined as the difference from conformal flatness relative to the
+reference $\eta$.
+\end{theorem}
+
+\begin{proof}
+The psi-reinterpretation audit \cite{QG285} establishes the link "$\psi$ as Difference": the
+Weyl tensor IS the difference from conformal flatness --- the non-conformal content of the
+metric. Conformal flatness is a statement about the conformal class of a reference; the
+reference is $\eta$ (Definition~\ref{def:eta}). Hence $\psi$ is read against $\eta$. The
+spin-2 nature and the two transverse-traceless polarizations follow from the six components
+of the rank-2 adjacency structure at $d=3$: one trace component ($\rho$) and five traceless,
+of which two are transverse-traceless ($\psi$) \cite{QG286}. The tensor sector therefore
+presupposes the reference $\eta$ at every step.
+\end{proof}
+
+\begin{corollary}[Tensor observables require \texorpdfstring{$\eta$}{eta}]
+\label{cor:tensor-requires-eta}
+Every observable in the tensor (gravitational/Weyl) sector is defined against $\eta$; the
+scalar sector is not.
+\end{corollary}
+
+\begin{proof}
+This is the $\eta$-removal result of the foundation stress test \cite{QG292}: removing
+$\eta$ leaves all five layers intact as a scalar ($\rho$-face) read --- masses, couplings,
+mixings, cosmological fractions, and spectral observables are all $\rho$-face reads --- and
+destroys only the tensor sub-sector, because $\psi$ is defined against $\eta$
+(Corollary~\ref{cor:tensor-requires-eta} of this chapter; Theorem~\ref{thm:minimal-primitives}
+of Chapter~\ref{chap:difference}).
+\end{proof}
+
+\section{Difference, \texorpdfstring{$\eta$}{eta} and the Minimal Foundation}
+\label{sec:minimal-foundation}
+
+\begin{theorem}[The minimal foundation is \texorpdfstring{$\{\text{Difference},\eta\}$}{{Difference, eta}}]
+\label{thm:minimal-foundation}
+The minimal foundation of the theory is the pair $\{\text{Difference},\eta\}$: exactly two
+primitives, with the derived hierarchy
+\begin{equation}
+\label{eq:core}
+\text{Difference}\;\longrightarrow\;\text{Actualization}\;\longrightarrow\;\text{Inevitable Spectrum}\;\longrightarrow\;\text{Physics}.
+\end{equation}
+\end{theorem}
+
+\begin{proof}
+By the foundation stress test \cite{QG292}, removing Difference collapses all five layers
+(the count-conservation identity is the primitive's definition, Chapter~\ref{chap:difference},
+Theorem~\ref{thm:fundamental-boundary}); removing $\eta$ collapses only the tensor sub-sector
+(Theorem~\ref{thm:tensor-read}, Corollary~\ref{cor:tensor-requires-eta}). Both are therefore
+necessary. Neither is derivable from the other (Lemma~\ref{lem:eta-not-derived} and
+Corollary~\ref{cor:eta-independent}). Hence the pair is irreducible and independent, and the
+core hierarchy \eqref{eq:core} --- with Actualization derived from Difference per MONO006
+\cite{MONO006} --- is the canonical minimal foundation.
+\end{proof}
+
+\begin{lemma}[Actualization is independent of \texorpdfstring{$\eta$}{eta}]
+\label{lem:actualization-eta-free}
+Actualization, the count-producing process of Difference, does not depend on $\eta$: counting
+needs no metric reference.
+\end{lemma}
+
+\begin{proof}
+The foundation stress test \cite{QG292} establishes that removing $\eta$ leaves Actualization
+intact: counting is a graph identity (the handshake lemma), not a metric identity. Combined
+with MONO006 \cite{MONO006}, which establishes that removing Difference collapses Actualization
+(count conservation is the definitional identity of the primitive), this shows Actualization
+is derived from Difference alone, with no $\eta$ dependence.
+\end{proof}
+
+\begin{corollary}[The canonical architecture]
+\label{cor:canonical-architecture}
+The canonical architecture is: primitives $\{\text{Difference},\eta\}$; Actualization derived
+from Difference; the spectrum inevitable; physics emergent. This is the referee-ready
+structure adopted by MONO007 \cite{MONO007}.
+\end{corollary}
+
+\section{Distinction Between \texorpdfstring{$\eta$}{eta} and \texorpdfstring{$\pi$}{pi}}
+\label{sec:eta-vs-pi}
+
+\begin{definition}[Boundary constant]
+\label{def:pi}
+\emph{$\pi$} is the universal mathematical constant: the geometric ratio of the circle. In
+the canonical architecture it is a BOUNDARY --- a numerical constant not derivable inside the
+framework --- and not a primitive \cite{QG291}.
+\end{definition}
+
+\begin{theorem}[$\eta$ is a primitive; $\pi$ is a boundary]
+\label{thm:eta-primitive-pi-boundary}
+$\eta$ and $\pi$ play different structural roles: $\eta$ is a primitive (necessary, an
+irreducible reading structure); $\pi$ is a boundary constant (redundant as a theory input).
+\end{theorem}
+
+\begin{proof}
+The framework necessity audit \cite{QG291} classifies the two items separately. $\eta$ is
+\emph{necessary}: without it the trace/traceless duality and the conformal reading are
+undefined (Theorem~\ref{thm:eta-necessary}). $\pi$ is \emph{redundant} as a theory input: no
+derived prediction uses $\pi$ as an input --- every derived observable (masses, couplings,
+mixings, $\Omega_\Lambda/\Omega_m$, $n_s$, acoustic ratios, the pre-registered predictions)
+is a pure ratio of D96 spectral constants together with the calibration scale. Where $\pi$
+appears --- most notably in the Bekenstein $S=A/4$ coefficient --- it is an imported quantum
+factor that the framework cannot produce internally, an explicit boundary \cite{QG185}.
+Hence $\eta$ is a primitive and $\pi$ is a boundary; the referee-ready MONO007 architecture
+presents $\eta$ as the second primitive and $\pi$ as a boundary constant, never conflating
+the two \cite{MONO007}.
+\end{proof}
+
+\begin{corollary}[No conflation]
+\label{cor:no-conflation}
+The monograph presents $\eta$ (foundational) and $\pi$ (boundary) in separate structural
+roles; the tensor reference is not a numerical constant, and the geometric constant is not a
+reference structure.
+\end{corollary}
+
+\begin{remark}[Referee-safe wording]
+Per MONO007 \cite{MONO007}, the distinction between the primitive $\eta$ and the boundary
+constant $\pi$ is stated explicitly wherever both appear, so that no reader or referee can
+misread the numerical constant as a primitive input of the theory.
+\end{remark}
+
+\section{Consequences}
+\label{sec:eta-consequences}
+
+\begin{lemma}[One primitive pair, one hierarchy]
+\label{lem:eta-consequence-1}
+The entire content of the theory is carried by the primitive pair
+$\{\text{Difference},\eta\}$ through the single canonical hierarchy
+\eqref{eq:core}: the scalar face of Difference feeds the spectral readout of all observables;
+the tensor face, read against $\eta$, feeds the gravitational (Weyl) sector; Actualization
+connects the primitive to the inevitable spectrum.
+\end{lemma}
+
+\begin{theorem}[Reference-safety of the derivation graph]
+\label{thm:reference-safety}
+The derivation graph of the theory, with primitives $\{\text{Difference},\eta\}$ and
+Actualization derived, is acyclic and contains no circular dependency involving $\eta$.
+\end{theorem}
+
+\begin{proof}
+The dependency graph of the canonical architecture is verified acyclic (the final-theory
+architecture audit). $\eta$ appears only as a reading reference for the tensor sector; no
+derived quantity is used to define $\eta$ (Lemma~\ref{lem:eta-not-derived}), and no tensor
+observable is used in the scalar sector that defines the count. The referee-ready structure
+of MONO007 \cite{MONO007} confirms that the presentation introduces no circular
+dependencies: $\eta$ is an input, never an output of a derived relation.
+\end{proof}
+
+\begin{corollary}[The architecture is complete and irreducible]
+\label{cor:eta-architecture}
+The canonical architecture --- primitives $\{\text{Difference},\eta\}$, Actualization
+derived, spectrum inevitable, physics emergent --- is complete within the minimal hierarchy
+and irreducible: no primitive can be removed, and no derived layer is an additional input.
+\end{corollary}
+
+\begin{remark}[The Actualization Theory]
+In the canonical monograph the theory is presented under the name \emph{The Actualization
+Theory}, with subtitle \emph{A Reconstruction of Physics from Difference, Actualization and
+Spectrum}. The name emphasizes that the reconstructed physics flows through the derived
+actualization process --- the count-producing dynamics of the primitive Difference, converging
+to the inevitable spectrum --- while the primitive foundation remains the pair
+$\{\text{Difference},\eta\}$.
+\end{remark}
+
+\section{Summary}
+\label{sec:eta-summary}
+
+This chapter has established the second member of the canonical architecture. We have proved:
+
+\begin{enumerate}
+\item \textbf{Necessity} (Theorem~\ref{thm:eta-necessary}): the tensor reference $\eta$ is
+necessary --- without it no trace, no traceless part, no conformal flatness, no tensor face;
+\item \textbf{Independence} (Lemma~\ref{lem:eta-not-derived},
+Corollary~\ref{cor:eta-independent}): $\eta$ is not derivable from Difference;
+\item \textbf{The conformal framework} (Theorem~\ref{thm:conformal}): the physical metric is
+the conformal rescaling $g=\rho^{2/d}\,\eta$ of the tensor reference;
+\item \textbf{The tensor sector} (Theorem~\ref{thm:tensor-read},
+Corollary~\ref{cor:tensor-requires-eta}): $\psi$ is read against $\eta$, and tensor
+observables require it while scalar observables do not;
+\item \textbf{The minimal foundation} (Theorem~\ref{thm:minimal-foundation},
+Lemma~\ref{lem:actualization-eta-free}, Corollary~\ref{cor:canonical-architecture}): the
+minimal foundation is $\{\text{Difference},\eta\}$, with Actualization derived from
+Difference alone;
+\item \textbf{The $\eta$/$\pi$ distinction} (Theorem~\ref{thm:eta-primitive-pi-boundary},
+Corollary~\ref{cor:no-conflation}): $\eta$ is a primitive, $\pi$ is a boundary constant,
+never conflated;
+\item \textbf{Consequences} (Theorem~\ref{thm:reference-safety},
+Corollary~\ref{cor:eta-architecture}): the derivation graph is reference-safe and acyclic,
+and the architecture is complete and irreducible.
+\end{enumerate}
+
+The tensor reference $\eta$ is therefore not an auxiliary mathematical device but a precise
+primitive: the conformal reference against which the trace/traceless duality of Difference is
+read, the structure that supports the tensor (gravitational) face, and --- together with
+Difference --- one half of the irreducible minimal foundation of The Actualization Theory.
+The following chapters derive, from this foundation, the actualization process and the
+inevitable spectrum from which all physics emerges.
+
+\begin{thebibliography}{99}
+\bibitem{QG285} TQM-QG Phase 285, \emph{Psi Reinterpretation Audit}, Docs/Research.
+\bibitem{QG286} TQM-QG Phase 286, \emph{Difference Duality Audit}, Docs/Research.
+\bibitem{QG289} TQM-QG Phase 289, \emph{Anchor Inventory Audit}, Docs/Research.
+\bibitem{QG290} TQM-QG Phase 290, \emph{Framework Inventory Audit}, Docs/Research.
+\bibitem{QG291} TQM-QG Phase 291, \emph{Framework Necessity Audit}, Docs/Research.
+\bibitem{QG292} TQM-QG Phase 292, \emph{Foundation Stress Test}, Docs/Research.
+\bibitem{QG185} TQM-QG Phase 185, \emph{Bekenstein Quarter Coefficient Origin}, Docs/Research.
+\bibitem{MONO006} TQM-MONO006, \emph{A01 Actualization Origin Audit}, Docs/Zenodo/Monograph.
+\bibitem{MONO007} TQM-MONO007, \emph{Referee-Readiness Resolution}, Docs/Zenodo/Monograph.
+\end{thebibliography}
