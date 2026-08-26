@@ -34,7 +34,7 @@
 | Document identifiers | `TQM-QG Phase 116`, `TQM-MONO007`, `TQM-VALID001` | ~165 | Document identifiers — MUST keep per task |
 | Repository name / URL | `https://github.com/MagusDraconis/TQM` | 2 | Repository name — MUST keep |
 | Comment headers | `% TQM-MONO100 — Chapter 1` in all chapter files | ~13 | Document identifiers in source comments |
-| Historical transition | `FrontMatter.tex:113` "canonical v2.0 record of The Quantum Model, now presented under the name The Actualization Theory" | 1 | Explicit historical reference — MUST keep for traceability |
+| Historical transition | `FrontMatter.tex:113` "canonical v2.0 record of The Q-Model (TQM), now presented under the name The Actualization Theory" | 1 | Explicit historical reference — MUST keep for traceability |
 | File references in comments | `TQMQG_CanonicalMonograph.md`, `TQMQG_Mono007RefereeReadiness.md`, `TQMVALID_UntestedItemsAudit.md` | ~4 | Document identifiers |
 
 ---
@@ -70,7 +70,7 @@
 
 ## 4. Verification
 
-- `grep "Quantum Model"` after changes → only the historical sentence at FrontMatter.tex:113 remains.
+- `grep "Quantum Model"` after changes → 0 results (correct historical name is **The Q-Model**).
 - `grep "of TQM"` → 0 results.
 - Compilation verified after changes (see build log).
 - All `TQM-QG`, `TQM-MONO`, `TQM-VALID` identifiers untouched.
