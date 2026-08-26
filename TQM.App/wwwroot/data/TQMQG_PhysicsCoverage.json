@@ -601,7 +601,7 @@
       "domain": "foundation",
       "validation": "audit",
       "summary": "referee-readiness resolution (MONO007, change log only - resolve the hostile-referee findings A02-A09 of MONO005 in the canonical monograph structure without modifying physics",
-      "report_url": "https://github.com/MagusDraconis/TQM/blob/TQM_v1.1/Docs/Research/TQMQG_Mono007RefereeReadiness.md"
+      "report_url": "https://github.com/MagusDraconis/AT/blob/TQM_v1.1/Docs/Research/TQMQG_Mono007RefereeReadiness.md"
     },
     {
       "phase": 900.5,
@@ -612,7 +612,7 @@
       "domain": "foundation",
       "validation": "audit",
       "summary": "hostile referee audit of the final canonical monograph structure (MONO005, input TQMQG_CanonicalMonograph",
-      "report_url": "https://github.com/MagusDraconis/TQM/blob/TQM_v1.1/Docs/Zenodo/Monograph/TQMQG_CanonicalMonographRefereeAudit.md"
+      "report_url": "https://github.com/MagusDraconis/AT/blob/TQM_v1.1/Docs/Zenodo/Monograph/TQMQG_CanonicalMonographRefereeAudit.md"
     },
     {
       "phase": 900.4,
@@ -623,7 +623,7 @@
       "domain": "foundation",
       "validation": "audit",
       "summary": "final canonical monograph structure (MONO004, assembly only from the canonical end-state post-QG319",
-      "report_url": "https://github.com/MagusDraconis/TQM/blob/TQM_v1.1/Docs/Zenodo/Monograph/TQMQG_CanonicalMonograph.md"
+      "report_url": "https://github.com/MagusDraconis/AT/blob/TQM_v1.1/Docs/Zenodo/Monograph/TQMQG_CanonicalMonograph.md"
     },
     {
       "phase": 900.3,
@@ -634,7 +634,7 @@
       "domain": "foundation",
       "validation": "audit",
       "summary": "referee objection audit (MONO003, hostile-referee review of QG0-QG225, no new physics)",
-      "report_url": "https://github.com/MagusDraconis/TQM/blob/TQM_v1.1/Docs/Zenodo/Monograph/TQMQG_RefereeObjectionAudit.md"
+      "report_url": "https://github.com/MagusDraconis/AT/blob/TQM_v1.1/Docs/Zenodo/Monograph/TQMQG_RefereeObjectionAudit.md"
     },
     {
       "phase": 900.1,
@@ -645,7 +645,7 @@
       "domain": "foundation",
       "validation": "audit",
       "summary": "quantum gravity monograph assembly (MONO001, assembly only from QG0-QG225, no new physics)",
-      "report_url": "https://github.com/MagusDraconis/TQM/blob/TQM_v1.1/Docs/Zenodo/Monograph/TQMQG_MonographAssembly.md"
+      "report_url": "https://github.com/MagusDraconis/AT/blob/TQM_v1.1/Docs/Zenodo/Monograph/TQMQG_MonographAssembly.md"
     },
     {
       "phase": 321,
@@ -656,7 +656,7 @@
       "domain": "foundation",
       "validation": "audit",
       "summary": "physics-focused monograph re-audit (MONO110A, create a physics-focused publication by removing the Universality Program from the core monograph",
-      "report_url": "https://github.com/MagusDraconis/TQM/blob/TQM_v1.1/Docs/Research/TQMMONO110A_PhysicsFocusedMonographAudit.md"
+      "report_url": "https://github.com/MagusDraconis/AT/blob/TQM_v1.1/Docs/Research/TQMMONO110A_PhysicsFocusedMonographAudit.md"
     }
   ],
   "phases": [

@@ -72,7 +72,7 @@ documentation-only update):
 | Namespaces | `TQM.Core`, `TQM.Tests`, `TQM.Core.ResearchQG` | code identity |
 | Projects | `TQM.Core.csproj`, `TQM.Tests.csproj` | build identity |
 | Folders | `TQM.Core/`, `TQM.Tests/` | repository layout |
-| Repository | `MagusDraconis/TQM` | GitHub identity |
+| Repository | `MagusDraconis/AT` | GitHub identity |
 | Class names | `TQM_*` test classes, `UnifiedTQMAnalyzer` | code API |
 | Legacy docs | `LegacyDocs/` (gitignored PDFs) | reference-only, not part of active docs |
 

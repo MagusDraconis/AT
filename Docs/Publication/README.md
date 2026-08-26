@@ -41,7 +41,7 @@ theorem structure, verified to compile cleanly. See `V2.0/` for the current chap
 
 ## Source repository
 
-https://github.com/MagusDraconis/TQM
+https://github.com/MagusDraconis/AT
 
 Build & test: `dotnet build TQM.Core/TQM.Core.csproj` then
 `dotnet test TQM.Tests/TQM.Tests.csproj` (.NET 10, MathNet.Numerics 5.0).

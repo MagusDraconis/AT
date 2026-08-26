@@ -10,10 +10,10 @@ sys.stdout.reconfigure(encoding='utf-8')
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 MD = os.path.join(ROOT, "Docs", "TQMQG_PhysicsCoverage.md")
 JSON = os.path.join(ROOT, "Docs", "TQMQG_PhysicsCoverage.json")
-REPO_BLOB = "https://github.com/MagusDraconis/TQM/blob/TQM_v1.1/Docs/Research/"
+REPO_BLOB = "https://github.com/MagusDraconis/AT/blob/TQM_v1.1/Docs/Research/"
 
 # Reports moved to the Zenodo monograph folder: (filename, override blob URL prefix).
-ZENODO_BLOB = "https://github.com/MagusDraconis/TQM/blob/TQM_v1.1/Docs/Zenodo/Monograph/"
+ZENODO_BLOB = "https://github.com/MagusDraconis/AT/blob/TQM_v1.1/Docs/Zenodo/Monograph/"
 REPORT_BLOB_OVERRIDES = {
     "TQMQG_MonographAssembly.md": ZENODO_BLOB,
     "TQMQG_RefereeObjectionAudit.md": ZENODO_BLOB,

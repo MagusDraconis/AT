@@ -2,7 +2,7 @@
 
 **Release:** Version 1.0 (revised) — 15 August 2026
 **Author:** Fabrice Wieser
-**Source:** https://github.com/MagusDraconis/TQM
+**Source:** https://github.com/MagusDraconis/AT
 
 ---
 
@@ -68,7 +68,7 @@ structure/content split; falsifiability.
 | Date | 2026-08-15 |
 | Access | open |
 | Keywords | see above |
-| Related ID | https://github.com/MagusDraconis/TQM (isSupplementTo) |
+| Related ID | https://github.com/MagusDraconis/AT (isSupplementTo) |
 
 Full metadata: `Zenodo_Metadata.json`.
 

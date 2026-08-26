@@ -30,8 +30,8 @@ keywords:
 license: MIT
 version: 1.0.0
 date-released: "2026-08-15"
-repository-code: "https://github.com/MagusDraconis/TQM"
-url: "https://github.com/MagusDraconis/TQM"
+repository-code: "https://github.com/MagusDraconis/AT"
+url: "https://github.com/MagusDraconis/AT"
 preferred-citation:
   type: article
   title: "THE Q-MODEL — From Q to Cosmology: A Theory of Structure, Complexity and Random Actualization"
@@ -40,4 +40,4 @@ preferred-citation:
       given-names: Fabrice
   year: 2026
   version: "1.0.0"
-  url: "https://github.com/MagusDraconis/TQM"
+  url: "https://github.com/MagusDraconis/AT"
