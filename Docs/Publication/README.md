@@ -1,42 +1,43 @@
-# THE Q-MODEL — Publication Package (v1.0, revised)
+# THE ACTUALIZATION THEORY — Publication Package
 
-**Publication status: READY_FOR_WHITEPAPER — NOT_READY_FOR_JOURNAL.**
+**Publication status: V1.0 READY_FOR_WHITEPAPER (archived, superseded) · V2.0 in preparation.**
 
-This directory contains the Zenodo publication package for THE Q-MODEL (TQM), version 1.0
-(revised). It is released as a **white paper** (research-program description), not a
-peer-reviewed journal article.
+This directory contains the Zenodo publication package for The Actualization Theory
+(formerly THE Q-MODEL, TQM). It is organized into two versioned subdirectories plus the
+shared metadata at this root.
 
 ## Contents
 
-| File | Purpose |
+| Path | Purpose |
 |---|---|
-| `TQM_v1_0.tex` | LaTeX source of the paper (build with `pdflatex TQM_v1_0.tex`) |
-| `TQM_v1_0.pdf` | Compiled PDF of the paper |
-| `TQM_v1_0_Monograph.tex` | LaTeX source of the reference monograph (build with `pdflatex TQM_v1_0_Monograph.tex`) |
-| `TQM_v1_0_Monograph.pdf` | Compiled PDF of the reference monograph (~75 pages) |
+| `V1.0/` | Superseded v1.0 publication package (white paper + reference monograph, "four primitives" era) |
+| `V2.0/` | Canonical v2.0 monograph chapters (The Actualization Theory, primitives {Difference, η}) |
 | `Zenodo_Metadata.json` | Zenodo upload metadata (title, authors, keywords, license) |
 | `CITATION.cff` | Citation File Format metadata |
 | `CHANGELOG.md` | Version history |
-| `TQM_v1_0_PublicationPackage.md` | Package overview, abstract, keywords, caveat, checklist |
 | `README.md` | This file |
 
-## Publication caveat
+## V1.0 (archived, superseded)
 
-**READY_FOR_WHITEPAPER — NOT_READY_FOR_JOURNAL.**
+The v1.0 release (THE Q-MODEL) is a white paper + reference monograph based on the
+pre-canonical "four primitives" framing (individuation Q, Random Actualization, the scale
+triad (ℓ,τ,ℏ), and a nonlinearity parameter M²). It is **marked superseded** by the canonical
+v2.0 monograph per MONO004. Its files remain archived under `V1.0/` for the historical
+record.
 
-The central derivation claim (Einstein recovery from Q-events) remains *logical, not
-mathematical*: the metric and the BDG action are imported (proven but not TQM-derived),
-$G=\ell^2c^3/\hbar$ is dimensional analysis, and no unique sharp prediction yet
-discriminates TQM from SM + $\Lambda$CDM. See
-`../Audits/PublicationReadiness_Final.md` for the full re-evaluation of every Round-2
-fatal review issue.
+## V2.0 (in preparation)
 
-## Citation
+The canonical v2.0 monograph — **The Actualization Theory: A Reconstruction of Physics from
+Difference, Actualization and Spectrum** — derives all physics from the primitives
+{Difference, η} through the hierarchy
 
-See `CITATION.cff`, or cite as:
+```
+Difference → Actualization → Inevitable Spectrum → Physics
+```
 
-> Fabrice Wieser, *THE Q-MODEL — From Q to Cosmology: A Theory of Structure, Complexity
-> and Random Actualization*, Version 1.0 (revised), 2026. White paper (Zenodo).
+Chapters are assembled from the canonical end-state (QG278-QG318, MONO004-MONO007) and
+follow the MONO004 17-chapter structure. Each chapter is publication-grade LaTeX with formal
+theorem structure, verified to compile cleanly. See `V2.0/` for the current chapter list.
 
 ## Source repository
 
@@ -44,3 +45,4 @@ https://github.com/MagusDraconis/TQM
 
 Build & test: `dotnet build TQM.Core/TQM.Core.csproj` then
 `dotnet test TQM.Tests/TQM.Tests.csproj` (.NET 10, MathNet.Numerics 5.0).
+
