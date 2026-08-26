@@ -3,16 +3,16 @@
     "file": "Docs/TQMQG_PhysicsCoverage.md|json",
     "purpose": "single source of truth for all TQM-QG physics validation",
     "last_updated": "2026-08-26",
-    "phases_count": 334,
+    "phases_count": 335,
     "note": "Historical entries are never removed. Additive updates only."
   },
   "coverage": {
-    "total_phases": 334,
+    "total_phases": 335,
     "tested": 212,
     "partial": 12,
     "untested": 12,
-    "audit": 98,
-    "weighted_coverage": 0.726,
+    "audit": 99,
+    "weighted_coverage": 0.7246,
     "domains": {
       "cosmology": {
         "tested": 7,
@@ -32,8 +32,8 @@
         "tested": 20,
         "partial": 0,
         "untested": 12,
-        "audit": 91,
-        "total": 123
+        "audit": 92,
+        "total": 124
       },
       "gravity": {
         "tested": 33,
@@ -648,15 +648,15 @@
       "report_url": "https://github.com/MagusDraconis/TQM/blob/TQM_v1.1/Docs/Zenodo/Monograph/TQMQG_MonographAssembly.md"
     },
     {
-      "phase": 320,
-      "phase_label": "QG320",
-      "file": "TQMVALID_UntestedItemsAudit.md",
-      "title": "TQMVALID Untested Items Audit",
-      "classification": "ALL DERIVED - EXPERIMENTAL VALIDATION",
+      "phase": 321,
+      "phase_label": "QG321",
+      "file": "TQMMONO110A_PhysicsFocusedMonographAudit.md",
+      "title": "TQMMONO A Physics Focused Monograph Audit",
+      "classification": "PHYSICS-FOCUSED PUBLICATION-READY",
       "domain": "foundation",
       "validation": "audit",
-      "summary": "remaining untested items audit (VALID001, analyze the three items listed as remaining untested - the S,T,U oblique parameters, the electron g-2 [a_e], and the Majorana character [0nu-beta-beta] - against the ACCEPTED TQM derivations",
-      "report_url": "https://github.com/MagusDraconis/TQM/blob/TQM_v1.1/Docs/Research/TQMVALID_UntestedItemsAudit.md"
+      "summary": "physics-focused monograph re-audit (MONO110A, create a physics-focused publication by removing the Universality Program from the core monograph",
+      "report_url": "https://github.com/MagusDraconis/TQM/blob/TQM_v1.1/Docs/Research/TQMMONO110A_PhysicsFocusedMonographAudit.md"
     }
   ],
   "phases": [
@@ -3291,6 +3291,14 @@
       "domain": "foundation",
       "validation": "audit",
       "key_result": "remaining untested items audit (VALID001, analyze the three items listed as remaining untested - the S,T,U oblique parameters, the electron g-2 [a_e], and the Majorana character [0nu-beta-beta] - against the ACCEPTED TQM derivations; no new physics, no parameter fitting, no speculation; determine per item: A derived prediction exists / B partial derivation / C no derivation): THE THREE ITEMS [oblique parameters S,T,U [QG180, ObliqueParametersOrigin] - S = occ0/sum = 4/95 = 0.0421 [within 5.3% of the EW global fit], T = 2S = 8/95 = 0.0842 [T = 2S exact], U = 0 [exact SM tree-level rho = 1]; tests SMatch/TMatch/UMatch/TEqualsTwoS pass; electron g-2 a_e [QG178, ElectronG2Origin] - a_e = (alpha/2pi)(1 - (occ0/sum)^2) = 1.159655e-3 [0.0003% vs experiment], delta a_e = (alpha/2pi)^3 x span^1/4 x (occ0/sum)^3 = 1.86e-13 [anomaly-free, below 1e-12]; same mechanism as muon g-2 QG171; tests MatchesExperiment/MatchesQED/CorrectionNegative/AnomalyBelow1e12 pass; Majorana character [QG179, MajoranaOrigin] - neutrino MAJORANA [self-conjugate T3-only channel 48/95, unique Q=0, real mass matrix via reflection automorphism QG174], m_beta-beta = |m1 c12^2 c13^2 + m2 s12^2 c13^2 e^(i alpha2) + m3 s13^2 e^(-2i delta_nu)| = 2.02e-3 eV [within limits, in reach of next-generation]; tests SelfConjugateByAccess/NoConservedCharge/RealMassMatrix/WithinExperimentalLimit pass]; THE DETERMINATION [all three are status A - DERIVED PREDICTION EXISTS - with NO missing derivation steps; the open item is EXPERIMENTAL VALIDATION, not physics derivation; difficulty scores: S,T,U 1 [Low - already consistent with the EW fit, re-analysis only], a_e 3 [Medium - requires the lattice-limited measurement], 0nu-beta-beta 4 [High - requires nEXO/LEGEND-1000 at the 0.036-0.156 eV reach, m_beta-beta = 2.02e-3 eV below current sensitivity]; recommended priority: 0nu-beta-beta [High] > a_e [Medium] > S,T,U [Low]; CLASSIFICATION: all three belong to the EXPERIMENTAL VALIDATION category - not physics derivation [all derivations complete, test-verified], not boundary layer [each has a concrete falsifiable derived prediction]; validation score 6/6; dependency chains traced from the D96 spectrum [QG155-159] through the accepted phases [QG162/167/171/172/174/178/179/180]"
+    },
+    {
+      "phase": 321,
+      "file": "TQMMONO110A_PhysicsFocusedMonographAudit.md",
+      "classification": "PHYSICS-FOCUSED PUBLICATION-READY",
+      "domain": "foundation",
+      "validation": "audit",
+      "key_result": "physics-focused monograph re-audit (MONO110A, create a physics-focused publication by removing the Universality Program from the core monograph; keep Chapters 1-12 unchanged, remove Universality from the core, retain only boundary and experimental validation chapters, treat Universality as future work; assembly only, no new physics): THE REVISED STRUCTURE [Part I Foundation [Ch1 The Difference ~8pp, Ch2 The Tensor Reference eta ~10pp]; Part II Derived Dynamics [Ch3 Actualization ~10pp, Ch4 Closure and the Minimal Theory ~10pp, Ch5 The Inevitable Spectrum ~10pp]; Part III Spectrum [Ch6 The D96 Spectrum ~10pp, Ch7 The Operator Basis ~10pp, Ch8 The Lock Law ~10pp]; Part IV Physics [Ch9 Quantum Mechanics ~10pp, Ch10 Gravity and Spacetime ~10pp, Ch11 The Standard Model ~8pp, Ch12 Cosmology ~10pp]; Part V Boundary and Validation [Ch13 The Boundary Layer ~8pp, Ch14 Frontier and Falsification ~8pp]; Appendix [Ch15 Universality Program - future work ~10pp]]; THE CHANGES [Chapters 1-12 kept unchanged - the physics derivation is the core; the Universality Program [cross-domain universality, organization and prediction, validation and anti-fit] removed from the core; the boundary and validation chapters retained because a foundation monograph must disclose its boundaries and validation status; Universality treated as future work in an appendix]; THE PAGE ESTIMATE [physics content Ch1-12 ~116pp; boundary and validation Ch13-14 ~16pp; appendix universality ~10pp; total content ~142pp; front matter ~10pp; publication total ~152pp - measured from the compiled Chapters 1-11 at ~10 pages per chapter]; DETERMINATION: PHYSICS-FOCUSED PUBLICATION-READY [structure score 6/6] - the physics-focused monograph is a minimal publication-ready structure for The Actualization Theory: A Reconstruction of Physics from Difference, Actualization and Spectrum: the core Ch1-14 is the complete physics derivation with boundary disclosure and validation status [~132pp], the appendix Ch15 is the Universality Program as future work [~10pp], total ~152pp; this structure foregrounds the physics reconstruction and treats the universality research program honestly as a separate future direction"
     },
     {
       "phase": 900.1,
