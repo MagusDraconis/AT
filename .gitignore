@@ -375,6 +375,11 @@ Data/COSMOS2015_KMOS3D_field.csv
 # Legacy/reference-only documents (PDFs) — not part of the active program.
 LegacyDocs/
 
+# LaTeX build artifacts.
+*.aux
+*.out
+*.toc
+
 # Local-only exploratory notes.
 Docs/AT_FutureAndIdeas.md
 Docs/LocalFalsificationLab/
