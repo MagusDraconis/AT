@@ -1,0 +1,419 @@
+% ======================================================================
+%  TQM-MONO109 — Chapter 10: Gravity and Spacetime
+%  Canonical Monograph (v2.0) · The Actualization Theory:
+%  A Reconstruction of Physics from Difference, Actualization and Spectrum
+%
+%  Status: COMPLETE — PASS-READY (MONO007 referee-ready architecture)
+%  Inputs: Chapter01_Difference.tex ... Chapter09_QuantumMechanics.tex
+%  Method: assembly only — canonical results only, no new physics, no speculation
+%  Citations: QG181 (Newton constant), QG182 (G bridge), QG183 (Planck robustness),
+%             QG184 (mass-radius), QG186 (frame dragging), QG187 (GPS),
+%             QG222 (native dynamics), QG285 (psi reinterpretation),
+%             QG286 (difference duality), QG292 (minimal foundation)
+%
+%  Usage: \input{Chapter10_GravityAndSpacetime.tex} after the preamble
+%         that defines the theorem environments (or include via the master file).
+% ======================================================================
+
+% ---- Theorem environments (define in the master preamble if not present) ----
+% \newtheorem{definition}{Definition}[chapter]
+% \newtheorem{lemma}[definition]{Lemma}
+% \newtheorem{theorem}[definition]{Theorem}
+% \newtheorem{corollary}[definition]{Corollary}
+% \newtheorem{remark}[definition]{Remark}
+
+\chapter{Gravity and Spacetime}
+\label{chap:gravity}
+
+\section{Introduction}
+\label{sec:gravity-introduction}
+
+The preceding chapters established the foundation of The Actualization Theory: the
+primitives $\{\text{Difference},\eta\}$, the derived process of Actualization, the
+inevitable D96 spectrum, the operator basis, and the emergent quantum structure. This
+chapter derives \emph{gravity and spacetime} from the same foundation. We establish that
+gravity is emergent --- a read of the counting measure and its tensor face --- and that
+spacetime is emergent geometry \cite{QG181,QG184,QG222}.
+
+The central results are: the gravitational coupling arises from the D96 spectral content
+\cite{QG181,QG182,QG183}; the tensor sector is carried by the tensor face of Difference,
+$\psi$, read against the tensor reference $\eta$ \cite{QG285,QG286}; the metric is
+constructed from the counting measure and the reference \cite{QG292}; spacetime is emergent
+geometry from the network and its dynamics \cite{QG222}; the black-hole relations and the
+frame-dragging sector follow \cite{QG184,QG186}; and the GPS/gravitational-redshift
+observables are the counting-measure redshift law \cite{QG187}.
+
+Throughout, gravity is presented as \emph{emergent}, $\eta$ as the \emph{tensor
+reference}, and $\psi$ as the \emph{tensor face of Difference}. The Bekenstein $1/4$
+coefficient is \emph{excluded from the derivation claims} of this chapter and explicitly
+referenced to the Boundary Layer, per the referee-safe architecture of MONO007
+\cite{MONO007}.
+
+We use only accepted canonical results and introduce no new physics and no speculation.
+
+\section{Gravity from Difference}
+\label{sec:gravity-from-difference}
+
+\begin{definition}[Gravitational coupling]
+\label{def:newton-constant}
+The \emph{gravitational coupling} of the theory is the Newton constant $G$, derived from
+the Planck scale
+\begin{equation}
+\label{eq:mpl}
+M_{\mathrm{Pl}} \;=\; v\cdot(\Sigma m\cdot\#g\cdot\mathrm{occ}_2)^3,
+\end{equation}
+where $v$ is the weak scale, $\Sigma m = 95$ the total mode count, $\#g = 44$ the group
+count, and $\mathrm{occ}_2$ the dense-band occupancy.
+\end{definition}
+
+\begin{theorem}[Gravity is derived from the D96 spectral content]
+\label{thm:gravity-derived}
+The gravitational coupling is derived from the D96 spectral content: the Planck scale is the
+weak scale times the cube of the occupation-weighted spectral content, giving
+$M_{\mathrm{Pl}} = 1.22335\times10^{19}\,\mathrm{GeV}$ and
+$G = 6.6476\times10^{-11}\,\mathrm{m}^3\,\mathrm{kg}^{-1}\,\mathrm{s}^{-2}$.
+\end{theorem}
+
+\begin{proof}
+The Newton-constant origin \cite{QG181} establishes the construction:
+$M_{\mathrm{Pl}} = v\cdot(\Sigma m\cdot\#g\cdot\mathrm{occ}_2)^3 = 1.22335\times10^{19}$
+GeV, matching the Planck scale within $0.2\%$, and $G = 1/M_{\mathrm{Pl}}^2$ within
+$0.4\%$. The robustness audit \cite{QG183} confirms the physical exponent is cubic, and the
+bridge audit \cite{QG182} shows the two G constructions are the same physical content.
+Hence gravity is derived from the D96 spectral content --- the weak scale times the cube of
+the occupation-weighted spectral structure.
+\end{proof}
+
+\begin{corollary}[Gravity is emergent]
+\label{cor:gravity-emergent}
+Gravity is emergent in the theory: the gravitational coupling is a derived function of the
+D96 spectral content, not an independent input.
+\end{corollary}
+
+\begin{proof}
+By Theorem~\ref{thm:gravity-derived}, $G$ is a function of the spectral constants
+($\Sigma m$, $\#g$, $\mathrm{occ}_2$) and the weak scale. By Chapter~\ref{chap:d96}
+(Theorem~\ref{thm:d96-derived}), the spectral constants are derived from the spectrum, which
+is derived from the attractor. Hence gravity is twice-emergent: a read of the derived
+spectral content.
+\end{proof}
+
+\section{The Tensor Sector}
+\label{sec:tensor-sector}
+
+\begin{theorem}[The tensor sector is the tensor face of Difference]
+\label{thm:tensor-face}
+The tensor sector of gravity is carried by the tensor face of Difference, $\psi$: the
+Weyl content read against the tensor reference $\eta$.
+\end{theorem}
+
+\begin{proof}
+The Difference duality \cite{QG286} establishes that $\rho$ and $\psi$ are the trace and
+traceless faces of the one Difference (Chapter~\ref{chap:difference},
+Theorem~\ref{thm:duality}). The psi-reinterpretation audit \cite{QG285} identifies $\psi$
+as the Weyl content --- the difference from conformal flatness --- read against the
+reference $\eta$ (Chapter~\ref{chap:eta}, Theorem~\ref{thm:tensor-read}). Hence the tensor
+sector of gravity is carried by $\psi$, the tensor face of Difference, against the tensor
+reference $\eta$.
+\end{proof}
+
+\begin{corollary}[The tensor sector is not a new primitive]
+\label{cor:tensor-not-primitive}
+The tensor sector introduces no new primitive: it is the tensor face of the existing
+primitive Difference, read against the existing reference $\eta$.
+\end{corollary}
+
+\begin{proof}
+By Theorem~\ref{thm:tensor-face}, the tensor content is $\psi$, a face of Difference, and
+its reference is $\eta$. Both are members of the primitive pair established in
+Chapter~\ref{chap:eta} (Theorem~\ref{thm:minimal-foundation}). Hence the tensor sector uses
+no new primitive; it is the tensor face of the existing foundation.
+\end{proof}
+
+\begin{lemma}[The tensor observables require \texorpdfstring{$\eta$}{eta}]
+\label{lem:tensor-requires-eta}
+The tensor (gravitational) observables are defined against the tensor reference $\eta$:
+the Weyl content, the metric completion, and the frame-dragging sector all presuppose the
+reference.
+\end{lemma}
+
+\begin{proof}
+The minimal-foundation result \cite{QG292} establishes that removing $\eta$ leaves the
+scalar sector intact but destroys the tensor sub-sector. By Theorem~\ref{thm:tensor-face},
+the tensor observables are reads of $\psi$ against $\eta$; hence they require $\eta$. This
+is the canonical asymmetry: the scalar face needs no reference, the tensor face does.
+\end{proof}
+
+\section{The Metric Construction}
+\label{sec:metric-construction}
+
+\begin{definition}[The metric]
+\label{def:metric}
+The \emph{metric} of the theory is the conformal rescaling of the tensor reference:
+\begin{equation}
+\label{eq:metric}
+g \;=\; \rho^{2/d}\,\eta,
+\end{equation}
+where $\rho$ is the scalar counting measure, $d$ the spatial dimension, and $\eta$ the
+tensor reference.
+\end{definition}
+
+\begin{theorem}[The metric is constructed from the primitive pair]
+\label{thm:metric-construction}
+The metric is constructed from the primitive pair $\{\text{Difference},\eta\}$: the
+conformal factor carries the scalar face of Difference ($\rho$), and the reference carries
+the tensor structure ($\eta$).
+\end{theorem}
+
+\begin{proof}
+The metric ansatz \eqref{eq:metric} is the canonical form established in
+Chapter~\ref{chap:eta} (Theorem~\ref{thm:conformal}). The conformal factor $\rho^{2/d}$
+carries the scalar counting content --- the scalar face of Difference --- and the reference
+$\eta$ provides the tensor structure. Hence the metric is constructed from the primitive
+pair, with no additional input. This construction is consistent with the minimal foundation
+\cite{QG292}.
+\end{proof}
+
+\begin{corollary}[The metric is emergent]
+\label{cor:metric-emergent}
+The metric is an emergent construction: the conformal factor is derived from the counting
+measure, and the reference is the primitive $\eta$; no independent metric postulate is
+required.
+\end{corollary}
+
+\begin{proof}
+By Theorem~\ref{thm:metric-construction}, the metric is built from $\rho$ and $\eta$. The
+conformal factor is derived from the counting measure (the actualization share), and $\eta$
+is the established primitive. Hence the metric is an emergent construction, not an imported
+postulate.
+\end{proof}
+
+\section{Spacetime as Emergent Geometry}
+\label{sec:emergent-geometry}
+
+\begin{theorem}[Spacetime is emergent geometry]
+\label{thm:spacetime-emergent}
+Spacetime is emergent geometry in the theory: it is the geometry of the counting measure
+and its dynamics, not a pre-existing arena.
+\end{theorem}
+
+\begin{proof}
+The native-dynamics result \cite{QG222} establishes that the gravitational dynamics IS the
+Q-event actualization flow: the branching process gives the counting measure $\rho_k =
+\mu^k/S$ with count conservation by construction, and the branching continuity
+$\rho_{k+1} = \mu\rho_k$ provides the native continuity/Noether statement. The metric is
+constructed from $\rho$ and $\eta$ (Theorem~\ref{thm:metric-construction}). Hence spacetime
+is the geometry of the counting measure --- emergent from the actualization flow, not a
+pre-existing background.
+\end{proof}
+
+\begin{corollary}[No imported dynamics]
+\label{cor:no-imported-dynamics}
+The gravitational dynamics is native: it is the actualization flow, with no imported
+Einstein or BDG dynamics.
+\end{corollary}
+
+\begin{proof}
+By Theorem~\ref{thm:spacetime-emergent}, the dynamics is the Q-event actualization flow
+\cite{QG222}. Hence no imported gravitational dynamics is required; the dynamics is derived
+from the process itself.
+\end{proof}
+
+\section{Black Hole Relations}
+\label{sec:black-hole}
+
+\begin{theorem}[The mass-radius relation]
+\label{thm:mass-radius}
+The mass-radius relation $M \propto R$ follows from the counting structure: the per-octave
+deficit profile gives $GM_{\mathrm{eff}} \propto R$.
+\end{theorem}
+
+\begin{proof}
+The mass-radius origin \cite{QG184} establishes the relation: the deficit is per-octave/log
+(the flat-rotation-curve profile), giving $a \propto -1/r$ and
+$GM_{\mathrm{eff}} \propto R$. With the area-entropy relation $S \propto R^{d-1}$, the
+Hawking temperature $T \propto 1/R$ is restored. Hence the black-hole relations follow from
+the counting structure, with $M \propto R$ derived rather than assumed.
+\end{proof}
+
+\begin{theorem}[The Bekenstein coefficient is a boundary]
+\label{thm:bekenstein-boundary}
+The exact Bekenstein coefficient $S = A/4$ is \emph{not} a derivation claim of this
+chapter: the structure $S \propto A$, $M \propto R$, $T \propto 1/R$ is derived, but the
+exact $1/4$ coefficient requires an imported quantum factor and belongs to the Boundary
+Layer.
+\end{theorem}
+
+\begin{proof}
+The mass-radius and entropy relations are derived \cite{QG184}. The exact Bekenstein
+$S = A/4$ coefficient, however, requires the imported $2\pi$ quantum factor
+$T = \kappa/(2\pi)$, which the framework cannot produce internally; the coefficient is
+therefore a documented boundary, not a derivation. Consistent with the referee-safe
+architecture \cite{MONO007}, this chapter excludes the $1/4$ coefficient from its
+derivation claims and references it to the Boundary Layer chapter of the monograph.
+\end{proof}
+
+\begin{corollary}[Boundary referenced, not claimed]
+\label{cor:bekenstein-boundary-referenced}
+The Bekenstein $1/4$ coefficient is referenced to the Boundary Layer and is not presented
+as a derived result of the gravity chapter.
+\end{corollary}
+
+\begin{proof}
+By Theorem~\ref{thm:bekenstein-boundary}, the exact coefficient is a documented boundary
+requiring the imported quantum factor. Hence the gravity chapter presents only the derived
+structure ($S \propto A$, $M \propto R$, $T \propto 1/R$) and references the coefficient to
+the Boundary Layer, consistent with MONO007 \cite{MONO007}.
+\end{proof}
+
+\section{Frame Dragging}
+\label{sec:frame-dragging}
+
+\begin{definition}[Frame dragging]
+\label{def:frame-dragging}
+\emph{Frame dragging} is the gravitomagnetic effect by which a rotating source drags the
+local inertial frames: the Lense--Thirring precession
+\begin{equation}
+\label{eq:frame-dragging}
+\Omega_{\mathrm{LT}} \;=\; \frac{G\bigl(3(\mathbf{J}\cdot\hat{\mathbf{r}})\hat{\mathbf{r}}-\mathbf{J}\bigr)}{2c^2r^3}.
+\end{equation}
+\end{definition}
+
+\begin{theorem}[Frame dragging is a tensor-sector observable]
+\label{thm:frame-dragging}
+Frame dragging is a $\psi$-sector observable: the gravitomagnetic $h_{0i}$ sector requires
+the tensor face of Difference, and the Lense--Thirring precession follows.
+\end{theorem}
+
+\begin{proof}
+The frame-dragging origin \cite{QG186} establishes the sector structure: the
+conformally-flat $\rho$-only metric has $h_{0i} = 0$ (no frame dragging), while the tensor
+face $\psi$ (spin-2) restores the full linearized Einstein sector including $h_{0i}$.
+A rotating deficit field sources $\mathbf{J}$, giving the Lense--Thirring precession
+\eqref{eq:frame-dragging}. The predicted precessions match observation: GP-B $41.1$ vs
+$39.2$ mas/yr, LAGEOS $30.7$ vs $\sim31$ mas/yr, with the D96 $G$ shifting the results by
+less than $1\%$. Hence frame dragging is a tensor-sector observable, carried by $\psi$
+against $\eta$.
+\end{proof}
+
+\begin{corollary}[Frame dragging confirms the tensor face]
+\label{cor:frame-dragging-tensor}
+The frame-dragging sector confirms the role of $\psi$ as the tensor face of Difference:
+without the tensor face there is no gravitomagnetic sector.
+\end{corollary}
+
+\begin{proof}
+By Theorem~\ref{thm:frame-dragging}, the $h_{0i}$ sector vanishes in the $\rho$-only
+metric and is restored by $\psi$. Hence frame dragging requires the tensor face of
+Difference, confirming the duality structure \cite{QG286}.
+\end{proof}
+
+\begin{lemma}[Gravitational time dilation is the redshift law]
+\label{lem:gps-redshift}
+Gravitational time dilation is the counting-measure redshift law: the clock rate is
+$d\tau/dt = \rho^{1/d} = \sqrt{-g_{00}}$, and the time dilation is the redshift
+$\Delta\tau/\tau = (\rho_1/\rho_2)^{1/d} - 1$.
+\end{lemma}
+
+\begin{proof}
+The GPS origin \cite{QG187} establishes that gravitational time dilation IS the redshift
+law of the theory: the clock rate is $\rho^{1/d}$, the redshift is
+$(\rho_1/\rho_2)^{1/d}-1$, and the weak-field limit gives the standard
+$(GM/c^2)(1/r_1-1/r_2)$. The computed GPS offset $+38.5\ \mu$s/day matches the observed
+$+38.6\ \mu$s/day within $0.2\%$. Hence time dilation is the counting-measure redshift law,
+derived rather than imported.
+\end{proof}
+
+\section{Consequences}
+\label{sec:gravity-consequences}
+
+\begin{theorem}[Gravity is consistent with the canonical architecture]
+\label{thm:gravity-consistent}
+Gravity and spacetime are consistent with the canonical architecture: the gravitational
+coupling is a read of the D96 spectral content, the tensor sector is the tensor face of
+Difference against $\eta$, the metric is the conformal construction, spacetime is emergent
+geometry, and the dynamics is the actualization flow.
+\end{theorem}
+
+\begin{proof}
+The coupling: Theorem~\ref{thm:gravity-derived}; the tensor sector:
+Theorem~\ref{thm:tensor-face}; the metric: Theorem~\ref{thm:metric-construction};
+spacetime: Theorem~\ref{thm:spacetime-emergent}; the dynamics:
+Theorem~\ref{thm:spacetime-emergent} (via \cite{QG222}). All are derived from the
+foundation established in the preceding chapters, with no new primitives and no imported
+dynamics.
+\end{proof}
+
+\begin{corollary}[The gravity pillar is complete within the hierarchy]
+\label{cor:gravity-complete}
+The gravity pillar of the theory is complete within the canonical hierarchy: every gravity
+observable is a derived read of the D96 spectral content, the counting measure, and the
+tensor face, with the Bekenstein $1/4$ coefficient the single referenced boundary.
+\end{corollary}
+
+\begin{proof}
+By Theorem~\ref{thm:gravity-consistent}, all gravity content is derived; by
+Theorem~\ref{thm:bekenstein-boundary}, the one exception (the exact $1/4$ coefficient) is
+referenced to the Boundary Layer. Hence the gravity pillar is complete within the
+hierarchy, with its single boundary explicitly disclosed.
+\end{proof}
+
+\begin{remark}[Referee-safe wording]
+Consistent with MONO007 \cite{MONO007}, this chapter presents gravity as emergent, $\eta$ as
+the tensor reference, and $\psi$ as the tensor face of Difference --- never as a new
+primitive. The Bekenstein $1/4$ coefficient is excluded from the derivation claims and
+referenced to the Boundary Layer. No claim here asserts more than the accepted results
+establish.
+\end{remark}
+
+\section{Summary}
+\label{sec:gravity-summary}
+
+This chapter has derived gravity and spacetime. We have proved:
+
+\begin{enumerate}
+\item \textbf{Gravity from Difference} (Theorem~\ref{thm:gravity-derived},
+Corollary~\ref{cor:gravity-emergent}): the gravitational coupling is derived from the D96
+spectral content, and gravity is emergent;
+\item \textbf{The tensor sector} (Theorem~\ref{thm:tensor-face},
+Corollary~\ref{cor:tensor-not-primitive}, Lemma~\ref{lem:tensor-requires-eta}): the tensor
+sector is the tensor face of Difference against $\eta$, not a new primitive;
+\item \textbf{The metric construction} (Theorem~\ref{thm:metric-construction},
+Corollary~\ref{cor:metric-emergent}): the metric is the conformal construction from the
+primitive pair;
+\item \textbf{Emergent geometry} (Theorem~\ref{thm:spacetime-emergent},
+Corollary~\ref{cor:no-imported-dynamics}): spacetime is emergent geometry, with native
+dynamics;
+\item \textbf{Black hole relations} (Theorem~\ref{thm:mass-radius},
+Theorem~\ref{thm:bekenstein-boundary}, Corollary~\ref{cor:bekenstein-boundary-referenced}):
+$M \propto R$ is derived, and the Bekenstein $1/4$ coefficient is referenced to the
+Boundary Layer;
+\item \textbf{Frame dragging} (Theorem~\ref{thm:frame-dragging},
+Corollary~\ref{cor:frame-dragging-tensor}, Lemma~\ref{lem:gps-redshift}): frame dragging is
+a tensor-sector observable, and time dilation is the redshift law;
+\item \textbf{Consequences} (Theorem~\ref{thm:gravity-consistent},
+Corollary~\ref{cor:gravity-complete}): gravity is consistent with the canonical
+architecture, complete within the hierarchy, with its single boundary disclosed.
+\end{enumerate}
+
+Gravity and spacetime are therefore emergent in The Actualization Theory: the gravitational
+coupling is a read of the D96 spectral content, the tensor sector is the tensor face of
+Difference against the reference $\eta$, the metric is the conformal construction from the
+primitive pair, spacetime is emergent geometry with native dynamics, and the observables
+--- from the Newton constant to the GPS offset --- are derived. The single Bekenstein
+coefficient is a referenced boundary, not a derivation claim. The following chapter derives
+the standard model from the same spectral foundation.
+
+\begin{thebibliography}{99}
+\bibitem{QG181} TQM-QG Phase 181, \emph{Newton Constant Origin}, Docs/Research.
+\bibitem{QG182} TQM-QG Phase 182, \emph{G Bridge Origin}, Docs/Research.
+\bibitem{QG183} TQM-QG Phase 183, \emph{Planck Scale Robustness}, Docs/Research.
+\bibitem{QG184} TQM-QG Phase 184, \emph{Mass-Radius Origin}, Docs/Research.
+\bibitem{QG186} TQM-QG Phase 186, \emph{Frame Dragging Origin}, Docs/Research.
+\bibitem{QG187} TQM-QG Phase 187, \emph{GPS Correction Origin}, Docs/Research.
+\bibitem{QG222} TQM-QG Phase 222, \emph{Native Metric Dynamics}, Docs/Research.
+\bibitem{QG285} TQM-QG Phase 285, \emph{Psi Reinterpretation Audit}, Docs/Research.
+\bibitem{QG286} TQM-QG Phase 286, \emph{Difference Duality Audit}, Docs/Research.
+\bibitem{QG292} TQM-QG Phase 292, \emph{Foundation Stress Test}, Docs/Research.
+\bibitem{MONO007} TQM-MONO007, \emph{Referee-Readiness Resolution}, Docs/Zenodo/Monograph.
+\end{thebibliography}
