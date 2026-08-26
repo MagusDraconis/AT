@@ -1,10 +1,10 @@
-# TQM-127: Emergent Collective Charge Waves
+# AT-127: Emergent Collective Charge Waves
 
 ## Executive Summary
 
 **Classification: C — Collective Charge Waves**
 
-TQM-127 investigates whether large ensembles of Q=+1 charge quanta
+AT-127 investigates whether large ensembles of Q=+1 charge quanta
 develop collective wave behavior absent at low density. Density scans
 from Q=1 to Q=50 (ρ_Q = 0.01 to 0.50) with random and lattice layouts
 confirm:
@@ -45,13 +45,13 @@ R_Q increases monotonically with charge density:
 The transition is a CROSSOVER, not a sharp phase transition at
 tested N=300. Larger N may sharpen the transition.
 
-## 4. Comparison to Earlier TQM
+## 4. Comparison to Earlier AT
 
-| TQM | Regime | Q range | Behavior |
+| AT | Regime | Q range | Behavior |
 |-----|--------|---------|----------|
-| TQM-123 | Dilute gas | Q<10 | Independent charges |
-| TQM-126 | Pairwise | Q=2 | cos(Δφ) interference |
-| TQM-127 | Collective | Q≥20 | Macroscopic wave medium |
+| AT-123 | Dilute gas | Q<10 | Independent charges |
+| AT-126 | Pairwise | Q=2 | cos(Δφ) interference |
+| AT-127 | Collective | Q≥20 | Macroscopic wave medium |
 
 ## 5. Conclusion
 

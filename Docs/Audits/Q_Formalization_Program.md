@@ -2,7 +2,7 @@
 
 **Goal:** upgrade $Q$ from **Partially Formalized** to **Fully Formalized** by specifying
 the eight formal components and identifying what is missing for each.
-**Inputs:** `FoundationFormalization.md`, `TQM_v1_0_Paper_Revision.md`, `Docs/Theory/03_Q_Theory.md`,
+**Inputs:** `FoundationFormalization.md`, `AT_v1_0_Paper_Revision.md`, `Docs/Theory/03_Q_Theory.md`,
 `Docs/Theory/02_Fundamental_Postulates.md`, `Docs/Theory/04_Q_Networks_and_Laplacian.md`.
 **Discipline:** no new physics — formalization of existing results only.
 
@@ -54,7 +54,7 @@ $[0,L]^N\times(S^1)^N$. What is **missing**:
 - the **quotient by $S_N$** — the quanta are identical topological charges, so the
   configuration space should be the orbifold $([0,L]^N\times(S^1)^N)/S_N$;
 - **boundary conditions** (open interval vs. ring $[0,L]/\sim$, which changes the
-  spectrum; the ring is already used in TQM-143).
+  spectrum; the ring is already used in AT-143).
 
 **Difficulty:** Low — a standard bookkeeping specification.
 
@@ -67,7 +67,7 @@ for phases $\theta_i\in S^1$. The measure determines the ensemble of graphs and 
 spectrum statistics.
 
 **Difficulty:** Medium — standard, but it must be chosen to respect the locality
-requirement (TQM-143: only locally-connected graphs yield discrete species).
+requirement (AT-143: only locally-connected graphs yield discrete species).
 
 ### 2.4 State space — Present
 

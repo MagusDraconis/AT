@@ -12,7 +12,7 @@ where:
 - **r** = intrinsic reproduction rate (offspring per individual per generation)
 - **c** = total resource consumption (resource units per individual)
 
-This is the **Fundamental Information Fitness Law** (TQM-136).
+This is the **Fundamental Information Fitness Law** (AT-136).
 It determines which species survive and which go extinct under
 resource constraints in the Theta information layer.
 
@@ -70,16 +70,16 @@ Evolution maximizes fitness. Under the fitness law w = r/c:
 - Trade-off: higher r typically requires higher c (more complex patterns need more resources)
 - Optimum: maximum r/c ratio within physically realizable pattern space
 
-This explains TQM-135's counterintuitive result: Species D has the
+This explains AT-135's counterintuitive result: Species D has the
 highest reproduction rate (r=0.12) but is NOT the fittest, because
 its high consumption (c=19.0) drags down its r/c ratio.
 
 ### 3. Empirical Validation
 
-#### 3.1 TQM-136 Candidate Evaluation
+#### 3.1 AT-136 Candidate Evaluation
 
 19 candidate fitness functions were evaluated against observed
-selection outcomes from TQM-135:
+selection outcomes from AT-135:
 
 | Candidate | Spearman ρ | Rank |
 |-----------|-----------|------|
@@ -175,13 +175,13 @@ while information fitness explicitly normalizes by resource consumption.
 
 ### 7. Implications
 
-#### 7.1 For TQM
+#### 7.1 For AT
 
 The fitness law completes the theoretical framework of Theta evolution:
-- Species exist (TQM-133)
-- Species reproduce (TQM-134)
-- Species undergo selection (TQM-135)
-- Selection follows a universal law (TQM-136)
+- Species exist (AT-133)
+- Species reproduce (AT-134)
+- Species undergo selection (AT-135)
+- Selection follows a universal law (AT-136)
 
 The eight-level hierarchy is now a closed theoretical system.
 

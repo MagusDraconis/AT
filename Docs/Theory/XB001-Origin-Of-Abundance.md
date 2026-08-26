@@ -2,7 +2,7 @@
 
 ## Motivation
 
-TQM-X065b discovered a fundamental split in physical questions:
+AT-X065b discovered a fundamental split in physical questions:
 
 | Category | Question | Mechanism | Success Rate |
 |----------|----------|-----------|:--:|
@@ -73,5 +73,5 @@ Observe: One sample (our universe's values)
 
 ## Classification: D — Abundance identified as its own physical category
 
-ResearchXB is a new branch of TQM investigating "How much exists?"
+ResearchXB is a new branch of AT investigating "How much exists?"
 as a fundamentally different question from "What exists?"

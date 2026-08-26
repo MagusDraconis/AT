@@ -1,0 +1,87 @@
+@page "/research-news"
+
+<PageTitle>Research News · AT</PageTitle>
+@inject ValidationDataService ValidationDataService
+
+<h2 class="section-heading">Research News</h2>
+<p class="muted">Latest breakthroughs from the AT-QG unification program.</p>
+
+@if (_coverage is null)
+{
+    <MudProgressCircular Indeterminate="true" Size="Size.Medium" Class="mt-4" />
+}
+else
+{
+    <div class="stat-row mb-4">
+        <div class="stat-tile">
+            <div class="stat-value" style="color:#4DD0E1">@_coverage.Coverage.TotalPhases</div>
+            <div class="stat-label">AT-QG Phases</div>
+        </div>
+        <div class="stat-tile">
+            <div class="stat-value" style="color:#81C784">@_coverage.Coverage.Tested</div>
+            <div class="stat-label">Tested</div>
+        </div>
+        <div class="stat-tile">
+            <div class="stat-value" style="color:#FFB74D">@_coverage.Coverage.Partial</div>
+            <div class="stat-label">Partial</div>
+        </div>
+        <div class="stat-tile">
+            <div class="stat-value" style="color:#64B5F6">@(_coverage.Coverage.WeightedCoverage.ToString("P1", System.Globalization.CultureInfo.InvariantCulture))</div>
+            <div class="stat-label">Weighted coverage</div>
+        </div>
+    </div>
+
+    @if (_coverage.RecentFindings.Count > 0)
+    {
+        <div class="page-section">
+            <h2 class="section-heading">Latest Phases</h2>
+            <p class="muted">The most recent AT-QG phases, auto-updated from the coverage JSON.</p>
+            <MudGrid Spacing="3">
+                @foreach (var f in _coverage.RecentFindings)
+                {
+                    <MudItem xs="12" sm="6" lg="4">
+                        <MudCard Elevation="1" Class="theory-card h-100">
+                            <MudCardContent>
+                                <MudText Typo="Typo.caption" Class="text-uppercase fw-bold muted">AT-QG @((int)f.Phase) · @f.Classification</MudText>
+                                <MudText Typo="Typo.subtitle1" Class="fw-bold mt-1">@f.Title</MudText>
+                                <MudText Typo="Typo.body2" Class="muted mt-2">@f.Summary</MudText>
+                                <div class="mt-3">
+                                    <span class="badge @BadgeClassFor(f.Validation)">@f.Validation</span>
+                                    <span class="badge badge-neutral">@f.Domain</span>
+                                </div>
+                                <MudButton Variant="Variant.Text" Color="Color.Primary" Href="@f.ReportUrl"
+                                           Target="_blank" Rel="noopener" Class="mt-2 px-0" Size="Size.Small">
+                                    Report <i class="bi bi-box-arrow-up-right"></i>
+                                </MudButton>
+                            </MudCardContent>
+                        </MudCard>
+                    </MudItem>
+                }
+            </MudGrid>
+        </div>
+    }
+
+    @foreach (var item in AtlasDataService.ResearchNews)
+    {
+        <ResearchNewsCard Item="@item" />
+    }
+}
+
+@code {
+    private PhysicsCoverageFile? _coverage;
+
+    /// <summary>Maps a phase validation status to a badge CSS class.</summary>
+    private static string BadgeClassFor(string validation)
+        => validation switch
+        {
+            "tested" => "badge-derived",
+            "partial" => "badge-partial",
+            "audit" => "badge-compatible",
+            _ => "badge-neutral",
+        };
+
+    protected override async Task OnInitializedAsync()
+    {
+        _coverage = await ValidationDataService.GetCoverageAsync();
+    }
+}

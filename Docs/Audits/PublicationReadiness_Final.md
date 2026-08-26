@@ -1,6 +1,6 @@
 # Publication Readiness — Final Audit
 
-**Inputs:** `TQM_v1_0_Paper_Revision.md`, `HostileReview.txt`, `PeerReview_Round2.md`,
+**Inputs:** `AT_v1_0_Paper_Revision.md`, `HostileReview.txt`, `PeerReview_Round2.md`,
 `HostileReviewResponse.md`, and all formalization programs (Q, Random Actualization,
 Continuum Limit, Quantum-Gravity Bridge, Metric Operator, Laplace-Beltrami, Curved
 Schrödinger, Einstein Tensor, Metric Emergence, Metric Origin Closure).
@@ -49,7 +49,7 @@ chain piece by piece:
 
 **Result:** the *Schrödinger* side of the continuum limit is now **controlled and tested**.
 The *Einstein* side is **partially** verified: the standard $g\to G_{\mu\nu}$ chain works
-(`EinsteinTensorBuilder`), but TQM has **no native metric** — $g_{\mu\nu}$ arrives via the
+(`EinsteinTensorBuilder`), but AT has **no native metric** — $g_{\mu\nu}$ arrives via the
 external Malament/HKM theorem, and the BDG action (which produces the Einstein–Hilbert
 action) is likewise imported. Newton's constant $G=\ell^2 c^3/\hbar$ is dimensional analysis,
 now honestly labeled as such (§15).
@@ -59,10 +59,10 @@ now honestly labeled as such (§15).
 ## 3. The residual open sub-component
 
 The single genuinely-open piece is the **native metric → operator coupling** (the "G4" gap
-from `CurvedSpaceProgram.md`): TQM does not produce $g_{\mu\nu}$ from Q-events; it imports
+from `CurvedSpaceProgram.md`): AT does not produce $g_{\mu\nu}$ from Q-events; it imports
 it. `MetricOriginTests` closed the *origin* question (the Malament import is a **proven
 theorem**, not a gap), but the *dynamics* still flow through imported causal-set gravity
-(BDG), not a TQM-native derivation.
+(BDG), not a AT-native derivation.
 
 This is a **theory limit**, not a documentation gap, and the paper now discloses it
 (§9 honesty note; §15 limitations 1, 5, 7).
@@ -83,8 +83,8 @@ Reasoning:
   verified by passing xUnit tests. This converts the "tree of English phrases" objection
   into a concrete, reproducible dynamical system.
 - **But the central derivation claim remains "logical, not mathematical"** at the Einstein
-  boundary: the metric and the BDG action are imported (proven, but not TQM-derived), $G$ is
-  dimensional analysis, and no unique, sharp prediction discriminates TQM from
+  boundary: the metric and the BDG action are imported (proven, but not AT-derived), $G$ is
+  dimensional analysis, and no unique, sharp prediction discriminates AT from
   SM + $\Lambda$CDM (RAR $2\pi$ is admitted accidental; $w(z)$ is a small, not-yet-detected
   deviation). These are **theory limits**, not presentational defects.
 
@@ -99,8 +99,8 @@ explicitly-flagged open items — exactly what the revised manuscript now is.
 ## 5. What would move it to READY_FOR_JOURNAL
 
 1. A **native** $g_{\mu\nu}$ (metric → operator coupling, G4) — replacing the Malament import
-   with a TQM computation, or
-2. A **unique, sharp, currently-testable** prediction that discriminates TQM from
+   with a AT computation, or
+2. A **unique, sharp, currently-testable** prediction that discriminates AT from
    SM + $\Lambda$CDM (e.g., a quantitative Einstein-correction signal, not an ontological
    reinterpretation), or
 3. A **native re-derivation of the BDG action** from Q-event primitives (currently the single

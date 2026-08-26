@@ -1,4 +1,4 @@
-# TQM-139 Information Attractor Landscape Topology
+# AT-139 Information Attractor Landscape Topology
 
 ## SCIENTIFIC REPORT
 
@@ -16,18 +16,18 @@ species.
 - **2 hub attractors** — some species are central to connectivity
 - **13 bottleneck attractors** — all species are critical to some path
 - **Diameter: 2** — any species reachable in ≤ 2 transitions
-- **Finite landscape CONFIRMED** — explains TQM-138's innovation saturation
+- **Finite landscape CONFIRMED** — explains AT-138's innovation saturation
 - **Null hypothesis REJECTED** — landscape has structural topology
 
 ---
 
-## 1. TQM-138 Recap
+## 1. AT-138 Recap
 
-TQM-138 discovered ~19 species through long-term evolution, with
+AT-138 discovered ~19 species through long-term evolution, with
 saturation at index 0.82. Innovation is bounded — the landscape
 is finite.
 
-TQM-139 asks: **WHY**? What is the underlying topology that produces
+AT-139 asks: **WHY**? What is the underlying topology that produces
 this finite catalog?
 
 ---
@@ -95,9 +95,9 @@ V(p) = Σ w_k · exp(-||p - center_k||²/2σ²) - α·smoothness(p) + β·roughn
 
 ---
 
-## 4. Consistency with TQM-138
+## 4. Consistency with AT-138
 
-| TQM-138 Prediction | TQM-139 Observation | Match? |
+| AT-138 Prediction | AT-139 Observation | Match? |
 |-------------------|-------------------|--------|
 | ~19 species | 13 species | Close (±6) |
 | Finite landscape | Finite landscape | ✓ |
@@ -105,8 +105,8 @@ V(p) = Σ w_k · exp(-||p - center_k||²/2σ²) - α·smoothness(p) + β·roughn
 | Complexity growth | Rugged landscape | ✓ |
 
 The attractor count (13 vs ~19) is close but not exact. This is expected —
-TQM-138's 15 unique species were discovered through evolutionary exploration
-at specific parameters, while TQM-139 maps the general attractor landscape.
+AT-138's 15 unique species were discovered through evolutionary exploration
+at specific parameters, while AT-139 maps the general attractor landscape.
 
 ---
 
@@ -127,11 +127,11 @@ Theta field dynamics.
 
 | Attack | Verdict |
 |--------|---------|
-| Attractor count an artifact? | 13 is close to TQM-138's ~19 — plausible |
+| Attractor count an artifact? | 13 is close to AT-138's ~19 — plausible |
 | Basins just noise clusters? | Diverse basin sizes — real structure |
 | Transition graph meaningful? | 5 components, 2 hubs, 13 bottlenecks — structure |
 | Potential physics-based? | All terms have Theta justification |
-| Match TQM-138? | CONSISTENT (±6 species) |
+| Match AT-138? | CONSISTENT (±6 species) |
 | Hub species real? | 2 hubs detected |
 | Null hypothesis? | **REJECTED** — landscape has structure |
 
@@ -158,7 +158,7 @@ Theta field dynamics.
 
 **THE ATTRACTOR LANDSCAPE IS FINITE AND STRUCTURED.**
 
-The ~19 species observed in TQM-138 are NOT random — they arise from
+The ~19 species observed in AT-138 are NOT random — they arise from
 a fundamental landscape topology determined by the Fourier eigenmode
 structure of the Theta field. The landscape is **modular** (5 components),
 has **central hubs** (2 species), and is **fully traversable** (diameter 2).
@@ -184,5 +184,5 @@ Innovation → **Landscape Topology**
 
 ---
 
-*Experiment TQM-139 completed. Landscape topology discovered.*
+*Experiment AT-139 completed. Landscape topology discovered.*
 *Finite attractor landscape explains bounded innovation.*

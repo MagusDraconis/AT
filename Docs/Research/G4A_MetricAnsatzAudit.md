@@ -61,7 +61,7 @@ The ansatz g = ρ^(2/d)η is **PREFERRED**, not UNIQUE and not merely ASSUMED:
 - **The exponent k = 2/d is UNIQUE** — uniquely forced by the counting-measure requirement √(−g) = ρ.
 - **Conformal flatness (η) is ASSUMED** — √(−g)=ρ fixes only det g; a non-flat metric with the same
   volume element is physically distinct.
-- **It is PREFERRED because ρ is the only scalar available** (minimality): with no ψ-field primitive in TQM,
+- **It is PREFERRED because ρ is the only scalar available** (minimality): with no ψ-field primitive in AT,
   the metric built from ρ alone is the conformal factor times the vacuum representative η.
 
 ---
@@ -72,7 +72,7 @@ The metric ansatz is *half derived, half assumed*. The scaling exponent 2/d is u
 derived from the single natural requirement that the counting measure is the invariant volume element
 (√(−g) = ρ). But the conformally-flat form (the flat representative η) is an additional, minimality-based
 assumption — not mathematically forced, since the volume element alone leaves d(d+1)/2 − 1 metric functions
-free. Within TQM's "ρ is the only scalar" constraint this is the natural (preferred) choice, but it is a
+free. Within AT's "ρ is the only scalar" constraint this is the natural (preferred) choice, but it is a
 genuine assumption of the framework, not a theorem.
 
 ---
@@ -85,5 +85,5 @@ genuine assumption of the framework, not a theorem.
 | G4-A01 `G4_A01_ScaleInvarianceNonSelective` | PASS (scale invariance k-independent) |
 | G4-A02 `G4_A02_ConformalFlatnessAssumption` | PASS (non-flat metric, same √(−g), different a) |
 
-Code: `TQM.Core/ResearchXH/MetricAnsatzAudit.cs`;
-tests `TQM.Tests/ResearchXH/G4A_Phase0_MetricAnsatzAuditTests.cs`.
+Code: `AT.Core/ResearchXH/MetricAnsatzAudit.cs`;
+tests `AT.Tests/ResearchXH/G4A_Phase0_MetricAnsatzAuditTests.cs`.

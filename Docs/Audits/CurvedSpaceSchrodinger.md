@@ -25,7 +25,7 @@ the *Riemannian/Euclidean* operator.
 
 ## 2. Comparison of the three operators
 
-| Operator | Definition | Curved? | Signature | Status in TQM |
+| Operator | Definition | Curved? | Signature | Status in AT |
 |---|---|---|---|---|
 | Graph Laplacian $L_Q=D-A$ | combinatorial Laplacian | no (graph) | Riemannian (symmetric) | **Present** (the $Q$ operator) |
 | Discrete Laplace operator | finite-difference $\nabla^2$ | no | Riemannian | **Present** ($L_Q\to-d^2/dx^2$ on a lattice) |

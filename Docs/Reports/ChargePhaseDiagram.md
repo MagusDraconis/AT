@@ -1,6 +1,6 @@
 # Charge Phase Diagram
 
-## TQM-123: Density × Coupling Phase Diagram for Proto-Matter
+## AT-123: Density × Coupling Phase Diagram for Proto-Matter
 
 ### Abstract
 
@@ -35,7 +35,7 @@ charge merger rate γ.
 
 ### Phase Boundaries
 
-1. **Vacuum ↔ Gas**: K_c ≈ D_R/(c₀·w²·λ²·40·N) — nucleation threshold (TQM-118)
+1. **Vacuum ↔ Gas**: K_c ≈ D_R/(c₀·w²·λ²·40·N) — nucleation threshold (AT-118)
 2. **Dilute Gas ↔ Correlated Gas**: d_typ ~ 5λ — coupling range crossover
 3. **Correlated Gas ↔ Cluster**: ρ_Q threshold for percolation on coupling graph (~0.08 at tested N)
 4. **Cluster ↔ Percolating**: clusters merge into system-spanning network at ρ_Q ~ 0.15
@@ -46,15 +46,15 @@ charge merger rate γ.
 | Boundary | Critical Value | Physical Meaning |
 |----------|---------------|------------------|
 | K_c (nucleation) | ~0.5-2.0 | Coupling needed for charge creation |
-| ρ_perc (percolation) | ~0.09 | TQM-006's ρc reinterpreted |
+| ρ_perc (percolation) | ~0.09 | AT-006's ρc reinterpreted |
 | ρ_dense | ~0.30 | Near-complete condensation |
 
-### Relationship to TQM-006
+### Relationship to AT-006
 
-TQM-006's critical density ρc ≈ 0.09 is the PERCOLATION THRESHOLD
+AT-006's critical density ρc ≈ 0.09 is the PERCOLATION THRESHOLD
 of the charge network. Below ρc: vacuum or dilute gas. Above ρc:
 charges nucleate and, at sufficient density, form a percolating
-network. The TQM-006 phase diagram is the R-axis projection of
+network. The AT-006 phase diagram is the R-axis projection of
 the full (ρ_Q, K) phase diagram.
 
 ### Universality

@@ -3,7 +3,7 @@
 **Goal:** determine whether all remaining "3" problems are manifestations of **one**
 unresolved node.
 **Inputs:** Phase 149 (Gauge), Phase 150 (Multiplicity), Phase 151 (Upper Bound),
-the m=3 closure audits, `TQM_Encyclopedia.md`.
+the m=3 closure audits, `AT_Encyclopedia.md`.
 **Discipline:** no new primitives, no numerology — only accepted audits.
 
 ---

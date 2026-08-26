@@ -37,7 +37,7 @@ $$\Theta_1 = -\frac{3\,\Theta_0'}{k}$$
 |---|---|
 | Differential equations | 2 (first-order form of $\Theta_0$ oscillator) |
 | Algebraic | $\Theta_1$, $c_s$, $R$, $H(a)$ |
-| Free TQM parameters | 0 |
+| Free AT parameters | 0 |
 | Imported constants | $\Omega_b,\Omega_\gamma,\Omega_m,\Omega_r,z_*$ |
 
 ---
@@ -90,5 +90,5 @@ compression** at $\ell\approx336$ with an $\sim1.9\times$ acoustic enhancement
 over the plateau. The remaining gap to Planck's $\ell_1\approx220$ is the Doppler
 term + Bessel projection, the next (and last) module in the CMB chain.
 
-**Sources:** `TQM.Core/ResearchDATA/AcousticOscillatorAnalyzer.cs`,
-`TQM.Tests/ResearchDATA/TQM_AcousticOscillatorAudit.cs`.
+**Sources:** `AT.Core/ResearchDATA/AcousticOscillatorAnalyzer.cs`,
+`AT.Tests/ResearchDATA/AT_AcousticOscillatorAudit.cs`.

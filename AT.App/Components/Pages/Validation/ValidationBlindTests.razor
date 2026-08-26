@@ -1,0 +1,133 @@
+@page "/validation/blind-tests"
+
+<PageTitle>Blind Tests · Validation · AT</PageTitle>
+
+<ValidationHeader />
+
+<div class="page-section">
+    <h3 class="section-heading">Blind Reconstruction Tests</h3>
+    <p class="muted">Targets explicitly hidden and rebuilt from the primitive base only. A blind reconstruction is the strongest available evidence against post-hoc fitting: the target value is never read as an input.</p>
+
+    <MudCard Elevation="1" Class="theory-card mb-4">
+        <MudCardContent>
+            <MudText Typo="Typo.subtitle1" Class="fw-bold">Why blind tests matter</MudText>
+            <MudText Typo="Typo.body2" Class="muted mt-2">
+                A physical theory must reproduce known measurements without directly using them. A model that
+                reads a measured value back into its own inputs reproduces that value by construction — that is
+                fitting, not prediction. The two phases below hide the observable completely and rebuild it
+                from the remaining D96 quantities. If the hidden value still emerges with small deviation, the
+                framework is doing predictive work rather than echoing its own inputs.
+            </MudText>
+        </MudCardContent>
+    </MudCard>
+
+    <div class="page-section">
+        <h3 class="section-heading">QG176 — Higgs blind reconstruction</h3>
+        <MudGrid Spacing="3">
+            <MudItem xs="12" md="6">
+                <MudCard Elevation="1" Class="theory-card h-100">
+                    <MudCardContent>
+                        <MudText Typo="Typo.subtitle2" Class="muted mb-2">Hidden observables</MudText>
+                        <span class="status-chip status-untested me-2">M_H</span>
+                        <span class="status-chip status-untested me-2">Γ_H</span>
+                        <span class="status-chip status-untested me-2">M_H/M_W</span>
+                        <span class="status-chip status-untested me-2">M_H/M_Z</span>
+                        <span class="status-chip status-untested me-2">λ_H from M_H</span>
+                        <MudText Typo="Typo.subtitle2" Class="muted mt-3 mb-2">Allowed inputs (pre-Higgs D96 only)</MudText>
+                        <span class="status-chip status-tested me-2">Σm</span>
+                        <span class="status-chip status-tested me-2">#doublets</span>
+                        <span class="status-chip status-tested me-2">Σ√m</span>
+                        <span class="status-chip status-tested me-2">span</span>
+                        <span class="status-chip status-tested me-2">λ₂</span>
+                        <span class="status-chip status-tested me-2">α_weak</span>
+                        <span class="status-chip status-tested me-2">M_W</span>
+                        <span class="status-chip status-tested me-2">M_Z</span>
+                    </MudCardContent>
+                </MudCard>
+            </MudItem>
+            <MudItem xs="12" md="6">
+                <MudCard Elevation="1" Class="theory-card h-100">
+                    <MudCardContent>
+                        <MudText Typo="Typo.subtitle1" Class="fw-bold">Reconstructed results</MudText>
+                        <div class="formula-block mt-2">
+                            <Latex Class="formula-line" Content="$$M_H = v \\cdot \\sqrt{\\lambda_2 \\cdot g_2} = 125.49\\,\\text{GeV}$$" />
+                            <Latex Class="formula-line" Content="$$M_H = \\sigma_{\\mathrm{occ}} \\cdot \\frac{\\mathrm{span}}{2} = 125.25\\,\\text{GeV}$$" />
+                        </div>
+                        <div class="result-row mt-2">
+                            <span class="result-label">Physical Higgs mass</span>
+                            <span class="result-value">125.25 GeV</span>
+                        </div>
+                        <div class="result-row">
+                            <span class="result-label">Deviation</span>
+                            <span class="result-value" style="color:#81C784">0.003%</span>
+                        </div>
+                        <MudText Typo="Typo.body2" Class="muted mt-2">
+                            No Higgs observable entered the computation; the hidden values were compared after.
+                        </MudText>
+                    </MudCardContent>
+                </MudCard>
+            </MudItem>
+        </MudGrid>
+    </div>
+
+    <div class="page-section">
+        <h3 class="section-heading">QG177 — Leave-one-out validation (12 observables)</h3>
+        <p class="muted">Each observable hidden completely and rebuilt from the remaining D96 primitive base.</p>
+
+        <MudTable Items="@_looItems" Hover="true" Dense="true">
+            <HeaderContent>
+                <MudTh>Observable</MudTh>
+                <MudTh>Prediction</MudTh>
+                <MudTh>Measurement</MudTh>
+                <MudTh>Deviation</MudTh>
+                <MudTh>Independence</MudTh>
+            </HeaderContent>
+            <RowTemplate>
+                <MudTd>@context.Name</MudTd>
+                <MudTd>@context.Prediction</MudTd>
+                <MudTd>@context.Measurement</MudTd>
+                <MudTd><span class="audit-dev dev-good">@context.Deviation</span></MudTd>
+                <MudTd><span class="status-chip status-tested">@context.Independence</span></MudTd>
+            </RowTemplate>
+        </MudTable>
+
+        <div class="stat-row mt-4">
+            <div class="stat-tile"><div class="stat-value" style="color:#81C784">0.58%</div><div class="stat-label">Mean deviation</div></div>
+            <div class="stat-tile"><div class="stat-value" style="color:#FFB74D">1.89%</div><div class="stat-label">Maximum deviation</div></div>
+            <div class="stat-tile"><div class="stat-value" style="color:#81C784">12 / 12</div><div class="stat-label">Within 2%</div></div>
+            <div class="stat-tile"><div class="stat-value" style="color:#4DD0E1">9</div><div class="stat-label">Fully independent</div></div>
+        </div>
+
+        <MudCard Elevation="1" Class="theory-card mt-4">
+            <MudCardContent>
+                <MudText Typo="Typo.body2" Class="muted">
+                    Result: <strong>INDEPENDENT</strong> — no observable required itself as an input. Three chains
+                    (M_Z, a_μ, Δm²31) use primitive-inlined canonical sequences rather than a pure primitive base;
+                    the other nine are fully independent reconstructions.
+                </MudText>
+            </MudCardContent>
+        </MudCard>
+    </div>
+</div>
+
+@code {
+    private sealed record LooRow(string Name, string Prediction, string Measurement, string Deviation, string Independence);
+
+    private IReadOnlyList<LooRow> _looItems = BuildLoo();
+
+    private static IReadOnlyList<LooRow> BuildLoo() =>
+    [
+        new("α_em", "1/137", "137.036", "0.03%", "INDEPENDENT"),
+        new("sin²θ_W", "0.2316", "0.2312", "0.17%", "INDEPENDENT"),
+        new("M_W", "80.12 GeV", "80.38 GeV", "0.32%", "INDEPENDENT"),
+        new("M_Z", "91.40 GeV", "91.19 GeV", "0.23%", "PRIMITIVE-INLINED"),
+        new("M_H", "125.25 GeV", "125.25 GeV", "0.003%", "INDEPENDENT"),
+        new("a_μ", "1.16644e-3", "1.16592e-3", "0.045%", "PRIMITIVE-INLINED"),
+        new("Δm²21", "7.607e-5", "7.53e-5", "1.02%", "INDEPENDENT"),
+        new("Δm²31", "2.44e-3", "2.453e-3", "0.71%", "PRIMITIVE-INLINED"),
+        new("V_us", "0.2211", "0.2253", "1.86%", "INDEPENDENT"),
+        new("V_cb", "0.0416", "0.0411", "1.22%", "INDEPENDENT"),
+        new("θ12", "33.35°", "33.4°", "0.16%", "INDEPENDENT"),
+        new("θ23", "49.72°", "49.1°", "1.26%", "INDEPENDENT"),
+    ];
+}

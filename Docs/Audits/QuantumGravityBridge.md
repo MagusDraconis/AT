@@ -15,7 +15,7 @@
 |---|---|---|---|---|
 | $L_Q$ | $D-A$ (combinatorial Laplacian) | all **positive** | **undirected** graph (spatial positions) | $-\nabla^2$ (Riemannian) |
 | $\Delta$ | $\nabla^2$ (flat Laplacian) | positive | continuum | $-\nabla^2$ |
-| $\Delta_g$ | $\frac1{\sqrt{|g|}}\partial_\mu(\sqrt{|g|}\,g^{\mu\nu}\partial_\nu)$ | positive | curved Riemannian | *(not derived in TQM)* |
+| $\Delta_g$ | $\frac1{\sqrt{|g|}}\partial_\mu(\sqrt{|g|}\,g^{\mu\nu}\partial_\nu)$ | positive | curved Riemannian | *(not derived in AT)* |
 | $\Box$ | $\partial_t^2-\nabla^2$ | **indefinite** (one $-$) | Lorentzian manifold | $\Box$ |
 | BDG | $\sum_k(-1)^{k+1}C(d{+}1,k)\sum_{y\in L_k}\varphi(y)$ | **alternating** signs | **directed** causal set (causal order) | $\Box$ |
 

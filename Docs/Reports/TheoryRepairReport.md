@@ -1,4 +1,4 @@
-# TQM-101: Theory Repair Report
+# AT-101: Theory Repair Report
 
 ## Date: 2026-08-04
 
@@ -14,13 +14,13 @@ The rejected {R, M} theory was repaired by replacing the linear equation with a 
 
 ## Repair Details
 
-### Original Theory (Rejected by TQM-100)
+### Original Theory (Rejected by AT-100)
 ```
 dR/dt = α₀ + α₁·R + α₂·M
 Survival: 1/8 (12%)
 ```
 
-### Repaired Theory (TQM-101)
+### Repaired Theory (AT-101)
 ```
 dR/dt = a·N·M·R^0.50·(1-R)^1.50
 Survival: 4/8 (50%)

@@ -1,6 +1,6 @@
 # Einstein Recovery — Test Report
 
-**Test file:** `TQM.Tests/ResearchXC/EinsteinRecoveryTests.cs`
+**Test file:** `AT.Tests/ResearchXC/EinsteinRecoveryTests.cs`
 **Result:** **PASSED (3/3).**
 
 ---
@@ -33,7 +33,7 @@
    fit over $\rho$), **not** a Riemann-tensor computation.
 
 2. **Flat metric ⇒ zero curvature** — verified with a minimal standard Christoffel
-   computation (constant metric ⇒ $\Gamma=0$; non-constant ⇒ $\Gamma\neq0$). The TQM
+   computation (constant metric ⇒ $\Gamma=0$; non-constant ⇒ $\Gamma\neq0$). The AT
    analyzers **assert** this ("R=0 for flat") but **never compute** it — so the analyzer-side
    curvature computation is absent.
 
@@ -50,7 +50,7 @@
 | Test | Verdict |
 |---|---|
 | `MetricProducesCurvature` | **Tested** — but only at the level of the analyzer's linear-fit simulation |
-| `FlatMetricProducesZeroCurvature` | **Tested** via standard math; **Blocked** at the TQM-analyzer level (no curvature computation exists) |
+| `FlatMetricProducesZeroCurvature` | **Tested** via standard math; **Blocked** at the AT-analyzer level (no curvature computation exists) |
 | `EinsteinLimitRecovered` | **Partial** — leading-order + qualitative matches, not a tensor derivation |
 
 **Overall:** Einstein recovery is **Partial**. The analyzers provide qualitative GR matches

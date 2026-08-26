@@ -83,5 +83,5 @@ import.
 | G4-C31 `G4_C31_MagnitudeOrderingIsMonotonic` | PASS (SC2) |
 | G4-C32 `G4_C32_MagnitudeOrderingStableUnderRefinement` | PASS (SC3) |
 
-`TQM.Tests/ResearchXH/G4C_Phase3_CurvatureMagnitudeTests.cs` (inherits `ResearchTestBase`,
+`AT.Tests/ResearchXH/G4C_Phase3_CurvatureMagnitudeTests.cs` (inherits `ResearchTestBase`,
 deterministic, `StringBuilder`-composed reports).

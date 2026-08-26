@@ -1,6 +1,6 @@
 # Information Species Theory
 
-## TQM-133: The Emergence of an Information Ecology
+## AT-133: The Emergence of an Information Ecology
 
 ### Abstract
 
@@ -12,7 +12,7 @@ in proto-matter.
 
 ### 1. The Five Levels of Θ
 
-| Level | TQM | Structure |
+| Level | AT | Structure |
 |-------|-----|-----------|
 | **Transport** | 129 | Signals move through space |
 | **Memory** | 130 | Signals persist in time |
@@ -61,4 +61,4 @@ emergent structure in proto-matter. From the microscopic Kuramoto
 oscillators, through charge quantization, collective fields,
 information transport, memory, interaction, and finally to
 stable information species — this is the complete hierarchy of
-emergence in TQM.
+emergence in AT.

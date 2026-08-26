@@ -89,5 +89,5 @@ appears at **d = 3** (spatial) and persists at **d = 4** (spacetime).
 | G4-G11 `G4_G11_TraceStructure` | PASS (G^μ_μ = −(d−2)R/2 for d=2,3,4) |
 | G4-G12 `G4_G12_BianchiIdentity` | PASS (∇^μ G_μν = 0, max < 1e−8) |
 
-Code: `TQM.Core/ResearchXH/HigherDimEinstein.cs`;
-tests `TQM.Tests/ResearchXH/G4G_Phase1_3D4D_EinsteinStructureTests.cs`.
+Code: `AT.Core/ResearchXH/HigherDimEinstein.cs`;
+tests `AT.Tests/ResearchXH/G4G_Phase1_3D4D_EinsteinStructureTests.cs`.

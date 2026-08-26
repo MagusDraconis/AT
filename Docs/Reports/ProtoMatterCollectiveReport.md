@@ -1,10 +1,10 @@
-# TQM-123: Proto-Matter Collective Dynamics
+# AT-123: Proto-Matter Collective Dynamics
 
 ## Executive Summary
 
 **Classification: B — Weak Collective Effects**
 
-TQM-123 investigates the collective behavior of many interacting
+AT-123 investigates the collective behavior of many interacting
 topological charge quanta (Q=+1). Multi-charge ensemble simulations
 across density × coupling parameter space reveal that at tested
 parameters, collective effects are weak — proto-matter behaves
@@ -16,7 +16,7 @@ and the phase diagram construction methodology is validated.
 
 ## 1. From Single to Many Charges
 
-TQM-117..122 established Q=+1 as the fundamental charge quantum:
+AT-117..122 established Q=+1 as the fundamental charge quantum:
 a stable topological droplet of minimum width w_c ≈ 0.05.
 
 When multiple Q=+1 droplets coexist:
@@ -59,22 +59,22 @@ The continuum charge density equation was derived:
 
 where:
 - D_eff = effective charge diffusivity
-- ν = nucleation rate (TQM-118)
-- γ = binary merger rate (TQM-012)
+- ν = nucleation rate (AT-118)
+- γ = binary merger rate (AT-012)
 - μ = spontaneous decay rate (≈0)
 
 ## 5. Validation
 
 Prior experiments reinterpreted through the collective framework:
 
-| TQM | Collective Interpretation |
+| AT | Collective Interpretation |
 |-----|--------------------------|
-| TQM-005 | Resonance clusters = Cluster phase |
-| TQM-006 | ρc = charge percolation threshold |
-| TQM-010 | Multi-cluster = multi-charge initial states |
-| TQM-012 | Two-condensate = binary collision, measures γ |
-| TQM-118 | Charge creation = source term ν |
-| TQM-119 | Charge statistics = counting statistics of charge gas |
+| AT-005 | Resonance clusters = Cluster phase |
+| AT-006 | ρc = charge percolation threshold |
+| AT-010 | Multi-cluster = multi-charge initial states |
+| AT-012 | Two-condensate = binary collision, measures γ |
+| AT-118 | Charge creation = source term ν |
+| AT-119 | Charge statistics = counting statistics of charge gas |
 
 ## 6. Conclusion
 

@@ -69,7 +69,7 @@ Resolving it requires the **full Bessel projection** $\int dk\,k^{-1}v_b^2j_\ell
 with the correct $\ell$-mapping of the Doppler term — the next module, not a
 visibility effect. No new physics is needed.
 
-**Sources:** `TQM.Core/ResearchDATA/RecombinationAnalyzer.cs`
+**Sources:** `AT.Core/ResearchDATA/RecombinationAnalyzer.cs`
 (`VisibilityWidth`, `ConformalTimeMpc`), `PeakHeightAnalyzer.cs`
 (`DopplerVisibilityDamping`, `FindAcousticPeaksVisible`),
-`TQM.Tests/ResearchDATA/TQM_VisibilityAudit.cs`.
+`AT.Tests/ResearchDATA/AT_VisibilityAudit.cs`.

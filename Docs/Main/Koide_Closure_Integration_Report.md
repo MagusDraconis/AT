@@ -1,7 +1,7 @@
 # Koide Closure Integration Report
 
 **Action:** integrate the Koide Origin Closure Audit (Phase 159, `756b0e9`) into the
-authoritative TQM documents.
+authoritative AT documents.
 **Type:** documentation status update only — **no theory change, no new physics, no
 reopening of closed audits, no theorem/classification changes.**
 
@@ -11,15 +11,15 @@ reopening of closed audits, no theorem/classification changes.**
 
 | File | Section | Change |
 |---|---|---|
-| `TQM_Master_Reference.md` | §1 Executive Summary | added: "The strongest example of a REAL-UNDERIVED structure is the Koide relation…" |
-| `TQM_Master_Reference.md` | §6 Flavor Sector → Koide | added "CLOSED QUESTION (Phase 159)" + the 7-route closure table + "Status: closed question" |
-| `TQM_Master_Reference.md` | §11 Open Questions | removed Koide row; added "Closed Questions" table (Koide Q=2/3, θ≈45° = closed) |
-| `TQM_Encyclopedia.md` | §4.2 Koide relation | "Missing: TODO — derivation" → "Status: CLOSED (Phase 159); all routes exhausted" |
-| `TQM_Encyclopedia.md` | Missing-Sections Rollup | removed "Koide 45° origin derivation (T-08)" row |
-| `TQM_Completeness_Report.md` | §1 Chapter table (Flavor) | removed Koide from blocking issue |
-| `TQM_Completeness_Report.md` | §2 Open sections | removed O1 (Koide); consolidated O2+O3 → "Internal-3 Node"; renumbered to 4 items |
-| `TQM_Completeness_Report.md` | §3 Final scores | theory completeness ~70% → ~72%; open items 6 → 4 |
-| `TQM_Completeness_Report.md` | §4 Verdict | Koide marked CLOSED; residual = Internal-3 node + shared cascade + CMB + Unified Action |
+| `AT_Master_Reference.md` | §1 Executive Summary | added: "The strongest example of a REAL-UNDERIVED structure is the Koide relation…" |
+| `AT_Master_Reference.md` | §6 Flavor Sector → Koide | added "CLOSED QUESTION (Phase 159)" + the 7-route closure table + "Status: closed question" |
+| `AT_Master_Reference.md` | §11 Open Questions | removed Koide row; added "Closed Questions" table (Koide Q=2/3, θ≈45° = closed) |
+| `AT_Encyclopedia.md` | §4.2 Koide relation | "Missing: TODO — derivation" → "Status: CLOSED (Phase 159); all routes exhausted" |
+| `AT_Encyclopedia.md` | Missing-Sections Rollup | removed "Koide 45° origin derivation (T-08)" row |
+| `AT_Completeness_Report.md` | §1 Chapter table (Flavor) | removed Koide from blocking issue |
+| `AT_Completeness_Report.md` | §2 Open sections | removed O1 (Koide); consolidated O2+O3 → "Internal-3 Node"; renumbered to 4 items |
+| `AT_Completeness_Report.md` | §3 Final scores | theory completeness ~70% → ~72%; open items 6 → 4 |
+| `AT_Completeness_Report.md` | §4 Verdict | Koide marked CLOSED; residual = Internal-3 node + shared cascade + CMB + Unified Action |
 
 ---
 

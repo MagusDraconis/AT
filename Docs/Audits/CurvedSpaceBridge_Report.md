@@ -1,6 +1,6 @@
 # Curved-Space Bridge — Test Report
 
-**Test file:** `TQM.Tests/ResearchXC/CurvedSpaceBridgeTests.cs`
+**Test file:** `AT.Tests/ResearchXC/CurvedSpaceBridgeTests.cs`
 **Result:** **PASSED (3/3).**
 
 ---
@@ -9,7 +9,7 @@
 
 | # | Test | Output | Verdict |
 |---|---|---|---|
-| 1 | `MetricDependentOperator_Exists()` | "Beltrami" in `TQM.Core`: **0**; "curved-space Schrödinger": **0** | **ABSENT** |
+| 1 | `MetricDependentOperator_Exists()` | "Beltrami" in `AT.Core`: **0**; "curved-space Schrödinger": **0** | **ABSENT** |
 | 2 | `LaplaceBeltrami_ReducesToFlatLaplacian()` | $\Delta_g f$ converges to $\nabla^2 f=-2\pi^2 f$ (relErr $3.2\times10^{-3}\to5.0\times10^{-5}$) | **holds** |
 | 3 | `CurvedSpaceBridge_PresentOrAbsent()` | $\Delta_g$ occurrences: **0** | **ABSENT** |
 

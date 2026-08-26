@@ -1,4 +1,4 @@
-# JUNO — TQM Observational Status Report
+# JUNO — AT Observational Status Report
 
 **Experiment:** Jiangmen Underground Neutrino Observatory
 **Agency / Collaboration:** Chinese Academy of Sciences + international partners
@@ -16,12 +16,12 @@
 | **Scientific Goal** | Determine neutrino mass ordering (normal vs inverted) by measuring reactor antineutrino energy spectrum with unprecedented precision. Secondary: measure Δm²₂₁, Δm²₃₁, sin²θ₁₂ to <1%. |
 | **Operational Status** | Under construction. Detector filling expected 2024–2025. First physics data expected 2025–2026. |
 | **Major Data Releases** | First oscillation results: ~2027. Ordering determination (3σ): ~2027–2028. Precision measurement: ~2029+. |
-| **Relevance to TQM** | TQM predicts NORMAL neutrino mass ordering (m₁ < m₂ < m₃) from attractive self-interaction in the φ⁴ defect model (X060, Model A). JUNO will be the first experiment to determine the ordering at high significance. |
-| **TQM Priority** | **MEDIUM — Tier 2 prediction (Model A).** |
+| **Relevance to AT** | AT predicts NORMAL neutrino mass ordering (m₁ < m₂ < m₃) from attractive self-interaction in the φ⁴ defect model (X060, Model A). JUNO will be the first experiment to determine the ordering at high significance. |
+| **AT Priority** | **MEDIUM — Tier 2 prediction (Model A).** |
 
 ---
 
-## 2. TQM Predictions Tested
+## 2. AT Predictions Tested
 
 | Prediction | Program | Confidence | Observable | Expected Signal |
 |-----------|:--:|:--:|------------|-----------------|
@@ -33,21 +33,21 @@
 
 ## 3. Current Observational Status
 
-| Prediction | Current Measurement | Uncertainty | TQM Expectation | Agreement |
+| Prediction | Current Measurement | Uncertainty | AT Expectation | Agreement |
 |-----------|---------------------|-------------|-----------------|:--:|
 | Mass ordering | Favors normal at ~3σ (global fit) | ~3σ from combined oscillation data | Normal (m₁ < m₂ < m₃) | **Consistent** |
 | Δm²₂₁ | 7.41 × 10⁻⁵ eV² | ±0.20 × 10⁻⁵ | Predicted from excitation spectrum (semi-quantitative) | **Consistent** |
 | Δm²₃₁ (normal) | 2.511 × 10⁻³ eV² | ±0.027 × 10⁻³ | Consistent with defect energetics | **Consistent** |
 
-**Status Summary:** Current global fits favor normal ordering at approximately 3σ. This is consistent with TQM but not decisive — JUNO is needed for a definitive (>5σ) measurement. TQM makes no unique quantitative prediction for the mass splittings beyond the ordering direction.
+**Status Summary:** Current global fits favor normal ordering at approximately 3σ. This is consistent with AT but not decisive — JUNO is needed for a definitive (>5σ) measurement. AT makes no unique quantitative prediction for the mass splittings beyond the ordering direction.
 
 ---
 
 ## 4. Falsification Criteria
 
-| Outcome | Threshold | TQM Status |
+| Outcome | Threshold | AT Status |
 |---------|:--:|------------|
-| **A: Supports TQM** | Normal ordering confirmed at >5σ | Model A consistent. Not unique to TQM (many models predict normal). |
+| **A: Supports AT** | Normal ordering confirmed at >5σ | Model A consistent. Not unique to AT (many models predict normal). |
 | **B: Creates tension** | Inverted ordering at ~3σ (JUNO alone) | Wait for DUNE/Hyper-K confirmation. Tension noted. |
 | **C: Requires revision** | Inverted ordering at >5σ (JUNO + DUNE) | Model Update: replace Model A (φ⁴ kink). Broader delocalized-defect ontology survives. |
 | **D: Falsifies sector** | Inverted + degenerate spectrum + wrong mixing | Neutrino sector substantially wrong. Requires deeper revision. |
@@ -68,7 +68,7 @@
 | Tier | Impact |
 |:--:|--------|
 | **Tier 2** | Model A falsified. Requires alternative neutrino defect model (different defect type or potential). |
-| **Tier 0-1, 3-4** | Unaffected. Core TQM and cosmology survive. |
+| **Tier 0-1, 3-4** | Unaffected. Core AT and cosmology survive. |
 
 **Note:** This is a LOW-KILL prediction. Inverted ordering at >5σ kills one specific model, not the framework. The delocalized-defect explanation for neutrino identity (X059) survives regardless of ordering.
 
@@ -98,13 +98,13 @@
 
 ## 8. Hostile Audit
 
-*Assuming TQM is wrong: what would JUNO most likely reveal?*
+*Assuming AT is wrong: what would JUNO most likely reveal?*
 
-JUNO is most likely to confirm normal ordering — which is consistent with TQM but also with many other models. The prediction is not unique and not strongly discriminating. If TQM's neutrino model is wrong, this experiment cannot falsify the broader framework — only Model A.
+JUNO is most likely to confirm normal ordering — which is consistent with AT but also with many other models. The prediction is not unique and not strongly discriminating. If AT's neutrino model is wrong, this experiment cannot falsify the broader framework — only Model A.
 
 The specific assumption under test is that the neutrino defect has a simple φ⁴ potential with attractive self-interaction (λ > 0). If neutrinos arise from a different defect type — a vortex, a monopole, a composite excitation — the sign argument may not hold. The ordering could be inverted without falsifying the delocalized-defect identity.
 
-The more dangerous outcome for TQM would be a neutrino mass spectrum inconsistent with the defect excitation picture — for example, a quasi-degenerate spectrum with Δm² ≪ observed values. JUNO's precision mass measurements could reveal this.
+The more dangerous outcome for AT would be a neutrino mass spectrum inconsistent with the defect excitation picture — for example, a quasi-degenerate spectrum with Δm² ≪ observed values. JUNO's precision mass measurements could reveal this.
 
 ---
 
@@ -112,7 +112,7 @@ The more dangerous outcome for TQM would be a neutrino mass spectrum inconsisten
 
 **Status: GREEN — Consistent.**
 
-Normal ordering is favored by current data at ~3σ. The prediction is consistent but not uniquely tested — many models make the same prediction. JUNO will increase confidence but cannot uniquely confirm TQM.
+Normal ordering is favored by current data at ~3σ. The prediction is consistent but not uniquely tested — many models make the same prediction. JUNO will increase confidence but cannot uniquely confirm AT.
 
 | Criterion | Assessment |
 |-----------|------------|
@@ -120,7 +120,7 @@ Normal ordering is favored by current data at ~3σ. The prediction is consistent
 | Experimental capability | **Good** — JUNO will reach >3σ; combined >5σ with DUNE |
 | Current tension | None — data favor normal |
 | Timeline to decision | ~4–5 years |
-| Overall | **Consistent but not discriminating.** Normal ordering supports TQM but doesn't distinguish it. Inverted ordering would require Model Update. |
+| Overall | **Consistent but not discriminating.** Normal ordering supports AT but doesn't distinguish it. Inverted ordering would require Model Update. |
 
 ---
 

@@ -1,10 +1,10 @@
 # Information-Matter Feedback Theory
 
-## TQM-131: The Absence of Back-Reaction
+## AT-131: The Absence of Back-Reaction
 
 ### Abstract
 
-TQM-131 finds no significant information-to-matter coupling
+AT-131 finds no significant information-to-matter coupling
 at tested parameters. Θ memory does not bias charge nucleation.
 This establishes a clean separation: information storage and
 charge creation are independent processes in proto-matter.

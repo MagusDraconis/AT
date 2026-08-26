@@ -1,0 +1,208 @@
+namespace AT.Core.ResearchXH;
+
+/// <summary>
+/// G4-O Phase 0 — physical observables implied by the ρ-only Einstein structure (Q-events → ρ → G_μν).
+/// For the conformally-flat metric g = ρ^(2/d)η with σ = (1/d)ln ρ, the effective gravitational
+/// potential is Φ = σ, from which the standard weak-field observables follow: acceleration a = −∇Φ,
+/// redshift Δν/ν = −ΔΦ, lensing deflection ∝ ΔΦ, expansion H = ρ̇/ρ. The native Poisson relation is
+/// ΔΦ + ((d−2)/2)|∇Φ|² = −(1/(2(d−1)))ρ^(2/d) R, whose source is the CURVATURE (not the density).
+/// No imported matter sector, no Einstein equations.
+/// </summary>
+public static class PhysicalObservables
+{
+    /// <summary>Effective gravitational potential Φ = σ = (1/d) ln ρ.</summary>
+    public static double EffectivePotential(double x, double a, int d) => Math.Log(1.0 + a * x * x) / d;
+
+    /// <summary>Geodesic-like acceleration a = −∇Φ = −(1/d)(ln ρ)′ = −2ax/(d(1+a x²)).</summary>
+    public static double Acceleration(double x, double a, int d) => -2.0 * a * x / (d * (1.0 + a * x * x));
+
+    /// <summary>Laplacian of Φ: ΔΦ = (1/d)(ln ρ)″ = 2a(1−a x²)/(d(1+a x²)²).</summary>
+    public static double PotentialLaplacian(double x, double a, int d)
+    {
+        double f = 1.0 + a * x * x;
+        return 2.0 * a * (1.0 - a * x * x) / (d * f * f);
+    }
+
+    /// <summary>|∇Φ|² = (1/d²)((ln ρ)′)².</summary>
+    public static double PotentialGradientSquared(double x, double a, int d)
+    {
+        double lp = 2.0 * a * x / (1.0 + a * x * x);
+        return lp * lp / (d * d);
+    }
+
+    /// <summary>Gravitational redshift Δν/ν = −ΔΦ = −[Φ(x2) − Φ(x1)].</summary>
+    public static double Redshift(double x1, double x2, double a, int d)
+        => -(EffectivePotential(x2, a, d) - EffectivePotential(x1, a, d));
+
+    /// <summary>Lensing deflection ∝ ΔΦ = Φ(x2) − Φ(x1).</summary>
+    public static double LensingDeflection(double x1, double x2, double a, int d)
+        => EffectivePotential(x2, a, d) - EffectivePotential(x1, a, d);
+
+    /// <summary>Expansion (Hubble-like) H = ρ̇/ρ (0 for the static profile ρ = 1+a x²).</summary>
+    public static double Expansion(double rhoDot, double rho) => rhoDot / rho;
+
+    /// <summary>
+    /// Native Poisson relation residual: ΔΦ + ((d−2)/2)|∇Φ|² + (1/(2(d−1)))ρ^(2/d) R  (must equal 0).
+    /// </summary>
+    public static double PoissonResidual(double x, double a, int d)
+    {
+        double lap = PotentialLaplacian(x, a, d);
+        double g2 = PotentialGradientSquared(x, a, d);
+        double r = HigherDimEinstein.ScalarCurvature(x, a, d);
+        double rho = 1.0 + a * x * x;
+        double term = Math.Pow(rho, 2.0 / d) * r / (2.0 * (d - 1.0));
+        return lap + 0.5 * (d - 2.0) * g2 + term;
+    }
+
+    // ── Discriminating-observable machinery (GR density-source vs AT curvature-source) ──
+
+    /// <summary>Uniform density profile ρ = ρ₀.</summary>
+    public static double Uniform(double x, double rho0 = 1.0) => rho0;
+
+    /// <summary>Gaussian density profile ρ = 1 + A·e^(−(x/σ)²).</summary>
+    public static double Gaussian(double x, double A = 0.5, double sigma = 0.3)
+        => 1.0 + A * Math.Exp(-(x * x) / (sigma * sigma));
+
+    /// <summary>Shell/ring density profile ρ = 1 + A·e^(−((|x|−r)/σ)²).</summary>
+    public static double Shell(double x, double A = 0.5, double r = 0.6, double sigma = 0.15)
+    {
+        double z = (Math.Abs(x) - r) / sigma;
+        return 1.0 + A * Math.Exp(-z * z);
+    }
+
+    /// <summary>Double-peak density ρ = 1 + A·(e^(−((x−x₀)/σ)²) + e^(−((x+x₀)/σ)²)).</summary>
+    public static double DoublePeak(double x, double A = 0.5, double x0 = 0.4, double sigma = 0.15)
+        => 1.0 + A * (Math.Exp(-Math.Pow((x - x0) / sigma, 2)) + Math.Exp(-Math.Pow((x + x0) / sigma, 2)));
+
+    /// <summary>GR Poisson source: S_GR = ρ (the density VALUE, up to 4πG).</summary>
+    public static double GrSource(Func<double, double> rho, double x) => rho(x);
+
+    /// <summary>AT Poisson source: S_AT = (ln ρ)″ (the log-density curvature).</summary>
+    public static double AtSource(Func<double, double> rho, double x, double h = 1e-5)
+    {
+        double lp = Math.Log(rho(x));
+        double lm = Math.Log(rho(x - h));
+        double lpp = Math.Log(rho(x + h));
+        return (lpp - 2.0 * lp + lm) / (h * h);
+    }
+
+    /// <summary>GR acceleration (1D Poisson enclosed mass): a_GR = −∫₀^x ρ(u) du.</summary>
+    public static double GrAcceleration(Func<double, double> rho, double x, int n = 4000)
+    {
+        double dx = x / n;
+        double sum = 0.0;
+        for (int i = 0; i < n; i++) sum += rho((i + 0.5) * dx) * dx;
+        return -sum;
+    }
+
+    /// <summary>AT acceleration: a_AT = −(1/d)(ln ρ)′ = −(1/d)ρ′/ρ.</summary>
+    public static double AtAcceleration(Func<double, double> rho, double x, int d, double h = 1e-5)
+        => -(rho(x + h) - rho(x - h)) / (2.0 * h * d * rho(x));
+
+    // ── Realistic (stress-test) profiles ───────────────────────────────────────────────
+
+    /// <summary>Cored NFW-like halo ρ = 1 + A/(1 + (x/r_s)²) (peak at origin, ∝ x⁻² tail).</summary>
+    public static double Nfw(double x, double A = 0.5, double rs = 0.4) => 1.0 + A / (1.0 + (x * x) / (rs * rs));
+
+    /// <summary>Exponential disk ρ = 1 + A·e^(−|x|/r_d) (peak at origin, exponential tail).</summary>
+    public static double Exponential(double x, double A = 0.5, double rd = 0.4)
+        => 1.0 + A * Math.Exp(-Math.Abs(x) / rd);
+
+    /// <summary>Uniform sphere ρ = ρ₀ for |x| &lt; R, ρ = 1 outside (compact, uniform core).</summary>
+    public static double UniformSphere(double x, double rho0 = 2.0, double R = 0.5)
+        => Math.Abs(x) < R ? rho0 : 1.0;
+
+    // ── Direct geodesic extraction (falsification machinery) ───────────────────────────
+
+    /// <summary>Metric time-time component g_00 = −ρ^(2/d) (Lorentzian signature).</summary>
+    public static double MetricG00(double x, double a, int d) => -Math.Pow(1.0 + a * x * x, 2.0 / d);
+
+    /// <summary>Inverse spatial metric g^xx = ρ^(−2/d).</summary>
+    public static double MetricGinv(double x, double a, int d) => Math.Pow(1.0 + a * x * x, -2.0 / d);
+
+    /// <summary>
+    /// Geodesic acceleration DIRECTLY from the Christoffel symbol: a = −Γ^x_00 = −(1/2)g^xx ∂_x g_00.
+    /// For g_00 = −ρ^(2/d) this equals −(1/d)(ln ρ)′ — the repulsive (−∇σ) result.
+    /// </summary>
+    public static double GeodesicAcceleration(double x, double a, int d, double h = 1e-6)
+    {
+        double dg00 = (MetricG00(x + h, a, d) - MetricG00(x - h, a, d)) / (2.0 * h);
+        double ginv = MetricGinv(x, a, d);
+        double gamma = -0.5 * ginv * dg00;   // Γ^x_00
+        return -gamma;                        // a = −Γ^x_00
+    }
+
+    /// <summary>Exact weak-field potential Φ = (e^{2σ} − 1)/2 = (ρ^(2/d) − 1)/2.</summary>
+    public static double WeakFieldPotential(double x, double a, int d)
+        => 0.5 * (Math.Pow(1.0 + a * x * x, 2.0 / d) - 1.0);
+
+    // ── Matter-emergence machinery (deficit / abundance structures) ───────────────────
+
+    /// <summary>Void (density minimum) profile ρ = 1 − A·e^(−(x/σ)²).</summary>
+    public static double Void(double x, double A = 0.5, double sigma = 0.3)
+        => 1.0 - A * Math.Exp(-(x * x) / (sigma * sigma));
+
+    /// <summary>Derived matter density m = ρ̄ − ρ (the density DEFICIT; positive in voids, negative in peaks).</summary>
+    public static double MatterDensity(double rho, double rhoBar = 1.0) => rhoBar - rho;
+
+    /// <summary>Alternative matter m = ln(ρ̄/ρ) (log-deficit; dimensionless).</summary>
+    public static double LogMatter(double rho, double rhoBar = 1.0) => Math.Log(rhoBar / rho);
+
+    /// <summary>Alternative matter m = ρ̄/ρ − 1 (relative deficit; dimensionless).</summary>
+    public static double RatioMatter(double rho, double rhoBar = 1.0) => rhoBar / rho - 1.0;
+
+    /// <summary>
+    /// Gradient-source residual a − (1/d)∇m/ρ for a matter definition m = m(ρ). Zero if and only if
+    /// m = ρ̄ − ρ (the deficit), because a = −(1/d)∇lnρ = +(1/d)∇(ρ̄−ρ)/ρ exactly.
+    /// </summary>
+    public static double GradientSourceResidual(Func<double, double> rho, Func<double, double> matter,
+        double x, int d, double h = 1e-6)
+    {
+        double a = AtAcceleration(rho, x, d, h);
+        double dm = (matter(rho(x + h)) - matter(rho(x - h))) / (2.0 * h);
+        return a - dm / (d * rho(x));
+    }
+
+    // ── AT-F Phase 2: matter attraction (geodesic convergence) ──────────────────────
+
+    /// <summary>
+    /// Timelike convergence scalar R₀₀ = (1/d)[(ln ρ)″ + ((d−2)/d)((ln ρ)′)²] for g = ρ^(2/d)η.
+    /// R₀₀ > 0 ⇒ geodesics focus (attraction); R₀₀ < 0 ⇒ diverge (repulsion) — the Raychaudhuri condition.
+    /// </summary>
+    public static double TimelikeConvergence(Func<double, double> rho, double x, int d, double h = 1e-5)
+    {
+        double lm = Math.Log(rho(x - h));
+        double l0 = Math.Log(rho(x));
+        double lp = Math.Log(rho(x + h));
+        double lpp = (lp - 2.0 * l0 + lm) / (h * h);
+        double lp1 = (lp - lm) / (2.0 * h);
+        return (lpp + (d - 2.0) * lp1 * lp1 / d) / d;
+    }
+
+    /// <summary>Divergence of the geodesic acceleration ∇·a = −(1/d)(ln ρ)″ (negative = focusing/convergence).</summary>
+    public static double AccelerationDivergence(Func<double, double> rho, double x, int d, double h = 1e-5)
+    {
+        double lm = Math.Log(rho(x - h));
+        double l0 = Math.Log(rho(x));
+        double lp = Math.Log(rho(x + h));
+        double lpp = (lp - 2.0 * l0 + lm) / (h * h);
+        return -lpp / d;
+    }
+
+    /// <summary>Compact spherical deficit ρ = 1−A for |x| &lt; R, ρ = 1 outside (a "void sphere").</summary>
+    public static double SphericalDeficit(double x, double A = 0.3, double R = 0.5)
+        => Math.Abs(x) < R ? 1.0 - A : 1.0;
+
+    /// <summary>Newtonian acceleration from the DEFICIT matter m = ρ̄−ρ: a = −∫₀^x m(u) du.</summary>
+    public static double NewtonianDeficitAcceleration(Func<double, double> rho, double x, double rhoBar = 1.0, int n = 4000)
+    {
+        double dx = x / n;
+        double sum = 0.0;
+        for (int i = 0; i < n; i++)
+        {
+            double u = (i + 0.5) * dx;
+            sum += (rhoBar - rho(u)) * dx;
+        }
+        return -sum;
+    }
+}

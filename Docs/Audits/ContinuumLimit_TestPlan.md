@@ -33,15 +33,15 @@
 ### Test 1 — $L_Q \to$ flat Laplacian (Missing → skeleton)
 
 ```csharp
-// TQM.Tests/ResearchQG/TQM_QContinuumFlatLaplacian.cs
+// AT.Tests/ResearchQG/AT_QContinuumFlatLaplacian.cs
 using System.Globalization;
-using TQM.Core.ResearchQG;
-using TQM.Tests.Shared;
+using AT.Core.ResearchQG;
+using AT.Tests.Shared;
 using Xunit.Abstractions;
 
-public class TQM_QContinuumFlatLaplacian : ResearchTestBase
+public class AT_QContinuumFlatLaplacian : ResearchTestBase
 {
-    public TQM_QContinuumFlatLaplacian(ITestOutputHelper o) : base(o) { }
+    public AT_QContinuumFlatLaplacian(ITestOutputHelper o) : base(o) { }
 
     [Fact]
     public void Lq_Eigenvalues_Match_ClosedForm_1DChain()
@@ -77,18 +77,18 @@ public class TQM_QContinuumFlatLaplacian : ResearchTestBase
 ### Test 2 — flat Laplacian $\to$ Schrödinger (Implemented — reuse)
 
 ```csharp
-// Existing: TQM.Tests/ResearchQM/TQM_QM002_HilbertSpaceAudit.cs
-// Analyzer: TQM.Core/ResearchQM/HilbertSpaceAnalyzer.cs
+// Existing: AT.Tests/ResearchQM/AT_QM002_HilbertSpaceAudit.cs
+// Analyzer: AT.Core/ResearchQM/HilbertSpaceAnalyzer.cs
 // Reuse: assert reversible dynamics + L_Q ⇒ i∂ψ/∂t = L_Q ψ,
-//        whose continuum form is i∂ψ/∂t = -∇²ψ (Postulate 2, TQM-149–151).
+//        whose continuum form is i∂ψ/∂t = -∇²ψ (Postulate 2, AT-149–151).
 // No new test needed — the Schrödinger derivation is already covered.
 ```
 
 ### Test 3 — BDG $\to$ d'Alembertian (Implemented — reuse)
 
 ```csharp
-// Existing: TQM.Tests/ResearchXC/TQM_XC007_BdgUniquenessAudit.cs
-// Analyzer: TQM.Core/ResearchXC/BdgUniquenessAnalyzer.cs
+// Existing: AT.Tests/ResearchXC/AT_XC007_BdgUniquenessAudit.cs
+// Analyzer: AT.Core/ResearchXC/BdgUniquenessAnalyzer.cs
 // Reuse: assert the BDG layer operator with weights (+1,-4,+6,-4,+1)
 //        converges to □ = ∂²/∂t² - ∇² (the Lorentzian d'Alembertian).
 // No new test needed — BDG uniqueness is already covered.
@@ -97,13 +97,13 @@ public class TQM_QContinuumFlatLaplacian : ResearchTestBase
 ### Test 4 — Curved-space Schrödinger bridge (Blocked — gap placeholder)
 
 ```csharp
-// TQM.Tests/ResearchQG/TQM_QCurvedSpaceSchrodingerGap.cs
-using TQM.Tests.Shared;
+// AT.Tests/ResearchQG/AT_QCurvedSpaceSchrodingerGap.cs
+using AT.Tests.Shared;
 using Xunit.Abstractions;
 
-public class TQM_QCurvedSpaceSchrodingerGap : ResearchTestBase
+public class AT_QCurvedSpaceSchrodingerGap : ResearchTestBase
 {
-    public TQM_QCurvedSpaceSchrodingerGap(ITestOutputHelper o) : base(o) { }
+    public AT_QCurvedSpaceSchrodingerGap(ITestOutputHelper o) : base(o) { }
 
     [Fact]
     public void CurvedSpaceSchrodinger_Bridge_IsAbsent()
@@ -122,9 +122,9 @@ public class TQM_QCurvedSpaceSchrodingerGap : ResearchTestBase
 ### Test 5 — Einstein recovery bridge (Implemented — reuse)
 
 ```csharp
-// Existing: TQM.Tests/ResearchXC/TQM_XC006_GrBridgeCompletion.cs
-// Analyzer: TQM.Core/ResearchXC/GrBridgeAnalyzer.cs (causal set → manifold → metric)
-//           TQM.Core/Research/EmergentGravityAnalyzer.cs (X061, leading-order Einstein)
+// Existing: AT.Tests/ResearchXC/AT_XC006_GrBridgeCompletion.cs
+// Analyzer: AT.Core/ResearchXC/GrBridgeAnalyzer.cs (causal set → manifold → metric)
+//           AT.Core/Research/EmergentGravityAnalyzer.cs (X061, leading-order Einstein)
 // Reuse: assert G_μν = 8πG_eff T_μν + O(ℓ_P² R²) at leading order,
 //        with the causal-set→metric link flagged as an EXTERNAL theorem (Malament, BDG).
 // No new test needed — the Einstein recovery (leading order) is already covered.

@@ -1,9 +1,9 @@
 cff-version: 1.2.0
-message: "If you use THE Q-MODEL (TQM), please cite it as below."
+message: "If you use THE Q-MODEL (AT), please cite it as below."
 type: software
 title: "THE Q-MODEL — From Q to Cosmology"
 abstract: >-
-  THE Q-MODEL (TQM) is a theory of structure and content that compresses observable
+  THE Q-MODEL (AT) is a theory of structure and content that compresses observable
   physics to four primitives (the individuation principle Q, Random Actualization, the
   scale triad, and a single nonlinearity parameter M^2). It holds that the form of every
   structure is derivable from these primitives while the content is realized by contingent
@@ -16,7 +16,7 @@ authors:
     email: fabrice.wieser@outlook.com
 keywords:
   - THE Q-MODEL
-  - TQM
+  - AT
   - emergence
   - quantum foundations
   - causal set theory

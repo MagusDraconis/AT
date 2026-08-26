@@ -1,6 +1,6 @@
 # Minimal Proto-Matter Theory
 
-## TQM-122: The Origin of Q=+1 as the Minimal Stable Structure
+## AT-122: The Origin of Q=+1 as the Minimal Stable Structure
 
 ### Abstract
 
@@ -89,7 +89,7 @@ In classical nucleation theory, droplets have a critical radius r_c:
 - r < r_c: surface tension dominates → evaporates
 - r > r_c: bulk energy dominates → grows
 
-TQM's Q=+1 is exactly the critical droplet:
+AT's Q=+1 is exactly the critical droplet:
 - w < w_c: diffusion (surface tension) dominates → evaporates
 - w > w_c: reaction (bulk energy) dominates → stable condensate
 
@@ -105,7 +105,7 @@ The Q=+1 condensate is stable because:
 4. The condensate is the global minimum of the local free energy
 
 Destruction requires:
-- External perturbation (TQM-011: density -50%)
+- External perturbation (AT-011: density -50%)
 - Merger with another condensate (Q=2→Q=1)
 - Catastrophic parameter change (M→0, c₀→0)
 

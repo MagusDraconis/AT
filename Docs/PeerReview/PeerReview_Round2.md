@@ -61,7 +61,7 @@ The manuscript remains a classification-and-reinterpretation exercise dressed as
 ### MAJOR
 - One prediction (neutrino-Koide) was falsified; that demonstrates the framework can produce false statements. It does not demonstrate that the core claims are falsifiable. The core claims are protected by the DRAWN / REAL-UNDERIVED classification: any numerical mismatch can be declared contingent content.
 - The live quantitative predictions (RAR \(g_\dagger=cH_0/(2\pi)\), specific \(w(z)\), \(\Lambda(t)=\alpha/\sqrt{V(t)}\)) are either numerical accidents (the \(2\pi\)) or small deviations from \(\Lambda\)CDM whose detection is deferred to future surveys. They do not test the claimed derivations of \(U(1)\), spatial dimension, or the gauge-structure hierarchy.
-- The log-normal abundance law is a generic consequence of the central-limit theorem in log-space; its confirmation would not single out TQM.
+- The log-normal abundance law is a generic consequence of the central-limit theorem in log-space; its confirmation would not single out AT.
 
 ### MINOR
 - The paper correctly notes that the shared-cascade question is untestable from one universe (T-12). This is an admission of an unfalsifiable sector, not a virtue.
@@ -82,7 +82,7 @@ The manuscript remains a classification-and-reinterpretation exercise dressed as
 - The theory predicts the *form* of the abundance distribution and the lower bound \(N\ge3\). Both are weak and already known.
 
 ### NONE
-- No unique, sharp, currently testable prediction that would distinguish the dynamical content of TQM from GR + SM + \(\Lambda\)CDM is supplied.
+- No unique, sharp, currently testable prediction that would distinguish the dynamical content of AT from GR + SM + \(\Lambda\)CDM is supplied.
 
 ---
 
@@ -113,7 +113,7 @@ The manuscript remains a classification-and-reinterpretation exercise dressed as
 - The Koide relation is correctly stated to be underivable within the framework; highlighting it as a central quantitative success while admitting its origin is closed and underivable is inconsistent messaging.
 
 ### MINOR
-- Multiple cross-references to internal phase numbers (TQM-142, QG-022, X061, etc.) without self-contained proofs make independent verification impossible from the manuscript alone.
+- Multiple cross-references to internal phase numbers (AT-142, QG-022, X061, etc.) without self-contained proofs make independent verification impossible from the manuscript alone.
 
 ---
 

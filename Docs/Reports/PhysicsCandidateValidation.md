@@ -1,4 +1,4 @@
-# TQM-100: Physics Candidate Validation Report
+# AT-100: Physics Candidate Validation Report
 
 ## Hostile Review of the {R, M} Minimal Theory
 
@@ -113,7 +113,7 @@ State = {R, M}
 Parameters = {N, K, λ, β}
 
 dR/dt = N·M · R·(1-R) · g(K,λ)   [logistic with coupling scaling]
-dM/dt = f(R, M)                     [same as TQM-082, weak coupling]
+dM/dt = f(R, M)                     [same as AT-082, weak coupling]
 ```
 
 Where g(K,λ) is a function to be determined from first principles.

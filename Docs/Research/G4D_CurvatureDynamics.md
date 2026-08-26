@@ -92,6 +92,6 @@ of the density field, closing the native metric-to-operator chain ρ → L → L
 | G4-D01 `G4_D01_CurvatureRateIsConsistentWithOperatorEvolution` | PASS (16/16 rates) |
 | G4-D02 `G4_D02_SpectralObservablesEvolveContinuously` | PASS (4/4 monotonic, r=0.9796) |
 
-Code: `TQM.Core/ResearchXH/CurvatureDynamics.cs` (trajectory engine + `CurvatureFrame`
-record) and `TQM.Tests/ResearchXH/G4D_Phase0_CurvatureDynamicsTests.cs` (inherits
+Code: `AT.Core/ResearchXH/CurvatureDynamics.cs` (trajectory engine + `CurvatureFrame`
+record) and `AT.Tests/ResearchXH/G4D_Phase0_CurvatureDynamicsTests.cs` (inherits
 `ResearchTestBase`, deterministic, `StringBuilder`-composed reports).

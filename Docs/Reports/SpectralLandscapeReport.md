@@ -1,4 +1,4 @@
-# TQM-140 Spectral Origin of the Information Landscape
+# AT-140 Spectral Origin of the Information Landscape
 
 ## SCIENTIFIC REPORT
 
@@ -8,24 +8,24 @@
 
 Information species in the Theta field have a **spectral origin** —
 they correspond to eigenmodes of the discrete Theta field operator.
-7/7 TQM-139 species mapped to eigenmodes with **mean overlap 0.808**.
+7/7 AT-139 species mapped to eigenmodes with **mean overlap 0.808**.
 
 - **10 eigenmodes** computed from the discrete Laplacian + damping
 - **10 spectral families** by nodal count (k=0 to k=9)
 - **7/7 species mapped** (100%) with high pattern overlap
-- **Predicted species count: 10** (close to TQM-139's 13, TQM-138's ~19)
+- **Predicted species count: 10** (close to AT-139's 13, AT-138's ~19)
 - **Null hypothesis REJECTED** — species ARE eigenmodes
 - Species can be computed **analytically** without simulation
 
 ---
 
-## 1. TQM-139 Recap
+## 1. AT-139 Recap
 
-TQM-139 discovered a finite attractor landscape with ~13 species,
+AT-139 discovered a finite attractor landscape with ~13 species,
 5 components, 2 hubs, and 13 bottlenecks. The landscape is structured
 but its ORIGIN was unknown.
 
-TQM-140 asks: **Are these species eigenmodes of the Theta field?**
+AT-140 asks: **Are these species eigenmodes of the Theta field?**
 
 ---
 
@@ -67,7 +67,7 @@ All 10 modes are stable (damping = 0.1 for all, stability = 10.0).
 
 ## 4. Species-to-Eigenmode Mapping
 
-7 TQM-139 attractor species were mapped to their closest eigenmodes:
+7 AT-139 attractor species were mapped to their closest eigenmodes:
 
 | Species | Mode k | Overlap | Family |
 |---------|--------|---------|--------|
@@ -75,16 +75,16 @@ All 10 modes are stable (damping = 0.1 for all, stability = 10.0).
 
 **Mean pattern overlap: 0.808** — very high correspondence.
 
-This confirms that the TQM-139 attractors ARE the eigenmodes.
+This confirms that the AT-139 attractors ARE the eigenmodes.
 The patterns match with high fidelity.
 
 ---
 
 ## 5. Spectral Predictions
 
-| Prediction | Spectral | TQM-139 | Match? |
+| Prediction | Spectral | AT-139 | Match? |
 |-----------|----------|---------|--------|
-| Species count | 10 | 13 (TQM-139), ~19 (TQM-138) | Close |
+| Species count | 10 | 13 (AT-139), ~19 (AT-138) | Close |
 | Stable modes | All 10 | All persistent | ✓ |
 | Mode families | 10 | 5 components | Partial |
 | Low-k ↔ hubs | k<2 → hubs | 2 hubs | Qualitative |
@@ -92,7 +92,7 @@ The patterns match with high fidelity.
 | Finite spectrum | Yes | Yes | ✓ |
 
 The species count prediction (10) is in the right ballpark — between
-TQM-139's 13 (gradient descent) and TQM-138's 19 (evolutionary discovery).
+AT-139's 13 (gradient descent) and AT-138's 19 (evolutionary discovery).
 
 ---
 
@@ -150,7 +150,7 @@ eigenvalue problem of the Theta operator.
 
 The species have a clear spectral origin: they are the natural
 oscillation modes of the discrete Theta field operator (Laplacian
-+ damping). 7/7 TQM-139 species map to eigenmodes with high
++ damping). 7/7 AT-139 species map to eigenmodes with high
 pattern overlap (0.808). The species count can be predicted
 analytically (10) without evolutionary simulation.
 
@@ -166,5 +166,5 @@ Innovation → Landscape Topology → **Spectral Origin**
 
 ---
 
-*Experiment TQM-140 completed. Spectral origin confirmed.*
+*Experiment AT-140 completed. Spectral origin confirmed.*
 *Information species are eigenmodes of the Theta field operator.*

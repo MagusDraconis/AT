@@ -85,5 +85,5 @@ which flags the breakdown of the conformal chart.
 | G4-P11 `G4_P11_MagnitudeOrderingPerTerm` | PASS (Lc monotonic; Δ_g near-monotonic; V diverging) |
 | G4-P12 `G4_P12_RefinementStabilityAndClassification` | PASS (Δ_g DOMINANT, V SECONDARY/inverted) |
 
-Code: `TQM.Core/ResearchXH/CurvaturePotential.cs` (+ `CurvatureReconstruction.ScoreRobust`);
-tests `TQM.Tests/ResearchXH/G4P_Phase1_CurvaturePotentialAnalysisTests.cs`.
+Code: `AT.Core/ResearchXH/CurvaturePotential.cs` (+ `CurvatureReconstruction.ScoreRobust`);
+tests `AT.Tests/ResearchXH/G4P_Phase1_CurvaturePotentialAnalysisTests.cs`.

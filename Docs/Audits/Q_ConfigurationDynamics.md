@@ -1,7 +1,7 @@
 # Q Configuration Dynamics Audit
 
 **Goal:** derive or reconstruct equations of motion for $x_i$ and $\theta_i$ using only
-existing TQM assumptions. No new primitives, no new parameters.
+existing AT assumptions. No new primitives, no new parameters.
 **Inputs:** `03_Q_Theory.md`, `04_Q_Networks_and_Laplacian.md`, `Q_Formalization_Program.md`,
 `TemporalSimulation.cs`, `TemporalMatrix.cs`, `TopologyEvolutionAnalyzer.cs`,
 `ThetaFieldEquation.cs`.

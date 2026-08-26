@@ -1,10 +1,10 @@
-# TQM-121: Charge Quantization Mechanism
+# AT-121: Charge Quantization Mechanism
 
 ## Executive Summary
 
 **Classification: D — Fundamental Quantization Law**
 
-TQM-121 determines WHY the topological charge Q is quantized (Q ∈ ℕ).
+AT-121 determines WHY the topological charge Q is quantized (Q ∈ ℕ).
 After evaluating seven candidate mechanisms and attempting seven
 fractional charge constructions, the verdict is:
 
@@ -15,7 +15,7 @@ This is a MATHEMATICAL THEOREM, not an empirical observation.
 
 ## 1. The Quantization Question
 
-TQM-113 through TQM-120 established that Q exists, is conserved,
+AT-113 through AT-120 established that Q exists, is conserved,
 is created, is statistically distributed, and is indivisible.
 The remaining question: **WHY is Q ∈ ℕ?**
 
@@ -63,7 +63,7 @@ boundary artifacts / non-conserved continuous measures.
 
 ## 4. Mathematical Proof
 
-**Theorem**: Under the TQM PDE with M>0 and R(0)≈0, R(L)≈0:
+**Theorem**: Under the AT PDE with M>0 and R(0)≈0, R(L)≈0:
 (a) Q ∈ ℕ (integer-valued)
 (b) dQ/dt = 0 (conserved)
 
@@ -89,7 +89,7 @@ boundary artifacts / non-conserved continuous measures.
 
 ## 6. Physical Interpretation
 
-TQM charge quantization is **CLASSICAL TOPOLOGICAL QUANTIZATION** —
+AT charge quantization is **CLASSICAL TOPOLOGICAL QUANTIZATION** —
 analogous to:
 - Winding numbers in the XY model
 - Skyrmion numbers in nonlinear sigma models
@@ -97,18 +97,18 @@ analogous to:
 - Magnetic monopole charge in gauge theories
 
 Unlike quantum mechanical quantization (from boundary conditions on
-wavefunctions), TQM quantization emerges from the TOPOLOGY of the
+wavefunctions), AT quantization emerges from the TOPOLOGY of the
 field configuration space combined with the PDE's one-way barrier.
 
 ## 7. Relationship to Prior Experiments
 
-| Experiment | TQM-121 Explanation |
+| Experiment | AT-121 Explanation |
 |-----------|-------------------|
-| TQM-113 | Q = β₀ is the unique choice that produces a conserved integer |
-| TQM-115 | The plateau is the homotopy class; width = topological stability |
-| TQM-116 | dQ/dt=0 is a MATHEMATICAL THEOREM (barrier proof) |
-| TQM-117 | Q emerges from PDE structure — now FULLY UNDERSTOOD |
-| TQM-120 | Q is MATHEMATICALLY indivisible (β₀ cannot be fractional) |
+| AT-113 | Q = β₀ is the unique choice that produces a conserved integer |
+| AT-115 | The plateau is the homotopy class; width = topological stability |
+| AT-116 | dQ/dt=0 is a MATHEMATICAL THEOREM (barrier proof) |
+| AT-117 | Q emerges from PDE structure — now FULLY UNDERSTOOD |
+| AT-120 | Q is MATHEMATICALLY indivisible (β₀ cannot be fractional) |
 
 ## 8. Conclusion
 
@@ -118,7 +118,7 @@ The charge quantization mechanism is the **COMBINED ACTION** of:
 
 This is a mathematical theorem: any PDE with a one-way threshold barrier
 and a Betti-number-based charge definition produces a quantized conserved
-charge. The TQM PDE is one realization of this general mechanism.
+charge. The AT PDE is one realization of this general mechanism.
 
 Q=+1 is the universal charge quantum — a mathematical necessity,
 not a parameter-dependent empirical observation.

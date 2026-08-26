@@ -93,6 +93,6 @@ import.
 | G4-E01 `G4_E01_CurvatureRateLawIsDensityDriven` | PASS (64/64 rate law) |
 | G4-E02 `G4_E02_EvolutionLawIsGraphSizeIndependent` | PASS (n=16 100 %, n=24 ≥ 90 %) |
 
-Code: `TQM.Core/ResearchXH/CurvatureDynamics.cs` (added `MeanDensity` to `CurvatureFrame`,
+Code: `AT.Core/ResearchXH/CurvatureDynamics.cs` (added `MeanDensity` to `CurvatureFrame`,
 `Quadratic`/`Localized` profile generators, `Pearson`); tests
-`TQM.Tests/ResearchXH/G4E_Phase0_CurvatureEvolutionLawTests.cs`.
+`AT.Tests/ResearchXH/G4E_Phase0_CurvatureEvolutionLawTests.cs`.

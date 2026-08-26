@@ -4,7 +4,7 @@
 
 ### 1. The Composition Hypothesis
 
-TQM-140 showed that information species are eigenmodes of the Theta
+AT-140 showed that information species are eigenmodes of the Theta
 field operator. But the 10 eigenmodes don't fully account for the
 13-19 observed species. Where do the extra species come from?
 
@@ -12,7 +12,7 @@ The composition hypothesis: species are NOT limited to pure eigenmodes.
 They can be **linear and nonlinear combinations** of eigenmodes,
 much like molecular orbitals are combinations of atomic orbitals.
 
-TQM-141 tests this hypothesis by systematically generating all
+AT-141 tests this hypothesis by systematically generating all
 possible mode combinations and checking which match observed species.
 
 ### 2. The Mathematics of Mode Composition
@@ -34,7 +34,7 @@ eigenmode space:
 - Nonlinear pairs: K(K-1)/2 × M³ modes (~810)
 - Total: ~1090 candidate composites
 
-### 3. TQM-141 Findings
+### 3. AT-141 Findings
 
 #### 3.1 Composition Exists, But Doesn't Compress
 1985 composites were generated, producing 100 unique species after
@@ -42,7 +42,7 @@ clustering. This is MORE than the 10 eigenmodes — mode composition
 EXPANDS the catalog rather than compressing it.
 
 #### 3.2 Linear Sufficiency
-All 7 reconstructed TQM-139 species are either pure eigenmodes (2)
+All 7 reconstructed AT-139 species are either pure eigenmodes (2)
 or linear pairs of at most 2 eigenmodes (5). Nonlinear product
 terms are NOT required.
 
@@ -66,16 +66,16 @@ they exist briefly but don't persist as stable species.
 ### 5. The Spectrum-Composition Hierarchy
 
 ```
-Level 0: Eigenmode spectrum (TQM-140)
+Level 0: Eigenmode spectrum (AT-140)
   - 10 pure modes: k=0,...,9
   - Determined by L·v_k = λ_k·v_k
 
-Level 1: Linear compositions (TQM-141)
+Level 1: Linear compositions (AT-141)
   - Pairs of nearby eigenmodes
   - 5 observed species are linear pairs
   - Explains species diversity beyond pure modes
 
-Level 2: Nonlinear compositions (TQM-141)
+Level 2: Nonlinear compositions (AT-141)
   - Products of eigenmodes
   - NOT observed as stable species
   - May exist as transient states
@@ -119,10 +119,10 @@ Level 13: MODE COMPOSITION (141)
 
 ### 8. Implications
 
-#### 8.1 For TQM
+#### 8.1 For AT
 The species catalog is explained by two mechanisms:
-1. **Eigenmode spectrum** (TQM-140): 10 pure modes
-2. **Linear composition** (TQM-141): ~5 additional species as mode pairs
+1. **Eigenmode spectrum** (AT-140): 10 pure modes
+2. **Linear composition** (AT-141): ~5 additional species as mode pairs
 
 Together: 15 species — matching the 13-19 observed range.
 

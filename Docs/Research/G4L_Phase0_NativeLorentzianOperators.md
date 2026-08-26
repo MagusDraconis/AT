@@ -87,5 +87,5 @@ unresolved item; L3 shows the alternating-sign structure is native, but the *spe
 | G4-L01 `G4_L01_OperatorsExhibitIndefiniteSpectrum` | PASS (4/4 indefinite) |
 | G4-L02 `G4_L02_CausalOperatorsAreDistinguishableFromLc` | PASS (Lc PSD vs indefinite) |
 
-Code: `TQM.Core/ResearchXH/CausalSet.cs` + `LorentzianOperator.cs`; tests
-`TQM.Tests/ResearchXH/G4L_Phase0_NativeLorentzianOperatorsTests.cs`.
+Code: `AT.Core/ResearchXH/CausalSet.cs` + `LorentzianOperator.cs`; tests
+`AT.Tests/ResearchXH/G4L_Phase0_NativeLorentzianOperatorsTests.cs`.

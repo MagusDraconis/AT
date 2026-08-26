@@ -86,5 +86,5 @@ is identified with matter. This is a genuinely new, testable resolution of the G
 | G4-ME01 `G4_ME01_DeficitAbundanceStructure` | PASS (void ∫m>0, peak ∫m<0) |
 | G4-ME02 `G4_ME02_RealUnderivedVsDerived` | PASS (ρ underived, matter derived) |
 
-Code: `TQM.Core/ResearchXH/PhysicalObservables.cs` (added `Void`, `MatterDensity`);
-tests `TQM.Tests/ResearchXH/G4ME_Phase0_MatterEmergenceAuditTests.cs`.
+Code: `AT.Core/ResearchXH/PhysicalObservables.cs` (added `Void`, `MatterDensity`);
+tests `AT.Tests/ResearchXH/G4ME_Phase0_MatterEmergenceAuditTests.cs`.

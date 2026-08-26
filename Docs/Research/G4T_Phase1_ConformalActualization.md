@@ -20,7 +20,7 @@ signals against **true** curvature (sphere / hyperbolic).
 
 ## 2. Implementation
 
-`TQM.Core/ResearchXH/ConformalRateGraph.cs` builds a flat square [−1,1]² with density
+`AT.Core/ResearchXH/ConformalRateGraph.cs` builds a flat square [−1,1]² with density
 ρ(x) = 1 + a·x² (deterministic inverse-CDF placement), connected by a Euclidean ε-threshold
 graph. The induced conformally-flat metric g = f·η (f = ρ in d=2) has analytic scalar curvature
 
@@ -97,5 +97,5 @@ distinct roles that the unnormalized and normalized Laplacians each capture only
 | G4-T1-01 `G4_T1_01_ObservablesForRateGradientsAndCurvature` | PASS |
 | G4-T1-02 `G4_T1_02_RateInducedResponseIsMagnitudeDominated` | PASS |
 
-`TQM.Tests/ResearchXH/G4T_Phase1_ConformalActualizationTests.cs` (inherits `ResearchTestBase`,
+`AT.Tests/ResearchXH/G4T_Phase1_ConformalActualizationTests.cs` (inherits `ResearchTestBase`,
 deterministic, `StringBuilder`-composed reports).

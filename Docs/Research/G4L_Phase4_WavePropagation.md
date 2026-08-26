@@ -76,6 +76,6 @@ outside this phase's constraint.
 | G4-L41 `G4_L41_FiniteSpeedSpreadAndClosenessToBdg` | PASS (SC2, SC3) |
 | G4-L42 `G4_L42_PropagationSurvivesRefinement` | PASS (SC4) |
 
-Code: `TQM.Core/ResearchXH/LorentzianOperator.cs` (corrected `PastDirectedLayer`/`RetardedBdg`
+Code: `AT.Core/ResearchXH/LorentzianOperator.cs` (corrected `PastDirectedLayer`/`RetardedBdg`
 convention; `GreenResponse` via solve-with-fallback); tests
-`TQM.Tests/ResearchXH/G4L_Phase4_WavePropagationTests.cs`.
+`AT.Tests/ResearchXH/G4L_Phase4_WavePropagationTests.cs`.

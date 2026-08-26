@@ -50,10 +50,10 @@ biased [4,3,3,2] (α>0) has W = 277,200. The uniform allocation is the maximum-l
 - The system being **most likely** in the maximum-microstate configuration is the standard statistical-mechanics
   bridge (maximum likelihood / ergodic principle) — the bridge from counting to probability.
 - The **one postulate** is **indifference**: actualization is unbiased across scales (no preferred scale, all
-  microstates equiprobable). This is TQM's scale-freeness, already established as native.
+  microstates equiprobable). This is AT's scale-freeness, already established as native.
 
 Entropy maximization is therefore **DERIVED** from counting + indifference; only the indifference principle
-itself is postulated, and it is the same scale-freeness that TQM already assumes.
+itself is postulated, and it is the same scale-freeness that AT already assumes.
 
 ---
 
@@ -69,7 +69,7 @@ This completes the full ρ-dynamics arc at the microscopic level:
 The chain is closed: actualization, unbiased across scales (indifference), most likely occupies the uniform
 α=0 allocation (maximum microstates = maximum entropy), to which the native scale-space diffusion (entropy
 gradient flow) relaxes — producing the log-deficit ρ ∝ ln(Rmax/r) and hence the flat rotation curve. The only
-remaining postulate is indifference (no preferred scale), which is TQM's scale-freeness itself.
+remaining postulate is indifference (no preferred scale), which is AT's scale-freeness itself.
 
 ---
 
@@ -81,5 +81,5 @@ remaining postulate is indifference (no preferred scale), which is TQM's scale-f
 | G4-RHO31 `G4_RHO31_MaximumLikelihoodEvolution` | PASS (diffusion is entropy-increasing) |
 | G4-RHO32 `G4_RHO32_ExactCountingClassification` | PASS (DERIVED, indifference postulate) |
 
-Code: `TQM.Core/ResearchXH/RhoDynamics.cs` (added `LogMicrostates`, `EntropyOf`);
-tests `TQM.Tests/ResearchXH/G4RHO_Phase3_EntropyOriginTests.cs`.
+Code: `AT.Core/ResearchXH/RhoDynamics.cs` (added `LogMicrostates`, `EntropyOf`);
+tests `AT.Tests/ResearchXH/G4RHO_Phase3_EntropyOriginTests.cs`.

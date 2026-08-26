@@ -1,10 +1,10 @@
-# TQM-122: Origin of the Charge Quantum
+# AT-122: Origin of the Charge Quantum
 
 ## Executive Summary
 
 **Classification: D — Fundamental Charge Quantum Origin**
 
-TQM-122 determines WHY Q=1 is the minimal stable topological charge
+AT-122 determines WHY Q=1 is the minimal stable topological charge
 quantum. After evaluating six candidate mechanisms and attempting
 seven sub-quantum constructions, the verdict is:
 
@@ -12,7 +12,7 @@ seven sub-quantum constructions, the verdict is:
 
 ## 1. The Minimality Question
 
-TQM-121 proved Q ∈ ℕ (quantized). But it didn't explain why the
+AT-121 proved Q ∈ ℕ (quantized). But it didn't explain why the
 smallest non-zero value is exactly 1. Why is there no stable
 state with 0 < Q < 1?
 
@@ -65,7 +65,7 @@ This IS the minimal stable condensate.
 
 ## 5. Minimality Proof (5 Steps)
 
-1. Q ∈ ℕ (TQM-121) → Q ∈ {0, 1, 2, ...}. Smallest non-zero = 1.
+1. Q ∈ ℕ (AT-121) → Q ∈ {0, 1, 2, ...}. Smallest non-zero = 1.
 2. Kink-antikink pair = minimal closed topology under R(0)≈R(L)≈0.
 3. w_c > 0 → minimum stable width exists. Below w_c: unstable.
 4. One component of width ≥ w_c = Q=1 = minimal stable configuration.
@@ -93,12 +93,12 @@ Analogous to:
 
 ## 8. Relationship to Prior Experiments
 
-| Experiment | TQM-122 Explanation |
+| Experiment | AT-122 Explanation |
 |-----------|-------------------|
-| TQM-113 | Q=#{R>0.5} is minimal definition — β₀=1 is smallest |
-| TQM-115 | Q=1 plateau = stable region w > w_c |
-| TQM-120 | Q indivisible because w_c > 0 (incompressible) |
-| TQM-121 | Q ∈ ℕ AND Q=1 is minimal (complete spectrum) |
+| AT-113 | Q=#{R>0.5} is minimal definition — β₀=1 is smallest |
+| AT-115 | Q=1 plateau = stable region w > w_c |
+| AT-120 | Q indivisible because w_c > 0 (incompressible) |
+| AT-121 | Q ∈ ℕ AND Q=1 is minimal (complete spectrum) |
 
 ## 9. Conclusion
 

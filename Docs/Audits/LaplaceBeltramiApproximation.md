@@ -1,6 +1,6 @@
 # Laplace-Beltrami Approximation — Report
 
-**Test file:** `TQM.Tests/ResearchXC/LaplaceBeltramiTests.cs`
+**Test file:** `AT.Tests/ResearchXC/LaplaceBeltramiTests.cs`
 **Result:** **PASSED (3/3).**
 
 ---
@@ -36,7 +36,7 @@
 $L_W = D_K - K$ is the **unnormalized weighted graph Laplacian**, the canonical graph-based
 approximation to the Laplace–Beltrami operator (Belkin–Niyogi / Coifman–Lafon). For uniform
 sampling density it converges to $\Delta_g$; for non-uniform density the *normalized* variants
-($I - D^{-1}K$ or $I - D^{-1/2}KD^{-1/2}$) are required. TQM's $L_W$ is the correct *first*
+($I - D^{-1}K$ or $I - D^{-1/2}KD^{-1/2}$) are required. AT's $L_W$ is the correct *first*
 (constant-density) term of this hierarchy — sufficient to couple a (locally flat) metric, not
 yet a general curved one.
 

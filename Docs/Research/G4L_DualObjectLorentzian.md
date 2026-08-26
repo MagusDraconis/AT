@@ -73,5 +73,5 @@ formulation is leak-free without sacrificing the signature.
 | G4-L91 `G4_L91_RetardedPropagatorPropagatesCausally` | PASS (G leak 0.082, dir 1.0, v ≤ 1) |
 | G4-L92 `G4_L92_DualObjectResolvesTension` | PASS (S = G + R2 exact; pair resolves tension) |
 
-Code: `TQM.Core/ResearchXH/LorentzianOperator.cs` (added `DegreeDiagonal`, `RetardedPropagator`,
-`SignatureOperator`); tests `TQM.Tests/ResearchXH/G4L_Phase9_DualObjectLorentzianTests.cs`.
+Code: `AT.Core/ResearchXH/LorentzianOperator.cs` (added `DegreeDiagonal`, `RetardedPropagator`,
+`SignatureOperator`); tests `AT.Tests/ResearchXH/G4L_Phase9_DualObjectLorentzianTests.cs`.

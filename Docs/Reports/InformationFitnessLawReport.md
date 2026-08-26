@@ -1,4 +1,4 @@
-# TQM-136 Information Fitness Law
+# AT-136 Information Fitness Law
 
 ## SCIENTIFIC REPORT
 
@@ -16,7 +16,7 @@ where:
 
 This single-parameter-free formula achieves **perfect rank prediction**
 (Spearman ρ = 1.000, Pearson r = 0.935) against observed selection
-outcomes from TQM-135. All 4 species rankings are predicted exactly:
+outcomes from AT-135. All 4 species rankings are predicted exactly:
 A > D > B > C.
 
 **Predicted rankings match observed rankings 4/4 (100%).**
@@ -24,14 +24,14 @@ A > D > B > C.
 
 ---
 
-## 1. TQM-135 Recap
+## 1. AT-135 Recap
 
-TQM-135 completed the Darwinian triad with genuine selection dynamics:
+AT-135 completed the Darwinian triad with genuine selection dynamics:
 - 329 extinction events under resource constraints
 - 8.6× fitness differential between most and least fit species
 - Dominance shifts: A dominates constrained, D dominates unconstrained
 
-Observed selection coefficients (from TQM-135):
+Observed selection coefficients (from AT-135):
 - A (Uniform Phase-Locked): s = +0.009
 - D (Composite Memory): s = -0.041
 - B (Standing Wave): s = -0.082
@@ -39,7 +39,7 @@ Observed selection coefficients (from TQM-135):
 
 Rank order: A > D > B > C
 
-TQM-136 asks: WHAT determines this order? Is there a fundamental
+AT-136 asks: WHAT determines this order? Is there a fundamental
 quantity driving fitness?
 
 ---
@@ -133,7 +133,7 @@ Occam's razor.
 
 ### Predicted vs Observed Rankings
 
-| Rank | Observed (TQM-135) | Predicted (r/c) | Match? |
+| Rank | Observed (AT-135) | Predicted (r/c) | Match? |
 |------|-------------------|-----------------|--------|
 | 1 | A | A | ✓ |
 | 2 | D | D | ✓ |
@@ -178,7 +178,7 @@ where:
    - Total offspring: N · r
    - Offspring per resource unit: r / c = w
 
-5. **Consistent**: The formula that TQM-135 used by design is confirmed
+5. **Consistent**: The formula that AT-135 used by design is confirmed
    as the OPTIMAL fitness function among 19 candidates.
 
 ### Physical Interpretation
@@ -201,7 +201,7 @@ The ratio r/c captures the trade-off between these opposing forces.
 | Attack | Verdict |
 |--------|---------|
 | Small-N artifact? | Significance maintained despite n=4 |
-| Just rediscovering TQM-135's built-in definition? | **YES** — this is a CONSISTENCY CHECK, confirming that the designed fitness function IS optimal |
+| Just rediscovering AT-135's built-in definition? | **YES** — this is a CONSISTENCY CHECK, confirming that the designed fitness function IS optimal |
 | Random property correlation? | Best predictor exceeds noise threshold |
 | Correct ranking prediction? | **YES** — 4/4 exact matches |
 | Multivariate overfitting? | **YES** — 3-var model overfits; single-var r/c preferred |
@@ -209,10 +209,10 @@ The ratio r/c captures the trade-off between these opposing forces.
 | Null hypothesis? | **REJECTED** |
 
 **Honest assessment**: The best predictor (r/c) was the fitness function
-that TQM-135 used by design. TQM-136 does not discover a NEW fitness law
+that AT-135 used by design. AT-136 does not discover a NEW fitness law
 but VALIDATES that r/c is indeed the optimal choice — no other function
 among 19 candidates outperforms it. This is scientifically important:
-it confirms that the intuition behind TQM-135's fitness model was correct
+it confirms that the intuition behind AT-135's fitness model was correct
 and that resource efficiency is the fundamental driver of information
 species fitness.
 
@@ -258,5 +258,5 @@ Reproduction → Selection → **Fitness Law**
 
 ---
 
-*Experiment TQM-136 completed. Information fitness law discovered.*
+*Experiment AT-136 completed. Information fitness law discovered.*
 *w = r/c is the fundamental driver of information species selection.*

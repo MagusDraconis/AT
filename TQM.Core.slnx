@@ -1,7 +1,0 @@
-<Solution>
-  <Folder Name="/Data/" />
-  <Folder Name="/Documents/" />
-  <Project Path="TQM.App/TQM.App.csproj" />
-  <Project Path="TQM.Core/TQM.Core.csproj" />
-  <Project Path="TQM.Tests/TQM.Tests.csproj" />
-</Solution>

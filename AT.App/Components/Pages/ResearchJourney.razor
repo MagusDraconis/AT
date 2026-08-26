@@ -1,0 +1,11 @@
+@page "/research-journey"
+
+<PageTitle>Research Journey · AT</PageTitle>
+
+<h2 class="section-heading">Research Journey</h2>
+<p class="muted">From the TRM predecessor to the AT v1.0 release.</p>
+
+@foreach (var ev in AtlasDataService.Timeline)
+{
+    <TimelineCard Era="@ev.Era" Title="@ev.Title" Description="@ev.Description" />
+}

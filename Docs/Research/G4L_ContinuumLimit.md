@@ -78,4 +78,4 @@ classification is **PARTIAL MATCH** for both S and G.
 | G4-L101 `G4_L101_RetardedPropagatorIsRetarded` | PASS (strictly retarded, uniform weights) |
 | G4-L102 `G4_L102_WavefrontAndPropagationKernel` | PASS (G causal, S symmetric) |
 
-Code: `TQM.Tests/ResearchXH/G4L_Phase10_ContinuumLimitTests.cs`.
+Code: `AT.Tests/ResearchXH/G4L_Phase10_ContinuumLimitTests.cs`.

@@ -6,7 +6,7 @@ for THE Q-MODEL, by reconciling it against the multiplicity audits (Phases 150�
 
 **Sources:** `LegacyDocs/TRM_V3_0_Memory_and_ModeLocking.pdf` (mode-locking track),
 `TRM_Reconciliation_Audit.md`, `NewChat_Start.md` (Phases 150–151, 157–158),
-`TQM_Encyclopedia.md` / `Coverage_Report.md`.
+`AT_Encyclopedia.md` / `Coverage_Report.md`.
 
 ---
 
@@ -25,16 +25,16 @@ for $m=3$" but "**Not claimed:** theorem-level microscopic closure theorem."
 
 ---
 
-## 2. Comparison against TQM multiplicity (Phases 150–151)
+## 2. Comparison against AT multiplicity (Phases 150–151)
 
-| TRM m=3 concept | TQM counterpart | Verdict |
+| TRM m=3 concept | AT counterpart | Verdict |
 |---|---|---|
 | closure order $m=3$ | internal $N=3$ multiplicity | different mechanism |
 | $\Omega=(q+3)/q$ rational band | no counterpart | absent |
 | $\gamma=1/\Omega$ inverse band | no counterpart | absent |
 | mode-locking (phase-lattice) | no counterpart (Phase 150 searched catastrophe/topology/anthropics/numerology/hidden-params, **not** mode-locking) | absent |
 
-TQM's route to $N=3$ is: **lower bound $N\ge3$ DERIVED** (CP violation needs
+AT's route to $N=3$ is: **lower bound $N\ge3$ DERIVED** (CP violation needs
 $(N{-}1)(N{-}2)/2\ge1$; $S_3$ first non-abelian) ∩ **upper bound $N\le3$ EMPIRICAL**
 ($Z$-width $N_\nu=3$, Higgs excludes $N\ge4$). Internal $N=3$ = derived-lower ∩
 drawn-upper (composite, Phase 157). TRM's $m=3$ is a **continuous rational-band
@@ -52,7 +52,7 @@ bound.
 | **New Mathematics** | $\Omega=(q+3)/q$, $\gamma=1/\Omega$, rational-band mode-locking, closure order $m=3$ |
 | **Contradicted** | *(none)* — Phase 150's no-go theorem covered catastrophe/topology/numerology/anthropics/hidden-params; **mode-locking was not in the search space** |
 
-The m=3 closure is **genuinely new mathematics** with no TQM counterpart, and it is
+The m=3 closure is **genuinely new mathematics** with no AT counterpart, and it is
 **not contradicted** — it sits in the one gap Phase 150 explicitly left open (a
 dynamical mechanism that pins the closure order to 3, i.e. the empirical upper
 bound $N\le3$).
@@ -61,12 +61,12 @@ bound $N\le3$).
 
 ## 4. Independent predictions
 
-| Prediction | Value | TQM counterpart? |
+| Prediction | Value | AT counterpart? |
 |---|---|---|
 | $\Omega$ | $1.16$–$1.19$ | none |
 | $\gamma=1/\Omega$ | $0.84$–$0.86$ | none |
 
-Both are **independent** of TQM (TQM predicts neither). Note: $\gamma\approx0.84\text{–}0.86$
+Both are **independent** of AT (AT predicts neither). Note: $\gamma\approx0.84\text{–}0.86$
 does **not** equal the Koide value $2/3\approx0.667$; the documents provide no
 mapping from $\gamma$ to any specific observable, so the predictions are currently
 **unmapped** (testable only once the physical meaning of $\Omega,\gamma$ is specified).
@@ -103,7 +103,7 @@ missing principle, if it reaches theorem-level.
 
 TRM's $m=3$ closure is **genuinely new mathematics** — a rational-band mode-locking
 mechanism ($\Omega=(q+3)/q$, $\gamma=1/\Omega$, $\Omega\approx1.16\text{–}1.19$) that
-is **not equivalent to, not integrated with, and not contradicted by** TQM's
+is **not equivalent to, not integrated with, and not contradicted by** AT's
 multiplicity route ($N\ge3$ CP-bound ∩ $N\le3$ empirical). Its two predictions are
 independent but currently **unmapped to observables**, and it does **not** directly
 constrain Koide ($\gamma\ne2/3$). Its highest theoretical value is as a candidate

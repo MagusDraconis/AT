@@ -95,5 +95,5 @@ the absence of a restoring term, and a stable bounded cosmology is reachable nat
 | G4-E21 `G4_E21_LogisticTermGivesBistableAttractors` | PASS (12/12 bounded, converged, 0 oscillatory) |
 | G4-E22 `G4_E22_ConservationPinsFlatAndComparison` | PASS (conservation pins flat; comparison table) |
 
-Code: `TQM.Core/ResearchXH/CurvatureFeedback.cs` (added `RestoringTerm`, `SimulateRestoring`);
-tests `TQM.Tests/ResearchXH/G4E_Phase2_RestoringMechanismsTests.cs`.
+Code: `AT.Core/ResearchXH/CurvatureFeedback.cs` (added `RestoringTerm`, `SimulateRestoring`);
+tests `AT.Tests/ResearchXH/G4E_Phase2_RestoringMechanismsTests.cs`.

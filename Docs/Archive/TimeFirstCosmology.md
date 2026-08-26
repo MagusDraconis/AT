@@ -18,7 +18,7 @@ expansion as emergent (i.e., derived, not assumed).
 ## Consequences
 - All FLRW distances (D_L, D_A, χ) are reproduced; BAO, CMB acoustic scale, SN Ia all pass.
 - `g† = c·d(ln γ)/dt/2π = cH/2π`: the RAR acceleration scale is the cosmic clock's
-  log-acceleration — a natural "time-first" statement of TQM's relation.
+  log-acceleration — a natural "time-first" statement of AT's relation.
 - "Dark energy" becomes "clock acceleration" (τ̈/τ̇ > 0); ΩΛ is no longer a substance, but a
   property of the time axis.
 

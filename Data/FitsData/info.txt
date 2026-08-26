@@ -25,10 +25,10 @@ Per-galaxy data products include:
   - PSF image
 plus derived kinematic maps in the reduced releases.
 
-Why this data is used by TQM
+Why this data is used by AT
 ----------------------------
-These cubes feed TQM's galaxy-kinematics analysis and the QG-070
-RAR-evolution test. TQM predicts the RAR acceleration scale grows with
+These cubes feed AT's galaxy-kinematics analysis and the QG-070
+RAR-evolution test. AT predicts the RAR acceleration scale grows with
 redshift:
 
     g†(z) = c · H(z) / (2π)
@@ -39,7 +39,7 @@ redshift z should scale as
     g†(z) / g†(0) = sqrt(Ωm·(1+z)^3 + ΩΛ).
 
 A high-z rotation curve (e.g. from H-alpha kinematics) is the sharpest
-single test distinguishing TQM (evolving g†) from MOND (constant a0)
+single test distinguishing AT (evolving g†) from MOND (constant a0)
 and LCDM (no fundamental scale).
 
 Current file(s)
@@ -52,5 +52,5 @@ Current file(s)
 
 How to analyze a cube
 ---------------------
-  TQM.Core.Fits.FitsAnalyzer.Analyze(path)  (C#, FITS.Lib / nom.tam.fits)
-  or run the test TQM_FitsAnalyzerTests in TQM.Tests/ResearchQG/.
+  AT.Core.Fits.FitsAnalyzer.Analyze(path)  (C#, FITS.Lib / nom.tam.fits)
+  or run the test AT_FitsAnalyzerTests in AT.Tests/ResearchQG/.

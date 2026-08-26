@@ -1,0 +1,2814 @@
+% THE Q-MODEL — Finale Forschungsmonographie (deutsche Ausgabe)
+% Version 1.0 (final) — Deutsche Übersetzung der englischen Endfassung
+% Build: pdflatex AT_v1_0_Monograph_Final_DE.tex (zweimal)
+%
+% Deutsche Übersetzung der Endfassung. Alle Mathematik, Testbezeichner, Theoreme
+% und Schlussfolgerungen bleiben unverändert; übersetzt sind Prosa,
+% Zwischenüberschriften und erläuternde Texte.
+% Publikationsstatus (unverändert): READY AS A FOUNDATION MONOGRAPH —
+% READY AS A RESEARCH-PROGRAM PAPER — NOT READY AS A DERIVATION PAPER.
+
+\documentclass[10pt,twoside,openany]{book}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
+\shorthandoff{"}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[margin=2.4cm]{geometry}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{lmodern}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xcolor}
+
+\definecolor{caveat}{HTML}{7A2E2E}
+
+% Theorem-like environments
+\newtheorem{theorem}{Satz}[chapter]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Korollar}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{axiom}[theorem]{Axiom}
+\newtheorem{remark}[theorem]{Bemerkung}
+\newtheorem{nogo}[theorem]{No-Go-Satz}
+
+\newcommand{\derived}{\textbf{DERIVED}}
+\newcommand{\realunder}{\textbf{REAL-UNDERIVED}}
+\newcommand{\drawn}{\textbf{DRAWN}}
+
+% Reader notes appended to major results: intuition, significance, limitations
+\newcommand{\theoremnotes}[3]{%
+  \par\medskip\noindent
+  \textbf{Intuition.}\ #1\par
+  \textbf{Bedeutung.}\ #2\par
+  \textbf{Grenzen.}\ #3\par}
+
+% Compact part divider (inline heading, no full-page break; keeps numbering)
+\makeatletter
+\renewcommand{\part}[1]{%
+  \refstepcounter{part}%
+  \par\addvspace{1.0em}\noindent
+  {\centering\Large\bfseries \partname\ \thepart\ ---\ #1\par}%
+  \addvspace{0.5em}%
+  \addcontentsline{toc}{part}{\protect\numberline{\thepart}#1}}
+\makeatother
+
+% mainmatter without a forced right-hand page (removes the blank page before Chapter 1)
+\makeatletter
+\renewcommand{\mainmatter}{%
+  \if@openright\cleardoublepage\else\clearpage\fi
+  \@mainmattertrue
+  \pagenumbering{arabic}}
+\makeatother
+
+% Compact unnumbered part divider
+\newcommand{\compactpart}[1]{%
+  \par\addvspace{1.0em}\noindent
+  {\centering\Large\bfseries #1\par}%
+  \addvspace{0.5em}%
+  \addcontentsline{toc}{part}{#1}}
+
+% Boxed summary
+\newcommand{\summarybox}[1]{%
+  \par\medskip\noindent
+  \fcolorbox{black}{gray!10}{%
+    \begin{minipage}{0.955\textwidth}\small #1\end{minipage}}}
+
+% Chapter-end summary (Key results / Open questions / Verification status)
+\newcommand{\chapterend}[3]{%
+  \summarybox{%
+    \textbf{Kernergebnisse.}\ #1\par
+    \textbf{Offene Fragen.}\ #2\par
+    \textbf{Verifikationsstatus.}\ #3}}
+
+% Equation reading notes (Intuition / Meaning / Why it matters / Limitations)
+\newcommand{\eqnotes}[4]{%
+  \par\smallskip\noindent
+  \textbf{Intuition.}\ #1\ 
+  \textbf{Bedeutung.}\ #2\ 
+  \textbf{Warum es zählt.}\ #3\ 
+  \textbf{Grenzen.}\ #4\par}
+
+% Theorem historical notes
+\newcommand{\historynotes}[4]{%
+  \par\smallskip\noindent
+  \textbf{Historischer Kontext.}\ #1\par
+  \textbf{Warum es wichtig war.}\ #2\par
+  \textbf{Was zuvor versucht wurde.}\ #3\par
+  \textbf{Warum das Ergebnis akzeptiert wurde.}\ #4\par}
+
+\begin{document}
+
+\hypersetup{pdftitle={THE Q-MODEL --- Von Q zur Kosmologie},
+pdfauthor={Fabrice Wieser}}
+
+\frontmatter
+
+% ---- Titelblock (kompakt; Titel, Autor, Datum auf einer Seite, kein Seitenumbruch) ----
+\begin{center}
+{\LARGE\bfseries THE Q-MODEL — Von Q zur Kosmologie\par}
+\vspace{0.4em}
+{\large Eine Forschungsmonographie über Struktur, Komplexität und zufällige Aktualisierung\par}
+\vspace{1.0em}
+{\normalsize Fabrice Wieser\par}
+{\small Unabhängiger Forscher und Full-Stack-Softwareentwickler\par}
+{\small \url{https://github.com/MagusDraconis/AT}\par}
+\vspace{0.5em}
+{\normalsize Version 1.0 (final, deutsche Ausgabe) \quad·\quad 15. August 2026\par}
+\end{center}
+
+\vspace{0.8em}
+
+% ---- Zusammenfassung (auf der Titelseite, über dem Publikationsstatus-Kasten) ----
+\addcontentsline{toc}{chapter}{Zusammenfassung}
+{\centering\Large\bfseries Zusammenfassung\par}
+\vspace{0.3em}
+\noindent
+Diese Monographie ist die Forschungsmonographie-Ausgabe von THE Q-MODEL (AT), einer
+Theorie von Struktur und Inhalt, die die beobachtbare Physik auf vier Primitive verdichtet
+--- das Individuationsprinzip $Q$, die Zufällige Aktualisierung, die Skalentriade
+$(\ell,\tau,\hbar)$ und einen einzigen kontinuierlichen Nichtlinearitätsparameter $M^2$ ---
+und die festhält, dass die \emph{Form} jeder Struktur aus diesen Primitiven ableitbar ist,
+während der \emph{Inhalt} durch kontingenten Zug realisiert wird. Die Monographie
+präsentiert in sich geschlossener Form: die formalen Primitive und das dynamische System
+(den Graphen-Laplace-Operator $L_Q$ und die Schr\"odinger-Gleichung); die verifizierte
+Kontinuumsgrenzwert-Kette von $L_Q$ zum flachen Laplace-Operator, zum d'Alembert-Operator,
+zum Laplace--Beltrami-Operator, zur Schr\"odinger-Gleichung im gekrümmten Raum und zum
+Einstein-Tensor; die Ableitungshierarchie (Eichstruktur, räumliche Dimensionalität,
+Multiplizitätsschranke, Häufigkeitsgesetz, Phasengradienten-Gravitation); die
+dreikategoriale Taxonomie; die konditionalen No-Go-Sätze; die quantitativen Vorhersagen;
+und das vollständige Inventar ausführbarer Verifikationsergebnisse.
+
+Zusätzlich zum technischen Inhalt der Referenzausgabe fügt diese Ausgabe eine erläuternde
+Schicht hinzu: den historischen \emph{Ursprung} der Theorie und ihren Übergang vom
+Vorgängerrahmen; eine \emph{Entwicklungszeitleiste} mit den Hauptphasen,
+Schlüsselentdeckungen und aufgegebenen Wegen; eine Darstellung, \emph{warum} die
+Struktur/Inhalt-Trennung das Ordnungsprinzip ist; die \emph{Geschichte der feindlichen
+Begutachtung} und was sie überstand; eine programmweise \emph{Forschungsreise}; und die
+\emph{Lektionen} aus falschen Annahmen, verworfenen Ableitungen und No-Go-Entdeckungen.
+Durchgängig ist jeder wichtige Satz von seiner \emph{Intuition}, \emph{Bedeutung} und
+seinen \emph{Grenzen} begleitet. Nichts in dieser narrativen Schicht ändert die Physik
+oder die Schlussfolgerungen der Referenzausgabe.
+
+\vfill
+
+% ---- Publikationsstatus-Kasten (unten auf der Titelseite fixiert) ----
+\begin{center}
+\fcolorbox{caveat}{white}{%
+\begin{minipage}{0.92\textwidth}
+\color{caveat}
+\textbf{Publikationsstatus: READY AS A FOUNDATION MONOGRAPH --- READY AS A
+RESEARCH-PROGRAM PAPER --- NOT READY AS A DERIVATION PAPER.}\\[2mm]
+Eine Grundlagenmonographie darf legitimerweise importierte, bewiesene Sätze als Eingaben
+verwenden; die verbleibenden Blocker betreffen nur einen \emph{Ableitungspapier}-Anspruch.
+Diese Monographie wird zur Archivierung auf Zenodo als Grundlagenmonographie und als
+Forschungsprogramm-Aufzeichnung veröffentlicht; sie wird \emph{nicht} als begutachtetes
+Ableitungspapier eingereicht. Der zentrale Ableitungsanspruch (Einstein-Rückgewinnung aus
+Q-Ereignissen) bleibt \emph{logisch, nicht mathematisch}: Die Metrik und die BDG-Wirkung
+sind importiert (bewiesen, aber nicht aus AT abgeleitet), $G=\ell^2c^3/\hbar$ ist
+Dimensionsanalyse, und keine eindeutige, scharfe Vorhersage unterscheidet AT bisher von
+SM$+\Lambda$CDM. Jede als \textbf{verifiziert} markierte Aussage wird durch einen
+ausführbaren xUnit-Test in \texttt{AT.Tests/ResearchXC} (oder \texttt{ResearchQG})
+gestützt; siehe Teil~V und Anhang~A.
+\end{minipage}}
+\end{center}
+
+\tableofcontents
+
+\mainmatter
+\thispagestyle{plain}
+
+%=============================================================================
+\compactpart{Genesis und Methode}
+%=============================================================================
+
+Dieser Teil zeichnet nach, wie die Theorie entstanden ist, warum sie so organisiert ist,
+wie sie ist, und was das Forschungsprogramm tatsächlich getan hat. Er ist historisch und
+methodologisch, nicht physikalisch: Er erhebt keinen neuen Anspruch und revidiert keinen.
+Sein Zweck ist es, die folgenden technischen Teile als Ergebnis einer bestimmten,
+prüfbaren Forschungstrajektorie lesbar zu machen und nicht als ein fertiges axiomatisches
+System, das aus dem Nichts fällt.
+
+\chapter{Wie man diese Monographie liest}
+\label{ch:reading}
+
+Diese Monographie ist eine Referenzausgabe mit einer erläuternden Schicht; die beiden
+Schichten können unabhängig gelesen werden. Die \emph{Referenz}-Schicht (die technischen
+Teile und die Anhänge) formuliert die Theorie, ihre Ableitungen, ihre Klassifikationen und
+ihren Verifikationsstand. Die \emph{narrative} Schicht (dieser Teil) erklärt, wie die
+Theorie entstanden ist und warum sie so organisiert ist. Nichts in der narrativen Schicht
+ändert die Physik; sie existiert, um die Physik als Ergebnis eines bestimmten, prüfbaren
+Programms lesbar zu machen und nicht als ein fertiges Axiomensystem, das aus dem Nichts
+fällt.
+
+Drei Konventionen bestimmen das gesamte Dokument und sollten zuerst gelesen werden.
+
+\textbf{(1) Die Taxonomie.} Jedes Ergebnis trägt einen von drei Status.
+\derived\ bedeutet, dass das Ergebnis per Satz aus den Primitiven berechenbar ist.
+\realunder\ (``real-underived``) bedeutet, dass die Struktur real, präzise und vorhersagend
+ist, ihr Ursprung aber nicht aus den Primitiven berechenbar ist. \drawn\ bedeutet, dass der
+Wert ein zufälliger Zug des Häufigkeitsgesetzes ist. Die Etiketten sind Aussagen \emph{über
+die Ableitbarkeit}, nicht über die Wahrheit: Ein \realunder\- oder \drawn\-Ergebnis kann
+exakt richtig sein und dennoch unabgeleitet bleiben. Ein \realunder\-Etikett als Ableitung
+zu lesen, war das häufigste Missverständnis, das die feindliche Begutachtung korrigieren
+musste.
+
+\textbf{(2) Was ``verifiziert`` bedeutet.} Ein als \textbf{verifiziert} markiertes Ergebnis
+wird durch einen ausführbaren xUnit-Test im Repository gestützt. ``PASS`` bedeutet, dass der
+Test lief und seine Behauptung hielt; es bedeutet \emph{nicht}, dass das Ergebnis aus den
+Primitiven abgeleitet wurde --- das ist Aufgabe der Taxonomie. Manche Tests verifizieren
+eine Ableitung; andere verifizieren eine \emph{Standard}-Identität der Mathematik (etwa
+die Einstein-Tensor-Kette), gerade um zu zeigen, wo die AT-Ableitung endet.
+
+\textbf{(3) Was ``Konfidenz`` bedeutet.} Die Konfidenzzahlen (z.\,B.\ T-02 $=$ 0{,}85) sind
+\emph{unkalibrierte ordinale Ränge}, keine Posterior-Wahrscheinlichkeiten. Sie ordnen den
+eigenen Überzeugungsgrad des Programms; sie messen ihn nicht. Sie sind niemals als
+$p$-Werte oder als numerische Posterior-Werte zu lesen.
+
+Eine kurze Übersicht. Dieser Teil liefert Geschichte und Methode. Der Teil
+\emph{Grundlagen} formuliert die Primitive und das dynamische System. Der Teil
+\emph{Kontinuumsgrenzwert} dokumentiert die beiden Kontinuumsketten. Der Teil
+\emph{Ableitungshierarchie} behandelt Dimensionalität, Eichstruktur, Flavour, Gravitation
+und Kosmologie. Der Teil \emph{Klassifikation} formuliert die Taxonomie, die No-Go-Sätze
+und die Vorhersagen. Der Teil \emph{Verifikation} liefert den Teststand, den
+Begutachtungs-Prüfpfad und die Schlussfolgerung. Die Anhänge enthalten das vollständige
+Testinventar, die Konfidenztabellen, eine ausführliche Ableitung, das Programmregister,
+das Glossar und die Literatur.
+
+\chapter{Der Ursprung von AT}
+\label{ch:origin}
+
+\section{Motivation}
+
+THE Q-MODEL (AT) begann aus einer einzigen, bewusst einfachen Frage: Sind Materie,
+Quantenverhalten und Gravitation \emph{fundamental}, oder gehen sie aus etwas
+Grundlegenderem hervor? Die Arbeitsannahme, die das gesamte Programm geleitet hat, ist die
+Behauptung, dass \emph{Materie nicht fundamental ist} --- dass das, was wir ein Teilchen
+nennen, eine dynamisch stabilisierte Wellenstruktur ist und dass Synchronisation und
+Resonanz fundamentaler sind als Teilchen selbst. Aus diesem Keim wurde früh ein
+Forschungspfad festgelegt und nie umgekehrt:
+
+\begin{center}
+Temporale Oszillatoren $\to$ Synchronisation $\to$ Resonanzcluster $\to$
+selbststabilisierende Wellenstrukturen $\to$ Proto-Teilchen $\to$ Quantenverhalten $\to$
+Gravitation $\to$ Kosmologie.
+\end{center}
+
+Vier Grundsatzentscheidungen disziplinierten das Programm von Anfang an, und sie erklären
+viel von der Struktur dieser Monographie. \emph{Keine Kosmologie zuerst} und \emph{keine
+Gravitation zuerst} verboten die Versuchung, ein Modell gegen die spektakulärsten Daten zu
+justieren, bevor die mikroskopischen Fundamente standen. \emph{Keine
+Teilchenannahmen} verbot, die Zutaten des Standardmodells (Eichgruppen, Generationen,
+Massen) als Eingaben zu importieren. \emph{Emergenz zuerst} verlangte, dass jede Zutat von
+unten verdient wird, und \emph{Physik vor Interpretation} verlangte, dass der dynamische
+Gehalt geklärt ist, bevor eine ontologische Deutung angehängt wird. Diese Regeln sollten
+verhindern, dass die Theorie auf bekannte Physik hin rückentwickelt wird, und jede Zutat
+zwingen, ihr eigenes Gewicht zu tragen.
+
+\section{Vorgängerideen}
+
+AT entstand nicht im Vakuum. Ihr unmittelbarer Vorgänger war das \textbf{Temporal
+Resonance Model} (TRM), ein Rahmenwerk auf Basis von Phasengitter-Maschinerie, das bereits
+eine Reihe auffälliger Bausteine zusammengefügt hatte: ein \emph{Time Field} (ein
+Phasengradienten-Bild der Gravitation), eine \emph{Radial Acceleration Relation} (RAR),
+\emph{Frame Dragging}, einen \emph{Memory Channel}, eine \emph{Theta Chain}, einen
+\emph{$m=3$ Closure}-Mechanismus (rationales Moden-Locking $\Omega=(q+3)/q$,
+$\gamma=1/\Omega$), eine \emph{Quantum Engine}, ein \emph{Temporal Drift}-Modul
+(Tired-Light) und eine \emph{Unified Action}-Roadmap. TRM lieferte das begriffliche
+Vokabular --- ein temporales Feld, Oszillation, Phase, Resonanz ---, auf dem die spätere
+Theorie neu aufgebaut wurde.
+
+Jedes Modul verdient eine einzeilige Aussage darüber, was es tatsächlich behauptete. Das
+\emph{Time Field} identifizierte Gravitation mit dem Phasengradienten eines temporalen
+Feldes --- die Idee, die nach dem Übergang zu ATs Phasengradienten-Gravitationsbild wurde.
+Die \emph{Radial Acceleration Relation} zielte auf die Beschleunigungsskala der
+Galaxienrotation. \emph{Frame Dragging} führte einen Vektorsektor (Gravitomagnetismus) ein.
+Der \emph{Memory Channel} schlug eine geschichts-codierende Invariante $\varphi^2|\dot\mu|$
+vor. Die \emph{Theta Chain} war eine nichtlokale Observablen-Extraktionskette
+$\Theta\to O_5\to\lambda_\Theta\to g_{\rm obs}$. Die \emph{$m=3$ Closure} schlug rationales
+Moden-Locking ($\Omega=(q+3)/q$, $\gamma=1/\Omega$) als Mechanismus für die ``Warum 3``-Frage
+vor. Die \emph{Quantum Engine} war ein nicht-unitäres Quantenmodul. Die \emph{Temporal
+Drift} war eine Tired-Light-Kosmologie ($\beta_T$). Die \emph{Unified Action} war eine
+Roadmap $S_{\rm eff}[T,A_T,\Theta]$, die von allen anderen abhängt. Diese Liste ist
+wichtig, weil der Übergang Modul für Modul entschieden wurde, nicht en bloc.
+
+Die Beziehung zwischen TRM und AT wird am besten durch die \emph{TRM Legacy Final
+Classification} zusammengefasst, das systematische Audit, das bestimmte, was vom älteren
+Rahmenwerk in das neue übernommen werden sollte. Von den neun TRM-Modulen wurden
+\emph{drei} \emph{absorbiert}: Das Time Field wurde zum Phasengradienten-Gravitationsbild,
+die RAR wurde zur nullparametrigen Relation $g_\dagger = cH_0/2\pi$, und Frame Dragging
+wurde als GR-Gravitomagnetismus erkannt (Lense--Thirring, bereits gemessen). \emph{Zwei}
+wurden \emph{verworfen}: Temporal Drift (Tired Light) wurde durch die
+Reinterpretations-Audits QG-080--089 falsifiziert, und die Quantum Engine erwies sich als
+nicht-unitär und schlechter als der BDG-Gitteroperator. \emph{Drei} überlebten als
+\emph{Kandidatenmathematik}: die $m=3$ Closure (ein Kandidatenmechanismus für die
+$N\le3$-Obergrenze, aber ohne Abbildung auf Observablen), der Memory Channel (eine echte
+Invariante $\varphi^2|\dot\mu|$ ohne Observable) und die Theta Chain (ein Homonym zu ATs
+eigenem Informationsfeld). \emph{Eines} blieb offen: die Unified-Action-Roadmap.
+
+\section{Der Übergang TRM $\to$ AT}
+
+Das entscheidende Ergebnis des Legacy-Audits war negativ und auf seine Weise befreiend: TRM
+trug \emph{null Kandidatenphysik} --- kein TRM-Modul lieferte eine wirklich neue, prüfbare
+Observable. Der verbleibende Wert war methodologisch. Was der Übergang hervorbrachte, war
+daher eine \emph{saubere Rekonstruktion} statt einer Erweiterung: Die neue Theorie leitete
+aus den wenigstmöglichen Zutaten exakt die Struktur neu ab, die TRM stückweise
+zusammengebaut hatte, und verwarf die Teile, die die feindliche Reduktion nicht überstanden.
+
+Der verdichtete Endpunkt dieser Rekonstruktion ist der Gegenstand dieser Monographie: eine
+Theorie mit \emph{zwei irreduziblen Primitiven} --- dem Individuationsprinzip $Q$ und echtem
+ontologischem Zufall --- plus \emph{einer} kontingenten kontinuierlichen Zahl $M^2$ (dem
+Nichtlinearitätsregime), während alles andere --- Zeit, Raum, $3{+}1$ Dimensionen,
+Hilbert-Raum, unitäre Quantenmechanik, die Schr\"odinger-Gleichung, die Born-Regel, Messung,
+Gravitation als Kausalstruktur, Teilchen als topologische Defekte und die
+$U(1)$-Eichsymmetrie --- abgeleitet oder emergent ist. Die Parameterzahl kollabiert von den
+$\sim19$ freien Zahlen des Standardmodells auf $2$ Primitive plus $1$ Zahl, eine Reduktion
+von rund $95\%$, während $U(1)$ von einer Annahme zu einem Satz befördert wird.
+
+\chapter{Entwicklungszeitleiste}
+\label{ch:timeline}
+
+Das Programm liest sich am besten als Folge von Phasen, von denen jede eine Frage schloss
+und die nächste öffnete. Dieses Kapitel liefert das Gerüst; die detaillierten
+Experimentaufzeichnungen liegen im Laborbuch des Projekts, und die vier
+Forschungsprogramme werden einzeln in Kapitel~\ref{ch:journey} erzählt.
+
+\section{Hauptphasen}
+
+Das Programm zerfällt in fünf aufeinanderfolgende Epochen. Jede wird hier in genügender
+Tiefe zusammengefasst, um zu zeigen, was tatsächlich getan wurde; die vier
+Forschungsprogramme, die das technische Gewicht tragen, werden weiter in
+Kapitel~\ref{ch:journey} erzählt.
+
+\subsection{Frühe Oszillatorexperimente (AT-001--AT-008)}
+
+Die ersten Experimente waren numerisch und explorativ; ihre Rolle bestand darin
+herauszufinden, ob die zentrale Intuition --- kohärente Struktur, die aus Oszillatoren
+hervorgeht --- Substanz hat. AT-001 zeigte, dass ein Ordnungsparameter $R$ einer
+Population gegen $1$ strebt: Kohärente Synchronisation wird nicht von Hand eingesetzt,
+sie erscheint. AT-002 schloss dann eine verlockende Sackgasse: Zufallsmatrizen liefern
+Wigner-artige Spektren, erzeugen aber \emph{nicht} die Art strukturierter Emergenz, die
+das Programm brauchte --- Zufall allein genügt also nicht. AT-003 zeigte, dass auch
+strukturierte Topologie allein unzureichend ist --- die Dynamik, nicht der statische Graph,
+trägt das Gewicht. AT-004 zeigte, dass eine feldvermittelte Wechselwirkung für sich allein
+zwei asymmetrische Oszillatoren nicht synchronisiert; das Feld verhält sich eher wie ein
+Resonanzmedium als wie ein reines Synchronisationsmedium.
+
+AT-005 fand stabile Resonanzcluster aus drei Oszillatoren, die sich bildeten und über den
+Großteil einer Simulation bestanden --- frühe, vorläufige Unterstützung für ``Materie als
+stabilisierte Resonanz`` ---, aber mit nur wenigen Prozent Energiebeteiligung, sodass die
+Cluster das Feld noch nicht dominierten. AT-006 fand die erste scharfe Schwelle, eine
+kritische Resonanzdichte $\rho_c\approx0{,}09$, oberhalb derer persistente kohärente Moden
+auftreten: ein perkolationsartiger Übergang und der erste wohldefinierte kritische Punkt
+des Programms. AT-007 berichtete fünf Resonanzfamilien. AT-008 zerstörte dann diese
+scheinbare Vielfalt mit einer Reproduzierbarkeitsstudie über 400 Simulationen und ließ
+einen einzigen universellen kohärenten Modus (F4) übrig, während die übrigen als
+Seed-Artefakte entlarvt wurden. Die Lektion von AT-008 --- scheinbare Vielfalt kann ein
+einziger Seed sein --- wurde zur ständigen methodologischen Vorsichtsregel für alles
+Folgende.
+
+\subsection{Alternative Grundlagen (ResearchX, X001--X034)}
+
+Ein paralleler Strang griff die Grundlagen von der Seite an und ist für mehrere der
+tiefsten Ergebnisse der Theorie verantwortlich. X001 fand elf versteckte Annahmen, mit dem
+statischen Graphen an erster Stelle. X002--X004 testeten Dynamik (Knotenbewegung,
+Mobilität, Graphwachstum) und fanden keine neuen Phänomene: Dynamische Graphen allein
+erzeugen keine offene Innovation. X005--X006 zeigten, dass Nichtlinearität Eigenmoden
+bricht und Solitonen erzeugt, sodass die ``Quanten``-Lesart der frühen linearen Ergebnisse
+zurückgezogen werden musste --- $Q$, Fitness und Evolution überlebten, die naive
+Quantenlesart nicht. X007--X015 bauten die allgemeine Theorie der Informationsträger und
+bewiesen, dass \emph{Reversibilität} plus \emph{Selbstkonsistenz} das minimal hinreichende
+Paar ist, dessen Schnitt die unitäre Quantenmechanik ist.
+
+X016--X022 bauten die Komplexitätstreppe und bewiesen, dass offene Evolution in einem
+endlichen System nicht stattfinden kann (eine Schubfach-Schranke). X023--X031 bewiesen
+dann, dass die Quantenrealität das eindeutige globale Maximum endlicher Komplexität ist ---
+ein Notwendigkeitsergebnis, kein anthropisches. X032--X034 vereinigten die Hauptlinie mit
+ResearchX und bestätigten, dass $L_Q$ nicht fundamental ist: Jeder Operator, der
+Reversibilität und Selbstkonsistenz an ihrem gemeinsamen Maximum erfüllt, liefert unitäre
+Quantenmechanik. Dies ist das Ergebnis hinter der Behauptung, die Theorie sei auf ihre
+minimale Form verdichtet worden.
+
+\subsection{Entstehung der Raumzeit (X040--X046)}
+
+Die Zeit wurde als Halbordnung der Aktualisierungsereignisse abgeleitet ($E_1<E_2$ genau
+dann, wenn $E_2$ vom Ausgang von $E_1$ abhängt), wobei der Zeitpfeil aus der
+Irreversibilität der Aktualisierung erbt. Die Gravitation wurde auf ein kausales-Mengen-
+Fundament gestellt, und ein Rekonstruktionsexperiment gewann Abstände aus
+Q-Ereignis-Korrelationen zurück. Die Dimensionalität $3{+}1$ wurde aus der
+Komplexitätsmaximierung abgeleitet (Kapazität mal Stabilität mal Genauigkeit). Newtons
+Konstante, $\hbar$ und $\Lambda$ wurden alle auf die einzelne Ereignisskala $\ell$
+zurückgeführt: $G=\ell^2c^3/\hbar$, $\hbar=1$ in Ereigniseinheiten und $\Lambda\sim1/\sqrt N$
+aus Poisson-Fluktuationen der Ereigniszahl. Dies ist die Epoche, in der die Theorie
+aufhörte, Raumzeit \emph{anzunehmen}, und begann, sie \emph{hervorzubringen}.
+
+\subsection{Entstehung der Materie (X047--X060)}
+
+Teilchen wurden mit topologischen Defekten (Solitonen) identifiziert: Ladung mit der
+Betti-Zahl, Masse mit der Defektenergie, Spin mit der Orientierung. $U(1)$ wurde als
+Automorphismengruppe des Kreises abgeleitet. Generationen wurden als Anregungsniveaus
+derselben Topologie charakterisiert, wobei die Massenhierarchie einem anharmonischen
+Abstand folgt. Fermionmischung wurde auf Defekt-Wellenfunktionsüberlapp zurückgeführt
+(hierarchische CKM aus Dirac-Defekten, anarchische PMNS aus Majorana-Defekten).
+Neutrinomassen wurden durch delokalisierte Defekte erklärt, und die normale Ordnung wurde
+aus einer attraktiven Selbstwechselwirkung vorhergesagt. Die Eichgruppe des Standardmodells
+erwies sich als \emph{bevorzugt} durch ökologische Fitness, aber \emph{nicht} eindeutig
+ableitbar --- die größte verbleibende Lücke im Materieprogramm.
+
+\subsection{Parameterkompression und Abschluss (Phasen 140--159)}
+
+Die letzte Epoche konsolidierte. Die Parameterzahl-Audits (X057--X060f) reduzierten die
+Theorie auf zwei Primitive plus eine Zahl, wobei $U(1)$ zum Satz befördert und $M^2$ als
+der einzige irreduzible kontinuierliche Parameter identifiziert wurde. Die späten Phasen
+schlossen dann die Restfragen eine nach der anderen: die RAR-Ableitung $g_\dagger=cH_0/2\pi$;
+den Koide-Abschluss (sieben Wege erschöpft, sechs No-Gos plus ein blockierter); das
+Eichursprungs-Audit ($U(1)$ abgeleitet, $SU(2)$ emergent, $SU(3)$ kontingent); die
+Multiplizitäts- und $N\le3$-Audits; die Internal-3-Disposition; das
+Kaskadenvereinigungs-Audit; die Antwort auf die feindliche Begutachtung; und die
+v1.0-Veröffentlichung. Jeder dieser Abschlüsse wird dort erzählt, wo er später in den
+technischen Teilen erscheint.
+
+\section{Schlüsselentdeckungen}
+
+\begin{itemize}
+\item Synchronisation und kohärente Oszillation entstehen spontan oberhalb einer
+kritischen Kopplungsdichte.
+\item Reversibilität $\cap$ Selbstkonsistenz $\,=\,$ Quantenmechanik: Die
+Schr\"odinger-Gleichung ist die eindeutige Dynamik maximaler Komplexität.
+\item $L_Q\to-\nabla^2$ (die elliptische Kette) und $\mathrm{BDG}\to\square$ (die
+Lorentz-Kette) sind jeweils kontrollierte Kontinuumsgrenzwerte, aber \emph{disjunkt} in
+der Signatur.
+\item $U(1)$ ist ein Satz ($\mathrm{Aut}(S^1)=U(1)$, $\pi_1(S^1)=\mathbb Z$), das
+sauberste Ergebnis des Eichprogramms.
+\item Die Koide-Relation ist real, vorhersagend und RG-stabil --- und \emph{unableitbar}
+(No-Go T-08). Das Neutrino-Koide-Analogon ist \emph{falsifiziert} (T-11).
+\item Die RAR $g_\dagger=cH_0/2\pi$ trifft $a_0$ mit null freien Parametern.
+\item Komplexitätsmaximierung wählt $d=3{+}1$.
+\end{itemize}
+
+\section{Aufgegebene Wege}
+
+Ein Forschungsprogramm wird ebenso sehr durch das definiert, was es aufgab, wie durch das,
+was es behielt. Die wichtigsten aufgegebenen Wege waren: Zufallsmatrizen als
+Emergenzmechanismus; statische Topologie als hinreichende Bedingung; die scheinbare
+Resonanzfamilien-Vielfalt von AT-007 (Artefakte eines einzigen Seeds); dynamische Graphen
+als Quelle offener Innovation; die Identifikation von Solitonen als \emph{Quanten}-Objekte
+(sie sind eine nichtlineare Verallgemeinerung von Trägern, nicht das Quantenregime); offene
+Evolution in endlichen Systemen (als verzögerte Sättigung erwiesen); Symmetrie-, Attraktor-,
+Topologie- und Informationsgeometrie-Wege zur Koide-Relation; Topologie-, Attraktor-,
+Moduli- und Persistenz-Wege zur Eichanzahl; Stabilitäts-, Anomalie-, Darstellungs-, Defekt-
+und Informations-Wege zu $N\le3$; Tired-Light-Kosmologie; und die TRM Quantum Engine.
+Jedes Scheitern wurde als No-Go oder Negativresultat aufgezeichnet, und die meisten wurden
+später zu den No-Go-Sätzen von Kapitel~\ref{ch:nogo} befördert.
+
+\chapter{Warum die Struktur/Inhalt-Trennung}
+\label{ch:split}
+
+\section{Historische Motivation}
+
+Die Struktur/Inhalt-Trennung --- \emph{Struktur ist ableitbar; Inhalt wird realisiert} ---
+war kein im Voraus gewähltes Axiom. Sie war die \emph{Schlussfolgerung} eines bestimmten
+Audits (QG-042, die Studie ``Parameter vs.\ Struktur''), das eine unverblümte Frage
+stellte: Was lässt sich mit den Primitiven tatsächlich \emph{berechnen}, und was
+\emph{ist} lediglich? Die Antwort teilte sich sauber entlang einer Linie, die zuvor
+niemand explizit gezogen hatte.
+
+Alles, was ableitbar war --- Oszillation, Phase, $U(1)$, Ladungsquantisierung,
+Gravitation, Trägheit, das Äquivalenzprinzip, Teilchenstabilität, die Interpretation des
+Higgs-Feldes ---, erwies sich als \emph{Form}, \emph{Symmetrie} oder \emph{Topologie}. Es
+beantwortet \emph{was existiert} und \emph{warum}. Alles, was sich der Ableitung
+widersetzte --- $\alpha=1/137$, $\alpha_s$, $\theta_W$, die Yukawa-Kopplungen, $\lambda$,
+$\theta_{QCD}$ ---, erwies sich als \emph{dimensionslose reine Zahlen}. Sie beantworten
+\emph{wie viel}. Die tiefe Trennung bildet sich exakt auf die beiden Primitive ab: $Q$
+trägt die Struktur (Gesetze), und die Zufällige Aktualisierung trägt den Inhalt
+(Geschichte).
+
+Es gibt einen scharfen Grund dafür, dass die Trennung \emph{fundamental} und nicht
+vorübergehend ist. Keine Kombination des dimensionbehafteten Tripels $(\ell,\tau,\hbar)$
+kann eine dimensionslose Zahl erzeugen, sodass eine dimensionslose Kopplung \emph{nicht}
+aus den einheitenkonventionellen Primitiven zusammengesetzt werden kann. Die Theorie
+\emph{scheitert} daher nicht bloß daran, die Kopplungen abzuleiten; sie erklärt,
+\emph{warum sie nicht ableitbar sind}: Sie sind historische Ergebnisse der
+Aktualisierungsziehung, keine mathematischen Notwendigkeiten. Kontingenz ist intrinsisch;
+kein Multiversum ist nötig. Struktur ist, was der Zufall nicht ändern kann; Inhalt ist,
+was er bestimmt.
+
+\section{Was die Trennung nicht ist}
+
+Drei Verwechslungen müssen ausgeräumt werden, denn die feindliche Begutachtung hat alle
+drei aufgeworfen. Erstens ist die Trennung \emph{keine Immunisierungsstrategie}: Sie sagt
+nicht ``was immer wir nicht ableiten können, ist kontingent''. Die Grenze wird nicht im
+Nachhinein verschoben; sie ist eine feste, prüfbare Teilung --- Struktur ist, was die
+Primitive berechnen, Inhalt ist, was sie nicht berechnen ---, und die Theorie akzeptiert
+die Konsequenzen, einschließlich der Nichtableitbarkeit ihrer eigenen Kopplungen.
+Zweitens ist die Trennung \emph{kein Multiversum}: Kontingenz ist durch die Zufällige
+Aktualisierung einem einzigen Universum intrinsisch, und es wird kein Ensemble von
+Universen bemüht. Drittens ist die Trennung \emph{nicht anthropisch}: Die abgeleiteten
+Bestandteile (räumliche $3$, $U(1)$, die Lognormalform) sind Theoreme oder Ergebnisse
+über die Verteilungsform, keine Überlebensbedingungs-Selektionen, und die selektierten
+Bestandteile werden als selektiert gekennzeichnet, statt hinter dem Wort ``abgeleitet''
+versteckt zu werden.
+
+Der Sinn der Trennung besteht genau darin, die Theorie \emph{in ihren Klassifikationen
+falsifizierbar} zu machen. Ein mit \realunder\ gekennzeichnetes Ergebnis ist eine
+stehende Einladung, die übersehene Ableitung zu finden; ein mit \drawn\ gekennzeichnetes
+Ergebnis ist eine stehende Vorhersage, dass der Wert keinen tieferen Ursprung hat. Beides
+sind prüfbare Behauptungen über die Grenze der Ableitbarkeit, keine rhetorischen
+Immunisierungen.
+
+\section{Beispiele}
+
+Am leichtesten ist die Trennung anhand konkreter Fälle zu begreifen, die später jeweils
+vollständig erscheinen:
+
+\begin{itemize}
+\item \textbf{Eichstruktur.} $U(1)$ (die Gruppe) ist \derived; die Farbanzahl $n=3$
+(der Inhalt) ist \drawn. Die Gruppenstruktur ist aus $\mathrm{Aut}(S^1)$ berechenbar; die
+Anzahl wird durch kein getestetes Prinzip festgelegt (T-09).
+\item \textbf{Dimensionalität.} Die räumliche $3$ ist \derived (die
+Komplexitätsmaximierung wählt $d=3{+}1$); die innere $3$ (Generationen, Farbe) ist
+\emph{selektiert} --- eine abgeleitete Untergrenze $N\ge3$ trifft auf eine empirische
+Obergrenze $N\le3$.
+\item \textbf{Das Häufigkeitsgesetz.} Die lognormale \emph{Form} der
+Häufigkeitsverteilung ist \derived (eine multiplikative Kaskade plus der zentrale
+Grenzwertsatz im Log-Raum); die realisierten Werte $\mu,\sigma$ sind kontingenter Inhalt.
+\item \textbf{Die Koide-Relation.} $Q=2/3$ ist real, vorhersagekräftig und RG-stabil ---
+eine kanonische \realunder-Struktur ---, aber ihr Ursprung ist nicht ableitbar (T-08).
+\item \textbf{Yukawa-Kopplungen.} Die Überlappoperator-\emph{Form} des Yukawa-Operators
+ist abgeleitet; ihr \emph{Spektrum} (die Hierarchie $1{:}207{:}3478$) wird durch die
+kontingenten Architekturformen festgelegt.
+\end{itemize}
+
+Diese Taxonomie der Nichtableitbarkeit --- \derived, \realunder, \drawn --- wird in
+Kapitel~\ref{ch:taxonomy} formalisiert. Ihre Funktion ist Ehrlichkeit: Sie sagt präzise,
+welche Behauptungen Theoreme und welche Klassifikationen sind, und sie ist der Grund
+dafür, dass die Geschichte der feindlichen Begutachtung
+(Kapitel~\ref{ch:audit-trail}) eine Geschichte der \emph{Rahmen}-Korrekturen ist und
+nicht eine zurückgezogener Physik.
+
+\chapter{Geschichte der feindlichen Begutachtung}
+\label{ch:review-history}
+
+\section{Anfängliche Kritiken}
+
+Die Theorie wurde zwei Runden feindlicher Begutachtung unterzogen, und die Aufzeichnung
+beider Runden ist Teil des Projekts. Die erste Begutachtung (des v1.0-Papiers) warf zwölf
+Punkte auf; das Antwort-Audit klassifizierte sie als \emph{1 gültig}, \emph{11 teilweise
+gültig} und \emph{0 ungültig}. Der dominante Fehlermodus war kein fataler Theoriebruch,
+sondern eine \emph{Dokumentations}-Lücke: Das Papier ließ das dynamische System, die
+formalen Primitive, das Komplexitätsfunktional, die Emergent-GR-Abgleichung und die
+quantitativen Vorhersagen aus, die das Programm tatsächlich enthielt, und überzog seine
+Rahmung (``geschlossen'' wo es ``disponiert'' hätte sagen sollen; ``No-Go'' wo es
+``bedingtes No-Go'' hätte sagen sollen; ``Ableitung'' wo es ``ontologische
+Reinterpretation'' hätte sagen sollen). Drei echte Theorielücken wurden anerkannt: das
+vorläufige Eichanzahl-No-Go (T-09), der kontingente Inhalt und das Immunisierungsrisiko
+der Struktur/Inhalt-Trennung.
+
+Das Antwort-Audit identifizierte außerdem sieben Veröffentlichungsblocker, allesamt
+Dokumentationskorrekturen ohne neue Physik: sechs fehlende Abschnitte (die formalen
+Primitivdefinitionen, die Zusammenfassung des dynamischen Systems, das
+Komplexitätsfunktional, die Emergent-GR-Ableitungszusammenfassung, die quantitativen
+Vorhersagen und die Umfang-und-Grenzen-Erklärung) plus drei Formulierungskorrekturen, die
+als eine einzige Rahmenkorrektur behandelt wurden. Der wichtige Punkt ist die
+Klassifikation: Die Begutachtung fand \emph{einen} wirklich gültigen Einwand (die
+``kein Weg offen''-Rahmung), \emph{elf} teilweise gültige Einwände, die auf ausgelassene
+Dokumentation statt auf ein falsches Ergebnis zeigten, und \emph{null} vollständig
+ungültige Einwände. Eine Begutachtung, die in dieser Verteilung landet, ist eine
+Begutachtung der \emph{Darstellung} eines Papiers, nicht seines \emph{Kerns} --- und das
+Programm behandelte sie entsprechend: Darstellung korrigieren, Kern behalten und erneut
+verifizieren, dass sich nichts geändert hat.
+
+Eine zweite Runde (Runde~2) warf zwölf ``FATAL''-Punkte auf, die in
+Kapitel~\ref{ch:audit-trail} tabellarisch erfasst sind. Sie reichten von ``Primitive
+als mathematische Objekte undefiniert'' bis zu ``kein kontrollierter
+Kontinuumsgrenzwert.''
+
+\section{Was sich änderte}
+
+Die Antwort war eine Überarbeitung, die jede Rahmenübertreibung korrigierte und die sechs
+fehlenden Abschnitte ergänzte (formale Primitivdefinitionen, Zusammenfassung des
+dynamischen Systems, Komplexitätsfunktional, Emergent-GR-Ableitungszusammenfassung,
+quantitative Vorhersagen, Umfang und Grenzen). Die Formulierungskorrekturen waren:
+``geschlossen'' $\to$ ``disponiert'', ``No-Go'' $\to$ ``bedingtes No-Go'' und
+``Ableitung'' $\to$ ``ontologische Reinterpretation'', wo angebracht. Keine Physik änderte
+sich.
+
+\section{Was überlebte}
+
+Der eine substantielle Einwand, der sich nicht durch Dokumentation ausräumen ließ, war
+``kein kontrollierter Kontinuumsgrenzwert.'' Er wurde auf der Schr\"odinger-Seite
+\emph{vollständig} beantwortet ($L_Q\to-\nabla^2\to$ Schr\"odinger, dazu das gekrümmte
+$L_W$, die Laplace--Beltrami-Näherung und die Unitarität, alles nun getestet) und auf der
+Einstein-Seite \emph{teilweise} (die Standardkette funktioniert, aber die Metrik und die
+BDG-Wirkung sind importiert). Der entscheidende Rest ist daher die \emph{native Metrik
+$\to$ Operator-Kopplung} --- die ``G4''-Lücke: AT importiert $g_{\mu\nu}$ über den Satz
+von Malament, statt es aus Q-Ereignissen zu erzeugen. Dieser Rest ist es, der das Urteil
+bei \textbf{READY AS A FOUNDATION MONOGRAPH --- READY AS A RESEARCH-PROGRAM PAPER --- NOT
+READY AS A DERIVATION PAPER} hält.
+
+\chapter{Die Forschungsreise}
+\label{ch:journey}
+
+Das Ableitungsprogramm war in Forschungsprogramme gegliedert, die jeweils durch
+ausführbare Experimente abgeschlossen wurden. Vier von ihnen tragen das technische
+Gewicht dieser Monographie und werden hier erzählt.
+
+\section{Das Eichprogramm}
+
+Das Eichprogramm fragte, warum die Eichgruppe $SU(3)\times SU(2)\times U(1)$ ist. Die
+Antwort ist dreigeteilt, und jeder Teil hat einen anderen Status.
+
+\textbf{$U(1)$ ist abgeleitet.} Die Phase lebt auf dem Kreis $S^1$; ihre
+Isometriegruppe \emph{ist} $U(1)$, und die Windungszahl
+$\oint\nabla\theta\cdot dl=2\pi n$ liefert ganzzahlige Ladung, mit der Eichverbindung
+$A_\mu=\partial_\mu\theta$ und dem Photon als der $n=0$-Phasenwelle. Dies ist das
+sauberste Ergebnis des gesamten Programms: keine Wahl, sondern die Symmetrie der Phase
+selbst.
+
+\textbf{$SU(2)$ ist emergent.} Das binäre Windungspaar $\{n=\pm1\}$ ist das minimale
+Dublett; die Bloch-Sphäre liefert $SO(3)=SU(2)/Z_2$; die Spinor-Doppelüberlagerung
+liefert $SU(2)$. Die ``2'' ist nahezu abgeleitet, aber die Anhebung vom diskreten $Z_2$
+zum kontinuierlichen $SU(2)$ ist selbst nicht abgeleitet --- sie ist die eine
+zugestandene Lücke in der $SU(2)$-Geschichte.
+
+\textbf{$SU(3)$ ist kontingent.} Das Argument $\mathrm{Aut}(C^n/S_n)\supseteq SU(n)$
+leitet die Gruppen\emph{struktur} ab, aber nicht die \emph{Anzahl}, und die
+8-Gluon-Algebra ist entlehnt. Vier Wegfamilien wurden für die Anzahl getestet: Topologie
+allein (scheitert für $n>1$, da $\pi_1(S^1)=\mathbb Z$ unendlich ist), Attraktorraum
+(scheitert, kontingent), Defektmoduli (am stärksten, aber es leitet Struktur ab, nicht
+Anzahl) und Persistenz/Symmetrie (selektiert nicht). Das $1$--$2$--$3$-Muster
+Rang-gleich-Windungszahl ist verlockend, aber ``möglicherweise Numerologie'': Kein
+Mechanismus verbindet die drei Ränge. Das Ergebnis ist das No-Go T-09 --- kein
+topologisches, Attraktor-, Moduli- oder Persistenzprinzip legt die Defektanzahl fest ---,
+und das verbleibende ``warum 3'' ist die eine offene Tür der Theorie.
+
+\subsection{Gescheiterte Wege und warum sie scheiterten}
+
+Vier Wegfamilien scheiterten an der Defektanzahl. \emph{Topologie allein} scheitert, weil
+$\pi_1(S^1)=\mathbb Z$ unendlich ist und $n=3$ nicht selektieren kann. \emph{Attraktorraum}
+scheitert, weil der Landschaftsinhalt kontingent ist und daher keine Anzahl selektieren
+kann. \emph{Persistenz und Symmetrie} scheitern, weil jede klassische Gruppe stabil ist,
+sodass Stabilität nicht diskriminiert. Das \emph{Rang-gleich-Windungszahl}-Muster
+``1--2--3'' ist verlockend, hat aber keinen verbindenden Mechanismus --- ``möglicherweise
+Numerologie''. Der Defektmoduli-Weg war \emph{kein} Scheitern: Er ist der stärkste Weg,
+aber er leitet die Struktur $\mathrm{Aut}(C^n/S_n)\supseteq SU(n)$ ab und hört vor der
+Anzahl auf, was genau die Grenze ist, die das No-Go (T-09) markiert.
+
+\section{Das Koide-Programm}
+
+Die Koide-Relation $Q=\sum m/(\sum\sqrt m)^2=2/3$ ist bis auf $\sim10^{-5}$ real,
+vorhersagekräftig (Vorhersage von 1981: $m_\tau=1776.97$\,MeV, 1992 bestätigt) und
+RG-stabil. Das Koide-Programm fragte, woher sie kommt, und antwortete durch
+\emph{Ausschöpfung}: Es probierte jeden denkbaren Weg und zeichnete auf, welche
+scheiterten.
+
+Sieben Wege wurden ausgeschöpft --- Symmetrie ($S_3$), Topologie ($S^1$), Attraktoren,
+Informationsgeometrie, Gruppentheorie, der $m=3$-Abschluss und Moduli-Argumente --- mit
+dem Ergebnis \emph{sechs No-Gos und einem blockierten}. Vier berechnete
+Ursprungstests scheiterten alle: die demokratische $S_3$-Mischung liefert $Q=1/3$
+(nicht $2/3$); es gibt keinen RG-Fixpunkt bei $2/3$; $S^1$ lokalisiert den Winkel, legt
+ihn aber nicht fest; und das Informationsgeometrie-Maß $S/S_{\max}=0.5093$ ist nicht
+extremal. Fünf Fehlschlüsse wurden explizit verworfen: Anthropik ($Q=2/3$ ist nicht
+anthropisch), Textur-Anpassung (passt an, leitet nicht ab), Numerologie (real, aber nicht
+abgeleitet), verborgene Parameter (verboten) und $45^\circ$-Umformulierungen (sie fügen
+null Information hinzu).
+
+Der Abschluss ist ein \emph{No-Go} (T-08): Der Koide-Ursprung ist eine geschlossene
+Frage --- real, vorhersagekräftig, RG-stabil, \emph{nicht ableitbar} --- die kanonische
+\realunder-Struktur. Das Neutrino-Koide-Analogon wurde daraufhin getestet und
+\emph{falsifiziert} (T-11: $Q_{\max}=0.585$ normal / $0.500$ invertiert, beides
+$<2/3$), wodurch der letzte verbleibende Unterscheider entfernt und das Programm
+geschlossen wurde.
+
+\subsection{Gescheiterte Wege und warum sie scheiterten}
+
+Sieben Wege scheiterten, und das Muster des Scheiterns ist aufschlussreich.
+\emph{Symmetrie ($S_3$)} scheitert, weil die demokratische Mischung $Q=1/3$ und ein
+hierarchischer Grenzfall $Q=1$ liefert; $2/3$ ist der nicht-generische Mittelpunkt.
+\emph{Topologie ($S^1$)} scheitert, weil sie die Phase lokalisiert, ohne den
+$45^\circ$-Winkel festzulegen. \emph{Attraktoren} scheitern, weil es keinen RG-Fixpunkt
+bei $2/3$ gibt. \emph{Informationsgeometrie} scheitert, weil $S/S_{\max}=0.5093$ nicht
+extremal ist. \emph{Gruppentheorie} selektiert nicht. Der \emph{$m=3$-Abschluss}
+scheitert, weil sein $\gamma\ne2/3$ ist und seine Parameter nicht auf Observablen
+abgebildet sind. \emph{Moduli} ist blockiert, nicht No-Go. Die verworfenen Fehlschlüsse
+--- Anthropik, Textur-Anpassung, Numerologie, verborgene Parameter,
+$45^\circ$-Umformulierungen --- scheiterten, weil jeder entweder anpasst, ohne
+abzuleiten, oder umformuliert, ohne Information hinzuzufügen.
+
+\section{Das Kontinuumsprogramm}
+
+Das Kontinuumsprogramm fragte, ob das diskrete dynamische System einen kontrollierten
+Kontinuumsgrenzwert besitzt, und es zerfiel in zwei Hälften mit ungleichen Ergebnissen.
+
+Auf der Schr\"odinger-Seite ist die Antwort ein eindeutiges \emph{Ja}. Der
+Ketten-Laplace-Operator $L_Q$ konvergiert gegen den flachen Laplace-Operator $-\nabla^2$
+mit einem exakten Spektrum in geschlossener Form und Konvergenz zweiter Ordnung, und der
+gewichtete Laplace-Operator $L_W$ liefert eine gekrümmte Verallgemeinerung und eine
+Laplace--Beltrami-Näherung. Diese Hälfte ist vollständig getestet.
+
+Auf der Einstein-Seite ist die Antwort zurückhaltender. Der BDG-Kausalmengen-Operator
+konvergiert gegen den d'Alembert-Operator $\square$ mit $O(h^2)$-Kontrolle, aber $L_Q$
+und BDG sind \emph{in der Signatur disjunkt} --- der eine elliptisch und positiv, der
+andere hyperbolisch und indefinit ---, sodass keine native Brücke zwischen ihnen
+geschlossen wurde. Ein eigenes Drei-Test-Programm machte die Inkompatibilität ausführbar:
+$L_Q$ ist positiv semidefinit, BDG ist indefinit, und der Graphen-Laplace-Operator wird
+für Lorentz-Signatur explizit verworfen. Dies --- zwei disjunkte Ketten auf demselben
+Substrat --- ist die wichtigste strukturelle Tatsache des Programms und der präzise Grund
+dafür, dass die Einstein-Wiederherstellung logisch statt mathematisch ist.
+
+\subsection{Gescheiterte Wege und warum sie scheiterten}
+
+Der eine Weg, der scheiterte --- und der Grund, warum er scheiterte ---, ist die naive
+Hoffnung, ein einzelner Operator könne sowohl der Schr\"odinger- als auch der
+Einstein-Seite dienen. Er scheiterte, weil die beiden Kontinuumsgrenzwerte inkompatible
+Signaturen haben: $L_Q\to-\nabla^2$ ist elliptisch und positiv semidefinit, während
+$\mathrm{BDG}\to\square$ hyperbolisch und indefinit ist. Der ausführbare Test machte das
+Scheitern präzise: Der Graphen-Laplace-Operator wird für Lorentz-Signatur explizit
+verworfen. Das Programm erzeugte daher keine fehlende ``Brücke''; es erzeugte ein
+\emph{Kein-Brücke-Ergebnis} --- zwei disjunkte Ketten auf demselben Substrat ---, das die
+wichtigste strukturelle Tatsache des Programms ist.
+
+\section{Das Metrikprogramm}
+
+Das Metrikprogramm fragte, wie eine Metrik $g_{\mu\nu}$ überhaupt entstehen kann. Die
+Antwort ist eine viergliedrige Kette: Q-Ereignisse $\to$ Kausalordnung (nativ) $\to$
+konforme Klasse (bewiesen, über den importierten Satz von Malament) $\to$ konformer
+Faktor (nativ, aus dem Zählmaß $f=\rho^{2/d}$) $\to$ die Metrik. Der
+Metrik\emph{ursprung} ist daher geschlossen: Das einzige importierte Glied ist ein
+bewiesener Satz, keine Theorielücke. Die Verifikation ist direkt --- die Kausalordnung
+erfüllt die Metrik-Axiome, die Nullstruktur ist unter konformer Umskalierung invariant,
+aber nicht unter nicht-konformer Umskalierung, und das Zählmaß reproduziert den konformen
+Faktor im Rundlauf.
+
+Was offen bleibt, ist die Metrik\emph{dynamik} --- die native Metrik $\to$
+Operator-Kopplung (G4). Den Ursprung zu schließen sagt uns, \emph{woher} die Metrik
+kommt; es sagt dem Operator nicht, wie er sie \emph{verwenden} soll. Dieser Rest ist der
+Grund, warum die Einstein-Wiederherstellung logisch statt mathematisch bleibt, und er ist
+der einzige wirklich offene technische Punkt der Monographie.
+
+\subsection{Gescheiterte Wege und warum sie scheiterten}
+
+Der Weg, der scheiterte, ist die \emph{native} Metrikdynamik. AT erzeugt $g_{\mu\nu}$
+nicht aus Q-Ereignissen; der metrikabhängige Operator $\Delta_g/\Box_g$ fehlt, und der
+gewichtete Laplace-Operator $L_W$ liefert nur eine Näherung, deren definierende Metrik
+extern ist. Der Versuch, die Metrik\emph{dynamik} nativ zu schließen, scheiterte daher,
+und der ehrliche Endpunkt des Programms ist die Trennung, die es festhält: Der
+Metrik\emph{ursprung} ist geschlossen (Q-Ereignisse $\to$ Kausalordnung $\to$ konforme
+Klasse $\to$ konformer Faktor $\to$ Metrik, wobei der Satz von Malament als bewiesenes
+Glied importiert ist), während die Metrik\emph{dynamik} importiert bleibt. Diese Trennung
+ist die ``G4''-Lücke.
+
+\section{Was die vier Programme gemeinsam errichten}
+
+Zusammen gelesen zeichnen die vier Programme einen Bogen. Das Eich- und das
+Koide-Programm lokalisieren die \emph{Grenze} zwischen dem Ableitbaren und dem
+Kontingenten; das Kontinuums- und das Metrikprogramm lokalisieren die \emph{Grenze}
+zwischen dem Kontrollierten und dem Importierten. Beide Grenzen sind ehrlich: Die Theorie
+behauptet, Struktur abzuleiten und den Schr\"odinger-Grenzwert zu kontrollieren, und sie
+verzichtet ausdrücklich darauf, die Eichanzahl, den Koide-Ursprung oder die native
+Einstein-Brücke zu beanspruchen. Diese Teilung --- ableitbare Struktur, kontrollierter
+Schr\"odinger-Grenzwert, klassifizierter Inhalt, importierte Metrik --- ist die Gestalt
+der fertigen Theorie.
+
+\chapter{Gewonnene Lehren}
+\label{ch:lessons}
+
+\section{Falsche Annahmen}
+
+\begin{itemize}
+\item \textbf{Der statische Graph war die verborgene Annahme Nummer eins.} Das erste
+Audit alternativer Grundlagen (X001) fand elf verborgene Annahmen, mit dem statischen
+Graphen an erster Stelle der Liste. Als er getestet wurde (X002--X004), erzeugten
+dynamische Graphen keine neuen Phänomene und keine offene Innovation.
+\item \textbf{Nichtlinearität zerbricht das Eigenmoden-Bild.} X005 zeigte, dass die
+meisten frühen ``Quanten''-Ergebnisse Artefakte der linearen Algebra waren:
+Nichtlinearität zerstört Eigenmoden und erzeugt stattdessen Solitonen. Q, Fitness und
+Evolution überlebten; die naive Quanten-Lesart nicht.
+\item \textbf{Offene Evolution in endlichen Systemen ist eine Illusion.} X025 schien
+offenes Artenwachstum zu zeigen, aber X026--X027 bewiesen, dass es verzögerte Sättigung
+war: Ein Schubfachargument begrenzt die Artenzahl durch die Zahl der Knoten, sodass ein
+endliches System stets sättigt. Evolution der Stufe 6 (offen) erfordert einen
+unendlichen Zustandsraum.
+\item \textbf{Scheinbare Vielfalt kann ein einziger Keim sein.} Die
+AT-007-Resonanz-``Familien'' kollabierten in einer Reproduzierbarkeitsstudie mit 400
+Simulationen auf einen universellen Modus (F4); der Rest waren Artefakte.
+\end{itemize}
+
+\section{Verworfene Ableitungen}
+
+Das Programm versuchte wiederholt --- und verwarf --- Kandidatenableitungen, statt sich
+mit Postdiktion zufriedenzugeben: Symmetrie-, Attraktor-, Topologie- und
+Informationsgeometrie-Wege zu Koide (T-08); Topologie-, Attraktor-, Moduli- und
+Persistenz-Wege zur Eichanzahl (T-09); Stabilitäts-, Anomalie-, Darstellungs-, Defekt-
+und Informations-Wege zu $N\le3$ (T-10); fünf getrennte Versuche, $\alpha=1/137$
+abzuleiten; die Tired-Light-Kosmologie; die TRM Quantum Engine; und die großen
+vereinheitlichten Gruppen $SU(5)/SO(10)$ (Protonenzerfall unbeobachtet) und $E_6/E_8$
+(exotische Teilchen unbeobachtet). In jedem Fall wurde die Verwerfung aufgezeichnet, und
+wo das Scheitern systematisch war, wurde daraus ein No-Go-Satz.
+
+\section{No-Go-Entdeckungen}
+
+Die No-Go-Sätze (Kapitel~\ref{ch:nogo}) sind das markanteste wissenschaftliche Produkt
+des Programms. T-08 (Koide nicht ableitbar), T-09 (Eichanzahl nicht festgelegt), T-10
+($N\le3$ nicht festgelegt), T-11 (Neutrino-Koide falsifiziert) und T-12 (gemeinsame
+Kaskade untestbar) definieren gemeinsam die Grenze zwischen dem, was die Theorie
+berechnen kann, und dem, was sie klassifizieren muss. Die Meta-Lehre ist die
+Struktur/Inhalt-Trennung selbst: Die No-Gos sind keine Einfallsfehler, sondern die
+erwartete Signatur einer Theorie, in der Inhalt konstruktionsbedingt kontingent ist.
+
+\section{Meta-Lehren}
+
+Jenseits der spezifischen falschen Annahmen und verworfenen Ableitungen ergab das Programm
+eine kleine Zahl dauerhafter Lehren, die alles danach prägten.
+
+\textbf{Die Ableitbarkeitsgrenze ist selbst ein Ergebnis.} Die Entdeckung, dass Struktur
+ableitbar ist, während dimensionsloser Inhalt es nicht ist (QG-042), ist keine
+Beschränkung, in die das Programm hineinstolperte; sie ist ein positiver Befund und
+lizenziert die Taxonomie. Eine Theorie, die \emph{erklärt, warum} ihre Kopplungen nicht
+ableitbar sind, erhebt einen stärkeren Anspruch als eine Theorie, die sie bloß nicht
+ableiten kann.
+
+\textbf{Negative Ergebnisse sind Produkte erster Klasse.} Die No-Go-Sätze (T-08--T-12)
+sind der markanteste wissenschaftliche Ertrag des Programms, nicht seine Peinlichkeiten.
+Ein Weg, der als geschlossen erwiesen wird, ist Information, und ihn als Satz
+festzuhalten (statt ihn still fallenzulassen) macht die Theorie prüfbar.
+
+\textbf{Ehrlichkeit in der Rahmung ist ein wissenschaftliches Gut.} Die Geschichte der
+feindlichen Begutachtung ist fast vollständig eine Geschichte von Rahmenkorrekturen, nicht
+zurückgezogener Physik. Die Lehre ist, dass ``geschlossen'' vs.\ ``disponiert'',
+``No-Go'' vs.\ ``bedingtes No-Go'' und ``Ableitung'' vs.\ ``ontologische
+Reinterpretation'' keine kosmetischen Unterscheidungen sind; sie sind der Unterschied
+zwischen einer Überbeanspruchung und einer verteidigungsfähigen Aussage.
+
+\textbf{Ausführbare Verifikation macht Ehrlichkeit überprüfbar.} Jedes ``BESTANDEN'' in
+dieser Monographie ist das Ergebnis eines Tests, den ein feindlicher Gutachter ausführen
+kann.
+Diese Disziplin verwandelte die Einwände der feindlichen Begutachtung in einen
+Auditpfad, der Punkt für Punkt beantwortet werden konnte, statt endlos diskutiert zu
+werden.
+
+\chapter{Evolution des Rahmens}
+\label{ch:evolution}
+
+Der Rahmen erreichte seine endgültige Form nicht in einem Schritt; er wurde wiederholt
+abgebaut und neu aufgebaut. Dieses Kapitel zeichnet nach, was zu Beginn angenommen, was
+entfernt, was beibehalten wurde und welche zwei methodischen Verpflichtungen entstanden
+--- die Struktur/Inhalt-Trennung und die No-Go-Methode.
+
+\section{Früheste Annahmen}
+
+Das Programm begann mit einem reichen und größtenteils falschen Satz von Annahmen. Materie
+wurde als dynamisch stabilisierte Wellenstruktur in einem temporalen Feld angenommen;
+Synchronisation und Resonanz wurden als fundamentaler als Teilchen betrachtet; und der Weg
+von den Oszillatoren zur Kosmologie wurde als eine einzige durchgehende Kette angenommen.
+Implizit nahmen die frühen Experimente außerdem an, dass ein statischer Graph das richtige
+Substrat sei, dass Zufallsmatrizen für Emergenz ausreichen könnten und dass jede
+auftretende kohärente Struktur die Quanten-Lesart des Systems tragen würde.
+
+\section{Entfernte Annahmen}
+
+Die meisten frühesten Annahmen wurden experimentell entfernt. Zufallsmatrizen erzeugten
+keine Emergenz (AT-002); statische Topologie allein war unzureichend (AT-003); die
+scheinbare Vielfalt der Resonanzfamilien kollabierte auf einen einzigen reproduzierbaren
+Modus (AT-008); dynamische Graphen erzeugten keine offene Innovation (X002--X004); und
+Nichtlinearität zeigte, dass die frühen ``Quanten''-Ergebnisse Artefakte der linearen
+Algebra waren (X005). Die spezifischen Annahmen des Vorgänger-TRM-Rahmens ---
+Tired-Light-Kosmologie und eine nicht-unitäre Quantenmaschine --- wurden im
+Legacy-Audit rundheraus verworfen. Was nach diesem Abstreifen blieb, war minimal:
+Individuation ($Q$), Reversibilität, Selbstkonsistenz und echter Zufall.
+
+\section{Beibehaltene Annahmen}
+
+Zwei Paare überlebten jede feindliche Reduktion. \emph{Reversibilität} (erhaltene Norm)
+und \emph{Selbstkonsistenz} (Fixpunkte) erwiesen sich als unabhängig und minimal
+hinreichend: Ihr Schnitt ist die unitäre Quantenmechanik (X011--X015). \emph{$Q$}
+(Individuation) und \emph{echter Zufall} erwiesen sich als irreduzibel --- unter ihnen
+existiert keine tiefere Invariante (X035, X039). Alles andere in der Theorie --- Zeit,
+Raum, $3{+}1$, die Schr\"odinger-Gleichung, die Bornsche Regel, Messung, Gravitation als
+Kausalstruktur, Teilchen als Defekte und $U(1)$ --- ist aus diesen abgeleitet oder
+emergent, plus der einzelnen kontingenten Zahl $M^2$.
+
+\section{Entstehung der Struktur/Inhalt-Trennung}
+
+Die Struktur/Inhalt-Trennung wurde nicht auferlegt; sie wurde \emph{entdeckt}. Das
+Parameter-vs.-Struktur-Audit (QG-042) fand, dass alles aus den Primitiven Ableitbare
+\emph{Form}, \emph{Symmetrie} oder \emph{Topologie} war, während alles, was sich der
+Ableitung widersetzte, eine \emph{dimensionslose reine Zahl} war. Da keine Kombination des
+dimensionbehafteten Tripels $(\ell,\tau,\hbar)$ eine dimensionslose Zahl erzeugen kann,
+\emph{können} die Kopplungen nicht aus den Primitiven zusammengesetzt werden. Das
+verwandelte eine vorübergehende Beschränkung in ein Prinzip: Struktur ist ableitbar,
+Inhalt wird realisiert, und die Taxonomie (\derived, \realunder, \drawn) ist die ehrliche
+Buchführung dieser Grenze.
+
+\section{Entstehung der No-Go-Methodik}
+
+Die No-Go-Methode entstand aus derselben Disziplin. Wenn eine Ableitung scheiterte ---
+Koide, die Eichanzahl, $N\le3$ ---, verwarf das Programm das Scheitern nicht; es zählte
+jeden denkbaren Weg auf, testete jeden gegen die Keine-neuen-Primitive-Beschränkung und
+hielt das Ergebnis als bedingten No-Go-Satz fest (T-08--T-12). Was als Methode begann,
+einzelne Fragen zu schließen, wurde zu einer allgemeinen Methode: \emph{Weg-Ausschöpfung}
+plus \emph{feindliche Reduktion}, die ``wir konnten es nicht ableiten'' in die stärkere,
+überprüfbare Aussage ``kein getesteter Weg leitet es ab'' verwandelt.
+
+\chapterend
+{Der Rahmen wurde von einem reichen Oszillatorbild auf zwei Primitive plus eine Zahl
+abgestreift; die Struktur/Inhalt-Trennung und die No-Go-Methode entstanden als seine zwei
+organisierenden Verpflichtungen.}
+{Ob eine native Metrik-Operator-Kopplung (G4), eine eindeutige diskriminierende
+Vorhersage oder eine native BDG-Wirkung ableitbar ist --- die drei
+Ableitungspapier-Blocker.}
+{Historisch/redaktionell; kein ausführbarer Test greift, aber jede hier zitierte
+Entfernung und Beibehaltung ist im Entwicklungsregister (Anhang) festgehalten.}
+
+\chapter{Die Methode ausführbarer Audits}
+\label{ch:method}
+
+Das markanteste Merkmal dieses Programms ist kein bestimmtes Ergebnis, sondern eine
+\emph{Methode}: Jede substantielle Behauptung wird ausführbar gemacht, und jedes
+``-Audit'' in der Aufzeichnung ist ein Stück dieser Methode. Dieses Kapitel erklärt die
+Maschinerie, denn die durch die technischen Teile verstreuten Konfidenzaussagen sind ohne
+sie unverständlich.
+
+\section{Was ein Audit ist}
+
+Ein Audit ist eine strukturierte, reproduzierbare Untersuchung mit einer einzigen Frage
+und einer Disposition am Ende. Es ist als Analysator (ein kleines Programm) plus einem
+oder mehreren Tests implementiert und schreibt einen Bericht. Die Frage wird zuerst
+genannt, die Wege werden aufgezählt, und jeder Weg wird gegen einen festen Satz von
+Beschränkungen getestet --- typischerweise die \emph{Keine-neuen-Primitive}-Beschränkung
+und eine Verwerfung von Anthropik, Numerologie, verborgenen Dimensionen und
+Post-Selektion, sofern sie nicht ausdrücklich benannt sind. Die Disposition ist eines aus
+einem kleinen Vokabular: \derived, \realunder, \drawn, \textbf{No-Go}, \textbf{blockiert},
+\textbf{kontingent} oder \textbf{selektiert}. Weil der Bericht in eine Datei geschrieben
+wird und der Test auf den berechneten Zahlen prüft, kann ein späterer Gutachter das Audit
+erneut ausführen und dieselbe Antwort erhalten.
+
+\section{Weg-Ausschöpfung und die No-Go-Methode}
+
+Die No-Go-Sätze werden durch \emph{Weg-Ausschöpfung} erzeugt: Zähle jeden
+Ableitungsweg auf, den das Programm für ein Ziel ersinnen kann, teste jeden und zeichne
+auf, welche scheitern. Ein No-Go ist die Aussage ``innerhalb des getesteten Wegraums und
+der Keine-neuen-Primitive-Beschränkung erreicht kein Weg das Ziel.'' Es ist daher
+\emph{bedingt} --- es ist kein Beweis logischer Unmöglichkeit (außer wo eine Berechnung,
+wie T-11, die Frage direkt schließt), und es ist nur so stark wie der aufgezählte
+Wegraum. Der Koide-Abschluss ist das Paradigma: sieben Wege, sechs No-Gos, einer
+blockiert, null offen, und die Schlussfolgerung ist eine \emph{geschlossene Frage}, keine
+Ableitung.
+
+\section{Konfidenzränge}
+
+Die Konfidenzzahlen sind \emph{unkalibrierte ordinale Ränge}. Sie werden vom Audit
+vergeben, um den eigenen Überzeugungsgrad des Programms in eine Disposition zu ordnen,
+und tragen absichtlich keine statistische Bedeutung. Ein Satz mit vollständiger
+Weg-Ausschöpfung hinter sich (wie $U(1)$, Konfidenz 0,95) steht über einer emergenten
+Struktur mit zugestandener Lücke ($SU(2)$, 0,70), die über einem vorläufigen No-Go
+($SU(3)$-Struktur, 0,10) steht. Die Zahl ist eine Zusammenfassung davon, \emph{wie viel
+des Wegraums geschlossen wurde}, keine A-posteriori-Wahrscheinlichkeit.
+
+\section{Feindliche Reduktion als Methode}
+
+Das Programm behandelt die feindliche Begutachtung nicht als äußeres Ereignis, sondern
+als ständige interne Methode: Jedes Ergebnis wird periodisch einer \emph{feindlichen
+Reduktion} unterzogen, die versucht, es wegzuableiten, wegzuerklären oder zu zeigen, dass
+es eine Umformulierung ist. Die überlebenden Ergebnisse sind genau diejenigen, die die
+feindliche Reduktion nicht entfernen kann. Deshalb ist die Geschichte der feindlichen
+Begutachtung (Kapitel~\ref{ch:review-history}) so arm an zurückgezogener Physik: Die
+Rahmung wurde korrigiert, aber die zugrunde liegenden Ergebnisse hatten die feindliche
+Reduktion intern bereits durchlaufen, bevor der externe Gutachter sie sah.
+
+%=============================================================================
+\part{Grundlagen}
+%=============================================================================
+
+\chapter{Die Primitive}
+\label{ch:primitives}
+
+Dieses Kapitel formuliert die Theorie. Alles, was in den technischen Teilen folgt, ist
+eine Entfaltung dieser Definitionen: Die Primitive sind die gesamte Eingabe, und die Last
+der Monographie besteht darin zu zeigen, wie viel beobachtbare Struktur aus ihnen folgt,
+und ehrlich zu sagen, wo sie aufhört.
+
+\section{Formulierung der Theorie}
+
+THE Q-MODEL beruht auf einer einzigen organisierenden Behauptung, der
+\textbf{Struktur/Inhalt-Trennung}:
+
+\begin{center}
+\emph{Struktur ist ableitbar; Inhalt wird realisiert.}
+\end{center}
+
+Die \emph{Form} beobachtbarer Struktur (Topologie, Symmetrie, Verteilungsform, untere
+Schranken) ist aus einer minimalen Primitivmenge beweisbar. Der \emph{Inhalt} (spezifische
+Massen, Kopplungen, Multiplizitäten, Winkel) ist eine Ziehung aus einem kontingenten
+Ensemble und wird daher klassifiziert statt abgeleitet.
+
+\section{Die vier Primitive}
+
+\begin{definition}[Primitivmenge]
+Die Theorie lässt genau vier Primitive zu, und keine weiteren:
+\begin{enumerate}
+\item \textbf{$Q$} — das Individuationsprinzip (Ontologie): der irreduzible Akt, durch
+den ein diskretes Ereignis aus dem Nichts individuiert wird.
+\item \textbf{Zufällige Aktualisierung} — echter ontologischer Zufall: Gegeben $Q$, sind
+die realisierten Ereignisorte innerhalb der Kausalstruktur zufällig. (Annahme
+\textbf{A-03}.)
+\item \textbf{$(\ell,\tau,\hbar)$} — das irreduzible physikalische Tripel: eine
+Raumzeit-Skala $\ell$, eine Uhr $\tau$ und eine Wirkung $\hbar$
+(Einheitenkonventionen).
+\item \textbf{$M^2$} — der einzige kontinuierliche Nichtlinearitätsparameter (das
+Nichtlinearitätsregime der Dynamik).
+\end{enumerate}
+\end{definition}
+
+Kein Eichgruppen-, Multiplizitäts- oder Verborgene-Dimensionen-Primitiv ist erlaubt. Die
+Primitive haben zwei Schichten, die sich bei $Q$ treffen: eine \emph{Ontologie}-Schicht
+(die die Ableitung von Struktur trägt) und eine \emph{dynamische} Schicht (die das
+dynamische System von Kapitel~\ref{ch:dynamics} trägt).
+
+\begin{remark}
+$Q$ individuiert; die Zufällige Aktualisierung realisiert; $(\ell,\tau,\hbar)$ legt
+Einheiten fest; $M^2$ setzt den einzigen kontinuierlichen Parameter, den die
+Ableitungshierarchie auf $M^2\approx5$ festnagelt (Kapitel~\ref{ch:complexity}).
+\end{remark}
+
+\section{Die Quantenpostulate (dynamische Schicht)}
+
+\begin{axiom}[Q existiert]
+Topologische Ladungsquanten besitzen Position $x_i$ und Phase $\theta_i$ und
+wechselwirken paarweise mit Kopplung $J_{ij}=f(|x_i-x_j|)$. (Angenommen, irreduzibel.)
+\end{axiom}
+
+\begin{axiom}[Reversible Dynamik]
+Die Zustandsnorm $\|\psi\|^2$ ist erhalten; äquivalent dazu ist die Evolution unitär.
+\end{axiom}
+
+\begin{axiom}[Bornsche Regel]
+$P=|\langle\phi|\psi\rangle|^2$, eindeutig selektiert durch Additivität (Satz von
+Gleason, 1957).
+\end{axiom}
+
+\begin{axiom}[Messung]
+Eine Messung liefert ein einziges bestimmtes Ergebnis (das Kollaps-Axiom).
+\end{axiom}
+
+Die Postulate 1--2 leiten den Hilbertraum und die Schr\"odinger-Gleichung ab
+(Kapitel~\ref{ch:dynamics}); die Postulate 3--4 schließen die Interpretation.
+
+%=============================================================================
+
+\chapterend
+{Die vier Primitive ($Q$, Zufällige Aktualisierung, $(\ell,\tau,\hbar)$, $M^2$) und die
+Struktur/Inhalt-Trennung sind formuliert; kein weiteres Primitiv ist erlaubt.}
+{Das Maß und das Wirkungsfunktional für $Q$ bleiben Postulate, keine abgeleiteten
+Objekte.}
+{Auf Axiome greift kein ausführbarer Test; die Formalisierungs-Audits im nächsten Kapitel
+halten den Objekt-/Zustands-/Operations-Status fest.}
+
+\chapter{Formalisierung von $Q$ und der Zufälligen Aktualisierung}
+\label{ch:formalization}
+
+Dieses Kapitel hält den formalen Status der Primitive fest, wie er durch die
+Formalisierungs-Audits (ausführbar; siehe Teil~V) festgestellt wurde. Sein Zweck ist es,
+präzise zu sagen, wie viel jedes Primitivs bereits ein mathematisches Objekt ist und wie
+viel ein Postulat bleibt --- die ehrliche Grenze, auf die die feindliche Begutachtung
+gedrängt hat.
+
+\section{Status von $Q$}
+
+\begin{center}
+\begin{tabular}{lll}
+\toprule
+Komponente & Status & Inhalt \\
+\midrule
+Objekt & \textbf{Formalisiert} & ein diskretes Ereignis (individuierte Entität) \\
+Zustandsraum & \textbf{Formalisiert} & Positionen $x_i$ und Phasen $\theta_i$ \\
+Operationen & \textbf{Formalisiert} & Individuation, Kopplung $J_{ij}$ \\
+Konfigurationsraum & \textbf{Teilweise} & Graph von Ereignissen, kein nativer Kontinuumsgrenzwert \\
+Dynamik & \textbf{Teilweise} & $L_Q$-Generator (Postulat 1) \\
+Symmetrien & \textbf{Teilweise} & $S^1$-Phase, $Z_2$, Permutation $S_n$ \\
+Kontinuumsgrenzwert & \textbf{Teilweise} & für $L_Q$ verifiziert (Teil~II) \\
+Maß & \textbf{Fehlt} & kein Maßraum allein aus den Primitiven \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\textbf{Klassifikation:} $Q$ ist \emph{teilweise formalisiert} — Objekt, Zustandsraum und
+Operationen existieren; das Maß und das Wirkungsfunktional bleiben Postulate.
+
+\section{Status der Zufälligen Aktualisierung}
+
+Die Zufällige Aktualisierung ist \textbf{A-03}, eine Annahme, kein abgeleitetes Objekt.
+Das Formalisierungs-Audit fand:
+
+\begin{center}
+\begin{tabular}{lll}
+\toprule
+Komponente & Status & Inhalt \\
+\midrule
+Zufallsvariable & \textbf{Formalisiert} & die Ziehung der Ereignisorte \\
+Generator & \textbf{Formalisiert} & ontologischer Zufall \\
+$(\Omega,\mathcal F,P)$ & \textbf{Teilweise} & Ensemble nicht spezifiziert \\
+Ensemblemaß & \textbf{Teilweise} & kein explizites Maß \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\textbf{Klassifikation:} Die Zufallsvariable und der Generator sind formalisiert; der
+Wahrscheinlichkeitsraum $(\Omega,\mathcal F,P)$ und das Ensemblemaß sind nur teilweise
+formalisiert.
+
+\begin{remark}
+Der Vorwurf des feindlichen Gutachters, ``die Zufällige Aktualisierung sei Verbalismus'',
+ist daher \emph{teilweise gültig}: Sie ist ein \emph{zugestandenes} Primitiv (A-03), kein
+abgeleitetes Objekt, und das Papier stellt dies ausdrücklich fest.
+\end{remark}
+
+%=============================================================================
+
+\chapter{Das dynamische System}
+\label{ch:dynamics}
+
+Dieses Kapitel macht aus den Primitiven eine Dynamik. Der folgenreichste Zug ist die
+Identifikation des Graphen-Laplace-Operators $L_Q$ als Generator, denn seine Eigenbasis
+\emph{ist} der Hilbertraum der Theorie, und sein Kontinuumsgrenzwert trägt das gesamte
+Schr\"odinger-Programm.
+
+\section{Der Graphen-Laplace-Operator $L_Q$}
+
+\begin{definition}[Graphen-Laplace-Operator]
+Für den $Q$-Wechselwirkungsgraphen mit Adjazenzmatrix $A$ und Gradmatrix $D$ gilt
+\begin{equation}
+L_Q = D - A .
+\end{equation}
+
+\eqnotes
+{Jede Zeile summiert sich zu null, sodass der uniforme Zustand die Nullmode ist und die
+Eigenvektoren die stehenden Moden des Graphen sind.}
+{Er ist der diskrete Diffusions-/Hüpfoperator der Theorie.}
+{Seine Eigenbasis \emph{ist} der Hilbertraum, und sein Kontinuumsgrenzwert ist der
+Laplace-Operator, der das gesamte Schr\"odinger-Programm trägt.}
+{Hier ungerichtet und ungewichtet; der Lorentz-Fall (BDG) und der gekrümmte Fall ($L_W$)
+sind separate Operatoren.}
+$L_Q$ ist reell, symmetrisch, positiv semidefinit und hat Null-Zeilensummen. Seine
+Eigenvektoren bilden eine Orthonormalbasis — den \textbf{Hilbertraum} der Theorie.
+\end{definition}
+
+\section{Die Tight-Binding-Identität (AT-142)}
+
+\begin{proposition}[Tight-Binding-Identität]
+Auf einer 1D-Kette gilt
+\begin{equation}
+(L_Q)_{ij} = 2\delta_{ij} - \delta_{i,j+1} - \delta_{i,j-1},
+\end{equation}
+was \emph{identisch} mit dem Tight-Binding-Hamiltonian mit On-Site-Energie
+$\varepsilon=2t$ ist: $H = t L_Q$. Dies ist eine mathematische \textbf{Identität}, keine
+Analogie.
+\end{proposition}
+
+\theoremnotes
+{Auf einer Kette ist der Laplace-Operator exakt der Zweite-Differenzen-Operator, sodass
+``Graphendiffusion'' und ``Tight-Binding-Hüpfen'' dasselbe Objekt sind, zweimal
+hingeschrieben.}
+{Die Identität lizenziert die Übertragung von Festkörpertechniken --- Spektren,
+Greensche Funktionen, Bandstruktur --- ohne jede Übersetzung auf die Ontologie-Schicht.}
+{Sie gilt in einer Dimension und für den nackten (ungewichteten) Laplace-Operator; die
+gekrümmten und kausalmengenartigen Verallgemeinerungen sind separate Objekte (Abschnitte
+\ref{ch:laplace-beltrami} und~\ref{ch:bridge}).}
+
+\section{Schr\"odinger aus Reversibilität (AT-149--151)}
+
+\begin{theorem}[Schr\"odinger-Gleichung aus Reversibilität]
+Betrachte lineare Evolution $\partial_t\psi = M\psi$ mit erhaltener Norm
+$\partial_t\|\psi\|^2 = \psi^\dagger(M+M^\dagger)\psi = 0$. Dann gilt
+\begin{equation}
+M^\dagger = -M .
+\end{equation}
+Für reelles $M$ ist dies $M^T=-M$. Die einfachste antisymmetrische $2\times2$-Matrix $J$
+erfüllt $J^2=-I$ (sodass $J$ als imaginäre Einheit wirkt), und
+\begin{equation}
+M = J\otimes L_Q \quad\Longrightarrow\quad i\partial_t \psi = L_Q\,\psi,
+\end{equation}
+
+\eqnotes
+{Normerhaltung zwingt den Generator, antihermitesch zu sein; der Block $J$ mit $J^2=-I$
+liefert die imaginäre Einheit.}
+{Es ist die unitäre Dynamik der Theorie: die Schr\"odinger-Gleichung.}
+{Sie bedeutet, dass die Quantenmechanik aus einer Erhaltungsanforderung \emph{erzeugt}
+wird, nicht postuliert.}
+{Linear und Einteilchen; die imaginäre Struktur wird über $J$ importiert.}
+mit unitärer Evolution
+\begin{equation}
+\psi(t) = e^{-iL_Qt}\,\psi(0).
+\end{equation}
+\end{theorem}
+
+\theoremnotes
+{Die Erhaltung der Norm zwingt den Generator, antihermitesch zu sein; das einfachste
+antihermitesche Objekt auf dem Graphen ist $J\otimes L_Q$, und $J^2=-I$ ist die imaginäre
+Einheit in Verkleidung. Das ``$i$'' der Quantenmechanik ist also nicht postuliert,
+sondern aus einer $2\times2$-antisymmetrischen Matrix gebaut.}
+{Dies ist der dynamische Kern der Theorie: Die Schr\"odinger-Gleichung ergibt sich aus
+einer Erhaltungsanforderung plus dem Graphen-Laplace-Operator, statt als Axiom behauptet
+zu werden.}
+{Sie ist linear und Einteilchen. Die imaginäre Struktur wird über den $2\times2$-Block $J$
+importiert, und das Argument rekonstruiert für sich genommen nicht den feldtheoretischen,
+wechselwirkenden Inhalt der Quantenmechanik.}
+
+\historynotes
+{Die Schr\"odinger-Gleichung wird normalerweise \emph{postuliert}; das
+Reduktionsprogramm fragte, ob ihr ``$i$'' und ihre unitäre Evolution stattdessen aus
+einer Erhaltungsanforderung abgeleitet werden könnten.}
+{Wenn der dynamische Kern abgeleitet statt angenommen werden könnte, würde die Theorie
+Quantenmechanik \emph{erzeugen}, statt sie zu importieren --- ein grundlegender, kein
+kosmetischer Gewinn.}
+{Der Tight-Binding-/Hilbertraum-Weg verwendete $L_Q$ als Generator, aber die spezifische
+Reduktion der imaginären Einheit auf einen antisymmetrischen $2\times2$-Block $J$ mit
+$J^2=-I$ war der Schritt, der noch nicht ausgeschöpft war.}
+{Akzeptiert als Satz (AT-149--151), weil er exakt ist und weil sein Kontinuumsgrenzwert
+dann unabhängig durch \texttt{GraphLaplacianContinuumTests} verifiziert wird.}
+
+\section{Observablen aus dem Spektrum (AT-145)}
+
+\begin{center}
+\begin{tabular}{ll}
+\toprule
+Observable & Definition \\
+\midrule
+effektive Masse & $m_{\rm eff} = 1/\lambda_1$ \\
+Energie & $E = \mathrm{tr}(L)$ \\
+Lücke & $\Delta = \lambda_2-\lambda_1$ \\
+Korrelationslänge & $\xi = 1/\sqrt{\lambda_1}$ \\
+Diffusionskonstante & $D = \lambda_1$ \\
+Kanalkapazität & $C = \log_2 N$ \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\begin{remark}
+Dies sind \emph{dimensionale Zuweisungen}, keine dynamischen Vorhersagen; der feindliche
+Gutachter merkt zu Recht an, dass dies eine Umfangsgrenze ist.
+\end{remark}
+
+\section{Die Ontologie $\to$ Physik-Brücke}
+
+Die Brücke hat zwei Pfeiler, beide nun getestet:
+\begin{enumerate}
+\item $L_Q$-Eigenvektorbasis $=$ Hilbertraum (AT-149); und
+\item der Kausalmengen-Kontinuumsgrenzwert liefert die Metrik (QG-001, XC006--012).
+\end{enumerate}
+
+%=============================================================================
+\part{Das Kontinuumsgrenzwert-Programm (verifiziert)}
+%=============================================================================
+
+Dieser Teil hält die beiden Kontinuumsketten der Theorie und ihre (partielle) Verbindung
+fest. Die eine Kette ist \emph{elliptisch}: Der Graphen-Laplace-Operator $L_Q$ konvergiert
+gegen den flachen Laplace-Operator $-\nabla^2$, und seine gewichtete Verallgemeinerung
+liefert eine gekrümmte Schr\"odinger-Gleichung und eine Laplace--Beltrami-Näherung. Die
+andere ist \emph{Lorentz-artig}: Der Kausalmengen-BDG-Operator konvergiert gegen den
+d'Alembert-Operator $\square$. Die beiden Ketten sind in der Signatur disjunkt, und die
+zentrale Tatsache des Teils ist, dass zwischen ihnen bislang keine native Brücke
+geschlossen wurde. Die Schr\"odinger-Seite ist kontrolliert und getestet; die
+Einstein-Seite ist partiell.
+
+\chapterend
+{$L_Q=D-A$ ist der Generator und seine Eigenbasis der Hilbertraum; die
+Schr\"odinger-Gleichung $i\partial_t\psi=L_Q\psi$ folgt aus der Normerhaltung.}
+{Die spektrumsabgeleiteten Observablen sind dimensionale Zuweisungen, keine dynamischen
+Vorhersagen.}
+{Mathematisch (AT-142 Tight-Binding-Identität; AT-149--151 Reversibilitätssatz); die
+Kontinuumsgrenzwert-Tests im nächsten Teil verifizieren die nachgelagerte Kette.}
+
+\chapter{Die zwei Kontinuumsketten}
+\label{ch:two-chains}
+
+Die beiden Ketten teilen sich ein Substrat (die Q-Ereignisse), verwenden aber
+unterschiedliche Operatoren darauf. Dieses Kapitel führt beide Grenzwerte vor und
+formuliert dann die Signatur-Inkompatibilität, die sie trennt.
+
+\section{$L_Q \to -\nabla^2$: Der flache Laplace-Operator}
+\label{ch:flat-laplacian}
+
+\begin{theorem}[Diskretes Spektrum des Ketten-Laplace-Operators]
+Der Graphen-Laplace-Operator einer 1D-Kette aus $N$ Plätzen hat das exakte Spektrum
+\begin{equation}
+\lambda_k = \frac{1}{\Delta x^2}\left[2 - 2\cos\frac{\pi k}{N+1}\right],
+\qquad k=1,\dots,N,
+\end{equation}
+mit $\Delta x$ als Gitterabstand. Im Kontinuumsgrenzwert $N\to\infty$, $\Delta x\to0$
+bei fester Länge gilt
+\begin{equation}
+\lambda_k \to (\pi k)^2 .
+\end{equation}
+\end{theorem}
+
+\begin{proof}
+Der Ketten-Laplace-Operator ist die tridiagonale Toeplitz-Matrix mit Diagonale
+$2/\Delta x^2$ und Nebendiagonale $-1/\Delta x^2$; ihre Eigenvektoren sind die diskreten
+Sinusmoden $\sin(\pi k j/(N+1))$.
+\end{proof}
+
+\textbf{Verifikation.} \texttt{GraphLaplacianContinuumTests} baut Ketten mit
+$N=32,64,128,256$, diagonalisiert $L_Q$ mittels MathNet.Numerics und vergleicht mit der
+geschlossenen Form. Der relative Fehler \emph{sinkt} mit $N$ (Konvergenz zweiter Ordnung,
+Fehler $\sim4\times$ pro Verdopplung), womit festgestellt ist, dass $L_Q$ mit
+kontrolliertem Fehler gegen den flachen Laplace-Operator konvergiert.
+\textbf{Ergebnis: BESTANDEN.}
+
+\theoremnotes
+{Stehende Wellen auf einer Kette sind diskrete Sinusmoden; nimmt man $N\to\infty$ bei
+fester Länge, wird ihre Dispersionsrelation das übliche Impulsquadrat-Spektrum eines
+freien Teilchens auf einer Linie.}
+{Dies ist die quantitative Brücke von der diskreten Ontologie zum Kontinuum: eine exakte
+geschlossene Form, keine numerische Anpassung, und ihre Konvergenz ist bis zur zweiten
+Ordnung kontrolliert.}
+{Sie ist eindimensional, ungewichtet und nur elliptisch. Sie sagt nichts über die
+Lorentz-Kette oder über Krümmung.}
+
+\historynotes
+{Die Frage war, ob die diskrete Ontologie überhaupt einen kontrollierten
+Kontinuumsgrenzwert besitzt --- der Einwand des Gutachters ``kein kontrollierter
+Kontinuumsgrenzwert''.}
+{Ein kontrollierter Grenzwert trennt ein diskretes Spielzeugmodell von einem Kandidaten
+für Kontinuumsphysik; ohne ihn hat das Schr\"odinger-Programm keine Brücke zum Raum.}
+{Naive Finite-Differenzen-Grenzwerte waren bekannt, aber ein Spektrum in geschlossener
+Form mit nachgewiesener Konvergenz zweiter Ordnung ($\sim4\times$/Verdopplung) war für
+$L_Q$ noch nicht etabliert.}
+{Akzeptiert, weil es eine exakte geschlossene Form (keine Anpassung) ist und der Fehler in
+\texttt{GraphLaplacianContinuumTests} nachweislich mit $N$ sinkt.}
+
+\section{BDG $\to \square$: Der d'Alembert-Operator}
+\label{ch:dalembertian}
+
+Der Kausalmengen-d'Alembert-Operator ist der Benincasa--Dowker--Glaser-(BDG-)Operator:
+eine gerichtete, alternierende Summe über kausale Intervalle der Streuung.
+
+\begin{theorem}[BDG-Konvergenz]
+Der BDG-Operator konvergiert mit wachsender Streudichte gegen den Kontinuums-d'Alembert-
+Operator $\square$, mit führendem Abbruchfehler $O(h^2)$.
+\end{theorem}
+
+\textbf{Verifikation.} \texttt{BDGOperatorContinuumTests} verifiziert die Konvergenz mit
+einer Toleranz $10^{-2}$ (der führende $O(h^2)$-Fehler bei $h=1/16$ ist
+$\approx4.37\times10^{-3}$); der Fehler fällt $\sim4\times$ pro $h$-Halbierung.
+\textbf{Ergebnis: BESTANDEN.}
+
+\theoremnotes
+{Ein diskretisierter Wellenoperator auf einer Kausalmenge muss alternierend über
+Vergangenheits- und Zukunftsintervalle summieren, um die führenden Terme zu kürzen; die
+BDG-Vorschrift tut genau dies und lässt im dichten Grenzfall den
+Kontinuums-d'Alembert-Operator zurück.}
+{Sie etabliert die Lorentz-Hälfte des Kontinuumsprogramms mit kontrolliertem
+$O(h^2)$-Fehler, passend zum Kontrollniveau der elliptischen Hälfte.}
+{Der Operator ist aus der Kausalmengentheorie importiert, nicht aus den vier Primitiven
+abgeleitet, und die Toleranz ist führender Ordnung ($10^{-2}$), sodass nur die niedrigsten
+nichttrivialen Terme geprüft werden.}
+
+\section{Die Quanten-Gravitations-Brücke}
+\label{ch:bridge}
+
+Die beiden Kontinuumsketten sind \emph{partiell verbunden} — und ihre Signaturen sind
+inkompatibel.
+
+\begin{proposition}[Zwei verschiedene Operatoren]
+\begin{enumerate}
+\item $L_Q$ ist ein \emph{ungerichteter, positiver} Graphen-Laplace-Operator, dessen
+Kontinuumsgrenzwert $-\nabla^2$ ist (Riemannsch, elliptisch, positiv semidefinit).
+\item Der BDG-Operator ist ein \emph{gerichteter, alternierender} Kausalmengen-Operator,
+dessen Kontinuumsgrenzwert $\square$ ist (Lorentz-artig, hyperbolisch, indefinit).
+\end{enumerate}
+\end{proposition}
+
+\textbf{Verifikation.} \texttt{QuantumGravityBridgeTests} (drei Tests) stellen fest:
+\begin{enumerate}
+\item $L_Q$ ist positiv semidefinit (minimaler Eigenwert $\ge0$);
+\item der BDG-Operator ist indefinit (besitzt negative Eigenwerte);
+\item die beiden sind in der Signatur inkompatibel — der Graphen-Laplace-Operator kann
+nicht als Lorentz-d'Alembert-Operator dienen (BdgUniquenessAnalyzer O3/O6 verwirft ihn
+explizit).
+\end{enumerate}
+\textbf{Ergebnis: BESTANDEN (3/3).}
+
+\begin{remark}
+Dies ist die wichtigste strukturelle Tatsache des Kontinuumsprogramms: AT besitzt
+\emph{zwei} Kettentypen, einen Riemannschen ($L_Q\to-\nabla^2$) und einen
+Lorentz-artigen ($\mathrm{BDG}\to\square$), die in der Signatur \emph{disjunkt} sind. Die
+Brücke zwischen ihnen ist nativ noch nicht geschlossen.
+\end{remark}
+
+\theoremnotes
+{Ein positiv semidefiniter Operator kann nicht indefinit sein, sodass der elliptische und
+der hyperbolische Kontinuumsgrenzwert nicht dasselbe Objekt sein können; die Q-Ereignisse
+unterbestimmen, welcher Operator zu verwenden ist.}
+{Diese Tatsache macht die Einstein-Wiederherstellung \emph{logisch} statt mathematisch:
+Die Schr\"odinger-Kette und die Einstein-Kette sind getrennt, und ihre Verbindung ist das
+offene Problem.}
+{Sie formuliert Inkompatibilität, keine Konstruktion; sie ist ein Kein-Brücke-Ergebnis,
+keine Brücke.}
+
+%=============================================================================
+
+\chapterend
+{$L_Q\to-\nabla^2$ (exakt, zweiter Ordnung) und $\mathrm{BDG}\to\square$ ($O(h^2)$) sind
+beide kontrolliert; die beiden Ketten sind in der Signatur disjunkt.}
+{Keine native Brücke verbindet die elliptische und die Lorentz-Kette.}
+{\texttt{GraphLaplacianContinuumTests}, \texttt{BDGOperatorContinuumTests},
+\texttt{QuantumGravityBridgeTests} (3) --- alle BESTANDEN.}
+
+\chapter{Der gewichtete Laplace-Operator, Laplace--Beltrami und gekrümmte Schr\"odinger}
+\label{ch:weighted}
+
+Nachdem die flache und die Lorentz-Kette etabliert sind, wendet sich dieses Kapitel der
+Krümmung zu. Der gewichtete Laplace-Operator $L_W$ ist die natürliche gekrümmte
+Verallgemeinerung von $L_Q$: Er liefert eine wohldefinierte gekrümmte
+Schr\"odinger-Gleichung und eine Laplace--Beltrami-Näherung, obwohl die Metrik, die ihn
+zu einem echten $\Delta_g$ machen würde, extern bleibt.
+
+\section{Der gewichtete Laplace-Operator}
+
+\begin{definition}[Gewichteter Laplace-Operator]
+Gegeben die räumliche Kopplungsmatrix $K_{ij}$, ist der gewichtete
+Graphen-Laplace-Operator
+\begin{equation}
+L_W = D_K - K,
+\qquad (D_K)_{ii} = \sum_j K_{ij}.
+\end{equation}
+Dies ist der übliche \emph{unnormalisierte} Graphen-Laplace-Operator (Belkin--Niyogi),
+gültig bei uniformer Dichte.
+\end{definition}
+
+\begin{proposition}[Eigenschaften]
+$L_W$ ist symmetrisch, hat Null-Zeilensumme, ist positiv semidefinit und reduziert sich
+auf den ungewichteten Laplace-Operator, wenn $K=A$.
+\end{proposition}
+
+\textbf{Verifikation.} \texttt{WeightedLaplacianTests} (vier Tests) bestätigen Symmetrie,
+Null-Zeilensumme, positive Semidefinitheit und Reduktion auf den ungewichteten Fall.
+\textbf{Ergebnis: BESTANDEN (4/4).}
+
+\theoremnotes
+{Die Gewichtung der Kanten des Graphen erlaubt es, die Geometrie in den Kopplungen zu
+kodieren; der unnormalisierte Laplace-Operator ist der Operator, dessen
+Nullenergie-Zustand auf dem gewichteten Graphen uniform ist.}
+{$L_W$ ist das Werkzeug, das die Theorie von der flachen Kette in den gekrümmten Raum
+trägt, und seine Grundeigenschaften sind verifiziert statt angenommen.}
+{Der unnormalisierte Laplace-Operator ist nur bei uniformer Dichte der richtige Operator;
+bei nicht-uniformer Dichte weichen die normalisierten Varianten ab, und nichts davon
+liefert die Metrik selbst.}
+
+\section{Die Laplace--Beltrami-Näherung}
+\label{ch:laplace-beltrami}
+
+\begin{theorem}[Laplace--Beltrami aus $L_W$]
+$L_W$ approximiert den Laplace--Beltrami-Operator $\Delta_g$ im flachen Grenzfall und
+reproduziert übliche Mannigfaltigkeitsbeispiele.
+\end{theorem}
+
+\textbf{Verifikation.} \texttt{LaplaceBeltramiTests} (drei Tests):
+\begin{enumerate}
+\item \emph{Flacher Grenzfall}: $L_W$ erhält das flache Spektrum;
+\item \emph{Variable Gewichte}: nicht-uniformes $K$ ändert das Spektrum;
+\item \emph{Bekannte Mannigfaltigkeit}: der $S^1$-Kreisgraph reproduziert das
+Kreisspektrum.
+\end{enumerate}
+Eine subtile Entartung wurde gefunden und per Audit behoben: Die Nichtnull-$S^1$-Moden
+sind zweifach entartet ($e^{\pm ik\theta}$), sodass in aufsteigender Reihenfolge das
+erste Auftreten der Mode $k$ beim Index $2k-1$ liegt, nicht bei $k$.
+\textbf{Ergebnis: BESTANDEN (3/3).}
+
+\theoremnotes
+{Der Laplace--Beltrami-Operator ist ``der Laplace-Operator mit der Metrik darin''; ihn aus
+einem gewichteten Graphen zu approximieren bedeutet, das Spektrum der Mannigfaltigkeit
+aus den Kopplungen wiederzugewinnen.}
+{Er verbindet den Graphenoperator mit dem üblichen geometrischen Operator des gekrümmten
+Raums und legt die $S^1$-Entartungsfeinheit offen (und behebt sie).}
+{Er ist eine Näherung, kein Satz für beliebiges $g$, und die Metrik, die $L_W$ zu einem
+echten $\Delta_g$ macht, ist weiterhin importiert statt erzeugt.}
+
+\section{Die gekrümmte Schr\"odinger-Gleichung}
+\label{ch:curved-schrodinger}
+
+\begin{theorem}[Gekrümmte Schr\"odinger-Gleichung]
+Der Operator $L_W$ definiert eine gekrümmte Schr\"odinger-Gleichung
+\begin{equation}
+i\,\partial_t \psi = L_W \psi .
+\end{equation}
+Weil $L_W$ selbstadjungiert ist, ist die Evolution unitär und die Norm erhalten:
+\begin{equation}
+\partial_t \|\psi\|^2 = 0 .
+\end{equation}
+\end{theorem}
+
+\textbf{Verifikation.} \texttt{CurvedSchrodingerTests} (drei Tests): Unitarität
+(Normerhaltung), Reduktion auf die flache Schr\"odinger-Gleichung und die Existenz eines
+gekrümmten Operators. \textbf{Ergebnis: BESTANDEN (3/3).}
+
+\begin{remark}
+Dies etabliert die \emph{Schr\"odinger}-Seite der Brücke in den gekrümmten Raum: Der
+gewichtete Laplace-Operator $L_W$ erzeugt eine wohldefinierte, unitäre gekrümmte
+Schr\"odinger-Gleichung. Die \emph{Metrik}, die $L_W$ zu einem echten $\Delta_g$ machen
+würde, bleibt extern (Kapitel~\ref{ch:metric-emergence}).
+\end{remark}
+
+\theoremnotes
+{Selbstadjungiertheit ist genau das, was Unitarität garantiert, sodass die gekrümmte
+Gleichung die Normerhaltung gratis erbt.}
+{Sie schließt die Schr\"odinger-Seite des Programms für den gekrümmten Raum: Eine
+wohldefinierte, getestete, unitäre gekrümmte Dynamik existiert.}
+{Die gekrümmte Gleichung ist formal, bis eine Metrik geliefert wird; die Metrikseite ist
+extern, was der Grund dafür ist, dass die Einstein-Seite partiell bleibt.}
+
+%=============================================================================
+
+\chapterend
+{$L_W$ ist symmetrisch/PSD/nullsummig; er liefert eine Laplace--Beltrami-Näherung und eine
+unitäre gekrümmte Schr\"odinger-Gleichung.}
+{Die Metrik, die $L_W$ zu einem echten $\Delta_g$ machen würde, bleibt extern.}
+{\texttt{WeightedLaplacianTests} (4), \texttt{LaplaceBeltramiTests} (3),
+\texttt{CurvedSchrodingerTests} (3) --- alle BESTANDEN.}
+
+\chapter{Die Einstein-Tensor-Kette}
+\label{ch:einstein-tensor}
+
+Dieses Kapitel führt die übliche differentialgeometrische Kette von einer Metrik zum
+Einstein-Tensor vor. Die Kette ist voll funktionsfähig und getestet; der Sinn ihrer
+Aufnahme besteht darin zu zeigen, \emph{genau wo} sie bricht, wenn man versucht, ihr ATs
+eigene Objekte zu füttern.
+
+\section{Standard-Differentialgeometrie}
+
+\begin{definition}[Christoffel-Symbole]
+\begin{equation}
+\Gamma^\lambda_{\mu\nu} = \tfrac12\, g^{\lambda\sigma}
+\left( \partial_\mu g_{\sigma\nu} + \partial_\nu g_{\sigma\mu} - \partial_\sigma g_{\mu\nu} \right).
+\end{equation}
+\end{definition}
+
+\begin{definition}[Riemann-Krümmung]
+\begin{equation}
+R^\rho_{\ \sigma\mu\nu} = \partial_\mu \Gamma^\rho_{\nu\sigma}
+- \partial_\nu \Gamma^\rho_{\mu\sigma}
++ \Gamma^\rho_{\mu\lambda}\Gamma^\lambda_{\nu\sigma}
+- \Gamma^\rho_{\nu\lambda}\Gamma^\lambda_{\mu\sigma}.
+\end{equation}
+\end{definition}
+
+\begin{definition}[Ricci- und Einstein-Tensoren]
+\begin{equation}
+R_{\sigma\nu} = R^\rho_{\ \sigma\rho\nu}, \qquad
+G_{\mu\nu} = R_{\mu\nu} - \tfrac12 R\, g_{\mu\nu}.
+\end{equation}
+\end{definition}
+
+\section{Verifizierte Beispiele}
+
+\textbf{Einheits-2-Sphäre} $g=\mathrm{diag}(1,\sin^2\theta)$ bei $\theta=\pi/4$:
+\begin{equation}
+\Gamma^\theta_{\phi\phi} = -\sin\theta\cos\theta = -0.5,
+\qquad K = 1, \qquad R = 2K = 2, \qquad R_{\mu\nu}=K g_{\mu\nu}.
+\end{equation}
+
+\textbf{Einheits-3-Sphäre} $g=\mathrm{diag}(1,\sin^2\chi,\sin^2\chi\sin^2\theta)$ bei
+$\chi=\theta=\pi/4$: $R_{\mu\nu}=2g_{\mu\nu}$, $R=6$, daher
+\begin{equation}
+G_{\mu\nu} = R_{\mu\nu} - \tfrac12 R g_{\mu\nu} = -g_{\mu\nu}
+= -\mathrm{diag}(1,\tfrac12,\tfrac14).
+\end{equation}
+
+\begin{theorem}[2D-Einstein-Tensor verschwindet]
+In zwei Dimensionen gilt $G_{\mu\nu}\equiv0$ identisch
+($R_{\mu\nu}=\tfrac12 R g_{\mu\nu}$); ein nichttrivialer $G_{\mu\nu}$ erfordert Dimension
+$\ge3$.
+\end{theorem}
+
+\textbf{Verifikation.} \texttt{EinsteinTensorTests} (vier Tests:
+Metrik$\to$Christoffel, Christoffel$\to$Riemann, Riemann$\to$Ricci,
+Ricci$\to$Einstein) und \texttt{EinsteinTensorIntegrationTests} (vier Tests auf dem
+integrierten Builder \texttt{EinsteinTensorBuilder}). \textbf{Ergebnis: BESTANDEN (8/8).}
+
+\theoremnotes
+{In zwei Dimensionen ist der Ricci-Tensor gezwungen, proportional zur Metrik zu sein,
+sodass der spurfreie Einstein-Tensor identisch verschwindet; Krümmungsdynamik braucht
+mindestens drei Dimensionen, um Platz zu haben.}
+{Es erklärt innerhalb der Standardgeometrie, warum eine dynamische Einstein-Gleichung in
+$d\ge3$ lebt --- eine Tatsache, die das Dimensionalitätsprogramm
+(Kapitel~\ref{ch:complexity}) in ein Selektionsargument verwandelt.}
+{Es ist Standard-Differentialgeometrie, keine AT-Ableitung; es erzeugt für sich genommen
+kein $3{+}1$.}
+
+\begin{remark}[Wo die Kette in AT bricht]
+Die Standardkette ist voll funktionsfähig. Aber ATs eigene Analysatoren
+(\texttt{QuantumGravityEmergenceAnalyzer}, \texttt{GrBridgeAnalyzer}) \emph{beschreiben}
+die Kette als Zeichenketten (\texttt{GeoStep}) und \emph{berechnen} sie nie. Die Kette
+bricht bei Schritt~1 — \emph{Metrik} $\to$ \emph{Christoffels} —, weil AT kein natives
+Metrikfeld $g_{\mu\nu}(x)$ besitzt: Es ist importiert
+(Kapitel~\ref{ch:metric-emergence}).
+\end{remark}
+
+%=============================================================================
+
+\chapter{Metrikentstehung und Ursprungsabschluss}
+\label{ch:metric-emergence}
+
+Dieses Kapitel fragt, wie eine Metrik überhaupt entstehen kann, und hält die viergliedrige
+Kette fest, die den Metrik\emph{ursprung} schließt --- während die Metrik\emph{dynamik}
+importiert bleibt.
+
+\section{Die kausale Distanzstruktur}
+
+\begin{definition}[Kausales Volumen und Distanz]
+Für ein kausales Intervall der Tiefe $D$ in $d$ Dimensionen ist das kausale Volumen
+\begin{equation}
+N(D) \propto D^d,
+\end{equation}
+und die kausale Distanz ist
+\begin{equation}
+L = N^{1/d}.
+\end{equation}
+\end{definition}
+
+\textbf{Verifikation.} \texttt{MetricGenerationTests} und \texttt{MetricEmergenceTests}
+bestätigen: $L=N^{1/d}$ reproduziert die Tiefe exakt ($d=2,3,4$; $D=1,\dots,8$); die
+Dimension wird aus dem Volumenwachstum wiedergewonnen; und die resultierende
+Distanzmatrix erfüllt alle vier Metrik-Axiome (Nichtnegativität, Identität der
+Ununterscheidbaren, Symmetrie, Dreiecksungleichung). \textbf{Ergebnis: BESTANDEN.}
+
+\section{Der konforme Faktor aus dem Zählmaß}
+
+\begin{theorem}[Konformer Faktor]
+Das Zählmaß legt das Volumenelement $\sqrt{|g|}=\rho$ (Dichte $\rho$) fest. Für einen
+konform flachen Ansatz $g=f\,\eta$ gilt
+\begin{equation}
+\sqrt{|g|} = f^{\,d/2} = \rho \quad\Longrightarrow\quad f = \rho^{\,2/d}.
+\end{equation}
+
+\eqnotes
+{Die Ereignisdichte ist das natürliche Volumenelement, und in einem konform flachen
+Ansatz legt das Volumenelement den konformen Faktor fest.}
+{Das Zählmaß bestimmt den einen verbleibenden skalaren Freiheitsgrad.}
+{Es schließt den konformen \emph{Faktor} nativ, die native Hälfte der
+Metrik-Ursprungskette.}
+{Nur konform flach; eine allgemeine Metrik wird nativ nicht erzeugt.}
+\end{theorem}
+
+\textbf{Verifikation.} \texttt{MetricEmergenceTests} bestätigt den Rundlauf
+$f^{d/2}=\rho$ für $\rho\in\{0.5,1,2,8\}$, $d\in\{2,3,4\}$. Der konform flache Kandidat
+$g=f\eta$ ist konstruierbar: konstantes $f$ liefert $R=0$; $f=1+\tfrac12 x^2$ liefert
+$R=-0.6145$, passend zum Liouville-Ergebnis $K=-\tfrac1{2f}\nabla^2\ln f$.
+\textbf{Ergebnis: BESTANDEN.}
+
+\theoremnotes
+{Die Dichte der Ereignisse ist der natürliche Kandidat für das Volumenelement, und in
+einem konform flachen Ansatz legt allein das Volumenelement den konformen Faktor fest.}
+{Dies schließt den konformen \emph{Faktor} nativ: Das Zählmaß bestimmt den einzigen
+verbleibenden skalaren Freiheitsgrad.}
+{Es setzt einen konform flachen Ansatz voraus; eine allgemeine Metrik wird nativ nicht
+erzeugt, nur ihre konforme Klasse plus ein flacher Repräsentant.}
+
+\section{Die konforme Klasse: Satz von Malament}
+
+\begin{theorem}[Malament 1977; Hawking--King--McCarthy 1976]
+Eine Bijektion, die die Kausalordnung $\prec$ zwischen zwei
+vergangenheits-und-zukunfts-unterscheidenden Raumzeiten erhält, ist eine konforme
+Isometrie: Die Kausalordnung bestimmt die Metrik \emph{bis auf einen konformen Faktor}.
+\end{theorem}
+
+\textbf{Verifikation.} \texttt{ConformalStructureTests} und \texttt{MetricOriginTests}
+stellen fest: Die Kausalordnung ist eine gültige Halbordnung, deren Rand der Lichtkegel
+ist; die Nullstruktur ist unter $g\to f g$ ($f>0$) invariant, wird aber durch eine
+nicht-konforme Umskalierung $g=\mathrm{diag}(-1,2)$ \emph{verändert}; daher greift der
+Lichtkegel \emph{exakt} die konforme Klasse heraus. \textbf{Ergebnis: BESTANDEN.}
+
+\theoremnotes
+{Zwei Beobachter, die sich über ``was vor was kommt'' einig sind, sind sich über den
+Lichtkegel einig, mithin über die Metrik bis auf eine lokale Gesamt-Umskalierung --- die
+konforme Klasse.}
+{Dies ist der importierte Satz, der die Kausalordnung in Geometrie verwandelt; einen
+bewiesenen Satz zu importieren ist übliche Praxis, kein Mangel.}
+{Er ist importiert, nicht AT-abgeleitet, und benötigt
+vergangenheits-und-zukunfts-unterscheidende Raumzeiten; er legt nur die konforme Klasse
+fest und lässt den Faktor separat zu liefern.}
+
+\begin{theorem}[Abschluss des Metrikursprungs]
+Die konforme-Klassen-``Lücke'' ist ein \emph{importierter Satz} (Malament), keine
+Theorielücke. Der Metrikursprung ist geschlossen:
+\begin{equation}
+Q\text{-Ereignisse} \to \text{Kausalordnung (nativ)}
+\to \text{konforme Klasse (bewiesen)}
+\to \text{konformer Faktor (nativ)}
+\to g_{\mu\nu}.
+\end{equation}
+\end{theorem}
+
+\textbf{Klassifikation des Metrikursprungs:}
+
+\begin{center}
+\begin{tabular}{lll}
+\toprule
+Glied & Status & Natur \\
+\midrule
+Q-Ereignisse & \textbf{NATIV} & AT-abgeleitetes Primitiv \\
+Kausalordnung & \textbf{NATIV} & Präzedenz aus der Individuation \\
+Konforme Klasse & \textbf{IMPORTIERT} & Malament/HKM — \emph{bewiesen} \\
+Konformer Faktor & \textbf{NATIV} & Zählmaß, $f=\rho^{2/d}$ \\
+Volles $g_{\mu\nu}$ & \textbf{bestimmt} & Klasse $\times$ Faktor \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\begin{remark}
+Der Metrikursprung ist \emph{bereits gelöst}: Einen bewiesenen Satz zu importieren ist
+üblich, kein Mangel. Der wirklich offene Punkt ist die \emph{native} Metrik $\to$
+Operator-Kopplung (die ``G4''-Lücke): AT erzeugt $g_{\mu\nu}$ nicht aus Q-Ereignissen,
+es importiert es.
+\end{remark}
+
+\theoremnotes
+{Die Metrik ist aus drei nativen Gliedern und einem bewiesenen Import zusammengesetzt;
+die ``Lücke'' ist ein bewiesener Satz, sodass der Ursprung wirklich geschlossen ist.}
+{Sie ist die Antwort der Theorie auf ``woher kommt die Geometrie'': eine Kette, kein
+Postulat.}
+{Den Ursprung zu schließen schließt nicht die Dynamik: Die native
+Metrik-Operator-Kopplung (G4) bleibt offen, weshalb die Einstein-Wiederherstellung
+logisch statt mathematisch ist.}
+
+\historynotes
+{Die Frage war, ob eine Metrik $g_{\mu\nu}$ überhaupt aus Q-Ereignissen entstehen kann und
+wo die Theorie anhalten muss.}
+{Geometrie ist das Substrat der Einstein-Seite; ein nativer Ursprung würde die größte
+verbleibende Lücke im Kontinuumsprogramm schließen.}
+{Direkte Konstruktion aus Q-Ereignissen scheiterte (der metrikabhängige Operator fehlt);
+der Weg, der funktionierte, importiert den Satz von Malament für die konforme Klasse und
+liefert den konformen Faktor nativ.}
+{Akzeptiert als Abschluss des Metrik\emph{ursprungs} --- der Import ist ein bewiesener
+Satz, keine Lücke ---, während die Metrik\emph{dynamik} (G4) ehrlich importiert bleibt.}
+
+%=============================================================================
+\chapterend
+{Der Metrikursprung ist geschlossen: Q-Ereignisse $\to$ Kausalordnung $\to$ konforme
+Klasse (Malament, bewiesen) $\to$ konformer Faktor ($f=\rho^{2/d}$, nativ) $\to$ Metrik.}
+{Die native Metrik-Operator-Kopplung (G4) bleibt offen; die Metrikdynamik ist importiert.}
+{\texttt{MetricGenerationTests} (4), \texttt{MetricEmergenceTests} (4),
+\texttt{ConformalStructureTests} (3), \texttt{MetricOriginTests} (3) --- alle BESTANDEN.}
+
+\part{Die Ableitungshierarchie}
+%=============================================================================
+
+Dieser Teil führt die Ableitungshierarchie von den Kontinuumsobjekten hinab zur konkreten
+Physik: Dimensionalität, Eichstruktur, Flavour, Gravitation und Kosmologie. Jedes Kapitel
+hält fest, was \derived, was \realunder und was \drawn ist, mit den
+Konfidenzeinschätzungen, die die Geschichte der feindlichen Begutachtung verfeinert hat.
+
+\chapter{Komplexität und räumliche Dimensionalität}
+\label{ch:complexity}
+
+\section{Das Komplexitätsfunktional}
+
+Das Komplexitätsargument ist eine \textbf{gewichtete Sechs-Komponenten-Zerlegung} der
+Bedingungen für Beobachter (\texttt{ComplexityOptimumAnalyzer.cs}), kein einzelnes
+skalares Variationsfunktional.
+
+\begin{center}
+\begin{tabular}{lcc}
+\toprule
+Komponente & Gewicht & $M^2$-Fenster \\
+\midrule
+Strukturbildung & 3,0 & 2--8 \\
+Teilchenstabilität & 2,5 & 3--7 \\
+Chemiepotenzial & 4,0 & 3--5 \\
+Informationskapazität & 2,0 & 3--10 \\
+Evolutionspotenzial & 1,5 & 2--6 \\
+Beobachterviabilität & 5,0 & 4--6 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\section{Räumliche Dimensionalität $d=3+1$}
+
+\begin{theorem}[Eindeutige Dimensionalität]
+$d=3+1$ ist der \emph{eindeutige} Wert, der gleichzeitig erfüllt: den Satz von Bertrand
+(geschlossene Bahnen nur für $1/r^2$), das Gaußsche Gesetz ($F\propto1/r^{d-1}$, Coulomb
+nur in 3D), Knotenstabilität (Kodimension 2), Huygens (scharfe Ausbreitung in ungeradem
+$d$) und 2 GR-Polarisationen. $d=2+1$ lässt Gravitation/Atome/Knoten scheitern;
+$d\ge4+1$ lässt Bahnen und Knoten scheitern.
+\end{theorem}
+
+\begin{remark}
+$M^2\approx5$ ist der Beobachterviabilitäts-\emph{Schnitt} der Komponentenfenster, keine
+von Hand eingesetzte Zahl. Konfidenz T-02 = 0,85; dies ist ein
+Fensterschnitt-Argument, kein Variationssatz. Der Analysator hält fest, dass die
+Generationszahl $G\approx3$ ein \emph{Plateau} ist, kein Maximum.
+\end{remark}
+
+\theoremnotes
+{Jede Anforderung --- geschlossene Bahnen, Coulomb-Kräfte, Knoten, scharfe Signale,
+Gravitationspolarisationen --- ist ein Filter auf die Dimension, und ihr Schnitt ist ein
+einziger Wert.}
+{Die Dimensionalität ist abgeleitet statt angenommen, womit eine der größten
+``Warum''-Fragen mit einem testartigen Schnittargument geschlossen wird.}
+{Es ist ein Fensterschnitt-Argument (Konfidenz 0,85), kein Variationssatz, und es leitet
+nur die \emph{Raumzeit}-3 ab; die \emph{innere} 3 (Generationen, Farbe) ist eine
+separate, selektierte Größe (Kapitel~\ref{ch:nogo}).}
+
+%=============================================================================
+
+\chapterend
+{$d=3{+}1$ ist der eindeutige Wert, der Bertrand, Gauß, Knotenstabilität, Huygens und die
+zwei GR-Polarisationen gleichzeitig erfüllt; $M^2\approx5$ ist das
+Beobachterviabilitäts-Fenster.}
+{Das Argument ist ein Fensterschnitt, kein Variationssatz (T-02 $=$ 0,85).}
+{Analyse via \texttt{ComplexityOptimumAnalyzer}; nicht Teil des ausführbaren
+Testinventars.}
+
+\chapter{Eichstruktur}
+\label{ch:gauge}
+
+Dieses Kapitel hält das Ergebnis des Eichprogramms fest: $U(1)$ abgeleitet, $SU(2)$
+emergent, $SU(3)$ kontingent. Die Struktur ist ableitbar; die Anzahl ist es nicht.
+
+\section{$U(1)$ — abgeleitet}
+
+\begin{theorem}[$U(1)$ aus dem Kreis]
+Die Phase lebt auf $S^1$. Ihre Isometriegruppe ist
+\begin{equation}
+\mathrm{Aut}(S^1) = U(1), \qquad \pi_1(S^1) = \mathbb{Z},
+\end{equation}
+
+\eqnotes
+{Die Phase ist ein Winkel, lebt also auf einem Kreis; die Symmetrien des Kreises sind
+$U(1)$, und ihn ganzzahlig oft zu umrunden ist eine erhaltene Ladung.}
+{$U(1)$ ist die Symmetrie der Phase selbst.}
+{Sie entfernt eine freie Eichannahme aus dem Standardwerkzeugkasten.}
+{Nur Struktur: Die Maxwell-Wirkung ist weiterhin entlehnt, nicht erzeugt.}
+und die Windungszahl $\oint\nabla\theta\cdot dl = 2\pi n$ liefert ganzzahlige topologische
+Ladung. (Konfidenz 0,95.)
+\end{theorem}
+
+\theoremnotes
+{Die Phase ist ein Winkel, lebt also auf einem Kreis; die Symmetrien eines Kreises sind
+$U(1)$, und den Kreis ganzzahlig oft zu umrunden ist eine erhaltene Ladung.}
+{Dies ist das sauberste Ergebnis des Eichprogramms: $U(1)$ ist nicht gewählt, sondern die
+Symmetrie der Phase selbst, zu einem Satz erhoben (Konfidenz 0,95).}
+{Es leitet die Gruppenstruktur ab, nicht die Eichdynamik: Die Maxwell-Wirkung ist
+entlehnt, nicht erzeugt.}
+
+\historynotes
+{Die Frage war, ob die $U(1)$-Elektromagnetik eine separate Eingabe ist oder aus der
+Ontologie der Phase folgt.}
+{$U(1)$ ist die älteste Eichsymmetrie; sie aus dem Kreis abzuleiten würde eine freie
+Annahme aus dem Standardwerkzeugkasten entfernen.}
+{Gruppentheoretische Zugänge \emph{postulieren} $U(1)$; der Defekt-/Windungsweg
+versuchte, sie aus $\mathrm{Aut}(S^1)$ und $\pi_1(S^1)=\mathbb Z$ \emph{abzuleiten}.}
+{Akzeptiert als das sauberste Ergebnis des Eichprogramms (Konfidenz 0,95): keine Wahl,
+sondern die Symmetrie der Phase selbst --- wobei zugestanden wird, dass die
+Maxwell-Wirkung weiterhin entlehnt ist.}
+
+\section{$SU(2)$ und $SU(3)$ — reale, nicht abgeleitete Struktur}
+
+\begin{center}
+\begin{tabular}{lll}
+\toprule
+Faktor & Status & Konfidenz \\
+\midrule
+$U(1)$ & \derived & 0,95 \\
+$SU(2)$ & \realunder\ (emergent) & 0,70 \\
+$SU(3)$-Struktur & \realunder\ (emergent) & 0,10 \\
+Farbanzahl $n=3$ & \drawn & — \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Binäre Windung $\{n=\pm1\}$ liefert das minimale Dublett; die Bloch-Sphäre liefert
+$SO(3)=SU(2)/Z_2$; die Spinor-Doppelüberlagerung liefert $SU(2)$. Der Automorphismus des
+$n$-Defekt-Moduliraums erfüllt $\mathrm{Aut}(C^n/S_n)\supseteq SU(n)$ und leitet die
+$SU(3)$-\emph{Struktur} ab, aber nicht die Anzahl.
+
+\begin{remark}
+AT leitet die Eichgruppen-\textbf{Struktur} ab (welche Gruppe), \textbf{nicht} die
+Eich\textbf{dynamik} (Maxwell- / Yang--Mills-Wirkungen sind entlehnt; die
+8-Gluon-Algebra ist Annahme A-07). Die Anzahl $n=3$ ist nicht festgelegt
+(Eichanzahl-No-Go T-09, vorläufig 0,10).
+\end{remark}
+
+%=============================================================================
+
+\chapterend
+{$U(1)$ ist abgeleitet ($\mathrm{Aut}(S^1)=U(1)$, $\pi_1(S^1)=\mathbb Z$); $SU(2)$ ist
+emergent; $SU(3)$ ist kontingent (Struktur, nicht Dynamik).}
+{Die Eichanzahl $n=3$ ist nicht abgeleitet (vorläufiges No-Go T-09, 0,10).}
+{Mathematisch (Topologie); Konfidenz 0,95 / 0,70 / 0,10; kein eigener ausführbarer Test.}
+
+\chapter{Flavour und die Koide-Relation}
+\label{ch:flavor}
+
+Das Flavour-Kapitel ist die klarste einzelne Veranschaulichung der
+Struktur/Inhalt-Trennung: Die Operator-\emph{Form} ist abgeleitet, ihr \emph{Spektrum}
+ist kontingent, und die Koide-Relation liegt exakt auf der Grenze --- real, präzise,
+vorhersagekräftig und nicht ableitbar.
+
+\section{Der Yukawa-Operator}
+
+Der Yukawa-Operator ist der Überlappoperator
+\begin{equation}
+Y_{ij} = \langle \mathrm{arch}_i \,|\,\mathrm{amplitude}\,|\,\mathrm{arch}_j\rangle .
+\end{equation}
+Seine \emph{Form} ist abgeleitet; sein \emph{Spektrum} (die Hierarchie $1{:}207{:}3478$)
+ist nicht abgeleitet — festgelegt durch die kontingenten Architekturformen.
+
+\section{Die Koide-Relation}
+
+\begin{theorem}[Koide-Relation]
+Die Polmassen der geladenen Leptonen erfüllen
+\begin{equation}
+Q = \frac{\sum m}{(\sum\sqrt{m})^2} = 0.6666605,
+\qquad \theta = 44.9997^\circ,
+\end{equation}
+
+\eqnotes
+{Im $\sqrt m$-(Amplituden-)Raum sitzen die drei geladenen Leptonen unter $45^\circ$ zur
+demokratischen Richtung.}
+{$Q=2/3$ ist $1/(3\cos^2 45^\circ)$; die Relation handelt von Amplituden, nicht von
+Massen.}
+{Sie ist der schärfste numerische Hinweis im Flavour-Sektor: real, vorhersagekräftig,
+RG-stabil.}
+{Ihr Ursprung ist nicht ableitbar (No-Go T-08): real bedeutet nicht abgeleitet.}
+äquivalent $Q=2/3$ bei $\theta=\arccos(1/\sqrt2)=45^\circ$. Die Relation ist real
+($\sim10^{-5}$ Präzision; Bayes-Faktor vs.\ Zufall $\approx3.2\times10^4$),
+vorhersagekräftig (Vorhersage von 1981: $m_\tau=1776.97$ MeV, 1992 bestätigt) und
+RG-stabil.
+\end{theorem}
+
+\theoremnotes
+{Im $\sqrt m$-(d.\,h. Amplituden-)Raum sitzen die drei geladenen Leptonen unter einem
+Winkel von $45^\circ$ zur demokratischen Richtung, was exakt die Bedingung $Q=2/3$ ist;
+die Relation handelt von Amplituden, nicht von Massen.}
+{Sie ist eine reale, vorhersagekräftige, RG-stabile Regelmäßigkeit --- der stärkste
+numerische Hinweis im Flavour-Sektor --- und das kanonische Beispiel einer
+\realunder-Struktur.}
+{Ihr Ursprung ist nicht ableitbar (No-Go T-08 unten): real bedeutet nicht abgeleitet, und
+die Relation legt für sich genommen nicht die Drittgenerations-Anzahl fest.}
+
+\historynotes
+{Die Koide-Relation steht seit 1981 als unerklärte, hochpräzise Regelmäßigkeit; das
+Programm fragte, ob ihr Ursprung aus den Primitiven ableitbar ist.}
+{Sie ist der einzige schärfste numerische Hinweis im Flavour-Sektor; ihr Ursprung würde
+entweder eine tiefe Struktur bestätigen oder beweisen, dass Struktur bei der Form endet.}
+{Sieben Wege wurden versucht --- Symmetrie, Topologie, Attraktoren, Informationsgeometrie,
+Gruppentheorie, $m=3$-Abschluss, Moduli --- und alle scheiterten oder waren blockiert.}
+{Akzeptiert als \emph{geschlossene Frage} (No-Go T-08): real, vorhersagekräftig,
+RG-stabil und nicht ableitbar --- die kanonische \realunder-Struktur, mit dem
+falsifizierten Neutrino-Koide-Analogon (T-11).}
+
+\begin{nogo}[Koide-Ursprung — T-08]
+Keine Symmetrie ($S_3$), kein Attraktor, keine Topologie ($S^1$) und keine
+Informationsgeometrie selektiert $Q=2/3$. (Konfidenz 0,70.)
+\end{nogo}
+
+Das Abschluss-Audit (Phase 159) schöpfte sieben Wege aus:
+
+\begin{center}
+\begin{tabular}{ll}
+\toprule
+Weg & Status \\
+\midrule
+Symmetrie ($S_3$) & No-Go \\
+Topologie ($S^1$) & No-Go \\
+Attraktoren & No-Go \\
+Informationsgeometrie & No-Go \\
+Gruppentheorie & No-Go \\
+$m=3$-Abschluss & No-Go \\
+Moduli-Argumente & Blockiert \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Der Koide-Ursprung ist eine \emph{geschlossene Frage} — real, vorhersagekräftig,
+RG-stabil, \emph{nicht ableitbar} — die kanonische \realunder-Struktur.
+
+\begin{nogo}[Neutrino-Koide — T-11, Falsifikation]
+$Q=2/3$ für Neutrinos zu verlangen liefert $Q_{\max}=0.585$ (normal) / $0.500$
+(invertiert), beides $<2/3$; die gemessenen $\Delta m^2$ schließen All-Lepton-Koide aus.
+(Konfidenz 0,90.)
+\end{nogo}
+
+%=============================================================================
+
+\chapterend
+{Die Koide-Relation ist real, vorhersagekräftig und RG-stabil; ihr Ursprung ist nicht
+ableitbar (T-08); das Neutrino-Koide-Analogon ist falsifiziert (T-11).}
+{Keine: Der Koide-Ursprung ist eine geschlossene Frage, und die Falsifikation schloss den
+letzten Unterscheider.}
+{Berechnungs-Audits ($Q$, $Q_{\max}$); im Koide-Abschluss festgehalten, nicht im
+ausführbaren Testinventar.}
+
+\chapter{Gravitation und emergente ART}
+\label{ch:gravity}
+
+Gravitation ist in AT ein Phasengradienten-Phänomen. Dieses Kapitel hält den ehrlichen
+Status fest: Die Einstein-Wiederherstellung ist \emph{logisch}, keine neue dynamische
+Ableitung.
+
+\section{Newtons Konstante}
+
+\begin{proposition}[Dimensionsergebnis]
+$G = \ell^2 c^3/\hbar$ ist ein \emph{Einheitenkonsistenz}-Ergebnis, keine Ableitung der
+Gravitationsdynamik.
+\end{proposition}
+
+\eqnotes
+{Das Tripel $(\ell,\tau,\hbar)$ kann genau eine Kombination mit den Dimensionen von $G$
+zusammensetzen.}
+{$G$ ist durch die Einheiten festgelegt, sobald die Skala $\ell$ festgelegt ist.}
+{Es entfernt Newtons Konstante aus der Liste unabhängiger Eingaben.}
+{Nur Dimensionsanalyse; es sagt nichts über die Feldgleichungen.}
+
+\theoremnotes
+{Das Tripel $(\ell,\tau,\hbar)$ kann genau eine Kombination mit den Dimensionen von $G$
+zusammensetzen, sodass Newtons Konstante durch die Einheiten festgelegt ist, sobald die
+Skala festgelegt ist.}
+{Es entfernt $G$ aus der Liste unabhängiger Konstanten --- die Stärke der Gravitation ist
+eine buchhalterische Konsequenz des Skalen-Tripels.}
+{Es ist Dimensionsanalyse, keine Dynamik; es sagt nichts über die Feldgleichungen.}
+
+\section{Die Phasengravitations-Kette}
+
+Oszillation $\to$ Phase $\to$ Kausaldichte $\to$ Metrik $\to$ Krümmung $\to$ Einstein.
+
+\begin{theorem}[Wiederherstellung führender Ordnung]
+\begin{equation}
+G_{\mu\nu} = 8\pi G_{\rm eff}\, T_{\mu\nu} + O(\ell_P^2 R^2),
+\end{equation}
+mit Planck-Skalen-Korrekturen $\sim10^{-40}$. Newtonsches $1/r^2$, Linseneffekt,
+Rotverschiebung, Periheldrehung und zwei Gravitationswellen-Polarisationen mit
+Geschwindigkeit $c$ werden reproduziert.
+\end{theorem}
+
+Zwei Modifikationen jenseits der ART: (1) zeitveränderliche dunkle Energie
+\begin{equation}
+\Lambda(t) = \frac{\alpha}{\sqrt{V(t)}},
+\end{equation}
+wobei $V(t)$ das 4-Volumen des vergangenen Lichtkegels ist; und (2)
+Singularitätsauflösung bei $r\sim\ell_P$ (maximale Krümmung $1/\ell_P^2$).
+
+\begin{remark}[Ehrlichkeitshinweis]
+Die Kette ist \textbf{logisch, keine neue dynamische Ableitung}: ``gleiche Gleichungen,
+gleiche Vorhersagen; kein falsifizierbarer Unterschied'' im schwachen Feld. Der Wert ist
+\emph{ontologisch} (die Identifikation des Gravitationspotenzials mit dem Phasenfeld); der
+physikalische Gehalt jenseits der ART beschränkt sich auf $\Lambda(t)$ und die
+Singularitätsauflösung.
+\end{remark}
+
+\theoremnotes
+{Wenn das Phasenfeld das Gravitationspotenzial ist, dann wird die übliche Krümmungskette
+bis zur führenden Ordnung wiederhergestellt, mit nur Planck-Skalen-Korrekturen ---
+Gravitation wird neu etikettiert, nicht ersetzt.}
+{Sie zeigt, dass die ontologische Passung im schwachen Feld mit der ART konsistent ist,
+während sie die beiden Stellen isoliert, an denen AT wirklich abweicht ($\Lambda(t)$ und
+Singularitätsauflösung).}
+{Sie ist logisch, nicht mathematisch: Metrik und BDG-Wirkung sind importiert, sodass dies
+eine Reinterpretation ist, keine Ableitung der Einstein-Gleichungen.}
+
+\section{Die Radialbeschleunigungsrelation}
+
+\begin{theorem}[Nullparameter-RAR]
+\begin{equation}
+g_\dagger = \frac{c H_0}{2\pi} \approx 1.05\times10^{-10}\ \mathrm{m/s^2},
+\end{equation}
+
+\eqnotes
+{$cH_0$ ist die natürliche Beschleunigungsskala einer Kausalmenge; die Division durch
+$2\pi$ reproduziert die Milgrom-Skala $a_0$.}
+{Sie ist eine Nullparameter-Vorhersage, die auf dem gemessenen Wert landet.}
+{Sie ist das schärfste Dunkler-Sektor-Ergebnis der Theorie.}
+{Das $2\pi$ ist ein zugestandener numerischer Zufall; dies ist eine Übereinstimmung, noch
+keine vollständige Ableitung.}
+passend zum gemessenen $a_0$. (Der Faktor $2\pi$ ist ein numerischer Zufall, Phase 144.)
+\end{theorem}
+
+\theoremnotes
+{Die Kombination $cH_0$ ist die natürliche Beschleunigungsskala einer Kausalmenge; die
+Division durch $2\pi$ reproduziert die beobachtete Milgrom-Skala $a_0$.}
+{Sie ist eine Nullparameter-Vorhersage, die auf dem gemessenen Wert landet, ein wirklich
+scharfes Ergebnis im Dunklen Sektor.}
+{Der $2\pi$-Faktor ist ein numerischer Zufall, und die Relation ist eine Übereinstimmung,
+noch keine vollständige Ableitung der Dynamik hinter $a_0$.}
+
+%=============================================================================
+
+\chapterend
+{$G=\ell^2c^3/\hbar$ ist dimensional; die Einstein-Wiederherstellung führender Ordnung ist
+logisch; die RAR $g_\dagger=cH_0/2\pi$ trifft $a_0$ mit null freien Parametern.}
+{Native Metrikdynamik (G4); eine eindeutige, scharfe diskriminierende Vorhersage.}
+{\texttt{EinsteinTensorTests} (4) und \texttt{EinsteinTensorIntegrationTests} (4)
+verifizieren die Standardkette; \texttt{EinsteinRecoveryTests} (3) = TEILWEISE.}
+
+\chapter{Kosmologie}
+\label{ch:cosmology}
+
+Die Kosmologie ist das am wenigsten geschlossene Kapitel der Monographie: Sie ist eine
+akzeptierte partielle Berechnungsschicht, keine vollendete Ableitung. Der Status wird
+ohne Überbeanspruchung festgehalten.
+
+\begin{itemize}
+\item \textbf{Expansion} ist eine Interpretation von FLRW (QG-081); jede
+Reinterpretation kollabiert zu FLRW (QG-080--089).
+\item \textbf{Kausalmengen-$\Lambda$}: $\Lambda\sim1/\sqrt{N}$ ist eine Postdiktion
+(Phase 140).
+\item \textbf{Pantheon+SH0ES}: AT und $\Lambda$CDM sind beim aktuellen Signal
+$w(z)=-1+0.015(1+z)^{3/2}$ nicht unterscheidbar (DATA-001); ein Nachweisbarkeits-Audit
+(DATA-002) quantifizierte die für eine Trennung erforderliche Leistung.
+\item \textbf{Cluster}: Die dynamische Coma-Masse und der ACCEPT-Röntgengasanteil werden
+reproduziert.
+\item \textbf{CMB}: eine akzeptierte partielle Berechnungsschicht; vollständiger
+$C_\ell$-Löser zurückgestellt (rechnerisch, keine Theorielücke).
+\end{itemize}
+
+\begin{remark}
+Der Kosmologiestatus ist bewusst partiell: Der Hintergrund und die Kompressionsmaxima des
+CMB sind vorhanden, aber das Verdünnungsmaximum und die akustische Phasenverschiebung
+erfordern einen Boltzmann-Löser der CAMB-Klasse --- Standard-$\Lambda$CDM-Physik, keine
+neue AT-Physik.
+\end{remark}
+
+%=============================================================================
+\chapterend
+{Expansion ist eine FLRW-Reinterpretation; Kausalmengen-$\Lambda\sim1/\sqrt N$ ist eine
+Postdiktion; das $w(z)$-Signal ist quantifiziert.}
+{Der vollständige CMB-$C_\ell$-Löser ist zurückgestellt (rechnerisch, keine Theorielücke).}
+{Partielle Berechnungsschicht (DATA-001/002, CMB-Abschluss-Audits); nicht im ausführbaren
+Testinventar.}
+
+\part{Klassifikation, No-Gos und Vorhersagen}
+%=============================================================================
+
+\chapter{Die Drei-Kategorien-Taxonomie}
+\label{ch:taxonomy}
+
+Die Taxonomie ist das Instrument der ehrlichen Buchführung der Theorie. Sie klassifiziert
+\emph{Nichtableitbarkeit}, sodass keine Behauptung als Ableitung durchgehen darf, wenn sie
+eine Klassifikation ist.
+
+\begin{definition}[Taxonomie]
+\begin{center}
+\begin{tabular}{ll}
+\toprule
+Kategorie & Bedeutung \\
+\midrule
+\derived & aus den Primitiven per Satz berechenbar \\
+\realunder & reale, präzise, vorhersagekräftige Struktur, deren Ursprung nicht berechenbar ist \\
+\drawn & eine zufällige Ziehung des Häufigkeitsgesetzes \\
+\bottomrule
+\end{tabular}
+\end{center}
+Die Taxonomie klassifiziert \emph{Nichtableitbarkeit}; \realunder\ und \drawn\ werden
+\emph{nicht} als Ableitungen beansprucht.
+\end{definition}
+
+\section{Die vierzehn klassifizierten Ergebnisse}
+
+\begin{center}
+\begin{tabular}{llc}
+\toprule
+Objekt & Kategorie & Konfidenz \\
+\midrule
+$U(1)$ & \derived & 0,95 \\
+räumliche 3 & \derived & 0,85 \\
+$N\ge3$ & \derived & 0,90 \\
+Lognormalgesetz & \derived & Satz \\
+$SU(2)$ & \realunder\ (emergent) & 0,70 \\
+$SU(3)$-Struktur & \realunder\ (emergent) & 0,10 \\
+Koide $Q=2/3$ (Realität) & \realunder\ (strukturiert) & 0,90 \\
+Koide $45^\circ$ (Ursprung) & \realunder\ (strukturiert) & 0,70 \\
+Yukawas / Kopplungen / $\Omega_{DM}$ & \drawn & — \\
+$N\le3$ & \drawn & 0,70 \\
+Farbanzahl 3 & \drawn & — \\
+innere $N=3$ & \derived$\cap$\drawn & 0,70 \\
+Neutrino-Koide & FALSIFIZIERT & 0,90 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Kategoriekonflikte: \textbf{0}. Zusammengesetzte Objekte: \textbf{2}. Gesamtkonsistenz:
+\textbf{0,95}.
+
+%=============================================================================
+
+\chapter{Die No-Go-Sätze}
+\label{ch:nogo}
+
+Die No-Go-Sätze sind \emph{bedingt} — relativ zur Keine-neuen-Primitive-Beschränkung und
+zum getesteten Wegraum —, keine absoluten logischen Unmöglichkeiten (außer der
+Berechnung T-11).
+
+\begin{center}
+\begin{tabular}{p{3.4cm}p{9.6cm}c}
+\toprule
+Satz & Aussage & Konfidenz \\
+\midrule
+\textbf{T-08} Koide-No-Go & keine Symmetrie/kein Attraktor/keine Topologie/keine Informationsgeometrie selektiert $Q=2/3$ & 0,70 \\
+\textbf{T-09} Eichanzahl-No-Go (vorläufig) & kein Prinzip legt $n$ fest; Graphenspektrum/Gittermode ungetestet & 0,10 \\
+\textbf{T-10} $N\le3$-No-Go & keine Stabilitäts-/Anomalie-/Darstellungsschranke liefert $N\le3$ & 0,70 \\
+\textbf{T-11} Neutrino-Koide-Falsifikation & $Q_{\max}=0.585/0.500 < 2/3$ (Berechnung) & 0,90 \\
+\textbf{T-12} Gemeinsame-Kaskade-No-Go & eine vs. drei Kaskaden aus einem Universum untestbar & 0,55 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\begin{remark}[Disposition der inneren 3]
+Eichanzahl $n=3$ und Multiplizität $N\le3$ sind ein Knoten mit zwei formal unverbundenen
+Gesichtern ($N$ vs. $n$; Annahme A-10). Er ist \emph{ungelöst-kontingent} disponiert: Das
+Multiplizitätsgesicht ist geschlossen (T-10, 0,70); das Eichanzahl-Gesicht ist
+\emph{vorläufig} geschlossen (T-09, 0,10). Dies ist die eine offene Tür der Theorie.
+\end{remark}
+
+\theoremnotes
+{Jedes No-Go ist eine Aussage darüber, was der getestete Wegraum nicht erreichen kann,
+nicht darüber, was logisch unmöglich ist; die ``3'', die die Physik durchzieht, reduziert
+sich auf einen Knoten mit zwei Gesichtern.}
+{Die No-Gos sind das markanteste Produkt des Programms: Sie lokalisieren die exakte Grenze
+zwischen dem Ableitbaren und dem Kontingenten, was der Inhalt der
+Struktur/Inhalt-Trennung ist.}
+{Sie sind bedingt (relativ zu Keine-neuen-Primitive und den getesteten Wegen), das
+Eichanzahl-No-Go T-09 ist nur vorläufig (0,10), und das Gemeinsame-Kaskade-No-Go T-12 ist
+schwach (0,55).}
+
+%=============================================================================
+
+\chapterend
+{T-08--T-12 sind bedingte No-Gos; der Knoten der inneren 3 ist die eine offene Tür der
+Theorie.}
+{Das Eichanzahl-Gesicht (T-09, 0,10) ist nur vorläufig geschlossen.}
+{T-11 ist eine Berechnung (Falsifikation); T-08 ist Weg-Ausschöpfung; der Rest sind
+festgehaltene Audits.}
+
+\chapter{Quantitative Vorhersagen}
+\label{ch:predictions}
+
+Der Anspruch der Theorie, wissenschaftlich zu sein, beruht auf der Tatsache, dass sie
+Vorhersagen macht, die scheitern können, und bereits eine verfehlt hat. Die Tabelle hält
+die lebenden Vorhersagen und die eine falsifizierte Vorhersage fest; die Falsifikation
+bleibt in der Tabelle statt begraben zu werden, weil sie der stärkste Beleg dafür ist,
+dass das Programm nicht immunisiert ist.
+
+\begin{center}
+\begin{tabular}{lll}
+\toprule
+Vorhersage & Typ & Status \\
+\midrule
+RAR $g_\dagger=cH_0/(2\pi)\approx1.05\times10^{-10}$ & nullparameterig & trifft $a_0$ \\
+$w(z)=-1+0.015(1+z)^{3/2}$ & kosmologisch & Euclid $>3\sigma$ bis $\sim$2030 \\
+$\Lambda(t)=\alpha/\sqrt{V(t)}$ & dunkle Energie & Euclid / Roman \\
+Lognormales Häufigkeitsgesetz & Verteilungsform & testbar \\
+$N\ge3$ (CP-Untergrenze) & a priori & bestätigt \\
+Neutrino-Koide $Q=2/3$ & falsifizierbar & \textbf{falsifiziert} \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Die Theorie ist \emph{falsifizierbar}: Sie machte eine konkrete Vorhersage
+(Neutrino-Koide), die falsifiziert wurde, und sie trägt lebende quantitative Vorhersagen,
+die sie im \emph{Form}-Sektor von SM $+\Lambda$CDM unterscheiden, obwohl der
+\emph{Inhalt} DRAWN ist.
+
+%=============================================================================
+
+\chapter{Umfang und Grenzen}
+\label{ch:scope}
+
+Eine Theorie, die ihre Grenzen benennt, ist nützlicher als eine, die sie verbirgt. Die
+folgende Liste ist die eigene Buchführung der Theorie darüber, wo sie aufhört; sie ist aus
+der Antwort auf die feindliche Begutachtung übernommen und soll als Teil der Theorie
+gelesen werden, nicht als Entschuldigung für sie.
+
+\begin{enumerate}
+\item Das Eichanzahl-Gesicht des Knotens der inneren 3 ist nur vorläufig geschlossen
+(T-09, 0,10).
+\item Enzyklopädie-Vollständigkeit $\approx81\%$; das CMB-Kapitel ist eine dokumentierte
+partielle Berechnungsschicht.
+\item Inhalt ist konstruktionsbedingt kontingent; die Theorie sagt die
+Verteilungs\emph{form} voraus, nicht die \emph{Werte}.
+\item Die Gemeinsame-Kaskade-Frage ist logisch (nicht empirisch) geschlossen.
+\item Die vereinheitlichte Wirkung ist eine Roadmap, kein Ergebnis.
+\item Konfidenzzahlen sind unkalibrierte ordinale Ränge (Phase-149/156-Schätzungen).
+\item Die Phasengravitations-Kette ist im schwachen Feld ontologisch.
+\end{enumerate}
+
+%=============================================================================
+\part{Verifikation}
+%=============================================================================
+
+\chapter{Das ausführbare Verifikationsprogramm}
+\label{ch:verification}
+
+Der Anspruch, dass dies eine \emph{getestete} Theorie ist, beruht auf dem ausführbaren
+Programm, das hier zusammengefasst und vollständig in Anhang~\ref{app:tests} inventarisiert
+ist. Jedes ``BESTANDEN'' unten ist das Ergebnis eines xUnit-Tests, keine Handberechnung.
+
+\section{Zusammenfassung der verifizierten Ergebnisse}
+
+\begin{center}
+\begin{tabular}{lll}
+\toprule
+Kettenglied & Testdatei & Ergebnis \\
+\midrule
+$L_Q\to-\nabla^2$ & GraphLaplacianContinuumTests & exaktes Spektrum, 4$\times$/Verdopplung \\
+BDG$\to\square$ & BDGOperatorContinuumTests & $O(h^2)$, 4$\times$/Halbierung \\
+$L_Q$ vs. BDG-Signatur & QuantumGravityBridgeTests (3) & PSD vs. indefinit \\
+kein natives $\Delta_g$ & CurvedSpaceBridgeTests (3) & Brücke fehlt \\
+gewichteter Laplace-Operator & WeightedLaplacianTests (4) & symmetrisch/PSD/nullsummig \\
+$L_W\to\Delta_g$ & LaplaceBeltramiTests (3) & S¹-Beispiel \\
+gekrümmte Schr\"odinger-Gleichung & CurvedSchrodingerTests (3) & unitär \\
+Einstein-Wiederherstellung & EinsteinRecoveryTests (3) & TEILWEISE \\
+Einstein-Kette & EinsteinTensorTests (4) & Standard 2D/3D \\
+Einstein-Integration & EinsteinTensorIntegrationTests (4) & Builder funktioniert \\
+Metrik-Erzeugung & MetricGenerationTests (4) & Distanz VORHANDEN \\
+Metrikentstehung & MetricEmergenceTests (4) & Faktor nativ \\
+konforme Struktur & ConformalStructureTests (3) & Klasse importiert \\
+Metrikursprung & MetricOriginTests (3) & Abschluss \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\section{Die entscheidenden Befunde}
+
+\begin{enumerate}
+\item Die \emph{Schr\"odinger}-Seite des Kontinuumsgrenzwerts ist \textbf{kontrolliert und
+getestet}: $L_Q\to-\nabla^2\to$ Schr\"odinger (sowie das gekrümmte $L_W$ und die
+Laplace--Beltrami-Näherung) sind verifiziert.
+\item Die \emph{Einstein}-Seite ist \textbf{teilweise} verifiziert: Die Standardkette
+$g\to G_{\mu\nu}$ funktioniert, aber AT hat keine native Metrik (Malament-Import), und
+die BDG-Wirkung ist importiert.
+\item Die konforme-Klassen-``Lücke'' ist ein \emph{importierter Satz} (Malament), keine
+Theorielücke.
+\end{enumerate}
+
+%=============================================================================
+
+\chapterend
+{Die Schr\"odinger-Seite des Kontinuumsgrenzwerts ist kontrolliert und getestet; die
+Einstein-Seite ist partiell; die konforme Klasse ist ein importierter bewiesener Satz.}
+{Die native Metrik-Operator-Kopplung (G4).}
+{15 Testdateien / 47 Tests, alle BESTANDEN (\texttt{EinsteinRecoveryTests} als TEILWEISE
+vermerkt).}
+
+\chapter{Der Auditpfad der feindlichen Begutachtung}
+\label{ch:audit-trail}
+
+Dieses Kapitel ist die tabellarische Aufzeichnung der in
+Kapitel~\ref{ch:review-history} erzählten Geschichte der feindlichen Begutachtung. Es
+listet die ``FATAL''-Punkte aus Runde 2 und ihre endgültigen Klassifikationen auf.
+
+Ein feindlicher Gutachter (Runde~2) warf zwölf FATAL-Punkte auf. Jeder wurde erneut gegen
+die ausführbaren Tests bewertet. Die Klassifikationen sind:
+
+\begin{center}
+\begin{tabular}{p{6.5cm}l}
+\toprule
+FATAL-Problem aus Runde 2 & Klassifikation \\
+\midrule
+Primitive als mathematische Objekte undefiniert & TEILWEISE GELÖST \\
+Schr\"odinger-Ableitung zirkulär/unvollständig & GELÖST \\
+Eichableitungen = elementare Topologie & TEILWEISE GELÖST \\
+Komplexitätsargument keine Ableitung & TEILWEISE GELÖST \\
+Struktur/Inhalt-Trennung = Immunisierung & TEILWEISE GELÖST \\
+Zusammengesetzte Objekte zugelassen & TEILWEISE GELÖST \\
+Innere 3 ungelöst, während ``vollständig'' & GELÖST \\
+T-09 bei 0,10 kann nicht schließen & GELÖST \\
+``Strukturell vollständig''-Übertreibung & GELÖST \\
+Gravitation$\to$Einstein ist ontologisch & GELÖST \\
+$\mathrm{Aut}(S^1)=U(1)$ als EM-Ableitung & GELÖST \\
+Kein kontrollierter Kontinuumsgrenzwert & TEILWEISE GELÖST \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\textbf{Bilanz: GELÖST = 6 · TEILWEISE GELÖST = 6 · OFFEN = 0.}
+
+\section{Was sich änderte}
+
+Die Rahmenübertreibungen (``geschlossen'' vs.\ ``disponiert'', ``No-Go'' vs.\
+``bedingtes No-Go'', ``Ableitung'' vs.\ ``ontologische Reinterpretation'') wurden im
+überarbeiteten Papier korrigiert. Der \emph{substantielle} Einwand — ``kein kontrollierter
+Kontinuumsgrenzwert'' — wurde auf der Schr\"odinger-Seite beantwortet (nun getestet:
+$L_Q\to-\nabla^2\to$ Schr\"odinger, sowie gekrümmtes $L_W$, Laplace--Beltrami, unitär)
+und \emph{teilweise} auf der Einstein-Seite (die Standardkette funktioniert, aber die
+Metrik und die BDG-Wirkung sind importiert).
+
+\section{Der entscheidende Rest}
+
+Der einzige wirklich offene Punkt ist die \textbf{native Metrik $\to$ Operator-Kopplung}
+(die ``G4''-Lücke): AT importiert $g_{\mu\nu}$ (Malament), statt es aus Q-Ereignissen zu
+erzeugen. Der Metrik\emph{ursprung} ist geschlossen
+(Kapitel~\ref{ch:metric-emergence}); die Metrik\emph{dynamik} bleibt importiert.
+
+\textbf{Urteil:} READY AS A FOUNDATION MONOGRAPH --- READY AS A RESEARCH-PROGRAM PAPER
+--- NOT READY AS A DERIVATION PAPER (siehe Kapitel~\ref{ch:conclusion}).
+
+%=============================================================================
+
+\chapter{Was die feindliche Begutachtung überlebte}
+\label{ch:survived}
+
+Dieses Kapitel fasst die beiden Runden feindlicher Begutachtung in einer einzigen
+Überlebenstabelle zusammen. Für jede Hauptbehauptung hält es den ursprünglichen Status,
+die Kritik des Gutachters und den endgültigen Status nach der Neubewertung gegen die
+abgeschlossenen Tests fest. Das Muster ist einheitlich: Nichts wurde zurückgezogen, aber
+viele Übertreibungen wurden auf präzise, verteidigungsfähige Formen herabgestuft.
+
+\begin{longtable}{p{3.2cm}p{2.4cm}p{3.0cm}p{5.8cm}}
+\toprule
+Behauptung & Ursprünglicher Status & Kritik der Begutachtung & Endgültiger Status \\
+\midrule
+\endhead
+Primitive & ``vollständig formalisiert'' & als mathematische Objekte undefiniert & teilweise formalisiert (Maß/Wirkung als fehlend zugestanden) \\
+Schr\"odinger-Gleichung & abgeleitet & zirkulär / unvollständig & abgeleitet und getestet ($L_Q\to-\nabla^2\to$ Schr\"odinger, unitär) \\
+Eichgruppe & abgeleitet & elementare Topologie & $U(1)$ abgeleitet; $SU(2)$ emergent; $SU(3)$ kontingent (Struktur, nicht Dynamik) \\
+Dimensionalität $3{+}1$ & Ableitung & keine Ableitung & Fensterschnitt (T-02 $=$ 0,85) \\
+Struktur/Inhalt-Trennung & Organisationsprinzip & Immunisierung & beibehalten; Falsifizierbarkeit gezeigt (Neutrino-Koide) \\
+``Strukturell vollständig'' & vollständig & Übertreibung & ``disponiert''; innere 3 als offen markiert \\
+No-Go-Sätze & No-Go & zu stark & bedingtes No-Go (relativ zum getesteten Wegraum) \\
+Gravitation $\to$ Einstein & Ableitung & ontologisch, keine Ableitung & ontologische Reinterpretation im schwachen Feld \\
+$G=\ell^2c^3/\hbar$ & abgeleitet & Dimensionsanalyse & dimensionales / Einheitenkonsistenz-Ergebnis \\
+Kontinuumsgrenzwert & kontrolliert & kein kontrollierter Grenzwert & Schr\"odinger-Seite kontrolliert und getestet; Einstein-Seite partiell \\
+Metrikursprung & geschlossen & eine Lücke & Ursprung geschlossen (Malament-Import, bewiesen); Dynamik importiert (G4) \\
+Eindeutige Vorhersage & testbar & keine diskriminierende Vorhersage & lebende Vorhersagen; noch keine eindeutig vs.\ SM$+\Lambda$CDM \\
+Koide-Relation & reale Struktur & Numerologie & real, vorhersagekräftig, RG-stabil; Ursprung nicht ableitbar (T-08) \\
+Eichanzahl $n=3$ & abgeleitet & nicht festgelegt & vorläufiges No-Go T-09 (0,10) \\
+\bottomrule
+\end{longtable}
+
+\textbf{Lesart der Tabelle.} Jede ``abgeleitet''-Behauptung, die die feindliche
+Begutachtung überlebte, wurde entweder ein getesteter Satz ($U(1)$, der
+Schr\"odinger-Grenzwert) oder eine ausdrücklich umgrenzte Aussage (Fensterschnitt,
+ontologische Reinterpretation, Einheitenkonsistenz). Jede von den Gutachtern behauptete
+``Lücke'' löste sich in eine von zwei ehrlichen Kategorien auf: einen importierten
+bewiesenen Satz (Malament) oder eine zugestandene Theorielimitierung (G4, die Eichanzahl,
+die diskriminierende Vorhersage). Nichts in dieser Tabelle wurde zurückgezogen, und nichts
+wurde still fallengelassen.
+
+\chapterend
+{Keine Behauptung wurde zurückgezogen; Übertreibungen wurden auf präzise Formen
+herabgestuft; die einzige echte Theorielimitierung (G4) und die drei
+Ableitungspapier-Blocker sind nun explizit.}
+{Dieselben drei wissenschaftlichen Blocker (native Metrik-Kopplung, eindeutige
+Vorhersage, native BDG-Wirkung), die nur den Ableitungspapier-Anspruch betreffen.}
+{Aus den abgeschlossenen Tests und den beiden Runden feindlicher Begutachtung tabelliert;
+auf die Tabelle selbst greift kein ausführbarer Test.}
+
+\chapter{Schlussfolgerung}
+\label{ch:conclusion}
+
+THE Q-MODEL ist \emph{strukturell vollständig} in dem präzisen Sinn, dass jede im
+Umfang liegende Frage \textbf{disponiert} ist — abgeleitet, nicht ableitbar,
+unterbestimmt, kontingent oder als Berechnungsschicht akzeptiert.
+
+Der einzige Rest echter wissenschaftlicher Spannung ist der \textbf{Knoten der inneren 3}
+— warum die innere Multiplizität/Anzahl bei 3 sättigt —, disponiert als
+ungelöst-kontingent mit einem vorläufigen Eichanzahl-No-Go (T-09, 0,10). Dies ist die
+eine offene Tür der Theorie.
+
+\textbf{Struktur ist ableitbar. Inhalt wird realisiert.}
+
+\textbf{Publikationsstatus:} READY AS A FOUNDATION MONOGRAPH --- READY AS A
+RESEARCH-PROGRAM PAPER --- NOT READY AS A DERIVATION PAPER. Der dynamische
+Schr\"odinger-Kern ist ausführbar und getestet; die Einstein-Wiederherstellung bleibt
+logisch, nicht mathematisch (importierte Metrik + importierte BDG-Wirkung, $G$
+dimensional, keine eindeutige diskriminierende Vorhersage). Die
+Grundlagenmonographie- und Forschungsprogramm-Ansprüche werden von den verbleibenden
+Ableitungspapier-Blockern nicht berührt, weil eine Grundlagenmonographie legitimerweise
+importierte bewiesene Sätze verwenden darf.
+
+%=============================================================================
+\appendix
+%=============================================================================
+
+\chapter{Vollständiges Testinventar}
+\label{app:tests}
+
+\begin{longtable}{lllc}
+\toprule
+Testdatei & Tests & Verifizierte Größe & Status \\
+\midrule
+\endhead
+GraphLaplacianContinuumTests & 1 & $\lambda_k=(1/\Delta x^2)[2-2\cos(\pi k/(N{+}1))]\to(\pi k)^2$ & BESTANDEN \\
+BDGOperatorContinuumTests & 1 & BDG$\to\square$, $O(h^2)$ & BESTANDEN \\
+QuantumGravityBridgeTests & 3 & $L_Q$ PSD; BDG indefinit; inkompatibel & BESTANDEN \\
+CurvedSpaceBridgeTests & 3 & kein $\Delta_g$; $\Delta_g\to\nabla^2$; fehlt & BESTANDEN \\
+MetricOperatorTests & 4 & Kandidatenkonstruktionen & BESTANDEN \\
+WeightedLaplacianTests & 4 & symmetrisch; nullsummig; PSD; ungewichteter Grenzfall & BESTANDEN \\
+LaplaceBeltramiTests & 3 & flacher Grenzfall; Gewichte; S¹ ($2k{-}1$-Entartung) & BESTANDEN \\
+CurvedSchrodingerTests & 3 & unitär; flacher Grenzfall; gekrümmter Operator & BESTANDEN \\
+EinsteinRecoveryTests & 3 & TEILWEISE (kein vollständiges $G_{\mu\nu}$) & BESTANDEN \\
+EinsteinTensorTests & 4 & flach/sphär. $\Gamma$, $K$, $R$, $G$ & BESTANDEN \\
+EinsteinTensorIntegrationTests & 4 & Builder; 3-Sphäre $G=-g$ & BESTANDEN \\
+MetricGenerationTests & 4 & Distanz VORHANDEN; Kandidat TEILWEISE & BESTANDEN \\
+MetricEmergenceTests & 4 & Faktor $f=\rho^{2/d}$; $R=-0.6145$ & BESTANDEN \\
+ConformalStructureTests & 3 & Axiome; Nullinvariante; Malament & BESTANDEN \\
+MetricOriginTests & 3 & Klasse eindeutig; Faktor frei; importiert & BESTANDEN \\
+\bottomrule
+\end{longtable}
+
+\chapter{Konfidenz- und Klassifikationstabellen}
+\label{app:confidence}
+
+Die Konfidenzzahlen sind unkalibrierte ordinale Ränge (Phase-149/156-Schätzungen), keine
+A-posteriori-Wahrscheinlichkeiten. Sie ordnen, sie messen nicht.
+
+\section{Konfidenztabelle}
+
+\begin{center}
+\begin{tabular}{llc}
+\toprule
+Ergebnis & Konfidenz & Anmerkung \\
+\midrule
+Programmkonsistenz & 0,95 & null Kategoriekonflikte \\
+$U(1)$ & 0,95 & Satz \\
+$N\ge3$ & 0,90 & CP-Untergrenze \\
+Neutrino-Koide & 0,90 & Falsifikation (Berechnung) \\
+räumliche 3 & 0,85 & Fensterschnitt \\
+$SU(2)$ & 0,70 & emergent \\
+Koide $45^\circ$ & 0,70 & strukturiert \\
+$N\le3$ & 0,70 & No-Go \\
+$SU(3)$-Struktur & 0,10 & vorläufiges No-Go \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\section{Endgültige Klassifikation}
+
+\begin{center}
+\begin{tabular}{ll}
+\toprule
+Frage & Klassifikation \\
+\midrule
+Ist der Metrikursprung geschlossen? & JA (importierter Malament, bewiesen) \\
+Ist der Schr\"odinger-Kontinuumsgrenzwert kontrolliert? & JA (getestet) \\
+Ist die Einstein-Wiederherstellung eine Ableitung? & NEIN (logisch, importiert) \\
+Ist AT journalreif? & NEIN \\
+Ist AT whitepaperreif? & JA \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+%=============================================================================
+
+\chapter{Ausführliche Ableitung: Die Einstein-Kette auf der 2-Sphäre}
+\label{app:worked}
+
+Dieser Anhang führt die übliche differentialgeometrische Kette explizit vor, damit die
+Leserin oder der Leser jeden Schritt verfolgen kann, ohne den Repository-Code zu öffnen.
+
+\section{Aufbau}
+
+Die Einheits-2-Sphäre hat die Metrik (Koordinaten $x^1=\theta$, $x^2=\phi$)
+\begin{equation}
+g = \mathrm{diag}\!\left(g_{\theta\theta},\ g_{\phi\phi}\right)
+  = \mathrm{diag}\!\left(1,\ \sin^2\theta\right),
+\qquad g^{\theta\theta}=1,\quad g^{\phi\phi}=\frac{1}{\sin^2\theta}.
+\end{equation}
+
+\section{Christoffel-Symbole}
+
+\begin{equation}
+\Gamma^\lambda_{\mu\nu} = \tfrac12 g^{\lambda\sigma}\left(
+\partial_\mu g_{\sigma\nu} + \partial_\nu g_{\sigma\mu} - \partial_\sigma g_{\mu\nu}\right).
+\end{equation}
+
+Die einzige nicht verschwindende partielle Ableitung ist
+$\partial_\theta g_{\phi\phi} = 2\sin\theta\cos\theta$. Daher
+\begin{align}
+\Gamma^\theta_{\phi\phi} &= -\tfrac12\, g^{\theta\theta}\, \partial_\theta g_{\phi\phi}
+= -\sin\theta\cos\theta, \\
+\Gamma^\phi_{\theta\phi} = \Gamma^\phi_{\phi\theta}
+&= \tfrac12\, g^{\phi\phi}\, \partial_\theta g_{\phi\phi}
+= \frac{\cos\theta}{\sin\theta} = \cot\theta.
+\end{align}
+Bei $\theta=\pi/4$: $\Gamma^\theta_{\phi\phi}=-1/2$, $\Gamma^\phi_{\theta\phi}=1$.
+
+\section{Riemann-Krümmung}
+
+\begin{equation}
+R^\rho_{\ \sigma\mu\nu} = \partial_\mu\Gamma^\rho_{\nu\sigma}
+- \partial_\nu\Gamma^\rho_{\mu\sigma}
++ \Gamma^\rho_{\mu\lambda}\Gamma^\lambda_{\nu\sigma}
+- \Gamma^\rho_{\nu\lambda}\Gamma^\lambda_{\mu\sigma}.
+\end{equation}
+
+Die einzige unabhängige Komponente ist
+\begin{align}
+R^\theta_{\ \phi\theta\phi}
+&= \partial_\theta\Gamma^\theta_{\phi\phi} - \Gamma^\theta_{\phi\phi}\Gamma^\phi_{\theta\phi} \\
+&= -\left(\cos^2\theta-\sin^2\theta\right) + \sin\theta\cos\theta\cdot\cot\theta \\
+&= \sin^2\theta.
+\end{align}
+Bei $\theta=\pi/4$: $R^\theta_{\ \phi\theta\phi}=1/2$.
+
+\section{Gauß-Krümmung, Ricci und Einstein}
+
+Gauß-Krümmung:
+\begin{equation}
+K = \frac{R^\theta_{\ \phi\theta\phi}}{g_{\phi\phi}}
+= \frac{\sin^2\theta}{\sin^2\theta} = 1.
+\end{equation}
+
+Ricci-Tensor (in 2D gilt $R_{\mu\nu}=K g_{\mu\nu}$):
+\begin{equation}
+R_{\theta\theta}=K g_{\theta\theta}=1,\qquad
+R_{\phi\phi}=K g_{\phi\phi}=\sin^2\theta=\tfrac12 \text{ bei }\theta=\pi/4.
+\end{equation}
+
+Ricci-Skalar:
+\begin{equation}
+R = g^{\mu\nu}R_{\mu\nu} = 2K = 2.
+\end{equation}
+
+Einstein-Tensor (verschwindet identisch in 2D):
+\begin{equation}
+G_{\mu\nu} = R_{\mu\nu} - \tfrac12 R g_{\mu\nu} = 0.
+\end{equation}
+
+All dies wird von \texttt{EinsteinTensorBuilder} numerisch bis auf $10^{-3}$ reproduziert.
+Ein nichttrivialer $G_{\mu\nu}$ erfordert Dimension $\ge3$; die Einheits-3-Sphäre liefert
+$G_{\mu\nu}=-g_{\mu\nu}$ (Anhang~\ref{app:tests}).
+
+%=============================================================================
+
+\chapter{Forschungsprogramme}
+\label{app:programs}
+
+Das Ableitungsprogramm ist in Forschungsprogramme gegliedert, die jeweils durch
+ausführbare Experimente abgeschlossen werden. Die vier Programme, die das technische
+Gewicht dieser Monographie tragen --- das Eich-, Koide-, Kontinuums- und Metrikprogramm
+---, werden in Kapitel~\ref{ch:journey} erzählt; dieser Anhang hält das
+Programmregister fest.
+
+\begin{center}
+\begin{tabular}{llc}
+\toprule
+Programm & Umfang & Experimente \\
+\midrule
+DATA & Kosmologie \& RAR & 10 (DATA-001$\to$010) \\
+QM & Quantengrundlagen & 5 (QM-001$\to$005) \\
+QG & Quantengravitation & 31 (QG-001$\to$031) \\
+XC & Kontinuumsgrenzwert-Brücke & (Audits + Tests) \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Kernergebnisse des gesamten Programms:
+\begin{itemize}
+\item $G$ ist nicht fundamental: $G=\ell^2c^3/\hbar$ (Gravitation entsteht aus dem
+Tripel).
+\item $(\ell,\tau,\hbar)$ ist das irreduzible Tripel — ein Prozess, drei Aspekte.
+\item Oszillation ist eine logische Unvermeidlichkeit (nicht entfernbar, ohne $Q$ zu
+zerstören).
+\item Gravitation ist ein Phasengradienten-Phänomen; Anziehung dominiert, Abstoßung ist
+dunkle Energie.
+\item Gravitationsmanipulation ist nicht möglich (QG-023$\to$031).
+\item RAR-Ableitung $g_\dagger=cH_0/(2\pi)$ mit null freien Parametern.
+\item Parameterkompression SM+GR ($\sim$26) $\to$ AT ($2{+}3$), $\sim$5--8$\times$
+Reduktion.
+\item Neue Vorhersagen: $w(z)=-1+0.015(1+z)^{3/2}$; evolvierendes $g_\dagger(z)$;
+Euclid-Empfindlichkeit.
+\end{itemize}
+
+\chapter{Entwicklungsregister (Auswahl)}
+\label{app:ledger}
+
+Dieser Anhang hält in kompakter Form eine Auswahl der Experimente und Audits fest, die
+die Erzählung von Kapitel~\ref{ch:timeline} untermauern. Er ist nicht erschöpfend: Das
+vollständige Laborbuch liegt in der Projektdokumentation. Jeder Eintrag nennt den
+Bezeichner, die Frage oder Behauptung und das festgehaltene Ergebnis. Die Einträge sind
+nach Ära gruppiert.
+
+\begin{longtable}{p{4.2cm}p{5.2cm}p{5.6cm}}
+\toprule
+Bezeichner & Frage / Behauptung & Ergebnis / Disposition \\
+\midrule
+\endhead
+\multicolumn{3}{l}{\emph{Frühe Oszillatorexperimente}} \\
+\midrule
+AT-001 & Entsteht Synchronisation? & Ja: Ordnungsparameter $R\to1$. \\
+AT-002 & Ergeben Zufallsmatrizen Emergenz? & Nein: Wigner-Spektrum, keine strukturierte Emergenz. \\
+AT-003 & Ist statische Topologie ausreichend? & Nein: Dynamik überwiegt statische Struktur. \\
+AT-004 & Synchronisiert ein Feld zwei asymmetrische Oszillatoren? & Nein: Feld wirkt als Resonanzmedium. \\
+AT-005 & Bilden sich Resonanzcluster? & Ja: zwei Cluster aus drei Oszillatoren, $\sim5\%$ Energiebeteiligung. \\
+AT-006 & Gibt es eine kritische Resonanzdichte? & Ja: $\rho_c\approx0.09$, perkolationsartiger Übergang. \\
+AT-007 & Wie viele Resonanzfamilien existieren? & Fünf gemeldet. \\
+AT-008 & Welche Familien sind reproduzierbar? & Nur F4 (74\%, Score 0,721); der Rest sind Keim-Artefakte. \\
+\midrule
+\multicolumn{3}{l}{\emph{Alternative Grundlagen (ResearchX)}} \\
+\midrule
+X001 & Audit verborgener Annahmen & 11 gefunden; der statische Graph ist Nr.~1. \\
+X002--X004 & Innovieren dynamische Graphen? & Nein: Knotenbewegung, Mobilität, Wachstum fügen nichts Offenes hinzu. \\
+X005--X006 & Erhält Nichtlinearität die Quanten-Lesart? & Nein: Eigenmoden zerbrechen in Solitonen; Artefakte der linearen Algebra. \\
+X007--X008 & Universelle Artentheorie & 16 Trägerklassen über fünf Regime. \\
+X009--X015 & Tiefste Grundlagen & Reversibilität $+$ Selbstkonsistenz ist minimal hinreichend; Rev$\cap$SC $=$ QM. \\
+X016--X017 & Realitätskarte & $(R,S)$ ist eine Karte, kein dynamischer Fluss. \\
+X018--X022 & Komplexitätstreppe & Stufe 6 nicht beobachtet; Operatorevolution nötig. \\
+X023--X027 & Suche nach offener Evolution & Verzögerte Sättigung; Schubfachbeweis für endliche Systeme. \\
+X028--X029 & Konsequenzen endlicher Universen & Sättigung physikalisch irrelevant; hybride Architekturen optimal. \\
+X030--X031 & Quantenoptimalität & QM ist das eindeutige globale Maximum endlicher Komplexität. \\
+X032--X034 & Vereinheitlichung & $L_Q$ ist nicht fundamental; Emergenzlücke geschlossen. \\
+X035--X036 & Ursprung von $Q$; Komplexitätssatz & $Q$ irreduzibel; Schr\"odinger abgeleitet (Klassifikation C). \\
+X037--X039 & Born, Messung, Zufall & Born abgeleitet ($\alpha=2$); Viele-Welten inkompatibel; Zufall irreduzibel. \\
+X040--X042 & Zeit, Gravitation, Dimensionalität & Zeit $=$ Halbordnung; Gravitation $=$ Kausalmenge; $3{+}1$ abgeleitet. \\
+X043--X046 & Fundamentale Skalen & $G=\ell^2c^3/\hbar$; $\hbar=1$; $c,G,\hbar$ vereinheitlicht; $\Lambda\sim H^2$. \\
+X047--X049 & Materie und Eichstruktur & Teilchen $=$ Defekte; Eichstruktur entsteht; Selektionslücke. \\
+X051--X056, X059--X060 & Teilchenphysik & Generationen, Massen, Mischung, Neutrinos; SM-Gruppe bevorzugt, nicht abgeleitet. \\
+X057--X058, X060b--X060f & Parameterkompression & Zwei Primitive $+$ $M^2$; $M^2$ irreduzibel. \\
+\midrule
+\multicolumn{3}{l}{\emph{Späte Phasen (140--159)}} \\
+\midrule
+Phase 140 & Kausalmengen-$\Lambda$ & $\Lambda\sim1/\sqrt N$ (Postdiktion). \\
+Phase 144 & Radialbeschleunigungsrelation & $g_\dagger=cH_0/2\pi$; das $2\pi$ ist ein numerischer Zufall. \\
+Phase 148 & Flavour-/Yukawa-Reduzierbarkeit & Koide $Q=2/3$ kontingent, nicht abgeleitet. \\
+Phase 149 & Eichursprung & $U(1)$ abgeleitet; $SU(2)$ emergent; $SU(3)$ kontingent. \\
+Phase 150 & Multiplizität ``3'' & Raumzeit-3 abgeleitet; innere 3 selektiert. \\
+Phase 151 & Obergrenze $N\le3$ & Empirisch/kontingent; keine Stabilitäts-/Anomalie-/Darstellungsschranke. \\
+Phase 152 & Ensembles der Zufälligen Aktualisierung & Vier unabhängige Ensembles unter einem Lognormalgesetz. \\
+Phase 153 & Kaskadenvereinheitlichung & Drei Universalitätsklassen sind unabhängige Kaskaden. \\
+Phase 155 & Neutrino-Koide & Falsifiziert ($Q_{\max}=0.585/0.500<2/3$). \\
+Phase 159 & Koide-Abschluss & Sieben Wege, sechs No-Gos, einer blockiert; geschlossene Frage. \\
+QG-080--100 & Kausalmengen-Grundlagenprogramm & $\Lambda\sim H^2/c^2$; $a_0\sim cH$; Endantwort erreicht. \\
+Feindliche Begutachtung (Runde~1) & v1.0-Papier-Audit & 1 gültig, 11 teilweise gültig, 0 ungültig; Urteil NOT READY. \\
+Feindliche Begutachtung (Runde~2) & FATAL-Punkte-Audit & 6 gelöst, 6 teilweise gelöst, 0 offen. \\
+v1.0-Veröffentlichung & Versionsreife & Vier Dispositionen; v1.0 veröffentlicht. \\
+\bottomrule
+\end{longtable}
+
+\chapter{Glossar}
+\label{app:glossary}
+
+\begin{center}
+\begin{tabular}{lp{10cm}}
+\toprule
+Begriff & Bedeutung \\
+\midrule
+$Q$ & Individuationsprinzip (Ontologie) \\
+Zufällige Aktualisierung & ontologischer Zufall (Annahme A-03) \\
+$(\ell,\tau,\hbar)$ & Raumzeit-Skala, Uhr, Wirkung (Einheiten) \\
+$M^2$ & Nichtlinearitätsparameter (einziger kontinuierlicher) \\
+$L_Q$ & Graphen-Laplace-Operator $D-A$ \\
+$L_W$ & gewichteter Laplace-Operator $D_K-K$ \\
+BDG & Benincasa--Dowker--Glaser-d'Alembert-Operator \\
+$\Delta_g$ & Laplace--Beltrami-Operator \\
+$G_{\mu\nu}$ & Einstein-Tensor $R_{\mu\nu}-\tfrac12 R g_{\mu\nu}$ \\
+\derived & aus Primitiven per Satz berechenbar \\
+\realunder & reale Struktur, nicht ableitbarer Ursprung \\
+\drawn & zufällige Ziehung des Häufigkeitsgesetzes \\
+T-08\dots T-12 & bedingte No-Go-Sätze \\
+A-03, A-06, A-07, A-10 & Annahmen (zufällige Aktualisierung; $Z_2$-Anhebung; Eichdynamik; $N$/$n$-Trennung) \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+%=============================================================================
+
+\chapter{Literatur}
+\label{app:references}
+
+\begin{thebibliography}{99}
+
+\bibitem{malament1977}
+D.~B.~Malament, ``The class of continuous timelike curves determines the topology of
+spacetime,'' \emph{J. Math. Phys.} \textbf{18}, 1399 (1977).
+
+\bibitem{hkm1976}
+S.~W.~Hawking, A.~R.~King, P.~J.~McCarthy, ``A new topology for curved space--time which
+incorporates the causal, differential, and conformal structures,'' \emph{J. Math. Phys.}
+\textbf{17}, 174 (1976).
+
+\bibitem{myrheim1978}
+J.~Myrheim, ``Statistical geometry,'' CERN-TH-2538 (1978).
+
+\bibitem{bdg2010}
+D.~M.~T.~Benincasa, F.~Dowker, ``Scalar curvature of a causal set,'' \emph{Phys. Rev. Lett.}
+\textbf{104}, 181301 (2010); L.~Glaser, \emph{Class. Quant. Grav.} \textbf{31}, 095007
+(2014).
+
+\bibitem{gleason1957}
+A.~M.~Gleason, ``Measures on the closed subspaces of a Hilbert space,''
+\emph{J. Math. Mech.} \textbf{6}, 885 (1957).
+
+\bibitem{sorkin}
+R.~D.~Sorkin, ``Causal sets: discrete gravity,'' \emph{Proceedings of the Valdivia Summer
+School} (2003).
+
+\bibitem{belkin2003}
+M.~Belkin, P.~Niyogi, ``Laplacian eigenmaps for dimensionality reduction and data
+representation,'' \emph{Neural Computation} \textbf{15}, 1373 (2003).
+
+\bibitem{koide1981}
+Y.~Koide, ``Fermion mass relation and the generation structure,'' \emph{Phys. Rev. D}
+\textbf{28}, 252 (1983) [letter 1981].
+
+\bibitem{bertrand}
+J.~Bertrand, ``Th\'eor\`eme relatif au mouvement d'un point attir\'e vers un centre fixe,''
+\emph{C. R. Acad. Sci.} \textbf{77}, 849 (1873).
+
+\end{thebibliography}
+
+\end{document}

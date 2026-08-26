@@ -1,6 +1,6 @@
 # Theta Information Field Theory
 
-## TQM-129: Θ(x,t) as an Information-Carrying Medium
+## AT-129: Θ(x,t) as an Information-Carrying Medium
 
 ### Abstract
 
@@ -39,9 +39,9 @@ At low density: ξ_info small → transport limited.
 ### 4. The Three Requirements
 
 Information transport requires:
-1. **Encoding**: Θ can be locally modulated (TQM-126 confirms)
-2. **Propagation**: Θ supports wave dynamics (TQM-127/128 confirm)
-3. **Decoding**: Θ amplitude can be threshold-detected (TQM-129 confirms)
+1. **Encoding**: Θ can be locally modulated (AT-126 confirms)
+2. **Propagation**: Θ supports wave dynamics (AT-127/128 confirm)
+3. **Decoding**: Θ amplitude can be threshold-detected (AT-129 confirms)
 
 All three are satisfied — Θ is a complete information channel.
 

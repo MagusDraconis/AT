@@ -4,14 +4,14 @@
 
 ### 1. The Darwinian Triad
 
-TQM-134 and TQM-135 together establish the complete Darwinian triad
+AT-134 and AT-135 together establish the complete Darwinian triad
 in the Theta information layer:
 
 | Pillar | Mechanism | Evidence |
 |--------|-----------|----------|
-| **Reproduction** | Field-mediated template copying | 132 events, H=0.786 (TQM-134) |
-| **Variation** | Mutation via damping + noise | μ=0.214/gen (TQM-134) |
-| **Selection** | Differential survival under resource limits | 329 extinctions, 8.6× fitness diff (TQM-135) |
+| **Reproduction** | Field-mediated template copying | 132 events, H=0.786 (AT-134) |
+| **Variation** | Mutation via damping + noise | μ=0.214/gen (AT-134) |
+| **Selection** | Differential survival under resource limits | 329 extinctions, 8.6× fitness diff (AT-135) |
 
 This means the Theta information layer is a **complete evolutionary substrate** —
 capable of supporting Darwinian dynamics from first principles.
@@ -19,31 +19,31 @@ capable of supporting Darwinian dynamics from first principles.
 ### 2. The Seven-Level Theta Hierarchy
 
 ```
-Level 1: TRANSPORT (TQM-129)
+Level 1: TRANSPORT (AT-129)
   Mechanism: Damped wave propagation
   Evidence: Signals encode → propagate → decode
 
-Level 2: MEMORY (TQM-130)
+Level 2: MEMORY (AT-130)
   Mechanism: Theta persistence encoding
   Evidence: Signals persist beyond decay time
 
-Level 3: INTERACTION (TQM-132)
+Level 3: INTERACTION (AT-132)
   Mechanism: Coupling-mediated overlap
   Evidence: Merge, reinforce, cancel
 
-Level 4: ATTRACTORS (TQM-133)
+Level 4: ATTRACTORS (AT-133)
   Mechanism: Dissipation → preferred states
   Evidence: 4 stable species, convergence ratio < 0.15
 
-Level 5: ECOLOGY (TQM-133)
+Level 5: ECOLOGY (AT-133)
   Mechanism: Multiple attractor basins coexist
   Evidence: Species taxonomy with distinct basins
 
-Level 6: REPRODUCTION (TQM-134)
+Level 6: REPRODUCTION (AT-134)
   Mechanism: Pattern copying + inheritance
   Evidence: 132 reproduction events, H=0.786
 
-Level 7: SELECTION (TQM-135)
+Level 7: SELECTION (AT-135)
   Mechanism: Resource-limited differential survival
   Evidence: 329 extinctions, 8.6× fitness differential
 ```
@@ -91,7 +91,7 @@ s_i = (dN_i/dt) / (r_i · N_i)
 When s_i > 0: species is favored (growing faster than intrinsic rate).
 When s_i < 0: species is disfavored (resource constraints suppress growth).
 
-For TQM-135:
+For AT-135:
 - s_A = +0.009 (mildly favored)
 - s_D = -0.041 (strongly disfavored)
 
@@ -112,7 +112,7 @@ Two species can coexist when:
 where α_ij is the competition coefficient (how much species j
 reduces species i's carrying capacity).
 
-For TQM-135: A and B coexist when resource capacity is sufficient
+For AT-135: A and B coexist when resource capacity is sufficient
 for both to maintain viable populations.
 
 ### 4. Physical Interpretation
@@ -156,7 +156,7 @@ The replicator equation (dx_i/dt = x_i·(f_i - ⟨f⟩)) assumes:
 - No mutation during selection
 - Instantaneous fitness response
 
-TQM-135 violates all four assumptions:
+AT-135 violates all four assumptions:
 - Finite populations (10-500 individuals) → stochastic noise
 - Resource-dependent fitness (changes with population) → feedback
 - Ongoing mutation (μ=0.214/gen) → traits change during selection
@@ -200,7 +200,7 @@ and the peaks shift. This is environmental selection.
 
 ### 6. Implications
 
-#### 6.1 For TQM
+#### 6.1 For AT
 
 The complete Darwinian triad establishes the Theta field as a
 **self-contained evolutionary system**. It does not require:
@@ -261,5 +261,5 @@ Proto-matter condensates → Identity & memory → Information transport →
 Information memory → Information interaction → Information species →
 Information reproduction → **Information selection**.
 
-The TQM framework now demonstrates that matter-like structures and
+The AT framework now demonstrates that matter-like structures and
 life-like dynamics can emerge from purely temporal field physics.

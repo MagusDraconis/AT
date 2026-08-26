@@ -75,5 +75,5 @@ measure's local derivatives. No Einstein equations, no metric tensor, no importe
 | G4-G21 `G4_G21_FiniteDifferenceRefinementConverges` | PASS (FD error → 0 under h → 0) |
 | G4-G22 `G4_G22_DimensionDependence` | PASS (trace + non-triviality in d = 2…6) |
 
-Code: `TQM.Core/ResearchXH/HigherDimEinstein.cs` (added `DirectEinstein11/Other`, `RhoPrime/Second`);
-tests `TQM.Tests/ResearchXH/G4G_Phase2_RhoToEinsteinTests.cs`.
+Code: `AT.Core/ResearchXH/HigherDimEinstein.cs` (added `DirectEinstein11/Other`, `RhoPrime/Second`);
+tests `AT.Tests/ResearchXH/G4G_Phase2_RhoToEinsteinTests.cs`.

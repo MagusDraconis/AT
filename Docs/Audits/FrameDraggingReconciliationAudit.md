@@ -3,7 +3,7 @@
 **Goal:** determine whether legacy TRM frame dragging contains genuinely new testable
 physics. **No new physics, no fitting — reconciliation only.**
 **Sources:** `LegacyDocs/TRM_V3_0_Theta_Vector_and_UnifiedAction.pdf` (FD01–FD20),
-`TQM_Encyclopedia.md` (5.4), QG gravity derivations (QG-007/022/035).
+`AT_Encyclopedia.md` (5.4), QG gravity derivations (QG-007/022/035).
 
 ---
 
@@ -24,12 +24,12 @@ sector"; "**Not claimed:** … full quantitative GR-equivalence."
 
 ## 2. Comparison
 
-### 2.1 vs TQM phase-gradient gravity
+### 2.1 vs AT phase-gradient gravity
 
-TQM gravity is **scalar**: $\vec a = c^2\nabla\theta$ (QG-022, phase-gradient),
+AT gravity is **scalar**: $\vec a = c^2\nabla\theta$ (QG-022, phase-gradient),
 $G=\ell^2c^3/\hbar$ (QG-007). There is **no vector / frame-dragging sector**; QG-035
 concerns defect winding signs, not Lense–Thirring. → The vector sector is **absent from
-TQM** (New Mathematics relative to TQM).
+AT** (New Mathematics relative to AT).
 
 ### 2.2 vs GR Lense–Thirring (gravitomagnetism)
 
@@ -48,7 +48,7 @@ GR normalization) differ.
 | $\vec A_T$ (vector potential) | **Equivalent** to GR $\vec A_g$ | same structure |
 | $\vec B_T=\nabla\times\vec A_T$ | **Equivalent** to GR $\vec B_g$ | same curl |
 | frame-dragging interpretation | **Equivalent (candidate)** to Lense–Thirring | "not full GR-equivalence" |
-| vector sector (whole) | **New Mathematics** relative to TQM | TQM is scalar-only |
+| vector sector (whole) | **New Mathematics** relative to AT | AT is scalar-only |
 | $k_T$ "derived non-fitted" | **New claim (unverified)** | no derivation in repo |
 | *(none)* | **Contradicted** | nothing conflicts (TRM disclaims GR replacement) |
 
@@ -67,11 +67,11 @@ GR normalization) differ.
 ## 5. Conclusion
 
 The TRM frame-dragging is **structurally GR's gravitomagnetism** ($\vec B=\nabla\times\vec A$),
-re-derived under a candidate label. Relative to TQM it is a **new sector** (TQM's gravity
+re-derived under a candidate label. Relative to AT it is a **new sector** (AT's gravity
 is scalar-only), but its *observable* — Lense–Thirring precession — is GR's, and **already
 measured** (Gravity Probe B, LAGEOS). It therefore contains **no genuinely new testable
 physics unless $k_T$ demonstrably differs from GR's fixed normalization** (or the
 spin-sign-reversal claim predicts a measurable deviation), neither of which is established
 at the current "candidate" claim level. Verdict: **Equivalent to GR gravitomagnetism / New
-relative to TQM / not contradicted** — a re-labeling plus one unverified derived-coupling
+relative to AT / not contradicted** — a re-labeling plus one unverified derived-coupling
 claim, not a new observable.

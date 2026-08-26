@@ -1,0 +1,37 @@
+@page "/taxonomy"
+
+<PageTitle>Taxonomy · AT</PageTitle>
+
+<h2 class="section-heading">Taxonomy</h2>
+<p class="muted">The taxonomy classifies objects by whether they are derived, real-but-underived, or drawn as abundance-law coincidences.</p>
+
+<div class="mb-4">
+    <span class="badge badge-derived">DERIVED</span> computable from the current derivation chain
+    &nbsp;&middot;&nbsp;
+    <span class="badge badge-real">REAL-UNDERIVED</span> real, precise, predictive, but not yet derived
+    &nbsp;&middot;&nbsp;
+    <span class="badge badge-drawn">DRAWN</span> coincidental draw of the abundance law
+</div>
+
+<MudCard Elevation="1" Class="theory-card mb-4">
+    <MudCardContent>
+        <MudText Typo="Typo.body2" Class="muted">
+            This page is a status map, not a proof table. It tracks how each object is currently
+            classified in the theory record and should be read alongside the latest hierarchy and
+            coverage pages.
+        </MudText>
+    </MudCardContent>
+</MudCard>
+
+<MudTable Items="AtlasDataService.Taxonomy" Hover="true" Dense="true">
+    <HeaderContent>
+        <MudTh>Object</MudTh>
+        <MudTh>Classification</MudTh>
+        <MudTh>Confidence</MudTh>
+    </HeaderContent>
+    <RowTemplate>
+        <MudTd>@context.Name</MudTd>
+        <MudTd><ClassificationBadge Kind="@context.Kind" /></MudTd>
+        <MudTd>@context.Confidence</MudTd>
+    </RowTemplate>
+</MudTable>

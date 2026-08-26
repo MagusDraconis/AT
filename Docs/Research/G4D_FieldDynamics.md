@@ -77,5 +77,5 @@ density field + the spectral decomposition).
 | G4-D11 `G4_D11_CurvaturePeakPropagatesWithDensity` | PASS (peak tracks x₀, Pearson 0.995) |
 | G4-D12 `G4_D12_FieldIsStableAndResolvesWhatMeanFieldMisses` | PASS (field correct, mean-field inverted, refinement 0.996) |
 
-Code: `TQM.Core/ResearchXH/CurvatureField.cs` (+ `SpectralCurvature.LocalHeatKernel`);
-tests `TQM.Tests/ResearchXH/G4D_Phase1_FieldDynamicsTests.cs`.
+Code: `AT.Core/ResearchXH/CurvatureField.cs` (+ `SpectralCurvature.LocalHeatKernel`);
+tests `AT.Tests/ResearchXH/G4D_Phase1_FieldDynamicsTests.cs`.

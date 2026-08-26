@@ -102,5 +102,5 @@ the BDG −2.
 | G4-L71 `G4_L71_BestDiagonalPreservesStructure` | PASS (D1: leak 0.428, dir 0.879, indefinite, alternating) |
 | G4-L72 `G4_L72_RefinementStability` | PASS (N=72 → 0.428, N=110 → 0.443) |
 
-Code: `TQM.Core/ResearchXH/LorentzianOperator.cs` (added `IntervalCount`, `LayerOccupancy`,
-`CausalVolume`, `RetardedInterval`); tests `TQM.Tests/ResearchXH/G4L_Phase7_NativeDiagonalTests.cs`.
+Code: `AT.Core/ResearchXH/LorentzianOperator.cs` (added `IntervalCount`, `LayerOccupancy`,
+`CausalVolume`, `RetardedInterval`); tests `AT.Tests/ResearchXH/G4L_Phase7_NativeDiagonalTests.cs`.

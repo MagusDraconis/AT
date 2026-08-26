@@ -27,7 +27,7 @@ negative Euler characteristic χ = 2 − 2g):
 | Desargues | G(10,3) | 20 | 3 | 6 | 2 | −2 |
 | Nauru | G(12,5) | 24 | 3 | 6 | 4 | −6 |
 
-Code: `TQM.Core/ResearchXH/CompactHyperbolicGraph.cs`.
+Code: `AT.Core/ResearchXH/CompactHyperbolicGraph.cs`.
 
 SCI is the Phase-1 definition (deviation of the heat-kernel spectral dimension from 2):
 
@@ -102,5 +102,5 @@ distance, whose heat trace has the subleading χ/6 (Euler-characteristic) term.
 | G4-2A-01 `G4_2A_01_HeatTraceAndZetaCompute` | PASS |
 | G4-2A-02 `G4_2A_02_SciSignCalibration` | PASS |
 
-`TQM.Tests/ResearchXH/G4Phase2AHyperbolicCalibrationTests.cs` (inherits `ResearchTestBase`,
+`AT.Tests/ResearchXH/G4Phase2AHyperbolicCalibrationTests.cs` (inherits `ResearchTestBase`,
 deterministic, `StringBuilder`-composed reports).

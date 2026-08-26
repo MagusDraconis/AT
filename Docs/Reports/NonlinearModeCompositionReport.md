@@ -1,4 +1,4 @@
-# TQM-141 Nonlinear Mode Composition and Species Emergence
+# AT-141 Nonlinear Mode Composition and Species Emergence
 
 ## SCIENTIFIC REPORT
 
@@ -9,7 +9,7 @@
 Nonlinear mode composition generates many composite species (100 unique)
 but does NOT compress the species catalog — pure eigenmodes remain the
 most parsimonious explanation. Linear combinations of just **2 eigenmodes**
-can reconstruct all 7 TQM-139 species with good overlap.
+can reconstruct all 7 AT-139 species with good overlap.
 
 - **1985 composites generated**, 100 unique after clustering
 - **7/7 species reconstructed** (100% coverage) with linear pairs
@@ -20,9 +20,9 @@ can reconstruct all 7 TQM-139 species with good overlap.
 
 ---
 
-## 1. TQM-140 Recap
+## 1. AT-140 Recap
 
-TQM-140: 10 eigenmodes, 7/7 species mapped, overlap 0.808.
+AT-140: 10 eigenmodes, 7/7 species mapped, overlap 0.808.
 Gap: 10 modes vs 13-19 observed species.
 
 Hypothesis: the extra species are nonlinear combinations of eigenmodes.
@@ -32,7 +32,7 @@ Hypothesis: the extra species are nonlinear combinations of eigenmodes.
 ## 2. Experimental Design
 
 ### 2.1 Eigenmode Basis
-10 eigenmodes from TQM-140 (k=0 to k=9).
+10 eigenmodes from AT-140 (k=0 to k=9).
 
 ### 2.2 Composite Generation
 - Single modes: 10
@@ -52,7 +52,7 @@ Total: **1985 composites generated**
 
 ### 3.1 Species Reconstruction
 
-| TQM-139 Species | Composing Modes | Overlap | Type |
+| AT-139 Species | Composing Modes | Overlap | Type |
 |----------------|-----------------|---------|------|
 | A | [0] | 0.938 | Pure |
 | B | [5,6] | 0.814 | Linear-Pair |
@@ -102,9 +102,9 @@ All 7 species can be reconstructed as:
 No nonlinear product terms are needed. The species are LINEAR
 superpositions of at most 2 eigenmodes.
 
-### 4.3 Comparison with TQM-138/139
+### 4.3 Comparison with AT-138/139
 
-| Property | TQM-138/139 | TQM-141 |
+| Property | AT-138/139 | AT-141 |
 |----------|------------|---------|
 | Species count | 13-19 | 100 (composites) |
 | Reconstruction | — | 7/7 (100%) |
@@ -119,7 +119,7 @@ superpositions of at most 2 eigenmodes.
 | Attack | Verdict |
 |--------|---------|
 | Composites just noise? | **NO** — 100 unique, many stable |
-| Match TQM-139 species? | **YES** — 7/7, overlap 0.81-0.95 |
+| Match AT-139 species? | **YES** — 7/7, overlap 0.81-0.95 |
 | Nonlinear necessary? | **NO** — linear suffices |
 | Basis compression? | **NO** — 100 > 10 (expansion) |
 | Null hypothesis? | **CONFIRMED** — pure eigenmodes sufficient |
@@ -133,9 +133,9 @@ superpositions of at most 2 eigenmodes.
 **MODE COMPOSITION EXISTS BUT DOES NOT COMPRESS THE SPECIES CATALOG.**
 
 While 100 composite species can be generated from eigenmode combinations,
-and all 7 TQM-139 species are well-reconstructed as linear pairs,
+and all 7 AT-139 species are well-reconstructed as linear pairs,
 the composite approach EXPANDS rather than compresses the catalog.
-Pure eigenmodes (TQM-140) remain the most parsimonious explanation.
+Pure eigenmodes (AT-140) remain the most parsimonious explanation.
 
 Nonlinear (product) terms are NOT essential — linear combinations of
 at most 2 eigenmodes suffice to reconstruct all observed species.
@@ -148,5 +148,5 @@ Innovation → Landscape Topology → Spectral Origin →
 
 ---
 
-*Experiment TQM-141 completed. Mode composition exists but linear combinations suffice.*
+*Experiment AT-141 completed. Mode composition exists but linear combinations suffice.*
 *Nonlinear spectral geometry not required for current species catalog.*

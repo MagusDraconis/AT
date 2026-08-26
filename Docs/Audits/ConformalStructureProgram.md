@@ -1,6 +1,6 @@
 # Conformal Structure Program — Report
 
-**Test file:** `TQM.Tests/ResearchXC/ConformalStructureTests.cs`
+**Test file:** `AT.Tests/ResearchXC/ConformalStructureTests.cs`
 **Result:** **PASSED (3/3).**
 
 ---
@@ -15,11 +15,11 @@
 
 ---
 
-## What TQM already contains
+## What AT already contains
 
 - **Native primitive:** the causal partial order. `OriginOfCausalityModel.Axioms()` gives
   transitivity, antisymmetry, acyclicity, local finiteness; `GrBridgeAnalyzer` marks
-  "Causal ordering" as **TQM-derived** (`IsTqmNative = true`).
+  "Causal ordering" as **AT-derived** (`IsAtNative = true`).
 - **The claim:** `CausalOrderAnalyzer` and `GeometryEmergence.MetricRecovery` state
   "causal relation defines the light cone ⇒ the conformal metric."
 
@@ -39,12 +39,12 @@ The causal order **does** contain enough information to reconstruct the conforma
 is precisely Malament's theorem (causal order ⇒ light cones ⇒ conformal metric). But:
 
 - **PRESENT (native):** the causal order itself (the light-cone primitive).
-- **IMPORTED (external):** the reconstruction *order → conformal class* — TQM cites the
+- **IMPORTED (external):** the reconstruction *order → conformal class* — AT cites the
   Malament / Hawking–King–McCarthy theorem (`GrBridgeAnalyzer`, "External theorem") and does
   not re-derive it.
 
 So the conformal class is **reconstructible in principle** (the order is sufficient) but
-**imported in practice** (TQM does not compute the light-cone → conformal-metric map). This
+**imported in practice** (AT does not compute the light-cone → conformal-metric map). This
 completes the picture from MetricEmergenceProgram.md: the conformal *factor* is native
 (counting measure) and the conformal *class* is imported (causal order → Malament). Together,
 the full metric $g_{\mu\nu}$ is **described and imported, but not generated**.

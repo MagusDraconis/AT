@@ -59,5 +59,5 @@ dominates the first-peak amplitude; the residual is the excluded neutrino
 driving and ISW. This closes the CMB chain:
 **recombination → r_s → θ\* → oscillator → projection → first-peak amplitude**.
 
-**Sources:** `TQM.Core/ResearchDATA/PeakHeightAnalyzer.cs`,
-`TQM.Tests/ResearchDATA/TQM_PeakHeightAudit.cs`.
+**Sources:** `AT.Core/ResearchDATA/PeakHeightAnalyzer.cs`,
+`AT.Tests/ResearchDATA/AT_PeakHeightAudit.cs`.

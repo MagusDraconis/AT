@@ -29,7 +29,7 @@ Success criterion (from the program spec):
 | Sphere | Fibonacci lattice on unit S², geodesic ε-graph (ε=0.500) | 256 | +2 |
 | Hyperbolic | Poincaré-disk rings, hyperbolic-distance ε-graph (ε=0.880) | 258 | −2 |
 
-Code: `TQM.Core/ResearchXH/` — `FlatGraph`, `SphereGraph`, `HyperbolicGraph`,
+Code: `AT.Core/ResearchXH/` — `FlatGraph`, `SphereGraph`, `HyperbolicGraph`,
 `GeometricGraph`, `GraphFactory`, `SpectralCurvature`.
 
 ### 2.2 Observables
@@ -139,5 +139,5 @@ from event geometry, and curvature information survives into that operator's spe
 | G4-01 `G4_01_SpectralObservablesAreComputableAndConsistent` | PASS |
 | G4-02 `G4_02_DistinctGeometriesProduceDistinguishableSpectralSignatures` | PASS |
 
-`TQM.Tests/ResearchXH/G4Phase0SpectralCurvatureTests.cs` (inherits `ResearchTestBase`,
+`AT.Tests/ResearchXH/G4Phase0SpectralCurvatureTests.cs` (inherits `ResearchTestBase`,
 deterministic, `StringBuilder`-composed reports).

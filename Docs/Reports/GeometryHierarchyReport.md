@@ -1,4 +1,4 @@
-# TQM-143 Geometry Dependence of the Theta Hierarchy
+# AT-143 Geometry Dependence of the Theta Hierarchy
 
 ## SCIENTIFIC REPORT
 
@@ -7,7 +7,7 @@
 **Classification: D — Universal Graph-Based Information Physics**
 
 The Theta hierarchy is **universal** — it does NOT depend on the 1D chain
-geometry used in TQM-142. All 5 tested properties are geometric invariants.
+geometry used in AT-142. All 5 tested properties are geometric invariants.
 
 - **5/5 Theta properties survive** across regular and structured graphs
 - **Geometric invariants**: Transport, Memory, Species, Evolution, Finite Landscape
@@ -17,7 +17,7 @@ geometry used in TQM-142. All 5 tested properties are geometric invariants.
 
 ---
 
-## 1. TQM-142 Recap
+## 1. AT-142 Recap
 
 L = graph Laplacian of Q interactions on a 1D chain.
 Q: Is this specific to 1D chains?
@@ -118,5 +118,5 @@ topology — it requires only graph locality.
 
 ---
 
-*Experiment TQM-143 completed. Theta hierarchy is universal graph-based information physics.*
+*Experiment AT-143 completed. Theta hierarchy is universal graph-based information physics.*
 *Geometric requirement: graph locality (no long-range connections).*

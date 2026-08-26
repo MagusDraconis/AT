@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
-"""Generate Docs/TQMQG_PredictionOutcomes.md and Docs/TQMQG_PredictionOutcomes.json.
+"""Generate Docs/ATQG_PredictionOutcomes.md and Docs/ATQG_PredictionOutcomes.json.
 
 The prediction outcome dashboard — a single source of truth for the external
 validation of the three registered predictions (QG202). Folds the immutable
-registry (TQMQG_Predictions.json) together with the evidence audits
+registry (ATQG_Predictions.json) together with the evidence audits
 (QG188A/199/200/201).
 
 Run:  python Tools/build_prediction_outcomes.py
@@ -12,8 +12,8 @@ import json, os, sys
 
 sys.stdout.reconfigure(encoding='utf-8')
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-MD = os.path.join(ROOT, "Docs", "TQMQG_PredictionOutcomes.md")
-JSON = os.path.join(ROOT, "Docs", "TQMQG_PredictionOutcomes.json")
+MD = os.path.join(ROOT, "Docs", "ATQG_PredictionOutcomes.md")
+JSON = os.path.join(ROOT, "Docs", "ATQG_PredictionOutcomes.json")
 
 OUTCOMES = [
     {
@@ -65,11 +65,11 @@ OUTCOMES = [
 ]
 
 META = {
-    "title": "TQM-QG Prediction Outcome Dashboard",
+    "title": "AT-QG Prediction Outcome Dashboard",
     "purpose": "single source of truth for the external validation of the registered predictions",
     "states": ["PENDING", "SUPPORTED", "CONFIRMED", "DISFAVORED", "FALSIFIED"],
     "registry_rule": "No future phase may modify a registered prediction. Frozen values never change; only the state may advance forward.",
-    "locked_by": "TQM-QG Phase 193 (registry) / Phase 202 (dashboard)",
+    "locked_by": "AT-QG Phase 193 (registry) / Phase 202 (dashboard)",
     "last_updated": "2026-08-22",
 }
 
@@ -84,7 +84,7 @@ def write_json():
 
 def write_md():
     lines = []
-    lines.append("# TQM-QG Prediction Outcome Dashboard")
+    lines.append("# AT-QG Prediction Outcome Dashboard")
     lines.append("")
     lines.append("**Single source of truth for the external validation of the registered predictions.**")
     lines.append("")

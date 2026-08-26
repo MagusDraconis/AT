@@ -110,5 +110,5 @@ program — reproducing Δ_g qualitatively **without importing Δ_g or a metric 
 | G4-C11 `G4_C11_LcProducesConsistentCurvatureOrdering` | PASS (SC3) |
 | G4-C12 `G4_C12_LcIsStableUnderRefinement` | PASS (SC4) |
 
-`TQM.Tests/ResearchXH/G4C_Phase1_LaplaceBeltramiBenchmarkTests.cs` (inherits `ResearchTestBase`,
+`AT.Tests/ResearchXH/G4C_Phase1_LaplaceBeltramiBenchmarkTests.cs` (inherits `ResearchTestBase`,
 deterministic, `StringBuilder`-composed reports).

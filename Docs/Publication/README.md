@@ -3,7 +3,7 @@
 **Publication status: V1.0 READY_FOR_WHITEPAPER (archived, superseded) · V2.0 in preparation.**
 
 This directory contains the Zenodo publication package for The Actualization Theory
-(formerly THE Q-MODEL, TQM). It is organized into two versioned subdirectories plus the
+(formerly THE Q-MODEL, AT). It is organized into two versioned subdirectories plus the
 shared metadata at this root.
 
 ## Contents
@@ -43,6 +43,6 @@ theorem structure, verified to compile cleanly. See `V2.0/` for the current chap
 
 https://github.com/MagusDraconis/AT
 
-Build & test: `dotnet build TQM.Core/TQM.Core.csproj` then
-`dotnet test TQM.Tests/TQM.Tests.csproj` (.NET 10, MathNet.Numerics 5.0).
+Build & test: `dotnet build AT.Core/AT.Core.csproj` then
+`dotnet test AT.Tests/AT.Tests.csproj` (.NET 10, MathNet.Numerics 5.0).
 

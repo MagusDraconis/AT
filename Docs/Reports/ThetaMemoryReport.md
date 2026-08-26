@@ -1,10 +1,10 @@
-# TQM-130: Theta Memory and Information Persistence
+# AT-130: Theta Memory and Information Persistence
 
 ## Executive Summary
 
 **Classification: C — Metastable Information Storage**
 
-TQM-130 determines whether the Θ field can store information
+AT-130 determines whether the Θ field can store information
 after external forcing ceases. Persistence experiments across
 5 densities and 6 timescales confirm:
 
@@ -13,7 +13,7 @@ states with half-life up to 19 time units at optimal density.
 
 ## 1. Memory vs Transport
 
-| Property | Transport (TQM-129) | Memory (TQM-130) |
+| Property | Transport (AT-129) | Memory (AT-130) |
 |----------|---------------------|-------------------|
 | Direction | Spatial (x₁→x₂) | Temporal (t₁→t₂) |
 | Mechanism | Wave propagation | Attractor persistence |
@@ -49,8 +49,8 @@ Higher density → slower decay → longer memory.
 
 ## 5. Conclusion
 
-Θ is a COMPLETE information medium: transport (TQM-129) + memory
-(TQM-130). Information can be encoded, propagated, stored, and
+Θ is a COMPLETE information medium: transport (AT-129) + memory
+(AT-130). Information can be encoded, propagated, stored, and
 retrieved. Memory is metastable — patterns decay exponentially
 but at a rate controlled by density. Higher ρ_Q extends memory
 lifetime through coherence protection.

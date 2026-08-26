@@ -84,4 +84,4 @@ only conserved symmetric tensor is G/κ; there is no independent matter sector).
 | G4-O41 `G4_O41_RawRhoVsLnRhoVsGradRho` | PASS (matter attractive vs conformal repulsive) |
 | G4-O42 `G4_O42_Interpretation` | PASS (ρ = counting measure; f = ρ^(2/d) forced) |
 
-Code: `TQM.Tests/ResearchXH/G4O_Phase4_RhoInterpretationAuditTests.cs`.
+Code: `AT.Tests/ResearchXH/G4O_Phase4_RhoInterpretationAuditTests.cs`.

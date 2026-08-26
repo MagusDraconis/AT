@@ -1,6 +1,6 @@
 # Changelog — THE Q-MODEL
 
-All notable changes to THE Q-MODEL (TQM) are documented here. Versions follow the
+All notable changes to THE Q-MODEL (AT) are documented here. Versions follow the
 repository's release cadence; this file covers the publication-relevant milestones.
 
 ## [1.1.0] — 2026-08-16
@@ -9,7 +9,7 @@ repository's release cadence; this file covers the publication-relevant mileston
 
 ### Added
 - **Program G4** — Native Metric-to-Operator Coupling (13 phases, 39 deterministic research
-  tests; `TQM.Core/ResearchXH/`, `TQM.Tests/ResearchXH/`, `Docs/Research/G4*.md`):
+  tests; `AT.Core/ResearchXH/`, `AT.Tests/ResearchXH/`, `Docs/Research/G4*.md`):
   - Spectral curvature (Phase 0/1/2A): curvature encoded in graph spectra; SCI calibrated.
   - Time-rate hypothesis (G4-T): rate gradients define conformal geometry.
   - Conformal operator selection (G4-C): Lc = ρ⁻¹ L ρ⁻¹ ≈ Δ_g identified and benchmarked.
@@ -23,7 +23,7 @@ repository's release cadence; this file covers the publication-relevant mileston
 
 ### Changed
 - `README.md`: version bumped to 1.1; Research Programs table + key results updated.
-- `Docs/TQM_LabBook.md`: G4 program section added (Total 46 → 59).
+- `Docs/AT_LabBook.md`: G4 program section added (Total 46 → 59).
 
 ---
 
@@ -33,14 +33,14 @@ repository's release cadence; this file covers the publication-relevant mileston
 
 ### Added
 - Formal primitive definitions (§2) with an explicit ontology layer and dynamical layer
-  (quantum postulates, TQM-155).
+  (quantum postulates, AT-155).
 - Dynamical System Summary (§3): graph Laplacian $L_Q$, tight-binding identity $H=tL_Q$,
   Schrödinger from reversibility.
 - Complexity functional (§6): weighted six-component observer-viability decomposition.
 - Quantitative predictions section (§11): RAR, $w(z)$, $\Lambda(t)$, log-normal law, $N\ge3$.
 - Scope and limitations section (§15): honest disclosure of gauge dynamics (A-07),
   uncalibrated confidence, ontological phase-gravity, deferred unified action.
-- Executable verification of the continuum-limit chain (TQM.Tests/ResearchXC):
+- Executable verification of the continuum-limit chain (AT.Tests/ResearchXC):
   - $L_Q\to-\nabla^2$ (exact spectrum), BDG $\to\square$ ($O(h^2)$)
   - weighted Laplacian $\to$ Laplace–Beltrami (S¹ example)
   - curved-space Schrödinger (unitary)

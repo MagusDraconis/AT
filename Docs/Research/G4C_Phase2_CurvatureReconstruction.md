@@ -32,7 +32,7 @@ zeta ζ(2), spectral entropy S(1) — and sum their normalized deviations from t
 
 $$S = \frac{\lambda_1-\lambda_1^f}{\lambda_1^f} + \frac{Z^f-Z}{Z^f} + \frac{\zeta^f-\zeta}{\zeta^f} + \frac{S^f_{\text{ent}}-S_{\text{ent}}}{S^f_{\text{ent}}}.$$
 
-Reconstructed sign = sign(S). Code: `TQM.Core/ResearchXH/CurvatureReconstruction.cs`.
+Reconstructed sign = sign(S). Code: `AT.Core/ResearchXH/CurvatureReconstruction.cs`.
 
 ## 4. Results (measured, deterministic)
 
@@ -75,5 +75,5 @@ that both *behaves like* and *allows reconstruction of* the Laplace–Beltrami c
 | G4-C21 `G4_C21_RecoveredOrderingIsCurvatureConsistent` | PASS (SC2) |
 | G4-C22 `G4_C22_ReconstructionStableUnderRefinement` | PASS (SC3) |
 
-`TQM.Tests/ResearchXH/G4C_Phase2_CurvatureReconstructionTests.cs` (inherits `ResearchTestBase`,
+`AT.Tests/ResearchXH/G4C_Phase2_CurvatureReconstructionTests.cs` (inherits `ResearchTestBase`,
 deterministic, `StringBuilder`-composed reports).

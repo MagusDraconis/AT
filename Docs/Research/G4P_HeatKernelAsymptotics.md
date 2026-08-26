@@ -71,5 +71,5 @@ refinement-convergent in the t ∝ h² asymptotic regime.
 | G4-P21 `G4_P21_ScalingComparison` | PASS (t ∝ h² is the only convergent scaling) |
 | G4-P22 `G4_P22_AdaptiveOptimalConvergence` | PASS (t ∝ h² error 0.018 → 0.0081 < 1 %) |
 
-Code: `TQM.Core/ResearchXH/CurvatureField.cs` (added `CenterHeatKernel`, `EigenDecompositionOf`,
-`HeatKernelAt`); tests `TQM.Tests/ResearchXH/G4P_Phase2_HeatKernelAsymptoticsTests.cs`.
+Code: `AT.Core/ResearchXH/CurvatureField.cs` (added `CenterHeatKernel`, `EigenDecompositionOf`,
+`HeatKernelAt`); tests `AT.Tests/ResearchXH/G4P_Phase2_HeatKernelAsymptoticsTests.cs`.

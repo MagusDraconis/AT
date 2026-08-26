@@ -52,13 +52,13 @@ Einstein–Hilbert action, closing the loop to Einstein.
 
 **Neither, as implemented — but each has a natural curved generalization that is missing.**
 
-| Source | As implemented | Curved generalization | Status in TQM |
+| Source | As implemented | Curved generalization | Status in AT |
 |---|---|---|---|
 | $L_Q=D-A$ (unweighted) | flat Laplacian $-\nabla^2$ | **weighted** graph Laplacian $L_W=\mathrm{diag}(\sum w)-W$, with edge weights $w_{ij}$ encoding the metric → converges to $\Delta_g$ | **Absent** (only unweighted $L_Q$ exists) |
 | BDG (flat causal set) | flat d'Alembertian $\Box$ | BDG on a **curved** causal set → $\Box_g$ (Benincasa–Dowker) | **Absent** (only the flat limit is asserted) |
 
 The formal gap is therefore **not** "which operator" but **"how the metric enters the
-discrete operator."** TQM has the flat operator (twice over: $L_Q$ and BDG), but no rule that
+discrete operator."** AT has the flat operator (twice over: $L_Q$ and BDG), but no rule that
 inserts $g_{\mu\nu}$ as a coefficient.
 
 ---
@@ -90,9 +90,9 @@ inserts $g_{\mu\nu}$ as a coefficient.
 
 The missing bridge requires **one object** — the metric-dependent Laplace–Beltrami /
 d'Alembertian $\Delta_g$/$\Box_g$ — and **one rule** — how the metric enters the discrete
-operator. TQM already possesses both *flat* operators ($L_Q$ Riemannian, BDG Lorentzian) and
+operator. AT already possesses both *flat* operators ($L_Q$ Riemannian, BDG Lorentzian) and
 the *external* metric ($g_{\mu\nu}$ via Malament), but **no** step that combines them. The gap
 is therefore well-localized: it is neither the flat Laplacian nor the metric in isolation,
 but the **coupling** between them. This is a genuine research gap (G1–G4), not a documentation
 gap, and closing it is the defining open mathematical problem of the emergent-gravity side of
-TQM.
+AT.

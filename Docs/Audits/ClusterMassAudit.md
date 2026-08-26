@@ -1,8 +1,8 @@
 # Cluster Mass Audit
 
 **Status:** Clusters — PARTIAL → **COMPLETE**.
-**Scope:** reconstruct the cluster mass profile and compare Newtonian / ΛCDM / TQM
-defect models. No new physics; existing TQM assumptions only (X063–X065 defect DM).
+**Scope:** reconstruct the cluster mass profile and compare Newtonian / ΛCDM / AT
+defect models. No new physics; existing AT assumptions only (X063–X065 defect DM).
 
 ---
 
@@ -17,7 +17,7 @@ defect models. No new physics; existing TQM assumptions only (X063–X065 defect
    $n_e(r)$ over radial shells ($\rho_{\rm gas}=\mu m_p n_e$) and divide by the
    hydrostatic enclosed mass $M_{\rm grav}(r)$ for 222 clusters.
 4. **Model comparison.** Newtonian (baryons only) vs ΛCDM (baryons + collisionless
-   CDM) vs TQM defect model (baryons + topological-defect DM, X063–X065).
+   CDM) vs AT defect model (baryons + topological-defect DM, X063–X065).
 
 ---
 
@@ -53,7 +53,7 @@ which is too nearby for ACCEPT).*
 |---|---|---|
 | Newtonian (baryons only) | $\sim1.3\times10^{14}\ M_\odot$ | under-predicts by $6.7\times$ |
 | ΛCDM (baryons + CDM) | $\sim8.8\times10^{14}\ M_\odot$ | matches ($f_b\approx0.15$ = cosmic) |
-| TQM defect model | $\sim8.8\times10^{14}\ M_\odot$ | matches (defect DM is collisionless) |
+| AT defect model | $\sim8.8\times10^{14}\ M_\odot$ | matches (defect DM is collisionless) |
 
 **Derived / Fitted / Contingent:**
 
@@ -61,7 +61,7 @@ which is too nearby for ACCEPT).*
 |---|---|
 | DERIVED | $\sigma_v$, $M_{\rm vir}$ (virial theorem), $f_{\rm gas}$ ($n_e$ integral), hydrostatic equilibrium |
 | FITTED | $R_{\rm vir}$, NFW concentration, gas-density profile parameters |
-| CONTINGENT | exact $\Omega_{\rm DM}$ (TQM X065: $0.27$ not derivable — initial conditions) |
+| CONTINGENT | exact $\Omega_{\rm DM}$ (AT X065: $0.27$ not derivable — initial conditions) |
 
 ---
 
@@ -72,19 +72,19 @@ which is too nearby for ACCEPT).*
 2. **$R_{\rm vir}=1.4$ Mpc is a fitted/anchor value**; the virial mass scales as $R_{\rm vir}$.
 3. **ACCEPT gas fraction** uses $M_{\rm grav}$ from the catalog's own hydrostatic
    deprojection (assumes hydrostatic equilibrium, a systematic shared by all models).
-4. **TQM defect model is observationally degenerate with ΛCDM** at the mass-profile
+4. **AT defect model is observationally degenerate with ΛCDM** at the mass-profile
    level — both require $\sim85\%$ dark mass; they differ only in DM identity, not
    in the reconstructed mass.
-5. No direct TQM-specific cluster signature is computed here (no new physics).
+5. No direct AT-specific cluster signature is computed here (no new physics).
 
 ---
 
 ## Encyclopedia Integration Notes
 
 - **Coverage_Report.md** — move `Clusters` from PARTIAL (30%) → **COMPLETE**.
-- **TQM_Encyclopedia.md** — Part VIII §8.5 "Clusters": replace TODO with the mass
-  audit; source files `TQM.Core/ResearchDATA/ClusterMassAudit.cs` +
-  `TQM.Tests/ResearchDATA/TQM_ClusterMassAudit.cs`.
-- **Master reference** — cluster-scale result: TQM defect DM ≡ ΛCDM mass profile;
+- **AT_Encyclopedia.md** — Part VIII §8.5 "Clusters": replace TODO with the mass
+  audit; source files `AT.Core/ResearchDATA/ClusterMassAudit.cs` +
+  `AT.Tests/ResearchDATA/AT_ClusterMassAudit.cs`.
+- **Master reference** — cluster-scale result: AT defect DM ≡ ΛCDM mass profile;
   the dark component is REQUIRED (6.7× discrepancy) and is **CONTINGENT** in
   abundance (X065), consistent with the DERIVED/DRAWN taxonomy.

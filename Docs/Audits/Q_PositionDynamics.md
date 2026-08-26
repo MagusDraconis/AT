@@ -1,6 +1,6 @@
 # Q Position Dynamics Audit
 
-**Goal:** determine whether $x_i$ dynamics is already implicitly present in TQM.
+**Goal:** determine whether $x_i$ dynamics is already implicitly present in AT.
 **Inputs:** `Q_Formalization_Program.md`, `Q_ConfigurationDynamics.md`, `03_Q_Theory.md`,
 `04_Q_Networks_and_Laplacian.md`, plus the Resonance/Kuramoto and Theory analyzers.
 **Discipline:** no new primitives, no new parameters, no proposed physics — reconstruction only.
@@ -75,7 +75,7 @@ $r_c$ are pre-existing; $\eta$ is a numerical step size.
 
 ## 5. Conclusion
 
-Contrary to the earlier audit, **$x_i$ dynamics is already present in TQM**, in the form of a
+Contrary to the earlier audit, **$x_i$ dynamics is already present in AT**, in the form of a
 phase-dependent interaction-potential motion — gradient descent on the coupling energy
 $E=-\sum K_{ij}\cos(\theta_j-\theta_i)|x_j-x_i|$. It is **Existing**, not Missing, and is
 implemented in ~15 analyzers (e.g. `MeanCouplingDerivationAnalyzer`, `CurvatureMotionAnalyzer`,

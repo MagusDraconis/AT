@@ -80,5 +80,5 @@ actualization density can carry is its own Einstein tensor.
 | G4-G41 `G4_G41_UniquenessOfConservedTensor` | PASS (divergence-free ⟹ T = G, up to scale) |
 | G4-G42 `G4_G42_DensityFluxIsCurvatureSourced` | PASS (Δρ = 2a ≠ 0, ∝ −R) |
 
-Code: `TQM.Core/ResearchXH/HigherDimEinstein.cs` (added `KineticDivergence`);
-tests `TQM.Tests/ResearchXH/G4G_Phase4_IndependentMatterSectorTests.cs`.
+Code: `AT.Core/ResearchXH/HigherDimEinstein.cs` (added `KineticDivergence`);
+tests `AT.Tests/ResearchXH/G4G_Phase4_IndependentMatterSectorTests.cs`.

@@ -1,0 +1,184 @@
+@page "/"
+
+<PageTitle>AT · Research Atlas</PageTitle>
+@using AT.App.Services
+@inject ValidationDataService ValidationDataService
+
+<div>
+    <MudImage Src="/images/at-image1_web_small.jpg" Height="150" ObjectFit="ObjectFit.Cover" style="width:100%"/>
+</div>
+
+<div class="hero">
+    <div class="hero-kicker">Research Atlas · v1.1</div>
+    <div class="hero-title">THE Q-MODEL</div>
+    <div class="hero-subtitle">From Q to Cosmology</div>
+    <div class="hero-tagline">A theory book and validation atlas for the AT program.</div>
+</div>
+
+<div class="page-section mt-4">
+    <h2 class="section-heading">Quantum gravity highlight</h2>
+    <MudCard Elevation="1" Class="theory-card">
+        <MudCardContent>
+            <MudText Typo="Typo.body2" Class="muted">
+                The newer base is <strong>Difference → Actualization → Spectrum → Physics</strong>.
+                Q-events are part of the derived chain, not the root primitive anymore.
+                The canonical architecture (QG318) has four layers — primitive, dynamic, spectrum,
+                physics — verified as an acyclic dependency graph.
+            </MudText>
+            <MudText Typo="Typo.body2" Class="muted mt-2">
+                In practice, the closure came from the D96 program: QG294 sealed the minimal hierarchy,
+                QG295 showed the spectrum is inevitable, QG296 reconstructed the full chain, QG318 fixed
+                the final architecture, and QG223 closed the quantum-gravity loop.
+            </MudText>
+        </MudCardContent>
+    </MudCard>
+</div>
+
+<div class="page-section mt-4">
+    <h2 class="section-heading">Why AT?</h2>
+    <div class="why-grid">
+        @foreach (var q in AtlasDataService.WhyQuestions)
+        {
+            <div class="why-tile"><span class="q">@q</span></div>
+        }
+    </div>
+    <p class="mt-2">
+        AT investigates whether observable physics can emerge from a smaller primitive foundation.
+        <a href="/story">Read the full story &rarr;</a>
+    </p>
+</div>
+
+<div class="page-section">
+    <h2 class="section-heading">Recent Findings</h2>
+    <p class="muted">The latest AT-QG phases (auto-updated from the coverage JSON).</p>
+    @if (_coverage is not null && _coverage.RecentFindings.Count > 0)
+    {
+        <MudGrid Spacing="3">
+            @foreach (var f in _coverage.RecentFindings)
+            {
+                <MudItem xs="12" sm="6" lg="4">
+                    <MudCard Elevation="1" Class="theory-card h-100">
+                        <MudCardContent>
+                            <MudText Typo="Typo.caption" Class="text-uppercase fw-bold muted">@(f.PhaseLabel ?? $"AT-QG {(int)f.Phase}") · @f.Classification</MudText>
+                            <MudText Typo="Typo.subtitle1" Class="fw-bold mt-1">@f.Title</MudText>
+                            <MudText Typo="Typo.body2" Class="muted mt-2">
+                                @f.Summary
+                            </MudText>
+                            <div class="mt-3">
+                                <span class="badge @BadgeClassFor(f.Validation)">@f.Validation</span>
+                                <span class="badge badge-neutral">@f.Domain</span>
+                            </div>
+                            <MudButton Variant="Variant.Text" Color="Color.Primary" Href="@f.ReportUrl"
+                                       Target="_blank" Rel="noopener" Class="mt-2 px-0" Size="Size.Small">
+                                Report <i class="bi bi-box-arrow-up-right"></i>
+                            </MudButton>
+                        </MudCardContent>
+                    </MudCard>
+                </MudItem>
+            }
+        </MudGrid>
+    }
+    else
+    {
+        <MudProgressCircular Indeterminate="true" Size="Size.Small" />
+    }
+</div>
+
+<div class="page-section">
+    <h2 class="section-heading">Research Journey</h2>
+    <div class="story-flow">
+        @for (int i = 0; i < AtlasDataService.StoryChapters.Count; i++)
+        {
+            <span class="@($"badge tone-{AtlasDataService.StoryChapters[i].Tone}")"><i class="@($"bi {AtlasDataService.StoryChapters[i].Icon}")"></i>&nbsp;@AtlasDataService.StoryChapters[i].Era</span>
+            @if (i < AtlasDataService.StoryChapters.Count - 1)
+            {
+                <span class="chain-arrow">&darr;</span>
+            }
+        }
+    </div>
+    <p class="muted mt-2">TRM &rarr; Problems Found &rarr; ResearchX &rarr; Structure/Content Split &rarr; Hostile Reviews &rarr; AT v1.0 &rarr; D96 Program &rarr; @(_coverage is not null ? $"QG{_coverage.Coverage.TotalPhases - 1}" : "QG…").</p>
+</div>
+
+<div class="page-section">
+    <h2 class="section-heading">From TRM to AT</h2>
+    <MudCard Elevation="1" Class="theory-card">
+        <MudCardContent>
+            <MudText Typo="Typo.body2" Class="muted">
+                AT's predecessor, the Temporal Resonance Model, assembled striking pieces but carried zero
+                candidate physics. The legacy audit absorbed three modules, rejected two, and kept three as
+                candidate mathematics. AT re-derived the surviving structure from two primitives plus one number.
+            </MudText>
+        </MudCardContent>
+    </MudCard>
+</div>
+
+<div class="page-section">
+    <h2 class="section-heading">Key Discoveries</h2>
+    <MudGrid Spacing="3">
+        @foreach (var d in AtlasDataService.KeyDiscoveries)
+        {
+            <MudItem xs="12" sm="6" lg="4">
+                <TheoryCard Title="@d.Title">
+                    <ClassificationBadge Kind="@d.Kind" />
+                    <MudText Typo="Typo.body2" Class="muted mt-2">@d.Description</MudText>
+                </TheoryCard>
+            </MudItem>
+        }
+    </MudGrid>
+</div>
+
+<div class="page-section">
+    <h2 class="section-heading">Prediction Status</h2>
+    <MudCard Elevation="1" Class="theory-card">
+        <MudCardContent>
+            @if (_outcomes is null)
+            {
+                <MudProgressCircular Indeterminate="true" Size="Size.Small" />
+            }
+            else
+            {
+                <MudText Typo="Typo.body2" Class="muted">
+                    The three pre-registered predictions (P1 106 GeV, P2 0νββ 2.02 meV, P3 sector-ladder)
+                    are immutable. Current states:
+                    <span class="status-chip status-pending">P1 PENDING</span>
+                    <span class="status-chip status-pending">P2 PENDING</span>
+                    <span class="status-chip status-partial">P3 SUPPORTED</span>
+                    &nbsp;(151.98 rung = ~152 GeV excess)
+                </MudText>
+                <MudButton Variant="Variant.Outlined" Color="Color.Primary" Href="/validation/prediction-status" Class="mt-2">
+                    Prediction status
+                </MudButton>
+            }
+        </MudCardContent>
+    </MudCard>
+</div>
+
+<div class="page-section">
+    <div class="mb-2">
+        <span class="badge badge-derived">DERIVED</span>
+        <span class="badge badge-real">REAL-UNDERIVED</span>
+        <span class="badge badge-drawn">DRAWN</span>
+        <span class="muted">&mdash; the taxonomy used throughout this atlas.</span>
+    </div>
+</div>
+
+@code {
+    private PhysicsCoverageFile? _coverage;
+    private PredictionOutcomeFile? _outcomes;
+
+    /// <summary>Maps a phase validation status to a badge CSS class.</summary>
+    private static string BadgeClassFor(string validation)
+        => validation switch
+        {
+            "tested" => "badge-derived",
+            "partial" => "badge-partial",
+            "audit" => "badge-compatible",
+            _ => "badge-neutral",
+        };
+
+    protected override async Task OnInitializedAsync()
+    {
+        _coverage = await ValidationDataService.GetCoverageAsync();
+        _outcomes = await ValidationDataService.GetOutcomesAsync();
+    }
+}

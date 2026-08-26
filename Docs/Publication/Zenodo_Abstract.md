@@ -1,6 +1,6 @@
-# THE Q-MODEL (TQM) — Zenodo Abstract
+# THE Q-MODEL (AT) — Zenodo Abstract
 
-THE Q-MODEL (TQM) is a theory of structure and content that compresses observable physics
+THE Q-MODEL (AT) is a theory of structure and content that compresses observable physics
 to four primitives — the individuation principle $Q$, Random Actualization, the scale
 triad $(\ell,\tau,\hbar)$, and a single nonlinearity parameter $M^2$ — and holds that
 *structure is derivable while content is realized*. Its central claim is the

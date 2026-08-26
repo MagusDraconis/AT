@@ -1,7 +1,7 @@
 # m=3 Observable Mapping Audit
 
 **Goal:** search the repository for existing numerical or structural correspondences
-between the TRM m=3 closure values and TQM quantities.
+between the TRM m=3 closure values and AT quantities.
 **Inputs:** $\Omega=(q+3)/q,\ \gamma=1/\Omega$, observed $\Omega\approx1.16$–$1.19$,
 $\gamma\approx0.84$–$0.86$. **No physics invented — numeric/structural correspondences only.**
 
@@ -9,7 +9,7 @@ $\gamma\approx0.84$–$0.86$. **No physics invented — numeric/structural corre
 
 ## 1. Match table
 
-| Target quantity | TQM value | vs $\Omega$ (1.16–1.19) | vs $\gamma$ (0.84–0.86) | Classification |
+| Target quantity | AT value | vs $\Omega$ (1.16–1.19) | vs $\gamma$ (0.84–0.86) | Classification |
 |---|---|---|---|---|
 | Koide $Q$ | $2/3=0.6667$ | — | $\lvert0.667-0.84\rvert=0.17$ (**−26%**) | **No Match** |
 | Complexity optimum | $M^2\approx5$ | — | — | **No Match** |
@@ -62,10 +62,10 @@ with a plausible denominator interpretation, but the documents give no $q\leftri
 ## 4. Conclusion
 
 The m=3 closure values ($\Omega\approx1.16$–$1.19$, $\gamma\approx0.84$–$0.86$) have
-**no strong correspondence** to any existing TQM quantity. The three weak numeric
+**no strong correspondence** to any existing AT quantity. The three weak numeric
 near-misses (CMB phase shift $\phi\approx0.885$ rad, coupling $\sigma\approx1.2$,
 and $m_\tau/m_\mu\approx16.8$ vs the implied $q$) are coincidences with **no structural
-map in either the TRM or TQM documents**. In particular, $\gamma\ne2/3$ confirms the
+map in either the TRM or AT documents**. In particular, $\gamma\ne2/3$ confirms the
 m=3 closure does **not** tie to the Koide angle, and $\Omega$ matches nothing in the
 complexity-optimum, dark-matter, CMB, RAR, or theta sectors. The m=3 closure therefore
 remains an **unmapped, independent** candidate — its physical meaning (which observable

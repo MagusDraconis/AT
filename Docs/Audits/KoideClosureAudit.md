@@ -95,5 +95,5 @@ and zero are Open. The only remaining distinguisher — the neutrino-Koide test 
 **falsified** (Phase 155), confirming Koide is charged-lepton-specific and contingent.
 The $45^\circ$ angle is a **real, precise, RG-stable hidden structure (BF≈3.2e4) whose
 origin is contingent and underivable** — the cleanest single-number statement of what
-TQM does not derive. Probability of closure under the no-new-primitives constraint is
+AT does not derive. Probability of closure under the no-new-primitives constraint is
 **$\approx 0$**.

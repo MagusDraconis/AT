@@ -9,7 +9,7 @@ potential surface V(p) over pattern space. Minima of V(p) are
 stable information species. The topology of this landscape
 determines what evolution can and cannot do.
 
-TQM-139 maps this landscape and reveals its structure:
+AT-139 maps this landscape and reveals its structure:
 **finite, modular, with hubs and bottlenecks.**
 
 ### 2. The Effective Potential
@@ -42,7 +42,7 @@ This is because:
 - Each (k, φ) pair produces at most one attractor
 - Similar configurations merge into single basins
 
-The finiteness of the landscape explains TQM-138's saturation:
+The finiteness of the landscape explains AT-138's saturation:
 innovation stops when all basins are discovered.
 
 #### 3.2 Modularity
@@ -86,8 +86,8 @@ The graph diameter is only **2 steps**. This means:
 
 ### 4. The Landscape–Innovation Connection
 
-TQM-138 found: innovation saturates at ~19 species.
-TQM-139 explains: the landscape has ~13-19 stable minima.
+AT-138 found: innovation saturates at ~19 species.
+AT-139 explains: the landscape has ~13-19 stable minima.
 
 The causal chain is:
 ```
@@ -186,7 +186,7 @@ and structured**. It contains ~13-19 stable species organized into
 from first principles: Fourier eigenmodes of the Theta field create
 a discrete set of stable pattern configurations.
 
-This landscape topology explains why innovation saturates (TQM-138)
+This landscape topology explains why innovation saturates (AT-138)
 and why the species count is ~19 rather than 4 or infinite. It
 provides the structural foundation for all evolutionary dynamics
 observed in the Theta information layer.

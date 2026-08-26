@@ -1,0 +1,32 @@
+@namespace AT.App.Components.Shared
+@using AT.App.Models
+
+<span class="badge @CssClass">@Label</span>
+
+@code {
+    [Parameter] public AT.App.Models.TheoryBadge Badge { get; set; } = AT.App.Models.TheoryBadge.Postulated;
+
+    private string Label => Badge switch
+    {
+        AT.App.Models.TheoryBadge.Derived => "DERIVED",
+        AT.App.Models.TheoryBadge.Compatible => "COMPATIBLE",
+        AT.App.Models.TheoryBadge.Postulated => "POSTULATED",
+        AT.App.Models.TheoryBadge.Partial => "PARTIAL",
+        AT.App.Models.TheoryBadge.Match => "MATCH",
+        AT.App.Models.TheoryBadge.Preferred => "PREFERRED",
+        AT.App.Models.TheoryBadge.Falsified => "FALSIFIED",
+        _ => Badge.ToString().ToUpperInvariant()
+    };
+
+    private string CssClass => Badge switch
+    {
+        AT.App.Models.TheoryBadge.Derived => "badge-derived",
+        AT.App.Models.TheoryBadge.Compatible => "badge-compatible",
+        AT.App.Models.TheoryBadge.Postulated => "badge-postulated",
+        AT.App.Models.TheoryBadge.Partial => "badge-partial",
+        AT.App.Models.TheoryBadge.Match => "badge-match",
+        AT.App.Models.TheoryBadge.Preferred => "badge-preferred",
+        AT.App.Models.TheoryBadge.Falsified => "badge-falsified",
+        _ => "badge-neutral"
+    };
+}

@@ -69,5 +69,5 @@ structure, layer structure, and the event density ρ.
 | G4-M01 `G4_M01_CausalDistanceIsConformallyInvariant` | PASS (chain = 8 for all) |
 | G4-M02 `G4_M02_LayerGrowthClassifiesConformalGeometry` | PASS (layer-0 6.25 / 6.00 / 5.80) |
 
-Code: `TQM.Core/ResearchXH/ConformalStructure.cs`;
-tests `TQM.Tests/ResearchXH/G4M_Phase0_NativeConformalStructureTests.cs`.
+Code: `AT.Core/ResearchXH/ConformalStructure.cs`;
+tests `AT.Tests/ResearchXH/G4M_Phase0_NativeConformalStructureTests.cs`.

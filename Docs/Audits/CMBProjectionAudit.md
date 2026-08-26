@@ -64,5 +64,5 @@ compression ($\ell\approx336$) to the observed $\ell_1\approx220$. The minimal
 Limber projection reproduces Planck's first-peak location exactly, completing the
 chain **θ\* → oscillator → Cℓ projection** with zero free parameters.
 
-**Sources:** `TQM.Core/ResearchDATA/CmbProjectionAnalyzer.cs`,
-`TQM.Tests/ResearchDATA/TQM_CMBProjectionAudit.cs`.
+**Sources:** `AT.Core/ResearchDATA/CmbProjectionAnalyzer.cs`,
+`AT.Tests/ResearchDATA/AT_CMBProjectionAudit.cs`.

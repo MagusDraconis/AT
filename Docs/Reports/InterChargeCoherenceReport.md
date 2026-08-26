@@ -1,10 +1,10 @@
-# TQM-125: Inter-Charge Coherence and Phase Locking
+# AT-125: Inter-Charge Coherence and Phase Locking
 
 ## Executive Summary
 
 **Classification: C — Collective Coherent Modes**
 
-TQM-125 determines whether spatially separated Q=+1 topological charge
+AT-125 determines whether spatially separated Q=+1 topological charge
 quanta can phase-lock their internal θ-modes. Phase-locking experiments
 across separations (0.3–2.0), phase offsets (0–π/2), and frequency
 detunings (0–0.10) reveal:
@@ -14,7 +14,7 @@ synchronize their internal phase oscillations while Q remains unchanged.
 
 ## 1. The Question
 
-TQM-124 showed each Q=+1 carries an internal phase oscillation θ(t)≈ωt.
+AT-124 showed each Q=+1 carries an internal phase oscillation θ(t)≈ωt.
 Can TWO separated charges phase-lock these oscillations?
 
 This would be a higher-level synchronization: oscillators synchronize

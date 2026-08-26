@@ -10,7 +10,7 @@
 ## 1. Goal
 
 Phase 3 showed a log-deficit hierarchy m ∝ ln(Rmax/r) produces a flat rotation curve. Here we ask
-whether that profile is a PREDICTION of the TQM abundance law or an IMPOSED (tuned) ansatz.
+whether that profile is a PREDICTION of the AT abundance law or an IMPOSED (tuned) ansatz.
 
 ---
 
@@ -64,7 +64,7 @@ The log-deficit hierarchy is **not a tuned ansatz**, but it is a **special (marg
 
 ## 4. Conclusion
 
-The flat rotation curve is the self-similar (scale-free) prediction of the TQM abundance law, not a
+The flat rotation curve is the self-similar (scale-free) prediction of the AT abundance law, not a
 fine-tuned ansatz: the log deficit m ∝ ln(Rmax/r) is the unique profile with constant per-octave
 increment, so it is what a scale-invariant actualization process generates by default. It is, however, the
 marginal α=0 member of the family — a natural-but-special selection whose dynamical origin (why α=0 is
@@ -80,5 +80,5 @@ chosen over other self-similar α) remains an open question.
 | G4-ME41 `G4_ME41_ScalingStability` | PASS (log = unique scale-invariant, constant increment) |
 | G4-ME42 `G4_ME42_HierarchyGrowthClassification` | PASS (constant-per-octave growth → log; SEMI-NATURAL) |
 
-Code: `TQM.Core/ResearchXH/DeficitCollective.cs` (added `AbundanceDeficit`);
-tests `TQM.Tests/ResearchXH/G4ME_Phase4_RealityCheckTests.cs`.
+Code: `AT.Core/ResearchXH/DeficitCollective.cs` (added `AbundanceDeficit`);
+tests `AT.Tests/ResearchXH/G4ME_Phase4_RealityCheckTests.cs`.

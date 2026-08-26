@@ -106,4 +106,4 @@ C = log₂(N) ≡ Boltzmann entropy
 
 ---
 
-*TQM-155: Mathematical Foundation. All governing equations.*
+*AT-155: Mathematical Foundation. All governing equations.*

@@ -4,12 +4,12 @@
 
 ### 1. The Innovation Question
 
-TQM-133 discovered 4 stable information species. TQM-134-137
+AT-133 discovered 4 stable information species. AT-134-137
 established the complete Darwinian framework. But the deepest
 question remained: can evolution CREATE genuinely new things,
 or is it confined to reshuffling existing possibilities?
 
-TQM-138 answers: **innovation exists, but is bounded.**
+AT-138 answers: **innovation exists, but is bounded.**
 
 ### 2. What Was Discovered
 
@@ -40,17 +40,17 @@ limited number of stable pattern configurations.
 
 ### 3. The Attractor Landscape Model
 
-TQM-138 supports a refined picture of the Theta attractor landscape:
+AT-138 supports a refined picture of the Theta attractor landscape:
 
 ```
 The attractor landscape is a FINITE set of stable configurations.
 
-Level 1 (TQM-133): 4 major attractors
+Level 1 (AT-133): 4 major attractors
   - Large basins, easily discovered
   - Low complexity
   - Universal (appear across all densities)
 
-Level 2 (TQM-138): ~15 minor attractors
+Level 2 (AT-138): ~15 minor attractors
   - Small basins, require exploration to find
   - Higher complexity
   - Context-dependent (appear only at specific parameters)
@@ -60,7 +60,7 @@ Level 3 (hypothetical): micro-attractors?
   - Not detectable at current population sizes
 ```
 
-The landscape is RICHER than TQM-133 revealed, but still FINITE.
+The landscape is RICHER than AT-133 revealed, but still FINITE.
 
 ### 4. Why Is Innovation Bounded?
 
@@ -119,16 +119,16 @@ innovation but saturates. The difference may be:
 ### 7. The Ten-Level Theta Hierarchy
 
 ```
-Level 1:  TRANSPORT (TQM-129)
-Level 2:  MEMORY (TQM-130)
-Level 3:  INTERACTION (TQM-132)
-Level 4:  ATTRACTORS (TQM-133)
-Level 5:  ECOLOGY (TQM-133)
-Level 6:  REPRODUCTION (TQM-134)
-Level 7:  SELECTION (TQM-135)
-Level 8:  FITNESS LAW (TQM-136)
-Level 9:  UNIVERSALITY (TQM-137)
-Level 10: INNOVATION (TQM-138)
+Level 1:  TRANSPORT (AT-129)
+Level 2:  MEMORY (AT-130)
+Level 3:  INTERACTION (AT-132)
+Level 4:  ATTRACTORS (AT-133)
+Level 5:  ECOLOGY (AT-133)
+Level 6:  REPRODUCTION (AT-134)
+Level 7:  SELECTION (AT-135)
+Level 8:  FITNESS LAW (AT-136)
+Level 9:  UNIVERSALITY (AT-137)
+Level 10: INNOVATION (AT-138)
 ```
 
 The hierarchy now extends from the most basic property (signal
@@ -138,8 +138,8 @@ theory provides a comprehensive framework.
 
 ### 8. Implications
 
-#### 8.1 For TQM
-The Theta attractor landscape is richer than TQM-133 suggested
+#### 8.1 For AT
+The Theta attractor landscape is richer than AT-133 suggested
 (~19 species, not 4), but ultimately finite. Innovation is
 real but bounded.
 

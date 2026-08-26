@@ -4,9 +4,9 @@
 
 ### 1. From Information Species to Information Evolution
 
-TQM-133 discovered that the Theta information layer supports stable
+AT-133 discovered that the Theta information layer supports stable
 information species — reproducible patterns with distinct attractor
-basins. TQM-134 extends this: species can REPRODUCE, forming persistent
+basins. AT-134 extends this: species can REPRODUCE, forming persistent
 information lineages with heritable traits.
 
 This means Theta is not merely a medium for information storage and
@@ -20,27 +20,27 @@ The complete six-level hierarchy of Theta dynamics:
 ```
 Level 1: TRANSPORT
   Signals propagate through the field.
-  Mechanism: damped wave equation (TQM-129).
+  Mechanism: damped wave equation (AT-129).
 
 Level 2: MEMORY
   Signals persist beyond decay time.
-  Mechanism: theta-memory encoding (TQM-130).
+  Mechanism: theta-memory encoding (AT-130).
 
 Level 3: INTERACTION
   Signals influence each other through the field.
-  Mechanism: coupling-mediated overlap (TQM-132).
+  Mechanism: coupling-mediated overlap (AT-132).
 
 Level 4: ATTRACTORS
   Signals converge to preferred stable states.
-  Mechanism: dissipation → attractor basins (TQM-133).
+  Mechanism: dissipation → attractor basins (AT-133).
 
 Level 5: ECOLOGY
   Multiple attractor species coexist and compete.
-  Mechanism: distinct basins with varying stability (TQM-133).
+  Mechanism: distinct basins with varying stability (AT-133).
 
 Level 6: EVOLUTION
   Species reproduce, inherit, mutate, and form lineages.
-  Mechanism: field-mediated pattern copying + drift (TQM-134).
+  Mechanism: field-mediated pattern copying + drift (AT-134).
 ```
 
 ### 3. Mathematical Framework
@@ -83,7 +83,7 @@ and δ = 0.10 (statistical threshold).
 where ⟨H⟩ is the mean inheritance coefficient across all
 reproduction events. μ measures the information loss per generation.
 
-For TQM-134: μ = 1 - 0.786 = 0.214 per generation.
+For AT-134: μ = 1 - 0.786 = 0.214 per generation.
 
 #### 3.4 Species Transition Matrix
 
@@ -96,7 +96,7 @@ T = [T_AA  T_AB  T_AC  T_AD]
     [T_DA  T_DB  T_DC  T_DD]
 ```
 
-For TQM-134:
+For AT-134:
 ```
 T = [1.00  0.00  0.00  0.00]
     [0.25  1.00  0.25  0.00]
@@ -125,7 +125,7 @@ where:
 - H_S = inheritance coefficient (trait fidelity)
 - S_S = survival probability (per generation)
 
-For TQM-134 species:
+For AT-134 species:
 - w_A = 0.05 × 0.77 × 0.12 = 0.005
 - w_B = 0.03 × 0.73 × 0.10 = 0.002
 - w_C = 0.03 × 0.73 × 0.11 = 0.002
@@ -160,7 +160,7 @@ C = ½ log₂(1 + SNR)
 
 where SNR = α² / η² (signal-to-noise ratio of reproduction).
 
-For TQM-134: H ≈ 0.786, corresponding to SNR ≈ 1.62, C ≈ 0.70 bits.
+For AT-134: H ≈ 0.786, corresponding to SNR ≈ 1.62, C ≈ 0.70 bits.
 
 The information transmitted per generation is ~0.7 bits — enough
 to preserve species identity but allowing gradual drift.
@@ -176,11 +176,11 @@ The balance between inheritance (coupling) and mutation (damping + noise)
 determines the evolutionary dynamics:
 - High coupling, low noise → perfect cloning, no evolution
 - Low coupling, high noise → no inheritance, random patterns
-- Intermediate → Darwinian dynamics (TQM-134 regime)
+- Intermediate → Darwinian dynamics (AT-134 regime)
 
 #### 4.4 The Missing Piece: Selection
 
-TQM-134 demonstrates reproduction + variation (2 of 3 Darwinian pillars).
+AT-134 demonstrates reproduction + variation (2 of 3 Darwinian pillars).
 Selection requires:
 
 1. Limited resources (finite information capacity in Theta)
@@ -210,7 +210,7 @@ on information patterns rather than genetic sequences.
 
 ### 6. Implications
 
-#### 6.1 For TQM
+#### 6.1 For AT
 
 The discovery of information evolution completes the bridge from
 proto-matter to proto-life:
@@ -218,26 +218,26 @@ proto-matter to proto-life:
 ```
 Temporal Oscillators
     ↓
-Synchronization (TQM-001)
+Synchronization (AT-001)
     ↓
-Resonance Clusters (TQM-005)
+Resonance Clusters (AT-005)
     ↓
-Proto-Matter Condensates (TQM-010)
+Proto-Matter Condensates (AT-010)
     ↓
-Identity & Memory (TQM-044-061)
+Identity & Memory (AT-044-061)
     ↓
-Information Transport (TQM-129)
+Information Transport (AT-129)
     ↓
-Information Memory (TQM-130)
+Information Memory (AT-130)
     ↓
-Information Interaction (TQM-132)
+Information Interaction (AT-132)
     ↓
-Information Species (TQM-133)
+Information Species (AT-133)
     ↓
-**Information Evolution (TQM-134)**
+**Information Evolution (AT-134)**
 ```
 
-The TQM framework now demonstrates that matter-like structures
+The AT framework now demonstrates that matter-like structures
 can emerge from temporal field dynamics and that these structures
 can support information ecosystems capable of evolution.
 

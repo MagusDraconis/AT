@@ -1,7 +1,7 @@
 # m=3 Physical Mapping Audit
 
 **Goal:** find the physical meaning of $\Omega=(q+3)/q$ and $\gamma=q/(q+3)$ (with
-$q\approx16$–$18$) by searching TQM's own quantities. **No new primitives, no fitting,
+$q\approx16$–$18$) by searching AT's own quantities. **No new primitives, no fitting,
 no numerology.**
 
 ---
@@ -54,7 +54,7 @@ not a mode ratio (structure). **Candidate (low confidence).**
 |---|---|---|---|
 | $q\approx16$–$18$ | lepton mass ratio $m_\tau/m_\mu=16.8$ | `AnharmonicityAnalyzer` ($m_\tau/m_e=3477$), mass-hierarchy audit | Low |
 | $\gamma\approx0.84$–$0.86$ | (derived from $q$ above) $=m_\tau/(m_\tau{+}3m_\mu)$ | none supplied | Low |
-| $\Omega\approx1.16$–$1.19$ | coupling log-normal width $\sigma\approx1.2$ | `TQM_Master_Reference` abundance table | Low |
+| $\Omega\approx1.16$–$1.19$ | coupling log-normal width $\sigma\approx1.2$ | `AT_Master_Reference` abundance table | Low |
 
 ---
 

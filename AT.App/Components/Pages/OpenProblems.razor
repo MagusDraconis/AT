@@ -1,0 +1,50 @@
+@page "/open-problems"
+
+<PageTitle>Open Problems · AT</PageTitle>
+
+<h2 class="section-heading">Open Problems</h2>
+<p class="muted">Genuinely open questions of the AT-QG program — falsifiable predictions awaiting experiment and unresolved derivations. Source: <span class="mono">Docs/ATQG_PhysicsCoverage.json</span> (single source of truth). Current frontier includes the QG295–QG300 closure run and the remaining experimental items.</p>
+
+@if (_problems is null)
+{
+    <MudProgressCircular Indeterminate="true" Size="Size.Medium" Class="mt-4" />
+}
+else if (_problems.Count == 0)
+{
+    <MudText Typo="Typo.body2" Class="muted">No open problems registered.</MudText>
+}
+else
+{
+    @foreach (var p in _problems)
+    {
+        <MudCard Elevation="1" Class="theory-card mb-3">
+            <MudCardContent>
+                <div class="mb-1">
+                    <span class="status-chip @StatusClass(p.Status)">@p.Status</span>
+                    <span class="audit-phase ms-2">@p.Phase</span>
+                </div>
+                <MudText Typo="Typo.subtitle1" Class="fw-bold">@p.Question</MudText>
+            </MudCardContent>
+        </MudCard>
+    }
+}
+
+@code {
+    [Inject] private ValidationDataService ValidationDataService { get; set; } = default!;
+
+    private IReadOnlyList<OpenQuestionModel>? _problems;
+
+    protected override async Task OnInitializedAsync()
+    {
+        var coverage = await ValidationDataService.GetCoverageAsync();
+        _problems = coverage.OpenQuestions;
+    }
+
+    private static string StatusClass(string status) => status.ToUpperInvariant() switch
+    {
+        string s when s.Contains("RESOLVED") => "status-tested",
+        string s when s.Contains("PARTIALLY") => "status-partial",
+        string s when s.Contains("PREDICTED") || s.Contains("FALSIFIABLE") => "status-partial",
+        _ => "status-untested",
+    };
+}

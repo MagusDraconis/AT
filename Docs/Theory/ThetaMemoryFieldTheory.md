@@ -1,6 +1,6 @@
 # Theta Memory Field Theory
 
-## TQM-130: Θ(x,t) as a Functional Memory Medium
+## AT-130: Θ(x,t) as a Functional Memory Medium
 
 ### Abstract
 
@@ -50,10 +50,10 @@ Optimal density for memory: tradeoff between capacity and lifetime.
 ### 5. Complete Information Medium
 
 Θ supports the full information lifecycle:
-1. **WRITE**: phase encoding (TQM-126/129)
-2. **TRANSPORT**: wave propagation (TQM-129)
-3. **STORE**: metastable attractors (TQM-130)
-4. **READ**: pattern overlap measurement (TQM-130)
+1. **WRITE**: phase encoding (AT-126/129)
+2. **TRANSPORT**: wave propagation (AT-129)
+3. **STORE**: metastable attractors (AT-130)
+4. **READ**: pattern overlap measurement (AT-130)
 
 This is a complete classical information processing substrate
 built from topological charge dynamics.

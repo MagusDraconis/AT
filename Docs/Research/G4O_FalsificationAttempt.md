@@ -23,10 +23,10 @@ reduction. The test computes the geodesic acceleration **directly** from the met
 | case | a = −Γ | sign |
 |---|---|---|
 | Newtonian (Φ=−GM/r) | −0.100 = −GM/r² | **attractive** (inward) |
-| TQM ρ=1+ax² (density **minimum** at origin) | −0.123 | toward the minimum |
-| TQM Gaussian (density **peak** at origin) | +0.231 | **repulsive** (outward) |
+| AT ρ=1+ax² (density **minimum** at origin) | −0.123 | toward the minimum |
+| AT Gaussian (density **peak** at origin) | +0.231 | **repulsive** (outward) |
 
-The SAME a=−Γ formula gives Newtonian attraction and TQM repulsion-around-peaks — the sign is
+The SAME a=−Γ formula gives Newtonian attraction and AT repulsion-around-peaks — the sign is
 **fixed** by g_00 = −ρ^(2/d), not a free convention.
 
 ### (b) Signature + weak-field (G4-O31)
@@ -56,7 +56,7 @@ density **minima** (repulsive around peaks, "attractive" toward minima), opposit
 **Important correction** (surfaced by this falsification attempt): the ρ = 1+ax² profile used throughout
 G4-G has a density *minimum* at the origin, so its native field points *inward* (toward the minimum).
 The "repulsive" prediction applies to density **peaks** (Gaussian/NFW/shell), where a = −∇lnρ > 0. Both
-are the same physical statement: **TQM gravity points toward density minima, not toward mass.**
+are the same physical statement: **AT gravity points toward density minima, not toward mass.**
 
 ---
 
@@ -64,9 +64,9 @@ are the same physical statement: **TQM gravity points toward density minima, not
 
 | Test | Verdict |
 |---|---|
-| G4-O30 `G4_O30_SignConventionIsFixed` | PASS (Newton attractive; TQM toward minima / repulsive at peaks) |
+| G4-O30 `G4_O30_SignConventionIsFixed` | PASS (Newton attractive; AT toward minima / repulsive at peaks) |
 | G4-O31 `G4_O31_SignatureAndWeakField` | PASS (sign invariant under weak-field + signature) |
 | G4-O32 `G4_O32_DirectGeodesicAndGaugeInvariance` | PASS (geodesic = −∇Φ; Poisson consistent; physical gauge) |
 
-Code: `TQM.Core/ResearchXH/PhysicalObservables.cs` (added `MetricG00/Ginv`, `GeodesicAcceleration`, `WeakFieldPotential`);
-tests `TQM.Tests/ResearchXH/G4O_Phase3_FalsificationAttemptTests.cs`.
+Code: `AT.Core/ResearchXH/PhysicalObservables.cs` (added `MetricG00/Ginv`, `GeodesicAcceleration`, `WeakFieldPotential`);
+tests `AT.Tests/ResearchXH/G4O_Phase3_FalsificationAttemptTests.cs`.

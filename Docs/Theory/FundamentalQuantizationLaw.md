@@ -1,11 +1,11 @@
 # Fundamental Quantization Law
 
-## TQM-121: Why Q ∈ ℕ Is a Mathematical Theorem
+## AT-121: Why Q ∈ ℕ Is a Mathematical Theorem
 
 ### Abstract
 
 We prove that the topological charge Q = β₀({R>0.5}) is necessarily
-integer-valued and conserved under the TQM reaction-diffusion PDE.
+integer-valued and conserved under the AT reaction-diffusion PDE.
 The quantization mechanism is the combined action of homology (providing
 integer-valued β₀) and the one-way reaction barrier (enforcing conservation).
 This is a classical topological quantization — analogous to winding numbers,
@@ -16,7 +16,7 @@ system.
 
 **THEOREM (Charge Quantization)**:
 
-Let R(x,t) evolve according to the TQM PDE:
+Let R(x,t) evolve according to the AT PDE:
 ```
 ∂R/∂t = c₀·M·R·(1−R²) + D_R·∇²R
 ```
@@ -127,7 +127,7 @@ all PDE parameters. The quantization is STRUCTURAL.
 
 ### 7. Comparison with Quantum Mechanical Quantization
 
-| Property | QM Quantization | TQM Quantization |
+| Property | QM Quantization | AT Quantization |
 |----------|----------------|------------------|
 | Origin | Boundary conditions on ψ | Topology of configuration space |
 | Mechanism | Standing wave condition | Betti number + one-way barrier |
@@ -135,7 +135,7 @@ all PDE parameters. The quantization is STRUCTURAL.
 | Universality | Depends on Hamiltonian | Depends on PDE structure |
 | Mathematical basis | Spectral theory | Algebraic topology |
 
-TQM quantization is MORE FUNDAMENTAL than QM quantization in the
+AT quantization is MORE FUNDAMENTAL than QM quantization in the
 sense that it requires only the PDE structure, not a specific
 Hamiltonian or boundary value problem.
 

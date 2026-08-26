@@ -5,7 +5,7 @@
 **Predecessors:** `MetricOperatorProgram.md`, `WeightedLaplacian_Report.md`,
 `LaplaceBeltramiApproximation.md`, `BDGOperatorContinuum_Report.md`,
 `MetricEmergenceProgram.md`, `ConformalStructureProgram.md`, `MetricOriginClosure.md`.
-**Constraint:** No new primitives. Use existing TQM v1.0 framework only.
+**Constraint:** No new primitives. Use existing AT v1.0 framework only.
 
 ---
 
@@ -281,12 +281,12 @@ Any accepted native operator must satisfy:
 
 ## 9. xUnit test program (specification)
 
-**Placement.** Research tests inherit `ResearchTestBase` (`TQM.Tests/Shared`), use
+**Placement.** Research tests inherit `ResearchTestBase` (`AT.Tests/Shared`), use
 `ITestOutputHelper` (`Output`), `StringBuilder`, and `PrintHeader(...)`; they are
 deterministic (fixed seeds, no randomness in the assertions). Recommended locations:
-`TQM.Tests/Research/` (project research-test convention, `TQM_###_Tests.cs`) or a dedicated
-`TQM.Tests/ResearchXH/` folder to parallel the `ResearchXC` metric program. Candidate-construction
-core code goes in `TQM.Core/ResearchXH/` (namespace `TQM.Core.ResearchXH`).
+`AT.Tests/Research/` (project research-test convention, `AT_###_Tests.cs`) or a dedicated
+`AT.Tests/ResearchXH/` folder to parallel the `ResearchXC` metric program. Candidate-construction
+core code goes in `AT.Core/ResearchXH/` (namespace `AT.Core.ResearchXH`).
 
 | Test ID | Test | Deterministic input | Assertion / expected output |
 |---|---|---|---|

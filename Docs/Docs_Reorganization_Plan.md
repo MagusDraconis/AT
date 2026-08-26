@@ -16,7 +16,7 @@
 | `Docs/Theory/` | Theorems and derivations | `*Theory.md`, derivation docs, postulates, foundations |
 | `Docs/Audits/` | Hostile audits + methodology | `*Audit.md`, phase reports, audit frameworks |
 | `Docs/Archive/` | Obsolete / superseded | rejected cosmology reinterpretations |
-| *(kept in place)* | Special-purpose | `Docs/NewChat_Start.md`, `Docs/TQM_LabBook.md`, `Docs/ObservationalTests/`, `Docs/ResearchXB/` |
+| *(kept in place)* | Special-purpose | `Docs/NewChat_Start.md`, `Docs/AT_LabBook.md`, `Docs/ObservationalTests/`, `Docs/ResearchXB/` |
 
 ---
 
@@ -26,8 +26,8 @@
 
 | File | Current | Destination |
 |---|---|---|
-| TQM_Master_Reference.md | Docs/Main | Docs/Main (keep) |
-| TQM_Encyclopedia.md | Docs/Main | Docs/Main (keep) |
+| AT_Master_Reference.md | Docs/Main | Docs/Main (keep) |
+| AT_Encyclopedia.md | Docs/Main | Docs/Main (keep) |
 | Coverage_Report.md | Docs/Main | Docs/Main (keep) |
 
 ### 2.2 `Docs/Audits/`
@@ -39,8 +39,8 @@
 | PlanckConstraintAudit.md | Docs/Main |
 | TRM_Reconciliation_Audit.md | Docs/Main |
 | X01_Alternative_Foundations_Audit.md | Docs/Theory |
-| TQM-Failure-Analysis-Framework-V1.md | Docs/WhitePapers |
-| TQM-Framework-Revision-Protocol-V1.md | Docs/WhitePapers |
+| AT-Failure-Analysis-Framework-V1.md | Docs/WhitePapers |
+| AT-Framework-Revision-Protocol-V1.md | Docs/WhitePapers |
 
 ### 2.3 `Docs/Reports/`
 
@@ -79,7 +79,7 @@
 | PredictionsFromChange.md | Docs |
 | ProtoMatterCollectiveReport.md | Docs |
 | SpectralLandscapeReport.md | Docs |
-| TQMPhysicalCorrespondence.md | Docs |
+| ATPhysicalCorrespondence.md | Docs |
 | ThetaInformationDynamicsReport.md | Docs |
 | ThetaInformationReport.md | Docs |
 | ThetaMemoryReport.md | Docs |
@@ -89,7 +89,7 @@
 | UnifiedPhysicsCandidate.md | Docs |
 | WhyThisH.md | Docs |
 | CausalScaleUnification.md | Docs |
-| TQM-WhitePaper-Experimental-Priorities-2025-2035-V1.md | Docs/WhitePapers |
+| AT-WhitePaper-Experimental-Priorities-2025-2035-V1.md | Docs/WhitePapers |
 
 ### 2.4 `Docs/Theory/`
 
@@ -124,7 +124,7 @@
 | UniversalInformationEvolution.md | Docs |
 | XB001-Origin-Of-Abundance.md | Docs/ResearchXB |
 | XB002-Universal-Abundance-Distribution.md | Docs/ResearchXB |
-| *(existing numbered docs 00–13 + TQM_* stay)* | Docs/Theory |
+| *(existing numbered docs 00–13 + AT_* stay)* | Docs/Theory |
 
 ### 2.5 `Docs/Archive/` (superseded — collapse-to-FLRW reinterpretations)
 
@@ -148,8 +148,8 @@
 | File | Location | Reason |
 |---|---|---|
 | NewChat_Start.md | Docs | mandatory project memory |
-| TQM_LabBook.md | Docs | lab book (append-only log) |
-| TQM_QuantumGravity_Program.md | Docs | program summary (README-linked) |
+| AT_LabBook.md | Docs | lab book (append-only log) |
+| AT_QuantumGravity_Program.md | Docs | program summary (README-linked) |
 | ObservationalTests/* (5) | Docs/ObservationalTests | already purpose-organized |
 | README.md | root | do not move |
 
@@ -164,8 +164,8 @@ git mv Docs/Main/ClusterMassAudit.md            Docs/Audits/
 git mv Docs/Main/PlanckConstraintAudit.md       Docs/Audits/
 git mv Docs/Main/TRM_Reconciliation_Audit.md    Docs/Audits/
 git mv Docs/Theory/X01_Alternative_Foundations_Audit.md Docs/Audits/
-git mv Docs/WhitePapers/TQM-Failure-Analysis-Framework-V1.md       Docs/Audits/
-git mv Docs/WhitePapers/TQM-Framework-Revision-Protocol-V1.md      Docs/Audits/
+git mv Docs/WhitePapers/AT-Failure-Analysis-Framework-V1.md       Docs/Audits/
+git mv Docs/WhitePapers/AT-Framework-Revision-Protocol-V1.md      Docs/Audits/
 
 # Reports (all *Report.md, *Roadmap.md, predictions, validation)
 git mv Docs/Main/CMB_Roadmap.md Docs/Reports/
@@ -189,11 +189,11 @@ git mv Docs/TimeFirstCosmology.md Docs/Archive/
 
 | Source | Change |
 |---|---|
-| `README.md` | references `Docs/TQM_QuantumGravity_Program.md` (kept) — **no change** |
+| `README.md` | references `Docs/AT_QuantumGravity_Program.md` (kept) — **no change** |
 | `Docs/Main/Coverage_Report.md` | references `ClusterMassAudit.md` → `Docs/Audits/ClusterMassAudit.md` |
-| `Docs/Main/TQM_Encyclopedia.md` | references `ClusterMassAudit.md`, `CMB_Roadmap.md` → update to `Docs/Audits/`, `Docs/Reports/` |
-| `Docs/Main/TQM_Master_Reference.md` | self-contained — **no change** |
-| `Docs/Main/PlanckConstraintAudit.md` | references `Coverage_Report.md`, `TQM_Encyclopedia.md` (stay in Main) — **no change** |
+| `Docs/Main/AT_Encyclopedia.md` | references `ClusterMassAudit.md`, `CMB_Roadmap.md` → update to `Docs/Audits/`, `Docs/Reports/` |
+| `Docs/Main/AT_Master_Reference.md` | self-contained — **no change** |
+| `Docs/Main/PlanckConstraintAudit.md` | references `Coverage_Report.md`, `AT_Encyclopedia.md` (stay in Main) — **no change** |
 | cross-refs among moved audits | same folder after move — **no change** |
 
 ---
@@ -203,7 +203,7 @@ git mv Docs/TimeFirstCosmology.md Docs/Archive/
 The 12 files in §2.5 are the "cosmic-clock / event / rate / structure-first"
 reinterpretations audited in QG-080–089 (Phases 127–136). Each was found to
 **collapse to FLRW or be falsified**; their content is superseded by the
-FLRW + $w(z)$ framework and `TQM_Master_Reference.md`. They are retained for
+FLRW + $w(z)$ framework and `AT_Master_Reference.md`. They are retained for
 reference, not deleted.
 
 ---

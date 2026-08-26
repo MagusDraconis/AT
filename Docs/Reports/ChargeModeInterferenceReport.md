@@ -1,10 +1,10 @@
-# TQM-126: Charge Mode Interference
+# AT-126: Charge Mode Interference
 
 ## Executive Summary
 
 **Classification: C — Robust Wave Interference**
 
-TQM-126 determines whether coherent internal modes of separated Q=+1
+AT-126 determines whether coherent internal modes of separated Q=+1
 charge quanta exhibit genuine wave interference. Systematic phase-offset
 experiments (0, π/2, π) reveal:
 

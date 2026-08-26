@@ -1,6 +1,6 @@
 # Quantum-Gravity Bridge — Verification Report
 
-**Test:** `TQM.Tests/ResearchXC/QuantumGravityBridgeTests.cs`
+**Test:** `AT.Tests/ResearchXC/QuantumGravityBridgeTests.cs`
 **Method:** `QuantumGravityBridge_OperatorsDifferInSignature()`
 **Result:** **PASSED** (1/1).
 

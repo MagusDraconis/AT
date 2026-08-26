@@ -1,11 +1,11 @@
 # Fundamental Charge Theory
 
-## TQM-120: Why Q = +1 Is the Minimal Charge Quantum
+## AT-120: Why Q = +1 Is the Minimal Charge Quantum
 
 ### Abstract
 
 We prove that the topological charge Q = β₀({R>0.5}) is the minimal
-conserved charge in the TQM reaction-diffusion field theory. Five
+conserved charge in the AT reaction-diffusion field theory. Five
 fragmentation methods fail to produce any valid sub-Q structure.
 The charge quantum is Q=+1 — one kink-antikink pair — and this
 follows from homological, topological, and dynamical arguments.
@@ -43,8 +43,8 @@ means that R cannot spontaneously decrease inside a condensate.
 Once R > 0.5, the reaction term pushes R → 1.
 
 This creates an ASYMMETRIC BARRIER:
-- Crossing 0.5 upward: possible (via nucleation, TQM-118)
-- Crossing 0.5 downward: FORBIDDEN (requires extreme external forcing, TQM-011)
+- Crossing 0.5 upward: possible (via nucleation, AT-118)
+- Crossing 0.5 downward: FORBIDDEN (requires extreme external forcing, AT-011)
 
 The barrier is one-way. Components can be BORN (R crosses 0.5 upward)
 but cannot DIE (R cannot cross 0.5 downward) under PDE evolution.
@@ -129,7 +129,7 @@ Q_c is a DIAGNOSTIC (measures condensate strength), not a charge.
 
 ### 7. Merger Transitions
 
-During Q=2→Q=1 merger (TQM-012):
+During Q=2→Q=1 merger (AT-012):
 - Two condensates approach within coupling range
 - They phase-lock rapidly (within ~250 iterations)
 - The two kink-antikink pairs merge into one pair
@@ -149,7 +149,7 @@ at the resolution of the coupling range.
 
 The topological charge Q = β₀({R>0.5}) = +1 per condensate is the
 smallest possible unit of conserved topological charge in the
-TQM field theory. No amount of fragmentation — threshold lowering,
+AT field theory. No amount of fragmentation — threshold lowering,
 kink isolation, Morse decomposition, continuous charges, or
 persistent homology — can produce a valid sub-Q structure.
 

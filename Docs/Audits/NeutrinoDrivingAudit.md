@@ -59,5 +59,5 @@ $D_{\ell_1}$ from $4002$ to $5937\ \mu K^2$, recovering the entire −30% defici
 approximation and the excluded ISW. The CMB peak-amplitude chain is now
 complete to $\sim5\%$ of Planck.
 
-**Sources:** `TQM.Core/ResearchDATA/PeakHeightAnalyzer.cs` (FullSolveNu),
-`TQM.Tests/ResearchDATA/TQM_PeakHeightAudit.cs`.
+**Sources:** `AT.Core/ResearchDATA/PeakHeightAnalyzer.cs` (FullSolveNu),
+`AT.Tests/ResearchDATA/AT_PeakHeightAudit.cs`.

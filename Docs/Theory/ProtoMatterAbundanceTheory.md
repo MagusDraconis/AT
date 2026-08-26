@@ -1,19 +1,19 @@
 # Proto-Matter Abundance Theory
 
-## TQM-119: Analytic Prediction of Proto-Matter Abundance
+## AT-119: Analytic Prediction of Proto-Matter Abundance
 
 ### Abstract
 
 We derive a closed-form expression for the expected abundance
 of proto-matter condensates ⟨Q⟩ as a function of the system
 parameters (K, λ, N). The derivation starts from the nucleation
-condition c₀·M₀ > D_R/w² (TQM-118) and uses finite-N fluctuation
+condition c₀·M₀ > D_R/w² (AT-118) and uses finite-N fluctuation
 statistics to compute the probability of charge creation per
 independent spatial region.
 
 ### 1. Nucleation Condition
 
-From TQM-108 and TQM-118, the governing PDE is:
+From AT-108 and AT-118, the governing PDE is:
 
 ```
 ∂R/∂t = c₀·M·R·(1−R²) + D_R·∇²R
@@ -192,9 +192,9 @@ results. Key validation checks:
 3. **λ-dependence**: ⟨Q⟩ should increase with λ.
 4. **Distribution shape**: If Poisson, Var ≈ Mean.
 
-### 11. Connection to TQM-006
+### 11. Connection to AT-006
 
-TQM-006's critical density ρc ≈ 0.09 corresponds to:
+AT-006's critical density ρc ≈ 0.09 corresponds to:
 
 ```
 ρc: density at which M₀ first exceeds M_crit

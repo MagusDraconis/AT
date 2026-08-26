@@ -1,10 +1,10 @@
-# TQM-128: Autonomous Collective Wave Field
+# AT-128: Autonomous Collective Wave Field
 
 ## Executive Summary
 
 **Classification: C — Emergent Collective Field**
 
-TQM-128 determines whether the collective wave field Θ(x,t) becomes
+AT-128 determines whether the collective wave field Θ(x,t) becomes
 an autonomous dynamical object at high charge density — predictable
 without tracking individual charges. Closure tests across densities
 ρ_Q ∈ [0.02, 1.0] confirm:

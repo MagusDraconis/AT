@@ -84,6 +84,6 @@ retarded symmetrization).
 | G4-L11 `G4_L11_LayerResponseAndAlternation` | PASS (only L3 alternates) |
 | G4-L12 `G4_L12_PropagationAndRanking` | PASS (L3 BEST MATCH, L2 REJECT) |
 
-Code: `TQM.Core/ResearchXH/LorentzianOperator.cs` (added `BdgReference`, `RetardedBdg`,
+Code: `AT.Core/ResearchXH/LorentzianOperator.cs` (added `BdgReference`, `RetardedBdg`,
 `LayerProfile`, `Alternates`, `BdgCoefficient`); tests
-`TQM.Tests/ResearchXH/G4L_Phase1_BDGComparisonTests.cs`.
+`AT.Tests/ResearchXH/G4L_Phase1_BDGComparisonTests.cs`.

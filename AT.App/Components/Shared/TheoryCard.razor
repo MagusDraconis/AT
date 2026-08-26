@@ -1,0 +1,21 @@
+@namespace AT.App.Components.Shared
+
+<MudCard Elevation="1" Class="theory-card h-100">
+    <MudCardContent>
+        @if (!string.IsNullOrEmpty(Badge))
+        {
+            <div class="mb-2"><StatusBadge Status="@Badge" /></div>
+        }
+        @if (!string.IsNullOrEmpty(Title))
+        {
+            <MudText Typo="Typo.subtitle1" Class="fw-bold">@Title</MudText>
+        }
+        @ChildContent
+    </MudCardContent>
+</MudCard>
+
+@code {
+    [Parameter] public string Title { get; set; } = "";
+    [Parameter] public string Badge { get; set; } = "";
+    [Parameter] public RenderFragment? ChildContent { get; set; }
+}

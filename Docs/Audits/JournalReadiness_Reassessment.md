@@ -1,6 +1,6 @@
 # Journal Readiness Reassessment
 
-**Inputs:** `TQM_v1_0_Monograph_Expanded.pdf` (compiled, 73 pp), `PublicationReadiness_Final.md`,
+**Inputs:** `AT_v1_0_Monograph_Expanded.pdf` (compiled, 73 pp), `PublicationReadiness_Final.md`,
 and the completed xUnit test inventory (monograph Appendix A).
 
 **Method:** re-evaluate the statement `NOT_READY_FOR_JOURNAL` against (i) the *completed
@@ -76,8 +76,8 @@ monograph is allowed to carry open problems *provided they are disclosed*; this 
 A derivation paper must deliver a controlled derivation of the target physics. The
 completed tests show the derivation is **not** there: the Einstein side is **PARTIAL**
 (`EinsteinRecoveryTests`, and the `EinsteinTensorTests`/`EinsteinTensorIntegrationTests`
-verify *standard* geometry, not a TQM-native derivation), the metric and the BDG action are
-**imported**, and no unique sharp prediction yet discriminates TQM from SM $+\Lambda$CDM.
+verify *standard* geometry, not a AT-native derivation), the metric and the BDG action are
+**imported**, and no unique sharp prediction yet discriminates AT from SM $+\Lambda$CDM.
 This category remains out of reach, for the scientific reasons in §4.
 
 ---
@@ -106,9 +106,9 @@ permitted — and expected — to disclose them.
 
 | ID | Blocker | Evidence (completed tests / audits) | Blocks |
 |---|---|---|---|
-| **S1** | **Native metric $\to$ operator coupling** (the "G4" gap). TQM imports $g_{\mu\nu}$ via Malament/HKM rather than generating it from Q-events; the metric-dependent operator $\Delta_g/\Box_g$ is absent. | `MetricOriginTests` close the *origin* (import is a proven theorem); `CurvedSpaceBridgeTests` (3) show the metric-dependent operator is **absent**; `EinsteinRecoveryTests` (3) = PARTIAL. | derivation paper |
-| **S2** | **No unique, sharp, currently-testable prediction** that discriminates TQM from SM $+\Lambda$CDM. RAR $g_\dagger=cH_0/2\pi$ matches $a_0$ but the $2\pi$ is admitted accidental; $w(z)=-1+0.015(1+z)^{3/2}$ is a small, not-yet-detected deviation. | Predictions table (monograph Ch.~Quantitative Predictions); `PublicationReadiness_Final.md` §1 "MAJOR" row and §4. | derivation paper |
-| **S3** | **Native re-derivation of the BDG action** absent. The Einstein–Hilbert side flows through imported causal-set gravity, not a TQM computation. | `BDGOperatorContinuumTests` verify convergence of the *imported* operator, not its derivation; `QuantumGravityBridgeTests` (3) establish the two chains are disjoint. | derivation paper |
+| **S1** | **Native metric $\to$ operator coupling** (the "G4" gap). AT imports $g_{\mu\nu}$ via Malament/HKM rather than generating it from Q-events; the metric-dependent operator $\Delta_g/\Box_g$ is absent. | `MetricOriginTests` close the *origin* (import is a proven theorem); `CurvedSpaceBridgeTests` (3) show the metric-dependent operator is **absent**; `EinsteinRecoveryTests` (3) = PARTIAL. | derivation paper |
+| **S2** | **No unique, sharp, currently-testable prediction** that discriminates AT from SM $+\Lambda$CDM. RAR $g_\dagger=cH_0/2\pi$ matches $a_0$ but the $2\pi$ is admitted accidental; $w(z)=-1+0.015(1+z)^{3/2}$ is a small, not-yet-detected deviation. | Predictions table (monograph Ch.~Quantitative Predictions); `PublicationReadiness_Final.md` §1 "MAJOR" row and §4. | derivation paper |
+| **S3** | **Native re-derivation of the BDG action** absent. The Einstein–Hilbert side flows through imported causal-set gravity, not a AT computation. | `BDGOperatorContinuumTests` verify convergence of the *imported* operator, not its derivation; `QuantumGravityBridgeTests` (3) establish the two chains are disjoint. | derivation paper |
 
 ### 4.2 Scope blockers (admitted open items; must be flagged, and are)
 
@@ -147,9 +147,9 @@ blocking:
 Exactly the three scientific blockers. Any one of the following, *when it lands as a
 completed, tested result*, would open the derivation-paper category:
 
-1. **S1** — a **native** metric $\to$ operator coupling (a TQM computation replacing the
+1. **S1** — a **native** metric $\to$ operator coupling (a AT computation replacing the
    Malament import and supplying $\Delta_g/\Box_g$); or
-2. **S2** — a **unique, sharp, currently-testable** prediction that discriminates TQM from
+2. **S2** — a **unique, sharp, currently-testable** prediction that discriminates AT from
    SM $+\Lambda$CDM; or
 3. **S3** — a **native re-derivation of the BDG action** from the Q-event primitives.
 

@@ -59,7 +59,7 @@ spacing λ (numeric v²(9) matches the analytic formula to < 10%).
 
 Deficit hierarchies CAN generate realistic long-range gravitational environments:
 
-| Galaxy property | TQM deficit hierarchy |
+| Galaxy property | AT deficit hierarchy |
 |---|---|
 | point-mass / Keplerian v² ∝ 1/r | power-law deficit m ∝ 1/r |
 | flat rotation curve v² ≈ const | log deficit m ∝ ln(Rmax/r) |
@@ -90,5 +90,5 @@ counting measure ρ. The result is stable under changes of the microscopic void 
 | G4-ME31 `G4_ME31_LogDeficitFlatRotationCurve` | PASS (flat v², halo M_eff ∝ r, cutoff) |
 | G4-ME32 `G4_ME32_HierarchicalPopulationStability` | PASS (staircase → log deficit, stable) |
 
-Code: `TQM.Core/ResearchXH/DeficitCollective.cs` (added `RotationCurveProxy`, `NewtonianRotationCurve`,
-`LogDeficit`, `AnnularDeficit`); tests `TQM.Tests/ResearchXH/G4ME_Phase3_AstrophysicalProfilesTests.cs`.
+Code: `AT.Core/ResearchXH/DeficitCollective.cs` (added `RotationCurveProxy`, `NewtonianRotationCurve`,
+`LogDeficit`, `AnnularDeficit`); tests `AT.Tests/ResearchXH/G4ME_Phase3_AstrophysicalProfilesTests.cs`.

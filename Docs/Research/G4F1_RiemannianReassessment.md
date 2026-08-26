@@ -2,7 +2,7 @@
 
 **Program:** G4 (with G4-T, G4-C, G4-D, G4-E, G4-F)
 **Status:** COMPLETED — synthesis of 15 phases (45 deterministic xUnit tests); no new physics, no new primitives.
-**Question:** Does TQM now contain a native Riemannian geometry program?
+**Question:** Does AT now contain a native Riemannian geometry program?
 
 ---
 
@@ -62,7 +62,7 @@
 
 ## 6. Overall verdict
 
-**Yes** — TQM now contains a **native Riemannian geometry program** in the conformally-flat
+**Yes** — AT now contains a **native Riemannian geometry program** in the conformally-flat
 sector. The chain `Q-events → ρ → f → Lc → R → dynamics → restoring` is DERIVED end-to-end at
 the level of structure, with only two imports remaining: the conformal **class** (a proven
 theorem) and the Δ_g **benchmark** (used for validation, not construction). The original G4

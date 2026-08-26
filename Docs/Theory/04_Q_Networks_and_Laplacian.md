@@ -81,7 +81,7 @@ kx = 1..N_x, ky = 1..N_y. Total modes: N_x · N_y.
 | Information capacity C | log₂(N) | Bits encodable in mode space |
 | Mode density ρ | N_modes / N | Modes per degree of freedom = 1 |
 
-All derivable analytically from λ_k. Source: TQM-145.
+All derivable analytically from λ_k. Source: AT-145.
 
 ---
 
@@ -101,7 +101,7 @@ The damping coefficient γ appears in L = -(1/Δx²)L_Q - γI.
 
 ## The Graph Laplacian Identity
 
-The central result of TQM-142: **L_Q IS the tight-binding Hamiltonian.**
+The central result of AT-142: **L_Q IS the tight-binding Hamiltonian.**
 
 1D chain: (L_Q)_ij = 2δ_ij - δ_i,j+1 - δ_i,j-1
 Tight-binding: H_ij = ε·δ_ij - t·(δ_i,j+1 + δ_i,j-1)
@@ -112,4 +112,4 @@ This is not an analogy or approximation — it is an identity. The graph Laplaci
 
 ---
 
-*TQM-155: Q Networks and Graph Laplacian. August 2026.*
+*AT-155: Q Networks and Graph Laplacian. August 2026.*

@@ -1,4 +1,4 @@
-# TQM-137 Universality of Information Evolution
+# AT-137 Universality of Information Evolution
 
 ## SCIENTIFIC REPORT
 
@@ -19,16 +19,16 @@ It is a **universal emergent phenomenon** in the Theta information layer.
 
 ---
 
-## 1. TQM-135/136 Recap
+## 1. AT-135/136 Recap
 
-TQM-135 discovered selection under resource constraints (w = r/c).
-TQM-136 confirmed r/c is the optimal fitness predictor (ρ = 1.000).
+AT-135 discovered selection under resource constraints (w = r/c).
+AT-136 confirmed r/c is the optimal fitness predictor (ρ = 1.000).
 
 But the critical question remained: was this evolution an ARTIFACT
 of the specific r/c fitness model? If we change the fitness definition,
 does evolution disappear?
 
-**TQM-137 answers: NO. Evolution is universal.**
+**AT-137 answers: NO. Evolution is universal.**
 
 ---
 
@@ -224,6 +224,6 @@ Reproduction → Selection → Fitness Law → **Universality**
 
 ---
 
-*Experiment TQM-137 completed. Evolution is universal in Theta.*
+*Experiment AT-137 completed. Evolution is universal in Theta.*
 *Null hypothesis (model-dependent artifact) rejected.*
 *Darwinian information dynamics are an inevitable emergent phenomenon.*

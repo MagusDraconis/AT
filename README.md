@@ -2,7 +2,7 @@
 
 *From Q to Cosmology*
 
-**TQM**
+**AT**
 
 *A Theory of Structure, Complexity and Random Actualization*
 
@@ -10,7 +10,7 @@
 
 **Version 1.1** — *Native Metric-to-Operator Coupling (Program G4)*
 
-TQM investigates whether matter, quantum behavior, and gravitation emerge from self-organizing oscillations of a temporal field.
+AT investigates whether matter, quantum behavior, and gravitation emerge from self-organizing oscillations of a temporal field.
 
 ## Publication
 
@@ -18,11 +18,11 @@ Zenodo archive: https://doi.org/10.5281/zenodo.20681734
 
 ## Naming
 
-TQM is the project acronym.
+AT is the project acronym.
 
 The official theory name is **THE Q-MODEL** — *From Q to Cosmology*.
 
-The acronym TQM is retained for historical continuity and repository compatibility.
+The acronym AT is retained for historical continuity and repository compatibility.
 
 ## Core Hypothesis
 
@@ -56,8 +56,8 @@ Phase Gradients → Geometry → Gravity
 | **QM** — Quantum Foundations | 5 (QM-001→005) | Complete |
 | **QG** — Quantum Gravity | 31 (QG-001→031) | Complete |
 | **G4** — Native Metric-to-Operator Coupling | 57 phases / 171 tests | Complete |
-| **TQM-F** — Foundation | 4 phases / 9 tests | Complete |
-| **TQM-QG** — Actualization→Gravity Unification | 104 phases / 312 tests | Complete |
+| **AT-F** — Foundation | 4 phases / 9 tests | Complete |
+| **AT-QG** — Actualization→Gravity Unification | 104 phases / 312 tests | Complete |
 | **Total** | **211** | |
 
 ## Key Results
@@ -70,7 +70,7 @@ Phase Gradients → Geometry → Gravity
 - **Gravity = phase gradient phenomenon** — attraction dominates, repulsion is Dark Energy
 - **Gravity manipulation is NOT possible** (QG-023→031, 9 experiments, 1 conclusion)
 - **RAR derivation**: g† = c·H₀/(2π) — zero free parameters
-- **Parameter compression**: SM+GR (~26) → TQM (2+3) — ~5-8× reduction
+- **Parameter compression**: SM+GR (~26) → AT (2+3) — ~5-8× reduction
 - **Novel predictions**: w(z) = -1 + 0.015·(1+z)^(3/2), evolving g†(z), Euclid sensitivity
 - **Native conformal operator** (G4): Lc = ρ⁻¹ L ρ⁻¹ ≈ Δ_g reconstructs curvature sign and magnitude from density and adjacency alone — no metric tensor, no Laplace–Beltrami import
 - **Native curvature evolution law** (G4-E): R = F(ρ), Ṙ = F′(ρ)·ρ̇ with F′(ρ) < 0 — a closed curvature–density relation
@@ -79,8 +79,8 @@ Phase Gradients → Geometry → Gravity
 ## Build & Test
 
 ```bash
-dotnet build TQM.Core/TQM.Core.csproj
-dotnet test TQM.Tests/TQM.Tests.csproj
+dotnet build AT.Core/AT.Core.csproj
+dotnet test AT.Tests/AT.Tests.csproj
 ```
 
 Requirements: .NET 10, MathNet.Numerics 5.0
@@ -88,6 +88,6 @@ Requirements: .NET 10, MathNet.Numerics 5.0
 ## Documentation
 
 - `Docs/NewChat_Start.md` — Primary project memory and research direction
-- `Docs/TQM_QuantumGravity_Program.md` — Complete QG program summary
-- `Docs/TQM_LabBook.md` — Detailed experiment results
+- `Docs/AT_QuantumGravity_Program.md` — Complete QG program summary
+- `Docs/AT_LabBook.md` — Detailed experiment results
 - `Docs/Research/G4*.md` — Program G4 phase reports (native metric-to-operator coupling)

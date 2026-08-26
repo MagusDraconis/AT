@@ -9,30 +9,30 @@ it does not depend on the specific fitness function w = r/c.
 Any system with reproduction, resource constraints, and property
 asymmetry will exhibit selection, competition, and extinction.
 
-This was demonstrated by TQM-137: 147 runs across 7 alternative
+This was demonstrated by AT-137: 147 runs across 7 alternative
 fitness models and 7 resource regimes. Evolution persisted at
 100% selection robustness and 85% evolution persistence score.
 
 ### 2. The Minimal Conditions for Evolution
 
-TQM-137 identifies three minimal ingredients for Darwinian
+AT-137 identifies three minimal ingredients for Darwinian
 information evolution:
 
 #### 2.1 Reproduction (INEVITABLE)
 Entities must be able to make copies of themselves.
 In Theta: species reproduce through field-mediated template copying
-(TQM-134). Reproduction rate r > 0 is sufficient.
+(AT-134). Reproduction rate r > 0 is sufficient.
 
 #### 2.2 Constraints (INEVITABLE)
 Resources must be finite. Infinite resources = no competition.
 In Theta: six resource budgets limit the information ecology
-(TQM-135). Any finite capacity K creates carrying capacity.
+(AT-135). Any finite capacity K creates carrying capacity.
 
 #### 2.3 Asymmetry (CONTINGENT)
 Entities must differ in their properties. If all are identical,
 there can be no differential survival.
 In Theta: species differ in reproduction rate r and resource
-consumption c (TQM-133). These differences create fitness
+consumption c (AT-133). These differences create fitness
 asymmetry.
 
 ### 3. The Emergence Theorem
@@ -64,7 +64,7 @@ function for Theta because:
 
 1. **Parameter-free**: No fitted constants.
 2. **Derivable**: Emerges from dN/dt = r·N·(1 - c·N/K).
-3. **Predictive**: Spearman ρ = 1.000 (TQM-136).
+3. **Predictive**: Spearman ρ = 1.000 (AT-136).
 4. **Interpretable**: Clear physical meaning — offspring per resource unit.
 
 Other fitness functions (r²/c, r/c², etc.) also produce evolution,
@@ -118,7 +118,7 @@ Only the final step — "who wins?" — depends on the fitness model.
 
 ### 7. Implications
 
-#### 7.1 For TQM
+#### 7.1 For AT
 
 The universality of evolution means the Theta discoveries are NOT
 an artifact of modeling choices. Evolution is a genuine property
@@ -149,15 +149,15 @@ variation.
 ### 8. The Nine-Level Theta Hierarchy
 
 ```
-Level 1: TRANSPORT (TQM-129)
-Level 2: MEMORY (TQM-130)
-Level 3: INTERACTION (TQM-132)
-Level 4: ATTRACTORS (TQM-133)
-Level 5: ECOLOGY (TQM-133)
-Level 6: REPRODUCTION (TQM-134)
-Level 7: SELECTION (TQM-135)
-Level 8: FITNESS LAW (TQM-136)
-Level 9: UNIVERSALITY (TQM-137)
+Level 1: TRANSPORT (AT-129)
+Level 2: MEMORY (AT-130)
+Level 3: INTERACTION (AT-132)
+Level 4: ATTRACTORS (AT-133)
+Level 5: ECOLOGY (AT-133)
+Level 6: REPRODUCTION (AT-134)
+Level 7: SELECTION (AT-135)
+Level 8: FITNESS LAW (AT-136)
+Level 9: UNIVERSALITY (AT-137)
 ```
 
 The hierarchy is now complete. From the most basic property

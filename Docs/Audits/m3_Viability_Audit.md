@@ -21,7 +21,7 @@ currently uninterpreted.**
 
 The mode-locking doc's "stability" (RBF16–RBF23: threshold-region stability, bounded
 perturbation stability, failure-by-family exclusion) is **rule-family stability** — the
-rational band survives ablations — **not** a physical stability boundary. TQM's own
+rational band survives ablations — **not** a physical stability boundary. AT's own
 stability boundary (X051 defect-excitation cutoff $\alpha\approx1.5$) is a *different*
 stability (excitation lifetimes → 3 observable generations), and Phase 151 already showed
 it is **model-dependent** ($5/6$ models) and does **not** bound $N\le3$. The mode-locking
@@ -39,9 +39,9 @@ claim boundary — i.e. the closure-order derivation itself is **absent**.
 
 ---
 
-## 4. Comparison against TQM audits
+## 4. Comparison against AT audits
 
-| Audit | TQM result | vs m=3 closure |
+| Audit | AT result | vs m=3 closure |
 |---|---|---|
 | Multiplicity (150) | $N\ge3$ DERIVED (CP: $(N{-}1)(N{-}2)/2\ge1$) | different route (mode-locking) |
 | Upper bound (151) | $N\le3$ EMPIRICAL; no stability/anomaly/representation/defect/info principle bounds it | m=3 is a **candidate** for that missing principle |
@@ -70,16 +70,16 @@ claim boundary — i.e. the closure-order derivation itself is **absent**.
 | $\Omega\approx1.16$–$1.19$, $\gamma\approx0.84$–$0.86$ are predictions | values given; no observable identified | **UNMAPPED** |
 | avoids numerology | RBF16–23 failure-by-family exclusion | **PARTIAL** ($q$ origin still underived) |
 | avoids anthropics | no anthropic reasoning in docs | **YES** |
-| uses only TQM primitives | relies on TRM "phase-lattice/action-tick discriminator" machinery | **NO** (TRM machinery) |
+| uses only AT primitives | relies on TRM "phase-lattice/action-tick discriminator" machinery | **NO** (TRM machinery) |
 
 ---
 
 ## 7. Conclusion
 
 $m=3$ closure **cannot yet provide a genuine $N\le3$ mechanism**. It is a *candidate* that
-sits exactly where TQM's own audits found the gap (Phase 151: no principle bounds $N\le3$),
+sits exactly where AT's own audits found the gap (Phase 151: no principle bounds $N\le3$),
 but it is currently (a) a **path, not a theorem**, (b) **unmapped** — $\Omega,\gamma$ have
 no assigned observable, so they cannot be said to constrain $N$, and (c) **reliant on TRM
-machinery** rather than TQM primitives. It does **not** explain $N\le3$; it is **potentially**
+machinery** rather than AT primitives. It does **not** explain $N\le3$; it is **potentially**
 constraining but only after the closure-order derivation is supplied and $\Omega,\gamma$ are
 mapped to the multiplicity variable. No new physics is invented here; no integration is claimed.

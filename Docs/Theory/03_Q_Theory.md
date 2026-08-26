@@ -13,7 +13,7 @@ Q is a quantized, conserved, indivisible topological charge with:
 
 **Status**: ASSUMED (Postulate 1). Q is the irreducible microscopic degree of freedom.
 
-**Source**: TQM-117 through TQM-122.
+**Source**: AT-117 through AT-122.
 
 ---
 
@@ -44,7 +44,7 @@ where r_c is the coupling range.
 **Local interaction regime**: r_c ≪ L → nearest-neighbor coupling only.
 **Long-range regime**: r_c ∼ L → all-to-all coupling.
 
-TQM-143 demonstrated that the full Theta hierarchy requires LOCAL interactions (graph locality). Random and scale-free graphs (long-range connections) break the discrete eigenmode structure.
+AT-143 demonstrated that the full Theta hierarchy requires LOCAL interactions (graph locality). Random and scale-free graphs (long-range connections) break the discrete eigenmode structure.
 
 ---
 
@@ -59,7 +59,7 @@ An ensemble of N_Q Q charges forms:
 
 **Density**: ρ_Q = N_Q / L (charges per unit length in 1D).
 
-**Autonomy threshold** (TQM-128): Θ becomes autonomous at ρ_Q > 0.3.
+**Autonomy threshold** (AT-128): Θ becomes autonomous at ρ_Q > 0.3.
 
 ---
 
@@ -90,19 +90,19 @@ An ensemble of N_Q Q charges forms:
 
 | Topology | Graph Class | Spectrum | Species? | Source |
 |----------|------------|----------|----------|--------|
-| 1D Chain | Regular | Discrete sinusoidal | YES | TQM-142 |
-| 1D Ring | Regular | Discrete (periodic) | YES | TQM-143 |
-| 2D Square | Regular | 2D sinusoidal | YES | TQM-143 |
-| 2D Hexagonal | Regular | Dirac cones | YES | TQM-143 |
-| 3D Cubic | Regular | 3D sinusoidal | YES | TQM-143 |
-| Random (ER) | Random | Wigner semicircle | NO | TQM-143 |
-| Small-World | Small-World | Spectral gap + band | YES | TQM-143 |
-| Scale-Free | Scale-Free | Power-law | NO | TQM-143 |
-| Fully Connected | Regular (degenerate) | 1 dominant + N-1 degenerate | Limited | TQM-143 |
-| Community | Modular | Multiple clusters | YES | TQM-143 |
+| 1D Chain | Regular | Discrete sinusoidal | YES | AT-142 |
+| 1D Ring | Regular | Discrete (periodic) | YES | AT-143 |
+| 2D Square | Regular | 2D sinusoidal | YES | AT-143 |
+| 2D Hexagonal | Regular | Dirac cones | YES | AT-143 |
+| 3D Cubic | Regular | 3D sinusoidal | YES | AT-143 |
+| Random (ER) | Random | Wigner semicircle | NO | AT-143 |
+| Small-World | Small-World | Spectral gap + band | YES | AT-143 |
+| Scale-Free | Scale-Free | Power-law | NO | AT-143 |
+| Fully Connected | Regular (degenerate) | 1 dominant + N-1 degenerate | Limited | AT-143 |
+| Community | Modular | Multiple clusters | YES | AT-143 |
 
 **Requirement for species**: Graph locality — edges only between nearby nodes. This ensures discrete eigenmodes. Random and scale-free graphs lack locality and have no discrete species.
 
 ---
 
-*TQM-155: Q Theory. August 2026.*
+*AT-155: Q Theory. August 2026.*

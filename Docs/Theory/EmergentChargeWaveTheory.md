@@ -1,6 +1,6 @@
 # Emergent Charge Wave Theory
 
-## TQM-127: From Discrete Charges to Continuous Field
+## AT-127: From Discrete Charges to Continuous Field
 
 ### Abstract
 

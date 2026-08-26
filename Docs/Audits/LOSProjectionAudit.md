@@ -58,5 +58,5 @@ honest negative result: **the second peak is not within the reach of the
 sudden-recombination + Limber pipeline**, and no new physics is needed — only a
 full Boltzmann/CAMB-class solver.
 
-**Sources:** `TQM.Core/ResearchDATA/LosProjectionAnalyzer.cs` (`Project`,
-`ProjectNumeric`, `J`, `JPrime`), `TQM.Tests/ResearchDATA/TQM_LosProjectionAudit.cs`.
+**Sources:** `AT.Core/ResearchDATA/LosProjectionAnalyzer.cs` (`Project`,
+`ProjectNumeric`, `J`, `JPrime`), `AT.Tests/ResearchDATA/AT_LosProjectionAudit.cs`.

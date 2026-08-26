@@ -1,6 +1,6 @@
 # Autonomous Information Layer
 
-## TQM-132: Information-In-Information Dynamics
+## AT-132: Information-In-Information Dynamics
 
 ### Abstract
 
@@ -21,7 +21,7 @@ Proto-matter has a clean two-layer architecture:
 **Information Layer (Θ)**:
 - Θ(x,t) = Σ A_c·exp(iθ_c) (collective phase field)
 - Supports: transport, memory, interaction
-- Does NOT feed back to Q (TQM-131)
+- Does NOT feed back to Q (AT-131)
 
 ### 2. Information Interaction Laws
 
@@ -54,7 +54,7 @@ behaves, derived from the underlying wave dynamics.
 
 ### 5. Three Levels of Θ Function
 
-| Level | TQM | Function |
+| Level | AT | Function |
 |-------|-----|----------|
 | Transport | 129 | Signals move through space |
 | Memory | 130 | Signals persist in time |

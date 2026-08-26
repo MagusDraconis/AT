@@ -108,7 +108,7 @@ impact:
    ($D_{\ell_2}/D_{\ell_1}$ 0.24 → 0.44).
 3. **ISW + full Boltzmann hierarchy** — ~10–15% amplitude and the residual phase.
 
-All three are **standard ΛCDM physics** (no new TQM content); they require a
+All three are **standard ΛCDM physics** (no new AT content); they require a
 CAMB/CLASS-class Boltzmann solver, not the tight-coupling + Limber pipeline.
 The CMB chapter is therefore **PARTIAL**: background observables ($z_*$, $r_s$,
 $\theta_*$) and the compression peaks are complete; the rarefaction peak and

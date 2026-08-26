@@ -1,6 +1,6 @@
-# TQM-X001: Alternative Foundations Audit
+# AT-X001: Alternative Foundations Audit
 
-## Hostile Review of TQM (THE Q-MODEL)
+## Hostile Review of AT (THE Q-MODEL)
 
 **Status**: 11 assumptions tracked, 7 alternative operators evaluated, 5 path dependencies identified.
 
@@ -15,8 +15,8 @@
 | **Linearity** | 9 | 9 | ✗ | 8 | Nonlinear regimes |
 | Pairwise interactions | 9 | 9 | ✗ | 7 | 3-body terms |
 | Symmetric coupling | 8 | 8 | ✗ | 7 | Directed graphs |
-| Local interactions | 8 | 7 | ✓ (TQM-143) | 5 | Well-tested |
-| Reversibility | 10 | 10 | ✓ (TQM-152) | 3 | Well-understood |
+| Local interactions | 8 | 7 | ✓ (AT-143) | 5 | Well-tested |
+| Reversibility | 10 | 10 | ✓ (AT-152) | 3 | Well-understood |
 | Euclidean distance | 5 | 3 | ✗ | 6 | Graph distance |
 | 1D primary focus | 6 | 7 | Partial | 6 | Higher dimensions |
 | Spectral decomposition | 6 | 7 | ✗ | 5 | Circular definition |
@@ -33,11 +33,11 @@
 
 ## 2. Path Dependencies
 
-The TQM framework reflects choices made early in development:
+The AT framework reflects choices made early in development:
 
 1. **Pairwise interactions → graph Laplacian**: If 3-body interactions exist, the graph representation is insufficient (need hypergraphs).
 
-2. **1D chain → sinusoidal eigenmodes → species**: If Q charges form 2D/3D structures, the eigenmode spectrum is much richer. TQM-143 partially explored this.
+2. **1D chain → sinusoidal eigenmodes → species**: If Q charges form 2D/3D structures, the eigenmode spectrum is much richer. AT-143 partially explored this.
 
 3. **Static graph → L_Q constant**: If Q charges can move, L_Q(t) becomes time-dependent. Evolution on time-dependent graphs is unexplored.
 
@@ -49,7 +49,7 @@ The TQM framework reflects choices made early in development:
 
 ## 3. Alternative Operators to L_Q = D - A
 
-| Operator | TQM Survives? | What Breaks | What Survives |
+| Operator | AT Survives? | What Breaks | What Survives |
 |----------|-------------|------------|---------------|
 | Normalized Laplacian | YES | λ_1 scaling (no longer ∝1/Q²) | Species still exist as eigenmodes |
 | Signless Laplacian | NO | No zero eigenvalue → uniform species A fails | Partial spectral structure |
@@ -69,7 +69,7 @@ The TQM framework reflects choices made early in development:
 - Eigenmode decomposition (L·v = λ·v)
 - Schrödinger equation (linear PDE)
 - Fourier analysis (sinusoidal eigenmodes)
-- All quantum correspondence (TQM-149-154)
+- All quantum correspondence (AT-149-154)
 
 **Results that do NOT require linearity**:
 - Q charge existence and conservation
@@ -106,11 +106,11 @@ The TQM framework reflects choices made early in development:
 
 ## 7. Spectral Bias Audit
 
-**Question**: Did TQM DISCOVER that eigenmodes = species, or did it DEFINE species as eigenmodes?
+**Question**: Did AT DISCOVER that eigenmodes = species, or did it DEFINE species as eigenmodes?
 
-**Analysis**: TQM-133 "discovered" 4 species (A, B, C, D) as stable patterns. These patterns ARE sinusoidal modes — the eigenmodes of L_Q. TQM-140 confirmed the overlap (0.808).
+**Analysis**: AT-133 "discovered" 4 species (A, B, C, D) as stable patterns. These patterns ARE sinusoidal modes — the eigenmodes of L_Q. AT-140 confirmed the overlap (0.808).
 
-**Verdict**: The framework BUILT IN the identification of species with eigenmodes. TQM-133 observed that stable patterns are eigenmodes; TQM-140 "confirmed" what was built into the definition. This is partially circular.
+**Verdict**: The framework BUILT IN the identification of species with eigenmodes. AT-133 observed that stable patterns are eigenmodes; AT-140 "confirmed" what was built into the definition. This is partially circular.
 
 ---
 
@@ -131,12 +131,12 @@ The TQM framework reflects choices made early in development:
 
 ## 9. Audit Verdict
 
-**TQM is a BIASED framework.** At least 4 critical assumptions (static graph, specific operator, linearity, pairwise interactions) were never systematically challenged. The framework reflects early development choices that became locked in.
+**AT is a BIASED framework.** At least 4 critical assumptions (static graph, specific operator, linearity, pairwise interactions) were never systematically challenged. The framework reflects early development choices that became locked in.
 
-**However**: The bias is STRUCTURAL, not methodological. Every scientific framework starts with assumptions. TQM has been TRANSPARENT about its assumptions and has tested many of them (locality via TQM-143, reversibility via TQM-152, geometry via TQM-143).
+**However**: The bias is STRUCTURAL, not methodological. Every scientific framework starts with assumptions. AT has been TRANSPARENT about its assumptions and has tested many of them (locality via AT-143, reversibility via AT-152, geometry via AT-143).
 
 **The most valuable contribution of this audit**: Identifying the four most promising unexplored directions — dynamic graphs, nonlinear operators, hypergraph Laplacians, and magnetic Laplacians. These are where genuinely new physics may lie.
 
 ---
 
-*TQM-X001: Alternative Foundations Audit. August 2026.*
+*AT-X001: Alternative Foundations Audit. August 2026.*

@@ -1,6 +1,6 @@
 # BDG Operator → d'Alembertian — Verification Report
 
-**Test:** `TQM.Tests/ResearchXC/BDGOperatorContinuumTests.cs`
+**Test:** `AT.Tests/ResearchXC/BDGOperatorContinuumTests.cs`
 **Method:** `BDGOperator_ConvergesToDAlembertian()`
 **Result:** **PASSED** (1/1).
 

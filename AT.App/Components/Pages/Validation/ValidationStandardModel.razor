@@ -1,0 +1,82 @@
+@page "/validation/standard-model"
+
+<PageTitle>Standard Model · Validation · AT</PageTitle>
+
+<ValidationHeader />
+
+<div class="page-section">
+    <h3 class="section-heading">Standard Model Validation</h3>
+    <p class="muted">Per-observable coverage from the physics-coverage single source of truth. Status is validation record only — a tested observable means a D96 derivation reproduces the measured value.</p>
+
+    @if (_coverage is null)
+    {
+        <MudProgressCircular Indeterminate="true" Size="Size.Medium" Class="mt-4" />
+    }
+    else
+    {
+        <div class="stat-row mb-4">
+            <div class="stat-tile"><div class="stat-value" style="color:#81C784">@_testedCount</div><div class="stat-label">Tested</div></div>
+            <div class="stat-tile"><div class="stat-value" style="color:#FFB74D">@_partialCount</div><div class="stat-label">Partial</div></div>
+            <div class="stat-tile"><div class="stat-value" style="color:#E57373">@_untestedCount</div><div class="stat-label">Untested</div></div>
+            <div class="stat-tile"><div class="stat-value" style="color:#4DD0E1">@_totalCount</div><div class="stat-label">Observables</div></div>
+        </div>
+
+        <MudTable Items="@_observables" Hover="true" Dense="true">
+            <HeaderContent>
+                <MudTh>Observable</MudTh>
+                <MudTh>Status</MudTh>
+                <MudTh>Phase</MudTh>
+                <MudTh>Detail</MudTh>
+            </HeaderContent>
+            <RowTemplate>
+                <MudTd>@context.Name</MudTd>
+                <MudTd><span class="status-chip @StatusClass(context.Status)">@StatusLabel(context.Status)</span></MudTd>
+                <MudTd><span class="audit-phase">@context.Phase</span></MudTd>
+                <MudTd><span class="muted" style="font-size:0.8rem">@context.Detail</span></MudTd>
+            </RowTemplate>
+        </MudTable>
+
+        <MudCard Elevation="1" Class="theory-card mt-4">
+            <MudCardContent>
+                <MudText Typo="Typo.body2" Class="muted">
+                    Coverage counts how much of the measured SM information space the framework has reached.
+                    It is a <strong>validation status</strong>, not a proof of correctness: a reproduced number
+                    is evidence the derivation is self-consistent, not that the framework is the unique
+                    description of nature.
+                </MudText>
+            </MudCardContent>
+        </MudCard>
+    }
+</div>
+
+@code {
+    [Inject] private ValidationDataService ValidationDataService { get; set; } = default!;
+
+    private PhysicsCoverageFile? _coverage;
+    private int _testedCount, _partialCount, _untestedCount, _totalCount;
+    private IReadOnlyList<ObservableModel> _observables = [];
+
+    protected override async Task OnInitializedAsync()
+    {
+        _coverage = await ValidationDataService.GetCoverageAsync();
+        _observables = _coverage.Observables;
+        _testedCount = _observables.Count(o => o.Status == "tested");
+        _partialCount = _observables.Count(o => o.Status == "partial");
+        _untestedCount = _observables.Count(o => o.Status == "untested");
+        _totalCount = _observables.Count;
+    }
+
+    private static string StatusClass(string status) => status switch
+    {
+        "tested" => "status-tested",
+        "partial" => "status-partial",
+        _ => "status-untested",
+    };
+
+    private static string StatusLabel(string status) => status switch
+    {
+        "tested" => "TESTED",
+        "partial" => "PARTIAL",
+        _ => "UNTESTED",
+    };
+}

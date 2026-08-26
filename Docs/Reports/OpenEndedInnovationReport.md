@@ -1,4 +1,4 @@
-# TQM-138 Open-Ended Information Innovation
+# AT-138 Open-Ended Information Innovation
 
 ## SCIENTIFIC REPORT
 
@@ -22,8 +22,8 @@ it saturates rather than continuing indefinitely.
 
 ## 1. Background
 
-TQM-133 discovered 4 stable information species (A, B, C, D).
-TQM-134/135/136/137 established the complete Darwinian framework:
+AT-133 discovered 4 stable information species (A, B, C, D).
+AT-134/135/136/137 established the complete Darwinian framework:
 reproduction, variation, selection, fitness law, universality.
 
 The remaining question: can evolution create genuinely NEW species,
@@ -129,15 +129,15 @@ The saturation suggests the Theta pattern space has a FINITE number
 of stable configurations. Once these are discovered, further
 mutation just produces unstable transients that don't persist.
 
-This is consistent with the attractor picture from TQM-133:
+This is consistent with the attractor picture from AT-133:
 the Theta field has a limited number of stable attractors.
-TQM-133 found 4 major attractors. TQM-138 finds ~15 additional
+AT-133 found 4 major attractors. AT-138 finds ~15 additional
 minor attractors. But the total is still FINITE.
 
 ### 4.3 Is This "Open-Ended"?
 
 **No.** Open-ended evolution requires UNBOUNDED innovation —
-new species keep emerging indefinitely. TQM-138 shows innovation
+new species keep emerging indefinitely. AT-138 shows innovation
 that is REAL but BOUNDED. The system explores and discovers
 pre-existing stable configurations, rather than creating
 genuinely new ones from nothing.
@@ -196,7 +196,7 @@ Reproduction → Selection → Fitness Law → Universality →
 **Innovation (bounded)**
 
 This is a scientifically important result: it shows that
-Theta evolution has RICHER structure than TQM-133 revealed
+Theta evolution has RICHER structure than AT-133 revealed
 (19 species, not just 4), but that this richness is ultimately
 FINITE — the attractor landscape is bounded.
 
@@ -214,6 +214,6 @@ FINITE — the attractor landscape is bounded.
 
 ---
 
-*Experiment TQM-138 completed. Innovation exists but is bounded.*
+*Experiment AT-138 completed. Innovation exists but is bounded.*
 *Null hypothesis (fixed catalog) rejected — 66 novel species discovered.*
 *Open-ended evolution not detected — saturation observed at index 0.82.*

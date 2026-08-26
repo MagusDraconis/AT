@@ -10,7 +10,7 @@
 ## 1. Goal
 
 Identify the physical observables implied by the ρ-only Einstein structure, measure their sign /
-scaling / dimension dependence, and classify each as KNOWN GR-LIKE / TQM-SPECIFIC / UNDECIDED.
+scaling / dimension dependence, and classify each as KNOWN GR-LIKE / AT-SPECIFIC / UNDECIDED.
 
 ---
 
@@ -18,14 +18,14 @@ scaling / dimension dependence, and classify each as KNOWN GR-LIKE / TQM-SPECIFI
 
 | observable | native form | classification |
 |---|---|---|
-| curvature–density relation | R = −(1/ρ)(ln ρ)″ (d=2); algebraic, no PDE | **TQM-SPECIFIC** |
-| native Poisson equation | ΔΦ + ((d−2)/2)\|∇Φ\|² = −ρ^(2/d)R/(2(d−1)) | **TQM-SPECIFIC** |
-| effective potential | Φ = (1/d) ln ρ | TQM-SPECIFIC form |
+| curvature–density relation | R = −(1/ρ)(ln ρ)″ (d=2); algebraic, no PDE | **AT-SPECIFIC** |
+| native Poisson equation | ΔΦ + ((d−2)/2)\|∇Φ\|² = −ρ^(2/d)R/(2(d−1)) | **AT-SPECIFIC** |
+| effective potential | Φ = (1/d) ln ρ | AT-SPECIFIC form |
 | geodesic acceleration | a = −∇Φ | **KNOWN GR-LIKE** |
 | gravitational redshift | Δν/ν = −ΔΦ | **KNOWN GR-LIKE** |
 | lensing deflection | ∝ ΔΦ | **KNOWN GR-LIKE** |
 | expansion | H = ρ̇/ρ (0 for static ρ) | **KNOWN GR-LIKE** |
-| dimension dependence | Φ, a ∝ 1/d | **TQM-SPECIFIC** |
+| dimension dependence | Φ, a ∝ 1/d | **AT-SPECIFIC** |
 
 ---
 
@@ -36,17 +36,17 @@ scaling / dimension dependence, and classify each as KNOWN GR-LIKE / TQM-SPECIFI
 R = −(lnρ)″/ρ holds exactly (d=2); the native Poisson relation
 ΔΦ + ((d−2)/2)|∇Φ|² = −ρ^(2/d)R/(2(d−1)) holds (d=3, residual < 1e−12). The curvature is
 **algebraically** fixed by ρ, and the Poisson source is the **curvature** (ρ″ structure), not the
-density value (unlike GR's ΔΦ = 4πGρ). → **TQM-SPECIFIC**.
+density value (unlike GR's ΔΦ = 4πGρ). → **AT-SPECIFIC**.
 
 ### (b) Acceleration + redshift (G4-O01)
 
 a = −∇Φ holds (GR weak-field form), redshift = −ΔΦ (standard gravitational redshift), with
-Φ_eff = (1/d)lnρ. → **KNOWN GR-LIKE** (form), with the TQM-specific potential.
+Φ_eff = (1/d)lnρ. → **KNOWN GR-LIKE** (form), with the AT-specific potential.
 
 ### (c) Lensing + expansion + dimension (G4-O02)
 
 Lensing deflection ∝ ΔΦ (non-zero off-axis), expansion H = ρ̇/ρ = 0 (static), and the potential/
-acceleration scale as 1/d. → **KNOWN GR-LIKE** (lensing/expansion), **TQM-SPECIFIC** (1/d scaling).
+acceleration scale as 1/d. → **KNOWN GR-LIKE** (lensing/expansion), **AT-SPECIFIC** (1/d scaling).
 
 ---
 
@@ -55,13 +55,13 @@ acceleration scale as 1/d. → **KNOWN GR-LIKE** (lensing/expansion), **TQM-SPEC
 The ρ-only Einstein structure yields a **mixed** observable spectrum:
 
 - **KNOWN GR-LIKE**: the weak-field phenomenology — acceleration = −∇Φ, gravitational redshift = −ΔΦ,
-  lensing ∝ ΔΦ, expansion H = ρ̇/ρ — all follow with the effective potential Φ = (1/d)lnρ. TQM
+  lensing ∝ ΔΦ, expansion H = ρ̇/ρ — all follow with the effective potential Φ = (1/d)lnρ. AT
   reproduces the *form* of Newtonian/GR weak-field gravity.
-- **TQM-SPECIFIC**: (i) the curvature is an *algebraic* (not PDE-solved) function of ρ; (ii) the
+- **AT-SPECIFIC**: (i) the curvature is an *algebraic* (not PDE-solved) function of ρ; (ii) the
   Poisson source is the **curvature** (ρ″), not the density value; (iii) the potential and all
   observables carry the conformal-weight factor **1/d**.
 
-The decisive TQM-specific prediction is the **curvature-sourced Poisson equation**: the gravitational
+The decisive AT-specific prediction is the **curvature-sourced Poisson equation**: the gravitational
 source is the second-derivative (curvature) content of the actualization density, not the density's
 value — an observable difference from generic GR (ΔΦ = 4πGρ) that is testable in principle.
 
@@ -75,5 +75,5 @@ value — an observable difference from generic GR (ΔΦ = 4πGρ) that is testa
 | G4-O01 `G4_O01_AccelerationAndRedshift` | PASS (a=−∇Φ; redshift=−ΔΦ) |
 | G4-O02 `G4_O02_LensingExpansionAndDimension` | PASS (lensing ∝ ΔΦ; H=0; 1/d scaling) |
 
-Code: `TQM.Core/ResearchXH/PhysicalObservables.cs`;
-tests `TQM.Tests/ResearchXH/G4O_Phase0_PhysicalObservablesTests.cs`.
+Code: `AT.Core/ResearchXH/PhysicalObservables.cs`;
+tests `AT.Tests/ResearchXH/G4O_Phase0_PhysicalObservablesTests.cs`.

@@ -69,7 +69,7 @@ n_{1s} = (1-X_e)\, n_H$$
 | Differential equations | **1** ($dX_e/dz$) |
 | Algebraic (Saha IC) | 1 |
 | Quadratures ($\tau$) | 1 |
-| Free TQM parameters | **0** (all imported ΛCDM constants) |
+| Free AT parameters | **0** (all imported ΛCDM constants) |
 
 | Effort metric | Value |
 |---|---|
@@ -87,9 +87,9 @@ n_{1s} = (1-X_e)\, n_H$$
 | Saha | **Imported** | equilibrium ionization (Saha 1920) |
 | Peebles | **Imported** | non-equilibrium correction (Peebles 1968) |
 | $X_e(z)$ | **Imported** | standard recombination (now *implemented*) |
-| $z_*$ | **Imported → computable** | from $X_e(z)$ + optical depth; **not** TQM-derived |
+| $z_*$ | **Imported → computable** | from $X_e(z)$ + optical depth; **not** AT-derived |
 
-None of these is **Derived** from TQM primitives — recombination is standard
+None of these is **Derived** from AT primitives — recombination is standard
 ΛCDM physics. It was **Missing** before this audit and is now **Available**.
 
 ---
@@ -106,5 +106,5 @@ None of these is **Derived** from TQM primitives — recombination is standard
 - **Next step toward θ\***: integrate $r_s = \int c_s\, dt$ (sound speed $c_s$ is
   imported; $H(z)$ already available) — the photon–baryon fluid is *not* required.
 
-**Sources:** `TQM.Core/ResearchDATA/RecombinationAnalyzer.cs`,
-`TQM.Tests/ResearchDATA/TQM_RecombinationAudit.cs`.
+**Sources:** `AT.Core/ResearchDATA/RecombinationAnalyzer.cs`,
+`AT.Tests/ResearchDATA/AT_RecombinationAudit.cs`.

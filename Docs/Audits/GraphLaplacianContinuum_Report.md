@@ -1,6 +1,6 @@
 # L_Q → Flat Laplacian — Verification Report
 
-**Test:** `TQM.Tests/ResearchQG/GraphLaplacianContinuumTests.cs`
+**Test:** `AT.Tests/ResearchQG/GraphLaplacianContinuumTests.cs`
 **Method:** `GraphLaplacian_ConvergesToFlatLaplacian()`
 **Result:** **PASSED** (1/1).
 

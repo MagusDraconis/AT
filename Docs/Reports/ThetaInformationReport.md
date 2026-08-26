@@ -1,10 +1,10 @@
-# TQM-129: Information Transport in the Θ Field
+# AT-129: Information Transport in the Θ Field
 
 ## Executive Summary
 
 **Classification: D — Autonomous Information Field**
 
-TQM-129 determines whether the emergent collective Θ field can
+AT-129 determines whether the emergent collective Θ field can
 transport recoverable information. Transmission experiments across
 5 densities, 5 distances, and 4 encoding methods confirm:
 

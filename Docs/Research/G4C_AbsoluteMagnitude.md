@@ -74,4 +74,4 @@ the t → 0 asymptotic (or a per-n recalibration), which is left open.
 | G4-C51 `G4_C51_CalibratedAccuracy` | PASS (local 2.1 %; global ordinal 26.6 %) |
 | G4-C52 `G4_C52_RelativeErrorDecreasesUnderRefinement` | PASS (documents non-convergence) |
 
-Code: `TQM.Tests/ResearchXH/G4C_Phase5_AbsoluteMagnitudeTests.cs` (uses `CurvatureField` from G4-D).
+Code: `AT.Tests/ResearchXH/G4C_Phase5_AbsoluteMagnitudeTests.cs` (uses `CurvatureField` from G4-D).

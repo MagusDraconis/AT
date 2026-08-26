@@ -1,8 +1,8 @@
 # Hostile Review Response Audit
 
-**Goal:** objectively evaluate the hostile review of `TQM_v1_0_Paper.md`.
-**Inputs:** `Docs/Papers/TQM_v1_0_Paper.md`, `Docs/Papers/HostileReview.txt`.
-**Rules:** do not automatically defend TQM; admit valid criticism; distinguish **theory
+**Goal:** objectively evaluate the hostile review of `AT_v1_0_Paper.md`.
+**Inputs:** `Docs/Papers/AT_v1_0_Paper.md`, `Docs/Papers/HostileReview.txt`.
+**Rules:** do not automatically defend AT; admit valid criticism; distinguish **theory
 gaps** (real limitations) from **documentation gaps** (fixable in the paper); use only
 accepted audits and paper content; no new physics, no new derivations.
 
@@ -41,8 +41,8 @@ actually contains) plus **framing overstatements**, not fatal theory flaws. See 
 - **Evidence from paper:** §2 gives only one-line roles; no formal definitions.
 - **Response:** **Valid documentation gap.** The paper is a synthesis and does not carry
   the formal content. $Q$ *does* have a mathematical realization in the program (graph
-  Laplacian $L_Q$ = tight-binding identity, TQM-142; Schrödinger from Q + reversibility,
-  TQM-149–151). Random Actualization is an **admitted assumption** (A-03), not a derived
+  Laplacian $L_Q$ = tight-binding identity, AT-142; Schrödinger from Q + reversibility,
+  AT-149–151). Random Actualization is an **admitted assumption** (A-03), not a derived
   object — so "verbalism" is fair for the *primitive*, but it is *by design* a primitive.
 - **Required fix:** add a formal-primitives section (axioms for $Q$; state Random
   Actualization as assumption A-03) or reference `Docs/Theory/02`, `03_Q_Theory.md`.
@@ -52,7 +52,7 @@ actually contains) plus **framing overstatements**, not fatal theory flaws. See 
   electromagnetism; binary/tri-defects are post-hoc labeling.
 - **Evidence from paper:** §5 lists $U(1)$ "DERIVED (0.95)" via $\mathrm{Aut}(S^1)=U(1)$.
 - **Response:** **Partially valid.** The reviewer correctly demands a scope statement:
-  TQM derives the gauge-group *structure* (which group), **not** the gauge *dynamics*
+  AT derives the gauge-group *structure* (which group), **not** the gauge *dynamics*
   (Maxwell / Yang–Mills actions — the 8-gluon algebra is borrowed, A-07). The paper
   overstates by omitting this. But "merely naming" understates: deriving that $U(1)$ is
   *the* winding/isometry group of $S^1$ explains *why $U(1)$ and not another abelian
@@ -111,7 +111,7 @@ actually contains) plus **framing overstatements**, not fatal theory flaws. See 
 - **Reviewer claim:** the split absorbs every failure by declaring content DRAWN.
 - **Evidence from paper:** §3 defines the split.
 - **Response:** **Partially valid, but the "pure immunization" part is invalid.** The split
-  *can* be abused, and the paper should show what would falsify it. But TQM has made
+  *can* be abused, and the paper should show what would falsify it. But AT has made
   **falsifiable and actually-falsified** predictions (neutrino-Koide, Phase 155) plus live
   zero-parameter predictions (RAR $g_\dagger=cH_0/2\pi$; $w(z)=-1+0.015(1+z)^{3/2}$), so
   it is **not** unfalsifiable.
@@ -126,8 +126,8 @@ actually contains) plus **framing overstatements**, not fatal theory flaws. See 
   English phrases."
 - **Evidence from paper:** the paper contains **no** dynamical system (it is a
   classification/derivation synthesis).
-- **Response:** **Valid against the paper, invalid against TQM.** The program *does* have a
-  dynamical system — graph Laplacian $L_Q$ → tight-binding → Schrödinger (TQM-142, 149–151),
+- **Response:** **Valid against the paper, invalid against AT.** The program *does* have a
+  dynamical system — graph Laplacian $L_Q$ → tight-binding → Schrödinger (AT-142, 149–151),
   plus the Resonance simulation engine. The paper omits it entirely. This is the single
   largest documentation gap.
 - **Required fix:** add a "dynamical content" section (or explicit cross-reference) so the
@@ -170,7 +170,7 @@ actually contains) plus **framing overstatements**, not fatal theory flaws. See 
   foreground** the quantitative predictions.
 - **Response:** **Partially valid, but the core claim is invalid.** It is true that
   contingent *content* is not predicted. It is **false** that there are zero novel
-  quantitative predictions: TQM predicts the RAR with **zero free parameters**
+  quantitative predictions: AT predicts the RAR with **zero free parameters**
   ($g_\dagger=cH_0/2\pi\approx1.05\times10^{-10}$), a specific $w(z)$, the log-normal
   abundance form, and $N\ge3$; and it *was* falsified once (neutrino-Koide), so it **can**
   be wrong.

@@ -1,8 +1,8 @@
 # Einstein Tensor Integration Program — Report
 
-**Test file:** `TQM.Tests/ResearchXC/EinsteinTensorIntegrationTests.cs`
+**Test file:** `AT.Tests/ResearchXC/EinsteinTensorIntegrationTests.cs`
 **Result:** **PASSED (4/4).**
-**Minimum code added:** `TQM.Core/ResearchXC/EinsteinTensorBuilder.cs` (~200 lines, standard
+**Minimum code added:** `AT.Core/ResearchXC/EinsteinTensorBuilder.cs` (~200 lines, standard
 differential geometry).
 
 ---
@@ -44,13 +44,13 @@ inversion. The two analyzers need only ~5 lines each to call it.
 
 ## The integration boundary (what still cannot be integrated)
 
-The builder takes a **metric field $g_{\mu\nu}(x)$ as input**. TQM has **no native metric
+The builder takes a **metric field $g_{\mu\nu}(x)$ as input**. AT has **no native metric
 field** — $g_{\mu\nu}$ arrives only via the *external* Malament/Hawking–King–McCarthy theorem
 (`GrBridgeAnalyzer.AuditBridgeSteps`, tier 1, "External theorem"). Therefore:
 
 - **Computable today:** the chain *after* a metric is supplied (the whole point of this program).
 - **Not computable today:** the *source* of the metric from Q-events — that remains the
-  external causal-set reconstruction, not TQM code.
+  external causal-set reconstruction, not AT code.
 
 ## Integration roadmap
 
@@ -58,11 +58,11 @@ field** — $g_{\mu\nu}$ arrives only via the *external* Malament/Hawking–King
 2. **Next (mechanical):** add a computed column to `GeoStep` output so the string claims are
    backed by `EinsteinTensorBuilder` values for any supplied metric.
 3. **Blocked (scientific):** a *native* metric field $g_{\mu\nu}$ derived from Q-event counting
-   (Myrheim/BDG) — without it, the builder is fed an external metric, not a TQM one.
+   (Myrheim/BDG) — without it, the builder is fed an external metric, not a AT one.
 
 ## Conclusion
 
 Yes — the tested chain **can** be integrated. The minimum code is ~200 lines and is now
 implemented and verified. Integration is **mechanical** at the analyzer level but remains
 **blocked** at the one genuinely open step: producing $g_{\mu\nu}$ from Q-events (external
-theorem, not TQM-native).
+theorem, not AT-native).

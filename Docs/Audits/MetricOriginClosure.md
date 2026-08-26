@@ -1,6 +1,6 @@
 # Metric Origin Closure Audit — Report
 
-**Test file:** `TQM.Tests/ResearchXC/MetricOriginTests.cs`
+**Test file:** `AT.Tests/ResearchXC/MetricOriginTests.cs`
 **Result:** **PASSED (3/3).**
 
 ---
@@ -19,8 +19,8 @@
 
 | Link | Status | Nature |
 |---|---|---|
-| Q-events | **NATIVE** | TQM-derived primitive |
-| Causal order | **NATIVE** | TQM-derived (precedence from individuation) |
+| Q-events | **NATIVE** | AT-derived primitive |
+| Causal order | **NATIVE** | AT-derived (precedence from individuation) |
 | Conformal class (order → light cone → class) | **IMPORTED** | Malament 1977 / Hawking–King–McCarthy 1976 — **PROVEN** |
 | Conformal factor (counting measure) | **NATIVE** | reconstructed in MetricEmergenceProgram |
 | Full $g_{\mu\nu}$ | **determined** | class × factor — closed |
@@ -33,7 +33,7 @@
 
 > "The causal set → manifold reconstruction theorem (Malament 1977, Hawking-King-McCarthy 1976)
 > shows that the causal order plus volume element determines the metric up to conformal factor.
-> TQM does not re-derive this. Imported from mathematical relativity."
+> AT does not re-derive this. Imported from mathematical relativity."
 
 The audit confirms this is **correct and sufficient**:
 
@@ -56,6 +56,6 @@ The audit confirms this is **correct and sufficient**:
 
 The residual gaps identified in the prior audits (MetricGenerationAudit, MetricEmergenceProgram,
 ConformalStructureProgram) are therefore **not** theory gaps — they are the legitimate,
-already-proven Malament reconstruction that TQM imports. The only genuine open item, if any, is
+already-proven Malament reconstruction that AT imports. The only genuine open item, if any, is
 the *preference* to re-derive Malament natively, which is a research taste, not a correctness
 requirement.

@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Generate Docs/TQMQG_Predictions.md and Docs/TQMQG_Predictions.json.
+"""Generate Docs/ATQG_Predictions.md and Docs/ATQG_Predictions.json.
 
 The IMMUTABLE registry of the three pre-registered predictions (QG190/191/192).
 Run:  python Tools/build_predictions_registry.py
@@ -10,8 +10,8 @@ import json, os, sys
 
 sys.stdout.reconfigure(encoding='utf-8')
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-MD = os.path.join(ROOT, "Docs", "TQMQG_Predictions.md")
-JSON = os.path.join(ROOT, "Docs", "TQMQG_Predictions.json")
+MD = os.path.join(ROOT, "Docs", "ATQG_Predictions.md")
+JSON = os.path.join(ROOT, "Docs", "ATQG_Predictions.json")
 
 REGISTRY = [
     {
@@ -59,21 +59,21 @@ def outcome_text(outcome):
 # ── JSON (machine-readable) ───────────────────────────────────────────────────────
 with open(JSON, "w", encoding="utf-8") as f:
     json.dump({
-        "title": "TQM-QG Prediction Registry",
+        "title": "AT-QG Prediction Registry",
         "immutable": True,
         "rule": "No future phase may modify a registered prediction. Only CONFIRMED, DISFAVORED, FALSIFIED may be added later.",
-        "locked_by": "TQM-QG Phase 193",
+        "locked_by": "AT-QG Phase 193",
         "predictions": REGISTRY,
     }, f, ensure_ascii=False, indent=2)
     f.write("\n")
 
 # ── Markdown (human-readable) ────────────────────────────────────────────────────
 with open(MD, "w", encoding="utf-8") as f:
-    f.write("# TQM-QG Prediction Registry\n\n")
-    f.write("**Immutable.** Locked by TQM-QG Phase 193 (Prediction Registry Lock).\n\n")
+    f.write("# AT-QG Prediction Registry\n\n")
+    f.write("**Immutable.** Locked by AT-QG Phase 193 (Prediction Registry Lock).\n\n")
     f.write("> **Rule:** No future phase may modify a registered prediction. Only **CONFIRMED**, "
             "**DISFAVORED**, **FALSIFIED** may be added later (as the outcome).\n\n")
-    f.write("Machine-readable twin: `Docs/TQMQG_Predictions.json`.\n\n")
+    f.write("Machine-readable twin: `Docs/ATQG_Predictions.json`.\n\n")
     f.write("---\n\n")
     for p in REGISTRY:
         f.write(f"## {p['id']} — {p['name']}\n\n")

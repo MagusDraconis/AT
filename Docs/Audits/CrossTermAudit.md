@@ -81,5 +81,5 @@ slightly improves $D_{\ell_3}/D_{\ell_1}$ (0.60 → 0.62 vs Planck 0.68), but th
 rarefaction peak requires the full line-of-sight projection. No new physics is
 needed — only the next computational module.
 
-**Sources:** `TQM.Core/ResearchDATA/PeakHeightAnalyzer.cs` (`CrossTermWeight`,
-`DopplerProjectionWeight`, `FindAcousticPeaks`), `TQM.Tests/ResearchDATA/TQM_CrossTermAudit.cs`.
+**Sources:** `AT.Core/ResearchDATA/PeakHeightAnalyzer.cs` (`CrossTermWeight`,
+`DopplerProjectionWeight`, `FindAcousticPeaks`), `AT.Tests/ResearchDATA/AT_CrossTermAudit.cs`.

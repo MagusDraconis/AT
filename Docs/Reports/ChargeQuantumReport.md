@@ -1,10 +1,10 @@
-# TQM-120: Minimal Charge Quantum
+# AT-120: Minimal Charge Quantum
 
 ## Executive Summary
 
 **Classification: D — Fundamental Charge Quantum**
 
-TQM-120 determines whether the topological charge Q is truly fundamental
+AT-120 determines whether the topological charge Q is truly fundamental
 or emerges from a deeper microscopic quantity. After exhaustive
 fragmentation attempts using five distinct methods, the verdict is:
 
@@ -16,9 +16,9 @@ topological charge. The charge quantum is Q=+1 = one kink-antikink pair.
 Q = #{connected components where R(x)>0.5} is currently defined as
 the condensate count. It is:
 - Integer-valued (Q ∈ ℕ)
-- Conserved under PDE evolution (TQM-116)
+- Conserved under PDE evolution (AT-116)
 - Additive: Q(A∪B) = Q(A) + Q(B)
-- Created in kink-antikink pairs (TQM-118)
+- Created in kink-antikink pairs (AT-118)
 
 The question: can Q be decomposed into smaller, more fundamental pieces?
 
@@ -103,7 +103,7 @@ The synthetic 2-condensate field has:
 Q(T) is CONSTANT across all thresholds T∈[0.10, 0.90]:
 - Q does not change as T varies
 - This is the signature of a genuine topological invariant
-- The charge is threshold-independent (confirming TQM-115)
+- The charge is threshold-independent (confirming AT-115)
 
 ## 6. Why Q Is Fundamental
 
@@ -150,7 +150,7 @@ in the reaction-diffusion field theory.
 - **Particle interpretation**: Each Q=+1 is an elementary "particle"
   — a topologically protected soliton.
 - **Charge is emergent from topology, not imposed**: Q follows
-  inevitably from the PDE structure (TQM-117), not from any
+  inevitably from the PDE structure (AT-117), not from any
   external definition.
 - **No "preon" or sub-charge**: There is nothing smaller than Q=+1.
   The kink-antikink pair is indivisible.
@@ -162,10 +162,10 @@ in the reaction-diffusion field theory.
 
 | Experiment | Finding |
 |-----------|---------|
-| TQM-113 | Q = condensate count (definition) |
-| TQM-115 | Q plateau (threshold independence) |
-| TQM-116 | Q dynamics (conservation) |
-| TQM-117 | Q origin (derived from PDE) |
-| TQM-118 | Q creation (nucleation) |
-| TQM-119 | Q statistics (distribution) |
-| TQM-120 | Q is fundamental (this work) |
+| AT-113 | Q = condensate count (definition) |
+| AT-115 | Q plateau (threshold independence) |
+| AT-116 | Q dynamics (conservation) |
+| AT-117 | Q origin (derived from PDE) |
+| AT-118 | Q creation (nucleation) |
+| AT-119 | Q statistics (distribution) |
+| AT-120 | Q is fundamental (this work) |

@@ -1,4 +1,4 @@
-# Rubin/LSST — TQM Observational Status Report
+# Rubin/LSST — AT Observational Status Report
 
 **Experiment:** Vera C. Rubin Observatory / Legacy Survey of Space and Time
 **Agency / Collaboration:** NSF / DOE (USA) + international partners
@@ -16,12 +16,12 @@
 | **Scientific Goal** | 10-year wide-field optical survey. Primary science: dark energy (via weak lensing, BAO, SNe Ia, clusters), dark matter (via strong lensing, stellar streams), solar system inventory, transient phenomena. |
 | **Operational Status** | Under construction. First light expected 2024–2025. Full survey operations: 2025–2035. |
 | **Major Data Releases** | Annual data releases starting ~2026. DR1: ~2026. Full 10-year dataset: ~2035. |
-| **Relevance to TQM** | Rubin/LSST tests multiple TQM predictions: (1) a₀ ≈ cH₀ from galaxy dynamics across cosmic time, (2) correlation-induced effective gravity in galaxies, (3) weak lensing mass maps — can distinguish correlation gravity from particle DM, (4) H₀ from strong lensing time delays (relevant to Λ(t) cosmology). |
-| **TQM Priority** | **MEDIUM — Multi-prediction test.** |
+| **Relevance to AT** | Rubin/LSST tests multiple AT predictions: (1) a₀ ≈ cH₀ from galaxy dynamics across cosmic time, (2) correlation-induced effective gravity in galaxies, (3) weak lensing mass maps — can distinguish correlation gravity from particle DM, (4) H₀ from strong lensing time delays (relevant to Λ(t) cosmology). |
+| **AT Priority** | **MEDIUM — Multi-prediction test.** |
 
 ---
 
-## 2. TQM Predictions Tested
+## 2. AT Predictions Tested
 
 | Prediction | Program | Confidence | Observable | Expected Signal |
 |-----------|:--:|:--:|------------|-----------------|
@@ -34,7 +34,7 @@
 
 ## 3. Current Observational Status
 
-| Prediction | Current Measurement | Uncertainty | TQM Expectation | Agreement |
+| Prediction | Current Measurement | Uncertainty | AT Expectation | Agreement |
 |-----------|---------------------|-------------|-----------------|:--:|
 | a₀ at z=0 (SPARC) | a₀ ≈ 1.2×10⁻¹⁰ m/s² | ~20% | cH₀/(2π) ≈ 1.0×10⁻¹⁰ | **Consistent** (factor ~1.2) |
 | a₀ at z>0 | No measurement | — | Larger a₀ at higher z | **Awaiting data** |
@@ -45,9 +45,9 @@
 
 ## 4. Falsification Criteria
 
-| Outcome | Threshold | TQM Status |
+| Outcome | Threshold | AT Status |
 |---------|:--:|------------|
-| **A: Supports TQM** | a₀ shown to increase with H(z) at z~1–2; H₀ confirmed at ~73 | Correlation gravity strengthened. Λ → a₀ link validated. |
+| **A: Supports AT** | a₀ shown to increase with H(z) at z~1–2; H₀ confirmed at ~73 | Correlation gravity strengthened. Λ → a₀ link validated. |
 | **B: Creates tension** | a₀ constant across cosmic time at >2σ | Λ → a₀ link in tension. |
 | **C: Requires revision** | a₀ ≠ f(H₀) demonstrated at >3σ | Model Update: correlation gravity decoupled from Λ. |
 | **D: Falsifies sector** | Weak lensing + dynamics definitively favor NFW particle DM at all scales | Correlation gravity insufficient; particle DM required. |
@@ -100,13 +100,13 @@
 
 ## 8. Hostile Audit
 
-*Assuming TQM is wrong: what would Rubin/LSST most likely reveal?*
+*Assuming AT is wrong: what would Rubin/LSST most likely reveal?*
 
-The most likely outcome is that a₀ is constant across cosmic time — consistent with the empirical MOND interpretation, not with TQM's Λ → a₀ link. If a₀ is a fundamental acceleration scale, it should NOT evolve with H(z).
+The most likely outcome is that a₀ is constant across cosmic time — consistent with the empirical MOND interpretation, not with AT's Λ → a₀ link. If a₀ is a fundamental acceleration scale, it should NOT evolve with H(z).
 
-The correlation gravity prediction — that galaxy dynamics follow correlation-induced effective mass rather than particle DM halos — is difficult to falsify cleanly because both models can fit the data with different parameter choices. Rubin/LSST's weak lensing maps may distinguish them at the cluster scale, where TQM predicts a mass deficit (correlation gravity weaker at cluster accelerations) compared to ΛCDM.
+The correlation gravity prediction — that galaxy dynamics follow correlation-induced effective mass rather than particle DM halos — is difficult to falsify cleanly because both models can fit the data with different parameter choices. Rubin/LSST's weak lensing maps may distinguish them at the cluster scale, where AT predicts a mass deficit (correlation gravity weaker at cluster accelerations) compared to ΛCDM.
 
-The H₀ tension resolution (H₀ ≈ 73 from strong lensing vs 67 from CMB) may be resolved in either direction by Rubin's large sample of time-delay lenses. If the true H₀ is 67, TQM's explanation fails. If 73, TQM gains support — but other models also predict higher H₀.
+The H₀ tension resolution (H₀ ≈ 73 from strong lensing vs 67 from CMB) may be resolved in either direction by Rubin's large sample of time-delay lenses. If the true H₀ is 67, AT's explanation fails. If 73, AT gains support — but other models also predict higher H₀.
 
 ---
 
@@ -122,7 +122,7 @@ The a₀ ≈ cH₀ prediction is consistent at z=0 but the crucial test — whet
 | Experimental capability | **Good** — Rubin will provide large galaxy samples across cosmic time |
 | Current tension | None |
 | Timeline to decision | ~4–5 years for a₀(H(z)), ~4 years for H₀ |
-| Overall | **Promising multi-prediction test.** Distinctive but not unique to TQM. |
+| Overall | **Promising multi-prediction test.** Distinctive but not unique to AT. |
 
 ---
 

@@ -1,4 +1,4 @@
-# TQM-142 Origin of the Theta Operator
+# AT-142 Origin of the Theta Operator
 
 ## SCIENTIFIC REPORT
 
@@ -16,10 +16,10 @@ L is the graph Laplacian of the Q charge interaction network.
 
 ---
 
-## 1. TQM-140/141 Recap
+## 1. AT-140/141 Recap
 
-TQM-140: L·v_k = λ_k·v_k → 10 eigenmodes ≈ information species.
-TQM-141: Species = eigenmodes + linear pairs.
+AT-140: L·v_k = λ_k·v_k → 10 eigenmodes ≈ information species.
+AT-141: Species = eigenmodes + linear pairs.
 Open: WHERE DOES L COME FROM?
 
 ---
@@ -48,7 +48,7 @@ As Q → ∞ on a 1D chain with spacing Δx = 1/Q:
 
 **L_Q → -(1/ρ²)·d²/dx²**  (continuum Laplacian)
 
-Discretizing at N points gives the Theta operator L from TQM-140.
+Discretizing at N points gives the Theta operator L from AT-140.
 
 ### 2.4 The Identity
 
@@ -92,13 +92,13 @@ L_Q (discrete operator)
     ↓  continuum limit Q→∞
 -(1/ρ²)·d²/dx² (continuum Laplacian)
     ↓  discretize at N points
-L (Theta operator, TQM-140)
+L (Theta operator, AT-140)
     ↓  eigenvalue problem
 {λ_k, v_k} (eigenmodes)
     ↓  stable modes
-Information species (TQM-133/138/139)
+Information species (AT-133/138/139)
     ↓  reproduction + selection
-Darwinian evolution (TQM-134/135/136/137)
+Darwinian evolution (AT-134/135/136/137)
 ```
 
 **THE ENTIRE THETA HIERARCHY REDUCES TO Q-Q INTERACTIONS.**
@@ -146,5 +146,5 @@ The entire fourteen-level Theta hierarchy reduces to Q-Q interactions.
 
 ---
 
-*Experiment TQM-142 completed. L derived from Q with 100% spectral identity.*
+*Experiment AT-142 completed. L derived from Q with 100% spectral identity.*
 *The entire Theta hierarchy originates from Q-Q charge interactions.*

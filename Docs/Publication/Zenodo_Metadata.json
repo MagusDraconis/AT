@@ -1,10 +1,10 @@
 {
   "metadata": {
     "title": "THE Q-MODEL — From Q to Cosmology: A Theory of Structure, Complexity and Random Actualization (Version 1.0, revised)",
-    "description": "THE Q-MODEL (TQM) is a theory of structure and content that compresses observable physics to four primitives — the individuation principle Q, Random Actualization, the scale triad (l, tau, hbar), and a single continuous nonlinearity parameter M^2 — and holds that the form of every structure is derivable from these primitives while the content (specific masses, couplings, multiplicities, the Koide angle) is realized by contingent draw. The derivation program yields U(1) as a theorem, spatial dimensionality d=3+1, the multiplicity lower bound N>=3, the log-normal abundance law, and phase-gradient gravity whose leading order is the Einstein equations. The dynamical layer is the graph Laplacian L_Q, whose reversible dynamics yield the Schrodinger equation. The theory makes quantitative, falsifiable predictions (zero-parameter radial acceleration, a specific w(z), a time-varying Lambda(t), the log-normal abundance form), one of which (neutrino-Koide) was already falsified. Publication status: READY_FOR_WHITEPAPER — NOT_READY_FOR_JOURNAL.",
+    "description": "THE Q-MODEL (AT) is a theory of structure and content that compresses observable physics to four primitives — the individuation principle Q, Random Actualization, the scale triad (l, tau, hbar), and a single continuous nonlinearity parameter M^2 — and holds that the form of every structure is derivable from these primitives while the content (specific masses, couplings, multiplicities, the Koide angle) is realized by contingent draw. The derivation program yields U(1) as a theorem, spatial dimensionality d=3+1, the multiplicity lower bound N>=3, the log-normal abundance law, and phase-gradient gravity whose leading order is the Einstein equations. The dynamical layer is the graph Laplacian L_Q, whose reversible dynamics yield the Schrodinger equation. The theory makes quantitative, falsifiable predictions (zero-parameter radial acceleration, a specific w(z), a time-varying Lambda(t), the log-normal abundance form), one of which (neutrino-Koide) was already falsified. Publication status: READY_FOR_WHITEPAPER — NOT_READY_FOR_JOURNAL.",
     "keywords": [
       "THE Q-MODEL",
-      "TQM",
+      "AT",
       "emergence",
       "quantum foundations",
       "causal set theory",
@@ -45,6 +45,6 @@
         "scheme": "url"
       }
     ],
-    "notes": "Publication status: READY_FOR_WHITEPAPER — NOT_READY_FOR_JOURNAL. The central derivation claim (Einstein recovery from Q-events) remains logical, not mathematical: the metric and the BDG action are imported, G = l^2 c^3 / hbar is dimensional analysis, and no unique sharp prediction yet discriminates TQM from SM + LambdaCDM. See Docs/Audits/PublicationReadiness_Final.md."
+    "notes": "Publication status: READY_FOR_WHITEPAPER — NOT_READY_FOR_JOURNAL. The central derivation claim (Einstein recovery from Q-events) remains logical, not mathematical: the metric and the BDG action are imported, G = l^2 c^3 / hbar is dimensional analysis, and no unique sharp prediction yet discriminates AT from SM + LambdaCDM. See Docs/Audits/PublicationReadiness_Final.md."
   }
 }

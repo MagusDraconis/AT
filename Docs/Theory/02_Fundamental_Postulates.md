@@ -1,8 +1,8 @@
 # 2. Fundamental Postulates
 
-## The Irreducible Foundation of TQM
+## The Irreducible Foundation of AT
 
-After TQM-154, the TQM framework rests on **4 irreducible postulates**.
+After AT-154, the AT framework rests on **4 irreducible postulates**.
 
 ---
 
@@ -27,7 +27,7 @@ After TQM-154, the TQM framework rests on **4 irreducible postulates**.
 
 **Limitations**: Q must form a locally connected graph for the full hierarchy to emerge. Random and scale-free graphs lack discrete eigenmodes.
 
-**Source**: TQM-117 through TQM-122 (Q theory), TQM-142 (Q → L_Q), TQM-143 (geometry universality).
+**Source**: AT-117 through AT-122 (Q theory), AT-142 (Q → L_Q), AT-143 (geometry universality).
 
 ---
 
@@ -55,7 +55,7 @@ For real M: M^T = -M (antisymmetric). The simplest 2×2 antisymmetric matrix is 
 
 **Limitations**: Does NOT determine which of the mathematically equivalent dynamics (diffusion ∂u/∂t = -L_Q u vs. Schrödinger i∂ψ/∂t = L_Q ψ) nature chooses. The choice is the postulate.
 
-**Source**: TQM-149 (Schrödinger), TQM-150 (origin of i), TQM-151 (origin of J), TQM-152 (norm irreducibility).
+**Source**: AT-149 (Schrödinger), AT-150 (origin of i), AT-151 (origin of J), AT-152 (norm irreducibility).
 
 ---
 
@@ -79,7 +79,7 @@ Only exponent 2 satisfies P_0 + P_1 = 1 for all superpositions.
 
 **Limitations**: Gleason's theorem requires additivity for orthogonal projectors. Why should quantum probabilities be additive in this way? The Born rule is mathematically unique given additivity, but additivity is not derived.
 
-**Source**: TQM-153.
+**Source**: AT-153.
 
 ---
 
@@ -99,9 +99,9 @@ Only exponent 2 satisfies P_0 + P_1 = 1 for all superpositions.
 - How a particular outcome is selected
 - The mechanism of wavefunction collapse
 
-**Confidence**: LOW. This is the deepest unsolved problem in quantum foundations. No theory (TQM, Copenhagen, many-worlds, Bohmian, etc.) has provided a universally accepted solution.
+**Confidence**: LOW. This is the deepest unsolved problem in quantum foundations. No theory (AT, Copenhagen, many-worlds, Bohmian, etc.) has provided a universally accepted solution.
 
-**Source**: TQM-154.
+**Source**: AT-154.
 
 ---
 
@@ -110,8 +110,8 @@ Only exponent 2 satisfies P_0 + P_1 = 1 for all superpositions.
 | Framework | Postulates | Notes |
 |-----------|-----------|-------|
 | Standard QM | ~5 | Hilbert space, operators, Schrödinger, Born, measurement |
-| TQM | 4 | Q exists, reversible dynamics, Born rule, measurement |
-| TQM advantage | Hilbert space + Schrödinger DERIVED from postulates 1-2 | |
+| AT | 4 | Q exists, reversible dynamics, Born rule, measurement |
+| AT advantage | Hilbert space + Schrödinger DERIVED from postulates 1-2 | |
 
 ---
 
@@ -132,4 +132,4 @@ Only exponent 2 satisfies P_0 + P_1 = 1 for all superpositions.
 
 ---
 
-*TQM-155: Fundamental Postulates. August 2026.*
+*AT-155: Fundamental Postulates. August 2026.*

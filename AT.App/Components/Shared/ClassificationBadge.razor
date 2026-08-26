@@ -1,0 +1,30 @@
+@namespace AT.App.Components.Shared
+@using AT.App.Models
+
+<span class="badge @CssClass">@Label</span>
+
+@code {
+    [Parameter] public ClassificationKind Kind { get; set; }
+
+    private string Label => Kind switch
+    {
+        ClassificationKind.Derived => "DERIVED",
+        ClassificationKind.RealUnderived => "REAL-UNDERIVED",
+        ClassificationKind.Drawn => "DRAWN",
+        ClassificationKind.Falsified => "FALSIFIED",
+        ClassificationKind.Imported => "IMPORTED",
+        ClassificationKind.Partial => "PARTIAL",
+        _ => Kind.ToString().ToUpperInvariant()
+    };
+
+    private string CssClass => Kind switch
+    {
+        ClassificationKind.Derived => "badge-derived",
+        ClassificationKind.RealUnderived => "badge-real",
+        ClassificationKind.Drawn => "badge-drawn",
+        ClassificationKind.Falsified => "badge-falsified",
+        ClassificationKind.Imported => "badge-imported",
+        ClassificationKind.Partial => "badge-partial",
+        _ => "badge-neutral"
+    };
+}

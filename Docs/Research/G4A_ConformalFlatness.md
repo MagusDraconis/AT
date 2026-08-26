@@ -79,5 +79,5 @@ does the job. This downgrades conformal flatness from a load-bearing axiom (foun
 | G4-A11 `G4_A11_MinimumCurvature` | PASS (R² minimized at η) |
 | G4-A12 `G4_A12_StabilityClassification` | PASS (PREFERRED, DERIVED-conditional) |
 
-Code: `TQM.Core/ResearchXH/MetricAnsatzAudit.cs` (added `ReferenceRicciScalar`);
-tests `TQM.Tests/ResearchXH/G4A_Phase1_ConformalFlatnessTests.cs`.
+Code: `AT.Core/ResearchXH/MetricAnsatzAudit.cs` (added `ReferenceRicciScalar`);
+tests `AT.Tests/ResearchXH/G4A_Phase1_ConformalFlatnessTests.cs`.

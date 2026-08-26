@@ -1,7 +1,7 @@
 # G4-ME Phase 5 — Derive Deficit Matter
 
 **Program:** G4 — Native Metric-to-Operator Coupling (branch G4-ME)
-**Phase:** 5 — can deficit matter m = ρ̄ − ρ emerge uniquely from TQM principles?
+**Phase:** 5 — can deficit matter m = ρ̄ − ρ emerge uniquely from AT principles?
 **Status:** COMPLETED — 3/3 xUnit tests pass (18/18 G4-ME)
 **Constraint:** no imported matter sector, no Einstein equations, no new primitives
 
@@ -10,7 +10,7 @@
 ## 1. Goal
 
 Matter is currently *defined* as m = ρ̄ − ρ (the density deficit). Here we test whether that definition
-emerges **uniquely** from TQM principles — abundance conservation, normalization, positivity, excitation
+emerges **uniquely** from AT principles — abundance conservation, normalization, positivity, excitation
 structure — by comparing alternative matter definitions (m = f(ρ), gradient matter, curvature matter).
 Classify: DERIVED / PREFERRED / ASSUMED.
 
@@ -96,5 +96,5 @@ input that matter attracts.
 | G4-ME51 `G4_ME51_GradientSourceUniqueness` | PASS (a = +(1/d)∇m/ρ only for the deficit) |
 | G4-ME52 `G4_ME52_AlternativeDefinitionsClassification` | PASS (DERIVED) |
 
-Code: `TQM.Core/ResearchXH/PhysicalObservables.cs` (added `LogMatter`, `RatioMatter`,
-`GradientSourceResidual`); tests `TQM.Tests/ResearchXH/G4ME_Phase5_DeriveDeficitMatterTests.cs`.
+Code: `AT.Core/ResearchXH/PhysicalObservables.cs` (added `LogMatter`, `RatioMatter`,
+`GradientSourceResidual`); tests `AT.Tests/ResearchXH/G4ME_Phase5_DeriveDeficitMatterTests.cs`.

@@ -83,5 +83,5 @@ maximized" — i.e., the dynamical mechanism that enforces least-bias actualizat
 | G4-RHO11 `G4_RHO11_RgNotSelective` | PASS (all α are RG fixed points) |
 | G4-RHO12 `G4_RHO12_UniformityClassification` | PASS (DERIVED) |
 
-Code: `TQM.Core/ResearchXH/RhoDynamics.cs` (added `DeficitFractions`, `Entropy`, `Increments`,
-`CoarseGrainedAlpha`); tests `TQM.Tests/ResearchXH/G4RHO_Phase1_AlphaSelectionTests.cs`.
+Code: `AT.Core/ResearchXH/RhoDynamics.cs` (added `DeficitFractions`, `Entropy`, `Increments`,
+`CoarseGrainedAlpha`); tests `AT.Tests/ResearchXH/G4RHO_Phase1_AlphaSelectionTests.cs`.

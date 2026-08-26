@@ -1,4 +1,4 @@
-# TQM-083: Theory Compression Report
+# AT-083: Theory Compression Report
 
 ## Autonomous Theory Search Results
 
@@ -17,16 +17,16 @@
 
 | Variable | Justification |
 |----------|--------------|
-| **R** | Phase coherence order parameter. The fundamental conserved quantity (TQM-052). Captures phase-space structure. Essential for dR/dt prediction. |
-| **M** | Mean coupling strength. Compresses 97.7% of topology information (TQM-081). Effective dynamical field (TQM-082). Essential for both dR/dt and dM/dt prediction. |
+| **R** | Phase coherence order parameter. The fundamental conserved quantity (AT-052). Captures phase-space structure. Essential for dR/dt prediction. |
+| **M** | Mean coupling strength. Compresses 97.7% of topology information (AT-081). Effective dynamical field (AT-082). Essential for both dR/dt and dM/dt prediction. |
 
 ### Discarded (Redundant or External)
 
 | Variable | Reason for Discard |
 |----------|-------------------|
-| **V** (CouplingVariance) | Redundant — r(M,V) > 0.99 (TQM-081). No independent information. |
-| **S** (CouplingEntropy) | Redundant — r(M,S) > 0.99 (TQM-081). Measures same thing as M. |
-| **G** (SpectralGap) | Redundant — r(G, dR/dt) ≈ 0.11 (TQM-080). Negligible predictive power. |
+| **V** (CouplingVariance) | Redundant — r(M,V) > 0.99 (AT-081). No independent information. |
+| **S** (CouplingEntropy) | Redundant — r(M,S) > 0.99 (AT-081). Measures same thing as M. |
+| **G** (SpectralGap) | Redundant — r(G, dR/dt) ≈ 0.11 (AT-080). Negligible predictive power. |
 | **D** (MeanDegree) | Redundant — r(M,D) = 1.000. Identical to M in normalized networks. |
 | **C** (SpatialClustering) | Redundant — weakly correlated with dynamics. |
 
@@ -34,15 +34,15 @@
 
 | Quantity | Derivation | Source |
 |----------|-----------|--------|
-| **A** (Alignment) | A ≈ R² | TQM-075, R² = 0.942 |
-| **F_net** (Net Force) | F_net = A × ⟨f⟩ | TQM-074, R² = 0.989 |
-| **κ** (Curvature) | κ ∝ β | TQM-059, r = 0.932 |
+| **A** (Alignment) | A ≈ R² | AT-075, R² = 0.942 |
+| **F_net** (Net Force) | F_net = A × ⟨f⟩ | AT-074, R² = 0.989 |
+| **κ** (Curvature) | κ ∝ β | AT-059, r = 0.932 |
 
 ### External Parameters (Not State Variables)
 
 | Parameter | Reason |
 |-----------|--------|
-| **β** (Memory) | External, does not vary (TQM-061). Sets curvature but curvature does not drive motion (TQM-068). |
+| **β** (Memory) | External, does not vary (AT-061). Sets curvature but curvature does not drive motion (AT-068). |
 | **K** (Coupling strength) | System parameter. |
 | **λ** (Spatial decay) | System parameter. |
 | **N** (System size) | System parameter. |
@@ -90,7 +90,7 @@ dM/dt = β₀ + β₁·R + β₂·M
 ```
 Adj R² = 0.759
 
-Interpretation: M's evolution follows a linear law in (R, M). However, TQM-082 showed the full quadratic model (M, R, M², R², MR) is slightly better (Adj R² = 0.299 on temporal data vs 0.759 here on static data — the difference reflects static vs temporal prediction contexts).
+Interpretation: M's evolution follows a linear law in (R, M). However, AT-082 showed the full quadratic model (M, R, M², R², MR) is slightly better (Adj R² = 0.299 on temporal data vs 0.759 here on static data — the difference reflects static vs temporal prediction contexts).
 
 ---
 
@@ -100,7 +100,7 @@ Interpretation: M's evolution follows a linear law in (R, M). However, TQM-082 s
 β (fixed, external)
     ↓
 Curvature κ (static geometric property)
-    [does NOT drive motion — TQM-068]
+    [does NOT drive motion — AT-068]
 
 M (Mean Coupling — DYNAMICAL FIELD)
     ↓ strong (R² = 0.758)
@@ -121,13 +121,13 @@ R,M → dM/dt (weak, Adj R² = 0.299)
 
 **C: Unified Reduced Theory**
 
-The TQM system admits a compressed description with 2 state variables ({R, M}) that captures all known causal chains from TQM-044 through TQM-082. The compression is:
+The AT system admits a compressed description with 2 state variables ({R, M}) that captures all known causal chains from AT-044 through AT-082. The compression is:
 - 7 topology variables → 1 (M)
 - Identity + Energy → independent dimensions (not needed for dynamics)
 - Force + Alignment → derived from R
 - Memory → external parameter
 
-The remaining 30% of dM/dt variance (TQM-082) that is not explained by {R, M} may be:
+The remaining 30% of dM/dt variance (AT-082) that is not explained by {R, M} may be:
 - (a) Stochastic phase noise at finite N
 - (b) Higher-order spatial correlations beyond M
 - (c) A genuinely irreducible stochastic component
@@ -136,9 +136,9 @@ The remaining 30% of dM/dt variance (TQM-082) that is not explained by {R, M} ma
 
 ## Comparison to Physical Theories
 
-The 2-variable TQM theory has structural similarities to:
+The 2-variable AT theory has structural similarities to:
 
-| TQM | Thermodynamics | Fluid Dynamics | General Relativity |
+| AT | Thermodynamics | Fluid Dynamics | General Relativity |
 |-----|---------------|----------------|-------------------|
 | R (coherence) | T (temperature) | ρ (density) | — |
 | M (coupling) | P (pressure) | v (velocity) | Φ (potential) |

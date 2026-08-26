@@ -12,7 +12,7 @@ variations** alone?
 ## 1. Goal
 
 Test whether a **non-uniform event density** on an otherwise **flat** geometry produces
-spectral signatures that mimic genuine **curvature**. This probes the TQM-native chain
+spectral signatures that mimic genuine **curvature**. This probes the AT-native chain
 
 ```
 actualization rate ρ(x)  →  conformal factor f = ρ^(2/d)  →  conformally-flat metric g = f·η  →  curvature
@@ -35,7 +35,7 @@ established in `MetricEmergenceProgram.md`, and asks whether the *operator* spec
 
 The **only** difference between `UniformSquareGraph` and `VariableRateGraph` is the event
 density (counting measure) — same flat metric, same N=256, same Euclidean ε-threshold graph
-construction. Code: `TQM.Core/ResearchXH/UniformSquareGraph.cs`, `VariableRateGraph.cs`.
+construction. Code: `AT.Core/ResearchXH/UniformSquareGraph.cs`, `VariableRateGraph.cs`.
 
 ### 2.2 Observables
 
@@ -116,5 +116,5 @@ curvature.** The normalized Laplacian passes; the unnormalized Laplacian does no
 | G4-T01 `G4_T01_ObservablesComputeForAllGeometries` | PASS |
 | G4-T02 `G4_T02_RateVariationMimicsCurvatureOnlyInUnnormalizedOperator` | PASS |
 
-`TQM.Tests/ResearchXH/G4T_TimeRateTests.cs` (inherits `ResearchTestBase`, deterministic,
+`AT.Tests/ResearchXH/G4T_TimeRateTests.cs` (inherits `ResearchTestBase`, deterministic,
 `StringBuilder`-composed reports).

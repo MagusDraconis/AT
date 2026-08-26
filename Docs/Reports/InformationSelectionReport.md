@@ -1,4 +1,4 @@
-# TQM-135 Information Selection Under Resource Constraints
+# AT-135 Information Selection Under Resource Constraints
 
 ## SCIENTIFIC REPORT
 
@@ -13,23 +13,23 @@ experimental conditions. Species A (Uniform, lowest consumption) and B
 most vulnerable.
 
 **THE DARWINIAN TRIAD IS COMPLETE:**
-- ✓ Reproduction (TQM-134)
-- ✓ Variation (TQM-134)
-- ✓ Selection (TQM-135)
+- ✓ Reproduction (AT-134)
+- ✓ Variation (AT-134)
+- ✓ Selection (AT-135)
 
 The Theta information layer supports FULL DARWINIAN EVOLUTION.
-This bridges proto-matter to proto-life within the TQM framework.
+This bridges proto-matter to proto-life within the AT framework.
 
 ---
 
-## 1. TQM-134 Recap
+## 1. AT-134 Recap
 
-TQM-134 demonstrated the first two Darwinian pillars:
+AT-134 demonstrated the first two Darwinian pillars:
 - Reproduction: 132 successful events, H = 0.786 (strong inheritance)
 - Variation: μ = 0.214/generation mutation rate
 - Selection: NOT detected (no resource constraints applied)
 
-TQM-135 isolates and tests the third pillar by introducing explicit
+AT-135 isolates and tests the third pillar by introducing explicit
 resource constraints that create differential survival pressure.
 
 ---
@@ -104,7 +104,7 @@ Species D consumes **3.3×** more resources than species A.
 1. **Species A is the fittest** despite having only moderate reproduction rate (0.08).
    Its low resource consumption (5.8 total) gives it the highest efficiency (0.0138).
 
-2. **Species D has highest reproduction rate** (0.12, confirmed by TQM-134) but
+2. **Species D has highest reproduction rate** (0.12, confirmed by AT-134) but
    is penalized by its high resource consumption (19.0 total). Under constraints,
    its fitness is NEGATIVE (-0.041 selection coefficient).
 
@@ -170,9 +170,9 @@ The replicator equation (dx_i/dt = x_i·(f_i - ⟨f⟩)) did NOT fit well
 1. Population dynamics are MORE COMPLEX than simple fitness-gradient descent
 2. Stochastic effects (birth/death noise) dominate at small population sizes
 3. Resource dynamics (regeneration, depletion) create non-equilibrium effects
-4. The system has MEMORY (from TQM-130/134) that simple replicators cannot capture
+4. The system has MEMORY (from AT-130/134) that simple replicators cannot capture
 
-This is NOT a failure — it's a finding. The TQM selection dynamics are RICHER
+This is NOT a failure — it's a finding. The AT selection dynamics are RICHER
 than the simplest replicator model. This is expected for a complex adaptive system.
 
 ---
@@ -189,7 +189,7 @@ Resource capacity → high
    │    Weak selection
    │
    │  LOW capacity + large pop:
-   │    STRONG selection (TQM-135 regime)
+   │    STRONG selection (AT-135 regime)
    │    → Extinctions, competitive exclusion
    │    → Low-consumption species favored
    │
@@ -218,7 +218,7 @@ This is a finding, not a failure.
 
 ### ATTEMPT 4: Are fitness differences an artifact?
 → No. Species D's higher consumption (19.0 vs 5.8 for A) follows from its
-pattern complexity (TQM-133). Physical differences → fitness differences.
+pattern complexity (AT-133). Physical differences → fitness differences.
 
 ### ATTEMPT 5: Constrained vs unconstrained comparison
 → Results DIFFER significantly under constraints. Species D dominates
@@ -226,7 +226,7 @@ unconstrained but is suppressed under constraints. Clear selection effect.
 
 ### ATTEMPT 6: Selection vs resource-aware growth
 → Species with higher resource efficiency produce more surviving offspring,
-AND offspring inherit efficiency (H=0.786 from TQM-134). This IS selection.
+AND offspring inherit efficiency (H=0.786 from AT-134). This IS selection.
 
 ### ATTEMPT 7: Null hypothesis
 → **REJECTED.** Selection exists with 329 extinctions and systematic
@@ -257,9 +257,9 @@ frequency shifts. Information ecology has genuine Darwinian selection.
 
 | Pillar | Status | Source |
 |--------|--------|--------|
-| Reproduction | ✓ Demonstrated | TQM-134 |
-| Variation | ✓ Demonstrated | TQM-134 |
-| Selection | ✓ Demonstrated | TQM-135 |
+| Reproduction | ✓ Demonstrated | AT-134 |
+| Variation | ✓ Demonstrated | AT-134 |
+| Selection | ✓ Demonstrated | AT-135 |
 
 The Theta information layer supports FULL DARWINIAN EVOLUTION:
 - Species reproduce with heritable variation
@@ -292,6 +292,6 @@ of Darwinian evolution.
 
 ---
 
-*Experiment TQM-135 completed. Darwinian triad demonstrated.*
+*Experiment AT-135 completed. Darwinian triad demonstrated.*
 *Null hypothesis (no selection) rejected with 329 extinction events.*
 *The Theta information layer supports full Darwinian evolution.*

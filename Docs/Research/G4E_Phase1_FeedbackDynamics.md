@@ -73,6 +73,6 @@ next phase (restoring terms / bounded attractors).
 | G4-E11 `G4_E11_RunawayVersusOscillation` | PASS (0/12 oscillatory, all runaway) |
 | G4-E12 `G4_E12_SelfConsistentAntiDiffusiveDynamics` | PASS (2217/2217 anti-diffusive) |
 
-Code: `TQM.Core/ResearchXH/CurvatureFeedback.cs` (`FeedbackModel`, `BuildMap`, `Simulate`,
+Code: `AT.Core/ResearchXH/CurvatureFeedback.cs` (`FeedbackModel`, `BuildMap`, `Simulate`,
 `Interpolate`, `SlopeAtFlat`, `Classify`); tests
-`TQM.Tests/ResearchXH/G4E_Phase1_FeedbackDynamicsTests.cs`.
+`AT.Tests/ResearchXH/G4E_Phase1_FeedbackDynamicsTests.cs`.

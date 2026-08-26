@@ -80,6 +80,6 @@ binomial coefficients and diagonal) remains the ultimate benchmark.
 | G4-L31 `G4_L31_HybridIsIndefiniteAndCloserToBdg` | PASS (indefinite, KS 0.1389 < 0.2222) |
 | G4-L32 `G4_L32_HybridStableUnderRefinement` | PASS (stable at N=72, 110) |
 
-Code: `TQM.Core/ResearchXH/LorentzianOperator.cs` (added `CausalDensity`, `Add`,
+Code: `AT.Core/ResearchXH/LorentzianOperator.cs` (added `CausalDensity`, `Add`,
 `HybridRetardedAlternating`, `HybridRetardedDensityWeighted`); tests
-`TQM.Tests/ResearchXH/G4L_Phase3_RetardedIndefiniteOperatorTests.cs`.
+`AT.Tests/ResearchXH/G4L_Phase3_RetardedIndefiniteOperatorTests.cs`.

@@ -136,5 +136,5 @@ operator Lc = ρ⁻¹Lρ⁻¹ is the a_d = 1 member of this family. No new primi
 | G4-P31 `G4_P31_ConformalFormsInvariantVsCurvature` | PASS (a=1/2 invariant 0.066, a=1 curvature 0.301) |
 | G4-P32 `G4_P32_GeneralExponentReducesToLcAtD2` | PASS (a_2=1, a_3=5/6, a_4=3/4; M^(1)=Lc exact) |
 
-Code: `TQM.Tests/ResearchXH/G4P_Phase3_GeneralDimensionProofTests.cs`
+Code: `AT.Tests/ResearchXH/G4P_Phase3_GeneralDimensionProofTests.cs`
 (uses `ConformalOperator.BuildGeneral` for arbitrary exponents).

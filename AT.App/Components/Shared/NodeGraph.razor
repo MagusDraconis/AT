@@ -1,0 +1,13 @@
+@namespace AT.App.Components.Shared
+@using AT.App.Models
+
+<div class="node-graph">
+    @foreach (var root in Roots)
+    {
+        <NodeGraphNode Node="root" Depth="0" />
+    }
+</div>
+
+@code {
+    [Parameter, EditorRequired] public IReadOnlyList<DerivationNodeModel> Roots { get; set; } = [];
+}

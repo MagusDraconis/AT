@@ -32,16 +32,16 @@ Outcome selection / collapse
 
 ## What Is Derived
 
-| Quantum Structure | TQM Derivation | Source |
+| Quantum Structure | AT Derivation | Source |
 |------------------|---------------|--------|
-| Hilbert space | L_Q eigenvectors form orthonormal basis | TQM-149 |
-| Complex structure | J from antisymmetric coupling | TQM-150 |
-| Imaginary unit i | J² = -I → J ≡ i | TQM-150 |
-| Schrödinger equation | M = J⊗L_Q → i∂ψ/∂t = L_Q ψ | TQM-149 |
-| Unitary evolution | ψ(t) = exp(-iL_Q t) ψ(0) | TQM-149 |
-| Stationary states | ψ_k = exp(-iλ_k t) v_k | TQM-149 |
-| Norm conservation | d/dt ||ψ||² = 0 from antisymmetry | TQM-151 |
-| Born rule uniqueness | Gleason's theorem (|ψ|² only additive measure) | TQM-153 |
+| Hilbert space | L_Q eigenvectors form orthonormal basis | AT-149 |
+| Complex structure | J from antisymmetric coupling | AT-150 |
+| Imaginary unit i | J² = -I → J ≡ i | AT-150 |
+| Schrödinger equation | M = J⊗L_Q → i∂ψ/∂t = L_Q ψ | AT-149 |
+| Unitary evolution | ψ(t) = exp(-iL_Q t) ψ(0) | AT-149 |
+| Stationary states | ψ_k = exp(-iλ_k t) v_k | AT-149 |
+| Norm conservation | d/dt ||ψ||² = 0 from antisymmetry | AT-151 |
+| Born rule uniqueness | Gleason's theorem (|ψ|² only additive measure) | AT-153 |
 
 ---
 
@@ -49,10 +49,10 @@ Outcome selection / collapse
 
 | Quantum Structure | Status | Source |
 |------------------|--------|--------|
-| Q exists | Postulate 1 | TQM-117-122 |
-| Reversible dynamics | Postulate 2 | TQM-152 |
-| Born rule (additivity) | Postulate 3 | TQM-153 |
-| Measurement (collapse) | Postulate 4 | TQM-154 |
+| Q exists | Postulate 1 | AT-117-122 |
+| Reversible dynamics | Postulate 2 | AT-152 |
+| Born rule (additivity) | Postulate 3 | AT-153 |
+| Measurement (collapse) | Postulate 4 | AT-154 |
 
 ---
 
@@ -73,9 +73,9 @@ System S coupled to environment E on Q-networks:
 
 ---
 
-## TQM vs Standard QM — Postulate Count
+## AT vs Standard QM — Postulate Count
 
-| Postulate | Standard QM | TQM |
+| Postulate | Standard QM | AT |
 |----------|------------|-----|
 | Hilbert space | POSTULATED | DERIVED (from L_Q) |
 | Observables = Hermitian operators | POSTULATED | DERIVED (L_Q is Hermitian) |
@@ -86,4 +86,4 @@ System S coupled to environment E on Q-networks:
 
 ---
 
-*TQM-155: Quantum Correspondence. August 2026.*
+*AT-155: Quantum Correspondence. August 2026.*

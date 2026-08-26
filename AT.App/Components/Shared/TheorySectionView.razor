@@ -1,0 +1,58 @@
+@namespace AT.App.Components.Shared
+@using AT.App.Models
+@using AT.App.Services
+
+<PageTitle>@Section.Title · AT Theory Book</PageTitle>
+
+<div class="theory-section-header">
+    <MudText Typo="Typo.caption" Class="muted text-uppercase">@Section.Subtitle</MudText>
+    <MudText Typo="Typo.h3" Class="theory-title">@Section.Title</MudText>
+    <MudText Typo="Typo.body1" Class="muted">@Section.Summary</MudText>
+</div>
+
+@if (Section.KeyResults.Count > 0)
+{
+    <div class="page-section">
+        <h2 class="section-heading">Key Results</h2>
+        <MudGrid Spacing="3">
+            @foreach (var r in Section.KeyResults)
+            {
+                <MudItem xs="12" md="4">
+                    <TheoryCard Title="@r.Title" Badge="@r.Badge.ToString().ToUpperInvariant()">
+                        <MudText Typo="Typo.body2" Class="muted">@r.Description</MudText>
+                        <MudText Typo="Typo.caption" Color="Color.Primary" Class="mt-2">
+                            <strong>Phases:</strong> @string.Join(", ", r.PhaseIds)
+                        </MudText>
+                    </TheoryCard>
+                </MudItem>
+            }
+        </MudGrid>
+    </div>
+}
+
+<div class="page-section">
+    @foreach (var ch in Section.Chapters)
+    {
+        <div class="theory-chapter-block mb-4">
+            <MudText Typo="Typo.h6" Class="fw-bold">@ch.Title</MudText>
+            <MudText Typo="Typo.body2" Class="muted mb-3">@ch.Summary</MudText>
+            @foreach (var r in ch.Results)
+            {
+                <div class="theory-result-row mb-3">
+                    <TheoryBadge Badge="@r.Badge" />
+                    <div class="theory-result-body">
+                        <MudText Typo="Typo.subtitle2" Class="fw-bold">@r.Title</MudText>
+                        <MudText Typo="Typo.body2" Class="muted">@r.Description</MudText>
+                        <MudText Typo="Typo.caption" Color="Color.Primary">
+                            <strong>Phases:</strong> @string.Join(", ", r.PhaseIds)
+                        </MudText>
+                    </div>
+                </div>
+            }
+        </div>
+    }
+</div>
+
+@code {
+    [Parameter, EditorRequired] public TheorySection Section { get; set; } = default!;
+}

@@ -1,10 +1,10 @@
 # 13. Roadmap
 
-## Future Research Directions for TQM
+## Future Research Directions for AT
 
 ---
 
-## Phase 1: Consolidation (Current — TQM-155)
+## Phase 1: Consolidation (Current — AT-155)
 
 - ✓ Complete theory documentation (this document set)
 - ✓ Mathematical foundation compiled
@@ -25,7 +25,7 @@
 2. Superconducting qubit chain → verify λ_1 ∝ 1/N² scaling
 3. Photonic waveguide lattice → observe Dirac cones in hexagonal geometry
 
-**Deliverable**: First experimental confirmation or refutation of TQM predictions.
+**Deliverable**: First experimental confirmation or refutation of AT predictions.
 
 ---
 
@@ -54,7 +54,7 @@
 
 ## Phase 5: Unification (36+ months)
 
-**Goal**: Connect TQM to established physics frameworks.
+**Goal**: Connect AT to established physics frameworks.
 
 **Targets**:
 - Lattice gauge theory
@@ -69,18 +69,18 @@
 
 | Timeline | Milestone | Status |
 |----------|----------|--------|
-| TQM-001 to TQM-122 | Q theory, proto-matter | ✓ Complete |
-| TQM-128 to TQM-133 | Theta field, information species | ✓ Complete |
-| TQM-134 to TQM-138 | Darwinian evolution | ✓ Complete |
-| TQM-139 to TQM-143 | Landscape, spectral theory | ✓ Complete |
-| TQM-144 to TQM-148 | Physical correspondence | ✓ Complete |
-| TQM-149 to TQM-154 | Quantum emergence | ✓ Complete |
-| TQM-155 | Theory documentation | ✓ Complete |
-| TQM-156+ | Experimental validation | Future |
-| TQM-160+ | Extensions (dynamics, nonlinear, etc.) | Future |
-| TQM-170+ | Quantum foundations | Future |
-| TQM-180+ | Unification | Future |
+| AT-001 to AT-122 | Q theory, proto-matter | ✓ Complete |
+| AT-128 to AT-133 | Theta field, information species | ✓ Complete |
+| AT-134 to AT-138 | Darwinian evolution | ✓ Complete |
+| AT-139 to AT-143 | Landscape, spectral theory | ✓ Complete |
+| AT-144 to AT-148 | Physical correspondence | ✓ Complete |
+| AT-149 to AT-154 | Quantum emergence | ✓ Complete |
+| AT-155 | Theory documentation | ✓ Complete |
+| AT-156+ | Experimental validation | Future |
+| AT-160+ | Extensions (dynamics, nonlinear, etc.) | Future |
+| AT-170+ | Quantum foundations | Future |
+| AT-180+ | Unification | Future |
 
 ---
 
-*TQM-155: Roadmap. August 2026.*
+*AT-155: Roadmap. August 2026.*

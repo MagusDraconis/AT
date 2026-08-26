@@ -1,4 +1,4 @@
-# Copilot Instructions for TQM
+# Copilot Instructions for AT
 
 ## xUnit Test Categories
 
@@ -8,11 +8,11 @@ There are two categories of xUnit tests in this project.
 Used to validate classes, services, methods, edge cases, and correctness. These are conventional unit/integration tests with standard Arrange-Act-Assert structure.
 
 ### Category 2: Research Tests
-Used as executable scientific experiments. Research tests are first-class citizens of the TQM project and should be treated as executable research papers.
+Used as executable scientific experiments. Research tests are first-class citizens of the AT project and should be treated as executable research papers.
 
 Research tests **must**:
 
-- Inherit from `ResearchTestBase` (in `TQM.Tests.Shared`)
+- Inherit from `ResearchTestBase` (in `AT.Tests.Shared`)
 - Use `ITestOutputHelper` (provided by the base class as `Output`)
 - Generate detailed scientific reports
 - Use `StringBuilder` for composing multi-section output
@@ -23,7 +23,7 @@ Research tests **must**:
 - Be **deterministic** and **reproducible** — no randomness, no external dependencies that can change results between runs
 - Serve as reproducible/readable documentation, ensuring results are reproducible over time rather than static report assertions
 
-Research tests should be placed under `TQM.Tests/Research/` and follow the naming convention `TQM_###_Tests.cs`.
+Research tests should be placed under `AT.Tests/Research/` and follow the naming convention `AT_###_Tests.cs`.
 
 Use `PrintHeader(string title)` from `ResearchTestBase` to demarcate major sections of the research report.
 
@@ -38,11 +38,11 @@ All xUnit tests should be **optimized for speed**:
 
 ## Shared Code & DRY Principle
 
-- Extract common logic into **shared base classes** (like `ResearchTestBase`) or **static utility methods** in `TQM.Tests.Shared`
+- Extract common logic into **shared base classes** (like `ResearchTestBase`) or **static utility methods** in `AT.Tests.Shared`
 - If the same helper method appears in two or more test files, move it into a shared class — do not duplicate
-- Shared helpers should be placed under `TQM.Tests/Shared/`
+- Shared helpers should be placed under `AT.Tests/Shared/`
 
-# TQM Project Memory Rules
+# AT Project Memory Rules
 
 ## Persistent Project Memory
 
@@ -55,7 +55,7 @@ This file is the authoritative project context.
 Before implementing any feature, experiment, simulation, theory extension, or research test:
 
 1. Read Docs/NewChat_Start.md
-2. Treat it as the current state of the TQM project
+2. Treat it as the current state of the AT project
 3. Preserve all documented decisions and hypotheses
 4. Ensure all new work remains consistent with the documented research direction
 
@@ -93,7 +93,7 @@ Do NOT turn it into a research log or full documentation.
 
 Detailed experiment results belong in:
 
-Docs/TQM_LabBook.md
+Docs/AT_LabBook.md
 
 Only major conclusions should be copied into:
 
@@ -101,7 +101,7 @@ Docs/NewChat_Start.md
 
 ## Prompt Requirement
 
-For every new TQM experiment, simulation, theory extension, or research task:
+For every new AT experiment, simulation, theory extension, or research task:
 
 - Read Docs/NewChat_Start.md first
 - Perform the requested work

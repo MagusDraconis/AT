@@ -24,7 +24,7 @@ Operator family (all built as symmetric matrices so their spectrum is real):
 | ρ⁻¹ (sym) | ρ^(−1/2) L ρ^(−1/2) | −Δ_η (analytic-density-normalized) |
 | ρ⁻² (sym) | ρ^(−1) L ρ^(−1) | ρ⁻¹(−Δ_η) = −Δ_g (conformal) |
 
-Code: `TQM.Core/ResearchXH/ConformalOperator.cs`; density carried by `GeometricGraph.VertexDensity()`
+Code: `AT.Core/ResearchXH/ConformalOperator.cs`; density carried by `GeometricGraph.VertexDensity()`
 (set by `ConformalRateGraph`).
 
 ---
@@ -94,5 +94,5 @@ and supplies the concrete operator for the G4 program's native metric-to-operato
 | G4-C-01 `G4_C_01_ObservablesPerOperator` | PASS |
 | G4-C-02 `G4_C_02_CurvatureSignSeparation` | PASS |
 
-`TQM.Tests/ResearchXH/G4C_ConformalOperatorTests.cs` (inherits `ResearchTestBase`,
+`AT.Tests/ResearchXH/G4C_ConformalOperatorTests.cs` (inherits `ResearchTestBase`,
 deterministic, `StringBuilder`-composed reports).

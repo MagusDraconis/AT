@@ -85,5 +85,5 @@ not been found.
 | G4-RHO01 `G4_RHO01_ConservationRejectsLog` | PASS (conservation → repulsive ρ∝r⁻², rejects log) |
 | G4-RHO02 `G4_RHO02_ScaleFreeFieldClassification` | PASS (PREFERRED, α=0 not dynamically derived) |
 
-Code: `TQM.Core/ResearchXH/RhoDynamics.cs`;
-tests `TQM.Tests/ResearchXH/G4RHO_Phase0_DynamicalOriginTests.cs`.
+Code: `AT.Core/ResearchXH/RhoDynamics.cs`;
+tests `AT.Tests/ResearchXH/G4RHO_Phase0_DynamicalOriginTests.cs`.

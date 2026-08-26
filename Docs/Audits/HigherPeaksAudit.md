@@ -79,5 +79,5 @@ driving, and Silk damping are the correct minimal ingredients. The second peak
 projection including the SW–Doppler cross term, which is the next missing
 module in the CMB chain (see CMBSpectrumGapAudit).
 
-**Sources:** `TQM.Core/ResearchDATA/PeakHeightAnalyzer.cs` (FindAcousticPeaks,
-FullSolveNu), `TQM.Tests/ResearchDATA/TQM_HigherPeaksAudit.cs`.
+**Sources:** `AT.Core/ResearchDATA/PeakHeightAnalyzer.cs` (FindAcousticPeaks,
+FullSolveNu), `AT.Tests/ResearchDATA/AT_HigherPeaksAudit.cs`.

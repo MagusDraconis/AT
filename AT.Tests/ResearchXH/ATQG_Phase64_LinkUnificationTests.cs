@@ -1,0 +1,90 @@
+using System.Globalization;
+using System.Text;
+using AT.Core.ResearchXH;
+using AT.Tests.Shared;
+using Xunit.Abstractions;
+
+namespace AT.Tests.ResearchXH;
+
+/// <summary>
+/// AT-QG Phase 64 — unify link content. Determines whether trace/traceless/phase are one link object.
+/// Classify: SEPARATE / PARTIAL UNIFICATION / UNIFIED.
+///
+/// Tests: ATQG640 (three sectors), ATQG641 (one complex link), ATQG642 (classification).
+/// </summary>
+public class ATQG_Phase64_LinkUnificationTests : ResearchTestBase
+{
+    public ATQG_Phase64_LinkUnificationTests(ITestOutputHelper o) : base(o) { }
+
+    // ── ATQG640: the three sectors ──────────────────────────────────────────────────
+
+    [Fact]
+    public void ATQG640_ThreeSectors()
+    {
+        Thread.CurrentThread.CurrentCulture = CultureInfo.InvariantCulture;
+        var sb = new StringBuilder();
+        PrintHeader("ATQG640: trace, traceless, and phase are three irreducible sectors");
+
+        foreach (var s in LinkUnification.Sectors)
+            sb.AppendLine($"{s,-10} -> {LinkUnification.Kind(s)}");
+
+        bool independent = LinkUnification.SectorsIndependent();
+
+        sb.AppendLine();
+        sb.AppendLine($"three sectors are INDEPENDENT d.o.f.: {independent}");
+        sb.AppendLine();
+        sb.AppendLine("CONCLUSION: ρ (spin-0 magnitude), ψ (spin-2 shape), and θ (U(1) phase) are three different representations");
+        sb.AppendLine("— independent degrees of freedom that can each vary separately.");
+        Output.WriteLine(sb.ToString());
+
+        Assert.Equal(3, LinkUnification.Sectors.Length);
+        Assert.True(independent, "the three sectors should be independent");
+    }
+
+    // ── ATQG641: one complex link object ────────────────────────────────────────────
+
+    [Fact]
+    public void ATQG641_OneComplexLink()
+    {
+        Thread.CurrentThread.CurrentCulture = CultureInfo.InvariantCulture;
+        var sb = new StringBuilder();
+        PrintHeader("ATQG641: the complete link is a single complex rank-2 object");
+
+        bool oneObject = LinkUnification.ExpressibleAsOneObject();
+        bool singleStructure = LinkUnification.CompleteLinkSingleStructure();
+
+        sb.AppendLine($"three sectors expressible as ONE link object: {oneObject}");
+        sb.AppendLine($"complete link is a SINGLE structure:           {singleStructure}");
+        sb.AppendLine();
+        sb.AppendLine("CONCLUSION: L_ij = a_ij · e^(iθ_ij) — magnitude a_ij (trace ρ + traceless ψ) times phase θ (U(1)). The");
+        sb.AppendLine("three sectors are components of ONE complex rank-2 link object.");
+        Output.WriteLine(sb.ToString());
+
+        Assert.True(oneObject, "the three sectors should be expressible as one object");
+        Assert.True(singleStructure, "the complete link should be a single structure");
+    }
+
+    // ── ATQG642: classification ───────────────────────────────────────────────────────
+
+    [Fact]
+    public void ATQG642_Classification()
+    {
+        Thread.CurrentThread.CurrentCulture = CultureInfo.InvariantCulture;
+        var sb = new StringBuilder();
+        PrintHeader("ATQG642: SEPARATE / PARTIAL UNIFICATION / UNIFIED?");
+
+        sb.AppendLine($"CLASSIFICATION: {LinkUnification.Classify()}");
+        sb.AppendLine();
+        sb.AppendLine("  • NOT SEPARATE: the three sectors are components of one complex rank-2 link (L_ij = a_ij e^{iθ_ij}), not");
+        sb.AppendLine("    three unrelated objects.");
+        sb.AppendLine("  • UNIFIED: the complete link is a SINGLE object whose decomposition gives ρ (trace), ψ (traceless), and θ");
+        sb.AppendLine("    (phase) — exactly as the network primitive unified nodes + links (QG55).");
+        sb.AppendLine("  • WITH IRREDUCIBLE SECTORS: the three remain independent d.o.f. (spin-0 / spin-2 / U(1)), a 'unified with");
+        sb.AppendLine("    irreducible interior' structure.");
+        Output.WriteLine(sb.ToString());
+
+        Assert.Equal("UNIFIED", LinkUnification.Classify());
+        Assert.True(LinkUnification.ExpressibleAsOneObject());
+        Assert.True(LinkUnification.SectorsIndependent());
+    }
+}

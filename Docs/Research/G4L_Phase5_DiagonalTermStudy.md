@@ -74,6 +74,6 @@ require reducing L3's symmetric coupling or the BDG-specific retarded structure 
 | G4-L51 `G4_L51_PreservesRetardationIndefinitenessAlternation` | PASS (D4 satisfies all 4) |
 | G4-L52 `G4_L52_StrengthSweepAndRefinement` | PASS (refinement-stable) |
 
-Code: `TQM.Core/ResearchXH/LorentzianOperator.cs` (added `ComparableCount`, `PastCount`,
+Code: `AT.Core/ResearchXH/LorentzianOperator.cs` (added `ComparableCount`, `PastCount`,
 `LocalDegree`, `AddDiagonal`, `GreenResponseMetrics`); tests
-`TQM.Tests/ResearchXH/G4L_Phase5_DiagonalTermStudyTests.cs`.
+`AT.Tests/ResearchXH/G4L_Phase5_DiagonalTermStudyTests.cs`.

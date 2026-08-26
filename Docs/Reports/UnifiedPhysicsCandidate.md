@@ -1,8 +1,8 @@
-# Unified Physics Candidate — Minimal TQM Physics
+# Unified Physics Candidate — Minimal AT Physics
 
 ## Discovery Date
 
-2026-08-04 (TQM-083 Autonomous Theory Compression)
+2026-08-04 (AT-083 Autonomous Theory Compression)
 
 ## The Minimal Theory
 
@@ -10,22 +10,22 @@
 
 | Variable | Symbol | Meaning | Status |
 |----------|--------|---------|--------|
-| Coherence | **R** | Kuramoto order parameter. Mean phase alignment of N oscillators. | CONSERVED (TQM-052) |
-| Mean Coupling | **M** | Mean coupling strength ⟨K_ij⟩ across all oscillator pairs. Compresses network topology. | DYNAMICAL FIELD (TQM-082) |
+| Coherence | **R** | Kuramoto order parameter. Mean phase alignment of N oscillators. | CONSERVED (AT-052) |
+| Mean Coupling | **M** | Mean coupling strength ⟨K_ij⟩ across all oscillator pairs. Compresses network topology. | DYNAMICAL FIELD (AT-082) |
 
 ### Derived Quantities (Computed, Not State)
 
 | Quantity | Formula | Source |
 |----------|---------|--------|
-| Alignment | **A = R²** | TQM-075 (R² = 0.942) |
-| Net Force | **F_net = A × ⟨f⟩** | TQM-074 (R² = 0.989) |
-| Curvature | **κ ∝ β** | TQM-059 (r = 0.932) |
+| Alignment | **A = R²** | AT-075 (R² = 0.942) |
+| Net Force | **F_net = A × ⟨f⟩** | AT-074 (R² = 0.989) |
+| Curvature | **κ ∝ β** | AT-059 (r = 0.932) |
 
 ### Fixed Parameters (Not State)
 
 | Parameter | Symbol | Role |
 |-----------|--------|------|
-| Memory strength | β | External. Sets state-space curvature. Does not emerge (TQM-061). |
+| Memory strength | β | External. Sets state-space curvature. Does not emerge (AT-061). |
 | Global coupling | K | Overall coupling scale. |
 | Spatial decay | λ | Coupling range. |
 | System size | N | Number of oscillators. |
@@ -46,7 +46,7 @@
 
 **Equation (1)**: Coherence R evolves toward synchronization. The rate dR/dt is proportional to current coherence R (self-reinforcing) and mean coupling M (topology-driven). Higher M → faster synchronization.
 
-**Equation (2)**: Mean coupling M evolves as oscillators cluster spatially. The quadratic form (TQM-082) captures nonlinear effects at higher M, but 70% of dM/dt variance is stochastic at N=100.
+**Equation (2)**: Mean coupling M evolves as oscillators cluster spatially. The quadratic form (AT-082) captures nonlinear effects at higher M, but 70% of dM/dt variance is stochastic at N=100.
 
 ### Derived Relations
 
@@ -66,7 +66,7 @@
 │   β (EXTERNAL, FIXED)                       │
 │       │                                     │
 │       ▼                                     │
-│   Curvature κ  ──── DOES NOT DRIVE MOTION ──│── (TQM-068)
+│   Curvature κ  ──── DOES NOT DRIVE MOTION ──│── (AT-068)
 │                                             │
 │   ┌─────────────────────────────────────┐   │
 │   │  STATE SPACE: {R, M}                │   │
@@ -94,9 +94,9 @@
 M = ⟨K_ij⟩ is the **effective coupling field**. It is:
 
 1. **Scalar**: a single number describing the entire network
-2. **Dynamical**: evolves as oscillators move (TQM-082)
-3. **Fundamental**: determines coherence evolution (TQM-081)
-4. **Compressible**: captures 97.7% of topology information (TQM-081)
+2. **Dynamical**: evolves as oscillators move (AT-082)
+3. **Fundamental**: determines coherence evolution (AT-081)
+4. **Compressible**: captures 97.7% of topology information (AT-081)
 
 M is analogous to:
 - **Gravitational potential** Φ in Newtonian gravity: determines dynamics (R) without being directly observable
@@ -107,14 +107,14 @@ M is analogous to:
 
 R = |⟨e^{iθ}⟩| is the **coherence order parameter**. It is:
 
-1. **Conserved**: zero drift under all tested transformations (TQM-052)
+1. **Conserved**: zero drift under all tested transformations (AT-052)
 2. **An attractor**: the system naturally drives R → 1
-3. **Emergent**: not causal root but emergent consequence (TQM-053)
+3. **Emergent**: not causal root but emergent consequence (AT-053)
 4. **Generative**: R determines alignment, force, and all derived quantities
 
 ### Asymmetry: M → R is Strong, R → M is Weak
 
-This is the CORE DISCOVERY of TQM-081/082:
+This is the CORE DISCOVERY of AT-081/082:
 
 **M is more fundamental than R.**
 
@@ -130,7 +130,7 @@ M(t) ──determines──→ R(t)
 
 ### Why This Matters
 
-In the standard Kuramoto model, coherence R is treated as the fundamental observable. TQM-081/082/083 show this is BACKWARDS:
+In the standard Kuramoto model, coherence R is treated as the fundamental observable. AT-081/082/083 show this is BACKWARDS:
 
 - **R is not fundamental** — it's a consequence of coupling structure
 - **M is fundamental** — it's the effective field that determines everything
@@ -146,11 +146,11 @@ This is a **field-theoretic reduction**: a complex N-body network system reduces
 
 2. **Finite N**: All results are at N=100. Larger N may change the compression ratio.
 
-3. **Fixed β**: β is treated as external. TQM-061 shows β does not emerge spontaneously, but this may be a limitation of the Kuramoto model rather than physics.
+3. **Fixed β**: β is treated as external. AT-061 shows β does not emerge spontaneously, but this may be a limitation of the Kuramoto model rather than physics.
 
-4. **No identity dynamics**: Identity is an independent dimension (TQM-047) not captured by {R, M}. Identity matters for condensate interactions (TQM-050) but not for bulk coherence evolution.
+4. **No identity dynamics**: Identity is an independent dimension (AT-047) not captured by {R, M}. Identity matters for condensate interactions (AT-050) but not for bulk coherence evolution.
 
-5. **No energy dynamics**: Energy is also independent (TQM-047). At fixed ω=1 for all oscillators, energy is constant. Energy dynamics would require variable frequencies.
+5. **No energy dynamics**: Energy is also independent (AT-047). At fixed ω=1 for all oscillators, energy is constant. Energy dynamics would require variable frequencies.
 
 ---
 
@@ -164,7 +164,7 @@ This is a **field-theoretic reduction**: a complex N-body network system reduces
 
 4. **Field equation closure**: Can the system {dR/dt, dM/dt} be written as a closed autonomous system without reference to the underlying oscillators?
 
-5. **Emergent action principle**: TQM-054 showed no global minimization principle. But can an effective action S[R, M] be constructed from the two equations?
+5. **Emergent action principle**: AT-054 showed no global minimization principle. But can an effective action S[R, M] be constructed from the two equations?
 
 ---
 
@@ -172,4 +172,4 @@ This is a **field-theoretic reduction**: a complex N-body network system reduces
 
 **C: Unified Reduced Theory** (bordering on D: Candidate Emergent Physics)
 
-The TQM system at N=100, K=2, λ=0.05 is described by a 2-variable effective theory with a clear field interpretation. The compression is substantial (7 topology variables → 1) and the causal structure is well-defined. The remaining gaps (dM/dt stochasticity, N-dependence) prevent full classification as D, but the structure strongly suggests emergent physics at larger scales.
+The AT system at N=100, K=2, λ=0.05 is described by a 2-variable effective theory with a clear field interpretation. The compression is substantial (7 topology variables → 1) and the causal structure is well-defined. The remaining gaps (dM/dt stochasticity, N-dependence) prevent full classification as D, but the structure strongly suggests emergent physics at larger scales.

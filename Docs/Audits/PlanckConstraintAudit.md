@@ -1,6 +1,6 @@
 # Planck Constraint Audit
 
-**Question:** is current TQM compatible with Planck 2018 constraints?
+**Question:** is current AT compatible with Planck 2018 constraints?
 **Scope:** Ω_b, Ω_DM, H0, Λ, θ* (+ supplementary base parameters).
 **Discipline:** no new physics; no acoustic-model invention; repository evidence only.
 
@@ -28,7 +28,7 @@
 
 ## 2. Classification (Derived / Imported / Unknown)
 
-| Parameter | Class | TQM status | Repository evidence |
+| Parameter | Class | AT status | Repository evidence |
 |---|---|---|---|
 | Ω_b | Imported | Contingent draw (log-normal abundance) | XB002 / Phase 152: relic-density ensemble |
 | Ω_DM | Imported | Natural scale ~0.1–1 derived; exact 0.27 contingent | X065 `DefectRelicAbundanceAnalyzer.cs` |
@@ -44,7 +44,7 @@
 
 ## 3. Already Predicted vs Requires CMB Solver
 
-| Parameter | TQM already predicts? | Requires full CMB solver? |
+| Parameter | AT already predicts? | Requires full CMB solver? |
 |---|---|---|
 | Ω_b | No (contingent) | No |
 | Ω_DM | Partially (order of magnitude) | No |
@@ -67,7 +67,7 @@
 | H0 | ⚠️ (tension addressed) | H0 primitive; X046b suggests early dark energy may reconcile 67 vs 73 |
 | Λ | ✅ (postdicted) | Λ ~ 1/√N reproduces the observed scale (ratio ≈ 0.48) |
 | θ* | ⚠️ (prediction pending) | evolving Λ predicts 0.5–1% shift; needs precision CMB (CMB-S4) |
-| n_s / A_s / τ / σ₈ | ❌ (uncomputed) | no TQM derivation; require a full CMB solver |
+| n_s / A_s / τ / σ₈ | ❌ (uncomputed) | no AT derivation; require a full CMB solver |
 
 ---
 
@@ -79,7 +79,7 @@
 | ⚠️ Pending | 2 | H0, θ* |
 | ❌ Uncomputed | 4 | n_s, A_s, τ, σ₈ |
 
-TQM is **compatible with Planck at the background level** (Ω_b, Ω_DM, Λ — one of
+AT is **compatible with Planck at the background level** (Ω_b, Ω_DM, Λ — one of
 which, Λ, it genuinely postdicts via Λ~1/√N), but has **no CMB-spectrum
 derivation**: θ*, n_s, A_s, τ, σ₈ all require a full acoustic solver that does not
 exist in the repository.

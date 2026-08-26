@@ -2,8 +2,8 @@
 
 **Goal:** determine whether $Q$ and Random Actualization (and the other primitives) can
 be written as formal axioms, using only accepted repository results.
-**Inputs:** `TQM_v1_0_Paper_Revision.md`, `PeerReview_Round2.md`, `Docs/Theory/03_Q_Theory.md`,
-`Docs/Theory/02_Fundamental_Postulates.md`, `TQM_Master_Reference.md`.
+**Inputs:** `AT_v1_0_Paper_Revision.md`, `PeerReview_Round2.md`, `Docs/Theory/03_Q_Theory.md`,
+`Docs/Theory/02_Fundamental_Postulates.md`, `AT_Master_Reference.md`.
 **Discipline:** no new physics — formal reconstruction only.
 
 ---

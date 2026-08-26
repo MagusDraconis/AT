@@ -1,4 +1,4 @@
-# TQM-134 Information Species Reproduction and Inheritance
+# AT-134 Information Species Reproduction and Inheritance
 
 ## SCIENTIFIC REPORT
 
@@ -6,7 +6,7 @@
 
 **Classification: D — Information Evolution Layer**
 
-Information species discovered in TQM-133 can REPRODUCE and form
+Information species discovered in AT-133 can REPRODUCE and form
 persistent information LINEAGES. The null hypothesis (attractors only)
 is REJECTED with statistically significant evidence.
 
@@ -22,9 +22,9 @@ are present.
 
 ---
 
-## 1. TQM-133 Recap
+## 1. AT-133 Recap
 
-TQM-133 discovered 4 stable information species in the Theta field:
+AT-133 discovered 4 stable information species in the Theta field:
 
 | Species | Taxonomy | Basin Size | Morphology |
 |---------|----------|------------|------------|
@@ -34,7 +34,7 @@ TQM-133 discovered 4 stable information species in the Theta field:
 | D | Composite/MultiMode | ~10% | Multi-mode superposition |
 
 These species are stable attractors with distinct basins.
-TQM-134 asks: can they REPRODUCE?
+AT-134 asks: can they REPRODUCE?
 
 ---
 
@@ -123,7 +123,7 @@ means species are actively evolving, not just relaxing to attractors.
 Competition was NOT detected at tested parameters (density 0.3-0.9,
 damping 0.1). All species coexist when placed together.
 
-This is consistent with the TQM-132 finding that anti-correlated
+This is consistent with the AT-132 finding that anti-correlated
 patterns cancel (not compete for resources). Competition may require:
 - Higher density (ρ_Q > 0.9)
 - Limited resources (finite information capacity)
@@ -189,8 +189,8 @@ Reproduction + Variation (mutation) are PRESENT.
 Selection is ABSENT at tested parameters.
 
 For full Darwinian evolution, we need:
-1. ✓ Reproduction (TQM-134)
-2. ✓ Variation/Mutation (TQM-134)
+1. ✓ Reproduction (AT-134)
+2. ✓ Variation/Mutation (AT-134)
 3. ✗ Selection/Competition (not detected)
 
 Adding resource constraints or asymmetric fitness functions
@@ -267,14 +267,14 @@ The Theta information layer supports:
 
 The complete Theta hierarchy now extends to SIX levels:
 
-1. Transport (TQM-129): signals propagate
-2. Memory (TQM-130): signals persist
-3. Interaction (TQM-132): signals influence each other
-4. Attractors (TQM-133): signals converge to stable states
-5. Ecology (TQM-133): multiple species coexist
-6. **Evolution (TQM-134): species reproduce and form lineages**
+1. Transport (AT-129): signals propagate
+2. Memory (AT-130): signals persist
+3. Interaction (AT-132): signals influence each other
+4. Attractors (AT-133): signals converge to stable states
+5. Ecology (AT-133): multiple species coexist
+6. **Evolution (AT-134): species reproduce and form lineages**
 
-This bridges proto-matter to proto-life within the TQM framework.
+This bridges proto-matter to proto-life within the AT framework.
 The Theta field is not just an information medium — it is an
 **information ecosystem** with evolutionary dynamics.
 
@@ -292,5 +292,5 @@ The Theta field is not just an information medium — it is an
 
 ---
 
-*Experiment TQM-134 completed. Information reproduction demonstrated.*
+*Experiment AT-134 completed. Information reproduction demonstrated.*
 *Null hypothesis (attractors only) rejected with statistical significance.*

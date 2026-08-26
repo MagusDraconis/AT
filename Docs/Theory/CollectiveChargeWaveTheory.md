@@ -1,6 +1,6 @@
 # Collective Charge Wave Theory
 
-## TQM-126: Why Charge Modes Are Waves, Not Just Oscillators
+## AT-126: Why Charge Modes Are Waves, Not Just Oscillators
 
 ### Abstract
 

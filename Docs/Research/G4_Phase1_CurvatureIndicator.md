@@ -26,7 +26,7 @@ Inputs are the Phase-0 geometries: `FlatGraph` (R≈0), `SphereGraph` (R>0),
 
 ## 2. Implementation
 
-### 2.1 Observables (added to `SpectralCurvature`, `TQM.Core/ResearchXH`)
+### 2.1 Observables (added to `SpectralCurvature`, `AT.Core/ResearchXH`)
 
 All computed on the symmetric **normalized** Laplacian $L_{\mathrm{sym}}$ (bounded in
 $[0,2]$, scale-invariant).
@@ -122,5 +122,5 @@ Phase 2 to a closed genus-≥2 hyperbolic surface for the $R<0$ calibration.
 | G4-11 `G4_11_PositiveCurvatureGivesPositiveSci` | PASS |
 | G4-12 `G4_12_HyperbolicSignIsBoundaryDominated` | PASS (documents the boundary limitation) |
 
-`TQM.Tests/ResearchXH/G4Phase1CurvatureIndicatorTests.cs` (inherits `ResearchTestBase`,
+`AT.Tests/ResearchXH/G4Phase1CurvatureIndicatorTests.cs` (inherits `ResearchTestBase`,
 deterministic, `StringBuilder`-composed reports).

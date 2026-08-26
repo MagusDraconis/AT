@@ -2,15 +2,15 @@
 
 *From Q to Cosmology*
 
-**TQM**
+**AT**
 
 *A Theory of Structure, Complexity and Random Actualization*
 
 ---
 
-# TQM Repository-Wide Consolidation Audit — Coverage Report
+# AT Repository-Wide Consolidation Audit — Coverage Report
 
-**Scope:** entire repository scan (`D:\Coding\Test\TQM`), all research threads.
+**Scope:** entire repository scan (`D:\Coding\Test\AT`), all research threads.
 **Method:** enumerate documents, source files, tests, and datasets; classify each topic
 **COMPLETE / PARTIAL / MISSING**. No new physics. Missing topics marked explicitly.
 
@@ -21,20 +21,20 @@
 | Area | Contents | Count |
 |---|---|---|
 | `Docs/` | theory, cosmology, audit, charge, information, theta docs | ~75 `.md` |
-| `Docs/Theory/` | TQM program overview + mathematical foundation | 16 `.md` |
+| `Docs/Theory/` | AT program overview + mathematical foundation | 16 `.md` |
 | `Docs/WhitePapers/` | framework + experimental priorities | 3 `.md` |
 | `Docs/ObservationalTests/` | DESI, DUNE, Euclid, JUNO, Rubin | 5 `.md` |
-| `TQM.Core/Research` | X-program (X001–X065b) | 195 `.cs` |
-| `TQM.Core/ResearchQG` | QG program (QG-001–QG-100) | 255 `.cs` |
-| `TQM.Core/ResearchDATA` | cosmology / RAR | 38 `.cs` |
-| `TQM.Core/ResearchQM` | quantum foundations (QM-001–005) | 10 `.cs` |
-| `TQM.Core/ResearchXB/XC/XD/XE/XF/XG` | abundance, GR-bridge, priority, dimensionality, observer, state | 55 `.cs` |
-| `TQM.Core/Resonance` | TQM simulation engine (proto-matter) | 218 `.cs` |
-| `TQM.Core/{Temporal,TemporalField,Quantum,Fits}` | temporal field, quantum, FITS IO | 25 `.cs` |
-| `TQM.Tests/*` | xUnit research tests | ~390 `.cs` |
+| `AT.Core/Research` | X-program (X001–X065b) | 195 `.cs` |
+| `AT.Core/ResearchQG` | QG program (QG-001–QG-100) | 255 `.cs` |
+| `AT.Core/ResearchDATA` | cosmology / RAR | 38 `.cs` |
+| `AT.Core/ResearchQM` | quantum foundations (QM-001–005) | 10 `.cs` |
+| `AT.Core/ResearchXB/XC/XD/XE/XF/XG` | abundance, GR-bridge, priority, dimensionality, observer, state | 55 `.cs` |
+| `AT.Core/Resonance` | AT simulation engine (proto-matter) | 218 `.cs` |
+| `AT.Core/{Temporal,TemporalField,Quantum,Fits}` | temporal field, quantum, FITS IO | 25 `.cs` |
+| `AT.Tests/*` | xUnit research tests | ~390 `.cs` |
 | `Data/` | Pantheon+SH0ES, SPARC, Lelli, COSMOS2015/KMOS3D, Coma Cluster | 8 datasets |
 | `Data/derived/` | persisted CSV outputs | 91 `.csv` |
-| `TQM_Master_Reference.md` | master reference (this session) | 1 |
+| `AT_Master_Reference.md` | master reference (this session) | 1 |
 
 ---
 
@@ -55,7 +55,7 @@
 | **TRM** | *(none)* | 0 | MISSING | TODO — entire TRM program absent |
 | **Memory Channel** | *(none)* | 0 | MISSING | TODO |
 | **m=3 Closure** | *(related:* Phases 150–151 "why N=3") | 25 | PARTIAL | TODO — TRM "m=3 closure" formulation absent |
-| **Theta Sector** | `Docs/Theta*.md`, `MicroscopicOriginOfTheta.md`, TQM-128–133 | 60 | PARTIAL | TODO — "Theta Sector" as gauge sector absent (only information layer) |
+| **Theta Sector** | `Docs/Theta*.md`, `MicroscopicOriginOfTheta.md`, AT-128–133 | 60 | PARTIAL | TODO — "Theta Sector" as gauge sector absent (only information layer) |
 | **Frame Dragging** | *(none)* | 0 | MISSING | TODO |
 | **Unified Action** | *(none)* | 0 | MISSING | TODO |
 | **Cosmology** | QG-004, QG-080–100, causal-set Λ, DATA-001–010 | 100 | COMPLETE | — |
@@ -78,7 +78,7 @@
 | `X*` | Foundations X (X001–X065b) | ✓ 195 core / 78 tests | COMPLETE |
 | `XE*` | Dimensionality/viability | ✓ 9 / 9 | COMPLETE |
 | `XB*` | Abundance physics | ✓ 10 / 10 | COMPLETE |
-| `TQM*` | THE Q-MODEL (TQM-001–155) | ✓ 218 resonance + 138 tests | COMPLETE |
+| `AT*` | THE Q-MODEL (AT-001–155) | ✓ 218 resonance + 138 tests | COMPLETE |
 | `MC*` | *(unmapped)* | ✗ | MISSING |
 | `MEM*` | *(unmapped — likely memory)* | ✗ | MISSING |
 | `RBF*` | *(unmapped)* | ✗ | MISSING |
@@ -100,7 +100,7 @@
 
 | Status | Count | Topics |
 |---|---|---|
-| COMPLETE | 20 | Foundations, Ontology, Q, Random Actualization, Complexity, Topology, Symmetry, Gauge, Flavor, Multiplicity, Cosmology, Galaxies, Clusters, Pantheon+, Dark Matter, Dark Energy, Classification, Audit Results, + X/XE/XB/TQM/QG programs |
+| COMPLETE | 20 | Foundations, Ontology, Q, Random Actualization, Complexity, Topology, Symmetry, Gauge, Flavor, Multiplicity, Cosmology, Galaxies, Clusters, Pantheon+, Dark Matter, Dark Energy, Classification, Audit Results, + X/XE/XB/AT/QG programs |
 | PARTIAL | 3 | m=3 Closure (25%), Theta Sector (60%), CMB (45%) |
 | MISSING | 8 | TRM, Memory Channel, Frame Dragging, Unified Action, + prefixes MC/MEM/RBF/TO/TQK/LC/TOL/FD/UF/TRM |
 
@@ -109,4 +109,4 @@
 > `Audits/TRM_Legacy_Final.md`: **Absorbed** (Time Field, RAR, Frame Dragging),
 > **Rejected** (Temporal Drift, Quantum Engine), **Candidate Mathematics** (m=3 Closure,
 > Memory Channel, Theta Chain), **Open** (Unified Action). Frame Dragging is therefore
-> *not* a missing TQM capability — it is GR gravitomagnetism, already in TQM/GR.
+> *not* a missing AT capability — it is GR gravitomagnetism, already in AT/GR.

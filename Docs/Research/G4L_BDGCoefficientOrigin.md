@@ -78,4 +78,4 @@ already have the right *shape* (alternating layers); only the global scale −2 
 | G4-L111 `G4_L111_BdgStencilIsBinomialSecondDifference` | PASS (a_ℓ = −2·(−1)^ℓ·C(2,ℓ) exact) |
 | G4-L112 `G4_L112_ConstantAnnihilationAndClassification` | PASS (stencil Σ a_ℓ = 0; B·1 ≠ 0 pointwise) |
 
-Code: `TQM.Tests/ResearchXH/G4L_Phase11_BDGCoefficientOriginTests.cs`.
+Code: `AT.Tests/ResearchXH/G4L_Phase11_BDGCoefficientOriginTests.cs`.

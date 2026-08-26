@@ -3,7 +3,7 @@
 **Goal:** evaluate the existing continuum chain
 $L_Q\to$ continuum operator $\to$ field equation $\to$ curved-space Schrödinger $\to$ Einstein
 recovery, and assign a final verdict.
-**Inputs:** `Q_Formalization_Program.md`, `TQM_QuantumGravity_Program.md` (QG-001),
+**Inputs:** `Q_Formalization_Program.md`, `AT_QuantumGravity_Program.md` (QG-001),
 `PhaseGradientGravityAnalyzer.cs` (QG-022), `EmergentGravityAnalyzer.cs` (X061),
 `GrBridgeAnalyzer.cs`/`04_Q_Networks_and_Laplacian.md`.
 **Discipline:** no new physics, no new derivations — reconstruction only.
@@ -33,7 +33,7 @@ The repository contains **two disjoint chains**, not one continuous chain:
 2. **The gravitational chain** — oscillation → phase → causal density → metric → curvature →
    Einstein (QG-022), with Einstein recovered at leading order (X061). This chain is
    **external** (the causal-set → metric link is "Sorkin+" mathematics, a stated remaining
-   gap in `TQM_QuantumGravity_Program.md`), and is **logical, not mathematical** by its own
+   gap in `AT_QuantumGravity_Program.md`), and is **logical, not mathematical** by its own
    hostile review ("no PDE connects $\theta(x)$ directly to $R_{\mu\nu}(x)$").
 
 The two chains **do not meet**: there is no step that promotes the flat Schrödinger operator
@@ -57,7 +57,7 @@ extension:
   reconstructable from current content.
 
 **Publication-scoping caveat.** This is a **Publication Blocker only for the specific claim
-"TQM derives Einstein from $L_Q$."** The revision (`TQM_v1_0_Paper_Revision.md` §9) already
+"AT derives Einstein from $L_Q$."** The revision (`AT_v1_0_Paper_Revision.md` §9) already
 scopes this honestly — "the chain is logical, not a new dynamical derivation … the value is
 ontological" — so the honestly-scoped paper is not blocked. What *is* blocked is any
 unqualified "controlled derivation of Einstein from the primitives" claim, which the Round-2
@@ -71,4 +71,4 @@ review correctly identifies as absent.
 
 **Bottom line:** the continuum chain is a **Research Program** — the missing curved-space
 Schrödinger and Schrödinger→Einstein steps are the defining open mathematical problem of the
-emergent-gravity side of TQM, and should be stated as such (not claimed) in any publication.
+emergent-gravity side of AT, and should be stated as such (not claimed) in any publication.

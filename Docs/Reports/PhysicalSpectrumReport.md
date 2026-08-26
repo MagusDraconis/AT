@@ -1,4 +1,4 @@
-# TQM-144 Physical Spectrum Correspondence
+# AT-144 Physical Spectrum Correspondence
 
 ## SCIENTIFIC REPORT
 
@@ -7,20 +7,20 @@
 **Classification: B — Known Graph Physics Only**
 
 Theta spectra ARE physical — the graph Laplacian IS the tight-binding
-Hamiltonian (mathematical identity). But TQM does NOT predict new physics.
+Hamiltonian (mathematical identity). But AT does NOT predict new physics.
 
 - **4 mathematical identities**: 1D/2D/3D Laplacians ≡ tight-binding models
 - **22 strong matches**: Pearson r = 1.000 for all identities
 - **Mean spectral overlap: 69%**
 - **Null hypothesis REJECTED** — spectra are physically meaningful
-- **Novel prediction: NO** — TQM reformulates known graph/lattice physics
+- **Novel prediction: NO** — AT reformulates known graph/lattice physics
 
 ---
 
 ## 1. Background
 
-TQM-142: L = graph Laplacian of Q interactions.
-TQM-143: Hierarchy universal across locally connected graphs.
+AT-142: L = graph Laplacian of Q interactions.
+AT-143: Hierarchy universal across locally connected graphs.
 
 Q: Do Theta spectra correspond to known physical systems?
 
@@ -61,10 +61,10 @@ The graph Laplacian IS the tight-binding Hamiltonian.
 
 - Graph Laplacian spectra = lattice vibration spectra = tight-binding spectra
 - This is standard spectral graph theory, known since the 1970s
-- TQM provides an **evolutionary interpretation** of graph spectra
-- TQM does NOT predict new spectral features beyond graph theory
+- AT provides an **evolutionary interpretation** of graph spectra
+- AT does NOT predict new spectral features beyond graph theory
 
-**TQM's contribution**: interpreting graph eigenmodes as "information species"
+**AT's contribution**: interpreting graph eigenmodes as "information species"
 and graph dynamics as "Darwinian evolution." This is a conceptual
 innovation, not a mathematical one.
 
@@ -77,7 +77,7 @@ innovation, not a mathematical one.
 **Theta physics = graph physics = lattice physics.**
 
 The correspondence is mathematical identity, not phenomenological analogy.
-TQM reformulates known physics (tight-binding, phonons, spin waves) in
+AT reformulates known physics (tight-binding, phonons, spin waves) in
 the language of information species and evolution.
 
 **The sixteen-level Theta hierarchy:**
@@ -85,5 +85,5 @@ the language of information species and evolution.
 
 ---
 
-*Experiment TQM-144 completed. Theta spectra = known lattice physics.*
-*TQM provides evolutionary interpretation of graph spectral theory.*
+*Experiment AT-144 completed. Theta spectra = known lattice physics.*
+*AT provides evolutionary interpretation of graph spectral theory.*

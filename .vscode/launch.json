@@ -5,20 +5,20 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "TQM.App — Blazor Server",
+            "name": "AT.App — Blazor Server",
             "type": "dotnet",
             "request": "launch",
-            "projectPath": "${workspaceFolder}/TQM.App/TQM.App.csproj",
+            "projectPath": "${workspaceFolder}/AT.App/AT.App.csproj",
             "launchSettingsProfile": "http"
         },
         {
-            "name": "TQM.App — Blazor Server (coreclr)",
+            "name": "AT.App — Blazor Server (coreclr)",
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build",
-            "program": "${workspaceFolder}/TQM.App/bin/Debug/net10.0/TQM.App.dll",
+            "program": "${workspaceFolder}/AT.App/bin/Debug/net10.0/AT.App.dll",
             "args": [],
-            "cwd": "${workspaceFolder}/TQM.App",
+            "cwd": "${workspaceFolder}/AT.App",
             "stopAtEntry": false,
             "env": {
                 "ASPNETCORE_ENVIRONMENT": "Development",

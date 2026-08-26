@@ -3,7 +3,7 @@
 **Program:** G4 — Native Metric-to-Operator Coupling (branch G4-F)
 **Phase:** 0 — interpret the physical meaning of ρ
 **Status:** COMPLETED — 3/3 xUnit tests pass
-**Question:** Which interpretation of ρ is most self-consistent inside TQM?
+**Question:** Which interpretation of ρ is most self-consistent inside AT?
 **Primitives used:** Q-events · counting measure · τ. No metric tensor, no Einstein equations, no Laplace–Beltrami import.
 
 ---
@@ -96,5 +96,5 @@ the structure/content split.
 | G4-F01 `G4_F01_NoNewPrimitiveRequired` | PASS (C1/C2 = 0 new layers; C3/C4 ≥ 1) |
 | G4-F02 `G4_F02_MinimalInterpretationSelection` | PASS (minimal set = {C1, C2}; canonical = C1) |
 
-Code: `TQM.Tests/ResearchXH/G4F_PhysicalMeaningOfRhoTests.cs` (inherits `ResearchTestBase`,
+Code: `AT.Tests/ResearchXH/G4F_PhysicalMeaningOfRhoTests.cs` (inherits `ResearchTestBase`,
 deterministic, `StringBuilder`-composed reports).

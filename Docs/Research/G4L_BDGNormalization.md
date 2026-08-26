@@ -77,4 +77,4 @@ global scale −2, which is fixed by continuum matching and does not admit a nat
 | G4-L121 `G4_L121_NativeCountsAreUnstable` | PASS (−degree/2 = −3 ≠ −2; past count [8,57]) |
 | G4-L122 `G4_L122_SecondMomentPinsTheScale` | PASS (M₂ = −2s; s = 2 unique via continuum) |
 
-Code: `TQM.Tests/ResearchXH/G4L_Phase12_BDGNormalizationTests.cs`.
+Code: `AT.Tests/ResearchXH/G4L_Phase12_BDGNormalizationTests.cs`.

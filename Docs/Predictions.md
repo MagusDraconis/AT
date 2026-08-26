@@ -7,4 +7,4 @@ SN Ia time-dilation discrimination significance ≈ 40σ.
 
 Verdict: Levels 1–4 pass (self-consistent, redshift+dilation, g†∝H, time-interpretation),
 Level 5 fails (no distinct falsifiable prediction). The model is a reinterpretation, not a
-new theory; it does NOT independently confirm TQM's g† = cH/2π.
+new theory; it does NOT independently confirm AT's g† = cH/2π.

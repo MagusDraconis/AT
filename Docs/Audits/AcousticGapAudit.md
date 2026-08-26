@@ -1,6 +1,6 @@
 # Acoustic Gap Audit
 
-**Goal:** minimal path from current TQM to a *computable* θ*.
+**Goal:** minimal path from current AT to a *computable* θ*.
 **Scope:** θ* = r_s / D_A only (no C_l derivation; no acoustic-model invention).
 
 ---
@@ -9,7 +9,7 @@
 
 | # | Dependency | Definition | Needed by |
 |---|---|---|---|
-| 1 | Background $H(z)$ | FLRW expansion (TQM: $w(z)$ or $\Lambda(t)$) | $r_s$, $D_A$ |
+| 1 | Background $H(z)$ | FLRW expansion (AT: $w(z)$ or $\Lambda(t)$) | $r_s$, $D_A$ |
 | 2 | $\rho_\gamma$, $T_{\rm CMB}$ | radiation density (2.7255 K) | $c_s$ |
 | 3 | $\Omega_b h^2$ | baryon density (Planck) | $c_s$, recombination |
 | 4 | Sound speed $c_s^2 = c^2/[3(1+R)]$, $R = 3\rho_b/4\rho_\gamma$ | baryon-to-photon ratio | $r_s$ |

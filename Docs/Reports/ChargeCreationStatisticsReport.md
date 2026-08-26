@@ -1,10 +1,10 @@
-# TQM-119: Topological Charge Creation Statistics
+# AT-119: Topological Charge Creation Statistics
 
 ## Executive Summary
 
 **Classification: D — Universal Nucleation Statistics (conditional on ensemble results)**
 
-TQM-119 determines the statistical law governing P(Q) — the probability
+AT-119 determines the statistical law governing P(Q) — the probability
 distribution of topological charge creation from an initially unstructured field.
 
 The key finding is that charge creation is a **nucleation process** governed by
@@ -120,9 +120,9 @@ where:
 | λ → 0 | 0 | Zero-range → no M₀ |
 | λ → ∞ | L/w | All-to-all → maximum M₀ |
 
-## 5. TQM-006 Reinterpretation
+## 5. AT-006 Reinterpretation
 
-TQM-006 discovered a critical resonance density ρc ≈ 0.09
+AT-006 discovered a critical resonance density ρc ≈ 0.09
 at which global synchronization emerges.
 
 **Charge statistics reinterpretation**:
@@ -130,7 +130,7 @@ at which global synchronization emerges.
 
 - ρ < ρc: M₀ < M_crit → Q=0 is stable (no charge creation)
 - ρ > ρc: M₀ > M_crit → spontaneous Q=0→Q≥1 transition
-- The TQM-006 phase transition IS the charge creation threshold
+- The AT-006 phase transition IS the charge creation threshold
 - ρc ≈ 0.09 corresponds to the density at which local coupling
   M₀ exceeds the critical value M_crit ≈ 0.053
 
@@ -144,7 +144,7 @@ The probability distribution P(Q) can be derived from the field theory:
 4. Independent regions → Q ~ Poisson(λ = N_cells · p)
 
 **Key insight**: P(Q) is NOT an empirical fit — it follows from the
-same reaction-diffusion field theory that governs the PDE (TQM-108).
+same reaction-diffusion field theory that governs the PDE (AT-108).
 Only the overall coefficient requires empirical calibration.
 
 ## 7. Physical Interpretation
@@ -205,7 +205,7 @@ Negative Binomial → correlated; Binomial → bounded.
 Yes if one distribution wins >80% of parameter points.
 No if distributions vary systematically with parameters.
 
-### Q7: Can TQM-006's ρc be reinterpreted?
+### Q7: Can AT-006's ρc be reinterpreted?
 YES — ρc ≈ 0.09 is the charge nucleation threshold expressed
 as a density rather than a coupling threshold.
 
@@ -221,14 +221,14 @@ The following falsification attempts were made:
    2 in λ, and 2 in N with multiple initial conditions.
 2. **Sub-threshold vs supra-threshold**: Conditional distributions
    P(Q|K), P(Q|λ), P(Q|N) tested for systematic shifts.
-3. **Q=0 vacuum assumption**: Already validated in TQM-118.
+3. **Q=0 vacuum assumption**: Already validated in AT-118.
 4. **Initial condition dependence**: Multiple IC types tested.
 5. **Analytic formula falsification**: Quantitative predictions
    compared to ensemble data.
 
 ## 10. Conclusion
 
-TQM-119 provides the **statistical foundation** for the topological
+AT-119 provides the **statistical foundation** for the topological
 charge theory. It determines whether charge creation follows
 a universal law (Poisson, Negative Binomial, etc.) or is
 parameter-dependent.
@@ -241,20 +241,20 @@ The result has deep implications:
 - **Binomial**: Charge creation is bounded — the system has a
   finite carrying capacity for topological charge.
 
-Combined with TQM-118 (creation mechanism) and TQM-117 (topological
-origin), TQM-119 completes the trilogy: **what is Q, how is it created,
+Combined with AT-118 (creation mechanism) and AT-117 (topological
+origin), AT-119 completes the trilogy: **what is Q, how is it created,
 and what statistics govern its creation.**
 
 ### Related Experiments
 
 | Experiment | Role in Charge Theory |
 |-----------|----------------------|
-| TQM-005 | First observation of Q>0 states (resonance clusters) |
-| TQM-006 | Critical density ρc = charge nucleation threshold |
-| TQM-010 | Proto-matter = Q≥1 topological states |
-| TQM-113 | Q = condensate count (definition) |
-| TQM-115 | Q robustness (threshold independence) |
-| TQM-116 | Q dynamics (conservation, transitions) |
-| TQM-117 | Q origin (derived from PDE, not defined) |
-| TQM-118 | Q creation mechanism (nucleation) |
-| TQM-119 | Q creation statistics (this work) |
+| AT-005 | First observation of Q>0 states (resonance clusters) |
+| AT-006 | Critical density ρc = charge nucleation threshold |
+| AT-010 | Proto-matter = Q≥1 topological states |
+| AT-113 | Q = condensate count (definition) |
+| AT-115 | Q robustness (threshold independence) |
+| AT-116 | Q dynamics (conservation, transitions) |
+| AT-117 | Q origin (derived from PDE, not defined) |
+| AT-118 | Q creation mechanism (nucleation) |
+| AT-119 | Q creation statistics (this work) |

@@ -1,6 +1,6 @@
 # Quantum-Gravity Bridge — Test Report
 
-**Test file:** `TQM.Tests/ResearchXC/QuantumGravityBridgeTests.cs`
+**Test file:** `AT.Tests/ResearchXC/QuantumGravityBridgeTests.cs`
 **Result:** **PASSED (3/3).**
 
 The bridge finding (`QuantumGravityBridge.md` — "Partially Connected, no bridge") is now

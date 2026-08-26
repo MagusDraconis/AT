@@ -1,6 +1,6 @@
 # Einstein Tensor Program — Report
 
-**Test file:** `TQM.Tests/ResearchXC/EinsteinTensorTests.cs`
+**Test file:** `AT.Tests/ResearchXC/EinsteinTensorTests.cs`
 **Result:** **PASSED (4/4).**
 
 ---
@@ -20,9 +20,9 @@ dimension $\ge3$.
 
 ---
 
-## Where TQM's own analyzers stand
+## Where AT's own analyzers stand
 
-| Step | TQM analyzer content | Nature |
+| Step | AT analyzer content | Nature |
 |---|---|---|
 | metric $g_{\mu\nu}$ | `GrBridgeAnalyzer` / `PoissonSprinklingAnalyzer` | **external** (Malament), imported |
 | Christoffel $\Gamma^\lambda_{\mu\nu}$ | `QuantumGravityEmergenceAnalyzer` (GeoStep text) | **described, never computed** |
@@ -34,7 +34,7 @@ dimension $\ge3$.
 
 ## The exact break point
 
-The chain breaks **at Step 1 — metric → Christoffels**. TQM possesses the metric (only as an
+The chain breaks **at Step 1 — metric → Christoffels**. AT possesses the metric (only as an
 *external* object) and *describes* every subsequent step as a string, but computes **none** of
 them. There is no `Christoffel`, `Riemann`, `Ricci`, or `Einstein` tensor anywhere in the
 repository; the only "curvature" is a simulated linear fit ($R\approx a+b\rho$) in
@@ -42,12 +42,12 @@ repository; the only "curvature" is a simulated linear fit ($R\approx a+b\rho$) 
 
 ## Conclusion
 
-TQM does **not** already contain enough ingredients to compute $G_{\mu\nu}$. The standard
-mathematics required is fully available and works (demonstrated here), but TQM implements none
+AT does **not** already contain enough ingredients to compute $G_{\mu\nu}$. The standard
+mathematics required is fully available and works (demonstrated here), but AT implements none
 of it — the chain stops at the externally-imported metric, and every downstream step is a
 string description, not a computation. To compute $G_{\mu\nu}$, one must implement the standard
 chain (Christoffel → Riemann → Ricci → Einstein), which is standard differential geometry — not
-new physics — but is **not present** in TQM.
+new physics — but is **not present** in AT.
 
 This is the concrete form of the Round-2 finding: the Einstein recovery is "logical, not
 mathematical" — the claim exists, the computation does not.

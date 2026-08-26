@@ -54,8 +54,8 @@
 | $z_*$ (recombination) | **Imported** — now *implemented* |
 | $H(z)$ ($E(z)$) | **Already available** (Pantheon analyzers) |
 
-None of these is **Derived** from TQM primitives — θ* is computed entirely from
-imported ΛCDM background physics, now wired together in TQM.
+None of these is **Derived** from AT primitives — θ* is computed entirely from
+imported ΛCDM background physics, now wired together in AT.
 
 ---
 
@@ -75,10 +75,10 @@ These are documented approximations, not new physics.
 
 ## 6. Conclusion
 
-θ* is now a **computed background observable** in TQM, obtained entirely from
+θ* is now a **computed background observable** in AT, obtained entirely from
 standard FLRW + recombination, at **−1.4%** of Planck. This closes the
-Acoustic-Gap chain: **recombination → $r_s$ → θ***, with **zero free TQM
+Acoustic-Gap chain: **recombination → $r_s$ → θ***, with **zero free AT
 parameters** and **no perturbation theory**.
 
-**Sources:** `TQM.Core/ResearchDATA/RecombinationAnalyzer.cs` (ComputeThetaStar),
-`TQM.Tests/ResearchDATA/TQM_ThetaStarAudit.cs`.
+**Sources:** `AT.Core/ResearchDATA/RecombinationAnalyzer.cs` (ComputeThetaStar),
+`AT.Tests/ResearchDATA/AT_ThetaStarAudit.cs`.

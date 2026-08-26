@@ -1,6 +1,6 @@
 # 12. Open Questions
 
-## Priority-Ordered After TQM-154
+## Priority-Ordered After AT-154
 
 ---
 
@@ -12,7 +12,7 @@
 
 **What we don't know**: Why ONE outcome occurs. Collapse mechanism. "And" → "or" transition.
 
-**TQM angle**: Can Q-network environment structure provide new insights? Does graph topology affect decoherence rates or pointer state selection?
+**AT angle**: Can Q-network environment structure provide new insights? Does graph topology affect decoherence rates or pointer state selection?
 
 ---
 
@@ -36,7 +36,7 @@
 
 ## Priority 4: Higher Dimensions
 
-**Status**: Partially explored (TQM-143 tested 1D-3D).
+**Status**: Partially explored (AT-143 tested 1D-3D).
 
 **Key question**: Do higher dimensions produce qualitatively new phenomena? Topological edge states? Phase transitions?
 
@@ -44,7 +44,7 @@
 
 ## Priority 5: Nonlinear Q Interactions
 
-**Status**: TQM-141 tested nonlinear mode composition (not essential).
+**Status**: AT-141 tested nonlinear mode composition (not essential).
 
 **Key question**: Under what conditions do nonlinearities produce new phenomena (solitons, chaos)?
 
@@ -92,7 +92,7 @@
 | 2 | Experiment | High | Unexplored |
 | 3 | Dynamic graphs | Moderate | Unexplored |
 | 4 | Higher dimensions | Moderate | Partial |
-| 5 | Nonlinearity | Moderate | Partial (TQM-141) |
+| 5 | Nonlinearity | Moderate | Partial (AT-141) |
 | 6 | Continuum limit | Low | Partial |
 | 7 | Born derivation | High | Gleason exists |
 | 8 | Thermodynamics | Moderate | Unexplored |
@@ -101,4 +101,4 @@
 
 ---
 
-*TQM-155: Open Questions. August 2026.*
+*AT-155: Open Questions. August 2026.*

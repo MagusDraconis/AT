@@ -1,10 +1,10 @@
-# TQM-132: Information Dynamics in the Θ Field
+# AT-132: Information Dynamics in the Θ Field
 
 ## Executive Summary
 
 **Classification: D — Autonomous Information Layer**
 
-TQM-132 determines whether information structures within Θ interact.
+AT-132 determines whether information structures within Θ interact.
 30 pairwise interaction experiments across 5 densities confirm:
 
 **Θ IS AN AUTONOMOUS INFORMATION DYNAMICS LAYER.** Information patterns
@@ -35,7 +35,7 @@ merge, reinforce, and interact — information has its own physics.
 
 | Layer | Variable | Dynamics | Coupling |
 |-------|----------|----------|----------|
-| **Matter** | Q ∈ ℕ | Nucleation (TQM-118) | ↓ creates Θ |
+| **Matter** | Q ∈ ℕ | Nucleation (AT-118) | ↓ creates Θ |
 | **Information** | Θ(x,t) | Transport + Memory + Interaction | ↑ does NOT bias Q |
 
 Within Θ: information-information interactions form a SELF-CONTAINED
@@ -45,9 +45,9 @@ information physics in proto-matter.
 ## 4. Conclusion
 
 The Θ field supports three levels of information processing:
-1. **Transport**: encode → propagate → decode (TQM-129)
-2. **Memory**: write → persist → read (TQM-130)
-3. **Dynamics**: merge → reinforce → cancel (TQM-132)
+1. **Transport**: encode → propagate → decode (AT-129)
+2. **Memory**: write → persist → read (AT-130)
+3. **Dynamics**: merge → reinforce → cancel (AT-132)
 
 This is an AUTONOMOUS INFORMATION LAYER — information has its own
 physics, independent of the matter that created it.

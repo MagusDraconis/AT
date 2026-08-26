@@ -4,7 +4,7 @@
 repository already implies the four probabilistic ingredients: the probability space
 $(\Omega,\mathcal F,P)$, the random variable, the generator, and the ensemble measure.
 **Inputs:** `XB002-Universal-Abundance-Distribution.md`, `RandomActualizationAnalyzer.cs`,
-`ContingentEnsembleAnalyzer.cs`, `TQM_Master_Reference.md` (A-03, T-04), `FoundationFormalization.md`.
+`ContingentEnsembleAnalyzer.cs`, `AT_Master_Reference.md` (A-03, T-04), `FoundationFormalization.md`.
 **Discipline:** no new physics — formal reconstruction of existing results only.
 
 ---

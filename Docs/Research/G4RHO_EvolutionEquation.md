@@ -83,5 +83,5 @@ log-deficit profile. The only remaining gap is the microscopic mechanism that im
 | G4-RHO21 `G4_RHO21_ScaleSpaceDiffusion` | PASS (diffusion → uniform, total conserved) |
 | G4-RHO22 `G4_RHO22_AttractorClassification` | PASS (uniform fixed point = log deficit; DERIVED) |
 
-Code: `TQM.Core/ResearchXH/RhoDynamics.cs` (added `EntropyDerivative`, `EntropySecondDerivative`,
-`DiffuseStep`); tests `TQM.Tests/ResearchXH/G4RHO_Phase2_EvolutionEquationTests.cs`.
+Code: `AT.Core/ResearchXH/RhoDynamics.cs` (added `EntropyDerivative`, `EntropySecondDerivative`,
+`DiffuseStep`); tests `AT.Tests/ResearchXH/G4RHO_Phase2_EvolutionEquationTests.cs`.

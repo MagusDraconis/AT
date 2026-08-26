@@ -1,4 +1,4 @@
-# Euclid — TQM Observational Status Report
+# Euclid — AT Observational Status Report
 
 **Experiment:** Euclid Space Telescope
 **Agency:** ESA (European Space Agency)
@@ -16,12 +16,12 @@
 | **Scientific Goal** | Map the geometry of the dark universe. Measure the expansion history and growth of structure to constrain dark energy, modified gravity, and dark matter. |
 | **Operational Status** | Launched July 2023. Commissioning complete. Survey operations began early 2024. First cosmology data release expected 2025–2026. |
 | **Major Data Releases** | Quick Release 1 (QR1): 2025. Data Release 1 (DR1): 2026. Data Release 2 (DR2): 2028. Final release: ~2029. |
-| **Relevance to TQM** | Euclid is the primary experiment for testing TQM's most distinctive prediction: time-varying dark energy. TQM predicts w(z) ≠ −1 with deviation ~1–4%. Euclid will measure w(z) with σ ≈ 0.02. |
-| **TQM Priority** | **CRITICAL — Tier 1 Kill Shot.** |
+| **Relevance to AT** | Euclid is the primary experiment for testing AT's most distinctive prediction: time-varying dark energy. AT predicts w(z) ≠ −1 with deviation ~1–4%. Euclid will measure w(z) with σ ≈ 0.02. |
+| **AT Priority** | **CRITICAL — Tier 1 Kill Shot.** |
 
 ---
 
-## 2. TQM Predictions Tested
+## 2. AT Predictions Tested
 
 | Prediction | Program | Confidence | Observable | Expected Signal |
 |-----------|:--:|:--:|------------|-----------------|
@@ -34,22 +34,22 @@
 
 ## 3. Current Observational Status
 
-| Prediction | Current Measurement | Uncertainty | TQM Expectation | Agreement |
+| Prediction | Current Measurement | Uncertainty | AT Expectation | Agreement |
 |-----------|---------------------|-------------|-----------------|:--:|
 | w(z) — Planck+BAO+SNe | w = −1.03 ± 0.03 | σ ≈ 0.03 | w ≈ −0.985 (z=0) | **Consistent** (within ~1σ) |
 | fσ₈(z) — current surveys | Consistent with ΛCDM | σ ≈ 0.05–0.10 | 2–3% lower than ΛCDM | **Consistent** (uncertainty too large) |
 | w(z) — Euclid alone | Not yet available | σ ≈ 0.02 (projected) | Pending | **Awaiting data** |
 
-**Status Summary:** All existing constraints are consistent with both ΛCDM and TQM. Current uncertainties are approximately 2× larger than the predicted deviation for w(z) and ~5× larger for growth. Neither model is distinguished.
+**Status Summary:** All existing constraints are consistent with both ΛCDM and AT. Current uncertainties are approximately 2× larger than the predicted deviation for w(z) and ~5× larger for growth. Neither model is distinguished.
 
 ---
 
 ## 4. Falsification Criteria
 
-| Outcome | Threshold | TQM Status |
+| Outcome | Threshold | AT Status |
 |---------|:--:|------------|
-| **A: Supports TQM** | w ≠ −1 at >3σ with correct sign (w > −1) and approximate magnitude | TQM survives most critical test. Λ(t) hypothesis consistent. |
-| **B: Creates tension** | w ≈ −1.00 ± 0.02 (Euclid alone) | TQM in ~1.5σ tension. Wait for Roman. |
+| **A: Supports AT** | w ≠ −1 at >3σ with correct sign (w > −1) and approximate magnitude | AT survives most critical test. Λ(t) hypothesis consistent. |
+| **B: Creates tension** | w ≈ −1.00 ± 0.02 (Euclid alone) | AT in ~1.5σ tension. Wait for Roman. |
 | **C: Requires revision** | w = −1.00 ± 0.01 (Euclid + Roman) → >3σ | Sector Replacement: Tier 4 cosmology replaced. Tier 3 abundance revised. |
 | **D: Falsifies sector** | w = −1.000 ± 0.005 at all z (multiple probes, >5σ) | Cosmology sector decisively falsified. Recovery Path D: full sector replacement. |
 
@@ -63,7 +63,7 @@
 |:--:|--------|
 | **Tier 4** | Λ(t) hypothesis survives. w(z) model refined with measured parameters. |
 | **Tier 3** | Abundance framework strengthened — freezeout-from-Λ connection validated. |
-| **Tier 0-2** | Unaffected. Core TQM neither gains nor loses support. |
+| **Tier 0-2** | Unaffected. Core AT neither gains nor loses support. |
 
 ### If Predictions Fail
 
@@ -101,9 +101,9 @@
 
 ## 8. Hostile Audit
 
-*Assuming TQM is wrong: what would Euclid most likely reveal?*
+*Assuming AT is wrong: what would Euclid most likely reveal?*
 
-Euclid is most likely to measure w(z) = −1.000 ± 0.01 — consistent with the standard ΛCDM cosmological constant. If TQM's Λ(t) prediction is wrong, this is the simplest and most probable outcome. The framework's cosmology sector would be falsified exactly as predicted by its own failure analysis.
+Euclid is most likely to measure w(z) = −1.000 ± 0.01 — consistent with the standard ΛCDM cosmological constant. If AT's Λ(t) prediction is wrong, this is the simplest and most probable outcome. The framework's cosmology sector would be falsified exactly as predicted by its own failure analysis.
 
 The specific assumption under test is that Λ emerges from Poisson fluctuations of Q-event count in causal diamonds (X046). If this assumption is false — if Λ is a fundamental constant, or emerges through a different mechanism — Euclid will detect no deviation from w = −1.
 
@@ -123,7 +123,7 @@ The prediction is specific and falsifiable. The experiment is operational. The u
 | Experimental capability | **Excellent** — Euclid + Roman will reach σ ≈ 0.01 |
 | Current tension | None — prediction and data are consistent |
 | Timeline to decision | ~4–5 years to decisive test |
-| Overall | **Poised for decisive test.** TQM's best chance at confirmation or falsification. |
+| Overall | **Poised for decisive test.** AT's best chance at confirmation or falsification. |
 
 ---
 

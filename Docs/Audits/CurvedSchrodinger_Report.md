@@ -1,6 +1,6 @@
 # Curved Schrödinger — Report
 
-**Test file:** `TQM.Tests/ResearchXC/CurvedSchrodingerTests.cs`
+**Test file:** `AT.Tests/ResearchXC/CurvedSchrodingerTests.cs`
 **Result:** **PASSED (3/3).**
 
 ---
@@ -32,7 +32,7 @@ object is the *interpretation*: $L_W$ as the Hamiltonian of a curved Schrödinge
 1. **$L_W$ defines a curved operator** — it is symmetric and positive semi-definite (a valid
    self-adjoint Hamiltonian), and non-uniform weights shift its spectrum (metric-dependence).
 2. **Reduction to flat** — uniform weights give $L_W=L_Q$, so the curved equation
-   $i\partial_t\psi=L_W\psi$ reduces to the flat $i\partial_t\psi=L_Q\psi$ (the TQM Postulate-2
+   $i\partial_t\psi=L_W\psi$ reduces to the flat $i\partial_t\psi=L_Q\psi$ (the AT Postulate-2
    Schrödinger).
 3. **Norm conservation** — because $L_W$ is self-adjoint with real eigenvalues, the propagator
    $e^{-iL_W t}$ is unitary and $\|\psi(t)\|^2$ is conserved to machine precision.

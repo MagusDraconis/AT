@@ -1,10 +1,10 @@
-# TQM-124: Coherent Field Excitations of Topological Charge
+# AT-124: Coherent Field Excitations of Topological Charge
 
 ## Executive Summary
 
 **Classification: C — Coherent Excitation Spectrum**
 
-TQM-124 investigates whether Q=+1 topological charge quanta support
+AT-124 investigates whether Q=+1 topological charge quanta support
 coherent wave-like internal excitations. Perturbation experiments
 (PhaseKick, EnergyInject, SpatialSqueeze, FrequencyChirp) and
 two-charge coherence tests reveal:
@@ -18,8 +18,8 @@ and a coherent field excitation (wave aspect).
 
 ## 1. The Key Question
 
-TQM-117..122 established Q=+1 as a topological invariant.
-TQM-123 showed charges behave as a dilute gas.
+AT-117..122 established Q=+1 as a topological invariant.
+AT-123 showed charges behave as a dilute gas.
 
 But are charges ONLY static topological objects? Or do they
 also carry internal coherent dynamics?
@@ -67,7 +67,7 @@ Q and θ are **independent degrees of freedom**:
 
 ## 5. Physical Significance
 
-1. **The original TQM oscillator picture survives beneath topology.**
+1. **The original AT oscillator picture survives beneath topology.**
    Each Q=+1 carries the Kuramoto phase oscillation — the original
    synchronization dynamics are still present.
 

@@ -60,7 +60,7 @@ Long-range (Newtonian-form) gravity emerges from the **conformal 1/r tail** of a
 
 - A single/localized deficit: field ∝ ∇m (localized, no long range).
 - A scale-free hierarchy (one void per octave, amplitude ∝ 1/R): cumulative deficit m ∝ 1/r,
-  whose gradient is the 1/r² field — this is the TQM representation of a point-like source
+  whose gradient is the 1/r² field — this is the AT representation of a point-like source
   ρ ≈ 1 − d·M/r (the conformal factor of a Newtonian point mass).
 
 | Quantity | Localized deficit | Scale-free hierarchy |
@@ -90,6 +90,6 @@ localized.
 | G4-ME21 `G4_ME21_NestedSelfSimilarEmergence` | PASS (m ∝ 1/r, a ∝ 1/r²) |
 | G4-ME22 `G4_ME22_AbundanceLawContinuumLimit` | PASS (M_eff → const, exact 1/r²) |
 
-Code: `TQM.Core/ResearchXH/DeficitCollective.cs` (3D radial TQM/Newtonian acceleration, effective
+Code: `AT.Core/ResearchXH/DeficitCollective.cs` (3D radial AT/Newtonian acceleration, effective
 enclosed mass, power-law/nested/compact/Gaussian deficit profiles, log-log fit);
-tests `TQM.Tests/ResearchXH/G4ME_Phase2_LongRangeGravityTests.cs`.
+tests `AT.Tests/ResearchXH/G4ME_Phase2_LongRangeGravityTests.cs`.

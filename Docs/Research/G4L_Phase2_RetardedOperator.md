@@ -74,7 +74,7 @@ R3 matches BDG's **indefinite spectrum** but loses directionality. The full reta
 | G4-L21 `G4_L21_SpectrumAndIntervalResponse` | PASS (R1/R2 nilpotent, R3 indefinite) |
 | G4-L22 `G4_L22_PropagationAsymmetryAndBdgDistance` | PASS (R1 forward-only matches BDG) |
 
-Code: `TQM.Core/ResearchXH/LorentzianOperator.cs` (added `PastDirectedLayer`,
+Code: `AT.Core/ResearchXH/LorentzianOperator.cs` (added `PastDirectedLayer`,
 `FutureDirectedLayer`, `BidirectionalLayer`, `Transpose`, `DirectedLayerProfile`);
 `SpectralCurvature.GeneralEigenvalues`; tests
-`TQM.Tests/ResearchXH/G4L_Phase2_RetardedOperatorTests.cs`.
+`AT.Tests/ResearchXH/G4L_Phase2_RetardedOperatorTests.cs`.

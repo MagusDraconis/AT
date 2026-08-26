@@ -37,7 +37,7 @@ Each mode has:
 The spectral landscape is the set of all stable eigenmodes:
 
 ```
-k=0: Uniform mode         — species A (TQM-133)
+k=0: Uniform mode         — species A (AT-133)
 k=1: Fundamental mode     — species B (standing wave)
 k=2: 2nd harmonic         — species with 2 nodes
 k=3: 3rd harmonic         — species with 3 nodes
@@ -47,10 +47,10 @@ k=9: 9th harmonic         — highest stable mode
 
 Each mode is a **candidate information species**.
 The mode's properties determine the species' characteristics:
-- Nodal count → complexity (TQM-138)
+- Nodal count → complexity (AT-138)
 - Frequency → oscillation rate
-- Stability → persistence (TQM-130)
-- Mode order → connectivity (TQM-139)
+- Stability → persistence (AT-130)
+- Mode order → connectivity (AT-139)
 
 ### 4. Why the Spectrum is Finite
 
@@ -63,11 +63,11 @@ For N=10 and γ=0.1, all 10 modes are stable. For larger N
 or higher γ, high-k modes become unstable → fewer species.
 
 The finite spectrum explains:
-- **Innovation saturation** (TQM-138): when all stable modes
+- **Innovation saturation** (AT-138): when all stable modes
   are discovered, no new species can emerge
-- **Species count** (TQM-139): ~10-19 species = number of
+- **Species count** (AT-139): ~10-19 species = number of
   stable eigenmodes in the relevant N range
-- **Bounded complexity** (TQM-138): maximum nodal count =
+- **Bounded complexity** (AT-138): maximum nodal count =
   maximum stable mode order
 
 ### 5. Mode Mixing and Evolutionary Transitions
@@ -141,7 +141,7 @@ a discrete eigenvalue spectrum.
 
 ### 9. Implications
 
-#### 9.1 For TQM
+#### 9.1 For AT
 
 The spectral origin completes the reductionist chain:
 - Species exist (133) BECAUSE eigenmodes exist (140)

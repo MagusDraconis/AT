@@ -1,10 +1,10 @@
 # Topological Wave Quantum
 
-## TQM-124: Classical Wave-Particle Duality in Proto-Matter
+## AT-124: Classical Wave-Particle Duality in Proto-Matter
 
 ### Abstract
 
-TQM-124 demonstrates that Q=+1 topological charge quanta are
+AT-124 demonstrates that Q=+1 topological charge quanta are
 simultaneously topological objects (conserved integer charge)
 and coherent field excitations (internal phase oscillation at ω≈1).
 This classical wave-particle duality enriches the proto-matter
@@ -68,7 +68,7 @@ It costs no energy (Goldstone mode). It does not change Q.
 | **Quantity** | Q ∈ ℕ | θ(t) ∈ [0, 2π) |
 | **Conservation** | dQ/dt = 0 | Not conserved |
 | **Quantization** | Integer | Continuous |
-| **Creation** | Nucleation (TQM-118) | Always present |
+| **Creation** | Nucleation (AT-118) | Always present |
 | **Interaction** | Mergers Q=2→Q=1 | Phase-locking |
 | **Symmetry** | Topological | U(1) phase |
 
@@ -76,7 +76,7 @@ Both aspects are CLASSICAL — no quantum mechanics required.
 
 ### 5. Comparison with Quantum Wave-Particle Duality
 
-| Property | QM Duality | TQM Duality |
+| Property | QM Duality | AT Duality |
 |----------|-----------|-------------|
 | Origin | Quantum measurement | Classical PDE structure |
 | Charge | Electric charge (ħ) | Topological charge (β₀) |

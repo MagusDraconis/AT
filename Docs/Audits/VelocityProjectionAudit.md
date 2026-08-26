@@ -79,6 +79,6 @@ $\ell$-mapping ($j_\ell'=j_{\ell-1}-\tfrac{\ell+1}{x}j_\ell$, i.e. $\ell\to\ell\
 and the acoustic phase shift $\phi\approx0.8$ rad — the full line-of-sight
 integral, not the Limber quadrature. No new physics is required.
 
-**Sources:** `TQM.Core/ResearchDATA/PeakHeightAnalyzer.cs` (`FindVelocityExtrema`,
+**Sources:** `AT.Core/ResearchDATA/PeakHeightAnalyzer.cs` (`FindVelocityExtrema`,
 `FindAcousticPeaksVisible`, `DopplerProjectionWeight`),
-`TQM.Tests/ResearchDATA/TQM_VelocityProjectionAudit.cs`.
+`AT.Tests/ResearchDATA/AT_VelocityProjectionAudit.cs`.

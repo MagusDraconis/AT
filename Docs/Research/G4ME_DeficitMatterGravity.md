@@ -19,15 +19,15 @@ superposition against Newtonian expectation.
 
 ### (a) Gaussian deficit (G4-ME10)
 
-| x | a_TQM | a_Newton |
+| x | a_AT | a_Newton |
 |---|---|---|
 | 0.2 | −0.17 | −0.23 |
 | 0.6 | −0.34 | −0.72 |
 | 1.0 | −0.05 | −0.93 |
 
 - **Attractive** (a < 0) everywhere ✅
-- **Falloff**: a_TQM ∝ ∇m (exponential, localized); a_Newton ∝ −∫m (→ constant, long-range). The
-  ratio |a_TQM/a_Newton| shrinks outward — TQM is localized.
+- **Falloff**: a_AT ∝ ∇m (exponential, localized); a_Newton ∝ −∫m (→ constant, long-range). The
+  ratio |a_AT/a_Newton| shrinks outward — AT is localized.
 
 ### (b) Spherical deficit + superposition (G4-ME11)
 
@@ -36,15 +36,15 @@ superposition against Newtonian expectation.
 
 ### (c) Extended halo (G4-ME12)
 
-- a_TQM(0.3) = −0.19, a_TQM(1.0) = −0.03 (attractive, decaying);
+- a_AT(0.3) = −0.19, a_AT(1.0) = −0.03 (attractive, decaying);
 - a_Newton(0.3) = −0.08, a_Newton(1.0) = −0.15 (attractive, growing toward the enclosed mass).
-- Effective mass profile: TQM ∝ ∇m (local), Newton ∝ ∫m (enclosed).
+- Effective mass profile: AT ∝ ∇m (local), Newton ∝ ∫m (enclosed).
 
 ---
 
 ## 3. Classification: **PARTIAL MATCH**
 
-| Newtonian feature | TQM deficit matter |
+| Newtonian feature | AT deficit matter |
 |---|---|
 | attractive sign | ✅ (a < 0 toward deficits) |
 | long-range 1/r² falloff | ❌ (localized ∝ ∇m, zero outside) |
@@ -75,5 +75,5 @@ non-conformal primitive — which remains an open question of the G4-ME program.
 | G4-ME11 `G4_ME11_SphericalDeficitAndSuperposition` | PASS (no exterior field; local superposition) |
 | G4-ME12 `G4_ME12_ExtendedHaloAndClassification` | PASS (PARTIAL MATCH) |
 
-Code: `TQM.Core/ResearchXH/PhysicalObservables.cs` (added `SphericalDeficit`, `NewtonianDeficitAcceleration`);
-tests `TQM.Tests/ResearchXH/G4ME_Phase1_DeficitMatterGravityTests.cs`.
+Code: `AT.Core/ResearchXH/PhysicalObservables.cs` (added `SphericalDeficit`, `NewtonianDeficitAcceleration`);
+tests `AT.Tests/ResearchXH/G4ME_Phase1_DeficitMatterGravityTests.cs`.

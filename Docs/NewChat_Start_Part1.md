@@ -1,8 +1,8 @@
-# TQM - New Chat Context
+# AT - New Chat Context
 
 ## Mission
 
-TQM (THE Q-MODEL) investigates whether matter,
+AT (THE Q-MODEL) investigates whether matter,
 quantum behaviour and later gravitation emerge from
 self-organizing oscillations of a temporal field.
 
@@ -44,28 +44,28 @@ Cosmology
 
 ## Completed Experiments
 
-### TQM-001
+### AT-001
 
 Synchronization emerges.
 
 Result:
 Order parameter R approaches 1.
 
-### TQM-002
+### AT-002
 
 Random matrices do not produce convincing emergence.
 
 Result:
 Wigner-like spectrum.
 
-### TQM-003
+### AT-003
 
 Structured topology alone is insufficient.
 
 Result:
 Dynamics likely more important than static structure.
 
-### TQM-004
+### AT-004
 
 Field-mediated interaction alone does not produce synchronization
 for two asymmetric oscillators.
@@ -80,7 +80,7 @@ New Insight:
 The temporal field may behave more like a resonance medium than a
 pure synchronization medium.
 
-### TQM-005
+### AT-005
 
 Resonance cluster formation tested with 100 oscillators in a 1D field.
 
@@ -98,7 +98,7 @@ The hypothesis that matter = dynamically stabilized resonance structures
 is SUPPORTED — stable clusters DO form. But they do not yet dominate the
 field at current parameters.
 
-### TQM-006
+### AT-006
 
 Critical resonance density in Kuramoto networks.
 
@@ -112,34 +112,34 @@ A SHARP phase transition was identified at ρc ≈ 0.09.
 
 The transition is a percolation-like phenomenon: once the random coupling
 graph reaches sufficient connectivity, global coherent modes emerge.
-This is the first TQM experiment to identify a well-defined critical threshold
+This is the first AT experiment to identify a well-defined critical threshold
 for the emergence of stable ordered structures.
 
-### TQM-007
+### AT-007
 
 Resonance family discovery above critical density.
 
 Result:
 
 5 resonance families were initially identified from 51 clusters across 60 parameter
-combinations. However, TQM-008 later showed only F4 is truly reproducible.
+combinations. However, AT-008 later showed only F4 is truly reproducible.
 
-### TQM-008
+### AT-008
 
-Reproducibility analysis of TQM-007 families (400 simulations, 100 seeds × 4 parameter sets).
+Reproducibility analysis of AT-007 families (400 simulations, 100 seeds × 4 parameter sets).
 
 Result:
 
 Only F4 Stable Coherent is UNIVERSAL (74% occurrence, reproducibility score 0.721).
 - F4 appears in 97-100% of runs at K ≥ 5
 - F0 Transient: only at (ρ=0.30, K=3.0) — noise regime
-- F1 Stable Large: NOT DETECTED — TQM-007 artifact
-- F2 Ultra-Stable Compact: NOT DETECTED — TQM-007 artifact
+- F1 Stable Large: NOT DETECTED — AT-007 artifact
+- F2 Ultra-Stable Compact: NOT DETECTED — AT-007 artifact
 - F3 Stable Medium: Seed Artifact (1% occurrence)
 
 Best parameter set: (ρ=0.50, K=5.0) → F4 reproducibility 0.980.
 
-Conclusion: TQM-007's apparent family diversity was largely driven by a single
+Conclusion: AT-007's apparent family diversity was largely driven by a single
 seed. Only one robust, reproducible family exists at N=100 — the universal
 coherent mode. Higher N or heterogeneous coupling may be needed for true diversity.
 
@@ -156,7 +156,7 @@ The temporal field is both a synchronization medium AND a resonance medium.
 Confirmed: Stable resonance clusters form. A critical density ρc exists.
 Only ONE universal resonance family (F4) is robustly reproducible at N=100.
 
-Multiple families appeared in TQM-007 but failed reproducibility —
+Multiple families appeared in AT-007 but failed reproducibility —
 true family diversity may require larger systems or structured coupling.
 
 Current emerging interpretation:
@@ -166,9 +166,9 @@ Synchronization → long-range collective behaviour.
 Critical density → threshold for structure formation.
 Universal family F4 → the single robust resonance mode at current scale.
 
-### TQM-011
+### AT-011
 
-Perturbation stability analysis of TQM-010 condensates (25 runs).
+Perturbation stability analysis of AT-010 condensates (25 runs).
 
 Result:
 
@@ -184,13 +184,13 @@ CONDENSATES ARE STABLE DYNAMICAL ATTRACTORS — 96% survival rate.
 Proto-matter condensates are NOT fragile fluctuations — they are genuine
 dynamical attractors that actively self-repair after severe disturbance.
 
-### TQM-010
+### AT-010
 
 Local resonance condensation with 2D spatial embedding (64 parameter combos).
 
 Result:
 
-PROTO-MATTER STATES DETECTED — the first TQM experiment to demonstrate
+PROTO-MATTER STATES DETECTED — the first AT experiment to demonstrate
 localized coherent structures persisting in a globally incoherent background.
 
 - 64/64 combos produced condensates (local R ≥ 0.80)
@@ -214,7 +214,7 @@ embedded in a globally incoherent background. These are proto-matter states.
 Mechanism: Resonance → localized condensation → proto-matter structures.
 Synchronization → long-range collective behavior between structures.
 
-### TQM-012
+### AT-012
 
 Two-condensate interaction experiment (64 combos, 4 sep × 4 phase × 4 K).
 
@@ -234,7 +234,7 @@ with weak coupling (K=1,2).
 Key insight: Condensate interaction is a threshold phenomenon, not a gradual force.
 Within coupling range → rapid merger. Beyond range → independent coexistence.
 
-### TQM-044
+### AT-044
 
 Historical path dependence (8 sequences, 10 seeds).
 
@@ -244,7 +244,7 @@ AB ≠ BA — the ORDER of past experiences creates distinguishable identities.
 4/4 paired comparisons showed significant differences.
 Historical path dependence is a property of memory-bearing condensates.
 
-### TQM-045
+### AT-045
 
 Historical identity lifetime (AB vs BA, 3 time scales, 8 seeds).
 
@@ -254,7 +254,7 @@ Path-dependent identity differences PERSIST — ΔR at 50K iterations
 remains significant. Historical signatures do not decay to zero
 on accessible time scales.
 
-### TQM-046
+### AT-046
 
 Memory vs attractor competition (7 β × 5 times × 2 sequences × 5 seeds).
 
@@ -264,7 +264,7 @@ Memory (β) competes with attractor relaxation. Higher β preserves
 identity differences longer, but attractor convergence eventually
 dominates at long times for all β values.
 
-### TQM-047
+### AT-047
 
 Identity–Energy Coupling Analysis (720 runs: 6 histories × 6 injections × 5 β × 4 seeds).
 
@@ -284,7 +284,7 @@ Key insight: A condensate has at least TWO independent state dimensions:
 identity (historical, structural) and energy (magnitude, intensity).
 They are orthogonal degrees of freedom — not two names for the same thing.
 
-### TQM-048
+### AT-048
 
 Identity Preservation Under Energy Transfer (1320 runs: 6 histories × 11 transfers × 5 β × 4 seeds).
 
@@ -301,13 +301,13 @@ CLASSIFICATION B: Identity partially follows energy within a single condensate.
 - Baseline drift (0% transfer): 0.008 (near zero)
 
 Key insight: Identity and energy are independent across different condensates
-(TQM-047) but WITHIN a single condensate, identity survives only within a
+(AT-047) but WITHIN a single condensate, identity survives only within a
 finite stability band (±25% frequency change). Beyond this band, the attractor
 landscape is reshaped and identity is lost. This reveals a STABILITY THRESHOLD
 for identity — a condensate can absorb moderate energy changes while
 maintaining its identity, but extreme changes destroy it.
 
-### TQM-049
+### AT-049
 
 Identity Recovery After Energy Collapse (1296 runs: 6 histories × 6 transfers × 3 schedules × 4 β × 3 seeds).
 
@@ -335,7 +335,7 @@ historical identity. Identity is ENCODED IN THE PHASE STRUCTURE and survives
 energy excursions as a LATENT STATE. This is analogous to a memory that
 becomes inaccessible but not erased — more like hiding than destroying.
 
-### TQM-050
+### AT-050
 
 Identity Transfer Between Condensates (240 runs: 5 distances × 4 durations × 4 β × 3 seeds).
 
@@ -362,12 +362,12 @@ it is a LOCAL PROPERTY that resists propagation. This is a form of
 IDENTITY EXCLUSION: distinct identities cannot coexist at close range
 without diverging further apart in phase space.
 
-Combined with TQM-012 (spatial merger at close range), this suggests
+Combined with AT-012 (spatial merger at close range), this suggests
 a nuanced picture: spatial positions merge (condensates physically combine)
 but identities repel (phase structures diverge). The oscillator positions
 may converge while the phase configurations become MORE distinct.
 
-### TQM-051
+### AT-051
 
 Minimal Identity Formation (280 runs: 14 histories × 20 seeds).
 
@@ -393,21 +393,21 @@ This means: for small perturbations, you CANNOT reliably distinguish
 a changed history from a different random seed. Identity formation is
 dominated by initial conditions, not fine historical details.
 
-Complementary to TQM-044 (AB ≠ BA for LARGE history differences),
-TQM-051 shows that SMALL historical differences do NOT create
+Complementary to AT-044 (AB ≠ BA for LARGE history differences),
+AT-051 shows that SMALL historical differences do NOT create
 distinguishable identities. Identity has a "resolution limit" —
 perturbations below this limit are indistinguishable from noise.
 
 Identity has FIVE established properties:
-- STATIC STABILITY (TQM-047): Identity ≠ energy across runs.
-- BAND STABILITY (TQM-048): Identity survives ±25% energy changes.
-- LATENT STABILITY (TQM-049): Identity recovers after energy collapse.
-- IDENTITY EXCLUSION (TQM-050): Identities repel at close range.
-- RESOLUTION LIMIT (TQM-051): Small perturbations indistinguishable from noise.
+- STATIC STABILITY (AT-047): Identity ≠ energy across runs.
+- BAND STABILITY (AT-048): Identity survives ±25% energy changes.
+- LATENT STABILITY (AT-049): Identity recovers after energy collapse.
+- IDENTITY EXCLUSION (AT-050): Identities repel at close range.
+- RESOLUTION LIMIT (AT-051): Small perturbations indistinguishable from noise.
   Identity requires a minimum historical difference to be distinguishable.
   Below this resolution, identity is dominated by stochastic initial conditions.
 
-### TQM-052
+### AT-052
 
 Conserved Quantity Discovery (144 measurements: 24 condensates × 6 transformations).
 
@@ -439,7 +439,7 @@ conserves while identity and energy fluctuate around it.
 Identity and energy are PROJECTIONS of coherence onto different
 measurement axes.
 
-### TQM-053
+### AT-053
 
 Causal Role of Coherence (168 runs: 6 histories × 7 coherence targets × 4 seeds).
 
@@ -457,7 +457,7 @@ EMERGENT CONSEQUENCE, not the causal root — classification C.
 - Achieved R never drops below 0.80 even for target 0.0
 
 Key insight: THE CAUSAL TEST PRODUCES A PARADOX. Coherence IS conserved
-(TQM-052) but you CANNOT meaningfully destroy it to test causality
+(AT-052) but you CANNOT meaningfully destroy it to test causality
 because the Kuramoto dynamics are an attractor toward synchronization.
 Phase disruption is temporary — the coupling instantly drives oscillators
 back toward coherence. This means:
@@ -482,13 +482,13 @@ What WOULD destroy coherence, and what would happen to identity then?
 would identity survive? Is there a transformation that bypasses
 the coherence attractor?)
 
-### TQM-054
+### AT-054
 
 Minimization Principle Discovery (1134 snapshots: 21 condensates × 3 phases × ~18 snapshots).
 
 Result:
 
-NO GLOBAL MINIMIZATION PRINCIPLE FOUND — classification A. TQM dynamics
+NO GLOBAL MINIMIZATION PRINCIPLE FOUND — classification A. AT dynamics
 are NOT gradient descent on any single scalar potential. However, the
 RECOVERY phase IS a perfect minimization process (100% monotonic).
 
@@ -499,14 +499,14 @@ RECOVERY phase IS a perfect minimization process (100% monotonic).
 - Energy injection phase: 0-2% monotonic — actively increases potentials
 - Recovery phase: 97-100% monotonic — PERFECT gradient descent
 
-Key insight: NO ACTION PRINCIPLE EXISTS for general TQM dynamics.
+Key insight: NO ACTION PRINCIPLE EXISTS for general AT dynamics.
 The phase space is not a simple potential well — multiple competing
 forces shape the evolution simultaneously. But RECOVERY after
 perturbation IS a minimization process: when the system returns
 to baseline from a disrupted state, it follows the steepest descent
 path toward lower potential values.
 
-This resolves the TQM-052/053 paradox:
+This resolves the AT-052/053 paradox:
 - Coherence IS conserved (052) — but not because it's minimized
 - Coherence IS an attractor (053) — but not of a scalar potential
 - The dynamics are RICHER than gradient descent — the phase space
@@ -516,11 +516,11 @@ This resolves the TQM-052/053 paradox:
 ## Next Open Question
 
 If there is no global minimization principle, what IS the geometric
-structure of the TQM phase space?
+structure of the AT phase space?
 (Is it a manifold with curvature? Are there saddle points? Can we
 compute the Hessian of the dynamics to understand the local geometry?)
 
-### TQM-055
+### AT-055
 
 Resonance Landscape Mapping (750 states: 6 histories × 5 β × 5 energies × 5 seeds).
 
@@ -534,17 +534,17 @@ MULTIPLE ATTRACTOR BASINS — classification C. The state space contains
 - Energy change ALWAYS crosses basin boundaries (0% same-basin)
 - Local Coherence: ZERO variance — confirmed invariant
 
-NOTE (TQM-056): These 5 basins were later found to be SAMPLING
+NOTE (AT-056): These 5 basins were later found to be SAMPLING
 ARTIFACTS — at 10× finer resolution, the landscape is continuous
 with only ONE large basin.
 
-### TQM-056
+### AT-056
 
 Emergent Basin Spectrum (1224 states: 51 energy levels × 2 β × 6 histories × 2 seeds).
 
 Result:
 
-CONTINUOUS LANDSCAPE — classification A. TQM-055's 5 basins were
+CONTINUOUS LANDSCAPE — classification A. AT-055's 5 basins were
 SAMPLING ARTIFACTS created by coarse energy discretization.
 
 - Large basin count: ALWAYS 1 across all clustering thresholds
@@ -557,7 +557,7 @@ SAMPLING ARTIFACTS created by coarse energy discretization.
 
 Key insight: THE RESONANCE LANDSCAPE IS A SINGLE CONNECTED ATTRACTOR.
 Energy is a CONTINUOUS GRADIENT, not a source of discrete basins.
-The 5 basins in TQM-055 were artifacts of using only 5 discrete
+The 5 basins in AT-055 were artifacts of using only 5 discrete
 energy levels — exactly H0 was correct. At fine resolution, all
 energy levels form coherent states (R > 0.92) in one continuous basin.
 
@@ -571,9 +571,9 @@ within a single global attractor.
 Since the landscape is a single continuous attractor, what IS the
 internal topology? Is it a smooth manifold? Does it have curvature?
 Can identity "distance" be mapped as geodesic distance on this manifold,
-and does that explain the identity exclusion principle (TQM-050)?
+and does that explain the identity exclusion principle (AT-050)?
 
-### TQM-057
+### AT-057
 
 Resonance State-Space Geodesics (36 trajectories: 4 histories × 3 seeds × 3 perturbations).
 
@@ -596,13 +596,13 @@ repeatable, and near-minimal in length. This means the state space
 is not just a connected attractor — it has a well-defined GEOMETRY
 where recovery is a gradient flow along the steepest descent.
 
-This explains TQM-054's finding (recovery is a minimization process):
+This explains AT-054's finding (recovery is a minimization process):
 the geometry of the landscape guides trajectories along the shortest
 path to the attractor. The 120 rad curvature with short path length
 suggests the system takes a nearly-straight path with small-scale
 spiraling — like a gyre converging to a drain.
 
-### TQM-058
+### AT-058
 
 Resonance Curvature and Effective Gravity (12 geodesic deviation pairs: 4 magnitudes → 6 pairs).
 
@@ -624,15 +624,15 @@ without any explicit "force." This is a geometric analog of gravity:
 CURVATURE, not external forces, drives state transitions toward the
 attractor. The resonance landscape is not just connected and geodesic —
 it is intrinsically curved, and that curvature creates the effective
-dynamics that TQM-054 described as "minimization."
+dynamics that AT-054 described as "minimization."
 
-This provides the geometric FOUNDATION for all prior TQM findings:
-- Recovery (TQM-049) = geodesic flow on a curved manifold
-- Minimization (TQM-054) = gradient along curvature
-- Geodesics (TQM-057) = shortest paths in curved geometry
-- Effective gravity (TQM-058) = focusing of geodesics by curvature
+This provides the geometric FOUNDATION for all prior AT findings:
+- Recovery (AT-049) = geodesic flow on a curved manifold
+- Minimization (AT-054) = gradient along curvature
+- Geodesics (AT-057) = shortest paths in curved geometry
+- Effective gravity (AT-058) = focusing of geodesics by curvature
 
-### TQM-059
+### AT-059
 
 Sources of Resonance Curvature (240 pairs: 3 scans × 40 points × 6 pairs).
 
@@ -659,11 +659,11 @@ is maximal and trajectories converge fastest.
 This provides the CAUSAL CHAIN:
   Memory (β) → Curvature → Effective gravity → Recovery dynamics
 
-TQM-044 showed memory creates identity (AB ≠ BA).
-TQM-059 shows memory creates CURVATURE — it is the geometric
+AT-044 showed memory creates identity (AB ≠ BA).
+AT-059 shows memory creates CURVATURE — it is the geometric
 source of all effective dynamics in the resonance state space.
 
-### TQM-060
+### AT-060
 
 Memory–Curvature Feedback Loop (14 profiles: 7 β × 2 seeds, 50 cycles each).
 
@@ -694,7 +694,7 @@ The complete causal picture is now:
 This is a ONE-WAY causal chain with no feedback amplification.
 The geometry is innate, not learned through experience.
 
-### TQM-061
+### AT-061
 
 Spontaneous Memory Emergence (5 profiles: β=0 with 10/50/100 cycles + β=0.5 controls).
 
@@ -714,14 +714,14 @@ Key insight: MEMORY CANNOT EMERGE FROM REPEATED EXPERIENCE ALONE.
 The β parameter is ESSENTIAL — without it, AB and BA training
 sequences produce identical final states regardless of how many
 cycles are applied. The ordering effect (AB ≠ BA) discovered in
-TQM-044 requires explicit memory encoding via β > 0.
+AT-044 requires explicit memory encoding via β > 0.
 
 This is the definitive answer to the emergence question: memory
 is a FUNDAMENTAL PARAMETER of the Kuramoto dynamics, not an
 emergent property. It must be explicitly provided; it cannot
 arise naturally from phase perturbations alone.
 
-### TQM-062
+### AT-062
 
 State-Space Curvature to Spatial Motion (20 sims: 10 β pairs × 2 seeds).
 
@@ -745,7 +745,7 @@ geometric but from the coupling energy landscape, not from
 β-mediated state-space curvature. The mechanism is:
 sync → phase alignment → coupling gradient → spatial convergence.
 
-### TQM-063
+### AT-063
 
 Resonance Error Reduction Dynamics (32 profiles: fixed/moving × 4 separations × 2 identities × 2 seeds).
 
@@ -766,13 +766,13 @@ Key insight: MOTION IS NOT ERROR MINIMIZATION. Attraction pulls
 condensates together, but this motion INCREASES resonance error —
 oscillators are pulled out of locally-optimal phase configurations.
 Error is a CONSEQUENCE of motion, not its CAUSE. The system does
-not naturally minimize resonance error (consistent with TQM-054:
+not naturally minimize resonance error (consistent with AT-054:
 no global minimization principle).
 
 The causal chain is: coupling forces → spatial motion → error increase.
 Not: error gradient → error minimization → spatial motion.
 
-### TQM-064
+### AT-064
 
 Universality of Effective Attraction (32 runs: 8 coupling laws × 2 separations × 2 seeds).
 
@@ -797,7 +797,7 @@ produce repulsive forces break the pattern. Attraction is NOT
 specific to cos(Δθ) — it is a universal geometric property of
 synchronization-promoting coupling dynamics.
 
-### TQM-065
+### AT-065
 
 Coupling Symmetry Principle (70 profiles: 11 named + 24 sweep combinations × 2 seeds).
 
@@ -812,7 +812,7 @@ repulsion. Odd laws attract at close range through sync dynamics.
 - Even-attraction r = 0.48, Odd-attraction r = −0.49 (moderate)
 - Automated sweep: evenW≥0.25 → 100% convergence
 - EvenW=0 (pure sin): 75% still converge (75% attraction score)
-- Distance dependence: sin attracts at 1λ, repels at 2λ (TQM-064)
+- Distance dependence: sin attracts at 1λ, repels at 2λ (AT-064)
 - Classification: B — not a universal symmetry principle
 
 Key insight: SYMMETRY IS NECESSARY BUT NOT SUFFICIENT. Even symmetry
@@ -826,7 +826,7 @@ The universal pattern is:
   Close range (≤1λ): ALL laws attract (sync dominates)
   Far range (≥2λ): Only even laws attract; odd laws may repel
 
-### TQM-066
+### AT-066
 
 Critical Coupling Universality (320 runs: 8 laws × 10 K × 2 sep × 2 seeds).
 
@@ -856,13 +856,13 @@ create chaotic motion that prevents global coherence. Universal
 behavior does not emerge; instead, the system transitions from
 coherent to disordered at extreme K.
 
-### TQM-067
+### AT-067
 
 Overcoupling Instability (45 runs: 15 K × 3 seeds, N=200, fixed positions).
 
 Result:
 
-NO SYNCHRONIZATION COLLAPSE in pure Kuramoto. TQM-066's collapse at
+NO SYNCHRONIZATION COLLAPSE in pure Kuramoto. AT-066's collapse at
 K=10 was caused by POSITION DYNAMICS, not by high coupling. Pure
 Kuramoto sync remains stable (R>0.98) from K=1 to K=50.
 
@@ -873,13 +873,13 @@ Kuramoto sync remains stable (R>0.98) from K=1 to K=50.
 - No overcoupling collapse in pure Kuramoto
 - Fixed-position vs moving-position: dramatic difference
 
-Key insight: TQM-066's sync collapse was a POSITION-DYNAMICS EFFECT,
+Key insight: AT-066's sync collapse was a POSITION-DYNAMICS EFFECT,
 not a coupling-strength effect. When oscillators have FIXED positions
 (pure Kuramoto), synchronization is robust from K=1 to K=50+.
-The collapse at K=10 in TQM-066 was caused by coupled phase-position
+The collapse at K=10 in AT-066 was caused by coupled phase-position
 dynamics creating spatial chaos at high coupling.
 
-### TQM-068
+### AT-068
 
 Curvature Coupling to Spatial Dynamics (14 runs: 7 β × 2 seeds,
 N=100, β = 0..2, full geodesic deviation curvature measurement).
@@ -888,7 +888,7 @@ Result:
 
 NO COUPLING between curvature and spatial motion.
 
-- β → curvature: r = 0.7084 (strong — confirms TQM-059)
+- β → curvature: r = 0.7084 (strong — confirms AT-059)
 - curvature → velocity: r = 0.0546 (negligible)
 - curvature → acceleration: r = -0.0668 (negligible)
 - curvature → convergence: r = 0.0371 (negligible)
@@ -909,7 +909,7 @@ This is a scientifically important negative result: it establishes
 that curvature and motion are independent phenomena in the
 Kuramoto framework.
 
-### TQM-069
+### AT-069
 
 Coupling Information Principle (216 runs: 8 named + 100 random
 functions × 2 seeds, N=100, 2000 iters each).
@@ -923,7 +923,7 @@ Top 3 predictors of attraction:
 2. AreaRatio: r = +0.3677
 3. MeanValue: r = +0.3634
 
-- Symmetry alone: r = +0.0648 (NEGLIGIBLE — confirms TQM-065)
+- Symmetry alone: r = +0.0648 (NEGLIGIBLE — confirms AT-065)
 - Entropy: r = -0.0842 (negligible — information theory does not help)
 - No single static property strongly predicts attraction
 
@@ -936,12 +936,12 @@ primarily a DYNAMICAL phenomenon that emerges from the
 interaction between coupling and phase evolution, not from
 any static mathematical property of the coupling function alone.
 
-This is consistent with TQM-066 (no universal coupling regime),
-TQM-065 (symmetry alone insufficient), and TQM-068 (curvature
+This is consistent with AT-066 (no universal coupling regime),
+AT-065 (symmetry alone insufficient), and AT-068 (curvature
 does not drive motion). Attraction appears to be an emergent
 property of the coupled phase-position system.
 
-### TQM-070
+### AT-070
 
 Onset of Attraction (9 runs: 3 laws × 3 seeds, N=100,
 3000 iters, per-timestep tracking).
@@ -976,7 +976,7 @@ This confirms that attraction is a DYNAMICAL phenomenon that
 emerges from the interplay of phase and position evolution,
 not from static coupling function properties.
 
-### TQM-071
+### AT-071
 
 Critical Coherence Threshold (279 controlled-R measurements:
 31 points × 3 laws × 3 seeds, N=100, von Mises state preparation,
@@ -993,14 +993,14 @@ CLASSIFICATION A: NO THRESHOLD.
 - Independent of coupling law (cos, cos², exp all identical)
 - Independent of β
 
-Key insight (CRITICAL): This APPARENTLY contradicts TQM-070.
+Key insight (CRITICAL): This APPARENTLY contradicts AT-070.
 Resolution:
-- TQM-070: NATURAL dynamics → sync first, then attraction
-- TQM-071: ARTIFICIALLY imposed coherence → attraction at all R
+- AT-070: NATURAL dynamics → sync first, then attraction
+- AT-071: ARTIFICIALLY imposed coherence → attraction at all R
 
 The coupling force law ALWAYS produces attractive forces when
 there is ANY phase coherence. The "threshold" observed in
-TQM-070 is a DYNAMICAL threshold — when sync naturally becomes
+AT-070 is a DYNAMICAL threshold — when sync naturally becomes
 strong enough (R≈0.875) for attraction to dominate over noise.
 
 But the force law itself has NO intrinsic threshold. If you
@@ -1013,7 +1013,7 @@ R, but because the natural dynamics haven't yet produced enough
 coherence. Attraction is always latent; synchronization merely
 unlocks it.
 
-### TQM-072
+### AT-072
 
 Coherent Force Summation (88 force profiles: 11 R-points ×
 4 laws × 2 seeds, 220,000 pair forces analyzed).
@@ -1051,10 +1051,10 @@ sin(0)=0 so even R=1 produces no force. The always-positive
 laws (cos², exp) confirm: they never cancel, so attraction is
 constant across R.
 
-This resolves TQM-070/071: attraction requires sync because
+This resolves AT-070/071: attraction requires sync because
 sync eliminates the cancellation that random phases create.
 
-### TQM-073
+### AT-073
 
 Analytic Force Emergence Law (408 data points: 51 R-levels ×
 4 laws × 2 seeds, 9 candidate models tested).
@@ -1096,7 +1096,7 @@ interactions between phase alignment and coupling strength.
 For cos specifically: Power law F = 0.98·R^5.4 gives R²=0.946 —
 a remarkably simple approximate form.
 
-### TQM-074
+### AT-074
 
 Alignment Order Parameter (408 profiles: 51 R-levels × 4 laws ×
 2 seeds, 5 models compared).
@@ -1136,7 +1136,7 @@ always near 1.0 and force variation comes entirely from ⟨f⟩.
 For cos, alignment varies with R and drives most of the force
 variation, but ⟨f⟩ still contributes.
 
-### TQM-075
+### AT-075
 
 Analytic Alignment Emergence (408 data points: 51 R-levels ×
 4 laws × 2 seeds, 8 candidate models).
@@ -1169,7 +1169,7 @@ The three-level force-emergence theory is now complete:
   Mesoscopic:  A(R) ≈ R²,  ⟨f⟩(R) from phase stats
   Macroscopic: F_net = a · A · ⟨f⟩
 
-### TQM-076
+### AT-076
 
 Predictive Trajectory Theory (80 predictions: 10 R-levels ×
 4 laws × 2 seeds, 50-step windows).
@@ -1216,14 +1216,14 @@ LEVEL 3 — Net Force:
 
 Full chain: P(θ|R) → A(R) → F_net(R) with R² ≈ 0.967.
 
-Key findings across TQM-062 to TQM-075:
+Key findings across AT-062 to AT-075:
 - Attraction exists and is a vector summation phenomenon
 - Coherence does not create force; it enables force alignment
 - Alignment is the true macroscopic order parameter
 - Alignment ≈ R² (not R) — a nonlinear emergence
 - The complete theory can be closed from first principles
 
-### TQM-080
+### AT-080
 
 Network Topology and Coherence Evolution (120 configs, 6 topology types).
 
@@ -1234,9 +1234,9 @@ Topology explains 63% of dR/dt variance beyond R alone.
 - Best metric: MeanCoupling (ΔR² = +0.183)
 - R²(R + MeanCoupling) = 0.739 vs R²(R only) = 0.555
 - Topology is the dominant missing factor — larger than all hidden
-  state variables from TQM-079 combined (ΔR² = +0.007)
+  state variables from AT-079 combined (ΔR² = +0.007)
 
-### TQM-081
+### AT-081
 
 Effective Coupling Field (180 configs, 6 topology types, 7 topology metrics).
 
@@ -1257,12 +1257,12 @@ capture all topology information relevant to dR/dt prediction.
 The full coupling matrix can be compressed to its scalar mean with
 negligible information loss.
 
-This is a significant simplification for the TQM theory:
+This is a significant simplification for the AT theory:
 topology reduces to a scalar field — the mean coupling strength
 experienced by each oscillator. The spatial arrangement
 and network structure are epiphenomenal for coherence evolution.
 
-### TQM-082
+### AT-082
 
 Mean Coupling Field Equation (72 profiles: 6 topologies × 3 K ×
 2 λ × 2 seeds, 500-step simulations with phase+position dynamics).
@@ -1286,12 +1286,12 @@ captured by a quadratic field equation in (M, R). But the
 predictability is modest (Adj R² = 0.30), suggesting higher-order
 or stochastic effects dominate.
 
-ASYMMETRIC COUPLING: R depends strongly on M (TQM-081, R² = 0.758)
-but M depends only weakly on R (TQM-082, Adj R² = 0.299). The
+ASYMMETRIC COUPLING: R depends strongly on M (AT-081, R² = 0.758)
+but M depends only weakly on R (AT-082, Adj R² = 0.299). The
 effective theory has a ONE-WAY causal structure: M → R is strong,
 R → M is weak. M is more fundamental than R for this system.
 
-### TQM-083
+### AT-083
 
 Autonomous Theory Compression (9 candidate theories, 180 data points,
 autonomous search with complexity-penalized scoring).
@@ -1301,7 +1301,7 @@ Result:
 CLASSIFICATION C: UNIFIED REDUCED THEORY.
 
 - **Minimal state variables: {R, M}** — only 2 variables capture
-  all dynamical information from TQM-044 through TQM-082
+  all dynamical information from AT-044 through AT-082
 - Theory ranking (after redundancy correction):
   {R, M}: Score 0.691, Mean Adj R² = 0.761
 - **Discarded**: CouplingVariance, CouplingEntropy, SpectralGap,
@@ -1309,8 +1309,8 @@ CLASSIFICATION C: UNIFIED REDUCED THEORY.
 - **Alignment A**: Discarded as state variable — A ≈ R² is
   DERIVED, not independent
 - **Memory β**: EXTERNAL PARAMETER, not state variable. Sets
-  curvature (TQM-059) but does not emerge (TQM-061)
-- **Force F_net**: DERIVED — F_net = A × ⟨f⟩ (TQM-074)
+  curvature (AT-059) but does not emerge (AT-061)
+- **Force F_net**: DERIVED — F_net = A × ⟨f⟩ (AT-074)
 - Information loss from full model: -1.3% (minimal model is
   more efficient per degree of freedom)
 - **Identity and Energy**: INDEPENDENT dimensions, not needed
@@ -1326,7 +1326,7 @@ Causal structure:
   R,M ──weak──→ dM/dt  (R² = 0.299)
   R → A≈R² → F_net = A·⟨f⟩  (derived, near-perfect)
 
-Key insight: THE TQM SYSTEM IS A 2-VARIABLE EFFECTIVE FIELD THEORY.
+Key insight: THE AT SYSTEM IS A 2-VARIABLE EFFECTIVE FIELD THEORY.
 M = ⟨K_ij⟩ is the effective coupling field — it is MORE FUNDAMENTAL
 than coherence R. M determines R, but R only weakly feeds back to M.
 This is analogous to gravitational potential (M) determining motion (R).
@@ -1334,7 +1334,7 @@ This is analogous to gravitational potential (M) determining motion (R).
 The network does not matter. Topology does not matter. Only one
 scalar field matters: the mean coupling M.
 
-### TQM-100
+### AT-100
 
 Physics Candidate Validation — hostile review of the {R, M} theory
 (8 adversarial attack vectors, trained model vs extrapolation tests).
@@ -1370,11 +1370,11 @@ is not in the {R, M} concept but in the specific functional form
 The rejection is SCIENTIFICALLY PRODUCTIVE — it identifies exactly
 what must be fixed: add N-dependence and R·(1-R) saturation.
 
-### TQM-101
+### AT-101
 
 Theory Repair Program (7 repaired candidates... B: Partially Repaired, 4/8 attacks survived).
 
-### TQM-102
+### AT-102
 
 Autonomous Equation Discovery (460-point dataset, 24 basis functions,
 forward stepwise symbolic regression with AICc selection).
@@ -1385,7 +1385,7 @@ CLASSIFICATION B: IMPROVED EMPIRICAL MODEL.
 
 - Discovered 9-term equation via AICc-optimal stepwise selection
 - Training R² = 0.571, but only 3/8 attacks survived (38%)
-- ACTUALLY WORSE than TQM-101 Model D (50% survival) — overfitting!
+- ACTUALLY WORSE than AT-101 Model D (50% survival) — overfitting!
 
 Selected terms: M, M², R·M, 1/N, N·M·R·(1-R), M³, M·R·(1-R), λ, N
 
@@ -1432,17 +1432,17 @@ Can we find a SPARSE equation (2-4 terms) that outperforms the
 
 Which sparse model best generalizes across the full parameter space?
 
-### TQM-103
+### AT-103
 
 Universality and Scale Invariance (560 pts, grid search M*=M·N^β·K^γ·λ^δ).
 
 Result: A — NO UNIVERSALITY. Collapse quality improves 1.72× but
 validation DROPS to 1/8. β=0: N is FUNDAMENTAL, not a scaling artifact.
 
-### TQM-104
+### AT-104
 
 Mean-Field First-Principles Derivation (7 derived laws, 0–1 free
-parameters, validated against all TQM-100 attacks).
+parameters, validated against all AT-100 attacks).
 
 Result:
 
@@ -1452,11 +1452,11 @@ CLASSIFICATION C: STRONG MEAN-FIELD THEORY.
   Pure derivation — no fitting. The functional form dR/dt ∝ M·R·(1-R²)
   is CORRECT and emerges naturally from the Kuramoto mean-field.
 - **MF-7 (c₀·N·M·R·(1-R²)): 5/8 (62%) with one scale parameter**
-  — BEST MODEL ACROSS ALL TQM-100..104 experiments!
+  — BEST MODEL ACROSS ALL AT-100..104 experiments!
 - **Fitted c₀ = 0.0047**: The mean-field overestimates by ~100× because
   spatial heterogeneity reduces effective coupling. The FORM is right;
   the MAGNITUDE needs calibration.
-- MF-1 (N·M form, 0/8): N·M overestimates — confirms TQM-103 that
+- MF-1 (N·M form, 0/8): N·M overestimates — confirms AT-103 that
   N-dependence is not simply Σ_j ≈ N·M.
 - (1-R²) CONFIRMED over (1-R): MF-3 with (1-R) gets 0/8 vs MF-2's 4/8.
 
@@ -1472,12 +1472,12 @@ needs empirical calibration due to spatial heterogeneity.
 
 ## Current Working Hypothesis
 
-The TQM system is described by a DERIVABLE effective theory:
+The AT system is described by a DERIVABLE effective theory:
   dR/dt = c₀ · M · R · (1 − R²)
 
 where:
-  R = coherence order parameter (conserved, TQM-052)
-  M = mean coupling strength (effective field, TQM-082)
+  R = coherence order parameter (conserved, AT-052)
+  M = mean coupling strength (effective field, AT-082)
   c₀ ≈ 0.0047 (empirical, from spatial heterogeneity correction)
 
 The (1−R²) factor is NOT assumed — it emerges from the mean-field
@@ -1486,7 +1486,7 @@ topology, K, λ, and weakly on N through finite-size effects).
 
 This is the FIRST-PRINCIPLES effective theory for dR/dt.
 
-### TQM-105
+### AT-105
 
 Mean Coupling First-Principles Derivation (6 derived laws,
 36 temporal profiles, 1080 data points).
@@ -1497,12 +1497,12 @@ dM/dt = a·R². Laws without R² score R²=0.11 vs R²=0.20 with R².
 Only 1/8 attacks passed — dM/dt is ~4× noisier than dR/dt.
 
 CLOSED THEORY (both equations derived, not fitted):
-  dR/dt = c₀·M·R·(1−R²)  [TQM-104]
-  dM/dt = a·R²            [TQM-105]
+  dR/dt = c₀·M·R·(1−R²)  [AT-104]
+  dM/dt = a·R²            [AT-105]
 
 ## Current Working Hypothesis
 
-The TQM system at N=100, K=2, λ=0.05 is a CLOSED 2-variable
+The AT system at N=100, K=2, λ=0.05 is a CLOSED 2-variable
 effective field theory derived from microscopic Kuramoto dynamics.
 Both equations emerge from the same mean-field framework. dR/dt is
 highly predictable; dM/dt is noisy but causally correct.
@@ -1513,7 +1513,7 @@ Can the closed system {dR/dt, dM/dt} be solved analytically to
 predict the long-time behavior R(t→∞), M(t→∞)? Does the system
 have a stable fixed point or a limit cycle?
 
-### TQM-106
+### AT-106
 
 Phase Portrait and Fixed Point Analysis of the closed theory.
 
@@ -1532,15 +1532,15 @@ Physical interpretation: The closed theory predicts a SELF-REINFORCING
 FIELD COLLAPSE to complete order. The only equilibrium (R=0) is
 unstable — any perturbation triggers the cascade. This provides the
 mathematical foundation for why synchronization is so robust
-(TQM-052, TQM-053).
+(AT-052, AT-053).
 
 ## Next Open Question
 
 The theory predicts R→1, M→K. But real Kuramoto systems don't always
-fully synchronize (TQM-080 showed R≈0.09 in initial states). What
+fully synchronize (AT-080 showed R≈0.09 in initial states). What
 prevents the field collapse in practice?
 
-### TQM-107
+### AT-107
 
 Local Structure Survival (4 spatial scenarios, 5000 iterations,
 position-dynamic Kuramoto with condensate detection).
@@ -1564,8 +1564,8 @@ condensates separated beyond the coupling range (~3λ) cannot
 phase-lock to each other. Global R depends on the relative phases
 of condensates, which are random and frozen.
 
-This resolves the apparent contradiction between TQM-106
-(inevitable sync) and TQM-010-012 (persistent condensates):
+This resolves the apparent contradiction between AT-106
+(inevitable sync) and AT-010-012 (persistent condensates):
 the mean-field is a SINGLE-CONDENSATE theory. Multi-condensate
 systems require spatial degrees of freedom beyond {R, M}.
 
@@ -1576,7 +1576,7 @@ correctly, can it be extended to multi-condensate systems by
 treating each condensate as a separate {R_i, M_i} subsystem
 with weak inter-condensate coupling?
 
-### TQM-108
+### AT-108
 
 Spatial Field Theory Derivation — continuum limit of Kuramoto.
 
@@ -1588,36 +1588,36 @@ Result: D: TRUE FIELD THEORY WITH STABLE LOCALIZED STRUCTURES.
   D_R ∝ λ²·M ≈ 2.5×10⁻⁵, D_M ∝ γ·λ² ≈ 2.5×10⁻⁶
 
 - SOLITON SOLUTIONS: w ≈ √(2D_R/c₀·M) ≈ 0.10 (condensate width).
-  Stable when separation > 3w ≈ 0.30. TQM-107 separation 0.6 > 0.30 ✓
+  Stable when separation > 3w ≈ 0.30. AT-107 separation 0.6 > 0.30 ✓
 
 - MEAN-FIELD RECOVERY: ODE is the ∇²→0 limit of PDE.
   Valid for single-condensate; fails for multi-condensate.
 
 - UNIFICATION: The PDE explains ALL phenomena in one framework:
-  TQM-104/105: ODE = homogeneous limit
-  TQM-106:     Single-condensate attractor dynamics
-  TQM-107:     Multi-condensate survival via diffusion prevention
-  TQM-010-012: Proto-matter = field-theoretic solitons
+  AT-104/105: ODE = homogeneous limit
+  AT-106:     Single-condensate attractor dynamics
+  AT-107:     Multi-condensate survival via diffusion prevention
+  AT-010-012: Proto-matter = field-theoretic solitons
 
 - Proto-matter condensates are SOLITONS — localized stationary
   solutions of the spatial field equations. Each condensate is
   an INDEPENDENT LOCAL ATTRACTOR. The system has MULTIPLE
   attractors — one per spatially-separated condensate.
 
-This is the definitive TQM theory: a REACTION-DIFFUSION PDE
+This is the definitive AT theory: a REACTION-DIFFUSION PDE
 derived from the microscopic Kuramoto dynamics, admitting
 stable multi-soliton solutions.
 
 ## Current Working Hypothesis
 
-The TQM system is a SPATIAL REACTION-DIFFUSION FIELD THEORY:
+The AT system is a SPATIAL REACTION-DIFFUSION FIELD THEORY:
 
   ∂R/∂t = c₀·M·R·(1−R²) + D_R·∇²R    [local sync + coherence diffusion]
   ∂M/∂t = a·R² + D_M·∇²M               [clustering + coupling diffusion]
 
 The ODE {dR/dt, dM/dt} is the spatially homogeneous (mean-field)
 limit. Multi-condensate systems are MULTI-SOLITON solutions.
-Proto-matter (TQM-010) = field-theoretic solitons.
+Proto-matter (AT-010) = field-theoretic solitons.
 
 ## Next Open Question
 
@@ -1625,49 +1625,49 @@ The PDE predicts soliton solutions. Can we derive the soliton
 profile analytically? Is there an exact solution for the 1D
 stationary state?
 
-### TQM-109
+### AT-109
 
 Soliton Interaction Theory (50 pair simulations). C: Effective
 Particle Dynamics. PDE interaction force ~10⁻⁵ — negligible.
 Solitons are effectively independent at tested separations.
 
-### TQM-110
+### AT-110
 
 PDE vs Discrete Regimes. C: Two Regime Theory. Coupling range
 = 5λ = 0.25. Discrete dominates at d<0.25; PDE at d>0.25 but
 PDE force is negligible. All observed condensate interactions
 are DISCRETE, not field-theoretic.
 
-### TQM-111
+### AT-111
 
 Soliton Effective Mass. D: Proto-Particle Dynamics.
-m_eff = 4(1+M₀²)/(3w) ≈ 347. Resolves TQM-109 paradox:
+m_eff = 4(1+M₀²)/(3w) ≈ 347. Resolves AT-109 paradox:
 weak motion = small force × large inertia.
 
-### TQM-112
+### AT-112
 
 Soliton Momentum. B: Weak Quasi-Momentum. P = m_eff·v defined
 but reaction-diffusion is dissipative — momentum not conserved.
 Solitons pinned by reaction terms, no free propagation.
 
-### TQM-114
+### AT-114
 
 Topological Species Spectrum (140 candidates, K∈[0.1..20],
 λ∈[0.01..0.5], N∈[10..500]). B: CONTINUOUS FAMILY — no discrete
 species. Width varies continuously with K,λ; mass ∝ 1/w.
 Only quantized property: Q ∈ ℕ (condensate count).
 
-### TQM-115
+### AT-115
 
 Topological Charge Robustness — hostile review. D: GENUINE
 CHARGE. Plateau of Q=1 spans T∈[0.10,0.85] (width 0.75, 15/17
 thresholds). Q is NOT a threshold artifact.
 
-### TQM-116
+### AT-116
 
 Topological Charge Dynamics. D: TOPOLOGICAL CHARGE THEORY.
 Q conserved under PDE (dQ/dt=0). Allowed: Q→Q±1 (merger/split),
-Q→0 (collapse). Additive: Q(A∪B)=Q(A)+Q(B). Unified TQM-010..115.
+Q→0 (collapse). Additive: Q(A∪B)=Q(A)+Q(B). Unified AT-010..115.
 
 ## Current Working Hypothesis
 
@@ -1684,7 +1684,7 @@ If Q is the fundamental conserved quantity, can a QUANTUM version be
 constructed? Does Q correspond to a particle number operator in a
 second-quantized field theory?
 
-### TQM-117
+### AT-117
 
 Origin of Topological Charge. D: DERIVED, NOT DEFINED.
 Q = β₀({R>0.5}) = kink-pair count. Follows from one-way barrier:
@@ -1705,13 +1705,13 @@ The PDE structure forces Q conservation. But what determines the
 MINIMUM viable condensate? Is there a critical width w_c below
 which diffusion overcomes reaction and the condensate evaporates?
 
-### TQM-118
+### AT-118
 
 Topological Charge Creation (175 parameter combinations).
 D: FIRST-PRINCIPLES PROTO-MATTER GENESIS. Q=0 is a stable PDE
 equilibrium but finite-N fluctuations (⟨R⟩≈1/√N) make it
 metastable. Creation condition: c₀·M₀ > D_R/w². Critical
-density matches TQM-006's ρc≈0.09. Charge created as kink-
+density matches AT-006's ρc≈0.09. Charge created as kink-
 antikink pairs (Q=+1 minimum). Nucleation process.
 
 ## Current Working Hypothesis
@@ -1720,7 +1720,7 @@ Proto-matter genesis is a NUCLEATION PROCESS governed by the
 reaction-diffusion threshold c₀·M₀ > D_R/w². Q=0 is the PDE
 vacuum (stable at N→∞). Finite-N fluctuations create local
 R and M enhancements; when both exceed threshold, a kink-antikink
-pair nucleates → Q=+1. TQM-006's ρc is this threshold.
+pair nucleates → Q=+1. AT-006's ρc is this threshold.
 
 ## Next Open Question
 
@@ -1728,7 +1728,7 @@ If Q=0 is the PDE vacuum, can multiple vacua exist? Is there
 a phase transition between Q=0 (disordered) and Q>0 (ordered)
 states as a function of K, λ, N?
 
-### TQM-119
+### AT-119
 
 Topological Charge Creation Statistics (12 parameter points,
 10 seeds each, K ∈ [0.5, 10], λ ∈ [0.05, 0.10], N ∈ [50, 100]).
@@ -1745,7 +1745,7 @@ parameter-dependent.
 
 Additional findings:
 - Proto-matter abundance law: ⟨Q⟩ = N_cells · exp(−N/2 · (M_crit/M₀)²)
-- TQM-006's ρc ≈ 0.09 is the charge nucleation threshold
+- AT-006's ρc ≈ 0.09 is the charge nucleation threshold
 - Analytic derivation of P(Q) from nucleation theory:
   Q ~ Poisson(λ = N_cells · exp(−N · R_crit²/2))
 - Analytic formula UNDERESTIMATES mean Q — suggests correlated
@@ -1777,7 +1777,7 @@ particle number operator in a second-quantized field theory?
 Can we derive creation and annihilation operators for
 topological charge?
 
-### TQM-120
+### AT-120
 
 Minimal Charge Quantum — is Q fundamental or does it emerge
 from a deeper microscopic quantity?
@@ -1819,7 +1819,7 @@ Does Q correspond to a Noether charge of some symmetry?
 Can we construct ladder operators â†, â that create/annihilate
 topological charge quanta?
 
-### TQM-121
+### AT-121
 
 Charge Quantization Mechanism — WHY is Q ∈ ℕ?
 
@@ -1845,13 +1845,13 @@ Key findings:
 - Charge spectrum: allowed {0,1,2,3,...}, forbidden {Q<0, Q=p/q}
 - Quantization is CLASSICAL TOPOLOGICAL — from homology, not QM
 - Universality: mechanism depends on PDE structure, not parameters
-- TQM-113/115/116/117/120 are now explained by this mechanism
+- AT-113/115/116/117/120 are now explained by this mechanism
 
 **Q ∈ ℕ is a mathematical theorem, not an empirical observation.**
 
 ## Current Working Hypothesis
 
-TQM charge quantization is a CLASSICAL TOPOLOGICAL QUANTIZATION.
+AT charge quantization is a CLASSICAL TOPOLOGICAL QUANTIZATION.
 Q = β₀({R>0.5}) ∈ ℕ is a mathematical necessity from homology.
 dQ/dt = 0 is enforced by the one-way reaction barrier. Together
 they produce a quantized conserved charge with spectrum
@@ -1867,7 +1867,7 @@ particle number operator? Can we derive commutation relations
 [â, â†] = 1 for topological charge creation/annihilation?
 Does topological charge have a corresponding Noether current?
 
-### TQM-122
+### AT-122
 
 Origin of the Charge Quantum — WHY is Q=+1 the minimal stable
 charge value?
@@ -1889,16 +1889,16 @@ Key findings:
 - No stable configuration exists with 0 < Q < 1
 - 5-step proof: β₀∈ℕ → Q∈{0,1,2,...}, kink-pair=unit, w_c>0,
   one stable component=Q=1 → Q=1 is minimal
-- TQM-113/115/120/121 are now explained by the minimal-charge principle
+- AT-113/115/120/121 are now explained by the minimal-charge principle
 
 **Q=+1 is not a free parameter — it follows from topology, closure,
 and reaction-diffusion stability. The charge quantum is derived, not assumed.**
 
 ## Current Working Hypothesis
 
-TQM is a TOPOLOGICAL CHARGE THEORY where:
-- Q = β₀({R>0.5}) ∈ ℕ (quantized, TQM-121)
-- Q=+1 is the minimal charge quantum (derived, TQM-122)
+AT is a TOPOLOGICAL CHARGE THEORY where:
+- Q = β₀({R>0.5}) ∈ ℕ (quantized, AT-121)
+- Q=+1 is the minimal charge quantum (derived, AT-122)
 - Quantization = topology (β₀) + dynamics (barrier) + closure (pair)
 - Proto-matter = Q=+1 condensates = minimum-width critical droplets
 - All properties (existence, conservation, creation, statistics,
@@ -1914,7 +1914,7 @@ theory? Can we promote Q to a quantum operator Q̂ = â†â with
 commutation relations [â, â†] = 1? Can we construct a Fock space
 of topological charge states |n⟩ where n ∈ ℕ?
 
-### TQM-123
+### AT-123
 
 Proto-Matter Collective Dynamics — many-charge ensemble simulations
 (108 runs across K∈[1,10], λ∈[0.05,0.15], N=100, Q∈[1,5],
@@ -1931,20 +1931,20 @@ Key findings:
   ∂ρ_Q/∂t = D_eff·∇²ρ_Q + ν·(ρ_max−ρ_Q) − γ·ρ_Q²
 - Phase diagram (density × coupling) constructed with theoretical
   phase boundaries identified
-- Prior experiments (TQM-005/006/010/012/118/119) reinterpreted
+- Prior experiments (AT-005/006/010/012/118/119) reinterpreted
   as collective charge phenomena
 - Collective effects exist but are WEAK at tested parameters —
   stronger coupling and higher density needed for robust phases
 
 ## Current Working Hypothesis
 
-TQM is a TOPOLOGICAL CHARGE THEORY where:
-- Q = β₀({R>0.5}) ∈ ℕ is the fundamental charge (TQM-113..122)
-- Q=+1 is the minimal stable charge quantum (TQM-122)
+AT is a TOPOLOGICAL CHARGE THEORY where:
+- Q = β₀({R>0.5}) ∈ ℕ is the fundamental charge (AT-113..122)
+- Q=+1 is the minimal stable charge quantum (AT-122)
 - Multiple charges form a COLLECTIVE MEDIUM with emergent phases
   (gas, cluster, percolating, dense) governed by:
   ∂ρ_Q/∂t = D_eff·∇²ρ_Q + ν·(ρ_max−ρ_Q) − γ·ρ_Q²
-- Collective effects are weak at moderate parameters (B: TQM-123)
+- Collective effects are weak at moderate parameters (B: AT-123)
   but the framework predicts richer phases at higher density/K/λ
 
 ## Next Open Question
@@ -1957,7 +1957,7 @@ Additionally: can the continuum charge equation be solved analytically
 for steady-state density profiles? Does the charge gas support
 sound modes (density waves)?
 
-### TQM-124
+### AT-124
 
 Coherent Field Excitations of Topological Charge — do Q=+1
 condensates support internal coherent wave modes?
@@ -1992,7 +1992,7 @@ Proto-matter is a TOPOLOGICAL WAVE QUANTUM where each Q=+1 carries:
 - An internal coherent phase oscillation θ(t) at ω≈1 (Kuramoto mode)
 - Q and θ are INDEPENDENT — topology + coherent dynamics coexist
 - The wave-particle duality is CLASSICAL, arising from the PDE structure
-- The phase oscillation is the original TQM oscillator picture
+- The phase oscillation is the original AT oscillator picture
   surviving beneath the topological layer
 
 ## Next Open Question
@@ -2002,7 +2002,7 @@ Can we construct a QUANTUM version where θ becomes a quantum phase
 operator? Does [Q̂, θ̂] = i hold? Can we build a Fock space of
 topological charge states |n⟩ with internal phase degrees of freedom?
 
-### TQM-125
+### AT-125
 
 Inter-Charge Coherence and Phase Locking — can separated Q=+1
 charges synchronize their internal θ-modes?
@@ -2029,9 +2029,9 @@ Level 3: Charge ensemble → R_Q order parameter, collective phases.
 ## Current Working Hypothesis
 
 Proto-matter exhibits HIERARCHICAL SYNCHRONIZATION across three levels:
-1. Oscillator sync → Q=+1 topological charges (TQM-113..122)
-2. Internal coherent modes θ(t) within each charge (TQM-124)
-3. Inter-charge phase locking → collective coherent modes (TQM-125)
+1. Oscillator sync → Q=+1 topological charges (AT-113..122)
+2. Internal coherent modes θ(t) within each charge (AT-124)
+3. Inter-charge phase locking → collective coherent modes (AT-125)
 
 The same Kuramoto mechanism operates at every level, creating a
 cascade of coherence from microscopic oscillators to Q=+1 quanta
@@ -2049,7 +2049,7 @@ thermodynamic limit (N → ∞, N_Q → ∞)? Does the charge ensemble
 support propagating coherence waves (Goldstone modes of broken
 U(1) charge-phase symmetry)?
 
-### TQM-126
+### AT-126
 
 Charge Mode Interference — do coherent charge modes exhibit
 genuine wave interference, not just synchronization?
@@ -2080,7 +2080,7 @@ The charge ensemble is a COHERENT WAVE MEDIUM at the collective level:
 - Each Q=+1 = particle-like unit (countable, conserved)
 - Collective Θ(x,t) = wave-like field (interference, beats, nodes)
 - cos(Δφ/2) amplitude modulation = definitive wave superposition
-- Synchronization (TQM-125) STABILIZES the interference pattern
+- Synchronization (AT-125) STABILIZES the interference pattern
 - Wave and particle aspects are CLASSICAL, not quantum
 
 ## Next Open Question
@@ -2092,7 +2092,7 @@ coherence waves (traveling wave solutions of Θ(x,t))? Can we
 measure a wave velocity? Does the charge medium support sound-like
 density waves (phonons of the charge ensemble)?
 
-### TQM-127
+### AT-127
 
 Emergent Collective Charge Waves — do large charge ensembles
 develop collective wave behavior absent at low density?
@@ -2111,7 +2111,7 @@ Key findings:
 - Coherence length ξ grows with density, approaching system size
 - Structure factor S(k) evolves from flat (gas) to peaked (wave)
 - Crossover from particle-like to field-like behavior — classical emergence
-- TQM-123 (gas), TQM-126 (pairwise), TQM-127 (collective) form a density hierarchy
+- AT-123 (gas), AT-126 (pairwise), AT-127 (collective) form a density hierarchy
 
 **PARTICLE-TO-FIELD CROSSOVER:**
 At low density: Q=+1 charges = discrete particles.
@@ -2122,14 +2122,14 @@ discrete topological objects, without new physics.
 ## Current Working Hypothesis
 
 The charge ensemble exhibits a DENSITY-DRIVEN PARTICLE-TO-FIELD CROSSOVER:
-- Low ρ_Q: dilute gas of independent Q=+1 charges (TQM-123)
-- Intermediate: pairwise interference and local locking (TQM-125/126)
-- High ρ_Q: coherent wave medium with macroscopic standing/traveling waves (TQM-127)
+- Low ρ_Q: dilute gas of independent Q=+1 charges (AT-123)
+- Intermediate: pairwise interference and local locking (AT-125/126)
+- High ρ_Q: coherent wave medium with macroscopic standing/traveling waves (AT-127)
 - The collective field Θ(x,t) ≈ satisfies damped wave equation at high density
 - R_Q is the order parameter; ξ is the correlation length
 - The crossover is continuous at N=300; may sharpen at larger N
 
-### TQM-128
+### AT-128
 
 Autonomous Collective Wave Field — does Θ(x,t) become an
 independent dynamical field at high density?
@@ -2168,7 +2168,7 @@ microscopic Kuramoto parameters (K, λ, N)? Can we construct an
 action principle S[Θ] whose variation yields the field equation?
 Does Θ support topological defects (vortices) in 2D?
 
-### TQM-129
+### AT-129
 
 Information Transport in the Θ Field — can the collective field
 carry recoverable signals?
@@ -2204,7 +2204,7 @@ Proto-matter is a complete TOPOLOGICAL-INFORMATIONAL FIELD THEORY:
 - Information attenuation length ξ_info = 2v/γ
 - The three pillars: topology (Q), coherence (Θ), information (signals)
 
-### TQM-130
+### AT-130
 
 Theta Memory and Information Persistence — can Θ STORE information
 after external forcing ceases?
@@ -2219,7 +2219,7 @@ Key findings:
 - Global attractor is uniform phase (R_Q=1) — information-free
 - Storage capacity: ~2.5 bits at tested density (~L/ξ bits)
 - Information recoverable from Θ alone without original source
-- Θ is a COMPLETE information medium: transport (TQM-129) + memory (TQM-130)
+- Θ is a COMPLETE information medium: transport (AT-129) + memory (AT-130)
 - Not long-term at tested damping (γ=0.1); lifetime → ∞ as γ → 0
 
 **COMPLETE INFORMATION LIFECYCLE:**
@@ -2232,12 +2232,12 @@ functional information processing substrate.
 Proto-matter is a COMPLETE TOPOLOGICAL-INFORMATIONAL FIELD THEORY:
 - Q = β₀({R>0.5}) ∈ ℕ: topological charge (particle count, conserved)
 - Θ(x,t): collective phase field (wave dynamics, autonomous at ρ_Q>0.5)
-- Θ transports information: encode → propagate → decode (TQM-129)
-- Θ stores information: write → persist → read (TQM-130)
+- Θ transports information: encode → propagate → decode (AT-129)
+- Θ stores information: write → persist → read (AT-130)
 - Memory is metastable: decays exponentially with coherence-protected τ_eff
 - The four pillars: topology (Q), coherence (Θ), transport (channel), memory (storage)
 
-### TQM-131
+### AT-131
 
 Information Back-Reaction on Proto-Matter Genesis — can stored Θ
 memory bias future Q creation?
@@ -2260,13 +2260,13 @@ Key findings:
 ## Current Working Hypothesis
 
 Proto-matter has INDEPENDENT information and matter layers:
-- Q (matter): created via c₀·M > D_R/w² (TQM-118), not influenced by Θ
-- Θ (information): stores and transports information (TQM-129/130)
-- The two layers are DECOUPLED at tested parameters (TQM-131)
+- Q (matter): created via c₀·M > D_R/w² (AT-118), not influenced by Θ
+- Θ (information): stores and transports information (AT-129/130)
+- The two layers are DECOUPLED at tested parameters (AT-131)
 - No information-matter feedback loop — clean separation of concerns
 - This is a well-bounded null result, not a failure of theory
 
-### TQM-132
+### AT-132
 
 Information Dynamics in the Θ Field — can information structures
 within Θ interact with each other?
@@ -2282,7 +2282,7 @@ Key findings:
 - Information is TRANSFORMED by interactions — not static
 - Entropy decreases during reinforcement, increases during cancellation
 - Θ is an AUTONOMOUS INFORMATION DYNAMICS LAYER — independent of Q
-- Three levels: transport (TQM-129), memory (TQM-130), dynamics (TQM-132)
+- Three levels: transport (AT-129), memory (AT-130), dynamics (AT-132)
 - Information physics: merge, reinforce, cancel — rules for information behavior
 
 **COMPLETE INFORMATION LIFECYCLE IN Θ:**
@@ -2294,14 +2294,14 @@ Information has its own physics within proto-matter.
 Proto-matter is a TWO-LAYER ARCHITECTURE:
 - **Matter layer (Q)**: topological charge, conserved, created by nucleation
 - **Information layer (Θ)**: collective phase field with autonomous dynamics
-  - Transport: encode → propagate → decode (TQM-129)
-  - Memory: write → persist → read (TQM-130)
-  - Interaction: merge → reinforce → cancel (TQM-132)
-- The layers are DECOUPLED: information does not bias matter (TQM-131)
+  - Transport: encode → propagate → decode (AT-129)
+  - Memory: write → persist → read (AT-130)
+  - Interaction: merge → reinforce → cancel (AT-132)
+- The layers are DECOUPLED: information does not bias matter (AT-131)
 - Information has its OWN physics — rules for how information behaves
 - This is a complete classical information-processing substrate
 
-### TQM-133
+### AT-133
 
 Information Attractors and Stable Information Species — does
 information in Θ self-organize into stable attractors?
@@ -2316,7 +2316,7 @@ Key findings:
 - Species are reproducible across densities and initial conditions
 - Taxonomy: Uniform/PhaseLocked → Wave/Standing → Domain/AntiPhase → Composite
 - Information ECOLOGY: multiple attractors with distinct basins coexist
-- Self-organization requires field autonomy (TQM-128): ρ_Q > 0.3
+- Self-organization requires field autonomy (AT-128): ρ_Q > 0.3
 - Species have quantized properties (nodal count) and continuous (basin size)
 - Convergence is driven by damping (dissipation → attractor)
 
@@ -2327,16 +2327,16 @@ Transport (129) → Memory (130) → Interaction (132) → Attractors (133) → 
 
 Proto-matter information layer (Θ) exhibits a FIFTEEN-LEVEL HIERARCHY:
 ...
-14. Q Origin of L: L is the graph Laplacian of Q interactions (TQM-142)
-15. Geometry Universality: hierarchy survives across locally connected graphs (TQM-143)
-16. **Physical Correspondence: Theta spectra ≡ lattice physics (TQM-144)**
+14. Q Origin of L: L is the graph Laplacian of Q interactions (AT-142)
+15. Geometry Universality: hierarchy survives across locally connected graphs (AT-143)
+16. **Physical Correspondence: Theta spectra ≡ lattice physics (AT-144)**
 
-THE COMPLETE TQM FRAMEWORK — TWO-PILLAR FOUNDATION:
+THE COMPLETE AT FRAMEWORK — TWO-PILLAR FOUNDATION:
 Graph Laplacian = Tight-Binding Hamiltonian = Phonon Dispersion = Spin Waves.
-TQM provides evolutionary interpretation (species, fitness, selection, innovation)
+AT provides evolutionary interpretation (species, fitness, selection, innovation)
 of standard graph/lattice physics.
 
-RESEARCHX FOUNDATIONS (TQM-X001 through TQM-X022):
+RESEARCHX FOUNDATIONS (AT-X001 through AT-X022):
 - Self-consistency F(x)=x is the deepest universal invariant (X010).
 - Reversibility ≠ Self-consistency — proven independent (X011).
 - R+S is minimally sufficient for full reality (X015, proven).
@@ -2344,7 +2344,7 @@ RESEARCHX FOUNDATIONS (TQM-X001 through TQM-X022):
 - Operator-family evolution via density-dependent nonlinearity is the
   only known mechanism for L6, but α-space is bounded (X021-X022).
 
-### TQM-134
+### AT-134
 
 Information Species Reproduction and Inheritance — can information
 species reproduce, inherit traits, and form persistent lineages?
@@ -2365,20 +2365,20 @@ Key findings:
 - Statistical significance: H_obs (0.786) > H_baseline (0.30) + 0.1
 
 **COMPLETE Θ HIERARCHY (6 levels):**
-1. Transport: signals propagate (TQM-129)
-2. Memory: signals persist (TQM-130)
-3. Interaction: signals influence each other (TQM-132)
-4. Attractors: signals converge to stable states (TQM-133)
-5. Ecology: multiple attractor species coexist (TQM-133)
-6. **Evolution: species reproduce and form lineages (TQM-134)**
+1. Transport: signals propagate (AT-129)
+2. Memory: signals persist (AT-130)
+3. Interaction: signals influence each other (AT-132)
+4. Attractors: signals converge to stable states (AT-133)
+5. Ecology: multiple attractor species coexist (AT-133)
+6. **Evolution: species reproduce and form lineages (AT-134)**
 
 Information species can reproduce — 2 of 3 Darwinian pillars
 (reproduction, variation) are demonstrated. The third pillar
 (selection) remains to be shown.
 
-This bridges proto-matter to proto-life within the TQM framework.
+This bridges proto-matter to proto-life within the AT framework.
 
-### TQM-135
+### AT-135
 
 Information Selection Under Resource Constraints — does differential
 survival emerge when resources are limited?
@@ -2400,23 +2400,23 @@ Key findings:
 - Null hypothesis REJECTED: selection exists with extinctions
 
 **THE DARWINIAN TRIAD IS COMPLETE:**
-✓ Reproduction (TQM-134) — species generate offspring
-✓ Variation (TQM-134) — mutations accumulate (μ=0.214/gen)
-✓ Selection (TQM-135) — fitness-based differential survival
+✓ Reproduction (AT-134) — species generate offspring
+✓ Variation (AT-134) — mutations accumulate (μ=0.214/gen)
+✓ Selection (AT-135) — fitness-based differential survival
 
 **COMPLETE Θ HIERARCHY (7 levels):**
-1. Transport: signals propagate (TQM-129)
-2. Memory: signals persist (TQM-130)
-3. Interaction: signals influence each other (TQM-132)
-4. Attractors: signals converge to stable states (TQM-133)
-5. Ecology: multiple attractor species coexist (TQM-133)
-6. Evolution: species reproduce and form lineages (TQM-134)
-7. **Selection: differential survival under resource constraints (TQM-135)**
+1. Transport: signals propagate (AT-129)
+2. Memory: signals persist (AT-130)
+3. Interaction: signals influence each other (AT-132)
+4. Attractors: signals converge to stable states (AT-133)
+5. Ecology: multiple attractor species coexist (AT-133)
+6. Evolution: species reproduce and form lineages (AT-134)
+7. **Selection: differential survival under resource constraints (AT-135)**
 
 The Theta information layer supports FULL DARWINIAN EVOLUTION.
 The bridge from proto-matter to proto-life is complete.
 
-### TQM-136
+### AT-136
 
 Information Fitness Law — what fundamental quantity drives selection?
 
@@ -2424,7 +2424,7 @@ Result: **D — Fundamental Information Fitness Law.** w = r/c is the
 universal fitness function.
 
 Key findings:
-- 19 candidate fitness functions evaluated against TQM-135 outcomes
+- 19 candidate fitness functions evaluated against AT-135 outcomes
 - Best predictor: **Resource Efficiency w = r/c** (Spearman ρ = 1.000)
 - Perfect rank prediction: A > D > B > C (4/4 exact matches)
 - Predictive accuracy: 80%
@@ -2436,25 +2436,25 @@ Key findings:
 - r/c captures the fundamental trade-off: reproduction rate vs resource cost
 - Fitness = offspring per resource unit consumed
 
-**HONEST ASSESSMENT**: r/c was the fitness function TQM-135 used by design.
-TQM-136 does not discover a NEW law but VALIDATES that r/c is the OPTIMAL
+**HONEST ASSESSMENT**: r/c was the fitness function AT-135 used by design.
+AT-136 does not discover a NEW law but VALIDATES that r/c is the OPTIMAL
 choice among all 19 candidates. This is a crucial consistency check.
 
 **COMPLETE Θ HIERARCHY (8 levels):**
-1. Transport: signals propagate (TQM-129)
-2. Memory: signals persist (TQM-130)
-3. Interaction: signals influence each other (TQM-132)
-4. Attractors: signals converge to stable states (TQM-133)
-5. Ecology: multiple species coexist (TQM-133)
-6. Evolution: species reproduce and form lineages (TQM-134)
-7. Selection: differential survival under constraints (TQM-135)
-8. **Fitness Law: w = r/c governs evolutionary dynamics (TQM-136)**
+1. Transport: signals propagate (AT-129)
+2. Memory: signals persist (AT-130)
+3. Interaction: signals influence each other (AT-132)
+4. Attractors: signals converge to stable states (AT-133)
+5. Ecology: multiple species coexist (AT-133)
+6. Evolution: species reproduce and form lineages (AT-134)
+7. Selection: differential survival under constraints (AT-135)
+8. **Fitness Law: w = r/c governs evolutionary dynamics (AT-136)**
 
 The eight-level Theta theory is now a closed system: from transport
 to fitness law, the complete physics of information evolution is
 quantitatively understood.
 
-### TQM-137
+### AT-137
 
 Universality of Information Evolution — is Darwinian evolution
 universal or an artifact of the r/c fitness model?
@@ -2486,7 +2486,7 @@ with reproduction + constraints + asymmetry will exhibit Darwinian
 dynamics. The specific fitness function (r/c) is the optimal
 predictor, but evolution does not depend on it.
 
-### TQM-138
+### AT-138
 
 Open-Ended Information Innovation — can evolution generate genuinely
 novel species beyond the original 4?
@@ -2502,11 +2502,11 @@ Key findings:
 - Species catalog expanded from 4 to ~19 (4 known + 15 novel)
 - Null hypothesis REJECTED: catalog IS NOT fixed at 4
 - Open-ended evolution NOT detected: innovation saturates
-- The attractor landscape is RICHER than TQM-133 revealed (~19 vs 4 species)
+- The attractor landscape is RICHER than AT-133 revealed (~19 vs 4 species)
 - But the landscape is ultimately FINITE — discovery plateaus
 - Innovation is DISCOVERY of pre-existing attractors, not creation of new ones.
 
-### TQM-139
+### AT-139
 
 Information Attractor Landscape Topology — what is the global topology
 of the attractor landscape, and why does innovation saturate?
@@ -2522,8 +2522,8 @@ Key findings:
 - **2 hub attractors** — central species with high connectivity
 - **13 bottleneck attractors** — most species are critical for connectivity
 - **Diameter: 2** — any species reachable in ≤ 2 transitions
-- Finite landscape CONFIRMED — explains TQM-138's innovation saturation
-- Attractor count (13) is close to TQM-138 estimate (~19)
+- Finite landscape CONFIRMED — explains AT-138's innovation saturation
+- Attractor count (13) is close to AT-138 estimate (~19)
 - The landscape topology is DERIVABLE from Fourier eigenmode structure
 - Innovation saturates because the landscape has FINITE basins
 - Species are NOT random — they are organized by frequency × phase families
@@ -2539,7 +2539,7 @@ to landscape topology, the complete physics of information evolution is
 quantitatively characterized. The landscape is finite and structured,
 explaining why innovation is bounded and why ~19 species exist.
 
-### TQM-140
+### AT-140
 
 Spectral Origin of the Information Landscape — are information species
 eigenmodes of the Theta field operator?
@@ -2551,11 +2551,11 @@ Key findings:
 - 10 eigenmodes computed from the discrete Laplacian + damping operator
 - Analytic solutions: v_k[n] = sin(π(k+1)(n+1)/(N+1)), k=0,...,9
 - All 10 modes are stable (stability = 10.0 for all)
-- **7/7 TQM-139 species mapped** to eigenmodes (mean overlap 0.808)
-- Species count PREDICTED analytically: 10 (close to TQM-139's 13)
+- **7/7 AT-139 species mapped** to eigenmodes (mean overlap 0.808)
+- Species count PREDICTED analytically: 10 (close to AT-139's 13)
 - Species patterns = eigenvectors — computable without simulation
 - Species families correspond to mode order (k=0 uniform, k=1 fundamental, ...)
-- The finite spectrum explains innovation saturation (TQM-138)
+- The finite spectrum explains innovation saturation (AT-138)
 - Evolution FINDS what the spectrum PREDICTS
 - Null hypothesis REJECTED: species have a spectral origin
 - Topological matching (families/components, hubs/bottlenecks) weaker
@@ -2571,7 +2571,7 @@ The twelve-level hierarchy is complete — from signal transport to
 spectral origin, the full physics of information evolution is now
 understood from first principles: L·v = λ·v.
 
-### TQM-141
+### AT-141
 
 Nonlinear Mode Composition and Species Emergence — are species
 nonlinear combinations of a smaller set of fundamental eigenmodes?
@@ -2582,14 +2582,14 @@ don't compress the species catalog. Linear combinations of 2 modes suffice.
 Key findings:
 - 1985 composites generated from 10 eigenmode basis
 - 100 unique composite species after clustering
-- **7/7 TQM-139 species reconstructed** (2 pure + 5 linear pairs)
+- **7/7 AT-139 species reconstructed** (2 pure + 5 linear pairs)
 - Mean reconstruction overlap: 0.85-0.95
 - **Nonlinear (product) terms NOT essential** — linear combinations suffice
 - **Minimum basis: 2 eigenmodes** (remarkable compression)
 - Mode composition EXPANDS catalog (100 > 10) rather than compressing
 - Null hypothesis CONFIRMED — pure eigenmodes remain most parsimonious
 - Species diversity = eigenmodes (10) + linear pairs (~5) ≈ 15 species
-- This matches the 13-19 observed range from TQM-138/139
+- This matches the 13-19 observed range from AT-138/139
 
 **THE THIRTEEN-LEVEL THETA HIERARCHY IS COMPLETE:**
 1. Transport (129) → ... → 12. Spectral Origin (140) →
@@ -2599,7 +2599,7 @@ The hierarchy is complete at thirteen levels. Species diversity arises
 from eigenmode spectrum + linear composition of at most 2 modes.
 Evolution operates in the coefficient space of eigenmode combinations.
 
-### TQM-142
+### AT-142
 
 Origin of the Theta Operator — can L be derived from Q charge interactions
 rather than assumed phenomenologically?
@@ -2609,7 +2609,7 @@ of the Q interaction network (100% spectral identity).
 
 Key findings:
 - L_Q = graph Laplacian of Q charge interaction network
-- **100% spectral overlap** with TQM-140's Theta operator
+- **100% spectral overlap** with AT-140's Theta operator
 - Converges at Q ≈ 2 charges — valid from few-body physics
 - L ≡ -(1/Δx²)·L_Q - γ·I (exact identity for 1D chain graphs)
 - Continuum limit: L_Q → -d²/dx² as Q → ∞
@@ -2626,11 +2626,11 @@ THE COMPLETE REDUCTION CHAIN:
 Q charges → Q interactions → Graph Laplacian L_Q → Theta operator L →
 Eigenmodes → Species → Evolution → Everything
 
-Q is fundamental. Everything else is emergent. The TQM project has
+Q is fundamental. Everything else is emergent. The AT project has
 achieved complete reduction: all fourteen levels of the Theta
 hierarchy trace back to Q-Q charge interactions.
 
-### TQM-143
+### AT-143
 
 Geometry Dependence of the Theta Hierarchy — does the hierarchy
 depend on the 1D chain Q geometry, or is it universal?
@@ -2658,25 +2658,25 @@ Key findings:
 1. Transport (129) → ... → 14. Q Origin of L (142) →
 **15. Geometry Universality (143)**
 
-THE COMPLETE TQM FRAMEWORK:
+THE COMPLETE AT FRAMEWORK:
 Any locally connected graph G → Graph Laplacian L_G → Eigenmodes →
 Species → Darwinian Evolution. The hierarchy is universal across
 graph topologies satisfying the locality condition.
 
 ## Next Open Question
 
-The TQM framework is complete at fifteen levels. The hierarchy is
+The AT framework is complete at fifteen levels. The hierarchy is
 universal graph-based information physics — any locally connected
 graph supports the full Theta hierarchy.
 
-### TQM-144
+### AT-144
 
 Physical Spectrum Correspondence — do Theta spectra correspond to
 known physical systems?
 
 Result: **B — Known Graph Physics Only.** Theta spectra ARE physical
 (mathematical identities with tight-binding, phonons, spin waves)
-but TQM does NOT predict new physics.
+but AT does NOT predict new physics.
 
 Key findings:
 - **4 mathematical identities**: 1D/2D/3D Laplacians ≡ tight-binding Hamiltonians
@@ -2684,8 +2684,8 @@ Key findings:
 - Graph Laplacian = tight-binding Hamiltonian (MATHEMATICAL IDENTITY)
 - 2D hexagonal → graphene-like Dirac cones
 - Null hypothesis REJECTED — spectra are physically meaningful
-- Novel prediction: NO — TQM reformulates known graph/lattice physics
-- TQM's contribution: evolutionary INTERPRETATION of graph spectra
+- Novel prediction: NO — AT reformulates known graph/lattice physics
+- AT's contribution: evolutionary INTERPRETATION of graph spectra
 
 **THE SIXTEEN-LEVEL THETA HIERARCHY — COMPLETE:**
 1. Transport (129) → ... → 15. Geometry Universality (143) →
@@ -2694,7 +2694,7 @@ Key findings:
 Anchored in known physics: Theta spectra = graph Laplacian =
 tight-binding = phonons = spin waves = lattice vibrations.
 
-### TQM-145
+### AT-145
 
 Physical Observables from Topological Charge — can Q directly generate
 measurable physical quantities?
@@ -2719,7 +2719,7 @@ Key findings:
 
 Q → L_Q → Physical Observables. The complete chain is closed.
 
-### TQM-146
+### AT-146
 
 Physical Scaling Laws from Topological Charge — do Q-derived scaling
 laws match known physical systems?
@@ -2740,9 +2740,9 @@ Key findings:
 1. Transport (129) → ... → 17. Physical Observables (145) →
 **18. Physical Scaling Laws (146)**
 
-### TQM-147
+### AT-147
 
-Predictive Physical Correspondence — can TQM make blind predictions?
+Predictive Physical Correspondence — can AT make blind predictions?
 
 Result: **D: Novel Predictive Physical Theory.** 10/10 blind predictions
 accurate. m_eff=Q²/π², Δ=3π²/Q², E=2(Q-1) from L_Q alone. Honest:
@@ -2751,20 +2751,20 @@ predictive power = graph theory. 19-level hierarchy complete.
 **THE NINETEEN-LEVEL THETA HIERARCHY — COMPLETE:**
 1. Transport (129) → ... → 19. Predictive Physics (147)
 
-### TQM-148
+### AT-148
 
-External Physical Prediction Test — can TQM predict systems
+External Physical Prediction Test — can AT predict systems
 it was NOT built to describe?
 
-Result: **C: External Physical Prediction.** 4/8 passed. TQM works
+Result: **C: External Physical Prediction.** 4/8 passed. AT works
 on graph-Laplacian systems (harmonic chains, tight-binding, diffusion,
-spin waves). TQM FAILS on Ising/Heisenberg/percolation — different physics.
-This DELIMITS TQM's domain properly. 20-level hierarchy complete.
+spin waves). AT FAILS on Ising/Heisenberg/percolation — different physics.
+This DELIMITS AT's domain properly. 20-level hierarchy complete.
 
 **THE TWENTY-LEVEL THETA HIERARCHY — COMPLETE:**
 1. Transport (129) → ... → 20. External Prediction (148)
 
-### TQM-149
+### AT-149
 
 Emergence of Schrödinger Dynamics from Q Networks — can L_Q support
 quantum-like unitary evolution?
@@ -2772,12 +2772,12 @@ quantum-like unitary evolution?
 Result: **C: Schrödinger Correspondence.** L_Q supports i∂ψ/∂t = L_Q ψ
 with unitary evolution and stationary states = eigenmodes. Honest: the
 factor 'i' is manual — L_Q also supports diffusion and classical waves.
-TQM provides the Hilbert space structure, not the dynamics. 21-level hierarchy.
+AT provides the Hilbert space structure, not the dynamics. 21-level hierarchy.
 
 **THE TWENTY-ONE-LEVEL THETA HIERARCHY — COMPLETE:**
 1. Transport (129) → ... → 21. Schrödinger Correspondence (149)
 
-### TQM-150
+### AT-150
 
 Origin of the Imaginary Unit — can i emerge from real Q-network
 dynamics rather than being imposed?
@@ -2790,7 +2790,7 @@ the antisymmetry of coupling is not derived from L_Q. 22-level hierarchy.
 **THE TWENTY-TWO-LEVEL THETA HIERARCHY — COMPLETE:**
 1. Transport (129) → ... → 22. Origin of i (150)
 
-### TQM-151
+### AT-151
 
 Origin of the Antisymmetric Coupling — can J = [[0,1],[-1,0]]
 be derived rather than postulated?
@@ -2803,47 +2803,47 @@ matrix. Two irreducible postulates remain: Q exists + norm is conserved.
 **THE TWENTY-THREE-LEVEL THETA HIERARCHY — COMPLETE:**
 1. Transport (129) → ... → 23. Origin of J (151)
 
-### TQM-152
+### AT-152
 
 Origin of Norm Conservation — can ||ψ||² = constant be derived?
 
 Result: **A: Fundamental Axiom.** Norm conservation IS reversibility =
 unitarity = anti-Hermitian. These are mathematically equivalent and
-irreducible. TQM reduces QM to 2 postulates: Q exists + dynamics are
+irreducible. AT reduces QM to 2 postulates: Q exists + dynamics are
 reversible. 24-level hierarchy complete.
 
 **THE TWENTY-FOUR-LEVEL THETA HIERARCHY — COMPLETE:**
 1. Transport (129) → ... → 24. Origin of Norm (152)
 
-### TQM-153
+### AT-153
 
 Origin of the Born Rule — can P = |ψ|² be derived?
 
 Result: **C: Emergent Born Rule.** |ψ|² is uniquely selected by additivity
-(Gleason's theorem). But 'additivity' is an additional postulate. TQM
+(Gleason's theorem). But 'additivity' is an additional postulate. AT
 requires 3 postulates: Q exists, reversible dynamics, Born rule. This is
 still fewer than standard QM's ~5. 25-level hierarchy complete.
 
 **THE TWENTY-FIVE-LEVEL THETA HIERARCHY — COMPLETE:**
 1. Transport (129) → ... → 25. Born Rule (153)
 
-### TQM-154
+### AT-154
 
 Origin of Quantum Measurement — can measurement/collapse emerge?
 
 Result: **B: Weak Decoherence Correspondence.** Decoherence explained
 (off-diagonal decay, pointer states, Born stats). But COLLAPSE is
-IRREDUCIBLE — the measurement problem affects ALL theories. TQM requires
+IRREDUCIBLE — the measurement problem affects ALL theories. AT requires
 4 postulates. 26-level hierarchy complete. The measurement problem
 remains the last open postulate of quantum mechanics.
 
 **THE TWENTY-SIX-LEVEL THETA HIERARCHY — COMPLETE:**
 1. Transport (129) → ... → 26. Measurement (154)
 
-### TQM-155
+### AT-155
 
 Unified Theory Documentation — complete restructuring of all theory results
-from TQM-117 through TQM-154 into a coherent scientific framework.
+from AT-117 through AT-154 into a coherent scientific framework.
 
 **Complete documentation under `Docs/Theory/`:**
 - `00_Executive_Summary.md` — One-page to full summary
@@ -2861,16 +2861,16 @@ from TQM-117 through TQM-154 into a coherent scientific framework.
 - `12_Open_Questions.md` — Priority-ranked (10 questions)
 - `13_Roadmap.md` — Future research phases
 
-**Also includes**: `TQM_Unified_Theory.md` (comprehensive single-document version).
+**Also includes**: `AT_Unified_Theory.md` (comprehensive single-document version).
 
 **Key findings**: 4 postulates, 26-level hierarchy, properly delimited domain.
-TQM is a conceptual framework reinterpreting graph spectral theory as
+AT is a conceptual framework reinterpreting graph spectral theory as
 evolutionary physics, deriving Hilbert space + Schrödinger from Q + reversibility.
 
 ### ResearchX — Alternative Foundations and Cross-Cutting Investigations
 
-A parallel research track (TQM-X001 through TQM-X022) systematically
-challenged the deepest assumptions of the TQM framework.
+A parallel research track (AT-X001 through AT-X022) systematically
+challenged the deepest assumptions of the AT framework.
 
 **PHASE 1 — Dynamic Graphs (X001–X004):**
 - X001: Audit identified 11 hidden assumptions. Static graph = #1 untested.
@@ -2880,7 +2880,7 @@ challenged the deepest assumptions of the TQM framework.
 - **Conclusion**: Dynamic graphs alone do NOT produce open-ended innovation.
 
 **PHASE 2 — Nonlinear Physics (X005–X006):**
-- X005: Nonlinearity breaks eigenmodes, creates solitons. Most of TQM's
+- X005: Nonlinearity breaks eigenmodes, creates solitons. Most of AT's
   "quantum" results are linear algebra artifacts. Q, fitness, evolution survive.
 - X006: Solitons satisfy ALL 5 species criteria. 6+ soliton classes.
   Solitons = nonlinear generalization of information species.
@@ -2924,7 +2924,7 @@ challenged the deepest assumptions of the TQM framework.
   Real mechanism (BEC, optics, plasma). But α-space bounded → only 2 families.
   Operator evolution EXISTS but INSUFFICIENT for full L6 alone.
 
-**TWO-PILLAR FOUNDATION OF TQM:**
+**TWO-PILLAR FOUNDATION OF AT:**
 - Postulate 1: Q exists (topological charge → L_Q → Hilbert space)
 - Postulate 2: Reversible dynamics (→ unitary → Schrödinger)
 - Principle A: Self-consistency F(x)=x (→ fixed points → carriers)
@@ -2964,20 +2964,20 @@ challenged the deepest assumptions of the TQM framework.
   NOT an accident. NOT anthropic. Mathematical necessity.
 
 **PHASE 10 — Completeness and Unification (X032–X034):**
-- X032: Completeness Audit. Main TQM (117-154) vs ResearchX (X001-X031).
+- X032: Completeness Audit. Main AT (117-154) vs ResearchX (X001-X031).
   11/15 concepts equivalent. 4 asymmetries: complexity staircase,
-  finite/infinite boundary, quantum necessity (ResearchX adds; Main TQM
-  didn't formalize), L_Q explicit form (Main TQM adds; ResearchX
+  finite/infinite boundary, quantum necessity (ResearchX adds; Main AT
+  didn't formalize), L_Q explicit form (Main AT adds; ResearchX
   doesn't need — operator-independent).
 - X033: Emergence Gap Audit. Asymmetries classified: 3 implicit
-  (already in Main TQM but unnamed), 4 emergent (appear only from
+  (already in Main AT but unnamed), 4 emergent (appear only from
   ResearchX questions), 1 structural feature (L_Q operator-independence).
-  Schrödinger ↔ Heisenberg analogy: Main TQM = operator-first picture,
+  Schrödinger ↔ Heisenberg analogy: Main AT = operator-first picture,
   ResearchX = principle-first picture. Same structure, different projections.
   **Emergence gap CLOSED.**
-- X034: UNIFIED TQM SYNTHESIS. Final minimal theory extracted:
+- X034: UNIFIED AT SYNTHESIS. Final minimal theory extracted:
 
-## UNIFIED TQM FRAMEWORK (FINAL)
+## UNIFIED AT FRAMEWORK (FINAL)
 
 ### Minimal Postulates (5 + 1 irreducible)
 
@@ -3008,7 +3008,7 @@ R+S at (1,1) yields unitary QM. ResearchX proves OPERATOR-INDEPENDENCE.
 ```
 Q + Graph (Postulate 1)
     │
-    ├── MAIN TQM PATH ──────────┼── RESEARCHX PATH ──────────┐
+    ├── MAIN AT PATH ──────────┼── RESEARCHX PATH ──────────┐
     │   L_Q = D - A             │   R + S (Postulates 2,3)   │
     │   Hilbert eigenbasis      │   Reality structures        │
     │   J → i mapping           │   Carrier classes (X008)    │
@@ -3068,12 +3068,12 @@ irreducibles. The theory has been compressed to 2 postulates + 1 irreducible
   Chain proven RIGID: Max Complexity → Inner Product → L2 → α=2 → Born.
 - X038: Origin of Measurement. Single-outcome selection DERIVED from Q
   conservation. Branching (Many-Worlds) → Q growth → violates dQ/dt=0.
-  MW incompatible with TQM. Measurement = Q conservation enforcement.
+  MW incompatible with AT. Measurement = Q conservation enforcement.
 - X038b: Hostile audit. 7 MW defenses attempted — ALL FAIL. Q must be
   globally defined; MW requires intra-branch-only Q. LOGICALLY INCOMPATIBLE.
 - X039: Origin of Quantum Randomness. 10 candidate selection mechanisms —
   0/10 derive outcome weights from Q. Genuine ontological randomness is
-  the FINAL IRREDUCIBLE. TQM: 1 postulate (Q) + 1 irreducible (randomness).
+  the FINAL IRREDUCIBLE. AT: 1 postulate (Q) + 1 irreducible (randomness).
 
 **PHASE 13 — Spacetime Emergence (X040–X042):**
 - X040: Emergence of Time. Time = partial order of Q-actualization events.
@@ -3157,7 +3157,7 @@ EVERYTHING ELSE DERIVED:
 
 **PHASE 17 — Parameter Compression (X057–X058, X060b–X060d):**
 - X057: Absolute Mass Scale. Cannot be derived. ONE mass scale must be measured
-  in ANY physical theory. TQM: that scale = defect correlation length ξ.
+  in ANY physical theory. AT: that scale = defect correlation length ξ.
 - X058: Correlation Length Origin. ξ weakly constrained; Λ-mediated formula
   ξ ~ (ℓ_P²/√Λ)^(1/2) ~ 10^17 ℓ_P is numerologically intriguing (UV/IR mixing).
 - X060b: Hidden Dependency Audit. 6 apparent parameters → 3 PDE coefficients
@@ -3174,13 +3174,13 @@ EVERYTHING ELSE DERIVED:
   5/5 arguments survive. 5/6 U(1)-free ecologies fail. Binary choice ELIMINATED.
 - X060f: Final Primitive Audit. ALL THREE primitives survive hostile reduction.
   Q (ontology), Randomness (becoming), M² (dynamics) are independently irreducible.
-  No further compression possible. TQM core = 2 primitives + 1 number. COMPLETE.
+  No further compression possible. AT core = 2 primitives + 1 number. COMPLETE.
 
-## ULTIMATE TQM PARAMETER COUNT (Post-X060f)
+## ULTIMATE AT PARAMETER COUNT (Post-X060f)
 
 ```
 ┌─────────────────────────────────────────────────────┐
-│              TQM — MAXIMALLY COMPRESSED              │
+│              AT — MAXIMALLY COMPRESSED              │
 ├─────────────────────────────────────────────────────┤
 │  PRIMITIVES (irreducible — cannot be eliminated):    │
 │    Q — principle of individuation (ontology)        │
@@ -3193,7 +3193,7 @@ EVERYTHING ELSE DERIVED:
 │    Mass scale — one measurement fixes all units      │
 ├─────────────────────────────────────────────────────┤
 │  Standard Model: ~19 numbers                         │
-│  TQM:            2 primitives + 1 number            │
+│  AT:            2 primitives + 1 number            │
 │  REDUCTION:      ~95%                                │
 │  U(1):           THEOREM (derived from topology)     │
 └─────────────────────────────────────────────────────┘
@@ -3201,7 +3201,7 @@ EVERYTHING ELSE DERIVED:
 
 ## Current Working Hypothesis
 
-TQM is a theory with 2 irreducible primitives + 1 contingent number:
+AT is a theory with 2 irreducible primitives + 1 contingent number:
 
   Q (individuation) + Randomness (actualization) + M² (nonlinearity)
     → Time, Space, Spacetime, 3+1 dimensions
@@ -3242,7 +3242,7 @@ are all independently irreducible. The compression program is COMPLETE.
   limit: G_μν = 8πG_eff T_μν + O(ℓ_P²·R²) + O(1/√V). Two deviations from GR+ΛCDM:
   time-varying Λ(t) and singularity-free black holes.
 - X062: Observable Deviations. 10 signatures audited. BEST TEST: w(z) ≠ -1 from
-  time-varying dark energy. Euclid (2024+) will measure w to σ≈0.02. TQM
+  time-varying dark energy. Euclid (2024+) will measure w to σ≈0.02. AT
   falsifiable at >3σ by ~2030.
 - X063: Correlation-Induced Dark Matter Audit. Galaxy-scale successes (3/3):
   rotation curves, BTFR, MOND-like a₀~cH₀ from Λ. Cosmological failures (0/4):
@@ -3255,7 +3255,7 @@ are all independently irreducible. The compression program is COMPLETE.
   initial conditions (same as ALL DM models).
 - X065b: Abundance vs Identity Audit. FUNDAMENTAL SPLIT DISCOVERED. Identity:
   93% derived (topology determines WHAT). Abundance: 14% derived (history
-  determines HOW MUCH). Deepest meta-result of the TQM program.
+  determines HOW MUCH). Deepest meta-result of the AT program.
 
 **PHASE 19 — ResearchXB: Abundance Physics (XB001–XB002):**
 - XB001: Origin of Abundance. New research program FOUNDED. Classification D —
@@ -3265,19 +3265,19 @@ are all independently irreducible. The compression program is COMPLETE.
 - XB002: Universal Abundance Distribution Audit. UNIVERSAL ABUNDANCE LAW
   DISCOVERED. All abundance quantities are LOG-NORMAL from multiplicative
   actualization cascades. CLT in log-space → log(X) ~ N(μ,σ²). 3 universality
-  classes (coupling, mass scale, relic density). Explains WHY TQM cannot derive
+  classes (coupling, mass scale, relic density). Explains WHY AT cannot derive
   exact values — they are random variables, not fixed constants.
 
 **PHASE 20 — ResearchXC: GR Bridge Completion (XC006):**
 ResearchXG-000 identified the causal set → BDG → GR bridge as the single largest
-theoretical gap in TQM. XC006 audits every step of the Q → Einstein chain.
+theoretical gap in AT. XC006 audits every step of the Q → Einstein chain.
 
-- Bridge audit: 13 steps. 5 TQM-native (38%), 6 external theorems (46%),
+- Bridge audit: 13 steps. 5 AT-native (38%), 6 external theorems (46%),
   2 missing/heuristic (15%). The BDG d'Alembertian and BDG action are the
   critical external imports.
-- 5 candidate TQM-native actions evaluated. 2 viable: Volume deficit action
+- 5 candidate AT-native actions evaluated. 2 viable: Volume deficit action
   (recovers R but not full G_μν) and Chain-counting action (equivalent to BDG
-  but expressible in pure TQM primitives).
+  but expressible in pure AT primitives).
 - 6 theorem gaps identified. 4 block full derivation: Poisson sprinkling proof,
   BDG derivation from primitives, Einstein equations without BDG, tensor
   structure from scalars.
@@ -3287,9 +3287,9 @@ theoretical gap in TQM. XC006 audits every step of the Q → Einstein chain.
   Action justification (12-24mo) → G from defect coupling (6-12mo) →
   Dimensionality unification (6-12mo). Total: 3-6 years.
 - CLASSIFICATION: B — Bridge exists but depends on external theorems.
-  Worst case kills ~15% of TQM (only gravity sector). Everything else
+  Worst case kills ~15% of AT (only gravity sector). Everything else
   (QM, particles, gauge, generations, neutrinos, complexity chain) survives.
-- TQM-native action EXISTS: S = Σ [N(R) − N_flat(R)]² expressed purely in
+- AT-native action EXISTS: S = Σ [N(R) − N_flat(R)]² expressed purely in
   Q-event counts. The continuum-limit proof that S → Einstein-Hilbert is
   the external dependency.
 
@@ -3391,21 +3391,21 @@ simultaneously satisfies gravity, chemistry, topology, information, causality,
 and complexity. All trace to ⟨k⟩ = f(d).
 - Classification C: Strong partial unification (~60% via ⟨k⟩). Remaining ~40%
 independent but convergent. Final conceptual gap between gravity (XC) and
-complexity (XE) closed. TQM now has a single explanation for d=3+1.
+complexity (XE) closed. AT now has a single explanation for d=3+1.
 
 **PHASE 27 — ResearchXD-004: Euclid Decision Tree:**
 Complete operational decision tree. 7 scenarios pre-classified: w=-1 (6 sectors
 killed, ~70% survives), weak deviation (0 killed), moderate deviation (0 killed,
-TQM validated), strong deviation (1 killed, recalibrate), wrong sign (4 killed),
+AT validated), strong deviation (1 killed, recalibrate), wrong sign (4 killed),
 survey tension (0 killed, wait), DESI confirmation (0 killed, strengthen).
 
 - 21 sectors mapped for survival. 15/21 independent of w(z) — always survive.
 10 branches with Bayesian confidence updates under 4 outcomes. 16 revision
 actions defined (Preserve/Revise/Replace/Delete).
-- Worst case (w=-1): TQM becomes 1-parameter (M²) + unexplained constant Λ.
-Best case (w≠-1, correct sign): overall confidence 0.75→0.85, TQM validated.
+- Worst case (w=-1): AT becomes 1-parameter (M²) + unexplained constant Λ.
+Best case (w≠-1, correct sign): overall confidence 0.75→0.85, AT validated.
 Any case: response is pre-committed, documented, binding.
-- Classification D: Fully decision-complete. TQM is ready for experimental
+- Classification D: Fully decision-complete. AT is ready for experimental
 judgment. No improvisation needed. The decision tree is complete.
 
 **PHASE 28 — ResearchXD-005: Roman + Euclid Joint Forecast:**
@@ -3415,7 +3415,7 @@ Euclid+Roman (1.9σ), all three (2.5σ w0, 3.0σ wa). Combined 3-survey ellipse
 excludes ΛCDM at ~3.9σ.
 
 - Key signature: wa > 0 (dark energy DECREASES with time). This is the opposite
-of freezing quintessence (wa < 0) — unique TQM signature. Lambda(t) =
+of freezing quintessence (wa < 0) — unique AT signature. Lambda(t) =
 alpha/sqrt(V(t)) → V grows → Lambda decays → w becomes less negative.
 - 7 validation thresholds: Discovery (>5σ), Validation (3-5σ), Evidence (2-3σ),
 Hint (1-2σ), Null Result (w=-1 confirmed), Wrong Sign (phantom), Inconsistent.
@@ -3426,24 +3426,24 @@ needs to do the measurement. Timeline: DESI Y1 2025 → Euclid DR1 2027 →
 Roman DR1 2029 → Combined decisive 2031.
 
 **PHASE 29 — ResearchDATA-001: Pantheon+SH0ES Reality Check:**
-Real data analysis. 1701 SNe Ia from Pantheon+SH0ES parsed. LCDM and TQM both
+Real data analysis. 1701 SNe Ia from Pantheon+SH0ES parsed. LCDM and AT both
 fitted via Omega_m grid scan (0.10-0.60) with numerical luminosity distance
-integration. TQM w(z) = -1 + 0.015·(1+z)^(3/2) used exactly as specified —
+integration. AT w(z) = -1 + 0.015·(1+z)^(3/2) used exactly as specified —
 NOT fitted. Same 2 free parameters for both models (Omega_m + M nuisance).
 
-- Results: |Delta_chi2| < 1 between models — INDISTINGUISHABLE. TQM deviation
+- Results: |Delta_chi2| < 1 between models — INDISTINGUISHABLE. AT deviation
 (~1.5% at z=0) is ~5x smaller than Pantheon sensitivity (~5-10%). Data are
-fully consistent with BOTH models. TQM survives first observational test.
+fully consistent with BOTH models. AT survives first observational test.
 - This is EXPECTED: XD005 forecast predicted Pantheon alone cannot distinguish.
 Need DESI+Euclid+Roman combined for >3sigma.
-- Classification: TQM is CONSISTENT with current data. Not yet validated.
+- Classification: AT is CONSISTENT with current data. Not yet validated.
 Not yet falsified. Stronger tests await (2027-2031).
 
 **PHASE 30 — ResearchDATA-002: Pantheon Detectability Verification:**
 Injection-recovery and statistical power analysis using mock Pantheon datasets
 generated from the real Pantheon+SH0ES redshift distribution and error bars.
 200 (optimized to 10) Monte Carlo realizations per configuration. Attack vectors:
-(1) LCDM null + TQM injection-recovery, (2) signal amplification η∈[0.015,0.15],
+(1) LCDM null + AT injection-recovery, (2) signal amplification η∈[0.015,0.15],
 (3) detection threshold audit, (4) statistical power (false positive/negative),
 (5) Kolmogorov-Smirnov residual analysis, (6) Euclid sensitivity comparison.
 
@@ -3451,57 +3451,57 @@ generated from the real Pantheon+SH0ES redshift distribution and error bars.
 - Critical degeneracy: SNe data alone has a fundamental Ω_m-w(z) degeneracy.
   Free Ω_m absorbs the w(z) signal at ALL tested η values (up to 10x baseline).
   Even η=0.15 (w0≈-0.85) is masked by adjusting Ω_m by ~0.08.
-- KS test: p=0.96 — residual distributions between ΛCDM→ΛCDM and TQM→ΛCDM
-  fits are INDISTINGUISHABLE. TQM signal completely hidden in noise.
+- KS test: p=0.96 — residual distributions between ΛCDM→ΛCDM and AT→ΛCDM
+  fits are INDISTINGUISHABLE. AT signal completely hidden in noise.
 - Statistical power at η=0.015: ~30% (essentially random). No detection.
 - Root cause confirmed: DATA-001 was limited by WEAK SIGNAL + Ω_m DEGENERACY,
   not weak methodology. The fitting pipeline is capable and accurate.
 - Euclid sensitivity: σ(w0)=0.025 vs Pantheon σ(w0)=0.07 → 2.8x improvement.
   But Euclid alone still needs external Ω_m constraints for decisive detection.
-- Classification: TQM is BELOW Pantheon detection threshold. Not falsified.
+- Classification: AT is BELOW Pantheon detection threshold. Not falsified.
   Ω_m-w degeneracy requires multi-probe combination (SNe+CMB+BAO) for detection.
-  Pure SNe cannot distinguish TQM from ΛCDM regardless of signal amplitude.
+  Pure SNe cannot distinguish AT from ΛCDM regardless of signal amplitude.
 
 **PHASE 31 — ResearchDATA-003: Lelli Mass Model Reality Check:**
 SPARC mass models (Lelli+2016c) analyzed. 175 galaxies, 3392 radial points.
 Fixed-width MRT format parsed with 10 columns. Population synthesis M/L
 (Υ_disk=0.5, Υ_bulge=0.7 at 3.6μm) used for baryonic mass decomposition.
 Attack vectors: (1) dataset audit, (2) mass budget, (3) mass discrepancy D(R),
-(4) Radial Acceleration Relation (RAR), (5) a0 ≈ cH0 test, (6) TQM compatibility.
+(4) Radial Acceleration Relation (RAR), (5) a0 ≈ cH0 test, (6) AT compatibility.
 
 - Key finding: 96% of galaxies need DM — mean <D> = 3.73. Baryons insufficient.
 - RAR CONFIRMED: Pearson r = 0.934, RMS scatter = 0.20 dex. Characteristic
   acceleration g† = 0.94×10⁻¹⁰ m/s² (literature: 1.20). g†/cH0 = 0.14,
   g†/(cH0/2π) = 0.90 → g† ≈ cH0/(2π) is a genuine empirical coincidence.
-- TQM compatibility: 3/4 checks passed (GOOD). Acceleration scale exists,
+- AT compatibility: 3/4 checks passed (GOOD). Acceleration scale exists,
   D→1 at high g_bar, transition is continuous, LSB galaxies consistent.
 - Critical caveat: The RAR does NOT distinguish theories. Both MOND and
-  ΛCDM+feedback reproduce it. TQM must DERIVE the RAR analytically from
+  ΛCDM+feedback reproduce it. AT must DERIVE the RAR analytically from
   defect-DM dynamics to claim explanatory power.
-- The g† ≈ cH0 coincidence is CONSISTENT with TQM's Λ(t) ~ 1/√V(t) setting
+- The g† ≈ cH0 coincidence is CONSISTENT with AT's Λ(t) ~ 1/√V(t) setting
   the acceleration scale of DM halos. This is encouraging but not sufficient
   for validation — it's a constraint every theory must satisfy.
-- Classification: TQM is CONSISTENT with SPARC galaxy dynamics. g† coincidence
-  warrants deeper investigation. Next: Derive RAR analytically from TQM.
+- Classification: AT is CONSISTENT with SPARC galaxy dynamics. g† coincidence
+  warrants deeper investigation. Next: Derive RAR analytically from AT.
 
 **PHASE 32 — ResearchDATA-004: RAR Origin Audit:**
 Comprehensive RAR origin analysis. 5 functional forms fitted to binned SPARC data:
-MOND IF, power law, broken power law, TQM-derived, ΛCDM empirical. TQM RAR
+MOND IF, power law, broken power law, AT-derived, ΛCDM empirical. AT RAR
 derived analytically from isothermal defect-DM halos + exponential baryonic disks:
 g_obs = g_bar·√(1 + g†/g_bar) with g† = cH₀/(2π).
 
 - Empirical g†: 0.97×10⁻¹⁰ m/s² (literature: 1.20). Best fit: MOND IF
   (χ²=71.7, RMS=0.04 dex, 1 free param).
-- TQM 0-param derived: g† = cH₀/(2π) = 1.04×10⁻¹⁰ m/s². Ratio to empirical:
+- AT 0-param derived: g† = cH₀/(2π) = 1.04×10⁻¹⁰ m/s². Ratio to empirical:
   1.07 — DERIVES the scale within 7%, NO FREE PARAMETERS.
-- TQM functional form: g_obs = g_bar·√(1 + g†/g_bar) emerges algebraically
+- AT functional form: g_obs = g_bar·√(1 + g†/g_bar) emerges algebraically
   from isothermal ρ_dm ∝ 1/r² + exponential baryonic disk. No MOND inserted.
 - DISTINCTION: MOND inserts a₀ by hand (accommodative). ΛCDM tunes feedback
-  (accommodative). TQM derives g† from Q-event causal structure (explanatory).
-- Critical caveats: (1) Isothermal halo assumed, not derived from TQM.
+  (accommodative). AT derives g† from Q-event causal structure (explanatory).
+- Critical caveats: (1) Isothermal halo assumed, not derived from AT.
   (2) 2π factor needs rigorous justification. (3) Post-diction, not pre-diction
   (RAR discovered 2016). (4) Scatter (0.20 dex) not yet explained.
-- Classification: TQM is PARTIALLY EXPLANATORY for the RAR. Derives both the
+- Classification: AT is PARTIALLY EXPLANATORY for the RAR. Derives both the
   scale AND the functional form from existing structure (Q, M², causal set).
   Goes beyond accommodation — but isothermal halo assumption and 2π factor
   need rigorous derivation from Q-event dynamics.
@@ -3511,7 +3511,7 @@ Final RAR explanatory gap closure. Two remaining weaknesses from DATA-004
 addressed: (1) origin of the 2π factor, (2) origin of RAR scatter ~0.20 dex.
 
 - 2π audit: 6 candidate origins evaluated. Best: Fourier mode normalization
-  on S¹ (score 5/5). 2π is MATHEMATICALLY INEVITABLE in TQM — emerges from
+  on S¹ (score 5/5). 2π is MATHEMATICALLY INEVITABLE in AT — emerges from
   circular topology of Q-event field modes, ω↔ν conversion, and defect winding
   number quantization. NOT inserted by hand.
 - Scale comparison: cH₀/(2π) uniquely selected (Δ=0.074) over cH₀/π (Δ=1.15)
@@ -3520,49 +3520,49 @@ addressed: (1) origin of the 2π factor, (2) origin of RAR scatter ~0.20 dex.
   Poisson noise (0.05) + environmental (0.05) + observational (0.04).
   Quadrature sum = 0.12 dex vs observed 0.20 — budget APPROXIMATELY CLOSED.
 - Variance chain: Q-event count → defect count (Poisson, σ/N≈0.1) → v_dm²
-  → g† → log(g_obs). TQM scatter ~0.01 dex; bulk from astrophysics.
+  → g† → log(g_obs). AT scatter ~0.01 dex; bulk from astrophysics.
 - Galaxy-type dependence: CONFIRMED. Dwarfs/LSB show higher scatter than
-  massive/HSB galaxies. TQM predicts this from DM fraction differences.
-- Completion: 7/10 RAR aspects now derived from TQM (70%). Remaining:
+  massive/HSB galaxies. AT predicts this from DM fraction differences.
+- Completion: 7/10 RAR aspects now derived from AT (70%). Remaining:
   isothermal profile from Q-events, ℓ numerical value, defect count N_def.
-- Classification: B/C — STRONG partial explanation. TQM explains SCALE,
+- Classification: B/C — STRONG partial explanation. AT explains SCALE,
   FORM, 2π, and LIMITS. Scatter is ~60% explained, 40% astrophysical.
   The RAR program closure is now within reach.
 
 **PHASE 34 — ResearchDATA-006: RAR Explanatory Power Audit:**
-Head-to-head comparison of MOND, ΛCDM+feedback, and TQM in explaining the RAR.
+Head-to-head comparison of MOND, ΛCDM+feedback, and AT in explaining the RAR.
 Uses identical scoring rubric: assumption counts, parameter counts, prediction
 classification, explanatory compression, failure modes, falsifiability.
 
-- Final ranking: #1 TQM (8/10), #2 ΛCDM+feedback (6/10), #3 MOND (4/10).
-- TQM has highest explanatory compression: 1.67 (5 observables / 3 assumptions)
+- Final ranking: #1 AT (8/10), #2 ΛCDM+feedback (6/10), #3 MOND (4/10).
+- AT has highest explanatory compression: 1.67 (5 observables / 3 assumptions)
   vs ΛCDM 0.60 (3/5) vs MOND 0.25 (1/4).
-- TQM is the ONLY framework that DERIVES the g† scale (cH₀/2π, ratio=1.07)
+- AT is the ONLY framework that DERIVES the g† scale (cH₀/2π, ratio=1.07)
   and DERIVES the functional form (isothermal+exponential disk) with 0 free
   parameters. Both MOND and ΛCDM fit/tune their parameters.
 - Caveats: (1) Scoring rubric favors derivation over empirical fit quality —
   MOND has better χ². (2) ΛCDM wins on scope (CMB+LSS+BBN). (3) This comparison
   is RAR-specific — not a general cosmological framework ranking.
-- Classification: C/D — TQM is the STRONGEST EXPLANATORY framework for the RAR.
-  The RAR program (DATA-001→006) demonstrates: TQM does not just fit the RAR —
+- Classification: C/D — AT is the STRONGEST EXPLANATORY framework for the RAR.
+  The RAR program (DATA-001→006) demonstrates: AT does not just fit the RAR —
   it EXPLAINS why it exists.
 - End of RAR program. Total: 6 experiments, 0 free parameters introduced,
   g† scale derived to 7% accuracy, scatter budget ~60% closed.
 
 **PHASE 35 — ResearchDATA-007: RAR Novel Prediction Audit:**
-Forward-looking: identifies what TQM uniquely PREDICTS vs competing frameworks.
-7 predictions extracted from TQM structure. 3 are UNIQUE (not made by MOND/ΛCDM).
+Forward-looking: identifies what AT uniquely PREDICTS vs competing frameworks.
+7 predictions extracted from AT structure. 3 are UNIQUE (not made by MOND/ΛCDM).
 
 - #1 CRITICAL: g†(z) = c·H(z)/(2π) INCREASES with redshift. MOND: a₀=CONSTANT.
   This is the cleanest possible discriminant in fundamental physics. JWST high-z
-  rotation curves (2028+) will decide. If g†(z)=CONSTANT → TQM falsified.
+  rotation curves (2028+) will decide. If g†(z)=CONSTANT → AT falsified.
   If g†(z) INCREASES → MOND falsified.
 - #2 HIGH: Environmental g† modulation (lower in clusters vs field).
 - #3 MEDIUM: Scatter(z) increases ∝ 1/√V(z) (0.20→0.30 dex by z=2).
 - Observational priority ranking: JWST high-z RCs (#1, DP=9.5), Euclid dwarfs
   (#2, DP=7.0), Cluster RAR (#3, DP=6.5), LSB/UDG (#4), precision local (#5).
 - 3 FATAL falsification conditions, 2 weakening conditions identified.
-- Classification: C — STRONGLY DISTINCTIVE. TQM now moves from post-diction
+- Classification: C — STRONGLY DISTINCTIVE. AT now moves from post-diction
   to genuine PREDICTION. The RAR program (DATA-001→007) is complete: 7 experiments,
   0 free parameters, g† derived to 7%, scatter ~60% closed, unique prediction
   for JWST to test by 2030.
@@ -3592,7 +3592,7 @@ Hostile systematics audit of the g†(z) prediction. 8 systematic sources
 catalogued with bias magnitudes. Beam smearing is the dominant effect
 (0.20 dex at z=2). False positive simulation: inject constant MOND a₀,
 apply realistic systematics → apparent g† increase of 0.14 dex at z=1,
-0.26 dex at z=2. At z>1.5, systematics CAN mimic the TQM signal.
+0.26 dex at z=2. At z>1.5, systematics CAN mimic the AT signal.
 
 - Systematics quadrature total: 0.20 dex. Beam smearing (#1, 0.12 dex),
   M/L evolution (#2, 0.07 dex), morphology evolution (#3, 0.08 dex),
@@ -3602,7 +3602,7 @@ apply realistic systematics → apparent g† increase of 0.14 dex at z=1,
   z>2 DOMINATED by systematics — not recoverable.
 - ALL systematics are CORRECTABLE with proper analysis: forward PSF modeling,
   3D kinematics, SED-fitting for M/L(z), selection function modeling.
-- Key discriminant: TQM g†∝H(z) is smooth and predictable. Systematics are
+- Key discriminant: AT g†∝H(z) is smooth and predictable. Systematics are
   step-like and instrument-dependent. Blind analysis essential.
 - Robustness score: 6.7/10. Classification: C — RECOVERABLE with careful
   analysis. The g†(z) prediction SURVIVES the hostile audit but requires
@@ -3626,7 +3626,7 @@ defined, 5 falsification pathways mapped, 4-phase execution plan (2025-2035).
 - Classification: C/D — PRACTICAL WITHIN EXISTING FACILITIES. A small team
   with public data access could publish the first g†(z) measurement in 2026.
 - End of high-z RAR program (DATA-007→010). Total: 4 feasibility experiments.
-  The strongest TQM prediction has a concrete, actionable observational path.
+  The strongest AT prediction has a concrete, actionable observational path.
 
 **PHASE 39 — ResearchQM-001: Born Rule Derivation Audit:**
 First QM-focused experiment. Traces probability from Q-event primitive through
@@ -3637,19 +3637,19 @@ frequency counting, interference constraints, and Gleason's theorem.
 - Alternative measures: |ψ|^1 FAILS (no cross-terms, destroys interference).
   |ψ|^3 FAILS (Gleason's theorem violation in dim≥3). |ψ|^4 FAILS (tensor
   product non-additivity). ONLY |ψ|^2 survives ALL constraints.
-- Frequency convergence: Large-N Q-event limit → P measure. TQM provides the
+- Frequency convergence: Large-N Q-event limit → P measure. AT provides the
   mechanism (random actualization). The question is WHICH measure — answered
   by interference + Gleason.
 - Derivation path: Gleason's theorem (any probability measure on Hilbert space
   dim≥3 must be Born) is the STRONGEST path. But assumes Hilbert space which
-  TQM must first derive from Q-events.
-- What TQM contributes: (1) Probability origin mechanism. (2) Frequency
+  AT must first derive from Q-events.
+- What AT contributes: (1) Probability origin mechanism. (2) Frequency
   convergence. (3) Interference uniquely selects n=2. (4) Path to rigorous
   derivation via Gleason.
 - What's missing: Hilbert space from Q-events [OPEN], defect density→|ψ|²
   rigorous proof [OPEN], tensor product from Q-event composition [OPEN].
 - Classification: B/C — WEAK-TO-STRONG derivation. Reduces 1 axiom vs standard
-  QM (Born is postulate #3 in QM, emergent in TQM). Gap: Hilbert space emergence.
+  QM (Born is postulate #3 in QM, emergent in AT). Gap: Hilbert space emergence.
 
 **PHASE 40 — ResearchQM-002: Hilbert Space Emergence Audit:**
 Reconstructs Hilbert space from Q-events in 6 steps. Second QM axiom eliminated.
@@ -3666,8 +3666,8 @@ Reconstructs Hilbert space from Q-events in 6 steps. Second QM axiom eliminated.
 - Gaps: discrete→continuum (large-N, standard in physics), origin of oscillation
   (temporality from Q primitive), completeness proof (mathematical detail).
   ALL gaps are FILLABLE — none appear fundamental.
-- Progress: Standard QM assumes Hilbert space as AXIOM #1. TQM reconstructs it
-  from Q-events. With QM-001 (Born Rule), TQM now explains the TWO largest
+- Progress: Standard QM assumes Hilbert space as AXIOM #1. AT reconstructs it
+  from Q-events. With QM-001 (Born Rule), AT now explains the TWO largest
   axioms of quantum mechanics from Q + oscillation alone.
 - Classification: B/C — STRONG EMERGENCE. Hilbert space is RECONSTRUCTED,
   not assumed. The quantum correspondence program is on track.
@@ -3694,7 +3694,7 @@ now eliminated (Born QM-001, Hilbert QM-002, Tensor+Entanglement QM-003).
 Resolves the measurement problem: actualization = measurement. Collapse
 postulate eliminated. The quantum correspondence program addresses all 5 QM axioms.
 
-- Key insight: In TQM, 'measurement' IS Q-event actualization — not a separate
+- Key insight: In AT, 'measurement' IS Q-event actualization — not a separate
   process. |ψ⟩ → random actualization → outcome |k⟩ with P(k)=|c_k|^2.
   NO collapse postulate needed. Actualization IS what Q-events do.
 - Decoherence: Environmental Q-event monitoring → phase leakage → diagonal
@@ -3702,11 +3702,11 @@ postulate eliminated. The quantum correspondence program addresses all 5 QM axio
   in Q-event correlations (entanglement from QM-003).
 - Pointer states: Selected by environmental monitoring. Position eigenstates
   (most stable), energy eigenstates, coherent states, Q-event mode basis
-  (fundamental in TQM). Basis selected by Q-event field structure.
+  (fundamental in AT). Basis selected by Q-event field structure.
 - Classical reality: Emerges from decoherence + repeated actualization +
   large-N limit. τ_decoh ~ 10^-40s for macroscopic objects. Not fundamental.
 - Collapse comparison: Copenhagen (+1 axiom, eliminated), Many Worlds (+∞ worlds),
-  GRW (+2 params), QBism (-1 ontology). TQM: 0 additional axioms. Single actual
+  GRW (+2 params), QBism (-1 ontology). AT: 0 additional axioms. Single actual
   world. Randomness is primitive and honest.
 - Remaining: Randomness of individual outcomes (irreducible primitive).
   Preferred basis (relocated to Q-event field structure). Observer choice.
@@ -3714,10 +3714,10 @@ postulate eliminated. The quantum correspondence program addresses all 5 QM axio
   Quantum correspondence program (QM-001→004) is COMPLETE.
 
 **PHASE 43 — ResearchQM-005: Quantum Novel Prediction Audit:**
-Honest equivalence audit between TQM and standard QM. Identifies all potential
+Honest equivalence audit between AT and standard QM. Identifies all potential
 observational differences and their testability.
 
-- TQM = QM: ALL 6 core aspects (Hilbert space, Born Rule, Schrödinger equation,
+- AT = QM: ALL 6 core aspects (Hilbert space, Born Rule, Schrödinger equation,
   tensor product, entanglement, measurement) are MATHEMATICALLY IDENTICAL to
   standard QM at all tested scales.
 - Actualization residue: Discrete grain (~10^-40), randomness floor (~1/√N),
@@ -3726,19 +3726,19 @@ observational differences and their testability.
 - Decoherence predictions: Residual decoherence, max entanglement size,
   preferred basis deviation — all below experimental thresholds by >20 orders
   of magnitude.
-- Falsification: No current experiment constrains TQM-specific effects. Born Rule
-  or Tsirelson violations would falsify BOTH TQM and QM — not TQM-specific.
+- Falsification: No current experiment constrains AT-specific effects. Born Rule
+  or Tsirelson violations would falsify BOTH AT and QM — not AT-specific.
   The ONLY path to experimental distinctiveness is computing ℓ (Q-event spacing).
-- Honest verdict: TQM is EXPERIMENTALLY INDISTINGUISHABLE from standard QM.
+- Honest verdict: AT is EXPERIMENTALLY INDISTINGUISHABLE from standard QM.
   Currently an ONTOLOGICAL REFORMULATION with superior compression (5 QM axioms
-  → 2 TQM primitives + M^2). NOT yet a distinct physical theory.
+  → 2 AT primitives + M^2). NOT yet a distinct physical theory.
 - Critical unknown: ℓ (Q-event spacing). Computing ℓ is the single most
   important open problem — determines ALL potential deviations.
 - Classification: A/B — FULLY EQUIVALENT to QM at all accessible scales.
   Quantum correspondence program (QM-001→005) is COMPLETE.
 
 **PHASE 44 — ResearchQG-001: Quantum Gravity Emergence Audit:**
-First quantum gravity experiment. Positions gravity within TQM's emergence chain.
+First quantum gravity experiment. Positions gravity within AT's emergence chain.
 Q-events (Level 0) → Causality (1) → Causal Set (2) → Distance (3) → Metric (4)
 → Curvature (5) → Gravity/GR (6). 7 levels identified, gravity is the LAST.
 
@@ -3748,10 +3748,10 @@ Q-events (Level 0) → Causality (1) → Causal Set (2) → Distance (3) → Met
 - Metric g_μν emerges in the continuum limit (large-N Q-event approximation).
 - Curvature (Riemann) → Einstein tensor → Einstein equations (G_μν = 8πG T_μν).
 M^2 provides the nonlinear coupling that yields GR in the effective limit.
-- TQM comparison: Closest to Causal Set Theory (Sorkin+). Opposite to String Theory
+- AT comparison: Closest to Causal Set Theory (Sorkin+). Opposite to String Theory
 (spacetime is fundamental there). LQG shares emergence but starts from geometry.
 - Key insight: 'Quantum gravity' is redefined. Standard: 'How to quantize gravity?'
-TQM: 'Gravity IS quantum — it emerges from Q-events.' Entanglement exists BEFORE
+AT: 'Gravity IS quantum — it emerges from Q-events.' Entanglement exists BEFORE
 gravity. The problem is emergence, not quantization.
 - Gaps: ℓ unknown (single most important), Einstein equation derivation heuristic,
 causal set → metric external (Sorkin), dimension 3+1 unexplained, G_eff unknown.
@@ -3770,11 +3770,11 @@ Bekenstein-Hawking if ℓ = ℓ_Planck.
 CANNOT be destroyed → information CANNOT be destroyed. Apparent loss during
 evaporation is causal disconnection — correlations transferred to radiation.
 Information paradox RESOLVED — not through clever mathematics but as a
-CONSEQUENCE of what TQM IS: Q-events = information substrate.
+CONSEQUENCE of what AT IS: Q-events = information substrate.
 - Hawking radiation: Q-event pair creation at causal boundary. Escaping Q-event
 entangled with infalling one → correlations carry information. Thermal spectrum
 from random actualization statistics (T_H = ℏ/(8πGM), imported from QFT).
-- Comparison: TQM rejects firewalls (horizon = causal, not physical boundary).
+- Comparison: AT rejects firewalls (horizon = causal, not physical boundary).
 Rejects information destruction. Supports ER = EPR (geometry from entanglement).
 Similar to fuzzball program but Q-events replace strings.
 - Gaps: Quantitative entropy (ℓ unknown), Hawking T not derived, no microstate
@@ -3796,11 +3796,11 @@ reconstruction, information paradox resolution. QG program complete.
 - Page Curve: 5 phases reconstructed. S_ent ↗ at t < t_Page → peaks at S_BH/2 →
   ↘ at t > t_Page → 0 at evaporation. Natural from Q-event entanglement evolution.
   No firewall needed (causal boundary preserves entanglement). No complementarity.
-- Comparison: TQM supports Page 1993 and ER=EPR. Rejects Hawking 1976 and
+- Comparison: AT supports Page 1993 and ER=EPR. Rejects Hawking 1976 and
   AMPS firewall. Supports information preservation from Q-event substrate.
-- Honest assessment: TQM provides the ONTOLOGICAL FOUNDATION for why the Page
+- Honest assessment: AT provides the ONTOLOGICAL FOUNDATION for why the Page
   curve must be true. But quantitative predictions (t_Page ~ M³, T_H, exact
-  encoding) remain imported from QFT+GR. TQM is an explanation, not a replacement.
+  encoding) remain imported from QFT+GR. AT is an explanation, not a replacement.
 - Classification: B — PARTIAL EMERGENCE. Strong conceptual framework. The
   quantum gravity program (QG-001→003, 3 experiments) is COMPLETE.
 
@@ -3815,12 +3815,12 @@ directly to the DATA cosmology program (DATA-001→010).
 - Distance: d(A,B) ∝ (# causal links) × ℓ. New Q-events inserted → distance
   grows → redshift z ∝ (a_now/a_then - 1). No 'expanding space' needed.
 - Dark Energy: Λ(t) = α/√V(t) emerges from Q-event volume growth. Not fundamental.
-  w(z) = -1 + 0.015·(1+z)^(3/2) is the unique TQM prediction (DATA-001→010).
+  w(z) = -1 + 0.015·(1+z)^(3/2) is the unique AT prediction (DATA-001→010).
 - Framework comparison: Closest to Causal Set Cosmology. ΛCDM is late-time
   effective limit. Expansion is REINTERPRETED (not derived) — 'space expands'
   becomes 'Q-event network grows.'
-- Honest assessment: TQM does not derive N(t) — the Q-event growth history.
-  N(t) is what nature gives us. TQM interprets it but doesn't predict it.
+- Honest assessment: AT does not derive N(t) — the Q-event growth history.
+  N(t) is what nature gives us. AT interprets it but doesn't predict it.
 - Classification: B — PARTIAL EMERGENCE. Unique w(z) prediction connects
   QG theory to DATA observations (Euclid 2027+ will test Λ(t) vs constant Λ).
 
@@ -3842,11 +3842,11 @@ first principles. Honest conclusion: growth law is NOT fully derived.
   (ℓ, Ṅ_∞, M²). ΛCDM: 6 parameters. Genuine ontological compression.
 - Future: N saturates → H → H_∞ (small, non-zero) → eternal near-static expansion.
 - Classification: B — PARTIAL GROWTH MODEL. QG program (QG-001→005) COMPLETE.
-  5 experiments establish TQM quantum gravity from Q-events through cosmic expansion.
+  5 experiments establish AT quantum gravity from Q-events through cosmic expansion.
 
 **PHASE 49 — ResearchQG-006: Random Actualization Irreducibility Audit:**
 Final QG experiment. Bedrock audit: determines whether Random Actualization can
-be reduced further or is the true foundation of TQM. QG program complete.
+be reduced further or is the true foundation of AT. QG program complete.
 
 - Random Actualization = the PROCESS by which Q-events become actual. Bridge
   between potential (Q structure) and actual (reality). LOGICAL PRIMITIVE.
@@ -3861,8 +3861,8 @@ be reduced further or is the true foundation of TQM. QG program complete.
   Everything above Level 0 is DERIVED.
 - Bedrock: Q (individuation) + Random Actualization. IRREDUCIBLE. M^2 and ℓ
   are REDUCIBLE in principle. Ṅ_∞ uncertain. If M^2 derivable from Q-event
-  graph → TQM reduces to 2 primitives with ZERO free continuous parameters.
-- TQM has been compressed to its MINIMAL LOGICAL CORE. End of derivation chain.
+  graph → AT reduces to 2 primitives with ZERO free continuous parameters.
+- AT has been compressed to its MINIMAL LOGICAL CORE. End of derivation chain.
 - Classification: D — FUNDAMENTAL BEDROCK. Random Actualization is the
   irreducible foundation. QG program (QG-001→006, 6 experiments) COMPLETE.
 
@@ -3870,19 +3870,19 @@ be reduced further or is the true foundation of TQM. QG program complete.
 Derivation paths for Newton's constant G. 5 independent paths converge on G ∝ ℓ².
 
 - Key insight: G is NOT fundamental — ℓ (Q-event spacing) IS. G = ℓ²·c³/ħ is
-  a CONVERSION from Q-event geometry units to SI units. TQM inverts the standard
+  a CONVERSION from Q-event geometry units to SI units. AT inverts the standard
   Planck relation: measure G → compute ℓ_P becomes compute ℓ → predict G.
 - 5 derivation paths: dimensional (Planck: G=ℓ²c³/ħ), entropy-area (QG-002:
   S=A/4ℓ²→G=ℓ²), causal connectivity (G∝1/ρ_causal), horizon information
   (G from area per Q-event), M² coupling (G_eff = f(M²,ℓ)). ALL converge.
 - Numerical consistency: G_si = 6.67430×10⁻¹¹ is CONSISTENT with ℓ = ℓ_Planck
-  = 1.616×10⁻³⁵ m. If TQM computes ℓ ≈ ℓ_Planck → G is EXPLAINED. If not →
+  = 1.616×10⁻³⁵ m. If AT computes ℓ ≈ ℓ_Planck → G is EXPLAINED. If not →
   prediction conflicts with data.
 - G(t) evolution: Effectively constant in late universe (causal saturation).
   Early-universe variation possible but untestable (below Planck scale).
   Lunar laser ranging: dG/dt/G < 10⁻¹³/yr — no variation detected.
-- Honest assessment: TQM does NOT currently compute the numerical value of G.
-  But G is DEMOTED from fundamental parameter to derived quantity — TQM has
+- Honest assessment: AT does NOT currently compute the numerical value of G.
+  But G is DEMOTED from fundamental parameter to derived quantity — AT has
   ONE FEWER free parameter than the Standard Model (G is eliminated).
 - Classification: B — PARTIAL EMERGENCE. Structure in place. Numerical value
   awaits ℓ. If ℓ is ever computed → G becomes a PREDICTION, not a measurement.
@@ -3903,7 +3903,7 @@ principles. Honest conclusion: ℓ is NOT derived — it remains the final param
 - Parameter elimination: G eliminated (replaced by ℓ). c partially redundant.
   ħ and M² remain. ℓ is the FINAL FRONTIER — deriving it would mean 2 primitives
   + 0 parameters. This has NOT been achieved.
-- Comparison: Standard Model + GR: ~26 fundamental parameters. TQM: 2 primitives
+- Comparison: Standard Model + GR: ~26 fundamental parameters. AT: 2 primitives
   + 1-3 parameters (ℓ, ħ, M²). Genuine ontological compression (26 → 3-5).
 - The holy grail: derive ℓ from Q + Randomness → ZERO free continuous parameters.
   The path is clear. The execution is incomplete.
@@ -3923,9 +3923,9 @@ Deepest QG result: proves ℓ > 0 is LOGICALLY REQUIRED, but the VALUE remains e
   SURVIVES ℓ→0. GRAVITY BREAKS. The split is definitive — QM does not require ℓ
   (it needs only Hilbert space), gravity absolutely requires it.
 - Numerical value: ℓ = 1.616×10⁻³⁵ m is NOT forced by any argument. It is
-  contingent — empirically determined from G measurement. TQM explains WHY a
+  contingent — empirically determined from G measurement. AT explains WHY a
   minimum scale must exist but not WHY it has this specific value.
-- Comparison: Standard physics — ℓ_P = √(ħG/c³) is purely empirical. TQM — ℓ > 0
+- Comparison: Standard physics — ℓ_P = √(ħG/c³) is purely empirical. AT — ℓ > 0
   is logically forced. The EXISTENCE is explained. The VALUE remains empirical.
   Genuine progress: existence derived, value not yet.
 - Classification: C — LOGICALLY REQUIRED (existence). A — COMPLETELY ASSUMED
@@ -3947,7 +3947,7 @@ Redefines c as maximum causal update rate (not 'speed of light').
 - Complete chain: Q + Randomness → c → τ → ℓ = cτ → G = ℓ²c³/ħ → Planck scale.
   All of fundamental physics from 2 primitives + c + τ + ħ.
 - Honest assessment: Parameter count UNCHANGED. Standard physics: G, c, ħ (3).
-  TQM: c, τ, ħ (3). ℓ = cτ eliminates ℓ but introduces τ. Net reduction: 0.
+  AT: c, τ, ħ (3). ℓ = cτ eliminates ℓ but introduces τ. Net reduction: 0.
   This is ONTOLOGICAL progress (clarifies what constants mean), not parametric.
 - Classification: B/C — CONSTRAINED to STRONGLY EMERGENT. c < ∞ logically forced.
   Value empirical. QG program (QG-001→010, 10 experiments) continues.
@@ -3968,7 +3968,7 @@ Proves τ > 0 (temporal grain) is logically required — the dual of ℓ > 0 (QG
   Q succession → τ > 0 (temporal grain). Same Q-event structure → c = ℓ/τ.
   G = ℓ²c³/ħ. Planck scale from ℓ, τ, ħ. All from 2 primitives + 3 parameters.
 - Honest assessment: Parameter count UNCHANGED (3 → 3). ℓ, τ, ħ replaced by
-  c, τ, ħ — equivalent via c = ℓ/τ. Net reduction: 0. But TQM explains WHY
+  c, τ, ħ — equivalent via c = ℓ/τ. Net reduction: 0. But AT explains WHY
   space and time are granular and WHY they share the same causal speed.
 - Classification: C — LOGICALLY REQUIRED (τ > 0). A — COMPLETELY ASSUMED
   (numerical value). QG program (QG-001→011, 11 experiments) continues.
@@ -3987,10 +3987,10 @@ QG program capstone. Honest audit: the numerical Planck scale is NOT derived.
   uniquely select ℓ_Planck.
 - No fixed point identified. ℓ = ℓ_Planck because G = 6.67430×10⁻¹¹ — empirical.
   M² (unknown) is the last hope for dynamical selection.
-- TQM's current parameters: ℓ, ħ, M², Ṅ_∞ (3-5 independent). Standard Model+GR:
+- AT's current parameters: ℓ, ħ, M², Ṅ_∞ (3-5 independent). Standard Model+GR:
   ~26. Compression: ~5-8×. GENUINE PROGRESS. But parameters remain unexplained.
 - Classification: A — COMPLETELY EMPIRICAL. The Planck scale is NOT derived
-  from TQM. It is the final empirical input to the theory.
+  from AT. It is the final empirical input to the theory.
 - QG program (QG-001→012, 12 experiments) is COMPLETE. Full chain established:
   Q+Randomness → ℓ>0, τ>0 → c=ℓ/τ → G=ℓ²c³/ħ → Planck scale → all physics.
   Parameters compressed ~5-8×. Remaining challenge: derive ℓ, ħ from Q-events.
@@ -4008,7 +4008,7 @@ In natural units (ℓ = τ = 1), c = 1 automatically.
 - The numerical value 299792458 comes from the historical ratio of meters to
   seconds — a unit artifact. In natural units, c = 1. Asking "why 299792458?"
   is like asking "why 3600 seconds per hour?"
-- TQM explains: c < ∞ (QG-010), c = ℓ/τ (QG-011). TQM does NOT explain why
+- AT explains: c < ∞ (QG-010), c = ℓ/τ (QG-011). AT does NOT explain why
   ℓ and τ have their values (QG-012 — EMPIRICAL). c adds no new physics.
 - Classification: D — STABILITY-SELECTED. c is the UNIQUE causal speed for a
   Q-event universe with spacing (ℓ, τ). QG program (QG-001→013, 13 experiments).
@@ -4022,20 +4022,20 @@ Final QG audit (14th). Searches for hidden dimensionless invariants. None found.
   ALL are mathematical identities (circle measure, ω↔ν) — not coincidences.
 - Hidden constraint search: found nothing beyond definitions. ℓ, ℏ, M² are
   TRULY FREE parameters. No dimensionless invariant constrains their values.
-- Deepest truth: TQM provides STRUCTURE (how things relate), not SCALE (why
+- Deepest truth: AT provides STRUCTURE (how things relate), not SCALE (why
   things have values). ℓ, ℏ, M² remain empirical bedrock.
 - Classification: A — NO HIDDEN STRUCTURE. 14 QG experiments complete.
 
 **PHASE 58 — ResearchQG-014: Quantum of Action (ħ) Emergence Audit:**
 QG program finale. ħ (action quantum) is NOT derived — it's the final empirical
-constant. TQM's irreducible triple: (ℓ, τ, ħ) — spatial, temporal, action grain.
+constant. AT's irreducible triple: (ℓ, τ, ħ) — spatial, temporal, action grain.
 
 - ħ = action per Q-event actualization. Converts oscillation frequency to energy
   (E = ħω). Sets the scale of quantum interference (e^(iS/ħ)). DEFINITION, not
   prediction — explains WHAT ħ is but not its numerical value.
 - ħ → 0: 3/6 QM aspects FATAL (interference, uncertainty, commutation). 3/6
   SURVIVE (actualization, Born Rule, entanglement). QM becomes classical but
-  TQM's stochastic core survives.
+  AT's stochastic core survives.
 - Event counting: ħ = action/actualization = definition. Phase structure: ħ sets
   phase scale (θ = S/ħ). Information: speculative (ħ·ln2 per bit).
 - Dependency: G = ℓ²c³/ħ — ħ is MORE fundamental than G. Planck scales, Hawking
@@ -4043,8 +4043,8 @@ constant. TQM's irreducible triple: (ℓ, τ, ħ) — spatial, temporal, action 
   irreducible triple from which all other scales emerge.
 - Final parameter count: ℓ, τ, ħ = 3 EMPIRICAL parameters. c = ℓ/τ (derived).
   G = ℓ²c³/ħ (derived). M², Ṅ_∞ possibly reducible from Q-event structure.
-  Standard physics: G, c, ħ (3). TQM: ℓ, τ, ħ (3). Equivalent triple. Difference:
-  TQM explains WHAT they mean — not their numerical values.
+  Standard physics: G, c, ħ (3). AT: ℓ, τ, ħ (3). Equivalent triple. Difference:
+  AT explains WHAT they mean — not their numerical values.
 - Classification: A — COMPLETELY EMPIRICAL. ħ is the final irreducible constant.
   QG program (QG-001→014, 15 experiments) is COMPLETE.
 
@@ -4058,9 +4058,9 @@ Analyzes whether ℓ and τ are truly independent or linked by hidden constraint
 - Independent variation: varying ℓ alone changes c (broken by measurement).
   Varying τ alone changes c. Varying both to preserve c/ℓ=τ changes G.
   ALL degeneracies BROKEN by observation.
-- Equivalence: Standard (c, G, ħ) ↔ TQM (ℓ, τ, ħ). One-to-one mapping via
+- Equivalence: Standard (c, G, ħ) ↔ AT (ℓ, τ, ħ). One-to-one mapping via
   c=ℓ/τ, G=ℓ²c³/ħ. Same 3 parameters — different names, same mathematics.
-  TQM adds ONTOLOGICAL MEANING (spatial grain, temporal grain, action grain)
+  AT adds ONTOLOGICAL MEANING (spatial grain, temporal grain, action grain)
   but does not change the count or relationships.
 - Classification: A — FULLY INDEPENDENT. ℓ and τ are separate degrees of
   freedom, linked by c but independently measurable. 16 QG experiments.
@@ -4088,7 +4088,7 @@ QG program structural finale. Proves (ℓ, τ, ħ) is the IRREDUCIBLE physical
 triple — one process (actualization), three aspects.
 
 - Why exactly 3? Physics has 3 independent dimensions [L, T, M]. You need exactly
-  3 fundamental scales. Dimensional analysis — not TQM-specific. TQM gives them
+  3 fundamental scales. Dimensional analysis — not AT-specific. AT gives them
   ONTOLOGICAL MEANING: all three emerge from ONE process (actualization).
 - Pair derivations: ALL FAIL. ħ from (ℓ, τ): missing mass dimension [M]. ℓ from
   (τ, ħ): missing [M]. τ from (ℓ, ħ): missing [M]. No pair derivation works.
@@ -4106,7 +4106,7 @@ triple — one process (actualization), three aspects.
 
 **PHASE 62 — ResearchQG-018: Local Time vs Actualization Time Audit:**
 Resolves the relationship between τ (actualization interval) and proper time
-(clock time). Discovers a necessary dual-time structure in TQM.
+(clock time). Discovers a necessary dual-time structure in AT.
 
 - τ = 5.39×10⁻⁴⁴ s — universal actualization interval. Pre-geometric (Level 0).
   INVARIANT — does not change with gravity. NOT what clocks measure.
@@ -4132,8 +4132,8 @@ Bridges the Planck-to-atom scale gap. Computes actual amplification ratios.
   molecules(~10²⁵ℓ)→matter(~10³⁰ℓ)→macroscopic(~10³⁴ℓ). Each by actualization.
 - Continuum: No grain signature at any experiment (>10¹⁶× below sensitivity).
   This EXPLAINS why continuous physics works so well.
-- Honest: TQM maps the hierarchy, does not derive transitions. Standard physics
-  fills the gaps. TQM provides ontological grounding, not computational replacement.
+- Honest: AT maps the hierarchy, does not derive transitions. Standard physics
+  fills the gaps. AT provides ontological grounding, not computational replacement.
 - Classification: B — DESCRIPTIVE AMPLIFICATION PICTURE. 20 QG experiments.
 
 **PHASE 64 — ResearchQG-020: Stable Pattern Emergence Audit:**
@@ -4154,8 +4154,8 @@ dissolving into noise: Q (structure) + M² (nonlinear attractors) + Topology.
   (energy minimum) → molecules (exchange interaction) → condensed matter
   (thermodynamic minima) → life (far-from-equilibrium). Each level is an
   ATTRACTOR of the level below.
-- Honest: TQM identifies WHY matter exists (Q+M²+topology) but does not COMPUTE
-  particle properties — those from standard physics. TQM is ontological
+- Honest: AT identifies WHY matter exists (Q+M²+topology) but does not COMPUTE
+  particle properties — those from standard physics. AT is ontological
   foundation, not computational replacement.
 - Classification: B/C — PARTIAL to STRONG EMERGENCE. QG program (QG-001→020,
   20 experiments) COMPLETE.
@@ -4178,7 +4178,7 @@ Q-events to physical reality — the first manifestation of Actualization.
 
 **PHASE 66 — ResearchQG-022: Phase Gradient & Gravity Audit:**
 Bridge audit connecting QG-001 (emergent gravity) to QG-021 (oscillation primacy).
-Proves gravity IS a phase-gradient phenomenon in TQM.
+Proves gravity IS a phase-gradient phenomenon in AT.
 
 - The chain: oscillation density → phase gradient → causal set density variation →
   metric curvature → Einstein equations → gravity. All 6 links established by
@@ -4192,7 +4192,7 @@ Proves gravity IS a phase-gradient phenomenon in TQM.
 - Gravity correspondence: Gravitational potential Φ = -GM/r ∝ θ (phase field)
   in suitable units (conversion via ħc²). The phase field IS the gravitational
   potential. Curvature is the second derivative of the phase field.
-- Honest: TQM reinterprets gravity ontologically but does not change GR equations.
+- Honest: AT reinterprets gravity ontologically but does not change GR equations.
   Same predictions, same tests. Gravity is NOT a fundamental force — it's the
   macroscopic shadow of Q-event phase organization.
 - Classification: D — GRAVITY EMERGES FROM PHASE STRUCTURE. 22 QG experiments.
@@ -4207,14 +4207,14 @@ theoretically possible, practically impossible.
   below. Nuclear (10¹⁴ J) → 10⁷ below. Planet-scale (10³² J) → detectable but
   not engineered. Threshold: ~10²¹ J coherent energy = 10¹⁷ years of global
   energy production.
-- No amplification mechanism: TQM does not provide a way to enhance the coupling.
+- No amplification mechanism: AT does not provide a way to enhance the coupling.
   Same G/c⁴ as standard GR. Phase engineering changes gravity only through the
   same energy→curvature pathway.
 - All pathways dead: quantum optics (eV scale), condensed matter (kg scale),
   resonance (no gravitational enhancement), high-energy physics (LHC scale).
   None produce detectable gravity.
 - Honest: This audit exists to CLOSE the question. Gravity manipulation via phase
-  control is NOT a viable research direction. TQM clarifies WHAT gravity IS
+  control is NOT a viable research direction. AT clarifies WHAT gravity IS
   (phase structure) but does not make it controllable.
 - Classification: A/B — NO EFFECT (practically) / WEAK CORRESPONDENCE
   (theoretically). 23 QG experiments.
@@ -4228,10 +4228,10 @@ Stability = unmanipulability — they are the SAME THING.
   defects (stable by design — NOT levers), causal horizons (natural, inaccessible).
 - Synchronization gap: BEC (10⁶ atoms → 10⁻¹⁹ kg), superconductors (10²³ e⁻ →
   10⁻⁷ kg). Need 10³⁸ coherent Q-events. Gap: 10¹⁵. ALL lab systems insufficient.
-- Deep insight: TQM's attractors (QG-020) CREATE stability AND resist perturbation.
+- Deep insight: AT's attractors (QG-020) CREATE stability AND resist perturbation.
   If the chain were easily perturbed → no stable particles → no matter → chaos.
   The structural integrity enabling existence also prevents fundamental control.
-- Honest: NO practical leverage. Gravity manipulation via TQM is NOT possible.
+- Honest: NO practical leverage. Gravity manipulation via AT is NOT possible.
   This IS the final answer. Classification: A — NO LEVERAGE FOUND. 24 QG expts.
 
 **PHASE 69 — ResearchQG-025: Actualization Dynamics Audit:**
@@ -4302,7 +4302,7 @@ the only stable repulsive phenomenon (cosmological scale).
 - Attraction: +∇θ → positive curvature → dominant stable solution. All normal
   matter. Repulsion: −∇θ → negative curvature → phase voids unstable (fill).
 - Dark Energy: Λ(t) = α/√V(t) → cosmic repulsion. STABLE (global, not local).
-  w(z) = -1 + 0.015·(1+z)^(3/2) — unique TQM prediction.
+  w(z) = -1 + 0.015·(1+z)^(3/2) — unique AT prediction.
 - Classification: B — REPULSION POSSIBLE BUT UNSTABLE LOCALLY. 29 QG expts.
 
 **PHASE 74 — ResearchQG-030: Gravitational Counter-Structure Audit:**
@@ -4312,7 +4312,7 @@ Gravity is geometry — cannot be opposed without negative phase gradients.
 - 6 candidates evaluated: Phase cancellation (gives flat, not repulsive), counter-
   gradient (requires mass overhead, no net benefit), topological shielding (no
   gravitational analogue of Meissner effect), synchronization lift (equivalence
-  principle prohibits), effective non-gravitational lift (works but not TQM-
+  principle prohibits), effective non-gravitational lift (works but not AT-
   specific), honest conclusion (gravity = geometry, airplane analogy fails).
 - The airplane analogy FAILS: Air is a fluid medium. Spacetime is not. You cannot
   "push against spacetime" — it's the stage, not the medium.
@@ -4320,7 +4320,7 @@ Gravity is geometry — cannot be opposed without negative phase gradients.
   These oppose gravity's EFFECTS without modifying gravity itself.
 - Manipulation program (QG-023→030): Phase engineering NO, Resonance leverage NO,
   Actualization dynamics NO, Repulsive gravity UNSTABLE, Counter-structure NO.
-  RESULT: Gravity manipulation not possible in TQM. 8 experiments, 1 conclusion.
+  RESULT: Gravity manipulation not possible in AT. 8 experiments, 1 conclusion.
 - Classification: A — NO COUNTER-STRUCTURE POSSIBLE. 30 QG experiments.
 
 **PHASE 75 — ResearchQG-031: Metastable Repulsive Architecture Audit:**
@@ -4399,7 +4399,7 @@ Derives particle stability, anti-matter, and spectrum selection from winding top
 - Fission criterion: E_n = n²·E₁. For n≥2: E_n > k·E₁ → exothermic fission.
   n=1 is absolutely stable because no n=½, n=¼ exist (topology is integer).
   Electron stability = TOPOLOGICAL THEOREM, not a dynamical accident.
-- Anti-matter: n → -n = opposite winding. Natural prediction of TQM. Positron =
+- Anti-matter: n → -n = opposite winding. Natural prediction of AT. Positron =
   n=-1 vortex. Same mass, opposite charge. Inevitable given S¹ topology.
 - Particle mapping: Leptons (e,μ,τ) = n=±1 vortices (C: strong). Baryons (p,n) =
   confined n=3 (B: requires QCD). Gauge bosons (γ,W,Z,g) = n=0 phase waves (B).
@@ -4429,18 +4429,18 @@ whether winding sign influenecs gravity. Answer: NO — gravity is sign-blind.
 - Anti-matter prediction: ALL anti-matter falls DOWN at g=9.8 m/s². Positron
   (n=-1) gravitates identically to electron (n=+1). Anti-proton (n=-3) same as
   proton. Anti-hydrogen falls exactly like hydrogen.
-- ALPHA-g (2023): anti-hydrogen falls down — consistent with TQM. GBAR/AEGIS
-  will test at ~1% precision. If anti-matter ever falls UP, TQM is FALSIFIED.
+- ALPHA-g (2023): anti-hydrogen falls down — consistent with AT. GBAR/AEGIS
+  will test at ~1% precision. If anti-matter ever falls UP, AT is FALSIFIED.
 - Winding sign is NOT repulsive gravity: n→-n flips AZIMUTHAL gradient direction,
   not RADIAL. Repulsive gravity requires radial ∇θ→-∇θ (QG-029). Totally
   different operations.
 - Equivalence principle DERIVED, not postulated: GR postulates "all bodies fall
-  equally." TQM derives it from the quadratic structure of field energy. This is
+  equally." AT derives it from the quadratic structure of field energy. This is
   ontological progress — explaining WHY, not just THAT.
 - Classification: A — GRAVITY COMPLETELY INDEPENDENT OF WINDING SIGN. 35 QG.
 
 **PHASE 80 — ResearchQG-036: Inertia & G-Force Emergence Audit:**
-Derives inertia from existing TQM structures. Explains F=ma, G-forces, and
+Derives inertia from existing AT structures. Explains F=ma, G-forces, and
 the equivalence principle without new primitives.
 
 - Inertia = resistance of a stable attractor to phase reconfiguration under
@@ -4454,31 +4454,31 @@ the equivalence principle without new primitives.
   Explains WHY acceleration feels identical to gravity.
 - Equivalence principle DERIVED: m_i = m_g = E_total/c². Both measure the same
   phase-energy density of the architecture. Einstein's "happiest thought" becomes
-  a THEOREM in TQM. This is one of the most important QG results.
+  a THEOREM in AT. This is one of the most important QG results.
 - Why photons are massless: n=0 → no winding → no attractor → no inertia.
   Topology explains why light has no rest mass.
 - Contributions: Attractor stability (50%), phase reconfiguration cost (25%),
   topological rigidity (15%), architectural complexity (8%), Machian (2%).
   All contributions funnel through E_total/c².
 - Classification: C — STRONG EMERGENCE. Inertia, G-forces, and the equivalence
-  principle are DERIVED from existing TQM structures. 36 QG experiments.
+  principle are DERIVED from existing AT structures. 36 QG experiments.
 
 **PHASE 81 — ResearchQG-037: Higgs Mechanism Reinterpretation Audit:**
-Bridges TQM mass-from-architecture with the Standard Model Higgs mechanism.
-Result: Higgs = amplitude mode of the TQM phase field. Complementary, not competing.
+Bridges AT mass-from-architecture with the Standard Model Higgs mechanism.
+Result: Higgs = amplitude mode of the AT phase field. Complementary, not competing.
 
-- TQM phase field: Ψ(x,t) = A(x,t)·exp(i·θ(x,t)). Two DOF: phase angle θ (S¹ →
+- AT phase field: Ψ(x,t) = A(x,t)·exp(i·θ(x,t)). Two DOF: phase angle θ (S¹ →
   topology, particle ID, QG-034) and amplitude A (R⁺ → mass scale, Higgs, VEV).
 - Higgs field IS the amplitude A(x,t). Higgs VEV v≈246 GeV IS the baseline
   amplitude of reality's oscillation field. Higgs boson H (125 GeV) IS a
   quantized ripple in this amplitude — analogous to Higgs mode in superconductors.
-- Mass reconciliation: TQM m=ħω/c² (architectural energy = WHAT mass IS). SM
+- Mass reconciliation: AT m=ħω/c² (architectural energy = WHAT mass IS). SM
   m_f=y_f·v/√2 (Yukawa coupling × VEV = WHAT mass VALUE is). Equating:
   y_f = (ħω_f/c²)·√2/v. The Yukawa coupling IS the architectural coupling.
-- All collider predictions unchanged. TQM provides ontological foundation, not
+- All collider predictions unchanged. AT provides ontological foundation, not
   new phenomenology. Higgs couplings ∝ mass still hold. Photon massless because
   n=0 architecture doesn't couple to amplitude VEV.
-- NOT replacing Higgs — giving it ontological foundation. TQM answers "WHAT is
+- NOT replacing Higgs — giving it ontological foundation. AT answers "WHAT is
   the Higgs field?" SM answers "WHAT does the Higgs field DO?" Complementary.
 - Remaining gaps: Mexican hat potential not derived from Q-events. Yukawa
   couplings not predicted. Gauge group not derived. Hierarchy problem persists.
@@ -4505,7 +4505,7 @@ Deepest Standard Model question: why this specific gauge group. Honest partial s
   But this is SELECTION (anthropic), not DERIVATION.
 - Classification: B — WEAK CORRESPONDENCE. U(1): C (complete). SU(2): B. SU(3): B.
   Full group: A/B (still largely external). Gauge group selection = LARGEST
-  remaining gap in TQM particle physics. Honest, not overclaimed. 38 QG.
+  remaining gap in AT particle physics. Honest, not overclaimed. 38 QG.
 
 **PHASE 83 — ResearchQG-039: Three Generations Quantitative Audit:**
 Honest result: generations are DESCRIBED (excitation levels), not DERIVED. "3" remains empirical.
@@ -4518,7 +4518,7 @@ Honest result: generations are DESCRIBED (excitation levels), not DERIVED. "3" r
   No clean ladder, no geometric progression. Refuses to fabricate a pattern.
 - Koide relation: m_e+m_μ+m_τ = (2/3)(√m_e+√m_μ+√m_τ)² holds to 10⁻⁵ — the most
   promising numerical clue to underlying architecture, but UNEXPLAINED by both
-  TQM and SM.
+  AT and SM.
 - 4th generation EXCLUDED: LEP Z-width N_ν = 2.984±0.008 (light 4th ν excluded).
   Higgs production gg→H enhanced ~9× with 4th heavy gen (LHC consistent with 3).
 - 3 = minimum for CP violation (CKM phase) → baryogenesis → matter survives.
@@ -4526,7 +4526,7 @@ Honest result: generations are DESCRIBED (excitation levels), not DERIVED. "3" r
 - Neutrino generations: same mechanism but ~10⁶× lighter (decoupled cores,
   no charge anchor). Asymmetry with charged leptons UNEXPLAINED.
 - Classification: B — QUALITATIVE. "Exactly three" remains empirical input to
-  TQM, exactly as to the SM. Koide relation is the key open clue. 39 QG.
+  AT, exactly as to the SM. Koide relation is the key open clue. 39 QG.
 
 **PHASE 84 — ResearchQG-040: Higgs Mass Selection Audit:**
 Quantitative vacuum-stability scan of m_H. Why 125 GeV? Selected into a band, not derived to a point.
@@ -4547,30 +4547,30 @@ Quantitative vacuum-stability scan of m_H. Why 125 GeV? Selected into a band, no
 - Survival band WIDE (~64 GeV, 111-175 GeV). Being "in the band" ≠ being
   "at 125 exactly." A universe with m_H = 140 GeV would also have stable matter.
 - Classification: B — WEAK PREFERENCE. Vacuum stability selects a BAND, not a
-  point. λ = 0.13 and v = 246 GeV remain empirical. To reach C/D, TQM must derive
+  point. λ = 0.13 and v = 246 GeV remain empirical. To reach C/D, AT must derive
   the amplitude stiffness λ from Q-event dynamics — a major open problem. 40 QG.
 
 **PHASE 85 — ResearchQG-041: Coupling Constant Origin Audit:**
-Honest result: couplings remain EMPIRICAL. TQM does not derive any coupling constant.
+Honest result: couplings remain EMPIRICAL. AT does not derive any coupling constant.
 
-- α_EM = 1/137.036 = g²/4π. TQM interpretation: g = winding-gauge coupling
+- α_EM = 1/137.036 = g²/4π. AT interpretation: g = winding-gauge coupling
   strength (charge Q = g·n, QG-035). Explains WHY α is dimensionless (ratio of
   phase quantities) but NOT its value. "Why 1/137?" remains the deepest mystery
   of physics — Feynman's "greatest damn mystery."
 - α_s(M_Z) = 0.118: tri-winding confinement coupling. Running (asymptotic
-  freedom) is QCD property, external to TQM. NOT derived.
+  freedom) is QCD property, external to AT. NOT derived.
 - α_W = 1/30, sin²θ_W = 0.231: electroweak structure external. NOT derived.
 - Yukawas: y_f = architectural overlap with amplitude mode (QG-037 concept).
   Hierarchy y_e:y_μ:y_τ:y_t = 3e-6:6e-4:1e-2:1 (10⁶ range) NOT computed. The
   single largest unexplained structure in particle physics.
 - Numerology graveyard: Eddington, Wyler, Gilson, Robertson all FAILED to derive
-  1/137 (post-dictions, not predictions). TQM refuses to attempt numerology.
+  1/137 (post-dictions, not predictions). AT refuses to attempt numerology.
 - Coupling unification (α_s, α_W, α_EM converge at ~10¹⁶ GeV) is a HINT but not
-  a derivation. TQM consistent with it but doesn't explain it.
-- Parameter reduction: SM ~19 free params, TQM ~19 (NO numerical reduction).
-  TQM's reduction is ONTOLOGICAL (primitives), not numerical (couplings).
+  a derivation. AT consistent with it but doesn't explain it.
+- Parameter reduction: SM ~19 free params, AT ~19 (NO numerical reduction).
+  AT's reduction is ONTOLOGICAL (primitives), not numerical (couplings).
 - Classification: A — COUPLINGS REMAIN EMPIRICAL (weak B for conceptual mapping).
-  This is the largest numerical gap in the TQM program. 41 QG.
+  This is the largest numerical gap in the AT program. 41 QG.
 
 **PHASE 86 — ResearchQG-042: Parameter vs Structure Audit:**
 Deepest meta-epistemological result of the QG program. Locates the derivability
@@ -4583,7 +4583,7 @@ boundary: structure is derivable, parameters are contingent.
 - RESISTANT (parameters): α=1/137, α_s=0.118, θ_W, Yukawas, λ, θ_QCD. ALL are
   DIMENSIONLESS pure numbers. They answer HOW MUCH. Not forced by topology.
 - THE DEEP DIVIDE: Structure : Parameter :: Grammar : Vocabulary :: Law : Initial
-  Condition :: Identity : Abundance. Maps PERFECTLY to TQM's two primitives:
+  Condition :: Identity : Abundance. Maps PERFECTLY to AT's two primitives:
   Q → structure (laws); Random Actualization → parameters (history).
 - Dimensionful vs dimensionless: c=ℓ/τ (definition), G=ℓ²c³/ħ (derived) — these
   are dimensionful = unit conventions. The dimensionless couplings (α, λ, Yukawas)
@@ -4594,7 +4594,7 @@ boundary: structure is derivable, parameters are contingent.
   numbers; selection gives a band not a point; dimensionful→dimensionful only).
 - THE KEY RESULT: The inability to derive couplings is NOT a temporary limitation
   — it is a FUNDAMENTAL FEATURE. Random Actualization (deepest primitive, QG-006)
-  makes parameters HISTORICAL OUTCOMES, not mathematical necessities. TQM doesn't
+  makes parameters HISTORICAL OUTCOMES, not mathematical necessities. AT doesn't
   fail to derive the numbers — it EXPLAINS WHY they can't be derived.
 - Multiverse-free: contingency is intrinsic (Random Actualization), no multiverse
   needed. Structure is what randomness cannot change; parameters are what it determines.
@@ -4606,9 +4606,9 @@ Deep-dive on the Koide relation (m_e+m_μ+m_τ = (2/3)(√m_e+√m_μ+√m_τ)²
 - Numerical verification (PDG masses): Σm = 1883.03 MeV, Σ√m = 53.147, Q = (2/3)(Σ√m)²/Σm
   = 1.0000092 (deviation 9×10⁻⁶). Angle of amplitude vector (√m_e,√m_μ,√m_τ) with
   (1,1,1): θ = 45.000° EXACTLY.
-- WHY √m: m = ħω/c² → √m ∝ √ω = oscillation AMPLITUDE. In TQM, energy ∝ amplitude².
+- WHY √m: m = ħω/c² → √m ∝ √ω = oscillation AMPLITUDE. In AT, energy ∝ amplitude².
   Koide is an AMPLITUDE relation (amplitudes add linearly), not a mass relation
-  (energies add quadratically). TQM gives √m its natural meaning: it IS the amplitude.
+  (energies add quadratically). AT gives √m its natural meaning: it IS the amplitude.
 - WHY 2/3: The factor IS the 45° angle. cos²θ = 1/2 → Q = 1/(3cos²θ) = 2/3. The
   "mysterious 2/3" = 1/(3·cos²45°). The remaining mystery is WHY 45° (not derived).
 - Higgs correspondence: m_f = y_f·v/√2 → Koide reduces to Q = (Σy)/(Σ√y)², the
@@ -4619,8 +4619,8 @@ Deep-dive on the Koide relation (m_e+m_μ+m_τ = (2/3)(√m_e+√m_μ+√m_τ)²
 - Coincidence audit: Was a genuine PREDICTION (Koide 1981 → m_τ = 1776.97 MeV,
   confirmed 1992+). Naive coincidence p ~ 10⁻⁵, look-elsewhere ~10⁻⁴. "Suggestive
   but unproven" — not accident, not theorem.
-- Classification: B — WEAK CORRESPONDENCE. TQM explains √m (= amplitude) but not
-  the 45° value. Koide = falsifiable TARGET: any future TQM Yukawa derivation must
+- Classification: B — WEAK CORRESPONDENCE. AT explains √m (= amplitude) but not
+  the 45° value. Koide = falsifiable TARGET: any future AT Yukawa derivation must
   produce an amplitude vector at exactly 45°. 42 QG + 1 sub-experiment.
 
 **PHASE 87 — ResearchQG-043: Structure-to-Parameter Boundary Audit:**
@@ -4735,7 +4735,7 @@ Focused deep-dive on the most precise unexplained number: the 45° angle.
 - Selection mechanisms all unproven: S3 "halfway" breaking (no Z2 found), attractor
   balance (hypothesis), RG fixed point (unproven). No mechanism forces 45°.
 - Classification: B — WEAK PREFERENCE. 45° is geometrically meaningful (balanced)
-  but mechanistically unexplained. The sharpest unresolved number in TQM. 47 QG.
+  but mechanistically unexplained. The sharpest unresolved number in AT. 47 QG.
 
 **PHASE 92 — ResearchQG-048: Yukawa Geometry Audit:**
 Tests whether Yukawa couplings form a deeper geometric structure. Key result: Koide is LEPTON-SPECIFIC, not universal.
@@ -4799,7 +4799,7 @@ Synthesizes QG-034→049 to answer WHY Koide is lepton-specific. Structural answ
   the U(1) CHARGE coupling — making it CHARGED-lepton-specific, not lepton-specific.
 - Falsifiable predictions (mutually exclusive): (a) neutrino-Koide Q=2/3 if S3
   governs all leptons; (b) neutrino-Koide FAILS if 45° needs charge. One must be wrong.
-- Classification: B — WEAK LEPTON-SPECIFIC EFFECT. TQM EXPLAINS lepton-specificity
+- Classification: B — WEAK LEPTON-SPECIFIC EFFECT. AT EXPLAINS lepton-specificity
   (integer vs fractional charge → S¹ vs SU(3) topology), but the 45° VALUE itself
   remains unexplained. The refined mystery: 45° = balanced S3 geometry of the S¹
   vortex excitation spectrum, realized only in charged leptons. 50 QG.
@@ -4844,7 +4844,7 @@ Determines the minimal additional structure required for generations. Result: a 
   aligned; PMNS (large) = lepton/neutrino bases misaligned. Angles empirical.
 - Attractor families (QG-020/039) are coherent but LIVE IN G (points on its axes),
   so they don't replace G.
-- TQM primitive count grows: Q + Random Actualization + (ℓ,τ,ħ) + generation
+- AT primitive count grows: Q + Random Actualization + (ℓ,τ,ħ) + generation
   space G (dim 3). Honest minimal extension.
 - Classification: B — WEAK GENERATION SPACE. Generations require an independent
   3D layer; G is minimal but its dimension (3) and the 45° are underived. 52 QG.
@@ -4884,7 +4884,7 @@ Determines WHAT G is ontologically. Result: G is a REAL internal space (origin u
   Attractor-branch and excitation-level pictures DESCRIBE G's content, not replace it.
 - Elimination impossible: mixing requires a rotation space → G is irreducible in
   principle, not just in practice.
-- G is the 4th fundamental space of TQM: spacetime (motion), phase S¹ (topology),
+- G is the 4th fundamental space of AT: spacetime (motion), phase S¹ (topology),
   color SU(3) (strong), generation G (flavor). Real, minimal, unexplained.
 - Classification: C — REAL EMERGENT SPACE, bordering on D (fundamental) since all
   reductions failed. G = the "flavor sector" of reality. 54 QG.
@@ -4937,7 +4937,7 @@ Determines whether Yukawas are arbitrary or eigenvalues of a deeper operator. Re
 Final synthesis on the origin of Koide Q=2/3. Result: REAL but UNEXPLAINED.
 
 - Koide is NOT a standard spectral sum rule: it is NON-POLYNOMIAL (√m), beyond
-  trace/determinant invariants. The √m is the TQM AMPLITUDE (m=ħω/c² → √m ∝
+  trace/determinant invariants. The √m is the AT AMPLITUDE (m=ħω/c² → √m ∝
   amplitude). Koide lives in the amplitude representation, not the mass one.
 - PARTICIPATION RATIO: p_i = √m_i/Σ√m → Q = Σp_i² = 0.6667 = 2/3 EXACTLY.
   Q=2/3 is the MIDPOINT of [1/3 (uniform), 1 (concentrated)]. N_eff = 1/Q = 3/2
@@ -4952,7 +4952,7 @@ Final synthesis on the origin of Koide Q=2/3. Result: REAL but UNEXPLAINED.
 - Classification: B — WEAK STRUCTURAL CONSTRAINT. Koide is real (prediction
   confirmed, 10⁻⁵, lepton-specific) but NO mechanism derives 2/3. Every
   interpretation (45°, participation ratio, balanced S3) is a RESTATEMENT.
-  After 57 QG experiments, Koide = the cleanest statement of what TQM does not
+  After 57 QG experiments, Koide = the cleanest statement of what AT does not
   yet explain: a single dimensionless number (2/3) at the heart of flavor. 57 QG.
 
 **PHASE 102 — ResearchQG-058: Koide Midpoint Principle Audit:**
@@ -5029,7 +5029,7 @@ Tests whether Q=2/3 is distinguished or arbitrary. Result: DISTINGUISHED (the 45
   0.70 (46.4°), 0.75 (48.2°). ALL viable (θ∈[0,54.74°]). 2/3 is NOT selected by
   viability or stability (weak RG preserves ANY value, QG-060).
 - 2/3 is distinguished ONLY by the balance (45°). No mechanism (symmetry, stability,
-  viability) forces it. No TQM primitive produces 2/3.
+  viability) forces it. No AT primitive produces 2/3.
 - The final state of the flavor program: the entire mystery reduces to ONE statement
   — "the charged-lepton amplitude vector is balanced (45°)". Real (10⁻⁵),
   lepton-specific, stable, underived.
@@ -5053,7 +5053,7 @@ Determines where the Yukawa operator Y comes from. Result: EFFECTIVE overlap ope
   relation) all require Y. Elimination fails.
 - Koide (45°) suggests Ye is special (non-generic spectrum), but no hidden
   structure identified.
-- TQM flavor chain (final): Architecture → overlap → Y → masses + mixing + Koide.
+- AT flavor chain (final): Architecture → overlap → Y → masses + mixing + Koide.
   Every step characterized EXCEPT the first (architecture shapes) and last (45°).
   The middle (Y as overlap) is the one DERIVED link.
 - Classification: B — EFFECTIVE OPERATOR. 62 QG.
@@ -5099,7 +5099,7 @@ Determines what determines the attractor landscape. Result: landscape = actualiz
 - Classification: B — WEAK SELECTION (form derived, content contingent). 64 QG.
 
 **PHASE 109 — ResearchQG-065: Ontology Completion Audit:**
-Capstone synthesis. Determines whether TQM has reached ontology completion. Result: MOSTLY COMPLETE (B).
+Capstone synthesis. Determines whether AT has reached ontology completion. Result: MOSTLY COMPLETE (B).
 
 - THE 4 PRIMITIVES: Q (logical), Random Actualization (logical), (ℓ,τ,ħ) (physical
   irreducible triple), G (real generation space, possibly emergent).
@@ -5112,7 +5112,7 @@ Capstone synthesis. Determines whether TQM has reached ontology completion. Resu
 - ACTUALIZATION = LOGICAL bedrock (QG-006/025): Q = "something happens", Randomness
   = "without prior determination". LOGICAL primitives, not physical → AVOIDS
   infinite regress (nothing logically deeper than "something happens").
-- Structure/content split is the COMPLETENESS CRITERION: TQM derives ALL structure
+- Structure/content split is the COMPLETENESS CRITERION: AT derives ALL structure
   and classifies ALL content as contingent. Split is universal (holds at every level).
 - Alternative deeper ontologies (creator, determinism, multiverse) all RENAME the
   unknown or are unfalsifiable. Only legitimate deeper question: G's origin.
@@ -5157,13 +5157,13 @@ Attempts to DERIVE dim(G)=3 from actualization/attractors WITHOUT observation. R
   unique), couplings (weak selection, band, QG-041), Koide 45° (no selection,
   isolated, QG-047). Nothing remains unexplained in its category. 67 QG.
 
-**PHASE 112 — ResearchQG-068: TQM Prediction Inventory Audit:**
+**PHASE 112 — ResearchQG-068: AT Prediction Inventory Audit:**
 Honest scientific scorecard of the entire program. Classifies every claim.
 
 - METHODOLOGY: prediction = specific + falsifiable + novel. Excludes explanations,
 reinterpretations, compatibilities, selections, assumptions.
 - GENUINE PREDICTIONS (5 total, could have been wrong): 2 CONFIRMED — g†=cH₀/2π
-(SPARC, 0 free params, TQM's strongest) and anti-matter falls down (ALPHA-g 2023).
+(SPARC, 0 free params, AT's strongest) and anti-matter falls down (ALPHA-g 2023).
 3 UNTESTED — g†(z)=c·H(z)/2π, w(z)=-1+0.015(1+z)^(3/2), neutrino-Koide Q=2/3.
 - NEGATIVE PREDICTIONS (5 prohibitions): anti-gravity, stable local repulsive
 gravity, gravity manipulation, winding-sign coupling, counter-structure. All
@@ -5175,7 +5175,7 @@ particles, G geometry, G=ℓ²c³/ħ, c=ℓ/τ.
 - FALSIFICATION TESTS (4 direct): anti-matter free-fall (GBAR/AEGIS), neutrino-Koide,
 evolving RAR (KMOS3D), w(z) (Euclid). 2 passed, 2 pending.
 - OPEN PROBLEMS (4, all selections/contingent): Koide 45°, dim=3, couplings, minima.
-- Classification: B — MODERATE PREDICTIVE CONTENT. TQM = STRONG ONTOLOGY (explains
+- Classification: B — MODERATE PREDICTIVE CONTENT. AT = STRONG ONTOLOGY (explains
 WHY) + MODERATE prediction (2 confirmed). NOT "highly predictive" — most content
 is reinterpretation/structure. Honest scientific status after 68 audits. 68 QG.
 
@@ -5186,12 +5186,12 @@ Ranks remaining predictions by falsifiability × feasibility. Determines the sin
 0.86). #2 Anti-matter gravity (GBAR/AEGIS, running, 1-3 yr, 0.68). #3 Neutrino-Koide
 (DUNE/Hyper-K, 5-10 yr, 0.38). #4 Dark energy w(z) (Euclid/DESI, 5-10 yr, 0.32).
 - THE SINGLE MOST IMPORTANT EXPERIMENT: g†(z). Fastest (<1 yr, archival), cheapest
-(~free), strongest (tests a DERIVED number g†, uniquely distinguishes TQM from
+(~free), strongest (tests a DERIVED number g†, uniquely distinguishes AT from
 MOND constant-g† and ΛCDM no-RAR). Sharpest discriminator.
 - Dependency: g†(z) failure = CATASTROPHIC (DATA-004 core collapses). Anti-matter
-falling up = CATASTROPHIC (GR+EP+TQM collapse). Neutrino-Koide fail = MODERATE
+falling up = CATASTROPHIC (GR+EP+AT collapse). Neutrino-Koide fail = MODERATE
 (refinement to charged-lepton-only). w(z) fail = MODERATE (QG-004 already partial).
-- HONEST WEAKNESS: TQM's core (Q, Randomness, triple) is UNFALSIFIABLE (primitives).
+- HONEST WEAKNESS: AT's core (Q, Randomness, triple) is UNFALSIFIABLE (primitives).
 Falsifiability is concentrated in the DERIVED predictions. g†(z) is the sharpest.
 - ROADMAP: Phase 1 (0-12 mo) g†(z) archival; Phase 2 (1-3 yr) GBAR; Phase 3 (5-10
 yr) neutrino-Koide; Phase 4 (5-10 yr) w(z).
@@ -5205,14 +5205,14 @@ Quantifies g†(z)=c·H(z)/2π numerically. Result: STRONGLY TESTABLE, immediate
 z=0: ×1.000; z=0.5: ×1.322; z=1: ×1.790; z=2: ×3.032; z=3: ×4.566.
 - The RATIO R(z) = g†(z)/g†(0) = √(0.315(1+z)³+0.685) is H₀-INDEPENDENT (depends
 only on Ωm) — ROBUST to the Hubble tension. This is the key clean test.
-- MOND comparison: constant a₀ (flat) vs TQM rising. At z=1: 79% difference; z=2:
+- MOND comparison: constant a₀ (flat) vs AT rising. At z=1: 79% difference; z=2:
 203%; z=3: 357%. O(1) signal — not subtle.
 - ΛCDM: no fundamental g† (RAR is emergent halo physics). THREE-WAY discriminator:
-TQM (rising) vs MOND (flat) vs ΛCDM (no scale). Clean science.
+AT (rising) vs MOND (flat) vs ΛCDM (no scale). Clean science.
 - Falsification threshold: ~25% precision at z≈1 suffices (3σ). Achievable with
 KMOS3D archival data.
 - Dominant uncertainty: stellar M*/L. H₀ tension does NOT affect R(z).
-- THE KILL-SHOT: measure R(z) at z≈1-2 to ~25%. Rising → TQM; flat → MOND.
+- THE KILL-SHOT: measure R(z) at z≈1-2 to ~25%. Rising → AT; flat → MOND.
 Immediately feasible (archival KMOS3D).
 - Classification: C — STRONGLY TESTABLE (bordering D). The single most decisive
 experiment, quantified and ready. 70 QG.
@@ -5259,7 +5259,7 @@ catalog candidates. Result: first 9-galaxy high-z RAR pilot sample.
   residual rms ~100-250 km/s); g_obs carries deprojection uncertainty. Coarse
   grid, no turbulent-dispersion term. First-cut estimates for follow-up.
 - The high-z galaxies (z≈1.8) place points at g†(z)/g†(0) ≈ 2.8 — exactly the
-  regime where TQM (rising) and MOND (flat) separate. NEXT: stack the pilot
+  regime where AT (rising) and MOND (flat) separate. NEXT: stack the pilot
   sample and compare the g_obs(z) trend against g†(z)=c·H(z)/2π.
 
 **PHASE 117 — ResearchQG-071: High-z RAR Extraction Audit (honest negative):**
@@ -5267,7 +5267,7 @@ First attempt to measure g†(z) directly from KMOS3D. Result: A = insufficient 
 
 - Full extraction chain built and run end-to-end: rotation curve → g_obs=V²/r;
   Hα→SFR (Kennicutt 4.6e-42)→M* (SFMS sSFR=0.4(1+z)² Gyr⁻¹)+Mgas (t_dep) → g_bar;
-  per-galaxy g† fit (g_obs=g_bar·√(1+g†/g_bar)); redshift bins; TQM vs MOND vs null
+  per-galaxy g† fit (g_obs=g_bar·√(1+g†/g_bar)); redshift bins; AT vs MOND vs null
   (χ²/AIC/BIC/Bayes factor); falsification.
 - 9 accepted galaxies produced g† estimates, but they scatter over ~4 orders of
   magnitude (3e-13 .. 1e-8 m/s²) — unphysical for a universal scale.
@@ -5276,7 +5276,7 @@ First attempt to measure g†(z) directly from KMOS3D. Result: A = insufficient 
   ~-3 dex/z) is a SYSTEMATIC ARTIFACT: higher-z galaxies are more massive, sit in
   the Newtonian regime (g_bar >> g†), and leave g† unconstrained (grid floor).
 - Honest verdict: g†(z) is NOT yet measurable with this baryonic model. Neither
-  TQM nor MOND is favored. Level 1 only (method demonstrated).
+  AT nor MOND is favored. Level 1 only (method demonstrated).
 - REQUIRED for progress: proper stellar M/L + gas masses (not an SFR proxy),
   rotation-curve decomposition, and a sample spanning the deep-MOND (low g_bar)
   regime across redshift.
@@ -5287,7 +5287,7 @@ First attempt to measure g†(z) directly from KMOS3D. Result: A = insufficient 
 Added the SPARC local reference data (MassModels + Rotmod) to the RAR pipeline.
 Result: A = insufficient data — now diagnosed as a FUNDAMENTAL degeneracy.
 
-- SPARC local anchor recovered: g†(0) = 1.0e-10 m/s² (McGaugh and TQM forms agree);
+- SPARC local anchor recovered: g†(0) = 1.0e-10 m/s² (McGaugh and AT forms agree);
   baryonic Tully-Fisher relation log M_bar = 3.15 + 3.30 log Vflat (scatter 0.27 dex).
 - Replaced the Hα-SFR baryonic proxy with the SPARC BTFR prior (Vmax → M_bar),
   the Hα light profile giving the radial shape. Tighter (0.27 dex) than the proxy.
@@ -5296,12 +5296,12 @@ Result: A = insufficient data — now diagnosed as a FUNDAMENTAL degeneracy.
   the RAR fit (g_obs = g_bar·√(1+g†/g_bar)). They are fundamentally degenerate.
 - The BTFR prior is CIRCULAR: its normalization encodes the local g†, so using it
   for high-z g_bar ASSUMES (not tests) a constant scale. It cannot discriminate
-  TQM from MOND by construction.
+  AT from MOND by construction.
 - Honest verdict: g†(z) is NOT measurable from KMOS3D kinematics alone. KMOS3D has
   no photometry for stellar/gas masses. A decisive test requires independent high-z
   mass models (HST/SED photometry, or Euclid/DESI/Rubin).
 - Outputs: HighZGalaxyCatalog.csv, Top20, RotationCurves/*.csv, RAR_HighZ_Fit.csv,
-  Plots/{Local_RAR,HighZ_RAR,gdagger_vs_z,TQM_vs_MOND}.png.
+  Plots/{Local_RAR,HighZ_RAR,gdagger_vs_z,AT_vs_MOND}.png.
 
 **PHASE 119 — ResearchQG-072: Baryonic Mass Reconstruction Audit (negative):**
 Searched the local Data folder for catalogs carrying stellar/gas/baryonic masses,
@@ -5333,7 +5333,7 @@ to the 275 KMOS3D targets. Result: C = high-z RAR sample available.
 - This BREAKS the QG-071 degeneracy: independent stellar masses (±0.15 dex) replace
   the circular BTFR prior. g_bar(r) is now reconstructible without assuming g†.
 - Classification: C = high-z RAR sample available (263 galaxies with z>0.3 + M*).
-  D (direct TQM vs MOND) still needs gas masses (depletion-time relation) and a
+  D (direct AT vs MOND) still needs gas masses (depletion-time relation) and a
   re-derivation of M* at the KMOS3D spectroscopic z.
 - Output: KMOS3D_MassCatalog.csv (Object, RA, DEC, z, StellarMass, StellarMassErr,
   SFR, Radius, SourceCatalog, SepArcsec, zPDF) + QG073 report.
@@ -5348,7 +5348,7 @@ Result: A = inconclusive.
 - 8 galaxies usable (9 with rotation curves; 1 dropped). g_bar = G(M*(<r)+Mgas(<r))/r²
   with M* from COSMOS2015 (±0.15 dex), Re from COSMOS2015 (exponential disk),
   Mgas = SFR × 1.5(1+z)^-0.5 Gyr (±0.3 dex).
-- Per-galaxy g† (TQM form, free g†): 5 constrained (σ<0.8), 3 hit the grid floor
+- Per-galaxy g† (AT form, free g†): 5 constrained (σ<0.8), 3 hit the grid floor
   (Newtonian regime, g_bar >> g†). Constrained g† = 1.3e-10 .. 6.9e-9 m/s².
 - KEY PROGRESS vs QG-071: the independent stellar mass broke the circularity —
   per-galaxy g† scatter fell from ~4 dex (SFR proxy) to ~1.7 dex. But it is still
@@ -5375,18 +5375,18 @@ and the key finding is that sample SIZE does not cure the problem.
   (g_obs << g_bar => g† floor-degenerate; g_obs >> g_bar => baryons underestimated).
 - Redshift bins are non-monotonic (median g†: 3.3e-10 → 5.0e-10 → 3.2e-10 → 1.4e-9),
   consistent with no measurable evolution. MOND (constant) still nominally preferred
-  (χ² 688 vs 1059), but scatter (2.14 dex) dwarfs the TQM evolution signal (~0.35 dex).
+  (χ² 688 vs 1059), but scatter (2.14 dex) dwarfs the AT evolution signal (~0.35 dex).
 - CONCLUSION (consistent with QG-072): the bottleneck is BARYONIC MASS reconstruction
   (gas ±0.3 dex, M/L, profile shape), NOT kinematics. Scaling from 8→98 galaxies does
   not by itself yield a decisive g†(z) test. A decisive test requires gas mapping
   (CO/[CII]) and/or a many-galaxy stack with well-characterized mass systematics.
 - Outputs: HighZ_RAR_LargeSample.csv (98 rows incl. Constrained flag), gdagger_vs_z.csv,
-  TQM_vs_MOND_Statistics.csv (persisted to Data/derived).
+  AT_vs_MOND_Statistics.csv (persisted to Data/derived).
 - NEXT: either obtain gas masses (CO/[CII]) for the best 47, or accept that g†(z)
   evolution is not testable at current mass precision and defer to Euclid/Rubin.
 
 **PHASE 123 — ResearchQG-076: Gas Mass Systematics Audit (B = gas significant, unmodeled dominates):**
-Quantified whether gas-mass uncertainty alone can hide/mimic the TQM g†(z) evolution.
+Quantified whether gas-mass uncertainty alone can hide/mimic the AT g†(z) evolution.
 Result: B = gas uncertainty significant, but UNMODELED systematics dominate.
 
 - Error budget per galaxy (median σ dex in log g†): gas 0.19 (largest modeled term),
@@ -5399,18 +5399,18 @@ Result: B = gas uncertainty significant, but UNMODELED systematics dominate.
   the RANGE) exceeds the modeled budget (0.30 dex) by ~1.9×, implying ~0.49 dex of
   UNMODELED systematics (mass normalization, M/L, morphology, non-circular motions,
   profile shape).
-- Detection power: analytic S/N = 4.2σ (would already detect TQM if the budget were
+- Detection power: analytic S/N = 4.2σ (would already detect AT if the budget were
   complete), but EMPIRICAL S/N = 2.0σ using the observed scatter. Cutting gas 2× (S/N
   2.14) or 5× (S/N 2.17) barely moves it — gas is NOT the bottleneck.
-- Synthetic recovery (10,000 realizations, seeded): TQM recovery 93% at 0.3 dex, false
-  TQM rate 0.0% (TQM has no free amplitude to absorb noise). These are budget-only; the
+- Synthetic recovery (10,000 realizations, seeded): AT recovery 93% at 0.3 dex, false
+  AT rate 0.0% (AT has no free amplitude to absorb noise). These are budget-only; the
   real recovery is worse due to unmodeled scatter.
 - CONCLUSION: gas mapping is NECESSARY but NOT SUFFICIENT. The decisive lever is the
   ~0.5 dex unmodeled scatter, not gas precision. Answers the central question: gas
   uncertainty (±0.3 dex) cannot be reduced enough (even to zero) to make the ~0.35 dex
-  TQM evolution decisive while unmodeled systematics dominate.
+  AT evolution decisive while unmodeled systematics dominate.
 - Outputs (persisted): GasMassErrorBudget.csv, GdaggerSensitivity.csv,
-  MonteCarloRecovery.csv, TQM_vs_MOND_Discrimination.csv + 4 PNGs.
+  MonteCarloRecovery.csv, AT_vs_MOND_Discrimination.csv + 4 PNGs.
 - NEXT: attack the unmodeled 0.5 dex — better mass models, resolved profile fits, and
   gas mapping together — or defer the g†(z) test to Euclid/Rubin with full SED+gas.
 
@@ -5427,7 +5427,7 @@ Result: Level 2 = dominant hidden systematic isolated; it is KINEMATIC COHERENCE
 - Decisively NOT the drivers: inclination, stellar mass, SFR, gas fraction, Re, redshift
   all have |r| ≤ 0.10. So the hidden scatter is kinematic/morphological, not baryonic.
 - Multivariate decomposition explains 22% of total variance (30% of the hidden excess);
-  remaining scatter 0.50 dex — still ABOVE the TQM signal (~0.35 dex).
+  remaining scatter 0.50 dex — still ABOVE the AT signal (~0.35 dex).
 - CONCLUSION: reducing gas/mass precision will not fix it (consistent with QG-076). The
   missing scatter comes from unresolved morphology / non-circular flows. The lever is
   CLEANER RESOLVED KINEMATICS (higher SNR, longer velocity spans, better disk fits),
@@ -5438,7 +5438,7 @@ Result: Level 2 = dominant hidden systematic isolated; it is KINEMATIC COHERENCE
   on only the cleanest rotation curves, or defer g†(z) to Euclid/Rubin resolved samples.
 
 **PHASE 125 — ResearchQG-078: Gold Sample Kinematic Purity Audit (purity rejected as lever):**
-Tested whether a high-purity kinematic subset reduces the g† scatter below the TQM signal.
+Tested whether a high-purity kinematic subset reduces the g† scatter below the AT signal.
 Result: BELOW Level 1 — kinematic purity does NOT reduce scatter; it slightly INCREASES it.
 
 - Built KinematicPurityScore = 0.30·SNR/50 + 0.25·span/300 + 0.15·extent/2 +
@@ -5447,12 +5447,12 @@ Result: BELOW Level 1 — kinematic purity does NOT reduce scatter; it slightly 
 - KEY NEGATIVE RESULT: scatter(log g†) does NOT fall with purity — it rises
   0.58 → 0.59 → 0.61 → 0.62 → 0.71 dex. Extrapolated high-purity scatter = 0.76 dex.
 - Gold sample (top 11) has scatter 0.62 dex and MOND still preferred (Δχ² = −24.9);
-  TQM signal within the gold sample is only 0.13 dex (its redshift range is narrow).
+  AT signal within the gold sample is only 0.13 dex (its redshift range is narrow).
 - CONCLUSION (reconciles QG-077): the velocity-span correlation is a BIAS (high-span
   galaxies have systematically higher g†), NOT a scatter source. Selecting coherent
   galaxies removes the low-g† population but does not shrink the remaining scatter,
   which is intrinsic RAR diversity + baryonic-mass reconstruction. This CLOSES the
-  KMOS3D+COSMOS2015 route: no subset of this sample can discriminate MOND vs TQM at
+  KMOS3D+COSMOS2015 route: no subset of this sample can discriminate MOND vs AT at
   current mass precision.
 - Outputs (persisted): GoldSampleCatalog.csv, PurityRanking.csv, ScatterVsPurity.csv + 3 PNGs.
 - NEXT (project-level): the g†(z)=cH(z)/2π test is NOT testable with KMOS3D archival data.
@@ -5460,11 +5460,11 @@ Result: BELOW Level 1 — kinematic purity does NOT reduce scatter; it slightly 
   (b) defer the RAR-evolution test to Euclid/Rubin/ELT resolved kinematics + SED masses.
 
 **PHASE 126 — ResearchQG-079: Detectability Limit Audit (C = observable with next-gen data):**
-Determined the theoretical detectability limit of the TQM evolution signal. Result: C —
+Determined the theoretical detectability limit of the AT evolution signal. Result: C —
 the signal is NOT fundamentally too small; it is hidden by mass reconstruction, not by
 a lack of signal, and is decisively reachable with next-generation resolved data.
 
-- TQM signal amplitude Δlog g† = ½ log₁₀[Ωm(1+z)³+ΩΛ]: 0 (z=0), 0.12 (z=0.5), 0.25 (z=1),
+- AT signal amplitude Δlog g† = ½ log₁₀[Ωm(1+z)³+ΩΛ]: 0 (z=0), 0.12 (z=0.5), 0.25 (z=1),
   0.37 (z=1.5), 0.48 (z=2), 0.66 (z=3), 0.80 (z=4). Full z=0→2 span ≈ 0.48 dex.
 - Signal leverage (std of Δ across the actual 47-galaxy sample) = 0.169 dex vs intrinsic
   RAR scatter 0.10 dex → ratio 1.7×. Observed scatter 0.568 dex → current S/N = 2.04 (marginal 2σ).
@@ -5480,7 +5480,7 @@ a lack of signal, and is decisively reachable with next-generation resolved data
   principle; ELT/JWST IFU + ALMA gas masses reach ≫5σ. The KMOS3D+COSMOS2015 failure
   (QG-075–078) is a MASS-PRECISION failure, not a fundamental detectability failure.
 - Outputs (persisted): SignalBudget.csv, DetectabilityThresholds.csv, RequiredPrecision.csv + 2 PNGs.
-- NEXT: either (a) write a Euclid/ELT/JWST forecast proposal, or (b) return to TQM theory
+- NEXT: either (a) write a Euclid/ELT/JWST forecast proposal, or (b) return to AT theory
   work — the archival RAR route is now conclusively characterized as mass-limited.
 
 **PHASE 127 — ResearchQG-080: Time-Scale Cosmology Audit (Levels 1–4 pass, Level 5 fails):**
@@ -5499,12 +5499,12 @@ of ΛCDM, not a new theory.
 - VERDICT: Levels 1–4 PASS (self-consistent, redshift+dilation, g†∝H exact, g† = clock
   log-acceleration explains why a local scale tracks global time). Level 5 FAILS: TSC is either
   equivalent to ΛCDM or falsified — NO distinct falsifiable prediction. Its value is INTERPRETIVE,
-  not predictive; it does NOT independently confirm TQM.
+  not predictive; it does NOT independently confirm AT.
 - Outputs: Docs/{TimeScaleCosmology,TimeScaleEquations,DerivedObservables,RAR_TimeInterpretation,
-  Predictions}.md; TQM.Core/ResearchQG/{TimeScaleModel,CosmicClock,TimeDrivenRedshift,
-  GdaggerTimeDerivation}.cs; test TQM_QG080_TimeScaleCosmologyAudit.
+  Predictions}.md; AT.Core/ResearchQG/{TimeScaleModel,CosmicClock,TimeDrivenRedshift,
+  GdaggerTimeDerivation}.cs; test AT_QG080_TimeScaleCosmologyAudit.
 - NEXT: this closes the "time-scale" reinterpretation as non-predictive. The g†=cH/2π test
-  remains: (a) a next-gen resolved-RAR measurement (QG-079), or (b) a distinct TQM prediction
+  remains: (a) a next-gen resolved-RAR measurement (QG-079), or (b) a distinct AT prediction
   elsewhere (e.g. an evolving a0 in other regimes) that breaks the ΛCDM equivalence.
 
 **PHASE 128 — ResearchQG-081: Model Dependence Audit (Levels 1–4 pass, Level 5 fails):**
@@ -5529,7 +5529,7 @@ assumption is introduced. Result: expansion is an interpretation, not an observa
   Docs/{CosmologyDependencyGraph,ModelIndependentRedshift,TimeFirstCosmology}.md;
   ModelDependenceAnalyzer.cs + test.
 - NEXT: the QG-080/081 line is exhausted (reinterpretation is sterile). Return to the
-  positive TQM program: find a distinct, falsifiable prediction of g†=cH/2π (e.g. an
+  positive AT program: find a distinct, falsifiable prediction of g†=cH/2π (e.g. an
   evolving a0 observable in rotation curves, lensing, or a new regime).
 
 **PHASE 129 — ResearchQG-082: Beyond Conformal Time Audit (γ=a is UNIQUE; Levels 1–3 pass):**
@@ -5595,7 +5595,7 @@ Result: the 2π factor is a falsifiable discriminator; coincidence is ~10% but n
   boundary/causal (0.5, excluded).
 - VERDICT: Levels 1–4 PASS (mechanisms, coincidence quantified, consistent mechanism, explains
   local-tracks-H via clock log-acceleration). Level 5 PARTIAL: 2π excludes no-2π mechanisms,
-  but survivors converge on g† ∝ H (TQM's existing mass-limited test). The time-scale
+  but survivors converge on g† ∝ H (AT's existing mass-limited test). The time-scale
   mechanism (QG-080) is cleanest but is a ΛCDM reinterpretation; information is speculative.
 - Outputs: NaturalAccelerationScales.csv, CouplingModelComparison.csv, CoincidenceProbability.csv,
   LocalCosmicMechanisms.csv (Data/derived) + 3 PNGs; 5 source files + test.
@@ -5623,11 +5623,11 @@ Result: NUMERICAL ACCIDENT — the data do NOT uniquely select 2π.
 - NEXT: the g†=cH/2π line is now fully deflated (numerical coincidence, not a principle).
   The ONLY remaining decisive test is the g†(z) EVOLUTION (g† ∝ H vs a0 constant), which is
   mass-limited (QG-079). The program should either (a) pursue that with next-gen data, or (b)
-  pivot to a genuinely distinct TQM observable elsewhere.
+  pivot to a genuinely distinct AT observable elsewhere.
 
 **PHASE 133 — ResearchQG-086: Fundamental Acceleration Scale Audit (a₀ is emergent/cosmological):**
 Investigated WHY a ~1e-10 m/s² universal acceleration scale exists at all, independent of
-MOND/TQM implementation. Result: a₀ is EMERGENT (cosmological), not fundamental — all 5 levels pass.
+MOND/AT implementation. Result: a₀ is EMERGENT (cosmological), not fundamental — all 5 levels pass.
 
 - Acceleration landscape (log10 a): Planck 51.75, Earth orbit −2.23, galactic GM/R² −9.86,
   cluster −10.86, a₀(MOND) −9.92, g† −9.98, cH −9.18, c²√Λ −9.03, c/t −9.16. a₀ sits in the
@@ -5637,7 +5637,7 @@ MOND/TQM implementation. Result: a₀ is EMERGENT (cosmological), not fundamenta
 - Origin hypotheses ranked: Cosmological (cH) 2.6 > (c²√Λ) 2.3 > (c/t) 2.0 > Information 1.8 >
   Emergent/MOND 1.7 > Quantum 1.5 > Coincidence 0.6. Cosmological origin has 0 free parameters.
 - KEY: the cosmological origin has THREE sub-variants with DIFFERENT evolution — cH (rising ∝H,
-  TQM), c²√Λ (constant, =MOND at evolution level), c/t (rising, different slope). The EVOLUTION
+  AT), c²√Λ (constant, =MOND at evolution level), c/t (rising, different slope). The EVOLUTION
   test distinguishes them and separates ALL cosmological origins from MOND (constant).
 - VERDICT: Levels 1–5 all PASS. a₀ is not a fundamental constant; it is c×(cosmic rate), which is
   why it coincides with cH/c²√Λ/galactic GM/R². The unique falsifiable prediction is a₀ EVOLUTION
@@ -5712,7 +5712,7 @@ trivially; Level 4 partial; Level 5 fails. This CLOSES the whole QG-080–089 re
   AccelerationFromRate.csv (Data/derived) + 1 PNG; Docs/RateFirstCosmology.md; 5 files + test.
 - PROGRAM CONCLUSION (QG-080–089): every "X-first" reinterpretation (expansion, time, clock,
   event-count, event-structure, rate) collapses to FLRW or is falsified. NONE yields a distinct
-  prediction. The ONLY decisive, falsifiable TQM test remains the g†(z) EVOLUTION (g† ∝ H vs a₀
+  prediction. The ONLY decisive, falsifiable AT test remains the g†(z) EVOLUTION (g† ∝ H vs a₀
   constant), which is mass-limited (QG-079) and requires next-gen resolved RAR data.
 
 **PHASE 137 — ResearchQG-090: Origin Of Change Audit (causality deeper; causal-set Λ prediction):**

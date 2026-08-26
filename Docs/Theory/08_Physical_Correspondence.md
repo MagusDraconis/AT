@@ -1,28 +1,28 @@
 # 8. Physical Correspondence
 
-## What TQM Matches and Where It Fails
+## What AT Matches and Where It Fails
 
 ---
 
 ## Exact Mathematical Identities
 
-| TQM Structure | Physical System | Relationship | Source |
+| AT Structure | Physical System | Relationship | Source |
 |--------------|----------------|-------------|--------|
-| L_Q (1D chain) | Tight-binding Hamiltonian | IDENTITY (up to scaling) | TQM-142, 144 |
-| L_Q eigenvalues | Electronic band structure E(k) | IDENTITY | TQM-144 |
-| L_Q eigenmodes | Phonon normal modes | IDENTITY | TQM-144 |
-| L_Q eigenmodes | Coupled oscillator modes | IDENTITY | TQM-144 |
-| L_Q eigenmodes | Spin-wave magnon modes | Strong | TQM-144 |
-| λ_1 ∝ 1/Q² | Particle-in-a-box E₁ ∝ 1/L² | EXACT | TQM-146 |
-| E = trace(L) ∝ Q | Extensive energy | EXACT | TQM-145 |
-| C = log₂(Q) | Boltzmann entropy S = k_B·ln W | EXACT | TQM-145 |
-| ρ = 1 | Weyl's law in 1D | EXACT | TQM-145 |
+| L_Q (1D chain) | Tight-binding Hamiltonian | IDENTITY (up to scaling) | AT-142, 144 |
+| L_Q eigenvalues | Electronic band structure E(k) | IDENTITY | AT-144 |
+| L_Q eigenmodes | Phonon normal modes | IDENTITY | AT-144 |
+| L_Q eigenmodes | Coupled oscillator modes | IDENTITY | AT-144 |
+| L_Q eigenmodes | Spin-wave magnon modes | Strong | AT-144 |
+| λ_1 ∝ 1/Q² | Particle-in-a-box E₁ ∝ 1/L² | EXACT | AT-146 |
+| E = trace(L) ∝ Q | Extensive energy | EXACT | AT-145 |
+| C = log₂(Q) | Boltzmann entropy S = k_B·ln W | EXACT | AT-145 |
+| ρ = 1 | Weyl's law in 1D | EXACT | AT-145 |
 
 ---
 
-## Where TQM Fails
+## Where AT Fails
 
-| System | TQM Predicts | Actual Physics | Reason |
+| System | AT Predicts | Actual Physics | Reason |
 |--------|-------------|---------------|--------|
 | 1D Ising Chain | Δ ∝ 1/Q² | Δ ∝ 1/Q | Domain wall physics ≠ Laplacian eigenmodes |
 | 1D Heisenberg AFM | Δ ∝ 1/Q² | Δ ∝ 1/Q (Bethe ansatz) | Spinons ≠ Laplacian eigenmodes |
@@ -33,14 +33,14 @@
 
 ## Domain of Applicability
 
-**TQM applies to**: Graph-Laplacian-governed systems:
+**AT applies to**: Graph-Laplacian-governed systems:
 - Tight-binding electrons
 - Harmonic oscillators
 - Diffusion on networks
 - Spin waves (linearized)
 - Phonons (harmonic)
 
-**TQM does NOT apply to**:
+**AT does NOT apply to**:
 - Systems with non-harmonic interactions
 - Systems with topological phase transitions
 - Systems with strong disorder
@@ -61,4 +61,4 @@
 
 ---
 
-*TQM-155: Physical Correspondence. August 2026.*
+*AT-155: Physical Correspondence. August 2026.*

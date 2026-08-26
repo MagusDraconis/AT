@@ -87,5 +87,5 @@ part R_μν − (R/2)g_μν is non-zero and a genuine Einstein-like tensor can b
 | G4-G01 `G4_G01_EinsteinTensorVanishesIn2D` | PASS (max\|G\| = 2.8e−17) |
 | G4-G02 `G4_G02_GaussBonnetConservationAndRefinement` | PASS (∫R√g → −8a/(1+a), err 4.3%→1.7%) |
 
-Code: `TQM.Core/ResearchXH/EinsteinStructure.cs`;
-tests `TQM.Tests/ResearchXH/G4G_Phase0_EinsteinStructureTests.cs`.
+Code: `AT.Core/ResearchXH/EinsteinStructure.cs`;
+tests `AT.Tests/ResearchXH/G4G_Phase0_EinsteinStructureTests.cs`.

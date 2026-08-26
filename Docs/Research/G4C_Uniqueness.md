@@ -111,5 +111,5 @@ is **a distinguished, theoretically-selected member of a large empirical equival
 | G4-U01 `G4_U01_MagnitudeOrderingAndDegreeSensitivityMap` | PASS |
 | G4-U02 `G4_U02_RefinementAndClassification` | PASS |
 
-`TQM.Tests/ResearchXH/G4C_UniquenessTests.cs` (inherits `ResearchTestBase`, deterministic,
+`AT.Tests/ResearchXH/G4C_UniquenessTests.cs` (inherits `ResearchTestBase`, deterministic,
 `StringBuilder`-composed reports).

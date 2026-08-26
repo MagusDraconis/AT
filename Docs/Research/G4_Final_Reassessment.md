@@ -9,7 +9,7 @@
 
 ## 1. The original gap (recap)
 
-Before G4, TQM natively determined the **metric** — `Q-events → causal order (native) →
+Before G4, AT natively determined the **metric** — `Q-events → causal order (native) →
 conformal class (imported Malament/HKM) → conformal factor f = ρ^(2/d) (native counting measure)
 → g_μν` — but the **operator** was imported: the weighted graph Laplacian L_W (Riemannian) and the
 BDG layer operator with binomial weights (Lorentzian). G4 asked whether the operator can be built

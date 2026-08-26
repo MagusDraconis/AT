@@ -3,7 +3,7 @@
 **Goal:** minimal dependency path from the computed θ* to a first-peak power
 spectrum. **Scope:** dependency analysis only — no new physics, no solver.
 
-**Legend:** **Available** = already in TQM code; **Imported** = standard ΛCDM
+**Legend:** **Available** = already in AT code; **Imported** = standard ΛCDM
 formula (no new physics, not yet wired); **Missing** = requires a new (standard)
 solver/derivation.
 
@@ -13,7 +13,7 @@ solver/derivation.
 
 | Component | Status | Basis |
 |---|---|---|
-| Acoustic oscillator ($\Theta_0,\Theta_1$) | **Missing** | coupled photon–baryon perturbation ODEs; no solver in TQM |
+| Acoustic oscillator ($\Theta_0,\Theta_1$) | **Missing** | coupled photon–baryon perturbation ODEs; no solver in AT |
 | Baryon loading $R(z)=3\rho_b/4\rho_\gamma$ | **Available** | already in `SoundSpeed` ($c_s$ uses $R$) |
 | Radiation driving ($\Phi$) | **Missing** | gravitational potential from radiation perturbations |
 | Silk damping ($k_D$) | **Imported** | diffusion integral over $R(z)$ + $n_e(z)$ — both available |
@@ -53,7 +53,7 @@ solver/derivation.
 | Differential equations (new) | 2 (oscillator) + 1 ($\Phi$) |
 | Available (reused) | θ*, $R$, $c_s$, $X_e$, $H(z)$ |
 | Imported (plug-in formulas) | Silk $k_D$, SW + Doppler $C_\ell$ |
-| Free TQM parameters | 0 |
+| Free AT parameters | 0 |
 
 ---
 

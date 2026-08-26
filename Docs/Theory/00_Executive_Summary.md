@@ -2,22 +2,22 @@
 
 *From Q to Cosmology*
 
-**TQM**
+**AT**
 
 *A Theory of Structure, Complexity and Random Actualization*
 
 ---
 
-# Foundations of TQM — Executive Summary
+# Foundations of AT — Executive Summary
 
-**Version**: Post TQM-154 (August 2026)
+**Version**: Post AT-154 (August 2026)
 **Status**: 26 levels, 4 irreducible postulates, fully documented
 
 ---
 
 ## One-Paragraph Summary
 
-The TQM (THE Q-MODEL) framework demonstrates that a rich hierarchy of physical phenomena — from signal propagation to quantum mechanics — emerges from two minimal postulates: topological charge Q exists, and dynamics are reversible. Hilbert space, Schrödinger evolution, complex structure, information species, Darwinian selection, and physical observables are all DERIVED from Q interaction networks. The graph Laplacian of the Q network IS the tight-binding Hamiltonian, the phonon dynamical matrix, and the quantum kinetic energy operator. Evolution (reproduction, variation, selection) emerges naturally as graph spectral dynamics. The Born rule and measurement remain as additional postulates. TQM reduces quantum mechanics from ~5 postulates to 4.
+The AT (THE Q-MODEL) framework demonstrates that a rich hierarchy of physical phenomena — from signal propagation to quantum mechanics — emerges from two minimal postulates: topological charge Q exists, and dynamics are reversible. Hilbert space, Schrödinger evolution, complex structure, information species, Darwinian selection, and physical observables are all DERIVED from Q interaction networks. The graph Laplacian of the Q network IS the tight-binding Hamiltonian, the phonon dynamical matrix, and the quantum kinetic energy operator. Evolution (reproduction, variation, selection) emerges naturally as graph spectral dynamics. The Born rule and measurement remain as additional postulates. AT reduces quantum mechanics from ~5 postulates to 4.
 
 ---
 
@@ -86,9 +86,9 @@ Level 26: MEASUREMENT (154)        — Decoherence works; collapse irreducible
 
 ## Domain of Applicability
 
-**TQM applies to**: Systems governed by graph Laplacians (tight-binding, phonons, diffusion, coupled oscillators, spin waves).
+**AT applies to**: Systems governed by graph Laplacians (tight-binding, phonons, diffusion, coupled oscillators, spin waves).
 
-**TQM does NOT apply to**: Ising chains, Heisenberg spinons, percolation, random resistor networks (non-Laplacian dynamics).
+**AT does NOT apply to**: Ising chains, Heisenberg spinons, percolation, random resistor networks (non-Laplacian dynamics).
 
 **This is a properly delimited scientific theory.**
 
@@ -104,4 +104,4 @@ Level 26: MEASUREMENT (154)        — Decoherence works; collapse irreducible
 
 ---
 
-*Foundations of TQM. Executive Summary. August 2026.*
+*Foundations of AT. Executive Summary. August 2026.*

@@ -74,5 +74,5 @@ alternating — but its propagator retains an irreducible ~40–55 % spacelike l
 | G4-L81 `G4_L81_ConvergenceToBdg` | PASS (KS stays far from 0; indefinite survives) |
 | G4-L82 `G4_L82_ClassifyConvergence` | PASS (classification = PLATEAU) |
 
-Code: `TQM.Core/ResearchXH/LorentzianOperator.cs` (added `NativeLorentzian`);
-tests `TQM.Tests/ResearchXH/G4L_Phase8_RefinementConvergenceTests.cs`.
+Code: `AT.Core/ResearchXH/LorentzianOperator.cs` (added `NativeLorentzian`);
+tests `AT.Tests/ResearchXH/G4L_Phase8_RefinementConvergenceTests.cs`.

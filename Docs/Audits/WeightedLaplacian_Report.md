@@ -1,7 +1,7 @@
 # Weighted Laplacian — Report
 
-**Implementation:** `TemporalMatrix.BuildWeightedLaplacian()` (TQM.Core)
-**Test file:** `TQM.Tests/ResearchXC/WeightedLaplacianTests.cs`
+**Implementation:** `TemporalMatrix.BuildWeightedLaplacian()` (AT.Core)
+**Test file:** `AT.Tests/ResearchXC/WeightedLaplacianTests.cs`
 **Result:** **PASSED (4/4).**
 
 ---
@@ -42,7 +42,7 @@ new parameters.
 
 ## Conclusion
 
-The weighted graph Laplacian $L_W=D_K-K$ is now implemented over TQM's existing coupling
+The weighted graph Laplacian $L_W=D_K-K$ is now implemented over AT's existing coupling
 matrix $K_{ij}$ and verified to be a valid Laplacian (symmetric, zero row-sum, positive
 semi-definite) that reduces to the unweighted $L_Q$ in the binary limit. This supplies the
 missing **weight rule** identified in `MetricOperatorProgram.md` — the discrete

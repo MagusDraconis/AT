@@ -1,10 +1,10 @@
-# TQM-131: Information Back-Reaction on Proto-Matter Genesis
+# AT-131: Information Back-Reaction on Proto-Matter Genesis
 
 ## Executive Summary
 
 **Classification: A — No Back-Reaction**
 
-TQM-131 tests whether stored Θ memory patterns can influence
+AT-131 tests whether stored Θ memory patterns can influence
 future topological charge creation. 20 experiments across
 5 densities and 4 memory types found:
 
@@ -47,7 +47,7 @@ or with specifically prepared memory states not tested here.
 ## 4. Conclusion
 
 This is a scientifically important NEGATIVE RESULT. It establishes
-that proto-matter's information storage (TQM-130) and charge
-creation (TQM-118) are INDEPENDENT processes at tested parameters.
+that proto-matter's information storage (AT-130) and charge
+creation (AT-118) are INDEPENDENT processes at tested parameters.
 Information does not automatically become an active agent in
 proto-matter genesis — a clean separation of concerns.

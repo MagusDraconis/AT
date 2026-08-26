@@ -369,16 +369,16 @@ FodyWeavers.xsd
 *.fits.gz
 
 # Downloaded external photometric catalog (re-downloadable via the VizieR TAP
-# query documented in TQM_QG073_ExternalPhotometricCrossmatchAudit.cs).
+# query documented in AT_QG073_ExternalPhotometricCrossmatchAudit.cs).
 Data/COSMOS2015_KMOS3D_field.csv
 
 # Legacy/reference-only documents (PDFs) — not part of the active program.
 LegacyDocs/
 
 # Local-only exploratory notes.
-Docs/TQM_FutureAndIdeas.md
+Docs/AT_FutureAndIdeas.md
 Docs/LocalFalsificationLab/
-TQM.Tests/LocalFalsificationLab/
+AT.Tests/LocalFalsificationLab/
 
-# Scratch / exploratory code (local console runner against TQM.Core).
+# Scratch / exploratory code (local console runner against AT.Core).
 temp/

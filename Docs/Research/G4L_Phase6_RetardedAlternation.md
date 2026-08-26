@@ -72,5 +72,5 @@ diagonal (−2) and a purely retarded structure, both outside this constraint.
 | G4-L61 `G4_L61_PreservesIndefinitenessAlternation` | PASS (A3/A4 satisfy all) |
 | G4-L62 `G4_L62_StableUnderRefinement` | PASS (A3 stable at N=72, 110) |
 
-Code: `TQM.Core/ResearchXH/LorentzianOperator.cs` (added `Scale`, `IntervalWeightedAlternation`);
-tests `TQM.Tests/ResearchXH/G4L_Phase6_RetardedAlternationTests.cs`.
+Code: `AT.Core/ResearchXH/LorentzianOperator.cs` (added `Scale`, `IntervalWeightedAlternation`);
+tests `AT.Tests/ResearchXH/G4L_Phase6_RetardedAlternationTests.cs`.

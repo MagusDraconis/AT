@@ -1,6 +1,6 @@
 # Charge Coherence Theory
 
-## TQM-125: The Emergence of Collective Charge Modes
+## AT-125: The Emergence of Collective Charge Modes
 
 ### Abstract
 
@@ -69,18 +69,18 @@ For K=10, λ=0.10, N=200: ξ ≈ 0.5 (locking extends ~5λ).
 
 For weaker coupling: ξ decreases exponentially.
 
-### 6. Relation to Prior TQM Results
+### 6. Relation to Prior AT Results
 
-| TQM | Relationship |
+| AT | Relationship |
 |-----|-------------|
-| TQM-124 | Internal θ-mode discovered — prerequisite for TQM-125 |
-| TQM-123 | Collective charge phases — inter-charge coherence explains clustering |
-| TQM-012 | Two-condensate merger — locking precedes merger |
-| TQM-005 | Resonance clusters — may be inter-charge coherent states |
+| AT-124 | Internal θ-mode discovered — prerequisite for AT-125 |
+| AT-123 | Collective charge phases — inter-charge coherence explains clustering |
+| AT-012 | Two-condensate merger — locking precedes merger |
+| AT-005 | Resonance clusters — may be inter-charge coherent states |
 
 ### 7. Conclusion
 
-Inter-charge coherence is the NATURAL EXTENSION of the TQM
+Inter-charge coherence is the NATURAL EXTENSION of the AT
 synchronization paradigm to the charge level. The same Kuramoto
 mechanism that creates Q=+1 condensates also enables them to
 synchronize their internal modes. The system exhibits HIERARCHICAL

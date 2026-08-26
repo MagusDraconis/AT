@@ -4,7 +4,7 @@
 
 ### 1. The Universality Theorem
 
-TQM-143 establishes:
+AT-143 establishes:
 
 **The Theta hierarchy (transport, memory, species, evolution, finite
 landscape) emerges from ANY locally connected graph, not just 1D chains.**
@@ -78,7 +78,7 @@ But the STRUCTURE (species, evolution, fitness) is the same.
 
 ### 5. The Graph Information Physics Framework
 
-TQM-143 completes the generalization of TQM from a specific model
+AT-143 completes the generalization of AT from a specific model
 (1D chain with damped waves) to a universal framework:
 
 **Graph-Based Information Physics:**

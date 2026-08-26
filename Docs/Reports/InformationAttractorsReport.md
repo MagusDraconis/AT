@@ -1,10 +1,10 @@
-# TQM-133: Information Attractors and Stable Information Species
+# AT-133: Information Attractors and Stable Information Species
 
 ## Executive Summary
 
 **Classification: C — Stable Information Species**
 
-TQM-133 determines whether the Θ information layer contains
+AT-133 determines whether the Θ information layer contains
 stable attractors and reproducible information species. 100
 random initial patterns evolved across 5 densities reveal:
 
@@ -35,7 +35,7 @@ Many initial conditions → few final states = self-organization.
 | 0.3-0.6 | Weak-Moderate | 1-3 |
 | > 0.6 | Strong | 3-6 |
 
-Field autonomy (TQM-128) is required for information self-organization.
+Field autonomy (AT-128) is required for information self-organization.
 
 ## 4. Information Ecology
 

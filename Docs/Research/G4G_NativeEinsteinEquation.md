@@ -81,5 +81,5 @@ datum.
 | G4-G31 `G4_G31_EinsteinRelationAndTrace` | PASS (G = κT, trace −(d−2)R/(2κ)) |
 | G4-G32 `G4_G32_KineticStressEnergyIsInsufficient` | PASS (kinetic T insufficient; ∂²ρ essential) |
 
-Code: `TQM.Core/ResearchXH/HigherDimEinstein.cs` (added `KineticStress*`, `NativeStress*`);
-tests `TQM.Tests/ResearchXH/G4G_Phase3_NativeEinsteinEquationTests.cs`.
+Code: `AT.Core/ResearchXH/HigherDimEinstein.cs` (added `KineticStress*`, `NativeStress*`);
+tests `AT.Tests/ResearchXH/G4G_Phase3_NativeEinsteinEquationTests.cs`.

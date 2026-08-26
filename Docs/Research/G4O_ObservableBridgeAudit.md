@@ -9,7 +9,7 @@
 
 ## 1. Goal
 
-Determine whether the repulsive a = −(1/d)∇lnρ is (A) a real TQM prediction, (B) an incorrect
+Determine whether the repulsive a = −(1/d)∇lnρ is (A) a real AT prediction, (B) an incorrect
 observable map, or (C) a signal that ρ must be distinguished from observable matter density.
 
 ---
@@ -32,14 +32,14 @@ and profile-independent (repulsive at peaks, zero in uniform regions).
 
 | map | acceleration at a peak |
 |---|---|
-| TQM (ρ as conformal factor) | +0.231 (repulsive) |
+| AT (ρ as conformal factor) | +0.231 (repulsive) |
 | Newton (ρ as matter density) | −0.525 (attractive) |
 
 ---
 
 ## 3. Classification
 
-**A) the repulsive result is a real TQM prediction, AND C) it requires distinguishing ρ from observable
+**A) the repulsive result is a real AT prediction, AND C) it requires distinguishing ρ from observable
 matter density.**
 
 - **Not B (incorrect map)**: a = −(1/d)∇lnρ is the *direct* geodesic equation (Γ^x_00), verified by
@@ -55,7 +55,7 @@ matter density.**
 
 The observable gravitational acceleration has been **identified correctly**: a = −(1/d)∇lnρ is the
 physical geodesic acceleration of test particles in the actualization-density metric g = ρ^(2/d)η. The
-repulsive/expansive behavior is a genuine, convention-independent TQM prediction — but it is the
+repulsive/expansive behavior is a genuine, convention-independent AT prediction — but it is the
 behavior of the actualization density as a **conformal (scale) factor**, not as matter. The program's
 "gravity" is therefore an expansive anti-screening effect, and any Newtonian attractive matter sector
 would need a density primitive distinct from the conformal factor (which G4-G4 showed does not exist
@@ -71,4 +71,4 @@ natively).
 | G4-O51 `G4_O51_WeakFieldAndCurvatureAcrossProfiles` | PASS (a=−∇Φ; curvature-consistent) |
 | G4-O52 `G4_O52_RhoVsMatterAndClassification` | PASS (conformal repulsive vs matter attractive) |
 
-Code: `TQM.Tests/ResearchXH/G4O_Phase5_ObservableBridgeAuditTests.cs`.
+Code: `AT.Tests/ResearchXH/G4O_Phase5_ObservableBridgeAuditTests.cs`.
