@@ -377,6 +377,8 @@ LegacyDocs/
 
 # Local-only exploratory notes.
 Docs/TQM_FutureAndIdeas.md
+Docs/LocalFalsificationLab/
+TQM.Tests/LocalFalsificationLab/
 
 # Scratch / exploratory code (local console runner against TQM.Core).
 temp/

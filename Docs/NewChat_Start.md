@@ -58,6 +58,14 @@ octave structure
 → occupation-weighted mode access
 → sector hierarchies
 
+## Latest Repo Sync
+
+Recent commits from the other machine:
+
+- `f8a4ded` VALID001 resolved the remaining SM observable gaps in the coverage record.
+- `8c9d707` updated the Coverage Audit page to match the newer validation state.
+- `e19c066` completed MONO007 referee-readiness cleanup and refreshed the coverage assets.
+
 ## Weak-Isospin Doublet Structure
 
 Status: DERIVED (symmetry origin)
@@ -210,6 +218,13 @@ Open Questions:
 | PMNS Matrix | QG167 | PMNS ORIGIN (θ12 = 33.35°; θ23 = 49.72°; θ13 = 8.34°; δ_ν = 66.4°; mean dev 1.5%) |
 | Weak Boson Masses | QG168 | MASS ORIGIN (v = (Σm+#doublets)·ln span = 254 GeV; MW = 80.1, MZ = 91.4; ρ = 1) |
 | Higgs Mass | QG169 | HIGGS ORIGIN (MH = σ_occ·(span/2) = 125.25 GeV, 0.003%; λ_H = λ₂·g₂/2; MH/MW 0.33%) |
+
+Weak-coupling scale note:
+
+- structural α_weak stays 3/95 at full activation;
+- the MZ-scale running value is better read as α_weak(89) = 3/89 ≈ 0.03371;
+- the apparent 0.0338 target is therefore a running/activation-point value, not a denominator-shift fit.
+- important caveat: 89 is not currently derived from the base primitives; the theory has the running law and the octave ladder, but no unique selection principle yet for the MZ stopping point.
 | Standard Model Audit | QG170 | COVERAGE AUDIT (48 quantities: 25 tested / 9 partial / 14 untested; 64% tested-only, 61.5% weighted) |
 | Muon g-2 | QG171 | G2 ORIGIN (a_μ = (α/2π)(1+λ₂/Σm) = 1.16644e-3, 0.045%; Δa_μ = (α/2π)³·span^(1/4) = 2.494e-9, 0.24%) |
 | Neutrino Masses | QG172 | MASS ORIGIN (Δm²21 = (1/Σ√m)²/(span/2) = 7.607e-5, 1.02%; Δm²31 = sin²θ_W/Σm = 2.44e-3, 0.71%; m2 = 8.72e-3, m3 = 4.94e-2 eV, Σmν = 0.058 eV) |
