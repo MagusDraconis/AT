@@ -379,6 +379,9 @@ LegacyDocs/
 *.aux
 *.out
 *.toc
+*.fls
+*.fdb_latexmk
+*.log
 
 # Local-only exploratory notes.
 Docs/AT_FutureAndIdeas.md

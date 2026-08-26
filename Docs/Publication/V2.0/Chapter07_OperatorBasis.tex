@@ -37,205 +37,128 @@ spectral projections by which the D96 spectrum is read, and through which all ob
 structure is organized.
 
 We establish that the operators are \emph{derived from the D96 spectrum} --- projections of
-its structure, not independent primitives \cite{c07:QG261,c07:QG262,c07:QG263}. The basis consists of
-four operators: \emph{Crowding} (degeneracy grouping), \emph{Compression} (octave banding),
-\emph{Beat} (frequency ratio), and \emph{Locking} (spectral gap). We establish the
-universality evidence across organized domains \cite{c07:QG300,c07:QG302,c07:QG304}, and the
-completeness of the four-operator basis \cite{c07:QG307,c07:QG308}. Throughout, the claim that no
-fifth operator exists is phrased \emph{as a search-scoped result} --- no fifth operator has
-been found in any searched domain --- and not as an existence proof, per the referee-safe
-wording of MONO007 \cite{c07:MONO007}. The honest adversarial and red-team results
-\cite{c07:QG309,c07:QG312} are reported as scoping the basis, not as contradictions.
-
-The results of this chapter are the canonical end-state of the operator program
-\cite{c07:QG260,c07:QG261,c07:QG262,c07:QG263}. Throughout we use only accepted canonical results and
-introduce no new physics and no speculation.
+its structure, not independent primitives
+\cite{c07:QG260,c07:QG261,c07:QG262,c07:QG263}. The basis consists of four operators:
+\emph{Crowding} (degeneracy grouping), \emph{Compression} (octave banding), \emph{Beat}
+(frequency ratio), and \emph{Locking} (spectral gap). We establish the universality
+evidence across organized domains \cite{c07:QG300,c07:QG302,c07:QG304} and the completeness of
+the four-operator basis \cite{c07:QG307,c07:QG308}: no fifth operator has been found in any
+searched domain --- a search-scoped result, not an existence proof, consistent with MONO007
+\cite{c07:MONO007}. The adversarial and red-team audits \cite{c07:QG309,c07:QG312} are reported
+as scoping the basis, not as contradictions.
 
 \section{Operators as Spectrum Projections}
 \label{c07:sec:projections}
 
-\begin{definition}[Spectral operator]
-\label{c07:def:operator}
-A \emph{spectral operator} is a projection of the D96 spectrum: a structural read that maps
-the spectrum onto a derived quantity. The operators are not new physical content; they are
-the reading instruments of the spectrum.
-\end{definition}
-
-\begin{theorem}[The operators are derived projections]
+\begin{theorem}[Spectral operators are derived projections]
 \label{c07:thm:operators-derived}
-The operators are derived from the D96 spectrum: every named quantity of the theory ---
-$\Sigma m$, $\Sigma\sqrt{m}$, $\Sigma m^2$, the occupancy moment, the span, the spectral
-gap --- is a verified projection of a spectral operator \cite{c07:QG261}.
+A \emph{spectral operator} is a projection of the D96 spectrum: a structural read mapping
+the spectrum onto a derived quantity --- not new physical content but the reading instrument
+of the spectrum. The operators are derived from the D96 spectrum: every named quantity of
+the theory --- $\Sigma m$, $\Sigma\sqrt{m}$, $\Sigma m^2$, the occupancy moment, the span,
+the spectral gap --- is a verified projection of a spectral operator \cite{c07:QG261}:
+$\Sigma m = \mathrm{MOMENT}_1\circ\mathrm{CROWDING}$, $\Sigma\sqrt{m} =
+\mathrm{MOMENT}_{1/2}\circ\mathrm{CROWDING}$, $\Sigma m^2 =
+\mathrm{MOMENT}_2\circ\mathrm{CROWDING}$, the occupancy moment a MOMENT$\circ$COMPRESSION
+read, the span a BEAT read, and the spectral gap a LOCKING read. Every derived quantity
+therefore passes through the operator layer, and by Chapter~\ref{c06:chap:d96}
+(Theorem~\ref{c06:thm:d96-derived}) the spectrum is itself derived: the operators are
+twice-removed from primitiveness, projections of a derived spectrum.
 \end{theorem}
-
-\begin{proof}
-The resonance-operator audit \cite{c07:QG261} establishes that the six named quantities are
-projections of deeper operators: $\Sigma m = \mathrm{MOMENT}_1\circ\mathrm{CROWDING}$,
-$\Sigma\sqrt{m} = \mathrm{MOMENT}_{1/2}\circ\mathrm{CROWDING}$,
-$\Sigma m^2 = \mathrm{MOMENT}_2\circ\mathrm{CROWDING}$, the occupancy moment is a
-MOMENT$\circ$COMPRESSION read, the span is a BEAT read, and the spectral gap is a LOCKING read.
-Hence every derived quantity passes through the operator layer --- the operators are the
-reading instruments of the spectrum, not independent inputs. By
-Chapter~\ref{c06:chap:d96} (Theorem~\ref{c06:thm:d96-derived}), the spectrum is itself derived;
-the operators are therefore twice-removed from primitiveness: projections of a derived
-spectrum.
-\end{proof}
 
 \begin{corollary}[Operators are not primitive]
 \label{c07:cor:operators-not-primitive}
 The operators are not primitives of the theory: they are projections of the D96 spectrum,
-which is itself the derived output of the actualization attractor.
+which is itself the derived output of the actualization attractor; no operator is an
+underivable input.
 \end{corollary}
 
-\begin{proof}
-By Theorem~\ref{c07:thm:operators-derived}, the operators are projections of the spectrum. By
-Chapter~\ref{c06:chap:d96} (Theorem~\ref{c06:thm:d96-derived}), the spectrum is the derived output
-of the attractor. Hence the operators inherit the derived status: they are reads of a
-derived structure, and no operator is an underivable input.
-\end{proof}
+The four operators are defined by their structural role. \emph{Crowding} is the degeneracy
+operator: the grouping of the spectrum into degenerate multiplicity classes, whose
+distribution is the multiplicity multiset $[42\times2,5,6]$. \emph{Compression} is the
+octave-banding operator: the grouping of the spectrum into octave bands, whose occupancy
+distribution is the octave occupancies. \emph{Beat} is the frequency-ratio operator: the
+ratio of the extremal modes of the spectrum, measuring the frequency extent. \emph{Locking}
+is the spectral-gap operator: the separation structure of the spectrum, measuring the gap
+between its distinct mode groups. The operator projections of the D96 spectrum
+\cite{c07:QG261} are summarized below.
+
+\begin{center}
+\begin{tabular}{lll}
+\hline
+Operator & Projects & Reads \\
+\hline
+Crowding & $\Sigma m=95$, $\Sigma\sqrt{m}=64.08$, $\Sigma m^2=229$ & degeneracy structure \\
+Compression & $\mathrm{occMom}=1900.25$ & octave occupancy \\
+Beat & $\mathrm{span}=6.40$ & frequency extent \\
+Locking & spectral gap $\lambda_2$ & separation structure \\
+\hline
+\end{tabular}
+\end{center}
 
 \section{Crowding}
 \label{c07:sec:crowding}
 
-\begin{definition}[Crowding]
-\label{c07:def:crowding}
-\emph{Crowding} is the degeneracy operator: the grouping of the spectrum into degenerate
-multiplicity classes, whose distribution is the multiplicity multiset
-$[42\times2,5,6]$.
-\end{definition}
-
 \begin{theorem}[Crowding projects the moments]
 \label{c07:thm:crowding-moments}
-Crowding generates the moment structure of the theory: the moments
-$\Sigma m$, $\Sigma\sqrt{m}$, $\Sigma m^2$ are the moment compositions of Crowding over the
-multiplicity multiset.
+Crowding is the degeneracy projection of the spectrum: it generates the moment ladder
+$\Sigma m = \mathrm{MOMENT}_1\circ\mathrm{CROWDING} = 95$, $\Sigma\sqrt{m} =
+\mathrm{MOMENT}_{1/2}\circ\mathrm{CROWDING} = 64.08$, and $\Sigma m^2 =
+\mathrm{MOMENT}_2\circ\mathrm{CROWDING} = 229$ over the multiplicity multiset
+$[42\times2,5,6]$, reading the grouping of equal eigenvalues into the multiplicity classes.
 \end{theorem}
 
 \begin{proof}
-The resonance-operator audit \cite{c07:QG261} establishes that
-$\Sigma m = \mathrm{MOMENT}_1\circ\mathrm{CROWDING} = 95$,
-$\Sigma\sqrt{m} = \mathrm{MOMENT}_{1/2}\circ\mathrm{CROWDING} = 64.08$, and
-$\Sigma m^2 = \mathrm{MOMENT}_2\circ\mathrm{CROWDING} = 229$, applied to the multiplicity
-multiset $[42\times2,5,6]$ (Chapter~\ref{c06:chap:d96},
-Theorem~\ref{c06:thm:multiplicity}). Hence Crowding is the degeneracy projection that generates
-the moment ladder of the spectrum.
-\end{proof}
-
-\begin{corollary}[Crowding reads the degeneracy structure]
-\label{c07:cor:crowding-degeneracy}
-Crowding is the read of the degeneracy structure of the spectrum: the grouping of equal
-eigenvalues into the multiplicity classes.
-\end{corollary}
-
-\begin{proof}
-By Definition~\ref{c07:def:crowding}, Crowding is the degeneracy grouping. By
-Theorem~\ref{c07:thm:crowding-moments}, its projections are the moment structure. Hence
-Crowding reads the degeneracy: it is the operator by which the multiplicity structure of the
-spectrum is measured.
+The resonance-operator audit \cite{c07:QG261} establishes these moment compositions
+(Chapter~\ref{c06:chap:d96}, Theorem~\ref{c06:thm:multiplicity}).
 \end{proof}
 
 \section{Compression}
 \label{c07:sec:compression}
 
-\begin{definition}[Compression]
-\label{c07:def:compression}
-\emph{Compression} is the octave-banding operator: the grouping of the spectrum into octave
-bands, whose occupancy distribution is the octave occupancies.
-\end{definition}
-
 \begin{theorem}[Compression projects the occupancy structure]
 \label{c07:thm:compression-occupancy}
-Compression generates the octave-occupation structure of the theory: the occupancy moment
-$\mathrm{occMom} = 1900.25$ is the MOMENT$\circ$COMPRESSION read over the octave occupancies.
+Compression is the octave-banding projection of the spectrum: it generates the occupancy
+moment $\mathrm{occMom} = 1900.25$ as the MOMENT$\circ$COMPRESSION read over the octave
+occupancies --- the grouping of modes into frequency octaves and the occupation of those
+bands.
 \end{theorem}
 
 \begin{proof}
-The resonance-operator audit \cite{c07:QG261} establishes that the occupancy moment is a
-MOMENT$\circ$COMPRESSION read: the octave occupancies of the spectrum, weighted by their squares
-and normalized by the lightest-octave occupancy, yield
-$\mathrm{occMom} = 1900.25$ (Chapter~\ref{c06:chap:d96}, Theorem~\ref{c06:thm:occmom}). Hence
-Compression is the octave-banding projection that generates the occupancy structure of the
-spectrum.
-\end{proof}
-
-\begin{corollary}[Compression reads the octave structure]
-\label{c07:cor:compression-octave}
-Compression is the read of the octave structure of the spectrum: the grouping of modes into
-frequency octaves and the occupation of those bands.
-\end{corollary}
-
-\begin{proof}
-By Definition~\ref{c07:def:compression}, Compression is the octave-banding operator. By
-Theorem~\ref{c07:thm:compression-occupancy}, its projections are the occupancy structure.
-Hence Compression reads the octave organization of the spectrum.
+The resonance-operator audit \cite{c07:QG261} establishes the occupancy moment: the octave
+occupancies, weighted by their squares and normalized by the lightest-octave occupancy,
+yield $\mathrm{occMom} = 1900.25$ (Chapter~\ref{c06:chap:d96},
+Theorem~\ref{c06:thm:occmom}).
 \end{proof}
 
 \section{Beat}
 \label{c07:sec:beat}
 
-\begin{definition}[Beat]
-\label{c07:def:beat}
-\emph{Beat} is the frequency-ratio operator: the ratio of the extremal modes of the
-spectrum, measuring the frequency extent.
-\end{definition}
-
 \begin{theorem}[Beat projects the span]
 \label{c07:thm:beat-span}
-Beat generates the span of the theory: the ratio
-$\mathrm{span} = \omega_{\max}/\omega_{\min} = 6.40$ is the BEAT read of the spectrum.
+Beat is the frequency-ratio projection of the spectrum: it generates the span
+$\mathrm{span} = \omega_{\max}/\omega_{\min} = 6.40$ as the BEAT read --- the ratio between
+the highest and lowest positive modes.
 \end{theorem}
 
 \begin{proof}
-The resonance-operator audit \cite{c07:QG261} establishes that the span is the BEAT projection:
-$\mathrm{span} = \omega_{\max}/\omega_{\min} = 6.40$
-(Chapter~\ref{c06:chap:d96}, Theorem~\ref{c06:thm:span}). Hence Beat is the frequency-ratio
-operator that generates the extent of the spectrum.
-\end{proof}
-
-\begin{corollary}[Beat reads the frequency extent]
-\label{c07:cor:beat-extent}
-Beat is the read of the frequency extent of the spectrum: the ratio between its highest and
-lowest positive modes.
-\end{corollary}
-
-\begin{proof}
-By Definition~\ref{c07:def:beat} and Theorem~\ref{c07:thm:beat-span}, Beat reads the span --- the
-ratio of the extremal modes. Hence Beat is the operator by which the frequency extent of the
-spectrum is measured.
+The resonance-operator audit \cite{c07:QG261} establishes the span as the BEAT projection
+(Chapter~\ref{c06:chap:d96}, Theorem~\ref{c06:thm:span}).
 \end{proof}
 
 \section{Locking}
 \label{c07:sec:locking}
 
-\begin{definition}[Locking]
-\label{c07:def:locking}
-\emph{Locking} is the spectral-gap operator: the separation structure of the spectrum,
-measuring the gap between its distinct mode groups.
-\end{definition}
-
 \begin{theorem}[Locking projects the spectral gap]
 \label{c07:thm:locking-gap}
-Locking generates the spectral-gap structure of the theory: the gap $\lambda_2$ of the
-spectrum is the LOCKING read.
+Locking is the spectral-gap projection of the spectrum: it generates the gap $\lambda_2$ as
+the LOCKING read --- the separation between the distinct mode groups, providing the
+spectral-gap constant used across the sectors of the theory.
 \end{theorem}
 
 \begin{proof}
-The resonance-operator audit \cite{c07:QG261} establishes that the spectral gap $\lambda_2$ is
-the LOCKING projection of the spectrum. The locking structure measures the separation of the
-distinct mode groups, providing the spectral-gap constant used across the sectors of the
-theory.
-\end{proof}
-
-\begin{corollary}[Locking reads the separation structure]
-\label{c07:cor:locking-separation}
-Locking is the read of the separation structure of the spectrum: the gaps between its
-distinct mode groups.
-\end{corollary}
-
-\begin{proof}
-By Definition~\ref{c07:def:locking} and Theorem~\ref{c07:thm:locking-gap}, Locking reads the
-spectral-gap structure --- the separation between distinct mode groups. Hence Locking is the
-operator by which the gap structure of the spectrum is measured.
+The resonance-operator audit \cite{c07:QG261} establishes the spectral gap $\lambda_2$ as
+the LOCKING projection of the spectrum.
 \end{proof}
 
 \section{Universality Evidence}
@@ -248,37 +171,20 @@ operators appear in the same structural role wherever an organized spectrum is r
 \end{theorem}
 
 \begin{proof}
-The operator-universality program establishes the evidence across domains. The
-operator-universality prediction \cite{c07:QG300} establishes the universality of the operator
-basis. The cross-domain universality audit \cite{c07:QG302} confirms the four operators appear
-across networks, language, music, DNA, software, finance, and other organized domains. The
-real-network universality audit \cite{c07:QG304} confirms the same operators on real-structure
-networks --- connectomes, protein networks, citation graphs, internet graphs, knowledge
-graphs. Hence the four operators recur as the structural read of organized spectra
-throughout, without being imposed.
+The operator-universality prediction \cite{c07:QG300} establishes the universality of the
+operator basis; the cross-domain audit \cite{c07:QG302} confirms the four operators appear
+across networks, language, music, DNA, software, finance, and other organized domains; and
+the real-network audit \cite{c07:QG304} confirms them on real-structure networks ---
+connectomes, protein networks, citation graphs, internet graphs, knowledge graphs. The four
+operators thus recur as the structural read of organized spectra throughout, without being
+imposed.
 \end{proof}
 
-\begin{lemma}[The operators are not trivial statistics]
-\label{c07:lem:operators-nontrivial}
-The operators are not trivial statistical artifacts: they discriminate organized systems
-from null and adversarial spectra.
-\end{lemma}
-
-\begin{proof}
-The null-spectrum and adversarial audits \cite{c07:QG309,c07:QG312} establish the discriminating
-power. The null-spectrum audit shows that random spectra fail the operator basis at the
-quantitative level, while organized systems carry it. The adversarial audit shows that
-fabricated spectra can trigger the binary presence conditions but do not carry the deeper
-organization content (the locks). Hence the operators are a discriminating read of
-organization, not a trivial statistical artifact.
-\end{proof}
-
-\begin{remark}[Scope disclosure]
-Consistent with MONO007 \cite{c07:MONO007}, the universality claim is disclosed as an
-evidence-based result over the tested domain set --- an open-ended claim, not an existence
-proof. The operators have been found universal in every organized domain searched; the
-claim does not assert that no counterexample exists in an unsearched domain.
-\end{remark}
+The operators are not trivial statistical artifacts: the null-spectrum and adversarial
+audits \cite{c07:QG309,c07:QG312} establish that random spectra fail the operator basis at the
+quantitative level while organized systems carry it, and that fabricated spectra can trigger
+the binary presence conditions but do not carry the deeper organization content (the locks).
+Hence the operators are a discriminating read of organization, not a trivial artifact.
 
 \section{Operator Completeness}
 \label{c07:sec:completeness}
@@ -292,10 +198,10 @@ the spectrum.
 
 \begin{proof}
 The operator-necessity audit \cite{c07:QG308} establishes that each of the four operators is
-indispensable: removing any one loses derived content (each operator projects a distinct
-structural feature of the spectrum --- degeneracy, octave organization, frequency extent,
-spectral gap). Hence the four operators are each necessary, and together they form the
-basis of the spectrum's reading structure.
+indispensable: removing any one loses derived content --- each projects a distinct
+structural feature (degeneracy, octave organization, frequency extent, spectral gap). Hence
+the four operators are each necessary and together form the basis of the spectrum's reading
+structure.
 \end{proof}
 
 \begin{theorem}[No fifth operator found]
@@ -308,43 +214,14 @@ read-out) returned no genuine fifth spectral operator.
 \begin{proof}
 The fifth-operator search \cite{c07:QG307} examined candidate fifth operators from unexplored
 domains --- phase/orientation structure, order/sequence structure, and others --- and found
-that each candidate either reduces to a composition of the existing operators or is not a
-spectral read of the frequency distribution (e.g.\ the order structure is the network input,
-not a spectral read). Hence no genuine fifth operator has been found. This is a
-search-scoped result, not an existence proof: no fifth operator has been found in any
-searched domain.
-\end{proof}
-
-\begin{corollary}[The basis is four, search-scoped]
-\label{c07:cor:four-search-scoped}
-The operator basis of the theory is the set {Crowding, Compression, Beat, Locking}; the
-statement that there is no fifth operator is established as a search-scoped result, not an
-existence proof.
-\end{corollary}
-
-\begin{proof}
-The necessity of the four is established by Theorem~\ref{c07:thm:four-operators}; the
-non-existence of a fifth is established as a search-scoped result by
-Theorem~\ref{c07:thm:no-fifth}. The referee-safe phrasing --- "no fifth operator found in any
-searched domain" --- is adopted throughout, consistent with MONO007 \cite{c07:MONO007}.
+that each either reduces to a composition of the existing operators or is not a spectral
+read of the frequency distribution (e.g.\ the order structure is the network input, not a
+spectral read). Hence no genuine fifth operator has been found, and by
+Theorem~\ref{c07:thm:four-operators} the four-operator basis is justified.
 \end{proof}
 
 \section{Consequences}
 \label{c07:sec:operator-consequences}
-
-\begin{lemma}[The operators connect spectrum to physics]
-\label{c07:lem:operators-to-physics}
-The operator basis is the bridge from the D96 spectrum to the physics sectors: every
-observable is a read of the spectrum through the operators.
-\end{lemma}
-
-\begin{proof}
-The resonance-operator audit \cite{c07:QG261} and the same-operator-sectors audit \cite{c07:QG262}
-establish that the sectors of physics draw on the same operator layer: every sector reads
-the spectrum through the operators. By Chapter~\ref{c03:chap:actualization}
-(Theorem~\ref{c03:thm:resonance-readout}), the sectors are projection classes over the operator
-layer. Hence the operators connect the spectrum to the physics sectors.
-\end{proof}
 
 \begin{theorem}[The operator layer is single]
 \label{c07:thm:single-operator-layer}
@@ -353,56 +230,38 @@ by all sectors.
 \end{theorem}
 
 \begin{proof}
-The single-resonance-dynamics audit \cite{c07:QG263} establishes that there is one resonance
-dynamics underlying the operator layer. The same-operator-sectors audit \cite{c07:QG262}
+The single-resonance-dynamics audit \cite{c07:QG263} establishes one resonance dynamics
+underlying the operator layer, and the same-operator-sectors audit \cite{c07:QG262}
 establishes that no operator is sector-exclusive: every sector reads the same operators.
-Hence the operator layer is single --- one basis, read by all sectors --- and the sector
+Hence the operator layer is single --- one basis, read by all sectors --- and sector
 differences are differences of role, not of operator.
 \end{proof}
 
-\begin{corollary}[Organization is a read of the operators]
-\label{c07:cor:organization-read}
-The organization structure of the theory is a read of the operator basis over the D96
-spectrum: the organizational quantities are operator projections.
-\end{corollary}
-
-\begin{proof}
-By Theorem~\ref{c07:thm:operators-derived}, all named quantities are operator projections. By
-Chapter~\ref{c06:chap:d96} (Theorem~\ref{c06:thm:organization-derived}), the organization constants
-are derived from the spectrum. Hence organization is the operator read of the spectrum ---
-the organizational structure is the operator structure.
-\end{proof}
+The operator basis is the bridge from the D96 spectrum to the physics sectors: the
+resonance-operator audit \cite{c07:QG261} and the same-operator-sectors audit \cite{c07:QG262}
+establish that every sector draws on the same operator layer, and by
+Chapter~\ref{c03:chap:actualization} (Theorem~\ref{c03:thm:resonance-readout}) the sectors are
+projection classes over that layer. The organization structure is likewise a read of the
+operator basis: by Theorem~\ref{c07:thm:operators-derived} all named quantities are operator
+projections, and by Chapter~\ref{c06:chap:d96} (Theorem~\ref{c06:thm:organization-derived}) the
+organization constants are derived from the spectrum --- the organizational structure is the
+operator structure.
 
 \section{Summary}
 \label{c07:sec:operators-summary}
 
-This chapter has established the operator basis of the theory. We have proved:
-
-\begin{enumerate}
-\item \textbf{Operators as projections} (Theorem~\ref{c07:thm:operators-derived},
-Corollary~\ref{c07:cor:operators-not-primitive}): the operators are derived projections of the
-D96 spectrum, not primitives;
-\item \textbf{Crowding} (Theorem~\ref{c07:thm:crowding-moments},
-Corollary~\ref{c07:cor:crowding-degeneracy}): the degeneracy operator projects the moments;
-\item \textbf{Compression} (Theorem~\ref{c07:thm:compression-occupancy},
-Corollary~\ref{c07:cor:compression-octave}): the octave-banding operator projects the occupancy
-structure;
-\item \textbf{Beat} (Theorem~\ref{c07:thm:beat-span}, Corollary~\ref{c07:cor:beat-extent}): the
-frequency-ratio operator projects the span;
-\item \textbf{Locking} (Theorem~\ref{c07:thm:locking-gap},
-Corollary~\ref{c07:cor:locking-separation}): the spectral-gap operator projects the separation
-structure;
-\item \textbf{Universality} (Theorem~\ref{c07:thm:operators-universal},
-Lemma~\ref{c07:lem:operators-nontrivial}): the operators are universal across organized systems
-and not trivial statistics;
-\item \textbf{Completeness} (Theorem~\ref{c07:thm:four-operators},
-Theorem~\ref{c07:thm:no-fifth}, Corollary~\ref{c07:cor:four-search-scoped}): the four-operator
-basis is justified, and no fifth operator has been found in any searched domain;
-\item \textbf{Consequences} (Lemma~\ref{c07:lem:operators-to-physics},
-Theorem~\ref{c07:thm:single-operator-layer}, Corollary~\ref{c07:cor:organization-read}): the
-operators bridge spectrum to physics, the operator layer is single, and organization is a
-read of the operators.
-\end{enumerate}
+This chapter has established the operator basis of the theory: the operators are derived
+projections of the D96 spectrum, not primitives (Theorem~\ref{c07:thm:operators-derived},
+Corollary~\ref{c07:cor:operators-not-primitive}), each projecting a distinct read ---
+Crowding the moments (Theorem~\ref{c07:thm:crowding-moments}), Compression the occupancy
+structure (Theorem~\ref{c07:thm:compression-occupancy}), Beat the span
+(Theorem~\ref{c07:thm:beat-span}), and Locking the spectral gap
+(Theorem~\ref{c07:thm:locking-gap}). The four-operator basis is justified
+(Theorem~\ref{c07:thm:four-operators}) with no fifth operator found in any searched domain
+(Theorem~\ref{c07:thm:no-fifth}); the operators are universal across organized systems and
+not trivial statistics (Theorem~\ref{c07:thm:operators-universal}); and the operator layer
+is single, bridging the spectrum to physics, with organization a read of the operators
+(Theorem~\ref{c07:thm:single-operator-layer}).
 
 The operator basis of the theory is therefore the derived reading structure of the D96
 spectrum: Crowding (degeneracy), Compression (octaves), Beat (extent), and Locking (gaps),
