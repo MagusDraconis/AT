@@ -2,7 +2,7 @@
 
 **Single source of truth for all TQM-QG physics validation.**
 
-- Last updated: 2026-08-25
+- Last updated: 2026-08-26
 - Total phases: 334
 - Tested: 212 | Partial: 12 | Untested: 12 | Audit: 98
 - Weighted coverage: 72.6%

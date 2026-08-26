@@ -2,7 +2,7 @@
   "meta": {
     "file": "Docs/TQMQG_PhysicsCoverage.md|json",
     "purpose": "single source of truth for all TQM-QG physics validation",
-    "last_updated": "2026-08-25",
+    "last_updated": "2026-08-26",
     "phases_count": 334,
     "note": "Historical entries are never removed. Additive updates only."
   },

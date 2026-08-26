@@ -1,4 +1,6 @@
 @page "/coverage-audit"
+@using TQM.App.Services
+@inject ValidationDataService ValidationDataService
 
 <PageTitle>Coverage Audit · TQM</PageTitle>
 
@@ -166,7 +168,7 @@
                     derivation record; independent experimental discrimination is needed to confirm any
                     single result.</li>
                 <li><strong>Deviation spread.</strong> Some "tested" quantities match within 0.01%, while
-                    others carry deviations up to a few percent (e.g. τ mass 2.9%, α_weak 6.6%) — coverage
+                    others carry deviations up to a few percent (e.g. τ mass 2.9%, α_weak @_alphaWeakDev) — coverage
                     counts the reach, not the accuracy of each match.</li>
                 <li><strong>Falsifiable predictions remain untested.</strong> The ~106 GeV resonance
                     (QG132) is a sharp, currently-testable prediction that has not yet been observed; a
@@ -184,6 +186,7 @@
 
 @code {
     private readonly IReadOnlyList<AuditItemRow> _all = BuildItems();
+    private string _alphaWeakDev = "—";
 
     private IReadOnlyList<AuditItemRow> _testedItems;
     private IReadOnlyList<AuditItemRow> _partialItems;
@@ -195,6 +198,10 @@
 
     protected override void OnInitialized()
     {
+        _alphaWeakDev = _all.FirstOrDefault(x => x.Name == "α_weak") is { } alphaWeak && alphaWeak.DeviationPercent.HasValue
+            ? (alphaWeak.DeviationPercent.Value * 100).ToString("F1", System.Globalization.CultureInfo.InvariantCulture) + "%"
+            : "—";
+
         _testedItems = _all.Where(x => x.Status == CoverageStatus.Tested).ToList();
         _partialItems = _all.Where(x => x.Status == CoverageStatus.Partial).ToList();
         _untestedItems = _all.Where(x => x.Status == CoverageStatus.Untested).ToList();
