@@ -1,0 +1,320 @@
+% ======================================================================
+%  TQM-MONO100 — Chapter 1: The Difference
+%  Canonical Monograph (v2.0) · The Quantum Model:
+%  Structure, Complexity, and Random Actualization
+%
+%  Status: COMPLETE — PASS-READY (MONO007 referee-ready architecture)
+%  Inputs: TQMQG_CanonicalMonograph.md, TQMQG_Mono007RefereeReadiness.md
+%  Method: assembly only — canonical results only, no new physics, no speculation
+%  Citations: QG278 (fundamental boundary), QG279 (true fundamental boundary),
+%             QG268 (count conservation), QG282 (closure principle),
+%             QG286 (difference duality), QG292 (minimal foundation),
+%             QG301 (duality complete), MONO006 (actualization derived)
+%
+%  Usage: \input{Chapter01_Difference.tex} after the preamble that defines
+%         the theorem environments below (or include via the master file).
+% ======================================================================
+
+% ---- Theorem environments (define in the master preamble if not present) ----
+% \newtheorem{definition}{Definition}[chapter]
+% \newtheorem{lemma}[definition]{Lemma}
+% \newtheorem{theorem}[definition]{Theorem}
+% \newtheorem{corollary}[definition]{Corollary}
+% \newtheorem{remark}[definition]{Remark}
+
+\chapter{The Difference}
+\label{chap:difference}
+
+\section{Introduction}
+\label{sec:difference-introduction}
+
+The Quantum Model (TQM) is a deterministic theory of structure, complexity, and random
+actualization. Its central claim is that the totality of observable physics can be derived
+from a single primitive notion --- \emph{Difference} --- together with a tensor reference
+metric $\eta$, through the canonical hierarchy
+\begin{equation}
+\label{eq:canonical-core}
+\text{Difference}\;\longrightarrow\;\text{Actualization}\;\longrightarrow\;\text{Inevitable Spectrum}\;\longrightarrow\;\text{Physics}.
+\end{equation}
+
+This chapter develops the first member of that hierarchy. We establish, with formal
+precision, that Difference is the sole irreducible primitive of the theory; that its status
+is that of a \emph{fundamental boundary} --- the deepest notion, which cannot itself be
+derived and whose own boundary is characterized by the Closure Principle
+\cite{QG278,QG282}; and that the two great physical sectors of the theory, the scalar
+counting measure $\rho$ and the tensor field $\psi$, are not independent primitives but the
+\emph{trace and traceless faces of the one Difference} \cite{QG286,QG301}.
+
+The results of this chapter are not new. They are the canonical end-state of the QG278--QG318
+program, assembled here in a monograph form suitable for archival publication. Throughout, we
+adhere to the accepted derivation record and introduce no new physics and no speculation.
+
+\section{Primitive Status}
+\label{sec:primitive-status}
+
+\begin{definition}[Difference]
+\label{def:difference}
+\emph{Difference} is the primitive notion of the theory: the counting difference from a
+uniform background, whose count-conservation law is its \emph{definitional identity}
+\cite{QG268}. A Q-event is a unit of Difference.
+\end{definition}
+
+\begin{definition}[Tensor reference metric]
+\label{def:eta}
+\emph{$\eta$} is the tensor reference metric: the conformal reference with respect to which
+the metric takes the form $g = \rho^{2/d}\,\eta$, and with respect to which the Weyl content
+$\psi$ is defined \cite{QG286}.
+\end{definition}
+
+\begin{theorem}[Minimal primitive set]
+\label{thm:minimal-primitives}
+The minimal set of irreducible primitives of TQM is $\{\text{Difference},\eta\}$: exactly
+two items. No proper subset supports the derived hierarchy \eqref{eq:canonical-core}, and no
+further reduction is possible.
+\end{theorem}
+
+\begin{proof}
+The minimality of $\{\text{Difference},\eta\}$ is established by the foundation stress test
+\cite{QG292}. Removing Difference collapses \emph{all} five layers of the theory
+(actualization, conservation, resonance, spectrum, physics), because count conservation is the
+definitional identity of the primitive: without a unit there is no count, without a count no
+network, without a network no spectrum, and without a spectrum no physics. Removing $\eta$
+leaves all five layers intact as a \emph{scalar} readout --- masses, couplings, mixings,
+cosmological fractions, and spectral observables are all $\rho$-face reads --- and destroys
+only the tensor sub-sector, because $\psi$ is defined against $\eta$. Hence Difference is
+necessary for the whole hierarchy and $\eta$ is necessary precisely for the tensor content;
+neither is derivable from the other, and together they form the irreducible pair.
+\end{proof}
+
+\begin{corollary}[Actualization is not a primitive]
+\label{cor:actualization-derived}
+Actualization is \emph{not} a primitive. It is Difference's own count-producing process.
+\end{corollary}
+
+\begin{proof}
+By the same removal test \cite{QG292,MONO006}, Actualization fails when Difference is removed
+(it needs the definitional unit) and survives when $\eta$ is removed (counting needs no metric
+reference). It is therefore neither an independent primitive nor a function of
+$\{\text{Difference},\eta\}$ in the tensor sense; it is the dynamical face of the one
+primitive. Its fixed point is the closure $N=96$ \cite{QG282}.
+\end{proof}
+
+\begin{remark}
+The canonical core \eqref{eq:canonical-core} is therefore read: \emph{Difference} (the
+primitive) produces \emph{Actualization} (its derived process), which converges to the
+\emph{Inevitable Spectrum} (the fixed point), from which \emph{Physics} (all observable
+sectors) emerges. Only the first member and the reference metric are primitives.
+\end{remark}
+
+\section{Difference as Fundamental Boundary}
+\label{sec:fundamental-boundary}
+
+\begin{definition}[Fundamental boundary]
+\label{def:boundary}
+A \emph{fundamental boundary} is a notion that (i) is irreducible --- no deeper notion
+explains it; (ii) supports the entire derived hierarchy; and (iii) is itself bounded only by
+its own fixed point, not by any imported assumption.
+\end{definition}
+
+\begin{theorem}[Difference is the fundamental boundary]
+\label{thm:fundamental-boundary}
+Difference is the fundamental boundary of TQM.
+\end{theorem}
+
+\begin{proof}
+The boundary audits \cite{QG278,QG279} establish the three criteria. (i) \emph{Irreducible:}
+the search for a deeper primitive terminates at Difference; attempts to redefine it as an
+artifact of language fail, and it is declared a \emph{true} fundamental boundary. (ii)
+\emph{Support:} by Theorem~\ref{thm:minimal-primitives}, removing Difference collapses every
+layer --- it is the root of the entire derivation graph. (iii) \emph{Self-bounded:} the
+boundary of Difference is not imported but derived --- it is the fixed point $N=96$ of its own
+actualization process, per the Closure Principle \cite{QG282}. Hence Difference satisfies the
+three defining properties of a fundamental boundary.
+\end{proof}
+
+\begin{lemma}[Boundary is fixed point]
+\label{lem:boundary-fixed-point}
+The boundary of the theory is the stable fixed point of the actualization process: the
+topology saturates at zero residual link growth, and every initial pattern converges to the
+same final geometry \cite{QG282}.
+\end{lemma}
+
+\begin{proof}
+The actualization dynamics has a self-reinforcing feedback (activity to links to activity)
+that is bounded by network capacity; positive feedback therefore saturates at the stable
+fixed point, giving zero residual link growth and a content-independent final geometry
+\cite{QG282}. The boundary is the closure of this dynamics.
+\end{proof}
+
+\section{Difference Duality ($\rho$ and $\psi$)}
+\label{sec:duality}
+
+\begin{definition}[The two faces]
+\label{def:two-faces}
+Let $A_{ij}$ be the rank-2 object representing the difference structure (the connectivity /
+the stress / the difference). Its irreducible decomposition is
+\begin{equation}
+\label{eq:decomposition}
+A_{ij} \;=\; \underbrace{\frac{1}{d}\,\mathrm{Tr}(A)\,\delta_{ij}}_{\text{trace: } \rho}
+\;+\;\underbrace{A_{ij}-\frac{1}{d}\,\mathrm{Tr}(A)\,\delta_{ij}}_{\text{traceless: } \psi}.
+\end{equation}
+At $d=3$, $A_{ij}$ has $d(d+1)/2=6$ components: one trace component ($\rho$, the scalar) and
+five traceless components ($\psi$, the tensor, of which two are the transverse-traceless
+polarizations) \cite{QG286}.
+\end{definition}
+
+\begin{theorem}[Difference duality]
+\label{thm:duality}
+The scalar counting measure $\rho$ and the tensor field $\psi$ are the trace and traceless
+faces of the \emph{one} Difference. They are not independent primitives; each is a projection
+of the same rank-2 difference structure.
+\end{theorem}
+
+\begin{proof}
+$\rho$ is the scalar counting measure: the normalized count share $|\psi|^2=\rho$
+\cite{QG216}, the \emph{isotropic} difference from the uniform background --- the
+\emph{count} difference. $\psi$ is the tensor field: the spin-2 Weyl content \cite{QG285},
+the \emph{anisotropic} difference from conformal flatness --- the \emph{orientation}
+difference. By the rank-2 decomposition theorem \eqref{eq:decomposition}, the trace and the
+traceless part are determined by $A_{ij}$; neither is an independent input. Hence $\rho$ and
+$\psi$ are dual projections of the same Difference \cite{QG286}.
+\end{proof}
+
+\begin{corollary}[Duality is invariant]
+\label{cor:duality-invariant}
+The reinterpretation of the theory through the duality
+$\text{Difference}\longrightarrow\{\rho,\psi\}$ changes \emph{meaning} without changing any
+\emph{number}: every frozen prediction is reproduced exactly \cite{QG301}.
+\end{corollary}
+
+\begin{proof}
+The post-duality invariance audit recomputes every established prediction through the
+reduced hierarchy and finds each unchanged: no formula is retuned and no result is lost
+\cite{QG301}. The duality is therefore a reinterpretation of content, not a modification of
+the derived mathematics.
+\end{proof}
+
+\begin{remark}[$\rho$ needs no reference; $\psi$ does]
+The scalar face $\rho$ is defined without reference to $\eta$; the tensor face $\psi$ is
+defined \emph{against} $\eta$ (conformal flatness). This asymmetry is the reason
+Theorem~\ref{thm:minimal-primitives} holds: $\eta$ is necessary exactly for the tensor
+sub-sector.
+\end{remark}
+
+\section{Relation to Closure}
+\label{sec:closure}
+
+\begin{theorem}[Closure Principle]
+\label{thm:closure}
+The boundary of the theory is the closure of Difference's own dynamics: the primitive is the
+\emph{process}, and the boundary is its \emph{fixed point}. The closure is
+\emph{derived}, not primitive \cite{QG282}.
+\end{theorem}
+
+\begin{proof}
+The origin of the boundary is the $N=96$ attractor: the observable sector is the converged
+attractor of the actualization dynamics, with topology saturation and content-independent
+convergence (Lemma~\ref{lem:boundary-fixed-point}). The boundary is therefore not an
+imported cut-off but the stable fixed point of the process itself; the closure principle
+states exactly this --- the process converges, the boundary is its closure \cite{QG282}.
+\end{proof}
+
+\begin{corollary}[Boundary characterizes, does not derive]
+\label{cor:closure-characterizes}
+The Closure Principle \emph{characterizes} the fundamental boundary; it does not \emph{derive}
+the primitive Difference.
+\end{corollary}
+
+\begin{proof}
+Difference is the primitive: by Definition~\ref{def:difference} its count-conservation law
+is its definitional identity, and by Theorem~\ref{thm:fundamental-boundary} it is
+irreducible. The Closure Principle describes how Difference's own dynamics closes at $N=96$;
+it presupposes the process, hence the primitive, and cannot be a derivation of it. This is
+the referee-safe reading adopted by the canonical monograph \cite{MONO007}.
+\end{proof}
+
+\section{Consequences}
+\label{sec:consequences}
+
+We collect the immediate formal consequences of the foregoing.
+
+\begin{lemma}[One primitive, two faces, one hierarchy]
+\label{lem:consequence-1}
+The entire observable content of the theory is carried by the two faces of the one Difference
+through a single canonical hierarchy: the scalar face feeds the full spectrum of
+observables; the tensor face feeds the gravitational (Weyl) sector; both are projections of
+the same primitive \cite{QG286,QG301}.
+\end{lemma}
+
+\begin{theorem}[Spectrum is inevitable]
+\label{thm:spectrum-inevitable}
+The D96 spectrum is the inevitable output of the actualization attractor --- the Laplacian
+eigenspectrum of the converged network --- and not an additional primitive \cite{QG295}.
+\end{theorem}
+
+\begin{proof}
+The spectrum is a deterministic function of the converged network: the $95$ positive modes
+are the graph-Laplacian eigenvalues of the attractor, the zero mode is the background, and no
+choice enters. The spectrum carries no independent input; it is the output of the process
+whose primitive is Difference \cite{QG295,QG282}.
+\end{proof}
+
+\begin{corollary}[Canonical core]
+\label{cor:core}
+The minimal hierarchy
+\[
+\text{Difference}\;\longrightarrow\;\text{Actualization}\;\longrightarrow\;\text{Inevitable Spectrum}\;\longrightarrow\;\text{Physics}
+\]
+is complete: every intermediate layer is derivable from the primitives and the attractor, and
+no further primitive is required \cite{QG292,QG294}.
+\end{corollary}
+
+\begin{remark}[Referee-safe completeness]
+Where the monograph claims completeness, it is understood in the qualified sense: every
+\emph{observable} is derived from the canonical hierarchy; the standard-model
+\emph{Lagrangian} and its dynamics are \emph{hosted} --- a boundary, not a derivation gap
+\cite{MONO007}.
+\end{remark}
+
+\section{Summary}
+\label{sec:summary}
+
+This chapter has established the first member of the canonical architecture. We have proved:
+
+\begin{enumerate}
+\item \textbf{Primitive status} (Theorem~\ref{thm:minimal-primitives}): the minimal primitive
+set is $\{\text{Difference},\eta\}$, and Actualization is derived from Difference
+(Corollary~\ref{cor:actualization-derived}).
+\item \textbf{Fundamental boundary} (Theorem~\ref{thm:fundamental-boundary}): Difference is
+irreducible, supports the whole hierarchy, and is self-bounded by its own fixed point.
+\item \textbf{The duality} (Theorem~\ref{thm:duality}): $\rho$ and $\psi$ are the trace and
+traceless faces of the one Difference; the reinterpretation is invariant
+(Corollary~\ref{cor:duality-invariant}).
+\item \textbf{Closure} (Theorem~\ref{thm:closure}): the boundary is the fixed point of
+Difference's own dynamics, characterizing rather than deriving the primitive
+(Corollary~\ref{cor:closure-characterizes}).
+\item \textbf{Consequences} (Theorem~\ref{thm:spectrum-inevitable},
+Corollary~\ref{cor:core}): the spectrum is inevitable, and the canonical core is complete.
+\end{enumerate}
+
+The Difference is therefore not an unexplained name but a precise object: the counting
+difference whose conservation is its identity, whose dynamics closes at $N=96$, and whose two
+faces --- the scalar measure $\rho$ and the tensor field $\psi$ --- generate, respectively,
+the spectral readout of all physics and the gravitational content of the theory. All further
+chapters of this monograph derive from the structure established here.
+
+\begin{thebibliography}{99}
+\bibitem{QG278} TQM-QG Phase 278, \emph{Fundamental Boundary Audit}, Docs/Research.
+\bibitem{QG279} TQM-QG Phase 279, \emph{Boundary Legitimacy Audit}, Docs/Research.
+\bibitem{QG268} TQM-QG Phase 268, \emph{Count Conservation Origin}, Docs/Research.
+\bibitem{QG282} TQM-QG Phase 282, \emph{Boundary Origin Audit} (Closure Principle), Docs/Research.
+\bibitem{QG286} TQM-QG Phase 286, \emph{Difference Duality Audit}, Docs/Research.
+\bibitem{QG292} TQM-QG Phase 292, \emph{Foundation Stress Test}, Docs/Research.
+\bibitem{QG294} TQM-QG Phase 294, \emph{Minimal Theory Audit}, Docs/Research.
+\bibitem{QG295} TQM-QG Phase 295, \emph{Spectrum Necessity Audit}, Docs/Research.
+\bibitem{QG301} TQM-QG Phase 301, \emph{Duality Prediction Audit}, Docs/Research.
+\bibitem{QG216} TQM-QG Phase 216, \emph{Quantum Amplitude Origin}, Docs/Research.
+\bibitem{QG285} TQM-QG Phase 285, \emph{Psi Reinterpretation Audit}, Docs/Research.
+\bibitem{MONO006} TQM-MONO006, \emph{A01 Actualization Origin Audit}, Docs/Zenodo/Monograph.
+\bibitem{MONO007} TQM-MONO007, \emph{Referee-Readiness Resolution}, Docs/Zenodo/Monograph.
+\end{thebibliography}
