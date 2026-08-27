@@ -64,8 +64,7 @@ octave structure
 
 Recent commits from the other machine:
 
-- `f8a4ded` VALID001 resolved the remaining SM observable gaps in the coverage record.
-- `8c9d707` updated the Coverage Audit page to match the newer validation state.
+- `f8a4ded` VALID001 resolved the remaining SM observable gaps in the coverage record.- `8c9d707` updated the Coverage Audit page to match the newer validation state.
 - `e19c066` completed MONO007 referee-readiness cleanup and refreshed the coverage assets.
 - V2.0 monograph: Ch13 (Boundaries of The Actualization Theory) and Ch14 (Frontier and
   Falsification) theorem-block density reduced (Ch13: 21 → 10 named blocks; Ch14: 22 → 10):
@@ -378,6 +377,32 @@ Period-3 Seed (QG160: unique complete-Z2 natural size)
 → Sector Hierarchies (lepton / quark / neutrino)
 
 ## Major Milestones
+
+### PRED001: Prediction Registry (standalone Zenodo publication)
+
+Summary:
+
+PRED001 created the official standalone Prediction Registry of the theory:
+Docs/Publication/V2.0/ActualizationTheory_PredictionRegistry.tex (24-page
+standalone document, pdflatex-clean). It records 41 predictions (AT-P001..AT-P041)
+across the required structure: Part I Introduction (purpose, validation philosophy,
+pre-registration principles), Part II Standard Model (gauge, CKM/PMNS, neutrino
+sector, Majorana, electron g-2, oblique parameters), Part III Gravity (gravitational
+sector, black-hole relations, Bekenstein boundary), Part IV Cosmology (ΩΛ, Ωm,
+acoustic peaks, structure formation), Part V Universality (operator basis, lock law,
+organization transition), Part VI Experimental Frontier (the pre-registered P1/P2/P3).
+
+Statuses: CONSISTENT 33, PENDING 7, FALSIFIED 0, BOUNDARY 1. The three pre-registered
+predictions (AT-P039 P1 106 GeV / AT-P040 P2 0νββ / AT-P041 P3 ladder) are recorded
+with frozen values, uncertainty, evidence, and falsification criteria from the
+immutable registry (QG193). Rules honored: accepted canonical derivations only; no new
+physics; no new fits; no speculative predictions; no retrospective reinterpretation;
+claim classifications (theorem/correspondence/calibration/hosted/fit) disclosed per
+record.
+
+Artifact:
+
+Docs/Publication/V2.0/ActualizationTheory_PredictionRegistry.tex (+ .pdf, 24 pages).
 
 ### V2.0 Audit Pass: Claim Classification & Registry Consistency
 

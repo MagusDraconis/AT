@@ -1,0 +1,1042 @@
+% ======================================================================
+%  PRED001 — The Actualization Theory: Prediction Registry
+%  A Reconstruction of Physics from Difference, Actualization and Spectrum
+%
+%  Standalone publication-grade document for Zenodo.
+%
+%  Status: COMPLETE — canonical-derivation registry
+%  Method: assembly only — no new physics, no new derivations, no new fits
+%  Inputs: canonical monograph V2.0 (Ch1-14) and the claim-classification
+%          registry (ATQG_ClaimClassificationRegistry.md), the immutable
+%          prediction registry (ATQG_Predictions.md, QG193) and the
+%          prediction-outcome dashboard (ATQG_PredictionOutcomes.md, QG202).
+%
+%  Build: pdflatex ActualizationTheory_PredictionRegistry.tex (twice)
+%  Rules: accepted canonical derivations only; no new physics; no new fits;
+%         no speculative predictions; no retrospective reinterpretation.
+% ======================================================================
+
+\documentclass[11pt,a4paper]{article}
+
+% ---- Fonts and encoding ------------------------------------------------
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+
+% ---- Mathematics --------------------------------------------------------
+\usepackage{amsmath,amssymb}
+
+% ---- Links and colors ----------------------------------------------------
+\usepackage[hidelinks]{hyperref}
+\usepackage{xcolor}
+
+% ---- Page geometry --------------------------------------------------------
+\usepackage[a4paper,margin=2.5cm]{geometry}
+\usepackage{setspace}
+\onehalfspacing
+
+% ---- Header/footer --------------------------------------------------------
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small The Actualization Theory --- Prediction Registry}
+\fancyhead[R]{\small Version 1.0}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+
+% ---- Table of contents depth ---------------------------------------------
+\setcounter{tocdepth}{2}
+
+% ---- Prediction record environment ---------------------------------------
+% \predstart{ID}{STATUS} opens a record; \pfield{Label}{Content} fills a
+% labelled line. Records are separated by rules and may span pages.
+\newcommand{\predstart}[2]{%
+  \par\medskip\noindent\hrule\par\smallskip
+  \noindent{\large\bfseries #1}\hfill{\bfseries Status: #2}\par\smallskip
+}
+\newcommand{\pfield}[2]{%
+  \noindent\textbf{#1:}~#2\par\smallskip
+}
+
+% ---- Canonical D96 constants (declared once, used throughout) ------------
+\newcommand{\Sigmam}{95}
+\newcommand{\SigmaSqrtm}{64.08}
+\newcommand{\SigmaMtwo}{229}
+\newcommand{\occMom}{1900.25}
+\newcommand{\Dspan}{6.40}
+\newcommand{\occZero}{4}
+\newcommand{\occTwo}{87}
+
+% ======================================================================
+\begin{document}
+
+% ---- Title ----------------------------------------------------------------
+\thispagestyle{empty}
+\begin{center}
+  \vspace*{1.5cm}
+  {\Huge\bfseries The Actualization Theory}\\[0.6em]
+  {\LARGE A Reconstruction of Physics from\\ Difference, Actualization and Spectrum}\\[1.2em]
+  {\LARGE\bfseries Prediction Registry}\\[2.2em]
+  {\Large Fabrice Wieser}\\[0.5em]
+  {\small Independent Researcher}\\[0.3em]
+  {\small Senior Software Engineer}\\[0.3em]
+  {\small \url{https://github.com/MagusDraconis/AT}}\\[2.0em]
+  {\large The Actualization Theory (AT) --- Prediction Registry v1.0}\\[0.5em]
+  {\large Companion document to The Actualization Theory (AT) v2.0 (Canonical)}\\[0.5em]
+  {\large DOI: 10.5281/zenodo.20681734}\\[0.5em]
+  {\large \today}
+  \vfill
+\end{center}
+\clearpage
+
+% ---- Abstract ---------------------------------------------------------------
+\begin{abstract}
+\noindent
+This document is the official \emph{Prediction Registry} of The Actualization Theory
+(AT): a standalone, publication-grade registry of the quantitative and qualitative
+predictions derived from the canonical theory, compiled before future experimental
+confirmation. Every entry is derived from the accepted canonical derivations of the
+monograph (Difference $\to$ Actualization $\to$ Inevitable Spectrum $\to$ Physics), carries
+its derivation source, its dependency chain, its numerical value (where applicable), its
+uncertainty, its validation status, and its falsification criterion. The registry uses no
+new physics, no new fits, and no retrospective reinterpretation; it records the canonical
+content as published. Statuses distinguish \textsc{Confirmed} (pre-registered target
+verified), \textsc{Consistent} (value matches current observation), \textsc{Pending}
+(awaiting validation), and \textsc{Falsified} (contradicted by observation). No registered
+prediction is currently falsified.
+\end{abstract}
+
+\clearpage
+
+\tableofcontents
+\clearpage
+
+% ======================================================================
+%  Part I — Introduction
+% ======================================================================
+\part{Introduction}
+
+\section{Purpose of the Prediction Registry}
+\label{sec:purpose}
+
+The Prediction Registry exists to fix, in advance of experiment, the falsifiable content of
+The Actualization Theory. Its purposes are:
+
+\begin{itemize}
+  \item to record every quantitative and qualitative prediction derived from the canonical
+        theory, with its derivation source and dependency chain;
+  \item to fix the numerical values and uncertainty ranges before future confirmation, so
+        that confirmation or contradiction is genuine independent evidence and not post-hoc
+        fitting;
+  \item to document, per prediction, the experimental test, the current evidence, and the
+        falsification criterion;
+  \item to serve as the immutable, version-controlled reference for external validation
+        (the theory's pre-registration program, QG190--QG193, and its outcome dashboard,
+        QG202);
+  \item to be suitable for independent Zenodo publication and future version-controlled
+        updates.
+\end{itemize}
+
+The registry is \emph{assembly only}: it contains no new physics, no new derivations, no new
+fits, and no speculation. Every entry is drawn from the accepted canonical results of the
+monograph V2.0 and the claim-classification registry.
+
+\section{Validation Philosophy}
+\label{sec:philosophy}
+
+The Actualization Theory distinguishes \emph{derivation} from \emph{validation}
+(monograph Ch.~14, Theorem~c14:thm:derived-vs-validated): a quantity may be derived without
+being validated, and its derivation is complete before its validation is possible. This
+registry records derived predictions and their validation status on that basis.
+
+The statuses used throughout are:
+
+\begin{itemize}
+  \item \textsc{Confirmed}: a pre-registered target verified by observation (the prediction
+        was frozen before the data).
+  \item \textsc{Consistent}: the derived value matches current observation within the
+        stated deviation (including calibrated correspondences and documented fits). These
+        are retrospective consistency records, not pre-registered confirmations.
+  \item \textsc{Pending}: awaiting validation --- the current experimental frontier.
+  \item \textsc{Falsified}: contradicted by observation. As of this version, no registered
+        prediction is falsified.
+\end{itemize}
+
+The classification of each prediction's \emph{derivational} status --- theorem, necessity,
+correspondence, calibration, hosted, fit --- is preserved from the claim-classification
+registry and disclosed in each record. In particular, entries classified as
+\emph{calibration} carry an anchor ($v$, $m_e$, or SI conversion) and entries classified as
+\emph{fit} are labelled as fitted readouts, not derivations.
+
+\section{Pre-Registration Principles}
+\label{sec:pre-registration}
+
+The theory maintains an immutable prediction registry (QG193) containing three
+pre-registered predictions with frozen values and explicit falsification conditions:
+P1 (a 106 GeV resonance), P2 (the $0\nu\beta\beta$ effective Majorana mass), and P3 (the
+sector-ladder spectrum). The pre-registration principles are:
+
+\begin{itemize}
+  \item \textbf{Frozen values}: each pre-registered prediction's value is fixed before
+        future data; no future phase may modify it (registry lock, QG193).
+  \item \textbf{Forbidden inputs}: pre-registered predictions assert that no experimental
+        limit, detector sensitivity, fitted mass, or future measurement entered the
+        derivation (forbidden-input guards, QG190--QG192).
+  \item \textbf{State advance only}: the outcome state may advance forward
+        (PENDING $\to$ SUPPORTED $\to$ CONFIRMED, or PENDING $\to$ DISFAVORED $\to$
+        FALSIFIED); frozen values never change.
+  \item \textbf{Temporal independence}: confirmation of a pre-registered prediction is
+        genuine independent evidence because the value was frozen before the observation.
+\end{itemize}
+
+The three pre-registered predictions are registered in full in Section~\ref{sec:frontier}.
+All other entries in this registry are derived values with documented consistency or pending
+status.
+
+% ======================================================================
+%  Part II — Standard Model Predictions
+% ======================================================================
+\part{Standard Model Predictions}
+
+\section{Gauge Sector}
+\label{sec:gauge}
+
+\predstart{AT-P001}{CONSISTENT}
+\pfield{Title}{Gauge structure $1+3+8$ (dimensional correspondence).}
+\pfield{Derived From}{Difference $\to$ Actualization $\to$ Spectrum (D96) $\to$ degree-12
+connectivity of $C_{96}(\pm1,\ldots,\pm6)$.}
+\pfield{Prediction}{The gauge sector of the standard model, $U(1)\times SU(2)\times SU(3)$,
+corresponds dimensionally to the D96 sector structure: one $U(1)$, three $SU(2)$, and eight
+$SU(3)$ generators, $1+3+8 = 12$, the degree of the $C_{96}$ generator ring. The gauge
+groups and their Lie algebras are \emph{hosted}, not derived (claim classification:
+dimensional correspondence).}
+\pfield{Experimental Test}{Count of gauge generators in the observed standard model.}
+\pfield{Current Evidence}{The standard model carries exactly 12 gauge generators
+(1 photon + 3 weak + 8 gluons). The correspondence is dimensional; the groups are hosted.}
+\pfield{Future Validation Path}{No experimental change expected; the claim is a dimensional
+correspondence, not a prediction of new group content.}
+\pfield{Falsification Criterion}{Observation of a gauge sector not matching the $1+3+8$
+dimensional count (not currently conceivable at low energy).}
+
+\predstart{AT-P002}{CONSISTENT}
+\pfield{Title}{Gauge couplings as spectral ratios.}
+\pfield{Derived From}{Difference $\to$ Actualization $\to$ Spectrum (D96) $\to$ spectral
+constants $\Sigma m$, $\Sigma\sqrt{m}$, $\#d$; couplings
+$1/\alpha_{\mathrm{em}} = \Sigma m + \#d = 137$ (fitted readout),
+$\alpha_{\mathrm{weak}} = 3/\Sigma m$, $\alpha_{\mathrm{strong}} = 8/\Sigma\sqrt{m}$,
+$\sin^2\theta_W = 0.2316$.}
+\pfield{Prediction}{The weak and strong couplings correspond to D96 spectral ratios
+($3/95$, $8/64.08$); the fine-structure inverse is the fitted readout $137 = 95+42$.
+None of the couplings carries a defined renormalization scale (claim classification:
+$1/\alpha_{\mathrm{em}}$ = fit; $\alpha_{\mathrm{weak}}$, $\alpha_{\mathrm{strong}}$ =
+correspondence).}
+\pfield{Experimental Test}{Measurement of the gauge couplings and the Weinberg angle.}
+\pfield{Current Evidence}{$\sin^2\theta_W = 0.2316$ matches the measured value; the weak and
+strong ratios match the observed couplings at the natural scale; $1/\alpha_{\mathrm{em}} =
+137$ matches the low-energy fine-structure constant (documented fit).}
+\pfield{Future Validation Path}{Precision running of $\alpha_s$ to the $Z$ pole:
+spectral $\alpha_s = 8/\Sigma\sqrt{m} = 0.1248$ vs.\ PDG $\alpha_s(M_Z) = 0.1184$
+(dev.\ $5.4\%$); improvement of the measured low-energy $\alpha_{\mathrm{em}}$.}
+\pfield{Falsification Criterion}{A measured gauge coupling inconsistent with the spectral
+ratios at the natural scale beyond the stated correspondence accuracy.}
+
+\predstart{AT-P003}{CONSISTENT}
+\pfield{Title}{Weak boson masses from the weak scale.}
+\pfield{Derived From}{Difference $\to$ Actualization $\to$ Spectrum (D96) $\to$ weak scale
+$v = (\Sigma m + \#d)\ln(\mathrm{span}) = 254$ GeV.}
+\pfield{Prediction}{$M_W = 80.1$ GeV and $M_Z = 91.4$ GeV from the Weinberg projection, with
+$\rho = M_W^2/(M_Z^2\cos^2\theta_W) = 1$ exactly at tree level.}
+\pfield{Experimental Test}{Measurement of the $W$ and $Z$ masses (LEP/ATLAS/CMS).}
+\pfield{Current Evidence}{Measured $M_W \simeq 80.4$ GeV, $M_Z = 91.19$ GeV; the
+reconstruction agrees within the calibration accuracy (claim classification: calibration via
+the anchor $v$).}
+\pfield{Future Validation Path}{Future $W$-mass refinements at HL-LHC; $M_Z$ is precisely
+known.}
+\pfield{Falsification Criterion}{A measured $M_W$/$M_Z$ ratio inconsistent with $\rho = 1$
+beyond the calibration accuracy.}
+
+\predstart{AT-P004}{CONSISTENT}
+\pfield{Title}{Precision electroweak observables.}
+\pfield{Derived From}{Difference $\to$ Actualization $\to$ Spectrum (D96) $\to$ spectral
+constants; $\sin^2\theta_{\mathrm{eff}} = \#g/(2\Sigma m) = 0.23158$;
+$\Gamma_Z = M_H\cos\theta_W/\#g = 2.4953$; $\Gamma_W = \sigma_{\mathrm{occ}}^2/
+(\mathrm{occMom}\cdot\lambda_2) = 2.0852$; $\Gamma_H = \lambda_2/\Sigma m = 4.07$ MeV;
+$R_b = \mathrm{span}\cdot g_2\cdot\sin^4\theta_W = 0.2163$;
+$A_{FB}^b = (\lambda_H/\lambda_2)^2 = 0.0992$; $A_{FB}^\ell = M_H/(M_W M_Z) = 0.0171$.}
+\pfield{Prediction}{The precision electroweak observables (effective Weinberg angle, $Z$
+and $W$ widths, Higgs width, $R_b$, forward-backward asymmetries) are read as spectral
+ratios (claim classification: correspondence).}
+\pfield{Experimental Test}{Measurements of the $Z$-pole observables, $R_b$, and the
+asymmetries at LEP/SLC and LHC.}
+\pfield{Current Evidence}{$\sin^2\theta_{\mathrm{eff}} = 0.23158$ matches the measured
+$0.23153$ within $0.03\%$; the widths and $R_b$ match within the stated deviations
+(0.004\%--0.05\%).}
+\pfield{Future Validation Path}{HL-LHC precision runs; any improvement of the $R_b$ and
+asymmetry measurements.}
+\pfield{Falsification Criterion}{A measured precision observable deviating from its spectral
+ratio beyond the stated accuracy.}
+
+\section{CKM and PMNS}
+\label{sec:mixing}
+
+\predstart{AT-P005}{CONSISTENT}
+\pfield{Title}{CKM matrix as octave-transition read.}
+\pfield{Derived From}{Difference $\to$ Actualization $\to$ Spectrum (D96) $\to$ octave
+transitions: $V_{us} = \#d/(2\Sigma m)$,
+$V_{cb} = (\Omega_0/\Omega_2)^{\delta_d}$, $V_{ub} = 2V_{cb}\cdot(\mathrm{occ}_0/
+\mathrm{occ}_2)$; $\Omega_0 = 0.924$, $\Omega_2 = 3.385$ are the octave-family centers
+(not the Laplacian modes $\omega_k = \sqrt{\lambda_k}$), $\delta_d = 2.449$ the down-sector
+effective dimension.}
+\pfield{Prediction}{The quark mixing matrix elements are spectral correspondences matched to
+the measured CKM matrix with mean deviation $0.58\%$ (claim classification:
+correspondence).}
+\pfield{Experimental Test}{Measurement of the CKM elements in weak decays.}
+\pfield{Current Evidence}{The three reconstructed elements match the measured values with
+mean deviation $0.58\%$.}
+\pfield{Future Validation Path}{Improvement of $V_{cb}$ and $V_{ub}$ measurements (Belle~II,
+LHCb); the ratios are fixed spectral forms.}
+\pfield{Falsification Criterion}{A measured CKM element deviating from its spectral ratio
+beyond the stated correspondence accuracy.}
+
+\predstart{AT-P006}{CONSISTENT}
+\pfield{Title}{CKM CP violation and the Jarlskog invariant.}
+\pfield{Derived From}{Difference $\to$ Actualization $\to$ Spectrum (D96) $\to$ chiral
+circulation: $\sin\delta = \mathrm{occ}_{\mathrm{top}}/\Sigma m = 0.9158$,
+$\delta_{CP} = 66.3^\circ$, $J = 3.139\times10^{-5}$.}
+\pfield{Prediction}{The CKM CP phase and the Jarlskog invariant are spectral-ratio reads
+(claim classification: correspondence).}
+\pfield{Experimental Test}{Measurement of CP-violating observables in the quark sector.}
+\pfield{Current Evidence}{$\delta_{CP} \simeq 66^\circ$ is consistent with the global CKM
+fit; $J = 3.139\times10^{-5}$ matches the measured $J \simeq 3\times10^{-5}$.}
+\pfield{Future Validation Path}{Precision CP measurements at Belle~II and LHCb.}
+\pfield{Falsification Criterion}{A measured $J$ inconsistent with the spectral value beyond
+the stated accuracy.}
+
+\predstart{AT-P007}{CONSISTENT}
+\pfield{Title}{PMNS matrix as T3-only read.}
+\pfield{Derived From}{Difference $\to$ Actualization $\to$ Spectrum (D96) $\to$ T3-only
+access reads: $\theta_{12} = 33.35^\circ$, $\theta_{23} = 49.72^\circ$,
+$\theta_{13} = 8.34^\circ$, $\delta_\nu = 66.4^\circ$, mean deviation $1.5\%$.}
+\pfield{Prediction}{The lepton mixing angles and the Dirac CP phase are spectral
+correspondences (claim classification: correspondence).}
+\pfield{Experimental Test}{Measurement of the PMNS angles in neutrino oscillations.}
+\pfield{Current Evidence}{The angles match the measured values with mean deviation $1.5\%$.}
+\pfield{Future Validation Path}{Improved $\theta_{23}$ and $\delta_\nu$ determination
+(DUNE, JUNO, Hyper-K); the $\delta_\nu = 66.4^\circ$ read is a continuous spectral-ratio
+phase, not lattice-restricted.}
+\pfield{Falsification Criterion}{A measured PMNS angle deviating from its spectral read
+beyond the stated correspondence accuracy.}
+
+\section{Neutrino Sector}
+\label{sec:neutrino}
+
+\predstart{AT-P008}{CONSISTENT}
+\pfield{Title}{Neutrino mass splittings.}
+\pfield{Derived From}{Difference $\to$ Actualization $\to$ Spectrum (D96) $\to$ closed-form
+laws: $\Delta m^2_{21} = (1/\Sigma\sqrt{m})^2/(\mathrm{span}/2) = 7.607\times10^{-5}$
+eV$^2$ (dev.\ $1.02\%$), $\Delta m^2_{31} = \sin^2\theta_W/\Sigma m = 2.44\times10^{-3}$
+eV$^2$ (dev.\ $0.71\%$).}
+\pfield{Prediction}{The solar and atmospheric splittings are closed-form D96 ratios,
+calibrated to eV$^2$ by an implicit scale (claim classification: correspondence +
+calibration).}
+\pfield{Experimental Test}{Measurement of the splittings in solar, atmospheric, and reactor
+neutrino oscillations.}
+\pfield{Current Evidence}{$\Delta m^2_{21} = 7.607\times10^{-5}$ and
+$\Delta m^2_{31} = 2.44\times10^{-3}$ eV$^2$ match the measured values within the stated
+deviations.}
+\pfield{Future Validation Path}{Precision oscillation experiments (JUNO, DUNE, Hyper-K).}
+\pfield{Falsification Criterion}{A measured splitting deviating from its closed-form ratio
+beyond the stated accuracy.}
+
+\predstart{AT-P009}{PENDING}
+\pfield{Title}{Absolute neutrino masses (normal ordering).}
+\pfield{Derived From}{Difference $\to$ Actualization $\to$ Spectrum (D96) $\to$ absolute
+mass law: $m_1 = 0$ (zero-mode, normal ordering), $m_2 = 1/(\Sigma\sqrt{m}\cdot\sqrt{
+\mathrm{span}/2}) = 8.7216$ meV (phys.\ $8.72$), $m_3 = \sqrt{\#g}/(\Sigma m\sqrt{2}) =
+49.3728$ meV (phys.\ $49.4$); $\Sigma m_\nu = 0.0581$ eV.}
+\pfield{Prediction}{The absolute neutrino masses are closed-form D96 expressions with the
+normal ordering $m_1 = 0 < m_2 < m_3$ and $\Sigma m_\nu = 0.0581$ eV $< 0.12$ eV
+(claim classification: correspondence + calibration).}
+\pfield{Experimental Test}{Direct mass measurement (KATRIN, next-generation tritium
+beta-decay) and cosmology (sum of masses from CMB/LSS).}
+\pfield{Current Evidence}{$\Sigma m_\nu = 0.0581$ eV is below current limits
+($\Sigma m_\nu \lesssim 0.12$ eV from cosmology); the absolute scale is not yet measured;
+the mass ordering is not yet determined.}
+\pfield{Future Validation Path}{KATRIN sensitivity reach; JUNO mass-ordering determination;
+DESI/Euclid sum-of-masses bounds.}
+\pfield{Falsification Criterion}{A measured $\Sigma m_\nu$ inconsistent with $0.0581$ eV, or
+an inverted ordering established ($m_3 < m_2$).}
+
+\predstart{AT-P010}{PENDING}
+\pfield{Title}{Neutrino mass ordering (normal).}
+\pfield{Derived From}{Same chain as AT-P009: the zero-mode mass $m_1 = 0$ fixes the normal
+ordering.}
+\pfield{Prediction}{The neutrino mass ordering is normal ($m_1 = 0 < m_2 < m_3$).}
+\pfield{Experimental Test}{Mass-ordering determination via long-baseline oscillations
+(DUNE, Hyper-K) and matter effects.}
+\pfield{Current Evidence}{Current data mildly prefer normal ordering; not conclusive.}
+\pfield{Future Validation Path}{DUNE (first half of the 2030s) and Hyper-K.}
+\pfield{Falsification Criterion}{Establishment of inverted ordering with significance.}
+
+\predstart{AT-P011}{CONSISTENT}
+\pfield{Title}{Quark mass ratios (absolute masses).}
+\pfield{Derived From}{Difference $\to$ Actualization $\to$ Spectrum (D96) $\to$ unified
+mass law: $m_u = m_e\cdot\Sigma\sqrt{m}/\sqrt{\Sigma m^2} = 2.164$ (dev.\ $0.18\%$);
+$m_d = m_u\cdot(\Sigma\sqrt{m})^2/\mathrm{occMom} = 4.676$ (dev.\ $0.14\%$);
+$m_s = m_d\cdot\mathrm{occMom}/\Sigma m = 93.5$; $m_c = m_d\cdot(\Sigma\sqrt{m})^2/
+\sqrt{\Sigma m^2} = 1269$; $m_b = m_d\cdot\mathrm{occMom}^2\cdot\Sigma m\cdot\#g/
+(\Sigma\sqrt{m})^4 = 4186$; $m_t = m_u\cdot\mathrm{occMom}\cdot\#d = 172704$ MeV.}
+\pfield{Prediction}{All six absolute quark masses are reconstructed from the electron anchor
+and D96 spectral moments, each within $0.2\%$ (claim classification: calibration via the
+anchor $m_e$).}
+\pfield{Experimental Test}{Measurement of the quark masses in the $\overline{\mathrm{MS}}$
+scheme.}
+\pfield{Current Evidence}{All six masses match the PDG $\overline{\mathrm{MS}}$ values
+within $0.2\%$.}
+\pfield{Future Validation Path}{Lattice QCD refinements of the light-quark masses.}
+\pfield{Falsification Criterion}{A measured quark mass deviating from its spectral
+construction beyond $0.2\%$.}
+
+\section{Majorana Character}
+\label{sec:majorana}
+
+\predstart{AT-P012}{PENDING}
+\pfield{Title}{Neutrino Majorana character.}
+\pfield{Derived From}{Difference $\to$ Actualization $\to$ Spectrum (D96) $\to$ T3-only
+self-conjugate channel (48/95 modes), unique $Q=0$ sector with no conserved charge, real
+mass matrix from the reflection automorphism.}
+\pfield{Prediction}{The neutrino is Majorana: self-conjugate in its $T_3$-only channel, with
+no conserved charge and a real mass matrix (claim classification: correspondence).}
+\pfield{Experimental Test}{Observation of neutrinoless double beta decay ($0\nu\beta\beta$).}
+\pfield{Current Evidence}{No $0\nu\beta\beta$ observation; current limits
+$m_{\beta\beta} \lesssim 0.036$--$0.156$ eV are far above the predicted $2.02$ meV.}
+\pfield{Future Validation Path}{nEXO and LEGEND-1000 ton-scale experiments.}
+\pfield{Falsification Criterion}{A conclusive Dirac-character determination (e.g.\ a
+fundamental conservation law excluding $0\nu\beta\beta$).}
+
+\predstart{AT-P013}{PENDING}
+\pfield{Title}{Effective Majorana mass $m_{\beta\beta}$ (pre-registered P2).}
+\pfield{Derived From}{Difference $\to$ Actualization $\to$ Spectrum (D96) $\to$ PMNS reads
+(AT-P007) + absolute masses (AT-P009) + Majorana character (AT-P012): $m_{\beta\beta} =
+\bigl|m_1c_{12}^2c_{13}^2 + m_2s_{12}^2c_{13}^2e^{i\alpha_2} +
+m_3s_{13}^2e^{-2i\delta_\nu}\bigr| = 2.02$ meV (computed $2.0222$ meV), with
+$\alpha_2 = \alpha_3 = 0$.}
+\pfield{Prediction}{$m_{\beta\beta} = 2.02$ meV, dominated by the term
+$m_2 s_{12}^2 c_{13}^2 = 2.52$ meV and robust to the CP phase (pre-registered, QG191).}
+\pfield{Experimental Test}{Search for $0\nu\beta\beta$ at nEXO / LEGEND-1000 (half-life
+sensitivity $\sim10^{28}$ yr).}
+\pfield{Current Evidence}{None --- the prediction is below all current limits
+($0.036$--$0.156$ eV).}
+\pfield{Future Validation Path}{nEXO / LEGEND-1000 ton-scale reach.}
+\pfield{Falsification Criterion}{A measured upper limit below $2.02$ meV (significant
+exclusion) falsifies P2.}
+
+\section{Electron g-2}
+\label{sec:g2}
+
+\predstart{AT-P014}{CONSISTENT}
+\pfield{Title}{Electron anomalous magnetic moment.}
+\pfield{Derived From}{Difference $\to$ Actualization $\to$ Spectrum (D96) $\to$ Schwinger
+term modulated by the lightest-octave fraction:
+$a_e = (\alpha/2\pi)\bigl(1 - (\mathrm{occ}_0/\Sigma m)^2\bigr) = 1.159655\times10^{-3}$
+(dev.\ $0.0003\%$).}
+\pfield{Prediction}{The electron anomaly is the Schwinger term with the negative spectral
+correction $1 - (\mathrm{occ}_0/\Sigma m)^2$ (claim classification: correspondence).}
+\pfield{Experimental Test}{Precision measurement of $a_e$ (Penning-trap experiments) and
+theoretical QED computation.}
+\pfield{Current Evidence}{Matches experiment within $0.0003\%$.}
+\pfield{Future Validation Path}{Improved QED tenth-order terms and fine-structure
+determination.}
+\pfield{Falsification Criterion}{A measured $a_e$ inconsistent with the spectral value
+beyond the stated accuracy.}
+
+\predstart{AT-P015}{CONSISTENT}
+\pfield{Title}{Electron g-2 anomaly-free beyond $\Delta a_e$.}
+\pfield{Derived From}{Same chain: $\Delta a_e = (\alpha/2\pi)^3\,\mathrm{span}^{1/4}\,
+(\mathrm{occ}_0/\Sigma m)^3 = 1.86\times10^{-13} < 10^{-12}$.}
+\pfield{Prediction}{No electron g-2 anomaly: the new-physics contribution is below
+$10^{-12}$ (claim classification: correspondence).}
+\pfield{Experimental Test}{Comparison of measured $a_e$ with the SM prediction at
+$10^{-12}$ precision.}
+\pfield{Current Evidence}{No electron g-2 anomaly observed; the value matches SM QED.}
+\pfield{Future Validation Path}{Continued improvement of $\alpha$ and the QED series.}
+\pfield{Falsification Criterion}{An electron g-2 discrepancy exceeding
+$\Delta a_e = 1.86\times10^{-13}$.}
+
+\predstart{AT-P016}{CONSISTENT}
+\pfield{Title}{Muon g-2 (spectral D96 mechanism).}
+\pfield{Derived From}{Difference $\to$ Actualization $\to$ Spectrum (D96) $\to$ same
+Schwinger-plus-spectral-fraction mechanism with the dense-bulk sign:
+$a_\mu = (\alpha/2\pi)(1 + \lambda_2/\Sigma m) = 1.16644\times10^{-3}$ (dev.\ $0.045\%$);
+$\Delta a_\mu = (\alpha/2\pi)^3\,\mathrm{span}^{1/4} = 2.494\times10^{-9}$ (dev.\ $0.24\%$).}
+\pfield{Prediction}{The muon anomaly is the same D96 mechanism as the electron, with the
+positive dense-bulk correction $+\lambda_2/\Sigma m$ (opposite spectral end)
+(claim classification: correspondence).}
+\pfield{Experimental Test}{Measurement of $a_\mu$ at Fermilab (Muon g-2) and J-PARC.}
+\pfield{Current Evidence}{The central value matches within $0.045\%$; the anomaly magnitude
+is consistent with the measured g-2 tension band.}
+\pfield{Future Validation Path}{Final Fermilab result; J-PARC.}
+\pfield{Falsification Criterion}{A final measured $a_\mu$ inconsistent with the spectral
+value beyond the stated accuracy.}
+
+\section{Oblique Parameters (S, T, U)}
+\label{sec:oblique}
+
+\predstart{AT-P017}{CONSISTENT}
+\pfield{Title}{Oblique parameters from spectral structure.}
+\pfield{Derived From}{Difference $\to$ Actualization $\to$ Spectrum (D96) $\to$ lightest-
+octave fraction: $S = \mathrm{occ}_0/\Sigma m = 4/95 = 0.0421$ (dev.\ $5.3\%$);
+$T = 2S = 8/95 = 0.0842$ (dev.\ $5.3\%$); $U = 0$ via the exact tree-level $\rho = 1$.}
+\pfield{Prediction}{$S = 0.0421$, $T = 0.0842$ with $T = 2S$ exactly and $U = 0$
+(claim classification: correspondence).}
+\pfield{Experimental Test}{Electroweak global fit determination of $S,T,U$.}
+\pfield{Current Evidence}{Consistent with the EW global fit beyond the masses and widths.}
+\pfield{Future Validation Path}{Tightening of the EW fit at HL-LHC and future $e^+e^-$
+colliders.}
+\pfield{Falsification Criterion}{An EW global fit excluding $S = 0.0421$, $T = 0.0842$,
+$U = 0$ at the stated accuracy.}
+
+% ======================================================================
+%  Part III — Gravity Predictions
+% ======================================================================
+\part{Gravity Predictions}
+
+\section{Gravitational Sector}
+\label{sec:gravity}
+
+\predstart{AT-P018}{CONSISTENT}
+\pfield{Title}{Newton constant from the D96 spectral content.}
+\pfield{Derived From}{Difference $\to$ Actualization $\to$ Spectrum (D96) $\to$ occupation-
+weighted content: $M_{\mathrm{Pl}} = v\cdot(\Sigma m\cdot\#g\cdot\mathrm{occ}_2)^3 =
+1.22335\times10^{19}$ GeV (dev.\ $0.20\%$); $G = 1/M_{\mathrm{Pl}}^2 = 6.6476\times10^{-11}$
+m$^3$ kg$^{-1}$ s$^{-2}$ (dev.\ $0.40\%$).}
+\pfield{Prediction}{The Planck scale is the weak scale times the cube of the
+occupation-weighted spectral content; the physical exponent is cubic (QG183)
+(claim classification: calibration via the anchor $v$ plus SI conversion).}
+\pfield{Experimental Test}{Measurement of $G$ (torsion balance) and $M_{\mathrm{Pl}}$.}
+\pfield{Current Evidence}{Matches $G$ within $0.40\%$.}
+\pfield{Future Validation Path}{Improved $G$ determinations (CODATA).}
+\pfield{Falsification Criterion}{A measured $G$ inconsistent with the spectral construction
+beyond the stated accuracy.}
+
+\predstart{AT-P019}{CONSISTENT}
+\pfield{Title}{Gravitational time dilation (GPS).}
+\pfield{Derived From}{Difference $\to$ Actualization $\to$ counting measure $\rho$ $\to$
+redshift law: clock rate $d\tau/dt = \rho^{1/d} = \sqrt{-g_{00}}$; GPS offset
+$+38.5\ \mu$s/day vs.\ observed $+38.6\ \mu$s/day (dev.\ $0.2\%$).}
+\pfield{Prediction}{Gravitational time dilation is the counting-measure redshift law; the
+GPS rate offset is $-4.465\times10^{-10}$ (claim classification: correspondence).}
+\pfield{Experimental Test}{GPS satellite clock comparisons.}
+\pfield{Current Evidence}{The net computed offset $+38.5\ \mu$s/day matches the observed
+$+38.6\ \mu$s/day within $0.2\%$.}
+\pfield{Future Validation Path}{Continuing GPS and optical-clock tests.}
+\pfield{Falsification Criterion}{A measured gravitational redshift inconsistent with the
+counting-measure law beyond the stated accuracy.}
+
+\predstart{AT-P020}{CONSISTENT}
+\pfield{Title}{Frame dragging (Lense--Thirring).}
+\pfield{Derived From}{Difference $\to$ tensor face $\psi$ against $\eta$ $\to$ restored
+gravitomagnetic sector: $\Omega_{\mathrm{LT}} = G\bigl(3(\mathbf{J}\cdot\hat{\mathbf r})
+\hat{\mathbf r}-\mathbf{J}\bigr)/(2c^2r^3)$; GP-B $41.1$ vs.\ $39.2$ mas/yr; LAGEOS $30.7$
+vs.\ $\sim31$ mas/yr.}
+\pfield{Prediction}{Frame dragging is a $\psi$-sector observable at full GR strength when
+the tensor face is present (claim classification: correspondence).}
+\pfield{Experimental Test}{GP-B and LAGEOS measurements of the Lense--Thirring precession.}
+\pfield{Current Evidence}{GP-B $41.1$ vs.\ $39.2$ mas/yr ($+4.8\%$, inside the measured
+$37.2\pm7.2$); LAGEOS $30.7$ vs.\ $\sim31$ ($-1.1\%$).}
+\pfield{Future Validation Path}{Future gravity-mission measurements (e.g.\ proposed
+LAGEOS-III-type and satellite tests).}
+\pfield{Falsification Criterion}{A measured frame-dragging precession inconsistent with the
+Lense--Thirring value at full GR strength.}
+
+\section{Black-Hole Relations}
+\label{sec:black-hole}
+
+\predstart{AT-P021}{CONSISTENT}
+\pfield{Title}{Mass-radius relation $M \propto R$.}
+\pfield{Derived From}{Difference $\to$ Actualization $\to$ counting measure $\to$ per-octave
+(logarithmic) deficit profile: $a \propto -1/r$, $GM_{\mathrm{eff}} \propto R$
+(claim classification: correspondence; the flat-rotation-curve profile is a hosted input).}
+\pfield{Prediction}{The observed $M \propto R$ relation follows from the counting measure:
+the deficit is per-octave/log, giving the flat rotation-curve profile and
+$GM_{\mathrm{eff}} \propto R$.}
+\pfield{Experimental Test}{Galactic rotation curves and supermassive black-hole
+mass--radius correlations.}
+\pfield{Current Evidence}{Flat rotation curves are observed; $M \propto R$ is consistent
+with the hosted profile.}
+\pfield{Future Validation Path}{High-precision rotation curves (Rubin LSST) and horizon-scale
+mass measurements (EHT).}
+\pfield{Falsification Criterion}{A measured rotation-curve profile inconsistent with the
+per-octave deficit profile across scales.}
+
+\predstart{AT-P022}{CONSISTENT}
+\pfield{Title}{Hawking temperature $T \propto 1/R$.}
+\pfield{Derived From}{Same chain: with $S \propto R^{d-1}$ and $M \propto R$, the first law
+gives $T \propto 1/R$; the $\psi$ sector contributes only a radius-independent prefactor.}
+\pfield{Prediction}{The Hawking temperature scales as $T \propto 1/R$; the $T(R_1)/T(R_2)$
+ratio is $\psi$-invariant (QG208).}
+\pfield{Experimental Test}{Event-horizon-scale observations; astrophysical black-hole
+cooling bounds.}
+\pfield{Current Evidence}{Consistent with the standard $T = \hbar\kappa/(2\pi k_B)$
+structure and current bounds.}
+\pfield{Future Validation Path}{Gravitational-wave ringdown precision and horizon-scale
+measurements.}
+\pfield{Falsification Criterion}{A measured black-hole temperature inconsistent with
+$T \propto 1/R$ beyond the stated accuracy.}
+
+\section{Bekenstein Boundary}
+\label{sec:bekenstein}
+
+\predstart{AT-P023}{CONSISTENT (documented boundary)}
+\pfield{Title}{Bekenstein structure $S \propto A$; exact $1/4$ coefficient is a boundary.}
+\pfield{Derived From}{Difference $\to$ Actualization $\to$ counting measure: $S \propto A$
+(QG12), $M \propto R$ (AT-P021), $T \propto 1/R$ (AT-P022) fully derived; the exact
+coefficient $S = A/4$ is \emph{not} derivable from D96/TRM --- it requires the imported
+quantum factor $T = \kappa/(2\pi)$ (QG185, QG196 impossibility proof).}
+\pfield{Prediction}{The \emph{structure} of the Bekenstein law ($S \propto A$, $M \propto R$,
+$T \propto 1/R$) is a derived consequence; the exact $1/4$ coefficient is a disclosed
+boundary, not a derivation claim.}
+\pfield{Experimental Test}{Tests of the area law and the entropy coefficient (astrophysical
+and analogue systems).}
+\pfield{Current Evidence}{The structure is consistent with black-hole thermodynamics; the
+coefficient is not tested at the required precision.}
+\pfield{Future Validation Path}{Quantum-gravity-sensitive observations; the coefficient
+remains a documented boundary.}
+\pfield{Falsification Criterion}{This entry is a boundary statement, not a falsifiable
+prediction; it documents what the theory does not derive.}
+
+% ======================================================================
+%  Part IV — Cosmology Predictions
+% ======================================================================
+\part{Cosmology Predictions}
+
+\section{$\Omega_\Lambda$}
+\label{sec:omegal}
+
+\predstart{AT-P024}{CONSISTENT}
+\pfield{Title}{Vacuum density fraction.}
+\pfield{Derived From}{Difference $\to$ Actualization $\to$ Spectrum (D96) $\to$ octave
+occupancies $[4,4,87]$: $\Omega_\Lambda = I_{\mathrm{occ}}/\ln K_{\mathrm{oct}} = 0.6839$
+(dev.\ $0.12\%$); $I_{\mathrm{occ}} = KL(p\Vert\mathrm{uniform}) = 0.7513$ nats;
+$K_{\mathrm{oct}} = 3$ occupied octave classes.}
+\pfield{Prediction}{The vacuum fraction is the information-density fraction of the D96
+octave record (claim classification: correspondence).}
+\pfield{Experimental Test}{Cosmological probes of the dark-energy fraction (CMB, supernovae,
+BAO).}
+\pfield{Current Evidence}{$\Omega_\Lambda = 0.6839$ matches the observed value within
+$0.12\%$.}
+\pfield{Future Validation Path}{DESI, Euclid, and Rubin LSST precision cosmology.}
+\pfield{Falsification Criterion}{A measured $\Omega_\Lambda$ inconsistent with $0.6839$
+beyond the stated accuracy.}
+
+\section{$\Omega_m$}
+\label{sec:omegam}
+
+\predstart{AT-P025}{CONSISTENT}
+\pfield{Title}{Matter density fraction.}
+\pfield{Derived From}{Same chain: $\Omega_m = 1 - \Omega_\Lambda = 0.3161$ (dev.\ $0.26\%$).}
+\pfield{Prediction}{The matter fraction is the complement of the octave-record information
+fraction (claim classification: correspondence).}
+\pfield{Experimental Test}{Cosmological probes of the matter density (CMB, BAO, galaxy
+clustering, lensing).}
+\pfield{Current Evidence}{$\Omega_m = 0.3161$ matches the observed value within $0.26\%$.}
+\pfield{Future Validation Path}{DESI, Euclid, and Rubin LSST precision cosmology.}
+\pfield{Falsification Criterion}{A measured $\Omega_m$ inconsistent with $0.3161$ beyond the
+stated accuracy.}
+
+\section{Acoustic Peaks}
+\label{sec:peaks}
+
+\predstart{AT-P026}{CONSISTENT}
+\pfield{Title}{First acoustic peak existence (structural).}
+\pfield{Derived From}{Difference $\to$ Actualization $\to$ Spectrum (D96) $\to$ recombination-
+scale mode ladder: the fundamental doublet at $\omega_{\min} = 0.6216$ is isolated by the
+dominant spectral gap (ln-gap $0.680$, largest of 94).}
+\pfield{Prediction}{A first peak exists as a structural consequence: the fundamental doublet
+is the maximally isolated low-frequency spectral feature and therefore the unique D96
+candidate for a first peak (claim classification: theorem --- structural).}
+\pfield{Experimental Test}{Observation of the CMB angular power spectrum.}
+\pfield{Current Evidence}{The CMB first peak is observed at $\ell_1 \simeq 220$. Existence is
+structural; the identification with the observed peak and its multipole position require
+the $\ell$-axis normalization.}
+\pfield{Future Validation Path}{CMB-S4 and Planck-precision acoustic spectra.}
+\pfield{Falsification Criterion}{Absence of a first peak in the CMB angular spectrum.}
+
+\predstart{AT-P027}{CONSISTENT}
+\pfield{Title}{First peak location $\ell_1$ (fitted normalization).}
+\pfield{Derived From}{Same chain: $\ell_1 = \Sigma m\cdot\ln(\mathrm{span})\cdot(5/4) =
+220.48$ (dev.\ $0.008\%$).}
+\pfield{Prediction}{$\ell_1 = 220.48$; the multiplier $5/4$ is a documented \emph{fit} for the
+$\ell$-axis normalization (QG297), not part of the selection mechanism
+(claim classification: fit).}
+\pfield{Experimental Test}{Measurement of the first-peak multipole.}
+\pfield{Current Evidence}{Observed $\ell_1 \simeq 220.48$; the value matches because the
+$5/4$ factor is fitted to it.}
+\pfield{Future Validation Path}{None beyond precision cosmology; the location is a documented
+fit, not a derivation.}
+\pfield{Falsification Criterion}{Not applicable --- the location is a documented fit, not a
+falsifiable derivation.}
+
+\predstart{AT-P028}{CONSISTENT}
+\pfield{Title}{Peak ratios (spectral correspondences).}
+\pfield{Derived From}{Same chain: $r_{21} = (\Sigma m-\#d)\cdot\mathrm{occ}_0/\mathrm{occ}_2 =
+2.4368$ (dev.\ $0.035\%$), $r_{31} = \mathrm{span}/\sqrt{3} = 3.6965$ (dev.\ $0.058\%$).}
+\pfield{Prediction}{The ratios of the second and third peak positions to the first are pure
+spectral ratios, with no fitted constant (claim classification: correspondence).}
+\pfield{Experimental Test}{Measurement of $\ell_2/\ell_1$ and $\ell_3/\ell_1$.}
+\pfield{Current Evidence}{Matches observation within $\sim0.05\%$.}
+\pfield{Future Validation Path}{CMB-S4 precision.}
+\pfield{Falsification Criterion}{A measured peak ratio inconsistent with $2.4368$ or $3.6965$
+beyond the stated accuracy.}
+
+\predstart{AT-P029}{CONSISTENT}
+\pfield{Title}{Scalar spectral index $n_s$ and running.}
+\pfield{Derived From}{Same chain: $n_s = 0.96497$ (dev.\ $0.007\%$), running $= 0$
+(QG237); seed spectrum is the Poisson counting variance, scale-free from critical
+branching.}
+\pfield{Prediction}{$n_s = 0.96497$ with zero running; the seed is the counting variance
+(claim classification: correspondence).}
+\pfield{Experimental Test}{Measurement of the scalar spectral index and its running from the
+CMB power spectrum.}
+\pfield{Current Evidence}{Planck measures $n_s = 0.9649 \pm 0.0042$; running consistent with
+zero.}
+\pfield{Future Validation Path}{CMB-S4.}
+\pfield{Falsification Criterion}{A measured running significantly different from zero, or an
+$n_s$ inconsistent with $0.96497$ beyond the stated accuracy.}
+
+\section{Structure Formation}
+\label{sec:structure}
+
+\predstart{AT-P030}{CONSISTENT}
+\pfield{Title}{Cosmological constant existence, sign, and scaling.}
+\pfield{Derived From}{Difference $\to$ Actualization $\to$ critical branching vacuum $\to$
+residual actualization pressure: at criticality ($\mu=1$) the Galton--Watson mean is
+constant while the variance grows, so the realized vacuum never equals its uniform
+expectation.}
+\pfield{Prediction}{$\Lambda$ exists, is positive, and scales with the spectral/actualization
+structure (claim classification: correspondence).}
+\pfield{Experimental Test}{Measurement of the cosmological constant and its equation of
+state.}
+\pfield{Current Evidence}{$\Lambda > 0$ observed; $w \simeq -1$ consistent.}
+\pfield{Future Validation Path}{DESI/Euclid dark-energy characterization.}
+\pfield{Falsification Criterion}{A measured $\Lambda \le 0$, or a dark-energy dynamics
+inconsistent with a constant residual pressure.}
+
+\predstart{AT-P031}{PENDING}
+\pfield{Title}{Structure formation from Q-event statistics.}
+\pfield{Derived From}{Difference $\to$ Actualization $\to$ Q-event statistics and spectral
+hierarchy $\to$ large-scale organization.}
+\pfield{Prediction}{The large-scale organization of the universe follows the actualization
+dynamics: structure formation is derived from the Q-event statistics and the spectral
+hierarchy, with the initial conditions the uniform critical state and the information
+content the departure that seeds the structure (claim classification: correspondence).}
+\pfield{Experimental Test}{Galaxy-clustering statistics, the matter power spectrum, and the
+CMB lensing signal.}
+\pfield{Current Evidence}{Qualitative consistency with the standard structure-formation
+picture; no discriminating quantitative test yet performed.}
+\pfield{Future Validation Path}{DESI, Euclid, and Rubin LSST matter-power-spectrum
+measurements.}
+\pfield{Falsification Criterion}{A large-scale structure signal inconsistent with the
+Q-event-statistics prediction at discriminating precision.}
+
+\predstart{AT-P032}{CONSISTENT}
+\pfield{Title}{Scale-free seed spectrum (Poisson counting variance).}
+\pfield{Derived From}{Same chain: $\delta_i = 1/\sqrt{\langle N\rangle}$, scale-free
+($n_s = 1$ at the seed level) from critical branching.}
+\pfield{Prediction}{The seed power spectrum is the Poisson counting variance, scale-free from
+critical branching (claim classification: correspondence).}
+\pfield{Experimental Test}{Primordial power-spectrum shape from the CMB.}
+\pfield{Current Evidence}{Consistent with the near-scale-invariant observed spectrum
+($n_s = 0.96497$).}
+\pfield{Future Validation Path}{CMB-S4 precision.}
+\pfield{Falsification Criterion}{A primordial spectrum strongly inconsistent with the
+counting-variance seed.}
+
+% ======================================================================
+%  Part V — Universality Predictions
+% ======================================================================
+\part{Universality Predictions}
+
+\section{Operator Basis}
+\label{sec:operators}
+
+\predstart{AT-P033}{CONSISTENT}
+\pfield{Title}{Four-operator basis universal across organized domains.}
+\pfield{Derived From}{Difference $\to$ Actualization $\to$ Spectrum (D96) $\to$ operator
+layer: Crowding (degeneracy), Compression (octaves), Beat (extent), Locking (gaps) as
+spectrum projections.}
+\pfield{Prediction}{The four-operator basis recurs as the structural read of organized
+spectra in every organized domain (claim classification: correspondence).}
+\pfield{Experimental Test}{Quantitative operator reads of organized systems: networks,
+language, music, DNA, software, finance.}
+\pfield{Current Evidence}{The four operators appear across the seven tested domains
+(QG313); random spectra fail the basis while organized systems carry it (QG309, QG312).}
+\pfield{Future Validation Path}{New organized-domain datasets.}
+\pfield{Falsification Criterion}{An organized domain whose spectrum fails all four operators
+at the quantitative level.}
+
+\predstart{AT-P034}{CONSISTENT}
+\pfield{Title}{No fifth operator.}
+\pfield{Derived From}{Same chain: fifth-operator search (QG307) across unexplored domains.}
+\pfield{Prediction}{No genuine fifth spectral operator exists beyond {Crowding, Compression,
+Beat, Locking} with the universal MOMENT read-out (search-scoped, not an existence proof).}
+\pfield{Experimental Test}{Search for an additional operator in organized-domain spectra.}
+\pfield{Current Evidence}{No genuine fifth operator found in any searched domain; candidates
+reduce to compositions or are not spectral reads.}
+\pfield{Future Validation Path}{Continued domain expansion.}
+\pfield{Falsification Criterion}{A genuine fifth operator (not a composition) in an
+organized-domain spectrum.}
+
+\section{Lock Law}
+\label{sec:lock-law}
+
+\predstart{AT-P035}{CONSISTENT}
+\pfield{Title}{Lock law: universal structure, domain-specific values.}
+\pfield{Derived From}{Difference $\to$ Actualization $\to$ Spectrum (D96) $\to$ Locking
+operator $\to$ lock identities (normalized moment ratios).}
+\pfield{Prediction}{Every organized domain carries stable, reproducible lock identities
+(universal structure); the lock values are domain-specific fingerprints (claim
+classification: correspondence).}
+\pfield{Experimental Test}{Measurement of the moment/span, compression/count,
+higher-moment, and $\sqrt{\text{moment}}$/span ratios across organized domains.}
+\pfield{Current Evidence}{Stable lock structure in all seven tested domains (physics,
+language, music, DNA, software, finance, networks); the D96 locks
+$\mathrm{occMom}/\Sigma m = 20.0026$, $\Sigma m^2/\Sigma m = 2.4105$,
+$\mathrm{occMom}/\Sigma m^2 = 8.2980$ follow the moment-chain identity exactly.}
+\pfield{Future Validation Path}{New organized-domain cohorts.}
+\pfield{Falsification Criterion}{An organized domain with no stable lock identity at the
+quantitative level.}
+
+\predstart{AT-P036}{CONSISTENT}
+\pfield{Title}{Locks precede organization.}
+\pfield{Derived From}{Same chain: early-lock prediction (QG315) on evolving systems.}
+\pfield{Prediction}{In evolving systems, the lock structure appears before the full
+organization develops, and systems with early lock structure reorganize less under
+structural change (cohort-scoped on synthetic deterministic evolving-law cohorts).}
+\pfield{Experimental Test}{Evolutionary cohorts (software history, wiki edits, citation
+networks, language corpora).}
+\pfield{Current Evidence}{Lock identity reaches half-strength earlier than maturity in most
+systems; locked groups are 100\% small-reorganization.}
+\pfield{Future Validation Path}{Real-world evolutionary datasets.}
+\pfield{Falsification Criterion}{An evolving system whose lock structure lags the maturity
+development.}
+
+\section{Organization Transition}
+\label{sec:transition}
+
+\predstart{AT-P037}{CONSISTENT}
+\pfield{Title}{Organization as a phase transition.}
+\pfield{Derived From}{Same chain: organization-phase-transition audit (QG316) sweeping a
+continuous organization parameter across the four regimes.}
+\pfield{Prediction}{The binary operator basis completes discontinuously at the critical
+parameter $g^\ast \simeq 0.31$, while the quantitative organization grows continuously;
+the locks appear at the critical onset (cohort-scoped).}
+\pfield{Experimental Test}{Controlled organization sweeps (white noise $\to$ strong
+organization).}
+\pfield{Current Evidence}{The all-four operator screen flips at $g^\ast \simeq 0.31$ and
+persists for all stronger organization; the lock coherence emerges in the same window.}
+\pfield{Future Validation Path}{Real-world organization transitions.}
+\pfield{Falsification Criterion}{A continuous organization transition with no critical
+threshold for the binary operator basis.}
+
+\predstart{AT-P038}{CONSISTENT}
+\pfield{Title}{Blind prediction of future organization class.}
+\pfield{Derived From}{Same chain: blind-organization prediction (QG314) --- organization
+score from lock structure only, rule fixed before the reveal.}
+\pfield{Prediction}{The future organization class can be predicted from the early lock
+structure with the prediction rule fixed in advance; the lock values predict the class, not
+the strength within it.}
+\pfield{Experimental Test}{Blind classification of future high-maturity systems from
+early-stage lock coherence.}
+\pfield{Current Evidence}{The early lock presence identifies the future top-class systems
+exactly; the score separates the organized from the unorganized class.}
+\pfield{Future Validation Path}{Prospective organizational datasets.}
+\pfield{Falsification Criterion}{A future-class prediction failure beyond the stated
+accuracy of the locked protocol.}
+
+% ======================================================================
+%  Part VI — Experimental Frontier
+% ======================================================================
+\part{Experimental Frontier}
+
+\section{Predictions Awaiting Validation}
+\label{sec:frontier}
+
+The three pre-registered predictions P1, P2, and P3 are the experimental frontier of the
+theory. They are frozen in the immutable registry (QG193); their values never change and
+only their outcome states advance.
+
+\predstart{AT-P039}{PENDING}
+\pfield{Title}{P1 --- 106 GeV resonance.}
+\pfield{Derived From}{Difference $\to$ Actualization $\to$ Spectrum (D96) $\to$ sector
+ladder $\to$ missing-Z-anchor rung: $M_{106} = 7\cdot M_Z/6 = 7\cdot15.198$ GeV;
+window $= M_{106} \pm$ (rung spacing)/2 $= 99$--$114$ GeV (stated
+$98.79$--$113.99$).}
+\pfield{Prediction}{A resonance at $106.39$ GeV central mass with window $99$--$114$ GeV;
+production hierarchy 9 rungs $106.4\to263.4$ GeV; decay hierarchy unit quantum $15.20$ GeV
+$\times 10$ + top $20.26$ GeV $\times 1$ (pre-registered, QG190; forbidden-input guard: no
+ATLAS/CMS/fitted-mass constant).}
+\pfield{Uncertainty}{$\pm7.60$ GeV (half the mean rung spacing); boson-anchor family agrees
+within $0.74\%$.}
+\pfield{Experimental Test}{LHC Run 3 and HL-LHC diphoton/diboson searches in the
+$99$--$114$ GeV window.}
+\pfield{Current Evidence}{PENDING: the window is neither confirmed nor excluded. The
+$\sim95$ GeV scalar excess cluster aligns with the $91.19$ GeV rung (dev.\ $4.5\%$), not
+with the $106.39$ GeV prediction; CMS/ATLAS full-Run-2 diphoton null searches cover
+$106$ GeV with limits $15$--$102$ fb; LEP2 excludes SM-like $<114.4$ GeV but SM-strength
+$hZZ$ only.}
+\pfield{Future Validation Path}{HL-LHC $3000$ fb$^{-1}$ (projected $1$--$3$ fb sensitivity
+in $100$--$106$ GeV); decisive.}
+\pfield{Falsification Criterion}{No signal in statistically sensitive searches of the
+$99$--$114$ GeV window (DISFAVORED/FALSIFIED).}
+
+\predstart{AT-P040}{PENDING}
+\pfield{Title}{P2 --- $0\nu\beta\beta$ effective Majorana mass.}
+\pfield{Derived From}{Difference $\to$ Actualization $\to$ Spectrum (D96) $\to$ PMNS reads
+(AT-P007) + absolute masses (AT-P009) + Majorana character (AT-P012):
+$m_{\beta\beta} = \bigl|m_1c_{12}^2c_{13}^2 + m_2s_{12}^2c_{13}^2e^{i\alpha_2} +
+m_3s_{13}^2e^{-2i\delta_\nu}\bigr| = 2.02$ meV (computed $2.0222$ meV), $\alpha_2 = \alpha_3
+= 0$ (pre-registered, QG191; forbidden-input guard: no experimental limit or detector
+sensitivity).}
+\pfield{Uncertainty}{$\pm10\%$ ($1.8$--$2.2$ meV); dominated by $m_2 s_{12}^2 c_{13}^2 =
+2.52$ meV, robust to the CP phase.}
+\pfield{Experimental Test}{$0\nu\beta\beta$ search at nEXO / LEGEND-1000 (half-life
+sensitivity $\sim10^{28}$ yr).}
+\pfield{Current Evidence}{PENDING: below all current limits ($0.036$--$0.156$ eV).}
+\pfield{Future Validation Path}{nEXO / LEGEND-1000 ton-scale reach.}
+\pfield{Falsification Criterion}{A measured upper limit below $2.02$ meV (significant
+exclusion) falsifies P2.}
+
+\predstart{AT-P041}{PENDING}
+\pfield{Title}{P3 --- Sector-ladder spectrum.}
+\pfield{Derived From}{Difference $\to$ Actualization $\to$ Spectrum (D96) $\to$ ladder
+radii $\times$ Z-anchor scale: $E_{\mathrm{rung}} = \mathrm{radius}\cdot(M_Z/6)$; unit
+quantum $\Delta E = M_Z/6 = 15.20$ GeV, top quantum $20.26$ GeV (pre-registered, QG192;
+forbidden-input guard: no collider bump or catalog).}
+\pfield{Prediction}{Nine resonances: $106.39$ (primary) $\to 136.78 \to 151.98 \to 182.38
+\to 197.58 \to 212.78 \to 227.97 \to 243.17 \to 263.43$ GeV, multiplicities unit
+$\times 10$ + top $\times 1$, width scale $15.20$ GeV.}
+\pfield{Uncertainty}{$\pm5\%$ per rung; boson-anchor family agrees within $0.74\%$.}
+\pfield{Experimental Test}{High-energy searches at LHC Run 3 / HL-LHC and future
+FCC-hh.}
+\pfield{Current Evidence}{PENDING overall; the $151.98$ GeV rung matches the combined
+$\sim152$ GeV diphoton excess (local $3.6\sigma$, global up to $5.4\sigma$; alignment
+$0.0132\%$ deviation, look-elsewhere-corrected $z = 2.80\sigma$); SM anchors Z/H/t confirm
+the ladder scale (QG200); eight rungs remain unprobed.}
+\pfield{Future Validation Path}{HL-LHC confirmation of the $152$ GeV excess and full
+Run-3 searches of the remaining rungs.}
+\pfield{Falsification Criterion}{A sensitive search excludes any frozen rung (limit below
+the rung energy) falsifies P3.}
+
+\medskip
+\noindent\hrule\par\smallskip
+\noindent
+\textbf{Registry rule:} no future phase may modify a registered prediction (QG193). Only the
+outcome state may advance: PENDING $\to$ SUPPORTED $\to$ CONFIRMED, or PENDING $\to$
+DISFAVORED $\to$ FALSIFIED. Frozen values never change.
+
+% ======================================================================
+%  Status Summary
+% ======================================================================
+\section*{Status Summary}
+\label{sec:summary}
+
+\begin{center}
+\begin{tabular}{llp{4.6cm}p{4.2cm}}
+\hline
+\textbf{ID} & \textbf{Status} & \textbf{Prediction} & \textbf{Key value} \\
+\hline
+AT-P001 & CONSISTENT & Gauge structure $1+3+8$ & $12 = \deg C_{96}$ \\
+AT-P002 & CONSISTENT & Gauge couplings & $137$; $3/95$; $8/64.08$; $0.2316$ \\
+AT-P003 & CONSISTENT & Weak boson masses & $M_W$ 80.1, $M_Z$ 91.4 GeV \\
+AT-P004 & CONSISTENT & Precision EW & $\sin^2\theta_{\mathrm{eff}}=0.23158$ \\
+AT-P005 & CONSISTENT & CKM & dev.\ $0.58\%$ \\
+AT-P006 & CONSISTENT & CKM CP & $\delta_{CP}=66.3^\circ$, $J=3.14\times10^{-5}$ \\
+AT-P007 & CONSISTENT & PMNS & dev.\ $1.5\%$ \\
+AT-P008 & CONSISTENT & Neutrino splittings & $7.607\times10^{-5}$; $2.44\times10^{-3}$ eV$^2$ \\
+AT-P009 & PENDING & Absolute neutrino masses & $8.72$; $49.4$ meV; $\Sigma m_\nu=0.0581$ eV \\
+AT-P010 & PENDING & Mass ordering (normal) & $m_1=0$ \\
+AT-P011 & CONSISTENT & Quark masses & all six within $0.2\%$ \\
+AT-P012 & PENDING & Majorana character & self-conjugate channel \\
+AT-P013 & PENDING & $m_{\beta\beta}$ (P2) & $2.02$ meV \\
+AT-P014 & CONSISTENT & Electron g-2 & $1.159655\times10^{-3}$ \\
+AT-P015 & CONSISTENT & Electron anomaly-free & $\Delta a_e = 1.86\times10^{-13}$ \\
+AT-P016 & CONSISTENT & Muon g-2 & $1.16644\times10^{-3}$ \\
+AT-P017 & CONSISTENT & Oblique parameters & $S=0.0421$, $T=0.0842$, $U=0$ \\
+AT-P018 & CONSISTENT & Newton constant & $6.6476\times10^{-11}$ m$^3$/kg/s$^2$ \\
+AT-P019 & CONSISTENT & GPS time dilation & $+38.5\ \mu$s/day \\
+AT-P020 & CONSISTENT & Frame dragging & GP-B $41.1$ mas/yr \\
+AT-P021 & CONSISTENT & Mass--radius $M\propto R$ & $GM_{\mathrm{eff}}\propto R$ \\
+AT-P022 & CONSISTENT & Hawking $T\propto 1/R$ & $\psi$-invariant ratio \\
+AT-P023 & BOUNDARY & Bekenstein structure & $1/4$ coefficient not derived \\
+AT-P024 & CONSISTENT & $\Omega_\Lambda$ & $0.6839$ \\
+AT-P025 & CONSISTENT & $\Omega_m$ & $0.3161$ \\
+AT-P026 & CONSISTENT & First peak existence & structural \\
+AT-P027 & CONSISTENT & First peak location & $\ell_1 = 220.48$ (fit) \\
+AT-P028 & CONSISTENT & Peak ratios & $2.4368$; $3.6965$ \\
+AT-P029 & CONSISTENT & Spectral index & $n_s = 0.96497$, running $=0$ \\
+AT-P030 & CONSISTENT & $\Lambda$ existence/sign & $\Lambda>0$ \\
+AT-P031 & PENDING & Structure formation & Q-event statistics \\
+AT-P032 & CONSISTENT & Seed spectrum & scale-free counting variance \\
+AT-P033 & CONSISTENT & Four-operator universality & seven domains \\
+AT-P034 & CONSISTENT & No fifth operator & search-scoped \\
+AT-P035 & CONSISTENT & Lock law & universal structure, domain values \\
+AT-P036 & CONSISTENT & Locks precede organization & cohort-scoped \\
+AT-P037 & CONSISTENT & Organization transition & $g^\ast \simeq 0.31$ \\
+AT-P038 & CONSISTENT & Blind class prediction & locked protocol \\
+AT-P039 & PENDING & P1 --- 106 GeV & $106.39$ GeV, window $99$--$114$ \\
+AT-P040 & PENDING & P2 --- $0\nu\beta\beta$ & $m_{\beta\beta}=2.02$ meV \\
+AT-P041 & PENDING & P3 --- sector ladder & $9$ rungs $106.4\to263.4$ GeV \\
+\hline
+\end{tabular}
+\end{center}
+
+\medskip
+\noindent
+\fcolorbox{black}{gray!15}{%
+  \begin{minipage}{0.92\linewidth}
+    \centering
+    \textbf{Registry totals}\\[0.4em]
+    \begin{tabular}{cccc}
+      \textbf{CONSISTENT} & \textbf{PENDING} & \textbf{BOUNDARY} & \textbf{FALSIFIED}\\[0.2em]
+      32 & 8 & 1 & 0 \\
+    \end{tabular}
+  \end{minipage}}
+\par
+\smallskip
+\noindent
+No registered prediction is currently falsified. The three pre-registered frontier
+predictions (AT-P039--AT-P041) are the experimental targets.
+
+% ======================================================================
+%  References
+% ======================================================================
+\section*{References}
+\label{sec:references}
+
+\begin{thebibliography}{99}
+\bibitem{monograph} The Actualization Theory --- \emph{A Reconstruction of Physics from
+Difference, Actualization and Spectrum}, Monograph V2.0, Docs/Publication/V2.0.
+\bibitem{registry} AT-QG Phase 193, \emph{Prediction Registry Lock},
+Docs/Research/ATQG\_PredictionRegistry.md and Docs/ATQG\_Predictions.md (immutable).
+\bibitem{outcomes} AT-QG Phase 202, \emph{Prediction Outcome Dashboard},
+Docs/ATQG\_PredictionOutcomes.md.
+\bibitem{pre1} AT-QG Phase 190, \emph{Pre-Registered 106 GeV Resonance},
+Docs/Research/ATQG\_PreRegistered106GeV.md.
+\bibitem{pre2} AT-QG Phase 191, \emph{Pre-Registered $0\nu\beta\beta$},
+Docs/Research/ATQG\_PreRegisteredMbb.md.
+\bibitem{pre3} AT-QG Phase 192, \emph{Pre-Registered Sector-Ladder Spectrum},
+Docs/Research/ATQG\_PreRegisteredLadderSpectrum.md.
+\bibitem{class} AT-QG Claim Classification Registry, Docs/Research/ATQG\_ClaimClassificationRegistry.md.
+\bibitem{auditmil} AT-QG Audit Milestone V2.0, Docs/Research/ATQG\_AUDIT\_MILESTONE\_V20.md.
+\bibitem{release} AT-QG Release Check, Docs/Research/ATQG\_RELEASE\_CHECK.md.
+\bibitem{qg188} AT-QG Phase 188, \emph{Prediction Audit}, Docs/Research.
+\bibitem{qg188a} AT-QG Phase 188A, \emph{106 GeV Resonance Evidence Audit}, Docs/Research.
+\bibitem{qg199} AT-QG Phase 199, \emph{P1 Evidence Update}, Docs/Research.
+\bibitem{qg200} AT-QG Phase 200, \emph{Sector Ladder Evidence Audit}, Docs/Research.
+\bibitem{qg201} AT-QG Phase 201, \emph{Ladder Statistics Audit}, Docs/Research.
+\bibitem{qg203} AT-QG Phase 203, \emph{Absolute Neutrino Mass Origin}, Docs/Research.
+\bibitem{valid001} AT-VALID001, \emph{Remaining Untested Items Audit}, Docs/Research/ATVALID\_UntestedItemsAudit.md.
+\end{thebibliography}
+
+\end{document}

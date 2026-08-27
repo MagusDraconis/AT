@@ -1,43 +1,55 @@
 cff-version: 1.2.0
-message: "If you use THE Q-MODEL (AT), please cite it as below."
-type: software
-title: "THE Q-MODEL — From Q to Cosmology"
+
+message: "If you use The Actualization Theory (AT), please cite it as below."
+
+title: "The Actualization Theory"
+
 abstract: >-
-  THE Q-MODEL (AT) is a theory of structure and content that compresses observable
-  physics to four primitives (the individuation principle Q, Random Actualization, the
-  scale triad, and a single nonlinearity parameter M^2). It holds that the form of every
-  structure is derivable from these primitives while the content is realized by contingent
-  draw. The dynamical layer is the graph Laplacian L_Q; the derivation program yields U(1),
-  spatial dimension 3+1, the multiplicity lower bound, the log-normal abundance law, and
-  phase-gradient gravity whose leading order is the Einstein equations.
+  The Actualization Theory (AT) reconstructs physics from the primitive
+  Difference and the tensor reference η through the hierarchy
+  Difference → Actualization → Inevitable Spectrum → Physics.
+  The theory reconstructs quantum mechanics, gravity,
+  standard-model observables, and cosmology as spectral
+  readouts of the D96 spectrum.
+  
+
 authors:
   - family-names: Wieser
     given-names: Fabrice
     email: fabrice.wieser@outlook.com
+
 keywords:
-  - THE Q-MODEL
-  - AT
-  - emergence
-  - quantum foundations
-  - causal set theory
-  - graph Laplacian
-  - Schrödinger equation
-  - gauge structure
-  - radial acceleration relation
-  - dark energy
-  - structure/content split
-  - falsifiability
-license: MIT
-version: 1.0.0
-date-released: "2026-08-15"
+  - Actualization Theory
+  - Difference
+  - Actualization
+  - Emergence
+  - Quantum Foundations
+  - Gravity
+  - Cosmology
+  - Standard Model
+  - D96 Spectrum
+  - Physics
+
+license: CC-BY-4.0
+Monograph: CC-BY-4.0
+Code: MIT
+
+version: "2.0"
+
+date-released: "2026-08-27"
+
 repository-code: "https://github.com/MagusDraconis/AT"
+
 url: "https://github.com/MagusDraconis/AT"
+
 preferred-citation:
-  type: article
-  title: "THE Q-MODEL — From Q to Cosmology: A Theory of Structure, Complexity and Random Actualization"
+  type: book
+  title: "The Actualization Theory: A Reconstruction of Physics from Difference, Actualization and Spectrum"
   authors:
     - family-names: Wieser
       given-names: Fabrice
+  version: "2.0"
   year: 2026
-  version: "1.0.0"
-  url: "https://github.com/MagusDraconis/AT"
+  publisher: Zenodo
+  doi: 10.5281/zenodo.20681734
+  url: "https://doi.org/10.5281/zenodo.20681734"

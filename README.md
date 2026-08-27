@@ -92,3 +92,11 @@ Requirements: .NET 10, MathNet.Numerics 5.0
 - `Docs/AT_QuantumGravity_Program.md` — Complete QG program summary
 - `Docs/AT_LabBook.md` — Detailed experiment results
 - `Docs/Research/G4*.md` — Program G4 phase reports (native metric-to-operator coupling)
+
+## Publication
+
+- `Docs/Publication/V2.0/main.pdf` — Canonical monograph V2.0 (95 pages)
+- `Docs/Publication/V2.0/ActualizationTheory_PredictionRegistry.pdf` — Prediction Registry v1.0 (24 pages)
+- `Docs/Publication/RELEASE_NOTES_V2_0.md` — V2.0 release notes
+- `Docs/Publication/Zenodo_Abstract_V2_0.md` — Zenodo abstract
+- `Docs/Research/ATQG_ClaimClassificationRegistry.md` — claim classification (source of truth for wording)
