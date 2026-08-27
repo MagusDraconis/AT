@@ -38,6 +38,10 @@ The derivation uses only D96 spectral primitives:
 3. **Newton constant** — in natural units G = 1/M_Pl². Converting M_Pl from GeV
    to kg (1 GeV = 1.782662e-27 kg) gives the SI Newton constant G = ħc/M_Pl².
 
+The Planck-mass scale is fixed relative to the electroweak anchor `v`; the
+SI value of `G` additionally imports `ħ`, `c`, and the GeV↔kg conversion, so
+the SI result is a unit-conversion boundary.
+
 No fitted constants enter anywhere.
 
 ---

@@ -53,6 +53,9 @@ physical MH ≈ 125.25 GeV → deviation 0.003 %
 The collective scalar mode has mass = its fluctuation amplitude × the
 spectral radius of the octave band (the family/octave structure).
 
+Read strictly, the D96 factor is dimensionless; the GeV unit is inherited
+from the calibrated electroweak mass scale.
+
 ### 3.3 SM-Quartic Cross-Check (via Spectral Gap)
 
 ```

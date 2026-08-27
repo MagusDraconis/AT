@@ -1,0 +1,6 @@
+# Predictive Core of AT
+
+AT’s irreducible predictive core is a small, pre-registered set of natural observables derived from the D96 structural core and evaluated with three calibration anchors: `m_e`, `v`, and SI conversion conventions. The natural core includes the family count, `θ_QCD = 0`, two blind Higgs reconstructions, the Higgs mass `M_H`, the 106 GeV resonance `P1`, the neutrinoless double-beta effective mass `P2`, the sector-ladder spectrum `P3`, and the Majorana effective mass readout. These targets were fixed by structural derivation or frozen before observation, and they do not rely on fit parameters.
+
+The broader 29-observable register contains many additional calibrated reconstructions, but the predictive core remains distinct: it is the subset least exposed to catalog-driven target selection and most directly tied to the theory’s internal structure. In referee-safe terms, AT is strongest where it freezes the observable in advance or identifies an exact structural invariant; dimensional outputs then follow only after calibration. The result is a compact predictive nucleus with 0 fit parameters and explicit anchors, rather than a global claim of unique derivation for the full observable set.
+

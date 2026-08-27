@@ -49,6 +49,9 @@ PDG md ≈ 4.67 MeV → deviation 0.14 %
 The light-quark sector is anchored on the electron through the spectral
 access Σ√m/√Σm² and the occupation moment.
 
+The electron mass anchor is the unit bridge; the D96 moments themselves
+enter as dimensionless ratios.
+
 ### 3.2 Strange Ratio and Mass
 
 ```

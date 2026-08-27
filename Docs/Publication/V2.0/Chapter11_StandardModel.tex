@@ -30,10 +30,10 @@
 \label{c11:sec:sm-introduction}
 
 The preceding chapters established the foundation, the spectrum, the operator basis, and
-the quantum and gravitational structure of The Actualization Theory. This chapter derives
-the \emph{standard model} from the same foundation --- the fermion sectors, the gauge
-structure, the couplings, the flavor mixing, the weak scale and the Higgs, and a set of
-precision predictions --- as derived reads of the D96 spectral moments
+the quantum and gravitational structure of The Actualization Theory. This chapter
+reconstructs the \emph{standard-model observables} from the same foundation --- the fermion
+sectors, the gauge structure, the couplings, the flavor mixing, the weak scale and the
+Higgs, and a set of precision predictions --- as derived reads of the D96 spectral moments
 \cite{c11:QG149,c11:QG150,c11:QG157}.
 
 The central results are: the fermion sectors are reads of the spectral access counts
@@ -49,6 +49,25 @@ Throughout, the hosted-standard-model caveat is retained: every \emph{observable
 derived from the D96 moments, while the standard-model \emph{Lagrangian} and its dynamics
 are hosted --- a boundary, not a derivation gap, per the referee-safe architecture of
 MONO007 \cite{c11:MONO007}.
+
+The dimensionless D96 laws are then calibrated to measured anchors: the weak scale $v$
+for the weak/Higgs sector, the electron mass $m_e$ for the absolute quark masses, and the
+standard unit conversion when a result is reported in SI or GeV units. That calibration
+step fixes the physical units; it is not a new dynamical input.
+
+\subsection{Derived Observables versus Hosted Dynamics}
+\label{c11:sec:derived-vs-hosted}
+
+\begin{quote}
+\textbf{Derived:} primitives $\rightarrow$ actualization $\rightarrow$ spectrum $\rightarrow$
+observables.\\
+\textbf{Hosted:} SM Lagrangian, interaction dynamics, and external unit conventions.
+\end{quote}
+
+What is reconstructed here is the observable content of the standard model: masses,
+couplings, mixings, and precision numbers. What is not reconstructed is the full dynamical
+Lagrangian/vertex structure; that remains hosted and is treated as a boundary condition of
+the monograph, not as a derived output.
 
 \section{Fermion Sector}
 \label{c11:sec:fermion-sector}
@@ -77,20 +96,21 @@ fermion sectors and their mass hierarchy are spectral access reads.
 \section{Gauge Structure}
 \label{c11:sec:gauge}
 
-\begin{theorem}[The gauge structure is the D96 degree-12 structure]
+\begin{theorem}[The gauge structure is the D96 degree-12 observable sector]
 \label{c11:thm:gauge-structure}
 The gauge structure of the standard model, $U(1)\times SU(2)\times SU(3)$ --- the
-$1+3+8$ gauge sector --- is derived from the D96 sector structure: the degree-12 content of
+$1+3+8$ gauge sector --- is reconstructed from the D96 sector structure: the degree-12 content of
 the $C_{96}$ generator ring.
 \end{theorem}
 
 \begin{proof}
 The gauge-origin audit \cite{c11:QG161} establishes that the $1+3+8$ gauge sector is the
 degree-12 structure of the $C_{96}$ sector: the gauge generators are the D96 spectral
-content, giving one $U(1)$, three $SU(2)$, and eight $SU(3)$ generators --- derived from
-the D96 spectrum, not imported, and introducing no new primitive. Since the D96 spectrum is
-itself the derived output of the attractor (Chapter~\ref{c06:chap:d96},
-Theorem~\ref{c06:thm:d96-derived}), the gauge structure is twice-emergent.
+content, giving one $U(1)$, three $SU(2)$, and eight $SU(3)$ generators --- reconstructed as
+an observable sector from the D96 spectrum, not imported, and introducing no new primitive.
+Since the D96 spectrum is itself the derived output of the attractor
+(Chapter~\ref{c06:chap:d96}, Theorem~\ref{c06:thm:d96-derived}), the gauge structure is
+twice-emergent as an observable sector; the interaction dynamics remain hosted.
 \end{proof}
 
 \section{Coupling Constants}
@@ -158,7 +178,7 @@ reads, with no imported mixing input.
 
 \begin{theorem}[The weak scale and the Higgs mass]
 \label{c11:thm:weak-higgs}
-The weak scale and the Higgs mass are derived from the spectral structure:
+The weak scale and the Higgs mass are reconstructed from the spectral structure:
 \begin{equation}
 \label{c11:eq:higgs}
 v = (\Sigma m+\#d)\ln(\mathrm{span}) = 254\ \mathrm{GeV},
@@ -175,12 +195,17 @@ $v = (\Sigma m+\#d)\ln(\mathrm{span}) = 254$ GeV and the $W$ and $Z$ masses
 \cite{c11:QG169} gives $M_H = \sigma_{\mathrm{occ}}\cdot(\mathrm{span}/2) = 125.25$ GeV,
 matching observation within $0.003\%$; and the blind reconstruction \cite{c11:QG176}
 confirms this mass from the pre-Higgs D96 content only, with no Higgs observable as input.
+The D96 factors are dimensionless; the GeV unit is carried by the calibrated electroweak
+scale $v$.
 \end{proof}
 
-The Higgs is therefore a collective scalar of the theory: its mass is a spectral
+The Higgs is therefore a collective scalar observable of the theory: its mass is a spectral
 construction $M_H = \sigma_{\mathrm{occ}}\cdot(\mathrm{span}/2)$, whose constants are
 derived from the spectrum (Chapter~\ref{c06:chap:d96},
 Corollary~\ref{c06:cor:constants-derived}); it introduces no new primitive \cite{c11:QG169}.
+Read strictly, the D96 factor is dimensionless and the GeV unit is inherited from the
+calibrated electroweak mass scale. The Higgs sector observable is reconstructed; the Yukawa
+and full interaction dynamics remain hosted.
 
 \begin{lemma}[The neutrino masses are closed-form D96 laws]
 \label{c11:lem:neutrino-masses}
@@ -285,7 +310,8 @@ claim is made.
 \label{c11:thm:sm-consistent}
 The standard model is consistent with the canonical architecture: every derived SM
 observable is a read of the D96 spectral moments, with the hosted dynamics the single
-referenced boundary.
+referenced boundary. Dimensional observables are reported relative to calibration anchors,
+not from the dimensionless D96 data alone.
 \end{theorem}
 
 \begin{proof}
@@ -301,14 +327,15 @@ boundary (Remark~\ref{c11:remark:hosted-sm}).
 \section{Summary}
 \label{c11:sec:sm-summary}
 
-This chapter has derived the standard model: the fermion sectors are spectral access reads
-(Theorem~\ref{c11:thm:fermion-access}); the $1+3+8$ gauge sector is the D96 degree-12
-structure (Theorem~\ref{c11:thm:gauge-structure}); the couplings are spectral ratios
-(Theorem~\ref{c11:thm:couplings}); the CKM and PMNS matrices are derived spectral reads
-(Theorem~\ref{c11:thm:ckm}, Theorem~\ref{c11:thm:pmns}); and the weak scale, the Higgs mass,
-and the neutrino masses are spectral constructions (Theorem~\ref{c11:thm:weak-higgs},
-Lemma~\ref{c11:lem:neutrino-masses}). The precision predictions --- the oblique parameters
-$S,T,U$, the electron g-2, and the Majorana character --- are likewise derived
+This chapter has reconstructed the standard-model observables: the fermion sectors are
+spectral access reads (Theorem~\ref{c11:thm:fermion-access}); the $1+3+8$ gauge sector is
+the D96 degree-12 observable sector (Theorem~\ref{c11:thm:gauge-structure}); the couplings
+are spectral ratios (Theorem~\ref{c11:thm:couplings}); the CKM and PMNS matrices are
+derived spectral reads (Theorem~\ref{c11:thm:ckm}, Theorem~\ref{c11:thm:pmns}); and the
+weak scale, the Higgs mass, and the neutrino masses are spectral constructions
+(Theorem~\ref{c11:thm:weak-higgs}, Lemma~\ref{c11:lem:neutrino-masses}). The precision
+predictions --- the oblique parameters $S,T,U$, the electron g-2, and the Majorana
+character --- are likewise reconstructed as observable outputs
 (Theorem~\ref{c11:thm:oblique}, Theorem~\ref{c11:thm:electron-g2},
 Theorem~\ref{c11:thm:majorana}), so the standard model is consistent with the canonical
 architecture, with the hosted dynamics the single referenced boundary

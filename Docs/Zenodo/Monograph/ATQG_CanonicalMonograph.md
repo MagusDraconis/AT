@@ -16,11 +16,13 @@ core
 
 > **Difference → Actualization → Inevitable Spectrum → Physics.**
 
-The spectrum is the inevitable output of the actualization attractor, not a primitive. All physics —
-quantum mechanics, gravity, the standard model, cosmology — is emergent from the D96 spectrum's moments.
-The universality program establishes that the operator basis {Crowding, Compression, Beat, Locking} is
-universal across organized domains, that no fifth operator exists, and that the lock law (structure
-universal, values domain-specific) precedes organization and emerges at a critical transition.
+The spectrum is the inevitable output of the actualization attractor, not a primitive. The theory produces
+dimensionless structure first; dimensional observables appear only after calibration to measured anchors.
+All listed observables — quantum mechanics, gravity, the standard model, cosmology — are reconstructed from
+the D96 spectrum's moments once the relevant calibration scales are fixed. The universality program
+establishes that the operator basis {Crowding, Compression, Beat, Locking} is universal across organized
+domains, that no fifth operator exists, and that the lock law (structure universal, values domain-specific)
+precedes organization and emerges at a critical transition.
 
 **There is no remaining open physics-derivation frontier.** The current frontier is independent temporal
 evidence, the Bekenstein 2π boundary, and experimental validation of the pre-registered predictions.
@@ -119,13 +121,16 @@ Amplitudes |ψ|²=ρ, phase θ=2πk/N, complex structure, interference, measurem
 **Mandatory sources:** QG216, QG218, QG220, QG223, QG243, QG244
 
 **Chapter 10. Gravity and Spacetime** *(Emergent)*
-G, M_Pl, M∝R, Hawking, frame dragging, GPS, metric ansatz g=ρ^(2/d)η, native dynamics; the Bekenstein
-1/4 boundary (requires the imported 2π factor).
+G, M_Pl, M∝R, Hawking, frame dragging, GPS, metric ansatz g=ρ^(2/d)η, native dynamics; the weak scale v
+is the calibration anchor for dimensional masses, and the Bekenstein 1/4 boundary requires the imported 2π
+factor.
 **Mandatory sources:** QG181–187, QG222
 
 **Chapter 11. The Standard Model** *(Emergent)*
 Fermion sectors, gauge 1+3+8, couplings 1/α_em=137, CKM/PMNS, weak/Higgs, precision EW, neutrino masses,
-quark running — every OBSERVABLE derived from D96 moments.
+quark running — dimensionless D96 outputs become dimensional observables only after calibration to the
+appropriate anchor (v, m_e, or the standard unit conversion); every OBSERVABLE is derived relative to that
+calibration.
 **Mandatory sources:** QG149, QG150, QG157, QG161, QG162, QG165, QG167–169, QG172–180
 
 **Chapter 12. Cosmology** *(Emergent)*
@@ -197,13 +202,24 @@ Explicitly separated — these are **not** derivation gaps, they are the honest 
 | ψ ontological status | a face of Difference; its tensor-sector existence is a boundary question | QG286/301 |
 | Bekenstein 1/4 | structure derived (S∝A, M∝R, T∝1/R); the exact 1/4 needs the imported 2π quantum factor | QG185/196 |
 | π | numerical constant, not derivable inside the framework | QG291 |
-| SM dynamics | the Lagrangian/vertices are hosted, not derived; every observable is derived | QG242/245 |
+| SM dynamics | the Lagrangian/vertices are hosted, not derived; every observable is derived relative to a calibration anchor; unit conventions are imported | QG242/245 |
 
 ### Current Frontier (explicit, not open derivation)
 
 1. **Independent temporal evidence**
 2. **Bekenstein 2π boundary**
 3. **Experimental validation** (P1 106 GeV, P2 0νββ, P3 ladder)
+
+### Origin of Physical Units
+
+D96 supplies dimensionless occupancies, ratios, moments, and angles. Dimensional observables are obtained
+only after multiplication by a calibration scale fixed by measurement or by standard unit conversion.
+
+- **Weak/Higgs sector:** the calibration scale is the electroweak vev `v`; `M_W`, `M_Z`, and `M_H` are
+  dimensionless D96 factors acting on that anchor.
+- **Fermion sector:** the electron mass `m_e` anchors the absolute quark masses.
+- **Gravity / SI units:** `M_Pl` is reported in GeV once `v` is fixed, and `G_SI` additionally imports
+  `ħ`, `c`, and the GeV↔kg conversion. That is a unit-convention boundary, not a new dynamical derivation.
 
 ---
 
@@ -212,8 +228,8 @@ Explicitly separated — these are **not** derivation gaps, they are the honest 
 1. **I1 — ψ status:** v1.0 called ψ a *second primitive* (QG51); the canonical Difference Duality (QG286)
    makes ψ a *face of Difference*. The v1.0 wording must be superseded, not retained.
 2. **I2 — derivation vs hosted:** "No remaining open physics derivation frontier" (canonical) vs "SM
-   dynamics HOSTED/OPEN" (QG242/245). Precisely: every *observable* is derived; the SM *Lagrangian* is
-   hosted — a boundary, not a derivation gap.
+   dynamics HOSTED/OPEN" (QG242/245). Precisely: every *observable* is derived relative to a calibration
+   anchor; the SM *Lagrangian* is hosted — a boundary, not a derivation gap.
 3. **I3 — Bekenstein 2π:** the 1/4 coefficient requires an imported quantum factor; presented as a
    documented boundary, not hidden.
 4. **I4 — editorial:** re-issued phase numbers exist in the coverage register (QG318 ×3, QG319 ×2); the

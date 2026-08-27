@@ -40,6 +40,9 @@ The weak scale is the **fine-structure denominator (137) times the
 logarithmic spectral span** — the occupancy density scale of the D96
 spectrum.
 
+The D96 expression fixes the dimensionless multiplier; the GeV unit is
+carried by the electroweak calibration anchor `v`.
+
 ### 3.2 SU(2) Coupling
 
 ```
