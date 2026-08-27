@@ -238,8 +238,9 @@ Oblique parameters origin (S = occ₀/Σm = 0.0421, T = 2S = 0.0842, U = 0; T = 
 
 Open Questions:
 
-- current working hypothesis: the minimal base is Difference → Actualization → Spectrum → Physics; Q-events and the rest of the network hierarchy are downstream realizations, and QG300 makes the first-peak normalization structural — 5/4 is the boundary projection of the absolute first harmonic, so only ℓ₁ carries the extra factor while peak ratios cancel it; dimensional observables still require imported calibration anchors (v, m_e, and standard unit conversion), so units are fixed by measurement/convention rather than derived from the spectrum; N=96 is inevitable within the accepted structural class (period-3 seed, Z2 half-shift, three-family octave window), but a global proof excluding every conceivable alternative closure remains open.
+- current working hypothesis: the minimal base is Difference → Actualization → Spectrum → Physics; Q-events and the rest of the network hierarchy are downstream realizations, and the V2.0 audit pass classifies the first-peak 5/4 factor as a documented FIT (QG297, removable QG289, no mechanism) — only ℓ₁ carries it while peak ratios are pure spectral correspondences; dimensional observables still require imported calibration anchors (v, m_e, and standard unit conversion), so units are fixed by measurement/convention rather than derived from the spectrum; N=96 is inevitable within the accepted structural class (period-3 seed, Z2 half-shift, three-family octave window), but a global proof excluding every conceivable alternative closure remains open.
 - the authoritative frontier catalog is now the QG295–QG300 closure run: QG296 reconstruction completes the QG223–295 map, QG297 isolates the 5/4 exception, QG298 resolves the first peak, and the remaining frontier is primarily experimental — P1 106 GeV, P2 0νββ, P3 ladder; no gravity item remains
+- CORRECTION OF RECORD (V2.0 audit pass): the QG298/QG299 "5/4 = structural boundary projection (occ₀ + zero_mode)/occ₀" reading is REJECTED — that identity is a label identity without a mechanism (the same standard used to reject Bekenstein 1/occ₀ = 1/4); the registry classifies 5/4 as FIT (QG297, removable QG289). This supersedes the QG298 DETERMINATION and the QG299 "R4 5/4 CLOSED" entry; see Docs/Research/ATQG_AUDIT_MILESTONE_V20.md
 - P1 (106 GeV) status after QG199: PENDING — window 99–114 GeV neither confirmed nor excluded; 95 GeV cluster = 91.19 rung; new 152 GeV excess = 151.98 rung (P3, not P1); HL-LHC decisive
 - sector ladder (P3) after QG200/QG201: 12 rungs audited — CONFIRMED 3 (SM anchors Z/H/t), SUPPORTED 1 (151.98 = ~152 GeV excess, MODERATE SUPPORT alignment 2.80σ, 1-in-386), PENDING 8, none falsified
 - the anti-fit reaudit (QG214) confirms the methodology is clean: QG190-213 added 3 PRE-REGISTERED + 1 REGISTRY LOCK + 20 PREDICTION, zero retro-fit/overfit; RETRO-FIT=2 (QG140/146), OVERFIT=1 (QG147) still correct; risk confined to the fitting era QG140-148
@@ -377,6 +378,28 @@ Period-3 Seed (QG160: unique complete-Z2 natural size)
 → Sector Hierarchies (lepton / quark / neutrino)
 
 ## Major Milestones
+
+### V2.0 Audit Pass: Claim Classification & Registry Consistency
+
+Summary:
+
+Six audits closed for Monograph V2.0: QM_AUDIT001 (basis separation),
+D96_REPRO_AUDIT (graph provenance, exact reproduction), P2 reach wording,
+claim classification (16 claims → theorem/necessity/correspondence/calibration/
+hosted/fit; registry created), registry consistency (monograph + AT.App wording
+aligned; wording-only patches, theorem wording preserved), and AT.App claim badges.
+
+Correction of record:
+
+5/4 = FIT (QG297, removable QG289, no mechanism); the earlier QG298 "boundary
+projection" structural reading is rejected. Open items remain: observable-selection
+non-uniqueness, sector-label non-uniqueness, gauge correspondence vs hosted
+structure, and the ℓ₁ fitted normalization (5/4).
+
+Artifacts:
+
+Docs/Research/ATQG_ClaimClassificationRegistry.md, D96_REPRO_AUDIT.md,
+ATQG_AUDIT_MILESTONE_V20.md; AT.App badge commit ef09eafd.
 
 ### QG138-QG141: Fermion Structure Derived From Spectrum
 
