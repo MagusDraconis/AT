@@ -157,13 +157,13 @@ public static class AtlasDataService
             ]),
         new(
             "qg295-300-first-peak-origin",
-            "The First Peak Becomes a Boundary Projection",
+            "The First Peak Carries a Fitted Multiplier",
             "AT-QG Frontier · Phases 295–300",
             "The minimal hierarchy now reconstructs the major QG223–295 results, and the newest audits isolate the remaining 5/4 issue to the absolute first peak: only ℓ₁ carries the factor, while peak ratios remain pure spectral quantities.",
-            "QG296 closes the reconstruction audit, QG297 classifies 5/4 as an exception that remains a fit, and QG300 resolves the first peak: ℓ₁ = Σm·ln(span)·(5/4) is the absolute fundamental harmonic, while ℓ₂/ℓ₁ and ℓ₃/ℓ₁ are ratios that cancel the normalization. The 5/4 factor is the boundary projection of the background-to-first-octave transition, not a free constant.",
-            "For non-experts: the latest frontier work says the broad theory is already reconstructed. The remaining question is a single normalization on the first acoustic peak, and the answer is structural — it belongs only to the absolute peak, not to the ratios.",
-            "Only the absolute first peak carries the boundary normalization.",
-            "“Only ℓ₁ needs the projection; the ratios do not.”",
+            "QG296 closes the reconstruction audit, QG297 classifies 5/4 as an exception that remains a fit, and QG300 resolves the first peak: ℓ₁ = Σm·ln(span)·(5/4) is the absolute fundamental harmonic, while ℓ₂/ℓ₁ and ℓ₃/ℓ₁ are ratios that cancel the normalization. The 5/4 factor is documented as a fitted multiplier (QG297), removable in principle (QG289); it is not a derived constant.",
+            "For non-experts: the latest frontier work says the broad theory is already reconstructed. The remaining question is a single normalization on the first acoustic peak, and it is documented as a fitted multiplier (QG297) that belongs only to the absolute peak, not to the ratios.",
+            "Only the absolute first peak carries the fitted normalization.",
+            "“Only ℓ₁ needs the fitted multiplier; the ratios do not.”",
             true,
             [
                 new("AT-QG 296", "MINIMAL THEORY",
@@ -179,7 +179,7 @@ public static class AtlasDataService
                     "5/4 is a fit, not a derivation or boundary.",
                     "https://github.com/MagusDraconis/AT/blob/AT_v1.1/Docs/Research/ATQG_ExceptionAudit.md"),
                 new("AT-QG 300", "FIRST PEAK ORIGIN",
-                    "ℓ₁ alone carries the 5/4 boundary projection; peak ratios cancel it.",
+                    "ℓ₁ alone carries the 5/4 fitted multiplier (QG297), removable (QG289); peak ratios cancel it.",
                     "https://github.com/MagusDraconis/AT/blob/AT_v1.1/Docs/Research/ATQG_FirstPeakOriginAudit.md"),
             ]),
         new(

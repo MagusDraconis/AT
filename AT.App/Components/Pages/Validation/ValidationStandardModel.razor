@@ -30,7 +30,13 @@
             </HeaderContent>
             <RowTemplate>
                 <MudTd>@context.Name</MudTd>
-                <MudTd><span class="status-chip @StatusClass(context.Status)">@StatusLabel(context.Status)</span></MudTd>
+                <MudTd>
+                    <span class="status-chip @StatusClass(context.Status)">@StatusLabel(context.Status)</span>
+                    @if (ClaimStatusFor(context.Name) is { } claimStatus)
+                    {
+                        <span class="ms-1"><ClaimStatusBadge Status="@claimStatus.Status" Explanation="@claimStatus.Explanation" /></span>
+                    }
+                </MudTd>
                 <MudTd><span class="audit-phase">@context.Phase</span></MudTd>
                 <MudTd><span class="muted" style="font-size:0.8rem">@context.Detail</span></MudTd>
             </RowTemplate>
@@ -64,6 +70,20 @@
         _partialCount = _observables.Count(o => o.Status == "partial");
         _untestedCount = _observables.Count(o => o.Status == "untested");
         _totalCount = _observables.Count;
+    }
+
+    private static ClaimStatusInfo? ClaimStatusFor(string name)
+    {
+        if (name.StartsWith("CKM", StringComparison.Ordinal)) return Registry("CKM");
+        if (name.StartsWith("PMNS", StringComparison.Ordinal)) return Registry("PMNS");
+        if (name.StartsWith("1/α_em")) return new ClaimStatusInfo("1/α_em", ClaimStatus.Fit, "Fitted readout (137 = 95+42); no defined renormalization scale.");
+        if (name.StartsWith("MH", StringComparison.Ordinal)) return Registry("Higgs mass");
+        if (name.StartsWith("Δm²", StringComparison.Ordinal)) return Registry("Neutrino splittings");
+        if (name.StartsWith("Newton constant", StringComparison.Ordinal)) return Registry("Gravity");
+        return null;
+
+        static ClaimStatusInfo? Registry(string claim)
+            => TheoryBookDataService.ClaimStatuses.FirstOrDefault(c => c.Claim == claim);
     }
 
     private static string StatusClass(string status) => status switch
