@@ -1,10 +1,10 @@
-# THE Q-MODEL
+# The Actualization Theory
 
-*From Q to Cosmology*
+*A Reconstruction of Physics from Difference, Actualization and Spectrum*
 
 **AT**
 
-*A Theory of Structure, Complexity and Random Actualization*
+*The short name for The Actualization Theory*
 
 ---
 
@@ -18,9 +18,9 @@ Zenodo archive: https://doi.org/10.5281/zenodo.20681734
 
 ## Naming
 
-AT is the project acronym.
+AT is the project acronym and the short name used throughout the project.
 
-The official theory name is **THE Q-MODEL** — *From Q to Cosmology*.
+The official theory name is **The Actualization Theory** — *A Reconstruction of Physics from Difference, Actualization and Spectrum*.
 
 The acronym AT is retained for historical continuity and repository compatibility.
 
@@ -30,22 +30,23 @@ Matter is not fundamental. Matter consists of dynamically stabilized wave struct
 
 ## Primitives
 
-- **Q** — the irreducible process of becoming (actualization)
-- **Random Actualization** — Q-event locations are random within the causal structure
+- **Difference** — the irreducible primitive; count as the fundamental boundary
+- **Actualization** — the count-producing process face of Difference
+- **Q-event** — the unit of Difference, applied through Actualization
 - **(ℓ, τ, ħ)** — the irreducible physical triple: where, when, and how much
 
 ## Emergence Chain
 
 ```
-Q + Random Actualization
+Difference + η
     ↓
-Oscillation (ω₀ = 2π/τ = 1.17×10⁴⁴ Hz)
+Actualization
     ↓
-Phase → Interference → QM
+Inevitable Spectrum
     ↓
-Frequency Architecture → Particles → Atoms
+Physics
     ↓
-Phase Gradients → Geometry → Gravity
+Derived structures
 ```
 
 ## Research Programs

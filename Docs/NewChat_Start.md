@@ -1,6 +1,8 @@
-# AT - New Chat Context
+# The Actualization Theory — New Chat Context
 
 Authoritative current-state summary of the AT project.
+
+Current canonical theory name: **The Actualization Theory** — *A Reconstruction of Physics from Difference, Actualization and Spectrum*.
 
 This file contains only the concise, current knowledge. Historical detail:
 - Part 1 (Docs/NewChat_Start_Part1.md): Mission, hypothesis, and early phase log (through a0).
