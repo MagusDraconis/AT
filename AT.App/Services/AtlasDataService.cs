@@ -51,23 +51,6 @@ public static class AtlasDataService
 
     public static IReadOnlyList<DerivationNodeModel> DerivationRoots { get; } = BuildDerivationGraph();
 
-    public static IReadOnlyList<ClassificationItemModel> Taxonomy { get; } =
-    [
-        new("U(1)", ClassificationKind.Derived, "0.95"),
-        new("Spatial 3", ClassificationKind.Derived, "0.85"),
-        new("N ≥ 3", ClassificationKind.Derived, "0.90"),
-        new("Log-normal law", ClassificationKind.Derived, "theorem"),
-        new("SU(2)", ClassificationKind.RealUnderived, "0.70"),
-        new("SU(3) structure", ClassificationKind.RealUnderived, "0.10"),
-        new("Koide Q=2/3 (reality)", ClassificationKind.RealUnderived, "0.90"),
-        new("Koide 45° (origin)", ClassificationKind.RealUnderived, "0.70"),
-        new("Yukawas / couplings / Ω_DM", ClassificationKind.Drawn, "—"),
-        new("N ≤ 3", ClassificationKind.Drawn, "0.70"),
-        new("Color count 3", ClassificationKind.Drawn, "—"),
-        new("Internal N = 3", ClassificationKind.Derived, "0.70 (derived ∩ drawn)"),
-        new("Neutrino-Koide", ClassificationKind.Falsified, "0.90"),
-    ];
-
     public static IReadOnlyList<TestGroupModel> TestGroups { get; } =
     [
         new("Continuum",
