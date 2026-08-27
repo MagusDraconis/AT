@@ -30,9 +30,9 @@ Matter is not fundamental. Matter consists of dynamically stabilized wave struct
 
 ## Primitives
 
-- **Difference** — the irreducible primitive; count as the fundamental boundary
-- **Actualization** — the count-producing process face of Difference
-- **Q-event** — the unit of Difference, applied through Actualization
+- **Actualization** — the base count-producing process
+- **Q-event** — the unit of count produced through Actualization
+- **Difference** — the irreducible boundary that Actualization reads
 - **(ℓ, τ, ħ)** — the irreducible physical triple: where, when, and how much
 
 ## Emergence Chain
