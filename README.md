@@ -8,7 +8,7 @@
 
 ---
 
-**Version 1.1** — *Native Metric-to-Operator Coupling (Program G4)*
+**Version 2.0 (canonical)** — *The Actualization Theory*
 
 AT investigates whether matter, quantum behavior, and gravitation emerge from self-organizing oscillations of a temporal field.
 
