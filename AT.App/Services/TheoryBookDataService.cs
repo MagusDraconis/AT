@@ -636,7 +636,7 @@ public static class TheoryBookDataService
         new("CKM", ClaimStatus.Correspondence, "Spectral ratios matched to observation (0.58% deviation); no free constant; the ratio forms are selected."),
         new("PMNS", ClaimStatus.Correspondence, "T3-only spectral reads matched to observation (1.5% deviation); secondary catalog match."),
         new("Neutrino splittings", ClaimStatus.Correspondence, "Closed-form D96 ratios (Δm²21, Δm²31); the eV² units are calibrated."),
-        new("Higgs mass", ClaimStatus.Calibration, "Calibrated reconstruction via the anchor v (blind reconstruction, natural-core status); the factor σ_occ must be defined."),
+        new("Higgs mass", ClaimStatus.Calibration, "Calibrated reconstruction via the anchor v (blind reconstruction, natural-core status); σ_occ = 39.127 (√Var[4,4,87], occupation-density scalar) defined at first use."),
         new("Couplings", ClaimStatus.Correspondence, "1/α_em is a post-hoc fit (no defined renormalization scale); α_weak and α_strong correspond to spectral ratios."),
         new("Gravity", ClaimStatus.Calibration, "D96 natural-unit content × the anchor v, plus SI conversion; black-hole relations import the flat-rotation-curve profile."),
         new("Spacetime", ClaimStatus.Hosted, "The conformal factor and dynamics are derived from ρ; the metric tensor and its signature are primitive inputs via η."),
