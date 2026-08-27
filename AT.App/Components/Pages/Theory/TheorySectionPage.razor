@@ -9,6 +9,25 @@
 else
 {
     <TheorySectionView Section="@Section" />
+
+    <div class="page-section">
+        <h2 class="section-heading">Claim Status</h2>
+        <p class="muted">Derivational status of major AT claims, from the claim-classification registry (referee-safe wording; no content changes).</p>
+        <MudCard Elevation="1" Class="theory-card">
+            <MudCardContent>
+                @foreach (var c in TheoryBookDataService.ClaimStatuses)
+                {
+                    <div class="claim-status-row">
+                        <ClaimStatusBadge Status="@c.Status" Explanation="@c.Explanation" />
+                        <div>
+                            <MudText Typo="Typo.subtitle2" Class="fw-bold">@c.Claim</MudText>
+                            <MudText Typo="Typo.caption" Class="muted">@c.Explanation</MudText>
+                        </div>
+                    </div>
+                }
+            </MudCardContent>
+        </MudCard>
+    </div>
 }
 
 @code {

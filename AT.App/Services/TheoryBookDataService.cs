@@ -230,8 +230,8 @@ public static class TheoryBookDataService
             "joint link state, and measurement collapse is identified with Q-event actualization.",
         KeyResults:
         [
-            new("Interference from links", "Double-slit |e^{iθ₁}+e^{iθ₂}|² = 2+2cos(θ₁−θ₂) — interference recovered from link phases.", TheoryBadge.Match, ["ATQG650", "ATQG651"]),
-            new("Measurement = actualization", "A Q-event is a Born-weighted projection (collapse to a definite state).", TheoryBadge.Partial, ["ATQG730", "ATQG732"]),
+            new("Interference from links", "Double-slit P_I(±)=½(1±cos(θ₁−θ₂)) — interference recovered from link phases in the interference basis.", TheoryBadge.Match, ["ATQG650", "ATQG651"]),
+            new("Measurement = actualization", "A Q-event is a Born-weighted projection in the measurement basis (collapse to a definite outcome).", TheoryBadge.Partial, ["ATQG730", "ATQG732"]),
             new("Entanglement needs J", "Non-separable correlations need a joint (2-qubit) link state — a new sector beyond θ+S.", TheoryBadge.Postulated, ["ATQG710", "ATQG711", "ATQG712"]),
         ],
         Chapters:
@@ -245,11 +245,11 @@ public static class TheoryBookDataService
             new("interference", "Interference",
                 "Path phase accumulation gives interference: a natural consequence of link phases GIVEN the θ primitive.",
                 [
-                    new("Double-slit", "|e^{iθ₁}+e^{iθ₂}|² reproduces constructive/destructive interference.", TheoryBadge.Match, ["ATQG651"]),
+                    new("Double-slit", "P_I(±)=½(1±cos(θ₁−θ₂)) reproduces constructive/destructive interference.", TheoryBadge.Match, ["ATQG651"]),
                     new("Holonomy invariant", "Loop holonomy is gauge-invariant; |e^{iθ}|=1.", TheoryBadge.Derived, ["ATQG650"]),
                 ]),
             new("born-rule", "Born Rule",
-                "P = |amplitude|² is consistent with the actualization picture (probability = actualization density).",
+                "P = |amplitude|² is consistent with the actualization picture; in the generation basis the Born probabilities equal the actualization shares.",
                 [
                     new("Consistent", "Born rule P=|amplitude|² follows from link-phase amplitudes.", TheoryBadge.Match, ["ATQG652"]),
                     new("Actualization density", "|ψ|² = actualization density (QM-001 derivation).", TheoryBadge.Derived, ["QM-001"]),
@@ -267,7 +267,7 @@ public static class TheoryBookDataService
                     new("Collapse gap", "The single missing piece was the measurement collapse — resolved by actualization.", TheoryBadge.Partial, ["ATQG721", "ATQG722"]),
                 ]),
             new("measurement", "Measurement",
-                "Measurement collapse is identified with Q-event actualization: a Born-weighted projection to a definite state.",
+                "Measurement collapse is identified with Q-event actualization: a Born-weighted projection to a definite outcome in the measurement basis.",
                 [
                     new("Collapse = tick", "A Q-event is a discrete Born-weighted projection.", TheoryBadge.Derived, ["ATQG730"]),
                     new("General bases", "Arbitrary measurement bases reproduced via unitary rotation (θ+S+J); POVMs via Naimark dilation.", TheoryBadge.Match, ["ATQG741", "ATQG742"]),
@@ -620,4 +620,28 @@ public static class TheoryBookDataService
     /// <summary>Look up a section by its route slug (case-insensitive).</summary>
     public static TheorySection? GetSection(string slug)
         => Sections.FirstOrDefault(s => string.Equals(s.Slug, slug, StringComparison.OrdinalIgnoreCase));
+
+    /// <summary>
+    /// Claim-status registry for major AT claims, mirroring
+    /// Docs/Research/ATQG_ClaimClassificationRegistry.md. UI-only display data.
+    /// </summary>
+    public static IReadOnlyList<ClaimStatusInfo> ClaimStatuses { get; } =
+    [
+        new("N=96", ClaimStatus.Necessity, "Unique within the accepted structural class (period-3 seed, Z2 half-shift, three-family octave window, tested set); a global proof is not claimed."),
+        new("D96 spectrum", ClaimStatus.Theorem, "Eigenspectrum of the canonical attractor graph C96(±1..±6); reproduces multiplicities [42×2,5,6], 95+1 modes, moments, and span 6.40 exactly."),
+        new("Moment hierarchy", ClaimStatus.Theorem, "Exact spectral values (Σ√m, Σm, Σm², occMom); the assignment of sector access roles is a supported mapping, not a unique derivation."),
+        new("Sector mappings", ClaimStatus.Correspondence, "Supported assignments over the forced moment ladder; not a globally unique mapping."),
+        new("1+3+8 dimensions", ClaimStatus.Correspondence, "D96 sector counts supply a 1+3+8 partition (1 background, 3 octaves, 8 light modes) matching dim U(1)+dim SU(2)+dim SU(3) = 12 — a dimensional correspondence."),
+        new("Gauge groups U(1)×SU(2)×SU(3)", ClaimStatus.Hosted, "The gauge groups and their Lie algebras are hosted; the D96 structure provides only the dimensional correspondence 1+3+8."),
+        new("CKM", ClaimStatus.Correspondence, "Spectral ratios matched to observation (0.58% deviation); no free constant; the ratio forms are selected."),
+        new("PMNS", ClaimStatus.Correspondence, "T3-only spectral reads matched to observation (1.5% deviation); secondary catalog match."),
+        new("Neutrino splittings", ClaimStatus.Correspondence, "Closed-form D96 ratios (Δm²21, Δm²31); the eV² units are calibrated."),
+        new("Higgs mass", ClaimStatus.Calibration, "Calibrated reconstruction via the anchor v (blind reconstruction, natural-core status); the factor σ_occ must be defined."),
+        new("Couplings", ClaimStatus.Correspondence, "1/α_em is a post-hoc fit (no defined renormalization scale); α_weak and α_strong correspond to spectral ratios."),
+        new("Gravity", ClaimStatus.Calibration, "D96 natural-unit content × the anchor v, plus SI conversion; black-hole relations import the flat-rotation-curve profile."),
+        new("Spacetime", ClaimStatus.Hosted, "The conformal factor and dynamics are derived from ρ; the metric tensor and its signature are primitive inputs via η."),
+        new("CMB peak existence", ClaimStatus.Theorem, "A first peak exists structurally: the fundamental doublet is isolated by the dominant spectral gap."),
+        new("CMB peak location", ClaimStatus.Fit, "ℓ₁ = 220.48 requires the 5/4 factor — a fitted multiplier (QG297), not a derivation."),
+        new("Peak ratios", ClaimStatus.Correspondence, "Pure spectral ratios (r21=2.4368, r31=3.6965), no fitted constant; specific ratio forms selected."),
+    ];
 }

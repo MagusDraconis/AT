@@ -1,0 +1,32 @@
+@namespace AT.App.Components.Shared
+@using AT.App.Models
+
+<span class="badge claim-status-badge @CssClass" title="@Explanation">@Label</span>
+
+@code {
+    [Parameter, EditorRequired] public ClaimStatus Status { get; set; }
+
+    [Parameter] public string? Explanation { get; set; }
+
+    private string Label => Status switch
+    {
+        ClaimStatus.Theorem => "THEOREM",
+        ClaimStatus.Necessity => "NECESSITY",
+        ClaimStatus.Correspondence => "CORRESPONDENCE",
+        ClaimStatus.Calibration => "CALIBRATION",
+        ClaimStatus.Hosted => "HOSTED",
+        ClaimStatus.Fit => "FIT",
+        _ => Status.ToString().ToUpperInvariant()
+    };
+
+    private string CssClass => Status switch
+    {
+        ClaimStatus.Theorem => "badge-theorem",
+        ClaimStatus.Necessity => "badge-necessity",
+        ClaimStatus.Correspondence => "badge-correspondence",
+        ClaimStatus.Calibration => "badge-calibration",
+        ClaimStatus.Hosted => "badge-hosted",
+        ClaimStatus.Fit => "badge-fit",
+        _ => "badge-neutral"
+    };
+}

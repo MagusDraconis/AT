@@ -79,6 +79,16 @@ a { color: inherit; }
 /* Theory-book badge variants */
 .badge-compatible { color: #64B5F6; border-color: #64B5F6; background: rgba(100,181,246,0.12); }
 .badge-postulated { color: #FFB74D; border-color: #FFB74D; background: rgba(255,183,77,0.12); }
+/* Claim-status badges (ATQG_ClaimClassificationRegistry) */
+.badge-theorem { color: #81C784; border-color: #81C784; background: rgba(129,199,132,0.12); }
+.badge-necessity { color: #64B5F6; border-color: #64B5F6; background: rgba(100,181,246,0.12); }
+.badge-correspondence { color: #FFD54F; border-color: #FFD54F; background: rgba(255,213,79,0.12); }
+.badge-calibration { color: #4DD0E1; border-color: #4DD0E1; background: rgba(77,208,225,0.12); }
+.badge-hosted { color: #BA68C8; border-color: #BA68C8; background: rgba(186,104,200,0.12); }
+.badge-fit { color: #FF8A65; border-color: #FF8A65; background: rgba(255,138,101,0.12); }
+.claim-status-row { display: flex; align-items: flex-start; gap: 0.75rem; padding: 0.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.06); }
+.claim-status-row:last-child { border-bottom: none; }
+.claim-status-badge { white-space: nowrap; flex-shrink: 0; margin-top: 0.1rem; }
 .badge-match { color: #4DD0E1; border-color: #4DD0E1; background: rgba(77,208,225,0.12); }
 .badge-preferred { color: #BA68C8; border-color: #BA68C8; background: rgba(186,104,200,0.12); }
 .badge-milestone { color: #FFB74D; border-color: #FFB74D; background: rgba(255,183,77,0.16); }
