@@ -107,14 +107,15 @@ parameter.
 The \emph{density fractions} $\Omega_\Lambda$ and $\Omega_m$ are the information-density
 fractions of the D96 octave record --- the partition of the total density between vacuum
 and matter --- derived from the octave occupancies: $\Omega_\Lambda = I_{\mathrm{occ}}/\ln
-K$ and $\Omega_m = 1 - \Omega_\Lambda$, where $I_{\mathrm{occ}}$ is the realized octave
-record's information content.
+K_{\mathrm{oct}}$ and $\Omega_m = 1 - \Omega_\Lambda$, where $I_{\mathrm{occ}}$ is the
+realized octave record's information content and $K_{\mathrm{oct}} = 3$ the number of
+occupied octave classes.
 \end{theorem}
 
 \begin{proof}
 The fraction-origin audit \cite{c12:QG234} establishes the construction: the fractions are the
 information-density fractions of the D96 octave record, with
-$\Omega_\Lambda = I_{\mathrm{occ}}/\ln K = 0.6839$ and $\Omega_m = 0.3161$, matching
+$\Omega_\Lambda = I_{\mathrm{occ}}/\ln K_{\mathrm{oct}} = 0.6839$ and $\Omega_m = 0.3161$, matching
 observation within a fraction of a percent. The information content
 $I_{\mathrm{occ}} = KL(p\Vert\mathrm{uniform}) = 0.7513$ nats is computed from the D96
 occupancies $[4,4,87]$ with $95$ modes \cite{c12:QG228}. Hence the density partition of the
@@ -140,6 +141,9 @@ mode ladder. A first peak exists as a structural consequence: the fundamental do
 isolated by the dominant spectral gap. Its location $\ell_1 = 220.48$ requires the fitted
 multiplier $5/4$; the ratios $r_{21} = 2.4368$ and $r_{31} = 3.6965$ are spectral
 correspondences (Chapter~\ref{c06:chap:d96}, Corollary~\ref{c06:cor:constants-derived}).
+These are the spectral-correspondence constructions
+$r_{21} = (\Sigma m-\#d)\cdot\mathrm{occ}_0/\mathrm{occ}_2$ and
+$r_{31} = \mathrm{span}/\sqrt{3}$, producing $r_{21} = 2.4368$ and $r_{31} = 3.6965$.
 Hence the CMB acoustic structure is a spectral readout: existence structural, the ratios
 spectral, the peak location a documented fit.
 \end{proof}

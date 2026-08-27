@@ -95,7 +95,8 @@ consistent with it, and no number changes under the duality reinterpretation.
 The \emph{amplitude magnitude} of a state at generation $k$ is the square root of its
 counting-measure share: $|\psi_k| = \sqrt{\rho_k}$, where
 $\rho_k = \mu^k/S$ is the actualization share, $\mu$ the branching ratio of the
-Galton--Watson process, and $S = \sum_{j<K}\mu^j$. The amplitude magnitude is derived from
+Galton--Watson process, and $S = \sum_{j<K_{\mathrm{gen}}}\mu^j$, with $K_{\mathrm{gen}}$ the
+total number of generations. The amplitude magnitude is derived from
 the actualization process:
 \begin{equation}
 \label{c09:eq:amplitude}
@@ -114,6 +115,11 @@ $\sum_k|\psi_k|^2 = 1$ is exact by construction for any branching ratio $\mu$; t
 rule follows from the normalization of the share, so probability is the actualization share
 --- the measure, not a separately imposed rule.
 \end{proof}
+
+Here $\mu^k$ is the combinatorial path multiplicity of the Galton--Watson tree, namely the
+number of root-to-generation-$k$ paths, entering only through the normalized weight
+$\rho_k = \mu^k/S$. It is not identified with the conserved Q-event count of
+Theorem~\ref{c03:thm:count-conservation}.
 
 \section{Phase Structure}
 \label{c09:sec:phase}
@@ -146,6 +152,12 @@ property). A state with magnitude and phase is a complex state; a real-only stat
 would give classical addition with no interference. Hence the complex structure is derived
 from the two degrees of freedom.
 \end{proof}
+
+The lattice phase $\theta_k = 2\pi k/N$ governs \emph{state evolution}. Mixing and CP
+phases are \emph{separate} objects: they are derived from spectral ratios via the
+chiral-circulation construction, $\delta = \arcsin(r)$ for a spectral ratio $r$, are
+continuous functions of those ratios, and are \emph{not} restricted to the state-phase
+lattice.
 
 \section{Interference}
 \label{c09:sec:interference}

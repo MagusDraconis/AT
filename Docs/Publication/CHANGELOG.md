@@ -3,6 +3,43 @@
 All notable changes to THE Q-MODEL (AT) are documented here. Versions follow the
 repository's release cadence; this file covers the publication-relevant milestones.
 
+## [2.0.0] — 2026-08-27
+
+**Release status: READY FOR RELEASE — Monograph V2.0 (registry-consistent publication build).**
+
+### Added
+- Monograph V2.0 — `Docs/Publication/V2.0/main.pdf` (95 pages): publication-hardened
+  build of *The Actualization Theory* (Difference → Actualization → Spectrum → Physics).
+- Claim-classification registry — `Docs/Research/ATQG_ClaimClassificationRegistry.md`:
+  16 major claims classified theorem / necessity / correspondence / calibration / hosted / fit.
+- D96 reproducibility — canonical attractor graph `C96(±1..±6)`, Laplacian eigenvalues
+  `λ_k = 2Σ(1−cos 2πdk/96)`, and `ω = √λ` convention stated in the monograph; all D96
+  values reproduce exactly from the published graph alone.
+- Closure patches — `MONO_PHASE001/002`, `MONO_FREEZE001/002`: phase-type distinction,
+  symbol definitions (σ_occ, δ_d, Ω_0/Ω_2, K_gen, K_oct, α_2), μ^k clarification,
+  peak-ratio constructions.
+- AT.App claim-status badges (THEOREM…FIT) on Theory and Validation pages.
+- Release artifacts: `Docs/Publication/RELEASE_NOTES_V2_0.md`,
+  `Docs/Publication/Zenodo_Abstract_V2_0.md`.
+
+### Changed
+- Status-aware wording across monograph and AT.App aligned to the claim-classification
+  registry (wording only — equations, numbers, citations unchanged).
+- 5/4 first-peak factor documented as **FIT** (QG297, removable QG289), superseding the
+  earlier "boundary projection" reading.
+- K=6 link-length parameter disclosed as a selected input; degree-12 connectivity is
+  conditional on it (radius-6 and degree-12 are dynamical necessities given K=6).
+
+### Fixed
+- 0 undefined references, 0 multiply-defined labels, 0 errors (pdflatex ×3).
+- D96 spectrum reconstructible from the monograph alone (previously research-record only).
+
+### Open (documented, non-blocking)
+- Observable-selection non-uniqueness; sector-label non-uniqueness; gauge correspondence
+  vs hosted structure; ℓ₁ fitted 5/4 normalization.
+
+---
+
 ## [1.1.0] — 2026-08-16
 
 **Release status: Program G4 complete (native metric-to-operator coupling).**

@@ -157,8 +157,11 @@ and occupancy quantities, matched to the measured quark mixing.
 
 \begin{proof}
 The CKM-origin audit \cite{c11:QG165} establishes the constructions:
-$V_{us} = \#d/(2\Sigma m)$, $V_{cb} = (\omega_0/\omega_2)^{\delta_d}$,
-$V_{ub} = 2V_{cb}\cdot(\mathrm{occ}_0/\mathrm{occ}_2)$, with mean deviation $0.58\%$; the
+$V_{us} = \#d/(2\Sigma m)$, $V_{cb} = (\Omega_0/\Omega_2)^{\delta_d}$,
+$V_{ub} = 2V_{cb}\cdot(\mathrm{occ}_0/\mathrm{occ}_2)$, with mean deviation $0.58\%$; here
+$\Omega_0 = 0.924$ and $\Omega_2 = 3.385$ are the lowest and highest octave-family centers
+(octave-family centers, not the Laplacian modes $\omega_k = \sqrt{\lambda_k}$) and
+$\delta_d = 2.449$ is the down-sector effective dimension. The
 CKM CP phase and the Jarlskog invariant follow from the chiral circulation \cite{c11:QG166}.
 \end{proof}
 
@@ -176,7 +179,10 @@ correspondence, not an imported input.
 \end{proof}
 
 Both the quark (CKM) and the lepton (PMNS) mixing matrices are therefore spectral
-correspondences, with no imported mixing input.
+correspondences, with no imported mixing input. Consistent with the state-phase lattice of
+Chapter~\ref{c09:chap:qm} ($\theta_k = 2\pi k/N$), the mixing and CP phases
+$\delta_{CP}$ and $\delta_\nu$ are spectral-ratio phases, $\delta = \arcsin(r)$ from the
+chiral circulation: continuous functions of the spectral ratios, not lattice-restricted.
 
 \section{Higgs and Weak Scale}
 \label{c11:sec:higgs}
@@ -190,7 +196,10 @@ v = (\Sigma m+\#d)\ln(\mathrm{span}) = 254\ \mathrm{GeV},
 \qquad
 M_H = \sigma_{\mathrm{occ}}\cdot\frac{\mathrm{span}}{2} = 125.25\ \mathrm{GeV},
 \end{equation}
-with the $W$ and $Z$ masses following from the Weinberg projection.
+with the $W$ and $Z$ masses following from the Weinberg projection. Here
+$\sigma_{\mathrm{occ}} = 39.127$ is the collective occupation-density scalar --- the
+standard deviation of the octave occupancies $[4,4,87]$,
+$\sigma_{\mathrm{occ}} = \sqrt{\mathrm{Var}[4,4,87]}$.
 \end{theorem}
 
 \begin{proof}
@@ -283,6 +292,8 @@ charge, and has a real mass matrix. The effective Majorana mass is
 m_{\beta\beta} = \bigl|m_1c_{12}^2c_{13}^2 + m_2s_{12}^2c_{13}^2e^{i\alpha_2}
 + m_3s_{13}^2e^{-2i\delta_\nu}\bigr| = 2.02\times10^{-3}\ \mathrm{eV},
 \end{equation}
+Here $\alpha_2 = 0$, consistent with the real Majorana mass matrix derived from the D96
+reflection automorphism.
 within experimental limits and in reach of next-generation experiments.
 \end{theorem}
 
