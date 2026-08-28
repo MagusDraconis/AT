@@ -49,6 +49,7 @@ ResearchY-D_001  ↔  Y_D_001_Tests.cs
 | ResearchY-D_006 (Assignment Constraints Audit) | `AT.Tests/ResearchY/D_ResonanceStructure/Y_D_006_Tests.cs` | ACTIVE | 2026-08-28 | ✅ 6/6 PASSED — `Results/Y_D_006_Result.md` |
 | ResearchY-D_007 (Planck Scale Audit) | `AT.Tests/ResearchY/D_ResonanceStructure/Y_D_007_Tests.cs` | ACTIVE | 2026-08-28 | ✅ 7/7 PASSED — `Results/Y_D_007_Result.md` |
 | ResearchY-D_008 (Reference Unit Audit) | `AT.Tests/ResearchY/D_ResonanceStructure/Y_D_008_Tests.cs` | ACTIVE | 2026-08-28 | ✅ 6/6 PASSED — `Results/Y_D_008_Result.md` |
+| ResearchY-D_009 (Minimum Excitation Audit) | `AT.Tests/ResearchY/D_ResonanceStructure/Y_D_009_Tests.cs` | ACTIVE | 2026-08-28 | ✅ 7/7 PASSED — `Results/Y_D_009_Result.md` |
 
 ## Result Summaries
 

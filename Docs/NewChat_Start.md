@@ -615,6 +615,17 @@ per D_007). Reference without external calibration: YES as dimensionless (DERIVE
 physical (BOUNDARY). D96 provides dimensionless analogues of the atomic clock and the
 light-based meter, not physical references. No canonical value changed.
 
+ResearchY-D_009 (Minimum Excitation Audit, COMPLETE, tests 7/7 PASSED): is ω₁ the
+minimum non-zero actualization? Verdict: YES. ω₁ = 0.6216 is the smallest positive
+frequency — the first excitation and the first difference above the zero mode ω₀ = 0 —
+DERIVED. The spectral gap λ₂ = ω₁² = 0.3864 is the smallest positive eigenvalue; verified
+zero positive states in the interval (0, ω₁); multiplicity 2 (fundamental doublet, k=1
+and k=N−1). Classification: A) first frequency DERIVED; B) first difference DERIVED;
+C) first actualization EMERGENT (the minimum-excitation-as-count-event reading is
+interpretive); D) natural clock only NO — it is more than a clock, and as a physical
+clock it is BOUNDARY (D_008: dimensionless only). Property invariant under ring
+automorphisms. No canonical value changed.
+
 ### PRED001: Prediction Registry (standalone Zenodo publication)
 
 Summary:
