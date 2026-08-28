@@ -507,6 +507,16 @@ uniform reference state (ω₀=0, not a source). Propagation is NOT radial (bran
 tree-local + spectral global readout); radius r=N/2π is a size measure with no center
 point; closure = N=96 integer requires no source. No canonical value changed.
 
+ResearchY-C_002 (Radial Propagation Audit, COMPLETE, tests 6/6 PASSED): can propagation
+in C96 be genuinely radial? Verdict: FAIL — NOT canonically radial. Radial propagation
+requires a derived origin + shell ordering; C96 is D96 vertex-transitive (identical
+shell profiles from every node; diameter 8 = N/(2K) = 96/12; shells {1,12,12,12,12,12,
+12,12,11}; reflection symmetry d(o,k)=d(o,N−k)). Shortest-path propagation = radial
+shells (identical BFS layers). Canonical spreading = tree-local (branching ρ_k=μ^k/S,
+generation depth) + global (spectral readout, |φ_k(n)|²=1/96) — a NON-radial hybrid.
+Radial structure is a gauge/coordinate choice, not invariant content; formal diffusion
+shell model requires a chosen origin (non-canonical). No canonical value changed.
+
 ### PRED001: Prediction Registry (standalone Zenodo publication)
 
 Summary:
