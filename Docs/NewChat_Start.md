@@ -538,6 +538,16 @@ rotations DERIVED (z^N=1); N=96 symmetry DERIVED (D96, 47 Z2 pairs); 2π ROLE EM
 normalization is a unit convention). Consistent with B_001 (role) + B_002 (value). No
 canonical value changed.
 
+ResearchY-D_002 (Standing Wave Model, COMPLETE, tests 7/7 PASSED): canonical standing
+wave model of C96. Mode decomposition: Ψ(n,t)=Σ_k[a_k cos(2πkn/96)+b_k sin(2πkn/96)]
+cos(ω_k t), 95 positive Fourier modes + 1 zero mode (complete, orthogonal). Resonant
+pairs: 47 Z2 pairs (λ_k=λ_{96−k}, 94 paired real modes) + self-conjugate k=48 (λ=12)
+= 95 positive modes; multiset 42×2+5+6; fundamental doublet ω₁=0.6216. Zero mode:
+λ₀=ω₀=0, constant = uniform rest state (reference, C_001). Spatial vs spectral:
+hybrid — spatial harmonics (geometric, center-free) × spectral eigenvalues (algebraic).
+Closure consistency: R^N=identity, θ_{k+N}≡θ_k, z_k^N=1, algebraic spectrum (B_002),
+π only in role (B_003). Classification: HYBRID (center-free). No canonical value changed.
+
 ### PRED001: Prediction Registry (standalone Zenodo publication)
 
 Summary:
