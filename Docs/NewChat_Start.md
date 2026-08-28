@@ -672,6 +672,17 @@ common invariant (spectral source, moment, resonance, closure scale) links the t
 anchors. Anchor count: 2 → IRREDUCIBLE — any reduction introduces a new primitive, a fit,
 or breaks D_012. No canonical value changed.
 
+ResearchY-D_014 (Two-Anchor Structure Audit, COMPLETE, tests 8/8 PASSED): why does
+physics require exactly two irreducible anchors {v, m_e}? Verdict: the two anchors admit
+a boson/fermion (gauge/matter) interpretation — v is the bosonic anchor (M_W/M_Z/M_H/
+M_Pl), m_e the fermionic anchor (quark/lepton masses, m_u = m_e·Σ√m/√Σm²). The
+boson/fermion and gauge/matter splits are consistent (supported); the even/odd, Z2
+doublet (47 pairs), and octave family (3) splits have NO canonical anchor mapping. The
+two-anchor structure is NOT a consequence of D96: v's dimensionless form
+((Σm+#d)·ln(span) = 254.37) IS D96-derived, but the anchor COUNT (2) is the calibration
+split (bosonic scale + fermionic scale), and m_e has no D96 construction. Two anchors ↔
+two sectors = EMERGENT interpretation, not DERIVED. No canonical value changed.
+
 ### PRED001: Prediction Registry (standalone Zenodo publication)
 
 Summary:
