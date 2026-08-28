@@ -43,6 +43,7 @@
 | ResearchY-D_013 | Anchor Reduction Audit | `D_ResonanceStructure/ResearchY-D_013.md` | `AT.Tests/ResearchY/D_ResonanceStructure/Y_D_013_Tests.cs` (8/8 ✅) | COMPLETE |
 | ResearchY-D_014 | Two-Anchor Structure Audit | `D_ResonanceStructure/ResearchY-D_014.md` | `AT.Tests/ResearchY/D_ResonanceStructure/Y_D_014_Tests.cs` (8/8 ✅) | COMPLETE |
 | ResearchY-D_015 | N=96 Uniqueness Audit | `D_ResonanceStructure/ResearchY-D_015.md` | `AT.Tests/ResearchY/D_ResonanceStructure/Y_D_015_Tests.cs` (6/6 ✅) | COMPLETE |
+| ResearchY-D_016 | Family-Count Origin Audit | `D_ResonanceStructure/ResearchY-D_016.md` | `AT.Tests/ResearchY/D_ResonanceStructure/Y_D_016_Tests.cs` (7/7 ✅) | COMPLETE |
 | ResearchY-A_002 | Difference Disturbance | — | — | PLANNED |
 | ResearchY-A_003 | Actualization Propagation | — | — | PLANNED |
 | ResearchY-B_001 | Circular Closure | — | — | PLANNED |

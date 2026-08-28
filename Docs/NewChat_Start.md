@@ -694,6 +694,17 @@ canonical occupancy [4,4,87] (occMom = 1900.25). N≠96 loses the 3-family struc
 the canonical occupancy. Matches canonical D96 selection (QG159/QG160). No canonical
 value changed.
 
+ResearchY-D_016 (Family-Count Origin Audit, COMPLETE, tests 7/7 PASSED): audit of
+families = floor(log2 span)+1. Verdict: family count = 3 ⟺ span ∈ [4,8) is DERIVED (a
+mathematical identity); the 3-family window, 6|N, and N=96 are SELECTION RULES.
+Removing the N=96 assumption and scanning C_N(±1..±6) for N ∈ [13,300] finds 61 rings
+with 3 families (N ∈ [60,120]) — N=96 is NOT unique for the family count. 6|N is not
+necessary (N=61..65 give 3 families without it); N=96 is one of 11 rings with both 6|N
+and 3 families, selected by the additional D96 criteria (period-3 seed, Z2 half-shift,
+unique octave rung — D_015), not by the family count alone. Counterexamples: N=64/90/120
+→ 3 families, N=128 → 4, N=29 → 2. Only the span-window equivalence is derived; the
+rest are selections. No canonical value changed.
+
 ### PRED001: Prediction Registry (standalone Zenodo publication)
 
 Summary:
