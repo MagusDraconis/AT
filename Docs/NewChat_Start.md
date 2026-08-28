@@ -517,6 +517,16 @@ generation depth) + global (spectral readout, |φ_k(n)|²=1/96) — a NON-radial
 Radial structure is a gauge/coordinate choice, not invariant content; formal diffusion
 shell model requires a chosen origin (non-canonical). No canonical value changed.
 
+ResearchY-D_001 (Standing Wave Audit, COMPLETE, tests 7/7 PASSED): can standing waves
+exist on C96 without center-based geometry? Verdict: YES. Standing wave = time-harmonic
+eigenfunction ψ(n,t)=φ(n)cos(ωt+δ), Lφ=λφ, ω=√λ; modes are the Fourier harmonics
+cos(2πkn/N)/sin(2πkn/N). Geometric standing wave (spatial pattern, node positions depend
+only on k — no origin) vs spectral standing wave (frequency ω_k=√λ_k) are centerless
+faces of one object. Zero mode λ₀=ω₀=0 = uniform rest state (degenerate standing wave,
+the reference). Resonant pairs: 47 Z2 pairs (42 doublets + one 5-group + one 6-group),
+fundamental doublet ω₁=0.6216. Classification: HYBRID (spatial pattern + spectral
+frequency), CENTER-FREE (consistent with C_001/C_002). No canonical value changed.
+
 ### PRED001: Prediction Registry (standalone Zenodo publication)
 
 Summary:

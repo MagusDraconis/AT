@@ -40,6 +40,7 @@ ResearchY-D_001  ↔  Y_D_001_Tests.cs
 | ResearchY-B_002 (Origin of π Value Audit) | `AT.Tests/ResearchY/B_CircularGeometry/Y_B_002_Tests.cs` | ACTIVE | 2026-08-28 | ✅ 7/7 PASSED — `Results/Y_B_002_Result.md` |
 | ResearchY-C_001 (Center Audit) | `AT.Tests/ResearchY/C_SourceGeometry/Y_C_001_Tests.cs` | ACTIVE | 2026-08-28 | ✅ 6/6 PASSED — `Results/Y_C_001_Result.md` |
 | ResearchY-C_002 (Radial Propagation Audit) | `AT.Tests/ResearchY/C_SourceGeometry/Y_C_002_Tests.cs` | ACTIVE | 2026-08-28 | ✅ 6/6 PASSED — `Results/Y_C_002_Result.md` |
+| ResearchY-D_001 (Standing Wave Audit) | `AT.Tests/ResearchY/D_ResonanceStructure/Y_D_001_Tests.cs` | ACTIVE | 2026-08-28 | ✅ 7/7 PASSED — `Results/Y_D_001_Result.md` |
 
 ## Result Summaries
 
