@@ -638,6 +638,18 @@ same anchor as the Planck scale (D_007); c and ħ are additional SI imports. Ato
 speed-of-light meter, and Planck units are all external physical constants. No canonical
 value changed.
 
+ResearchY-D_011 (Universal Reference Audit, COMPLETE, tests 7/7 PASSED): can ω₁ be the
+universal reference for all physical units? Verdict: ω₁ is the universal DIMENSIONLESS
+reference — all spectral ratios are expressed relative to it (ω_max/ω₁ = span = 6.40,
+λ_max/λ₂ = 40.99, span/ω₁ = 10.30 — DERIVED, exact, invariant). It is NOT the universal
+physical-unit reference: every physical dimension (time/frequency/energy/mass/length)
+requires a dimensionful anchor (D_010, BOUNDARY). ω₁ does not act as an atomic transition
+frequency, speed-of-light, or Planck reference (it is a dimensionless spectral frequency).
+Anchor count: A) ω₁ only → DERIVED (dimensionless); B) ω₁ + one anchor (v) → BOUNDARY
+(energy/mass); C) ω₁ + multiple anchors (v, c, ħ) → BOUNDARY (SI). Minimal anchor count:
+1 (v). Unit-attachment model = the pair (dimensionless reference + anchor). No canonical
+value changed.
+
 ### PRED001: Prediction Registry (standalone Zenodo publication)
 
 Summary:
