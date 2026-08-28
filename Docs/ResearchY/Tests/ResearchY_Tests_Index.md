@@ -57,6 +57,7 @@ ResearchY-D_001  ↔  Y_D_001_Tests.cs
 | ResearchY-D_014 (Two-Anchor Structure Audit) | `AT.Tests/ResearchY/D_ResonanceStructure/Y_D_014_Tests.cs` | ACTIVE | 2026-08-28 | ✅ 8/8 PASSED — `Results/Y_D_014_Result.md` |
 | ResearchY-D_015 (N=96 Uniqueness Audit) | `AT.Tests/ResearchY/D_ResonanceStructure/Y_D_015_Tests.cs` | ACTIVE | 2026-08-28 | ✅ 6/6 PASSED — `Results/Y_D_015_Result.md` |
 | ResearchY-D_016 (Family-Count Origin Audit) | `AT.Tests/ResearchY/D_ResonanceStructure/Y_D_016_Tests.cs` | ACTIVE | 2026-08-28 | ✅ 7/7 PASSED — `Results/Y_D_016_Result.md` |
+| ResearchY-D_017 (Scale Stability Audit) | `AT.Tests/ResearchY/D_ResonanceStructure/Y_D_017_Tests.cs` | ACTIVE | 2026-08-28 | ✅ 10/10 PASSED — `Results/Y_D_017_Result.md` |
 
 ## Result Summaries
 

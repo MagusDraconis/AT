@@ -705,6 +705,19 @@ unique octave rung — D_015), not by the family count alone. Counterexamples: N
 → 3 families, N=128 → 4, N=29 → 2. Only the span-window equivalence is derived; the
 rest are selections. No canonical value changed.
 
+ResearchY-D_017 (Scale Stability Audit, COMPLETE, tests 10/10 PASSED): which N gives
+the most stable physical scale? Verdict: λ₂ and ω₁ do NOT select N=96 — they are
+strictly monotone in N over [32,300] (λ₂: 0.8596@64 → 0.3864@96 → 0.0972@192), and
+scale stability IMPROVES with N (relative λ₂ change under ΔN=1: 0.030@64 → 0.020@96 →
+0.010@192; a trivial λ₂~1/N² trend). The [4,4,87] occupancy is N=96-specific
+(structural, N=95→[4,4,86], N=97→[4,4,88]) but not a stability property. occMom varies
+smoothly (1648@90 → 1900@96 → 2170@102). Spectral density around ω₁: band1 = 4 for all
+N in the window. Selection: A family-selected PARTIAL (window [60,120], D_016); B
+scale-selected NO; C resonance-selected NO (Z2 doublet at all N); D closure-selected
+YES (Ch5 attractor fixed point). Stability scores (inverse rel change): N=96 50, N=128
+65, N=192 97 — monotone. λ₂/ω₁ do NOT select N=96 more fundamentally than the family
+count; the closure does. No canonical value changed.
+
 ### PRED001: Prediction Registry (standalone Zenodo publication)
 
 Summary:
