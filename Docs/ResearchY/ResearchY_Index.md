@@ -1,0 +1,44 @@
+# ResearchY — Hierarchical Index
+
+**Program:** ResearchY — Wave Geometry Program
+**Index version:** 1.0 (2026-08-28)
+**Maintenance rule:** every investigation receives a permanent identifier on creation;
+numbers within a group are never reused; new investigations extend the sequence within
+their group. Groups are topics, not chronological order.
+
+## Identifier Format
+
+```
+ResearchY-G_###        where G ∈ {A, B, C, D} and ### is the sequence in the group
+```
+
+## Group Registry
+
+| Group | Folder | Topic | Planned investigations |
+|---|---|---|---|
+| A | `A_WaveFoundations/` | Wave Foundations | A_001 Wave Origin Audit · A_002 Difference Disturbance · A_003 Actualization Propagation |
+| B | `B_CircularGeometry/` | Circular Geometry | B_001 Circular Closure · B_002 Origin of π · B_003 Origin of 2π |
+| C | `C_SourceGeometry/` | Source Geometry | C_001 Center Audit · C_002 Radial Propagation |
+| D | `D_ResonanceStructure/` | Resonance Structure | D_001 D96 Resonance Audit · D_002 Standing Wave Model |
+
+## Investigation Registry
+
+| ID | Title | Status | File | Depends on | Notes |
+|---|---|---|---|---|---|
+| ResearchY-A_001 | Wave Origin Audit | COMPLETE | `A_WaveFoundations/ResearchY-A_001.md` | — | Can Difference be read as a localized disturbance; do propagation, resonance, radius, circumference, π, 2π emerge naturally? |
+| ResearchY-A_002 | Difference Disturbance Audit | COMPLETE | `A_WaveFoundations/ResearchY-A_002.md` | ResearchY-A_001 | What constitutes a Difference; which disturbance interpretation (perturbation / phase displacement / graph defect / occupancy disturbance / mode excitation) is best; can a single localized Difference generate propagation across C96? Verdict: C5 mode excitation best (|ψ_k|² = ρ_k exact); zero mode = undisturbed background. |
+| ResearchY-A_003 | Actualization Propagation Audit (rev. 2) | COMPLETE | `A_WaveFoundations/ResearchY-A_003.md` | ResearchY-A_001, ResearchY-A_002, ResearchY-A_004 | Rev. 2 after A_004: what propagates (count ρ); carrier (tree + ring); local generation + global readout; μ^k = depth; branching NOT rewritable as wave (phase separate DOF); Z2/octaves/locking are spectral (graph), not propagation. Preferred: branching + spectral projection. |
+| ResearchY-A_004 | Propagation Falsification Audit | COMPLETE | `A_WaveFoundations/ResearchY-A_004.md` | ResearchY-A_003 | Falsification attempt: is "Actualization = branching + spectral projection" unique or merely preferred? Tests alternatives A (branching), B (diffusion), C (wave), D (hybrid) for reproduction of [4,4,87], λ structure, and moments — no fitting, no targets, no new assumptions. Verdict: FALSIFICATION FAILED — conclusion UNIQUE (not merely preferred). |
+| ResearchY-A_005 | Spectral Projection Origin | COMPLETE | `A_WaveFoundations/ResearchY-A_005.md` | ResearchY-A_003 rev2, ResearchY-A_004 | Why does branching project onto spectral modes? Verdict: spectral projection is DERIVED, not primitive — minimal origin is the actualization attractor (D): closure → graph C96 → Laplacian → unique eigenbasis → readout. A fundamental FAILS (3rd primitive); B closure PARTIAL (size ≠ structure); C resonance CIRCULAR. |
+
+## Rules
+
+1. IDs are permanent. A retired investigation keeps its ID; a new investigation never
+   reuses a number.
+2. An investigation must be registered here (new row) **before** its content file is
+   finalized.
+3. Dependencies are recorded in the "Depends on" column; the dependency graph must remain
+   acyclic.
+4. Status values: PLANNED · IN_PROGRESS · COMPLETE · SUPERSEDED · RETIRED.
+5. Every investigation checks consistency against the canonical hierarchy
+   Difference → Actualization → Inevitable Spectrum → Physics.

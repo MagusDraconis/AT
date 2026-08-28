@@ -378,6 +378,97 @@ Period-3 Seed (QG160: unique complete-Z2 natural size)
 
 ## Major Milestones
 
+### ResearchY: Wave Geometry Program (V2.1 research track)
+
+Summary:
+
+ResearchY (Docs/ResearchY/) is the V2.1 research program investigating whether
+Difference, Actualization, Spectrum, resonance, circular closure, π, 2π, center, source,
+and wave propagation are connected within canonical AT. Four topic groups: A Wave
+Foundations (A_001 Wave Origin Audit, A_002 Difference Disturbance, A_003 Actualization
+Propagation), B Circular Geometry (B_001 Circular Closure, B_002 Origin of π, B_003 Origin
+of 2π), C Source Geometry (C_001 Center Audit, C_002 Radial Propagation), D Resonance
+Structure (D_001 D96 Resonance Audit, D_002 Standing Wave Model). Permanent IDs, never
+reused; groups are topics, not chronological order. Program indexes:
+ResearchY_Index.md (permanent-ID registry), ResearchY_Status.md (investigation + test
+status), Tests/ResearchY_Tests_Index.md + Tests/Results/ (test registry/result store).
+Every quantifiable hypothesis gets an xUnit test: ResearchY-A_001 ↔ Y_A_001_Tests.cs
+(naming convention Y_G_NNN_Tests.cs under AT.Tests/ResearchY/<Group>, mirroring the
+Docs/ResearchY folder structure).
+
+ResearchY-A_001 (Wave Origin Audit, COMPLETE) verdicts: Q1 Difference-as-disturbance
+COMPATIBLE (as a configuration, not the definition); Q2 Actualization-as-propagation
+PARTIAL (generation-space branching μ^k only; spatial propagation stays null-geodesic
+n=1, no refraction); Q3 spectrum-as-resonance COMPATIBLE AS EXPLANATION
+(graph-Laplacian eigenmodes ARE the standing normal modes of the closed ring C96);
+Q4 center/source PARTIAL (no spatial center; branching root + ladder radii 6.0–17.333);
+Q5 D96-as-standing-wave YES (static normal modes; Z2 doublets = ±k ring degeneracy);
+Q6 circular propagation PARTIAL (ring topology + phase lattice θ_k=2πk/96 emerge;
+traveling-wave dynamics not derived); Q7 π/2π from closure OBSERVATION (spectral layer
+already uses 2π as ring-closure periodicity constant; does NOT resolve Bekenstein
+boundary, QG196 unchanged); Q8 radius/circumference/wavelength/frequency/resonance
+ALREADY IMPLICIT (ladder radii, N=96 ring, mode index, ω=√λ, degeneracy/octave bands).
+
+Rules: no canonical AT V2.0 modifications; no new primitives; no ad-hoc constants;
+research and audit only; assumptions recorded explicitly; consistency checked against
+Difference → Actualization → Spectrum → Physics. Source note:
+Docs/ResearchY/ResearchY-A_WaveOriginAudit.md (background working audit).
+
+Test status: Y_A_001 suite (5 tests) PASSED 2026-08-28 — canonical D96 constants
+reproduced exactly (Σ√m 64.0825, Σm² 229, span 6.4025, bands [4,4,87], occMom 1900.25,
+ω_min 0.6216, Z2 pairs 47); wave observables read from same spectrum (circumference 96,
+radius N/2π=15.279 inside ladder radii 6.0–17.333, 2π as ring-closure periodicity
+constant). Result summary in Tests/Results/Y_A_001_Result.md.
+
+ResearchY-A_002 (Difference Disturbance Audit, COMPLETE, tests 7/7 PASSED): which
+interpretation of Difference is a localized disturbance? Verdict: C5 mode excitation best
+(|ψ_k|² = ρ_k exact, QG216); C1 delta-on-ρ = point-source (Q-event, uniform modal weight
+1/96, Parseval Σ|ψ|²=1); C2 phase displacement = count-preserving circulation carrier
+(θ_k=2πk/96, |e^{iθ}|²=1); C3 graph defect = configuration only (attractor is fixed
+point); C4 occupancy disturbance = re-reading only. Propagation: generation-space
+branching ρ_k=μ^k/S (canonical, MONO_PHASE002) — counting and propagation are the same
+branching process in two vocabularies (RQ6: NO, not "better as propagation"); spatial
+transport excluded (n=1). RQ7: zero mode λ₀=0, ω₀=0, constant = undisturbed background.
+No canonical value changed.
+
+ResearchY-A_003 (Actualization Propagation Audit, rev. 2, COMPLETE, tests 7/7 PASSED):
+revised after A_004 (accepted: branching + spectral projection survives falsification;
+single models fail). New scope: what propagates (count share ρ); carrier (Galton–Watson
+tree for count + ring C96 for modes); locality split (local generation / global readout,
+|φ_k(n)|²=1/96 on every site); μ^k = propagation depth (MONO_PHASE002); RQ5 branching
+NOT rewritable as wave transport (first-order scalar; phase is a separate DOF per Ch9);
+RQ6 Z2 pairing NOT explained by propagation (circulant-graph property, λ_k=λ_{N−k},
+47 pairs); RQ7 octave occupancies [4,4,87] NOT explained by propagation (spectral ω
+octaves); RQ8 resonance locking NOT explained by propagation (spectral gap λ₂=0.3864,
+lock chain occMom/Σm=20.0026). Preferred: branching (local) + spectral projection
+(global). No canonical value changed.
+
+ResearchY-A_004 (Propagation Falsification Audit, COMPLETE, tests 7/7 PASSED):
+falsification attempt on A_003 conclusion "Actualization = branching + spectral
+projection". Alternatives tested under no-fitting/no-target/no-new-assumption
+constraints: A branching (scalar shares, no octave structure — fails), B diffusion
+(relaxes to uniform; dominant-mode count 3 not [4,4,87]; t free — fails), C wave
+(reproduces [4,4,87] ONLY by reading ω_k octaves = spectral projection; adds
+non-canonical dynamics — fails as independent generation), D hybrid (needs coupling
+constant = fitting — fails). λ structure: NO model generates λ_k (all operators are
+functions of the graph Laplacian — the medium). Moments: only the multiplicity
+multiset [42×2,5,6] reproduces them (spectral). VERDICT: FALSIFICATION FAILED —
+"branching + spectral projection" is UNIQUE within the accepted D96 structure, not
+merely preferred. No canonical value changed.
+
+ResearchY-A_005 (Spectral Projection Origin, COMPLETE, tests 7/7 PASSED): why does
+branching project onto spectral modes? Is spectral projection primitive or derived?
+Tested A fundamental (FAILS — would be a 3rd primitive, contradicts minimal foundation
+{Difference,η}), B closure (PARTIAL — fixes N=96, not the graph structure), C resonance
+(CIRCULAR — resonance IS the projection readout, Conservation+Boundary), D attractor
+(YES — minimal origin). Minimal origin chain: Difference → Actualization → attractor
+(closure, N=96) → graph C96 → Laplacian L → unique eigenbasis (Fourier modes, exact to
+1e-14) → spectral projection (readout of count in the modal basis). Projection is DERIVED
+not primitive; it is forced because the eigenbasis is the unique diagonalizing basis of
+the medium, and the medium is the converged output of Actualization. K=5 vs K=6 give
+different spectra → projection is attractor-determined. Open: scalar-to-modal bridge
+(A_003 OP2). No canonical value changed.
+
 ### PRED001: Prediction Registry (standalone Zenodo publication)
 
 Summary:
