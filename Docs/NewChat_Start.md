@@ -732,6 +732,21 @@ plateau around 96). Conclusion: D96 is NOT occupancy-selected (a bijection carri
 selection power); it remains closure-selected (D_017, Ch5). [4,4,87] is a DERIVED
 projection of the closure selection. No canonical value changed.
 
+ResearchY-D_019 (Closure-Only Audit, COMPLETE, tests 8/8 PASSED): if all D96-specific
+selection rules are removed and only Closure remains, does Closure still produce N=96?
+Verdict: NO — Closure alone does NOT determine N. The canonical closure dynamics
+(QG115/116, StructureFromContent.AdaptiveNetwork / ActualizationStructures.
+ReinforcingNetwork, K=6, damping=0.2, feedback=0.7) takes N as an INPUT (the activity
+array length) and converges the link structure for that fixed size: 269/269 N in
+[32,300] converge under the persistent/spread/uniform patterns, and the fixed point is
+always the degree-12 K=6 ring (links = 6N) — a geometry class, not a size. Under the
+concentrated pattern only 56/269 converge, and N=96 itself FAILS closure (growth
+0.1198 > 0.05) — a direct counterexample to any content-independent closure → N=96. The
+canonical Ch3/QG282 claim "N=96 is the closure fixed point" is not supported by the
+implemented closure dynamics (open consistency question, D_019 OP1). N=96 is a SELECTED
+closure solution (D_015: 6|N + span window), not a closure theorem. Classification:
+D) Closure does not determine N. No canonical value changed.
+
 ### PRED001: Prediction Registry (standalone Zenodo publication)
 
 Summary:
