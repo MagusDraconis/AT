@@ -593,6 +593,16 @@ independent reduction. Unique survivor: half→neutral, first→full, second→d
 octave→octave. Unique under constraints; surviving assignment remains EMERGENT
 (correspondence). No canonical value changed.
 
+ResearchY-D_007 (Planck Scale Audit, COMPLETE, tests 7/7 PASSED): can the Planck scale
+be derived without calibration anchors? Verdict: dimensionless structure DERIVED,
+absolute scale BOUNDARY. (A) The dimensionless Planck ratio A³ = (Σm·#g·occ₂)³ =
+(95·44·87)³ = 4.8094e16 is a pure number from D96 spectral content (moments, group
+count, dense band) — DERIVED. (B) The absolute Planck scale M_Pl = v·A³ = 254.37·4.8094e16
+= 1.2234e19 GeV is NOT derived — requires the calibration anchor v (weak scale, GeV
+unit). (C) Requires anchor: YES (v). (D) SI G = ħc/M_Pl² imports c, ħ, GeV↔kg — BOUNDARY.
+Planck scale is calibrated, not derived (consistent with claim registry: gravity =
+calibration). No canonical value changed.
+
 ### PRED001: Prediction Registry (standalone Zenodo publication)
 
 Summary:
