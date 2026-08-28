@@ -25,6 +25,7 @@
 | ResearchY-A_005 | Spectral Projection Origin | `A_WaveFoundations/ResearchY-A_005.md` | `AT.Tests/ResearchY/A_WaveFoundations/Y_A_005_Tests.cs` (7/7 ✅) | COMPLETE |
 | ResearchY-B_001 | Circular Closure Audit | `B_CircularGeometry/ResearchY-B_001.md` | `AT.Tests/ResearchY/B_CircularGeometry/Y_B_001_Tests.cs` (7/7 ✅) | COMPLETE |
 | ResearchY-B_002 | Origin of π Value Audit | `B_CircularGeometry/ResearchY-B_002.md` | `AT.Tests/ResearchY/B_CircularGeometry/Y_B_002_Tests.cs` (7/7 ✅) | COMPLETE |
+| ResearchY-C_001 | Center Audit | `C_SourceGeometry/ResearchY-C_001.md` | `AT.Tests/ResearchY/C_SourceGeometry/Y_C_001_Tests.cs` (6/6 ✅) | COMPLETE |
 | ResearchY-A_002 | Difference Disturbance | — | — | PLANNED |
 | ResearchY-A_003 | Actualization Propagation | — | — | PLANNED |
 | ResearchY-B_001 | Circular Closure | — | — | PLANNED |

@@ -38,6 +38,7 @@ ResearchY-D_001  ↔  Y_D_001_Tests.cs
 | ResearchY-A_005 (Spectral Projection Origin) | `AT.Tests/ResearchY/A_WaveFoundations/Y_A_005_Tests.cs` | ACTIVE | 2026-08-28 | ✅ 7/7 PASSED — `Results/Y_A_005_Result.md` |
 | ResearchY-B_001 (Circular Closure Audit) | `AT.Tests/ResearchY/B_CircularGeometry/Y_B_001_Tests.cs` | ACTIVE | 2026-08-28 | ✅ 7/7 PASSED — `Results/Y_B_001_Result.md` |
 | ResearchY-B_002 (Origin of π Value Audit) | `AT.Tests/ResearchY/B_CircularGeometry/Y_B_002_Tests.cs` | ACTIVE | 2026-08-28 | ✅ 7/7 PASSED — `Results/Y_B_002_Result.md` |
+| ResearchY-C_001 (Center Audit) | `AT.Tests/ResearchY/C_SourceGeometry/Y_C_001_Tests.cs` | ACTIVE | 2026-08-28 | ✅ 6/6 PASSED — `Results/Y_C_001_Result.md` |
 
 ## Result Summaries
 

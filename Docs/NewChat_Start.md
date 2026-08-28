@@ -497,6 +497,16 @@ coincidence of range, not emergence. RQ9: closure needs only 2π (phase-cycle ro
 emerges (C/D=π, B_001); its value remains an irreducible boundary. No canonical value
 changed.
 
+ResearchY-C_001 (Center Audit, COMPLETE, tests 6/6 PASSED): is a unique center/source
+present in Difference→Actualization? Verdict: center is ABSENT in space — the attractor
+ring C96 is centerless (12-regular, translation-invariant, zero-mode eigenvector
+constant, 47 Z2 pairs, no preferred site; circulant symmetry eliminates any center);
+EMERGENT as the branching root — the Galton–Watson generation-0 origin (ρ₀=1/S) is the
+only source-like object, in generation space not spatial; DERIVED as the zero mode — the
+uniform reference state (ω₀=0, not a source). Propagation is NOT radial (branching
+tree-local + spectral global readout); radius r=N/2π is a size measure with no center
+point; closure = N=96 integer requires no source. No canonical value changed.
+
 ### PRED001: Prediction Registry (standalone Zenodo publication)
 
 Summary:
