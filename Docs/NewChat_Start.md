@@ -650,6 +650,17 @@ Anchor count: A) ω₁ only → DERIVED (dimensionless); B) ω₁ + one anchor (
 1 (v). Unit-attachment model = the pair (dimensionless reference + anchor). No canonical
 value changed.
 
+ResearchY-D_012 (Minimal Anchor Audit, COMPLETE, tests 7/7 PASSED): what is the minimal
+physical anchor to turn D96 structure into physical dimensions? Verdict: the weak scale
+v is the ONLY dimensionful candidate (ω₁, λ₂, zero mode, N=96, actualization tick are all
+dimensionless — D_010). ONE anchor is NOT sufficient (REFUTED): v fixes the energy scale
+(M_Pl = v·A³ = 1.2234e19 GeV, M_W/M_Z/M_H) but the absolute fermion masses require the
+second anchor m_e (m_u = m_e·Σ√m/√Σm², QG173). Minimal anchor count for ALL derived
+dimensionful observables = 2 (v, m_e); c and ħ are SI unit-convention imports, not
+physics anchors. Dimensionless observables (couplings, mixings, Ω_Λ/Ω_m, ratios) need 0
+anchors — DERIVED. Trace: D96 → ratios → ω₁ → anchor → dimensions → observables (splits
+at "anchor"). No canonical value changed.
+
 ### PRED001: Prediction Registry (standalone Zenodo publication)
 
 Summary:
