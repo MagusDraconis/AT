@@ -558,6 +558,17 @@ dimensional masses/couplings are BOUNDARY (calibration anchors v/m_e; fit 1/α_e
 Resonance is the spectral source of the numbers, not the complete generator. Consistent
 with the claim classification registry. No canonical value changed.
 
+ResearchY-D_004 (Sector Mapping Origin Audit, COMPLETE, tests 6/6 PASSED): why do
+spectral quantities map to physical sectors? Verdict: THREE-LAYER origin. (1) DERIVED
+structure — occupancies [4,4,87], moment ladder (Σm=95, Σ√m=64.08, Σm²=229), locking gap
+λ₂=0.3864, 47 Z2 pairs are exact spectral (theorem-class). (2) EMERGENT sector assignment
+— which moment/gap/pair reads which sector is a supported correspondence (claim registry:
+sector mappings = correspondence), not a unique derivation. (3) BOUNDARY dimensional
+values — calibration anchors v/m_e, fit 1/α_em=137. The families are the DERIVED
+exception: family count = floor(log₂ span)+1 = 3, the octave bands ARE the families
+(QG210, identity not assignment). Correspondence is "supported, not unique". No canonical
+value changed.
+
 ### PRED001: Prediction Registry (standalone Zenodo publication)
 
 Summary:
