@@ -3,7 +3,7 @@
 **Publication status: V2.0 RELEASED (2026-08-27) · Prediction Registry v1.0 RELEASED (companion).**
 
 This directory contains the Zenodo publication package for The Actualization Theory
-(formerly THE Q-MODEL, AT). It is organized into two versioned subdirectories plus the
+(formerly THE Q-MODEL, TQM). It is organized into two versioned subdirectories plus the
 shared metadata at this root.
 
 ## Contents
@@ -40,7 +40,7 @@ record.
 
 The canonical v2.0 monograph — **The Actualization Theory: A Reconstruction of Physics from
 Difference, Actualization and Spectrum** — derives all physics from the primitives
-{Difference, η} through the hierarchy
+{Difference, η} through the hierarchy:
 
 ```
 Difference → Actualization → Inevitable Spectrum → Physics
