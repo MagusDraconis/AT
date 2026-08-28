@@ -548,6 +548,16 @@ hybrid — spatial harmonics (geometric, center-free) × spectral eigenvalues (a
 Closure consistency: R^N=identity, θ_{k+N}≡θ_k, z_k^N=1, algebraic spectrum (B_002),
 π only in role (B_003). Classification: HYBRID (center-free). No canonical value changed.
 
+ResearchY-D_003 (Resonance Observables Audit, COMPLETE, tests 6/6 PASSED): can resonance
+alone generate physical observables? Verdict: resonance generates the SPECTRAL observables
+— DERIVED (theorem-class): mode occupation [4,4,87], occMom=1900.25, spectral moments
+(Σm=95, Σ√m=64.08, Σm²=229), span=6.40, 47 Z2 pair structure, zero-mode role, spectral
+invariants (algebraic spectrum). It does NOT generate the PHYSICAL observables: the
+sector mapping is EMERGENT (correspondence — which moment reads which sector), and the
+dimensional masses/couplings are BOUNDARY (calibration anchors v/m_e; fit 1/α_em=137).
+Resonance is the spectral source of the numbers, not the complete generator. Consistent
+with the claim classification registry. No canonical value changed.
+
 ### PRED001: Prediction Registry (standalone Zenodo publication)
 
 Summary:
