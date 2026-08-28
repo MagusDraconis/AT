@@ -35,6 +35,7 @@
 | ResearchY-D_005 | Moment Ordering Audit | `D_ResonanceStructure/ResearchY-D_005.md` | `AT.Tests/ResearchY/D_ResonanceStructure/Y_D_005_Tests.cs` (6/6 ✅) | COMPLETE |
 | ResearchY-D_006 | Assignment Constraints Audit | `D_ResonanceStructure/ResearchY-D_006.md` | `AT.Tests/ResearchY/D_ResonanceStructure/Y_D_006_Tests.cs` (6/6 ✅) | COMPLETE |
 | ResearchY-D_007 | Planck Scale Audit | `D_ResonanceStructure/ResearchY-D_007.md` | `AT.Tests/ResearchY/D_ResonanceStructure/Y_D_007_Tests.cs` (7/7 ✅) | COMPLETE |
+| ResearchY-D_008 | Reference Unit Audit | `D_ResonanceStructure/ResearchY-D_008.md` | `AT.Tests/ResearchY/D_ResonanceStructure/Y_D_008_Tests.cs` (6/6 ✅) | COMPLETE |
 | ResearchY-A_002 | Difference Disturbance | — | — | PLANNED |
 | ResearchY-A_003 | Actualization Propagation | — | — | PLANNED |
 | ResearchY-B_001 | Circular Closure | — | — | PLANNED |

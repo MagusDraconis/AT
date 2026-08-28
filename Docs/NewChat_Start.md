@@ -603,6 +603,18 @@ unit). (C) Requires anchor: YES (v). (D) SI G = ħc/M_Pl² imports c, ħ, GeV↔
 Planck scale is calibrated, not derived (consistent with claim registry: gravity =
 calibration). No canonical value changed.
 
+ResearchY-D_008 (Reference Unit Audit, COMPLETE, tests 6/6 PASSED): what object in D96
+plays the role of light or an atomic clock? Verdict: the first natural reference unit is
+the dimensionless spectral frequency ω₁=0.6216 (fundamental doublet) — DERIVED as a
+relative (ordering/ratio) reference, calibration-free. Key relation ω₁²=λ₂=0.3864 links
+the doublet and the spectral gap. All six candidates (actualization tick, closure cycle
+N=96, zero mode, fundamental doublet, spectral gap, 47 resonant pairs) are dimensionless.
+Natural clock: dimensionless frequency EMERGENT, physical Hz BOUNDARY; ruler: dimensionless
+ratios (span=6.40) EMERGENT, physical m BOUNDARY; energy unit BOUNDARY (requires v, c, ħ,
+per D_007). Reference without external calibration: YES as dimensionless (DERIVED), NO as
+physical (BOUNDARY). D96 provides dimensionless analogues of the atomic clock and the
+light-based meter, not physical references. No canonical value changed.
+
 ### PRED001: Prediction Registry (standalone Zenodo publication)
 
 Summary:
