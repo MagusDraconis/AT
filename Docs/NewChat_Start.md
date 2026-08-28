@@ -626,6 +626,18 @@ interpretive); D) natural clock only NO — it is more than a clock, and as a ph
 clock it is BOUNDARY (D_008: dimensionless only). Property invariant under ring
 automorphisms. No canonical value changed.
 
+ResearchY-D_010 (Unit Anchoring Audit, COMPLETE, tests 7/7 PASSED): can a physical unit
+be anchored to ω₁? Verdict: NO — ω₁ = 0.6216 is DIMENSIONLESS (a pure frequency ratio);
+a physical unit (s/m/J) is dimensionful and requires at least one dimensionful import.
+A) dimensionless reference DERIVED; B) physical clock BOUNDARY (needs a physical time
+standard); C) physical ruler BOUNDARY (needs c); D) physical energy unit BOUNDARY (needs
+ħ or v). Time/frequency/energy/length scales each require an import. Dependency: ω₁ only
+→ dimensionless (DERIVED); ω₁+c / +ħ / +v → physical relations each importing a constant
+(BOUNDARY). MINIMAL REQUIRED IMPORT: the calibration anchor v (weak scale, GeV) — the
+same anchor as the Planck scale (D_007); c and ħ are additional SI imports. Atomic clock,
+speed-of-light meter, and Planck units are all external physical constants. No canonical
+value changed.
+
 ### PRED001: Prediction Registry (standalone Zenodo publication)
 
 Summary:
