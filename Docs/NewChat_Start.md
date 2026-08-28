@@ -683,6 +683,17 @@ two-anchor structure is NOT a consequence of D96: v's dimensionless form
 split (bosonic scale + fermionic scale), and m_e has no D96 construction. Two anchors ↔
 two sectors = EMERGENT interpretation, not DERIVED. No canonical value changed.
 
+ResearchY-D_015 (N=96 Uniqueness Audit, COMPLETE, tests 6/6 PASSED): why N=96? Verdict:
+N=96 is unique in the tested class {64, 96, 128, 192, 245} by the COMBINATION (E) of the
+period-3 seed symmetry (6|N) and the three-family octave window (span in [4,8)):
+{N : 6|N AND span<8} = {96}. N=192 passes the seed but fails the window (4 families);
+N=64 passes the window but fails the seed; N=128/245 fail both. Scale properties are NOT
+unique — λ₂ (0.8596→0.0598) and ω₁ (0.9272→0.2445) decrease with N, Z2 pairs scale
+(N/2−1). Structural properties ARE unique: N=96 is the only size with 3 families AND the
+canonical occupancy [4,4,87] (occMom = 1900.25). N≠96 loses the 3-family structure or
+the canonical occupancy. Matches canonical D96 selection (QG159/QG160). No canonical
+value changed.
+
 ### PRED001: Prediction Registry (standalone Zenodo publication)
 
 Summary:

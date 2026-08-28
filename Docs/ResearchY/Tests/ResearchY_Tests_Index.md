@@ -55,6 +55,7 @@ ResearchY-D_001  ↔  Y_D_001_Tests.cs
 | ResearchY-D_012 (Minimal Anchor Audit) | `AT.Tests/ResearchY/D_ResonanceStructure/Y_D_012_Tests.cs` | ACTIVE | 2026-08-28 | ✅ 7/7 PASSED — `Results/Y_D_012_Result.md` |
 | ResearchY-D_013 (Anchor Reduction Audit) | `AT.Tests/ResearchY/D_ResonanceStructure/Y_D_013_Tests.cs` | ACTIVE | 2026-08-28 | ✅ 8/8 PASSED — `Results/Y_D_013_Result.md` |
 | ResearchY-D_014 (Two-Anchor Structure Audit) | `AT.Tests/ResearchY/D_ResonanceStructure/Y_D_014_Tests.cs` | ACTIVE | 2026-08-28 | ✅ 8/8 PASSED — `Results/Y_D_014_Result.md` |
+| ResearchY-D_015 (N=96 Uniqueness Audit) | `AT.Tests/ResearchY/D_ResonanceStructure/Y_D_015_Tests.cs` | ACTIVE | 2026-08-28 | ✅ 6/6 PASSED — `Results/Y_D_015_Result.md` |
 
 ## Result Summaries
 
