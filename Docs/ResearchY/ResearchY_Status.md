@@ -32,6 +32,7 @@
 | ResearchY-D_002 | Standing Wave Model | `D_ResonanceStructure/ResearchY-D_002.md` | `AT.Tests/ResearchY/D_ResonanceStructure/Y_D_002_Tests.cs` (7/7 ✅) | COMPLETE |
 | ResearchY-D_003 | Resonance Observables Audit | `D_ResonanceStructure/ResearchY-D_003.md` | `AT.Tests/ResearchY/D_ResonanceStructure/Y_D_003_Tests.cs` (6/6 ✅) | COMPLETE |
 | ResearchY-D_004 | Sector Mapping Origin Audit | `D_ResonanceStructure/ResearchY-D_004.md` | `AT.Tests/ResearchY/D_ResonanceStructure/Y_D_004_Tests.cs` (6/6 ✅) | COMPLETE |
+| ResearchY-D_005 | Moment Ordering Audit | `D_ResonanceStructure/ResearchY-D_005.md` | `AT.Tests/ResearchY/D_ResonanceStructure/Y_D_005_Tests.cs` (6/6 ✅) | COMPLETE |
 | ResearchY-A_002 | Difference Disturbance | — | — | PLANNED |
 | ResearchY-A_003 | Actualization Propagation | — | — | PLANNED |
 | ResearchY-B_001 | Circular Closure | — | — | PLANNED |

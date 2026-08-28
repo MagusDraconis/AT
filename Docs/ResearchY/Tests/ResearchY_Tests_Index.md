@@ -45,6 +45,7 @@ ResearchY-D_001  ↔  Y_D_001_Tests.cs
 | ResearchY-D_002 (Standing Wave Model) | `AT.Tests/ResearchY/D_ResonanceStructure/Y_D_002_Tests.cs` | ACTIVE | 2026-08-28 | ✅ 7/7 PASSED — `Results/Y_D_002_Result.md` |
 | ResearchY-D_003 (Resonance Observables Audit) | `AT.Tests/ResearchY/D_ResonanceStructure/Y_D_003_Tests.cs` | ACTIVE | 2026-08-28 | ✅ 6/6 PASSED — `Results/Y_D_003_Result.md` |
 | ResearchY-D_004 (Sector Mapping Origin Audit) | `AT.Tests/ResearchY/D_ResonanceStructure/Y_D_004_Tests.cs` | ACTIVE | 2026-08-28 | ✅ 6/6 PASSED — `Results/Y_D_004_Result.md` |
+| ResearchY-D_005 (Moment Ordering Audit) | `AT.Tests/ResearchY/D_ResonanceStructure/Y_D_005_Tests.cs` | ACTIVE | 2026-08-28 | ✅ 6/6 PASSED — `Results/Y_D_005_Result.md` |
 
 ## Result Summaries
 

@@ -569,6 +569,18 @@ exception: family count = floor(log₂ span)+1 = 3, the octave bands ARE the fam
 (QG210, identity not assignment). Correspondence is "supported, not unique". No canonical
 value changed.
 
+ResearchY-D_005 (Moment Ordering Audit, COMPLETE, tests 6/6 PASSED): can moment ordering
+uniquely determine sector assignment? Verdict: NO. The moment ladder is DERIVED (strictly
+ordered 64.08 < 95 < 229 < 1900.25), but the sector assignment is EMERGENT — a
+correspondence: 4! = 24 permutations of the four moments onto the four sector roles are
+possible, the spectrum excludes none, and the canonical one is selected by matching
+observation (the defining property of a correspondence, not a derivation). The electron is
+BOUNDARY: m_e = 0.511 MeV is a calibration anchor, not moment-selected. Family ordering:
+octave band frequency order DERIVED, family labels (e/μ/τ ↔ bands) EMERGENT. Negative
+uniqueness proof: the spectrum is invariant under sector-name relabeling, so it cannot
+distinguish the permutations. Consistent with D_004 ("supported, not unique"). No
+canonical value changed.
+
 ### PRED001: Prediction Registry (standalone Zenodo publication)
 
 Summary:
