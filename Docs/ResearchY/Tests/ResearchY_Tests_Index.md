@@ -46,6 +46,7 @@ ResearchY-D_001  ↔  Y_D_001_Tests.cs
 | ResearchY-D_003 (Resonance Observables Audit) | `AT.Tests/ResearchY/D_ResonanceStructure/Y_D_003_Tests.cs` | ACTIVE | 2026-08-28 | ✅ 6/6 PASSED — `Results/Y_D_003_Result.md` |
 | ResearchY-D_004 (Sector Mapping Origin Audit) | `AT.Tests/ResearchY/D_ResonanceStructure/Y_D_004_Tests.cs` | ACTIVE | 2026-08-28 | ✅ 6/6 PASSED — `Results/Y_D_004_Result.md` |
 | ResearchY-D_005 (Moment Ordering Audit) | `AT.Tests/ResearchY/D_ResonanceStructure/Y_D_005_Tests.cs` | ACTIVE | 2026-08-28 | ✅ 6/6 PASSED — `Results/Y_D_005_Result.md` |
+| ResearchY-D_006 (Assignment Constraints Audit) | `AT.Tests/ResearchY/D_ResonanceStructure/Y_D_006_Tests.cs` | ACTIVE | 2026-08-28 | ✅ 6/6 PASSED — `Results/Y_D_006_Result.md` |
 
 ## Result Summaries
 

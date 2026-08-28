@@ -581,6 +581,18 @@ uniqueness proof: the spectrum is invariant under sector-name relabeling, so it 
 distinguish the permutations. Consistent with D_004 ("supported, not unique"). No
 canonical value changed.
 
+ResearchY-D_006 (Assignment Constraints Audit, COMPLETE, tests 6/6 PASSED): can
+assignment constraints reduce the 24 sector permutations? Verdict: 24 → 6 → 2 → 1.
+(1) Symmetry: occMom is DEFINED from the octave occupancies (Ch6) → octave pairing fixed
+→ 24→6 (DERIVED). (2) Z2: Σm² = 229 is doublet-dominated (42×2² = 168, 73%) and the
+canonical doublet-occupancy access (QG157) → doublet pairing fixed → 6→2 (DERIVED
+dominance + EMERGENT assignment). (3) Calibration: Σm = 95 is the total mode count (full
+access) → 2→1 (DERIVED); final match to observation is BOUNDARY. Ordering (no canonical
+sector ordering) and family (octave bands = families, reinforces occMom) add no
+independent reduction. Unique survivor: half→neutral, first→full, second→doublet,
+octave→octave. Unique under constraints; surviving assignment remains EMERGENT
+(correspondence). No canonical value changed.
+
 ### PRED001: Prediction Registry (standalone Zenodo publication)
 
 Summary:
