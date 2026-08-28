@@ -718,6 +718,20 @@ YES (Ch5 attractor fixed point). Stability scores (inverse rel change): N=96 50,
 65, N=192 97 — monotone. λ₂/ω₁ do NOT select N=96 more fundamentally than the family
 count; the closure does. No canonical value changed.
 
+ResearchY-D_018 (Occupancy Selection Audit, COMPLETE, tests 11/11 PASSED): why does N=96
+generate occupancy [4,4,87]? Is [4,4,87] the true selection mechanism? Verdict: REFUTED
+as selector. [4,4,87] is unique to N=96 only TRIVIALLY — the map N→occupancy is a
+bijection over [32,300] (269 N → 269 distinct patterns; adjacent N always differ), so
+every occupancy is one-of-a-kind and the rarity carries no selection information. In the
+three-family window [71,120], occ(N) = [4,4,N−9] exactly (all 50 rings) — "87" = 96−9 is
+a linear consequence of N. The [4,4] prefix is generic (band₁=4 for 266/269; [4,4,...]
+for 230/269; all 50 window rings). occMom = (x²+32)/4 is monotone increasing (969@71 →
+1900.25@96 → 3088.25@120; scan max N=300) — no extremum at 96. Occupancy is the LEAST
+stable structure under ΔN (changes at every step; N=95→[4,4,86], N=97→[4,4,88]; no
+plateau around 96). Conclusion: D96 is NOT occupancy-selected (a bijection carries zero
+selection power); it remains closure-selected (D_017, Ch5). [4,4,87] is a DERIVED
+projection of the closure selection. No canonical value changed.
+
 ### PRED001: Prediction Registry (standalone Zenodo publication)
 
 Summary:
