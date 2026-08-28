@@ -661,6 +661,17 @@ physics anchors. Dimensionless observables (couplings, mixings, Ω_Λ/Ω_m, rati
 anchors — DERIVED. Trace: D96 → ratios → ω₁ → anchor → dimensions → observables (splits
 at "anchor"). No canonical value changed.
 
+ResearchY-D_013 (Anchor Reduction Audit, COMPLETE, tests 8/8 PASSED): are v and m_e
+independent anchors or projections of a deeper anchor? Verdict: INDEPENDENT, IRREDUCIBLE.
+H1 (v fundamental, m_e = v·f): REFUTED — f = m_e/v ≈ 2e-6 is not a canonical spectral
+number; no canonical construction of m_e from v. H2 (m_e fundamental, v = m_e·g):
+REFUTED — g = v/m_e ≈ 5e5 not canonical; v's GeV unit anchor is independent of m_e
+(v's dimensionless structure (Σm+#d)·ln(span) = 254.37 needs the GeV anchor, not m_e).
+H3 (common anchor A0): REFUTED — no canonical A0 exists (would be a new primitive). No
+common invariant (spectral source, moment, resonance, closure scale) links the two
+anchors. Anchor count: 2 → IRREDUCIBLE — any reduction introduces a new primitive, a fit,
+or breaks D_012. No canonical value changed.
+
 ### PRED001: Prediction Registry (standalone Zenodo publication)
 
 Summary:

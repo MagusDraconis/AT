@@ -53,6 +53,7 @@ ResearchY-D_001  ↔  Y_D_001_Tests.cs
 | ResearchY-D_010 (Unit Anchoring Audit) | `AT.Tests/ResearchY/D_ResonanceStructure/Y_D_010_Tests.cs` | ACTIVE | 2026-08-28 | ✅ 7/7 PASSED — `Results/Y_D_010_Result.md` |
 | ResearchY-D_011 (Universal Reference Audit) | `AT.Tests/ResearchY/D_ResonanceStructure/Y_D_011_Tests.cs` | ACTIVE | 2026-08-28 | ✅ 7/7 PASSED — `Results/Y_D_011_Result.md` |
 | ResearchY-D_012 (Minimal Anchor Audit) | `AT.Tests/ResearchY/D_ResonanceStructure/Y_D_012_Tests.cs` | ACTIVE | 2026-08-28 | ✅ 7/7 PASSED — `Results/Y_D_012_Result.md` |
+| ResearchY-D_013 (Anchor Reduction Audit) | `AT.Tests/ResearchY/D_ResonanceStructure/Y_D_013_Tests.cs` | ACTIVE | 2026-08-28 | ✅ 8/8 PASSED — `Results/Y_D_013_Result.md` |
 
 ## Result Summaries
 
