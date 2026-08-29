@@ -48,6 +48,7 @@
 | ResearchY-D_018 | Occupancy Selection Audit | `D_ResonanceStructure/ResearchY-D_018.md` | `AT.Tests/ResearchY/D_ResonanceStructure/Y_D_018_Tests.cs` (11/11 ✅) | COMPLETE |
 | ResearchY-D_019 | Closure-Only Audit | `D_ResonanceStructure/ResearchY-D_019.md` | `AT.Tests/ResearchY/D_ResonanceStructure/Y_D_019_Tests.cs` (8/8 ✅) | COMPLETE |
 | ResearchY-D_020 | Selection Precondition Audit | `D_ResonanceStructure/ResearchY-D_020.md` | `AT.Tests/ResearchY/D_ResonanceStructure/Y_D_020_Tests.cs` (6/6 ✅) | COMPLETE |
+| ResearchY-D_021 | Oscillation Symmetry Audit | `D_ResonanceStructure/ResearchY-D_021.md` | `AT.Tests/ResearchY/D_ResonanceStructure/Y_D_021_Tests.cs` (7/7 ✅) | COMPLETE |
 | ResearchY-A_002 | Difference Disturbance | — | — | PLANNED |
 | ResearchY-A_003 | Actualization Propagation | — | — | PLANNED |
 | ResearchY-B_001 | Circular Closure | — | — | PLANNED |

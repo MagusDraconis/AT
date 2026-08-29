@@ -761,6 +761,19 @@ selects 96 among the 11 rings of D_016 (only 96=3·2⁵ is a rung). The degree-1
 {complete Z2 pairing, 3 families}. Classification: observable-sector construction
 BOUNDARY; p=3, 6|N, octave rung, N=96 all DERIVED. No canonical value changed.
 
+ResearchY-D_021 (Oscillation Symmetry Audit, COMPLETE, tests 7/7 PASSED): is complete
+Z2 pairing a consequence of oscillation symmetry rather than weak-isospin? Verdict: the
+Z2 PAIRING is DERIVED — the pair {cos, sin} at each ω_k is the two-quadrature structure
+of ONE real oscillation (both eigenfunctions of L at the same λ_k), forced by the
+spectral symmetry λ_k = λ_{N−k} of the ring's reflection. +A↔−A and cos(ωt)↔−cos(ωt)
+are per-mode phase gauges (no pairing); k↔N−k is the pairing generator (cos even → same,
+sin odd → sign-flip). The pairing is NOT weak-isospin-only; the weak-isospin doublet
+reading is EMERGENT (D_014). Standing-wave completeness SURVIVES removal of Z2 pairing —
+completeness is a basis property (complete Fourier basis at N=64/96/128), pairing is a
+degeneracy property. The COMPLETENESS of pairing (0 unpaired) is BOUNDARY — an
+N-arithmetic selection (λ=12 self-conjugate degeneracy: 5-fold at N=96/192, 1-fold at
+N=64/128), the D_020 input. No canonical value changed.
+
 ### PRED001: Prediction Registry (standalone Zenodo publication)
 
 Summary:
