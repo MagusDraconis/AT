@@ -968,6 +968,21 @@ observable structure (as a complex/interference structure) requires reciprocal p
 reciprocity EMERGENT; complete pairing BOUNDARY; N=96 DERIVED. No canonical value
 changed.
 
+ResearchY-D_035 (Multiplet-Requirement Audit, COMPLETE, tests 6/6 PASSED): why must the
+self-conjugate mode participate in a degenerate multiplet? Verdict: the self-conjugate
+mode k=N/2 is REAL-ONLY (sin(πn)=0); its eigenvalue λ=12 has a 1D real eigenspace at
+N=64/80/128 (an isolated singlet violating complex observability) and a 5D eigenspace
+at N=96/192. Complex observability (every observable frequency must carry [magnitude,
+phase], QG218/D_034) requires every eigenvalue to have multiplicity ≥ 2. At N=96 every
+eigenvalue has mult ≥ 2 (complete pairing); at N=64 λ=12 has mult 1 — the real-only
+singlet violates complex observability. The degenerate multiplet supplies the
+phase/quadrature partners. REFINEMENT: complete pairing (0 unpaired) is DERIVED from
+complex observability — the boundary moves one step deeper, from "0 unpaired" to "the
+observable sector is complex" (BOUNDARY). Classification: complex structure DERIVED
+(QG218); complex observability EMERGENT (the requirement); complete pairing DERIVED
+from it; "observable sector is complex" BOUNDARY; N=96 DERIVED. No canonical value
+changed.
+
 ### PRED001: Prediction Registry (standalone Zenodo publication)
 
 Summary:
