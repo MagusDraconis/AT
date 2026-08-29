@@ -492,9 +492,11 @@ public static class TheoryBookDataService
                     new("Analogy only", "Deficit-angle mass/mixing analogs are suggestive, not determinative.", TheoryBadge.Partial, ["ATQG1001", "ATQG1002"]),
                 ]),
             new("resonances", "Resonances",
-                "The network has normal modes; mass = resonance frequency is a structural analogy. No native dynamics whose spectrum equals the SM.",
+                "The network has normal modes; mass = resonance frequency is a structural analogy. The D96 standing-wave structure is fully derived — including the Z2 pairing origin (ResearchY-D_021).",
                 [
                     new("Spectra exist", "Graph Laplacian + stable normal-mode eigenfrequencies are real.", TheoryBadge.Derived, ["ATQG941", "ATQG950"]),
+                    new("Z2 pairing derived", "The pair {cos, sin} at each ω_k is the two-quadrature structure of ONE real oscillation — both eigenfunctions of L at λ_k, forced by λ_k = λ_{N−k}. Not a weak-isospin-only input.", TheoryBadge.Derived, ["ResearchY-D_021"]),
+                    new("Pairing completeness boundary", "0-unpaired pairing is N-arithmetic (λ=12 self-conjugate degeneracy: 5-fold at N=96/192, 1-fold at N=64/128) — the D_020 selection input.", TheoryBadge.Partial, ["ResearchY-D_020", "ResearchY-D_021"]),
                     new("Mapping speculative", "No native operator identified whose spectrum equals the SM parameters.", TheoryBadge.Partial, ["ATQG942", "ATQG952"]),
                 ]),
             new("global-solution-space", "Global Solution Space",

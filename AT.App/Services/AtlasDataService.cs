@@ -88,6 +88,30 @@ public static class AtlasDataService
     public static IReadOnlyList<ResearchNewsModel> ResearchNews { get; } =
     [
         new(
+            "researchy-d021-oscillation-symmetry",
+            "Z2 Pairing Is Derived From Oscillation Symmetry, Not Weak-Isospin",
+            "ResearchY Milestone · D_021 (Wave Geometry Program)",
+            "The D96 Z2 pairing that carries the weak-isospin doublet structure is not an independent weak-isospin input: it is the two-quadrature structure of a single real oscillation. Each frequency ω_k hosts the pair {cos, sin}, both eigenfunctions of the graph Laplacian at the same λ_k, forced by the spectral mirror symmetry λ_k = λ_{N−k}. The weak-isospin doublet reading is emergent, not the pairing's source.",
+            "The audit tested the three Z2 candidates: +A↔−A and cos(ωt)↔−cos(ωt) are per-mode phase gauges (they do not pair modes), while k↔N−k is the pairing generator — cos(2π(N−k)n/N) = cos(2πkn/N) and sin(2π(N−k)n/N) = −sin(2πkn/N), giving the 2D eigenspace {cos, sin} at one frequency. Both harmonics are verified eigenfunctions of L at the same λ_k, so the pair is intrinsic to the standing wave (oscillation necessity), not an import. Standing-wave completeness survives removal of Z2 pairing — completeness is a basis property (the Fourier basis is complete at N=64, 96, 128), pairing is a degeneracy property. Only the COMPLETENESS of pairing (0 unpaired modes) is a boundary: it is N-arithmetic (the λ=12 self-conjugate mode is 5-fold at N=96/192 but 1-fold at N=64/128), the selection input established in D_020.",
+            "For non-experts: we asked where the mirror-pairing of the theory's spectrum comes from. The answer is that it is not imposed from the physics side — it is what any real oscillation looks like. A standing wave at one frequency needs both a cosine and a sine part (its two phases), and the mirror symmetry of the ring forces those two parts to share the frequency. The weak-force doublets are a reading of that derived structure, not its origin.",
+            "Z2 pairing is the two-quadrature structure of one oscillation — derived, not imported.",
+            "“The pair is not two particles. It is the two phases of one standing wave.”",
+            true,
+            [
+                new("ResearchY-D_001", "STANDING WAVES",
+                    "Fourier modes are time-harmonic eigenfunctions of L (ψ=φ(n)cos(ωt), ω=√λ); center-free.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.1-boundary-program/Docs/ResearchY/D_ResonanceStructure/ResearchY-D_001.md"),
+                new("ResearchY-D_002", "STANDING WAVE MODEL",
+                    "Ψ=Σ[a cos+b sin]cos(ωt); 47 Z2 pairs (94 real modes) + 1 self-conjugate; hybrid center-free.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.1-boundary-program/Docs/ResearchY/D_ResonanceStructure/ResearchY-D_002.md"),
+                new("ResearchY-D_020", "SELECTION PRECONDITION",
+                    "Complete Z2 pairing + 3 families are the observable-sector INPUT; p=3, 6|N, octave rung, N=96 derived.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.1-boundary-program/Docs/ResearchY/D_ResonanceStructure/ResearchY-D_020.md"),
+                new("ResearchY-D_021", "OSCILLATION SYMMETRY",
+                    "Z2 pairing is the cos/sin quadrature pair of one oscillation — DERIVED; weak-isospin reading EMERGENT; completeness BOUNDARY.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.1-boundary-program/Docs/ResearchY/D_ResonanceStructure/ResearchY-D_021.md"),
+            ]),
+        new(
             "qg313-319-locks-and-final-architecture",
             "Locks Precede Organization and the Final Architecture Is Canonical",
             "AT-QG Milestone · Phases 313–319",
