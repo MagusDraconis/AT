@@ -58,6 +58,7 @@
 | ResearchY-D_028 | Span-Origin Audit | `D_ResonanceStructure/ResearchY-D_028.md` | `AT.Tests/ResearchY/D_ResonanceStructure/Y_D_028_Tests.cs` (6/6 ✅) | COMPLETE |
 | ResearchY-D_029 | Closure-Defect Audit | `D_ResonanceStructure/ResearchY-D_029.md` | `AT.Tests/ResearchY/D_ResonanceStructure/Y_D_029_Tests.cs` (6/6 ✅) | COMPLETE |
 | ResearchY-D_030 | Octave-Rung Audit | `D_ResonanceStructure/ResearchY-D_030.md` | `AT.Tests/ResearchY/D_ResonanceStructure/Y_D_030_Tests.cs` (6/6 ✅) | COMPLETE |
+| ResearchY-D_031 | Seed-Origin Audit | `D_ResonanceStructure/ResearchY-D_031.md` | `AT.Tests/ResearchY/D_ResonanceStructure/Y_D_031_Tests.cs` (6/6 ✅) | COMPLETE |
 | ResearchY-A_002 | Difference Disturbance | — | — | PLANNED |
 | ResearchY-A_003 | Actualization Propagation | — | — | PLANNED |
 | ResearchY-B_001 | Circular Closure | — | — | PLANNED |

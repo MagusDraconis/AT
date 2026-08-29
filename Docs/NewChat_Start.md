@@ -910,6 +910,19 @@ step) with q=2 — the seed period p=3 is the BOUNDARY input (D_020). Classifica
 octave structure DERIVED (dispersion + partition); q=2 base EMERGENT (linear
 dispersion); seed period p=3 BOUNDARY (D_020). No canonical value changed.
 
+ResearchY-D_031 (Seed-Origin Audit, COMPLETE, tests 6/6 PASSED): why does everything
+begin with a period-3 seed? Is p=3 derived or the final boundary assumption? Verdict:
+p=3 is DERIVED from pairing completeness + convergence. The complete-Z2-pairing
+requirement (0 unpaired modes, weak-isospin doublets, D_020) applied to the natural
+octave-rung size n = p·2^k selects p=3 uniquely: p=2/4→64 and p=5→80 have 1 unpaired
+mode (incomplete), p=6→96 fails convergence (density 1/6), p=3→96 has 0 unpaired and
+converges (canonical Period3SeedOrigin: INEVITABLE). p=3 is the MINIMAL period with
+complete pairing. The pairing requirement is itself the D_020 observable-sector input —
+so p=3 is DERIVED, while the pairing requirement is BOUNDARY. Chain: Difference →
+Actualization → observable sector (BOUNDARY) → p=3 (DERIVED) → 6|N → octave ladder →
+N=96. Classification: pairing completeness BOUNDARY; convergence DERIVED; p=3 DERIVED;
+6|N DERIVED; N=96 DERIVED. No canonical value changed.
+
 ### PRED001: Prediction Registry (standalone Zenodo publication)
 
 Summary:
