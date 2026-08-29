@@ -69,6 +69,7 @@ ResearchY-D_001  ↔  Y_D_001_Tests.cs
 | ResearchY-D_026 (Compact-Form Audit) | `AT.Tests/ResearchY/D_ResonanceStructure/Y_D_026_Tests.cs` | ACTIVE | 2026-08-29 | ✅ 6/6 PASSED — `Results/Y_D_026_Result.md` |
 | ResearchY-D_027 (Selector-Origin Audit) | `AT.Tests/ResearchY/D_ResonanceStructure/Y_D_027_Tests.cs` | ACTIVE | 2026-08-29 | ✅ 6/6 PASSED — `Results/Y_D_027_Result.md` |
 | ResearchY-D_028 (Span-Origin Audit) | `AT.Tests/ResearchY/D_ResonanceStructure/Y_D_028_Tests.cs` | ACTIVE | 2026-08-29 | ✅ 6/6 PASSED — `Results/Y_D_028_Result.md` |
+| ResearchY-D_029 (Closure-Defect Audit) | `AT.Tests/ResearchY/D_ResonanceStructure/Y_D_029_Tests.cs` | ACTIVE | 2026-08-29 | ✅ 6/6 PASSED — `Results/Y_D_029_Result.md` |
 
 ## Result Summaries
 

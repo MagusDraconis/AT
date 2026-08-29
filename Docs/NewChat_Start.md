@@ -884,6 +884,19 @@ Difference → Actualization → Closure (N=96, BOUNDARY, D_020) → Spectrum �
 REFUTED; span ∈ [4,8) window EMERGENT; N=96 selection BOUNDARY. No canonical value
 changed.
 
+ResearchY-D_029 (Closure-Defect Audit, COMPLETE, tests 6/6 PASSED): what structure must
+be closed so that no inconsistency remains? Verdict: closure removes structural defects
+(unpaired modes, broken seed half-shift 6∤N, wrong family count, span ≥ 8) — producing
+the ZERO-DEFECT set {60, 66, …, 120} (11 rings with 6|N + 3 families, 0 unpaired, span
+< 8). Inconsistency counts: 64=2, 80=2, 128=4 (all four defects), 192=2, 245=3, 96=0.
+BUT closure does NOT select N=96: N=60/90/120 are zero-defect too. The OCTAVE-RUNG
+structure n = 3·2^k is the discriminator — N=96 = 3·2⁵ is the UNIQUE zero-defect octave
+rung in [32,300] (48 has 2 families, 192 has 4). Prove/refute: closure = removal of a
+specific structural defect is PARTIALLY supported — closure removes inconsistency
+(EMERGENT zero-defect set), but the specific N=96 is a BOUNDARY selection (octave-rung,
+D_020). Classification: defect removal EMERGENT; N=96 BOUNDARY. No canonical value
+changed.
+
 ### PRED001: Prediction Registry (standalone Zenodo publication)
 
 Summary:
