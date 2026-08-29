@@ -88,6 +88,27 @@ public static class AtlasDataService
     public static IReadOnlyList<ResearchNewsModel> ResearchNews { get; } =
     [
         new(
+            "researchy-d037-reciprocity-observability",
+            "Observability Means Complete Reconstruction — That Is Why Every Mode Needs a Partner",
+            "ResearchY Milestone · D_037 (Wave Geometry Program)",
+            "Why does observability require complete reciprocity? Because observing a complex state completely means measuring both of its quadratures — the cosine and the sine (the real and imaginary parts). That two-channel measurement IS the reciprocal pair. A lone mode has only one channel, so its phase can never be observed.",
+            "D_037 asked whether reciprocity follows from the nature of observable states. The answer: observability = complete state RECONSTRUCTION. A complex state (D_036) carries two real DOFs (magnitude from the count, phase from the circulation), so complete observation requires measuring BOTH quadratures. The {cos, sin} pair at ω_k — both eigenfunctions of L at λ_k = λ_{N−k}, orthogonal (Σ cos·sin = 0), equal norm (N/2 each), spanning the 2D eigenspace — is exactly the reciprocal-pair (Re/Im) measurement basis (D_021): from both projections the state is reconstructed exactly (z = a + ib); from one alone the phase θ is ambiguous (the same real part a = 1 arises from (|ψ|=2, θ=π/3) and (|ψ|=1, θ=0)). An isolated singlet (1D real, sin(πn) = 0) has only one quadrature channel — its phase is unobservable, its state underdetermined, its cycle position (reversibility, Δθ = 2πk/N per site) lost. Removing reciprocity does not remove the spectrum — it removes the second quadrature channel, so only the real part of each state remains observable. Classification: complex state DERIVED (D_036); observability = information completeness EMERGENT (the requirement); reciprocity (two-quadrature basis) EMERGENT from complex-state observability; complete pairing DERIVED; Z2 pairing input BOUNDARY (D_020); N=96 DERIVED.",
+            "For non-experts: to know a wave completely you need two numbers — how big it is and where it is in its cycle. A complex number stores both. But you can only measure them through the two 'channels' of the mode: its cosine part and its sine part. That pair of channels is what we call the reciprocal partner. A lone mode that has no sine part is like a thermometer that only reads 'hot or cold' — half the information is missing, and you can never tell where in the cycle the wave is. So the requirement that every mode come in a pair is not a separate rule: it is what being fully observable means.",
+            "Complete observation needs both quadrature channels — the reciprocal pair is the measurement basis.",
+            "“A mode measured on one channel alone tells only half the story.”",
+            true,
+            [
+                new("ResearchY-D_034", "RECIPROCITY AUDIT",
+                    "Reciprocity = the [magnitude, phase] complex structure; the two DOFs are DERIVED.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.1-boundary-program/Docs/ResearchY/D_ResonanceStructure/ResearchY-D_034.md"),
+                new("ResearchY-D_036", "COMPLEX-STATE-ORIGIN AUDIT",
+                    "Complex states DERIVED: magnitude (count) + phase (circulation) — two faces of the same tick k.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.1-boundary-program/Docs/ResearchY/D_ResonanceStructure/ResearchY-D_036.md"),
+                new("ResearchY-D_037", "RECIPROCITY-OBSERVABILITY AUDIT",
+                    "Observability = complete reconstruction; the {cos, sin} pair is the two-channel measurement basis; reciprocity EMERGENT.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.1-boundary-program/Docs/ResearchY/D_ResonanceStructure/ResearchY-D_037.md"),
+            ]),
+        new(
             "researchy-d036-complex-state-origin",
             "Complex States Are Derived — the Phase Distinguishes a Mode from Its Mirror",
             "ResearchY Milestone · D_036 (Wave Geometry Program)",
