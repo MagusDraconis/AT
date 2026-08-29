@@ -50,6 +50,7 @@
 | ResearchY-D_020 | Selection Precondition Audit | `D_ResonanceStructure/ResearchY-D_020.md` | `AT.Tests/ResearchY/D_ResonanceStructure/Y_D_020_Tests.cs` (6/6 ✅) | COMPLETE |
 | ResearchY-D_021 | Oscillation Symmetry Audit | `D_ResonanceStructure/ResearchY-D_021.md` | `AT.Tests/ResearchY/D_ResonanceStructure/Y_D_021_Tests.cs` (7/7 ✅) | COMPLETE |
 | ResearchY-D_022 | Weak-Isospin Entry Audit | `D_ResonanceStructure/ResearchY-D_022.md` | `AT.Tests/ResearchY/D_ResonanceStructure/Y_D_022_Tests.cs` (7/7 ✅) | COMPLETE |
+| ResearchY-D_023 | SU(2) Entry Audit | `D_ResonanceStructure/ResearchY-D_023.md` | `AT.Tests/ResearchY/D_ResonanceStructure/Y_D_023_Tests.cs` (6/6 ✅) | COMPLETE |
 | ResearchY-A_002 | Difference Disturbance | — | — | PLANNED |
 | ResearchY-A_003 | Actualization Propagation | — | — | PLANNED |
 | ResearchY-B_001 | Circular Closure | — | — | PLANNED |

@@ -789,6 +789,22 @@ doublet {even, odd}, not an SU(2) rep. Verdict: C) weak-isospin = independent in
 Classification: oscillation Z2 DERIVED, spectral Z2 DERIVED, weak-isospin SU(2) BOUNDARY,
 doublet reading EMERGENT. No canonical value changed.
 
+ResearchY-D_023 (SU(2) Entry Audit, COMPLETE, tests 6/6 PASSED): where does SU(2) enter?
+Can SU(2) emerge from deeper spectral structure? Verdict: NO — SU(2) does NOT emerge
+from the spectral structure. The oscillation+reflection symmetries provide exactly ONE
+continuous generator (J, the SO(2) rotation of the {cos,sin} eigenspace) plus one
+discrete generator (P, O(2)); SU(2) requires THREE continuous non-Abelian generators
+(Pauli σₓ, σ_y, σ_z). The real skew-symmetric 2×2 matrices are 1-dimensional (only J);
+the missing generators iσₓ and iσ_z are complex and absent from the real spectral
+structure. The D_n 2D irreps (QG155) generate the Z2 doublets — correct — but are
+O(2)-type real reps of a discrete group, NOT SU(2). The minimal step doublet→SU(2)
+requires complexification (a NEW input, not from the spectrum). Removing SU(2) leaves all
+spectral content intact (doublets, families, moments, standing-wave structure); only the
+gauge layer (weak-isospin doublets, W/Z) is lost. Verdict: A) SU(2) = independent input
+(BOUNDARY); the doublet is the EMERGENT attachment surface; C) partially derived NO.
+Classification: spectral doublet O(2)-type DERIVED, SU(2) gauge algebra BOUNDARY, reading
+EMERGENT. No canonical value changed.
+
 ### PRED001: Prediction Registry (standalone Zenodo publication)
 
 Summary:
