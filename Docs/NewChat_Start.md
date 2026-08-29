@@ -1039,6 +1039,23 @@ EMERGENT (information completeness); probability content DERIVED; interference/
 reciprocity DERIVED (D_037); Z2-paired sector requirement BOUNDARY (D_020); N=96
 DERIVED. No canonical value changed.
 
+ResearchY-D_039 (State-Identity-Origin Audit, COMPLETE, tests 7/7 PASSED): why must an
+observable state have a unique identity? Verdict: Difference IS DISTINGUISHABILITY —
+the primitive's semantic content is the act of distinguishing one state from another.
+State identity (each mode distinguishable) is therefore the primitive APPLIED to the
+state space, not a separate boundary. The real-only space collapses the 95 modes to 48
+distinct real states (47 mirror pairs + 1 self-conjugate: cos(2π(N−k)n/N)=cos(2πkn/N),
+so k and N−k have no Difference between them) and further to 3 magnitude buckets.
+Phase-only restores 95/95 identity but loses the count content. The complex space
+ψ = |ψ|·e^{iθ} realizes Difference fully: 95/95 distinct with Born rule Σρ=1 EXACT.
+Prove/refute: Difference implies distinguishability — YES (by definition). The only
+boundaries remain the primitives {Difference, η} (D_027) and the Z2-paired sector
+requirement (D_020). Classification: Difference (primitive) BOUNDARY (D_027);
+distinguishability DERIVED; state identity DERIVED (the primitive applied); complex
+state DERIVED (QG218, minimal identity space); observability EMERGENT; interference/
+reciprocity DERIVED (D_037); Z2-paired sector requirement BOUNDARY (D_020). No
+canonical value changed.
+
 ### PRED001: Prediction Registry (standalone Zenodo publication)
 
 Summary:
