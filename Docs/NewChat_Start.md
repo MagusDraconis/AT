@@ -747,6 +747,20 @@ implemented closure dynamics (open consistency question, D_019 OP1). N=96 is a S
 closure solution (D_015: 6|N + span window), not a closure theorem. Classification:
 D) Closure does not determine N. No canonical value changed.
 
+ResearchY-D_020 (Selection Precondition Audit, COMPLETE, tests 6/6 PASSED): what
+selected N=96 BEFORE Closure — the deepest precondition of D96? Verdict: the deepest
+precondition is the OBSERVABLE-SECTOR CONSTRUCTION — complete Z2 doublet pairing
+(weak-isospin, 0 unpaired modes) + exactly 3 octave families — which is an INPUT/BOUNDARY
+(assumed from the observable sector, not derivable from Difference alone). From these two
+INPUTs everything is DERIVED: p=3 (the unique period whose natural octave-rung size
+3·2^k=96 has complete Z2; p=2,4→64 and p=5→80 have 1 unpaired), 6|N (period-3 seed
+half-shift), the octave-rung chain n=3·2^k={48,96,192}, and N=96 (the unique rung in the
+3-family window [60,120)). The octave-rung construction is the exact discriminator that
+selects 96 among the 11 rings of D_016 (only 96=3·2⁵ is a rung). The degree-12 ring
+(K=6) is cosmetic — the radius is uniform across all rungs. Minimal selection set =
+{complete Z2 pairing, 3 families}. Classification: observable-sector construction
+BOUNDARY; p=3, 6|N, octave rung, N=96 all DERIVED. No canonical value changed.
+
 ### PRED001: Prediction Registry (standalone Zenodo publication)
 
 Summary:

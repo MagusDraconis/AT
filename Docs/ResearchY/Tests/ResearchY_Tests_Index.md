@@ -60,6 +60,7 @@ ResearchY-D_001  ↔  Y_D_001_Tests.cs
 | ResearchY-D_017 (Scale Stability Audit) | `AT.Tests/ResearchY/D_ResonanceStructure/Y_D_017_Tests.cs` | ACTIVE | 2026-08-28 | ✅ 10/10 PASSED — `Results/Y_D_017_Result.md` |
 | ResearchY-D_018 (Occupancy Selection Audit) | `AT.Tests/ResearchY/D_ResonanceStructure/Y_D_018_Tests.cs` | ACTIVE | 2026-08-28 | ✅ 11/11 PASSED — `Results/Y_D_018_Result.md` |
 | ResearchY-D_019 (Closure-Only Audit) | `AT.Tests/ResearchY/D_ResonanceStructure/Y_D_019_Tests.cs` | ACTIVE | 2026-08-28 | ✅ 8/8 PASSED — `Results/Y_D_019_Result.md` |
+| ResearchY-D_020 (Selection Precondition Audit) | `AT.Tests/ResearchY/D_ResonanceStructure/Y_D_020_Tests.cs` | ACTIVE | 2026-08-29 | ✅ 6/6 PASSED — `Results/Y_D_020_Result.md` |
 
 ## Result Summaries
 
