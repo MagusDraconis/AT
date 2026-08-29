@@ -923,6 +923,20 @@ Actualization → observable sector (BOUNDARY) → p=3 (DERIVED) → 6|N → oct
 N=96. Classification: pairing completeness BOUNDARY; convergence DERIVED; p=3 DERIVED;
 6|N DERIVED; N=96 DERIVED. No canonical value changed.
 
+ResearchY-D_032 (Pairing-Requirement Audit, COMPLETE, tests 6/6 PASSED): why must the
+observable sector be completely paired (0 unpaired modes)? Verdict: the pairing
+STRUCTURE is DERIVED (D_021: cos/sin quadrature pairs from oscillation); the
+COMPLETENESS (0 unpaired) is BOUNDARY — the observable-sector requirement that every
+frequency carry full doublet/phase structure. The self-conjugate mode k=N/2 has
+sin(πn)=0 (vanishing quadrature); complete pairing requires it to sit in a degenerate
+group (λ(N/2)=12 is 5-fold at N=96/192 — k=16,32,48,64,80 — but 1-fold at N=64/80/128).
+The unpaired mode has no weak-isospin doublet partner (phase freedom, representation
+closure, symmetry closure all fail). Complete pairing is NOT required by count
+conservation (B) or closure (D); it IS required by the doublet-structure observability
+(A/C), the observable-sector construction (D_020). Everything downstream (p=3, N=96) is
+DERIVED. Classification: pairing structure DERIVED; completeness BOUNDARY; self-conjugate
+degeneracy DERIVED (N-arithmetic, 6|N); p=3/N=96 DERIVED. No canonical value changed.
+
 ### PRED001: Prediction Registry (standalone Zenodo publication)
 
 Summary:
