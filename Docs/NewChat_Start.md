@@ -819,6 +819,23 @@ consequence of the doublet shape. Classification: spectral doublet DERIVED, SU(2
 dims BOUNDARY, j=½ fundamental choice BOUNDARY, attachment EMERGENT. No canonical value
 changed.
 
+ResearchY-D_025 (Three-Generator Audit, COMPLETE, tests 7/7 PASSED): why three
+generators? What is the minimal structure that upgrades a spectral doublet from SO(2) to
+SU(2)? Verdict: SO(2)→SU(2) is NOT possible without new input. The real spectral algebra
+{I, J, P, JP} is the full real 2×2 algebra (dim 4): it contains J = iσy (real skew),
+σz = P (parity/reflection), and σx = JP (reflection∘rotation) — all DERIVED (oscillation
++ reflection). But SU(2) needs the SKEW-HERMITIAN generators iσx, iσz, which require the
+imaginary unit i (complexification). The Fourier phase (e^{iθ}, z^N=1, B_003) provides i
+implicitly — complexification is EMERGENT from the phase (a representation choice). BUT
+complexification alone gives sl(2,C) (6 real dims), which has THREE real forms: su(2),
+sl(2,R), su(1,1). The real spectral structure contains the sl(2,R) generators directly
+(real traceless 2×2) and LEANS toward sl(2,R), NOT su(2) — the compact-form choice
+(su(2) signature) is BOUNDARY, not derived. Removing any ingredient (complexification,
+parity, phase, compact-form choice) breaks SU(2). Classification: real algebra {I,J,P,JP}
+DERIVED; complexification EMERGENT; compact-form choice BOUNDARY; SU(2) three generators
+BOUNDARY. The upgrade needs complexification (EMERGENT) + compact-form choice (BOUNDARY).
+No canonical value changed.
+
 ### PRED001: Prediction Registry (standalone Zenodo publication)
 
 Summary:
