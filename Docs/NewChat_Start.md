@@ -1020,6 +1020,21 @@ information completeness EMERGENT (the requirement); reciprocity (two-quadrature
 EMERGENT from complex-state observability; complete pairing DERIVED; Z2-paired sector
 requirement BOUNDARY (D_020); N=96 DERIVED. No canonical value changed.
 
+ResearchY-D_038 (State-Identity Audit, COMPLETE, tests 7/7 PASSED): why should an
+observable state carry both magnitude and phase? Verdict: observability requires STATE
+IDENTITY — each mode must be distinguishable from every other. Magnitude-only collapses
+the state space: the [4,4,87] occupancy groups give only 3 distinct magnitudes for 95
+modes (√(1/7), √(2/7), √(4/7); μ=2, J=3), and the mirror pair k/N−k is identical
+(cos even). Phase-only restores 95/95 identity but loses probability content (uniform
+|ψ|=1 — no branching/count structure). The complex state ψ = |ψ|·e^{iθ} is the minimal
+complete observable state: 95/95 injective with Born rule Σρ = 1 EXACT over the
+generation shares. Two real DOFs = a complex number. Prove/refute: observable state =
+magnitude + phase — YES (the minimal complete identity). Classification: magnitude
+DERIVED (QG216); phase DERIVED (QG220); complex state DERIVED (QG218); state identity
+EMERGENT (information completeness); probability content DERIVED; interference/
+reciprocity DERIVED (D_037); Z2-paired sector requirement BOUNDARY (D_020); N=96
+DERIVED. No canonical value changed.
+
 ### PRED001: Prediction Registry (standalone Zenodo publication)
 
 Summary:
