@@ -396,6 +396,7 @@ public static class TheoryBookDataService
             new("Expansion derived", "Redshift (QG26) + scale-free ρ → cosmological expansion.", TheoryBadge.Derived, ["ATQG770"]),
             new("Cosmology audit", "1 derived / 3 compatible / 2 unknown (structure formation, dark energy).", TheoryBadge.Partial, ["ATQG772"]),
             new("RAR / dark matter", "Log-deficit flat rotation curves — dark-matter effects compatible.", TheoryBadge.Match, ["DATA-003", "ATQG770"]),
+            new("Density gives no mass scales", "The density state ρ produces only dimensionless fractions (ΩΛ = I_occ/ln K = 0.6839, Ωm = 0.3161, DERIVED QG234). No ρ-ratio matches v/m_e ≈ 5e5 — the anchors {v, m_e} are independent of cosmology (spectral/boundary, D_044/D_045).", TheoryBadge.Derived, ["ResearchY-D_045"]),
         ],
         Chapters:
         [

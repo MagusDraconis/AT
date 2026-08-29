@@ -88,6 +88,24 @@ public static class AtlasDataService
     public static IReadOnlyList<ResearchNewsModel> ResearchNews { get; } =
     [
         new(
+            "researchy-d045-cosmological-anchor",
+            "The Universe's Density Does Not Set the Mass Scales — the Anchors Stay Boundary",
+            "ResearchY Milestone · D_045 (Wave Geometry Program)",
+            "Could the cosmological density state explain where v and m_e come from? No. The density ρ produces only dimensionless fractions (the famous 0.68/0.32 dark-energy/matter split) — it cannot produce dimensionful masses. The weak scale and electron mass remain independent boundary values, untouched by cosmology.",
+            "D_045 tested whether cosmological scaling can generate the two anchors {v, m_e}. Verdict: NO — the anchors are INDEPENDENT of the cosmological state (option A). The density state ρ produces DIMENSIONLESS fractions only: ΩΛ = I_occ/ln K = 0.7513/ln 3 = 0.6839 and Ωm = 1−ΩΛ = 0.3161 (QG234 — the observed dark-energy/matter split, DERIVED). No cosmological ratio matches the anchor ratios: ΩΛ/Ωm = 2.16 vs v/m_e ≈ 4.98e5 — five orders of magnitude apart; no ρ-quantity is near m_e/v ≈ 2e-6 or ln(v/m_e) ≈ 13.1. The deep reason: ρ is a dimensionless counting measure (QG216), so any function f(ρ) is dimensionless — converting it into dimensionful v/m_e would be circular (the anchor would be the input, not the output). v = 137·ln(span) = 254.37 GeV is a SPECTRAL quantity (span is N-fixed by the D96 spectrum, D_028), not ρ-dependent; m_e = 0.511 MeV has no construction from ρ (D_013/D_014). If ρ changes, the Ω fractions change (they ARE density fractions) but v, m_e, and v/m_e are unchanged — they are fixed by the observable-sector anchors. So the cosmological state contributes the dimensionless density fractions (DERIVED) but does NOT generate the anchors (BOUNDARY, D_044). Classification: density state ρ DERIVED (QG216); ΩΛ/Ωm DERIVED from ρ (QG234); v structure DERIVED from D96 (D_044); m_e BOUNDARY; anchor independence from ρ DERIVED; cosmological scaling of anchors NONE.",
+            "For non-experts: the universe's overall density determines the famous split between dark energy (68%) and matter (32%) — the theory derives that split exactly. We asked whether this same density could also explain why the weak-force scale is 254 GeV and the electron mass is 0.511 MeV. The answer is no: the density produces only proportions (68/32), never absolute sizes. It is like knowing a pie is split 68/32 but not how big the pie is. The absolute scales still have to be imported as boundary inputs — they are not hidden outputs of the cosmos.",
+            "The cosmos sets the 68/32 split, not the 254 GeV and 0.511 MeV scales.",
+            "“The density knows the proportions; it does not know the sizes.”",
+            true,
+            [
+                new("ResearchY-D_044", "ANCHOR-ORIGIN AUDIT",
+                    "v = 137·ln(span) = 254.37 GeV (structure DERIVED, GeV unit BOUNDARY); m_e = 0.511 MeV (pure BOUNDARY).",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.1-boundary-program/Docs/ResearchY/D_ResonanceStructure/ResearchY-D_044.md"),
+                new("ResearchY-D_045", "COSMOLOGICAL-ANCHOR AUDIT",
+                    "The density ρ produces only dimensionless fractions (ΩΛ = 0.6839, Ωm = 0.3161); no ρ-ratio matches v/m_e ≈ 5e5 — anchors independent of ρ.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.1-boundary-program/Docs/ResearchY/D_ResonanceStructure/ResearchY-D_045.md"),
+            ]),
+        new(
             "researchy-d044-anchor-origin",
             "The Weak Scale Is Partially Derived — the Electron Mass Is Pure Boundary",
             "ResearchY Milestone · D_044 (Wave Geometry Program)",
