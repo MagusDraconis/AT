@@ -88,6 +88,30 @@ public static class AtlasDataService
     public static IReadOnlyList<ResearchNewsModel> ResearchNews { get; } =
     [
         new(
+            "researchy-d035-multiplet-requirement",
+            "Complete Pairing Is Derived from Complex Observability — the Boundary Goes Deeper",
+            "ResearchY Milestone · D_035 (Wave Geometry Program)",
+            "Why must the self-conjugate mode sit in a degenerate multiplet? Because the mode is real-only (its sine quadrature is identically zero), and a complex observable sector needs every eigenvalue to have multiplicity ≥ 2. The multiplet supplies the phase partners. So complete pairing (0 unpaired) is DERIVED — the true boundary is that the observable sector is complex.",
+            "D_035 asked why the self-conjugate mode k=N/2 must participate in a degenerate multiplet. The answer is a refinement of D_032/D_033/D_034: the self-conjugate mode is REAL-ONLY (sin(πn) = 0), so its eigenvalue λ = 12 has a 1D real eigenspace at N=64/80/128 (an isolated singlet violating complex observability) and a 5D eigenspace at N=96/192. Complex observability — every observable frequency must carry [magnitude, phase] (QG218, D_034) — requires every eigenvalue to have multiplicity ≥ 2. At N=96 every eigenvalue has mult ≥ 2 (complete pairing); at N=64 the λ=12 singlet has mult 1, so complex observability fails. The degenerate multiplet supplies the phase/quadrature partners. REFINEMENT: complete pairing (0 unpaired) is DERIVED from complex observability — the boundary moves one step deeper, from '0 unpaired' to 'the observable sector is complex'. Classification: complex structure DERIVED (QG218); complex observability EMERGENT (the requirement); complete pairing DERIVED from it; 'observable sector is complex' BOUNDARY; N=96 DERIVED.",
+            "For non-experts: some modes come in pairs (a sine and a cosine), but the very top mode has no sine part — it is 'real-only'. We asked why it must still sit inside a larger degenerate group. The reason: the theory's observables are complex numbers (magnitude + phase). A lone real-only mode cannot carry a phase, so it cannot interfere — it is not a proper complex observable. Requiring every eigenvalue to appear with multiplicity ≥ 2 is what 'the observable sector is complex' means. So the 'no lone modes' rule is not a separate input anymore — it follows from the sector being complex, and the boundary is now just: the observable sector is complex.",
+            "The self-conjugate mode is real-only; complex observability forces multiplicity ≥ 2 — complete pairing follows.",
+            "“The singlet cannot carry a phase. Complexity demands a partner.”",
+            true,
+            [
+                new("ResearchY-D_032", "PAIRING-REQUIREMENT AUDIT",
+                    "The completeness (0 unpaired) — now shown DERIVED from complex observability; pairing structure DERIVED (D_021).",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.1-boundary-program/Docs/ResearchY/D_ResonanceStructure/ResearchY-D_032.md"),
+                new("ResearchY-D_033", "SINGLET-PROHIBITION AUDIT",
+                    "The lone mode is mathematically valid but cannot carry a phase partner (sin(πn)=0).",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.1-boundary-program/Docs/ResearchY/D_ResonanceStructure/ResearchY-D_033.md"),
+                new("ResearchY-D_034", "RECIPROCITY AUDIT",
+                    "Reciprocity = the [magnitude, phase] complex structure (QG218); the complex-observability requirement.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.1-boundary-program/Docs/ResearchY/D_ResonanceStructure/ResearchY-D_034.md"),
+                new("ResearchY-D_035", "MULTIPLET-REQUIREMENT AUDIT",
+                    "Complete pairing DERIVED from complex observability; boundary = 'the observable sector is complex'.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.1-boundary-program/Docs/ResearchY/D_ResonanceStructure/ResearchY-D_035.md"),
+            ]),
+        new(
             "researchy-d034-reciprocity",
             "Reciprocity Is the Magnitude–Phase Complex Structure, Not an Extra Rule",
             "ResearchY Milestone · D_034 (Wave Geometry Program)",
