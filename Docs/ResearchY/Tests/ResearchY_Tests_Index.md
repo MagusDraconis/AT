@@ -62,6 +62,7 @@ ResearchY-D_001  ↔  Y_D_001_Tests.cs
 | ResearchY-D_019 (Closure-Only Audit) | `AT.Tests/ResearchY/D_ResonanceStructure/Y_D_019_Tests.cs` | ACTIVE | 2026-08-28 | ✅ 8/8 PASSED — `Results/Y_D_019_Result.md` |
 | ResearchY-D_020 (Selection Precondition Audit) | `AT.Tests/ResearchY/D_ResonanceStructure/Y_D_020_Tests.cs` | ACTIVE | 2026-08-29 | ✅ 6/6 PASSED — `Results/Y_D_020_Result.md` |
 | ResearchY-D_021 (Oscillation Symmetry Audit) | `AT.Tests/ResearchY/D_ResonanceStructure/Y_D_021_Tests.cs` | ACTIVE | 2026-08-29 | ✅ 7/7 PASSED — `Results/Y_D_021_Result.md` |
+| ResearchY-D_022 (Weak-Isospin Entry Audit) | `AT.Tests/ResearchY/D_ResonanceStructure/Y_D_022_Tests.cs` | ACTIVE | 2026-08-29 | ✅ 7/7 PASSED — `Results/Y_D_022_Result.md` |
 
 ## Result Summaries
 

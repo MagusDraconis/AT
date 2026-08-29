@@ -774,6 +774,21 @@ degeneracy property. The COMPLETENESS of pairing (0 unpaired) is BOUNDARY — an
 N-arithmetic selection (λ=12 self-conjugate degeneracy: 5-fold at N=96/192, 1-fold at
 N=64/128), the D_020 input. No canonical value changed.
 
+ResearchY-D_022 (Weak-Isospin Entry Audit, COMPLETE, tests 7/7 PASSED): is weak-isospin
+an emergent reading of oscillation-derived Z2 symmetry? Verdict: NO — weak-isospin is NOT
+the oscillation-derived Z2. Three distinct Z2 objects: (1) oscillation Z2 (+A↔−A,
+cos↔−cos) — DERIVED, universal temporal phase gauge of one mode; (2) spectral Z2
+(λ_k = λ_{N−k}) — DERIVED, ring reflection; (3) weak-isospin Z2 (SU(2) doublet, T₃=±1/2)
+— BOUNDARY, independent gauge input. Tests: oscillation-derived Z2 exists WITHOUT
+weak-isospin (spectral Z2 + quadrature pairs at N=32..192, no gauge sector); weak-isospin
+is writable WITHOUT spectral Z2 (SU(2) is a gauge group, a doublet rep needs no
+degeneracy). The {cos, sin} eigenspace transforms as SO(2) (det-1 2×2 rotations,
+Abelian), NOT SU(2) (3 Pauli generators, non-Abelian) — the spectral doublet is a parity
+doublet {even, odd}, not an SU(2) rep. Verdict: C) weak-isospin = independent input
+(SU(2) gauge structure); the doublet SHAPE read as weak-isospin is B) EMERGENT.
+Classification: oscillation Z2 DERIVED, spectral Z2 DERIVED, weak-isospin SU(2) BOUNDARY,
+doublet reading EMERGENT. No canonical value changed.
+
 ### PRED001: Prediction Registry (standalone Zenodo publication)
 
 Summary:
