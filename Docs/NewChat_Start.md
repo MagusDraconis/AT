@@ -897,6 +897,19 @@ specific structural defect is PARTIALLY supported — closure removes inconsiste
 D_020). Classification: defect removal EMERGENT; N=96 BOUNDARY. No canonical value
 changed.
 
+ResearchY-D_030 (Octave-Rung Audit, COMPLETE, tests 6/6 PASSED): why octave rungs? Is
+N = p·2^k derived or a remaining boundary assumption? Verdict: the octave-rung structure
+is DERIVED. The family count floor(log₂ span)+1 is itself an octave (factor-2) partition
+(D_016), and the long-wavelength dispersion ω(k) ~ c·k makes mode doubling k→2k a
+frequency octave (ω(2)/ω(1) = 1.97 at N=96). Hence q=2 is the natural scale step; n =
+p·2^k is the discrete octave ladder. q=2 is the unique PURE scale-step base whose rung
+chain hits a zero-defect ring (only 96; q=6 hits 108 but mixes the seed,
+3·6^k = 3^(k+1)·2^k; q=3/4/5 have no zero-defect rung). Removing the octave rung leaves
+11 zero-defect rings (96 not unique). The minimal principle: p (seed) × q^k (scale
+step) with q=2 — the seed period p=3 is the BOUNDARY input (D_020). Classification:
+octave structure DERIVED (dispersion + partition); q=2 base EMERGENT (linear
+dispersion); seed period p=3 BOUNDARY (D_020). No canonical value changed.
+
 ### PRED001: Prediction Registry (standalone Zenodo publication)
 
 Summary:
