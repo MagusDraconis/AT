@@ -88,6 +88,27 @@ public static class AtlasDataService
     public static IReadOnlyList<ResearchNewsModel> ResearchNews { get; } =
     [
         new(
+            "researchy-d038-state-identity",
+            "An Observable State Must Carry Both Magnitude and Phase — or It Loses Its Identity",
+            "ResearchY Milestone · D_038 (Wave Geometry Program)",
+            "Why both magnitude AND phase? Because an observable state must be distinguishable from every other state. With magnitude alone the [4,4,87] occupancy structure gives only 3 distinct values for all 95 modes — most states collapse into the same one. With phase alone you get 95 distinct identities but no probability content. Only the full complex state gives 95/95 distinct states with the Born rule exact.",
+            "D_038 asked the information-theoretic question directly: does observability itself force the two-DOF complex structure? The answer is YES, via STATE IDENTITY. An observable state must be (1) fully specified and (2) distinguishable from all others. Magnitude-only fails distinguishability: the [4,4,87] occupancy groups give only 3 distinct magnitudes for the 95 positive modes (√(1/7), √(2/7), √(4/7) at μ=2, J=3), and the mirror pair k/N−k is identical (cos is even) — most modes collapse into the same state. Phase-only restores 95/95 identity but loses probability content: uniform |ψ|=1 means no branching shares, no count structure (the Born rule Σρ=1 over generations is the count conservation, QG216). The complex state ψ = |ψ|·e^{iθ} is the minimal complete observable state: the (magnitude, phase) map is 95/95 injective with Born rule exact. The minimal information structure is two real DOFs — a complex number — which are exactly the two faces of the same actualization tick (count → magnitude, circulation → phase, D_036). Classification: magnitude DERIVED (count, QG216); phase DERIVED (circulation, QG220); complex state DERIVED (QG218); state identity EMERGENT (information completeness); probability content DERIVED; interference/reciprocity DERIVED (D_037); Z2-paired sector requirement BOUNDARY (D_020); N=96 DERIVED.",
+            "For non-experts: a state needs two numbers to be fully known — its size (magnitude) and its position in the cycle (phase). We asked whether you could get away with just one. No: with size alone, the theory's mode structure collapses the 95 frequencies into just 3 'buckets' of size — most of them become the same state, so you cannot tell them apart. With phase alone you can tell all 95 apart, but then every state has the same size, so the 'how much' information (the probabilities) is gone. Only size + phase together give you 95 distinct states with proper probabilities. That is exactly a complex number.",
+            "Magnitude gives the 'how much'; phase gives the 'which one' — an observable state needs both.",
+            "“Size alone cannot tell modes apart; phase alone forgets how much is there.”",
+            true,
+            [
+                new("ResearchY-D_036", "COMPLEX-STATE-ORIGIN AUDIT",
+                    "Complex states DERIVED: magnitude (count) + phase (circulation) — two faces of the same tick k.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.1-boundary-program/Docs/ResearchY/D_ResonanceStructure/ResearchY-D_036.md"),
+                new("ResearchY-D_037", "RECIPROCITY-OBSERVABILITY AUDIT",
+                    "Observability = complete reconstruction; reciprocity EMERGENT from complex-state observability.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.1-boundary-program/Docs/ResearchY/D_ResonanceStructure/ResearchY-D_037.md"),
+                new("ResearchY-D_038", "STATE-IDENTITY AUDIT",
+                    "Observability forces two DOFs: magnitude-only collapses identity (3 states), phase-only loses probability; complex = minimal complete identity.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.1-boundary-program/Docs/ResearchY/D_ResonanceStructure/ResearchY-D_038.md"),
+            ]),
+        new(
             "researchy-d037-reciprocity-observability",
             "Observability Means Complete Reconstruction — That Is Why Every Mode Needs a Partner",
             "ResearchY Milestone · D_037 (Wave Geometry Program)",
