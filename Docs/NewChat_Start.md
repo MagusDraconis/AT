@@ -805,6 +805,20 @@ gauge layer (weak-isospin doublets, W/Z) is lost. Verdict: A) SU(2) = independen
 Classification: spectral doublet O(2)-type DERIVED, SU(2) gauge algebra BOUNDARY, reading
 EMERGENT. No canonical value changed.
 
+ResearchY-D_024 (Doublet Compatibility Audit, COMPLETE, tests 7/7 PASSED): why does SU(2)
+attach to spectral doublets? Is the doublet shape uniquely compatible with weak-isospin?
+Verdict: the doublet shape is NECESSARY but NOT SUFFICIENT for weak-isospin. SU(2)
+irreps come in every dimension 2j+1 (j=0→1D singlet, j=½→2D doublet, j=1→3D triplet,
+j=3/2→4D, j=2→5D, j=5/2→6D); the spectral doublet (2D) is compatible with the
+fundamental j=½ rep (T₃=±½, weak-isospin fermions), but the same 2D space hosts
+SO(2)/O(2)/SU(2) (D_022/D_023), and the D96 5-fold/6-fold groups are SU(2) carrier
+spaces too (j=2, j=5/2). Compatibility table: only the doublet is the weak-isospin
+fundamental; singlet/triplet/quadruplet/quintuplet/sextuplet are NOT. The weak-isospin
+attachment to doublets is the EMERGENT choice of the fundamental rep, not a unique
+consequence of the doublet shape. Classification: spectral doublet DERIVED, SU(2) rep
+dims BOUNDARY, j=½ fundamental choice BOUNDARY, attachment EMERGENT. No canonical value
+changed.
+
 ### PRED001: Prediction Registry (standalone Zenodo publication)
 
 Summary:
