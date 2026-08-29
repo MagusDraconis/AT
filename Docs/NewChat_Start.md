@@ -1143,6 +1143,27 @@ DERIVED (D_041/D_042); observable sector split DERIVED (D_014); anchor count EME
 single-anchor failure DERIVED; dimensionful physics EMERGENT. No new primitive; No
 canonical value changed.
 
+ResearchY-D_044 (Anchor-Origin Audit, COMPLETE, tests 6/6 PASSED): what is the
+physical origin of v and m_e? Can the anchor values be derived or are they irreducible
+physical constants? Verdict: v and m_e are OBSERVABLE-SECTOR BOUNDARY VALUES, not
+hidden outputs of a deeper process. v has a PARTIALLY-DERIVED structure:
+v = 137·ln(span) = 254.37 GeV (QG168) — 137 = Σm+#d is the fine-structure denominator
+(1/α_em ≈ 137.036) and ln(span) = ln 6.4025 is the derived spectral span (D_028); so
+v's dimensionless VALUE is D96-derived, and only the GeV UNIT is the calibration anchor
+(BOUNDARY). m_e = 0.511 MeV has NO D96 construction (D_013/D_014) — a pure boundary
+value (the fermionic anchor). Neither defines the other: v/m_e ≈ 4.98e5 and ln(v/m_e) ≈
+13.1 are NOT canonical spectral numbers (D_013 H1/H2/H3 REFUTED). M_Pl/v = A³ =
+(Σm·#g·occ₂)³ = 4.8094e16 is DERIVED (D_007, a pure D96 ratio); m_e/ω₁ ≈ 8.2e-4 and
+v/ω₁ ≈ 409 are anchor-over-reference ratios, not spectral invariants. Replacing an
+anchor re-scales its sector (v → bosonic, m_e → fermionic); the dimensionless structure
+(couplings, mixings, ratios) survives. So both anchors are B (sector-boundary): NOT
+arbitrary calibrations (v's structure is derived), NOT hidden outputs (no deeper
+mechanism), but observable-sector boundary values. Classification: v dimensionless
+structure DERIVED (137·ln span, QG168); v GeV unit BOUNDARY; m_e value BOUNDARY (no
+construction); anchor independence BOUNDARY (D_013); M_Pl/v DERIVED; anchor roles
+EMERGENT (D_014); dimensionful physics EMERGENT. No new primitive; No canonical value
+changed.
+
 ### PRED001: Prediction Registry (standalone Zenodo publication)
 
 Summary:

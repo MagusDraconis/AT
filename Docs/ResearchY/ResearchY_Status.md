@@ -71,6 +71,7 @@
 | ResearchY-D_041 | Time-Origin Audit | `D_ResonanceStructure/ResearchY-D_041.md` | `AT.Tests/ResearchY/D_ResonanceStructure/Y_D_041_Tests.cs` (6/6 ✅) | COMPLETE |
 | ResearchY-D_042 | Fundamental-Ratio Audit | `D_ResonanceStructure/ResearchY-D_042.md` | `AT.Tests/ResearchY/D_ResonanceStructure/Y_D_042_Tests.cs` (6/6 ✅) | COMPLETE |
 | ResearchY-D_043 | Dual-Anchor-Necessity Audit | `D_ResonanceStructure/ResearchY-D_043.md` | `AT.Tests/ResearchY/D_ResonanceStructure/Y_D_043_Tests.cs` (6/6 ✅) | COMPLETE |
+| ResearchY-D_044 | Anchor-Origin Audit | `D_ResonanceStructure/ResearchY-D_044.md` | `AT.Tests/ResearchY/D_ResonanceStructure/Y_D_044_Tests.cs` (6/6 ✅) | COMPLETE |
 | ResearchY-A_002 | Difference Disturbance | — | — | PLANNED |
 | ResearchY-A_003 | Actualization Propagation | — | — | PLANNED |
 | ResearchY-B_001 | Circular Closure | — | — | PLANNED |
