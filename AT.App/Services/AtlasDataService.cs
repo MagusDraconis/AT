@@ -94,6 +94,27 @@ public static class AtlasDataService
     public static IReadOnlyList<ResearchNewsModel> ResearchNews { get; } =
     [
         new(
+            "researchy-d046-predictions",
+            "Eight New Predictions That V2.0 Could Not State",
+            "ResearchY Milestone · D_046 (V2.2 New Physics)",
+            "The origin chain yields eight predictions the canonical theory could not express. The gauge doublet is O(2)-type not SU(2); N=96 is selected not closure-produced; frequency emerges from the tick phase rate; the weak scale's structure is 137·ln(span); the family count is floor(log₂ span)+1. Each has a falsification path.",
+            "D_046 asked what new predictions follow from ResearchY results that V2.0 could not state. Verdict: EIGHT structurally new predictions (P1–P8), each absent from V2.0 wording because the origin chain provides derivation paths V2.0 lacked. P1 (gauge, THEOREM): the spectral doublet {cos, sin} is O(2)-type (SO(2) + reflection), NOT SU(2) — no 3-generator algebra from the spectrum. P2 (gauge, NECESSITY): the su(2) compact-form is EMERGENT from finite-dim unitary observability — sl(2,R)/su(1,1) cannot host the weak sector. P3 (closure, THEOREM): N=96 is selected by the observable-sector construction (Z2-paired + 3 families + octave rung), NOT by closure — among the 11 zero-defect rings (6|N in [60,120)) only 96 = 3·2⁵ is an octave rung. P4 (resonance, NECESSITY): frequency EMERGES from the tick phase rate, ω₁ ≈ √91·(2π/N) (verified 9.50 vs 9.54 asymptotic). P5 (resonance, THEOREM): span = 6.4025 is the algebraic, N-specific π-analogue — there is NO universal N-invariant ratio (spans 4.02/6.40/12.78 at N=60/96/192). P6 (anchor, CORRESPONDENCE): v = 137·ln(span) = 254.37 GeV — the weak scale's dimensionless structure is D96-derived; only the GeV unit is boundary. P7 (anchor, BOUNDARY): v/m_e ≈ 4.98e5 is irreducible — falsifiable by finding a canonical construction. P8 (family, THEOREM): 3 = floor(log₂ span)+1 with span(96) = 6.4025. Each prediction carries a dependency chain into the origin path and an explicit falsification path. Experimental ranking: P6 (weak scale) > P7 (v/m_e) > P4; mathematical: P1–P3, P5, P8 (all verified by the suite). These predictions are the testable cores of the V2.2 roadmap targets (T7 = P7). No canonical changes; research only.",
+            "For non-experts: the theory's V2.1 research program produced a new understanding of where its own structure comes from. This audit asks: does that deeper understanding let the theory say anything NEW — predictions it could not make before? The answer is yes, eight of them. For example, it now predicts that the force-particles' two-member multiplets are of a simpler mathematical type than the weak force needs (they pair like a mirror, not like a spin), that the number 96 is selected by the structure rather than produced by the dynamics, that the lowest frequency is tied to the tick rate of the process, and that the weak scale's value is 137 times the log of the spectral span. Each new prediction also states what would prove it wrong.",
+            "Eight new predictions, each with a dependency chain and a falsification path.",
+            "“The deeper chain does not just explain — it predicts.”",
+            true,
+            [
+                new("ResearchY-D_041", "TIME-ORIGIN AUDIT",
+                    "Frequency emerges from the tick phase rate (P4); the tick is the dimensionless time parameter.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/D_ResonanceStructure/ResearchY-D_041.md"),
+                new("ResearchY-D_044", "ANCHOR-ORIGIN AUDIT",
+                    "v = 137·ln(span) = 254.37 GeV (P6); v/m_e irreducible (P7).",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/D_ResonanceStructure/ResearchY-D_044.md"),
+                new("ResearchY-D_046", "RESEARCHY-PREDICTIONS AUDIT",
+                    "8 new predictions P1–P8 (gauge/closure/resonance/anchor/family sectors), each with falsification path.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/D_ResonanceStructure/ResearchY-D_046.md"),
+            ]),
+        new(
             "researchy-np001-v22-roadmap",
             "V2.2 Roadmap: Measurement, Baryon Asymmetry, Neutrinos, and the CMB Lead the Next Targets",
             "ResearchY Milestone · NP_001 (V2.2 New Physics Roadmap)",
