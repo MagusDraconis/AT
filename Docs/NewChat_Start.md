@@ -1125,6 +1125,24 @@ role EMERGENT (structural reference); span VALUE DERIVED (algebraic); ratio fami
 DERIVED; π VALUE BOUNDARY (unchanged, B_002); universal N-invariant ratio NONE. No
 canonical value changed.
 
+ResearchY-D_043 (Dual-Anchor-Necessity Audit, COMPLETE, tests 6/6 PASSED): why does a
+dimensionless structure require multiple physical anchors? Is the need for {v, m_e}
+fundamental or emergent? Verdict: the dual-anchor necessity is EMERGENT from sector
+splitting. The D96 dimensionless structure (D_041/D_042) hosts two physically distinct
+sectors: the BOSONIC (gauge/gravity: M_W/M_Z/M_H/M_Pl = v·(dimensionless)) and the
+FERMIONIC (matter: m_u..m_t = m_e·(dimensionless)). Each sector's absolute scale
+requires its own anchor; no canonical dimensionless factor links them (m_e/v ~ 2e-6 is
+not a spectral number, D_013 H1 REFUTED). ONE anchor fails: m_u/v = (m_e/v)·(Σ√m/√Σm²)
+~ 2.3e-6 requires m_e as a second independent input (D_012/D_013 irreducible). The two
+sectors are distinct observables with distinct scale relations — there is no common
+dimension principle. Prove/refute: multiple anchors are required whenever observables
+split into physically distinct sectors — YES (each sector needs its own absolute scale;
+a single anchor sets only one sector's scale). Classification: dimensionless structure
+DERIVED (D_041/D_042); observable sector split DERIVED (D_014); anchor count EMERGENT
+(from sector splitting); each sector's anchor (v, m_e) BOUNDARY (dimensionful input);
+single-anchor failure DERIVED; dimensionful physics EMERGENT. No new primitive; No
+canonical value changed.
+
 ### PRED001: Prediction Registry (standalone Zenodo publication)
 
 Summary:
