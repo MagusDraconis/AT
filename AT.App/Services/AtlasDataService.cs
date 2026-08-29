@@ -88,6 +88,30 @@ public static class AtlasDataService
     public static IReadOnlyList<ResearchNewsModel> ResearchNews { get; } =
     [
         new(
+            "researchy-d036-complex-state-origin",
+            "Complex States Are Derived — the Phase Distinguishes a Mode from Its Mirror",
+            "ResearchY Milestone · D_036 (Wave Geometry Program)",
+            "Why must observable states be complex? Because the two real degrees of freedom are the two faces of the same actualization tick: magnitude (the count) and phase (the circulation). The phase is the discriminator that tells a mode apart from its mirror partner — without it the Z2 pairing collapses. So 'the observable sector is complex' is not a separate boundary; it reduces to the pairing input.",
+            "D_036 asked whether the complex state structure ψ = |ψ|·e^{iθ} is derived from Difference → Actualization or remains the final boundary. The answer: it is DERIVED. The two real DOFs are the two faces of the SAME actualization tick k — magnitude |ψ| = √ρ (the count face, QG216) and phase θ = 2πk/N (the circulation face, QG220; the U(1) link connection, QG63). The complete canonical amplitude ψ_k = √(μ^k/S)·e^(2πik/N) (QG220) has Σ|ψ|² = 1 EXACT (Born rule by construction). The phase is the PAIRING DISCRIMINATOR: it distinguishes k from N−k (the Z2 pairing generator, D_021) — in a magnitude-only (1-DOF real) space cos(2π(N−k)n/N) = cos(2πkn/N), so the mirror pair collapses and no doublet/weak-isospin sector exists. Removing the phase breaks the pairing first; removing the magnitude empties the count structure (a uniform, contentless sector). Interference P = 2 + 2cos(θ₁−θ₂) is a DERIVED consequence, not the cause. REFINEMENT: 'the observable sector is complex' (D_035) REDUCES to the Z2 pairing input (D_020) — the boundary count does not increase. Classification: magnitude DERIVED (QG216); phase DERIVED (QG220); complex state DERIVED (QG218); interference DERIVED; complex observability EMERGENT (= the Z2 pairing); Z2 pairing BOUNDARY (D_020); N=96 DERIVED.",
+            "For non-experts: a complex number carries two pieces of information — how big it is and which way it points. We asked whether needing both is an extra rule or follows from the theory's foundation. It follows: each step of the actualization process produces BOTH a count (how much) and a position on the cycle (which way). You need the 'which way' to tell a frequency from its mirror image — without it, a mode and its partner would be the same thing, and the pairing structure (the weak doublets) could not exist. So the phase is not decoration; it is what makes pairs into two distinct things. The rule 'states are complex' turns out to be the same rule as 'modes come in pairs'.",
+            "The phase distinguishes a mode from its mirror — complex states ARE the pairing structure.",
+            "“A mode and its mirror differ only by phase — that is why states must be complex.”",
+            true,
+            [
+                new("ResearchY-D_021", "OSCILLATION SYMMETRY",
+                    "The Z2 pairing generator k↔N−k: cos is even, sin is odd — the phase carries the distinction.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.1-boundary-program/Docs/ResearchY/D_ResonanceStructure/ResearchY-D_021.md"),
+                new("ResearchY-D_034", "RECIPROCITY AUDIT",
+                    "Reciprocity = the [magnitude, phase] complex structure (QG218); the two DOFs are DERIVED.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.1-boundary-program/Docs/ResearchY/D_ResonanceStructure/ResearchY-D_034.md"),
+                new("ResearchY-D_035", "MULTIPLET-REQUIREMENT AUDIT",
+                    "Complete pairing DERIVED from complex observability; D_036 reduces 'observable sector is complex' to the Z2 pairing.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.1-boundary-program/Docs/ResearchY/D_ResonanceStructure/ResearchY-D_035.md"),
+                new("ResearchY-D_036", "COMPLEX-STATE-ORIGIN AUDIT",
+                    "Complex state DERIVED: magnitude (count, QG216) + phase (circulation, QG220) = two faces of the same tick k; phase is the pairing discriminator.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.1-boundary-program/Docs/ResearchY/D_ResonanceStructure/ResearchY-D_036.md"),
+            ]),
+        new(
             "researchy-d035-multiplet-requirement",
             "Complete Pairing Is Derived from Complex Observability — the Boundary Goes Deeper",
             "ResearchY Milestone · D_035 (Wave Geometry Program)",
