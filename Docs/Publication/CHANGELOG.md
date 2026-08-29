@@ -28,6 +28,8 @@ repository's release cadence; this file covers the publication-relevant mileston
 ### Changed
 - Research/audit only — **no canonical AT V2.0 values, equations, predictions, or claim
   statuses altered**.
+- AT.App shows a **dynamic version** (from `AtlasDataService.Version` = "2.1.0") in the
+  top app bar, nav menu, and home hero (previously hardcoded "v2.0").
 
 ### Fixed
 - Classification drift between D_028 and D_040 (3-family window / N=96) reconciled via

@@ -1,5 +1,6 @@
 @inherits LayoutComponentBase
 @using MudBlazor
+@using AT.App.Services
 
 <MudThemeProvider Theme="_theme" @bind-IsDarkMode="_isDark" />
 <MudPopoverProvider />
@@ -10,6 +11,7 @@
     <MudAppBar Elevation="1">
         <MudIconButton Icon="@Icons.Material.Filled.Menu" Color="Color.Inherit" OnClick="@ToggleDrawer" />
         <MudText Typo="Typo.h6">The Actualization Theory</MudText>
+        <span class="app-version-chip" style="margin-left: 8px;">@AtlasDataService.VersionLabel</span>
         <MudSpacer />
         <MudTooltip Text="Zenodo DOI: https://doi.org/10.5281/zenodo.20681734" Placement="Placement.Bottom" Arrow="true">
             <MudLink Href="https://doi.org/10.5281/zenodo.20681734" Target="_blank" Underline="Underline.None" Class="top-nav-link mx-1" AriaLabel="Zenodo DOI">

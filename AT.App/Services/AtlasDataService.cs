@@ -3,11 +3,17 @@ using AT.App.Models;
 namespace AT.App.Services;
 
 /// <summary>
-/// Strongly typed, in-memory data for the AT v1.0 research atlas.
-/// All content is drawn from AT_v1_0_Monograph_Final (no new physics).
+/// Strongly typed, in-memory data for the AT research atlas.
+/// All content is drawn from canonical AT (no new physics).
 /// </summary>
 public static class AtlasDataService
 {
+    /// <summary>The current AT research-atlas version (single source of truth).</summary>
+    public const string Version = "2.1.0";
+
+    /// <summary>Human-readable version label, e.g. "v2.1".</summary>
+    public static string VersionLabel => $"v{Version}";
+
     public static IReadOnlyList<string> WhyQuestions { get; } =
     [
         "The Standard Model explains much.",

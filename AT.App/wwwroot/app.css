@@ -8,6 +8,19 @@ a { color: inherit; }
 
 .nav-icon { margin-right: 0.5rem; }
 .nav-brand { border-bottom: 1px solid rgba(255,255,255,0.08); margin-bottom: 0.5rem; }
+.app-version-chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.15rem 0.55rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  color: #81C784;
+  background: rgba(129,199,132,0.12);
+  border: 1px solid rgba(129,199,132,0.4);
+  border-radius: 999px;
+  white-space: nowrap;
+}
 .top-nav-links { display: inline-flex; align-items: center; gap: 0.75rem; margin-right: 1rem; }
 .top-nav-link { display: inline-flex; align-items: center; color: inherit; text-decoration: none; }
 .top-nav-link:hover { color: #81D4FA; }
