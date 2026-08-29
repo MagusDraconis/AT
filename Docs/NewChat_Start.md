@@ -937,6 +937,21 @@ conservation (B) or closure (D); it IS required by the doublet-structure observa
 DERIVED. Classification: pairing structure DERIVED; completeness BOUNDARY; self-conjugate
 degeneracy DERIVED (N-arithmetic, 6|N); p=3/N=96 DERIVED. No canonical value changed.
 
+ResearchY-D_033 (Singlet-Prohibition Audit, COMPLETE, tests 7/7 PASSED): why is an
+unpaired self-conjugate mode physically forbidden? Verdict: the singlet is
+MATHEMATICALLY allowed (L·cos₃₂ = 12·cos₃₂ verified at N=64 — a valid eigenfunction),
+but PHYSICALLY excluded by the observable-sector structure. It breaks reciprocity (the
+Z2 mirror maps k=N/2 to itself — no distinct partner), the spatial phase structure (no
+sin harmonic, sin(πn)=0), the representation structure (1D eigenspace, no 2D doublet),
+and the weak-isospin attachment (D_022). Normalization SURVIVES (the Fourier basis is
+complete with or without the singlet). The prohibition is the observable-sector
+requirement of a RECIPROCAL PAIR structure ("no isolated oscillator") — BOUNDARY
+(D_020). The reciprocity/phase/representation closures are DERIVED consequences of the
+pairing (D_021). Removal test: removing complete pairing breaks reciprocity first (one
+frequency becomes a lone mode); the spectral content survives. Classification: singlet
+allowed mathematically (DERIVED fact); prohibited physically (BOUNDARY, D_020); "no
+isolated oscillator" principle EMERGENT. No canonical value changed.
+
 ### PRED001: Prediction Registry (standalone Zenodo publication)
 
 Summary:

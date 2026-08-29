@@ -73,6 +73,7 @@ ResearchY-D_001  ↔  Y_D_001_Tests.cs
 | ResearchY-D_030 (Octave-Rung Audit) | `AT.Tests/ResearchY/D_ResonanceStructure/Y_D_030_Tests.cs` | ACTIVE | 2026-08-29 | ✅ 6/6 PASSED — `Results/Y_D_030_Result.md` |
 | ResearchY-D_031 (Seed-Origin Audit) | `AT.Tests/ResearchY/D_ResonanceStructure/Y_D_031_Tests.cs` | ACTIVE | 2026-08-29 | ✅ 6/6 PASSED — `Results/Y_D_031_Result.md` |
 | ResearchY-D_032 (Pairing-Requirement Audit) | `AT.Tests/ResearchY/D_ResonanceStructure/Y_D_032_Tests.cs` | ACTIVE | 2026-08-29 | ✅ 6/6 PASSED — `Results/Y_D_032_Result.md` |
+| ResearchY-D_033 (Singlet-Prohibition Audit) | `AT.Tests/ResearchY/D_ResonanceStructure/Y_D_033_Tests.cs` | ACTIVE | 2026-08-29 | ✅ 7/7 PASSED — `Results/Y_D_033_Result.md` |
 
 ## Result Summaries
 
