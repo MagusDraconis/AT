@@ -952,6 +952,22 @@ frequency becomes a lone mode); the spectral content survives. Classification: s
 allowed mathematically (DERIVED fact); prohibited physically (BOUNDARY, D_020); "no
 isolated oscillator" principle EMERGENT. No canonical value changed.
 
+ResearchY-D_034 (Reciprocity Audit, COMPLETE, tests 6/6 PASSED): why must every
+observable oscillator possess a reciprocal partner? Verdict: reciprocity = the
+[magnitude, phase] complex structure (QG218). Every observable mode must carry two
+independent real DOFs — magnitude |ψ| = √ρ (the branching count, QG216, Difference's
+count face) and phase θ (the U(1) link connection, QG63, Actualization's link face).
+The complex structure (two DOFs) is DERIVED: real-only states give classical addition
+(no interference), complex states give interference P = 2 + 2cos(θ₁−θ₂). Reciprocity
+(every mode complex) is the EMERGENT observable requirement; complete pairing (0
+unpaired) is BOUNDARY (D_020). What is fundamentally lost without reciprocity:
+INTERFERENCE first (the singlet frequency becomes real-only/classical), then phase
+freedom, doublet structure, and weak-isospin; normalization survives. Prove/refute:
+observable structure (as a complex/interference structure) requires reciprocal partners
+— YES. Classification: magnitude/phase/complex structure DERIVED (QG216/63/218);
+reciprocity EMERGENT; complete pairing BOUNDARY; N=96 DERIVED. No canonical value
+changed.
+
 ### PRED001: Prediction Registry (standalone Zenodo publication)
 
 Summary:
