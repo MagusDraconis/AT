@@ -88,6 +88,27 @@ public static class AtlasDataService
     public static IReadOnlyList<ResearchNewsModel> ResearchNews { get; } =
     [
         new(
+            "researchy-d031-seed-origin",
+            "The Period-3 Seed Is Derived From Pairing Completeness",
+            "ResearchY Milestone · D_031 (Wave Geometry Program)",
+            "Why does everything begin with a period-3 seed? The seed period p=3 is not a final boundary assumption — it is derived: it is the unique period whose natural octave-rung size has complete Z2 pairing (0 unpaired modes) and converges. Only the pairing requirement itself (the observable sector) is boundary.",
+            "D_031 scanned the seed periods p=2..6 at their natural octave-rung sizes n = p·2^k in the 3-family window [60,120). Complete Z2 pairing (0 unpaired, weak-isospin doublets, D_020) selects p=3 uniquely: p=2/4 → n=64 (1 unpaired, incomplete), p=5 → n=80 (1 unpaired, incomplete), p=6 → n=96 but FAILS convergence (density 1/6), and p=3 → n=96 (0 unpaired, converges). The canonical Period3SeedOrigin classifies this INEVITABLE. p=3 is the MINIMAL period with complete pairing. Removing p=3 breaks the pairing completeness first (any other converging period gives 1 unpaired mode). Chain: Difference → Actualization → observable sector (BOUNDARY) → p=3 (DERIVED) → 6|N → octave ladder → N=96.",
+            "For non-experts: the theory's building blocks start with a repeating pattern, and we asked why the repeat length is 3. The answer: the pattern length is not chosen freely — it is the smallest length that makes the spectrum's mirror-pairing complete (no leftover unpaired frequencies) while still settling into a stable network. Every shorter pattern leaves an unpaired frequency; a length-6 pattern never settles. So the '3' is a consequence of the pairing and stability requirements, not an arbitrary input.",
+            "The seed period 3 is the minimal complete-pairing period, not an arbitrary input.",
+            "“The seed is three because that is the smallest pattern that pairs completely.”",
+            true,
+            [
+                new("ResearchY-D_020", "SELECTION PRECONDITION",
+                    "Complete Z2 pairing + 3 families are the observable-sector INPUT; the period-3 seed is derived from pairing completeness.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.1-boundary-program/Docs/ResearchY/D_ResonanceStructure/ResearchY-D_020.md"),
+                new("ResearchY-D_030", "OCTAVE-RUNG AUDIT",
+                    "Octave ladder n = p·2^k is derived; q=2 EMERGENT; the seed period p remains the input D_031 resolves.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.1-boundary-program/Docs/ResearchY/D_ResonanceStructure/ResearchY-D_030.md"),
+                new("ResearchY-D_031", "SEED-ORIGIN AUDIT",
+                    "p=3 DERIVED: unique period with complete Z2 pairing at the natural size + convergence; pairing requirement BOUNDARY.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.1-boundary-program/Docs/ResearchY/D_ResonanceStructure/ResearchY-D_031.md"),
+            ]),
+        new(
             "researchy-d030-octave-rung",
             "The Octave-Rung Structure Is Derived, Not a Boundary Assumption",
             "ResearchY Milestone · D_030 (Wave Geometry Program)",

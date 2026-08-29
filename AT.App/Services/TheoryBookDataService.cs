@@ -501,6 +501,7 @@ public static class TheoryBookDataService
                     new("SU(2) gauge input boundary", "The SU(2) gauge algebra itself is an independent input (sector S); the doublet is the EMERGENT attachment surface, the compact-form choice EMERGENT from observability.", TheoryBadge.Partial, ["ResearchY-D_023", "ResearchY-D_026"]),
                     new("Span derived", "span = ω_max/ω_min ~ 0.0578·N (DERIVED): ω_max→√12 (antipodal), ω_min~(2π√91)/N. span(96)=6.4025 is the N=96 point; 3 families = floor(log₂ span)+1 is the consequence.", TheoryBadge.Derived, ["ResearchY-D_028"]),
                     new("Octave rung derived", "n = p·2^k is DERIVED: floor(log₂ span)+1 is an octave partition, and ω(k)~c·k makes k→2k a frequency octave (ω(2)/ω(1)=1.97). Only the seed period p=3 is boundary.", TheoryBadge.Derived, ["ResearchY-D_030"]),
+                    new("Seed period derived", "p=3 is the UNIQUE period with complete Z2 pairing (0 unpaired) at its natural octave-rung size + convergence (p=2/4→64, p=5→80 have 1 unpaired; p=6 fails convergence). The pairing requirement itself is the D_020 boundary input.", TheoryBadge.Derived, ["ResearchY-D_031"]),
                     new("Mapping speculative", "No native operator identified whose spectrum equals the SM parameters.", TheoryBadge.Partial, ["ATQG942", "ATQG952"]),
                 ]),
             new("global-solution-space", "Global Solution Space",
