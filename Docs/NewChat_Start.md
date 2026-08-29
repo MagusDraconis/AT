@@ -1229,6 +1229,25 @@ T1/T2 (measurement/information) → T3 (baryon asymmetry) → T4 (neutrinos) →
 the five-item boundary set (R_001). Status: each target requires its own audit + xUnit
 suite when taken up.
 
+ResearchY-D_046 (ResearchY-Predictions Audit, COMPLETE, tests 6/6 PASSED): what new
+predictions follow from ResearchY results that V2.0 could not state? Verdict: ResearchY
+adds 8 structurally NEW predictions absent from V2.0 wording, because the origin chain
+provides derivation paths V2.0 lacked. P1 (gauge, THEOREM): the spectral doublet is
+O(2)-type (SO(2) + reflection), NOT SU(2) — no 3-generator algebra from the spectrum.
+P2 (gauge, NECESSITY): su(2) compact-form is EMERGENT from finite-dim unitary
+observability — sl(2,R)/su(1,1) cannot host the weak sector. P3 (closure, THEOREM):
+N=96 is selected by the observable-sector construction, NOT closure — only 96 is a
+zero-defect octave rung (11 rings, rung {96}). P4 (resonance, NECESSITY): frequency
+EMERGES from the tick phase rate, ω₁ ≈ √91·(2π/N) (9.50 vs 9.54 asymptotic). P5
+(resonance, THEOREM): span = 6.4025 is the algebraic N-specific π-analogue — no
+universal N-invariant ratio (spans 4.02/6.40/12.78 at N=60/96/192). P6 (anchor,
+CORRESPONDENCE): v = 137·ln(span) = 254.37 GeV — structure D96-derived, GeV unit
+boundary. P7 (anchor, BOUNDARY): v/m_e ≈ 4.98e5 irreducible (no canonical factor;
+falsifiable by finding a construction). P8 (family, THEOREM): 3 = floor(log₂ span)+1
+with span(96) = 6.4025. Each prediction has a dependency chain into the origin path
+and an explicit falsification path. Experimental ranking: P6 > P7 > P4; mathematical:
+P1–P3, P5, P8 (verified by the suite). No canonical changes; research only.
+
 ### PRED001: Prediction Registry (standalone Zenodo publication)
 
 Summary:
