@@ -88,6 +88,24 @@ public static class AtlasDataService
     public static IReadOnlyList<ResearchNewsModel> ResearchNews { get; } =
     [
         new(
+            "researchy-d027-selector-origin",
+            "Positivity, Normalization, and Stability Are Derived From the Primitives",
+            "ResearchY Milestone · D_027 (Wave Geometry Program)",
+            "The criteria that select the SU(2) weak-isospin gauge form — positivity, normalization, and stability — are not a final boundary input: they are derived from Difference → Actualization. Positivity is intrinsic to the count/share construction, normalization is the Born rule (the normalized actualization share), and stability is the closure fixed point. Only the primitive set {Difference, η} itself is boundary.",
+            "D_027 traced each selector criterion to the canonical primitives. Positivity: ρ_k = μ^k/S ≥ 0 (verified for μ = 0.5, 1, 2) — the share of a count is intrinsically non-negative. Normalization: the Born rule Σ|ψ|² = 1 holds exactly by construction as the normalization of the actualization share (Ch9/QG216), and count conservation — the definitional identity of Difference (Ch3/QG268) — is what makes the share normalizable (Σρ_k = 1.0000000000 exactly). Stability: the closure principle states the boundary IS the stable fixed point (Ch4/QG282); without it the spectrum would not close. The D_026 su(2) selector (positivity + normalization + stability) is therefore a consequence of the minimal hierarchy. Removing any ingredient (count conservation, positivity, stability, or the primitives themselves) breaks the observable sector.",
+            "For non-experts: we asked where the basic requirements that pick the weak-force math come from — the rules that probabilities are positive, add up to one, and stay bounded. The answer is that they are not extra assumptions: they fall out of the theory's foundation. Counting is conserved by definition, shares of a count are positive and add to one, and the whole structure settles into a stable fixed point. The only real input is the primitive difference itself.",
+            "The su(2) selector is derived from the primitives; only {Difference, η} is boundary.",
+            "“The rules of probability are not extra. They are what counting is.”",
+            true,
+            [
+                new("ResearchY-D_026", "COMPACT-FORM AUDIT",
+                    "Positivity + normalization + stability select the compact form su(2) (finite-dim unitary reps).",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.1-boundary-program/Docs/ResearchY/D_ResonanceStructure/ResearchY-D_026.md"),
+                new("ResearchY-D_027", "SELECTOR-ORIGIN AUDIT",
+                    "The selector is DERIVED: positivity (share), normalization (Born rule, count conservation), stability (closure fixed point). Only primitives are boundary.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.1-boundary-program/Docs/ResearchY/D_ResonanceStructure/ResearchY-D_027.md"),
+            ]),
+        new(
             "researchy-d021-oscillation-symmetry",
             "Z2 Pairing Is Derived From Oscillation Symmetry, Not Weak-Isospin",
             "ResearchY Milestone · D_021 (Wave Geometry Program)",
