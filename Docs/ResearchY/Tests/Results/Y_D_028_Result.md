@@ -43,7 +43,10 @@ count = floor(log₂ 6.4025)+1 = 3 is a DERIVED consequence of span (D_016 ident
 
 ## Conclusion
 
-**span is DERIVED (a consequence of N=96); the family count is DERIVED (a consequence
-of span); only N=96 is BOUNDARY.** The span value 6.4025 is fully determined by N=96
-through the ring spectrum (ω_max/ω_min ~ 0.0578·N); it is not a selector. The span ∈
-[4,8) window is EMERGENT (the 3-family choice, D_016). No canonical value was changed.
+**span VALUE and family-count VALUE are DERIVED (consequences of N=96); the span ∈
+[4,8) 3-family WINDOW is the observable-sector INPUT (BOUNDARY, D_020); N=96 is DERIVED
+from the boundary inputs (D_040).** The span value 6.4025 is fully determined by N=96
+through the ring spectrum (ω_max/ω_min ~ 0.0578·N); it is not a selector. The 3-family
+count (floor(log₂ span)+1 = 3) is the D_016 identity applied to the derived span.
+(Refinement note: D_040 corrected the original D_028 tags "window EMERGENT / N=96
+BOUNDARY" to the two-level statement above.) No canonical value was changed.

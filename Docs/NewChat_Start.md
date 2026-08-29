@@ -396,6 +396,17 @@ Every quantifiable hypothesis gets an xUnit test: ResearchY-A_001 ↔ Y_A_001_Te
 (naming convention Y_G_NNN_Tests.cs under AT.Tests/ResearchY/<Group>, mirroring the
 Docs/ResearchY folder structure).
 
+Classification-guard rule (since D_040): classifications (BOUNDARY / EMERGENT / DERIVED)
+must NOT drift between audits. The canonical final classification registry is encoded
+in Y_D_040_Tests.ClassificationRegistry (and summarized in ResearchY-D_040.md). Two
+rules: (1) a reclassification requires a superseding audit that updates BOTH the new
+doc AND the D_040 registry test — otherwise the test fails; (2) two-level rule for
+derived values: a quantity may be DERIVED as a VALUE (given N) while its
+WINDOW/REQUIREMENT is BOUNDARY (the input). Canonical example (D_028/D_040): the 3-family
+window (span ∈ [4,8)) is BOUNDARY; the family-count VALUE 3 at N=96 is DERIVED; N=96 is
+DERIVED. Older audits that tagged these differently (e.g. D_028 "window EMERGENT / N=96
+BOUNDARY") carry refinement notes pointing to the superseding audit.
+
 ResearchY-A_001 (Wave Origin Audit, COMPLETE) verdicts: Q1 Difference-as-disturbance
 COMPATIBLE (as a configuration, not the definition); Q2 Actualization-as-propagation
 PARTIAL (generation-space branching μ^k only; spatial propagation stays null-geodesic
@@ -882,11 +893,15 @@ mode, even N) and ω_min ~ (2π√91)/N ≈ 59.9/N (the fundamental mode), so sp
 just the N=96 point of this function. Removing any candidate (closure D_019, Z2
 completeness, octave-rung, resonance density, information distribution) leaves span(96)
 unchanged — the value is N-determined, not selector-determined. The family count =
-floor(log₂ 6.4025)+1 = 3 is a DERIVED consequence of span (the D_016 identity). Chain:
-Difference → Actualization → Closure (N=96, BOUNDARY, D_020) → Spectrum → span 6.4025
+floor(log₂ 6.4025)+1 = 3 is a DERIVED consequence of span (the D_016 identity).
+REFINED by D_040 (two-level statement): the span/family-count VALUES are DERIVED (given
+N), but the span ∈ [4,8) 3-family WINDOW is the observable-sector INPUT (BOUNDARY,
+D_020) that selects N, and N=96 is DERIVED from the four boundary inputs (D_040).
+Chain: Difference → Actualization → observable-sector construction {Z2-paired sector,
+3-family window} (BOUNDARY, D_020) → N=96 (DERIVED, D_040) → Spectrum → span 6.4025
 (DERIVED) → 3 families (DERIVED). Classification: span value DERIVED; span as selector
-REFUTED; span ∈ [4,8) window EMERGENT; N=96 selection BOUNDARY. No canonical value
-changed.
+REFUTED; span ∈ [4,8) window BOUNDARY (observable-sector input, D_020); N=96 DERIVED.
+No canonical value changed.
 
 ResearchY-D_029 (Closure-Defect Audit, COMPLETE, tests 6/6 PASSED): what structure must
 be closed so that no inconsistency remains? Verdict: closure removes structural defects

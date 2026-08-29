@@ -177,7 +177,8 @@ public class Y_D_028_Tests : ResearchTestBase
         // span → 3 families (D_016 identity).
         Assert.Equal(3, (int)Math.Floor(Math.Log2(wMax / wMin)) + 1);
 
-        // The chain is: N=96 (BOUNDARY, D_020) → span (DERIVED) → families (DERIVED).
+        // The chain is: observable-sector construction (BOUNDARY, D_020) → N=96 (DERIVED,
+        // D_040) → span (DERIVED) → families (DERIVED).
         Assert.Equal(6.4025, wMax / wMin, 2);
     }
 
@@ -215,7 +216,7 @@ public class Y_D_028_Tests : ResearchTestBase
 
         sb.AppendLine("[3] Selector removal");
         sb.AppendLine("    closure/Z2/octave-rung/resonance/info do NOT change span(96)");
-        sb.AppendLine("    (span is N-determined; N=96 is selected by D_020)");
+        sb.AppendLine("    (span is N-determined; the 3-family window is the D_020 input)");
         sb.AppendLine();
 
         sb.AppendLine("[4] Family generation");
@@ -225,8 +226,8 @@ public class Y_D_028_Tests : ResearchTestBase
         sb.AppendLine("[5] Verdict");
         sb.AppendLine("    span VALUE: DERIVED (from N=96 via the spectrum)");
         sb.AppendLine("    span as a selector: REFUTED (a consequence, not a cause)");
-        sb.AppendLine("    span in [4,8) window: EMERGENT (the 3-family choice, D_016)");
-        sb.AppendLine("    family count = 3: DERIVED; N=96: BOUNDARY (D_020)");
+        sb.AppendLine("    span in [4,8) window: BOUNDARY (the 3-family requirement, D_020)");
+        sb.AppendLine("    family count = 3 (VALUE): DERIVED; N=96: DERIVED (D_040)");
         sb.AppendLine("    No canonical value changed.");
         sb.AppendLine();
 

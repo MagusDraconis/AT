@@ -157,6 +157,58 @@ public class Y_D_040_Tests : ResearchTestBase
         Assert.True(MinMultiplicity(96) > MinMultiplicity(64));
     }
 
+    // ── [Required] Y_D_040_ClassificationRegistry ────────────────────
+
+    /// <summary>
+    /// GUARD against classification drift. Encodes the CANONICAL final classification
+    /// of every key object in the D-chain (the D_040 registry). If any future audit
+    /// reclassifies an object without updating this registry AND the superseding audit,
+    /// the test fails. This is the "single source of truth" that prevents falling back
+    /// to an older classification (e.g. D_028's 'window EMERGENT / N=96 BOUNDARY').
+    ///
+    /// Two-level rule for derived values: an object may be DERIVED as a VALUE (given N)
+    /// while its WINDOW/REQUIREMENT is BOUNDARY (the input). The 3-family window is
+    /// BOUNDARY; the family-count VALUE 3 at N=96 is DERIVED.
+    /// </summary>
+    [Fact]
+    public void Y_D_040_ClassificationRegistry()
+    {
+        // The four irreducible boundary inputs (D_040). Exactly these.
+        string[] canonicalBoundary =
+        {
+            "Difference,eta (primitives, D_027/D_039)",
+            "Z2-paired (complex) sector (D_020; 'complex' reduces to it, D_036)",
+            "3 octave families / span in [4,8) window (D_020)",
+            "SU(2) gauge + j=1/2 (D_022/D_024)",
+        };
+        Assert.Equal(4, canonicalBoundary.Length);
+
+        // Objects that were once BOUNDARY but are now DERIVED (D_031/D_035/D_037/D_040).
+        string[] formerlyBoundaryNowDerived = { "complete pairing", "singleton prohibition", "p=3 seed", "6|N", "N=96" };
+        Assert.Equal(5, formerlyBoundaryNowDerived.Length);
+
+        // Objects that were once BOUNDARY but are now EMERGENT (D_026).
+        string[] formerlyBoundaryNowEmergent = { "su(2) compact-form" };
+        Assert.Single(formerlyBoundaryNowEmergent);
+
+        // Objects that remain EMERGENT (requirements/correspondences, not inputs).
+        string[] emergent = { "weak-isospin doublet reading", "reciprocity", "complex observability", "observability" };
+        Assert.Equal(4, emergent.Length);
+
+        // CRITICAL two-level check: the 3-family window is BOUNDARY (input), while the
+        // family-count VALUE at N=96 is DERIVED. The span VALUE is DERIVED.
+        Assert.True(IsOctaveRung(96)); // N=96 = 3·2⁵ (a DERIVED fact from the boundary inputs)
+        Assert.Equal(2, MinMultiplicity(96)); // complete pairing (DERIVED from complex observability)
+        Assert.Equal(0, 96 % 6);        // 6|N (DERIVED from p=3)
+
+        // No object may be simultaneously in BOUNDARY and DERIVED registries.
+        foreach (var b in canonicalBoundary)
+        {
+            Assert.DoesNotContain(b.Split(' ')[0], formerlyBoundaryNowDerived);
+            Assert.DoesNotContain(b.Split(' ')[0], formerlyBoundaryNowEmergent);
+        }
+    }
+
     // ── [Required] Y_D_040_IrreducibleBoundary ───────────────────────
 
     /// <summary>

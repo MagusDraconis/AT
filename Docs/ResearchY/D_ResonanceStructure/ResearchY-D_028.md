@@ -111,9 +111,9 @@ N=96 is selected by the observable-sector construction (D_020).
 |---|---|
 | span VALUE 6.4025 | **DERIVED** — from N=96 via the ring spectrum (ω_max/ω_min) |
 | span as a selector | **REFUTED** — it is a consequence, not a cause |
-| span ∈ [4,8) window | **EMERGENT** — the 3-family window is the D_016 choice |
-| family count = 3 | **DERIVED** — from span ∈ [4,8), the floor(log₂ span)+1 identity |
-| N=96 selection | **BOUNDARY** — the observable-sector construction (D_020) |
+| span ∈ [4,8) window (the 3-family requirement) | **BOUNDARY** — the observable-sector INPUT (D_020) that selects N |
+| family count = 3 (the VALUE given N=96) | **DERIVED** — from span via the floor(log₂ span)+1 identity |
+| N=96 selection | **DERIVED** — from the four boundary inputs (D_040) |
 
 ---
 
@@ -126,14 +126,17 @@ N=96 is selected by the observable-sector construction (D_020).
 > determined by N=96 through the ring spectrum. Removing any candidate (closure, Z2,
 > octave rung, resonance density, information distribution) leaves span(96) unchanged.
 > The family count = floor(log₂ 6.4025)+1 = 3 is a DERIVED consequence of span via the
-> D_016 identity.
+> D_016 identity (the VALUE level). The span ∈ [4,8) window is the observable-sector
+> INPUT (D_020) that selects N in the 3-family window — the requirement, distinct from
+> the derived value.
 >
 > *Proof sketch.* (1) span = ω_max/ω_min; ω_max → √12 and ω_min ~ (2π√91)/N (Section 1,
 > verified). (2) Hence span ~ 0.0578·N, monotone increasing (Section 1). (3) span(96) =
 > 6.4025 is the N=96 point — no special value (Sections 1, 3). (4) Removal of any
 > candidate does not change the span value (Section 4). (5) families = floor(log₂
-> 6.4025)+1 = 3 is the D_016 identity (Section 5). Hence span is DERIVED from N; the
-> family count is DERIVED from span. ∎
+> 6.4025)+1 = 3 is the D_016 identity (Section 5). Hence the span VALUE and the family
+> count VALUE are DERIVED; the 3-family WINDOW (the requirement) is BOUNDARY (D_020);
+> N=96 is DERIVED from the four boundary inputs (D_040). ∎
 
 ---
 
@@ -142,7 +145,8 @@ N=96 is selected by the observable-sector construction (D_020).
 ```
 Difference
  → Actualization
- → Closure (stable fixed point N=96)     [BOUNDARY — the observable-sector construction, D_020]
+ → observable-sector construction {Z2-paired sector, 3-family window}  [BOUNDARY — D_020]
+ → N=96                                                                [DERIVED — from the boundary inputs, D_040]
  → Spectrum (D96 eigenvalues)
  → span = ω_max/ω_min = 6.4025           [DERIVED — ω_max→√12, ω_min~(2π√91)/N, ~0.0578·N]
  → family count = floor(log2 6.4025)+1   [DERIVED — the D_016 identity]
@@ -184,12 +188,19 @@ Difference
 | span VALUE 6.4025 | **DERIVED** (ω_max/ω_min from the N=96 spectrum) |
 | span monotone in N | **DERIVED** (~0.0578·N) |
 | span as a selector | **REFUTED** |
-| span ∈ [4,8) window | **EMERGENT** (the 3-family window choice) |
-| family count = 3 | **DERIVED** (from span, the D_016 identity) |
-| N=96 selection | **BOUNDARY** (observable-sector construction, D_020) |
+| span ∈ [4,8) window (the 3-family requirement) | **BOUNDARY** (observable-sector INPUT, D_020) |
+| family count = 3 (VALUE given N) | **DERIVED** (from span, the D_016 identity) |
+| N=96 selection | **DERIVED** (from the four boundary inputs, D_040) |
 
-**span is DERIVED (a consequence of N=96); the family count is DERIVED (a consequence
-of span); only N=96 is BOUNDARY.**
+**span VALUE and family count VALUE are DERIVED (consequences of N=96); the span ∈
+[4,8) 3-family window is the BOUNDARY requirement (D_020) that selects N; N=96 is
+DERIVED from the boundary inputs (D_040).**
+
+**Refinement (D_040):** this audit originally tagged the window EMERGENT and N=96
+BOUNDARY. The boundary reclassification audit corrects this: the 3-family window is an
+observable-sector INPUT (BOUNDARY, D_020), not an emergent consequence; and N=96 is
+DERIVED from the four boundary inputs (D_040). The derived VALUE of span/families is
+unchanged.
 
 ---
 
@@ -208,8 +219,9 @@ of span); only N=96 is BOUNDARY.**
 - **ResearchY-D_029 (or synthesis):** the span-origin audit completes the
   3-family chain (Difference → N=96 → span → 3 families). A synthesis can map the full
   N=96 → observables boundary structure.
-- **D_016 follow-up:** the "span derived from N" verdict sharpens D_016 — the 3-family
-  window is emergent, but the span VALUE feeding it is a derived function of N.
+- **D_016 follow-up:** the "span derived from N" verdict sharpens D_016 — the span
+  VALUE feeding the family count is a derived function of N, while the 3-family WINDOW
+  is the observable-sector requirement (BOUNDARY, D_020).
 
 ---
 
@@ -233,8 +245,8 @@ with no special point at 96; span(96) = 6.4025 is the N=96 point of this functio
 Removing any candidate (closure, Z2, octave rung, resonance, information) leaves
 span(96) unchanged. The family count = floor(log₂ 6.4025)+1 = 3 is a DERIVED
 consequence of span (D_016 identity). Classification: span value DERIVED; span as a
-selector REFUTED; span ∈ [4,8) window EMERGENT; N=96 selection BOUNDARY. No canonical
-value was changed.
+selector REFUTED; span ∈ [4,8) 3-family window BOUNDARY (observable-sector INPUT,
+D_020); N=96 DERIVED (from the boundary inputs, D_040). No canonical value was changed.
 
 **Reproduction:** `dotnet test AT.Tests/AT.Tests.csproj --filter "FullyQualifiedName~Y_D_028"`
 

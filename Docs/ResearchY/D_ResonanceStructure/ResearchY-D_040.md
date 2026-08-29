@@ -47,7 +47,7 @@ D_020 observable-sector construction
  │    └── D_038 state identity EMERGENT
  │    └── D_039 state identity DERIVED (Difference applied)
  ├── exactly 3 octave families (span ∈ [4,8))          [BOUNDARY → confirmed]
- │    └── D_028 span DERIVED; window EMERGENT
+ │    └── D_028 span value DERIVED; 3-family window BOUNDARY (corrected by D_040)
  │    └── D_030 octave rung DERIVED; seed p=3 BOUNDARY
  │    └── D_031 p=3 DERIVED; 6|N DERIVED
  ├── period-3 seed p=3                                 [BOUNDARY → DERIVED]
@@ -194,7 +194,7 @@ D_020  observable-sector construction {Z2-paired sector, 3 families}   [BOUNDARY
   ↓ D_025 complexification EMERGENT; compact-form BOUNDARY
   ↓ D_026 su(2) compact-form EMERGENT   [BOUNDARY REMOVED]
   ↓ D_027 selector DERIVED; {Difference, η} BOUNDARY
-  ↓ D_028 span DERIVED; window EMERGENT
+  ↓ D_028 span value DERIVED; 3-family window BOUNDARY   [window corrected by D_040]
   ↓ D_029 zero-defect set EMERGENT
   ↓ D_030 octave rung DERIVED; seed p=3 BOUNDARY
   ↓ D_031 p=3 DERIVED; 6|N DERIVED   [BOUNDARY REMOVED]
@@ -251,6 +251,7 @@ D-chain is DERIVED or EMERGENT. No new primitive; canonical AT unchanged.**
 | `Y_D_040_Reclassification` | old → new for complete pairing, p=3, N=96, singlet, su(2), state identity | ✅ |
 | `Y_D_040_DependencyConsistency` | the D-chain DAG is acyclic; every DERIVED object has a path | ✅ |
 | `Y_D_040_ContradictionCheck` | the six contradictions are all resolved | ✅ |
+| `Y_D_040_ClassificationRegistry` | GUARD: canonical final classifications locked; two-level 3-family rule; no dual tagging | ✅ |
 | `Y_D_040_IrreducibleBoundary` | removing any boundary element breaks selection | ✅ |
 | `Y_D_040_Run` | Research report | ✅ |
 

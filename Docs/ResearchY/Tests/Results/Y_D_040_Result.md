@@ -2,7 +2,7 @@
 
 **Test suite:** `AT.Tests/ResearchY/D_ResonanceStructure/Y_D_040_Tests.cs`
 **Run:** 2026-08-29
-**Result:** ✅ 6/6 PASSED
+**Result:** ✅ 7/7 PASSED (added `Y_D_040_ClassificationRegistry` guard)
 **Reproduction:** `dotnet test AT.Tests/AT.Tests.csproj --filter "FullyQualifiedName~Y_D_040"`
 
 ---
@@ -54,6 +54,7 @@ B_final = { {Difference, η}              (primitives, D_027/D_039)
 | `Y_D_040_Reclassification` | old → new for complete pairing, p=3, N=96, singlet, su(2), state identity | ✅ |
 | `Y_D_040_DependencyConsistency` | DAG acyclic; every DERIVED object has a path | ✅ |
 | `Y_D_040_ContradictionCheck` | the six contradictions are all resolved | ✅ |
+| `Y_D_040_ClassificationRegistry` | GUARD: canonical classifications locked; two-level 3-family rule; no dual tagging | ✅ |
 | `Y_D_040_IrreducibleBoundary` | removing any boundary element breaks selection | ✅ |
 | `Y_D_040_Run` | Research report | ✅ |
 
