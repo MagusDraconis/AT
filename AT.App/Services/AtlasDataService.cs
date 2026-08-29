@@ -88,6 +88,27 @@ public static class AtlasDataService
     public static IReadOnlyList<ResearchNewsModel> ResearchNews { get; } =
     [
         new(
+            "researchy-d041-time-origin",
+            "Time Is Not the First Physical Dimension — the Tick Is the First Dimensionless Parameter",
+            "ResearchY Milestone · D_041 (Wave Geometry Program)",
+            "Do Actualization ticks constitute physical time? The tick is a dimensionless count that orders actualization and drives the phase θ=2πk/N. Frequency emerges from the tick phase rate (ω₁≈√91·2π/N), but energy (E=ħω) and seconds both need external anchors. So time is NOT the first physical dimension — the tick is the first dimensionless parameter.",
+            "D_041 asked whether Actualization ticks already constitute physical time. Verdict: the tick k is a DIMENSIONLESS branch-depth count (D_012) that provides ORDERING (DERIVED, QG220). It also serves as the natural TIME PARAMETER (EMERGENT): the phase θ_k = 2πk/N advances linearly per tick (Δθ = 2π/N), so N ticks close the cycle 2π (the closure cycle, gauge trivial). FREQUENCY EMERGES from the tick phase rate: ω₁ ≈ √91·(2π/N) = √91 × phase-quantum-per-tick (verified ~9.50 vs √91 ≈ 9.54) — the fundamental frequency IS the tick phase rate times the K=6 spectral-geometry factor √91. The spectral ratios ω_k/ω₁ are exact dimensionless numbers (ω₂/ω₁ ≈ 1.97, the octave; span = 6.4025). ENERGY does NOT emerge without an anchor: E = ħω requires ħ (BOUNDARY, D_010/D_012); the dimensionless energy-content ratios (masses via the D96 moments, couplings, Ω ratios) are DERIVED, but the physical energy scale is BOUNDARY (anchors v, m_e). Dimensionful time (seconds) is BOUNDARY — it needs a physical clock/Hz anchor (D_008/D_010). Prove/refute: time is the first physical dimension — NO. The tick is the first DIMENSIONLESS parameter; physical time is a boundary-calibrated reading of it. Classification: ordering DERIVED (QG220); tick as time parameter EMERGENT; dimensionless frequency EMERGENT (from the tick phase rate); dimensionful time/frequency/energy BOUNDARY (anchors v, ħ).",
+            "For non-experts: the theory's process advances in discrete steps — 'ticks'. We asked whether those ticks ARE time. The answer is subtle: the ticks give a clean ordering (before/after) and drive the phase, so they act like a clock — but the ticks themselves are just numbers. To convert a tick count into 'seconds' you must import an external clock, and to get energy from frequency (E=ħω) you must import Planck's constant. So the ticks are the theory's own time-parameter (real, but dimensionless), while physical time and energy are calibration-boundary — they are how we READ that parameter in units, not something the ticks themselves carry.",
+            "The tick is the theory's first clock — dimensionless; physical seconds and energy require anchors.",
+            "“Time is not the first dimension; the tick is the first parameter.”",
+            true,
+            [
+                new("ResearchY-D_008", "REFERENCE UNIT AUDIT",
+                    "The actualization tick is dimensionless; natural clock EMERGENT, physical Hz BOUNDARY.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.1-boundary-program/Docs/ResearchY/D_ResonanceStructure/ResearchY-D_008.md"),
+                new("ResearchY-D_010", "UNIT ANCHORING AUDIT",
+                    "Physical time/frequency/energy units each require a dimensionful import (BOUNDARY).",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.1-boundary-program/Docs/ResearchY/D_ResonanceStructure/ResearchY-D_010.md"),
+                new("ResearchY-D_041", "TIME-ORIGIN AUDIT",
+                    "Ordering DERIVED; time parameter + dimensionless frequency EMERGENT (ω₁≈√91·2π/N); energy + dimensionful time BOUNDARY.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.1-boundary-program/Docs/ResearchY/D_ResonanceStructure/ResearchY-D_041.md"),
+            ]),
+        new(
             "researchy-d040-boundary-reclassification",
             "The D-Chain Reduces to Four Irreducible Boundary Inputs",
             "ResearchY Milestone · D_040 (Wave Geometry Program)",
