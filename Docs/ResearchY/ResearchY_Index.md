@@ -9,7 +9,7 @@ their group. Groups are topics, not chronological order.
 ## Identifier Format
 
 ```
-ResearchY-G_###        where G ∈ {A, B, C, D, R} and ### is the sequence in the group
+ResearchY-G_###        where G ∈ {A, B, C, D, R, NP} and ### is the sequence in the group
 ```
 
 ## Group Registry
@@ -21,6 +21,7 @@ ResearchY-G_###        where G ∈ {A, B, C, D, R} and ### is the sequence in th
 | C | `C_SourceGeometry/` | Source Geometry | C_001 Center Audit · C_002 Radial Propagation |
 | D | `D_ResonanceStructure/` | Resonance Structure | D_001 D96 Resonance Audit · D_002 Standing Wave Model |
 | R | `R_BoundaryProgram/` | Boundary Program Closure | R_001 V2.1 Boundary Program Closure Audit |
+| NP | `NP_NewPhysics/` | V2.2 New Physics Roadmap | NP_001 V2.2 New Physics Roadmap |
 
 ## Investigation Registry
 
@@ -83,6 +84,7 @@ ResearchY-G_###        where G ∈ {A, B, C, D, R} and ### is the sequence in th
 | ResearchY-D_045 | Cosmological-Anchor Audit | COMPLETE | `D_ResonanceStructure/ResearchY-D_045.md` | ResearchY-D_012, D_013, D_014, D_043, D_044 | Can cosmological scaling generate v and m_e? Verdict: NO — the anchors are INDEPENDENT of the cosmological state (option A). The density state ρ produces DIMENSIONLESS fractions only: ΩΛ = I_occ/ln K = 0.7513/ln 3 = 0.6839, Ωm = 1−ΩΛ = 0.3161 (QG234, DERIVED). No cosmological ratio matches the anchor ratios: ΩΛ/Ωm = 2.16 vs v/m_e ≈ 4.98e5; no ρ-quantity near m_e/v ≈ 2e-6 or ln(v/m_e) ≈ 13.1. ρ is a dimensionless counting measure — any f(ρ) is dimensionless (converting to v/m_e would be circular). v = 137·ln(span) = 254.37 GeV is a SPECTRAL quantity (span N-fixed, D_028), not ρ-dependent; m_e has no construction from ρ (D_013/D_014). If ρ changes, the Ω fractions change but v, m_e, and v/m_e are unchanged (fixed by the anchors). Classification: density state ρ DERIVED (QG216); ΩΛ/Ωm DERIVED from ρ (QG234, dimensionless); v structure DERIVED from D96 (D_044); m_e BOUNDARY (no construction); anchor independence from ρ DERIVED (this audit: no ρ-ratio matches); cosmological scaling of anchors NONE. No new primitive. |
 | ResearchY-R_001 | V2.1 Boundary Program Closure Audit | COMPLETE | `R_BoundaryProgram/ResearchY-R_001.md` | ResearchY-D_020…D_045 (all V2.1 origin audits) | Is the V2.1 origin program complete? Verdict: COMPLETE. The final irreducible boundary set has exactly FIVE items: {Difference, η} (primitives, D_027/D_039), {Z2-paired (complex) sector} (D_020/D_036), {3 octave families} (span ∈ [4,8), D_020), {SU(2) gauge + j=1/2} (D_022/D_024), {v, m_e} (dimensionful anchors, D_012/D_044). Every other object in the D_020–D_045 chain is DERIVED or EMERGENT: complete pairing, singleton prohibition, p=3, 6\|N, N=96, span, family count, octave, ΩΛ/Ωm, v structure (137·ln span), M_Pl/v, ratio family, selector criteria are DERIVED; reciprocity, observability, weak-isospin reading, su(2) compact-form, dimensionful physics are EMERGENT. 13 original boundary items reclassified (7→DERIVED, 1→EMERGENT, 6 confirmed BOUNDARY). Derived inventory 20; emergent 10; OPEN 0. The five boundaries are irreducible documented inputs, not gaps. Classification: COMPLETE. No new primitive; canonical AT unchanged. |
 | ResearchY-R_002 | V2.1 Release Preparation | IN_PROGRESS | `R_BoundaryProgram/ResearchY-R_002.md` | ResearchY-R_001 | Prepare the branch for tagging. Deliverables: milestone summary, release notes (Docs/Publication/RELEASE_NOTES_V2_1.md), boundary reductions, derived chain, remaining boundaries, tag recommendation (v2.1-boundary-program), changelog section ([2.1.0] — 2026-08-30), migration notes (none — research/audit only, canonical AT unchanged). |
+| ResearchY-NP_001 | V2.2 New Physics Roadmap | IN_PROGRESS | `NP_NewPhysics/ResearchY-NP_001.md` | ResearchY-R_001 | Identify physics not explained in V2.0/V2.1 that can now be investigated using the derived origin chain. Candidates: antimatter, dark matter, dark energy, neutrinos, hierarchy problems, measurement, information structure, cosmological observables. Deliver: Top-10 V2.2 targets ranked by novelty/testability/V2.1-dependence, each with expected payoff, required derivations, possible predictions. |
 
 ## Rules
 

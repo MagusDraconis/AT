@@ -75,6 +75,7 @@
 | ResearchY-D_045 | Cosmological-Anchor Audit | `D_ResonanceStructure/ResearchY-D_045.md` | `AT.Tests/ResearchY/D_ResonanceStructure/Y_D_045_Tests.cs` (6/6 ✅) | COMPLETE |
 | ResearchY-R_001 | V2.1 Boundary Program Closure Audit | `R_BoundaryProgram/ResearchY-R_001.md` | `AT.Tests/ResearchY/R_BoundaryProgram/Y_R_001_Tests.cs` (4/4 ✅) | COMPLETE |
 | ResearchY-R_002 | V2.1 Release Preparation | `R_BoundaryProgram/ResearchY-R_002.md` | — (release document) | COMPLETE |
+| ResearchY-NP_001 | V2.2 New Physics Roadmap | `NP_NewPhysics/ResearchY-NP_001.md` | — (roadmap) | IN_PROGRESS |
 | ResearchY-A_002 | Difference Disturbance | — | — | PLANNED |
 | ResearchY-A_003 | Actualization Propagation | — | — | PLANNED |
 | ResearchY-B_001 | Circular Closure | — | — | PLANNED |

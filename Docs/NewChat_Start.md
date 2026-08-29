@@ -1210,6 +1210,25 @@ NONE (V2.1 is research/audit only, canonical AT V2.0 unchanged). Verification: 3
 xUnit tests passing, AT.App 0 errors, canonical D96 values re-verified. Status: READY
 FOR TAGGING.
 
+ResearchY-NP_001 (V2.2 New Physics Roadmap, COMPLETE): identify physics not explained
+in V2.0/V2.1 that can now be investigated using the derived origin chain. Candidate
+topics: antimatter/baryon asymmetry, dark matter (deficit effect derived, particle
+reading open), dark energy/Λ (derived QG230/234), neutrinos (masses/Majorana derived,
+ordering open, P2 pending), hierarchy problems (fermion hierarchy derived, v/m_e
+irreducible D_044), measurement (basis = two-quadrature reconstruction D_037, collapse
+QG73 open), information structure (I = KL(ρ‖uniform) QG228 + state identity D_039),
+cosmological observables (n_s QG237, peaks QG238, full CMB open). RANKED by
+novelty × testability × V2.1-dependence. TOP-10 V2.2 TARGETS: T1 measurement origin
+(14/15, highest V2.1 dependence); T2 information-encoded measurement (14); T3 baryon
+asymmetry (12, highest novelty); T4 neutrino mass hierarchy (12, P2 pre-registered);
+T5 CMB anisotropy spectrum (12); T6 dark-matter particle status (11); T7 two-anchor
+ratio v/m_e (13 — test reducibility, currently BOUNDARY); T8 Λ coincidence (11);
+T9 collapse/observer (11); T10 cosmological initial conditions (11). Priority sequence:
+T1/T2 (measurement/information) → T3 (baryon asymmetry) → T4 (neutrinos) → T5 (CMB)
+→ T6–T10. Constraints: no new primitives; canonical AT unchanged; all targets respect
+the five-item boundary set (R_001). Status: each target requires its own audit + xUnit
+suite when taken up.
+
 ### PRED001: Prediction Registry (standalone Zenodo publication)
 
 Summary:
