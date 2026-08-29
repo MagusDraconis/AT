@@ -88,6 +88,24 @@ public static class AtlasDataService
     public static IReadOnlyList<ResearchNewsModel> ResearchNews { get; } =
     [
         new(
+            "researchy-r002-release",
+            "V2.1 Release Ready: The Origin Program Is Complete and the Branch Is Ready for Tagging",
+            "ResearchY Milestone · R_002 (V2.1 Boundary Program)",
+            "The V2.1 Boundary Program is ready for tagging. The release notes are written, the changelog is updated, and the branch carries 26 origin audits + a closure audit with 372 passing tests. Tag: v2.1-boundary-program. No migration needed — canonical AT V2.0 is unchanged.",
+            "R_002 prepares the feature/v2.1-boundary-program branch for tagging. THE DELIVERABLES: (1) Release notes — Docs/Publication/RELEASE_NOTES_V2_1.md with the milestone summary, the boundary-reduction table (13 items reclassified: 7→DERIVED, 1→EMERGENT, 6 confirmed BOUNDARY), the full derived chain (Difference → Actualization → tick → count → magnitude → phase → complex state → identity → reciprocity → pairing → p=3 → 6|N → N=96 → Closure → Spectrum → {v, m_e} → Dimensionful Physics), the remaining five-item boundary set, and the verification summary. (2) Changelog — the [2.1.0] — 2026-08-30 section was added to Docs/Publication/CHANGELOG.md. (3) Recommendations — TAG: v2.1-boundary-program (matches the branch); migration notes: NONE, because V2.1 is research/audit only and no canonical AT V2.0 value, equation, prediction, or claim status was altered. (4) Verification — 372 xUnit tests passing (the full ResearchY suite: A/B/C/D/R groups), AT.App builds with 0 errors, and all canonical D96 values were independently re-verified across the audits (span = 6.4025, λ(48) = 12, min mult 2 at N=96, v = 137·ln(span) = 254.37 GeV, ΩΛ = I_occ/ln K = 0.6839). The V2.1 program's scientific content (R_001 closure): the origin chain is complete with exactly five irreducible boundary inputs and zero open questions. Status: READY FOR TAGGING.",
+            "For non-experts: the V2.1 research milestone is complete and documented for release. The release notes explain what was accomplished — twenty-six audits that traced every 'where does this come from?' question to either a derivation or one of five genuine starting points — plus how it was verified (372 automated tests). The recommended tag name is simply the branch name, and existing users need nothing: the research adds to the theory's documentation without changing any of its established results.",
+            "The origin program is complete; the branch is documented and ready for tagging.",
+            "“Every 'why' answered — the release is ready to be tagged.”",
+            true,
+            [
+                new("ResearchY-R_001", "V2.1 BOUNDARY PROGRAM CLOSURE AUDIT",
+                    "COMPLETE: 5 irreducible boundary inputs; 20 derived + 10 emergent; 0 open.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.1-boundary-program/Docs/ResearchY/R_BoundaryProgram/ResearchY-R_001.md"),
+                new("ResearchY-R_002", "V2.1 RELEASE PREPARATION",
+                    "Release notes + changelog [2.1.0] written; tag v2.1-boundary-program recommended; migration none; READY FOR TAGGING.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.1-boundary-program/Docs/Publication/RELEASE_NOTES_V2_1.md"),
+            ]),
+        new(
             "researchy-r001-v21-closure",
             "V2.1 Boundary Program Complete: Five Irreducible Inputs, Everything Else Derived",
             "ResearchY Milestone · R_001 (V2.1 Boundary Program)",
