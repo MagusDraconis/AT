@@ -1056,6 +1056,25 @@ state DERIVED (QG218, minimal identity space); observability EMERGENT; interfere
 reciprocity DERIVED (D_037); Z2-paired sector requirement BOUNDARY (D_020). No
 canonical value changed.
 
+ResearchY-D_040 (Boundary Reclassification Audit, COMPLETE, tests 6/6 PASSED): which
+D_020 boundary assumptions remain after D_021–D_039? Verdict: the D-chain reduces to
+exactly FOUR irreducible boundary inputs — {Difference, η} (the primitives, D_027/
+D_039), {Z2-paired (complex) sector} (the observable-sector input, D_020; "observable
+sector is complex" REDUCES to it, D_036), {3 octave families} (span ∈ [4,8) window,
+D_020), and {SU(2) gauge + j=1/2} (weak-isospin input, D_022/D_024). RECLASSIFIED from
+BOUNDARY: complete pairing → DERIVED (D_035: every eigenvalue mult ≥ 2 from complex
+observability); singleton prohibition → DERIVED (D_035/D_037); p=3 → DERIVED (D_031);
+N=96 → DERIVED (D_031/D_020); su(2) compact-form → EMERGENT (D_026: selected by
+observability, not a free gauge input); state identity EMERGENT → DERIVED (D_039:
+Difference applied). CONFIRMED BOUNDARY: Z2-paired sector, 3 octave families, SU(2)
+gauge + j=1/2, {Difference, η}. CONFIRMED EMERGENT: weak-isospin doublet reading,
+reciprocity, complex observability, observability, zero-defect set. All six historical
+contradictions (complete pairing, p=3, N=96, singlet, su(2) compact-form, state
+identity) are RESOLVED by superseding audits; the chain is monotone (boundaries only
+moved downward). Final irreducible boundary set B_final = {Difference, η} ∪
+{Z2-paired sector} ∪ {3 families} ∪ {SU(2) gauge + j=1/2}. No new primitive; canonical
+AT unchanged.
+
 ### PRED001: Prediction Registry (standalone Zenodo publication)
 
 Summary:
