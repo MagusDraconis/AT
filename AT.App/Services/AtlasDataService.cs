@@ -88,6 +88,24 @@ public static class AtlasDataService
     public static IReadOnlyList<ResearchNewsModel> ResearchNews { get; } =
     [
         new(
+            "researchy-d034-reciprocity",
+            "Reciprocity Is the Magnitude–Phase Complex Structure, Not an Extra Rule",
+            "ResearchY Milestone · D_034 (Wave Geometry Program)",
+            "Why must every observable oscillator have a reciprocal partner? Because the observable state is a two-degree-of-freedom complex structure — magnitude (from the count) and phase (from the link). Real-only states lose interference. Reciprocity is the emergent requirement that every mode carry both; the pairing completeness that selects N=96 is its boundary face.",
+            "D_034 traced reciprocity to the canonical [magnitude, phase] pair (QG218). A state carries exactly TWO independent real DOFs: magnitude |ψ| = √ρ — the branching counting measure (QG216, the count face of Difference) — and phase θ — the U(1) link connection (QG63, the link face of Actualization). The complex structure (two DOFs) is DERIVED: real-only states give classical addition P = P₁ + P₂ (no interference), while complex states give interference P = 2 + 2cos(θ₁−θ₂). The quadrature pair (cos, sin) of a mode IS the [Re, Im] of the complex e^{i·2πkn/N} — so reciprocity (every mode complex) is exactly the observable requirement that every mode carry both DOFs. Removing reciprocity breaks INTERFERENCE first (a singlet frequency becomes real-only/classical), then phase freedom, doublet structure, and weak-isospin; normalization survives. Observable structure, as a complex/interference structure, requires reciprocal partners. Classification: magnitude/phase/complex structure DERIVED (QG216/63/218); reciprocity EMERGENT; complete pairing (0 unpaired) BOUNDARY (D_020); N=96 DERIVED.",
+            "For non-experts: a wave needs two pieces of information — how big it is (its magnitude) and where it is in its cycle (its phase). The theory derives both pieces from its foundation (the count and the connection), and together they make the state a complex number. We asked why every mode must have a partner: it is because a lone mode that cannot carry a phase loses the ability to interfere — two real waves just add, but complex waves can cancel or reinforce. So the partner requirement is not an extra rule; it is what being a proper observable wave means, and the size 96 follows from insisting every mode can do that.",
+            "The partner requirement is the two-degree-of-freedom complex structure, not an extra rule.",
+            "“A wave without a partner cannot interfere. The partner is the phase's home.”",
+            true,
+            [
+                new("ResearchY-D_033", "SINGLET-PROHIBITION AUDIT",
+                    "The lone unpaired mode is mathematically valid but physically excluded — it cannot carry the phase partner.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.1-boundary-program/Docs/ResearchY/D_ResonanceStructure/ResearchY-D_033.md"),
+                new("ResearchY-D_034", "RECIPROCITY AUDIT",
+                    "Reciprocity = the [magnitude, phase] complex structure (QG218); DOFs DERIVED (QG216/63); reciprocity EMERGENT; complete pairing BOUNDARY.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.1-boundary-program/Docs/ResearchY/D_ResonanceStructure/ResearchY-D_034.md"),
+            ]),
+        new(
             "researchy-d033-singlet-prohibition",
             "A Lone Unpaired Mode Is Mathematically Allowed but Physically Excluded",
             "ResearchY Milestone · D_033 (Wave Geometry Program)",
