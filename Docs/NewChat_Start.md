@@ -870,6 +870,20 @@ primitive set {Difference, η} itself. Classification: positivity DERIVED, norma
 DERIVED, stability DERIVED, su(2) selector DERIVED, primitives BOUNDARY. No canonical
 value changed.
 
+ResearchY-D_028 (Span-Origin Audit, COMPLETE, tests 6/6 PASSED): why is span ≈ 6.4025?
+Is span the true selection quantity behind D96? Verdict: span is a DERIVED monotone
+function of N, NOT a selector. span = ω_max/ω_min; ω_max → √12 ≈ 3.46 (the antipodal
+mode, even N) and ω_min ~ (2π√91)/N ≈ 59.9/N (the fundamental mode), so span ~
+0.0578·N — monotonically increasing with no special point at 96; span(96) = 6.4025 is
+just the N=96 point of this function. Removing any candidate (closure D_019, Z2
+completeness, octave-rung, resonance density, information distribution) leaves span(96)
+unchanged — the value is N-determined, not selector-determined. The family count =
+floor(log₂ 6.4025)+1 = 3 is a DERIVED consequence of span (the D_016 identity). Chain:
+Difference → Actualization → Closure (N=96, BOUNDARY, D_020) → Spectrum → span 6.4025
+(DERIVED) → 3 families (DERIVED). Classification: span value DERIVED; span as selector
+REFUTED; span ∈ [4,8) window EMERGENT; N=96 selection BOUNDARY. No canonical value
+changed.
+
 ### PRED001: Prediction Registry (standalone Zenodo publication)
 
 Summary:
