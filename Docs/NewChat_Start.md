@@ -1071,7 +1071,7 @@ state DERIVED (QG218, minimal identity space); observability EMERGENT; interfere
 reciprocity DERIVED (D_037); Z2-paired sector requirement BOUNDARY (D_020). No
 canonical value changed.
 
-ResearchY-D_040 (Boundary Reclassification Audit, COMPLETE, tests 6/6 PASSED): which
+ResearchY-D_040 (Boundary Reclassification Audit, COMPLETE, tests 7/7 PASSED): which
 D_020 boundary assumptions remain after D_021–D_039? Verdict: the D-chain reduces to
 exactly FOUR irreducible boundary inputs — {Difference, η} (the primitives, D_027/
 D_039), {Z2-paired (complex) sector} (the observable-sector input, D_020; "observable
@@ -1089,6 +1089,22 @@ identity) are RESOLVED by superseding audits; the chain is monotone (boundaries 
 moved downward). Final irreducible boundary set B_final = {Difference, η} ∪
 {Z2-paired sector} ∪ {3 families} ∪ {SU(2) gauge + j=1/2}. No new primitive; canonical
 AT unchanged.
+
+ResearchY-D_041 (Time-Origin Audit, COMPLETE, tests 6/6 PASSED): is time the first
+physical dimension? Do Actualization ticks already constitute physical time? Verdict:
+the tick k is a DIMENSIONLESS branch-depth count (D_012) providing ORDERING (DERIVED,
+QG220). It also serves as the natural TIME PARAMETER (EMERGENT): θ_k = 2πk/N advances
+linearly per tick (Δθ = 2π/N), so N ticks close the cycle 2π (gauge trivial).
+FREQUENCY EMERGES from the tick phase rate: ω₁ ≈ √91·(2π/N) = √91 ×
+phase-quantum-per-tick (verified ~9.50 vs √91 ≈ 9.54); the spectral ratios ω_k/ω₁ are
+exact dimensionless (ω₂/ω₁ ≈ 1.97, the octave; span = 6.4025). ENERGY does NOT emerge
+without an anchor: E = ħω requires ħ (BOUNDARY, D_010/D_012); the dimensionless
+energy-content ratios are DERIVED, the dimensionful scale is BOUNDARY (anchors v, m_e).
+Dimensionful time (seconds) is BOUNDARY — it needs a physical clock/Hz anchor (D_008/
+D_010). Prove/refute: time is the first physical dimension — NO; the tick is the first
+DIMENSIONLESS parameter. Classification: ordering DERIVED (QG220); tick as time
+parameter EMERGENT; dimensionless frequency EMERGENT (from the tick phase rate);
+dimensionful time/frequency/energy BOUNDARY (anchors v, ħ). No canonical value changed.
 
 ### PRED001: Prediction Registry (standalone Zenodo publication)
 
