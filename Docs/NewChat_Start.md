@@ -854,6 +854,22 @@ D96 spectrum, not a free gauge input). Classification: spectral observables DERI
 su(2) compactness/unitarity EMERGENT, weak sector requires su(2) EMERGENT. No canonical
 value changed.
 
+ResearchY-D_027 (Selector-Origin Audit, COMPLETE, tests 6/6 PASSED): are positivity,
+normalization, and stability derived from Difference → Actualization or the final
+Boundary input? Verdict: A) all DERIVED from the primitive structure. Positivity is
+intrinsic to the share construction (ρ_k = μ^k/S ≥ 0 — counts are non-negative); 
+normalization is the Born rule = normalized share, derived from count conservation
+(Ch9/QG216: Σρ_k = 1.0000000000 exactly), which is the definitional identity of
+Difference (Ch3/QG268); stability IS the closure fixed point (Ch4/QG282: the boundary
+is the stable fixed point). Count conservation implies normalization (without a
+conserved count the share is not normalizable); Actualization implies positivity (the
+share of a count is non-negative); Closure implies stability (without the fixed point
+the spectrum would not close). The D_026 su(2) selector (positivity + normalization +
+stability) is a consequence of the minimal hierarchy — the only boundary is the
+primitive set {Difference, η} itself. Classification: positivity DERIVED, normalization
+DERIVED, stability DERIVED, su(2) selector DERIVED, primitives BOUNDARY. No canonical
+value changed.
+
 ### PRED001: Prediction Registry (standalone Zenodo publication)
 
 Summary:

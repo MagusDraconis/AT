@@ -54,6 +54,7 @@
 | ResearchY-D_024 | Doublet Compatibility Audit | `D_ResonanceStructure/ResearchY-D_024.md` | `AT.Tests/ResearchY/D_ResonanceStructure/Y_D_024_Tests.cs` (7/7 ✅) | COMPLETE |
 | ResearchY-D_025 | Three-Generator Audit | `D_ResonanceStructure/ResearchY-D_025.md` | `AT.Tests/ResearchY/D_ResonanceStructure/Y_D_025_Tests.cs` (7/7 ✅) | COMPLETE |
 | ResearchY-D_026 | Compact-Form Audit | `D_ResonanceStructure/ResearchY-D_026.md` | `AT.Tests/ResearchY/D_ResonanceStructure/Y_D_026_Tests.cs` (6/6 ✅) | COMPLETE |
+| ResearchY-D_027 | Selector-Origin Audit | `D_ResonanceStructure/ResearchY-D_027.md` | `AT.Tests/ResearchY/D_ResonanceStructure/Y_D_027_Tests.cs` (6/6 ✅) | COMPLETE |
 | ResearchY-A_002 | Difference Disturbance | — | — | PLANNED |
 | ResearchY-A_003 | Actualization Propagation | — | — | PLANNED |
 | ResearchY-B_001 | Circular Closure | — | — | PLANNED |

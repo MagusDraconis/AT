@@ -67,6 +67,7 @@ ResearchY-D_001  ↔  Y_D_001_Tests.cs
 | ResearchY-D_024 (Doublet Compatibility Audit) | `AT.Tests/ResearchY/D_ResonanceStructure/Y_D_024_Tests.cs` | ACTIVE | 2026-08-29 | ✅ 7/7 PASSED — `Results/Y_D_024_Result.md` |
 | ResearchY-D_025 (Three-Generator Audit) | `AT.Tests/ResearchY/D_ResonanceStructure/Y_D_025_Tests.cs` | ACTIVE | 2026-08-29 | ✅ 7/7 PASSED — `Results/Y_D_025_Result.md` |
 | ResearchY-D_026 (Compact-Form Audit) | `AT.Tests/ResearchY/D_ResonanceStructure/Y_D_026_Tests.cs` | ACTIVE | 2026-08-29 | ✅ 6/6 PASSED — `Results/Y_D_026_Result.md` |
+| ResearchY-D_027 (Selector-Origin Audit) | `AT.Tests/ResearchY/D_ResonanceStructure/Y_D_027_Tests.cs` | ACTIVE | 2026-08-29 | ✅ 6/6 PASSED — `Results/Y_D_027_Result.md` |
 
 ## Result Summaries
 
