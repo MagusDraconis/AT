@@ -503,6 +503,7 @@ public static class TheoryBookDataService
                     new("Octave rung derived", "n = p·2^k is DERIVED: floor(log₂ span)+1 is an octave partition, and ω(k)~c·k makes k→2k a frequency octave (ω(2)/ω(1)=1.97). Only the seed period p=3 is boundary.", TheoryBadge.Derived, ["ResearchY-D_030"]),
                     new("Seed period derived", "p=3 is the UNIQUE period with complete Z2 pairing (0 unpaired) at its natural octave-rung size + convergence (p=2/4→64, p=5→80 have 1 unpaired; p=6 fails convergence). The pairing requirement itself is the D_020 boundary input.", TheoryBadge.Derived, ["ResearchY-D_031"]),
                     new("Pairing completeness boundary", "0-unpaired pairing is the observable-sector requirement that every frequency carry a doublet structure (D_020): the self-conjugate mode k=N/2 has sin(πn)=0 and must sit in a degenerate group (λ=12 5-fold at 96/192, 1-fold at 64/80/128).", TheoryBadge.Partial, ["ResearchY-D_032"]),
+                    new("Singlet prohibition", "A lone unpaired mode is mathematically allowed (L·cos₃₂=12·cos₃₂ at N=64) but physically excluded: it breaks reciprocity/phase/representation closure and weak-isospin attachment. The observable sector is a reciprocal pair structure ('no isolated oscillator').", TheoryBadge.Partial, ["ResearchY-D_033"]),
                     new("Mapping speculative", "No native operator identified whose spectrum equals the SM parameters.", TheoryBadge.Partial, ["ATQG942", "ATQG952"]),
                 ]),
             new("global-solution-space", "Global Solution Space",

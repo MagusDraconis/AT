@@ -88,6 +88,27 @@ public static class AtlasDataService
     public static IReadOnlyList<ResearchNewsModel> ResearchNews { get; } =
     [
         new(
+            "researchy-d033-singlet-prohibition",
+            "A Lone Unpaired Mode Is Mathematically Allowed but Physically Excluded",
+            "ResearchY Milestone · D_033 (Wave Geometry Program)",
+            "Why is an unpaired self-conjugate mode forbidden? The mode cos(πn) = (−1)ⁿ is a perfectly valid eigenfunction — it is NOT mathematically forbidden. It is physically excluded because the observable sector is a reciprocal pair structure: a lone mode has no mirror partner, no sin quadrature, no doublet, and cannot carry the weak-isospin reading. Only normalization survives.",
+            "D_033 analyzed the singlet (self-conjugate k=N/2) at the mathematical and physical levels. Mathematically: verified L·cos₃₂ = 12·cos₃₂ at N=64 — the singlet is a valid eigenfunction, so the prohibition is NOT mathematical. Physically: the singlet breaks (1) reciprocity — the Z2 mirror maps k=N/2 to itself, giving no distinct partner; (2) spatial phase structure — sin(πn) = 0, so only the cos harmonic survives; (3) representation closure — a 1D eigenspace has no 2D doublet; (4) weak-isospin attachment — the SU(2) fundamental reading (D_022) needs a doublet. Normalization SURVIVES: the Fourier basis is complete with or without the singlet (64 modes at N=64). The prohibition is the observable-sector requirement of a RECIPROCAL PAIR structure ('no isolated oscillator') — BOUNDARY (D_020). The reciprocity/phase/representation closures are DERIVED consequences of the pairing (D_021). Removing the complete-pairing rule breaks reciprocity first; the spectral content survives.",
+            "For non-experts: the spectrum has a special 'top' mode that is its own mirror image — it has no partner of its own. We asked whether such a lone mode is allowed. Mathematically it is fine: it is a valid oscillation. But physically the theory's observable sector is built out of pairs (the weak-force doublets), and a lone mode cannot be part of that structure — it would be an isolated oscillator with no partner and only half of its phase freedom. So the theory requires every mode to sit inside a pair, and that requirement is the one genuine input; the size 96 follows from it.",
+            "The lone mode is valid mathematics but cannot belong to a paired observable sector.",
+            "“The mode is real; the pairing requirement is what excludes it from the sector.”",
+            true,
+            [
+                new("ResearchY-D_021", "OSCILLATION SYMMETRY",
+                    "The pairing structure (cos/sin quadrature) is DERIVED from oscillation.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.1-boundary-program/Docs/ResearchY/D_ResonanceStructure/ResearchY-D_021.md"),
+                new("ResearchY-D_032", "PAIRING-REQUIREMENT AUDIT",
+                    "The completeness (0 unpaired) is the observable-sector requirement (BOUNDARY, D_020).",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.1-boundary-program/Docs/ResearchY/D_ResonanceStructure/ResearchY-D_032.md"),
+                new("ResearchY-D_033", "SINGLET-PROHIBITION AUDIT",
+                    "Singlet mathematically allowed (L·cos₃₂=12·cos₃₂), physically excluded; 'no isolated oscillator' EMERGENT; prohibition BOUNDARY.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.1-boundary-program/Docs/ResearchY/D_ResonanceStructure/ResearchY-D_033.md"),
+            ]),
+        new(
             "researchy-d032-pairing-requirement",
             "Complete Z2 Pairing Is the Observable-Sector Requirement, Not an Accident",
             "ResearchY Milestone · D_032 (Wave Geometry Program)",
