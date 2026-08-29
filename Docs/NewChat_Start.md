@@ -983,6 +983,22 @@ observable sector is complex" (BOUNDARY). Classification: complex structure DERI
 from it; "observable sector is complex" BOUNDARY; N=96 DERIVED. No canonical value
 changed.
 
+ResearchY-D_036 (Complex-State-Origin Audit, COMPLETE, tests 7/7 PASSED): why must
+observable states be complex? Verdict: the complex state ψ = |ψ|·e^{iθ} is DERIVED —
+the two real DOFs are the two faces of the SAME actualization tick k: magnitude
+|ψ| = √ρ (count face, QG216) and phase θ = 2πk/N (circulation face, QG220; link
+connection, QG63). The complete amplitude ψ_k = √(μ^k/S)·e^(2πik/N) has Σ|ψ|² = 1 EXACT
+(Born rule). The phase is the PAIRING DISCRIMINATOR: it distinguishes k from N−k (the
+Z2 pairing, D_021) — in a magnitude-only (1-DOF real) space
+cos(2π(N−k)n/N) = cos(2πkn/N), so the mirror pair collapses and no doublet/weak-isospin
+sector exists. Removing the phase breaks the pairing first; removing the magnitude
+empties the count structure (uniform sector). Interference P = 2 + 2cos(θ₁−θ₂) is a
+DERIVED consequence, not the cause. REFINEMENT: "the observable sector is complex"
+(D_035) REDUCES to the Z2 pairing input (D_020) — the boundary count does not increase.
+Classification: magnitude DERIVED (QG216); phase DERIVED (QG220); complex state DERIVED
+(QG218); interference DERIVED; complex observability EMERGENT (= the Z2 pairing); Z2
+pairing BOUNDARY (D_020); N=96 DERIVED. No canonical value changed.
+
 ### PRED001: Prediction Registry (standalone Zenodo publication)
 
 Summary:
