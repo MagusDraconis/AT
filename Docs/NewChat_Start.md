@@ -1182,6 +1182,23 @@ D96 (D_044); m_e BOUNDARY (no construction); anchor independence from ρ DERIVED
 audit: no ρ-ratio matches); cosmological scaling of anchors NONE. No new primitive;
 No canonical value changed.
 
+ResearchY-R_001 (V2.1 Boundary Program Closure Audit, COMPLETE, tests 4/4 PASSED): is
+the V2.1 origin program complete? Verdict: COMPLETE. The final irreducible boundary set
+has exactly FIVE items — {Difference, η} (primitives, D_027/D_039), {Z2-paired (complex)
+sector} (observable-sector input, D_020/D_036), {3 octave families} (span ∈ [4,8) window,
+D_020), {SU(2) gauge + j=1/2} (weak-isospin input, D_022/D_024), and {v, m_e}
+(dimensionful anchors, D_012/D_044). Every other object in the D_020–D_045 chain is
+DERIVED or EMERGENT: complete pairing, the singleton prohibition, p=3, 6|N, N=96, span,
+family count, the octave, ΩΛ/Ωm, the v structure (137·ln span), M_Pl/v, the ratio
+family, and the selector criteria are DERIVED (20 objects); reciprocity, observability,
+the weak-isospin reading, the su(2) compact-form, and dimensionful physics are EMERGENT
+(10 objects). 13 original boundary items reclassified (7 → DERIVED, 1 → EMERGENT, 6
+confirmed BOUNDARY). The five remaining boundaries are irreducible DOCUMENTED INPUTS,
+not gaps. No origin question remains OPEN (0 OPEN); no new primitive; canonical AT
+unchanged. Chain: Difference → Actualization → tick → count → magnitude → phase →
+complex state → identity → reciprocity → pairing → p=3 → 6|N → N=96 → Closure →
+Spectrum → {v, m_e} → Dimensionful Physics.
+
 ### PRED001: Prediction Registry (standalone Zenodo publication)
 
 Summary:

@@ -25,6 +25,7 @@ ResearchY-A_001  ↔  Y_A_001_Tests.cs     (AT.Tests/ResearchY/A_WaveFoundations
 ResearchY-B_001  ↔  Y_B_001_Tests.cs
 ResearchY-C_001  ↔  Y_C_001_Tests.cs
 ResearchY-D_001  ↔  Y_D_001_Tests.cs
+ResearchY-R_001  ↔  Y_R_001_Tests.cs     (AT.Tests/ResearchY/R_BoundaryProgram/)
 ```
 
 ## Test Registry
@@ -86,6 +87,7 @@ ResearchY-D_001  ↔  Y_D_001_Tests.cs
 | ResearchY-D_043 (Dual-Anchor-Necessity Audit) | `AT.Tests/ResearchY/D_ResonanceStructure/Y_D_043_Tests.cs` | ACTIVE | 2026-08-29 | ✅ 6/6 PASSED — `Results/Y_D_043_Result.md` |
 | ResearchY-D_044 (Anchor-Origin Audit) | `AT.Tests/ResearchY/D_ResonanceStructure/Y_D_044_Tests.cs` | ACTIVE | 2026-08-29 | ✅ 6/6 PASSED — `Results/Y_D_044_Result.md` |
 | ResearchY-D_045 (Cosmological-Anchor Audit) | `AT.Tests/ResearchY/D_ResonanceStructure/Y_D_045_Tests.cs` | ACTIVE | 2026-08-29 | ✅ 6/6 PASSED — `Results/Y_D_045_Result.md` |
+| ResearchY-R_001 (V2.1 Boundary Program Closure Audit) | `AT.Tests/ResearchY/R_BoundaryProgram/Y_R_001_Tests.cs` | ACTIVE | 2026-08-30 | ✅ 4/4 PASSED — `Results/Y_R_001_Result.md` |
 
 ## Result Summaries
 
