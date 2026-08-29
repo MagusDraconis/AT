@@ -88,6 +88,27 @@ public static class AtlasDataService
     public static IReadOnlyList<ResearchNewsModel> ResearchNews { get; } =
     [
         new(
+            "researchy-d042-fundamental-ratio",
+            "D96's π: The Span Is a Derived Structural Ratio, Not an Imported Constant",
+            "ResearchY Milestone · D_042 (Wave Geometry Program)",
+            "Does D96 have a ratio like a circle's circumference ÷ diameter? Yes — span = ω_max/ω₁ = 6.4025 is the structural ratio of the ring. But unlike π (transcendental, imported), the span is algebraic and DERIVED from the integer spectrum. π is a boundary; the span is a consequence.",
+            "D_042 asked whether D96 contains a fundamental ratio analogous to circumference/diameter = π. Verdict: YES for the ROLE — span = ω_max/ω₁ = 6.4025 is the structural ratio of the C96 ring (the spectral extent ÷ the fundamental frequency), the natural dimensionless reference for the frequency-scale hierarchy (D_028). The π-analogy INVERTS the classification: π is transcendental — its value is BOUNDARY (B_002, the integer-matrix spectrum cannot output it); span is algebraic (the SAME integer-matrix spectrum), hence DERIVED. π is imported; span is derived. INVARIANCE: all spectral ratios (span, λ_max/λ₂ = 40.99, ω₂/ω₁ ≈ 1.97, moments) are invariant under N-PRESERVING ring automorphisms (verified: k→5k, 7k, 11k, 13k all preserve the spectrum multiset) — they are genuine structural invariants. BUT no ratio is universal ACROSS N: span ~ 0.0578·N is monotone (4.02 at N=60 → 12.78 at N=192), and λ_max/λ₂ is non-monotone (40.99 at 96 vs 41.10 at 192) — so there is no universal N-invariant ratio analogous to π's scale-independence (π is the same for every circle). HIERARCHY (all DERIVED): span → family count floor(log₂ span)+1 = 3 (D_028); ω₂/ω₁ ≈ 1.97 → the octave (D_030); λ_max/λ₂ → the scale gap; A³ = (Σm·#g·occ₂)³ = 4.8094e16 → the dimensionless Planck content (D_007); ω₁ = 0.6216 → the universal dimensionless reference (D_008/D_011). Classification: span role EMERGENT (structural reference); span VALUE DERIVED (algebraic); ratio family DERIVED; π VALUE BOUNDARY (unchanged, B_002); universal N-invariant ratio NONE.",
+            "For non-experts: a circle has a famous ratio — its circumference divided by its diameter is always π. We asked whether the theory's network has an analogous ratio. It does: the highest frequency divided by the lowest is 6.4025. But here is the twist: π is a number you must accept as given (it cannot be derived from simple whole-number mathematics), while the network's 6.4025 CAN be derived from the whole-number structure of the spectrum. So the theory's 'π' is better than π: it is a consequence, not an input.",
+            "The span is the network's π — but derived, not imported.",
+            "“Where π is accepted, the span is derived.”",
+            true,
+            [
+                new("ResearchY-D_028", "SPAN-ORIGIN AUDIT",
+                    "span ~ 0.0578·N DERIVED; span(96)=6.4025 is the N=96 point; 3 families is the consequence.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.1-boundary-program/Docs/ResearchY/D_ResonanceStructure/ResearchY-D_028.md"),
+                new("ResearchY-B_002", "ORIGIN OF π VALUE AUDIT",
+                    "π is transcendental (BOUNDARY value) — the integer-matrix spectrum cannot output it; its role is EMERGENT.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.1-boundary-program/Docs/ResearchY/B_CircularGeometry/ResearchY-B_002.md"),
+                new("ResearchY-D_042", "FUNDAMENTAL-RATIO AUDIT",
+                    "span = ω_max/ω₁ = 6.4025 plays π's role but is DERIVED (algebraic); invariant under N-preserving automorphisms; no universal N-invariant ratio.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.1-boundary-program/Docs/ResearchY/D_ResonanceStructure/ResearchY-D_042.md"),
+            ]),
+        new(
             "researchy-d041-time-origin",
             "Time Is Not the First Physical Dimension — the Tick Is the First Dimensionless Parameter",
             "ResearchY Milestone · D_041 (Wave Geometry Program)",
