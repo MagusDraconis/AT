@@ -64,6 +64,7 @@
 | ResearchY-D_034 | Reciprocity Audit | `D_ResonanceStructure/ResearchY-D_034.md` | `AT.Tests/ResearchY/D_ResonanceStructure/Y_D_034_Tests.cs` (6/6 ✅) | COMPLETE |
 | ResearchY-D_035 | Multiplet-Requirement Audit | `D_ResonanceStructure/ResearchY-D_035.md` | `AT.Tests/ResearchY/D_ResonanceStructure/Y_D_035_Tests.cs` (6/6 ✅) | COMPLETE |
 | ResearchY-D_036 | Complex-State-Origin Audit | `D_ResonanceStructure/ResearchY-D_036.md` | `AT.Tests/ResearchY/D_ResonanceStructure/Y_D_036_Tests.cs` (7/7 ✅) | COMPLETE |
+| ResearchY-D_037 | Reciprocity-Observability Audit | `D_ResonanceStructure/ResearchY-D_037.md` | `AT.Tests/ResearchY/D_ResonanceStructure/Y_D_037_Tests.cs` (7/7 ✅) | COMPLETE |
 | ResearchY-A_002 | Difference Disturbance | — | — | PLANNED |
 | ResearchY-A_003 | Actualization Propagation | — | — | PLANNED |
 | ResearchY-B_001 | Circular Closure | — | — | PLANNED |

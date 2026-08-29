@@ -999,6 +999,25 @@ Classification: magnitude DERIVED (QG216); phase DERIVED (QG220); complex state 
 (QG218); interference DERIVED; complex observability EMERGENT (= the Z2 pairing); Z2
 pairing BOUNDARY (D_020); N=96 DERIVED. No canonical value changed.
 
+ResearchY-D_037 (Reciprocity-Observability Audit, COMPLETE, tests 7/7 PASSED): why does
+observability require complete reciprocity? Verdict: observability = complete state
+RECONSTRUCTION — a complex state (D_036) carries two real DOFs (magnitude, phase), so
+complete observation requires measuring BOTH quadratures. The {cos, sin} pair at ω_k —
+both eigenfunctions of L at λ_k = λ_{N−k}, orthogonal (Σ cos·sin = 0), equal norm
+(N/2 each), spanning the 2D eigenspace — is exactly the reciprocal-pair (Re/Im)
+measurement basis (D_021): from both projections the state is reconstructed exactly
+(z = a + ib); from one alone the phase θ is ambiguous (same a from (|ψ|=2, θ=π/3) and
+(|ψ|=1, θ=0)). An isolated singlet (1D real, sin(πn) = 0) has only one quadrature
+channel — its phase is unobservable, its state underdetermined, its cycle position
+(reversibility, Δθ = 2πk/N per site) lost; the singlet's phase is pinned to π.
+Removing reciprocity does not remove the spectrum — it removes the second quadrature
+channel, so only the real part of each state remains observable. Prove/refute:
+observable structure (as complete information of a complex state) requires reciprocal
+partners — YES. Classification: complex state DERIVED (D_036); observability =
+information completeness EMERGENT (the requirement); reciprocity (two-quadrature basis)
+EMERGENT from complex-state observability; complete pairing DERIVED; Z2 pairing input
+BOUNDARY (D_020); N=96 DERIVED. No canonical value changed.
+
 ### PRED001: Prediction Registry (standalone Zenodo publication)
 
 Summary:

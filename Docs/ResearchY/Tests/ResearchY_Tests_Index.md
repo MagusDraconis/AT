@@ -77,6 +77,7 @@ ResearchY-D_001  ↔  Y_D_001_Tests.cs
 | ResearchY-D_034 (Reciprocity Audit) | `AT.Tests/ResearchY/D_ResonanceStructure/Y_D_034_Tests.cs` | ACTIVE | 2026-08-29 | ✅ 6/6 PASSED — `Results/Y_D_034_Result.md` |
 | ResearchY-D_035 (Multiplet-Requirement Audit) | `AT.Tests/ResearchY/D_ResonanceStructure/Y_D_035_Tests.cs` | ACTIVE | 2026-08-29 | ✅ 6/6 PASSED — `Results/Y_D_035_Result.md` |
 | ResearchY-D_036 (Complex-State-Origin Audit) | `AT.Tests/ResearchY/D_ResonanceStructure/Y_D_036_Tests.cs` | ACTIVE | 2026-08-29 | ✅ 7/7 PASSED — `Results/Y_D_036_Result.md` |
+| ResearchY-D_037 (Reciprocity-Observability Audit) | `AT.Tests/ResearchY/D_ResonanceStructure/Y_D_037_Tests.cs` | ACTIVE | 2026-08-29 | ✅ 7/7 PASSED — `Results/Y_D_037_Result.md` |
 
 ## Result Summaries
 
