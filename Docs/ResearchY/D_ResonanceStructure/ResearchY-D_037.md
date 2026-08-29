@@ -139,7 +139,7 @@ of a complex state) requires reciprocal partners.
 > An isolated singlet (1D real, sin(πn) = 0) has only one quadrature channel — its
 > phase is unobservable, its state underdetermined, and its cycle position (reversibility)
 > lost. Hence reciprocity is the EMERGENT observable requirement (information
-> completeness); complete pairing is DERIVED from it; the pairing input (D_020) is
+> completeness); complete pairing is DERIVED from it; the Z2-paired sector requirement (D_020) is
 > BOUNDARY. No new primitive; canonical AT unchanged.
 >
 > *Proof sketch.* (1) The complex state has two DOFs (D_036). (2) Complete observation =
@@ -162,7 +162,7 @@ Difference
  → reciprocity (two-quadrature basis)     [EMERGENT — the measurement requirement]
  → complete pairing (0 unpaired)          [DERIVED]
  → p=3 / N=96                             [DERIVED]
- → Z2 pairing input                       [BOUNDARY — D_020]
+ → Z2-paired sector requirement           [BOUNDARY — D_020]
 ```
 
 ---
@@ -203,13 +203,13 @@ Difference
 | observability = information completeness | **EMERGENT** (the requirement) |
 | reciprocity (two-quadrature basis) | **EMERGENT** (from complex-state observability) |
 | complete pairing (0 unpaired) | **DERIVED** (from reciprocity) |
-| Z2 pairing input | **BOUNDARY** (D_020) |
+| Z2-paired sector requirement | **BOUNDARY** (D_020) |
 | N=96 | **DERIVED** |
 
 **Observability requires complete reciprocity because complete observation of a complex
 state requires its two-quadrature (reciprocal-pair) measurement basis. Reciprocity is
-EMERGENT from complex-state observability; complete pairing DERIVED; the pairing input
-BOUNDARY.**
+EMERGENT from complex-state observability; complete pairing DERIVED; the Z2-paired
+sector requirement BOUNDARY.**
 
 ---
 
@@ -251,7 +251,7 @@ BOUNDARY.**
 state completely requires its reciprocal-pair measurement basis — the {cos, sin} (Re,
 Im) quadrature pair. A singlet's second channel is identically zero, so its phase is
 unobservable and its state underdetermined. Reciprocity is **EMERGENT** from
-complex-state observability; complete pairing **DERIVED**; the pairing input **BOUNDARY**
+complex-state observability; complete pairing **DERIVED**; the Z2-paired sector requirement **BOUNDARY**
 (D_020). No canonical value was changed.
 
 **Reproduction:** `dotnet test AT.Tests/AT.Tests.csproj --filter "FullyQualifiedName~Y_D_037"`

@@ -994,10 +994,12 @@ cos(2π(N−k)n/N) = cos(2πkn/N), so the mirror pair collapses and no doublet/w
 sector exists. Removing the phase breaks the pairing first; removing the magnitude
 empties the count structure (uniform sector). Interference P = 2 + 2cos(θ₁−θ₂) is a
 DERIVED consequence, not the cause. REFINEMENT: "the observable sector is complex"
-(D_035) REDUCES to the Z2 pairing input (D_020) — the boundary count does not increase.
-Classification: magnitude DERIVED (QG216); phase DERIVED (QG220); complex state DERIVED
-(QG218); interference DERIVED; complex observability EMERGENT (= the Z2 pairing); Z2
-pairing BOUNDARY (D_020); N=96 DERIVED. No canonical value changed.
+(D_035) REDUCES to the Z2-paired sector requirement (D_020) — the boundary count does
+not increase. Classification: magnitude DERIVED (QG216); phase DERIVED (QG220); complex
+state DERIVED (QG218); interference DERIVED; complex observability EMERGENT (= the
+two-DOF sector requirement); Z2 pairing STRUCTURE DERIVED (D_021); complete pairing
+DERIVED (D_035); Z2-paired (complex) sector requirement BOUNDARY (D_020); N=96 DERIVED.
+No canonical value changed.
 
 ResearchY-D_037 (Reciprocity-Observability Audit, COMPLETE, tests 7/7 PASSED): why does
 observability require complete reciprocity? Verdict: observability = complete state
@@ -1015,8 +1017,8 @@ channel, so only the real part of each state remains observable. Prove/refute:
 observable structure (as complete information of a complex state) requires reciprocal
 partners — YES. Classification: complex state DERIVED (D_036); observability =
 information completeness EMERGENT (the requirement); reciprocity (two-quadrature basis)
-EMERGENT from complex-state observability; complete pairing DERIVED; Z2 pairing input
-BOUNDARY (D_020); N=96 DERIVED. No canonical value changed.
+EMERGENT from complex-state observability; complete pairing DERIVED; Z2-paired sector
+requirement BOUNDARY (D_020); N=96 DERIVED. No canonical value changed.
 
 ### PRED001: Prediction Registry (standalone Zenodo publication)
 

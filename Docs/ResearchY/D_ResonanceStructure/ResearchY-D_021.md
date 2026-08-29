@@ -192,6 +192,14 @@ oscillation (ψ = A cos(ωt + δ))
 **The pairing structure is DERIVED from oscillation; the completeness of pairing is a
 BOUNDARY selection (D_020); the weak-isospin reading is EMERGENT.**
 
+**Refinement (D_035/D_036):** the "completeness of pairing is BOUNDARY" line reflects
+the state of knowledge at D_021. D_035 derived complete pairing (0 unpaired) from
+complex observability (every eigenvalue mult ≥ 2), and D_036 reduced "the observable
+sector is complex" to the D_020 sector requirement. The pairing STRUCTURE — the
+quadrature pair {cos, sin}, the spectral degeneracy λ_k = λ_{N−k}, the Z2 doublet —
+remains **DERIVED as stated here**; the boundary is the Z2-paired (complex) sector
+requirement (D_020).
+
 ---
 
 ## Open Problems

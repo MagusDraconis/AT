@@ -136,7 +136,7 @@ a paired sector IS a two-DOF sector, and a two-DOF sector IS complex. The pairin
 discriminator is the phase.
 
 ```
-Z2 pairing (0 unpaired, D_020)   [BOUNDARY — the observable-sector input]
+Z2-paired complex sector (D_020)   [BOUNDARY — the observable-sector input]
   → phase required to distinguish k from N−k      [DERIVED consequence]
   → two real DOFs per mode ({cos, sin} / [Re, Im]) [DERIVED]
   → complex state ψ = |ψ|·e^{iθ}                   [DERIVED — QG218]
@@ -147,7 +147,7 @@ Z2 pairing (0 unpaired, D_020)   [BOUNDARY — the observable-sector input]
 ```
 
 The boundary count does not increase: "the observable sector is complex" (D_035) is
-REDUCED to the D_020 pairing input. Both the magnitude and the phase are DERIVED
+REDUCED to the D_020 Z2-paired sector requirement. Both the magnitude and the phase are DERIVED
 (QG216/QG220); the complex structure is DERIVED (QG218); only the pairing requirement
 (D_020, within the primitives {Difference, η}, D_027) is BOUNDARY.
 
@@ -164,9 +164,9 @@ REDUCED to the D_020 pairing input. Both the magnitude and the phase are DERIVED
 > cos(2π(N−k)n/N) = cos(2πkn/N), so the pair collapses and no doublet/weak-isospin
 > sector exists. Interference P = 2 + 2cos(θ₁−θ₂) is a DERIVED consequence, not the
 > cause. Hence: magnitude DERIVED (QG216); phase DERIVED (QG220); complex state DERIVED
-> (QG218); complex observability EMERGENT (= the Z2 pairing, D_020); interference
+> (QG218); complex observability EMERGENT (= the two-DOF sector requirement); interference
 > DERIVED; N=96 DERIVED. No new primitive; "the observable sector is complex" (D_035) is
-> reduced to the D_020 pairing input.
+> reduced to the D_020 Z2-paired sector requirement.
 >
 > *Proof sketch.* (1) The two DOFs are the magnitude (count, QG216) and the phase
 > (circulation, QG220) of the SAME tick k — both DERIVED (Sections 2, 5). (2) The phase
@@ -175,8 +175,8 @@ REDUCED to the D_020 pairing input. Both the magnitude and the phase are DERIVED
 > (Sections 2–3, verified). (3) Removing the phase collapses the pairing (Section 3);
 > removing the magnitude removes the count content (Section 4) — both DOFs are necessary
 > and each is derived. (4) Interference follows from complexity (Section 5D). (5) Hence
-> the complex structure is DERIVED and the "complex" requirement coincides with the Z2
-> pairing input (D_020, BOUNDARY). ∎
+> the complex structure is DERIVED and the "complex" requirement coincides with the
+> Z2-paired sector requirement (D_020, BOUNDARY). ∎
 
 ---
 
@@ -189,10 +189,11 @@ Actualization (circulation face)
  → phase θ = 2πk/N               [DERIVED — QG220, QG63]
  → complex state ψ = |ψ|·e^{iθ}  [DERIVED — QG218]
  → phase distinguishes k from N−k  [DERIVED — the pairing discriminator, D_021]
- → Z2 pairing (0 unpaired)        [BOUNDARY — D_020, the observable-sector input]
- → complex observability (mult ≥ 2) [EMERGENT]
- → complete pairing               [DERIVED — D_035]
- → p=3 / N=96                     [DERIVED]
+ → Z2 pairing structure ({cos, sin} pair)  [DERIVED — D_021]
+ → complex observability (mult ≥ 2)        [EMERGENT]
+ → complete pairing (0 unpaired)           [DERIVED — D_035]
+ → observable sector is a Z2-paired (complex) sector [BOUNDARY — D_020]
+ → p=3 / N=96                             [DERIVED]
 ```
 
 ---
@@ -208,7 +209,7 @@ Actualization (circulation face)
 | Does removing the phase break the pairing first? | **YES** (the Z2 doublet collapses) |
 | Does removing the magnitude break the count first? | **YES** (the sector becomes uniform/empty) |
 | Is interference the cause of complexity? | NO — it is a DERIVED consequence |
-| Is "the observable sector is complex" a separate boundary? | NO — it reduces to the D_020 pairing input |
+| Is "the observable sector is complex" a separate boundary? | NO — it reduces to the D_020 Z2-paired sector requirement |
 
 ---
 
@@ -236,13 +237,16 @@ Actualization (circulation face)
 | complex state structure | **DERIVED** (QG218) |
 | phase as pairing discriminator | **DERIVED** (D_021) |
 | interference | **DERIVED** (consequence) |
-| complex observability | **EMERGENT** (= the Z2 pairing requirement) |
-| Z2 pairing (0 unpaired) | **BOUNDARY** (D_020) |
+| complex observability | **EMERGENT** (= the two-DOF sector requirement) |
+| Z2 pairing structure (quadrature pair, λ_k=λ_{N−k}) | **DERIVED** (D_021) |
+| complete pairing (0 unpaired) | **DERIVED** (D_035) |
+| observable sector is a Z2-paired (complex) sector | **BOUNDARY** (D_020) |
 | N=96 | **DERIVED** |
 
-**The complex state structure is fully DERIVED from Difference → Actualization; "the
-observable sector is complex" reduces to the Z2 pairing input (D_020). No new
-primitive; canonical AT unchanged.**
+**The complex state structure is fully DERIVED from Difference → Actualization; the
+pairing STRUCTURE is DERIVED (D_021) and complete pairing (0 unpaired) is DERIVED
+(D_035); "the observable sector is complex" reduces to the Z2-paired sector requirement
+(D_020, BOUNDARY). No new primitive; canonical AT unchanged.**
 
 ---
 
@@ -286,7 +290,7 @@ primitive; canonical AT unchanged.**
 DERIVED from Difference → Actualization — magnitude (count face, QG216) and phase
 (circulation face, QG220) are the two faces of the same actualization tick k, and the
 phase is the discriminator that distinguishes k from N−k (the Z2 pairing). "The
-observable sector is complex" (D_035) reduces to the Z2 pairing input (D_020); no new
+observable sector is complex" (D_035) reduces to the Z2-paired sector requirement (D_020); no new
 primitive. No canonical value was changed.
 
 **Reproduction:** `dotnet test AT.Tests/AT.Tests.csproj --filter "FullyQualifiedName~Y_D_036"`

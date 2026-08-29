@@ -206,6 +206,11 @@ Difference
 **Complete pairing is DERIVED from complex observability; the boundary is "the
 observable sector is complex."**
 
+**Refinement (D_036):** "the observable sector is complex" reduces to the Z2-paired
+sector requirement (D_020) — the same input, stated from the pairing side. The pairing
+STRUCTURE itself is DERIVED (D_021); complete pairing (0 unpaired) remains DERIVED as
+concluded here.
+
 ---
 
 ## Open Problems
