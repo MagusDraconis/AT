@@ -82,6 +82,7 @@ ResearchY-D_001  ↔  Y_D_001_Tests.cs
 | ResearchY-D_039 (State-Identity-Origin Audit) | `AT.Tests/ResearchY/D_ResonanceStructure/Y_D_039_Tests.cs` | ACTIVE | 2026-08-29 | ✅ 7/7 PASSED — `Results/Y_D_039_Result.md` |
 | ResearchY-D_040 (Boundary Reclassification Audit) | `AT.Tests/ResearchY/D_ResonanceStructure/Y_D_040_Tests.cs` | ACTIVE | 2026-08-29 | ✅ 7/7 PASSED — `Results/Y_D_040_Result.md` |
 | ResearchY-D_041 (Time-Origin Audit) | `AT.Tests/ResearchY/D_ResonanceStructure/Y_D_041_Tests.cs` | ACTIVE | 2026-08-29 | ✅ 6/6 PASSED — `Results/Y_D_041_Result.md` |
+| ResearchY-D_042 (Fundamental-Ratio Audit) | `AT.Tests/ResearchY/D_ResonanceStructure/Y_D_042_Tests.cs` | ACTIVE | 2026-08-29 | ✅ 6/6 PASSED — `Results/Y_D_042_Result.md` |
 
 ## Result Summaries
 

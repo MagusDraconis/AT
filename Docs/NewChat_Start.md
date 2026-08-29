@@ -1106,6 +1106,25 @@ DIMENSIONLESS parameter. Classification: ordering DERIVED (QG220); tick as time
 parameter EMERGENT; dimensionless frequency EMERGENT (from the tick phase rate);
 dimensionful time/frequency/energy BOUNDARY (anchors v, ħ). No canonical value changed.
 
+ResearchY-D_042 (Fundamental-Ratio Audit, COMPLETE, tests 6/6 PASSED): does D96
+contain a fundamental ratio analogous to circumference/diameter = π? Verdict: YES for
+the ROLE — span = ωmax/ω₁ = 6.4025 is the structural ratio of the C96 ring (spectral
+extent ÷ fundamental), the natural dimensionless reference for the frequency-scale
+hierarchy (D_028). The π-analogy INVERTS the classification: π is transcendental (value
+BOUNDARY, B_002 — the integer-matrix spectrum cannot output it); span is algebraic
+(same integer-matrix spectrum), hence DERIVED. π is imported; span is derived.
+INVARIANCE: all spectral ratios (span, λmax/λ₂ = 40.99, ω₂/ω₁ ≈ 1.97, moments) are
+invariant under N-PRESERVING ring automorphisms (verified k→5k, 7k, 11k, 13k preserve
+the spectrum multiset); but NO ratio is universal ACROSS N (span ~ 0.0578·N, monotone
+4.02→12.78; λmax/λ₂ non-monotone 40.99→41.10) — there is no universal N-invariant ratio
+analogous to π's scale-independence. HIERARCHY: span → family count floor(log₂ span)+1
+= 3 (D_028); ω₂/ω₁ ≈ 1.97 → the octave (D_030); λmax/λ₂ → the scale gap; A³ =
+(Σm·#g·occ₂)³ = 4.8094e16 → the dimensionless Planck content (D_007); ω₁ = 0.6216 →
+the universal dimensionless reference (D_008/D_011) — all DERIVED. Classification: span
+role EMERGENT (structural reference); span VALUE DERIVED (algebraic); ratio family
+DERIVED; π VALUE BOUNDARY (unchanged, B_002); universal N-invariant ratio NONE. No
+canonical value changed.
+
 ### PRED001: Prediction Registry (standalone Zenodo publication)
 
 Summary:
