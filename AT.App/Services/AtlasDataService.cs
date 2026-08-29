@@ -88,6 +88,27 @@ public static class AtlasDataService
     public static IReadOnlyList<ResearchNewsModel> ResearchNews { get; } =
     [
         new(
+            "researchy-d039-state-identity-origin",
+            "Difference IS Distinguishability — State Identity Is the Primitive Applied, Not a New Rule",
+            "ResearchY Milestone · D_039 (Wave Geometry Program)",
+            "Why must an observable state have a unique identity? Because the primitive 'Difference' IS the act of distinguishing. A state space in which two modes cannot be told apart fails the primitive itself. So the identity requirement is not a boundary — it is Difference applied to the state space, and it forces the two-DOF complex structure.",
+            "D_039 asked the deepest question of the chain: is state identity derived from Difference itself, or is it the final boundary? The answer: Difference IS distinguishability. The primitive's semantic content is the act of distinguishing one state from another; a state space in which two modes cannot be told apart fails the primitive itself. State identity (each mode distinguishable) is therefore the primitive APPLIED to the observable sector — not a separate boundary. The real-only space collapses the 95 modes to 48 distinct real states (47 mirror pairs + 1 self-conjugate: cos(2π(N−k)n/N) = cos(2πkn/N), so k and N−k have NO Difference between them) and further to 3 magnitude buckets from the [4,4,87] occupancy. Phase-only restores 95/95 identity but loses the count content (uniform). The complex space ψ = |ψ|·e^{iθ} realizes Difference fully: 95/95 distinct with the Born rule Σρ=1 EXACT. Prove/refute: Difference implies distinguishability — YES, by definition. The only boundaries remain the primitives {Difference, η} (D_027) and the Z2-paired sector requirement (D_020); everything downstream — state identity, the complex state, probability, reciprocity, complete pairing, N=96 — is DERIVED. Classification: Difference (primitive) BOUNDARY (D_027); distinguishability DERIVED; state identity DERIVED (the primitive applied); complex state DERIVED (QG218, minimal identity space); observability EMERGENT; interference/reciprocity DERIVED (D_037); Z2-paired sector requirement BOUNDARY (D_020).",
+            "For non-experts: the theory starts from a single idea — 'Difference', which simply means two things can be told apart. We asked why an observable state must have a unique identity. The answer is almost a tautology: if two states could not be told apart, there would be no Difference between them — the theory's starting point would be violated. The interesting part is what that requires: a real-valued description collapses the 95 frequencies into 48 (mirror pairs become identical), so to honor Difference you need two numbers per state — its size and its phase. That is exactly a complex number, and it is forced by the primitive itself.",
+            "Difference is the act of telling apart; state identity is that act applied to the spectrum.",
+            "“If two states cannot be told apart, there is no Difference between them.”",
+            true,
+            [
+                new("ResearchY-D_036", "COMPLEX-STATE-ORIGIN AUDIT",
+                    "Complex states DERIVED: magnitude (count) + phase (circulation) — two faces of the same tick k.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.1-boundary-program/Docs/ResearchY/D_ResonanceStructure/ResearchY-D_036.md"),
+                new("ResearchY-D_038", "STATE-IDENTITY AUDIT",
+                    "Observability forces two DOFs: magnitude-only collapses identity, phase-only loses probability.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.1-boundary-program/Docs/ResearchY/D_ResonanceStructure/ResearchY-D_038.md"),
+                new("ResearchY-D_039", "STATE-IDENTITY-ORIGIN AUDIT",
+                    "Difference IS distinguishability: state identity is the primitive applied — the real-only space collapses 95 modes to 48, the complex space realizes Difference fully.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.1-boundary-program/Docs/ResearchY/D_ResonanceStructure/ResearchY-D_039.md"),
+            ]),
+        new(
             "researchy-d038-state-identity",
             "An Observable State Must Carry Both Magnitude and Phase — or It Loses Its Identity",
             "ResearchY Milestone · D_038 (Wave Geometry Program)",
