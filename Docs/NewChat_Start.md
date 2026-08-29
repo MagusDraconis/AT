@@ -1164,6 +1164,24 @@ construction); anchor independence BOUNDARY (D_013); M_Pl/v DERIVED; anchor role
 EMERGENT (D_014); dimensionful physics EMERGENT. No new primitive; No canonical value
 changed.
 
+ResearchY-D_045 (Cosmological-Anchor Audit, COMPLETE, tests 6/6 PASSED): can
+cosmological scaling generate v and m_e? Verdict: NO — the anchors are INDEPENDENT of
+the cosmological state (option A). The density state ρ produces DIMENSIONLESS fractions
+only: ΩΛ = I_occ/ln K = 0.7513/ln 3 = 0.6839, Ωm = 1−ΩΛ = 0.3161 (QG234, DERIVED,
+dimensionless). No cosmological ratio matches the anchor ratios: ΩΛ/Ωm = 2.16 vs
+v/m_e ≈ 4.98e5; no ρ-quantity near m_e/v ≈ 2e-6 or ln(v/m_e) ≈ 13.1. ρ is a
+dimensionless counting measure (QG216) — any f(ρ) is dimensionless, so converting it to
+dimensionful v/m_e would be circular (the anchor would be the input, not the output).
+v = 137·ln(span) = 254.37 GeV is a SPECTRAL quantity (span is N-fixed, D_028), not
+ρ-dependent; m_e has no construction from ρ (D_013/D_014). If ρ changes, the Ω
+fractions change (they ARE density fractions) but v, m_e, and v/m_e are unchanged
+(fixed by the anchors). So: the density state adds the dimensionless fractions
+(ΩΛ/Ωm, DERIVED); it does NOT generate the anchors. Classification: density state ρ
+DERIVED (QG216); ΩΛ/Ωm DERIVED from ρ (QG234, dimensionless); v structure DERIVED from
+D96 (D_044); m_e BOUNDARY (no construction); anchor independence from ρ DERIVED (this
+audit: no ρ-ratio matches); cosmological scaling of anchors NONE. No new primitive;
+No canonical value changed.
+
 ### PRED001: Prediction Registry (standalone Zenodo publication)
 
 Summary:
