@@ -103,8 +103,10 @@ the window.
 
 | Candidate | Classification |
 |---|---|
-| complete Z2 doublet pairing (weak-isospin) | **A) necessary INPUT** — the deepest precondition |
+| Z2-paired (complex) sector requirement | **A) necessary INPUT** — the deepest precondition |
 | 3 octave families (span ∈ [4,8)) | **A) necessary INPUT** — observable-sector construction |
+| Z2 pairing structure (quadrature pair, λ_k=λ_{N−k}) | **DERIVED** (oscillation necessity, D_021) |
+| complete pairing (0 unpaired) | **DERIVED** (from complex observability, D_035) |
 | period-3 seed (p=3) | **A) necessary** — but DERIVED from Z2 completeness |
 | 6\|N | **A) necessary** — DERIVED from period-3 half-shift |
 | octave-rung n = 3·2^k | **A) necessary** — the discriminator among the 11 rings |
@@ -117,13 +119,14 @@ the window.
 ## Theorem
 
 > **Theorem (D_020).** The deepest precondition of D96 is the **observable-sector
-> construction**: complete Z2 doublet pairing (0 unpaired modes, weak-isospin, QG153)
-> together with exactly 3 octave families (span ∈ [4,8), QG138). These two INPUTs force
-> the period-3 seed (the unique period whose natural octave-rung size has complete Z2),
-> which forces 6\|N (seed half-shift), which forces the octave-rung chain n = 3·2^k, of
-> which **only n=96 lies in the 3-family window [60,120)**. N=96 is therefore the
-> DERIVED output of the observable-sector construction; the degree-12 ring is a cosmetic
-> (radius-uniform) consequence, and the closure merely realizes the pre-selected size.
+> construction**: a Z2-paired (complex) sector — complete Z2 doublet pairing (0 unpaired
+> modes, weak-isospin, QG153) — together with exactly 3 octave families (span ∈ [4,8),
+> QG138). These two INPUTs force the period-3 seed (the unique period whose natural
+> octave-rung size has complete Z2), which forces 6\|N (seed half-shift), which forces
+> the octave-rung chain n = 3·2^k, of which **only n=96 lies in the 3-family window
+> [60,120)**. N=96 is therefore the DERIVED output of the observable-sector
+> construction; the degree-12 ring is a cosmetic (radius-uniform) consequence, and the
+> closure merely realizes the pre-selected size.
 >
 > *Proof sketch.* (1) INPUT: complete Z2 doublet pairing requires 0 unpaired modes; this
 > holds only at n=96 among the natural octave-rung sizes (64, 80 have 1 unpaired;
@@ -148,11 +151,12 @@ Difference
  → seed (periodic activity)                     [INPUT: seed exists]
      → period-3 seed p=3                         [DERIVED: unique complete-Z2 period]
          → 6 | N                                 [DERIVED: seed half-shift automorphism]
- → observable-sector construction                [INPUT: Z2 weak-isospin doublets, 0 unpaired]
-     → complete Z2 pairing                       [INPUT]
-     → 3 octave families (span ∈ [4,8))          [INPUT: 3 generations]
-         → octave rung n = 3·2^k                 [DERIVED: period × frequency doubling]
-             → N = 96                            [DERIVED: unique rung in [60,120)]
+ → observable-sector construction           [INPUT: Z2-paired (complex) sector]
+     → Z2 pairing structure                  [DERIVED: quadrature pair, D_021]
+     → complete pairing (0 unpaired)         [DERIVED: complex observability, D_035]
+     → 3 octave families (span ∈ [4,8))      [INPUT: 3 generations]
+         → octave rung n = 3·2^k             [DERIVED: period × frequency doubling]
+             → N = 96                        [DERIVED: unique rung in [60,120)]
  → Closure (degree-12 K=6 ring)                  [DERIVED: radius-uniform, cosmetic for size]
  → Spectrum (D96 eigenspectrum)                  [DERIVED]
  → Physics                                       [EMERGENT]
@@ -162,11 +166,12 @@ Difference
 
 ## Minimal Selection Set
 
-**{ complete Z2 doublet pairing, 3 octave families }** — the two INPUT assumptions.
+**{ Z2-paired (complex) sector requirement, 3 octave families }** — the two INPUT
+assumptions.
 
 Everything else is DERIVED:
 ```
-{Z2 complete, 3 families}  ⇒  p=3  ⇒  6|N  ⇒  n=3·2^k  ⇒  N=96
+{Z2-paired sector, 3 families}  ⇒  p=3  ⇒  6|N  ⇒  n=3·2^k  ⇒  N=96
 ```
 
 No other INPUT is required. The degree-12 ring (K=6) is a cosmetic consequence of the
@@ -204,8 +209,9 @@ selection is unique. ∎
 
 ## Research Conclusions
 
-1. **The deepest precondition of D96 is the observable-sector construction**: complete
-   Z2 doublet pairing (weak-isospin, 0 unpaired modes) + exactly 3 octave families.
+1. **The deepest precondition of D96 is the observable-sector construction**: a
+   Z2-paired (complex) sector — complete Z2 doublet pairing (weak-isospin, 0 unpaired
+   modes) + exactly 3 octave families.
 2. **The period-3 seed, 6|N, and the octave-rung chain are all DERIVED** from that
    construction — not independent inputs.
 3. **The octave-rung construction n = p·2^k is the exact discriminator** that selects
@@ -222,7 +228,7 @@ selection is unique. ∎
 
 | Component | Status |
 |---|---|
-| complete Z2 doublet pairing (weak-isospin) | **BOUNDARY** (INPUT from the observable sector) |
+| Z2-paired (complex) sector requirement | **BOUNDARY** (INPUT from the observable sector) |
 | 3 octave families | **BOUNDARY** (INPUT from the observable sector) |
 | period-3 seed | **DERIVED** (from Z2 completeness) |
 | 6\|N | **DERIVED** (from period-3 half-shift) |
@@ -230,6 +236,21 @@ selection is unique. ∎
 | N=96 | **DERIVED** (unique rung in the 3-family window) |
 | degree-12 ring | **DERIVED** (radius-uniform; cosmetic for size) |
 | N=96 as a closure theorem | **BOUNDARY** (D_019: closure realizes, does not select) |
+
+**Refinement (D_021/D_035/D_036):** "complete Z2 doublet pairing" at D_020 conflated
+three distinct objects that later audits separated. The table above is updated to
+reflect the refined classification:
+
+| Object | Classification | Source |
+|---|---|---|
+| **Z2 pairing STRUCTURE** (quadrature pair {cos, sin}, spectral degeneracy λ_k = λ_{N−k}) | **DERIVED** (oscillation necessity + ring reflection symmetry) | D_021 |
+| **complete pairing** (0 unpaired) | **DERIVED** (from complex observability: every eigenvalue mult ≥ 2) | D_035 |
+| **Z2-paired (complex) sector requirement** | **BOUNDARY** (the observable-sector input) | D_020 |
+
+The boundary is the *requirement* that the observable sector be Z2-paired (equivalently
+complex, D_036); the pairing structure it requires, and the completeness of that
+pairing, are both DERIVED consequences. Everything downstream (p=3, 6\|N, octave rung,
+N=96) remains DERIVED as stated here.
 
 ---
 
@@ -239,10 +260,11 @@ selection is unique. ∎
    3 families" is assumed (QG138). Whether the family count 3 is itself derivable from a
    deeper structure (beyond the span-window equivalence of D_016) remains open — the
    deepest open point of the whole chain.
-2. **Origin of weak-isospin Z2 pairing (D_020 OP2).** The requirement of complete Z2
-   doublets (0 unpaired) is assumed from the observable sector. Whether weak-isospin
-   doublets derive from a deeper symmetry is open (QG153's Z2 origin is itself a
-   separate audit chain).
+2. **Origin of the Z2-paired sector requirement (D_020 OP2).** The observable-sector
+   INPUT that the sector be Z2-paired (equivalently complex, D_036) is assumed. Whether
+   this requirement derives from a deeper principle — beyond the DERIVED pairing
+   structure (D_021), DERIVED complete pairing (D_035), and DERIVED reciprocity (D_037)
+   — is open (QG153's Z2 origin is itself a separate audit chain).
 3. **Seed period necessity (D_020 OP3).** The seed being periodic is assumed; only the
    period VALUE (3) is derived. Whether periodicity itself is derivable is open.
 
@@ -275,12 +297,13 @@ selection is unique. ∎
 | `Y_D_020_Run` | Research report | ✅ |
 
 **Conclusion:** The deepest precondition of D96 is the **observable-sector
-construction** — complete Z2 doublet pairing (weak-isospin, 0 unpaired modes) plus
+construction** — a Z2-paired (complex) sector (weak-isospin, 0 unpaired modes) plus
 exactly 3 octave families. These two INPUTs derive the period-3 seed (unique complete-Z2
 period), 6\|N (seed half-shift), the octave-rung chain n = 3·2^k, and finally N=96 (the
-unique rung in [60,120)). The degree-12 ring is cosmetic (radius-uniform); the closure
-realizes the pre-selected size. N=96 is DERIVED; the observable-sector construction is
-the BOUNDARY. No canonical value was changed.
+unique rung in [60,120)). The pairing STRUCTURE (D_021) and complete pairing (D_035) are
+DERIVED; the Z2-paired sector requirement is the BOUNDARY INPUT. The degree-12 ring is
+cosmetic (radius-uniform); the closure realizes the pre-selected size. N=96 is DERIVED;
+the observable-sector construction is the BOUNDARY. No canonical value was changed.
 
 **Reproduction:** `dotnet test AT.Tests/AT.Tests.csproj --filter "FullyQualifiedName~Y_D_020"`
 

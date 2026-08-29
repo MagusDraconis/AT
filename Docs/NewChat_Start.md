@@ -749,7 +749,7 @@ D) Closure does not determine N. No canonical value changed.
 
 ResearchY-D_020 (Selection Precondition Audit, COMPLETE, tests 6/6 PASSED): what
 selected N=96 BEFORE Closure — the deepest precondition of D96? Verdict: the deepest
-precondition is the OBSERVABLE-SECTOR CONSTRUCTION — complete Z2 doublet pairing
+precondition is the OBSERVABLE-SECTOR CONSTRUCTION — a Z2-paired (complex) sector
 (weak-isospin, 0 unpaired modes) + exactly 3 octave families — which is an INPUT/BOUNDARY
 (assumed from the observable sector, not derivable from Difference alone). From these two
 INPUTs everything is DERIVED: p=3 (the unique period whose natural octave-rung size
@@ -757,9 +757,13 @@ INPUTs everything is DERIVED: p=3 (the unique period whose natural octave-rung s
 half-shift), the octave-rung chain n=3·2^k={48,96,192}, and N=96 (the unique rung in the
 3-family window [60,120)). The octave-rung construction is the exact discriminator that
 selects 96 among the 11 rings of D_016 (only 96=3·2⁵ is a rung). The degree-12 ring
-(K=6) is cosmetic — the radius is uniform across all rungs. Minimal selection set =
-{complete Z2 pairing, 3 families}. Classification: observable-sector construction
-BOUNDARY; p=3, 6|N, octave rung, N=96 all DERIVED. No canonical value changed.
+(K=6) is cosmetic — the radius is uniform across all rungs. REFINED by D_021/D_035/D_036:
+the Z2 pairing STRUCTURE (quadrature {cos,sin}, λ_k=λ_{N−k}) is DERIVED (D_021) and
+complete pairing (0 unpaired) is DERIVED from complex observability (D_035); the
+Z2-paired (complex) sector requirement is the BOUNDARY input. Minimal selection set =
+{Z2-paired sector requirement, 3 families}. Classification: observable-sector
+construction BOUNDARY; p=3, 6|N, octave rung, N=96 all DERIVED. No canonical value
+changed.
 
 ResearchY-D_021 (Oscillation Symmetry Audit, COMPLETE, tests 7/7 PASSED): is complete
 Z2 pairing a consequence of oscillation symmetry rather than weak-isospin? Verdict: the
