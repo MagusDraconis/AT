@@ -88,6 +88,30 @@ public static class AtlasDataService
     public static IReadOnlyList<ResearchNewsModel> ResearchNews { get; } =
     [
         new(
+            "researchy-d043-dual-anchor",
+            "Why Two Anchors? Because the Theory Hosts Two Physically Distinct Sectors",
+            "ResearchY Milestone · D_043 (Wave Geometry Program)",
+            "Why must a dimensionless structure be calibrated by TWO anchors ({v, m_e})? Because the D96 spectrum hosts two physically distinct sectors — the bosonic (gauge/gravity, set by v) and the fermionic (matter, set by m_e). Each sector needs its own absolute scale, and no canonical factor links them. The two anchors are not a fundamental principle — they are what sector splitting requires.",
+            "D_043 asked whether the dual-anchor necessity {v, m_e} is fundamental or emergent. Verdict: EMERGENT from sector splitting. The D96 dimensionless structure (D_041/D_042 — pure ratios, no units) hosts two physically distinct sectors: the BOSONIC (gauge/gravity: M_W/M_Z/M_H/M_Pl = v·(dimensionless)) and the FERMIONIC (matter: m_u..m_t = m_e·(dimensionless)). Each sector's absolute scale requires its own anchor. There is NO canonical dimensionless factor linking the two sectors: m_e/v ~ 2e-6 is not a spectral number (D_013 H1 REFUTED — no canonical construction of m_e from v). ONE anchor fails: m_u/v = (m_e/v)·(Σ√m/√Σm²) ~ 2.3e-6 requires m_e as a second, independent input — the minimal anchor set {v, m_e} is irreducible (D_012/D_013). The two sectors are distinct observables with distinct scale relations — there is no common dimension principle; the dual-anchor necessity is intrinsic to the sector structure. Prove/refute: multiple anchors are required whenever observables split into physically distinct sectors — YES (each sector needs its own absolute scale; a single anchor sets only one sector's scale). Classification: dimensionless structure DERIVED (D_041/D_042); observable sector split DERIVED (D_014); anchor count EMERGENT (from sector splitting); each sector's anchor (v, m_e) BOUNDARY (dimensionful input); single-anchor failure DERIVED; dimensionful physics EMERGENT.",
+            "For non-experts: the theory's spectrum is built from pure numbers — ratios with no units. To give those numbers physical meaning (masses in GeV, energies) you must import a unit from outside. We asked why TWO such imports are needed. The answer: the theory describes two different kinds of things — the force particles (bosons) and the matter particles (fermions) — and each kind needs its own scale-setting unit. The force scale (v) and the matter scale (m_e) are genuinely independent: no formula in the theory connects them. So the two units are not an accident or a hidden principle; they are what having two distinct sectors requires.",
+            "Two sectors, two scales — the dual anchor is sector splitting made dimensional.",
+            "“Every sector speaks its own scale; no formula makes them one.”",
+            true,
+            [
+                new("ResearchY-D_012", "MINIMAL ANCHOR AUDIT",
+                    "Minimal anchor set = {v, m_e}; ONE anchor is not sufficient (REFUTED).",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.1-boundary-program/Docs/ResearchY/D_ResonanceStructure/ResearchY-D_012.md"),
+                new("ResearchY-D_013", "ANCHOR REDUCTION AUDIT",
+                    "v and m_e are INDEPENDENT, IRREDUCIBLE — no canonical factor links them (H1/H2/H3 REFUTED).",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.1-boundary-program/Docs/ResearchY/D_ResonanceStructure/ResearchY-D_013.md"),
+                new("ResearchY-D_014", "TWO-ANCHOR STRUCTURE AUDIT",
+                    "v = bosonic anchor (M_W/M_Z/M_H/M_Pl), m_e = fermionic anchor (quark/lepton masses); EMERGENT interpretation.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.1-boundary-program/Docs/ResearchY/D_ResonanceStructure/ResearchY-D_014.md"),
+                new("ResearchY-D_043", "DUAL-ANCHOR-NECESSITY AUDIT",
+                    "Dual-anchor necessity EMERGENT from sector splitting: each distinct sector needs its own absolute scale.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.1-boundary-program/Docs/ResearchY/D_ResonanceStructure/ResearchY-D_043.md"),
+            ]),
+        new(
             "researchy-d042-fundamental-ratio",
             "D96's π: The Span Is a Derived Structural Ratio, Not an Imported Constant",
             "ResearchY Milestone · D_042 (Wave Geometry Program)",
