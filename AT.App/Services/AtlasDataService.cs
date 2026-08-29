@@ -88,6 +88,27 @@ public static class AtlasDataService
     public static IReadOnlyList<ResearchNewsModel> ResearchNews { get; } =
     [
         new(
+            "researchy-d044-anchor-origin",
+            "The Weak Scale Is Partially Derived — the Electron Mass Is Pure Boundary",
+            "ResearchY Milestone · D_044 (Wave Geometry Program)",
+            "What is the physical origin of the two anchors {v, m_e}? The weak scale v = 137·ln(span) = 254.37 GeV has a DERIVED dimensionless structure (137 is the fine-structure denominator, ln(span) the spectral span) — only the GeV unit is boundary. But the electron mass m_e = 0.511 MeV has no construction at all. Neither defines the other.",
+            "D_044 asked whether the anchor values v and m_e can be derived. Verdict: they are OBSERVABLE-SECTOR BOUNDARY VALUES, not hidden outputs. v has a PARTIALLY-DERIVED structure: v = 137·ln(span) = 254.37 GeV (QG168) — 137 = Σm+#d is the fine-structure denominator (1/α_em ≈ 137.036) and ln(span) = ln 6.4025 is the derived spectral span (D_028). So v's dimensionless VALUE is D96-derived; only the GeV UNIT is the calibration anchor (BOUNDARY). m_e = 0.511 MeV has NO D96 construction (D_013/D_014) — a pure boundary value (the fermionic anchor). Neither anchor defines the other: v/m_e ≈ 4.98e5 and ln(v/m_e) ≈ 13.1 are NOT canonical spectral numbers (D_013 H1/H2/H3 all REFUTED). M_Pl/v = A³ = (Σm·#g·occ₂)³ = 4.8094e16 is DERIVED (D_007 — a pure D96 ratio); m_e/ω₁ ≈ 8.2e-4 and v/ω₁ ≈ 409 are anchor-over-reference ratios, not spectral invariants. Replacing an anchor re-scales its sector (v → bosonic, m_e → fermionic); the dimensionless structure (couplings, mixings, ratios) survives. So the anchors are sector-boundary values: NOT arbitrary calibrations (v's structure is derived), NOT hidden outputs (no deeper mechanism), but the boundary inputs of the observable sector. Classification: v dimensionless structure DERIVED (137·ln span, QG168); v GeV unit BOUNDARY; m_e value BOUNDARY (no construction); anchor independence BOUNDARY (D_013); M_Pl/v DERIVED (D_007); anchor roles EMERGENT (D_014); dimensionful physics EMERGENT.",
+            "For non-experts: physics needs two 'ruler numbers' imported from measurement — the weak-force scale (254 GeV) and the electron mass (0.511 MeV). We asked whether the theory can compute these numbers itself. The answer is a surprise: the theory CAN compute the weak scale's value — it is 137 times the natural logarithm of the spectral span 6.4025 (and 137 is the famous fine-structure number). What it cannot compute is the UNIT — the 'GeV' attached to it. The electron mass, however, is entirely imported: the theory has no formula for it. So one anchor is half-derived, the other is a pure boundary, and neither can be obtained from the other.",
+            "The weak scale is 137·ln(span) — derived in value, boundary in unit; the electron mass is pure boundary.",
+            "“One anchor is half-derived; the other is entirely a gift of measurement.”",
+            true,
+            [
+                new("ResearchY-D_013", "ANCHOR REDUCTION AUDIT",
+                    "v and m_e are INDEPENDENT, IRREDUCIBLE — no canonical factor links them (H1/H2/H3 REFUTED).",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.1-boundary-program/Docs/ResearchY/D_ResonanceStructure/ResearchY-D_013.md"),
+                new("ResearchY-D_043", "DUAL-ANCHOR-NECESSITY AUDIT",
+                    "Dual-anchor necessity EMERGENT from sector splitting: each distinct sector needs its own absolute scale.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.1-boundary-program/Docs/ResearchY/D_ResonanceStructure/ResearchY-D_043.md"),
+                new("ResearchY-D_044", "ANCHOR-ORIGIN AUDIT",
+                    "v = 137·ln(span) = 254.37 GeV (structure DERIVED, GeV unit BOUNDARY); m_e = 0.511 MeV (pure BOUNDARY, no construction).",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.1-boundary-program/Docs/ResearchY/D_ResonanceStructure/ResearchY-D_044.md"),
+            ]),
+        new(
             "researchy-d043-dual-anchor",
             "Why Two Anchors? Because the Theory Hosts Two Physically Distinct Sectors",
             "ResearchY Milestone · D_043 (Wave Geometry Program)",
