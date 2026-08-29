@@ -88,6 +88,27 @@ public static class AtlasDataService
     public static IReadOnlyList<ResearchNewsModel> ResearchNews { get; } =
     [
         new(
+            "researchy-d032-pairing-requirement",
+            "Complete Z2 Pairing Is the Observable-Sector Requirement, Not an Accident",
+            "ResearchY Milestone · D_032 (Wave Geometry Program)",
+            "Why must the observable sector have 0 unpaired modes? The mirror-pairing structure itself is derived from oscillation, but its COMPLETENESS (every frequency sitting in a doublet) is the observable-sector requirement — the boundary input. Everything downstream (p=3, N=96) follows from it.",
+            "D_032 analyzed the self-conjugate mode k=N/2: at this antipodal harmonic sin(πn) = 0, so only the cos quadrature survives. Complete pairing (0 unpaired) requires this mode to sit in a degenerate group — λ(N/2) = 12 is 5-fold at N=96/192 (k = 16, 32, 48, 64, 80 share it) but 1-fold at N=64/80/128, leaving the mode a lone singlet. An unpaired mode has no doublet partner: phase freedom (no sin quadrature), representation closure (no 2D rep), symmetry closure (reflection maps cos→cos), and the weak-isospin attachment (D_022) all fail. The test across N=64/80/96/128/192 shows complete pairing is NOT required by count conservation (the count is conserved regardless) or by closure (convergence is independent of pairing) — it is required by the doublet-structure observability, i.e. the observable-sector construction (D_020). The pairing STRUCTURE is DERIVED (oscillation quadrature, D_021); the COMPLETENESS is BOUNDARY.",
+            "For non-experts: the spectrum has frequencies that come in mirror-pairs, and one special frequency (the very top one) has only a cosine part — no sine part. We asked why the theory insists that even this one frequency sit inside a larger degenerate group instead of standing alone. The answer: it is a requirement of what the observable sector is — the weak-force doublet structure needs every frequency to be part of a pair. This requirement is not derivable from the deeper layers; it is the one genuine input, and the size 96 follows from it.",
+            "The mirror-pairing is derived; its completeness is the observable-sector input.",
+            "“Every frequency must belong to a pair — that is the requirement, not an accident.”",
+            true,
+            [
+                new("ResearchY-D_021", "OSCILLATION SYMMETRY",
+                    "The Z2 pairing structure is DERIVED (cos/sin quadrature pair of one oscillation).",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.1-boundary-program/Docs/ResearchY/D_ResonanceStructure/ResearchY-D_021.md"),
+                new("ResearchY-D_031", "SEED-ORIGIN AUDIT",
+                    "p=3 is derived from complete pairing + convergence — the completeness is the input this audit analyzes.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.1-boundary-program/Docs/ResearchY/D_ResonanceStructure/ResearchY-D_031.md"),
+                new("ResearchY-D_032", "PAIRING-REQUIREMENT AUDIT",
+                    "Pairing structure DERIVED (D_021); completeness (0 unpaired) BOUNDARY (observable sector, D_020); self-conjugate degeneracy DERIVED (6|N).",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.1-boundary-program/Docs/ResearchY/D_ResonanceStructure/ResearchY-D_032.md"),
+            ]),
+        new(
             "researchy-d031-seed-origin",
             "The Period-3 Seed Is Derived From Pairing Completeness",
             "ResearchY Milestone · D_031 (Wave Geometry Program)",
