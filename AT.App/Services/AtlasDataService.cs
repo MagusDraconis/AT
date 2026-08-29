@@ -88,6 +88,30 @@ public static class AtlasDataService
     public static IReadOnlyList<ResearchNewsModel> ResearchNews { get; } =
     [
         new(
+            "researchy-r001-v21-closure",
+            "V2.1 Boundary Program Complete: Five Irreducible Inputs, Everything Else Derived",
+            "ResearchY Milestone · R_001 (V2.1 Boundary Program)",
+            "The V2.1 origin program is COMPLETE. After 26 audits (D_020–D_045), the entire origin chain — from Difference to N=96 to Physics — reduces to exactly five irreducible boundary inputs: the primitives {Difference, η}, the paired complex sector, the three-family window, the SU(2) gauge, and the two mass anchors. Everything else is derived or emergent.",
+            "R_001 is the closure audit of the V2.1 boundary program. It enumerates all 13 original boundary items from D_020–D_045 and reclassifies each with the final results. THE VERDICT: COMPLETE. The final irreducible boundary set has exactly FIVE items. (1) {Difference, η} — the primitives (D_027/D_039): the minimal foundation; Difference IS distinguishability, so even state identity is derived. (2) {Z2-paired (complex) sector} — the observable-sector input (D_020/D_036): 'the observable sector is complex' reduces to it. (3) {3 octave families} — the span ∈ [4,8) window (D_020): the 3-generation choice. (4) {SU(2) gauge + j=1/2} — the weak-isospin input (D_022/D_024): an independent gauge structure. (5) {v, m_e} — the dimensionful anchors (D_012/D_044): v = 137·ln(span) = 254.37 GeV has a DERIVED structure (137 is the fine-structure denominator, ln(span) the spectral span) but the GeV unit is boundary; m_e = 0.511 MeV has no construction at all. RECLASSIFIED from BOUNDARY: complete pairing → DERIVED (D_035, every eigenvalue mult ≥ 2 from complex observability); singleton prohibition → DERIVED (D_035/D_037); p=3, 6|N, N=96 → DERIVED (D_031); su(2) compact-form → EMERGENT (D_026, selected by observability); state identity → DERIVED (D_039, Difference applied). CONFIRMED BOUNDARY: the five items above plus π's value. The chain is monotone and contradiction-free. DERIVED inventory: 20 objects (pairing, reciprocity, complex states, p=3, N=96, span, family count, octave, ΩΛ/Ωm, v structure, M_Pl/v, ratio family, selector criteria). EMERGENT inventory: 10 objects (weak-isospin reading, reciprocity, complex observability, observability, su(2) compact-form, zero-defect set, time parameter, span-as-ratio, anchor roles, dimensionful physics). OPEN questions: 0. The five boundaries are irreducible DOCUMENTED INPUTS — not gaps. No new primitive; canonical AT unchanged.",
+            "For non-experts: over the V2.1 program the theory kept asking 'where does the structure of the world come from?' — why 96 modes, why 3 families, why the weak scale. The program is now complete: every one of those questions has been answered, either by deriving the answer from deeper structure or by identifying it as one of exactly five genuine starting points. Those five are: the founding idea that things can differ (plus one more primitive), the fact that the observable world is built from paired complex waves, the three-family structure, the weak-force gauge, and the two calibration constants (the weak scale and the electron mass). Everything else — including the famous size 96 — is a consequence.",
+            "Twenty-six audits collapse to five irreducible inputs — the V2.1 origin program is complete.",
+            "“Every 'why' answered: derived, or one of five starting points.”",
+            true,
+            [
+                new("ResearchY-D_040", "BOUNDARY RECLASSIFICATION AUDIT",
+                    "B_final for the D-chain: {Difference, η} ∪ {Z2-paired sector} ∪ {3 families} ∪ {SU(2) gauge + j=1/2}.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.1-boundary-program/Docs/ResearchY/D_ResonanceStructure/ResearchY-D_040.md"),
+                new("ResearchY-D_044", "ANCHOR-ORIGIN AUDIT",
+                    "v = 137·ln(span) = 254.37 GeV (structure DERIVED, GeV unit BOUNDARY); m_e = 0.511 MeV (pure BOUNDARY).",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.1-boundary-program/Docs/ResearchY/D_ResonanceStructure/ResearchY-D_044.md"),
+                new("ResearchY-D_045", "COSMOLOGICAL-ANCHOR AUDIT",
+                    "The density ρ produces only dimensionless fractions (ΩΛ = 0.6839, Ωm = 0.3161); the anchors are independent of cosmology.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.1-boundary-program/Docs/ResearchY/D_ResonanceStructure/ResearchY-D_045.md"),
+                new("ResearchY-R_001", "V2.1 BOUNDARY PROGRAM CLOSURE AUDIT",
+                    "COMPLETE: 5 irreducible boundary inputs; 20 derived + 10 emergent; 0 open; no new primitive.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.1-boundary-program/Docs/ResearchY/R_BoundaryProgram/ResearchY-R_001.md"),
+            ]),
+        new(
             "researchy-d045-cosmological-anchor",
             "The Universe's Density Does Not Set the Mass Scales — the Anchors Stay Boundary",
             "ResearchY Milestone · D_045 (Wave Geometry Program)",
