@@ -836,6 +836,24 @@ DERIVED; complexification EMERGENT; compact-form choice BOUNDARY; SU(2) three ge
 BOUNDARY. The upgrade needs complexification (EMERGENT) + compact-form choice (BOUNDARY).
 No canonical value changed.
 
+ResearchY-D_026 (Compact-Form Audit, COMPLETE, tests 6/6 PASSED): why is the compact form
+su(2) selected? Is it physically necessary or an independent gauge input? Verdict: su(2)
+is selected by the physical requirement of finite-dimensional UNITARY
+(probability-preserving) representations. Among the three real forms of sl(2,C), su(2)
+is the UNIQUE compact one: bounded generators (exp(5·iσy) norm 19.6 vs exp(5·H) norm
+148.4 for sl(2,R)), finite-dimensional unitary irreps (the 2j+1 multiplets), and
+elements preserving the Born-rule norm. sl(2,R) and su(1,1) are non-compact: their
+unitary irreps are infinite-dimensional and their exponentials grow without bound
+(boost-like), so there is no finite unitary doublet. The spectral observables (doublets,
+families, masses, mixings) survive ANY real-form choice — they are spectrum-derived, not
+group-derived; only the WEAK sector (W/Z, isospin doublets) requires finite-dim unitary
+reps, which su(2) uniquely provides. Physical selection: positivity, normalization, and
+stability all select su(2); closure consistency alone does not exclude sl(2,R)/su(1,1).
+Verdict: the compact-form choice is EMERGENT from observability (not derived from the
+D96 spectrum, not a free gauge input). Classification: spectral observables DERIVED,
+su(2) compactness/unitarity EMERGENT, weak sector requires su(2) EMERGENT. No canonical
+value changed.
+
 ### PRED001: Prediction Registry (standalone Zenodo publication)
 
 Summary:
