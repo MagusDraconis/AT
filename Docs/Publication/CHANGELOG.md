@@ -3,6 +3,45 @@
 All notable changes to THE Q-MODEL (AT) are documented here. Versions follow the
 repository's release cadence; this file covers the publication-relevant milestones.
 
+## [2.1.0] — 2026-08-30
+
+**Release status: READY FOR TAGGING — ResearchY V2.1 Boundary Program (origin chain complete).**
+
+### Added
+- ResearchY V2.1 Boundary Program — 26 origin audits (D_020–D_045) + closure audit
+  (R_001): the complete origin chain **Difference → Actualization → Spectrum → N=96 →
+  Physics** traced and every origin question classified.
+- **V2.1 Boundary Program Closure Audit (R_001)** — the program is **COMPLETE**: the
+  final irreducible boundary set has exactly **five items** —
+  {Difference, η}, {Z2-paired (complex) sector}, {3 octave families},
+  {SU(2) gauge + j=1/2}, {v, m_e} — with 20 objects DERIVED, 10 EMERGENT, 0 OPEN.
+- **Boundary reductions** — 13 original boundary items reclassified: complete pairing,
+  singleton prohibition, p=3, 6|N, N=96, state identity → **DERIVED**; su(2) compact-form
+  → **EMERGENT**; Z2-paired sector, 3-family window, SU(2) gauge, {Difference, η},
+  {v, m_e}, π → **BOUNDARY** (confirmed).
+- **Derived chain** — tick/count/magnitude/phase → complex state → identity →
+  reciprocity → pairing → p=3 → N=96 → Closure → Spectrum → span/ΩΛ/Ωm/v structure.
+- Release artifact: `Docs/Publication/RELEASE_NOTES_V2_1.md`, `ResearchY-R_002`.
+- AT.App Research News (D_021–D_045, R_001) + Theory Book results (Resonances,
+  Cosmology).
+
+### Changed
+- Research/audit only — **no canonical AT V2.0 values, equations, predictions, or claim
+  statuses altered**.
+
+### Fixed
+- Classification drift between D_028 and D_040 (3-family window / N=96) reconciled via
+  the two-level rule (value DERIVED, window/requirement BOUNDARY) + a
+  `ClassificationRegistry` guard test.
+
+### Verification
+- 372 xUnit tests passing; AT.App builds with 0 errors; canonical D96 values
+  independently re-verified (span = 6.4025, λ(48) = 12, min mult 2, v = 254.37 GeV,
+  ΩΛ = 0.6839).
+
+### Migration
+- None required — V2.1 is additive research; canonical consumers unaffected.
+
 ## [2.0.0] — 2026-08-27
 
 **Release status: READY FOR RELEASE — Monograph V2.0 (registry-consistent publication build).**

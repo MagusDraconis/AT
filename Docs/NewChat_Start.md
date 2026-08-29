@@ -1199,6 +1199,17 @@ unchanged. Chain: Difference → Actualization → tick → count → magnitude 
 complex state → identity → reciprocity → pairing → p=3 → 6|N → N=96 → Closure →
 Spectrum → {v, m_e} → Dimensionful Physics.
 
+ResearchY-R_002 (V2.1 Release Preparation, COMPLETE): prepare the branch for tagging.
+Deliverables: milestone summary, release notes
+(Docs/Publication/RELEASE_NOTES_V2_1.md), boundary reductions (13 items reclassified:
+7→DERIVED, 1→EMERGENT, 6 confirmed BOUNDARY), the derived chain (Difference → …
+→ {v, m_e} → Physics), and the remaining boundaries (the five-item irreducible set from
+R_001). Recommendations: TAG `v2.1-boundary-program`; changelog section
+`## [2.1.0] — 2026-08-30` (added to Docs/Publication/CHANGELOG.md); migration notes
+NONE (V2.1 is research/audit only, canonical AT V2.0 unchanged). Verification: 372
+xUnit tests passing, AT.App 0 errors, canonical D96 values re-verified. Status: READY
+FOR TAGGING.
+
 ### PRED001: Prediction Registry (standalone Zenodo publication)
 
 Summary:
