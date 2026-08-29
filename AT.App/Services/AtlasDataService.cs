@@ -88,6 +88,30 @@ public static class AtlasDataService
     public static IReadOnlyList<ResearchNewsModel> ResearchNews { get; } =
     [
         new(
+            "researchy-d040-boundary-reclassification",
+            "The D-Chain Reduces to Four Irreducible Boundary Inputs",
+            "ResearchY Milestone · D_040 (Wave Geometry Program)",
+            "After twenty audits, the D96 origin chain has been reduced to exactly four genuine inputs: the two primitives {Difference, η}, the Z2-paired (complex) observable sector, the three-octave-family window, and the SU(2) weak-isospin gauge structure. Everything else — pairing, reciprocity, complex states, p=3, N=96 — is derived or emergent.",
+            "D_040 is the synthesis audit: it re-evaluates every object tagged BOUNDARY, EMERGENT, or DERIVED across D_020–D_039 and produces the final irreducible boundary set. The verdict: exactly FOUR irreducible boundary inputs remain. (1) The primitives {Difference, η} (D_027/D_039) — the minimal foundation. (2) The Z2-paired (complex) sector requirement (D_020) — 'the observable sector is complex' (D_035) reduces to it (D_036), so no new boundary was introduced. (3) Exactly 3 octave families, the span ∈ [4,8) window (D_020). (4) The weak-isospin SU(2) gauge structure with j=1/2 fundamental (D_022/D_024) — an independent gauge input. RECLASSIFIED from BOUNDARY: complete pairing (0 unpaired) is DERIVED from complex observability (D_035, every eigenvalue mult ≥ 2); the singleton prohibition is DERIVED (D_035/D_037); p=3 is DERIVED (D_031, the unique complete-pairing period); N=96 is DERIVED (D_031/D_020); the su(2) compact-form is EMERGENT (D_026, selected by observability — finite-dim unitary — not a free gauge input); state identity moved from EMERGENT to DERIVED (D_039, Difference applied). CONFIRMED BOUNDARY: the Z2-paired sector, the 3-family window, the SU(2) gauge structure, and the primitives. CONFIRMED EMERGENT: the weak-isospin doublet reading, reciprocity, complex observability, and observability. All six historical contradictions (complete pairing, p=3, N=96, singlet, su(2) compact-form, state identity) are resolved by superseding audits; the chain is monotone — boundaries only moved downward, never upward. Final irreducible boundary set B_final = {Difference, η} ∪ {Z2-paired sector} ∪ {3 families} ∪ {SU(2) gauge + j=1/2}.",
+            "For non-experts: over twenty audits the theory kept pushing 'where does the size 96 come from?' deeper and deeper. This audit asks: what is left that we simply assume? The answer is four things: (1) the founding idea that things can be different (Difference), plus one more primitive; (2) that the observable world is built from paired complex waves; (3) that there are three families (generations); (4) the weak-force gauge structure. Everything else — the pairing, the complex numbers, the period-3 seed, the size 96 — follows from these four. That is the smallest set the theory needs.",
+            "Twenty audits collapse to four irreducible inputs — everything else is derived or emergent.",
+            "“The chain is monotone: boundaries only ever moved downward, and they stopped at four.”",
+            true,
+            [
+                new("ResearchY-D_020", "SELECTION PRECONDITION AUDIT",
+                    "The observable-sector construction (Z2-paired sector + 3 families) — the boundary input.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.1-boundary-program/Docs/ResearchY/D_ResonanceStructure/ResearchY-D_020.md"),
+                new("ResearchY-D_035", "MULTIPLET-REQUIREMENT AUDIT",
+                    "Complete pairing DERIVED from complex observability (every eigenvalue mult ≥ 2).",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.1-boundary-program/Docs/ResearchY/D_ResonanceStructure/ResearchY-D_035.md"),
+                new("ResearchY-D_039", "STATE-IDENTITY-ORIGIN AUDIT",
+                    "State identity DERIVED — Difference IS distinguishability; the primitives {Difference, η} remain boundary.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.1-boundary-program/Docs/ResearchY/D_ResonanceStructure/ResearchY-D_039.md"),
+                new("ResearchY-D_040", "BOUNDARY RECLASSIFICATION AUDIT",
+                    "B_final = {Difference, η} ∪ {Z2-paired sector} ∪ {3 families} ∪ {SU(2) gauge + j=1/2}.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.1-boundary-program/Docs/ResearchY/D_ResonanceStructure/ResearchY-D_040.md"),
+            ]),
+        new(
             "researchy-d039-state-identity-origin",
             "Difference IS Distinguishability — State Identity Is the Primitive Applied, Not a New Rule",
             "ResearchY Milestone · D_039 (Wave Geometry Program)",
