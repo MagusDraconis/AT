@@ -500,6 +500,7 @@ public static class TheoryBookDataService
                     new("su(2) selector derived", "Positivity (share ≥ 0), normalization (Born rule = count conservation), and stability (closure fixed point) are DERIVED from the primitives; they select the compact form su(2) for the weak sector.", TheoryBadge.Derived, ["ResearchY-D_026", "ResearchY-D_027"]),
                     new("SU(2) gauge input boundary", "The SU(2) gauge algebra itself is an independent input (sector S); the doublet is the EMERGENT attachment surface, the compact-form choice EMERGENT from observability.", TheoryBadge.Partial, ["ResearchY-D_023", "ResearchY-D_026"]),
                     new("Span derived", "span = ω_max/ω_min ~ 0.0578·N (DERIVED): ω_max→√12 (antipodal), ω_min~(2π√91)/N. span(96)=6.4025 is the N=96 point; 3 families = floor(log₂ span)+1 is the consequence.", TheoryBadge.Derived, ["ResearchY-D_028"]),
+                    new("Octave rung derived", "n = p·2^k is DERIVED: floor(log₂ span)+1 is an octave partition, and ω(k)~c·k makes k→2k a frequency octave (ω(2)/ω(1)=1.97). Only the seed period p=3 is boundary.", TheoryBadge.Derived, ["ResearchY-D_030"]),
                     new("Mapping speculative", "No native operator identified whose spectrum equals the SM parameters.", TheoryBadge.Partial, ["ATQG942", "ATQG952"]),
                 ]),
             new("global-solution-space", "Global Solution Space",

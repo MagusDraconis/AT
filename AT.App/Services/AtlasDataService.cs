@@ -88,6 +88,27 @@ public static class AtlasDataService
     public static IReadOnlyList<ResearchNewsModel> ResearchNews { get; } =
     [
         new(
+            "researchy-d030-octave-rung",
+            "The Octave-Rung Structure Is Derived, Not a Boundary Assumption",
+            "ResearchY Milestone · D_030 (Wave Geometry Program)",
+            "The chain N = p·2^k (octave rungs) that discriminates N=96 is not a remaining boundary assumption — it is derived. The family count floor(log₂ span)+1 is itself an octave (factor-2) partition, and the long-wavelength dispersion of the ring makes mode doubling a frequency octave. Only the seed period p=3 is boundary.",
+            "D_030 tested why the scale step is q=2. Two derived sources: (1) the family count floor(log₂ span)+1 is an octave (factor-2) partition of the spectrum (D_016) — the octave IS the family band; (2) the long-wavelength dispersion ω(k) ~ (2π·k·√91)/N is LINEAR in k, so mode doubling k→2k is a frequency octave (verified: ω(2)/ω(1) = 1.97 at N=96). Hence the doubling chain n = p·2^k is the discrete octave ladder. Comparing bases: q=2 is the UNIQUE pure scale-step base whose rung chain hits a zero-defect ring (only 96); q=6 hits 108 but mixes the seed (3·6^k = 3^(k+1)·2^k); q=3/4/5 have no zero-defect rung. Removing the octave rung leaves 11 zero-defect rings (60…120) — N=96 is not unique without it. Minimal principle: p (seed period) × q^k (scale step) with q=2.",
+            "For non-experts: to pick the size 96, the theory needs a ladder of candidate sizes. We asked why the ladder doubles each step (96, then 192, then 384…). The answer: the spectrum's families are measured in octaves (frequency doubling), and at long wavelengths the ring's frequencies grow linearly with the mode number — so doubling the mode is exactly doubling the frequency. The doubling ladder is therefore not an extra assumption; it is what the spectrum itself does. The one genuine input is the size of the seed pattern (period 3).",
+            "The octave ladder is the spectrum's own structure; only the seed period is input.",
+            "“The ladder is not imposed. The spectrum builds it.”",
+            true,
+            [
+                new("ResearchY-D_020", "SELECTION PRECONDITION",
+                    "N=96 selected by the observable-sector construction; seed period p=3 derived from Z2 completeness.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.1-boundary-program/Docs/ResearchY/D_ResonanceStructure/ResearchY-D_020.md"),
+                new("ResearchY-D_029", "CLOSURE-DEFECT AUDIT",
+                    "Closure removes structural defects (zero-defect set {60..120}); the octave rung discriminates 96.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.1-boundary-program/Docs/ResearchY/D_ResonanceStructure/ResearchY-D_029.md"),
+                new("ResearchY-D_030", "OCTAVE-RUNG AUDIT",
+                    "Octave structure DERIVED (dispersion ω~c·k + octave partition); q=2 EMERGENT; seed period p=3 BOUNDARY.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.1-boundary-program/Docs/ResearchY/D_ResonanceStructure/ResearchY-D_030.md"),
+            ]),
+        new(
             "researchy-d028-span-origin",
             "The Spectral Span Is a Derived Function of N, Not a Selector",
             "ResearchY Milestone · D_028 (Wave Geometry Program)",
