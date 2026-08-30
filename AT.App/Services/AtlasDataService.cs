@@ -94,6 +94,30 @@ public static class AtlasDataService
     public static IReadOnlyList<ResearchNewsModel> ResearchNews { get; } =
     [
         new(
+            "researchy-m006-observer-role",
+            "The Observer Changes Access, Never the State — the Measurement Program Is Complete",
+            "ResearchY Milestone · M_006 (V2.2 New Physics — Measurement)",
+            "What is the observer's role? It is the recipient of the information redistribution — it changes only epistemic access, never the ontic state. The state, its observability, and the reconstruction map all exist without any observer. Removing the observer leaves everything physical intact.",
+            "M_006 completes the measurement program with the observer's exact role. Verdict: the observer is the RECIPIENT of the information redistribution (M_005) — it changes only EPISTEMIC ACCESS, not the ONTIC state. THREE DISTINCT OBJECTS: (1) STATE = the complex amplitude (both DOFs, all interference) — it exists independently of any observer (D_039: the 95 distinct states pre-exist); (2) OBSERVABLE state = the two-quadrature reconstruction structure (D_037: z = a + ib is a well-defined structural map); (3) MEASURED state = the pinned outcome (M_002, requires the actualization read). OBSERVER REQUIRED FOR: existence — NO; observability — NO; reconstruction — NO. REMOVE THE OBSERVER: the state, observability, reconstruction, the 95 distinct states, and the total information (log₂ 95) all REMAIN; what becomes inaccessible is the redistribution's RECIPIENT — no one gains knowledge (M_005). RECIPROCITY: the observer is ITSELF a distinguishable subsystem (D_039) that reads another — the read is symmetric (the observer's own state is also an observable complex amplitude). COMPARE: the ontic state (the invariant complex amplitude), the epistemic access (the two-quadrature read — what an observer can know), and the reconstruction map (z = a + ib — the structure linking access to state). The observer changes ONLY the epistemic layer. INVARIANT FORMULATION: the ontic state (the complex amplitude / 95-state distinguishability), the reconstruction map, and the total information log₂ 95 are invariant under any observer transformation — including removing the observer. Classification: ontic state DERIVED (D_039, invariant); observability DERIVED (D_037); reconstruction map DERIVED (D_037); observer role EMERGENT (the redistribution's recipient); epistemic access EMERGENT (the observer's relation). THIS COMPLETES the measurement program: M_001 event → M_002 disturbance → M_003 feedback → M_004 information → M_005 conservation → M_006 observer. No new primitive; canonical AT unchanged.",
+            "For non-experts: after building up the measurement story — what the event is, what it disturbs, how it feeds forward, how much information it carries, and that information is conserved — this audit answers the final question: what does the OBSERVER actually do? The answer: the observer is the one who comes to know. The wave, its possibilities, its probabilities, and its information all exist whether anyone is looking or not. The observer is simply the recipient — the one whose uncertainty is resolved when the measurement picks out which state is real. And the observer is not special: it is itself just another wave in the theory, able to be measured in turn. Remove the observer and nothing physical is lost — only no one knows the answer.",
+            "The observer is the epistemic recipient — the ontic state, observability, and reconstruction never need it.",
+            "“The observer does not create reality; it comes to know it.”",
+            true,
+            [
+                new("ResearchY-D_039", "STATE-IDENTITY-ORIGIN AUDIT",
+                    "Difference IS distinguishability — the 95-state space pre-exists any observer.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/D_ResonanceStructure/ResearchY-D_039.md"),
+                new("ResearchY-D_037", "RECIPROCITY-OBSERVABILITY AUDIT",
+                    "The {cos, sin} two-quadrature reconstruction map z = a + ib — a structural property.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/D_ResonanceStructure/ResearchY-D_037.md"),
+                new("ResearchY-M_005", "INFORMATION CONSERVATION AUDIT",
+                    "The observer is the redistribution's recipient — removing it leaves the information intact.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/M_Measurement/ResearchY-M_005.md"),
+                new("ResearchY-M_006", "OBSERVER ROLE AUDIT",
+                    "The observer changes epistemic access, not the ontic state; the measurement program is complete (M_001–M_006).",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/M_Measurement/ResearchY-M_006.md"),
+            ]),
+        new(
             "researchy-m005-information-conservation",
             "Measurement Does Not Create Information — It Reveals and Redistributes It",
             "ResearchY Milestone · M_005 (V2.2 New Physics — Measurement)",
