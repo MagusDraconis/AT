@@ -80,6 +80,7 @@
 | ResearchY-NP_002 | Highest-Value V2.2 Program | `NP_NewPhysics/ResearchY-NP_002.md` | — (ranking) | COMPLETE |
 | ResearchY-NP_003 | Manipulation Lever Audit | `NP_NewPhysics/ResearchY-NP_003.md` | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_003_Tests.cs` (6/6 ✅) | COMPLETE |
 | ResearchY-NP_004 | Phase Coupling Audit | `NP_NewPhysics/ResearchY-NP_004.md` | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_004_Tests.cs` (6/6 ✅) | COMPLETE |
+| ResearchY-NP_005 | Missing Synchronization Mechanism Audit | `NP_NewPhysics/ResearchY-NP_005.md` | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_005_Tests.cs` (7/7 ✅) | COMPLETE |
 | ResearchY-M_001 | Measurement Origin Audit | `M_Measurement/ResearchY-M_001.md` | `AT.Tests/ResearchY/M_Measurement/Y_M_001_Tests.cs` (7/7 ✅) | COMPLETE |
 | ResearchY-M_002 | Measurement Disturbance Audit | `M_Measurement/ResearchY-M_002.md` | `AT.Tests/ResearchY/M_Measurement/Y_M_002_Tests.cs` (7/7 ✅) | COMPLETE |
 | ResearchY-M_003 | Measurement Feedback Audit | `M_Measurement/ResearchY-M_003.md` | `AT.Tests/ResearchY/M_Measurement/Y_M_003_Tests.cs` (5/5 ✅) | COMPLETE |

@@ -1311,6 +1311,31 @@ correlation DERIVED (joint preparation); phase transfer via shared event EMERGEN
 (joint readout); synchronization EMERGENT (setup condition, no mechanism). No new
 primitive; canonical AT unchanged.
 
+ResearchY-NP_005 (Missing Synchronization Mechanism Audit, COMPLETE, tests 7/7
+PASSED): what is missing for spontaneous phase locking? Verdict: UNEQUAL-MODE
+synchronization requires a cross-phase feedback term (a Kuramoto-type coupling) that
+the canonical derived chain does not contain. The canonical update θ(t+1) = θ(t) + Δθ
+(D_041) has only the self-rate, so for k_A ≠ k_B the relative phase drifts linearly —
+no fixed point exists. Adding κ·sin(θ_B−θ_A) to A's update (and the symmetric term to
+B's) gives dψ/dt = Δθ_A − Δθ_B − 2κ·sin(ψ), with a stable fixed point ψ* =
+arcsin((Δθ_A−Δθ_B)/(2κ)) exactly when κ ≥ |Δθ_A−Δθ_B|/2 (= 0.5236 for k_A=16, k_B=32);
+below threshold no locking occurs; at κ = 0 the relative phase drifts forever. EQUAL
+modes (k_A = k_B) synchronize TRIVIALLY — the drift term vanishes. Determination: A)
+synchronization impossible — YES for unequal modes in canonical AT (no locking force);
+B) synchronization requires interaction — YES (the minimal addition is ONE cross-phase
+feedback term, an energy-exchange mechanism); C) synchronization emergent from
+existing actualization — PARTIAL (equal modes only). What prevents synchronization:
+fixed Δθ (D_041), and the MISSING feedback/interaction/energy-exchange term (none
+exists). Synchronization hierarchy: independent drift DERIVED → coupling DERIVED/
+EMERGENT → equal-mode sync EMERGENT (trivial) → unequal-mode sync BOUNDARY (the locking
+force is not in the chain). Observable consequences if it existed: coherence,
+resonance amplification (locked phase → 2√(ρ_Aρ_B) maximal), collective modes
+(in-phase/anti-phase), information transfer. Falsification: equal modes showing a
+time-varying relative phase; or unequal modes synchronizing without added coupling.
+Classification: canonical coupling DERIVED (interference); equal-mode sync EMERGENT
+(trivial); the locking force BOUNDARY (a new input, no mechanism derives it). No new
+primitive; canonical AT unchanged.
+
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-

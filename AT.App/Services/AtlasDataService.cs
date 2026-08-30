@@ -94,6 +94,30 @@ public static class AtlasDataService
     public static IReadOnlyList<ResearchNewsModel> ResearchNews { get; } =
     [
         new(
+            "researchy-np005-missing-sync-mechanism",
+            "What's Missing for Phase Locking: One Cross-Phase Feedback Term",
+            "ResearchY Milestone · NP_005 (V2.2 New Physics — Roadmap)",
+            "Phases couple but unequal modes never lock — what is missing? One cross-phase feedback term: a coupling that reads the partner's phase. The canonical update has only the self-rate, so unequal modes drift forever. The minimal added structure would be a term κ·sin(θ_B−θ_A), which locks phases above a threshold.",
+            "NP_005 identifies the minimal structure required to transform phase coupling into phase synchronization. Verdict: UNEQUAL-MODE synchronization requires a cross-phase feedback term (a Kuramoto-type coupling) that the canonical derived chain does not contain. The canonical update θ(t+1) = θ(t) + Δθ (D_041) has ONLY the self-rate — it never reads the partner's phase — so for k_A ≠ k_B the relative phase drifts linearly and no fixed point exists. The MINIMAL added structure is one interaction term: θ_A(t+1) = θ_A(t) + Δθ_A + κ·sin(θ_B(t) − θ_A(t)) (and symmetric for B). The relative phase ψ = θ_A−θ_B then obeys dψ/dt = Δθ_A − Δθ_B − 2κ·sin(ψ), which has a stable fixed point ψ* = arcsin((Δθ_A−Δθ_B)/(2κ)) exactly when κ ≥ |Δθ_A−Δθ_B|/2 (= 0.5236 for k_A=16, k_B=32); below threshold no locking, at κ=0 drift forever. EQUAL modes (k_A = k_B) synchronize TRIVIALLY — the drift term vanishes (Δθ_A = Δθ_B). DETERMINATION: A) synchronization impossible — YES for unequal modes in canonical AT (no locking force); B) synchronization requires interaction — YES (minimal: ONE cross-phase feedback term, an energy-exchange mechanism between systems); C) synchronization emergent — PARTIAL (equal modes only). WHAT PREVENTS SYNCHRONIZATION: the fixed Δθ (D_041) and the MISSING feedback/interaction/energy-exchange term. SYNCHRONIZATION HIERARCHY: independent drift DERIVED → coupling DERIVED/EMERGENT → equal-mode sync EMERGENT (trivial) → unequal-mode sync BOUNDARY (the locking force is not in the chain). OBSERVABLE CONSEQUENCES (if it existed): coherence (sustained fringes), resonance amplification (locked phase → 2√(ρ_Aρ_B) maximal), collective modes (in-phase/anti-phase stable), information transfer (phase-coded coupling). FALSIFICATION: equal modes showing a time-varying relative phase; or unequal modes synchronizing without any added coupling. Classification: canonical coupling DERIVED (interference, complex state D_036 + Born QG216); equal-mode sync EMERGENT (trivial); the locking force BOUNDARY (a new input — no mechanism in the chain derives it). No new primitive; canonical AT unchanged.",
+            "For non-experts: two systems can feel each other's phase (that is interference), yet unlike systems never fall into step. Why? Because the rule that advances each phase every tick only looks at that system's own fixed rate — it never looks at the other system. The one missing ingredient would be a term that lets each system's advance depend on the other's phase — like two pendulums connected by a spring. With such a term, above a certain strength the two systems lock into a fixed relative angle; below it, they keep drifting. This audit shows exactly what that missing term is and at what strength it would work. The theory, as it stands, does not contain it — it is the precise thing needed to turn coupling into synchronization.",
+            "The missing ingredient for phase locking is one cross-phase feedback term — absent from the canonical chain.",
+            "“To lock two phases, one term must read the other's phase.”",
+            true,
+            [
+                new("ResearchY-NP_003", "MANIPULATION LEVER AUDIT",
+                    "The phase θ₀ is the theory's only local lever — the object that would couple and synchronize.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_003.md"),
+                new("ResearchY-NP_004", "PHASE COUPLING AUDIT",
+                    "Phases couple (interference + shared event) but never spontaneously synchronize unequal modes.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_004.md"),
+                new("ResearchY-D_041", "TIME-ORIGIN AUDIT",
+                    "The fixed per-mode rate Δθ = 2πk/N — the self-rate that prevents locking.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/D_ResonanceStructure/ResearchY-D_041.md"),
+                new("ResearchY-NP_005", "MISSING SYNCHRONIZATION MECHANISM AUDIT",
+                    "The missing structure: κ·sin(θ_B−θ_A), locking iff κ ≥ |Δθ_A−Δθ_B|/2.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_005.md"),
+            ]),
+        new(
             "researchy-np004-phase-coupling",
             "The Phase Is a True Lever: Coupling Yes, Synchronization Only for Identical Modes",
             "ResearchY Milestone · NP_004 (V2.2 New Physics — Roadmap)",
