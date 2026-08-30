@@ -94,6 +94,30 @@ public static class AtlasDataService
     public static IReadOnlyList<ResearchNewsModel> ResearchNews { get; } =
     [
         new(
+            "researchy-m008-measurement-predictions",
+            "Two Falsifiable Signatures: the Discrete Tick and the 95-State Information Bound",
+            "ResearchY Milestone · M_008 (V2.2 New Physics — Measurement)",
+            "Does the measurement theory predict anything beyond standard QM? Mostly no — it is an equivalent interpretation (idempotence, basis invariance, complementarity, Born rule all match). But two signatures are AT-specific and falsifiable: the phase advances in discrete actualization ticks, and one event reveals at most 6.57 bits.",
+            "M_008 extracts the falsifiable predictions of the measurement chain and compares them against standard QM, Copenhagen, and decoherence. Verdict: MOSTLY equivalent to standard QM (option B), with TWO AT-specific falsifiable signatures (option C). EQUIVALENT TO QM (CORRESPONDENCE): repeated measurements are idempotent (QM projective P²=P); basis rotation leaves the complex state invariant (QM unitary change); interference suppression via which-path knowledge (QM complementarity); outcome statistics equal the Born shares (QM Born rule). AT-SPECIFIC (PREDICTION): (1) the DISCRETE TIME-PARAMETER — after a measurement the phase advances per actualization TICK, Δθ = 2πk/N (the spectral rate, D_041/M_003), whereas standard QM has continuous time; (2) the INFORMATION BOUND — the maximum information one event can reveal is log₂(95) ≈ 6.57 bits, conserved (M_004/M_005), and standard QM has no 95-state bound. PREDICTION TABLE: repeated/basis/interference/Born = CORRESPONDENCE (no distinguishing signature vs QM); feedback time-parameter + information bound = PREDICTION (the AT-specific outputs). REGISTRY ENTRIES: AT-P042 (post-measurement phase advances per tick, Δθ = 2πk/N) and AT-P043 (one event reveals at most log₂(95) bits). FALSIFICATION: a continuous (non-tick-quantized) phase advance after a measurement would falsify AT-P042; a single event revealing more than log₂(95) bits would falsify AT-P043. Classification: repeated/basis/interference/Born CORRESPONDENCE; feedback + information bound PREDICTION. The chain Difference → Actualization → Measurement → Prediction is now closed with two falsifiable, AT-specific outputs. No new primitive; canonical AT unchanged.",
+            "For non-experts: after building the full measurement theory, this audit asks the sharpest question: does it predict anything NEW that standard quantum mechanics does not? The honest answer: for most behaviors it is a rephrasing — measuring twice gives the same answer, changing your measurement frame just looks at the same wave from another angle, and knowing which path a particle took kills the interference — all exactly as quantum mechanics already says. But two things ARE new and could, in principle, be tested: first, time in this theory advances in discrete ticks, so the phase after a measurement should advance in fixed steps rather than smoothly; second, a single measurement can reveal at most about 6.57 bits, because that is how many distinct states the theory has. If experiments ever saw a smooth continuous phase advance, or a single event delivering more than 6.57 bits, the theory would be wrong.",
+            "Mostly an equivalent interpretation — but the discrete tick and the 6.57-bit bound are falsifiable and new.",
+            "“Quantum mechanics is reproduced; two signatures are the theory's own.”",
+            true,
+            [
+                new("ResearchY-D_041", "TIME-ORIGIN AUDIT",
+                    "The phase advances per tick (Δθ = 2πk/N) — the discrete time-parameter behind AT-P042.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/D_ResonanceStructure/ResearchY-D_041.md"),
+                new("ResearchY-M_003", "MEASUREMENT FEEDBACK AUDIT",
+                    "The pinned phase becomes the future's initial condition — the feedback prediction.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/M_Measurement/ResearchY-M_003.md"),
+                new("ResearchY-M_004", "MEASUREMENT INFORMATION AUDIT",
+                    "The log₂ 95 information bound — the AT-specific per-event limit (AT-P043).",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/M_Measurement/ResearchY-M_004.md"),
+                new("ResearchY-M_008", "MEASUREMENT PREDICTION AUDIT",
+                    "Mostly QM-equivalent; two falsifiable signatures (AT-P042 discrete tick, AT-P043 95-state bound).",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/M_Measurement/ResearchY-M_008.md"),
+            ]),
+        new(
             "researchy-m007-measurement-synthesis",
             "The Measurement Chain Is Complete: From D96 to the Observer, Fully Classified",
             "ResearchY Milestone · M_007 (V2.2 New Physics — Measurement)",
