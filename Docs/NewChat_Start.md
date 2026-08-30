@@ -1404,6 +1404,25 @@ coupling, the D_046 measurement predictions (disturbance relations, no-cloning b
 information uncertainty) as the program's testable output. No new primitive; canonical
 AT unchanged.
 
+ResearchY-M_008 (Measurement Prediction Audit, COMPLETE, tests 6/6 PASSED): does the
+derived measurement chain predict anything beyond standard QM? Verdict: MOSTLY
+equivalent to standard QM (option B), with TWO AT-SPECIFIC falsifiable signatures
+(option C). Equivalent to QM (CORRESPONDENCE): repeated measurements idempotent (QM
+P²=P), basis rotation (QM unitary), interference suppression via which-path (QM
+complementarity), outcome statistics = Born shares (QM Born rule). AT-SPECIFIC
+(PREDICTION): (1) DISCRETE TIME-PARAMETER — after a measurement the phase advances per
+actualization TICK, Δθ = 2πk/N (the spectral rate, D_041/M_003), vs continuous time in
+QM; (2) INFORMATION BOUND — max log₂(95) = 6.57 bits per event, conserved
+(M_004/M_005), no 95-state bound in QM. PREDICTION TABLE: repeated/basis/interference/
+Born = CORRESPONDENCE (no distinguishing signature); feedback time-parameter +
+information bound = PREDICTION. REGISTRY ENTRIES: AT-P042 (post-measurement phase
+advance per tick, Δθ = 2πk/N), AT-P043 (one event reveals at most log₂(95) bits).
+FALSIFICATION: a continuous (non-tick-quantized) phase advance after measurement
+(AT-P042); an event revealing more than log₂(95) bits (AT-P043). Classification:
+repeated/basis/interference/Born CORRESPONDENCE; feedback + information bound
+PREDICTION. The chain Difference → Actualization → Measurement → Prediction is closed
+with two falsifiable AT-specific outputs. No new primitive; canonical AT unchanged.
+
 ### PRED001: Prediction Registry (standalone Zenodo publication)
 
 Summary:

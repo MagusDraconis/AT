@@ -97,6 +97,7 @@ ResearchY-M_001  ↔  Y_M_001_Tests.cs     (AT.Tests/ResearchY/M_Measurement/)
 | ResearchY-M_005 (Information Conservation Audit) | `AT.Tests/ResearchY/M_Measurement/Y_M_005_Tests.cs` | ACTIVE | 2026-08-30 | ✅ 7/7 PASSED — `Results/Y_M_005_Result.md` |
 | ResearchY-M_006 (Observer Role Audit) | `AT.Tests/ResearchY/M_Measurement/Y_M_006_Tests.cs` | ACTIVE | 2026-08-30 | ✅ 7/7 PASSED — `Results/Y_M_006_Result.md` |
 | ResearchY-M_007 (Measurement-Program Synthesis) | `AT.Tests/ResearchY/M_Measurement/Y_M_007_Tests.cs` | ACTIVE | 2026-08-30 | ✅ 7/7 PASSED — `Results/Y_M_007_Result.md` |
+| ResearchY-M_008 (Measurement Prediction Audit) | `AT.Tests/ResearchY/M_Measurement/Y_M_008_Tests.cs` | ACTIVE | 2026-08-30 | ✅ 6/6 PASSED — `Results/Y_M_008_Result.md` |
 
 ## Result Summaries
 
