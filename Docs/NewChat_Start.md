@@ -1385,6 +1385,25 @@ observer's relation). This completes the measurement program (M_001 event → M_
 disturbance → M_003 feedback → M_004 information → M_005 conservation → M_006
 observer). No new primitive; canonical AT unchanged.
 
+ResearchY-M_007 (Measurement-Program Synthesis, COMPLETE, tests 7/7 PASSED): synthesize
+all measurement results. Verdict: the chain D96 → pairing → complex state → reciprocity
+→ observability → measurement is FULLY CLASSIFIED. D96 → pairing: DERIVED (D_021
+λ_k=λ_{N−k}; D_035 complete pairing from complex observability). Pairing → complex
+state: DERIVED (D_036, the {cos,sin} pair IS [Re,Im]). Complex state → reciprocity:
+EMERGENT (D_037, the two-quadrature measurement basis). Reciprocity → observability:
+DERIVED (D_037, z = a + ib exact). Observability → measurement: EMERGENT (M_001, the
+actualization event reading both quadratures). Measurement program: event EMERGENT
+(M_001), disturbance = phase-pinning DERIVED (M_002), feedback DERIVED (M_003),
+information log₂ 95 DERIVED (M_004), conservation = reveal + redistribute DERIVED
+(M_005), observer = epistemic recipient EMERGENT (M_006). The DERIVED links are
+structural consequences; the EMERGENT links are requirements/readings (the basis, the
+event, the recipient). Only boundaries: the five R_001 inputs ({Difference, η},
+{Z2-paired sector}, {3 families}, {SU(2) gauge}, {v, m_e}). Open questions:
+Born-weighted information refinement (I_occ = 0.7513 nats, QG228), observer-network
+coupling, the D_046 measurement predictions (disturbance relations, no-cloning bounds,
+information uncertainty) as the program's testable output. No new primitive; canonical
+AT unchanged.
+
 ### PRED001: Prediction Registry (standalone Zenodo publication)
 
 Summary:

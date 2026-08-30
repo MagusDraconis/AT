@@ -84,6 +84,7 @@
 | ResearchY-M_004 | Measurement Information Audit | `M_Measurement/ResearchY-M_004.md` | `AT.Tests/ResearchY/M_Measurement/Y_M_004_Tests.cs` (6/6 ✅) | COMPLETE |
 | ResearchY-M_005 | Information Conservation Audit | `M_Measurement/ResearchY-M_005.md` | `AT.Tests/ResearchY/M_Measurement/Y_M_005_Tests.cs` (7/7 ✅) | COMPLETE |
 | ResearchY-M_006 | Observer Role Audit | `M_Measurement/ResearchY-M_006.md` | `AT.Tests/ResearchY/M_Measurement/Y_M_006_Tests.cs` (7/7 ✅) | COMPLETE |
+| ResearchY-M_007 | Measurement-Program Synthesis | `M_Measurement/ResearchY-M_007.md` | `AT.Tests/ResearchY/M_Measurement/Y_M_007_Tests.cs` (7/7 ✅) | COMPLETE |
 | ResearchY-A_002 | Difference Disturbance | — | — | PLANNED |
 | ResearchY-A_003 | Actualization Propagation | — | — | PLANNED |
 | ResearchY-B_001 | Circular Closure | — | — | PLANNED |
