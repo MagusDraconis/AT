@@ -1341,6 +1341,27 @@ information DERIVED (from distinguishability, D_039); measurement event EMERGENT
 (M_001); max info per event DERIVED (log₂ 95). Open: the Born-weighted refinement
 (I_occ = 0.7513 nats, QG228). No new primitive; canonical AT unchanged.
 
+ResearchY-M_005 (Information Conservation Audit, COMPLETE, tests 7/7 PASSED): does
+measurement create information or reveal pre-existing information? Verdict: measurement
+REVEALS pre-existing distinguishability and REDISTRIBUTES it — it does NOT create
+information. The 6.57 bits are PRE-EXISTING in the state space (D_039: 95 distinct
+states exist before any measurement); the measurement event reads both quadratures
+(M_001), resolving WHICH state is realized (reveal), and converts the phase freedom
+into a pinned outcome + observer knowledge (redistribute). INFORMATION BALANCE:
+log₂ 95 (state space) = outcome (realized state) + observer (log₂ 95 gained) — total
+CONSERVED. The underlying conservation is count conservation (Born rule Σ|ψ|²=1,
+QG216). Test A/B/C: A) create — NO (the states pre-exist); B) reveal — YES; C)
+redistribute — YES. REFINES M_004: "measurement creates information" is the OBSERVER's
+gain; from the conservation view the event reveals + redistributes. Remove measurement:
+the information still EXISTS (the 95 states remain distinguishable) — only its
+resolution is absent. Prove/refute: information is conserved through actualization —
+YES (H_before = H_outcome + H_observer). Falsification: a measurement that creates a
+new distinguishable state or changes the total information. Classification:
+distinguishability/information DERIVED (D_039, pre-existing); reveal EMERGENT (the
+resolution event); redistribute DERIVED (phase → outcome + observer); conservation
+DERIVED (count conservation, QG216). Open: the Born-weighted balance refinement
+(I_occ = 0.7513 nats, QG228). No new primitive; canonical AT unchanged.
+
 ### PRED001: Prediction Registry (standalone Zenodo publication)
 
 Summary:
