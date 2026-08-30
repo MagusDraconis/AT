@@ -1248,6 +1248,26 @@ with span(96) = 6.4025. Each prediction has a dependency chain into the origin p
 and an explicit falsification path. Experimental ranking: P6 > P7 > P4; mathematical:
 P1–P3, P5, P8 (verified by the suite). No canonical changes; research only.
 
+ResearchY-NP_002 (Highest-Value V2.2 Program, COMPLETE): what is the highest-value
+V2.2 physics program? Verdict: MEASUREMENT ORIGIN — it scores 19/20 (impact 5,
+feasibility 4, testability 5, derived-chain dependence 5), the highest of ten
+candidates, and uses the derived origin chain MOST DIRECTLY: Difference
+(distinguishability, D_039), magnitude (QG216), phase (QG220), complex state (D_036),
+reciprocity (two-quadrature basis, D_037), and Actualization (measurement readout).
+Completing the QM measurement chain (QG73 collapse + QG74 measurement + D_037 basis +
+D_039 identity) has the highest physics impact, high falsifiability
+(measurement-disturbance relations, no-cloning bounds), and high experimental access
+(quantum information). RANKING (10 candidates scored on impact × feasibility ×
+testability × derived-chain): T1 measurement origin 19 (HIGH), T2 information-encoded
+measurement 18 (HIGH), T3 v/m_e reducibility 16, T4 neutrino hierarchy 15, T5 CMB
+anisotropy spectrum 15, T6 baryon asymmetry 14, T7 gauge dynamics 13, T8 gravity-native
+closure 12 (LOW — QG222 near-complete), T9 cosmology initial conditions 12, T10
+dark-matter status 10 (LOW). ROADMAP: Phase 1 measurement/information (T1→T2), Phase 2
+anchors/neutrinos (T3→T4, P2 data pending), Phase 3 cosmology/gauge (T5→T7), Phase 4
+closure items (T8→T10). Recommended first project: MEASUREMENT ORIGIN (a new
+M-series audit + xUnit suite + prediction registry entry). No new primitive; canonical
+AT unchanged.
+
 ### PRED001: Prediction Registry (standalone Zenodo publication)
 
 Summary:
