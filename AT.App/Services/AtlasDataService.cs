@@ -94,6 +94,30 @@ public static class AtlasDataService
     public static IReadOnlyList<ResearchNewsModel> ResearchNews { get; } =
     [
         new(
+            "researchy-np008-interference-extremum",
+            "Actualization Extremizes Nothing — But the Interference Gradient Is the Hidden Sync Dynamics",
+            "ResearchY Milestone · NP_008 (V2.2 New Physics — Roadmap)",
+            "Does the theory maximize, minimize, or hold stationary the interference between two states? Canonically: none of these — the phase just drifts at its fixed rate, and the interference intensity changes without purpose. But the gradient of that intensity is exactly the missing synchronization term, hidden inside the theory.",
+            "NP_008 asks whether Actualization follows max(I), min(I), or stationary(I) for the interference functional I = ρ_A+ρ_B+2√(ρ_Aρ_B)·cos(θ_A−θ_B). Verdict: CANONICAL Actualization extremizes NOTHING (option D) — it follows the fixed self-rate update θ(t+1) = θ(t) + Δθ (D_041), sweeping the relative phase through the full circle, so I changes non-monotonically (verified: rel₀=0.5, I: 1.760 → 1.740 → 0.980) — no increase, no decrease, no conservation. EXTRema: the in-phase configuration (rel=0) is the GLOBAL MAXIMUM I=(√ρ_A+√ρ_B)²=1.866; the anti-phase (rel=π) is the GLOBAL MINIMUM I=(√ρ_A−√ρ_B)²=0.134; ∂I/∂θ_A = +2√(ρ_Aρ_B)·sin(θ_B−θ_A) = κ·sin(θ_B−θ_A) vanishes at both, but is nonzero at π/2 (−0.866) — so π/2 is NOT an extremum. HIDDEN VARIATIONAL PRINCIPLE: the gradient of I IS the missing synchronization term (NP_005/NP_006). A variational phase update θ(t+1)=θ(t)+η·∂I/∂θ gives d rel/dt = −2ηκ·sin(rel), whose fixed points are the extrema of I (rel=0, π) — so the extremum principle, if actualized, would make synchronization explicit, coherence sustained, and collective modes STABLE (in-phase/anti-phase become attractors). DETERMINATION: A) max(I) NO; B) min(I) NO; C) stationary(I) NO; D) none — YES for canonical evolution. NECESSITY: ∂I/∂θ_A is necessary for unequal-mode synchronization (NP_005 threshold κ ≥ |Δθ_A−Δθ_B|/2 = 0.5236; here κ=0.866 → locks); the extremum principle is the cleanest statement of that necessity. COUNTEREXAMPLES: 'actualization maximizes I' fails (I drifts 1.760→0.980, down); 'actualization conserves I' fails (I changes); 'π/2 is the stationary point' fails (∂I/∂θ≠0 there); 'the extremum principle exists canonically' fails (self-rate only, D_041). FALSIFICATION: the canonical no-extremum claim is falsified if a two-mode system's relative phase SEEKS an extremum of I with no added interaction; the gradient-is-locking claim is falsified if the phase advance does not follow ∂I/∂θ. Classification: interference functional I DERIVED (complex state D_036 + Born QG216); extrema DERIVED (algebra of I); gradient ∂I/∂θ DERIVED (algebra of I); canonical drift DERIVED (fixed Δθ); the extremum PRINCIPLE (phase ∝ ∂I/∂θ) EMERGENT under a variational requirement / BOUNDARY in canonical AT. The missing synchronization dynamics already exists implicitly — as the gradient of the interference functional. No new primitive; canonical AT unchanged.",
+            "For non-experts: when two waves overlap, their combined brightness depends on how their phases are related — brightest when they add in step, dimmest when they cancel. This audit asks: does the theory try to push waves toward the brightest or dimmest arrangement? The honest answer: no. The phases just drift at their fixed rates, so the combined brightness wanders up and down without a goal. But here is the interesting part: the SLOPE of that brightness — the direction it would change if a phase were nudged — is exactly the kind of 'pull' needed to make two phases lock. So the mechanism for synchronization is not something the theory needs to import: it is already written into the overlap formula, waiting for a principle that would use it. The theory as written does not apply it — but it is there.",
+            "Canonically nothing is extremized; the gradient of I is the hidden synchronization term.",
+            "“The theory never aims — but the slope of the overlap already points the way.”",
+            true,
+            [
+                new("ResearchY-NP_006", "PHASE-LOCKING ORIGIN AUDIT",
+                    "∂I/∂θ_A = 2√(ρ_Aρ_B)·sin(θ_B−θ_A) — the interference gradient is the locking form.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_006.md"),
+                new("ResearchY-NP_007", "COUPLING FIELD AUDIT",
+                    "The static coupling network whose functional is I — NP_008 asks whether actualization extremizes it.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_007.md"),
+                new("ResearchY-NP_005", "MISSING SYNCHRONIZATION MECHANISM AUDIT",
+                    "The missing term κ·sin(θ_B−θ_A) — which NP_008 shows is the gradient of I.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_005.md"),
+                new("ResearchY-NP_008", "INTERFERENCE EXTREMUM PRINCIPLE AUDIT",
+                    "Canonical actualization extremizes nothing; the gradient on I is the hidden sync dynamics.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_008.md"),
+            ]),
+        new(
             "researchy-np007-coupling-field",
             "The Coupling 'Field' Is a Static Network: Born-Derived Links, No Propagation",
             "ResearchY Milestone · NP_007 (V2.2 New Physics — Roadmap)",

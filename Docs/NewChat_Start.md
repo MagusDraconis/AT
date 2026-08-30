@@ -1389,6 +1389,33 @@ Classification: link structure DERIVED (complex state + Born); link weight κ DE
 (D_037); collective modes DERIVED (superposition algebra); propagating coupling field
 BOUNDARY (absent). No new primitive; canonical AT unchanged.
 
+ResearchY-NP_008 (Interference Extremum Principle Audit, COMPLETE, tests 7/7 PASSED):
+does Actualization extremize the interference functional I? Verdict: CANONICAL
+Actualization extremizes NOTHING (option D) — it follows the fixed self-rate update
+θ(t+1)=θ(t)+Δθ (D_041), sweeping the relative phase through the full circle, so I
+changes non-monotonically (verified: rel₀=0.5, I: 1.760 → 1.740 → 0.980) — no
+increase, no decrease, no conservation. The functional I = ρ_A+ρ_B+2√(ρ_Aρ_B)·
+cos(θ_A−θ_B) has ∂I/∂θ_A = +2√(ρ_Aρ_B)·sin(θ_B−θ_A) = κ·sin(θ_B−θ_A); extrema:
+in-phase MAX at rel=0 (I=(√ρ_A+√ρ_B)²=1.866), anti-phase MIN at rel=π
+(I=(√ρ_A−√ρ_B)²=0.134); ∂I/∂θ vanishes at both; π/2 is NOT an extremum (∂I/∂θ=−0.866
+≠ 0). HIDDEN VARIATIONAL PRINCIPLE: the gradient of I IS the missing synchronization
+term (NP_005/NP_006) — a variational phase update θ(t+1)=θ(t)+η·∂I/∂θ would drive the
+relative phase to an extremum of I (d rel/dt = −2ηκ·sin(rel), fixed points at rel=0,π),
+making synchronization explicit, coherence sustained, and collective modes stable.
+Determination: A) max(I) NO; B) min(I) NO; C) stationary(I) NO; D) none — YES
+(canonical evolution extremizes nothing). Necessity: ∂I/∂θ_A is necessary for
+unequal-mode sync (NP_005 threshold κ ≥ |Δθ_A−Δθ_B|/2 = 0.5236; here κ=0.866 → locks);
+the extremum principle is the cleanest statement of that necessity. Counterexamples:
+'actualization maximizes I' fails (I drifts 1.760→0.980); 'actualization conserves I'
+fails (I changes); 'π/2 is the stationary point' fails (∂I/∂θ ≠ 0); 'extremum
+principle exists canonically' fails (self-rate only). Falsification: canonical
+no-extremum claim falsified if a two-mode system's relative phase SEEKS an extremum of
+I with no added interaction; gradient-is-locking claim falsified if the phase advance
+does not follow ∂I/∂θ. Classification: functional I DERIVED (complex state D_036 +
+Born QG216); extrema DERIVED (algebra of I); gradient ∂I/∂θ DERIVED; canonical drift
+DERIVED (fixed Δθ); extremum principle EMERGENT (under variational requirement) /
+BOUNDARY in canonical AT. No new primitive; canonical AT unchanged.
+
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-
