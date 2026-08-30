@@ -1909,6 +1909,39 @@ finiteness); distinguishability as a quality DERIVED (D_039); information/geomet
 measurement DERIVED (require the normalized count); alternative primitives BOUNDARY
 (none — {Difference, η} only). No new primitive; canonical AT unchanged.
 
+ResearchY-QG_008 (Finite Distinguishability Audit, COMPLETE, tests 7/7 PASSED): why
+must distinguishability be finite? Verdict: finite distinguishability is a BOUNDARY —
+required for physics (finite information, well-defined normalization and measure) but
+not logically implied by Difference. COMPARE finite vs infinite: finite N (95) —
+normalization Σρ = 1 well-defined, count conservation clear, geometry √(−g) = ρ
+well-defined, information log₂(95) = 6.57 bits finite; infinite N — normalization
+requires a convergent series (not automatic), count conservation via a limit, geometry
+needs a limit measure, information log₂(N) → ∞ DIVERGES. SURVIVAL TESTS: normalization
+survives only with a convergence assumption (geometric series needs |r| < 1, sum =
+1/(1−r)); count conservation survives via a limit; geometry survives with a limit
+structure; INFORMATION DOES NOT SURVIVE — log₂(N) → ∞. FIRST BREAKDOWN: INFORMATION
+(log₂(N) diverges); normalization, geometry, and measurement are SECOND (limit-
+assumption dependent). DETERMINATION: A) finiteness required — PARTIAL (required for
+information/normalization/geometry); B) finiteness emergent — NO; C) finiteness
+boundary — YES (the VALUE N=96 is derived via closure, D_015/D_019; the FINITENESS
+itself is a separate property of the state space — Difference produces distinguish-
+ability, not a count). SMALLEST PRINCIPLE forcing finiteness: the CONSISTENCY
+requirement that the state space admit a well-defined normalization (Σρ = 1), a finite
+information content (log₂ N < ∞), and a measure (√(−g) = ρ) — jointly requiring N < ∞.
+PROVE/REFUTE: Difference implies finite state count — REFUTED (Difference produces the
+act of distinguishing; the count is a separate input). If infinite distinguishability
+is allowed: first breakdown INFORMATION, then normalization/geometry/measurement.
+Counterexamples: 'Difference implies finiteness' fails (produces distinguishability,
+not a count); 'infinite distinguishability has finite information' fails (log₂(N)
+diverges); 'normalization is automatic for infinite N' fails (needs convergence);
+'geometry extends to infinite N' fails (limit measure needed). Falsification: a
+derivation of finiteness from Difference alone; an infinite state space with finite
+information; a different closure value. Classification: finiteness BOUNDARY (a property
+of the state space, required for physics); the value N=96 DERIVED (closure);
+normalization/count conservation DERIVED (from finiteness, QG_007); information DERIVED
+(finite only); geometry DERIVED (needs the finite measure). No new primitive; canonical
+AT unchanged.
+
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-
