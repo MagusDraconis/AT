@@ -1362,6 +1362,29 @@ resolution event); redistribute DERIVED (phase → outcome + observer); conserva
 DERIVED (count conservation, QG216). Open: the Born-weighted balance refinement
 (I_occ = 0.7513 nats, QG228). No new primitive; canonical AT unchanged.
 
+ResearchY-M_006 (Observer Role Audit, COMPLETE, tests 7/7 PASSED): what is the exact
+role of the observer? Verdict: the observer is the RECIPIENT of the information
+redistribution (M_005) — it changes only EPISTEMIC ACCESS, not the ONTIC state. Three
+distinct objects: (1) STATE = the complex amplitude (exists independently, D_039 — the
+95 distinct states pre-exist); (2) OBSERVABLE state = the two-quadrature reconstruction
+structure (D_037: z = a + ib is a structural map); (3) MEASURED state = the pinned
+outcome (M_002, requires the actualization read). Observer required for: existence —
+NO; observability — NO; reconstruction — NO. Remove observer: the state, observability,
+and reconstruction map all REMAIN; what becomes inaccessible is the redistribution's
+RECIPIENT (no one gains knowledge, M_005). Reciprocity: the observer is ITSELF a
+distinguishable subsystem (D_039) reading another — the read is symmetric (the
+observer's state is also an observable complex amplitude). Compare: ontic state (the
+invariant amplitude), epistemic access (the two-quadrature read), reconstruction map
+(z = a + ib). The observer changes only the epistemic layer. INVARIANT formulation:
+the ontic state (the complex amplitude / 95-state distinguishability), the
+reconstruction map, and the total information log₂ 95 are invariant under any observer
+transformation (including removing the observer). Classification: ontic state DERIVED
+(D_039, invariant); observability DERIVED (D_037); reconstruction map DERIVED (D_037);
+observer role EMERGENT (the redistribution's recipient); epistemic access EMERGENT (the
+observer's relation). This completes the measurement program (M_001 event → M_002
+disturbance → M_003 feedback → M_004 information → M_005 conservation → M_006
+observer). No new primitive; canonical AT unchanged.
+
 ### PRED001: Prediction Registry (standalone Zenodo publication)
 
 Summary:
