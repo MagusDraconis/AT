@@ -94,6 +94,27 @@ public static class AtlasDataService
     public static IReadOnlyList<ResearchNewsModel> ResearchNews { get; } =
     [
         new(
+            "researchy-m002-disturbance",
+            "Measurement Always Disturbs — the Minimal Disturbance Is Phase-Pinning",
+            "ResearchY Milestone · M_002 (V2.2 New Physics — Measurement)",
+            "If a measurement is reading a complex wave's two numbers, what does that read do to the wave? It pins its phase. The magnitude survives, the identity survives, the probability survives — only the measured mode's phase freedom is consumed. Measurement without disturbance is impossible, but the disturbance is minimal.",
+            "M_002 asks the natural follow-up to M_001: if measurement is an actualization event, what is the minimal unavoidable disturbance of a distinguishable state? Verdict: the minimal unavoidable disturbance is PHASE-PINNING — a DERIVED consequence of the read. Reading both quadratures of one complex mode (the {cos, sin} two-quadrature basis, M_001/D_037) extracts AND fixes the phase θ. Magnitude is PRESERVED (the read is a count of |ψ|), identity is ACTUALIZED (the state remains distinct, D_039 — the selection is realized, not erased), and the Born weight |ψ|² = ρ is realized (QG216). Only the measured mode's phase freedom is consumed: before-state free phase and full interference; after-state phase pinned. Prove/refute: measurement without disturbance is IMPOSSIBLE — reading a phase IS pinning it, so a read that does not fix the phase extracts nothing. But the disturbance is MINIMAL: magnitude, identity, and probability all survive. PREDICTIONS (all verified/derived): (1) repeated measurements are IDEMPOTENT — reading the same mode twice gives the same result, no further disturbance; (2) basis changes ROTATE the read frame (a rotated {cos, sin} basis reads a′, b′ = rotation of a, b) while the complex state z is BASIS-INVARIANT; (3) interference decay — measuring k consumes its free phase, so k–k′ coherence is lost unless the measured outcome is fed back; (4) state reconstruction z = a + ib is exact (the read is lossless for the measured mode). FALSIFICATION: a measurement that reads both quadratures without pinning the phase (an information extraction that leaves the measured phase free) would falsify the theorem. Classification: disturbance DERIVED (from the read — reading pins the phase); measurement event EMERGENT (M_001); magnitude/identity/probability survive the disturbance. No new primitive; canonical AT unchanged.",
+            "For non-experts: measuring a wave means reading its two numbers — its size and its phase. This audit asks: does reading the numbers change the wave? The answer: it fixes the wave's phase. Before the measurement the wave could be at any point of its cycle; after the measurement that point is locked in. But the wave's size is untouched, it remains the same identifiable wave, and its probability is preserved — so the disturbance is as small as it could possibly be. You cannot read a phase without locking it; that is simply what reading means. Re-measuring gives the same answer, and measuring in a different frame just reads the same wave from a different angle.",
+            "The unavoidable cost of measuring is fixing the phase — a minimal, derived disturbance.",
+            "“You cannot read a phase without locking it — that is what reading is.”",
+            true,
+            [
+                new("ResearchY-M_001", "MEASUREMENT ORIGIN AUDIT",
+                    "Measurement = actualization event reading both quadratures of a distinguishable state.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/M_Measurement/ResearchY-M_001.md"),
+                new("ResearchY-D_037", "RECIPROCITY-OBSERVABILITY AUDIT",
+                    "The {cos, sin} two-quadrature measurement basis — z = a + ib exact, a alone ambiguous.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/D_ResonanceStructure/ResearchY-D_037.md"),
+                new("ResearchY-M_002", "MEASUREMENT DISTURBANCE AUDIT",
+                    "Minimal disturbance = phase-pinning (DERIVED); measurement without disturbance impossible; repeated measurement idempotent.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/M_Measurement/ResearchY-M_002.md"),
+            ]),
+        new(
             "researchy-m001-measurement-origin",
             "A Measurement Event Is an Actualization Event on a Distinguishable State",
             "ResearchY Milestone · M_001 (V2.2 New Physics — Measurement)",
