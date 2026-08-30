@@ -94,6 +94,27 @@ public static class AtlasDataService
     public static IReadOnlyList<ResearchNewsModel> ResearchNews { get; } =
     [
         new(
+            "researchy-m001-measurement-origin",
+            "A Measurement Event Is an Actualization Event on a Distinguishable State",
+            "ResearchY Milestone · M_001 (V2.2 New Physics — Measurement)",
+            "What is a measurement event? It is the act of reading both quadratures of one complex wave — a count event that realizes one distinguishable state with Born weight. It is state selection as distinguishability becoming actual; collapse is just the event's binary reading, not a separate mechanism.",
+            "M_001 is the first audit of the V2.2 Measurement program (the highest-value program per NP_002). Verdict: a measurement event is an ACTUALIZATION EVENT applied to a DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-actual (B). A measurement reads BOTH quadratures of one complex mode — the {cos, sin} two-quadrature reconstruction basis (D_037): z = a + ib is exact, while a alone is ambiguous (the same a = 1 arises from (|ψ|=2, θ=π/3) and (|ψ|=1, θ=0)). What changes during measurement: the state's identity transitions from POTENTIAL (in the complex amplitude, all interference present) to ACTUAL (a realized outcome with Born weight |ψ|² = ρ, QG216). Collapse (C) is the QG73 binary reading of the SAME event, not a separate mechanism. REMOVING measurement: state identity survives (the 95 modes remain distinct), observability survives (the states are distinguishable), probability survives (Born rule Σ|ψ|² = 1 exact), and interference survives (the amplitudes remain) — only the actualization of a specific outcome is removed. MINIMAL CONDITION for a measurement event: an actualization event that reads both quadratures of one distinguishable mode — nothing more is needed, because probability and identity are already present in the unmeasured state. Trace: Difference → distinguishability → state identity (D_039) → observability (D_037) → measurement (the readout). Classification: state identity DERIVED (D_039); observability DERIVED (D_037/D_038); Born probability DERIVED (QG216); measurement event EMERGENT (the actualization readout); collapse EMERGENT (the event's binary reading — QG73 resolved). No new primitive; canonical AT unchanged.",
+            "For non-experts: the theory began with the idea that two things can be different — 'Difference'. This audit asks: what is a measurement? The answer: it is the act of reading a complex wave's two numbers (its size and its phase) and thereby picking out one specific state. Before the measurement, the wave carries every possibility with full interference; the measurement is an 'actualization' — the Difference becomes real, and one outcome happens, with a probability equal to the wave's size-squared. The mysterious 'collapse' of quantum mechanics is simply this reading-event viewed as state selection. Take measurement away and the waves, their identities, their probabilities, and their interference all remain — only the picking-out is gone.",
+            "Measurement = reading both quadratures of one complex mode — Difference becoming actual.",
+            "“A measurement is the moment Difference becomes real.”",
+            true,
+            [
+                new("ResearchY-D_037", "RECIPROCITY-OBSERVABILITY AUDIT",
+                    "The {cos, sin} two-quadrature measurement basis — z = a + ib exact, a alone ambiguous.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/D_ResonanceStructure/ResearchY-D_037.md"),
+                new("ResearchY-D_039", "STATE-IDENTITY-ORIGIN AUDIT",
+                    "Difference IS distinguishability — state identity is the primitive applied.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/D_ResonanceStructure/ResearchY-D_039.md"),
+                new("ResearchY-M_001", "MEASUREMENT ORIGIN AUDIT",
+                    "Measurement = actualization event on a distinguishable state; identity/observability/probability DERIVED; the event + collapse EMERGENT.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/M_Measurement/ResearchY-M_001.md"),
+            ]),
+        new(
             "researchy-np002-highest-value",
             "Measurement Is the Highest-Value V2.2 Program — It Uses the Derived Chain Most Directly",
             "ResearchY Milestone · NP_002 (V2.2 New Physics)",
