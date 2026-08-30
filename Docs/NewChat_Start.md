@@ -1467,6 +1467,32 @@ interference link weights DERIVED (Born cross-amplitude); κ as link property DE
 Network 2 EMERGENT (under variational requirement) / BOUNDARY in canonical AT. No new
 primitive; canonical AT unchanged.
 
+ResearchY-NP_011 (Hidden Coupling Field Audit, COMPLETE, tests 7/7 PASSED): is
+Network 2 a genuine physical field? Verdict: REFUTED — Network 2 (the Born-derived
+coupling network κ = 2√(ρ_Aρ_B)) is a MATHEMATICAL STRUCTURE, not a physical field. It
+fails all five field criteria: A) state-independent existence — NO (κ = 2√(ρ_Aρ_B) = 0
+whenever either state has zero amplitude; verified κ(0.25,0)=0); B) stored structure —
+NO (no field variables, only derived link weights); C) information transport — NO
+(information is redistributed by MEASUREMENT, M_005, not by the network); D) phase
+transport — NO (no canonical phase flow, NP_005/NP_010); E) energy transport — NO
+(count conserved Σρ=1, not transported). κ IS MERELY DESCRIPTIVE: the canonical update
+θ(t+1)=θ(t)+Δθ (D_041) contains no reference to κ — the link weight never exerts
+influence (verified: canonical evolution is κ-independent). κ would act only under the
+variational requirement θ += η·∂I/∂θ (NP_009), which is absent. NO UNIQUE OBSERVABLE:
+every observable of Network 2 (interference, collective modes in-phase 1.866/anti-phase
+0.134, phase correlations) is already produced by the state structure alone (complex
+state D_036 + Born QG216) — no observable requires the network's independent existence.
+FIELD HIERARCHY: states (physical, ontic) → Network 1 (physical, acting) → Network 2
+(NOT physical — a derived relation). If it WERE a field, candidate field variables: the
+link weights κ and the relative phases θ_A−θ_B. Falsification: mathematical-structure
+claim falsified if an observable requires Network 2's independent existence;
+descriptive-κ claim falsified if phase evolution is observed to depend on κ with no
+variational dynamics. Classification: network structure + link weights DERIVED (complex
+state + Born); collective modes/interference DERIVED (superposition algebra);
+information redistribution DERIVED (M_005); Network 2 as physical field REFUTED —
+mathematical structure; a physical coupling field BOUNDARY (absent; would need κ-active
+dynamics). No new primitive; canonical AT unchanged.
+
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-

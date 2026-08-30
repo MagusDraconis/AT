@@ -37,6 +37,7 @@ ResearchY-NP_007  ↔  Y_NP_007_Tests.cs    (AT.Tests/ResearchY/NP_NewPhysics/)
 ResearchY-NP_008  ↔  Y_NP_008_Tests.cs    (AT.Tests/ResearchY/NP_NewPhysics/)
 ResearchY-NP_009  ↔  Y_NP_009_Tests.cs    (AT.Tests/ResearchY/NP_NewPhysics/)
 ResearchY-NP_010  ↔  Y_NP_010_Tests.cs    (AT.Tests/ResearchY/NP_NewPhysics/)
+ResearchY-NP_011  ↔  Y_NP_011_Tests.cs    (AT.Tests/ResearchY/NP_NewPhysics/)
 ```
 
 ## Test Registry
@@ -118,6 +119,7 @@ ResearchY-NP_010  ↔  Y_NP_010_Tests.cs    (AT.Tests/ResearchY/NP_NewPhysics/)
 | ResearchY-NP_008 (Interference Extremum Principle Audit) | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_008_Tests.cs` | ACTIVE | 2026-08-30 | ✅ 7/7 PASSED — `Results/Y_NP_008_Result.md` |
 | ResearchY-NP_009 (Variational Actualization Audit) | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_009_Tests.cs` | ACTIVE | 2026-08-30 | ✅ 6/6 PASSED — `Results/Y_NP_009_Result.md` |
 | ResearchY-NP_010 (Second Network Layer Audit) | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_010_Tests.cs` | ACTIVE | 2026-08-30 | ✅ 6/6 PASSED — `Results/Y_NP_010_Result.md` |
+| ResearchY-NP_011 (Hidden Coupling Field Audit) | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_011_Tests.cs` | ACTIVE | 2026-08-30 | ✅ 7/7 PASSED — `Results/Y_NP_011_Result.md` |
 
 ## Result Summaries
 

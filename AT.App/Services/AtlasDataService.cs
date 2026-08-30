@@ -94,6 +94,30 @@ public static class AtlasDataService
     public static IReadOnlyList<ResearchNewsModel> ResearchNews { get; } =
     [
         new(
+            "researchy-np011-hidden-coupling-field",
+            "Network 2 Is a Mathematical Structure, Not a Physical Field",
+            "ResearchY Milestone · NP_011 (V2.2 New Physics — Roadmap)",
+            "The derived coupling network — the interference links κ = 2√(ρ_Aρ_B) — is not a physical field. It fails every test: no independent existence without states, no stored structure, no transport of information, phase, or energy, and no influence on the dynamics. It is a derived mathematical relation describing how states interfere.",
+            "NP_011 tests whether Network 2 (the Born-derived coupling network, κ = 2√(ρ_Aρ_B)) is a genuine physical field. Verdict: REFUTED — it is a MATHEMATICAL STRUCTURE. It fails all five physical-field criteria: (A) STATE-INDEPENDENT EXISTENCE — NO: κ = 2√(ρ_Aρ_B) = 0 whenever either state has zero amplitude (verified κ(0.25,0)=0), so the network exists only where states exist; (B) STORED STRUCTURE — NO: there are no field variables, only derived link weights (no independent storage); (C) INFORMATION TRANSPORT — NO: information is redistributed by MEASUREMENT (M_005), not by the network; (D) PHASE TRANSPORT — NO: no canonical phase flow (NP_005/NP_010); (E) ENERGY TRANSPORT — NO: count is conserved (Σρ=1), not transported. κ IS MERELY DESCRIPTIVE: the canonical update θ(t+1) = θ(t) + Δθ (D_041) contains no reference to κ — the link weight never exerts influence (verified: the canonical evolution is κ-independent). κ would act only under the variational requirement θ += η·∂I/∂θ (NP_009), which is absent from canonical AT. NO UNIQUE OBSERVABLE: every observable of Network 2 — interference, collective modes (in-phase I=(√ρ_A+√ρ_B)²=1.866, anti-phase 0.134), phase correlations — is already produced by the state structure alone (complex state D_036 + Born QG216); no observable requires the network's independent existence. FIELD HIERARCHY: states (physical, ontic) → Network 1 (physical, acting dynamics) → Network 2 (NOT physical — a derived relation). For completeness, IF it were a field the candidate field variables would be the link weights κ and the relative phases θ_A−θ_B. FALSIFICATION: the mathematical-structure claim is falsified if an observable is found that requires Network 2's independent existence; the descriptive-κ claim is falsified if the phase evolution is observed to depend on κ with no variational dynamics added. Classification: network structure and link weights DERIVED (complex state + Born); collective modes / interference DERIVED (superposition algebra); information redistribution DERIVED (M_005); Network 2 as a physical field REFUTED — mathematical structure; a physical coupling field BOUNDARY (absent — would require κ-active dynamics). The theory has ONE physical interaction layer (Network 1, Actualization); Network 2 is its derived bookkeeping. No new primitive; canonical AT unchanged.",
+            "For non-experts: the theory's overlap structure looks like a 'field' connecting waves, so this audit asks the sharp question: is it really a physical field, like an electric field, or just a formula? The answer is that it is just a formula — a very useful one, but not a field. A real field would still exist even with nothing in it; this coupling vanishes the moment either wave is gone. A real field would store and move things; this coupling stores nothing and moves nothing — information is moved by the measurement act, and phases are not moved at all. And nothing in the theory's rules ever listens to the coupling: the phases advance by their own fixed rates, oblivious to it. So the connection is real mathematics describing how waves would interfere, but it is not a physical thing. Only the actualization process itself is an acting layer.",
+            "The coupling network is derived mathematics — no field existence, no storage, no transport, no influence.",
+            "“The overlap formula is real; a coupling field it is not.”",
+            true,
+            [
+                new("ResearchY-NP_007", "COUPLING FIELD AUDIT",
+                    "The static coupling network — NP_011 tests whether it is a physical field.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_007.md"),
+                new("ResearchY-NP_010", "SECOND NETWORK LAYER AUDIT",
+                    "Network 2 structurally present, dynamically absent — NP_011 determines its physical status.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_010.md"),
+                new("ResearchY-NP_006", "PHASE-LOCKING ORIGIN AUDIT",
+                    "κ = 2√(ρ_Aρ_B) — the Born-derived coefficient that NP_011 shows is descriptive only.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_006.md"),
+                new("ResearchY-NP_011", "HIDDEN COUPLING FIELD AUDIT",
+                    "Network 2 fails all field criteria — a mathematical structure, not a physical field.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_011.md"),
+            ]),
+        new(
             "researchy-np010-second-network-layer",
             "Synchronization Sits on a Second Network Layer — Present in Structure, Absent in Dynamics",
             "ResearchY Milestone · NP_010 (V2.2 New Physics — Roadmap)",
