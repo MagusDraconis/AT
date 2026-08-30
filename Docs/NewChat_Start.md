@@ -237,7 +237,7 @@ Oblique parameters origin (S = occ₀/Σm = 0.0421, T = 2S = 0.0842, U = 0; T = 
 
 Open Questions:
 
-- current working hypothesis: the minimal base is Difference → Actualization → Spectrum → Physics; Q-events and the rest of the network hierarchy are downstream realizations, and the V2.0 audit pass classifies the first-peak 5/4 factor as a documented FIT (QG297, removable QG289, no mechanism) — only ℓ₁ carries it while peak ratios are pure spectral correspondences; dimensional observables still require imported calibration anchors (v, m_e, and standard unit conversion), so units are fixed by measurement/convention rather than derived from the spectrum; N=96 is inevitable within the accepted structural class (period-3 seed, Z2 half-shift, three-family octave window), but a global proof excluding every conceivable alternative closure remains open; the ResearchY QG_008/QG_009 audits pin the state-space finiteness: finite N is a BOUNDARY required only for the AT uniform-reference information observable chain (I_occ = KL(ρ‖uniform), ΩΛ), while a CONVERGENT infinite state space is internally consistent for normalization, realized entropy (geometric ρ_k = (1−r)r^k gives Σρ = 1 and H = 2.0 bits), measurement, geometry, and gravity — the first genuine failure of infinite N is the uniform reference (no normalized uniform measure exists on a countable set), refining the "information breaks first" reading of QG_008; and QG_010 RESOLVES the finiteness question in the observable direction: observability itself requires finite distinguishability (the measurement event M_001 is a finite act with finite information capacity log₂(N_obs), M_004 — an infinite observable alphabet would need log₂(N) → ∞ bits per event), so the OBSERVABLE state space is DERIVED-finite while the underlying state-space finiteness remains BOUNDARY (QG_008).
+- current working hypothesis: the minimal base is Difference → Actualization → Spectrum → Physics; Q-events and the rest of the network hierarchy are downstream realizations, and the V2.0 audit pass classifies the first-peak 5/4 factor as a documented FIT (QG297, removable QG289, no mechanism) — only ℓ₁ carries it while peak ratios are pure spectral correspondences; dimensional observables still require imported calibration anchors (v, m_e, and standard unit conversion), so units are fixed by measurement/convention rather than derived from the spectrum; N=96 is inevitable within the accepted structural class (period-3 seed, Z2 half-shift, three-family octave window), but a global proof excluding every conceivable alternative closure remains open; the ResearchY QG_008/QG_009 audits pin the state-space finiteness: finite N is a BOUNDARY required only for the AT uniform-reference information observable chain (I_occ = KL(ρ‖uniform), ΩΛ), while a CONVERGENT infinite state space is internally consistent for normalization, realized entropy (geometric ρ_k = (1−r)r^k gives Σρ = 1 and H = 2.0 bits), measurement, geometry, and gravity — the first genuine failure of infinite N is the uniform reference (no normalized uniform measure exists on a countable set), refining the "information breaks first" reading of QG_008; and QG_010 RESOLVES the finiteness question in the observable direction: observability itself requires finite distinguishability (the measurement event M_001 is a finite act with finite information capacity log₂(N_obs), M_004 — an infinite observable alphabet would need log₂(N) → ∞ bits per event), so the OBSERVABLE state space is DERIVED-finite while the underlying state-space finiteness remains BOUNDARY (QG_008); and QG_011 CLOSES the chain: finite event resolution is DERIVED from Actualization's discreteness (an event is one tick Δθ = 2πk/N, D_041, producing one outcome M_001) — the final remaining boundary is the discreteness of the actualization tick itself (canonical structure).
 - the authoritative frontier catalog is now the QG295–QG300 closure run: QG296 reconstruction completes the QG223–295 map, QG297 isolates the 5/4 exception, QG298 resolves the first peak, and the remaining frontier is primarily experimental — P1 106 GeV, P2 0νββ, P3 ladder; no gravity item remains
 - CORRECTION OF RECORD (V2.0 audit pass): the QG298/QG299 "5/4 = structural boundary projection (occ₀ + zero_mode)/occ₀" reading is REJECTED — that identity is a label identity without a mechanism (the same standard used to reject Bekenstein 1/occ₀ = 1/4); the registry classifies 5/4 as FIT (QG297, removable QG289). This supersedes the QG298 DETERMINATION and the QG299 "R4 5/4 CLOSED" entry; see Docs/Research/ATQG_AUDIT_MILESTONE_V20.md
 - P1 (106 GeV) status after QG199: PENDING — window 99–114 GeV neither confirmed nor excluded; 95 GeV cluster = 91.19 rung; new 152 GeV excess = 151.98 rung (P3, not P1); HL-LHC decisive
@@ -2023,6 +2023,52 @@ measurement event EMERGENT (M_001); finite information capacity log₂(N_obs) DE
 (M_004); state identity DERIVED (D_039); underlying state-space finiteness BOUNDARY
 (QG_008 — required for the KL-to-uniform chain); observable distinguishability DERIVED
 (bounded by the event's capacity). No new primitive; canonical AT unchanged.
+
+ResearchY-QG_011 (Finite Event Principle Audit, COMPLETE, tests 6/6 PASSED): why must
+observation occur through finite events? Verdict: FINITE EVENT RESOLUTION IS A
+CONSEQUENCE OF ACTUALIZATION — one discrete step produces one outcome, so finite
+observation is DERIVED (option B emergent), not a separate boundary. DEFINITIONS:
+event = one actualization act (one discrete step of the phase advance, Δθ = 2πk/N per
+tick, D_041); observation = an event applied to a distinguishable state (M_001);
+finite outcome = one resolved state among the finite observable set (QG_010); finite
+resolution = one outcome per event. COMPARE finite vs infinite-resolution event:
+finite — one discrete step (D_041), ONE outcome (M_001), information log₂(95) = 6.57
+bits (M_004), identity fixed, normalization Σρ = 1 well-defined, geometry √(−g) = ρ on
+the finite space; infinite-resolution — would be infinitely many steps (NOT one
+event), no single outcome, information log₂(N) → ∞ DIVERGES, no identity, Born sum
+over ∞ outcomes (no realized state), no definite count → no measure. TEST: can one
+event resolve infinitely many states? NO — one step produces one outcome (M_001); an
+event that 'resolves everything' resolves nothing. FIRST INCONSISTENCY: the event's
+own DEFINITION — an 'infinite-resolution event' is not one event but infinitely many
+steps (contradicts the meaning of 'event' as one tick of Δθ = 2πk/N, D_041); state
+identity, information gain, normalization, and geometry fail second. STRUCTURE TESTS:
+state identity needs a definite outcome (single step); information gain per event =
+log₂(95) finite; measurement Born Σ|ψ|² = 1 on a definite outcome; normalization
+Σρ = 1 (QG_007) via finite event → finite information (geometric check Σ(1−r)r^k = 1
+exact); geometry √(−g) = ρ needs a definite count. DETERMINATION: A) finite events
+required as a separate principle — NO; B) finite events emergent — YES (from the
+discrete actualization step, D_041); C) finite events boundary — NO for resolution
+(derived), but the DISCRETENESS of actualization itself (the tick) is the final
+BOUNDARY (canonical structure). MINIMAL PRINCIPLE: the discrete step structure of
+Actualization (Δθ = 2πk/N per tick) — no separate 'finiteness of observation'
+postulate needed. PROVE/REFUTE: Actualization implies finite event resolution —
+PROVEN (one event = one step = one outcome = finite, by the meaning of 'event' in
+canonical AT). Counterexamples: 'an infinite-resolution event is a single event'
+fails (infinitely many steps — contradicts D_041); 'one event can resolve infinitely
+many states' fails (one step produces one outcome, M_001); 'infinite-resolution
+observation has finite info' fails (log₂(N_obs) → ∞, M_004 violated); 'normalization
+survives infinite events' fails (Born sum over ∞ outcomes); 'finite observation is a
+new boundary' fails (derived from the discrete step, D_041). Falsification: a
+canonical event that is not a single tick; an event resolving multiple outcomes
+simultaneously; an infinite-resolution event consistent with discrete actualization;
+a derivation of the tick from something deeper. Classification: finite event
+resolution DERIVED (from the discrete actualization step, D_041); the finite outcome
+EMERGENT (M_001 — the actualization readout); finite information capacity DERIVED
+(M_004); normalization DERIVED (QG_007); observable finiteness DERIVED (QG_010); the
+discreteness of actualization (the tick) BOUNDARY (canonical structure); underlying
+state-space finiteness BOUNDARY (QG_008). The QG_008–QG_011 chain is closed: the
+discreteness of the actualization tick is the irreducible canonical input. No new
+primitive; canonical AT unchanged.
 
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
