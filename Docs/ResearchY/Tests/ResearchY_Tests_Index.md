@@ -53,6 +53,7 @@ ResearchY-QG_002  ↔  Y_QG_002_Tests.cs     (AT.Tests/ResearchY/QG_GeometryBrid
 ResearchY-QG_003  ↔  Y_QG_003_Tests.cs     (AT.Tests/ResearchY/QG_GeometryBridge/)
 ResearchY-QG_004  ↔  Y_QG_004_Tests.cs     (AT.Tests/ResearchY/QG_GeometryBridge/)
 ResearchY-QG_005  ↔  Y_QG_005_Tests.cs     (AT.Tests/ResearchY/QG_GeometryBridge/)
+ResearchY-QG_006  ↔  Y_QG_006_Tests.cs     (AT.Tests/ResearchY/QG_GeometryBridge/)
 ```
 
 ## Test Registry
@@ -150,6 +151,7 @@ ResearchY-QG_005  ↔  Y_QG_005_Tests.cs     (AT.Tests/ResearchY/QG_GeometryBrid
 | ResearchY-QG_003 (Information Reconstruction Audit) | `AT.Tests/ResearchY/QG_GeometryBridge/Y_QG_003_Tests.cs` | ACTIVE | 2026-08-30 | ✅ 6/6 PASSED — `Results/Y_QG_003_Result.md` |
 | ResearchY-QG_004 (ρ Nature Audit) | `AT.Tests/ResearchY/QG_GeometryBridge/Y_QG_004_Tests.cs` | ACTIVE | 2026-08-30 | ✅ 6/6 PASSED — `Results/Y_QG_004_Result.md` |
 | ResearchY-QG_005 (Count-to-Geometry Origin Audit) | `AT.Tests/ResearchY/QG_GeometryBridge/Y_QG_005_Tests.cs` | ACTIVE | 2026-08-30 | ✅ 6/6 PASSED — `Results/Y_QG_005_Result.md` |
+| ResearchY-QG_006 (Count Conservation Origin Audit) | `AT.Tests/ResearchY/QG_GeometryBridge/Y_QG_006_Tests.cs` | ACTIVE | 2026-08-30 | ✅ 6/6 PASSED — `Results/Y_QG_006_Result.md` |
 
 ## Result Summaries
 

@@ -1855,6 +1855,32 @@ DERIVED; the measure-preservation principle (√(−g) = ρ) DERIVED (the unique
 metric); geometry as an independent postulate REFUTED (option A). Geometry IS the
 measurement of the distinguishability density. No new primitive; canonical AT unchanged.
 
+ResearchY-QG_006 (Count Conservation Origin Audit, COMPLETE, tests 6/6 PASSED): why
+must count be conserved? Verdict: count conservation (Σρ = 1) is DEFINITIONAL — built
+into the counting measure via the normalizer S (ρ_k = μ^k/S, QG194) — and NECESSARY:
+removing it collapses geometry, information, measurement, and black-hole bookkeeping
+SIMULTANEOUSLY (there is no "first" quantity lost). DEFINITIONAL: ρ_k = μ^k/S, Σρ_k =
+Σμ^k/S = 1 by construction (verified: for μ=2, S=6, ρ₁+ρ₂ = 2/6+4/6 = 1) — the
+normalizer S guarantees conservation (QG194/222: count conservation is the native
+Noether/continuity statement). REMOVE COUNT CONSERVATION — WHAT DISAPPEARS: geometry
+(√(−g) = ρ fails — the metric is no longer a measure, QG207); information (KL(ρ‖uniform)
+undefined — ρ is not a probability distribution, QG228); measurement (Born rule
+Σ|ψ|² = 1 invalid, QG216); black-hole bookkeeping (H_before ≠ H_after — information not
+conserved, NP_020/021). NO ORDERING: everything fails at once, because all are functions
+of the normalized count — there is no "first". DEFINITIONAL OR NECESSARY: BOTH — Σρ = 1
+is built into ρ's definition, and precisely for that reason every downstream structure
+requires it; the definition is not arbitrary but the minimal consistent one.
+Counterexamples: 'count conservation is arbitrary' fails (it is the minimal consistent
+definition of a counting measure); 'geometry survives without it' fails (√(−g) = ρ
+requires a normalized ρ); 'information survives without it' fails (KL requires a
+probability distribution); 'black-hole information is independent' fails (H_before =
+H_after IS count conservation). Falsification: a normalized counting measure without
+Σρ = 1; a structure (geometry/info/measurement) functioning with Σρ ≠ 1; a quantity
+that survives removal while another fails. Classification: count conservation DERIVED
+(from the definition of ρ as a normalized counting measure, QG194); geometry/
+information/measurement/bookkeeping DERIVED (all require the normalized count). No new
+primitive; canonical AT unchanged.
+
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-

@@ -94,6 +94,30 @@ public static class AtlasDataService
     public static IReadOnlyList<ResearchNewsModel> ResearchNews { get; } =
     [
         new(
+            "researchy-qg006-count-conservation",
+            "Count Conservation Is the Definitional Foundation: Remove It, Everything Collapses",
+            "ResearchY Milestone · QG_006 (V2.2 New Physics — Geometry Bridge)",
+            "Why must count be conserved? Because it is built into the very definition of the count density — the normalizer guarantees Σρ = 1. And it is necessary: remove it and geometry, information, measurement, and black-hole bookkeeping all collapse at once. There is no 'first'.",
+            "QG_006 asks whether count conservation (Σρ = 1) is merely definitional or a deeper necessary principle. Verdict: BOTH — it is DEFINITIONAL (built into the counting measure via the normalizer S) and NECESSARY (every downstream structure requires it; removing it collapses everything SIMULTANEOUSLY, with no 'first' quantity lost). DEFINITIONAL: ρ_k = μ^k/S, Σρ_k = Σμ^k/S = 1 by construction (verified: for μ=2, S=6, ρ₁+ρ₂ = 2/6+4/6 = 1) — the normalizer S guarantees conservation (QG194/222: count conservation is the native Noether/continuity statement). REMOVE COUNT CONSERVATION — WHAT DISAPPEARS: (1) GEOMETRY — √(−g) = ρ fails, the metric is no longer a measure (QG207); (2) INFORMATION — KL(ρ‖uniform) is undefined because ρ is not a probability distribution (QG228); (3) MEASUREMENT — the Born rule Σ|ψ|² = 1 is invalid (QG216); (4) BLACK-HOLE BOOKKEEPING — H_before ≠ H_after, information is not conserved (NP_020/021). NO ORDERING: everything fails at once, because all are functions of the normalized count — there is no 'first' quantity lost. DEFINITIONAL OR NECESSARY: the definition is not arbitrary — it is the minimal consistent way to define a counting measure, and precisely because Σρ = 1 is built in, every downstream structure requires it. COUNTEREXAMPLES: 'count conservation is arbitrary' fails (it is the minimal consistent definition of a counting measure); 'geometry survives without it' fails (√(−g) = ρ requires a normalized ρ); 'information survives without it' fails (KL requires a probability distribution); 'black-hole information is independent' fails (H_before = H_after IS count conservation). FALSIFICATION: a normalized counting measure without Σρ = 1; a structure (geometry/information/measurement) functioning with Σρ ≠ 1; a quantity that survives the removal while another fails. Classification: count conservation DERIVED (from the definition of ρ as a normalized counting measure, QG194); geometry/information/measurement/black-hole bookkeeping DERIVED (all require the normalized count). The foundation is definitional — and that is exactly why everything stands on it. No new primitive; canonical AT unchanged.",
+            "For non-experts: the theory is built on a count — how many events landed in each possibility — and the total of that count is always normalized to one. This audit asks: is that 'always adds up to one' a trivial bookkeeping choice or something deep? The answer is that it is built into the very definition — the theory's counting comes with a built-in normalizer that makes the fractions sum to one by construction, like dividing every share of a pie by the pie's total size. That sounds like a detail, but it is the load-bearing wall. If the fractions did NOT sum to one, the geometry would fail (the ruler would no longer measure volume), the information would be undefined (it is defined only for a proper distribution), measurements would be meaningless (probabilities must add to one), and black holes would lose information (the balance sheet would not balance). Every one of these fails at the same instant — there is no first casualty. The 'bookkeeping detail' turns out to be the foundation.",
+            "Σρ = 1 is built into the count's definition — and geometry, information, measurement, and bookkeeping all stand on it.",
+            "“The pie always sums to one — and every law is built on that.”",
+            true,
+            [
+                new("ResearchY-QG_005", "COUNT-TO-GEOMETRY ORIGIN AUDIT",
+                    "Geometry requires ρ — QG_006 shows ρ's conservation is definitional.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/QG_GeometryBridge/ResearchY-QG_005.md"),
+                new("ResearchY-NP_020", "BLACK HOLE INFORMATION AUDIT",
+                    "H_before = H_after — the black-hole balance that IS count conservation.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_020.md"),
+                new("ResearchY-M_005", "INFORMATION CONSERVATION AUDIT",
+                    "Information conservation through actualization — built on the conserved count.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/M_Measurement/ResearchY-M_005.md"),
+                new("ResearchY-QG_006", "COUNT CONSERVATION ORIGIN AUDIT",
+                    "Definitional (normalizer S) AND necessary — removing it collapses everything at once.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/QG_GeometryBridge/ResearchY-QG_006.md"),
+            ]),
+        new(
             "researchy-qg005-count-to-geometry",
             "Geometry Is the Measurement of the Distinguishability Density",
             "ResearchY Milestone · QG_005 (V2.2 New Physics — Geometry Bridge)",
