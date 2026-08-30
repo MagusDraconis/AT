@@ -95,6 +95,7 @@
 | ResearchY-NP_017 | Natural D96 Signature Search | `NP_NewPhysics/ResearchY-NP_017.md` | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_017_Tests.cs` (6/6 ✅) | COMPLETE |
 | ResearchY-NP_018 | Distinguishability Observable Audit | `NP_NewPhysics/ResearchY-NP_018.md` | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_018_Tests.cs` (7/7 ✅) | COMPLETE |
 | ResearchY-NP_019 | Information Cosmology Audit | `NP_NewPhysics/ResearchY-NP_019.md` | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_019_Tests.cs` (5/5 ✅) | COMPLETE |
+| ResearchY-NP_020 | Black Hole Information Audit | `NP_NewPhysics/ResearchY-NP_020.md` | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_020_Tests.cs` (7/7 ✅) | COMPLETE |
 | ResearchY-M_001 | Measurement Origin Audit | `M_Measurement/ResearchY-M_001.md` | `AT.Tests/ResearchY/M_Measurement/Y_M_001_Tests.cs` (7/7 ✅) | COMPLETE |
 | ResearchY-M_002 | Measurement Disturbance Audit | `M_Measurement/ResearchY-M_002.md` | `AT.Tests/ResearchY/M_Measurement/Y_M_002_Tests.cs` (7/7 ✅) | COMPLETE |
 | ResearchY-M_003 | Measurement Feedback Audit | `M_Measurement/ResearchY-M_003.md` | `AT.Tests/ResearchY/M_Measurement/Y_M_003_Tests.cs` (5/5 ✅) | COMPLETE |

@@ -1673,6 +1673,33 @@ H₀/σ₈/BAO/growth BOUNDARY or calibration (no direct relation). I_occ is a g
 NARROW cosmological variable — it fixes the density fractions and nothing else
 directly. No new primitive; canonical AT unchanged.
 
+ResearchY-NP_020 (Black Hole Information Audit, COMPLETE, tests 7/7 PASSED): does the
+Difference → Information chain change black-hole information physics? Verdict: a black
+hole CANNOT eliminate Difference — information is conserved through horizon formation
+(M_005). Information is DERIVED from distinguishability (D_039: 95 distinct states
+pre-exist) and CONSERVED through actualization (M_005: measurement reveals and
+redistributes, never creates or destroys). The conserved quantities — count (Σρ = 1,
+Born QG216), positivity (ρ ≥ 0), normalization, and state identity (the 95 states
+remain distinct) — all survive horizon crossing; none is removed by the geometric
+boundary. An event horizon removes ACCESS (external observability) but not
+DISTINGUISHABILITY (D_039 is a state-space property, not geometric). INFORMATION
+FATES: A) destroyed — NO (conservation, M_005); B) hidden — YES (external
+inaccessibility); C) redistributed — YES (radiation/measurement re-encoding); D)
+preserved — YES (H_before = H_after = log₂(95) = H_hidden + H_observer). REQUIRED
+MECHANISM: HORIZON BOOKKEEPING — storage (states retain distinguishability),
+redistribution (re-encoding in the external system), encoding (new hidden/accessible
+partition), bookkeeping (conservation across the horizon). AT resolves the information
+paradox in the UNITARITY-CONSERVING direction and grounds it in the primitives.
+COMPARISON: GR — information can classically disappear; QM — unitarity implies
+conservation but the mechanism is debated; black-hole thermodynamics — entropy ~
+area/4 (Bekenstein-Hawking); AT — conserved through actualization, the horizon only
+repartitions. FALSIFICATION: information NON-conservation across horizon formation (a
+measurable H_before ≠ H_after). Classification: information conservation DERIVED
+(M_005); distinguishability primitive-invariance DERIVED (D_039); horizon as a
+partition (not an annihilator) EMERGENT; horizon bookkeeping PREDICTION (the
+conservation mechanism); Bekenstein-Hawking entropy-area relation BOUNDARY (not
+derived here). No new primitive; canonical AT unchanged.
+
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-

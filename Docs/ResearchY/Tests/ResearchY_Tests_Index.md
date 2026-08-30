@@ -46,6 +46,7 @@ ResearchY-NP_016  ↔  Y_NP_016_Tests.cs    (AT.Tests/ResearchY/NP_NewPhysics/)
 ResearchY-NP_017  ↔  Y_NP_017_Tests.cs    (AT.Tests/ResearchY/NP_NewPhysics/)
 ResearchY-NP_018  ↔  Y_NP_018_Tests.cs    (AT.Tests/ResearchY/NP_NewPhysics/)
 ResearchY-NP_019  ↔  Y_NP_019_Tests.cs    (AT.Tests/ResearchY/NP_NewPhysics/)
+ResearchY-NP_020  ↔  Y_NP_020_Tests.cs    (AT.Tests/ResearchY/NP_NewPhysics/)
 ```
 
 ## Test Registry
@@ -136,6 +137,7 @@ ResearchY-NP_019  ↔  Y_NP_019_Tests.cs    (AT.Tests/ResearchY/NP_NewPhysics/)
 | ResearchY-NP_017 (Natural D96 Signature Search) | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_017_Tests.cs` | ACTIVE | 2026-08-30 | ✅ 6/6 PASSED — `Results/Y_NP_017_Result.md` |
 | ResearchY-NP_018 (Distinguishability Observable Audit) | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_018_Tests.cs` | ACTIVE | 2026-08-30 | ✅ 7/7 PASSED — `Results/Y_NP_018_Result.md` |
 | ResearchY-NP_019 (Information Cosmology Audit) | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_019_Tests.cs` | ACTIVE | 2026-08-30 | ✅ 5/5 PASSED — `Results/Y_NP_019_Result.md` |
+| ResearchY-NP_020 (Black Hole Information Audit) | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_020_Tests.cs` | ACTIVE | 2026-08-30 | ✅ 7/7 PASSED — `Results/Y_NP_020_Result.md` |
 
 ## Result Summaries
 

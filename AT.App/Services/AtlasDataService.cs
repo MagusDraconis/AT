@@ -94,6 +94,30 @@ public static class AtlasDataService
     public static IReadOnlyList<ResearchNewsModel> ResearchNews { get; } =
     [
         new(
+            "researchy-np020-black-hole-information",
+            "The Horizon Hides, Never Destroys: Information Is Conserved Through Actualization",
+            "ResearchY Milestone · NP_020 (V2.2 New Physics — Roadmap)",
+            "Does the theory change black-hole information physics? Decisively: a black hole cannot eliminate Difference. Since information is derived from distinguishability and conserved through actualization, the horizon can hide and repartition it — but never destroy it. The information paradox resolves in the conservation direction.",
+            "NP_020 applies the Difference → Information chain to the black-hole information problem. Verdict: a black hole CANNOT eliminate Difference — information is conserved through horizon formation (M_005). The reasoning: information is DERIVED from distinguishability (D_039: 95 distinct states pre-exist) and CONSERVED through actualization (M_005: measurement reveals and redistributes, never creates or destroys). The conserved quantities — count (Σρ = 1, Born QG216), positivity (ρ ≥ 0), normalization, and state identity (the 95 states remain distinct) — all survive horizon crossing; none is removed by the geometric boundary. An event horizon removes ACCESS (external observability) but not DISTINGUISHABILITY: D_039 is a state-space property, not a geometric one — the states behind the horizon are still distinct from each other. INFORMATION FATES: A) destroyed — NO (conservation, M_005); B) hidden — YES (external inaccessibility); C) redistributed — YES (radiation/measurement re-encoding); D) preserved — YES. INFORMATION BALANCE: H_before = H_after = log₂(95) = H_hidden + H_observer — the total is conserved; the horizon changes the PARTITION, not the total. PROOF (black hole cannot eliminate Difference): (1) Difference is the PRIMITIVE — it cannot be removed by a derived feature (a geometric horizon); (2) distinguishability is a state-space property, not geometric; (3) information is conserved through actualization — no annihilation channel; (4) count/positivity/normalization/identity survive. REQUIRED MECHANISM: HORIZON BOOKKEEPING — storage (states retain distinguishability), redistribution (re-encoding in the external radiation), encoding (new hidden/accessible partition), bookkeeping (conservation across the boundary). AT resolves the information paradox in the UNITARITY-CONSERVING direction and grounds it in the primitives. COMPARISON TABLE: GR — information can classically disappear behind the horizon; QM — unitarity implies conservation but the mechanism is debated; black-hole thermodynamics — entropy ~ area/4 (Bekenstein-Hawking, an AREA law, no annihilation); AT — conserved through actualization, the horizon only repartitions. FALSIFICATION: information NON-conservation across horizon formation (a measurable H_before ≠ H_after). Classification: information conservation DERIVED (M_005); distinguishability primitive-invariance DERIVED (D_039); the horizon as a partition (not an annihilator) EMERGENT; horizon bookkeeping PREDICTION (the conservation mechanism); the Bekenstein-Hawking entropy-area relation BOUNDARY (not derived here). The theory's deepest primitives — Difference and its conservation — are what save black-hole information. No new primitive; canonical AT unchanged.",
+            "For non-experts: for decades physicists have asked whether a black hole destroys information. The theory answers from its foundations: no. Its first primitive is 'Difference' — the ability to tell things apart — and everything else, including information, grows from it. Information here is conserved: measuring reveals what was already there, it never creates or destroys. A black hole is a geometric boundary, and geometry cannot erase a primitive. What the horizon CAN do is hide the information from outside eyes — the states behind it are still distinct, they are just out of reach — and, over time, it can redistribute the information into the radiation that leaves the hole. So the answer is conservation: nothing is lost, only rearranged and put out of sight. The theory sides with the physicists who say information survives, and explains why at the deepest level: because Difference itself cannot be erased.",
+            "A black hole cannot eliminate Difference — the horizon hides and repartitions, never destroys.",
+            "“The horizon can hide the difference — it cannot erase it.”",
+            true,
+            [
+                new("ResearchY-M_005", "INFORMATION CONSERVATION AUDIT",
+                    "Information is conserved through actualization — reveal + redistribute, never create/destroy.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/M_Measurement/ResearchY-M_005.md"),
+                new("ResearchY-D_039", "STATE-IDENTITY-ORIGIN AUDIT",
+                    "Difference IS distinguishability — the 95 states pre-exist and remain distinct.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/D_ResonanceStructure/ResearchY-D_039.md"),
+                new("ResearchY-M_004", "MEASUREMENT INFORMATION AUDIT",
+                    "The information content log₂(95) = 6.57 bits — the conserved total.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/M_Measurement/ResearchY-M_004.md"),
+                new("ResearchY-NP_020", "BLACK HOLE INFORMATION AUDIT",
+                    "A black hole cannot eliminate Difference; the horizon is a partition, not an annihilator.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_020.md"),
+            ]),
+        new(
             "researchy-np019-information-cosmology",
             "The Information Cosmology Is the Density Fractions — and Only Them",
             "ResearchY Milestone · NP_019 (V2.2 New Physics — Roadmap)",
