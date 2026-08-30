@@ -1440,6 +1440,33 @@ no-extremum property DERIVED (self-rate dynamics ignores I); variational (gradie
 actualization EMERGENT (under the added requirement) / BOUNDARY in canonical AT. No new
 primitive; canonical AT unchanged.
 
+ResearchY-NP_010 (Second Network Layer Audit, COMPLETE, tests 6/6 PASSED): does a
+second coupling network exist above Actualization? Verdict: synchronization requires a
+SECOND network layer (the phase-flow/gradient layer) above the primary actualization
+chain — structurally present, dynamically absent in canonical AT. NETWORK 1
+(Actualization): local self-rate update θ(t+1)=θ(t)+Δθ (D_041); no phase flow; unequal
+modes drift — cannot synchronize (NP_005). κ IS A LINK PROPERTY (B): κ = 2√(ρ_Aρ_B)
+depends on BOTH endpoints (verified: κ(0.25,0.75)=0.866; 2√ρ_A alone ≠ it) and is
+symmetric (κ(A,B)=κ(B,A)); NOT a state property (A) and NOT a propagating field value
+(C — it is a static link weight, NP_007). HIDDEN NETWORK SEARCH: reciprocity (D_037)
+is the symmetric read basis — no phase flow; interference provides static links — no
+flow; information flow (M_005) redistributes counts — not phases; shared actualization
+events (M_002) pin once — drift resumes. NETWORK 2 (phase-flow layer): STRUCTURALLY
+present (the interference link weights are derived), DYNAMICALLY absent (no canonical
+mechanism carries phase flow) → BOUNDARY in canonical AT. Does synchronization emerge
+only with a second level? YES — Network 1 alone leaves unequal modes drifting; the
+gradient term η·∂I/∂θ (Network 2) locks rel → 0 (max I = 1.866; κ = 0.866 ≥ 0.5236
+threshold) and makes collective modes stable. Trace: Difference → Actualization →
+Network 1 (local, DERIVED); Difference → Reciprocity → interference links (κ,
+DERIVED) → Network 2 (phase-flow, structurally present/dynamically absent).
+Falsification: Network-1-unsynchronized claim falsified if unequal modes synchronize
+on the pure self-rate update; κ-link-property falsified if the coefficient depends on
+one state or a propagating field; second-layer necessity falsified if synchronization
+is observed with only static weights. Classification: Network 1 DERIVED (fixed Δθ);
+interference link weights DERIVED (Born cross-amplitude); κ as link property DERIVED;
+Network 2 EMERGENT (under variational requirement) / BOUNDARY in canonical AT. No new
+primitive; canonical AT unchanged.
+
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-

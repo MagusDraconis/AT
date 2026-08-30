@@ -94,6 +94,30 @@ public static class AtlasDataService
     public static IReadOnlyList<ResearchNewsModel> ResearchNews { get; } =
     [
         new(
+            "researchy-np010-second-network-layer",
+            "Synchronization Sits on a Second Network Layer — Present in Structure, Absent in Dynamics",
+            "ResearchY Milestone · NP_010 (V2.2 New Physics — Roadmap)",
+            "Does the theory have a second coupling network above Actualization? The link weights exist — κ = 2√(ρ_Aρ_B), a genuine link property — but the layer that would carry phase flow does not act in canonical AT. Synchronization would need that second layer; it is structurally there and dynamically missing.",
+            "NP_010 asks whether a second coupling network exists above Actualization. Verdict: synchronization requires a SECOND network layer (the phase-flow/gradient layer) above the primary actualization chain — STRUCTURALLY present, DYNAMICALLY absent in canonical AT. NETWORK 1 (Actualization) is local: the update θ(t+1)=θ(t)+Δθ (D_041) carries each state's self-rate and count but no phase flow; unequal modes drift — Network 1 alone cannot synchronize (NP_005). κ IS A LINK PROPERTY (option B): κ = 2√(ρ_Aρ_B) depends on BOTH endpoints (verified: κ(0.25,0.75)=0.866, while 2√ρ_A alone ≠ it) and is symmetric (κ(A,B)=κ(B,A)); it is NOT a state property (A) and NOT a propagating field value (C — it is a static link weight, NP_007). HIDDEN NETWORK SEARCH — all candidates lack phase flow: reciprocity (D_037) is the symmetric read basis (structural map, not dynamics); interference provides static links (no flow); information flow (M_005) redistributes counts, not phases; shared actualization events (M_002) pin once, then drift resumes. NETWORK 2 (the phase-flow layer) is therefore STRUCTURALLY present — its link weights are derived — but DYNAMICALLY absent: no canonical mechanism moves phase along the links. DOES SYNCHRONIZATION EMERGE ONLY WITH A SECOND LEVEL? YES — Network 1 alone leaves unequal modes drifting; the gradient term η·∂I/∂θ (Network 2) locks the relative phase at rel → 0 (the max of I, 1.866; κ = 0.866 satisfies the NP_005 threshold 0.5236) and makes collective modes stable attractors. TRACE: Difference → Actualization → Network 1 (local, DERIVED); Difference → Reciprocity (D_037) → interference links (κ, DERIVED) → Network 2 (phase-flow layer — structurally present, dynamically absent → BOUNDARY). FALSIFICATION: the Network-1-unsynchronized claim is falsified if unequal modes synchronize on the pure self-rate update; the κ-link-property claim is falsified if the coefficient depends on a single state or a propagating field; the second-layer necessity is falsified if synchronization is observed with only the static weights. Classification: Network 1 DERIVED (fixed Δθ); interference link weights DERIVED (Born cross-amplitude); κ as a link property DERIVED; Network 2 EMERGENT under a variational requirement, BOUNDARY in canonical AT. The theory has one network that acts (Actualization) and one network that is only drawn (the phase-flow layer whose weights are derived). No new primitive; canonical AT unchanged.",
+            "For non-experts: does the theory have a second, higher layer of connections that could make waves fall into step? The honest picture is this: the theory definitely has one layer that ACTS — every wave advances by its own fixed rate, and that alone never makes unlike waves synchronize. It also has the raw material for a second layer: whenever two waves overlap, the strength of their connection is set by the two sizes (twice the square root of their product) — a genuine property of the connection, not of either wave alone. But nothing in the theory actually pushes the phases along those connections. So the second layer is drawn — its connection strengths exist — yet it is not switched on. If it were switched on, waves would lock at maximum brightness and synchronization would appear. Today the theory has one acting layer and one dormant one.",
+            "A second network is drawn (derived link weights) but not switched on — synchronization would live there.",
+            "“One network acts; one is drawn but dormant.”",
+            true,
+            [
+                new("ResearchY-NP_007", "COUPLING FIELD AUDIT",
+                    "The static coupling network whose link weights NP_010 classifies as the second layer's structure.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_007.md"),
+                new("ResearchY-NP_009", "VARIATIONAL ACTUALIZATION AUDIT",
+                    "The gradient term that would activate Network 2 — the phase-flow dynamics.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_009.md"),
+                new("ResearchY-NP_005", "MISSING SYNCHRONIZATION MECHANISM AUDIT",
+                    "Network 1 alone cannot synchronize — the second layer is necessary.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_005.md"),
+                new("ResearchY-NP_010", "SECOND NETWORK LAYER AUDIT",
+                    "κ is a link property; the phase-flow layer is structurally present, dynamically absent.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_010.md"),
+            ]),
+        new(
             "researchy-np009-variational-actualization",
             "Actualization Has No Hidden Objective — But One Gradient Term Would Make It Maximize Interference",
             "ResearchY Milestone · NP_009 (V2.2 New Physics — Roadmap)",
