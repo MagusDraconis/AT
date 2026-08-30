@@ -57,6 +57,7 @@ ResearchY-QG_006  ↔  Y_QG_006_Tests.cs     (AT.Tests/ResearchY/QG_GeometryBrid
 ResearchY-QG_007  ↔  Y_QG_007_Tests.cs     (AT.Tests/ResearchY/QG_GeometryBridge/)
 ResearchY-QG_008  ↔  Y_QG_008_Tests.cs     (AT.Tests/ResearchY/QG_GeometryBridge/)
 ResearchY-QG_009  ↔  Y_QG_009_Tests.cs     (AT.Tests/ResearchY/QG_GeometryBridge/)
+ResearchY-QG_010  ↔  Y_QG_010_Tests.cs     (AT.Tests/ResearchY/QG_GeometryBridge/)
 ```
 
 ## Test Registry
@@ -158,6 +159,7 @@ ResearchY-QG_009  ↔  Y_QG_009_Tests.cs     (AT.Tests/ResearchY/QG_GeometryBrid
 | ResearchY-QG_007 (Count Conservation Necessity Audit) | `AT.Tests/ResearchY/QG_GeometryBridge/Y_QG_007_Tests.cs` | ACTIVE | 2026-08-30 | ✅ 5/5 PASSED — `Results/Y_QG_007_Result.md` |
 | ResearchY-QG_008 (Finite Distinguishability Audit) | `AT.Tests/ResearchY/QG_GeometryBridge/Y_QG_008_Tests.cs` | ACTIVE | 2026-08-30 | ✅ 7/7 PASSED — `Results/Y_QG_008_Result.md` |
 | ResearchY-QG_009 (Infinite State Space Consistency Audit) | `AT.Tests/ResearchY/QG_GeometryBridge/Y_QG_009_Tests.cs` | ACTIVE | 2026-08-30 | ✅ 7/7 PASSED — `Results/Y_QG_009_Result.md` |
+| ResearchY-QG_010 (Observable Finiteness Audit) | `AT.Tests/ResearchY/QG_GeometryBridge/Y_QG_010_Tests.cs` | ACTIVE | 2026-08-30 | ✅ 5/5 PASSED — `Results/Y_QG_010_Result.md` |
 
 ## Result Summaries
 

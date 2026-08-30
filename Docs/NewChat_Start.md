@@ -237,7 +237,7 @@ Oblique parameters origin (S = occ₀/Σm = 0.0421, T = 2S = 0.0842, U = 0; T = 
 
 Open Questions:
 
-- current working hypothesis: the minimal base is Difference → Actualization → Spectrum → Physics; Q-events and the rest of the network hierarchy are downstream realizations, and the V2.0 audit pass classifies the first-peak 5/4 factor as a documented FIT (QG297, removable QG289, no mechanism) — only ℓ₁ carries it while peak ratios are pure spectral correspondences; dimensional observables still require imported calibration anchors (v, m_e, and standard unit conversion), so units are fixed by measurement/convention rather than derived from the spectrum; N=96 is inevitable within the accepted structural class (period-3 seed, Z2 half-shift, three-family octave window), but a global proof excluding every conceivable alternative closure remains open; the ResearchY QG_008/QG_009 audits pin the state-space finiteness: finite N is a BOUNDARY required only for the AT uniform-reference information observable chain (I_occ = KL(ρ‖uniform), ΩΛ), while a CONVERGENT infinite state space is internally consistent for normalization, realized entropy (geometric ρ_k = (1−r)r^k gives Σρ = 1 and H = 2.0 bits), measurement, geometry, and gravity — the first genuine failure of infinite N is the uniform reference (no normalized uniform measure exists on a countable set), refining the "information breaks first" reading of QG_008.
+- current working hypothesis: the minimal base is Difference → Actualization → Spectrum → Physics; Q-events and the rest of the network hierarchy are downstream realizations, and the V2.0 audit pass classifies the first-peak 5/4 factor as a documented FIT (QG297, removable QG289, no mechanism) — only ℓ₁ carries it while peak ratios are pure spectral correspondences; dimensional observables still require imported calibration anchors (v, m_e, and standard unit conversion), so units are fixed by measurement/convention rather than derived from the spectrum; N=96 is inevitable within the accepted structural class (period-3 seed, Z2 half-shift, three-family octave window), but a global proof excluding every conceivable alternative closure remains open; the ResearchY QG_008/QG_009 audits pin the state-space finiteness: finite N is a BOUNDARY required only for the AT uniform-reference information observable chain (I_occ = KL(ρ‖uniform), ΩΛ), while a CONVERGENT infinite state space is internally consistent for normalization, realized entropy (geometric ρ_k = (1−r)r^k gives Σρ = 1 and H = 2.0 bits), measurement, geometry, and gravity — the first genuine failure of infinite N is the uniform reference (no normalized uniform measure exists on a countable set), refining the "information breaks first" reading of QG_008; and QG_010 RESOLVES the finiteness question in the observable direction: observability itself requires finite distinguishability (the measurement event M_001 is a finite act with finite information capacity log₂(N_obs), M_004 — an infinite observable alphabet would need log₂(N) → ∞ bits per event), so the OBSERVABLE state space is DERIVED-finite while the underlying state-space finiteness remains BOUNDARY (QG_008).
 - the authoritative frontier catalog is now the QG295–QG300 closure run: QG296 reconstruction completes the QG223–295 map, QG297 isolates the 5/4 exception, QG298 resolves the first peak, and the remaining frontier is primarily experimental — P1 106 GeV, P2 0νββ, P3 ladder; no gravity item remains
 - CORRECTION OF RECORD (V2.0 audit pass): the QG298/QG299 "5/4 = structural boundary projection (occ₀ + zero_mode)/occ₀" reading is REJECTED — that identity is a label identity without a mechanism (the same standard used to reject Bekenstein 1/occ₀ = 1/4); the registry classifies 5/4 as FIT (QG297, removable QG289). This supersedes the QG298 DETERMINATION and the QG299 "R4 5/4 CLOSED" entry; see Docs/Research/ATQG_AUDIT_MILESTONE_V20.md
 - P1 (106 GeV) status after QG199: PENDING — window 99–114 GeV neither confirmed nor excluded; 95 GeV cluster = 91.19 rung; new 152 GeV excess = 151.98 rung (P3, not P1); HL-LHC decisive
@@ -1983,6 +1983,46 @@ entropy H(ρ) DERIVED (finite for convergent ρ); capacity log₂(N) DERIVED (di
 a capacity, not an observable); uniform reference REFUTED for infinite N; AT
 observable I_occ/ΩΛ BOUNDARY (finite-only); measurement/geometry/gravity DERIVED
 (survive any convergent ρ). No new primitive; canonical AT unchanged.
+
+ResearchY-QG_010 (Observable Finiteness Audit, COMPLETE, tests 5/5 PASSED): why is the
+observable state space finite if infinite distinguishability is consistent? Verdict:
+OBSERVABILITY REQUIRES FINITE DISTINGUISHABILITY — PROVEN. A measurement event is a
+FINITE act (M_001: reads both quadratures of one complex mode, D_037; produces one
+outcome) with finite information capacity log₂(N_obs) (M_004: resolving WHICH of
+N_obs states is realized carries log₂(N_obs) bits; log₂(95) = 6.57 bits). COMPARE
+observable finite vs infinite: finite N (95) — state identity fully resolvable
+(D_039), measurement resolves 1 of 95, information gain log₂(95) = 6.57 bits/event,
+distinguishability 95/95 realized; infinite N — states distinct in principle but only
+finitely many resolvable per event, one event must resolve 1 of ∞ (impossible with
+finite info), information gain log₂(N) → ∞ DIVERGES (verified log₂(10⁹) = 29.9 bits
+and growing), observable distinguishability bounded by event capacity. THE SELECTING
+PROPERTY: the FINITE INFORMATION CAPACITY OF A SINGLE MEASUREMENT EVENT — finite
+event (M_001) → finite capacity log₂(N_obs) (M_004) → finite outcome alphabet →
+FINITE OBSERVABLE STATE SPACE. THE FOUR FINITE LINKS: finite observer (M_006 — the
+observer is itself a distinguishable subsystem), finite measurement (M_001 — both-
+quadrature readout), finite resolution (M_002/M_004 — one outcome per event), finite
+bookkeeping (M_005/NP_021 — finite conserved count) — ALL present. PROVE/REFUTE:
+observability requires finite distinguishability — PROVEN (a finite act cannot index
+an infinite alphabet; an infinite observable space would need log₂(N) → ∞ bits/event;
+so N_obs < ∞). DOES NOT CONTRADICT QG_009: infinite state spaces are structurally
+consistent, but the OBSERVABLE PROJECTION of any state space is finite. RESOLVES
+QG_009 OP1: observability (not Difference) is what pins the finite OBSERVABLE state
+space — the finite state space physics uses is the largest set a single actualization
+event can resolve. Counterexamples: 'an infinite observable space has finite per-event
+info' fails (log₂(N_obs) → ∞); 'a finite event can resolve 1 of ∞ outcomes' fails
+(needs infinite info to index an infinite alphabet); 'observability is independent of
+state-space size' fails (measurement resolves state identity — the resolvable set IS
+the observable space); 'the observer can be infinite' fails (a distinguishable
+subsystem, M_006); 'QG_009 makes observability infinite-consistent' fails (structural
+only; observability projects onto a finite set). Falsification: an observable state
+space larger than 2^(info per event); an event resolving an infinite alphabet with
+finite information; per-event info exceeding the event's capacity; an infinite
+observer (contradicts M_006). Classification: observable state-space finiteness
+DERIVED (from the finite measurement event's information capacity, M_004); the finite
+measurement event EMERGENT (M_001); finite information capacity log₂(N_obs) DERIVED
+(M_004); state identity DERIVED (D_039); underlying state-space finiteness BOUNDARY
+(QG_008 — required for the KL-to-uniform chain); observable distinguishability DERIVED
+(bounded by the event's capacity). No new primitive; canonical AT unchanged.
 
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
