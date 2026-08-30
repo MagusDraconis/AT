@@ -1700,6 +1700,29 @@ partition (not an annihilator) EMERGENT; horizon bookkeeping PREDICTION (the
 conservation mechanism); Bekenstein-Hawking entropy-area relation BOUNDARY (not
 derived here). No new primitive; canonical AT unchanged.
 
+ResearchY-NP_021 (Information Horizon Audit, COMPLETE, tests 5/5 PASSED): if
+information is conserved, where is it stored across a horizon? Verdict: HORIZON
+BOOKKEEPING — storage + redistribution + encoding; state-space expansion is REFUTED.
+BEFORE the horizon: the total information H = log₂(95) = 6.57 bits lives in the
+95-state distinguishability (D_039) — a property of the states, not the geometry;
+count Σρ = 1 conserved (Born QG216). AFTER the horizon: the same information is
+PARTITIONED — H = H_hidden + H_observer, the hidden part stored in the distinct states
+behind the horizon, the observer part re-encoded in the external radiation (M_005); the
+state space is still 95 (distinguishability intact). MECHANISM TEST: storage — YES
+(in-falling states retain distinguishability, D_039); redistribution — YES (external
+radiation re-encodes over time, M_005); encoding — YES (the horizon defines a new
+hidden/accessible partition); state-space expansion — NO (the state space is the
+PRIMITIVE distinguishability count, FIXED at 95 — it cannot grow to absorb the
+information). WHICH PRESERVES DISTINGUISHABILITY: storage + redistribution + encoding —
+the total log₂(95) = H_hidden + H_observer is conserved; only the partition changes.
+FALSIFICATION: an accessible information content inconsistent with the partition (total
+≠ log₂ 95); a measured state count ≠ 95; a mechanism that merges the hidden states; a
+horizon with no re-encoding channel. Classification: information balance DERIVED
+(M_005); storage in distinct states DERIVED (D_039); redistribution into the external
+system EMERGENT (radiation/measurement channel); encoding (hidden/accessible partition)
+EMERGENT; horizon bookkeeping as a whole PREDICTION; state-space expansion REFUTED
+(state space fixed at 95). No new primitive; canonical AT unchanged.
+
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-

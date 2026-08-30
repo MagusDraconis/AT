@@ -94,6 +94,30 @@ public static class AtlasDataService
     public static IReadOnlyList<ResearchNewsModel> ResearchNews { get; } =
     [
         new(
+            "researchy-np021-information-horizon",
+            "Where the Information Goes: Storage, Redistribution, Encoding — Not Expansion",
+            "ResearchY Milestone · NP_021 (V2.2 New Physics — Roadmap)",
+            "If information is conserved, where does it live across a horizon? In the states themselves (storage), in the escaping radiation (redistribution), and in the hidden/accessible split (encoding). Not in an expanded state space — that is fixed at 95 by the primitive distinguishability itself.",
+            "NP_021 answers the follow-up to NP_020: if a black hole cannot destroy information, WHERE is it kept? Verdict: HORIZON BOOKKEEPING — storage + redistribution + encoding; state-space expansion is REFUTED. BEFORE THE HORIZON: the total information H = log₂(95) = 6.57 bits lives in the 95-state distinguishability (D_039) — a property of the states, not of the geometry; the count Σρ = 1 is conserved (Born, QG216). AFTER THE HORIZON: the same information is PARTITIONED — H = H_hidden + H_observer — the hidden part stored in the distinct states behind the horizon, the observer part re-encoded in the external radiation (M_005); the state space is still 95, distinguishability intact. MECHANISM TEST: STORAGE — YES (the in-falling states retain their distinguishability, D_039 — the information is stored in the distinct states); REDISTRIBUTION — YES (the external radiation re-encodes the information over time, M_005: redistribute); ENCODING — YES (the horizon defines a new hidden/accessible partition — the same information in a different split); STATE-SPACE EXPANSION — NO (the state space is the PRIMITIVE distinguishability count, FIXED at 95 — it cannot grow to 'absorb' the information). WHICH MECHANISM PRESERVES DISTINGUISHABILITY: storage + redistribution + encoding — the total log₂(95) = H_hidden + H_observer is conserved; only the partition changes. FALSIFICATION: an accessible information content inconsistent with the partition (total ≠ log₂ 95); a measured state count ≠ 95; a mechanism that merges the hidden states (losing distinguishability); a horizon with no re-encoding channel (information permanently inaccessible). Classification: information balance DERIVED (M_005); storage in distinct states DERIVED (D_039); redistribution into the external system EMERGENT (the radiation/measurement channel); encoding (the hidden/accessible partition) EMERGENT; horizon bookkeeping as a whole PREDICTION (the conservation mechanism); state-space expansion REFUTED (the state space is fixed at 95). The theory's answer to where information goes: it is kept in the states, leaked into the radiation, and re-split by the horizon — never created, never destroyed, never absorbed by a growing state space. No new primitive; canonical AT unchanged.",
+            "For non-experts: after establishing that a black hole cannot destroy information, the natural question is: where does the information actually live? This audit answers with three verbs. It is STORED — the states that fell in are still distinct from one another behind the horizon, so their information is still there, just out of sight. It is REDISTRIBUTED — as the hole slowly radiates, the information is carried away into that radiation, over time. And it is ENCODED — the horizon simply draws a line between what is hidden and what is visible, reshuffling which parts you can see. What does NOT happen: the theory's set of possible states does not grow to 'absorb' the information — that set is fixed by the theory's first principle and cannot expand. Storage, leakage, reshuffling — three mechanisms, one conserved total.",
+            "Information is stored in the states, leaked into radiation, re-split by the horizon — never absorbed by expansion.",
+            "“Kept, leaked, reshuffled — never grown, never lost.”",
+            true,
+            [
+                new("ResearchY-NP_020", "BLACK HOLE INFORMATION AUDIT",
+                    "NP_020 established the horizon hides but never destroys; NP_021 asks where it is kept.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_020.md"),
+                new("ResearchY-D_039", "STATE-IDENTITY-ORIGIN AUDIT",
+                    "The 95 distinct states — the storage medium that cannot be expanded.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/D_ResonanceStructure/ResearchY-D_039.md"),
+                new("ResearchY-M_005", "INFORMATION CONSERVATION AUDIT",
+                    "Reveal + redistribute — the conservation law behind the redistribution mechanism.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/M_Measurement/ResearchY-M_005.md"),
+                new("ResearchY-NP_021", "INFORMATION HORIZON AUDIT",
+                    "Storage + redistribution + encoding; state-space expansion refuted (state space fixed at 95).",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_021.md"),
+            ]),
+        new(
             "researchy-np020-black-hole-information",
             "The Horizon Hides, Never Destroys: Information Is Conserved Through Actualization",
             "ResearchY Milestone · NP_020 (V2.2 New Physics — Roadmap)",
