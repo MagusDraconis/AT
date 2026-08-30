@@ -39,6 +39,7 @@ ResearchY-NP_009  ↔  Y_NP_009_Tests.cs    (AT.Tests/ResearchY/NP_NewPhysics/)
 ResearchY-NP_010  ↔  Y_NP_010_Tests.cs    (AT.Tests/ResearchY/NP_NewPhysics/)
 ResearchY-NP_011  ↔  Y_NP_011_Tests.cs    (AT.Tests/ResearchY/NP_NewPhysics/)
 ResearchY-NP_012  ↔  Y_NP_012_Tests.cs    (AT.Tests/ResearchY/NP_NewPhysics/)
+ResearchY-NP_013  ↔  Y_NP_013_Tests.cs    (AT.Tests/ResearchY/NP_NewPhysics/)
 ```
 
 ## Test Registry
@@ -122,6 +123,7 @@ ResearchY-NP_012  ↔  Y_NP_012_Tests.cs    (AT.Tests/ResearchY/NP_NewPhysics/)
 | ResearchY-NP_010 (Second Network Layer Audit) | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_010_Tests.cs` | ACTIVE | 2026-08-30 | ✅ 6/6 PASSED — `Results/Y_NP_010_Result.md` |
 | ResearchY-NP_011 (Hidden Coupling Field Audit) | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_011_Tests.cs` | ACTIVE | 2026-08-30 | ✅ 7/7 PASSED — `Results/Y_NP_011_Result.md` |
 | ResearchY-NP_012 (Unique Prediction Search) | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_012_Tests.cs` | ACTIVE | 2026-08-30 | ✅ 6/6 PASSED — `Results/Y_NP_012_Result.md` |
+| ResearchY-NP_013 (Unique Spectral Prediction Audit) | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_013_Tests.cs` | ACTIVE | 2026-08-30 | ✅ 6/6 PASSED — `Results/Y_NP_013_Result.md` |
 
 ## Result Summaries
 

@@ -1518,6 +1518,24 @@ AT-P042 PREDICTION (structural); ω₁, family count, O(2) doublet, v-structure 
 the theory live in the N=96 SPECTRUM, not the measurement program. No new primitive;
 canonical AT unchanged.
 
+ResearchY-NP_013 (Unique Spectral Prediction Audit, COMPLETE, tests 6/6 PASSED): what
+observable follows uniquely from ω₁, span, family count, and O(2) doublets — and cannot
+be reproduced by QM/SM/GR? Verdict: the strongest D96-specific prediction is the O(2)
+EXACT DOUBLET DEGENERACY (λ_k = λ_{N−k} for every mode k, D_021) — a structural,
+falsifiable claim absent from QM (fixes no spectrum), GR (fixes no frequencies), and SM
+(inputs, does not derive, v and the family count). SPECTRAL QUANTITIES (N=96): ω₁ =
+√91·(2π/N) ≈ 0.6244 (verified ω₁·N/(2π) = 9.50 vs √91 = 9.54, the √91 K=6 factor);
+λ₂ = 2−2cos(4π/96) ≈ 0.0171; span = 6.4025 (algebraic π-analogue, D_028/D_042);
+family count = floor(log₂ span)+1 = 3 (D_046 P8); v = 137·ln(span) = 254.37 GeV
+(D_046 P6). TOP-5 RANKING (uniqueness × impact × feasibility): O(2) doublets 13 and
+family count 13 (tied top); ω₁ 12; v-structure 11; span 10. FALSIFICATION: O(2)
+doublets falsified by a measured spectrum with a mode lacking its exact mirror partner;
+ω₁ by a fundamental ≠ √91·(2π/N)·scale; families by a 4th family; v by a deviating
+scale relation; span by an inconsistent max/min ratio. NONE of the five is implied by
+QM/GR/SM. Classification: all five PREDICTION (uniquely D96); O(2) doublet degeneracy
+and family count are the strongest (structural + observed-consistent). No new
+primitive; canonical AT unchanged.
+
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-

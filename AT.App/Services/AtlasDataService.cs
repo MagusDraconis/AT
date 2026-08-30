@@ -94,6 +94,30 @@ public static class AtlasDataService
     public static IReadOnlyList<ResearchNewsModel> ResearchNews { get; } =
     [
         new(
+            "researchy-np013-unique-spectral-prediction",
+            "The Strongest D96 Prediction: O(2) Exact Doublet Degeneracy",
+            "ResearchY Milestone · NP_013 (V2.2 New Physics — Roadmap)",
+            "Which D96-specific prediction is strongest? The O(2) exact doublet degeneracy: every spectral mode has an exact mirror partner, λ_k = λ_{N−k}. It is structural, falsifiable, and absent from QM, GR, and SM. The fundamental frequency ω₁ = √91·(2π/N), the 3-family count, v = 137·ln(span), and the span ratio follow.",
+            "NP_013 sharpens NP_012: which observable follows uniquely from the N=96 spectrum and cannot be reproduced by QM/SM/GR? Verdict: the strongest D96-specific prediction is the O(2) EXACT DOUBLET DEGENERACY — λ_k = λ_{N−k} for EVERY mode k (D_021). This is a structural, falsifiable claim about the spectrum that standard QM (which fixes no spectrum), GR (which fixes no frequencies), and SM (which inputs, does not derive, v and the family count) do not make. SPECTRAL QUANTITIES (N=96): ω₁ = √91·(2π/N) ≈ 0.6244 — the fundamental frequency carrying the √91 K=6 geometric factor (verified: ω₁·N/(2π) = 9.50 vs √91 = 9.54, D_046 P4); λ₂ = 2−2cos(4π/96) ≈ 0.0171; span = 6.4025 — the algebraic π-analogue (D_028/D_042); family count = floor(log₂ span)+1 = 3 (D_046 P8); v = 137·ln(span) = 254.37 GeV (D_046 P6). OBSERVABLE CONSEQUENCES: the exact mirror degeneracy of every mode; the fundamental excitation ratio; the generation number; the EW-scale structure; the max/min spectral ratio. EXCLUSION: NONE of the five is implied by QM, GR, or SM. TOP-5 RANKING (uniqueness × impact × feasibility): O(2) doublets 13 and family count 13 (tied top); ω₁ 12; v-structure 11; span 10. FALSIFICATION PATHS: O(2) doublets falsified by a measured spectrum with a mode lacking its exact mirror partner; ω₁ by a fundamental frequency ≠ √91·(2π/N)·(tick scale); families by a 4th fermion family; v by a scale relation deviating from 137·ln(span); span by an inconsistent max/min ratio. REGISTRY CANDIDATES: all five extend the D_046 prediction set (P1/P4/P5/P6/P8). Classification: all five PREDICTION (uniquely D96); the O(2) doublet degeneracy and the family count are the strongest (structural + observed-consistent). The theory's sharpest testable claims are about its spectrum. No new primitive; canonical AT unchanged.",
+            "For non-experts: this audit asks which of the theory's claims about its spectrum is strongest — and, crucially, which one ordinary physics could never produce. The winner is a symmetry of the spectrum itself: every tone in the theory's 96-tone scale has an exact mirror twin at the same pitch, like a staircase where each step has a twin on the other side. No standard physics forces that exact pairing — it is the theory's own structural signature, and a single tone without its twin would disprove it. Behind it come the specific numbers: the fundamental tone (√91 times the basic step), the three families of particles, the 254.37 GeV scale, and the ratio that fixes both. All of them vanish if the theory is replaced by ordinary physics.",
+            "The O(2) mirror-pair symmetry of the spectrum is the strongest falsifiable D96 prediction.",
+            "“Every tone has an exact twin — the spectrum's own signature.”",
+            true,
+            [
+                new("ResearchY-D_021", "OSCILLATION SYMMETRY AUDIT",
+                    "The O(2) pairing λ_k = λ_{N−k} — the exact doublet degeneracy at the heart of this audit.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/D_ResonanceStructure/ResearchY-D_021.md"),
+                new("ResearchY-D_046", "RESEARCHY-PREDICTIONS AUDIT",
+                    "The eight new predictions (P1–P8) — ω₁, span, family count, v-structure source.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/D_ResonanceStructure/ResearchY-D_046.md"),
+                new("ResearchY-NP_012", "UNIQUE PREDICTION SEARCH",
+                    "The unique predictions live in the N=96 spectrum; NP_013 ranks them.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_012.md"),
+                new("ResearchY-NP_013", "UNIQUE SPECTRAL PREDICTION AUDIT",
+                    "Strongest D96 prediction: the O(2) exact doublet degeneracy; then ω₁, families, v, span.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_013.md"),
+            ]),
+        new(
             "researchy-np012-unique-prediction-search",
             "The Unique Predictions Live in the Spectrum, Not the Measurement Program",
             "ResearchY Milestone · NP_012 (V2.2 New Physics — Roadmap)",
