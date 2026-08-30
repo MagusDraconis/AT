@@ -92,6 +92,7 @@ ResearchY-M_001  ↔  Y_M_001_Tests.cs     (AT.Tests/ResearchY/M_Measurement/)
 | ResearchY-R_001 (V2.1 Boundary Program Closure Audit) | `AT.Tests/ResearchY/R_BoundaryProgram/Y_R_001_Tests.cs` | ACTIVE | 2026-08-30 | ✅ 4/4 PASSED — `Results/Y_R_001_Result.md` |
 | ResearchY-M_001 (Measurement Origin Audit) | `AT.Tests/ResearchY/M_Measurement/Y_M_001_Tests.cs` | ACTIVE | 2026-08-30 | ✅ 7/7 PASSED — `Results/Y_M_001_Result.md` |
 | ResearchY-M_002 (Measurement Disturbance Audit) | `AT.Tests/ResearchY/M_Measurement/Y_M_002_Tests.cs` | ACTIVE | 2026-08-30 | ✅ 7/7 PASSED — `Results/Y_M_002_Result.md` |
+| ResearchY-M_003 (Measurement Feedback Audit) | `AT.Tests/ResearchY/M_Measurement/Y_M_003_Tests.cs` | ACTIVE | 2026-08-30 | ✅ 5/5 PASSED — `Results/Y_M_003_Result.md` |
 
 ## Result Summaries
 
