@@ -94,6 +94,30 @@ public static class AtlasDataService
     public static IReadOnlyList<ResearchNewsModel> ResearchNews { get; } =
     [
         new(
+            "researchy-qg005-count-to-geometry",
+            "Geometry Is the Measurement of the Distinguishability Density",
+            "ResearchY Milestone · QG_005 (V2.2 New Physics — Geometry Bridge)",
+            "Why does counting produce geometry? Because the ruler must preserve the count. The metric g = ρ^(2/d)η is the unique conformal structure keeping the density as its volume element (√(−g) = ρ). Geometry is not a postulate — it is what measuring the density requires.",
+            "QG_005 answers why count structure generates geometry. Verdict: geometry is a NECESSARY consequence of distinguishability counting (option C) — NOT fundamental (A) and NOT informational (B). REMOVAL TESTS: remove the metric → the count structure survives (ρ_k = count_k/total needs no metric — counting is metric-independent); remove the count structure → geometry is UNDEFINED (g = ρ^(2/d)η requires ρ — no count, no ruler). MINIMAL PRINCIPLE generating g = ρ^(2/d)η: MEASURE PRESERVATION (QG207) — the unique conformal-flat metric preserving the counting measure has √(−g) = ρ^(kd/2) = ρ ⟹ k = 2/d (verified: kd/2 = 1 for d=2,3,4); the derived geodesic acceleration gives the same (a = −(1/d)ρ′/ρ ⟹ k/2 = 1/d). WHY A DENSITY BECOMES A RULER: the metric is the geometric object that keeps the counting measure ρ as its volume element (√(−g) = ρ) — the ruler is REQUIRED to measure the density's own volume; geometry is not an arbitrary postulate but the unique conformal structure that conserves the count. TESTS: horizons (defined by the metric; the count structure persists behind it), ΩΛ = I_occ/ln K = 0.6839 (the same ρ generates it), measurement (resolves ρ; reveals pre-existing distinguishability, M_005), state identity (95 states, the count domain) — all consistent. PROVE/REFUTE: geometry is the measurement of the distinguishability density — PROVEN (distinguishability → count density ρ → the unique conformal metric preserving it). COUNTEREXAMPLES: 'geometry is fundamental' fails (remove the metric → count survives); 'geometry is informational' fails (remove information → geometry survives, QG_004); 'the metric is an arbitrary postulate' fails (measure preservation √(−g) = ρ forces k = 2/d uniquely); 'a density does not need a ruler' fails (the ruler is required to measure the density's volume). FALSIFICATION: a metric not preserving the count (√(−g) ≠ ρ); a conformal metric with a different exponent that still preserves √(−g) = ρ; a defined metric with no count density. Classification: count structure ρ DERIVED (from the state structure, D_039); metric g = ρ^(2/d)η DERIVED (QG197, from measure preservation QG207); geometry as count-derived DERIVED; the measure-preservation principle (√(−g) = ρ) DERIVED (the unique conformal metric); geometry as an independent postulate REFUTED (option A). Geometry IS the measurement of the distinguishability density — the ruler required by the count. No new primitive; canonical AT unchanged.",
+            "For non-experts: the theory says a simple counting density builds spacetime — but WHY should counting produce a geometry at all? This audit finds the reason. A geometry, at heart, is a ruler — a way to measure size and distance. The count density, like any density, has a volume — the total amount of stuff. To measure that volume, you need a ruler that fits the density perfectly: one that preserves it as its own measure of size. There is exactly ONE such ruler (with a fixed mathematical exponent, 2 over the number of dimensions), and that ruler IS the metric. So the geometry is not a coincidence and not a postulate: the moment you have a count density, its volume demands a ruler, and that ruler is the geometry. The theory's answer in one line: geometry is what the density needs in order to be measured.",
+            "The metric g = ρ^(2/d)η is the unique ruler that preserves the count — geometry is the density's own measure.",
+            "“The density demands a ruler — and the ruler is the geometry.”",
+            true,
+            [
+                new("ResearchY-QG_004", "ρ NATURE AUDIT",
+                    "ρ is fundamentally a count — the object that QG_005 shows demands a geometry.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/QG_GeometryBridge/ResearchY-QG_004.md"),
+                new("ResearchY-QG_002", "DISTINGUISHABILITY → GEOMETRY AUDIT",
+                    "The forward chain N=96 → ρ → g; QG_005 explains why the geometry is forced.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/QG_GeometryBridge/ResearchY-QG_002.md"),
+                new("ResearchY-QG_001", "INFORMATION–GEOMETRY BRIDGE AUDIT",
+                    "The shared-ρ bridge; QG_005 grounds the geometric side in measure preservation.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/QG_GeometryBridge/ResearchY-QG_001.md"),
+                new("ResearchY-QG_005", "COUNT-TO-GEOMETRY ORIGIN AUDIT",
+                    "Measure preservation √(−g) = ρ forces k = 2/d — geometry is the measurement of the density.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/QG_GeometryBridge/ResearchY-QG_005.md"),
+            ]),
+        new(
             "researchy-qg004-rho-nature",
             "ρ Is Fundamentally a Count: Geometry and Information Are Its Two Derived Faces",
             "ResearchY Milestone · QG_004 (V2.2 New Physics — Geometry Bridge)",

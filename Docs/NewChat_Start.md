@@ -1826,6 +1826,35 @@ surviving the removal of ρ. Classification: count structure ρ = count_k/total 
 ρ DERIVED (it is a normalized counting measure). No new primitive; canonical AT
 unchanged.
 
+ResearchY-QG_005 (Count-to-Geometry Origin Audit, COMPLETE, tests 6/6 PASSED): why
+does count structure generate geometry? Verdict: geometry is a NECESSARY consequence of
+distinguishability counting (option C) — NOT fundamental (A) and NOT informational (B).
+REMOVAL TESTS: remove the metric → the count structure survives (ρ_k = count_k/total
+needs no metric); remove the count structure → geometry is UNDEFINED (g = ρ^(2/d)η
+requires ρ). MINIMAL PRINCIPLE generating g = ρ^(2/d)η: MEASURE PRESERVATION (QG207) —
+the unique conformal-flat metric preserving the counting measure has √(−g) = ρ^(kd/2) =
+ρ ⟹ k = 2/d (verified: kd/2 = 1 for d=2,3,4), and the geodesic acceleration gives the
+same (a = −(1/d)ρ′/ρ ⟹ k/2 = 1/d). WHY A DENSITY BECOMES A RULER: the metric is the
+geometric object that keeps the counting measure ρ as its volume element (√(−g) = ρ) —
+the ruler is REQUIRED to measure the density's own volume; geometry is not an arbitrary
+postulate but the unique conformal structure that conserves the count. TESTS: horizons
+(metric-defined; the count persists behind), ΩΛ = I_occ/ln K = 0.6839 (the same ρ),
+measurement (resolves ρ; reveals pre-existing distinguishability, M_005), state
+identity (95 states, the count domain) — all consistent. PROVE/REFUTE: geometry is the
+measurement of the distinguishability density — PROVEN (distinguishability → count
+density ρ → the unique conformal metric preserving it). Counterexamples: 'geometry is
+fundamental' fails (remove the metric → count survives); 'geometry is informational'
+fails (remove information → geometry survives, QG_004); 'the metric is an arbitrary
+postulate' fails (measure preservation √(−g) = ρ forces k = 2/d uniquely); 'a density
+does not need a ruler' fails (the ruler is required to measure the density's volume).
+Falsification: a metric not preserving the count (√(−g) ≠ ρ); a conformal metric with a
+different exponent preserving √(−g) = ρ; a defined metric with no count density.
+Classification: count structure ρ DERIVED (from the state structure, D_039); metric g =
+ρ^(2/d)η DERIVED (QG197, from measure preservation QG207); geometry as count-derived
+DERIVED; the measure-preservation principle (√(−g) = ρ) DERIVED (the unique conformal
+metric); geometry as an independent postulate REFUTED (option A). Geometry IS the
+measurement of the distinguishability density. No new primitive; canonical AT unchanged.
+
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-

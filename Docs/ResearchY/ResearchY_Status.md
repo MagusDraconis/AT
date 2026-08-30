@@ -101,6 +101,7 @@
 | ResearchY-QG_002 | Distinguishability → Geometry Audit | `QG_GeometryBridge/ResearchY-QG_002.md` | `AT.Tests/ResearchY/QG_GeometryBridge/Y_QG_002_Tests.cs` (6/6 ✅) | COMPLETE |
 | ResearchY-QG_003 | Information Reconstruction Audit | `QG_GeometryBridge/ResearchY-QG_003.md` | `AT.Tests/ResearchY/QG_GeometryBridge/Y_QG_003_Tests.cs` (6/6 ✅) | COMPLETE |
 | ResearchY-QG_004 | ρ Nature Audit | `QG_GeometryBridge/ResearchY-QG_004.md` | `AT.Tests/ResearchY/QG_GeometryBridge/Y_QG_004_Tests.cs` (6/6 ✅) | COMPLETE |
+| ResearchY-QG_005 | Count-to-Geometry Origin Audit | `QG_GeometryBridge/ResearchY-QG_005.md` | `AT.Tests/ResearchY/QG_GeometryBridge/Y_QG_005_Tests.cs` (6/6 ✅) | COMPLETE |
 | ResearchY-M_001 | Measurement Origin Audit | `M_Measurement/ResearchY-M_001.md` | `AT.Tests/ResearchY/M_Measurement/Y_M_001_Tests.cs` (7/7 ✅) | COMPLETE |
 | ResearchY-M_002 | Measurement Disturbance Audit | `M_Measurement/ResearchY-M_002.md` | `AT.Tests/ResearchY/M_Measurement/Y_M_002_Tests.cs` (7/7 ✅) | COMPLETE |
 | ResearchY-M_003 | Measurement Feedback Audit | `M_Measurement/ResearchY-M_003.md` | `AT.Tests/ResearchY/M_Measurement/Y_M_003_Tests.cs` (5/5 ✅) | COMPLETE |
