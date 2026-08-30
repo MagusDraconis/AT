@@ -1536,6 +1536,38 @@ QM/GR/SM. Classification: all five PREDICTION (uniquely D96); O(2) doublet degen
 and family count are the strongest (structural + observed-consistent). No new
 primitive; canonical AT unchanged.
 
+ResearchY-NP_014 (Necessity of Synchronization Audit, COMPLETE, tests 7/7 PASSED):
+does physics require synchronization at all? Verdict: OPTIONAL (B) — no canonical law
+requires it; the canonical absence is a FEATURE preserving the full relative-phase
+information channel. Compare U1 (canonical AT, no locking: θ(t+1)=θ(t)+Δθ, D_041)
+with U2 (modified AT, gradient locking: θ(t+1)=θ(t)+Δθ+η·∂I/∂θ). EVERY canonical law
+survives in BOTH: measurement reads both quadratures (M_002), information conserved
+(Σρ=1 and log₂ 95, M_004/M_005), reciprocity (D_037), 95-state distinguishability
+(D_039), complex-state identity (D_036) — identical in both universes. THE ONLY
+DIFFERENCE is the relative-phase diversity: U1's relative phase drifts and explores a
+CONTINUUM of values (I ranges 0.134–1.866; 6 distinct relative phases per cycle for
+k=(16,32)), while U2's locks at rel=0 and reduces the relative phases to ONE value.
+Does synchronization improve physics? NO — it adds no canonical law and fixes no
+contradiction. Does it destroy physics? PARTIALLY — it collapses the relative-phase
+information channel. COLLECTIVE modes: exist in U1 (transient); U2 only makes them
+stable. COHERENCE: U1 has time-varying real interference; U2 sustains it. INFORMATION:
+log₂ 95 conserved in both — unchanged. STATE DIVERSITY: U2 LOWER (one relative phase
+vs continuum). Determination: A) synchronization required — NO; B) synchronization
+optional — YES; C) forbidden — PARTIAL (canonical chain lacks it; enabling reduces
+phase diversity). Necessity proof: every canonical observable is fully defined and
+conserved in U1 — no law breaks without locking; enabling locking REMOVES a capability
+(relative-phase diversity), so sync is positively costly in information terms.
+Counterexamples: 'sync needed for coherence' fails (U1 has real time-varying
+interference); 'sync needed for measurement' fails (M_002 identical); 'sync needed for
+information' fails (log₂ 95 conserved in both); 'sync needed for collective modes'
+fails (they exist in U1, transient). Falsification: optionality falsified if a
+canonical observable requires synchronized relative phases; feature claim falsified if
+locking increases state diversity (it does not). Classification: canonical no-locking
+dynamics DERIVED (self-rate, D_041) — a feature preserving phase diversity;
+synchronization as a regime EMERGENT (would require variational principle,
+NP_006/NP_009); synchronization required REFUTED (optional — B); canonical absence
+DERIVED. No new primitive; canonical AT unchanged.
+
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-

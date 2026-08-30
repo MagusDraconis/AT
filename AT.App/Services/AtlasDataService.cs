@@ -94,6 +94,30 @@ public static class AtlasDataService
     public static IReadOnlyList<ResearchNewsModel> ResearchNews { get; } =
     [
         new(
+            "researchy-np014-necessity-of-synchronization",
+            "Synchronization Is Optional: Its Absence Is a Feature, Not a Bug",
+            "ResearchY Milestone · NP_014 (V2.2 New Physics — Roadmap)",
+            "Does physics need phase locking? No. Comparing the canonical universe (no synchronization) with a modified one (locking enabled), every law survives identically — measurement, information, reciprocity, identity. The only difference: synchronization collapses the relative-phase diversity to one value. The canonical absence is a feature.",
+            "NP_014 asks the question the whole coupling program has been circling: does physics REQUIRE synchronization? Verdict: OPTIONAL (B) — no canonical law requires it, and the canonical absence is a FEATURE preserving the full relative-phase information channel. Compare U1 (canonical AT, no locking: θ(t+1)=θ(t)+Δθ, D_041) with U2 (modified AT, gradient locking: θ(t+1)=θ(t)+Δθ+η·∂I/∂θ). EVERY canonical law survives in BOTH: measurement reads both quadratures (M_002), information is conserved (Σρ=1 and log₂ 95, M_004/M_005), reciprocity holds (D_037), the state space has 95 distinguishable states (D_039), and state identity is the complex state (D_036) — identical in both universes. THE ONLY DIFFERENCE is the relative-phase diversity: U1's relative phase drifts and explores a CONTINUUM of values (I ranges 0.134–1.866; 6 distinct relative phases per cycle for k=(16,32)), while U2's locks at rel=0 and reduces the relative phases to ONE value. DOES SYNCHRONIZATION IMPROVE PHYSICS? NO — it adds no canonical law and fixes no contradiction. DOES IT DESTROY PHYSICS? PARTIALLY — it collapses the relative-phase information channel. COLLECTIVE MODES: exist in U1 (transient); U2 only makes them stable. COHERENCE: U1 has time-varying but real interference; U2 sustains it. INFORMATION: log₂ 95 conserved in both — unchanged. STATE DIVERSITY: U2 is LOWER (one relative phase vs a continuum). DETERMINATION: A) synchronization required — NO; B) synchronization optional — YES; C) forbidden — PARTIAL (the canonical chain lacks it, and enabling it reduces phase diversity). NECESSITY PROOF: every canonical observable is fully defined and conserved in U1 — no law breaks without locking; enabling locking REMOVES a capability (relative-phase diversity), so synchronization is positively costly in information terms. COUNTEREXAMPLES: 'sync needed for coherence' fails (U1 has real time-varying interference); 'sync needed for measurement' fails (M_002 identical); 'sync needed for information' fails (log₂ 95 conserved in both); 'sync needed for collective modes' fails (they exist in U1, transient). FALSIFICATION: optionality falsified if a canonical observable requires synchronized relative phases; the feature claim falsified if locking increases state diversity (it does not — the state space is 95 in both). Classification: canonical no-locking dynamics DERIVED (self-rate, D_041) — a feature preserving phase diversity; synchronization as a regime EMERGENT (would require a variational principle, NP_006/NP_009); synchronization required REFUTED (optional — B); canonical absence DERIVED. The absence of phase locking is not a gap — it is the theory preserving its richest channel. No new primitive; canonical AT unchanged.",
+            "For non-experts: one might worry that the theory's lack of a 'lock step' mechanism is a flaw — a missing piece. This audit argues the opposite. It imagines two universes: our theory as written, where phases drift freely, and a modified version where phases are forced to lock together. Then it checks every physical law — measurement, conservation of information, the mirror symmetry, the identity of states, the set of 95 distinct possibilities. Every single law works identically in both universes. The one real difference is variety: in the free universe the relative angles between waves explore a whole range of values, while in the locked universe they collapse to a single value. So synchronization would not fix any broken law — it would only throw away the diversity of relative phases. The theory keeps the freedom on purpose: that freedom IS information.",
+            "Synchronization is optional — and its absence preserves the richest information channel.",
+            "“The theory never locks phases — and that freedom is information.”",
+            true,
+            [
+                new("ResearchY-NP_005", "MISSING SYNCHRONIZATION MECHANISM AUDIT",
+                    "The absent locking mechanism — NP_014 shows the absence is a feature.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_005.md"),
+                new("ResearchY-NP_009", "VARIATIONAL ACTUALIZATION AUDIT",
+                    "The gradient-locking modification that defines U2 — optional, not required.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_009.md"),
+                new("ResearchY-M_005", "INFORMATION CONSERVATION AUDIT",
+                    "Information is conserved in both universes — synchronization adds nothing.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/M_Measurement/ResearchY-M_005.md"),
+                new("ResearchY-NP_014", "NECESSITY OF SYNCHRONIZATION AUDIT",
+                    "Synchronization is optional (B); its absence preserves relative-phase diversity.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_014.md"),
+            ]),
+        new(
             "researchy-np013-unique-spectral-prediction",
             "The Strongest D96 Prediction: O(2) Exact Doublet Degeneracy",
             "ResearchY Milestone · NP_013 (V2.2 New Physics — Roadmap)",
