@@ -94,6 +94,27 @@ public static class AtlasDataService
     public static IReadOnlyList<ResearchNewsModel> ResearchNews { get; } =
     [
         new(
+            "researchy-m003-feedback",
+            "Measurement Feeds Forward: the Outcome Becomes the Future's Starting Point",
+            "ResearchY Milestone · M_003 (V2.2 New Physics — Measurement)",
+            "Does a measurement change what happens next? Yes: the pinned phase becomes the initial condition of the future evolution. Before measurement the phase is a free superposition of trajectories; after it is one deterministic trajectory starting from the outcome. Measurement necessarily changes future evolution.",
+            "M_003 asks whether measurement feeds back into future state evolution. Verdict: YES — a measurement outcome necessarily modifies subsequent actualization because the PINNED PHASE becomes the initial condition of the deterministic future evolution. The phase advances per tick (Δθ = 2πk/N, D_041); before measurement the phase is FREE (a superposition over all trajectories); after measurement it is PINNED to θ₀ — so the future phase is θ_t = θ₀ + t·Δθ, deterministic from the outcome. FEEDBACK = the outcome (θ₀) enters the future evolution as the starting phase. MEASURED vs UNMEASURED: the measured mode's future trajectory is FIXED; the unmeasured mode's future is a superposition. A pinned phase alters three structures: (1) future interference — the joint coherence with an unmeasured mode is indefinite unless the measured outcome is fed back; (2) reciprocity — the conjugate partner N−k is made definite (knowing θ₀ fixes its conjugate); (3) the actualization path — the realized count starts from the pinned value, so the subsequent actualization differs from the free-superposition path. Prove/refute: measurement necessarily changes future evolution — YES, because it fixes the initial phase from which the deterministic evolution proceeds. Classification: feedback DERIVED (the pinned phase feeds the evolution); phase-pinning DERIVED (M_002); deterministic evolution DERIVED (D_041); measurement event EMERGENT (M_001). FALSIFICATION: a measurement outcome that does NOT enter the future evolution (the future remains a free superposition despite the read) would falsify. No new primitive; canonical AT unchanged.",
+            "For non-experts: after a measurement pins a wave's phase, what happens next? This audit shows the pinned value is not a dead end — it becomes the starting point of the wave's future motion. Before the measurement the wave could have taken any trajectory (all phases equally available); after it, the future is one specific path that begins from the measured value. So a measurement does not just record where the wave was; it changes where the wave is going. The measured value feeds forward into the future — that is what 'feedback' means here.",
+            "The measured outcome is not the end of the story — it is the future's beginning.",
+            "“The pinned phase is not the past's record; it is the future's starting point.”",
+            true,
+            [
+                new("ResearchY-M_002", "MEASUREMENT DISTURBANCE AUDIT",
+                    "The read pins the phase — the disturbance whose outcome now feeds the future.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/M_Measurement/ResearchY-M_002.md"),
+                new("ResearchY-D_041", "TIME-ORIGIN AUDIT",
+                    "The phase advances deterministically per tick (Δθ = 2πk/N) — the evolution the outcome feeds.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/D_ResonanceStructure/ResearchY-D_041.md"),
+                new("ResearchY-M_003", "MEASUREMENT FEEDBACK AUDIT",
+                    "The pinned phase becomes the initial condition (θ_t = θ₀ + t·Δθ); measurement necessarily changes future evolution; feedback DERIVED.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/M_Measurement/ResearchY-M_003.md"),
+            ]),
+        new(
             "researchy-m002-disturbance",
             "Measurement Always Disturbs — the Minimal Disturbance Is Phase-Pinning",
             "ResearchY Milestone · M_002 (V2.2 New Physics — Measurement)",
