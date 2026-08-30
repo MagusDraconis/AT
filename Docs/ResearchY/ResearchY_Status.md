@@ -82,6 +82,7 @@
 | ResearchY-NP_004 | Phase Coupling Audit | `NP_NewPhysics/ResearchY-NP_004.md` | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_004_Tests.cs` (6/6 ✅) | COMPLETE |
 | ResearchY-NP_005 | Missing Synchronization Mechanism Audit | `NP_NewPhysics/ResearchY-NP_005.md` | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_005_Tests.cs` (7/7 ✅) | COMPLETE |
 | ResearchY-NP_006 | Phase-Locking Origin Audit | `NP_NewPhysics/ResearchY-NP_006.md` | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_006_Tests.cs` (6/6 ✅) | COMPLETE |
+| ResearchY-NP_007 | Coupling Field Audit | `NP_NewPhysics/ResearchY-NP_007.md` | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_007_Tests.cs` (7/7 ✅) | COMPLETE |
 | ResearchY-M_001 | Measurement Origin Audit | `M_Measurement/ResearchY-M_001.md` | `AT.Tests/ResearchY/M_Measurement/Y_M_001_Tests.cs` (7/7 ✅) | COMPLETE |
 | ResearchY-M_002 | Measurement Disturbance Audit | `M_Measurement/ResearchY-M_002.md` | `AT.Tests/ResearchY/M_Measurement/Y_M_002_Tests.cs` (7/7 ✅) | COMPLETE |
 | ResearchY-M_003 | Measurement Feedback Audit | `M_Measurement/ResearchY-M_003.md` | `AT.Tests/ResearchY/M_Measurement/Y_M_003_Tests.cs` (5/5 ✅) | COMPLETE |

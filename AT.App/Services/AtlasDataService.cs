@@ -94,6 +94,30 @@ public static class AtlasDataService
     public static IReadOnlyList<ResearchNewsModel> ResearchNews { get; } =
     [
         new(
+            "researchy-np007-coupling-field",
+            "The Coupling 'Field' Is a Static Network: Born-Derived Links, No Propagation",
+            "ResearchY Milestone · NP_007 (V2.2 New Physics — Roadmap)",
+            "Does the theory have a coupling field? It has something better grounded: a static coupling network. The interference cross-term links any two superposed states, with Born-derived link weights κ = 2√(ρ_Aρ_B). Link-mediated influence and collective modes exist — but no propagating field, and no phase flow.",
+            "NP_007 asks whether Actualization defines a coupling field between distinguishable states. Verdict: YES as a STATIC COUPLING NETWORK, NO as a propagating field. The only phase-dependent observable is the interference intensity I = ρ_A+ρ_B+2√(ρ_Aρ_B)·cos(θ_A−θ_B) (Born rule QG216, complex state D_036/D_039), and its cross-term IS the LINK between any two superposed states. Its amplitude κ = 2√(ρ_Aρ_B) is the NETWORK LINK WEIGHT — DERIVED from the state amplitudes (the Born cross-amplitude), not an external input. TEST: A) local state updates only — PARTIAL (the canonical evolution IS local: self-rate only, D_041); B) link-mediated influence — YES (the interference cross-term couples the two phases observably); C) field-like propagation — NO (the network is static; no propagating/delayed/spatial field exists in canonical AT). HIDDEN INTERACTION TERM: the interference cross-term is ALREADY present in the actualization network — no external coupling field is needed; κ emerges from the network structure. NETWORK PROPERTIES: count/information flow YES (Born redistribution, M_005, DERIVED); phase flow NO (local evolution, NP_005 — the network does not synchronize unequal modes); reciprocity YES (the read is symmetric, D_037, EMERGENT); collective modes YES (in-phase I=(√ρ_A+√ρ_B)²=1.866, anti-phase I=(√ρ_A−√ρ_B)²=0.134 for ρ=(0.25,0.75), DERIVED). COUPLING HIERARCHY: isolated states (DERIVED, self-rate) → link (DERIVED, interference cross-term) → network weight κ (DERIVED, Born cross-amplitude) → collective modes (DERIVED, superposition algebra) → phase flow / synchronization (ABSENT, BOUNDARY). FALSIFICATION: the link claim is falsified if two superposed states show no interference cross-term (no relative-phase dependence); the static-network claim is falsified if a propagating (delayed, spatial) coupling is observed with no added structure. Classification: link structure DERIVED (complex state + Born); link weight κ DERIVED (Born cross-amplitude); count/information flow DERIVED (M_005); reciprocity EMERGENT (D_037); collective modes DERIVED (superposition algebra); propagating coupling field BOUNDARY (absent from canonical AT). The 'coupling field' of the theory is the interference fabric of the state space — static, reciprocal, Born-weighted, and unable (alone) to synchronize. No new primitive; canonical AT unchanged.",
+            "For non-experts: does the theory need a special field to make states interact? No — it already has the interaction built into its mathematics. Whenever two waves overlap, their combined brightness contains a term that depends on how their phases differ: that term is the 'link' between the two states, and its strength is not a free dial but is fixed by the sizes of the two waves (twice the square root of their product). So the theory has a network of such links — a fabric — and it produces collective patterns (waves adding up in step, or cancelling out of step). But this network is static: it makes the two phases visible to each other, yet it never actually pushes them to fall into step. There is no propagating signal, no moving field — only the fixed web of links. The one thing missing to turn the web into a synchronizing force is still absent.",
+            "A static, Born-weighted coupling network — real links, no propagating field.",
+            "“The fabric is the interference web; the web never pushes phases into step.”",
+            true,
+            [
+                new("ResearchY-D_036", "COMPLEX-STATE-ORIGIN AUDIT",
+                    "The complex state + Born rule produce the interference cross-term that IS the link.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/D_ResonanceStructure/ResearchY-D_036.md"),
+                new("ResearchY-NP_006", "PHASE-LOCKING ORIGIN AUDIT",
+                    "κ = 2√(ρ_Aρ_B) — the Born-derived coefficient that NP_007 identifies as the network link weight.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_006.md"),
+                new("ResearchY-NP_005", "MISSING SYNCHRONIZATION MECHANISM AUDIT",
+                    "The network carries no phase flow — unequal modes still drift (no synchronization).",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_005.md"),
+                new("ResearchY-NP_007", "COUPLING FIELD AUDIT",
+                    "Static coupling network (DERIVED); propagating field BOUNDARY; collective modes derived.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_007.md"),
+            ]),
+        new(
             "researchy-np006-phase-locking-origin",
             "The Locking Term Is Born-Derived: κ = 2√(ρ_Aρ_B) — But No Mechanism in Canonical AT",
             "ResearchY Milestone · NP_006 (V2.2 New Physics — Roadmap)",

@@ -1364,6 +1364,31 @@ phase advance should follow the count-intensity gradient (a variational/least-ac
 principle) — the single requirement that would make phase locking self-generated. No
 new primitive; canonical AT unchanged.
 
+ResearchY-NP_007 (Coupling Field Audit, COMPLETE, tests 7/7 PASSED): does
+Actualization define a coupling field between distinguishable states? Verdict: YES as
+a STATIC COUPLING NETWORK, NO as a propagating field. The interference cross-term I =
+ρ_A+ρ_B+2√(ρ_Aρ_B)·cos(θ_A−θ_B) (Born QG216, complex state D_036/D_039) IS the LINK
+between any two superposed states; its amplitude κ = 2√(ρ_Aρ_B) is the NETWORK LINK
+WEIGHT — DERIVED from the state amplitudes (Born cross-amplitude), not an external
+input. Test: A) local state updates only — PARTIAL (the evolution is local, self-rate
+D_041); B) link-mediated influence — YES (interference links states observably); C)
+field-like propagation — NO (the network is static; no propagating field in canonical
+AT). HIDDEN interaction term: the interference cross-term is ALREADY present in the
+actualization network — no external coupling field needed. NETWORK PROPERTIES: count/
+information flow YES (M_005, DERIVED); phase flow NO (local evolution, NP_005);
+reciprocity YES (D_037, EMERGENT); collective modes YES (in-phase I=(√ρ_A+√ρ_B)²=
+1.866, anti-phase I=(√ρ_A−√ρ_B)²=0.134 for ρ=(0.25,0.75), DERIVED). κ CAN emerge from
+the network structure — it IS the network weight. But the network does NOT synchronize
+unequal modes (no phase flow). COUPLING HIERARCHY: isolated states (DERIVED) → link
+(DERIVED) → network weight κ (DERIVED) → collective modes (DERIVED) → phase flow /
+synchronization (ABSENT, BOUNDARY). FALSIFICATION: link claim falsified if two
+superposed states show no interference cross-term; static-network claim falsified if
+delayed/spatial (propagating) coupling is observed with no added structure.
+Classification: link structure DERIVED (complex state + Born); link weight κ DERIVED
+(Born cross-amplitude); count/information flow DERIVED (M_005); reciprocity EMERGENT
+(D_037); collective modes DERIVED (superposition algebra); propagating coupling field
+BOUNDARY (absent). No new primitive; canonical AT unchanged.
+
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-
