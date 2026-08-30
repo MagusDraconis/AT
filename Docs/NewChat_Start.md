@@ -1416,6 +1416,30 @@ Born QG216); extrema DERIVED (algebra of I); gradient ∂I/∂θ DERIVED; canoni
 DERIVED (fixed Δθ); extremum principle EMERGENT (under variational requirement) /
 BOUNDARY in canonical AT. No new primitive; canonical AT unchanged.
 
+ResearchY-NP_009 (Variational Actualization Audit, COMPLETE, tests 6/6 PASSED): does
+Actualization obey a hidden extremum principle? Verdict: NO (option D) — canonical
+Actualization IGNORES the interference functional I: it neither increases, nor
+decreases, nor conserves it (verified: I drifts 1.760 → 0.260 non-monotonically over 4
+ticks for k=(16,32), rel₀=0.5). The update θ(t+1)=θ(t)+Δθ (D_041) contains no
+reference to ρ or the relative phase. HIDDEN OBJECTIVE SEARCH: count (Σρ=1 conserved,
+M_005, not extremized); information (log₂ 95 = 6.57 static, M_004); distinguishability
+(95-state structure static, D_039); interference I (an observable, never fed back). All
+ruled out — no objective function exists in the canonical update. Determination: A)
+max(I) NO; B) min(I) NO; C) stationary(I) NO; D) no extremum principle — YES. SMALLEST
+MODIFICATION to obtain one: add ONE gradient-following phase term θ(t+1) = θ(t) + Δθ +
+η·∂I/∂θ — a gradient flow on I with d rel/dt = −2ηκ·sin(rel), κ = 2√(ρ_Aρ_B), whose
+stable fixed point is rel=0 (the in-phase MAXIMUM, I = 1.866; the anti-phase rel=π is
+unstable). THEREFORE: if Actualization had an extremum principle it would be max(I) —
+and with it synchronization, coherence, and stable collective modes would EMERGE
+(gradient update locks rel at the max; κ = 0.866 ≥ 0.5236 threshold). Falsification:
+no-extremum claim falsified if a two-mode relative phase converges to an extremum of I
+with no added interaction; max(I) emergence falsified if a gradient-following update
+does not converge to rel=0. Classification: canonical update DERIVED (fixed Δθ,
+D_041); functional I + gradient DERIVED (complex state D_036 + Born QG216);
+no-extremum property DERIVED (self-rate dynamics ignores I); variational (gradient)
+actualization EMERGENT (under the added requirement) / BOUNDARY in canonical AT. No new
+primitive; canonical AT unchanged.
+
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-

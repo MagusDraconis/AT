@@ -94,6 +94,30 @@ public static class AtlasDataService
     public static IReadOnlyList<ResearchNewsModel> ResearchNews { get; } =
     [
         new(
+            "researchy-np009-variational-actualization",
+            "Actualization Has No Hidden Objective — But One Gradient Term Would Make It Maximize Interference",
+            "ResearchY Milestone · NP_009 (V2.2 New Physics — Roadmap)",
+            "Does the theory secretly drive systems to maximize interference? No — the canonical phase update ignores the interference functional entirely: it neither maximizes, minimizes, nor conserves it. But a single gradient-following term would turn Actualization into a maximizer of I — and synchronization would emerge.",
+            "NP_009 completes the variational search (NP_008). Verdict: canonical Actualization obeys NO hidden extremum principle (option D). The canonical update θ(t+1) = θ(t) + Δθ (D_041) contains no reference to ρ or the relative phase, so the interference functional I = ρ_A+ρ_B+2√(ρ_Aρ_B)·cos(θ_A−θ_B) is IGNORED — it neither increases, nor decreases, nor is conserved (verified: I drifts 1.760 → 0.260 non-monotonically over 4 ticks for k=(16,32), rel₀=0.5). HIDDEN OBJECTIVE SEARCH — all candidates ruled out: count (Σρ=1 conserved, M_005 — not extremized), information (log₂ 95 = 6.57 is the static state-space size, M_004), distinguishability (the 95-state structure is static, D_039), interference I (an observable, never fed back). No objective function exists in the canonical update. DETERMINATION: A) max(I) NO; B) min(I) NO; C) stationary(I) NO; D) no extremum principle — YES. SMALLEST MODIFICATION: add ONE gradient-following phase term θ(t+1) = θ(t) + Δθ + η·∂I/∂θ — a gradient flow on I. For the relative phase, d rel/dt = −2ηκ·sin(rel) with κ = 2√(ρ_Aρ_B), whose STABLE fixed point is rel=0 — the in-phase MAXIMUM (I = 1.866); rel=π (anti-phase) is unstable. THEREFORE: if Actualization had an extremum principle, it WOULD be max(I) — and with it synchronization, coherence, and stable collective modes would EMERGE (the gradient update locks the relative phase at the max; κ=0.866 satisfies the NP_005 locking threshold 0.5236). FALSIFICATION: the no-extremum claim is falsified if a two-mode relative phase converges to an extremum of I with no added interaction; the max(I) emergence is falsified if a gradient-following update does not converge to rel=0. Classification: canonical update DERIVED (fixed Δθ, D_041); functional I and its gradient DERIVED (complex state D_036 + Born QG216); the no-extremum property DERIVED (self-rate dynamics ignores I); variational (gradient) actualization EMERGENT under the added requirement, BOUNDARY in canonical AT. The missing synchronization dynamics already exists implicitly — as the gradient of the interference functional — but the canonical evolution does not use it. No new primitive; canonical AT unchanged.",
+            "For non-experts: does the theory secretly push waves to add up as brightly as possible? After a careful search, the answer is no. The rule that advances each phase every tick has no goal built in: the combined brightness of two overlapping waves just wanders up and down as the phases drift, and nothing tries to steer it. We also checked every candidate for a hidden aim — the total amount of 'stuff' (it is conserved, not aimed), the information content (it is fixed by the theory's size), the distinguishability of states (it is static), and the interference itself (it is computed but never used). None of them is a goal. However, there is one tiny change that would give the theory a goal: letting each phase advance along the slope of the combined brightness. That single change would make the theory a maximizer — waves would lock together at maximum brightness, and synchronization would appear on its own.",
+            "Canonically no objective; a single gradient term would make Actualization maximize interference.",
+            "“The theory has no aim — but the slope is there, waiting to be followed.”",
+            true,
+            [
+                new("ResearchY-NP_008", "INTERFERENCE EXTREMUM PRINCIPLE AUDIT",
+                    "NP_008 showed canonical actualization extremizes nothing; NP_009 completes the search and the minimal modification.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_008.md"),
+                new("ResearchY-NP_006", "PHASE-LOCKING ORIGIN AUDIT",
+                    "∂I/∂θ_A = 2√(ρ_Aρ_B)·sin(θ_B−θ_A) — the gradient that would be the objective.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_006.md"),
+                new("ResearchY-M_005", "INFORMATION CONSERVATION AUDIT",
+                    "Count is conserved, not extremized — ruled out as an objective function.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/M_Measurement/ResearchY-M_005.md"),
+                new("ResearchY-NP_009", "VARIATIONAL ACTUALIZATION AUDIT",
+                    "No hidden objective (D); one gradient term would make actualization follow max(I).",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_009.md"),
+            ]),
+        new(
             "researchy-np008-interference-extremum",
             "Actualization Extremizes Nothing — But the Interference Gradient Is the Hidden Sync Dynamics",
             "ResearchY Milestone · NP_008 (V2.2 New Physics — Roadmap)",
