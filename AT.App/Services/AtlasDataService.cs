@@ -94,6 +94,30 @@ public static class AtlasDataService
     public static IReadOnlyList<ResearchNewsModel> ResearchNews { get; } =
     [
         new(
+            "researchy-np017-natural-d96-signature",
+            "The CMB Carries the D96 Octave Hierarchy — the Exact Mirror Pairs Remain Unobserved",
+            "ResearchY Milestone · NP_017 (V2.2 New Physics — Roadmap)",
+            "Does nature show D96 structure? Partially: the CMB acoustic peaks follow the D96 octave hierarchy to better than 0.06% — a real, derived signature. But the sharpest claim, the exact mirror-pair degeneracy, has no natural realization yet. The CMB is the strongest physical candidate.",
+            "NP_017 searches natural spectral domains for D96-type structure. Verdict: nature contains an APPROXIMATE D96 signature — the CMB acoustic peak ratios follow the D96 octave hierarchy (ℓ₁ = 220.48, 0.008%; r₂₁ = 2.4368, 0.035%; r₃₁ = 3.6965, 0.058%; n_s = 0.96497, 0.007% — QG237/QG238), a DERIVED correspondence from the D96 octave rungs, not an accidental match. BUT nature shows NO realization of the exact O(2) mirror-pair degeneracy (|Δλ| = 0, NP_015) — the theory's sharpest spectral signature. DOMAIN TESTS: atomic spectra (Rydberg E_n ~ 1/n²) — no octave, no mirror pairs; molecular (rovibrational ladders) — no; condensed-matter phonons (~ linear) — approximate only, not D96-specific; plasma collective modes — no; gravitational-wave ringdown — damped complex frequencies, no exact degeneracy. CANDIDATE RANKING: (1) CMB acoustic peaks — STRONG (D96-derived octave ratios, <0.06%); (2) cosmological general — MEDIUM (D96 octave structure); (3) condensed-matter phonons — WEAK (approximate, ~15% deviation); (4) atomic/molecular — none; (5) plasma/GW — none. DEVIATION AUDIT: the CMB match is < 0.06%; condensed matter ~15% (not D96-specific); the other domains show no D96 structure at all. FALSIFICATION STRATEGY: (1) verify the CMB peak ratios against the D96 octave hierarchy — any deviation beyond the established tolerance falsifies the correspondence; (2) search new ring-mode spectral data for exact mirror pairs (|Δλ| = 0) — any natural exact pair set would CONFIRM the prediction. Classification: CMB acoustic peak ratios CORRESPONDENCE (D96-derived, QG237/QG238); the exact mirror-pair degeneracy PREDICTION (no natural observation yet — open); the octave hierarchy in nature CORRESPONDENCE (CMB); atomic/molecular/plasma/GW CORRESPONDENCE (no D96 structure expected); NO domain FALSIFIED. Nature carries the theory's octave hierarchy in the cosmic microwave background; its sharpest mirror-pair claim awaits a ring-mode system. No new primitive; canonical AT unchanged.",
+            "For non-experts: if the theory is right, its musical signature should appear somewhere in nature — this audit goes looking. The best find is in the oldest light in the universe: the cosmic microwave background. Its series of acoustic peaks follows the theory's octave structure remarkably well — the ratios land within a few hundredths of a percent of the prediction. That is a real, derived match, not a coincidence. But the theory's sharpest claim — that every spectral tone has an exact twin — has not been found anywhere yet. Atoms don't have it (their energies follow a different law), molecules and plasmas don't, gravitational waves from black holes are too damped, and condensed-matter systems only approximate it. So the answer is partial: the octave structure is really there in the CMB, and the exact twins remain a prediction waiting for a system that sings in the theory's ring.",
+            "The CMB's acoustic peaks match the D96 octaves; the exact mirror twins are still unobserved.",
+            "“The universe hums the octaves; the exact twins await their singer.”",
+            true,
+            [
+                new("ResearchY-NP_013", "UNIQUE SPECTRAL PREDICTION AUDIT",
+                    "The O(2) doublet degeneracy — the sharpest D96 prediction whose natural realization NP_017 searches for.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_013.md"),
+                new("ResearchY-NP_016", "MIRROR-PAIR OBSERVATION AUDIT",
+                    "The mirror pairs are native to the C96 ring; NP_017 checks which natural spectra show them.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_016.md"),
+                new("ResearchY-D_030", "OCTAVE-RUNG AUDIT",
+                    "The octave hierarchy that the CMB acoustic peaks follow.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/D_ResonanceStructure/ResearchY-D_030.md"),
+                new("ResearchY-NP_017", "NATURAL D96 SIGNATURE SEARCH",
+                    "CMB acoustic peaks carry the D96 octave hierarchy (<0.06%); exact mirror pairs unobserved.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_017.md"),
+            ]),
+        new(
             "researchy-np016-mirror-pair-observation",
             "Where to See the Mirror Pairs: the Ring Resonance Spectrum Is the Target",
             "ResearchY Milestone · NP_016 (V2.2 New Physics — Roadmap)",

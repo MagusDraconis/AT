@@ -1609,6 +1609,27 @@ modes); cosmological acoustic ratios CORRESPONDENCE (D96-derived peak ratios, no
 per-mode pairs); SM/GW/neutrino expectations CORRESPONDENCE (no exact degeneracy
 predicted there). No new primitive; canonical AT unchanged.
 
+ResearchY-NP_017 (Natural D96 Signature Search, COMPLETE, tests 6/6 PASSED): can
+D96-type spectral structure appear naturally in real systems? Verdict: nature contains
+an APPROXIMATE D96 signature — the CMB acoustic peak ratios follow the D96 octave
+hierarchy (ℓ₁ = 220.48, 0.008%; r₂₁ = 2.4368, 0.035%; r₃₁ = 3.6965, 0.058%; n_s =
+0.96497, 0.007% — QG237/QG238, a DERIVED correspondence, not accidental) — but NO
+natural realization of the exact O(2) mirror-pair degeneracy (|Δλ| = 0, NP_015).
+Domain tests: atomic (Rydberg E_n ~ 1/n²) — no octave, no mirror pairs; molecular
+(rovibrational) — no; condensed matter (phonons ~ linear) — approximate only; plasma
+(collective) — no; gravitational-wave (ringdown) — damped complex modes, no. CANDIDATE
+RANKING: (1) CMB acoustic peaks — STRONG (D96-derived, <0.06%); (2) cosmological
+general — MEDIUM (D96 octave structure); (3) condensed-matter phonons — WEAK
+(approximate); (4) atomic/molecular — none; (5) plasma/GW — none. DEVIATION AUDIT: CMB
+< 0.06%; condensed matter ~15% (not D96-specific); other domains no match.
+FALSIFICATION STRATEGY: verify CMB peak ratios against the D96 octave hierarchy; search
+new ring-mode spectral data for |Δλ| = 0; any CMB deviation beyond tolerance falsifies
+the correspondence. Classification: CMB acoustic peak ratios CORRESPONDENCE (D96-
+derived, QG237/238); exact mirror-pair degeneracy PREDICTION (no natural observation
+yet); octave hierarchy in nature CORRESPONDENCE (CMB); atomic/molecular/plasma/GW
+CORRESPONDENCE (no D96 structure expected); NO domain FALSIFIED. No new primitive;
+canonical AT unchanged.
+
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-
