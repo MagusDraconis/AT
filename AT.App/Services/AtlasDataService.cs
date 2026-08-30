@@ -9,7 +9,7 @@ namespace AT.App.Services;
 public static class AtlasDataService
 {
     /// <summary>The current AT research-atlas version (single source of truth).</summary>
-    public const string Version = "2.1.0";
+    public const string Version = "2.2.0";
 
     /// <summary>Human-readable version label, e.g. "v2.1".</summary>
     public static string VersionLabel => $"v{Version}";
