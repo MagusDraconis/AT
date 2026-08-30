@@ -94,6 +94,27 @@ public static class AtlasDataService
     public static IReadOnlyList<ResearchNewsModel> ResearchNews { get; } =
     [
         new(
+            "researchy-m005-information-conservation",
+            "Measurement Does Not Create Information — It Reveals and Redistributes It",
+            "ResearchY Milestone · M_005 (V2.2 New Physics — Measurement)",
+            "Where do the 6.57 bits of a measurement come from? They were already there — in the 95 distinct states of the state space. A measurement reveals which state is realized and redistributes the phase freedom into the outcome and the observer's knowledge. Information is conserved, not created.",
+            "M_005 asks whether measurement creates information or reveals pre-existing information. Verdict: measurement REVEALS pre-existing distinguishability and REDISTRIBUTES it — it does NOT create information. The 6.57 bits are PRE-EXISTING in the state space (D_039: 95 distinct states exist before any measurement); the measurement event reads both quadratures (M_001), resolving WHICH state is realized (reveal), and converts the phase freedom into a pinned outcome + observer knowledge (redistribute). INFORMATION BALANCE: log₂ 95 (state space) = outcome (realized state) + observer (log₂ 95 gained) — total CONSERVED, no creation, no loss. The underlying conservation is the COUNT conservation of actualization (Born rule Σ|ψ|² = 1, QG216). TEST A/B/C: A) create — NO (the 95 states pre-exist; the event does not create a new distinguishable state); B) reveal — YES (the event resolves which state is realized); C) redistribute — YES (the phase freedom becomes the pinned outcome + the observer's knowledge). REFINES M_004: \"measurement creates information\" is the OBSERVER's gain (the uncertainty resolution); from the information-conservation view the event REVEALS + REDISTRIBUTES pre-existing distinguishability. REMOVE MEASUREMENT: the information still EXISTS — the 95 states remain distinguishable (D_039) — only its resolution is absent. Prove/refute: information is conserved through actualization — YES (H_before = H_outcome + H_observer). FALSIFICATION: a measurement that creates a new distinguishable state (state space grows) or changes the total information. Classification: distinguishability/information DERIVED (D_039, pre-existing); reveal EMERGENT (the resolution event, M_001); redistribute DERIVED (phase → outcome + observer); conservation DERIVED (count conservation, QG216). No new primitive; canonical AT unchanged.",
+            "For non-experts: earlier we found a measurement can reveal at most 6.57 bits. Now the deeper question: does the measurement MAKE that information, or is it already there? The answer: it is already there. The theory's world has 95 distinct possible states — that fact is 6.57 bits of information sitting in the state space before anyone measures anything. A measurement does not add a single new possibility; it finds out WHICH of the 95 is actually realized, and it moves the 'phase freedom' into the recorded outcome and the observer's new knowledge. Nothing is created and nothing is lost — the information was conserved all along.",
+            "The information was already in the state space — measurement reveals and redistributes, never creates.",
+            "“You do not make information by looking; you reveal what was already there.”",
+            true,
+            [
+                new("ResearchY-D_039", "STATE-IDENTITY-ORIGIN AUDIT",
+                    "Difference IS distinguishability — the 95/95 state space is the pre-existing information source.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/D_ResonanceStructure/ResearchY-D_039.md"),
+                new("ResearchY-M_004", "MEASUREMENT INFORMATION AUDIT",
+                    "Max info per event = log₂ 95 ≈ 6.57 bits — now identified as pre-existing distinguishability.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/M_Measurement/ResearchY-M_004.md"),
+                new("ResearchY-M_005", "INFORMATION CONSERVATION AUDIT",
+                    "Measurement reveals + redistributes, does not create; information conserved (count conservation, QG216).",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/M_Measurement/ResearchY-M_005.md"),
+            ]),
+        new(
             "researchy-m004-information",
             "One Measurement Can Reveal at Most 6.57 Bits — the State Space's Distinguishability",
             "ResearchY Milestone · M_004 (V2.2 New Physics — Measurement)",
