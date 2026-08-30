@@ -94,6 +94,30 @@ public static class AtlasDataService
     public static IReadOnlyList<ResearchNewsModel> ResearchNews { get; } =
     [
         new(
+            "researchy-m009-prediction-discriminator",
+            "The Discriminator Keeps One Prediction: AT-P042 Survives, AT-P043 Is Downgraded",
+            "ResearchY Milestone · M_009 (V2.2 New Physics — Measurement)",
+            "A sharp discriminator audit: which measurement predictions are genuinely beyond standard QM? Exactly one survives. AT-P042 (the discrete tick time-parameter) is genuinely new — QM's phase continuum becomes a finite lattice. AT-P043 (the 6.57-bit bound) is already implied by QM — it is the standard d-outcome entropy bound.",
+            "M_009 is the discriminator audit of the M_008 predictions. Verdict: EXACTLY ONE of the two AT-specific predictions survives. AT-P042 (discrete tick, Δθ = 2πk/N) is C — GENUINELY NEW: standard QM has continuous time and a continuum of reachable phases, whereas AT derives a discrete tick COUNT with a FINITE phase lattice {θ₀ + m·2πk/N} of cardinality N/gcd(N,k) ≤ 96 (k=16 → 6 distinct phases; k=1 → 96; k=48 → 2), the step DERIVED from the spectral rate (D_041/M_003). The lattice is mathematically testable; experimental discrimination requires sub-tick phase resolution (in-principle only, tick scale uncalibrated). AT-P043 (one event reveals ≤ log₂(95) = 6.57 bits) is A — ALREADY IMPLIED by QM: the per-event bound log₂(d) is the STANDARD d-outcome Shannon entropy bound, and QM imposes exactly the same limit for any 95-state system — AT-P043's only AT content is the derived VALUE d = 95 (D_039), not a new bound structure. FIRST uniquely-AT measurement prediction: AT-P042. REGISTRY REFINEMENT: AT-P042 remains PREDICTION (refined — phase lattice cardinality N/gcd(N,k)); AT-P043 is DOWNGRADED from PREDICTION to CORRESPONDENCE (a standard bound, not a QM discriminator). FALSIFICATION: a continuous (non-lattice) phase value at sub-tick resolution falsifies AT-P042; no single-event experiment can discriminate AT-P043 because QM imposes the same bound. The measurement program therefore yields exactly ONE uniquely-AT prediction. No new primitive; canonical AT unchanged.",
+            "For non-experts: the previous audit found two signatures that looked special to this theory. This audit plays the strict referee and asks: are they really new, or does ordinary quantum mechanics already say the same thing? One survives: this theory says time itself is made of discrete ticks, so after a measurement the phase can only land on a fixed set of discrete values — like the marks on a clock face — while standard quantum mechanics says it can be anything, smooth and continuous. The other candidate does NOT survive as new: it says one measurement can reveal at most about 6.57 bits of information, but that limit is actually a universal rule of information theory that any theory with 95 possible answers — including ordinary quantum mechanics — must obey. So the theory keeps exactly one truly distinguishing prediction.",
+            "AT-P042 survives the discriminator; AT-P043 is the standard information bound, not new.",
+            "“One prediction is genuinely the theory's own; the other is everyone's.”",
+            true,
+            [
+                new("ResearchY-D_041", "TIME-ORIGIN AUDIT",
+                    "The phase advances per tick (Δθ = 2πk/N) — the derived spectral rate behind AT-P042.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/D_ResonanceStructure/ResearchY-D_041.md"),
+                new("ResearchY-M_008", "MEASUREMENT PREDICTION AUDIT",
+                    "M_008 proposed AT-P042 and AT-P043; M_009 discriminates them — AT-P042 unique, AT-P043 downgraded.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/M_Measurement/ResearchY-M_008.md"),
+                new("ResearchY-D_039", "STATE-IDENTITY-ORIGIN AUDIT",
+                    "The derived state-space size d = 95 — the only AT content of AT-P043.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/D_ResonanceStructure/ResearchY-D_039.md"),
+                new("ResearchY-M_009", "MEASUREMENT PREDICTION DISCRIMINATOR AUDIT",
+                    "The discriminator: AT-P042 C (genuinely new — phase lattice), AT-P043 A (already implied — standard bound).",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/M_Measurement/ResearchY-M_009.md"),
+            ]),
+        new(
             "researchy-m008-measurement-predictions",
             "Two Falsifiable Signatures: the Discrete Tick and the 95-State Information Bound",
             "ResearchY Milestone · M_008 (V2.2 New Physics — Measurement)",

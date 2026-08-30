@@ -1423,6 +1423,25 @@ repeated/basis/interference/Born CORRESPONDENCE; feedback + information bound
 PREDICTION. The chain Difference → Actualization → Measurement → Prediction is closed
 with two falsifiable AT-specific outputs. No new primitive; canonical AT unchanged.
 
+ResearchY-M_009 (Measurement Prediction Discriminator Audit, COMPLETE, tests 6/6
+PASSED): do AT-P042 and AT-P043 predict anything beyond standard QM? DISCRIMINATOR
+verdict: EXACTLY ONE survives — AT-P042 is C) genuinely new; AT-P043 is A) already
+implied by QM. AT-P042 (discrete tick, Δθ = 2πk/N): standard QM has continuous time
+and a continuum of reachable phases; AT derives a discrete tick COUNT with a FINITE
+phase lattice {θ₀ + m·2πk/N}, cardinality N/gcd(N,k) ≤ 96 (k=16 → 6; k=1 → 96; k=48 →
+2), step DERIVED from the spectral rate (D_041/M_003). The lattice is mathematically
+testable; experimental discrimination requires sub-tick phase resolution (in-principle
+only, tick scale uncalibrated). AT-P043 (info per event ≤ log₂(95) = 6.57 bits): the
+per-event bound log₂(d) is the STANDARD d-outcome Shannon entropy bound — QM imposes
+exactly the same limit for any 95-state system; the only AT-specific content is the
+derived VALUE d = 95 (D_039), not a new bound. FIRST uniquely-AT measurement
+prediction = AT-P042. REGISTRY REFINEMENT: AT-P042 remains PREDICTION (refined: phase
+lattice cardinality N/gcd(N,k)); AT-P043 DOWNGRADED from PREDICTION to CORRESPONDENCE
+(standard bound, not a QM discriminator). FALSIFICATION: a continuous (non-lattice)
+phase at sub-tick resolution falsifies AT-P042; no single-event experiment can
+discriminate AT-P043 (QM imposes the same bound). No new primitive; canonical AT
+unchanged.
+
 ### PRED001: Prediction Registry (standalone Zenodo publication)
 
 Summary:
