@@ -1324,6 +1324,23 @@ deterministic evolution DERIVED (D_041); measurement event EMERGENT (M_001).
 Falsification: a measurement outcome that does NOT enter the future evolution (the
 future remains a free superposition). No new primitive; canonical AT unchanged.
 
+ResearchY-M_004 (Measurement Information Audit, COMPLETE, tests 6/6 PASSED): what is
+the information-theoretic limit of a measurement event? Verdict: the maximum
+information content of one actualization event is log₂(95) ≈ 6.57 bits — the size of
+the distinguishable state space (D_039: 95/95 distinct complex states). A measurement
+reads both quadratures of one complex mode (M_001), resolving which of the 95 states is
+realized: information BEFORE = log₂ 95 (uncertainty over the state space), AFTER = 0
+(outcome known). GAIN per event (uniform) = log₂(95) = 6.57 bits (the mode index).
+FIXED: the phase (pinned, M_002) and the outcome (trajectory selected, M_003). LOST:
+the phase freedom (superposition → one trajectory). Repeated measurements are
+IDEMPOTENT — no additional information (M_002). Prove/refute: measurement creates
+information — YES (the outcome resolves the uncertainty over the state space).
+Maximum information content of one event = the state-space distinguishability
+(log₂ 95). Falsification: an event revealing more than log₂(95) bits. Classification:
+information DERIVED (from distinguishability, D_039); measurement event EMERGENT
+(M_001); max info per event DERIVED (log₂ 95). Open: the Born-weighted refinement
+(I_occ = 0.7513 nats, QG228). No new primitive; canonical AT unchanged.
+
 ### PRED001: Prediction Registry (standalone Zenodo publication)
 
 Summary:
