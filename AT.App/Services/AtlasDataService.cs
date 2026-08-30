@@ -702,6 +702,10 @@ public static class AtlasDataService
             "The compressed theory: two primitives plus one number; READY AS A FOUNDATION MONOGRAPH."),
         new("AT-QG 115–117", "Structure emerges from actualization",
             "Actualization patterns shape network geometry (QG115, PARTIAL FEEDBACK); strong feedback drives every pattern to one universal geometry class (QG116, STRUCTURE ORIGIN); the attractor is dynamical, not accidental (QG116b); dynamic parameters generate discrete attractor geometry classes (QG117, ATTRACTOR ORIGIN) — the direction of explanation reverses: Actualization → Structure → Physics."),
+        new("ResearchY V2.1", "Boundary Program (D_020–D_045, R_001)",
+            "The origin chain of the D96 structure traced end-to-end: Difference → Actualization → tick → count → magnitude → phase → complex state → identity → reciprocity → pairing → p=3 → N=96 → Closure → Spectrum → {v, m_e} → Physics. The program closed with exactly FIVE irreducible boundary inputs — {Difference, η}, {Z2-paired (complex) sector}, {3 octave families}, {SU(2) gauge + j=1/2}, {v, m_e} — everything else derived or emergent. 26 audits + closure audit, 372 tests."),
+        new("ResearchY V2.2", "New Physics (NP_001 roadmap, D_046)",
+            "The V2.2 roadmap ranked ten new-physics targets by novelty × testability × V2.1-dependence — measurement origin, information-encoded measurement, baryon asymmetry, neutrino hierarchy, CMB spectrum, dark-matter status, v/m_e reducibility, Λ coincidence, collapse/observer, initial conditions. D_046 derived EIGHT new predictions absent from V2.0 (O(2)-type doublets, N=96 selected, frequency from tick phase rate, v = 137·ln span, family count = floor(log₂ span)+1, and more), each with a falsification path."),
     ];
 
     public static IReadOnlyList<HostileReviewModel> HostileReviews { get; } =
