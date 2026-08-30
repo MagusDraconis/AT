@@ -1747,6 +1747,32 @@ the bridge (ρ as common object) DERIVED. The information–geometry bridge is �
 geometry and information are two faces of the same actualization object. No new
 primitive; canonical AT unchanged.
 
+ResearchY-QG_002 (Distinguishability → Geometry Audit, COMPLETE, tests 6/6 PASSED):
+can geometry be reconstructed directly from distinguishability? Verdict: YES —
+spacetime geometry is a MANIFESTATION of distinguishability; the metric is a pure
+function of the N=96 state structure. DIRECT MAPPING: Distinguishability (N=96,
+D_039) → Spectrum (λ_k = 2−2cos(2πk/N)) → ρ (count density) → Metric g = ρ^(2/d)η
+(QG197) → Einstein tensor (QG222). The chain is pure-functional: the state count
+determines the spectrum, which determines ρ, which determines the metric — so metric
+information (the conformal factor ρ^(2/d)) is INFERABLE from the distinguishability
+structure alone (verified: λ₁ = 0.004282, λ₂ = 0.017110; conformal factors 0.448/0.630/
+0.788 for ρ=0.3/0.5/0.7). TESTS: horizon formation (metric from g; information
+conserved across it, NP_020/021); ΩΛ = I_occ/ln K = 0.6839 (information and geometry
+share ρ, QG_001); measurement (resolves ρ; reveals pre-existing distinguishability,
+M_005) — all consistent. COMPARISON: AT is INFORMATION-FIRST (distinguishability →
+spectrum → ρ → metric), not geometry-first (which would assume an external metric).
+Counterexamples: 'geometry generates distinguishability' fails (the metric is a derived
+function of ρ; N=96 is the primitive); 'the metric is an external input' fails (g =
+ρ^(2/d)η follows from the spectrum); 'information and geometry are independent' fails
+(both share ρ, QG_001); 'the state count does not fix the geometry' fails (N → spectrum
+→ ρ → g is pure-functional). Falsification: a metric deviation from g = ρ^(2/d)η with
+the same N=96 spectrum; a geometry not determined by the spectrum; a measurement of the
+metric not passing through ρ. Classification: distinguishability DERIVED (D_039);
+spectrum DERIVED (from N); count density ρ DERIVED; metric g = ρ^(2/d)η DERIVED
+(QG197); geometry as a manifestation of distinguishability DERIVED; information I =
+KL(ρ‖uniform) DERIVED (QG228). AT is information-first: geometry is derived from the
+primitive distinguishability. No new primitive; canonical AT unchanged.
+
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-

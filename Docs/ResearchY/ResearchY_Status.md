@@ -98,6 +98,7 @@
 | ResearchY-NP_020 | Black Hole Information Audit | `NP_NewPhysics/ResearchY-NP_020.md` | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_020_Tests.cs` (7/7 ✅) | COMPLETE |
 | ResearchY-NP_021 | Information Horizon Audit | `NP_NewPhysics/ResearchY-NP_021.md` | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_021_Tests.cs` (5/5 ✅) | COMPLETE |
 | ResearchY-QG_001 | Information–Geometry Bridge Audit | `QG_GeometryBridge/ResearchY-QG_001.md` | `AT.Tests/ResearchY/QG_GeometryBridge/Y_QG_001_Tests.cs` (6/6 ✅) | COMPLETE |
+| ResearchY-QG_002 | Distinguishability → Geometry Audit | `QG_GeometryBridge/ResearchY-QG_002.md` | `AT.Tests/ResearchY/QG_GeometryBridge/Y_QG_002_Tests.cs` (6/6 ✅) | COMPLETE |
 | ResearchY-M_001 | Measurement Origin Audit | `M_Measurement/ResearchY-M_001.md` | `AT.Tests/ResearchY/M_Measurement/Y_M_001_Tests.cs` (7/7 ✅) | COMPLETE |
 | ResearchY-M_002 | Measurement Disturbance Audit | `M_Measurement/ResearchY-M_002.md` | `AT.Tests/ResearchY/M_Measurement/Y_M_002_Tests.cs` (7/7 ✅) | COMPLETE |
 | ResearchY-M_003 | Measurement Feedback Audit | `M_Measurement/ResearchY-M_003.md` | `AT.Tests/ResearchY/M_Measurement/Y_M_003_Tests.cs` (5/5 ✅) | COMPLETE |

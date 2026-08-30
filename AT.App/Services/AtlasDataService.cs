@@ -94,6 +94,30 @@ public static class AtlasDataService
     public static IReadOnlyList<ResearchNewsModel> ResearchNews { get; } =
     [
         new(
+            "researchy-qg002-distinguishability-geometry",
+            "Geometry Is a Manifestation of Distinguishability: the Metric from the State Count Alone",
+            "ResearchY Milestone · QG_002 (V2.2 New Physics — Geometry Bridge)",
+            "Can the metric be reconstructed just from knowing how many states the theory can tell apart? Yes. The state count fixes the spectrum, which fixes the count density, which fixes the metric g = ρ^(2/d)η. AT is information-first: geometry is derived from distinguishability, not assumed.",
+            "QG_002 sharpens the bridge: can geometry be reconstructed DIRECTLY from distinguishability? Verdict: YES — spacetime geometry is a MANIFESTATION of distinguishability; the metric is a pure function of the N=96 state structure. DIRECT MAPPING: Distinguishability (N=96, D_039) → Spectrum (λ_k = 2−2cos(2πk/N)) → ρ (count density) → Metric g = ρ^(2/d)η (QG197) → Einstein tensor (QG222). The chain is pure-functional: the state count determines the spectrum, which determines ρ, which determines the metric — so metric information (the conformal factor ρ^(2/d)) is INFERABLE from the distinguishability structure alone (verified: λ₁ = 0.004282, λ₂ = 0.017110; conformal factors 0.448/0.630/0.788 for ρ = 0.3/0.5/0.7). TESTS: horizon formation — the metric (g) defines the horizon while information is conserved across it (NP_020/021); ΩΛ = I_occ/ln K = 0.6839 — information and geometry share ρ (QG_001); measurement — resolves ρ and reveals the pre-existing distinguishability (M_005); all consistent. COMPARISON: AT is INFORMATION-FIRST (distinguishability → spectrum → ρ → metric), NOT geometry-first (which would assume an external metric and derive ρ from it). COUNTEREXAMPLES: 'geometry generates distinguishability' fails (the metric is a derived function of ρ; N=96 is the primitive); 'the metric is an external input' fails (g = ρ^(2/d)η follows from the spectrum — no external metric needed); 'information and geometry are independent' fails (both share ρ, QG_001); 'the state count does not fix the geometry' fails (N → spectrum → ρ → g is a pure functional chain). FALSIFICATION: a metric deviation from g = ρ^(2/d)η with the same N=96 spectrum; a geometry not determined by the spectrum (an independent geometric input); a measurement of the metric that does not pass through ρ. Classification: distinguishability DERIVED (D_039, the primitive structure); spectrum DERIVED (from N); count density ρ DERIVED; metric g = ρ^(2/d)η DERIVED (QG197); geometry as a manifestation of distinguishability DERIVED; information I = KL(ρ‖uniform) DERIVED (QG228). AT is information-first: the geometry is derived from the primitive distinguishability, completing Difference → Distinguishability → Information → Geometry → Gravity. No new primitive; canonical AT unchanged.",
+            "For non-experts: the theory claims that space and time are not assumed but BUILT from its first idea — the ability to tell things apart. This audit tests that claim head-on: if you know only how many distinct possibilities the theory has (96 building blocks, 95 distinguishable states), can you recover the geometry? The answer is yes, in a clean chain: the number of states fixes the 'musical scale' of the theory (its spectrum), the scale fixes the density of stuff at each point, and that density directly builds the metric — the ruler of spacetime. So geometry is not an input; it is a derived face of distinguishability. The audit checks the big cases: the horizon of a black hole (built from the metric while the information survives), the dark-energy fraction (68.39%, from the same shared density), and measurement (which reads the density). This is information-first physics: first the ability to distinguish, then the geometry.",
+            "The metric g = ρ^(2/d)η is a pure function of the 96-state structure — geometry derived, not assumed.",
+            "“First the ability to distinguish — then the ruler of spacetime.”",
+            true,
+            [
+                new("ResearchY-QG_001", "INFORMATION–GEOMETRY BRIDGE AUDIT",
+                    "The bridge is ρ; QG_002 shows the geometry is reconstructible from distinguishability alone.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/QG_GeometryBridge/ResearchY-QG_001.md"),
+                new("ResearchY-D_039", "STATE-IDENTITY-ORIGIN AUDIT",
+                    "Difference IS distinguishability — the N=96 state structure that anchors the chain.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/D_ResonanceStructure/ResearchY-D_039.md"),
+                new("ResearchY-NP_020", "BLACK HOLE INFORMATION AUDIT",
+                    "The horizon test: geometry from the metric, information conserved across it.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_020.md"),
+                new("ResearchY-QG_002", "DISTINGUISHABILITY → GEOMETRY AUDIT",
+                    "N=96 → spectrum → ρ → metric: geometry is a manifestation of distinguishability (information-first).",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/QG_GeometryBridge/ResearchY-QG_002.md"),
+            ]),
+        new(
             "researchy-qg001-information-geometry-bridge",
             "The Bridge Is ρ: Geometry and Information Are Two Faces of the Count Density",
             "ResearchY Milestone · QG_001 (V2.2 New Physics — Geometry Bridge)",
