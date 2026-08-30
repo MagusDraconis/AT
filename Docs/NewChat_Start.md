@@ -1588,6 +1588,27 @@ SM weak doublets CORRESPONDENCE only approximately (gauge pairs, not degeneracie
 O(2) reflection symmetry DERIVED (algebra of cos); central mode k=48 DERIVED
 (self-pairing). No new primitive; canonical AT unchanged.
 
+ResearchY-NP_016 (Mirror-Pair Observation Audit, COMPLETE, tests 7/7 PASSED): do
+natural spectra exhibit O(2) mirror-pair degeneracy? Verdict: the O(2) mirror-pair
+degeneracy (λ_k = λ_{N−k}, NP_015) is NATIVE to the D96 ring modes themselves — the
+observable domain is any physical system realizing the C96 ring algebra. Verified:
+ω_1 = ω_95 = 0.065438, ω_16 = ω_80 = 1.000000, ω_k = ω_{N−k} for every k ≠ 48
+(|Δλ| = 0 exactly, from cos(2πk/N) = cos(2π(N−k)/N)). TARGET RANKING: (1) ring
+resonance spectrum — HIGH (exact mirror pairs native to the mode algebra); (2)
+cosmological acoustic spectrum — MEDIUM (octave-hierarchy peak RATIOS, D96-derived —
+ℓ₁=220.48, r₂₁=2.4368 — not per-mode pairs); (3) gravitational-wave spectrum — LOW
+(ringdown modes are DAMPED, complex-frequency, no exact degeneracy); (4) particle (SM)
+spectrum — LOW (weak doublets (u,d),(c,s),(t,b) are non-degenerate split-mass pairs);
+(5) neutrino spectrum — LOW (mass ordering unresolved, no degeneracy observed).
+EXPECTED DEVIATION IF AT IS FALSE: no exact mirror pairs (|Δλ| > 0 or unpaired modes),
+no 47+1 structure, no k → N−k reflection symmetry, no ring-algebra frequency ratios.
+FALSIFICATION STRATEGY: measure a ring-mode spectrum; require |Δλ| = 0 for every
+claimed pair, 47+1 count, and reflection symmetry — any deviation falsifies.
+Classification: mirror-pair degeneracy PREDICTION (uniquely D96, native to the ring
+modes); cosmological acoustic ratios CORRESPONDENCE (D96-derived peak ratios, not
+per-mode pairs); SM/GW/neutrino expectations CORRESPONDENCE (no exact degeneracy
+predicted there). No new primitive; canonical AT unchanged.
+
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-

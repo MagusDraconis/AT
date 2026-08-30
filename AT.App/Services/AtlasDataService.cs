@@ -94,6 +94,30 @@ public static class AtlasDataService
     public static IReadOnlyList<ResearchNewsModel> ResearchNews { get; } =
     [
         new(
+            "researchy-np016-mirror-pair-observation",
+            "Where to See the Mirror Pairs: the Ring Resonance Spectrum Is the Target",
+            "ResearchY Milestone · NP_016 (V2.2 New Physics — Roadmap)",
+            "The O(2) mirror-pair degeneracy is native to the D96 ring modes themselves. The strongest observable target is any physical system realizing the ring's mode structure — where every tone has an exact twin. Cosmological spectra carry only peak ratios; gravitational, particle, and neutrino spectra predict no exact degeneracy.",
+            "NP_016 searches for observational domains where the O(2) mirror-pair degeneracy (λ_k = λ_{N−k}, NP_015) would appear as a measurable signature. Verdict: the degeneracy is NATIVE to the D96 ring modes themselves — the observable domain is any physical system realizing the C96 ring algebra. Verified: ω_1 = ω_95 = 0.065438, ω_16 = ω_80 = 1.000000, and ω_k = ω_{N−k} for every k ≠ 48 (|Δλ| = 0 exactly, from cos(2πk/N) = cos(2π(N−k)/N)). TARGET RANKING of candidate datasets: (1) RING RESONANCE SPECTRUM — HIGH (the exact mirror pairs are native to the mode algebra: 47 pairs + central mode); (2) COSMOLOGICAL ACOUSTIC SPECTRUM — MEDIUM (the acoustic peaks follow the D96 octave hierarchy — ℓ₁=220.48, r₂₁=2.4368, r₃₁=3.6965 — but these are peak RATIOS, not per-mode mirror pairs); (3) GRAVITATIONAL-WAVE SPECTRUM — LOW (black-hole ringdown modes are DAMPED, complex-frequency, so no exact degeneracy); (4) PARTICLE (SM) SPECTRUM — LOW (the weak-isospin doublets (u,d),(c,s),(t,b) are non-degenerate split-mass pairs, not spectral twins); (5) NEUTRINO SPECTRUM — LOW (mass ordering unresolved, no degeneracy observed). EXPECTED DEVIATION IF AT IS FALSE: no exact mirror pairs (|Δλ| > 0 or unpaired modes), no 47+1 structure, no k → N−k reflection symmetry, no ring-algebra frequency ratios at all. FALSIFICATION STRATEGY: identify a system realizing the C96 ring structure, measure its resonance spectrum, and require |Δλ| = 0 for every claimed pair, the 47+1 count, and the reflection symmetry — any deviation, missing pair, or count mismatch falsifies the prediction. Classification: mirror-pair degeneracy PREDICTION (uniquely D96, native to the ring modes); cosmological acoustic ratios CORRESPONDENCE (D96-derived peak ratios, not per-mode pairs); SM/GW/neutrino expectations CORRESPONDENCE (no exact degeneracy predicted there). Open problem: identifying a physical system whose mode structure realizes the C96 ring algebra — the necessary condition for observing the mirror pairs. The theory's sharpest claim is about ring-mode spectra, not the SM mass spectrum. No new primitive; canonical AT unchanged.",
+            "For non-experts: the theory's signature — every spectral tone having an exact twin — must be looked for in the right place. This audit maps where. The most natural place is any system whose vibration modes follow the theory's underlying ring of 96 points: there the twins are native, exact, and countable (47 pairs plus one central tone). The cosmic microwave background's acoustic peaks come from the same octave structure, but only as ratios between peaks — not as exact twins. Gravitational waves from black holes are too damped, the Standard Model's particles are deliberately split into unequal pairs (up/down quarks and their cousins), and neutrino masses are still unresolved — so none of those shows the signature. The prediction is sharp and specific: look at ring-mode resonances, require every tone to have an exact twin, and any mismatch refutes the theory.",
+            "The mirror pairs are native to ring-mode spectra — the C96 resonance system is the target.",
+            "“Look for the twins where the ring sings.”",
+            true,
+            [
+                new("ResearchY-NP_013", "UNIQUE SPECTRAL PREDICTION AUDIT",
+                    "NP_013 ranked the O(2) doublet degeneracy as the strongest D96 prediction.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_013.md"),
+                new("ResearchY-NP_015", "O(2) DOUBLET PREDICTION AUDIT",
+                    "NP_015 turned the degeneracy into observable mirror-pair frequencies (ratio 1).",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_015.md"),
+                new("ResearchY-D_021", "OSCILLATION SYMMETRY AUDIT",
+                    "λ_k = λ_{N−k} — the algebraic source of the exact mirror pairs.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/D_ResonanceStructure/ResearchY-D_021.md"),
+                new("ResearchY-NP_016", "MIRROR-PAIR OBSERVATION AUDIT",
+                    "The mirror pairs are native to the C96 ring modes; ring resonance spectra are the top target.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_016.md"),
+            ]),
+        new(
             "researchy-np015-o2-doublet-prediction",
             "The O(2) Doublet Predicts Mirror-Pair Frequencies: Ratio 1, Exact, Countable",
             "ResearchY Milestone · NP_015 (V2.2 New Physics — Roadmap)",

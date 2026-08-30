@@ -42,6 +42,7 @@ ResearchY-NP_012  ↔  Y_NP_012_Tests.cs    (AT.Tests/ResearchY/NP_NewPhysics/)
 ResearchY-NP_013  ↔  Y_NP_013_Tests.cs    (AT.Tests/ResearchY/NP_NewPhysics/)
 ResearchY-NP_014  ↔  Y_NP_014_Tests.cs    (AT.Tests/ResearchY/NP_NewPhysics/)
 ResearchY-NP_015  ↔  Y_NP_015_Tests.cs    (AT.Tests/ResearchY/NP_NewPhysics/)
+ResearchY-NP_016  ↔  Y_NP_016_Tests.cs    (AT.Tests/ResearchY/NP_NewPhysics/)
 ```
 
 ## Test Registry
@@ -128,6 +129,7 @@ ResearchY-NP_015  ↔  Y_NP_015_Tests.cs    (AT.Tests/ResearchY/NP_NewPhysics/)
 | ResearchY-NP_013 (Unique Spectral Prediction Audit) | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_013_Tests.cs` | ACTIVE | 2026-08-30 | ✅ 6/6 PASSED — `Results/Y_NP_013_Result.md` |
 | ResearchY-NP_014 (Necessity of Synchronization Audit) | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_014_Tests.cs` | ACTIVE | 2026-08-30 | ✅ 7/7 PASSED — `Results/Y_NP_014_Result.md` |
 | ResearchY-NP_015 (O(2) Doublet Prediction Audit) | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_015_Tests.cs` | ACTIVE | 2026-08-30 | ✅ 5/5 PASSED — `Results/Y_NP_015_Result.md` |
+| ResearchY-NP_016 (Mirror-Pair Observation Audit) | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_016_Tests.cs` | ACTIVE | 2026-08-30 | ✅ 7/7 PASSED — `Results/Y_NP_016_Result.md` |
 
 ## Result Summaries
 
