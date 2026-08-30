@@ -94,6 +94,33 @@ public static class AtlasDataService
     public static IReadOnlyList<ResearchNewsModel> ResearchNews { get; } =
     [
         new(
+            "researchy-m007-measurement-synthesis",
+            "The Measurement Chain Is Complete: From D96 to the Observer, Fully Classified",
+            "ResearchY Milestone · M_007 (V2.2 New Physics — Measurement)",
+            "The measurement program is synthesized: the chain D96 → pairing → complex state → reciprocity → observability → measurement is fully classified. The structure is derived, the requirements and readings are emergent, and only the five irreducible boundaries remain. A complete, coherent measurement theory.",
+            "M_007 synthesizes the entire measurement program. Verdict: the chain D96 → pairing → complex state → reciprocity → observability → measurement is FULLY CLASSIFIED. (1) D96 → pairing: DERIVED (D_021 — λ_k = λ_{N−k}, the spectral degeneracy; D_035 — complete pairing from complex observability, every eigenvalue mult ≥ 2). (2) Pairing → complex state: DERIVED (D_036 — the {cos, sin} quadrature pair IS the [Re, Im] of ψ = |ψ|·e^{iθ}). (3) Complex state → reciprocity: EMERGENT (D_037 — the two-quadrature measurement basis {cos, sin}, orthogonal, equal norm). (4) Reciprocity → observability: DERIVED (D_037 — z = a + ib reconstruction is exact, a alone ambiguous). (5) Observability → measurement: EMERGENT (M_001 — an actualization event reads both quadratures of a distinguishable state). THE MEASUREMENT PROGRAM: event EMERGENT (M_001); disturbance = phase-pinning DERIVED (M_002); feedback DERIVED (M_003); information = log₂ 95 ≈ 6.57 bits DERIVED (M_004); conservation = reveal + redistribute DERIVED (M_005); observer = epistemic recipient EMERGENT (M_006). PATTERN: the DERIVED links are structural consequences (pairing, complex state, observability, disturbance, feedback, information, conservation); the EMERGENT links are requirements/readings (the basis, the event, the recipient). ONLY BOUNDARIES: the five R_001 irreducible inputs — {Difference, η}, {Z2-paired sector}, {3 octave families}, {SU(2) gauge + j=1/2}, {v, m_e}. OPEN QUESTIONS: the Born-weighted information refinement (I_occ = 0.7513 nats, QG228), the observer-network coupling, and the D_046 measurement predictions (disturbance relations, no-cloning bounds, information-theoretic uncertainty) as the program's testable output. No new primitive; canonical AT unchanged.",
+            "For non-experts: the measurement program is now a single coherent story. It begins with the theory's spectrum of 96 modes, whose frequencies come in mirror pairs (derived). Each pair is a complex wave — a size and a phase (derived). To observe a wave you read its two channels, the cosine and the sine (an emergent requirement), and from both you reconstruct it exactly (derived). A measurement is the act of reading both channels, which pins the phase, feeds the future, reveals at most 6.57 bits, conserves all information, and needs no special observer — the observer is just the one who comes to know. Every step is classified: the structure is derived, the requirements are emergent, and the only genuine inputs are the five foundations.",
+            "The full measurement chain is classified: structure derived, requirements emergent, five boundaries only.",
+            "“From mirror pairs to the observer — one complete, classified chain.”",
+            true,
+            [
+                new("ResearchY-D_021", "OSCILLATION SYMMETRY AUDIT",
+                    "The pairing λ_k = λ_{N−k} — the first DERIVED link of the measurement chain.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/D_ResonanceStructure/ResearchY-D_021.md"),
+                new("ResearchY-D_036", "COMPLEX-STATE-ORIGIN AUDIT",
+                    "The {cos, sin} pair IS [Re, Im] — complex states are derived.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/D_ResonanceStructure/ResearchY-D_036.md"),
+                new("ResearchY-D_037", "RECIPROCITY-OBSERVABILITY AUDIT",
+                    "The two-quadrature measurement basis; observability = z = a + ib exact.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/D_ResonanceStructure/ResearchY-D_037.md"),
+                new("ResearchY-M_001", "MEASUREMENT ORIGIN AUDIT",
+                    "Measurement = an actualization event reading both quadratures — the EMERGENT link.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/M_Measurement/ResearchY-M_001.md"),
+                new("ResearchY-M_007", "MEASUREMENT-PROGRAM SYNTHESIS",
+                    "The full chain classified: D96 → pairing → complex → reciprocity → observability → measurement → observer.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/M_Measurement/ResearchY-M_007.md"),
+            ]),
+        new(
             "researchy-m006-observer-role",
             "The Observer Changes Access, Never the State — the Measurement Program Is Complete",
             "ResearchY Milestone · M_006 (V2.2 New Physics — Measurement)",
