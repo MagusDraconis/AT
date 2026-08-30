@@ -12,6 +12,7 @@
 | B — Circular Geometry | PLANNED | B_001 Circular Closure, B_002 Origin of π, B_003 Origin of 2π |
 | C — Source Geometry | PLANNED | C_001 Center Audit, C_002 Radial Propagation |
 | D — Resonance Structure | PLANNED | D_001 D96 Resonance Audit, D_002 Standing Wave Model |
+| S — Architecture Synthesis | ACTIVE | S_001 Post-V2.1 Theory Architecture Synthesis (capstone) |
 | Tests | ACTIVE | Y_A_001 suite passing (5/5) |
 
 ## Investigation Status
@@ -108,6 +109,7 @@
 | ResearchY-QG_009 | Infinite State Space Consistency Audit | `QG_GeometryBridge/ResearchY-QG_009.md` | `AT.Tests/ResearchY/QG_GeometryBridge/Y_QG_009_Tests.cs` (7/7 ✅) | COMPLETE |
 | ResearchY-QG_010 | Observable Finiteness Audit | `QG_GeometryBridge/ResearchY-QG_010.md` | `AT.Tests/ResearchY/QG_GeometryBridge/Y_QG_010_Tests.cs` (5/5 ✅) | COMPLETE |
 | ResearchY-QG_011 | Finite Event Principle Audit | `QG_GeometryBridge/ResearchY-QG_011.md` | `AT.Tests/ResearchY/QG_GeometryBridge/Y_QG_011_Tests.cs` (6/6 ✅) | COMPLETE |
+| ResearchY-S_001 | Post-V2.1 Theory Architecture Synthesis | `S_Synthesis/ResearchY-S_001.md` | `AT.Tests/ResearchY/S_Synthesis/Y_S_001_Tests.cs` (4/4 ✅) | COMPLETE |
 | ResearchY-M_001 | Measurement Origin Audit | `M_Measurement/ResearchY-M_001.md` | `AT.Tests/ResearchY/M_Measurement/Y_M_001_Tests.cs` (7/7 ✅) | COMPLETE |
 | ResearchY-M_002 | Measurement Disturbance Audit | `M_Measurement/ResearchY-M_002.md` | `AT.Tests/ResearchY/M_Measurement/Y_M_002_Tests.cs` (7/7 ✅) | COMPLETE |
 | ResearchY-M_003 | Measurement Feedback Audit | `M_Measurement/ResearchY-M_003.md` | `AT.Tests/ResearchY/M_Measurement/Y_M_003_Tests.cs` (5/5 ✅) | COMPLETE |

@@ -237,7 +237,7 @@ Oblique parameters origin (S = occ₀/Σm = 0.0421, T = 2S = 0.0842, U = 0; T = 
 
 Open Questions:
 
-- current working hypothesis: the minimal base is Difference → Actualization → Spectrum → Physics; Q-events and the rest of the network hierarchy are downstream realizations, and the V2.0 audit pass classifies the first-peak 5/4 factor as a documented FIT (QG297, removable QG289, no mechanism) — only ℓ₁ carries it while peak ratios are pure spectral correspondences; dimensional observables still require imported calibration anchors (v, m_e, and standard unit conversion), so units are fixed by measurement/convention rather than derived from the spectrum; N=96 is inevitable within the accepted structural class (period-3 seed, Z2 half-shift, three-family octave window), but a global proof excluding every conceivable alternative closure remains open; the ResearchY QG_008/QG_009 audits pin the state-space finiteness: finite N is a BOUNDARY required only for the AT uniform-reference information observable chain (I_occ = KL(ρ‖uniform), ΩΛ), while a CONVERGENT infinite state space is internally consistent for normalization, realized entropy (geometric ρ_k = (1−r)r^k gives Σρ = 1 and H = 2.0 bits), measurement, geometry, and gravity — the first genuine failure of infinite N is the uniform reference (no normalized uniform measure exists on a countable set), refining the "information breaks first" reading of QG_008; and QG_010 RESOLVES the finiteness question in the observable direction: observability itself requires finite distinguishability (the measurement event M_001 is a finite act with finite information capacity log₂(N_obs), M_004 — an infinite observable alphabet would need log₂(N) → ∞ bits per event), so the OBSERVABLE state space is DERIVED-finite while the underlying state-space finiteness remains BOUNDARY (QG_008); and QG_011 CLOSES the chain: finite event resolution is DERIVED from Actualization's discreteness (an event is one tick Δθ = 2πk/N, D_041, producing one outcome M_001) — the final remaining boundary is the discreteness of the actualization tick itself (canonical structure).
+- current working hypothesis: the minimal base is Difference → Actualization → Spectrum → Physics; Q-events and the rest of the network hierarchy are downstream realizations, and the V2.0 audit pass classifies the first-peak 5/4 factor as a documented FIT (QG297, removable QG289, no mechanism) — only ℓ₁ carries it while peak ratios are pure spectral correspondences; dimensional observables still require imported calibration anchors (v, m_e, and standard unit conversion), so units are fixed by measurement/convention rather than derived from the spectrum; N=96 is inevitable within the accepted structural class (period-3 seed, Z2 half-shift, three-family octave window), but a global proof excluding every conceivable alternative closure remains open; the ResearchY QG_008/QG_009 audits pin the state-space finiteness: finite N is a BOUNDARY required only for the AT uniform-reference information observable chain (I_occ = KL(ρ‖uniform), ΩΛ), while a CONVERGENT infinite state space is internally consistent for normalization, realized entropy (geometric ρ_k = (1−r)r^k gives Σρ = 1 and H = 2.0 bits), measurement, geometry, and gravity — the first genuine failure of infinite N is the uniform reference (no normalized uniform measure exists on a countable set), refining the "information breaks first" reading of QG_008; and QG_010 RESOLVES the finiteness question in the observable direction: observability itself requires finite distinguishability (the measurement event M_001 is a finite act with finite information capacity log₂(N_obs), M_004 — an infinite observable alphabet would need log₂(N) → ∞ bits per event), so the OBSERVABLE state space is DERIVED-finite while the underlying state-space finiteness remains BOUNDARY (QG_008); and QG_011 CLOSES the chain: finite event resolution is DERIVED from Actualization's discreteness (an event is one tick Δθ = 2πk/N, D_041, producing one outcome M_001) — the final remaining boundary is the discreteness of the actualization tick itself (canonical structure); and the S_001 capstone synthesis reconstructs the whole theory as ONE object — the count density ρ (Difference → Distinguishability → event → spectrum → complex state → ρ → {Information, Geometry}), with measurement as its readout face and gravity as its geometric face; final boundary set = 5 canonical inputs (R_001) + 3 structural (QG_008/009/011), deepest single boundary = the discrete tick.
 - the authoritative frontier catalog is now the QG295–QG300 closure run: QG296 reconstruction completes the QG223–295 map, QG297 isolates the 5/4 exception, QG298 resolves the first peak, and the remaining frontier is primarily experimental — P1 106 GeV, P2 0νββ, P3 ladder; no gravity item remains
 - CORRECTION OF RECORD (V2.0 audit pass): the QG298/QG299 "5/4 = structural boundary projection (occ₀ + zero_mode)/occ₀" reading is REJECTED — that identity is a label identity without a mechanism (the same standard used to reject Bekenstein 1/occ₀ = 1/4); the registry classifies 5/4 as FIT (QG297, removable QG289). This supersedes the QG298 DETERMINATION and the QG299 "R4 5/4 CLOSED" entry; see Docs/Research/ATQG_AUDIT_MILESTONE_V20.md
 - P1 (106 GeV) status after QG199: PENDING — window 99–114 GeV neither confirmed nor excluded; 95 GeV cluster = 91.19 rung; new 152 GeV excess = 151.98 rung (P3, not P1); HL-LHC decisive
@@ -2068,6 +2068,40 @@ EMERGENT (M_001 — the actualization readout); finite information capacity DERI
 discreteness of actualization (the tick) BOUNDARY (canonical structure); underlying
 state-space finiteness BOUNDARY (QG_008). The QG_008–QG_011 chain is closed: the
 discreteness of the actualization tick is the irreducible canonical input. No new
+primitive; canonical AT unchanged.
+
+ResearchY-S_001 (Post-V2.1 Theory Architecture Synthesis, COMPLETE, tests 4/4 PASSED):
+reconstruct the entire theory from the deepest derived origin to observable physics.
+Verdict: after V2.1, AT is a theory of ONE object — the count density ρ generated by
+Actualization. THE CANONICAL CHAIN: Difference → Distinguishability (D_039, 95
+states) → Actualization event (discrete tick, QG_011) → spectrum λ_k =
+2−2cos(2πk/N) (D_041, N=96) → complex state ψ = |ψ|e^{iθ} (D_036) → count density
+ρ (Σρ = 1, QG194/QG216) → ρ IS THE INFORMATION–GEOMETRY BRIDGE (QG_001):
+INFORMATION face I = KL(ρ‖uniform) = 0.7513 nats (QG228) → ΩΛ = I_occ/ln K = 0.6839
+(QG234, OBSERVED 0.12%), Ωm = 0.3161; GEOMETRY face g = ρ^(2/d)η (QG197) with
+√(−g) = ρ ⟹ k = 2/d (QG207, QG_005) → native dynamics (QG222) → Einstein tensor →
+GRAVITY (QG_002, EMERGENT). MEASUREMENT = the readout face (M_001–M_006): one event
+reads both quadratures, pins the phase (M_002), feeds back (M_003), gains log₂(95) =
+6.57 bits (M_004), conserves information by reveal + redistribute (M_005), observer =
+epistemic recipient (M_006); the unique QM discriminator is AT-P042 (discrete tick
+time-parameter, M_009). FINAL BOUNDARY SET (8 items): 5 canonical inputs (R_001 —
+{Difference, η}, {Z2-paired sector}, {3 families}, {SU(2) gauge + j=1/2}, {v, m_e})
++ 3 structural (QG_008 state-space finiteness, QG_009 uniform reference, QG_011 tick
+discreteness). DEEPEST SINGLE BOUNDARY: the discrete actualization tick (QG_011) —
+finite events and observable finiteness follow from it (QG_011/QG_010). WHAT THEORY
+IS ABOUT: physics is the normalized count structure generated by Actualization, whose
+information face gives measurement and cosmology and whose geometric face gives
+spacetime and gravity. V2.0: core chain + hosted QM/SM/GR + falsification frontier.
+V2.1: the origin program (D_020–D_045) — N=96, complex sector, reciprocity, su(2)
+compact-form, the five-item boundary set, 8 new predictions. V2.2: measurement
+program (M), lever & coupling audits (NP — one lever, sync OPTIONAL, O(2) doublets
+strongest prediction, information cosmology, horizon bookkeeping), geometry-bridge
+group (QG — ρ is the bridge, geometry = measure-preserving metric, count primitive,
+finiteness chain). Falsification: ρ-bridge (a metric/info not from ρ), ΩΛ deviation
+beyond 0.12%, O(2) |Δλ|>0, ω₁ ≠ √91·(2π/N)·scale, H_before ≠ H_after, sync required,
+a non-tick event. Classification: count density ρ DERIVED; spectrum/state/complex
+structure DERIVED; information/geometry/measurement/gravity DERIVED (from ρ);
+measurement event/observer/spacetime EMERGENT; canonical boundaries BOUNDARY. No new
 primitive; canonical AT unchanged.
 
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
