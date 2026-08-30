@@ -61,14 +61,45 @@ else
         </div>
     }
 
-    @foreach (var item in AtlasDataService.ResearchNews)
+    @foreach (var group in _newsGroups)
     {
-        <ResearchNewsCard Item="@item" />
+        <div class="page-section mt-4">
+            <h2 class="section-heading">@group.Key</h2>
+            @foreach (var item in group)
+            {
+                <ResearchNewsCard Item="@item" />
+            }
+        </div>
     }
 }
 
 @code {
     private PhysicsCoverageFile? _coverage;
+
+    /// <summary>Groups the Research News entries by program phase (consolidation).</summary>
+    private IReadOnlyList<IGrouping<string, ResearchNewsModel>> _newsGroups =
+        AtlasDataService.ResearchNews
+            .GroupBy(ProgramPhase)
+            .OrderBy(g => GroupOrder(g.Key))
+            .ToArray();
+
+    /// <summary>Maps a news entry's kicker to its program phase group label.</summary>
+    private static string ProgramPhase(ResearchNewsModel item)
+        => item.Kicker switch
+        {
+            string k when k.Contains("V2.2 New Physics") => "V2.2 · New Physics",
+            string k when k.Contains("V2.1 Boundary Program") => "V2.1 · Boundary Program",
+            _ => "V2.1 · Wave Geometry Origin Program",
+        };
+
+    /// <summary>Orders groups newest-first (V2.2, then closure, then the D-chain).</summary>
+    private static int GroupOrder(string phase)
+        => phase switch
+        {
+            "V2.2 · New Physics" => 0,
+            "V2.1 · Boundary Program" => 1,
+            _ => 2,
+        };
 
     /// <summary>Maps a phase validation status to a badge CSS class.</summary>
     private static string BadgeClassFor(string validation)
