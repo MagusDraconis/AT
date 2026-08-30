@@ -1493,6 +1493,31 @@ information redistribution DERIVED (M_005); Network 2 as physical field REFUTED 
 mathematical structure; a physical coupling field BOUNDARY (absent; would need κ-active
 dynamics). No new primitive; canonical AT unchanged.
 
+ResearchY-NP_012 (Unique Prediction Search, COMPLETE, tests 6/6 PASSED): what
+observable prediction survives after all QM-equivalent interpretations are removed?
+Verdict: the measurement and coupling programs contribute NO observationally-testable
+uniquely-AT prediction. Every M-series observable is QM-equivalent (CORRESPONDENCE):
+event, pinning, feedback, log₂(95) bound (AT-P043 DOWNGRADED in M_009), conservation,
+observer — all reproduced by standard QM (projection, unitarity, psi-epistemic). AT-P042
+(discrete tick) is the SOLE structurally-unique measurement prediction, but
+observationally equivalent to continuous QM at every tick-sampled time (M_010) — its
+discriminator is sub-tick, in-principle only. The NP program (coupling,
+synchronization, network, field, extremum) yields negative results: coupling not
+physical (NP_011), sync absent (NP_005), no hidden field. THE SURVIVING UNIQUELY-AT
+PREDICTIONS are the N=96 SPECTRAL values: ω₁ = √91·(2π/N) ≈ 0.624 (a fundamental
+frequency QM cannot predict — THE FIRST uniquely-AT prediction), families =
+floor(log₂ span)+1 = 3 (a family count QM leaves free, observed), O(2)-type doublet
+(gauge structure QM leaves free), v = 137·ln(span) = 254.37 GeV (EW-scale structure).
+RANKING (impact+uniqueness+feasibility+testability /20): ω₁ 16, families 16, O(2)
+doublet 13, v-structure 13, AT-P042 11. FALSIFICATION: ω₁ falsified if the measured
+fundamental excitation ≠ √91·(2π/N)·scale; families falsified by a 4th family; O(2) by
+a triplet with no mirror pair; v by a deviating scale relation; AT-P042 by a continuous
+sub-tick phase. CLASSIFICATION: measurement observables CORRESPONDENCE (QM-equivalent);
+AT-P042 PREDICTION (structural); ω₁, family count, O(2) doublet, v-structure PREDICTION
+(uniquely-AT); hidden field/sync/network-2 BOUNDARY (absent). The unique predictions of
+the theory live in the N=96 SPECTRUM, not the measurement program. No new primitive;
+canonical AT unchanged.
+
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-

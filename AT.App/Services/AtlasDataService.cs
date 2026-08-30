@@ -94,6 +94,30 @@ public static class AtlasDataService
     public static IReadOnlyList<ResearchNewsModel> ResearchNews { get; } =
     [
         new(
+            "researchy-np012-unique-prediction-search",
+            "The Unique Predictions Live in the Spectrum, Not the Measurement Program",
+            "ResearchY Milestone · NP_012 (V2.2 New Physics — Roadmap)",
+            "After removing every QM-equivalent interpretation, the measurement and coupling programs leave no observationally-testable unique prediction. The surviving uniquely-AT predictions are the N=96 spectral values — led by ω₁ = √91·(2π/N), the fundamental frequency the theory alone can name.",
+            "NP_012 is the unique-prediction search: it enumerates every surviving AT-specific result, filters out QM-equivalent interpretations, and finds the first genuinely unique prediction. Verdict: the measurement and coupling programs contribute NO observationally-testable uniquely-AT prediction. Every M-series observable is QM-equivalent (CORRESPONDENCE): the event, phase-pinning, feedback, the log₂(95) bound (AT-P043 DOWNGRADED to the standard d-outcome bound in M_009), information conservation, and the observer — all reproduced by standard QM (projection, unitarity, psi-epistemic readings). AT-P042 (discrete tick) is the SOLE structurally-unique measurement prediction, but it is observationally equivalent to continuous QM at every tick-sampled time (M_010) — its discriminator is sub-tick, in-principle only. The NP program yields negative results: the coupling network is not physical (NP_011), synchronization is absent (NP_005), no hidden field exists (NP_007/NP_011). THE SURVIVING UNIQUELY-AT PREDICTIONS are the N=96 SPECTRAL values: (1) ω₁ = √91·(2π/N) ≈ 0.624 — a fundamental frequency standard QM cannot predict — THE FIRST uniquely-AT prediction; (2) families = floor(log₂ span)+1 = 3 — a family count QM leaves free (and which is observed); (3) the O(2)-type doublet — a gauge-sector structure QM leaves free; (4) v = 137·ln(span) = 254.37 GeV — the EW-scale structure. RANKING (impact+uniqueness+feasibility+testability, /20): ω₁ 16, families 16, O(2) doublet 13, v-structure 13, AT-P042 11. FALSIFICATION: ω₁ is falsified if the measured fundamental excitation differs from √91·(2π/N)·(tick scale); families by a 4th fermion family; the O(2) doublet by a triplet with no mirror pair; v by a scale relation deviating from 137·ln(span); AT-P042 by a continuous sub-tick phase. CLASSIFICATION: measurement observables CORRESPONDENCE (QM-equivalent); AT-P042 PREDICTION (structural — in-principle observable); ω₁, family count, O(2) doublet, v-structure PREDICTION (uniquely-AT); hidden field / synchronization / network-2 BOUNDARY (absent). The unique predictive content of the theory lives in the N=96 SPECTRUM, not in its measurement program. No new primitive; canonical AT unchanged.",
+            "For non-experts: after building a full theory of measurement and asking, again and again, 'is this prediction new?', the honest outcome is: the measurement story — what happens when you look, what gets disturbed, how much information you get — is all a faithful retelling of ordinary quantum mechanics. It is consistent and coherent, but it does not add anything the old theory did not already say. Where the theory IS genuinely its own is in the music of its spectrum: it alone names the fundamental tone (a specific number, the square root of 91 times two-pi over 96), it alone derives that there are three families of particles, it alone fixes the structure of the weak doublets, and it alone derives the 254.37 GeV scale from its spectrum. Those are the predictions that would disappear if the theory were replaced by standard quantum mechanics — and the first of them is that fundamental frequency.",
+            "Measurement is QM-equivalent; the spectrum's numbers are the theory's own.",
+            "“The measurement is a retelling; the spectrum is the original.”",
+            true,
+            [
+                new("ResearchY-D_046", "RESEARCHY-PREDICTIONS AUDIT",
+                    "The eight new predictions (P1–P8) — the surviving uniquely-AT spectral values.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/D_ResonanceStructure/ResearchY-D_046.md"),
+                new("ResearchY-M_009", "MEASUREMENT PREDICTION DISCRIMINATOR AUDIT",
+                    "AT-P043 downgraded to the standard d-outcome bound; AT-P042 the only structural survivor.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/M_Measurement/ResearchY-M_009.md"),
+                new("ResearchY-M_010", "DISCRETE PHASE LATTICE AUDIT",
+                    "AT-P042 is observationally equivalent to continuous QM at all tick-sampled times.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/M_Measurement/ResearchY-M_010.md"),
+                new("ResearchY-NP_012", "UNIQUE PREDICTION SEARCH",
+                    "The unique predictions live in the N=96 spectrum; ω₁ = √91·(2π/N) is the first.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_012.md"),
+            ]),
+        new(
             "researchy-np011-hidden-coupling-field",
             "Network 2 Is a Mathematical Structure, Not a Physical Field",
             "ResearchY Milestone · NP_011 (V2.2 New Physics — Roadmap)",
