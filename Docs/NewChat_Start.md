@@ -1568,6 +1568,26 @@ synchronization as a regime EMERGENT (would require variational principle,
 NP_006/NP_009); synchronization required REFUTED (optional — B); canonical absence
 DERIVED. No new primitive; canonical AT unchanged.
 
+ResearchY-NP_015 (O(2) Doublet Prediction Audit, COMPLETE, tests 5/5 PASSED): what
+observable consequences follow from the exact O(2) doublet degeneracy? Verdict: the
+O(2) exact doublet degeneracy (λ_k = λ_{N−k} for every mode k, D_021) predicts an
+OBSERVABLE spectral signature: every non-central mode has an exact mirror partner at
+identical frequency (ω_k = ω_{N−k}, ω_k/ω_{N−k} = 1 exactly), giving 47 mirror pairs
+plus the central mode k=48 (verified: |Δλ| = 0 to machine precision for k=1,2,16,47).
+The degeneracy is EXACT, not approximate: any |Δλ| > 0 between a claimed pair
+FALSIFIES the prediction, as does a mode with no mirror partner or a triplet structure
+(which would indicate SU(3)-type, not O(2)). DISTINCT FROM QM (which fixes no spectrum
+— degeneracies are Hamiltonian-dependent, often accidental), SM (whose weak-isospin
+doublets (u,d),(c,s),(t,b) are NON-degenerate gauge pairs, NOT degeneracies), and GR
+(which has no frequencies). TOP OBSERVABLE SIGNATURES: (1) exact mirror-pair
+frequencies (ω_k/ω_{N−k}=1); (2) the 47+1 doublet count; (3) the O(2) reflection
+symmetry k → N−k. PREDICTION REGISTRY ENTRIES: the O(2) exact spectral degeneracy
+(extends D_046 P1); ω_k/ω_{N−k}=1 exactly; 47 mirror pairs + central mode k=48.
+Classification: O(2) exact doublet degeneracy PREDICTION (uniquely D96, structural);
+SM weak doublets CORRESPONDENCE only approximately (gauge pairs, not degeneracies);
+O(2) reflection symmetry DERIVED (algebra of cos); central mode k=48 DERIVED
+(self-pairing). No new primitive; canonical AT unchanged.
+
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-

@@ -94,6 +94,30 @@ public static class AtlasDataService
     public static IReadOnlyList<ResearchNewsModel> ResearchNews { get; } =
     [
         new(
+            "researchy-np015-o2-doublet-prediction",
+            "The O(2) Doublet Predicts Mirror-Pair Frequencies: Ratio 1, Exact, Countable",
+            "ResearchY Milestone · NP_015 (V2.2 New Physics — Roadmap)",
+            "The strongest D96 prediction, turned into testable physics: the O(2) exact doublet degeneracy means every spectral mode has a mirror twin at identical frequency. The observable signature is sharp — ω_k/ω_{N−k} = 1 exactly, 47 pairs plus one central mode — and any broken or missing pair falsifies it.",
+            "NP_015 turns the strongest D96 prediction (NP_013) into testable physics. Verdict: the O(2) exact doublet degeneracy (λ_k = λ_{N−k} for every mode k, D_021) predicts an OBSERVABLE spectral signature — every non-central mode has an exact mirror partner at identical frequency (ω_k = ω_{N−k}, ratio 1 exactly), giving 47 mirror pairs plus the central mode k=48 (verified: |Δλ| = 0 to machine precision for k=1,2,16,47; ω_k/ω_{N−k} = 1 for all k=1..47). The degeneracy is EXACT, not approximate: any |Δλ| > 0 between a claimed pair FALSIFIES the prediction, as does a mode with no mirror partner or a triplet structure (which would indicate SU(3)-type symmetry, not O(2)). The claim is DISTINCT FROM QM (which fixes no spectrum — its degeneracies are Hamiltonian-dependent, often accidental), SM (whose weak-isospin doublets (u,d),(c,s),(t,b) are NON-degenerate gauge pairs — NOT spectral degeneracies), and GR (which has no frequencies at all). TOP OBSERVABLE SIGNATURES: (1) exact mirror-pair frequencies (ω_k/ω_{N−k} = 1 exactly — the sharpest signature); (2) the 47+1 doublet count (a specific countable structure); (3) the O(2) reflection symmetry k → N−k (the spectrum is symmetric under mirror reflection). PREDICTION REGISTRY ENTRIES: the O(2) exact spectral degeneracy (extends D_046 P1); ω_k/ω_{N−k} = 1 exactly; 47 mirror pairs + central mode k=48. FALSIFICATION: any measured ω_k ≠ ω_{N−k} (|Δλ| > 0), a count different from 47+1, or a spectrum not symmetric under k → N−k. Classification: O(2) exact doublet degeneracy PREDICTION (uniquely D96, structural); SM weak doublets CORRESPONDENCE only approximately (gauge pairs, not degeneracies); O(2) reflection symmetry DERIVED (algebra of cos, D_021); central mode k=48 DERIVED (self-pairing at the ring midpoint). Open problem: whether the spectral doublets correspond to physical degenerate doublets in an observable sector (the SM weak doublets are gauge pairs, not spectral degeneracies — the mapping is open). The theory's sharpest testable claim is an exact mirror-pair spectrum. No new primitive; canonical AT unchanged.",
+            "For non-experts: the theory's most distinctive claim, reduced to something measurable: its spectrum is built from exact pairs — every 'tone' has a twin at exactly the same pitch, on the mirror side of the scale. The number of tones is fixed, so the count is precise: 47 twin-pairs plus one central tone that pairs with itself. Any measurement that finds a tone without its exact twin — or finds the twins slightly out of tune — would refute the theory. This is a sharper claim than anything the Standard Model makes: its doublets (like up/down quarks) are just different particles that happen to come in pairs for a different reason; they are not exact twins at all. The theory says something stronger and simpler: exact mirror twins, exactly in tune.",
+            "Every spectral tone has an exact mirror twin — ratio 1, 47 pairs, and one central note.",
+            "“Every tone has a twin, exactly in tune — the spectrum's sharpest promise.”",
+            true,
+            [
+                new("ResearchY-D_021", "OSCILLATION SYMMETRY AUDIT",
+                    "The O(2) pairing λ_k = λ_{N−k} — the exact degeneracy at the heart of this audit.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/D_ResonanceStructure/ResearchY-D_021.md"),
+                new("ResearchY-NP_013", "UNIQUE SPECTRAL PREDICTION AUDIT",
+                    "NP_013 ranked the O(2) doublet degeneracy as the strongest D96 prediction.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_013.md"),
+                new("ResearchY-D_024", "DOUBLET COMPATIBILITY AUDIT",
+                    "The doublet structure and its compatibility with the gauge sector.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/D_ResonanceStructure/ResearchY-D_024.md"),
+                new("ResearchY-NP_015", "O(2) DOUBLET PREDICTION AUDIT",
+                    "Observable signature: mirror-pair frequencies ratio 1, 47+1 count, reflection symmetry.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_015.md"),
+            ]),
+        new(
             "researchy-np014-necessity-of-synchronization",
             "Synchronization Is Optional: Its Absence Is a Feature, Not a Bug",
             "ResearchY Milestone · NP_014 (V2.2 New Physics — Roadmap)",
