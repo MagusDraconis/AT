@@ -1268,6 +1268,24 @@ closure items (T8→T10). Recommended first project: MEASUREMENT ORIGIN (a new
 M-series audit + xUnit suite + prediction registry entry). No new primitive; canonical
 AT unchanged.
 
+ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
+measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
+DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-
+actual (B). A measurement reads BOTH quadratures of one complex mode (the {cos, sin}
+two-quadrature reconstruction basis, D_037): z = a + ib exact, a alone ambiguous. What
+changes: the state's identity transitions from POTENTIAL (in the complex amplitude) to
+ACTUAL (a realized outcome with Born weight |ψ|² = ρ, QG216). Collapse (C) is the QG73
+binary reading of the same event, not a separate mechanism. Removing measurement leaves
+state identity, observability, probability, and interference intact — only the
+actualization of a specific outcome is removed. Minimal condition: an actualization
+event that reads both quadratures of one distinguishable mode. Trace: Difference →
+distinguishability → state identity (D_039) → observability (D_037) → measurement (the
+readout). Classification: state identity DERIVED (D_039); observability DERIVED
+(D_037/D_038); Born probability DERIVED (QG216); measurement event EMERGENT (the
+actualization readout); collapse EMERGENT (the event's binary reading — QG73 resolved).
+This is the first M-series audit, the recommended first V2.2 project (NP_002). No new
+primitive; canonical AT unchanged.
+
 ### PRED001: Prediction Registry (standalone Zenodo publication)
 
 Summary:

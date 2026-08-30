@@ -77,7 +77,8 @@
 | ResearchY-R_002 | V2.1 Release Preparation | `R_BoundaryProgram/ResearchY-R_002.md` | — (release document) | COMPLETE |
 | ResearchY-D_046 | ResearchY-Predictions Audit | `D_ResonanceStructure/ResearchY-D_046.md` | `AT.Tests/ResearchY/D_ResonanceStructure/Y_D_046_Tests.cs` (6/6 ✅) | COMPLETE |
 | ResearchY-NP_001 | V2.2 New Physics Roadmap | `NP_NewPhysics/ResearchY-NP_001.md` | — (roadmap) | COMPLETE |
-| ResearchY-NP_002 | Highest-Value V2.2 Program | `NP_NewPhysics/ResearchY-NP_002.md` | — (ranking) | IN_PROGRESS |
+| ResearchY-NP_002 | Highest-Value V2.2 Program | `NP_NewPhysics/ResearchY-NP_002.md` | — (ranking) | COMPLETE |
+| ResearchY-M_001 | Measurement Origin Audit | `M_Measurement/ResearchY-M_001.md` | `AT.Tests/ResearchY/M_Measurement/Y_M_001_Tests.cs` (7/7 ✅) | COMPLETE |
 | ResearchY-A_002 | Difference Disturbance | — | — | PLANNED |
 | ResearchY-A_003 | Actualization Propagation | — | — | PLANNED |
 | ResearchY-B_001 | Circular Closure | — | — | PLANNED |
