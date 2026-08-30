@@ -79,6 +79,7 @@
 | ResearchY-NP_001 | V2.2 New Physics Roadmap | `NP_NewPhysics/ResearchY-NP_001.md` | — (roadmap) | COMPLETE |
 | ResearchY-NP_002 | Highest-Value V2.2 Program | `NP_NewPhysics/ResearchY-NP_002.md` | — (ranking) | COMPLETE |
 | ResearchY-M_001 | Measurement Origin Audit | `M_Measurement/ResearchY-M_001.md` | `AT.Tests/ResearchY/M_Measurement/Y_M_001_Tests.cs` (7/7 ✅) | COMPLETE |
+| ResearchY-M_002 | Measurement Disturbance Audit | `M_Measurement/ResearchY-M_002.md` | `AT.Tests/ResearchY/M_Measurement/Y_M_002_Tests.cs` (7/7 ✅) | COMPLETE |
 | ResearchY-A_002 | Difference Disturbance | — | — | PLANNED |
 | ResearchY-A_003 | Actualization Propagation | — | — | PLANNED |
 | ResearchY-B_001 | Circular Closure | — | — | PLANNED |

@@ -1286,6 +1286,25 @@ actualization readout); collapse EMERGENT (the event's binary reading — QG73 r
 This is the first M-series audit, the recommended first V2.2 project (NP_002). No new
 primitive; canonical AT unchanged.
 
+ResearchY-M_002 (Measurement Disturbance Audit, COMPLETE, tests 7/7 PASSED): if
+measurement is an actualization event, what is the minimal unavoidable disturbance of
+a distinguishable state? Verdict: the minimal unavoidable disturbance is PHASE-PINNING
+— a DERIVED consequence of the read. Reading both quadratures of one complex mode (the
+{cos, sin} basis, M_001/D_037) extracts AND fixes the phase θ. Magnitude is PRESERVED
+(the read is a count), identity is ACTUALIZED (the state remains distinct, D_039), and
+the Born weight |ψ|² = ρ is realized (QG216); only the measured mode's phase freedom is
+consumed. Before-state: free phase, full interference; after-state: phase pinned.
+Prove/refute: measurement without disturbance is IMPOSSIBLE (reading a phase IS pinning
+it), but the disturbance is MINIMAL (magnitude, identity, probability survive).
+PREDICTIONS: (1) repeated measurements are IDEMPOTENT (the same read, no further
+disturbance — verified); (2) basis changes ROTATE the read frame while the complex
+state z is BASIS-INVARIANT (verified: a′+ib′ = rotated z); (3) measuring k consumes its
+free phase — k–k′ coherence lost unless the outcome is fed back; (4) reconstruction
+z = a + ib exact. Classification: disturbance DERIVED (from the read — reading pins the
+phase); measurement event EMERGENT (M_001); magnitude/identity/probability survive the
+disturbance. Falsification: a read of both quadratures that leaves the phase free would
+falsify. No new primitive; canonical AT unchanged.
+
 ### PRED001: Prediction Registry (standalone Zenodo publication)
 
 Summary:
