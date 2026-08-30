@@ -94,6 +94,27 @@ public static class AtlasDataService
     public static IReadOnlyList<ResearchNewsModel> ResearchNews { get; } =
     [
         new(
+            "researchy-np019-information-cosmology",
+            "The Information Cosmology Is the Density Fractions — and Only Them",
+            "ResearchY Milestone · NP_019 (V2.2 New Physics — Roadmap)",
+            "Does the theory's information content predict more cosmology beyond the dark-energy fraction? No — and that is a precise result. The information density fixes exactly the density-fraction pair (ΩΛ = 0.6839, Ωm = 0.3161) and their ratio 2.1636. The other cosmological numbers come from the spectrum, not the information.",
+            "NP_019 asks whether the distinguishability-derived information density I_occ is a genuine cosmological variable — and how far it reaches. Verdict: information predicts EXACTLY the density-fraction pair and their ratio — no additional direct observables. Testing the full list of cosmological observables (ΩΛ, Ωm, H₀, σ₈, BAO scales, structure growth, and the CMB quantities n_s, ℓ₁): only ΩΛ = I_occ/ln K = 0.6839 (by construction, QG234) and its complement Ωm = (ln K − I_occ)/ln K = 0.3161 are DIRECT functions of the information density (verified: ln K = I_occ/0.6839 = 1.0986, K ≈ 3); the derived ratio ΩΛ/Ωm = I_occ/(ln K − I_occ) = 2.1636 follows. n_s = 0.96497 (QG237) and ℓ₁ = 220.48 (QG238) are D96-SPECTRAL quantities, NOT I_occ functions — they come from the octave hierarchy, not from the information density. H₀ (a calibration), σ₈, BAO scales, and structure growth have NO direct information relation — no relation was found in the search. RANKING of the strongest predictions: (1) ΩΛ = 0.6839 — OBSERVED to 0.12%; (2) Ωm = 0.3161 — OBSERVED to 0.26%; (3) the ΩΛ/Ωm ratio 2.1636 — derived; (4) n_s — a D96-spectral correspondence; (5) ℓ₁ — a D96-octave correspondence. FALSIFICATION: ΩΛ deviating from I_occ/ln K beyond the 0.12% tolerance; Ωm inconsistent with 1−I_occ/ln K; the ratio deviating from I_occ/(ln K−I_occ). Classification: ΩΛ and Ωm PREDICTION (information-derived, observed); the ΩΛ/Ωm ratio PREDICTION (derived); n_s and ℓ₁ CORRESPONDENCE (D96-derived, not information); H₀/σ₈/BAO/growth BOUNDARY or calibration (no direct relation). The information density is a genuine but NARROW cosmological variable: it fixes the density fractions and nothing else directly. The theory's information content speaks to cosmology through exactly one channel — and it is the channel already measured. No new primitive; canonical AT unchanged.",
+            "For non-experts: if the theory's 'amount of distinguishability' predicts the dark-energy fraction, maybe it predicts other cosmic numbers too? This audit checks every major one — the expansion rate, the clumpiness of matter, the spacing of the baryon acoustic ripples, how structures grow, and the shape of the cosmic microwave background. The answer is clean: the information predicts exactly two numbers — the fraction of dark energy (68.39%) and its complement, ordinary plus dark matter (31.61%) — and their ratio. It does not predict the expansion rate, the clumpiness, the BAO spacing, or structure growth. Some other cosmic numbers (like the spectral tilt and the first acoustic peak) come from the theory's spectrum, not from its information. So the information channel to cosmology is real, precise, and narrow: it is the density fractions, and that is all.",
+            "The information fixes exactly the density fractions (ΩΛ, Ωm) and their ratio — one narrow, measured channel.",
+            "“Information speaks to cosmology through exactly one door — and it is already open.”",
+            true,
+            [
+                new("ResearchY-NP_018", "DISTINGUISHABILITY OBSERVABLE AUDIT",
+                    "ΩΛ = I_occ/ln K = 0.6839 — the distinguishability observable NP_019 maps across cosmology.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_018.md"),
+                new("ResearchY-D_030", "OCTAVE-RUNG AUDIT",
+                    "The D96 octave hierarchy behind n_s and ℓ₁ — spectral, not information-derived.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/D_ResonanceStructure/ResearchY-D_030.md"),
+                new("ResearchY-NP_019", "INFORMATION COSMOLOGY AUDIT",
+                    "The information cosmology is exactly the density-fraction pair (ΩΛ=0.6839, Ωm=0.3161) and the ratio 2.1636.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_019.md"),
+            ]),
+        new(
             "researchy-np018-distinguishability-observable",
             "Distinguishability Is Observable: the Dark-Energy Fraction Is Its Signature",
             "ResearchY Milestone · NP_018 (V2.2 New Physics — Roadmap)",

@@ -1652,6 +1652,27 @@ information density DERIVED (QG228); ΩΛ PREDICTION (distinguishability-derived
 observed); coherence CORRESPONDENCE. The dark-energy fraction is the theory's most
 direct distinguishability observable. No new primitive; canonical AT unchanged.
 
+ResearchY-NP_019 (Information Cosmology Audit, COMPLETE, tests 5/5 PASSED): does
+distinguishability-derived information predict additional cosmological observables
+beyond ΩΛ? Verdict: information predicts EXACTLY the density-fraction pair and their
+ratio — no additional direct observables. Testing the cosmological observables (ΩΛ,
+Ωm, H₀, σ₈, BAO scales, structure growth, CMB quantities n_s/ℓ₁): only ΩΛ =
+I_occ/ln K = 0.6839 (by construction, QG234) and its complement Ωm = (ln K − I_occ)/
+ln K = 0.3161 are DIRECT functions of the information density; the derived ratio
+ΩΛ/Ωm = I_occ/(ln K − I_occ) = 2.1636 follows (verified: ln K = I_occ/0.6839 = 1.0986,
+K ≈ 3). n_s = 0.96497 (QG237) and ℓ₁ = 220.48 (QG238) are D96-SPECTRAL quantities,
+NOT I_occ functions (they come from the octave hierarchy, not the information density).
+H₀ (a calibration), σ₈, BAO scales, and structure growth have NO direct information
+relation. RANKING: (1) ΩΛ — OBSERVED 0.12%; (2) Ωm — OBSERVED 0.26%; (3) ΩΛ/Ωm ratio
+2.1636 — derived; (4) n_s — D96-spectral correspondence; (5) ℓ₁ — D96-octave
+correspondence. FALSIFICATION: ΩΛ deviating from I_occ/ln K beyond 0.12%; Ωm
+inconsistent with 1−I_occ/ln K; the ratio deviating from I_occ/(ln K−I_occ).
+Classification: ΩΛ and Ωm PREDICTION (information-derived, observed); ΩΛ/Ωm ratio
+PREDICTION (derived); n_s/ℓ₁ CORRESPONDENCE (D96-derived, not information);
+H₀/σ₈/BAO/growth BOUNDARY or calibration (no direct relation). I_occ is a genuine but
+NARROW cosmological variable — it fixes the density fractions and nothing else
+directly. No new primitive; canonical AT unchanged.
+
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-
