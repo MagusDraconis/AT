@@ -1268,6 +1268,25 @@ closure items (T8→T10). Recommended first project: MEASUREMENT ORIGIN (a new
 M-series audit + xUnit suite + prediction registry entry). No new primitive; canonical
 AT unchanged.
 
+ResearchY-NP_003 (Manipulation Lever Audit, COMPLETE, tests 6/6 PASSED): does the
+theory contain a controllable physical lever? Verdict: EXACTLY ONE — the phase θ₀ of a
+complex state. It is LOCALLY variable (B): a measurement event pins it (M_002,
+phase-pinning) and the pinned phase becomes the future initial condition (M_003: θ_t =
+θ₀ + t·Δθ). The lever modifies TIME BEHAVIOUR (initial condition of the trajectory)
+and MEASUREMENT (readout = pinned phase), but NOT frequency (Δθ = 2πk/N fixed per
+mode), NOT gravity (no metric coupling), NOT sector structure (N, pairing, families
+fixed). ALL other chain quantities are FIXED: primitives {Difference, η} and anchors
+{v, m_e} are BOUNDARY inputs; N=96, the spectrum, ω₁, λ₂, pairing, and the tick
+structure are DERIVED and unique (D_015/D_019). No globally variable (C) parameter
+exists. SMALLEST manipulable object: the phase of a single state — one angular DOF, set
+by one actualization event. LEVERAGE RANKING: phase (HIGH — time + measurement);
+actualization rate/N/anchors/spectrum (none — fixed). Counterexamples: "change N" fails
+(N unique), "change anchors" fails (BOUNDARY), "change tick rate" fails (time IS the
+tick count), "change frequency by phase" fails (Δθ fixed per mode). Classification:
+phase DOF DERIVED (D_036/D_039); manipulability (measurement pinning) EMERGENT
+(M_001/M_002); fixed quantities DERIVED or BOUNDARY. No new primitive; canonical AT
+unchanged.
+
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-

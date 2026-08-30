@@ -94,6 +94,30 @@ public static class AtlasDataService
     public static IReadOnlyList<ResearchNewsModel> ResearchNews { get; } =
     [
         new(
+            "researchy-np003-manipulation-lever",
+            "The One Lever: the Phase — Locally Controllable, Everything Else Fixed",
+            "ResearchY Milestone · NP_003 (V2.2 New Physics — Roadmap)",
+            "Does the theory contain a controllable physical lever? Exactly one: the phase of a complex state. A measurement pins it and it becomes the seed of the future trajectory. It changes time behaviour and measurement — but not frequency, gravity, or the sector structure. Everything else in the derived chain is fixed.",
+            "NP_003 searches the derived origin chain (Difference → Actualization → tick → count → magnitude → phase → complex state → identity → reciprocity → pairing → p=3 → N=96 → Spectrum → {v, m_e} → Physics) for a controllable lever. Verdict: EXACTLY ONE — the phase θ₀ of a complex state. It is LOCALLY variable (B): a measurement event pins it (M_002, phase-pinning) and the pinned phase becomes the future initial condition (M_003: θ_t = θ₀ + t·Δθ). The lever modifies TIME BEHAVIOUR (initial condition of the trajectory) and MEASUREMENT (the readout IS the pinned phase), but NOT frequency (Δθ = 2πk/N fixed per mode), NOT gravity (no metric coupling in the derived chain), NOT sector structure (N, pairing, families fixed). ALL other chain quantities are FIXED (A): the primitives {Difference, η} and the anchors {v, m_e} are BOUNDARY inputs; N=96, the spectrum, ω₁, λ₂, pairing, and the tick structure are DERIVED and unique (D_015/D_019). No globally variable (C) parameter exists. SMALLEST manipulable object: the phase of a single state — one angular DOF, set by one actualization event. LEVERAGE RANKING: phase HIGH (time + measurement); actualization rate, N, anchors, spectrum — none (fixed). COUNTEREXAMPLES: 'change N to change physics' fails (N unique); 'change the anchors' fails (irreducible boundaries, R_001); 'change the tick rate' fails (time IS the tick count); 'change frequency by phase' fails (Δθ fixed per mode). Classification: phase DOF DERIVED (D_036/D_039); manipulability (the measurement pinning) EMERGENT (M_001/M_002); fixed quantities DERIVED or BOUNDARY. The theory has exactly one controllable lever — the phase — and it is local; no global control parameter exists. No new primitive; canonical AT unchanged.",
+            "For non-experts: can you turn a knob in this theory and change what happens? After checking every candidate — the fundamental Difference, the size of the spectrum (96), the anchors that set the mass scale, even the rate at which time ticks — the answer is: there is exactly ONE knob. It is the phase, the 'angle' of a quantum state. When you measure, the theory pins that angle, and the pinned angle becomes the starting point of everything that follows — like setting the initial hand position of a clock. Turning this knob changes how the state evolves in time and what you read when you measure. But it cannot change the frequencies (those are fixed per mode), it cannot change gravity, and it cannot change the three-family structure. One knob, local, and everything else in the theory is locked.",
+            "The phase is the theory's only lever — local, changing time and measurement, never frequency or structure.",
+            "“One knob in the whole theory — and it is the phase.”",
+            true,
+            [
+                new("ResearchY-D_036", "COMPLEX-STATE-ORIGIN AUDIT",
+                    "The complex state ψ = |ψ|·e^{iθ} — the phase DOF is derived.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/D_ResonanceStructure/ResearchY-D_036.md"),
+                new("ResearchY-M_002", "MEASUREMENT DISTURBANCE AUDIT",
+                    "Measurement pins the phase (phase-pinning) — the manipulation that sets the lever.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/M_Measurement/ResearchY-M_002.md"),
+                new("ResearchY-M_003", "MEASUREMENT FEEDBACK AUDIT",
+                    "The pinned phase becomes the future initial condition (θ_t = θ₀ + t·Δθ) — the lever's propagation.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/M_Measurement/ResearchY-M_003.md"),
+                new("ResearchY-NP_003", "MANIPULATION LEVER AUDIT",
+                    "Exactly one lever: the phase — local, changes time+measurement, never frequency/gravity/sector.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_003.md"),
+            ]),
+        new(
             "researchy-m010-discrete-phase-lattice",
             "The Discrete Phase Lattice: Structurally New, Observably Equivalent to Continuous QM",
             "ResearchY Milestone · M_010 (V2.2 New Physics — Measurement)",
