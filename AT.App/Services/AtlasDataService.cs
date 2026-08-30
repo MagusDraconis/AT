@@ -94,6 +94,27 @@ public static class AtlasDataService
     public static IReadOnlyList<ResearchNewsModel> ResearchNews { get; } =
     [
         new(
+            "researchy-m004-information",
+            "One Measurement Can Reveal at Most 6.57 Bits — the State Space's Distinguishability",
+            "ResearchY Milestone · M_004 (V2.2 New Physics — Measurement)",
+            "How much information can one measurement event reveal? At most log₂(95) ≈ 6.57 bits — the size of the distinguishable state space. A measurement resolves which of the 95 states is realized; repeated measurements add nothing (they are idempotent).",
+            "M_004 asks the information-theoretic limit of a measurement event. Verdict: the maximum information content of one actualization event is log₂(95) ≈ 6.57 bits — the size of the distinguishable state space (D_039: 95/95 distinct complex states). A measurement reads both quadratures of one complex mode (M_001), resolving which of the 95 states is realized. INFORMATION BEFORE = log₂ 95 (the uncertainty over the state space); AFTER = 0 (the outcome is known). GAIN per event (uniform prior) = log₂(95) = 6.57 bits — the mode index. FIXED: the phase (pinned by the read, M_002) and the outcome (trajectory selected, M_003). LOST: the phase freedom — the superposition collapses to one trajectory. REPEATED MEASUREMENT: idempotent (M_002) — the same read gives the same result, so a second measurement adds ZERO additional information. Prove/refute: measurement creates information — YES, because the outcome resolves the uncertainty over the state space (log₂ 95 → 0). The maximum information content of one event IS the state-space distinguishability. FALSIFICATION: a single event revealing more than log₂(95) bits (distinguishing more states than the space contains) would falsify. OPEN: the Born-weighted refinement — for non-uniform outcomes the average gain is the Shannon entropy (the realized record's I_occ = 0.7513 nats, QG228), a refinement of the uniform log₂ 95. Classification: information DERIVED (from distinguishability, D_039); measurement event EMERGENT (M_001); max info per event DERIVED (log₂ 95). No new primitive; canonical AT unchanged.",
+            "For non-experts: how much can you learn from a single measurement? The answer is a precise number: at most about 6.57 bits, because that is the size of the theory's state space — 95 distinct states, so log₂(95) ≈ 6.57. A measurement is the act of finding out WHICH of the 95 states is actually there, and that act resolves exactly that much uncertainty. Asking again gives the same answer — measuring the same thing twice teaches you nothing new. So a measurement genuinely creates information, and the amount it can create is set by how many distinct states the world can be in.",
+            "One event reveals at most the state-space size — log₂(95) ≈ 6.57 bits.",
+            "“A single measurement knows the size of the space of possibilities — no more.”",
+            true,
+            [
+                new("ResearchY-D_039", "STATE-IDENTITY-ORIGIN AUDIT",
+                    "Difference IS distinguishability — the 95/95 state space is the information source.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/D_ResonanceStructure/ResearchY-D_039.md"),
+                new("ResearchY-M_002", "MEASUREMENT DISTURBANCE AUDIT",
+                    "Repeated measurements are idempotent — the second read adds no information.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/M_Measurement/ResearchY-M_002.md"),
+                new("ResearchY-M_004", "MEASUREMENT INFORMATION AUDIT",
+                    "Max info per event = log₂(95) ≈ 6.57 bits; measurement creates information; repeated measurement adds none.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/M_Measurement/ResearchY-M_004.md"),
+            ]),
+        new(
             "researchy-m003-feedback",
             "Measurement Feeds Forward: the Outcome Becomes the Future's Starting Point",
             "ResearchY Milestone · M_003 (V2.2 New Physics — Measurement)",
