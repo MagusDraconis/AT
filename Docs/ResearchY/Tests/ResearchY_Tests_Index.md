@@ -48,6 +48,7 @@ ResearchY-NP_018  ↔  Y_NP_018_Tests.cs    (AT.Tests/ResearchY/NP_NewPhysics/)
 ResearchY-NP_019  ↔  Y_NP_019_Tests.cs    (AT.Tests/ResearchY/NP_NewPhysics/)
 ResearchY-NP_020  ↔  Y_NP_020_Tests.cs    (AT.Tests/ResearchY/NP_NewPhysics/)
 ResearchY-NP_021  ↔  Y_NP_021_Tests.cs    (AT.Tests/ResearchY/NP_NewPhysics/)
+ResearchY-QG_001  ↔  Y_QG_001_Tests.cs     (AT.Tests/ResearchY/QG_GeometryBridge/)
 ```
 
 ## Test Registry
@@ -140,6 +141,7 @@ ResearchY-NP_021  ↔  Y_NP_021_Tests.cs    (AT.Tests/ResearchY/NP_NewPhysics/)
 | ResearchY-NP_019 (Information Cosmology Audit) | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_019_Tests.cs` | ACTIVE | 2026-08-30 | ✅ 5/5 PASSED — `Results/Y_NP_019_Result.md` |
 | ResearchY-NP_020 (Black Hole Information Audit) | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_020_Tests.cs` | ACTIVE | 2026-08-30 | ✅ 7/7 PASSED — `Results/Y_NP_020_Result.md` |
 | ResearchY-NP_021 (Information Horizon Audit) | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_021_Tests.cs` | ACTIVE | 2026-08-30 | ✅ 5/5 PASSED — `Results/Y_NP_021_Result.md` |
+| ResearchY-QG_001 (Information–Geometry Bridge Audit) | `AT.Tests/ResearchY/QG_GeometryBridge/Y_QG_001_Tests.cs` | ACTIVE | 2026-08-30 | ✅ 6/6 PASSED — `Results/Y_QG_001_Result.md` |
 
 ## Result Summaries
 
