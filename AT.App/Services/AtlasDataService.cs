@@ -94,6 +94,30 @@ public static class AtlasDataService
     public static IReadOnlyList<ResearchNewsModel> ResearchNews { get; } =
     [
         new(
+            "researchy-np002-highest-value",
+            "Measurement Is the Highest-Value V2.2 Program — It Uses the Derived Chain Most Directly",
+            "ResearchY Milestone · NP_002 (V2.2 New Physics)",
+            "Ranking ten candidate V2.2 programs by impact × feasibility × testability × derived-chain dependence, MEASUREMENT ORIGIN wins at 19/20. It is the natural first V2.2 project: it uses Difference (distinguishability), magnitude, phase, complex states, and the reciprocal measurement basis directly — completing the QM measurement chain.",
+            "NP_002 asks the strategic question: what is the highest-value V2.2 physics program? Ten candidates were scored on four axes — physics impact, feasibility, testability, and dependence on the derived origin chain. VERDICT: MEASUREMENT ORIGIN is the highest-value program at 19/20 (impact 5, feasibility 4, testability 5, derived-chain dependence 5). It uses the derived chain MOST DIRECTLY of any candidate: Difference (= distinguishability, D_039 — measurement distinguishes states, the primitive applied); magnitude (|ψ| from the count, QG216 — the measured content); phase (θ from the circulation, QG220 — the measured position); the complex state (D_036 — the measured object IS the complex amplitude); reciprocity (the two-quadrature {cos, sin} measurement basis, D_037); and Actualization (the measurement readout is an actualization event). Completing the QM measurement chain — QG73 (collapse), QG74 (general measurement), D_037 (basis), D_039 (identity) — has the highest physics impact (it is the last open QM element), high falsifiability (measurement-disturbance relations, no-cloning bounds, information-theoretic uncertainty), and high experimental access (quantum-information experiments). FULL RANKING (max 20): T1 measurement origin 19 (HIGH); T2 information-encoded measurement 18 (HIGH — unify D_039 identity with I = KL(ρ‖uniform), QG228); T3 v/m_e reducibility 16 (test whether the D_044 boundary reduces); T4 neutrino hierarchy 15 (masses + Majorana derived, ordering open, P2 0νββ pending); T5 CMB anisotropy spectrum 15 (extend n_s + acoustic peaks via the octave rungs); T6 baryon asymmetry 14 (CP QG166 + phase origin); T7 gauge dynamics 13 (complete the QG243/244 Lagrangian origin); T8 gravity-native closure 12 (LOW — QG222 already near-complete); T9 cosmology initial conditions 12; T10 dark-matter status 10 (LOW — effect derived, particle reading low-access). ROADMAP: Phase 1 measurement/information (T1→T2); Phase 2 anchors/neutrinos (T3→T4, P2 data pending); Phase 3 cosmology/gauge (T5→T7); Phase 4 closure items (T8→T10). RECOMMENDED FIRST PROJECT: MEASUREMENT ORIGIN — a new audit (e.g. an M-series) + xUnit suite + prediction-registry entry. No new primitive; canonical AT unchanged.",
+            "For non-experts: the theory now has a complete story of where its structure comes from. The natural question is: what do we work on next? This audit ranked ten candidates — measurement, information, antimatter, neutrinos, dark matter, the CMB, the gauge forces, gravity, and more — on four criteria: how important the physics is, how feasible it is to work on now, how testable it is, and how much it builds on the newly derived chain. The winner is MEASUREMENT itself: the theory has already derived what a measurement basis is (the two channels of a complex wave) and that state identity is the founding idea of the theory. Understanding the act of measurement — why a measurement picks one outcome — is both the most foundational open question and the one that most directly uses everything the V2.1 program built.",
+            "Measurement wins: the highest impact, the most direct use of the derived chain.",
+            "“What to do next? Measure — using the theory of Difference itself.”",
+            true,
+            [
+                new("ResearchY-NP_001", "V2.2 NEW PHYSICS ROADMAP",
+                    "The original Top-10 targets; NP_002 adds the four-axis score and the recommended first project.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_001.md"),
+                new("ResearchY-D_037", "RECIPROCITY-OBSERVABILITY AUDIT",
+                    "The {cos, sin} two-quadrature measurement basis — the measurement program's foundation.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/D_ResonanceStructure/ResearchY-D_037.md"),
+                new("ResearchY-D_039", "STATE-IDENTITY-ORIGIN AUDIT",
+                    "Difference IS distinguishability — measurement as the primitive applied.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/D_ResonanceStructure/ResearchY-D_039.md"),
+                new("ResearchY-NP_002", "HIGHEST-VALUE V2.2 PROGRAM",
+                    "MEASUREMENT ORIGIN at 19/20 — highest value, most direct derived-chain use; recommended first project.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_002.md"),
+            ]),
+        new(
             "researchy-d046-predictions",
             "Eight New Predictions That V2.0 Could Not State",
             "ResearchY Milestone · D_046 (V2.2 New Physics)",
