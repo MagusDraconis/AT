@@ -94,6 +94,30 @@ public static class AtlasDataService
     public static IReadOnlyList<ResearchNewsModel> ResearchNews { get; } =
     [
         new(
+            "researchy-qg004-rho-nature",
+            "ρ Is Fundamentally a Count: Geometry and Information Are Its Two Derived Faces",
+            "ResearchY Milestone · QG_004 (V2.2 New Physics — Geometry Bridge)",
+            "Why does one quantity generate both the metric and the information? Because ρ is not geometric and not informational — it is a count. Remove geometry: information survives. Remove information: geometry survives. Remove the count: both vanish. Count is the primitive among the three.",
+            "QG_004 determines the fundamental nature of ρ. Verdict: ρ is fundamentally a COUNT STRUCTURE (option C) — the normalized counting measure ρ_k = count_k/total, Σρ_k = 1 (Born, QG216). Geometry (g = ρ^(2/d)η, QG197) and information (I = KL(ρ‖uniform) = 0.7513 nats, QG228) are its two DERIVED faces. REMOVAL TESTS: (1) REMOVE GEOMETRY (g) → information survives — I = KL(ρ‖uniform) contains no metric, it is a function of ρ alone; (2) REMOVE INFORMATION (I) → geometry survives — g = ρ^(2/d)η contains no KL-divergence, it is a function of ρ alone; (3) REMOVE THE COUNT STRUCTURE (ρ) → BOTH g and I vanish — both are functions of the count density. OBSERVABLES: ΩΛ = I_occ/ln K = 0.6839, Ωm = 1−ΩΛ, measurement (resolves ρ, M_005), black-hole information (conserved in the states), and the metric construction (g = ρ^(2/d)η) — NONE survives the removal of ρ; every observable passes through it. PRIMITIVE COMPARISON: geometry — information survives without it (NOT the primitive); information — geometry survives without it (NOT the primitive); COUNT STRUCTURE — both g and I vanish without it (YES, the primitive). MINIMAL DESCRIPTION: ρ_k = count_k/total, Σρ_k = 1 — a normalized counting measure; nothing more is needed for geometry and information to follow. NECESSITY PROOF: count is necessary for both faces (g and I are functions of ρ); geometry is not necessary for information, and information is not necessary for geometry — this asymmetry makes count the primitive. COUNTEREXAMPLES: 'ρ is fundamentally geometric' fails (remove geometry → information survives); 'ρ is fundamentally informational' fails (remove information → geometry survives); 'geometry and information are independent' fails (both vanish when ρ is removed). FALSIFICATION: a metric or information content not determined by the count density; an observable (ΩΛ, metric, measurement) surviving the removal of ρ. Classification: count structure ρ = count_k/total DERIVED (from the state structure, D_039); geometry g = ρ^(2/d)η EMERGENT (a derived face of ρ); information I = KL(ρ‖uniform) EMERGENT (a derived face of ρ); the count nature of ρ DERIVED (it is a normalized counting measure). The dependency tree is Difference → Distinguishability → Count Structure (ρ) with geometry and information as its branches. Count is the primitive among the three. No new primitive; canonical AT unchanged.",
+            "For non-experts: the theory uses one quantity — a density — to build both the geometry of spacetime and the information content. This audit asks the deepest question about it: what IS that quantity? Three candidates: a geometric thing, an informational thing, or a counting thing. The answer is found by a clean experiment of thought. If you take away the geometry, the information is still there — so the density is not fundamentally geometric. If you take away the information, the geometry is still there — so it is not fundamentally informational. But if you take away the counting — the fact that it counts how many events landed in each possibility — then BOTH the geometry and the information disappear, because both are built from that count. So the density is a count at heart: a tally over the theory's distinguishable possibilities, normalized to one. The geometry and the information are two faces that this single count presents to the world.",
+            "Remove geometry → information survives; remove information → geometry survives; remove the count → both vanish.",
+            "“Not geometry, not information — a count wearing two faces.”",
+            true,
+            [
+                new("ResearchY-QG_001", "INFORMATION–GEOMETRY BRIDGE AUDIT",
+                    "The bridge is ρ — QG_004 determines what ρ itself fundamentally is.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/QG_GeometryBridge/ResearchY-QG_001.md"),
+                new("ResearchY-QG_002", "DISTINGUISHABILITY → GEOMETRY AUDIT",
+                    "Geometry is a manifestation of the state structure via ρ.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/QG_GeometryBridge/ResearchY-QG_002.md"),
+                new("ResearchY-QG_003", "INFORMATION RECONSTRUCTION AUDIT",
+                    "Information alone cannot invert ρ — reinforcing ρ as the primitive.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/QG_GeometryBridge/ResearchY-QG_003.md"),
+                new("ResearchY-QG_004", "ρ NATURE AUDIT",
+                    "ρ is fundamentally a count structure; geometry and information are its derived faces.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/QG_GeometryBridge/ResearchY-QG_004.md"),
+            ]),
+        new(
             "researchy-qg003-information-reconstruction",
             "Information Alone Cannot Rebuild the Metric: the State Structure Is the Primitive",
             "ResearchY Milestone · QG_003 (V2.2 New Physics — Geometry Bridge)",

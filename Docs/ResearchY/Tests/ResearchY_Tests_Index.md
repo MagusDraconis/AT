@@ -51,6 +51,7 @@ ResearchY-NP_021  ↔  Y_NP_021_Tests.cs    (AT.Tests/ResearchY/NP_NewPhysics/)
 ResearchY-QG_001  ↔  Y_QG_001_Tests.cs     (AT.Tests/ResearchY/QG_GeometryBridge/)
 ResearchY-QG_002  ↔  Y_QG_002_Tests.cs     (AT.Tests/ResearchY/QG_GeometryBridge/)
 ResearchY-QG_003  ↔  Y_QG_003_Tests.cs     (AT.Tests/ResearchY/QG_GeometryBridge/)
+ResearchY-QG_004  ↔  Y_QG_004_Tests.cs     (AT.Tests/ResearchY/QG_GeometryBridge/)
 ```
 
 ## Test Registry
@@ -146,6 +147,7 @@ ResearchY-QG_003  ↔  Y_QG_003_Tests.cs     (AT.Tests/ResearchY/QG_GeometryBrid
 | ResearchY-QG_001 (Information–Geometry Bridge Audit) | `AT.Tests/ResearchY/QG_GeometryBridge/Y_QG_001_Tests.cs` | ACTIVE | 2026-08-30 | ✅ 6/6 PASSED — `Results/Y_QG_001_Result.md` |
 | ResearchY-QG_002 (Distinguishability → Geometry Audit) | `AT.Tests/ResearchY/QG_GeometryBridge/Y_QG_002_Tests.cs` | ACTIVE | 2026-08-30 | ✅ 6/6 PASSED — `Results/Y_QG_002_Result.md` |
 | ResearchY-QG_003 (Information Reconstruction Audit) | `AT.Tests/ResearchY/QG_GeometryBridge/Y_QG_003_Tests.cs` | ACTIVE | 2026-08-30 | ✅ 6/6 PASSED — `Results/Y_QG_003_Result.md` |
+| ResearchY-QG_004 (ρ Nature Audit) | `AT.Tests/ResearchY/QG_GeometryBridge/Y_QG_004_Tests.cs` | ACTIVE | 2026-08-30 | ✅ 6/6 PASSED — `Results/Y_QG_004_Result.md` |
 
 ## Result Summaries
 

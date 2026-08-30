@@ -1799,6 +1799,33 @@ BOUNDARY (requires the state structure). The state structure (N=96) is the actua
 primitive that fixes ρ; information and geometry are both its derived faces. No new
 primitive; canonical AT unchanged.
 
+ResearchY-QG_004 (ρ Nature Audit, COMPLETE, tests 6/6 PASSED): why does ρ generate
+both geometry and information? Verdict: ρ is fundamentally a COUNT STRUCTURE (option C)
+— the normalized counting measure ρ_k = count_k/total, Σρ_k = 1 (Born, QG216).
+Geometry (g = ρ^(2/d)η, QG197) and information (I = KL(ρ‖uniform) = 0.7513 nats,
+QG228) are its two DERIVED faces. REMOVAL TESTS: remove geometry (g) → information
+survives (I = KL(ρ‖uniform) needs no metric); remove information (I) → geometry
+survives (g needs no KL); remove the count structure (ρ) → BOTH g and I vanish (both
+are functions of ρ). OBSERVABLES: ΩΛ = I_occ/ln K = 0.6839, Ωm = 1−ΩΛ, measurement
+(resolves ρ, M_005), black-hole information (conserved in the states), and the metric
+construction (g = ρ^(2/d)η) — NONE survives the removal of ρ; all pass through it.
+PRIMITIVE COMPARISON: geometry — information survives without it (NOT the primitive);
+information — geometry survives without it (NOT the primitive); COUNT STRUCTURE — both
+g and I vanish without it (YES, the primitive). MINIMAL DESCRIPTION: ρ_k = count_k/
+total, Σρ_k = 1 — a normalized counting measure; nothing more is needed. NECESSITY
+PROOF: count is necessary for both faces (g and I are functions of ρ); geometry is not
+necessary for information, and information is not necessary for geometry — the
+asymmetry makes count the primitive. Counterexamples: 'ρ is fundamentally geometric'
+fails (remove geometry → information survives); 'ρ is fundamentally informational'
+fails (remove information → geometry survives); 'geometry and information are
+independent' fails (both vanish without ρ). Falsification: a metric or information
+content not determined by the count density; an observable (ΩΛ, metric, measurement)
+surviving the removal of ρ. Classification: count structure ρ = count_k/total DERIVED
+(from the state structure, D_039); geometry g = ρ^(2/d)η EMERGENT (a derived face of
+ρ); information I = KL(ρ‖uniform) EMERGENT (a derived face of ρ); the count nature of
+ρ DERIVED (it is a normalized counting measure). No new primitive; canonical AT
+unchanged.
+
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-
