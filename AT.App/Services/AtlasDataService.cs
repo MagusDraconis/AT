@@ -94,6 +94,30 @@ public static class AtlasDataService
     public static IReadOnlyList<ResearchNewsModel> ResearchNews { get; } =
     [
         new(
+            "researchy-np018-distinguishability-observable",
+            "Distinguishability Is Observable: the Dark-Energy Fraction Is Its Signature",
+            "ResearchY Milestone · NP_018 (V2.2 New Physics — Roadmap)",
+            "Does the primitive act of distinguishing states leave a measurable mark? Yes. The entropy of the 95-state space is 6.57 bits, the information density is 0.7513 nats, and — the strongest — the dark-energy fraction ΩΛ = 0.6839 is written directly from them and is measured to 0.12%.",
+            "NP_018 asks whether distinguishability (the primitive Difference, D_039) generates a DIRECT observable physical quantity beyond the D96 spectrum. Verdict: YES. The state space has 95 distinct states (D_039); the entropy is H = log₂(95) = 6.57 bits (M_004) — a direct function of distinguishability (the state count); the Born-weighted information density is I_occ = 0.7513 nats (QG228); and — the strongest — the cosmological density fraction is written DIRECTLY from it: ΩΛ = I_occ/ln K = 0.7513/1.0986 = 0.6839 (QG234), with Ωm = 1−ΩΛ = 0.3161. These are MEASURED: ΩΛ to 0.12%, Ωm to 0.26%. OBSERVABLE CANDIDATES: (1) the state count (95 — structural, D_039); (2) the entropy (log₂ 95 = 6.57 bits — DERIVED, M_004); (3) the information density (I_occ = 0.7513 nats — DERIVED, QG228); (4) the cosmological fraction ΩΛ = 0.6839 — a PREDICTION written directly from the distinguishability-derived information, OBSERVED. QM/SM/GR comparison: NONE of them produces a fundamental observable written as a function of distinguishability — QM has no predicted state-count (its entropy is derived from a given Hilbert space, not predicted), the SM has no distinguishability-origin observable, and GR has no state-count. COHERENCE is only CORRESPONDENCE (it depends on the relative phase, not the state count). FALSIFICATION: a measured ΩΛ deviating from I_occ/ln K beyond the 0.12% tolerance falsifies the distinguishability→information→cosmology chain; a state space of size ≠ 95 falsifies H = log₂(95); an I_occ inconsistent with 0.7513 nats falsifies the information density. Classification: state count and entropy DERIVED (D_039/M_004); information density DERIVED (QG228); ΩΛ PREDICTION (distinguishability-derived, observed); coherence CORRESPONDENCE. The dark-energy fraction is the theory's most direct distinguishability observable — Difference, made measurable. No new primitive; canonical AT unchanged.",
+            "For non-experts: the theory's very first idea is 'Difference' — the act of telling things apart. This audit asks a bold question: can you MEASURE that act of distinguishing? The answer is yes, and it points at one of the biggest numbers in cosmology. The theory says how much information a set of 95 distinguishable possibilities holds (about 6.57 bits), and how concentrated that information is when weighted by real occupancy. From those it derives a precise fraction of the universe's energy — the dark-energy fraction, about 68.39% — and this matches what cosmologists actually measure to better than one part in a thousand. So the deepest primitive of the theory is not an abstraction: it shows up as a number in the night sky. Ordinary quantum mechanics, the Standard Model, and general relativity have no such claim — none of them can write a measured constant as a function of 'how many things can be told apart.'",
+            "The dark-energy fraction ΩΛ = 0.6839 is written directly from the information of the 95-state space — and measured.",
+            "“The act of telling things apart is measured in the sky: 68.39%.”",
+            true,
+            [
+                new("ResearchY-D_039", "STATE-IDENTITY-ORIGIN AUDIT",
+                    "Difference IS distinguishability — the 95-state space from which the observables flow.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/D_ResonanceStructure/ResearchY-D_039.md"),
+                new("ResearchY-M_004", "MEASUREMENT INFORMATION AUDIT",
+                    "The information content log₂(95) = 6.57 bits — derived from distinguishability.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/M_Measurement/ResearchY-M_004.md"),
+                new("ResearchY-M_005", "INFORMATION CONSERVATION AUDIT",
+                    "Measurement reveals and redistributes the pre-existing distinguishability information.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/M_Measurement/ResearchY-M_005.md"),
+                new("ResearchY-NP_018", "DISTINGUISHABILITY OBSERVABLE AUDIT",
+                    "ΩΛ = I_occ/ln K = 0.6839 — the dark-energy fraction as a direct distinguishability observable.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_018.md"),
+            ]),
+        new(
             "researchy-np017-natural-d96-signature",
             "The CMB Carries the D96 Octave Hierarchy — the Exact Mirror Pairs Remain Unobserved",
             "ResearchY Milestone · NP_017 (V2.2 New Physics — Roadmap)",

@@ -1630,6 +1630,28 @@ yet); octave hierarchy in nature CORRESPONDENCE (CMB); atomic/molecular/plasma/G
 CORRESPONDENCE (no D96 structure expected); NO domain FALSIFIED. No new primitive;
 canonical AT unchanged.
 
+ResearchY-NP_018 (Distinguishability Observable Audit, COMPLETE, tests 7/7 PASSED):
+does distinguishability itself generate an observable physical quantity? Verdict: YES —
+distinguishability generates DIRECTLY OBSERVABLE quantities. The state space has 95
+distinct states (D_039); the entropy is H = log₂(95) = 6.57 bits (M_004); the
+Born-weighted information density is I_occ = 0.7513 nats (QG228); and the cosmological
+fraction is written DIRECTLY from it: ΩΛ = I_occ/ln K = 0.7513/1.0986 = 0.6839 (QG234)
+— MEASURED to 0.12%, with Ωm = 1−ΩΛ = 0.3161 (0.26%). OBSERVABLE CANDIDATES: the state
+count (95 — structural, D_039); the entropy (log₂ 95 = 6.57 bits — DERIVED, M_004);
+the information density (I_occ = 0.7513 nats — DERIVED, QG228); and the STRONGEST —
+the cosmological fraction ΩΛ = 0.6839 (a PREDICTION written directly from the
+distinguishability-derived information, OBSERVED to 0.12%). QM/SM/GR produce no
+fundamental observable written as a function of distinguishability: QM has no predicted
+state-count (entropy is derived from a given Hilbert space), SM/GR have no
+distinguishability origin. COHERENCE is only CORRESPONDENCE (depends on the relative
+phase, not the state count). FALSIFICATION: a measured ΩΛ deviating from I_occ/ln K
+beyond 0.12% falsifies the distinguishability→information→cosmology chain; a state
+space of size ≠ 95 falsifies H = log₂(95); an I_occ inconsistent with 0.7513 falsifies
+the density. Classification: state count and entropy DERIVED (D_039/M_004);
+information density DERIVED (QG228); ΩΛ PREDICTION (distinguishability-derived,
+observed); coherence CORRESPONDENCE. The dark-energy fraction is the theory's most
+direct distinguishability observable. No new primitive; canonical AT unchanged.
+
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-
