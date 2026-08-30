@@ -1773,6 +1773,32 @@ spectrum DERIVED (from N); count density ρ DERIVED; metric g = ρ^(2/d)η DERIV
 KL(ρ‖uniform) DERIVED (QG228). AT is information-first: geometry is derived from the
 primitive distinguishability. No new primitive; canonical AT unchanged.
 
+ResearchY-QG_003 (Information Reconstruction Audit, COMPLETE, tests 6/6 PASSED): can
+geometry be reconstructed from information alone? Verdict: NO — geometry is NOT
+informationally complete. The information content I = KL(ρ‖uniform) = 0.7513 nats
+(QG228) is a SINGLE SCALAR; ρ is a full distribution, and many distributions share the
+same KL-divergence, so I does not determine ρ uniquely. ΩΛ = I_occ/ln K = 0.6839 DOES
+fix ln K = I_occ/ΩΛ = 1.0986 (K ≈ 3 — the state-space SIZE), but not the distribution
+ρ. The metric g = ρ^(2/d)η (QG197) requires ρ, so g is NOT reconstructible from I
+alone. The reconstruction chain Information → ρ → g FAILS at the first step (I is a
+scalar, ρ is a distribution). COMPARISON: Information → Geometry — NO (I is derived
+FROM ρ, not the source of ρ); Geometry → Information — NO (g is also derived FROM ρ).
+NEITHER direction inverts the chain: ρ is the source; information and geometry are both
+derived FROM ρ. PROVE/REFUTE: geometry is informationally complete — REFUTED (a scalar
+cannot determine a distribution; g requires ρ; the reconstruction requires the STATE
+STRUCTURE, N=96, which is the actual primitive). CORRECT CHAIN: State structure (N=96)
+→ spectrum → ρ → {I = KL(ρ‖uniform), g = ρ^(2/d)η} — forward and pure-functional
+(QG_002); the inverse is not invertible. Counterexamples: 'I determines ρ' fails (many
+distributions share a KL); 'g from I alone' fails (needs ρ); 'ΩΛ determines the metric'
+fails (fixes ln K, the size, not the distribution). Falsification: a metric successfully
+reconstructed from I alone (no state structure); two distinct ρ with the same KL
+producing different g. Classification: ρ DERIVED (from the state structure); I =
+KL(ρ‖uniform) DERIVED (QG228); g = ρ^(2/d)η DERIVED (QG197); the I → ρ inversion
+REFUTED (a scalar cannot determine a distribution); information-only reconstruction
+BOUNDARY (requires the state structure). The state structure (N=96) is the actual
+primitive that fixes ρ; information and geometry are both its derived faces. No new
+primitive; canonical AT unchanged.
+
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-

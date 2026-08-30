@@ -94,6 +94,30 @@ public static class AtlasDataService
     public static IReadOnlyList<ResearchNewsModel> ResearchNews { get; } =
     [
         new(
+            "researchy-qg003-information-reconstruction",
+            "Information Alone Cannot Rebuild the Metric: the State Structure Is the Primitive",
+            "ResearchY Milestone · QG_003 (V2.2 New Physics — Geometry Bridge)",
+            "Can geometry be reconstructed from information alone? No — and that is a precise negative result. The information content is a single scalar; the metric needs the full density. The state structure, not the information, is what fixes the geometry.",
+            "QG_003 asks the inverse of QG_002: can geometry be reconstructed from INFORMATION alone? Verdict: NO — geometry is NOT informationally complete. The information content I = KL(ρ‖uniform) = 0.7513 nats (QG228) is a SINGLE SCALAR; ρ is a full distribution, and many distributions share the same KL-divergence, so I does not determine ρ uniquely. ΩΛ = I_occ/ln K = 0.6839 DOES fix ln K = I_occ/ΩΛ = 1.0986 (K ≈ 3 — the state-space SIZE), but not the distribution ρ itself. The metric g = ρ^(2/d)η (QG197) requires ρ, so g is NOT reconstructible from I alone. The reconstruction chain Information → ρ → g FAILS at the first step: I is a scalar, ρ is a distribution. COMPARISON: Information → Geometry — NO (I is derived FROM ρ, not the source of ρ); Geometry → Information — NO (g is also derived FROM ρ). NEITHER direction inverts the chain: ρ is the source; information and geometry are both derived faces OF ρ. PROVE/REFUTE: geometry is informationally complete — REFUTED (a scalar cannot determine a distribution; g requires ρ; the reconstruction requires the STATE STRUCTURE, N=96, which is the actual primitive that fixes ρ). CORRECT RECONSTRUCTION CHAIN: State structure (N=96) → spectrum → ρ → {I = KL(ρ‖uniform), g = ρ^(2/d)η} — forward and pure-functional (QG_002); the inverse is not invertible. COUNTEREXAMPLES: 'I determines ρ' fails (many distributions share a KL value); 'g from I alone' fails (needs the full ρ); 'ΩΛ determines the metric' fails (it fixes ln K, the size, not the distribution). FALSIFICATION: a metric successfully reconstructed from I alone (with no state structure); two distinct ρ with the same KL producing different g. Classification: ρ DERIVED (from the state structure); I = KL(ρ‖uniform) DERIVED (QG228); g = ρ^(2/d)η DERIVED (QG197); the I → ρ inversion REFUTED (a scalar cannot determine a distribution); information-only reconstruction BOUNDARY (requires the state structure). The chain is one-directional: the state structure fixes ρ, and ρ manifests as both information and geometry. Information is the shadow, not the source. No new primitive; canonical AT unchanged.",
+            "For non-experts: the previous audit showed geometry is built from the ability to tell things apart. A natural follow-up: if you only had the INFORMATION number (how much can be told apart), could you rebuild the geometry? This audit says no — and explains exactly why. The information content is a single number, like a temperature. A metric is a whole shape, like the layout of a city. One number cannot determine a whole shape: many different arrangements of matter (different densities) can give the same information content, and they would produce different geometries. What the theory does know is the SIZE of its possibility space (about 3 states in the relevant counting), but not the full distribution. So information is the shadow that the density casts — useful, measurable, but not enough by itself to rebuild the shape. The state structure, which sits behind the density, remains the true foundation.",
+            "Information is a single scalar; the metric needs the full density — information cannot rebuild geometry.",
+            "“Information is the shadow of the density — it cannot rebuild the shape.”",
+            true,
+            [
+                new("ResearchY-QG_002", "DISTINGUISHABILITY → GEOMETRY AUDIT",
+                    "The forward chain (N=96 → ρ → g) works; QG_003 tests the inverse (I → g).",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/QG_GeometryBridge/ResearchY-QG_002.md"),
+                new("ResearchY-QG_001", "INFORMATION–GEOMETRY BRIDGE AUDIT",
+                    "The bridge is ρ — QG_003 shows the information alone cannot invert it.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/QG_GeometryBridge/ResearchY-QG_001.md"),
+                new("ResearchY-NP_019", "INFORMATION COSMOLOGY AUDIT",
+                    "ΩΛ fixes ln K (the state-space size) — but not the distribution ρ.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_019.md"),
+                new("ResearchY-QG_003", "INFORMATION RECONSTRUCTION AUDIT",
+                    "Geometry is NOT informationally complete; the state structure (N=96) is the primitive.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/QG_GeometryBridge/ResearchY-QG_003.md"),
+            ]),
+        new(
             "researchy-qg002-distinguishability-geometry",
             "Geometry Is a Manifestation of Distinguishability: the Metric from the State Count Alone",
             "ResearchY Milestone · QG_002 (V2.2 New Physics — Geometry Bridge)",
