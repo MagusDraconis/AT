@@ -1336,6 +1336,34 @@ Classification: canonical coupling DERIVED (interference); equal-mode sync EMERG
 (trivial); the locking force BOUNDARY (a new input, no mechanism derives it). No new
 primitive; canonical AT unchanged.
 
+ResearchY-NP_006 (Phase-Locking Origin Audit, COMPLETE, tests 6/6 PASSED): does a
+phase-locking term emerge from Actualization? Verdict: the locking term's FORM and
+COEFFICIENT are DERIVED, but the MECHANISM does not emerge in canonical AT. The
+interference intensity I = ρ_A+ρ_B+2√(ρ_Aρ_B)·cos(θ_A−θ_B) (Born rule QG216, complex
+state D_036) has gradient ∂I/∂θ_A = +2√(ρ_Aρ_B)·sin(θ_B−θ_A) — EXACTLY the Kuramoto
+form, with coefficient κ = 2√(ρ_Aρ_B) (the DERIVED Born cross-amplitude, not a free
+parameter). BUT the canonical phase update θ(t+1) = θ(t) + Δθ (D_041) has only the
+self-rate — it never follows the gradient, so the term is NOT present in the
+evolution. Smallest modification: a variational requirement (phase advances along
+∂I/∂θ_A): θ_A += Δθ_A + 2η√(ρ_Aρ_B)·sin(θ_B−θ_A), locking iff 2η√(ρ_Aρ_B) ≥
+|Δθ_A−Δθ_B|/2 (κ = 0.866 ≥ 0.5236 for ρ=(0.25,0.75); weak amplitudes κ=0.02 do not
+lock). Determination: A) derivable — PARTIAL (form+strength derivable; the
+evolution-term needs a gradient-following update); B) emergent — CONDITIONAL (only
+under a variational principle); C) external boundary — YES for the mechanism in
+canonical AT. Necessity: the cross-phase term is NECESSARY for unequal-mode sync
+(NP_005 threshold); its natural form IS the interference gradient. Counterexamples:
+shared events pin once then drift (NP_004); reciprocity is the symmetric read
+(D_037), not an evolution term; information exchange (M_005) does not change the phase
+advance; κ is not free — it is fixed by the amplitudes. Observable consequences (if
+active): coherence, resonance amplification, collective modes, synchronized
+measurements. Classification: intensity DERIVED (D_036+QG216); gradient form DERIVED
+(algebra of I); coefficient κ = 2√(ρ_Aρ_B) DERIVED (Born cross-amplitude);
+gradient-following phase update EMERGENT (only under a variational requirement) /
+BOUNDARY in canonical AT; canonical locking term ABSENT. Open question: whether the
+phase advance should follow the count-intensity gradient (a variational/least-action
+principle) — the single requirement that would make phase locking self-generated. No
+new primitive; canonical AT unchanged.
+
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-

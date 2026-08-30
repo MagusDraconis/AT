@@ -32,6 +32,7 @@ ResearchY-M_010  ↔  Y_M_010_Tests.cs     (AT.Tests/ResearchY/M_Measurement/)
 ResearchY-NP_003  ↔  Y_NP_003_Tests.cs    (AT.Tests/ResearchY/NP_NewPhysics/)
 ResearchY-NP_004  ↔  Y_NP_004_Tests.cs    (AT.Tests/ResearchY/NP_NewPhysics/)
 ResearchY-NP_005  ↔  Y_NP_005_Tests.cs    (AT.Tests/ResearchY/NP_NewPhysics/)
+ResearchY-NP_006  ↔  Y_NP_006_Tests.cs    (AT.Tests/ResearchY/NP_NewPhysics/)
 ```
 
 ## Test Registry
@@ -108,6 +109,7 @@ ResearchY-NP_005  ↔  Y_NP_005_Tests.cs    (AT.Tests/ResearchY/NP_NewPhysics/)
 | ResearchY-NP_003 (Manipulation Lever Audit) | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_003_Tests.cs` | ACTIVE | 2026-08-30 | ✅ 6/6 PASSED — `Results/Y_NP_003_Result.md` |
 | ResearchY-NP_004 (Phase Coupling Audit) | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_004_Tests.cs` | ACTIVE | 2026-08-30 | ✅ 6/6 PASSED — `Results/Y_NP_004_Result.md` |
 | ResearchY-NP_005 (Missing Synchronization Mechanism Audit) | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_005_Tests.cs` | ACTIVE | 2026-08-30 | ✅ 7/7 PASSED — `Results/Y_NP_005_Result.md` |
+| ResearchY-NP_006 (Phase-Locking Origin Audit) | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_006_Tests.cs` | ACTIVE | 2026-08-30 | ✅ 6/6 PASSED — `Results/Y_NP_006_Result.md` |
 
 ## Result Summaries
 

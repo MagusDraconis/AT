@@ -94,6 +94,30 @@ public static class AtlasDataService
     public static IReadOnlyList<ResearchNewsModel> ResearchNews { get; } =
     [
         new(
+            "researchy-np006-phase-locking-origin",
+            "The Locking Term Is Born-Derived: κ = 2√(ρ_Aρ_B) — But No Mechanism in Canonical AT",
+            "ResearchY Milestone · NP_006 (V2.2 New Physics — Roadmap)",
+            "Where would the phase-locking term come from? Its form is the interference gradient and its strength is fixed by the Born amplitudes: κ = 2√(ρ_Aρ_B). But the mechanism — a phase advance that follows that gradient — is absent from the canonical theory. The form and coefficient are derived; the mechanism is not.",
+            "NP_006 asks whether the phase-locking term κ·sin(θ_B−θ_A) (NP_005's missing mechanism) can be derived from Actualization. Verdict: the FORM and COEFFICIENT are DERIVED, but the MECHANISM does not emerge in canonical AT. The only phase-dependent observable is the two-mode interference intensity I = ρ_A+ρ_B+2√(ρ_Aρ_B)·cos(θ_A−θ_B) (Born rule QG216, complex state D_036). Its gradient w.r.t. θ_A is ∂I/∂θ_A = +2√(ρ_Aρ_B)·sin(θ_B−θ_A) — EXACTLY the Kuramoto form, with coefficient κ = 2√(ρ_Aρ_B), the DERIVED Born cross-amplitude (not a free parameter). BUT the canonical phase update θ(t+1) = θ(t) + Δθ (D_041) contains only the self-rate — it never follows the gradient — so the term is NOT present in the evolution. SHARED events pin both phases once but drift resumes (NP_004); count redistribution (Born) changes magnitude, not the phase advance; reciprocity (D_037) is the symmetric read, not an evolution term. SMALLEST MODIFICATION: a variational requirement — the phase advances along ∂I/∂θ_A: θ_A += Δθ_A + 2η√(ρ_Aρ_B)·sin(θ_B−θ_A), which locks iff 2η√(ρ_Aρ_B) ≥ |Δθ_A−Δθ_B|/2 (κ=0.866 ≥ 0.5236 for ρ=(0.25,0.75); weak amplitudes κ=0.02 do not lock). DETERMINATION: A) derivable — PARTIAL (form and strength are derivable; the evolution-term needs a gradient-following update); B) emergent — CONDITIONAL (only under a variational actualization principle); C) external boundary — YES for the mechanism in canonical AT. NECESSITY: the cross-phase term is necessary for unequal-mode synchronization (NP_005 threshold), and its natural form IS the interference gradient — so no free parameter is needed; where synchronization occurs it is fixed by the amplitudes. OBSERVABLE CONSEQUENCES (if the mechanism were active): coherence, resonance amplification (locked phase → 2√(ρ_Aρ_B) maximal), collective modes (in-phase/anti-phase), synchronized measurements. FALSIFICATION: canonical emergence falsified if unequal modes synchronize with no added mechanism; variational emergence falsified if the phase advance does not follow ∂I/∂θ_A. Classification: intensity DERIVED (D_036+QG216); gradient form DERIVED (algebra of I); coefficient κ = 2√(ρ_Aρ_B) DERIVED (Born cross-amplitude); gradient-following phase update EMERGENT (only under a variational requirement) / BOUNDARY in canonical AT; canonical locking term ABSENT. Open question (NP_006 OP1): whether the phase advance should follow the count-intensity gradient — the single requirement that would make phase locking self-generated. No new primitive; canonical AT unchanged.",
+            "For non-experts: the previous audit showed that to make two phases lock you need a term that lets each phase feel the other's. Where could such a term come from? This audit finds half of it already hidden in the theory: when two waves overlap, the combined brightness contains a term that depends on the difference of their phases, and the slope of that term is exactly the kind of 'pull' needed — with a strength fixed by the two waves' sizes (twice the square root of their product). So the shape and the strength of the needed term are already derived, not chosen by hand. But the theory never actually applies that pull: each phase advances by its own fixed rate and ignores the other. To make locking real, the theory would need one new principle — that a phase advances along the slope of the combined brightness. That single added rule would make synchronization self-generated.",
+            "The locking term's shape and strength are Born-derived — only the mechanism is missing from canonical AT.",
+            "“The pull already exists in the overlap; the theory just never applies it.”",
+            true,
+            [
+                new("ResearchY-NP_003", "MANIPULATION LEVER AUDIT",
+                    "The phase θ₀ is the theory's only local lever — the object a locking term would couple.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_003.md"),
+                new("ResearchY-NP_005", "MISSING SYNCHRONIZATION MECHANISM AUDIT",
+                    "NP_005 identified the missing term κ·sin(θ_B−θ_A); NP_006 derives its form and strength.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_005.md"),
+                new("ResearchY-D_036", "COMPLEX-STATE-ORIGIN AUDIT",
+                    "The complex state + Born rule give the interference intensity whose gradient is the locking form.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/D_ResonanceStructure/ResearchY-D_036.md"),
+                new("ResearchY-NP_006", "PHASE-LOCKING ORIGIN AUDIT",
+                    "∂I/∂θ_A = 2√(ρ_Aρ_B)·sin(θ_B−θ_A): form and coefficient derived; mechanism absent.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_006.md"),
+            ]),
+        new(
             "researchy-np005-missing-sync-mechanism",
             "What's Missing for Phase Locking: One Cross-Phase Feedback Term",
             "ResearchY Milestone · NP_005 (V2.2 New Physics — Roadmap)",
