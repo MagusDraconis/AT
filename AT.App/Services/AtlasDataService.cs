@@ -94,6 +94,30 @@ public static class AtlasDataService
     public static IReadOnlyList<ResearchNewsModel> ResearchNews { get; } =
     [
         new(
+            "researchy-np004-phase-coupling",
+            "The Phase Is a True Lever: Coupling Yes, Synchronization Only for Identical Modes",
+            "ResearchY Milestone · NP_004 (V2.2 New Physics — Roadmap)",
+            "Can two systems exchange or synchronize their phase? The phase couples through interference and through a shared actualization event — so it is a true physical lever, not an internal label. But synchronization is only possible between identical modes: unequal modes drift apart, because the theory contains no phase-locking force.",
+            "NP_004 asks whether the phase lever (NP_003) can couple two systems A (k_A) and B (k_B). Verdict: the phase is a TRUE PHYSICAL LEVER — it couples through interference (I = ρ_A+ρ_B+2√(ρ_Aρ_B)·cos(θ_A−θ_B): changing θ_A changes B's interference) and through a shared actualization event (one event pins both phases, M_002). BUT synchronization is ONLY possible for identical modes: θ_A(t)−θ_B(t) = (θ_A0−θ_B0) + t·(Δθ_A−Δθ_B), which is time-invariant iff Δθ_A = Δθ_B, i.e. k_A = k_B. For unequal modes the relative phase DRIFTS linearly — the derived chain contains NO phase-locking force. SHARED vs INDEPENDENT events: a shared event pins both phases jointly (definite relative phase, correlation); independent events preserve only the prepared relative phase, then drift. SMALLEST INTERACTION for phase exchange: ONE shared actualization event reading both quadratures of both systems (joint pinning). ALL sustained phase relations are COMMON-ORIGIN correlations (shared preparation or shared event). OBSERVABLE CONSEQUENCES: interference coherence requires a definite relative phase; synchronized trajectories require identical modes; measurement correlations require a joint readout. COUPLING HIERARCHY: (1) interference coupling DERIVED — always; (2) common-origin correlation DERIVED — sustained; (3) shared-event pinning EMERGENT — phase transfer; (4) synchronization EMERGENT — identical modes only. FALSIFICATION: observing two UNEQUAL modes whose relative phase becomes time-invariant without a joint readout or common origin would falsify the no-locking-force claim. Classification: interference coupling DERIVED (complex state D_036 + Born QG216); independent drift DERIVED (fixed Δθ, D_041); common-origin correlation DERIVED (joint preparation); phase transfer via shared event EMERGENT (joint readout); synchronization EMERGENT (setup condition, no mechanism). No new primitive; canonical AT unchanged.",
+            "For non-experts: if the phase is the theory's only knob, can one system turn another system's knob? This audit says: partly. Two systems DO feel each other's phase — that is exactly what interference is: the combined pattern depends on the difference between their two angles. And if one single event measures both at once, their angles are set together. But they can only truly stay in step — synchronized — if they are the same kind of mode, ticking at the same rate. Two different modes drift apart, tick by tick, because nothing in the theory pulls them back into step. So the phase is a real, usable lever, but the theory offers no 'lock step' mechanism for unlike systems: any lasting phase relation must come from a shared beginning.",
+            "The phase couples via interference and shared events — but only identical modes can stay synchronized.",
+            "“The knob turns another knob — but only twins can lock step.”",
+            true,
+            [
+                new("ResearchY-NP_003", "MANIPULATION LEVER AUDIT",
+                    "The phase θ₀ is the theory's only local lever — NP_004 tests whether it can couple two systems.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_003.md"),
+                new("ResearchY-M_002", "MEASUREMENT DISTURBANCE AUDIT",
+                    "Phase-pinning: the read fixes the phase — the mechanism that pins both systems in a shared event.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/M_Measurement/ResearchY-M_002.md"),
+                new("ResearchY-D_041", "TIME-ORIGIN AUDIT",
+                    "The fixed per-mode rate Δθ = 2πk/N — why unequal modes drift apart.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/D_ResonanceStructure/ResearchY-D_041.md"),
+                new("ResearchY-NP_004", "PHASE COUPLING AUDIT",
+                    "Coupling YES (interference + shared event); synchronization only for identical modes; no locking force.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_004.md"),
+            ]),
+        new(
             "researchy-np003-manipulation-lever",
             "The One Lever: the Phase — Locally Controllable, Everything Else Fixed",
             "ResearchY Milestone · NP_003 (V2.2 New Physics — Roadmap)",

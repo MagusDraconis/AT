@@ -1287,6 +1287,30 @@ phase DOF DERIVED (D_036/D_039); manipulability (measurement pinning) EMERGENT
 (M_001/M_002); fixed quantities DERIVED or BOUNDARY. No new primitive; canonical AT
 unchanged.
 
+ResearchY-NP_004 (Phase Coupling Audit, COMPLETE, tests 6/6 PASSED): can two systems
+exchange or synchronize θ₀? Verdict: the phase is a TRUE PHYSICAL LEVER — it couples
+systems through interference (I = ρ_A+ρ_B+2√(ρ_Aρ_B)·cos(θ_A−θ_B), so changing θ_A
+changes B's interference) and through a shared actualization event (one event pins both
+phases, M_002). But synchronization is ONLY possible for identical modes: θ_A(t)−θ_B(t)
+= (θ_A0−θ_B0) + t·(Δθ_A−Δθ_B), time-invariant iff Δθ_A = Δθ_B (k_A = k_B); for unequal
+modes the relative phase DRIFTS linearly — the derived chain contains no phase-locking
+force. Smallest interaction for phase exchange: ONE shared actualization event reading
+both quadratures of both systems (joint pinning). Sustained phase relations are always
+COMMON-ORIGIN correlations (shared preparation or shared event); independent
+actualization events give only preparation correlations, not synchronization.
+Observable consequences: interference coherence requires a definite relative phase;
+synchronized trajectories require identical modes; measurement correlations require a
+joint readout. COUPLING HIERARCHY: interference coupling (DERIVED, always) → common-
+origin correlation (DERIVED, sustained) → shared-event pinning (EMERGENT, phase
+transfer) → synchronization (EMERGENT, identical modes only). Counterexamples: "two
+unequal modes spontaneously synchronize" fails (drift); "independent events correlate
+beyond preparation" fails (drift); "phase is an internal label" fails (interference
+observes the relative phase). Classification: interference coupling DERIVED (complex
+state D_036 + Born QG216); independent drift DERIVED (fixed Δθ, D_041); common-origin
+correlation DERIVED (joint preparation); phase transfer via shared event EMERGENT
+(joint readout); synchronization EMERGENT (setup condition, no mechanism). No new
+primitive; canonical AT unchanged.
+
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-
