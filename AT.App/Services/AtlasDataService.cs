@@ -94,6 +94,30 @@ public static class AtlasDataService
     public static IReadOnlyList<ResearchNewsModel> ResearchNews { get; } =
     [
         new(
+            "researchy-qg007-count-conservation-necessity",
+            "Count Conservation Follows from Difference: the Finite State Space Demands It",
+            "ResearchY Milestone · QG_007 (V2.2 New Physics — Geometry Bridge)",
+            "Is the 'sum to one' a choice or forced? Forced. Difference produces a finite set of distinguishable states, and a count over a finite set must be normalized to serve as probabilities and measures. Count conservation is a necessary consequence of Difference — via finiteness.",
+            "QG_007 asks whether count conservation is a NECESSARY consequence of Difference. Verdict: PROVEN — count conservation (Σρ = 1) follows logically from Difference, via the FINITENESS of the distinguishable state space. The chain: Difference IS distinguishability (D_039) — the 95-state structure — and a count over a FINITE state space must be NORMALIZED to define probabilities (Born rule Σ|ψ|² = 1, QG216) and measures (√(−g) = ρ, QG207). REMOVE COUNT CONSERVATION: the QUALITY of Difference survives — the 95 states remain distinct, because distinguishability is a property of the state space, separate from the count normalization — but information (KL(ρ‖uniform) undefined, QG228), geometry (√(−g) = ρ is no longer a measure, QG207), and measurement (Born invalid, QG216) all FAIL. Difference as a physical SOURCE is incoherent without conservation — only a bare quality survives. COHERENCE: non-conserved Difference is coherent as a QUALITY (the states are distinct) but incoherent as the source of physics (no information, geometry, or measurement). ALTERNATIVES: no alternative primitives ({Difference, η} are the only primitives, D_027); no alternative count structures (normalization is forced by measure preservation). PROOF (Difference logically implies count conservation): Difference → distinguishability (D_039) → FINITE state space (95 states) → count over a finite set → normalization REQUIRED for probabilities and measures → Σρ = 1. The finite state space is the DECISIVE LINK: finite distinguishability ⟹ normalization ⟹ conservation. COUNTEREXAMPLES: 'count conservation is purely arbitrary' fails (it is forced by the finite state space); 'Difference exists without conservation' fails (only as a bare quality — no physics); 'an alternative count structure exists' fails (normalization is forced by measure preservation); 'a non-normalized count is physical' fails (it cannot define probabilities or measures). FALSIFICATION: a finite distinguishable state space with a physical unnormalized count; a probability/measure defined over an unnormalized finite count; a physical structure from a non-Difference primitive. Classification: count conservation DERIVED (from Difference + finiteness); distinguishability as a quality DERIVED (D_039); information/geometry/measurement DERIVED (require the normalized count); alternative primitives BOUNDARY (none — {Difference, η} only). The theory's most fundamental conservation law is not assumed — it is what Difference, being finite, demands. No new primitive; canonical AT unchanged.",
+            "For non-experts: the theory begins with one idea — that things can be told apart — and builds everything from counting events. This audit asks the foundational question: does that first idea FORCE the counts to always add up to one? The answer is yes, and the reason is a matter of scale. Difference produces a FINITE list of distinguishable possibilities (95 of them). When you count events over a finite list, the only way the counts can serve as probabilities — chances that add to 100% — and as a measure of size is to divide everything by the total. That division IS the conservation: the fractions always sum to one. Without it, you could still say the 95 possibilities are distinct (the quality survives), but you could not compute chances, build geometry, or make any measurement. So the 'sum to one' is not a choice — it is what a finite ability to tell things apart logically requires.",
+            "Difference is finite — and finiteness forces the counts to sum to one.",
+            "“Because Difference is finite, the count must be conserved.”",
+            true,
+            [
+                new("ResearchY-QG_006", "COUNT CONSERVATION ORIGIN AUDIT",
+                    "Count conservation is definitional (normalizer S) — QG_007 shows it is also forced by Difference.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/QG_GeometryBridge/ResearchY-QG_006.md"),
+                new("ResearchY-D_039", "STATE-IDENTITY-ORIGIN AUDIT",
+                    "Difference IS distinguishability — the finite 95-state space that forces normalization.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/D_ResonanceStructure/ResearchY-D_039.md"),
+                new("ResearchY-D_027", "SELECTOR-ORIGIN AUDIT",
+                    "The only primitives are {Difference, η} — no alternative source exists.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/D_ResonanceStructure/ResearchY-D_027.md"),
+                new("ResearchY-QG_007", "COUNT CONSERVATION NECESSITY AUDIT",
+                    "Difference → finite state space → normalization → Σρ = 1: conservation is logically implied.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/QG_GeometryBridge/ResearchY-QG_007.md"),
+            ]),
+        new(
             "researchy-qg006-count-conservation",
             "Count Conservation Is the Definitional Foundation: Remove It, Everything Collapses",
             "ResearchY Milestone · QG_006 (V2.2 New Physics — Geometry Bridge)",

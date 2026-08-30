@@ -1881,6 +1881,34 @@ that survives removal while another fails. Classification: count conservation DE
 information/measurement/bookkeeping DERIVED (all require the normalized count). No new
 primitive; canonical AT unchanged.
 
+ResearchY-QG_007 (Count Conservation Necessity Audit, COMPLETE, tests 5/5 PASSED): is
+count conservation merely definitional or a necessary consequence of Difference?
+Verdict: PROVEN — count conservation (Σρ = 1) is a NECESSARY consequence of Difference,
+via the FINITENESS of the distinguishable state space. Difference IS distinguishability
+(D_039) — the 95-state structure — and a count over a FINITE state space must be
+normalized to define probabilities (Born rule Σ|ψ|² = 1, QG216) and measures (√(−g) =
+ρ, QG207). REMOVE COUNT CONSERVATION: the QUALITY of Difference survives (the 95 states
+remain distinct — distinguishability is a property of the state space, separate from the
+count normalization), but information (KL(ρ‖uniform) undefined, QG228), geometry
+(√(−g) = ρ no measure, QG207), and measurement (Born invalid, QG216) all FAIL —
+Difference as a physical source is incoherent (only a bare quality survives).
+ALTERNATIVES: no alternative primitives ({Difference, η} only, D_027); no alternative
+count structures (normalization is forced by measure preservation). PROOF (Difference
+logically implies count conservation): Difference → distinguishability (D_039) → FINITE
+state space (95 states) → count over a finite set → normalization REQUIRED for
+probabilities and measures → Σρ = 1. The finite state space is the decisive link:
+finite distinguishability ⟹ normalization ⟹ conservation. Counterexamples: 'count
+conservation is purely arbitrary' fails (forced by the finite state space); 'Difference
+exists without conservation' fails (only as a bare quality); 'an alternative count
+structure exists' fails (normalization forced by measure preservation); 'a non-normalized
+count is physical' fails (cannot define probabilities or measures). Falsification: a
+finite distinguishable state space with a physical unnormalized count; a probability/
+measure defined over an unnormalized finite count; a physical structure from a
+non-Difference primitive. Classification: count conservation DERIVED (from Difference +
+finiteness); distinguishability as a quality DERIVED (D_039); information/geometry/
+measurement DERIVED (require the normalized count); alternative primitives BOUNDARY
+(none — {Difference, η} only). No new primitive; canonical AT unchanged.
+
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-
