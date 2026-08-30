@@ -94,6 +94,30 @@ public static class AtlasDataService
     public static IReadOnlyList<ResearchNewsModel> ResearchNews { get; } =
     [
         new(
+            "researchy-m010-discrete-phase-lattice",
+            "The Discrete Phase Lattice: Structurally New, Observably Equivalent to Continuous QM",
+            "ResearchY Milestone · M_010 (V2.2 New Physics — Measurement)",
+            "AT-P042 says the phase advances in discrete ticks, not smoothly. A sharp audit asks: does this produce any observable continuous QM cannot reproduce? At every tick-sampled time — no. Phase, recurrence, interference, and finite-state orbits are all reproduced exactly by a matching continuous model. Only the sub-tick phase differs, and that is in-principle only.",
+            "M_010 audits AT-P042's discrete phase evolution θ_m = θ₀ + m·2πk/N against continuous QM. Verdict: NO observable effect at any tick-sampled time. Continuous QM with the matching rate ω = 2πk/(N·τ) reproduces AT-P042 exactly: phase at tick m (θ₀ + m·2πk/N — identical), recurrence (N/gcd(N,k) ticks — identical: m·k/N ∈ ℤ ⟺ m = N/gcd(N,k), and continuous QM recurs at t = Nτ/gcd(N,k)), interference (relative phase 2π(k₁−k₂)/N per tick — identical), finite-state orbits (the same lattice at samples). MODE ANALYSIS: k=1 → lattice 96, recurrence 96; k=16 → 6/6; k=48 → 2/2 (binary phase flip {0, π}); high k (47,49,95) → 96. The ONLY difference is the SUB-TICK phase: continuous QM has intermediate phases between ticks, AT has none — and discriminating requires a clock finer than the actualization tick, which the theory does not contain (in-principle-only; the tick is the fundamental clock). CLASSIFICATION: tick-sampled observables CORRESPONDENCE (QM reproduces exactly); the discrete time-parameter is a structural PREDICTION; NOTHING FALSIFIED. PREDICTION STRENGTH ASSESSMENT: structural — AT-P042 remains the first uniquely-AT measurement prediction (M_009), but its observable content coincides with continuous QM at every accessible time; the experimental discriminator is sub-tick, in-principle only. FALSIFICATION: a sub-tick phase measurement finding an intermediate value θ ∉ {θ₀ + m·2πk/N} would falsify AT-P042; no tick-sampled experiment can falsify it. No new primitive; canonical AT unchanged.",
+            "For non-experts: last time we found one signature that really is this theory's own — time moves in discrete ticks, so after a measurement the phase can only land on fixed marks, like a clock face. This audit asks the hard follow-up: can you actually SEE that, in a way ordinary quantum mechanics could not mimic? The honest answer: at every time you can measure, ordinary quantum mechanics can imitate it exactly — same phase, same repetition pattern, same interference. The one place they differ is between the ticks themselves, where this theory says there is no time at all. But to look between ticks you would need a clock even faster than the theory's own fundamental tick — which the theory does not provide. So the signature is real but, for now, beyond any experiment.",
+            "Structurally new — but every measurable outcome is reproducible by continuous QM at tick times.",
+            "“A real difference, hidden between the ticks.”",
+            true,
+            [
+                new("ResearchY-D_041", "TIME-ORIGIN AUDIT",
+                    "The phase advances per tick (Δθ = 2πk/N) — the derived spectral rate behind AT-P042.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/D_ResonanceStructure/ResearchY-D_041.md"),
+                new("ResearchY-M_009", "MEASUREMENT PREDICTION DISCRIMINATOR AUDIT",
+                    "M_009 established AT-P042 as the first uniquely-AT measurement prediction; M_010 assesses its observable strength.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/M_Measurement/ResearchY-M_009.md"),
+                new("ResearchY-M_003", "MEASUREMENT FEEDBACK AUDIT",
+                    "The pinned phase becomes the future's initial condition (θ_t = θ₀ + t·Δθ) — the evolution being audited.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/M_Measurement/ResearchY-M_003.md"),
+                new("ResearchY-M_010", "DISCRETE PHASE LATTICE AUDIT",
+                    "All tick-sampled observables are QM-reproducible (CORRESPONDENCE); sub-tick phase is the in-principle discriminator.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/M_Measurement/ResearchY-M_010.md"),
+            ]),
+        new(
             "researchy-m009-prediction-discriminator",
             "The Discriminator Keeps One Prediction: AT-P042 Survives, AT-P043 Is Downgraded",
             "ResearchY Milestone · M_009 (V2.2 New Physics — Measurement)",

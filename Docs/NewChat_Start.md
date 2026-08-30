@@ -1442,6 +1442,22 @@ phase at sub-tick resolution falsifies AT-P042; no single-event experiment can
 discriminate AT-P043 (QM imposes the same bound). No new primitive; canonical AT
 unchanged.
 
+ResearchY-M_010 (Discrete Phase Lattice Audit, COMPLETE, tests 6/6 PASSED): does
+AT-P042 produce observable effects that continuous QM cannot reproduce? Verdict: NO
+at every tick-sampled time. Continuous QM with the matching rate ω = 2πk/(N·τ)
+reproduces AT-P042 exactly: phase at tick m (θ₀ + m·2πk/N), recurrence (N/gcd(N,k)
+ticks, identical), interference (relative phase 2π(k₁−k₂)/N per tick, identical),
+finite-state orbits (same lattice at samples). MODE ANALYSIS: k=1 → lattice 96,
+recurrence 96; k=16 → 6/6; k=48 → 2/2 (binary phase flip {0, π}); high k (47,49,95) →
+96. The ONLY difference is the SUB-TICK phase — continuous QM has intermediate phases,
+AT has none — and discriminating requires a clock finer than the actualization tick
+(in-principle-only: the tick is the theory's fundamental clock). CLASSIFICATION:
+tick-sampled observables CORRESPONDENCE (QM reproduces exactly); the discrete
+time-parameter is a structural PREDICTION; NOTHING FALSIFIED. PREDICTION STRENGTH:
+structural — AT-P042 remains the first uniquely-AT measurement prediction, but its
+observable content coincides with continuous QM at every accessible time (experimental
+discriminator sub-tick, in-principle only). No new primitive; canonical AT unchanged.
+
 ### PRED001: Prediction Registry (standalone Zenodo publication)
 
 Summary:

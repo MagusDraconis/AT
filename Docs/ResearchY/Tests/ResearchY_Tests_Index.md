@@ -28,6 +28,7 @@ ResearchY-D_001  ↔  Y_D_001_Tests.cs
 ResearchY-R_001  ↔  Y_R_001_Tests.cs     (AT.Tests/ResearchY/R_BoundaryProgram/)
 ResearchY-M_001  ↔  Y_M_001_Tests.cs     (AT.Tests/ResearchY/M_Measurement/)
 ResearchY-M_009  ↔  Y_M_009_Tests.cs     (AT.Tests/ResearchY/M_Measurement/)
+ResearchY-M_010  ↔  Y_M_010_Tests.cs     (AT.Tests/ResearchY/M_Measurement/)
 ```
 
 ## Test Registry
@@ -100,6 +101,7 @@ ResearchY-M_009  ↔  Y_M_009_Tests.cs     (AT.Tests/ResearchY/M_Measurement/)
 | ResearchY-M_007 (Measurement-Program Synthesis) | `AT.Tests/ResearchY/M_Measurement/Y_M_007_Tests.cs` | ACTIVE | 2026-08-30 | ✅ 7/7 PASSED — `Results/Y_M_007_Result.md` |
 | ResearchY-M_008 (Measurement Prediction Audit) | `AT.Tests/ResearchY/M_Measurement/Y_M_008_Tests.cs` | ACTIVE | 2026-08-30 | ✅ 6/6 PASSED — `Results/Y_M_008_Result.md` |
 | ResearchY-M_009 (Measurement Prediction Discriminator Audit) | `AT.Tests/ResearchY/M_Measurement/Y_M_009_Tests.cs` | ACTIVE | 2026-08-30 | ✅ 6/6 PASSED — `Results/Y_M_009_Result.md` |
+| ResearchY-M_010 (Discrete Phase Lattice Audit) | `AT.Tests/ResearchY/M_Measurement/Y_M_010_Tests.cs` | ACTIVE | 2026-08-30 | ✅ 6/6 PASSED — `Results/Y_M_010_Result.md` |
 
 ## Result Summaries
 
