@@ -237,7 +237,7 @@ Oblique parameters origin (S = occ₀/Σm = 0.0421, T = 2S = 0.0842, U = 0; T = 
 
 Open Questions:
 
-- current working hypothesis: the minimal base is Difference → Actualization → Spectrum → Physics; Q-events and the rest of the network hierarchy are downstream realizations, and the V2.0 audit pass classifies the first-peak 5/4 factor as a documented FIT (QG297, removable QG289, no mechanism) — only ℓ₁ carries it while peak ratios are pure spectral correspondences; dimensional observables still require imported calibration anchors (v, m_e, and standard unit conversion), so units are fixed by measurement/convention rather than derived from the spectrum; N=96 is inevitable within the accepted structural class (period-3 seed, Z2 half-shift, three-family octave window), but a global proof excluding every conceivable alternative closure remains open.
+- current working hypothesis: the minimal base is Difference → Actualization → Spectrum → Physics; Q-events and the rest of the network hierarchy are downstream realizations, and the V2.0 audit pass classifies the first-peak 5/4 factor as a documented FIT (QG297, removable QG289, no mechanism) — only ℓ₁ carries it while peak ratios are pure spectral correspondences; dimensional observables still require imported calibration anchors (v, m_e, and standard unit conversion), so units are fixed by measurement/convention rather than derived from the spectrum; N=96 is inevitable within the accepted structural class (period-3 seed, Z2 half-shift, three-family octave window), but a global proof excluding every conceivable alternative closure remains open; the ResearchY QG_008/QG_009 audits pin the state-space finiteness: finite N is a BOUNDARY required only for the AT uniform-reference information observable chain (I_occ = KL(ρ‖uniform), ΩΛ), while a CONVERGENT infinite state space is internally consistent for normalization, realized entropy (geometric ρ_k = (1−r)r^k gives Σρ = 1 and H = 2.0 bits), measurement, geometry, and gravity — the first genuine failure of infinite N is the uniform reference (no normalized uniform measure exists on a countable set), refining the "information breaks first" reading of QG_008.
 - the authoritative frontier catalog is now the QG295–QG300 closure run: QG296 reconstruction completes the QG223–295 map, QG297 isolates the 5/4 exception, QG298 resolves the first peak, and the remaining frontier is primarily experimental — P1 106 GeV, P2 0νββ, P3 ladder; no gravity item remains
 - CORRECTION OF RECORD (V2.0 audit pass): the QG298/QG299 "5/4 = structural boundary projection (occ₀ + zero_mode)/occ₀" reading is REJECTED — that identity is a label identity without a mechanism (the same standard used to reject Bekenstein 1/occ₀ = 1/4); the registry classifies 5/4 as FIT (QG297, removable QG289). This supersedes the QG298 DETERMINATION and the QG299 "R4 5/4 CLOSED" entry; see Docs/Research/ATQG_AUDIT_MILESTONE_V20.md
 - P1 (106 GeV) status after QG199: PENDING — window 99–114 GeV neither confirmed nor excluded; 95 GeV cluster = 91.19 rung; new 152 GeV excess = 151.98 rung (P3, not P1); HL-LHC decisive
@@ -1941,6 +1941,48 @@ of the state space, required for physics); the value N=96 DERIVED (closure);
 normalization/count conservation DERIVED (from finiteness, QG_007); information DERIVED
 (finite only); geometry DERIVED (needs the finite measure). No new primitive; canonical
 AT unchanged.
+
+ResearchY-QG_009 (Infinite State Space Consistency Audit, COMPLETE, tests 7/7 PASSED):
+can an infinite distinguishable state space support normalization, information,
+measurement, geometry, and gravity without contradiction? Verdict: YES — an infinite
+state space is INTERNALLY CONSISTENT for generic physics when the count density is
+CONVERGENT (summable); finiteness is unnecessary for generic consistency and required
+only for the AT uniform-reference observable chain. KEY CONSTRUCTION: the geometric
+distribution ρ_k = (1−r)·r^k over k = 0,1,2,… satisfies Σρ_k = (1−r)/(1−r) = 1
+EXACTLY (normalization survives, verified to machine precision) and carries finite
+Shannon entropy H = −log₂(1−r) − (r/(1−r))·log₂ r = 2.0 bits for r = 0.5 (closed
+form, numeric match); the power-law ρ_k ∝ k^(−2) normalizes via ζ(2) = 1.6449 with
+H ≈ 2.36 bits. NORMALIZATION: existence YES (geometric, power-law), uniqueness (many
+valid convergent families), stability (exact for fixed r) — only the UNIFORM
+assignment fails (Σ1 = ∞). INFORMATION: the CAPACITY log₂(N) diverges, but the
+realized entropy of a convergent infinite distribution is FINITE (2.0 bits geometric)
+— 'information breaks first' is refined. FIRST GENUINE FAILURE: the UNIFORM REFERENCE
+— a normalized uniform measure on a countably infinite set does not exist (Σc = c·∞
+for all c), so the AT observable I_occ = KL(ρ‖uniform) = 0.7513 nats (QG228) and
+ΩΛ = I_occ/ln K = 0.6839 (QG234) are ILL-DEFINED for infinite N. MEASUREMENT: Born
+weights Σ|ψ|² = Σρ = 1 exact for any convergent ρ; state identity coherent over
+infinite states. GEOMETRY: √(−g) = ρ (QG207) extends to any summable density — the
+conformal metric survives. DETERMINATION: A) finite required — NO (for generic
+consistency); B) finite emergent — NO; C) finite unnecessary — YES (required only for
+the AT uniform-reference information observable). PROVE/REFUTE: physics requires
+finite distinguishability — REFUTED as a generic necessity (a convergent infinite
+space is fully consistent across normalization, entropy, measurement, geometry,
+gravity); upheld only for the AT KL-to-uniform observable chain. REFINES QG_008:
+'information breaks first' holds for the uniform capacity and the AT KL observable,
+NOT for realized information content. Counterexamples: 'infinite states ⇒ information
+diverges' fails (H = 2.0 bits geometric); 'infinite states ⇒ no normalization' fails
+(Σ(1−r)r^k = 1 exactly); 'infinite states ⇒ no measurement' fails (Born weights sum
+to 1); 'infinite states ⇒ no geometry' fails (√(−g) = ρ extends to summable ρ);
+'KL(ρ‖uniform) defined for infinite N' fails (no normalized uniform measure); 'QG_008
+fully correct' — refined (only capacity and AT KL break). Falsification: an infinite
+convergent ρ that cannot normalize; a convergent ρ with infinite entropy; an infinite
+construction forming KL-to-uniform; an infinite I_occ. Classification: finiteness
+BOUNDARY for the AT observable chain (I_occ, ΩΛ), NOT required for generic
+consistency; normalization Σρ = 1 DERIVED (exact for any convergent ρ); realized
+entropy H(ρ) DERIVED (finite for convergent ρ); capacity log₂(N) DERIVED (diverges —
+a capacity, not an observable); uniform reference REFUTED for infinite N; AT
+observable I_occ/ΩΛ BOUNDARY (finite-only); measurement/geometry/gravity DERIVED
+(survive any convergent ρ). No new primitive; canonical AT unchanged.
 
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
