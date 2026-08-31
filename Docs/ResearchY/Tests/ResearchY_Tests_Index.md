@@ -64,6 +64,7 @@ ResearchY-QG_013  ↔  Y_QG_013_Tests.cs     (AT.Tests/ResearchY/QG_GeometryBrid
 ResearchY-QG_014  ↔  Y_QG_014_Tests.cs     (AT.Tests/ResearchY/QG_GeometryBridge/)
 ResearchY-QG_015  ↔  Y_QG_015_Tests.cs     (AT.Tests/ResearchY/QG_GeometryBridge/)
 ResearchY-QG_016  ↔  Y_QG_016_Tests.cs     (AT.Tests/ResearchY/QG_GeometryBridge/)
+ResearchY-QG_017  ↔  Y_QG_017_Tests.cs     (AT.Tests/ResearchY/QG_GeometryBridge/)
 ResearchY-NP_022  ↔  Y_NP_022_Tests.cs     (AT.Tests/ResearchY/NP_NewPhysics/)
 ResearchY-S_001  ↔  Y_S_001_Tests.cs       (AT.Tests/ResearchY/S_Synthesis/)
 ```
@@ -174,6 +175,7 @@ ResearchY-S_001  ↔  Y_S_001_Tests.cs       (AT.Tests/ResearchY/S_Synthesis/)
 | ResearchY-QG_014 (Cosmological Selection Audit) | `AT.Tests/ResearchY/QG_GeometryBridge/Y_QG_014_Tests.cs` | ACTIVE | 2026-08-31 | ✅ 5/5 PASSED — `Results/Y_QG_014_Result.md` |
 | ResearchY-QG_015 (Observable World Audit) | `AT.Tests/ResearchY/QG_GeometryBridge/Y_QG_015_Tests.cs` | ACTIVE | 2026-08-31 | ✅ 6/6 PASSED — `Results/Y_QG_015_Result.md` |
 | ResearchY-QG_016 (Tick Discreteness Origin Audit) | `AT.Tests/ResearchY/QG_GeometryBridge/Y_QG_016_Tests.cs` | ACTIVE | 2026-08-31 | ✅ 6/6 PASSED — `Results/Y_QG_016_Result.md` |
+| ResearchY-QG_017 (Distinguishability Cosmology Extension Audit) | `AT.Tests/ResearchY/QG_GeometryBridge/Y_QG_017_Tests.cs` | ACTIVE | 2026-08-31 | ✅ 6/6 PASSED — `Results/Y_QG_017_Result.md` |
 | ResearchY-NP_022 (Unique Physics Prediction Search) | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_022_Tests.cs` | ACTIVE | 2026-08-31 | ✅ 7/7 PASSED — `Results/Y_NP_022_Result.md` |
 | ResearchY-S_001 (Post-V2.1 Theory Architecture Synthesis) | `AT.Tests/ResearchY/S_Synthesis/Y_S_001_Tests.cs` | ACTIVE | 2026-08-30 | ✅ 4/4 PASSED — `Results/Y_S_001_Result.md` |
 

@@ -114,6 +114,7 @@
 | ResearchY-QG_014 | Cosmological Selection Audit | `QG_GeometryBridge/ResearchY-QG_014.md` | `AT.Tests/ResearchY/QG_GeometryBridge/Y_QG_014_Tests.cs` (5/5 ✅) | COMPLETE |
 | ResearchY-QG_015 | Observable World Audit | `QG_GeometryBridge/ResearchY-QG_015.md` | `AT.Tests/ResearchY/QG_GeometryBridge/Y_QG_015_Tests.cs` (6/6 ✅) | COMPLETE |
 | ResearchY-QG_016 | Tick Discreteness Origin Audit | `QG_GeometryBridge/ResearchY-QG_016.md` | `AT.Tests/ResearchY/QG_GeometryBridge/Y_QG_016_Tests.cs` (6/6 ✅) | COMPLETE |
+| ResearchY-QG_017 | Distinguishability Cosmology Extension Audit | `QG_GeometryBridge/ResearchY-QG_017.md` | `AT.Tests/ResearchY/QG_GeometryBridge/Y_QG_017_Tests.cs` (6/6 ✅) | COMPLETE |
 | ResearchY-NP_022 | Unique Physics Prediction Search | `NP_NewPhysics/ResearchY-NP_022.md` | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_022_Tests.cs` (7/7 ✅) | COMPLETE |
 | ResearchY-S_001 | Post-V2.1 Theory Architecture Synthesis | `S_Synthesis/ResearchY-S_001.md` | `AT.Tests/ResearchY/S_Synthesis/Y_S_001_Tests.cs` (4/4 ✅) | COMPLETE |
 | ResearchY-M_001 | Measurement Origin Audit | `M_Measurement/ResearchY-M_001.md` | `AT.Tests/ResearchY/M_Measurement/Y_M_001_Tests.cs` (7/7 ✅) | COMPLETE |

@@ -2402,6 +2402,50 @@ boundary-supported. The tick remains the deepest structural boundary — now pre
 located: its DISCRETENESS is input, its SIZE is derived. No new primitive; canonical
 AT unchanged.
 
+ResearchY-QG_017 (Distinguishability Cosmology Extension Audit, COMPLETE, tests 6/6
+PASSED): if ΩΛ comes from distinguishability, what else must follow? (Submitted as
+QG_015/QG_016, both taken; registered as QG_017 per the permanent-ID rule.) Verdict:
+ΩΛ is NOT an isolated success — it is the first member of a FINITE distinguishability
+cosmology family: ΩΛ, Ωm, ratio, q₀, z_acc. No full distinguishability cosmology.
+THE SOURCE: the count structure {I_occ = 0.7513 nats, ln K = 1.0986, ρ}, with the
+realized entropy H = ln K − I_occ = 0.3473 (the matter side). THE OBSERVED FAMILY:
+ΩΛ = I_occ/ln K = 0.6839 (observed 0.12%), Ωm = (ln K − I_occ)/ln K = 0.3161
+(observed 0.26%), the ratio ΩΛ/Ωm = I_occ/(ln K − I_occ) = 2.1636, and — via the
+HOSTED FRW relations — the current deceleration q₀ = Ωm/2 − ΩΛ = −0.5258 and the
+turnaround redshift z_acc = (2ΩΛ/Ωm)^(1/3) − 1 = 0.6295. CANDIDATE EXTENSIONS (must
+they depend on the same source?): ΩΛ/Ωm/q₀/z_acc — YES (all deterministic functions
+of the info objects); H₀ — NO (dimensionful, needs an anchor v/clock); σ₈ — NO
+(needs the primordial amplitude A_s); BAO scale — NO (needs the sound horizon Ωb/Ωr);
+structure growth — NO (needs A_s, n_s, growth index); weak lensing S₈ — NO (inherits
+σ₈); horizon size — NO (needs H₀); clustering amplitude — NO (needs σ₈, P(k)).
+CLOSURE RELATIONS (the family is algebraically CLOSED): the entropy identity
+I_occ + H = ln K (0.7513 + 0.3473 = 1.0986); the completeness ΩΛ + Ωm = 1; the
+entropy-fraction reading Ωm = H/ln K (the pair partitions the state-space size); the
+ratio I_occ/H = 2.1636; q₀ = Ωm/2 − ΩΛ; and 1 + z_acc = (2ΩΛ/Ωm)^(1/3) = 1.6295.
+Given {I_occ, ln K}, all five observables are fixed — no third independent
+information number exists. DETERMINATION: A) ΩΛ uniquely privileged — PARTIAL
+(primary but not alone); B) finite cosmology family — YES (the complete answer); C)
+full distinguishability cosmology — NO (H₀/σ₈/BAO/growth/lensing/horizon/clustering
+need non-information inputs). STRONGEST NEXT PREDICTION BEYOND ΩΛ: the q₀/z_acc
+closure — q₀ = −0.5258 (supernova Hubble diagram, falsified by deviation from
+−0.526) and z_acc = 0.6295 (expansion-history reconstruction, falsified by deviation
+from 0.630); their FORM is CORRESPONDENCE (hosted GR kinematics), their VALUES are
+DERIVED from the information fractions. Counterexamples: 'ΩΛ is an isolated success'
+fails (the pair and its closures all follow from the same source); 'full
+distinguishability cosmology' fails (H₀/σ₈/BAO/growth/lensing/horizon/clustering
+need non-information inputs); 'σ₈ is info-derived' fails (needs A_s); 'BAO scale is
+info-derived' fails (sound horizon needs Ωb/Ωr); 'a third independent info number
+exists' fails (the family is algebraically closed); 'removing distinguishability
+keeps some members' fails (I_occ undefined without the state space — the whole
+family vanishes). Falsification: ΩΛ deviation beyond 0.12%; Ωm inconsistent with
+(ln K − I_occ)/ln K; ratio deviating from I_occ/(ln K − I_occ); q₀ deviating from
+−0.526; z_acc deviating from 0.630; an amplitude/size/growth observable as a pure
+function of {I_occ, ln K, ρ}. Classification: ΩΛ/Ωm/ratio PREDICTION (information-
+derived, observed); q₀/z_acc values DERIVED (closures of the pair, hosted FRW form)
+with form CORRESPONDENCE; H₀/σ₈/BAO/growth/lensing/horizon/clustering BOUNDARY (need
+non-information inputs); the finite-family structure DERIVED. No new primitive;
+canonical AT unchanged.
+
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-
