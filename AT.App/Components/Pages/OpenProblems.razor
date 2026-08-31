@@ -3,7 +3,7 @@
 <PageTitle>Open Problems · AT</PageTitle>
 
 <h2 class="section-heading">Open Problems</h2>
-<p class="muted">Genuinely open questions of the AT-QG program — falsifiable predictions awaiting experiment and unresolved derivations. Source: <span class="mono">Docs/ATQG_PhysicsCoverage.json</span> (single source of truth). Current frontier includes the QG295–QG300 closure run and the remaining experimental items.</p>
+<p class="muted">Genuinely open questions of the AT program — falsifiable predictions awaiting experiment and unresolved derivations. The AT-QG ledger below comes from <span class="mono">Docs/ATQG_PhysicsCoverage.json</span> (single source of truth); the current ResearchY open problems from the V2.2 synthesis are listed after.</p>
 
 @if (_problems is null)
 {
@@ -15,6 +15,7 @@ else if (_problems.Count == 0)
 }
 else
 {
+    <h3 class="section-heading">AT-QG open-questions ledger</h3>
     @foreach (var p in _problems)
     {
         <MudCard Elevation="1" Class="theory-card mb-3">
@@ -29,10 +30,38 @@ else
     }
 }
 
+<div class="page-section mt-4">
+    <h3 class="section-heading">Current open problems (ResearchY V2.2 — S_001 synthesis)</h3>
+    <p class="muted">Open items from the V2.2 geometry-bridge synthesis and the V2.1 origin program — not part of the AT-QG phase ledger.</p>
+    @foreach (var p in _v22Problems)
+    {
+        <MudCard Elevation="1" Class="theory-card mb-3">
+            <MudCardContent>
+                <div class="mb-1">
+                    <span class="status-chip @StatusClass(p.Status)">@p.Status</span>
+                    <span class="audit-phase ms-2">@p.Phase</span>
+                </div>
+                <MudText Typo="Typo.subtitle1" Class="fw-bold">@p.Question</MudText>
+            </MudCardContent>
+        </MudCard>
+    }
+</div>
+
 @code {
     [Inject] private ValidationDataService ValidationDataService { get; set; } = default!;
 
     private IReadOnlyList<OpenQuestionModel>? _problems;
+
+    private static readonly IReadOnlyList<OpenQuestionModel> _v22Problems =
+    [
+        new("Origin of the discreteness of the actualization tick — the tick (Δθ = 2πk/N) is the final canonical boundary; no deeper principle forcing it has been found.", "QG_011", "OPEN"),
+        new("Gauge dynamics — the interaction dynamics IS the D96 generator action, but the Yukawa coupling mechanism is PARTIAL and the Higgs potential is OPEN.", "QG242–244", "PARTIAL"),
+        new("Exact neutrino mass law — the structural (neutral-sector) origin is derived; the exact absolute mass law remains open.", "QG172", "OPEN"),
+        new("First-peak 5/4 factor — documented FIT (QG297, removable QG289, no mechanism); only ℓ₁ carries it while the peak ratios are pure spectral correspondences.", "QG297", "FIT"),
+        new("Bekenstein–Hawking entropy–area relation — not derived in the framework (boundary).", "NP_020", "BOUNDARY"),
+        new("Global uniqueness of N=96 — derived within the accepted structural class (period-3 seed, Z2 half-shift, three-family octave window); a proof excluding every conceivable alternative closure remains open.", "D_015", "OPEN"),
+        new("Dimensionful units — fixed by the anchors {v, m_e} and standard unit conversion, not derived from the spectrum.", "D_012/D_044", "BOUNDARY"),
+    ];
 
     protected override async Task OnInitializedAsync()
     {
