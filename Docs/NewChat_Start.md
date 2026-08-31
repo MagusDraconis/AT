@@ -2282,6 +2282,71 @@ observable-sector requirement BOUNDARY (Z2-paired complex sector, D_020);
 'a distinguishable universe must become observable' REFUTED (U1 is consistent). No
 new primitive; canonical AT unchanged.
 
+ResearchY-QG_016 (Tick Discreteness Origin Audit, COMPLETE, tests 6/6 PASSED): why
+must the actualization tick be discrete? Is tick discreteness a primitive boundary or
+a consequence of Difference? Verdict: tick discreteness is a BOUNDARY — Difference
+implies discrete STATES (a discrete set, DERIVED) but NOT discrete EVENTS (the
+stepwise dynamics). THE TWO DISCRETENESSES: state-space discreteness = the 95
+distinct states (a discrete SET, membership discreteness, D_039) — DERIVED from
+Difference; dynamics discreteness = the TICK (Δθ = 2πk/N per step, the phase
+advance, D_041) — a DYNAMIC parameter, the step of the advance. Difference produces
+the states; nothing in 'distinguishing states' forces the advance to be stepwise vs
+continuous. COMPARE DISCRETE TICK vs CONTINUOUS ACTUALIZATION: discrete — θ_m =
+θ₀ + m·2πk/N (lattice of N/gcd(N,k) values: k=1→96, k=16→6, k=48→2, k=95→96), one
+event = one step = one outcome (M_001), finite info log₂(95) = 6.57 bits (M_004),
+normalization Σρ = 1, count conservation, phase advance DERIVED from the spectrum
+(D_041), AT-P042 fundamental clock; continuous — θ(t) continuous (continuum of
+values), no fundamental step, finite info only if sampled discretely, normalization/
+count conservation still hold (count is over discrete states), phase advance
+DECOUPLED from the spectrum (free continuous parameter), AT-P042 demoted to a
+sampling artifact. THE DECISIVE FACT (M_010): continuous actualization with rate
+ω = 2πk/(N·τ) reproduces AT-P042 EXACTLY at every tick-sampled time — phase,
+recurrence (N/gcd(N,k)), interference, and finite-state orbits are identical; only
+the sub-tick phase differs. OBSERVABILITY DOES NOT FORCE DISCRETE DYNAMICS: finite
+events (QG_010/QG_011) require discrete READS, which can sample a continuous
+evolution. FIRST INCONSISTENCY OF CONTINUOUS ACTUALIZATION: STRUCTURAL, not
+observational — the phase advance Δθ = 2πk/N loses its spectral derivation (the step
+was derived from the mode index k and state count N, D_041) and becomes a free
+continuous parameter (a new boundary), while AT-P042 is demoted from the fundamental
+clock to a sampling artifact. EFFECTS: observability survives (discrete sampling,
+M_010); information gain survives (discrete read); normalization survives (discrete
+count); count conservation survives (normalizer S); phase evolution works
+continuously — but the DERIVED structure of the phase advance and the fundamental
+status of the tick break. MINIMAL PRINCIPLE FORCING A DISCRETE EVENT: none forces
+discrete DYNAMICS — Difference forces a discrete SET (membership), observability
+forces finite EVENTS (discrete reads) but not discrete dynamics (M_010 equivalence),
+the count structure (ρ_k = μ^k/S, QG194) is over states not over time. The discrete
+event is forced by the observable-sector requirement (D_020) TOGETHER with the
+canonical phase advance (D_041): the states are discrete (Difference), and the phase
+advances in the derived spectral step. PROVE/REFUTE: Difference implies discrete
+events — REFUTED (as a claim about dynamics): Difference implies discrete STATES (the
+95-state set, D_039) but NOT discrete EVENTS; the tick (Δθ = 2πk/N) is the DYNAMIC
+step of the phase advance — a property of HOW actualization evolves, not of WHAT the
+states are; a continuous actualization is observationally equivalent at all
+tick-sampled times (M_010). BOUNDARY REDUCTION TEST: tick discreteness → Difference —
+NO (Difference produces a discrete SET, not a discrete advance); → observability — NO
+(continuous + discrete sampling is observationally equivalent, M_010); → count
+structure — NO (the count is over states, not over time); the step VALUE Δθ = 2πk/N
+→ spectrum — YES, DERIVED (D_041). Counterexamples: 'Difference implies discrete
+events' fails (produces a discrete SET; the advance could be continuous, M_010
+sampling equivalent); 'observability forces discrete dynamics' fails (finite events
+need discrete READS, not discrete evolution); 'continuous actualization breaks
+measurement' fails (discrete sampling of continuous evolution gives the same
+observable physics); 'the tick is derived from Difference' fails (the tick is a
+dynamic parameter; Difference fixes the states, not the advance); 'the step value is
+boundary too' fails (Δθ = 2πk/N IS derived from the spectrum, D_041 — only the
+discreteness is input). Falsification: a derivation of stepwise dynamics from
+Difference alone; an observable that requires a continuous evolution to exist; an
+observable differing between discrete and continuous evolution at sampled times; a
+phase advance not equal to 2πk/N from the spectrum. Classification: state-space
+discreteness (the set) DERIVED (Difference → distinguishability, D_039); finite
+events EMERGENT (observable-sector requirement, QG_010/QG_011); tick DISCRETENESS
+(stepwise dynamics) BOUNDARY (canonical input, D_041); step VALUE Δθ = 2πk/N DERIVED
+(from the spectrum, D_041); AT-P042 (discrete lattice) STRUCTURAL PREDICTION (M_009),
+boundary-supported. The tick remains the deepest structural boundary — now precisely
+located: its DISCRETENESS is input, its SIZE is derived. No new primitive; canonical
+AT unchanged.
+
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-
