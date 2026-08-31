@@ -2224,6 +2224,64 @@ prediction (theory → cosmology) DERIVED (N=96 → I_occ → ΩΛ = 0.6839, exa
 observed ΩΛ as the input anchor BOUNDARY (QG_013). No new primitive; canonical AT
 unchanged.
 
+ResearchY-QG_015 (Observable World Audit, COMPLETE, tests 6/6 PASSED): why does an
+observable world exist? Does a distinguishable universe NECESSARILY become
+observable? Verdict: NO — a distinguishable universe does NOT necessarily become
+observable. Observability is EMERGENT (the actualization readout) under a BOUNDARY
+input (the observable sector), not a logical consequence of Difference. DEFINITIONS:
+observable world = a world whose distinguishable states are READ by actualization
+events; distinguishability = the state space produced by Difference (D_039);
+observation = an actualization event reading both quadratures of a state (M_001);
+realization = the resolution of WHICH state is actual (M_001/M_003); actualization =
+the discrete-step evolution of the phase (D_041). COMPARE U1 (distinguishable,
+unobserved) vs U2 (distinguishable, observed): U1 — the 95 states EXIST, geometry
+g = ρ^(2/d)η EXISTS (from ρ), information I_occ = 0.7513 nats EXISTS (KL of ρ),
+cosmology ΩΛ = 0.6839 EXISTS (from info density), but NO measurement event and NO
+outcome realization; U2 — all the same PLUS the measurement event (M_001 reads both
+quadratures), outcome realization, phase pinning (M_002), and observer knowledge
+(M_006). U1 IS FULLY CONSISTENT: everything DERIVED from the state space exists
+without any observation; observation adds only RESOLUTION (which state is realized),
+phase pinning, and observer access — it does NOT create the states, ρ, geometry,
+information, or cosmology (M_005: reveal, not create; M_006: the observer changes
+only the epistemic layer). DOES DIFFERENCE ALONE PRODUCE OBSERVATION? NO — Difference
+→ distinguishability (D_039) produces the STATES; observation requires an
+actualization event that READS them (M_001) — a separate act. DOES ACTUALIZATION
+NECESSARILY PRODUCE OBSERVABLE OUTCOMES? PARTIAL — Actualization advances the phase
+per tick (Δθ = 2πk/N, D_041), producing EVOLUTION; an 'observable outcome' is a READ
+of the state (M_001); Actualization necessarily produces ticks but not necessarily a
+read (U1: evolution without observation). WHAT DISAPPEARS IF OBSERVABILITY IS
+REMOVED? information — NO (pre-existing, M_005); geometry — NO (from ρ); MEASUREMENT
+— YES (the measurement event IS observability, M_001); cosmology — NO (from info
+density). Only measurement/realization disappears; physics survives. MINIMAL
+PRINCIPLE GENERATING OBSERVABLE REALITY: the OBSERVABLE-SECTOR requirement (D_020) —
+the Z2-paired complex sector, the requirement that every frequency carry both
+quadratures ([magnitude, phase], D_036/D_037) so states are READABLE. DETERMINATION:
+A) observability derived — NO (U1 is consistent); B) observability EMERGENT — YES
+(the measurement event is the actualization readout, M_001, EMERGENT; observability =
+complete state reconstruction is EMERGENT, D_037); C) observability BOUNDARY — YES at
+the input level (the Z2-paired complex sector requirement, D_020). TWO-LEVEL
+CLASSIFICATION: observability as a CAPABILITY is EMERGENT (the readout, M_001;
+reconstruction, D_037); the OBSERVABLE-SECTOR REQUIREMENT (that states be
+readable/complex) is BOUNDARY (D_020). PROVE/REFUTE: a distinguishable universe must
+become observable — REFUTED (U1 is fully consistent: all physics exists unobserved;
+becoming observable requires the observable-sector boundary input). Counterexamples:
+'Difference alone produces observation' fails (U1 — states exist with no read;
+observation needs M_001); 'a distinguishable universe must be observed' fails (U1 is
+consistent: geometry/info/cosmology survive unobserved); 'observability is ontic'
+fails (observation adds realization + access; the ontic layer is observation-
+independent, M_006); 'removing observability destroys physics' fails (only
+measurement/realization disappears); 'Actualization necessarily produces observable
+outcomes' fails (ticks D_041 ≠ reads M_001). Falsification: an observable or
+structure that requires a read to exist (would refute U1); an ontic change
+(state/geometry/info) produced by the read; a derivation of complex-readability from
+Difference alone; an observable world without the actualization readout.
+Classification: geometry/information/cosmology DERIVED (from ρ — observation-
+independent); the measurement event EMERGENT (the actualization readout, M_001);
+observability as reconstruction EMERGENT (complete state readout, D_037); the
+observable-sector requirement BOUNDARY (Z2-paired complex sector, D_020);
+'a distinguishable universe must become observable' REFUTED (U1 is consistent). No
+new primitive; canonical AT unchanged.
+
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-
