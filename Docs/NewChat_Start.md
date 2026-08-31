@@ -2180,6 +2180,50 @@ rung); I_occ DERIVED (monotone, no extremum at 3); the observed ΩΛ = 0.6839 BO
 (observed anchor); cosmology→family coupling DERIVED (ΩΛ selects the rung). No new
 primitive; canonical AT unchanged.
 
+ResearchY-QG_014 (Cosmological Selection Audit, COMPLETE, tests 5/5 PASSED): is the
+observed cosmology itself a selector of the observable sector? Verdict: the observed
+cosmology is a CONSTRAINT — not a full selection mechanism and not a coincidence —
+that selects the 3-family sector among pairing-complete candidates. THE MEASUREMENT
+(family counts 2–5, pairing-complete octave rungs): 2 families (N=48) — I_occ =
+0.5244, ΩΛ = 0.4773, Ωm = 0.5227, q₀ = −0.2160, z_acc = 0.2224 (−20.7% off
+observed); 3 families (N=96) — I_occ = 0.7513, ΩΛ = 0.6839, Ωm = 0.3161, q₀ =
+−0.5258, z_acc = 0.6295 (0.0% — EXACT match to all four observables); 4 families
+(N=192) — ΩΛ = 0.8153 (+13.1%); 5 families (N=384) — ΩΛ = 0.8945 (+21.1%). WHICH
+FAMILY COUNT BEST MATCHES: 3 families (N=96) — uniquely, exactly, and to all four
+observables (ΩΛ, Ωm, q₀, z_acc all 0.0% deviation within the 0.12% precision); every
+other pairing-complete sector deviates by 13–21%. THE CLASSIFICATION: SELECTION
+(cosmology determines the sector) — CONDITIONAL YES (given the observed ΩΛ, the
+sector is fixed) but NOT full causal selection (the observed ΩΛ = 0.6839 is an
+input, not derived); CONSTRAINT (cosmology rules out alternatives) — YES,
+unconditionally (2/4/5 families falsified by 13–21% deviations); COINCIDENCE
+(accidental match) — NO (I_occ(96) = 0.7513 is EXACTLY the KL of [4,4,87] to
+uniform, QG228 — a deterministic chain). PRIMARY CLASSIFICATION: CONSTRAINT. THE
+DIRECTION OF EXPLANATION: FORWARD (theory → observation) — DERIVED and exact (N=96 →
+[4,4,87] → I_occ = 0.7513 → ΩΛ = I_occ/ln K = 0.6839 → observed, then Ωm, q₀, z_acc
+follow, QG_012); BACKWARD (observation → sector) — a CONDITIONAL SELECTOR, i.e., a
+constraint (observed ΩΛ → only pairing-complete rung matching is N=96 → 3 families,
+QG_013). The theory derives the cosmology from the sector (forward, DERIVED); the
+cosmology filters the sector from among candidates (backward, CONDITIONAL — not a
+causal mechanism, not a coincidence). Counterexamples: 'cosmology fully selects the
+family count' fails (the observed ΩΛ is an input — conditional, not causal);
+'cosmology is only a weak filter' fails (13–21% deviations — sharp, unconditional);
+'the ΩΛ match is a numerical coincidence' fails (I_occ(96) = 0.7513 is exactly the KL
+of [4,4,87]); '2 or 4 families could match a different observation' fails (no
+pairing-complete sector other than 96 reproduces any of the four observables);
+'cosmology plays no role in the sector' fails (the observed fractions uniquely
+identify the 3-family sector). Falsification: a pairing-complete sector ≠ 96
+reproducing ΩΛ = 0.6839 (or Ωm, q₀, z_acc); a different occupancy than [4,4,87]
+giving I_occ = 0.7513 with the same ΩΛ; a mechanism deriving the observed ΩΛ from a
+deeper principle (upgrading the constraint to full selection); a measured universe
+with ΩΛ = 0.4773, 0.8153, or 0.8945. Classification: the 3-family sector's match to
+the observed cosmology CONSTRAINT (filters all alternatives; 13–21% deviations
+falsified); the family count as a causal consequence of cosmology REFUTED (partial/
+conditional only — the observed ΩΛ is an input); the ΩΛ match being a coincidence
+REFUTED (I_occ(96) = 0.7513 is the exact KL of [4,4,87], QG228); the forward
+prediction (theory → cosmology) DERIVED (N=96 → I_occ → ΩΛ = 0.6839, exact); the
+observed ΩΛ as the input anchor BOUNDARY (QG_013). No new primitive; canonical AT
+unchanged.
+
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-
