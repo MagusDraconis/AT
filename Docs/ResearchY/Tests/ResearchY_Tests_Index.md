@@ -60,6 +60,7 @@ ResearchY-QG_009  ↔  Y_QG_009_Tests.cs     (AT.Tests/ResearchY/QG_GeometryBrid
 ResearchY-QG_010  ↔  Y_QG_010_Tests.cs     (AT.Tests/ResearchY/QG_GeometryBridge/)
 ResearchY-QG_011  ↔  Y_QG_011_Tests.cs     (AT.Tests/ResearchY/QG_GeometryBridge/)
 ResearchY-QG_012  ↔  Y_QG_012_Tests.cs     (AT.Tests/ResearchY/QG_GeometryBridge/)
+ResearchY-QG_013  ↔  Y_QG_013_Tests.cs     (AT.Tests/ResearchY/QG_GeometryBridge/)
 ResearchY-S_001  ↔  Y_S_001_Tests.cs       (AT.Tests/ResearchY/S_Synthesis/)
 ```
 
@@ -165,6 +166,7 @@ ResearchY-S_001  ↔  Y_S_001_Tests.cs       (AT.Tests/ResearchY/S_Synthesis/)
 | ResearchY-QG_010 (Observable Finiteness Audit) | `AT.Tests/ResearchY/QG_GeometryBridge/Y_QG_010_Tests.cs` | ACTIVE | 2026-08-30 | ✅ 5/5 PASSED — `Results/Y_QG_010_Result.md` |
 | ResearchY-QG_011 (Finite Event Principle Audit) | `AT.Tests/ResearchY/QG_GeometryBridge/Y_QG_011_Tests.cs` | ACTIVE | 2026-08-30 | ✅ 6/6 PASSED — `Results/Y_QG_011_Result.md` |
 | ResearchY-QG_012 (Distinguishability Cosmology Audit) | `AT.Tests/ResearchY/QG_GeometryBridge/Y_QG_012_Tests.cs` | ACTIVE | 2026-08-31 | ✅ 6/6 PASSED — `Results/Y_QG_012_Result.md` |
+| ResearchY-QG_013 (Three-Family Origin Audit) | `AT.Tests/ResearchY/QG_GeometryBridge/Y_QG_013_Tests.cs` | ACTIVE | 2026-08-31 | ✅ 6/6 PASSED — `Results/Y_QG_013_Result.md` |
 | ResearchY-S_001 (Post-V2.1 Theory Architecture Synthesis) | `AT.Tests/ResearchY/S_Synthesis/Y_S_001_Tests.cs` | ACTIVE | 2026-08-30 | ✅ 4/4 PASSED — `Results/Y_S_001_Result.md` |
 
 ## Result Summaries
