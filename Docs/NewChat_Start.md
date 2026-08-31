@@ -2104,6 +2104,39 @@ structure DERIVED; information/geometry/measurement/gravity DERIVED (from ρ);
 measurement event/observer/spacetime EMERGENT; canonical boundaries BOUNDARY. No new
 primitive; canonical AT unchanged.
 
+ResearchY-QG_012 (Distinguishability Cosmology Audit, COMPLETE, tests 6/6 PASSED): is
+ΩΛ uniquely privileged, or does distinguishability generate additional cosmological
+observables? Verdict: ΩΛ is PRIVILEGED BUT NOT UNIQUE — distinguishability generates a
+FINITE FAMILY of cosmological observables (option B): the density-fraction pair and its
+deterministic closure. THE INFORMATION OBJECTS: I_occ = 0.7513 nats (KL(ρ‖uniform),
+QG228), ln K = I_occ/ΩΛ = 1.098552 (derived convention, QG234), ΩΛ = 0.6839, Ωm =
+0.3161, the full ρ, and the realized entropy H = ln K − I_occ = 0.3473 nats with the
+identity I_occ + H = ln K (Ωm = H/ln K — the pair partitions the state-space size).
+THE FINITE FAMILY: ΩΛ = I_occ/ln K = 0.6839 (observed 0.12%), Ωm = 1 − ΩΛ = 0.3161
+(observed 0.26%), the ratio ΩΛ/Ωm = I_occ/(ln K − I_occ) = 2.1636, the current
+deceleration q₀ = Ωm/2 − ΩΛ = −0.5258, and the turnaround redshift
+z_acc = (2ΩΛ/Ωm)^(1/3) − 1 = 0.6295 — q₀ and z_acc are deterministic closures of the
+pair via the HOSTED FRW/ΛCDM relations (form CORRESPONDENCE, values DERIVED — two-level
+rule). NOT INFORMATION FUNCTIONS: H₀ (dimensionful — needs an anchor), σ₈ (needs the
+primordial amplitude A_s), BAO scale (needs the sound horizon Ωb/Ωr), structure growth
+(needs A_s, n_s, growth index), weak lensing S₈ (inherits σ₈), horizon scale (needs
+H₀), matter clustering (needs σ₈, P(k)) — so a FULL information cosmology (option C) is
+REFUTED. DETERMINATION: A) ΩΛ uniquely privileged — PARTIAL (primary but not alone);
+B) finite family of information observables — YES (pair + closures); C) full
+information cosmology — NO. DISAPPEAR IF DISTINGUISHABILITY REMOVED: the entire family
+(ΩΛ, Ωm, ratio, q₀, z_acc — I_occ undefined without the state space); the others
+survive only as un-predicted measured values. COMPARE vs ΛCDM: AT turns the two free
+density inputs (ΩΛ, Ωm) into PREDICTIONS and, via hosted FRW, q₀ and z_acc into DERIVED
+values with fixed numbers. PREDICTION RANKING: ΩΛ (0.12%), Ωm (0.26%), ratio 2.1636,
+q₀ = −0.526, z_acc = 0.630. Falsification: ΩΛ deviation beyond 0.12%; ratio deviating
+from I_occ/(ln K − I_occ); q₀ deviating from −0.526; z_acc deviating from 0.630; an
+amplitude/size/growth observable written as a pure function of the info objects.
+Classification: ΩΛ, Ωm, ratio PREDICTION (information-derived, observed); q₀/z_acc
+values DERIVED (closures via hosted FRW) with form CORRESPONDENCE; H₀/σ₈/BAO/growth/
+lensing/clustering BOUNDARY/calibration (no direct relation); the finite-family
+structure DERIVED. Refines NP_019: the pair is not alone — it generates a small closed
+observable set. No new primitive; canonical AT unchanged.
+
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-

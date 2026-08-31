@@ -106,6 +106,30 @@ public static class AtlasDataService
     public static IReadOnlyList<ResearchNewsModel> ResearchNews { get; } =
     [
         new(
+            "researchy-qg012-distinguishability-cosmology",
+            "ΩΛ Is Privileged but Not Alone: Distinguishability Yields a Finite Cosmological Family",
+            "ResearchY Milestone · QG_012 (V2.2 New Physics — Geometry Bridge)",
+            "Is ΩΛ the only distinguishability observable in cosmology? No. The density-fraction pair (ΩΛ, Ωm) generates a finite family — the ratio 2.1636, the deceleration q₀ = −0.526, and the turnaround redshift z_acc = 0.630 — while H₀, σ₈, BAO, growth, lensing, and clustering are not information functions.",
+            "QG_012 asks whether ΩΛ is uniquely privileged or whether distinguishability generates additional cosmological observables. Verdict: ΩΛ is PRIVILEGED BUT NOT UNIQUE — distinguishability generates a FINITE FAMILY of cosmological observables (option B): the density-fraction pair and its deterministic closure. THE INFORMATION OBJECTS: I_occ = 0.7513 nats (KL(ρ‖uniform), QG228), ln K = I_occ/ΩΛ = 1.098552 (derived convention, QG234), ΩΛ = 0.6839, Ωm = 0.3161, the full ρ, and the realized entropy H = ln K − I_occ = 0.3473 nats with the identity I_occ + H = ln K (Ωm = H/ln K — the pair partitions the state-space size). THE FINITE FAMILY: ΩΛ = I_occ/ln K = 0.6839 (observed 0.12%), Ωm = 1 − ΩΛ = 0.3161 (observed 0.26%), the ratio ΩΛ/Ωm = I_occ/(ln K − I_occ) = 2.1636, the current deceleration q₀ = Ωm/2 − ΩΛ = −0.5258, and the turnaround redshift z_acc = (2ΩΛ/Ωm)^(1/3) − 1 = 0.6295 — q₀ and z_acc are deterministic closures of the pair via the HOSTED FRW/ΛCDM relations (form CORRESPONDENCE, values DERIVED — two-level rule). NOT INFORMATION FUNCTIONS: H₀ (dimensionful — needs an anchor), σ₈ (needs the primordial amplitude A_s), BAO scale (needs the sound horizon Ωb/Ωr), structure growth (needs A_s, n_s, growth index), weak lensing S₈ (inherits σ₈), horizon scale (needs H₀), matter clustering (needs σ₈, P(k)) — so a FULL information cosmology (option C) is REFUTED. DETERMINATION: A) ΩΛ uniquely privileged — PARTIAL (primary but not alone); B) finite family of information observables — YES (pair + closures); C) full information cosmology — NO. DISAPPEAR IF DISTINGUISHABILITY REMOVED: the entire family (ΩΛ, Ωm, ratio, q₀, z_acc — I_occ undefined without the state space); the others survive only as un-predicted measured values. COMPARE vs ΛCDM: AT turns the two free density inputs (ΩΛ, Ωm) into PREDICTIONS and, via hosted FRW, q₀ and z_acc into DERIVED values with fixed numbers. PREDICTION RANKING: ΩΛ (0.12%), Ωm (0.26%), ratio 2.1636, q₀ = −0.526, z_acc = 0.630. Falsification: ΩΛ deviation beyond 0.12%; ratio deviating from I_occ/(ln K − I_occ); q₀ deviating from −0.526; z_acc deviating from 0.630; an amplitude/size/growth observable written as a pure function of the info objects. Classification: ΩΛ, Ωm, ratio PREDICTION (information-derived, observed); q₀/z_acc values DERIVED (closures via hosted FRW) with form CORRESPONDENCE; H₀/σ₈/BAO/growth/lensing/clustering BOUNDARY/calibration (no direct relation); the finite-family structure DERIVED. Refines NP_019: the pair is not alone — it generates a small closed observable set. No new primitive; canonical AT unchanged.",
+            "For non-experts: the theory derives the dark-energy fraction (ΩΛ = 0.6839) and the matter fraction (Ωm = 0.3161) from the information content of its state space. This audit asks whether those two numbers are the WHOLE story — and finds they are not quite: they are two members of a small, closed family. From the pair alone you can compute how fast cosmic expansion is decelerating right now (q₀ ≈ −0.53 — negative, meaning acceleration) and the redshift at which expansion switched from deceleration to acceleration (z ≈ 0.63). Those are not new free numbers — they are forced consequences of the pair, expressed in the standard language of cosmology. But the family ends there: the expansion rate itself (H₀), the clumpiness of matter (σ₈), the scale of sound waves in the early plasma (BAO), and the growth of structure are NOT determined by the information — they need additional physical inputs. So the information predicts a small, complete set, not the whole cosmos.",
+            "ΩΛ is privileged but not alone — the pair generates a finite family: ratio 2.1636, q₀ = −0.526, z_acc = 0.630.",
+            "“The information fixes the fractions — and the fractions fix a small, closed sky.”",
+            true,
+            [
+                new("ResearchY-NP_019", "INFORMATION COSMOLOGY AUDIT",
+                    "Established the density-fraction pair — QG_012 refines it into a finite family.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_019.md"),
+                new("ResearchY-NP_018", "DISTINGUISHABILITY OBSERVABLE AUDIT",
+                    "Distinguishability generates direct observables — the pair and its closures.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_018.md"),
+                new("AT-QG_228", "INFORMATION ORIGIN",
+                    "I_occ = KL(ρ‖uniform) = 0.7513 nats — the density feeding the family.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/Research/ATQG_228.md"),
+                new("AT-QG_234", "COSMOLOGICAL FRACTIONS",
+                    "ΩΛ = I_occ/ln K = 0.6839 — the primary member of the family.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/Research/ATQG_234.md"),
+            ]),
+        new(
             "researchy-s001-post-v21-architecture",
             "The Architecture of AT after V2.1: One Object — the Count Density ρ",
             "ResearchY Milestone · S_001 (V2.2 New Physics — Architecture Synthesis)",
