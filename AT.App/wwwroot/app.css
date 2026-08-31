@@ -88,6 +88,8 @@ a { color: inherit; }
 .badge-drawn { color: #E57373; border-color: #E57373; background: rgba(229,115,115,0.12); }
 .badge-open { color: #FF9800; border-color: #FF9800; background: rgba(255,152,0,0.12); }
 .badge-falsified { color: #E57373; border-color: #E57373; background: rgba(229,115,115,0.12); }
+.badge-emergent { color: #4DD0E1; border-color: #4DD0E1; background: rgba(77,208,225,0.12); }
+.badge-boundary { color: #FFB74D; border-color: #FFB74D; background: rgba(255,183,77,0.12); }
 .badge-imported, .badge-partial, .badge-neutral { color: #90A4AE; border-color: #90A4AE; background: rgba(144,164,174,0.12); }
 /* Theory-book badge variants */
 .badge-compatible { color: #64B5F6; border-color: #64B5F6; background: rgba(100,181,246,0.12); }

@@ -133,6 +133,8 @@
         ClassificationKind.Falsified => "#E57373",
         ClassificationKind.Imported => "#90A4AE",
         ClassificationKind.Partial => "#90A4AE",
+        ClassificationKind.Emergent => "#4DD0E1",
+        ClassificationKind.Boundary => "#FFB74D",
         _ => "#90A4AE"
     };
 
@@ -144,6 +146,8 @@
         ClassificationKind.Falsified => "FALSIFIED",
         ClassificationKind.Imported => "IMPORTED",
         ClassificationKind.Partial => "PARTIAL",
+        ClassificationKind.Emergent => "EMERGENT",
+        ClassificationKind.Boundary => "BOUNDARY",
         _ => k.ToString().ToUpperInvariant()
     };
 }

@@ -14,6 +14,8 @@
         ClassificationKind.Falsified => "FALSIFIED",
         ClassificationKind.Imported => "IMPORTED",
         ClassificationKind.Partial => "PARTIAL",
+        ClassificationKind.Emergent => "EMERGENT",
+        ClassificationKind.Boundary => "BOUNDARY",
         _ => Kind.ToString().ToUpperInvariant()
     };
 
@@ -25,6 +27,8 @@
         ClassificationKind.Falsified => "badge-falsified",
         ClassificationKind.Imported => "badge-imported",
         ClassificationKind.Partial => "badge-partial",
+        ClassificationKind.Emergent => "badge-emergent",
+        ClassificationKind.Boundary => "badge-boundary",
         _ => "badge-neutral"
     };
 }

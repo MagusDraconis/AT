@@ -7,5 +7,7 @@ public enum ClassificationKind
     Drawn,
     Falsified,
     Imported,
-    Partial
+    Partial,
+    Emergent,
+    Boundary
 }

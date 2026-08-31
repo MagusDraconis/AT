@@ -25,12 +25,12 @@ public static class AtlasDataService
 
     public static IReadOnlyList<KeyDiscoveryModel> KeyDiscoveries { get; } =
     [
-        new("U(1) from the circle", "Phase lives on S¹; its isometry group is U(1).", ClassificationKind.Derived),
-        new("Schrödinger from reversibility", "i∂_t ψ = L_Q ψ follows from norm conservation.", ClassificationKind.Derived),
-        new("3+1 from complexity", "The unique dimension satisfying five independent constraints.", ClassificationKind.Derived),
-        new("The continuum limits", "L_Q → −∇² and BDG → □, each controlled and tested.", ClassificationKind.Derived),
-        new("Koide Q = 2/3", "Real, predictive, RG-stable — and underivable.", ClassificationKind.RealUnderived),
-        new("The open door", "The internal-3 node; G4; the discriminating prediction.", ClassificationKind.Partial),
+        new("Difference = Distinguishability", "The act of telling states apart IS the state space — 95 distinct states (D_039).", ClassificationKind.Derived),
+        new("The count density ρ bridges everything", "Information I = KL(ρ‖uniform) and geometry g = ρ^(2/d)η are two faces of the same normalized count (QG_001).", ClassificationKind.Derived),
+        new("ΩΛ from information", "ΩΛ = I_occ/ln K = 0.6839 — the observed dark-energy fraction, matched to 0.12% (QG234).", ClassificationKind.Derived),
+        new("Geometry is the measure-preserving metric", "The unique conformal metric with √(−g) = ρ ⟹ k = 2/d — spacetime from the count (QG207, QG_005).", ClassificationKind.Derived),
+        new("Measurement reveals, never creates", "One event reads both quadratures, gains log₂95 bits, and conserves information by redistribution (M_005).", ClassificationKind.Emergent),
+        new("Observability selects the finite", "One actualization event carries finite information — the observable state space is finite by construction (QG_010).", ClassificationKind.Boundary),
     ];
 
     public static IReadOnlyList<StoryChapterModel> StoryChapters { get; } =
@@ -53,6 +53,18 @@ public static class AtlasDataService
         new("AT v1.0", "Release",
             "Two primitives plus one number. READY AS A FOUNDATION MONOGRAPH.",
             "bi-rocket-takeoff", "cyan"),
+        new("D96 Program", "From foundations to numbers",
+            "N=96 spectral geometry: couplings, masses, mixings, gravity, cosmology — each with a cited phase and a measured comparison (QG128–QG244).",
+            "bi-graph-up-arrow", "green"),
+        new("V2.0", "The monograph",
+            "The canonical chain Difference → Actualization → Spectrum → Physics; QM, the SM and GR hosted; the prediction registry locked (P1/P2/P3).",
+            "bi-journal-text", "blue"),
+        new("V2.1", "The origin program",
+            "The ResearchY audits: N=96 derived from the observable sector, the complex state, reciprocity, su(2) compact-form, the five-item boundary set (D_020–D_045, R_001).",
+            "bi-diagram-3", "amber"),
+        new("V2.2", "New physics & the ρ bridge",
+            "Measurement chain (M), lever & coupling audits (NP), and the geometry bridge (QG): one object ρ with an information face and a geometric face; ΩΛ = 0.6839; O(2) doublets; horizon bookkeeping.",
+            "bi-boxes", "orange"),
     ];
 
     public static IReadOnlyList<DerivationNodeModel> DerivationRoots { get; } = BuildDerivationGraph();
