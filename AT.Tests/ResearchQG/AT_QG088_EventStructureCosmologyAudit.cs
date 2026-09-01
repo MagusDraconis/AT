@@ -2,7 +2,6 @@ using System.Globalization;
 using System.Text;
 using AT.Core.ResearchQG;
 using AT.Tests.Shared;
-using Xunit.Abstractions;
 
 namespace AT.Tests.ResearchQG;
 

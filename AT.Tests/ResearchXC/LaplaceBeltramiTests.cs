@@ -3,7 +3,6 @@ using System.Text;
 using MathNet.Numerics.LinearAlgebra;
 using AT.Core.Temporal;
 using AT.Tests.Shared;
-using Xunit.Abstractions;
 
 namespace AT.Tests.ResearchXC;
 

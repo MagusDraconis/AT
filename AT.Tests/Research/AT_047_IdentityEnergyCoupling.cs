@@ -3,7 +3,6 @@ using System.Globalization;
 using System.Text;
 using AT.Core.Resonance.Kuramoto;
 using AT.Tests.Shared;
-using Xunit.Abstractions;
 
 namespace AT.Tests.Research;
 
@@ -26,6 +25,7 @@ public class AT_047_IdentityEnergyCoupling : ResearchTestBase
     [Fact]
     public void AT_047_Run()
     {
+        SlowResearchGate.SkipUnlessSlowRequested("AT-047 heavy Kuramoto simulation");
         var orig = Thread.CurrentThread.CurrentCulture;
         Thread.CurrentThread.CurrentCulture = CultureInfo.InvariantCulture;
         try { RunTest(); }

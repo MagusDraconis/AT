@@ -1,6 +1,4 @@
-using System.Globalization;using System.Text;using AT.Core.ResearchDATA;using AT.Tests.Shared;using Xunit.Abstractions;
-
-namespace AT.Tests.ResearchDATA;
+using System.Globalization;using System.Text;using AT.Core.ResearchDATA;using AT.Tests.Shared;namespace AT.Tests.ResearchDATA;
 public class AT_DATA009_HighZRarSystematicsAudit:ResearchTestBase{
     public AT_DATA009_HighZRarSystematicsAudit(ITestOutputHelper o):base(o){}
     [Fact]public void DATA009_Run(){

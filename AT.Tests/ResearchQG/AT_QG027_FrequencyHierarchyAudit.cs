@@ -1,6 +1,4 @@
-using System.Globalization;using System.Text;using AT.Core.ResearchQG;using AT.Tests.Shared;using Xunit.Abstractions;
-
-namespace AT.Tests.ResearchQG;
+using System.Globalization;using System.Text;using AT.Core.ResearchQG;using AT.Tests.Shared;namespace AT.Tests.ResearchQG;
 public class AT_QG027_FrequencyHierarchyAudit:ResearchTestBase{
     public AT_QG027_FrequencyHierarchyAudit(ITestOutputHelper o):base(o){}
     [Fact]public void QG027_Run(){

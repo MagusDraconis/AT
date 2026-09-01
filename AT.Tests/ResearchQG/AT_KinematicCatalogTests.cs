@@ -2,7 +2,6 @@ using System.Globalization;
 using System.Text;
 using AT.Core.FitsAnalysis;
 using AT.Tests.Shared;
-using Xunit.Abstractions;
 
 namespace AT.Tests.ResearchQG;
 
@@ -13,6 +12,7 @@ public class AT_KinematicCatalogTests : ResearchTestBase
     [Fact]
     public void Kmos3D_KinematicCandidateCatalog()
     {
+        FitsDataGate.SkipUnlessFitsData();
         Thread.CurrentThread.CurrentCulture = CultureInfo.InvariantCulture;
         string dataDir = LocateDir("Data", "FitsData");
         Assert.True(Directory.Exists(dataDir), $"FITS data directory not found: {dataDir}");

@@ -1,6 +1,4 @@
-using System.Globalization;using System.Text;using AT.Core.ResearchQG;using AT.Tests.Shared;using Xunit.Abstractions;
-
-namespace AT.Tests.ResearchQG;
+using System.Globalization;using System.Text;using AT.Core.ResearchQG;using AT.Tests.Shared;namespace AT.Tests.ResearchQG;
 public class AT_QG039a_KoideArchitectureAudit:ResearchTestBase{
     public AT_QG039a_KoideArchitectureAudit(ITestOutputHelper o):base(o){}
     [Fact]public void QG039a_Run(){

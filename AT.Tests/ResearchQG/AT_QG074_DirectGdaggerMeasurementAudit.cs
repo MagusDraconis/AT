@@ -3,7 +3,6 @@ using System.Text;
 using AT.Core.FitsAnalysis;
 using AT.Core.ResearchQG;
 using AT.Tests.Shared;
-using Xunit.Abstractions;
 
 namespace AT.Tests.ResearchQG;
 
@@ -14,6 +13,7 @@ public class AT_QG074_DirectGdaggerMeasurementAudit : ResearchTestBase
     [Fact]
     public void QG074_DirectGdaggerMeasurement()
     {
+        FitsDataGate.SkipUnlessFitsData();
         Thread.CurrentThread.CurrentCulture = CultureInfo.InvariantCulture;
         string dataDir = LocateDir("Data");
         string fitsDir = Path.Combine(dataDir, "FitsData");

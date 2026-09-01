@@ -1,4 +1,4 @@
 Model,chi2,AIC,BIC
-AT  (g† ∝ H(z)),1059.5,1059.5,1059.5
-MOND (g† = constant),687.8,689.8,691.7
-NULL (g† = local, no evolution),1841.4,1841.4,1841.4
+AT  (g† ∝ H(z)),0.0,0.0,0.0
+MOND (g† = constant),0.0,2.0,0.0
+NULL (g† = local, no evolution),0.0,0.0,NaN

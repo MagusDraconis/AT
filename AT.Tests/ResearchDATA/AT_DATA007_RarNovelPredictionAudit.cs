@@ -1,6 +1,4 @@
-using System.Globalization;using System.Text;using AT.Core.ResearchDATA;using AT.Tests.Shared;using Xunit.Abstractions;
-
-namespace AT.Tests.ResearchDATA;
+using System.Globalization;using System.Text;using AT.Core.ResearchDATA;using AT.Tests.Shared;namespace AT.Tests.ResearchDATA;
 public class AT_DATA007_RarNovelPredictionAudit:ResearchTestBase{
     public AT_DATA007_RarNovelPredictionAudit(ITestOutputHelper o):base(o){}
     [Fact]public void DATA007_Run(){

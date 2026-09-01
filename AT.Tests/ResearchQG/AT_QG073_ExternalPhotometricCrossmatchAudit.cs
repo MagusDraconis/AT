@@ -3,7 +3,6 @@ using System.Text;
 using AT.Core.FitsAnalysis;
 using AT.Core.ResearchQG;
 using AT.Tests.Shared;
-using Xunit.Abstractions;
 
 namespace AT.Tests.ResearchQG;
 
@@ -14,6 +13,7 @@ public class AT_QG073_ExternalPhotometricCrossmatchAudit : ResearchTestBase
     [Fact]
     public void QG073_ExternalPhotometricCrossmatch()
     {
+        FitsDataGate.SkipUnlessFitsData();
         Thread.CurrentThread.CurrentCulture = CultureInfo.InvariantCulture;
         string dataDir = LocateDir("Data");
         string fitsDir = Path.Combine(dataDir, "FitsData");

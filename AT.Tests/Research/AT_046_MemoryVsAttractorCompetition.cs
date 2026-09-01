@@ -3,7 +3,6 @@ using System.Globalization;
 using System.Text;
 using AT.Core.Resonance.Kuramoto;
 using AT.Tests.Shared;
-using Xunit.Abstractions;
 
 namespace AT.Tests.Research;
 
@@ -20,6 +19,7 @@ public class AT_046_MemoryVsAttractorCompetition : ResearchTestBase
     [Fact]
     public void AT_046_Run()
     {
+        SlowResearchGate.SkipUnlessSlowRequested("AT-046 heavy Kuramoto simulation");
         var orig = Thread.CurrentThread.CurrentCulture;
         Thread.CurrentThread.CurrentCulture = CultureInfo.InvariantCulture;
         try { RunTest(); }

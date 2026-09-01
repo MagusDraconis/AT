@@ -3,7 +3,6 @@ using System.Text;
 using AT.Core.Resonance.Kuramoto;
 using AT.Core.Temporal;
 using AT.Tests.Shared;
-using Xunit.Abstractions;
 
 namespace AT.Tests.Research;
 
@@ -41,6 +40,7 @@ public class AT_011_CondensateStabilityAnalysis : ResearchTestBase
     [Fact]
     public void AT_011_RunStabilityAnalysis()
     {
+        SlowResearchGate.SkipUnlessSlowRequested("AT-011 heavy Kuramoto simulation");
         var originalCulture = Thread.CurrentThread.CurrentCulture;
         Thread.CurrentThread.CurrentCulture = CultureInfo.InvariantCulture;
 

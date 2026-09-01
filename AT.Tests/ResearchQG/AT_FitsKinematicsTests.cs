@@ -1,6 +1,4 @@
-using System.Globalization;using System.Text;using AT.Core.FitsAnalysis;using AT.Tests.Shared;using Xunit.Abstractions;
-
-namespace AT.Tests.ResearchQG;
+using System.Globalization;using System.Text;using AT.Core.FitsAnalysis;using AT.Tests.Shared;namespace AT.Tests.ResearchQG;
 
 public class AT_FitsKinematicsTests : ResearchTestBase
 {
@@ -9,6 +7,7 @@ public class AT_FitsKinematicsTests : ResearchTestBase
     [Fact]
     public void Fits_Kmos3D_COS4_25850_H_Kinematics()
     {
+        FitsDataGate.SkipUnlessFitsData();
         Thread.CurrentThread.CurrentCulture = CultureInfo.InvariantCulture;
         string path = LocateFitsFile("Data", "FitsData", "COS4_25850_H.fits");
         Assert.True(File.Exists(path), $"FITS file not found: {path}");

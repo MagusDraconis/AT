@@ -3,7 +3,6 @@ using System.Text;
 using AT.Core.ResearchQG;
 using AT.Core.ResearchXC;
 using AT.Tests.Shared;
-using Xunit.Abstractions;
 
 namespace AT.Tests.ResearchXC;
 

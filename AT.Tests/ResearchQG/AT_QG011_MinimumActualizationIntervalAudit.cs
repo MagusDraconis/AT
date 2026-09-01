@@ -1,6 +1,4 @@
-using System.Globalization;using System.Text;using AT.Core.ResearchQG;using AT.Tests.Shared;using Xunit.Abstractions;
-
-namespace AT.Tests.ResearchQG;
+using System.Globalization;using System.Text;using AT.Core.ResearchQG;using AT.Tests.Shared;namespace AT.Tests.ResearchQG;
 public class AT_QG011_MinimumActualizationIntervalAudit:ResearchTestBase{
     public AT_QG011_MinimumActualizationIntervalAudit(ITestOutputHelper o):base(o){}
     [Fact]public void QG011_Run(){

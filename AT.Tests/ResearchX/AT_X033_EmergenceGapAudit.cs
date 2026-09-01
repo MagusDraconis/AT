@@ -2,7 +2,6 @@ using System.Globalization;
 using System.Text;
 using AT.Core.Research;
 using AT.Tests.Shared;
-using Xunit.Abstractions;
 using static AT.Core.Research.ConceptMappingMatrix;
 
 namespace AT.Tests.ResearchX;

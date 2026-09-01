@@ -2,7 +2,6 @@ using System.Globalization;
 using System.Numerics;
 using System.Text;
 using AT.Tests.Shared;
-using Xunit.Abstractions;
 
 namespace AT.Tests.ResearchY.NP_NewPhysics;
 

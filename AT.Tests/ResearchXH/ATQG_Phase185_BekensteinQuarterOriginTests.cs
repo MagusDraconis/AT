@@ -2,7 +2,6 @@ using System.Text;
 using AT.Core.ResearchXH;
 using AT.Tests.Shared;
 using Xunit;
-using Xunit.Abstractions;
 
 namespace AT.Tests.ResearchXH;
 

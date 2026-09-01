@@ -1,6 +1,4 @@
-using System.Globalization;using System.Text;using AT.Core.ResearchQM;using AT.Tests.Shared;using Xunit.Abstractions;
-
-namespace AT.Tests.ResearchQM;
+using System.Globalization;using System.Text;using AT.Core.ResearchQM;using AT.Tests.Shared;namespace AT.Tests.ResearchQM;
 public class AT_QM005_QuantumNovelPredictionAudit:ResearchTestBase{
     public AT_QM005_QuantumNovelPredictionAudit(ITestOutputHelper o):base(o){}
     [Fact]public void QM005_Run(){

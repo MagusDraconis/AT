@@ -1,6 +1,4 @@
-using System.Globalization;using System.Text;using AT.Core.ResearchDATA;using AT.Tests.Shared;using Xunit.Abstractions;
-
-namespace AT.Tests.ResearchDATA;
+using System.Globalization;using System.Text;using AT.Core.ResearchDATA;using AT.Tests.Shared;namespace AT.Tests.ResearchDATA;
 public class AT_DATA010_HighZRarExecutionPlan:ResearchTestBase{
     public AT_DATA010_HighZRarExecutionPlan(ITestOutputHelper o):base(o){}
     [Fact]public void DATA010_Run(){

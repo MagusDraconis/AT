@@ -1,6 +1,5 @@
 using AT.Tests.Shared;
 using Xunit;
-using Xunit.Abstractions;
 
 namespace AT.Tests.Research.Template;
 

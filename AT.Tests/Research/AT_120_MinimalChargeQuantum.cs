@@ -4,7 +4,6 @@ using AT.Core.Resonance.Kuramoto;
 using AT.Core.Resonance.Theory;
 using AT.Core.Temporal;
 using AT.Tests.Shared;
-using Xunit.Abstractions;
 
 namespace AT.Tests.Research;
 

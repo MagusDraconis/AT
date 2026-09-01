@@ -2,7 +2,6 @@ using System.Globalization;
 using System.Text;
 using AT.Core.FitsAnalysis;
 using AT.Tests.Shared;
-using Xunit.Abstractions;
 
 namespace AT.Tests.ResearchQG;
 
@@ -13,6 +12,7 @@ public class AT_HighZRARTests : ResearchTestBase
     [Fact]
     public void HighZ_RARPilotSample()
     {
+        FitsDataGate.SkipUnlessFitsData();
         Thread.CurrentThread.CurrentCulture = CultureInfo.InvariantCulture;
         string dataDir = LocateDir("Data", "FitsData");
         Assert.True(Directory.Exists(dataDir), $"FITS data directory not found: {dataDir}");

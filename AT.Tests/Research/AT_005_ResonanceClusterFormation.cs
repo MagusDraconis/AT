@@ -4,7 +4,6 @@ using AT.Core.Resonance;
 using AT.Core.Temporal;
 using AT.Core.TemporalField;
 using AT.Tests.Shared;
-using Xunit.Abstractions;
 
 namespace AT.Tests.Research;
 
