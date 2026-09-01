@@ -2608,6 +2608,49 @@ only). Refines NP_022: the mirror pairs are downgraded to CORRESPONDENCE; the
 octave-block structure adds the stronger √(6/7) prediction. No new primitive;
 canonical AT unchanged.
 
+ResearchY-NP_025 (K=6 Uniqueness Audit, COMPLETE, tests 6/6 PASSED): is the exact
+prediction ω(√12)/ω(√14) = √(6/7) unique to K=6, or does the same protected
+inter-block structure appear in other circulant rings C_N(±1..±K)? Verdict: NOT
+unique to K=6 — √(6/7) is the K=6 member of the universal K-family √(K/(K+1)), an
+N-INDEPENDENT protected inter-block ratio of every circulant ring C_N(±1..±K) with
+K ≥ 2 (whenever the non-doublet blocks appear). THE SCAN (K=1..12 at N=96, verified):
+every K ≥ 2 except K=10 produces non-doublet blocks; each ring's protected
+inter-block ratio equals √(K/(K+1)) EXACTLY — K=2: √(2/3) = 0.81650, K=3: √(3/4) =
+0.86603, K=4: √(4/5) = 0.89443, K=5: √(5/6) = 0.91287, K=6: √(6/7) = 0.92582, K=7:
+√(7/8) = 0.93541, K=8: √(8/9) = 0.94281, K=9: √(9/10) = 0.94868, K=11: √(11/12) =
+0.95743, K=12: √(12/13) = 0.96077 (K=1 is generic all-2-fold; K=10 at N=96 is
+size-suppressed all-2-fold but the family exists at other N). N-DEPENDENCE (verified):
+the ratio is a PURE K-PROPERTY, N-INDEPENDENT — K=6 gives √(6/7) at N=48, 96, and 192
+whenever the blocks appear (blocks absent at N=64/128); the multiplicities are
+N/K-DEPENDENT (K=6 gives (6,5) at N=96 but the blocks are absent at N=64/128).
+MULTIPLICITY STRUCTURE (verified): the top multiplicities vary with (N,K) — K=6 gives
+(6,5); K=7 gives (8,7); K=8 gives (10,9) at N=96. DETERMINATION: A) unique to K=6 —
+NO (every K ≥ 2 has the protected structure); B) family of K-values — YES (the
+universal √(K/(K+1)) family); C) generic phenomenon — PARTIAL (the ratio family is
+generic to ALL circulant rings; the specific value √(6/7) is the K=6 member).
+STRONGER DISCRIMINATOR: the ratio √(K/(K+1)) is strictly increasing (INJECTIVE) in K,
+so the measured ratio UNIQUELY identifies K (the coupling order) — verified 0.81650
+→ 0.96077 monotone; the multiplicities are the N-discriminator (N/K-dependent). Note:
+multiplicities alone do NOT distinguish K (K=5 and K=6 share the (6,5) pair at N=96);
+the ratio does (√(5/6) ≠ √(6/7)). The full observable signature is {ratio,
+multiplicities} which identifies (N,K) uniquely. ELEVATION: √(6/7) is not a
+D96-specific prediction but a general K-family law — this ELEVATES the prediction
+priority (general law) and REFINES NP_024 (which stated √(6/7) as K=6-specific).
+Counterexamples: '√(6/7) is unique to K=6' fails (every K ≥ 2 gives √(K/(K+1)) — K=5
+gives √(5/6), K=7 gives √(7/8), verified); 'the multiplicities distinguish K' fails
+(K=5 and K=6 share (6,5) at N=96); 'the ratio is N-dependent' fails (N-independent —
+K=6 gives √(6/7) at N=48, 96, 192); 'K=10 breaks the family' fails (size suppression
+at N=96, family exists at other N); 'a generic ring shows no blocks' fails (every
+K ≥ 2 ring has non-doublet blocks except size-suppressed cases). Falsification: a
+circulant ring C_N(±1..±K) with a different protected ratio; a ring where the ratio
+changes with N; two K values with the same ratio (not injective); the same
+multiplicity pair from different (N,K). Classification: the √(K/(K+1)) family DERIVED
+(universal, N-independent); √(6/7) as the K=6 member DERIVED (NOT unique to K=6); the
+ratio as the K-discriminator DERIVED (injective in K); the multiplicities as the
+N-discriminator DERIVED (N/K-dependent); 'unique to K=6' FALSIFIED (refined to a
+K-family); the {ratio, multiplicities} signature PREDICTION (identifies (N,K)
+uniquely). No new primitive; canonical AT unchanged.
+
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-
