@@ -2651,6 +2651,54 @@ N-discriminator DERIVED (N/K-dependent); 'unique to K=6' FALSIFIED (refined to a
 K-family); the {ratio, multiplicities} signature PREDICTION (identifies (N,K)
 uniquely). No new primitive; canonical AT unchanged.
 
+ResearchY-NP_026 (Protected Block Universality Audit, COMPLETE, tests 8/8 PASSED): is
+R_K = √(K/(K+1)) a theorem of all circulant-ring spectra, or only of the canonical
+nearest-neighbour class C_N(±1..±K)? Verdict: R_K is a theorem of the CANONICAL
+NEAREST-NEIGHBOUR CIRCULANT class (determination B) — NOT of all circulants, NOT of
+general graphs, NOT an approximation. THE THEOREM (canonical class): the top two
+non-doublet blocks sit at λ = 2K and λ = 2K+2 with ratio √(2K/(2K+2)) = √(K/(K+1)),
+for every K ≥ 2 (K=2: √(2/3) = 0.81650; …; K=6: √(6/7) = 0.92582; …; K=8: √(8/9) =
+0.94281). SCAN 1 — ALTERNATIVE CIRCULANT GENERATOR SETS (verified): the canonical
+±{1..±6} gives (14,6),(12,5) with √(6/7); the odd set ±{1,3,5,7,9,11} gives ONE
+22-fold block at λ=12 with no partner (ratio absent); the powers-of-2 set
+±{1,2,4,8,16,32} gives no non-doublet blocks — the ratio is SPECIFIC to the
+consecutive generator set. SCAN 2 — WEIGHTED LINKS (verified): linear decay w=1/s,
+exponential decay e^(−0.3s), and random w ∈ [0.5,1.5] all DESTROY the blocks — the
+exact λ=2K/2K+2 structure requires ALL couplings equal to 1. SCAN 3 — RANDOM
+PERTURBATIONS (verified): ±5% weight perturbations destroy the blocks in every trial
+— the ratio is NOT perturbatively protected against weight variation (unlike the
+mirror pairs, which are reflection-protected, NP_023). SCAN 4 — MISSING LINKS
+(verified): dropping ±1 gives a single block; dropping ±2 gives (13,4),(9,4) with
+ratio 0.83205 ≠ √(6/7); dropping ±3 gives (12,12),(8,3) with ratio 0.81650 ≠ √(6/7)
+— the full consecutive set is required. SCAN 5 — NON-CIRCULANT GRAPHS (verified): the
+path P_12 has at most 2-fold eigenvalues (no non-doublet block); the complete graph
+K_12 has a single N-fold block (not a protected ratio); a random graph (p=0.4) has
+all-distinct eigenvalues — no protected ratio anywhere. THE ANALYTIC ORIGIN
+(verified): λ_{N/4} = 2·Σ(1−cos(πs/2)) = 2K+2 (period-4 sequence 1,2,1,0 sum 4 per
+period; K=6 → 14) and λ_{N/6} = 2·Σ(1−cos(πs/3)) = 2K (K=6 → 12), giving the ratio
+√(12/14) = √(6/7); requires the consecutive uniform generator set AND N divisible by
+4 and 6. DETERMINATION: A) exact theorem of all circulants — NO (alternative
+generator sets fail); B) circulant-only theorem (canonical nearest-neighbour class) —
+YES; C) approximation — NO (exact within the class). TRUE MATHEMATICAL ORIGIN: the
+consecutive uniform generator set (nearest-neighbour circulant) with the two special
+modes k=N/4 and k=N/6. NOTABLE: the block ratio is WEIGHT-FRAGILE (destroyed by any
+weight variation or missing link), whereas the mirror-pair degeneracy is
+reflection-PROTECTED (NP_023) — two distinct protection classes. Counterexamples:
+'the ratio holds for all circulants' fails (odd and powers-of-2 generator sets fail,
+verified); 'the ratio survives weight variation' fails (any non-uniform weight
+destroys the blocks); 'the ratio survives missing links' fails (dropping ±1/±2/±3
+changes or destroys it); 'non-circulant graphs show it' fails (path/complete/random
+show no protected ratio); 'the ratio is an approximation' fails (it is exact within
+the canonical class). Falsification: a consecutive uniform ring C_N(±1..±K) with a
+different top-block ratio; a canonical ring where λ_{N/4} ≠ 2K+2 or λ_{N/6} ≠ 2K; a
+weighted ring still giving √(K/(K+1)); a missing-link ring still giving √(K/(K+1)).
+Classification: R_K for the canonical nearest-neighbour class DERIVED (exact
+theorem); same ratio for alternative generator sets FALSIFIED; for
+weighted/perturbed/missing-link rings FALSIFIED; for non-circulant graphs FALSIFIED;
+origin (consecutive uniform set + modes N/4, N/6) DERIVED (analytic); mirror-pair
+protection (reflection) vs block-ratio protection (weight-fragile) — DIFFERENT
+protection classes. No new primitive; canonical AT unchanged.
+
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-
