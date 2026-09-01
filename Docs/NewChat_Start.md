@@ -2446,6 +2446,118 @@ with form CORRESPONDENCE; H₀/σ₈/BAO/growth/lensing/horizon/clustering BOUND
 non-information inputs); the finite-family structure DERIVED. No new primitive;
 canonical AT unchanged.
 
+ResearchY-QG_018 (Information-Cosmology Closure Audit, COMPLETE, tests 6/6 PASSED,
+V2.3 closure block task 1): do ΩΛ, Ωm, I_occ, KL(ρ‖uniform), finite observability,
+and actualization-information form a mathematically CLOSED chain? Verdict: YES —
+closure score 90% (9/10) within the canonical finite-N regime. THE DEPENDENCY DAG:
+Difference [BOUNDARY] → Distinguishability (D_039, DERIVED) → finite state space
+(QG_008, BOUNDARY) → Actualization/tick (QG_011, BOUNDARY) → spectrum λ_k =
+2−2cos(2πk/N), N=96 (D_041, DERIVED) → count density ρ_k = count_k/total, Σρ = 1
+(QG194/QG216, DERIVED) → I_occ = KL(ρ‖uniform) = 0.7513 (QG228, DERIVED; uniform
+reference BOUNDARY QG_009) → ln K = 1.0986 (QG234/QG227, DERIVED) → ΩΛ = I_occ/ln K
+= 0.6839 (DERIVED, observed), Ωm = (ln K − I_occ)/ln K = 0.3161 (DERIVED, observed),
+q₀ = Ωm/2 − ΩΛ = −0.5258 (DERIVED, hosted FRW form), z_acc = (2ΩΛ/Ωm)^(1/3) − 1 =
+0.6295 (DERIVED, hosted FRW form); finite observability (QG_010, EMERGENT), finite
+events (QG_011, EMERGENT), tick discreteness (QG_016, BOUNDARY). REMAINING IMPORTED
+ASSUMPTIONS (the exact boundary set, 8 items): {Difference, η} (B1), {Z2-paired
+complex sector} (B2), {3 octave families} (B3), {SU(2) gauge + j=1/2} (B4), {v, m_e}
+(B5), {state-space finiteness} (B6, QG_008), {uniform reference} (B7, QG_009), {tick
+discreteness} (B8, QG_016). Every other link is DERIVED or EMERGENT; the chain
+introduces NO new assumption. HIDDEN-CIRCULARITY SEARCH (verified): the chain is
+acyclic (no link points backward); ln K = I_occ/ΩΛ is a bookkeeping identity, NOT
+circular — ln K is independently fixed by the initial uniform state (QG227, K ≈ 3);
+ΩΛ is observed, not fed back into ρ's construction (QG_013/014: constraint, not
+selection). ALTERNATIVE-INFORMATION-MEASURE TEST (verified): ONLY KL reproduces the
+observed ΩΛ = 0.6839 — squared Hellinger 0.4211 → ΩΛ 0.3833, total variation (½)
+0.5825 → 0.5302, chi-squared 1.5266 → 1.3896 all fail. The KL choice is EMERGENT
+(the unique measure consistent with observation among the tested family), not forced
+by the chain and not arbitrary. FINITE-N vs CONVERGENT-INFINITE-N: finite N=96 — KL
+defined, ΩΛ = 0.6839, CLOSED; convergent-infinite N (geometric ρ) — normalizes
+(Σ(1−r)r^k = 1) and has finite entropy (QG_009) but NO normalized uniform reference,
+so I_occ/ΩΛ are ILL-DEFINED — the closure FAILS at the uniform reference (requires
+B6/B7). CLOSURE SCORE: 9/10 = 90% (acyclic DAG ✓, no circularity ✓, only canonical
+boundaries ✓, KL unique match ✓, finite-N closure ✓, infinite-N closure ✗ — excluded
+by B6/B7, observed ΩΛ reproduced ✓, observed Ωm reproduced ✓, q₀/z_acc consistent ✓,
+measurement/information conservation ✓). THE EXACT REMAINING BOUNDARY SET: the
+canonical eight (B1–B8) including the three structural (state-space finiteness
+QG_008, uniform reference QG_009, tick discreteness QG_016). Counterexamples: 'the
+chain has hidden circularity' fails (verified acyclic; ln K fixed by QG227); 'any
+divergence gives ΩΛ' fails (Hellinger/TV/χ² all fail); 'the closure survives infinite
+N' fails (no normalized uniform measure, QG_009); 'the KL choice is arbitrary' fails
+(unique match — EMERGENT); 'a new boundary is introduced' fails (only canonical
+B1–B8). Falsification: a missing link, a new boundary, or a hidden circular
+dependency; another f-divergence reproducing ΩΛ on the canonical ρ; a normalized
+uniform measure on a countable infinite set; a derived quantity requiring a
+non-canonical input. Classification: chain closure DERIVED (acyclic, complete); the
+KL choice EMERGENT (unique match); ΩΛ/Ωm/ratio/q₀/z_acc DERIVED (observed/
+consistent); the three structural boundaries BOUNDARY (QG_008/009/016); the canonical
+input boundaries BOUNDARY (B1–B5); closure score 90%. No new primitive; canonical AT
+unchanged.
+
+ResearchY-NP_023 (O(2) Mirror Search, COMPLETE, tests 6/6 PASSED, V2.3 closure block
+task 2; hostile audit): does the AT spectral framework contain an OVERLOOKED O(2)
+symmetry, mirror branch, or degeneracy? Verdict: the D96 spectrum carries
+per-frequency O(2) doublets, and the FULL degeneracy structure is {mirror pairs} ∪
+{octave-ladder blocks} — both structural, symmetry-protected, with ZERO accidental
+degeneracies outside them. THE D96 SPECTRUM (verified): N=96 (K=6 ring, λ_k = Σ_s
+2(1−cos(2πks/N))), 95 positive modes, 44 DISTINCT eigenvalues, max multiplicity 6,
+ALL eigenvalues with mult ≥ 2 (complete pairing, D_035), ZERO with mult 1, ZERO Z2
+mirror mismatches (λ_k = λ_{N−k} exact). THE SEARCH RESULTS: O(2)-like continuous
+rotations — the only continuous rotation is WITHIN each 2D {cos, sin} eigenspace
+(the per-mode phase SO(2)); NO rotation MIXES distinct frequencies. HIDDEN MIRROR
+SECTORS — every eigenvalue class is exactly the mirror pair {k, N−k}; no hidden
+sector. ACCIDENTAL DEGENERACIES — ZERO outside the structural blocks: the 20
+non-mirror degenerate pairs are ALL in the octave-ladder blocks (λ=12 five-fold
+{16,32,48,64,80}; λ=14 six-fold {8,24,40,56,72,88}), produced by the octave
+structure (D_030) and giving the canonical [4,4,87] multiplicity. PARITY/REFLECTION
+SUBGROUPS — the Z2 generator is k ↔ N−k; the automorphism group (k → ak mod N, a ∈
+units(96), 32 elements) acts by DISCRETE permutations within gcd classes (11
+classes: gcd 1→32 modes, 2→16, 3→16, 4→8, 6→8, 8→4, 12→4, 16→2, 24→2, 32→2, 48→1)
+and NEVER mixes classes — a discrete group action, NOT a continuous O(2). DUAL
+DESCRIPTIONS — the {cos, sin}_k and {cos, sin}_{N−k} pairs span the SAME 2D
+eigenspace (linearly related), i.e., the SAME O(2) irrep, not two distinct
+descriptions. REPRESENTATION DECOMPOSITION (verified): 95 = 42 × 2D O(2)-irreps (84
+modes, the mirror pairs) + the degenerate octave blocks (5-fold λ=12, 6-fold λ=14);
+every mode sits in a 2D {cos, sin} eigenspace; the self-conjugate k=48 (sin(πn)=0)
+sits in the 5-fold λ=12 block, satisfying complex observability (D_035).
+PERTURBATIVE STABILITY (verified): a reflection-preserving perturbation keeps every
+mirror pair degenerate (max split ~1e−14); only a reflection-BREAKING perturbation
+splits a pair — the degeneracy is symmetry-protected, generic in the ring class.
+DETERMINATION: full symmetry (the Z2 mirror + octave blocks are the FULL degeneracy
+structure) — YES (DERIVED); remnant of a larger O(2) — NO (there is no larger O(2)
+to be a remnant of; zero accidental degeneracies, no continuous inter-mode
+rotation); emergent approximation — NO (|Δλ| = 0 exact); accidental — NO
+(symmetry-forced, perturbatively protected). STRONGEST POSITIVE EVIDENCE: the exact,
+symmetry-protected per-frequency O(2) doublet structure (42 × 2D irreps; |Δλ| = 0 to
+machine precision). STRONGEST NO-GO THEOREM: there is NO degeneracy outside the
+structural {mirror pairs} ∪ {octave-ladder blocks} — zero accidental degeneracies, no
+continuous inter-mode rotation, automorphisms confined to gcd classes; hence no
+larger O(2) exists and the Z2 is not a remnant. EXACT FRONTIER RECOMMENDATION FOR
+V2.3: (1) primary — measure a C96-ring resonance spectrum to test the exact
+mirror-pair degeneracy (NP_015/016; |Δλ| > 0, a missing pair, or a triplet falsifies
+it); (2) secondary — extend the representation decomposition to higher-K rings (K =
+8, 10, 12) to test whether the 'full-symmetry O(2) doublet + no larger O(2)'
+structure is generic or N/K-specific; (3) tertiary — verify the octave-ladder blocks
+are likewise symmetry-protected under the octave-doubling automorphism.
+Counterexamples: 'a larger O(2) mixes frequencies' fails (zero accidental
+degeneracies, no continuous inter-mode rotation); 'the Z2 is a remnant of a broken
+O(2)' fails (no larger O(2) present); 'the mirror pairs are an approximation' fails
+(|Δλ| = 0 exactly, perturbatively protected); 'the degeneracy is accidental' fails
+(symmetry-forced by the ring reflection + octave structure); 'an accidental
+degeneracy exists' fails (every non-mirror pair is octave-structural). Falsification:
+a larger O(2) with a continuous inter-mode rotation; an accidental degeneracy
+OUTSIDE the mirror + octave classes; a reflection-preserving perturbation that splits
+a pair; an octave-ladder partner with a different eigenvalue; a measured C96-ring
+spectrum WITHOUT exact mirror pairs; a mode with multiplicity 1 (isolated singlet).
+Classification: per-frequency O(2) doublets DERIVED (spectral, D_021/D_035); the Z2
+mirror as a full-symmetry component DERIVED (exact, symmetry-protected); the
+octave-ladder blocks (λ=12 5-fold, λ=14 6-fold) DERIVED (octave structure, D_030);
+accidental degeneracies FALSIFIED (every non-mirror pair is octave-structural); a
+larger O(2) mixing frequencies FALSIFIED (no continuous inter-mode rotation);
+remnant-of-larger-O(2) reading FALSIFIED; emergent-approximation reading FALSIFIED
+(exact); accidental reading FALSIFIED (symmetry-forced). No new primitive; canonical
+AT unchanged.
+
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-
