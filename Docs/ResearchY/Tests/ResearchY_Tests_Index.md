@@ -68,6 +68,7 @@ ResearchY-QG_017  ↔  Y_QG_017_Tests.cs     (AT.Tests/ResearchY/QG_GeometryBrid
 ResearchY-QG_018  ↔  Y_QG_018_Tests.cs     (AT.Tests/ResearchY/QG_GeometryBridge/)
 ResearchY-NP_022  ↔  Y_NP_022_Tests.cs     (AT.Tests/ResearchY/NP_NewPhysics/)
 ResearchY-NP_023  ↔  Y_NP_023_Tests.cs     (AT.Tests/ResearchY/NP_NewPhysics/)
+ResearchY-NP_024  ↔  Y_NP_024_Tests.cs     (AT.Tests/ResearchY/NP_NewPhysics/)
 ResearchY-S_001  ↔  Y_S_001_Tests.cs       (AT.Tests/ResearchY/S_Synthesis/)
 ```
 
@@ -180,6 +181,7 @@ ResearchY-S_001  ↔  Y_S_001_Tests.cs       (AT.Tests/ResearchY/S_Synthesis/)
 | ResearchY-QG_017 (Distinguishability Cosmology Extension Audit) | `AT.Tests/ResearchY/QG_GeometryBridge/Y_QG_017_Tests.cs` | ACTIVE | 2026-08-31 | ✅ 6/6 PASSED — `Results/Y_QG_017_Result.md` |
 | ResearchY-QG_018 (Information-Cosmology Closure Audit) | `AT.Tests/ResearchY/QG_GeometryBridge/Y_QG_018_Tests.cs` | ACTIVE | 2026-09-01 | ✅ 6/6 PASSED — `Results/Y_QG_018_Result.md` |
 | ResearchY-NP_023 (O(2) Mirror Search) | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_023_Tests.cs` | ACTIVE | 2026-09-01 | ✅ 6/6 PASSED — `Results/Y_NP_023_Result.md` |
+| ResearchY-NP_024 (O(2) Mirror-Pair Physical Prediction Audit) | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_024_Tests.cs` | ACTIVE | 2026-09-01 | ✅ 7/7 PASSED — `Results/Y_NP_024_Result.md` |
 | ResearchY-NP_022 (Unique Physics Prediction Search) | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_022_Tests.cs` | ACTIVE | 2026-08-31 | ✅ 7/7 PASSED — `Results/Y_NP_022_Result.md` |
 | ResearchY-S_001 (Post-V2.1 Theory Architecture Synthesis) | `AT.Tests/ResearchY/S_Synthesis/Y_S_001_Tests.cs` | ACTIVE | 2026-08-30 | ✅ 4/4 PASSED — `Results/Y_S_001_Result.md` |
 

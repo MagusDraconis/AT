@@ -118,6 +118,7 @@
 | ResearchY-QG_018 | Information-Cosmology Closure Audit | `QG_GeometryBridge/ResearchY-QG_018.md` | `AT.Tests/ResearchY/QG_GeometryBridge/Y_QG_018_Tests.cs` (6/6 ✅) | COMPLETE |
 | ResearchY-NP_022 | Unique Physics Prediction Search | `NP_NewPhysics/ResearchY-NP_022.md` | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_022_Tests.cs` (7/7 ✅) | COMPLETE |
 | ResearchY-NP_023 | O(2) Mirror Search | `NP_NewPhysics/ResearchY-NP_023.md` | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_023_Tests.cs` (6/6 ✅) | COMPLETE |
+| ResearchY-NP_024 | O(2) Mirror-Pair Physical Prediction Audit | `NP_NewPhysics/ResearchY-NP_024.md` | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_024_Tests.cs` (7/7 ✅) | COMPLETE |
 | ResearchY-S_001 | Post-V2.1 Theory Architecture Synthesis | `S_Synthesis/ResearchY-S_001.md` | `AT.Tests/ResearchY/S_Synthesis/Y_S_001_Tests.cs` (4/4 ✅) | COMPLETE |
 | ResearchY-M_001 | Measurement Origin Audit | `M_Measurement/ResearchY-M_001.md` | `AT.Tests/ResearchY/M_Measurement/Y_M_001_Tests.cs` (7/7 ✅) | COMPLETE |
 | ResearchY-M_002 | Measurement Disturbance Audit | `M_Measurement/ResearchY-M_002.md` | `AT.Tests/ResearchY/M_Measurement/Y_M_002_Tests.cs` (7/7 ✅) | COMPLETE |
