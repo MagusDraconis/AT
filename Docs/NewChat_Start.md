@@ -2901,6 +2901,44 @@ closed DERIVED structural layer, and thermodynamics is an ADDED state-occupation
 over the structural modes — a DERIVED architectural fact, not a division into two
 primitive pillars. No new primitive; canonical AT unchanged.
 
+ResearchY-NP_032 (Thermal-N Search Audit, COMPLETE, tests 9/9 PASSED): is D96
+specifically a structure attractor, while another D_N acts as a thermal attractor? Does
+structure N ≠ thermal N? Verdict: FALSIFIED as a size dichotomy — there is NO
+thermal-attractor ring size in the canonical circulant family C_N(±1..±6), N = 8..512.
+THE SCAN (N = 8..512, verified): (1) UV BEHAVIOR — the band edge ω_max → the continuum
+3.9851 for ALL N (N = 96 → 3.9796, N = 512 → 3.9849, N = 1024/4096 → 3.9851): the cap
+is a property of the coupling set (±1..±6), not of N, so no ring can host a Wien tail
+above the band; (2) DOS SCALING — λ_k ≈ (2πk/N)²·91 for small k gives ω_k ≈ (2π√91/N)·k,
+an EXACT linear dispersion (ratio ω_k/(c·k) = 1.0000 at N = 4096, k = 1..4), hence
+cumulative N(ω) ∝ ω (1D chain, exponent ≈ 1.06–1.09); every ring with span ≥ 8 (392
+rings) has low-DOS exponent exactly 1.00 (first two octaves each hold 4 modes →
+N(4ω₁)/N(2ω₁) = 2.00), while a 2D/3D thermal cavity needs 4.0/8.0 — NO ring in 8..512
+reaches it; (3) OCCUPANCY HIERARCHY — top-heavy at every N (first octave holds 4 modes
+for 478/505 N values; D96's [4,4,87] is one member of a 61-ring family in the 3-family
+span window [4,8), N = 60..120, with N = 92..100 sharing the (4,4,X) structure);
+(4) THERMAL-OCCUPANCY COMPATIBILITY — the Bose occupation n = 1/(e^x − 1) needs a
+decaying rate μ < 1, but the canonical branching μ = 2 is N-independent (NP_030): no
+ring size changes the branching. COUNTEREXAMPLES: 'a larger N becomes a blackbody
+cavity' fails (adding sites adds modes BELOW the fixed cap — ω_max = 3.9851 for all N);
+'some N gives ω² DOS' fails (linear dispersion ω ∝ k, exponent ≈ 1); 'the occupancy
+flattens at some N' fails (bottom-sparse top-dense at every N); 'D96 is a thermal
+attractor' fails (FALSIFIED in NP_028); 'a different coupling class is needed' fails (a
+new geometry, not a D_N — out of scope). FALSIFICATION: a ring size N = 8..512 with
+low-frequency cumulative DOS exponent ≥ 2.5; a ring with ω_max above the continuum
+3.9851; a ring whose high-octave occupancy does not dominate; an N-dependence of the
+canonical branching rate. Classification: 'another D_N is a thermal attractor' (N =
+8..512, C_N(±1..±6)) FALSIFIED (no ω² DOS, no exponential tail, no thermal occupancy at
+any N); structure N = 96 as the structure-sector base DERIVED (octave/family window,
+occupancy [4,4,87], NP_031); 1D linear low-frequency DOS of every ring (ω_k ∝ k)
+DERIVED (analytic: λ_k ≈ (2πk/N)²·91); N-independent UV cap (ω_max → 3.9851) DERIVED
+(property of the coupling set ±1..±6); top-heavy occupancy at every N DERIVED
+(structural; anti-thermal direction, NP_028); temperature scale T BOUNDARY (unchanged,
+NP_027/028/030); thermodynamics as an added occupancy layer DERIVED (NP_031) — NOT an
+N-selection; 'structure N ≠ thermal N' as a size dichotomy FALSIFIED (no thermal N
+exists — the split is a LAYER split). D96 is specifically a structure attractor, but
+there is no thermal N: thermodynamics is not an N-property of the canonical family, it
+is the added occupancy layer of NP_031. No new primitive; canonical AT unchanged.
+
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-

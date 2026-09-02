@@ -126,6 +126,7 @@
 | ResearchY-NP_029 | ħ Necessity Audit | `NP_NewPhysics/ResearchY-NP_029.md` | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_029_Tests.cs` (8/8 ✅) | COMPLETE |
 | ResearchY-NP_030 | Temperature Origin Audit | `NP_NewPhysics/ResearchY-NP_030.md` | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_030_Tests.cs` (8/8 ✅) | COMPLETE |
 | ResearchY-NP_031 | Structure vs Thermodynamics Audit | `NP_NewPhysics/ResearchY-NP_031.md` | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_031_Tests.cs` (8/8 ✅) | COMPLETE |
+| ResearchY-NP_032 | Thermal-N Search Audit | `NP_NewPhysics/ResearchY-NP_032.md` | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_032_Tests.cs` (9/9 ✅) | COMPLETE |
 | ResearchY-S_001 | Post-V2.1 Theory Architecture Synthesis | `S_Synthesis/ResearchY-S_001.md` | `AT.Tests/ResearchY/S_Synthesis/Y_S_001_Tests.cs` (4/4 ✅) | COMPLETE |
 | ResearchY-M_001 | Measurement Origin Audit | `M_Measurement/ResearchY-M_001.md` | `AT.Tests/ResearchY/M_Measurement/Y_M_001_Tests.cs` (7/7 ✅) | COMPLETE |
 | ResearchY-M_002 | Measurement Disturbance Audit | `M_Measurement/ResearchY-M_002.md` | `AT.Tests/ResearchY/M_Measurement/Y_M_002_Tests.cs` (7/7 ✅) | COMPLETE |

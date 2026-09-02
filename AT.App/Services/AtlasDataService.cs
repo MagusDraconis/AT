@@ -106,6 +106,27 @@ public static class AtlasDataService
     public static IReadOnlyList<ResearchNewsModel> ResearchNews { get; } =
     [
         new(
+            "researchy-np032-thermal-n-search",
+            "There Is No Thermal Ring Size — D96 Is the Structure Attractor, and No D_N Is Thermal",
+            "ResearchY Milestone · NP_032 (V2.3 — Thermal-N Search Audit)",
+            "Scanning N = 8..512 of the circulant family C_N(±1..±6) finds NO thermal attractor. Every ring has the same hard UV cap (ω_max → 3.9851 for all N), the same 1D linear low-frequency DOS (exponent 1.00 — never the ω² of a thermal cavity), and top-heavy occupancy. D96 is the structure-sector base; thermodynamics is not an N-property of the family.",
+            "NP_032 asks whether D96 is specifically a structure attractor while another D_N acts as a thermal attractor. Verdict: FALSIFIED as a size dichotomy — there is NO thermal-attractor ring size in C_N(±1..±6), N = 8..512. THE SCAN (verified): (1) UV BEHAVIOR — ω_max → continuum 3.9851 for ALL N (96 → 3.9796, 512 → 3.9849, 1024/4096 → 3.9851): the cap is a property of the coupling set (±1..±6), not of N, so no ring can host a Wien tail above the band; (2) DOS SCALING — λ_k ≈ (2πk/N)²·91 gives ω_k ≈ (2π√91/N)·k, an EXACT linear dispersion (ratio 1.0000 at N = 4096), hence cumulative N(ω) ∝ ω; every ring with span ≥ 8 (392 rings) has low-DOS exponent exactly 1.00 (first two octaves each hold 4 modes), while a 2D/3D cavity needs 4.0/8.0 — no ring reaches it; (3) OCCUPANCY — top-heavy at every N (first octave = 4 modes for 478/505 N values); D96's [4,4,87] is one of 61 rings in the 3-family span window [4,8); (4) THERMAL-OCCUPANCY — Bose occupation needs μ < 1, but canonical μ = 2 is N-independent (NP_030). Classification: 'another D_N is a thermal attractor' FALSIFIED (no ω² DOS, no tail, no thermal occupancy at any N); structure N = 96 as structure base DERIVED; 1D linear DOS and N-independent UV cap DERIVED (analytic); temperature BOUNDARY; thermodynamics as an added occupancy layer DERIVED (NP_031) — NOT an N-selection; 'structure N ≠ thermal N' as a size dichotomy FALSIFIED (the split is a LAYER split). No new primitive; canonical AT unchanged.",
+            "For non-experts: earlier audits showed AT's 96-point structure is a 'structure' theory and that heat must be added as a separate occupation layer. This audit asks whether some OTHER ring size (a different number of points) might be the 'heat' attractor — a size that naturally behaves like a glowing blackbody. The scan checks every ring size from 8 to 512. The answer is no. Every ring size has exactly the same ceiling frequency — enlarging the ring adds more low notes but never raises the ceiling, so no size can ever produce the infinite high-frequency tail of a heat spectrum. Every ring also has the same kind of low-frequency spacing (a straight 1D ladder, never the smooth frequency-squared pile-up a glowing cavity needs), and every ring crams most of its modes into the top of its range — the opposite of heat, which spreads out. So no ring size is thermal. The 96-point structure is special for its STRUCTURE (three octaves, three families), not for heat. Heat remains an added layer over whichever ring — as the earlier audit concluded.",
+            "No ring size in the canonical family is thermal — D96 is the structure attractor and thermodynamics is an added layer, not an N-selection.",
+            "“No size of the ring can raise the ceiling.”",
+            true,
+            [
+                new("ResearchY-NP_031", "STRUCTURE VS THERMODYNAMICS AUDIT",
+                    "The layer split NP_032 confirms is NOT a size split.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_031.md"),
+                new("ResearchY-NP_028", "BLACKBODY RECONSTRUCTION AUDIT",
+                    "D96 itself FALSIFIED as thermal — NP_032 extends to every ring size.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_028.md"),
+                new("ResearchY-NP_026", "PROTECTED BLOCK UNIVERSALITY AUDIT",
+                    "The C_N(±1..±K) family whose sizes NP_032 scans.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_026.md"),
+            ]),
+        new(
             "researchy-np031-structure-thermodynamics",
             "AT Has One Derived Structural Layer — Thermodynamics Is an Added Occupation Law, Not a Second Sector",
             "ResearchY Milestone · NP_031 (V2.3 — Structure vs Thermodynamics Audit)",
