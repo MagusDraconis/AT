@@ -106,6 +106,27 @@ public static class AtlasDataService
     public static IReadOnlyList<ResearchNewsModel> ResearchNews { get; } =
     [
         new(
+            "researchy-np029-hbar-necessity",
+            "AT Does Not Need a Fundamental ħ — It Is Only the Frequency↔Energy Bridge",
+            "ResearchY Milestone · NP_029 (V2.3 — ħ Necessity Audit)",
+            "AT derives every mass and energy from the two anchors (v, m_e) times dimensionless D96 ratios — never invoking ħ. The canonical derivation chain contains no ħ constant. ħ as a fundamental is REFUTED; as the frequency↔energy dimensional bridge it is BOUNDARY (an SI unit-convention import, like c).",
+            "NP_029 asks whether AT requires a fundamental ħ at all, or whether ħ is merely the dimensional bridge between derived frequencies and measured energies. Verdict: AT does NOT require a fundamental ħ. Every derived observable — the dimensionless spectrum (span 6.40, ω₁=0.6216), the quark/lepton masses (m_u = m_e·Σ√m/√Σm² = 2.164 MeV, QG173), the Planck scale (M_Pl = v·A³ = 254.37·(95·44·87)³ = 1.2234e19 GeV, QG181), the lepton hierarchy (QG209), ΩΛ = 0.6839 (QG234), the gauge couplings (α_weak = 3/Σm, α_strong = 8/Σ√m) — is an anchor (m_e or v, in MeV/GeV) times a dimensionless D96 ratio, never invoking ħ. REMOVE ħ — WHAT BREAKS (verified): nothing — masses and the Planck scale compute identically without ħ, and the canonical ResearchY derivation chain (D_ResonanceStructure + NP_NewPhysics) contains no ħ constant; ħ appears only in legacy ResearchQG/ResearchDATA/ResearchXH analyzers comparing AT results to SI units (G in SI, H0 in Hz). ENERGY = FREQUENCY (verified): m_u/m_e = Σ√m/√Σm² = 4.2347 is a pure D96 ratio; in natural units E[GeV]=ω and AT's anchors are already GeV/MeV. VS THE ANCHOR LOGIC: v and m_e are irreducible physics anchors (D_012/D_013) fixing absolute scales; ħ fixes no AT scale, carries no D96 information, and never appears in the derived chain — its only roles are the SI conventions E=ħω and G=ħc/M_Pl² (D_007/D_041). COUNTEREXAMPLES: 'ħ is needed to derive the masses' fails (every mass is m_e/v × a dimensionless ratio); 'E=ħω makes ħ fundamental' fails (AT anchors energies in GeV/MeV directly); 'ħ carries D96 information' fails (its value matches no spectral number); 'ħ emerges from actualization' fails (no counting derivation yields a J·s constant); 'ħ is a physics anchor like v, m_e' fails (it sets no scale and never appears in the derived chain). FALSIFICATION: a derived observable changing when ħ is removed; a mass ratio ≠ a dimensionless D96 ratio; a derivation of an absolute scale needing ħ (not just J↔GeV). Classification: ħ as a fundamental constant of AT REFUTED; ħ as the frequency↔energy dimensional bridge BOUNDARY (SI unit-convention import, D_012 — like c); the derived ħ-free mass/energy chain DERIVED (anchors × dimensionless ratios); the dimensionless spectrum and frequency ratios DERIVED; v, m_e as irreducible physics anchors BOUNDARY (unchanged). No new primitive; canonical AT unchanged.",
+            "For non-experts: quantum physics uses a tiny constant, ħ, to convert between the frequency of a wave and the energy it carries. This audit asks whether AT — a theory built from a fixed 96-step resonance structure — actually needs that constant as something fundamental, or only as a unit-conversion factor. The answer: AT does not need it as a fundamental. Every mass or energy AT predicts is computed as a pure number from the 96-step structure, multiplied by one of two measured 'anchor' scales (the weak scale and the electron mass), stated directly in the standard energy units. ħ never appears in any of those derivations. It only shows up when someone wants to translate between Joules and electron-volts or between frequency and energy — a units bookkeeping job, exactly like the speed of light does for lengths. So ħ is real but not fundamental for AT: it is the bridge between frequencies and energies, not a source of any prediction.",
+            "ħ is not fundamental in AT — every derived mass and energy comes from the anchors times dimensionless ratios.",
+            "“No Planck constant in the Planck derivation.”",
+            true,
+            [
+                new("ResearchY-D_012", "MINIMAL ANCHOR AUDIT",
+                    "The two-anchor logic (v, m_e) that makes ħ unnecessary.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/D_ResonanceStructure/ResearchY-D_012.md"),
+                new("ResearchY-D_007", "PLANCK SCALE AUDIT",
+                    "M_Pl = v·A³ — derived without ħ (SI G imports c, ħ as BOUNDARY).",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/D_ResonanceStructure/ResearchY-D_007.md"),
+                new("ResearchY-NP_027", "PLANCK SPECTRUM EMERGENCE AUDIT",
+                    "The ℏ-quantization UV origin REFUTED for AT — same ħ-refutation theme.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_027.md"),
+            ]),
+        new(
             "researchy-np028-blackbody-reconstruction",
             "The D96 Spectrum Cannot Reproduce the Observed Blackbody, Even after Coarse-Graining",
             "ResearchY Milestone · NP_028 (V2.3 — Blackbody Reconstruction Audit)",

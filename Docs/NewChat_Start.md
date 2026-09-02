@@ -2769,6 +2769,38 @@ blackbody after coarse-graining FALSIFIED (top-heavy + truncated); temperature s
 BOUNDARY (cannot rescue the shape). The observed blackbody is NOT an emergent read of the
 D96 spectrum — hosted/correspondence content. No new primitive; canonical AT unchanged.
 
+ResearchY-NP_029 (ħ Necessity Audit, COMPLETE, tests 8/8 PASSED): does AT require a
+fundamental ħ at all, or is ħ merely the dimensional bridge between derived frequencies
+and measured energies? Verdict: AT does NOT require a fundamental ħ. Every derived
+observable — the dimensionless spectrum (span 6.40, ω₁ = 0.6216), the quark/lepton
+masses (m_u = m_e·Σ√m/√Σm² = 2.164 MeV, QG173), the Planck scale (M_Pl = v·A³ =
+254.37·(95·44·87)³ = 1.2234e19 GeV, QG181), the lepton hierarchy (QG209), ΩΛ =
+I_occ/ln K = 0.6839 (QG234), the gauge couplings (α_weak = 3/Σm, α_strong = 8/Σ√m) —
+is an anchor (m_e or v, in MeV/GeV) times a dimensionless D96 ratio, never invoking ħ.
+REMOVE ħ — WHAT BREAKS: nothing — the masses and Planck scale compute identically
+without ħ, and the canonical ResearchY derivation chain (D_ResonanceStructure +
+NP_NewPhysics) contains no ħ constant; ħ appears only in legacy ResearchQG/
+ResearchDATA/ResearchXH analyzers comparing AT results to SI units (G in SI, H0 in Hz).
+ENERGY = FREQUENCY: m_u/m_e = Σ√m/√Σm² = 64.0825/√229 = 4.2347 is a pure D96 ratio; in
+natural units E[GeV] = ω and AT's anchors are already GeV/MeV — energy-content ratios
+equal frequency ratios for all derived content. VS THE ANCHOR LOGIC: v and m_e are
+irreducible physics anchors (D_012/D_013) fixing absolute scales AT measures; ħ fixes no
+AT scale, carries no D96 information, and never appears in the derived chain — its only
+roles are the SI conventions E = ħω and G = ħc/M_Pl² (D_007/D_041). Counterexamples:
+'ħ is needed to derive the masses' fails (every mass is m_e/v × a dimensionless ratio);
+'E = ħω makes ħ fundamental' fails (AT anchors energies in GeV/MeV directly); 'ħ carries
+D96 information' fails (its value matches no spectral number); 'ħ emerges from
+actualization' fails (no counting derivation yields a J·s constant); 'ħ is a physics
+anchor like v, m_e' fails (it sets no scale and never appears in the derived chain).
+Falsification: a derived observable changing when ħ is removed; a mass ratio ≠ a
+dimensionless D96 ratio; a derivation of an absolute scale needing ħ (not just J↔GeV).
+Classification: ħ as a fundamental constant of AT REFUTED (removing it changes no
+derived observable); ħ as the frequency↔energy dimensional bridge BOUNDARY (an SI
+unit-convention import, D_012 — like c); the derived ħ-free mass/energy chain DERIVED
+(anchors × dimensionless ratios); the dimensionless spectrum and frequency ratios
+DERIVED; v, m_e as irreducible physics anchors BOUNDARY (D_012/D_013, unchanged). No new
+primitive; canonical AT unchanged.
+
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-
