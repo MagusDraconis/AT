@@ -106,6 +106,27 @@ public static class AtlasDataService
     public static IReadOnlyList<ResearchNewsModel> ResearchNews { get; } =
     [
         new(
+            "researchy-np033-d96-ensemble",
+            "An Ensemble of D96 Systems Generates Temperature and Bose Occupations — but Not the Blackbody",
+            "ResearchY Milestone · NP_033 (V2.3 — D96 Ensemble Audit)",
+            "Although a single D96 system has no temperature, an ENSEMBLE of D96 systems exchanging occupation DOES generate statistical temperature, Boltzmann weights, and Bose occupations (max-entropy over the D96 mode set: n_k=1/(e^βω_k−1) beats uniform/linear/bottom-heavy at fixed energy; ln(n/(1+n))=−βω exact; zeroth law holds for two-ring contact). But the observed blackbody still does NOT emerge — the ensemble thermalizes occupation over the FIXED top-heavy [4,4,87] mode set (bimodal octave energy at every T, Σω³/(e^ω−1)=120.7≠π⁴/15, no Wien tail).",
+            "NP_033 asks whether thermodynamic behavior can emerge from an ENSEMBLE of D96 systems even though a single D96 system has no temperature. Verdict: PARTIAL. THE FIVE STEPS (verified): (1) SINGLE D96 RING — no temperature (NP_030): one fixed configuration has no statistics. (2) TWO COUPLED D96 RINGS — zeroth law: total entropy peaks at equal split (equal β): S(50/50)=35.7306 > S(35/65)=35.3600 > S(20/80)=34.1459. (3) OCCUPATION EXCHANGE → MAX-ENTROPY: over the D96 mode set with conserved total energy the max-entropy occupation is Bose n_k=1/(e^(βω_k)−1). (4) EMERGENT STATISTICS: Bose strictly dominates uniform/linear/bottom-heavy at the same energy (S=17.8653 > 15.7097 > 15.2101 > 4.03); the Boltzmann identity ln(n/(1+n))=−βω holds EXACTLY; the microcanonical occupation marginal is geometric P(n+1)/P(n)=Q/(Q+M−2). (5) MODE-SET OBSTRUCTION: the ensemble thermalizes OCCUPATION over the FIXED D96 mode set ([4,4,87], band [0.622,3.98]) — octave energy is bimodal at every T (cold→94% low octave, hot→91% top octave), Σω³/(e^ω−1)=120.70≠π⁴/15=6.494, no Wien tail. Classification: statistical temperature/Boltzmann/Bose EMERGENT from the ensemble (occupation exchange + entropy maximization, standard mechanism); two-D96 zeroth law DERIVED; single-D96 temperature REFUTED (NP_030); observed blackbody FALSIFIED (mode-set obstruction persists); hypothesis 'structure single-D96 / thermodynamics ensemble-D96' CONFIRMED in its statistical part. Thermodynamics is ensemble-D96 for the occupation statistics but not for the radiation spectrum. No new primitive; canonical AT unchanged.",
+            "For non-experts: earlier audits found a single AT structure has no temperature. This audit asks: if you take many of them and let them share 'occupation' (how much each level is used), does heat appear? The answer is yes for the statistics: when many D96 systems swap occupation with the total fixed, the most-likely sharing follows the exact rules of statistical mechanics — the Bose occupation formula and temperature emerge by counting possibilities, with no new ingredient. Even the 'zeroth law' (two systems in contact settle on one shared temperature) holds. But there is a catch: this statistical heat attaches to AT's fixed set of levels, which is crowded at the top and stops at a hard ceiling. So the smooth glow-curve of a real hot body — which needs levels spread smoothly over all frequencies — still does not come out. Heat's arithmetic emerges from the many-system ensemble; the observed radiation would need a different level structure, which is outside what the ensemble can supply.",
+            "Heat's statistics emerge from many D96 systems sharing occupation; the blackbody spectrum still does not, because the level set is fixed.",
+            "“One ring has no temperature; many rings talking to each other invent one.”",
+            true,
+            [
+                new("ResearchY-NP_030", "TEMPERATURE ORIGIN AUDIT",
+                    "Single-D96 has no temperature — the premise NP_033's ensemble overcomes statistically.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_030.md"),
+                new("ResearchY-NP_031", "STRUCTURE VS THERMODYNAMICS AUDIT",
+                    "Thermo as an added occupancy layer — NP_033 shows the layer IS the ensemble statistics.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_031.md"),
+                new("ResearchY-NP_028", "BLACKBODY RECONSTRUCTION AUDIT",
+                    "The mode-set obstruction that survives even the ensemble occupation.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_028.md"),
+            ]),
+        new(
             "researchy-np032-thermal-n-search",
             "There Is No Thermal Ring Size — D96 Is the Structure Attractor, and No D_N Is Thermal",
             "ResearchY Milestone · NP_032 (V2.3 — Thermal-N Search Audit)",

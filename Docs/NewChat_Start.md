@@ -2939,6 +2939,58 @@ exists — the split is a LAYER split). D96 is specifically a structure attracto
 there is no thermal N: thermodynamics is not an N-property of the canonical family, it
 is the added occupancy layer of NP_031. No new primitive; canonical AT unchanged.
 
+ResearchY-NP_033 (D96 Ensemble Audit, COMPLETE, tests 9/9 PASSED): can thermodynamic
+behavior emerge from an ENSEMBLE of D96 systems even though a single D96 system has no
+temperature? Do Temperature, Boltzmann weights, or Bose-like occupations emerge
+statistically? Verdict: PARTIAL — the ensemble DOES generate statistical temperature,
+Boltzmann weights, and Bose-like occupations (occupation exchange + entropy maximization
+over the D96 mode set), but the observed blackbody radiation does NOT emerge (mode-set
+obstruction persists). THE FIVE STEPS (verified): (1) SINGLE D96 RING — no temperature
+(NP_030): one fixed configuration has no statistical temperature; the canonical
+branching μ = 2 is anti-thermal. (2) TWO COUPLED D96 RINGS — zeroth law: total entropy
+peaks at equal split (equal β): S(50/50) = 35.7306 > S(35/65) = 35.3600 > S(20/80) =
+34.1459 — two D96 systems in occupation contact equilibrate to a common temperature.
+(3) OCCUPATION EXCHANGE → MAX-ENTROPY: over the D96 mode set with conserved total
+energy, the max-entropy occupation is the Bose distribution n_k = 1/(e^(βω_k) − 1).
+(4) EMERGENT STATISTICS: the Bose occupation strictly dominates uniform/linear/bottom-
+heavy alternatives at the same energy (S_Bose(1) = 17.8653 > 15.7097 > 15.2101 > 4.03);
+the Boltzmann identity ln(n/(1+n)) = −βω holds EXACTLY over the D96 modes; the
+microcanonical occupation-exchange marginal is geometric, P(n+1)/P(n) = Q/(Q+M−2)
+exactly (verified M=5,Q=3 → 0.5; M=10,Q=10 → 0.5556; M=100,Q=100 → 0.5051); the
+energy-temperature relation is monotone (E(0.5) = 73.05, E(1.0) = 12.59, E(2.0) =
+1.13). (5) MODE-SET OBSTRUCTION — the ensemble thermalizes OCCUPATION over the FIXED
+D96 mode set ([4,4,87] in [0.622, 3.98]); it cannot change the frequencies: octave
+energy is BIMODAL at every T (cold T=0.3 → 94% in the low octave; hot T=10 → 91% in
+the top octave; no T gives a broad mid-band Planck shape), Σ_k ω_k³/(e^(ω_k)−1) =
+120.70 ≠ π⁴/15 = 6.494, and no modes exist above ω_max = 3.98 for a Wien tail.
+COUNTEREXAMPLES: 'a single D96 ring is thermal' fails (one configuration has no
+statistics, NP_030); 'the ensemble changes the mode set' fails (it changes the
+occupation, not the frequencies); 'the emergent Bose occupation gives the blackbody'
+fails (thermal occupation × non-thermal DOS: octave energy bimodal, Σω³/(e^ω−1) =
+120.70 ≠ π⁴/15, no Wien tail); 'some ensemble T matches Planck' fails (T rescales
+occupation but cannot create a ω² DOS or modes beyond 3.98); 'ensemble thermalization
+is a new physics mechanism' fails (it is the standard statistical max-entropy mechanism
+applied to the D96 level set). FALSIFICATION: a non-geometric max-entropy occupation;
+an entropy split where S_A+S_B does not peak at equal β; an ensemble temperature at
+which the D96 octave energy matches the Planck shape over a ω² DOS with a Wien tail; a
+single-ring observable depending on a temperature. Classification: temperature,
+Boltzmann weights, and Bose occupations as STATISTICAL ensemble objects EMERGENT
+(occupation exchange + entropy maximization — standard mechanism, no new primitive);
+two-D96 thermal contact (zeroth law, equal β) DERIVED; Bose occupation n_k =
+1/(e^(βω_k) − 1) as the max-entropy occupation of the D96 modes EMERGENT; Boltzmann
+weight e^(−βω_k) over D96 modes EMERGENT; single-D96 temperature REFUTED (unchanged,
+NP_030); OBSERVED blackbody radiation from the D96 ensemble FALSIFIED (mode-set
+obstruction persists: top-heavy [4,4,87], Σω³/(e^ω−1) = 120.70 ≠ π⁴/15, no Wien tail);
+hypothesis (structure single-D96 / thermodynamics ensemble-D96) CONFIRMED in its
+statistical part — ensemble-D96 generates thermal occupation statistics; temperature as
+SI scale BOUNDARY (unchanged, NP_027/031). An ensemble of D96 systems DOES generate
+thermodynamic behavior statistically — temperature (β = ∂S/∂E), Boltzmann weights
+(e^(−βω_k)), and Bose occupations all emerge from occupation exchange plus entropy
+maximization, exactly as in standard statistical mechanics — but the observed blackbody
+is NOT reproduced because the ensemble cannot change the D96 mode set. 'Thermodynamics
+is ensemble-D96' is confirmed for the occupation statistics and refuted for the
+radiation spectrum. No new primitive; canonical AT unchanged.
+
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-
