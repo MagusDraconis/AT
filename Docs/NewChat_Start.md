@@ -2801,6 +2801,55 @@ unit-convention import, D_012 — like c); the derived ħ-free mass/energy chain
 DERIVED; v, m_e as irreducible physics anchors BOUNDARY (D_012/D_013, unchanged). No new
 primitive; canonical AT unchanged.
 
+ResearchY-NP_030 (Temperature Origin Audit, COMPLETE, tests 8/8 PASSED): what object in
+AT plays the role of thermodynamic temperature? Does any canonical object generate a
+mode-occupation law? Verdict: NO canonical AT object plays the thermodynamic-temperature
+role — temperature is NOT DERIVED and NOT EMERGENT in AT. THE FOUR CANDIDATES (each
+tested): (1) ACTUALIZATION DENSITY — canonical branching (A_003) is growth: Mu = 2,
+GenerationCount = 8, ρ_{k+1} = 2·ρ_k, S = Σ2^k = 255; ρ₇/ρ₀ = 128 (population GROWS
+128× across generations), ln(ρ_{k+1}/ρ_k) = ln μ = +0.6931 > 0 per step — a would-be
+β = ln(1/μ) = −0.6931 < 0 (population inversion, anti-thermal); a thermal occupation
+must decay. (2) OCCUPANCY DISORDER — the octave record [4, 4, 87] (95 positive modes)
+is top-heavy: occupancy rises 21.75× into the top octave (87/4), the anti-thermal
+direction (a thermal spectrum thins at high ω, D96 crowds). (3) INFORMATION DENSITY —
+I_occ = KL(ρ‖uniform) over the octave record = 0.7513 nats (QG_228), ΩΛ = I_occ/ln K =
+0.6839 (QG_234): a DERIVED order parameter, but a FIXED scalar that measures
+non-uniformity — it has no scale to vary and generates no occupation law. (4) SPECTRAL
+CROWDING — mode density rises into the band top (83/95 modes above ω = 3.3, the top 20%
+of the band [0.622, 3.98]; 0 modes in [3.0,3.1), more in [3.9,4.0)) — anti-thermal,
+same top-heavy fact as (2). MODE-OCCUPATION LAW TEST (decisive): the Bose occupation
+n = 1/(e^x − 1) requires a DECAYING geometric rate μ < 1 (NP_027: ⟨n_k⟩ =
+1/(e^(k·ln(1/μ)) − 1)). Substituting the canonical μ = 2 gives n_k = 1/(2^(−k) − 1) < 0
+for every k ≥ 1 — NEGATIVE occupation, i.e. population inversion, NOT Bose statistics. A
+valid Bose occupation needs μ < 1 — exactly the free parameter of NP_027, not fixed by
+canonical AT (canonical μ = 2 is the branching count). COUNTEREXAMPLES: 'actualization
+density is the temperature' fails (μ = 2 grows, ρ₇/ρ₀ = 128; would-be β < 0 is
+inversion); 'occupancy disorder is the temperature' fails (top-heavy [4,4,87], 21.75×
+rise into the top octave); 'I_occ is the temperature' fails (a fixed order parameter —
+ΩΛ = 0.6839 — with no scale and no occupation law); 'spectral crowding is the
+temperature' fails (crowding rises into the cutoff); 'the canonical branching gives the
+Planck law' fails (μ = 2 gives n_k < 0 — negative occupation); 'Hawking T ∝ 1/R supplies
+thermodynamic temperature' fails (a horizon first-law temperature whose coefficient
+needs the imported 2π, QG_185/196 — it generates no mode-occupation law).
+FALSIFICATION: a canonical AT quantity that varies continuously, is fixed by the
+counting structure, and generates a decaying occupation n ∝ e^(−E/T) with a fixed scale;
+a derivation fixing μ < 1 (decay) from canonical structure; an occupation law written as
+a function of I_occ alone reproducing a thermal family; a canonical per-mode occupation
+decaying with ω (Wien tail) without the free μ < 1. Classification: temperature as a
+derived object of AT REFUTED (no canonical candidate generates a thermal mode-occupation
+law); actualization density (μ = 2) as temperature source REFUTED (growth = population
+inversion, would-be β = −ln 2 < 0); occupancy disorder ([4,4,87]) as temperature
+REFUTED (top-heavy, anti-thermal); information density I_occ = 0.7513 as temperature
+REFUTED — DERIVED as an order parameter (ΩΛ = 0.6839, QG_234); spectral crowding as
+temperature REFUTED (crowding rises into the cutoff); thermal (Bose) occupation law from
+canonical structure NOT GENERATED (canonical μ = 2 gives negative occupation; needs free
+μ < 1, NP_027); temperature as the import scale x = ℏω/kT BOUNDARY (unchanged,
+NP_027/028); Hawking T ∝ 1/R DERIVED in form (ρ-sector first law, QG_184/208) with
+coefficient BOUNDARY (2π, QG_185/196) — not a mode-occupation temperature. Temperature
+remains exactly what NP_027/028 classified it: a BOUNDARY import used to compare AT's
+derived frequency ratios to measured thermal spectra — never a canonical object that
+generates a mode-occupation law. No new primitive; canonical AT unchanged.
+
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-

@@ -74,6 +74,7 @@ ResearchY-NP_026  ↔  Y_NP_026_Tests.cs     (AT.Tests/ResearchY/NP_NewPhysics/)
 ResearchY-NP_027  ↔  Y_NP_027_Tests.cs     (AT.Tests/ResearchY/NP_NewPhysics/)
 ResearchY-NP_028  ↔  Y_NP_028_Tests.cs     (AT.Tests/ResearchY/NP_NewPhysics/)
 ResearchY-NP_029  ↔  Y_NP_029_Tests.cs     (AT.Tests/ResearchY/NP_NewPhysics/)
+ResearchY-NP_030  ↔  Y_NP_030_Tests.cs     (AT.Tests/ResearchY/NP_NewPhysics/)
 ResearchY-S_001  ↔  Y_S_001_Tests.cs       (AT.Tests/ResearchY/S_Synthesis/)
 ```
 
@@ -192,6 +193,7 @@ ResearchY-S_001  ↔  Y_S_001_Tests.cs       (AT.Tests/ResearchY/S_Synthesis/)
 | ResearchY-NP_027 (Planck Spectrum Emergence Audit) | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_027_Tests.cs` | ACTIVE | 2026-09-01 | ✅ 8/8 PASSED — `Results/Y_NP_027_Result.md` |
 | ResearchY-NP_028 (Blackbody Reconstruction Audit) | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_028_Tests.cs` | ACTIVE | 2026-09-02 | ✅ 8/8 PASSED — `Results/Y_NP_028_Result.md` |
 | ResearchY-NP_029 (ħ Necessity Audit) | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_029_Tests.cs` | ACTIVE | 2026-09-02 | ✅ 8/8 PASSED — `Results/Y_NP_029_Result.md` |
+| ResearchY-NP_030 (Temperature Origin Audit) | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_030_Tests.cs` | ACTIVE | 2026-09-02 | ✅ 8/8 PASSED — `Results/Y_NP_030_Result.md` |
 | ResearchY-NP_022 (Unique Physics Prediction Search) | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_022_Tests.cs` | ACTIVE | 2026-08-31 | ✅ 7/7 PASSED — `Results/Y_NP_022_Result.md` |
 | ResearchY-S_001 (Post-V2.1 Theory Architecture Synthesis) | `AT.Tests/ResearchY/S_Synthesis/Y_S_001_Tests.cs` | ACTIVE | 2026-08-30 | ✅ 4/4 PASSED — `Results/Y_S_001_Result.md` |
 
