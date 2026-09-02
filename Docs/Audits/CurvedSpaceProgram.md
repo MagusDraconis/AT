@@ -42,9 +42,16 @@ Einstein–Hilbert action, closing the loop to Einstein.
 | BDG $\to\Box$ (flat, Lorentzian) | **Established (analytic) + tested** (flat-lattice reduction) | `BdgUniquenessAnalyzer` (O0), `BDGOperatorContinuumTests` |
 | $L_Q$ and BDG are distinct operators (signature) | **Proven + tested** | `QuantumGravityBridgeTests` |
 | Causal set $\to$ metric $g_{\mu\nu}$ | **Imported (external)** — Malament / Hawking–King–McCarthy | `GrBridgeAnalyzer`, `PoissonSprinklingAnalyzer` |
-| $\Delta_g$ / $\Box_g$ (metric-dependent operator) | **Absent** | 0 "Beltrami" matches (`CurvedSpaceBridgeTests`) |
-| Curved-space Schrödinger $i\partial_t\psi=\Box_g\psi$ | **Absent** | no metric-dependent operator |
+| $\Delta_g$ / $\Box_g$ (metric-dependent operator) | **Native (density/coupling), not metric-imported** | conformal `ρ⁻¹Lρ⁻¹ ≈ −Δ_g` (G4-C); weighted `L_W=D_K−K` as discrete Laplace-Beltrami (`CurvedSpaceBridgeTests` refined) |
+| Curved-space Schrödinger $i\partial_t\psi=\Box_g\psi$ | **Native operator present; metric import ABSENT** | no operator consumes an imported $g_{\mu\nu}$ |
 | Einstein recovery from the operator | **Absent** (only the external causal-set route) | `EmergentGravityAnalyzer` (leading order, "logical not mathematical") |
+
+> **Refinement (2026-09-02):** the "Absent | 0 'Beltrami' matches" entries above were
+> superseded by the ResearchXH G4-C program (native conformal operator ρ⁻¹Lρ⁻¹ ≈ −Δ_g,
+> built from density ρ) and the weighted-Laplacian program (L_W = D_K−K, discrete
+> Laplace-Beltrami from coupling K). These operators reproduce Δ_g behavior WITHOUT
+> importing a metric tensor. The surviving gap is that no operator consumes an *imported*
+> metric tensor g_μν as a coefficient.
 
 ---
 

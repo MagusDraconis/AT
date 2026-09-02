@@ -755,6 +755,12 @@ O(h²)) on f=sin(πx)sin(πy). Test 3 CurvedSpaceBridge_PresentOrAbsent: ABSENT.
 Laplace-Beltrami, no curved/covariant Schrödinger; Christoffel only descriptive; metric only
 emergent/external. All 3 PASSED. Report: Docs/Audits/CurvedSpaceBridge_Report.md.
 
+> REFINEMENT (2026-09-02): the original scan (0 "Beltrami" → bridge ABSENT) was superseded
+> by the ResearchXH G4-C program (native conformal operator ρ⁻¹Lρ⁻¹ ≈ −Δ_g) and the
+> weighted-Laplacian program (L_W = D_K−K as discrete Laplace-Beltrami). CurvedSpaceBridgeTests
+> now asserts the refined finding: the curved-space bridge is PRESENT natively (ρ/coupling),
+> ABSENT as a metric-tensor import — no Laplace-Beltrami operator consumes an imported g_μν.
+
 **Curved-Space Program (formal gap analysis):**
 Defined the minimal operator needed for the bridge: Δ_g/□_g (metric-dependent Laplace-Beltrami
 /d'Alembertian). Determined it arises from NEITHER L_Q nor BDG as-implemented (both give only

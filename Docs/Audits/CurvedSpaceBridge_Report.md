@@ -47,8 +47,16 @@ operator.
 
 ## Conclusion
 
-The Curved-Space Bridge finding is now executable: **no curved-space Schrödinger operator
+The Curved-Space Bridge finding is executable: **no curved-space Schrödinger operator
 exists in the repository**, and the standard reduction identity ($\Delta_g\to\nabla^2$) is
 verified for reference. No new physics, no invented equations — the tests use the standard
 Laplace–Beltrami formula only to state the reduction identity, and scan the repository for
 the operator's absence.
+
+> **Refinement (2026-09, superseded by ResearchXH G4-C + weighted-Laplacian program).**
+> The original "0 'Beltrami' matches / bridge ABSENT" scan is outdated: later native work
+> (G4-C conformal operator $\rho^{-1}L\rho^{-1}\approx-\Delta_g$; weighted discrete
+> Laplace-Beltrami $L_W=D_K-K$) added Laplace-Beltrami-*like* operators built from density
+> ρ / coupling K. The surviving claim is that these operators are NATIVE — no curved-space
+> operator imports a metric tensor. `CurvedSpaceBridgeTests.cs` now asserts the refined
+> finding (bridge PRESENT natively; metric-tensor import ABSENT).

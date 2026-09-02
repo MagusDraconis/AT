@@ -5,6 +5,17 @@
 `BdgUniquenessAnalyzer.cs` (the operator-uniqueness audit), `GrBridgeAnalyzer.cs`.
 **Discipline:** no new physics — reconstruction only.
 
+> **Refinement (superseded by ResearchXH G4-C and the weighted-Laplacian program).**
+> This audit concluded $\Delta_g$ was "Missing" and the curved-space bridge "ABSENT" —
+> true at the time, but **superseded** by later native work: AT now implements
+> Laplace-Beltrami-*like* operators built from density/coupling, NOT from an imported
+> metric tensor. The native conformal operator $\rho^{-1}L\rho^{-1}\approx-\Delta_g$
+> (G4-C) and the weighted discrete Laplace-Beltrami $L_W=D_K-K$ exist and reproduce
+> $\Delta_g$ behavior. What survives of this audit: **no curved-space operator is
+> constructed by importing a metric tensor** ($g_{\mu\nu}$ is never a coefficient).
+> Executable form: `AT.Tests/ResearchXC/CurvedSpaceBridgeTests.cs` (updated to the
+> refined finding).
+
 ---
 
 ## 1. All continuum-limit derivations (extracted)
