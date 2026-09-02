@@ -2850,6 +2850,57 @@ remains exactly what NP_027/028 classified it: a BOUNDARY import used to compare
 derived frequency ratios to measured thermal spectra — never a canonical object that
 generates a mode-occupation law. No new primitive; canonical AT unchanged.
 
+ResearchY-NP_031 (Structure vs Thermodynamics Audit, COMPLETE, tests 8/8 PASSED): do the
+NP_027–NP_030 results indicate that D96 belongs EXCLUSIVELY to the structural layer,
+while thermodynamics belongs to a separate occupancy layer? Does AT naturally split into
+a Structure Sector (Difference → Actualization → Spectrum) and a Thermodynamic Sector
+(Occupations → Temperature → Radiation)? Verdict: YES to a two-layer architecture, but
+NOT as two autonomous sectors. THE STRUCTURE SECTOR (inventory, verified) is DERIVED
+and self-contained: spectrum (95 modes, band [0.622, 3.98], span 6.40, ω₁ = 0.6216),
+octave occupancy [4,4,87], moments, I_occ = KL(ρ‖uniform) = 0.7513 nats, ΩΛ = I_occ/ln K
+= 0.6839 (QG_234), masses (m_u = m_e·Σ√m/√Σm² = 2.164 MeV, QG173), M_Pl = 1.2234e19
+GeV, couplings, entropy H = log₂95 = 6.57 bits (M_004) — none needs a temperature, and
+the ResearchY derivation chain contains NO SI thermal constant (k_B = 1.380649e-23
+etc., count 0, verified). THE THERMODYNAMIC OBJECTS (inventory): temperature T is
+BOUNDARY (NP_030, no canonical candidate); the Planck-factor FORM n = 1/(e^x − 1) is
+EMERGENT from the geometric occupation (NP_027) but only with a free decay rate μ<1;
+radiation/blackbody is FALSIFIED as emergent from D96 (NP_028); Stefan-Boltzmann T⁴ =
+π⁴/15 is NOT REPRODUCED from the finite spectrum (NP_027); the Wien tail is FALSIFIED
+(hard cutoff at ω_max = 3.98); ħ is a BOUNDARY unit bridge (NP_029). THE OVERLAP is
+exactly ONE object: the occupation statistics ρ_k = μ^k/S — structural as the branching
+count (canonical μ = 2, gens = 8, S = 255, behind the occupancy [4,4,87] and I_occ),
+thermal as the SAME geometric form read with a free decay μ<1 (⟨n_k⟩ = 1/(e^(k·ln(1/μ))
+− 1), QG194/NP_027). No other structural object has a thermal twin. TEST — ANY THERMAL
+OBSERVABLE FROM STRUCTURE ALONE? NO (REFUTED): only state entropy (a count, M_004) and
+the occupation FORM (with free μ<1) derive; the canonical μ = 2 occupation is NEGATIVE
+(population inversion, NP_030); no Wien tail exists (finite spectrum), no ω² DOS
+(sub-power-law growth). TEST — THERMO ADDED ONLY AS A STATE-OCCUPATION LAW? YES
+(CONFIRMED): derived mode set {ω_k} + occupation n(ω) = 1/(e^x − 1) + the temperature
+scale x = ℏω/kT (BOUNDARY) — structure supplies the substrate and the occupation FORM;
+only the boundary parameter T converts the form into a thermodynamic state.
+COUNTEREXAMPLES: 'two autonomous DERIVED pillars' fails (no derived temperature/
+radiation/T⁴); 'structure alone yields radiation' fails (blackbody FALSIFIED); 'the
+canonical count IS the thermal occupation' fails (μ = 2 is anti-thermal); 'temperature
+is structural' fails (NP_030); 'I_occ/entropy provide the temperature' fails (fixed
+order parameter / state count, not a scale); 'radiation is hosted by the same engine as
+the masses' fails (masses = anchor × ratio; radiation = occupation + T). FALSIFICATION:
+a structural derivation needing a Boltzmann constant or T; a canonical D96 object
+producing a T-dependent spectrum without an added occupation law; a derivation of T
+from {Difference, η, spectrum} alone (NP_030 falsification, still open); a second
+structural object appearing in a thermal law; a D96-derived DOS ω² with a Wien tail over
+an unbounded band. Classification: Structure Sector DERIVED (self-contained);
+thermodynamic sector as an autonomous second sector REFUTED (no derived temperature,
+radiation, or T⁴); the two-sector split as architecture DERIVED (structure closes; thermo
+added as occupation over the modes); occupation statistics ρ_k = μ^k/S as count DERIVED
+(A_003/QG194); Planck-factor occupation FORM EMERGENT (NP_027, free decay μ<1);
+state-count entropy H = log₂95 = 6.57 bits DERIVED (M_004, a count not a function of T);
+information density I_occ = 0.7513 → ΩΛ DERIVED (order parameter, NOT temperature);
+temperature scale T (x = ℏω/kT) BOUNDARY (unchanged, NP_027/028/030); radiation/blackbody/
+T⁴/Wien tail FALSIFIED as emergent from D96 — hosted content (NP_027/028). AT has one
+closed DERIVED structural layer, and thermodynamics is an ADDED state-occupation law
+over the structural modes — a DERIVED architectural fact, not a division into two
+primitive pillars. No new primitive; canonical AT unchanged.
+
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-

@@ -106,6 +106,27 @@ public static class AtlasDataService
     public static IReadOnlyList<ResearchNewsModel> ResearchNews { get; } =
     [
         new(
+            "researchy-np031-structure-thermodynamics",
+            "AT Has One Derived Structural Layer — Thermodynamics Is an Added Occupation Law, Not a Second Sector",
+            "ResearchY Milestone · NP_031 (V2.3 — Structure vs Thermodynamics Audit)",
+            "The NP_027–030 results confirm a two-layer architecture: the Structure Sector (Difference→Actualization→Spectrum→every structural observable) is DERIVED and self-contained with no temperature input, while thermodynamics is an ADDED state-occupation law over the structural modes. No thermal observable derives from structure alone (REFUTED); the overlap is exactly the occupation statistics ρ_k=μ^k/S.",
+            "NP_031 asks whether D96 belongs EXCLUSIVELY to the structural layer, with thermodynamics as a separate occupancy layer. Verdict: YES to a two-layer architecture, but NOT as two autonomous sectors. THE STRUCTURE SECTOR (inventory, verified) is DERIVED and self-contained: spectrum (95 modes, band [0.622,3.98], span 6.40), octave occupancy [4,4,87], I_occ=KL(ρ‖uniform)=0.7513 nats, ΩΛ=I_occ/ln K=0.6839 (QG234), masses (m_u=m_e·Σ√m/√Σm²=2.164 MeV, QG173), M_Pl=1.2234e19 GeV, couplings, entropy H=log₂95=6.57 bits (M_004) — none needs a temperature, and the ResearchY derivation chain contains NO SI thermal constant (count 0, verified). THE THERMODYNAMIC OBJECTS: temperature T is BOUNDARY (NP_030); the Planck-factor FORM n=1/(e^x−1) is EMERGENT from the geometric occupation (NP_027) but only with a free decay rate μ<1; radiation/blackbody is FALSIFIED as emergent (NP_028); Stefan-Boltzmann T⁴=π⁴/15 NOT REPRODUCED; Wien tail FALSIFIED (hard cutoff); ħ is a BOUNDARY unit bridge (NP_029). THE OVERLAP is exactly ONE object: the occupation statistics ρ_k=μ^k/S — structural as the branching count (canonical μ=2, gens=8, S=255), thermal as the same geometric form with a free decay μ<1 (⟨n_k⟩=1/(e^(k·ln(1/μ))−1)). TEST — ANY THERMAL OBSERVABLE FROM STRUCTURE ALONE? NO (REFUTED): only state entropy and the occupation FORM derive; canonical μ=2 occupation is NEGATIVE (population inversion). TEST — THERMO ADDED ONLY AS A STATE-OCCUPATION LAW? YES (CONFIRMED): mode set + occupation + temperature scale (BOUNDARY). Classification: Structure Sector DERIVED; thermodynamics-as-autonomous-sector REFUTED; two-layer architecture DERIVED; occupation statistics DERIVED as count / EMERGENT as FORM; temperature BOUNDARY; radiation hosted/FALSIFIED as emergent. AT has one closed DERIVED structural layer — thermodynamics is an added state-occupation law over the structural modes. No new primitive; canonical AT unchanged.",
+            "For non-experts: think of AT as a fixed skeleton of 96 resonance steps. From that skeleton AT derives an enormous amount — the spectrum of allowed frequencies, the mass ratios of particles, the dark-energy fraction — all as pure numbers with no need for temperature. NP_027–NP_030 established that temperature, by contrast, never shows up as something AT derives from its skeleton. This audit asks the architectural question: does that mean AT is ONLY a structural theory, with heat and radiation bolted on from outside? The answer is a qualified yes. AT's skeleton is a complete, self-contained structural layer: every structural observable derives without temperature, and the derivation chain contains no thermal constant whatsoever. Thermodynamics is not a second engine inside AT — it is a rule for OCCUPYING the derived modes (how much of each frequency is present), with temperature as the dial. The one genuine bridge between the two is AT's own 'occupation statistics' — the count structure that, read one way, is just how many modes sit in each octave, and read another way (with a decay rate you must supply) becomes the shape of a hot body's spectrum. So heat is real, but it is an added layer over AT's structure, not a second pillar of the theory.",
+            "AT has one derived structural layer; thermodynamics is an added state-occupation law over the structural modes, with temperature as the boundary dial.",
+            "“Structure is the skeleton; thermodynamics is the occupation of that skeleton.”",
+            true,
+            [
+                new("ResearchY-NP_027", "PLANCK SPECTRUM EMERGENCE AUDIT",
+                    "The occupation FORM (free μ<1) that is NP_031's single overlap object.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_027.md"),
+                new("ResearchY-NP_030", "TEMPERATURE ORIGIN AUDIT",
+                    "No canonical object plays the temperature role — the BOUNDARY scale of the occupancy layer.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_030.md"),
+                new("ResearchY-NP_028", "BLACKBODY RECONSTRUCTION AUDIT",
+                    "Radiation FALSIFIED as an emergent read of D96 — hosted content in the occupancy layer.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_028.md"),
+            ]),
+        new(
             "researchy-np030-temperature-origin",
             "No Object in AT Plays the Role of Thermodynamic Temperature",
             "ResearchY Milestone · NP_030 (V2.3 — Temperature Origin Audit)",
