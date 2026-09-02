@@ -106,6 +106,27 @@ public static class AtlasDataService
     public static IReadOnlyList<ResearchNewsModel> ResearchNews { get; } =
     [
         new(
+            "researchy-np027-planck-spectrum-emergence",
+            "The Planck Factor Form Is Emergent — but the Full Planck Law Needs a Temperature AT Does Not Have",
+            "ResearchY Milestone · NP_027 (V2.3 — Planck Spectrum Emergence Audit)",
+            "The Planck factor shape n(x)=1/(e^x−1) DOES emerge from the D96 geometric occupation statistics (⟨n_k⟩=1/(e^(k·ln(1/μ))−1), QG194), and the UV is regulated by the finite spectrum — but the FULL Planck law (Stefan-Boltzmann T⁴, Wien displacement at x=2.821, continuous DOS) does NOT emerge from the finite 95-mode spectrum without importing temperature.",
+            "NP_027 asks whether the full Planck spectrum can be reproduced as an emergent read of the D96 spectrum without introducing quantum postulates. Verdict: the Planck FACTOR FORM n(x)=1/(e^x−1) IS emergent from the geometric occupation statistics (QG194) — the mean of a geometric count is the Planck factor — but the FULL Planck LAW does NOT emerge from the finite discrete 95-mode spectrum (ω∈[0.62,3.98]) without importing temperature (x=ℏω/kT), a non-canonical primitive. MECHANISMS (A/B/C): A) finite UV solely from spectral cutoff — YES in AT (the finite spectrum is the UV regulator; no infinite mode-count to diverge; NOT the canonical ℏ mechanism); B) Planck factor from occupation statistics — YES in FORM; C) max-entropy — CONSISTENT but incomplete (geometric IS the max-entropy distribution, but AT has not derived the temperature/energy constraint). FOUR LIMITS (continuous form, verified): Rayleigh-Jeans n→1/x; Wien n→e^(−x); Stefan-Boltzmann π⁴/15=6.4939; Wien displacement x=2.821. FINITE-N PROBLEM (verified): the discrete 95-mode sum ≠ π⁴/15 (no T⁴); the discrete peak is mode-dependent, not at x=2.821; no ω→0 mode (min ω=0.62) so no Rayleigh-Jeans divergence. UV ORIGIN: in AT the UV is regularized by the FINITE SPECTRUM, NOT by quantization (ℏ) — a different mechanism. Classification: Planck-factor form DERIVED (QG194); temperature dependence BOUNDARY; finite-UV regulator DERIVED; full Planck law NOT REPRODUCED from D96 alone; ℏ-cutoff UV origin REFUTED for AT. Closure score 6/10. No new primitive; canonical AT unchanged.",
+            "For non-experts: physicists derive the glow of hot objects (the 'blackbody' or Planck spectrum) by assuming light comes in discrete packets (quanta) — that is quantum theory. AT has no such assumption. This audit asks whether AT's underlying 96-point structure can produce the same spectrum anyway. The answer is partial and interesting. The SHAPE of the spectrum — the formula n=1/(e^x−1) — falls out naturally from how AT distributes occupation across its modes: it needs no quantum postulate. And the ultraviolet catastrophe (infinite energy at high frequency) is solved in AT for free, because AT only has a finite number of modes — there is nothing to diverge. But the full law is another matter: the Stefan-Boltzmann T⁴ law and the Wien peak require a TEMPERATURE, and temperature is not something AT has derived from its own primitives — you have to bring it in from outside. So AT reproduces the spectrum's skeleton but not its full temperature dependence. That is a clean boundary: the form is derived, the temperature is imported.",
+            "The Planck factor n=1/(e^x−1) is emergent; the full Planck law needs a temperature that is not a canonical AT primitive.",
+            "“The skeleton of the spectrum is free; the temperature is the boundary.”",
+            true,
+            [
+                new("ResearchY-NP_025", "K=6 UNIQUENESS AUDIT",
+                    "The protected-block structure whose ring NP_027 reads as a spectrum.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_025.md"),
+                new("ResearchY-NP_024", "O(2) MIRROR-PAIR PHYSICAL PREDICTION",
+                    "The D96 spectral structure that NP_027 uses as its occupation model.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_024.md"),
+                new("ResearchY-NP_023", "O(2) MIRROR SEARCH",
+                    "The exact D96 symmetry behind the spectrum NP_027 reads.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_023.md"),
+            ]),
+        new(
             "researchy-np026-protected-block-universality",
             "√(K/(K+1)) Is a Theorem of the Nearest-Neighbour Circulant Class — Not a Generic Law",
             "ResearchY Milestone · NP_026 (V2.3 — Protected Block Universality Audit)",

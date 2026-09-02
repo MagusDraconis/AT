@@ -2699,6 +2699,42 @@ origin (consecutive uniform set + modes N/4, N/6) DERIVED (analytic); mirror-pai
 protection (reflection) vs block-ratio protection (weight-fragile) — DIFFERENT
 protection classes. No new primitive; canonical AT unchanged.
 
+ResearchY-NP_027 (Planck Spectrum Emergence Audit, COMPLETE, tests 8/8 PASSED): can
+the full Planck spectrum be reproduced as an emergent read of the D96 spectrum
+without quantum postulates? Verdict: the Planck FACTOR FORM n(x) = 1/(e^x − 1) IS
+emergent from the D96 geometric occupation statistics (⟨n_k⟩ =
+1/(e^(k·ln(1/μ)) − 1), QG194), and the UV is regulated by the finite spectrum — but
+the FULL Planck LAW (Stefan-Boltzmann T⁴ = π⁴/15, Wien displacement at x = 2.821,
+continuous density of states, Rayleigh-Jeans divergence) does NOT emerge from the
+finite discrete 95-mode spectrum (ω ∈ [0.62, 3.98]) without importing temperature
+(x = ℏω/kT), a non-canonical primitive. MECHANISMS (A/B/C): A) finite UV solely from
+spectral cutoff — YES in AT (the 95-mode finite spectrum is the UV regulator; no
+infinite mode-count to diverge; NOT the canonical ℏ mechanism); B) Planck factor from
+occupation statistics — YES in FORM; C) max-entropy — CONSISTENT but incomplete (the
+geometric/Bose distribution IS the max-entropy distribution, but AT has not derived
+the temperature/energy constraint). FOUR LIMITS (continuous form, verified):
+Rayleigh-Jeans n → 1/x; Wien n → e^(−x); Stefan-Boltzmann ∫x³/(e^x−1)dx = π⁴/15 =
+6.4939; Wien displacement peak at x = 2.821. FINITE-N PROBLEM (verified): the
+discrete 95-mode sum ≠ the continuous π⁴/15 integral (no T⁴); the discrete peak is
+mode-dependent, not at x = 2.821; no ω→0 mode (min ω = 0.62) so no Rayleigh-Jeans
+divergence. UV ORIGIN: in AT the UV is regularized by the FINITE SPECTRUM (no
+infinite mode-count), NOT by quantization (ℏ) — a different mechanism; the finite
+observability (QG_010) and finite information (QG_228) are related structural bounds
+but the direct UV regulator is the finite spectrum. Counterexamples: 'the full Planck
+law emerges from D96' fails (discrete 95-mode sum ≠ π⁴/15; peak mode-dependent; no
+ω→0 mode, verified); 'temperature is a canonical primitive' fails (T not in the
+canonical boundary set); 'the UV is cut by quantization' fails (the finite spectrum
+already regulates — no ℏ-cutoff needed); 'Stefan-Boltzmann T⁴ holds' fails (requires
+the continuous integral). Falsification: a non-geometric count structure giving a
+different n(ω); an infinite-spectrum AT system with a finite UV; a derivation of T
+from {Difference, η, spectrum} alone; a finite discrete spectrum reproducing π⁴/15
+and x = 2.821 exactly. Closure score 6/10. Classification: Planck-factor form
+DERIVED (from the geometric occupation, QG194); temperature dependence (x = ℏω/kT)
+BOUNDARY (temperature not a canonical primitive); finite-UV regulator DERIVED (finite
+spectrum); full Planck law (T⁴, Wien displacement, continuous DOS) NOT REPRODUCED
+from D96 alone (hosted content); quantum (ℏ-cutoff) UV origin REFUTED for AT (the
+finite spectrum is the regulator). No new primitive; canonical AT unchanged.
+
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-
