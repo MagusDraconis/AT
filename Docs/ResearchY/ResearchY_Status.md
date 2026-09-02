@@ -122,6 +122,7 @@
 | ResearchY-NP_025 | K=6 Uniqueness Audit | `NP_NewPhysics/ResearchY-NP_025.md` | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_025_Tests.cs` (6/6 ✅) | COMPLETE |
 | ResearchY-NP_026 | Protected Block Universality Audit | `NP_NewPhysics/ResearchY-NP_026.md` | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_026_Tests.cs` (8/8 ✅) | COMPLETE |
 | ResearchY-NP_027 | Planck Spectrum Emergence Audit | `NP_NewPhysics/ResearchY-NP_027.md` | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_027_Tests.cs` (8/8 ✅) | COMPLETE |
+| ResearchY-NP_028 | Blackbody Reconstruction Audit | `NP_NewPhysics/ResearchY-NP_028.md` | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_028_Tests.cs` (8/8 ✅) | COMPLETE |
 | ResearchY-S_001 | Post-V2.1 Theory Architecture Synthesis | `S_Synthesis/ResearchY-S_001.md` | `AT.Tests/ResearchY/S_Synthesis/Y_S_001_Tests.cs` (4/4 ✅) | COMPLETE |
 | ResearchY-M_001 | Measurement Origin Audit | `M_Measurement/ResearchY-M_001.md` | `AT.Tests/ResearchY/M_Measurement/Y_M_001_Tests.cs` (7/7 ✅) | COMPLETE |
 | ResearchY-M_002 | Measurement Disturbance Audit | `M_Measurement/ResearchY-M_002.md` | `AT.Tests/ResearchY/M_Measurement/Y_M_002_Tests.cs` (7/7 ✅) | COMPLETE |

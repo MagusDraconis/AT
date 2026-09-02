@@ -2735,6 +2735,40 @@ spectrum); full Planck law (T⁴, Wien displacement, continuous DOS) NOT REPRODU
 from D96 alone (hosted content); quantum (ℏ-cutoff) UV origin REFUTED for AT (the
 finite spectrum is the regulator). No new primitive; canonical AT unchanged.
 
+ResearchY-NP_028 (Blackbody Reconstruction Audit, COMPLETE, tests 8/8 PASSED): can the
+D96 mode structure reproduce the observed Planck spectrum after coarse-graining (95
+positive modes, occupancy weighting, spectral density, Planck comparison, high-frequency
+falloff)? Verdict: NO — coarse-graining does NOT heal the NP_027 gaps. The per-mode
+occupation factor n = 1/(e^x − 1) is CORRESPONDENCE (NP_027 DERIVED form), but the
+blackbody DOS (ω², 3D cavity) is FALSIFIED for D96, the Wien exponential tail is
+FALSIFIED (hard cutoff), and the full observed blackbody after coarse-graining is
+FALSIFIED. THREE OBSTRUCTIONS (all survive coarse-graining): (1) DOS MISMATCH — the D96
+cumulative mode count grows sub-power-law ~ω^1.5 (N(2.5)/N(1.0) = 8/2 = 4.0 vs ω³ =
+15.6 for a 3D cavity; N(3.0)/N(1.5) = 10/4 = 2.5 vs 8), with only 44 distinct
+frequencies (mirror pairs + 5-fold λ=12 + 6-fold λ=14 blocks) — NOT the smooth ω² DOS a
+blackbody needs; (2) TOP-HEAVINESS — 93.7% of the 95 modes sit above band mid (2.30) and
+87.4% (83/95) in the top 20% of the band [0.622, 3.98] (span 6.40); occupancy weighting
+at θ=1 leaves 65.7% of energy above ω=3.3 vs 23.2% for Planck in-band, so the weight
+does not flatten the top cluster; (3) TRUNCATION / NO WIEN TAIL — hard spectral cutoff at
+ω_max = 3.980 with zero modes above, and the mode density RISES into the cutoff (0 modes
+in [3.0,3.1) but 6 in [3.3,3.4) and 6 in [3.9,4.0)), so the observed e^(−ω/θ) tail to ∞
+cannot exist. Counterexamples: 'coarse-graining gives the blackbody continuum' fails
+(binning cannot change the mode count — 44 distinct freqs in a finite band); 'occupancy
+weighting flattens the spectrum' fails (D96 0.657 vs Planck 0.232 above ω=3.3 at θ=1);
+'the high-frequency falloff is the Wien tail' fails (no modes above ω_max; hard edge, not
+e^(−ω/θ)); 'choosing θ removes the mismatch' fails (θ rescales x but cannot create low-ω
+modes, a ω² DOS, or modes beyond ω_max); 'the 5-fold/6-fold blocks supply the peak' fails
+(degenerate lines at ω=3.46/3.74 make the spectrum more line-like, not a smooth
+continuum). Falsification: a D96-derived DOS growing as ω² (N(ω) ∝ ω³) over ≥ 1 octave;
+any mode above ω_max or an exponential decay of the top cluster; a D96 weighting whose
+energy peaks away from the top 20% of the band; the coarse-grained weighted D96 spectrum
+matching Planck at any θ to <10% per-bin. Classification: per-mode occupation factor
+CORRESPONDENCE (NP_027 DERIVED form); blackbody DOS (ω², 3D cavity) FALSIFIED for D96;
+Wien exponential high-ω tail FALSIFIED (hard cutoff at ω_max = 3.98); full observed
+blackbody after coarse-graining FALSIFIED (top-heavy + truncated); temperature scale θ
+BOUNDARY (cannot rescue the shape). The observed blackbody is NOT an emergent read of the
+D96 spectrum — hosted/correspondence content. No new primitive; canonical AT unchanged.
+
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-

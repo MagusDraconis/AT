@@ -106,6 +106,27 @@ public static class AtlasDataService
     public static IReadOnlyList<ResearchNewsModel> ResearchNews { get; } =
     [
         new(
+            "researchy-np028-blackbody-reconstruction",
+            "The D96 Spectrum Cannot Reproduce the Observed Blackbody, Even after Coarse-Graining",
+            "ResearchY Milestone · NP_028 (V2.3 — Blackbody Reconstruction Audit)",
+            "Coarse-graining the 95 D96 modes does NOT reproduce the observed Planck spectrum. The mode density is top-heavy (87% of modes in the top 20% of the band) and truncated (hard cutoff at ω=3.98, no Wien tail), while the blackbody needs a smooth ω² DOS over an unbounded band. Only the per-mode occupation factor corresponds.",
+            "NP_028 asks whether the D96 mode structure can reproduce the observed Planck spectrum after coarse-graining (weight the 95 positive modes by occupancy, construct a spectral density, compare against Planck, determine the high-frequency falloff). Verdict: NO — coarse-graining does NOT heal the NP_027 gaps. THREE OBSTRUCTIONS (verified): (1) DOS MISMATCH — the D96 cumulative mode count grows sub-power-law ~ω^1.5 (N(2.5)/N(1.0)=8/2=4.0 vs ω³=15.6 for a 3D cavity; N(3.0)/N(1.5)=10/4=2.5 vs 8), with only 44 distinct frequencies (mirror pairs + 5-fold λ=12 + 6-fold λ=14 blocks) — NOT the smooth ω² DOS a blackbody needs; (2) TOP-HEAVINESS — 93.7% of the 95 modes sit above band mid (2.30) and 87.4% (83/95) in the top 20% of the band [0.622,3.98] (span 6.40); occupancy weighting at θ=1 leaves 65.7% of energy above ω=3.3 vs 23.2% for Planck in-band, so the weight does not flatten the top cluster; (3) TRUNCATION / NO WIEN TAIL — hard spectral cutoff at ω_max=3.980 with zero modes above, and the mode density RISES into the cutoff (0 modes in [3.0,3.1) but 6 in [3.3,3.4) and 6 in [3.9,4.0)), so the observed e^(−ω/θ) tail to ∞ cannot exist. Classification: per-mode occupation factor CORRESPONDENCE (NP_027 DERIVED form); blackbody DOS (ω², 3D cavity) FALSIFIED for D96; Wien exponential high-ω tail FALSIFIED (hard cutoff); full observed blackbody after coarse-graining FALSIFIED (top-heavy + truncated); temperature scale θ BOUNDARY (cannot rescue the shape). The observed blackbody is NOT an emergent read of the D96 spectrum — hosted/correspondence content. No new primitive; canonical AT unchanged.",
+            "For non-experts: NP_027 showed the SHAPE of the blackbody curve (the 'occupation factor') falls out of AT's mode counting, but the full curve needs a temperature. This audit asks whether smoothing AT's 95 discrete frequencies into a continuous curve — the standard 'coarse-graining' trick — fixes the problem. It does not. AT's mode structure is top-heavy: 87% of its modes cram into the highest 20% of the available band, and the band simply ends at a hard cutoff. A real glowing body needs smooth mode-density growing like frequency-squared all the way up, with an infinitely long exponential tail. AT's spectrum has neither: it is lumpy at the bottom, crowded at the top, and stops. So the observed blackbody glow is not something AT's spectrum produces on its own — the theory contributes the occupation shape, but the rest is brought in from outside.",
+            "Only the per-mode occupation factor survives; the blackbody DOS and the Wien tail do not exist in D96.",
+            "“Binning can't create what the spectrum never had.”",
+            true,
+            [
+                new("ResearchY-NP_027", "PLANCK SPECTRUM EMERGENCE AUDIT",
+                    "The predecessor audit: form emergent, full law needs temperature.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_027.md"),
+                new("ResearchY-NP_024", "O(2) MIRROR-PAIR PHYSICAL PREDICTION",
+                    "The D96 degeneracy structure (mirror pairs + 5-fold/6-fold blocks) NP_028 shows is line-like.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_024.md"),
+                new("ResearchY-D_041", "TIME ORIGIN AUDIT",
+                    "The finite D96 spectrum that NP_028 finds is top-heavy and truncated.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/D_ResonanceStructure/ResearchY-D_041.md"),
+            ]),
+        new(
             "researchy-np027-planck-spectrum-emergence",
             "The Planck Factor Form Is Emergent — but the Full Planck Law Needs a Temperature AT Does Not Have",
             "ResearchY Milestone · NP_027 (V2.3 — Planck Spectrum Emergence Audit)",
