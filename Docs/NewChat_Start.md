@@ -2991,6 +2991,135 @@ is NOT reproduced because the ensemble cannot change the D96 mode set. 'Thermody
 is ensemble-D96' is confirmed for the occupation statistics and refuted for the
 radiation spectrum. No new primitive; canonical AT unchanged.
 
+ResearchY-NP_034 (Bose Without Blackbody Audit, COMPLETE, tests 10/10 PASSED): why
+does a D96 ensemble produce Bose occupation statistics n(ω) = 1/(e^(βω) − 1) yet fail
+to reproduce the observed blackbody spectrum? What is the MINIMAL obstruction? Verdict:
+BOSE STATISTICS IS SUFFICIENT — the obstruction is entirely the D96 MODE SET g(ω). The
+observed radiance factorizes u(ω) = g(ω)·n(ω)·ω (verified: U(1) = 12.588 over the 95
+modes = Σ m_i ω_i n(ω_i) over the 44 distinct freqs; the Boltzmann identity
+ln(n/(1+n)) = −βω holds exactly on every D96 mode). TEST 2 — replace the D96
+occupations with exact Planck occupations: NO-OP (the D96 ensemble occupation already
+IS the exact Bose/Planck occupation, NP_033 identity, verified pointwise); blackbody
+still fails (Σω³/(e^ω−1) = 120.70 ≠ π⁴/15 = 6.494) ⇒ the occupation is NOT the
+obstruction. TEST 3 — replace the D96 mode set with the ideal ω² DOS, keep the Bose
+occupation: u(ω) = ω³/(e^(βω)−1), the EXACT Planck law (Stefan-Boltzmann π⁴/15 =
+6.4939, Wien displacement x = 2.821, Rayleigh-Jeans x², Wien tail) ⇒ the mode set is
+the obstruction and Bose is sufficient (answer A). TEST 4 — SENSITIVITY: (a) UV cutoff
+— 40.7% of the blackbody energy lies above ω_max = 3.98 at β = 1 (0 modes above ⇒ no
+Wien tail); (b) DOS exponent — D96 cumulative p ≈ 1.0 low-band / 1.51 mid-band vs the
+required 3; a p = 1.51 power host integrates to 1.79 < π⁴/15/3 (>3× total suppression);
+(c) mode clustering — 44 distinct freqs, 8-bin counts [2,2,2,0,2,2,33,52] (empty
+interior bin, dense top cluster); (d) finite count — NOT an obstruction: an ideal
+ω²-distributed 95-mode set over the same band reproduces the in-band blackbody integral
+to ~0.05%. TEST 5 — MINIMAL DEFORMATION: keep the Bose occupation fixed; change ONLY
+the mode set (p → 3, redistribute the 95 modes ω³-uniformly, unbind the band above
+3.98) ⇒ ω² DOS, Wien tail, and π⁴/15 restored. COUNTEREXAMPLES: 'the D96 occupation is
+not exactly Planck' fails (NP_033 identity, replacement no-op); 'Bose is insufficient'
+fails (Bose + ω² DOS reproduces blackbody exactly); 'the 95-mode count is the
+obstruction' fails (ideal ω² 95-mode set → in-band error ~0.05%); 'the UV cap is the
+only obstruction' fails (exponent and clustering also wrong); 'a new occupation layer
+is needed' fails (the occupation is already exact Bose; only a hosted ω² DOS is
+missing). FALSIFICATION: a D96 occupation that is NOT exact Bose; Bose + ω² DOS failing
+to reproduce π⁴/15/2.821/RJ/Wien; a D96-derived mode set with p = 3 and no UV cap still
+failing. Classification: Bose occupation from the D96 ensemble EMERGENT (unchanged,
+NP_033); occupation as the blackbody factor SUFFICIENT (answer A — the failure is
+wholly in the mode set); D96 mode-set as blackbody host FALSIFIED (unchanged,
+NP_028/033); UV cap + DOS exponent + clustering of the D96 mode set DERIVED as the
+minimal obstruction; finite mode count NOT an obstruction; additional occupation-level
+obstruction NONE (answer B refuted); new primitive/layer NOT REQUIRED (hosted ω² DOS
+suffices, answer C refuted); temperature scale β BOUNDARY (unchanged, NP_027/028/030).
+The paradox is resolved: the ensemble produces the exact Bose occupation, and that
+occupation × the ideal ω² DOS IS the blackbody — the D96 mode set (sub-power DOS,
+hard UV cap, top-heavy clustering) is the only thing standing between Bose statistics
+and the observed blackbody. No new primitive; canonical AT unchanged.
+
+ResearchY-NP_035 (Density-of-States Origin Audit, COMPLETE, tests 10/10 PASSED): why
+does the D96 mode set produce g_D96(ω) (1D-chain DOS, N(ω) ∝ ω, p = 1) instead of the
+observed g_BB(ω) ∝ ω² (N ∝ ω³, p = 3)? What is the exact structural origin of the
+blackbody DOS mismatch? Verdict: DIMENSIONALITY. The D96 ring is a 1D structure: its
+spectrum is indexed by a SINGLE integer k ∈ [1, N−1] with an exactly linear
+low-frequency dispersion. ANALYTIC DOS (verified): λ_k ≈ (2πk/N)²·Σs² = (2πk/N)²·91
+⇒ ω_k ≈ c·k with c = 2π√91/N (ratio → 1.000 at N = 6144, k = 1..4); equal frequency
+spacing ⇒ N(ω) ∝ ω, p = 1. The octave occupancy [4,4,87] confirms it: the low
+octaves hold 4 modes each (constant 1D density per unit ω); the top octave holds 87
+only because the band ends at ω_max = 3.98 — the NP_028 mid-band "exponent ~1.5" is a
+finite-band artifact, NOT an asymptotic DOS exponent. EXPONENT = NUMBER OF MODE
+INDICES (verified): 1D lattice → p = 1, 2D → p = 2, 3D → p = 3. ORIGIN (A/B/C/D/E):
+A) DIMENSIONALITY — YES, the origin (one integer index k ⇒ p = 1); B) topology — NO
+(a 1D open chain also has p = 1); C) finite mode count — NO (p = 1 at N = 96..6144);
+D) circulant structure — NO (p = 1 for C_N(±1..±K), K = 1..12 — K changes band width,
+not the index count); E) hosted higher-layer geometry — YES for ω² (the blackbody ω²
+DOS is the DOS of a genuinely 3D host, hosted content, NP_032). EXTENSIONS (verified):
+larger N → p = 1; larger K → p = 1; coupled/longer rings → p = 1 (all stay 1D);
+tensor products C_N^⊗2 → p ≈ 2, C_N^⊗3 → p ≈ 3 (only adding an INDEPENDENT direction
+raises the exponent). MINIMAL CONSTRUCTION producing N(ω) ∝ ω³ while preserving the
+D96 local rule (±1..±6 nearest-neighbour): the 3D tensor product of three D96 rings,
+C_96(±1..±6)^⊗3 — separable eigenvalues Λ = λ_k1 + λ_k2 + λ_k3, ω ≈ c·|k| with k ∈ Z³,
+N ∝ ω³, DOS ∝ ω² (verified; integer count matches (π/6)R³). COUNTEREXAMPLES: 'a
+larger D96 ring becomes 3D' fails (p = 1 at N = 6144); 'larger K produces ω²' fails
+(p = 1 for K = 1..12); 'circulant structure causes p = 1' fails (any 1D chain has
+p = 1); 'finite count is the cause' fails (p = 1 to N → ∞); 'topology forces p = 1'
+fails (open chain also p = 1); 'D96's mid-band ~1.5 is its DOS exponent' fails (it is
+a finite-band cap artifact); 'tensor products change the local rule' fails (C_N^⊗3
+applies the SAME ±1..±6 rule on each axis). FALSIFICATION: a D96-derived N(ω) growing
+faster than linearly over a non-band-edge octave; a 2D/3D lattice count not scaling as
+ω^d; a ring C_N(±1..±K) with low-frequency exponent > 1; a single 1D ring reproducing
+the 3D DOS. Classification: 1D DOS exponent p = 1 of the D96 ring DERIVED (analytic:
+single index, linear dispersion); exponent p = number of independent mode indices
+DERIVED; dimensionality as the origin of the DOS mismatch DERIVED (answer A
+CONFIRMED); blackbody ω² DOS as the DOS of a 3D host CORRESPONDENCE (hosted higher-
+layer geometry, NP_028/034 unchanged); D96 / any C_N(±1..±K) ring as a 3D blackbody
+DOS host FALSIFIED (unchanged, NP_032); finite count / topology / circulant structure
+as the cause FALSIFIED; 3D tensor product C_N^⊗3 preserving the D96 local rule → N ∝
+ω³ DERIVED (minimal construction). The D96 mode set is a 1D structure — one integer
+mode index, linear dispersion, N(ω) ∝ ω (p = 1). The blackbody ω² DOS requires three
+independent mode indices and is hosted higher-layer content, minimally realized by
+the 3D tensor product of three D96 rings. Dimensionality — not topology, count,
+coupling range, or circulant symmetry — is the exact structural origin of the
+blackbody DOS mismatch. No new primitive; canonical AT unchanged.
+
+ResearchY-NP_036 (3D Emergence Audit, COMPLETE, tests 9/9 PASSED): can observed 3D
+physics emerge from multiple D96 structure sectors? Is the observed 3D blackbody DOS
+(N(ω) ∝ ω³, g(ω) ∝ ω²) naturally explained as D96⊗D96⊗D96? Verdict: the ω³ DOS IS
+reproduced by D96⊗D96⊗D96 — as a HOSTED CORRESPONDENCE, NOT an EMERGENT consequence
+of a single D96 sector. DOS EXPONENTS (verified): D96 (single ring, 1 integer index)
+p=1 (octave doubling); D96⊗D96 (2 axes) p→2; D96⊗D96⊗D96 (3 axes) p→3 (3D Weyl
+counts: positive-octant ball exponent → 3, coefficient → (π/6)R³). COMPARISON: the
+blackbody DOS g∝ω², free-field 3D mode counting, and 3D-cavity spectrum all give
+N(ω)∝ω³ with the (π/6)R³ Weyl coefficient — IDENTICAL to D96⊗3; the 2D count gives
+(π/4)R² (the wrong law); Stefan-Boltzmann ∫x³/(e^x−1)dx = π⁴/15 = 6.4939 ✓.
+SUFFICIENCY (verified): the tensor eigenvalues are separable Λ = λ_k1+λ_k2+λ_k3, so
+ω ≈ c|k| with k ∈ Z³ — three independent D96 coordinates are MINIMALLY sufficient for
+N ∝ ω³ (fewer axes give R¹ or R²). "OBSERVED 3D = ONE D96 AXIS × THREE" (verified as
+construction): the three-axis tensor reproduces the 3D Weyl DOS — BUT canonical AT is
+ONE D96 ring (p=1 at every N, K — NP_032/035), the metric ansatz g = ρ^(2/d)η is
+dimension-generic (only d ≥ 3 derived via the (d−2) Einstein factor, QG290), and
+nothing derives that three independent copies must be stacked — so the observed 3D DOS
+as D96⊗3 is CORRESPONDENCE (hosted 3D geometry), not EMERGENT. HIDDEN TRIPLE-FACTOR
+STRUCTURE (verified): AT already contains A = Σm·#g·occ₂ = 95·44·87 = 363,660 (three
+spectral counts of the single ring: mode count × distinct freqs × top-octave modes),
+cubed to the dimensionless Planck content: M_Pl = v·A³ = 1.2234e19 GeV with cube
+exponent p = ln(M_Pl/v)/ln(A) = 3.0000 (QG181/183) — but this is a FREQUENCY-CONTENT
+triple within one ring, NOT three spatial axes; the three octave families [4,4,87]
+(QG210) are likewise octave bands within one frequency coordinate. COUNTEREXAMPLES: 'a
+single D96 ring produces 3D' fails (p=1 at every N, K); 'D96⊗D96 gives the blackbody'
+fails (2D, ω² not ω³); 'D96⊗3 emerges from canonical AT' fails (one ring; the tensor
+is a hosted construction); 'd=3 is derived from D96 count structure' fails (metric
+dimension-generic, only d ≥ 3, QG290); 'the three octave families are the three axes'
+fails ([4,4,87] are three octave BANDS within one frequency coordinate); 'A = 95·44·87
+is a spatial triple' fails (a frequency-content triple, cubed for M_Pl). FALSIFICATION:
+a 3-fold D96 tensor whose N(ω) does not scale as ω³; a single ring with DOS exponent 3
+at any N, K; a canonical derivation of three independent D96 axes or d=3 from the D96
+boundary set alone. Classification: DOS exponent p=d of the d-fold D96 tensor DERIVED
+(Weyl lattice count); three independent D96 coordinates SUFFICIENT for N(ω)∝ω³ DERIVED
+(as a construction); observed 3D blackbody DOS as D96⊗D96⊗D96 CORRESPONDENCE (hosted
+3D geometry, NP_028/034/035 unchanged); 3D EMERGING from a single D96 sector
+FALSIFIED (single ring p=1); spatial dimension d=3 as a canonical D96 output FALSIFIED
+(metric dimension-generic, d ≥ 3 only); hidden triple A = 95·44·87 → M_Pl = v·A³
+DERIVED (QG181/183 — frequency-content triple, not spatial). The observed 3D DOS is
+naturally explained as D96⊗3 only as a hosted 3D construction (CORRESPONDENCE), not as
+an emergent product of a single D96 sector. No new primitive; canonical AT unchanged.
+
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-
