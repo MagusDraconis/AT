@@ -3291,6 +3291,28 @@ gate) NEW PRIMITIVE (1 added, GHZ class only). Success criterion: the first stru
 capable of GHZ, W, and multipartite entanglement = the 3-body joint state. Canonical
 D96 unchanged.
 
+ResearchY-NP_043 (Joint State Origin Audit, COMPLETE, tests 7/7 PASSED): can Joint
+States be derived from existing canonical objects, or are they irreducible primitives?
+Verdict: IRREDUCIBLE PRIMITIVES (NEW PRIMITIVE) — not DERIVED and not EMERGENT from any
+canonical object. CANONICAL INVENTORY (verified, none entanglement-capable):
+Difference (η) = real scalar; Actualization = branching μ=2 → diagonal occupancy
+(classical); Occupancy = diagonal counts [4,4,87] (separable); Information = I_occ/MI
+(a scalar / classical correlation — MI>0 but concurrence 0); D96 spectrum = 95 real
+frequencies (no amplitude); Phase (θ=2πk/N) = single-DOF amplitude (interference,
+rank 1). DERIVATION ATTEMPTS (verified): 2-body — sweeping phase products / shared
+occupancy / single-DOF interference reaches max Schmidt rank 1, and the Bell state
+(rank 2) is unreachable → IRREDUCIBLE; 3-body — canonical objects + 2-body links give
+biseparable states (τ₃=0), while GHZ (τ₃=1) and W (pairwise C=2/3) are unreachable →
+IRREDUCIBLE. PRIMITIVE COUNT (measured): canonical = 0 joint states; 2-body joint link
+state = 1 (NP_039); 3-body joint state = 1 (NP_042); total = 2 added primitives.
+EARLIEST APPEARANCE (verified): the 2-body joint link state (NP_039) is the first
+rank-2 space; canonical D96 reaches only rank 1 (correlation only, NP_038), and no
+canonical object precedes it. Classification: Difference / Actualization / Occupancy /
+Information / D96 spectrum / Phase DERIVED (single-DOF, classical, or scalar); 2-body
+joint state NEW PRIMITIVE (irreducible); 3-body joint state NEW PRIMITIVE
+(irreducible); deriving or emerging joint states from canonical AT REFUTED. Canonical
+D96 unchanged.
+
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-
