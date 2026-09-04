@@ -3313,6 +3313,28 @@ joint state NEW PRIMITIVE (irreducible); 3-body joint state NEW PRIMITIVE
 (irreducible); deriving or emerging joint states from canonical AT REFUTED. Canonical
 D96 unchanged.
 
+ResearchY-NP_044 (Joint State Necessity Audit, COMPLETE, tests 7/7 PASSED): does any
+observed phenomenon force the introduction of Joint States, or can all currently
+derived AT results exist without them? Verdict: the joint states are an OPTIONAL
+extension (B) of AT that currently functions as a CORRESPONDENCE layer (C) — NOT
+necessary physics (A) for any already-derived result. EXISTING RESULTS (verified,
+joint-free): the canonical state is rank 1, and every derived observable — the D96
+spectrum (95 real frequencies), A = Σm·#g·occ₂ = 95·44·87 = 363,660, M_Pl = v·A³ =
+1.2234e19 GeV, the mass ratios, couplings, ΩΛ — is a scalar / spectral product; no
+joint state appears anywhere. CANONICAL BOUND (verified): sweeping canonical products
+gives max CHSH = 2 (no Bell violation). FIRST FORCED RESULT (verified): the Bell/CHSH
+inequality violation S = 2√2 > 2 is reproduced ONLY by a rank-2 joint state (the Bell
+pair), and no canonical object reaches it — this is the first empirical result that
+cannot be reproduced without the joint-state primitives. AFTER BELL (verified):
+teleportation (F=1, needs a Bell pair) and GHZ (τ₃=1, needs a 3-body joint state) also
+require joint states, later in the empirical hierarchy. Classification: existing
+derived results DERIVED (single-DOF / classical / scalar); joint states as necessary
+physics (A) for current AT REFUTED; joint states as optional extension (B) CONFIRMED;
+joint states as correspondence layer (C) CONFIRMED (parallel to the hosted ω² DOS of
+NP_035/036); the Bell/CHSH violation CORRESPONDENCE (first forced result). Success
+criterion: first non-reproducible empirical result = CHSH > 2. Canonical D96
+unchanged.
+
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-
