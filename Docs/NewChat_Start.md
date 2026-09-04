@@ -3162,6 +3162,135 @@ CORRESPONDENCE (no structural generator of the power); d=3 and ω³ DOS CORRESPO
 3 FALSIFIED (rung-ladder decoupling). No reclassification of prior registry entries
 (D_040 guard respected); no new primitive; canonical AT unchanged.
 
+ResearchY-NP_038 (Entanglement Audit, COMPLETE, tests 8/8 PASSED): can canonical D96
+structures generate true entanglement, or only correlation? Verdict: success
+criterion A — ABSENT; canonical D96 yields ONLY correlation, no genuine Bell-type
+entanglement. MODEL: each sector S ∈ {A,B} is the 2-mode reduction; canonical
+single-sector state ψ_S = √ρ₀e^{iθ₀}|0_S⟩ + √ρ₁e^{iθ₁}|1_S⟩ with θ_k = 2πk/96 and
+shares ρ₀=1/3, ρ₁=2/3; joint coefficient c_ij = a_i·b_j. WITNESSES (verified,
+deterministic 2×2 complex algebra): two-sector product ψA⊗ψB has Schmidt rank 1,
+concurrence 0, CHSH=2 (DERIVED, factorizable); shared-event classical mixture
+p|00⟩⟨00|+(1−p)|11⟩⟨11| (p=1/3) has MI = H(1/3) = 0.918 bits > 0 but concurrence 0
+and CHSH=2 (diagonal ⇒ PPT-separable — DERIVED classical correlation, not
+entanglement); single-DOF interference I = |a|²+|b|²+2Re(a·conj b) =
+ρ0+ρ1+2√(ρ0ρ1)cosΔθ is the intensity of ONE complex amplitude (DERIVED as an
+OBSERVABLE, NOT an entangler — tensoring with a second sector stays rank 1); Bell
+state (|00⟩+|11⟩)/√2 has Schmidt rank 2, concurrence 1, CHSH = 2√2, and sweeping the
+canonical product grid (sector indices × shares {1/3,1/2,2/3}) NEVER reaches rank 2
+(an entangling gate / joint coherent preparation is required). CANONICAL GENERATORS
+(verified): per-sector actualization (product), local phase update θ(t+1)=θ(t)+Δθ
+(local unitary U_A⊗U_B), local quadrature measurement (M_001), and the interference
+observable (NP_008/009) all preserve Schmidt rank 1 and concurrence 0. LEGACY
+RECONCILIATION: QG070/71 (canonical) — shared link phases give classical
+correlations, genuine entanglement REQUIRES a NEW SECTOR (joint link state /
+entangling interaction) not in {θ, S}; QG018 — the single-DOF scalar sector gives 1
+breathing mode and needs an imported tensor sector (precedent); ResearchQM-003's
+DERIVED entanglement claim uses a DIFFERENT primitive base (Q-event individuation +
+M² non-linearity) and does NOT transfer to the D96 chain; the canonical primitive
+set {Difference, η, Z2-paired sector, 3 octave families, SU(2) gauge, v, m_e}
+contains no entangler (verified). FOUR CLASSES: correlation present (DERIVED,
+classical); synchronization EMERGENT only for equal modes (trivial co-rotation, a
+product-state classical relation); resonance locking of unequal modes ABSENT/BOUNDARY
+(NP_005/006/009/014 unchanged); genuine entanglement REFUTED/ABSENT as a D96 output;
+observed entanglement CORRESPONDENCE/BOUNDARY (needs NEW entangling sector, QG70/71
+unchanged). Classification: product DERIVED; shared-event correlation DERIVED;
+single-DOF interference DERIVED-not-entangler; genuine entanglement from canonical
+D96 REFUTED/ABSENT; entanglement needs new sector CORRESPONDENCE/BOUNDARY; success
+criterion A. No new primitive; canonical AT unchanged.
+
+ResearchY-NP_039 (Minimal Entanglement Sector Audit, COMPLETE, tests 7/7 PASSED):
+what is the minimal extension required to obtain Bell-type entanglement (canonical
+D96 unchanged)? Verdict: ONE new primitive — the joint link state (a coherent
+two-sector amplitude c_ij with Schmidt rank ≥ 2, e.g. a Bell pair), hosted on the
+DERIVED A×B tensor product; added primitive count = 1. CANDIDATES (verified,
+deterministic 2×2 complex algebra): A) complex phase sector — single-DOF phase θ
+(ALREADY canonical, QG220) → Schmidt rank 1, concurrence 0, CHSH=2 (interference,
+not non-separability); B) tensor-state sector — the A×B product space, filled with
+canonical content, holds ONLY product states (rank 1) — a DERIVED formal
+construction (the host; same hosted-construction status as NP_036's D96⊗3), not an
+entangler; C) shared occupancy sector — shared events / joint phase pinning → MI =
+H(1/3) = 0.918 bits > 0 but concurrence 0, CHSH=2 (diagonal-separable classical
+correlation); D) non-local information sector — a coherent joint amplitude (Bell
+pair (|00⟩+|11⟩)/√2) → Schmidt rank 2, concurrence 1, CHSH = 2√2 — the FIRST and
+ONLY candidate that entangles. ADDED PRIMITIVE COUNT (measured): A = 0 (θ already
+canonical), B = 0 (formal construction), C = 0 (derived classical correlation),
+D = 1 (joint link state) — minimal added primitive count = 1, attained by D alone.
+LEGACY: QG70 (REQUIRES NEW SECTOR — θ + S give interference + spinor DOF but the
+entangling interaction is missing) and QG71 (NEW SECTOR — the minimal additional
+link content is the joint link state) are CONFIRMED and quantified; NP_038
+(entanglement ABSENT, only correlation) is the direct predecessor. Classification:
+A DERIVED (REFUTED as entangler); B DERIVED (host); C DERIVED (REFUTED as entangler);
+D NEW PRIMITIVE (1 added); entanglement from θ + S alone REFUTED. Canonical D96
+unchanged; no new primitive beyond the QG71 joint link state.
+
+ResearchY-NP_040 (Joint Link Formalization Audit, COMPLETE, tests 8/8 PASSED): what
+is the minimal mathematical object representing the QG71 Joint Link State? Verdict:
+a normalized rank-2 complex 2×2 matrix — a coherent two-qubit amplitude c_ij with
+det c ≠ 0 — with minimum ontology ONE NEW STATE OBJECT (NEW PRIMITIVE, per NP_039),
+hosted on the 2-node link. EQUIVALENCE (verified): for a normalized pure two-qubit
+state the three required properties are ONE condition — Schmidt rank 2 ⇔ concurrence
+C = 2|det c| > 0 ⇔ CHSH = 2√(1+C²) > 2 ⇔ det c ≠ 0 (swept the diagonal family
+a|00⟩+b|11⟩, a=cos α, b=sin α, plus a non-diagonal rank-2 example). MINIMALITY
+(verified): one nonzero entry is a product (rank 1); two nonzero entries in a
+full-rank arrangement (a|00⟩+b|11⟩, a,b≠0) already give rank 2 — the minimum content
+is a two-term coherent superposition, canonical representative the Bell pair
+(|00⟩+|11⟩)/√2. PROPERTIES (verified): symmetry (X⊗X invariant, symmetric under
+A↔B, ρ_A=ρ_B=I/2); normalization (Σ|c_ij|²=1, singular values squared sum to 1);
+composition (per-link primitive — two links compose by tensor product, combined
+4-qubit amplitude normalized); locality (NON-LOCAL — each sector maximally mixed I/2,
+joint state pure with C=1). ONTOLOGY (verified): NOT a graph edge (no amplitude), NOT
+an information link (diagonal, rank 1), NOT an occupancy link (diagonal, rank 1), NOT
+a phase link (single-DOF, rank 1) — it IS a new state object (a rank-2 joint
+amplitude). Classification: rank-2 2×2 matrix as the minimal object DERIVED;
+two-term superposition as minimal content DERIVED; joint link state as graph /
+information / occupancy / phase link REFUTED; joint link state as new state object
+NEW PRIMITIVE (NP_039; QG71). Formalizes QG71 with minimum ontology. Canonical D96
+unchanged.
+
+ResearchY-NP_041 (Joint Link Consequence Audit, COMPLETE, tests 8/8 PASSED): does the
+Joint Link State reproduce known quantum-entanglement phenomenology, and can a rank-2
+joint link generate the standard hierarchy of entangled states? Verdict: the joint
+link state is a COMPLETE TWO-BODY entanglement sector, NOT a complete multipartite
+sector — it is MERELY SUFFICIENT FOR BELL PAIRS (success criterion). TWO-BODY
+PHENOMENOLOGY (verified, DERIVED): Bell pair (rank 2, concurrence C=1, CHSH=2√2,
+entanglement entropy S(ρ_A)=1 bit); entanglement entropy (S(ρ_A)=H(a²) for
+a|00⟩+b|11⟩); CKW monogamy (C²(AB)+C²(AC) ≤ 4·det(ρ_A); GHZ strict τ₃=1, W saturated
+τ₃=0); teleportation fidelity (F=(2+C)/3, Bell → F=1). MULTIPARTITE PHENOMENOLOGY
+(verified, NOT DERIVED from a 2-body link): GHZ (|000⟩+|111⟩)/√2 has 3-tangle τ₃=1
+but SEPARABLE bipartite reductions (C=0, CHSH=2), so GHZ ≠ Bell⊗Bell — it needs a
+3-body joint state / entangling gate; W (|001⟩+|010⟩+|100⟩)/√3 has τ₃=0 (a distinct
+SLOCC class) with ENTANGLED bipartite reductions (C=2/3) — genuinely tripartite, not
+a product of two-body links. A network of 2-body joint links is biseparable and cannot
+produce genuine tripartite entanglement. Classification: Bell pair DERIVED;
+entanglement entropy DERIVED; CKW monogamy DERIVED; teleportation fidelity DERIVED;
+GHZ from a single rank-2 link REFUTED; W from a single rank-2 link REFUTED; genuine
+multipartite entanglement CORRESPONDENCE (hosted by a 3-body joint state / entangling
+gate). Success criterion: the joint link state is merely sufficient for Bell pairs,
+NOT a complete entanglement sector. Canonical D96 unchanged.
+
+ResearchY-NP_042 (Multipartite Entanglement Audit, COMPLETE, tests 8/8 PASSED): what
+is the minimal extension of the Joint Link State required to obtain GHZ, W, and
+genuine multipartite entanglement? Verdict: ONE new primitive — the 3-body (n-body)
+joint state, the direct generalization of QG71's joint link state from a 2-node link
+to a 3-node hyper-edge; it is the first structure capable of GHZ, W, and genuine
+multipartite entanglement. CANDIDATE ONTOLOGIES (verified, deterministic 3-qubit
+algebra): B) pairwise links only (a network of 2-body Bell pairs, Bell_AB⊗|0⟩_C) is
+biseparable (3-tangle τ₃=0, pairwise concurrence C(AB)=1 but C(AC)=C(BC)=0) — 0 added
+primitives but REFUTED (insufficient); A) 3-body joint state directly hosts GHZ
+(τ₃=1) AND W (τ₃=0 but genuinely tripartite, pairwise C=2/3) — 1 added primitive,
+sufficient for both; C) entangling composition rule (a CZ gate) generates the
+3-qubit cluster/graph state (τ₃=1, LU-equivalent to GHZ) but CANNOT produce W (graph
+states keep all 8 amplitudes equal-magnitude, W has a zero) — 1 added primitive,
+GHZ-class only. ENTROPY PARTITIONS (verified): GHZ S(A)=S(B)=S(C)=1 bit; W
+S=H(2/3)=0.918 bit; biseparable Bell_AB⊗|0⟩_C has S(A)=S(B)=1 but S(C)=0. ADDED
+PRIMITIVE COUNT: B=0 (insufficient), A=1 (sufficient for both), C=1 (GHZ only) — the
+minimal sufficient ontology is A (the 3-body joint state) at 1 added primitive.
+Classification: Bell/CHSH/teleportation DERIVED (NP_041 unchanged); pairwise links
+REFUTED; 3-body joint state NEW PRIMITIVE (1 added); entangling composition rule (CZ
+gate) NEW PRIMITIVE (1 added, GHZ class only). Success criterion: the first structure
+capable of GHZ, W, and multipartite entanglement = the 3-body joint state. Canonical
+D96 unchanged.
+
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-
