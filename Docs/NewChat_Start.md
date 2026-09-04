@@ -3120,6 +3120,48 @@ DERIVED (QG181/183 — frequency-content triple, not spatial). The observed 3D D
 naturally explained as D96⊗3 only as a hosted 3D construction (CORRESPONDENCE), not as
 an emergent product of a single D96 sector. No new primitive; canonical AT unchanged.
 
+ResearchY-NP_037 (The Role of Three Audit, COMPLETE, tests 11/11 PASSED): is the
+recurring exponent 3 — A³ (M_Pl = v·A³, QG181/183), the blackbody DOS ω³ (N(ω) ∝ ω³),
+and the spatial dimension d = 3 — a DERIVED consequence of AT (one canonical
+generator) or only a CORRESPONDENCE to observed 3D physics? Verdict: success
+criterion C — MULTIPLE UNRELATED APPEARANCES; no unified origin. INVENTORY +
+TAXONOMY: every substantive 3/cube/triple classified as STRUCTURAL (single-ring
+values: period-3 seed p=3 DERIVED D_040; N=96 = 3·2⁵ DERIVED; family count 3 =
+floor(log₂ span)+1 VALUE DERIVED / window [4,8) BOUNDARY; occupancy [4,4,87] DERIVED;
+A = 95·44·87 triple DERIVED; 1+3+8 gauge generators structure derived / color-3
+CORRESPONDENCE; ΩΛ = I_occ/ln K ≈ 3), GEOMETRIC (hosted: ω³ DOS, d=3 exact, D96⊗3,
+ρ-support dim — CORRESPONDENCE/EMERGENT except the p=d identity DERIVED), DIMENSIONAL
+(A³; p=d), NUMERICAL/COINCIDENTAL (QG183 p=2.99984 read of observed M_Pl/v; color/
+generation 3 QG80 coincidental; valence-3 QG83 coincidence). REMOVAL (verified):
+remove the cube → A¹/A²/A⁴ fail the Planck scale by 100%/99.9997%/3.6e7% (QG183 power
+test); remove the 3-family window → N=48/192/384 (2/4/5 families) exist but the QG209
+lepton ratio m_μ/m_e = Σm²/√occMom matches physical 206.77 only at N=96 (N=48 → 102.3,
+N=192 → 416.3) and the cosmology deviates (QG_013); remove the third axis D96⊗3 →
+D96⊗2 gives the wrong 2D Weyl law (π/4)R² and loses Stefan–Boltzmann π⁴/15; remove the
+exact value 3 of d → NOTHING breaks (Einstein prefactor (d−1)(d−2) is zero at d=2 and
+non-zero for every d ≥ 3 — only the inequality d ≥ 3 is load-bearing, the value 3 is
+hosted). COMMON-GENERATOR SEARCH — NEW RUNG-LADDER FALSIFIER: generalizing the QG183
+exponent read across the pairing-complete octave rungs e(N) = ln(M_Pl/v(N))/ln A(N)
+gives e = 3.735 (N=48, 2 bands), 2.9998 (N=96, 3 bands), 2.502 (N=192, 4 bands),
+2.138 (N=384, 5 bands) — e(N) is monotone decreasing and equals the octave-band count
+ONLY at N=96, so the QG183 "cube = three octave bands" anatomy is a VALUE COINCIDENCE
+at the canonical rung, NOT a causal generator. AXIS/FAMILY DECOUPLING (verified):
+single ring family=3/4/5 always has DOS p=1.000; the 3-family ring's tensor ⊗1/⊗2/⊗3
+gives p=1/2/3; the cube e(N) is independent of both. UNIFIED-ORIGIN TEST: A³, ω³ and
+d=3 are set by three DIFFERENT inputs — the span window [4,8) (BOUNDARY), the observed
+M_Pl/v ratio (BOUNDARY input), and the hosted 3D spatial dimension (CORRESPONDENCE) —
+they coincide only numerically at N=96. DERIVATION ATTEMPT: the octave/family 3 is
+DERIVED from the N=96 ring alone (span); the cube exponent 3 is NOT derivable from the
+ring alone (e(N) is not a structural constant); d=3 is NOT derivable (only d ≥ 3);
+DOS p=3 from one ring FALSIFIED (p=1); no canonical object produces all three 3s.
+Classification: family/octave VALUE 3 DERIVED (window BOUNDARY, D_040 unchanged);
+triple A = 95·44·87 and cube content DERIVED (QG181/183, NP_036 frequency-content
+triple); cube exponent 3 value DERIVED as a read of the observed M_Pl/v but law-level
+CORRESPONDENCE (no structural generator of the power); d=3 and ω³ DOS CORRESPONDENCE
+(hosted, unchanged NP_035/036); a UNIFIED structural origin of the recurring exponent
+3 FALSIFIED (rung-ladder decoupling). No reclassification of prior registry entries
+(D_040 guard respected); no new primitive; canonical AT unchanged.
+
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-

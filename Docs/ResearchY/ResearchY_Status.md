@@ -128,6 +128,10 @@
 | ResearchY-NP_031 | Structure vs Thermodynamics Audit | `NP_NewPhysics/ResearchY-NP_031.md` | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_031_Tests.cs` (8/8 ✅) | COMPLETE |
 | ResearchY-NP_032 | Thermal-N Search Audit | `NP_NewPhysics/ResearchY-NP_032.md` | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_032_Tests.cs` (9/9 ✅) | COMPLETE |
 | ResearchY-NP_033 | D96 Ensemble Audit | `NP_NewPhysics/ResearchY-NP_033.md` | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_033_Tests.cs` (9/9 ✅) | COMPLETE |
+| ResearchY-NP_034 | Bose Without Blackbody Audit | `NP_NewPhysics/ResearchY-NP_034.md` | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_034_Tests.cs` (10/10 ✅) | COMPLETE |
+| ResearchY-NP_035 | Density-of-States Origin Audit | `NP_NewPhysics/ResearchY-NP_035.md` | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_035_Tests.cs` (10/10 ✅) | COMPLETE |
+| ResearchY-NP_036 | 3D Emergence Audit | `NP_NewPhysics/ResearchY-NP_036.md` | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_036_Tests.cs` (9/9 ✅) | COMPLETE |
+| ResearchY-NP_037 | The Role of Three Audit | `NP_NewPhysics/ResearchY-NP_037.md` | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_037_Tests.cs` (11/11 ✅) | COMPLETE |
 | ResearchY-S_001 | Post-V2.1 Theory Architecture Synthesis | `S_Synthesis/ResearchY-S_001.md` | `AT.Tests/ResearchY/S_Synthesis/Y_S_001_Tests.cs` (4/4 ✅) | COMPLETE |
 | ResearchY-M_001 | Measurement Origin Audit | `M_Measurement/ResearchY-M_001.md` | `AT.Tests/ResearchY/M_Measurement/Y_M_001_Tests.cs` (7/7 ✅) | COMPLETE |
 | ResearchY-M_002 | Measurement Disturbance Audit | `M_Measurement/ResearchY-M_002.md` | `AT.Tests/ResearchY/M_Measurement/Y_M_002_Tests.cs` (7/7 ✅) | COMPLETE |
