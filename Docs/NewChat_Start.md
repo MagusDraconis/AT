@@ -3335,6 +3335,27 @@ NP_035/036); the Bell/CHSH violation CORRESPONDENCE (first forced result). Succe
 criterion: first non-reproducible empirical result = CHSH > 2. Canonical D96
 unchanged.
 
+ResearchY-NP_045 (CHSH Reality Audit, COMPLETE, tests 8/8 PASSED): must AT accept CHSH
+violations as fundamental physics? Verdict: YES — the joint-state sector is REQUIRED
+PHYSICS for a complete theory of observed entanglement. EVIDENCE (verified): Bell 1964
+(local realism ⇒ |S| ≤ 2, a theorem); CHSH 1969 (operational inequality S ≤ 2); Aspect
+1982 (first experimental violation S ≈ 2.7 > 2); Zeilinger (teleportation + GHZ
+experiments); loophole-free 2015 (Hensen/Giustina/Shalm, S > 2 with detection + locality
+closed) — four independent classes confirm the Bell/CHSH violation as a robust,
+loophole-free empirical fact. CANONICAL AT (verified): sweeping canonical products
+gives max CHSH = 2 — it MISSES the fact. JOINT-STATE SECTOR (verified): the Bell pair
+gives CHSH = 2√2, teleportation F = 1, GHZ τ₃ = 1 — it reproduces the full hierarchy.
+OPTION C (reproduce CHSH > 2 without joint states) REFUTED (no canonical object reaches
+S > 2, NP_038/043). OBSERVATIONS EXPLAINED/MISSED (verified): canonical AT 0/4 (Bell,
+teleportation, GHZ, W all missed); joint-state sector 4/4. CONSISTENCY (verified): both
+sectors are internally consistent; adding the joint-state sector introduces no
+contradiction. Classification: CHSH > 2 as a physical fact (A) CONFIRMED; reproducing
+without joint states (C) REFUTED; joint states as REQUIRED PHYSICS CONFIRMED (for
+observed entanglement); joint states as a CORRESPONDENCE layer CONFIRMED (hosted,
+non-derived from canonical D96); NP_044 "optional extension" REFINED — optional for the
+currently-derived chain, but REQUIRED for the observed Bell violation. Canonical D96
+unchanged.
+
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-
