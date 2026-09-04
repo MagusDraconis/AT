@@ -3356,6 +3356,27 @@ non-derived from canonical D96); NP_044 "optional extension" REFINED — optiona
 currently-derived chain, but REQUIRED for the observed Bell violation. Canonical D96
 unchanged.
 
+ResearchY-NP_046 (Joint State Physical Necessity Audit, COMPLETE, tests 8/8 PASSED):
+why does nature require Joint States? Verdict: because actuality is not always
+decomposable into independent single-sector actualizations — NON-SEPARABILITY IS
+PRIMITIVE. COMMON FEATURE (verified): Bell, teleportation, GHZ, and W all share
+non-separability — the joint state is irreducible to the states of its parts (rank > 1
+for 2-body, genuine tripartiteness for 3-body). CANDIDATES (verified): A) shared
+information — MI > 0 is classical and separable (already canonical, NP_038) → REFUTED;
+B) shared actualization — joint phase pinning gives a product state (rank 1) → REFUTED;
+C) SHARED REALITY — for a Bell pair each single sector is maximally mixed (ρ_A = I/2,
+S = 1 bit, no local reality) yet the joint state is pure (S = 0); the coherence lives
+ONLY in the joint object, the reality is in the relation, not the parts → CONFIRMED;
+D) fundamentally new ontology — the rank-2 joint amplitude (NP_040's new state object)
+→ CONFIRMED. REMOVE JOINT STATES (verified): the Bell/CHSH violation (S > 2) fails
+first, then teleportation (F ≤ 2/3), then GHZ/W (τ₃ = 0). MINIMAL PHYSICAL PRINCIPLE:
+the irreducibility of joint actualization to separate single-sector actualizations —
+non-separability is primitive; nature must contain joint states because the Bell
+violation proves two subsystems can actualize one coherent state that no single
+subsystem possesses. Classification: shared information (A) REFUTED; shared
+actualization (B) REFUTED; shared reality (C) CONFIRMED; new ontology (D) CONFIRMED;
+non-separability as the minimal principle NEW PRIMITIVE. Canonical D96 unchanged.
+
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-
