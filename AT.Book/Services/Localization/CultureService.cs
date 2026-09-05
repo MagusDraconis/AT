@@ -29,13 +29,22 @@ public sealed class CultureService
     public void Set(string culture)
     {
         Culture = culture is "de" ? "de" : "en";
-        _http.HttpContext?.Response.Cookies.Append(CookieName, Culture, new CookieOptions
+
+        // The cookie may only be written while the response headers are still mutable
+        // (i.e. during the initial server render). During interactive re-renders the
+        // response has already started, so the cookie write must be skipped.
+        var ctx = _http.HttpContext;
+        if (ctx is not null && !ctx.Response.HasStarted)
         {
-            Path = "/",
-            Expires = DateTimeOffset.UtcNow.AddYears(1),
-            HttpOnly = true,
-            SameSite = SameSiteMode.Lax,
-        });
+            ctx.Response.Cookies.Append(CookieName, Culture, new CookieOptions
+            {
+                Path = "/",
+                Expires = DateTimeOffset.UtcNow.AddYears(1),
+                HttpOnly = true,
+                SameSite = SameSiteMode.Lax,
+            });
+        }
+
         var ci = CultureInfo;
         CultureInfo.CurrentCulture = ci;
         CultureInfo.CurrentUICulture = ci;
