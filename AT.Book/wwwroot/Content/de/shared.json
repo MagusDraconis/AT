@@ -1,5 +1,5 @@
 {
-  "app.title": "Die Atlas-Theorie",
+  "app.title": "Die Aktualisierungstheorie",
   "app.subtitle": "Ein interaktives wissenschaftliches Buch",
   "app.tagline": "Eine Theorie der Aktualisierung, Struktur, Information und physischen Realität.",
   "app.thesis": "Von der Differenz zur Kosmologie. Von der Struktur zur Beobachtung.",
@@ -26,11 +26,11 @@
   "part.correspondence": "Teil VI · Korrespondenz",
   "part.correspondence.subtitle": "Thermodynamik, Quantenschicht, Verbundzustand, Verschränkungs-Gate",
 
-  "home.heroTitle": "Die Atlas-Theorie",
+  "home.heroTitle": "Die Aktualisierungstheorie",
   "home.heroSubtitle": "Eine Theorie der Aktualisierung, Struktur, Information und physischen Realität.",
   "home.thesis": "Von der Differenz zur Kosmologie. Von der Struktur zur Beobachtung.",
   "home.introHeading": "Einleitung",
-  "home.whatHeading": "Was ist die Atlas-Theorie?",
+  "home.whatHeading": "Was ist die Aktualisierungstheorie?",
   "home.tocHeading": "Inhaltsverzeichnis",
   "home.beginReading": "Loslesen",
   "home.beginReadingHint": "Beginne beim Vorwort oder springe direkt zu einem Teil.",
