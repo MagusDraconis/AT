@@ -49,7 +49,8 @@
                 if (Registry.ObjectById.ContainsKey(d))
                     edges.Add(new
                     {
-                        data = new { id = $"dep-{o.Id}-{d}", kind = "dependency", source = "obj-" + o.Id, target = "obj-" + d }
+                        // Arrow flows from foundation -> derived: Difference first, then its consequences.
+                        data = new { id = $"dep-{d}-{o.Id}", kind = "dependency", source = "obj-" + d, target = "obj-" + o.Id }
                     });
         }
 
