@@ -3481,6 +3481,27 @@ observation itself (C) CONFIRMED; entanglement sector CORRESPONDENCE (hosted,
 non-derived). This is the capstone of the entanglement program (NP_038–NP_051):
 canonical D96 unchanged.
 
+ResearchY-NP_052 (Quantum Primitive Completeness Audit, COMPLETE, tests 9/9 PASSED):
+are Joint State and Entangling Gate the complete minimal quantum extension? Verdict:
+YES — the two primitives are COMPLETE (success criterion A); no third primitive, no
+incompleteness. REPRODUCED (verified): Bell, CHSH, teleportation (2-body), GHZ, W
+(3-body). UNTESTED FEATURES (verified, all compositions/consequences): entanglement
+swapping is teleportation of half a Bell pair — the identity |Φ+⟩_AB⊗|Φ+⟩_CD = 1/2 Σᵢ
+|Bellᵢ⟩_AD⊗|Bellᵢ⟩_BC holds, so each BC Bell outcome is equiprobable (1/4) and the AD
+pair is always maximally entangled (C=1): a composition of {joint state, gate};
+delayed choice and quantum eraser are SINGLE-DOF phase phenomena — interference
+P = cos²(φ/2) on one qubit (canonical θ + M_001), no entanglement, no gate, no third
+primitive; contextuality is IMPLIED by the CHSH violation (CHSH = 2√2 > 2 ⇒ no
+non-contextual hidden-variable assignment) — a theorem, not a primitive; many-body
+scaling is TENSOR PRODUCTS — GHZ_n = (|0…0⟩+|1…1⟩)/√2 has exactly 2 terms for every n,
+built from n−1 CNOT gates, so the ontology does not grow with n. ONTOLOGY SIZE = 2
+(joint state + entangling gate, NP_040/048). Classification: Bell/CHSH/teleportation/
+GHZ/W/swapping/contextuality/many-body CORRESPONDENCE; delayed choice/eraser DERIVED
+(single-DOF); two primitives complete (A) CONFIRMED; third primitive (B) REFUTED;
+incompleteness (C) REFUTED. This completes the entanglement program: the minimal
+quantum extension of canonical D96 is exactly {Joint State, Entangling Gate}. Canonical
+D96 unchanged.
+
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-
