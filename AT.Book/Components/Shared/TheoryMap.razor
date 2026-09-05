@@ -59,12 +59,12 @@
                 data = new
                 {
                     id = pid,
-                    label = Loc[part.TitleKey],
+                    label = Loc[part.TitleKey].Value,
                     level = 1,
                     layer = LayerName(PartLayer(part.Id)),
                     parent = (string?)null,
                     url = (string?)null,
-                    summary = Loc[part.SubtitleKey],
+                    summary = Loc[part.SubtitleKey].Value,
                 }
             });
 
@@ -75,12 +75,12 @@
                     data = new
                     {
                         id = "ch-" + ch.Id,
-                        label = Loc[$"chapter.{ch.Id}.title"],
+                        label = Loc[$"chapter.{ch.Id}.title"].Value,
                         level = 2,
                         layer = LayerName(PartLayer(part.Id)),
                         parent = pid,
                         url = $"/{CultureState.Culture}/chapter/{ch.Id}",
-                        summary = Loc[$"chapter.{ch.Id}.summary"],
+                        summary = Loc[$"chapter.{ch.Id}.summary"].Value,
                     }
                 });
             }
