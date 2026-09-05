@@ -3418,6 +3418,26 @@ REFUTED; gate NEW PRIMITIVE CONFIRMED. The entanglement sector therefore needs T
 irreducible primitives — the joint state (NP_043) and the entangling gate (NP_048) —
 parallel and consistent. Canonical D96 unchanged.
 
+ResearchY-NP_049 (Entangling Gate Necessity Audit, COMPLETE, tests 7/7 PASSED): is the
+Entangling Gate forced by observed quantum experiments, or could an alternative
+primitive replace it? Verdict: UNIQUELY REQUIRED AS A KIND (A) — the non-local
+entangling interaction — and NOT replaceable (C REFUTED). PHENOMENA (verified): Bell,
+CHSH, teleportation (2-body) and GHZ, W (3-body) all require creation (rank 1 → rank 2),
+which is the gate's exclusive job. REMOVE GATE (verified): retaining joint states but
+removing the gate leaves them statically present (rank 2) but UNPREPARABLE — no
+canonical operation creates rank 2 from a product (NP_048). ALTERNATIVES (verified, all
+fail): shared actualization (phase pinning) → rank 1; non-local/shared phase → rank 1
+(a genuinely non-local phase acting jointly on both qubits IS a controlled-phase = the
+gate itself, so no distinct alternative); resonance coupling → ABSENT (NP_005/006);
+information coupling → MI>0 but separable (C=0). EQUIVALENCE (verified): CNOT, CZ,
+iSWAP, and √SWAP each create a rank-2 state from a product input — they are
+LU-equivalent representatives of the SAME primitive (the non-local entangling
+interaction) in different bases, not several independent primitives. PRIMITIVE COST:
+gate = 1; alternatives = 0 but insufficient. Classification: gate uniquely required (A)
+CONFIRMED as a kind; representative freedom (CNOT ≡ CZ ≡ iSWAP ≡ √SWAP) CONFIRMED; gate
+replaceable by an alternative (C) REFUTED; gate NEW PRIMITIVE CONFIRMED (NP_047/048).
+Canonical D96 unchanged.
+
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-
