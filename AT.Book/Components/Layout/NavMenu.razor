@@ -1,47 +1,46 @@
 @namespace AT.Book.Components.Layout
 @using MudBlazor
 @using AT.Book.Services
-@inject TheoryGraphService Graph
+@using AT.Book.Services.Localization
+@using Microsoft.Extensions.Localization
+@inject ChapterRegistry Book
+@inject CultureService Culture
+@inject IStringLocalizer<App> Loc
 
 <MudNavMenu Class="px-2 py-3">
     <div class="nav-brand px-3 pb-3">
-        <MudText Typo="Typo.subtitle1" Class="fw-bold">AT.Book</MudText>
-        <MudText Typo="Typo.caption" Class="muted">Actualization Theory — Operating System</MudText>
+        <MudText Typo="Typo.subtitle1" Class="fw-bold">@Loc["app.title"]</MudText>
+        <MudText Typo="Typo.caption" Class="muted">@Loc["app.subtitle"]</MudText>
     </div>
 
-    <MudNavLink Href="/" Match="NavLinkMatch.All">
-        <i class="bi bi-house-door nav-icon"></i>Book Home
+    <MudNavLink Href="@($"/{Culture.Culture}")" Match="NavLinkMatch.All">
+        <i class="bi bi-house-door nav-icon"></i>@Loc["app.title"]
     </MudNavLink>
-    <MudNavLink Href="/theory">
-        <i class="bi bi-list-nested nav-icon"></i>Theory Tree
-    </MudNavLink>
-    <MudNavLink Href="/graph">
-        <i class="bi bi-diagram-3 nav-icon"></i>Dependency Graph
-    </MudNavLink>
-    <MudNavLink Href="/calculations">
-        <i class="bi bi-calculator nav-icon"></i>Calculations
-    </MudNavLink>
-    <MudNavLink Href="/audits">
-        <i class="bi bi-clipboard-check nav-icon"></i>Audits
-    </MudNavLink>
-    <MudNavLink Href="/timeline">
-        <i class="bi bi-clock-history nav-icon"></i>Timeline
+    <MudNavLink Href="@($"/{Culture.Culture}/chapter/preface")">
+        <i class="bi bi-journal-bookmark nav-icon"></i>@Loc["nav.preface"]
     </MudNavLink>
 
     <MudDivider Class="my-3" />
 
     <div class="px-3 pb-2">
-        <MudText Typo="Typo.caption" Class="text-uppercase fw-bold muted">The Book</MudText>
+        <MudText Typo="Typo.caption" Class="text-uppercase fw-bold muted">@Loc["nav.toc"]</MudText>
     </div>
-    @foreach (var layer in Graph.Layers)
+
+    @foreach (var part in Book.Parts)
     {
-        <MudNavGroup Title="@TheoryGraphService.LayerName(layer.Layer)" Expanded="@(layer.Layer == TheoryLayer.Foundations)">
-            @foreach (var obj in layer.Objects.OrderBy(o => o.Title))
+        <MudNavGroup Title="@Loc[part.TitleKey]" Expanded="@(part.Id == "foundations")">
+            @foreach (var ch in part.Chapters)
             {
-                <MudNavLink Href="@($"/object/{obj.Id}")">
-                    <span class="theory-nav-part">@obj.Title</span>
+                <MudNavLink Href="@($"/{Culture.Culture}/chapter/{ch.Id}")">
+                    <span class="theory-nav-part">@ch.Order. @Loc[$"chapter.{ch.Id}.title"]</span>
                 </MudNavLink>
             }
         </MudNavGroup>
     }
+
+    <MudDivider Class="my-3" />
+
+    <MudNavLink Href="@($"/{Culture.Culture}/research")">
+        <i class="bi bi-diagram-3 nav-icon"></i>@Loc["nav.researchMode"]
+    </MudNavLink>
 </MudNavMenu>

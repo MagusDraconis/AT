@@ -1,0 +1,31 @@
+@page "/{Culture}/research"
+@page "/{Culture}/forschung"
+@inject CultureService CultureState
+@inject IStringLocalizer<App> Loc
+
+<PageTitle>@($"{Loc["research.title"]} · {Loc["app.title"]}")</PageTitle>
+
+<h2 class="section-heading">@Loc["research.title"]</h2>
+<p class="muted">@Loc["research.subtitle"]</p>
+
+<MudTabs Elevation="1" Rounded="true" Class="mt-3">
+    <MudTabPanel Text="@Loc["research.tab.graph"]">
+        <div class="mt-3"><ResearchGraph /></div>
+    </MudTabPanel>
+    <MudTabPanel Text="@Loc["research.tab.calculations"]">
+        <div class="mt-3"><ResearchCalculations /></div>
+    </MudTabPanel>
+    <MudTabPanel Text="@Loc["research.tab.audits"]">
+        <div class="mt-3"><ResearchAudits /></div>
+    </MudTabPanel>
+</MudTabs>
+
+@code {
+    [Parameter] public string? Culture { get; set; }
+
+    protected override void OnInitialized()
+    {
+        if (Culture is "en" or "de")
+            CultureState.Set(Culture);
+    }
+}

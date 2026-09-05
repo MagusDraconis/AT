@@ -1,0 +1,124 @@
+@page "/{Culture}/chapter/{Id}"
+@page "/{Culture}/kapitel/{Id}"
+@using AT.Book.Services
+@inject ChapterRegistry Book
+@inject CultureService CultureState
+@inject CalculationCatalog CalcCatalog
+@inject IStringLocalizer<App> Loc
+
+<PageTitle>@($"{Loc[$"chapter.{Id}.title"]} · {Loc["app.title"]}")</PageTitle>
+
+@if (Chapter is null)
+{
+    <MudAlert Severity="Severity.Warning">@Loc["notfound.title"]</MudAlert>
+    <MudButton Href="@($"/{CultureState.Culture}")" Variant="Variant.Outlined" Color="Color.Primary" Class="mt-3">@Loc["notfound.back"]</MudButton>
+}
+else
+{
+    <article class="chapter">
+        <ChapterHero Kind="@Chapter.HeroKind" />
+
+        <header class="chapter-header">
+            <p class="chapter-part muted">@Loc[PartTitleKey]</p>
+            <h1 class="chapter-title">@Loc[$"chapter.{Chapter.Id}.title"]</h1>
+            <p class="chapter-summary muted">@Loc[$"chapter.{Chapter.Id}.summary"]</p>
+        </header>
+
+        <section class="chapter-narrative">
+            @foreach (var para in Split(Loc[$"chapter.{Chapter.Id}.narrative"]))
+            {
+                <p>@para</p>
+            }
+        </section>
+
+        <section class="chapter-section">
+            <h2 class="section-heading">@Loc["chapter.section.math"]</h2>
+            <FormulaDisplay Formula="@Loc[$"chapter.{Chapter.Id}.math"]" />
+        </section>
+
+        @if (Chapter.CalculationId is not null && Calculation is not null)
+        {
+            <section class="chapter-section">
+                <MudButton Variant="Variant.Outlined" Color="Color.Secondary" OnClick="@ToggleCalculation"
+                           StartIcon="@Icons.Material.Filled.Functions">
+                    @(_calcOpen ? Loc["chapter.hideCalculation"] : Loc["chapter.showCalculation"])
+                </MudButton>
+                @if (_calcOpen)
+                {
+                    <MudCard Elevation="1" Class="theory-card mt-3">
+                        <MudCardContent>
+                            <MudText Typo="Typo.body2" Class="muted">@Calculation.Formula</MudText>
+                            <MudTable Items="@Calculation.Steps" Hover="true" Dense="true" Elevation="0" Class="mt-2">
+                                <HeaderContent>
+                                    <MudTh>Quantity</MudTh><MudTh>Value</MudTh><MudTh>Note</MudTh>
+                                </HeaderContent>
+                                <RowTemplate>
+                                    <MudTd>@context.Label</MudTd>
+                                    <MudTd><code>@context.Value</code></MudTd>
+                                    <MudTd Class="muted">@context.Note</MudTd>
+                                </RowTemplate>
+                            </MudTable>
+                            @if (Calculation.Conclusion is not null)
+                            {
+                                <MudAlert Severity="Severity.Info" Class="mt-2">@Calculation.Conclusion</MudAlert>
+                            }
+                        </MudCardContent>
+                    </MudCard>
+                }
+            </section>
+        }
+
+        <section class="chapter-section">
+            <h2 class="section-heading">@Loc["chapter.section.consequences"]</h2>
+            <p>@Loc[$"chapter.{Chapter.Id}.consequences"]</p>
+        </section>
+
+        <section class="chapter-section">
+            <h2 class="section-heading">@Loc["chapter.section.history"]</h2>
+            <p>@Loc[$"chapter.{Chapter.Id}.history"]</p>
+        </section>
+
+        <section class="chapter-section">
+            <h2 class="section-heading">@Loc["chapter.section.references"]</h2>
+            <p class="muted">@Loc[$"chapter.{Chapter.Id}.references"]</p>
+        </section>
+
+        <nav class="chapter-nav mt-5">
+            @if (Previous is not null)
+            {
+                <MudButton Href="@($"/{CultureState.Culture}/chapter/{Previous.Id}")" Variant="Variant.Outlined" Color="Color.Primary"
+                           StartIcon="@Icons.Material.Filled.ArrowBack">@Loc["chapter.previousChapter"]</MudButton>
+            }
+            <MudSpacer />
+            @if (Next is not null)
+            {
+                <MudButton Href="@($"/{CultureState.Culture}/chapter/{Next.Id}")" Variant="Variant.Filled" Color="Color.Primary"
+                           EndIcon="@Icons.Material.Filled.ArrowForward">@Loc["chapter.nextChapter"]</MudButton>
+            }
+        </nav>
+    </article>
+}
+
+@code {
+    [Parameter] public string? Culture { get; set; }
+    [Parameter] public string? Id { get; set; }
+
+    private bool _calcOpen;
+
+    protected override void OnInitialized()
+    {
+        if (Culture is "en" or "de")
+            CultureState.Set(Culture);
+    }
+
+    private Chapter? Chapter => Book.Get(Id);
+    private Chapter? Next => Chapter is null ? null : Book.Next(Chapter);
+    private Chapter? Previous => Chapter is null ? null : Book.Previous(Chapter);
+    private CalculationResult? Calculation => CalcCatalog.Get(Chapter?.CalculationId);
+
+    private string PartTitleKey => Chapter?.PartId == "preface" ? "nav.preface" : $"part.{Chapter?.PartId}";
+
+    private void ToggleCalculation() => _calcOpen = !_calcOpen;
+
+    private static IEnumerable<string> Split(string text) => text.Split("\n\n", StringSplitOptions.RemoveEmptyEntries);
+}

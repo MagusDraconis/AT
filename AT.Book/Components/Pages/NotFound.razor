@@ -1,7 +1,11 @@
 @page "/not-found"
+@using AT.Book.Services.Localization
+@using Microsoft.Extensions.Localization
+@inject CultureService Culture
+@inject IStringLocalizer<App> Loc
 
-<PageTitle>Not Found · AT.Book</PageTitle>
+<PageTitle>@($"{Loc["notfound.title"]} · {Loc["app.title"]}")</PageTitle>
 
-<h2 class="section-heading">Not found</h2>
-<p class="muted">That theory object does not exist.</p>
-<MudButton Href="/theory" Variant="Variant.Filled" Color="Color.Primary">Back to the book</MudButton>
+<h2 class="section-heading">@Loc["notfound.title"]</h2>
+<p class="muted">@Loc["notfound.title"]</p>
+<MudButton Href="@($"/{Culture.Culture}")" Variant="Variant.Filled" Color="Color.Primary">@Loc["notfound.back"]</MudButton>

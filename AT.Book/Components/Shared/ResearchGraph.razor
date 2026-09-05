@@ -1,13 +1,16 @@
-@page "/graph"
 @using System.Text.Json
 @using AT.Book.Services
 @inject TheoryGraphService TheoryGraph
 @inject IJSRuntime JS
 
-<PageTitle>Dependency Graph · AT.Book</PageTitle>
-
-<h2 class="section-heading">Dependency Graph</h2>
-<p class="muted">The full directed acyclic graph — every object, every dependency, generated from the registry.</p>
+<div class="legend mb-3">
+    <span class="legend-item"><span class="dot" style="background:#64B5F6"></span>Derived</span>
+    <span class="legend-item"><span class="dot" style="background:#81C784"></span>Emergent</span>
+    <span class="legend-item"><span class="dot" style="background:#FFB74D"></span>Boundary</span>
+    <span class="legend-item"><span class="dot" style="background:#CE93D8"></span>Correspondence</span>
+    <span class="legend-item"><span class="dot" style="background:#E57373"></span>New Primitive</span>
+    <span class="legend-item"><span class="dot" style="background:#90A4AE"></span>Refuted</span>
+</div>
 
 <div class="d-flex gap-2 flex-wrap align-items-center mb-3">
     <MudButton OnClick="@Fit" Variant="Variant.Outlined" Color="Color.Primary" StartIcon="@Icons.Material.Filled.CenterFocusStrong">Fit</MudButton>
@@ -22,16 +25,7 @@
     <MudButton OnClick="@Reset" Variant="Variant.Text" Color="Color.Default">Reset</MudButton>
 </div>
 
-<div class="legend mb-3">
-    <span class="legend-item"><span class="dot" style="background:#64B5F6"></span>Derived</span>
-    <span class="legend-item"><span class="dot" style="background:#81C784"></span>Emergent</span>
-    <span class="legend-item"><span class="dot" style="background:#FFB74D"></span>Boundary</span>
-    <span class="legend-item"><span class="dot" style="background:#CE93D8"></span>Correspondence</span>
-    <span class="legend-item"><span class="dot" style="background:#E57373"></span>New Primitive</span>
-    <span class="legend-item"><span class="dot" style="background:#90A4AE"></span>Refuted</span>
-</div>
-
-<div id="theory-graph" class="graph-canvas"></div>
+<div id="research-graph" class="graph-canvas"></div>
 
 @code {
     private string? _selectedId;
@@ -43,21 +37,12 @@
             var nodes = TheoryGraph.Nodes.Select(n => new { data = new { id = n.Id, label = n.Label, classification = n.Classification.ToString(), layer = (int)n.Layer } });
             var edges = TheoryGraph.Edges.Select((e, i) => new { data = new { id = $"e{i}", source = e.Source, target = e.Target } });
             var elements = JsonSerializer.Serialize(new { nodes = nodes.ToArray(), edges = edges.ToArray() });
-            await JS.InvokeVoidAsync("theoryGraph.init", "theory-graph", elements, true);
+            await JS.InvokeVoidAsync("theoryGraph.init", "research-graph", elements, true);
         }
     }
 
     private async Task Fit() => await JS.InvokeVoidAsync("theoryGraph.fit");
-
-    private async Task TraceUpstream()
-    {
-        if (_selectedId is not null) await JS.InvokeVoidAsync("theoryGraph.upstream", _selectedId);
-    }
-
-    private async Task TraceDownstream()
-    {
-        if (_selectedId is not null) await JS.InvokeVoidAsync("theoryGraph.downstream", _selectedId);
-    }
-
+    private async Task TraceUpstream() { if (_selectedId is not null) await JS.InvokeVoidAsync("theoryGraph.upstream", _selectedId); }
+    private async Task TraceDownstream() { if (_selectedId is not null) await JS.InvokeVoidAsync("theoryGraph.downstream", _selectedId); }
     private async Task Reset() => await JS.InvokeVoidAsync("theoryGraph.reset");
 }

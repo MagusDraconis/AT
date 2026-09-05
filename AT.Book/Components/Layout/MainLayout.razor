@@ -1,30 +1,42 @@
 @inherits LayoutComponentBase
 @using MudBlazor
+@using AT.Book.Services.Localization
+@using Microsoft.Extensions.Localization
+@inject CultureService Culture
+@inject NavigationManager Nav
+@inject IStringLocalizer<App> Loc
 
 <MudThemeProvider Theme="_theme" @bind-IsDarkMode="_isDark" />
 <MudPopoverProvider />
 <MudDialogProvider />
 <MudSnackbarProvider />
 
-<MudLayout>
-    <MudAppBar Elevation="1">
-        <MudIconButton Icon="@Icons.Material.Filled.Menu" Color="Color.Inherit" OnClick="@ToggleDrawer" />
-        <MudText Typo="Typo.h6">AT.Book</MudText>
-        <MudChip T="string" Size="Size.Small" Color="Color.Secondary" Variant="Variant.Outlined" Class="ms-3">Theory Operating System</MudChip>
-        <MudSpacer />
-        <MudIconButton Href="/graph" Icon="@Icons.Material.Filled.Hub" Color="Color.Primary" AriaLabel="Theory graph" />
-    </MudAppBar>
+<CascadingValue Value="Culture">
+    <MudLayout>
+        <MudAppBar Elevation="1">
+            <MudIconButton Icon="@Icons.Material.Filled.Menu" Color="Color.Inherit" OnClick="@ToggleDrawer" />
+            <MudText Typo="Typo.h6">@Loc["app.title"]</MudText>
+            <MudChip T="string" Size="Size.Small" Color="Color.Secondary" Variant="Variant.Outlined" Class="ms-3 d-none d-sm-flex">@Loc["app.subtitle"]</MudChip>
+            <MudSpacer />
+            <MudTooltip Text="@Loc["nav.researchMode"]" Placement="Placement.Bottom">
+                <MudIconButton Href="@($"/{Culture.Culture}/research")" Icon="@Icons.Material.Filled.Hub" Color="Color.Primary" AriaLabel="@Loc["nav.researchMode"]" />
+            </MudTooltip>
+            <MudTooltip Text="@OtherLanguageName" Placement="Placement.Bottom">
+                <MudIconButton OnClick="@ToggleLanguage" Icon="@Icons.Material.Filled.Translate" Color="Color.Inherit" AriaLabel="@Loc["nav.language"]" />
+            </MudTooltip>
+        </MudAppBar>
 
-    <MudDrawer @bind-Open="_drawerOpen" Variant="DrawerVariant.Responsive" Breakpoint="Breakpoint.Lg" Anchor="Anchor.Left" Elevation="1">
-        <NavMenu />
-    </MudDrawer>
+        <MudDrawer @bind-Open="_drawerOpen" Variant="DrawerVariant.Responsive" Breakpoint="Breakpoint.Lg" Anchor="Anchor.Left" Elevation="1">
+            <NavMenu />
+        </MudDrawer>
 
-    <MudMainContent>
-        <MudContainer MaxWidth="MaxWidth.Large" Class="py-5 px-4">
-            @Body
-        </MudContainer>
-    </MudMainContent>
-</MudLayout>
+        <MudMainContent>
+            <MudContainer MaxWidth="MaxWidth.Medium" Class="py-5 px-4 book-container">
+                @Body
+            </MudContainer>
+        </MudMainContent>
+    </MudLayout>
+</CascadingValue>
 
 <div id="blazor-error-ui" data-nosnippet>
     An unhandled error has occurred.
@@ -35,6 +47,8 @@
 @code {
     private bool _isDark = true;
     private bool _drawerOpen = true;
+
+    private string OtherLanguageName => Culture.IsEnglish ? "Deutsch" : "English";
 
     private static readonly MudTheme _theme = new()
     {
@@ -54,5 +68,22 @@
         }
     };
 
+    protected override void OnInitialized()
+    {
+        // Set culture from the URL segment so the nav and all localizers agree.
+        var segment = new Uri(Nav.Uri).AbsolutePath.Split('/', StringSplitOptions.RemoveEmptyEntries).FirstOrDefault();
+        if (segment is "en" or "de")
+            Culture.Set(segment);
+    }
+
     private void ToggleDrawer() => _drawerOpen = !_drawerOpen;
+
+    private void ToggleLanguage()
+    {
+        var target = Culture.IsEnglish ? "de" : "en";
+        var path = new Uri(Nav.Uri).AbsolutePath;
+        var segments = path.Split('/', StringSplitOptions.RemoveEmptyEntries);
+        segments[0] = target;
+        Nav.NavigateTo("/" + string.Join("/", segments), forceLoad: true);
+    }
 }

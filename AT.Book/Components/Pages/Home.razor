@@ -1,49 +1,90 @@
 @page "/"
+@page "/{Culture}"
 @using AT.Book.Services
-@using AT.Book.Services.Calculations
-@inject TheoryRegistry Registry
-@inject TheoryGraphService Graph
-@inject CalculationCatalog Calculations
+@inject ChapterRegistry Book
+@inject CultureService CultureState
+@inject NavigationManager Nav
+@inject IStringLocalizer<App> Loc
 
-<PageTitle>AT.Book · Actualization Theory Operating System</PageTitle>
+<PageTitle>@Loc["app.title"] · @Loc["app.subtitle"]</PageTitle>
 
-<div class="hero mb-5">
-    <h1 class="hero-title">AT.Book</h1>
-    <p class="hero-sub muted">The canonical Actualization Theory operating system — an executable, hierarchical, interactive theory book. Not documentation. Not a wiki.</p>
-    <div class="d-flex gap-2 flex-wrap mt-3">
-        <MudButton Href="/theory" Variant="Variant.Filled" Color="Color.Primary">Open the book</MudButton>
-        <MudButton Href="/graph" Variant="Variant.Outlined" Color="Color.Primary">Dependency graph</MudButton>
-        <MudButton Href="/calculations" Variant="Variant.Outlined" Color="Color.Secondary">Run calculations</MudButton>
+<div class="hero">
+    <div class="hero-art" aria-hidden="true">
+        <ChapterHero Kind="preface" />
+    </div>
+    <div class="hero-copy">
+        <p class="hero-kicker">@Loc["app.subtitle"]</p>
+        <h1 class="hero-title">@Loc["home.heroTitle"]</h1>
+        <p class="hero-sub">@Loc["home.heroSubtitle"]</p>
+        <p class="hero-thesis muted">@Loc["home.thesis"]</p>
+        <div class="mt-4">
+            <MudButton Href="@($"/{CultureState.Culture}/chapter/preface")" Variant="Variant.Filled" Color="Color.Primary" Size="Size.Large" StartIcon="@Icons.Material.Filled.AutoStories">
+                @Loc["home.beginReading"]
+            </MudButton>
+        </div>
     </div>
 </div>
 
-<div class="stat-row mb-5">
-    <div class="stat-tile"><div class="stat-value">@Registry.Objects.Count</div><div class="stat-label">Theory objects</div></div>
-    <div class="stat-tile"><div class="stat-value">@Registry.Audits.Count</div><div class="stat-label">Audits</div></div>
-    <div class="stat-tile"><div class="stat-value">@Graph.Layers.Count</div><div class="stat-label">Layers</div></div>
-    <div class="stat-tile"><div class="stat-value">@Calculations.All.Count</div><div class="stat-label">Executable derivations</div></div>
+<div class="intro mt-5">
+    <h2 class="section-heading">@Loc["home.introHeading"]</h2>
+    <p>@Loc["chapter.preface.summary"]</p>
+    <p class="muted">@Loc["home.beginReadingHint"]</p>
 </div>
 
-<h2 class="section-heading">The six layers</h2>
-<p class="muted">Foundation → Structure → Information → Cosmology → Physics → Correspondence.</p>
-
-<MudGrid Spacing="3">
-    @foreach (var layer in Graph.Layers)
+<div class="mt-4">
+    <h2 class="section-heading">@Loc["home.whatHeading"]</h2>
+    @foreach (var para in Split(Loc["chapter.preface.narrative"]))
     {
-        <MudItem xs="12" sm="6" lg="4">
-            <MudCard Elevation="1" Class="theory-card h-100">
-                <MudCardContent>
-                    <MudText Typo="Typo.caption" Class="text-uppercase fw-bold muted">Layer @((int)layer.Layer)</MudText>
-                    <MudText Typo="Typo.subtitle1" Class="fw-bold">@TheoryGraphService.LayerName(layer.Layer)</MudText>
-                    <MudText Typo="Typo.body2" Class="muted">@layer.Objects.Count objects</MudText>
-                    <div class="mt-2 d-flex flex-wrap gap-1">
-                        @foreach (var o in layer.Objects.OrderBy(x => x.Title).Take(6))
-                        {
-                            <MudLink Href="@($"/object/{o.Id}")" Typo="Typo.caption">@o.Title</MudLink>
-                        }
-                    </div>
-                </MudCardContent>
-            </MudCard>
-        </MudItem>
+        <p>@para</p>
     }
-</MudGrid>
+</div>
+
+<div class="mt-4">
+    <h2 class="section-heading">@Loc["home.tocHeading"]</h2>
+
+    <MudCard Elevation="0" Class="toc-card mb-3">
+        <MudCardContent>
+            <MudLink Href="@($"/{CultureState.Culture}/chapter/preface")" Typo="Typo.subtitle1" Class="fw-bold">@Loc["nav.preface"]</MudLink>
+            <MudText Typo="Typo.body2" Class="muted">@Loc["chapter.preface.summary"]</MudText>
+        </MudCardContent>
+    </MudCard>
+
+    @foreach (var part in Book.Parts)
+    {
+        <MudCard Elevation="0" Class="toc-card mb-3">
+            <MudCardContent>
+                <MudText Typo="Typo.subtitle1" Class="fw-bold part-title">@Loc[part.TitleKey]</MudText>
+                <MudText Typo="Typo.caption" Class="muted">@Loc[part.SubtitleKey]</MudText>
+                <div class="toc-chapters mt-2">
+                    @foreach (var ch in part.Chapters)
+                    {
+                        <div class="toc-row">
+                            <span class="toc-num muted">@ch.Order</span>
+                            <MudLink Href="@($"/{CultureState.Culture}/chapter/{ch.Id}")" Typo="Typo.body2">@Loc[$"chapter.{ch.Id}.title"]</MudLink>
+                            <span class="toc-summary muted">@Loc[$"chapter.{ch.Id}.summary"]</span>
+                        </div>
+                    }
+                </div>
+            </MudCardContent>
+        </MudCard>
+    }
+</div>
+
+@code {
+    [Parameter] public string? Culture { get; set; }
+
+    protected override void OnInitialized()
+    {
+        if (Culture is "en" or "de")
+        {
+            CultureState.Set(Culture);
+        }
+        else
+        {
+            // Landing at "/" — redirect to the persisted language.
+            Nav.NavigateTo($"/{CultureState.Culture}", replace: true);
+        }
+    }
+
+    private static IEnumerable<string> Split(string text) => text.Split("\n\n", StringSplitOptions.RemoveEmptyEntries);
+}

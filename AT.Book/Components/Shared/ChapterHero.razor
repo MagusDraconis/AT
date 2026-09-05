@@ -1,0 +1,136 @@
+@namespace AT.Book.Components.Shared
+
+<div class="chapter-hero @Kind">
+    <svg viewBox="0 0 1200 360" preserveAspectRatio="xMidYMid slice" class="chapter-hero-svg" aria-hidden="true">
+        @RenderArt()
+    </svg>
+</div>
+
+@code {
+    [Parameter, EditorRequired] public string Kind { get; set; } = "default";
+
+    private Microsoft.AspNetCore.Components.RenderFragment RenderArt() => Kind switch
+    {
+        "difference" => @<g>
+            <rect x="0" y="0" width="1200" height="360" fill="#0c0f14" />
+            <rect x="40" y="40" width="540" height="280" rx="12" fill="#151a21" stroke="#2b323c" stroke-width="2" />
+            <rect x="620" y="40" width="540" height="280" rx="12" fill="#1a1f27" stroke="#2b323c" stroke-width="2" />
+            <line x1="600" y1="40" x2="600" y2="320" stroke="#64B5F6" stroke-width="6" stroke-dasharray="14 10" />
+            <circle cx="300" cy="180" r="70" fill="#64B5F6" opacity="0.18" />
+            <circle cx="900" cy="180" r="70" fill="#81C784" opacity="0.18" />
+        </g>,
+        "actualization" => @<g>
+            <rect x="0" y="0" width="1200" height="360" fill="#0c0f14" />
+            @for (int i = 0; i < 8; i++)
+            {
+                var cx = 120 + i * 140;
+                var cy = 300 - (i % 4) * 50;
+                var op = (i + 1) / 8.0;
+                <circle cx="@cx" cy="@cy" r="@(18 + i * 6)" fill="#FFB74D" opacity="@op" />
+            }
+            <circle cx="900" cy="180" r="90" fill="#64B5F6" opacity="0.9" />
+            <circle cx="900" cy="180" r="90" fill="none" stroke="#E6EDF3" stroke-width="2" />
+        </g>,
+        "emergence" => @<g>
+            <rect x="0" y="0" width="1200" height="360" fill="#0c0f14" />
+            @for (int i = 0; i < 6; i++)
+            {
+                var w = 120 + i * 40;
+                var x = 120 + i * 150;
+                <rect x="@x" y="@(300 - w)" width="@w" height="@w" rx="6" fill="none" stroke="#81C784" stroke-width="3" opacity="@(0.4 + i * 0.1)" />
+            }
+        </g>,
+        "boundaries" => @<g>
+            <rect x="0" y="0" width="1200" height="360" fill="#0c0f14" />
+            @foreach (var (x, y) in new[] { (120, 180), (360, 100), (600, 180), (840, 100), (1080, 180) })
+            {
+                <circle cx="@x" cy="@y" r="28" fill="#FFB74D" opacity="0.85" />
+            }
+            <path d="M120,180 L360,100 L600,180 L840,100 L1080,180" fill="none" stroke="#2b323c" stroke-width="2" />
+        </g>,
+        "d96" => @<g>
+            <rect x="0" y="0" width="1200" height="360" fill="#0c0f14" />
+            <circle cx="600" cy="180" r="140" fill="none" stroke="#64B5F6" stroke-width="3" />
+            <circle cx="600" cy="180" r="140" fill="#64B5F6" opacity="0.05" />
+            @for (int i = 0; i < 12; i++)
+            {
+                var a = Math.PI * 2 * i / 12;
+                var x = (int)(600 + 140 * Math.Cos(a));
+                var y = (int)(180 + 140 * Math.Sin(a));
+                <circle cx="@x" cy="@y" r="10" fill="#E6EDF3" />
+            }
+        </g>,
+        "occupancy" => @<g>
+            <rect x="0" y="0" width="1200" height="360" fill="#0c0f14" />
+            <rect x="140" y="180" width="120" height="120" fill="#64B5F6" opacity="0.7" />
+            <rect x="320" y="180" width="120" height="120" fill="#64B5F6" opacity="0.7" />
+            <rect x="500" y="60" width="120" height="240" fill="#FFB74D" opacity="0.9" />
+            <text x="200" y="340" fill="#8B949E" font-size="22">4</text>
+            <text x="380" y="340" fill="#8B949E" font-size="22">4</text>
+            <text x="560" y="340" fill="#8B949E" font-size="22">87</text>
+        </g>,
+        "resonance" => @<g>
+            <rect x="0" y="0" width="1200" height="360" fill="#0c0f14" />
+            <path d="M120,180 Q240,40 360,180 T600,180 T840,180 T1080,180" fill="none" stroke="#81C784" stroke-width="4" />
+            <line x1="600" y1="60" x2="600" y2="300" stroke="#2b323c" stroke-width="2" stroke-dasharray="8 6" />
+        </g>,
+        "symmetry" => @<g>
+            <rect x="0" y="0" width="1200" height="360" fill="#0c0f14" />
+            <line x1="600" y1="40" x2="600" y2="320" stroke="#2b323c" stroke-width="2" />
+            <path d="M600,180 L760,120 L760,240 Z" fill="#CE93D8" opacity="0.8" />
+            <path d="M600,180 L440,120 L440,240 Z" fill="#CE93D8" opacity="0.8" transform="translate(1200,0) scale(-1,1)" />
+        </g>,
+        "information" => @<g>
+            <rect x="0" y="0" width="1200" height="360" fill="#0c0f14" />
+            <line x1="120" y1="300" x2="1080" y2="300" stroke="#2b323c" stroke-width="2" />
+            <path d="M120,300 L220,180 L320,220 L420,120 L520,160 L620,80 L720,140 L820,100 L920,60 L1080,120" fill="none" stroke="#64B5F6" stroke-width="3" />
+            <line x1="120" y1="300" x2="1080" y2="300" stroke="#8B949E" stroke-width="2" />
+            <circle cx="620" cy="80" r="10" fill="#FFB74D" />
+        </g>,
+        "cosmology" => @<g>
+            <rect x="0" y="0" width="1200" height="360" fill="#0c0f14" />
+            <circle cx="600" cy="180" r="150" fill="none" stroke="#2b323c" stroke-width="2" />
+            <path d="M450,180 A150,150 0 0,1 750,180" fill="none" stroke="#CE93D8" stroke-width="40" opacity="0.6" />
+            <path d="M750,180 A150,150 0 0,1 450,180" fill="none" stroke="#64B5F6" stroke-width="40" opacity="0.6" />
+            <text x="520" y="120" fill="#E6EDF3" font-size="28">ΩΛ 0.68</text>
+            <text x="700" y="260" fill="#E6EDF3" font-size="28">Ωm 0.32</text>
+        </g>,
+        "physics" => @<g>
+            <rect x="0" y="0" width="1200" height="360" fill="#0c0f14" />
+            @foreach (var (x, h, c) in new[] { (140, 60, "#64B5F6"), (320, 100, "#81C784"), (500, 140, "#FFB74D"), (680, 190, "#CE93D8"), (860, 240, "#E57373") })
+            {
+                <rect x="@x" y="@(300 - h)" width="90" height="@h" fill="@c" opacity="0.8" />
+            }
+        </g>,
+        "quantum" => @<g>
+            <rect x="0" y="0" width="1200" height="360" fill="#0c0f14" />
+            <circle cx="420" cy="180" r="60" fill="#E57373" opacity="0.7" />
+            <circle cx="780" cy="180" r="60" fill="#CE93D8" opacity="0.7" />
+            <line x1="420" y1="180" x2="780" y2="180" stroke="#E6EDF3" stroke-width="4" stroke-dasharray="10 8" />
+            <text x="380" y="210" fill="#E6EDF3" font-size="24">A</text>
+            <text x="740" y="210" fill="#E6EDF3" font-size="24">B</text>
+        </g>,
+        "correspondence" => @<g>
+            <rect x="0" y="0" width="1200" height="360" fill="#0c0f14" />
+            <rect x="140" y="120" width="420" height="120" rx="12" fill="#151a21" stroke="#2b323c" stroke-width="2" />
+            <rect x="640" y="120" width="420" height="120" rx="12" fill="#1a1f27" stroke="#2b323c" stroke-width="2" />
+            <line x1="560" y1="180" x2="640" y2="180" stroke="#CE93D8" stroke-width="4" />
+            <circle cx="600" cy="180" r="8" fill="#CE93D8" />
+        </g>,
+        "preface" => @<g>
+            <rect x="0" y="0" width="1200" height="360" fill="#0c0f14" />
+            <circle cx="600" cy="180" r="16" fill="#E6EDF3" />
+            @for (int i = 0; i < 12; i++)
+            {
+                var a = Math.PI * 2 * i / 12;
+                var x = (int)(600 + 120 * Math.Cos(a));
+                var y = (int)(180 + 120 * Math.Sin(a));
+                <circle cx="@x" cy="@y" r="6" fill="#64B5F6" opacity="0.8" />
+            }
+        </g>,
+        _ => @<g>
+            <rect x="0" y="0" width="1200" height="360" fill="#0c0f14" />
+            <circle cx="600" cy="180" r="100" fill="#64B5F6" opacity="0.15" />
+        </g>,
+    };
+}

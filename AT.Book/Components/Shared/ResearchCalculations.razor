@@ -1,11 +1,5 @@
-@page "/calculations"
 @using AT.Book.Services.Calculations
 @inject CalculationCatalog CalcCatalog
-
-<PageTitle>Calculations · AT.Book</PageTitle>
-
-<h2 class="section-heading">Executable Derivations</h2>
-<p class="muted">Every derivation runs — no hardcoded results. Expand a calculation to see its labelled steps.</p>
 
 @foreach (var calc in CalcCatalog.All)
 {

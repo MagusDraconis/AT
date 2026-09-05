@@ -1,4 +1,4 @@
-/* AT.Book — dark-mode-first theory book styles. */
+/* AT.Book — reader-first scientific book, dark mode first. */
 
 :root {
     --at-bg: #0E1116;
@@ -11,54 +11,71 @@
 body {
     background: var(--at-bg);
     color: var(--at-text);
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.05rem;
+    line-height: 1.75;
+}
+
+h1, h2, h3, h4, .mud-typography, .mud-button-root, .mud-nav-link, .mud-chip-root {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
 .muted { color: var(--at-muted) !important; }
 .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
 
+.book-container { max-width: 46rem !important; }
+
 .section-heading {
-    font-size: 1.25rem;
+    font-size: 1.15rem;
     font-weight: 600;
     margin-top: 0.25rem;
     margin-bottom: 0.75rem;
     border-bottom: 1px solid var(--at-border);
     padding-bottom: 0.4rem;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
 
-.page-section { margin-top: 1.5rem; }
-
-.object-title { font-size: 1.75rem; font-weight: 700; margin-bottom: 0.25rem; }
-
-/* Hero */
-.hero { padding: 2rem 0; }
-.hero-title { font-size: 3rem; font-weight: 800; letter-spacing: -0.02em; }
-.hero-sub { font-size: 1.1rem; max-width: 52rem; margin-top: 0.75rem; }
-
-/* Stat tiles */
-.stat-row { display: flex; gap: 1rem; flex-wrap: wrap; }
-.stat-tile {
-    background: var(--at-surface);
-    border: 1px solid var(--at-border);
-    border-radius: 8px;
-    padding: 1rem 1.25rem;
-    min-width: 9rem;
+/* ── Hero ─────────────────────────────────────────────────────────────── */
+.hero { margin: 0 0 2rem 0; }
+.hero-art { border-radius: 10px; overflow: hidden; border: 1px solid var(--at-border); margin-bottom: 1.5rem; }
+.chapter-hero-svg { display: block; width: 100%; height: 220px; }
+.hero-kicker {
+    text-transform: uppercase; letter-spacing: 0.12em; font-size: 0.75rem;
+    color: #64B5F6; margin-bottom: 0.5rem; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
-.stat-value { font-size: 1.6rem; font-weight: 700; color: #64B5F6; }
-.stat-label { font-size: 0.8rem; color: var(--at-muted); }
+.hero-title { font-size: 2.6rem; font-weight: 800; letter-spacing: -0.02em; line-height: 1.15; }
+.hero-sub { font-size: 1.15rem; margin-top: 0.75rem; }
+.hero-thesis { font-style: italic; margin-top: 0.5rem; }
 
-/* Cards */
+/* ── Chapter ──────────────────────────────────────────────────────────── */
+.chapter-hero { border-radius: 10px; overflow: hidden; border: 1px solid var(--at-border); margin-bottom: 2rem; }
+.chapter-header { margin-bottom: 2rem; }
+.chapter-part {
+    text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.75rem; color: #81C784;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+.chapter-title { font-size: 2.4rem; font-weight: 800; letter-spacing: -0.02em; line-height: 1.15; margin: 0.25rem 0; }
+.chapter-summary { font-style: italic; font-size: 1.1rem; }
+.chapter-narrative p { margin-bottom: 1.2rem; }
+.chapter-narrative p:first-child::first-letter { font-size: 2.8rem; font-weight: 700; float: left; line-height: 0.85; margin: 0.15rem 0.5rem 0 0; color: #64B5F6; }
+.chapter-section { margin-top: 2.25rem; }
+.chapter-nav { display: flex; align-items: center; gap: 1rem; }
+
+/* ── Table of contents ─────────────────────────────────────────────────── */
+.toc-card { background: var(--at-surface); border: 1px solid var(--at-border); border-radius: 8px; }
+.part-title { color: #81C784; }
+.toc-chapters { display: flex; flex-direction: column; gap: 0.5rem; }
+.toc-row { display: flex; align-items: baseline; gap: 0.75rem; flex-wrap: wrap; }
+.toc-num { min-width: 1.6rem; text-align: right; font-variant-numeric: tabular-nums; }
+.toc-summary { font-size: 0.85rem; flex-basis: 100%; margin-left: 2.35rem; }
+
+/* ── Cards / badges (research mode) ────────────────────────────────────── */
 .theory-card { background: var(--at-surface); border: 1px solid var(--at-border); border-radius: 8px; }
 
-/* Badges */
 .badge {
-    display: inline-block;
-    font-size: 0.7rem;
-    font-weight: 600;
-    letter-spacing: 0.04em;
-    padding: 2px 8px;
-    border-radius: 999px;
-    border: 1px solid transparent;
+    display: inline-block; font-size: 0.7rem; font-weight: 600; letter-spacing: 0.04em;
+    padding: 2px 8px; border-radius: 999px; border: 1px solid transparent;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
 .badge-derived      { background: rgba(100,181,246,0.15); color: #64B5F6; border-color: rgba(100,181,246,0.4); }
 .badge-emergent     { background: rgba(129,199,132,0.15); color: #81C784; border-color: rgba(129,199,132,0.4); }
@@ -71,38 +88,25 @@ body {
 .badge-layer        { background: rgba(139,148,158,0.12); color: var(--at-muted); border-color: rgba(139,148,158,0.35); }
 .badge-neutral      { background: rgba(139,148,158,0.12); color: var(--at-muted); }
 
-/* Formula block */
+/* ── Formula block ─────────────────────────────────────────────────────── */
 .formula-block {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    background: #0c0f14;
-    border: 1px solid var(--at-border);
-    border-left: 3px solid #64B5F6;
-    border-radius: 6px;
-    padding: 0.6rem 0.85rem;
-    margin-top: 0.5rem;
-    overflow-x: auto;
+    display: flex; align-items: flex-start; gap: 0.5rem;
+    background: #0c0f14; border: 1px solid var(--at-border); border-left: 3px solid #64B5F6;
+    border-radius: 6px; padding: 0.75rem 0.9rem; margin-top: 0.5rem; overflow-x: auto;
+    white-space: pre-line; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
 }
 .formula-icon { color: #64B5F6; font-size: 1rem; flex-shrink: 0; }
-.formula-code { color: #E6EDF3; font-size: 0.85rem; white-space: nowrap; }
+.formula-code { color: #E6EDF3; font-size: 0.85rem; }
 
-/* Graph canvas */
-.graph-canvas {
-    height: 70vh;
-    border: 1px solid var(--at-border);
-    border-radius: 8px;
-    background: #0c0f14;
-    width: 100%;
-}
+/* ── Graph ─────────────────────────────────────────────────────────────── */
+.graph-canvas { height: 70vh; border: 1px solid var(--at-border); border-radius: 8px; background: #0c0f14; width: 100%; }
 .graph-select { min-width: 16rem; }
-
-/* Legend */
 .legend { display: flex; gap: 1rem; flex-wrap: wrap; }
-.legend-item { display: flex; align-items: center; gap: 0.35rem; font-size: 0.78rem; color: var(--at-muted); }
+.legend-item { display: flex; align-items: center; gap: 0.35rem; font-size: 0.78rem; color: var(--at-muted); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
 .dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; }
 
-/* Nav */
+/* ── Nav ───────────────────────────────────────────────────────────────── */
 .nav-brand { border-bottom: 1px solid var(--at-border); }
 .nav-icon { margin-right: 0.5rem; }
 .theory-nav-part { font-size: 0.85rem; }
+
