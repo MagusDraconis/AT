@@ -3400,6 +3400,24 @@ required CONFIRMED (exactly 1). Minimal dynamical law = {entangling gate (create
 local unitary (stabilize, canonical) + local measurement (destroy, canonical)}.
 Canonical D96 unchanged.
 
+ResearchY-NP_048 (Entangling Gate Origin Audit, COMPLETE, tests 7/7 PASSED): is the
+entangling gate itself derivable, or an irreducible primitive? Verdict: IRREDUCIBLE —
+a NEW PRIMITIVE (C), neither DERIVED (A) nor EMERGENT (B). CANONICAL OPERATION
+INVENTORY (verified, all local/classical): Difference (η) = real scalar; Actualization
+= diagonal (branching μ=2); Occupancy = diagonal counts; Information = scalar/MI;
+Phase (θ) = single-DOF local unitary; D96 Resonance = real frequency content. CONSTRUCTION
+ATTEMPTS (verified, all fail): phase coupling (shared phase / joint pinning, NP_004) →
+rank 1 (a local unitary U_A⊗U_B preserves Schmidt rank); resonance locking → ABSENT
+(NP_005/006/009/014); equal-mode co-rotation → rank 1 (product); occupancy exchange
+(NP_033) → separable (C=0); information exchange (MI>0) → separable (C=0). EXHAUSTIVE
+SWEEP (verified): no canonical operation reaches Schmidt rank 2 (max rank 1) — all
+canonical operations are LOCC (local + classical communication), which cannot raise
+rank. THE GATE (verified): CNOT/CZ is the UNIQUE non-local rank-raising operation.
+Classification: canonical operations DERIVED; gate DERIVED REFUTED; gate EMERGENT
+REFUTED; gate NEW PRIMITIVE CONFIRMED. The entanglement sector therefore needs TWO
+irreducible primitives — the joint state (NP_043) and the entangling gate (NP_048) —
+parallel and consistent. Canonical D96 unchanged.
+
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-
