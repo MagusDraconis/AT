@@ -21,9 +21,15 @@
             <MudTooltip Text="@Loc["nav.researchMode"]" Placement="Placement.Bottom">
                 <MudIconButton Href="@($"/{Culture.Culture}/research")" Icon="@Icons.Material.Filled.Hub" Color="Color.Primary" AriaLabel="@Loc["nav.researchMode"]" />
             </MudTooltip>
-            <MudTooltip Text="@OtherLanguageName" Placement="Placement.Bottom">
-                <MudIconButton OnClick="@ToggleLanguage" Icon="@Icons.Material.Filled.Translate" Color="Color.Inherit" AriaLabel="@Loc["nav.language"]" />
-            </MudTooltip>
+            <div class="lang-selector">
+                <MudSelect T="string" Value="@Culture.Culture" ValueChanged="@OnLanguageChanged" Dense="true"
+                           Variant="Variant.Outlined" Margin="Margin.Dense" AdornmentIcon="@Icons.Material.Filled.Translate">
+                    @foreach (var lang in LanguageCatalog.All)
+                    {
+                        <MudSelectItem Value="@lang.Code">@lang.NativeName</MudSelectItem>
+                    }
+                </MudSelect>
+            </div>
         </MudAppBar>
 
         <MudDrawer @bind-Open="_drawerOpen" Variant="DrawerVariant.Responsive" Breakpoint="Breakpoint.Lg" Anchor="Anchor.Left" Elevation="1">
@@ -47,8 +53,6 @@
 @code {
     private bool _isDark = true;
     private bool _drawerOpen = true;
-
-    private string OtherLanguageName => Culture.IsEnglish ? "Deutsch" : "English";
 
     private static readonly MudTheme _theme = new()
     {
@@ -78,12 +82,20 @@
 
     private void ToggleDrawer() => _drawerOpen = !_drawerOpen;
 
-    private void ToggleLanguage()
+    private void OnLanguageChanged(string code)
     {
-        var target = Culture.IsEnglish ? "de" : "en";
+        if (!LanguageCatalog.IsSupported(code) || code == Culture.Culture)
+            return;
+        Nav.NavigateTo(BuildUrl(code), forceLoad: true);
+    }
+
+    private string BuildUrl(string code)
+    {
         var path = new Uri(Nav.Uri).AbsolutePath;
-        var segments = path.Split('/', StringSplitOptions.RemoveEmptyEntries);
-        segments[0] = target;
-        Nav.NavigateTo("/" + string.Join("/", segments), forceLoad: true);
+        var segments = path.Split('/', StringSplitOptions.RemoveEmptyEntries).ToList();
+        if (segments.Count == 0)
+            return "/" + code;
+        segments[0] = code;
+        return "/" + string.Join("/", segments);
     }
 }

@@ -80,7 +80,7 @@ app.MapRazorComponents<App>()
 
 app.Run();
 
-/// <summary>Reads the culture from the first URL segment (/en or /de).</summary>
+/// <summary>Reads the culture from the first URL segment (a supported language code).</summary>
 sealed class RouteRequestCultureProvider : RequestCultureProvider
 {
     public override Task<ProviderCultureResult?> DetermineProviderCultureResult(HttpContext httpContext)
@@ -89,11 +89,8 @@ sealed class RouteRequestCultureProvider : RequestCultureProvider
             .Split('/', StringSplitOptions.RemoveEmptyEntries)
             .FirstOrDefault();
 
-        return segment switch
-        {
-            "en" => Task.FromResult<ProviderCultureResult?>(new ProviderCultureResult("en")),
-            "de" => Task.FromResult<ProviderCultureResult?>(new ProviderCultureResult("de")),
-            _ => Task.FromResult<ProviderCultureResult?>(null),
-        };
+        return LanguageCatalog.IsSupported(segment)
+            ? Task.FromResult<ProviderCultureResult?>(new ProviderCultureResult(segment!))
+            : Task.FromResult<ProviderCultureResult?>(null);
     }
 }

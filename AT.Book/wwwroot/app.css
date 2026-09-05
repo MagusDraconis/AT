@@ -110,3 +110,7 @@ h1, h2, h3, h4, .mud-typography, .mud-button-root, .mud-nav-link, .mud-chip-root
 .nav-icon { margin-right: 0.5rem; }
 .theory-nav-part { font-size: 0.85rem; }
 
+/* ── Language selector (app bar) ──────────────────────────────────────── */
+.lang-selector { width: 8.5rem; }
+.lang-selector .mud-input { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+

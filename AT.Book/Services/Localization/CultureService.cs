@@ -14,21 +14,19 @@ public sealed class CultureService
 
     public string Culture { get; private set; } = "en";
 
-    public bool IsEnglish => Culture == "en";
-
     public CultureInfo CultureInfo => new(Culture);
 
     public CultureService(IHttpContextAccessor http)
     {
         _http = http;
         var cookie = http.HttpContext?.Request.Cookies[CookieName];
-        if (cookie is "en" or "de")
-            Culture = cookie;
+        if (LanguageCatalog.IsSupported(cookie))
+            Culture = cookie!;
     }
 
-    public void Set(string culture)
+    public void Set(string? culture)
     {
-        Culture = culture is "de" ? "de" : "en";
+        Culture = LanguageCatalog.IsSupported(culture) ? culture! : LanguageCatalog.DefaultCode;
 
         // The cookie may only be written while the response headers are still mutable
         // (i.e. during the initial server render). During interactive re-renders the

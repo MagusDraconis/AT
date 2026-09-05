@@ -11,15 +11,17 @@ public sealed class LocalizationStore
 {
     private readonly IReadOnlyDictionary<string, IReadOnlyDictionary<string, string>> _byCulture;
 
+    public IReadOnlyList<Language> Languages => LanguageCatalog.All;
     public IReadOnlyList<string> SupportedCultures { get; }
 
     public LocalizationStore(IWebHostEnvironment env)
     {
-        SupportedCultures = new[] { "en", "de" };
+        SupportedCultures = LanguageCatalog.All.Select(l => l.Code).ToArray();
         var store = new Dictionary<string, IReadOnlyDictionary<string, string>>(StringComparer.OrdinalIgnoreCase);
 
-        foreach (var culture in SupportedCultures)
+        foreach (var lang in LanguageCatalog.All)
         {
+            var culture = lang.Code;
             var dir = Path.Combine(env.WebRootPath, "Content", culture);
             if (!Directory.Exists(dir))
                 throw new DirectoryNotFoundException($"Localized content directory not found: {dir}");
