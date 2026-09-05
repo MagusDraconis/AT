@@ -27,7 +27,7 @@ public sealed class ChapterRegistry
         [
             new("foundations", "part.foundations", "part.foundations.subtitle",
             [
-                new("difference", "foundations", 1, null, "difference", "images/difference-Web.jpg"),
+                new("difference", "foundations", 1, null, "difference", "images/difference-large-web.jpg"),
                 new("actualization", "foundations", 2, null, "actualization"),
                 new("emergence", "foundations", 3, null, "emergence"),
                 new("boundaries", "foundations", 4, null, "boundaries"),
