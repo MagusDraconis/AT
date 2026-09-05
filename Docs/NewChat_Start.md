@@ -3502,6 +3502,28 @@ incompleteness (C) REFUTED. This completes the entanglement program: the minimal
 quantum extension of canonical D96 is exactly {Joint State, Entangling Gate}. Canonical
 D96 unchanged.
 
+ResearchY-NP_053 (Relativistic Consistency Audit, COMPLETE, tests 9/9 PASSED): do
+Joint States and Entangling Gates violate causality, locality, or relativistic
+consistency? Verdict: FULLY COMPATIBLE — the entanglement sector is non-local in
+CORRELATIONS but obeys NO-SIGNALLING. SPACELIKE SEPARATION (verified): a Bell pair's
+marginals are ρ = I/2 (maximally random, S = 1 bit) — zero information about the other
+party. NO-SIGNALLING (verified): ρ_A is invariant under arbitrary local unitaries on B
+(bit-flip, phase-flip, Hadamard) — the no-signalling theorem. BELL/CHSH/TELEPORTATION/
+GHZ (verified): the non-local correlation is observable only AFTER classical
+comparison (each party alone sees maximally random outcomes); teleportation requires a
+2-bit CLASSICAL channel — the four Bell outcomes are equiprobable (1/4) and without the
+bits Bob's state is I/2 (zero information), so the quantum channel alone transfers
+nothing. JOINT REALITY (verified): non-separability is CORRELATION, not INFORMATION
+TRANSFER — the Bell pair is supported on |00⟩,|11⟩ (perfect correlation) yet each
+marginal is I/2. CANONICAL VS LAYER (verified): canonical AT is trivially local
+(single-DOF, CHSH ≤ 2); the correspondence layer adds non-local correlations (CHSH > 2)
+but still no signalling. NO CONTRADICTION (verified): causality, Lorentz invariance
+(the no-signalling bound is frame-independent), and no-signalling all hold.
+Classification: Bell/CHSH/teleportation/GHZ CORRESPONDENCE; no-signalling DERIVED (the
+marginal ρ=I/2 is a mathematical fact); superluminal communication REFUTED; joint
+reality = information transfer REFUTED; full relativistic compatibility CONFIRMED.
+Canonical D96 unchanged.
+
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-
