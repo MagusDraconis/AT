@@ -40,6 +40,7 @@ h1, h2, h3, h4, .mud-typography, .mud-button-root, .mud-nav-link, .mud-chip-root
 .hero-art { display: flex; justify-content: center; align-items: center; margin-bottom: 1.5rem; }
 .hero-logo { max-width: 240px; width: 100%; height: auto; filter: drop-shadow(0 0 26px rgba(100,181,246,0.35)); }
 .chapter-hero-svg { display: block; width: 100%; height: 220px; }
+.chapter-hero-img { display: block; width: 100%; height: 220px; object-fit: cover; }
 .hero-kicker {
     text-transform: uppercase; letter-spacing: 0.12em; font-size: 0.75rem;
     color: #64B5F6; margin-bottom: 0.5rem; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;

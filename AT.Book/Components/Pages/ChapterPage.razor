@@ -17,7 +17,7 @@
 else
 {
     <article class="chapter">
-        <ChapterHero Kind="@Chapter.HeroKind" />
+        <ChapterHero Kind="@Chapter.HeroKind" HeroImage="@Chapter.HeroImage" Alt="@Loc[$"chapter.{Chapter.Id}.title"].Value" />
 
         <header class="chapter-header">
             <p class="chapter-part muted">@Loc[PartTitleKey]</p>

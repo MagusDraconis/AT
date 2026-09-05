@@ -1,13 +1,22 @@
 @namespace AT.Book.Components.Shared
 
 <div class="chapter-hero @Kind">
-    <svg viewBox="0 0 1200 360" preserveAspectRatio="xMidYMid slice" class="chapter-hero-svg" aria-hidden="true">
-        @RenderArt()
-    </svg>
+    @if (HeroImage is not null)
+    {
+        <img src="@HeroImage" alt="@Alt" class="chapter-hero-img" />
+    }
+    else
+    {
+        <svg viewBox="0 0 1200 360" preserveAspectRatio="xMidYMid slice" class="chapter-hero-svg" aria-hidden="true">
+            @RenderArt()
+        </svg>
+    }
 </div>
 
 @code {
     [Parameter, EditorRequired] public string Kind { get; set; } = "default";
+    [Parameter] public string? HeroImage { get; set; }
+    [Parameter] public string? Alt { get; set; }
 
     private Microsoft.AspNetCore.Components.RenderFragment RenderArt() => Kind switch
     {

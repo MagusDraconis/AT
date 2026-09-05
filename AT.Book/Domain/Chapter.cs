@@ -19,4 +19,5 @@ public sealed record Chapter(
     string PartId,
     int Order,
     string? CalculationId,
-    string HeroKind);
+    string HeroKind,
+    string? HeroImage = null);
