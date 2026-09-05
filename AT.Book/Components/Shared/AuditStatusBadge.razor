@@ -1,0 +1,16 @@
+@namespace AT.Book.Components.Shared
+@using AT.Book.Domain
+
+<span class="badge @ClassFor(Status)">@Status.ToString().ToUpperInvariant()</span>
+
+@code {
+    [Parameter, EditorRequired] public AuditStatus Status { get; set; }
+
+    private static string ClassFor(AuditStatus s) => s switch
+    {
+        AuditStatus.Passed => "badge-derived",
+        AuditStatus.Partial => "badge-partial",
+        AuditStatus.Failed => "badge-refuted",
+        _ => "badge-neutral",
+    };
+}

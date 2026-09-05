@@ -1,0 +1,49 @@
+@page "/"
+@using AT.Book.Services
+@using AT.Book.Services.Calculations
+@inject TheoryRegistry Registry
+@inject TheoryGraphService Graph
+@inject CalculationCatalog Calculations
+
+<PageTitle>AT.Book · Actualization Theory Operating System</PageTitle>
+
+<div class="hero mb-5">
+    <h1 class="hero-title">AT.Book</h1>
+    <p class="hero-sub muted">The canonical Actualization Theory operating system — an executable, hierarchical, interactive theory book. Not documentation. Not a wiki.</p>
+    <div class="d-flex gap-2 flex-wrap mt-3">
+        <MudButton Href="/theory" Variant="Variant.Filled" Color="Color.Primary">Open the book</MudButton>
+        <MudButton Href="/graph" Variant="Variant.Outlined" Color="Color.Primary">Dependency graph</MudButton>
+        <MudButton Href="/calculations" Variant="Variant.Outlined" Color="Color.Secondary">Run calculations</MudButton>
+    </div>
+</div>
+
+<div class="stat-row mb-5">
+    <div class="stat-tile"><div class="stat-value">@Registry.Objects.Count</div><div class="stat-label">Theory objects</div></div>
+    <div class="stat-tile"><div class="stat-value">@Registry.Audits.Count</div><div class="stat-label">Audits</div></div>
+    <div class="stat-tile"><div class="stat-value">@Graph.Layers.Count</div><div class="stat-label">Layers</div></div>
+    <div class="stat-tile"><div class="stat-value">@Calculations.All.Count</div><div class="stat-label">Executable derivations</div></div>
+</div>
+
+<h2 class="section-heading">The six layers</h2>
+<p class="muted">Foundation → Structure → Information → Cosmology → Physics → Correspondence.</p>
+
+<MudGrid Spacing="3">
+    @foreach (var layer in Graph.Layers)
+    {
+        <MudItem xs="12" sm="6" lg="4">
+            <MudCard Elevation="1" Class="theory-card h-100">
+                <MudCardContent>
+                    <MudText Typo="Typo.caption" Class="text-uppercase fw-bold muted">Layer @((int)layer.Layer)</MudText>
+                    <MudText Typo="Typo.subtitle1" Class="fw-bold">@TheoryGraphService.LayerName(layer.Layer)</MudText>
+                    <MudText Typo="Typo.body2" Class="muted">@layer.Objects.Count objects</MudText>
+                    <div class="mt-2 d-flex flex-wrap gap-1">
+                        @foreach (var o in layer.Objects.OrderBy(x => x.Title).Take(6))
+                        {
+                            <MudLink Href="@($"/object/{o.Id}")" Typo="Typo.caption">@o.Title</MudLink>
+                        }
+                    </div>
+                </MudCardContent>
+            </MudCard>
+        </MudItem>
+    }
+</MudGrid>

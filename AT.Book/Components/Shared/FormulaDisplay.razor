@@ -1,0 +1,13 @@
+@namespace AT.Book.Components.Shared
+
+@if (!string.IsNullOrWhiteSpace(Formula))
+{
+    <div class="formula-block">
+        <MudIcon Icon="@Icons.Material.Filled.Functions" Class="formula-icon" />
+        <code class="formula-code">@Formula</code>
+    </div>
+}
+
+@code {
+    [Parameter] public string? Formula { get; set; }
+}

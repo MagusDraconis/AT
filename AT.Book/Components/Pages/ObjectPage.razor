@@ -1,0 +1,131 @@
+@page "/object/{Id}"
+@using AT.Book.Services
+@using AT.Book.Services.Calculations
+@inject TheoryRegistry Registry
+@inject TheoryGraphService Graph
+@inject CalculationCatalog Calculations
+
+<PageTitle>@(Obj?.Title ?? "Object") · AT.Book</PageTitle>
+
+@if (Obj is null)
+{
+    <MudAlert Severity="Severity.Warning">No theory object with id <code>@Id</code>.</MudAlert>
+    <MudButton Href="/theory" Variant="Variant.Outlined" Color="Color.Primary" Class="mt-3">Back to the book</MudButton>
+}
+else
+{
+    <div class="d-flex align-items-center gap-2 flex-wrap mb-3">
+        <LayerBadge Layer="@Obj.Layer" />
+        <ClassificationBadge Classification="@Obj.Classification" />
+        <span class="muted">@Obj.Kind</span>
+        <MudSpacer />
+        <MudButton Href="/graph" Variant="Variant.Text" Color="Color.Primary" StartIcon="@Icons.Material.Filled.Hub">In graph</MudButton>
+    </div>
+
+    <h1 class="object-title">@Obj.Title</h1>
+    <MudText Typo="Typo.subtitle2" Class="muted mono">@Obj.Id</MudText>
+
+    <MudText Typo="Typo.body1" Class="mt-3">@Obj.Summary</MudText>
+
+    @if (Obj.Narrative is not null)
+    {
+        <div class="page-section mt-4">
+            <h3 class="section-heading">Narrative</h3>
+            <MudText Typo="Typo.body1">@Obj.Narrative</MudText>
+        </div>
+    }
+
+    @if (Obj.Formula is not null)
+    {
+        <div class="page-section mt-4">
+            <h3 class="section-heading">Formula</h3>
+            <FormulaDisplay Formula="@Obj.Formula" />
+        </div>
+    }
+
+    @if (Obj.CalculationId is not null)
+    {
+        <div class="page-section mt-4">
+            <h3 class="section-heading">Executable Calculation</h3>
+            @if (Calculation is not null)
+            {
+                <MudText Typo="Typo.body2" Class="muted">@Calculation.Formula</MudText>
+                <MudTable Items="@Calculation.Steps" Hover="true" Dense="true" Elevation="0" Class="mt-2">
+                    <HeaderContent>
+                        <MudTh>Quantity</MudTh><MudTh>Value</MudTh><MudTh>Note</MudTh>
+                    </HeaderContent>
+                    <RowTemplate>
+                        <MudTd>@context.Label</MudTd>
+                        <MudTd><code>@context.Value</code></MudTd>
+                        <MudTd Class="muted">@context.Note</MudTd>
+                    </RowTemplate>
+                </MudTable>
+                @if (Calculation.Conclusion is not null)
+                {
+                    <MudAlert Severity="Severity.Info" Class="mt-2">@Calculation.Conclusion</MudAlert>
+                }
+            }
+            else
+            {
+                <MudText Typo="Typo.body2" Class="muted">Calculation <code>@Obj.CalculationId</code> not registered.</MudText>
+            }
+        </div>
+    }
+
+    <div class="page-section mt-4">
+        <h3 class="section-heading">Dependencies</h3>
+        @if (Obj.Dependencies.Count == 0)
+        {
+            <MudText Typo="Typo.body2" Class="muted">None — this is a foundational object.</MudText>
+        }
+        else
+        {
+            <div class="d-flex flex-wrap gap-2">
+                @foreach (var dep in Obj.Dependencies)
+                {
+                    @if (Registry.ObjectById.TryGetValue(dep, out var depObj))
+                    {
+                        <MudChip T="string" Href="@($"/object/{depObj.Id}")" Size="Size.Small" Color="Color.Primary" Variant="Variant.Outlined">@depObj.Title</MudChip>
+                    }
+                    else
+                    {
+                        <MudChip T="string" Size="Size.Small" Variant="Variant.Outlined">@dep</MudChip>
+                    }
+                }
+            </div>
+        }
+    </div>
+
+    @if (Obj.AuditIds is { Count: > 0 })
+    {
+        <div class="page-section mt-4">
+            <h3 class="section-heading">Audit History</h3>
+            @foreach (var auditId in Obj.AuditIds)
+            {
+                @if (Registry.AuditById.TryGetValue(auditId, out var audit))
+                {
+                    <MudCard Elevation="1" Class="theory-card mb-3">
+                        <MudCardContent>
+                            <div class="d-flex align-items-center gap-2 mb-2">
+                                <AuditStatusBadge Status="@audit.Status" />
+                                <ClassificationBadge Classification="@audit.Classification" />
+                                <MudSpacer />
+                                <MudText Typo="Typo.caption" Class="muted">@audit.Date.ToString("yyyy-MM-dd")</MudText>
+                            </div>
+                            <MudText Typo="Typo.subtitle2" Class="fw-bold">@audit.Title</MudText>
+                            <MudText Typo="Typo.body2" Class="muted">@audit.Claim</MudText>
+                            <MudText Typo="Typo.body2" Class="mt-1">@audit.Result</MudText>
+                        </MudCardContent>
+                    </MudCard>
+                }
+            }
+        </div>
+    }
+}
+
+@code {
+    [Parameter] public string? Id { get; set; }
+
+    private TheoryObject? Obj => Id is null ? null : Registry.ObjectById.GetValueOrDefault(Id);
+    private CalculationResult? Calculation => Calculations.Get(Obj?.CalculationId);
+}

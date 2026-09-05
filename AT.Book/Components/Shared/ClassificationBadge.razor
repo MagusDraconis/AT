@@ -1,0 +1,20 @@
+@namespace AT.Book.Components.Shared
+@using AT.Book.Domain
+
+<span class="badge @ClassFor(Classification)">@Classification.ToString().ToUpperInvariant()</span>
+
+@code {
+    [Parameter, EditorRequired] public TheoryClassification Classification { get; set; }
+
+    private static string ClassFor(TheoryClassification c) => c switch
+    {
+        TheoryClassification.Derived => "badge-derived",
+        TheoryClassification.Emergent => "badge-emergent",
+        TheoryClassification.Boundary => "badge-boundary",
+        TheoryClassification.Correspondence => "badge-correspondence",
+        TheoryClassification.NewPrimitive => "badge-primitive",
+        TheoryClassification.Refuted => "badge-refuted",
+        TheoryClassification.Postulated => "badge-postulated",
+        _ => "badge-neutral",
+    };
+}

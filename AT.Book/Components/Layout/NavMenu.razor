@@ -1,0 +1,47 @@
+@namespace AT.Book.Components.Layout
+@using MudBlazor
+@using AT.Book.Services
+@inject TheoryGraphService Graph
+
+<MudNavMenu Class="px-2 py-3">
+    <div class="nav-brand px-3 pb-3">
+        <MudText Typo="Typo.subtitle1" Class="fw-bold">AT.Book</MudText>
+        <MudText Typo="Typo.caption" Class="muted">Actualization Theory — Operating System</MudText>
+    </div>
+
+    <MudNavLink Href="/" Match="NavLinkMatch.All">
+        <i class="bi bi-house-door nav-icon"></i>Book Home
+    </MudNavLink>
+    <MudNavLink Href="/theory">
+        <i class="bi bi-list-nested nav-icon"></i>Theory Tree
+    </MudNavLink>
+    <MudNavLink Href="/graph">
+        <i class="bi bi-diagram-3 nav-icon"></i>Dependency Graph
+    </MudNavLink>
+    <MudNavLink Href="/calculations">
+        <i class="bi bi-calculator nav-icon"></i>Calculations
+    </MudNavLink>
+    <MudNavLink Href="/audits">
+        <i class="bi bi-clipboard-check nav-icon"></i>Audits
+    </MudNavLink>
+    <MudNavLink Href="/timeline">
+        <i class="bi bi-clock-history nav-icon"></i>Timeline
+    </MudNavLink>
+
+    <MudDivider Class="my-3" />
+
+    <div class="px-3 pb-2">
+        <MudText Typo="Typo.caption" Class="text-uppercase fw-bold muted">The Book</MudText>
+    </div>
+    @foreach (var layer in Graph.Layers)
+    {
+        <MudNavGroup Title="@TheoryGraphService.LayerName(layer.Layer)" Expanded="@(layer.Layer == TheoryLayer.Foundations)">
+            @foreach (var obj in layer.Objects.OrderBy(o => o.Title))
+            {
+                <MudNavLink Href="@($"/object/{obj.Id}")">
+                    <span class="theory-nav-part">@obj.Title</span>
+                </MudNavLink>
+            }
+        </MudNavGroup>
+    }
+</MudNavMenu>

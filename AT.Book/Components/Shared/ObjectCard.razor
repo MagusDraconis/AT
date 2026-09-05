@@ -1,0 +1,24 @@
+@namespace AT.Book.Components.Shared
+@using AT.Book.Domain
+
+<MudCard Elevation="1" Class="theory-card mb-3">
+    <MudCardContent>
+        <div class="d-flex align-items-center mb-2 gap-2 flex-wrap">
+            <LayerBadge Layer="@Object.Layer" />
+            <ClassificationBadge Classification="@Object.Classification" />
+            <span class="muted ms-auto">@Object.Kind</span>
+        </div>
+        <MudLink Href="@($"/object/{Object.Id}")" Typo="Typo.subtitle1" Class="fw-bold">
+            @Object.Title
+        </MudLink>
+        <MudText Typo="Typo.body2" Class="muted mt-1">@Object.Summary</MudText>
+        @if (Object.Formula is not null)
+        {
+            <FormulaDisplay Formula="@Object.Formula" />
+        }
+    </MudCardContent>
+</MudCard>
+
+@code {
+    [Parameter, EditorRequired] public TheoryObject Object { get; set; } = default!;
+}

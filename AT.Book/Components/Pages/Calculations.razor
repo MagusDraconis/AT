@@ -1,0 +1,39 @@
+@page "/calculations"
+@using AT.Book.Services.Calculations
+@inject CalculationCatalog CalcCatalog
+
+<PageTitle>Calculations · AT.Book</PageTitle>
+
+<h2 class="section-heading">Executable Derivations</h2>
+<p class="muted">Every derivation runs — no hardcoded results. Expand a calculation to see its labelled steps.</p>
+
+@foreach (var calc in CalcCatalog.All)
+{
+    <MudExpansionPanels MultiExpansion="true" Class="mb-3">
+        <MudExpansionPanel Text="@calc.Title">
+            <TitleContent>
+                <div class="d-flex align-items-center gap-2">
+                    <code class="muted">@calc.Id</code>
+                    <MudText Typo="Typo.subtitle2" Class="fw-bold">@calc.Title</MudText>
+                </div>
+            </TitleContent>
+            <ChildContent>
+                <MudText Typo="Typo.body2" Class="muted">@calc.Formula</MudText>
+                <MudTable Items="@calc.Steps" Hover="true" Dense="true" Elevation="0" Class="mt-2">
+                    <HeaderContent>
+                        <MudTh>Quantity</MudTh><MudTh>Value</MudTh><MudTh>Note</MudTh>
+                    </HeaderContent>
+                    <RowTemplate>
+                        <MudTd>@context.Label</MudTd>
+                        <MudTd><code>@context.Value</code></MudTd>
+                        <MudTd Class="muted">@context.Note</MudTd>
+                    </RowTemplate>
+                </MudTable>
+                @if (calc.Conclusion is not null)
+                {
+                    <MudAlert Severity="Severity.Info" Class="mt-2">@calc.Conclusion</MudAlert>
+                }
+            </ChildContent>
+        </MudExpansionPanel>
+    </MudExpansionPanels>
+}

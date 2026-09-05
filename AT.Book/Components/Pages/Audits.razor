@@ -1,0 +1,37 @@
+@page "/audits"
+@using AT.Book.Services
+@inject TheoryRegistry Registry
+@inject TheoryGraphService Graph
+
+<PageTitle>Audits · AT.Book</PageTitle>
+
+<h2 class="section-heading">Research Audit Explorer</h2>
+<p class="muted">Each audit is a falsifiable claim with a result, status, date, and dependencies.</p>
+
+@foreach (var audit in Registry.Audits.OrderByDescending(a => a.Date))
+{
+    <MudCard Elevation="1" Class="theory-card mb-3">
+        <MudCardContent>
+            <div class="d-flex align-items-center gap-2 mb-2 flex-wrap">
+                <AuditStatusBadge Status="@audit.Status" />
+                <ClassificationBadge Classification="@audit.Classification" />
+                <LayerBadge Layer="@audit.Layer" />
+                <MudSpacer />
+                <MudText Typo="Typo.caption" Class="muted">@audit.Date.ToString("yyyy-MM-dd")</MudText>
+            </div>
+            <MudText Typo="Typo.subtitle1" Class="fw-bold">@audit.Title</MudText>
+            <MudText Typo="Typo.caption" Class="muted mono">@audit.Id</MudText>
+            <MudText Typo="Typo.body2" Class="mt-2"><strong>Claim:</strong> @audit.Claim</MudText>
+            <MudText Typo="Typo.body2" Class="mt-1"><strong>Result:</strong> @audit.Result</MudText>
+            <div class="d-flex flex-wrap gap-1 mt-2">
+                @foreach (var dep in audit.Dependencies)
+                {
+                    @if (Registry.ObjectById.TryGetValue(dep, out var o))
+                    {
+                        <MudChip T="string" Href="@($"/object/{o.Id}")" Size="Size.Small" Variant="Variant.Outlined">@o.Title</MudChip>
+                    }
+                }
+            </div>
+        </MudCardContent>
+    </MudCard>
+}

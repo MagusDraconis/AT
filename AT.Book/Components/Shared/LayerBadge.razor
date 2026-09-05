@@ -1,0 +1,9 @@
+@namespace AT.Book.Components.Shared
+@using AT.Book.Domain
+@using AT.Book.Services
+
+<span class="badge badge-layer">@TheoryGraphService.LayerName(Layer)</span>
+
+@code {
+    [Parameter, EditorRequired] public TheoryLayer Layer { get; set; }
+}
