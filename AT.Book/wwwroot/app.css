@@ -37,7 +37,8 @@ h1, h2, h3, h4, .mud-typography, .mud-button-root, .mud-nav-link, .mud-chip-root
 
 /* ── Hero ─────────────────────────────────────────────────────────────── */
 .hero { margin: 0 0 2rem 0; }
-.hero-art { border-radius: 10px; overflow: hidden; border: 1px solid var(--at-border); margin-bottom: 1.5rem; }
+.hero-art { display: flex; justify-content: center; align-items: center; margin-bottom: 1.5rem; }
+.hero-logo { max-width: 240px; width: 100%; height: auto; filter: drop-shadow(0 0 26px rgba(100,181,246,0.35)); }
 .chapter-hero-svg { display: block; width: 100%; height: 220px; }
 .hero-kicker {
     text-transform: uppercase; letter-spacing: 0.12em; font-size: 0.75rem;
