@@ -3524,6 +3524,26 @@ marginal ρ=I/2 is a mathematical fact); superluminal communication REFUTED; joi
 reality = information transfer REFUTED; full relativistic compatibility CONFIRMED.
 Canonical D96 unchanged.
 
+ResearchY-NP_054 (Quantum Completeness Stress Test, COMPLETE, tests 9/9 PASSED): does
+{Joint State, Entangling Gate} reproduce every major quantum phenomenon currently
+untested? Verdict: YES — the quantum layer is COMPLETE (success criterion A); no third
+primitive, no contradiction. STRESS-TEST PHENOMENA (verified): contextuality /
+Kochen-Specker is IMPLIED by non-separability (CHSH = 2√2 > 2 rules out non-contextual
+hidden variables; KS is the state-independent d≥3 form and the 2-qubit joint state
+lives in d=4) — needs the Joint State only; delayed choice / quantum eraser are
+SINGLE-DOF phase phenomena (interference P = cos²(φ/2), canonical θ + M_001) — no
+entanglement, no gate; entanglement swapping is a COMPOSITION (|Φ+⟩_AB⊗|Φ+⟩_CD = 1/2
+Σᵢ |Bellᵢ⟩_AD⊗|Bellᵢ⟩_BC — each BC Bell outcome equiprobable 1/4, the AD pair always
+maximally entangled C=1); Hardy paradox (NEW) — the Hardy state (|00⟩+|01⟩+|10⟩)/√3 is
+non-separable (rank 2, concurrence 2/3, zero |11⟩ amplitude), and the paradox is an
+"all-or-nothing" Bell-type non-locality witness that is a CONSEQUENCE of
+non-separability (the joint state) + measurement — NOT a third primitive (any rank-2
+state is LU-equivalent to one reachable by the gate, NP_042/047/049). ONTOLOGY SIZE =
+2 (joint state + gate), unchanged after the stress test. Classification:
+contextuality/KS/swapping/Hardy CORRESPONDENCE; delayed choice/eraser DERIVED
+(single-DOF); quantum layer complete (A) CONFIRMED; third primitive (B) REFUTED;
+contradiction (C) REFUTED. Canonical D96 unchanged.
+
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-
