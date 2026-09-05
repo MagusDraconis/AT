@@ -3460,6 +3460,27 @@ CORRESPONDENCE (hosted physics); physical meaning of the gate CORRESPONDENCE (co
 two-body interaction); gate NEW PRIMITIVE CONFIRMED; gate DERIVED from canonical D96
 REFUTED. Canonical D96 unchanged.
 
+ResearchY-NP_051 (Correspondence Layer Necessity Audit, COMPLETE, tests 6/6 PASSED):
+why does nature contain the quantum correspondence layer at all? Verdict: the layer is
+an UNAVOIDABLE CONSEQUENCE OF OBSERVATION ITSELF (C), not an optional convenience (A).
+PHENOMENA (verified): Bell, teleportation, GHZ, and W all share non-separability
+(NP_046). COMMON INVARIANT (verified): for the Bell pair each single sector is
+maximally mixed (ρ_A = I/2 — no local reality) while the joint state is pure — the
+whole is irreducible to its parts. REMOVE THE LAYER (verified): canonical AT alone
+gives CHSH ≤ 2, which contradicts the observed Bell violation S = 2√2 > 2 — the first
+empirical contradiction is exactly the Bell/CHSH violation. COMPLETION (verified):
+canonical AT is internally complete (no internal contradiction) yet misses observed
+non-separability; the layer supplies it (observational necessity, B) — it is NOT an
+optional convenience. MINIMAL REASON: observation (measurement, M_001) reads the
+ACTUAL — a joint actualization — and joint actualization is irreducible to separate
+single-sector actualizations; the correspondence layer is where that irreducibility
+surfaces. Classification: canonical AT DERIVED (complete WITHOUT the layer — the
+single-DOF/classical derived chain); layer as optional convenience (A) REFUTED; layer
+as observational necessity (B) CONFIRMED; layer as unavoidable consequence of
+observation itself (C) CONFIRMED; entanglement sector CORRESPONDENCE (hosted,
+non-derived). This is the capstone of the entanglement program (NP_038–NP_051):
+canonical D96 unchanged.
+
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-
