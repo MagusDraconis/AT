@@ -3438,6 +3438,28 @@ CONFIRMED as a kind; representative freedom (CNOT ≡ CZ ≡ iSWAP ≡ √SWAP) 
 replaceable by an alternative (C) REFUTED; gate NEW PRIMITIVE CONFIRMED (NP_047/048).
 Canonical D96 unchanged.
 
+ResearchY-NP_050 (Physical Realization Audit, COMPLETE, tests 8/8 PASSED): what
+physical interaction corresponds to the Entangling Gate? Verdict: a coherent two-body
+(non-local) interaction — a joint coupling Hamiltonian H_int = J·σ⊗σ generating the
+non-local unitary U = e^{−i H_int t} — CORRESPONDENCE to known physics, NOT derivable
+from canonical D96. INVENTORY (verified): all five known entangling mechanisms —
+photon SPDC (Bell-pair creation), Heisenberg exchange (iSWAP/√SWAP), the identical-
+fermion exchange interaction (singlet/triplet), cavity QED Jaynes-Cummings (effective
+XX/ZZ), superconducting qubits (capacitive XX) — are genuine TWO-BODY couplings (a
+joint term, not a sum of single-body terms). LOCAL VS NON-LOCAL (verified): a local
+Hamiltonian H = σ_z⊗I generates a local unitary that preserves Schmidt rank 1, while a
+non-local H = σ_z⊗σ_z (Ising ZZ) and H = σ_x⊗σ_x (XX) each create rank 2 — the precise
+difference between the canonical phase update (local) and the gate (non-local). COMMON
+STRUCTURE (verified): the entangling signature is a cross-block coupling (|00⟩↔|11⟩,
+XX) or a controlled joint phase (Ising ZZ), absent in a local gate. ONE ABSTRACT
+INTERACTION (verified): the non-local two-body unitary explains all five mechanisms
+(LU-equivalent, NP_049). COMPARISON (verified): canonical D96 has NO two-body coupling
+(NP_048); the joint state is the gate's OUTPUT (NP_040); the gate is the non-local
+two-body interaction itself. Classification: known entangling interactions
+CORRESPONDENCE (hosted physics); physical meaning of the gate CORRESPONDENCE (coherent
+two-body interaction); gate NEW PRIMITIVE CONFIRMED; gate DERIVED from canonical D96
+REFUTED. Canonical D96 unchanged.
+
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-
