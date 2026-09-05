@@ -14,9 +14,11 @@ window.theoryGraph = (function () {
 
   function init(containerId, elements, dark) {
     if (cy) cy.destroy();
+    if (typeof cytoscape === 'undefined') return;
+    const parsed = typeof elements === 'string' ? JSON.parse(elements) : elements;
     cy = cytoscape({
       container: document.getElementById(containerId),
-      elements: elements,
+      elements: parsed,
       style: [
         {
           selector: 'node',

@@ -20,8 +20,9 @@ builder.Services.AddHttpContextAccessor();
 // ── Localization: reader-facing text comes from /Content/{culture}/*.json ──
 builder.Services.AddSingleton<LocalizationStore>();
 builder.Services.AddScoped<CultureService>();
-builder.Services.AddSingleton<IStringLocalizerFactory, JsonStringLocalizerFactory>();
-builder.Services.AddLocalization();
+builder.Services.AddScoped<JsonStringLocalizer>();
+builder.Services.AddScoped<IStringLocalizerFactory, JsonStringLocalizerFactory>();
+builder.Services.AddScoped(typeof(IStringLocalizer<>), typeof(JsonStringLocalizer<>));
 
 // ── The book: chapter registry + the theory engine ─────────────────────────
 builder.Services.AddSingleton<ChapterRegistry>();
