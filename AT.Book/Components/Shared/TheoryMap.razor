@@ -16,8 +16,8 @@
 </div>
 
 <div class="d-flex gap-2 flex-wrap align-items-center mb-3">
-    <MudSwitch T="bool" Checked="@_showResearch" CheckedChanged="@OnToggleResearch" Color="Color.Secondary">
-        @Loc["map.showResearch"]
+    <MudSwitch T="bool" Value="@_showResearch" ValueChanged="@OnToggleResearch" Color="Color.Secondary">
+        @Loc["map.showResearch"].Value
     </MudSwitch>
 </div>
 
@@ -62,7 +62,6 @@
                     label = Loc[part.TitleKey].Value,
                     level = 1,
                     layer = LayerName(PartLayer(part.Id)),
-                    parent = (string?)null,
                     url = (string?)null,
                     summary = Loc[part.SubtitleKey].Value,
                 }
@@ -70,18 +69,24 @@
 
             foreach (var ch in part.Chapters)
             {
+                var cid = "ch-" + ch.Id;
                 nodes.Add(new
                 {
                     data = new
                     {
-                        id = "ch-" + ch.Id,
+                        id = cid,
                         label = Loc[$"chapter.{ch.Id}.title"].Value,
                         level = 2,
                         layer = LayerName(PartLayer(part.Id)),
-                        parent = pid,
                         url = $"/{CultureState.Culture}/chapter/{ch.Id}",
                         summary = Loc[$"chapter.{ch.Id}.summary"].Value,
                     }
+                });
+
+                // Hierarchy edge — this is what Dagre uses to nest chapters under their part.
+                edges.Add(new
+                {
+                    data = new { id = $"edge-{pid}-{cid}", source = pid, target = cid, spine = false, research = false }
                 });
             }
         }
@@ -89,7 +94,7 @@
         // The spine: Foundations → Structure → Information → Cosmology → Physics → Observation.
         for (int i = 0; i < partIds.Count - 1; i++)
         {
-            edges.Add(new { data = new { id = $"spine{i}", source = partIds[i], target = partIds[i + 1], spine = true } });
+            edges.Add(new { data = new { id = $"spine{i}", source = partIds[i], target = partIds[i + 1], spine = true, research = false } });
         }
 
         if (includeResearch)
@@ -107,10 +112,13 @@
                         label = o.Title,
                         level = 3,
                         layer = LayerName(o.Layer),
-                        parent = parent,
                         url = (string?)null,
                         summary = o.Summary,
                     }
+                });
+                edges.Add(new
+                {
+                    data = new { id = $"edge-{parent}-obj-{o.Id}", source = parent, target = "obj-" + o.Id, spine = false, research = true }
                 });
             }
 
@@ -124,22 +132,26 @@
                         label = a.Title,
                         level = 3,
                         layer = LayerName(a.Layer),
-                        parent = "part-" + PartIdForLayer(a.Layer),
                         url = (string?)null,
                         summary = a.Result,
                     }
+                });
+                var parent = "part-" + PartIdForLayer(a.Layer);
+                edges.Add(new
+                {
+                    data = new { id = $"edge-{parent}-audit-{a.Id}", source = parent, target = "audit-" + a.Id, spine = false, research = true }
                 });
             }
 
             foreach (var o in Registry.Objects)
                 foreach (var d in o.Dependencies)
                     if (Registry.ObjectById.ContainsKey(d))
-                        edges.Add(new { data = new { id = $"dep-{o.Id}-{d}", source = "obj-" + o.Id, target = "obj-" + d, spine = false } });
+                        edges.Add(new { data = new { id = $"dep-{o.Id}-{d}", source = "obj-" + o.Id, target = "obj-" + d, spine = false, research = true } });
 
             foreach (var a in Registry.Audits)
                 foreach (var d in a.Dependencies)
                     if (Registry.ObjectById.ContainsKey(d))
-                        edges.Add(new { data = new { id = $"dep-{a.Id}-{d}", source = "audit-" + a.Id, target = "obj-" + d, spine = false } });
+                        edges.Add(new { data = new { id = $"dep-{a.Id}-{d}", source = "audit-" + a.Id, target = "obj-" + d, spine = false, research = true } });
         }
 
         return new { nodes = nodes.ToArray(), edges = edges.ToArray() };

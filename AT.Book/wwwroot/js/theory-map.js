@@ -48,17 +48,17 @@ window.theoryMap = (function () {
           }
         },
         {
-          selector: 'node[level = 1]', // book parts (compound parents)
+          selector: 'node[level = 1]', // book parts — section headers of the journey
           style: {
             'shape': 'round-rectangle',
-            'background-opacity': 0.12,
+            'background-opacity': 0.9,
             'border-width': 2,
             'border-color': function (ele) { return layerColors[ele.data('layer')] || '#8B949E'; },
-            'text-valign': 'top',
-            'text-margin-y': 8,
             'font-weight': 'bold',
-            'font-size': 12,
-            'padding': '22px'
+            'font-size': 13,
+            'padding': '14px',
+            'text-valign': 'center',
+            'text-halign': 'center'
           }
         },
         {
@@ -102,6 +102,15 @@ window.theoryMap = (function () {
             'line-color': '#5b6472',
             'target-arrow-color': '#5b6472',
             'line-style': 'dashed'
+          }
+        },
+        {
+          selector: 'edge[research]',
+          style: {
+            'line-color': '#3b4252',
+            'target-arrow-color': '#3b4252',
+            'line-style': 'dotted',
+            'width': 1
           }
         }
       ],
