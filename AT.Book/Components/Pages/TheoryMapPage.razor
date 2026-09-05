@@ -1,0 +1,23 @@
+@page "/{Culture}/theory-map"
+@page "/{Culture}/theoriekarte"
+@inject CultureService CultureState
+@inject IStringLocalizer<App> Loc
+
+<PageTitle>@($"{Loc["nav.theoryMap"]} · {Loc["app.title"]}")</PageTitle>
+
+<h2 class="section-heading">@Loc["nav.theoryMap"]</h2>
+<p class="muted">@Loc["app.thesis"]</p>
+
+<div class="mt-3">
+    <TheoryMap />
+</div>
+
+@code {
+    [Parameter] public string? Culture { get; set; }
+
+    protected override void OnInitialized()
+    {
+        if (Culture is "en" or "de")
+            CultureState.Set(Culture);
+    }
+}

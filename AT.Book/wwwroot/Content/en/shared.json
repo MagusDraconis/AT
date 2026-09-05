@@ -6,6 +6,7 @@
 
   "nav.beginReading": "Begin Reading",
   "nav.toc": "Table of Contents",
+  "nav.theoryMap": "Theory Map",
   "nav.preface": "Preface",
   "nav.readerMode": "Reader Mode",
   "nav.researchMode": "Research Mode",
@@ -23,7 +24,7 @@
   "part.cosmology.subtitle": "ΩΛ, Ωm, q₀, z_acc",
   "part.physics": "Part V · Physics",
   "part.physics.subtitle": "Families, Masses, Couplings, Planck Scale",
-  "part.correspondence": "Part VI · Correspondence",
+  "part.correspondence": "Part VI · Observation & Correspondence",
   "part.correspondence.subtitle": "Thermodynamics, Quantum Layer, Joint State, Entangling Gate",
 
   "home.heroTitle": "The Actualization Theory",
@@ -47,9 +48,17 @@
 
   "research.title": "Research Mode",
   "research.subtitle": "The theory engine behind the book — graph, calculations, and audit history.",
-  "research.tab.graph": "Dependency Graph",
+  "research.tab.graph": "Theory Map",
   "research.tab.calculations": "Calculations",
   "research.tab.audits": "Audit History",
+
+  "map.showResearch": "Show research objects",
+  "map.legend.foundations": "Foundations",
+  "map.legend.structure": "Structure",
+  "map.legend.information": "Information",
+  "map.legend.cosmology": "Cosmology",
+  "map.legend.physics": "Physics",
+  "map.legend.correspondence": "Observation",
 
   "notfound.title": "Page not found",
   "notfound.back": "Back to the book"

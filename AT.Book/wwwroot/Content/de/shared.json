@@ -6,6 +6,7 @@
 
   "nav.beginReading": "Loslesen",
   "nav.toc": "Inhaltsverzeichnis",
+  "nav.theoryMap": "Theoriekarte",
   "nav.preface": "Vorwort",
   "nav.readerMode": "Lesemodus",
   "nav.researchMode": "Forschungsmodus",
@@ -23,7 +24,7 @@
   "part.cosmology.subtitle": "ΩΛ, Ωm, q₀, z_acc",
   "part.physics": "Teil V · Physik",
   "part.physics.subtitle": "Familien, Massen, Kopplungen, Planck-Skala",
-  "part.correspondence": "Teil VI · Korrespondenz",
+  "part.correspondence": "Teil VI · Beobachtung & Korrespondenz",
   "part.correspondence.subtitle": "Thermodynamik, Quantenschicht, Verbundzustand, Verschränkungs-Gate",
 
   "home.heroTitle": "Die Aktualisierungstheorie",
@@ -47,9 +48,17 @@
 
   "research.title": "Forschungsmodus",
   "research.subtitle": "Die Theorie-Engine hinter dem Buch — Graph, Berechnungen und Prüfverlauf.",
-  "research.tab.graph": "Abhängigkeitsgraph",
+  "research.tab.graph": "Theoriekarte",
   "research.tab.calculations": "Berechnungen",
   "research.tab.audits": "Prüfverlauf",
+
+  "map.showResearch": "Forschungsobjekte anzeigen",
+  "map.legend.foundations": "Grundlagen",
+  "map.legend.structure": "Struktur",
+  "map.legend.information": "Information",
+  "map.legend.cosmology": "Kosmologie",
+  "map.legend.physics": "Physik",
+  "map.legend.correspondence": "Beobachtung",
 
   "notfound.title": "Seite nicht gefunden",
   "notfound.back": "Zurück zum Buch"
