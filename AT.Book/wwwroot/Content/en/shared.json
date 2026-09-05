@@ -47,8 +47,7 @@
   "chapter.tableOfContents": "Table of Contents",
 
   "research.title": "Research Mode",
-  "research.subtitle": "The theory engine behind the book — graph, calculations, and audit history.",
-  "research.tab.graph": "Theory Map",
+  "research.subtitle": "The theory engine behind the book — executable calculations and audit history.",
   "research.tab.calculations": "Calculations",
   "research.tab.audits": "Audit History",
 

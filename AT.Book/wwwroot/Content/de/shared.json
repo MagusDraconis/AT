@@ -47,8 +47,7 @@
   "chapter.tableOfContents": "Inhaltsverzeichnis",
 
   "research.title": "Forschungsmodus",
-  "research.subtitle": "Die Theorie-Engine hinter dem Buch — Graph, Berechnungen und Prüfverlauf.",
-  "research.tab.graph": "Theoriekarte",
+  "research.subtitle": "Die Theorie-Engine hinter dem Buch — ausführbare Berechnungen und Prüfverlauf.",
   "research.tab.calculations": "Berechnungen",
   "research.tab.audits": "Prüfverlauf",
 
