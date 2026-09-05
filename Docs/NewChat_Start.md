@@ -3377,6 +3377,29 @@ subsystem possesses. Classification: shared information (A) REFUTED; shared
 actualization (B) REFUTED; shared reality (C) CONFIRMED; new ontology (D) CONFIRMED;
 non-separability as the minimal principle NEW PRIMITIVE. Canonical D96 unchanged.
 
+ResearchY-NP_047 (Joint State Dynamics Audit, COMPLETE, tests 8/8 PASSED): how are
+Joint States created, transformed, and destroyed? Verdict: full dynamics exists with
+ONE added primitive — the entangling gate. THE THREE RULES (verified): CREATION
+(Product → Joint) requires a non-local entangling gate — CNOT |+⟩|0⟩ = (|00⟩+|11⟩)/√2
+(the Bell pair, rank 2, C=1) and CZ |+⟩|+⟩ = (|00⟩+|01⟩+|10⟩−|11⟩)/2 (rank 2) — while
+local unitaries U_A⊗U_B CANNOT create entanglement (they preserve Schmidt rank, so a
+product stays rank 1); STABILITY (Joint → Joint) via local unitaries preserves Schmidt
+rank, concurrence, and entanglement entropy (the singular values of the coefficient
+matrix are invariant), and the canonical per-sector phase update θ(t+1) = θ(t) + Δθ IS
+U_A⊗U_B (NP_038/041) — so no new primitive is needed for stability; DESTRUCTION (Joint
+→ Product) via local measurement (M_001 reads one quadrature) collapses to a product
+(rank 1, S=0). CONSERVATION (verified): rank/concurrence/entropy are conserved by local
+unitaries, created by the entangling gate, destroyed by measurement — entanglement is
+not a conserved quantity under arbitrary operations. MULTIPARTITE (verified): Bell →
+GHZ via CNOT + a third |0⟩ qubit (τ₃=1, achievable); GHZ → W REFUTED (distinct SLOCC
+class — GHZ τ₃=1, W τ₃=0 — no CZ composition reaches W, NP_042). Classification:
+creation NEW PRIMITIVE (the entangling gate, CNOT/CZ); stability DERIVED (local
+unitaries, canonical phase update); destruction DERIVED (local measurement, M_001);
+full dynamics exists CONFIRMED; static ontology only REFUTED; additional primitive
+required CONFIRMED (exactly 1). Minimal dynamical law = {entangling gate (create) +
+local unitary (stabilize, canonical) + local measurement (destroy, canonical)}.
+Canonical D96 unchanged.
+
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-
