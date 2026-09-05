@@ -2,6 +2,7 @@
   <Folder Name="/Data/" />
   <Folder Name="/Documents/" />
   <Project Path="AT.App/AT.App.csproj" />
+  <Project Path="AT.Book/AT.Book.csproj" />
   <Project Path="AT.Core/AT.Core.csproj" />
   <Project Path="AT.Tests/AT.Tests.csproj" />
 </Solution>
