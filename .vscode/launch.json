@@ -31,10 +31,43 @@
             }
         },
         {
-            "name": "Launch Chrome against localhost",
+            "name": "AT.Book — Blazor Server",
+            "type": "dotnet",
+            "request": "launch",
+            "projectPath": "${workspaceFolder}/AT.Book/AT.Book.csproj",
+            "launchSettingsProfile": "http"
+        },
+        {
+            "name": "AT.Book — Blazor Server (coreclr)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build-book",
+            "program": "${workspaceFolder}/AT.Book/bin/Debug/net10.0/AT.Book.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/AT.Book",
+            "stopAtEntry": false,
+            "env": {
+                "ASPNETCORE_ENVIRONMENT": "Development",
+                "ASPNETCORE_URLS": "http://localhost:5210"
+            },
+            "serverReadyAction": {
+                "action": "openExternally",
+                "pattern": "\\bNow listening on:\\s+(https?://\\S+)",
+                "uriFormat": "%s"
+            }
+        },
+        {
+            "name": "Launch Chrome against localhost (AT.App)",
             "type": "chrome",
             "request": "launch",
             "url": "http://localhost:5198",
+            "webRoot": "${workspaceFolder}"
+        },
+        {
+            "name": "Launch Chrome against localhost (AT.Book)",
+            "type": "chrome",
+            "request": "launch",
+            "url": "http://localhost:5210/en",
             "webRoot": "${workspaceFolder}"
         }
     ]
