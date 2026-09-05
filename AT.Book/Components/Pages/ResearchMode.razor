@@ -9,6 +9,9 @@
 <p class="muted">@Loc["research.subtitle"]</p>
 
 <MudTabs Elevation="1" Rounded="true" Class="mt-3">
+    <MudTabPanel Text="@Loc["research.tab.network"]">
+        <div class="mt-3"><DependencyNetwork /></div>
+    </MudTabPanel>
     <MudTabPanel Text="@Loc["research.tab.calculations"]">
         <div class="mt-3"><ResearchCalculations /></div>
     </MudTabPanel>

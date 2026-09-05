@@ -1,50 +1,28 @@
 @using System.Text.Json
 @using AT.Book.Services
 @inject ChapterRegistry Book
-@inject TheoryRegistry Registry
 @inject CultureService CultureState
 @inject IJSRuntime JS
 @inject IStringLocalizer<App> Loc
 
-<div class="legend mb-3">
-    <span class="legend-item"><span class="dot" style="background:#1D4ED8"></span>@Loc["map.legend.foundations"]</span>
-    <span class="legend-item"><span class="dot" style="background:#06B6D4"></span>@Loc["map.legend.structure"]</span>
-    <span class="legend-item"><span class="dot" style="background:#22C55E"></span>@Loc["map.legend.information"]</span>
-    <span class="legend-item"><span class="dot" style="background:#EAB308"></span>@Loc["map.legend.cosmology"]</span>
-    <span class="legend-item"><span class="dot" style="background:#F97316"></span>@Loc["map.legend.physics"]</span>
-    <span class="legend-item"><span class="dot" style="background:#A855F7"></span>@Loc["map.legend.correspondence"]</span>
-</div>
-
-<div class="d-flex gap-2 flex-wrap align-items-center mb-3">
-    <MudSwitch T="bool" Value="@_showResearch" ValueChanged="@OnToggleResearch" Color="Color.Secondary">
-        @Loc["map.showResearch"].Value
-    </MudSwitch>
-</div>
+<MapLegend />
 
 <div id="theory-map" class="graph-canvas"></div>
 
 @code {
-    private bool _showResearch;
-
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
         if (firstRender)
             await RenderMap();
     }
 
-    private async Task OnToggleResearch(bool value)
-    {
-        _showResearch = value;
-        await RenderMap();
-    }
-
     private async Task RenderMap()
     {
-        var json = JsonSerializer.Serialize(BuildPayload(_showResearch));
+        var json = JsonSerializer.Serialize(BuildPayload());
         await JS.InvokeVoidAsync("theoryMap.init", "theory-map", json);
     }
 
-    private object BuildPayload(bool includeResearch)
+    private object BuildPayload()
     {
         var nodes = new List<object>();
         var edges = new List<object>();
@@ -60,8 +38,8 @@
                 {
                     id = pid,
                     label = Loc[part.TitleKey].Value,
-                    level = 1,
-                    layer = LayerName(PartLayer(part.Id)),
+                    kind = "part",
+                    layer = TheoryGraphService.LayerName(PartLayer(part.Id)),
                     url = (string?)null,
                     summary = Loc[part.SubtitleKey].Value,
                 }
@@ -76,8 +54,8 @@
                     {
                         id = cid,
                         label = Loc[$"chapter.{ch.Id}.title"].Value,
-                        level = 2,
-                        layer = LayerName(PartLayer(part.Id)),
+                        kind = "chapter",
+                        layer = TheoryGraphService.LayerName(PartLayer(part.Id)),
                         url = $"/{CultureState.Culture}/chapter/{ch.Id}",
                         summary = Loc[$"chapter.{ch.Id}.summary"].Value,
                     }
@@ -86,7 +64,7 @@
                 // Hierarchy edge — this is what Dagre uses to nest chapters under their part.
                 edges.Add(new
                 {
-                    data = new { id = $"edge-{pid}-{cid}", source = pid, target = cid, spine = false, research = false }
+                    data = new { id = $"edge-{pid}-{cid}", kind = "hierarchy", source = pid, target = cid }
                 });
             }
         }
@@ -94,64 +72,7 @@
         // The spine: Foundations → Structure → Information → Cosmology → Physics → Observation.
         for (int i = 0; i < partIds.Count - 1; i++)
         {
-            edges.Add(new { data = new { id = $"spine{i}", source = partIds[i], target = partIds[i + 1], spine = true, research = false } });
-        }
-
-        if (includeResearch)
-        {
-            var chapterIds = Book.Chapters.Select(c => c.Id).ToHashSet(StringComparer.OrdinalIgnoreCase);
-
-            foreach (var o in Registry.Objects)
-            {
-                var parent = chapterIds.Contains(o.Id) ? "ch-" + o.Id : "part-" + PartIdForLayer(o.Layer);
-                nodes.Add(new
-                {
-                    data = new
-                    {
-                        id = "obj-" + o.Id,
-                        label = o.Title,
-                        level = 3,
-                        layer = LayerName(o.Layer),
-                        url = (string?)null,
-                        summary = o.Summary,
-                    }
-                });
-                edges.Add(new
-                {
-                    data = new { id = $"edge-{parent}-obj-{o.Id}", source = parent, target = "obj-" + o.Id, spine = false, research = true }
-                });
-            }
-
-            foreach (var a in Registry.Audits)
-            {
-                nodes.Add(new
-                {
-                    data = new
-                    {
-                        id = "audit-" + a.Id,
-                        label = a.Title,
-                        level = 3,
-                        layer = LayerName(a.Layer),
-                        url = (string?)null,
-                        summary = a.Result,
-                    }
-                });
-                var parent = "part-" + PartIdForLayer(a.Layer);
-                edges.Add(new
-                {
-                    data = new { id = $"edge-{parent}-audit-{a.Id}", source = parent, target = "audit-" + a.Id, spine = false, research = true }
-                });
-            }
-
-            foreach (var o in Registry.Objects)
-                foreach (var d in o.Dependencies)
-                    if (Registry.ObjectById.ContainsKey(d))
-                        edges.Add(new { data = new { id = $"dep-{o.Id}-{d}", source = "obj-" + o.Id, target = "obj-" + d, spine = false, research = true } });
-
-            foreach (var a in Registry.Audits)
-                foreach (var d in a.Dependencies)
-                    if (Registry.ObjectById.ContainsKey(d))
-                        edges.Add(new { data = new { id = $"dep-{a.Id}-{d}", source = "audit-" + a.Id, target = "obj-" + d, spine = false, research = true } });
+            edges.Add(new { data = new { id = $"spine{i}", kind = "spine", source = partIds[i], target = partIds[i + 1] } });
         }
 
         return new { nodes = nodes.ToArray(), edges = edges.ToArray() };
@@ -166,27 +87,5 @@
         "physics" => TheoryLayer.Physics,
         "correspondence" => TheoryLayer.Correspondence,
         _ => TheoryLayer.Foundations,
-    };
-
-    private static string PartIdForLayer(TheoryLayer layer) => layer switch
-    {
-        TheoryLayer.Foundations => "foundations",
-        TheoryLayer.Structure => "structure",
-        TheoryLayer.Information => "information",
-        TheoryLayer.Cosmology => "cosmology",
-        TheoryLayer.Physics => "physics",
-        TheoryLayer.Correspondence => "correspondence",
-        _ => "foundations",
-    };
-
-    private static string LayerName(TheoryLayer layer) => layer switch
-    {
-        TheoryLayer.Foundations => "Foundations",
-        TheoryLayer.Structure => "Structure",
-        TheoryLayer.Information => "Information",
-        TheoryLayer.Cosmology => "Cosmology",
-        TheoryLayer.Physics => "Physics",
-        TheoryLayer.Correspondence => "Correspondence",
-        _ => layer.ToString(),
     };
 }

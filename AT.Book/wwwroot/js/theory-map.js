@@ -48,7 +48,7 @@ window.theoryMap = (function () {
           }
         },
         {
-          selector: 'node[level = 1]', // book parts — section headers of the journey
+          selector: 'node[kind = "part"]', // book parts — section headers of the journey
           style: {
             'shape': 'round-rectangle',
             'background-opacity': 0.9,
@@ -62,7 +62,7 @@ window.theoryMap = (function () {
           }
         },
         {
-          selector: 'node[level = 2]', // chapters
+          selector: 'node[kind = "chapter"]', // chapters
           style: {
             'shape': 'ellipse',
             'width': 132,
@@ -74,21 +74,22 @@ window.theoryMap = (function () {
           }
         },
         {
-          selector: 'node[level = 3]', // research objects
+          selector: 'node[kind = "object"]', // research objects (dependency network only)
           style: {
             'shape': 'ellipse',
-            'width': 104,
-            'height': 28,
-            'font-size': 8,
-            'background-opacity': 0.65,
+            'width': 130,
+            'height': 34,
+            'font-size': 9,
+            'background-opacity': 0.7,
             'border-width': 1,
+            'border-style': 'dashed',
             'border-color': function (ele) { return layerColors[ele.data('layer')] || '#8B949E'; }
           }
         },
         {
           selector: 'edge',
           style: {
-            'width': function (ele) { return ele.data('spine') ? 2.5 : 1.2; },
+            'width': 1.2,
             'line-color': '#3b4252',
             'target-arrow-color': '#3b4252',
             'target-arrow-shape': 'triangle',
@@ -97,15 +98,16 @@ window.theoryMap = (function () {
           }
         },
         {
-          selector: 'edge[spine]',
+          selector: 'edge[kind = "spine"]',
           style: {
+            'width': 2.5,
             'line-color': '#5b6472',
             'target-arrow-color': '#5b6472',
             'line-style': 'dashed'
           }
         },
         {
-          selector: 'edge[research]',
+          selector: 'edge[kind = "dependency"]',
           style: {
             'line-color': '#3b4252',
             'target-arrow-color': '#3b4252',

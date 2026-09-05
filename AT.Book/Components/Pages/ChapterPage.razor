@@ -4,6 +4,7 @@
 @inject ChapterRegistry Book
 @inject CultureService CultureState
 @inject CalculationCatalog CalcCatalog
+@inject TheoryRegistry Registry
 @inject IStringLocalizer<App> Loc
 
 <PageTitle>@($"{Loc[$"chapter.{Id}.title"]} · {Loc["app.title"]}")</PageTitle>
@@ -83,6 +84,33 @@ else
             <p class="muted">@Loc[$"chapter.{Chapter.Id}.references"]</p>
         </section>
 
+        @if (Evidence.Count > 0)
+        {
+            <section class="chapter-section">
+                <h2 class="section-heading">@Loc["chapter.section.evidence"]</h2>
+                <p class="muted">@Loc["chapter.section.evidenceHint"]</p>
+                @foreach (var audit in Evidence)
+                {
+                    <MudCard Elevation="1" Class="theory-card mb-2">
+                        <MudCardContent>
+                            <div class="d-flex align-items-center gap-2 flex-wrap">
+                                <AuditStatusBadge Status="@audit.Status" />
+                                <LayerBadge Layer="@audit.Layer" />
+                                <MudSpacer />
+                                <MudText Typo="Typo.caption" Class="muted">@audit.Id · @audit.Date.ToString("yyyy-MM-dd")</MudText>
+                            </div>
+                            <MudText Typo="Typo.subtitle1" Class="fw-bold mt-1">@audit.Title</MudText>
+                            <MudText Typo="Typo.body2" Class="mt-1">@audit.Result</MudText>
+                        </MudCardContent>
+                    </MudCard>
+                }
+                <MudButton Href="@($"/{CultureState.Culture}/research")" Variant="Variant.Text" Size="Size.Small"
+                           StartIcon="@Icons.Material.Filled.History" Class="mt-2">
+                    @Loc["chapter.viewAuditHistory"]
+                </MudButton>
+            </section>
+        }
+
         <nav class="chapter-nav mt-5">
             @if (Previous is not null)
             {
@@ -115,6 +143,8 @@ else
     private Chapter? Next => Chapter is null ? null : Book.Next(Chapter);
     private Chapter? Previous => Chapter is null ? null : Book.Previous(Chapter);
     private CalculationResult? Calculation => CalcCatalog.Get(Chapter?.CalculationId);
+
+    private IReadOnlyList<TheoryAudit> Evidence => Chapter is null ? Array.Empty<TheoryAudit>() : Registry.AuditsFor(Chapter.Id);
 
     private string PartTitleKey => Chapter?.PartId == "preface" ? "nav.preface" : $"part.{Chapter?.PartId}";
 

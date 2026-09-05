@@ -21,6 +21,26 @@ public sealed class TheoryRegistry
         ObjectById = Objects.ToDictionary(o => o.Id, StringComparer.OrdinalIgnoreCase);
     }
 
+    /// <summary>
+    /// The audits that constitute evidence for a given theory object (or chapter) id:
+    /// audits that depend on it, plus audits explicitly listed on the matching object.
+    /// </summary>
+    public IReadOnlyList<TheoryAudit> AuditsFor(string id)
+    {
+        var result = new List<TheoryAudit>();
+
+        foreach (var a in Audits)
+            if (a.Dependencies.Any(d => string.Equals(d, id, StringComparison.OrdinalIgnoreCase)))
+                result.Add(a);
+
+        if (ObjectById.TryGetValue(id, out var obj) && obj.AuditIds is not null)
+            foreach (var auditId in obj.AuditIds)
+                if (AuditById.TryGetValue(auditId, out var audit) && !result.Contains(audit))
+                    result.Add(audit);
+
+        return result;
+    }
+
     private static List<TheoryObject> SeedObjects() =>
     [
         // ── Layer 0 — Foundations ──────────────────────────────────────────────

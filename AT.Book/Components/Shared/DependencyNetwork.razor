@@ -1,0 +1,58 @@
+@using System.Text.Json
+@using AT.Book.Services
+@inject TheoryRegistry Registry
+@inject IJSRuntime JS
+
+<MapLegend />
+
+<div id="dependency-network" class="graph-canvas"></div>
+
+@code {
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+            await RenderMap();
+    }
+
+    private async Task RenderMap()
+    {
+        var json = JsonSerializer.Serialize(BuildPayload());
+        await JS.InvokeVoidAsync("theoryMap.init", "dependency-network", json);
+    }
+
+    /// <summary>
+    /// The research dependency network: theory objects as nodes, their derivation
+    /// dependencies as edges. Audits are deliberately absent — they are evidence,
+    /// not theory structure.
+    /// </summary>
+    private object BuildPayload()
+    {
+        var nodes = new List<object>();
+        var edges = new List<object>();
+
+        foreach (var o in Registry.Objects)
+        {
+            nodes.Add(new
+            {
+                data = new
+                {
+                    id = "obj-" + o.Id,
+                    kind = "object",
+                    label = o.Title,
+                    layer = TheoryGraphService.LayerName(o.Layer),
+                    url = (string?)null,
+                    summary = o.Summary,
+                }
+            });
+
+            foreach (var d in o.Dependencies)
+                if (Registry.ObjectById.ContainsKey(d))
+                    edges.Add(new
+                    {
+                        data = new { id = $"dep-{o.Id}-{d}", kind = "dependency", source = "obj-" + o.Id, target = "obj-" + d }
+                    });
+        }
+
+        return new { nodes = nodes.ToArray(), edges = edges.ToArray() };
+    }
+}
