@@ -3827,6 +3827,19 @@ dynamics + redshift DERIVED (QG1/222/197/26); FRW a = ρ^(1/d) CORRESPONDENCE (Q
 accelerated expansion HOSTED (NP_056); a native accelerating scale factor REFUTED. No new
 primitive; canonical AT unchanged.
 
+ResearchY-NP_070 (Criticality Audit, COMPLETE, tests 7/7 PASSED): why is the canonical
+universe critical (μ=1)? Verdict: μ=1 is the UNIQUE branching ratio that is simultaneously
+marginal-stable (non-extinct, non-runaway), scale-free (L = 1/|ln μ| = ∞, renormalization-
+invariant), and maximum-entropy (α=0, uniform per-octave) — three independent criteria that
+coincide at μ=1 (QG7). Regimes: μ<1 extincts (q=1, finite total), μ>1 runs away (q<1,
+exponential total), only μ=1 is marginal (linear total). μ≠1 breaks scale-freeness (α≠0), hence
+flat rotation and the self-similar deficit. Criticality is DERIVED (unique), conditional on
+SCALE-FREENESS (renormalization invariance, the indifference principle AT-F1: "the primitives
+carry no intrinsic scale") as the single BOUNDARY input. Chain: Q-events → critical branching
+(μ=1) → α=0 → ρ → gravity, with criticality itself derived. Classification: criticality μ=1
+DERIVED (unique, QG7); scale-freeness BOUNDARY (AT-F1); α=0 flat rotation DERIVED (QG206);
+sub/supercritical universe REFUTED. No new primitive; canonical AT unchanged.
+
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-

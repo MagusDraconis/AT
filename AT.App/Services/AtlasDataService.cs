@@ -148,6 +148,21 @@ public static class AtlasDataService
                     "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_064.md"),
             ]),
         new(
+            "researchy-np070-criticality",
+            "Why Reality Sits at the Critical Point: μ = 1 Is the Unique Branching Ratio That Is Simultaneously Marginal, Scale-Free, and Maximum-Entropy",
+            "ResearchY · NP_070 (Criticality Audit)",
+            "The universe's branching process sits exactly at μ=1 because that is the only point that is non-vanishing and non-exploding. Subcritical branching (μ<1) dies out; supercritical (μ>1) runs away exponentially; only μ=1 is marginal — the count grows linearly, the abundance is scale-free (α=0, giving flat rotation), and the allocation is maximum-entropy. Three independent criteria — marginal stability, scale-freeness, and maximum entropy — coincide at μ=1, so criticality is derived, not postulated.",
+            "NP_070 tests μ=0.9, 1.0, 1.1. Regimes: μ<1 extinction (q=1, finite total population), μ=1 critical/marginal (q=1, linear total), μ>1 runaway (q<1, exponential total). μ=1 ⟺ α=0 ⟺ L=1/|ln μ|=∞ (scale-free) ⟺ maximum entropy. The three criteria coincide only at μ=1 (QG7). The conditioning input is scale-freeness — renormalization invariance — which AT-F1 (the indifference principle) reduces to 'the primitives carry no intrinsic scale'. Chain: Q-events → critical branching (μ=1) → α=0 → ρ → gravity, with criticality itself derived. Classification: criticality DERIVED (unique); scale-freeness BOUNDARY; α=0 DERIVED; sub/supercritical universe REFUTED.",
+            "For non-experts: imagine a branching process where each 'event' spawns more events. If it spawns fewer than one on average, it dies out; if more than one, it explodes exponentially. Reality sits exactly at the balance point — one-for-one — because that is the only self-consistent choice: it neither vanishes nor blows up, it has no preferred scale, and it is the least biased (most 'random') option. The theory does not assume this balance point; it shows that all three requirements point to the same, unique value.",
+            "Criticality μ=1 is derived (unique): the sole non-extinct, non-runaway, scale-free, maximum-entropy point.",
+            "“The universe balances on the knife's edge between silence and explosion.”",
+            false,
+            [
+                new("ResearchY-NP_070", "CRITICALITY AUDIT",
+                    "μ=1 is the unique marginal, scale-free, maximum-entropy branching point — criticality derived.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_070.md"),
+            ]),
+        new(
             "researchy-np069-expansion-ontology",
             "What Expands Is the Count, Not an Independent Scale Factor: Cosmic Expansion Is the Branching Growth of the Actualization Count, Read as a Hosted FRW Scale Factor",
             "ResearchY · NP_069 (Expansion Ontology Audit)",

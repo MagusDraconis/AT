@@ -249,5 +249,9 @@ public sealed class TheoryRegistry
             "Expansion is the branching growth of the actualization count ρ (∂_t ρ = ln(μ)·ρ), carrying the metric g = ρ^(2/d)η. The FRW scale factor a = ρ^(1/d) is a hosted relabeling; at criticality the mean is static and only the variance grows. No native accelerating scale factor.",
             AuditStatus.Passed, new DateTime(2026, 9, 6), TheoryLayer.Cosmology, TheoryClassification.Correspondence,
             ["omega-lambda", "iocc"]),
+        new("np070", "Criticality Audit", "Why is the canonical universe critical (μ=1)?",
+            "μ=1 is the UNIQUE branching ratio that is simultaneously marginal-stable, scale-free, and maximum-entropy — three criteria coinciding at μ=1. Criticality is DERIVED (unique), conditional on scale-freeness (the indifference principle) as the single boundary input.",
+            AuditStatus.Passed, new DateTime(2026, 9, 6), TheoryLayer.Foundations, TheoryClassification.Derived,
+            ["d96", "occupancy"]),
     ];
 }
