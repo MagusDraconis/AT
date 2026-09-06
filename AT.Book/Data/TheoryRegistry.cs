@@ -361,5 +361,9 @@ public sealed class TheoryRegistry
             "Temperature = the COUNT-DISTRIBUTION WIDTH — the thermodynamic conjugate of entropy: T = ∂U/∂S, where U is the conserved count (energy) and S = H = −Σρ ln ρ is the entropy/mode multiplicity. Derived from the occupancy ρ alone (dS/dU = β exact). Cold = narrow occupancy (few modes), hot = wide (many modes); H and the width monotonically track T. The dimensionless temperature is DERIVED; the absolute Kelvin scale is BOUNDARY (the k_B unit anchor, like m_e/v).",
             AuditStatus.Passed, new DateTime(2026, 9, 6), TheoryLayer.Structure, TheoryClassification.Derived,
             ["d96", "difference"]),
+        new("np098", "Localization Ontology Audit", "What is localization inside Actualization Theory?",
+            "Localization = the CONSTRUCTIVE INTERFERENCE of a WAVE PACKET (a superposition of resonance modes) that peaks |ψ|² = ρ at one node. A particle is a propagating resonance (its localization is the Born distribution's envelope peak, its trajectory the actualization chain); a single node is refuted. Fourier uncertainty Δx·Δk = 1: a single mode is delocalized (|ψ|² uniform), a wave packet is localized. Position = the envelope peak; time = the tick (envelope at v_g). Wave packet + Born weight DERIVED; localization EMERGENT; node basis FRAMEWORK.",
+            AuditStatus.Passed, new DateTime(2026, 9, 6), TheoryLayer.Structure, TheoryClassification.Emergent,
+            ["d96", "difference"]),
     ];
 }

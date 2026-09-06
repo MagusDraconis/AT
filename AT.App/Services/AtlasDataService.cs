@@ -493,6 +493,21 @@ public static class AtlasDataService
                     "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_097.md"),
             ]),
         new(
+            "researchy-np098-localization-ontology",
+            "Why a Particle Is Here and Not There: The Wave Packet's Constructive Interference",
+            "ResearchY · NP_098 (Localization Ontology Audit)",
+            "A particle is not a dot — it is a note, a resonance spread over the whole network. So why does it ever look like a dot, sitting in one place? Because of how notes add up. When many different notes are sounded together, they reinforce at exactly one spot and cancel everywhere else: that is a wave packet. The particle appears 'here' because its wave packet peaks here. And it appears 'now' because the peak slides along one step per tick. Localization is not a new ingredient — it is just interference, the same trick that makes ripples on a pond meet and build into a single tall wave.",
+            "NP_098 defines localization vs locality: a resonance class (a mode) is DELOCALIZED (|ψ|² = 1/N uniform at every node); localization is the CONSTRUCTIVE INTERFERENCE of a wave packet (a superposition of modes) that peaks |ψ|² = ρ at one node. A particle = a propagating resonance (B); its localization = the Born distribution's envelope peak (C); its trajectory = the actualization chain of Born-selected nodes (D); a single localized node (A) is refuted. The Fourier uncertainty Δx·Δk = 1 governs it: a single mode (Δk→0) is delocalized, a wave packet (Δk large) is localized. Position = the envelope peak; time = the tick (the envelope advances at v_g, one link per tick); the Born selection (NP_093) realizes one node with probability |ψ|². Electron at v_g = k/ω; photon/graviton at n=1. Wave packet + Born weight DERIVED; localization (position/trajectory) EMERGENT; node basis FRAMEWORK.",
+            "For non-experts: drop two stones into a pond and the ripples overlap — where their peaks meet, the water jumps higher. A particle is many overlapping ripples; where they add up, the particle 'is'. Move the ripples and the tall spot moves. So a particle's location is not a thing it has; it is where its ripples happen to add up right now.",
+            "Localization = wave-packet constructive interference; position = envelope peak; trajectory = Born chain.",
+            "“A particle is where its ripples add up.”",
+            false,
+            [
+                new("ResearchY-NP_098", "LOCALIZATION ONTOLOGY AUDIT",
+                    "Localization = constructive interference of a wave packet; position = envelope peak; Δx·Δk = 1.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_098.md"),
+            ]),
+        new(
             "researchy-np074-quantum-number-ontology",
             "What Are Quantum Numbers? The Symmetry Charges of the D96 Ring: Charge Is the Rotation, Isospin the Doublet, and Only the Color Count Remains a Postulate",
             "ResearchY · NP_074 (Quantum Number Ontology Audit)",

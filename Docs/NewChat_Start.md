@@ -4290,6 +4290,23 @@ Classification: the dimensionless temperature (∂U/∂H) DERIVED (a functional 
 Kelvin scale BOUNDARY (the unit-conversion anchor k_B, the same "one dimensionful scale" pattern
 as m_e and v); "temperature as phase randomness" REFUTED; "temperature as a new primitive" REFUTED.
 No new primitive; canonical AT unchanged.
+ResearchY-NP_098 (Localization Ontology Audit, COMPLETE, tests 9/9 PASSED): what is localization?
+Verdict: localization = the CONSTRUCTIVE INTERFERENCE of a WAVE PACKET — a superposition of
+resonance modes whose coherent addition peaks |ψ|² = ρ at one node and cancels elsewhere. A
+particle is a propagating resonance (B) — its localization is the Born distribution's envelope
+peak (C), its trajectory the actualization chain of Born-selected nodes (D); a single localized
+node (A) is REFUTED (NP_072: a particle is a global mode, not a node). Fourier uncertainty Δx·Δk
+= 1 (1/e² widths): a single mode (Δk→0) is DELOCALIZED (|ψ|² = 1/N uniform, Δx→∞); a wave packet
+(Δk large) is LOCALIZED (Δx small). Position = the envelope peak; time = the tick (the envelope
+advances at v_g, one link per tick at most); the Born selection (NP_093) realizes one node with
+probability |ψ|² = ρ, so the observed trajectory is a stochastic chain following the envelope.
+Electron: envelope at v_g = k/ω; photon/graviton (massless): envelope at n=1. Three readings: wave
+packet (superposition, potential position) → actualization chain (Born selections, actual
+position) → classical worldline (smooth envelope, emergent limit). Classification: the wave packet
+DERIVED (superposition of modes); the Born weight |ψ|² = ρ DERIVED (QG216); localization/position/
+trajectory EMERGENT (constructive interference + actualization chain); the position basis (node
+labeling/geometry) FRAMEWORK (η + D96); "particle = a localized node" REFUTED. No new primitive;
+canonical AT unchanged.
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-
