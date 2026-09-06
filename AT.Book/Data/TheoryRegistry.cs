@@ -233,5 +233,9 @@ public sealed class TheoryRegistry
             "Dark Matter = the matter DEFICIT m = ρ̄ − ρ (an effect, not a particle), Ωm = H/ln K = 0.3161 (the realized-entropy fraction). The deficit SOURCES gravity (DERIVED) — flat rotation α=0, M∝R — so Ωm has stronger physical meaning than the descriptive dark-energy surplus; both share the hosted QG89 energy reading.",
             AuditStatus.Passed, new DateTime(2026, 9, 6), TheoryLayer.Cosmology, TheoryClassification.Derived,
             ["omega-matter", "iocc"]),
+        new("np066", "Dark Matter Evidence Audit", "Which observed dark-matter phenomena does the deficit reproduce?",
+            "PARTIAL: 2 DERIVED (flat rotation α=0, Ωm = 0.3161) / 2 CORRESPONDENCE (cluster mass degenerate with ΛCDM, LSS seed+growth) / 2 REFUTED (lensing — conformal γ=−1; Bullet Cluster — not a particle). The deficit is a gravitational-potential surrogate, not a full dark matter.",
+            AuditStatus.Passed, new DateTime(2026, 9, 6), TheoryLayer.Cosmology, TheoryClassification.Correspondence,
+            ["omega-matter", "iocc"]),
     ];
 }

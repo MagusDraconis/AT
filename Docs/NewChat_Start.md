@@ -3760,6 +3760,24 @@ matter = deficit + Σm = 0 DERIVED (QG194); gravitational role DERIVED (QG195/20
 reading CORRESPONDENCE (hosted QG89); particle REFUTED; baryonic/dark split BOUNDARY. No new
 primitive; canonical AT unchanged.
 
+ResearchY-NP_066 (Dark Matter Evidence Audit, COMPLETE, tests 8/8 PASSED): which observed
+dark-matter phenomena does the deficit m = ρ̄ − ρ reproduce? Verdict: explanatory power is
+PARTIAL and sharply partitioned — 2 DERIVED / 2 CORRESPONDENCE / 2 REFUTED. The deficit
+reproduces the GRAVITATIONAL-POTENTIAL half: (1) flat rotation curves (v² ∝ r^(−α), flat ⇔
+α = 0, QG206) DERIVED; (6) CMB matter fraction Ωm = H/ln K = 0.3161 (0.26%) DERIVED; (3)
+cluster dynamics (Coma M_vir = 8.8e14 M☉ = 6.7× baryon) CORRESPONDENCE — matched but
+degenerate with ΛCDM (both need ~85% dark mass); (5) large-scale structure CORRESPONDENCE —
+the Poisson seed (δ_i = 1/√⟨N⟩) and deficit-dust growth (δ ∝ a, QG231) are derived, but the
+power-spectrum shape/acoustic peaks are hosted (QG238). It FAILS the particle and
+light-bending half: (2) gravitational lensing REFUTED — the conformal ρ-only metric gives PPN
+γ = −1 (no null-geodesic bending, QG26); lensing needs the non-conformal ψ tensor sector (a
+second primitive, QG212); (4) Bullet Cluster REFUTED — the deficit is a scalar field, not a
+collisionless particle, so it cannot separate from the shocked gas ("Bullet Cluster requires
+particle DM; hybrid needed"). The deficit is a GRAVITATIONAL-POTENTIAL SURROGATE for dark
+matter, not a full dark matter. Classification: rotation + Ωm DERIVED; cluster mass + LSS seed
+CORRESPONDENCE; lensing (deficit alone) REFUTED; Bullet Cluster REFUTED. No new primitive;
+canonical AT unchanged.
+
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-

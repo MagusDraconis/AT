@@ -148,6 +148,21 @@ public static class AtlasDataService
                     "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_064.md"),
             ]),
         new(
+            "researchy-np066-dark-matter-evidence",
+            "The Deficit Explains Gravity, Not Particles or Lensing: Dark Matter Evidence Splits 2 Derived / 2 Correspondence / 2 Refuted",
+            "ResearchY · NP_066 (Dark Matter Evidence Audit)",
+            "Measuring what the matter deficit actually reproduces: it nails the gravitational-potential half of dark-matter evidence — flat rotation curves (α=0, derived), the matter fraction Ωm = 0.3161 (derived, 0.26%), and cluster masses (Coma, matched but degenerate with ΛCDM). It fails the particle and light-bending half: gravitational lensing (the conformal metric gives γ=−1 — no bending) and the Bullet Cluster (the deficit is not a particle, so it cannot separate from the shocked gas). The deficit is a gravitational-potential surrogate for dark matter, not a full dark matter.",
+            "NP_066 scores six dark-matter phenomena. DERIVED: (1) flat rotation — v²∝r^(−α), flat exactly at α=0 (QG206); (6) the CMB matter fraction Ωm=H/ln K=0.3161 (0.26%, QG234). CORRESPONDENCE: (3) cluster dynamics — Coma M_vir=8.8e14 M☉, 6.7× baryon, matched but degenerate with ΛCDM; (5) large-scale structure — the Poisson seed (δ_i=1/√⟨N⟩) and deficit-dust growth (δ∝a) are derived, but the power-spectrum shape and acoustic peaks are hosted. REFUTED: (2) lensing — the conformal ρ-only metric gives PPN γ=−1 (no null-geodesic bending, QG26); (4) the Bullet Cluster — the deficit is a scalar field, not a collisionless particle, so no separation from the shocked gas ('Bullet Cluster requires particle DM. Hybrid needed.'). The partition is clean: the deficit reproduces gravitational-potential phenomena and fails particle and null-geodesic phenomena.",
+            "For non-experts: dark matter is 'seen' through several different observations. Some only need to know how much invisible mass there is (how fast galaxies spin, how heavy clusters are) — the theory's 'deficit' handles these. Others specifically require the invisible mass to be made of actual particles that can pass through collisions and bend light — these the theory's deficit does not reproduce. So the deficit is a stand-in that covers gravity, but not the particle behavior. It is a gravitational surrogate, not the real thing.",
+            "The deficit reproduces gravity (rotation, clusters, Ωm) but not particles (Bullet) or lensing (γ=−1): 2 derived / 2 correspondence / 2 refuted.",
+            "“The deficit holds galaxies together; it does not bend their light.”",
+            false,
+            [
+                new("ResearchY-NP_066", "DARK MATTER EVIDENCE AUDIT",
+                    "2 DERIVED (rotation, Ωm) / 2 CORRESPONDENCE (cluster, LSS) / 2 REFUTED (lensing, Bullet).",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_066.md"),
+            ]),
+        new(
             "researchy-np065-dark-matter-ontology",
             "Dark Matter Is the Matter Deficit, Not a Particle: Ωm = 0.3161 Is the Realized-Entropy Fraction, and It Has a Derived Gravitational Role the Descriptive Dark-Energy Surplus Lacks",
             "ResearchY · NP_065 (Dark Matter Ontology Audit)",
