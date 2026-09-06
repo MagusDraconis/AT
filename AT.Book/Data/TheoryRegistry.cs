@@ -337,5 +337,9 @@ public sealed class TheoryRegistry
             "Three steps: network (nodes = distinctions, links = adjacency) → geometry (g = ρ^(2/d)η = the trace face; ψ = the traceless/Weyl curvature) → spacetime (3D space EMERGENT via D96⊗D96⊗D96 with d=3 derived; +1 time = the actualization tick, a framework residue). Only space is emergent; time is the tick. ρ does double duty (metric factor + expansion a = ρ^(1/d)). First non-derived step = {Difference, η} + the tick.",
             AuditStatus.Passed, new DateTime(2026, 9, 6), TheoryLayer.Structure, TheoryClassification.Emergent,
             ["d96", "difference"]),
+        new("np092", "Network Propagation Audit", "What propagates on the network?",
+            "Propagation is NOT transport: the network is static (nodes/links do not move), and nothing substantial travels. The only genuine movement is the actualization TICK (the causal-order advance, massless null M_eff=0); its native propagation law is light along null geodesics (n=1, DERIVED). Everything else only APPEARS to move: a particle is a standing wave (envelope moves at the group velocity v_g); the graviton is a ψ ripple; a force is link-mediated action; count redistributes by continuity. Velocity = v_g (≤ c); locality = adjacency; causality = the partial order.",
+            AuditStatus.Passed, new DateTime(2026, 9, 6), TheoryLayer.Structure, TheoryClassification.Derived,
+            ["d96", "difference"]),
     ];
 }

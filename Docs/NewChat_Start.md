@@ -4194,6 +4194,24 @@ DERIVED (from the trace ρ); time (tick + signature) FRAMEWORK/BOUNDARY; Differe
 BOUNDARY/FRAMEWORK. Success criterion: the complete mapping Difference → Network → Geometry →
 Spacetime; the first non-derived step is {Difference, η} + the tick. No new primitive; canonical AT
 unchanged.
+ResearchY-NP_092 (Network Propagation Audit, COMPLETE, tests 12/12 PASSED): what propagates on the
+network? Verdict: propagation is NOT transport — the network is STATIC (nodes/links do not move,
+NP_007/090), and nothing substantial travels node to node. The ONLY genuine movement is the
+ACTUALIZATION TICK (the causal-order advance along the generation relation, QG29/31, massless null
+M_eff=0), and its native propagation law is LIGHT ALONG NULL GEODESICS (n=1, independent of ρ,
+DERIVED, QG28). Everything else only APPEARS to move: a particle is a resonance mode (a standing
+wave, NP_090) whose localized wave-packet ENVELOPE travels at the group velocity (EMERGENT); the
+graviton is a ripple in ψ (the traceless/Weyl face, NP_080); a force is link-mediated generator
+action (NP_075); the count ρ merely redistributes by continuity ∂_t ρ + ∇·j = 0 (conserved count,
+NP_081). Determination: A (count transport, as continuity) and D (geometry transport, as ψ ripples)
+are the two real channels (DERIVED); B (phase transport) REFUTED (θ=2πk/N is a local label, no
+phase flow, NP_005); C (deficit transport) reduces to A. Network analogues: VELOCITY = the group
+velocity v_g=dω/dk from the cubic dispersion (≤ c, subluminal at finite k: 0.99875@k=0.1, 0.98871
+@k=0.3, 0.95442@k=0.6, → 1=c at k→0); LOCALITY = the adjacency (degree-12 neighbours); CAUSALITY =
+the partial order (nothing outruns the tick). Classification: null geodesics DERIVED (QG28); the
+tick FRAMEWORK (QG29/31); count continuity DERIVED (NP_081); wave-packet motion EMERGENT; ψ ripple
+DERIVED; phase transport REFUTED (NP_005); a propagating field REFUTED (NP_007). No new primitive;
+canonical AT unchanged.
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-

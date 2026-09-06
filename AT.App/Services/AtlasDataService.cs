@@ -403,6 +403,21 @@ public static class AtlasDataService
                     "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_091.md"),
             ]),
         new(
+            "researchy-np092-network-propagation",
+            "Nothing Travels: Propagation Is the Tick and the Light Cone",
+            "ResearchY · NP_092 (Network Propagation Audit)",
+            "After building the network and turning it into spacetime, one question remains: what actually moves on it? The answer is subtle and a little startling — nothing travels. The network of differences is static; its nodes and links never move. The only genuine movement is the tick itself: the advance of actualization, one step at a time. And the one thing that 'propagates' natively is light, which moves along the light cone — the boundary of that causal order — not as a thing flying through space. Particles, gravitons, forces, and even the count all only *appear* to move.",
+            "NP_092 inventories six propagating objects. ρ (the trace/count) redistributes by the continuity equation ∂_t ρ + ∇·j = 0 (conserved count, NP_081) — it is conservation, not transport. ψ (the traceless/Weyl face) propagates as a metric ripple (the gravitational wave, NP_080). Phase θ = 2πk/N is a LOCAL per-node label — it does NOT flow (NP_005). Information (the matter deficit) is count bookkeeping. Particles are resonance modes (standing waves, NP_090); a localized particle is a wave packet whose ENVELOPE moves at the group velocity. Forces are link-mediated generator action (NP_075). Native propagation (QG28/31): the causal order fixes the light cone, light propagates along null geodesics (n = 1, independent of ρ, DERIVED); the tick propagates masslessly (M_eff = 0). Determination: A (count, as continuity) + D (geometry, as ψ ripples) are the two real channels, DERIVED; B (phase) REFUTED; C reduces to A. Velocity = the group velocity v_g = dω/dk (subluminal at finite k: 0.99875 @ k=0.1, → 1 = c as k→0); locality = the adjacency (degree-12 neighbours); causality = the partial order (nothing outruns the tick).",
+            "For non-experts: picture the net of differences we built. Nothing on it ever moves — the knots and threads are fixed. What 'moves' is just the beat of things changing, one tick at a time. Light is not a little thing flying across the net; it is the edge of 'what can affect what' — the light cone. A particle is a standing wave on the net, and when we see it 'travel', we are really seeing the peak of that wave slide along. So motion is appearance; the only real change is the tick.",
+            "Nothing travels; the tick moves, light is the light cone, particles are standing-wave envelopes.",
+            "“Motion is appearance; the tick is real.”",
+            false,
+            [
+                new("ResearchY-NP_092", "NETWORK PROPAGATION AUDIT",
+                    "Propagation = tick + null geodesics; particles/gravitons/forces only appear to move.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_092.md"),
+            ]),
+        new(
             "researchy-np074-quantum-number-ontology",
             "What Are Quantum Numbers? The Symmetry Charges of the D96 Ring: Charge Is the Rotation, Isospin the Doublet, and Only the Color Count Remains a Postulate",
             "ResearchY · NP_074 (Quantum Number Ontology Audit)",
