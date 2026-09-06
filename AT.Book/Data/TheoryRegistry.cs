@@ -357,5 +357,9 @@ public sealed class TheoryRegistry
             "Heat = RANDOM PHASE = MODE MULTIPLICITY = RESONANCE DECOHERENCE, realized as count redistribution under count conservation. Friction's lost phase gradient k becomes incoherent (random-phase) mode excitation spread over many modes — heat. Entropy H = −Σρ ln ρ is its measure (mode multiplicity); entropy growth = increasing mode access. Heat erases information (I_occ = ln K − H → 0). One ontology: motion (coherent phase) → friction (scattering) → heat (random phase) → entropy (mode multiplicity).",
             AuditStatus.Passed, new DateTime(2026, 9, 6), TheoryLayer.Structure, TheoryClassification.Derived,
             ["d96", "difference"]),
+        new("np097", "Temperature Ontology Audit", "What is temperature inside Actualization Theory?",
+            "Temperature = the COUNT-DISTRIBUTION WIDTH — the thermodynamic conjugate of entropy: T = ∂U/∂S, where U is the conserved count (energy) and S = H = −Σρ ln ρ is the entropy/mode multiplicity. Derived from the occupancy ρ alone (dS/dU = β exact). Cold = narrow occupancy (few modes), hot = wide (many modes); H and the width monotonically track T. The dimensionless temperature is DERIVED; the absolute Kelvin scale is BOUNDARY (the k_B unit anchor, like m_e/v).",
+            AuditStatus.Passed, new DateTime(2026, 9, 6), TheoryLayer.Structure, TheoryClassification.Derived,
+            ["d96", "difference"]),
     ];
 }

@@ -4276,6 +4276,20 @@ heat as the macroscopic thermal state EMERGENT (the aggregate of friction's scat
 underlying count conservation DERIVED (NP_081); entropy H = −Σρ ln ρ DERIVED (the multiplicity
 functional); entropy growth = increasing mode access DERIVED; "heat as a new primitive/substance"
 REFUTED. No new primitive; canonical AT unchanged.
+ResearchY-NP_097 (Temperature Ontology Audit, COMPLETE, tests 8/8 PASSED): what is temperature?
+Verdict: temperature = the COUNT-DISTRIBUTION WIDTH (D) — the thermodynamic conjugate of entropy:
+T = ∂U/∂S, where U = the conserved count (energy, NP_081) and S = H = −Σρ ln ρ (entropy/mode
+multiplicity, NP_096). Equivalently 1/T = ∂S/∂U (A, the mode-multiplicity density — the inverse
+reading). Temperature is DERIVED from the occupancy ρ alone: for the canonical occupancy ρ_k ∝
+e^(−E_k/T) over K=95 modes, T is the width parameter — cold (T=0.2) concentrates the count in 2
+modes (H=0.0407), hot (T=100) spreads it over all 95 (H=4.5171). H (mode multiplicity) and the
+occupancy width monotonically track T; I_occ = ln K − H (QG228) monotonically falls. The
+thermodynamic identity is exact: dS/dU = β (verified 0.500000 at β=0.5, so T = dU/dS = 2.0).
+B (phase randomness) is HEAT (NP_096), not temperature; C (scattering rate) is a consequence.
+Classification: the dimensionless temperature (∂U/∂H) DERIVED (a functional of ρ); the ABSOLUTE
+Kelvin scale BOUNDARY (the unit-conversion anchor k_B, the same "one dimensionful scale" pattern
+as m_e and v); "temperature as phase randomness" REFUTED; "temperature as a new primitive" REFUTED.
+No new primitive; canonical AT unchanged.
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-

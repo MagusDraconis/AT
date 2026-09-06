@@ -478,6 +478,21 @@ public static class AtlasDataService
                     "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_096.md"),
             ]),
         new(
+            "researchy-np097-temperature-ontology",
+            "What Is Temperature? How Wide the Motion Has Spread",
+            "ResearchY · NP_097 (Temperature Ontology Audit)",
+            "If heat is motion scattered into every direction, then temperature is simply how *wide* that scattering is. A cold body has its motion packed into just a few modes — a narrow, orderly handful of notes. A hot body has the same conserved count spread thin across nearly all ninety-five modes — a broad, bustling jumble. Temperature is not a new substance and not the jumble itself; it is the width of that spreading. And it is not imported from anywhere: it falls straight out of the occupancy, once you know the entropy.",
+            "NP_097 defines temperature as the thermodynamic conjugate of entropy: T = ∂U/∂S, where U is the conserved count (energy, NP_081) and S = H = −Σρ ln ρ is the entropy/mode multiplicity (NP_096). For the canonical occupancy ρ_k ∝ e^(−E_k/T) over the K=95 modes, T is the width parameter — cold (T=0.2) concentrates the count in 2 modes (H=0.0407), hot (T=100) spreads it over all 95 (H=4.5171). H and the occupancy width monotonically track T; the information I_occ = ln K − H falls. The thermodynamic identity dS/dU = β = 1/T is exact (verified 0.500000 at β=0.5). Determination: D (count-distribution width), A (mode-multiplicity density) the inverse reading; B (phase randomness) is HEAT, C (scattering rate) is a consequence. The dimensionless temperature is DERIVED; the absolute Kelvin scale is BOUNDARY (the k_B unit anchor, like m_e and v).",
+            "For non-experts: think of temperature as 'how spread out the energy is'. A cold object's energy is squeezed into a few tidy states; a hot object's energy is smeared across a huge number of states. Temperature is just the measure of that spread. The only thing the theory has to take as given is the thermometer's unit — the size of one degree — which is a bookkeeping convention, not a physical fact.",
+            "Temperature = the count-distribution width (∂U/∂S); derived from occupancy; only the Kelvin unit is a boundary.",
+            "“Temperature is how wide the motion has spread.”",
+            false,
+            [
+                new("ResearchY-NP_097", "TEMPERATURE ONTOLOGY AUDIT",
+                    "Temperature = count-distribution width (∂U/∂S); dimensionless T derived, Kelvin scale boundary.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_097.md"),
+            ]),
+        new(
             "researchy-np074-quantum-number-ontology",
             "What Are Quantum Numbers? The Symmetry Charges of the D96 Ring: Charge Is the Rotation, Isospin the Doublet, and Only the Color Count Remains a Postulate",
             "ResearchY · NP_074 (Quantum Number Ontology Audit)",
