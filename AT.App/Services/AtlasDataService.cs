@@ -433,6 +433,21 @@ public static class AtlasDataService
                     "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_093.md"),
             ]),
         new(
+            "researchy-np094-inertia-ontology",
+            "Why Things Keep Moving: Inertia Is a Resonance That Refuses to Stop",
+            "ResearchY · NP_094 (Inertia Ontology Audit)",
+            "Why does a thrown ball keep going after it leaves your hand? In classical physics the answer is a law — Newton's first law — stated but never explained. Actualization Theory explains it. A particle is a standing wave on the network of differences: a stable 'note' with a fixed pitch and a fixed wave-number. Once that note is struck, nothing in the theory's own machinery changes its pitch — so the peak of the wave keeps sliding along at the same speed. Inertia is just a resonance that refuses to stop.",
+            "NP_094 defines motion on the network (resonance propagation: the wave-packet envelope advancing at the group velocity v_g = dω/dk, not object transport, NP_092). It then removes all forces and shows propagation persists — because a force is a generator action (a resonance transition, NP_075), and free actualization (the tick NP_091 + the Born rule NP_093 + the deterministic phase advance D_041) does not change the mode's wave number k. Momentum = the phase gradient k (p = ℏk); mass = the rest frequency ω₀ = m/ℏ; force = the generator action that changes k. Newton I (F=0 → v=const) is the network statement that k is conserved under free actualization. The electron (ω₀>0) has inertia and can rest (k=0, still oscillating); the photon and graviton (ω₀=0) have no rest inertia and always propagate at n=1. Verified: v_g = k/√(ω₀²+k²) — 0 at rest, →1 as k grows; massless v_g=1 exactly.",
+            "For non-experts: picture a standing wave on a string. Once it is ringing, it keeps ringing — nothing in the string itself stops it. A particle is such a ringing on the network of differences, and its 'motion' is the peak of that ringing sliding along. It keeps sliding because nothing in the theory's own rules changes the note. Only a 'force' — a rule that changes the note — can alter its motion. So the reason things keep moving is not a mystery law; it is the persistence of a resonance.",
+            "Inertia = resonance persistence; momentum = phase gradient k; mass = rest frequency ω₀.",
+            "“Inertia is a resonance that refuses to stop.”",
+            false,
+            [
+                new("ResearchY-NP_094", "INERTIA ONTOLOGY AUDIT",
+                    "Inertia = resonance persistence; Newton I = conserved phase gradient under free actualization.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_094.md"),
+            ]),
+        new(
             "researchy-np074-quantum-number-ontology",
             "What Are Quantum Numbers? The Symmetry Charges of the D96 Ring: Charge Is the Rotation, Isospin the Doublet, and Only the Color Count Remains a Postulate",
             "ResearchY · NP_074 (Quantum Number Ontology Audit)",

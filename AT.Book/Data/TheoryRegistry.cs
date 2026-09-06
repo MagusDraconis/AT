@@ -345,5 +345,9 @@ public sealed class TheoryRegistry
             "The node-selection law is the BORN RULE: at each tick, one count is realized on one node, selected with probability ρ_k = |ψ_k|² (the conserved, normalized count share, Σρ = 1 EXACT). The phase advances deterministically (Δθ = 2πk/N, D_041) and is NOT the selector; the count realizes probabilistically (Born) and IS the selector. The weight is DERIVED (count conservation, QG216); the only boundary is the irreducible stochastic realization — one outcome per tick — the discrete tick (the deepest boundary).",
             AuditStatus.Passed, new DateTime(2026, 9, 6), TheoryLayer.Structure, TheoryClassification.Derived,
             ["d96", "difference"]),
+        new("np094", "Inertia Ontology Audit", "What is inertia inside Actualization Theory?",
+            "Inertia = RESONANCE PERSISTENCE: a particle is a resonance mode (a frequency attractor), and its frequency ω₀ (mass) and wave number k (momentum) are fixed spectral labels. Free actualization — the tick, the Born-rule selection, and the deterministic phase advance — does not change k, so the envelope keeps moving at constant v_g = dω/dk. Only a generator action (a force) changes k. Newton I (F=0 → v=const) is the network statement that a mode's phase gradient is conserved under free actualization. Momentum = the phase gradient k; mass = the rest frequency ω₀; the electron (ω₀>0) has inertia, the photon/graviton (ω₀=0) have none.",
+            AuditStatus.Passed, new DateTime(2026, 9, 6), TheoryLayer.Structure, TheoryClassification.Derived,
+            ["d96", "difference"]),
     ];
 }

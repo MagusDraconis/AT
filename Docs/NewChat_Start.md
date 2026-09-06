@@ -4230,6 +4230,22 @@ single boundary (QG_011). Classification: Born weight ρ = |ψ|² DERIVED (QG216
 phase DERIVED (D_041); probabilistic selection DERIVED; irreducible stochastic realization
 FRAMEWORK/BOUNDARY (the tick); deterministic selector REFUTED; boundary-import selector REFUTED.
 No new primitive; canonical AT unchanged.
+ResearchY-NP_094 (Inertia Ontology Audit, COMPLETE, tests 10/10 PASSED): what is inertia? Verdict:
+inertia = RESONANCE PERSISTENCE — the stability of a spectral eigenmode under free (generator-free)
+actualization. Motion is NOT object transport (nothing travels, NP_092) but RESONANCE PROPAGATION
+(B): a particle (resonance mode, NP_072) has a wave-packet envelope advancing at the group velocity
+v_g = dω/dk. Momentum = the PHASE GRADIENT (B) — the wave number k (θ = 2πk/N, p = ℏk). Mass = the
+REST FREQUENCY ω₀ = m/ℏ (the mode's frequency attractor). A force = a GENERATOR ACTION (a
+resonance transition, NP_075) that changes k. Free actualization — the tick (NP_091) + the Born
+rule (NP_093) + the deterministic phase advance (D_041) — does NOT change k; only a generator
+action does. Hence Newton I (F=0 → v=const) is the network statement that a mode's phase gradient
+is conserved under free actualization: no generator → k constant → v_g constant. The electron (a
+matter mode, ω₀>0) has inertia and can rest (k=0, still oscillating); the photon and graviton
+(massless generators, ω₀=0) have no rest inertia and always propagate at n=1. Classification:
+inertia DERIVED (eigenmode stability); momentum DERIVED (phase gradient k); mass DERIVED (rest
+frequency, anchor m_e BOUNDARY); force DERIVED (NP_075); inertial frame DERIVED (the
+geodesic/conformal frame, NP_091); motion EMERGENT (envelope propagation, NP_092); "motion = object
+transport" REFUTED; imported classical law REFUTED. No new primitive; canonical AT unchanged.
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-
