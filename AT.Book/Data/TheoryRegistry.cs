@@ -285,5 +285,9 @@ public sealed class TheoryRegistry
             "α=0 is the UNIQUE point where flat rotation (v² ∝ r^(−α), slope 0), stability (equal-deficit-per-octave), criticality (μ=1 ⟺ α=0), and maximum entropy coincide. It is DERIVED (unique) as a selection fixed point, NOT a dynamical attractor (conservation → repulsive ρ∝r⁻², scale-freeness → continuum). The conditioning input is scale-freeness (AT-F1 indifference principle) — the FINAL boundary.",
             AuditStatus.Passed, new DateTime(2026, 9, 6), TheoryLayer.Cosmology, TheoryClassification.Derived,
             ["omega-matter", "iocc"]),
+        new("np079", "Scale-Freeness Origin Audit", "Can scale-freeness (AT-F1) be derived from Difference itself, or is it the final irreducible boundary?",
+            "Scale-freeness is DERIVED from Difference, NOT the final boundary. Difference is a BINARY (metric-free) relation, so the primitives it grounds (Q-events, the counting measure as a density of weight d, the causal order) carry no scale; scale-freeness follows as the unique renormalization-invariant abundance (the power law = RG fixed point = indifference). The true final boundary is Difference itself.",
+            AuditStatus.Passed, new DateTime(2026, 9, 6), TheoryLayer.Foundations, TheoryClassification.Derived,
+            ["difference", "iocc"]),
     ];
 }

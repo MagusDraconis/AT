@@ -208,6 +208,21 @@ public static class AtlasDataService
                     "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_078.md"),
             ]),
         new(
+            "researchy-np079-scale-freeness-origin",
+            "Where Does 'No Built-in Scale' Come From? Scale-Freeness Is Derived From Difference Itself — the Theory's True Bottom Is Difference, Not a Postulate",
+            "ResearchY · NP_079 (Scale-Freeness Origin Audit)",
+            "The previous audit traced flat rotation and criticality to one deep assumption — 'the primitives carry no intrinsic scale.' This audit asks where that assumption comes from, and the answer goes one step deeper: it isn't an assumption at all. The theory's founding primitive is Difference — the bare fact that one thing can differ from another. And a difference is binary: either things differ or they don't, with no 'how much' and no size or scale attached. So a theory built on Difference has no scale to prefer in the first place. 'No built-in scale' is not the bottom of the theory — Difference is.",
+            "NP_079 removes AT-F1 and replaces it with an intrinsic scale λ. A finite λ is scale-setting: it breaks criticality (μ≠1), flat rotation (α≠0), and gives structure a preferred scale; λ→∞ recovers self-similarity (the scale decouples); λ→0 is still a UV cutoff. But λ is excluded by the primitive itself: Difference is a BINARY relation (a thing differs from another, all-or-nothing) carrying no metric, no magnitude, no scale. The primitives it grounds — Q-events (before→after differences), the counting measure (a density of weight d, scale-covariant: N=∫ρ dV invariant under x→λx), and the causal order (a scale-invariant partial order) — are therefore scale-free. Scale-freeness then follows as the unique renormalization-invariant abundance: the power law n ∝ R⁻ᵖ (n(2R)/n(R) = 2⁻ᵖ, constant), the RG fixed point; a Gaussian bump's ratio is R-dependent (scale-setting). AT-F1 = indifference = scale-freeness = renormalization invariance, all one statement. Sweep of hidden assumptions: counting (covariant density), actualization (binary), occupancy [4,4,87] (dimensionless), normalization (dimensionless) — no hidden scale. Determination: A (follows from Difference) + B (follows from counting) + C (equivalent to indifference); D (irreducible) REFUTED. Classification: scale-freeness DERIVED (conditional); Difference's binary nature BOUNDARY — the true final boundary (QG270). This refines NP_078.",
+            "For non-experts: why does the theory have no built-in size or scale? Because its first idea is Difference — and 'different' is a yes-or-no thing. Two things differ, or they don't; there's no 'how much' and no ruler involved. So a universe made only of differences has no ruler to begin with. The 'no built-in scale' rule that makes galaxies spin flat and the universe sit at its critical point is not a separate assumption — it's just what 'difference' already means. The deepest idea in the theory is Difference itself.",
+            "Scale-freeness is derived from Difference; the true final boundary is Difference, not scale-freeness.",
+            "“No ruler can be built from 'this differs from that.'”",
+            false,
+            [
+                new("ResearchY-NP_079", "SCALE-FREENESS ORIGIN AUDIT",
+                    "Scale-freeness DERIVED from Difference's binary nature; Difference is the true final boundary.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_079.md"),
+            ]),
+        new(
             "researchy-np074-quantum-number-ontology",
             "What Are Quantum Numbers? The Symmetry Charges of the D96 Ring: Charge Is the Rotation, Isospin the Doublet, and Only the Color Count Remains a Postulate",
             "ResearchY · NP_074 (Quantum Number Ontology Audit)",

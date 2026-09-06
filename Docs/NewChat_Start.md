@@ -3965,6 +3965,28 @@ Classification: α=0 flat rotation DERIVED (QG206); μ=1⟺α=0 criticality DERI
 universe REFUTED. Success criterion: scale-freeness is the FINAL BOUNDARY (not derived);
 α=0 is DERIVED (uniquely) given it. No new primitive; canonical AT unchanged.
 
+ResearchY-NP_079 (Scale-Freeness Origin Audit, COMPLETE, tests 10/10 PASSED): can
+scale-freeness (AT-F1 "the primitives carry no intrinsic scale") be derived from
+Difference itself, or is it the final irreducible boundary? Verdict: scale-freeness is
+DERIVED from Difference — NOT the final boundary (refines NP_078). Difference is a
+BINARY (all-or-nothing) distinction relation carrying no metric, no magnitude, no scale,
+so the primitives it grounds (Q-events = before→after differences, the counting measure
+= a density of weight d, scale-covariant, the causal order = a scale-invariant partial
+order) carry no intrinsic scale. Scale-freeness then follows as the unique
+renormalization-invariant abundance (the power law n ∝ R⁻ᵖ, the RG fixed point):
+AT-F1 = indifference = scale-freeness = renormalization invariance (all one statement).
+Introducing a finite intrinsic scale λ breaks everything (μ≠1, α≠0, scale-setting
+structure); λ→∞ recovers self-similarity; λ→0 is still a UV cutoff. Hidden-assumption
+sweep: counting (covariant density), actualization (binary), occupancy [4,4,87]
+(dimensionless), normalization (dimensionless) — no hidden scale. Determination:
+A (follows from Difference) YES; B (follows from counting) YES; C (equivalent to
+indifference) YES; D (irreducible) REFUTED. Deepest source of AT-F1 = DIFFERENCE itself
+(binary, metric-free). Classification: scale-freeness DERIVED (conditional, QG270/AT-F1);
+Difference's binary nature BOUNDARY (the true final boundary, QG270); "scale-freeness
+irreducible" REFUTED; canonical preferred-scale λ universe REFUTED. Success criterion:
+the deepest source of AT-F1 is Difference; the true final boundary is Difference, not
+scale-freeness. No new primitive; canonical AT unchanged.
+
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-
