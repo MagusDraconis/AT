@@ -349,5 +349,9 @@ public sealed class TheoryRegistry
             "Inertia = RESONANCE PERSISTENCE: a particle is a resonance mode (a frequency attractor), and its frequency ω₀ (mass) and wave number k (momentum) are fixed spectral labels. Free actualization — the tick, the Born-rule selection, and the deterministic phase advance — does not change k, so the envelope keeps moving at constant v_g = dω/dk. Only a generator action (a force) changes k. Newton I (F=0 → v=const) is the network statement that a mode's phase gradient is conserved under free actualization. Momentum = the phase gradient k; mass = the rest frequency ω₀; the electron (ω₀>0) has inertia, the photon/graviton (ω₀=0) have none.",
             AuditStatus.Passed, new DateTime(2026, 9, 6), TheoryLayer.Structure, TheoryClassification.Derived,
             ["d96", "difference"]),
+        new("np095", "Friction Ontology Audit", "What is friction inside Actualization Theory?",
+            "Friction = RESONANCE SCATTERING realized as MODE MIXING: the incoherent accumulation of generator actions (resonance transitions) between a propagating mode and the deficit excitations (matter) in its path. Each scatter changes the wave number k (momentum); the aggregate redistributes k into the material (dissipation) while preserving the resonance class ω₀ (identity). Friction scales with matter density — zero in vacuum (k conserved, pure inertia), growing gas → liquid → solid. It is the exact opposite of inertia: inertia = no transitions (k conserved), friction = transitions (k changes); both reduce to the generator action (once = force, many = friction).",
+            AuditStatus.Passed, new DateTime(2026, 9, 6), TheoryLayer.Structure, TheoryClassification.Derived,
+            ["d96", "difference"]),
     ];
 }

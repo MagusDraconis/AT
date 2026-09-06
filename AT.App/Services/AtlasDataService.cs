@@ -448,6 +448,21 @@ public static class AtlasDataService
                     "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_094.md"),
             ]),
         new(
+            "researchy-np095-friction-ontology",
+            "Why Things Slow Down: Friction Is a Resonance That Keeps Bumping Into Matter",
+            "ResearchY · NP_095 (Friction Ontology Audit)",
+            "If inertia is a resonance that refuses to stop, then friction is what happens when that resonance keeps bumping into other things. A moving particle is a wave travelling through the network of differences. In empty space there is nothing in its path, so the wave's 'note' never changes and it glides on forever. But through matter, its path is lined with little knots of difference — the very stuff that matter is made of — and each bump changes the wave's pitch a little. That is friction: not a new force, but the same rule that makes a force, applied over and over again, countless times.",
+            "NP_095 defines friction as the change of a propagating mode's wave number k caused by resonance scattering off the deficit excitations (matter, NP_071) in its path. Each scatter is a generator action (a resonance transition, NP_075); the aggregate is mode mixing (B = C) — k is redistributed into the material's modes (dissipation) while the mode's resonance class ω₀ (its identity) is preserved elastically. Friction scales with matter density n: k(t) = k₀e^(−γt) with γ ∝ n — zero in vacuum (γ=0, k conserved, pure inertia), growing through gas (γ=0.1) → liquid (γ=0.5) → solid (γ=5.0). It is the exact opposite of inertia: inertia = no resonance transitions (k conserved); friction = resonance transitions (k changes); both reduce to the single generator action — once (a force) or many times (friction).",
+            "For non-experts: a note plucked on a string keeps ringing until something damps it. In empty space, a particle's 'note' rings forever — that is inertia. But pass it through matter, and every little knot of matter it brushes against gives it a tiny push, slightly changing its note. Enough pushes and it slows and stops. So friction is not a mysterious extra law; it is just inertia's opposite — the same tiny pushes (forces) happening many, many times.",
+            "Friction = resonance scattering (mode mixing); the opposite of inertia; scales with matter density.",
+            "“Friction is inertia's opposite — the same push, many times over.”",
+            false,
+            [
+                new("ResearchY-NP_095", "FRICTION ONTOLOGY AUDIT",
+                    "Friction = resonance scattering off matter's deficit excitations; zero in vacuum, grows with density.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_095.md"),
+            ]),
+        new(
             "researchy-np074-quantum-number-ontology",
             "What Are Quantum Numbers? The Symmetry Charges of the D96 Ring: Charge Is the Rotation, Isospin the Doublet, and Only the Color Count Remains a Postulate",
             "ResearchY · NP_074 (Quantum Number Ontology Audit)",

@@ -4246,6 +4246,21 @@ inertia DERIVED (eigenmode stability); momentum DERIVED (phase gradient k); mass
 frequency, anchor m_e BOUNDARY); force DERIVED (NP_075); inertial frame DERIVED (the
 geodesic/conformal frame, NP_091); motion EMERGENT (envelope propagation, NP_092); "motion = object
 transport" REFUTED; imported classical law REFUTED. No new primitive; canonical AT unchanged.
+ResearchY-NP_095 (Friction Ontology Audit, COMPLETE, tests 8/8 PASSED): what is friction? Verdict:
+friction = RESONANCE SCATTERING realized as MODE MIXING (B = C) — the incoherent accumulation of
+generator actions (resonance transitions, NP_075) between a propagating mode and the deficit
+excitations (matter, NP_071) in its path. Each scatter changes the mode's wave number k (momentum);
+the aggregate redistributes k into the material's modes (dissipation, D as the consequence) while
+preserving the resonance class ω₀ (identity, elastic). Friction scales with the matter density n
+(γ ∝ n, dk/dt = −γk → k(t) = k₀e^(−γt)): ZERO in vacuum (n=0 → k conserved, pure inertia), growing
+gas → liquid → solid. This is the OPPOSITE of inertia (NP_094): inertia = no resonance transitions
+(k conserved); friction = resonance transitions (k changes); both reduce to the single generator
+action, acting once (a force, NP_075) or many times (friction). Why motion persists in empty space
+but decays in matter: vacuum has no deficit excitations to scatter against (k conserved, Newton I);
+matter IS the deficit excitations (NP_071), so more matter = more scattering = more friction.
+Classification: the microscopic scatter (a generator action) DERIVED (NP_075); friction as the
+macroscopic dissipation (mode mixing) EMERGENT; the vacuum/matter distinction DERIVED (NP_071);
+"friction is a new primitive/force" REFUTED. No new primitive; canonical AT unchanged.
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-
