@@ -4143,6 +4143,22 @@ nuclear-shell rescue REFUTED (cubic ≠ spherical); NP_087's missing verdict sur
 Success criterion: the theory already contains an emergent higher-dimensional geometry via D96
 networking, but nuclear structure remains missing — now because the network is cubic, not
 rotationally-symmetric. No new primitive; canonical AT unchanged.
+
+ResearchY-NP_089 (Rotational Symmetry Emergence Audit, COMPLETE, tests 9/9 PASSED): can the cubic
+D96 network generate effective O(3) at large scale? Verdict: O(3) is APPROXIMATE ONLY (C). The free
+cubic-lattice dispersion ω² = k² − (k_x⁴+k_y⁴+k_z⁴)/12 + … is isotropic to leading order (the k²
+term, O(3)-invariant) but the first correction (the cubic invariant k_x⁴+k_y⁴+k_z⁴) BREAKS O(3)
+down to O_h; the anisotropy scales as O((ka)²) (~0.5% at ka=0.3), so it is suppressed but NEVER
+zero at any finite lattice spacing. Since the theory is DISCRETE (N=96), the exact continuum limit
+(a→0, where O(3) would be exact) is never reached. Therefore the exact 2l+1 spherical-harmonic
+degeneracies (the building blocks of the magic numbers) are split by the cubic correction at every
+scale (l=2 (5) → 2+3; l=3 (7) → 1+3+3), and nuclear structure remains missing. Determination: A
+(absent) REFUTED; B (emergent) PARTIAL; C (approximate only) YES; D (exact continuum) unattained.
+Re-evaluation of NP_087/088: the missing verdict survives, refined to "O(3) is only approximate —
+the cubic anisotropy is suppressed as (ka)² but never eliminated". Classification: the approximate
+O(3) EMERGENT (leading-order isotropy); exact O(3) BOUNDARY (the unattained continuum); the
+nuclear-shell rescue REFUTED (2l+1 split). Success criterion: rotational symmetry is C — approximate
+only — so nuclear structure remains missing. No new primitive; canonical AT unchanged.
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-

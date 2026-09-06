@@ -325,5 +325,9 @@ public sealed class TheoryRegistry
             "The theory ALREADY contains an EMERGENT 3D geometry: D96 ⊗ D96 ⊗ D96 raises the DOS exponent to p = 3 (cubic lattice), and d = 3 is DERIVED (QG197's (d−2) bridge). D96 is a seed AND a node (Weyl law p = d). But nuclear structure is still not rescued: the cubic lattice has octahedral symmetry (irreps 1,2,3), while nuclear shells need rotational symmetry (2l+1) — the magic numbers still do not follow. Refines NP_087: '1D' was too narrow; 'missing' survives.",
             AuditStatus.Passed, new DateTime(2026, 9, 6), TheoryLayer.Structure, TheoryClassification.Emergent,
             ["d96", "occupancy"]),
+        new("np089", "Rotational Symmetry Emergence Audit", "Can the cubic D96 network generate effective rotational symmetry O(3) at large scale?",
+            "O(3) is APPROXIMATE ONLY. The free lattice dispersion ω² = k² − (k_x⁴+k_y⁴+k_z⁴)/12 + … is isotropic to leading order (k²), but the cubic correction breaks O(3) with an O((ka)²) anisotropy that is suppressed yet never vanishes. The theory is discrete (N=96), so the exact continuum (a→0) is never reached; the 2l+1 degeneracies split, and nuclear structure remains missing.",
+            AuditStatus.Passed, new DateTime(2026, 9, 6), TheoryLayer.Structure, TheoryClassification.Emergent,
+            ["d96", "occupancy"]),
     ];
 }

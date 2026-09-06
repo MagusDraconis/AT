@@ -358,6 +358,21 @@ public static class AtlasDataService
                     "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_088.md"),
             ]),
         new(
+            "researchy-np089-rotational-symmetry",
+            "Can the Cubic Grid Fake a Sphere? Rotational Symmetry Is Only Approximate, So Nuclear Shells Still Don't Fall Out",
+            "ResearchY · NP_089 (Rotational Symmetry Emergence Audit)",
+            "The previous audit found the theory's 3D grid is cubic, not spherical. This audit asks whether that matters at large scale — could the cube's corners smooth out so that, zoomed out far enough, the grid behaves like a sphere? The answer is: almost, but not quite. At long wavelengths the grid does look isotropic to first order, but a residual cubic correction always remains — it shrinks as you zoom out but never disappears. And it is exactly that residual that splits the spherical energy levels the nuclear shell model relies on. So the 'almost' is not good enough: nuclear structure stays out of reach, now for the sharpest reason yet.",
+            "NP_089 expands the free cubic-lattice dispersion: ω² = k² − (k_x⁴+k_y⁴+k_z⁴)/12 + … . The leading term k² is isotropic (rotationally symmetric), but the first correction (k_x⁴+k_y⁴+k_z⁴) is the cubic invariant — it depends on direction, not just distance, so it breaks O(3) down to the octahedral group. The anisotropy scales as O((ka)²): at ka = 0.3 it is ~0.5%, small but nonzero; it only vanishes exactly at lattice spacing a = 0. Because the theory is discrete (N = 96), that exact continuum limit is never reached. The 2l+1 spherical-harmonic degeneracies — the building blocks of the nuclear magic numbers — are therefore split at every finite scale (the 5-fold d-wave into 2+3, the 7-fold f-wave into 1+3+3). Determination: A (absent) refuted; B (emergent) partial; C (approximate only) YES; D (exact continuum) unattained. NP_087's 'missing' verdict survives, refined once more: the reason is that rotational symmetry is only approximate in the discrete theory.",
+            "For non-experts: zoom out on a cubic grid far enough and it looks round — but not exactly. A leftover cubic bump always remains, however small, and it is that bump that breaks the neat spherical energy levels nuclei need. Since the theory is made of a finite number of steps (it is discrete), it can never zoom out infinitely to erase the bump. So nuclei remain the unsolved step — for the precise reason that 'almost spherical' is not 'spherical'.",
+            "O(3) is approximate only (C): the cubic correction shrinks but never vanishes, so 2l+1 splits and nuclei stay missing.",
+            "“A cube zoomed out is almost a sphere — but 'almost' cannot hold a magic number.”",
+            false,
+            [
+                new("ResearchY-NP_089", "ROTATIONAL SYMMETRY EMERGENCE AUDIT",
+                    "O(3) approximate only; exact continuum unattained; nuclear structure remains missing.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_089.md"),
+            ]),
+        new(
             "researchy-np074-quantum-number-ontology",
             "What Are Quantum Numbers? The Symmetry Charges of the D96 Ring: Charge Is the Rotation, Isospin the Doublet, and Only the Color Count Remains a Postulate",
             "ResearchY · NP_074 (Quantum Number Ontology Audit)",
