@@ -523,6 +523,21 @@ public static class AtlasDataService
                     "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_099.md"),
             ]),
         new(
+            "researchy-np100-bound-structure",
+            "Why Things Hold Together: Binding Is Resonance Locking",
+            "ResearchY · NP_100 (Bound Structure Audit)",
+            "Why does an atom hold together, or a molecule, or a rock? In Actualization Theory the answer is resonance locking. Two notes, left alone, drift out of tune; but if they keep exchanging a steady beat, they settle into a fixed, locked pitch — they hold together. That is a bound structure: resonances whose relative phase is locked, held in place by the steady exchange of a force. An atom is an electron and a proton locked into a stable configuration; a molecule is atoms locked together; a rock is a vast cascade of such locks. Binding is not a new force — it is the same generator action, held continuously instead of firing once.",
+            "NP_100 defines a bound state as a stable mutual configuration of resonances whose relative phase is LOCKED (constant across ticks). Binding = resonance locking = phase synchronization = deficit clustering (A = B = D), held by PERSISTENT GENERATOR ACTION (C — the ongoing exchange of link excitations, NP_075, not a single transition). Matter is the deficit (NP_071), the unique self-bound clumping branch. The structure persists because the lock is a stable fixed point of actualization — the bound-state analogue of inertia (NP_094). Cascade: modes → pair (e⁻+p) → atom (hydrogen, 13.6 eV) → molecule (H₂). Free = delocalized (drifts); localized = wave packet (transient); bound = locked (persistent). Binding DERIVED; the structure EMERGENT; binding energies BOUNDARY.",
+            "For non-experts: two musicians playing together drift apart unless they keep listening and stay in step. An atom is like that: its parts stay 'in step' because they keep exchanging a steady beat (the force). The result is a stable thing that lasts. A molecule is atoms staying in step; a rock is countless such keepings-in-step, all locked together. Binding is just resonances that keep each other in tune.",
+            "Binding = resonance locking (phase synchronization) = deficit clustering; persistence = the lock is stable.",
+            "“A bound structure is resonances that keep each other in tune.”",
+            false,
+            [
+                new("ResearchY-NP_100", "BOUND STRUCTURE AUDIT",
+                    "Binding = resonance locking = deficit clustering, held by persistent generator action.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_100.md"),
+            ]),
+        new(
             "researchy-np074-quantum-number-ontology",
             "What Are Quantum Numbers? The Symmetry Charges of the D96 Ring: Charge Is the Rotation, Isospin the Doublet, and Only the Color Count Remains a Postulate",
             "ResearchY · NP_074 (Quantum Number Ontology Audit)",

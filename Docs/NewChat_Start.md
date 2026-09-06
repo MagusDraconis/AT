@@ -4322,6 +4322,20 @@ Classification: classicality EMERGENT (decoherence + repeated actualization); th
 DERIVED (Born, QG216); the decoherence mechanism DERIVED (friction, NP_095); "classicality as a
 separate primitive" REFUTED; "classicality as a fundamental (non-emergent) regime" REFUTED. No new
 primitive; canonical AT unchanged.
+ResearchY-NP_100 (Bound Structure Audit, COMPLETE, tests 8/8 PASSED): what is a bound structure?
+Verdict: binding = RESONANCE LOCKING = PHASE SYNCHRONIZATION = DEFICIT CLUSTERING (A = B = D),
+held by PERSISTENT GENERATOR ACTION (C, the binding force). A bound state is a STABLE MUTUAL
+CONFIGURATION of two+ resonances whose relative phase is LOCKED (constant across ticks); the
+binding force is the ONGOING exchange of generator actions (link excitations, NP_075), not a single
+transient transition; the stable configuration is matter's deficit clustering (NP_071, the unique
+self-bound, clumping branch). It persists across ticks because the lock is a STABLE FIXED POINT of
+actualization — the bound-state analogue of inertia (NP_094): free actualization does not change the
+locked phase, only a strong generator action (enough to break the lock) does. Cascade: modes → pair
+(e⁻+p) → atom (hydrogen, 13.6 eV) → molecule (H₂), each a deficit clustering of the level below.
+Free resonance = delocalized (drifts); localized = wave packet (transient); bound = locked
+(persistent). Classification: binding ontology DERIVED (NP_071/075/094); the bound structure as a
+persistent configuration EMERGENT; binding energies (13.6 eV etc.) BOUNDARY (imported, the m_e-anchor
+pattern); "binding as a new primitive" REFUTED. No new primitive; canonical AT unchanged.
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-

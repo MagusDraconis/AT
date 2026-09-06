@@ -369,5 +369,9 @@ public sealed class TheoryRegistry
             "Classicality = DECOHERED LOCALIZATION: a localized resonance (wave packet) is quantum while its interference term survives; friction scatters it until γ·t ≫ 1, when the fringes vanish and the object follows a single non-interfering worldline. Decoherence (A) is the mechanism, via repeated actualization (B) on a stable resonance hierarchy (C), with entropy dominance (D) the signature. Macroscopic bodies (~10²³ modes) decohere instantly. Classical limit (ℏ→0) = decoherence-dominant (γ·t ≫ 1) = large-N/high-entropy. Classicality is EMERGENT.",
             AuditStatus.Passed, new DateTime(2026, 9, 6), TheoryLayer.Structure, TheoryClassification.Emergent,
             ["d96", "difference"]),
+        new("np100", "Bound Structure Audit", "What is a bound structure inside Actualization Theory?",
+            "Binding = RESONANCE LOCKING = PHASE SYNCHRONIZATION = DEFICIT CLUSTERING (A = B = D), held by PERSISTENT GENERATOR ACTION (C). A bound state is a stable mutual configuration of resonances whose relative phase is locked (constant across ticks); it persists because the lock is a stable fixed point of actualization (the bound-state analogue of inertia). Cascade: modes → pair (e⁻+p) → atom (hydrogen, 13.6 eV) → molecule. Binding DERIVED; the bound structure EMERGENT; binding energies BOUNDARY.",
+            AuditStatus.Passed, new DateTime(2026, 9, 6), TheoryLayer.Structure, TheoryClassification.Emergent,
+            ["d96", "difference"]),
     ];
 }
