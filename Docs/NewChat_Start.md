@@ -3869,6 +3869,18 @@ EMERGENT (derived modes), not fundamental point objects. Classification: modes +
 ratios DERIVED (D_041/QG210/QG173/209); m_e BOUNDARY; localized point particle REFUTED;
 fundamental REFUTED. No new primitive; canonical AT unchanged.
 
+ResearchY-NP_073 (Resonance Selection Audit, COMPLETE, tests 6/6 PASSED): why do only specific
+D96 modes appear as particles (e/μ/τ), while most of the 95 modes do not? Verdict: only 3 of the
+95 modes appear as particle generations because the spectrum organizes into 3 octave bands =
+3 families (QG210), and within each band only the STABLE bottom mode survives (metastability,
+QG125), selected by its quantum numbers via isospin-constrained mode access (QG150, r=0.955).
+The top band (87/95 = 91.6%) is the bulk deficit (matter), not individual particles. Selection
+rules (all DERIVED): occupancy (3 bands), symmetry (isospin r=0.955, down=full-spectrum up=dense-
+band), stability (higher modes decay), family structure (3 generations, no 4th because span < 8).
+Classification: family structure + mode access + metastability DERIVED (QG210/150/125); "all 95
+modes are particles" REFUTED; the precise particle→label assignment PARTIAL (QG271 frontier). No
+new primitive; canonical AT unchanged.
+
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-

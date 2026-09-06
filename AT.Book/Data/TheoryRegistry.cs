@@ -261,5 +261,9 @@ public sealed class TheoryRegistry
             "A particle is a RESONANCE CLASS — a mode (frequency attractor) of the D96 spectrum, organized into octave-band families, with mass = anchor × dimensionless D96 ratio. The electron is the lightest fermion mode (octave bottom), its mass m_e the boundary anchor; the muon/tau/quarks are derived ratios. Particles are EMERGENT, not fundamental point objects.",
             AuditStatus.Passed, new DateTime(2026, 9, 6), TheoryLayer.Physics, TheoryClassification.Derived,
             ["omega-matter", "families"]),
+        new("np073", "Resonance Selection Audit", "Why do only specific D96 modes appear as particles?",
+            "Only 3 of the 95 modes appear as particle generations because the spectrum organizes into 3 octave bands = 3 families, and within each band only the STABLE bottom mode survives (metastability), selected by isospin-constrained mode access. The top band (87/95) is the bulk deficit, not particles.",
+            AuditStatus.Passed, new DateTime(2026, 9, 6), TheoryLayer.Physics, TheoryClassification.Derived,
+            ["families", "occupancy"]),
     ];
 }

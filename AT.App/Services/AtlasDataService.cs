@@ -148,6 +148,21 @@ public static class AtlasDataService
                     "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_064.md"),
             ]),
         new(
+            "researchy-np073-resonance-selection",
+            "Why Only Three Particles per Family: the 95 Modes Collapse to 3 Families, and Only the Stable, Symmetry-Selected Bottom Mode of Each Becomes a Particle",
+            "ResearchY · NP_073 (Resonance Selection Audit)",
+            "The theory has 95 spectral modes but only 3 particle generations. The resolution: the 95 modes organize into 3 octave bands — the 3 families — and within each band only the stable bottom mode survives as an observable particle, selected by its quantum numbers (isospin, charge). The top band, holding 87 of the 95 modes, is the bulk deficit (matter), not a set of individual particles. So a mode becomes a particle exactly when it is the stable, symmetry-selected bottom of one of the three octave families.",
+            "NP_073 compares the 95-mode spectrum against the observed particles. The family count is floor(log₂ span)+1 = 3 (QG210) — the 3 octave bands [4,4,87] ARE the 3 families; no 4th exists because span < 8. Within each band, only the STABLE bottom mode survives (metastability, QG125 — the higher modes decay, consistent with the LHC's absence of new stable resonances). Mode access is isospin-constrained (r=0.955, QG150): the down sector accesses the full spectrum, the up sector the dense band. The top band (87/95=91.6%) is the bulk deficit. Selection rules (all DERIVED): occupancy + symmetry + stability + family structure. Classification: family structure, mode access, and metastability DERIVED; 'all 95 modes are particles' REFUTED; the precise particle→label assignment is PARTIAL (QG271 frontier).",
+            "For non-experts: the theory's spectrum has 95 'notes', but only 3 turn into generations of particles. Why? Because the 95 notes group into 3 families (octaves), and in each family only the most stable note survives as a real particle — the others are either the 'bulk' (the under-density that makes matter) or unstable notes that quickly decay. So the selection is a combination of grouping (3 families), stability (only the stable notes survive), and symmetry (which note each particle gets).",
+            "A mode becomes a particle via family structure + stability + symmetry (isospin mode access).",
+            "“Three octaves, three families; only the stable notes survive.”",
+            false,
+            [
+                new("ResearchY-NP_073", "RESONANCE SELECTION AUDIT",
+                    "95 modes → 3 families; only the stable, isospin-selected bottom mode of each becomes a particle.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_073.md"),
+            ]),
+        new(
             "researchy-np072-particle-ontology",
             "What Is an Electron? A Resonance Class of the D96 Spectrum: Particles Are Stable Modes, Not Point Objects, and the Electron Is the Anchor at the Octave Bottom",
             "ResearchY · NP_072 (Particle Ontology Audit)",
