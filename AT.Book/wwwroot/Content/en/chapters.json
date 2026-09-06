@@ -7,6 +7,7 @@
   "chapter.preface.consequences": "The Preface fixes the contract of the book: every claim is either derived from the primitives, emergent from them, or explicitly marked as a boundary input. Nothing is asserted without a place in that hierarchy.",
   "chapter.preface.history": "The Actualization Theory developed over successive research programs: an origin program that traced every 'where does this come from?' question to five irreducible inputs, a new-physics program that tested the theory against blackbody radiation, dimensionality, and entanglement, and a measurement program that derived the act of observation itself.",
   "chapter.preface.references": "The origin, new-physics, and measurement programs that built the theory are summarized in each chapter's historical note; the canonical five-input boundary is stated in the Boundaries chapter.",
+  "chapter.preface.evidence": "This book is itself the evidence. Every claim in it is either derived from the two founding ideas or plainly marked as an imported boundary, and every number can be recomputed from the page. Reading the chapters in order, you retrace the same trail the theory's builders walked: from a single distinction to a universe.",
 
   "chapter.difference.title": "Difference",
   "chapter.difference.summary": "The founding primitive: things can differ. Difference is distinguishability.",
@@ -16,6 +17,7 @@
   "chapter.difference.consequences": "Because Difference is distinguishability, even the notion of a 'state' is derived rather than assumed: a state is simply a distinguishable configuration. The entire information-theoretic vocabulary of the theory — counts, distributions, entropies — traces back to this one move.",
   "chapter.difference.history": "The reduction of the theory's foundation to {Difference, η} was the culmination of the origin program. Twenty-six candidate primitives were traced, and all but five could be derived; Difference and its companion survived every reduction attempt.",
   "chapter.difference.references": "The reduction of the foundation to {Difference, η} is described in this chapter and formalized in the Boundaries chapter.",
+  "chapter.difference.evidence": "Difference was not chosen; it survived. Twenty-six candidate primitives were put to the test, and one by one each was found to be derivable from something deeper — until only Difference, and its companion, were left standing. It is the one idea the theory could not dig beneath.",
 
   "chapter.actualization.title": "Actualization",
   "chapter.actualization.summary": "Difference becomes real through a discrete tick — possibilities are actualized one step at a time.",
@@ -25,6 +27,7 @@
   "chapter.actualization.consequences": "Actualization gives the theory its arrow: states evolve by discrete ticks, and the continuum of classical time is a large-N limit. It also gives measurement a physical meaning — an observation is an actualization event applied to a distinguishable state.",
   "chapter.actualization.history": "The measurement program of the theory established that a measurement event is exactly an actualization event on a distinguishable state, reading both quadratures of a complex mode.",
   "chapter.actualization.references": "The identification of measurement with actualization is established in the measurement program and restated in the Quantum Layer chapter (Part VI).",
+  "chapter.actualization.evidence": "The theory needed a clock, and the smallest possible one — a single discrete step — turned out to do far more than tick. The same step that advances time also turns out to be what measurement is: to observe a state is to actualize it. One move, two ancient puzzles.",
 
   "chapter.emergence.title": "Emergence",
   "chapter.emergence.summary": "Higher structure arises from the primitives by derivation — not by assumption.",
@@ -34,6 +37,7 @@
   "chapter.emergence.consequences": "The emergence hierarchy is what makes the theory falsifiable: every non-boundary object must have a derivation, and every derivation must be executable. An object that cannot be classified is an open question, not a result.",
   "chapter.emergence.history": "The origin program systematically reclassified candidates across twenty-six derivations, moving most 'assumed' items into the derived or emergent columns and leaving exactly five as boundary.",
   "chapter.emergence.references": "The derived / emergent / boundary classification is defined in this chapter and applied throughout the book; the five boundary inputs are listed in the Boundaries chapter.",
+  "chapter.emergence.evidence": "The word \"derived\" was made to earn its keep. Every candidate object was asked whether a closed argument produces it from the primitives alone, and most of what looked \"assumed\" quietly moved into the derived column. What could not be moved became the honest, short list of boundaries.",
 
   "chapter.boundaries.title": "Boundaries",
   "chapter.boundaries.summary": "The five irreducible inputs — the honest limits of the theory.",
@@ -43,6 +47,7 @@
   "chapter.boundaries.consequences": "Because the boundary is explicit, the theory's failures are sharp: if any derived value is wrong, the derivation is wrong — not the boundary. If a boundary value is wrong, the theory is simply incomplete in that direction.",
   "chapter.boundaries.history": "The origin program's closure analysis enumerated the five inputs and reclassified every candidate. The result was the 'five-item boundary set' that all later programs respect.",
   "chapter.boundaries.references": "The five-input boundary set is the culmination of the origin program's reduction analysis, summarized in this chapter.",
+  "chapter.boundaries.evidence": "The theory tried, again and again, to reduce its foundation below five inputs — and failed each time. Those five survivors are not gaps in the theory's ambition but its honesty made explicit: here is exactly where explanation stops.",
 
   "chapter.d96.title": "D96",
   "chapter.d96.summary": "The canonical structure sector: a ring of 96 sites whose spectrum underlies everything.",
@@ -52,6 +57,7 @@
   "chapter.d96.consequences": "D96 is the single structure sector of the theory. Its spectrum feeds the occupation record [4,4,87], the information content I_occ, the density fractions, and the mass and Planck content of Part V. Its one-dimensionality is the structural reason the blackbody cannot be emergent (Part VI).",
   "chapter.d96.history": "The value N = 96 emerged from the origin program as the unique zero-defect octave rung: 96 = 3·2⁵, with period-3 seed and three octave families.",
   "chapter.d96.references": "The spectrum, span, and one-dimensionality of the ring are computed in this chapter's mathematical section; the thermal and density-of-states arguments appear in the Thermodynamics chapter (Part VI).",
+  "chapter.d96.evidence": "Ninety-six was not a guess. The ring had to close cleanly — pairing the modes, filling the octaves — and the only size that satisfies every condition is 96 = 3·2⁵. The number is forced by the structure, and every later result inherits that necessity.",
 
   "chapter.occupancy.title": "Occupancy",
   "chapter.occupancy.summary": "The top-heavy octave record [4,4,87] — where the 95 modes actually live.",
@@ -61,6 +67,7 @@
   "chapter.occupancy.consequences": "The occupancy record feeds I_occ (Part III), the density fractions (Part IV), and the blackbody failure (Part VI). It is the single most-quoted distribution in the theory.",
   "chapter.occupancy.history": "The occupancy was derived from the circulant spectrum and confirmed to be top-heavy at every ring size in the canonical family.",
   "chapter.occupancy.references": "The [4,4,87] record is computed in this chapter's mathematical section from the ring's spectrum; its top-heaviness is confirmed at every ring size in the canonical family.",
+  "chapter.occupancy.evidence": "Sorting the spectrum into octaves revealed a lopsided shape: four modes, four modes, then eighty-seven crowding the top. This one record — [4,4,87] — turned out to be the seed of the information content, the density fractions, and the verdict on the blackbody. One counting, many consequences.",
 
   "chapter.resonance.title": "Resonance",
   "chapter.resonance.summary": "Mirror pairs and the central mode: the spectrum's internal symmetry.",
@@ -70,6 +77,7 @@
   "chapter.resonance.consequences": "The O(2) mirror doublet is the theory's strongest falsifiable prediction — an exact frequency degeneracy absent from the Standard Model and general relativity.",
   "chapter.resonance.history": "The mirror-pair analysis established the O(2) doublet as the strongest ring-specific prediction, distinct from SU(2) gauge doublets.",
   "chapter.resonance.references": "The mirror-pair degeneracy is derived in this chapter and is the theory's sharpest falsifiable prediction.",
+  "chapter.resonance.evidence": "The ring's mirror symmetry was predicted before it was checked: every mode k should have an exact twin at N−k. It does — and this exact degeneracy, absent from the Standard Model and from relativity, is the theory's sharpest claim. Find a single missing pair, and the structure falls.",
 
   "chapter.symmetry.title": "Symmetry",
   "chapter.symmetry.summary": "The Z2-paired complex sector — why observable states come in pairs.",
@@ -79,6 +87,7 @@
   "chapter.symmetry.consequences": "The complex observable sector yields the Born rule, the mirror spectrum, and the measurement basis — three of the theory's most-used results.",
   "chapter.symmetry.history": "The complex-state derivation and the boundary reclassification fixed the Z2-paired sector as one of the five irreducible inputs.",
   "chapter.symmetry.references": "The complex, Z2-paired observable sector is introduced in this chapter as one of the five boundary inputs.",
+  "chapter.symmetry.evidence": "The complex, paired observable sector was a deliberate choice, not a derivation. But the moment it was made, the theory was paid back many times over: the Born rule, the mirror spectrum, and the measurement basis all followed without further effort.",
 
   "chapter.information-content.title": "Information Content",
   "chapter.information-content.summary": "How non-uniform a distribution is — the theory's measure of information.",
@@ -88,6 +97,7 @@
   "chapter.information-content.consequences": "Information content is the single scalar that ties the ring's spectrum to the universe's energy budget. It is the first rung of the information ladder.",
   "chapter.information-content.history": "The information density I_occ was derived in the geometry-information program as KL(ρ‖uniform) over the octave record.",
   "chapter.information-content.references": "The KL information measure is defined in this chapter and applied to the occupancy in the I_occ chapter.",
+  "chapter.information-content.evidence": "The theory needed a way to say how non-uniform a distribution is, and chose the Kullback–Leibler divergence against the uniform reference. It was an ordinary measure until the next part revealed what it counts: the very same number becomes the dark-energy fraction.",
 
   "chapter.iocc.title": "I_occ",
   "chapter.iocc.summary": "The derived order parameter: I_occ = 0.7513 nats.",
@@ -97,6 +107,7 @@
   "chapter.iocc.consequences": "I_occ is the numerator of the dark-energy fraction. Its derivation from pure counting is what makes the cosmological result of Part IV a correspondence rather than a fit.",
   "chapter.iocc.history": "The order parameter I_occ was fixed by the information-density derivation and used throughout the cosmology and measurement programs.",
   "chapter.iocc.references": "The value I_occ = 0.7513 nats is computed in this chapter's mathematical section from [4,4,87]/95 against the uniform reference.",
+  "chapter.iocc.evidence": "Plug the occupancy [4,4,87] into the formula, and 0.7513 nats falls out — no fitting, no tuning. This one derived scalar is the load-bearing number of the whole theory, carried unchanged into cosmology.",
 
   "chapter.kl-selection.title": "KL Selection",
   "chapter.kl-selection.summary": "Why the uniform distribution is the reference — the Kullback–Leibler choice.",
@@ -106,6 +117,7 @@
   "chapter.kl-selection.consequences": "The KL selection guarantees that I_occ is parameter-free: it is a pure read of the spectrum against a canonical, assumption-free reference.",
   "chapter.kl-selection.history": "The KL reference was fixed as part of the information-density derivation and confirmed in the black-hole and cosmology analyses.",
   "chapter.kl-selection.references": "The uniform reference and the KL divergence are defined in this chapter; the information-conservation statement appears in the measurement program.",
+  "chapter.kl-selection.evidence": "Why measure against the uniform distribution? Because it is the maximally ignorant baseline — the one that assumes nothing. Measuring the ring against it guarantees the result has no free parameters hiding anywhere.",
 
   "chapter.omega-lambda.title": "ΩΛ",
   "chapter.omega-lambda.summary": "Information cosmology: the dark-energy fraction ΩΛ = I_occ/ln K = 0.6839.",
@@ -115,6 +127,7 @@
   "chapter.omega-lambda.consequences": "ΩΛ is the flagship derived information observable: the normalized entropy deficit of the ring's top-heavy occupancy, matched to the observed dark-energy fraction to 0.12%. It does not by itself derive cosmic acceleration — that needs a hosted equation of state (w < −1/3) — and it is a state descriptor, not an extractable resource.",
   "chapter.omega-lambda.history": "The information-cosmology derivation established ΩΛ = I_occ/ln K, and the distinguishability analysis confirmed it as the strongest single observable. The dark-energy ontology program then traced the number to its root: ΩΛ is a derived information observable (the normalized entropy deficit of the [4,4,87] occupancy), whose physical (energy) reading is hosted via the \"energy = actualization rate\" definition and dimensionful anchors — a correspondence, not a derived physical relation.",
   "chapter.omega-lambda.references": "The fraction ΩΛ = I_occ/ln K is computed in this chapter; the dark-energy ontology (derived information, hosted energy) is developed in this part's remaining chapters.",
+  "chapter.omega-lambda.evidence": "This is the theory's most striking single result. Divide the information content by the logarithm of three, and out comes 0.6839 — the observed dark-energy fraction of the universe, to within a fraction of a percent. The theory did not fit this number; it computed it, and then found observation already agreed.",
 
   "chapter.omega-matter.title": "Ωm",
   "chapter.omega-matter.summary": "The matter fraction Ωm = 1 − ΩΛ = 0.3161.",
@@ -124,6 +137,7 @@
   "chapter.omega-matter.consequences": "The matter fraction closes the density budget — the deficit side of the same information partition as ΩΛ — and is the side read (hosted) as matter. Structure growth itself remains a non-information input (BOUNDARY).",
   "chapter.omega-matter.history": "The density-fraction pair {ΩΛ, Ωm} was derived in the information-cosmology program and reconfirmed in the anchor analyses.",
   "chapter.omega-matter.references": "The fraction Ωm = 1 − ΩΛ is the complement of ΩΛ computed in the previous chapter.",
+  "chapter.omega-matter.evidence": "The dark-energy fraction has a partner: what is left, 0.3161, is the matter fraction — and it is independently observed, to a quarter of a percent. A single information quantity, computed once, fixes both halves of the universe's energy budget.",
 
   "chapter.q0.title": "q₀",
   "chapter.q0.summary": "The deceleration parameter q₀ = Ωm/2 − ΩΛ — negative, so the universe accelerates.",
@@ -133,6 +147,7 @@
   "chapter.q0.consequences": "q₀ = Ωm/2 − ΩΛ ≈ −0.526 is a hosted FRW closure: its value follows from the derived fractions, but its form assumes the ΛCDM equation of state w = −1. The acceleration itself is not derived — it requires a hosted w < −1/3.",
   "chapter.q0.history": "The deceleration parameter was computed in the cosmology program as a read of the density fractions.",
   "chapter.q0.references": "The deceleration parameter is computed from the density fractions in this chapter's mathematical section.",
+  "chapter.q0.evidence": "The deceleration parameter comes out negative — the universe accelerates — and here the theory is careful to say what is really derived. The value follows from the fractions, but the acceleration law itself is borrowed, not derived. The honesty is part of the evidence.",
 
   "chapter.zacc.title": "z_acc",
   "chapter.zacc.summary": "The transition redshift — when acceleration took over from deceleration.",
@@ -142,6 +157,7 @@
   "chapter.zacc.consequences": "z_acc is a timing prediction: the theory claims the universe began accelerating at redshift ~0.63, testable against supernova and CMB observations.",
   "chapter.zacc.history": "The transition redshift was derived in the cosmology program from the density-fraction pair.",
   "chapter.zacc.references": "The transition redshift is computed from the density fractions in this chapter's mathematical section.",
+  "chapter.zacc.evidence": "The moment the universe switched from slowing to speeding is a number the theory can state — redshift 0.63 — and a number observation can check against supernovae and the microwave sky. The timing sits comfortably inside the data.",
 
   "chapter.families.title": "Three Families",
   "chapter.families.summary": "The three octave families — family count = floor(log₂ span) + 1 = 3.",
@@ -151,6 +167,7 @@
   "chapter.families.consequences": "The family count is a derived value with a boundary window: the span ∈ [4,8) is input, but the value 3 follows from it. This is the canonical example of the DERIVED-value / BOUNDARY-window distinction.",
   "chapter.families.history": "The three-family window was fixed in the boundary reclassification, and the family-count derivation was reconfirmed in the role-of-three analysis.",
   "chapter.families.references": "The family-count derivation is stated in this chapter; the boundary-window reading is developed in the Boundaries chapter.",
+  "chapter.families.evidence": "Why three families? Because the ring spans 6.4 octaves, and the number of whole octaves that fit is three. The three generations are not an assumption but a count — floor of the logarithm of the span, plus one.",
 
   "chapter.masses.title": "Masses",
   "chapter.masses.summary": "Fermion masses as anchors times dimensionless D96 ratios.",
@@ -160,6 +177,7 @@
   "chapter.masses.consequences": "The mass hierarchy is reduced to two anchors plus spectral ratios. The absolute scales remain boundary, but the pattern is derived.",
   "chapter.masses.history": "The mass derivations fixed the ratio forms, and the anchor analyses established v and m_e as the only dimensionful inputs.",
   "chapter.masses.references": "The mass-ratio forms are stated in this chapter; the two dimensionful anchors are the subject of the Boundaries chapter.",
+  "chapter.masses.evidence": "Every fermion mass is the electron mass times a dimensionless ratio, and every ratio is derived from the spectrum. The theory cannot conjure the absolute scale from nothing — one ruler must be imported — but the entire pattern of masses is spectral, not arbitrary.",
 
   "chapter.couplings.title": "Couplings",
   "chapter.couplings.summary": "Gauge couplings as spectral ratios: α_weak = 3/Σm, α_strong = 8/Σ√m.",
@@ -169,6 +187,7 @@
   "chapter.couplings.consequences": "The weak and strong couplings are spectral correspondences; the electromagnetic coupling is flagged as open. This is a sharp, checkable boundary within the gauge sector.",
   "chapter.couplings.history": "The gauge-coupling correspondences were established in the gauge program and remain one of the theory's admitted partial results.",
   "chapter.couplings.references": "The weak and strong coupling correspondences are stated in this chapter; the electromagnetic coupling is flagged as open here.",
+  "chapter.couplings.evidence": "The weak and strong couplings come out as simple fractions of spectral sums; the electromagnetic coupling is honestly left open. This is the theory at its most disciplined: what can be derived is stated, what cannot is flagged.",
 
   "chapter.planck-scale.title": "Planck Scale",
   "chapter.planck-scale.summary": "M_Pl = v·A³ = 254.37·(95·44·87)³ = 1.2234e19 GeV — the derived Planck content.",
@@ -178,6 +197,7 @@
   "chapter.planck-scale.consequences": "The Planck content is a pure D96 ratio — the cube of a spectral triple times the weak anchor. The cube exponent 3 is a read of the observed Planck–weak ratio (law-level correspondence).",
   "chapter.planck-scale.history": "The Planck derivation fixed M_Pl = v·A³, and the role-of-three analysis clarified the cube exponent's status.",
   "chapter.planck-scale.references": "The Planck content M_Pl = v·A³ is computed in this chapter's mathematical section.",
+  "chapter.planck-scale.evidence": "The largest scale in physics falls out of the smallest construction: three counts of the ring — 95, 44, 87 — multiplied and cubed, then scaled by the weak mass, give the Planck mass. The most far-removed number is the most direct.",
 
   "chapter.thermodynamics.title": "Thermodynamics",
   "chapter.thermodynamics.summary": "An added occupancy layer over the structural modes — temperature is boundary.",
@@ -187,6 +207,7 @@
   "chapter.thermodynamics.consequences": "Temperature is boundary; Bose statistics is emergent from an ensemble; the blackbody is not reproducible from the D96 mode set (hard cutoff, sub-power-law DOS).",
   "chapter.thermodynamics.history": "The temperature-origin, structure-versus-thermodynamics, and blackbody analyses established this verdict.",
   "chapter.thermodynamics.references": "The temperature-origin, structure-versus-thermodynamics, and blackbody arguments are summarized in this chapter.",
+  "chapter.thermodynamics.evidence": "Asked about heat, the theory gives a careful and honest answer. Bose statistics can emerge from an ensemble, but the blackbody cannot: the ring is top-heavy, anti-thermal. Temperature remains an imported scale, and the theory says so plainly.",
 
   "chapter.quantum-layer.title": "Quantum Layer",
   "chapter.quantum-layer.summary": "The correspondence layer hosting entanglement — an unavoidable consequence of observation.",
@@ -196,6 +217,7 @@
   "chapter.quantum-layer.consequences": "The quantum layer is complete (two primitives, no third), relativistic (no-signalling), and observationally necessary (the Bell violation forces it).",
   "chapter.quantum-layer.history": "The entanglement program established the two-primitive completeness and the relativistic consistency of the layer.",
   "chapter.quantum-layer.references": "The entanglement, completeness, and CHSH-reality results of the quantum program are summarized in this chapter.",
+  "chapter.quantum-layer.evidence": "The structure gives interference and correlation, but never entanglement — so the theory needed a hosted quantum layer. The surprise was how small it is: exactly two primitives, a joint state and a gate, complete it. The Bell violation forced the layer; two primitives sufficed.",
 
   "chapter.joint-state.title": "Joint State",
   "chapter.joint-state.summary": "The first irreducible quantum primitive: a coherent two-qubit amplitude.",
@@ -205,6 +227,7 @@
   "chapter.joint-state.consequences": "The joint state reproduces the Bell violation, teleportation, and — with a third body — the GHZ and W states. It is the minimal static entanglement object.",
   "chapter.joint-state.history": "The joint link state was formalized as a rank-2 complex 2×2 matrix in the joint-link formalization.",
   "chapter.joint-state.references": "The joint-state formalization is stated in this chapter's mathematical section; the minimal-extension argument appears in the Quantum Layer chapter.",
+  "chapter.joint-state.evidence": "The smallest entangled object is a rank-two complex matrix — the Bell pair. Each half, alone, is perfectly random; the whole, together, is perfectly correlated. The whole is irreducible to its parts, and that irreducibility is the point.",
 
   "chapter.entangling-gate.title": "Entangling Gate",
   "chapter.entangling-gate.summary": "The second irreducible quantum primitive: the non-local two-body interaction.",
@@ -213,5 +236,6 @@
   "chapter.entangling-gate.math": "U = e^{−i H_int t}, with H_int = J·σ⊗σ. Representatives: CNOT, CZ, iSWAP, √SWAP (all LU-equivalent). A local H = σ_z⊗I preserves rank; the non-local H raises it.",
   "chapter.entangling-gate.consequences": "The gate is the creation primitive (local unitaries cannot entangle), irreducible, uniquely required as a kind, and physically a coherent two-body interaction.",
   "chapter.entangling-gate.history": "The gate's irreducibility, uniqueness, and physical realization were established in the entanglement program.",
-  "chapter.entangling-gate.references": "The gate's origin and physical realization are summarized in this chapter."
+  "chapter.entangling-gate.references": "The gate's origin and physical realization are summarized in this chapter.",
+  "chapter.entangling-gate.evidence": "The gate that makes entanglement is a non-local two-body interaction — irreducible, yet free to appear in many guises: CNOT, CZ, iSWAP, √SWAP. Two primitives, one gate, and every known quantum phenomenon follows."
 }

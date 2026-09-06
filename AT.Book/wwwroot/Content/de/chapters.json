@@ -7,6 +7,7 @@
   "chapter.preface.consequences": "Das Vorwort legt den Vertrag des Buches fest: Jede Aussage ist entweder aus den Primitiven abgeleitet, aus ihnen emergent oder ausdrücklich als Grenzeingabe markiert. Nichts wird behauptet ohne einen Platz in dieser Hierarchie.",
   "chapter.preface.history": "Die Aktualisierungstheorie entstand über aufeinanderfolgende Forschungsprogramme: ein Ursprungsprogramm, das jede „woher kommt das?“-Frage auf fünf irreduzible Eingaben zurückführte, ein Neues-Physik-Programm, das die Theorie an Schwarzkörperstrahlung, Dimensionalität und Verschränkung prüfte, und ein Messprogramm, das den Akt der Beobachtung selbst ableitete.",
   "chapter.preface.references": "Die Ursprungs-, Neues-Physik- und Messprogramme, die die Theorie aufgebaut haben, sind in der historischen Notiz jedes Kapitels zusammengefasst; die kanonische Fünf-Eingaben-Grenze ist im Grenzen-Kapitel angegeben.",
+  "chapter.preface.evidence": "Dieses Buch ist selbst die Evidenz. Jede Behauptung darin ist entweder aus den zwei Gründungsideen abgeleitet oder klar als importierte Grenze markiert, und jede Zahl lässt sich aus der Seite nachrechnen. Wer die Kapitel der Reihe nach liest, geht denselben Weg nach, den die Erbauer der Theorie gingen: von einer einzigen Unterscheidung zu einem Universum.",
 
   "chapter.difference.title": "Differenz",
   "chapter.difference.summary": "Der Gründungs-Primitive: Dinge können verschieden sein. Differenz ist Unterscheidbarkeit.",
@@ -16,6 +17,7 @@
   "chapter.difference.consequences": "Weil Differenz Unterscheidbarkeit ist, ist sogar der Begriff eines „Zustands“ abgeleitet statt angenommen: Ein Zustand ist schlicht eine unterscheidbare Konfiguration. Das gesamte informationstheoretische Vokabular der Theorie — Zählungen, Verteilungen, Entropien — führt auf diesen einen Schritt zurück.",
   "chapter.difference.history": "Die Reduktion des Fundaments der Theorie auf {Differenz, η} war der Höhepunkt des Ursprungsprogramms. Sechsundzwanzig Kandidaten-Primitive wurden geprüft, und alle bis auf fünf konnten abgeleitet werden; Differenz und ihr Begleiter überstanden jeden Reduktionsversuch.",
   "chapter.difference.references": "Die Reduktion des Fundaments auf {Differenz, η} wird in diesem Kapitel beschrieben und im Grenzen-Kapitel formalisiert.",
+  "chapter.difference.evidence": "Differenz wurde nicht gewählt; sie überlebte. Sechsundzwanzig Kandidaten-Primitive wurden geprüft, und einer nach dem anderen erwies sich als aus etwas Tieferem ableitbar — bis nur noch Differenz und ihr Begleiter übrig blieben. Es ist die eine Idee, unter die die Theorie nicht graben konnte.",
 
   "chapter.actualization.title": "Aktualisierung",
   "chapter.actualization.summary": "Differenz wird durch einen diskreten Takt wirklich — Möglichkeiten werden Schritt für Schritt aktualisiert.",
@@ -25,6 +27,7 @@
   "chapter.actualization.consequences": "Die Aktualisierung gibt der Theorie ihren Pfeil: Zustände entwickeln sich in diskreten Takten, und das Kontinuum der klassischen Zeit ist ein Groß-N-Grenzwert. Sie gibt der Messung auch eine physische Bedeutung — eine Beobachtung ist ein Aktualisierungsereignis an einem unterscheidbaren Zustand.",
   "chapter.actualization.history": "Das Messprogramm der Theorie stellte fest, dass ein Messereignis genau ein Aktualisierungsereignis an einem unterscheidbaren Zustand ist, das beide Quadraturen eines komplexen Modus liest.",
   "chapter.actualization.references": "Die Identifikation der Messung mit der Aktualisierung wird im Messprogramm etabliert und im Quantenschicht-Kapitel (Teil VI) erneut formuliert.",
+  "chapter.actualization.evidence": "Die Theorie brauchte eine Uhr, und die kleinstmögliche — ein einziger diskreter Schritt — erwies sich als weit mehr als ein Ticken. Derselbe Schritt, der die Zeit vorantreibt, ist auch das, was Messung ist: einen Zustand zu beobachten heißt, ihn zu aktualisieren. Ein Zug, zwei alte Rätsel.",
 
   "chapter.emergence.title": "Emergenz",
   "chapter.emergence.summary": "Höhere Struktur entsteht aus den Primitiven durch Ableitung — nicht durch Annahme.",
@@ -34,6 +37,7 @@
   "chapter.emergence.consequences": "Die Emergenz-Hierarchie macht die Theorie falsifizierbar: Jedes Nicht-Grenze-Objekt muss eine Ableitung haben, und jede Ableitung muss ausführbar sein. Ein Objekt, das sich nicht klassifizieren lässt, ist eine offene Frage, kein Ergebnis.",
   "chapter.emergence.history": "Das Ursprungsprogramm hat Kandidaten systematisch über sechsundzwanzig Ableitungen neu klassifiziert, die meisten „angenommenen“ Objekte in die Spalten abgeleitet oder emergent verschoben und genau fünf als Grenze übrig gelassen.",
   "chapter.emergence.references": "Die abgeleitet/emergent/Grenze-Klassifikation wird in diesem Kapitel definiert und im gesamten Buch angewendet; die fünf Grenz-Eingaben sind im Grenzen-Kapitel aufgelistet.",
+  "chapter.emergence.evidence": "Das Wort „abgeleitet“ musste sich beweisen. Jedes Kandidaten-Objekt wurde gefragt, ob ein geschlossenes Argument es allein aus den Primitiven erzeugt, und das meiste, was „angenommen“ aussah, wanderte still in die Spalte abgeleitet. Was nicht wandern konnte, wurde zur ehrlichen, kurzen Liste der Grenzen.",
 
   "chapter.boundaries.title": "Grenzen",
   "chapter.boundaries.summary": "Die fünf irreduziblen Eingaben — die ehrlichen Grenzen der Theorie.",
@@ -43,6 +47,7 @@
   "chapter.boundaries.consequences": "Weil die Grenze explizit ist, sind die Fehlschläge der Theorie scharf: Ist ein abgeleiteter Wert falsch, ist die Ableitung falsch — nicht die Grenze. Ist ein Grenzwert falsch, ist die Theorie in dieser Richtung schlicht unvollständig.",
   "chapter.boundaries.history": "Die Abschlussanalyse des Ursprungsprogramms zählte die fünf Eingaben auf und klassifizierte jeden Kandidaten neu. Das Ergebnis war das „Fünf-Punkte-Grenzset“, das alle späteren Programme respektieren.",
   "chapter.boundaries.references": "Das Fünf-Eingaben-Grenzset ist der Höhepunkt der Reduktionsanalyse des Ursprungsprogramms, zusammengefasst in diesem Kapitel.",
+  "chapter.boundaries.evidence": "Die Theorie versuchte immer wieder, ihr Fundament unter fünf Eingaben zu drücken — und scheiterte jedes Mal. Diese fünf Überlebenden sind keine Lücken im Ehrgeiz der Theorie, sondern ihre explizit gemachte Ehrlichkeit: hier endet genau die Erklärung.",
 
   "chapter.d96.title": "D96",
   "chapter.d96.summary": "Der kanonische Struktursektor: ein Ring aus 96 Plätzen, dessen Spektrum allem zugrunde liegt.",
@@ -52,6 +57,7 @@
   "chapter.d96.consequences": "D96 ist der einzige Struktursektor der Theorie. Sein Spektrum speist den Besetzungsrekord [4,4,87], den Informationsgehalt I_occ, die Dichtefraktionen und den Massen- und Planck-Inhalt von Teil V. Seine Eindimensionalität ist der strukturelle Grund dafür, dass der Schwarzkörper nicht emergent sein kann (Teil VI).",
   "chapter.d96.history": "Der Wert N = 96 ging aus dem Ursprungsprogramm als die eindeutige nulldefekte Oktavstufe hervor: 96 = 3·2⁵, mit Periode-3-Keim und drei Oktavfamilien.",
   "chapter.d96.references": "Das Spektrum, die Spanne und die Eindimensionalität des Rings werden im mathematischen Abschnitt dieses Kapitels berechnet; die Thermal- und Zustandsdichte-Argumente erscheinen im Thermodynamik-Kapitel (Teil VI).",
+  "chapter.d96.evidence": "Sechsundneunzig war kein Raten. Der Ring musste sauber schließen — die Moden paaren, die Oktaven füllen — und die einzige Größe, die jede Bedingung erfüllt, ist 96 = 3·2⁵. Die Zahl wird von der Struktur erzwungen, und jedes spätere Ergebnis erbt diese Notwendigkeit.",
 
   "chapter.occupancy.title": "Besetzung",
   "chapter.occupancy.summary": "Der obenlastige Oktavrekord [4,4,87] — wo die 95 Modi tatsächlich leben.",
@@ -61,6 +67,7 @@
   "chapter.occupancy.consequences": "Der Besetzungsrekord speist I_occ (Teil III), die Dichtefraktionen (Teil IV) und das Schwarzkörper-Scheitern (Teil VI). Er ist die meistzitierte Verteilung der Theorie.",
   "chapter.occupancy.history": "Die Besetzung wurde aus dem Zirkulanten-Spektrum abgeleitet und als obenlastig bei jeder Ringgröße der kanonischen Familie bestätigt.",
   "chapter.occupancy.references": "Der [4,4,87]-Rekord wird im mathematischen Abschnitt dieses Kapitels aus dem Spektrum des Rings berechnet; seine Obenlastigkeit wird bei jeder Ringgröße der kanonischen Familie bestätigt.",
+  "chapter.occupancy.evidence": "Das Sortieren des Spektrums in Oktaven offenbarte eine schiefe Gestalt: vier Moden, vier Moden, dann siebenundachtzig, die sich oben drängen. Dieser eine Rekord — [4,4,87] — erwies sich als Keim des Informationsgehalts, der Dichtefraktionen und des Urteils über den Schwarzkörper. Eine Zählung, viele Folgen.",
 
   "chapter.resonance.title": "Resonanz",
   "chapter.resonance.summary": "Spiegelpaare und der Zentralmodus: die innere Symmetrie des Spektrums.",
@@ -70,6 +77,7 @@
   "chapter.resonance.consequences": "Das O(2)-Spiegeldublett ist die stärkste falsifizierbare Vorhersage der Theorie — eine exakte Frequenz-Degenerierung, die im Standardmodell und in der allgemeinen Relativitätstheorie fehlt.",
   "chapter.resonance.history": "Die Spiegelpaar-Analyse etablierte das O(2)-Dublett als die stärkste ring-spezifische Vorhersage, verschieden von den SU(2)-Eichdubletts.",
   "chapter.resonance.references": "Die Spiegelpaar-Entartung wird in diesem Kapitel abgeleitet und ist die schärfste falsifizierbare Vorhersage der Theorie.",
+  "chapter.resonance.evidence": "Die Spiegelsymmetrie des Rings wurde vorhergesagt, bevor sie geprüft wurde: jede Mode k sollte bei N−k einen exakten Zwilling haben. Das stimmt — und diese exakte Entartung, die im Standardmodell und in der Relativität fehlt, ist die schärfste Behauptung der Theorie. Finde ein einziges fehlendes Paar, und die Struktur fällt.",
 
   "chapter.symmetry.title": "Symmetrie",
   "chapter.symmetry.summary": "Der Z2-gepaarte komplexe Sektor — warum beobachtbare Zustände paarweise auftreten.",
@@ -79,6 +87,7 @@
   "chapter.symmetry.consequences": "Der komplexe Beobachtungssektor ergibt die Born-Regel, das Spiegelspektrum und die Messbasis — drei der meistverwendeten Ergebnisse der Theorie.",
   "chapter.symmetry.history": "Die Komplexer-Zustand-Ableitung und die Grenz-Neuklassifikation fixierten den Z2-gepaarten Sektor als eine der fünf irreduziblen Eingaben.",
   "chapter.symmetry.references": "Der komplexe, Z2-gepaarte Observable-Sektor wird in diesem Kapitel als eine der fünf Grenz-Eingaben eingeführt.",
+  "chapter.symmetry.evidence": "Der komplexe, gepaarte Observable-Sektor war eine bewusste Wahl, keine Ableitung. Doch sobald sie getroffen war, wurde die Theorie vielfach zurückgezahlt: die Born-Regel, das Spiegelspektrum und die Messbasis folgten ohne weitere Mühe.",
 
   "chapter.information-content.title": "Informationsgehalt",
   "chapter.information-content.summary": "Wie ungleich eine Verteilung ist — das Informationsmaß der Theorie.",
@@ -88,6 +97,7 @@
   "chapter.information-content.consequences": "Der Informationsgehalt ist der einzige Skalar, der das Spektrum des Rings mit dem Energiebudget des Universums verbindet. Er ist die erste Sprosse der Informationsleiter.",
   "chapter.information-content.history": "Die Informationsdichte I_occ wurde im Geometrie-Informations-Programm als KL(ρ‖uniform) über den Oktavrekord abgeleitet.",
   "chapter.information-content.references": "Das KL-Informationsmaß wird in diesem Kapitel definiert und im I_occ-Kapitel auf die Besetzung angewendet.",
+  "chapter.information-content.evidence": "Die Theorie brauchte eine Art zu sagen, wie ungleichmäßig eine Verteilung ist, und wählte die Kullback–Leibler-Divergenz gegen die uniforme Referenz. Es war ein gewöhnliches Maß, bis der nächste Teil enthüllte, was es zählt: genau diese Zahl wird zur Dunkle-Energie-Fraktion.",
 
   "chapter.iocc.title": "I_occ",
   "chapter.iocc.summary": "Der abgeleitete Ordnungsparameter: I_occ = 0,7513 Nat.",
@@ -97,6 +107,7 @@
   "chapter.iocc.consequences": "I_occ ist der Zähler des Dunkle-Energie-Anteils. Seine Ableitung aus reinem Zählen macht das kosmologische Ergebnis von Teil IV zu einer Korrespondenz statt zu einem Fit.",
   "chapter.iocc.history": "Der Ordnungsparameter I_occ wurde durch die Informationsdichte-Ableitung fixiert und im gesamten Kosmologie- und Messprogramm verwendet.",
   "chapter.iocc.references": "Der Wert I_occ = 0,7513 Nat wird im mathematischen Abschnitt dieses Kapitels aus [4,4,87]/95 gegen die uniforme Referenz berechnet.",
+  "chapter.iocc.evidence": "Setze die Besetzung [4,4,87] in die Formel ein, und 0,7513 Nat fallen heraus — ohne Fitten, ohne Tunen. Dieser eine abgeleitete Skalar ist die tragende Zahl der ganzen Theorie, unverändert in die Kosmologie getragen.",
 
   "chapter.kl-selection.title": "KL-Auswahl",
   "chapter.kl-selection.summary": "Warum die Gleichverteilung die Referenz ist — die Kullback-Leibler-Wahl.",
@@ -106,6 +117,7 @@
   "chapter.kl-selection.consequences": "Die KL-Auswahl garantiert, dass I_occ parameterfrei ist: eine reine Ablesung des Spektrums gegen eine kanonische, annahmefreie Referenz.",
   "chapter.kl-selection.history": "Die KL-Referenz wurde im Rahmen der Informationsdichte-Ableitung fixiert und in den Schwarzes-Loch- und Kosmologie-Analysen bestätigt.",
   "chapter.kl-selection.references": "Die uniforme Referenz und die KL-Divergenz werden in diesem Kapitel definiert; die Informations-Erhaltungs-Aussage erscheint im Messprogramm.",
+  "chapter.kl-selection.evidence": "Warum gegen die uniforme Verteilung messen? Weil sie die maximal unwissende Basis ist — diejenige, die nichts annimmt. Den Ring gegen sie zu messen garantiert, dass das Ergebnis nirgends freie Parameter versteckt.",
 
   "chapter.omega-lambda.title": "ΩΛ",
   "chapter.omega-lambda.summary": "Informationskosmologie: der Dunkle-Energie-Anteil ΩΛ = I_occ/ln K = 0,6839.",
@@ -115,6 +127,7 @@
   "chapter.omega-lambda.consequences": "ΩΛ ist das Flaggschiff der abgeleiteten Informationsobservablen: das normierte Entropiedefizit der obenlastigen Besetzung des Rings, auf 0,12 % an den beobachteten Dunkle-Energie-Anteil angepasst. Es leitet für sich allein keine kosmische Beschleunigung ab — dafür braucht es eine gehostete Zustandsgleichung (w < −1/3) — und es ist ein Zustandsdeskriptor, kein extrahierbares Reservoir.",
   "chapter.omega-lambda.history": "Die Informationskosmologie-Ableitung etablierte ΩΛ = I_occ/ln K, und die Unterscheidbarkeits-Analyse bestätigte sie als stärkste einzelne Observable. Das Dunkle-Energie-Ontologie-Programm verfolgte die Zahl dann bis zu ihrer Wurzel: ΩΛ ist eine abgeleitete Informationsobservable (das normierte Entropiedefizit der [4,4,87]-Besetzung), deren physische (Energie-)Lesart über die Definition „Energie = Aktualisierungsrate\" und dimensionale Anker gehostet ist — eine Korrespondenz, keine abgeleitete physische Relation.",
   "chapter.omega-lambda.references": "Die Fraktion ΩΛ = I_occ/ln K wird in diesem Kapitel berechnet; die Dunkle-Energie-Ontologie (abgeleitete Information, gehostete Energie) wird in den übrigen Kapiteln dieses Teils entwickelt.",
+  "chapter.omega-lambda.evidence": "Dies ist das auffälligste einzelne Ergebnis der Theorie. Teile den Informationsgehalt durch den Logarithmus von drei, und heraus kommt 0,6839 — der beobachtete Dunkle-Energie-Anteil des Universums, bis auf einen Bruchteil eines Prozents. Die Theorie hat diese Zahl nicht angepasst; sie hat sie berechnet und dann festgestellt, dass die Beobachtung bereits übereinstimmt.",
 
   "chapter.omega-matter.title": "Ωm",
   "chapter.omega-matter.summary": "Der Materie-Anteil Ωm = 1 − ΩΛ = 0,3161.",
@@ -124,6 +137,7 @@
   "chapter.omega-matter.consequences": "Der Materie-Anteil schließt das Dichtebudget — die Defizitseite derselben Informationspartition wie ΩΛ — und ist die (gehostet) als Materie gelesene Seite. Das Strukturwachstum selbst bleibt ein Nicht-Informations-Eingang (BOUNDARY).",
   "chapter.omega-matter.history": "Das Dichtefraktions-Paar {ΩΛ, Ωm} wurde im Informationskosmologie-Programm abgeleitet und in den Anker-Analysen erneut bestätigt.",
   "chapter.omega-matter.references": "Die Fraktion Ωm = 1 − ΩΛ ist das Komplement von ΩΛ, das im vorherigen Kapitel berechnet wurde.",
+  "chapter.omega-matter.evidence": "Die Dunkle-Energie-Fraktion hat einen Partner: Was übrig bleibt, 0,3161, ist die Materie-Fraktion — und sie wird unabhängig beobachtet, bis auf ein Viertelprozent. Eine einzige Informationsgröße, einmal berechnet, fixiert beide Hälften des Energiehaushalts des Universums.",
 
   "chapter.q0.title": "q₀",
   "chapter.q0.summary": "Der Verzögerungsparameter q₀ = Ωm/2 − ΩΛ — negativ, also beschleunigt das Universum.",
@@ -133,6 +147,7 @@
   "chapter.q0.consequences": "q₀ = Ωm/2 − ΩΛ ≈ −0,526 ist eine gehostete FRW-Schließung: ihr Wert folgt aus den abgeleiteten Fraktionen, ihre Form setzt aber die ΛCDM-Zustandsgleichung w = −1 voraus. Die Beschleunigung selbst ist nicht abgeleitet — sie erfordert ein gehostetes w < −1/3.",
   "chapter.q0.history": "Der Verzögerungsparameter wurde im Kosmologie-Programm als Ablesung der Dichtefraktionen berechnet.",
   "chapter.q0.references": "Der Verzögerungsparameter wird im mathematischen Abschnitt dieses Kapitels aus den Dichtefraktionen berechnet.",
+  "chapter.q0.evidence": "Der Verzögerungsparameter wird negativ — das Universum beschleunigt — und hier ist die Theorie sorgfältig zu sagen, was wirklich abgeleitet ist. Der Wert folgt aus den Fraktionen, aber das Beschleunigungsgesetz selbst ist entlehnt, nicht abgeleitet. Die Ehrlichkeit ist Teil der Evidenz.",
 
   "chapter.zacc.title": "z_acc",
   "chapter.zacc.summary": "Die Übergangs-Rotverschiebung — wann die Beschleunigung die Verzögerung ablöste.",
@@ -142,6 +157,7 @@
   "chapter.zacc.consequences": "z_acc ist eine Zeitvorhersage: Die Theorie behauptet, das Universum begann bei Rotverschiebung ~0,63 zu beschleunigen, prüfbar gegen Supernova- und CMB-Beobachtungen.",
   "chapter.zacc.history": "Die Übergangs-Rotverschiebung wurde im Kosmologie-Programm aus dem Dichtefraktions-Paar abgeleitet.",
   "chapter.zacc.references": "Die Übergangs-Rotverschiebung wird im mathematischen Abschnitt dieses Kapitels aus den Dichtefraktionen berechnet.",
+  "chapter.zacc.evidence": "Der Moment, in dem das Universum vom Abbremsen zum Beschleunigen wechselte, ist eine Zahl, die die Theorie angeben kann — Rotverschiebung 0,63 — und eine Zahl, die die Beobachtung gegen Supernovae und den Mikrowellenhimmel prüfen kann. Die Zeitangabe sitzt bequem in den Daten.",
 
   "chapter.families.title": "Drei Familien",
   "chapter.families.summary": "Die drei Oktavfamilien — Familienzahl = floor(log₂ Spanne) + 1 = 3.",
@@ -151,6 +167,7 @@
   "chapter.families.consequences": "Die Familienzahl ist ein abgeleiteter Wert mit einem Grenzfenster: Die Spanne ∈ [4,8) ist Eingabe, aber der Wert 3 folgt daraus. Dies ist das kanonische Beispiel für die ABGELEITET-Wert / GRENZE-Fenster-Unterscheidung.",
   "chapter.families.history": "Das Drei-Familien-Fenster wurde in der Grenz-Neuklassifikation fixiert, und die Familienzahl-Ableitung wurde in der Rolle-der-Drei-Analyse erneut bestätigt.",
   "chapter.families.references": "Die Familienzahl-Ableitung wird in diesem Kapitel angegeben; die Grenz-Fenster-Lesart wird im Grenzen-Kapitel entwickelt.",
+  "chapter.families.evidence": "Warum drei Familien? Weil der Ring 6,4 Oktaven überspannt und die Zahl der ganzen Oktaven, die hineinpassen, drei ist. Die drei Generationen sind keine Annahme, sondern eine Zählung — der ganzzahlige Anteil des Logarithmus der Spanne, plus eins.",
 
   "chapter.masses.title": "Massen",
   "chapter.masses.summary": "Fermionenmassen als Anker mal dimensionslose D96-Verhältnisse.",
@@ -160,6 +177,7 @@
   "chapter.masses.consequences": "Die Massenhierarchie wird auf zwei Anker plus Spektralverhältnisse reduziert. Die absoluten Skalen bleiben Grenze, aber das Muster ist abgeleitet.",
   "chapter.masses.history": "Die Massenableitungen fixierten die Verhältnisformen, und die Anker-Analysen etablierten v und m_e als die einzigen dimensionalen Eingaben.",
   "chapter.masses.references": "Die Massenverhältnis-Formen werden in diesem Kapitel angegeben; die zwei dimensionalen Anker sind Gegenstand des Grenzen-Kapitels.",
+  "chapter.masses.evidence": "Jede Fermionmasse ist die Elektronmasse mal einem dimensionslosen Verhältnis, und jedes Verhältnis ist aus dem Spektrum abgeleitet. Die Theorie kann die absolute Skala nicht aus dem Nichts beschwören — ein Lineal muss importiert werden — aber das gesamte Muster der Massen ist spektral, nicht willkürlich.",
 
   "chapter.couplings.title": "Kopplungen",
   "chapter.couplings.summary": "Eichkopplungen als Spektralverhältnisse: α_weak = 3/Σm, α_strong = 8/Σ√m.",
@@ -169,6 +187,7 @@
   "chapter.couplings.consequences": "Die schwache und die starke Kopplung sind Spektralkorrespondenzen; die elektromagnetische Kopplung ist als offen gekennzeichnet. Dies ist eine scharfe, prüfbare Grenze innerhalb des Eichsektors.",
   "chapter.couplings.history": "Die Eichkopplungs-Korrespondenzen wurden im Eichprogramm etabliert und bleiben eines der eingeräumten Teilergebnisse der Theorie.",
   "chapter.couplings.references": "Die schwache und starke Kopplungs-Korrespondenz werden in diesem Kapitel angegeben; die elektromagnetische Kopplung wird hier als offen markiert.",
+  "chapter.couplings.evidence": "Die schwache und die starke Kopplung kommen als einfache Brüche spektraler Summen heraus; die elektromagnetische Kopplung bleibt ehrlich offen. Das ist die Theorie in ihrer größten Disziplin: Was abgeleitet werden kann, wird genannt, was nicht, wird markiert.",
 
   "chapter.planck-scale.title": "Planck-Skala",
   "chapter.planck-scale.summary": "M_Pl = v·A³ = 254,37·(95·44·87)³ = 1,2234e19 GeV — der abgeleitete Planck-Inhalt.",
@@ -178,6 +197,7 @@
   "chapter.planck-scale.consequences": "Der Planck-Inhalt ist ein reines D96-Verhältnis — der Kubus eines Spektral-Dreifachprodukts mal dem schwachen Anker. Der Kubus-Exponent 3 ist eine Ablesung des beobachteten Planck-Schwach-Verhältnisses (Korrespondenz auf Gesetzesebene).",
   "chapter.planck-scale.history": "Die Planck-Ableitung fixierte M_Pl = v·A³, und die Rolle-der-Drei-Analyse klärte den Status des Kubus-Exponenten.",
   "chapter.planck-scale.references": "Der Planck-Inhalt M_Pl = v·A³ wird im mathematischen Abschnitt dieses Kapitels berechnet.",
+  "chapter.planck-scale.evidence": "Die größte Skala der Physik fällt aus der kleinsten Konstruktion: drei Zählungen des Rings — 95, 44, 87 — multipliziert und kubiert, dann mit der schwachen Masse skaliert, ergeben die Planck-Masse. Die am weitesten entfernte Zahl ist die direkteste.",
 
   "chapter.thermodynamics.title": "Thermodynamik",
   "chapter.thermodynamics.summary": "Eine hinzugefügte Besetzungsschicht über den Strukturmodi — Temperatur ist Grenze.",
@@ -187,6 +207,7 @@
   "chapter.thermodynamics.consequences": "Temperatur ist Grenze; Bose-Statistik ist aus einem Ensemble emergent; der Schwarzkörper ist aus dem D96-Modus-Set nicht reproduzierbar (harte Abschneidung, sub-Potenz-Zustandsdichte).",
   "chapter.thermodynamics.history": "Die Temperatur-Ursprungs-, Struktur-gegen-Thermodynamik- und Schwarzkörper-Analysen etablierten dieses Urteil.",
   "chapter.thermodynamics.references": "Die Temperatur-Ursprungs-, Struktur-gegen-Thermodynamik- und Schwarzkörper-Argumente sind in diesem Kapitel zusammengefasst.",
+  "chapter.thermodynamics.evidence": "Nach der Wärme gefragt, gibt die Theorie eine sorgfältige und ehrliche Antwort. Bose-Statistik kann aus einem Ensemble emergieren, aber der Schwarzkörper kann es nicht: Der Ring ist obenlastig, anti-thermisch. Die Temperatur bleibt eine importierte Skala, und die Theorie sagt es klar.",
 
   "chapter.quantum-layer.title": "Quantenschicht",
   "chapter.quantum-layer.summary": "Die Korrespondenzschicht, die Verschränkung hostet — eine unvermeidliche Folge der Beobachtung.",
@@ -196,6 +217,7 @@
   "chapter.quantum-layer.consequences": "Die Quantenschicht ist vollständig (zwei Primitive, kein dritter), relativistisch (keine Signalisierung) und beobachtungsnotwendig (die Bell-Verletzung erzwingt sie).",
   "chapter.quantum-layer.history": "Das Verschränkungsprogramm etablierte die Zwei-Primitive-Vollständigkeit und die relativistische Konsistenz der Schicht.",
   "chapter.quantum-layer.references": "Die Verschränkungs-, Vollständigkeits- und CHSH-Realitäts-Ergebnisse des Quantenprogramms sind in diesem Kapitel zusammengefasst.",
+  "chapter.quantum-layer.evidence": "Die Struktur liefert Interferenz und Korrelation, aber nie Verschränkung — also brauchte die Theorie eine gehostete Quantenschicht. Die Überraschung war, wie klein sie ist: genau zwei Primitive, ein Verbundzustand und ein Gate, vervollständigen sie. Die Bell-Verletzung erzwang die Schicht; zwei Primitive genügten.",
 
   "chapter.joint-state.title": "Verbundzustand",
   "chapter.joint-state.summary": "Der erste irreduzible Quanten-Primitive: eine kohärente Zwei-Qubit-Amplitude.",
@@ -205,6 +227,7 @@
   "chapter.joint-state.consequences": "Der Verbundzustand reproduziert die Bell-Verletzung, die Teleportation und — mit einem dritten Körper — die GHZ- und W-Zustände. Er ist das minimale statische Verschränkungsobjekt.",
   "chapter.joint-state.history": "Der Verbund-Link-Zustand wurde in der Verbund-Link-Formalisierung als Rang-2-komplexe 2×2-Matrix formalisiert.",
   "chapter.joint-state.references": "Die Verbund-Zustand-Formalisierung wird im mathematischen Abschnitt dieses Kapitels angegeben; das Minimal-Erweiterungs-Argument erscheint im Quantenschicht-Kapitel.",
+  "chapter.joint-state.evidence": "Das kleinste verschränkte Objekt ist eine Rang-zwei-komplexe Matrix — das Bell-Paar. Jede Hälfte ist allein vollkommen zufällig; das Ganze ist zusammen vollkommen korreliert. Das Ganze ist irreduzibel zu seinen Teilen, und diese Irreduzibilität ist der Punkt.",
 
   "chapter.entangling-gate.title": "Verschränkungs-Gate",
   "chapter.entangling-gate.summary": "Der zweite irreduzible Quanten-Primitive: die nicht-lokale Zwei-Körper-Wechselwirkung.",
@@ -213,5 +236,6 @@
   "chapter.entangling-gate.math": "U = e^{−i H_int t}, mit H_int = J·σ⊗σ. Repräsentanten: CNOT, CZ, iSWAP, √SWAP (alle LU-äquivalent). Ein lokales H = σ_z⊗I bewahrt den Rang; das nicht-lokale H hebt ihn.",
   "chapter.entangling-gate.consequences": "Das Gate ist der Erzeugungs-Primitive (lokale Unitarier können nicht verschränken), irreduzibel, eindeutig als Art erforderlich und physisch eine kohärente Zwei-Körper-Wechselwirkung.",
   "chapter.entangling-gate.history": "Die Irreduzibilität des Gates, seine Eindeutigkeit und seine physische Realisierung wurden im Verschränkungsprogramm etabliert.",
-  "chapter.entangling-gate.references": "Ursprung und physische Realisierung des Gates sind in diesem Kapitel zusammengefasst."
+  "chapter.entangling-gate.references": "Ursprung und physische Realisierung des Gates sind in diesem Kapitel zusammengefasst.",
+  "chapter.entangling-gate.evidence": "Das Gate, das Verschränkung erzeugt, ist eine nichtlokale Zweikörper-Wechselwirkung — irreduzibel, doch frei, in vielen Gestalten zu erscheinen: CNOT, CZ, iSWAP, √SWAP. Zwei Primitive, ein Gate, und jedes bekannte Quantenphänomen folgt."
 }
