@@ -365,5 +365,9 @@ public sealed class TheoryRegistry
             "Localization = the CONSTRUCTIVE INTERFERENCE of a WAVE PACKET (a superposition of resonance modes) that peaks |ψ|² = ρ at one node. A particle is a propagating resonance (its localization is the Born distribution's envelope peak, its trajectory the actualization chain); a single node is refuted. Fourier uncertainty Δx·Δk = 1: a single mode is delocalized (|ψ|² uniform), a wave packet is localized. Position = the envelope peak; time = the tick (envelope at v_g). Wave packet + Born weight DERIVED; localization EMERGENT; node basis FRAMEWORK.",
             AuditStatus.Passed, new DateTime(2026, 9, 6), TheoryLayer.Structure, TheoryClassification.Emergent,
             ["d96", "difference"]),
+        new("np099", "Classicality Emergence Audit", "How does classical reality emerge from actualization?",
+            "Classicality = DECOHERED LOCALIZATION: a localized resonance (wave packet) is quantum while its interference term survives; friction scatters it until γ·t ≫ 1, when the fringes vanish and the object follows a single non-interfering worldline. Decoherence (A) is the mechanism, via repeated actualization (B) on a stable resonance hierarchy (C), with entropy dominance (D) the signature. Macroscopic bodies (~10²³ modes) decohere instantly. Classical limit (ℏ→0) = decoherence-dominant (γ·t ≫ 1) = large-N/high-entropy. Classicality is EMERGENT.",
+            AuditStatus.Passed, new DateTime(2026, 9, 6), TheoryLayer.Structure, TheoryClassification.Emergent,
+            ["d96", "difference"]),
     ];
 }

@@ -4307,6 +4307,21 @@ DERIVED (superposition of modes); the Born weight |ψ|² = ρ DERIVED (QG216); l
 trajectory EMERGENT (constructive interference + actualization chain); the position basis (node
 labeling/geometry) FRAMEWORK (η + D96); "particle = a localized node" REFUTED. No new primitive;
 canonical AT unchanged.
+ResearchY-NP_099 (Classicality Emergence Audit, COMPLETE, tests 10/10 PASSED): how does classical
+reality emerge from actualization? Verdict: classicality = DECOHERED LOCALIZATION (A) — a localized
+resonance (wave packet, NP_098) is quantum while its interference term survives: I = ρ_A + ρ_B +
+2√(ρ_Aρ_B)cos(θ_A−θ_B) shows fringes. Friction (NP_095) scatters it against the environment's
+deficit excitations, randomizing the phases; at the decoherence rate γ·t ≫ 1, ⟨cos Δθ⟩ → 0 and the
+fringes vanish — I → ρ_A + ρ_B (classical probabilities). The transition quantum → classical is
+decoherence (A, the mechanism), realized through repeated actualization (B, the Born selections
+tracing the trajectory), on a stable resonance hierarchy (C, the composite modes), with entropy
+dominance (D, the high mode multiplicity making decoherence instantaneous) as the signature.
+Macroscopic bodies (~10²³ modes) decohere essentially instantly, hence appear classical. The
+classical limit (ℏ→0) = the decoherence-dominant limit (γ·t ≫ 1) = the large-N/high-entropy limit.
+Classification: classicality EMERGENT (decoherence + repeated actualization); the interference term
+DERIVED (Born, QG216); the decoherence mechanism DERIVED (friction, NP_095); "classicality as a
+separate primitive" REFUTED; "classicality as a fundamental (non-emergent) regime" REFUTED. No new
+primitive; canonical AT unchanged.
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-

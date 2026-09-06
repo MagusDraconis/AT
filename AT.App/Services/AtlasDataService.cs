@@ -508,6 +508,21 @@ public static class AtlasDataService
                     "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_098.md"),
             ]),
         new(
+            "researchy-np099-classicality-emergence",
+            "Why the World Looks Solid: Classicality Is Just Interference Faded Out",
+            "ResearchY · NP_099 (Classicality Emergence Audit)",
+            "The deepest question of quantum theory is why the world looks classical at all — why rocks, planets, and tables behave like solid, definite things instead of smeared-out waves. Actualization Theory's answer is elegant: classical reality is quantum reality with the interference faded out. A particle's wave packet carries an interference pattern; but every collision with its surroundings jostles its phase a little, and after enough jostles the fringes cancel to nothing. What is left is a single, quiet, definite path — the thing we call a rock. Classicality is not a separate realm; it is the same resonance, decohered.",
+            "NP_099 traces single, repeated, and many-body realizations. A single Born selection (NP_093) is one stochastic node (quantum); repeated selections accumulate into the |ψ|² envelope but the fringes SURVIVE (quantum, the double-slit buildup); only many-body scattering (friction, NP_095) randomizes the phase until the interference term I = ρ_A + ρ_B + 2√(ρ_Aρ_B)cos Δθ averages out (⟨cos Δθ⟩ → 0), leaving I → ρ_A + ρ_B (classical). The transition is at γ·t ≫ 1. Determination: A (decoherence) is the mechanism, B (repeated actualization) the realization, C (stable resonance hierarchy) the substrate, D (entropy dominance) the signature. Macroscopic bodies (~10²³ modes) decohere instantly; the classical limit (ℏ→0) is the decoherence-dominant (large-N/high-entropy) limit. Classicality is EMERGENT.",
+            "For non-experts: ripple a pond and watch the pattern of overlapping circles — that is the quantum world, full of interference. Now stir the water constantly so the circles blur together; the crisp pattern fades to a single smooth swell. That is the classical world: the same water, with the fine pattern washed out by constant stirring. A rock is a quantum object whose interference has been stirred away by its own trillion trillion parts.",
+            "Classicality = decohered localization; the classical limit = interference faded out (γ·t ≫ 1).",
+            "“Classical reality is quantum reality, decohered.”",
+            false,
+            [
+                new("ResearchY-NP_099", "CLASSICALITY EMERGENCE AUDIT",
+                    "Classicality = decoherence (interference → 0); the classical limit = decoherence-dominant.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_099.md"),
+            ]),
+        new(
             "researchy-np074-quantum-number-ontology",
             "What Are Quantum Numbers? The Symmetry Charges of the D96 Ring: Charge Is the Rotation, Isospin the Doublet, and Only the Color Count Remains a Postulate",
             "ResearchY · NP_074 (Quantum Number Ontology Audit)",
