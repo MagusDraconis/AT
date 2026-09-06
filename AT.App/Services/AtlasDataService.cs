@@ -148,6 +148,21 @@ public static class AtlasDataService
                     "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_064.md"),
             ]),
         new(
+            "researchy-np074-quantum-number-ontology",
+            "What Are Quantum Numbers? The Symmetry Charges of the D96 Ring: Charge Is the Rotation, Isospin the Doublet, and Only the Color Count Remains a Postulate",
+            "ResearchY · NP_074 (Quantum Number Ontology Audit)",
+            "If particles are resonance classes, what are their quantum numbers? In AT they are not Standard Model labels but the symmetry charges of the D96 automorphism group. Charge is the U(1) rotation (the 'photon charge'); isospin is the SU(2) Z2-doublet structure; color's structure is the su(3) = 8 of the three families; hypercharge is the derived combination Y = Q − T3. These charges act as the rules that select which part of the spectrum a particle accesses. Only the color count (3) remains a postulate.",
+            "NP_074 inventories charge, isospin, color, and hypercharge. The gauge symmetry is 1+3+8 = 12 generators — the 12 link-directions of C_96(±1..±6) (QG161). Charge = U(1) = the Z_96 rotation subgroup (DERIVED); isospin = SU(2) = the Z2 doublet (reflection σ_z = T3, rotation σ_y, commutator σ_x — DERIVED); color = su(3) = 3²−1 = 8 from the 3 families (structure DERIVED, count 3 = a BOUNDARY postulate, QG79); hypercharge = Y = Q−T3 (derived). Interpretations: mode labels PARTIAL; occupancy-access rules YES; symmetry charges YES (= access rules); correspondence objects PARTIAL (color count only). The electron's charge (−1) is its U(1) rotation eigenvalue — a D96 symmetry charge, not a SM label. Classification: charge/isospin/color-structure/hypercharge DERIVED; color count BOUNDARY; 'SM labels only' REFUTED.",
+            "For non-experts: what is an electric charge, in this theory? It is not an arbitrary sticker on a particle — it is the particle's value under one of the symmetries of the theory's 96-part ring: specifically, its place in the ring's rotation. Isospin is its place in a different symmetry (the 'up/down' doublet). Color is the eight-fold structure of the three families (though the fact that there are exactly three colors is still taken as given). So quantum numbers are the theory's own symmetries, read off a particle's mode — not labels imported from the Standard Model.",
+            "Quantum numbers = D96 symmetry charges (occupancy-access rules); only the color count remains a postulate.",
+            "“Charge is the ring's rotation; isospin its doublet; color its three families.”",
+            false,
+            [
+                new("ResearchY-NP_074", "QUANTUM NUMBER ONTOLOGY AUDIT",
+                    "Quantum numbers are D96 symmetry charges (charge = rotation, isospin = doublet); color count is the boundary.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_074.md"),
+            ]),
+        new(
             "researchy-np073-resonance-selection",
             "Why Only Three Particles per Family: the 95 Modes Collapse to 3 Families, and Only the Stable, Symmetry-Selected Bottom Mode of Each Becomes a Particle",
             "ResearchY · NP_073 (Resonance Selection Audit)",

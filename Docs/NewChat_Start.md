@@ -3881,6 +3881,20 @@ Classification: family structure + mode access + metastability DERIVED (QG210/15
 modes are particles" REFUTED; the precise particle→label assignment PARTIAL (QG271 frontier). No
 new primitive; canonical AT unchanged.
 
+ResearchY-NP_074 (Quantum Number Ontology Audit, COMPLETE, tests 7/7 PASSED): if particles are
+resonance classes, what are quantum numbers? Verdict: quantum numbers are the GENERATORS of the
+D96 automorphism group — symmetry charges (C) that act as occupancy-access rules (B). The gauge
+symmetry is 1+3+8 = 12 generators (the 12 link-directions of C_96(±1..±6)). Charge = U(1) =
+Z_96 rotation subgroup (the photon charge) DERIVED; isospin = SU(2) = Z2 doublet (reflection
+σ_z = T3, rotation σ_y, commutator σ_x) DERIVED; color = su(3) = 3²−1 = 8 from the 3 families
+(structure DERIVED, count 3 = BOUNDARY postulate, QG79); hypercharge = Y = Q − T3 (derived
+combination). Interpretations: A) mode labels PARTIAL; B) occupancy-access rules YES; C) symmetry
+charges YES (= B); D) correspondence objects PARTIAL (color count only). Uniqueness: charge,
+isospin, and color-structure follow uniquely; the color COUNT does not (QG79). The electron's
+charge (−1) = its U(1) rotation eigenvalue (the photon charge), not a SM label. Classification:
+charge + isospin + color-structure + hypercharge DERIVED (QG161); color count BOUNDARY (QG79);
+"quantum numbers as SM labels only" REFUTED. No new primitive; canonical AT unchanged.
+
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-

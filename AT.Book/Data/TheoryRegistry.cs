@@ -265,5 +265,9 @@ public sealed class TheoryRegistry
             "Only 3 of the 95 modes appear as particle generations because the spectrum organizes into 3 octave bands = 3 families, and within each band only the STABLE bottom mode survives (metastability), selected by isospin-constrained mode access. The top band (87/95) is the bulk deficit, not particles.",
             AuditStatus.Passed, new DateTime(2026, 9, 6), TheoryLayer.Physics, TheoryClassification.Derived,
             ["families", "occupancy"]),
+        new("np074", "Quantum Number Ontology Audit", "If particles are resonance classes, what are quantum numbers?",
+            "Quantum numbers are the GENERATORS of the D96 automorphism group — symmetry charges that act as occupancy-access rules. Charge = U(1) = Z_96 rotation, isospin = SU(2) = Z2 doublet, color = su(3) = 8 (count 3 = postulate), hypercharge = Y = Q − T3. The electron's charge is its U(1) rotation eigenvalue.",
+            AuditStatus.Passed, new DateTime(2026, 9, 6), TheoryLayer.Physics, TheoryClassification.Derived,
+            ["families", "occupancy"]),
     ];
 }
