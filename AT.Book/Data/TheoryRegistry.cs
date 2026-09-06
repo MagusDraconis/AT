@@ -269,5 +269,9 @@ public sealed class TheoryRegistry
             "Quantum numbers are the GENERATORS of the D96 automorphism group — symmetry charges that act as occupancy-access rules. Charge = U(1) = Z_96 rotation, isospin = SU(2) = Z2 doublet, color = su(3) = 8 (count 3 = postulate), hypercharge = Y = Q − T3. The electron's charge is its U(1) rotation eigenvalue.",
             AuditStatus.Passed, new DateTime(2026, 9, 6), TheoryLayer.Physics, TheoryClassification.Derived,
             ["families", "occupancy"]),
+        new("np075", "Force Ontology Audit", "If particles are resonance classes and quantum numbers are symmetry charges, what is a force?",
+            "A force is the ACTION of a D96 symmetry generator — a symmetry action that induces a resonance transition between modes (vertex ⟨f|T^a|i⟩). Gauge bosons are the generators (link excitations), not matter particles; the photon is the U(1) = Z_96 rotation generator; gravity is the metric geometry, not a gauge force.",
+            AuditStatus.Passed, new DateTime(2026, 9, 6), TheoryLayer.Physics, TheoryClassification.Derived,
+            ["families", "occupancy"]),
     ];
 }

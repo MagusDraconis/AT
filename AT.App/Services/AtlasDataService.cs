@@ -148,6 +148,21 @@ public static class AtlasDataService
                     "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_064.md"),
             ]),
         new(
+            "researchy-np075-force-ontology",
+            "What Is a Force? The Action of a D96 Symmetry Generator: Forces Are Resonance Transitions, the Photon Is the Rotation, and Gravity Is Just the Geometry",
+            "ResearchY · NP_075 (Force Ontology Audit)",
+            "If particles are resonance classes and quantum numbers are symmetry charges, then a force is the next step in the same ontology: the action of a symmetry generator. Electromagnetism is the U(1) rotation generator (the photon) acting on the modes; the weak and strong forces are the SU(2) and SU(3) generators acting likewise; and gravity is different — it is the geometry of the count density itself, not a gauge force. The gauge bosons are not matter particles; they are the generators (link excitations) that carry the action between modes.",
+            "NP_075 inventories the four forces. EM/weak/strong = the 1+3+8 = 12 generator actions of the D96 automorphism group (QG161/243); the vertex is the generator matrix element ⟨f|T^a|i⟩ (a resonance transition between modes). Gauge bosons are LINK excitations (QG57) — symmetry generators, not matter particles. The photon = the U(1) = Z_96 rotation generator (the unique neutral rotation, coupling e = √(4π/137)). Each force is a Noether-conserved generator action (U(1)→charge, SU(2)→isospin, SU(3)→color) with a D96-normalized coupling (QG162). Gravity is the metric geometry g = ρ^(2/d)η + ψ, not a gauge force. Classification: gauge forces/bosons/couplings DERIVED; gravity DERIVED + ψ primitive; 'force = matter-particle exchange' REFUTED. Forces share the ontology of particles and quantum numbers.",
+            "For non-experts: what is a force, in this theory? It is not little particles being thrown back and forth. It is the theory's own symmetries doing something: each symmetry of the 96-part ring has a 'generator', and a force is that generator acting — moving a particle from one note to another. Electromagnetism is the ring's rotation acting (that is the photon); the weak and strong forces are the other symmetries acting. Gravity is the one exception: it is not a symmetry acting, but the shape of the counting space itself.",
+            "A force = a D96 symmetry generator action (a resonance transition); gravity = the geometry itself.",
+            "“A force is a symmetry in the act of moving a note.”",
+            false,
+            [
+                new("ResearchY-NP_075", "FORCE ONTOLOGY AUDIT",
+                    "Forces are D96 generator actions; the photon is the rotation; gravity is the geometry.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_075.md"),
+            ]),
+        new(
             "researchy-np074-quantum-number-ontology",
             "What Are Quantum Numbers? The Symmetry Charges of the D96 Ring: Charge Is the Rotation, Isospin the Doublet, and Only the Color Count Remains a Postulate",
             "ResearchY · NP_074 (Quantum Number Ontology Audit)",

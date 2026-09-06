@@ -3895,6 +3895,21 @@ charge (−1) = its U(1) rotation eigenvalue (the photon charge), not a SM label
 charge + isospin + color-structure + hypercharge DERIVED (QG161); color count BOUNDARY (QG79);
 "quantum numbers as SM labels only" REFUTED. No new primitive; canonical AT unchanged.
 
+ResearchY-NP_075 (Force Ontology Audit, COMPLETE, tests 7/7 PASSED): if particles are resonance
+classes and quantum numbers are symmetry charges, what is a force? Verdict: a force is the ACTION
+of a D96 symmetry generator — a symmetry action (B) that induces a resonance transition between
+modes (D, the vertex ⟨f|T^a|i⟩). EM/weak/strong = the 1+3+8 = 12 generator actions (QG161/243);
+gravity = the metric geometry (ρ + ψ), NOT a gauge force. Interpretations: A) particle exchange
+PARTIAL (the boson is a link excitation, not a matter particle); B) symmetry action YES; C)
+occupancy transfer PARTIAL; D) resonance transition YES (= B). Gauge bosons are the SYMMETRY
+GENERATORS (link excitations, QG57), not particles, not operators. The photon = the U(1) = Z_96
+rotation generator (the unique neutral rotation link excitation), coupling e = √(4π/137). Each
+force = a Noether-conserved generator action (QG89: U(1)→charge, SU(2)→isospin, SU(3)→color) with
+a D96-normalized coupling (QG162) and the vertex = ⟨f|T^a|i⟩. Classification: gauge forces +
+bosons + couplings DERIVED (QG161/243/162); gravity DERIVED (QG197/222) + ψ primitive; "force =
+matter-particle exchange" REFUTED. Forces share the same ontology as particles and quantum
+numbers: the D96 structure in action. No new primitive; canonical AT unchanged.
+
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-
