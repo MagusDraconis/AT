@@ -4023,6 +4023,25 @@ conserved count DERIVED; actualization rate DERIVED; "energy = actualization rat
 energy as emergent REFUTED. Success criterion: energy is a relabeling — the conserved count
 wearing Joules. No new primitive; canonical AT unchanged.
 
+ResearchY-NP_082 (Electron Mass Anchor Audit, COMPLETE, tests 8/8 PASSED): why does the fermion
+spectrum require the electron mass anchor? Verdict: m_e is NOT the true remaining matter-scale
+boundary — it is a REPLACEABLE unit conversion. All fermion mass ratios are DERIVED (dimensionless:
+m_μ/m_e = Σm²/√occMom = 207.03, m_τ/m_μ = √occMom·λ₂ = 16.842, quarks, Yukawas); the absolute
+scale m_e = 0.511 MeV carries only the DIMENSION (MeV), which no derived D96 invariant can supply
+(span 6.4025, occupancy [4,4,87], count Σρ=1/Σm=0, A = 95·44·87 = 363660 — all dimensionless).
+Removing m_e loses absolute values but NOT the ratios. Replacements: v (another dimensionful
+scale) moves the boundary but doesn't remove it; A/span/occupancy/count (all dimensionless) cannot
+replace m_e. Determination: D (unit conversion only); A (fundamental boundary for m_e), B (hidden
+composite), C (derived scale) REFUTED. The true boundary is the CATEGORY "one dimensionful scale
+must be imported to dimensionalize the dimensionless spectrum"; m_e is a replaceable instance
+(m_e ↔ M_Z ↔ v; QG289: only ONE empirical scale strictly needed). Earliest unavoidable scale = at
+contact with experiment (dimensionful comparison). Classification: mass ratios DERIVED
+(QG173/209); "one dimensionful scale" BOUNDARY (irreducible); m_e as a specific value
+CORRESPONDENCE (replaceable calibration); m_e fundamental/unique boundary REFUTED; m_e composite/
+derived REFUTED. Success criterion: m_e is NOT the true boundary — the true boundary is "one
+dimensionful scale", m_e its replaceable unit-conversion instance. No new primitive; canonical AT
+unchanged.
+
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-

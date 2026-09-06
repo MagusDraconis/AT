@@ -253,6 +253,21 @@ public static class AtlasDataService
                     "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_081.md"),
             ]),
         new(
+            "researchy-np082-electron-mass-anchor",
+            "Why Does the Spectrum Need the Electron Mass? It Doesn't — the Ratios Are Derived, and m_e Is Just the Ruler",
+            "ResearchY · NP_082 (Electron Mass Anchor Audit)",
+            "Every particle mass in the theory is the electron mass times a derived ratio — the muon is 207 times the electron, the tau 3477 times. This audit asks whether the electron mass is a deep boundary, and the answer is deflating but clean: no. All the *ratios* are derived from the theory's spectrum; the electron mass itself only supplies the unit (MeV). It is a ruler, not a law — replaceable by any single scale (the Z boson mass or the theory's frequency scale would do just as well). So the spectrum doesn't 'require' the electron mass specifically; it requires exactly one ruler, and the electron is just the convenient one.",
+            "NP_082 removes m_e and tracks what is lost: absolute values vanish, but every ratio survives (m_μ/m_e = Σm²/√occMom = 207.03, m_τ/m_μ = √occMom·λ₂ = 16.842, quark and Yukawa ratios) — all pure functions of the dimensionless D96 spectrum. The key fact: every derived D96 invariant (span 6.4025, occupancy [4,4,87], Σm = 95, count Σρ=1/Σm=0, A = 95·44·87 = 363660) is DIMENSIONLESS — none carries a mass dimension, so none can substitute for m_e. Replacements: the frequency scale v (M_Pl = v·A³) is another dimensionful scale — it moves the boundary but doesn't remove it; span/occupancy/count cannot replace m_e at all (dimensionless). Determination: D — unit conversion only; A (fundamental boundary), B (hidden composite), C (derived scale) all REFUTED. The true boundary is the CATEGORY 'one dimensionful scale must be imported to dimensionalize the dimensionless spectrum', and m_e is a replaceable instance of it (m_e ↔ M_Z ↔ v; QG289: only one empirical scale is strictly needed). This mirrors NP_081: the count is derived, 'energy' is the count plus one anchor; here the ratios are derived, 'masses' are the ratios plus one anchor (m_e).",
+            "For non-experts: the theory can predict *how heavy* every particle is relative to every other — the muon is 207 electrons, the tau 3477 — without ever knowing the electron's actual mass. The electron's mass only sets the ruler: it tells you what 'one electron' weighs in MeV. Any ruler would work; the electron is just the natural one (the lightest). So the electron mass is not a deep mystery the theory must explain — it is the single unit of measurement the theory takes as given.",
+            "All mass ratios are derived; m_e is the replaceable ruler (unit conversion), not the true boundary.",
+            "“The ratios are the physics; m_e is just the ruler.”",
+            false,
+            [
+                new("ResearchY-NP_082", "ELECTRON MASS ANCHOR AUDIT",
+                    "m_e is a replaceable unit conversion; the true boundary is 'one dimensionful scale'.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_082.md"),
+            ]),
+        new(
             "researchy-np074-quantum-number-ontology",
             "What Are Quantum Numbers? The Symmetry Charges of the D96 Ring: Charge Is the Rotation, Isospin the Doublet, and Only the Color Count Remains a Postulate",
             "ResearchY · NP_074 (Quantum Number Ontology Audit)",

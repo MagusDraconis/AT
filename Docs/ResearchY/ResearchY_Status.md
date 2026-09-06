@@ -176,6 +176,7 @@
 | ResearchY-NP_079 | Scale-Freeness Origin Audit | `NP_NewPhysics/ResearchY-NP_079.md` | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_079_Tests.cs` (10/10 ✅) | COMPLETE |
 | ResearchY-NP_080 | Difference Duality Audit | `NP_NewPhysics/ResearchY-NP_080.md` | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_080_Tests.cs` (11/11 ✅) | COMPLETE |
 | ResearchY-NP_081 | Energy Ontology Audit | `NP_NewPhysics/ResearchY-NP_081.md` | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_081_Tests.cs` (9/9 ✅) | COMPLETE |
+| ResearchY-NP_082 | Electron Mass Anchor Audit | `NP_NewPhysics/ResearchY-NP_082.md` | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_082_Tests.cs` (8/8 ✅) | COMPLETE |
 | ResearchY-S_001 | Post-V2.1 Theory Architecture Synthesis | `S_Synthesis/ResearchY-S_001.md` | `AT.Tests/ResearchY/S_Synthesis/Y_S_001_Tests.cs` (4/4 ✅) | COMPLETE |
 | ResearchY-M_001 | Measurement Origin Audit | `M_Measurement/ResearchY-M_001.md` | `AT.Tests/ResearchY/M_Measurement/Y_M_001_Tests.cs` (7/7 ✅) | COMPLETE |
 | ResearchY-M_002 | Measurement Disturbance Audit | `M_Measurement/ResearchY-M_002.md` | `AT.Tests/ResearchY/M_Measurement/Y_M_002_Tests.cs` (7/7 ✅) | COMPLETE |

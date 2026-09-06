@@ -297,5 +297,9 @@ public sealed class TheoryRegistry
             "Energy is a RELABELING of actualization dynamics — neither fundamental nor emergent. The conserved object is the COUNT (Σρ = 1, Σm = 0, DERIVED); 'energy' is that count renamed (QG89 'energy = actualization rate', a definition) and unit-ized (anchors v, m_e + ħ, c). Noether fails (discrete time). Removing energy language loses nothing derived.",
             AuditStatus.Passed, new DateTime(2026, 9, 6), TheoryLayer.Foundations, TheoryClassification.Boundary,
             ["difference", "iocc"]),
+        new("np082", "Electron Mass Anchor Audit", "Why does the fermion spectrum require the electron mass anchor — is m_e the true boundary?",
+            "m_e is NOT the true remaining matter-scale boundary — it is a REPLACEABLE unit conversion. All mass ratios are DERIVED (dimensionless: m_μ/m_e = 207.03, m_τ/m_μ = 16.842); the absolute scale m_e carries only the DIMENSION (MeV), which no derived D96 invariant supplies. The true boundary is 'one dimensionful scale' (irreducible); m_e is its replaceable instance (m_e ↔ M_Z ↔ v).",
+            AuditStatus.Passed, new DateTime(2026, 9, 6), TheoryLayer.Physics, TheoryClassification.Boundary,
+            ["electron", "iocc"]),
     ];
 }
