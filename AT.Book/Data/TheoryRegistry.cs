@@ -313,5 +313,9 @@ public sealed class TheoryRegistry
             "The frontier map: DERIVED — foundations, D96 structure, information (ΩΛ = 0.6839, Ωm = 0.3161), matter (deficit), particles (resonance classes, mass ratios, quantum numbers, forces), scalar gravity. CORRESPONDENCE (hosted) — energy reading, acceleration, lensing/GW (ψ), clusters, weak/strong couplings, Bose statistics. BOUNDARY — w, temperature, seven inputs + one scale. MISSING — condensed-matter physics and nuclear structure. REFUTED — blackbody, Bullet Cluster.",
             AuditStatus.Passed, new DateTime(2026, 9, 6), TheoryLayer.Correspondence, TheoryClassification.Partial,
             ["difference", "omega-matter"]),
+        new("np086", "Difference Necessity Audit", "Is Difference itself necessary, or could a weaker primitive generate the same ontology?",
+            "Difference is the MINIMAL and UNIQUE primitive — the bare logical possibility of distinction. Not derivable, not replaceable: identity is insufficient (self-identity does not give a ≠ b), relation presupposes distinct relata, count/information/symmetry are downstream. Identity is the logical dual but the preservation relation (conservation, higher); Difference is the generation relation (bottom). No weaker primitive exists.",
+            AuditStatus.Passed, new DateTime(2026, 9, 6), TheoryLayer.Foundations, TheoryClassification.Boundary,
+            ["difference"]),
     ];
 }

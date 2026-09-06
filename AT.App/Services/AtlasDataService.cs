@@ -313,6 +313,21 @@ public static class AtlasDataService
                     "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_085.md"),
             ]),
         new(
+            "researchy-np086-difference-necessity",
+            "Is Difference Really Necessary? Yes — It Is the Minimal Possible Primitive, and Nothing Weaker Works",
+            "ResearchY · NP_086 (Difference Necessity Audit)",
+            "The theory rests on the bare idea that things can differ. This audit asks the boldest question of the whole program: could you drop 'difference' and start from something weaker — identity, relation, counting, information, or symmetry — and still rebuild everything? The answer is a clean no. Every alternative either generates nothing (identity only says a thing is itself, not that two things are distinct), presupposes difference (relations need distinct things; counting needs distinguishable things), or is downstream of it (information and symmetry need distinguishable states). Difference is the smallest seed that produces counting, and counting produces everything else. So it is minimal — and unique — not a choice among options.",
+            "NP_086 removes Difference and tests five replacements. Identity: INSUFFICIENT — self-identity (a = a) does not give a ≠ b; Leibniz's identity of indiscernibles shows that two things are identical unless some property differs, so distinction REQUIRES a difference. Relation: PRESUPPOSES — a relation needs distinct relata, so it either is the ≠ relation (i.e. Difference itself) or assumes things already differ. Count: DOWNSTREAM — you cannot count indistinguishable things; count presupposes distinguishability. Information: DOWNSTREAM — entropy and KL divergence are defined over a distribution on distinguishable states. Symmetry: DOWNSTREAM — a symmetry is a transformation of an already-existing structure. The subtle case is identity: it is the logical dual of difference (a ≠ b ⇔ ¬(a = b)), but it plays the opposite, higher role — identity is the preservation relation (a quantity stays self-identical across a transformation, giving conservation), while Difference is the generation relation at the bottom. So identity cannot replace Difference. Determination: C (minimal) = D (unique); A (derivable) and B (replaceable) REFUTED. No weaker primitive exists — 'distinction' is a synonym of Difference, plurality presupposes it, existence and unity generate nothing. Classification: Difference BOUNDARY (irreducible, minimal + unique).",
+            "For non-experts: can the theory start from something even simpler than 'things can differ'? No. Try 'things are themselves' (identity): that tells you nothing about whether two things are different. Try 'there are two things' (plurality): that already assumes they differ, or they'd be one thing. Try 'counting' or 'information': both need you to tell things apart first. So 'difference' is the smallest seed there is — the one idea you cannot dig below. The theory's foundation is exactly that: one seed (Difference) plus one ruler (η), and nothing smaller.",
+            "Difference is the minimal, unique primitive — identity/relation/count/information/symmetry all fail to replace it.",
+            "“You cannot dig below 'this differs from that.'”",
+            false,
+            [
+                new("ResearchY-NP_086", "DIFFERENCE NECESSITY AUDIT",
+                    "Difference is the minimal, unique, irreducible generative primitive (C = D; A, B refuted).",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_086.md"),
+            ]),
+        new(
             "researchy-np074-quantum-number-ontology",
             "What Are Quantum Numbers? The Symmetry Charges of the D96 Ring: Charge Is the Rotation, Isospin the Doublet, and Only the Color Count Remains a Postulate",
             "ResearchY · NP_074 (Quantum Number Ontology Audit)",

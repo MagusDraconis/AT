@@ -4093,6 +4093,23 @@ derivation); REFUTED — the blackbody (anti-thermal D96) and the Bullet Cluster
 particle). Success criterion: the frontier is complete — explained (structural + cosmological
 core), partial (energy/acceleration/lensing/clusters/couplings), open (w, temperature, 7 inputs,
 and the two MISSING domains condensed matter + nuclear). No new primitive; canonical AT unchanged.
+
+ResearchY-NP_086 (Difference Necessity Audit, COMPLETE, tests 7/7 PASSED): is Difference itself
+necessary, or could a weaker primitive generate the same ontology? Verdict: Difference is the
+MINIMAL and UNIQUE primitive — the bare logical possibility of distinction, the weakest notion
+that generates counting and hence everything downstream. Not derivable (nothing produces it), not
+replaceable: identity INSUFFICIENT (self-identity a=a does not give a≠b; Leibniz's identity of
+indiscernibles makes distinction REQUIRE a difference), relation PRESUPPOSES (distinct relata),
+count/information/symmetry DOWNSTREAM (all presuppose distinguishable states). The subtle case is
+identity, the logical DUAL of difference (a≠b ⇔ ¬(a=b)), which plays the OPPOSITE, HIGHER role:
+identity = preservation (conservation, QG267), Difference = generation (distinction, the bottom).
+Weaker search: none exists — "distinction" = Difference (synonym, QG270), plurality presupposes
+difference, existence/unity generate nothing. Determination: C (minimal) = D (unique); A
+(derivable) and B (replaceable) REFUTED. The founding pair {Difference (generative content), η
+(reading reference)} is genuinely minimal. Classification: Difference BOUNDARY (irreducible,
+minimal + unique, QG270); identity/relation/count/information/symmetry as replacements REFUTED;
+weaker primitive REFUTED. Success criterion: Difference is the minimal possible primitive — the
+irreducible generative seed. No new primitive; canonical AT unchanged.
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-
