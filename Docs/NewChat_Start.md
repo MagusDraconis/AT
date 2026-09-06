@@ -4077,6 +4077,22 @@ trace/traceless duality DERIVED (QG286, given η); metric + PPN γ DERIVED (give
 coordinate convention / hidden background / derivable-from-Difference REFUTED. Success criterion:
 η is a FRAMEWORK boundary — the irreducible, necessary conformal reference structure, complementary
 to and not reducible to Difference. No new primitive; canonical AT unchanged.
+
+ResearchY-NP_085 (Completeness Frontier Audit, COMPLETE, tests 8/8 PASSED): what major physical
+phenomena remain outside the derived ontology? Verdict (the complete frontier map): DERIVED —
+foundations (scale-freeness, criticality μ=1, α=0, duality), structure (D96, occupancy [4,4,87]),
+information (I_occ, ΩΛ = 0.6839, Ωm = 0.3161), matter (deficit), particles (resonance classes,
+mass ratios, quantum numbers, forces), scalar gravity; CORRESPONDENCE (hosted) — the energy
+reading, cosmic acceleration (q₀, z_acc as FRW closures), lensing/frame-dragging/GW (via ψ at GR
+strength), cluster mass (degenerate with ΛCDM), weak/strong couplings, Bose statistics; BOUNDARY —
+the equation of state w, the temperature scale, and seven irreducible inputs ({Difference, η},
+Z2-paired sector, 3-family window [4,8), SU(2)+j=1/2, color count 3) + one dimensionful scale
+(m_e/v) + imported ħ, c, π, Bekenstein 1/4; MISSING — condensed-matter physics (no phonon/
+superconductor/phase-transition derivation) and nuclear structure (no binding-energy/shell-model
+derivation); REFUTED — the blackbody (anti-thermal D96) and the Bullet Cluster (no collisionless
+particle). Success criterion: the frontier is complete — explained (structural + cosmological
+core), partial (energy/acceleration/lensing/clusters/couplings), open (w, temperature, 7 inputs,
+and the two MISSING domains condensed matter + nuclear). No new primitive; canonical AT unchanged.
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-

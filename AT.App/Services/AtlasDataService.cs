@@ -298,6 +298,21 @@ public static class AtlasDataService
                     "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_084.md"),
             ]),
         new(
+            "researchy-np085-completeness-frontier",
+            "The Complete Frontier Map: What the Theory Explains, What It Partially Explains, and What It Leaves Open",
+            "ResearchY · NP_085 (Completeness Frontier Audit)",
+            "After thirty audits tracing the theory from dark energy down to its founding pair, this closing audit draws the map of what is actually covered. The verdict: the theory fully derives the structural and cosmological core — the 96-mode ring, the information content, the dark-energy and matter fractions, matter as a deficit, particles as resonances, the forces, and scalar gravity. It partially explains (by honest correspondence) the energy reading, cosmic acceleration, lensing and gravitational waves, clusters, and the couplings. And it leaves open a short, explicit list: the equation of state, temperature, seven foundational inputs, and — crucially — two entire domains that are still missing: condensed-matter physics and nuclear structure.",
+            "NP_085 inventories seven physics domains. DERIVED: foundations (scale-freeness, criticality, the {ρ, ψ} duality), structure (D96, occupancy [4,4,87]), information (I_occ, ΩΛ = 0.6839, Ωm = 0.3161), matter (deficit), particles (resonance classes, mass ratios, quantum numbers, forces), scalar gravity. CORRESPONDENCE (hosted): the energy reading, cosmic acceleration (q₀, z_acc as FRW closures), lensing/frame-dragging/GW (via ψ at GR strength), cluster mass (degenerate with ΛCDM), the weak/strong couplings, Bose statistics. BOUNDARY: the equation of state w, the temperature scale, and seven irreducible inputs ({Difference, η}, the Z2-paired sector, the 3-family window, SU(2)+j=1/2, the color count 3) plus one dimensionful scale and the imported constants (ħ, c, π, Bekenstein 1/4). MISSING: condensed-matter physics (no phonon/superconductor/phase-transition derivation) and nuclear structure (no binding-energy/shell-model derivation). REFUTED: the blackbody (anti-thermal D96) and the Bullet Cluster (no collisionless particle). The frontier is complete and honestly drawn: the theory explains the structural and cosmological core, corresponds with admitted hosting to the ψ- and energy-dependent observables, and is silent on condensed matter and nuclear physics.",
+            "For non-experts: how much of physics does the theory actually cover? Most of the big picture — the structure of the ring, the dark-energy and matter fractions, particles and forces, and gravity — it derives from its two starting ideas. A few things it gets only 'by correspondence' (it matches them but doesn't derive them from first principles), like the exact energy reading and cosmic acceleration. And two whole areas it doesn't touch at all: condensed matter (materials, superconductors) and nuclear structure (how protons and neutrons bind). This map is the honest scorecard.",
+            "Derived: structure, information, matter, particles, forces, gravity. Missing: condensed matter, nuclear structure.",
+            "“The theory explains the core, corresponds to the rest, and is honest about the frontier.”",
+            false,
+            [
+                new("ResearchY-NP_085", "COMPLETENESS FRONTIER AUDIT",
+                    "Frontier map: DERIVED core, CORRESPONDENCE observables, BOUNDARY inputs, MISSING domains.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_085.md"),
+            ]),
+        new(
             "researchy-np074-quantum-number-ontology",
             "What Are Quantum Numbers? The Symmetry Charges of the D96 Ring: Charge Is the Rotation, Isospin the Doublet, and Only the Color Count Remains a Postulate",
             "ResearchY · NP_074 (Quantum Number Ontology Audit)",

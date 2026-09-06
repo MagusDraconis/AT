@@ -309,5 +309,9 @@ public sealed class TheoryRegistry
             "η is the conformal reference metric — a FRAMEWORK boundary, irreducible and necessary, but not a physics primitive. It defines the trace (ρ), traceless (ψ), conformal flatness, Weyl content, metric g = ρ^(2/d)η, and PPN γ. Removing η breaks the entire geometric reading. Not derivable from Difference: the contraction presupposes η, so {Difference, η} = content + reading, genuinely two.",
             AuditStatus.Passed, new DateTime(2026, 9, 6), TheoryLayer.Foundations, TheoryClassification.Boundary,
             ["difference", "eta"]),
+        new("np085", "Completeness Frontier Audit", "What major physical phenomena remain outside the current derived ontology?",
+            "The frontier map: DERIVED — foundations, D96 structure, information (ΩΛ = 0.6839, Ωm = 0.3161), matter (deficit), particles (resonance classes, mass ratios, quantum numbers, forces), scalar gravity. CORRESPONDENCE (hosted) — energy reading, acceleration, lensing/GW (ψ), clusters, weak/strong couplings, Bose statistics. BOUNDARY — w, temperature, seven inputs + one scale. MISSING — condensed-matter physics and nuclear structure. REFUTED — blackbody, Bullet Cluster.",
+            AuditStatus.Passed, new DateTime(2026, 9, 6), TheoryLayer.Correspondence, TheoryClassification.Partial,
+            ["difference", "omega-matter"]),
     ];
 }
