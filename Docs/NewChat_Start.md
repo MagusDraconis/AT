@@ -4348,6 +4348,21 @@ level below (electromagnetism binds the small scales, gravity the large). Classi
 stability principle DERIVED (NP_071/100); scale-freeness DERIVED (NP_079); the hierarchy EMERGENT
 (the self-similar repetition); specific sizes/energies BOUNDARY (imported); a scale-dependent
 stability mechanism REFUTED. No new primitive; canonical AT unchanged.
+ResearchY-NP_102 (Existence Ontology Audit, COMPLETE, tests 8/8 PASSED): what does it mean for
+something to exist? Verdict: to exist = to be a PERSISTENT, DISTINGUISHABLE structure — a
+Difference (a distinction, NP_086) that endures actualization (stability, NP_094/100). Existence
+has exactly two conditions: (1) DISTINGUISHABILITY (the thing is a Difference, distinct from its
+surroundings — the minimal primitive, NP_086); (2) STABILITY (it persists across ticks rather than
+dissolving — inertia/bound-state persistence). A = B = C: actualization persistence = stable
+resonance (frequency attractor, NP_072) = bound deficit structure (matter = the deficit, NP_071/100)
+— three readings of the one existing thing; D (observational accessibility) is a CONSEQUENCE, not
+the condition (the 95 states pre-exist measurement, M_005). Removing stability dissolves every
+structure into momentary actualizations — only the Difference structure survives, no enduring
+things. The hierarchy (particle → galaxy, NP_101) is the repeated application of this one condition.
+Classification: Difference (the minimal condition) BOUNDARY (NP_086); stability/persistence DERIVED
+(NP_094/100); the existing thing (stable resonance/deficit structure) DERIVED (NP_072/100); the
+hierarchy EMERGENT (NP_101); "existence = observation" REFUTED; "existence as a new primitive"
+REFUTED. No new primitive; canonical AT unchanged.
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-

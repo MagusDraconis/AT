@@ -553,6 +553,21 @@ public static class AtlasDataService
                     "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_101.md"),
             ]),
         new(
+            "researchy-np102-existence-ontology",
+            "What Does It Mean to Exist? A Difference That Refuses to Dissolve",
+            "ResearchY · NP_102 (Existence Ontology Audit)",
+            "After building particles, atoms, planets, and galaxies, one question stands behind them all: what does it mean for any of them to exist? Actualization Theory gives a two-word answer: a thing exists if it is a *difference that endures*. First it must be distinct — set apart from its surroundings, a genuine 'this, not that'. Second it must last — hold its shape across the passing ticks instead of dissolving. That is the whole of existence: distinctness plus persistence. A rock exists because it is set apart from the ground around it, and it keeps being set apart, tick after tick.",
+            "NP_102 inventories particle → atom → molecule → object → planet → galaxy and finds two shared features: DISTINGUISHABILITY (a Difference, the minimal primitive, NP_086) and STABILITY (persistence across ticks, NP_094/100). Determination: A = B = C — actualization persistence = stable resonance (a frequency attractor, NP_072) = bound deficit structure (matter = the deficit, NP_071/100); D (observational accessibility) is a CONSEQUENCE, not the condition (the 95 states pre-exist measurement, M_005). Remove stability and every structure dissolves into momentary actualizations — only the Difference structure survives, with no enduring things. The minimum condition is Difference + stability. Difference BOUNDARY; stability DERIVED; the hierarchy EMERGENT; 'existence = observation' REFUTED.",
+            "For non-experts: a ripple that stays for a moment and fades does not really 'exist' as a thing; a stone that stays, and keeps being a stone, does. Existence needs both: the stone must be set apart from everything else (that is 'difference'), and it must keep on being set apart (that is 'stability'). Distinct and lasting — that is all it takes to be real in this theory.",
+            "Existence = Difference (distinct) + stability (persistent); observability is only a consequence.",
+            "“To exist is to be a difference that endures.”",
+            false,
+            [
+                new("ResearchY-NP_102", "EXISTENCE ONTOLOGY AUDIT",
+                    "Existence = persistent distinguishable structure (Difference + stability); Difference BOUNDARY, stability DERIVED.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_102.md"),
+            ]),
+        new(
             "researchy-np074-quantum-number-ontology",
             "What Are Quantum Numbers? The Symmetry Charges of the D96 Ring: Charge Is the Rotation, Isospin the Doublet, and Only the Color Count Remains a Postulate",
             "ResearchY · NP_074 (Quantum Number Ontology Audit)",

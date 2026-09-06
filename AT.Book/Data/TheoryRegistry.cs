@@ -377,5 +377,9 @@ public sealed class TheoryRegistry
             "ONE universal, scale-free stability principle: a stable structure = a DEFICIT CLUSTERING (matter, NP_071) locked at a GENERATOR-BALANCED FIXED POINT (resonance locking, NP_100). A = B = C = D. Scale-free (AT-F1), it repeats self-similarly over 36 orders of magnitude (particle 10⁻¹⁵ m → galaxy 10²¹ m): particle → atom → molecule → crystal → planet → galaxy. Principle DERIVED; the hierarchy EMERGENT; sizes/energies BOUNDARY.",
             AuditStatus.Passed, new DateTime(2026, 9, 6), TheoryLayer.Structure, TheoryClassification.Emergent,
             ["d96", "difference"]),
+        new("np102", "Existence Ontology Audit", "What does it mean for something to exist inside Actualization Theory?",
+            "To exist = to be a PERSISTENT, DISTINGUISHABLE structure — a Difference that endures actualization. Minimum condition = Difference (distinguishability) + stability (persistence). A = B = C (persistence = stable resonance = bound deficit structure); D (observability) is a consequence. Remove stability → everything dissolves, only Difference survives. Difference BOUNDARY; stability DERIVED; the hierarchy EMERGENT.",
+            AuditStatus.Passed, new DateTime(2026, 9, 6), TheoryLayer.Foundations, TheoryClassification.Boundary,
+            ["difference"]),
     ];
 }
