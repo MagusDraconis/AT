@@ -178,6 +178,21 @@ public static class AtlasDataService
                     "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_076.md"),
             ]),
         new(
+            "researchy-np077-structure-formation",
+            "Can the Deficit Build Galaxies on Its Own? The Seeds and Growth Are Derived, But the Halos Need One Extra Assumption",
+            "ResearchY · NP_077 (Structure Formation Audit)",
+            "Now that dark matter is the deficit, the question is whether that deficit can actually build the cosmic web — halos, galaxy profiles, clusters — without any particle dark matter. The audit's answer is halfway: the raw material is derived (Poisson seeds and linear growth follow directly from the counting measure), but the finished halos need one extra assumption — the particular 'abundance law' (α = 0) that makes rotation curves flat. That law is a symmetry selection, not something the dynamics force. So the deficit can build structure, but only with that assumption bolted on.",
+            "NP_077 starts from m = ρ̄ − ρ and evolves it under critical branching μ = 1. DERIVED: the Poisson seed δ_i = 1/√⟨N⟩, the scale-free variance Var(2k)/Var(k) = 2, the pressureless deficit dust T_μν = ρ_m v_μ v_ν, linear growth δ ∝ a, and the scalar tilt n_s = 0.96497 (QG231/237). NON-DERIVED: the profile shape — flat rotation (v² ≈ const ⇒ M ∝ r ⇒ ρ ∝ r⁻², the singular isothermal sphere) requires the α = 0 log-deficit abundance law, which G4-RHO Phase 0 shows is a SYMMETRY SELECTION (PREFERRED/BOUNDARY), not a dynamical attractor (conservation gives the repulsive ρ ∝ r⁻², scale-freeness gives a continuum). The natural SIS profile is steeper than the NFW cusp (r⁻¹) and singular at the center (no core); the NFW concentration is FITTED; clusters match ΛCDM degenerately (Coma 6.7× baryon). Determination: B — structure forms only with extra assumptions; A and C REFUTED.",
+            "For non-experts: can the theory's 'missing mass' actually assemble galaxies and clusters by itself? Halfway, yes: the theory derives the initial seeds (tiny random over-densities) and how they grow over time. But to get the actual shape of a galaxy — the flat spin curve we observe — it has to add one assumption: that the missing mass is distributed in a particular 'logarithmic' way (equal per octave). That choice is the simplest symmetric option, but nothing in the dynamics forces it. So the galaxies form, but only with that one assumption in place.",
+            "Seeds and growth are derived; the flat-rotation halo profile needs the α = 0 abundance-law assumption.",
+            "“The deficit can build the web, but only after you hand it the symmetry.”",
+            false,
+            [
+                new("ResearchY-NP_077", "STRUCTURE FORMATION AUDIT",
+                    "Seed + growth DERIVED; halos/profiles/clusters need the α = 0 assumption (B).",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_077.md"),
+            ]),
+        new(
             "researchy-np074-quantum-number-ontology",
             "What Are Quantum Numbers? The Symmetry Charges of the D96 Ring: Charge Is the Rotation, Isospin the Doublet, and Only the Color Count Remains a Postulate",
             "ResearchY · NP_074 (Quantum Number Ontology Audit)",

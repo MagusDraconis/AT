@@ -3928,6 +3928,25 @@ REFUTED; deficit+ψ partition DERIVED (NP_066/067). Success criterion: Dark Matt
 mass) = DEFICIT-ONLY; ψ is the graviton, not a dark-matter component. No new primitive;
 canonical AT unchanged.
 
+ResearchY-NP_077 (Structure Formation Audit, COMPLETE, tests 9/9 PASSED): can the deficit
+field naturally produce halos, galaxy profiles, and cluster structure without particle
+dark matter? Verdict: B — the deficit forms structure only with EXTRA ASSUMPTIONS. The
+seed and linear growth are DERIVED (QG231): Poisson seed δ_i = 1/√⟨N⟩, scale-free critical
+variance Var(2k)/Var(k)=2, pressureless deficit dust T_μν = ρ_m v_μ v_ν, linear growth
+δ ∝ a, scalar tilt n_s = 0.96497 (0.007%). But the profile shape is NOT dynamical: flat
+rotation (v² ≈ const ⇒ M ∝ r ⇒ ρ ∝ r⁻², the SIS) requires the α = 0 log-deficit abundance
+law, which is a SYMMETRY SELECTION (PREFERRED/BOUNDARY), not a dynamical attractor
+(G4-RHO Phase 0: conservation gives the repulsive ρ ∝ r⁻², scale-freeness gives a
+continuum). The natural deficit profile is the SIS ρ ∝ r⁻² — STEEPER than the NFW inner
+cusp (r⁻¹) and singular at the center (no core) — predicting a cuspy non-cored halo; NFW
+concentration is FITTED (ClusterMassAudit); clusters match ΛCDM only degenerately (Coma
+M_vir = 8.75×10¹⁴ M☉, 6.7× baryon, R_vir/NFW fitted). Determination: A ("naturally forms
+halos") REFUTED; B ("extra assumptions") YES; C ("fails structure formation") REFUTED.
+Classification: seed + linear growth DERIVED (QG231); scale-free critical clustering
+DERIVED (QG227/228); α=0 abundance law BOUNDARY (symmetry selection, G4-RHO);
+flat-rotation / M∝r halo profile CORRESPONDENCE (G4-ME); NFW/cored concentration FITTED.
+No new primitive; canonical AT unchanged.
+
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-

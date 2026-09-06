@@ -277,5 +277,9 @@ public sealed class TheoryRegistry
             "ψ (the massless spin-2 graviton) contributes ZERO dark-matter mass: it produces propagating waves only, forms no bound configurations, and supplies no mass density (w = 1/3, Ω_gw ≈ 10⁻⁹ ≪ Ωm). ψ's true role is to restore lensing so the deficit's mass is visible. Dark Matter is DEFICIT-ONLY; ψ is the graviton, not a dark-matter component.",
             AuditStatus.Passed, new DateTime(2026, 9, 6), TheoryLayer.Physics, TheoryClassification.Refuted,
             ["families", "occupancy"]),
+        new("np077", "Structure Formation Audit", "Can the deficit field naturally produce halos, galaxy profiles, and cluster structure without particle dark matter?",
+            "The deficit produces the SEED and LINEAR GROWTH derivatively (Poisson δ_i = 1/√⟨N⟩, scale-free variance, δ ∝ a, n_s = 0.96497 — QG231/237), but it forms halos/profiles/clusters only with EXTRA ASSUMPTIONS: the flat-rotation SIS profile (v²≈const ⇒ M∝r ⇒ ρ∝r⁻²) requires the α=0 log-deficit abundance law (a symmetry selection, not a dynamical attractor — G4-RHO). The SIS is steeper than the NFW cusp and singular; NFW concentration is fitted. Determination: B.",
+            AuditStatus.Passed, new DateTime(2026, 9, 6), TheoryLayer.Cosmology, TheoryClassification.Partial,
+            ["omega-matter", "iocc"]),
     ];
 }
