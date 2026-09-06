@@ -373,6 +373,21 @@ public static class AtlasDataService
                     "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_089.md"),
             ]),
         new(
+            "researchy-np090-network-ontology",
+            "What Is the D96 Network, Really? Distinctions Joined by Links, Carrying Modes and Geometry",
+            "ResearchY · NP_090 (D96 Network Ontology Audit)",
+            "After several audits on what the network *does*, this one asks what the network *is*. The answer is clean: it is the organized difference structure. Its nodes are distinctions — the basic 'this differs from that' events made actual (a difference is an actualization). Its links are the connections between distinctions — a link says *which* distinctions are neighbours, a second-order difference. And what travels on it are two things: the resonance modes (the particles, one ring's worth) and the two faces of the connectivity itself — a scalar face that becomes the metric, and a tensor face that becomes the curvature. So geometry is not a container the network sits in; it is the network's own shape.",
+            "NP_090 inventories every network object. A node = a distinction / actualization event (a Q-event IS a before→after difference, QG29/270); a link = the adjacency, the symmetric rank-2 connectivity A_ij = A_ji (which distinctions are neighbours, NP_080). Concrete counts: 96 nodes, each with 12 links (±1..±6), for 576 links total and a Laplacian trace Σλ = 2E = N·d = 1152. The 95 positive modes are the particles (resonance classes of ONE D96 ring); the tensor-product network (D96⊗D96⊗D96) supplies the 3D geometry (p = 3), not more particles. The metric g = ρ^(2/d)η is the TRACE face of the connectivity — geometry is emergent from connectivity, not embedded — and ψ (the traceless face) is the curvature. Interpretations: A (nodes = D96 structures) is circular and refuted; B (Difference events) = C (actualizations) is the answer; D (nodes = occupancies) is refuted. Chain: Difference → D96 → Network → Geometry → Matter.",
+            "For non-experts: picture a set of little 'differences' (this differs from that) — those are the nodes. Connect the neighbouring ones — those are the links. On this net, the standing waves are the particles, and the shape of the net itself is space. So space is not an empty box the net sits inside; space *is* the net, seen from the outside.",
+            "Nodes = distinctions; links = adjacency; what propagates = modes (particles) + the two faces ρ and ψ.",
+            "“The network is not in space — the network is space.”",
+            false,
+            [
+                new("ResearchY-NP_090", "D96 NETWORK ONTOLOGY AUDIT",
+                    "Nodes=distinctions, links=adjacency, propagation=modes + ρ/ψ; geometry emergent.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_090.md"),
+            ]),
+        new(
             "researchy-np074-quantum-number-ontology",
             "What Are Quantum Numbers? The Symmetry Charges of the D96 Ring: Charge Is the Rotation, Isospin the Doublet, and Only the Color Count Remains a Postulate",
             "ResearchY · NP_074 (Quantum Number Ontology Audit)",

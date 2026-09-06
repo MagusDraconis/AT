@@ -329,5 +329,9 @@ public sealed class TheoryRegistry
             "O(3) is APPROXIMATE ONLY. The free lattice dispersion ω² = k² − (k_x⁴+k_y⁴+k_z⁴)/12 + … is isotropic to leading order (k²), but the cubic correction breaks O(3) with an O((ka)²) anisotropy that is suppressed yet never vanishes. The theory is discrete (N=96), so the exact continuum (a→0) is never reached; the 2l+1 degeneracies split, and nuclear structure remains missing.",
             AuditStatus.Passed, new DateTime(2026, 9, 6), TheoryLayer.Structure, TheoryClassification.Emergent,
             ["d96", "occupancy"]),
+        new("np090", "D96 Network Ontology Audit", "What physically is the D96 network — what are the nodes, what are the links, and what propagates?",
+            "The D96 network is the ORGANIZED DIFFERENCE STRUCTURE. Nodes = distinctions (Difference events = actualizations); links = the adjacency (the symmetric rank-2 connectivity A_ij = A_ji); what propagates = the 95 resonance modes (particles) and the two faces ρ (trace → metric) and ψ (traceless → curvature). 96 nodes × degree 12 = 576 links, trace Σλ = 1152. Particles are modes of one D96 ring; geometry is emergent from connectivity.",
+            AuditStatus.Passed, new DateTime(2026, 9, 6), TheoryLayer.Structure, TheoryClassification.Derived,
+            ["d96", "difference"]),
     ];
 }

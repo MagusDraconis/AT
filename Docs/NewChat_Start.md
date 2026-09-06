@@ -4159,6 +4159,23 @@ the cubic anisotropy is suppressed as (ka)² but never eliminated". Classificati
 O(3) EMERGENT (leading-order isotropy); exact O(3) BOUNDARY (the unattained continuum); the
 nuclear-shell rescue REFUTED (2l+1 split). Success criterion: rotational symmetry is C — approximate
 only — so nuclear structure remains missing. No new primitive; canonical AT unchanged.
+
+ResearchY-NP_090 (D96 Network Ontology Audit, COMPLETE, tests 8/8 PASSED): what physically is the
+D96 network — nodes, links, what propagates? Verdict: the D96 network is the ORGANIZED DIFFERENCE
+STRUCTURE. NODES = distinctions (Difference events = actualizations: a Q-event IS a before→after
+difference, QG29/270) — B = C; LINKS = the adjacency (the symmetric rank-2 connectivity A_ij = A_ji,
+a second-order difference "which distinctions are neighbours", NP_080); WHAT PROPAGATES = the 95
+resonance modes (the particles) AND the two faces of the connectivity — the trace ρ (scalar/count
+face → the metric g = ρ^(2/d)η) and the traceless ψ (tensor/curvature face). Concrete: 96 nodes ×
+degree 12 (±1..±6) = 576 links, trace Σλ = 2E = N·d = 1152. Particles are modes of ONE D96 ring
+(the seed); the tensor-product network (D96⊗D96⊗D96) supplies the 3D geometry (p=3), NOT more
+particles. Geometry is EMERGENT from connectivity (g = ρ^(2/d)η is the trace face), not embedded.
+Chain: Difference → D96 → Network → Geometry → Matter (the deficit m = ρ̄−ρ). Interpretations: A
+(nodes = D96 structures) REFUTED (circular); B = C YES; D (nodes = occupancies) REFUTED. Success
+criterion: what exists = distinctions (nodes); what connects = the adjacency (links); what
+propagates = the 95 modes + the two faces ρ/ψ. Classification: all DERIVED (nodes from Difference,
+links from the difference structure, geometry from the trace, matter from the deficit); A/D REFUTED.
+No new primitive; canonical AT unchanged.
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-
