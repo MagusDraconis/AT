@@ -393,5 +393,9 @@ public sealed class TheoryRegistry
             "YES — Difference is the PARENT conservation law (A = B = C); D (independent) is REFUTED. Every conserved quantity projects from the indestructible Difference structure: count (Σρ=1) = the measure, information = the structure, momentum/charge = the Noether symmetries (1+3+8 = 12 generators). Existence is NOT conserved (can cease). Remove Difference → everything breaks. Conservation of Difference BOUNDARY; projections DERIVED.",
             AuditStatus.Passed, new DateTime(2026, 9, 6), TheoryLayer.Foundations, TheoryClassification.Boundary,
             ["difference"]),
+        new("np106", "Actualization Necessity Audit", "Why must Difference actualize?",
+            "Difference must actualize because a Difference is an ACT, not a state: a 'static Difference' is a contradiction (an un-drawn distinction is no distinction). Actualization is a LOGICAL NECESSITY (C); not an independent primitive (B refuted); only the discreteness of the tick is the boundary residue. Remove actualization → nothing survives. The minimal reason: a distinction must be drawn to be a distinction.",
+            AuditStatus.Passed, new DateTime(2026, 9, 6), TheoryLayer.Foundations, TheoryClassification.Boundary,
+            ["difference"]),
     ];
 }

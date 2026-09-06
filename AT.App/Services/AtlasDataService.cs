@@ -613,6 +613,21 @@ public static class AtlasDataService
                     "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_105.md"),
             ]),
         new(
+            "researchy-np106-actualization-necessity",
+            "Why Does Anything Happen? Because a Difference Is a Doing, Not a Thing",
+            "ResearchY · NP_106 (Actualization Necessity Audit)",
+            "Here is the deepest question a theory can ask: given that difference exists and can never vanish, why does anything *happen* — why is reality a stream of events rather than a frozen arrangement of distinctions? Actualization Theory's answer is almost startling in its simplicity: difference is not a thing that sits still, it is a doing. A distinction is the very act of drawing a line between 'this' and 'that'. A line never drawn is no line at all. So the distinctions do not merely exist — they are, moment by moment, being drawn. That drawing is what we call the tick, and it is why the world moves.",
+            "NP_106 removes actualization and finds that a universe of Difference with no actualization is incoherent: counting, information, structure, and existence all fail, because a distinction that is never drawn is no distinction. A 'static Difference' is a contradiction — it collapses into undifferentiated unity (refuted by NP_104). Determination: C (logical necessity) — Difference necessarily enacts the distinction, and that enactment IS actualization; A (the act is derived) and D (the dynamics is emergent) are partial; B (independent primitive) is REFUTED. Only the discreteness of the tick (one outcome per tick) is the BOUNDARY residue (QG_011). The minimal reason: a distinction must be drawn to be a distinction.",
+            "For non-experts: a boundary on a map is not a physical thing sitting in the landscape — it is an act of drawing, done over and over. Difference is like that: it is not a frozen thing but a continuous doing. The fact that the universe keeps 'doing' — keeps changing, tick after tick — is not an extra mystery on top of difference; it IS difference, being itself.",
+            "Difference is an act, not a state; actualization is its logical necessity (the tick); only discreteness is boundary.",
+            "“A difference is a doing, and that doing is the tick.”",
+            false,
+            [
+                new("ResearchY-NP_106", "ACTUALIZATION NECESSITY AUDIT",
+                    "Difference must actualize (it is an act); actualization is a logical necessity, only the tick's discreteness is boundary.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_106.md"),
+            ]),
+        new(
             "researchy-np074-quantum-number-ontology",
             "What Are Quantum Numbers? The Symmetry Charges of the D96 Ring: Charge Is the Rotation, Isospin the Doublet, and Only the Color Count Remains a Postulate",
             "ResearchY · NP_074 (Quantum Number Ontology Audit)",

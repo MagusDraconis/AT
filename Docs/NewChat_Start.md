@@ -4406,6 +4406,20 @@ the conserved charges are its generators. Classification: Conservation of Differ
 indestructibility of the primitive, NP_104); count/information/momentum/charge conservation DERIVED
 (projections); "conservation is independent" (D) REFUTED; "existence is conserved" REFUTED. No new
 primitive; canonical AT unchanged.
+ResearchY-NP_106 (Actualization Necessity Audit, COMPLETE, tests 8/8 PASSED): why must Difference
+actualize? Verdict: a Difference is an ACT of distinguishing, not a static state — "static
+Difference" is a CONTRADICTION (an un-drawn distinction is no distinction; it collapses into
+undifferentiated unity, refuted by NP_104). Therefore actualization is a LOGICAL NECESSITY (C) of
+Difference: to differ is to enact the distinction, and the tick is that enactment. Actualization is
+NOT an independent primitive (B refuted) — it is the dynamic face of Difference (A partial: the act
+is derived; D partial: the dynamics is emergent). Removing actualization leaves nothing: no
+counting, information, structure, or existence — because actualization is what Difference IS, not an
+addition to it. Only the DISCRETENESS of the tick (one outcome per tick) is the BOUNDARY residue
+(the deepest single boundary, QG_011). The minimal reason a conserved Difference produces events:
+a distinction must be drawn to be a distinction. Classification: actualization as the act of
+distinguishing DERIVED (logical necessity, C); the tick's discreteness BOUNDARY (QG_011); the
+dynamics EMERGENT (D); "actualization is an independent primitive" (B) REFUTED; "a static
+Difference is possible" REFUTED. No new primitive; canonical AT unchanged.
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-
