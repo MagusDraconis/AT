@@ -281,5 +281,9 @@ public sealed class TheoryRegistry
             "The deficit produces the SEED and LINEAR GROWTH derivatively (Poisson δ_i = 1/√⟨N⟩, scale-free variance, δ ∝ a, n_s = 0.96497 — QG231/237), but it forms halos/profiles/clusters only with EXTRA ASSUMPTIONS: the flat-rotation SIS profile (v²≈const ⇒ M∝r ⇒ ρ∝r⁻²) requires the α=0 log-deficit abundance law (a symmetry selection, not a dynamical attractor — G4-RHO). The SIS is steeper than the NFW cusp and singular; NFW concentration is fitted. Determination: B.",
             AuditStatus.Passed, new DateTime(2026, 9, 6), TheoryLayer.Cosmology, TheoryClassification.Partial,
             ["omega-matter", "iocc"]),
+        new("np078", "Alpha=0 Necessity Audit", "Why must the universe select α=0 instead of α≠0?",
+            "α=0 is the UNIQUE point where flat rotation (v² ∝ r^(−α), slope 0), stability (equal-deficit-per-octave), criticality (μ=1 ⟺ α=0), and maximum entropy coincide. It is DERIVED (unique) as a selection fixed point, NOT a dynamical attractor (conservation → repulsive ρ∝r⁻², scale-freeness → continuum). The conditioning input is scale-freeness (AT-F1 indifference principle) — the FINAL boundary.",
+            AuditStatus.Passed, new DateTime(2026, 9, 6), TheoryLayer.Cosmology, TheoryClassification.Derived,
+            ["omega-matter", "iocc"]),
     ];
 }

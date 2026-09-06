@@ -193,6 +193,21 @@ public static class AtlasDataService
                     "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_077.md"),
             ]),
         new(
+            "researchy-np078-alpha-zero-necessity",
+            "Why α = 0? The Single Symmetry Behind Flat Rotation, Criticality, and the Cosmic Web",
+            "ResearchY · NP_078 (Alpha=0 Necessity Audit)",
+            "Every galaxy's flat rotation curve, the linear mass–radius law, and the scale-free cosmic web all trace to one number: α = 0, the 'equal-deficit-per-octave' exponent. This audit asks why the universe picks exactly that value. The answer: α = 0 is the only point where four requirements line up at once — a flat rotation curve, a stable (non-diverging, non-concentrating) deficit, critical branching (μ = 1), and maximum entropy. Every other α breaks one of them. So α = 0 is derived — but only after you accept one deep assumption: that the primitives carry no intrinsic scale (the indifference principle). That assumption is the final boundary.",
+            "NP_078 scans α ∈ [−2, +2]. The abundance deficit m ∝ r^(−α) gives a field a ∝ r^(−α−1) and a rotation proxy v² = r·|a| ∝ r^(−α); the enclosed-mass exponent is 1 − α. Only α = 0 gives a flat curve (slope 0) and M ∝ R (exponent 1). For α < 0 the deficit is outer-dominant (diverges); for α > 0 it is core-dominant (concentrates); only α = 0 is equal-per-octave (the unique stable, scale-free point — QG206). By NP_070, μ = 1 ⟺ α = 0, so criticality and flat rotation are the same scale-freeness. α = 0 is DERIVED (unique) as a selection fixed point (RG fixed point of the octave renormalization), NOT a dynamical attractor — G4-RHO Phase 0 shows conservation gives the repulsive ρ ∝ r⁻² and scale-freeness a continuum, so no equation of motion forces α = 0. This reconciles QG206 ('derived') with G4-RHO ('not dynamical'): derived by selection criteria, not by dynamics. Earliest source = scale-freeness = the AT-F1 indifference principle, the FINAL boundary. Classification: α=0 flat rotation DERIVED; μ=1⟺α=0 DERIVED; scale-freeness BOUNDARY; α=0 dynamical attractor REFUTED.",
+            "For non-experts: galaxies spin flat because the theory's 'missing mass' is spread evenly across every octave of its ring — that is the single choice α = 0. This audit shows that choice is not arbitrary: it is the only option that is at once stable (not piling up or clumping), flat (the observed spin curve), critical (the universe doesn't blow up or die out), and maximally fair (even spread). But it all rests on one deep assumption — that the theory's basic pieces have no built-in size or scale. That 'no built-in scale' is the one thing the theory takes as given.",
+            "α = 0 is derived (uniquely); scale-freeness (no intrinsic scale) is the final boundary.",
+            "“α = 0 is the only note in tune — once you grant there is no preferred pitch.”",
+            false,
+            [
+                new("ResearchY-NP_078", "ALPHA=0 NECESSITY AUDIT",
+                    "α=0 DERIVED (unique selection fixed point); scale-freeness = AT-F1 = the final boundary.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_078.md"),
+            ]),
+        new(
             "researchy-np074-quantum-number-ontology",
             "What Are Quantum Numbers? The Symmetry Charges of the D96 Ring: Charge Is the Rotation, Isospin the Doublet, and Only the Color Count Remains a Postulate",
             "ResearchY · NP_074 (Quantum Number Ontology Audit)",

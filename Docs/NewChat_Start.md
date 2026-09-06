@@ -3947,6 +3947,24 @@ DERIVED (QG227/228); α=0 abundance law BOUNDARY (symmetry selection, G4-RHO);
 flat-rotation / M∝r halo profile CORRESPONDENCE (G4-ME); NFW/cored concentration FITTED.
 No new primitive; canonical AT unchanged.
 
+ResearchY-NP_078 (Alpha=0 Necessity Audit, COMPLETE, tests 9/9 PASSED): why must the
+universe select α=0 instead of α≠0? Verdict: α=0 is the UNIQUE point where four
+independent criteria coincide — flat rotation (v² ∝ r^(−α), slope 0 only at α=0),
+stability (equal-deficit-per-octave; α<0 diverges, α>0 concentrates), criticality
+(μ=1 ⟺ α=0, NP_070), and maximum entropy (uniform per-octave). The α-scan [−2,+2]:
+only α=0 gives a flat curve and M ∝ R (exponent 1−α = 1); every α≠0 breaks one. α=0 is
+DERIVED (unique) as a SELECTION fixed point (the RG fixed point of the octave
+renormalization), NOT a dynamical attractor (no equation of motion produces it — G4-RHO:
+conservation → repulsive ρ∝r⁻², scale-freeness → continuum). Reconciliation: QG206
+"derived" = uniquely selected by criteria; G4-RHO "not dynamical" = no equation of motion
+forces it — compatible. Earliest source of α=0 = scale-freeness (renormalization
+invariance) = the indifference principle AT-F1 ("primitives carry no intrinsic scale").
+Classification: α=0 flat rotation DERIVED (QG206); μ=1⟺α=0 criticality DERIVED
+(QG7/NP_070); α=0 unique stable (RG fixed) point DERIVED (QG206); scale-freeness BOUNDARY
+(AT-F1, the FINAL boundary); α=0 as a dynamical attractor REFUTED (G4-RHO); canonical α≠0
+universe REFUTED. Success criterion: scale-freeness is the FINAL BOUNDARY (not derived);
+α=0 is DERIVED (uniquely) given it. No new primitive; canonical AT unchanged.
+
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-
