@@ -241,5 +241,9 @@ public sealed class TheoryRegistry
             "The ρ-only metric is CONFORMALLY FLAT (γ = −1), cancelling the null-geodesic prefactor (1+γ)/2 = 0 — no lensing — while potential effects (g₀₀) survive. The minimal fix is the ψ tensor sector (second primitive), restoring γ = +1 ⇒ full lensing. Determination: B (missing tensor sector), not fatal.",
             AuditStatus.Passed, new DateTime(2026, 9, 6), TheoryLayer.Cosmology, TheoryClassification.Correspondence,
             ["omega-matter", "d96"]),
+        new("np068", "Psi Ontology Audit", "What is ψ physically?",
+            "ψ is the spin-2 (Weyl-curvature) graviton — the tensor (traceless) face of the founding Difference — a PRIMITIVE physical degree of freedom (massless spin-2, 2 polarizations), carrying lensing, frame dragging, and gravitational waves. Not auxiliary, not hosted, not emergent (spin-0 cannot source spin-2).",
+            AuditStatus.Passed, new DateTime(2026, 9, 6), TheoryLayer.Correspondence, TheoryClassification.Boundary,
+            ["omega-matter", "d96"]),
     ];
 }

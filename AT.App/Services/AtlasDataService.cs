@@ -148,6 +148,21 @@ public static class AtlasDataService
                     "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_064.md"),
             ]),
         new(
+            "researchy-np068-psi-ontology",
+            "ψ Is the Spin-2 Graviton, the Tensor Face of Difference: the One Missing Primitive That Carries Lensing, Frame Dragging, and Gravitational Waves",
+            "ResearchY · NP_068 (Psi Ontology Audit)",
+            "What is ψ physically? It is the theory's second primitive — the massless spin-2 field (the graviton), which is the traceless (Weyl-curvature) face of the founding Difference, complementing the scalar ρ (trace) face. ρ carries the conformal part of the metric (potential, rotation, matter fraction); ψ carries the non-conformal curvature that bends light (γ=+1), drags frames (h_0i), and propagates as gravitational waves (2 polarizations). ψ is a primitive: it cannot emerge from the scalar ρ (spin-0 cannot source spin-2), it is not hosted from GR (its necessity is derived), and it is not auxiliary (it carries real observables).",
+            "NP_068 inventories ψ and tests its status. ψ appears as: the metric completion g₀₀ = −ρ^(2/d)e^(2ψ) (QG207), lensing γ=+1 (QG212), frame dragging h_0i (QG186), and GW polarization spin-2 (QG43/44). Removing ψ breaks lensing (γ→−1), frame dragging (h_0i→0), and GW — but the scalar potential effects (g₀₀) survive. Interpretations: A) geometry correction (partial), B) information field (no — ρ is the information face), C) curvature field (yes — the Weyl/traceless part), D) physical d.o.f. (yes — the graviton); so ψ = C = D realized as A. Status: emergent REFUTED (no scalar saturation reaches spin-2, QG19), primitive YES (QG223). The Difference Duality (QG286/301) refines it: ρ = trace, ψ = traceless — two faces of the ONE Difference.",
+            "For non-experts: the theory's first ingredient, ρ, describes how much 'stuff' is packed into each part of the universe — it explains gravity's pull. The second ingredient, ψ, is the missing partner that explains gravity's subtler effects: why light bends around massive objects, why spinning objects drag space around them, and why ripples in spacetime (gravitational waves) travel. ψ is not something you can build out of ρ — it is a genuine extra ingredient, the same one that general relativity calls the graviton.",
+            "ψ = the spin-2 graviton (the tensor face of Difference) — a primitive, not emergent, carrying lensing, frame dragging, and GW.",
+            "“ρ pulls; ψ bends, drags, and ripples.”",
+            false,
+            [
+                new("ResearchY-NP_068", "PSI ONTOLOGY AUDIT",
+                    "ψ is the spin-2 Weyl-curvature graviton — a primitive physical degree of freedom, the tensor face of Difference.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_068.md"),
+            ]),
+        new(
             "researchy-np067-lensing-sector",
             "Why the Deficit Bends Galaxies but Not Light: the ρ-Only Metric Is Conformally Flat (γ = −1), and Only the ψ Tensor Sector Restores Lensing",
             "ResearchY · NP_067 (Lensing Sector Audit)",

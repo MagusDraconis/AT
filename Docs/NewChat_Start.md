@@ -3795,6 +3795,24 @@ correspondence-only. Classification: conformal metric (γ=−1) DERIVED; no-lens
 DERIVED; ψ tensor sector BOUNDARY (second primitive); lensing restored by ψ CORRESPONDENCE (GR
 strength); fatal failure REFUTED. No new primitive; canonical AT unchanged.
 
+ResearchY-NP_068 (Psi Ontology Audit, COMPLETE, tests 8/8 PASSED): what is ψ physically?
+Verdict: ψ is the SPIN-2 (WEYL-CURVATURE) GRAVITON — the tensor (traceless) face of the founding
+Difference — a PRIMITIVE physical degree of freedom (massless spin-2, 2 polarizations), not
+auxiliary, not hosted, not emergent. Inventory: ψ = metric completion (g₀₀ = −ρ^(2/d)e^(2ψ),
+QG207), lensing (γ=+1, QG212), frame dragging (h_0i, QG186), GW polarization (spin-2, QG43/44).
+Remove ψ → lensing (γ→−1), frame dragging (h_0i→0), and GW break, but the scalar potential
+effects (g₀₀) survive. Interpretations: A) geometry correction PARTIAL (completes the metric,
+but a full sector); B) information field NO (ρ is the information face; ψ is the geometric
+face); C) curvature field YES (the Weyl/traceless curvature conformal flatness lacks); D)
+physical d.o.f. YES (the graviton). ψ = C = D realized as A; not B. Status: auxiliary NO (real
+observables), hosted NO (necessity derived — spin-0 cannot source spin-2, QG19), emergent
+REFUTED ("no scalar saturation reaches spin 2"), primitive YES (second primitive, QG223).
+Difference Duality (QG286/301) refines ψ as the TENSOR FACE of the ONE Difference: ρ = trace
+(conformal, Weyl=0), ψ = traceless (Weyl curvature) — together they complete the metric.
+Classification: ψ graviton PRIMITIVE (QG223); emergent route REFUTED (QG19); Difference Duality
+DERIVED (QG286/301); information-field reading REFUTED; lensing/frame/GW CORRESPONDENCE (GR
+strength). No new primitive; canonical AT unchanged.
+
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-
