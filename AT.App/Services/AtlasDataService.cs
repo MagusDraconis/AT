@@ -148,6 +148,21 @@ public static class AtlasDataService
                     "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_064.md"),
             ]),
         new(
+            "researchy-np065-dark-matter-ontology",
+            "Dark Matter Is the Matter Deficit, Not a Particle: Ωm = 0.3161 Is the Realized-Entropy Fraction, and It Has a Derived Gravitational Role the Descriptive Dark-Energy Surplus Lacks",
+            "ResearchY · NP_065 (Dark Matter Ontology Audit)",
+            "The complement of the dark-energy descriptor is the matter side. Ωm = H/ln K = 0.3161 is the realized-entropy fraction — read as the matter deficit m = ρ̄ − ρ (QG194), an effect not a particle. The deficit is conserved (Σm = 0), and it is the under-occupancy of the counting measure (positive in the sparse low octaves, negative in the crowded top octave). Its decisive property: the deficit SOURCES gravity — a DERIVED role (flat rotation α=0, M∝R) — whereas the dark-energy surplus merely describes. So dark matter carries stronger physical meaning than dark energy, even though both share the same hosted energy reading.",
+            "NP_065 inventories Ωm, the matter deficit, and its conservation. Ωm = H/ln K = 0.3161 matches the observed Ωm = 0.3153 to 0.26% (the same order as ΩΛ's 0.12%). Readings: the realized-state fraction (C) equals the bookkeeping complement (D) equals the matter deficit (B); physical matter (A) is the hosted energy (E_def = m, QG89) plus a DERIVED gravitational role. Ontology: matter = deficit (QG194, ∇m = −∇ρ, conserved), T_μν = (ρ̄−ρ)v_μv_ν (QG195, recovered without defining matter), flat rotation α=0 (QG206), M∝R (QG184) — all DERIVED, an effect not a particle, with no CMB/structure-formation role (QG229). The asymmetry is the result: the deficit gravitates (derived), the surplus describes (no derived effect). Caveats: the energy reading is hosted for both; 'dark matter' as a non-baryonic particle is REFUTED; the baryonic/dark split is BOUNDARY.",
+            "For non-experts: the same ring that produces the dark-energy number also produces a matter number — 0.3161 — matching observation. The audits asked whether that matter is a real thing or just a bookkeeping remainder. The answer is the more interesting middle: it is not a particle of any kind, but it is not empty bookkeeping either. It is the 'missing' occupancy — the under-filled parts of the ring — and that missing occupancy has a real physical job: it bends space (producing the flat galaxy-rotation curves the theory reproduces). So dark matter is a gravitational effect of the count structure, which is more physically real than dark energy, which only describes the count structure.",
+            "Dark Matter = the matter deficit m = ρ̄ − ρ, an effect with a derived gravitational role — stronger than the descriptive dark-energy surplus.",
+            "“Dark matter bends; dark energy describes.”",
+            false,
+            [
+                new("ResearchY-NP_065", "DARK MATTER ONTOLOGY AUDIT",
+                    "Ωm = H/ln K = 0.3161 is the matter deficit (an effect, not a particle), with a DERIVED gravitational role.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_065.md"),
+            ]),
+        new(
             "researchy-np038-entanglement-extension",
             "Entanglement Is Not in Canonical AT: the Complete Minimal Quantum Extension Is Two Irreducible Primitives — the Joint State and the Entangling Gate",
             "ResearchY Milestone · NP_038–NP_054 (V2.3 — Entanglement Program)",

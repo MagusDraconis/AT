@@ -3740,6 +3740,26 @@ single boundary. Classification: period-3 seed and N=96 DERIVED (D_040); 3-famil
 BOUNDARY (anchored); K=3 value DERIVED / window BOUNDARY (two-level rule); occupancy [4,4,87]
 and ΩΛ DERIVED; selection/accident REFUTED. No new primitive; canonical AT unchanged.
 
+ResearchY-NP_065 (Dark Matter Ontology Audit, COMPLETE, tests 7/7 PASSED): what is Dark
+Matter (Ωm) inside AT, given ΩΛ is an information descriptor? Verdict: Dark Matter = the
+matter DEFICIT m = ρ̄ − ρ — an EFFECT, not a particle — whose fraction Ωm = H/ln K = 0.3161 is
+the realized-entropy fraction (the bookkeeping complement of ΩΛ), matching the observed Ωm =
+0.3153 to 0.26%. The deficit is conserved (Σm = 0 exactly), positive in the under-occupied low
+octaves [4,4] (0.2912 each) and negative in the over-occupied top octave [87] (−0.5825): matter
+is under-density, dark energy is over-density. Readings: C (realized-state fraction) = D
+(bookkeeping complement) = B (the QG194 matter identification); A (physical matter) = hosted
+energy (E_def = m, QG89) + DERIVED gravity. Ontology: matter = deficit (QG194, gradient-source
+∇m = −∇ρ, conserved), T_μν = (ρ̄−ρ)v_μv_ν recovered without defining matter (QG195), flat
+rotation α = 0 (QG206), M ∝ R (QG184) — all DERIVED, an effect not a particle, no
+CMB/structure role (QG229). THE ASYMMETRY (key): the deficit (Ωm/matter) SOURCES gravity (a
+DERIVED role), while the surplus (ΩΛ/dark energy) is a descriptor with no derived effect
+(NP_060) — so Ωm has STRONGER physical meaning than ΩΛ. Caveats: both share the hosted QG89
+energy reading; "dark matter" as a particle (non-baryonic, structure-formation) is REFUTED; the
+baryonic/dark split is BOUNDARY (not derived). Classification: Ωm = H/ln K DERIVED (QG234);
+matter = deficit + Σm = 0 DERIVED (QG194); gravitational role DERIVED (QG195/206/184); energy
+reading CORRESPONDENCE (hosted QG89); particle REFUTED; baryonic/dark split BOUNDARY. No new
+primitive; canonical AT unchanged.
+
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-
