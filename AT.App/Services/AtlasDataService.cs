@@ -388,6 +388,21 @@ public static class AtlasDataService
                     "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_090.md"),
             ]),
         new(
+            "researchy-np091-network-spacetime",
+            "From Differences to Spacetime: Space Is the Network's Shape; Time Is Its Tick",
+            "ResearchY · NP_091 (Network Geometry → Spacetime Audit)",
+            "This audit closes the arc: if Difference builds the D96 network, and the network builds geometry, how does that geometry become the spacetime we actually live in? The answer is a three-step story. First, the network — distinctions joined by links, where a path is a chain of links. Second, the geometry — the metric is the scalar face of the connectivity, and the tensor face is its curvature. Third, spacetime — three-dimensional space *emerges* from the network, while time is something different: it is the tick of actualization itself, not a fourth network direction. So only space is emergent; time is the framework's own heartbeat.",
+            "NP_091 inventories every appearance of geometry, distance, metric, causal order, and spacetime across the docs. Network: node = distinction, link = adjacency, path = a chain of links (NP_090). Geometry: g = ρ^(2/d)η is the TRACE face of the connectivity; ψ (traceless/Weyl) is the curvature (NP_080). Spacetime: 3D space EMERGES via D96⊗D96⊗D96 with d=3 DERIVED through the (d−2) bridge (QG197); +1 time = the actualization TICK, the discrete causal order (QG89), hosted as the +1 Lorentzian signature, a FRAMEWORK residue (QG290). Only space is emergent; time is the tick, not a fourth network axis. ρ does double duty: it is the metric's conformal factor AND the cosmic expansion (a = ρ^(1/d), a hosted FRW relabeling, NP_069). Light cones = null geodesics (conformally invariant); causal order = the acyclic partial order; propagation limit = the tick. First non-derived step = {Difference, η} + the tick. Classification: 3D space EMERGENT, metric DERIVED, time FRAMEWORK/BOUNDARY, Difference+η BOUNDARY.",
+            "For non-experts: imagine a net of little 'differences' connected to their neighbours. The standing waves on this net are the particles, and the shape of the net itself is space — three dimensions, because the net can be woven in three independent directions. Time is not a fourth direction of the net; time is the tick of things actually changing. So space and time are not the same kind of thing in this theory: space is the net's shape, time is its heartbeat.",
+            "Space = the network's shape (3D emergent); time = the tick (framework).",
+            "“Space is the net's shape; time is the tick.”",
+            false,
+            [
+                new("ResearchY-NP_091", "NETWORK GEOMETRY → SPACETIME AUDIT",
+                    "3D space emergent; metric derived; time = the framework tick.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_091.md"),
+            ]),
+        new(
             "researchy-np074-quantum-number-ontology",
             "What Are Quantum Numbers? The Symmetry Charges of the D96 Ring: Charge Is the Rotation, Isospin the Doublet, and Only the Color Count Remains a Postulate",
             "ResearchY · NP_074 (Quantum Number Ontology Audit)",

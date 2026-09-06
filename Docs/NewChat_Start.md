@@ -4176,6 +4176,24 @@ criterion: what exists = distinctions (nodes); what connects = the adjacency (li
 propagates = the 95 modes + the two faces ρ/ψ. Classification: all DERIVED (nodes from Difference,
 links from the difference structure, geometry from the trace, matter from the deficit); A/D REFUTED.
 No new primitive; canonical AT unchanged.
+
+ResearchY-NP_091 (Network Geometry → Spacetime Audit, COMPLETE, tests 9/9 PASSED): how does the D96
+network become the observed spacetime? Verdict (three steps): NETWORK (nodes = distinctions, links =
+adjacency, path = a chain of links; distance = the shortest-link count) → GEOMETRY (g = ρ^(2/d)η =
+the trace face of the connectivity; ψ = the traceless/Weyl face = the curvature) → SPACETIME (3D
+space EMERGENT via D96⊗D96⊗D96 with d=3 DERIVED through the (d−2) bridge; +1 time = the
+actualization TICK, the discrete causal order QG89, hosted as the +1 Lorentzian signature, a
+FRAMEWORK residue QG290). ONLY SPACE IS EMERGENT; time is the framework tick (not a fourth network
+axis). ρ does double duty: it is the conformal factor of the metric (g = ρ^(2/d)η) AND its branching
+growth reads as cosmic expansion (a = ρ^(1/d), hosted FRW relabeling, NP_069). Causal structure: the
+light cones = null geodesics (conformally invariant); the causal order = the partial order (acyclic);
+the propagation limit = the tick. First NON-DERIVED step = {Difference, η} + the time tick. Network
+vs observed spacetime: 3D cubic lattice (O_h, O(3) only approximate, NP_089) vs exact O(3) + 1
+Lorentzian time. Classification: 3D spatial geometry EMERGENT (d=3 derived); metric g = ρ^(2/d)η
+DERIVED (from the trace ρ); time (tick + signature) FRAMEWORK/BOUNDARY; Difference + η
+BOUNDARY/FRAMEWORK. Success criterion: the complete mapping Difference → Network → Geometry →
+Spacetime; the first non-derived step is {Difference, η} + the tick. No new primitive; canonical AT
+unchanged.
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-

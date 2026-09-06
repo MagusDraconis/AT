@@ -185,6 +185,7 @@
 | ResearchY-NP_088 | D96 Network Geometry Audit | `NP_NewPhysics/ResearchY-NP_088.md` | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_088_Tests.cs` (9/9 ✅) | COMPLETE |
 | ResearchY-NP_089 | Rotational Symmetry Emergence Audit | `NP_NewPhysics/ResearchY-NP_089.md` | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_089_Tests.cs` (9/9 ✅) | COMPLETE |
 | ResearchY-NP_090 | D96 Network Ontology Audit | `NP_NewPhysics/ResearchY-NP_090.md` | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_090_Tests.cs` (8/8 ✅) | COMPLETE |
+| ResearchY-NP_091 | Network Geometry → Spacetime Audit | `NP_NewPhysics/ResearchY-NP_091.md` | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_091_Tests.cs` (9/9 ✅) | COMPLETE |
 | ResearchY-S_001 | Post-V2.1 Theory Architecture Synthesis | `S_Synthesis/ResearchY-S_001.md` | `AT.Tests/ResearchY/S_Synthesis/Y_S_001_Tests.cs` (4/4 ✅) | COMPLETE |
 | ResearchY-M_001 | Measurement Origin Audit | `M_Measurement/ResearchY-M_001.md` | `AT.Tests/ResearchY/M_Measurement/Y_M_001_Tests.cs` (7/7 ✅) | COMPLETE |
 | ResearchY-M_002 | Measurement Disturbance Audit | `M_Measurement/ResearchY-M_002.md` | `AT.Tests/ResearchY/M_Measurement/Y_M_002_Tests.cs` (7/7 ✅) | COMPLETE |

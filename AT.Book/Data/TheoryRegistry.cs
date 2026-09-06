@@ -333,5 +333,9 @@ public sealed class TheoryRegistry
             "The D96 network is the ORGANIZED DIFFERENCE STRUCTURE. Nodes = distinctions (Difference events = actualizations); links = the adjacency (the symmetric rank-2 connectivity A_ij = A_ji); what propagates = the 95 resonance modes (particles) and the two faces ρ (trace → metric) and ψ (traceless → curvature). 96 nodes × degree 12 = 576 links, trace Σλ = 1152. Particles are modes of one D96 ring; geometry is emergent from connectivity.",
             AuditStatus.Passed, new DateTime(2026, 9, 6), TheoryLayer.Structure, TheoryClassification.Derived,
             ["d96", "difference"]),
+        new("np091", "Network Geometry → Spacetime Audit", "How does the D96 network become the observed spacetime?",
+            "Three steps: network (nodes = distinctions, links = adjacency) → geometry (g = ρ^(2/d)η = the trace face; ψ = the traceless/Weyl curvature) → spacetime (3D space EMERGENT via D96⊗D96⊗D96 with d=3 derived; +1 time = the actualization tick, a framework residue). Only space is emergent; time is the tick. ρ does double duty (metric factor + expansion a = ρ^(1/d)). First non-derived step = {Difference, η} + the tick.",
+            AuditStatus.Passed, new DateTime(2026, 9, 6), TheoryLayer.Structure, TheoryClassification.Emergent,
+            ["d96", "difference"]),
     ];
 }
