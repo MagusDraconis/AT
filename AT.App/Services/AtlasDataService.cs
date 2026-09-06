@@ -148,6 +148,21 @@ public static class AtlasDataService
                     "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_064.md"),
             ]),
         new(
+            "researchy-np067-lensing-sector",
+            "Why the Deficit Bends Galaxies but Not Light: the ρ-Only Metric Is Conformally Flat (γ = −1), and Only the ψ Tensor Sector Restores Lensing",
+            "ResearchY · NP_067 (Lensing Sector Audit)",
+            "The deficit sources gravity through the metric g = ρ^(2/d)η — which is conformally flat, giving PPN γ = −1. Conformal flatness scales time and space equally, so null geodesics are left unbent: every lensing observable and the Shapiro delay vanish, while potential effects (rotation, cluster mass, redshift, Ωm) survive because they depend on the time component g₀₀ alone. The minimal fix is the ψ tensor sector — the theory's second primitive — which breaks conformal flatness and restores γ = +1, hence full lensing, weak and strong lensing, frame dragging, and gravitational waves, all at GR strength.",
+            "NP_067 derives the metric sector and computes γ. Conformal ρ-only: g₀₀ = −ρ^(2/d), g_ij = ρ^(2/d)δ_ij ⇒ γ = −1, and every lensing observable scales as (1+γ)/2 = 0 (deflection, convergence, shear, magnification, Shapiro all vanish — QG212). The origin is structural: a conformal factor scales time and space equally, and null geodesics are conformally invariant, so light does not bend while massive bodies (governed by g₀₀ alone) still fall. The minimal modification is the ψ-completed metric g₀₀ = −ρ^(2/d)e^(2ψ), which breaks conformal flatness and gives γ = +1 (QG207/212); lensing/Shapiro/γ need only a scalar ψ (1 d.o.f.), while GW polarization needs the full spin-2 (QG43). Primitive cost: +1 (ψ, the second primitive, QG223). Determination: B (missing tensor sector) — no-lensing is a restricted ψ=0 sector (ψ=0 is an assumption), not fatal and not a mere correspondence.",
+            "For non-experts: why can the theory explain how galaxies are held together but not how their gravity bends light? Because its basic metric stretches time and space by the same amount. Stretching both equally changes how things fall but leaves light's path unchanged — like a map that changes scale but preserves angles. To make light bend, you need a second piece — the theory's 'ψ' — that stretches time and space differently. That second piece is already in the theory, and once it is switched on, light bends exactly as general relativity predicts.",
+            "The lensing failure is a missing tensor sector (γ = −1 → +1 via ψ), not a fatal flaw.",
+            "“Light does not bend unless space and time distort unequally.”",
+            false,
+            [
+                new("ResearchY-NP_067", "LENSING SECTOR AUDIT",
+                    "ρ-only metric is conformally flat (γ=−1); the ψ tensor sector restores γ=+1 and full lensing.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_067.md"),
+            ]),
+        new(
             "researchy-np066-dark-matter-evidence",
             "The Deficit Explains Gravity, Not Particles or Lensing: Dark Matter Evidence Splits 2 Derived / 2 Correspondence / 2 Refuted",
             "ResearchY · NP_066 (Dark Matter Evidence Audit)",

@@ -3778,6 +3778,23 @@ matter, not a full dark matter. Classification: rotation + Ωm DERIVED; cluster 
 CORRESPONDENCE; lensing (deficit alone) REFUTED; Bullet Cluster REFUTED. No new primitive;
 canonical AT unchanged.
 
+ResearchY-NP_067 (Lensing Sector Audit, COMPLETE, tests 9/9 PASSED): why does the deficit
+source gravity but fail light-bending? Verdict: the ρ-only metric is CONFORMALLY FLAT
+(g = ρ^(2/d)η), giving PPN γ = −1, which cancels the null-geodesic prefactor (1+γ)/2 = 0 — so
+all lensing observables (deflection, convergence, shear, magnification) and the Shapiro delay
+vanish — while the potential effects (rotation, cluster mass, redshift, Ωm) survive because
+they depend on g₀₀ = −ρ^(2/d) alone. Origin of γ=−1: the conformal factor scales time and space
+EQUALLY, and null geodesics are conformally invariant. The minimal fix is the ψ TENSOR SECTOR
+(the second primitive): g₀₀ = −ρ^(2/d)e^(2ψ) breaks conformal flatness ⇒ γ = +1 ⇒ full lensing,
+weak/strong lensing, Shapiro delay, frame dragging (QG186), and GW (QG43/44) restored at GR
+strength (QG212 OPTICS RESOLVED — no-lensing is a RESTRICTED ψ=0 sector). Lensing/Shapiro/γ
+need only a SCALAR ψ (1 d.o.f.); the full spin-2 is required only by GW polarization (QG43).
+Primitive cost: +1 (ψ, the second primitive, QG223). Determination: B) MISSING TENSOR SECTOR —
+not fatal (QG212 shows ψ=0 is an assumption, physical optics is GR-like), not
+correspondence-only. Classification: conformal metric (γ=−1) DERIVED; no-lensing in ψ=0
+DERIVED; ψ tensor sector BOUNDARY (second primitive); lensing restored by ψ CORRESPONDENCE (GR
+strength); fatal failure REFUTED. No new primitive; canonical AT unchanged.
+
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-

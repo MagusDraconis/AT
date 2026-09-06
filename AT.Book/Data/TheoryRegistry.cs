@@ -237,5 +237,9 @@ public sealed class TheoryRegistry
             "PARTIAL: 2 DERIVED (flat rotation α=0, Ωm = 0.3161) / 2 CORRESPONDENCE (cluster mass degenerate with ΛCDM, LSS seed+growth) / 2 REFUTED (lensing — conformal γ=−1; Bullet Cluster — not a particle). The deficit is a gravitational-potential surrogate, not a full dark matter.",
             AuditStatus.Passed, new DateTime(2026, 9, 6), TheoryLayer.Cosmology, TheoryClassification.Correspondence,
             ["omega-matter", "iocc"]),
+        new("np067", "Lensing Sector Audit", "Why does the deficit source gravity but fail light-bending?",
+            "The ρ-only metric is CONFORMALLY FLAT (γ = −1), cancelling the null-geodesic prefactor (1+γ)/2 = 0 — no lensing — while potential effects (g₀₀) survive. The minimal fix is the ψ tensor sector (second primitive), restoring γ = +1 ⇒ full lensing. Determination: B (missing tensor sector), not fatal.",
+            AuditStatus.Passed, new DateTime(2026, 9, 6), TheoryLayer.Cosmology, TheoryClassification.Correspondence,
+            ["omega-matter", "d96"]),
     ];
 }
