@@ -253,5 +253,9 @@ public sealed class TheoryRegistry
             "μ=1 is the UNIQUE branching ratio that is simultaneously marginal-stable, scale-free, and maximum-entropy — three criteria coinciding at μ=1. Criticality is DERIVED (unique), conditional on scale-freeness (the indifference principle) as the single boundary input.",
             AuditStatus.Passed, new DateTime(2026, 9, 6), TheoryLayer.Foundations, TheoryClassification.Derived,
             ["d96", "occupancy"]),
+        new("np071", "Matter Ontology Audit", "What is matter physically in AT?",
+            "Matter is the DEFICIT m = ρ̄ − ρ — a stable, self-bound excitation (a deficit pattern) of the count density, the under-occupancy that sources gravity and clumps. Not a particle, not a fundamental substance, not a soliton (legacy); it is a dynamically stabilized wave structure with masses as its derived spectral content.",
+            AuditStatus.Passed, new DateTime(2026, 9, 6), TheoryLayer.Physics, TheoryClassification.Derived,
+            ["omega-matter", "occupancy"]),
     ];
 }

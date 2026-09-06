@@ -165,6 +165,7 @@
 | ResearchY-NP_068 | Psi Ontology Audit | `NP_NewPhysics/ResearchY-NP_068.md` | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_068_Tests.cs` (8/8 ✅) | COMPLETE |
 | ResearchY-NP_069 | Expansion Ontology Audit | `NP_NewPhysics/ResearchY-NP_069.md` | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_069_Tests.cs` (7/7 ✅) | COMPLETE |
 | ResearchY-NP_070 | Criticality Audit | `NP_NewPhysics/ResearchY-NP_070.md` | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_070_Tests.cs` (7/7 ✅) | COMPLETE |
+| ResearchY-NP_071 | Matter Ontology Audit | `NP_NewPhysics/ResearchY-NP_071.md` | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_071_Tests.cs` (6/6 ✅) | COMPLETE |
 | ResearchY-S_001 | Post-V2.1 Theory Architecture Synthesis | `S_Synthesis/ResearchY-S_001.md` | `AT.Tests/ResearchY/S_Synthesis/Y_S_001_Tests.cs` (4/4 ✅) | COMPLETE |
 | ResearchY-M_001 | Measurement Origin Audit | `M_Measurement/ResearchY-M_001.md` | `AT.Tests/ResearchY/M_Measurement/Y_M_001_Tests.cs` (7/7 ✅) | COMPLETE |
 | ResearchY-M_002 | Measurement Disturbance Audit | `M_Measurement/ResearchY-M_002.md` | `AT.Tests/ResearchY/M_Measurement/Y_M_002_Tests.cs` (7/7 ✅) | COMPLETE |

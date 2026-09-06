@@ -148,6 +148,21 @@ public static class AtlasDataService
                     "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_064.md"),
             ]),
         new(
+            "researchy-np071-matter-ontology",
+            "Matter Is the Deficit, a Stabilized Wave Structure: Not a Particle, Not a Substance — the Under-Occupancy of the Counting Measure, with Masses as Its Derived Spectral Content",
+            "ResearchY · NP_071 (Matter Ontology Audit)",
+            "What is matter in Actualization Theory? It is not a particle and not a fundamental substance. Matter is the deficit — the under-occupancy of the counting measure (m = ρ̄ − ρ) — a stable, self-bound excitation that sources gravity and clumps into structure. This is the founding claim of the program, made precise: 'matter consists of dynamically stabilized wave structures', and the stabilized structure is the deficit. The masses are not point objects; they are the derived spectral content of that deficit.",
+            "NP_071 inventories matter and tests the interpretations. Point objects: REFUTED (matter is an effect, not a particle). Occupancies: YES. Resonant structures: PARTIAL (the D96 modes are the substrate). Stable wave structures: YES (= occupancy — the deficit). Solitons: LEGACY (the superseded TRM 'proto-matter = solitons'). Category: matter is a PATTERN / EXCITATION — the corpus's 'deficit excitation' (ρ real-underived, matter = deficit excitation) — not a substance and not a process. Stability: only the converging (deficit) branch supports clumping, so matter = deficit is DERIVED from STABILITY (ATF MatterAttraction). Classification: matter = deficit DERIVED (QG194); the mass ladder DERIVED (QG173/209); particle REFUTED; soliton LEGACY; fundamental substance REFUTED.",
+            "For non-experts: the theory's answer to 'what is matter?' is surprising but simple. Matter is not tiny billiard balls, and not a fundamental 'stuff'. It is a pattern of under-density — the places where the universe's counting measure is thinner than average — and this pattern is stable and self-bound, so it clumps together and bends space the way we observe. The masses of particles are then just numbers read off this pattern. So matter is a stable structure in the count, not a substance.",
+            "Matter = the deficit (a stable, self-bound deficit excitation); masses are its derived spectral content.",
+            "“Matter is where the counting measure thins and holds its shape.”",
+            false,
+            [
+                new("ResearchY-NP_071", "MATTER ONTOLOGY AUDIT",
+                    "Matter is the deficit — a stable, self-bound excitation, not a particle or substance.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_071.md"),
+            ]),
+        new(
             "researchy-np070-criticality",
             "Why Reality Sits at the Critical Point: μ = 1 Is the Unique Branching Ratio That Is Simultaneously Marginal, Scale-Free, and Maximum-Entropy",
             "ResearchY · NP_070 (Criticality Audit)",

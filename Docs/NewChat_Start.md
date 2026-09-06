@@ -3840,6 +3840,20 @@ carry no intrinsic scale") as the single BOUNDARY input. Chain: Q-events → cri
 DERIVED (unique, QG7); scale-freeness BOUNDARY (AT-F1); α=0 flat rotation DERIVED (QG206);
 sub/supercritical universe REFUTED. No new primitive; canonical AT unchanged.
 
+ResearchY-NP_071 (Matter Ontology Audit, COMPLETE, tests 6/6 PASSED): what is matter
+physically in AT? Verdict: matter is the DEFICIT m = ρ̄ − ρ — a stable, self-bound EXCITATION (a
+deficit pattern) of the count density, realized as the under-occupancy that sources gravity and
+clumps into structure. Interpretations: A) point objects REFUTED (not a particle); B) occupancies
+YES; C) resonant structures PARTIAL (the D96 modes are the substrate); D) stable wave structures
+YES (= B — the founding README claim "matter consists of dynamically stabilized wave structures"
+made precise as the deficit); E) solitons LEGACY (the superseded TRM "proto-matter = solitons").
+Category: substance NO (matter is not fundamental), process PARTIAL (arises from actualization),
+pattern YES, excitation YES (the corpus's "deficit excitation": ρ real-underived, matter = deficit
+excitation). Stability: only the converging (deficit) branch supports clumping — matter = deficit
+is DERIVED from STABILITY (ATF MatterAttraction). Classification: matter = deficit DERIVED
+(QG194); mass ladder DERIVED (QG173/209); point particle REFUTED; soliton LEGACY; fundamental
+substance REFUTED. No new primitive; canonical AT unchanged.
+
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-
