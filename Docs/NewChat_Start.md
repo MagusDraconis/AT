@@ -3544,6 +3544,202 @@ contextuality/KS/swapping/Hardy CORRESPONDENCE; delayed choice/eraser DERIVED
 (single-DOF); quantum layer complete (A) CONFIRMED; third primitive (B) REFUTED;
 contradiction (C) REFUTED. Canonical D96 unchanged.
 
+ResearchY-NP_055 (Dark Energy Ontology Audit, COMPLETE, tests 11/11 PASSED): what is
+Dark Energy physically inside AT? Verdict: ΩΛ = I_occ/ln K = 0.6839 (QG234, OBSERVED
+0.12%) has a DERIVED ontology ONLY as the INFORMATION-BOOKKEEPING fraction
+(interpretations B = E, identical) — and NO physical (energetic/equation-of-state)
+ontology. The canonical ρ = [4,4,87]/95 reproduces I_occ = KL(ρ‖uniform) = 0.7513 nats
+exactly, and the pair partitions the state-space size: I_occ + H = ln K (0.7513 + 0.3473
+= 1.0986 = ln 3); ΩΛ = I_occ/ln K is the EXCESS-over-uniform fraction, Ωm = H/ln K =
+0.3161 is the realized-entropy fraction. Interpretation tests: A) vacuum energy (w = −1)
+NOT DERIVED — no energy density, and QG230's own Λ ∝ 1/R² (ρ_Λ ∝ a^(−2)) translates to
+w = −1/3, not −1, while the hosted q₀/z_acc closures assume w = −1; B) information
+content YES (literal: ΩΛ IS I_occ/ln K); C) occupancy deficit INVERTED (the deficit is
+matter Ωm = H/ln K, QG195/196, not dark energy); D) actualization pressure METAPHORICAL
+(the canonical μ = 2 branching is a population inversion, anti-thermal — NP_030);
+E) bookkeeping YES (= B). Additional observables: the finite family {ΩΛ, Ωm, ratio
+2.1633, q₀ = −0.5258, z_acc = 0.6295} — q₀/z_acc values DERIVED, forms CORRESPONDENCE
+(hosted w = −1). INTERNAL TENSION (NEW): the corpus carries THREE incompatible dark-energy
+equations of state — w = −1 (hosted closures), w = −1/3 (QG230 Λ ∝ 1/R²), and w ≠ −1
+time-varying (legacy Λ(t) = α/√V(t), coefficient 0.015 FITTED, X046/XD001) — none
+derived from ΩΛ itself. Future/ΩΛ(z): NOT derived — the information fraction is
+time-independent, so future evolution and ΩΛ(z) are hosted FRW/ΛCDM. Classification:
+ΩΛ value + information-bookkeeping ontology DERIVED (B = E); vacuum-energy/w = −1
+CORRESPONDENCE (hosted); occupancy-deficit REFUTED as dark-energy ontology (it is
+matter); actualization-pressure EMERGENT-as-metaphor / REFUTED as physical. Success
+criterion: PARTIAL — a successful numerical relation plus a DERIVED informational
+ontology, but NOT a physical dark-energy mechanism. No new primitive; canonical AT
+unchanged.
+
+ResearchY-NP_056 (Equation-of-State Audit, COMPLETE, tests 9/9 PASSED): can the AT
+informational ontology generate a unique equation of state? Verdict: NO — ΩΛ = I_occ/ln K
+= 0.6839 is a SNAPSHOT number (present-day density fraction) with no equation-of-state
+content, so AT predicts only a density fraction, not a dark-energy dynamics. EXPANSION
+DYNAMICS ARE DEGENERATE: the same ΩΛ = 0.6839 gives H²(z=1)/H₀² = 3.2127 (w=−1), 4.4632
+(w=−1/2), 5.2644 (w=−1/3) — a 64% spread. ACCELERATION IS NOT DERIVED: q₀ = [Ωm +
+ΩΛ(1+3w)]/2 requires w < −0.4874 (an extra, hosted input); QG230's own Λ ∝ 1/R² (w = −1/3)
+gives q₀ = +0.158 (decelerating). Candidate equations of state: w = −1 (hosted ΛCDM, ρ ∝ a⁰),
+w = −1/3 (separate M ∝ R scaling, QG184, non-accelerating), evolving w(z) (legacy Λ(t) =
+α/√V(t), coefficient 0.015 FITTED) — all CORRESPONDENCE, none DERIVED. NEW RESULT — the
+bookkeeping reading is dynamically inconsistent with acceleration: a time-independent
+ΩΛ fraction forces ρ_Λ = (ΩΛ/Ωm)ρ_m ∝ ρ_m ∝ a^(−3) ⇒ w = 0 ⇒ q₀ = +0.5 (decelerating); the
+observed acceleration requires ΩΛ(z) to EVOLVE (w < −1/3), which the fixed partition of
+ln K does not do. Classification: ΩΛ = 0.6839 DERIVED (QG234 unchanged); the equation of
+state w BOUNDARY (undetermined); w = −1 / w = −1/3 / evolving w(z) CORRESPONDENCE
+(hosted/scaled/fitted); a unique dark-energy dynamics REFUTED; cosmic acceleration NOT
+DERIVED. No new primitive; canonical AT unchanged.
+
+ResearchY-NP_057 (Dark Energy Meaning Audit, COMPLETE, tests 9/9 PASSED): what does ΩΛ
+physically represent, and why should information appear as a density fraction? Verdict:
+ΩΛ = I_occ/ln K = 0.6839 is the normalized ENTROPY DEFICIT — the information surplus of
+the realized top-heavy D96 occupancy over the uniform prior — and is a STATE DESCRIPTOR
+(order parameter), not a cause and not an energy density. A = C = E: the five candidate
+readings resolve because information-surplus (I_occ/ln K), unused-state-space
+((ln K − H)/ln K), and bookkeeping are the SAME quantity (= ΩΛ), while the "deficit"
+(H/ln K = Ωm) is MATTER; "pressure" is a metaphor (μ = 2 anti-thermal, NP_030). Verified
+as an order parameter: ΩΛ = 0 for the uniform record, 0.6839 for [4,4,87], 0.8938 for
+[1,1,93] — monotone in top-heaviness. Equivalent formulations: ΩΛ = I_occ/ln K = KL/ln K
+= (ln K − H)/ln K = 1 − H/ln K = 1 − Ωm. Cause/effect/descriptor: ΩΛ drives nothing
+(NP_056) — it is a snapshot order parameter of ρ. Family: entropy/information (not vacuum
+energy — no derived w = −1; not a cosmological constant — QG230's Λ ∝ 1/R² is not
+constant). THE OPEN BRIDGE: the information budget I_occ + H = ln K is identified with the
+energy budget ΩΛ + Ωm = 1 (flatness), but the information→energy link (nats → erg/cm³) is
+NOT derived — an empirical CORRESPONDENCE. Classification: ΩΛ value + "normalized entropy
+deficit / information surplus" meaning DERIVED (KL structure); state-descriptor status
+DERIVED (NP_030); identification with the energy fraction CORRESPONDENCE (bridge
+BOUNDARY/open); vacuum-energy / cosmological-constant CORRESPONDENCE (hosted); pressure
+reading REFUTED (NP_030). Strongest interpretation: ΩΛ = the realized occupancy's
+information surplus normalized by the state-space capacity — a DERIVED state descriptor in
+the entropic/informational family. No new primitive; canonical AT unchanged.
+
+ResearchY-NP_058 (Information-to-Energy Bridge Audit, COMPLETE, tests 8/8 PASSED): why
+does I_occ + H = ln K correspond to ΩΛ + Ωm = 1, given the information→energy bridge is
+not derived? Verdict: the bridge originates at QG89, "energy = its Noether conjugate,
+measured as the actualization rate (Q-event activity)" — the FIRST appearance of physical
+energy language, and a DEFINITION, not a derivation. It is inherited at QG230 ("I_vac > 0
+⇒ ρ_Λ > 0", inheriting QG89; and the dimensional step "Λ = 8πG·ρ_Λ", importing
+G = ħc/M_Pl² which requires ħ and c — both BOUNDARY unit conventions, NP_029), and realized
+as a fraction at QG234 ("ΩΛ = I_occ/ln K = 0.6839", a numeric identification matched to
+Planck only by 0.12%). Every step before the bridge — ρ = [4,4,87]/95 → H = 0.3473 nats →
+I_occ = KL(ρ‖uniform) = 0.7513 nats → I_occ/ln K = 0.6839 — is pure counting/information
+(DERIVED), with no ħ, c, or G. Removing the bridge loses nothing on the information side:
+AT still derives 0.6839; only the LABELING with the energy-density fraction is non-derived.
+Observable type: ΩΛ is an INFORMATION observable (DERIVED, a function of ρ alone) and an
+energy observable only by CORRESPONDENCE (hosted). Candidate bridges: A (information =
+energy, QG89 postulate — the root), B (entropy deficit = vacuum, QG230 label — inherits A),
+C (occupancy fraction = density fraction, QG234 numeric ID), D (pure numerical
+correspondence — the residue). Classification: ρ → H → I_occ → I_occ/ln K DERIVED;
+"energy = actualization rate" (QG89) BOUNDARY (irreducible definition); I→ρ_Λ and ΩΛ-label
+CORRESPONDENCE (hosted); dimensional conversion G = ħc/M_Pl² BOUNDARY (imports ħ, c);
+ΩΛ as an energy observable CORRESPONDENCE. No new primitive; canonical AT unchanged.
+
+ResearchY-NP_059 (Actualization Rate Audit, COMPLETE, tests 7/7 PASSED): can "energy =
+actualization rate" (QG89) be DERIVED instead of postulated? Verdict: NO — it is BOUNDARY
+(an irreducible definition). What IS derived is the conserved COUNT: the actualization rate
+is the normalized count density ρ with Σρ = 1 (QG194/QG216/M_005), and the deficit
+m = ρ̄ − ρ is exactly conserved (Σm = 0, QG194's "Noether count"). The step from "conserved
+count" to "energy" has no Noether route: AT's time is DISCRETE (Δθ = 2πk/N per tick, "time IS
+the tick count", NP_003/M_009/M_010), and QG244's Lagrangian presupposes QG89's
+"actualization-flow energy" rather than deriving it. Removing QG89 breaks every energy
+derivation (matter = deficit QG194, Λ QG230, Lagrangian QG244, mass ladder QG117–127) but the
+information chain (ρ → H → I_occ → 0.6839) and count conservation survive. The dimensionful
+conversion (count → Joules/GeV) additionally needs the BOUNDARY anchors v, m_e and unit
+conventions ħ, c (NP_029). Two layers: Layer 1 (DERIVED) = the actualization rate is a
+conserved count (Σρ = 1; Σm = 0); Layer 2 (BOUNDARY) = "that count ≡ energy (with units)",
+the QG89 definition + anchors. Deepest open step in the information-to-energy bridge: QG89's
+identification of the conserved actualization count with energy, plus the anchored
+dimensionful conversion (v, m_e, ħ, c). No new primitive; canonical AT unchanged.
+
+ResearchY-NP_060 (Dark Energy Resource Audit, COMPLETE, tests 9/9 PASSED): does ΩΛ
+represent a physically extractable resource, or only an informational state descriptor?
+Verdict: ΩΛ = I_occ/ln K = 0.6839 CANNOT perform work — it is an informational STATE
+DESCRIPTOR (and bookkeeping quantity, B = C), not a resource. It fails all three resource
+requirements: no energy scale (dimensionless), no gradient (single snapshot number), no
+temperature channel (NP_030). Extraction channels: (a) vacuum work d(ρV) = −p dV is HOSTED
+(no derived EoS, NP_056; w = −1 grows energy, w = 0 conserves); (b) information work
+W = k_B T ln 2 (Landauer/Szilard) needs T (absent); (c) free energy F = U − TS needs U and T
+(neither derived). Tracking: under any extraction nothing flows — I_occ = 0.7513 and
+H = 0.3473 are invariant functions of ρ, and Σρ = 1 / Σm = 0 are conserved counts (not
+energy). Readings: A) extractable work REFUTED; B) state descriptor YES; C) bookkeeping YES
+(= B); D) hidden conserved resource NO. Inversion: the extractable/gravitating side is Ωm
+(matter = deficit, QG194), NOT ΩΛ (the surplus). Comparison: vacuum energy does work
+(hosted), free energy is undefinable, ΩΛ is a pure information measure with no conversion
+channel. Classification: ΩΛ information state descriptor DERIVED; ΩΛ as physical resource
+REFUTED; vacuum-energy work channel CORRESPONDENCE (hosted); conserved counts DERIVED (not
+resources); temperature/free energy BOUNDARY. No new primitive; canonical AT unchanged.
+
+ResearchY-NP_061 (ΩΛ Coincidence Audit, COMPLETE, tests 8/8 PASSED): why does
+ΩΛ = I_occ/ln K = 0.6839 match the observed cosmological fraction to 0.12%? Verdict: the
+match is a CORRESPONDENCE (fragile point-match) with a BOUNDARY ingredient — not a deep
+physical relation and not a coincidence. Stripping energy language leaves a numerical
+equality between a DERIVED information number (0.6839) and an OBSERVED cosmological fraction
+(0.6847, dev 0.12%). Sensitivity (the match is fragile): K sensitivity — K=2/4/5 shift ΩΛ to
+0.5801/0.6263/0.5732 (corpus rung ladder: 0.4773/0.8153/0.8945 at N=48/192/384, ~20–30% off);
+occupancy sensitivity — [5,4,86]→0.6555, [2,2,91]→0.8145; measure sensitivity — only KL
+matches (0.6839), Hellinger 0.1917, TV 0.5302, χ² 1.3896 all fail. Determination: not
+necessary (no logical entailment), not emergent (fragile), not numerological (no free
+parameter). The "why" has no derived answer: the equality is the hosted QG89 identification
+(information budget ↔ energy budget), and its 0.12% precision rests on two non-derived
+ingredients — the KL measure (EMERGENT choice, QG_018 OP1 open) and the K=3 family window
+(BOUNDARY, "anchored by observed ΩΛ", QG_013) — a documented retro-selection risk (QG_239).
+Classification: deep physical relation REFUTED; pure coincidence REFUTED; CORRESPONDENCE
+(fragile point-match) with a BOUNDARY ingredient. The match is real and principled but its
+precision is enabled by anchored inputs, not derived end-to-end. No new primitive; canonical
+AT unchanged.
+
+ResearchY-NP_062 (High-Order Universe Audit, COMPLETE, tests 7/7 PASSED): why is the
+realized D96 occupancy so highly ordered (far from uniform)? Verdict: reality is highly
+ordered because the count density ρ is the normalized occupancy of a DISCRETE 1D circulant
+spectrum (λ_k = 2−2cos(2πk/N), N=96) that is top-heavy BY CONSTRUCTION. Order measure:
+uniform/random occupancies give ΩΛ ≈ 0 (H = ln 3 = 1.0986 max entropy); the canonical
+[4,4,87] gives H = 0.3473 (only 32% of capacity) and I_occ = 0.7513 (ΩΛ = 0.6839) — 68% of
+capacity unrealized as entropy. Spectral origin: the top-heaviness is UNIVERSAL across
+C_N(±1..±6) — ~92% top-octave share at N=48/96/120/192 — from the 1D linear dispersion
+ω_k ≈ c·k (ratios 0.62, 0.61, 0.60, 0.58) and the finite UV cap ω_max = 3.98. High order is
+TYPICAL and REQUIRED (structural), NOT dynamically selected (N→occupancy is a bijection,
+NP_037). [4,4,87] is a SELECTION OUTCOME (occupancy of canonical N=96), not an attractor or
+fixed point; its top-heaviness DERIVED, its exact value BOUNDARY (3-family window). The
+earliest source of the large information surplus is the DISCRETE SPECTRUM itself — the uniform
+state (ρ = 1/K) is a max-entropy REFERENCE (QG227), not a realized baseline. Classification:
+top-heavy occupancy + I_occ + ΩΛ DERIVED; high-order-being-typical/required DERIVED; uniform
+state as reference BOUNDARY; exact N=96 BOUNDARY; dynamical attractor/selection REFUTED. No
+new primitive; canonical AT unchanged.
+
+ResearchY-NP_063 (Cosmological Coincidence Audit, COMPLETE, tests 7/7 PASSED): if ΩΛ_AT =
+0.6839 is an information observable and ΩΛ_obs = 0.6847 is a cosmological density fraction,
+why are they numerically equal? Verdict: the equality is a DESCRIPTOR link (B) via an unproven
+hidden common origin (E, ρ) — AT posits the two are the information face and the energy face
+of one count density ρ. Systematic link enumeration: A) causal REFUTED (a mathematical property
+cannot cause a measurement); B) descriptor YES (closest — but presupposes the bridge); C)
+scaling law REFUTED (no derived formula ΩΛ_obs = f(ΩΛ_AT); it is a point equality, not a law);
+D) coincidence PARTIAL (principled, but fragile point-match); E) hidden common origin UNPROVEN
+(valid only if the energy face is derived — it is not). Minimal assumption chain (exactly four,
+all non-derived): 1) KL measure (EMERGENT choice — the FIRST non-derived step), 2) N=96/K=3
+window (BOUNDARY, anchored to ΩΛ_obs), 3) "energy = actualization rate" (QG89, BOUNDARY — the
+DEEPEST step), 4) dimensionful anchors v, m_e, ħ, c (BOUNDARY). Note: ΩΛ_obs is itself a
+MEASUREMENT (empirical input) — no theory derives a measurement; the question is only where the
+identification sits. Classification: ΩΛ_AT DERIVED; ΩΛ_obs MEASURED; equality CORRESPONDENCE
+(descriptor); KL measure EMERGENT; N=96 window / QG89 / anchors BOUNDARY; causal/scaling-law/
+deep-derived-relation REFUTED; hidden common origin ρ unproven. No new primitive; canonical AT
+unchanged.
+
+ResearchY-NP_064 (Canonical Structure Necessity Audit, COMPLETE, tests 7/7 PASSED): why does
+the canonical structure {N=96, K=3, [4,4,87]} exist? Verdict: it is a DERIVED-BOUNDARY hybrid.
+The period-3 seed (DERIVED, D_040) forces N = 3·2^k (octave rung) and 6|N; the 3-family window
+[4,8) (BOUNDARY, anchored to ΩΛ_obs, QG_013) selects k=5 — together pinning N=96. Verified:
+among the octave rungs 3·2^k, only k=5 (N=96) has span 6.4025 ∈ [4,8) (k=4 → 3.24, 2 families;
+k=6 → 12.78, 4 families; k=7 → 25.54, 5 families). From N=96 everything downstream is DERIVED:
+span 6.40 → K=3 → occupancy [4,4,87] → I_occ = 0.7513 → ΩΛ = 0.6839. Removal analysis: removing
+N=96 (ΩΛ → 0.5801/0.7295, corpus rung ladder 0.4773/0.8153), K=3 (→ 0.5801/0.6263), or
+perturbing [4,4,87] (→ 0.6555/0.8145) all break ΩΛ; mass content m_μ/m_e also breaks off N=96
+(NP_037 R2). The structure is not arbitrary, not dynamically selected, not accidental — it is
+the deterministic consequence of one derived seed and one boundary window. THE TRUE ROOT from
+which ΩΛ = 0.6839 emerges: the period-3 seed (DERIVED) constrained by the 3-family window
+(BOUNDARY), which together pin N=96; below them the discrete tick (QG_011) is the deepest
+single boundary. Classification: period-3 seed and N=96 DERIVED (D_040); 3-family window
+BOUNDARY (anchored); K=3 value DERIVED / window BOUNDARY (two-level rule); occupancy [4,4,87]
+and ΩΛ DERIVED; selection/accident REFUTED. No new primitive; canonical AT unchanged.
+
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-

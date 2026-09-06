@@ -4,8 +4,10 @@ using AT.Book.Domain;
 namespace AT.Book.Services.Calculations;
 
 /// <summary>
-/// Flat-ΛCDM kinematics from the derived density fractions: deceleration parameter
+/// Hosted flat-ΛCDM kinematics from the derived density fractions: deceleration parameter
 /// q₀ = Ωm/2 − ΩΛ and acceleration redshift z_acc = (2ΩΛ/Ωm)^(1/3) − 1.
+/// These are HOSTED FRW closures (the form assumes w = −1); only the density fractions
+/// are derived — the equation of state and the acceleration are not (NP_056/NP_055).
 /// </summary>
 public sealed class CosmologyService : ICalculationService
 {
@@ -35,7 +37,7 @@ public sealed class CosmologyService : ICalculationService
                     new("ΩΛ", omegaLambda.ToString("0.0000", CultureInfo.InvariantCulture)),
                     new("q₀", q0.ToString("0.0000", CultureInfo.InvariantCulture), "negative ⇒ accelerating"),
                 ],
-                "q₀ < 0: the derived fractions imply an accelerating present epoch."),
+                "q₀ < 0: the derived fractions, read through a hosted FRW closure (w = −1), give an accelerating present epoch."),
             new(
                 "acceleration-redshift",
                 "Acceleration Redshift z_acc",
@@ -44,7 +46,7 @@ public sealed class CosmologyService : ICalculationService
                     new("2ΩΛ/Ωm", (2 * omegaLambda / omegaMatter).ToString("0.0000", CultureInfo.InvariantCulture)),
                     new("z_acc", zacc.ToString("0.0000", CultureInfo.InvariantCulture)),
                 ],
-                "The transition from deceleration to acceleration occurs near z_acc ≈ 0.63."),
+                "The transition from deceleration to acceleration (hosted FRW closure, w = −1) occurs near z_acc ≈ 0.63."),
         ];
     }
 }
