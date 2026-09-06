@@ -583,6 +583,21 @@ public static class AtlasDataService
                     "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_103.md"),
             ]),
         new(
+            "researchy-np104-difference-persistence",
+            "Can Difference Itself Cease? No — the Ground Cannot Be Removed",
+            "ResearchY · NP_104 (Difference Persistence Audit)",
+            "Everything else can fade or break apart — but what about the very ground on which all fading and breaking rests? Actualization Theory's answer is a firm, almost tautological no: Difference cannot cease. Even total uniformity — every mode holding exactly the same count — still has ninety-five distinct modes, so the distinctions remain. And the clincher is self-referential: to say 'Difference ceased' is already to draw a difference (ceased, versus not). The theory rests on a ground that cannot be removed, because removing it would itself be a difference.",
+            "NP_104 shows complete uniformity = uniform OCCUPANCY (ρ_k = 1/K), still with K=95 distinct modes — Difference survives. It cannot decay (a transition between distinct modes), cannot thermalize (uniformizes the occupancy, not the distinctions), and cannot 'become uniform' (uniform count still has distinct modes): every process presupposes the distinctions it operates on. There is no state with no distinctions — 'no distinctions' is the absence of the theory, not a state. The decisive self-referential argument: 'Difference ceased' is itself a Difference. Determination: A (indestructible) and C (conserved); B (can disappear) REFUTED. Difference BOUNDARY (the ground); its distinguishability DERIVED-conserved (M_005).",
+            "For non-experts: every thing can be destroyed, but the idea of 'thing versus not-thing' cannot. Even the thought 'everything is gone' is itself a distinction — gone versus here. So the most basic thing in this theory — difference, the fact that one thing is not another — is the one thing that can never be absent.",
+            "Difference is indestructible and conserved; there is no state without distinctions.",
+            "“Difference cannot cease, because ceasing is itself a difference.”",
+            false,
+            [
+                new("ResearchY-NP_104", "DIFFERENCE PERSISTENCE AUDIT",
+                    "Difference is indestructible and conserved; its disappearance is refuted.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_104.md"),
+            ]),
+        new(
             "researchy-np074-quantum-number-ontology",
             "What Are Quantum Numbers? The Symmetry Charges of the D96 Ring: Charge Is the Rotation, Isospin the Doublet, and Only the Color Count Remains a Postulate",
             "ResearchY · NP_074 (Quantum Number Ontology Audit)",

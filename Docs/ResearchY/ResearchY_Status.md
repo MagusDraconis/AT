@@ -198,6 +198,7 @@
 | ResearchY-NP_101 | Hierarchical Structure Audit | `NP_NewPhysics/ResearchY-NP_101.md` | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_101_Tests.cs` (9/9 ✅) | COMPLETE |
 | ResearchY-NP_102 | Existence Ontology Audit | `NP_NewPhysics/ResearchY-NP_102.md` | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_102_Tests.cs` (8/8 ✅) | COMPLETE |
 | ResearchY-NP_103 | Nonexistence Ontology Audit | `NP_NewPhysics/ResearchY-NP_103.md` | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_103_Tests.cs` (9/9 ✅) | COMPLETE |
+| ResearchY-NP_104 | Difference Persistence Audit | `NP_NewPhysics/ResearchY-NP_104.md` | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_104_Tests.cs` (8/8 ✅) | COMPLETE |
 | ResearchY-S_001 | Post-V2.1 Theory Architecture Synthesis | `S_Synthesis/ResearchY-S_001.md` | `AT.Tests/ResearchY/S_Synthesis/Y_S_001_Tests.cs` (4/4 ✅) | COMPLETE |
 | ResearchY-M_001 | Measurement Origin Audit | `M_Measurement/ResearchY-M_001.md` | `AT.Tests/ResearchY/M_Measurement/Y_M_001_Tests.cs` (7/7 ✅) | COMPLETE |
 | ResearchY-M_002 | Measurement Disturbance Audit | `M_Measurement/ResearchY-M_002.md` | `AT.Tests/ResearchY/M_Measurement/Y_M_002_Tests.cs` (7/7 ✅) | COMPLETE |
