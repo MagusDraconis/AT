@@ -4007,6 +4007,22 @@ face REFUTED (6=1+5 exhaustive); ψ as independent primitive REFUTED (traceless 
 Difference). Success criterion: exactly one scalar + one tensor face because a symmetric rank-2
 difference decomposes as exactly spin-0 ⊕ spin-2. No new primitive; canonical AT unchanged.
 
+ResearchY-NP_081 (Energy Ontology Audit, COMPLETE, tests 9/9 PASSED): what is energy physically
+inside AT? Verdict: energy is a RELABELING of actualization dynamics — NEITHER fundamental NOR
+emergent. Removing all energy language loses nothing derived: ΩΛ = I_occ/ln K = 0.6839 is pure
+information, masses are spectral ratios, forces are generator actions. The conserved quantity is
+the COUNT: Σρ = 1 (normalization) and Σm = Σ(ρ̄−ρ) = 0 (deficit conservation), both DERIVED;
+Noether fails (discrete time Δθ = 2πk/N, no native Lagrangian — QG244 presupposes QG89). A)
+count density PARTIAL (the underlying object, but dimensionless); B) count flow NO (Σρ=1 static);
+C) actualization rate YES (as a DEFINITION, QG89); D) emergent NO; E) boundary definition YES.
+Energy = the conserved count, renamed (QG89 "energy = actualization rate") + unit-ized (anchors
+v, m_e + unit conventions ħ, c, NP_029). Alternative formulation = count + one scale anchor
+(QG289 minimal inventory: framework {η, 3+1, π} + one scale; no free constant). Classification:
+conserved count DERIVED; actualization rate DERIVED; "energy = actualization rate" BOUNDARY
+(definition); dimensionful energy BOUNDARY (anchors + ħ, c); energy as fundamental REFUTED;
+energy as emergent REFUTED. Success criterion: energy is a relabeling — the conserved count
+wearing Joules. No new primitive; canonical AT unchanged.
+
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-

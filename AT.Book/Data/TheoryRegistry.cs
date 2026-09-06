@@ -293,5 +293,9 @@ public sealed class TheoryRegistry
             "Difference actualizes into a SYMMETRIC rank-2 object (A_ij = A_ji), whose decomposition is exhaustively spin-0 TRACE (1 = ρ, scalar/count/isotropic) ⊕ spin-2 TRACELESS (5 = ψ, tensor/orientation/Weyl, 2 TT polarizations). 6 = 1 + 5: no third component, no vector face, no spin-≥3. The duality is DERIVED (rank-2 decomposition); primitive cost = 1 (Difference, with ρ and ψ as its two faces).",
             AuditStatus.Passed, new DateTime(2026, 9, 6), TheoryLayer.Foundations, TheoryClassification.Derived,
             ["difference", "omega-matter"]),
+        new("np081", "Energy Ontology Audit", "What is energy physically inside Actualization Theory?",
+            "Energy is a RELABELING of actualization dynamics — neither fundamental nor emergent. The conserved object is the COUNT (Σρ = 1, Σm = 0, DERIVED); 'energy' is that count renamed (QG89 'energy = actualization rate', a definition) and unit-ized (anchors v, m_e + ħ, c). Noether fails (discrete time). Removing energy language loses nothing derived.",
+            AuditStatus.Passed, new DateTime(2026, 9, 6), TheoryLayer.Foundations, TheoryClassification.Boundary,
+            ["difference", "iocc"]),
     ];
 }

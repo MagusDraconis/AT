@@ -238,6 +238,21 @@ public static class AtlasDataService
                     "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_080.md"),
             ]),
         new(
+            "researchy-np081-energy-ontology",
+            "What Is Energy, Really? It Is the Conserved Count Wearing Joules — a Relabeling of Actualization, Not a Fundamental or Emergent Thing",
+            "ResearchY · NP_081 (Energy Ontology Audit)",
+            "The theory derives the cosmic fractions, the masses, and the forces without ever saying 'energy' — it runs on counts, information, and spectral ratios. This audit asks what energy itself is, and the answer is deflationary but clarifying: energy is just the theory's conserved count (the actualization rate, which always sums to one), re-named 'energy' and given units. It is not a fundamental object (the count is), and not something that emerges (it is simply defined). So 'energy' is a translation layer — the conserved count wearing Joules.",
+            "NP_081 removes all energy language and inventories count, branching, actualization, deficit, and resonance. The conserved quantity is the COUNT: Σρ = 1 (normalization) and Σm = Σ(ρ̄−ρ) = 0 (deficit conservation) — both DERIVED. Noether's theorem fails (AT's time is discrete, Δθ = 2πk/N per tick, and QG244's Lagrangian presupposes QG89), so the only conserved object is the count. Interpretations: A) count density PARTIAL (the underlying object, but dimensionless); B) count flow NO (Σρ=1 is static); C) actualization rate YES (as a DEFINITION — QG89 'energy = actualization rate'); D) emergent NO; E) boundary definition YES. Energy = the conserved count, renamed (QG89) and unit-ized (anchors v, m_e + ħ, c — NP_029). The alternative formulation is complete: count + information + one scale anchor (QG289 minimal inventory). Classification: conserved count DERIVED; QG89 + units BOUNDARY; energy as fundamental REFUTED; energy as emergent REFUTED. Energy is a relabeling.",
+            "For non-experts: what is energy, in this theory? The theory keeps a ledger of 'how much is actually happening' — a count that always adds up to one. Energy is just that count, given a name and a unit (Joules). It isn't a deep thing hiding underneath, and it doesn't pop out of nowhere; it's a convenient way of talking about the theory's one conserved count. The count is real and derived; 'energy' is the count wearing a uniform.",
+            "Energy = the conserved count (actualization rate), renamed and unit-ized — a relabeling, not fundamental or emergent.",
+            "“Energy is the count, wearing Joules.”",
+            false,
+            [
+                new("ResearchY-NP_081", "ENERGY ONTOLOGY AUDIT",
+                    "Energy is a relabeling of the conserved count (QG89 + units); count DERIVED.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_081.md"),
+            ]),
+        new(
             "researchy-np074-quantum-number-ontology",
             "What Are Quantum Numbers? The Symmetry Charges of the D96 Ring: Charge Is the Rotation, Isospin the Doublet, and Only the Color Count Remains a Postulate",
             "ResearchY · NP_074 (Quantum Number Ontology Audit)",
