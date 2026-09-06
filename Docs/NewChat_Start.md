@@ -4059,6 +4059,24 @@ family value DERIVED (QG210), window BOUNDARY; su(3) algebra DERIVED (QG161/242)
 BOUNDARY (QG79); "independent boundaries" REFUTED; "single deeper boundary" REFUTED. Success
 criterion: B — color-3 and family-3 share a hidden common derivation (the period-3 seed → octave
 structure), with two distinct boundary residues. No new primitive; canonical AT unchanged.
+
+ResearchY-NP_084 (Eta Framework Audit, COMPLETE, tests 8/8 PASSED): what is η physically? Verdict:
+η is the CONFORMAL REFERENCE METRIC — a FRAMEWORK boundary, irreducible and necessary, but not a
+physics primitive. It is the reference against which the trace (Tr(A) = η^ij A_ij = the scalar
+face ρ), the traceless part (the tensor face ψ), conformal flatness (Weyl = 0), the Weyl content
+(ψ = deviation from flatness), the metric (g = ρ^(2/d)η), and PPN γ (lensing) are all DEFINED.
+Removing η breaks ρ, ψ, gravity, lensing, and the decomposition — no trace, no traceless, no
+conformal flatness (QG291). Interpretations: A) coordinate convention NO (can't transform away);
+B) reference structure YES; C) geometry primitive PARTIAL (a metric but non-dynamical — no scale,
+no energy, no propagation); D) hidden background metric NO (explicit, non-dynamical). Not
+derivable from Difference: Difference gives the rank-2 object, but the trace/traceless split
+presupposes η as the contraction reference — so the founding pair {Difference, η} is genuinely
+two: Difference = content, η = reading (neither reduces to the other; this completes NP_080's
+trace/traceless duality, which is DERIVED given η). Classification: η FRAMEWORK (QG290/291);
+trace/traceless duality DERIVED (QG286, given η); metric + PPN γ DERIVED (given η); η as
+coordinate convention / hidden background / derivable-from-Difference REFUTED. Success criterion:
+η is a FRAMEWORK boundary — the irreducible, necessary conformal reference structure, complementary
+to and not reducible to Difference. No new primitive; canonical AT unchanged.
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-

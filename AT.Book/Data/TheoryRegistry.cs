@@ -305,5 +305,9 @@ public sealed class TheoryRegistry
             "YES — a hidden common derivation: both descend from the period-3 seed p = 3 (DERIVED), which forces the factor 3 in N = 3·2^k → 3 octave bands → 3 families AND the su(3) color algebra (8 = 3²−1 from the 3 families). Two boundary residues remain: the family window [4,8) and the color-count identification (a postulate).",
             AuditStatus.Passed, new DateTime(2026, 9, 6), TheoryLayer.Structure, TheoryClassification.Derived,
             ["families", "occupancy"]),
+        new("np084", "Eta Framework Audit", "What is η physically — the reference against which trace, traceless, conformal flatness, and Weyl are defined?",
+            "η is the conformal reference metric — a FRAMEWORK boundary, irreducible and necessary, but not a physics primitive. It defines the trace (ρ), traceless (ψ), conformal flatness, Weyl content, metric g = ρ^(2/d)η, and PPN γ. Removing η breaks the entire geometric reading. Not derivable from Difference: the contraction presupposes η, so {Difference, η} = content + reading, genuinely two.",
+            AuditStatus.Passed, new DateTime(2026, 9, 6), TheoryLayer.Foundations, TheoryClassification.Boundary,
+            ["difference", "eta"]),
     ];
 }

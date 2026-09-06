@@ -283,6 +283,21 @@ public static class AtlasDataService
                     "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_083.md"),
             ]),
         new(
+            "researchy-np084-eta-framework",
+            "What Is η? The Reference That Makes the Reading Possible — the Second Half of the Founding Pair",
+            "ResearchY · NP_084 (Eta Framework Audit)",
+            "The theory has two founding ingredients: Difference — the bare fact that things can differ — and η, a second item that has long looked mysterious. This audit pins down what η actually is. It is the reference structure that makes the geometric reading possible: the conformal reference metric against which 'how much' (the scalar face, the trace) and 'which way' (the tensor face, the traceless part) are even defined. Without η there is no notion of a trace, no notion of 'traceless', no notion of conformally flat — the whole geometry collapses. So η is not a hidden background and not a mere coordinate choice; it is the reading half of the founding pair, complementary to Difference.",
+            "NP_084 inventories every use of η: the trace Tr(A) = η^ij A_ij (the scalar face ρ), the traceless part A_ij − (1/d)Tr(A)η_ij (the tensor face ψ), conformal flatness (Weyl = 0 ⇒ g = ρ^(2/d)η), the Weyl content ψ (deviation from flatness), the metric ansatz g = ρ^(2/d)η, and PPN γ (lensing). Removing η breaks all of them — no trace, no traceless, no conformal flatness, no metric, no lensing. Interpretations: A) coordinate convention NO (it cannot be transformed away); B) reference structure YES; C) geometry primitive PARTIAL (a metric, but non-dynamical — no scale, no energy, no propagation); D) hidden background metric NO (explicit and non-dynamical). η is not derivable from Difference: Difference supplies the rank-2 object, but the trace/traceless decomposition presupposes η as the contraction reference, so {Difference, η} = content + reading are genuinely two — neither reduces to the other. This completes NP_080: the trace/traceless duality is DERIVED given η. Classification: η FRAMEWORK (necessary, irreducible); duality/metric/γ DERIVED given η; convention/background/derivable REFUTED.",
+            "For non-experts: the theory starts from 'things can differ' — but to turn a difference into a measurement you need a ruler: a reference that says what 'along' and 'across' and 'flat' mean. That reference is η. It isn't a thing that moves or carries energy; it is the fixed reading-frame against which every physical quantity is read. So the theory's two starting points are a pair: Difference (the content) and η (the ruler that reads it).",
+            "η = the conformal reference metric — the reading half of the founding pair, framework (necessary, irreducible).",
+            "“Difference is what there is; η is the ruler that reads it.”",
+            false,
+            [
+                new("ResearchY-NP_084", "ETA FRAMEWORK AUDIT",
+                    "η is a FRAMEWORK boundary: the irreducible, necessary conformal reference.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_084.md"),
+            ]),
+        new(
             "researchy-np074-quantum-number-ontology",
             "What Are Quantum Numbers? The Symmetry Charges of the D96 Ring: Charge Is the Rotation, Isospin the Doublet, and Only the Color Count Remains a Postulate",
             "ResearchY · NP_074 (Quantum Number Ontology Audit)",
