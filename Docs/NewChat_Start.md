@@ -4126,6 +4126,23 @@ Classification: nucleons + isospin DERIVED (NP_072/074); strong coupling CORRESP
 binding/magic numbers/shells MISSING. Success criterion: nuclei are correspondence-only — the
 nucleons are mapped, the nuclei are not; nuclear structure is the clearest large domain that does
 NOT follow from the 1D D96 ring (confirms NP_085). No new primitive; canonical AT unchanged.
+
+ResearchY-NP_088 (D96 Network Geometry Audit, COMPLETE, tests 9/9 PASSED): is the ontology truly a
+single 1D ring, or does the theory already contain an effective higher-dimensional network
+geometry? Verdict: the theory ALREADY contains an EMERGENT 3D geometry — D96 ⊗ D96 ⊗ D96 raises
+the DOS exponent to p = 3 (a 3D cubic lattice), and d = 3 is DERIVED (QG197's (d−2) bridge: G ≡ 0
+at d=2, non-trivial at d≥3). So D96 is a seed AND a node (the Weyl law p = d = number of tensor
+factors: 1/2/3/N rings → p = 1/2/3/N). BUT this does NOT rescue nuclear structure: the 3D network
+has CUBIC (octahedral O_h) symmetry with irreps {1,2,3}, while nuclear shells need ROTATIONAL O(3)
+symmetry with 2l+1 = {1,3,5,7} spherical harmonics + spin-orbit; the cubic lattice breaks the
+spherical degeneracies (l=2 (5) → 2+3; l=3 (7) → 1+3+3), so the magic numbers [2,8,20,28,50,82,126]
+are still not reproduced. Re-evaluation of NP_087: the "1D" diagnosis is TOO NARROW (the theory
+networks to 3D); the "missing" verdict SURVIVES, refined to "cubic symmetry vs rotational spherical
+symmetry". Classification: emergent 3D geometry EMERGENT/DERIVED (QG197 + NP_037 tensor product);
+nuclear-shell rescue REFUTED (cubic ≠ spherical); NP_087's missing verdict survives (refined).
+Success criterion: the theory already contains an emergent higher-dimensional geometry via D96
+networking, but nuclear structure remains missing — now because the network is cubic, not
+rotationally-symmetric. No new primitive; canonical AT unchanged.
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-

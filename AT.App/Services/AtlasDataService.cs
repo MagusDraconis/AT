@@ -343,6 +343,21 @@ public static class AtlasDataService
                     "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_087.md"),
             ]),
         new(
+            "researchy-np088-network-geometry",
+            "Is the Ring Really One-Dimensional? The Theory Already Networks into 3D — but Still Not the Nuclear Kind",
+            "ResearchY · NP_088 (D96 Network Geometry Audit)",
+            "The previous audit blamed the missing nuclear structure on the ring being one-dimensional. This audit checks that premise — and finds it too hasty. The theory already knows how to couple rings together: three rings (a tensor product) give a three-dimensional lattice, and the dimension three is itself derived (gravity only works in three or more dimensions). So the theory is not stuck in 1D. But the rescue is incomplete: the three-dimensional network is a cubic lattice, which has cubic symmetry, while atomic nuclei need the full rotational symmetry of spheres. A cubic lattice and a spherical shell are different geometries, so the magic numbers still don't fall out. The frontier is refined, not moved: the theory reaches 3D, but the nuclear shell structure remains beyond it.",
+            "NP_088 inventories every higher-dimensional construction already in the theory: the tensor product D96 ⊗ D96 ⊗ D96 (raising the density-of-states exponent to p = 3), the 2D→3D bridge (the (d−2) factor that makes gravity trivial in 2D and non-trivial in 3D and above, QG197), and the 3D connectivity classes (tetrahedra, valence classes, QG114). D96 is therefore a seed AND a node: the Weyl law gives p = d = the number of tensor factors (1 ring → p=1, 2 → p=2, 3 → p=3). But the symmetry is the sticking point: the cubic (octahedral) lattice has irreps of dimension 1, 2, 3, while nuclear shells need rotational symmetry with 2l+1 = 1, 3, 5, 7 spherical harmonics closed by spin-orbit. The cubic lattice breaks the spherical degeneracies (the 5-fold d-wave splits into 2+3, the 7-fold f-wave into 1+3+3), so the magic numbers [2, 8, 20, 28, 50, 82, 126] are still not reproduced. Re-evaluation of NP_087: its '1D' diagnosis is corrected, but its 'missing' verdict survives — refined to cubic-vs-rotational symmetry.",
+            "For non-experts: was the previous chapter too pessimistic in calling the theory one-dimensional? A bit. The theory can couple its rings together — three rings make a three-dimensional grid, and the number 'three' for space is itself derived. But that grid is cubic, like a stack of cubes, whereas nuclei are built on spheres (spherical shells). Cubes and spheres have different symmetries, so the 'magic numbers' that fill spherical shells still don't come out of the cubic grid. The theory reaches three dimensions, but the spherical nuclear shell remains the next unsolved step.",
+            "The theory networks to 3D (derived), but the cubic lattice lacks the rotational symmetry nuclei need.",
+            "“Three rings make a 3D grid — but nuclei want spheres, not cubes.”",
+            false,
+            [
+                new("ResearchY-NP_088", "D96 NETWORK GEOMETRY AUDIT",
+                    "Emergent 3D geometry exists (D96⊗D96⊗D96, d=3 derived); nuclear rescue refuted (cubic ≠ spherical).",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_088.md"),
+            ]),
+        new(
             "researchy-np074-quantum-number-ontology",
             "What Are Quantum Numbers? The Symmetry Charges of the D96 Ring: Charge Is the Rotation, Isospin the Doublet, and Only the Color Count Remains a Postulate",
             "ResearchY · NP_074 (Quantum Number Ontology Audit)",

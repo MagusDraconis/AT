@@ -321,5 +321,9 @@ public sealed class TheoryRegistry
             "Nuclei are CORRESPONDENCE-ONLY (D). The nucleons are DERIVED (proton/neutron quark composites, isospin doublet) and the strong coupling is a CORRESPONDENCE (α_strong = 8/Σ√m); but nuclear structure is MISSING — binding energies, magic numbers [2,8,20,28,50,82,126], and shells. Reason: the D96 ring is 1D (mirror-pair degeneracies), while nuclear shells are 3D spherical harmonics + spin-orbit.",
             AuditStatus.Passed, new DateTime(2026, 9, 6), TheoryLayer.Physics, TheoryClassification.Correspondence,
             ["families", "omega-matter"]),
+        new("np088", "D96 Network Geometry Audit", "Is the ontology truly a single 1D ring, or does it already contain a higher-dimensional network geometry?",
+            "The theory ALREADY contains an EMERGENT 3D geometry: D96 ⊗ D96 ⊗ D96 raises the DOS exponent to p = 3 (cubic lattice), and d = 3 is DERIVED (QG197's (d−2) bridge). D96 is a seed AND a node (Weyl law p = d). But nuclear structure is still not rescued: the cubic lattice has octahedral symmetry (irreps 1,2,3), while nuclear shells need rotational symmetry (2l+1) — the magic numbers still do not follow. Refines NP_087: '1D' was too narrow; 'missing' survives.",
+            AuditStatus.Passed, new DateTime(2026, 9, 6), TheoryLayer.Structure, TheoryClassification.Emergent,
+            ["d96", "occupancy"]),
     ];
 }
