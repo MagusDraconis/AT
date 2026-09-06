@@ -3987,6 +3987,26 @@ irreducible" REFUTED; canonical preferred-scale λ universe REFUTED. Success cri
 the deepest source of AT-F1 is Difference; the true final boundary is Difference, not
 scale-freeness. No new primitive; canonical AT unchanged.
 
+ResearchY-NP_080 (Difference Duality Audit, COMPLETE, tests 11/11 PASSED): why does Difference
+split into exactly one scalar face (ρ) and one tensor face (ψ), not one or many fields? Verdict:
+Difference actualizes into a SYMMETRIC rank-2 object (the connectivity/stress tensor A_ij = A_ji,
+a link connects a pair), and a symmetric rank-2 tensor has an EXHAUSTIVE, UNIQUE decomposition
+into exactly two irreducible representations: the spin-0 TRACE (1 component = ρ, the scalar/count/
+isotropic face) and the spin-2 TRACELESS part (5 components = ψ, the tensor/orientation/Weyl face;
+2 physical TT polarizations + and ×). 6 = 1 + 5 at d=3 — no third component, no vector (spin-1)
+face (the antisymmetric part is zero for a symmetric object), no spin-≥3 (rank-2 caps at spin-2).
+Removal: remove ψ → conformally flat (lensing/frame-dragging/GW break, scalar survives); remove ρ
+→ no count/magnitude (information/Ωm/ΩΛ break). Only scalar incomplete, only tensor incomplete,
+scalar+tensor complete. Group theory: trace = conformal/isotropic (ρ), traceless = Weyl/anisotropic
+(ψ = the Weyl content, QG285). Determination: A (duality DERIVED — the rank-2 decomposition
+theorem), not B (boundary), not C (accidental). Primitive cost = 1 (Difference): the two
+"primitives" (ρ, ψ) collapse to ONE primitive with two faces (QG286). Classification: {ρ, ψ}
+duality DERIVED (QG286/301); rank-2 symmetry DERIVED (connectivity links pairs); d=3 DERIVED
+(QG2/197); η reference (defines trace/traceless/conformal/Weyl) FRAMEWORK/BOUNDARY (QG291); third
+face REFUTED (6=1+5 exhaustive); ψ as independent primitive REFUTED (traceless face of the one
+Difference). Success criterion: exactly one scalar + one tensor face because a symmetric rank-2
+difference decomposes as exactly spin-0 ⊕ spin-2. No new primitive; canonical AT unchanged.
+
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-

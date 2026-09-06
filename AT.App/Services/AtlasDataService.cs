@@ -223,6 +223,21 @@ public static class AtlasDataService
                     "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_079.md"),
             ]),
         new(
+            "researchy-np080-difference-duality",
+            "Why Exactly Two Faces? Difference Splits Into One Scalar and One Tensor Because a Symmetric Rank-2 Object Decomposes Into Exactly Spin-0 ⊕ Spin-2",
+            "ResearchY · NP_080 (Difference Duality Audit)",
+            "The theory has two 'primitives': ρ, the scalar counting density (which gives mass, information, and the cosmic fractions), and ψ, the tensor graviton (which gives lensing and gravitational waves). This audit asks why there are exactly two — not one, not many. The answer is pure group theory: Difference actualizes into a symmetric rank-2 object (a link connects a pair of things), and a symmetric rank-2 object splits in exactly one exhaustive way — into its trace (one number: the scalar face, 'how much') and its traceless part (five numbers: the tensor face, 'which way'). There is no third piece and no vector piece. So the two faces are not a choice; they are the two irreducible halves of one Difference.",
+            "NP_080 traces the duality to the rank-2 decomposition. A symmetric rank-2 tensor A_ij = A_ji in d = 3 dimensions has d(d+1)/2 = 6 components, decomposing exhaustively and uniquely into the TRACE (1 component = spin-0 = ρ, the scalar/count/isotropic face) and the TRACELESS part (5 components = 2J+1 with J=2 = spin-2 = ψ, the tensor/orientation/Weyl face; 2 physical transverse-traceless polarizations + and ×). 6 = 1 + 5. There is no third component and no vector (spin-1) face because the antisymmetric part (3 components) is zero for a symmetric object; no spin-≥3 because a rank-2 object caps at spin-2. Removal tests: remove ψ → conformally flat (lensing/frame-dragging/GW break, scalar survives); remove ρ → no count/magnitude (information/Ωm/ΩΛ break); only-scalar and only-tensor are each incomplete, scalar+tensor complete. Group-theoretic reading: trace = conformal/isotropic (ρ), traceless = Weyl/anisotropic (ψ = the Weyl content, QG285). Determination: A — the duality is DERIVED (the rank-2 decomposition theorem), not boundary, not accidental. Primitive cost = 1: ρ and ψ collapse to ONE primitive (Difference) with two faces (QG286).",
+            "For non-experts: why two faces and not one or three? Because a 'difference' between two things is like an arrow between them — it has a size (how much they differ) and a direction (which way). Size is the scalar ρ; direction is the tensor ψ. Any arrow splits in exactly that way — a length plus a direction — with nothing left over and nothing extra. So the theory's two 'primitives' are really one idea, Difference, seen from its two sides: how much, and which way.",
+            "Difference = one primitive with two faces: ρ (trace, how much) + ψ (traceless, which way); 6 = 1 + 5.",
+            "“One difference, two faces: how much, and which way.”",
+            false,
+            [
+                new("ResearchY-NP_080", "DIFFERENCE DUALITY AUDIT",
+                    "Duality DERIVED (spin-0 ⊕ spin-2); primitive cost = 1 (Difference).",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_080.md"),
+            ]),
+        new(
             "researchy-np074-quantum-number-ontology",
             "What Are Quantum Numbers? The Symmetry Charges of the D96 Ring: Charge Is the Rotation, Isospin the Doublet, and Only the Color Count Remains a Postulate",
             "ResearchY · NP_074 (Quantum Number Ontology Audit)",

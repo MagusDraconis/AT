@@ -289,5 +289,9 @@ public sealed class TheoryRegistry
             "Scale-freeness is DERIVED from Difference, NOT the final boundary. Difference is a BINARY (metric-free) relation, so the primitives it grounds (Q-events, the counting measure as a density of weight d, the causal order) carry no scale; scale-freeness follows as the unique renormalization-invariant abundance (the power law = RG fixed point = indifference). The true final boundary is Difference itself.",
             AuditStatus.Passed, new DateTime(2026, 9, 6), TheoryLayer.Foundations, TheoryClassification.Derived,
             ["difference", "iocc"]),
+        new("np080", "Difference Duality Audit", "Why does Difference split into exactly one scalar face (ρ) and one tensor face (ψ)?",
+            "Difference actualizes into a SYMMETRIC rank-2 object (A_ij = A_ji), whose decomposition is exhaustively spin-0 TRACE (1 = ρ, scalar/count/isotropic) ⊕ spin-2 TRACELESS (5 = ψ, tensor/orientation/Weyl, 2 TT polarizations). 6 = 1 + 5: no third component, no vector face, no spin-≥3. The duality is DERIVED (rank-2 decomposition); primitive cost = 1 (Difference, with ρ and ψ as its two faces).",
+            AuditStatus.Passed, new DateTime(2026, 9, 6), TheoryLayer.Foundations, TheoryClassification.Derived,
+            ["difference", "omega-matter"]),
     ];
 }
