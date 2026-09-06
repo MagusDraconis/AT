@@ -4392,6 +4392,20 @@ Difference BOUNDARY (the primitive, NP_086); Difference's indestructibility BOUN
 being cannot be removed); the conservation of distinguishability DERIVED (M_005, count
 conservation); "Difference can disappear" REFUTED; "a distinction-free state exists" REFUTED. No new
 primitive; canonical AT unchanged.
+ResearchY-NP_105 (Difference Conservation Audit, COMPLETE, tests 8/8 PASSED): is Difference the
+true conserved quantity? Verdict: YES — Difference is the PARENT conservation law (A = B = C); D
+(independent) REFUTED. The invariant is the indestructible Difference structure (the 95 distinct
+states, NP_104). Every conserved quantity is a projection of it: count (Σρ = 1) is the MEASURE of
+Difference (QG216); information is the STRUCTURE of Difference (M_005); momentum (phase gradient k)
+and charge (U(1) eigenvalue) are Noether symmetries of the Difference structure (NP_075/QG89, the
+1+3+8 = 12 D96 generators). Existence is NOT conserved — it can cease (NP_102/103) — because
+existence is Difference made persistent, not the invariant. Removing Difference breaks everything:
+no distinct modes, no count, no information, no symmetries, no existence. The Noether/symmetry/
+counting analogues coincide: the D96 automorphism group preserves the distinction structure, and
+the conserved charges are its generators. Classification: Conservation of Difference BOUNDARY (the
+indestructibility of the primitive, NP_104); count/information/momentum/charge conservation DERIVED
+(projections); "conservation is independent" (D) REFUTED; "existence is conserved" REFUTED. No new
+primitive; canonical AT unchanged.
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-

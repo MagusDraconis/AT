@@ -598,6 +598,21 @@ public static class AtlasDataService
                     "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_104.md"),
             ]),
         new(
+            "researchy-np105-difference-conservation",
+            "The One Thing That Never Changes: Difference Is the Parent of Every Conservation Law",
+            "ResearchY · NP_105 (Difference Conservation Audit)",
+            "Physics is built on things that are conserved — energy, charge, momentum. Actualization Theory asks what lies beneath them all, and finds a single answer: difference itself. The distinctions that make one thing 'this' and another 'that' cannot be created or destroyed. Count is conserved because it is the measure of those distinctions; information is conserved because it is their structure; charge and momentum are conserved because they are the symmetries that keep the distinctions in order. Existence, by contrast, comes and goes. Only difference never changes. It is the parent of every conservation law.",
+            "NP_105 inventories six conservation laws. Count (Σρ = 1) = the MEASURE of Difference (QG216); information (95 distinct states) = the STRUCTURE of Difference (M_005); momentum (the phase gradient) and charge (the U(1) eigenvalue) = the Noether symmetries of the Difference structure (1+3+8 = 12 D96 generators, NP_075/QG89); existence is NOT conserved (it can cease, NP_102/103); Difference is the PARENT invariant (indestructible, NP_104). Removing Difference breaks everything. Determination: A = B = C (Difference is conserved, generates conservation, and is the parent law); D (independent) REFUTED. Conservation of Difference is BOUNDARY; the projections are DERIVED.",
+            "For non-experts: in a game of chess, the pieces can be rearranged endlessly — but the fact that a knight is 'not a bishop' never changes. That is difference: the one thing that cannot be lost. Energy, charge, and momentum are conserved because they are different ways of measuring or keeping order among differences. The only truly unchangeable thing is the 'this, not that' itself.",
+            "Difference is the parent conservation law; count/information/momentum/charge are its projections.",
+            "“Every conserved thing is conserved because difference is.”",
+            false,
+            [
+                new("ResearchY-NP_105", "DIFFERENCE CONSERVATION AUDIT",
+                    "Difference is the parent conservation law; all other laws project from the indestructible Difference structure.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_105.md"),
+            ]),
+        new(
             "researchy-np074-quantum-number-ontology",
             "What Are Quantum Numbers? The Symmetry Charges of the D96 Ring: Charge Is the Rotation, Isospin the Doublet, and Only the Color Count Remains a Postulate",
             "ResearchY · NP_074 (Quantum Number Ontology Audit)",
