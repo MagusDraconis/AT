@@ -4363,6 +4363,21 @@ Classification: Difference (the minimal condition) BOUNDARY (NP_086); stability/
 (NP_094/100); the existing thing (stable resonance/deficit structure) DERIVED (NP_072/100); the
 hierarchy EMERGENT (NP_101); "existence = observation" REFUTED; "existence as a new primitive"
 REFUTED. No new primitive; canonical AT unchanged.
+ResearchY-NP_103 (Nonexistence Ontology Audit, COMPLETE, tests 9/9 PASSED): what ceases to exist?
+Verdict: nonexistence = the NEGATION of existence — a thing ceases to exist when it loses its
+DISTINGUISHABILITY (Difference) or its PERSISTENCE (stability): NOT(Existence) = ¬Difference ∨
+¬Persistence (from NP_102). The two full channels are DECAY (¬Persistence: the structure dissolves)
+and THERMALIZATION (¬Difference: the identity merges into the uniform bath); losing LOCALIZATION (C)
+or BINDING (D) is PARTIAL — form changes (a spread packet, a dissociated composite), the underlying
+resonances survive. Decay/decoherence/dissociation/thermalization all REDISTRIBUTE the conserved
+count (energy, NP_081): information is REDISTRIBUTED, not destroyed (Σρ = 1 conserved, M_005;
+I_occ = ln K − H → 0 as distinguishability spreads into random phase, NP_096). The final stage of
+decay is structure → pattern → noise → UNIFORM (ρ_k = 1/K, maximum entropy, QG227), beyond which
+only DIFFERENCE (the substrate) remains — nonexistence reaches uniform noise, never "nothing".
+Classification: the negation logic DERIVED (from NP_102); decay/thermalization DERIVED
+(NP_095/096/100); the uniform end-state DERIVED (QG227); information redistribution DERIVED (M_005);
+Difference (the substrate that never ceases) BOUNDARY (NP_086); "information is destroyed" REFUTED;
+"nonexistence reaches nothing" REFUTED. No new primitive; canonical AT unchanged.
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-

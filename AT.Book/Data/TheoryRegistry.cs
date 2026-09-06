@@ -381,5 +381,9 @@ public sealed class TheoryRegistry
             "To exist = to be a PERSISTENT, DISTINGUISHABLE structure — a Difference that endures actualization. Minimum condition = Difference (distinguishability) + stability (persistence). A = B = C (persistence = stable resonance = bound deficit structure); D (observability) is a consequence. Remove stability → everything dissolves, only Difference survives. Difference BOUNDARY; stability DERIVED; the hierarchy EMERGENT.",
             AuditStatus.Passed, new DateTime(2026, 9, 6), TheoryLayer.Foundations, TheoryClassification.Boundary,
             ["difference"]),
+        new("np103", "Nonexistence Ontology Audit", "What ceases to exist inside Actualization Theory?",
+            "Nonexistence = the negation of existence: a thing ceases to exist when it loses its DISTINGUISHABILITY (Difference) or its PERSISTENCE (stability) — NOT(Existence) = ¬Difference ∨ ¬Persistence. Decay (¬Persistence) and thermalization (¬Difference) are the full channels; loss of localization/binding is partial. Information is REDISTRIBUTED, not destroyed; the final stage is structure → pattern → noise → uniform (ρ_k=1/K) → Difference. Nonexistence reaches uniform noise, never nothing.",
+            AuditStatus.Passed, new DateTime(2026, 9, 6), TheoryLayer.Foundations, TheoryClassification.Boundary,
+            ["difference"]),
     ];
 }

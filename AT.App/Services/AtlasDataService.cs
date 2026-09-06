@@ -568,6 +568,21 @@ public static class AtlasDataService
                     "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_102.md"),
             ]),
         new(
+            "researchy-np103-nonexistence-ontology",
+            "What Ceases to Exist? A Difference That Fades, or Blends Away",
+            "ResearchY · NP_103 (Nonexistence Ontology Audit)",
+            "If a thing exists by being a difference that endures, then it ceases to exist in exactly two ways: it stops enduring, or it stops being a difference. A particle decays — its resonance fades and it is gone. A hot body cools into its surroundings — its pattern blends away until you can no longer tell it apart from the noise. That is nonexistence: not a thing turning into 'nothing', but a difference fading, or melting into the background. And what becomes of it? Nothing is destroyed — its substance is simply spread out, thinned into uniform noise over the one thing that never fades: Difference itself.",
+            "NP_103 defines NOT(Existence) = ¬Difference ∨ ¬Persistence (from NP_102). The two full channels: decay (¬Persistence, the structure dissolves) and thermalization (¬Difference, the identity merges into the uniform bath); losing localization or binding is PARTIAL (a spread packet or dissociated composite — form changes, the resonances survive). Decay, decoherence, dissociation, and thermalization all REDISTRIBUTE the conserved count (Σρ = 1, NP_081) — information is redistributed, never destroyed (M_005). The final stage is structure → pattern → noise → UNIFORM (ρ_k = 1/K, maximum entropy, QG227) → DIFFERENCE (the substrate). Nonexistence reaches uniform noise, never nothing.",
+            "For non-experts: a candle flame exists while it burns; when it goes out, it has not turned into 'nothing' — its heat and smoke have spread into the air, thinned until you cannot pick them out. A thing stops existing when its distinctness fades (it blends in) or its endurance fails (it breaks apart). Either way, nothing is truly lost; it is just spread too thin to call a thing.",
+            "Nonexistence = ¬Difference ∨ ¬Persistence; information redistributed, not destroyed; ends at uniform noise.",
+            "“To cease to exist is to fade, or to blend away.”",
+            false,
+            [
+                new("ResearchY-NP_103", "NONEXISTENCE ONTOLOGY AUDIT",
+                    "Nonexistence = loss of Difference or persistence; decay → uniform noise → Difference.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_103.md"),
+            ]),
+        new(
             "researchy-np074-quantum-number-ontology",
             "What Are Quantum Numbers? The Symmetry Charges of the D96 Ring: Charge Is the Rotation, Isospin the Doublet, and Only the Color Count Remains a Postulate",
             "ResearchY · NP_074 (Quantum Number Ontology Audit)",
