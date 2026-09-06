@@ -317,5 +317,9 @@ public sealed class TheoryRegistry
             "Difference is the MINIMAL and UNIQUE primitive — the bare logical possibility of distinction. Not derivable, not replaceable: identity is insufficient (self-identity does not give a ≠ b), relation presupposes distinct relata, count/information/symmetry are downstream. Identity is the logical dual but the preservation relation (conservation, higher); Difference is the generation relation (bottom). No weaker primitive exists.",
             AuditStatus.Passed, new DateTime(2026, 9, 6), TheoryLayer.Foundations, TheoryClassification.Boundary,
             ["difference"]),
+        new("np087", "Nuclear Structure Audit", "Can Actualization Theory explain nuclear structure — binding energies, magic numbers, shell structure?",
+            "Nuclei are CORRESPONDENCE-ONLY (D). The nucleons are DERIVED (proton/neutron quark composites, isospin doublet) and the strong coupling is a CORRESPONDENCE (α_strong = 8/Σ√m); but nuclear structure is MISSING — binding energies, magic numbers [2,8,20,28,50,82,126], and shells. Reason: the D96 ring is 1D (mirror-pair degeneracies), while nuclear shells are 3D spherical harmonics + spin-orbit.",
+            AuditStatus.Passed, new DateTime(2026, 9, 6), TheoryLayer.Physics, TheoryClassification.Correspondence,
+            ["families", "omega-matter"]),
     ];
 }

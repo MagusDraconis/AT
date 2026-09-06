@@ -4110,6 +4110,22 @@ difference, existence/unity generate nothing. Determination: C (minimal) = D (un
 minimal + unique, QG270); identity/relation/count/information/symmetry as replacements REFUTED;
 weaker primitive REFUTED. Success criterion: Difference is the minimal possible primitive — the
 irreducible generative seed. No new primitive; canonical AT unchanged.
+
+ResearchY-NP_087 (Nuclear Structure Audit, COMPLETE, tests 7/7 PASSED): can AT explain nuclear
+structure (binding energies, magic numbers, shell structure)? Verdict: nuclei are
+CORRESPONDENCE-ONLY (D). The NUCLEONS are DERIVED (proton = uud, neutron = udd quark composites
+forming an isospin doublet, NP_072/074; n−p mass gap 1.29 MeV is a small isospin-breaking/EM
+effect, NOT derived), and the strong coupling is a CORRESPONDENCE (α_strong = 8/Σ√m). But the
+nuclear STRUCTURE is MISSING: binding energies (deuteron 2.224 MeV, He-4 28.3 MeV), magic numbers
+[2,8,20,28,50,82,126], and shell structure are all absent. Structural reason: the D96 ring is 1D
+with 47 mirror-pair (O(2)) degeneracies + 1 central mode, while nuclear shells are 3D with (2l+1)
+spherical-harmonic degeneracies closed by spin-orbit — a genuine mismatch; the 1D ring does not
+generate the 3D shell structure. Determination: A (resonance composite) and B (deficit composite)
+REFUTED; C (symmetry composite) PARTIAL (isospin doublet only); D (correspondence only) YES.
+Classification: nucleons + isospin DERIVED (NP_072/074); strong coupling CORRESPONDENCE; nuclear
+binding/magic numbers/shells MISSING. Success criterion: nuclei are correspondence-only — the
+nucleons are mapped, the nuclei are not; nuclear structure is the clearest large domain that does
+NOT follow from the 1D D96 ring (confirms NP_085). No new primitive; canonical AT unchanged.
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-

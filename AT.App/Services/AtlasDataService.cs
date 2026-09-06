@@ -328,6 +328,21 @@ public static class AtlasDataService
                     "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_086.md"),
             ]),
         new(
+            "researchy-np087-nuclear-structure",
+            "Can the Theory Explain Atomic Nuclei? The Nucleons Yes, the Nuclear Structure Not Yet",
+            "ResearchY · NP_087 (Nuclear Structure Audit)",
+            "The theory can build the proton and neutron — they are derived composites of its quark modes, two faces of an isospin pair — and it can state the strength of the strong force as a spectral ratio. But it cannot yet explain how protons and neutrons bind into nuclei: the deuteron's binding, helium's tightness, the magic numbers, the shell structure. The reason is geometric: the theory's ring is one-dimensional, with pairs of mirror modes, while nuclear shells live in three dimensions, with spherical shells closed by spin-orbit coupling. Those are different kinds of structure, and the one-dimensional ring does not produce the three-dimensional shells. So nuclei are a frontier: the pieces are mapped, the structure is not.",
+            "NP_087 inventories the nucleons and light nuclei. The proton (uud) and neutron (udd) are DERIVED quark composites forming an isospin doublet (the Z2 pair, NP_074); the n−p mass gap (~1.29 MeV) is a small isospin-breaking/electromagnetic effect, not derived. The deuteron (np, binding 2.224 MeV) and helium-4 (2p2n, 28.3 MeV) are NOT derived — they need the residual strong force (pion exchange between nucleons). The magic numbers [2, 8, 20, 28, 50, 82, 126] arise from the three-dimensional shell model (spherical-harmonic degeneracies plus spin-orbit); the D96 ring is one-dimensional with 47 mirror-pair (O(2)) degeneracies, so the two degeneracy structures differ and the 1D ring does not generate the 3D shells. Binding-energy trends (the rise to iron, the liquid-drop volume/surface/Coulomb/asymmetry terms) are likewise absent. Determination: A (resonance composite) and B (deficit composite) REFUTED; C (symmetry composite) PARTIAL — the isospin doublet only; D (correspondence only) YES. Classification: nucleons and isospin DERIVED, strong coupling CORRESPONDENCE, nuclear structure MISSING.",
+            "For non-experts: the theory can make a proton and a neutron, and it can say how strongly quarks stick together. But it cannot yet explain how protons and neutrons stick to each other to make nuclei — the magic numbers, the shells, the binding energies. Why? Because the theory's structure is a one-dimensional ring (with left-right mirror pairs), while nuclei are built from three-dimensional shells. A 1D ring and a 3D shell are different geometries, and the ring doesn't produce the shells. So nuclei are the next frontier: the building blocks are ready, the building itself is not.",
+            "Nucleons are derived quark composites; nuclear structure (binding, magic numbers, shells) is missing.",
+            "“The ring makes the bricks; the 3D shell still has to be built.”",
+            false,
+            [
+                new("ResearchY-NP_087", "NUCLEAR STRUCTURE AUDIT",
+                    "Nuclei are correspondence-only: nucleons mapped, nuclear structure missing.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_087.md"),
+            ]),
+        new(
             "researchy-np074-quantum-number-ontology",
             "What Are Quantum Numbers? The Symmetry Charges of the D96 Ring: Charge Is the Rotation, Isospin the Doublet, and Only the Color Count Remains a Postulate",
             "ResearchY · NP_074 (Quantum Number Ontology Audit)",

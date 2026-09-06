@@ -181,6 +181,7 @@
 | ResearchY-NP_084 | Eta Framework Audit | `NP_NewPhysics/ResearchY-NP_084.md` | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_084_Tests.cs` (8/8 ✅) | COMPLETE |
 | ResearchY-NP_085 | Completeness Frontier Audit | `NP_NewPhysics/ResearchY-NP_085.md` | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_085_Tests.cs` (8/8 ✅) | COMPLETE |
 | ResearchY-NP_086 | Difference Necessity Audit | `NP_NewPhysics/ResearchY-NP_086.md` | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_086_Tests.cs` (7/7 ✅) | COMPLETE |
+| ResearchY-NP_087 | Nuclear Structure Audit | `NP_NewPhysics/ResearchY-NP_087.md` | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_087_Tests.cs` (7/7 ✅) | COMPLETE |
 | ResearchY-S_001 | Post-V2.1 Theory Architecture Synthesis | `S_Synthesis/ResearchY-S_001.md` | `AT.Tests/ResearchY/S_Synthesis/Y_S_001_Tests.cs` (4/4 ✅) | COMPLETE |
 | ResearchY-M_001 | Measurement Origin Audit | `M_Measurement/ResearchY-M_001.md` | `AT.Tests/ResearchY/M_Measurement/Y_M_001_Tests.cs` (7/7 ✅) | COMPLETE |
 | ResearchY-M_002 | Measurement Disturbance Audit | `M_Measurement/ResearchY-M_002.md` | `AT.Tests/ResearchY/M_Measurement/Y_M_002_Tests.cs` (7/7 ✅) | COMPLETE |
