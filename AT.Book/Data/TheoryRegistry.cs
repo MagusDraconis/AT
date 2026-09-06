@@ -353,5 +353,9 @@ public sealed class TheoryRegistry
             "Friction = RESONANCE SCATTERING realized as MODE MIXING: the incoherent accumulation of generator actions (resonance transitions) between a propagating mode and the deficit excitations (matter) in its path. Each scatter changes the wave number k (momentum); the aggregate redistributes k into the material (dissipation) while preserving the resonance class ω₀ (identity). Friction scales with matter density — zero in vacuum (k conserved, pure inertia), growing gas → liquid → solid. It is the exact opposite of inertia: inertia = no transitions (k conserved), friction = transitions (k changes); both reduce to the generator action (once = force, many = friction).",
             AuditStatus.Passed, new DateTime(2026, 9, 6), TheoryLayer.Structure, TheoryClassification.Derived,
             ["d96", "difference"]),
+        new("np096", "Heat Ontology Audit", "What is heat inside Actualization Theory?",
+            "Heat = RANDOM PHASE = MODE MULTIPLICITY = RESONANCE DECOHERENCE, realized as count redistribution under count conservation. Friction's lost phase gradient k becomes incoherent (random-phase) mode excitation spread over many modes — heat. Entropy H = −Σρ ln ρ is its measure (mode multiplicity); entropy growth = increasing mode access. Heat erases information (I_occ = ln K − H → 0). One ontology: motion (coherent phase) → friction (scattering) → heat (random phase) → entropy (mode multiplicity).",
+            AuditStatus.Passed, new DateTime(2026, 9, 6), TheoryLayer.Structure, TheoryClassification.Derived,
+            ["d96", "difference"]),
     ];
 }

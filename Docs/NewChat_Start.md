@@ -4261,6 +4261,21 @@ matter IS the deficit excitations (NP_071), so more matter = more scattering = m
 Classification: the microscopic scatter (a generator action) DERIVED (NP_075); friction as the
 macroscopic dissipation (mode mixing) EMERGENT; the vacuum/matter distinction DERIVED (NP_071);
 "friction is a new primitive/force" REFUTED. No new primitive; canonical AT unchanged.
+ResearchY-NP_096 (Heat Ontology Audit, COMPLETE, tests 8/8 PASSED): what is heat? Verdict: heat =
+RANDOM PHASE = MODE MULTIPLICITY = RESONANCE DECOHERENCE (A = B = D), realized as COUNT
+REDISTRIBUTION (C) under count conservation (NP_081). When friction (NP_095) scatters a propagating
+mode's coherent phase gradient k off matter's deficit excitations, the lost k does NOT vanish — it
+becomes INCOHERENT (random-phase) mode excitation, spreading over the material's many modes. Heat
+is that random-phase, multi-mode, decohered residue. Entropy is its measure: H = −Σρ ln ρ (the mode
+multiplicity — 0 for one mode, ln 95 = 4.5539 for uniform over K=95); therefore ENTROPY GROWTH IS
+EXACTLY INCREASING MODE ACCESS. Heat erases information: I_occ = KL(ρ‖uniform) = ln K − H (QG228)
+→ 0 as heat spreads the count toward uniformity. Vacuum (no friction) → no heat → no entropy
+growth; gas → liquid → solid → more heat + faster entropy growth. One ontology: motion (coherent
+phase) → friction (scattering) → heat (random phase) → entropy (mode multiplicity). Classification:
+heat as the macroscopic thermal state EMERGENT (the aggregate of friction's scatterings); the
+underlying count conservation DERIVED (NP_081); entropy H = −Σρ ln ρ DERIVED (the multiplicity
+functional); entropy growth = increasing mode access DERIVED; "heat as a new primitive/substance"
+REFUTED. No new primitive; canonical AT unchanged.
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-

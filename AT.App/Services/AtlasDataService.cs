@@ -463,6 +463,21 @@ public static class AtlasDataService
                     "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_095.md"),
             ]),
         new(
+            "researchy-np096-heat-ontology",
+            "What Is Heat? Motion's Echo, Scattered Into Every Direction at Once",
+            "ResearchY · NP_096 (Heat Ontology Audit)",
+            "When friction slows a moving particle, where does its motion go? It does not vanish — it becomes heat. In Actualization Theory this has a precise meaning. A moving particle is a wave with a single clean direction. Each collision scatters that wave, and the direction leaks out into a jumble of random, uncoordinated wobbles spread across the material's many modes. Heat is that jumble: motion's echo, scattered into every direction at once. And entropy is simply how many different wobbles the motion has spread into.",
+            "NP_096 traces a friction event: friction (NP_095) scatters a propagating mode's coherent phase gradient k off matter's deficit excitations (NP_071); the lost k does not vanish (count is conserved, NP_081) but becomes INCOHERENT (random-phase) mode excitation spread over many modes. Heat = random phase = mode multiplicity = resonance decoherence (A = B = D), realized as count redistribution (C). Entropy is its measure: H = −Σρ ln ρ — 0 for one mode, ln 95 = 4.5539 for uniform over all 95 modes. So entropy growth IS increasing mode access. Heat erases information: I_occ = ln K − H → 0. Vacuum (no friction) produces no heat and no entropy growth; gas → liquid → solid produce more. One ontology: motion (coherent phase) → friction (scattering) → heat (random phase) → entropy (mode multiplicity).",
+            "For non-experts: a ball rolling on a table eventually stops, and the table gets a little warmer. The motion didn't disappear — it turned into countless tiny, random jiggles in the table's atoms. Heat is exactly that: motion's direction broken up and scattered into every direction at once. And entropy is just counting how many different jiggles the motion got spread into. More spread = more entropy.",
+            "Heat = random phase (motion scattered into many modes); entropy = the count of modes it spread into.",
+            "“Heat is motion's echo, scattered in every direction.”",
+            false,
+            [
+                new("ResearchY-NP_096", "HEAT ONTOLOGY AUDIT",
+                    "Heat = random-phase mode multiplicity; entropy growth = increasing mode access.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_096.md"),
+            ]),
+        new(
             "researchy-np074-quantum-number-ontology",
             "What Are Quantum Numbers? The Symmetry Charges of the D96 Ring: Charge Is the Rotation, Isospin the Doublet, and Only the Color Count Remains a Postulate",
             "ResearchY · NP_074 (Quantum Number Ontology Audit)",
