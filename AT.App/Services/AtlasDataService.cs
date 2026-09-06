@@ -418,6 +418,21 @@ public static class AtlasDataService
                     "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_092.md"),
             ]),
         new(
+            "researchy-np093-actualization-selection",
+            "Who Chooses the Next Node? The Born Rule Is the Dice Behind Actualization",
+            "ResearchY · NP_093 (Actualization Selection Audit)",
+            "If nothing travels — if the network of differences is static and only the tick moves — then what decides which node actually changes at the next tick? The answer is the deepest rule of the theory: the Born rule. Each tick realizes one count on one node, and the node is chosen with probability equal to its share of the total count — the very same rule that gives quantum mechanics its probabilities. There is no hidden deterministic chooser and no external dice-roll imported from outside; the weight is derived from the fact that count is conserved.",
+            "NP_093 defines the actualization event (one tick = one count realization, QG216/QG222), then tests selection rules. A deterministic 'maximum wins' rule fails (Born gives P = ρ, not 0/1); uniform random selection fails (Born weights by ρ, not uniformly); the phase fails (θ = 2πk/N evolves deterministically per tick, D_041, but does NOT select the outcome). Only the Born rule survives: P(k) = ρ_k = |ψ_k|², with Σρ = 1 EXACT (count conservation). The two real DOFs split cleanly — phase is the DETERMINISTIC DOF (θ_t = θ₀ + t·Δθ), count is the PROBABILISTIC DOF (Born). Competing maxima resolve statistically: with ρ_A=0.25, ρ_B=0.75, node A fires 25% of the time (2500 of 10000), node B 75% (7500). The rule matches Born statistics (QG216), the M_001 measurement, and the double-slit buildup (the interference I = ρ_A+ρ_B+2√(ρ_Aρ_B)cos Δθ is the statistical accumulation of many Born selections). Determination: B (probabilistic selector) with a DERIVED weight; A refuted; C (information-weighted) partial; D refuted for the weight. Only boundary = the irreducible stochastic realization (the tick, the deepest single boundary).",
+            "For non-experts: think of the net of differences, frozen and unmoving. At each beat, one knot 'fires'. Which one? The answer is the same rule that governs quantum mechanics: a knot's chance of firing is proportional to how much of the total 'count' it holds. There is no hidden puppeteer pulling a string and no cosmic coin-flip added from outside — the weighting comes straight from the fact that the total count never changes. So the randomness of quantum mechanics is not a flaw; it is the dice built into actualization itself.",
+            "The Born rule is the node-selection law: P(k) = ρ_k = |ψ_k|², derived from count conservation.",
+            "“The Born rule is the dice behind actualization.”",
+            false,
+            [
+                new("ResearchY-NP_093", "ACTUALIZATION SELECTION AUDIT",
+                    "Node-selection = Born rule P(k)=|ψ_k|²; phase deterministic (not selector); only boundary = the tick.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_093.md"),
+            ]),
+        new(
             "researchy-np074-quantum-number-ontology",
             "What Are Quantum Numbers? The Symmetry Charges of the D96 Ring: Charge Is the Rotation, Isospin the Doublet, and Only the Color Count Remains a Postulate",
             "ResearchY · NP_074 (Quantum Number Ontology Audit)",

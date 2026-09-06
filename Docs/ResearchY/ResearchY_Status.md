@@ -187,6 +187,7 @@
 | ResearchY-NP_090 | D96 Network Ontology Audit | `NP_NewPhysics/ResearchY-NP_090.md` | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_090_Tests.cs` (8/8 ✅) | COMPLETE |
 | ResearchY-NP_091 | Network Geometry → Spacetime Audit | `NP_NewPhysics/ResearchY-NP_091.md` | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_091_Tests.cs` (9/9 ✅) | COMPLETE |
 | ResearchY-NP_092 | Network Propagation Audit | `NP_NewPhysics/ResearchY-NP_092.md` | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_092_Tests.cs` (12/12 ✅) | COMPLETE |
+| ResearchY-NP_093 | Actualization Selection Audit | `NP_NewPhysics/ResearchY-NP_093.md` | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_093_Tests.cs` (10/10 ✅) | COMPLETE |
 | ResearchY-S_001 | Post-V2.1 Theory Architecture Synthesis | `S_Synthesis/ResearchY-S_001.md` | `AT.Tests/ResearchY/S_Synthesis/Y_S_001_Tests.cs` (4/4 ✅) | COMPLETE |
 | ResearchY-M_001 | Measurement Origin Audit | `M_Measurement/ResearchY-M_001.md` | `AT.Tests/ResearchY/M_Measurement/Y_M_001_Tests.cs` (7/7 ✅) | COMPLETE |
 | ResearchY-M_002 | Measurement Disturbance Audit | `M_Measurement/ResearchY-M_002.md` | `AT.Tests/ResearchY/M_Measurement/Y_M_002_Tests.cs` (7/7 ✅) | COMPLETE |

@@ -341,5 +341,9 @@ public sealed class TheoryRegistry
             "Propagation is NOT transport: the network is static (nodes/links do not move), and nothing substantial travels. The only genuine movement is the actualization TICK (the causal-order advance, massless null M_eff=0); its native propagation law is light along null geodesics (n=1, DERIVED). Everything else only APPEARS to move: a particle is a standing wave (envelope moves at the group velocity v_g); the graviton is a ψ ripple; a force is link-mediated action; count redistributes by continuity. Velocity = v_g (≤ c); locality = adjacency; causality = the partial order.",
             AuditStatus.Passed, new DateTime(2026, 9, 6), TheoryLayer.Structure, TheoryClassification.Derived,
             ["d96", "difference"]),
+        new("np093", "Actualization Selection Audit", "If nothing travels, what determines WHICH node actualizes?",
+            "The node-selection law is the BORN RULE: at each tick, one count is realized on one node, selected with probability ρ_k = |ψ_k|² (the conserved, normalized count share, Σρ = 1 EXACT). The phase advances deterministically (Δθ = 2πk/N, D_041) and is NOT the selector; the count realizes probabilistically (Born) and IS the selector. The weight is DERIVED (count conservation, QG216); the only boundary is the irreducible stochastic realization — one outcome per tick — the discrete tick (the deepest boundary).",
+            AuditStatus.Passed, new DateTime(2026, 9, 6), TheoryLayer.Structure, TheoryClassification.Derived,
+            ["d96", "difference"]),
     ];
 }

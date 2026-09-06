@@ -4212,6 +4212,24 @@ the partial order (nothing outruns the tick). Classification: null geodesics DER
 tick FRAMEWORK (QG29/31); count continuity DERIVED (NP_081); wave-packet motion EMERGENT; ψ ripple
 DERIVED; phase transport REFUTED (NP_005); a propagating field REFUTED (NP_007). No new primitive;
 canonical AT unchanged.
+ResearchY-NP_093 (Actualization Selection Audit, COMPLETE, tests 10/10 PASSED): if nothing travels
+(NP_092), what determines WHICH node actualizes? Verdict: the node-selection law is the BORN RULE —
+an actualization event is one tick = ONE count realization (QG216/QG222) that realizes one count on
+one node, with node k selected with probability ρ_k = |ψ_k|² (the conserved, normalized count
+share, Σρ = 1 EXACT). The two real DOFs select differently: the PHASE θ = 2πk/N advances
+DETERMINISTICALLY per tick (Δθ = 2πk/N, D_041) and does NOT select the outcome; the COUNT ρ
+realizes PROBABILISTICALLY with Born weight and IS the selector. Competing resonance maxima resolve
+statistically by Born weight (larger-ρ node wins proportionally, not always). Matches Born
+statistics exactly (QG216), the M_001 measurement (one outcome with weight ρ), and the double-slit
+buildup (I = ρ_A+ρ_B+2√(ρ_Aρ_B)cos Δθ is the statistical accumulation of many Born selections).
+Determination: B (probabilistic selector) with a DERIVED weight (count conservation, QG216);
+A (deterministic) REFUTED; C (information-weighted) partial (ρ is the occupancy; I = KL(ρ‖uniform)
+= 0.7513 nats, QG228); D (boundary import) REFUTED for the weight. The ONLY boundary is the
+irreducible STOCHASTIC REALIZATION itself — one outcome per tick — the discrete tick, the deepest
+single boundary (QG_011). Classification: Born weight ρ = |ψ|² DERIVED (QG216); deterministic
+phase DERIVED (D_041); probabilistic selection DERIVED; irreducible stochastic realization
+FRAMEWORK/BOUNDARY (the tick); deterministic selector REFUTED; boundary-import selector REFUTED.
+No new primitive; canonical AT unchanged.
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-
