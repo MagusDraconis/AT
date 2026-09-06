@@ -148,6 +148,21 @@ public static class AtlasDataService
                     "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_064.md"),
             ]),
         new(
+            "researchy-np069-expansion-ontology",
+            "What Expands Is the Count, Not an Independent Scale Factor: Cosmic Expansion Is the Branching Growth of the Actualization Count, Read as a Hosted FRW Scale Factor",
+            "ResearchY · NP_069 (Expansion Ontology Audit)",
+            "Stripped of ΛCDM language, expansion in AT is one thing: the branching growth of the actualization count ρ — the flow ρ_{k+1} = μ·ρ_k, ∂_t ρ = ln(μ)·ρ — which carries the metric g = ρ^(2/d)η with it. The cosmological scale factor a = ρ^(1/d) is a hosted relabeling of that same count, not an independent object. At criticality the mean count is static and only its variance grows, so there is no native accelerating scale factor — the acceleration itself is hosted.",
+            "NP_069 inventories the expansion quantities and removes the FRW vocabulary. a = ρ^(1/d), H = ρ̇/ρ = ln μ, and the scale R all reduce to the count density ρ; q₀ and z_acc are hosted FRW closures. The native dynamics is the branching flow (QG222): ρ_{k+1} = μ·ρ_k, g_{k+1} = μ^(2/d)·g_k, ∂_t ρ = ln(μ)·ρ — the metric moves because ρ moves. A (metric scale) and B (actualization count) are the same object (the metric scale is ρ^(2/d)); C (occupancy [4,4,87]) and D (I_occ) are fixed. At μ=1 the rate vanishes (mean static), only Var(Z_k)=k·σ² grows — the residual pressure QG230 maps to Λ. Classification: branching, metric scale, native dynamics, and redshift are DERIVED; a = ρ^(1/d) is CORRESPONDENCE (hosted); acceleration is HOSTED; a native accelerating scale factor is REFUTED.",
+            "For non-experts: what is actually 'expanding' in the theory? Not some independent 'size of the universe' that grows on its own. It is the count of actualization events — the number of 'ticks' the universe has performed — that grows by branching. The familiar 'scale factor' a(t) is just a relabeling of that count. And the key subtlety: at the theory's critical point, the average count does not grow at all — only its fluctuations do. So the theory grows a count and its fluctuations, and the expanding universe is that count viewed through a borrowed (ΛCDM) lens.",
+            "Expansion = the branching growth of the actualization count; the FRW scale factor is its hosted reading.",
+            "“The universe grows by counting; the scale factor is the count, relabeled.”",
+            false,
+            [
+                new("ResearchY-NP_069", "EXPANSION ONTOLOGY AUDIT",
+                    "What expands is the actualization count ρ (branching, DERIVED); a = ρ^(1/d) is hosted.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_069.md"),
+            ]),
+        new(
             "researchy-np068-psi-ontology",
             "ψ Is the Spin-2 Graviton, the Tensor Face of Difference: the One Missing Primitive That Carries Lensing, Frame Dragging, and Gravitational Waves",
             "ResearchY · NP_068 (Psi Ontology Audit)",

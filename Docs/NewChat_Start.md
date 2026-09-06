@@ -3813,6 +3813,20 @@ Classification: ψ graviton PRIMITIVE (QG223); emergent route REFUTED (QG19); Di
 DERIVED (QG286/301); information-field reading REFUTED; lensing/frame/GW CORRESPONDENCE (GR
 strength). No new primitive; canonical AT unchanged.
 
+ResearchY-NP_069 (Expansion Ontology Audit, COMPLETE, tests 7/7 PASSED): what does cosmic
+expansion physically mean in AT, without importing ΛCDM? Verdict: expansion is the BRANCHING
+GROWTH of the actualization count ρ (ρ_{k+1} = μ·ρ_k, ∂_t ρ = ln(μ)·ρ), which carries the metric
+g = ρ^(2/d)η with it — the metric scale IS ρ^(2/d) (A = B). The FRW scale factor a = ρ^(1/d)
+(QG77) is a HOSTED homogeneous-isotropic relabeling of the same count; q₀/z_acc are hosted FRW
+closures. Criticality subtlety: at μ=2 the count doubles each generation (ln 2 = 0.6931); at μ=1
+(criticality) the mean is STATIC (∂_t ρ = 0) and only the VARIANCE grows (Var(Z_k) = k·σ², the
+residual pressure QG230 identifies with Λ) — there is no native accelerating scale factor.
+Earliest growing object: the branching count ρ_k = μ^k/S (the actualization population, the
+same quantity QG89 calls energy). Classification: branching growth + metric scale + native
+dynamics + redshift DERIVED (QG1/222/197/26); FRW a = ρ^(1/d) CORRESPONDENCE (QG77, hosted);
+accelerated expansion HOSTED (NP_056); a native accelerating scale factor REFUTED. No new
+primitive; canonical AT unchanged.
+
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-

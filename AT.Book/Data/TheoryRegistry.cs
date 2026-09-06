@@ -245,5 +245,9 @@ public sealed class TheoryRegistry
             "ψ is the spin-2 (Weyl-curvature) graviton — the tensor (traceless) face of the founding Difference — a PRIMITIVE physical degree of freedom (massless spin-2, 2 polarizations), carrying lensing, frame dragging, and gravitational waves. Not auxiliary, not hosted, not emergent (spin-0 cannot source spin-2).",
             AuditStatus.Passed, new DateTime(2026, 9, 6), TheoryLayer.Correspondence, TheoryClassification.Boundary,
             ["omega-matter", "d96"]),
+        new("np069", "Expansion Ontology Audit", "What does cosmic expansion physically mean in AT?",
+            "Expansion is the branching growth of the actualization count ρ (∂_t ρ = ln(μ)·ρ), carrying the metric g = ρ^(2/d)η. The FRW scale factor a = ρ^(1/d) is a hosted relabeling; at criticality the mean is static and only the variance grows. No native accelerating scale factor.",
+            AuditStatus.Passed, new DateTime(2026, 9, 6), TheoryLayer.Cosmology, TheoryClassification.Correspondence,
+            ["omega-lambda", "iocc"]),
     ];
 }
