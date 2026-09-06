@@ -4420,6 +4420,21 @@ a distinction must be drawn to be a distinction. Classification: actualization a
 distinguishing DERIVED (logical necessity, C); the tick's discreteness BOUNDARY (QG_011); the
 dynamics EMERGENT (D); "actualization is an independent primitive" (B) REFUTED; "a static
 Difference is possible" REFUTED. No new primitive; canonical AT unchanged.
+ResearchY-NP_107 (Tick Necessity Audit, COMPLETE, tests 8/8 PASSED): why does actualization occur
+as discrete ticks? Verdict: because Difference is BINARY ("this ≠ that") — a discrete CUT, not a
+continuum. The discreteness of the tick is a LOGICAL NECESSITY (A), DERIVED from the binary nature
+of Difference (NP_079 already derived scale-freeness from it): the act of drawing the distinction
+realizes one side of the binary per act, so one outcome per tick. Continuity fails at the very first
+step (the binary relation), and every structure inherits it — counting (Σρ = 1 over discrete
+modes), Born selection (one outcome per event), localization (discrete nodes), the phase lattice
+(Δθ = 2πk/N, finite). A "continuous Difference" is a contradiction (a gradient blurs the cut into
+undifferentiated unity, refuted by NP_104), so actualization without ticks is incoherent. This
+REFINES QG_011: the deepest boundary is NOT the tick's discreteness but Difference's BINARY NATURE
+itself; the tick's discreteness is DERIVED. Classification: the discreteness of the tick DERIVED
+(logical necessity, A); the binary nature of Difference BOUNDARY (the content of the primitive,
+NP_086/079); "the tick's discreteness is an irreducible boundary" (D) REFUTED (refining QG_011);
+"continuous actualization is coherent" REFUTED; "discreteness is a free framework choice" (C)
+REFUTED. No new primitive; canonical AT unchanged.
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-

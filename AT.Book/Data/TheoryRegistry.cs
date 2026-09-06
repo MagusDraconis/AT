@@ -397,5 +397,9 @@ public sealed class TheoryRegistry
             "Difference must actualize because a Difference is an ACT, not a state: a 'static Difference' is a contradiction (an un-drawn distinction is no distinction). Actualization is a LOGICAL NECESSITY (C); not an independent primitive (B refuted); only the discreteness of the tick is the boundary residue. Remove actualization → nothing survives. The minimal reason: a distinction must be drawn to be a distinction.",
             AuditStatus.Passed, new DateTime(2026, 9, 6), TheoryLayer.Foundations, TheoryClassification.Boundary,
             ["difference"]),
+        new("np107", "Tick Necessity Audit", "Why does actualization occur as discrete ticks?",
+            "Because Difference is BINARY (a discrete cut, not a continuum). The tick's discreteness is a LOGICAL NECESSITY (A), DERIVED from the binary nature; continuous actualization is incoherent (blurs the cut into undifferentiated unity). Refines QG011: the deepest boundary is the binary nature, not the tick. Discreteness DERIVED; the binary nature BOUNDARY.",
+            AuditStatus.Passed, new DateTime(2026, 9, 6), TheoryLayer.Foundations, TheoryClassification.Boundary,
+            ["difference"]),
     ];
 }

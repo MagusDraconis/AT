@@ -628,6 +628,21 @@ public static class AtlasDataService
                     "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_106.md"),
             ]),
         new(
+            "researchy-np107-tick-necessity",
+            "Why Tick by Tick? Because a Difference Is a Cut, Not a Blur",
+            "ResearchY · NP_107 (Tick Necessity Audit)",
+            "If difference is a doing, why is that doing in discrete steps — tick, tick, tick — rather than a smooth, continuous flow? The answer lies in what a difference *is*. A difference is a cut: a sharp line between 'this' and 'that', two separate things. A cut is, by its very nature, one at a time. A smooth blur would erase the line, and then there would be nothing to tell the two apart. So reality moves in ticks because it is made of cuts — and a cut can only be drawn one stroke at a time.",
+            "NP_107 removes the tick and replaces it with continuous actualization: counting fails (no countable normalization), Born selection fails (no single outcome), localization fails (no discrete nodes), persistence fails (no ticks to persist across). The reason is that Difference is BINARY — 'this ≠ that' is a discrete cut, not a continuum. The tick's discreteness is a LOGICAL NECESSITY (A), DERIVED from the binary nature (NP_079 already derived scale-freeness from it). Continuity fails at the very first step. A 'continuous Difference' is a contradiction (blurs the cut into undifferentiated unity). This REFINES QG_011: the deepest boundary is the BINARY NATURE, not the tick. Discreteness DERIVED; binary nature BOUNDARY.",
+            "For non-experts: a pair of scissors cuts one snip at a time — never a smooth continuous slice into a blur. Difference is like that: each 'this versus that' is one clean cut. Reality advances cut by cut because that is the only way a distinction can be made. The ticking of the world is the sound of difference, one cut at a time.",
+            "The tick is the discreteness of the binary cut; discrete actualization is a logical necessity, not a boundary.",
+            "“Reality moves in ticks because it is made of cuts.”",
+            false,
+            [
+                new("ResearchY-NP_107", "TICK NECESSITY AUDIT",
+                    "Ticks follow from the binary nature of Difference; discreteness DERIVED, binary nature BOUNDARY.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_107.md"),
+            ]),
+        new(
             "researchy-np074-quantum-number-ontology",
             "What Are Quantum Numbers? The Symmetry Charges of the D96 Ring: Charge Is the Rotation, Isospin the Doublet, and Only the Color Count Remains a Postulate",
             "ResearchY · NP_074 (Quantum Number Ontology Audit)",
