@@ -170,6 +170,7 @@
 | ResearchY-NP_073 | Resonance Selection Audit | `NP_NewPhysics/ResearchY-NP_073.md` | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_073_Tests.cs` (6/6 ✅) | COMPLETE |
 | ResearchY-NP_074 | Quantum Number Ontology Audit | `NP_NewPhysics/ResearchY-NP_074.md` | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_074_Tests.cs` (7/7 ✅) | COMPLETE |
 | ResearchY-NP_075 | Force Ontology Audit | `NP_NewPhysics/ResearchY-NP_075.md` | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_075_Tests.cs` (7/7 ✅) | COMPLETE |
+| ResearchY-NP_076 | Psi Dark Matter Audit | `NP_NewPhysics/ResearchY-NP_076.md` | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_076_Tests.cs` (8/8 ✅) | COMPLETE |
 | ResearchY-S_001 | Post-V2.1 Theory Architecture Synthesis | `S_Synthesis/ResearchY-S_001.md` | `AT.Tests/ResearchY/S_Synthesis/Y_S_001_Tests.cs` (4/4 ✅) | COMPLETE |
 | ResearchY-M_001 | Measurement Origin Audit | `M_Measurement/ResearchY-M_001.md` | `AT.Tests/ResearchY/M_Measurement/Y_M_001_Tests.cs` (7/7 ✅) | COMPLETE |
 | ResearchY-M_002 | Measurement Disturbance Audit | `M_Measurement/ResearchY-M_002.md` | `AT.Tests/ResearchY/M_Measurement/Y_M_002_Tests.cs` (7/7 ✅) | COMPLETE |

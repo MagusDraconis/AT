@@ -273,5 +273,9 @@ public sealed class TheoryRegistry
             "A force is the ACTION of a D96 symmetry generator — a symmetry action that induces a resonance transition between modes (vertex ⟨f|T^a|i⟩). Gauge bosons are the generators (link excitations), not matter particles; the photon is the U(1) = Z_96 rotation generator; gravity is the metric geometry, not a gauge force.",
             AuditStatus.Passed, new DateTime(2026, 9, 6), TheoryLayer.Physics, TheoryClassification.Derived,
             ["families", "occupancy"]),
+        new("np076", "Psi Dark Matter Audit", "Can the ψ graviton sector account for part of the observed Dark Matter signal?",
+            "ψ (the massless spin-2 graviton) contributes ZERO dark-matter mass: it produces propagating waves only, forms no bound configurations, and supplies no mass density (w = 1/3, Ω_gw ≈ 10⁻⁹ ≪ Ωm). ψ's true role is to restore lensing so the deficit's mass is visible. Dark Matter is DEFICIT-ONLY; ψ is the graviton, not a dark-matter component.",
+            AuditStatus.Passed, new DateTime(2026, 9, 6), TheoryLayer.Physics, TheoryClassification.Refuted,
+            ["families", "occupancy"]),
     ];
 }

@@ -163,6 +163,21 @@ public static class AtlasDataService
                     "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_075.md"),
             ]),
         new(
+            "researchy-np076-psi-dark-matter",
+            "Is the Graviton the Dark Matter? No: ψ Is the Geometry That Reveals the Deficit, Not the Missing Mass",
+            "ResearchY · NP_076 (Psi Dark Matter Audit)",
+            "Now that ψ is the graviton and dark matter is the deficit, the obvious next question is whether the graviton itself could double as dark matter. The audit's answer is a clean no: ψ is a massless, spin-2 field, so it produces propagating waves only — it forms no stationary bound configurations and supplies no mass density (its energy is radiation-like, ~9 orders below the matter fraction). Instead, ψ's real job is to restore lensing, so the deficit's mass becomes visible. The deficit is the dark matter; ψ is the gravity through which we see it.",
+            "NP_076 separates the deficit contribution from the ψ contribution. Deficit = mass (rotation α=0, cluster mass, Ωm = H/ln K = 0.3161); ψ = optics (lensing γ=+1, frame dragging, GW). What ψ produces: A) propagating waves only (massless spin-2, QG43/44); B) stationary bound configurations REFUTED (m_ψ = 0, no Yukawa binding, linear field non-self-interacting); C) effective mass density REFUTED (w = 1/3, ρ ∝ a⁻⁴, Ω_gw ≈ 10⁻⁹ ≪ Ωm). ψ fails every dark-matter requirement: cold (v = c), pressureless (w = 1/3), a⁻³ scaling, Ω = 0.316, halo clustering, collisionless separation. Model comparison: deficit-only = mass without optics; ψ-only = optics without mass; deficit+ψ = full signal except the Bullet Cluster, but ψ is the graviton, not dark matter. Classification: ψ waves DERIVED; bound configs / mass density / mimicry REFUTED; deficit+ψ partition DERIVED. Dark Matter = DEFICIT-ONLY.",
+            "For non-experts: the theory has two halves — the deficit (the 'missing mass' that makes galaxies spin right) and ψ (the graviton, the shape of space that bends light). Could ψ be the missing mass too? No: ψ has no mass of its own — it just carries gravity and bends light, which is how we see the deficit's mass. The deficit is the dark matter; ψ is the lens through which we look.",
+            "ψ contributes zero dark-matter mass; the deficit is the dark matter, ψ is the graviton.",
+            "“The deficit is the dark matter; ψ is the light that shows us.”",
+            false,
+            [
+                new("ResearchY-NP_076", "PSI DARK MATTER AUDIT",
+                    "ψ is the graviton (optics), not the missing mass; Dark Matter is deficit-only.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_076.md"),
+            ]),
+        new(
             "researchy-np074-quantum-number-ontology",
             "What Are Quantum Numbers? The Symmetry Charges of the D96 Ring: Charge Is the Rotation, Isospin the Doublet, and Only the Color Count Remains a Postulate",
             "ResearchY · NP_074 (Quantum Number Ontology Audit)",

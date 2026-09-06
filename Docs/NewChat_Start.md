@@ -3910,6 +3910,24 @@ bosons + couplings DERIVED (QG161/243/162); gravity DERIVED (QG197/222) + ψ pri
 matter-particle exchange" REFUTED. Forces share the same ontology as particles and quantum
 numbers: the D96 structure in action. No new primitive; canonical AT unchanged.
 
+ResearchY-NP_076 (Psi Dark Matter Audit, COMPLETE, tests 8/8 PASSED): can the ψ graviton
+sector account for part of the Dark Matter signal? Verdict: NO — ψ (the massless spin-2
+graviton) contributes ZERO dark-matter mass. Partition: the deficit carries the mass
+(rotation/cluster/Ωm), ψ carries the optics (lensing γ=+1/frame-dragging/GW). What ψ
+produces: A) propagating waves ONLY (massless spin-2, QG43/44); B) stationary bound
+configurations REFUTED (m_ψ = 0, no Yukawa binding, linear field non-self-interacting);
+C) effective mass density REFUTED (w = 1/3, ρ ∝ a⁻⁴, Ω_gw ≈ 10⁻⁹ ≪ Ωm = 0.3161). ψ
+fails every dark-matter requirement: cold (v=c), pressureless (w=1/3), a⁻³ scaling
+(a⁻⁴), Ω=0.316 (1e-9), halo clustering (no self-binding), collisionless separation (not
+a particle). ψ's true role = restore LENSING so the deficit's mass is visible — the
+deficit is the dark matter, ψ is the gravity (geometry) that reveals it (NP_075).
+Model comparison: deficit-only = mass without optics; ψ-only = optics without mass;
+deficit+ψ = full signal except Bullet, but ψ is the graviton, not dark matter.
+Classification: ψ waves DERIVED (QG43/44); bound configs / mass density / mimicry all
+REFUTED; deficit+ψ partition DERIVED (NP_066/067). Success criterion: Dark Matter (the
+mass) = DEFICIT-ONLY; ψ is the graviton, not a dark-matter component. No new primitive;
+canonical AT unchanged.
+
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-
