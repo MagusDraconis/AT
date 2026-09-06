@@ -148,6 +148,21 @@ public static class AtlasDataService
                     "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_064.md"),
             ]),
         new(
+            "researchy-np072-particle-ontology",
+            "What Is an Electron? A Resonance Class of the D96 Spectrum: Particles Are Stable Modes, Not Point Objects, and the Electron Is the Anchor at the Octave Bottom",
+            "ResearchY · NP_072 (Particle Ontology Audit)",
+            "If matter is a deficit excitation, what are particles? In AT a particle is a resonance class — a stable mode (a 'frequency attractor') of the D96 counting spectrum, organized into octave-band families. The electron is the lightest fermion mode, sitting at the octave bottom, and its mass (0.511 MeV) is the one boundary anchor that fixes the fermion scale; the muon, tau, and quarks are all derived ratios of it. So particles are emergent patterns in the spectrum, not fundamental point objects.",
+            "NP_072 inventories the electron, muon, tau, quarks, and proton. Every mass is m_e × a dimensionless D96 ratio; the families are the octave bands [4,4,87]. Interpretations: localized deficits NO (the deficit is bulk matter, not individual particles); resonance classes YES; occupancy configurations YES (= B, the mode-access classes); measurement observables PARTIAL (modes exist before measurement). Matter vs particle: matter is the deficit over the modes; a particle is a single mode. Emergence: the spectrum (95 modes), families (3 octave bands), and mass ratios (m_μ/m_e ≈ 207) are DERIVED; the absolute scale m_e is BOUNDARY. Classification: modes/families/ratios DERIVED; m_e BOUNDARY; localized point particle REFUTED; fundamental REFUTED.",
+            "For non-experts: what is an electron, in this theory? Not a tiny dot. It is one of the stable 'notes' that the universe's counting structure can ring at — the lowest, lightest note in the fermion family. Every other particle is a higher note, and their masses are fixed ratios of the electron's. The electron's own mass is the one number the theory takes as given (the anchor); everything else follows. So particles are patterns of vibration, not pieces of stuff.",
+            "A particle = a resonance class (a stable mode of the D96 spectrum); the electron = the octave-bottom anchor.",
+            "“The electron is the lowest note; every particle is a higher harmonic.”",
+            false,
+            [
+                new("ResearchY-NP_072", "PARTICLE ONTOLOGY AUDIT",
+                    "Particles are resonance classes (D96 modes); the electron is the octave-bottom anchor.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_072.md"),
+            ]),
+        new(
             "researchy-np071-matter-ontology",
             "Matter Is the Deficit, a Stabilized Wave Structure: Not a Particle, Not a Substance — the Under-Occupancy of the Counting Measure, with Masses as Its Derived Spectral Content",
             "ResearchY · NP_071 (Matter Ontology Audit)",

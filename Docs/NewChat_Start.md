@@ -3854,6 +3854,21 @@ is DERIVED from STABILITY (ATF MatterAttraction). Classification: matter = defic
 (QG194); mass ladder DERIVED (QG173/209); point particle REFUTED; soliton LEGACY; fundamental
 substance REFUTED. No new primitive; canonical AT unchanged.
 
+ResearchY-NP_072 (Particle Ontology Audit, COMPLETE, tests 6/6 PASSED): if matter is a deficit
+excitation, what are particles — and what is an electron? Verdict: a particle is a RESONANCE
+CLASS — a mode (frequency attractor) of the D96 spectrum, organized into octave-band families,
+with mass = anchor × dimensionless D96 ratio. Interpretations: A) localized deficits NO (the
+deficit is bulk matter); B) resonance classes YES; C) occupancy configurations YES (= B, the
+mode-access classes of [4,4,87], QG150); D) measurement observables PARTIAL (modes exist before
+measurement). Matter vs particle: matter = the deficit over the modes; a particle = a single
+mode. Emergence: the spectrum (95 modes), families (3 octave bands), and mass ratios (m_μ/m_e ≈
+207) are DERIVED; the absolute scale m_e = 0.511 MeV is BOUNDARY (anchor, D_012/D_013). The
+ELECTRON = the lightest fermion mode (the octave bottom, occ₀ = 4), whose mass is the boundary
+anchor setting the fermion scale; muon/tau/quarks are derived ratios of it. Particles are
+EMERGENT (derived modes), not fundamental point objects. Classification: modes + families + mass
+ratios DERIVED (D_041/QG210/QG173/209); m_e BOUNDARY; localized point particle REFUTED;
+fundamental REFUTED. No new primitive; canonical AT unchanged.
+
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-

@@ -257,5 +257,9 @@ public sealed class TheoryRegistry
             "Matter is the DEFICIT m = ρ̄ − ρ — a stable, self-bound excitation (a deficit pattern) of the count density, the under-occupancy that sources gravity and clumps. Not a particle, not a fundamental substance, not a soliton (legacy); it is a dynamically stabilized wave structure with masses as its derived spectral content.",
             AuditStatus.Passed, new DateTime(2026, 9, 6), TheoryLayer.Physics, TheoryClassification.Derived,
             ["omega-matter", "occupancy"]),
+        new("np072", "Particle Ontology Audit", "If matter is a deficit excitation, what are particles — and what is an electron?",
+            "A particle is a RESONANCE CLASS — a mode (frequency attractor) of the D96 spectrum, organized into octave-band families, with mass = anchor × dimensionless D96 ratio. The electron is the lightest fermion mode (octave bottom), its mass m_e the boundary anchor; the muon/tau/quarks are derived ratios. Particles are EMERGENT, not fundamental point objects.",
+            AuditStatus.Passed, new DateTime(2026, 9, 6), TheoryLayer.Physics, TheoryClassification.Derived,
+            ["omega-matter", "families"]),
     ];
 }
