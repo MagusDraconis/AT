@@ -373,5 +373,9 @@ public sealed class TheoryRegistry
             "Binding = RESONANCE LOCKING = PHASE SYNCHRONIZATION = DEFICIT CLUSTERING (A = B = D), held by PERSISTENT GENERATOR ACTION (C). A bound state is a stable mutual configuration of resonances whose relative phase is locked (constant across ticks); it persists because the lock is a stable fixed point of actualization (the bound-state analogue of inertia). Cascade: modes → pair (e⁻+p) → atom (hydrogen, 13.6 eV) → molecule. Binding DERIVED; the bound structure EMERGENT; binding energies BOUNDARY.",
             AuditStatus.Passed, new DateTime(2026, 9, 6), TheoryLayer.Structure, TheoryClassification.Emergent,
             ["d96", "difference"]),
+        new("np101", "Hierarchical Structure Audit", "Why do stable structures appear at many different scales?",
+            "ONE universal, scale-free stability principle: a stable structure = a DEFICIT CLUSTERING (matter, NP_071) locked at a GENERATOR-BALANCED FIXED POINT (resonance locking, NP_100). A = B = C = D. Scale-free (AT-F1), it repeats self-similarly over 36 orders of magnitude (particle 10⁻¹⁵ m → galaxy 10²¹ m): particle → atom → molecule → crystal → planet → galaxy. Principle DERIVED; the hierarchy EMERGENT; sizes/energies BOUNDARY.",
+            AuditStatus.Passed, new DateTime(2026, 9, 6), TheoryLayer.Structure, TheoryClassification.Emergent,
+            ["d96", "difference"]),
     ];
 }

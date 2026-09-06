@@ -538,6 +538,21 @@ public static class AtlasDataService
                     "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_100.md"),
             ]),
         new(
+            "researchy-np101-hierarchical-structure",
+            "Why the Cosmos Nestles Into Layers: One Stability Principle, Every Scale",
+            "ResearchY · NP_101 (Hierarchical Structure Audit)",
+            "Look out at reality and you see the same trick repeated at every size: particles gather into atoms, atoms into molecules, molecules into crystals, crystals into planets, planets into galaxies. Why this endless nesting? Because there is only one way to be stable, and it works at every scale. Any stable thing is a clustering of the 'deficit' — the under-occupancy that matter is — locked into a balanced, self-holding arrangement. The principle has no built-in size, so it simply repeats itself, larger and larger, like a refrain. From a single particle to an entire galaxy, it is the same lock, played at thirty-six orders of magnitude.",
+            "NP_101 inventories particle (10⁻¹⁵ m) → atom → molecule → crystal → planet → galaxy (10²¹ m), spanning 36 orders of magnitude. The common feature: every structure is a DEFICIT CLUSTERING (matter, the unique self-bound branch, NP_071) locked at a GENERATOR-BALANCED FIXED POINT (resonance locking = phase synchronization, NP_100). Determination: A = B = C = D — resonance locking = phase synchronization = deficit clustering = generator-balanced fixed points, ONE principle. It is scale-free (AT-F1, from Difference's binary nature, NP_079), so it repeats self-similarly; electromagnetism binds the small scales, gravity the large. The principle is DERIVED; the hierarchy is EMERGENT; specific sizes/energies are BOUNDARY.",
+            "For non-experts: a snowflake, a stone, a mountain, and a galaxy are all built the same way — smaller stable pieces locking together into a bigger stable piece. The 'lock' is the same at every size, with no natural size of its own, so it stacks upward without limit. The universe is a nesting of locks: the same refrain, played from the tiniest to the largest.",
+            "One scale-free stability principle (deficit clustering at a balanced fixed point) builds every nested structure.",
+            "“From particle to galaxy, it is the same lock, played at every scale.”",
+            false,
+            [
+                new("ResearchY-NP_101", "HIERARCHICAL STRUCTURE AUDIT",
+                    "One universal, scale-free stability principle builds the nested hierarchy over 36 orders of magnitude.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_101.md"),
+            ]),
+        new(
             "researchy-np074-quantum-number-ontology",
             "What Are Quantum Numbers? The Symmetry Charges of the D96 Ring: Charge Is the Rotation, Isospin the Doublet, and Only the Color Count Remains a Postulate",
             "ResearchY · NP_074 (Quantum Number Ontology Audit)",

@@ -4336,6 +4336,18 @@ Free resonance = delocalized (drifts); localized = wave packet (transient); boun
 (persistent). Classification: binding ontology DERIVED (NP_071/075/094); the bound structure as a
 persistent configuration EMERGENT; binding energies (13.6 eV etc.) BOUNDARY (imported, the m_e-anchor
 pattern); "binding as a new primitive" REFUTED. No new primitive; canonical AT unchanged.
+ResearchY-NP_101 (Hierarchical Structure Audit, COMPLETE, tests 9/9 PASSED): why do stable
+structures appear at many scales? Verdict: there is ONE universal, SCALE-FREE stability principle —
+a stable structure is a DEFICIT CLUSTERING (matter, the unique self-bound branch, NP_071) locked at
+a GENERATOR-BALANCED FIXED POINT (resonance locking = phase synchronization, NP_100). A = B = C = D
+— resonance locking = phase synchronization = deficit clustering = generator-balanced fixed points,
+one principle. It is scale-free (AT-F1, from Difference's binary nature, NP_079), so it repeats
+self-similarly from 10⁻¹⁵ m (particle) to 10²¹ m (galaxy) — 36 orders of magnitude — producing the
+hierarchy particle → atom → molecule → crystal → planet → galaxy, each a deficit clustering of the
+level below (electromagnetism binds the small scales, gravity the large). Classification: the
+stability principle DERIVED (NP_071/100); scale-freeness DERIVED (NP_079); the hierarchy EMERGENT
+(the self-similar repetition); specific sizes/energies BOUNDARY (imported); a scale-dependent
+stability mechanism REFUTED. No new primitive; canonical AT unchanged.
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-
