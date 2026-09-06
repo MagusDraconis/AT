@@ -4042,6 +4042,23 @@ derived REFUTED. Success criterion: m_e is NOT the true boundary — the true bo
 dimensionful scale", m_e its replaceable unit-conversion instance. No new primitive; canonical AT
 unchanged.
 
+ResearchY-NP_083 (Threefold Structure Audit, COMPLETE, tests 9/9 PASSED): do the remaining
+appearances of 3 (color count = 3, family count = 3) share a common origin? Verdict: B — a
+HIDDEN COMMON DERIVATION. Both 3s descend from the period-3 seed p = 3 (DERIVED, D_040), which
+forces the factor 3 in N = 3·2^k → 3 octave bands [4,4,87] → 3 families (value DERIVED,
+floor(log₂ span)+1 = 3) AND the su(3) color algebra (8 = 3²−1 generators DERIVED from the 3
+family directions, QG161/242); the color count 3 is the octave-3 IDENTIFICATION (QG79, BOUNDARY).
+Two boundary residues remain: the family window [4,8) and the color identification QG79. Removal:
+removing family-3 breaks su(3) (→su(2)=3/su(4)=15) AND masses/ΩΛ; removing color-3 breaks
+baryons/strong force but NOT family-3 — a one-way coupling confirming the common parent.
+Determination: B (hidden common derivation), not A (independent boundaries), not C (single deeper
+boundary). This refines NP_037: within the D96 spectral domain the 3s share ONE seed (unlike the
+coincidental cross-domain 3s d=3/ω³/A³/valence-3), but "3" is still not a single principle — one
+DERIVED seed + two boundary identifications. Classification: period-3 seed DERIVED (D_040);
+family value DERIVED (QG210), window BOUNDARY; su(3) algebra DERIVED (QG161/242); color count
+BOUNDARY (QG79); "independent boundaries" REFUTED; "single deeper boundary" REFUTED. Success
+criterion: B — color-3 and family-3 share a hidden common derivation (the period-3 seed → octave
+structure), with two distinct boundary residues. No new primitive; canonical AT unchanged.
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-

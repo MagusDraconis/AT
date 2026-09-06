@@ -268,6 +268,21 @@ public static class AtlasDataService
                     "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_082.md"),
             ]),
         new(
+            "researchy-np083-threefold-structure",
+            "Why Three Colors and Three Families? They Are the Same Three — the Period-3 Seed, Read Twice",
+            "ResearchY · NP_083 (Threefold Structure Audit)",
+            "The theory has two lingering 'threes': quarks come in three colors, and matter comes in three families. Are these the same three or a coincidence? The audit's answer: the same three, seen twice. A single seed in the theory — the 'period-3' structure that makes the ring a multiple of three — produces three octave bands. Those three bands are the three families, and the same three bands generate the color algebra (eight gluons = 3² − 1). Only the final step of calling them 'the three colors' is taken as given. So it isn't two independent mysteries; it's one derived three, wearing two labels.",
+            "NP_083 inventories the surviving non-derived 3s. The period-3 seed p = 3 (DERIVED, D_040) forces the factor 3 in N = 3·2^k, giving the 3 octave bands [4,4,87]. The family count 3 is the octave-band count: floor(log₂ span)+1 = floor(log₂ 6.4025)+1 = 3 (value DERIVED, window [4,8) BOUNDARY). The su(3) color algebra is the SAME octave-3 read as a gauge structure: 8 = 3²−1 generators 'from the 3 octave families' (QG161/242, DERIVED). The color count 3 itself is the octave-3 IDENTIFICATION (QG79, BOUNDARY — a postulate trace). Removal tests: removing family-3 breaks su(3) (→ su(2) = 3 or su(4) = 15 generators) AND masses/ΩΛ; removing color-3 breaks baryon structure (the 3-quark antisymmetric singlet) and the strong force but leaves family-3 intact — a one-way coupling confirming the common parent. Determination: B — a hidden common derivation, not A (independent boundaries) and not C (a single deeper boundary): two distinct residues remain (the [4,8) window and the QG79 identification). This refines NP_037: the cross-domain 3s (dimension, ω³, A³, valence-3) are coincidental, but within the D96 spectral domain the 3s share one seed.",
+            "For non-experts: why are there three colors and three families, and are they connected? Yes — they're the same three. The theory's ring has a built-in three-ness (it comes in multiples of three), which splits it into three bands. Those three bands are the three families, and the same three bands produce the color structure (eight gluons = 3×3 − 1). So 'three colors' and 'three families' are one three, counted two different ways. The only part taken as given is the final naming: that the three bands are called 'the three colors'.",
+            "Color-3 and family-3 are the same three — the period-3 seed, read as families and as the color algebra.",
+            "“One three, two names: three bands make three families and eight gluons.”",
+            false,
+            [
+                new("ResearchY-NP_083", "THREEFOLD STRUCTURE AUDIT",
+                    "Color-3 and family-3 share the period-3 seed (B); two boundary residues remain.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_083.md"),
+            ]),
+        new(
             "researchy-np074-quantum-number-ontology",
             "What Are Quantum Numbers? The Symmetry Charges of the D96 Ring: Charge Is the Rotation, Isospin the Doublet, and Only the Color Count Remains a Postulate",
             "ResearchY · NP_074 (Quantum Number Ontology Audit)",
