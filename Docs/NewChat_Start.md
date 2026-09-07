@@ -5097,6 +5097,16 @@ dissipation-limited, reversibility damage-bounded (NP_155). AT's "organizational
 INTERPRETATION of these known propagating fabric fronts. Classification: organizational fronts KNOWN
 PHYSICS; dynamical-field view KNOWN PHYSICS; framing AT INTERPRETATION; new capability REFUTED. No new
 primitive; canonical AT unchanged.
+ResearchY-NP_162 (Organizational Tomography Audit, COMPLETE, tests 8/8 PASSED): can the organizational
+field φ(x,t) be directly imaged and tracked? Verdict: KNOWN PHYSICS — contact density, force chains,
+anisotropy, and local rigidity are directly measured by photoelasticity (force chains), X-ray
+microtomography (grain/contact), ultrasonic tomography (stiffness), and coda-wave/nonlinear
+interferometry (contact/crack evolution). Nonlinear acoustics + NCWI reveal contact/crack structure
+that linear property measurements average away (NP_137), so the organizational map is strictly finer
+than the material-property map. Real-time: photoelastic video + near-real-time CWI; for a 1 m granite
+block, ultrasonic tomography + CWI/NCWI are standard. Classification: direct imaging KNOWN PHYSICS;
+organizational map finer KNOWN PHYSICS; framing AT INTERPRETATION; new capability REFUTED. No new
+primitive; canonical AT unchanged.
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-

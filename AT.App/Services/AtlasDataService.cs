@@ -1453,6 +1453,21 @@ public static class AtlasDataService
                     "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_161.md"),
             ]),
         new(
+            "researchy-np162-organizational-tomography",
+            "Seeing the Skeleton: The Organizational Field Is Directly Imageable",
+            "ResearchY · NP_162 (Organizational Tomography Audit)",
+            "We have been speaking of a rock's hidden 'organization' — its contact network, its load-bearing chains, its internal fabric — as if it were an abstract idea. The reassuring truth is that it can be seen. Photoelastic materials show the chains as bright streaks; X-rays reveal the grains and their contacts in three dimensions; ultrasound maps the stiffness point by point; and a clever trick called coda-wave interferometry watches tiny cracks open and close in real time. Even better, some of this structure is invisible to ordinary stiffness measurements and only appears when you look with nonlinear sound. So the 'organizational field' is not a metaphor — it is a measurable map.",
+            "NP_162 asks whether the organizational field φ(x,t) can be directly imaged and tracked. Verdict: KNOWN PHYSICS — contact density, force chains, anisotropy, and local rigidity are directly measured by photoelasticity (force chains), X-ray microtomography (grain/contact), ultrasonic tomography (stiffness), and coda-wave/nonlinear interferometry (contact/crack evolution). Nonlinear acoustics + NCWI reveal contact/crack structure that linear property measurements average away (NP_137), so the organizational map is strictly finer than the material-property map. Real-time: photoelastic video + near-real-time CWI; for a 1 m granite block, ultrasonic tomography + CWI/NCWI are standard.",
+            "For non-experts: we have been talking about a rock's hidden 'organization' as if it were abstract. It is not — it can be seen. Special materials show the load-bearing chains as bright streaks; X-rays reveal the grains and their contacts in 3D; ultrasound maps stiffness point by point; and a trick called coda-wave interferometry watches tiny cracks open and close in real time. Some of this structure is invisible to ordinary stiffness measurements and only shows up under nonlinear sound. So the 'organizational field' is not a metaphor — it is a measurable map.",
+            "The organizational field is directly imageable (photoelastic/X-ray/ultrasonic/CWI/nonlinear); nonlinear methods see contact/crack structure linear methods miss.",
+            "“Seeing the skeleton — the organizational field is directly imageable.”",
+            false,
+            [
+                new("ResearchY-NP_162", "ORGANIZATIONAL TOMOGRAPHY AUDIT",
+                    "The organizational field is directly imageable (photoelastic/X-ray/ultrasonic/CWI/nonlinear); nonlinear methods see what linear misses.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_162.md"),
+            ]),
+        new(
             "researchy-np074-quantum-number-ontology",
             "What Are Quantum Numbers? The Symmetry Charges of the D96 Ring: Charge Is the Rotation, Isospin the Doublet, and Only the Color Count Remains a Postulate",
             "ResearchY · NP_074 (Quantum Number Ontology Audit)",
