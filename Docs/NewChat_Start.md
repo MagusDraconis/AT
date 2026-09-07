@@ -4744,6 +4744,18 @@ technologies (communication, sensing, power, materials, propulsion) benefit from
 Classification: coherence DERIVED/EMERGENT/RESOURCE; the coherence ↔ entropy trade-off DERIVED
 (NP_095/096); "coherence = a mere bookkeeping quantity" REFUTED; "coherence = just information"
 REFUTED; "coherence is conserved" REFUTED (it degrades). No new primitive; canonical AT unchanged.
+ResearchY-NP_129 (Coherent Matter Control Audit, COMPLETE, tests 6/6 PASSED): can bound matter be
+created/modified/dissolved through coherent phase control rather than thermal heating? Verdict: YES —
+phase engineering OUTPERFORMS thermal processing. Because binding = phase-locking (NP_100) and heat =
+decoherence (NP_096), a structure is a set of phase-locked modes, and the lever that holds it (phase)
+can, applied resonantly, also build or break it. Thermal melting is mode-blind (equipartition over N
+modes, ΔS = N·ln2 bits, efficiency 1/N); coherent disruption is mode-selective (one resonant quantum
+E_bind into the target lock, ΔS = ln2 bits, efficiency ~1). Advantage N× in energy efficiency and
+entropy reduction (~95× for N = 95, the D96 count), at the cost of coherence (NP_128) — a favorable
+exchange. Conservation laws and the 2nd law HOLD: coherent deposits energy (no free lunch), transfers
+momentum (NP_075), and is MORE reversible (lower ΔS). Classification: coherent matter control DERIVED
+(NP_100 + NP_096 + NP_128); applications EMERGENT; "coherent violates thermodynamics" REFUTED;
+"thermal ≡ coherent" REFUTED. No new primitive; canonical AT unchanged.
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-

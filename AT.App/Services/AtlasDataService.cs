@@ -958,6 +958,21 @@ public static class AtlasDataService
                     "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_128.md"),
             ]),
         new(
+            "researchy-np129-coherent-matter-control",
+            "Composing Matter Note by Note: Coherent Control Instead of Heat",
+            "ResearchY · NP_129 (Coherent Matter Control Audit)",
+            "When matter is bound resonance, the difference between a crystal and its melt is not a substance changing but a set of notes being held or released. Heat releases all of them at once — a clumsy, wasteful erasure. Coherent control releases one note at a time — precise, quiet, almost reversible. This is why phase engineering outperforms thermal processing: it aims energy where it matters, at the exact lock you want to open, instead of flooding the whole instrument. You can build a structure note by note, reshape it by retuning a single note, and dissolve it by striking one note out of tune.",
+            "NP_129 asks whether bound matter can be created, modified, or dissolved through coherent phase control rather than thermal heating. Verdict: YES — phase engineering OUTPERFORMS thermal processing. Binding = phase-locking (NP_100) and heat = decoherence (NP_096), so a structure is a set of phase-locked modes and the phase lever can build, modify, or break it. Thermal melting is mode-blind (equipartition over N modes, ΔS = N·ln2 bits, efficiency 1/N); coherent disruption is mode-selective (one resonant quantum into the target lock, ΔS = ln2 bits, efficiency ~1) — an N× advantage (~95× for N=95) at the cost of coherence (NP_128). Conservation laws and the 2nd law HOLD: coherent control deposits energy, transfers momentum (NP_075), and is MORE reversible (lower ΔS).",
+            "For non-experts: to break a single string, you could smash the whole piano — or pluck that one string hard enough to snap it. The universe prefers the second way when you can aim. Coherent control is aim: you spend a little coherence to touch exactly the bond you want, and leave everything else in tune.",
+            "Coherent phase control outperforms thermal processing: N× energy efficiency, N× entropy reduction.",
+            "“Heat dissolves all notes; coherence dissolves one.”",
+            false,
+            [
+                new("ResearchY-NP_129", "COHERENT MATTER CONTROL AUDIT",
+                    "Phase engineering outperforms thermal processing for material transformation.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_129.md"),
+            ]),
+        new(
             "researchy-np074-quantum-number-ontology",
             "What Are Quantum Numbers? The Symmetry Charges of the D96 Ring: Charge Is the Rotation, Isospin the Doublet, and Only the Color Count Remains a Postulate",
             "ResearchY · NP_074 (Quantum Number Ontology Audit)",

@@ -485,5 +485,9 @@ public sealed class TheoryRegistry
             "YES — coherence = A (measurable resource) = D (independent physical capability); B (bookkeeping) and C (hidden information) PARTIAL. Coherence is DISTINCT from information/energy/entropy: it is the phase-lock's persistence (NP_100) — the ORDER those quantities presuppose. It is a DEGRADABLE resource with a fundamental trade-off coherence ↔ entropy: friction (NP_095) converts coherence (low entropy) into entropy (NP_096). Every capability (motion, binding, sailing) is coherent phase-locking, and all five technologies (communication, sensing, power, materials, propulsion) benefit from maximizing it — the most practically valuable quantity.",
             AuditStatus.Passed, new DateTime(2026, 9, 7), TheoryLayer.Physics, TheoryClassification.Emergent,
             ["difference", "d96"]),
+        new("np129", "Coherent Matter Control Audit", "Can bound matter structures be created, modified, or dissolved through coherent phase control rather than thermal heating?",
+            "YES — phase engineering OUTPERFORMS thermal processing. Binding = phase-locking (NP_100) + heat = decoherence (NP_096) means a structure is a set of phase-locked modes, so phase can build/modify/break it. Thermal melting is mode-blind (equipartition, dS = N·ln2, efficiency 1/N); coherent disruption is mode-selective (one resonant quantum into the target lock, dS = ln2, efficiency ~1) — an N× advantage (~95×) at the cost of coherence (NP_128). Conservation/2nd law HOLD (coherent is MORE reversible).",
+            AuditStatus.Passed, new DateTime(2026, 9, 7), TheoryLayer.Physics, TheoryClassification.Emergent,
+            ["difference", "d96"]),
     ];
 }
