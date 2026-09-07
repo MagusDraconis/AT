@@ -5020,6 +5020,16 @@ the general frame (NP_149 Pareto front). Tune/train/condition/restore are standa
 "writable resonance score" is an INTERPRETATION; whether resonance adds a new navigation axis is an AT
 QUESTION. Classification: navigable state space KNOWN PHYSICS; resonance score AT INTERPRETATION;
 resonance axis AT QUESTION; "new capability" REFUTED. No new primitive; canonical AT unchanged.
+ResearchY-NP_154 (Contact Network Softening Audit, COMPLETE, tests 7/7 PASSED): for granite-like
+materials, is rigidity controlled more by grain-contact networks than by internal crystal defects?
+Verdict: KNOWN PHYSICS — contact-network engineering is the dominant lever. Granite is a jammed
+granular system (grains + force chains + microcracks); rigidity is carried by the percolating contact
+network and microcracks, which dominate the brittle (low-T/P) regime; intragranular dislocations are
+minor (depth-limited). Temporary softening = contact-network disruption (acoustic fluidization, NP_137),
+reducing friction/shear strength ~5–10× at microstrain and ~1–5 W/cm². NP_141–147's dislocation picture
+governs metals; rock is contact-controlled. Classification: contact network KNOWN PHYSICS; acoustic
+fluidization KNOWN PHYSICS; "defect engineering dominates granite" REFUTED. No new primitive; canonical
+AT unchanged.
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-

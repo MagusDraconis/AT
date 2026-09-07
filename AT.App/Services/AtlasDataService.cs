@@ -1333,6 +1333,21 @@ public static class AtlasDataService
                     "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_153.md"),
             ]),
         new(
+            "researchy-np154-contact-network-softening",
+            "Rock Does Not Bend; It Rearranges: The Contact Network Is the Lever",
+            "ResearchY · NP_154 (Contact Network Softening Audit)",
+            "A metal softens when its tiny internal defects slip. A rock does not work that way. Granite is a heap of interlocking grains whose strength lives in the contacts between them — the invisible chains that carry the load. Shake those chains, and the rock goes loose, the way a fault gives way in an earthquake. So the lever for a rock is not its defects but its contacts: loosen the contact network and the whole mass softens. This matters because the theory's story was written for metals; rocks obey a different physics.",
+            "NP_154 asks whether granite-like rigidity is controlled more by grain-contact networks than by internal crystal defects. Verdict: KNOWN PHYSICS — contact-network engineering is the dominant lever. Granite is a jammed granular system (grains + force chains + microcracks); rigidity is carried by the percolating contact network and microcracks, which dominate the brittle (low-T/P) regime; intragranular dislocations are minor (depth-limited). Temporary softening = contact-network disruption (acoustic fluidization, NP_137), reducing friction/shear strength ~5–10× at microstrain and ~1–5 W/cm². NP_141–147's dislocation picture governs metals; rock is contact-controlled.",
+            "For non-experts: a metal softens because its tiny internal defects slip. A rock doesn't work that way — granite is a heap of interlocking grains, and its strength lives in the contacts between those grains, the invisible chains that carry the load. Shake those chains and the rock loosens, just as a fault slips in an earthquake. So the lever for a rock is its contacts, not its defects. The theory's story was written for metals; rocks follow different rules.",
+            "Granite rigidity is contact-network-controlled (jamming + force chains), not dislocation-controlled; the lever is contact-network engineering.",
+            "“Rock does not bend; it rearranges — the contact network is the lever.”",
+            false,
+            [
+                new("ResearchY-NP_154", "CONTACT NETWORK SOFTENING AUDIT",
+                    "Granite rigidity is contact-network-controlled (jamming/force chains), not dislocation-controlled; contact-network engineering is the lever.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_154.md"),
+            ]),
+        new(
             "researchy-np074-quantum-number-ontology",
             "What Are Quantum Numbers? The Symmetry Charges of the D96 Ring: Charge Is the Rotation, Isospin the Doublet, and Only the Color Count Remains a Postulate",
             "ResearchY · NP_074 (Quantum Number Ontology Audit)",
