@@ -4835,6 +4835,99 @@ achievable (90% near-gel, unloaded); 1% is below the step size (thermal-scale). 
 (a) fracture (loaded vs unloaded), (b) heating (N/m efficient, ΔT small), (c) decoherence (keep order
 S ≈ 1). Classification: variable-rigidity technology DERIVED (NP_131/132); "minor 1% effect" REFUTED.
 No new primitive; canonical AT unchanged.
+ResearchY-NP_137 (Real-World Evidence Audit, COMPLETE, tests 7/7 PASSED): do known experimental
+results already contain evidence for coherent critical-mode softening? Verdict: PARTIAL. Seven
+phenomena inventoried (resonant ultrasound spectroscopy, acoustic softening, nonlinear mesoscopic
+elasticity, phononic crystals, ultrasonic welding, acoustic fluidization, dynamic modulus reduction).
+Grade B (partially consistent): acoustic softening, nonlinear elasticity, acoustic fluidization;
+grade C (thermal): welding, dynamic modulus; neutral: RUS, phononic. The signature (frequency-matched,
+athermal, reversible acoustic softening) is OBSERVED — Langenecker's acoustoplastic effect lowers flow
+stress without matching heating and re-hardens on removal. The magnitude (quantized 33–100% elastic
+steps, NP_136) is UNTESTED: observed reversible elastic bound ΔE/E ≈ ΔG/G ≤ 0.30 (below the 0.33
+step), while the 0.50–0.90 effects are plastic flow stress, not rigidity; no experiment shows a
+reversible order-preserving R→0 gel. Strongest support = acoustoplastic effect; strongest
+contradiction = missing quantized elastic drop / missing gel. Classification: signature
+PARTIAL-CONSISTENT (B); magnitude UNTESTED; coherent≡heating CONTRADICTED (athermal excess exists);
+full elastic gel REFUTED. No new primitive; canonical AT unchanged.
+ResearchY-NP_138 (Quantized Softening Audit, COMPLETE, tests 7/7 PASSED): do resonantly driven
+materials exhibit discrete modulus steps? Verdict: REFUTED. NP_136's staircase R(x) = max(0,
+(1−x−p_c)/(1−p_c)), m = 6, p_c = 0.5 predicts ΔE/E = 0.33/0.67/1.00, but every resonant/acoustic
+elastic-modulus dataset is CONTINUOUS (nonlinear mesoscopic elasticity, acoustoplastic, DMA). Discrete
+steps exist in nature only via (a) thermal first-order phase transitions — spin-crossover ~71%
+(7→2 GPa) at T_c, ferroelastic precursor, α–β quartz — at arbitrary values, and (b) plastic slip
+avalanches P(S) ~ S⁻ᵗᵃᵘ — wrong channel, values, and statistics. This satisfies NP_136's own
+falsification condition ("drops continuously, not in ~33% steps"). Classification: quantized ladder
+REFUTED; continuous athermal softening CORRESPONDENCE (NP_131/132 signature, NP_137); m = 6 staircase
+DERIVED (idealization artifact). The "master key" is a continuous dial, not a three-position switch;
+the parent claim (critical modes control rigidity, reversible coherent softening) survives. No new
+primitive; canonical AT unchanged.
+ResearchY-NP_139 (Soft Mode Literature Audit, COMPLETE, tests 6/6 PASSED): does known condensed-
+matter physics already contain the equivalent of the AT critical-mode softening mechanism? Verdict:
+B — an EXTENSION (a new interpretation + extension of known soft-mode physics), not genuinely new
+physics. All four AT ingredients map onto known phenomena: "critical modes" = Cochran–Anderson soft
+modes; "small mode set controls rigidity" = soft elastic constant C′ = (C₁₁−C₁₂)/2 / soft acoustic
+phonon; "reversible athermal softening" = acoustic softening / nonlinear mesoscopic elasticity;
+"continuous softening" = amplitude-dependent modulus reduction. The extension is operational: a
+fixed-temperature, order-preserving (S ≈ 1), coherent variable-rigidity dial, whereas canonical soft
+modes soften with temperature and culminate in a phase transition. Strongest correspondence = soft-mode
+theory + premartensitic C′ anomaly; strongest discrepancy = T-driven transition vs fixed-T
+order-preserving dial. Classification: critical modes = soft modes CORRESPONDENCE; fixed-T coherent
+dial EXTENSION; genuinely new effect REFUTED. No new primitive; canonical AT unchanged.
+ResearchY-NP_140 (Fixed-Temperature Softening Audit, COMPLETE, tests 7/7 PASSED): does the
+fixed-temperature, order-preserving softening dial actually exist? Verdict: PARTIAL. The principle
+(drive-induced, fixed-T, athermal, reversible softening) is SUPPORTED — acoustic softening (plastic)
+and nonlinear mesoscopic elasticity (elastic ≤ 0.30). But a large (≥50%) fixed-T ELASTIC-modulus
+reduction is UNKNOWN: elastic ΔE/E ≈ ΔG/G ≤ 0.30 (typically ~0.01–0.10) at fixed T; 0.50–0.90 is
+plastic flow stress; ≈1.00 is temperature-driven (soft mode / ferroelastic / martensitic, phase
+transition). Against NP_136's 10/50/90% tiers: 10% partial, 50% plastic-only, 90% temperature-only.
+Strongest FOR = NME + acoustoplastic; strongest AGAINST = large elastic softening only via phase
+transition (elastic modulus is collective, not a few discrete modes). NP_136's "10–90% variable-
+rigidity technology" should read as ≤ ~30% for fixed-T elastic rigidity. Classification: principle
+SUPPORTED; large fixed-T elastic UNKNOWN; small fixed-T elastic SUPPORTED. No new primitive; canonical
+AT unchanged.
+ResearchY-NP_141 (Yield Stress Softening Audit, COMPLETE, tests 7/7 PASSED): can coherent critical-
+mode excitation reduce yield stress far more strongly than elastic modulus? Verdict: SUPPORTED —
+coherent excitation is primarily a YIELD-STRESS technology, not a rigidity technology. Elastic modulus
+E (bond property, collective) softens ≤ ~30% (typically ~1–10%) at fixed T; yield stress σ_y (defect
+property, dislocation-gated) softens 20–90% via preferential acoustic absorption at dislocations. A
+10% E reduction accompanies a 2–9× larger σ_y reduction. Practical levers (forming 20–50%, machining
+15–40%, drilling, cutting, stone shaping) are all yield-stress/fracture processes. Classification:
+σ_y ≫ E SUPPORTED; dislocation/defect coupling SUPPORTED; yield-stress technology SUPPORTED;
+NP_131 "critical modes = elastic backbone" REFINED (→ defect modes). This redirects the NP_131–140
+"rigidity master key" into a "yield-stress lever" — the large useful fixed-T softening is plastic, not
+elastic. No new primitive; canonical AT unchanged.
+ResearchY-NP_142 (Multi-Band Resonance Control Audit, COMPLETE, tests 10/10 PASSED): is coherent
+material control a single-frequency problem or a multi-band phase-coherence problem? Verdict: PARTIAL
+— the "master key" is NEITHER a single resonance NOR a coordinated multi-band phase-coherence pattern;
+it is a broadband, amplitude-driven defect coupling. The coupled objects are independent dislocations
+with a broad, damped resonance spectrum (Granato–Lücke); single-tone works (amplitude is the lever)
+but multi-tone is more effective (broader spectral coverage). Of {ω_i}, {A_i}, {φ_i}: amplitude
+dominates, frequency (spectral coverage) second, phase third — phase does NOT matter more than
+frequency. No small discrete mode set (NP_138); minimum = broadband amplitude above the dislocation
+breakaway threshold. Classification: single-sharp-resonance key CONTRADICTED; broadband multi-band
+defect coupling SUPPORTED; "phase coherence is the key resource" (NP_128) CONTRADICTED for this
+channel — the resource is energy density, not phase. No new primitive; canonical AT unchanged.
+ResearchY-NP_143 (Dislocation Threshold Audit, COMPLETE, tests 7/7 PASSED): what amplitude/energy
+density triggers significant defect mobility? Verdict: SUPPORTED — laboratory-accessible, not
+industrial-scale only. The Granato–Lücke breakaway threshold ε_c ≈ 10⁻⁶–10⁻⁵ (microstrain) gives
+σ_c = E·ε_c ≈ 0.06–2 MPa and I_c = σ_c²/(2ρc) ≈ 1–5 W/cm² for aluminum, steel, quartz, granite.
+Standard equipment crosses this comfortably: piezo ~1–10 W/cm², horn ~10–20+ W/cm², phased array
+(focused); a 20 kHz horn's 5–20 μm displacement gives 5–1000× the breakaway strain. Industrial scale
+is needed only for throughput, not threshold access — so the decisive NP_135 matched-power test is
+buildable with standard lab ultrasonic equipment. Classification: threshold ε_c SUPPORTED; σ_c/I_c
+SUPPORTED; lab equipment crosses SUPPORTED; overall laboratory-accessible SUPPORTED. No new primitive;
+canonical AT unchanged.
+ResearchY-NP_144 (Defect Spectrum Fingerprint Audit, COMPLETE, tests 8/8 PASSED): do different
+materials possess unique defect-spectrum fingerprints usable for targeted yield-stress control?
+Verdict: PARTIAL. Unique fingerprint SUPPORTED (mechanical spectroscopy: Bordoni dislocation peak in
+aluminum, Snoek interstitial peak in steel, grain-boundary/Kê and NME features in granite/quartz);
+universal broadband mobility response SUPPORTED (NP_142). Sensitivity: amplitude > bandwidth >
+frequency. Tailored excitation is more energy-efficient (~2–5× power saving) but does not increase the
+softening magnitude (~1×), because softening is set by dislocation mobility once the breakaway
+threshold is crossed (NP_143). Classification: unique fingerprint SUPPORTED; broadband mobility
+SUPPORTED; tailored-outperforms-generic PARTIAL (efficiency only); overall PARTIAL. The defect
+fingerprint is a diagnostic + efficiency lever, not a magnitude lever. No new primitive; canonical AT
+unchanged.
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-
