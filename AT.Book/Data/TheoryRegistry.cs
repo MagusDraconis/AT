@@ -489,5 +489,9 @@ public sealed class TheoryRegistry
             "YES — phase engineering OUTPERFORMS thermal processing. Binding = phase-locking (NP_100) + heat = decoherence (NP_096) means a structure is a set of phase-locked modes, so phase can build/modify/break it. Thermal melting is mode-blind (equipartition, dS = N·ln2, efficiency 1/N); coherent disruption is mode-selective (one resonant quantum into the target lock, dS = ln2, efficiency ~1) — an N× advantage (~95×) at the cost of coherence (NP_128). Conservation/2nd law HOLD (coherent is MORE reversible).",
             AuditStatus.Passed, new DateTime(2026, 9, 7), TheoryLayer.Physics, TheoryClassification.Emergent,
             ["difference", "d96"]),
+        new("np130", "Material Sonification & Inversion Audit", "Can a material be represented by a coherent resonance signature and can the inverse signature modify the material?",
+            "YES — matter is a WRITABLE RESONANCE SCORE (material music). Binding = phase-locking (NP_100) means a material's fingerprint is its mode spectrum {(ω_i, A_i, φ_i)} — one point in a ≥2^95 identity space. Sonification is a bijective scale map to the audible band (~212.6 Hz/mode). Invertibility EXACT for the full signature, PARTIAL for frequency-only (phase lost). Coherent excitation (NP_129) writes the score — soften/reshape/disorder/re-order — at an N× (~95×) energy/entropy advantage over thermal melting.",
+            AuditStatus.Passed, new DateTime(2026, 9, 7), TheoryLayer.Physics, TheoryClassification.Emergent,
+            ["difference", "d96"]),
     ];
 }

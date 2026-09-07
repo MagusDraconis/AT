@@ -4756,6 +4756,19 @@ exchange. Conservation laws and the 2nd law HOLD: coherent deposits energy (no f
 momentum (NP_075), and is MORE reversible (lower ΔS). Classification: coherent matter control DERIVED
 (NP_100 + NP_096 + NP_128); applications EMERGENT; "coherent violates thermodynamics" REFUTED;
 "thermal ≡ coherent" REFUTED. No new primitive; canonical AT unchanged.
+ResearchY-NP_130 (Material Sonification & Inversion Audit, COMPLETE, tests 8/8 PASSED): can a
+material be represented by a coherent resonance signature, and can the inverse signature modify it?
+Verdict: YES — matter is a WRITABLE RESONANCE SCORE ("material music"). Binding = phase-locking
+(NP_100) ⇒ a material is a set of phase-locked modes, so its fingerprint is the mode spectrum
+{(ω_i, A_i, φ_i)} — one point in a ≥ 2^95 ≈ 3.96×10²⁸ identity space. Sonification is a bijective
+scale map of modes onto the audible band (~212.6 Hz/mode for N=95 onto 20 Hz–20 kHz). Invertibility
+is EXACT for the full fingerprint (round-trip ~10⁻¹⁴) and PARTIAL for frequency-only (phase lost).
+Targeted coherent excitation (NP_129) writes the score — soften/reshape/disorder/re-order — at one
+resonant quantum per mode, an N× (~95×) energy and entropy advantage over thermal melting. Crystal
+and metal leverage clean/high-Q modes; glass and granite are moderate. Classification: fingerprint
+DERIVED (NP_100); sonification CORRESPONDENCE; invertibility DERIVED (full) / PARTIAL (frequency-
+only); "material music" EMERGENT; "matter is thermal-only" REFUTED. No new primitive; canonical AT
+unchanged.
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-

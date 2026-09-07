@@ -973,6 +973,21 @@ public static class AtlasDataService
                     "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_129.md"),
             ]),
         new(
+            "researchy-np130-material-sonification",
+            "The Score of a Stone: Matter as Writable Music",
+            "ResearchY · NP_130 (Material Sonification & Inversion Audit)",
+            "Every material is a chord held by the universe — a set of locked notes. A crystal is a single pure chord; glass is a wash of noise; granite is many overlapping chords; a metal rings long and bright. Once you hear a thing this way, a startling possibility follows: the sound IS the thing. The spectrum of a material's modes is its complete fingerprint, and the inverse — playing those exact notes back at it — edits it. Soften, reshape, disorder, re-order: each is a note written into the score, not a fire applied to it. Matter becomes a writable score.",
+            "NP_130 asks whether a material can be represented by a coherent resonance signature and whether the inverse signature can modify it. Verdict: YES — matter is a WRITABLE RESONANCE SCORE ('material music'). Binding = phase-locking (NP_100), so a material's fingerprint is its mode spectrum {(ω_i, A_i, φ_i)} — one point in a ≥2^95 ≈ 3.96×10²⁸ identity space. Sonification is a bijective scale map of modes onto the audible band (~212.6 Hz/mode for N=95 onto 20 Hz–20 kHz). Invertibility is EXACT for the full fingerprint (round-trip ~10⁻¹⁴) and PARTIAL for frequency-only (phase lost). Targeted coherent excitation (NP_129) writes the score — soften / reshape / disorder / re-order — at one resonant quantum per mode, an N× (~95×) energy and entropy advantage over thermal melting. Crystal and metal leverage clean/high-Q modes; glass and granite are moderate.",
+            "For non-experts: a bell and its ring are not two things — the ring is the bell's fingerprint. If you could play a bell's exact ring back at it, you could make it sing, soften, or reshape without ever heating it. This theory says that is precisely what matter is: a score you can read, and write.",
+            "Matter = writable resonance score: fingerprint (mode spectrum) is exact and invertible; coherent excitation rewrites it.",
+            "“Every material is a held chord; coherence is how you write the next note.”",
+            false,
+            [
+                new("ResearchY-NP_130", "MATERIAL SONIFICATION & INVERSION AUDIT",
+                    "Matter is a writable resonance score — fingerprint exact and invertible, coherent excitation rewrites it.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_130.md"),
+            ]),
+        new(
             "researchy-np074-quantum-number-ontology",
             "What Are Quantum Numbers? The Symmetry Charges of the D96 Ring: Charge Is the Rotation, Isospin the Doublet, and Only the Color Count Remains a Postulate",
             "ResearchY · NP_074 (Quantum Number Ontology Audit)",

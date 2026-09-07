@@ -224,6 +224,7 @@
 | ResearchY-NP_127 | Resonance Engineering Audit | `NP_NewPhysics/ResearchY-NP_127.md` | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_127_Tests.cs` (8/8 ✅) | COMPLETE |
 | ResearchY-NP_128 | Coherence Resource Audit | `NP_NewPhysics/ResearchY-NP_128.md` | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_128_Tests.cs` (8/8 ✅) | COMPLETE |
 | ResearchY-NP_129 | Coherent Matter Control Audit | `NP_NewPhysics/ResearchY-NP_129.md` | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_129_Tests.cs` (6/6 ✅) | COMPLETE |
+| ResearchY-NP_130 | Material Sonification & Inversion Audit | `NP_NewPhysics/ResearchY-NP_130.md` | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_130_Tests.cs` (8/8 ✅) | COMPLETE |
 | ResearchY-S_001 | Post-V2.1 Theory Architecture Synthesis | `S_Synthesis/ResearchY-S_001.md` | `AT.Tests/ResearchY/S_Synthesis/Y_S_001_Tests.cs` (4/4 ✅) | COMPLETE |
 | ResearchY-M_001 | Measurement Origin Audit | `M_Measurement/ResearchY-M_001.md` | `AT.Tests/ResearchY/M_Measurement/Y_M_001_Tests.cs` (7/7 ✅) | COMPLETE |
 | ResearchY-M_002 | Measurement Disturbance Audit | `M_Measurement/ResearchY-M_002.md` | `AT.Tests/ResearchY/M_Measurement/Y_M_002_Tests.cs` (7/7 ✅) | COMPLETE |
