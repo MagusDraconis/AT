@@ -5000,6 +5000,15 @@ AT-specific content does not. No confirmed new physics emerged from the chain. C
 physics dominates; AT = reinterpretation + refuted/untested predictions; "AT contributed confirmed new
 physics" REFUTED. This is a clean, honest separation of the coherent-softening chain. No new primitive;
 canonical AT unchanged.
+ResearchY-NP_152 (Material Memory Audit, COMPLETE, tests 8/8 PASSED): can defect-engineered materials
+store information in a controllable, readable, rewritable way? Verdict: KNOWN PHYSICS — defect-state
+memory is already industrialized (RRAM oxygen-vacancy filaments, phase-change memory, FeRAM/MRAM
+domains, NV-center spins), with nm-scale density, 10+ year retention, 10⁴–10¹² cycles; read→write→
+verify→erase is daily operation. AT's "writable resonance score" (NP_130) is an INTERPRETATION of this;
+the specific resonance-driven (ultrasonic) rewritable memory is an AT QUESTION (surface-confined, no nm
+addressability shown, NP_150). Classification: defect memory KNOWN PHYSICS; resonance score AT
+INTERPRETATION; ultrasonic memory AT QUESTION; "new capability" REFUTED. No new primitive; canonical AT
+unchanged.
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-

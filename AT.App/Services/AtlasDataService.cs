@@ -1303,6 +1303,21 @@ public static class AtlasDataService
                     "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_151.md"),
             ]),
         new(
+            "researchy-np152-material-memory",
+            "The Material Was Already a Hard Drive: Defects as Memory",
+            "ResearchY · NP_152 (Material Memory Audit)",
+            "The theory imagined a material whose 'resonance score' could be written and read — a kind of physical memory. When we checked, we found the world had already built it. The memory in your computer is literally a defect: resistive RAM stores bits as tiny filaments of missing atoms, phase-change memory flips a material between crystal and glass, and diamond color centers hold single quantum bits. So the idea that defects can remember is not new — it is the entire non-volatile memory industry. The theory's phrase 'writable resonance score' is a fresh name for a well-worn capability. What remains genuinely open is whether ultrasound could do the writing as well as electric fields do.",
+            "NP_152 asks whether defect-engineered materials can store information controllably, readably, and rewritably. Verdict: KNOWN PHYSICS — defect-state memory is already industrialized (RRAM oxygen-vacancy filaments, phase-change memory, FeRAM/MRAM domains, NV-center spins), with nm-scale density, 10+ year retention, 10⁴–10¹² cycles; read→write→verify→erase is daily operation. AT's 'writable resonance score' (NP_130) is an INTERPRETATION of this; the specific resonance-driven (ultrasonic) rewritable memory is an AT QUESTION (surface-confined, no nm addressability shown).",
+            "For non-experts: the theory pictured a material that could 'remember' — written and read by resonance. But that already exists: your computer's memory is literally stored as defects — tiny filaments of missing atoms in resistive RAM, a flip between crystal and glass in phase-change memory, single quantum bits in diamond. So 'defects as memory' is not a new idea; it is the whole storage industry. The genuinely open question is only whether sound, rather than electricity, could do the writing.",
+            "Defect-based memory is KNOWN PHYSICS (RRAM/PCM/FeRAM/MRAM/NV); AT's 'resonance score' is an interpretation, and ultrasonic memory is an open question.",
+            "“The material was already a hard drive — defects are the memory.”",
+            false,
+            [
+                new("ResearchY-NP_152", "MATERIAL MEMORY AUDIT",
+                    "Defect-state memory is known physics (RRAM/PCM/FeRAM/MRAM/NV); AT adds interpretation and one open question (ultrasonic memory).",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_152.md"),
+            ]),
+        new(
             "researchy-np074-quantum-number-ontology",
             "What Are Quantum Numbers? The Symmetry Charges of the D96 Ring: Charge Is the Rotation, Isospin the Doublet, and Only the Color Count Remains a Postulate",
             "ResearchY · NP_074 (Quantum Number Ontology Audit)",
