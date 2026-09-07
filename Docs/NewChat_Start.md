@@ -5069,6 +5069,15 @@ are reversible, damage-bounded ones are not (NP_155). AT's "latent organizationa
 INTERPRETATION of granular/jamming physics. Classification: multiple latent states KNOWN PHYSICS;
 property differences KNOWN PHYSICS; framing AT INTERPRETATION; "single material" REFUTED. No new
 primitive; canonical AT unchanged.
+ResearchY-NP_159 (Structural Training Audit, COMPLETE, tests 8/8 PASSED): can a granite-like block be
+trained into a preferred organizational state through repeated excitation and loading history?
+Verdict: KNOWN PHYSICS — repeated preload/vibration/unload cycles accumulate a history-dependent
+fabric (granular memory/aging); the final contact-network state depends on the loading sequence, so a
+virgin block becomes anisotropic with a persistent load-path preference. Trained blocks differ from
+virgin in anisotropy, damping, fracture location, and force-chain orientation. AT's "structural
+training" is an INTERPRETATION of cyclic-shear/history physics (stress-force-fabric). Classification:
+structural training KNOWN PHYSICS; history-dependent fabric KNOWN PHYSICS; framing AT INTERPRETATION;
+new capability REFUTED. No new primitive; canonical AT unchanged.
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-

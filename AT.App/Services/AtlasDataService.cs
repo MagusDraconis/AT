@@ -1408,6 +1408,21 @@ public static class AtlasDataService
                     "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_158.md"),
             ]),
         new(
+            "researchy-np159-structural-training",
+            "Teaching a Rock: Training Over Modifying",
+            "ResearchY · NP_159 (Structural Training Audit)",
+            "There is a difference between bending something once and teaching it a habit. A rock, it turns out, can learn a habit. Squeeze, shake, and release it again and again in the same direction, and its hidden load-bearing chains gradually line up that way, until the rock prefers to carry force along that path even afterward. The final arrangement depends on the whole history of pushes, not just the last one — a genuine memory. So a block can be trained, not merely modified: its structure develops a lasting bias. This is again a known behavior of granular matter, given the theory's own name for it.",
+            "NP_159 asks whether a granite-like block can be trained into a preferred organizational state through repeated excitation and loading history. Verdict: KNOWN PHYSICS — repeated preload/vibration/unload cycles accumulate a history-dependent fabric (granular memory/aging); the final contact-network state depends on the loading sequence, so a virgin block becomes anisotropic with a persistent load-path preference. Trained blocks differ from virgin in anisotropy, damping, fracture location, and force-chain orientation. AT's 'structural training' is an INTERPRETATION of cyclic-shear/history physics (stress-force-fabric).",
+            "For non-experts: there is a difference between bending something once and teaching it a habit — and a rock can learn a habit. Squeeze, shake, and release it again and again in the same direction, and its hidden load-bearing chains gradually line up that way, until the rock prefers to carry force along that path even afterward. The final arrangement depends on the whole history of pushes, not just the last one. So a block can be trained, not just changed. And this, too, is a known behavior of granular matter, given the theory's name.",
+            "Granite can be structurally trained (KNOWN PHYSICS): history-dependent fabric leaves a persistent load-path bias; AT's framing is an interpretation.",
+            "“Teaching a rock — training over modifying.”",
+            false,
+            [
+                new("ResearchY-NP_159", "STRUCTURAL TRAINING AUDIT",
+                    "Granite can be structurally trained (history-dependent fabric, persistent load-path bias); AT's framing is an interpretation.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_159.md"),
+            ]),
+        new(
             "researchy-np074-quantum-number-ontology",
             "What Are Quantum Numbers? The Symmetry Charges of the D96 Ring: Charge Is the Rotation, Isospin the Doublet, and Only the Color Count Remains a Postulate",
             "ResearchY · NP_074 (Quantum Number Ontology Audit)",
