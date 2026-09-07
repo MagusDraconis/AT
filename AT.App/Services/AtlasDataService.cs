@@ -1423,6 +1423,21 @@ public static class AtlasDataService
                     "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_159.md"),
             ]),
         new(
+            "researchy-np160-organizational-field",
+            "A Map Inside the Rock: Organization as a Field",
+            "ResearchY · NP_160 (Organizational Field Audit)",
+            "A material need not have one state; it can hold many at once, each in a different place. Harden the surface and leave the core soft, and you have two organizational states living side by side in the same rock — the 'field' of internal arrangement varying from point to point, like temperature or pressure. This is already how peening works, and how shear bands form: the material carries a spatial pattern of organization, not a single setting. So the internal structure is a map, not a single value. The theory's phrase 'organizational field' is just its name for a familiar thing: the fabric of a material, varying in space.",
+            "NP_160 asks whether a granite-like block can support spatially varying organizational states. Verdict: KNOWN PHYSICS — a programmable internal organizational field. Different training histories write different regional states (localized compaction, peening depth profiles, oriented vibration), and distinct states coexist (hard surface vs soft interior; shear bands), with spatially varying local stiffness/damping/fracture. Organization is a fabric field φ(x) (fabric-tensor continuum), bounded by state diffusion/relaxation/coupling. AT's 'organizational field' is an INTERPRETATION; fine-grained reversible field programming in consolidated rock is an AT QUESTION (damage-bounded, NP_155).",
+            "For non-experts: a material doesn't have to have one single state; it can hold many at once, each in a different place. Harden the surface and leave the core soft, and two organizational states live side by side in the same rock — the internal arrangement varying from point to point, like temperature or pressure. This is already how peening works and how shear bands form: the material carries a spatial pattern of organization, not a single setting. So the internal structure is a map, not one value.",
+            "Materials can hold a spatial organizational field (KNOWN PHYSICS): gradient/fabric field φ(x) with regional coexistence; AT's framing is an interpretation.",
+            "“A map inside the rock — organization as a field.”",
+            false,
+            [
+                new("ResearchY-NP_160", "ORGANIZATIONAL FIELD AUDIT",
+                    "Materials can hold a spatial organizational field (gradient/fabric field) with regional coexistence; AT's framing is an interpretation.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_160.md"),
+            ]),
+        new(
             "researchy-np074-quantum-number-ontology",
             "What Are Quantum Numbers? The Symmetry Charges of the D96 Ring: Charge Is the Rotation, Isospin the Doublet, and Only the Color Count Remains a Postulate",
             "ResearchY · NP_074 (Quantum Number Ontology Audit)",

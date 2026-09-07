@@ -5078,6 +5078,16 @@ virgin in anisotropy, damping, fracture location, and force-chain orientation. A
 training" is an INTERPRETATION of cyclic-shear/history physics (stress-force-fabric). Classification:
 structural training KNOWN PHYSICS; history-dependent fabric KNOWN PHYSICS; framing AT INTERPRETATION;
 new capability REFUTED. No new primitive; canonical AT unchanged.
+ResearchY-NP_160 (Organizational Field Audit, COMPLETE, tests 8/8 PASSED): can a granite-like block
+support spatially varying organizational states? Verdict: KNOWN PHYSICS — a programmable internal
+organizational field. Different training histories write different regional states (localized
+compaction, peening depth profiles, oriented vibration), and distinct states coexist (hard surface vs
+soft interior; shear bands), with spatially varying local stiffness/damping/fracture. Organization is a
+fabric field φ(x) (fabric-tensor continuum), bounded by state diffusion/relaxation/coupling. AT's
+"organizational field" is an INTERPRETATION; fine-grained reversible field programming in consolidated
+rock is an AT QUESTION (damage-bounded, NP_155). Classification: spatial field KNOWN PHYSICS; regional
+coexistence KNOWN PHYSICS; framing AT INTERPRETATION; reversible field programming AT QUESTION. No new
+primitive; canonical AT unchanged.
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-

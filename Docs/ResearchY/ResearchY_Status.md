@@ -254,6 +254,7 @@
 | ResearchY-NP_157 | Organization vs Material Audit | `NP_NewPhysics/ResearchY-NP_157.md` | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_157_Tests.cs` (7/7 ✅) | COMPLETE |
 | ResearchY-NP_158 | Latent Organization State Audit | `NP_NewPhysics/ResearchY-NP_158.md` | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_158_Tests.cs` (8/8 ✅) | COMPLETE |
 | ResearchY-NP_159 | Structural Training Audit | `NP_NewPhysics/ResearchY-NP_159.md` | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_159_Tests.cs` (8/8 ✅) | COMPLETE |
+| ResearchY-NP_160 | Organizational Field Audit | `NP_NewPhysics/ResearchY-NP_160.md` | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_160_Tests.cs` (8/8 ✅) | COMPLETE |
 | ResearchY-S_001 | Post-V2.1 Theory Architecture Synthesis | `S_Synthesis/ResearchY-S_001.md` | `AT.Tests/ResearchY/S_Synthesis/Y_S_001_Tests.cs` (4/4 ✅) | COMPLETE |
 | ResearchY-M_001 | Measurement Origin Audit | `M_Measurement/ResearchY-M_001.md` | `AT.Tests/ResearchY/M_Measurement/Y_M_001_Tests.cs` (7/7 ✅) | COMPLETE |
 | ResearchY-M_002 | Measurement Disturbance Audit | `M_Measurement/ResearchY-M_002.md` | `AT.Tests/ResearchY/M_Measurement/Y_M_002_Tests.cs` (7/7 ✅) | COMPLETE |
