@@ -1033,6 +1033,21 @@ public static class AtlasDataService
                     "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_133.md"),
             ]),
         new(
+            "researchy-np134-critical-mode-discovery",
+            "Finding the Keystone: How to Hear the Master Key",
+            "ResearchY · NP_134 (Critical Mode Discovery Audit)",
+            "A locksmith does not read every pin of a lock; they feel for the one that turns. So with matter. To find the few notes that hold a solid's strength, you do not need a full map — you pluck each note, watch how far the structure softens, and rank them. The notes that make it sag the most are the keystones. It is a simple, brutal test: touch, measure the fall, rank. The master key announces itself not by being loud, but by being load-bearing.",
+            "NP_134 asks how the critical rigidity modes of an unknown material can be identified. Verdict: RIGIDITY-PERTURBATION RANKING — measure the spectrum (NP_130), sweep a resonant drive across each mode, record the rigidity response R(e_i), and rank by influence I_i = |∂R/∂e_i|; the top-m modes are the master key. Signatures C (coherence sensitivity) and D (nonlinear coupling) are diagnostic; A (amplitude) is REFUTED (uncorrelated with load-bearing role); B (phase) is PARTIAL. Backbone influence ≈ 1/(1−p_c) vs ≈ 0 for non-backbone. Crystal/metal show a sharp gap (m = 6); glass a diffuse gap (m = 40). Minimum measurement: a single stiffness-vs-frequency sweep.",
+            "For non-experts: to find which spokes hold a bicycle wheel, squeeze each one and watch the rim wobble. The spokes that wobble it most are the load-bearers. This theory gives the same recipe for any material: pluck each note, measure how much it softens, and the biggest droops reveal the keystone notes.",
+            "Rigidity-perturbation ranking: pluck each mode, measure the rigidity drop, rank — the top modes are the master key.",
+            "“The keystone reveals itself not by sound, but by how far things fall when you touch it.”",
+            false,
+            [
+                new("ResearchY-NP_134", "CRITICAL MODE DISCOVERY AUDIT",
+                    "Rigidity-perturbation ranking discovers the master key (coherence sensitivity + nonlinear coupling).",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_134.md"),
+            ]),
+        new(
             "researchy-np074-quantum-number-ontology",
             "What Are Quantum Numbers? The Symmetry Charges of the D96 Ring: Charge Is the Rotation, Isospin the Doublet, and Only the Color Count Remains a Postulate",
             "ResearchY · NP_074 (Quantum Number Ontology Audit)",

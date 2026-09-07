@@ -505,5 +505,9 @@ public sealed class TheoryRegistry
             "The critical (backbone) modes are long-wavelength acoustic phonons at f_1 = c_s/(2L) — ~25–27.5 kHz for a 10 cm sample, ~2.5–2.75 kHz for 1 m — so they live in the AUDIO-to-ULTRASOUND band (~kHz–MHz). The Debye bond band f_D = c_s/(2a) ~ 8.3–9.2 THz is ~10^8× higher and physically distinct. Coherent softening is therefore ULTRASONIC-scale (audio for meter-scale); THz couples to bonds (heating/chemistry, NP_096), not rigidity. Excitable by piezo transducers, horns, SAW, phased arrays.",
             AuditStatus.Passed, new DateTime(2026, 9, 7), TheoryLayer.Physics, TheoryClassification.Emergent,
             ["difference", "d96"]),
+        new("np134", "Critical Mode Discovery Audit", "How can the critical rigidity modes of an unknown material be identified?",
+            "By RIGIDITY-PERTURBATION RANKING: measure the spectrum (NP_130), sweep a resonant drive across each mode, record the rigidity response R(e_i), and rank by influence I_i = |∂R/∂e_i| — the top-m modes are the master key. Signatures C (coherence sensitivity) and D (nonlinear coupling) are diagnostic; A (amplitude) is REFUTED; B (phase) is PARTIAL. Backbone influence ≈ 1/(1−p_c) vs ≈ 0 for non-backbone. Crystal/metal show a sharp gap (m = 6); glass a diffuse gap (m = 40). Minimum measurement: a single stiffness-vs-frequency sweep.",
+            AuditStatus.Passed, new DateTime(2026, 9, 7), TheoryLayer.Physics, TheoryClassification.Emergent,
+            ["difference", "d96"]),
     ];
 }

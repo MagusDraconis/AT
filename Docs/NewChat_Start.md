@@ -4803,6 +4803,17 @@ NP_096). Coherent softening is an ULTRASONIC-scale technology (audio for meter-s
 existing piezoelectric transducers / horns / SAW / phased arrays. Classification: critical-mode band
 DERIVED (NP_100 + NP_131); ultrasonic technology EMERGENT; "THz-scale rigidity control" REFUTED. No
 new primitive; canonical AT unchanged.
+ResearchY-NP_134 (Critical Mode Discovery Audit, COMPLETE, tests 7/7 PASSED): how to identify the
+critical rigidity modes of an unknown material? Verdict: RIGIDITY-PERTURBATION RANKING — measure the
+spectrum (NP_130), sweep a resonant drive across each mode, record the rigidity response R(e_i), and
+rank by influence I_i = |∂R/∂e_i|; the top-m are the master key. Diagnostic signatures: C (coherence
+sensitivity) and D (nonlinear coupling) YES — critical modes are those whose decoherence/nonlinear
+drive most collapses rigidity (NP_131); A (amplitude) NO (uncorrelated with load-bearing role);
+B (phase) PARTIAL. Backbone influence ≈ 1/(1−p_c) vs ≈ 0 for non-backbone, so ranking cleanly
+separates the key. Crystal/metal show a sharp gap (m = 6 unambiguous); glass a diffuse gap (m = 40,
+distributed). Minimum measurement: a single stiffness-vs-frequency sweep. Classification: discovery
+procedure EMERGENT (from DERIVED critical-mode property NP_131); "amplitude identifies critical
+modes" REFUTED. No new primitive; canonical AT unchanged.
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-
