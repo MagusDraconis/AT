@@ -988,6 +988,21 @@ public static class AtlasDataService
                     "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_130.md"),
             ]),
         new(
+            "researchy-np131-critical-resonance",
+            "The Keystone Note: A Resonance Master Key for Rigidity",
+            "ResearchY · NP_131 (Critical Resonance Audit)",
+            "An arch stands not because every stone is equally load-bearing, but because a few keystones carry the whole. Matter is the same. A crystal's rigidity is not distributed across all its notes — it is held by a small set of critical modes, the load-bearing backbone. Excite those few notes coherently, and the whole structure goes soft, like a solid turning briefly to gel, without ever heating it. Stop, re-lock, and it stands again. This is the master key: not more force, but the right few notes.",
+            "NP_131 asks whether every material possesses a small set of critical resonance modes whose coherent excitation drastically reduces structural rigidity. Verdict: YES — a resonance MASTER KEY: a small backbone set m ≪ N of critical (load-bearing) modes carries macroscopic rigidity (binding = phase-locking, NP_100). Backbone size is material-specific: crystal/metal m = 6 (~15.8× energy advantage), granite m = 20 (~4.8×), glass m = 40 (~2.4×). Rigidity is collective (percolation): unlocking one of 6 critical modes drops R 1.00 → 0.67; the full set drives R → 0. Coherent critical-mode excitation spends m resonant quanta (m·E_bind) vs thermal N·E_bind, entropy m·ln2 ≪ N·ln2 — transient, gel-like, REVERSIBLE softening without melting.",
+            "For non-experts: a bicycle wheel stands because a handful of spokes hold tension. Loosen the right few and the wheel goes wobbly; tighten them again and it stands. This theory says materials work the same way — a few load-bearing notes hold the whole, and touching just those, instead of heating everything, is the cheapest and most reversible way to soften it.",
+            "A resonance master key: a small backbone of critical modes controls macroscopic rigidity; coherent excitation softens reversibly.",
+            "“Every solid is an arch; a few notes are its keystones.”",
+            false,
+            [
+                new("ResearchY-NP_131", "CRITICAL RESONANCE AUDIT",
+                    "A small set of critical modes controls rigidity — a resonance master key (reversible softening).",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_131.md"),
+            ]),
+        new(
             "researchy-np074-quantum-number-ontology",
             "What Are Quantum Numbers? The Symmetry Charges of the D96 Ring: Charge Is the Rotation, Isospin the Doublet, and Only the Color Count Remains a Postulate",
             "ResearchY · NP_074 (Quantum Number Ontology Audit)",

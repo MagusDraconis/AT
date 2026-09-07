@@ -4769,6 +4769,17 @@ and metal leverage clean/high-Q modes; glass and granite are moderate. Classific
 DERIVED (NP_100); sonification CORRESPONDENCE; invertibility DERIVED (full) / PARTIAL (frequency-
 only); "material music" EMERGENT; "matter is thermal-only" REFUTED. No new primitive; canonical AT
 unchanged.
+ResearchY-NP_131 (Critical Resonance Audit, COMPLETE, tests 7/7 PASSED): do materials have a small
+set of critical resonance modes whose coherent excitation drastically reduces rigidity? Verdict: YES
+— a resonance "master key": a small backbone set m ≪ N of critical (load-bearing) modes carries
+macroscopic rigidity (binding = phase-locking, NP_100). Backbone size is material-specific:
+crystal/metal m = 6 (~15.8× energy advantage), granite m = 20 (~4.8×), glass m = 40 (~2.4×) — ordered
+materials have the strongest key. Rigidity is collective (percolation): unlocking one of 6 critical
+modes drops R from 1.00 to 0.67; the full set drives R → 0. Coherent critical-mode excitation spends
+m resonant quanta (m·E_bind) vs thermal's N·E_bind, with entropy m·ln2 ≪ N·ln2 — a transient,
+gel-like softening that is low-entropy and REVERSIBLE (re-lock restores rigidity), not a melt.
+Classification: critical modes DERIVED (NP_100 + NP_110); master key EMERGENT; "rigidity is uniformly
+distributed" REFUTED; "thermal ≡ coherent" REFUTED. No new primitive; canonical AT unchanged.
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-

@@ -493,5 +493,9 @@ public sealed class TheoryRegistry
             "YES — matter is a WRITABLE RESONANCE SCORE (material music). Binding = phase-locking (NP_100) means a material's fingerprint is its mode spectrum {(ω_i, A_i, φ_i)} — one point in a ≥2^95 identity space. Sonification is a bijective scale map to the audible band (~212.6 Hz/mode). Invertibility EXACT for the full signature, PARTIAL for frequency-only (phase lost). Coherent excitation (NP_129) writes the score — soften/reshape/disorder/re-order — at an N× (~95×) energy/entropy advantage over thermal melting.",
             AuditStatus.Passed, new DateTime(2026, 9, 7), TheoryLayer.Physics, TheoryClassification.Emergent,
             ["difference", "d96"]),
+        new("np131", "Critical Resonance Audit", "Does every material possess a small set of critical resonance modes whose coherent excitation can drastically reduce structural rigidity?",
+            "YES — a resonance MASTER KEY: a small backbone set m ≪ N of critical (load-bearing) modes carries macroscopic rigidity (binding = phase-locking, NP_100). Backbone size is material-specific: crystal/metal m = 6 (~15.8× energy advantage), granite m = 20 (~4.8×), glass m = 40 (~2.4×). Rigidity is collective (percolation): unlocking one of 6 critical modes drops R 1.00 → 0.67; the full set drives R → 0. Coherent critical-mode excitation spends m resonant quanta (m·E_bind) vs thermal N·E_bind, entropy m·ln2 ≪ N·ln2 — transient, gel-like, REVERSIBLE softening without melting.",
+            AuditStatus.Passed, new DateTime(2026, 9, 7), TheoryLayer.Physics, TheoryClassification.Emergent,
+            ["difference", "d96"]),
     ];
 }
