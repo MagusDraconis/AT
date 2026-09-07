@@ -898,6 +898,21 @@ public static class AtlasDataService
                     "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_124.md"),
             ]),
         new(
+            "researchy-np125-cooperation-ontology",
+            "What Is Cooperation? Watchers Whose Aims Align",
+            "ResearchY · NP_125 (Cooperation Ontology Audit)",
+            "Two minds can work at cross-purposes, or as one. Cooperation is the latter: watchers whose meanings and purposes align. Each still chooses freely, and each still answers for its part — but their values point the same way, and they model each other's aims, so their separate doings fuse into one shared doing. Cooperation is not a new kind of being, and it is not force; it is simply many watchers whose maps of the world and of each other happen to line up. Where consciousness is a mind seeing itself, cooperation is minds seeing each other, and aligning.",
+            "NP_125 defines cooperation = ALIGNED MEANINGS = SHARED PURPOSES = INTEGRATED SELF-MODELS (A = B = C): multiple persistent observers whose values (NP_116) and aims (NP_117) align, mutually modeling each other. D (multi-observer optimization) is PARTIAL. Cooperation is the multi-observer extension of individual purpose (one aim → many aligned aims); conflict is the misaligned counterpart. Freedom is RETAINED (cooperation is aligned choice, not force) and responsibility is DISTRIBUTED (NP_120). The social extension: consciousness = model of self (NP_122); cooperation = model of other + alignment. Cooperation is EMERGENT.",
+            "For non-experts: a rowing team moves as one not because the rowers are forced, but because they all aim at the same stroke. Cooperation is that alignment: each person still chooses, each still answers for their oar, but their aims line up so the boat glides. It is not the loss of the individual — it is individuals, pointed the same way.",
+            "Cooperation = aligned meanings + shared purposes + mutual models (many aims, one direction).",
+            "“Cooperation is many watchers, pointed the same way.”",
+            false,
+            [
+                new("ResearchY-NP_125", "COOPERATION ONTOLOGY AUDIT",
+                    "Cooperation = aligned meanings/shared purposes/mutual models; freedom retained, responsibility distributed.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_125.md"),
+            ]),
+        new(
             "researchy-np074-quantum-number-ontology",
             "What Are Quantum Numbers? The Symmetry Charges of the D96 Ring: Charge Is the Rotation, Isospin the Doublet, and Only the Color Count Remains a Postulate",
             "ResearchY · NP_074 (Quantum Number Ontology Audit)",

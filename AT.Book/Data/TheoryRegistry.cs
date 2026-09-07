@@ -469,5 +469,9 @@ public sealed class TheoryRegistry
             "Wisdom = RESPONSIBLE ACTION GUIDED BY UNDERSTANDING (D) — the integration of all prior levels into right action. B (balanced understanding) and C (truth-weighted purpose) PARTIAL; A (accumulated knowledge) REFUTED. Minimum condition = integration (understanding + truth + meaning + responsibility → action). Chain: knowledge → understanding → meaning → purpose → wisdom. EMERGENT.",
             AuditStatus.Passed, new DateTime(2026, 9, 7), TheoryLayer.Foundations, TheoryClassification.Emergent,
             ["difference"]),
+        new("np125", "Cooperation Ontology Audit", "What is cooperation inside Actualization Theory?",
+            "Cooperation = ALIGNED MEANINGS = SHARED PURPOSES = INTEGRATED SELF-MODELS (A = B = C) — multiple observers' aligned values and aims, mutually modeled. D (optimization) PARTIAL. Distinct from individual purpose (one aim → many aligned aims). Freedom retained; responsibility distributed. Social extension: consciousness = model of self; cooperation = model of other + alignment. EMERGENT.",
+            AuditStatus.Passed, new DateTime(2026, 9, 7), TheoryLayer.Foundations, TheoryClassification.Emergent,
+            ["difference"]),
     ];
 }

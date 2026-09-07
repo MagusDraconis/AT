@@ -4688,6 +4688,20 @@ understanding (models why) < wise (acts responsibly). The minimum condition is I
 meaning/purpose/truth/consciousness EMERGENT (NP_114–123); wisdom EMERGENT (the integrative apex);
 "wisdom = accumulated knowledge" REFUTED; "wisdom = a separate level/primitive" REFUTED. No new
 primitive; canonical AT unchanged.
+ResearchY-NP_125 (Cooperation Ontology Audit, COMPLETE, tests 7/7 PASSED): what is cooperation?
+Verdict: cooperation = ALIGNED MEANINGS = SHARED PURPOSES = INTEGRATED SELF-MODELS (A = B = C) —
+multiple persistent observers whose value-weightings (meaning, NP_116) and selected predictions
+(purpose, NP_117) align, and who mutually model each other (the social extension of the self-model,
+NP_122). D (multi-observer optimization) PARTIAL (a consequence, not the essence). Cooperation is
+the MULTI-OBSERVER extension of individual purpose: purpose is ONE observer's selected prediction;
+cooperation is MULTIPLE observers' ALIGNED selected predictions. Conflict is the misaligned
+counterpart. In a cooperating system, meaning is aligned, freedom is RETAINED (cooperation is
+aligned choice, not force), and responsibility is DISTRIBUTED (each owns its part, NP_120). The
+chain: consciousness = model of SELF; cooperation = model of OTHER + alignment. Classification:
+meaning/purpose EMERGENT (NP_116/117); the self-model EMERGENT (NP_122); cooperation EMERGENT (the
+multi-observer alignment); "cooperation = a new primitive" REFUTED; "cooperation = mere optimization"
+REFUTED; "cooperation eliminates freedom/responsibility" REFUTED. No new primitive; canonical AT
+unchanged.
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-
