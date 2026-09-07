@@ -4566,6 +4566,20 @@ data/information DERIVED (D_039/M_004); observation EMERGENT (NP_113); knowledge
 understanding EMERGENT (NP_115); meaning EMERGENT (the significance relation); "meaning =
 information" REFUTED; "meaning needs a new primitive" REFUTED. No new primitive; canonical AT
 unchanged.
+ResearchY-NP_117 (Purpose Ontology Audit, COMPLETE, tests 9/9 PASSED): what is purpose? Verdict:
+purpose = the SELECTED PREDICTION (B) = a FUTURE-ORIENTED ACTUALIZATION (C) = a STABLE VALUE
+HIERARCHY (D) — meaning PLUS selection: the prediction the observer picks as its aim. Meaning
+WEIGHS a distinction's significance (NP_116); purpose SELECTS a direction and AIMS the observer
+toward it. A (weighted meaning) necessary but not sufficient — the differentiator from meaning is
+SELECTION (direction). The teleological chain is observer → meaning (weighs) → purpose (aims) →
+action (does). Removing value collapses both meaning and purpose (no weight, no selection criterion);
+removing prediction collapses purpose (no future to aim at); information/knowledge/understanding
+survive as the predictive machinery. Purpose CHANGES future actualization — it is the aim that
+directs the observer's subsequent actions, converting significance into a goal. Classification:
+meaning EMERGENT (NP_116); value DERIVED (the consequence weight); choice/decision EMERGENT (the
+selection); purpose EMERGENT (the selected aim); action EMERGENT (the future actualization);
+"purpose = meaning" REFUTED (lacks selection); "purpose needs a new primitive" REFUTED. No new
+primitive; canonical AT unchanged.
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-

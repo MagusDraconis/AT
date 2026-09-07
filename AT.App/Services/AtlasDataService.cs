@@ -778,6 +778,21 @@ public static class AtlasDataService
                     "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_116.md"),
             ]),
         new(
+            "researchy-np117-purpose-ontology",
+            "What Is Purpose? A Watcher That Has Chosen Where to Aim",
+            "ResearchY · NP_117 (Purpose Ontology Audit)",
+            "A sign means something; a mind with purpose has gone one step further — it has chosen where to aim. Meaning is the weight a distinction carries; purpose is when the watcher picks one weighted possibility and sets its course toward it. The difference is selection: meaning says 'this matters', purpose says 'and I will act toward this.' Purpose is meaning made directional — the bridge from significance to doing. A thermostat 'means' the temperature matters; a living thing has purpose because it aims.",
+            "NP_117 completes the teleological chain: observer → meaning (weighs) → purpose (aims) → action (does). Determination: B = C = D — purpose is the selected prediction = a future-oriented actualization = a stable value hierarchy; A (weighted meaning) is necessary but not sufficient. The differentiator from meaning is SELECTION (direction). Removing value collapses both meaning and purpose; removing prediction collapses purpose; information/knowledge/understanding survive. Purpose CHANGES future actualization — it directs the observer's subsequent actions. Purpose is EMERGENT.",
+            "For non-experts: a compass needle 'means' north, but it does not have a purpose. Purpose is when something does not merely point but *goes* — when a weighted choice becomes a direction of action. A seed has purpose: it does not just register light and water, it grows toward them. Purpose is meaning, with the decision to act, built in.",
+            "Purpose = the selected prediction (meaning + direction); the aim that directs future action.",
+            "“Purpose is meaning that has chosen where to go.”",
+            false,
+            [
+                new("ResearchY-NP_117", "PURPOSE ONTOLOGY AUDIT",
+                    "Purpose = the selected prediction (meaning + selection); the aim directing future actualization.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_117.md"),
+            ]),
+        new(
             "researchy-np074-quantum-number-ontology",
             "What Are Quantum Numbers? The Symmetry Charges of the D96 Ring: Charge Is the Rotation, Isospin the Doublet, and Only the Color Count Remains a Postulate",
             "ResearchY · NP_074 (Quantum Number Ontology Audit)",

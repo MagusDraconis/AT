@@ -437,5 +437,9 @@ public sealed class TheoryRegistry
             "Meaning = VALUE-WEIGHTED PREDICTION = the relation between models (C = D) — the SIGNIFICANCE of a distinction for an observer (how much it matters for its future actualizations). Distinct from information (structure), knowledge (prediction), understanding (model of models); differentiator = significance. Remove context or prediction → meaning collapses. Minimum condition = significance. DERIVED/EMERGENT.",
             AuditStatus.Passed, new DateTime(2026, 9, 7), TheoryLayer.Foundations, TheoryClassification.Emergent,
             ["difference"]),
+        new("np117", "Purpose Ontology Audit", "What is purpose inside Actualization Theory?",
+            "Purpose = the SELECTED PREDICTION (B = C = D) — meaning PLUS selection (the aim). Meaning weighs; purpose aims (directs future actualization). A (weighted meaning) necessary not sufficient. Differentiator from meaning = selection. Remove value or prediction → purpose collapses. Chain: observer → meaning → purpose → action. DERIVED/EMERGENT.",
+            AuditStatus.Passed, new DateTime(2026, 9, 7), TheoryLayer.Foundations, TheoryClassification.Emergent,
+            ["difference"]),
     ];
 }
