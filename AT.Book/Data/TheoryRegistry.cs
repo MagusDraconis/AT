@@ -465,5 +465,9 @@ public sealed class TheoryRegistry
             "Truth = CORRESPONDENCE (C = B = D) — the model's distinctions map to the world's persistent Difference structures. A (successful prediction) necessary not sufficient (useful ≠ true). Distinct from knowledge (prediction), understanding (modeling), meaning (valuing). Minimum condition = correspondence (stable, consistent). EMERGENT.",
             AuditStatus.Passed, new DateTime(2026, 9, 7), TheoryLayer.Foundations, TheoryClassification.Emergent,
             ["difference"]),
+        new("np124", "Wisdom Ontology Audit", "What is wisdom inside Actualization Theory?",
+            "Wisdom = RESPONSIBLE ACTION GUIDED BY UNDERSTANDING (D) — the integration of all prior levels into right action. B (balanced understanding) and C (truth-weighted purpose) PARTIAL; A (accumulated knowledge) REFUTED. Minimum condition = integration (understanding + truth + meaning + responsibility → action). Chain: knowledge → understanding → meaning → purpose → wisdom. EMERGENT.",
+            AuditStatus.Passed, new DateTime(2026, 9, 7), TheoryLayer.Foundations, TheoryClassification.Emergent,
+            ["difference"]),
     ];
 }

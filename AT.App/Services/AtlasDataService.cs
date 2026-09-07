@@ -883,6 +883,21 @@ public static class AtlasDataService
                     "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_123.md"),
             ]),
         new(
+            "researchy-np124-wisdom-ontology",
+            "What Is Wisdom? Knowing, Valuing, and Owning All at Once",
+            "ResearchY · NP_124 (Wisdom Ontology Audit)",
+            "Knowledge says what will happen; understanding says why; truth says what is; meaning says what matters; purpose says where to aim. Wisdom is all of them, acting at once. A wise mind does not merely know, or even understand — it knows what is true, values what matters, and owns what it does, and then acts accordingly. Wisdom is the integration of every level that came before, fused into responsible action. That is why a brilliant fool is possible: brilliance is knowledge; wisdom is knowledge used rightly.",
+            "NP_124 completes the whole arc: knowledge → understanding → meaning → purpose → wisdom (predict → model → value → aim → integrate-and-act). Determination: D — wisdom is responsible action guided by understanding; B (balanced understanding) and C (truth-weighted purpose) are necessary but not sufficient; A (accumulated knowledge) is REFUTED. Removing truth, meaning, or responsibility collapses wisdom while knowledge and understanding survive. The ladder: knowledgeable (knows) < understanding (models why) < wise (acts responsibly). The minimum condition is integration. Wisdom is EMERGENT.",
+            "For non-experts: a scholar can know every fact and still act foolishly; a wise person knows fewer facts but acts rightly. Wisdom is not more knowledge — it is knowledge, understanding, truth, and care, all fused into one and expressed in how you act. It is the difference between a library and a life well lived.",
+            "Wisdom = responsible action guided by understanding (the integration of truth + meaning + purpose + responsibility).",
+            "“Wisdom is knowledge, used rightly.”",
+            false,
+            [
+                new("ResearchY-NP_124", "WISDOM ONTOLOGY AUDIT",
+                    "Wisdom = responsible action guided by understanding (the integrative apex of the whole arc).",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_124.md"),
+            ]),
+        new(
             "researchy-np074-quantum-number-ontology",
             "What Are Quantum Numbers? The Symmetry Charges of the D96 Ring: Charge Is the Rotation, Isospin the Doublet, and Only the Color Count Remains a Postulate",
             "ResearchY · NP_074 (Quantum Number Ontology Audit)",

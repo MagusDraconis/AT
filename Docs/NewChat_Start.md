@@ -4673,6 +4673,21 @@ Classification: the world's persistent structures DERIVED (NP_102/104); observat
 understanding EMERGENT (NP_113/114/115); truth EMERGENT (the correspondence relation); "truth =
 successful prediction" REFUTED (useful ≠ true); "truth = meaning" REFUTED (value ≠ correspondence);
 "truth needs a new primitive" REFUTED. No new primitive; canonical AT unchanged.
+ResearchY-NP_124 (Wisdom Ontology Audit, COMPLETE, tests 9/9 PASSED): what is wisdom? Verdict:
+wisdom = RESPONSIBLE ACTION GUIDED BY UNDERSTANDING (D) — the INTEGRATION of the prior epistemic/
+teleological/agential/moral levels into right action. B (balanced understanding) and C (truth-
+weighted purpose) necessary but not sufficient; A (accumulated knowledge) REFUTED (a knowledgeable
+fool exists). Wisdom is the apex of the chain knowledge → understanding → meaning → purpose → wisdom
+(predict → model → value → aim → integrate-and-act): it knows the truth (NP_123), understands why
+(NP_115), values what matters (NP_116), and owns what it does (responsibility, NP_120). Removing
+truth collapses wisdom (misguided); removing meaning collapses wisdom (directionless); removing
+responsibility collapses wisdom (irresponsible); knowledge and understanding survive as the machinery
+— proving wisdom is the INTEGRATION, not a separate level. The ladder: knowledgeable (knows) <
+understanding (models why) < wise (acts responsibly). The minimum condition is INTEGRATION
+(understanding + truth + meaning + responsibility → action). Classification: knowledge/understanding/
+meaning/purpose/truth/consciousness EMERGENT (NP_114–123); wisdom EMERGENT (the integrative apex);
+"wisdom = accumulated knowledge" REFUTED; "wisdom = a separate level/primitive" REFUTED. No new
+primitive; canonical AT unchanged.
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-
