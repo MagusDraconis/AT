@@ -4928,6 +4928,47 @@ threshold is crossed (NP_143). Classification: unique fingerprint SUPPORTED; bro
 SUPPORTED; tailored-outperforms-generic PARTIAL (efficiency only); overall PARTIAL. The defect
 fingerprint is a diagnostic + efficiency lever, not a magnitude lever. No new primitive; canonical AT
 unchanged.
+ResearchY-NP_145 (Waveform Control Audit, COMPLETE, tests 8/8 PASSED): does the temporal waveform
+matter more than frequency for defect mobilization? Verdict: SUPPORTED — material control is primarily
+an AMPLITUDE problem, not a frequency or waveform problem. Holding total energy constant, the five
+waveforms (sine/burst/chirp/noise/impulse train) differ only in peak amplitude + bandwidth; there is
+no independent shape degree of freedom. Defect mobilization tracks peak amplitude: bursts/impulses
+outperform sine per unit energy because they concentrate energy into a higher peak that crosses the
+breakaway threshold σ_c (NP_143) — the shock-loading result (plastic flow driven by peak stress +
+duration, not shape). Dominance: amplitude > bandwidth > waveform. Classification: amplitude-dominant
+SUPPORTED; "frequency problem" CONTRADICTED; "waveform problem" CONTRADICTED. No new primitive;
+canonical AT unchanged.
+ResearchY-NP_146 (Energy Pathway Audit, COMPLETE, tests 7/7 PASSED): where does the injected
+ultrasonic energy go during yield-stress softening? Verdict: SUPPORTED — the dominant pathway is
+DEFECT MOTION (mechanical/athermal), not heat. The injected energy partitions into elastic storage
+(small, recoverable), defect motion (dominant, recoverable — dislocations in metals, microcracks/
+contacts in rock), and heat (residual, via internal friction). Decisive evidence: Langenecker's result
+that the softening is NOT reproduced by the equivalent temperature rise — it is athermal/mechanical.
+Ordered metals (Al, steel) have the cleanest dislocation-dominated pathway; quartz/granite have more
+frictional/contact dissipation. Classification: defect-motion pathway SUPPORTED; elastic storage small
+SUPPORTED; heat residual SUPPORTED; "primarily thermal" CONTRADICTED. No new primitive; canonical AT
+unchanged.
+ResearchY-NP_147 (Defect Writing Audit, COMPLETE, tests 8/8 PASSED): can coherent ultrasonic
+excitation create, erase, rearrange, or heal defect populations? Verdict: SUPPORTED — resonance
+control is a TRUE defect-engineering tool, not only a transient softening lever. Four processes: motion
+(transient), creation, annihilation, rearrangement (permanent). Sustained high-amplitude excitation
+permanently reduces dislocation density (annihilation), refines subgrains, and heals microcracks
+(crack-tip plasticity, e.g. copper 3× fatigue life), with residual hardening or softening. Metals are
+the richest medium; quartz/granite are crack/contact-limited. The defect fingerprint (NP_144) changes
+after conditioning — resonance writes the defect score (NP_130). Classification: defect motion
+SUPPORTED; defect writing SUPPORTED; crack healing SUPPORTED; defect engineering SUPPORTED; "only
+transient" CONTRADICTED. No new primitive; canonical AT unchanged.
+ResearchY-NP_148 (Property Programming Audit, COMPLETE, tests 8/8 PASSED): can material properties be
+programmed through controlled defect engineering? Verdict: SUPPORTED — resonance control can become
+TRUE property programming (metal-centric), not simple softening. Target properties (hardness, yield
+stress, fatigue life, fracture toughness, damping) each map onto a specific defect lever (dislocation
+density, grain refinement, residual stress, crack closure). Parameter-controlled ultrasonic processes
+(shot peening, UNSM up to −1400 MPa / fatigue limit up to 2×, USRP) move materials toward specified
+properties — directed, not random, defect evolution. Open-loop read→write→verify works today (NP_144
+read, NP_147 write); closed-loop convergence is PARTIAL (emerging). Metal-centric: ceramics/quartz/
+granite lack dislocation/grain levers. Classification: correlation SUPPORTED; directed evolution
+SUPPORTED; open-loop SUPPORTED; closed-loop PARTIAL; "random-only" CONTRADICTED. No new primitive;
+canonical AT unchanged.
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-

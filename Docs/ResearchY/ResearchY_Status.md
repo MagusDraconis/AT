@@ -238,7 +238,11 @@
 | ResearchY-NP_141 | Yield Stress Softening Audit | `NP_NewPhysics/ResearchY-NP_141.md` | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_141_Tests.cs` (7/7 ✅) | COMPLETE |
 | ResearchY-NP_142 | Multi-Band Resonance Control Audit | `NP_NewPhysics/ResearchY-NP_142.md` | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_142_Tests.cs` (10/10 ✅) | COMPLETE |
 | ResearchY-NP_143 | Dislocation Threshold Audit | `NP_NewPhysics/ResearchY-NP_143.md` | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_143_Tests.cs` (7/7 ✅) | COMPLETE |
-| ResearchY-NP_144 | Defect Spectrum Fingerprint Audit | `NP_NewPhysics/ResearchY-NP_144.md` | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_144_Tests.cs` (8/8 ✅) | COMPLETE |
+| ResearchY-NP_144 | Defect Spectrum Fingerprint Audit | `NP_NewPhysics/ResearchY-NP_144.md` | `AT.Tests/ResearchY/NP_144_Tests.cs` (8/8 ✅) | COMPLETE |
+| ResearchY-NP_145 | Waveform Control Audit | `NP_NewPhysics/ResearchY-NP_145.md` | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_145_Tests.cs` (8/8 ✅) | COMPLETE |
+| ResearchY-NP_146 | Energy Pathway Audit | `NP_NewPhysics/ResearchY-NP_146.md` | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_146_Tests.cs` (7/7 ✅) | COMPLETE |
+| ResearchY-NP_147 | Defect Writing Audit | `NP_NewPhysics/ResearchY-NP_147.md` | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_147_Tests.cs` (8/8 ✅) | COMPLETE |
+| ResearchY-NP_148 | Property Programming Audit | `NP_NewPhysics/ResearchY-NP_148.md` | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_148_Tests.cs` (8/8 ✅) | COMPLETE |
 | ResearchY-S_001 | Post-V2.1 Theory Architecture Synthesis | `S_Synthesis/ResearchY-S_001.md` | `AT.Tests/ResearchY/S_Synthesis/Y_S_001_Tests.cs` (4/4 ✅) | COMPLETE |
 | ResearchY-M_001 | Measurement Origin Audit | `M_Measurement/ResearchY-M_001.md` | `AT.Tests/ResearchY/M_Measurement/Y_M_001_Tests.cs` (7/7 ✅) | COMPLETE |
 | ResearchY-M_002 | Measurement Disturbance Audit | `M_Measurement/ResearchY-M_002.md` | `AT.Tests/ResearchY/M_Measurement/Y_M_002_Tests.cs` (7/7 ✅) | COMPLETE |
