@@ -4506,6 +4506,21 @@ substrate (sequence of actualizations) DERIVED (NP_106/107); the persistent stru
 (NP_071/094/100/101); the observer DERIVED (NP_111); the emergent narrative (stable reality) EMERGENT
 (the decohered integration); "reality is observer-relative" REFUTED; "reality needs a new primitive"
 REFUTED. No new primitive; canonical AT unchanged.
+ResearchY-NP_113 (Observed Ontology Audit, COMPLETE, tests 8/8 PASSED): what does "observed" mean?
+Verdict: "observed" = a distinction INCORPORATED INTO A PERSISTENT OBSERVER (D) — a persistent
+Difference structure (NP_111) has changed its own structure to include the distinction, altering its
+subsequent actualizations (M_003 feedback). It is DISTINCT from the four near-synonyms: "actualized"
+(a node realized by Born selection, NP_093 — universal, no observer), "localized" (the wave-packet
+peak, NP_098 — a state-property), "measured" (an actualization reading both quadratures, M_001 — a
+read event), "recorded" (the outcome persisted as a trace — a persistent copy). Determination: D the
+answer; A (actualized) and C (distinguished) necessary but not sufficient; B (localized) neither.
+Observation changes the OBSERVER (primarily) and the observed system's PHASE (the pinning, M_002),
+but NOT the underlying persistent Difference structures (they pre-exist, M_005) — reality is
+revealed, not created. Chain: actualization → localization → measurement → observation → recording,
+each adding a condition. Classification: actualized DERIVED (NP_093); localized DERIVED (NP_098);
+measured DERIVED (M_001); observed EMERGENT (NP_111); recorded EMERGENT; "observed = actualized"
+REFUTED (over-inclusive); "observation creates reality" REFUTED. No new primitive; canonical AT
+unchanged.
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-

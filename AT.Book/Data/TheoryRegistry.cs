@@ -421,5 +421,9 @@ public sealed class TheoryRegistry
             "Reality = A = B = C = D: the sequence of actualizations integrated by a persistent observer into an emergent narrative. Two stabilities multiply (world persists + observer persists, decohered) → repeated readings agree → a stable, continuous reality. Reality is STRUCTURE-RELATIVE (persistent structures reading persistent structures), not observer-relative. DERIVED/EMERGENT.",
             AuditStatus.Passed, new DateTime(2026, 9, 7), TheoryLayer.Foundations, TheoryClassification.Emergent,
             ["difference"]),
+        new("np113", "Observed Ontology Audit", "What does \"observed\" mean inside Actualization Theory?",
+            "'Observed' = a distinction INCORPORATED INTO A PERSISTENT OBSERVER (D). Distinct from actualized (universal), localized (state-property), measured (read event), recorded (persistent trace). Observation changes the observer + the phase, not the structure (reality is revealed, not created). Chain: actualization → localization → measurement → observation → recording. DERIVED/EMERGENT.",
+            AuditStatus.Passed, new DateTime(2026, 9, 7), TheoryLayer.Foundations, TheoryClassification.Emergent,
+            ["difference"]),
     ];
 }

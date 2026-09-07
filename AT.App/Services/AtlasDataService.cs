@@ -718,6 +718,21 @@ public static class AtlasDataService
                     "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_112.md"),
             ]),
         new(
+            "researchy-np113-observed-ontology",
+            "What Does 'Observed' Mean? A Difference Folded Into a Watcher",
+            "ResearchY · NP_113 (Observed Ontology Audit)",
+            "We say a particle is 'observed' — but what actually happens, in the theory's own terms, to make that true? The answer turns out to be precise. To be observed is not to exist, nor to be localized, nor even to be measured — it is to be *folded into a watcher*. A difference is 'observed' the moment a persistent structure (an observer, like a detector or a mind) changes its own arrangement to include that difference, so that it now responds to it in its future actions. The distinction was already there; observation is the watcher taking it in.",
+            "NP_113 defines 'observed' = a distinction INCORPORATED INTO A PERSISTENT OBSERVER (D). It distinguishes five states: actualized (a node realized, NP_093 — universal, no observer), localized (the wave-packet peak, NP_098 — a state-property), measured (a read of both quadratures, M_001), recorded (a persistent trace), and observed (incorporated into the observer, NP_111). Determination D; A (actualized) and C (distinguished) necessary not sufficient; B (localized) neither. Observation changes the observer and the phase (M_002), not the underlying structure (reality is revealed, not created, M_005). Chain: actualization → localization → measurement → observation → recording.",
+            "For non-experts: a book exists on a shelf whether or not you look at it. When you look, two things happen: light leaves the page (its state changes a little), and — far more importantly — the arrangement of your own mind changes to include the page. That second change, the folding-in, is what 'observing' really is. The world was already there; observing is you, changing to take it in.",
+            "'Observed' = a distinction incorporated into a persistent observer; distinct from actualized/localized/measured/recorded.",
+            "“To be observed is to be folded into a watcher.”",
+            false,
+            [
+                new("ResearchY-NP_113", "OBSERVED ONTOLOGY AUDIT",
+                    "Observed = incorporated into a persistent observer; reality revealed, not created.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_113.md"),
+            ]),
+        new(
             "researchy-np074-quantum-number-ontology",
             "What Are Quantum Numbers? The Symmetry Charges of the D96 Ring: Charge Is the Rotation, Isospin the Doublet, and Only the Color Count Remains a Postulate",
             "ResearchY · NP_074 (Quantum Number Ontology Audit)",
