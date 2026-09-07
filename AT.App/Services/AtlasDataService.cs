@@ -733,6 +733,21 @@ public static class AtlasDataService
                     "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_113.md"),
             ]),
         new(
+            "researchy-np114-knowledge-ontology",
+            "What Is Knowledge? A Watcher That Can Anticipate",
+            "ResearchY · NP_114 (Knowledge Ontology Audit)",
+            "A detector records; a mind knows. What is the difference? Actualization Theory answers: memory plus anticipation. Knowledge is not a pile of recorded facts — it is the watcher's own structure, rebuilt by everything it has folded in, so that it now *anticipates* what will happen next. A distinction is observed when it enters the watcher; it becomes knowledge when it is held there and woven into a pattern that predicts. The difference between a thermometer and a mind is that the mind's stored differences shape its next move.",
+            "NP_114 defines four terms: data (a raw distinction), information (the distinguishability structure, M_004), observation (the incorporation, NP_113), and knowledge (STABLE, INTEGRATED, PREDICTIVE distinctions). Chain: Difference → observation → memory → knowledge. Determination: B = C = D (stable integrated distinctions = predictive structure = persistent information), realized via A (stored observations). The differentiator is PREDICTION (C). Removing memory leaves observation but collapses knowledge and understanding. Detector < observer < knowledge-bearing observer. Knowledge is EMERGENT.",
+            "For non-experts: a jar of dried leaves is a record, but it is not knowledge. Knowledge is what lets you look at today's sky and know it will rain — the stored signs, woven into a pattern that points forward. The theory puts it plainly: knowledge is memory that predicts. That is the step from a detector to a mind.",
+            "Knowledge = stable integrated predictive distinctions (memory + anticipation); distinct from information and observation.",
+            "“Knowledge is memory that predicts.”",
+            false,
+            [
+                new("ResearchY-NP_114", "KNOWLEDGE ONTOLOGY AUDIT",
+                    "Knowledge = predictive integrated distinctions (memory + anticipation); distinct from information/observation.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_114.md"),
+            ]),
+        new(
             "researchy-np074-quantum-number-ontology",
             "What Are Quantum Numbers? The Symmetry Charges of the D96 Ring: Charge Is the Rotation, Isospin the Doublet, and Only the Color Count Remains a Postulate",
             "ResearchY · NP_074 (Quantum Number Ontology Audit)",

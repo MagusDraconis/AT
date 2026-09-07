@@ -4521,6 +4521,19 @@ each adding a condition. Classification: actualized DERIVED (NP_093); localized 
 measured DERIVED (M_001); observed EMERGENT (NP_111); recorded EMERGENT; "observed = actualized"
 REFUTED (over-inclusive); "observation creates reality" REFUTED. No new primitive; canonical AT
 unchanged.
+ResearchY-NP_114 (Knowledge Ontology Audit, COMPLETE, tests 8/8 PASSED): what is knowledge?
+Verdict: knowledge = STABLE, INTEGRATED, PREDICTIVE DISTINCTIONS (B = C = D) — the persistent
+information held by an observer as an anticipatory structure, realized via stored observations (A)
+as raw material. Chain: Difference → observation (incorporation, NP_113) → memory (persistence,
+NP_102) → knowledge (predictive integration). Knowledge is DISTINCT from information (the
+distinguishability structure, M_004 — no persistence/prediction) and observation (the single event —
+no persistence). Its differentiator is PREDICTION (C): knowledge shapes the observer's future
+actualizations. Removing memory leaves observation but collapses knowledge and understanding.
+Detector < observer < knowledge-bearing observer (observer WITH memory + prediction). Classification:
+data/information DERIVED (D_039/M_004); observation EMERGENT (NP_113); memory DERIVED (NP_102);
+knowledge EMERGENT (predictive integration); understanding EMERGENT (highest integration);
+"knowledge = stored observations only" REFUTED; "knowledge needs a new primitive" REFUTED. No new
+primitive; canonical AT unchanged.
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-

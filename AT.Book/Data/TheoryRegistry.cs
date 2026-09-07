@@ -425,5 +425,9 @@ public sealed class TheoryRegistry
             "'Observed' = a distinction INCORPORATED INTO A PERSISTENT OBSERVER (D). Distinct from actualized (universal), localized (state-property), measured (read event), recorded (persistent trace). Observation changes the observer + the phase, not the structure (reality is revealed, not created). Chain: actualization → localization → measurement → observation → recording. DERIVED/EMERGENT.",
             AuditStatus.Passed, new DateTime(2026, 9, 7), TheoryLayer.Foundations, TheoryClassification.Emergent,
             ["difference"]),
+        new("np114", "Knowledge Ontology Audit", "What is knowledge inside Actualization Theory?",
+            "Knowledge = STABLE, INTEGRATED, PREDICTIVE DISTINCTIONS (B = C = D), realized via stored observations (A). Chain: Difference → observation → memory → knowledge. Distinct from information (structure) and observation (event); differentiator = prediction. Remove memory → observation survives, knowledge collapses. DERIVED/EMERGENT.",
+            AuditStatus.Passed, new DateTime(2026, 9, 7), TheoryLayer.Foundations, TheoryClassification.Emergent,
+            ["difference"]),
     ];
 }
