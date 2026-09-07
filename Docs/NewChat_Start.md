@@ -4989,6 +4989,17 @@ peening (5–30 min) and far faster than annealing (hours) — and are industria
 surface-confined; cannot reach bulk properties, so it replaces surface treatments, not heat treatment.
 Classification: transient SUPPORTED; permanent writing SUPPORTED; surface shifts SUPPORTED; bulk
 programming CONTRADICTED; overall SUPPORTED. No new primitive; canonical AT unchanged.
+ResearchY-NP_151 (AT Contribution Audit, COMPLETE, tests 6/6 PASSED): which conclusions of NP_131–150
+require Actualization Theory? Verdict: essentially NONE of the experimentally supported results require
+AT — they are known condensed-matter/materials physics (athermal acoustic softening, soft modes,
+dislocation/defect mechanics, ultrasonic peening). AT contributed an INTERPRETATION (the "critical mode
+/ master key" is the Cochran soft mode re-labeled), a REFUTED prediction set (quantized 33/67/100%
+ladder NP_138, phase-coherence resource NP_142, THz NP_133), and one UNTESTED unique prediction (the
+fixed-T order-preserving large elastic dial NP_140). Remove AT and the supported results survive; the
+AT-specific content does not. No confirmed new physics emerged from the chain. Classification: known
+physics dominates; AT = reinterpretation + refuted/untested predictions; "AT contributed confirmed new
+physics" REFUTED. This is a clean, honest separation of the coherent-softening chain. No new primitive;
+canonical AT unchanged.
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-

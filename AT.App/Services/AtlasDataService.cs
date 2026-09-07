@@ -1288,6 +1288,21 @@ public static class AtlasDataService
                     "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_150.md"),
             ]),
         new(
+            "researchy-np151-at-contribution",
+            "The Honest Ledger: What the Theory Actually Added",
+            "ResearchY · NP_151 (AT Contribution Audit)",
+            "After twenty audits, the useful thing is to ask what the theory itself actually added. The answer is humbling and clean: almost nothing that held up was new. The softening, the dislocations, the soft modes, the peening — all of it was already in the physics textbooks. What the theory added was a fresh vocabulary — calling soft modes a 'master key' — plus a few specific predictions that did not survive: the neat three-step ladder, the idea that phase coherence was the lever. One prediction remains, untested: a solid that goes soft under sound at fixed temperature without changing structure. So the ledger is honest: the theory reframed known physics and offered some falsifiable guesses, most of which were already wrong. That is not a defeat; it is what a theory is for.",
+            "NP_151 asks which conclusions of NP_131–150 require Actualization Theory. Verdict: essentially NONE of the experimentally supported results require AT — they are known condensed-matter/materials physics (athermal acoustic softening, soft modes, dislocation/defect mechanics, ultrasonic peening). AT contributed an INTERPRETATION (the 'critical mode / master key' is the Cochran soft mode re-labeled), a REFUTED prediction set (quantized ladder NP_138, phase-coherence resource NP_142, THz NP_133), and one UNTESTED unique prediction (the fixed-T order-preserving large elastic dial NP_140). Remove AT and the supported results survive; the AT-specific content does not. No confirmed new physics emerged from the chain.",
+            "For non-experts: after twenty investigations, it is worth asking what the theory actually added. The honest answer: almost nothing that survived was new. The softening, the dislocations, the soft modes — it was all already known. The theory contributed a new way of naming things and a few specific guesses, most of which were already wrong. One guess is still open: a solid that softens under sound at fixed temperature without changing structure. That is a fair, honest ledger — the theory reframed known physics and made some testable guesses, and the ones we could check mostly failed.",
+            "The NP_131–150 chain is known physics in AT vocabulary: supported results survive without AT; AT added a reinterpretation, refuted predictions, and one untested unique prediction.",
+            "“The honest ledger: the theory reframed known physics and made falsifiable guesses.”",
+            false,
+            [
+                new("ResearchY-NP_151", "AT CONTRIBUTION AUDIT",
+                    "No confirmed new physics emerged from NP_131–150; AT added a reinterpretation, refuted predictions, and one untested unique prediction.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_151.md"),
+            ]),
+        new(
             "researchy-np074-quantum-number-ontology",
             "What Are Quantum Numbers? The Symmetry Charges of the D96 Ring: Charge Is the Rotation, Isospin the Doublet, and Only the Color Count Remains a Postulate",
             "ResearchY · NP_074 (Quantum Number Ontology Audit)",

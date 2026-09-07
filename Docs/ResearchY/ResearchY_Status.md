@@ -245,6 +245,7 @@
 | ResearchY-NP_148 | Property Programming Audit | `NP_NewPhysics/ResearchY-NP_148.md` | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_148_Tests.cs` (8/8 ✅) | COMPLETE |
 | ResearchY-NP_149 | Defect State Optimization Audit | `NP_NewPhysics/ResearchY-NP_149.md` | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_149_Tests.cs` (8/8 ✅) | COMPLETE |
 | ResearchY-NP_150 | Property Programming Timescale Audit | `NP_NewPhysics/ResearchY-NP_150.md` | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_150_Tests.cs` (8/8 ✅) | COMPLETE |
+| ResearchY-NP_151 | AT Contribution Audit | `NP_NewPhysics/ResearchY-NP_151.md` | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_151_Tests.cs` (6/6 ✅) | COMPLETE |
 | ResearchY-S_001 | Post-V2.1 Theory Architecture Synthesis | `S_Synthesis/ResearchY-S_001.md` | `AT.Tests/ResearchY/S_Synthesis/Y_S_001_Tests.cs` (4/4 ✅) | COMPLETE |
 | ResearchY-M_001 | Measurement Origin Audit | `M_Measurement/ResearchY-M_001.md` | `AT.Tests/ResearchY/M_Measurement/Y_M_001_Tests.cs` (7/7 ✅) | COMPLETE |
 | ResearchY-M_002 | Measurement Disturbance Audit | `M_Measurement/ResearchY-M_002.md` | `AT.Tests/ResearchY/M_Measurement/Y_M_002_Tests.cs` (7/7 ✅) | COMPLETE |
