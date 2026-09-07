@@ -4792,6 +4792,17 @@ reversibility advantage is N/m (~15.8× crystal/metal, ~4.8× granite, ~2.4× gl
 reversible softening DERIVED (NP_100 + NP_131); "softening ≡ melting" REFUTED (order survives vs
 destroyed); "softening is irreversible" REFUTED (re-lock restores). No new primitive; canonical AT
 unchanged.
+ResearchY-NP_133 (Critical Mode Frequency Audit, COMPLETE, tests 7/7 PASSED): what frequency ranges
+contain the critical rigidity modes? Verdict: the critical (backbone) modes are long-wavelength
+acoustic phonons with fundamental frequency f_1 = c_s/(2L) — ~25–27.5 kHz for a 10 cm sample and
+~2.5–2.75 kHz for 1 m (c_s ≈ 5000–5500 m/s) — so they live in the AUDIO-to-ULTRASOUND band
+(~kHz–MHz). The Debye frequency f_D = c_s/(2a) ~ 8.3–9.2 THz is the individual-BOND mode, a factor
+~10⁸× higher and physically distinct. Resonant coupling therefore favors ultrasound (audio for
+meter-scale); THz is ~10⁸× off-resonance for rigidity and couples to bonds (heating/chemistry,
+NP_096). Coherent softening is an ULTRASONIC-scale technology (audio for meter-scale), excitable by
+existing piezoelectric transducers / horns / SAW / phased arrays. Classification: critical-mode band
+DERIVED (NP_100 + NP_131); ultrasonic technology EMERGENT; "THz-scale rigidity control" REFUTED. No
+new primitive; canonical AT unchanged.
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-

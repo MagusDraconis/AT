@@ -1018,6 +1018,21 @@ public static class AtlasDataService
                     "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_132.md"),
             ]),
         new(
+            "researchy-np133-critical-mode-frequency",
+            "Tuning to the Right Note: The Ultrasonic Key to Rigidity",
+            "ResearchY · NP_133 (Critical Mode Frequency Audit)",
+            "A vault door does not yield to a shout, and a tuning fork does not ring to a rumor. Frequency matters. The notes that hold a solid's rigidity are its long, slow acoustic waves — thousands of cycles a second for a hand-sized object, not trillions. To soften it, you do not need exotic THz lasers; you need a well-tuned ultrasonic transducer, the same kind that welds and cleans, aimed at the structure's own resonant note. The master key to rigidity is not a new band of the spectrum — it is the humble ultrasound, aimed precisely.",
+            "NP_133 asks what frequency ranges contain the critical rigidity modes. Verdict: the critical (backbone) modes are long-wavelength acoustic phonons at f_1 = c_s/(2L) — ~25–27.5 kHz for a 10 cm sample, ~2.5–2.75 kHz for 1 m — so they live in the AUDIO-to-ULTRASOUND band (~kHz–MHz). The Debye bond band f_D = c_s/(2a) ~ 8.3–9.2 THz is ~10⁸× higher and physically distinct. Resonant coupling favors ultrasound (audio for meter-scale); THz is ~10⁸× off-resonance for rigidity and couples to bonds (heating/chemistry, NP_096). Coherent softening is ULTRASONIC-scale (audio for meter-scale), excitable by piezoelectric transducers, horns, SAW, and phased arrays.",
+            "For non-experts: a wine glass rings at a note you can hum; a cathedral swings at a note far below hearing. The note that carries a solid's strength is slow and long — the size of the thing, not the size of an atom. So the tool is not a fancy THz beam but a precisely tuned loudspeaker or ultrasonic horn, playing the object's own note to make it soften.",
+            "Critical rigidity modes are audio-to-ultrasound (~kHz–MHz); ultrasonic technology excites them; THz is the bond band.",
+            "“The keystone note is low and slow — an ultrasound, not a laser.”",
+            false,
+            [
+                new("ResearchY-NP_133", "CRITICAL MODE FREQUENCY AUDIT",
+                    "Coherent softening is ultrasonic-scale (audio for meter-scale); THz is the bond band.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_133.md"),
+            ]),
+        new(
             "researchy-np074-quantum-number-ontology",
             "What Are Quantum Numbers? The Symmetry Charges of the D96 Ring: Charge Is the Rotation, Isospin the Doublet, and Only the Color Count Remains a Postulate",
             "ResearchY · NP_074 (Quantum Number Ontology Audit)",

@@ -501,5 +501,9 @@ public sealed class TheoryRegistry
             "YES — materials can be temporarily softened and reshaped without heating. Softening and melting are DISTINCT: softening drives the m critical modes open (R → 0) while lattice order S SURVIVES (the N−m modes stay locked) — a gel-like (unjammed) solid, ΔS = m·ln2, REVERSIBLE (re-lock restores R). Melting heats all N modes (R → 0 AND S → 0) — a disordered liquid, ΔS = N·ln2, IRREVERSIBLE (re-nucleate order). Reversibility advantage N/m (~15.8× crystal/metal, ~4.8× granite, ~2.4× glass).",
             AuditStatus.Passed, new DateTime(2026, 9, 7), TheoryLayer.Physics, TheoryClassification.Emergent,
             ["difference", "d96"]),
+        new("np133", "Critical Mode Frequency Audit", "What physical frequency ranges contain the critical rigidity modes?",
+            "The critical (backbone) modes are long-wavelength acoustic phonons at f_1 = c_s/(2L) — ~25–27.5 kHz for a 10 cm sample, ~2.5–2.75 kHz for 1 m — so they live in the AUDIO-to-ULTRASOUND band (~kHz–MHz). The Debye bond band f_D = c_s/(2a) ~ 8.3–9.2 THz is ~10^8× higher and physically distinct. Coherent softening is therefore ULTRASONIC-scale (audio for meter-scale); THz couples to bonds (heating/chemistry, NP_096), not rigidity. Excitable by piezo transducers, horns, SAW, phased arrays.",
+            AuditStatus.Passed, new DateTime(2026, 9, 7), TheoryLayer.Physics, TheoryClassification.Emergent,
+            ["difference", "d96"]),
     ];
 }
