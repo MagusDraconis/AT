@@ -445,5 +445,9 @@ public sealed class TheoryRegistry
             "Choice = the ACT OF SELECTING (A = C = D) — constrained actualization = purpose becoming action. Distinct from purpose (aim) and action (result). B (value maximization) partial. Minimum condition = alternatives + values + purpose (separates choice from raw actualization). Chain: meaning → purpose → choice → action. DERIVED/EMERGENT.",
             AuditStatus.Passed, new DateTime(2026, 9, 7), TheoryLayer.Foundations, TheoryClassification.Emergent,
             ["difference"]),
+        new("np119", "Freedom Ontology Audit", "What is freedom inside Actualization Theory?",
+            "Freedom = the CAPACITY TO SELECT AMONG MEANINGS (C = D) — actualization under incomplete determination (the value-weighted, purpose-directed middle path between determinism and randomness). A partial; B (unconstrained) REFUTED. Compatible by identity with Born selection/actualization/Difference conservation (freedom selects, not creates). EMERGENT, on the BOUNDARY tick.",
+            AuditStatus.Passed, new DateTime(2026, 9, 7), TheoryLayer.Foundations, TheoryClassification.Emergent,
+            ["difference"]),
     ];
 }

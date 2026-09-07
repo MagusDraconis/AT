@@ -808,6 +808,21 @@ public static class AtlasDataService
                     "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_118.md"),
             ]),
         new(
+            "researchy-np119-freedom-ontology",
+            "What Is Freedom? A Dice Roll With an Aim",
+            "ResearchY · NP_119 (Freedom Ontology Audit)",
+            "Freedom is not the absence of law, and it is not chance. It is the middle path: a dice roll with an aim. The universe's most basic act is a weighted draw — outcomes not predetermined, but shaped by what has gone before. Freedom is when a watcher adds a direction to that draw: it holds several possible futures, weighs them by what matters, and moves toward its purpose. Not forced (one path), not random (no aim) — chosen. Freedom is the capacity to select, under the theory's own laws, which it does not break.",
+            "NP_119 completes the agential arc: meaning → purpose → choice → freedom. Determination: C = D — freedom is the capacity to select among meanings = actualization under incomplete determination; A (number of alternatives) is a partial precondition, B (unconstrained choice) is REFUTED (freedom is value-constrained). The middle path: forced (no alternatives) / random (no values/purpose) / chosen (all three = freedom). Freedom is compatible by identity with the foundations — it IS Born selection (NP_093) under incomplete determination (weight = value, draw = the tick, NP_107), and it selects without creating (Difference conserved, NP_105). Freedom is EMERGENT, on the BOUNDARY tick.",
+            "For non-experts: a thrown die has chance but no freedom; a ratchet has determinism but no freedom. Freedom is a mind at a crossroads: several paths, each weighed by what it cares about, toward where it wants to go — and the outcome not fixed in advance. It is not magic that breaks the laws; it is the laws, used. Freedom is a weighted choice under the same rules everything else follows.",
+            "Freedom = selection under incomplete determination (value-weighted, purpose-directed); not randomness, not determinism.",
+            "“Freedom is a dice roll with an aim.”",
+            false,
+            [
+                new("ResearchY-NP_119", "FREEDOM ONTOLOGY AUDIT",
+                    "Freedom = the capacity to select among meanings (incomplete determination); the middle path between determinism and randomness.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_119.md"),
+            ]),
+        new(
             "researchy-np074-quantum-number-ontology",
             "What Are Quantum Numbers? The Symmetry Charges of the D96 Ring: Charge Is the Rotation, Isospin the Doublet, and Only the Color Count Remains a Postulate",
             "ResearchY · NP_074 (Quantum Number Ontology Audit)",

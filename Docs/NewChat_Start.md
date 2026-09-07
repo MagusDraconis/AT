@@ -4594,6 +4594,23 @@ Classification: alternatives/options DERIVED; value DERIVED; purpose EMERGENT (N
 EMERGENT (the selection act); decision EMERGENT (the settled selection); action EMERGENT (the
 execution); "choice = value maximization" PARTIAL; "choice = raw actualization" REFUTED (no aim);
 "choice needs a new primitive" REFUTED. No new primitive; canonical AT unchanged.
+ResearchY-NP_119 (Freedom Ontology Audit, COMPLETE, tests 9/9 PASSED): what is freedom? Verdict:
+freedom = the CAPACITY TO SELECT AMONG MEANINGS (C) = ACTUALIZATION UNDER INCOMPLETE DETERMINATION
+(D) — the value-weighted, purpose-directed selection whose outcome is not predetermined but
+weighted. A (number of alternatives) partial (a precondition); B (unconstrained choice) REFUTED —
+freedom is value-constrained, not unconstrained. Freedom is the MIDDLE path between determinism and
+randomness: forced (no alternatives) and random (alternatives without values/purpose) both lack
+freedom; chosen (alternatives + values + purpose) has it. Removing any of the three collapses
+freedom into determinism or randomness; raw actualization (the Born draw) survives = randomness, not
+freedom. Freedom is EMERGENT, built on the BOUNDARY stochasticity of the tick (NP_107) and the
+EMERGENT value structure (NP_116/117). It is COMPATIBLE BY IDENTITY with the foundations: freedom IS
+Born selection (NP_093) under incomplete determination (weight = value, draw = the tick's
+stochasticity), and it does not violate Difference conservation (NP_105) — freedom is selection, not
+creation. This crowns the epistemic→teleological→agential arc (data → … → meaning → purpose →
+choice → freedom). Classification: the irreducible stochasticity BOUNDARY (the tick, NP_107); the
+value/purpose structure EMERGENT (NP_116/117); freedom EMERGENT; "freedom = randomness" REFUTED;
+"freedom = unconstrained choice" REFUTED; "freedom = determinism" REFUTED; "freedom needs a new
+primitive" REFUTED. No new primitive; canonical AT unchanged.
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-
