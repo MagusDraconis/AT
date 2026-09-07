@@ -5116,6 +5116,15 @@ states, hysteresis, and training loops (reversal memory, rejuvenation) are stand
 variable is the TRAJECTORY, not vibration/stress/frequency alone. AT's "organizational path dependence"
 is an INTERPRETATION. Classification: path dependence KNOWN PHYSICS; trajectory-as-control KNOWN
 PHYSICS; framing AT INTERPRETATION; new capability REFUTED. No new primitive; canonical AT unchanged.
+ResearchY-NP_164 (Organizational Amplification Audit, COMPLETE, tests 8/8 PASSED): can organizational
+change amplify itself? Verdict: KNOWN PHYSICS — local rearrangement releases stress onto neighbors and
+lowers their barrier, so organizational change self-reinforces into cascades/avalanches (power-law,
+scale-free), distinct from non-amplifying fronts and elastic waves. The critical points are rigidity
+percolation, the jamming transition, and self-organized criticality; near them small inputs produce
+disproportionately large shifts. Amplification is bounded by the reversible–irreversible transition
+(NP_155). The NP_131 "percolation master key" is itself this known rigidity-percolation physics.
+Classification: amplification/avalanches KNOWN PHYSICS; criticality KNOWN PHYSICS; framing AT
+INTERPRETATION; new capability REFUTED. No new primitive; canonical AT unchanged.
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-

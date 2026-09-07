@@ -1483,6 +1483,21 @@ public static class AtlasDataService
                     "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_163.md"),
             ]),
         new(
+            "researchy-np164-organizational-amplification",
+            "A Whisper That Becomes an Avalanche: Organizational Change Can Grow",
+            "ResearchY · NP_164 (Organizational Amplification Audit)",
+            "Some changes travel; some changes grow. We saw that a rock's reorganization can move through it as a front. Now: can it feed on itself, a small shift triggering a bigger one, until a tiny push releases an avalanche? Yes — and this is one of the oldest ideas in granular physics. A grain slips, the load shifts onto its neighbors, they slip, and the thing cascades, with avalanches of every size and no typical one. Near the right conditions, a whisper of change becomes a landslide. So organization can amplify, not merely propagate. The theory's 'master key' was always this same known physics of thresholds and cascades.",
+            "NP_164 asks whether organizational change can amplify itself. Verdict: KNOWN PHYSICS — local rearrangement releases stress onto neighbors and lowers their barrier, so organizational change self-reinforces into cascades/avalanches (power-law, scale-free), distinct from non-amplifying fronts and elastic waves. The critical points are rigidity percolation, the jamming transition, and self-organized criticality; near them small inputs produce disproportionately large shifts. Amplification is bounded by the reversible–irreversible transition (NP_155). The NP_131 'percolation master key' is itself this known rigidity-percolation physics.",
+            "For non-experts: some changes just travel; some changes grow. We saw a rock's reorganization can move through it. Now: can it feed on itself, so a small shift triggers a bigger one, until a tiny push releases an avalanche? Yes — and this is one of the oldest ideas in granular physics. A grain slips, the load shifts onto its neighbors, they slip, and it cascades, with avalanches of every size and no typical one. Near the right conditions, a whisper of change becomes a landslide. So organization can amplify, not merely move.",
+            "Organizational change amplifies (KNOWN PHYSICS): avalanches/cascades at percolation, jamming, and self-organized criticality; small inputs yield large shifts.",
+            "“A whisper that becomes an avalanche — organizational change can grow.”",
+            false,
+            [
+                new("ResearchY-NP_164", "ORGANIZATIONAL AMPLIFICATION AUDIT",
+                    "Organizational change amplifies (avalanches/cascades at percolation/jamming/SOC criticality); AT's framing is an interpretation.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_164.md"),
+            ]),
+        new(
             "researchy-np074-quantum-number-ontology",
             "What Are Quantum Numbers? The Symmetry Charges of the D96 Ring: Charge Is the Rotation, Isospin the Doublet, and Only the Color Count Remains a Postulate",
             "ResearchY · NP_074 (Quantum Number Ontology Audit)",
