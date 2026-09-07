@@ -673,6 +673,21 @@ public static class AtlasDataService
                     "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_109.md"),
             ]),
         new(
+            "researchy-np110-condensed-matter-gateway",
+            "Crystals, Magnets, Superconductors: The Next Layer, Not a New Universe",
+            "ResearchY · NP_110 (Condensed Matter Gateway Audit)",
+            "Is there a gap in the theory where ordinary matter — crystals, magnets, superconductors — should be, but isn't? This audit finds the opposite: condensed matter is already here, one layer up. A crystal is just bound structures repeated in space; a phonon is just the collective hum of that lattice; a magnet is many locked 'notes' all pointing the same way; a superconductor is the whole network singing in one coherent phase. No new ingredients are needed — only bigger networks of the very same differences.",
+            "NP_110 inventories crystal, lattice, phonon, magnet, and superconductor. Determination: A = B = C — condensed matter is resonance hierarchies (NP_101) = phase-locked networks (NP_100) = deficit clusters (NP_071), scaled up; D (new ontology) is REFUTED. Single particle → bound pair → repeated bound network = crystal. Phonons are the low-k collective modes (the acoustic branch ω = 2c·sin(ka/2) ≈ c·k); band structure is the lattice dispersion. No new primitive, geometry, or symmetry — only larger networks (D96⊗D96⊗D96 already gives the cubic lattice). The first failure point = the cubic O_h anisotropy (the same O(3)-approximate weakness as nuclear structure, NP_089). DERIVED (ontology) / EMERGENT (layer) / PARTIAL (quantitative).",
+            "For non-experts: a wall is just bricks repeated; a crystal is just atoms repeated. The 'new' physics of solids — sound waves, magnetism, superconductivity — is not a new kind of thing, but the same differences locked together in large repeating patterns, humming in chorus. The theory does not need a new universe to explain a magnet; it just needs many notes, all in tune.",
+            "Condensed matter = the next natural layer (larger networks of the same ontology); first failure = the cubic anisotropy.",
+            "“A crystal is not new physics — it is old physics, repeated.”",
+            false,
+            [
+                new("ResearchY-NP_110", "CONDENSED MATTER GATEWAY AUDIT",
+                    "Condensed matter = larger networks (crystal/phonon/magnet/superconductor); DERIVED/EMERGENT/PARTIAL.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_110.md"),
+            ]),
+        new(
             "researchy-np074-quantum-number-ontology",
             "What Are Quantum Numbers? The Symmetry Charges of the D96 Ring: Charge Is the Rotation, Isospin the Doublet, and Only the Color Count Remains a Postulate",
             "ResearchY · NP_074 (Quantum Number Ontology Audit)",

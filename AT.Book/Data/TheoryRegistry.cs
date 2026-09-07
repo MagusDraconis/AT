@@ -409,5 +409,9 @@ public sealed class TheoryRegistry
             "The weakest link is NUCLEAR STRUCTURE (O(3) approximate only — magic numbers not exact), with condensed matter the largest unmapped domain. Foundations/particles/forces ROBUST; cosmology/gravity PARTIAL (w=−1 hosted, ψ boundary); nuclear/condensed MISSING. Strongest evidence = the tight cosmology numerics; weakest = nuclear. Single most-likely falsifier = exact magic numbers from the cubic lattice.",
             AuditStatus.Passed, new DateTime(2026, 9, 7), TheoryLayer.Physics, TheoryClassification.Derived,
             ["difference", "d96"]),
+        new("np110", "Condensed Matter Gateway Audit", "Can the Difference → D96 ontology naturally generate collective matter?",
+            "YES — condensed matter is the NEXT NATURAL LAYER above binding and hierarchy, NOT beyond D96. Crystal = repeated bound network; phonon = collective mode; magnet = phase-locked network; superconductor = phase coherence. A = B = C; D (new ontology) refuted. Only larger networks needed. First failure = the cubic O_h anisotropy (same as nuclear). DERIVED/EMERGENT/PARTIAL.",
+            AuditStatus.Passed, new DateTime(2026, 9, 7), TheoryLayer.Physics, TheoryClassification.Emergent,
+            ["difference", "d96"]),
     ];
 }

@@ -4464,6 +4464,21 @@ nuclear structure. SINGLE most-likely falsifier: an exact magic-number closure d
 lattice — AT's own derivation (NP_089) predicts it cannot be exact, so deriving it breaks the
 structural core. Classification: foundations/particles/forces ROBUST; cosmology/gravity PARTIAL;
 nuclear structure/condensed matter MISSING. No new primitive; canonical AT unchanged.
+ResearchY-NP_110 (Condensed Matter Gateway Audit, COMPLETE, tests 8/8 PASSED): can the Difference →
+D96 ontology generate collective matter? Verdict: YES — condensed matter is the NEXT NATURAL LAYER
+above binding (NP_100) and hierarchy (NP_101), NOT beyond D96. A crystal = a repeated bound network
+(a lattice of phase-locked deficit clusters); a phonon = a collective mode (the low-k resonance, the
+acoustic branch ω = 2c·sin(ka/2) ≈ c·k); a magnet = a phase-locked (aligned) network; a
+superconductor = global phase coherence. A = B = C (resonance hierarchies = phase-locked networks =
+deficit clusters, scaled up); D (new ontology) REFUTED. No new primitive, geometry, or symmetry is
+needed — only LARGER networks (D96⊗D96⊗D96 already gives the cubic lattice, NP_088). The FIRST
+failure point is the SAME O(3)-approximate weakness as nuclear structure (NP_089): the dispersion
+ω² = k² − (k_x⁴+k_y⁴+k_z⁴)/12 is isotropic to leading order but the cubic correction breaks O(3) at
+finite k, so exact isotropic phonon dispersions and exact band degeneracies are approximate.
+Classification: the collective ontology (crystal/phonon/magnet/superconductor) DERIVED (larger
+networks); condensed matter as the next layer EMERGENT; the exact quantitative properties PARTIAL
+(the cubic anisotropy); "condensed matter is beyond D96" REFUTED; "needs a new primitive/geometry/
+symmetry" REFUTED. No new primitive; canonical AT unchanged.
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-
