@@ -441,5 +441,9 @@ public sealed class TheoryRegistry
             "Purpose = the SELECTED PREDICTION (B = C = D) — meaning PLUS selection (the aim). Meaning weighs; purpose aims (directs future actualization). A (weighted meaning) necessary not sufficient. Differentiator from meaning = selection. Remove value or prediction → purpose collapses. Chain: observer → meaning → purpose → action. DERIVED/EMERGENT.",
             AuditStatus.Passed, new DateTime(2026, 9, 7), TheoryLayer.Foundations, TheoryClassification.Emergent,
             ["difference"]),
+        new("np118", "Choice Ontology Audit", "What is choice inside Actualization Theory?",
+            "Choice = the ACT OF SELECTING (A = C = D) — constrained actualization = purpose becoming action. Distinct from purpose (aim) and action (result). B (value maximization) partial. Minimum condition = alternatives + values + purpose (separates choice from raw actualization). Chain: meaning → purpose → choice → action. DERIVED/EMERGENT.",
+            AuditStatus.Passed, new DateTime(2026, 9, 7), TheoryLayer.Foundations, TheoryClassification.Emergent,
+            ["difference"]),
     ];
 }

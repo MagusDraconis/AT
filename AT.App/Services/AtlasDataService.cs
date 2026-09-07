@@ -793,6 +793,21 @@ public static class AtlasDataService
                     "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_117.md"),
             ]),
         new(
+            "researchy-np118-choice-ontology",
+            "What Is Choice? The Moment Purpose Becomes Doing",
+            "ResearchY · NP_118 (Choice Ontology Audit)",
+            "Purpose points; choice moves. A compass has a direction, but no choice. Choice is the act of picking one path from several, guided by what matters, toward an aim — the instant where intention becomes action. It needs three things: alternatives to choose among, values to choose by, and a purpose to choose toward. Take away any one, and what remains is not a choice but a mere draw — the universe rolling dice with no aim at all.",
+            "NP_118 completes the agential chain: meaning → purpose → choice → action. Determination: A = C = D — choice is the act of selecting = constrained actualization = purpose becoming action; B (value maximization) is PARTIAL. Choice is distinct from purpose (the aim) and action (the result). Removing alternatives collapses choice (forced); removing values collapses choice/purpose/meaning (random, a raw Born draw, NP_093); removing purpose collapses choice (prediction). The minimum condition for a genuine choice is ALTERNATIVES + VALUES + PURPOSE — separating choice from raw actualization. Choice is EMERGENT.",
+            "For non-experts: a ball rolling down a hill has no choice — one path, forced. A person at a fork in the road has a choice: several paths, each weighed by what matters, toward where they want to go. Choice is the act of taking one. It is the difference between a dice roll and a decision — the aim makes it a choice.",
+            "Choice = the act of selecting (purpose becoming action); needs alternatives + values + purpose.",
+            "“Choice is a dice roll with an aim.”",
+            false,
+            [
+                new("ResearchY-NP_118", "CHOICE ONTOLOGY AUDIT",
+                    "Choice = the act of selecting (constrained actualization); minimum condition = alternatives + values + purpose.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_118.md"),
+            ]),
+        new(
             "researchy-np074-quantum-number-ontology",
             "What Are Quantum Numbers? The Symmetry Charges of the D96 Ring: Charge Is the Rotation, Isospin the Doublet, and Only the Color Count Remains a Postulate",
             "ResearchY · NP_074 (Quantum Number Ontology Audit)",

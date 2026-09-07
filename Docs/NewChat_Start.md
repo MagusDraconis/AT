@@ -4580,6 +4580,20 @@ meaning EMERGENT (NP_116); value DERIVED (the consequence weight); choice/decisi
 selection); purpose EMERGENT (the selected aim); action EMERGENT (the future actualization);
 "purpose = meaning" REFUTED (lacks selection); "purpose needs a new primitive" REFUTED. No new
 primitive; canonical AT unchanged.
+ResearchY-NP_118 (Choice Ontology Audit, COMPLETE, tests 10/10 PASSED): what is choice? Verdict:
+choice = the ACT of SELECTING (A = C = D) — constrained actualization = purpose becoming action: the
+observer selects one alternative, value-guided, toward its aim. B (value maximization) PARTIAL
+(choice selects, it does not necessarily maximize). It is DISTINCT from purpose (the AIM — direction)
+and action (the RESULT — execution): choice is the ACT between them. The agential chain is meaning
+(weighs, NP_116) → purpose (aims, NP_117) → choice (selects) → action (does). Removing alternatives
+collapses choice (forced, not chosen); removing values collapses choice/purpose/meaning (random, not
+chosen — a raw Born draw, NP_093); removing purpose collapses choice (prediction, not choice).
+The MINIMUM condition for a genuine choice is ALTERNATIVES + VALUES + PURPOSE — which separates
+choice from raw actualization: actualization is a draw, choice is a selection toward an aim.
+Classification: alternatives/options DERIVED; value DERIVED; purpose EMERGENT (NP_117); choice
+EMERGENT (the selection act); decision EMERGENT (the settled selection); action EMERGENT (the
+execution); "choice = value maximization" PARTIAL; "choice = raw actualization" REFUTED (no aim);
+"choice needs a new primitive" REFUTED. No new primitive; canonical AT unchanged.
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-
