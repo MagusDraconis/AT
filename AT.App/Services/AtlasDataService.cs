@@ -643,6 +643,21 @@ public static class AtlasDataService
                     "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_107.md"),
             ]),
         new(
+            "researchy-np108-falsification-frontier",
+            "What Would Prove the Theory Wrong? A Ranked List of Death Blows",
+            "ResearchY · NP_108 (Falsification Frontier Audit)",
+            "A scientific theory must be able to be wrong — so what, exactly, would prove Actualization Theory wrong? This audit gathers the answer into a ranked list. The sharpest blades are its most precise predictions: the cosmic scalar index (predicted to 0.007%), the first acoustic peak, and the dark-energy and matter fractions. Measure any of these outside its predicted window and the theory falls. The one prediction no other theory makes is the discrete tick — if a phase is ever found to vary smoothly, that too is a death blow. The theory's most exposed flank is nuclear structure: it predicts the exact magic numbers should *not* be quite exact. That is honest, falsifiable science.",
+            "NP_108 inventories every core claim (Difference, scale-freeness, D96, ΩΛ, Ωm, particles, forces, actualization) and assigns each a falsifier. Strongest: the single-valued DERIVED numerics — n_s = 0.96497 (0.007%), ℓ₁ = 220.48 (0.008%), ΩΛ = 0.6839 (0.12%), Ωm = 0.3161 (0.26%), the mass ratios, and the pre-registered 0νββ value (m_ββ = 2.02 meV). Strongest uniquely-AT: the discrete tick (AT-P042). Weakest: the ontological claims (structural). Strongest vulnerability: nuclear structure — O(3) is only APPROXIMATE, so the magic numbers are not exactly reproduced. The anchors (m_e, v, k_B) and w = −1 are BOUNDARY (imported, not falsifiable). 'AT is unfalsifiable' is REFUTED.",
+            "For non-experts: a good theory tells you how to catch it lying. This theory does: it lists a dozen specific measurements that, if they come out wrong, would break it — from the ripples in the cosmic microwave background to the masses of particles to whether time flows in discrete beats. Its honest weak spot is the structure of atomic nuclei, where it admits its own prediction is only approximate. That is what falsifiability looks like.",
+            "AT is falsifiable: n_s, ℓ₁, ΩΛ, Ωm, mass ratios, 0νββ, and the discrete tick each carry a death-blow measurement.",
+            "“A theory is scientific only if it can be wrong — here is exactly how AT could be.”",
+            false,
+            [
+                new("ResearchY-NP_108", "FALSIFICATION FRONTIER AUDIT",
+                    "Ranked falsifiers: n_s, ℓ₁, ΩΛ, Ωm, ratios, 0νββ, discrete tick; vulnerability = nuclear structure.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_108.md"),
+            ]),
+        new(
             "researchy-np074-quantum-number-ontology",
             "What Are Quantum Numbers? The Symmetry Charges of the D96 Ring: Charge Is the Rotation, Isospin the Doublet, and Only the Color Count Remains a Postulate",
             "ResearchY · NP_074 (Quantum Number Ontology Audit)",

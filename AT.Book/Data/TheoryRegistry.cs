@@ -401,5 +401,9 @@ public sealed class TheoryRegistry
             "Because Difference is BINARY (a discrete cut, not a continuum). The tick's discreteness is a LOGICAL NECESSITY (A), DERIVED from the binary nature; continuous actualization is incoherent (blurs the cut into undifferentiated unity). Refines QG011: the deepest boundary is the binary nature, not the tick. Discreteness DERIVED; the binary nature BOUNDARY.",
             AuditStatus.Passed, new DateTime(2026, 9, 6), TheoryLayer.Foundations, TheoryClassification.Boundary,
             ["difference"]),
+        new("np108", "Falsification Frontier Audit", "What observation would directly falsify Actualization Theory?",
+            "AT is FALSIFIABLE at every level. Strongest = the single-valued numerics (n_s = 0.96497, ℓ₁ = 220.48, ΩΛ = 0.6839, Ωm = 0.3161, mass ratios, 0νββ m_ββ = 2.02 meV); strongest uniquely-AT = the discrete tick (AT-P042); weakest = ontological claims; strongest vulnerability = nuclear structure (O(3) approximate only). Anchors and w = −1 are BOUNDARY (imported). 'AT is unfalsifiable' REFUTED.",
+            AuditStatus.Passed, new DateTime(2026, 9, 7), TheoryLayer.Physics, TheoryClassification.Derived,
+            ["difference", "d96"]),
     ];
 }

@@ -4435,6 +4435,24 @@ itself; the tick's discreteness is DERIVED. Classification: the discreteness of 
 NP_086/079); "the tick's discreteness is an irreducible boundary" (D) REFUTED (refining QG_011);
 "continuous actualization is coherent" REFUTED; "discreteness is a free framework choice" (C)
 REFUTED. No new primitive; canonical AT unchanged.
+ResearchY-NP_108 (Falsification Frontier Audit, COMPLETE, tests 8/8 PASSED): what observation would
+directly falsify AT? Verdict: AT is FALSIFIABLE at every level. STRONGEST (tightest) falsifiers: the
+single-valued DERIVED numerics — n_s = 0.96497 (0.007%), ℓ₁ = 220.48 (0.008%), ΩΛ = 0.6839 (0.12%),
+Ωm = 0.3161 (0.26%), the mass ratios (m_μ/m_e = 207.03), and the pre-registered 0νββ (m_ββ = 2.02
+meV, QG191). Strongest UNIQUELY-AT falsifier: AT-P042 (the discrete-tick phase lattice, absent from
+QM, M_009). WEAKEST falsifiers: the ontological claims (particles = resonance classes, forces =
+generator actions, matter = deficit) — structural, falsified only by a non-expressible object.
+STRONGEST VULNERABILITY: nuclear structure — AT derives O(3) as only APPROXIMATE (the cubic lattice
+never reaches exact rotational symmetry), so the magic numbers are NOT exactly reproduced
+(NP_087/089); w = −1 is HOSTED, and the anchors (m_e, v, k_B) are imported. Ranked falsifiers:
+(1) n_s outside 0.96497±σ; (2) ℓ₁ outside 220.48±σ; (3) ΩΛ outside 0.6839±σ; (4) Ωm outside
+0.3161±σ; (5) a continuous phase at sub-tick resolution (falsifies AT-P042); (6) a fermion mass ratio
+not a D96 ratio; (7) an intrinsic scale λ fitting better (falsifies scale-freeness); (8) a ψ-based DM
+signal; (9) exact magic numbers from a cubic lattice; (10) point-particle matter; (11) m_ββ outside
+±10% of 2.02 meV; (12) an interaction not a generator action. Classification: numerical predictions
+FALSIFIABLE (DERIVED, sharp); the discrete tick FALSIFIABLE (unique, in-principle); ontological claims
+FALSIFIABLE (structural, weak); anchors and w = −1 BOUNDARY (imported, not falsifiable); "AT is
+unfalsifiable" REFUTED. No new primitive; canonical AT unchanged.
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-
