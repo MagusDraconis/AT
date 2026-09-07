@@ -913,6 +913,21 @@ public static class AtlasDataService
                     "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_125.md"),
             ]),
         new(
+            "researchy-np126-resonance-sailing",
+            "Can a Spacecraft Sail on the Universe's Waves? Yes — It Is Called Light",
+            "ResearchY · NP_126 (Resonance Sailing Audit)",
+            "Could a ship ride the very waves of the network — photons, gravitons, the ripples of difference — and be pushed along? The answer is yes, and we already do it: it is called a solar sail. A structure locks onto an incoming wave and takes its momentum, exactly as a sail takes the wind's. The wave's momentum is not created, only handed over, so nothing is violated. What the theory firmly rules out is the dream of a reactionless drive — motion with no wave to push against. That is not sailing; that is something from nothing, and the conservation of difference forbids it.",
+            "NP_126 shows a bound structure (NP_100) phase-locks to a propagating mode (photon/graviton/ψ wave) and gains its momentum k (NP_094): absorption +k, reflection +2k. The transfer is a resonance transition (NP_075), stable (the phase-lock is a fixed point). A spacecraft rides a network wave as a sail rides the wind: P = 2I/c (reflection) — 9.07 μN/m² at the solar constant, accumulating unbounded in time. Momentum is CONSERVED (transferred, not created); causality and thermodynamics hold. A reactionless drive is REFUTED. Resonance sailing is DERIVED.",
+            "For non-experts: a sailboat does not create the wind; it borrows the wind's push. So it is with light: a solar sail borrows the push of sunlight, and a future sail could borrow the push of gravitational ripples. What physics forbids is a boat that moves with no wind at all — a 'reactionless drive'. The universe lets you ride its waves; it does not let you push on nothing.",
+            "Resonance sailing = radiation pressure (borrowed momentum); reactionless drive = forbidden.",
+            "“You may ride the universe's waves; you may not push on nothing.”",
+            false,
+            [
+                new("ResearchY-NP_126", "RESONANCE SAILING AUDIT",
+                    "Resonance sailing = radiation pressure (momentum transfer); reactionless drive refuted.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_126.md"),
+            ]),
+        new(
             "researchy-np074-quantum-number-ontology",
             "What Are Quantum Numbers? The Symmetry Charges of the D96 Ring: Charge Is the Rotation, Isospin the Doublet, and Only the Color Count Remains a Postulate",
             "ResearchY · NP_074 (Quantum Number Ontology Audit)",

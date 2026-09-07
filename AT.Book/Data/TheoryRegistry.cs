@@ -473,5 +473,9 @@ public sealed class TheoryRegistry
             "Cooperation = ALIGNED MEANINGS = SHARED PURPOSES = INTEGRATED SELF-MODELS (A = B = C) — multiple observers' aligned values and aims, mutually modeled. D (optimization) PARTIAL. Distinct from individual purpose (one aim → many aligned aims). Freedom retained; responsibility distributed. Social extension: consciousness = model of self; cooperation = model of other + alignment. EMERGENT.",
             AuditStatus.Passed, new DateTime(2026, 9, 7), TheoryLayer.Foundations, TheoryClassification.Emergent,
             ["difference"]),
+        new("np126", "Resonance Sailing Audit", "Can a bound structure couple to an existing propagating resonance and gain net momentum?",
+            "YES — resonance sailing = RADIATION PRESSURE (DERIVED), NOT reactionless drive (REFUTED). A bound structure phase-locks to a propagating mode (photon/graviton/ψ wave) and gains its momentum k (absorption +k, reflection +2k). Spacecraft rides the wave as a sail rides the wind (P = 2I/c). Momentum/causality/thermodynamics conserved.",
+            AuditStatus.Passed, new DateTime(2026, 9, 7), TheoryLayer.Physics, TheoryClassification.Derived,
+            ["difference", "d96"]),
     ];
 }

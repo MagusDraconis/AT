@@ -4702,6 +4702,19 @@ meaning/purpose EMERGENT (NP_116/117); the self-model EMERGENT (NP_122); coopera
 multi-observer alignment); "cooperation = a new primitive" REFUTED; "cooperation = mere optimization"
 REFUTED; "cooperation eliminates freedom/responsibility" REFUTED. No new primitive; canonical AT
 unchanged.
+ResearchY-NP_126 (Resonance Sailing Audit, COMPLETE, tests 8/8 PASSED): can a bound structure sail
+on a propagating resonance? Verdict: YES — resonance sailing = RADIATION PRESSURE (DERIVED), NOT a
+reactionless drive (REFUTED). A bound structure (NP_100) phase-locks to a propagating mode (photon,
+graviton, phonon-like mode, or ψ wave) and gains the mode's phase gradient k (momentum, NP_094):
+absorption transfers +k, reflection transfers +2k (elastic bounce). The transfer is a resonance
+transition (generator action, NP_075), stable (the phase-lock is a fixed point). A spacecraft rides a
+network wave as a sail rides the wind: the force is the wave's momentum flux, P = 2I/c (reflection)
+or I/c (absorption); for the solar constant I = 1361 W/m², a reflecting sail gains 9.07 μN/m²,
+accumulating unbounded in time. Momentum is CONSERVED (transferred, not created, NP_105); causality
+holds (local transfer at the propagation limit, NP_092); thermodynamics holds (the absorbed count
+redistributes as heat, NP_096). Classification: resonance sailing/radiation pressure DERIVED
+(NP_094/075/100); reactionless drive REFUTED (violates momentum conservation); momentum/energy/
+causality/thermodynamics CONSERVED. No new primitive; canonical AT unchanged.
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-
