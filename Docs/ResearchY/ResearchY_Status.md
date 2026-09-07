@@ -230,6 +230,7 @@
 | ResearchY-NP_133 | Critical Mode Frequency Audit | `NP_NewPhysics/ResearchY-NP_133.md` | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_133_Tests.cs` (7/7 ✅) | COMPLETE |
 | ResearchY-NP_134 | Critical Mode Discovery Audit | `NP_NewPhysics/ResearchY-NP_134.md` | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_134_Tests.cs` (7/7 ✅) | COMPLETE |
 | ResearchY-NP_135 | Coherent Softening Experimental Audit | `NP_NewPhysics/ResearchY-NP_135.md` | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_135_Tests.cs` (7/7 ✅) | COMPLETE |
+| ResearchY-NP_136 | Variable Rigidity Bounds Audit | `NP_NewPhysics/ResearchY-NP_136.md` | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_136_Tests.cs` (7/7 ✅) | COMPLETE |
 | ResearchY-S_001 | Post-V2.1 Theory Architecture Synthesis | `S_Synthesis/ResearchY-S_001.md` | `AT.Tests/ResearchY/S_Synthesis/Y_S_001_Tests.cs` (4/4 ✅) | COMPLETE |
 | ResearchY-M_001 | Measurement Origin Audit | `M_Measurement/ResearchY-M_001.md` | `AT.Tests/ResearchY/M_Measurement/Y_M_001_Tests.cs` (7/7 ✅) | COMPLETE |
 | ResearchY-M_002 | Measurement Disturbance Audit | `M_Measurement/ResearchY-M_002.md` | `AT.Tests/ResearchY/M_Measurement/Y_M_002_Tests.cs` (7/7 ✅) | COMPLETE |

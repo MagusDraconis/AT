@@ -513,5 +513,9 @@ public sealed class TheoryRegistry
             "A matched-power ultrasound experiment on a 10 cm bar (aluminum f_1 = 25.5 kHz, quartz 28.75 kHz, steel 25.5 kHz). Measure baseline rigidity R_0 = f_0^2 (RUS); drive OFF-resonance (thermal control) vs ON-resonance (critical mode) at matched power; measure rigidity (frequency shift), damping (Q), ΔT. Thermal baseline ΔR/R_0 = −α·ΔT ≈ 0.015–0.045 %/K. Decisive criterion R = ΔR(f_1)/ΔR(f_off): PASS iff R ≫ 1 AND reversible AND frequency-selective; FAIL (thermal-only) iff R ≈ 1. The off-resonance drive is the built-in thermal control.",
             AuditStatus.Passed, new DateTime(2026, 9, 7), TheoryLayer.Physics, TheoryClassification.Emergent,
             ["difference", "d96"]),
+        new("np136", "Variable Rigidity Bounds Audit", "What is the maximum reversible rigidity reduction physically achievable through coherent critical-mode control?",
+            "Bounded only by failure modes, not the mechanism — coherent softening is a TRUE variable-rigidity technology (10–90%+ reversible). R(x) = max(0, (1−x−p_c)/(1−p_c)): ordered (crystal/metal/ceramic, m = 6) one critical mode → ~33% reduction, two → ~67%, three → ~100% (gel); granite (m = 20) ~10% steps. 1% is below the step size (thermal-scale); 10/50/90% achievable (90% near-gel, unloaded). Bounded by fracture (loaded), heating (power), decoherence (selectivity).",
+            AuditStatus.Passed, new DateTime(2026, 9, 7), TheoryLayer.Physics, TheoryClassification.Emergent,
+            ["difference", "d96"]),
     ];
 }

@@ -4825,6 +4825,16 @@ Decisive criterion R = ΔR(f₁)/ΔR(f_off): PASS iff R ≫ 1 AND reversible AND
 excess is coherent. Classification: experiment design EMERGENT (falsifiable test of DERIVED
 NP_131/132); "coherent softening indistinguishable from heating" is the falsification condition. No
 new primitive; canonical AT unchanged.
+ResearchY-NP_136 (Variable Rigidity Bounds Audit, COMPLETE, tests 7/7 PASSED): what is the maximum
+reversible rigidity reduction achievable through coherent critical-mode control? Verdict: bounded
+only by failure modes, not the mechanism — coherent softening is a TRUE variable-rigidity technology
+(10–90%+ reversible), not a minor 1% effect. Rigidity ratio follows percolation R(x) = max(0,
+(1−x−p_c)/(1−p_c)): for ordered materials (crystal/metal/ceramic, m = 6), one critical mode unlocked
+gives ~33% reduction, two ~67%, three ~100% (gel); granite (m = 20) steps ~10%. So 10%, 50%, 90% are
+achievable (90% near-gel, unloaded); 1% is below the step size (thermal-scale). Maximum bounded by
+(a) fracture (loaded vs unloaded), (b) heating (N/m efficient, ΔT small), (c) decoherence (keep order
+S ≈ 1). Classification: variable-rigidity technology DERIVED (NP_131/132); "minor 1% effect" REFUTED.
+No new primitive; canonical AT unchanged.
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-

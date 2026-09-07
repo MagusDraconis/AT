@@ -1063,6 +1063,21 @@ public static class AtlasDataService
                     "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_135.md"),
             ]),
         new(
+            "researchy-np136-variable-rigidity-bounds",
+            "Not a Trim, a Dial: The True Scale of Softening",
+            "ResearchY · NP_136 (Variable Rigidity Bounds Audit)",
+            "Some discoveries shave a percent; others turn a fixed thing into a dial. This is the second kind. Because a solid's strength hangs on a few load-bearing notes, touching just one of them can drop its stiffness by a third — and touching three turns a crystal briefly to gel, then back. That is not a minor materials quirk; that is variable rigidity — a dial that sweeps from solid to soft and returns, bounded only by how hard it is loaded, how hot you drive it, and how carefully you hold the tune.",
+            "NP_136 asks for the maximum reversible rigidity reduction. Verdict: bounded only by failure modes, not the mechanism — coherent softening is a TRUE variable-rigidity technology (10–90%+ reversible). R(x) = max(0, (1−x−p_c)/(1−p_c)): ordered (crystal/metal/ceramic, m=6) one critical mode → ~33% reduction, two → ~67%, three → ~100% (gel); granite (m=20) ~10% steps. 1% is below the step size (thermal-scale); 10/50/90% achievable (90% near-gel, unloaded). Bounded by fracture (loaded), heating (power), decoherence (selectivity).",
+            "For non-experts: most tricks shave a hair off a material's strength. This one turns a solid into something with a volume knob — one touch can cut its stiffness by a third, and a few touches can make it go soft as jelly and then stiff again. The only limits are how much weight it carries, how hot you make it, and how carefully you play.",
+            "True variable rigidity: 10–90%+ reversible reduction (gel for unloaded), bounded by fracture/heating/decoherence.",
+            "“Softening is not a trim; it is a dial.”",
+            false,
+            [
+                new("ResearchY-NP_136", "VARIABLE RIGIDITY BOUNDS AUDIT",
+                    "True variable-rigidity technology: 10–90%+ reversible reduction, bounded by failure modes.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_136.md"),
+            ]),
+        new(
             "researchy-np074-quantum-number-ontology",
             "What Are Quantum Numbers? The Symmetry Charges of the D96 Ring: Charge Is the Rotation, Isospin the Doublet, and Only the Color Count Remains a Postulate",
             "ResearchY · NP_074 (Quantum Number Ontology Audit)",
