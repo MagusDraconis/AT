@@ -4534,6 +4534,22 @@ data/information DERIVED (D_039/M_004); observation EMERGENT (NP_113); memory DE
 knowledge EMERGENT (predictive integration); understanding EMERGENT (highest integration);
 "knowledge = stored observations only" REFUTED; "knowledge needs a new primitive" REFUTED. No new
 primitive; canonical AT unchanged.
+ResearchY-NP_115 (Understanding Ontology Audit, COMPLETE, tests 9/9 PASSED): what is understanding?
+Verdict: understanding = the MODEL OF MODELS (D) = the COMPRESSION of knowledge (B) = a PREDICTIVE
+HIERARCHY (C) — knowledge raised to self-reference: the observer holds a compressed model of its own
+predictions, so it knows WHY it predicts (not merely WHAT next) and can re-derive, transfer, and
+generalize. A (more knowledge) REFUTED — a qualitatively higher order, not a larger pile. The
+epistemic chain is data → information → observation → memory → knowledge → understanding (read →
+store → predict → model the prediction). Removing prediction collapses BOTH knowledge and
+understanding; removing integration collapses knowledge to observations and understanding to
+scattered knowledge. The MINIMUM separator between knowledge and understanding is COMPRESSION +
+SELF-REFERENCE: knowledge predicts, understanding knows why it predicts. Understanding changes
+future actualization MORE EFFECTIVELY (the compressed model generalizes to novel cases). The four
+objects: detector (reads) < recorder (stores) < predictor (knowledge) < understander (model of
+models). Classification: data/information/memory DERIVED (D_039/M_004/NP_102); observation EMERGENT
+(NP_113); knowledge EMERGENT (NP_114); understanding EMERGENT (the highest epistemic level);
+"understanding = more knowledge" REFUTED; "understanding needs a new primitive" REFUTED. No new
+primitive; canonical AT unchanged.
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-

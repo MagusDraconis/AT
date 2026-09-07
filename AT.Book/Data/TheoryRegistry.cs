@@ -429,5 +429,9 @@ public sealed class TheoryRegistry
             "Knowledge = STABLE, INTEGRATED, PREDICTIVE DISTINCTIONS (B = C = D), realized via stored observations (A). Chain: Difference → observation → memory → knowledge. Distinct from information (structure) and observation (event); differentiator = prediction. Remove memory → observation survives, knowledge collapses. DERIVED/EMERGENT.",
             AuditStatus.Passed, new DateTime(2026, 9, 7), TheoryLayer.Foundations, TheoryClassification.Emergent,
             ["difference"]),
+        new("np115", "Understanding Ontology Audit", "What is understanding inside Actualization Theory?",
+            "Understanding = the MODEL OF MODELS (D) = compression of knowledge (B) = predictive hierarchy (C) — knowledge raised to self-reference (knows WHY it predicts). A (more knowledge) REFUTED. Separator = compression + self-reference. Understanding generalizes more effectively. Chain: data → information → observation → memory → knowledge → understanding. DERIVED/EMERGENT.",
+            AuditStatus.Passed, new DateTime(2026, 9, 7), TheoryLayer.Foundations, TheoryClassification.Emergent,
+            ["difference"]),
     ];
 }

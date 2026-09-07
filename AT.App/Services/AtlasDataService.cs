@@ -748,6 +748,21 @@ public static class AtlasDataService
                     "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_114.md"),
             ]),
         new(
+            "researchy-np115-understanding-ontology",
+            "What Is Understanding? A Watcher That Knows Why",
+            "ResearchY · NP_115 (Understanding Ontology Audit)",
+            "Knowledge says 'it will rain'; understanding says 'clouds bring rain, and this sky is full of them.' The difference is not more facts — it is a model of the facts. Understanding is when a watcher's stored knowledge is compressed and turned back on itself: it knows why its own predictions work, so it can re-derive them from first principles and carry them to situations it has never seen. That is the step from a predictor to an understander — the model of models.",
+            "NP_115 defines six terms: data, information, observation, memory, knowledge, understanding. Chain: data → information → observation → memory → knowledge → understanding; detector (reads) < recorder (stores) < predictor (knowledge) < understander (model of models). Determination: B = C = D — understanding is the compression of knowledge = a predictive hierarchy = the model of models; A (more knowledge) is REFUTED. The separator from knowledge is compression + self-reference (knows WHY it predicts). Understanding generalizes to novel cases, so it changes future actualization more effectively. Understanding is EMERGENT.",
+            "For non-experts: a parrot can say 'it will rain' without understanding rain. Understanding is when you can explain why — and then correctly predict the weather somewhere you've never been. It is knowledge, compressed into a small rule that points in many directions at once. The theory calls it the model of models: a watcher that knows why it knows.",
+            "Understanding = the model of models (knowledge compressed + self-referential); knows why, generalizes.",
+            "“Understanding is knowledge that knows why it knows.”",
+            false,
+            [
+                new("ResearchY-NP_115", "UNDERSTANDING ONTOLOGY AUDIT",
+                    "Understanding = the model of models (compression + self-reference); distinguishes knowledge by knowing why.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_115.md"),
+            ]),
+        new(
             "researchy-np074-quantum-number-ontology",
             "What Are Quantum Numbers? The Symmetry Charges of the D96 Ring: Charge Is the Rotation, Isospin the Doublet, and Only the Color Count Remains a Postulate",
             "ResearchY · NP_074 (Quantum Number Ontology Audit)",
