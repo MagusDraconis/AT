@@ -477,5 +477,9 @@ public sealed class TheoryRegistry
             "YES — resonance sailing = RADIATION PRESSURE (DERIVED), NOT reactionless drive (REFUTED). A bound structure phase-locks to a propagating mode (photon/graviton/ψ wave) and gains its momentum k (absorption +k, reflection +2k). Spacecraft rides the wave as a sail rides the wind (P = 2I/c). Momentum/causality/thermodynamics conserved.",
             AuditStatus.Passed, new DateTime(2026, 9, 7), TheoryLayer.Physics, TheoryClassification.Derived,
             ["difference", "d96"]),
+        new("np127", "Resonance Engineering Audit", "What useful technologies become possible if matter is fundamentally a bound resonance structure?",
+            "The ontology uniquely suggests COHERENCE ENGINEERING (mode/phase/coupling manipulation). Levers A = B = C = D. Allowed: propulsion (sailing), communication (phase), sensing (spectrum), energy (coherent coupling), materials (phase-locked crystals). Rejected (conservation): reactionless drive, perpetual motion, FTL, info destruction. Unifying theme = coherence.",
+            AuditStatus.Passed, new DateTime(2026, 9, 7), TheoryLayer.Physics, TheoryClassification.Emergent,
+            ["difference", "d96"]),
     ];
 }

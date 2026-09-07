@@ -928,6 +928,21 @@ public static class AtlasDataService
                     "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_126.md"),
             ]),
         new(
+            "researchy-np127-resonance-engineering",
+            "What Can You Build When Matter Is Music? The Promise of Coherence Engineering",
+            "ResearchY · NP_127 (Resonance Engineering Audit)",
+            "If matter is a bound resonance — a locked note — then engineering becomes a different art. You are no longer shaping a substance; you are choosing a note, holding its phase, and coupling notes together. The theory's unique gift is coherence engineering: propulsion by riding waves, communication by phase, sensing by a thing's spectral fingerprint, energy moved without loss, and materials grown as locked crystals. And it draws a firm line: anything that would create momentum from nothing, or beat the laws of heat and light, is not technology — it is a mistake about the universe.",
+            "NP_127 inventories the resonance toolkit (propagation/locking/scattering/sailing) and the four levers (A = B = C = D): enhanced coupling, reduced scattering, coherence preservation, controlled phase locking. Allowed applications: propulsion (resonance sailing, NP_126), communication (phase as the information channel), sensing (mode-spectrum fingerprinting), energy (low-scattering coherent coupling), materials (phase-locked crystals, NP_110). Rejected (conservation violations): reactionless drive, perpetual motion, FTL, information destruction. The unifying theme is COHERENCE — engineering is mode engineering. No new physics, only new leverage.",
+            "For non-experts: a violin maker does not pour 'music-stuff'; they choose a length, hold it under tension, and let it sing. So with this theory's engineering: matter is notes, so the craft is choosing notes, holding them in tune, and making them sing together. You get ships that ride light, messages sent in phase, and crystals grown like chords. But you never get something from nothing — the universe still keeps its books.",
+            "Coherence engineering: propulsion (sailing), communication (phase), sensing (spectrum), energy (coherent), materials (crystals).",
+            "“When matter is music, engineering is composition.”",
+            false,
+            [
+                new("ResearchY-NP_127", "RESONANCE ENGINEERING AUDIT",
+                    "Coherence engineering (mode/phase/coupling) — five allowed applications, four conservation-violating rejections.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_127.md"),
+            ]),
+        new(
             "researchy-np074-quantum-number-ontology",
             "What Are Quantum Numbers? The Symmetry Charges of the D96 Ring: Charge Is the Rotation, Isospin the Doublet, and Only the Color Count Remains a Postulate",
             "ResearchY · NP_074 (Quantum Number Ontology Audit)",

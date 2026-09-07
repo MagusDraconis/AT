@@ -4715,6 +4715,21 @@ holds (local transfer at the propagation limit, NP_092); thermodynamics holds (t
 redistributes as heat, NP_096). Classification: resonance sailing/radiation pressure DERIVED
 (NP_094/075/100); reactionless drive REFUTED (violates momentum conservation); momentum/energy/
 causality/thermodynamics CONSERVED. No new primitive; canonical AT unchanged.
+ResearchY-NP_127 (Resonance Engineering Audit, COMPLETE, tests 8/8 PASSED): what technologies become
+possible if matter is a bound resonance? Verdict: the Difference → Resonance ontology uniquely
+suggests COHERENCE ENGINEERING — technologies that manipulate the mode properties (frequency, phase,
+coupling) rather than a substance, because matter IS a bound resonance (NP_100). The four levers are
+all valid (A = B = C = D): enhanced coupling (generator action, NP_075), reduced scattering (lower
+friction, NP_095), coherence preservation (stable phase-locks), controlled phase locking (mode
+selection). Allowed applications: propulsion (resonance sailing = radiation pressure, NP_126),
+communication (phase as the information channel), sensing (mode-spectrum fingerprinting), energy
+transfer (low-scattering coherent coupling), materials (phase-locked crystals, NP_110). Rejected
+(conservation violations): reactionless drive (momentum, NP_105), perpetual motion (thermodynamics,
+NP_096), faster-than-light (causality, NP_092), information destruction (Difference conservation,
+NP_105). The unifying theme is COHERENCE: engineering is mode engineering — no new physics, only new
+leverage. Classification: resonance phenomena DERIVED (NP_094/095/100/126); technology concepts
+EMERGENT (coherence engineering); rejected concepts REFUTED (conservation). No new primitive;
+canonical AT unchanged.
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-
