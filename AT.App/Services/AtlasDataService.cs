@@ -868,6 +868,21 @@ public static class AtlasDataService
                     "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_122.md"),
             ]),
         new(
+            "researchy-np123-truth-ontology",
+            "What Is Truth? A Model That Matches the World",
+            "ResearchY · NP_123 (Truth Ontology Audit)",
+            "A map can be useful without being true — a crude sketch of the subway will still get you there. Truth is stricter: it is the map that *matches*. A model is true when its distinctions line up with the world's own distinctions, the persistent structure of things that was there before anyone looked. Prediction is only a symptom; correspondence is the fact. That is why a comforting fiction can be useful and still be false, and why the test of truth is not 'did it work' but 'does it match the persistent world'.",
+            "NP_123 defines truth = CORRESPONDENCE (C = B = D) — the stable mapping of the observer's model's distinctions onto the world's persistent Difference structures. A (successful prediction) is necessary but not sufficient (useful ≠ true). Truth is distinct from knowledge (prediction), understanding (model of models), and meaning (value-weighted prediction): its differentiator is CORRESPONDENCE. True model = corresponds; useful model = predicts well; false model = contradicted. Removing prediction leaves truth partially intact; removing observation or consistency collapses it. The minimum condition is correspondence. Truth is EMERGENT.",
+            "For non-experts: a weather app can be useful and sometimes wrong; it is 'true' only when its picture matches the actual sky. Truth is the match between what a model says is there and what really is there — the persistent things that were there before anyone looked. So 'true' and 'useful' are not the same: a story can be useful and false, but truth is correspondence, full stop.",
+            "Truth = correspondence (the model's distinctions match the world's persistent structures); useful ≠ true.",
+            "“Truth is the map that matches the world.”",
+            false,
+            [
+                new("ResearchY-NP_123", "TRUTH ONTOLOGY AUDIT",
+                    "Truth = correspondence (model → world's persistent structures); distinct from knowledge/understanding/meaning.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_123.md"),
+            ]),
+        new(
             "researchy-np074-quantum-number-ontology",
             "What Are Quantum Numbers? The Symmetry Charges of the D96 Ring: Charge Is the Rotation, Isospin the Doublet, and Only the Color Count Remains a Postulate",
             "ResearchY · NP_074 (Quantum Number Ontology Audit)",

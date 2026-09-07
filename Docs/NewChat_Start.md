@@ -4658,6 +4658,21 @@ that it observes. NO new primitive — consciousness is the same Difference onto
 EMERGENT (NP_113/114/115/121); consciousness EMERGENT (the recursive self-model); "consciousness =
 observation" REFUTED; "consciousness needs a new primitive" REFUTED; "consciousness is a mystery
 substance" REFUTED. No new primitive; canonical AT unchanged.
+ResearchY-NP_123 (Truth Ontology Audit, COMPLETE, tests 9/9 PASSED): what is truth? Verdict: truth =
+CORRESPONDENCE (C) = MODEL-NETWORK CORRESPONDENCE (B) = PERSISTENCE ACROSS OBSERVATIONS (D) — the
+stable mapping of the observer's model's distinctions onto the world's persistent Difference
+structures. A (successful prediction) necessary but not sufficient: a prediction can succeed by
+luck, and "useful" ≠ "true". Truth is DISTINCT from knowledge (prediction), understanding (model of
+models), and meaning (value-weighted prediction): its differentiator is CORRESPONDENCE. Grounded in
+the world's persistent structures (NP_102/104), which pre-exist observation (M_005), so the
+correspondence is well-defined and structure-relative (NP_112). True model = corresponds; useful
+model = predicts well (pragmatic); false model = contradicted. Removing prediction leaves truth
+partially intact (a static map can be true without predicting); removing observation or consistency
+collapses truth. The minimum condition is CORRESPONDENCE (stable, consistent distinction mapping).
+Classification: the world's persistent structures DERIVED (NP_102/104); observation/knowledge/
+understanding EMERGENT (NP_113/114/115); truth EMERGENT (the correspondence relation); "truth =
+successful prediction" REFUTED (useful ≠ true); "truth = meaning" REFUTED (value ≠ correspondence);
+"truth needs a new primitive" REFUTED. No new primitive; canonical AT unchanged.
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-

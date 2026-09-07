@@ -461,5 +461,9 @@ public sealed class TheoryRegistry
             "Consciousness = the RECURSIVE SELF-MODEL (D) = SELF-OBSERVATION (B) — the observer's model turned on itself, so it observes its own observing. A (observation) necessary not sufficient; C (integrated observation) partial. Minimum condition = the self-model. NOT a new primitive (the same ontology recursive). Chain: observation → knowledge → understanding → identity → consciousness. EMERGENT.",
             AuditStatus.Passed, new DateTime(2026, 9, 7), TheoryLayer.Foundations, TheoryClassification.Emergent,
             ["difference"]),
+        new("np123", "Truth Ontology Audit", "What is truth inside Actualization Theory?",
+            "Truth = CORRESPONDENCE (C = B = D) — the model's distinctions map to the world's persistent Difference structures. A (successful prediction) necessary not sufficient (useful ≠ true). Distinct from knowledge (prediction), understanding (modeling), meaning (valuing). Minimum condition = correspondence (stable, consistent). EMERGENT.",
+            AuditStatus.Passed, new DateTime(2026, 9, 7), TheoryLayer.Foundations, TheoryClassification.Emergent,
+            ["difference"]),
     ];
 }
