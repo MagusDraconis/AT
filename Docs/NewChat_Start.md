@@ -4730,6 +4730,20 @@ NP_105). The unifying theme is COHERENCE: engineering is mode engineering — no
 leverage. Classification: resonance phenomena DERIVED (NP_094/095/100/126); technology concepts
 EMERGENT (coherence engineering); rejected concepts REFUTED (conservation). No new primitive;
 canonical AT unchanged.
+ResearchY-NP_128 (Coherence Resource Audit, COMPLETE, tests 8/8 PASSED): is coherence a physical
+resource? Verdict: YES — coherence is a MEASURABLE RESOURCE (A) and an INDEPENDENT physical
+capability (D): the phase-lock's persistence (NP_100), which enables interference, coupling, and
+phase-locked work. B (bookkeeping) and C (hidden information) PARTIAL — coherence correlates with
+information (I_occ = ln K − H) but is also the phase alignment, not just distinguishability.
+Coherence is DISTINCT from information, energy, and entropy: it is the ORDER (locked phase) those
+quantities presuppose. It is a DEGRADABLE resource with a fundamental trade-off coherence ↔ entropy:
+friction (NP_095) converts coherence (low entropy) into entropy (high entropy, NP_096), so coherence
+has a finite lifetime (γ⁻¹), a density, and a transfer cost — exactly as work degrades to heat. Every
+capability (motion NP_094, binding NP_100, sailing NP_126) is coherent phase-locking, and all five
+technologies (communication, sensing, power, materials, propulsion) benefit from maximizing it.
+Classification: coherence DERIVED/EMERGENT/RESOURCE; the coherence ↔ entropy trade-off DERIVED
+(NP_095/096); "coherence = a mere bookkeeping quantity" REFUTED; "coherence = just information"
+REFUTED; "coherence is conserved" REFUTED (it degrades). No new primitive; canonical AT unchanged.
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-

@@ -481,5 +481,9 @@ public sealed class TheoryRegistry
             "The ontology uniquely suggests COHERENCE ENGINEERING (mode/phase/coupling manipulation). Levers A = B = C = D. Allowed: propulsion (sailing), communication (phase), sensing (spectrum), energy (coherent coupling), materials (phase-locked crystals). Rejected (conservation): reactionless drive, perpetual motion, FTL, info destruction. Unifying theme = coherence.",
             AuditStatus.Passed, new DateTime(2026, 9, 7), TheoryLayer.Physics, TheoryClassification.Emergent,
             ["difference", "d96"]),
+        new("np128", "Coherence Resource Audit", "Is coherence a physical resource?",
+            "YES — coherence = A (measurable resource) = D (independent physical capability); B (bookkeeping) and C (hidden information) PARTIAL. Coherence is DISTINCT from information/energy/entropy: it is the phase-lock's persistence (NP_100) — the ORDER those quantities presuppose. It is a DEGRADABLE resource with a fundamental trade-off coherence ↔ entropy: friction (NP_095) converts coherence (low entropy) into entropy (NP_096). Every capability (motion, binding, sailing) is coherent phase-locking, and all five technologies (communication, sensing, power, materials, propulsion) benefit from maximizing it — the most practically valuable quantity.",
+            AuditStatus.Passed, new DateTime(2026, 9, 7), TheoryLayer.Physics, TheoryClassification.Emergent,
+            ["difference", "d96"]),
     ];
 }

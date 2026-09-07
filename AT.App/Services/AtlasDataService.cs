@@ -943,6 +943,21 @@ public static class AtlasDataService
                     "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_127.md"),
             ]),
         new(
+            "researchy-np128-coherence-resource",
+            "The Currency of the Universe: Coherence as the Fundamental Resource",
+            "ResearchY · NP_128 (Coherence Resource Audit)",
+            "If matter is bound resonance, then the one thing every structure spends to do work is coherence — the holding of a phase. It is the currency of the universe. Motion is coherence held; structure is coherence locked; heat is coherence spent. And like all currencies it can be measured, transferred, and — crucially — spent. Friction spends coherence into entropy, exactly as work degrades into heat. There is no conservation law for it; there is a budget. This is why the theory's most valuable gift is not a new force but a new resource: the ability to hold a phase, and the craft of not spending it wastefully.",
+            "NP_128 asks whether coherence is a physical resource. Verdict: YES — coherence = A (measurable resource) = D (independent physical capability): the phase-lock's persistence (NP_100), enabling interference, coupling, and phase-locked work. B (bookkeeping) and C (hidden information) PARTIAL — coherence correlates with information (I_occ = ln K − H) but is also the phase alignment. Coherence is DISTINCT from information/energy/entropy: it is the ORDER (locked phase) those quantities presuppose. It is DEGRADABLE, with a fundamental trade-off coherence ↔ entropy (friction NP_095 converts coherence into entropy NP_096), so it has a lifetime (γ⁻¹), a density, and a transfer cost. All five technologies (communication, sensing, power, materials, propulsion) benefit from maximizing it.",
+            "For non-experts: a spinning top holds its spin — that is coherence; when it wobbles and falls, it has spent it. The universe works the same way: everything you do is holding a note and choosing when to let it go. The skill of the universe is not making more notes, but holding them in tune longer than you must spend them.",
+            "Coherence = measurable resource = independent capability; degradable; coherence ↔ entropy trade-off.",
+            "“Coherence is the currency; entropy is the tax.”",
+            false,
+            [
+                new("ResearchY-NP_128", "COHERENCE RESOURCE AUDIT",
+                    "Coherence is a measurable, degradable resource with a coherence ↔ entropy trade-off.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_128.md"),
+            ]),
+        new(
             "researchy-np074-quantum-number-ontology",
             "What Are Quantum Numbers? The Symmetry Charges of the D96 Ring: Charge Is the Rotation, Isospin the Doublet, and Only the Color Count Remains a Postulate",
             "ResearchY · NP_074 (Quantum Number Ontology Audit)",
