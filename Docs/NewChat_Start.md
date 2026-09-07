@@ -4979,6 +4979,16 @@ damping (Ashby) — so achievable states form a Pareto front, not a single point
 works open-loop; closed-loop optimize is PARTIAL (ML/Bayesian emerging). Classification: optimal states
 SUPPORTED; directed tuning SUPPORTED; trade-offs SUPPORTED; closed-loop PARTIAL; "random suffices"
 CONTRADICTED. No new primitive; canonical AT unchanged.
+ResearchY-NP_150 (Property Programming Timescale Audit, COMPLETE, tests 8/8 PASSED): how quickly can
+resonance-driven defect engineering modify material properties? Verdict: SUPPORTED — property
+programming is a practical manufacturing technology (surface-confined), not a laboratory curiosity.
+Defect motion/transient softening µs–ms; permanent writing (annihilation, subgrain, crack healing)
+s–min; deep nanocrystallization tens of minutes. Ultrasonic peening/UNSM/USRP deliver surface hardness,
+residual stress, and fatigue-life gains (30–100%) in seconds–minutes — comparable/faster than shot
+peening (5–30 min) and far faster than annealing (hours) — and are industrially deployed. Caveat:
+surface-confined; cannot reach bulk properties, so it replaces surface treatments, not heat treatment.
+Classification: transient SUPPORTED; permanent writing SUPPORTED; surface shifts SUPPORTED; bulk
+programming CONTRADICTED; overall SUPPORTED. No new primitive; canonical AT unchanged.
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-

@@ -1273,6 +1273,21 @@ public static class AtlasDataService
                     "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_149.md"),
             ]),
         new(
+            "researchy-np150-property-programming-timescale",
+            "Fast Enough for the Factory: Programming in Seconds, Not Hours",
+            "ResearchY · NP_150 (Property Programming Timescale Audit)",
+            "A technology that takes a day per part is a lab curiosity; one that takes seconds is a factory process. The question of speed decides which one resonance control is. The answer is reassuring: softening happens the instant the sound is on, and even the permanent changes — hardening a surface, burying compressive stress, doubling fatigue life — happen in seconds to minutes. That puts resonance control on par with, or ahead of, shot peening, and far ahead of slow furnace annealing. The one caveat is depth: sound shapes the surface, not the whole bulk. So it is a fast surface tool, not a replacement for the furnace.",
+            "NP_150 asks how quickly resonance-driven defect engineering can modify material properties. Verdict: SUPPORTED — property programming is a practical manufacturing technology (surface-confined). Defect motion/transient softening µs–ms; permanent writing (annihilation, subgrain, crack healing) s–min; deep nanocrystallization tens of minutes. Ultrasonic peening/UNSM/USRP deliver surface hardness, residual stress, and fatigue-life gains (30–100%) in seconds–minutes — comparable/faster than shot peening (5–30 min) and far faster than annealing (hours) — and are industrially deployed. Caveat: surface-confined; cannot reach bulk properties, so it replaces surface treatments, not heat treatment.",
+            "For non-experts: a process that takes a day is a lab trick; one that takes seconds is a factory tool. Sound softens a metal the instant it is switched on, and even the permanent upgrades — hardening the surface, doubling fatigue life — take only seconds to minutes. That is as fast as, or faster than, shot peening, and far faster than slow furnace annealing. The one limit is that sound only reaches the surface, not deep inside, so it is a fast surface treatment, not a furnace replacement.",
+            "Property programming is a practical manufacturing technology: surface shifts in seconds–minutes (faster than shot peening/annealing), already industrially deployed; surface-confined.",
+            "“Fast enough for the factory — programming in seconds, not hours.”",
+            false,
+            [
+                new("ResearchY-NP_150", "PROPERTY PROGRAMMING TIMESCALE AUDIT",
+                    "Property programming is fast (surface shifts in seconds–minutes) and industrially deployed; surface-confined, not bulk.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_150.md"),
+            ]),
+        new(
             "researchy-np074-quantum-number-ontology",
             "What Are Quantum Numbers? The Symmetry Charges of the D96 Ring: Charge Is the Rotation, Isospin the Doublet, and Only the Color Count Remains a Postulate",
             "ResearchY · NP_074 (Quantum Number Ontology Audit)",
