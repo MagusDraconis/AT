@@ -1393,6 +1393,21 @@ public static class AtlasDataService
                     "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_157.md"),
             ]),
         new(
+            "researchy-np158-latent-organization-state",
+            "Many Stones Inside One: A Rock's Hidden States",
+            "ResearchY · NP_158 (Latent Organization State Audit)",
+            "A rock looks like one fixed thing, but inside it a whole family of possible arrangements is waiting. The same granite, with the same minerals and the same temperature, can be loose or dense, its invisible load-bearing chains pointing one way or another, its stiffness and damping changing with each configuration — all depending on how it was packed, shaken, and settled. Most of these arrangements are never seen in daily use, yet they are there, latent, reachable by the right nudge. So granite is not really one material; it is many possible stones sharing the same chemistry.",
+            "NP_158 asks whether a granite-like block contains multiple latent organizational states not normally explored. Verdict: KNOWN PHYSICS — granite behaves as a family of latent organizational states, not a single material. At fixed chemistry/mineral/T, a block possesses many metastable contact-network configurations (packing fraction, contact density, fabric orientation) selected by history (memory/aging); natural/compacted/vibrated/re-jammed states differ in stiffness, damping, and fracture behavior; sub-damage transitions are reversible, damage-bounded ones are not (NP_155). AT's 'latent organizational state' is an INTERPRETATION of granular/jamming physics.",
+            "For non-experts: a rock looks like one fixed thing, but inside it is a whole family of possible arrangements waiting. The same granite — same minerals, same temperature — can be loose or dense, its hidden load-bearing chains pointing one way or another, its stiffness and damping shifting with each arrangement, depending on how it was packed, shaken, and settled. Most of these arrangements are never seen, but they are there, reachable by the right nudge. So granite is not really one material; it is many possible stones sharing the same chemistry.",
+            "Granite is a family of latent organizational states (KNOWN PHYSICS): metastable jammed configurations with state-dependent properties; AT's framing is an interpretation.",
+            "“Many stones inside one — a rock's hidden states.”",
+            false,
+            [
+                new("ResearchY-NP_158", "LATENT ORGANIZATION STATE AUDIT",
+                    "Granite is a family of latent organizational states (metastable jammed configurations); AT's framing is an interpretation.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_158.md"),
+            ]),
+        new(
             "researchy-np074-quantum-number-ontology",
             "What Are Quantum Numbers? The Symmetry Charges of the D96 Ring: Charge Is the Rotation, Isospin the Doublet, and Only the Color Count Remains a Postulate",
             "ResearchY · NP_074 (Quantum Number Ontology Audit)",

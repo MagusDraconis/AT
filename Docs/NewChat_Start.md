@@ -5059,6 +5059,16 @@ category between elastic deformation and irreversible damage. Per NP_151/153, "o
 word for the known defect/contact/microstructure state space, so the matter/organization distinction is
 an AT INTERPRETATION, not a new ontology. Classification: acts on organization AT INTERPRETATION;
 properties = readouts KNOWN PHYSICS; new ontology REFUTED. No new primitive; canonical AT unchanged.
+ResearchY-NP_158 (Latent Organization State Audit, COMPLETE, tests 8/8 PASSED): does a granite-like
+block contain multiple latent organizational states not normally explored? Verdict: KNOWN PHYSICS —
+granite behaves as a family of latent organizational states, not a single material. At fixed
+chemistry/mineral/T, a block possesses many metastable contact-network configurations (packing
+fraction, contact density, fabric orientation) selected by history (memory/aging); natural/compacted/
+vibrated/re-jammed states differ in stiffness, damping, and fracture behavior; sub-damage transitions
+are reversible, damage-bounded ones are not (NP_155). AT's "latent organizational state" is an
+INTERPRETATION of granular/jamming physics. Classification: multiple latent states KNOWN PHYSICS;
+property differences KNOWN PHYSICS; framing AT INTERPRETATION; "single material" REFUTED. No new
+primitive; canonical AT unchanged.
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-
