@@ -327,15 +327,18 @@ public class Y_NP_031_Tests : ResearchTestBase
             if (!Directory.Exists(path)) continue;
             foreach (string file in Directory.GetFiles(path, "*.cs", SearchOption.AllDirectories))
             {
-                // Skip the NP_027/028/030/031 audit files themselves: they DOCUMENT
+                // Skip the NP_027/028/029/030/031/060 audit files themselves: they DOCUMENT
                 // thermal laws (illustrative SI constants in comments), they do not
-                // derive with them.
+                // derive with them. NP_060 uses k_B only to illustrate the Landauer
+                // limit k_B·T·ln2 and prove AT has NO derived temperature (unit-convention
+                // comparison role, not a derivation).
                 string name = Path.GetFileName(file);
                 if (name.StartsWith("Y_NP_027_", StringComparison.Ordinal)) continue;
                 if (name.StartsWith("Y_NP_028_", StringComparison.Ordinal)) continue;
                 if (name.StartsWith("Y_NP_029_", StringComparison.Ordinal)) continue;
                 if (name.StartsWith("Y_NP_030_", StringComparison.Ordinal)) continue;
                 if (name.StartsWith("Y_NP_031_", StringComparison.Ordinal)) continue;
+                if (name.StartsWith("Y_NP_060_", StringComparison.Ordinal)) continue;
                 string text = File.ReadAllText(file);
                 int idx = 0;
                 while ((idx = text.IndexOf(needle, idx, StringComparison.Ordinal)) >= 0)
