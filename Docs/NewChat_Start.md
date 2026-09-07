@@ -4814,6 +4814,17 @@ separates the key. Crystal/metal show a sharp gap (m = 6 unambiguous); glass a d
 distributed). Minimum measurement: a single stiffness-vs-frequency sweep. Classification: discovery
 procedure EMERGENT (from DERIVED critical-mode property NP_131); "amplitude identifies critical
 modes" REFUTED. No new primitive; canonical AT unchanged.
+ResearchY-NP_135 (Coherent Softening Experimental Audit, COMPLETE, tests 7/7 PASSED): what is the
+simplest lab experiment that could falsify the critical-mode softening hypothesis? Verdict: a
+matched-power ultrasound experiment on a 10 cm bar (aluminum f₁ = 25.5 kHz, quartz 28.75 kHz, steel
+25.5 kHz). Measure baseline rigidity R₀ = f₀² (resonant ultrasound spectroscopy), then drive
+OFF-resonance (thermal control) vs ON-resonance (critical mode) at matched power, reading rigidity via
+the resonant-frequency shift, damping via Q, and ΔT. Thermal baseline ΔR/R₀ = −α·ΔT ≈ 0.015–0.045%/K.
+Decisive criterion R = ΔR(f₁)/ΔR(f_off): PASS iff R ≫ 1 AND reversible AND frequency-selective; FAIL
+(thermal-only) iff R ≈ 1. The off-resonance drive is the built-in thermal control, so any reversible
+excess is coherent. Classification: experiment design EMERGENT (falsifiable test of DERIVED
+NP_131/132); "coherent softening indistinguishable from heating" is the falsification condition. No
+new primitive; canonical AT unchanged.
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-

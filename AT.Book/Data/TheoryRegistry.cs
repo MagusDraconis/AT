@@ -509,5 +509,9 @@ public sealed class TheoryRegistry
             "By RIGIDITY-PERTURBATION RANKING: measure the spectrum (NP_130), sweep a resonant drive across each mode, record the rigidity response R(e_i), and rank by influence I_i = |∂R/∂e_i| — the top-m modes are the master key. Signatures C (coherence sensitivity) and D (nonlinear coupling) are diagnostic; A (amplitude) is REFUTED; B (phase) is PARTIAL. Backbone influence ≈ 1/(1−p_c) vs ≈ 0 for non-backbone. Crystal/metal show a sharp gap (m = 6); glass a diffuse gap (m = 40). Minimum measurement: a single stiffness-vs-frequency sweep.",
             AuditStatus.Passed, new DateTime(2026, 9, 7), TheoryLayer.Physics, TheoryClassification.Emergent,
             ["difference", "d96"]),
+        new("np135", "Coherent Softening Experimental Audit", "What is the simplest laboratory experiment that could falsify the critical-mode softening hypothesis?",
+            "A matched-power ultrasound experiment on a 10 cm bar (aluminum f_1 = 25.5 kHz, quartz 28.75 kHz, steel 25.5 kHz). Measure baseline rigidity R_0 = f_0^2 (RUS); drive OFF-resonance (thermal control) vs ON-resonance (critical mode) at matched power; measure rigidity (frequency shift), damping (Q), ΔT. Thermal baseline ΔR/R_0 = −α·ΔT ≈ 0.015–0.045 %/K. Decisive criterion R = ΔR(f_1)/ΔR(f_off): PASS iff R ≫ 1 AND reversible AND frequency-selective; FAIL (thermal-only) iff R ≈ 1. The off-resonance drive is the built-in thermal control.",
+            AuditStatus.Passed, new DateTime(2026, 9, 7), TheoryLayer.Physics, TheoryClassification.Emergent,
+            ["difference", "d96"]),
     ];
 }

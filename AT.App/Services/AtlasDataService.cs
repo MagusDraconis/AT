@@ -1048,6 +1048,21 @@ public static class AtlasDataService
                     "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_134.md"),
             ]),
         new(
+            "researchy-np135-coherent-softening-experiment",
+            "The Control That Decides: A Pass/Fail Test for Softening",
+            "ResearchY · NP_135 (Coherent Softening Experimental Audit)",
+            "A claim is only science when it can be proven wrong. So here is the test. Take a bar of aluminum, and hit it with ultrasound twice — once at the wrong note, once at the right one, with the same power. If the right note softens it far more than the wrong one, and it re-firms when you stop, and it never melted — then coherence is doing something heat alone cannot. If both notes soften it exactly the same, then it was only ever heat, and the idea dies. One experiment, one ratio, one verdict.",
+            "NP_135 asks for the simplest lab experiment that could falsify the critical-mode softening hypothesis. Verdict: matched-power ultrasound on a 10 cm bar (aluminum f_1 = 25.5 kHz, quartz 28.75 kHz, steel 25.5 kHz). Baseline R₀ = f₀² (resonant ultrasound spectroscopy); drive OFF-resonance (thermal control) vs ON-resonance (critical mode) at matched power; measure rigidity (frequency shift), damping (Q), ΔT. Thermal baseline ΔR/R₀ = −α·ΔT ≈ 0.015–0.045%/K. Decisive criterion R = ΔR(f₁)/ΔR(f_off): PASS iff R ≫ 1 + reversible + frequency-selective; FAIL (thermal-only) iff R ≈ 1.",
+            "For non-experts: to test whether a special note can loosen a metal bar, strike it with the same force twice — once off-note, once on-note. If the on-note strike loosens it far more, and it tightens back when you stop, that is the special note. If both strikes loosen it the same, there was never a special note — only heat.",
+            "Matched-power off-resonance vs critical-mode ultrasound; R = ΔR(f₁)/ΔR(f_off) decides pass/fail.",
+            "“The off-note is the control; the on-note is the truth.”",
+            false,
+            [
+                new("ResearchY-NP_135", "COHERENT SOFTENING EXPERIMENTAL AUDIT",
+                    "A decisive pass/fail experiment: matched-power off-resonance vs critical-mode ultrasound.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_135.md"),
+            ]),
+        new(
             "researchy-np074-quantum-number-ontology",
             "What Are Quantum Numbers? The Symmetry Charges of the D96 Ring: Charge Is the Rotation, Isospin the Doublet, and Only the Color Count Remains a Postulate",
             "ResearchY · NP_074 (Quantum Number Ontology Audit)",
