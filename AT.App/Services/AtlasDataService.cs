@@ -703,6 +703,21 @@ public static class AtlasDataService
                     "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_111.md"),
             ]),
         new(
+            "researchy-np112-reality-appearance",
+            "Why the World Looks Solid and Continuous: Reader and Read, Both Stable",
+            "ResearchY · NP_112 (Reality Appearance Audit)",
+            "Why does the world look stable and continuous, rather than a flickering stream of separate events? Because both halves of the experience — the watcher and the watched — are stable, and they are stable for the same reason. The world's things persist (they are locked resonances), and its motion is decohered into one definite path. The watcher is itself a persistent structure, the same reader from tick to tick. So when the watcher reads the world again and again, the readings agree. Stability of experience is simply the persistence of the reader multiplied by the persistence of the read.",
+            "NP_112 traces Difference → observer → observation → reality. Reality = A = B = C = D: the sequence of actualizations (A) integrated (B) by a persistent observer recognizing persistent structures (C), which IS the emergent narrative (D). Two stabilities multiply: the world persists (inertia NP_094, binding NP_100, hierarchy NP_101) and is decohered to one worldline (NP_099); the observer persists (a bound hierarchy, NP_111). Repeated readings therefore agree. Reality is STRUCTURE-RELATIVE — neither observer-independent (no view from nowhere) nor observer-relative (the structures pre-exist, M_005) — it is the relation between persistent structures. DERIVED substrate/structures/observer; EMERGENT narrative.",
+            "For non-experts: a movie looks like continuous motion because the frames are projected faster than the eye blinks. Reality looks continuous for a deeper reason: the world's things really do persist, and the watcher really is the same watcher from moment to moment. Both are stable, so the story holds together. The smoothness we experience is not an illusion added on top — it is the persistence of the world and of ourselves, reading each other.",
+            "Stable reality = (persistence of the reader) × (persistence of the read); reality is structure-relative.",
+            "“The world looks solid because both it and we are solid.”",
+            false,
+            [
+                new("ResearchY-NP_112", "REALITY APPEARANCE AUDIT",
+                    "Stable reality = decohered integration of persistent structures by a persistent observer; structure-relative.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_112.md"),
+            ]),
+        new(
             "researchy-np074-quantum-number-ontology",
             "What Are Quantum Numbers? The Symmetry Charges of the D96 Ring: Charge Is the Rotation, Isospin the Doublet, and Only the Color Count Remains a Postulate",
             "ResearchY · NP_074 (Quantum Number Ontology Audit)",

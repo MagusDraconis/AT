@@ -417,5 +417,9 @@ public sealed class TheoryRegistry
             "An observer = a PERSISTENT DIFFERENCE STRUCTURE that actualizes (reads) distinctions — a distinguisher within the network. Observation = actualization = information acquisition = difference recognition = persistent-structure interaction (A = B = C = D). Particle < detector < observer (continuous). Observers special only in integration scale, not kind. Resolves M_001 OP1.",
             AuditStatus.Passed, new DateTime(2026, 9, 7), TheoryLayer.Foundations, TheoryClassification.Derived,
             ["difference"]),
+        new("np112", "Reality Appearance Audit", "Why does a persistent observer experience a stable reality?",
+            "Reality = A = B = C = D: the sequence of actualizations integrated by a persistent observer into an emergent narrative. Two stabilities multiply (world persists + observer persists, decohered) → repeated readings agree → a stable, continuous reality. Reality is STRUCTURE-RELATIVE (persistent structures reading persistent structures), not observer-relative. DERIVED/EMERGENT.",
+            AuditStatus.Passed, new DateTime(2026, 9, 7), TheoryLayer.Foundations, TheoryClassification.Emergent,
+            ["difference"]),
     ];
 }

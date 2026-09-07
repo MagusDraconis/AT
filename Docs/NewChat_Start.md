@@ -4492,6 +4492,20 @@ observer IS an actualization subsystem. Classification: the observer (persistent
 structure) DERIVED (NP_071/102); observation (the actualization/reading event) DERIVED (M_001/004);
 the observer as an integrating hierarchy EMERGENT (NP_101); "the observer is fundamentally special"
 REFUTED; "observation needs a new primitive" REFUTED. No new primitive; canonical AT unchanged.
+ResearchY-NP_112 (Reality Appearance Audit, COMPLETE, tests 7/7 PASSED): why does a persistent
+observer experience a stable reality? Verdict: reality = A = B = C = D — the sequence of
+actualizations (A, the tick substrate) INTEGRATED (B) by a persistent structure (the observer,
+NP_111) recognizing persistent structures (C, matter/binding/hierarchy) — and that integration IS
+the emergent narrative (D) of a stable world. The two stabilities multiply: the world persists
+(inertia NP_094, binding NP_100, hierarchy NP_101) and is decohered to a single worldline (NP_099);
+the observer persists (a bound hierarchy) and is the same reader across ticks — so repeated readings
+AGREE, and the world appears stable and continuous. Reality is STRUCTURE-RELATIVE: neither
+observer-independent (no view from nowhere) nor observer-relative (the structures pre-exist
+measurement, M_005) — it is the relation between persistent structures. Classification: the
+substrate (sequence of actualizations) DERIVED (NP_106/107); the persistent structures DERIVED
+(NP_071/094/100/101); the observer DERIVED (NP_111); the emergent narrative (stable reality) EMERGENT
+(the decohered integration); "reality is observer-relative" REFUTED; "reality needs a new primitive"
+REFUTED. No new primitive; canonical AT unchanged.
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-
