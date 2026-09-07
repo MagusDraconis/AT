@@ -763,6 +763,21 @@ public static class AtlasDataService
                     "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_115.md"),
             ]),
         new(
+            "researchy-np116-meaning-ontology",
+            "What Is Meaning? A Difference That Matters",
+            "ResearchY · NP_116 (Meaning Ontology Audit)",
+            "A book contains information; a mind that reads it gains knowledge; a mind that grasps why it works has understanding. But meaning is yet another step: a difference that *matters*. Meaning is not what a distinction is, nor what it predicts, nor why it predicts — it is how much it matters, what it changes for the observer. A red light means 'stop' because stopping matters for what you will do next. Meaning is significance: the difference a distinction makes, weighted by its consequences.",
+            "NP_116 completes the epistemic chain: data → information → observation → knowledge → understanding → meaning. Determination: C = D — meaning is value-weighted prediction = the relation between models; A (interpreted information) and B (contextual understanding) are necessary but not sufficient (they lack the value-weighting). Meaning's differentiator is SIGNIFICANCE. Removing context collapses meaning (significance is context-dependent); removing prediction collapses meaning (no future consequence = insignificant); information survives as the most robust. The minimum condition is significance: the distinction must matter for the observer. Meaning is EMERGENT.",
+            "For non-experts: a word in a language you don't speak carries information, but no meaning for you. Meaning appears when the word matters — when it changes what you will do. A shout of 'fire!' means something because it changes your next action. So meaning is not in the sign; it is in the sign's consequences for the one who reads it. Meaning is a difference that matters.",
+            "Meaning = value-weighted prediction (significance for the observer); distinct from information/knowledge/understanding.",
+            "“Meaning is a difference that matters.”",
+            false,
+            [
+                new("ResearchY-NP_116", "MEANING ONTOLOGY AUDIT",
+                    "Meaning = significance (value-weighted prediction); the apex of the epistemic chain.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_116.md"),
+            ]),
+        new(
             "researchy-np074-quantum-number-ontology",
             "What Are Quantum Numbers? The Symmetry Charges of the D96 Ring: Charge Is the Rotation, Isospin the Doublet, and Only the Color Count Remains a Postulate",
             "ResearchY · NP_074 (Quantum Number Ontology Audit)",

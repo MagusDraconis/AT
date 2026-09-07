@@ -4550,6 +4550,22 @@ models). Classification: data/information/memory DERIVED (D_039/M_004/NP_102); o
 (NP_113); knowledge EMERGENT (NP_114); understanding EMERGENT (the highest epistemic level);
 "understanding = more knowledge" REFUTED; "understanding needs a new primitive" REFUTED. No new
 primitive; canonical AT unchanged.
+ResearchY-NP_116 (Meaning Ontology Audit, COMPLETE, tests 9/9 PASSED): what is meaning? Verdict:
+meaning = VALUE-WEIGHTED PREDICTION = THE RELATION BETWEEN MODELS (C = D) — the SIGNIFICANCE of a
+distinction for an observer, i.e., how much it matters for the observer's future actualizations. It
+is the apex of the epistemic chain data → information → observation → knowledge → understanding →
+meaning (read → structure → incorporate → predict → model → WEIGHT). Meaning is DISTINCT from
+information (raw structure), knowledge (prediction), understanding (model of models): its
+differentiator is SIGNIFICANCE. A (interpreted information) and B (contextual understanding) are
+necessary but not sufficient (they lack value-weighting). Removing context collapses meaning
+(significance is context-dependent); removing prediction collapses meaning (no future consequence =
+insignificant); information survives as the most robust, meaning is the most fragile. The MINIMUM
+condition is SIGNIFICANCE: the distinction must matter for the observer. The four objects: observer
+(reads) < knower (predicts) < understander (models) < meaning-bearer (weights). Classification:
+data/information DERIVED (D_039/M_004); observation EMERGENT (NP_113); knowledge EMERGENT (NP_114);
+understanding EMERGENT (NP_115); meaning EMERGENT (the significance relation); "meaning =
+information" REFUTED; "meaning needs a new primitive" REFUTED. No new primitive; canonical AT
+unchanged.
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-

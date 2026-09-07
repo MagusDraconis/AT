@@ -210,6 +210,7 @@
 | ResearchY-NP_113 | Observed Ontology Audit | `NP_NewPhysics/ResearchY-NP_113.md` | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_113_Tests.cs` (8/8 ✅) | COMPLETE |
 | ResearchY-NP_114 | Knowledge Ontology Audit | `NP_NewPhysics/ResearchY-NP_114.md` | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_114_Tests.cs` (8/8 ✅) | COMPLETE |
 | ResearchY-NP_115 | Understanding Ontology Audit | `NP_NewPhysics/ResearchY-NP_115.md` | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_115_Tests.cs` (9/9 ✅) | COMPLETE |
+| ResearchY-NP_116 | Meaning Ontology Audit | `NP_NewPhysics/ResearchY-NP_116.md` | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_116_Tests.cs` (9/9 ✅) | COMPLETE |
 | ResearchY-S_001 | Post-V2.1 Theory Architecture Synthesis | `S_Synthesis/ResearchY-S_001.md` | `AT.Tests/ResearchY/S_Synthesis/Y_S_001_Tests.cs` (4/4 ✅) | COMPLETE |
 | ResearchY-M_001 | Measurement Origin Audit | `M_Measurement/ResearchY-M_001.md` | `AT.Tests/ResearchY/M_Measurement/Y_M_001_Tests.cs` (7/7 ✅) | COMPLETE |
 | ResearchY-M_002 | Measurement Disturbance Audit | `M_Measurement/ResearchY-M_002.md` | `AT.Tests/ResearchY/M_Measurement/Y_M_002_Tests.cs` (7/7 ✅) | COMPLETE |
