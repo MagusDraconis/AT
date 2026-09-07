@@ -688,6 +688,21 @@ public static class AtlasDataService
                     "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_110.md"),
             ]),
         new(
+            "researchy-np111-observer-ontology",
+            "What Is an Observer? A Difference Structure That Reads Differences",
+            "ResearchY · NP_111 (Observer Ontology Audit)",
+            "The word 'observer' sounds mysterious — a special mind standing outside the world, looking in. Actualization Theory dissolves the mystery. An observer is nothing but a persistent structure — a stable clustering of differences, like any rock or detector — that happens to be arranged so that it *reads* the differences around it. There is no separate kind of being. A particle is what gets read; a detector is a structure that reads one thing; an observer is just a large detector, a hierarchy of detectors, that reads many things and folds them into one. The watcher is made of the same stuff as the watched.",
+            "NP_111 defines an observer as a PERSISTENT DIFFERENCE STRUCTURE (matter/existence, NP_071/102) that ACTUALIZES (reads) distinctions. Observation = A = B = C = D: actualization (state selection, M_001) = information acquisition (log₂(95) bits, M_004) = difference recognition (D_039) = persistent-structure interaction. Particle < detector < observer — a continuous chain with no categorical break. Observers are special only in DEGREE (integration scale), not in KIND. This resolves M_001's open problem OP1: the observer IS an actualization subsystem. Observer DERIVED; the integrating hierarchy EMERGENT; 'fundamentally special' REFUTED.",
+            "For non-experts: a thermometer 'observes' temperature, and a person observes the thermometer. Both are just arrangements of matter that respond to differences — one to heat, one to the pointer. There is no ghost in the machine: the observer is a structure, like everything else, that happens to be built to read. Observation is not a special power; it is what a persistent structure does when it encounters a difference.",
+            "An observer = a persistent Difference structure that reads differences; observation = actualization (state selection).",
+            "“The watcher is made of the same stuff as the watched.”",
+            false,
+            [
+                new("ResearchY-NP_111", "OBSERVER ONTOLOGY AUDIT",
+                    "Observer = a persistent Difference structure that actualizes distinctions; not fundamentally special.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_111.md"),
+            ]),
+        new(
             "researchy-np074-quantum-number-ontology",
             "What Are Quantum Numbers? The Symmetry Charges of the D96 Ring: Charge Is the Rotation, Isospin the Doublet, and Only the Color Count Remains a Postulate",
             "ResearchY · NP_074 (Quantum Number Ontology Audit)",

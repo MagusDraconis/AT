@@ -413,5 +413,9 @@ public sealed class TheoryRegistry
             "YES — condensed matter is the NEXT NATURAL LAYER above binding and hierarchy, NOT beyond D96. Crystal = repeated bound network; phonon = collective mode; magnet = phase-locked network; superconductor = phase coherence. A = B = C; D (new ontology) refuted. Only larger networks needed. First failure = the cubic O_h anisotropy (same as nuclear). DERIVED/EMERGENT/PARTIAL.",
             AuditStatus.Passed, new DateTime(2026, 9, 7), TheoryLayer.Physics, TheoryClassification.Emergent,
             ["difference", "d96"]),
+        new("np111", "Observer Ontology Audit", "What is an observer inside Actualization Theory?",
+            "An observer = a PERSISTENT DIFFERENCE STRUCTURE that actualizes (reads) distinctions — a distinguisher within the network. Observation = actualization = information acquisition = difference recognition = persistent-structure interaction (A = B = C = D). Particle < detector < observer (continuous). Observers special only in integration scale, not kind. Resolves M_001 OP1.",
+            AuditStatus.Passed, new DateTime(2026, 9, 7), TheoryLayer.Foundations, TheoryClassification.Derived,
+            ["difference"]),
     ];
 }

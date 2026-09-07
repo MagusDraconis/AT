@@ -4479,6 +4479,19 @@ Classification: the collective ontology (crystal/phonon/magnet/superconductor) D
 networks); condensed matter as the next layer EMERGENT; the exact quantitative properties PARTIAL
 (the cubic anisotropy); "condensed matter is beyond D96" REFUTED; "needs a new primitive/geometry/
 symmetry" REFUTED. No new primitive; canonical AT unchanged.
+ResearchY-NP_111 (Observer Ontology Audit, COMPLETE, tests 7/7 PASSED): what is an observer?
+Verdict: an observer = a PERSISTENT DIFFERENCE STRUCTURE (matter/existence, NP_071/102) that
+ACTUALIZES (reads) the distinctions of its environment — a distinguisher within the network.
+Observation = A = B = C = D: actualization (state selection, M_001) = information acquisition
+(log₂(95) bits, M_004) = difference recognition (D_039) = persistent-structure interaction (the
+detector). A particle is the observed (a resonance); a detector is a persistent structure reading
+ONE distinction; an observer is a hierarchy of detectors (NP_101) integrating MANY readings — a
+CONTINUOUS chain, no categorical break. Observers are special only in DEGREE (integration scale),
+not in KIND — exactly matter and existence as a reading structure. This RESOLVES M_001 OP1: the
+observer IS an actualization subsystem. Classification: the observer (persistent Difference
+structure) DERIVED (NP_071/102); observation (the actualization/reading event) DERIVED (M_001/004);
+the observer as an integrating hierarchy EMERGENT (NP_101); "the observer is fundamentally special"
+REFUTED; "observation needs a new primitive" REFUTED. No new primitive; canonical AT unchanged.
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-
