@@ -4780,6 +4780,18 @@ m resonant quanta (m·E_bind) vs thermal's N·E_bind, with entropy m·ln2 ≪ N�
 gel-like softening that is low-entropy and REVERSIBLE (re-lock restores rigidity), not a melt.
 Classification: critical modes DERIVED (NP_100 + NP_110); master key EMERGENT; "rigidity is uniformly
 distributed" REFUTED; "thermal ≡ coherent" REFUTED. No new primitive; canonical AT unchanged.
+ResearchY-NP_132 (Reversible Softening Audit, COMPLETE, tests 8/8 PASSED): can coherent excitation
+of critical modes produce a reversible low-rigidity state without thermal melting? Verdict: YES —
+materials can be temporarily softened and reshaped without heating. Softening and melting are
+DISTINCT. Softening drives the m critical (backbone) modes open, dropping rigidity R → 0 while the
+lattice order S SURVIVES (the N − m modes stay locked) — a gel-like (unjammed) solid with entropy
+ΔS = m·ln2 bits. Melting heats all N modes, dropping R → 0 AND order S → 0 — a disordered liquid with
+ΔS = N·ln2 bits. Softening is REVERSIBLE (stop the drive, re-lock the m modes, rigidity returns — no
+re-nucleation); melting is IRREVERSIBLE (order must be re-grown, N·E_bind + nucleation barrier). The
+reversibility advantage is N/m (~15.8× crystal/metal, ~4.8× granite, ~2.4× glass). Classification:
+reversible softening DERIVED (NP_100 + NP_131); "softening ≡ melting" REFUTED (order survives vs
+destroyed); "softening is irreversible" REFUTED (re-lock restores). No new primitive; canonical AT
+unchanged.
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-

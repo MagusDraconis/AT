@@ -497,5 +497,9 @@ public sealed class TheoryRegistry
             "YES — a resonance MASTER KEY: a small backbone set m ≪ N of critical (load-bearing) modes carries macroscopic rigidity (binding = phase-locking, NP_100). Backbone size is material-specific: crystal/metal m = 6 (~15.8× energy advantage), granite m = 20 (~4.8×), glass m = 40 (~2.4×). Rigidity is collective (percolation): unlocking one of 6 critical modes drops R 1.00 → 0.67; the full set drives R → 0. Coherent critical-mode excitation spends m resonant quanta (m·E_bind) vs thermal N·E_bind, entropy m·ln2 ≪ N·ln2 — transient, gel-like, REVERSIBLE softening without melting.",
             AuditStatus.Passed, new DateTime(2026, 9, 7), TheoryLayer.Physics, TheoryClassification.Emergent,
             ["difference", "d96"]),
+        new("np132", "Reversible Softening Audit", "Can coherent excitation of critical modes produce a reversible low-rigidity state without thermal melting?",
+            "YES — materials can be temporarily softened and reshaped without heating. Softening and melting are DISTINCT: softening drives the m critical modes open (R → 0) while lattice order S SURVIVES (the N−m modes stay locked) — a gel-like (unjammed) solid, ΔS = m·ln2, REVERSIBLE (re-lock restores R). Melting heats all N modes (R → 0 AND S → 0) — a disordered liquid, ΔS = N·ln2, IRREVERSIBLE (re-nucleate order). Reversibility advantage N/m (~15.8× crystal/metal, ~4.8× granite, ~2.4× glass).",
+            AuditStatus.Passed, new DateTime(2026, 9, 7), TheoryLayer.Physics, TheoryClassification.Emergent,
+            ["difference", "d96"]),
     ];
 }

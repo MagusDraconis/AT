@@ -1003,6 +1003,21 @@ public static class AtlasDataService
                     "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_131.md"),
             ]),
         new(
+            "researchy-np132-reversible-softening",
+            "The Soft, Unbroken Lattice: Softening Without Melting",
+            "ResearchY · NP_132 (Reversible Softening Audit)",
+            "To soften a solid, you need not melt it. The difference is order. Melt a crystal and its atoms forget their places — that forgetting is what makes melting irreversible. But drive the right few load-bearing notes coherently, and the solid goes soft while every atom keeps its place: a gel-like, unjammed lattice that still remembers its own shape. Stop the drive, let coherence return, and it locks back into rigidity — no reheating, no re-growing, because the order was never lost. Softening is a reversible pause; melting is an erasure.",
+            "NP_132 asks whether coherent excitation of critical modes produces a reversible low-rigidity state without thermal melting. Verdict: YES — materials can be temporarily softened and reshaped without heating. Softening and melting are DISTINCT: softening drives the m critical modes open (R → 0) while lattice order S SURVIVES (the N−m modes stay locked) — a gel-like (unjammed) solid, ΔS = m·ln2, REVERSIBLE (re-lock restores R). Melting heats all N modes (R → 0 AND S → 0) — a disordered liquid, ΔS = N·ln2, IRREVERSIBLE (re-nucleate order). Reversibility advantage N/m (~15.8× crystal/metal, ~4.8× granite, ~2.4× glass).",
+            "For non-experts: butter softens when it warms — but it is still butter, and it re-firms. That is softening. If it melted to oil, it could never un-melt. This theory gives you the butter trick for any solid: touch the few notes that bear the load, and the solid goes soft but stays itself — then re-firms when you let go.",
+            "Coherent critical-mode excitation softens reversibly (order survives); melting is irreversible (order destroyed).",
+            "“Soften a solid, and it remembers; melt it, and it forgets.”",
+            false,
+            [
+                new("ResearchY-NP_132", "REVERSIBLE SOFTENING AUDIT",
+                    "Reversible gel-like softening (order survives) without thermal melting.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_132.md"),
+            ]),
+        new(
             "researchy-np074-quantum-number-ontology",
             "What Are Quantum Numbers? The Symmetry Charges of the D96 Ring: Charge Is the Rotation, Isospin the Doublet, and Only the Color Count Remains a Postulate",
             "ResearchY · NP_074 (Quantum Number Ontology Audit)",
