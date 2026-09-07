@@ -1468,6 +1468,21 @@ public static class AtlasDataService
                     "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_162.md"),
             ]),
         new(
+            "researchy-np163-organizational-path-dependence",
+            "The Route Matters More Than the Destination",
+            "ResearchY · NP_163 (Organizational Path Dependence Audit)",
+            "We usually think a material's final state is set by its final load — same pressure, same result. For a rock, that is wrong. The same ending can be reached by different routes, and the route decides where you actually end up: squeeze-then-shake gives one internal arrangement, shake-then-squeeze gives another, even when the final load is identical. The material remembers the whole journey, not just the last step. So the real control is not the pressure or the frequency or the vibration alone — it is the path taken. This is a deep and well-known fact about granular matter, which the theory names in its own way.",
+            "NP_163 asks whether the path through organizational state space matters more than the instantaneous excitation. Verdict: KNOWN PHYSICS — granular/rock materials are athermal and non-ergodic: the final organizational state is a function of loading/vibration HISTORY, not the final load. Identical end conditions via different paths give different states (path A → X, path B → Y), differing in anisotropy/damping/fracture; unreachable states, hysteresis, and training loops (reversal memory, rejuvenation) are standard. The true control variable is the TRAJECTORY, not vibration/stress/frequency alone. AT's 'organizational path dependence' is an INTERPRETATION.",
+            "For non-experts: we assume a material's final state is set by its final load — same pressure, same result. For a rock, that is wrong. The same ending can be reached by different routes, and the route decides where you actually end up: squeeze-then-shake gives one internal arrangement, shake-then-squeeze gives another, even at the same final load. The material remembers the whole journey, not just the last step. So the real control is not the pressure or frequency or vibration alone — it is the path taken.",
+            "Path dependence is KNOWN PHYSICS (non-ergodicity, hysteresis, memory): the trajectory, not the instantaneous excitation, is the control variable.",
+            "“The route matters more than the destination.”",
+            false,
+            [
+                new("ResearchY-NP_163", "ORGANIZATIONAL PATH DEPENDENCE AUDIT",
+                    "Path dependence is KNOWN PHYSICS (non-ergodicity/hysteresis/memory): the trajectory is the control variable; AT's framing is an interpretation.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_163.md"),
+            ]),
+        new(
             "researchy-np074-quantum-number-ontology",
             "What Are Quantum Numbers? The Symmetry Charges of the D96 Ring: Charge Is the Rotation, Isospin the Doublet, and Only the Color Count Remains a Postulate",
             "ResearchY · NP_074 (Quantum Number Ontology Audit)",

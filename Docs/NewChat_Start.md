@@ -5107,6 +5107,15 @@ than the material-property map. Real-time: photoelastic video + near-real-time C
 block, ultrasonic tomography + CWI/NCWI are standard. Classification: direct imaging KNOWN PHYSICS;
 organizational map finer KNOWN PHYSICS; framing AT INTERPRETATION; new capability REFUTED. No new
 primitive; canonical AT unchanged.
+ResearchY-NP_163 (Organizational Path Dependence Audit, COMPLETE, tests 7/7 PASSED): does the path
+through organizational state space matter more than the instantaneous excitation? Verdict: KNOWN
+PHYSICS — granular/rock materials are athermal and non-ergodic: the final organizational state is a
+function of loading/vibration HISTORY, not the final load. Identical end conditions via different paths
+give different states (path A → X, path B → Y), differing in anisotropy/damping/fracture; unreachable
+states, hysteresis, and training loops (reversal memory, rejuvenation) are standard. The true control
+variable is the TRAJECTORY, not vibration/stress/frequency alone. AT's "organizational path dependence"
+is an INTERPRETATION. Classification: path dependence KNOWN PHYSICS; trajectory-as-control KNOWN
+PHYSICS; framing AT INTERPRETATION; new capability REFUTED. No new primitive; canonical AT unchanged.
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-
