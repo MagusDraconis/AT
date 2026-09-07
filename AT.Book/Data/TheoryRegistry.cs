@@ -405,5 +405,9 @@ public sealed class TheoryRegistry
             "AT is FALSIFIABLE at every level. Strongest = the single-valued numerics (n_s = 0.96497, ℓ₁ = 220.48, ΩΛ = 0.6839, Ωm = 0.3161, mass ratios, 0νββ m_ββ = 2.02 meV); strongest uniquely-AT = the discrete tick (AT-P042); weakest = ontological claims; strongest vulnerability = nuclear structure (O(3) approximate only). Anchors and w = −1 are BOUNDARY (imported). 'AT is unfalsifiable' REFUTED.",
             AuditStatus.Passed, new DateTime(2026, 9, 7), TheoryLayer.Physics, TheoryClassification.Derived,
             ["difference", "d96"]),
+        new("np109", "Weakest Link Audit", "Where is Actualization Theory most likely to fail?",
+            "The weakest link is NUCLEAR STRUCTURE (O(3) approximate only — magic numbers not exact), with condensed matter the largest unmapped domain. Foundations/particles/forces ROBUST; cosmology/gravity PARTIAL (w=−1 hosted, ψ boundary); nuclear/condensed MISSING. Strongest evidence = the tight cosmology numerics; weakest = nuclear. Single most-likely falsifier = exact magic numbers from the cubic lattice.",
+            AuditStatus.Passed, new DateTime(2026, 9, 7), TheoryLayer.Physics, TheoryClassification.Derived,
+            ["difference", "d96"]),
     ];
 }

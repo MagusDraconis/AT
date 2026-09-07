@@ -4453,6 +4453,17 @@ signal; (9) exact magic numbers from a cubic lattice; (10) point-particle matter
 FALSIFIABLE (DERIVED, sharp); the discrete tick FALSIFIABLE (unique, in-principle); ontological claims
 FALSIFIABLE (structural, weak); anchors and w = −1 BOUNDARY (imported, not falsifiable); "AT is
 unfalsifiable" REFUTED. No new primitive; canonical AT unchanged.
+ResearchY-NP_109 (Weakest Link Audit, COMPLETE, tests 8/8 PASSED): where is AT most likely to fail?
+Verdict: the weakest link is NUCLEAR STRUCTURE (O(3) only approximate — the magic numbers
+[2,8,20,28,50,82,126] are NOT exactly reproduced, NP_087/089), with CONDENSED MATTER the largest
+unmapped domain. Domain ranking by risk: foundations / particles / forces ROBUST (derived or logical
+necessities, no falsifier yet); cosmology / gravity PARTIAL (numerics and metric DERIVED, but w = −1
+HOSTED and ψ a framework boundary); nuclear structure / condensed matter MISSING. STRONGEST evidence:
+the tight cosmology numerics (n_s = 0.96497 at 0.007%, ℓ₁ = 220.48, ΩΛ = 0.6839). WEAKEST evidence:
+nuclear structure. SINGLE most-likely falsifier: an exact magic-number closure derived from the cubic
+lattice — AT's own derivation (NP_089) predicts it cannot be exact, so deriving it breaks the
+structural core. Classification: foundations/particles/forces ROBUST; cosmology/gravity PARTIAL;
+nuclear structure/condensed matter MISSING. No new primitive; canonical AT unchanged.
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-

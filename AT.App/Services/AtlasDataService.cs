@@ -658,6 +658,21 @@ public static class AtlasDataService
                     "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_108.md"),
             ]),
         new(
+            "researchy-np109-weakest-link",
+            "The Weakest Link: Nuclear Structure, Where the Theory Admits It Is Approximate",
+            "ResearchY · NP_109 (Weakest Link Audit)",
+            "Every theory has a weakest link, and honest theories say where it is. Actualization Theory's is nuclear structure. Its strongest results — the cosmic numbers, the particle masses — are derived to fractions of a percent. But when it comes to the magic numbers of atomic nuclei, the theory makes a candid admission: its symmetry is only approximate, so those numbers should not come out exactly. That is not a failing to hide; it is a specific, testable prediction about exactly where the theory is fragile. It knows its own weak spot.",
+            "NP_109 inventories the DERIVED / CORRESPONDENCE / BOUNDARY / MISSING results and ranks every domain by risk. ROBUST: foundations, particles, forces (derived or logical necessities). PARTIAL: cosmology (numerics DERIVED but w = −1 hosted) and gravity (metric DERIVED but ψ a boundary). MISSING: nuclear structure (O(3) approximate only — the magic numbers [2,8,20,28,50,82,126] are not exactly reproduced) and condensed matter (never mapped). Strongest evidence = the tight cosmology numerics (n_s = 0.96497, ℓ₁ = 220.48, ΩΛ = 0.6839); weakest = nuclear. Single most-likely falsifier = an exact magic-number closure from the cubic lattice.",
+            "For non-experts: a chain is as strong as its weakest link, and this theory can point to its own. Its weakest link is the inside of the atomic nucleus, where its picture of space is only approximately symmetric. It predicts its own numbers there should be slightly off — so if they turn out to be exactly right, that would be the most likely way for the whole theory to break.",
+            "Weakest link = nuclear structure (O(3) approximate); strongest = cosmology numerics; condensed matter unmapped.",
+            "“A theory that knows its own weakest link is one you can trust to test.”",
+            false,
+            [
+                new("ResearchY-NP_109", "WEAKEST LINK AUDIT",
+                    "Weakest link = nuclear structure (magic numbers not exact); single falsifier = exact cubic-lattice closure.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_109.md"),
+            ]),
+        new(
             "researchy-np074-quantum-number-ontology",
             "What Are Quantum Numbers? The Symmetry Charges of the D96 Ring: Charge Is the Rotation, Isospin the Doublet, and Only the Color Count Remains a Postulate",
             "ResearchY · NP_074 (Quantum Number Ontology Audit)",
