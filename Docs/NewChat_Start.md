@@ -5009,6 +5009,17 @@ the specific resonance-driven (ultrasonic) rewritable memory is an AT QUESTION (
 addressability shown, NP_150). Classification: defect memory KNOWN PHYSICS; resonance score AT
 INTERPRETATION; ultrasonic memory AT QUESTION; "new capability" REFUTED. No new primitive; canonical AT
 unchanged.
+ResearchY-NP_153 (Material State Space Audit, COMPLETE, tests 8/8 PASSED): do materials possess a
+navigable state space rather than a single set of fixed properties? Verdict: KNOWN PHYSICS — materials
+are systems with navigable state spaces. A material is a point in a high-dimensional defect/
+microstructure manifold (dislocation density, grain size, phase fraction, residual stress, cracks),
+navigated by thermal/mechanical/ultrasonic operations; transitions are reversible or irreversible by
+path (anneal resets, cold work conditions). Materials science already navigates this space (phase
+diagrams, TTT/CCT, processing maps); property optimization is the special case, state-space navigation
+the general frame (NP_149 Pareto front). Tune/train/condition/restore are standard metallurgy. AT's
+"writable resonance score" is an INTERPRETATION; whether resonance adds a new navigation axis is an AT
+QUESTION. Classification: navigable state space KNOWN PHYSICS; resonance score AT INTERPRETATION;
+resonance axis AT QUESTION; "new capability" REFUTED. No new primitive; canonical AT unchanged.
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-

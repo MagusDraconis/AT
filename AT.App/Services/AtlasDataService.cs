@@ -1318,6 +1318,21 @@ public static class AtlasDataService
                     "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_152.md"),
             ]),
         new(
+            "researchy-np153-material-state-space",
+            "Not a Fixed Thing, but a Map: Materials as Navigable Territory",
+            "ResearchY · NP_153 (Material State Space Audit)",
+            "We tend to say a material 'is' hard or soft, strong or brittle, as if it were a fixed object with fixed traits. But a material is really a map — a territory of possible internal states, reachable by heating, bending, or buzzing it — and we move across that territory every time we anneal, work-harden, or peen a part. Metallurgists have been navigating this map for a century with phase diagrams and heat-treatment charts. So the idea that a material is a 'system with a state space' is not new; it is the everyday working picture of the field. The only open question is whether sound adds a genuinely new way to travel that map.",
+            "NP_153 asks whether materials possess a navigable state space rather than a fixed set of properties. Verdict: KNOWN PHYSICS — materials are systems with navigable state spaces. A material is a point in a high-dimensional defect/microstructure manifold (dislocation density, grain size, phase fraction, residual stress, cracks), navigated by thermal/mechanical/ultrasonic operations; transitions are reversible or irreversible by path. Materials science already navigates this space (phase diagrams, TTT/CCT, processing maps); property optimization is the special case, state-space navigation the general frame (NP_149 Pareto front). Tune/train/condition/restore are standard metallurgy. AT's 'writable resonance score' is an INTERPRETATION; whether resonance adds a new navigation axis is an AT QUESTION.",
+            "For non-experts: we talk about a material as if it 'is' hard or soft, as if that were fixed. But really a material is a map of possible states — heat it, bend it, or buzz it, and you move to a different point on that map. Metallurgists have been traveling this map for a century using phase diagrams and heat-treatment charts. So 'a material is a system with a state space' is not a new idea; it is the field's everyday picture. The only open question is whether sound offers a genuinely new way to travel the map.",
+            "Materials are systems with navigable state spaces (KNOWN PHYSICS); AT's 'resonance score' is an interpretation, and a new resonance axis is an open question.",
+            "“Not a fixed thing, but a map — materials are navigable territory.”",
+            false,
+            [
+                new("ResearchY-NP_153", "MATERIAL STATE SPACE AUDIT",
+                    "Materials are systems with navigable state spaces (known physics); AT adds interpretation and an open question (resonance axis).",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_153.md"),
+            ]),
+        new(
             "researchy-np074-quantum-number-ontology",
             "What Are Quantum Numbers? The Symmetry Charges of the D96 Ring: Charge Is the Rotation, Isospin the Doublet, and Only the Color Count Remains a Postulate",
             "ResearchY · NP_074 (Quantum Number Ontology Audit)",
