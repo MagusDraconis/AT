@@ -1348,6 +1348,21 @@ public static class AtlasDataService
                     "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_154.md"),
             ]),
         new(
+            "researchy-np155-force-chain-programming",
+            "Rearranging the Skeleton: Force Chains Can Be Redirected",
+            "ResearchY · NP_155 (Force Chain Programming Audit)",
+            "Inside a rock, the load does not spread evenly; it travels along hidden chains of grain contacts, like a skeleton of force. The question is whether we can rearrange that skeleton on purpose. The answer is mostly yes, and it is already textbook: squeeze or shear the rock in a chosen direction, and the chains line up that way; shake it, and they scramble into a new stable arrangement. So the force network is steerable, and a rock has many stable 'postures' it can be trained into. The only caution is that a real cemented rock, unlike loose sand, breaks its bonds when you force a big change — so large rewrites are permanent damage, not a reversible switch.",
+            "NP_155 asks whether the force-chain network inside a granite-like material can be intentionally reconfigured. Verdict: KNOWN PHYSICS — force chains break/create/redirect under load (DEM, photoelastic); directed anisotropy (chains align with load/shear direction); multiple metastable jammed states + memory/aging; properties vary with state. Control variables: static preload, vibration direction, frequency sweep, spatial phase (emerging). The open question is reversible programming of a CONSOLIDATED block: below the damage threshold reconfiguration is reversible (sub-damage fabric); above it reconfiguration = microcracking (irreversible, chemistry unchanged).",
+            "For non-experts: inside a rock, force does not spread evenly — it travels along hidden chains of touching grains, like a skeleton. Can we rearrange that skeleton on purpose? Mostly yes, and it is already standard knowledge: squeeze or shear the rock a certain way and the chains line up that way; shake it and they settle into a new stable pattern. So the force network is steerable, and a rock has many stable 'postures.' The one caution: a real cemented rock, unlike loose sand, breaks its bonds when forced into a big change — so a large rewrite is permanent damage, not a clean reversible switch.",
+            "Force chains can be broken/created/redirected (KNOWN PHYSICS); directed anisotropy + metastable states; reversible switching of consolidated rock is bounded by microcracking damage.",
+            "“Rearranging the skeleton — force chains can be redirected.”",
+            false,
+            [
+                new("ResearchY-NP_155", "FORCE CHAIN PROGRAMMING AUDIT",
+                    "Force chains can be reconfigured (KNOWN PHYSICS); directed anisotropy + metastable states; reversible consolidated switching is damage-bounded.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_155.md"),
+            ]),
+        new(
             "researchy-np074-quantum-number-ontology",
             "What Are Quantum Numbers? The Symmetry Charges of the D96 Ring: Charge Is the Rotation, Isospin the Doublet, and Only the Color Count Remains a Postulate",
             "ResearchY · NP_074 (Quantum Number Ontology Audit)",

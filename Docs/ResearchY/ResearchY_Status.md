@@ -248,7 +248,8 @@
 | ResearchY-NP_151 | AT Contribution Audit | `NP_NewPhysics/ResearchY-NP_151.md` | `AT.Tests/ResearchY/NP_151_Tests.cs` (6/6 ✅) | COMPLETE |
 | ResearchY-NP_152 | Material Memory Audit | `NP_NewPhysics/ResearchY-NP_152.md` | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_152_Tests.cs` (8/8 ✅) | COMPLETE |
 | ResearchY-NP_153 | Material State Space Audit | `NP_NewPhysics/ResearchY-NP_153.md` | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_153_Tests.cs` (8/8 ✅) | COMPLETE |
-| ResearchY-NP_154 | Contact Network Softening Audit | `NP_NewPhysics/ResearchY-NP_154.md` | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_154_Tests.cs` (7/7 ✅) | COMPLETE |
+| ResearchY-NP_154 | Contact Network Softening Audit | `NP_NewPhysics/ResearchY-NP_154.md` | `AT.Tests/ResearchY/NP_154_Tests.cs` (7/7 ✅) | COMPLETE |
+| ResearchY-NP_155 | Force Chain Programming Audit | `NP_NewPhysics/ResearchY-NP_155.md` | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_155_Tests.cs` (8/8 ✅) | COMPLETE |
 | ResearchY-S_001 | Post-V2.1 Theory Architecture Synthesis | `S_Synthesis/ResearchY-S_001.md` | `AT.Tests/ResearchY/S_Synthesis/Y_S_001_Tests.cs` (4/4 ✅) | COMPLETE |
 | ResearchY-M_001 | Measurement Origin Audit | `M_Measurement/ResearchY-M_001.md` | `AT.Tests/ResearchY/M_Measurement/Y_M_001_Tests.cs` (7/7 ✅) | COMPLETE |
 | ResearchY-M_002 | Measurement Disturbance Audit | `M_Measurement/ResearchY-M_002.md` | `AT.Tests/ResearchY/M_Measurement/Y_M_002_Tests.cs` (7/7 ✅) | COMPLETE |

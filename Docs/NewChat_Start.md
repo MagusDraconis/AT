@@ -5030,6 +5030,16 @@ reducing friction/shear strength ~5–10× at microstrain and ~1–5 W/cm². NP_
 governs metals; rock is contact-controlled. Classification: contact network KNOWN PHYSICS; acoustic
 fluidization KNOWN PHYSICS; "defect engineering dominates granite" REFUTED. No new primitive; canonical
 AT unchanged.
+ResearchY-NP_155 (Force Chain Programming Audit, COMPLETE, tests 8/8 PASSED): can the force-chain
+network inside a granite-like material be intentionally reconfigured? Verdict: KNOWN PHYSICS — force
+chains break/create/redirect under load (DEM, photoelastic); directed anisotropy (chains align with
+load/shear direction); multiple metastable jammed states + memory/aging; properties vary with state.
+Control variables: static preload, vibration direction, frequency sweep, spatial phase (emerging). The
+open question is reversible programming of a CONSOLIDATED block: below the damage threshold
+reconfiguration is reversible (sub-damage fabric); above it reconfiguration = microcracking
+(irreversible, chemistry unchanged). Classification: reconfiguration KNOWN PHYSICS; directed
+anisotropy KNOWN PHYSICS; metastable states KNOWN PHYSICS; reversible consolidated AT QUESTION. No new
+primitive; canonical AT unchanged.
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-
