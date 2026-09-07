@@ -823,6 +823,21 @@ public static class AtlasDataService
                     "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_119.md"),
             ]),
         new(
+            "researchy-np120-responsibility-ontology",
+            "What Is Responsibility? The Same Chooser, Bearing What It Chose",
+            "ResearchY · NP_120 (Responsibility Ontology Audit)",
+            "A dice roll has no responsibility — there is no one to own it. A person does, because the one who chose is the one who remains. Responsibility is freedom plus persistence: the watcher who picked a path is the same watcher who lives with where it leads. That sameness — the continuity of a persistent structure across ticks — is what makes an action yours. Without it, a choice is just an event in the stream, owned by no one. Responsibility is what happens when a persistent watcher owns its own choosing.",
+            "NP_120 completes the moral arc: meaning → purpose → choice → freedom → responsibility. Determination: A = B = C = D — responsibility is ownership of action = ownership of consequences = persistence of choice = continuity of the observer. The differentiator from freedom is CONTINUITY: freedom is the capacity to choose; responsibility is the chooser persisting to bear. Forced (no alternatives) and random (no values/purpose) actions bear no responsibility; only free action does. Removing persistence collapses responsibility while freedom survives — proving persistence is the crux. Responsibility is EMERGENT.",
+            "For non-experts: a stone rolling down a hill is not responsible — it had no choice and no self to answer for it. A person is responsible because the one who decided is the one who is still here, still the same 'I', to face the result. Responsibility is the thread that ties yesterday's choice to today's self — the persistence of the chooser. That thread is what this theory says a persistent structure is.",
+            "Responsibility = freedom + persistence (the same chooser owns the consequences); differentiator = continuity.",
+            "“Responsibility is a chooser that does not dissolve.”",
+            false,
+            [
+                new("ResearchY-NP_120", "RESPONSIBILITY ONTOLOGY AUDIT",
+                    "Responsibility = freedom + persistence (ownership by the same persistent chooser); differentiator = continuity.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_120.md"),
+            ]),
+        new(
             "researchy-np074-quantum-number-ontology",
             "What Are Quantum Numbers? The Symmetry Charges of the D96 Ring: Charge Is the Rotation, Isospin the Doublet, and Only the Color Count Remains a Postulate",
             "ResearchY · NP_074 (Quantum Number Ontology Audit)",

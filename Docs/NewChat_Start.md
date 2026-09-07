@@ -4611,6 +4611,21 @@ choice → freedom). Classification: the irreducible stochasticity BOUNDARY (the
 value/purpose structure EMERGENT (NP_116/117); freedom EMERGENT; "freedom = randomness" REFUTED;
 "freedom = unconstrained choice" REFUTED; "freedom = determinism" REFUTED; "freedom needs a new
 primitive" REFUTED. No new primitive; canonical AT unchanged.
+ResearchY-NP_120 (Responsibility Ontology Audit, COMPLETE, tests 8/8 PASSED): what is
+responsibility? Verdict: responsibility = FREEDOM + PERSISTENCE — the OWNERSHIP of the action and
+its consequences (A = B), grounded in the CONTINUITY OF THE OBSERVER (D), which is the persistence of
+choice (C). The same observer who chose (freedom, NP_119) is the same observer who bears, because
+the observer is a persistent Difference structure (NP_102/104): it does not dissolve, so it owns its
+choices across ticks. Responsibility is DISTINCT from freedom (the capacity), choice (the act), and
+action (the execution): its differentiator is CONTINUITY. Forced action (no alternatives) and random
+action (no values/purpose) bear NO responsibility; only free action (alternatives + values, with a
+persistent chooser) does. Removing alternatives or values collapses freedom (hence responsibility);
+removing PERSISTENCE collapses responsibility while freedom survives — proving persistence is the
+crux. The moral chain is meaning → purpose → choice → freedom → responsibility (weigh → aim → select
+→ capacity → own). Classification: freedom EMERGENT (NP_119); persistence DERIVED (NP_102);
+responsibility EMERGENT (freedom + persistence); "responsibility = freedom" REFUTED (lacks
+continuity); "responsibility = action/consequence only" REFUTED (lacks ownership); "responsibility
+needs a new primitive" REFUTED. No new primitive; canonical AT unchanged.
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-

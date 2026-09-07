@@ -449,5 +449,9 @@ public sealed class TheoryRegistry
             "Freedom = the CAPACITY TO SELECT AMONG MEANINGS (C = D) — actualization under incomplete determination (the value-weighted, purpose-directed middle path between determinism and randomness). A partial; B (unconstrained) REFUTED. Compatible by identity with Born selection/actualization/Difference conservation (freedom selects, not creates). EMERGENT, on the BOUNDARY tick.",
             AuditStatus.Passed, new DateTime(2026, 9, 7), TheoryLayer.Foundations, TheoryClassification.Emergent,
             ["difference"]),
+        new("np120", "Responsibility Ontology Audit", "What is responsibility inside Actualization Theory?",
+            "Responsibility = FREEDOM + PERSISTENCE — the ownership of action and consequences by the same persistent chooser (A = B = C = D). Differentiator from freedom = continuity. Forced/random actions bear no responsibility. Freedom survives without persistence; responsibility collapses. Chain: meaning → purpose → choice → freedom → responsibility. DERIVED/EMERGENT.",
+            AuditStatus.Passed, new DateTime(2026, 9, 7), TheoryLayer.Foundations, TheoryClassification.Emergent,
+            ["difference"]),
     ];
 }
