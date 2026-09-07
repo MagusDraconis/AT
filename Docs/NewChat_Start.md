@@ -5040,6 +5040,16 @@ reconfiguration is reversible (sub-damage fabric); above it reconfiguration = mi
 (irreversible, chemistry unchanged). Classification: reconfiguration KNOWN PHYSICS; directed
 anisotropy KNOWN PHYSICS; metastable states KNOWN PHYSICS; reversible consolidated AT QUESTION. No new
 primitive; canonical AT unchanged.
+ResearchY-NP_156 (Force Path Steering Audit, COMPLETE, tests 8/8 PASSED): can force-chain networks be
+deliberately steered into preferred load paths? Verdict: KNOWN PHYSICS — directed steering (boundary
+loading, preload, oriented vibration) localizes force chains into preferred paths, steering load
+concentration, stiffness anisotropy, and fracture location (DEM/photoelastic, rock-mechanics stress
+redistribution). This is the spatial version of NP_155: steering shapes WHERE stress flows, not just
+that the network reconfigures. Controls: preload, vibration orientation, multi-point excitation
+(emerging). The open question is reversible, vibration-only steering of a CONSOLIDATED block
+(damage-bounded, NP_155). Classification: directed steering KNOWN PHYSICS; load-path localization KNOWN
+PHYSICS; fracture-location control KNOWN PHYSICS; reversible consolidated steering AT QUESTION. No new
+primitive; canonical AT unchanged.
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-

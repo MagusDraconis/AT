@@ -1363,6 +1363,21 @@ public static class AtlasDataService
                     "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_155.md"),
             ]),
         new(
+            "researchy-np156-force-path-steering",
+            "Routing the Load: Steering Force into Chosen Channels",
+            "ResearchY · NP_156 (Force Path Steering Audit)",
+            "Last question was whether a rock's hidden force skeleton can be rearranged. This one asks something sharper: can we route the load where we want — build up one channel and drain another, so the force flows along a chosen path? The answer, again, is mostly yes and already known: squeeze one region and the chains thicken there; shake another and it loosens; and where the path is weakest, that is where the rock will eventually crack. So force is not just rearranged, it can be steered — the same way engineers already redirect stress around tunnels. The only caveat remains the cemented rock: big reroutes are permanent damage, not a reversible switch.",
+            "NP_156 asks whether force-chain networks can be deliberately steered into preferred load paths. Verdict: KNOWN PHYSICS — directed steering (boundary loading, preload, oriented vibration) localizes force chains into preferred paths, steering load concentration, stiffness anisotropy, and fracture location (DEM/photoelastic, rock-mechanics stress redistribution). This is the spatial version of NP_155: steering shapes WHERE stress flows, not just that the network reconfigures. Controls: preload, vibration orientation, multi-point excitation (emerging). The open question is reversible, vibration-only steering of a CONSOLIDATED block (damage-bounded, NP_155).",
+            "For non-experts: last time we asked whether a rock's hidden force skeleton could be rearranged. Now the sharper question: can we route the load where we want — build up one channel and drain another, so the force flows along a chosen path? The answer is mostly yes, and it is already known: squeeze one region and the load-bearing chains thicken there; shake another and it loosens; and where the path is weakest is where the rock will crack. Engineers already steer stress this way around tunnels. The one caveat: in a cemented rock, big reroutes are permanent damage, not a clean switch.",
+            "Force chains can be steered into preferred load paths (KNOWN PHYSICS): load concentration, stiffness anisotropy, and fracture location are steerable; consolidated rock is damage-bounded.",
+            "“Routing the load — force can be steered into chosen channels.”",
+            false,
+            [
+                new("ResearchY-NP_156", "FORCE PATH STEERING AUDIT",
+                    "Force chains can be steered into preferred load paths (KNOWN PHYSICS); fracture location is steerable; consolidated rock is damage-bounded.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_156.md"),
+            ]),
+        new(
             "researchy-np074-quantum-number-ontology",
             "What Are Quantum Numbers? The Symmetry Charges of the D96 Ring: Charge Is the Rotation, Isospin the Doublet, and Only the Color Count Remains a Postulate",
             "ResearchY · NP_074 (Quantum Number Ontology Audit)",
