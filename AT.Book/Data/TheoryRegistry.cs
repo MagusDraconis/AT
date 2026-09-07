@@ -453,5 +453,9 @@ public sealed class TheoryRegistry
             "Responsibility = FREEDOM + PERSISTENCE — the ownership of action and consequences by the same persistent chooser (A = B = C = D). Differentiator from freedom = continuity. Forced/random actions bear no responsibility. Freedom survives without persistence; responsibility collapses. Chain: meaning → purpose → choice → freedom → responsibility. DERIVED/EMERGENT.",
             AuditStatus.Passed, new DateTime(2026, 9, 7), TheoryLayer.Foundations, TheoryClassification.Emergent,
             ["difference"]),
+        new("np121", "Identity Ontology Audit", "What is identity inside Actualization Theory?",
+            "Identity = the SAMENESS of a persistent Difference structure (A = D) — structural persistence, not content persistence. The observer's content changes every tick, but its structure persists (NP_104). B (memory) and C (actualization pattern) PARTIAL. Minimum condition = persistence. Distinct from existence (being) and responsibility (owning). DERIVED/EMERGENT/PARTIAL.",
+            AuditStatus.Passed, new DateTime(2026, 9, 7), TheoryLayer.Foundations, TheoryClassification.Emergent,
+            ["difference"]),
     ];
 }

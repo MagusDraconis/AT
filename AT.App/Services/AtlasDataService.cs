@@ -838,6 +838,21 @@ public static class AtlasDataService
                     "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_120.md"),
             ]),
         new(
+            "researchy-np121-identity-ontology",
+            "What Is Identity? The Same Watcher, Tick After Tick",
+            "ResearchY · NP_121 (Identity Ontology Audit)",
+            "You are not the same person you were a moment ago — every thought, every memory, every state has shifted. Yet you are unmistakably the same 'you'. How? Because identity is not the persistence of what fills you, but of the structure that holds it. Your difference-structure — the persistent arrangement that makes you 'this, not that' — does not dissolve. The contents change; the container persists. That structural persistence is identity, and it is the very thread that responsibility (NP_120) quietly assumes when it says the same chooser bears the consequences.",
+            "NP_121 defines identity = the SAMENESS of a persistent Difference structure (A = D) — the continuity face of existence: not just that the thing IS (NP_102) but that it is THE SAME. Identity is grounded in the persistence of the STRUCTURE, not the content: the observer's actualizations, memories, and states change every tick, but its Difference structure persists (NP_104). B (persistent memory) and C (persistent actualization pattern) are PARTIAL correlates. Removing memory leaves identity partially intact; removing persistence collapses it. The minimum condition for 'the same observer' is persistence. Identity is EMERGENT.",
+            "For non-experts: a river is never the same water twice, yet we call it the same river. So it is with a person: the contents flow and change, but the channel — the persistent shape of who you are — remains. Identity is the channel, not the water. That is why you can change completely and still be yourself: the structure that is 'you' has not dissolved.",
+            "Identity = the sameness of the persistent Difference structure (structural, not contentual); minimum condition = persistence.",
+            "“Identity is the channel, not the water.”",
+            false,
+            [
+                new("ResearchY-NP_121", "IDENTITY ONTOLOGY AUDIT",
+                    "Identity = the sameness of the persistent Difference structure; structural persistence, not content.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_121.md"),
+            ]),
+        new(
             "researchy-np074-quantum-number-ontology",
             "What Are Quantum Numbers? The Symmetry Charges of the D96 Ring: Charge Is the Rotation, Isospin the Doublet, and Only the Color Count Remains a Postulate",
             "ResearchY · NP_074 (Quantum Number Ontology Audit)",

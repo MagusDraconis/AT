@@ -4626,6 +4626,22 @@ crux. The moral chain is meaning → purpose → choice → freedom → responsi
 responsibility EMERGENT (freedom + persistence); "responsibility = freedom" REFUTED (lacks
 continuity); "responsibility = action/consequence only" REFUTED (lacks ownership); "responsibility
 needs a new primitive" REFUTED. No new primitive; canonical AT unchanged.
+ResearchY-NP_121 (Identity Ontology Audit, COMPLETE, tests 8/8 PASSED): what is identity? Verdict:
+identity = the SAMENESS of a persistent Difference structure (A = D) — the continuity face of
+existence: not just that the thing IS (existence, NP_102), but that it is THE SAME across ticks.
+Identity is grounded in the PERSISTENCE of the structure, not the persistence of content: the
+observer's actualizations, memories, and states change every tick, but its Difference structure
+persists (NP_104), so it is the same observer. B (persistent memory) and C (persistent actualization
+pattern) are PARTIAL (correlates/consequences, not the identity). Removing memory leaves identity
+partially intact (the structure persists); removing persistence or continuity collapses identity.
+The MINIMUM condition for "the same observer" is PERSISTENCE (continuity of the Difference
+structure). Identity is DISTINCT from existence (the thing IS) and responsibility (freedom +
+persistence, which PRESUPPOSES identity): identity is the sameness responsibility requires. A person
+changes every tick yet is the same person — structural persistence, not content persistence.
+Classification: Difference/persistence DERIVED (NP_102/104); identity EMERGENT (the sameness of the
+persistent structure); memory/continuity as correlates PARTIAL; "identity = memory" REFUTED;
+"identity = the content/actualizations" REFUTED; "identity needs a new primitive" REFUTED. No new
+primitive; canonical AT unchanged.
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-
