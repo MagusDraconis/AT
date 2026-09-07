@@ -4642,6 +4642,22 @@ Classification: Difference/persistence DERIVED (NP_102/104); identity EMERGENT (
 persistent structure); memory/continuity as correlates PARTIAL; "identity = memory" REFUTED;
 "identity = the content/actualizations" REFUTED; "identity needs a new primitive" REFUTED. No new
 primitive; canonical AT unchanged.
+ResearchY-NP_122 (Consciousness Ontology Audit, COMPLETE, tests 9/9 PASSED): what is consciousness?
+Verdict: consciousness = the RECURSIVE SELF-MODEL (D) = SELF-OBSERVATION (B) — the observer's model
+turned on itself, so it observes its own observing. A (observation) necessary but not sufficient (a
+detector observes without being conscious); C (integrated observation) partial. The epistemic chain
+culminates in recursion: observation → knowledge → understanding → identity → consciousness
+(incorporate → predict → model → persist → SELF-MODEL). The four terms: awareness (the self-model
+reading its own distinctions), experience (the ongoing self-observation), consciousness (the
+recursive self-model), self (the self-model's object). Removing memory partially collapses
+consciousness; removing integration collapses it to a detector; removing the SELF-MODEL collapses it
+entirely while observation/knowledge/understanding/identity survive — proving the self-model is the
+crux. The minimum condition is THE SELF-MODEL: an observer is conscious exactly when it observes
+that it observes. NO new primitive — consciousness is the same Difference ontology turned recursive
+(the model includes its builder). Classification: observation/knowledge/understanding/identity
+EMERGENT (NP_113/114/115/121); consciousness EMERGENT (the recursive self-model); "consciousness =
+observation" REFUTED; "consciousness needs a new primitive" REFUTED; "consciousness is a mystery
+substance" REFUTED. No new primitive; canonical AT unchanged.
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-

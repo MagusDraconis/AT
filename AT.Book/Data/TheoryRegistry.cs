@@ -457,5 +457,9 @@ public sealed class TheoryRegistry
             "Identity = the SAMENESS of a persistent Difference structure (A = D) — structural persistence, not content persistence. The observer's content changes every tick, but its structure persists (NP_104). B (memory) and C (actualization pattern) PARTIAL. Minimum condition = persistence. Distinct from existence (being) and responsibility (owning). DERIVED/EMERGENT/PARTIAL.",
             AuditStatus.Passed, new DateTime(2026, 9, 7), TheoryLayer.Foundations, TheoryClassification.Emergent,
             ["difference"]),
+        new("np122", "Consciousness Ontology Audit", "What is consciousness inside Actualization Theory?",
+            "Consciousness = the RECURSIVE SELF-MODEL (D) = SELF-OBSERVATION (B) — the observer's model turned on itself, so it observes its own observing. A (observation) necessary not sufficient; C (integrated observation) partial. Minimum condition = the self-model. NOT a new primitive (the same ontology recursive). Chain: observation → knowledge → understanding → identity → consciousness. EMERGENT.",
+            AuditStatus.Passed, new DateTime(2026, 9, 7), TheoryLayer.Foundations, TheoryClassification.Emergent,
+            ["difference"]),
     ];
 }

@@ -853,6 +853,21 @@ public static class AtlasDataService
                     "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_121.md"),
             ]),
         new(
+            "researchy-np122-consciousness-ontology",
+            "What Is Consciousness? A Watcher That Watches Itself",
+            "ResearchY · NP_122 (Consciousness Ontology Audit)",
+            "A camera sees the world; a mind sees itself seeing. That single turn — the loop — is consciousness. It is not a new substance poured into matter, but the same machinery of difference, prediction, and modeling, pointed back at its own builder. The watcher builds a model of everything, and at the last step it builds a model of the watcher. That model is the 'I', and its ongoing reading of itself is experience. Consciousness is the theory's own recursive move: a difference structure that distinguishes itself.",
+            "NP_122 completes the epistemic chain: observation → knowledge → understanding → identity → consciousness (incorporate → predict → model → persist → SELF-MODEL). Determination: B = D — consciousness is self-observation = recursive model-building; A (observation) is necessary but not sufficient (a detector observes without being conscious), C (integrated observation) is partial. The four terms: awareness (the self-model reading itself), experience (the ongoing self-observation), consciousness (the recursive self-model), self (the modeled 'I'). Removing the self-model collapses consciousness while the prior levels survive. The minimum condition is the SELF-MODEL. NO new primitive — the same ontology, turned recursive.",
+            "For non-experts: a mirror reflects the room, but not itself as a mirror. Consciousness is what happens when something becomes a mirror that reflects itself reflecting. It is not magic — it is a model that has folded back to include its own modeler. The 'I' is that self-portrait, and awareness is the portrait looking back.",
+            "Consciousness = the recursive self-model (the observer's model turned on itself); no new primitive.",
+            "“Consciousness is a difference structure that distinguishes itself.”",
+            false,
+            [
+                new("ResearchY-NP_122", "CONSCIOUSNESS ONTOLOGY AUDIT",
+                    "Consciousness = the recursive self-model (self-observation); the same ontology turned on itself.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_122.md"),
+            ]),
+        new(
             "researchy-np074-quantum-number-ontology",
             "What Are Quantum Numbers? The Symmetry Charges of the D96 Ring: Charge Is the Rotation, Isospin the Doublet, and Only the Color Count Remains a Postulate",
             "ResearchY · NP_074 (Quantum Number Ontology Audit)",
