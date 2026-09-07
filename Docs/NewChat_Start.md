@@ -4969,6 +4969,16 @@ read, NP_147 write); closed-loop convergence is PARTIAL (emerging). Metal-centri
 granite lack dislocation/grain levers. Classification: correlation SUPPORTED; directed evolution
 SUPPORTED; open-loop SUPPORTED; closed-loop PARTIAL; "random-only" CONTRADICTED. No new primitive;
 canonical AT unchanged.
+ResearchY-NP_149 (Defect State Optimization Audit, COMPLETE, tests 8/8 PASSED): do materials possess
+optimal defect topologies for specific properties? Verdict: SUPPORTED — materials can be tuned toward
+optimal property states via resonance-driven defect engineering, but optimization is multi-objective.
+Each property (hardness, yield stress, fatigue life, fracture toughness, damping) has a distinct
+optimal defect state (density/topology/distribution) reached by directed (not random) evolution
+(NP_147/148). The optima conflict — hardness↔toughness (Hall–Petch), strength↔fatigue, strength↔
+damping (Ashby) — so achievable states form a Pareto front, not a single point. read→write→verify
+works open-loop; closed-loop optimize is PARTIAL (ML/Bayesian emerging). Classification: optimal states
+SUPPORTED; directed tuning SUPPORTED; trade-offs SUPPORTED; closed-loop PARTIAL; "random suffices"
+CONTRADICTED. No new primitive; canonical AT unchanged.
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-

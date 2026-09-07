@@ -1258,6 +1258,21 @@ public static class AtlasDataService
                     "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_148.md"),
             ]),
         new(
+            "researchy-np149-defect-state-optimization",
+            "No Free Property: Tuning One Knob Turns Another",
+            "ResearchY · NP_149 (Defect State Optimization Audit)",
+            "Materials do have 'best' internal structures — for hardness, for fatigue life, for damping — but they are not the same best. Make a metal hard, and it gets brittle; make it springy and damp vibrations, and it gets soft. So a material cannot be tuned to a single perfect state; it can only be steered along a frontier where every gain in one property is paid for in another. The good news is the tuning is real and directed, not random. The open challenge is teaching the machine to find the best trade-off on its own.",
+            "NP_149 asks whether materials possess optimal defect topologies for specific properties. Verdict: SUPPORTED — materials can be tuned toward optimal property states via resonance-driven defect engineering, but optimization is multi-objective. Each property (hardness, yield stress, fatigue life, fracture toughness, damping) has a distinct optimal defect state (density/topology/distribution) reached by directed (not random) evolution (NP_147/148). The optima conflict — hardness↔toughness (Hall–Petch), strength↔fatigue, strength↔damping (Ashby) — so achievable states form a Pareto front. read→write→verify works open-loop; closed-loop optimize is PARTIAL (ML/Bayesian emerging).",
+            "For non-experts: a material can be 'best' at hardness, or 'best' at absorbing shock, or 'best' at surviving repeated flexing — but these are different bests. Make it harder and it gets more brittle; make it better at damping and it gets softer. So you can't tune it to one perfect state; you can only steer it along a frontier where improving one thing costs another. The tuning itself works; the hard part is automating the search for the best trade-off.",
+            "Optimal defect states exist per property, but they trade off (Pareto front); directed tuning is real, closed-loop optimization is emerging.",
+            "“No free property — tuning one knob turns another.”",
+            false,
+            [
+                new("ResearchY-NP_149", "DEFECT STATE OPTIMIZATION AUDIT",
+                    "Materials have optimal defect states per property, under trade-offs; directed tuning works, closed-loop is emerging.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_149.md"),
+            ]),
+        new(
             "researchy-np074-quantum-number-ontology",
             "What Are Quantum Numbers? The Symmetry Charges of the D96 Ring: Charge Is the Rotation, Isospin the Doublet, and Only the Color Count Remains a Postulate",
             "ResearchY · NP_074 (Quantum Number Ontology Audit)",
