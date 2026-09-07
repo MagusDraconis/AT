@@ -1438,6 +1438,21 @@ public static class AtlasDataService
                     "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_160.md"),
             ]),
         new(
+            "researchy-np161-organizational-wave",
+            "Change That Travels: Organizational Fronts in a Rock",
+            "ResearchY · NP_161 (Organizational Wave Audit)",
+            "We found the internal structure of a rock can be a map, varying from point to point. The next question is whether that map can move — whether a change in organization can travel through the material like a wave. It can. Squeeze or shake one spot, and the reorganization spreads to its neighbors, a front advancing through the rock — like a jamming front racing ahead of a wave, or a shear band creeping along, or a sharp solitary pulse down a chain of grains. So organization is not a fixed map but a moving one, a field that can ripple. Again, this is standard granular physics wearing the theory's vocabulary.",
+            "NP_161 asks whether organizational states can propagate through a granite-like material as waves or fronts. Verdict: KNOWN PHYSICS — organizational change travels as fronts (jamming fronts at/above granular sound speed, compaction fronts, shear bands, fluidization fronts, granular solitary waves), independent of ordinary elastic waves; organization is a dynamical field φ(x,t), not a static state. Speed spans orders of magnitude, persistence is dissipation-limited, reversibility damage-bounded (NP_155). AT's 'organizational wave' is an INTERPRETATION of these known propagating fabric fronts.",
+            "For non-experts: we saw that a rock's internal structure can be a map, varying from place to place. Now: can that map move — can a change in organization travel through the material like a wave? Yes. Shake one spot and the reorganization spreads to its neighbors, a front advancing through the rock — a jamming front racing ahead, or a shear band creeping, or a sharp pulse down a chain of grains. So the structure is not a fixed map but a moving one, a field that can ripple. And this is standard granular physics wearing the theory's vocabulary.",
+            "Organizational change propagates as fronts (jamming/compaction/shear/fluidization/solitary): organization is a dynamical field φ(x,t) — KNOWN PHYSICS.",
+            "“Change that travels — organizational fronts in a rock.”",
+            false,
+            [
+                new("ResearchY-NP_161", "ORGANIZATIONAL WAVE AUDIT",
+                    "Organizational change propagates as fronts (jamming/compaction/shear/fluidization/solitary); organization is a dynamical field — KNOWN PHYSICS.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_161.md"),
+            ]),
+        new(
             "researchy-np074-quantum-number-ontology",
             "What Are Quantum Numbers? The Symmetry Charges of the D96 Ring: Charge Is the Rotation, Isospin the Doublet, and Only the Color Count Remains a Postulate",
             "ResearchY · NP_074 (Quantum Number Ontology Audit)",

@@ -5088,6 +5088,15 @@ fabric field φ(x) (fabric-tensor continuum), bounded by state diffusion/relaxat
 rock is an AT QUESTION (damage-bounded, NP_155). Classification: spatial field KNOWN PHYSICS; regional
 coexistence KNOWN PHYSICS; framing AT INTERPRETATION; reversible field programming AT QUESTION. No new
 primitive; canonical AT unchanged.
+ResearchY-NP_161 (Organizational Wave Audit, COMPLETE, tests 8/8 PASSED): can organizational states
+propagate through a granite-like material as waves or fronts? Verdict: KNOWN PHYSICS — organizational
+change travels as fronts (jamming fronts at/above granular sound speed, compaction fronts, shear bands,
+fluidization fronts, granular solitary waves), independent of ordinary elastic waves; organization is a
+dynamical field φ(x,t), not a static state. Speed spans orders of magnitude, persistence is
+dissipation-limited, reversibility damage-bounded (NP_155). AT's "organizational wave" is an
+INTERPRETATION of these known propagating fabric fronts. Classification: organizational fronts KNOWN
+PHYSICS; dynamical-field view KNOWN PHYSICS; framing AT INTERPRETATION; new capability REFUTED. No new
+primitive; canonical AT unchanged.
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-
