@@ -1378,6 +1378,21 @@ public static class AtlasDataService
                     "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_156.md"),
             ]),
         new(
+            "researchy-np157-organization-vs-material",
+            "The Theory's Answer: Resonance Touches Organization, Not Matter",
+            "ResearchY · NP_157 (Organization vs Material Audit)",
+            "At the deepest level, the theory has a one-word answer to what sound is actually touching: organization. A material is not a lump of fixed stuff but a pattern of locked relationships — atoms held together by phase-locking, load carried along chains of contacts. When you buzz it, you are not changing the 'stuff'; you are rearranging the pattern. Stiffness and strength are just the readouts of that pattern, so they move only because the pattern moved first. This is a clean and satisfying answer — and, honestly, it is the theory's own name for something materials science already knew: properties are functions of internal structure.",
+            "NP_157 asks whether resonant excitation acts on material properties or on the organization of the difference network. Verdict: (B) ORGANIZATION — resonance drives the locking/defect/contact network first, with material properties as emergent readouts (binding = phase-locking, NP_100); the σ_y ≫ E asymmetry (NP_141) is the signature. Reorganization (reversible topology change — re-lock NP_132, contact re-arrange NP_155/156) is a third category between elastic deformation and irreversible damage. Per NP_151/153, 'organization' is AT's word for the known defect/contact/microstructure state space, so the matter/organization distinction is an AT INTERPRETATION, not a new ontology.",
+            "For non-experts: the theory's deepest answer to what sound touches is one word: organization. A material is not fixed 'stuff' but a pattern of locked relationships — atoms held by phase-locking, load carried along chains of contacts. Buzzing it does not change the stuff; it rearranges the pattern, and stiffness and strength are just the readouts of that pattern. It is a satisfying answer, and it is the theory's own name for something materials science already knew: a material's properties come from its internal structure.",
+            "Resonance acts on ORGANIZATION (the locking/defect/contact network), with material properties as emergent readouts — an AT interpretation of known physics.",
+            "“Resonance touches organization, not matter — the pattern moves before the properties do.”",
+            false,
+            [
+                new("ResearchY-NP_157", "ORGANIZATION VS MATERIAL AUDIT",
+                    "Resonance acts on organization (locking/defect/contact network), with properties as readouts — an AT interpretation, not a new ontology.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_157.md"),
+            ]),
+        new(
             "researchy-np074-quantum-number-ontology",
             "What Are Quantum Numbers? The Symmetry Charges of the D96 Ring: Charge Is the Rotation, Isospin the Doublet, and Only the Color Count Remains a Postulate",
             "ResearchY · NP_074 (Quantum Number Ontology Audit)",

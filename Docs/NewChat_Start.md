@@ -5050,6 +5050,15 @@ that the network reconfigures. Controls: preload, vibration orientation, multi-p
 (damage-bounded, NP_155). Classification: directed steering KNOWN PHYSICS; load-path localization KNOWN
 PHYSICS; fracture-location control KNOWN PHYSICS; reversible consolidated steering AT QUESTION. No new
 primitive; canonical AT unchanged.
+ResearchY-NP_157 (Organization vs Material Audit, COMPLETE, tests 7/7 PASSED): in AT, does resonant
+excitation act on material properties or on the organization of the difference network? Verdict: (B)
+ORGANIZATION — resonance drives the locking/defect/contact network first, with material properties as
+emergent readouts (binding = phase-locking, NP_100); the σ_y ≫ E asymmetry (NP_141) is the signature.
+Reorganization (reversible topology change — re-lock NP_132, contact re-arrange NP_155/156) is a third
+category between elastic deformation and irreversible damage. Per NP_151/153, "organization" is AT's
+word for the known defect/contact/microstructure state space, so the matter/organization distinction is
+an AT INTERPRETATION, not a new ontology. Classification: acts on organization AT INTERPRETATION;
+properties = readouts KNOWN PHYSICS; new ontology REFUTED. No new primitive; canonical AT unchanged.
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-
