@@ -13,6 +13,7 @@
 | C — Source Geometry | PLANNED | C_001 Center Audit, C_002 Radial Propagation |
 | D — Resonance Structure | PLANNED | D_001 D96 Resonance Audit, D_002 Standing Wave Model |
 | S — Architecture Synthesis | ACTIVE | S_001 Post-V2.1 Theory Architecture Synthesis (capstone) |
+| T — Spectral Blueprint | ACTIVE | T_001 Inverse Spectral Design (spectrum → coupling via inverse DFT) |
 | Tests | ACTIVE | Y_A_001 suite passing (5/5) |
 
 ## Investigation Status
@@ -260,6 +261,12 @@
 | ResearchY-NP_163 | Organizational Path Dependence Audit | `NP_NewPhysics/ResearchY-NP_163.md` | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_163_Tests.cs` (7/7 ✅) | COMPLETE |
 | ResearchY-NP_164 | Organizational Amplification Audit | `NP_NewPhysics/ResearchY-NP_164.md` | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_164_Tests.cs` (8/8 ✅) | COMPLETE |
 | ResearchY-S_001 | Post-V2.1 Theory Architecture Synthesis | `S_Synthesis/ResearchY-S_001.md` | `AT.Tests/ResearchY/S_Synthesis/Y_S_001_Tests.cs` (4/4 ✅) | COMPLETE |
+| ResearchY-T_001 | Spectral Blueprint (Inverse Spectral Design) | `T_SpectralBlueprint/ResearchY-T_001.md` | `AT.Tests/ResearchY/T_SpectralBlueprint/Y_T_001_Tests.cs` (7/7 ✅) | COMPLETE |
+| ResearchY-T_002 | Physical Spectrum Audit (physicality boundary) | `T_SpectralBlueprint/ResearchY-T_002.md` | `AT.Tests/ResearchY/T_SpectralBlueprint/Y_T_002_Tests.cs` (8/8 ✅) | COMPLETE |
+| ResearchY-T_003 | General Inverse Spectral Graph Audit (isospectrality) | `T_SpectralBlueprint/ResearchY-T_003.md` | `AT.Tests/ResearchY/T_SpectralBlueprint/Y_T_003_Tests.cs` (5/5 ✅) | COMPLETE |
+| ResearchY-T_004 | Spectral Rigidity Audit (family ranking) | `T_SpectralBlueprint/ResearchY-T_004.md` | `AT.Tests/ResearchY/T_SpectralBlueprint/Y_T_004_Tests.cs` (3/3 ✅) | COMPLETE |
+| ResearchY-T_005 | Attractor Dominance Audit (basin structure) | `T_SpectralBlueprint/ResearchY-T_005.md` | `AT.Tests/ResearchY/T_SpectralBlueprint/Y_T_005_Tests.cs` (4/4 ✅) | COMPLETE |
+| ResearchY-T_006 | Darwinian Dominance Emergence (replicator competition) | `T_SpectralBlueprint/ResearchY-T_006.md` | `AT.Tests/ResearchY/T_SpectralBlueprint/Y_T_006_Tests.cs` (3/3 ✅) | COMPLETE |
 | ResearchY-M_001 | Measurement Origin Audit | `M_Measurement/ResearchY-M_001.md` | `AT.Tests/ResearchY/M_Measurement/Y_M_001_Tests.cs` (7/7 ✅) | COMPLETE |
 | ResearchY-M_002 | Measurement Disturbance Audit | `M_Measurement/ResearchY-M_002.md` | `AT.Tests/ResearchY/M_Measurement/Y_M_002_Tests.cs` (7/7 ✅) | COMPLETE |
 | ResearchY-M_003 | Measurement Feedback Audit | `M_Measurement/ResearchY-M_003.md` | `AT.Tests/ResearchY/M_Measurement/Y_M_003_Tests.cs` (5/5 ✅) | COMPLETE |

@@ -2159,6 +2159,129 @@ structure DERIVED; information/geometry/measurement/gravity DERIVED (from ρ);
 measurement event/observer/spacetime EMERGENT; canonical boundaries BOUNDARY. No new
 primitive; canonical AT unchanged.
 
+ResearchY-T_001 (Spectral Blueprint — Inverse Spectral Design, COMPLETE, tests 7/7
+PASSED): can material properties be designed by specifying a TARGET spectrum and
+reconstructing the coupling graph, instead of the forward path topology → simulation
+→ observed spectrum? Verdict: SUPPORTED for circulant (ring) graphs — the Laplacian
+eigenvalues are the DFT of the coupling row, so the inverse problem is CLOSED FORM:
+λ_k = Σ_d w_d(1−cos 2πdk/N), w_d = −(1/N)Σ_k λ_k cos 2πdk/N. FINDINGS (N=96): (1) the
+round trip spectrum→weights→spectrum closes to floating-point precision for ALL
+targets (band-gap, clustered, octave-spaced, max-separated, D96) — inverse spectral
+design is exact; (2) the inverse map is an ISOMETRY, ||Δw||₂ = (1/√N)||Δλ||₂
+(condition number 1, Parseval) — maximally robust; (3) PHYSICALITY (non-negative
+coupling) selects spectra: D96 (3 octave bands, span 6.4) reconstructs to SPARSE
+all-attractive coupling (6 edges, weight 1, degree 12 — exactly the connection set
+{±1..±6}); max-separated (uniform) is also all-attractive but 24 edges; band-gap,
+clustered, and extreme-octave (span ~3444) spectra require DENSE + NEGATIVE
+(repulsive) couplings — exotic couplings a simple oscillator material cannot
+provide. Classification: inverse-map exactness DERIVED; isometry DERIVED;
+physicality-selects-sparse-band-spectra CORRESPONDENCE; hypothesis SUPPORTED for
+smooth moderate-span spectra / REFUTED for discontinuous or extreme-span spectra.
+This opens the ResearchY-T (Technology) group: the spectral-blueprint inverse map
+exists and is closed-form for rings; the general non-circulant weighted-graph
+inverse problem (inverse eigenvalue problem for graphs) is left to ResearchY-T_003.
+No new primitive; canonical AT unchanged.
+
+ResearchY-T_002 (Physical Spectrum Audit, COMPLETE, tests 8/8 PASSED): which target
+spectra admit SPARSE POSITIVE-weight (physical) realizations? Verdict: a spectrum is
+physically realizable by a ring material iff it is a NEGATIVE-DEFINITE function on
+Z_N — the physical spectra form the convex cone spanned by the single-edge generators
+g_d = 2(1−cos 2πdk/N) (Bochner/Schoenberg). FINDINGS (N=96): (1) physicality score
+P = (attractiveness + sparsity + stability)/3 classifies the five targets — D96
+0.958 PHYSICAL (6 edges, 0 negative), band-gap 0.236 / clustered 0.235 / octave 0.190
+UNPHYSICAL (dense + repulsive), max-separated 0.500 MARGINAL (24 edges, 0 negative);
+(2) BOUNDARY MAP (where the smallest generator coefficient w_d crosses zero):
+geometric r = 1.0110 (span ≈ 1.67 — octave spectra go unphysical below one octave),
+band-gap g = 0.0000 (D96 sits exactly ON the cone boundary — any band-gap opening is
+immediately unphysical), clustered sep = 0.40; (3) 0/400 random spectra are physical —
+physicality is a measure-(near-)zero, structured property, not a generic one.
+Classification: physical-spectra = negative-definite cone DERIVED; D96-like circulant
+family always physical DERIVED; physicality-score map CORRESPONDENCE; hypothesis
+SUPPORTED for smooth moderate-span band-structured spectra / REFUTED for
+discontinuous or extreme-span spectra. Next step: the general non-circulant weighted
+graph inverse problem (ResearchY-T_003). No new primitive; canonical AT unchanged.
+
+ResearchY-T_003 (General Inverse Spectral Graph Audit, COMPLETE, tests 5/5 PASSED):
+can a target spectrum reconstruct a physical NON-CIRCULANT weighted graph, and does
+the spectrum uniquely determine the graph? Verdict: the spectrum ALONE does NOT
+determine a general graph — isospectral non-isomorphic pairs exist (exhaustive search:
+0 pairs on n=5, 4 pairs on n=6, with degree-sequence signatures (2,2,2,2,2,4)↔
+(1,2,2,3,3,3) at 7 edges and (1,3,3,3,3,3)↔(2,2,2,3,3,4) at 8 edges). FINDINGS: (1)
+full eigendecomposition L = VΛVᵀ reconstructs every graph EXACTLY (spectral error
+~1e-15, graph similarity 1.00) — spectrum+eigenbasis loses nothing; (2) spectrum alone
+is LOSSLY for general graphs (isospectral degeneracy); (3) circulant (ring) graphs are
+spectrally RIGID — the labeled spectrum ↔ connection set is bijective (cycle C6 → {±1},
+D96 → {±1..±6}, via IDFT); (4) the six named families (path, cycle, grid, random,
+complete) are each spectrally unique among their size, but rigidity is NOT generic.
+Classification: eigendecomposition-exactness DERIVED; spectrum-lossy-for-general-graphs
+DERIVED; circulant-rigidity CORRESPONDENCE; "spectrum as complete blueprint" REFUTED
+for general graphs / SUPPORTED for the circulant D96 structure. THE T-PROGRAM CONCLUSION:
+the spectral blueprint (T_001/T_002) is a SPECIAL property of circulant structure — D96's
+circulant geometry is what makes its spectrum a complete, unique, canonical description,
+while a generic graph's spectrum is an incomplete (degenerate) description. No new
+primitive; canonical AT unchanged.
+
+ResearchY-T_004 (Spectral Rigidity Audit, COMPLETE, tests 3/3 PASSED): which graph
+families are uniquely determined by their spectrum? Measure rigidity R = 1 −
+P(isospectral partner) per family (exhaustive n=6, plus D96 at n=96). RIGIDITY RANKING
+(n=6, labeled): circulant R=1.0000 (8 graphs, 0 degenerate), path R=1.0000 (360, 0),
+cycle R=1.0000 (60, 0), grid R=1.0000 (90, 0, perturbation-stability 0.733 = FRAGILE),
+complete R=1.0000 (1, 0), random-sparse R=0.9950 (200, 1), all R=0.9780 (32768, 720),
+bipartite R=0.9652 (5177, 180 — the LEAST rigid). D96-derived R=1 (circulant; labeled
+spectrum → IDFT → {±1..±6} unique). FINDINGS: (1) structured families (complete, path,
+cycle, grid, circulant) are maximally rigid (R=1); (2) rigidity is GRADED not generic —
+bipartite (3.5% degenerate) and random-sparse (0.5%) decay, consistent with "almost all
+trees are isospectral"; (3) perturbation stability separates robust rigidity (complete/
+path/cycle/circulant = 1.0) from fragile rigidity (grid = 0.733); (4) D96 sits in the
+maximally rigid class. Classification: structured-family rigidity DERIVED; circulant/D96
+rigidity DERIVED; rigidity-as-graded-property EMERGENT; "all families rigid" REFUTED.
+T-PROGRAM CONCLUSION (T_001-T_004): the spectral blueprint is a SPECIAL property of
+circulant (D96) structure — its spectrum is a complete, unique, canonical description,
+echoing D96's role as the canonical AT attractor. No new primitive; canonical AT unchanged.
+
+ResearchY-T_005 (Attractor Dominance Audit, COMPLETE, tests 4/4 PASSED): do a small
+number of attractors dominate the state space, or is dominance a model artifact? Model:
+attractors = distinct eigenspaces of the Laplacian (damped mode-locking); basin =
+multiplicity fraction. DOMINANCE RANKING (N=96, by largest basin D): complete A=2 D=0.990
+ATTRACTOR DOMINATED; unphysical clustered A=4 D=0.333; D96-3D (4×4×6 torus) A=13 D=0.208;
+D96 A=45 D=0.062; physical max-sep / unphysical band-gap / unphysical octave A=49 D=0.021;
+random-sparse A=96 D=0.010 — all others NOT DOMINATED. CRITICAL ANSWERS: (1) D96 produces
+FEWER attractors than random (45 < 96) — YES; (2) one attractor dominates — NO for D96
+(largest basin 6.2%), only the degenerate complete graph; (3) dominance increases with
+spectral organization — YES weakly (complete 0.99 > D96 0.062 > random 0.010; D96-3D A=13
+compresses more than 1D D96 A=45); (4) physical more dominant than unphysical — NOT
+uniformly (unphysical clustered A=4 has fewer attractors than physical D96 A=45; physical
+max-sep is IDENTICAL A=49 to unphysical band-gap/octave since basins are set by degeneracy
+not physicality). Classification: attractor=distinct-eigenspace DERIVED; spectral
+organization compresses count EMERGENT; "few attractors DOMINATE" REFUTED for D96;
+dominance-is-a-model-artifact CONFIRMED. T-PROGRAM ARC (T_001-T_005) CONCLUSION: the
+spectral blueprint/physicality/rigidity all flow from D96's circulant structure, but
+attractor DOMINANCE does NOT — it requires either massive degeneracy (complete graph) or
+the Darwinian selection layer (resource competition), confirming the model-dependence
+question. No new primitive; canonical AT unchanged.
+
+ResearchY-T_006 (Darwinian Dominance Emergence, COMPLETE, tests 3/3 PASSED): do dominant
+attractors emerge from Darwinian resource competition rather than spectral structure?
+Model-free scoring (no AT assumptions): replicator dynamics p_i(t+1)=p_i(t)w_i/Σp_j w_j
+over the attractor (eigenspace) set, fitness w_i=r_i/c_i=m_i/λ_i (resource∝multiplicity,
+cost∝eigenvalue). RESULTS (2000 steps): D96 A=44 D_init=0.062→D_final=1.000 t_dom=3
+ratio=3.89; D96-3D A=12 D_init=0.208 t_dom=13 ratio=1.20; physical max-sep A=48 t_dom=4
+ratio=2.00; unphysical clustered A=3 D_init=0.333 t_dom=2 ratio=5.00; random sparse A=95
+D_init=0.010 t_dom=50 ratio=1.05; complete A=1 D_init=0.990 t_dom=1 ratio=inf.
+HYPOTHESES: H1 spectral organization accelerates dominance SUPPORTED (D96 t_dom=3 vs
+random 50, ~17×); H2 D96 fewer effective survivors REFUTED (both collapse N_eff≈1,
+selection is universal); H3 complete degenerate SUPPORTED (A=1, already dominant).
+SUCCESS CRITERION (dominance emerges only after competition) CONFIRMED: D rises 1-33% →
+100% for every model. Classification: replicator→fittest DERIVED; dominance-emerges-after
+competition EMERGENT; "spectral-structure-alone-determines-dominance" REFUTED. T-PROGRAM
+ARC (T_001-T_006) FINAL CONCLUSION: the spectral blueprint, physicality, and rigidity all
+flow from D96's circulant structure (T_001-T_004), but attractor DOMINANCE does not —
+T_005 showed bare spectral structure does not dominate (largest basin 6%), and T_006 shows
+the Darwinian selection layer (w=r/c resource competition) is what produces a single
+dominant attractor — resolving the model-dependence question and confirming the
+information-ecology mechanism as a dynamical layer beyond the eigenmode spectrum. No new
+primitive; canonical AT unchanged.
+
 ResearchY-QG_012 (Distinguishability Cosmology Audit, COMPLETE, tests 6/6 PASSED): is
 ΩΛ uniquely privileged, or does distinguishability generate additional cosmological
 observables? Verdict: ΩΛ is PRIVILEGED BUT NOT UNIQUE — distinguishability generates a
