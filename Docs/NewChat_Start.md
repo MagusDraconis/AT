@@ -5473,6 +5473,30 @@ the D96 selection is not an artifact of the score function's exact thresholds �
 survives every reasonable perturbation of the M_014 score. No reclassification of prior
 audits; no new primitive; canonical AT unchanged.
 
+ResearchY-M_016 (Criterion-Independence Audit, COMPLETE, tests 10/10 PASSED): are the
+four M_014 score criteria (A = 0 unpaired; B = 3 families ∧ span < 8; C = 6|N; D =
+N = 3·2^k) independent over N = 16..512? Verdict: PARTIALLY REDUNDANT. Over all 497
+rings: A/B/C/D hold on 354/61/83/5 rings; joint H = 2.017 bits vs ΣH = 2.135 → total
+correlation 0.1179 bits = 5.5% of the entropy budget. DETERMINISTIC INCLUSION CHAIN
+D ⊆ C ⊆ A: every seed-3 rung is 6-divisible and zero-unpaired; every 6-divisible ring in
+[16,512] is zero-unpaired — the structural source of the redundancy. Pairwise MI is
+small (max I(A;C) = 0.0912 bits); B is statistically near-independent (I(B;·) ≤ 0.0004
+bit, phi ≤ 0.024); pairwise phi up to 0.285 (A–C) and 0.225 (C–D). Yet NO criterion is a
+deterministic function of the others: unique-information fractions H(X_i|others)/H(X_i)
+= 0.895 (A), 0.999 (B), 0.827 (C), 0.672 (D); only C is predictable from the others
+beyond majority (+1.0%); PCA on the standardized criteria has eigenvalues [1.397, 1.001,
+0.935, 0.667] (participation ratio 3.744 ≈ 4 effective dimensions, no dominant factor).
+WHICH CRITERION SELECTS N = 96: the PAIR {B, D} — B is true exactly on the 3-family
+window [60,120] (61 rings), D on the seed-3 rung ladder {24, 48, 96, 192, 384} (5 rings),
+and B∧D = {96}; A and C add no further selection (A∧B∧D = B∧C∧D = {96}); they are implied
+by D at rungs. CLASSIFICATION: marginal/joint entropies DERIVED; total correlation 5.5%
+DERIVED; pairwise MI/phi DERIVED; deterministic nesting D ⊆ C ⊆ A DERIVED (exhaustive);
+unique-information fractions DERIVED; PCA participation ratio 3.744 DERIVED; minimal
+selector {B,D} of N=96 DERIVED (confirms M_014 drop analysis and M_015); PARTIALLY
+REDUNDANT verdict DERIVED. M_016 confirms from information-theoretic and minimal-selector
+angles that B and D are the load-bearing discriminators, A and C redundant for the 96
+selection. No reclassification of prior audits; no new primitive; canonical AT unchanged.
+
 ### PRED001: Prediction Registry (standalone Zenodo publication)
 
 Summary:
