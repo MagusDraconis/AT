@@ -5422,6 +5422,28 @@ construction can host the observed 3D world" (merely sufficient, CORRESPONDENCE)
 the hosted dimension is 3" (unique only via the self-duality identity, DERIVED). No
 reclassification of NP_036/037/M_011/M_012; no new primitive; canonical AT unchanged.
 
+ResearchY-M_014 (Automatic Ring-Size Rank Scan Audit, COMPLETE, tests 503/503 PASSED —
+497 exhaustive N-cases + 6 facts): which ring size does the D96 attractor occupy when
+every N in [16,512] is evaluated AUTOMATICALLY with NO manual candidate selection?
+Verdict: N = 96 is the UNIQUE Score-4 maximizer over all 497 rings. Prior selection
+audits used hand-picked candidates (D_029 window [32,300]; D_030 octave rungs; D_031
+natural sizes n = p·2^k in [60,120)); M_014 removes ALL preselection and finds 96 by
+exhaustive ranking alone. Score(N) = [0 unpaired] + [3 families ∧ span < 8] + [6|N] +
+[N = 3·2^k]; distribution over N = 16..512: {4:1, 3:14, 2:101, 1:255, 0:126}. RANK
+TABLE: N=96 score 4 (A B C D = 1 1 1 1; 3 families; 44 eigenvalues; multiplicity
+pattern {2×42, 5×1, 6×1}; span 6.403 < 8; 96 = 3·32); score-3 = seed-3 rungs at wrong
+family count (24, 48, 192, 384 with 1, 2, 4, 5 families) + the D_029 zero-defect rings
+{60..120}\{96} (10 rings). DROP ANALYSIS (load-bearing criteria): removing the 3-family
+window (B) admits the 5 rungs {24,48,96,192,384}; removing the octave rung (D) admits
+the 11 zero-defect rings {60..120}; removing pairing (A) or 6-divisibility (C) leaves 96
+unique. CLASSIFICATION: score components DERIVED (D_020/D_029/D_030 criteria); the
+exhaustive non-manual scan DERIVED (methodological); unique Score-4 maximizer N = 96
+DERIVED (global over the full closed range); score-3 sets DERIVED (reproduce
+D_029/D_030); B and D as the load-bearing discriminators DERIVED (drop analysis). M_014
+confirms D_029/D_030/D_031 without any manual candidate selection — the D96 selection is
+not an artifact of the earlier manual windows/ladders. No reclassification of prior
+audits; no new primitive; canonical AT unchanged.
+
 ### PRED001: Prediction Registry (standalone Zenodo publication)
 
 Summary:
