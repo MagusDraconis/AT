@@ -5125,6 +5125,44 @@ disproportionately large shifts. Amplification is bounded by the reversible–ir
 (NP_155). The NP_131 "percolation master key" is itself this known rigidity-percolation physics.
 Classification: amplification/avalanches KNOWN PHYSICS; criticality KNOWN PHYSICS; framing AT
 INTERPRETATION; new capability REFUTED. No new primitive; canonical AT unchanged.
+ResearchY-NP_166 (Periodic Table Emergence Audit, COMPLETE, tests 9/9 PASSED): can the periodic
+table emerge from AT resonance organization alone without solving the Schrödinger equation? Verdict:
+NO — the periodic table's shell capacities 2, 8, 18, 32 = 2n² = 2·Σ(2l+1) are the hydrogenic
+(central-field Coulomb) degeneracy (n² orbitals × spin-2), imported quantum-mechanical content, not a
+Difference → D96 consequence. Electron shells are NOT resonance layers (D96 octave occupancy
+[4,4,87] ≠ 2n²), NOT organization levels (the NP_101 hierarchy stacks structures at different
+scales, not the internal layers of one atom), and NOT locking capacities (binding explains that an
+atom exists, not how many electrons occupy each level). Observed shell counts H [1], He [2], Li
+[2,1], Ne [2,8], Ar [2,8,8] are hydrogenic central-field facts; no AT-native count (octaves, BFS
+shells, mirror pairs, mode counts) matches them. The structural reason is the same as for nuclear
+shells (NP_087/089): exact (2l+1) degeneracies require exact O(3), which the 1D/cubic D96 structure
+does not provide. Classification: atom binding + hierarchy DERIVED (NP_100/101 unchanged); electron
+shells as resonance layers/organization levels REFUTED; shell capacities 2, 8, 18, 32 BOUNDARY-class
+(imported hosted values, the 13.6 eV/m_e-anchor pattern); the periodic table CORRESPONDENCE (hosted
+QM structure, confirming NP_017 and extending NP_085's frontier: chemistry is not derived); "AT
+predicts 2, 8, 18, 32 naturally" REFUTED. No new primitive; canonical AT unchanged.
+ResearchY-NP_167 (Unknown Organization States Audit, COMPLETE, hostile audit, tests 9/9 PASSED): do
+there exist large-scale organization states of matter/network structures humanity has never
+intentionally attempted to create? Verdict: criterion B MET — physically allowed, never-deliberately-
+engineered organization states EXIST, but they are combinations/scales of known ordering axes
+(long-range-ordered force-chain lattices, phononic structure written into a jammed contact network,
+persistently driven jammed order, granular–topological hybrids), expressible in ordinary
+condensed-matter terms — no state requires a genuinely new ordering variable. The strongly AT-
+specific candidate — a phase ordered only in occupancy/actualization variables — has NO observable
+separable from ordinary ordered matter (NP_151: AT re-labels the known state space; NP_157: no new
+ontology), so criterion C is NOT met (SPECULATIVE at best, not a discovery). Criterion A (no unknown
+states) REFUTED. The 8 known organization classes (crystal, glass, liquid, granular, phononic,
+metamaterial, topological, force-chain) are all deliberately engineered; every AT ordering axis
+(coherence, phase alignment, force-chain order, resonance locking, occupancy/actualization ordering)
+has a known physics home (superconductors/BECs/phase-locked arrays; granular force chains; mode-
+locked/synchronized oscillators; defect/contact state space). Ranking (detectability/reversibility/
+stability/energy): force-chain lattice 12 (best unexplored) < fixed-T coherent dial 17 (known,
+NP_132/140). Resonance CAN move a material between organization states without chemistry change,
+reversibly sub-damage (NP_155/156), magnitude bounded by the small fixed-T dial (NP_140). Success
+criterion: B (plausible-but-unexplored) — not C. Classification: known-state inventory CORRESPON-
+DENCE; unexplored combinations EMERGENT (from known axes); AT-only organization phase SPECULATIVE;
+"no unknown states" REFUTED; "organization is a new ontology" REFUTED (NP_157). No new primitive;
+canonical AT unchanged.
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-
