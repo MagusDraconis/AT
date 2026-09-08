@@ -270,6 +270,9 @@
 | ResearchY-M_008 | Measurement Prediction Audit | `M_Measurement/ResearchY-M_008.md` | `AT.Tests/ResearchY/M_Measurement/Y_M_008_Tests.cs` (6/6 ✅) | COMPLETE |
 | ResearchY-M_009 | Measurement Prediction Discriminator Audit | `M_Measurement/ResearchY-M_009.md` | `AT.Tests/ResearchY/M_Measurement/Y_M_009_Tests.cs` (6/6 ✅) | COMPLETE |
 | ResearchY-M_010 | Discrete Phase Lattice Audit | `M_Measurement/ResearchY-M_010.md` | `AT.Tests/ResearchY/M_Measurement/Y_M_010_Tests.cs` (6/6 ✅) | COMPLETE |
+| ResearchY-M_011 | Effective O(3) Symmetry Audit | `M_Measurement/ResearchY-M_011.md` | `AT.Tests/ResearchY/M_Measurement/Y_M_011_Tests.cs` (10/10 ✅) | COMPLETE |
+| ResearchY-M_012 | Network O(3) Symmetry Audit | `M_Measurement/ResearchY-M_012.md` | `AT.Tests/ResearchY/M_Measurement/Y_M_012_Tests.cs` (11/11 ✅) | COMPLETE |
+| ResearchY-M_013 | Axis-Count Selection Audit | `M_Measurement/ResearchY-M_013.md` | `AT.Tests/ResearchY/M_Measurement/Y_M_013_Tests.cs` (8/8 ✅) | COMPLETE |
 | ResearchY-A_002 | Difference Disturbance | — | — | PLANNED |
 | ResearchY-A_003 | Actualization Propagation | — | — | PLANNED |
 | ResearchY-B_001 | Circular Closure | — | — | PLANNED |

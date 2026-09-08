@@ -29,6 +29,9 @@ ResearchY-R_001  ↔  Y_R_001_Tests.cs     (AT.Tests/ResearchY/R_BoundaryProgram
 ResearchY-M_001  ↔  Y_M_001_Tests.cs     (AT.Tests/ResearchY/M_Measurement/)
 ResearchY-M_009  ↔  Y_M_009_Tests.cs     (AT.Tests/ResearchY/M_Measurement/)
 ResearchY-M_010  ↔  Y_M_010_Tests.cs     (AT.Tests/ResearchY/M_Measurement/)
+ResearchY-M_011  ↔  Y_M_011_Tests.cs     (AT.Tests/ResearchY/M_Measurement/)
+ResearchY-M_012  ↔  Y_M_012_Tests.cs     (AT.Tests/ResearchY/M_Measurement/)
+ResearchY-M_013  ↔  Y_M_013_Tests.cs     (AT.Tests/ResearchY/M_Measurement/)
 ResearchY-NP_003  ↔  Y_NP_003_Tests.cs    (AT.Tests/ResearchY/NP_NewPhysics/)
 ResearchY-NP_004  ↔  Y_NP_004_Tests.cs    (AT.Tests/ResearchY/NP_NewPhysics/)
 ResearchY-NP_005  ↔  Y_NP_005_Tests.cs    (AT.Tests/ResearchY/NP_NewPhysics/)
@@ -152,6 +155,9 @@ ResearchY-S_001  ↔  Y_S_001_Tests.cs       (AT.Tests/ResearchY/S_Synthesis/)
 | ResearchY-M_008 (Measurement Prediction Audit) | `AT.Tests/ResearchY/M_Measurement/Y_M_008_Tests.cs` | ACTIVE | 2026-08-30 | ✅ 6/6 PASSED — `Results/Y_M_008_Result.md` |
 | ResearchY-M_009 (Measurement Prediction Discriminator Audit) | `AT.Tests/ResearchY/M_Measurement/Y_M_009_Tests.cs` | ACTIVE | 2026-08-30 | ✅ 6/6 PASSED — `Results/Y_M_009_Result.md` |
 | ResearchY-M_010 (Discrete Phase Lattice Audit) | `AT.Tests/ResearchY/M_Measurement/Y_M_010_Tests.cs` | ACTIVE | 2026-08-30 | ✅ 6/6 PASSED — `Results/Y_M_010_Result.md` |
+| ResearchY-M_011 (Effective O(3) Symmetry Audit) | `AT.Tests/ResearchY/M_Measurement/Y_M_011_Tests.cs` | ACTIVE | 2026-09-08 | ✅ 10/10 PASSED — `Results/Y_M_011_Result.md` |
+| ResearchY-M_012 (Network O(3) Symmetry Audit) | `AT.Tests/ResearchY/M_Measurement/Y_M_012_Tests.cs` | ACTIVE | 2026-09-08 | ✅ 11/11 PASSED — `Results/Y_M_012_Result.md` |
+| ResearchY-M_013 (Axis-Count Selection Audit) | `AT.Tests/ResearchY/M_Measurement/Y_M_013_Tests.cs` | ACTIVE | 2026-09-08 | ✅ 8/8 PASSED — `Results/Y_M_013_Result.md` |
 | ResearchY-NP_003 (Manipulation Lever Audit) | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_003_Tests.cs` | ACTIVE | 2026-08-30 | ✅ 6/6 PASSED — `Results/Y_NP_003_Result.md` |
 | ResearchY-NP_004 (Phase Coupling Audit) | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_004_Tests.cs` | ACTIVE | 2026-08-30 | ✅ 6/6 PASSED — `Results/Y_NP_004_Result.md` |
 | ResearchY-NP_005 (Missing Synchronization Mechanism Audit) | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_005_Tests.cs` | ACTIVE | 2026-08-30 | ✅ 7/7 PASSED — `Results/Y_NP_005_Result.md` |

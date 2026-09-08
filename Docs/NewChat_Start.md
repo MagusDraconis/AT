@@ -5352,6 +5352,75 @@ time-parameter is a structural PREDICTION; NOTHING FALSIFIED. PREDICTION STRENGT
 structural — AT-P042 remains the first uniquely-AT measurement prediction, but its
 observable content coincides with continuous QM at every accessible time (experimental
 discriminator sub-tick, in-principle only). No new primitive; canonical AT unchanged.
+ResearchY-M_011 (Effective O(3) Symmetry Audit, COMPLETE, tests 10/10 PASSED): can an
+effective O(3) symmetry emerge from D96 actualization dynamics? Verdict: NO exact
+effective O(3). Aut(C96(±1..±6)) = D₉₆ (dihedral, order 192 = ⟨r,s⟩; irreps 4 × 1D + 47 ×
+2D, no irrep of dimension ≥ 3; the only multiplier stabilizing S = {±1..±6} is a = ±1;
+φ(96) = 32 units act within gcd classes, NP_023). The spectrum (λ_k = Σ_s
+2(1−cos(2πks/96))) has 95 positive modes, 44 distinct eigenvalues, multiplicities {2×42,
+5, 6} (mirror doublets + octave 5-fold λ=12 and 6-fold λ=14), mirror λ_k = λ_{96−k}
+exact — NOT a 2l+1 ladder. Spherical-harmonic degeneracies (2l+1 = 1,3,5,7,…) intersect
+the D96 multiplicity set only at {5} (accidental octave coincidence). Shell patterns:
+octave closures [4,8,95] do not match magic numbers / HO closures (only 8 coincides
+trivially). π: the D96 spectrum is algebraic (integer Laplacian); π (transcendental)
+never appears as a value — only its role can emerge (B_002). Horizon area: S ∝ A
+structure EMERGENT (QG185); the exact Bekenstein quarter 1/4 is REFUTED (requires the
+imported 2π quantum factor, QG196). Nuclear closures: magic numbers NOT reproduced —
+confirms NP_087/089 and NP_109's weakest-link verdict. CLASSIFICATION: Aut = D₉₆ and the
+degeneracy structure DERIVED; exact O(3)/2l+1 sectors, spherical-harmonic tower, shell
+patterns, π value, exact 1/4, nuclear closures REFUTED; leading-order large-scale
+isotropy (approximate O(3)) EMERGENT (NP_089, unchanged). No reclassification of prior
+audits; no new primitive; canonical AT unchanged.
+
+ResearchY-M_012 (Network O(3) Symmetry Audit, COMPLETE, tests 11/11 PASSED): can
+effective O(3), spherical symmetry, or shell degeneracies emerge from a NETWORK of coupled
+D96 systems (single-ring verdict M_011 = NO)? Verdict: EMERGENT for the genuine 3D
+(vector/p-wave, l = 1) sector; REFUTED for exact O(3) and every higher spherical
+observable. The 3-ring triad D96⊗D96⊗D96 (cubic lattice) has axis point group O_h (order
+48; irreps {1,1,2,3,3,1,1,2,3,3}, Σd² = 48, 10 classes = 10 irreps) whose defining rep
+on ℝ³ is irreducible (⟨χ,χ⟩ = 1) — a genuine 3D sector exists, absent from the single
+ring (max irrep dim 2). Spherical-harmonic subduction to O_h keeps l = 0 (1) and l = 1
+(3, T₁u) fully degenerate; character norms² = 1,1,2,3,4 for l = 0..4 (l=2 → 2+3, l=3 →
+1+3+3 split). Joint spectrum (λ_a+λ_b+λ_c): 16,080 distinct levels over 96³ states;
+first-excited degeneracy 6 = {±x̂,±ŷ,±ẑ} (O_h orbit); no (2l+1) ladder beyond l=1. The
+p-triplet 3 = 2l+1 (l=1) is the only exact odd spherical sector (no O_h irrep of dim
+5/7). Shells/magic numbers NOT reproduced (only s,p survive octahedral symmetry). π: the
+joint spectrum is algebraic (sums of algebraic λ_k); no joint level equals π/2π/4π/3
+(min |E−π| = 0.095); role EMERGENT (Weyl/lattice-point counting), value BOUNDARY.
+Horizon: S ∝ A structure EMERGENT (QG185); exact quarter 1/4 REFUTED (needs imported 2π,
+QG196). Critical answers: 3 coupled D96 → genuine 3D (p/vector) rep: YES (EMERGENT);
+exact O(3) only in the approximate a→0 limit: REFUTED; spherical harmonics as collective
+modes: only l=0,1; π from network topology: no value, role only. CLASSIFICATION: Aut
+content (D96³⋊S₃, 42,467,328) and O_h irreps DERIVED; genuine 3D p/vector sector
+EMERGENT; p-triplet (l=1 → T₁u) DERIVED; exact O(3), full 2l+1 ladder, d/f/g
+degeneracies, shells/magic numbers, π value, exact 1/4 REFUTED; π role EMERGENT. M_011's
+single-ring NO is confirmed, not reclassified; no prior-audit reclassification; no new
+primitive; canonical AT unchanged.
+
+ResearchY-M_013 (Axis-Count Selection Audit, COMPLETE, tests 8/8 PASSED): why does
+Actualization select exactly 3 coupled D96 axes — is 3 unique or merely sufficient?
+Verdict: MERELY SUFFICIENT as a hosted value — the exact axis count 3 is NOT dynamically
+forced; UNIQUE in exactly one derived sense: rotation self-duality d(d−1)/2 = d ⇒ d = 3
+(so(3) ≅ ℝ³; only in 3 axes do rotation generators form a vector of the same dimension
+as the space). VERIFIED across 2/3/4/N coupled D96: point groups B_d = 2^d·d! (orders 2,
+8, 48, 384 — no distinguished member); D₄ (d=2) max irrep dim 2 — no genuine 3D irrep;
+O_h (d=3) has genuine 3D irreps; the defining/coordinate rep of B_d is irreducible of
+dimension d (verified d=2..5), so the observed 3-component spatial vector needs d = 3;
+INFORMATION d·log₂95 = 6.57, 13.14, 19.71, 26.28 bits is strictly additive per axis (no
+extremum at 3); FAMILY count 3 is a single-ring span-window [4,8) quantity (D_020)
+DECOUPLED from the axis count (NP_037: value-equality 3 = 3 is not identity; family-3 ≠
+axis-3); SPECTRAL efficiency: DOS p = d identity (lattice-ball exponents 0.97, 1.95, 2.92
+for d=1,2,3); distinct joint levels 44, 987, 22,562, 338,413 with ratio 0.46 → 0.11 →
+0.026 → 0.0042 monotone (no extremum at 3). Gravity binds only d ≥ 3 (QG197 (d−2) factor;
+removing the exact value 3 breaks nothing, NP_037). CLASSIFICATION: point groups B_d and
+DOS p = d DERIVED; rotation self-duality d(d−1)/2 = d ⇒ d = 3 DERIVED (unique solution);
+axis count 3 as a dynamically forced value REFUTED (no internal selector); information/
+family/spectral-efficiency extremum at 3 REFUTED; axis-3 = family-3 REFUTED (NP_037);
+exact value 3 as hosted spatial dimension CORRESPONDENCE (NP_036/037 unchanged); genuine
+3D p/vector sector at d = 3 EMERGENT (M_012, unchanged). M_013 separates "why the coupled
+construction can host the observed 3D world" (merely sufficient, CORRESPONDENCE) from "why
+the hosted dimension is 3" (unique only via the self-duality identity, DERIVED). No
+reclassification of NP_036/037/M_011/M_012; no new primitive; canonical AT unchanged.
 
 ### PRED001: Prediction Registry (standalone Zenodo publication)
 
