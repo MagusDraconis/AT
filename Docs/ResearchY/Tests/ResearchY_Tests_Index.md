@@ -33,6 +33,7 @@ ResearchY-M_011  ↔  Y_M_011_Tests.cs     (AT.Tests/ResearchY/M_Measurement/)
 ResearchY-M_012  ↔  Y_M_012_Tests.cs     (AT.Tests/ResearchY/M_Measurement/)
 ResearchY-M_013  ↔  Y_M_013_Tests.cs     (AT.Tests/ResearchY/M_Measurement/)
 ResearchY-M_014  ↔  Y_M_014_Tests.cs     (AT.Tests/ResearchY/M_Measurement/)
+ResearchY-M_015  ↔  Y_M_015_Tests.cs     (AT.Tests/ResearchY/M_Measurement/)
 ResearchY-NP_003  ↔  Y_NP_003_Tests.cs    (AT.Tests/ResearchY/NP_NewPhysics/)
 ResearchY-NP_004  ↔  Y_NP_004_Tests.cs    (AT.Tests/ResearchY/NP_NewPhysics/)
 ResearchY-NP_005  ↔  Y_NP_005_Tests.cs    (AT.Tests/ResearchY/NP_NewPhysics/)
@@ -160,6 +161,7 @@ ResearchY-S_001  ↔  Y_S_001_Tests.cs       (AT.Tests/ResearchY/S_Synthesis/)
 | ResearchY-M_012 (Network O(3) Symmetry Audit) | `AT.Tests/ResearchY/M_Measurement/Y_M_012_Tests.cs` | ACTIVE | 2026-09-08 | ✅ 11/11 PASSED — `Results/Y_M_012_Result.md` |
 | ResearchY-M_013 (Axis-Count Selection Audit) | `AT.Tests/ResearchY/M_Measurement/Y_M_013_Tests.cs` | ACTIVE | 2026-09-08 | ✅ 8/8 PASSED — `Results/Y_M_013_Result.md` |
 | ResearchY-M_014 (Automatic Ring-Size Rank Scan Audit) | `AT.Tests/ResearchY/M_Measurement/Y_M_014_Tests.cs` | ACTIVE | 2026-09-08 | ✅ 503/503 PASSED — `Results/Y_M_014_Result.md` |
+| ResearchY-M_015 (Score-Function Robustness Audit) | `AT.Tests/ResearchY/M_Measurement/Y_M_015_Tests.cs` | ACTIVE | 2026-09-08 | ✅ 32/32 PASSED — `Results/Y_M_015_Result.md` |
 | ResearchY-NP_003 (Manipulation Lever Audit) | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_003_Tests.cs` | ACTIVE | 2026-08-30 | ✅ 6/6 PASSED — `Results/Y_NP_003_Result.md` |
 | ResearchY-NP_004 (Phase Coupling Audit) | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_004_Tests.cs` | ACTIVE | 2026-08-30 | ✅ 6/6 PASSED — `Results/Y_NP_004_Result.md` |
 | ResearchY-NP_005 (Missing Synchronization Mechanism Audit) | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_005_Tests.cs` | ACTIVE | 2026-08-30 | ✅ 7/7 PASSED — `Results/Y_NP_005_Result.md` |

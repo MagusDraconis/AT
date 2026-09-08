@@ -5444,6 +5444,35 @@ confirms D_029/D_030/D_031 without any manual candidate selection — the D96 se
 not an artifact of the earlier manual windows/ladders. No reclassification of prior
 audits; no new primitive; canonical AT unchanged.
 
+ResearchY-M_015 (Score-Function Robustness Audit, COMPLETE, tests 32/32 PASSED — 26
+scenario theories + 6 facts): is the M_014 result (N=96 unique Score-4 maximizer over
+N=16..512) an artifact of the score function's precise form? For each criterion of
+Score(N) = [0 unpaired] + [3 families ∧ span < 8] + [6|N] + [N = 3·2^k] M_015 removes
+it, value-perturbs it, and threshold-perturbs it (±5/±10/±20%), recomputing the FULL
+rank table over all 497 rings per variant (26 variants, no manual selection). Verdict:
+ROBUST. Winner stability: 96 ∈ argmax at rank 1 in 24/26 variants — every removal
+(remove A/C leaves {96} unique; remove B admits the 5 rungs {24,48,96,192,384}; remove
+D the 11 zero-defect rings {60..120}) and every value/threshold perturbation that keeps
+the physical family-3 requirement. The only two variants that displace 96 are the
+family-req → 2 and → 4 re-targets, which change B into a DIFFERENT physical requirement
+and select the family-2 rung 48 / family-4 rung 192 — a question change, not a
+robustness failure. N=96 is the UNIQUE top in 16/26 variants and in ALL ±5/±10%
+threshold variants (U ∈ [7.2,8.8], pairing ≤ 2, divisors 4/8/12 dividing 96, rung tol
+≤ 0.08 oct). Score stability: Score(96) ∈ {4,3} in every variant (4 in 17, 3 in 9 =
+removals + razor drops); never below 3, never beaten. Razor edges (uniqueness only):
+window upper edge U must stay > span(96) = 6.4025 — the exact razor is −19.97% (U=6.40
+at −20% just excludes 96 → 11-ring tie at score 3, 96 still in it); rung tolerance ≥
+0.10 octaves admits {90, 96, 102}; the divisor must divide 96 (5/7 break uniqueness,
+96 stays in the argmax). CLASSIFICATION: perturbation protocol (remove/perturb
+value/±5,10,20% threshold) DERIVED (method, fixed before scan); full rank recomputation
+per variant DERIVED (no manual selection); winner stability 24/26 with rank-1 in all
+argmax variants DERIVED; score stability Score(96) ∈ {3,4}, never beaten DERIVED; razor
+thresholds (U > 6.4025, rung tol < 0.10 oct, divisor | 96) DERIVED; overall ROBUST
+verdict DERIVED; M_014 unique-maximizer result confirmed, not reclassified. M_015 shows
+the D96 selection is not an artifact of the score function's exact thresholds — N=96
+survives every reasonable perturbation of the M_014 score. No reclassification of prior
+audits; no new primitive; canonical AT unchanged.
+
 ### PRED001: Prediction Registry (standalone Zenodo publication)
 
 Summary:

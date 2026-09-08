@@ -274,6 +274,7 @@
 | ResearchY-M_012 | Network O(3) Symmetry Audit | `M_Measurement/ResearchY-M_012.md` | `AT.Tests/ResearchY/M_Measurement/Y_M_012_Tests.cs` (11/11 ✅) | COMPLETE |
 | ResearchY-M_013 | Axis-Count Selection Audit | `M_Measurement/ResearchY-M_013.md` | `AT.Tests/ResearchY/M_Measurement/Y_M_013_Tests.cs` (8/8 ✅) | COMPLETE |
 | ResearchY-M_014 | Automatic Ring-Size Rank Scan Audit | `M_Measurement/ResearchY-M_014.md` | `AT.Tests/ResearchY/M_Measurement/Y_M_014_Tests.cs` (503/503 ✅) | COMPLETE |
+| ResearchY-M_015 | Score-Function Robustness Audit | `M_Measurement/ResearchY-M_015.md` | `AT.Tests/ResearchY/M_Measurement/Y_M_015_Tests.cs` (32/32 ✅) | COMPLETE |
 | ResearchY-A_002 | Difference Disturbance | — | — | PLANNED |
 | ResearchY-A_003 | Actualization Propagation | — | — | PLANNED |
 | ResearchY-B_001 | Circular Closure | — | — | PLANNED |
