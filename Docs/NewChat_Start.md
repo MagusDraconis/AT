@@ -2302,6 +2302,22 @@ saturate to a finite, D96-compressed species count (T_007) — innovation is bou
 resources, completing the information-ecology arc as a dynamical layer beyond the
 eigenmode spectrum. No new primitive; canonical AT unchanged.
 
+ResearchY-T_008 (Asymptotic Diversity Limit Audit, COMPLETE, tests 8/8 PASSED): what
+DETERMINES the saturated species count S∞ (from T_007)? Sweep μ, β, A, fitness variance,
+spectral rigidity of the T_007 replicator–mutator. SCALING LAW: S∞ = min(A, N_fit(μ, β, {w}))
+— a mutation–selection balance bounded by the landscape ceiling A. DERIVED laws (all
+verified): 1 ≤ S∞ ≤ A; ∂S∞/∂μ ≥ 0 (μ 0.0001→0.5: S∞ 3,3,5,6,9); ∂S∞/∂β ≥ 0 (β 0→10: S∞
+4,4,4,5,5,7 — crowding LEVELS the field, distinct from T_007's open-landscape carrying
+capacity); μ=0 ⇒ S∞=1 (pure selection) while any μ>0 re-seeds S₀⁺>1; ∂S∞/∂A ≈ 0 (circulant
+A 20→188 but S∞ ≈ 4–5, saturating). EMERGENT: the functional form F(μ, β, {w}) and its
+coefficients. REFUTED: "S∞ is set by A alone"; "rigidity alone determines S∞" (D96-3D more
+rigid 0.875 than D96 0.542 yet more survivors 9 vs 5); "variance alone determines S∞"
+(D96-3D var 1.311 vs unphysical 1.083 yet 9 vs 3 survivors, A ceiling 12 vs 3). T-PROGRAM
+ARC (T_001-T_008): spectral structure compresses (T_005) → Darwinian selection dominates
+(T_006) → mutation + resource constraint bound innovation to a finite count (T_007) → and
+that count is a mutation–selection balance min(A, N_fit(μ,β,{w})) whose monotonicities are
+derived but whose value is emergent (T_008). No new primitive; canonical AT unchanged.
+
 ResearchY-QG_012 (Distinguishability Cosmology Audit, COMPLETE, tests 6/6 PASSED): is
 ΩΛ uniquely privileged, or does distinguishability generate additional cosmological
 observables? Verdict: ΩΛ is PRIVILEGED BUT NOT UNIQUE — distinguishability generates a
