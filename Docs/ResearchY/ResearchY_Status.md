@@ -271,6 +271,7 @@
 | ResearchY-T_008 | Asymptotic Diversity Limit Audit (scaling law) | `T_SpectralBlueprint/ResearchY-T_008.md` | `AT.Tests/ResearchY/T_SpectralBlueprint/Y_T_008_Tests.cs` (8/8 ✅) | COMPLETE |
 | ResearchY-T_009 | Fitness-Reach Law Audit (analytical N_fit) | `T_SpectralBlueprint/ResearchY-T_009.md` | `AT.Tests/ResearchY/T_SpectralBlueprint/Y_T_009_Tests.cs` (6/6 ✅) | COMPLETE |
 | ResearchY-T_010 | D96 Survivor Compression Audit (why ~5 vs ~17) | `T_SpectralBlueprint/ResearchY-T_010.md` | `AT.Tests/ResearchY/T_SpectralBlueprint/Y_T_010_Tests.cs` (6/6 ✅) | COMPLETE |
+| ResearchY-T_011 | Species Ceiling Audit (~19 species from D96?) | `T_SpectralBlueprint/ResearchY-T_011.md` | `AT.Tests/ResearchY/T_SpectralBlueprint/Y_T_011_Tests.cs` (6/6 ✅) | COMPLETE |
 | ResearchY-M_001 | Measurement Origin Audit | `M_Measurement/ResearchY-M_001.md` | `AT.Tests/ResearchY/M_Measurement/Y_M_001_Tests.cs` (7/7 ✅) | COMPLETE |
 | ResearchY-M_002 | Measurement Disturbance Audit | `M_Measurement/ResearchY-M_002.md` | `AT.Tests/ResearchY/M_Measurement/Y_M_002_Tests.cs` (7/7 ✅) | COMPLETE |
 | ResearchY-M_003 | Measurement Feedback Audit | `M_Measurement/ResearchY-M_003.md` | `AT.Tests/ResearchY/M_Measurement/Y_M_003_Tests.cs` (5/5 ✅) | COMPLETE |

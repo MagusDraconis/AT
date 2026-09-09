@@ -2351,6 +2351,21 @@ whose N_fit is exactly solvable at μ=0/β=0 (T_009) → and the D96 survivor co
 explained quantitatively by the sparse circulant spectrum near λ₂ (T_010). No new primitive;
 canonical AT unchanged.
 
+ResearchY-T_011 (Species Ceiling Audit, COMPLETE, tests 6/6 PASSED): can the legacy AT-138/139
+value (~19 stable species) emerge naturally from D96? Verdict: REFUTED. Four population measures
+(transient peak, cumulative ever-alive, survivor S∞, turnover; uniform + fittest-init discovery):
+D96 survivor = 5 and discovery cumulative = 5 (μ=0.01, β=1); the value ~19 is nearest the RANDOM
+landscape (survivor 17, cumulative discovery 18), not D96. Mutation sweep (D96, β=1): S∞ = 3, 5,
+6, 8, 9, 11, 13 at μ = 0.001..0.95 — never 19 short of the degenerate μ→1 uniform limit (S∞→A=44).
+Classification: D96 species ceiling DERIVED (S∞ = min(A, N_fit) ≈ 5, T_008/T_009/T_010);
+"~19 emerges naturally from D96" REFUTED; the legacy ~19 traces to a DIFFERENT model (Θ-field
+pattern novelty, AT-138/139), nearest the random/near-degenerate spectrum (17–18). T-PROGRAM ARC
+(T_001-T_011): spectral structure compresses (T_005) → Darwinian selection dominates (T_006) →
+mutation + resource constraint bound innovation (T_007) → S∞ is a mutation–selection balance
+(T_008) → N_fit exactly solvable at μ=0/β=0 (T_009) → D96 compression explained by the sparse
+spectrum (T_010) → and the ~19-species legacy value does NOT trace to D96 but to a random-like
+landscape (T_011). No new primitive; canonical AT unchanged.
+
 ResearchY-QG_012 (Distinguishability Cosmology Audit, COMPLETE, tests 6/6 PASSED): is
 ΩΛ uniquely privileged, or does distinguishability generate additional cosmological
 observables? Verdict: ΩΛ is PRIVILEGED BUT NOT UNIQUE — distinguishability generates a

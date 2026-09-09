@@ -15,7 +15,9 @@ public sealed record InnovationResult(
     double FinalDiversity,      // exp(H) = effective number of species
     double FinalDominance,      // max x_i at the end
     int[] Survivors,            // sorted mode indices with x_i > threshold at saturation
-    string Verdict);            // BOUNDED / UNBOUNDED / CONDITIONAL
+    string Verdict,             // BOUNDED / UNBOUNDED / CONDITIONAL
+    int MaxAliveSpecies,        // transient: peak number of simultaneously-alive species during the run
+    int CumulativeSpecies);     // distinct modes ever above threshold during the run
 
 /// <summary>
 /// Bounded Innovation Audit. Tests whether Darwinian evolution on a spectral landscape
@@ -54,10 +56,11 @@ public static class BoundedInnovationAnalyzer
         double[,] adjacency,
         int steps = DefaultSteps,
         double mutationRate = DefaultMutationRate,
-        double crowding = DefaultCrowding)
+        double crowding = DefaultCrowding,
+        bool startFromFittest = false)
     {
         var (distinct, mult) = AttractorDominanceAnalyzer.Eigenspaces(adjacency);
-        return Evolve(model, distinct, mult, steps, mutationRate, crowding);
+        return Evolve(model, distinct, mult, steps, mutationRate, crowding, startFromFittest);
     }
 
     public static InnovationResult RunSpectrum(
@@ -65,11 +68,12 @@ public static class BoundedInnovationAnalyzer
         double[] spectrum,
         int steps = DefaultSteps,
         double mutationRate = DefaultMutationRate,
-        double crowding = DefaultCrowding)
+        double crowding = DefaultCrowding,
+        bool startFromFittest = false)
     {
         var sorted = spectrum.OrderBy(x => x).ToArray();
         var (distinct, mult) = AttractorDominanceAnalyzer.GroupSpectrum(sorted);
-        return Evolve(model, distinct, mult, steps, mutationRate, crowding);
+        return Evolve(model, distinct, mult, steps, mutationRate, crowding, startFromFittest);
     }
 
     private static InnovationResult Evolve(
@@ -78,7 +82,8 @@ public static class BoundedInnovationAnalyzer
         int[] mult,
         int steps,
         double mutationRate,
-        double crowding)
+        double crowding,
+        bool startFromFittest)
     {
         // Non-zero modes only — the uniform (zero) mode is the trivial, structureless attractor.
         var ids = new List<int>();
@@ -88,7 +93,7 @@ public static class BoundedInnovationAnalyzer
         int A = ids.Count;
         if (A == 0)
             return new InnovationResult(model, 0, 0, 0, 0, 0.0, -1, 0.0, 0.0, 0.0,
-                Array.Empty<int>(), "BOUNDED");
+                Array.Empty<int>(), "BOUNDED", 0, 0);
 
         var w = new double[A];
         for (int k = 0; k < A; k++)
@@ -98,12 +103,21 @@ public static class BoundedInnovationAnalyzer
         double beta = crowding;
         double eps = DefaultExtinctionThreshold;
 
+        int bestIdx = 0;
+        for (int k = 1; k < A; k++)
+            if (w[k] > w[bestIdx]) bestIdx = k;
+
         var x = new double[A];
-        for (int k = 0; k < A; k++) x[k] = 1.0 / A;   // uniform initial distribution
+        if (startFromFittest)
+            x[bestIdx] = 1.0;                       // discovery mode: begin at a single fittest species
+        else
+            for (int k = 0; k < A; k++) x[k] = 1.0 / A;   // uniform initial distribution
 
         var alive = new bool[A];
         var prevAlive = new bool[A];
-        for (int k = 0; k < A; k++) alive[k] = x[k] > eps;
+        var everAlive = new bool[A];
+        for (int k = 0; k < A; k++) { alive[k] = x[k] > eps; everAlive[k] = alive[k]; }
+        int maxAlive = alive.Count(a => a);
 
         int extinctions = 0, colonizations = 0;
         int saturationTime = -1;
@@ -154,8 +168,11 @@ public static class BoundedInnovationAnalyzer
                 if (!alive[k] && prevAlive[k]) extinctions++;
             }
 
-            // Saturation: first step of a run of `PlateauWindow` flat species-count values.
             int speciesNow = alive.Count(a => a);
+            maxAlive = Math.Max(maxAlive, speciesNow);
+            for (int k = 0; k < A; k++) if (alive[k]) everAlive[k] = true;
+
+            // Saturation: first step of a run of `PlateauWindow` flat species-count values.
             plateau.Enqueue(speciesNow);
             if (plateau.Count > PlateauWindow) plateau.Dequeue();
             if (saturationTime < 0 && plateau.Count == PlateauWindow &&
@@ -171,11 +188,13 @@ public static class BoundedInnovationAnalyzer
         int finalSpecies = alive.Count(a => a);
         double turnover = steps > 0 ? (double)(extinctions + colonizations) / steps : 0.0;
         int[] survivors = Enumerable.Range(0, A).Where(k => x[k] > eps).ToArray();
+        int cumulative = everAlive.Count(e => e);
 
         string verdict = saturationTime >= 0 ? "BOUNDED" : "UNBOUNDED";
 
         return new InnovationResult(model, A, finalSpecies, extinctions, colonizations,
-            turnover, saturationTime, h, Math.Exp(h), finalDominance, survivors, verdict);
+            turnover, saturationTime, h, Math.Exp(h), finalDominance, survivors, verdict,
+            maxAlive, cumulative);
     }
 
     /// <summary>

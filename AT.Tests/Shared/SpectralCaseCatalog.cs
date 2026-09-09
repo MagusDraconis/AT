@@ -71,7 +71,16 @@ public static class SpectralCaseCatalog
     public static SpectralCase[] All() => [D96(), D963D(), Random(), Physical(), Unphysical()];
 
     public static int SInfinity(SpectralCase c, double mu, double beta, int steps = BoundedInnovationAnalyzer.DefaultSteps)
+        => RunCase(c, mu, beta, steps, false).FinalSpecies;
+
+    /// <summary>Full replicator–mutator result for a case (with optional discovery-mode init).</summary>
+    public static InnovationResult RunCase(
+        SpectralCase c,
+        double mu,
+        double beta,
+        int steps = BoundedInnovationAnalyzer.DefaultSteps,
+        bool startFromFittest = false)
         => c.Adjacency != null
-            ? BoundedInnovationAnalyzer.Run(c.Name, c.Adjacency(), steps, mutationRate: mu, crowding: beta).FinalSpecies
-            : BoundedInnovationAnalyzer.RunSpectrum(c.Name, c.Spectrum(), steps, mutationRate: mu, crowding: beta).FinalSpecies;
+            ? BoundedInnovationAnalyzer.Run(c.Name, c.Adjacency(), steps, mutationRate: mu, crowding: beta, startFromFittest: startFromFittest)
+            : BoundedInnovationAnalyzer.RunSpectrum(c.Name, c.Spectrum(), steps, mutationRate: mu, crowding: beta, startFromFittest: startFromFittest);
 }
