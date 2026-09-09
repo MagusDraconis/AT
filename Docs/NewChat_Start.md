@@ -2366,6 +2366,21 @@ mutation + resource constraint bound innovation (T_007) → S∞ is a mutation�
 spectrum (T_010) → and the ~19-species legacy value does NOT trace to D96 but to a random-like
 landscape (T_011). No new primitive; canonical AT unchanged.
 
+ResearchY-T_012 (Origin of 19 Audit, COMPLETE, tests 6/6 PASSED): can the historical ~19-species
+count emerge from D96^3 (cubic D96⊗D96⊗D96, NP_037/NP_088) rather than D96? Verdict: D96^3 gets
+CLOSER but does not nail it. The cubic tensor spectrum (884,736 modes over 20,811 distinct
+non-zero eigenvalues) gives S∞=16 (μ=0.01, β=1) — vs D96's 5 and random's 17. Sector splitting
+(axis count): 1-axis 5, 2-axis 5, 3-axis 21. Oh irreps (permutation orbit): A({a,a,a}) 5,
+T(two-equal) 6, G(distinct) 31. Cumulative discovery (fittest-init) = 8. Distance from 19: D96 14,
+D96^3 3, random 2 — random remains nearest. Classification: D96^3 spectrum + S∞=16 DERIVED (3D
+DOS raise 5→16 via T_008/T_009); 16 within ±5 of 19 CORRESPONDENCE (legacy AT-139 tolerance);
+"D96^3 exactly derives 19 without tuning" REFUTED (gives 16, or 21 in the cubic sector). The
+historical ~19 remains ambiguous between D96^3 (16), its cubic sector (21), and a random-like
+landscape (17). T-PROGRAM ARC (T_001-T_012): compression (T_005) → dominance (T_006) → bounded
+innovation (T_007) → S∞ balance (T_008) → solvable N_fit (T_009) → D96 compression (T_010) → ~19
+not from D96 (T_011) → and not exactly from D96^3 either, only a CORRESPONDENCE (T_012). No new
+primitive; canonical AT unchanged.
+
 ResearchY-QG_012 (Distinguishability Cosmology Audit, COMPLETE, tests 6/6 PASSED): is
 ΩΛ uniquely privileged, or does distinguishability generate additional cosmological
 observables? Verdict: ΩΛ is PRIVILEGED BUT NOT UNIQUE — distinguishability generates a

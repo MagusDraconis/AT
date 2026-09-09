@@ -70,6 +70,43 @@ public static class SpectralCaseCatalog
 
     public static SpectralCase[] All() => [D96(), D963D(), Random(), Physical(), Unphysical()];
 
+    /// <summary>
+    /// The D96 ⊗ D96 ⊗ D96 tensor-product (Cartesian) cubic lattice: spectrum is the Minkowski
+    /// sum Λ = λ_i + λ_j + λ_k of three 1D D96 spectra, multiplicity the product of the 1D
+    /// multiplicities (NP_037/NP_088). Fitness w = m/λ. Deterministic; no matrix materialized.
+    /// </summary>
+    public static SpectralCase D96Cubed()
+    {
+        var (distinct, mult) = TensorProductSpectrum96();
+        return new SpectralCase("D96^3", 96 * 96 * 96, NonZeroCount(distinct), FitnessOf(distinct, mult),
+            distinct, mult, null, null);
+    }
+
+    /// <summary>1D D96 spectrum λ_j (j = 0..95), λ_0 = 0, λ_j = λ_{96−j}.</summary>
+    public static double[] D96Spectrum1D()
+        => SpectralBlueprint.CirculantSpectrum(96, 6);
+
+    /// <summary>
+    /// Full D96⊗D96⊗D96 spectrum: distinct eigenvalues (ascending) and their multiplicities.
+    /// Built by a single deterministic pass over the 96³ triples of 1D mode indices.
+    /// </summary>
+    public static (double[] Distinct, int[] Multiplicities) TensorProductSpectrum96()
+    {
+        double[] lam = D96Spectrum1D();
+        var hist = new Dictionary<double, int>();
+        for (int i = 0; i < 96; i++)
+            for (int j = 0; j < 96; j++)
+                for (int k = 0; k < 96; k++)
+                {
+                    double e = lam[i] + lam[j] + lam[k];
+                    hist[e] = hist.TryGetValue(e, out int v) ? v + 1 : 1;
+                }
+        var pairs = hist.OrderBy(p => p.Key).ToArray();
+        double[] distinct = pairs.Select(p => p.Key).ToArray();
+        int[] mult = pairs.Select(p => p.Value).ToArray();
+        return (distinct, mult);
+    }
+
     public static int SInfinity(SpectralCase c, double mu, double beta, int steps = BoundedInnovationAnalyzer.DefaultSteps)
         => RunCase(c, mu, beta, steps, false).FinalSpecies;
 
@@ -82,5 +119,7 @@ public static class SpectralCaseCatalog
         bool startFromFittest = false)
         => c.Adjacency != null
             ? BoundedInnovationAnalyzer.Run(c.Name, c.Adjacency(), steps, mutationRate: mu, crowding: beta, startFromFittest: startFromFittest)
-            : BoundedInnovationAnalyzer.RunSpectrum(c.Name, c.Spectrum(), steps, mutationRate: mu, crowding: beta, startFromFittest: startFromFittest);
+            : c.Spectrum != null
+                ? BoundedInnovationAnalyzer.RunSpectrum(c.Name, c.Spectrum(), steps, mutationRate: mu, crowding: beta, startFromFittest: startFromFittest)
+                : BoundedInnovationAnalyzer.RunDistinct(c.Name, c.Distinct, c.Multiplicities, steps, mutationRate: mu, crowding: beta, startFromFittest: startFromFittest);
 }

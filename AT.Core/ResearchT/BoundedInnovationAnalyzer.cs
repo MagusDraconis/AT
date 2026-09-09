@@ -76,6 +76,23 @@ public static class BoundedInnovationAnalyzer
         return Evolve(model, distinct, mult, steps, mutationRate, crowding, startFromFittest);
     }
 
+    /// <summary>
+    /// Run the replicator–mutator directly on a precomputed (distinct eigenvalue, multiplicity)
+    /// spectrum — used for analytically-built landscapes (e.g. the D96⊗D96⊗D96 tensor product)
+    /// where no explicit adjacency matrix is materialized.
+    /// </summary>
+    public static InnovationResult RunDistinct(
+        string model,
+        double[] distinct,
+        int[] mult,
+        int steps = DefaultSteps,
+        double mutationRate = DefaultMutationRate,
+        double crowding = DefaultCrowding,
+        bool startFromFittest = false)
+    {
+        return Evolve(model, distinct, mult, steps, mutationRate, crowding, startFromFittest);
+    }
+
     private static InnovationResult Evolve(
         string model,
         double[] distinct,
