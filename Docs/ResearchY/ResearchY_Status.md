@@ -269,6 +269,7 @@
 | ResearchY-T_006 | Darwinian Dominance Emergence (replicator competition) | `T_SpectralBlueprint/ResearchY-T_006.md` | `AT.Tests/ResearchY/T_SpectralBlueprint/Y_T_006_Tests.cs` (3/3 ✅) | COMPLETE |
 | ResearchY-T_007 | Bounded Innovation Audit (finite species count) | `T_SpectralBlueprint/ResearchY-T_007.md` | `AT.Tests/ResearchY/T_SpectralBlueprint/Y_T_007_Tests.cs` (7/7 ✅) | COMPLETE |
 | ResearchY-T_008 | Asymptotic Diversity Limit Audit (scaling law) | `T_SpectralBlueprint/ResearchY-T_008.md` | `AT.Tests/ResearchY/T_SpectralBlueprint/Y_T_008_Tests.cs` (8/8 ✅) | COMPLETE |
+| ResearchY-T_009 | Fitness-Reach Law Audit (analytical N_fit) | `T_SpectralBlueprint/ResearchY-T_009.md` | `AT.Tests/ResearchY/T_SpectralBlueprint/Y_T_009_Tests.cs` (6/6 ✅) | COMPLETE |
 | ResearchY-M_001 | Measurement Origin Audit | `M_Measurement/ResearchY-M_001.md` | `AT.Tests/ResearchY/M_Measurement/Y_M_001_Tests.cs` (7/7 ✅) | COMPLETE |
 | ResearchY-M_002 | Measurement Disturbance Audit | `M_Measurement/ResearchY-M_002.md` | `AT.Tests/ResearchY/M_Measurement/Y_M_002_Tests.cs` (7/7 ✅) | COMPLETE |
 | ResearchY-M_003 | Measurement Feedback Audit | `M_Measurement/ResearchY-M_003.md` | `AT.Tests/ResearchY/M_Measurement/Y_M_003_Tests.cs` (5/5 ✅) | COMPLETE |

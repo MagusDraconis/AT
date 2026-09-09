@@ -2318,6 +2318,20 @@ ARC (T_001-T_008): spectral structure compresses (T_005) → Darwinian selection
 that count is a mutation–selection balance min(A, N_fit(μ,β,{w})) whose monotonicities are
 derived but whose value is emergent (T_008). No new primitive; canonical AT unchanged.
 
+ResearchY-T_009 (Fitness-Reach Law Audit, COMPLETE, tests 6/6 PASSED): can N_fit (S∞ =
+min(A, N_fit)) be expressed ANALYTICALLY? Verdict: YES in two exactly-solvable limits, NO in
+general. μ=0 (pure selection + crowding): S∞ = #{w_k > Z*(β)}, Z* the unique root of
+Σ_{w_k>Z}(w_k−Z) = β·Z — EXACT (matches simulation across all cases × β, within the ≤1
+critical-slowing-down lag). β=0 (mutation + selection, no crowding): the map is linear, so S∞
+= #{Perron(M·diag(w)) > ε} — EXACT. Small-μ uniform-gap reach: N_fit ≈ 1 + log(1/ε)/log(2δ/μ),
+δ=Δw/w* — DERIVED form, EMERGENT accuracy (±1–2). REFUTED: "N_fit = F(μ, β, Δw)" with a single
+scalar gap — two spectra with identical Δw=5 but different tails give different N_fit (5 vs 2
+at μ=0, β=10); N_fit depends on the FULL fitness spectrum. T-PROGRAM ARC (T_001-T_009): spectral
+structure compresses (T_005) → Darwinian selection dominates (T_006) → mutation + resource
+constraint bound innovation (T_007) → S∞ is a mutation–selection balance (T_008) → whose N_fit
+is exactly solvable at μ=0/β=0 but not by a single gap (T_009). No new primitive; canonical AT
+unchanged.
+
 ResearchY-QG_012 (Distinguishability Cosmology Audit, COMPLETE, tests 6/6 PASSED): is
 ΩΛ uniquely privileged, or does distinguishability generate additional cosmological
 observables? Verdict: ΩΛ is PRIVILEGED BUT NOT UNIQUE — distinguishability generates a
