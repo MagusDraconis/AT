@@ -2274,13 +2274,33 @@ selection is universal); H3 complete degenerate SUPPORTED (A=1, already dominant
 SUCCESS CRITERION (dominance emerges only after competition) CONFIRMED: D rises 1-33% →
 100% for every model. Classification: replicator→fittest DERIVED; dominance-emerges-after
 competition EMERGENT; "spectral-structure-alone-determines-dominance" REFUTED. T-PROGRAM
-ARC (T_001-T_006) FINAL CONCLUSION: the spectral blueprint, physicality, and rigidity all
+ARC (T_001-T_006) CONCLUSION: the spectral blueprint, physicality, and rigidity all
 flow from D96's circulant structure (T_001-T_004), but attractor DOMINANCE does not —
 T_005 showed bare spectral structure does not dominate (largest basin 6%), and T_006 shows
 the Darwinian selection layer (w=r/c resource competition) is what produces a single
 dominant attractor — resolving the model-dependence question and confirming the
 information-ecology mechanism as a dynamical layer beyond the eigenmode spectrum. No new
 primitive; canonical AT unchanged.
+
+ResearchY-T_007 (Bounded Innovation Audit, COMPLETE, tests 7/7 PASSED): does Darwinian
+evolution (replicator + mutation + extinction + resource constraint) on a spectral
+landscape produce a FINITE species count? Model: replicator–mutator over the non-zero
+Laplacian eigenspaces, fitness w=m/λ, crowding f=w/(1+βx), ring mutation μ→k±1, extinction
+threshold ε=1e-6, μ=0.01 β=1.0 T=20000 (deterministic; random seed 42). RESULTS (A→S∞):
+D96 44→5 (N_eff 1.093, t_sat 7); D96-3D 12→9 (N_eff 2.904); random sparse 95→17
+(N_eff 8.415, t_sat 268); complete 1→1; physical max-sep 48→5; unphysical clustered 3→3.
+CRITICAL ANSWERS: (1) diversity saturates — YES (all reach plateau); (2) saturation
+independent of runtime — YES (S∞/survivors identical at T=20000 & 40000); (3) D96 lower
+asymptotic diversity — YES (S∞ 5 < random 17); (4) finite attractor landscape — YES (fixed
+stable survivor set ≤ A). BOUNDED/UNBOUNDED/CONDITIONAL: finite landscapes BOUNDED;
+open-landscape control UNBOUNDED without carrying capacity, BOUNDED with it (resource
+constraint is the binding bound); saturation value CONDITIONAL on (μ,β,landscape).
+Classification: species-count-bounded DERIVED; saturation value EMERGENT; "mutation drives
+unbounded innovation" REFUTED. T-PROGRAM ARC (T_001-T_007): spectral structure compresses
+(T_005), Darwinian selection dominates (T_006), and mutation + resource constraint still
+saturate to a finite, D96-compressed species count (T_007) — innovation is bounded by
+resources, completing the information-ecology arc as a dynamical layer beyond the
+eigenmode spectrum. No new primitive; canonical AT unchanged.
 
 ResearchY-QG_012 (Distinguishability Cosmology Audit, COMPLETE, tests 6/6 PASSED): is
 ΩΛ uniquely privileged, or does distinguishability generate additional cosmological
