@@ -23,81 +23,16 @@ public class Y_T_009_Tests : ResearchTestBase
 {
     public Y_T_009_Tests(ITestOutputHelper output) : base(output) { }
 
-    private const double Eps = BoundedInnovationAnalyzer.DefaultExtinctionThreshold;
+    private const double Eps = FitnessReachLaw.Eps;
 
-    // ── Analytical predictions ───────────────────────────────────────────────
+    // ── Analytical predictions (shared FitnessReachLaw) ──────────────────────
 
-    /// <summary>Unique root of Σ_{w_k&gt;Z}(w_k − Z) = β·Z in (0, w_max) — the μ=0 crowding threshold.</summary>
-    private static double ThresholdZ(double[] w, double beta)
-    {
-        double lo = 0.0, hi = w.Max();
-        for (int i = 0; i < 200; i++)
-        {
-            double mid = 0.5 * (lo + hi);
-            double g = -beta * mid;
-            foreach (double x in w) if (x > mid) g += x - mid;
-            if (g > 0.0) lo = mid; else hi = mid;
-        }
-        return 0.5 * (lo + hi);
-    }
-
-    /// <summary>Exact μ=0 species count: modes whose abundance (w_k/Z − 1)/β exceeds ε.</summary>
-    private static int PredictedZeroMutation(double[] w, double beta)
-    {
-        double z = ThresholdZ(w, beta);
-        return w.Count(x => x > z * (1.0 + beta * Eps));
-    }
-
-    /// <summary>Perron (dominant) eigenvector of the linear operator M·diag(w) for the β=0 case.</summary>
-    private static double[] PerronVector(double[] w, double mu)
-    {
-        int a = w.Length;
-        var x = Enumerable.Repeat(1.0 / a, a).ToArray();
-        for (int iter = 0; iter < 200000; iter++)
-        {
-            var y = new double[a];
-            for (int i = 0; i < a; i++)
-            {
-                double s = (1.0 - mu) * w[i] * x[i];
-                if (a > 1)
-                {
-                    s += (mu / 2.0) * w[(i - 1 + a) % a] * x[(i - 1 + a) % a];
-                    s += (mu / 2.0) * w[(i + 1) % a] * x[(i + 1) % a];
-                }
-                else s += mu * w[i] * x[i];
-                y[i] = s;
-            }
-            double norm = y.Sum();
-            if (norm <= 0.0) break;
-            double diff = 0.0;
-            for (int i = 0; i < a; i++) { y[i] /= norm; diff += Math.Abs(y[i] - x[i]); }
-            x = y;
-            if (diff < 1e-15) break;
-        }
-        return x;
-    }
-
-    /// <summary>Exact β=0 species count: components of the Perron vector above the extinction threshold.</summary>
-    private static int PredictedLinearEquilibrium(double[] w, double mu)
-        => PerronVector(w, mu).Count(x => x > Eps);
-
-    /// <summary>Top fitness w*, second-distinct fitness, and the relative gap δ = Δw/w*.</summary>
-    private static (double wStar, double wSecond, double delta) TopGap(double[] w)
-    {
-        double[] distinct = w.Distinct().OrderByDescending(x => x).ToArray();
-        double star = distinct[0];
-        double second = distinct.Length > 1 ? distinct[1] : star;
-        return (star, second, star > 0.0 ? (star - second) / star : 0.0);
-    }
-
-    /// <summary>Small-μ uniform-gap reach: N_fit ≈ 1 + log(1/ε)/log(2δ/μ).</summary>
-    private static int PredictedUniformGap(double[] w, double mu)
-    {
-        double delta = TopGap(w).delta;
-        if (delta <= 0.0) return w.Length;
-        double reach = Math.Log(1.0 / Eps) / Math.Log(2.0 * delta / mu);
-        return Math.Max(1, 1 + (int)Math.Floor(reach));
-    }
+    private static double ThresholdZ(double[] w, double beta) => FitnessReachLaw.ThresholdZ(w, beta);
+    private static int PredictedZeroMutation(double[] w, double beta) => FitnessReachLaw.PredictedZeroMutation(w, beta);
+    private static double[] PerronVector(double[] w, double mu) => FitnessReachLaw.PerronVector(w, mu);
+    private static int PredictedLinearEquilibrium(double[] w, double mu) => FitnessReachLaw.PredictedLinearEquilibrium(w, mu);
+    private static (double wStar, double wSecond, double delta) TopGap(double[] w) => FitnessReachLaw.TopGap(w);
+    private static int PredictedUniformGap(double[] w, double mu) => FitnessReachLaw.PredictedUniformGap(w, mu);
 
     // ── 1. μ=0 exact crowding threshold ──────────────────────────────────────
 

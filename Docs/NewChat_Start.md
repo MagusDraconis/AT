@@ -2332,6 +2332,25 @@ constraint bound innovation (T_007) → S∞ is a mutation–selection balance (
 is exactly solvable at μ=0/β=0 but not by a single gap (T_009). No new primitive; canonical AT
 unchanged.
 
+ResearchY-T_010 (D96 Survivor Compression Audit, COMPLETE, tests 6/6 PASSED): why does D96
+saturate near 5 survivors while random near 17? Can S∞ be predicted from spectral structure
+alone? STRUCTURAL MEASURES (μ=0.01, β=1): D96 A=44 S∞=5 conc 0.362 ent 2.90 near-gap(≤2λ₂)=2
+degen 0.542 maxmult 6; random A=95 S∞=17 conc 0.017 ent 4.53 near-gap=71 degen 0.010 maxmult 1;
+D96-3D A=12 S∞=9; physical A=48 S∞=5; unphysical A=3 S∞=3. MECHANISM: D96's circulant symmetry
+collapses 95 non-zero modes into 44 distinct eigenvalues (sparse near λ₂: only 2 modes within
+2λ₂) → PEAKED fitness w=m/λ → ~5 survivors; random's dense near-degenerate spectrum (71 modes
+within 2λ₂) → FLAT fitness → ~17 survivors. PREDICTABILITY: S∞ IS a function of spectral
+structure alone — the β=0 Perron equilibrium S∞=#{Perron(M·diag(w))>ε} reproduces S∞ EXACTLY
+for every case (T_009), and the μ=0 crowding threshold brackets the interior. Classification:
+D96→5 vs random→17 split DERIVED (spectral tail via exact reach laws); precise integer EMERGENT;
+"a single spectral scalar predicts S∞" REFUTED (D96 and physical BOTH give S∞=5 yet differ in
+A 44 vs 48, entropy 2.90 vs 3.16, concentration 0.362 vs 0.225). T-PROGRAM ARC (T_001-T_010):
+spectral structure compresses (T_005) → Darwinian selection dominates (T_006) → mutation +
+resource constraint bound innovation (T_007) → S∞ is a mutation–selection balance (T_008) →
+whose N_fit is exactly solvable at μ=0/β=0 (T_009) → and the D96 survivor compression is
+explained quantitatively by the sparse circulant spectrum near λ₂ (T_010). No new primitive;
+canonical AT unchanged.
+
 ResearchY-QG_012 (Distinguishability Cosmology Audit, COMPLETE, tests 6/6 PASSED): is
 ΩΛ uniquely privileged, or does distinguishability generate additional cosmological
 observables? Verdict: ΩΛ is PRIVILEGED BUT NOT UNIQUE — distinguishability generates a

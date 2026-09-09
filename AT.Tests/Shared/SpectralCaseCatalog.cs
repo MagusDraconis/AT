@@ -8,6 +8,8 @@ public sealed record SpectralCase(
     int N,
     int A,
     double[] Fitness,
+    double[] Distinct,
+    int[] Multiplicities,
     Func<double[,]> Adjacency,
     Func<double[]> Spectrum);
 
@@ -32,21 +34,21 @@ public static class SpectralCaseCatalog
     public static SpectralCase D96()
     {
         var (d, m) = AttractorDominanceAnalyzer.Eigenspaces(AttractorDominanceAnalyzer.D96Ring());
-        return new SpectralCase("D96", 96, NonZeroCount(d), FitnessOf(d, m),
+        return new SpectralCase("D96", 96, NonZeroCount(d), FitnessOf(d, m), d, m,
             () => AttractorDominanceAnalyzer.D96Ring(), null);
     }
 
     public static SpectralCase D963D()
     {
         var (d, m) = AttractorDominanceAnalyzer.Eigenspaces(AttractorDominanceAnalyzer.D963D(4, 4, 6));
-        return new SpectralCase("D96-3D", 96, NonZeroCount(d), FitnessOf(d, m),
+        return new SpectralCase("D96-3D", 96, NonZeroCount(d), FitnessOf(d, m), d, m,
             () => AttractorDominanceAnalyzer.D963D(4, 4, 6), null);
     }
 
     public static SpectralCase Random()
     {
         var (d, m) = AttractorDominanceAnalyzer.Eigenspaces(GeneralInverseSpectrumAnalyzer.RandomSparseGraph(96, 0.3, 42));
-        return new SpectralCase("random", 96, NonZeroCount(d), FitnessOf(d, m),
+        return new SpectralCase("random", 96, NonZeroCount(d), FitnessOf(d, m), d, m,
             () => GeneralInverseSpectrumAnalyzer.RandomSparseGraph(96, 0.3, 42), null);
     }
 
@@ -54,7 +56,7 @@ public static class SpectralCaseCatalog
     {
         var spec = SpectralBlueprint.BuildSymmetric(96, x => (double)x);
         var (d, m) = AttractorDominanceAnalyzer.GroupSpectrum(spec.OrderBy(x => x).ToArray());
-        return new SpectralCase("physical", 96, NonZeroCount(d), FitnessOf(d, m),
+        return new SpectralCase("physical", 96, NonZeroCount(d), FitnessOf(d, m), d, m,
             null, () => SpectralBlueprint.BuildSymmetric(96, x => (double)x));
     }
 
@@ -62,7 +64,7 @@ public static class SpectralCaseCatalog
     {
         var spec = SpectralBlueprint.BuildSymmetric(96, x => x <= 16 ? 5.0 : x <= 32 ? 25.0 : 60.0);
         var (d, m) = AttractorDominanceAnalyzer.GroupSpectrum(spec.OrderBy(x => x).ToArray());
-        return new SpectralCase("unphysical", 96, NonZeroCount(d), FitnessOf(d, m),
+        return new SpectralCase("unphysical", 96, NonZeroCount(d), FitnessOf(d, m), d, m,
             null, () => SpectralBlueprint.BuildSymmetric(96, x => x <= 16 ? 5.0 : x <= 32 ? 25.0 : 60.0));
     }
 
