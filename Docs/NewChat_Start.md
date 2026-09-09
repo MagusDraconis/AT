@@ -2413,6 +2413,28 @@ degeneracy class); "N_gap is universal in k" REFUTED. T-PROGRAM ARC (T_001-T_014
 dominated by A (T_013) → and the near-gap density (which sets S∞ ≈ N_gap) is itself a derived
 exact function of the spectrum (T_014). No new primitive; canonical AT unchanged.
 
+ResearchY-T_015 (Spectral Robustness Audit, COMPLETE, tests 4/4 PASSED): is spectral robustness
+controlled by near-gap density ρ(k) or gap size λ₂? Apply edge-removal/addition/weight-noise
+perturbations to D96 / D96-3D / physical / unphysical / random / complete, measure Δλ₂/λ₂,
+attractor shift ΔA, spectral L2 shift. ROBUSTNESS TABLE (λ₂, m(λ₂), ρ(2), Δλ₂/λ₂, ΔA, spectral,
+degen): D96 (0.386, 2, 0.021, 0.0077, 30, 0.0073, 44); physical (1.0, 2, 0.021, 0.0343, 24,
+0.0376, 47); D96-3D (1.0, 2, 0.042, 0.0446, 8, 0.0255, 11); unphysical (5.0, 32, 0.333, 0.2333,
+2, 0.0505, 3); random (17.19, 1, 0.740, 0.0003, 0, 0.0028, 0); complete (96.0, 95, 0.990, 0.0403,
+1, 0.0041, 1). HYPOTHESES: H1 gap size alone insufficient SUPPORTED (complete λ₂=96 MORE fragile
+0.040 than D96 λ₂=0.386 0.008, yet random λ₂=17.2 MORE robust 0.0003); H2 low ρ predicts
+robustness REFUTED (D96 lowest ρ=0.021 yet largest ΔA=30; complete highest ρ=0.99 yet ΔA=1); H3
+D96 outperforms random REFUTED (random spectral 0.0028 < D96 0.0073). MECHANISM: robustness is
+controlled by the DEGENERACY structure — ΔA counts degenerate eigenvalue levels that split under
+symmetry-breaking (D96 has 44 degenerate levels → ΔA=30; random all-singleton → ΔA=0; complete
+one 95-fold level → ΔA=1, a rank-1 perturbation splits one eigenvalue not 95). Classification:
+ΔA = degenerate-level split count DERIVED (function of multiplicity structure); magnitudes
+EMERGENT; "ρ predicts robustness" (H2), "λ₂ predicts robustness" (H1 implication), "D96 beats
+random" (H3) all REFUTED. T-PROGRAM ARC (T_001-T_015): compression (T_005) → dominance (T_006) →
+bounded innovation (T_007) → S∞ balance (T_008) → solvable N_fit (T_009) → D96 compression (T_010)
+→ ~19 not from D96 (T_011) → nor D96^3 (T_012) → C dominated by A (T_013) → N_gap derived
+(T_014) → and robustness is controlled by degeneracy, not ρ or λ₂ (T_015). No new primitive;
+canonical AT unchanged.
+
 ResearchY-QG_012 (Distinguishability Cosmology Audit, COMPLETE, tests 6/6 PASSED): is
 ΩΛ uniquely privileged, or does distinguishability generate additional cosmological
 observables? Verdict: ΩΛ is PRIVILEGED BUT NOT UNIQUE — distinguishability generates a

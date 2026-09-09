@@ -275,6 +275,7 @@
 | ResearchY-T_012 | Origin of 19 Audit (D96^3 cubic lattice) | `T_SpectralBlueprint/ResearchY-T_012.md` | `AT.Tests/ResearchY/T_SpectralBlueprint/Y_T_012_Tests.cs` (6/6 ✅) | COMPLETE |
 | ResearchY-T_013 | Compression Origin Audit (20811 → 16) | `T_SpectralBlueprint/ResearchY-T_013.md` | `AT.Tests/ResearchY/T_SpectralBlueprint/Y_T_013_Tests.cs` (5/5 ✅) | COMPLETE |
 | ResearchY-T_014 | Near-Gap Density Audit (N_gap = F(spectrum)) | `T_SpectralBlueprint/ResearchY-T_014.md` | `AT.Tests/ResearchY/T_SpectralBlueprint/Y_T_014_Tests.cs` (6/6 ✅) | COMPLETE |
+| ResearchY-T_015 | Spectral Robustness Audit (ρ vs λ₂) | `T_SpectralBlueprint/ResearchY-T_015.md` | `AT.Tests/ResearchY/T_SpectralBlueprint/Y_T_015_Tests.cs` (4/4 ✅) | COMPLETE |
 | ResearchY-M_001 | Measurement Origin Audit | `M_Measurement/ResearchY-M_001.md` | `AT.Tests/ResearchY/M_Measurement/Y_M_001_Tests.cs` (7/7 ✅) | COMPLETE |
 | ResearchY-M_002 | Measurement Disturbance Audit | `M_Measurement/ResearchY-M_002.md` | `AT.Tests/ResearchY/M_Measurement/Y_M_002_Tests.cs` (7/7 ✅) | COMPLETE |
 | ResearchY-M_003 | Measurement Feedback Audit | `M_Measurement/ResearchY-M_003.md` | `AT.Tests/ResearchY/M_Measurement/Y_M_003_Tests.cs` (5/5 ✅) | COMPLETE |
