@@ -2398,6 +2398,21 @@ solvable N_fit (T_009) → D96 compression (T_010) → ~19 not from D96 (T_011) 
 D96^3 (T_012) → and the compression ratio C is dominated by landscape size A, not fitness
 peakedness (T_013). No new primitive; canonical AT unchanged.
 
+ResearchY-T_014 (Near-Gap Density Audit, COMPLETE, tests 6/6 PASSED): what determines the
+near-gap mode count N_gap(k) = #{λ ≤ kλ₂}? NEAR-GAP DENSITY (modes|distinct, λ₂, k=1.5/2/3/4):
+D96 (λ₂=0.3864) 2|1, 2|1, 2|1, 4|2 (gap mult 2); D96^3 (λ₂=0.3864) 6|1, 18|2, 26|3, 32|4 (gap
+mult 6, octahedral staircase 6+12+8+6); random (λ₂=17.19) 31|31, 71|71, 95|95, 95|95 (gap mult
+1); physical (λ₂=1.0) 2|1, 4|2, 6|3, 8|4 (gap mult 2); unphysical (λ₂=5.0) 32|1 ×4 (gap mult 32,
+32-fold-degenerate plateau). DIMENSION SCALING (Weyl law): D96 N_gap(4)/N_gap(1)=2.00 (∝k^1/2,
+1D quadratic); D96^3 = 5.33 (∝k^3/2, 3D cubic DOS). Classification: N_gap(k)=Σ_{λ≤kλ₂}m(λ)
+DERIVED (exact counting); N_gap(1)=degeneracy of λ₂ DERIVED (symmetry class); k-growth follows
+the Weyl law (tensor-product dimension) DERIVED; magnitudes (2/6/32/71) EMERGENT (symmetry/
+degeneracy class); "N_gap is universal in k" REFUTED. T-PROGRAM ARC (T_001-T_014): compression
+(T_005) → dominance (T_006) → bounded innovation (T_007) → S∞ balance (T_008) → solvable N_fit
+(T_009) → D96 compression (T_010) → ~19 not from D96 (T_011) → nor from D96^3 (T_012) → C
+dominated by A (T_013) → and the near-gap density (which sets S∞ ≈ N_gap) is itself a derived
+exact function of the spectrum (T_014). No new primitive; canonical AT unchanged.
+
 ResearchY-QG_012 (Distinguishability Cosmology Audit, COMPLETE, tests 6/6 PASSED): is
 ΩΛ uniquely privileged, or does distinguishability generate additional cosmological
 observables? Verdict: ΩΛ is PRIVILEGED BUT NOT UNIQUE — distinguishability generates a
