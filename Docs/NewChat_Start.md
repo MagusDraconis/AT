@@ -5320,6 +5320,20 @@ scale is imported. QG161/169/171/246/260/262/300's existing “mass-gap scale”
 sector-independent graph/operator nomenclature, not Clay evidence. Classification: finite gap
 DERIVED; plausible regulator scaffold EMERGENT;
 “AT solves the Clay problem” REFUTED. Canonical D-series classifications unchanged.
+ResearchY-NP_169 (Natural Scaling vs Mass Gap Audit, COMPLETE, hostile audit, tests 7/7 PASSED):
+given \(\lambda_{\rm gap}(N)=4\pi^2(91)N^{-2}+O(N^{-4})\), can any NATURAL Actualization scaling
+\(f(N)\) preserve a positive mass gap \(m(N)=f(N)\lambda_{\rm gap}(N)\) as \(N\to\infty\)? Verdict:
+NO. The limit depends only on the growth of \(f=O(N^e)\): e<2 → ZERO, e=2 → POSITIVE, e>2 →
+DIVERGENT. Every existing AT primitive is \(O(1)\) or \(O(N)\), so all AT-native scalings —
+occupancy (\(I_{\rm occ}=0.7513\), \(\ln K=1.0986\), \(\Omega_\Lambda=0.6839\), K=3, Σocc=95, N),
+D96-family (degree 12, Σd²=91, N), and fixed-lattice-spacing physical scaling — give ZERO GAP. The
+only POSITIVE limits are (a) the imported external length \(L_0\) of a fixed-compact-volume physical
+scaling (a kinematic finite-volume gap, not an infinite-volume mass gap) and (b) the tautological
+spectral-density renormalization \(\rho(\lambda_{\rm gap})\lambda_{\rm gap}\to1\) (Weyl law
+\(N(\lambda)\approx2N\sqrt{\lambda/c}\), \(c=4\pi^2\cdot91\)). Ad-hoc \(f=N^2\) is underivable (no AT
+primitive is \(\Theta(N^2)\)); \(f=N^3\) diverges. Classification: ZERO GAP for AT-native scalings;
+"AT preserves a positive mass gap via a natural scaling" REFUTED. No D-series reclassification;
+canonical AT unchanged.
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-

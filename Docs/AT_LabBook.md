@@ -2043,6 +2043,22 @@ Exponents). Charge and isospin determine the hierarchy exponent (intermediate, f
 - strongest honest result: finite-network kinematic gap DERIVED; regulator scaffold EMERGENT;
   “AT solves the Clay Yang–Mills problem” REFUTED. Canonical D-series classifications unchanged
 
+### ResearchY-NP_169: Natural Scaling vs Mass Gap Audit
+**Status:** Complete (ZERO GAP FOR AT-NATIVE SCALINGS; POSITIVE-GAP CLAIM REFUTED).
+- question: given \(\lambda_{\rm gap}(N)=4\pi^2(91)N^{-2}+O(N^{-4})\), can any NATURAL Actualization
+  scaling \(f(N)\) keep \(m(N)=f(N)\lambda_{\rm gap}(N)>0\) as \(N\to\infty\)?
+- scaling boundary: \(m=O(N^{e-2})\) for \(f=O(N^e)\) — e<2 → ZERO, e=2 → POSITIVE, e>2 → DIVERGENT
+- every existing AT primitive is \(O(1)\) or \(O(N)\): occupancy \(I_{\rm occ}=0.7513\),
+  \(\ln K=1.0986\), \(\Omega_\Lambda=0.6839\), \(K=3\), \(\Sigma{\rm occ}=95\), \(N\); D96-family
+  degree 12, \(\Sigma d^2=91\), \(N\); fixed-lattice-spacing physical scaling → all ZERO GAP
+- only POSITIVE limits: (a) imported external length \(L_0\) of fixed-compact-volume physical
+  scaling \(1/a^2\) (kinematic finite-volume gap, not an infinite-volume mass gap); (b) tautological
+  spectral-density renormalization \(\rho(\lambda_{\rm gap})\lambda_{\rm gap}\to1\) (Weyl law
+  \(N(\lambda)\approx2N\sqrt{\lambda/c}\), \(c=4\pi^2\cdot91\))
+- ad-hoc \(f=N^2\) (underivable, no AT primitive is \(\Theta(N^2)\)) → POSITIVE; \(f=N^3\) → DIVERGENT
+- verdict: ZERO GAP for AT-native scalings; “AT preserves a positive mass gap via a natural
+  scaling” REFUTED. No D-series reclassification; canonical AT unchanged
+
 ResearchY audits are indexed separately in `Docs/ResearchY/ResearchY_Index.md` and are not included
 in the historical program counts below.
 

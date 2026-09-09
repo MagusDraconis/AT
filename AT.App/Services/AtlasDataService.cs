@@ -1543,6 +1543,21 @@ public static class AtlasDataService
                     "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_168.md"),
             ]),
         new(
+            "researchy-np169-natural-scaling-vs-mass-gap",
+            "No Natural AT Scaling Can Keep the Gap Positive as N Grows",
+            "ResearchY · NP_169 (Natural Scaling vs Mass Gap Audit)",
+            "NP_168 showed the D96 gap λ_gap(N) = 4π²·91/N² + O(N⁻⁴) vanishes as the ring grows. The natural follow-up: can any Actualization scaling f(N) rescue a positive mass gap m(N) = f(N)·λ_gap(N) as N→∞? The answer depends only on how fast f grows. Scaling by O(1) or O(N) — every genuine AT primitive, from the occupancy record (I_occ=0.7513, ΩΛ=0.6839, K=3) to the D96 family (degree 12, Σd²=91, N) — drives m to zero. The only positive limits are imports or tautologies.",
+            "The scaling boundary is exact: m = O(N^(e-2)) for f = O(N^e). So e<2 → zero gap, e=2 → constant, e>2 → divergent. Every AT primitive is O(1) or O(N). Fixed-compact-volume physical scaling reaches the constant 4π²·91/L₀², but only by importing an external length L₀, and it is the kinematic compact-domain gap, not an infinite-volume mass gap. Spectral-density scaling gives ρ(λ_gap)·λ_gap→1, but that is the tautology 'one mode per gap-width.' Ad-hoc N² is underivable (no AT primitive is Θ(N²)); N³ diverges. Verdict: zero gap for AT-native scalings; the positive-gap claim via a natural scaling is refuted.",
+            "For non-experts: the D96 ring's gap is like the lowest note of a shrinking string — it falls toward silence as the string grows. This audit asks whether any honest rescaling of AT's own numbers keeps a positive note at infinite size. None does: the only ways to keep a positive number are to sneak in an outside ruler (a physical length) or to measure the gap against itself (which always gives '1').",
+            "ZERO GAP for every AT-native scaling; POSITIVE only via an imported length or a tautological spectral-density normalization; 'AT preserves a positive mass gap' REFUTED.",
+            "“You cannot rescale a vanishing gap into a physical mass.”",
+            false,
+            [
+                new("ResearchY-NP_169", "NATURAL SCALING VS MASS GAP AUDIT",
+                    "No AT-native scaling is Θ(N²); occupancy and D96-family scalings give ZERO GAP; positive limits are imported or tautological.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_169.md"),
+            ]),
+        new(
             "researchy-np074-quantum-number-ontology",
             "What Are Quantum Numbers? The Symmetry Charges of the D96 Ring: Charge Is the Rotation, Isospin the Doublet, and Only the Color Count Remains a Postulate",
             "ResearchY · NP_074 (Quantum Number Ontology Audit)",
