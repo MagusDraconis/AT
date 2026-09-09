@@ -1528,6 +1528,21 @@ public static class AtlasDataService
                     "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_167.md"),
             ]),
         new(
+            "researchy-np168-yang-mills-mass-gap",
+            "The D96 Graph Has a Gap—But It Is Not the Yang–Mills Mass Gap",
+            "ResearchY · NP_168 (Yang–Mills Existence and Mass Gap Audit)",
+            "Actualization Theory can establish one exact spectral fact: the finite D96 circulant has a lowest positive graph-Laplacian eigenvalue λ = 0.386350893377790, or frequency spacing ω = 0.621571309969974. The hostile test is refinement. For the fixed six-step graph family, λ_gap scales as 4π²·91/N² and goes to zero. Rescaling at fixed compact circumference preserves only the familiar finite-volume Laplacian gap. It does not create an infinite-volume, interacting quantum gauge-theory mass gap.",
+            "NP_168 separates QG244's classical/minimal Yang–Mills Lagrangian structure from the Clay problem's quantum construction. Current AT has no rigorous Yang–Mills Hilbert space or Euclidean measure, Gauss-law/gauge-invariant observable sector, interacting Hamiltonian or transfer matrix, controlled regulator-removal limit, four-dimensional infinite-volume limit, or uniform positive physical spectral bound. The graph Laplacian acts on graph modes; a glueball mass gap belongs to the physical gauge-invariant Hamiltonian spectrum. Those are different objects. The 'mass-gap scale' label reused across QG161/169/171/246/260/262/300 is graph/operator nomenclature, not Clay evidence. Strongest result: a derived finite-network kinematic gap and an emergent regulator scaffold—not a Clay solution.",
+            "For non-experts: a finite ring has a lowest note, just as a short string does. But making the ring larger drives that note toward zero. The famous Yang–Mills problem asks for something much harder: prove that a fully quantum, interacting gauge field in infinite four-dimensional space still has a positive lowest physical excitation. AT has the finite-ring note and a candidate mathematical scaffold, but not that quantum proof.",
+            "Finite D96 gap DERIVED; λ_gap = O(N^-2) vanishes under unscaled refinement; the physical gauge-invariant Yang–Mills mass gap remains MISSING; any current AT Clay-solution claim is REFUTED.",
+            "“A finite ring's first note is not a glueball.”",
+            false,
+            [
+                new("ResearchY-NP_168", "YANG–MILLS EXISTENCE AND MASS GAP AUDIT",
+                    "Finite graph gap DERIVED; regulator scaffold EMERGENT; Clay Yang–Mills construction and physical mass gap NOT established.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/NP_NewPhysics/ResearchY-NP_168.md"),
+            ]),
+        new(
             "researchy-np074-quantum-number-ontology",
             "What Are Quantum Numbers? The Symmetry Charges of the D96 Ring: Charge Is the Rotation, Isospin the Doublet, and Only the Color Count Remains a Postulate",
             "ResearchY · NP_074 (Quantum Number Ontology Audit)",

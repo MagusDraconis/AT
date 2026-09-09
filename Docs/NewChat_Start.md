@@ -5286,6 +5286,20 @@ criterion: B (plausible-but-unexplored) — not C. Classification: known-state i
 DENCE; unexplored combinations EMERGENT (from known axes); AT-only organization phase SPECULATIVE;
 "no unknown states" REFUTED; "organization is a new ontology" REFUTED (NP_157). No new primitive;
 canonical AT unchanged.
+ResearchY-NP_168 (Yang–Mills Existence and Mass Gap Audit, COMPLETE, hostile audit, tests 9/9
+PASSED): AT has a DERIVED dimensionless finite-network kinematic gap for
+\(C_{96}(1..6)\): \(\lambda_{\rm gap}=0.386350893377790\),
+\(\omega_{\rm gap}=0.621571309969974\), multiplicity 2. Deterministic refinement gives
+\(\lambda_{\rm gap}(N)=4\pi^2(91)N^{-2}+O(N^{-4})\), so the unscaled graph gap tends to zero;
+fixed-compact-domain \(1/a^2\) scaling is only a kinematic finite-volume continuum gap. QG244's
+classical/minimal Yang–Mills Lagrangian structure is not a quantized interacting construction.
+Missing Clay requirements: Hilbert/measure, physical gauge-invariant sector, interacting
+Hamiltonian/transfer matrix, controlled regulator limit, infinite-volume \(\mathbb R^4\) limit,
+and a uniform positive physical lower bound. The graph gap is not a glueball mass gap; no physical
+scale is imported. QG161/169/171/246/260/262/300's existing “mass-gap scale” usage is
+sector-independent graph/operator nomenclature, not Clay evidence. Classification: finite gap
+DERIVED; plausible regulator scaffold EMERGENT;
+“AT solves the Clay problem” REFUTED. Canonical D-series classifications unchanged.
 ResearchY-M_001 (Measurement Origin Audit, COMPLETE, tests 7/7 PASSED): what is a
 measurement event? Verdict: a measurement event is an ACTUALIZATION EVENT applied to a
 DISTINGUISHABLE state — state selection (A) realized as distinguishability-becoming-

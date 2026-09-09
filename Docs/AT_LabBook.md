@@ -2025,6 +2025,27 @@ Exponents). Charge and isospin determine the hierarchy exponent (intermediate, f
   tree-level W-Z consistency — consistent with the electroweak global fit, no fitted parameters
   (chain: QG162 → QG168 → QG169 → QG175 → oblique parameters)
 
+### ResearchY-NP_168: Yang–Mills Existence and Mass Gap Audit
+**Status:** Complete (FINITE GRAPH GAP DERIVED; CLAY CLAIM REFUTED).
+- D96 \(C_{96}(1..6)\): \(\lambda_{\rm gap}=0.386350893377790\),
+  \(\omega_{\rm gap}=0.621571309969974\), multiplicity 2 — a dimensionless kinematic graph result
+- fixed-step refinement: \(\lambda_{\rm gap}(N)=4\pi^2(91)N^{-2}+O(N^{-4})\);
+  \(N^2\lambda_{\rm gap}\to3592.536001996526\), so the unscaled graph gap tends to zero
+- fixed-compact-volume \(1/a^2\) scaling produces the ordinary compact-domain Laplacian gap only;
+  it is not an infinite-volume interacting Yang–Mills mass gap
+- QG244 supplies the classical/minimal Yang–Mills Lagrangian structure, not a quantum
+  Hilbert/measure construction, physical gauge-invariant sector, Hamiltonian/transfer matrix,
+  controlled regulator limit, \(\mathbb R^4\) infinite-volume limit, or uniform positive bound
+- graph-Laplacian modes are not glueball/gauge-invariant Hamiltonian states; no physical scale is
+  attached to the D96 spacing
+- QG161/169/171/246/260/262/300's “mass-gap scale” usage is graph/operator nomenclature across
+  several formulas, not a constructed pure-Yang–Mills spectrum
+- strongest honest result: finite-network kinematic gap DERIVED; regulator scaffold EMERGENT;
+  “AT solves the Clay Yang–Mills problem” REFUTED. Canonical D-series classifications unchanged
+
+ResearchY audits are indexed separately in `Docs/ResearchY/ResearchY_Index.md` and are not included
+in the historical program counts below.
+
 ---
 
 ## Overall Statistics
