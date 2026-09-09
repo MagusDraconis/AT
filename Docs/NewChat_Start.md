@@ -2381,6 +2381,23 @@ innovation (T_007) → S∞ balance (T_008) → solvable N_fit (T_009) → D96 c
 not from D96 (T_011) → and not exactly from D96^3 either, only a CORRESPONDENCE (T_012). No new
 primitive; canonical AT unchanged.
 
+ResearchY-T_013 (Compression Origin Audit, COMPLETE, tests 5/5 PASSED): why does D96^3 compress
+20,811 eigenvalues into 16 survivors? COMPRESSION MEASURES (μ=0.01, β=1): D96 A=44 S∞=5 C=8.8
+conc 0.362 ent-red 0.88 near-gap 2 maxmult 6 basin 0.105; D96^3 A=20811 S∞=16 C=1300.7 conc
+0.0006 ent-red 0.20 near-gap 18 maxmult 562 basin 0.0019; random A=95 S∞=17 C=5.6 conc 0.017
+ent-red 0.03 near-gap 71 maxmult 1 basin 0.179. MECHANISM: D96^3's 3D sum structure gives a huge
+A (20,811 distinct eigenvalues = 3-way sums of 49 reduced 1D values), while selection w=m/λ keeps
+only the near-gap modes (S∞=16 ≈ the 18 modes within 2λ₂); the survivors ARE the near-gap modes.
+Compression is dominated by A, NOT fitness peakedness: the 1D D96 has the HIGHEST entropy
+reduction (0.88, most peaked fitness) yet compresses LEAST (C=8.8), while D96^3 has a flatter
+fitness (ent-red 0.20) but compresses ~150× more (C=1300). Classification: C = A/S∞ DERIVED
+(deterministic function of the spectrum; A = distinct-sum count, S∞ = reach ≈ near-gap density);
+the value ~1300 EMERGENT; "C is set by fitness peakedness" REFUTED. T-PROGRAM ARC (T_001-T_013):
+compression (T_005) → dominance (T_006) → bounded innovation (T_007) → S∞ balance (T_008) →
+solvable N_fit (T_009) → D96 compression (T_010) → ~19 not from D96 (T_011) → nor exactly from
+D96^3 (T_012) → and the compression ratio C is dominated by landscape size A, not fitness
+peakedness (T_013). No new primitive; canonical AT unchanged.
+
 ResearchY-QG_012 (Distinguishability Cosmology Audit, COMPLETE, tests 6/6 PASSED): is
 ΩΛ uniquely privileged, or does distinguishability generate additional cosmological
 observables? Verdict: ΩΛ is PRIVILEGED BUT NOT UNIQUE — distinguishability generates a

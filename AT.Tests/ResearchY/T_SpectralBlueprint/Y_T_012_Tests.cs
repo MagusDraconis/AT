@@ -23,78 +23,13 @@ public class Y_T_012_Tests : ResearchTestBase
 
     // ── 1D reduced spectrum and the 3D tensor-product breakdown ──────────────
 
-    /// <summary>1D D96 eigenvalue λ_r = 2Σ_{d=1..6}(1−cos 2πdr/96) for reduced index r ∈ 0..48.</summary>
-    private static double Lambda1D(int r)
-    {
-        double s = 0.0;
-        for (int d = 1; d <= 6; d++) s += 1.0 - Math.Cos(2.0 * Math.PI * d * r / 96.0);
-        return 2.0 * s;
-    }
-
-    /// <summary>1D multiplicity of reduced index r (1 for r=0,48; 2 otherwise).</summary>
-    private static int Mult1D(int r) => (r == 0 || r == 48) ? 1 : 2;
-
-    /// <summary>Axis-count sector (1/2/3) of a triple of reduced indices (0 = zero mode).</summary>
-    private static int Sector(int r1, int r2, int r3)
-        => (r1 > 0 ? 1 : 0) + (r2 > 0 ? 1 : 0) + (r3 > 0 ? 1 : 0);
-
-    /// <summary>Octahedral permutation-orbit class: 0=A ({a,a,a}), 1=T (two equal), 2=G (distinct).</summary>
-    private static int IrrepClass(int r1, int r2, int r3)
-    {
-        var nz = new List<int>(3);
-        if (r1 > 0) nz.Add(r1);
-        if (r2 > 0) nz.Add(r2);
-        if (r3 > 0) nz.Add(r3);
-        nz.Sort();
-        if (nz.Count <= 1) return 1;                       // single axis → T-orbit (size 3)
-        if (nz.Count == 2) return nz[0] == nz[1] ? 1 : 2;  // {a,a,0}→T ; {a,b,0}→G
-        // three non-zero
-        if (nz[0] == nz[1] && nz[1] == nz[2]) return 0;    // {a,a,a} → A
-        if (nz[0] == nz[1] || nz[1] == nz[2]) return 1;    // two equal → T
-        return 2;                                          // all distinct → G
-    }
-
     /// <summary>
-    /// Full D96⊗D96⊗D96 decomposition: distinct eigenvalues ascending, with total multiplicity
-    /// and per-sector (n1,n2,n3) and per-irrep (nA,nT,nG) multiplicities.
+    /// Full D96⊗D96⊗D96 decomposition (shared catalog): distinct eigenvalues ascending, total
+    /// multiplicity, and per-sector (n1,n2,n3) and per-irrep (nA,nT,nG) multiplicities.
     /// </summary>
     private static (double[] Distinct, int[] Total, int[] N1, int[] N2, int[] N3, int[] NA, int[] NT, int[] NG)
         Breakdown()
-    {
-        var d = new Dictionary<double, int[]>();   // [total, n1, n2, n3, nA, nT, nG]
-        for (int r1 = 0; r1 <= 48; r1++)
-            for (int r2 = 0; r2 <= 48; r2++)
-                for (int r3 = 0; r3 <= 48; r3++)
-                {
-                    double e = Lambda1D(r1) + Lambda1D(r2) + Lambda1D(r3);
-                    int m = Mult1D(r1) * Mult1D(r2) * Mult1D(r3);
-                    int sec = Sector(r1, r2, r3);
-                    int irr = IrrepClass(r1, r2, r3);
-                    if (!d.TryGetValue(e, out var b))
-                    {
-                        b = new int[7];
-                        d[e] = b;
-                    }
-                    b[0] += m;
-                    if (sec == 1) b[1] += m;
-                    else if (sec == 2) b[2] += m;
-                    else if (sec == 3) b[3] += m;
-                    if (irr == 0) b[4] += m;
-                    else if (irr == 1) b[5] += m;
-                    else b[6] += m;
-                }
-
-        var order = d.Keys.OrderBy(x => x).ToArray();
-        double[] distinct = order.ToArray();
-        int[] total = order.Select(e => d[e][0]).ToArray();
-        int[] n1 = order.Select(e => d[e][1]).ToArray();
-        int[] n2 = order.Select(e => d[e][2]).ToArray();
-        int[] n3 = order.Select(e => d[e][3]).ToArray();
-        int[] nA = order.Select(e => d[e][4]).ToArray();
-        int[] nT = order.Select(e => d[e][5]).ToArray();
-        int[] nG = order.Select(e => d[e][6]).ToArray();
-        return (distinct, total, n1, n2, n3, nA, nT, nG);
-    }
+        => SpectralCaseCatalog.D96CubedBreakdown();
 
     /// <summary>Drop zero-multiplicity entries and zero eigenvalues; keep the non-zero sub-spectrum.</summary>
     private static (double[] Distinct, int[] Mult) SubSpectrum(double[] distinct, int[] subMult)
