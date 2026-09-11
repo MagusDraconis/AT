@@ -1299,6 +1299,101 @@ with span(96) = 6.4025. Each prediction has a dependency chain into the origin p
 and an explicit falsification path. Experimental ranking: P6 > P7 > P4; mathematical:
 P1–P3, P5, P8 (verified by the suite). No canonical changes; research only.
 
+ResearchY-D_047 (Degeneracy-Splitting Amplification Audit, COMPLETE, tests 7/7 PASSED):
+can D96 degeneracy splitting AMPLIFY weak perturbations — is G = Δ(observable)/ε
+unbounded as ε → 0? Verdict: YES, divergently, but ONLY on degeneracy-indexed
+(structural) observables. Setup: L(ε) = L + ε·P with P a deterministic ±1 edge-sign
+Laplacian (LCG seed 12345), swept over 9 decades; observables ΔA (attractor/eigenspace
+count), ΔE (spectral entropy of the basin distribution p_i = m_i/N), Δλ_rms.
+DEGENERACY-LOCK THEOREM (DERIVED): full resolution gives E₁ = ln N, so the released
+entropy is exactly ΔE_lock = (1/N)·Σ_{m_i>1} m_i·ln m_i — a closed form in the
+multiplicity structure alone — INDEPENDENT of ε. Verified: D96 (42×2,[5],[6]) → 0.802314
+nats; K96 (95-fold) → 4.506441; random (all-singleton) → 0. Headroom ΔA_max = N − A₀ =
+Σ(m−1): D96 51, K96 94, D96³ 136 005 of 868 656. Because both are ε-independent STEP
+functions, G_A and G_E ∝ 1/ε → DIVERGENT: G_A(D96) = 2.6e10 at ε=1e-9 vs 5.1e4 at
+ε=1e-3; ΔA saturates at 51 from ε=1e-7 downward, ΔE at 0.802314 likewise. NEGATIVE
+RESULTS: (a) the CONTINUOUS observable is NOT amplified — G_λ = Δλ_rms/ε is finite and
+ε-independent, 0.0562 (D96) vs 0.0523 (degeneracy-free random control), i.e. the
+amplification is purely a degeneracy effect; (b) RANDOM is an exact null — A ≡ 96,
+ΔA ≡ ΔE ≡ 0 and G ≡ 0 for every ε up to 1.0 (min gap 0.0123 is an ε-independent
+barrier); (c) D96³ is the hardest amplifier (peak G_A ≈ 3.5e12, ≳ 2000× D96) but
+SATURATES at only 15.7 % of its headroom — factor-wise perturbations leave the
+factor-permutation symmetry exact, so permuted triple sums λ_i+λ_j+λ_k stay exactly
+degenerate (entropy recovers 57.5 % because unsplit permutation orbits carry large
+multiplicities). Classifications: ΔE_lock and ΔA_max DERIVED; the ε-independence
+(step response at ε = 0) EMERGENT; 'D96 amplifies its continuous spectrum' REFUTED;
+case selection and the numerical resolution floor (ε* ≈ 1e-7, no intrinsic scale)
+BOUNDARY. NO reclassification of any prior result; the D_040 ClassificationRegistry is
+untouched. No canonical changes; research only.
+
+ResearchY-D_048 (Latent-Degeneracy Adaptability Audit, COMPLETE, tests 7/7 PASSED): does
+latent degeneracy predict adaptability? Defines the latent fraction L = (N − A₀)/N and
+measures, for the six 96-node cases {D96, D96-3D (4×4×6 torus), random (sparse p=0.3),
+physical (λ_m = m circulant), unphysical (5/25/60 circulant), complete (K96)}, the
+reachable attractor increase ΔA, entropy increase ΔE, recovery R = 1 − ‖λ′−λ‖₂/‖λ‖₂,
+and structural diversity gain ΔA/(N−A₀) under edge deletion, edge addition, rewiring and
+weight perturbation at doses 0.5–10 % of |E| (3 seeds, connectivity guard; ZERO samples
+excluded). Quantitative only — NO AT assumptions used. BASELINES: D96 A₀=45 λ₂=0.3864
+L=0.5312; D96-3D A₀=13 λ₂=1.0 L=0.8646; random A₀=96 λ₂=17.19 L=0.0; physical A₀=49
+λ₂=1.0 L=0.4896; unphysical A₀=4 λ₂=5.0 L=0.9583; complete A₀=2 λ₂=96 L=0.9792. VERDICTS
+(Spearman ρ, tie-averaged ranks, n=6): H1 'adaptive capacity scales with latent
+degeneracy' → PARTIALLY REFUTED: the NORMALIZED capacity is uncorrelated with L
+(ρ = −0.029) even though L spans 0→0.98, while the RAW gains do scale — ρ(ΔA,L) = +0.429
+and ρ(ΔE,L) = +0.829. L is the CEILING (ΔA ≤ N − A₀ by construction), not the response:
+complete has the largest reservoir (L = 0.979) and the LOWEST capacity (0.286), D96 a
+moderate one (0.531) and the HIGHEST (0.990). H2 'L predicts adaptability better than
+λ₂' → REFUTED: ρ(capacity, λ₂) = −0.841 vs ρ(capacity, L) = −0.029 (≈29× larger |ρ|),
+with the sign INVERTED — a SMALLER gap ⇒ a MORE adaptable graph; near-degeneracy, not
+degeneracy count, indexes adaptability (D96's gap is 248× smaller than complete's and its
+capacity 3.5× larger). H3 'random graphs have low latent capacity' → SUPPORTED: L = 0 and
+capacity = 0 EXACTLY, ΔA ≡ ΔE ≡ 0 at every dose and every perturbation type. Dose
+response: D96 saturates immediately (0.962 at the 0.5 % dose, 1.000 by 5 %); D96-3D and
+complete are dose-limited (0.363→1.000 and 0.149→0.378); physical/unphysical plateau at
+0.750; random flat zero. Type response: WEIGHT perturbation is the universally strongest
+lever (1.000 on every structured case); exact zeros mark structurally impossible
+perturbations (add and rewire on K96, add on the unphysical profile). SIDE FINDING:
+recovery and adaptability trade off — the least adaptable graph (random, recovery 0.9792)
+is nearly the most stable. Relation to D_047: the lock's RELEASE is a step in ε (D_047);
+WHICH graph collects the most of its lock is set by λ₂, not by L (D_048) — proximity of
+degeneracy beats its size. Classifications: the L-bound and the two rank relations
+DERIVED; the two rejected hypotheses REFUTED; per-case capacities and plateaus EMERGENT;
+protocol choices (case set, dose grid, seeds, connectivity guard) BOUNDARY. NO AT claim,
+value, equation or registry entry changed; the D_040 ClassificationRegistry untouched.
+No canonical changes; research only.
+
+ResearchY-D_049 (Adaptability–Robustness Frontier Audit, COMPLETE, tests 7/7 PASSED): is
+there a universal tradeoff Adaptability × Robustness = const? Uses the SAME two axes and
+the SAME deterministic perturbation ensemble as D_048 (now shared via
+AT.Tests/Shared/AdaptabilityAudit.cs) for the six 96-node cases {D96, D96³ (here the 3-D
+D96 variant = 4×4×6 torus, N = 96, matching D_048; D_047's 96³-mode tensor product is a
+different object), random, complete, physical, unphysical}. Fit: capacity vs recovery —
+linear OLS plus the power law C = k·Δ^β in damage Δ = 1 − recovery, compared against the
+conserved-product law (β = −1) forced through the same data. AXES: D96 C=0.9902 R=0.9659;
+D96³ 0.7207/0.9625; random 0.0000/0.9792; physical 0.8011/0.9558; unphysical 0.7228/0.9443;
+complete 0.2858/0.9868. OUTPUT: **REFUTED** — 'Adaptability × Robustness = const' is NOT a
+universal law. The product spans 0 → 0.956 (the degenerate-free null gives EXACTLY 0) and
+0.282 → 0.956 among the five non-null cases (span 3.39×, CV 0.326, worst deviation from the
+mean > 50 %). The conserved-product law has the WRONG SIGN: capacity RISES with damage —
+fitted C = 7.98·Δ^(+0.737) with R² = 0.720 — whereas C·Δ = const demands exponent −1;
+forcing −1 gives R² = −3.282, worse than predicting the mean (a doubling of damage buys
+only 1.666× capacity). **DERIVED** — the (capacity, recovery) Pareto frontier has EXACTLY
+TWO members, D96 (max adaptability) and complete (max robustness), while D96³, random,
+physical and unphysical are STRICTLY DOMINATED (they give up adaptability without buying
+robustness), so a tradeoff EXISTS but it is a 2-point frontier, not a constant.
+**DERIVED** (mechanism) — ONE structural quantity governs both axes with OPPOSITE signs:
+the degeneracy COUNT (ρ(capacity) = +0.886, ρ(recovery) = −0.543), equivalently the inverse
+gap (ρ(capacity, λ₂) = −0.841, ρ(recovery, λ₂) = +0.464, with ρ(degen, λ₂) = −0.814); the
+degeneracy FRACTION L is a far weaker predictor (ρ(capacity, L) = −0.029), so the COUNT
+indexes the tradeoff, not the share — a sharp refinement of D_048. **EMERGENT** — the
+fitted exponent β ≈ 0.74 and constant k ≈ 7.98; the particular dominated set; and the
+frontier INSTABILITY across perturbation families: edge deletion collapses the frontier to a
+SINGLE case ({physical} — no tradeoff at all under that family), edge addition gives four
+members {D96, physical, unphysical, complete}, rewiring three {D96, physical, complete},
+weight three {D96, random, complete}. Universality therefore fails TWICE: no conserved
+constant, and no family-invariant frontier. Linear fit for reference: C = 16.48 − 16.46·R,
+R² = 0.475. NO AT claim, value, equation or registry entry changed; the D_040
+ClassificationRegistry untouched. No canonical changes; research only.
+
 ResearchY-NP_002 (Highest-Value V2.2 Program, COMPLETE): what is the highest-value
 V2.2 physics program? Verdict: MEASUREMENT ORIGIN — it scores 19/20 (impact 5,
 feasibility 4, testability 5, derived-chain dependence 5), the highest of ten
