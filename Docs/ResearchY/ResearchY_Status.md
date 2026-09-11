@@ -301,6 +301,7 @@
 | ResearchY-C_002 | Radial Propagation | — | — | PLANNED |
 | ResearchY-D_001 | D96 Resonance Audit | — | — | PLANNED |
 | ResearchY-D_002 | Standing Wave Model | — | — | PLANNED |
+| ResearchY-NP_170 | Lock-Lattice Phase Memory — Physical Realizability Test Proposal | `NP_NewPhysics/ResearchY-NP_170.md` · `Publication/ResearchY-NP_170-Lock-Lattice-Program.tex`/.pdf | — (numerical precursor `Y_NP_170_Tests.cs` planned) | PLANNED |
 
 ## Test Status
 

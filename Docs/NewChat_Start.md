@@ -60,6 +60,44 @@ octave structure
 → occupation-weighted mode access
 → sector hierarchies
 
+## New Research Direction — Lock-Lattice Program (proposal, 2026-09-11)
+
+ResearchY-NP_170 (PLANNED — proposal only, no result claimed): the Ch8 lock law has, so far,
+only statistical evidence (datasets and synthetic cohorts, QG307–QG319). NP_170 specifies the
+first *physical* test.
+
+- **The one idea (energy storage is ABANDONED).** The density objection is accepted as fatal
+  (µJ at kW overhead, 10⁶–10⁹× behind Li-ion). What survives is the lock lattice as a
+  **phase-memory / threshold element (LLPM)**: the state variable is *which modes are locked*,
+  not charge separated (capacitor) or chemical potential stored (battery).
+- **Three reasons.** (1) *Theory falsification* — a hardware ring is the only place the lock law
+  must produce a dynamical phase transition (QG316 criteria: sharpness ≥ 3, width ≤ 0.4) rather
+  than a statistic; AT's own Ch14 concedes standard complexity measures match or beat the lock
+  rule on the evolving cohort. (2) *Phase/coherence memory* — density irrelevant; metrics are
+  fJ/write, retention, variability < 5%. (3) *Neuromorphic threshold element* — the sharpness is
+  predicted, not fitted (must beat PCM/memristor variability).
+- **How.** Tier 1 bench ring: 96 LC nodes with tanh saturation, 12 programmable links per node
+  (6 DACs set w_d), realizing C₉₆(1..6) with λ_k = 2Σ_d w_d(1−cos 2πdk/96) via the accepted
+  inverse-spectral recipe (ResearchY-T_001). Runs: R0 calibration → R1 mirror-pairing validity
+  (λ_k = λ_{96−k}) → R2 interference visibility (cos(Δφ/2), V ≥ 0.90) → R3 hysteresis sweep
+  (A > 0 at ≥ 5σ) → R4 retention (two-time-scale fit, R = τ_slow/τ_fast ≥ 10 vs three
+  single-exponential controls) → R5 benchmark → R6 blinding; kill criteria pre-registered.
+- **Boundaries declared.** Locking nonlinearity imported (NP_005: locking force ABSENT); coupling
+  network engineered (NP_007/NP_011: REFUTED as a physical field); retention mechanism (AT-120
+  one-way barrier) is an **analogy across systems, not a derivation**; g* ≈ 0.31 is a
+  synthetic-cohort parameter and is **not** a hardware prediction; D96 lock values
+  (20.0026/2.4105/8.2980) are domain-specific per QG313.
+- **Numbers verified for the proposal.** λ₂ = 0.386351, ω₁ = 0.621571, span = 6.402515,
+  octave bands [4,4,87], 47 mirror pairs, multiplicities {2×42, 5, 6}, zero mode 1.
+- **Deliverables.** `Docs/ResearchY/NP_NewPhysics/ResearchY-NP_170.md`;
+  `Docs/ResearchY/Publication/ResearchY-NP_170-Lock-Lattice-Program.tex` (+ compiled PDF, 7 pp).
+  Drafted but NOT applied: registry entry **AT-P043** (AT-P042 = tick discriminator, M_009); the
+  canonical registry is unmodified. No canonical claim changed, no reclassification, no new
+  primitive.
+- **Next open question.** Does the lock threshold exist in hardware (deciding experiment = one
+  bench prototype), and does the AT-120 barrier transfer to a Laplacian ring (H2, highest risk,
+  highest information)?
+
 ## Latest Repo Sync
 
 Recent commits from the other machine:

@@ -1,0 +1,461 @@
+% ======================================================================
+%  ResearchY-NP_170 — Lock-Lattice Phase Memory (Physical Realizability Test)
+%  A proposal. Publication version of Docs/ResearchY/NP_NewPhysics/ResearchY-NP_170.md
+%
+%  Status: PROPOSAL — no experiment performed, no result claimed.
+%  Scope:  no canonical AT claim is changed; no new primitive is introduced.
+%          The locking nonlinearity and the engineered coupling network are
+%          declared BOUNDARY imports (NP_005, NP_007/NP_011).
+%
+%  Build: pdflatex ResearchY-NP_170-Lock-Lattice-Program.tex   (twice)
+% ======================================================================
+
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+\usepackage[a4paper,margin=2.4cm]{geometry}
+
+\newcommand{\ls}[1]{\ensuremath{\lambda_{#1}}}
+\newcommand{\w}[1]{\ensuremath{\omega_{#1}}}
+\newcommand{\Cninety}{\ensuremath{C_{96}(1..6)}}
+\renewcommand{\arraystretch}{1.18}
+
+\title{\textbf{Lock-Lattice Phase Memory}\\[0.35em]
+\large A Physical Realizability Test for the Lock Law of\\[0.15em]
+\large The Actualization Theory (AT)\\[0.35em]
+\normalsize\emph{Proposal --- ResearchY-NP\_170}}
+
+\author{Fabrice Wieser\\[1mm]
+  \small Independent Researcher\\[0.5mm]
+  \small Senior Software Engineer\\[0.5mm]
+  \small \url{https://github.com/MagusDraconis/AT}}
+\date{11 September 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\noindent
+The Actualization Theory (AT) --- a reconstruction of physics from Difference, Actualization and
+Spectrum, in which every observable is derived from the D96 spectral structure while the Standard
+Model Lagrangian is hosted rather than derived --- supports its lock law (Ch8; QG307--QG319), at
+present, entirely by statistical evidence: datasets and synthetic cohorts. This document specifies an
+experiment that would test it as a \emph{dynamical} claim, using an engineered nonlinear
+oscillator ring whose coupling graph is the canonical circulant \Cninety. The proposal deliberately
+abandons the energy-storage framing, which is refuted on density grounds, and identifies one idea
+that survives: the lock lattice as a \emph{phase-memory} and \emph{threshold} element whose
+distinguishing feature is a \emph{predicted} criticality rather than a fitted one. Three reasons
+justify the experiment (theory falsification; phase memory where density is irrelevant; a
+neuromorphic threshold element with predicted sharpness), and the exact procedure --- platform,
+protocol, metrics, blinding, pre-registration and kill criteria --- is given in full. The
+nonlinearity and the coupling network are declared as imported boundary inputs; the retention
+hypothesis is flagged as an analogy across two AT systems, not a derivation. Both outcome branches
+are informative, and the deciding experiment costs one bench prototype.
+\end{abstract}
+
+\section{Scope}
+
+\paragraph{What AT is.} The Actualization Theory (AT) reconstructs physics on the canonical chain
+\emph{Difference} $\to$ \emph{Actualization} $\to$ \emph{Inevitable Spectrum} $\to$
+\emph{Physics}, from two primitives --- Difference (the fundamental boundary) and the tensor
+reference $\eta$ --- with the observable attractor realized on the 96-site circulant
+$C_{96}(1..6)$. The canonical monograph (v2.0, Ch1--Ch14) classifies every statement it makes as
+DERIVED, EMERGENT or BOUNDARY. Throughout this proposal the acronym ``AT'' denotes that framework
+only, and the phase labels AT-1xx / QGxxx denote its internal derivation and audit record.
+
+This is a \textbf{proposal}. It contains no experimental result, changes no canonical AT claim,
+reclassifies no value, and introduces no primitive. Two ingredients are imported and are declared as
+boundary inputs: the locking nonlinearity (NP\_005: the locking force is ABSENT, a boundary) and the
+engineered coupling network (NP\_007/NP\_011: the static coupling network is REFUTED as a physical
+field). The experiment can fail to falsify AT; it cannot confirm it.
+
+\section{The one idea worth doing}
+
+\subsection{What is abandoned}
+Energy storage. A 96-node lattice stores microjoule-scale energy at kilowatt-scale overhead if
+cryogenic --- some $10^{6}$--$10^{9}$ times behind lithium-ion cells
+($\sim 0.9~\mathrm{MJ\,kg^{-1}}$, $\sim 5000$ cycles, $\sim$100 EUR/kWh) on any storage figure of
+merit. No amount of AT machinery changes that, so the storage claim is closed here.
+
+\subsection{What survives}
+The lock lattice as a \textbf{phase-memory element}: a device whose state variable is
+\emph{which modes are locked}, rather than how much charge is separated (capacitor) or how much
+chemical potential is stored (battery). Its retention hypothesis comes from the AT-120 one-way
+barrier --- a topological charge, once actualized, cannot un-actualize --- and its read-out from the
+AT-126 phase-interference law. We call it \textbf{LLPM} (Lock-Lattice Phase Memory):
+
+\begin{quote}
+\emph{An engineered circulant-$C_{96}(1..6)$ oscillator ring is charged into a locked mode
+configuration; the locked configuration is predicted to retain its state longer than a matched
+unlocked control, with the retention difference produced by the actualization barrier and readable
+through $\Delta\theta$ interference.}
+\end{quote}
+
+The design is informative whether the answer is positive or negative, because AT's own
+Ch14 concedes that ``standard complexity measures match or beat the lock rule on the evolving
+cohort'': a statistical audit cannot settle the question. Only a physical phase transition can.
+
+\section{Three reasons}
+
+None of the three uses energy density as its metric.
+
+\subsection{Reason 1 --- theory falsification (strongest)}
+Every existing lock-law result (QG307--QG319) is computed on datasets or synthetic cohorts. A
+hardware ring is the only place where Ch8 must produce a \emph{dynamical phase transition} in a
+physical system instead of a statistic in a table.
+
+\begin{table}[h]
+\centering
+\small
+\begin{tabular}{@{}p{0.26\linewidth}p{0.66\linewidth}@{}}
+\toprule
+Item & Setting \\
+\midrule
+Metric & existence of a threshold in the \emph{physical} coupling, with sharpness $\ge 3$ and
+width $\le 0.4$ (the QG316 criticality criteria) \\
+Bar & hysteresis area $A>0$ at $\ge 5\sigma$ over $\ge 30$ runs, absent in all three controls \\
+If it passes & the lock structure is physically realizable; the lock law stops being a candidate
+descriptive statistic \\
+If it fails & the lock law is demoted to a descriptive statistic (consistent with QG312's partial
+fake and QG319's $96.9\%$ false-positive / $66.1\%$ false-negative rates), and the storage claim is
+withdrawn permanently \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\noindent Both branches are publication-grade information, at the cost of one bench prototype.
+
+\subsection{Reason 2 --- phase / coherence memory}
+Here density is irrelevant; the metric is energy per operation: write energy, retention, read-out
+fidelity, variability. Because the state variable is \emph{phase}, not charge, writing is
+phase-pinning (M\_002) rather than charge transfer, so the write-energy floor is set by phase noise
+rather than by Coulomb energy. The bar to matter is $<{\sim}10$~fJ per write, retention comparable
+to a supercapacitor's self-discharge window, and variability $<5\%$ (competitive with
+MRAM/PCM/FeRAM). The failure mode is thermal and technical phase diffusion: a room-temperature ring
+may retain nothing beyond $1/\omega_0 \times Q$.
+
+\subsection{Reason 3 --- neuromorphic threshold element}
+The lock transition is a sigmoidal threshold with hysteresis --- a synapse/neuron primitive. What is
+AT-specific is that the threshold position and sharpness are \emph{predicted} by the operator and
+lock structure rather than fitted, which is precisely what phase-change and memristive devices
+cannot offer. The bar: beat PCM/memristor variability and switching energy at equal node count. The
+risk: the nonlinearity that produces locking is imported (NP\_005) and may itself dominate the
+variability.
+
+\section{Canonical basis: the numbers the hardware must realize}
+
+The observable attractor is the circulant \Cninety{} (degree 12) with Laplacian spectrum
+
+\begin{equation}
+\ls{k} \;=\; 2\sum_{d=1}^{6}\Bigl(1-\cos\frac{2\pi dk}{96}\Bigr),
+\qquad k=0,\dots,95 .
+\label{eq:spec}
+\end{equation}
+
+Equation~\eqref{eq:spec} was recomputed independently for this proposal; the checks are listed in
+Table~\ref{tab:numbers}.
+
+\begin{table}[h]
+\centering
+\small
+\begin{tabular}{@{}lccc@{}}
+\toprule
+Quantity & Recomputed & Canonical & Check \\
+\midrule
+$\ls{2}$ (first positive eigenvalue, $k=1$) & $0.386351$ & $0.3864$ & \checkmark \\
+$\w{1}=\sqrt{\ls{2}}$ & $0.621571$ & $0.6216$ & \checkmark \\
+$\w{\max}$ ($k=48$, $\lambda=12$) & $3.979620$ & --- & --- \\
+$\mathrm{span}=\w{\max}/\w{1}$ & $6.402515$ & $6.4025$ & \checkmark \\
+octave bands over the 95 positive modes & $[4,4,87]$ & $[4,4,87]$ & \checkmark \\
+zero modes & $1$ & $1$ & \checkmark \\
+mirror pairs $\ls{k}=\ls{96-k}$ & 47 pairs $+$ self-conjugate $k=48$ & 47 pairs & \checkmark \\
+multiplicity multiset & $1+42\times 2+5+6=95$ & $[42\times2,5,6]$ & \checkmark \\
+distinct eigenvalues & $45$ & --- & --- \\
+lock chain (D96-specific) & $\mathrm{occMom}/\Sigma m = 20.0026$ & $20.0026$ & Ch8 \\
+\bottomrule
+\end{tabular}
+\caption{Verified spectrum data for \Cninety. The canonical lock values are listed for reference
+only: by QG313 the lock \emph{structure} is universal while the lock \emph{values} are
+domain-specific, so a hardware ring must derive its own lock values and must not be scored against
+$20.0026$.}
+\label{tab:numbers}
+\end{table}
+
+Two canonical facts govern what hardware may claim. \textbf{(i) QG313:} lock structure is universal,
+lock values are domain-specific; the D96 values ($20.0026$, $2.4105$, $8.2980$) are therefore not
+hardware predictions. \textbf{(ii) QG316:} the critical transition $g^\ast\approx 0.31$ is a
+\emph{synthetic-cohort} parameter --- an exponent fraction over a 40-step organization ramp,
+disclosed as synthetic by MONO007 A08 --- not a physical coupling, and it is not transferable. The
+hardware prediction is the \emph{existence} of a threshold satisfying the criticality criteria, not
+the number $0.31$. The inverse-spectral construction that converts a target spectrum into coupling
+weights already exists as an accepted ResearchY result (T\_001, inverse DFT onto the first
+circulant row); no new mathematics is required to specify the hardware.
+
+\section{Hypotheses and pass/fail criteria}
+
+\begin{table}[h]
+\centering
+\small
+\begin{tabular}{@{}p{0.05\linewidth}p{0.24\linewidth}p{0.22\linewidth}p{0.41\linewidth}@{}}
+\toprule
+\# & Hypothesis & Pass & Fail / interpretation \\
+\midrule
+H0 & the ring realizes \Cninety & mirror-pair error $<1\%$; bands $[4,4,87]$
+& absence $=$ \emph{validity} failure, not a theory failure \\
+H1 & a lock threshold exists in the physical coupling & sharpness $\ge 3$ and width $\le 0.4$ in
+$f(g)$, hysteresis $A>0$ at $\ge5\sigma$ & $f(g)$ smooth and reversible $\Rightarrow$ lock law
+demoted to descriptive statistic \\
+H2 & locked configurations retain state longer than controls & two time scales,
+$R=\tau_{\rm slow}/\tau_{\rm fast}\ge 10$, single-exponential in all controls & same decay law as
+controls $\Rightarrow$ the AT-120 analogy does not transfer; retention claim withdrawn \\
+H3 & read-out follows the interference law & $|\Theta_{\rm mid}|\propto\cos(\Delta\phi/2)$,
+visibility $V\ge0.90$ & $V<0.90$ or wrong functional form \\
+H4 & threshold element is competitive & beats PCM/memristor switching energy and variability &
+reason 3 retired; reasons 1--2 unaffected \\
+\bottomrule
+\end{tabular}
+\caption{Hypotheses. H2 is flagged as the highest-risk, highest-information hypothesis: it is an
+analogy across two different AT systems (the $R$-field condensate of AT-120 and the circulant
+Laplacian ring of Ch6--Ch8), not a derivation. Testing an analogy is legitimate; asserting it as
+derived would not be.}
+\label{tab:hyp}
+\end{table}
+
+\section{Apparatus}
+
+\subsection{Tier 1 (primary; bench electronic, days, low cost)}
+A 96-node ring of nonlinear oscillators with programmable circulant coupling.
+
+\begin{table}[h]
+\centering
+\small
+\begin{tabular}{@{}p{0.24\linewidth}p{0.68\linewidth}@{}}
+\toprule
+Element & Specification \\
+\midrule
+Nodes & 96 active resonators (LC tank $+$ saturating amplifier), $f_0=100$~kHz--1~MHz \\
+Nonlinearity & $\tanh$-type saturation (Adler/Kuramoto phase dynamics) --- \emph{imported, BOUNDARY
+(NP\_005)} \\
+Coupling & for node $i$ and each offset $d\in\{1..6\}$: links to $i\pm d$ via voltage-controlled
+transconductance $g_{m,d}$; 12 links per node \\
+Programmability & one DAC per offset sets $w_d$; the Laplacian is then circulant with
+$\ls{k}=2\sum_d w_d(1-\cos 2\pi dk/96)$ --- the same family as Eq.~\eqref{eq:spec}, with weights
+from T\_001 \\
+Sweep & $g\equiv\sum_d w_d / \sum_d w_{d,\max}$, scanned over $g\in[0,1]$ in 40 steps (mirroring the
+QG316 ramp) \\
+Controls & (a) detuned ring (same $Q$, $\w{k}$ shifted out of ratio); (b) random-coupling ring (same
+$Q$ and span); (c) linear-ramp spectrum (must fail CROWDING per QG305/QG308) \\
+Read-out & 96-channel multiplexed IQ demodulation at $f_0$, $\ge1$~MS/s per channel; $\theta_j$ and
+$A_j$ per node \\
+Injector & single-channel drive at selectable $\w{k}$ with programmable phase $\theta_{\rm in}$;
+abruptly removed for the retention run \\
+Budget & 2--4 $\times$ 16-channel ADC/DAC plus FPGA for real-time IQ: the EUR~5--20k class \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\noindent Design constraints: node-to-node $f_0$ spread must be $<1\%$ or the H0 test fails for
+trivial reasons; phase noise sets the retention floor, since the locked/unlocked contrast is only
+measurable while $1/(Q\w{0})\ll\tau_{\rm slow}$; the nonlinearity strength is the analogue of the
+QG316 organization parameter, so the mapping must be pre-registered before data-taking and the raw
+control voltage reported alongside the normalized $g$.
+
+\subsection{Tier 2 (photonic chip, months)}
+96 coupled SiN microring resonators; the transmitted spectrum gives $\w{k}$ directly (H0), locking
+via the Kerr nonlinearity, read-out by phase-sensitive heterodyne detection. Costlier, better for
+H1, worse for H2 (loss).
+
+\subsection{Tier 3 (superconducting, ${\sim}1$ year)}
+96 coupled superconducting cavities/transmons at $T<20$~mK, $Q\approx10^{6}$: the only tier in which
+a long retention claim is meaningful. Justified only if Tier~1 yields $A>0$ at $\ge5\sigma$,
+$R\ge10$, and a device-level figure of merit beating a supercapacitor. Cryogenics are never
+justified by the energy stored.
+
+\section{Protocol}
+
+All runs use $\ge30$ independent repetitions per configuration, with the analysis script frozen
+before the first run.
+
+\begin{description}[leftmargin=1.2em,style=nextline]
+\item[R0 --- calibration] measure each node's free-running $\w{0}$ and $Q$; trim or calibrate to
+$<1\%$ spread; record the spread as a systematic.
+\item[R1 --- validity (H0)] set $w_d$ to the \Cninety{} values; measure $\w{k}$ by ring-down or
+spectral scan; compute the mirror-pair error and the octave band occupancy (expect $[4,4,87]$ over
+95 positive modes). \emph{Gate:} if this fails, stop --- the apparatus is not a D96 lattice and
+nothing downstream is interpretable.
+\item[R2 --- charging and read-out (H3)] drive at $\w{k}$ to settling, then probe two adjacent sites
+with controlled relative phase $\Delta\phi$; measure
+$|\Theta_{\rm mid}|/(|\Theta_{x_1}|+|\Theta_{x_2}|)$ versus $\Delta\phi$ and fit $\cos(\Delta\phi/2)$.
+\emph{Gate:} $V\ge0.90$.
+\item[R3 --- lock threshold and hysteresis (H1)] sweep $g$ upward over 40 steps and then downward;
+at each step, after settling, compute
+\[
+f(g)=\frac{\#\{j:\;|d\Delta\theta_j/dt|<\varepsilon\}}{96},\quad \varepsilon=0.01\,\w{1},
+\qquad
+A=\int|f_{\rm up}(g)-f_{\rm down}(g)|\,dg ,
+\]
+with $\text{sharpness}=\max|\Delta f|/\overline{|\Delta f|}$ and width $=$ the $g_{10}\!\to\!g_{90}$
+interval. Test sharpness $\ge3$, width $\le0.4$, $A>0$ at $\ge5\sigma$. Report the measured
+$g_c$ as a hardware-specific value (QG313) and do \emph{not} compare it with $0.31$.
+\item[R4 --- retention (H2)] (i) \emph{ring-down}: charge into a locked configuration, remove the
+drive abruptly, record total stored energy $\sum_j A_j^2/2$ versus $t$ for $\ge10^4/\w{1}$;
+(ii) \emph{cycle test}: $\ge10^3$ charge/hold/discharge cycles, recording state fidelity after hold.
+Fit
+\[
+\text{locked: } E(t)=a\,e^{-t/\tau_{\rm fast}}+b\,e^{-t/\tau_{\rm slow}},
+\qquad
+\text{control: } E(t)=a\,e^{-t/\tau_c},
+\]
+and report $R=\tau_{\rm slow}/\tau_{\rm fast}$ and the storage figure of merit
+$\mathrm{FOM}=R\cdot E_{\rm ret}/E_{\rm in}$. \emph{Pass:} $R\ge10$ with the two-time-scale fit
+preferred by BIC/AIC against the single-exponential null, with all three controls
+single-exponential.
+\item[R5 --- threshold benchmark (H4, optional)] only if R3 passes: measure switching energy per
+node, threshold sharpness and board-to-board variability across five identical boards; compare with
+published PCM/memristor figures.
+\item[R6 --- controls and blinding] labels $\{$locked, control a, b, c$\}$ are hidden from the
+analyst until the frozen script has produced numbers (QG319: FP $96.9\%$, FN $66.1\%$ --- precisely
+the failure mode to guard against). The lock classifier itself is fixed before R3.
+\end{description}
+
+\section{Statistics, blinding and reproducibility}
+
+\begin{table}[h]
+\centering
+\small
+\begin{tabular}{@{}p{0.28\linewidth}p{0.64\linewidth}@{}}
+\toprule
+Rule & Setting \\
+\midrule
+Repeats & $\ge30$ per configuration; report mean $\pm$ 95\% CI and effect size, never a single trace \\
+Significance & $A>0$ and $R\ge10$ each at $\ge5\sigma$ \\
+Model comparison & BIC and AIC for single- vs two-time-scale decay; the null is always the simpler
+model \\
+Blinding & label blinding with a scripted or third-party unblinding step \\
+Freezing & analysis-script hash recorded before R3; any change restarts the run \\
+Negative controls & detuned, random-coupling and linear-ramp lattices must fail H1 and H2 \\
+Systematics & node-frequency spread, phase noise, ADC clock jitter, temperature drift and cable
+delay budgeted explicitly \\
+Reproducibility & raw IQ traces archived with instrument settings and seeds \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Kill criteria and decision tree}
+
+\begin{quote}\ttfamily\small
+R1 fails \hfill apparatus problem $\to$ repair and rerun (not a theory result)\\
+R1 passes, R3 null \hfill H1 falsified $\to$ withdraw the storage claim permanently\\
+R3 passes, R4 null \hfill keep the threshold-device direction (R3), drop phase memory (R2)\\
+R3+R4 pass, FOM $<10\times$ supercap \hfill stop; do not escalate on storage grounds\\
+R3+R4 pass, FOM $\ge10\times$ supercap \hfill escalate to Tier 2, then Tier 3
+\end{quote}
+
+\noindent Cryogenics are never justified by the energy stored.
+
+\section{Boundaries: what is imported}
+
+\begin{table}[h]
+\centering
+\small
+\begin{tabular}{@{}p{0.30\linewidth}p{0.30\linewidth}p{0.34\linewidth}@{}}
+\toprule
+Imported & Status & Consequence \\
+\midrule
+locking nonlinearity & BOUNDARY (NP\_005: locking force ABSENT) & the experiment tests the lock
+\emph{structure}, not a derived interaction \\
+engineered coupling network & BOUNDARY (NP\_007/NP\_011: REFUTED as a physical field) & the lattice
+is built, never claimed emergent \\
+retention mechanism (AT-120 barrier) & analogy across systems & H2 is a hypothesis about
+transferability, not a derived prediction \\
+$g^\ast=0.31$ & synthetic-cohort parameter (QG316; MONO007 A08) & a hardware $g_c$ is expected to
+differ; quoting $0.31$ as a hardware number would be a fit \\
+D96 lock values $20.0026/2.4105/8.2980$ & D96-specific (QG313) & derive the hardware's own lock
+values from its own spectrum \\
+energy-storage claims & out of scope & the density argument is accepted as fatal \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\noindent This proposal alters the DERIVED / EMERGENT / BOUNDARY status of no existing result.
+
+\section{What each outcome means}
+
+\begin{table}[h]
+\centering
+\small
+\begin{tabular}{@{}p{0.24\linewidth}p{0.36\linewidth}p{0.34\linewidth}@{}}
+\toprule
+Outcome & Meaning for AT & Meaning for engineering \\
+\midrule
+R1 only & the D96 lattice is realizable & an oscillator-ring testbed with a derivable spectrum \\
+R1+R3 & the lock structure is physically realizable, not merely statistical & a threshold device
+with predicted criticality criteria \\
+R1+R3+R4 & phase memory with barrier-protected retention & a candidate phase/coherence memory
+element (reason 2) \\
+R1+R4 without R3 & two-time-scale decay without a threshold --- suspects an ordinary high-$Q$ effect
+& no device claim; the lock reading is unsupported \\
+R1 only, R3 null & lock law demoted to a descriptive statistic & the platform stays useful; the
+storage idea ends \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\noindent The negative branch is not a failure of the program: it is the honest closure of an open
+question, and it is the branch AT's own Ch14 anticipates.
+
+\section{Deliverables}
+
+\begin{enumerate}[leftmargin=1.4em]
+\item This proposal (PLANNED).
+\item A numerical precursor (planned): a deterministic Kuramoto/Adler ring simulation on
+\Cninety{} (fixed seeds, no randomness) computing the expected sharpness/width curves and the
+two-time-scale signature, so that R3/R4 have an \emph{a priori} prediction.
+\item A canonical prediction-registry entry, quoted below, corresponding to \textbf{AT-P043}
+(AT-P042 being the tick discriminator, M\_009). The canonical registry is \emph{not} modified by
+this proposal.
+\end{enumerate}
+
+\begin{quote}\raggedright\scriptsize\ttfamily
+\string\predstart\{AT-P043\}\{PROPOSED\}\\
+\string\pfield\{Title\}\{Lock-lattice physical realizability: a lock threshold in an engineered C96
+ring.\}\\
+\string\pfield\{Derived From\}\{Difference $\to$ Actualization $\to$ Spectrum (D96) $\to$ Locking
+operator $\to$ lock law (Ch8); criticality criteria from QG316; design recipe from ResearchY-T\_001.\}\\
+\string\pfield\{Prediction\}\{An engineered circulant C96(1..6) nonlinear oscillator ring exhibits a
+lock threshold in the physical coupling (sharpness $\ge$ 3, width $\le$ 0.4) with hysteresis, and a
+locked configuration decays with two time scales against a single-exponential control. Structure
+universal (QG313); the threshold value and the lock values are hardware-specific and are NOT
+predicted.\}\\
+\string\pfield\{Experimental Test\}\{Bench electronic 96-node ring, runs R1--R4, $\ge$30 repeats,
+blinded labels, three negative controls.\}\\
+\string\pfield\{Current Evidence\}\{None --- proposal. All existing lock-law evidence is statistical
+(QG307--QG319).\}\\
+\string\pfield\{Falsification Criterion\}\{No hysteresis, or locked retention decay
+indistinguishable from all three controls.\}
+\end{quote}
+
+\section{Conclusion}
+
+One idea survives the density objection: the lock lattice as a phase-memory and threshold element
+whose distinguishing feature is a predicted criticality, tested on hardware for the first time.
+Three reasons justify it --- falsification of the lock law as a dynamical claim (strongest), phase
+memory where density is irrelevant, and a neuromorphic threshold element with predicted sharpness.
+The deciding experiment costs one bench prototype, and both branches of the outcome are informative.
+Energy storage is explicitly abandoned, the nonlinearity and coupling network are explicitly
+imported, and the retention hypothesis is explicitly an analogy awaiting test rather than a
+derivation.
+
+\bigskip
+\noindent\textbf{Status:} PROPOSAL --- no experiment performed, no result claimed, no canonical AT
+statement modified.
+
+\end{document}
