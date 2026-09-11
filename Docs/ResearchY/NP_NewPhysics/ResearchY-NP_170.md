@@ -347,6 +347,20 @@ robust than a random one. Therefore:
 - if the locked lattice's advantage over control (d) vanishes while its advantage over (b) persists,
   the effect must be reported as a degeneracy/robustness artefact, not as lock retention.
 
+**Mandatory saturation matching (NP_172, 2026-09-11).** ResearchY-NP_172 shows that the two-time-scale
+retention signature R ≥ 10 is **generic**: it is produced by amplitude-dependent (saturating) damping
+alone, with no barrier, no topological charge and no AT structure. In that audit the generic strongly
+nonlinear ring reaches R = 10.248 while the D96 lock lattice and a random lattice give **R = 6.358
+identically** (to four significant digits) at matched parameters, and a 100× Q contrast produces no
+two-time-scale signature at all (ΔBIC < 0). Therefore:
+- R4 must be scored against a **saturation-matched control** (same β·u₀/γ as the locked lattice), in
+  addition to the degeneracy-matched control (d); a D96-vs-(b) retention advantage is **not** a result;
+- the sampling protocol must **resolve τ_fast**, not only τ_slow: when τ_fast falls below the
+  envelope/sampling window the fitted R becomes a lower bound, so a measured R ≥ 10 on an
+  unresolved fast component is not evidence of retention;
+- a positive R4 outcome must be reported as evidence that the board's oscillators saturate, unless it
+  survives both matched controls. The AT-120 barrier remains an **analogy** (§9).
+
 **R5 — Threshold-element benchmark (H4, optional, only if R3 passes).** Measure switching energy
 per node, threshold sharpness, and device-to-device variability across 5 identical boards; compare
 with published PCM/memristor figures.

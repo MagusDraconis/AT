@@ -158,6 +158,57 @@ carrying the state up→down).
   the lock structure (the noiseless model reaches only 3.4σ) — the imported nonlinearity would be
   doing more work than the lock law; if it shows nothing at g ≤ 1, NP_171 has already explained why.
 
+## Retention Null Audit — H2's signature is generic (2026-09-11)
+
+ResearchY-NP_172 (COMPLETE): the null test of NP_170's **H2** (retention). Question: can a
+two-time-scale ring-down (R = τ_slow/τ_fast ≥ 10) arise from models with **no AT barrier at all**?
+Five deterministic models, charged into the locked configuration and ringed down with no drive:
+da_i/dτ = (−γ_i + iω_i)a_i + i·g·(Σ w a)/deg − β|a_i|²a_i — damping, a **reactive** coupling and
+saturating damping only; no topological charge, no one-way term, no memory, no noise.
+
+- **Verdict: REFUTED — the signature is generic, not AT-specific.**
+  - The generic **strongly nonlinear ring** reaches **R = 10.248 ≥ 10** and PASSES H2 with no barrier.
+  - The **D96 lock lattice and the random lattice give R = 6.358 — identical to four significant
+    digits** (τ_fast 15.398 vs 13.665, τ_slow 97.901 vs 86.888), and *neither* passes R ≥ 10 at the
+    reference parameters (Q = 100, β = 0.05, g = 1.7). The AT topology contributes nothing to R.
+  - Model table (τ_fast | τ_slow | R): D96 15.398 | 97.901 | 6.358 · random 13.665 | 86.888 | 6.358 ·
+    high-Q linear ring 979.014 | 1039.210 | 1.061 (τ-grid floor = single exponential) · weakly
+    nonlinear 29.683 | 110.311 | 3.716 · strongly nonlinear 0.779 | 7.987 | 10.248.
+- **DERIVED closed form** (verified against its own ODE to < 1e−6 and against a coherent-ring
+  simulation to 8.5e−4): for a coherent uniform-amplitude charge in a uniform-Q ring,
+  **E(τ) = u₀·e^(−2γτ)/(1 + (β·u₀/γ)(1 − e^(−2γτ)))** — so (i) the late-time rate is 2γ for *every*
+  β (τ_slow → 1/(2γ)), (ii) the early decay is accelerated by βu₀, (iii) the whole shape depends only
+  on the single dimensionless ratio **β·u₀/γ** — *topology does not appear in the formula*. With β = 0
+  the decay is single-exponential **exactly**, at any Q.
+- **β sweep** (canonical lattice): R = 1.06 (β = 0) → 2.927 (0.005) → 6.358 (0.05) → **13.811 (0.25,
+  PASS)** → 10.248 (0.5). R crosses 10 once β·u₀/γ ≳ 50 and then *falls back* because τ_fast ≈ 0.78
+  leaves the envelope/sampling resolution (window 10, sample 2) — the fitted R is a **lower bound**
+  once τ_fast is unresolved, a limitation that applies to NP_170's R4 **as written**.
+- **Q-contrast probe** (the second candidate mechanism; linear, 100× spread γ ∈ [0.0005, 0.05], both
+  topologies): R at the grid floor with **ΔBIC negative** (−10.1 ring, −9.6 random) — the single
+  exponential is *preferred*. The reactive coupling keeps energy equipartitioned, so the decay follows
+  the mean damping and realistic mode-dependent loss supplies **no** retention signature.
+- **Consequence for NP_170.** NP_171 left R4 retention as the *only* remaining discriminating test.
+  Its signature is now shown to be generic: a positive R4 on hardware would demonstrate that the
+  board's oscillators **saturate**, not that the lock law or the one-way barrier works. R4 must be
+  scored against the degeneracy-matched control (T_015) **and** a **saturation-matched** control (same
+  β·u₀/γ), and must resolve τ_fast. The AT-120 barrier analogy stays an analogy — now for a
+  quantified reason.
+- **Classification.** Closed form + τ_slow → 1/(2γ) + β = 0 exactness **DERIVED**; D96's signature
+  reproduced by a random non-AT lattice (R identical to 4 digits) **CORRESPONDENCE** (non-
+  discriminating); the ~30% deviation of both lattices from the coherent closed form is the D96
+  spectrum's dephasing; "two-time-scale retention requires the AT barrier / is AT-specific"
+  **REFUTED**; H2's discriminating expectation **REFUTED**; "a Q contrast supplies the signature"
+  **REFUTED**. No canonical claim changed; no reclassification (D_040 registry untouched); no new
+  primitive.
+- **Files.** `Docs/ResearchY/NP_NewPhysics/ResearchY-NP_172.md`;
+  `AT.Core/Resonance/Kuramoto/RetentionNullSimulator.cs` (reuses the NP_171 lattice builders);
+  `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_172_Tests.cs` (5/5 ✅, deterministic).
+- **Next open question.** With H1 predicted to fail on hysteresis (NP_171) and H2's retention signature
+  shown generic (NP_172), **both** of NP_170's discriminating criteria are now answered in the negative
+  *in the model*. Is any part of the lock-lattice program distinguishable from generic oscillator
+  physics at all — and if not, what would the Tier-1 board be for?
+
 ## Latest Repo Sync
 
 Recent commits from the other machine:
