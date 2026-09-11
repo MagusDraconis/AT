@@ -1816,6 +1816,69 @@ a signature where capacity has already saturated) even though it explains less v
 canonical AT claim, value, equation or registry entry changed; no new simulation primitive introduced;
 the D_040 ClassificationRegistry is untouched.
 
+ResearchY-D_054 (Low-Energy Spectral Edge Audit, COMPLETE, tests 6/6 PASSED): is capacity controlled by
+the SHAPE of the low-energy spectral edge — λ₂, λ₃, λ₄, λ₅ and the ratios r3 = λ₃/λ₂, r4 = λ₄/λ₂,
+r5 = λ₅/λ₂ — rather than by the near-gap density, the degeneracy count or the multiplicity spectrum?
+Blind protocol: PHASE A (commit ae09d917) freezes the geometry, the coefficients (OLS on D_048/D_050's
+six published cases), the decision rule (ρ > 0.815 AND LOO < 0.03304) and all predictions — no
+measurement code in that file; PHASE B measures and compares. The required case set is the seven rings
+of D_051–D_053, whose targets were ALREADY published, so that part is a PRE-REGISTERED REPLICATION; six
+NEW edge-shape rings were declared in Phase A and measured for the first time in Phase B, which is the
+genuinely blind component. **THE GEOMETRY SETTLES MOST OF THE QUESTION BEFORE ANY SIMULATION.** On a
+circulant ring the eigenvalue at wavevector k equals that at N − k, so the bottom of the spectrum is a
+DOUBLET: λ₂ = λ₃ and λ₄ = λ₅ in 12 OF THE 13 RINGS. Hence r3 = λ₃/λ₂ is EXACTLY 1 (two distinct values
+in the whole family: 1.000000 and 1.089372, the latter only on G1248) and r5 ≡ r4. Only ONE scale-free
+number survives: r4 = λ₄/λ₂, the second folded level over the first, which is 4.000000 for a pure
+parabolic edge λ_k ∝ k² and therefore measures EDGE BENDING — 3.995718 (E1, barely bent) → 3.894202
+(D96) → 3.617858 (D96-24) → 1.018556 (Ring48, whose ±48 offset flips the sign of cos almost every
+step). Only G1248 breaks the pattern (λ₂ = 4.0, λ₃ = λ₄ = 4.35749, λ₅ = 6.0, r3 = r4 = 1.089372,
+r5 = 1.5). **DERIVED BOUNDS DISQUALIFY AN INPUT FAMILY**: of 182 cells (7 inputs × 13 rings × 2 targets)
+λ₂ … λ₅ leave [0,1] ZERO times — the source set spans λ₂ from 0.386 to 96, a far wider envelope than any
+ring, so those lines are shallow — while the ratios leave it 12 times (r4 and r5 six each; worst E1
+capacity 1.09533; r3 once at −0.49307 on G1248). Admissibility and resolution therefore pull in OPPOSITE
+directions: the input that is admissible in linear form does not resolve rings, and the shape descriptor
+that does resolve rings is inadmissible in linear form. METRICS ON THE REQUIRED SET (p is the EXACT
+two-sided permutation p-value; all 7! = 5040 rank permutations enumerated). CAPACITY: λ₂ ρ = **0.214**
+(p = 0.6615, LOO 0.02487), λ₃ identical, λ₄ = λ₅ ρ = 0.179 (p = 0.7131), r3 ρ = 0.000 (p = 1.0000),
+r4 = r5 ρ = **−0.429** (six bounds violations each); baselines recomputed on the same set: near-gap
+ρ = 0.204 (p = 0.8571), degeneracy ρ = **0.815** (p = 0.0310) — the edge shape LOSES on ρ by a factor
+of four. RECOVERY: λ₂ … λ₅ all give ρ = **0.821** (p = **0.0341**), LOO 0.02220/0.02220/0.02069/0.02069,
+beating near-gap 0.408 and degeneracy −0.222 — the FIRST D-group predictor to beat the D_052 field on
+BOTH ρ and LOO — but NOTHING SURVIVES BONFERRONI correction for seven declared inputs (α/7 = 0.00714),
+and the required set's near-gap LOO is not even DEFINED (its entire signal is the single ring at
+near-gap 8, so dropping Ring48 leaves the input constant). HELD-OUT SET (first measurement): E1 0.98598,
+E1-16-32 0.98440, G1248 0.99787, Wscale 0.99929, Two1-12 0.99574, **Pair1-47 0.42089** — capacity span
+0.57840 against the required set's 0.06307 (nine-fold wider, carried by one point). INPUT RESOLUTION ON
+THE HELD-OUT SET: near-gap takes 2 distinct values (2,2,13,2,2,2) and degeneracy 2 (47×5, 23) — both
+separate exactly ONE ring — while λ₂ … λ₅ and r4, r5 take SIX, the only predictors that resolve every
+held-out ring. AND THEY STILL LOSE: capacity ρ = 0.143 (p = 0.8028) against the degeneracy count's
+0.655, LOO 0.35984 vs 0.23353 — so **RESOLUTION IS NOT PREDICTIVENESS**. **DERIVED** — the doublet
+collapse (r3 ≡ 1, r5 ≡ r4, one surviving shape number); r3 varying on the calibration set and constant
+on the target set, which is D_051's failure mode in MIRROR IMAGE, visible structurally with no
+measurement, extrapolating to a NEGATIVE prediction (−0.49307 on G1248) and giving ρ = 0.000,
+p = 1.0000; the derived bounds disqualifying r4/r5 in linear form; and λ₂ … λ₅ being ONE predictor
+relabelled (identical ρ to three decimals on both targets, so adding λ₃/λ₄/λ₅ buys nothing — D_050's
+lesson reproduced on a new input family). **EMERGENT** — the recovery ρ = 0.821 signal and its
+directional held-out echo (ρ = 0.771, p = 0.1028); the near-total uniformity of ring capacity (12 of 13
+at 0.94 … 1.00, so the case set has almost no variance left to explain); the
+resolution-versus-predictiveness inversion. **REFUTED** — edge-shape control of capacity (ρ 0.214 vs
+0.815, and r4/r5 NEGATIVELY correlated at −0.429); the edge shape beating the D_052 field for capacity
+on either case set (the held-out set even gives the degeneracy count refit R² = 0.999); λ₃/λ₄/λ₅ adding
+information beyond λ₂; and the shape ratios being usable predictors in linear form. GOAL ("beat the
+near-gap, degeneracy and multiplicity-spectrum predictors"): NOT MET for capacity; MET on the required
+set for recovery, but not confirmed and not surviving multiple-comparison correction. WHAT THE AUDIT
+DOES ESTABLISH: the low-energy edge does not control capacity within this ring family — but the edge
+GEOMETRY identifies the one ring that breaks the family: **Pair1-47 (±1 and ±47)** is the only audited
+ring whose spectrum bottom is not the folded doublet pair (λ₂ at k = 2 rather than k = 1, near-gap 13,
+degeneracy count 23, 25 distinct levels) and the only one whose capacity falls to 0.42089. That is an
+EXISTENCE statement about the ring family, not a predictor: the family is not uniform, and the outlier
+is found by its geometry rather than by any numeric fit. New open question for the D group: what makes
+the non-folded edge (Pair1-47) collapse, given that every folded-edge ring saturates — the headroom
+(96 − 25 = 71) is the largest in the family and yet only ~42 % of it is collected. No canonical AT
+claim, value, equation or registry entry changed; no new simulation primitive (the required case set
+reuses the shared cache; only the six held-out rings are measured); the D_040 ClassificationRegistry is
+untouched.
+
 ResearchY-NP_002 (Highest-Value V2.2 Program, COMPLETE): what is the highest-value
 V2.2 physics program? Verdict: MEASUREMENT ORIGIN — it scores 19/20 (impact 5,
 feasibility 4, testability 5, derived-chain dependence 5), the highest of ten
