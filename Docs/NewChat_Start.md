@@ -1768,6 +1768,54 @@ withheld and D_051 showed cannot be replaced by the spectrum. No canonical AT cl
 or registry entry changed; D_050's and D_051's classifications are reaffirmed, not reclassified; the
 D_040 ClassificationRegistry is untouched.
 
+ResearchY-D_053 (Perturbation-Family Dominance Audit, COMPLETE, tests 5/5 PASSED): is capacity
+controlled MORE by the perturbation FAMILY than by spectral invariants? Two-factor design on the
+seven 96-node rings × the four families (delete/add/rewire/weight), with a control that is EXACT in
+one direction: a family change perturbs the SAME adjacency, so λ₂, degeneracy count, multiplicity
+entropy and ΔE_lock are bit-for-bit fixed, while a spectrum change holds only the family. The main
+comparison and the variance decomposition reuse per-family cells the shared ensemble ALREADY stores
+(no new simulation); only §4 measures anything new. CAPACITY MATRIX (delete | add | rewire | weight):
+D96 0.9843|0.9791|0.9974|1.0000; S96-123 0.9516|0.9464|0.9791|1.0000; S96-135 0.9229|0.9307|0.9529|
+0.9412; D96-24 0.9544|0.9591|0.9918|0.9825; Decay96 1.0000|1.0000|1.0000|1.0000; Boost96 0.9932|
+0.9891|0.9986|1.0000; Ring48 0.9804|0.9895|1.0000|1.0000. CONTROLLED COMPARISON: capacity — family
+change (spectrum exactly fixed) mean range **0.0246** vs spectrum change (family fixed) **0.0631**,
+ratio **0.39×**; recovery — family 0.0450 vs spectrum 0.0607 on range (0.74×) but family LARGER on
+mean pairwise |Δ| (0.0255 vs 0.0197). VARIANCE DECOMPOSITION (7×4 = 28 cells, two-way layout):
+CAPACITY grand mean 0.9794 — spectrum η² **74.5 %** (SS 0.011700, sd 0.0442), family **15.7 %** (SS
+0.002471, sd 0.0287), interaction 9.8 %; RECOVERY grand mean 0.9614 — spectrum 39.1 %, family 30.5 %
+(family main-effect sd 0.04738 EXCEEDS spectrum sd 0.03795), interaction 30.4 %. FAMILY ORDER PER RING:
+D96 / S96-123 / Boost96 = weight > rewire > delete > add; S96-135 / D96-24 / Ring48 = rewire > weight >
+add > delete; Decay96 = four-way exact tie. Across the six varying rings weight and rewire are ALWAYS
+the top two and delete and add ALWAYS the bottom two (a consistent 2+2 split) while the order WITHIN
+each pair flips — a noise effect would not preserve the split, a universal law would preserve the full
+order. **DERIVED** — the control is ASYMMETRIC and the conclusion is therefore conservative: the family
+axis is the perfectly controlled one and is STILL the smaller effect for capacity, so spectrum
+dominance cannot be an artifact of weak control; Decay96 is EXACTLY family-invariant in capacity
+(1.0000 × 4, row spread 0.0000) because its spectrum is 47×2, 2×1 — NO multiplicity greater than 2
+exists, so no hard coincidence is left to resolve, making the invariance a structural statement and
+not a fit; the 2+2 family split; and capacity as a SATURATING quantity, which regime-bounds the
+spectrum effect. **EMERGENT** — the 74.5/15.7/9.8 split; family main effects on capacity weight 0.9891
+> rewire 0.9886 > add 0.9706 > delete 0.9695 (weight perturbation breaks every symmetry at once
+without removing a single edge — D_048's side finding reproduced on a new family); recovery is the
+factor-balanced case; all seven rings adapt strongly (0.9369 … 1.0000) so the whole comparison lives in
+the top decile of the scale. **REFUTED** — "capacity is controlled more by the family than by spectral
+invariants" (η² 15.7 % vs 74.5 %; family spread 0.39× the spectrum spread); "holding spectral
+quantities fixed isolates the dominant control"; mutual proxying of the two factors (9.8 % / 30.4 %
+interaction means neither is a rescaling of the other); and the PURITY of the spectrum effect — §4's
+fixed-ABSOLUTE-dose check shows the delete-family spectrum spread falling 0.0771 (fractional) → 0.0351
+(k = 13) → 0.0065 (k = 29) → 0.0000 (k = 58), ratio 0.18×, with the FAMILY spread ALSO exactly 0.0000
+at k = 58 (every sampled cell at capacity 1.0000). ANSWER: **NO** for capacity in every regime tested —
+and in the saturated regime BOTH factors vanish together, so the question is ill-posed outside the
+unsaturated regime (58 edges = 5 % of a degree-24 ring's edge count, 20 % of a degree-6 ring's).
+REFINEMENT OF D_049: its family finding (edge deletion collapsing the frontier to one case) was
+measured across a HETEROGENEOUS case set; within one homogeneous topological family the family effect,
+though real and consistently ordered, is not dominant — so **family membership governs WHICH cases a
+frontier contains, not how large a case's response is**. CONSEQUENCE: the family axis is the
+better-BEHAVED measurement (it needs no dose matching, survives bit-for-bit spectral control, and keeps
+a signature where capacity has already saturated) even though it explains less variance here. No
+canonical AT claim, value, equation or registry entry changed; no new simulation primitive introduced;
+the D_040 ClassificationRegistry is untouched.
+
 ResearchY-NP_002 (Highest-Value V2.2 Program, COMPLETE): what is the highest-value
 V2.2 physics program? Verdict: MEASUREMENT ORIGIN — it scores 19/20 (impact 5,
 feasibility 4, testability 5, derived-chain dependence 5), the highest of ten
