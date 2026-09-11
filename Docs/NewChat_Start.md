@@ -305,6 +305,42 @@ GENERIC / D96-SPECIFIC / AT-SPECIFIC. Success criterion = at least one AT-SPECIF
   the single question that could reopen a hardware test of the lock law, and it is a theory
   question, not an experiment.
 
+## Lock-Lattice Program — FORMALLY CLOSED (ResearchY-NP_175, 2026-09-11)
+
+ResearchY-NP_175 (COMPLETE) is the closure audit: it consolidates NP_170–NP_174 from **completed
+results only** (no new measurement) and formally closes the program. **NP_170 NOT REFUTED; NP_170
+TEST PROGRAM CLOSED.** NP_170 now carries a front-page closure banner and its registry status reads
+CLOSED (superseded by NP_175); no claim, number, criterion or boundary statement inside NP_170 was
+altered, and no file was deleted.
+
+- **Closure reason (one line each).** H1 (NP_171): sharp/narrow pass but hysteresis fails at
+  3.4σ < 5σ, nothing locks at the board's nominal maximum (f(g = 1) = 0, K ≥ 10.29·ω₁), and a
+  threshold is generic. H2 (NP_172): retention is generic — a barrier-free ring passes R = 10.248,
+  D96 and a random lattice give R = 6.358 identically, the saturation-matched control reproduces D96
+  exactly. Discriminators (NP_173): the four observables separating D96 from every control at ≥5σ are
+  generic-driven or read back the input spectrum; hysteresis and retention fail outright. Synthesis
+  (NP_174): H3 is a superposition identity (V = 1.0000 on both lattices) and the barrier's only
+  possible observable — a non-reciprocal directional response — is structurally zero.
+- **Classification (18 observables): 11 GENERIC · 5 D96-SPECIFIC (inputs) · 0 AT-SPECIFIC · 2
+  excluded/refuted.** Decision rule applied: AT-SPECIFIC count = 0 → CLOSE.
+- **ProgramStatus: CLOSE.**
+- **Archive recommendation (applied as labels only).** (1) KEEP NP_170 and NP_171–NP_174 unchanged as
+  the closed evidence record. (2) MARK SUPERSEDED: NP_170 status = CLOSED (superseded by NP_175) in the
+  ResearchY index/status registries plus a front-page closure banner; no claim altered. (3) PRESERVE
+  REPRODUCIBILITY: keep the deterministic harnesses (`LockLatticeSimulator.cs`,
+  `RetentionNullSimulator.cs`) and the suites `Y_NP_171_Tests.cs` (4/4), `Y_NP_172_Tests.cs` (5/5),
+  `Y_NP_173_Tests.cs` (5/5), `Y_NP_174_Tests.cs` (5/5), all passing with fixed seeds.
+- **What stays open (explicitly NOT closed here).** (a) A **theory** audit: does any AT-native
+  construction yield a non-reciprocal coupling (w_ij ≠ w_ji)? — the single structural prerequisite that
+  could reopen a hardware test. (b) A **statistics** program: can the lock law beat QG319's classifier
+  rates (FP 96.9 % / FN 66.1 %) on datasets under a blinded, pre-registered protocol? — no board
+  needed. (c) Documentation: restate the lock law's descriptive status, and record H0/H3 as validity
+  gates.
+- **Unchanged by this closure:** canonical AT (no claim, value, equation or boundary statement), the
+  D_040 classification registry, and the Ch8 lock law's status as a statistical regularity with
+  domain-specific values (QG313) evidenced on datasets and synthetic cohorts (QG307–QG319).
+- **Files.** `Docs/ResearchY/NP_NewPhysics/ResearchY-NP_175.md` (with FINAL VERDICT section).
+
 ## Latest Repo Sync
 
 Recent commits from the other machine:

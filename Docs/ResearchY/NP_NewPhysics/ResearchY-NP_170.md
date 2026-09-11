@@ -1,5 +1,17 @@
 # ResearchY-NP_170 — Lock-Lattice Phase Memory (Physical Realizability Test)
 
+> ## STATUS: CLOSED
+>
+> **Superseded by:** NP_171 · NP_172 · NP_173 · NP_174 · NP_175
+>
+> **Summary:** The proposed lock-lattice experiment was evaluated before hardware construction.
+>
+> **Result:** No AT-specific discriminator remained. The program was therefore closed at proposal
+> stage.
+>
+> The document is retained for historical and reproducibility purposes. No claim, number, criterion
+> or boundary statement below has been altered by the closure.
+
 **Program:** ResearchY — Wave Geometry Program
 **Subject theory:** The Actualization Theory (AT) — a reconstruction of physics from Difference,
 Actualization and Spectrum on the 96-site circulant attractor, from two primitives (Difference and
@@ -10,7 +22,8 @@ internal phase and audit labels.
 **ID:** ResearchY-NP_170 (permanent)
 **Title:** Lock-Lattice Phase Memory — physical realizability test proposal (LLPM) for the lock law
 of The Actualization Theory (AT)
-**Status:** PLANNED — proposal only (no experiment performed, no result claimed)
+**Status:** CLOSED — superseded by ResearchY-NP_175 (2026-09-11). Historical status at time of writing:
+PLANNED — proposal only (no experiment performed, no result claimed)
 **Revision:** rev. 2 (2026-09-11) — revised after the post-fetch results NP_169 and T_007–T_015;
 see §13 for exactly what changed and why
 **Date:** 2026-09-11
