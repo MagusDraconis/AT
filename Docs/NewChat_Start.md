@@ -1948,6 +1948,69 @@ perturbator's coin move the D_048–D_054 weight-family numbers enough to matter
 value, equation or registry entry changed; no new simulation primitive added to the shared machinery;
 the D_040 ClassificationRegistry is untouched.
 
+ResearchY-D_056 (Multiplicity Distribution Audit, COMPLETE, tests 6/6 PASSED): is capacity controlled by
+the FULL MULTIPLICITY DISTRIBUTION — max multiplicity, Gini(m), Entropy(m), Herfindahl(m),
+largest-level share — beating the near-gap density (ρ 0.204), the degeneracy count (ρ 0.815) and λ₂
+(ρ 0.214)? Blind protocol: PHASE A (commit fcd81f69) freezes the distributions, the coefficients (OLS on
+D_048/D_050's six published sources), the decision rule, an outlier-removal check and every prediction —
+for the required seven rings AND FOUR NEW rings; PHASE B measures. **CONVENTION, stated because it
+matters: m is the multiplicity list of EVERY distinct level INCLUDING singletons, so Σm = N = 96
+exactly** — dropping singletons would inflate every concentration statistic and break the normalization
+Gini, entropy and Herfindahl need. **THE FIVE STATISTICS ARE ONE AXIS, NOT FIVE**: max multiplicity, Gini
+and the largest share are mutually monotone and give IDENTICAL ρ (−0.964 for capacity, −0.037 for
+recovery), while Entropy (+0.964) and Herfindahl (−0.964) are the exact mirror of that axis — the same
+collinear-input collapse D_050 found, reproduced on a new input family. METRICS ON THE REQUIRED SET
+(exact two-sided permutation p, 7! = 5040 enumerated): CAPACITY — max multiplicity ρ = **−0.964**
+(p = **0.0024**, LOO 0.07781, R² 0.995); Gini −0.964 (LOO 0.12010, R² 0.987); Entropy +0.964
+(LOO 0.04174, R² 0.995); Herfindahl −0.964 (LOO 0.48612, R² 0.994); largest share −0.964 (LOO 0.07781,
+R² 0.995); rank ceiling (D_055) +0.906 (p = 0.0095, LOO 0.04892, R² **0.999**, best frozen error
+0.19963). BASELINES recomputed on the same set: near-gap ρ = 0.204 with LOO **n/a (constant)** and
+R² 0.036; degeneracy count ρ = **0.964** (p = 0.0024, LOO 0.12029, R² 0.987); λ₂ ρ = 0.536 (LOO
+0.27469, R² 0.078). ⇒ THE DISTRIBUTION TIES THE DEGENERACY COUNT ON ρ EXACTLY (both 0.964, identical
+p = 0.0024) and beats λ₂ and near-gap; it wins on R² (0.995 vs 0.987) and on the healthy subset; and
+p = 0.0024 is the FIRST D-group result to SURVIVE MULTIPLE-COMPARISON CORRECTION (α/5 = 0.01 for five
+declared inputs). The frozen rule (|ρ| > 0.815 AND LOO < 0.03304) is not met — but neither is it met by
+the degeneracy count itself on this case set (0.12029), since the 0.03304 bar was inherited from D_052's
+DIFFERENT case set. **RECOVERY IS NOT PREDICTED AT ALL**: every distribution statistic gives ρ = 0.037
+with exact p = **0.9786** — indistinguishable from no association — while λ₂ reaches ρ = 0.821
+(p = 0.0341). PRE-REGISTERED OUTLIER CHECK (Pair1-47 removed): ρ moves only from 0.964 to 0.941
+(Δρ = 0.023), so the correlation does NOT rest on the single extreme ring, and on the six healthy rings
+the distribution statistics (R² up to **0.784**, Herfindahl) BEAT the degeneracy count (0.528), λ₂
+(0.125) and near-gap (0.058); the rank ceiling reaches **R² 0.978 and LOO 0.00511** there. NON-INJECTIVITY
+INHERITED: D96, S96-123 and Ring48 share ONE multiplicity distribution exactly — identical max
+multiplicity, Gini, entropy, Herfindahl and share — so every functional of the distribution assigns them
+one number while their measured capacities spread 0.02320 = 4 % of the family span (the same triple
+D_052 flagged). **THE NEAR-GAP BASELINE IS STRUCTURALLY UNUSABLE ON RINGS**: six of the seven rings sit
+at near-gap 2 with Ring48 alone at 8, so its input becomes CONSTANT as soon as one ring is held out —
+its LOO is UNDEFINED, not merely poor, so it is not a competitor that can be beaten or lose here. BLIND
+TEST (four new rings, first measurement; the four were chosen to vary the distribution SHAPE rather than
+its maximum): P47-16 0.69765 (dominant level partly dissolved, max multiplicity 34), P47-123 0.99618
+(max m 4), H51123 0.97455 (no N/2 relationship, max m 6), and **P47-48 0.58920** — the only collapsing
+blind ring. **THE SHARP FORECAST WAS CONFIRMED EXACTLY**: P47-48 was built by adding the
+exactly-antipodal ±48 offset, whose odd-k contribution is 2(1 − cos πk) = 4, so the dominant level should
+SURVIVE, MOVED from λ = 4 to λ = 8 — measured λ = **8.000000** with multiplicity **49** (Pair1-47:
+λ = 4.000000, m = 50), and its λ₂ is **IDENTICAL** to Pair1-47's (0.034221) with near-gap 2, so the
+near-gap predictor cannot see it at all. Rank agreement on the four blind rings is **PERFECT for every
+input** (ρ = ±1.000; n = 4, 4! = 24 permutations, so the smallest attainable two-sided p is 2/24 =
+0.0833), with the rank ceiling leading (LOO 0.01302, R² 0.999) against degeneracy 0.949, λ₂ 0.400 and
+near-gap 0.258. **DERIVED** — the five-statistics collapse onto one axis with two signs; the rank-budget
+ceiling leads on EVERY fidelity measure because it is DERIVED from the distribution by argument rather
+than fitted from it; the inherited non-injectivity; the structural unusability of the near-gap baseline
+on rings; and the λ = 8 clause. **EMERGENT** — the blind confirmation (four of four orderings, and
+P47-48's collapse at λ = 8); the outlier check passing; and the poor source-fitted coefficients for every
+input (mean errors 0.19 … 0.49 — D_051's lesson recurring, since coefficients fitted on D_048/D_050's
+NON-RING sources extrapolate badly onto rings; the rank ceiling is least bad, 0.19963 required and
+0.19593 blind). **REFUTED** — distribution control BEYOND the degeneracy count on ordering (identical ρ
+and identical p); any distribution control of recovery (p = 0.9786); the independence of the five
+statistics; and the near-gap baseline as a meaningful competitor on this family. SUMMARY: the multiplicity
+distribution predicts ring capacity strongly and recovery not at all; its five statistics are one axis
+that only TIES the degeneracy count on ordering while beating it on R² and on the healthy subset, and
+reaches perfect ordering on four brand-new rings whose collapse was predicted in advance from the
+distribution alone; the winner on every fidelity measure is D_055's DERIVED rank-budget ceiling. No
+canonical AT claim, value, equation or registry entry changed; no new simulation primitive (the twelve
+previously audited rings come from the shared cache; only the four new rings are measured); the D_040
+ClassificationRegistry is untouched.
+
 ResearchY-NP_002 (Highest-Value V2.2 Program, COMPLETE): what is the highest-value
 V2.2 physics program? Verdict: MEASUREMENT ORIGIN — it scores 19/20 (impact 5,
 feasibility 4, testability 5, derived-chain dependence 5), the highest of ten

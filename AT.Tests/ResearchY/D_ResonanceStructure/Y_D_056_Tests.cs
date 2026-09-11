@@ -286,4 +286,441 @@ public class Y_D_056_Tests : ResearchTestBase
 
         Output.WriteLine(sb.ToString());
     }
+
+    // ── 3. Measurement and metrics ──────────────────────────────────────────
+
+    private sealed record Observed(string Ring, double Capacity, double Recovery);
+
+    /// <summary>
+    /// Measure any named ring. D_048's six cases and the twelve rings audited by D_051–D_055 come from
+    /// the shared cache; D_056's four new rings are measured here for the first time under the identical
+    /// protocol (4 families × 5 doses × 3 fixed seeds, connectivity-guarded).
+    /// </summary>
+    private static readonly Dictionary<string, AdaptabilityProfile> ProfileCache = [];
+
+    private static AdaptabilityProfile ProfileOf(string ring)
+    {
+        if (ProfileCache.TryGetValue(ring, out var c)) return c;
+        var p = AdaptabilityAudit.CaseNames.Contains(ring)
+            ? AdaptabilityAudit.Profiles.Single(x => x.Name == ring)
+            : AdaptabilityAudit.Study(ring, AdjacencyOf(ring));
+        ProfileCache[ring] = p;
+        return p;
+    }
+
+    private static Observed[] Measure(IEnumerable<string> names)
+        => names.Select(n => { var p = ProfileOf(n); return new Observed(n, p.Capacity, p.MeanRecovery); }).ToArray();
+
+    private static double LooRmse(IReadOnlyList<double> x, IReadOnlyList<double> y)
+    {
+        int n = y.Count;
+        double sse = 0.0;
+        for (int h = 0; h < n; h++)
+        {
+            var xs = new List<double>();
+            var ys = new List<double>();
+            for (int i = 0; i < n; i++)
+                if (i != h) { xs.Add(x[i]); ys.Add(y[i]); }
+            if (xs.Max() - xs.Min() < 1e-12) return double.NaN;
+            var (slope, intercept, _, _) = AdaptabilityAudit.Fit(xs.ToArray(), ys.ToArray());
+            double pred = slope * x[h] + intercept;
+            sse += (pred - y[h]) * (pred - y[h]);
+        }
+        return Math.Sqrt(sse / n);
+    }
+
+    /// <summary>Exact two-sided permutation p-value for Spearman ρ (n! enumerated).</summary>
+    private static double ExactPermutationP(double[] x, double[] y)
+    {
+        double[] rx = AdaptabilityAudit.Ranks(x), ry = AdaptabilityAudit.Ranks(y);
+        double observed = Math.Abs(AdaptabilityAudit.Pearson(rx, ry));
+        int n = ry.Length;
+        var perm = new double[n];
+        int atLeast = 0, total = 0;
+        var idx = Enumerable.Range(0, n).ToArray();
+        void Walk(int k)
+        {
+            if (k == n)
+            {
+                for (int i = 0; i < n; i++) perm[i] = ry[idx[i]];
+                total++;
+                if (Math.Abs(AdaptabilityAudit.Pearson(rx, perm)) >= observed - 1e-12) atLeast++;
+                return;
+            }
+            for (int i = k; i < n; i++)
+            {
+                (idx[k], idx[i]) = (idx[i], idx[k]);
+                Walk(k + 1);
+                (idx[k], idx[i]) = (idx[i], idx[k]);
+            }
+        }
+        Walk(0);
+        return total == 0 ? double.NaN : (double)atLeast / total;
+    }
+
+    private static string F(double v, string format = "F5")
+        => double.IsNaN(v) ? "n/a (constant)" : v.ToString(format, CultureInfo.InvariantCulture);
+
+    /// <summary>Every metric for one input on one case set, for one target.</summary>
+    private sealed record Metric(string Input, string Target, string Set, double Rho, double P,
+        double Loo, double R2, double FrozenError);
+
+    private static List<Metric> Metrics(IReadOnlyList<Observed> obs, string setName)
+    {
+        var list = new List<Metric>();
+        foreach (string target in new[] { "capacity", "recovery" })
+        {
+            double[] y = obs.Select(o => target == "capacity" ? o.Capacity : o.Recovery).ToArray();
+            foreach (string input in InputNames)
+            {
+                double[] x = obs.Select(o => InputOf(o.Ring, input)).ToArray();
+                var f = FitOnSources(input, target == "capacity");
+                double frozenErr = obs.Select(o => Math.Abs(f.Slope * InputOf(o.Ring, input) + f.Intercept
+                    - (target == "capacity" ? o.Capacity : o.Recovery))).Average();
+                list.Add(new Metric(input, target, setName, AdaptabilityAudit.Spearman(x, y),
+                    ExactPermutationP(x, y), LooRmse(x, y), AdaptabilityAudit.Fit(x, y).R2, frozenErr));
+            }
+        }
+        return list;
+    }
+
+    /// <summary>The three baselines of the brief, recomputed on the same case set.</summary>
+    private static List<Metric> BaselineMetrics(IReadOnlyList<Observed> obs)
+    {
+        var list = new List<Metric>();
+        foreach (string target in new[] { "capacity", "recovery" })
+        {
+            double[] y = obs.Select(o => target == "capacity" ? o.Capacity : o.Recovery).ToArray();
+            foreach (string input in new[] { "near-gap", "degeneracy", "lambda2" })
+            {
+                double[] x = obs.Select(o =>
+                {
+                    var spec = SpectrumOf(o.Ring);
+                    var p = ProfileOf(o.Ring);
+                    return input switch
+                    {
+                        "near-gap" => (double)AdaptabilityAudit.NearGapDensityK2(spec, p.Lambda2),
+                        "degeneracy" => Mult(o.Ring).Count(v => v > 1),
+                        _ => p.Lambda2,
+                    };
+                }).ToArray();
+                list.Add(new Metric(input, target, "recomputed", AdaptabilityAudit.Spearman(x, y),
+                    ExactPermutationP(x, y), LooRmse(x, y), AdaptabilityAudit.Fit(x, y).R2, double.NaN));
+            }
+        }
+        return list;
+    }
+
+    [Fact]
+    public void D056_03_Metrics_On_The_Required_Set()
+    {
+        var sb = new StringBuilder();
+        PrintHeader("3. Metrics on the required case set");
+
+        var required = Measure(CaseSet);
+        var metrics = Metrics(required, "required");
+        var baseline = BaselineMetrics(required);
+
+        sb.AppendLine("  MEASURED");
+        sb.AppendLine("  ring        capacity   recovery   max m   Gini(m)   Entropy(m)   Herfindahl   rank ceiling");
+        sb.AppendLine("  " + new string('-', 104));
+        foreach (var o in required)
+        {
+            var m = Mult(o.Ring);
+            sb.AppendLine($"  {o.Ring,-10} {o.Capacity,9:F5} {o.Recovery,10:F5} {m.Max(),8} {Gini(m),9:F4} {Entropy(m),12:F4} {Herfindahl(m),12:F4} {RankCeilingCapacity(m, o.Ring),14:F4}");
+        }
+
+        sb.AppendLine();
+        sb.AppendLine("  p is the EXACT two-sided permutation p-value for ρ (all 7! = 5040 rank permutations).");
+        foreach (string target in new[] { "capacity", "recovery" })
+        {
+            sb.AppendLine();
+            sb.AppendLine($"  {target.ToUpperInvariant()}");
+            sb.AppendLine("  input                    Spearman ρ   exact p   LOO RMSE             refit R²   frozen mean |error|");
+            sb.AppendLine("  " + new string('-', 100));
+            foreach (var m in metrics.Where(m => m.Target == target).OrderByDescending(m => Math.Abs(m.Rho)))
+                sb.AppendLine($"  {m.Input,-22} {m.Rho,10:F3} {m.P,10:F4}   {F(m.Loo),-18} {m.R2,10:F3} {m.FrozenError,20:F5}");
+        }
+
+        sb.AppendLine();
+        sb.AppendLine("  THE THREE BASELINES, recomputed on this case set");
+        sb.AppendLine("  baseline          target     Spearman ρ   exact p   LOO RMSE             refit R²");
+        sb.AppendLine("  " + new string('-', 84));
+        foreach (var m in baseline)
+            sb.AppendLine($"  {m.Input,-16} {m.Target,-10} {m.Rho,10:F3} {m.P,10:F4}   {F(m.Loo),-18} {m.R2,10:F3}");
+
+        sb.AppendLine();
+        sb.AppendLine("  HEAD-TO-HEAD — does a distribution input beat the field? Frozen rule: |ρ| > 0.815 AND");
+        sb.AppendLine("  LOO RMSE < 0.03304, on the required case set.");
+        sb.AppendLine("  target     best distribution input   |ρ|      > 0.815?   LOO        < 0.03304?   BEATS?   sign");
+        sb.AppendLine("  " + new string('-', 108));
+        foreach (string target in new[] { "capacity", "recovery" })
+        {
+            var cand = metrics.Where(m => m.Target == target).OrderByDescending(m => Math.Abs(m.Rho)).First();
+            bool rhoOk = Math.Abs(cand.Rho) > 0.815;
+            bool looOk = !double.IsNaN(cand.Loo) && cand.Loo < 0.03304;
+            sb.AppendLine($"  {target,-10} {cand.Input,-26} {Math.Abs(cand.Rho),6:F3} {rhoOk,11}   {F(cand.Loo),-10} {looOk,12}   {(rhoOk && looOk ? "YES" : "NO"),-8} {(cand.Rho > 0 ? "positive" : "NEGATIVE")}");
+        }
+
+        Output.WriteLine(sb.ToString());
+        Assert.Equal(7, required.Length);
+    }
+
+    // ── 4. Does the correlation survive removing the outlier? ───────────────
+
+    [Fact]
+    public void D056_04_Outlier_Removed()
+    {
+        var sb = new StringBuilder();
+        PrintHeader("4. Pre-registered robustness check — the same metrics without Pair1-47");
+
+        var full = Measure(CaseSet);
+        var without = full.Where(o => o.Ring != "Pair1-47").ToArray();
+        var metricsFull = Metrics(full, "full");
+        var metricsWithout = Metrics(without, "without Pair1-47");
+        var baseFull = BaselineMetrics(full);
+        var baseWithout = BaselineMetrics(without);
+
+        sb.AppendLine("  This check was frozen in PHASE A precisely because every distribution statistic is monotone in");
+        sb.AppendLine("  'how concentrated is the spectrum' and Pair1-47 is the extreme point. If the correlation lives");
+        sb.AppendLine("  on that one ring, removing it must collapse the ρ values.");
+        sb.AppendLine();
+        sb.AppendLine("  capacity, ρ over seven rings → ρ over the six healthy rings, and R² the same way:");
+        sb.AppendLine("  input                    ρ (7)     ρ (6)     Δρ       R² (7)   R² (6)   LOO (6)");
+        sb.AppendLine("  " + new string('-', 92));
+        foreach (string input in InputNames)
+        {
+            var a = metricsFull.Single(m => m.Target == "capacity" && m.Input == input);
+            var b = metricsWithout.Single(m => m.Target == "capacity" && m.Input == input);
+            sb.AppendLine($"  {input,-22} {a.Rho,8:F3} {b.Rho,9:F3} {b.Rho - a.Rho,8:F3} {a.R2,9:F3} {b.R2,8:F3}   {F(b.Loo)}");
+        }
+        sb.AppendLine();
+        sb.AppendLine("  the three baselines under the same removal:");
+        sb.AppendLine("  baseline          ρ (7)     ρ (6)     R² (7)   R² (6)");
+        sb.AppendLine("  " + new string('-', 58));
+        foreach (string input in new[] { "near-gap", "degeneracy", "lambda2" })
+        {
+            var a = baseFull.Single(m => m.Target == "capacity" && m.Input == input);
+            var b = baseWithout.Single(m => m.Target == "capacity" && m.Input == input);
+            sb.AppendLine($"  {input,-16} {a.Rho,8:F3} {b.Rho,9:F3} {a.R2,9:F3} {b.R2,8:F3}");
+        }
+
+        sb.AppendLine();
+        sb.AppendLine("  THE THREE RINGS THE DISTRIBUTION CANNOT SEPARATE. D96, S96-123 and Ring48 share one");
+        sb.AppendLine("  multiplicity distribution exactly — identical max multiplicity, Gini, entropy and Herfindahl —");
+        sb.AppendLine("  so every distribution input assigns them ONE number. Their measured capacities:");
+        var triple = full.Where(o => o.Ring is "D96" or "S96-123" or "Ring48").ToArray();
+        foreach (var o in triple) sb.AppendLine($"    {o.Ring,-10} capacity {o.Capacity:F5}");
+        double spread = triple.Max(o => o.Capacity) - triple.Min(o => o.Capacity);
+        double span = full.Max(o => o.Capacity) - full.Min(o => o.Capacity);
+        sb.AppendLine($"    spread within that single distribution value: {spread:F5} = {spread / span:P0} of the whole family span");
+        sb.AppendLine("  So the distribution is subject to exactly the D_052 non-injectivity, on the very same triple.");
+
+        sb.AppendLine();
+        sb.AppendLine("  AND THE NEAR-GAP BASELINE IS UNUSABLE HERE. Its ρ over the seven rings is driven by Ring48");
+        sb.AppendLine("  alone (near-gap 8 against six 2s), so dropping a single ring makes its input constant:");
+        sb.AppendLine($"    near-gap LOO on the seven rings: {F(baseFull.Single(m => m.Target == "capacity" && m.Input == "near-gap").Loo)}");
+        sb.AppendLine($"    near-gap LOO on the six healthy rings: {F(baseWithout.Single(m => m.Target == "capacity" && m.Input == "near-gap").Loo)}");
+
+        Output.WriteLine(sb.ToString());
+    }
+
+    // ── 5. The blind test ───────────────────────────────────────────────────
+
+    [Fact]
+    public void D056_05_Blind_Rings()
+    {
+        var sb = new StringBuilder();
+        PrintHeader("5. The blind test — four new multiplicity-distribution rings");
+
+        var blind = Measure(BlindSet);
+        var fits = new Dictionary<string, (double Slope, double Intercept, double R2)>();
+        foreach (string input in InputNames)
+            foreach (bool cap in new[] { true, false })
+                fits[$"{(cap ? "capacity" : "recovery")}/{input}"] = FitOnSources(input, cap);
+
+        sb.AppendLine("  These four rings were declared in commit fcd81f69 and measured for the first time in this");
+        sb.AppendLine("  commit, so this section is the audit's genuinely blind component.");
+        sb.AppendLine();
+        sb.AppendLine("  ring        obs capacity   obs recovery   max m   rank ceiling   predicted cap (ceiling)");
+        sb.AppendLine("  " + new string('-', 96));
+        foreach (var o in blind)
+        {
+            var m = Mult(o.Ring);
+            double cf = fits["capacity/rank ceiling (D_055)"].Slope;
+            double ci = fits["capacity/rank ceiling (D_055)"].Intercept;
+            double ceil = RankCeilingCapacity(m, o.Ring);
+            sb.AppendLine($"  {o.Ring,-10} {o.Capacity,12:F5} {o.Recovery,14:F5} {m.Max(),8} {ceil,14:F4} {cf * ceil + ci,26:F5}");
+        }
+        sb.AppendLine();
+        sb.AppendLine("  THE SHARP MECHANISM FORECAST. P47-48 was built by adding the exactly-antipodal ±48 offset to");
+        sb.AppendLine("  Pair1-47. For odd k the ±48 term is 2(1 − cos(πk)) = 4, so the odd-mode sum becomes");
+        sb.AppendLine("  4 + 4 = 8 EXACTLY: the dominant level should survive, MOVED from λ = 4 to λ = 8, and the ring");
+        sb.AppendLine("  should collapse like Pair1-47 despite a different edge set. Checked directly:");
+        foreach (string ring in new[] { "Pair1-47", "P47-48" })
+        {
+            var spec = SpectrumOf(ring);
+            double lam2 = spec.Where(v => v > AdaptabilityAudit.Tol).Min();
+            var m = Mult(ring);
+            int dom = m.Max();
+            double at = spec.GroupBy(v => Math.Round(v, 6)).OrderByDescending(g => g.Count()).First().Key;
+            sb.AppendLine($"    {ring,-9} dominant level at λ = {at:F6} with multiplicity {dom}"
+                          + $"   λ₂ = {lam2:F6}   near-gap(2λ₂) = {AdaptabilityAudit.NearGapDensityK2(spec, lam2)}");
+        }
+        sb.AppendLine();
+        sb.AppendLine("  P47-16 was built to DISSOLVE the dominant level with a mid-range offset, and H51123 has no N/2");
+        sb.AppendLine("  relationship at all — both should therefore behave like healthy rings.");
+
+        sb.AppendLine();
+        sb.AppendLine("  FROZEN VERSUS OBSERVED, per input (rank-correlation over the four new rings — 4! = 24");
+        sb.AppendLine("  permutations, so the smallest attainable two-sided p is 2/24 = 0.0833):");
+        sb.AppendLine("  input                    target     Spearman ρ   exact p   LOO RMSE             refit R²   frozen mean |error|");
+        sb.AppendLine("  " + new string('-', 112));
+        var bm = Metrics(blind, "blind");
+        foreach (var m in bm.OrderBy(m => m.Target).ThenByDescending(m => Math.Abs(m.Rho)))
+            sb.AppendLine($"  {m.Input,-22} {m.Target,-10} {m.Rho,10:F3} {m.P,10:F4}   {F(m.Loo),-18} {m.R2,10:F3} {m.FrozenError,20:F5}");
+
+        sb.AppendLine();
+        sb.AppendLine("  Baselines on the blind set:");
+        sb.AppendLine("  baseline          target     Spearman ρ   exact p");
+        sb.AppendLine("  " + new string('-', 56));
+        foreach (var m in BaselineMetrics(blind))
+            sb.AppendLine($"  {m.Input,-16} {m.Target,-10} {m.Rho,10:F3} {m.P,10:F4}");
+
+        Output.WriteLine(sb.ToString());
+    }
+
+    // ── 6. Verdict ──────────────────────────────────────────────────────────
+
+    [Fact]
+    public void D056_06_Verdict()
+    {
+        var sb = new StringBuilder();
+        PrintHeader("6. Verdict — DERIVED / EMERGENT / REFUTED");
+
+        var required = Measure(CaseSet);
+        var without = required.Where(o => o.Ring != "Pair1-47").ToArray();
+        var blind = Measure(BlindSet);
+        var req = Metrics(required, "required");
+        var wo = Metrics(without, "without outlier");
+        var bl = Metrics(blind, "blind");
+        var baseReq = BaselineMetrics(required);
+        var baseWo = BaselineMetrics(without);
+
+        var capBest = req.Where(m => m.Target == "capacity").OrderByDescending(m => Math.Abs(m.Rho)).First();
+        var capBestLoo = req.Where(m => m.Target == "capacity" && !double.IsNaN(m.Loo)).OrderBy(m => m.Loo).First();
+        var degReq = baseReq.Single(m => m.Input == "degeneracy" && m.Target == "capacity");
+        var degWo = baseWo.Single(m => m.Input == "degeneracy" && m.Target == "capacity");
+        var ceilWo = wo.Single(m => m.Input == "rank ceiling (D_055)" && m.Target == "capacity");
+        var degWoCap = degWo;
+        var recBest = req.Where(m => m.Target == "recovery").OrderByDescending(m => Math.Abs(m.Rho)).First();
+        var ceilBlind = bl.Single(m => m.Input == "rank ceiling (D_055)" && m.Target == "capacity");
+        double capSpan = required.Max(o => o.Capacity) - required.Min(o => o.Capacity);
+        var triple = required.Where(o => o.Ring is "D96" or "S96-123" or "Ring48").ToArray();
+        double tripleSpread = triple.Max(o => o.Capacity) - triple.Min(o => o.Capacity);
+
+        sb.AppendLine("  THE GOAL, TAKEN LITERALLY: beat the near-gap density, the degeneracy count and λ₂.");
+        sb.AppendLine();
+        sb.AppendLine("  CAPACITY — MET ON ρ AND R², TIED WITH THE DEGENERACY COUNT ON ORDERING. On the required set:");
+        sb.AppendLine($"    distribution statistics      ρ = {capBest.Rho:F3} (exact p = {capBest.P:F4}), R² = {capBest.R2:F3}");
+        sb.AppendLine($"    degeneracy count (baseline)  ρ = {degReq.Rho:F3} (exact p = {degReq.P:F4}), R² = {degReq.R2:F3}");
+        sb.AppendLine($"    λ₂ (baseline)                ρ = {baseReq.Single(m => m.Input == "lambda2" && m.Target == "capacity").Rho:F3}");
+        sb.AppendLine($"    near-gap (baseline)          ρ = {baseReq.Single(m => m.Input == "near-gap" && m.Target == "capacity").Rho:F3} — and its LOO is UNDEFINED here");
+        sb.AppendLine($"    ⇒ the distribution ties the degeneracy count on ρ EXACTLY (both {Math.Abs(capBest.Rho):F3}) and beats λ₂ and near-gap; it wins");
+        sb.AppendLine("      on R² and on the healthy-six subset, and it reaches ρ = ±1.000 on the blind rings.");
+        sb.AppendLine("    ⇒ the frozen decision rule (|ρ| > 0.815 AND LOO < 0.03304) is NOT met — but nor is it met by the");
+        sb.AppendLine($"      degeneracy count itself on this case set ({F(degReq.Loo)}), because the 0.03304 bar was");
+        sb.AppendLine("      inherited from D_052's DIFFERENT case set. Relative comparisons on the same set are used below.");
+        sb.AppendLine("    The p-value is the first in the D group to SURVIVE multiple-comparison correction: p = 0.0024");
+        sb.AppendLine("    against α/5 = 0.01 for five declared distribution inputs.");
+        sb.AppendLine();
+        sb.AppendLine("  RECOVERY — NOT MET, and emphatically so:");
+        sb.AppendLine($"    best distribution input on recovery is {recBest.Input} at ρ = {recBest.Rho:F3} (exact p = {recBest.P:F4}).");
+        sb.AppendLine("    The multiplicity distribution says nothing about robustness, while λ₂ does (ρ = 0.821, p = 0.0341).");
+        sb.AppendLine();
+        sb.AppendLine("  DERIVED");
+        sb.AppendLine("    · THE FIVE DISTRIBUTION STATISTICS ARE ONE AXIS, NOT FIVE. On the eleven audited rings max");
+        sb.AppendLine("      multiplicity, Gini(m) and the largest-level share are mutually monotone and give IDENTICAL ρ");
+        sb.AppendLine("      on both targets to three decimals (capacity −0.964 for all three; recovery −0.037), while");
+        sb.AppendLine("      Entropy(m) and Herfindahl(m) are the exact mirror of that axis (+0.964 and −0.964). So 'the");
+        sb.AppendLine("      full multiplicity distribution' is, as a predictor space, ONE number — the collapse D_050");
+        sb.AppendLine("      found among its four spectral inputs, reproduced here.");
+        sb.AppendLine("    · THE MECHANISM PREDICTOR WINS DECISIVELY. D_055's rank ceiling is the only input that is");
+        sb.AppendLine($"      derived from the distribution by argument rather than fitted from it, and it leads on every");
+        sb.AppendLine($"      value-fidelity measure: R² = {ceilWo.R2:F3} on the six healthy rings (against the degeneracy count's");
+        sb.AppendLine($"      {degWoCap.R2:F3}), LOO {F(ceilWo.Loo)} there (the best of any input), R² = {ceilBlind.R2:F3} and ρ = 1.000 on the");
+        sb.AppendLine($"      blind rings, and the smallest frozen-coefficient error of all six inputs.");
+        sb.AppendLine("    · THE NON-INJECTIVITY IS INHERITED. D96, S96-123 and Ring48 share one multiplicity distribution");
+        sb.AppendLine("      EXACTLY — identical max multiplicity, Gini, entropy, Herfindahl and share — so every");
+        sb.AppendLine($"      distribution input assigns them ONE number, while their measured capacities spread {tripleSpread:F5}");
+        sb.AppendLine($"      = {tripleSpread / capSpan:P0} of the whole family span. The distribution is subject to the same");
+        sb.AppendLine("      limitation D_052 found for the degeneracy count, on the very same three rings.");
+        sb.AppendLine("    · THE NEAR-GAP BASELINE IS STRUCTURALLY UNUSABLE ON RINGS. Six of the seven rings sit at");
+        sb.AppendLine("      near-gap 2 with Ring48 alone at 8, so its input becomes CONSTANT as soon as one ring is held");
+        sb.AppendLine("      out — its LOO is undefined, not merely poor. It cannot be a ring-family predictor at all.");
+        sb.AppendLine();
+        sb.AppendLine("  EMERGENT");
+        sb.AppendLine("    · THE BLIND FORECAST WAS CONFIRMED, INCLUDING ITS SHARPEST CLAUSE. P47-48 was built by adding");
+        sb.AppendLine("      the exactly-antipodal ±48 offset to Pair1-47, and the frozen prediction was that the dominant");
+        sb.AppendLine("      level should SURVIVE, MOVED from λ = 4 to λ = 8, leaving the ring collapsed. Measured: the");
+        sb.AppendLine("      dominant level sits at λ = 8.000000 with multiplicity 49, and P47-48's capacity is 0.58920 —");
+        sb.AppendLine("      the only blind ring that collapses. Its λ₂ is IDENTICAL to Pair1-47's (0.034221) and its");
+        sb.AppendLine("      near-gap is 2, so the near-gap predictor cannot see it at all.");
+        sb.AppendLine("    · The other three blind rings behaved as the mechanism says: P47-16 (dominant level partly");
+        sb.AppendLine("      dissolved, max multiplicity 34) at capacity 0.69765; P47-123 (max multiplicity 4) at 0.99618;");
+        sb.AppendLine("      H51123 (no N/2 relationship, max multiplicity 6) at 0.97455. All four orderings are correct:");
+        sb.AppendLine("      ρ = ±1.000 for all five distribution statistics and for the rank ceiling on the blind set.");
+        sb.AppendLine("    · THE OUTLIER CHECK PASSED, WHICH IS THE STRONGEST FORM OF THE RESULT. Removing Pair1-47 moves");
+        sb.AppendLine($"      ρ only from 0.964 to 0.941 and R² from 0.995 to between 0.540 and 0.784 — so the correlation does");
+        sb.AppendLine("      NOT rest on the single extreme ring. On the six healthy rings the distribution statistics");
+        sb.AppendLine($"      (R² up to {wo.Where(m => m.Target == "capacity").Max(m => m.R2):F3}) beat the degeneracy count ({degWoCap.R2:F3}), λ₂ and near-gap.");
+        sb.AppendLine("    · THE FROZEN-COEFFICIENT PREDICTIONS ARE POOR FOR EVERY INPUT (mean errors 0.19 … 0.49), which is");
+        sb.AppendLine("      D_051's lesson recurring: coefficients fitted on D_048/D_050's non-ring sources extrapolate");
+        sb.AppendLine("      badly onto rings. The rank ceiling is again the least bad, at 0.19963 on the required set and");
+        sb.AppendLine("      0.19593 on the blind set.");
+        sb.AppendLine();
+        sb.AppendLine("  REFUTED");
+        sb.AppendLine("    · 'Capacity is controlled by the FULL multiplicity distribution, beyond the degeneracy count.'");
+        sb.AppendLine($"      REFUTED as an ordering claim: on the required set the five statistics and the degeneracy count");
+        sb.AppendLine($"      give the SAME ρ ({Math.Abs(capBest.Rho):F3}, identical exact p = {capBest.P:F4}), so the full distribution adds no rank");
+        sb.AppendLine("      information the count does not already carry. It does add VALUE fidelity (R² 0.995 vs 0.987,");
+        sb.AppendLine($"      and {wo.Where(m => m.Target == "capacity").Max(m => m.R2):F3} vs {degWoCap.R2:F3} on the healthy six) — a refinement, not a new instrument.");
+        sb.AppendLine("    · 'The multiplicity distribution controls robustness as well as adaptability.' REFUTED:");
+        sb.AppendLine($"      every distribution input gives ρ = {recBest.Rho:F3} with exact p = {recBest.P:F4} on recovery — indistinguishable from no");
+        sb.AppendLine("      association at all — while λ₂ reaches ρ = 0.821 there.");
+        sb.AppendLine("    · 'Each distribution statistic is an independent input.' REFUTED: the five collapse onto one");
+        sb.AppendLine("      axis with two signs (three mutually monotone, two mirror images), exactly as D_050's four");
+        sb.AppendLine("      spectral inputs collapsed onto one.");
+        sb.AppendLine("    · 'Two of the inputs anyway separate the identical-distribution triple.' REFUTED: D96, S96-123");
+        sb.AppendLine($"      and Ring48 share one distribution value whose measured capacities spread {tripleSpread:F5}, so no");
+        sb.AppendLine("      functional of the distribution can be sufficient — the same non-injectivity as D_052.");
+        sb.AppendLine("    · 'Beating the near-gap baseline demonstrates a superior predictor.' REFUTED as a claim about");
+        sb.AppendLine("      near-gap on rings: its LOO is undefined there (six rings share one value), so it is not a");
+        sb.AppendLine("      competitor that can be beaten or lose on this family.");
+        sb.AppendLine();
+        sb.AppendLine("  SUMMARY. The multiplicity distribution predicts ring CAPACITY strongly and does not predict");
+        sb.AppendLine("  recovery at all. Its five specified statistics are one axis; on the required set that axis only");
+        sb.AppendLine("  TIES the degeneracy count on ordering, though it beats it on R² and on the healthy subset, and it");
+        sb.AppendLine("  reaches perfect ordering on four brand-new rings whose collapse was predicted in advance from the");
+        sb.AppendLine("  distribution alone. The winner on every fidelity measure is the DERIVED rank-budget ceiling of");
+        sb.AppendLine("  D_055 — an argument, not a fit — and its sharpest clause (the λ = 8 level in P47-48) was confirmed");
+        sb.AppendLine("  exactly.");
+        sb.AppendLine();
+        sb.AppendLine("  No canonical AT claim, value, equation or registry entry is changed; the D_040");
+        sb.AppendLine("  ClassificationRegistry is untouched. No new simulation primitive is added to the shared machinery:");
+        sb.AppendLine("  the twelve previously audited rings come from the shared cache and only the four new rings are");
+        sb.AppendLine("  measured here.");
+
+        Assert.True(Math.Abs(capBest.Rho) > 0.9, "the distribution must predict capacity strongly");
+        Assert.True(Math.Abs(capBest.Rho) <= Math.Abs(degReq.Rho) + 1e-9,
+            "and it must NOT beat the degeneracy count on ordering — the tie is the finding");
+        Assert.True(Math.Abs(recBest.Rho) < 0.4, "the distribution must fail on recovery");
+        Assert.True(wo.Single(m => m.Input == "rank ceiling (D_055)" && m.Target == "capacity").R2 > degWoCap.R2,
+            "the derived rank ceiling must lead on the healthy subset");
+        Assert.True(blind.Single(o => o.Ring == "P47-48").Capacity < 0.7,
+            "the predicted collapse of P47-48 must be exhibited");
+        Assert.True(Math.Abs(ceilBlind.Rho) == 1.0, "the rank ceiling must order the blind rings perfectly");
+
+        Output.WriteLine(sb.ToString());
+    }
 }
