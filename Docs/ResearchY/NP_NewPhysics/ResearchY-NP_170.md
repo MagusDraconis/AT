@@ -25,8 +25,9 @@ topological charge, one-way barrier), QG126 (collective charge wave, cos(Δφ/2)
 QG307/312/313/314/316/319 (operator/lock universality, lock values domain-specific, organization
 phase transition, false-positive audit, g* ≈ 0.31 on synthetic cohorts), Canonical monograph Ch7
 (Operator Basis) / Ch8 (Lock Law) / Ch14 (Organization and Prediction)
-**Test suite:** PLANNED — `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_170_Tests.cs` (numerical precursor
-only; not part of this proposal)
+**Test suite:** PLANNED — the *numerical precursor* is ResearchY-NP_171 (`AT.Tests/ResearchY/NP_NewPhysics/Y_NP_171_Tests.cs`,
+simulator `AT.Core/Resonance/Kuramoto/LockLatticeSimulator.cs`), which predicts the R3/H1 numbers in a deterministic
+no-shot-noise model; it is not part of this hardware proposal and cannot substitute for it.
 
 ---
 
@@ -143,7 +144,7 @@ Independently recomputed and verified for this document:
 |---|---|---|---|
 | λ₂ (first positive eigenvalue, k = 1) | 0.386351 | 0.3864 | ✅ |
 | ω₁ = √λ₂ | 0.621571 | 0.6216 | ✅ |
-| ω_max = √λ_max (k = 48, λ = 12) | 3.979620 | — | — |
+| ω_max = √λ_max (k = 11/85, λ_max = 15.837372467) | 3.979620 | — | — |
 | span = ω_max/ω₁ | 6.402515 | 6.4025 | ✅ |
 | octave bands over the 95 positive modes | [4, 4, 87] | [4, 4, 87] | ✅ |
 | zero modes | 1 | 1 | ✅ |

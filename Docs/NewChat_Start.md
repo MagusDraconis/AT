@@ -96,7 +96,10 @@ first *physical* test.
   primitive.
 - **Next open question.** Does the lock threshold exist in hardware (deciding experiment = one
   bench prototype), and does the AT-120 barrier transfer to a Laplacian ring (H2, highest risk,
-  highest information)?
+  highest information)? *The pre-hardware half of the threshold question is now answered by
+  ResearchY-NP_171 (next section): the deterministic model predicts a sharp, narrow transition at
+  g_c = 1.607 — but only a 3.4σ hysteresis, and nothing at all locks at the board's nominal
+  maximum coupling.*
 - **REV. 2 (2026-09-11, after the post-fetch results NP_169 + T_007–T_015).** No incoming result
   invalidates the experiment and none of those commits touched the prediction/classification/
   coverage registries (so AT-P043 stays unclaimed). Four consequences were applied to NP_170:
@@ -110,6 +113,50 @@ first *physical* test.
   λ₂ is not a physical mass-gap scale in hardware; (4) **protocol** — T_014 requires per-mode
   ε_j = 0.01 ω_j. Unchanged: core experiment R1–R5, the three reasons, kill criteria, all verified
   D96 numbers. Files: `ResearchY-NP_170.md` (rev. 2, §13 revision note) and the 10-page PDF.
+
+## Lock-Lattice Simulator — H1 predicted before hardware (2026-09-11)
+
+ResearchY-NP_171 (COMPLETE): the deterministic numerical precursor to NP_170. Canonical
+C₉₆(±1..±6) ring, node i ↔ eigenmode i (ω_i = √λ_i from the exact closed form, normalized by
+ω_max), Adler/Kuramoto dθ_i/dτ = ω_i + g·(1/deg)·Σ_j sin(θ_j − θ_i), **no stochastic term**,
+fixed-seed LCG initial phases (30 seeds = the protocol's ≥30 repeats), RK4 dt = 0.1 verified
+against dt/2; metrics verbatim from NP_170 §6 R3 / QG316 (g swept 40 steps each way over [0, 3]
+carrying the state up→down).
+
+- **H1 is predicted to FAIL — for exactly one reason.** D96: sharpness **23.69 ± 5.28 ≥ 3 PASS**,
+  width **0.132 ± 0.083 ≤ 0.4 PASS**, but hysteresis **A = 0.0251 ± 0.0074 → 3.4σ < 5σ FAIL**. The
+  loop is real (at g = 1.6 the up-sweep gives f = 0.22 while the down-sweep still holds 0.62), but
+  not at the pre-registered significance: the *noiseless ideal* ring cannot supply H1's bistability.
+- **Threshold and the hardware requirement.** **g_c = 1.607 ± 0.030** (units ω_max = 1) with
+  **f(g = 1) = 0.0000** — at the board's nominal maximum coupling NOTHING locks. The design
+  requirement is K ≥ 6.394 rad/time = 1.61·ω_max = **10.29·ω₁** = 15.17·⟨|ω_i − Ω|⟩.
+- **No D96 superiority (again, consistent with T_015).** The random-coupling control locks EARLIER
+  (g_c = 0.863; the only lattice fully locked at g = 1) and has EXACTLY zero hysteresis; the T_015
+  degeneracy-matched control never locks within g ≤ 3 (f(3) = 0.167), so the multiplicity pattern
+  alone does not reproduce D96 — the values matter. All four §6 controls fail H1 as §7 requires.
+  **H1's existence test is therefore NOT a discriminator** between the lock lattice and its
+  controls; the discriminating test must be R4 retention.
+- **Arrangement matters:** the canonical mode-index arrangement (g_c = 1.607) versus the identical
+  multiset sorted ascending (1.746) differ by 9%.
+- **Mode-specific locking (T_014):** the near-gap doublet {1, 95} locks at g = 1.688 — AFTER the
+  global half-lock point, because its detuning from Ω is among the largest (largest detuning is
+  captured last). Class spread is only 1.635–1.688, so the transition is collective, and a
+  near-gap-only lock is not the same event as a global one.
+- **Corrigendum (labels only, values unchanged):** NP_170 §3's "ω_max = √λ_max (k = 48, λ = 12)"
+  should read **k = 11/85 with λ_max = 15.837372** (λ₄₈ = 12 exactly). ω_max = 3.979620 and
+  span = 6.402515 are unaffected.
+- **Classification.** Dynamics and nonlinearity IMPORTED/BOUNDARY (NP_005, NP_007/NP_011); the
+  sharp-threshold *existence* is EMERGENT (standard synchronization physics, not new AT content);
+  g_c is EMERGENT and domain-specific (QG313 — not comparable to QG316's 0.31); "AT predicts a
+  physical phase transition" remains OPEN/UNTESTED (only the board can settle it, then NP_170 §8's
+  kill criteria apply). No canonical claim changed; no reclassification (D_040 registry untouched);
+  no new primitive.
+- **Files.** `Docs/ResearchY/NP_NewPhysics/ResearchY-NP_171.md`;
+  `AT.Core/Resonance/Kuramoto/LockLatticeSimulator.cs`;
+  `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_171_Tests.cs` (4/4 ✅, bit-reproducible).
+- **Next open question.** If the Tier-1 board shows A at ≥ 5σ, that hysteresis is NOT coming from
+  the lock structure (the noiseless model reaches only 3.4σ) — the imported nonlinearity would be
+  doing more work than the lock law; if it shows nothing at g ≤ 1, NP_171 has already explained why.
 
 ## Latest Repo Sync
 

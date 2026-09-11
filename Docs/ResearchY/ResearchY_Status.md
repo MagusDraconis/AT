@@ -304,8 +304,8 @@
 | ResearchY-C_002 | Radial Propagation | — | — | PLANNED |
 | ResearchY-D_001 | D96 Resonance Audit | — | — | PLANNED |
 | ResearchY-D_002 | Standing Wave Model | — | — | PLANNED |
-| ResearchY-NP_170 | Lock-Lattice Phase Memory — Physical Realizability Test Proposal (rev. 2, after NP_169 + T_007–T_015) | `NP_NewPhysics/ResearchY-NP_170.md` · `Publication/ResearchY-NP_170-Lock-Lattice-Program.tex`/.pdf | — (numerical precursor `Y_NP_170_Tests.cs` planned) | PLANNED |
-
+| ResearchY-NP_170 | Lock-Lattice Phase Memory — Physical Realizability Test Proposal (rev. 2, after NP_169 + T_007–T_015) | `NP_NewPhysics/ResearchY-NP_170.md` · `Publication/ResearchY-NP_170-Lock-Lattice-Program.tex`/.pdf | — (numerical precursor: see `ResearchY-NP_171`, `Y_NP_171_Tests.cs`) | PLANNED |
+| ResearchY-NP_171 | Deterministic Lock-Lattice Simulator (model prediction of H1 before hardware: sharp 23.69 ± 5.28 PASS, width 0.132 ± 0.083 PASS, hysteresis A = 0.0251 ± 0.0074 FAIL at 3.4σ; g_c = 1.607 ± 0.030, f(g = 1) = 0, K ≥ 10.29·ω₁) | `NP_NewPhysics/ResearchY-NP_171.md` | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_171_Tests.cs` (4/4 ✅) | COMPLETE |
 ## Test Status
 
 | Test suite | Tests | Result | Last run |
