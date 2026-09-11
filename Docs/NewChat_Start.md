@@ -1676,13 +1676,12 @@ ORDERING** — the honest form of any future claim is "capacity and recovery are
 degeneracy axis", NOT "they are DETERMINED by the spectrum". NO AT claim, value, equation or
 registry entry changed; the D_040 ClassificationRegistry untouched; the D_047/D_048 bounds and
 D_049's family dependence are cited, not altered. No canonical changes; research only.
+<!-- D_051 → D_052 open question below -->
 → D_050 left ONE open question for the D group: the residual gap (30 % of range) was attributed to
 the perturbation FAMILY, which D_050 deliberately did not supply as an input. → ANSWERED by D_051
 (blind prediction on six new rings): the law fails out of sample on the ring family, and the cause
-is not the family input but that the predictor is CONSTANT there. New open question for D_052: the
-degeneracy count DID vary across the six new rings (38 … 47) while the near-gap density did not, so
-the collinear pair's other member — and the family, as a second input — are the concrete candidates
-to test next, against the overfitting trap D_050 already demonstrated.
+is not the family input but that the predictor is CONSTANT there — the degeneracy count DID vary
+across those rings (38 … 47) while the near-gap density did not. → TESTED by D_052 below.
 
 ResearchY-D_051 (Blind Prediction Audit, COMPLETE, tests 5/5 PASSED): does D_050's spectral
 prediction actually work on spectra it has never seen? Tests D_050 PROSPECTIVELY under a blind
@@ -1722,6 +1721,52 @@ must read a quantity that actually varies across rings — the degeneracy count 
 while the near-gap density did not, which is a concrete hypothesis for D_052. No canonical AT claim,
 value, equation or registry entry changed; D_050's classifications are reaffirmed, not
 reclassified; the D_040 ClassificationRegistry is untouched.
+
+ResearchY-D_052 (Degeneracy Axis Audit, COMPLETE, tests 5/5 PASSED): does the DEGENERACY axis
+predict adaptability WITHIN the ring family, where D_051 showed D_050's near-gap predictor is a
+constant? Family = the seven 96-node rings (canonical D96 + D_051's six blind rings). Same blind
+protocol: PHASE A (commit e5f9354f) reads four candidate predictors from each spectrum, fits ALL
+coefficients on D_048/D_050's ALREADY-PUBLISHED six cases, and prints the prediction — that file
+contains no measurement code; PHASE B measures the rings and compares. THE FOUR PREDICTORS (frozen
+capacity slope/intercept, R² on the D_050 cases): NG near-gap 2 at k = 2 (−0.008136/0.871526, 0.759
+— reproduces D_050 exactly, the integrity check); DEG degeneracy count (+0.012234/0.370622, 0.529);
+ENT multiplicity entropy (+0.007055/0.568361, 0.001); LOCK D_047's ΔE_lock (±0.007055, 0.001).
+RESOLVABILITY at prediction time: near-gap takes 2 distinct values across the seven rings (six 2s,
+one 8), degeneracy count 5 (38, 43, 44, 46, 47), entropy and ΔE_lock 0.427 of span. OBSERVED
+(capacity | recovery): D96 0.99020 | 0.96592 (reproducibility check); S96-123 0.96928 | 0.96044;
+S96-135 0.93693 | 0.96643; D96-24 0.97193 | 0.96937; Decay96 1.00000 | 0.91977; Boost96 0.99524 |
+0.97537; Ring48 0.99248 | 0.97244 (capacity span 0.06307, recovery span 0.05560). METRICS (R²,
+Spearman, LOO RMSE). CAPACITY: DEG ρ = **0.815** vs NG 0.204 (4×), DEG refit R² 0.226 vs 0.068, DEG
+frozen mean |error| **0.07399** vs NG 0.13116 (1.8×) — DEG WINS every ordering and accuracy metric;
+NG wins LOO RMSE only (0.02437 vs 0.03304), because the degeneracy fit is unstable under refit while
+NG is nearly constant, i.e. close to predicting the mean. RECOVERY: NG ρ = **0.408** vs DEG −0.222 —
+NG WINS the ordering; DEG still wins refit R² (0.210 vs 0.066) and the frozen error marginally
+(0.01275 vs 0.01522). ENT and LOCK are exactly anti-correlated (fitted slopes exact negatives) and
+byte-identical everywhere; their frozen error is 5× DEG's (0.38469) — degenerate extra inputs buy
+nothing (a second D_050 overfitting lesson). **DERIVED** — the degeneracy axis is NOT INJECTIVE on
+rings: D96, S96-123 and Ring48 share the IDENTICAL multiplicity spectrum 1×6, 1×5, 42×2, 1×1, hence
+identical count (44), entropy (3.7620) and ΔE_lock (0.8023), so every functional of the multiplicity
+spectrum assigns them one number BY CONSTRUCTION, while their λ₂ values differ by a factor of 90
+(0.386351 / 0.059822 / 5.404246) and their MEASURED capacities spread **0.02320 = 37 % of the whole
+family span** (recovery 0.01200 = 22 %) — no degeneracy input can ever reduce that error, so the axis
+is a COARSE invariant (5 groups vs near-gap's 2, but not sufficient); near-gap = 2 stays forced on
+rings (λ₂/λ₁ = 4, λ₃/λ₂ = 9/4 > 2), which makes the baseline comparison a LOW bar; all bounds [0,1]
+hold. **EMERGENT** — the degeneracy count IS the better capacity predictor within the ring family,
+with the SAME POSITIVE sign as D_050's cross-ensemble +0.886, so "more degenerate levels ⇒ more
+adaptable" now holds WITHIN one topological family and not only across unrelated graphs; all seven
+rings adapt strongly (0.93693 … 1.00000) despite a 4× degree and 90× λ₂ spread; ΔE_lock adds nothing
+beyond the multiplicity entropy; recovery goes the other way (DEG ρ = −0.222 vs NG +0.408, sign again
+matching D_050's −0.543 but weak). **REFUTED** — the degeneracy count as a SUFFICIENT within-family
+predictor (37 % of the family span sits inside one degeneracy value); the claim that the degeneracy
+axis REPLACES the near-gap predictor (recovery goes the other way, and LOO stability favours near-gap
+for BOTH targets); and adding degeneracy entropy / locked entropy (5× worse error). SUCCESS CRITERION
+("beat the D_051 near-gap predictor") MET FOR CAPACITY, NOT MET FOR RECOVERY; prediction made before
+measurement by construction. CONSEQUENCE: what remains open is not a better SPECTRAL scalar — the
+multiplicity spectrum is the whole spectral-degeneracy data and is provably not injective — but a
+NON-SPECTRAL input: the perturbation-family profile D_049 showed to move the frontier, which D_050
+withheld and D_051 showed cannot be replaced by the spectrum. No canonical AT claim, value, equation
+or registry entry changed; D_050's and D_051's classifications are reaffirmed, not reclassified; the
+D_040 ClassificationRegistry is untouched.
 
 ResearchY-NP_002 (Highest-Value V2.2 Program, COMPLETE): what is the highest-value
 V2.2 physics program? Verdict: MEASUREMENT ORIGIN — it scores 19/20 (impact 5,
