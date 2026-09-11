@@ -86,6 +86,7 @@
 | ResearchY-D_052 | Degeneracy Axis Audit | `D_ResonanceStructure/ResearchY-D_052.md` | `AT.Tests/ResearchY/D_ResonanceStructure/Y_D_052_Tests.cs` (5/5 ✅) | COMPLETE |
 | ResearchY-D_053 | Perturbation-Family Dominance Audit | `D_ResonanceStructure/ResearchY-D_053.md` | `AT.Tests/ResearchY/D_ResonanceStructure/Y_D_053_Tests.cs` (5/5 ✅) | COMPLETE |
 | ResearchY-D_054 | Low-Energy Spectral Edge Audit | `D_ResonanceStructure/ResearchY-D_054.md` | `AT.Tests/ResearchY/D_ResonanceStructure/Y_D_054_Tests.cs` (6/6 ✅) | COMPLETE |
+| ResearchY-D_055 | Pair1-47 Anomaly Audit | `D_ResonanceStructure/ResearchY-D_055.md` | `AT.Tests/ResearchY/D_ResonanceStructure/Y_D_055_Tests.cs` (5/5 ✅) | COMPLETE |
 | ResearchY-NP_001 | V2.2 New Physics Roadmap | `NP_NewPhysics/ResearchY-NP_001.md` | — (roadmap) | COMPLETE |
 | ResearchY-NP_002 | Highest-Value V2.2 Program | `NP_NewPhysics/ResearchY-NP_002.md` | — (ranking) | COMPLETE |
 | ResearchY-NP_003 | Manipulation Lever Audit | `NP_NewPhysics/ResearchY-NP_003.md` | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_003_Tests.cs` (6/6 ✅) | COMPLETE |

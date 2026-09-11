@@ -1879,6 +1879,75 @@ claim, value, equation or registry entry changed; no new simulation primitive (t
 reuses the shared cache; only the six held-out rings are measured); the D_040 ClassificationRegistry is
 untouched.
 
+ResearchY-D_055 (Pair1-47 Anomaly Audit, COMPLETE, tests 5/5 PASSED): WHY is Pair1-47 (offsets ±1 and
+±47) the only ring whose capacity collapses? Compared against a healthy set of ALL 12 other audited
+rings — the wider set is required, because E1 alone kills two plausible candidates: E1 has a 4.85×
+SMALLER λ₂ (0.004282 vs 0.034221) and half the degree (2 vs 4) while being perfectly healthy at
+capacity 0.98598. **THE PROPERTY: Pair1-47 has a SINGLE DEGENERATE LEVEL HOLDING 52.1 % OF THE
+SPECTRUM** (multiplicity 50 of 96; pattern 1×50, 22×2, 2×1), against at most 12 of 96 (12.5 %, on
+D96-24) for any healthy ring and 6 for the median healthy ring. **THE CAUSE IS EXACT ARITHMETIC**: with
+S = {1, 47} and 47 = N/2 − 1, cos(2πk·47/96) = cos(πk − θ) = (−1)^k·cos(2πk/96), so for EVEN k
+λ_k = 4(1 − cos θ_k) while for ODD k λ_k = 2[(1 − cos θ) + (1 + cos θ)] = **4 EXACTLY** — for all 48
+odd k, plus k = 24 and k = 72, giving multiplicity 50 (verified: 48 odd modes, largest |λ_k − 4| = 0,
+and 50 eigenvalues within 1e-9 of 4 in the actual Laplacian spectrum). In general an offset pair
+{±1, ±d} produces this level exactly when d ≡ ±1 (mod N/2). REJECTIONS (is Pair1-47's value outside the
+whole healthy interval?): λ₂ 0.0342 vs 0.0043…5.4042 → NO; mean distinct-level spacing 0.3463 vs
+0.0850…1.4474 → NO; degree 4 vs 2…24 → NO; edges |E| 192 vs 96…1152 → NO. Rejected IN PRINCIPLE:
+EIGENVECTOR LOCALIZATION / PARTICIPATION RATIO — every ring is a circulant, so every Laplacian
+eigenvector is a Fourier mode with |v_i| = 1/√N and PR = **exactly N = 96** for every mode of every
+ring (verified with the exact Fourier modes as eigenvectors), so no measurement of localization can
+separate any two members of this family; and SYMMETRY CLASS — all eight opening rings are symmetric
+circulants with the SAME dihedral group of order 2N, one orbit, vertex-transitive. ONE INDEPENDENT
+SEPARATOR IS REPORTED RATHER THAN HIDDEN: the min positive gap DOES separate (0.034221 vs
+0.0002…0.0211), but its witness is the spacing between the level at 7.965779 (k = 46) and the
+singleton at 8.000000 (k = 48) — MID-spectrum, not the bottom — and it is a single scalar with no route
+to the mechanism. THE REMAINING SEPARATORS ARE RESTATEMENTS: ΔE_lock (2.3552 vs 0.6787…1.1052),
+headroom (71 vs 47…57), A₀ (25 vs 39…49), largest multiplicity (50 vs 2…12) and its share (0.5208 vs
+0.0208…0.1250) are all functions of the SAME multiplicity multiset. THE INVERSION IN ONE LINE:
+Pair1-47 has the LARGEST headroom AND the largest ΔE_lock in the family and the LOWEST capacity — more
+locked entropy and more room, less collected. **THE MECHANISM — A RANK BUDGET**: deleting or adding an
+edge subtracts a RANK-2 matrix, and a rank-r perturbation acts on an m-fold eigenspace as an m×m matrix
+of rank ≤ r having at most r + 1 distinct eigenvalues, so **ΔA ≤ Σ_i min(m_i − 1, r)** with r ≤ 2k. A
+spectrum whose headroom sits in ONE huge level is a RANK TRAP; the healthy rings are RANK-EFFICIENT
+because their headroom is many small levels that one edge operation releases together. MEASURED (delete
+family, ceiling capacity vs measured): Pair1-47 k=1 0.3380/0.3239, k=3 0.3944/0.3521, k=10
+0.5915/0.4507, k=19 0.8451/0.5728; D96 k=1 0.9020/0.8562, k=3 1.0000/0.9281, k=10 1.0000/0.9804, k=19
+1.0000/1.0000; S96-135 k=1 0.8627/0.8431. The ceiling predicts the collapse from the multiplicity
+structure ALONE. SINGLE-OPERATION TEST: one deletion splits EACH level independently, so D96 gains
+≤ 42 + 2 + 2 = 46 distinct eigenvalues while Pair1-47 gains ≤ 2 + 22 = 24 (measured 48 and 23) — its
+49-slot level contributes at most 2 while D96's 42 doublets contribute 42 at once. Capacity therefore
+depends on the multiplicity **DISTRIBUTION**, not the count or the headroom — which is exactly why
+D_052's degeneracy count and D_050's near-gap density cannot see the anomaly; and Pair1-47 has the
+FEWEST degenerate groups in the family (23 against D96's 44), so degeneracy COUNT is ANTI-correlated
+with the collapse. **A DEFECT IN THE SHARED PERTURBATOR, FOUND AND QUANTIFIED**: the weight family reads
+its sign from the LOW BIT of the LCG x ← 1664525x + 1013904223 (mod 2^32); both coefficients are odd, so
+(a·x + c) mod 2 = (x + 1) mod 2 and the coin ALTERNATES DETERMINISTICALLY for every seed (reproduced:
+0 1 0 1…, 1 0 1 0…, 0 1 0 1…). Consequences, all measured: the weight family yields exactly TWO distinct
+weights (Pair1-47: 0.98×96 and 1.02×96; D96: 0.98×288 and 1.02×288; Decay96: 12 values); the
+reweighted graph is neither circulant nor shift-symmetric (both checks False), so it is a FIXED pattern
+rather than a preserved symmetry; and its effect is SPECTRUM-DEPENDENT — D96 still reaches A₁ = 96 while
+Pair1-47 STALLS AT 51 with its λ = 4 level intact. With a CORRECTED coin (sign from the high bits, an
+independent sign per edge, implemented LOCALLY so no stored number is touched): Pair1-47's weight
+capacity 0.3662 → **0.9812** and its ensemble mean 0.4209 → **0.5746**, while every healthy ring is
+essentially unchanged (S96-135 0.9412 → 1.0000; all others already 1.0000). So the defect DEPRESSES the
+anomaly by about a third and does NOT create it — with the corrected coin the anomaly survives (0.5746
+against 0.94 … 1.00 for every healthy ring), and the three edge-count families, untouched by the defect,
+still show 0.41 / 0.40 / 0.50. SCOPE OF THE DEFECT: the WEIGHT family only — delete, add and rewire draw
+their target from the full 32-bit value and their numbers stand; the DIRECTION of every audit since
+D_048 (weight strongest) is unaffected, since a systematic reweighting is still a real perturbation;
+what is unreliable is fine structure attributed to weight's "full-rank randomness". The generator is
+deliberately NOT changed here, because altering it would invalidate stored numbers in D_048–D_054 — the
+defect is reproduced and recommended as the next fix. DERIVED: the property and its half-period
+congruence cause; the rank-budget ceiling ΔA ≤ Σ min(m_i−1, r); the rank-efficiency of the healthy
+rings. EMERGENT: the measured magnitudes and the quantified defect contribution. REFUTED: localization
+and participation ratio (in principle), symmetry class, λ₂, mean spacing, degree and edge count as
+candidates; "many degenerate levels" as the cause; and the defect as the source of the anomaly. New open
+question for the D group: does the rank budget predict the capacity of ANY graph from its multiplicity
+distribution alone — a closed-form ceiling C_max(k) = Σ min(m_i − 1, 2k)/(N − A₀) — and does fixing the
+perturbator's coin move the D_048–D_054 weight-family numbers enough to matter? No canonical AT claim,
+value, equation or registry entry changed; no new simulation primitive added to the shared machinery;
+the D_040 ClassificationRegistry is untouched.
+
 ResearchY-NP_002 (Highest-Value V2.2 Program, COMPLETE): what is the highest-value
 V2.2 physics program? Verdict: MEASUREMENT ORIGIN — it scores 19/20 (impact 5,
 feasibility 4, testability 5, derived-chain dependence 5), the highest of ten
