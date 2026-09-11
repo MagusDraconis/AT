@@ -74,7 +74,7 @@ public static class AdaptabilityAudit
         return a;
     }
 
-    private static double[,] CirculantFromSpectrum(double[] spectrum)
+    public static double[,] CirculantFromSpectrum(double[] spectrum)
     {
         double[] w = SpectralBlueprint.ReconstructWeights(spectrum, N);
         var a = new double[N, N];

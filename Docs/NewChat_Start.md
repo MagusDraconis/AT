@@ -209,6 +209,55 @@ saturating damping only; no topological charge, no one-way term, no memory, no n
   *in the model*. Is any part of the lock-lattice program distinguishable from generic oscillator
   physics at all — and if not, what would the Tier-1 board be for?
 
+## Discriminator Audit — what separates D96 from its controls, and does it mean anything (2026-09-11)
+
+ResearchY-NP_173 (COMPLETE): eight observables measured against five controls (random,
+degeneracy-matched, saturation-matched, linear-ramp, detuned), 16 fixed seeds, g ∈ [0, 8] in 60
+steps each way, plus the T_015/D_048 perturbation machinery for the spectral ones. Two stages:
+**(1)** does D96 differ from EVERY control by ≥ 5σ? **(2)** is the difference reproduced by a
+control sharing the property invoked to explain it? Only (1)+ (2) makes a discriminator.
+
+- **Literal answer: YES — four of eight separate D96 from every control at ≥ 5σ.** Lock threshold
+  (z = 12.2…128.4), mode ordering ρ (z = 6.5…11.8), near-gap participation (z = 5.2…9.8),
+  attractor shift ΔA (z = 5.4…342.4). The other four do not: hysteresis area (the **detuned**
+  control is *larger*: 0.0158 vs D96's 0.0123), locking sequence (detuned z = 1.9), spectral
+  splitting (z = 2.2…4.4 against *every* control), retention (z = 0).
+- **Measured table** (D96 | random | deg-matched | linear-ramp | detuned): g_c 1.682 ± 0.025 |
+  0.8667 | 3.059 | 3.160 | 2.002 · A 0.01225 | 0 | 0.00813 | 0.00440 | 0.01583 · ρ 0.420 | 0
+  (exactly) | 0.056 | −0.078 | −0.197 · sequence dispersion 0.0693 | 1.2e−16 | 0.0160 | 0.0098 |
+  0.0523 · near-gap participation 0.285 | 0.0667 | 0.0956 | 0.0813 | 0.1065 · ΔA 50.5 ± 1.1 |
+  **0 ± 0** | 36 ± 21 | 37.7 ± 17 | 35.3 ± 21 · Δλ₂/λ₂ 0.445 | 0.032 | 2.34 | 0.97 | 1.70 ·
+  retention R 6.358 vs saturation-matched 6.358.
+- **No — none of the four is evidence for the AT structure** (Stage 2):
+  - **ΔA is a sparse-circulant CLASS property, not D96's**: a different sparse circulant of the same
+    degree, C96(±1..±5,±11), gives ΔA = 47 ± 0 versus D96's 50.5 ± 1.1 and the random graph's
+    **exact 0** (D_047's degeneracy-lock theorem from the lock-lattice side).
+  - **The threshold is set by each lattice's own detuning AND mixing**: g_c/mean|ω−Ω| spans
+    8.2…17.3 (63 %); with *identical* frequencies the random graph locks at half D96's coupling
+    because its local field is well mixed rather than local. D96 is not extreme (controls span
+    0.867…3.160, a factor 3.6).
+  - **Mode ordering and near-gap participation read back D96's own frequency multiset** — the
+    derived spectrum the hardware is built to have (the fundamental pair carries one of the largest
+    detunings, ω₁ = 0.156 vs Ω = 0.851, and the largest detuning is captured last). An INPUT, not
+    an outcome.
+- **Output classification.** DERIVED: random ΔA ≡ 0 exactly; the β = 0 uniform-Q single-exponential
+  baseline with R reproduced by the saturation-matched control. EMERGENT: the four separating
+  observables (real and ≥5σ, but properties of the (spectrum, topology) pair). REFUTED: "one of
+  these observables is evidence that the AT lock law is real", and consequently the program's claim
+  to a discriminating measurement.
+- **Where the program now stands.** H1 fails on hysteresis (NP_171, 3.4σ), H2's signature is
+  generic (NP_172), and the four observables that do separate D96 are all reading back inputs
+  (NP_173). The lock law's consequences are **generic exactly where they would be evidence** and
+  **D96-specific exactly where they are not evidence**. A finding about the TEST — no canonical
+  claim changed, no reclassification (D_040 untouched), no new primitive.
+- **Files.** `Docs/ResearchY/NP_NewPhysics/ResearchY-NP_173.md`;
+  `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_173_Tests.cs` (5/5 ✅, deterministic; reuses the NP_171
+  simulator and `AdaptabilityAudit`).
+- **Next open question.** Is any *falsifiable* claim left in the lock-lattice program that is not
+  already generic — i.e. does NP_170 have a measurement whose outcome could distinguish the lock law
+  from ordinary coupled-oscillator physics? If not, the honest step is to record the program as
+  closed at the proposal stage rather than to build the board.
+
 ## Latest Repo Sync
 
 Recent commits from the other machine:
