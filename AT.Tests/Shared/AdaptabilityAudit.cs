@@ -149,9 +149,31 @@ public static class AdaptabilityAudit
     /// <summary>The D_054 blind set (six edge-shape rings), by name.</summary>
     public static readonly string[] EdgeRingNames = [.. EdgeRings.Select(r => r.Name)];
 
+    /// <summary>
+    /// D_056's multiplicity-distribution rings. These are chosen to vary the SHAPE of the multiplicity
+    /// distribution rather than its maximum: one dissolves Pair1-47's dominant level by adding a
+    /// mid-range offset, one adds small offsets to it, one has no N/2 relationship at all, and one
+    /// adds the exactly-antipodal offset ±48 — which, by the same arithmetic, should move the dominant
+    /// level from λ = 4 to λ = 8 and leave the trap in place.
+    /// </summary>
+    public static readonly (string Name, string Description, (int Offset, double Weight)[] Offsets)[] MultiplicityRings =
+    [
+        ("P47-16", "offsets ±1, ±16, ±47 (degree 6) — the dominant level should DISSOLVE",
+            [(1, 1.0), (16, 1.0), (47, 1.0)]),
+        ("P47-123", "offsets ±1, ±2, ±3, ±47 (degree 8) — dominant level plus small offsets",
+            [(1, 1.0), (2, 1.0), (3, 1.0), (47, 1.0)]),
+        ("H51123", "offsets ±1, ±5, ±11, ±23 (degree 8) — no N/2 relationship anywhere",
+            [(1, 1.0), (5, 1.0), (11, 1.0), (23, 1.0)]),
+        ("P47-48", "offsets ±1, ±47, ±48 (degree 6) — the antinodal offset should move the level to λ = 8",
+            [(1, 1.0), (47, 1.0), (48, 1.0)]),
+    ];
+
+    /// <summary>The D_056 blind set (four multiplicity-distribution rings), by name.</summary>
+    public static readonly string[] MultiplicityRingNames = [.. MultiplicityRings.Select(r => r.Name)];
+
     /// <summary>Every named ring the audit family knows: the canonical ring, D_051's set and D_054's set.</summary>
     private static readonly (string Name, string Description, (int Offset, double Weight)[] Offsets)[] AllRings =
-        [.. BlindRings, .. EdgeRings];
+        [.. BlindRings, .. EdgeRings, .. MultiplicityRings];
 
     /// <summary>The seven-ring family D_052 audits: the canonical ring plus the six blind rings.</summary>
     public static readonly string[] RingFamilyNames =
