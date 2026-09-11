@@ -200,6 +200,14 @@ public static class AdaptabilityAudit
     public static double[] SpectrumOf(double[,] adj)
         => GeneralInverseSpectrumAnalyzer.Spectrum(GeneralInverseSpectrumAnalyzer.Laplacian(adj));
 
+    /// <summary>
+    /// Near-gap density at k = 2 — the T_014 counting convention: POSITIVE eigenvalues within twice
+    /// the algebraic-connectivity gap (the zero mode is excluded). D96 gives 2 (the k = ±1 doublet).
+    /// This is D_050's winning single predictor, factored out so both audits count identically.
+    /// </summary>
+    public static int NearGapDensityK2(double[] spectrum, double lambda2)
+        => spectrum.Count(l => l > Tol && l <= 2.0 * lambda2 + Tol);
+
     /// <summary>Distinct-eigenspace (attractor) count and basin-distribution Shannon entropy (nats).</summary>
     public static (int A, double E, int[] Mult) Buckets(double[] spectrum)
     {
@@ -238,9 +246,15 @@ public static class AdaptabilityAudit
 
     // ── Case study ──────────────────────────────────────────────────────────
 
-    public static AdaptabilityProfile Study(string name)
+    public static AdaptabilityProfile Study(string name) => Study(name, Adjacency(name));
+
+    /// <summary>
+    /// Study an ARBITRARY adjacency matrix under the shared deterministic ensemble. The name is a
+    /// label only — no lookup is performed — so a spectrum never seen in D_048/D_049 can be measured
+    /// by exactly the same protocol (same perturbation types, doses, seeds and connectivity guard).
+    /// </summary>
+    public static AdaptabilityProfile Study(string name, double[,] adj)
     {
-        var adj = Adjacency(name);
         var baseSpec = SpectrumOf(adj);
         var (a0, e0, mult) = Buckets(baseSpec);
         double lam2 = double.PositiveInfinity;

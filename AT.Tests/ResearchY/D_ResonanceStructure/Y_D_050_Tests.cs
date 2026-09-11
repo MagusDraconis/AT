@@ -41,7 +41,7 @@ public class Y_D_050_Tests : ResearchTestBase
             double lam2 = p.Lambda2;
             // Near-gap density at k = 2, in T_014's convention: POSITIVE eigenvalues within twice the
             // gap (the zero mode is excluded). D96 then gives 2 modes — the k = ±1 doublet.
-            int nearGap = spectrum.Count(l => l > 1e-9 && l <= 2.0 * lam2 + 1e-9);
+            int nearGap = AdaptabilityAudit.NearGapDensityK2(spectrum, lam2);
             rows.Add(new Row(name, p.Capacity, p.MeanRecovery, lam2,
                 p.DegenerateGroups, nearGap, p.A0));
         }
