@@ -84,6 +84,62 @@ public static class AdaptabilityAudit
         return Symmetrize(a);
     }
 
+    // ── The blind-ring family (shared by D_051 and D_052) ───────────────────
+    //
+    // Six 96-node circulant rings that appear in NO D_048–D_050 case set, introduced by D_051 and
+    // reused verbatim by D_052 so the ring family has ONE definition. All are connected.
+
+    public static readonly (string Name, string Description, (int Offset, double Weight)[] Offsets)[] BlindRings =
+    [
+        ("S96-123", "sparse ring, offsets ±1..±3, unit weights (degree 6)",
+            [(1, 1.0), (2, 1.0), (3, 1.0)]),
+        ("S96-135", "sparse ring, offsets ±1,±3,±5, unit weights (degree 6)",
+            [(1, 1.0), (3, 1.0), (5, 1.0)]),
+        ("D96-24", "dense ring, offsets ±1..±12, unit weights (degree 24)",
+            [(1, 1.0), (2, 1.0), (3, 1.0), (4, 1.0), (5, 1.0), (6, 1.0),
+             (7, 1.0), (8, 1.0), (9, 1.0), (10, 1.0), (11, 1.0), (12, 1.0)]),
+        ("Decay96", "ring ±1..±6 with decaying weights w_d = 1/d (degree 12)",
+            [(1, 1.0), (2, 0.5), (3, 1.0 / 3.0), (4, 0.25), (5, 0.2), (6, 1.0 / 6.0)]),
+        ("Boost96", "ring ±1..±6 with GROWING weights w_d = d (degree 12)",
+            [(1, 1.0), (2, 2.0), (3, 3.0), (4, 4.0), (5, 5.0), (6, 6.0)]),
+        ("Ring48", "ring ±1..±6 plus the long-range offsets ±24 and ±48 (degree 12)",
+            [(1, 1.0), (2, 1.0), (3, 1.0), (4, 1.0), (5, 1.0), (6, 1.0), (24, 1.0), (48, 1.0)]),
+    ];
+
+    /// <summary>Symmetric adjacency matrix of a circulant ring with the given signed offsets.</summary>
+    public static double[,] Ring((int Offset, double Weight)[] offsets)
+    {
+        var a = new double[N, N];
+        for (int i = 0; i < N; i++)
+            foreach (var (d, w) in offsets)
+            {
+                a[i, (i + d) % N] += w;
+                a[i, ((i - d) % N + N) % N] += w;
+            }
+        return a;
+    }
+
+    /// <summary>Adjacency of a blind ring, or of the canonical ring D96, by name.</summary>
+    public static double[,] RingAdjacency(string name)
+        => name == "D96" ? Adjacency("D96")
+                         : Ring(BlindRings.Single(r => r.Name == name).Offsets);
+
+    /// <summary>The seven-ring family D_052 audits: the canonical ring plus the six blind rings.</summary>
+    public static readonly string[] RingFamilyNames =
+        ["D96", .. BlindRings.Select(r => r.Name)];
+
+    /// <summary>
+    /// Degeneracy-lock scalar of D_047: ΔE_lock = (1/N)·Σ_{m_i>1} m_i·ln m_i — the multiplicity
+    /// spectrum collapsed to the entropy it can release. Zero for an all-singleton spectrum.
+    /// </summary>
+    public static double LockedEntropy(int[] mult, int n)
+    {
+        double s = 0.0;
+        foreach (int m in mult)
+            if (m > 1) s += m * Math.Log(m);
+        return s / n;
+    }
+
     public static double[,] Adjacency(string name) => name switch
     {
         "D96" => GeneralInverseSpectrumAnalyzer.D96DerivedGraph(96, 6),

@@ -43,40 +43,16 @@ public class Y_D_051_Tests : ResearchTestBase
     private sealed record NewRing(string Name, string Description, (int Offset, double Weight)[] Offsets);
 
     /// <summary>
-    /// The six NEW rings. None is D_048–D_050's D96 (±1..±6), D96-3D (4×4×6 torus), random sparse,
-    /// physical (λ_m = m), unphysical (piecewise-constant) or complete (K96). All are connected —
-    /// required, since the shared ensemble drops perturbations that disconnect a graph.
+    /// The six NEW rings, defined once in the shared machinery so D_051 and D_052 measure the same
+    /// objects. None is D_048–D_050's D96 (±1..±6), D96-3D (4×4×6 torus), random sparse,
+    /// physical (λ_m = m), unphysical (piecewise-constant) or complete (K96).
     /// </summary>
     private static readonly NewRing[] NewRings =
-    [
-        new("S96-123", "sparse ring, offsets ±1..±3, unit weights (degree 6)",
-            [(1, 1.0), (2, 1.0), (3, 1.0)]),
-        new("S96-135", "sparse ring, offsets ±1,±3,±5, unit weights (degree 6)",
-            [(1, 1.0), (3, 1.0), (5, 1.0)]),
-        new("D96-24", "dense ring, offsets ±1..±12, unit weights (degree 24)",
-            [(1, 1.0), (2, 1.0), (3, 1.0), (4, 1.0), (5, 1.0), (6, 1.0),
-             (7, 1.0), (8, 1.0), (9, 1.0), (10, 1.0), (11, 1.0), (12, 1.0)]),
-        new("Decay96", "ring ±1..±6 with decaying weights w_d = 1/d (degree 12)",
-            [(1, 1.0), (2, 0.5), (3, 1.0 / 3.0), (4, 0.25), (5, 0.2), (6, 1.0 / 6.0)]),
-        new("Boost96", "ring ±1..±6 with GROWING weights w_d = d (degree 12)",
-            [(1, 1.0), (2, 2.0), (3, 3.0), (4, 4.0), (5, 5.0), (6, 6.0)]),
-        new("Ring48", "ring ±1..±6 plus the long-range offsets ±24 and ±48 (degree 12)",
-            [(1, 1.0), (2, 1.0), (3, 1.0), (4, 1.0), (5, 1.0), (6, 1.0), (24, 1.0), (48, 1.0)]),
-    ];
+        AdaptabilityAudit.BlindRings.Select(r => new NewRing(r.Name, r.Description, r.Offsets)).ToArray();
 
     /// <summary>Build the symmetric adjacency matrix of a ring with the given signed offsets.</summary>
     private static double[,] Ring((int Offset, double Weight)[] offsets)
-    {
-        int n = AdaptabilityAudit.N;
-        var a = new double[n, n];
-        for (int i = 0; i < n; i++)
-            foreach (var (d, w) in offsets)
-            {
-                a[i, (i + d) % n] += w;
-                a[i, ((i - d) % n + n) % n] += w;
-            }
-        return a;
-    }
+        => AdaptabilityAudit.Ring(offsets);
 
     private static double SmallestPositive(double[] spectrum)
     {
