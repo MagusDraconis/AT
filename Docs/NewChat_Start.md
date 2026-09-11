@@ -97,6 +97,19 @@ first *physical* test.
 - **Next open question.** Does the lock threshold exist in hardware (deciding experiment = one
   bench prototype), and does the AT-120 barrier transfer to a Laplacian ring (H2, highest risk,
   highest information)?
+- **REV. 2 (2026-09-11, after the post-fetch results NP_169 + T_007–T_015).** No incoming result
+  invalidates the experiment and none of those commits touched the prediction/classification/
+  coverage registries (so AT-P043 stays unclaimed). Four consequences were applied to NP_170:
+  (1) **method** — T_015 refutes "D96 outperforms random" and shows robustness is controlled by the
+  *degeneracy* structure (D96 Δλ₂/λ₂ = 0.0077 with ΔA = 30 vs random 0.0003/ΔA = 0), so a fourth
+  **mandatory degeneracy-matched control** ({1+42×2+5+6}) is added, R4 is scored against it, and no
+  spectral-superiority claim is made; (2) **framing** — T_010/T_012/T_014 make D96 the *compressed,
+  low-capacity* lattice (5 survivors vs 17; only 2 modes within 2λ₂), so D96 is chosen for
+  derivability, not capacity, with D96³ as a non-canonical engineering variant; (3) **framing** —
+  NP_169 (λ_gap = 4π²·91/N² + O(N⁻⁴)) makes the ring's gap an imported kinematic finite-size gap, so
+  λ₂ is not a physical mass-gap scale in hardware; (4) **protocol** — T_014 requires per-mode
+  ε_j = 0.01 ω_j. Unchanged: core experiment R1–R5, the three reasons, kill criteria, all verified
+  D96 numbers. Files: `ResearchY-NP_170.md` (rev. 2, §13 revision note) and the 10-page PDF.
 
 ## Latest Repo Sync
 

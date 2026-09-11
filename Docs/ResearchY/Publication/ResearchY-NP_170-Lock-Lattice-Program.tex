@@ -31,7 +31,7 @@
 \title{\textbf{Lock-Lattice Phase Memory}\\[0.35em]
 \large A Physical Realizability Test for the Lock Law of\\[0.15em]
 \large The Actualization Theory (AT)\\[0.35em]
-\normalsize\emph{Proposal --- ResearchY-NP\_170}}
+\normalsize\emph{Proposal --- ResearchY-NP\_170 (rev.\ 2)}}
 
 \author{Fabrice Wieser\\[1mm]
   \small Independent Researcher\\[0.5mm]
@@ -55,7 +55,11 @@ that survives: the lock lattice as a \emph{phase-memory} and \emph{threshold} el
 distinguishing feature is a \emph{predicted} criticality rather than a fitted one. Three reasons
 justify the experiment (theory falsification; phase memory where density is irrelevant; a
 neuromorphic threshold element with predicted sharpness), and the exact procedure --- platform,
-protocol, metrics, blinding, pre-registration and kill criteria --- is given in full. The
+protocol, metrics, blinding, pre-registration and kill criteria --- is given in full. Result
+revision 2 incorporates the results that landed after the first draft (NP\_169 and T\_010--T\_015):
+the retention controls are now matched on the degeneracy structure, the D96 lattice is presented as
+the derivable but low-capacity choice, and the ring's physical gap is declared an imported
+kinematic finite-size gap. The
 nonlinearity and the coupling network are declared as imported boundary inputs; the retention
 hypothesis is flagged as an analogy across two AT systems, not a derivation. Both outcome branches
 are informative, and the deciding experiment costs one bench prototype.
@@ -140,7 +144,11 @@ phase-pinning (M\_002) rather than charge transfer, so the write-energy floor is
 rather than by Coulomb energy. The bar to matter is $<{\sim}10$~fJ per write, retention comparable
 to a supercapacitor's self-discharge window, and variability $<5\%$ (competitive with
 MRAM/PCM/FeRAM). The failure mode is thermal and technical phase diffusion: a room-temperature ring
-may retain nothing beyond $1/\omega_0 \times Q$.
+may retain nothing beyond $1/\omega_0 \times Q$. \emph{Capacity caveat (post-fetch):} the D96 lattice
+is the \emph{compressed} case, not the rich one --- 5 survivors vs 17 for a random lattice (T\_010),
+only 2 modes (1 distinct eigenvalue) within $2\ls{2}$ (T\_014) --- so D96 is chosen for
+derivability, \textbf{not} for state richness; a capacity-oriented device is the D96\textsuperscript{3}
+variant of the apparatus section.
 
 \subsection{Reason 3 --- neuromorphic threshold element}
 The lock transition is a sigmoidal threshold with hysteresis --- a synapse/neuron primitive. What is
@@ -199,6 +207,32 @@ the number $0.31$. The inverse-spectral construction that converts a target spec
 weights already exists as an accepted ResearchY result (T\_001, inverse DFT onto the first
 circulant row); no new mathematics is required to specify the hardware.
 
+\subsection{Post-fetch constraints on these numbers (rev.\ 2)}
+Three results that landed after the first draft constrain how the numbers above may be used.
+
+\paragraph{1. The ring's gap is imported, not AT-derived (NP\_169).} For $C_N(1..6)$ the gap scales
+as $\lambda_{\rm gap}(N)=4\pi^2\cdot 91/N^2+O(N^{-4})$, so a positive limiting gap requires a
+scaling $f=\Theta(N^2)$, which NP\_169 proves no AT-native primitive supplies: the only positive
+cases are the imported fixed-circumference length $L_0$ --- a kinematic compact-domain gap --- and a
+tautological density renormalization. At $N=96$ the leading-order form gives $0.3898$ against the
+\emph{exact} $0.386351$ used here ($0.9\%$, i.e.\ the stated $O(N^{-4})$ term). Hence $\ls{2}$ must
+not be presented as a physical mass-gap scale in the hardware context, and at fixed circumference
+the gap degrades as $1/N^2$, which is a design input for any larger-$N$ variant.
+
+\paragraph{2. The near-gap band is essentially one doublet (T\_014).} Exact counting gives
+$N_{\rm gap}(k)=\#\{\lambda\le k\ls{2}\}$ = \textbf{2 modes (1 distinct eigenvalue)} at
+$k=1.5,2,3$, and 4 modes (2 distinct) at $k=4$. Only the fundamental doublet $k=\pm1$ lies within
+twice the gap. Consequently the locking criterion must be defined per mode.
+
+\paragraph{3. Robustness is degeneracy-controlled, and a structured lattice is not more robust
+(T\_015).} Under edge-removal, edge-addition and weight-noise perturbations D96 gives
+$\Delta\ls{2}/\ls{2}=0.0077$ with an attractor shift $\Delta A=\textbf{30}$ (the largest in the
+T\_015 table, 44 degenerate levels), whereas the random lattice gives $0.0003$ with $\Delta A=0$.
+T\_015 explicitly \textbf{refutes} ``gap size predicts robustness'', ``near-gap density predicts
+robustness'' and \textbf{``D96 outperforms random''} (H3). The retention comparison must therefore
+be controlled on the degeneracy class, since otherwise it confounds lock retention with
+degeneracy-driven spectral fragility.
+
 \section{Hypotheses and pass/fail criteria}
 
 \begin{table}[h]
@@ -225,7 +259,10 @@ reason 3 retired; reasons 1--2 unaffected \\
 \caption{Hypotheses. H2 is flagged as the highest-risk, highest-information hypothesis: it is an
 analogy across two different AT systems (the $R$-field condensate of AT-120 and the circulant
 Laplacian ring of Ch6--Ch8), not a derivation. Testing an analogy is legitimate; asserting it as
-derived would not be.}
+derived would not be. H2 also carries a known confound: T\_015 shows a structured (degenerate)
+lattice is \emph{more} spectrally fragile than a random one under symmetry-breaking, so a
+D96-vs-random retention comparison cannot by itself separate lock retention from
+degeneracy-driven fragility --- hence the degeneracy-matched control below.}
 \label{tab:hyp}
 \end{table}
 
@@ -252,7 +289,10 @@ from T\_001 \\
 Sweep & $g\equiv\sum_d w_d / \sum_d w_{d,\max}$, scanned over $g\in[0,1]$ in 40 steps (mirroring the
 QG316 ramp) \\
 Controls & (a) detuned ring (same $Q$, $\w{k}$ shifted out of ratio); (b) random-coupling ring (same
-$Q$ and span); (c) linear-ramp spectrum (must fail CROWDING per QG305/QG308) \\
+$Q$ and span); (c) linear-ramp spectrum (must fail CROWDING per QG305/QG308); (d)
+\textbf{degeneracy-matched} lattice - multiplicity spectrum matching D96's
+$\{1+42\times2+5+6\}$ ($\Delta A$ class) with different $\w{}$ values, required by T\_015 so that
+retention is not confounded with degeneracy-driven fragility \\
 Read-out & 96-channel multiplexed IQ demodulation at $f_0$, $\ge1$~MS/s per channel; $\theta_j$ and
 $A_j$ per node \\
 Injector & single-channel drive at selectable $\w{k}$ with programmable phase $\theta_{\rm in}$;
@@ -263,15 +303,29 @@ Budget & 2--4 $\times$ 16-channel ADC/DAC plus FPGA for real-time IQ: the EUR~5-
 \end{table}
 
 \noindent Design constraints: node-to-node $f_0$ spread must be $<1\%$ or the H0 test fails for
-trivial reasons; phase noise sets the retention floor, since the locked/unlocked contrast is only
-measurable while $1/(Q\w{0})\ll\tau_{\rm slow}$; the nonlinearity strength is the analogue of the
-QG316 organization parameter, so the mapping must be pre-registered before data-taking and the raw
-control voltage reported alongside the normalized $g$.
+trivial reasons --- now an \emph{anchored} tolerance, since T\_015 measures
+$\Delta\ls{2}/\ls{2}=0.0077$ and $\Delta A=30$ for D96 under weight-noise perturbations (44
+degenerate levels splitting), so node and link-weight tolerances must be budgeted to keep the
+measured $\Delta\ls{2}/\ls{2}$ below the H0 gate, with $\Delta A$ recorded alongside (a degeneracy
+split is not visible as a pair-symmetry error); \textbf{no superiority claim} may be made, because
+T\_015 refutes ``D96 outperforms random''; phase noise sets the retention floor, since the
+locked/unlocked contrast is only measurable while $1/(Q\w{0})\ll\tau_{\rm slow}$; the nonlinearity
+strength is the analogue of the QG316 organization parameter, so the mapping must be pre-registered
+before data-taking and the raw control voltage reported alongside the normalized $g$.
 
 \subsection{Tier 2 (photonic chip, months)}
 96 coupled SiN microring resonators; the transmitted spectrum gives $\w{k}$ directly (H0), locking
 via the Kerr nonlinearity, read-out by phase-sensitive heterodyne detection. Costlier, better for
 H1, worse for H2 (loss).
+
+\paragraph{Capacity-oriented variant (post-fetch).} If state richness rather than derivability is the
+goal, T\_012/T\_013/T\_014 point to the cubic tensor lattice \textbf{D96\textsuperscript{3}}:
+20{,}811 distinct non-zero eigenvalues, 16 survivors vs 5 for D96 (T\_012), near-gap staircase
+6/18/26/32 modes at $k=1.5/2/3/4$ (T\_014), compression ratio ${\approx}1300$ vs $8.8$ (T\_013). It
+is not the derivable spectrum (the canonical chain is 1D D96), and the legacy ${\sim}19$ species
+count is \emph{not} recovered from it (T\_011 refutes ${\sim}19$ from D96; T\_012 gives 16, a
+$\pm5$ correspondence, or 21 in the cubic sector) --- so D96\textsuperscript{3} is offered strictly
+as an engineering capacity path, not as a canonical object.
 
 \subsection{Tier 3 (superconducting, ${\sim}1$ year)}
 96 coupled superconducting cavities/transmons at $T<20$~mK, $Q\approx10^{6}$: the only tier in which
@@ -286,7 +340,9 @@ before the first run.
 
 \begin{description}[leftmargin=1.2em,style=nextline]
 \item[R0 --- calibration] measure each node's free-running $\w{0}$ and $Q$; trim or calibrate to
-$<1\%$ spread; record the spread as a systematic.
+$<1\%$ spread; record the spread as a systematic; additionally record the \textbf{degeneracy-split
+count $\Delta A$} (the T\_015 robustness measure --- how many of the 44 distinct eigenvalues split
+under the board's residual symmetry-breaking).
 \item[R1 --- validity (H0)] set $w_d$ to the \Cninety{} values; measure $\w{k}$ by ring-down or
 spectral scan; compute the mirror-pair error and the octave band occupancy (expect $[4,4,87]$ over
 95 positive modes). \emph{Gate:} if this fails, stop --- the apparatus is not a D96 lattice and
@@ -303,8 +359,12 @@ f(g)=\frac{\#\{j:\;|d\Delta\theta_j/dt|<\varepsilon\}}{96},\quad \varepsilon=0.0
 A=\int|f_{\rm up}(g)-f_{\rm down}(g)|\,dg ,
 \]
 with $\text{sharpness}=\max|\Delta f|/\overline{|\Delta f|}$ and width $=$ the $g_{10}\!\to\!g_{90}$
-interval. Test sharpness $\ge3$, width $\le0.4$, $A>0$ at $\ge5\sigma$. Report the measured
-$g_c$ as a hardware-specific value (QG313) and do \emph{not} compare it with $0.31$.
+interval. Test sharpness $\ge3$, width $\le0.4$, $A>0$ at $\ge5\sigma$. Because only the fundamental
+doublet lies within $2\ls{2}$ (T\_014), $\varepsilon=0.01\,\w{1}$ is a \emph{lowest-doublet}
+criterion: define $\varepsilon_j=0.01\,\w{j}$ per mode and report $f(g)$ both for the near-gap
+doublet and for the full 95-mode set, so a near-gap-only lock is not mistaken for a global one.
+Report the measured $g_c$ as a hardware-specific value (QG313) and do \emph{not} compare it with
+$0.31$.
 \item[R4 --- retention (H2)] (i) \emph{ring-down}: charge into a locked configuration, remove the
 drive abruptly, record total stored energy $\sum_j A_j^2/2$ versus $t$ for $\ge10^4/\w{1}$;
 (ii) \emph{cycle test}: $\ge10^3$ charge/hold/discharge cycles, recording state fidelity after hold.
@@ -316,12 +376,16 @@ Fit
 \]
 and report $R=\tau_{\rm slow}/\tau_{\rm fast}$ and the storage figure of merit
 $\mathrm{FOM}=R\cdot E_{\rm ret}/E_{\rm in}$. \emph{Pass:} $R\ge10$ with the two-time-scale fit
-preferred by BIC/AIC against the single-exponential null, with all three controls
-single-exponential.
+preferred by BIC/AIC against the single-exponential null, with all four controls
+single-exponential. \textbf{Mandatory degeneracy matching (post-fetch):} because T\_015 shows the
+controlling factor is the degeneracy structure ($\Delta A$), R4 is scored \emph{separately} against
+control (d); a D96-vs-(b) advantage is not a result; each control's $\Delta A$ is reported beside its
+retention numbers; and if the advantage over (d) vanishes while the advantage over (b) persists, the
+effect is reported as a degeneracy/robustness artefact rather than as lock retention.
 \item[R5 --- threshold benchmark (H4, optional)] only if R3 passes: measure switching energy per
 node, threshold sharpness and board-to-board variability across five identical boards; compare with
 published PCM/memristor figures.
-\item[R6 --- controls and blinding] labels $\{$locked, control a, b, c$\}$ are hidden from the
+\item[R6 --- controls and blinding] labels $\{$locked, control a, b, c, d$\}$ are hidden from the
 analyst until the frozen script has produced numbers (QG319: FP $96.9\%$, FN $66.1\%$ --- precisely
 the failure mode to guard against). The lock classifier itself is fixed before R3.
 \end{description}
@@ -341,7 +405,8 @@ Model comparison & BIC and AIC for single- vs two-time-scale decay; the null is 
 model \\
 Blinding & label blinding with a scripted or third-party unblinding step \\
 Freezing & analysis-script hash recorded before R3; any change restarts the run \\
-Negative controls & detuned, random-coupling and linear-ramp lattices must fail H1 and H2 \\
+Negative controls & detuned, random-coupling, linear-ramp \emph{and} \textbf{degeneracy-matched}
+lattices must fail H1 and H2 under the scoring rule of R4 \\
 Systematics & node-frequency spread, phase noise, ADC clock jitter, temperature drift and cable
 delay budgeted explicitly \\
 Reproducibility & raw IQ traces archived with instrument settings and seeds \\
@@ -380,6 +445,16 @@ $g^\ast=0.31$ & synthetic-cohort parameter (QG316; MONO007 A08) & a hardware $g_
 differ; quoting $0.31$ as a hardware number would be a fit \\
 D96 lock values $20.0026/2.4105/8.2980$ & D96-specific (QG313) & derive the hardware's own lock
 values from its own spectrum \\
+the ring's physical gap & imported kinematic finite-size gap (NP\_169) & the nonzero gap of a
+physical ring is the fixed-circumference case with an imported length $L_0$; AT supplies no natural
+scaling that preserves a positive gap as $N\to\infty$, so $\ls{2}$ is not a derived physical mass
+gap here \\
+spectral superiority of the D96 lattice & REFUTED (T\_015 H3) & do not claim the D96 lattice is more
+robust than the random or degeneracy-matched controls --- it is \emph{more} fragile
+($\Delta A=30$ vs $0$) \\
+capacity of the locked state set & EMERGENT / low for D96 (T\_010/T\_012/T\_014) & report state
+richness as measured (D96 is the compressed case); D96\textsuperscript{3} is a separate engineering
+device, not a canonical object \\
 energy-storage claims & out of scope & the density argument is accepted as fatal \\
 \bottomrule
 \end{tabular}
@@ -405,6 +480,10 @@ R1+R4 without R3 & two-time-scale decay without a threshold --- suspects an ordi
 & no device claim; the lock reading is unsupported \\
 R1 only, R3 null & lock law demoted to a descriptive statistic & the platform stays useful; the
 storage idea ends \\
+any branch, capacity measured low & D96 is the compressed lattice (T\_010/T\_014) --- no capacity
+claim is made & capacity reported as measured; D96\textsuperscript{3} is the upgrade path \\
+locked beats (b) but not (d) & degeneracy-driven fragility, not lock retention & report as an
+artefact (T\_015); no device claim \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -436,12 +515,59 @@ locked configuration decays with two time scales against a single-exponential co
 universal (QG313); the threshold value and the lock values are hardware-specific and are NOT
 predicted.\}\\
 \string\pfield\{Experimental Test\}\{Bench electronic 96-node ring, runs R1--R4, $\ge$30 repeats,
-blinded labels, three negative controls.\}\\
+blinded labels, four negative controls (detuned, random-coupling, linear-ramp,
+degeneracy-matched).\}\\
 \string\pfield\{Current Evidence\}\{None --- proposal. All existing lock-law evidence is statistical
-(QG307--QG319).\}\\
+(QG307--QG319). Post-fetch inputs shaping the method: NP\_169 (the ring's gap is an imported
+kinematic finite-size gap; no natural scaling preserves a positive gap), T\_014 (only 2 modes within
+$2\lambda_2$), T\_015 (robustness is degeneracy-controlled and a structured lattice is NOT more
+robust than a random one).\}\\
 \string\pfield\{Falsification Criterion\}\{No hysteresis, or locked retention decay
-indistinguishable from all three controls.\}
+indistinguishable from all four controls.\}
 \end{quote}
+
+\section{Revision note (rev.\ 2): what the post-fetch results changed}
+
+The proposal was first written before the 2026-09-11 sync. The ten commits that landed (NP\_169 and
+T\_007--T\_015) were checked against every claim here. No result invalidates the experiment and none
+reclassifies a canonical object, but three change the method and two the framing; none of those
+commits touched the prediction registry, the classification registry or the coverage record, so the
+drafted AT-P043 remains unclaimed and the QG313/QG316 citations remain current.
+
+\begin{table}[h]
+\centering
+\small
+\begin{tabular}{@{}p{0.30\linewidth}p{0.44\linewidth}p{0.20\linewidth}@{}}
+\toprule
+Post-fetch result & Effect & Where \\
+\midrule
+T\_015: robustness is degeneracy-controlled; ``D96 outperforms random'' REFUTED
+(D96 $\Delta\ls{2}/\ls{2}=0.0077$, $\Delta A=30$; random $0.0003$, $\Delta A=0$)
+& \textbf{Method change} --- mandatory degeneracy-matched control (d); R4 scored against it;
+$\Delta A$ reported per control; a D96-vs-random advantage is not a result; $<1\%$ spread becomes an
+anchored tolerance; no superiority claim & apparatus, H2, R0/R4/R6, statistics, boundaries,
+outcomes \\
+T\_010/T\_012/T\_014: D96 is the compressed, low-capacity lattice (5 survivors vs 17; 2 modes within
+$2\ls{2}$; D96\textsuperscript{3} 16) & \textbf{Framing change} --- D96 chosen for derivability, not
+capacity; capacity caveat in reason 2; D96\textsuperscript{3} as an explicitly non-canonical
+engineering variant; legacy ${\sim}19$ not used & reasons, apparatus, boundaries, outcomes \\
+NP\_169: no AT-native scaling preserves a positive mass gap
+($\lambda_{\rm gap}=4\pi^2\cdot91/N^2+O(N^{-4})$) & \textbf{Framing change} --- the ring's gap is an
+imported kinematic finite-size gap; $\ls{2}$ is not a physical mass-gap scale here; the $1/N^2$ gap
+penalty is a design input for larger $N$ & canonical basis, boundaries \\
+T\_014: near-gap density is exact counting (2 modes / 1 distinct at $k\le3$) & \textbf{Protocol
+refinement} --- per-mode $\varepsilon_j=0.01\w{j}$; near-gap and global lock fractions reported
+separately & canonical basis, R3 \\
+T\_007--T\_009, T\_011, T\_013 & No change (population dynamics on spectral landscapes; compression
+attributed to landscape size; ${\sim}19$ refuted from D96 but never used here) & --- \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\noindent\textbf{Unchanged by the revision:} the core experiment (R1--R5), the three reasons, the
+kill criteria, the density argument, the AT-P043 draft, and every verified D96 number
+($\ls{2}=0.386351$, $\w{1}=0.621571$, span $=6.402515$, bands $[4,4,87]$, 47 mirror pairs,
+multiplicities $\{2\times42,5,6\}$).
 
 \section{Conclusion}
 
@@ -455,7 +581,7 @@ imported, and the retention hypothesis is explicitly an analogy awaiting test ra
 derivation.
 
 \bigskip
-\noindent\textbf{Status:} PROPOSAL --- no experiment performed, no result claimed, no canonical AT
-statement modified.
+\noindent\textbf{Status:} PROPOSAL, rev.\ 2 --- no experiment performed, no result claimed, no
+canonical AT statement modified.
 
 \end{document}
