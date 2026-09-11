@@ -1624,6 +1624,65 @@ constant, and no family-invariant frontier. Linear fit for reference: C = 16.48 
 R² = 0.475. NO AT claim, value, equation or registry entry changed; the D_040
 ClassificationRegistry untouched. No canonical changes; research only.
 
+ResearchY-D_050 (Spectral Predictability Audit, COMPLETE, tests 5/5 PASSED): can adaptability
+(capacity) and robustness (recovery) be PREDICTED from spectral quantities ALONE — λ₂,
+degeneracy count, near-gap density (T_014 count of positive eigenvalues ≤ 2λ₂), distinct
+eigenvalue count — and what is the MINIMAL predictor set? Inputs and targets are taken
+UNCHANGED from the shared D_048/D_049 ensemble (AT.Tests/Shared/AdaptabilityAudit.cs, same
+4 perturbation types × 5 doses × 3 seeds, connectivity-guarded), so the D_049 tie-out is a
+REGRESSION TEST, not a re-measurement: D96 capacity 0.9902 (published 0.9902), complete
+0.2858 (published 0.2858), random 0.0000 (published 0.0000). DATA (capacity | recovery |
+λ₂ | degen | near-gap | distinct): D96 0.9902|0.9659|0.3864|44|2|45; D96³ 0.7207|0.9625|
+1.0000|11|6|13; random 0.0000|0.9792|17.1888|0|71|96; physical 0.8011|0.9558|1.0000|47|4|49;
+unphysical 0.7228|0.9443|5.0000|3|32|4; complete 0.2858|0.9868|96.0000|1|95|2.
+COLLINEARITY (Spearman): λ₂↔near-gap 0.986, degeneracy↔near-gap −0.886, λ₂↔degeneracy
+−0.841 (D_049 measured −0.814), distinct count correlates with nothing (|ρ| ≤ 0.37) and
+spans only 94 levels — the four inputs are NOT four independent facts; a four-input fit is
+fitting ONE axis four times. UNIVARIATE (best LOO): capacity best = near-gap density
+(ρ = −0.886, R² = 0.759, LOO 0.2962) vs degeneracy count (ρ = +0.886, R² = 0.529, LOO
+0.3318) vs λ₂ (R² = 0.295, LOO 1.7979) vs distinct (R² = 0.152, LOO 0.6519); recovery best =
+near-gap density (ρ = +0.486, R² = 0.525, LOO 0.0129) vs λ₂ (R² = 0.536 but LOO 0.0314) vs
+degeneracy count (ρ = −0.543, R² = 0.102) vs distinct (R² = 0.067). The collinear pair
+DISAGREES between the two criteria: capacity's RANK is an exact tie (|ρ| = 0.886 for both,
+opposite signs) while its VALUE fit prefers the near-gap density; recovery's RANK prefers the
+count (0.543 vs 0.486) while its value fit prefers the density (0.525 vs 0.102). MINIMAL
+PREDICTOR SET (parsimony by leave-one-out, decided BEFORE knowing the winner): **{ near-gap
+density } for capacity** (LOO 0.2962) and **{ near-gap density } for recovery** (LOO 0.0129) —
+ONE spectral quantity for both targets, not four. OVERFITTING DEMONSTRATION: the all-four-input
+capacity model has the BEST in-sample R² (0.972) and the WORST out-of-sample error (LOO 31.0123
+= 105× the singleton's 0.2962) on five parameters over six points; its two-input variant is
+worse than its own singleton (0.3164 vs 0.2962). FITTED RELATIONS: capacity =
+−0.00814·(near-gap density) + 0.87153 (R² = 0.759); recovery = +0.000284·(near-gap density) +
+0.95582 (R² = 0.525). RESIDUALS of the minimal capacity fit (fitted − measured): D96 −0.1349,
+D96³ +0.1020, random +0.2939, physical +0.0379, unphysical −0.1117, complete −0.1872; largest =
+0.2939 = 30 % of the FULL capacity range — the law gets the ORDER right while missing individual
+values by up to a third of the scale, and every residual above 0.10 sits at an endpoint of the
+axis. **DERIVED** — the scales 0 ≤ capacity ≤ 1 (ΔA ≤ N − A₀ headroom is an identity, D_048) and
+0 ≤ recovery ≤ 1 (a normalized distance); the random case is a DERIVED null (zero degeneracy ⇒
+EXACTLY zero capacity, D_047/D_048) and is exactly where the fit fails (over-predicts by 0.2939);
+the degeneracy axis is DERIVED (capacity bounded by ΔE_lock = (1/N)Σ m ln m, recovery by T_015's
+split statistics), so a spectral predictor can only ever be a PROXY for a combinatorially
+determined quantity. **EMERGENT** — the fitted forms and coefficients (one axis, two
+opposite-signed readings — D_049's mechanism), the one-predictor minimal set, and the
+rank-vs-value disagreement within the collinear pair; the coefficients are ensemble-specific and
+must NOT be presented as AT-derived constants. **REFUTED** — "a four-input spectral law determines
+capacity and recovery" (catastrophic overfitting; three of four inputs collinear); "λ₂, near-gap
+density and the distinct count are independent predictors" (λ₂↔near-gap ρ = 0.986; near-gap adds
+nothing beyond its own singleton); and STRONG spectral determination itself — D_049 shows the same
+spectral profile yields different capacity under different perturbation FAMILIES (edge deletion
+collapses the frontier to one case), so the target is a function of spectrum AND family, and any
+spectrum-only predictor is structurally incapable of being exact. ANSWER: **partly, and only as an
+ORDERING** — the honest form of any future claim is "capacity and recovery are ORDERED by the
+degeneracy axis", NOT "they are DETERMINED by the spectrum". NO AT claim, value, equation or
+registry entry changed; the D_040 ClassificationRegistry untouched; the D_047/D_048 bounds and
+D_049's family dependence are cited, not altered. No canonical changes; research only.
+→ D_050 leaves ONE open question for the D group: the residual gap (30 % of range) is attributed
+to the perturbation FAMILY, which D_050 deliberately did not supply as an input. The sharp test is
+a BLIND prediction audit — build a graph whose spectrum is chosen to maximize the degeneracy axis
+(not in the D_048/D_049 case set), predict its capacity from the one-predictor law, then measure
+it; and, separately, whether adding the family as a fifth input closes the residuals or merely
+re-introduces the overfitting the audit just refuted.
+
 ResearchY-NP_002 (Highest-Value V2.2 Program, COMPLETE): what is the highest-value
 V2.2 physics program? Verdict: MEASUREMENT ORIGIN — it scores 19/20 (impact 5,
 feasibility 4, testability 5, derived-chain dependence 5), the highest of ten
