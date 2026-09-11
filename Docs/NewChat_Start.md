@@ -1676,12 +1676,52 @@ ORDERING** — the honest form of any future claim is "capacity and recovery are
 degeneracy axis", NOT "they are DETERMINED by the spectrum". NO AT claim, value, equation or
 registry entry changed; the D_040 ClassificationRegistry untouched; the D_047/D_048 bounds and
 D_049's family dependence are cited, not altered. No canonical changes; research only.
-→ D_050 leaves ONE open question for the D group: the residual gap (30 % of range) is attributed
-to the perturbation FAMILY, which D_050 deliberately did not supply as an input. The sharp test is
-a BLIND prediction audit — build a graph whose spectrum is chosen to maximize the degeneracy axis
-(not in the D_048/D_049 case set), predict its capacity from the one-predictor law, then measure
-it; and, separately, whether adding the family as a fifth input closes the residuals or merely
-re-introduces the overfitting the audit just refuted.
+→ D_050 left ONE open question for the D group: the residual gap (30 % of range) was attributed to
+the perturbation FAMILY, which D_050 deliberately did not supply as an input. → ANSWERED by D_051
+(blind prediction on six new rings): the law fails out of sample on the ring family, and the cause
+is not the family input but that the predictor is CONSTANT there. New open question for D_052: the
+degeneracy count DID vary across the six new rings (38 … 47) while the near-gap density did not, so
+the collinear pair's other member — and the family, as a second input — are the concrete candidates
+to test next, against the overfitting trap D_050 already demonstrated.
+
+ResearchY-D_051 (Blind Prediction Audit, COMPLETE, tests 5/5 PASSED): does D_050's spectral
+prediction actually work on spectra it has never seen? Tests D_050 PROSPECTIVELY under a blind
+protocol enforced by FILE ORDER IN GIT: PHASE A (commit 003a0033) generates six 96-node circulant
+rings absent from D_048–D_050, reads their spectral inputs and prints the prediction — that commit's
+test file contains NO measurement code; PHASE B measures them afterwards under the identical shared
+ensemble (4 types × 5 doses × 3 seeds, connectivity-guarded). NEW RINGS (λ₂ | near-gap(2λ₂) |
+degeneracy): S96-123 ±1..±3 (0.059822 | 2 | 44); S96-135 ±1,±3,±5 (0.148851 | 2 | 43); D96-24
+±1..±12 (2.693016 | 2 | 38); Decay96 w_d = 1/d (0.089286 | 2 | 47); Boost96 w_d = d (1.870529 | 2 |
+46); Ring48 ±1..±6 + ±24,±48 (5.404246 | 8 | 44). FROZEN PREDICTION (capacity | recovery): FIVE of
+the six rings 0.85525 | 0.95639, Ring48 0.80641 | 0.95809 — the one-predictor law is DEGENERATE on
+the ring family. OBSERVED (capacity | recovery): S96-123 0.96928 | 0.96044; S96-135 0.93693 |
+0.96643; D96-24 0.97193 | 0.96937; Decay96 1.00000 | 0.91977; Boost96 0.99524 | 0.97537; Ring48
+0.99248 | 0.97244. METRICS: capacity mean absolute error 0.1305, max 0.1861, against an OBSERVED
+SPAN of 0.0631 — **the error is 2.07× the entire observed range of the truth**; recovery mean error
+0.01617, max 0.03662, predicted span 0.00170 vs observed span 0.05560 (the law sees 3.1 % of the
+real variation); distinct predicted capacities 2 vs distinct observed 6. RANK ERROR (tie-averaged):
+capacity mean |Δrank| 2.00 of 5 (40 % of range), max 3.0, Spearman ρ = **−0.131** (ANTI-correlated);
+recovery mean |Δrank| 1.33, ρ = +0.393. Every prediction errs on the SAME side (under-prediction),
+because a ring's near-gap density sits at the MINIMUM of the predictor. **DERIVED** — near-gap = 2
+is FORCED on every 1-D ring whose low-k spectrum follows the k² law (λ₂/λ₁ = 4, λ₃/λ₂ = 9/4 > 2 ⇒
+only the k = ±1 doublet lies within 2λ₂, whatever the weight profile), so D_050's minimal predictor
+set is a CONSTANT on the ring family — the family D96 itself belongs to — and D_050's R² = 0.759
+must have been carried by its non-ring cases (random, complete, the 3-D torus); the sign of the
+error is derived too; and D_050's bounds (0 ≤ capacity, recovery ≤ 1) and the zero-degeneracy null
+survive intact. **EMERGENT** — all six structurally different rings adapt strongly (capacity
+0.9369 … 1.0000: sparse, dense, tapered, long-range-weighted and extended rings alike collect
+nearly all their headroom), and the measured recovery band is 33× wider than predicted. **REFUTED** —
+the predictive claim (error 2.07× the observed range), the ranking claim (ρ = −0.131 for capacity),
+and generalization beyond D_050's own ensemble; the single discrimination the law CAN make (it
+orders Ring48 last on capacity) is itself wrong (observed: fourth). SUCCESS CRITERION MET — the
+prediction is on record in commit 003a0033, whose test file never constructs the perturbation
+ensemble, and Phase B re-derives D_050's own six cases from the frozen constants to prove they were
+not adjusted after the fact. CONSEQUENCE: D_050's "ordered, not determined" answer stands WITHIN its
+own ensemble but does NOT transfer to new spectra of the same family; a usable ring-family predictor
+must read a quantity that actually varies across rings — the degeneracy count DID vary (38 … 47)
+while the near-gap density did not, which is a concrete hypothesis for D_052. No canonical AT claim,
+value, equation or registry entry changed; D_050's classifications are reaffirmed, not
+reclassified; the D_040 ClassificationRegistry is untouched.
 
 ResearchY-NP_002 (Highest-Value V2.2 Program, COMPLETE): what is the highest-value
 V2.2 physics program? Verdict: MEASUREMENT ORIGIN — it scores 19/20 (impact 5,
