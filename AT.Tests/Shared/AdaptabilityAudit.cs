@@ -122,7 +122,36 @@ public static class AdaptabilityAudit
     /// <summary>Adjacency of a blind ring, or of the canonical ring D96, by name.</summary>
     public static double[,] RingAdjacency(string name)
         => name == "D96" ? Adjacency("D96")
-                         : Ring(BlindRings.Single(r => r.Name == name).Offsets);
+                         : Ring(AllRings.Single(r => r.Name == name).Offsets);
+
+    /// <summary>
+    /// D_054's edge-shape rings. Like D_051's set these are connected 96-node circulants absent from
+    /// D_048–D_050's case set, but they are chosen for a different purpose: to make the LOW-ENERGY
+    /// SPECTRAL EDGE depart from the universal parabolic form λ_k ∝ k² in as many different ways as
+    /// possible (high offsets, geometric offset ladders, scale-hierarchy weights, a long-range pair).
+    /// </summary>
+    public static readonly (string Name, string Description, (int Offset, double Weight)[] Offsets)[] EdgeRings =
+    [
+        ("E1", "single offset ±1 only (degree 2) — the pure parabolic edge",
+            [(1, 1.0)]),
+        ("E1-16-32", "offsets ±1, ±16, ±32, unit weights (degree 6) — high offsets bend the edge",
+            [(1, 1.0), (16, 1.0), (32, 1.0)]),
+        ("G1248", "geometric offsets ±1,±2,±4,±8,±16,±32 (degree 12)",
+            [(1, 1.0), (2, 1.0), (4, 1.0), (8, 1.0), (16, 1.0), (32, 1.0)]),
+        ("Wscale", "offsets ±1 (w=1), ±2 (w=1/4), ±4 (w=1/16), ±8 (w=1/64) (degree 8) — scale-hierarchy weights",
+            [(1, 1.0), (2, 0.25), (4, 0.0625), (8, 0.015625)]),
+        ("Two1-12", "offsets ±1 (w=1) and ±12 (w=4) (degree 4) — short edge with heavy long range",
+            [(1, 1.0), (12, 4.0)]),
+        ("Pair1-47", "offsets ±1 (w=1) and ±47 (w=1) (degree 4) — the near-antipodal pair",
+            [(1, 1.0), (47, 1.0)]),
+    ];
+
+    /// <summary>The D_054 blind set (six edge-shape rings), by name.</summary>
+    public static readonly string[] EdgeRingNames = [.. EdgeRings.Select(r => r.Name)];
+
+    /// <summary>Every named ring the audit family knows: the canonical ring, D_051's set and D_054's set.</summary>
+    private static readonly (string Name, string Description, (int Offset, double Weight)[] Offsets)[] AllRings =
+        [.. BlindRings, .. EdgeRings];
 
     /// <summary>The seven-ring family D_052 audits: the canonical ring plus the six blind rings.</summary>
     public static readonly string[] RingFamilyNames =
