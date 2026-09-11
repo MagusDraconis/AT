@@ -6,7 +6,7 @@ namespace AT.Core.Resonance.Kuramoto;
 ///
 /// MODEL. A ring of N = 96 coupled complex oscillators,
 ///
-///     da_i/dτ = ( −γ_i + i·ω_i )·a_i  +  g·( Σ_{j∈N(i)} w_ij·a_j ) / deg_i  −  β·|a_i|²·a_i
+///     da_i/dτ = ( −γ_i + i·ω_i )·a_i  +  g·( Σ_{j∈N(i)} w_ij·a_j ) / ⟨deg⟩  −  β·|a_i|²·a_i
 ///
 /// with ω_i the (normalized) natural frequency carried by node i, γ_i ≥ 0 the amplitude damping
 /// (γ = 1/2Q), g the inter-node coupling and β ≥ 0 the amplitude-dependent (saturating) damping.
@@ -186,14 +186,14 @@ public static class RetentionNullSimulator
                 double amp2 = ar * ar + ai * ai;
                 var nb = lat.Neighbors[i];
                 var wt = lat.Weights[i];
-                double sumR = 0.0, sumI = 0.0, deg = 0.0;
+                double sumR = 0.0, sumI = 0.0;
                 for (int t = 0; t < nb.Length; t++)
                 {
                     sumR += wt[t] * r[nb[t]];
                     sumI += wt[t] * m[nb[t]];
-                    deg += wt[t];
                 }
-                if (deg > 0) { sumR /= deg; sumI /= deg; }
+                double meanDegree = lat.MeanDegree;
+                if (meanDegree > 0) { sumR /= meanDegree; sumI /= meanDegree; }
                 // Reactive (phase) coupling: i·g·Σ w_ij a_j — it shifts frequency, never pumps amplitude.
                 // A real coupling here would add g·Re(s) to the growth rate and destabilize the ring.
                 double cplR = -Coupling * sumI, cplI = Coupling * sumR;
@@ -342,6 +342,87 @@ public static class RetentionNullSimulator
 
     /// <summary>Run and fit one model.</summary>
     public static RetentionFit Run(ModelSpec spec) => Fit(spec, RingDown(spec));
+
+    // ── Driven steady state (NP_174: the H3 read-out and the non-reciprocity probe) ──
+
+    /// <summary>
+    /// Driven steady state of the same ring: a phase-locked drive F·e^(i(ω_d·τ + φ_i)) is injected at
+    /// the listed nodes and the system is relaxed, so the amplitudes are the steady response. Used by
+    /// NP_174 to measure the interference read-out (H3) and the directional (non-reciprocity) response.
+    /// Same dynamics as the ring-down, different protocol; RK4 with the caller's step.
+    /// </summary>
+    public static (double[] Re, double[] Im) DrivenSteadyState(
+        ModelSpec spec, int[] driveNodes, double[] drivePhase, double driveAmplitude,
+        double driveFrequency, int steps)
+    {
+        var lat = spec.Lattice;
+        var re = new double[N];
+        var im = new double[N];
+        var k1r = new double[N];
+        var k1i = new double[N];
+        var k2r = new double[N];
+        var k2i = new double[N];
+        var k3r = new double[N];
+        var k3i = new double[N];
+        var k4r = new double[N];
+        var k4i = new double[N];
+        var tr = new double[N];
+        var ti = new double[N];
+
+        void Derivative(double[] r, double[] m, double tau, double[] outR, double[] outI)
+        {
+            for (int i = 0; i < N; i++)
+            {
+                double ar = r[i], ai = m[i];
+                double amp2 = ar * ar + ai * ai;
+                var nb = lat.Neighbors[i];
+                var wt = lat.Weights[i];
+                double sumR = 0.0, sumI = 0.0;
+                for (int t = 0; t < nb.Length; t++)
+                {
+                    sumR += wt[t] * r[nb[t]];
+                    sumI += wt[t] * m[nb[t]];
+                }
+                double meanDegree = lat.MeanDegree;
+                if (meanDegree > 0) { sumR /= meanDegree; sumI /= meanDegree; }
+                double cplR = -Coupling * sumI, cplI = Coupling * sumR;
+                double driveR = 0.0, driveI = 0.0;
+                for (int d = 0; d < driveNodes.Length; d++)
+                    if (driveNodes[d] == i)
+                    {
+                        double ph = driveFrequency * tau + drivePhase[d];
+                        driveR += driveAmplitude * Math.Cos(ph);
+                        driveI += driveAmplitude * Math.Sin(ph);
+                    }
+                outR[i] = -spec.Gamma[i] * ar - lat.Omega[i] * ai + cplR - spec.Beta * amp2 * ar + driveR;
+                outI[i] = -spec.Gamma[i] * ai + lat.Omega[i] * ar + cplI - spec.Beta * amp2 * ai + driveI;
+            }
+        }
+
+        double tau = 0.0;
+        for (int s = 0; s < steps; s++)
+        {
+            Derivative(re, im, tau, k1r, k1i);
+            for (int i = 0; i < N; i++) { tr[i] = re[i] + 0.5 * spec.Dt * k1r[i]; ti[i] = im[i] + 0.5 * spec.Dt * k1i[i]; }
+            Derivative(tr, ti, tau + 0.5 * spec.Dt, k2r, k2i);
+            for (int i = 0; i < N; i++) { tr[i] = re[i] + 0.5 * spec.Dt * k2r[i]; ti[i] = im[i] + 0.5 * spec.Dt * k2i[i]; }
+            Derivative(tr, ti, tau + 0.5 * spec.Dt, k3r, k3i);
+            for (int i = 0; i < N; i++) { tr[i] = re[i] + spec.Dt * k3r[i]; ti[i] = im[i] + spec.Dt * k3i[i]; }
+            Derivative(tr, ti, tau + spec.Dt, k4r, k4i);
+            for (int i = 0; i < N; i++)
+            {
+                re[i] += spec.Dt / 6.0 * (k1r[i] + 2.0 * k2r[i] + 2.0 * k3r[i] + k4r[i]);
+                im[i] += spec.Dt / 6.0 * (k1i[i] + 2.0 * k2i[i] + 2.0 * k3i[i] + k4i[i]);
+            }
+            tau += spec.Dt;
+        }
+
+        return (re, im);
+    }
+
+    /// <summary>Amplitude of a single node, from a driven steady state.</summary>
+    public static double Amplitude(double[] re, double[] im, int node)
+        => Math.Sqrt(re[node] * re[node] + im[node] * im[node]);
 
     // ── Closed form for the coherent charge (the analytic null) ──────────────
 

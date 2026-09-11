@@ -258,6 +258,53 @@ control sharing the property invoked to explain it? Only (1)+ (2) makes a discri
   from ordinary coupled-oscillator physics? If not, the honest step is to record the program as
   closed at the proposal stage rather than to build the board.
 
+## Program Synthesis — no AT-specific observable remains; CLOSE the hardware program (2026-09-11)
+
+ResearchY-NP_174 (COMPLETE): reviews NP_170–NP_173 and classifies **every** observable as
+GENERIC / D96-SPECIFIC / AT-SPECIFIC. Success criterion = at least one AT-SPECIFIC observable.
+
+- **RESULT: none. 18 audited observables/claims, zero AT-SPECIFIC.** Every one is GENERIC
+  (reproducible without AT), D96-SPECIFIC (the canonical spectrum — an **input** the hardware is
+  built to have), or already excluded/refuted (g* ≈ 0.31 is a synthetic-cohort number; the
+  energy-storage framing was abandoned inside NP_170 itself).
+- **The single candidate — the one-way barrier's only possible route — is structurally closed.**
+  A one-way barrier must break reciprocity. Measured: max |w_ij − w_ji| = **0** for D96 and the
+  random control, and the driven asymmetry is **1e−16** (machine zero) at 5τ and 15τ on both. The
+  canonical chain supplies no antisymmetric coupling (NP_005's κ·sin(θ_B−θ_A) is antisymmetric,
+  i.e. also reciprocal). The apparent nonlinear asymmetry (D96 1.1e−2, random 1.9e−3 at β = 0.05)
+  shrinks **quadratically** with the drive (→1.1e−4 / 1.9e−5) — saturation, not transport.
+- **NEW MEASUREMENT — H3 (untested until now) is a superposition identity.** The interference
+  read-out gives **V = 1.0000 on the ideal ring AND on the real D96 ring** (arm imbalance 7.7e−15),
+  because the probe pair (24, 72) is a **mirror pair** of the ring reflection that fixes the
+  midpoint 48 — i.e. H0's mirror pairing. The gate V ≥ 0.90 cannot fail, so H3 confirms the build,
+  not the law (GENERIC/tautological).
+- **MODELLING DEFECT FOUND AND FIXED.** The reciprocity probe exposed a per-node degree
+  normalization (÷d_i): D = diag(d_i) makes D⁻¹W symmetric **only** for uniform degree. The
+  canonical ring's degree is uniformly 12, so **no C96 result moved**; the "random 12-regular"
+  control (true mean degree 14.917) had acquired a spurious one-way character (asymmetry 0.071 →
+  1e−16 after the fix). The divisor is now the lattice constant ⟨d⟩ = (Σ_ij w_ij)/N. Re-verified
+  after the fix: D96 g_c = 1.695, random g_c = 0.867, retention R = 6.358 for D96 and the
+  saturation-matched control — all unchanged.
+- **DECISION: CLOSE** the lock-lattice physical-realizability program (NP_170 Tiers 1–3) at the
+  proposal stage. As specified it has no measurement whose outcome could distinguish the lock law
+  from ordinary coupled-oscillator physics: the tests that would be evidence are generic (threshold
+  existence, hysteresis, retention, read-out), and the D96-specific observables are inputs, not
+  outcomes. **This is not a change to canonical AT** — no claim, value, equation or registry entry
+  changes (D_040 untouched); the Ch8 lock law stays a statistical regularity with domain-specific
+  values (QG313).
+- **ONE CONDITIONAL REVISE TRIGGER (recorded, not pursued).** A revised program becomes possible
+  only if the theory derives a genuinely **non-reciprocal** coupling (w_ij ≠ w_ji) — new physics,
+  not in the canonical chain — so the reopening test is a **theory** audit first. A weaker second
+  path is a blinded, pre-registered **statistics** program on datasets (QG319's FP = 96.9 % /
+  FN = 66.1 % is the obstacle to beat), which needs no board.
+- **Files.** `Docs/ResearchY/NP_NewPhysics/ResearchY-NP_174.md`;
+  `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_174_Tests.cs` (5/5 ✅, deterministic; reuses the NP_171/172
+  simulators). Registry note: the NP_171 **index** row had been lost by an earlier insertion and was
+  restored in this commit (the status table was intact).
+- **Next open question.** Does any AT-native construction yield a non-reciprocal coupling? That is
+  the single question that could reopen a hardware test of the lock law, and it is a theory
+  question, not an experiment.
+
 ## Latest Repo Sync
 
 Recent commits from the other machine:

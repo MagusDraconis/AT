@@ -101,6 +101,15 @@ public static class LockLatticeSimulator
 
         /// <summary>True for the 95 oscillating modes; false for the single zero mode.</summary>
         public bool IsPositive(int i) => Omega[i] > ZeroTolerance;
+
+        /// <summary>
+        /// Mean weighted degree, (Σ_ij w_ij)/N. Used as a SINGLE constant for the coupling
+        /// normalization: normalizing per node (÷d_i) is a similarity transform D⁻¹W that is not
+        /// symmetric when the degrees differ, which spuriously breaks reciprocity. For the canonical
+        /// C96(±1..±6) ring every node has degree 12, so this constant equals the per-node degree and
+        /// no C96 result changes.
+        /// </summary>
+        public double MeanDegree => Weights.Sum(w => w.Sum()) / N;
     }
 
     /// <summary>Build a lattice from an adjacency matrix and a frequency vector (both length N).</summary>
@@ -301,11 +310,14 @@ public static class LockLatticeSimulator
         }
 
         /// <summary>
-        /// dθ_i/dτ = ω_i + g·(Σ_j w_ij sin(θ_j − θ_i)) / Σ_j w_ij, evaluated with the
-        /// angle-addition identity (algebraically exact, 2 trig calls per node).
+        /// dθ_i/dτ = ω_i + g·(Σ_j w_ij sin(θ_j − θ_i)) / ⟨d⟩, evaluated with the angle-addition
+        /// identity (algebraically exact, 2 trig calls per node). The divisor is the lattice's MEAN
+        /// degree, a single constant — dividing per node would break the reciprocity of the coupling
+        /// whenever the degrees differ.
         /// </summary>
         public void Derivative(double[] theta, double g, double[] dst)
         {
+            double meanDegree = lattice.MeanDegree;
             for (int i = 0; i < N; i++)
             {
                 _sin[i] = Math.Sin(theta[i]);
@@ -315,14 +327,13 @@ public static class LockLatticeSimulator
             {
                 var nb = lattice.Neighbors[i];
                 var wt = lattice.Weights[i];
-                double ss = 0.0, sc = 0.0, deg = 0.0;
+                double ss = 0.0, sc = 0.0;
                 for (int t = 0; t < nb.Length; t++)
                 {
                     ss += wt[t] * _sin[nb[t]];
                     sc += wt[t] * _cos[nb[t]];
-                    deg += wt[t];
                 }
-                double coupling = deg > 0 ? (_cos[i] * ss - _sin[i] * sc) / deg : 0.0;
+                double coupling = meanDegree > 0 ? (_cos[i] * ss - _sin[i] * sc) / meanDegree : 0.0;
                 dst[i] = lattice.Omega[i] + g * coupling;
             }
         }
