@@ -193,6 +193,20 @@ public sealed class TheoryRegistry
             CalculationId: "gravity-control",
             References: ["ResearchY-G_005", "QG_194", "D_047"],
             AuditIds: ["g005"]),
+        new("gravity-suppression", "Suppression Mechanism", "The G_005 34× is derived in closed form: the relaxation operator is a low-pass filter whose every mode decays geometrically.",
+            TheoryLayer.Physics, TheoryClassification.Derived, TheoryObjectKind.Derivation,
+            ["gravity-control", "gravity-magnitude"],
+            Narrative: "The suppressing term is the relaxation/coarse-graining operator (RhoDynamics.DiffuseStep), a LINEAR low-pass filter on the eigenspace-occupancy index "
+                + "with the exact spectrum μ_k = 1 − 2d(1 − cos(πk/N)): every Neumann mode is an exact eigenvector and decays geometrically, so the suppression at any horizon is "
+                + "computable in closed form and reproduces direct iteration to < 1e-9 at m = 1…50 000. The 34× is 1/r(200) = 33.78 = exp(3.5198 nats). Over 1…200 a power law fits "
+                + "the aggregate better (R² 0.9945 vs 0.7579) — a real illusion — but the tail is a single exponential at slope ln μ₁ (1.85e-10) and the rate converges to 2.1419e-4 "
+                + "instead of zero, so power-law decay as the LAW is refuted. Entropy is downstream (exactly linear operator; H + (N/2)E → ln 96 with residual 9.7e-7) and the "
+                + "branching flow is arrangement-neutral (a(λρ) = a(ρ)), so neither drives it. μ_k depends on N only: the mechanism is arrangement-selective, and the observed smooth "
+                + "field survives on the slow mode (μ₁^200 = 0.958) while the within-multiplet free directions are erased.",
+            Formula: "mu_k = 1 − 2d(1 − cos(pi k/N));   r(m) = sqrt(Σ_{k≥1} w_k²mu_k^2m / Σ_{k≥1} w_k²);   1/r(200) = 33.78",
+            CalculationId: "suppression-mechanism",
+            References: ["ResearchY-G_006", "ResearchY-G_005"],
+            AuditIds: ["g006"]),
 
         // ── Layer 5 — Correspondence ───────────────────────────────────────────
         new("thermodynamics", "Thermodynamics", "An added occupancy layer over the structural modes (temperature is BOUNDARY).",
@@ -636,5 +650,28 @@ public sealed class TheoryRegistry
             + "G_003 modes are an empty tail. No reclassification (D_040 untouched); no canonical claim changes; no new primitive.",
             AuditStatus.Passed, new DateTime(2026, 9, 12), TheoryLayer.Physics, TheoryClassification.Derived,
             ["g001", "g002", "g003", "g004", "planck-scale"]),
+        new("g006", "Suppression Mechanism Audit", "What term suppresses large-density rearrangements, and can the 34x be derived?",
+            "THE RELAXATION (COARSE-GRAINING) OPERATOR — a LINEAR LOW-PASS FILTER on the eigenspace-occupancy index with the exact spectrum "
+            + "μ_k = 1 − 2d(1 − cos(πk/N)), d = 0.2, N = 96. Every Neumann cosine mode is an EXACT eigenvector (one step multiplies it by a constant, "
+            + "verified < 1e-12 for k = 1, 5, 48, 95): μ₁ = 0.999785834991 (1/e after 4669 steps, survives 200 steps at 0.958067), μ₄₈ = 0.6 exactly, "
+            + "μ₉₅ = 0.200214165009 (1.99e-140 after 200 steps) — a 10^140 rate spread. CLOSED FORM: r(m) = sqrt(Σ_{k≥1} w_k²μ_k^{2m}/Σ_{k≥1} w_k²), "
+            + "w = DCT-II(ρ), k = 0 excluded — reproduces direct iteration to < 1e-9 at EVERY horizon tested (m = 1 … 50 000). THE 34× DERIVED: "
+            + "1/r(200) = 33.78 = exp(200 × 0.0175991) = exp(3.5198 nats); the ladder is 2.27 (m = 1), 6.15 (10), 16.79 (50), 25.16 (100), 33.78 (200), "
+            + "48.78 (500), 65.13 (1000), 162.10 (5000), 2.49e6 (50 000) — DERIVED as a law, EMERGENT as a number. EXPONENTIAL, NOT A POWER LAW: over "
+            + "1…200 a power law fits the aggregate BETTER (R² 0.9945 with α = 0.5612 versus 0.7579 for one exponential; the window rate 8.0787e-3 is 37.7× "
+            + "the true rate) — but over m = 5000…50 000 the envelope is a SINGLE exponential with slope −2.1418813131e-4 against ln μ₁ = −2.1418794605e-4 "
+            + "(difference 1.85e-10, R² = 1.0), and the instantaneous rate CONVERGES to the geometric floor 2.1419e-4 instead of decaying to zero: power-law "
+            + "decay as the LAW is REFUTED, its finite-window appearance EMERGENT. ENTROPY DRIVEN REFUTED: the operator is EXACTLY linear "
+            + "(|D(ax+by) − aDx − bDy| = 3.47e-18) so it cannot read the entropy, and H + (N/2)·E → ln 96 with residual 9.7e-7 at m = 200 — entropy is "
+            + "DOWNSTREAM of the Dirichlet-energy decay. BRANCHING DRIVEN REFUTED: ρ_(k+1) = μρ_k multiplies every cell by the same μ (a(λρ) = a(ρ) to "
+            + "5.56e-11 at λ = 10⁶, both static at criticality, count conserved), the basin is 1 at every size (universal across size), and the tilt's field "
+            + "(max|a| = 0.6032) is removed only by relaxation (→ 1.8746e-3 = 322×). CASES at m = 200: D96 33.78; D96³ 7.33 (884 736 modes, A₀ = 20 812, "
+            + "free room 863 924); Random = witness class EMPTY (A₀ = 96, every multiplicity 1, free room 0), extremal alternation 55.13. STRUCTURAL: μ_k "
+            + "depends on N ONLY — D96 and Random share the identical operator and the cube's μ₁ = 0.99999999999748 never decays — so the mechanism is "
+            + "ARRANGEMENT-selective, not lattice-selective. CONSEQUENCE: this closes G_005's open mechanism — the free directions are within-multiplet "
+            + "(high-k) and are erased fastest, while the smooth scale-free deficit behind the observed galactic field sits on the slow mode and survives "
+            + "(μ₁^200 = 0.958). No reclassification (D_040 untouched); no canonical claim changes; no new primitive.",
+            AuditStatus.Passed, new DateTime(2026, 9, 12), TheoryLayer.Physics, TheoryClassification.Derived,
+            ["g002", "g003", "g005"]),
     ];
 }

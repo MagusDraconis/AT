@@ -220,6 +220,15 @@ primitive.
 
 ## Result summary
 
+> **Refinement (ResearchY-G_006, 2026-09-12).** The "off-attractor / contracting" mechanism invoked here is
+> now named: the suppressing term is the **relaxation (coarse-graining) operator** `RhoDynamics.DiffuseStep`,
+> a linear low-pass filter on the eigenspace-occupancy index with the exact spectrum
+> `μ_k = 1 − 2d(1 − cos(πk/N))`. The **34× is DERIVED in closed form**:
+> `1/r(200) = 33.78 = exp(3.5198 nats)`, from `r(m) = sqrt(Σ_{k≥1} w_k²μ_k^{2m}/Σ_{k≥1} w_k²)`, which
+> reproduces this suite's measured contraction to < 1e-9. No G_005 verdict changes: ACCESSIBLE /
+> SUPPRESSED / FORBIDDEN stand as classified; only the mechanism is now identified. See
+> `ResearchY-G_006.md`.
+
 **Test suite:** `AT.Tests/ResearchY/G_GravitySource/Y_G_005_Tests.cs` — **8/8 PASSED** (~0.3 s)
 **Group total:** G_001–G_005 = **40/40 PASSED** (~0.3 s)
 **Reproduction:** `dotnet test AT.Tests/AT.Tests.csproj --filter "FullyQualifiedName~Y_G_005"`

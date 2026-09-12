@@ -2076,11 +2076,11 @@ in the historical program counts below.
 | AT-QG | 182 | Complete |
 | **Total** | **289** | |
 
-## ResearchY G-Program — Gravity Source, Control, Magnitude, Calibration, Realizability (5 audits, 2026-09-12)
+## ResearchY G-Program — Gravity Source, Control, Magnitude, Calibration, Realizability, Mechanism (6 audits, 2026-09-12)
 
-New ResearchY group **G — Gravity Source**. Suite: `AT.Tests/ResearchY/G_GravitySource/` (40/40 pass,
-~0.3 s); shared machinery `AT.Tests/Shared/DensityField.cs`, `AT.Tests/Shared/PhysicalUnits.cs`.
-Detailed docs: `Docs/ResearchY/G_GravitySource/ResearchY-G_00{1..5}.md`.
+New ResearchY group **G — Gravity Source**. Suite: `AT.Tests/ResearchY/G_GravitySource/` (49/49 pass,
+~1 s); shared machinery `AT.Tests/Shared/DensityField.cs`, `AT.Tests/Shared/PhysicalUnits.cs`.
+Detailed docs: `Docs/ResearchY/G_GravitySource/ResearchY-G_00{1..6}.md`.
 
 ### G_001 — Gravity Source Audit
 **Status:** Complete. **SOURCE = the actualization density ρ** (counting measure), and for the attractive
@@ -2134,9 +2134,9 @@ REFUTED (cluster modified gravity).**
   the ephemeris bound (REFUTED); locally a point-like deficit gives exactly `a = −G_AT M/r²` with no
   anomalous term (G4-ME22) — the 1/r flat-curve regime needs a scale-free extended deficit (G4-ME21).
 
-**App/Book surfaced:** AT.App Research News + Theory Book ("Gravity Source" part, five new chapters) +
-TestGroups; AT.Book `GravityService` (5 executable calculations), five theory objects (Physics layer) and
-five audits g001–g005.
+**App/Book surfaced:** AT.App Research News + Theory Book ("Gravity Source" part, six new chapters) +
+TestGroups; AT.Book `GravityService` (6 executable calculations), six theory objects (Physics layer) and
+six audits g001–g006.
 
 ### G_005 — Control Realizability Audit
 **Status:** Complete. **SUPPRESSED, not FORBIDDEN.** The large G_003 modes violate nothing (count
@@ -2173,6 +2173,39 @@ Four channels were tested:
   dynamical (no drive).
 - **Consequence:** G_004's CALIBRATED verdict is explained **dynamically** — the observably sourced
   gravity is the Poisson-natural part of the counting measure, and the huge G_003 modes are an empty tail.
+
+### G_006 — Suppression Mechanism Audit
+**Status:** Complete. The suppressing term is the **relaxation (coarse-graining) operator**
+`RhoDynamics.DiffuseStep` — a **linear low-pass filter** on the eigenspace-occupancy index. Four measures
+(contraction rate, attractor basin, entropy production, deficit evolution), three cases (D96, D96³,
+Random), four candidates.
+
+| # | measure | result |
+|---|---|---|
+| 1 | contraction rate | `μ_k = 1 − 2d(1 − cos(πk/N))`, `d = 0.2`: every Neumann mode an **exact** eigenvector (one step ⇒ constant factor, < 1e-12 at k = 1, 5, 48, 95); μ₁ = 0.999785834991 (1/e after 4669 steps; 0.958067 after 200), μ₄₈ = 0.6 exactly, μ₉₅ = 0.200214165009 (1.99e-140 after 200) — a **10¹⁴⁰ rate spread** |
+| 2 | attractor basin | **1.0 at every size** (universal across size, N·K links): lattice- and size-independent, so it **cannot** be the discriminating mechanism |
+| 3 | entropy production | `H + (N/2)·E → ln 96` with residual **9.7e-7** at m = 200 (4.59812674 → 4.56434722); the operator is **exactly linear** (`3.47e-18`) ⇒ entropy is **downstream**, not a driver |
+| 4 | deficit evolution | `Σρ = 1` at every step; deficit L1 and max|deficit| decay monotonically; the field `max|a|` 0.6032 → 1.8746e-3 (**322×**) — removed by relaxation only, the branching flow being arrangement-neutral |
+
+- **Closed form (no fitting):** `r(m) = sqrt(Σ_{k≥1} w_k²μ_k^{2m}/Σ_{k≥1} w_k²)`, `w = DCT-II(ρ)`, mean
+  excluded — reproduces direct iteration to **< 1e-9 at every horizon** (m = 1 … 50 000).
+- **The 34× DERIVED:** `1/r(200) = 33.78 = exp(200 × 0.0175991) = exp(3.5198 nats)`. Ladder: 2.27 (m = 1) ·
+  6.15 (10) · 16.79 (50) · 25.16 (100) · **33.78 (200)** · 48.78 (500) · 65.13 (1000) · 162.10 (5000) ·
+  2.49e6 (50 000) ⇒ the **law** is DERIVED, the **value** EMERGENT.
+- **Exponential, not a power law — with an honest illusion.** Over 1…200 a power law fits the aggregate
+  **better** (R² **0.9945**, α = 0.5612, vs **0.7579** for one exponential; window rate 37.7× the true rate).
+  Resolution: over 5000…50 000 the envelope is a **single exponential** with slope **−2.1418813131e-4** vs
+  `ln μ₁ = −2.1418794605e-4` (diff **1.85e-10**, R² = 1.0), and the rate **converges** to the geometric floor
+  2.1419e-4 instead of zero ⇒ power-law decay as the LAW **REFUTED**, its appearance EMERGENT.
+- **Cases at m = 200:** **D96 33.78** · **D96³ 7.33** · **Random: witness class EMPTY** (A₀ = 96, every
+  multiplicity 1, free room 0 — the degeneracy-free control admits no within-multiplet rearrangement),
+  extremal alternation 55.13.
+- **Structural:** `μ_k` depends on `N` **only** ⇒ D96 and Random share the *identical* operator; the cube's
+  μ₁ = 0.99999999999748 never decays. **Arrangement-selective (a low-pass filter), not lattice-selective.**
+- **Closes G_005's open mechanism:** the G_002 free directions are *within-multiplet*, i.e. **high-k** —
+  exactly what the filter removes fastest — while the smooth scale-free deficit behind the observed galactic
+  field (G4-ME21 one void per octave ≈ k = 1) survives on the slow mode (`μ₁²⁰⁰ = 0.958`). **Suppression and
+  observability are the two ends of the same filter.**
 
 ## Key Unsolved Problems
 

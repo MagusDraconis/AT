@@ -572,6 +572,68 @@ accessibility — and every configuration is classified **ACCESSIBLE / SUPPRESSE
   rate and the Poisson counting window, though both rooted in the counting measure, are not yet derived
   from a single principle.
 
+## Suppression Mechanism Audit — the term is the relaxation operator, and the 34× is derived (ResearchY-G_006, 2026-09-12)
+
+G_006 names the term G_005 left unnamed (the "off-attractor contraction") by measuring four quantities —
+contraction rate, attractor basin, entropy production, deficit evolution — on three cases (D96, D96³,
+Random) against four candidates: exponential decay, power-law decay, entropy driven, actualization driven.
+**Verdict: the RELAXATION (coarse-graining) operator — DERIVED as the mechanism; power law, entropy and
+branching all REFUTED.**
+
+- **The operator.** `Dx = x + d(x_{i−1} − 2x_i + x_{i+1})` (Neumann boundaries, `d = 0.2`) is a **linear
+  low-pass filter** on the eigenspace-occupancy index with the **exact** spectrum
+  `μ_k = 1 − 2d(1 − cos(πk/N))`. Every Neumann cosine mode is an **exact eigenvector**: one step multiplies
+  it by a constant (verified < 1e-12 for `k` = 1, 5, 48, 95). `μ₁ = 0.999785834991` (**1/e after 4669
+  steps**; survives 200 steps at 0.958067), `μ₄₈ = 0.6` exactly (`λ₄₈ = 12`), `μ₉₅ = 0.200214165009`
+  (1.99e-140 after 200 steps) — a **10¹⁴⁰ rate spread**.
+- **The closed form** (no fitting): `r(m) = sqrt(Σ_{k≥1} w_k²μ_k^{2m} / Σ_{k≥1} w_k²)`, `w = DCT-II(ρ)`,
+  mean excluded — reproduces direct iteration to **< 1e-9 at every horizon tested** (m = 1 … 50 000).
+- **The 34× DERIVED:** `1/r(200) = 33.78 = exp(200 × 0.0175991) = exp(3.5198 nats)`. The ladder:
+  2.27 (m = 1) · 6.15 (10) · 16.79 (50) · 25.16 (100) · **33.78 (200)** · 48.78 (500) · 65.13 (1000) ·
+  162.10 (5000) · 2.49e6 (50 000) — so the LAW is DERIVED while the VALUE is **EMERGENT**.
+- **Exponential, not a power law — with an honest illusion.** Over the accessible window 1…200 a power law
+  fits the AGGREGATE better: `R² = 0.9945` (α = 0.5612) versus **0.7579** for one exponential, and the
+  window rate (8.0787e-3) is **37.7×** the true asymptotic rate. The resolution is asymptotic: over
+  m = 5000…50 000 the envelope is a **single exponential** with slope **−2.1418813131e-4** against
+  `ln μ₁ = −2.1418794605e-4` (difference **1.85e-10**, R² = 1.0), and the instantaneous rate **converges**
+  to the geometric floor `|ln μ₁| = 2.1419e-4` instead of decaying to zero. A power law has no eigennumber
+  to converge to ⇒ power-law decay as the LAW is REFUTED, its finite-window appearance EMERGENT.
+- **Entropy driven — REFUTED.** The operator is **exactly linear**
+  (`|D(ax+by) − aDx − bDy| = 3.47e-18`), so it cannot read the entropy; and empirically
+  `H + (N/2)·E → ln 96` with residual **9.7e-7** at m = 200 ⇒ the entropy rise is the second-order
+  expansion of the Dirichlet-energy decay. **Entropy is downstream.**
+- **Actualization/branching driven — REFUTED.** `ρ_(k+1) = μρ_k` multiplies every cell by the same μ
+  (`a(λρ) = a(ρ)` to 5.56e-11 at λ = 10⁶; both density and metric static at criticality), so it contracts
+  nothing; the attractor basin is 1 at **every** size (universal across size), so it cannot discriminate
+  either; the tilt's field is removed only by relaxation (`max|a|` 0.6032 → 1.8746e-3 = **322×**), with
+  `Σρ = 1` conserved at every step and the deficit L1/max decaying monotonically.
+- **Cases at m = 200:** **D96 33.78** · **D96³ 7.33** (884 736 modes, A₀ = 20 812, free room 863 924) ·
+  **Random: witness class EMPTY** (A₀ = 96, every multiplicity 1, free room `Σ(m_i − 1) = 0`), its extremal
+  admissible arrangement (cell-scale alternation) annihilated at **55.13**.
+- **Structural finding.** `μ_k` depends on the chain length `N` **only**: D96 and Random share the
+  *identical* operator, while the cube's `μ₁ = 0.99999999999748` (`|ln μ₁| < 1e-11`) never decays. The
+  mechanism is therefore **arrangement-selective (a low-pass filter), not lattice-selective** — no property
+  of the D96 spectrum is doing the suppressing.
+- **Consequence (closes G_005's open mechanism).** The G_002 free directions are *within-multiplet*
+  rearrangements, i.e. **high-k** content — exactly what the filter removes fastest — while the smooth,
+  scale-free deficit behind the observed galactic field (G4-ME21 one void per octave, effectively the
+  k = 1 mode) sits on the **slowest** mode and survives (`μ₁²⁰⁰ = 0.958`). **Suppression and observability
+  are the two ends of the same filter.**
+- **Classification.** DERIVED: the mechanism statement, the exact spectrum, the closed form, the asymptotic
+  single-exponential tail, linearity and the downstream entropy identity, arrangement-vs-lattice
+  selectivity. EMERGENT: the numeric 33.78 and the apparent power-law exponent. REFUTED: power-law decay as
+  the law, entropy-driven and branching-driven suppression. **No reclassification** — D_040 untouched,
+  G_005's verdicts explained rather than revised, no canonical claim/value/equation changes, no new
+  primitive.
+- **Files.** `Docs/ResearchY/G_GravitySource/ResearchY-G_006.md`,
+  `AT.Tests/ResearchY/G_GravitySource/Y_G_006_Tests.cs` (9/9 ✅, ~1 s; group G total 49/49),
+  `Docs/ResearchY/Tests/Results/Y_G_006_Result.md`; AT.App (Research News + Theory Book chapter + TestGroup)
+  and AT.Book (`suppression-mechanism` calculation, theory object + audit `g006`).
+- **Next open questions (G_006 OP1–OP4).** Why `d = 0.2` (BOUNDARY — the law holds for any `d ∈ (0, ½)`,
+  the value scales with it)? Could a shorter-horizon suppression be realised dynamically (2.27× at m = 1)?
+  The exact map from *spatial* smoothness to *occupancy-index* smoothness assumed in the closing argument.
+  And the cube's weaker 7.33× suggests multiplicity structure sets the filter's passband — untested.
+
 ## Latest Repo Sync
 
 Recent commits from the other machine:
@@ -805,6 +867,7 @@ Weak-coupling scale note:
 | Gravity Magnitude | ResearchY-G_003 | MEASURABLE (potential/clock: ΔΦ/c² = Δa_AT is a pure number; witnesses 3–69 %, 6.0e17× an optical clock) · ASTROPHYSICAL ONLY (Δa needs L: 10⁻¹² g for L < 9.54 Gpc, 10⁻⁹ g < 9.54 Mpc, 10⁻⁶ g < 9.54 kpc; arrangement 203.66) · PRACTICALLY ZERO (phase = 0 exactly; rescaling Δa = 0 with only the overall λ^(−2/d) curvature factor). Critical answer: YES to all three thresholds at fixed total energy. Falsifiable number: the observed galactic field ⟺ Δln ρ = 1.6102e-6 over 15 kpc, so the G_002 witnesses need suppression ≥ 3.746e5. Anchor: GPS 45.74 μs/day (QG187 45.7) |
 | Gravity Calibration | ResearchY-G_004 | CALIBRATED at 3 of 4 scales with NO free parameters: Earth 0.99600 (GM_⊕/R_⊕² = 9.820250 vs 9.780965; residual = the derived-G offset 0.40%), Sun–Earth 0.99600 (+ψ perihelion 42.98″/century, PPN γ=β=+1; GPS 38.5 vs 38.6 μs/day), Galaxy RAR 0.86850 (g† = cH₀/2π vs the literature mean; 0.9226 vs the project's combined a₀/cH₀) · CORRELATED: the RAR interpolating function (AT-native: the α=0 log deficit) · REFUTED: the cluster modified-gravity channel (Coma a_pred/a_obs = 0.51759, 1.93× short; MOND 0.610) and a uniform cosmic AT gradient (104× above the local bound). Critical: 10⁻⁶ g needs Δln ρ = 0.15151 over 15 kpc, but the realised field is g† = 1.06e-11 g (9.41e4× below); locally a point-like deficit gives exactly Newton with G_AT and no anomaly (G4-ME22) |
 | Control Realizability | ResearchY-G_005 | SUPPRESSED, not FORBIDDEN: the large G_003 modes conserve the count (Σρ = 1, deficit mass 0, QG194), break no symmetry (A₀ = 45, lock 0.80231 exact, block sums L1 = 0) and occupy genuinely free directions (51 of 96) — they are simply never counted. STABILITY: the uniform measure is the exact fixed point of the canonical diffusion and a witness tilt contracts ~34× in 200 steps (std 0.00815358 → 0.000241) with H rising to ln 96 → OFF-ATTRACTOR. ENTROPY is CAPPED (max ΔS = ln 96 ⇒ 1/96 = 0.010417, 3.6e7× short of 3.746e5; the witness costs ΔS = 0.272565 = a factor 1.31) ⇒ NOT thermodynamic. THE MECHANISM IS AT's Poisson law δ = 1/√⟨N⟩ read forward: ⟨N⟩ = 3.8569e11 makes the observed 1.6102e-6 typical (P = 0.61), the 1 % ceiling 4.8867e-6, and the required 3.746e5 suppression is reached at 8.1577e-6 (5.07× observed); witnesses cost −ln P = 1.99e8 … 7.02e10. DYNAMICAL: the flow is arrangement-neutral (ρ_(k+1) = μρ_k, same μ per cell; a(λρ) = a(ρ)) and the attractor erases arrangements ⇒ no internal drive. ACCESSIBLE = attractor + phase + Δ ≤ 4.8867e-6 (incl. the observed field); FORBIDDEN = Σρ ≠ 1, changed A₀/pairing, cell > 1/l_P³, or Δ > ln 96. G_004's CALIBRATED verdict is thereby explained dynamically |
+| Suppression Mechanism | ResearchY-G_006 | The suppressing term is the RELAXATION (coarse-graining) operator RhoDynamics.DiffuseStep — a LINEAR LOW-PASS FILTER on the eigenspace-occupancy index with the exact spectrum μ_k = 1 − 2d(1 − cos(πk/N)), d = 0.2. Every Neumann mode is an EXACT eigenvector decaying geometrically: μ₁ = 0.999785834991 (1/e after 4669 steps, survives 200 steps at 0.958067), μ₄₈ = 0.6 exactly, μ₉₅ = 0.200214165009 (1.99e-140 after 200 steps) — a 10^140 rate spread. THE 34× DERIVED: 1/r(200) = 33.78 = exp(200 × 0.0175991) = exp(3.5198 nats), from the closed form r(m) = sqrt(Σ_{k≥1} w_k²μ_k^{2m}/Σ_{k≥1} w_k²) (w = DCT-II, mean excluded) which reproduces iteration to < 1e-9 at every horizon m = 1…50 000; ladder 2.27 (m = 1) → 16.79 (50) → 33.78 (200) → 65.13 (1000) → 2.49e6 (50 000) ⇒ DERIVED as a law, EMERGENT as a number. POWER LAW REFUTED as the law (tail slope −2.1418813131e-4 = ln μ₁ to 1.85e-10, R² = 1.0; the rate converges to the geometric floor 2.1419e-4 instead of zero) though its finite-window appearance is real (R² 0.9945 vs 0.7579; window rate 37.7× the true rate) ⇒ EMERGENT. ENTROPY DRIVEN REFUTED (operator exactly linear, 3.47e-18; H + (N/2)E → ln 96 with residual 9.7e-7 ⇒ entropy downstream). BRANCHING DRIVEN REFUTED (arrangement-neutral, a(λρ) = a(ρ) to 5.56e-11; basin 1 at every size; field removed only by relaxation, max|a| 0.6032 → 1.8746e-3 = 322×). CASES at m = 200: D96 33.78, D96³ 7.33 (884 736 modes, A₀ = 20 812), Random witness class EMPTY (A₀ = 96, free room 0; extremal alternation 55.13). μ_k depends on N ONLY ⇒ arrangement-selective, not lattice-selective. Closes G_005: the free directions are high-k and erased fastest while the observed smooth deficit survives on the slow mode (μ₁^200 = 0.958) |
 | G Bridge (QG6↔QG181) | QG182 | BRIDGE ORIGIN (deficit parameters from D96: m₀ = occ₀/Σm = 4/95 = S param, r₀ = ln(span), ρ̄ = 1 → GM_eff = 1/ln(M_Pl/v) = 1/(3·ln A), 0.0969%; identity occ₀·ln(span)·ln(Σm·#g·occ₂) = Σm; two G constructions are the same physical content) |
 | Planck Scale Robustness | QG183 | ROBUST ORIGIN (physical exponent p = ln(M_Pl/v)/ln(A) = 2.99984, cubic to 1e-4; only A³ reproduces M_Pl (0.2%) while A¹/A²/A⁴ fail by 100%/100%/3.6e7%, nearby exponents 47-260% dev; no alternative A selects cubic; 3-factor/3-band/d=3 structure) |
 | Mass-Radius Relation | QG184 | MASS-RADIUS ORIGIN (observed M ∝ R emerges from counting measure: the deficit is per-octave/log — G4ME flat-rotation-curve profile — giving a ∝ −1/r and GM_eff = m₀·R/(d·L·ρ̄) ∝ R; QG13's E ∝ R^d was the compact-void assumption; with S ∝ R^(d−1) (QG12), T ∝ 1/R — Hawking restored, no new primitives) |

@@ -164,7 +164,87 @@ public sealed class GravityService : ICalculationService
                 + "external drive (NP_171 gate g_c = 1.607). ACCESSIBLE = the attractor, the phase directions and Δ ≤ 4.8867e-6 including the "
                 + "observed galactic field; FORBIDDEN = Σρ ≠ 1, a changed A₀ or mirror pairing, a cell above 1/l_P³, or Δ > ln 96 "
                 + "(ResearchY-G_005)."),
+
+            new("suppression-mechanism",
+                "Suppression Mechanism — the term, derived in closed form",
+                "mu_k = 1 − 2d(1 − cos(pi k/N));  r(m) = sqrt(Σ_{k≥1} w_k²mu_k^2m / Σ_{k≥1} w_k²);  1/r(200) = 33.78",
+                [
+                    new("mu_1 (slow)", Mu(1).ToString("0.000000000000", CultureInfo.InvariantCulture), "1/e after 4669 steps"),
+                    new("mu_48", Mu(48).ToString("0.000000000000", CultureInfo.InvariantCulture), "= 0.6 exactly (lambda_48 = 12)"),
+                    new("mu_95 (fast)", Mu(95).ToString("0.000000000000", CultureInfo.InvariantCulture), "1.99e-140 after 200 steps"),
+                    new("mu_1^200", Math.Pow(Mu(1), 200).ToString("0.000000", CultureInfo.InvariantCulture), "the slow mode survives"),
+                    new("1/r(200)", (1.0 / TiltRatio(200)).ToString("0.00", CultureInfo.InvariantCulture), "the G_005 34x (audited: 33.78)"),
+                    new("exp(200·rate(200))", Math.Exp(-200.0 * Math.Log(TiltRatio(200))).ToString("0.00", CultureInfo.InvariantCulture), "= exp(3.5198 nats)"),
+                    new("1/r(m) at m = 1 / 50 / 500 / 1000", $"{1.0 / TiltRatio(1):F2} / {1.0 / TiltRatio(50):F2} / {1.0 / TiltRatio(500):F2} / {1.0 / TiltRatio(1000):F2}", "the factor is NOT universal"),
+                    new("rate(m) = −ln r/m: 200 / 20 000 / 50 000", $"{Rate(TiltRatio(200), 200):E4} / {Rate(TiltRatio(20000), 20000):E4} / {Rate(TiltRatio(50000), 50000):E4}", "converges to |ln mu_1| = 2.1419e-4"),
+                    new("|ln mu_1|", (-Math.Log(Mu(1))).ToString("0.000000E+00", CultureInfo.InvariantCulture), "the geometric floor"),
+                    new("power-law R² over 1..200", "0.9945", "vs 0.7579 for one exponential — the illusion"),
+                    new("tail slope over 5000..50000", "-2.1418813131e-4", "= ln mu_1 to 1.85e-10 (R² = 1.0)"),
+                    new("cube mu_1 (N = 884 736)", Mu(1, Damping, 884736).ToString("0.00000000000000", CultureInfo.InvariantCulture), "a slow mode that never decays"),
+                ],
+                "The suppressing term is the RELAXATION operator (RhoDynamics.DiffuseStep): a LINEAR low-pass filter on the eigenspace-occupancy "
+                + "index. Every Neumann mode decays geometrically, so r(m) is exact and the 34× is 1/r(200) = 33.78 = exp(3.5198 nats). "
+                + "Power-law decay is REFUTED as the law (the tail is a single exponential at slope ln μ₁, 1.85e-10) although its finite-window "
+                + "appearance is real; entropy-driven is REFUTED (the operator is exactly linear and H is slaved to the Dirichlet energy); "
+                + "branching-driven is REFUTED (arrangement-neutral). Cases at m = 200: D96 33.78, D96³ 7.33, Random witness class EMPTY. "
+                + "The mechanism is arrangement-selective, not lattice-selective (ResearchY-G_006)."),
         ];
+    }
+
+    // ── G_006: the relaxation operator's exact spectrum and closed-form contraction ────────────────
+
+    private const double Damping = 0.2;
+
+    /// <summary>Exact Neumann eigenvalue of the relaxation step: mu_k = 1 - 2d(1 - cos(pi k/N)).</summary>
+    private static double Mu(int k, double d = Damping, int n = 96)
+        => 1.0 - 2.0 * d * (1.0 - Math.Cos(Math.PI * k / n));
+
+    private static double[] NeumannMode(int k, int n = 96)
+        => Enumerable.Range(0, n).Select(i => Math.Cos(Math.PI * k * (i + 0.5) / n)).ToArray();
+
+    /// <summary>Exact closed-form std ratio of the canonical D96 witness tilt after m relaxation steps.</summary>
+    private static double TiltRatio(int m)
+    {
+        var tilt = D96Tilt();
+        int n = tilt.Length;
+        var w = new double[n];
+        for (int k = 0; k < n; k++)
+        {
+            double s = 0.0;
+            for (int i = 0; i < n; i++) s += tilt[i] * Math.Cos(Math.PI * k * (i + 0.5) / n);
+            w[k] = s;
+        }
+        w[0] = 0.0;
+        double num = 0.0, den = 0.0;
+        for (int k = 1; k < n; k++) { num += w[k] * w[k] * Math.Pow(Mu(k), 2.0 * m); den += w[k] * w[k]; }
+        return Math.Sqrt(num / den);
+    }
+
+    private static double Rate(double ratio, int m) => -Math.Log(ratio) / m;
+
+    /// <summary>The canonical D96 counting measure carrying the G_002 within-multiplet 80/20 witness tilt.</summary>
+    private static double[] D96Tilt()
+    {
+        var modes = SpectrumService.Modes(SpectrumService.N);
+        int n = modes.Length;
+        var mult = new List<int>();
+        int i = 0;
+        while (i < n)
+        {
+            int j = i;
+            while (j < n && Math.Abs(modes[j] - modes[i]) <= 1e-6) j++;
+            mult.Add(j - i);
+            i = j;
+        }
+        var rho = new double[n];
+        int p = 0;
+        foreach (int mm in mult)
+        {
+            double share = mm / (double)n;
+            rho[p++] = share * 0.8;
+            for (int q = 1; q < mm; q++) rho[p++] = share * 0.2 / (mm - 1);
+        }
+        return rho;
     }
 
     // The G_003 ambient calibration: the observed galactic field as a counting-measure contrast.
