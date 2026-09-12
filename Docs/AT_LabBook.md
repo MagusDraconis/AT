@@ -2076,11 +2076,11 @@ in the historical program counts below.
 | AT-QG | 182 | Complete |
 | **Total** | **289** | |
 
-## ResearchY G-Program — Gravity Source, Control, Magnitude, Calibration, Realizability, Mechanism, Origin, Controlled Suppression, Clock Rate, Time Control, Rho Actuator, Labor Rho, Local Rho Actuator, Physical Actuator, Physical Rho Mapping (15 audits, 2026-09-12)
+## ResearchY G-Program — Gravity Source, Control, Magnitude, Calibration, Realizability, Mechanism, Origin, Controlled Suppression, Clock Rate, Time Control, Rho Actuator, Labor Rho, Local Rho Actuator, Physical Actuator, Physical Rho Mapping, Rho To Metric (16 audits, 2026-09-12)
 
-New ResearchY group **G — Gravity Source**. Suite: `AT.Tests/ResearchY/G_GravitySource/` (126/126 pass,
+New ResearchY group **G — Gravity Source**. Suite: `AT.Tests/ResearchY/G_GravitySource/` (133/133 pass,
 ~1 s); shared machinery `AT.Tests/Shared/DensityField.cs`, `PhysicalUnits.cs`, `RhoActuators.cs`.
-Detailed docs: `Docs/ResearchY/G_GravitySource/ResearchY-G_001.md` … `ResearchY-G_014.md`.
+Detailed docs: `Docs/ResearchY/G_GravitySource/ResearchY-G_001.md` … `ResearchY-G_015.md`.
 
 ### G_001 — Gravity Source Audit
 **Status:** Complete. **SOURCE = the actualization density ρ** (counting measure), and for the attractive
@@ -2444,9 +2444,52 @@ stencil are **linear**.
   Readable floor `1/√⟨N⟩ = 1.6102e-6` = **46.374 ms/day** of clock depth. The residual gap is the
   **identification premise** (G_011b's un-borrowed metric coupling).
 
-**App/Book surfaced:** AT.App Research News + Theory Book ("Gravity Source" part, fifteen chapters) +
-TestGroups; AT.Book `GravityService` (15 executable calculations), fifteen theory objects (Physics layer) and
-fifteen audits g001–g014.
+### G_015 — Rho To Metric Audit
+**Status:** Complete. Can a **laboratory** q profile produce any measurable metric effect? The audit only
+becomes well-posed once G_014 is used — the map is the **identity** (κ = 1, `L1(|ψ|², ρ) = 2.484991379e-16`)
+— so **two channels** separate.
+
+- **ANALOGUE** (the contrast itself, `Δτ/τ = Δln q/d`): a measurable *ratio* needing no mass.
+- **METRIC** (a real time dilation): the only laboratory handle is mass-energy (G_011b — the coupling is not
+  borrowed), so `m = E/c²`, `ΔΦ/c² = G m/(R c²)`, `a = G m/R²`, for which AT predicts **exactly** Newton
+  (G_004's 0.99600 self-checks).
+
+**The clock ladder** (`f = Δτ/τ` ⇒ `Δlnρ = 3f` ⇒ `M/r = f c²/G`):
+
+| target | `f` | `Δlnρ` | `M/r` [kg/m] | `M` inside 1 cm [kg] |
+|---|---|---|---|---|
+| measurement floor `1e-18` | 1.0e-18 | 3.0e-18 | **1.3466e9** | **1.3466e7** (13 466 t) |
+| 1 ns/day | 1.1574e-14 | 3.4722e-14 | 1.5586e13 | 1.5586e11 |
+| observed galactic | 5.3673e-7 | 1.6102e-6 | **7.2276e20** | 7.2276e18 |
+| G_005 band top | 1.6289e-6 | 4.8867e-6 | **2.1935e21** | 2.1935e19 |
+
+**The four cases** (`ΔΦ/c² = G m/(R c²)`, `m = E/c²`):
+
+| case | `E`/`R` | `ΔΦ/c²` | `a` [m/s²] | × floor | verdict |
+|---|---|---|---|---|---|
+| photon occupation (5.034116567542709e18 ph at 1 µm) | 1 J / 5 mm | **1.6525e-42** | 2.9705e-23 | 1.65e-24 | REFUTED |
+| cavity modes (SRF, Q = 1e10) | 1 kJ / 6 cm | **1.3771e-40** | 2.0628e-22 | 1.38e-22 | REFUTED |
+| resonator lattice | 1 mJ / 1 cm | **8.2627e-46** | 7.4262e-27 | 8.26e-28 | REFUTED |
+| oscillator lattice (G_011b chain) | 1 nJ / 1 cm | **8.2627e-52** | 7.4262e-33 | 8.26e-34 | REFUTED |
+
+**Strongest possible laboratory case** (an energy density in a 1 m ball, `V = 4.189 m³`): chemical 1e9 →
+3.4611e-35 · capacitor 1e12 → 3.4611e-32 · magnetic 3e13 → 1.0383e-30 · **nuclear scale 1e18 → 3.4611e-26
+(3.46e-8× the floor, still 2.889e7× short)** · neutron-star core 1e34 → 3.4611e-10 (astrophysical). The floor
+needs `u = 2.889272332033454e25 J/m³` (2.889e7× nuclear); the band top `4.706335701649293e37 J/m³` (4706.3× a
+neutron-star core).
+
+**The measurable channel, priced:** the counting floor 1.6102e-6 (= `1/√⟨N⟩`, ⟨N⟩ = 3.856917553651e11 —
+exactly G_014's shot noise and G_009's cross-check) is **0.046374 s/day** but needs 7.2276e18 kg at 1 cm;
+G_002's 4.8:1 witness is **45 176.138 s/day** needing 1.18 M⊕; 20:1 is **86 277.089 s/day** needing 2.25 M⊕.
+
+- **Critical answer:** **NO** in the metric sense (best lab case 2.889e7× short; the floor is 13 466 tonnes
+  inside a centimetre), **YES** in the analogue sense (κ = 1). Verdicts: **MEASURABLE** = the analogue
+  contrast · **ASTROPHYSICAL ONLY** = every metric effect that exists (galactic 0.0464 → band top 0.1407
+  s/day) · **REFUTED** = a laboratory q profile producing a metric effect.
+
+**App/Book surfaced:** AT.App Research News + Theory Book ("Gravity Source" part, sixteen chapters) +
+TestGroups (16 suites); AT.Book `GravityService` (16 executable calculations), sixteen theory objects
+(Physics layer) and sixteen audits g001–g015.
 
 ## Key Unsolved Problems
 

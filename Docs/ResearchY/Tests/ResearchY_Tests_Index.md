@@ -99,6 +99,7 @@ ResearchY-G_011b  ↔  Y_G_011b_Tests.cs   (AT.Tests/ResearchY/G_GravitySource/)
 ResearchY-G_012   ↔  Y_G_012_Tests.cs    (AT.Tests/ResearchY/G_GravitySource/)
 ResearchY-G_013   ↔  Y_G_013_Tests.cs    (AT.Tests/ResearchY/G_GravitySource/)
 ResearchY-G_014   ↔  Y_G_014_Tests.cs    (AT.Tests/ResearchY/G_GravitySource/)
+ResearchY-G_015   ↔  Y_G_015_Tests.cs    (AT.Tests/ResearchY/G_GravitySource/)
 ResearchY-S_001  ↔  Y_S_001_Tests.cs       (AT.Tests/ResearchY/S_Synthesis/)
 ```
 
@@ -243,6 +244,7 @@ ResearchY-S_001  ↔  Y_S_001_Tests.cs       (AT.Tests/ResearchY/S_Synthesis/)
 | ResearchY-G_012 (Local Rho Actuator Audit) | `AT.Tests/ResearchY/G_GravitySource/Y_G_012_Tests.cs` | ACTIVE | 2026-09-12 | ✅ 10/10 PASSED — `Results/Y_G_012_Result.md` |
 | ResearchY-G_013 (Physical Actuator Audit) | `AT.Tests/ResearchY/G_GravitySource/Y_G_013_Tests.cs` | ACTIVE | 2026-09-12 | ✅ 9/9 PASSED — `Results/Y_G_013_Result.md` |
 | ResearchY-G_014 (Physical Rho Mapping Audit) | `AT.Tests/ResearchY/G_GravitySource/Y_G_014_Tests.cs` | ACTIVE | 2026-09-12 | ✅ 9/9 PASSED — `Results/Y_G_014_Result.md` |
+| ResearchY-G_015 (Rho To Metric Audit) | `AT.Tests/ResearchY/G_GravitySource/Y_G_015_Tests.cs` | ACTIVE | 2026-09-12 | ✅ 7/7 PASSED — `Results/Y_G_015_Result.md` |
 | ResearchY-S_001 (Post-V2.1 Theory Architecture Synthesis) | `AT.Tests/ResearchY/S_Synthesis/Y_S_001_Tests.cs` | ACTIVE | 2026-08-30 | ✅ 4/4 PASSED — `Results/Y_S_001_Result.md` |
 
 ## Result Summaries

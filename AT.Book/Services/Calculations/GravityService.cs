@@ -354,6 +354,24 @@ public sealed class GravityService : ICalculationService
                 ],
                 "Six candidates against four requirements reduce to four structural conditions (positive, normalised, AFFINE, cellwise). The diagonal occupation (probability) density is the first measurable rho analogue: kappa = 1 exactly, its shot noise IS "
                 + "G_005's Poisson band, and its readable floor is 46.374 ms/day of clock depth. The mode population and energy density are CORRELATED, the information and coherence densities REFUTED (ResearchY-G_014)."),
+
+            new("rho-metric",
+                "Rho To Metric — can a laboratory q profile move a clock?",
+                "Delta Phi/c^2 = G m/(R c^2);  M/r = f c^2 / G;  u_floor = 2.889272332033454e25 J/m^3",
+                [
+                    new("two channels", "the map is the IDENTITY (kappa = 1, G_014), so contrast vs metric separate", "ANALOGUE: Delta tau/tau = Delta ln q/d is a measurable RATIO; METRIC: mass-energy only (G_011b)"),
+                    new("clock ladder", "floor 1e-18 needs M/r = 1.3466e9 kg/m = 1.3466e7 kg in 1 cm", "13 466 tonnes in a centimetre; galactic 7.2276e20; band top 2.1935e21 kg/m"),
+                    new("photon occupation", "1 J (5.034116567542709e18 photons at 1 um) in 5 mm", "Delta Phi/c^2 = 1.6525e-42; a = 2.9705e-23 m/s^2; 1.65e-24x the floor"),
+                    new("cavity modes", "1 kJ in 6 cm (SRF, Q = 1e10)", "1.3771e-40; a = 2.0628e-22 m/s^2; 1.38e-22x the floor"),
+                    new("resonator lattice", "1 mJ on 1 cm", "8.2627e-46; a = 7.4262e-27 m/s^2; 8.26e-28x the floor"),
+                    new("oscillator lattice", "1 nJ on 1 cm (the G_011b chain)", "8.2627e-52; a = 7.4262e-33 m/s^2; 8.26e-34x the floor"),
+                    new("strongest lab case", "an energy density in a 1 m ball (V = 4.189 m^3)", "nuclear 1e18 J/m^3 gives 3.4611e-26 = 3.46e-8x the floor, still 2.889e7x SHORT"),
+                    new("what the floor needs", "u = 2.889272332033454e25 J/m^3 (2.889e7x nuclear)", "the band top needs 4.706335701649293e37 J/m^3 (4706.3x a neutron-star core)"),
+                    new("the measurable channel", "count floor 1.6102e-6 = 0.046374 s/day; 20:1 = 86 277.089 s/day", "but the equivalent mass at 1 cm is 7.2276e18 kg (floor) to 1.3447e25 kg (20:1, 2.25 Earth masses)"),
+                    new("critical answer", "NO in the METRIC sense, YES in the ANALOGUE sense", "a neutron-star core (3.4611e-10) would finally be measurable: ASTROPHYSICAL ONLY"),
+                ],
+                "The audit only becomes well-posed once G_014's identity map is used, splitting the question in two. The ANALOGUE contrast channel is MEASURABLE for all four cases (kappa = 1: 0.046374 to 86 277.089 s/day), while the METRIC channel has mass-energy as its only "
+                + "laboratory handle (G_011b) and is REFUTED: the best laboratory case is 3.4611e-26, 3.46e-8 of the 1e-18 floor, and the floor itself needs 13 466 tonnes inside a centimetre (2.889e7x nuclear density). Every metric effect that exists is ASTROPHYSICAL ONLY (ResearchY-G_015)."),
         ];
     }
 
