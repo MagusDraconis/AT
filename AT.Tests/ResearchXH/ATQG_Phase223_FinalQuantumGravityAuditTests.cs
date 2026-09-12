@@ -41,6 +41,15 @@ public class ATQG_Phase223_FinalQuantumGravityAuditTests : ResearchTestBase
 
         Output.WriteLine(sb.ToString());
 
+        // ResearchY-G_026: these six assertions previously restated six hard-coded literals, and this
+        // audit's sub-scores were a SEPARATE set of typed 1.0s that never read them — so `TotalScore()`
+        // returned 6.0 and `Classify()` returned "COMPLETE QG" no matter what the criteria said. The ladder
+        // now derives from one criteria table, so these assertions can fail.
+        Assert.True(FinalQuantumGravityAudit.AllBasesCited(), "every criterion must cite its evidence");
+        Assert.True(FinalQuantumGravityAudit.ClassificationFollowsFromCriteria(),
+            "the classification must follow from the criteria table");
+        Assert.True(FinalQuantumGravityAudit.SubScoresMatchCriteria(), "sub-scores must be derived, not typed");
+        Assert.Equal(6.0, FinalQuantumGravityAudit.TotalScore(), 6);
         Assert.True(FinalQuantumGravityAudit.IsQuantumMechanicsDerived(), "QM is fully derived");
         Assert.True(FinalQuantumGravityAudit.IsGravityDerived(), "gravity is derived");
         Assert.True(FinalQuantumGravityAudit.CommonPrimitive(), "both pillars share the network primitive");
@@ -79,7 +88,10 @@ public class ATQG_Phase223_FinalQuantumGravityAuditTests : ResearchTestBase
         Assert.True(FinalQuantumGravityAudit.PsiIsSeparateTensorSectorQuestion(), "ψ is a tensor-sector question");
         Assert.True(FinalQuantumGravityAudit.PsiCapacityForced(), "the Weyl capacity is forced (QG56)");
         Assert.True(FinalQuantumGravityAudit.PsiExcitationDerived(), "the excitation mechanism is derived (QG57)");
-        Assert.True(FinalQuantumGravityAudit.PsiIsNewPrimitive(), "ψ is a new fundamental primitive");
+        Assert.False(FinalQuantumGravityAudit.PsiIsNewPrimitive(),
+            "ψ is NOT a new primitive: QG285/QG286/QG292 supersede QG24 (ResearchY-G_024, refined by G_026)");
+        Assert.True(FinalQuantumGravityAudit.PsiWasCalledNewPrimitive(),
+            "the historical QG223-era verdict is preserved for the record");
         Assert.True(FinalQuantumGravityAudit.PsiExistenceObservational(), "ψ's existence is observational");
     }
 

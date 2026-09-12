@@ -40,6 +40,13 @@ public class ATQG_Phase215_QuantumGravityClosureAuditTests : ResearchTestBase
 
         Output.WriteLine(sb.ToString());
 
+        // ResearchY-G_026: these four assertions previously restated four hard-coded literals, so they
+        // could never fail. The verdicts are now derived from a criteria table that carries its basis, and
+        // the assertions below CAN fail (flip a criterion and the score, ladder or basis check breaks).
+        Assert.True(QuantumGravityClosureAudit.AllBasesCited(), "every criterion must cite its evidence");
+        Assert.True(QuantumGravityClosureAudit.ClassificationFollowsFromCriteria(),
+            "the classification must follow from the criteria table");
+        Assert.Equal(2, QuantumGravityClosureAudit.QgScore());
         Assert.False(QuantumGravityClosureAudit.IsQuantumMechanicsDerived(), "QM is not derived (QG62 needs a new primitive)");
         Assert.True(QuantumGravityClosureAudit.IsGravityDerived(), "gravity is derived");
         Assert.False(QuantumGravityClosureAudit.SamePrimitiveForBoth(), "QM and gravity are not from the same primitive");

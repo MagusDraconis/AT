@@ -40,6 +40,12 @@ public class ATQG_Phase219_QuantumGravityReclosureAuditTests : ResearchTestBase
 
         Output.WriteLine(sb.ToString());
 
+        // ResearchY-G_026: previously four open restatements of hard-coded literals. Now the score is
+        // DERIVED from the criteria table, so these assertions can fail.
+        Assert.True(QuantumGravityReclosureAudit.AllBasesCited(), "every criterion must cite its evidence");
+        Assert.True(QuantumGravityReclosureAudit.ClassificationFollowsFromCriteria(),
+            "the classification must follow from the criteria table");
+        Assert.Equal(4, QuantumGravityReclosureAudit.QgScore());
         Assert.True(QuantumGravityReclosureAudit.IsQuantumMechanicsDerived(), "QM is now substantially derived (QG216+218)");
         Assert.True(QuantumGravityReclosureAudit.IsGravityDerived(), "gravity is derived");
         Assert.True(QuantumGravityReclosureAudit.SamePrimitiveForBoth(), "both pillars share ρ as the core source");

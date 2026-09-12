@@ -1595,6 +1595,63 @@ u2014 amends QG207, QG212 and QG32; **issues no new physics claim**.
 - **No reclassification**; D_040 untouched; no canonical claim, value or equation changes; no new primitive;
   **7/7 PASSED** (group G total **210/210**).
 
+## The Defect Class Is Systemic — four QG audits, four contradictory test suites, all passing (ResearchY-G_026, 2026-09-12)
+**Status:** Complete. **Why:** G_025 found one instance of a defect class and asked whether it was isolated. It is not.
+- **The fingerprint:** a member or data field whose **name** claims a computation or a verification verdict, whose
+  **value** is a literal, and which a **score, classification or test** then consumes.
+- **FINDING 1 — THE QG VERDICT LADDER (🔴).** Four successive audits used **identical method names** and
+  differed only in literals:
+
+  | audit | `IsQuantumMechanicsDerived` | `SamePrimitiveForBoth` | `IsSpacetimeEmergent` | verdict |
+  |---|---|---|---|---|
+  | `QuantumGravityClosureAudit` (QG215) | `=> false` | `=> false` | `=> false` | PARTIAL QG |
+  | `QuantumGravityReclosureAudit` (QG219) | `=> true` | `=> true` | `=> false` | EFFECTIVE QG |
+  | `QuantumGravityReclosureAudit2` (QG221) | `=> true` | `=> true` | `=> false` | NEAR-COMPLETE |
+  | `FinalQuantumGravityAudit` (QG223) | `=> true` | `=> true` | `=> true` | **COMPLETE QG** |
+
+  The escalation **PARTIAL → EFFECTIVE → NEAR-COMPLETE → COMPLETE was produced by editing a literal.** In
+  QG221/QG223 the six **sub-scores were a separate set of typed `1.0`s that never read the criteria**, so
+  `TotalScore()` returned 6.0 and `Classify()` returned `"COMPLETE QG"` whatever the criteria said; in
+  `QuantumGravityReclosureAudit2`, `IsSpacetimeEmergent() => false` coexisted with `SpacetimeSubScore() => 0.5`.
+  **And the tests asserted the literals:** `ATQG_Phase215` asserts QM **not** derived while
+  `ATQG_Phase219/221/223` assert QM **is** derived — **all four pass.** `FinalQuantumGravityAudit.PsiIsNewPrimitive()
+  => true` also contradicted G_024/QG285/QG286/QG292.
+- **FINDING 2 — THE BORN RULE (🟠).** `Survives` and the pass arrays were typed;
+  `AllRequirementsUniquelySatisfied(reqs, tests)` **accepted the executed tests and never read them**. And the old
+  test `Count(p => p) != 1` on **every** row returned false **unconditionally** (the factorization / orthogonality /
+  additivity rows pass for **all six** exponents) — so `"D: Mathematical Derivation — α = 2 is UNIQUELY selected"`
+  was **DEAD CODE**; X037's real output was `"C: Strong Theorem"`.
+- **FINDINGS 3–5.** RAR completion: 7 of 11 rows typed `Derived = true` + the literal label `"DERIVED ✓"`, then
+  counted. `G`: genuinely computed in `NewtonConstantOrigin` but duplicated as an unchecked literal in
+  `FrameDraggingOrigin.G_D96` and `PhysicalUnits.G_SI`. `IdentityHoldsAcrossGrid(feedback, damping)` declared the
+  dynamics parameters and silently answered for the **defaults**.
+- **THE FIX (verdicts UNCHANGED).** A new **`QgCriterion`** type makes a criterion a **whole value** —
+  Name + Status (None/Partial/Full) + **mandatory cited Basis** — with a **derived** Score, so every accessor,
+  sub-score, total, classification and progression is a function of the criteria table, and `AllBasesCited()` /
+  `ClassificationFollowsFromCriteria()` are checkable. The **derived ladder reproduces the historical rungs exactly**
+  (**2.0 / 4.0 / 5.0 / 6.0 → PARTIAL / EFFECTIVE / NEAR-COMPLETE / COMPLETE**). A new **`AlphaInvarianceScreen`**
+  **executes** the physics — `N(ψ) = Σ|ψ_i|^α` invariant under every unitary **iff α = 2** (deterministic DFT +
+  fixed Givens, dims 2–5): max relative violation **2.343702 / 1.236068 / 0.4953488 / 2.220446e−16 / 0.5527864 /
+  0.8000000** for α = 0.5/1/1.5/**2**/3/4. **`RequirementEvidence`** splits Computed (4) from Analytic (3), disclosed
+  in the classification. **`CompletionEvidence`** marks RAR rows with the three **limit rows now computed** from
+  `g_obs = g_bar·√(1+g†/g_bar)` (Newtonian ratio 1.000000000; deep-MOND ratio 1.000000000).
+  `CacheAgreesWithComputation` checks the G caches (computed 6.64670e−11; 0.014 % from `G_D96`, 0.414 % from CODATA).
+  ψ corrected to the canonical position, with `PsiWasCalledNewPrimitive()` preserving the record.
+- **ROBUSTNESS DEFECT FOUND EN ROUTE.** The α selection compared **formatted number strings** (`"2.0"`) —
+  **culture-dependent**: a comma-decimal culture would silently collapse the classification. Now `InvariantCulture`
+  and a numeric comparison.
+- **DETECTORS (1181/1221 literal-bodied members)** — session artifacts: **248** literal-bodied members feeding scores;
+  **16** members with declared-but-unused parameters (decidable, not heuristic); **49** evidence-boolean literals.
+- **VERIFIED NON-FINDINGS** (so the fix does not over-reach): `ConservationPrincipleAudit.Laws()` and
+  `MajoranaOrigin.Checks()` pass **computed calls**; `TemporalWaveObservables.* => 0.0` are documented analytic null
+  results; `MetricOrigin.SqrtMinusG_Const`, `LightPropagation.LightSpeed(rho) => 1.0`, `Anchor.IsTrueInput`,
+  `MeasurementClass.StructurallyUnique` and `Rule.Derivable` are honest constants / input taxonomies.
+- **BOUNDARY:** the criteria **statuses** remain the authored QG223 adjudication (restructured, not re-adjudicated);
+  **3 of 7** Born requirements remain **Analytic**; `(feedback, damping)` do not move the tested spectrum.
+- **Lesson recorded:** *a test that asserts a literal against itself is not evidence, and four passing suites can
+  assert mutually contradictory verdicts.* — **8/8 PASSED** (group G total **218/218**); affected pre-existing
+  suites **390/390 PASSED**; no reclassification; D_040 untouched.
+
 ## Latest Repo Sync
 
 Recent commits from the other machine:
@@ -1850,6 +1907,7 @@ Weak-coupling scale note:
 | Spatial Sector Closure | ResearchY-G_023 | **ONE NUMBER STANDS IN THE WAY, AND THE THEORY CANNOT SUPPLY IT.** Question: can ANY spatial metric be derived WITHOUT NEW PRIMITIVES yielding gamma ~ +1 while preserving the clock law, the source law and the acceleration law? Success criterion: gamma ~ +1 without changing g00 physics. ANSWER: NO. THE FRAMEWORK (isotropic form — where PPN gamma is DEFINED): ds² = −e^(2A)dt² + e^(2B)(dR²+R²dΩ²), Φ = (e^(2A)−1)/2, gamma = −(e^(2B)−1)/(e^(2A)−1) ≈ −1 + k/x with **k := B − A**. TWO functions, ONE controlling number. k IS THE CONFORMAL INVARIANT: g → Ω²g shifts A and B by the same ω, so k is unchanged — exactly the class data of the causal-order → conformal-class step; conformal flatness ⇔ A = B ⇔ g_rr = −g00 ⇔ k = 0 ⇔ gamma = −1 for EVERY A. AT PINS k = 0 FROM TWO INDEPENDENT DIRECTIONS: clock law √(−g00) = ρ^(1/d) = e^σ ⇒ A = σ; counting measure (the spatial volume IS the count) √(det g_ij) = ρ ⇒ e^(3B) = ρ ⇒ B = σ — the SAME primitive, the SAME scalar — so k = 0 IDENTICALLY and gamma = −1 at EVERY compactness (Earth −6.96133e−10, Sun −2.122503e−6, 1e−4, J0740+6620 −0.247002, all with volume/ρ = 1.000000000). WHAT gamma = +1 COSTS: keeping A = σ (g00 physics UNCHANGED) and demanding gamma = +1 gives e^(2B) = 2 − e^(2A) ⇒ B = ½ln(2 − e^(−2x)), k = 2x; the spatial volume e^(3k) = 1.000013 at the Sun but **3.437585 at J0740+6620** (B = 0.1645877, k = 0.4115897 vs k_lin = 0.494004) — changing the volume measure IS changing a primitive. THE PRIMITIVE INVENTORY — CLOSURE: Q-event counts, ρ, σ, DiffuseStep Λ = I − W, the D96 lattice, spectral λ and information are ALL SCALARS (each fixes ONE function; any δ = B − σ breaks the volume by e^(3δ) and moves gamma to −1 + δ/x). The ONE non-scalar ingredient is the causal ORDER — and AT's order is the FLAT D96 ring order (96 cells → 45 eigenvalues, histogram {1:1, 2:42, 5:1, 6:1}, free room 51, vs the degeneracy-free random control's 96 distinct), so its class is [η] and k = 0. The complement candidates for a natural 1/ρ (51/95 = 0.536842, 2.159091, 3.746e5, 1152) are all CONSTANTS. NO EXISTING PRIMITIVE CAN MOVE k. SUCCESS CRITERION: half one IS satisfiable (A = σ kept exactly, so the three laws and z_AT = 0.2801817 are untouched), half two is NOT — gamma = −1 is forced and excluded (Cassini 8.6957e4 / VLBA 6.6660e3 / Gaia 124.8125 σ) while gamma = +1 (0.9130 / 0.6667 / 0.1875 σ) needs k = 2x; flat space is REFUTED too. VERDICTS: DERIVED = the closure identity and k as the conformal invariant · conformal flatness ⇔ k = 0 · the two native pins · the exact gamma = +1 solution; BOUNDARY = the one scalar of class data (k = 2x, cost 3.437585× volume), a new primitive, with ψ empty and the class imported; REFUTED = any spatial metric from AT's existing primitives giving gamma ~ +1, and the conformal sector and flat space. No reclassification; D_040 untouched; no canonical claim, value or equation changes; no new primitive; G_021/G_022 stand; deterministic, 7/7 PASSED |
 | Optics Reconciliation | ResearchY-G_024 | **WAS LIGHT BENDING ALREADY SOLVED? YES.** The AT-QG programme resolved conformal optics in **QG212** (Docs/Research/ATQG_ConformalOpticsResolution.md, Status **COMPLETE — OPTICS RESOLVED**, tests ATQG2120/2121/2122, core class AT.Core/ResearchXH/ConformalOpticsResolution.cs): **psi = 0** (conformal g = ρ^(2/d)η) gives **gamma = −1** with lensing = Shapiro = frame dragging = 0 and the redshift surviving; **psi != 0** (QG207 completion) gives **gamma = +1** with lensing and Shapiro at full GR and frame dragging restored. Verdict: conformal no-lensing is a **RESTRICTED SECTOR** — “not a numerical artifact, not physical GR, the physical sector is psi != 0” — method line **“no new primitives”**. **THREE RETRACTIONS:** (1) psi is NOT a new primitive — the trace/traceless decomposition of the one Difference at d = 3 gives 6 = 1 trace (ρ) + 5 traceless (2 TT, psi, spin-2), so the minimal primitive set is {Difference, η} (QG285/QG286/QG292); the G_021/G_022/G_023 “MINIMAL NEW PRIMITIVE (QG24)” wording is WITHDRAWN. (2) **G_022 §6 “the psi route is EMPTY” is WITHDRAWN** — its derivation of psi = 0 assumed the ρ-only clock law, which IS the psi = 0 slice. (3) G_023’s REFUTED reason rested on (1) and is void. **WHAT SURVIVES:** the psi = 0 slice’s measured exclusion (Cassini **8.6957e4** / VLBA 6.6660e3 / Gaia 1.2481e2 σ), and the INVARIANT SPLIT — gamma = −B/A, so psi = 0 <=> A = B <=> gamma = −1 and gamma = +1 <=> A + B = 0, realised either by keeping the clock law (G_023’s k = 2x) or by the QG207 completion at psi = −4σ (k = −6x). **THE OPEN ITEM ADDED:** the QG207 completion is NOT redshift-neutral — shift e^(4x) − 1 = 2.784532e−9 at Earth, 8.490012e−6 at the Sun — invisible to GPS (0.2 %) and Cassini (2.3e−5), so NO solar-system conflict and the GPS bound |psi| <= 2e−3 is 7.2e5× looser than required; BUT at compactness the leading-order z = e^(−3x) − 1 turns NEGATIVE (−0.523366 at x = 0.247002), so the O(x²) form of the completion is LOAD-BEARING AND UNCOMPUTED — a BOUNDARY flag. No reclassification of QG212 — this audit RESTORES it; D_040 untouched; no canonical claim, value or equation changes; no new primitive; deterministic, 7/7 PASSED |
 | Optics Determinant Correction | ResearchY-G_025 | **WAS THE OPTICS RESULT ACTUALLY DERIVED? NO.** Independent verification of QG212 (never believe the document) found **two real defects**: a `d`-vs-`(d−1)` **off-by-one** in the ψ-perturbed determinant — correct is `det g = −ρ^(2(d+1)/d)e^(−2ψ/(d−1))`, `√(−det g) = ρ^((d+1)/d)e^(−ψ/(d−1))`, `√(det g_ij) = ρ·e^(−dψ/(d−1))` — with error **unbounded in ψ** (0.00 / **36.24** / **52.76** / **8901.71** % at b = 0.0 / 0.3 / 0.5 / −3.0 at x = 1), and a **hard-coded γ** (−1.0 / +1.0) never computed from the metric. **12 sites / 5 AT.Core files corrected**; γ now **DERIVED** (−1 at ψ = 0, +1 at the derived ψ = −4σ first order, exact `e^(6σ) = ρ²` at d = 3 — so +1 only in the weak field). ψ = 0 is now the **unique** counting-measure-preserving member (STRONGER than QG207 claimed); **TRM `metric-origin` UNCHANGED → MODIFIED** (matrix 4 / 2 / 0). The optics **CONCLUSION is RESTORED on derived grounds**; the **measure premise is REFUTED**; `O(x²)` completion remains **BOUNDARY**. Scorecard: **1 of 4** origin-score points was substantive. Record: `Docs/Research/ATQG_ConformalOpticsDeterminantCorrection.md` (QG320). |
+| Authored-Verdict Audit | ResearchY-G_026 | **IS THE G_025 DEFECT CLASS ISOLATED? NO — SYSTEMIC.** Four QG audits (`QuantumGravityClosureAudit`/`ReclosureAudit`/`ReclosureAudit2`/`FinalQuantumGravityAudit`) used **identical method names** and differed only in literals, so PARTIAL → EFFECTIVE → NEAR-COMPLETE → COMPLETE was produced by **editing a literal**; their sub-scores **never read their own criteria**; and their four test suites asserted **mutually contradictory** verdicts and **all passed**. The Born-rule headline "α = 2 UNIQUELY selected" was **DEAD CODE**. Fixed with a `QgCriterion` type (status + mandatory basis + derived score) and an `AlphaInvarianceScreen` that **executes** the uniqueness screen (violation 2.22e−16 at α = 2 vs 0.495–2.344 otherwise). Verdicts unchanged; ψ corrected to canonical (G_024). |
 | G Bridge (QG6↔QG181) | QG182 | BRIDGE ORIGIN (deficit parameters from D96: m₀ = occ₀/Σm = 4/95 = S param, r₀ = ln(span), ρ̄ = 1 → GM_eff = 1/ln(M_Pl/v) = 1/(3·ln A), 0.0969%; identity occ₀·ln(span)·ln(Σm·#g·occ₂) = Σm; two G constructions are the same physical content) |
 | Planck Scale Robustness | QG183 | ROBUST ORIGIN (physical exponent p = ln(M_Pl/v)/ln(A) = 2.99984, cubic to 1e-4; only A³ reproduces M_Pl (0.2%) while A¹/A²/A⁴ fail by 100%/100%/3.6e7%, nearby exponents 47-260% dev; no alternative A selects cubic; 3-factor/3-band/d=3 structure) |
 | Mass-Radius Relation | QG184 | MASS-RADIUS ORIGIN (observed M ∝ R emerges from counting measure: the deficit is per-octave/log — G4ME flat-rotation-curve profile — giving a ∝ −1/r and GM_eff = m₀·R/(d·L·ρ̄) ∝ R; QG13's E ∝ R^d was the compact-void assumption; with S ∝ R^(d−1) (QG12), T ∝ 1/R — Hawking restored, no new primitives) |

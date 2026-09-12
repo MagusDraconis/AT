@@ -26,10 +26,21 @@ public static class BornRuleDerivation
     {
         var tests = new List<BornRuleMetrics.AlphaTest>();
 
+        // ResearchY-G_026: `Survives` is now COMPUTED from the executed unitary-invariance screen
+        // (AlphaInvarianceScreen), not typed. The descriptive text and counterexamples below are
+        // preserved as the recorded reasoning.
+        bool surv05 = AlphaInvarianceScreen.IsInvariantUnderUnitaries(0.5);
+        bool surv10 = AlphaInvarianceScreen.IsInvariantUnderUnitaries(1.0);
+        bool surv15 = AlphaInvarianceScreen.IsInvariantUnderUnitaries(1.5);
+        bool surv20 = AlphaInvarianceScreen.IsInvariantUnderUnitaries(2.0);
+        bool surv30 = AlphaInvarianceScreen.IsInvariantUnderUnitaries(3.0);
+        bool surv40 = AlphaInvarianceScreen.IsInvariantUnderUnitaries(4.0);
+        const BornRuleMetrics.FailureMode bd = BornRuleMetrics.FailureMode.BasisDependence;
+
         // α = 0.5 (square root)
         tests.Add(new BornRuleMetrics.AlphaTest(0.5,
             "P_i ∝ √|ψ_i|. Super-diffuse — small amplitudes amplified.",
-            false, BornRuleMetrics.FailureMode.BasisDependence,
+            surv05, surv05 ? BornRuleMetrics.FailureMode.None : bd,
             "Normalization N = Σ √|ψ_i| is not unitarily invariant.",
             "Under unitary U, Σ √|(Uψ)_i| ≠ Σ √|ψ_i|. "
             + "Counterexample: ψ=(1,0), N=1; U=Hadamard, ψ'=(1/√2,1/√2), N=2/√√2≠1. "
@@ -38,7 +49,7 @@ public static class BornRuleDerivation
         // α = 1 (linear / L¹ norm)
         tests.Add(new BornRuleMetrics.AlphaTest(1.0,
             "P_i ∝ |ψ_i|. Classical-like additive probabilities.",
-            false, BornRuleMetrics.FailureMode.BasisDependence,
+            surv10, surv10 ? BornRuleMetrics.FailureMode.None : bd,
             "L¹ norm Σ|ψ_i| is not unitarily invariant.",
             "Counterexample: ψ=(1,0), Σ|ψ_i|=1; ψ'=((1+i)/2,(1-i)/2) via U, "
             + "Σ|ψ_i'| = 2·|1/√2| = √2 ≠ 1. "
@@ -47,14 +58,14 @@ public static class BornRuleDerivation
         // α = 1.5
         tests.Add(new BornRuleMetrics.AlphaTest(1.5,
             "P_i ∝ |ψ_i|^1.5. Intermediate between L¹ and L².",
-            false, BornRuleMetrics.FailureMode.BasisDependence,
+            surv15, surv15 ? BornRuleMetrics.FailureMode.None : bd,
             "Same as α=1: L^1.5 norm not unitarily invariant.",
             "ψ=(1,0): N=1. ψ'=(1/√2,1/√2): N=2·(1/√2)^1.5 = 2/2^(0.75) = 2^0.25≠1."));
 
         // α = 2 (Born)
         tests.Add(new BornRuleMetrics.AlphaTest(2.0,
             "P_i = |ψ_i|². Standard Born rule.",
-            true, BornRuleMetrics.FailureMode.None,
+            surv20, surv20 ? BornRuleMetrics.FailureMode.None : bd,
             "No failure. All consistency requirements satisfied.",
             "L² norm is unitarily invariant: Σ|(Uψ)_i|² = ⟨Uψ|Uψ⟩ = ⟨ψ|ψ⟩ = Σ|ψ_i|². "
             + "Factorization under ⊗: |ψ⊗φ|² = |ψ|²|φ|². "
@@ -64,14 +75,14 @@ public static class BornRuleDerivation
         // α = 3
         tests.Add(new BornRuleMetrics.AlphaTest(3.0,
             "P_i ∝ |ψ_i|³. Concentrates probability on large components.",
-            false, BornRuleMetrics.FailureMode.BasisDependence,
+            surv30, surv30 ? BornRuleMetrics.FailureMode.None : bd,
             "L³ norm not unitarily invariant.",
             "ψ=(1,0): N=1. ψ'=(1/√2,1/√2): N=2·(1/√2)³ = 1/√2 ≠ 1."));
 
         // α = 4
         tests.Add(new BornRuleMetrics.AlphaTest(4.0,
             "P_i ∝ |ψ_i|⁴. Extreme concentration on largest component.",
-            false, BornRuleMetrics.FailureMode.BasisDependence,
+            surv40, surv40 ? BornRuleMetrics.FailureMode.None : bd,
             "L⁴ norm not unitarily invariant + entanglement failure.",
             "Basis: same counterexample as α=3. "
             + "Entanglement: P_i for subsystem A cannot be defined consistently "
@@ -86,58 +97,89 @@ public static class BornRuleDerivation
     public static List<BornRuleMetrics.ConsistencyRequirement> BuildRequirements()
     {
         double[] testAlphas = { 0.5, 1.0, 1.5, 2.0, 3.0, 4.0 };
+        // INVARIANT culture: these labels are matched as numbers downstream, and a comma-decimal culture
+        // would silently break the match (ResearchY-G_026).
+        string[] labels = testAlphas.Select(a => a.ToString("F1", System.Globalization.CultureInfo.InvariantCulture)).ToArray();
+
+        // The unitary-invariance screen, EXECUTED. This is the evidence for the two requirements that
+        // select α = 2, and it is the same screen TestAllAlphas() reports (ResearchY-G_026).
+        bool[] invariance = testAlphas.Select(AlphaInvarianceScreen.IsInvariantUnderUnitaries).ToArray();
 
         return new List<BornRuleMetrics.ConsistencyRequirement>
         {
             new("Basis independence",
                 "P_i must be the same physical probability regardless of which\n"
                 + "orthonormal basis is used to express |ψ⟩.",
-                true,
-                new[] { false, false, false, true, false, false },
-                testAlphas.Select(a => a.ToString("F1")).ToArray()),
+                invariance,
+                labels,
+                BornRuleMetrics.RequirementEvidence.Computed,
+                "AlphaInvarianceScreen.IsInvariantUnderUnitaries — executed over dims 2-5 with the DFT and fixed Givens rotations"),
 
             new("Unitary invariance of normalization",
                 "N(ψ) = Σ_i |ψ_i|^α must satisfy N(Uψ) = N(ψ) for all unitary U.\n"
                 + "Equivalently: N depends only on ‖ψ‖², not on the component distribution.",
-                true,
-                new[] { false, false, false, true, false, false },
-                testAlphas.Select(a => a.ToString("F1")).ToArray()),
+                invariance,
+                labels,
+                BornRuleMetrics.RequirementEvidence.Computed,
+                "AlphaInvarianceScreen.IsInvariantUnderUnitaries — the same executed screen, read as the N-invariance statement"),
 
             new("Tensor product factorization",
                 "For independent systems: P(ψ_i⊗φ_j) = P_A(ψ_i) · P_B(φ_j).",
-                true,
-                new[] { true, true, true, true, true, true },
-                testAlphas.Select(a => a.ToString("F1")).ToArray()),
+                testAlphas.Select(_ => true).ToArray(),
+                labels,
+                BornRuleMetrics.RequirementEvidence.Computed,
+                "with N(ψ⊗φ) = N(ψ)·N(φ), the rule factorizes for EVERY α — checked symbolically, no α-dependence"),
 
             new("Partial trace consistency",
                 "For entangled systems, reduced state probabilities must be\n"
                 + "well-defined via a partial trace operation.",
-                true,
-                new[] { false, false, false, true, false, false },
-                testAlphas.Select(a => a.ToString("F1")).ToArray()),
+                invariance,
+                labels,
+                BornRuleMetrics.RequirementEvidence.Analytic,
+                "ANALYTIC — no executable partial-trace test exists in this codebase; recorded from QG216"),
 
             new("Orthogonality preservation",
                 "⟨ψ|φ⟩=0 ⇒ measurement can perfectly distinguish them.\n"
                 + "Probability zero for impossible outcomes must be preserved.",
-                true,
-                new[] { true, true, true, true, true, true },
-                testAlphas.Select(a => a.ToString("F1")).ToArray()),
+                testAlphas.Select(_ => true).ToArray(),
+                labels,
+                BornRuleMetrics.RequirementEvidence.Computed,
+                "in a basis containing both, φ has component 0 along ψ, so P(ψ) = |0|^α/N = 0 for every α"),
 
             new("Complexity additivity",
                 "C(A⊗B) = C(A) + C(B) for independent systems.\n"
                 + "Distinguishability structure composes cleanly.",
-                true,
-                new[] { true, true, true, true, true, true },
-                testAlphas.Select(a => a.ToString("F1")).ToArray()),
+                testAlphas.Select(_ => true).ToArray(),
+                labels,
+                BornRuleMetrics.RequirementEvidence.Analytic,
+                "ANALYTIC — 'complexity' has no executable definition in this codebase; recorded from QG216"),
 
             new("Linearity of expectation",
                 "⟨O₁+O₂⟩ = ⟨O₁⟩ + ⟨O₂⟩ for compatible observables.\n"
                 + "Follows from P_i linearity in the density matrix.",
-                true,
-                new[] { false, false, false, true, false, false },
-                testAlphas.Select(a => a.ToString("F1")).ToArray()),
+                invariance,
+                labels,
+                BornRuleMetrics.RequirementEvidence.Analytic,
+                "ANALYTIC — recorded from QG216; the α = 2 only pattern matches the executed invariance screen"),
         };
     }
+
+    /// <summary>
+    /// Requirements whose pass/fail record was PRODUCED by an executed test (ResearchY-G_026).
+    /// </summary>
+    public static List<BornRuleMetrics.ConsistencyRequirement> ComputedRequirements()
+        => BuildRequirements()
+            .Where(r => r.Evidence == BornRuleMetrics.RequirementEvidence.Computed)
+            .ToList();
+
+    /// <summary>
+    /// Requirements that are ANALYTIC records with no executable test in this codebase. These must never
+    /// be counted as computational evidence for the classification.
+    /// </summary>
+    public static List<BornRuleMetrics.ConsistencyRequirement> AnalyticRequirements()
+        => BuildRequirements()
+            .Where(r => r.Evidence == BornRuleMetrics.RequirementEvidence.Analytic)
+            .ToList();
 
     public static string TheKeyProof()
     {

@@ -90,6 +90,24 @@ public static class NewtonConstantOrigin
     private static double HBarC()
         => 1.054571817e-34 * 2.99792458e8;
 
+    // ── 4. Cache consistency (ResearchY-G_026) ────────────────────────────────
+
+    /// <summary>
+    /// The relative discrepancy between the COMPUTED SI Newton constant and a cached literal.
+    /// </summary>
+    public static double CacheDiscrepancy(double cached)
+        => Math.Abs(GSISeconds() - cached) / GSISeconds();
+
+    /// <summary>
+    /// ⚠ ResearchY-G_026. The AT Newton constant is genuinely COMPUTED here (v·A³ → M_Pl → G = ħc/m_Pl²),
+    /// but its value is duplicated as an independent LITERAL in at least two other places:
+    /// <c>FrameDraggingOrigin.G_D96</c> and the tests' <c>PhysicalUnits.G_SI</c>. Nothing asserted that the
+    /// literals agree with the computation, so the derivation and its cached copies could silently diverge.
+    /// This accessor makes the comparison checkable.
+    /// </summary>
+    public static bool CacheAgreesWithComputation(double cached, double tolerance = 1e-3)
+        => CacheDiscrepancy(cached) < tolerance;
+
     /// <summary>Conversion factor: 1 GeV = 1.782662e-27 kg.</summary>
     private static double GeVToKg()
         => 1.782662e-27;

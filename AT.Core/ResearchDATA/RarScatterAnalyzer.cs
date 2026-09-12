@@ -321,25 +321,72 @@ public static class RarScatterAnalyzer
         return new GalaxyScatterMatrix(types, gRms, valid.Max(t=>t.RmsScatter), valid.Min(t=>t.RmsScatter), varies, sb.ToString());
     }
 
+    /// <summary>
+    /// The AT RAR functional form: g_obs = g_bar·√(1 + g†/g_bar).
+    /// </summary>
+    public static double AtRarForm(double gBar, double gDagger)
+        => gBar * Math.Sqrt(1.0 + gDagger / gBar);
+
+    /// <summary>
+    /// The two limits the completion table claims, CHECKED NUMERICALLY rather than asserted
+    /// (ResearchY-G_026). Returns (newtonianHolds, deepMondHolds, newtonianRatio, deepMondRatio).
+    /// </summary>
+    public static (bool NewtonianHolds, bool DeepMondHolds, double NewtonianRatio, double DeepMondRatio)
+        RarLimitsCheck(double gDagger)
+    {
+        // NEWTONIAN LIMIT: g_obs → g_bar as g_bar → ∞.
+        double gBig = 1e12 * gDagger;
+        double newtonianRatio = AtRarForm(gBig, gDagger) / gBig;
+
+        // DEEP-MOND LIMIT: g_obs → √(g_bar·g†) as g_bar → 0, i.e. g_obs / √(g_bar·g†) → 1.
+        double gSmall = 1e-12 * gDagger;
+        double deepMondRatio = AtRarForm(gSmall, gDagger) / Math.Sqrt(gSmall * gDagger);
+
+        return (Math.Abs(newtonianRatio - 1.0) < 1e-6,
+                Math.Abs(deepMondRatio - 1.0) < 1e-6,
+                newtonianRatio, deepMondRatio);
+    }
+
     public static ExplanatoryCompletion AuditCompletion(
         PiFactorAudit pi, ScaleComparison sc, ScatterSourceCatalog cat,
         VarianceModel vm, GalaxyScatterMatrix gs)
     {
+        // The only rows that were already COMPUTED were "Galaxy-type var" (gs.ScatterVariesWithType) and
+        // "Scatter amplitude"/"Scale g†" (whose Notes interpolate computed values). The three limit/form
+        // rows are now computed too, from the AT functional form. The remaining rows are AUTHORED research
+        // judgements and are labelled as such rather than presented as "DERIVED ✓".
+        var limits = RarLimitsCheck(sc.BestMatch.Value_1e10);
+        const CompletionEvidence C = CompletionEvidence.Computed;
+        const CompletionEvidence A = CompletionEvidence.Authored;
+
         var scores = new[]
         {
-            new CompletionScore("RAR existence","Tight g_obs(g_bar)?",false,true,0,"OBSERVED","Empirical fact."),
-            new CompletionScore("Scale g†","g†≈10⁻¹⁰ m/s²?",true,true,0,"DERIVED ✓",$"cH₀/(2π) ratio={sc.BestMatch.RatioToEmpirical:F3}"),
-            new CompletionScore("2π factor","Origin of 2π?",true,true,0,"DERIVED ✓",pi.BestCandidate.Origin),
-            new CompletionScore("Functional form","g_obs=g_bar·√(1+g†/g_bar)?",true,true,0,"DERIVED ✓","Isothermal + exponential."),
-            new CompletionScore("Newtonian limit","g_obs→g_bar?",true,true,0,"DERIVED ✓","Automatic."),
-            new CompletionScore("Deep MOND limit","g_obs→√(g_bar·g†)?",true,true,0,"DERIVED ✓","Automatic."),
-            new CompletionScore("Scatter amplitude","σ≈0.20 dex?",false,true,0,"CALIBRATED",$"Pred={cat.TotalPredictedScatter_Dex:F3}"),
-            new CompletionScore("Scatter origin","Sources identified?",true,true,0,"DERIVED ✓","Poisson + M/L + env."),
-            new CompletionScore("Galaxy-type var","Varies w/ type?",false,gs.ScatterVariesWithType,0,"OBSERVED","Confirmed."),
-            new CompletionScore("Variance chain","Q→defects→g†→σ?",true,true,0,"DERIVED ✓","Established."),
+            new CompletionScore("RAR existence","Tight g_obs(g_bar)?",false,true,0,"OBSERVED","Empirical fact.", A),
+            new CompletionScore("Scale g†","g†≈10⁻¹⁰ m/s²?",sc.BestMatch.Consistent,true,0,
+                sc.BestMatch.Consistent ? "DERIVED (computed match)" : "CALIBRATED",
+                $"cH₀/(2π) ratio={sc.BestMatch.RatioToEmpirical:F3}", C),
+            new CompletionScore("2π factor","Origin of 2π?",true,true,0,"DERIVED (authored)",pi.BestCandidate.Origin, A),
+            new CompletionScore("Functional form","g_obs=g_bar·√(1+g†/g_bar)?",true,true,0,
+                "DERIVED (computed limits)",
+                $"AT form checked: Newtonian ratio={limits.NewtonianRatio:F9}, deep-MOND ratio={limits.DeepMondRatio:F9}", C),
+            new CompletionScore("Newtonian limit","g_obs→g_bar?",limits.NewtonianHolds,true,0,
+                limits.NewtonianHolds ? "DERIVED (computed)" : "REFUTED",
+                $"g_obs/g_bar = {limits.NewtonianRatio:F9} at g_bar = 1e12 g†", C),
+            new CompletionScore("Deep MOND limit","g_obs→√(g_bar·g†)?",limits.DeepMondHolds,true,0,
+                limits.DeepMondHolds ? "DERIVED (computed)" : "REFUTED",
+                $"g_obs/√(g_bar g†) = {limits.DeepMondRatio:F9} at g_bar = 1e-12 g†", C),
+            new CompletionScore("Scatter amplitude","σ≈0.20 dex?",false,true,0,"CALIBRATED",
+                $"Pred={cat.TotalPredictedScatter_Dex:F3}", A),
+            new CompletionScore("Scatter origin","Sources identified?",true,true,0,"DERIVED (authored)",
+                "Poisson + M/L + env.", A),
+            new CompletionScore("Galaxy-type var","Varies w/ type?",gs.ScatterVariesWithType,gs.ScatterVariesWithType,0,
+                gs.ScatterVariesWithType ? "OBSERVED" : "NOT VARIED","Confirmed.", C),
+            new CompletionScore("Variance chain","Q→defects→g†→σ?",true,true,0,"DERIVED (authored)","Established.", A),
         };
 
         int d=scores.Count(s=>s.Derived), t=scores.Length;
+        int computed = scores.Count(s => s.Derived && s.Evidence == CompletionEvidence.Computed);
+        int authored = scores.Count(s => s.Derived && s.Evidence == CompletionEvidence.Authored);
         double frac = (double)d / t;
         string cls = frac >= 0.8 ? "B" : frac >= 0.6 ? "C" : frac >= 0.4 ? "D" : "E";
 
@@ -347,8 +394,14 @@ public static class RarScatterAnalyzer
         sb.AppendLine("COMPLETION AUDIT");
         sb.AppendLine();
         sb.AppendLine(string.Format(CultureInfo.InvariantCulture,"  Derived: {0}/{1} ({2:P0})", d, t, (double)d/t));
+        sb.AppendLine(string.Format(CultureInfo.InvariantCulture,
+            "  of which COMPUTED: {0}   AUTHORED (no executable check): {1}", computed, authored));
         sb.AppendLine(string.Format(CultureInfo.InvariantCulture,"  Free params: 0"));
         sb.AppendLine(string.Format(CultureInfo.InvariantCulture,"  Classification: {0}", cls));
+        sb.AppendLine();
+        sb.AppendLine("  AUTHORED ROWS (a typed research judgement, not a computation):");
+        foreach (var s in scores.Where(s => s.Evidence == CompletionEvidence.Authored && s.Derived))
+            sb.AppendLine($"    - {s.Aspect}");
         sb.AppendLine();
         sb.AppendLine("  REMAINING: Isothermal derivation, defect count, pre-diction.");
 

@@ -133,26 +133,32 @@ public static class EffectiveSizeLaw
     // ── 5. Family-band formation ────────────────────────────────────────────────
 
     /// <summary>
-    /// The fundamental identity: familyCount = floor(log2(ω_max/ω_min)) + 1, i.e. the family count is
-    /// exactly the number of octave bands spanned by the spectrum. Returns the identity check.
+    /// The fundamental identity at a given dynamics point: familyCount = floor(log2(ω_max/ω_min)) + 1.
     /// </summary>
-    public static bool FamilyBandIdentity(int n = DefaultN, int K = DefaultK)
+    public static bool FamilyBandIdentity(int n = DefaultN, int K = DefaultK,
+        double feedback = DefaultFeedback, double damping = DefaultDamping)
     {
-        var w = FamilyIndexOrigin.IntraSectorModes(n, K);
+        var w = FamilyIndexOrigin.IntraSectorModes(n, K, feedback, damping);
         if (w.Length == 0) return false;
         int fromSpan = (int)Math.Floor(Math.Log2(w[^1] / w[0])) + 1;
-        int actual = FamilyIndexOrigin.FamilyCount(n, K);
+        int actual = FamilyIndexOrigin.FamilyCount(n, K, feedback, damping);
         return fromSpan == actual;
     }
 
-    /// <summary>Does the family-count = octave-band-count identity hold across the (N, K) grid?</summary>
+    /// <summary>
+    /// Does the family-count = octave-band-count identity hold across the (N, K) grid AT the given dynamics
+    /// point? (ResearchY-G_026: this previously DECLARED <paramref name="feedback"/> and
+    /// <paramref name="damping"/> and then never used them — it called <c>FamilyBandIdentity(n, K)</c>, which
+    /// silently fell back to the defaults, so a caller passing non-default dynamics received an answer for
+    /// the defaults. The parameters are now threaded through, and the identity is checked at their value.)
+    /// </summary>
     public static bool IdentityHoldsAcrossGrid(double feedback = DefaultFeedback, double damping = DefaultDamping)
     {
         foreach (int n in new[] { 48, 64, 96, 128, 192 })
             foreach (int K in new[] { 3, 4, 5, 6, 8, 10 })
             {
                 if (n / K < 6) continue;
-                if (!FamilyBandIdentity(n, K)) return false;
+                if (!FamilyBandIdentity(n, K, feedback, damping)) return false;
             }
         return true;
     }

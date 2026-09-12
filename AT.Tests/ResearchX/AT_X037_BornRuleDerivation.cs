@@ -125,6 +125,39 @@ public class AT_X037_BornRuleDerivation : ResearchTestBase
         sb.AppendLine($"  {theorem.Verdict}");
         sb.AppendLine(new string('=', 100));
         Output.WriteLine(sb.ToString());
+
+        // ── EXECUTED EVIDENCE (ResearchY-G_026) ──────────────────────────────────
+        //
+        // This test previously contained NO assertions at all: it was a pure report, so nothing here could
+        // fail. The unitary-invariance screen that underwrites α = 2 is now executed, and the assertions
+        // below check it — and check that the analytic rows are labelled as analytic rather than counted
+        // as computed evidence.
+        sb.Clear();
+        sb.AppendLine("EXECUTED α-SCREEN (unitary invariance of N(ψ) = Σ|ψ_i|^α)");
+        foreach (var (alpha, outcome, violation) in AlphaInvarianceScreen.Screen())
+            sb.AppendLine($"  α = {alpha,4:F1}   {outcome,-20} max relative violation = {violation:E3}");
+        sb.AppendLine();
+        sb.AppendLine($"  surviving exponents: [{string.Join(", ", AlphaInvarianceScreen.SurvivingAlphas())}]");
+        Output.WriteLine(sb.ToString());
+
+        Assert.True(AlphaInvarianceScreen.AlphaTwoIsUniquelySelected(),
+            "the executed screen must select α = 2 as the unique invariant exponent");
+        Assert.Equal(new[] { 2.0 }, AlphaInvarianceScreen.SurvivingAlphas());
+        Assert.True(AlphaInvarianceScreen.IsInvariantUnderUnitaries(2.0), "α = 2 is invariant");
+        Assert.False(AlphaInvarianceScreen.IsInvariantUnderUnitaries(1.0), "α = 1 is excluded");
+        Assert.False(AlphaInvarianceScreen.IsInvariantUnderUnitaries(3.0), "α = 3 is excluded");
+
+        // The α = 2 uniqueness must be COMPUTED, not typed: every AlphaTest.Survives must agree with the screen.
+        foreach (var t in theorem.AlphaTests)
+            Assert.Equal(AlphaInvarianceScreen.IsInvariantUnderUnitaries(t.Alpha), t.Survives);
+
+        // Every requirement must cite a basis, and the evidence split must be disclosed.
+        var ev = BornRuleAnalyzer.RequirementEvidenceBreakdown(theorem.Requirements);
+        Assert.Equal(theorem.Requirements.Count, ev.Computed + ev.Analytic);
+        Assert.True(ev.Computed >= 2, "at least the invariance/basis requirements must be computed");
+        Assert.All(theorem.Requirements, r => Assert.False(string.IsNullOrWhiteSpace(r.Basis),
+            $"requirement '{r.Name}' must cite its basis"));
+        Assert.Contains("computed", theorem.Classification, StringComparison.OrdinalIgnoreCase);
     }
 
     private static void Sec(StringBuilder sb, string t)

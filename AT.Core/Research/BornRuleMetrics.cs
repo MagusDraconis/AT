@@ -24,8 +24,23 @@ public static class BornRuleMetrics
 
     public sealed record ConsistencyRequirement(
         string Name, string Statement,
-        bool PassesForAlpha2, bool[] PassesForOtherAlphas,
-        string[] AlphaValues);
+        bool[] PassesForAlpha,
+        string[] AlphaValues,
+        RequirementEvidence Evidence,
+        string Basis);
+
+    /// <summary>
+    /// How a requirement's pass/fail record was obtained (ResearchY-G_026).
+    /// <see cref="Computed"/> = produced by an executed test in this codebase;
+    /// <see cref="Analytic"/> = a recorded analytic result with NO executable test in the codebase.
+    /// The distinction is carried so that an analytic claim can never be mistaken for a computed one,
+    /// and so that a classification resting on analytic rows says so.
+    /// </summary>
+    public enum RequirementEvidence
+    {
+        Computed,
+        Analytic,
+    }
 
     public sealed record BornRuleTheorem(
         string TheoremStatement, List<AlphaTest> AlphaTests,

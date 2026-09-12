@@ -54,28 +54,78 @@ namespace AT.Core.ResearchXH;
 /// primitive, spacetime, matter) is complete with no remaining blockers; the ψ primitive is an explicit
 /// ontological boundary of the two-primitive theory, and its tensor-sector questions (capacity, excitation)
 /// are resolved. The theory is complete within its stated primitives.
+///
+/// ⚠ CORRECTION — ResearchY-G_025 / G_026 (the G_025 defect class). As originally written this audit's six
+/// criteria were six bare `bool` literals and its six sub-scores were a SEPARATE set of hard-coded 1.0s
+/// that never read them, so `TotalScore()` returned 6.0 and `Classify()` returned "COMPLETE QG" no matter
+/// what the criteria said. The criteria are now one `QgCriterion` table carrying status + cited basis; the
+/// sub-scores, total and classification are all DERIVED from it; and `ClassificationFollowsFromCriteria()`
+/// makes the ladder checkable. The statuses themselves are unchanged (the derived ladder reproduces the
+/// historical one exactly) — what changed is that they can no longer be mistaken for a computation.
+///
+/// ⚠ REFINEMENT — ResearchY-G_024 (superseding QG285/QG286/QG292). The adjudication text above calls ψ "the
+/// SECOND of exactly two primitives" (QG51/40). That is SUPERSEDED: ψ is the TRACELESS FACE of the one
+/// Difference read against η, so the minimal primitive set is {Difference, η}. `PsiIsNewPrimitive()` now
+/// returns the canonical position (false); the historical wording is preserved in
+/// `PsiWasCalledNewPrimitive()`. The audit's functional content — capacity forced (QG56), excitation
+/// derived (QG57), observables derived (QG103/QG186/QG212/QG208) — is unaffected, so ψ remains an
+/// ONTOLOGICAL BOUNDARY, but of the tensor face of the one primitive rather than of a second one.
 /// </summary>
 public static class FinalQuantumGravityAudit
 {
     // ── 1. The six criteria ───────────────────────────────────────────────────
+    //
+    // ⚠ ResearchY-G_026. These six criteria were originally six bare `bool` literals, and the six sub-scores
+    // below were a SEPARATE set of hard-coded 1.0s that never read them — so the classification could not
+    // move when a criterion changed. The criteria are now one table of QgCriterion values (status + cited
+    // basis), the sub-scores are DERIVED from it, and the boolean accessors are derived from the same table.
+    // The statuses themselves remain the authored research adjudication of QG223; what is now impossible is
+    // mistaking them for a computation.
 
-    /// <summary>Is QM derived? YES, FULLY — magnitude (QG216) + phase (QG220) + complex structure (QG218) + measurement (QG74).</summary>
-    public static bool IsQuantumMechanicsDerived() => true;
+    /// <summary>
+    /// The six QG closure criteria. Each carries its status AND the phase audit that supplies its evidence.
+    /// This is the single source of truth for the closure score.
+    /// </summary>
+    public static QgCriterion[] Criteria() => new[]
+    {
+        new QgCriterion("QM derived", QgStatus.Full,
+            "magnitude QG216, complex structure QG218, phase QG220, measurement basis QG74"),
+        new QgCriterion("gravity derived", QgStatus.Full,
+            "metric structure QG197/207, observables QG181-QG213, native dynamics QG222"),
+        new QgCriterion("common primitive", QgStatus.Full,
+            "one network: ρ sources gravity, |ψ|² = ρ, the phase is the same actualization circulation"),
+        new QgCriterion("spacetime emergent", QgStatus.Full,
+            "structure QG207 + native dynamics QG222, both from ρ"),
+        new QgCriterion("matter emergent", QgStatus.Full,
+            "QG195/196/203-210 (conserved deficit dust, masses from D96)"),
+        new QgCriterion("no blockers", QgStatus.Full,
+            "ψ is an ontological boundary (QG223 §B), not a QG blocker"),
+    };
 
-    /// <summary>Is gravity derived? Yes — metric structure (QG197/207), observables (QG181-213), native dynamics (QG222).</summary>
-    public static bool IsGravityDerived() => true;
+    /// <summary>The status of a named criterion (None if the name is unknown).</summary>
+    public static QgStatus StatusOf(string name)
+        => Criteria().FirstOrDefault(c => c.Name == name)?.Status ?? QgStatus.None;
 
-    /// <summary>Common primitive? Yes — both pillars derive from the network (ρ + the actualization circulation).</summary>
-    public static bool CommonPrimitive() => true;
+    /// <summary>Does a named criterion hold outright?</summary>
+    public static bool HoldsOf(string name) => StatusOf(name) == QgStatus.Full;
 
-    /// <summary>Is spacetime emergent? Yes — metric structure (QG207) AND native dynamics (QG222), from ρ.</summary>
-    public static bool IsSpacetimeEmergent() => true;
+    /// <summary>Is QM derived? DERIVED from <see cref="Criteria"/>.</summary>
+    public static bool IsQuantumMechanicsDerived() => HoldsOf("QM derived");
 
-    /// <summary>Is matter emergent? Yes — QG195/196/203-210.</summary>
-    public static bool IsMatterEmergent() => true;
+    /// <summary>Is gravity derived? DERIVED from <see cref="Criteria"/>.</summary>
+    public static bool IsGravityDerived() => HoldsOf("gravity derived");
 
-    /// <summary>Are there remaining blockers? No — ψ is a boundary, not a blocker.</summary>
-    public static bool HasRemainingBlockers() => false;
+    /// <summary>Common primitive? DERIVED from <see cref="Criteria"/>.</summary>
+    public static bool CommonPrimitive() => HoldsOf("common primitive");
+
+    /// <summary>Is spacetime emergent? DERIVED from <see cref="Criteria"/>.</summary>
+    public static bool IsSpacetimeEmergent() => HoldsOf("spacetime emergent");
+
+    /// <summary>Is matter emergent? DERIVED from <see cref="Criteria"/>.</summary>
+    public static bool IsMatterEmergent() => HoldsOf("matter emergent");
+
+    /// <summary>Are there remaining blockers? DERIVED from <see cref="Criteria"/>.</summary>
+    public static bool HasRemainingBlockers() => !HoldsOf("no blockers");
 
     // ── 2. The ψ origin status adjudication ───────────────────────────────────
 
@@ -97,8 +147,22 @@ public static class FinalQuantumGravityAudit
     /// <summary>Are all ψ-dependent observables derived (perihelion QG103, dragging QG186, optics QG212)? Yes.</summary>
     public static bool PsiObservablesDerived() => true;
 
-    /// <summary>Is ψ a new fundamental primitive (QG23/24/40/47/52)? Yes.</summary>
-    public static bool PsiIsNewPrimitive() => WhyPsiExists.IsNewPostulate() && FundamentalVsEffectivePsi.PsiFundamental();
+    /// <summary>Is ψ a new fundamental primitive (the QG223-era verdict, QG23/24/40/47/52)? YES, historically.</summary>
+    public static bool PsiWasCalledNewPrimitive()
+        => WhyPsiExists.IsNewPostulate() && FundamentalVsEffectivePsi.PsiFundamental();
+
+    /// <summary>
+    /// ⚠ REFINEMENT — ResearchY-G_024, superseding QG285/QG286/QG292. ψ is **NOT** a new primitive: it is
+    /// the TRACELESS FACE of the one Difference read against η, so the minimal primitive set is
+    /// {Difference, η} and ψ adds nothing. QG223's "the second of exactly two primitives" (QG51/40) is
+    /// therefore SUPERSEDED, and this accessor returns the canonical position.
+    ///
+    /// The FUNCTIONAL content of this audit is unaffected: capacity (QG56) is forced, excitation (QG57) is
+    /// derived, and the ψ-dependent observables (QG103, QG186, QG212, QG208) are derived — so ψ remains an
+    /// ONTOLOGICAL BOUNDARY. It is a boundary of the tensor FACE of the one primitive, not the existence of
+    /// a second primitive of its own.
+    /// </summary>
+    public static bool PsiIsNewPrimitive() => false;
 
     /// <summary>Is ψ's existence observationally demanded, not internally forced (QG47)? Yes.</summary>
     public static bool PsiExistenceObservational() => WhyPsiExists.ContingentOnObservation() && !WhyPsiExists.ForcedByInternalConsistency();
@@ -116,32 +180,47 @@ public static class FinalQuantumGravityAudit
         ("Existence observational (not forced)?", PsiExistenceObservational()),
     };
 
-    // ── 3. Sub-scores ─────────────────────────────────────────────────────────
+    // ── 3. Sub-scores (DERIVED from Criteria — never typed) ───────────────────
 
-    /// <summary>The six sub-scores, labeled.</summary>
-    public static (string Criterion, double Score)[] SubScores() => new[]
-    {
-        ("QM derived", 1.0),
-        ("gravity derived", 1.0),
-        ("common primitive", 1.0),
-        ("spacetime emergent", 1.0),
-        ("matter emergent", 1.0),
-        ("no blockers", 1.0),
-    };
+    /// <summary>The six sub-scores, labelled. Derived from <see cref="Criteria"/>.</summary>
+    public static (string Criterion, double Score)[] SubScores()
+        => Criteria().Select(c => (c.Name, c.Score)).ToArray();
 
-    /// <summary>Total score (0..6).</summary>
+    /// <summary>Total score (0..6) — the sum of the derived per-criterion scores.</summary>
     public static double TotalScore()
-        => SubScores().Sum(s => s.Score);
+        => QgClosure.TotalScore(Criteria());
+
+    /// <summary>Do all criteria cite the phase audit carrying their evidence?</summary>
+    public static bool AllBasesCited() => QgClosure.AllBasesCited(Criteria());
+
+    /// <summary>
+    /// Consistency self-check (ResearchY-G_026): the classification must FOLLOW from the criteria table.
+    /// This can fail — unlike the tautological assertions it replaces — so it is a real check.
+    /// </summary>
+    public static bool ClassificationFollowsFromCriteria()
+        => QgClosure.ClassificationFollowsFromCriteria(Classify(), Criteria());
+
+    /// <summary>Are the sub-scores consistent with the criteria? (True by construction; asserted in tests.)</summary>
+    public static bool SubScoresMatchCriteria()
+    {
+        var crit = Criteria();
+        var subs = SubScores();
+        return crit.Length == subs.Length
+               && crit.Zip(subs).All(p => p.First.Name == p.Second.Criterion
+                                          && Math.Abs(p.First.Score - p.Second.Score) < 1e-12);
+    }
 
     // ── 4. The closure progression ────────────────────────────────────────────
 
-    /// <summary>The QG215 → QG223 progression.</summary>
+    /// <summary>
+    /// The QG215 → QG223 progression, each phase reporting its OWN derived total (no typed scores).
+    /// </summary>
     public static (string Phase, string Status, double Score)[] Progression() => new[]
     {
-        ("QG215", "PARTIAL QG", 2.0),
-        ("QG219", "EFFECTIVE QG", 4.0),
-        ("QG221", "NEAR-COMPLETE QG", 5.0),
-        ("QG223", "COMPLETE QG", 6.0),
+        ("QG215", QuantumGravityClosureAudit.Classify(), QuantumGravityClosureAudit.TotalScore()),
+        ("QG219", QuantumGravityReclosureAudit.Classify(), QuantumGravityReclosureAudit.TotalScore()),
+        ("QG221", QuantumGravityReclosureAudit2.Classify(), QuantumGravityReclosureAudit2.TotalScore()),
+        ("QG223", Classify(), TotalScore()),
     };
 
     // ── 5. Classification ─────────────────────────────────────────────────────
@@ -156,11 +235,5 @@ public static class FinalQuantumGravityAudit
     ///                 stated primitives (ψ is an explicit ontological boundary, not a blocker).
     /// </summary>
     public static string Classify()
-    {
-        double score = TotalScore();
-        if (score >= 6.0) return "COMPLETE QG";
-        if (score >= 5.0) return "NEAR-COMPLETE QG";
-        if (score >= 3.0) return "EFFECTIVE QG";
-        return "PARTIAL QG";
-    }
+        => QgClosure.Classify(TotalScore());
 }

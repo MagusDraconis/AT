@@ -48,29 +48,52 @@ public static class QuantumGravityReclosureAudit
 {
     // ── 1. The six criteria (re-evaluated) ────────────────────────────────────
 
+    // ── 1. The six criteria ────────────────────────────────────────────────────
+    //
+    // ⚠ ResearchY-G_026. These were six bare `bool` literals; they are now one QgCriterion table
+    // (status + cited basis) from which every accessor, the score and the classification derive.
+
+    /// <summary>The six QG closure criteria of this phase, each with its status and cited evidence.</summary>
+    public static QgCriterion[] Criteria() => new[]
+    {
+        new QgCriterion("QM derived", QgStatus.Full,
+            "amplitude magnitude QG216 (|ψ|² = ρ = μ^k/S), complex structure QG218, phase hosted on the existing U(1) links QG63"),
+        new QgCriterion("gravity derived", QgStatus.Full,
+            "QG181/207/209/213"),
+        new QgCriterion("same primitive", QgStatus.Full,
+            "gravity and the amplitude magnitude both derive from ρ; the phase is a U(1) link connection on the existing structure"),
+        new QgCriterion("spacetime emergent", QgStatus.None,
+            "the metric structure is derived (QG207) but the metric dynamics (BDG) is IMPORTED (QG6)"),
+        new QgCriterion("matter emergent", QgStatus.Full,
+            "QG195/196/203-210"),
+        new QgCriterion("no essential gaps open", QgStatus.None,
+            "three gaps remain: phase origin, native metric dynamics, ψ origin status"),
+    };
+
+    /// <summary>Does a named criterion hold outright? DERIVED from <see cref="Criteria"/>.</summary>
+    public static bool HoldsOf(string name)
+        => Criteria().Any(c => c.Name == name && c.Holds);
+
     /// <summary>
-    /// Is QM derived? Substantially YES — magnitude from Q-events (QG216), complex structure derived
-    /// (QG218), phase hosted on the existing U(1) links (QG63).
+    /// Is QM derived? DERIVED from <see cref="Criteria"/> — magnitude from Q-events (QG216), complex
+    /// structure derived (QG218), phase hosted on the existing U(1) links (QG63).
     /// </summary>
-    public static bool IsQuantumMechanicsDerived() => true;
+    public static bool IsQuantumMechanicsDerived() => HoldsOf("QM derived");
 
-    /// <summary>Is gravity derived? Yes — QG181/207/209/213.</summary>
-    public static bool IsGravityDerived() => true;
+    /// <summary>Is gravity derived? DERIVED from <see cref="Criteria"/>.</summary>
+    public static bool IsGravityDerived() => HoldsOf("gravity derived");
 
-    /// <summary>
-    /// Same primitive? YES for the core — both gravity and the amplitude magnitude derive from ρ;
-    /// the phase is a U(1) link connection on the existing structure.
-    /// </summary>
-    public static bool SamePrimitiveForBoth() => true;
+    /// <summary>Same primitive? DERIVED from <see cref="Criteria"/>.</summary>
+    public static bool SamePrimitiveForBoth() => HoldsOf("same primitive");
 
-    /// <summary>Is spacetime emergent? Partially — metric derived, dynamics (BDG) imported (QG6).</summary>
-    public static bool IsSpacetimeEmergent() => false;
+    /// <summary>Is spacetime emergent? DERIVED from <see cref="Criteria"/>.</summary>
+    public static bool IsSpacetimeEmergent() => HoldsOf("spacetime emergent");
 
-    /// <summary>Is matter emergent? Yes — QG195/196/203-210.</summary>
-    public static bool IsMatterEmergent() => true;
+    /// <summary>Is matter emergent? DERIVED from <see cref="Criteria"/>.</summary>
+    public static bool IsMatterEmergent() => HoldsOf("matter emergent");
 
-    /// <summary>Are essential components still open? Partially — phase origin, metric dynamics, ψ origin.</summary>
-    public static bool EssentialComponentsOpen() => true;
+    /// <summary>Are essential components still open? DERIVED from <see cref="Criteria"/>.</summary>
+    public static bool EssentialComponentsOpen() => !HoldsOf("no essential gaps open");
 
     // ── 2. The delta since QG215 ──────────────────────────────────────────────
 
@@ -99,21 +122,18 @@ public static class QuantumGravityReclosureAudit
 
     // ── 3. Classification ─────────────────────────────────────────────────────
 
-    /// <summary>
-    /// QG score (0..6): +1 QM derived, +1 gravity derived, +1 same primitive, +1 spacetime emergent,
-    /// +1 matter emergent, +1 no essential components open.
-    /// </summary>
-    public static int QgScore()
-    {
-        int score = 0;
-        if (IsQuantumMechanicsDerived()) score++;
-        if (IsGravityDerived()) score++;
-        if (SamePrimitiveForBoth()) score++;
-        if (IsSpacetimeEmergent()) score++;
-        if (IsMatterEmergent()) score++;
-        if (!EssentialComponentsOpen()) score++;
-        return score;
-    }
+    /// <summary>QG score (0..6): one point per criterion that HOLDS. DERIVED from <see cref="Criteria"/>.</summary>
+    public static int QgScore() => Criteria().Count(c => c.Holds);
+
+    /// <summary>Total closure score (0..6) — the sum of the derived per-criterion scores.</summary>
+    public static double TotalScore() => QgClosure.TotalScore(Criteria());
+
+    /// <summary>Do all criteria cite the phase audit carrying their evidence?</summary>
+    public static bool AllBasesCited() => QgClosure.AllBasesCited(Criteria());
+
+    /// <summary>Consistency self-check: the classification must FOLLOW from the criteria table.</summary>
+    public static bool ClassificationFollowsFromCriteria()
+        => QgClosure.ClassificationFollowsFromCriteria(Classify(), Criteria());
 
     /// <summary>
     /// Data-driven classification:
@@ -125,7 +145,7 @@ public static class QuantumGravityReclosureAudit
     /// </summary>
     public static string Classify()
     {
-        int score = QgScore();
+        double score = TotalScore();
         if (score >= 6) return "COMPLETE QG";
         if (score >= 4) return "EFFECTIVE QG";
         if (score >= 2) return "PARTIAL QG";

@@ -106,6 +106,25 @@ public class ATQG_Phase186_FrameDraggingOriginTests : ResearchTestBase
         Assert.True(FrameDraggingOrigin.LageosMatchesTarget(), "LAGEOS rate must match ~31 mas/yr within 10%");
         Assert.True(FrameDraggingOrigin.GpbMatchesMeasurement(),
             "GP-B rate must lie inside the measured 37.2 ± 7.2 mas/yr");
+
+        // ── CACHE CONSISTENCY (ResearchY-G_026) ──────────────────────────────────
+        // G is genuinely computed in NewtonConstantOrigin (v·A³ → M_Pl → G = ħc/m_Pl²), but its value is
+        // duplicated as an independent literal in FrameDraggingOrigin.G_D96 and PhysicalUnits.G_SI. Nothing
+        // previously checked that the copies agree with the computation, so they could silently diverge.
+        double computedG = NewtonConstantOrigin.GSISeconds();
+        sb.AppendLine($"  Cached-literal check: computed G = {computedG:E6}, G_D96 = {FrameDraggingOrigin.G_D96:E6}, "
+                      + $"PhysicalUnits.G_SI = {PhysicalUnits.G_SI:E6}");
+        Output.WriteLine(sb.ToString());
+
+        Assert.True(NewtonConstantOrigin.CacheAgreesWithComputation(FrameDraggingOrigin.G_D96),
+            $"FrameDraggingOrigin.G_D96 ({FrameDraggingOrigin.G_D96:E6}) must agree with the computed "
+            + $"NewtonConstantOrigin.GSISeconds() ({computedG:E6})");
+        Assert.True(NewtonConstantOrigin.CacheAgreesWithComputation(PhysicalUnits.G_SI),
+            $"PhysicalUnits.G_SI ({PhysicalUnits.G_SI:E6}) must agree with the computed "
+            + $"NewtonConstantOrigin.GSISeconds() ({computedG:E6})");
+        Assert.True(NewtonConstantOrigin.CacheAgreesWithComputation(
+                NewtonConstantOrigin.GPhysical, 5e-3),
+            "the computed G must also lie within 0.5% of the CODATA value");
     }
 
     [Fact]

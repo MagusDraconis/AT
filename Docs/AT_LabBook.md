@@ -2973,6 +2973,73 @@ test that cannot fail is not a test.*
 **No reclassification**; D_040 untouched; no canonical claim, value or equation changes; no new primitive;
 **7/7 PASSED** (group G total **210/210**).
 
+### G_026 — Authored-Verdict Audit (generalises the G_025 defect class; finds it SYSTEMIC)
+**Status:** Complete. **Why:** G_025 found one instance and asked whether the class was isolated. It is not.
+- **Fingerprint:** a member or data field whose **name** claims a computation or verification verdict, whose **value**
+  is a literal, and which a **score, classification or test** then consumes.
+- **FINDING 1 (🔴) — THE QG VERDICT LADDER.** `QuantumGravityClosureAudit` (QG215), `QuantumGravityReclosureAudit`
+  (QG219), `QuantumGravityReclosureAudit2` (QG221) and `FinalQuantumGravityAudit` (QG223) used **identical method names**
+  (`IsQuantumMechanicsDerived`, `SamePrimitiveForBoth`, `IsSpacetimeEmergent`, `IsMatterEmergent`,
+  `EssentialComponentsOpen`) and differed only in literals — so the escalation **PARTIAL → EFFECTIVE → NEAR-COMPLETE →
+  COMPLETE was produced by editing `false` to `true`**. In QG221/QG223 the six **sub-scores were a separate set of typed
+  `1.0`s that never read the criteria**, so `TotalScore()` = 6.0 and `Classify()` = `"COMPLETE QG"` regardless; in
+  `QuantumGravityReclosureAudit2`, `IsSpacetimeEmergent() => false` coexisted with `SpacetimeSubScore() => 0.5`.
+  **The tests asserted the literals:** `ATQG_Phase215` asserts QM **not** derived; `ATQG_Phase219/221/223` assert QM
+  **is** derived — **all four pass.** `PsiIsNewPrimitive() => true` also contradicted G_024/QG285/QG286/QG292.
+- **FINDING 2 (🟠) — THE BORN RULE.** `TestAllAlphas()` typed `Survives`; `BuildRequirements()` typed the pass arrays
+  (`new[] { false, false, false, true, false, false }`); `AllRequirementsUniquelySatisfied(reqs, tests)` **accepted the
+  executed tests and never read them**. The old test `Count(p => p) != 1` on **every** row returned false
+  **unconditionally** — the factorization / orthogonality / additivity rows pass for **all six** exponents — so the
+  headline `"D: Mathematical Derivation — α = 2 is UNIQUELY selected"` was **DEAD CODE** and X037's real output was
+  `"C: Strong Theorem"`.
+- **FINDINGS 3–5.** RAR completion: **7 of 11** rows typed `Derived = true` with the literal label `"DERIVED ✓"`, then
+  counted by `scores.Count(s => s.Derived)`. `G`: genuinely computed in `NewtonConstantOrigin` (v·A³ → M_Pl →
+  G = ħc/m_Pl²) but duplicated as an **unchecked** literal in `FrameDraggingOrigin.G_D96` and `PhysicalUnits.G_SI`.
+  `EffectiveSizeLaw.IdentityHoldsAcrossGrid(feedback, damping)` declared the dynamics parameters, then called
+  `FamilyBandIdentity(n, K)` — silently answering for the **defaults**.
+- **THE FIX — VERDICTS UNCHANGED.** A new **`QgCriterion`** record (Name + Status None/Partial/Full + **mandatory cited
+  Basis**, **derived** Score) makes each criterion a whole value; every accessor, sub-score, total, classification and
+  progression is now a **function of the criteria table**; `AllBasesCited()` and `ClassificationFollowsFromCriteria()`
+  are checkable. **The derived ladder reproduces the historical rungs exactly:** **2.0 / 4.0 / 5.0 / 6.0 → PARTIAL /
+  EFFECTIVE / NEAR-COMPLETE / COMPLETE** QG. ψ is corrected to the canonical position (NOT a new primitive) with
+  `PsiWasCalledNewPrimitive()` preserving the historical record.
+- **THE α SCREEN, EXECUTED.** New `AlphaInvarianceScreen` — deterministic (normalized DFT + Givens at fixed angles,
+  no RNG), dims 2–5: `N(ψ) = Σ|ψ_i|^α` invariant under every unitary **iff α = 2**.
+
+  | α | outcome | max relative violation |
+  |---:|---|---:|
+  | 0.5 | BREAKS | 2.343702 |
+  | 1.0 | BREAKS | 1.236068 |
+  | 1.5 | BREAKS | 4.953488e−1 |
+  | **2.0** | **INVARIANT** | **2.220446e−16** |
+  | 3.0 | BREAKS | 5.527864e−1 |
+  | 4.0 | BREAKS | 8.000000e−1 |
+
+  `Survives` is now computed from it; **`RequirementEvidence`** splits **Computed (4)** from **Analytic (3)** — partial
+  trace, complexity additivity, linearity — and the classification discloses the split; the uniqueness test now
+  **uses its `tests` argument** and is reachable.
+- **RAR.** `CompletionEvidence` marks rows Computed/Authored; the three **limit rows are now computed** from
+  `g_obs = g_bar·√(1+g†/g_bar)`: Newtonian ratio **1.000000000** (at `g_bar = 1e12 g†`), deep-MOND ratio
+  **1.000000000** (at `g_bar = 1e−12 g†`).
+- **G CACHE.** `NewtonConstantOrigin.CacheAgreesWithComputation` / `CacheDiscrepancy`; computed
+  G = **6.64670e−11** — **0.014 %** from `G_D96`, **0.414 %** from CODATA.
+- **ROBUSTNESS DEFECT FOUND EN ROUTE.** The α selection compared **formatted number strings** (`"2.0"`), which is
+  **culture-dependent** — a comma-decimal culture would silently collapse the classification. Now `InvariantCulture`
+  plus a numeric comparison.
+- **DETECTORS.** 248 literal-bodied members feeding scores (of 1221 literal-bodied members); **16** members with
+  declared-but-unused parameters (decidable, not heuristic); **49** evidence-boolean literals at construction sites.
+- **VERIFIED NON-FINDINGS** (the fix does not over-reach): `ConservationPrincipleAudit.Laws()` and
+  `MajoranaOrigin.Checks()` pass **computed calls**; `TemporalWaveObservables.RoundTripTimeChange(L) => 0.0` and
+  `BreathingDifferentialStrain(h0) => 0.0` are documented analytic **null results**; `MetricOrigin.SqrtMinusG_Const` is
+  honestly named; `LightPropagation.LightSpeed(rho) => 1.0` is the c = 1 convention; `Anchor.IsTrueInput`,
+  `MeasurementClass.StructurallyUnique` and `SelectionPrincipleAudit.Rule.Derivable` are authored **input taxonomies**.
+- **BOUNDARY.** The criteria **statuses** are still the authored QG223 adjudication (restructured, not re-adjudicated);
+  **3 of 7** Born requirements remain **Analytic**; `(feedback, damping)` reach `HighEnergySectorStability` but do not
+  move the tested intra-sector spectrum (flagged, not claimed).
+- **Lesson recorded:** *a test that asserts a literal against itself is not evidence, and four passing suites can assert
+  mutually contradictory verdicts.* **8/8 PASSED** (group G total **218/218**); affected pre-existing suites
+  **390/390 PASSED**; no reclassification; D_040 untouched.
+
 ## Key Unsolved Problems
 
 1. Numerical values of ℓ, τ, ħ — empirical, not derived

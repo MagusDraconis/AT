@@ -40,6 +40,18 @@ public class ATQG_Phase221_QuantumGravityReclosureAuditTests : ResearchTestBase
 
         Output.WriteLine(sb.ToString());
 
+        // ResearchY-G_026: previously four restatements of hard-coded literals. `IsSpacetimeEmergent()`
+        // returned a literal false while `SpacetimeSubScore()` independently returned a literal 0.5, so the
+        // two could never disagree. Both are now derived from one criteria table.
+        Assert.True(QuantumGravityReclosureAudit2.AllBasesCited(), "every criterion must cite its evidence");
+        Assert.True(QuantumGravityReclosureAudit2.ClassificationFollowsFromCriteria(),
+            "the classification must follow from the criteria table");
+        Assert.True(QuantumGravityReclosureAudit2.SubScoresMatchCriteria(),
+            "sub-scores must be DERIVED from the criteria, never typed");
+        Assert.Equal(5.0, QuantumGravityReclosureAudit2.TotalScore(), 6);
+        Assert.Equal(QuantumGravityReclosureAudit2.SpacetimeSubScore(),
+            QuantumGravityReclosureAudit2.ScoreOf("spacetime emergent"), 12);
+        Assert.False(QuantumGravityReclosureAudit2.IsSpacetimeEmergent(), "spacetime is not yet fully emergent");
         Assert.True(QuantumGravityReclosureAudit2.IsQuantumMechanicsDerived(), "QM is now FULLY derived (QG216+218+220)");
         Assert.True(QuantumGravityReclosureAudit2.IsGravityDerived(), "gravity is derived");
         Assert.True(QuantumGravityReclosureAudit2.SamePrimitiveForBoth(), "both pillars share the network (ρ + circulation)");

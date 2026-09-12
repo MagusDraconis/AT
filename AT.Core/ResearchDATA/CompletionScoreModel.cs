@@ -10,7 +10,21 @@ public sealed record CompletionScore(
     bool EmpiricallyConsistent,
     int FreeParams,
     string Status,
-    string Notes);
+    string Notes,
+    CompletionEvidence Evidence = CompletionEvidence.Authored);
+
+/// <summary>
+/// How a completion-audit row's <c>Derived</c> verdict was obtained (ResearchY-G_026).
+/// <see cref="Computed"/> = produced by an executed check in this codebase;
+/// <see cref="Authored"/> = a recorded research judgement with no executable check behind it.
+/// Carried explicitly so that a typed verdict cannot be reported as a computed one — the table previously
+/// labelled seven hand-typed <c>true</c> rows "DERIVED ✓" and then counted them.
+/// </summary>
+public enum CompletionEvidence
+{
+    Computed,
+    Authored,
+}
 
 /// <summary>
 /// Aggregate explanatory completion audit.

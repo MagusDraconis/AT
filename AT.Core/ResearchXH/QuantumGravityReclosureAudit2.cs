@@ -46,59 +46,103 @@ namespace AT.Core.ResearchXH;
 public static class QuantumGravityReclosureAudit2
 {
     // ── 1. The six criteria (re-evaluated) ────────────────────────────────────
+    //
+    // ⚠ ResearchY-G_026. These were six bare `bool` literals. `IsSpacetimeEmergent()` returned false while
+    // `SpacetimeSubScore()` independently returned 0.5, so the two could never disagree in the tests. The
+    // criteria are now one QgCriterion table (section 2) and these accessors are DERIVED from it.
 
-    /// <summary>Is QM derived? YES, FULLY — magnitude (QG216) + phase (QG220) + complex structure (QG218) + measurement (QG74).</summary>
-    public static bool IsQuantumMechanicsDerived() => true;
+    // ── 2. Sub-scores (DERIVED from Criteria — never typed) ───────────────────
+    //
+    // ⚠ ResearchY-G_026. These were hard-coded literals (QmSubScore() => 1.0, SpacetimeSubScore() => 0.5,
+    // NoGapsSubScore() => 0.5) which did NOT read the criteria — so `IsSpacetimeEmergent()` could return
+    // false while `SpacetimeSubScore()` still returned 0.5, and the two could never disagree in the tests.
+    // Partial credit is now a declared QgStatus.Partial on the criterion itself, and the score is DERIVED.
 
-    /// <summary>Is gravity derived? Yes — QG181/207/209/213.</summary>
-    public static bool IsGravityDerived() => true;
-
-    /// <summary>Same primitive? Yes — both pillars derive from the network (ρ + the actualization circulation).</summary>
-    public static bool SamePrimitiveForBoth() => true;
-
-    /// <summary>Is spacetime emergent? Partially — metric derived (QG207), dynamics (BDG) imported (QG6).</summary>
-    public static bool IsSpacetimeEmergent() => false;
-
-    /// <summary>Is matter emergent? Yes — QG195/196/203-210.</summary>
-    public static bool IsMatterEmergent() => true;
-
-    /// <summary>Are essential components open? Partially — two gravity-sector items remain (metric dynamics, ψ origin).</summary>
-    public static bool EssentialComponentsOpen() => true;
-
-    // ── 2. Sub-scores (allow partial credit) ──────────────────────────────────
-
-    /// <summary>QM sub-score: 1.0 (fully derived).</summary>
-    public static double QmSubScore() => 1.0;
-
-    /// <summary>Gravity sub-score: 1.0.</summary>
-    public static double GravitySubScore() => 1.0;
-
-    /// <summary>Same-primitive sub-score: 1.0.</summary>
-    public static double SamePrimitiveSubScore() => 1.0;
-
-    /// <summary>Spacetime-emergent sub-score: 0.5 (metric derived, dynamics imported).</summary>
-    public static double SpacetimeSubScore() => 0.5;
-
-    /// <summary>Matter-emergent sub-score: 1.0.</summary>
-    public static double MatterSubScore() => 1.0;
-
-    /// <summary>No-gaps sub-score: 0.5 (phase origin resolved; 2 gravity-sector items remain).</summary>
-    public static double NoGapsSubScore() => 0.5;
-
-    /// <summary>The six sub-scores, labeled.</summary>
-    public static (string Criterion, double Score)[] SubScores() => new[]
+    /// <summary>The six QG closure criteria of this phase, each with its status and cited evidence.</summary>
+    public static QgCriterion[] Criteria() => new[]
     {
-        ("QM derived", QmSubScore()),
-        ("gravity derived", GravitySubScore()),
-        ("same primitive", SamePrimitiveSubScore()),
-        ("spacetime emergent", SpacetimeSubScore()),
-        ("matter emergent", MatterSubScore()),
-        ("no essential gaps", NoGapsSubScore()),
+        new QgCriterion("QM derived", QgStatus.Full,
+            "QG216 amplitude + QG218 complex structure + QG220 phase θ_k = 2πk/N"),
+        new QgCriterion("gravity derived", QgStatus.Full,
+            "QG181/207/209/213"),
+        new QgCriterion("same primitive", QgStatus.Full,
+            "gravity and |ψ|² both derive from ρ; the phase is the actualization circulation"),
+        new QgCriterion("spacetime emergent", QgStatus.Partial,
+            "metric structure derived (QG207) but the metric dynamics (BDG) is still imported (QG6) — partial"),
+        new QgCriterion("matter emergent", QgStatus.Full,
+            "QG195/196/203-210"),
+        new QgCriterion("no essential gaps", QgStatus.Partial,
+            "QG220 resolved the phase origin; two gravity-sector items remain (native metric dynamics, ψ origin) — partial"),
     };
 
-    /// <summary>Total score (0..6).</summary>
+    /// <summary>Does a named criterion hold outright? DERIVED from <see cref="Criteria"/>.</summary>
+    public static bool HoldsOf(string name)
+        => Criteria().Any(c => c.Name == name && c.Holds);
+
+    /// <summary>Is QM derived? DERIVED from <see cref="Criteria"/>.</summary>
+    public static bool IsQuantumMechanicsDerived() => HoldsOf("QM derived");
+
+    /// <summary>Is gravity derived? DERIVED from <see cref="Criteria"/>.</summary>
+    public static bool IsGravityDerived() => HoldsOf("gravity derived");
+
+    /// <summary>Same primitive? DERIVED from <see cref="Criteria"/>.</summary>
+    public static bool SamePrimitiveForBoth() => HoldsOf("same primitive");
+
+    /// <summary>Is spacetime emergent? DERIVED from <see cref="Criteria"/>.</summary>
+    public static bool IsSpacetimeEmergent() => HoldsOf("spacetime emergent");
+
+    /// <summary>Is matter emergent? DERIVED from <see cref="Criteria"/>.</summary>
+    public static bool IsMatterEmergent() => HoldsOf("matter emergent");
+
+    /// <summary>Are essential components still open? DERIVED from <see cref="Criteria"/>.</summary>
+    public static bool EssentialComponentsOpen() => !HoldsOf("no essential gaps");
+
+    /// <summary>QM sub-score — DERIVED from the criterion (Full = 1.0).</summary>
+    public static double QmSubScore() => ScoreOf("QM derived");
+
+    /// <summary>Gravity sub-score — DERIVED from the criterion.</summary>
+    public static double GravitySubScore() => ScoreOf("gravity derived");
+
+    /// <summary>Same-primitive sub-score — DERIVED from the criterion.</summary>
+    public static double SamePrimitiveSubScore() => ScoreOf("same primitive");
+
+    /// <summary>Spacetime-emergent sub-score — DERIVED: Partial (0.5), because the dynamics is imported.</summary>
+    public static double SpacetimeSubScore() => ScoreOf("spacetime emergent");
+
+    /// <summary>Matter-emergent sub-score — DERIVED from the criterion.</summary>
+    public static double MatterSubScore() => ScoreOf("matter emergent");
+
+    /// <summary>No-gaps sub-score — DERIVED: Partial (0.5), two gravity-sector items remain.</summary>
+    public static double NoGapsSubScore() => ScoreOf("no essential gaps");
+
+    /// <summary>The derived score of a named criterion (0 if unknown).</summary>
+    public static double ScoreOf(string name)
+        => Criteria().FirstOrDefault(c => c.Name == name)?.Score ?? 0.0;
+
+    /// <summary>The six sub-scores, labelled. Derived from <see cref="Criteria"/>.</summary>
+    public static (string Criterion, double Score)[] SubScores()
+        => Criteria().Select(c => (c.Name, c.Score)).ToArray();
+
+    /// <summary>Total score (0..6) — the sum of the derived per-criterion scores.</summary>
     public static double TotalScore()
-        => SubScores().Sum(s => s.Score);
+        => QgClosure.TotalScore(Criteria());
+
+    /// <summary>Do all criteria cite the phase audit carrying their evidence?</summary>
+    public static bool AllBasesCited() => QgClosure.AllBasesCited(Criteria());
+
+    /// <summary>Consistency self-check: the classification must FOLLOW from the criteria table.</summary>
+    public static bool ClassificationFollowsFromCriteria()
+        => QgClosure.ClassificationFollowsFromCriteria(Classify(), Criteria());
+
+    /// <summary>Are the sub-scores consistent with the criteria? (Asserts the decoupling is gone.)</summary>
+    public static bool SubScoresMatchCriteria()
+    {
+        var crit = Criteria();
+        var subs = SubScores();
+        return crit.Length == subs.Length
+               && crit.Zip(subs).All(p => p.First.Name == p.Second.Criterion
+                                          && Math.Abs(p.First.Score - p.Second.Score) < 1e-12);
+    }
 
     // ── 3. The deltas since QG215 / QG219 ─────────────────────────────────────
 
@@ -142,11 +186,11 @@ public static class QuantumGravityReclosureAudit2
         return "PARTIAL QG";
     }
 
-    /// <summary>The QG215/QG219/QG221 score progression.</summary>
+    /// <summary>The QG215/QG219/QG221 progression, each phase reporting its OWN derived total.</summary>
     public static (string Phase, string Status, double Score)[] Progression() => new[]
     {
-        ("QG215", "PARTIAL QG", 2.0),
-        ("QG219", "EFFECTIVE QG", 4.0),
-        ("QG221", "NEAR-COMPLETE QG", 5.0),
+        ("QG215", QuantumGravityClosureAudit.Classify(), QuantumGravityClosureAudit.TotalScore()),
+        ("QG219", QuantumGravityReclosureAudit.Classify(), QuantumGravityReclosureAudit.TotalScore()),
+        ("QG221", Classify(), TotalScore()),
     };
 }
