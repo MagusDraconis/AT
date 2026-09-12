@@ -194,9 +194,32 @@ public static class AdaptabilityAudit
     /// <summary>The D_057 blind set (two rank-budget rings), by name.</summary>
     public static readonly string[] BudgetRingNames = [.. BudgetRings.Select(r => r.Name)];
 
-    /// <summary>Every named ring the audit family knows: the canonical ring and the D_051–D_057 sets.</summary>
+    /// <summary>
+    /// D_058's scale-mirror rings. These carry EXACTLY D96's offset set, so their multiplicity
+    /// structure — and hence every count-based observable, capacity included — must be identical to
+    /// D96's. Only the overall WEIGHT SCALE differs, by a factor of 4 and of 1/4.
+    ///
+    /// They are built to separate a COUNT mechanism from a MAGNITUDE mechanism. Relative recovery
+    /// 1 − ‖λ′−λ‖/‖λ‖ is scale-invariant, so under the WEIGHT family (which rescales every edge in
+    /// proportion) these rings must reproduce D96's recovery exactly. Under delete/add/rewire, however,
+    /// one edge is removed or added at FIXED unit weight, so the same relative dose is a SMALLER
+    /// fractional change to a heavier graph — hence recovery should RISE for the 4× ring and FALL for
+    /// the 1/4× ring, while their capacities stay pinned to D96's.
+    /// </summary>
+    public static readonly (string Name, string Description, (int Offset, double Weight)[] Offsets)[] ScaleRings =
+    [
+        ("D96x4", "D96's offsets ±1..±6 at weight 4.0 (degree 12) — 4× the spectral scale",
+            [(1, 4.0), (2, 4.0), (3, 4.0), (4, 4.0), (5, 4.0), (6, 4.0)]),
+        ("D96x025", "D96's offsets ±1..±6 at weight 0.25 (degree 12) — 1/4 of the spectral scale",
+            [(1, 0.25), (2, 0.25), (3, 0.25), (4, 0.25), (5, 0.25), (6, 0.25)]),
+    ];
+
+    /// <summary>The D_058 blind set (two scale-mirror rings), by name.</summary>
+    public static readonly string[] ScaleRingNames = [.. ScaleRings.Select(r => r.Name)];
+
+    /// <summary>Every named ring the audit family knows: the canonical ring and the D_051–D_058 sets.</summary>
     private static readonly (string Name, string Description, (int Offset, double Weight)[] Offsets)[] AllRings =
-        [.. BlindRings, .. EdgeRings, .. MultiplicityRings, .. BudgetRings];
+        [.. BlindRings, .. EdgeRings, .. MultiplicityRings, .. BudgetRings, .. ScaleRings];
 
     /// <summary>The seven-ring family D_052 audits: the canonical ring plus the six blind rings.</summary>
     public static readonly string[] RingFamilyNames =
