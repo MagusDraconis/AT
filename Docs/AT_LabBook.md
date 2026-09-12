@@ -2076,11 +2076,11 @@ in the historical program counts below.
 | AT-QG | 182 | Complete |
 | **Total** | **289** | |
 
-## ResearchY G-Program — Gravity Source, Control, Magnitude, Calibration, Realizability, Mechanism, Origin, Controlled Suppression, Clock Rate, Time Control, Rho Actuator, Labor Rho, Local Rho Actuator, Physical Actuator, Physical Rho Mapping, Rho To Metric, Watch Ontology (17 audits, 2026-09-12)
+## ResearchY G-Program — Gravity Source, Control, Magnitude, Calibration, Realizability, Mechanism, Origin, Controlled Suppression, Clock Rate, Time Control, Rho Actuator, Labor Rho, Local Rho Actuator, Physical Actuator, Physical Rho Mapping, Rho To Metric, Watch Ontology, Mass Independence (18 audits, 2026-09-12)
 
-New ResearchY group **G — Gravity Source**. Suite: `AT.Tests/ResearchY/G_GravitySource/` (140/140 pass,
+New ResearchY group **G — Gravity Source**. Suite: `AT.Tests/ResearchY/G_GravitySource/` (147/147 pass,
 ~1 s); shared machinery `AT.Tests/Shared/DensityField.cs`, `PhysicalUnits.cs`, `RhoActuators.cs`.
-Detailed docs: `Docs/ResearchY/G_GravitySource/ResearchY-G_001.md` … `ResearchY-G_016.md`.
+Detailed docs: `Docs/ResearchY/G_GravitySource/ResearchY-G_001.md` … `ResearchY-G_016b.md`.
 
 ### G_001 — Gravity Source Audit
 **Status:** Complete. **SOURCE = the actualization density ρ** (counting measure), and for the attractive
@@ -2520,9 +2520,46 @@ identity, κ = 1) · occupation density = **CARRIER** (same read by counting) ·
 - **What this does to G_015:** the imported step was not "ρ needs energy" (false) but "the only laboratory
   handle on the metric is energy" (true) — now identified as the **rank-1 projection** of a 95-dim object.
 
-**App/Book surfaced:** AT.App Research News + Theory Book ("Gravity Source" part, seventeen chapters) +
-TestGroups (17 suites); AT.Book `GravityService` (17 executable calculations), seventeen theory objects
-(Physics layer) and seventeen audits g001–g016.
+### G_016b — Mass Independence Audit
+**Status:** Complete. Can two states share an energy but not a density, or a density but not an energy?
+**The three answers are not symmetric.** Measured `ΔE`, `Δρ`, `Δτ`.
+
+| direction | label | evidence |
+|---|---|---|
+| same `E`, different `ρ` | **INDEPENDENT** | kernel of `ρ ↦ E` on `{Σρ = 1}` is **94-dim** = **51** (degeneracy) + **43** (λ-mixing, built explicitly as `v = (1, −1.1255345008711273, 0.12553450087112727)` on cells 94/92/90 with `Σv = 0` and `⟨λ,v⟩ = 0` **exactly**) |
+| `E` given `ρ` | **DEPENDENT** | `E` is a **function** of ρ — one ρ, one E; independence is strictly one-directional |
+| same `ρ`, different `E` | **REFUTED** | the **same** uniform ρ = 1/96 gives `E = 2K` exactly for K = 1…6 (`Σλ = 192K`, A₀ = 49/47/45/47/45/45, `L1 = 0`); only the **BOUNDARY** capacity K (G_007) moves it |
+
+| witness | `ΔE` | `Δρ` | contrast | `Δτ/τ` |
+|---|---|---|---|---|
+| canonical tilt (within-multiplet) | **0** exactly | **0.6666666666666667** | **20 : 1** | **0.9985774245179969** = **86 277.089 s/day** |
+| pairwise m = 2, δ = 0.002 | −1.776e-15 | 0.004 | 1.4752 | 0.129609 |
+| pairwise m = 2, δ = 0.005 | −1.776e-15 | 0.010 | 2.8462 | 0.348656 |
+| λ-mixing, scale 0.004 | −1.776e-15 | 0.009004 | 2.437501 | 0.29699105 = 25 660.0263 s/day |
+
+**The fixed-energy family — why Δτ is UNBOUNDED.** Tilting each multiplet with fraction `f` on its first
+cell (`fr = 1` for m = 1) gives **exactly**
+
+```
+ΔE = 0 ,   contrast = 5f/(1−f)   (f ≥ 1/2) ,   L1(f) = (2/96)[42|2f−1| + |5f−1| + |6f−1|] ,
+Δτ/τ = (1/d) ln(5f/(1−f)) = T   ⇔   f = 1/(1 + 5 e^{−3T}) .
+```
+
+`f = 0.8 → 20 : 1` (the canonical `TiltFractions` **is** the 20 : 1 solution); `f = 0.9/0.99/0.999 →
+45/495/4995 : 1`; and since `L1 → 1.0625` while `ρ_min → 0` with `ΔE = 0` throughout, **no target clock
+separation is forbidden by energy conservation**. Only positivity and the G_005 band bound it
+(`T = 4.8867e-6` needs `f = 0.1666687028016166`, a 1.0000146602074598 : 1 contrast, 0.14073696 s/day realised
+against 0.04637376 s/day observed).
+
+- **Phase sector:** four phase assignments give `L1(|ψ|², ρ) < 2.5e-16`, `ΔE = 0` and `Δτ = 0` **exactly**,
+  while `|Σψ|` moves `0.03241962809423954 → 9.117182187865382` (**281.22414487183346×**, exactly G_011/G_014).
+- **Verdicts: INDEPENDENT** = same energy, different ρ · **DEPENDENT** = E is a function of ρ ·
+  **REFUTED** = same ρ, different energy as a state change.
+- **Independence is not symmetry:** ρ is independent *of* E while E is fully determined *by* ρ.
+
+**App/Book surfaced:** AT.App Research News + Theory Book ("Gravity Source" part, eighteen chapters) +
+TestGroups (18 suites); AT.Book `GravityService` (18 executable calculations), eighteen theory objects
+(Physics layer) and eighteen audits g001–g016b.
 
 ## Key Unsolved Problems
 

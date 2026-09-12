@@ -391,6 +391,24 @@ public sealed class GravityService : ICalculationService
                 "rho is MORE PRIMITIVE than mass-energy: rho and the spectrum lambda are siblings off the coupling lattice (capacity and occupancy) and E = <lambda, rho> is their rank-1 pairing on a 95-dimensional object, keeping only 1.0526 %. "
                 + "51 of the 94 discarded dimensions are energy-free BY DEGENERACY, so the canonical witness rearranges density with dE = 0 exactly while changing the clock ratio between its extreme cells by 2.7144176165949063. SOURCE = rho; CARRIER = the cellwise counting density (kappa = 1); "
                 + "BOOKKEEPING = E = <lambda, rho> (ResearchY-G_016)."),
+
+            new("mass-independence",
+                "Mass Independence — is rho free of E, or the reverse?",
+                "kernel of rho -> E on {Sigma rho = 1}: 94 = 51 (degeneracy) + 43 (lambda-mixing);  E = 2K",
+                [
+                    new("both directions", "same E different rho = INDEPENDENT; same rho different E = REFUTED", "E is a FUNCTION of rho: one rho, one E — independence is not symmetry"),
+                    new("51-dim degeneracy room", "lambda constant within a multiplet, so E is invariant by symmetry", "DeltaE = 0 exactly; the witness moves rho by L1 = 0.6666666666666667"),
+                    new("the witness", "contrast 20 : 1 at DeltaE = 0", "DeltaTau/tau = (1/d) ln 20 = 0.9985774245179969 = 86 277.089 s/day"),
+                    new("pairwise m = 2 moves", "DeltaRho = 2 delta exactly, DeltaE = 0", "delta = 0.002: contrast 1.4752, DeltaTau 0.129609; delta = 0.005: contrast 2.8462, DeltaTau 0.348656"),
+                    new("43-dim lambda-mixing room", "cells 94/92/90 with distinct lambda, <lambda,v> = 0 EXACTLY", "v = (1, -1.1255345008711273, 0.12553450087112727); at 0.004: DeltaRho = 0.009004, DeltaTau = 25 660.0263 s/day"),
+                    new("REFUTED: same rho, new E", "the SAME uniform rho = 1/96 gives E = 2K exactly for K = 1..6", "Sigma lambda = 192K; A0 = 49/47/45/47/45/45; L1(rho_K, rho_6) = 0; K is BOUNDARY (G_007)"),
+                    new("the phase sector is inert", "four phase assignments: DeltaE = 0 and DeltaTau = 0 exactly", "while |Sigma psi| moves 0.03241962809423954 -> 9.117182187865382 (281.22414487183346x)"),
+                    new("DeltaTau at fixed E is UNBOUNDED", "contrast = 5f/(1 - f) with DeltaE = 0; f = 1/(1 + 5 e^{-3T})", "L1 -> 1.0625, rho_min -> 0: no target separation is forbidden by energy conservation"),
+                    new("what bound it", "positivity and the G_005 Poisson band", "T = 4.8867e-6 needs f = 0.1666687028016166, contrast 1.0000146602074598"),
+                ],
+                "The two directions are not symmetric. rho is independent OF E (a 94-dimensional kernel: 51 by degeneracy plus 43 by lambda-mixing, both built explicitly) while E is fully determined BY rho. Holding rho fixed moves E only through the "
+                + "capacity: the same uniform rho gives E = 2K exactly for K = 1..6, and K is BOUNDARY. At fixed energy the clock separation a pattern can demand is UNBOUNDED (contrast = 5f/(1 - f) with DeltaE = 0 throughout); the canonical 20 : 1 tilt is exactly the f = 0.8 member. "
+                + "INDEPENDENT / DEPENDENT / REFUTED (ResearchY-G_016b)."),
         ];
     }
 
