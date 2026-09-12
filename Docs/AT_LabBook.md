@@ -2791,6 +2791,51 @@ Refines `G_021` (the `ψ` route is empty).
   postulate (cost: volume measure `1/ρ`) and the `ψ` route is empty · **REFUTED** = a *derived* `γ ≈ +1`, and
   the `ψ` completion (surface blueshift).
 - **No reclassification**; D_040 untouched; no canonical claim, value or equation changes; **no new primitive**; 7/7 PASSED.
+- ⚠ **CLOSED by `ResearchY-G_023`:** `γ` is controlled by ONE conformal invariant `k = B − A`, and AT
+  pins it to **zero from two independent directions** (clock law `A = σ`; counting measure `B = σ`), so no
+  existing primitive can move it — see the **`G_023`** entry below.
+
+### G_023 — Spatial Sector Closure Audit
+**Status:** Complete. **Question:** can **any** spatial metric be derived **without new primitives** yielding
+**`γ ≈ +1`** while preserving the **clock law**, the **source law** and the **acceleration law**?
+**Success criterion:** `γ ≈ +1` **without changing `g₀₀` physics**.  **Answer: NO** — one conformal invariant
+obstructs it, and AT's construction pins it to zero.  Closes `G_022`.
+- **The framework (isotropic form — where PPN `γ` is DEFINED):** `ds² = −e^(2A)dt² + e^(2B)(dR² + R²dΩ²)`,
+  `Φ = (e^(2A)−1)/2`, so **`γ = −(e^(2B)−1)/(e^(2A)−1) ≈ −1 + k/x`** with **`k := B − A`**. Exactly TWO
+  functions, ONE controlling number.
+- **`k` is the conformal invariant:** `g → Ω²g` shifts `A` and `B` by the same `ω`, so `k` is **unchanged** —
+  `k` is exactly the class data the causal-order → conformal-class step supplies. Conformal flatness means
+  `g = Ω²η`, i.e. `A = B`, i.e. `g_rr = −g₀₀` — which **is** `k = 0`. Hence
+  **conformal flatness ⇔ `k = 0` ⇔ `γ = −1` for EVERY `A`** (G_022's theorem, restated).
+- **AT pins `k = 0` twice.** Clock law `√(−g₀₀) = ρ^(1/d) = e^σ` ⇒ **`A = σ`**; counting measure
+  (the spatial volume **is** the count, `√(det g_ij) = ρ`) ⇒ `e^(3B) = ρ` ⇒ **`B = σ`**. Both express the
+  **same primitive** and pin their exponent to the **same scalar**, so **`k = 0` identically** and **`γ = −1`
+  at every compactness** (Earth −6.96133e−10, Sun −2.122503e−6, 1e−4, J0740+6620 −0.247002, all with
+  volume/ρ = 1.000000000). A theorem about AT's construction, not a coincidence.
+- **What `γ = +1` costs.** Keeping `A = σ` (**`g₀₀` physics unchanged**) and demanding `γ = +1`:
+  `e^(2B) = 2 − e^(2A)` ⇒ **`B = ½ln(2 − e^(−2x))`**, `k = 2x` to first order. The price: the spatial volume
+  `e^(3k)` = 1.000000 (Earth), 1.000013 (Sun), 1.000600 (x = 1e−4), **3.437585 at J0740+6620**
+  (B = 0.1645877, k = 0.4115897 against k_lin = 0.494004). **Changing the volume measure IS changing a primitive.**
+- **The primitive inventory — CLOSURE.** Q-event counts, `ρ`, `σ`, DiffuseStep `Λ = I − W`, the D96 lattice,
+  the spectral/`λ` structure and information content are **ALL SCALARS** — each fixes ONE function, and any
+  `δ = B − σ` breaks the volume by `e^(3δ)` and moves `γ` to `−1 + δ/x`. The **one non-scalar ingredient** is
+  the **causal ORDER**, which supplies the conformal CLASS — and **AT's order is the FLAT D96 ring order**
+  (96 cells → 45 eigenvalues, histogram `{1:1, 2:42, 5:1, 6:1}`, free room 51, versus the **degeneracy-free
+  random control's 96 distinct**), so its class is `[η]` and `k = 0`. The complement candidates for a natural
+  `1/ρ` are all **constants** (51/95 = 0.536842, the 95 → 44 → 1 chain = 2.159091, 3.746e5, 1152) and
+  **none matches `1/ρ` at any compactness**. **NO EXISTING PRIMITIVE CAN MOVE `k`.**
+- **The success criterion, split.** Half one **IS satisfiable** (`A = σ` kept exactly — the three laws and
+  `z_AT = 0.2801817` untouched, they are `γ`-blind); half two is **NOT** — `γ = −1` is forced and excluded
+  (Cassini **8.6957e4** / VLBA 6.6660e3 / Gaia 124.8125 σ) while `γ = +1` needs `k = 2x` and would pass
+  (0.9130 / 0.6667 / 0.1875 σ); flat space (`γ = 0`) is REFUTED too (4.3479e4 / 3.3327e3 / 62.3125 σ).
+- **Verdicts: DERIVED** = the closure identity `γ = −1 + k/x` · `k` as the conformal invariant · conformal flatness
+  ⇔ `k = 0` · the two native conditions pinning `A` and `B` to the same `σ` · the exact `γ = +1` solution ·
+  **BOUNDARY** = the single scalar of class data that would do it (`k = 2x`, the volume becoming `1/ρ`, a factor
+  3.437585), supplying it a **new primitive**, with `ψ` **empty** (G_022) and the class **imported** (Malament) ·
+  **REFUTED** = any spatial metric from AT's existing primitives giving `γ ≈ +1` while preserving the three laws,
+  and both the conformal sector and flat space.
+- **No reclassification**; D_040 untouched; no canonical claim, value or equation changes; **no new primitive**;
+  `G_021`/`G_022` stand; 7/7 PASSED.
 
 ## Key Unsolved Problems
 
