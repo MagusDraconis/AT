@@ -330,6 +330,26 @@ public sealed class TheoryRegistry
             CalculationId: "physical-actuator",
             References: ["ResearchY-G_013", "ResearchY-G_012", "ResearchY-G_011b"],
             AuditIds: ["g013"]),
+        new("rho-mapping", "Rho Mapping", "The measurable ρ analogue: the diagonal occupation (probability) density — the unique κ = 1 observable, whose counting noise IS the theory's own Poisson band.",
+            TheoryLayer.Physics, TheoryClassification.Derived, TheoryObjectKind.Derivation,
+            ["physical-actuator", "gravity-source"],
+            Narrative: "Which measurable laboratory quantity corresponds to ρ? THE MAPPING CRITERION: q = F(ρ) is a ρ analogue iff it is positive cellwise, normalised (Σq = 1), AFFINE — κ = d ln q/d ln ρ constant, because both the relaxation W and the "
+                + "G_013 stencil (I − W) are LINEAR — and CELLWISE (so it carries the gradient). THE AFFINE TEST IS DECISIVE: for q = ρ^κ the flow error ‖F⁻¹WF(ρ) − Wρ‖ and the actuator error ‖(I − W)F(ρ) − F′(ρ)(I − W)ρ‖ are BOTH EXACTLY ZERO "
+                + "at κ = 1 and nonzero otherwise (κ = 0.5: actuator 3.229213; κ = 2: flow 1.047221e-2, actuator 4.668155e-2; κ = 3: flow 1.724505e-2, actuator 4.822371e-3), with the recovered clock factor exactly 1/κ. PHYSICAL: (1) the PROBABILITY "
+                + "DENSITY — q = |ψ|² with ψ_j = √ρ_j e^{iθ_j} (QG220) IS ρ (L1 = 2.484991379e-16), so κ = 1 exactly and the map is the identity: the source law a = −(1/d)∇ln q (max|a| = 0.6031746), the clock law Δln q/d, the G_013 stencil (I − W)q "
+                + "and the G_007 suppression (33.7781483) all hold identically, and it is the only candidate carrying the ψ-sector (phase); (2) the OCCUPATION DENSITY — the counting face, also κ = 1, whose OWN SHOT NOISE IS the theory's Poisson law: "
+                + "⟨N⟩ = 1.6102e-6⁻² = 3.856917553651e11 counts per cell gives δ = 1/√⟨N⟩ = 1.610200e-6 (exactly the observed galactic contrast), a 1 % ceiling of 4.886722e-6 (exactly G_005's accessible band) and P(observed) = 0.6065. CORRELATED: "
+                + "(3) the MODE POPULATION — the DCT of the reversal multiplies mode k by (−1)^k, so the POWER SPECTRUM IS INVARIANT (max |Δ|w_k|| = 4.1598669e-15, total spectral energy ratio 1.0000000000000018) while the arrangements are physically "
+                + "opposite (max|Δa| = 0.8864864874, acceleration correlation ≈ 0.10): it reproduces the suppression and gives G_013's modal-gain view but is nonlocal; (4) the ENERGY DENSITY — a SPECTRALLY WEIGHTED re-expression: the D96 weight has a "
+                + "(numerically) ZERO mode, so ε = λ·ρ vanishes there and ln ε is undefined, and with a positive weight (1 + λ/λ_max ∈ [1,2]) the flow commutation defect is 3.7873408e-4 against a reference 2.0916667e-2 (1.81 %) with the implied clock "
+                + "factor spread over [0.5689248, 1.1378497]; non-injective (fixed-energy fibre 94); G_001's verdict stands. REFUTED: (5) the INFORMATION DENSITY — a GLOBAL, permutation-invariant functional (ΔKL = 0 exactly under a roll while L1 = "
+                + "0.6583333 and the field moves 1.0031746), zero at the uniform measure; (6) the COHERENCE DENSITY — the ψ-sector: a phase change moves the coherent sum by 281.2241449× at L1(ρ,|ψ|²) = 2.5e-16 and |Δa| < 1e-9, exactly ρ-inert. "
+                + "CRITICAL ANSWER: the first experimentally measurable ρ analogue is the DIAGONAL OCCUPATION (PROBABILITY) DENSITY q_i (site-resolved imaging, photon counting, mode-resolved population; κ = 1 exactly); the readable contrast floor is "
+                + "1/√⟨N⟩ = 1.6102e-6 = 46.374 ms/day of clock depth (G_009's galactic cross-check), and the residual gap is the IDENTIFICATION premise — the metric coupling G_011b showed is not borrowed.",
+            Formula: "kappa = d ln q / d ln rho = 1;  delta = 1/sqrt(<N>) = 1.6102e-6;  P = exp(-<N> Delta^2/2)",
+            CalculationId: "rho-mapping",
+            References: ["ResearchY-G_014", "ResearchY-G_005", "ResearchY-G_009"],
+            AuditIds: ["g014"]),
 
         // ── Layer 5 — Correspondence ───────────────────────────────────────────
         new("thermodynamics", "Thermodynamics", "An added occupancy layer over the structural modes (temperature is BOUNDARY).",
@@ -952,5 +972,24 @@ public sealed class TheoryRegistry
             + "character: they hold a configuration, they do not create one. No reclassification (D_040 untouched); no canonical claim, value or equation changes; no new primitive.",
             AuditStatus.Passed, new DateTime(2026, 9, 12), TheoryLayer.Physics, TheoryClassification.Partial,
             ["g006", "g007", "g008", "g011b", "g012"]),
+        new("g014", "Physical Rho Mapping Audit", "What measurable laboratory quantity corresponds to rho?",
+            "THE MAPPING CRITERION: q = F(rho) is a rho analogue iff it is (A1) positive cellwise, (A2) normalised (Sigma q = 1), (A3) AFFINE — kappa = d ln q/d ln rho constant, because both the relaxation W and the "
+            + "G_013 stencil are LINEAR — and (A4) CELLWISE (so it carries the gradient). THE AFFINE TEST IS DECISIVE: for q = rho^kappa the flow error ||F^-1 W F(rho) - W rho|| and the actuator error "
+            + "||(I - W)F(rho) - F'(rho)(I - W)rho|| are BOTH EXACTLY ZERO at kappa = 1 and nonzero otherwise (kappa = 0.5: actuator 3.229213; kappa = 2: flow 1.047221e-2, actuator 4.668155e-2; kappa = 3: flow "
+            + "1.724505e-2, actuator 4.822371e-3), with the recovered clock factor exactly 1/kappa. PHYSICAL: (1) the PROBABILITY DENSITY — q = |psi|^2 with psi_j = sqrt(rho_j) e^{i theta_j} (QG220) IS rho "
+            + "(L1 = 2.484991379e-16), so kappa = 1 exactly and the map is the identity: the source law a = -(1/d) grad ln q (max|a| = 0.6031746), the clock law Delta ln q/d, the G_013 stencil (I - W)q and the "
+            + "G_007 suppression (33.7781483) all hold identically, and it is the only candidate carrying the psi-sector; (2) the OCCUPATION DENSITY — the counting face, also kappa = 1, whose OWN SHOT NOISE IS the theory's Poisson law: "
+            + "<N> = 1.6102e-6^-2 = 3.856917553651e11 counts per cell gives delta = 1/sqrt(<N>) = 1.610200e-6 (exactly the observed galactic contrast), a 1 % ceiling of 4.886722e-6 (exactly G_005's accessible band) "
+            + "and P(observed) = 0.6065. CORRELATED: (3) the MODE POPULATION — the DCT of the reversal multiplies mode k by (-1)^k, so the POWER SPECTRUM IS INVARIANT (max |Delta|w_k|| = 4.1598669e-15, total spectral "
+            + "energy ratio 1.0000000000000018) while the arrangements are physically opposite (max|Delta a| = 0.8864864874, acceleration correlation about 0.10): it reproduces the suppression and gives G_013's modal-gain view but is "
+            + "nonlocal; (4) the ENERGY DENSITY — a SPECTRALLY WEIGHTED re-expression: the D96 weight has a (numerically) ZERO mode, so eps = lambda rho vanishes there and ln eps is undefined, and with a positive weight "
+            + "(1 + lambda/lambda_max in [1,2]) the flow commutation defect is 3.7873408e-4 against a reference 2.0916667e-2 (1.81 %) with the implied clock factor spread over [0.5689248, 1.1378497]; non-injective (fibre 94); "
+            + "G_001's verdict stands. REFUTED: (5) the INFORMATION DENSITY — a GLOBAL, permutation-invariant functional (Delta KL = 0 exactly under a 37-cell roll while L1 = 0.6583333 and the field moves 1.0031746), zero at the "
+            + "uniform measure; (6) the COHERENCE DENSITY — the psi-SECTOR: a phase change moves the coherent sum by 281.2241449x at L1(rho, |psi|^2) = 2.5e-16 and |Delta a| < 1e-9, exactly rho-inert. CRITICAL ANSWER: the first "
+            + "experimentally measurable rho analogue is the DIAGONAL OCCUPATION (PROBABILITY) DENSITY q_i (site-resolved imaging, photon counting, mode-resolved population; kappa = 1 exactly); the readable contrast floor is "
+            + "1/sqrt(<N>) = 1.6102e-6 = 46.374 ms/day of clock depth (G_009's galactic cross-check), and the residual gap is the IDENTIFICATION premise — the metric coupling G_011b showed is not borrowed. No reclassification "
+            + "(G_001's labels unchanged); D_040 untouched; no canonical claim, value or equation changes; no new primitive.",
+            AuditStatus.Passed, new DateTime(2026, 9, 12), TheoryLayer.Physics, TheoryClassification.Derived,
+            ["g001", "g003", "g005", "g009", "g011", "g011b", "g013"]),
     ];
 }

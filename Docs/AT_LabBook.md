@@ -2076,11 +2076,11 @@ in the historical program counts below.
 | AT-QG | 182 | Complete |
 | **Total** | **289** | |
 
-## ResearchY G-Program — Gravity Source, Control, Magnitude, Calibration, Realizability, Mechanism, Origin, Controlled Suppression, Clock Rate, Time Control, Rho Actuator, Labor Rho, Local Rho Actuator, Physical Actuator (14 audits, 2026-09-12)
+## ResearchY G-Program — Gravity Source, Control, Magnitude, Calibration, Realizability, Mechanism, Origin, Controlled Suppression, Clock Rate, Time Control, Rho Actuator, Labor Rho, Local Rho Actuator, Physical Actuator, Physical Rho Mapping (15 audits, 2026-09-12)
 
-New ResearchY group **G — Gravity Source**. Suite: `AT.Tests/ResearchY/G_GravitySource/` (117/117 pass,
+New ResearchY group **G — Gravity Source**. Suite: `AT.Tests/ResearchY/G_GravitySource/` (126/126 pass,
 ~1 s); shared machinery `AT.Tests/Shared/DensityField.cs`, `PhysicalUnits.cs`, `RhoActuators.cs`.
-Detailed docs: `Docs/ResearchY/G_GravitySource/ResearchY-G_001.md` … `ResearchY-G_013.md`.
+Detailed docs: `Docs/ResearchY/G_GravitySource/ResearchY-G_001.md` … `ResearchY-G_014.md`.
 
 ### G_001 — Gravity Source Audit
 **Status:** Complete. **SOURCE = the actualization density ρ** (counting measure), and for the attractive
@@ -2418,9 +2418,35 @@ DiffuseStep, no imported primitive). **The first ACTUATOR in the group** — and
   the band-top **smooth** profile costs ΔH = **0.0** (thermodynamically free).
 - **Resolution:** `q ≤ 1.0416667e-10` count units for 1 % of ρ̄ over 1e6 steps (~17 bits of 1/96).
 
-**App/Book surfaced:** AT.App Research News + Theory Book ("Gravity Source" part, fourteen chapters) +
-TestGroups; AT.Book `GravityService` (14 executable calculations), fourteen theory objects (Physics layer) and
-fourteen audits g001–g013.
+### G_014 — Physical Rho Mapping Audit
+**Status:** Complete. Which measurable quantity **is** ρ? The four requirements reduce to four structural
+conditions: **positive, normalised, AFFINE (κ = 1) and cellwise** — because the relaxation `W` and the G_013
+stencil are **linear**.
+
+| κ | flow error | actuator error | clock factor |
+|---|---|---|---|
+| 0.5 | 6.661085e-3 | 3.229213 | 2.0000 |
+| **1.0** | **0.0** | **0.0** | **1.0000** |
+| 2.0 | 1.047221e-2 | 4.668155e-2 | 0.5000 |
+| 3.0 | 1.724505e-2 | 4.822371e-3 | 0.3333 |
+
+| candidate | **verdict** | key evidence |
+|---|---|---|
+| **probability density** | **PHYSICAL** | `q = \|ψ\|²` **is** ρ to **2.484991379e-16** (κ = 1 exactly): source law (max\|a\| = 0.6031746), clock law, G_013 stencil and the **33.7781483** suppression all identical; carries the phase sector |
+| **occupation density** | **PHYSICAL** | κ = 1 and its **shot noise IS the band**: ⟨N⟩ = **3.856917553651e11**, δ = **1.610200e-6** = the observed contrast, 1 % ceiling **4.886722e-6** = G_005's band, P = 0.6065 |
+| mode population | **CORRELATED** | power spectrum **reversal-invariant** (4.1598669e-15, energy ratio 1.0000000000000018) while `max\|Δa\| = 0.8864864874` (correlation ≈ 0.10) — spectrally blind |
+| energy density | **CORRELATED** | zero weight mode ⇒ ε = 0 and ln ε undefined; with a positive weight the commutation defect is **3.7873408e-4 vs 2.0916667e-2 (1.81 %)** with clock factor spread **[0.5689248, 1.1378497]** |
+| information density | **REFUTED** | global, permutation-invariant: ΔKL = 0 while the field moves 1.0031746 |
+| coherence density | **REFUTED** | the ψ-sector: **281.2241449×** at L1(ρ,\|ψ\|²) = 2.5e-16 — exactly ρ-inert |
+
+- **Critical answer:** the first measurable ρ analogue is the **diagonal occupation (probability) density**.
+  Recipe: normalise the counts → `ln q` → `a = −(1/d)∇ln q` → `Δτ/τ = Δln q/d` → hold with `(I − W)q`.
+  Readable floor `1/√⟨N⟩ = 1.6102e-6` = **46.374 ms/day** of clock depth. The residual gap is the
+  **identification premise** (G_011b's un-borrowed metric coupling).
+
+**App/Book surfaced:** AT.App Research News + Theory Book ("Gravity Source" part, fifteen chapters) +
+TestGroups; AT.Book `GravityService` (15 executable calculations), fifteen theory objects (Physics layer) and
+fifteen audits g001–g014.
 
 ## Key Unsolved Problems
 

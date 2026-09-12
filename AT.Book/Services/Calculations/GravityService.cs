@@ -338,6 +338,22 @@ public sealed class GravityService : ICalculationService
                 ],
                 "The stencil is a negative Laplacian (anti-diffusion) and a balanced pump-and-drain, so a feedback controller or a nearest-neighbour negative conductance (NIC) realizes it exactly (PHYSICAL). A node-wise gain "
                 + "and a band-limited resonator bank are only ANALOGUE, and a pump/loss balance is REFUTED. Exactness is the binding constraint, while power is ten orders below any electronic floor (ResearchY-G_013)."),
+
+            new("rho-mapping",
+                "Rho Mapping — what do you actually measure?",
+                "kappa = d ln q / d ln rho = 1;  delta = 1/sqrt(<N>) = 1.6102e-6;  P = exp(-<N> Delta^2/2)",
+                [
+                    new("criterion", "q = F(rho) must be positive, normalised, AFFINE and cellwise", "W and the G_013 stencil are LINEAR, so only kappa = 1 commutes"),
+                    new("affine test", "flow and actuator errors are EXACTLY 0 at kappa = 1", "kappa = 0.5: 3.229213; kappa = 2: 1.047221e-2; kappa = 3: 1.724505e-2"),
+                    new("PHYSICAL", "probability density: |psi|^2 IS rho (2.484991379e-16)", "source law, clock law, actuator and 33.7781483x suppression hold identically"),
+                    new("PHYSICAL", "occupation density: its shot noise IS the band", "<N> = 3.856917553651e11, delta = 1.610200e-6, ceiling 4.886722e-6, P = 0.6065"),
+                    new("CORRELATED", "mode population: reversal-invariant power spectrum (4.1598669e-15)", "while max|Delta a| = 0.8864864874 (correlation 0.10): spectrally blind"),
+                    new("CORRELATED", "energy density: a zero weight mode makes eps = 0", "commutation defect 1.81 %; clock factor spread [0.5689248, 1.1378497]"),
+                    new("REFUTED", "information density (global), coherence density (psi-sector)", "Delta KL = 0 under a roll; a 281.2241449x phase change at Delta rho = 0"),
+                    new("critical answer", "the diagonal occupation (probability) density", "floor 1.6102e-6 = 46.374 ms/day of clock depth; only the identification premise remains"),
+                ],
+                "Six candidates against four requirements reduce to four structural conditions (positive, normalised, AFFINE, cellwise). The diagonal occupation (probability) density is the first measurable rho analogue: kappa = 1 exactly, its shot noise IS "
+                + "G_005's Poisson band, and its readable floor is 46.374 ms/day of clock depth. The mode population and energy density are CORRELATED, the information and coherence densities REFUTED (ResearchY-G_014)."),
         ];
     }
 
