@@ -2076,11 +2076,11 @@ in the historical program counts below.
 | AT-QG | 182 | Complete |
 | **Total** | **289** | |
 
-## ResearchY G-Program — Gravity Source, Control, Magnitude, Calibration, Realizability, Mechanism, Origin, Controlled Suppression, Clock Rate, Time Control, Rho Actuator, Labor Rho, Local Rho Actuator, Physical Actuator, Physical Rho Mapping, Rho To Metric, Watch Ontology, Mass Independence, Metric Coupling, Rho Identity, Second-Order Signature (21 audits, 2026-09-12)
+## ResearchY G-Program — Gravity Source, Control, Magnitude, Calibration, Realizability, Mechanism, Origin, Controlled Suppression, Clock Rate, Time Control, Rho Actuator, Labor Rho, Local Rho Actuator, Physical Actuator, Physical Rho Mapping, Rho To Metric, Watch Ontology, Mass Independence, Metric Coupling, Rho Identity, Second-Order Signature, Neutron-Star Redshift (22 audits, 2026-09-12)
 
-New ResearchY group **G — Gravity Source**. Suite: `AT.Tests/ResearchY/G_GravitySource/` (168/168 pass,
+New ResearchY group **G — Gravity Source**. Suite: `AT.Tests/ResearchY/G_GravitySource/` (175/175 pass,
 ~1 s); shared machinery `AT.Tests/Shared/DensityField.cs`, `PhysicalUnits.cs`, `RhoActuators.cs`.
-Detailed docs: `Docs/ResearchY/G_GravitySource/ResearchY-G_001.md` … `ResearchY-G_019.md`.
+Detailed docs: `Docs/ResearchY/G_GravitySource/ResearchY-G_001.md` … `ResearchY-G_020.md`.
 
 ### G_001 — Gravity Source Audit
 **Status:** Complete. **SOURCE = the actualization density ρ** (counting measure), and for the attractive
@@ -2662,9 +2662,48 @@ at x = −0.15). At `x = 1e-9` the true difference (1e-18) is **below one ulp of
   absolute-depth anchor `x = GM/(Rc²)` (imported M, R, z) and the g₀₀-only reach · **REFUTED** = the weak-field
   route as a discriminator.
 
-**App/Book surfaced:** AT.App Research News + Theory Book ("Gravity Source" part, twenty-one chapters) +
-TestGroups (21 suites); AT.Book `GravityService` (21 executable calculations), twenty-one theory objects
-(Physics layer) and twenty-one audits g001–g019.
+### G_020 — Neutron-Star Redshift Audit
+**Status:** Complete. Can any **currently measured** NS redshift exclude AT's exponential clock law? **ALLOWED** —
+and the reason is **structural**: the binding constraint is the **mass–radius precision, not the redshift**.
+
+```
+z_AT = e^x − 1 ,  z_GR = (1 − 2x)^(−1/2) − 1 ,  Δz = z_GR − z_AT > 0 ,  x = GM/(Rc²)
+S = Δz / √( σ_z² + (dz/dx)² σ_x² ) ,   dz/dx|_GR = (1 − 2x)^(−3/2)
+```
+
+**Max significance with a PERFECT redshift (`σ_z = 0`)** — the decisive result:
+
+| object | M ± δM | R ± δR | x | σ_x/x | `(dz/dx)σ_x` | **max S** |
+|---|---|---|---|---|---|---|
+| J0030+0451 (Riley 2019) | 1.34 ± 0.16 | 13.02 ± 1.24 km | 0.152011 | 21.46 % | 0.056195 | 0.614 |
+| J0030+0451 (Miller 2019) | 1.44 ± 0.15 | 13.02 ± 1.06 km | 0.163355 | 18.56 % | 0.054873 | 0.752 |
+| **J0740+6620 (Riley 2021)** | **2.072 ± 0.067** | **12.39 ± 1.30 km** | **0.247002** | **13.73 %** | **0.094193** | **1.334** |
+| J0740+6620 (Miller 2021) | 2.08 ± 0.07 | 13.70 ± 2.60 km | 0.224246 | 22.34 % | 0.122334 | 0.778 |
+| generic (G_019 object) | 1.4 ± 0.05 | 12.00 ± 1.00 km | 0.172317 | 11.90 % | 0.038665 | 1.221 |
+
+**No object reaches even 2σ with a perfect redshift**: `(dz/dx)σ_x` exceeds `Δz/2`, `Δz/3` and `Δz/5` for every
+one — so **no `z` precision whatsoever reaches 3σ, let alone 5σ**.
+
+- **ALLOWED** — a representative `z = 0.30` with a 20 % systematic (`σ_z = 0.06`) gives AT **1.17 / 1.55 / 1.87σ**
+  at R = 10 / 11 / 12 km (M = 1.4) and **0.33σ** at 2.072 M☉/12.39 km (against GR's 1.76σ); inside 1σ throughout
+  with a 50 % systematic. GR is also allowed, so at this precision there is **no discrimination**.
+- **EXCLUDED is not achievable** — max 1.334σ with a perfect `z`; the current M/R forbids it outright.
+- **PREFERRED — not supported** — the nominal AT-favoured ratio **4.483** (J0740+6620 with `z = 0.30 ± 0.06`)
+  **flips sign** across the plausible grid (**1.718 → 0.068**), only **1 of 9** grid points favours AT, and the
+  data lean **toward GR** for `R ≥ 11 km`. The preference is an artefact of borrowing one object's `z` for another's `x`.
+- **The radius inversion**: a measured `z` demands a **smaller** radius under AT — 0.20 → 11.342 vs 13.535 km;
+  0.30 → 7.881 vs 10.129 km; **0.35 → 6.890 vs 9.164 km (−24.81 %)**.
+- **The dangerous case**: the **unconfirmed** `z = 0.35` of EXO 0748−676 excludes **both** laws at R = 11 km
+  (`z_AT = 0.206812`, `z_GR = 0.265888`) — it only demands a smaller radius.
+- **CRITICAL — 5σ requires BOTH** (J0740+6620, Riley): `σ_x/x ≤ 3.661 %` (perfect `z`) **or**
+  `σ_z ≤ 0.025125 = 8.97 % of z_AT` (perfect M/R) **or** the equal split `σ_x/x ≤ 2.589 %` **and**
+  `σ_z ≤ 0.017766 = 6.34 % of z_AT` → **3.75–5.30× better M/R plus 3.2–7.9× better z, won jointly**.
+- **The structural lesson:** the deficit is in the **error budget**, not the signal (`Δz = 0.1256` is large in
+  absolute terms) — **the bottleneck is the weighing, not the spectroscopy**.
+
+**App/Book surfaced:** AT.App Research News + Theory Book ("Gravity Source" part, twenty-two chapters) +
+TestGroups (22 suites); AT.Book `GravityService` (22 executable calculations), twenty-two theory objects
+(Physics layer) and twenty-two audits g001–g020.
 
 ## Key Unsolved Problems
 

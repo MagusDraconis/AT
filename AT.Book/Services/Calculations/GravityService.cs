@@ -466,6 +466,26 @@ public sealed class GravityService : ICalculationService
                  "OP1 answer: YES - an audit that imports measured constants and SURVIVES. The signature AT/GR = 1 + x^2 - (4/3)x^3 makes the weak-field route useless (2.1x to 3.3e6x short at four imported depths) and makes the neutron-star redshift the only live test, where "
                  + "the divergence is 17-31 % but the current significance is only 1.033 sigma; 3 sigma needs sigma_z = 8.37 % of z_AT, i.e. 2.4x-6.0x beyond current measurements. The largest discrepancy (no horizon, where GR's z diverges) is g00-only and therefore untestable within AT. "
                  + "DERIVED / BOUNDARY / REFUTED (ResearchY-G_019)."),
+
+            new("neutron-star-redshift",
+                 "Neutron-Star Redshift — can any measured value decide it?",
+                 "z_AT = e^x - 1 vs z_GR = (1-2x)^(-1/2) - 1;  max S with perfect z = 1.334;  5 sigma: sigx/x <= 2.589 % and sz <= 0.017766",
+                 [
+                     new("the framework", "x = GM/(Rc^2); S = Dz / sqrt(sz^2 + (dz/dx)^2 sx^2), dz/dx = (1-2x)^(-3/2)", "AT always predicts the SMALLER redshift; the midpoint decides which law is closer"),
+                     new("the error budget is binding", "max significance with a PERFECT redshift (sz = 0)", "J0030 (Riley) 0.614; J0030 (Miller) 0.752; J0740 (Riley) 1.334; J0740 (Miller) 0.778; generic 1.221"),
+                     new("no object reaches 2 sigma", "(dz/dx) sx exceeds Dz/2, Dz/3 and Dz/5 for every object", "so no redshift precision whatsoever can reach 3 sigma, let alone 5 sigma"),
+                     new("ALLOWED", "a representative z = 0.30 with a 20 % systematic (sz = 0.06)", "AT inside 2.5 sigma everywhere, 0.33 sigma at 2.072 Msun/12.39 km; GR also allowed, so no discrimination"),
+                     new("PREFERRED - NOT supported", "ln LR(AT/GR) at sz = 0.05 runs 1.718 down to 0.068 across the grid", "only 1 of 9 grid points favours AT; data lean toward GR for R >= 11 km"),
+                     new("why the apparent preference dissolves", "it borrows one object's redshift for another object's compactness", "the z values are not measured on the NICER objects at all"),
+                     new("the radius inversion", "a measured z demands a SMALLER radius under AT (M = 1.4 Msun)", "z = 0.35 gives 6.890 km vs GR's 9.164 km (-24.81 %); z = 0.20 gives 11.342 vs 13.535 km"),
+                     new("the dangerous case", "EXO 0748-676 z = 0.35 (Cottam 2002, UNCONFIRMED)", "at M = 1.4, R = 11 km: z_AT = 0.206812 vs z_GR = 0.265888, so 0.35 excludes BOTH laws"),
+                     new("CRITICAL - 5 sigma", "J0740+6620 (Riley): sx/x <= 3.661 % (perfect z) OR sz <= 0.025125 = 8.97 % of z_AT", "or the equal split sx/x <= 2.589 % AND sz <= 0.017766 = 6.34 % of z_AT"),
+                     new("the improvement needed", "against today's 13.73 % M/R", "3.75x to 5.30x better in sigma_x/x PLUS 3.2x to 7.9x better in sigma_z, WON JOINTLY"),
+                     new("the structural lesson", "the deficit is in the ERROR BUDGET, not the signal", "Dz = 0.1256 is large in absolute terms; it is sigma_x that keeps the test out of reach"),
+                 ],
+                 "ALLOWED: no current neutron-star redshift excludes AT (inside 2.5 sigma everywhere, 0.33 sigma for the most compact). EXCLUDED is not achievable - the maximum significance with a PERFECT redshift is 1.334 sigma, so no z precision reaches even 3 sigma on today's M/R. "
+                 + "PREFERRED is not supported - the at-favoured ratio 4.483 flips sign across the plausible grid (down to 0.068) and only 1 of 9 grid points favours AT. 5 sigma needs sigma_x/x <= 2.589 % AND sigma_z <= 0.017766 (6.34 % of z_AT) jointly: 3.75-5.30x and 3.2-7.9x better. "
+                 + "The bottleneck is the weighing, not the spectroscopy. EXCLUDED / ALLOWED / PREFERRED (ResearchY-G_020)."),
         ];
     }
 
