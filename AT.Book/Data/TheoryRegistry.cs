@@ -312,6 +312,24 @@ public sealed class TheoryRegistry
             CalculationId: "local-actuator",
             References: ["ResearchY-G_012", "ResearchY-G_008", "ResearchY-G_011"],
             AuditIds: ["g012"]),
+        new("physical-actuator", "Physical Actuator", "The stencil is a negative Laplacian (anti-diffusion, d = 0.2) and a balanced pump-and-drain; a feedback controller or an NIC realizes it, and exactness — not power — is the constraint.",
+            TheoryLayer.Physics, TheoryClassification.Partial, TheoryObjectKind.Derivation,
+            ["local-actuator", "labor-rho"],
+            Narrative: "Which physical process realizes s = (I − W)ρ* locally? THE STENCIL IN PHYSICAL FORM: s_i = −d(ρ_{i−1} − 2ρ_i + ρ_{i+1}) — a NEGATIVE LAPLACIAN, anti-diffusion of strength d = 0.2 on the nearest-neighbour chain "
+                + "(verified to 3.5e-18) — and a BALANCED PUMP-AND-DRAIN (exactly 50.0000 % of ‖s‖₁ = 0.48675 injecting, 50.0000 % extracting; max|s| = 0.01866667; count-neutral, three-point local). PHYSICAL: the FEEDBACK CONTROLLER (sense ρ "
+                + "and neighbours, compute (I − W)ρ, actuate; exact, maintains ρ* to < 1e-15 over 5000 steps) and ACTIVE DIFFUSION CANCELLATION — the operator IS a nearest-neighbour NEGATIVE CONDUCTANCE, so an NIC realizes it element by element. "
+                + "ANALOGUE: the OSCILLATOR LATTICE with a node-wise gain (a flat gain is mode-independent: residual error |γ − (1 − μ_k)| with minimax 0.3997858349905463 at γ = 0.4 against a required spread of 3734.437 — 1866.7× wrong on "
+                + "the smoothest mode) and COUPLED RESONATORS (band-limited: a 16-mode bank leaves 96.4 % of the witness uncompensated; shares k ≤ 1/4/8/16/24/48 = 3.240559e-4 / 1.479430e-3 / 4.833883e-3 / 3.626161e-2 / 8.417047e-2 / "
+                + "2.035517e-1). REFUTED: PUMP/LOSS NETWORKS — the source is balanced but the balance is SCALAR, with fixed points on the single Neumann modes (G_012) and an imbalance growing at the fastest mode's rate (a factor e in 125 steps "
+                + "at 1 %). THE BINDING CONSTRAINT IS EXACTNESS: with residual loop gain (1 + ε) the closed loop is I + ε(I − W), so mode k evolves at 1 + ε(1 − μ_k) (verified per step); hold times 1/(ε(1 − μ_k)) at ε = 1e-6/1e-5/1e-4/1e-3/1e-2 "
+                + "are 1.25e6 / 125 033 / 12 503 / 1250 / 125 steps for the fastest mode against 5.0e9 / 4.7e8 / 4.7e7 / 4.669e6 / 4.669e5 for the smoothest, so a 0.1 % tolerance holds the SMOOTH class for 4.67e6 steps but the witness for only "
+                + "1250. A ONE-STEP DELAY IS TOLERABLE (roots {1, μ_k − 1} ∈ [−0.7997858350, 0]; a 1e-3 perturbation retained at 0.9986e-3 … 0.9995e-3 after 2000 steps). POWER IS NOT BINDING: ΔH = 0.2170247 nats per step for the witness ⇒ "
+                + "Landauer 8.6295e-20 J per lattice per step (8.63e-14 W at 1 µs) and free energy 1.5192e-19 J (1.52e-13 W), ten orders below a 1 mW controller, while the band-top SMOOTH profile costs ΔH = 0.0 (thermodynamically free). "
+                + "Sensor resolution: q ≤ 1.0416667e-10 count units for 1 % of ρ̄ over 1e6 steps. The PHYSICAL devices inherit G_012's marginal character: they hold, they do not create.",
+            Formula: "s = -d * Laplacian(rho*);  loop eigenvalue 1 + eps (1 - mu_k);  P_min = k_B T Delta H / tau",
+            CalculationId: "physical-actuator",
+            References: ["ResearchY-G_013", "ResearchY-G_012", "ResearchY-G_011b"],
+            AuditIds: ["g013"]),
 
         // ── Layer 5 — Correspondence ───────────────────────────────────────────
         new("thermodynamics", "Thermodynamics", "An added occupancy layer over the structural modes (temperature is BOUNDARY).",
@@ -915,5 +933,24 @@ public sealed class TheoryRegistry
             + "changes; no new primitive.",
             AuditStatus.Passed, new DateTime(2026, 9, 12), TheoryLayer.Physics, TheoryClassification.Partial,
             ["g005", "g008", "g010", "g011", "g011b"]),
+        new("g013", "Physical Actuator Audit", "What physical process can realize s = (I - W) rho* locally?",
+            "THE STENCIL IN PHYSICAL FORM: s_i = -d(rho_{i-1} - 2 rho_i + rho_{i+1}) — a NEGATIVE LAPLACIAN, anti-diffusion of strength d = 0.2 on the nearest-neighbour chain (verified to 3.5e-18) — and a BALANCED "
+            + "PUMP-AND-DRAIN: exactly 50.0000 % of ||s||_1 = 0.48675 is injection and 50.0000 % extraction (max|s| = 0.01866667; count-neutral; three-point local). PHYSICAL: (a) the FEEDBACK CONTROLLER — sense rho_i and its "
+            + "neighbours, compute (I - W)rho, actuate; exact stencil, maintains rho* to < 1e-15 over 5000 steps; (b) ACTIVE DIFFUSION CANCELLATION — the operator IS a nearest-neighbour NEGATIVE CONDUCTANCE, so an NIC "
+            + "realizes it element by element, half the elements sourcing and half sinking. ANALOGUE: (c) the OSCILLATOR LATTICE with a NODE-WISE gain — a flat gain is mode-independent, residual error |gamma - (1 - mu_k)| "
+            + "with minimax 0.3997858349905463 at gamma = 0.4 against a required spread of 3734.437 (a 1866.7x relative error on the smoothest mode); (d) COUPLED RESONATORS — band-limited: the witness's spectral share "
+            + "below the cut bounds what it holds, k <= 1/4/8/16/24/48 giving 3.240559e-4 / 1.479430e-3 / 4.833883e-3 / 3.626161e-2 / 8.417047e-2 / 2.035517e-1, i.e. a 16-mode bank leaves 96.4 % uncompensated. REFUTED: "
+            + "(e) PUMP/LOSS NETWORKS — the required source is balanced, but a pump/loss balance is a SCALAR condition whose fixed points are the single Neumann modes (G_012) and whose imbalance grows at the fastest mode's "
+            + "rate (a factor e in 125 steps at 1 %). THE BINDING CONSTRAINT IS EXACTNESS: with residual loop gain (1 + eps) the closed loop is I + eps(I - W), so mode k evolves at 1 + eps(1 - mu_k) — verified step by step "
+            + "(eps = 1e-5 gives 1.000007998 per step on v_95 and the n-step law holds). Hold times tau = 1/(eps(1 - mu_k)): for eps = 1e-6/1e-5/1e-4/1e-3/1e-2 the fastest mode lasts 1.25e6 / 125 033 / 12 503 / 1250 / 125 "
+            + "steps against 5.0e9 / 4.7e8 / 4.7e7 / 4.669e6 / 4.669e5 for the smoothest — a 0.1 % tolerance holds the SMOOTH class for 4.67e6 steps but the witness for only 1250 (a 3734x split). Sensor/actuation "
+            + "resolution: q <= 1.0416667e-10 count units for 1 % of rhoBar over 1e6 steps. A ONE-STEP CONTROL DELAY IS TOLERABLE: roots {1, mu_k - 1} in [-0.7997858350, 0] — stable, with an alternating transient — and a "
+            + "1e-3 perturbation is RETAINED (0.9986e-3 ... 0.9995e-3 after 2000 steps), so the loop stays a marginal memory. POWER IS NOT BINDING: the diffusion produces dH = 0.2170247 nats per step for the witness, so "
+            + "Landauer costs k_B T dH = 8.6295e-20 J per lattice per step (8.63e-14 W at a 1 us step) and the free-energy rate sum_i s_i ln(rho_i/rhoBar) is 1.5192e-19 J (1.52e-13 W) — ten orders below the ~1 mW quiescent "
+            + "draw of any electronic controller; the BAND-TOP SMOOTH profile costs dH = 0.0 to double precision (H is stationary in the k = 1 direction), i.e. it is thermodynamically free. VERDICTS: PHYSICAL = feedback "
+            + "controller and active diffusion cancellation · ANALOGUE = oscillator lattice (node-wise gain) and coupled resonators (band-limited) · REFUTED = pump/loss networks. The PHYSICAL devices inherit G_012's marginal "
+            + "character: they hold a configuration, they do not create one. No reclassification (D_040 untouched); no canonical claim, value or equation changes; no new primitive.",
+            AuditStatus.Passed, new DateTime(2026, 9, 12), TheoryLayer.Physics, TheoryClassification.Partial,
+            ["g006", "g007", "g008", "g011b", "g012"]),
     ];
 }

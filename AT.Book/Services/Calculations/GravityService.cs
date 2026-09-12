@@ -322,6 +322,22 @@ public sealed class GravityService : ICalculationService
                 + "perturbation retained 100.000 %) because its closed loop is the identity, and it is the UNIQUE non-trivial member of its three-point family (c_k = 1 for all k only at beta = -1). It is marginal — a memory, not "
                 + "a creator. The restoring family holds only the smoothest mode (lambda <= 1 - mu_1), mode injection and synchronization are REFUTED, and the lattice/NESS framing is the medium rather than the source "
                 + "(ResearchY-G_012)."),
+
+            new("physical-actuator",
+                "Physical Actuator — what device builds the density handle?",
+                "s = -d * Laplacian(rho*);  loop eigenvalue 1 + eps (1 - mu_k);  P_min = k_B T dH / tau",
+                [
+                    new("the stencil", "s_i = -d(rho_{i-1} - 2 rho_i + rho_{i+1})", "a NEGATIVE LAPLACIAN: anti-diffusion, verified to 3.5e-18"),
+                    new("balance", "injection 50.0000 % / extraction 50.0000 % of 0.48675", "max|s| = 0.01866667; count-neutral; three-point local"),
+                    new("PHYSICAL", "feedback controller; active diffusion cancellation (an NIC)", "exact stencil; marginal hold (< 1e-15 over 5000 steps)"),
+                    new("error budget", "loop I + eps(I - W) -> 1 + eps(1 - mu_k)", "eps = 1e-3: 1250 steps (fastest) vs 4.669e6 (smoothest)"),
+                    new("ANALOGUE", "node-wise gain: minimax error 0.3997858 vs a 3734.437 spread", "band-limited: a 16-mode bank leaves 96.4 % uncompensated"),
+                    new("REFUTED", "pump/loss networks", "a scalar balance fixes single modes; imbalance e-folds in 125 steps at 1 %"),
+                    new("delay", "roots {1, mu_k - 1} in [-0.7997858350, 0]", "one-step delay is tolerable; a 1e-3 perturbation is retained"),
+                    new("power", "Landauer 8.6295e-20 J/step = 8.63e-14 W at 1 us", "the smooth profile costs dH = 0.0: thermodynamically free"),
+                ],
+                "The stencil is a negative Laplacian (anti-diffusion) and a balanced pump-and-drain, so a feedback controller or a nearest-neighbour negative conductance (NIC) realizes it exactly (PHYSICAL). A node-wise gain "
+                + "and a band-limited resonator bank are only ANALOGUE, and a pump/loss balance is REFUTED. Exactness is the binding constraint, while power is ten orders below any electronic floor (ResearchY-G_013)."),
         ];
     }
 

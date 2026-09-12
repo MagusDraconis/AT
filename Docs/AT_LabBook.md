@@ -2076,11 +2076,11 @@ in the historical program counts below.
 | AT-QG | 182 | Complete |
 | **Total** | **289** | |
 
-## ResearchY G-Program — Gravity Source, Control, Magnitude, Calibration, Realizability, Mechanism, Origin, Controlled Suppression, Clock Rate, Time Control, Rho Actuator, Labor Rho, Local Rho Actuator (13 audits, 2026-09-12)
+## ResearchY G-Program — Gravity Source, Control, Magnitude, Calibration, Realizability, Mechanism, Origin, Controlled Suppression, Clock Rate, Time Control, Rho Actuator, Labor Rho, Local Rho Actuator, Physical Actuator (14 audits, 2026-09-12)
 
-New ResearchY group **G — Gravity Source**. Suite: `AT.Tests/ResearchY/G_GravitySource/` (108/108 pass,
+New ResearchY group **G — Gravity Source**. Suite: `AT.Tests/ResearchY/G_GravitySource/` (117/117 pass,
 ~1 s); shared machinery `AT.Tests/Shared/DensityField.cs`, `PhysicalUnits.cs`, `RhoActuators.cs`.
-Detailed docs: `Docs/ResearchY/G_GravitySource/ResearchY-G_001.md` … `ResearchY-G_012.md`.
+Detailed docs: `Docs/ResearchY/G_GravitySource/ResearchY-G_001.md` … `ResearchY-G_013.md`.
 
 ### G_001 — Gravity Source Audit
 **Status:** Complete. **SOURCE = the actualization density ρ** (counting measure), and for the attractive
@@ -2393,9 +2393,34 @@ DiffuseStep, no imported primitive). **The first ACTUATOR in the group** — and
 - **Refinement note (not a reclassification):** G_010's "the canonical chain supplies no driver" stands —
   G_012 shows an **engineered** local feedback realises one, marginally and only as a memory.
 
-**App/Book surfaced:** AT.App Research News + Theory Book ("Gravity Source" part, thirteen chapters) +
-TestGroups; AT.Book `GravityService` (13 executable calculations), thirteen theory objects (Physics layer) and
-thirteen audits g001–g012.
+### G_013 — Physical Actuator Audit
+**Status:** Complete. Which device realizes `s = (I − W)ρ*`? The stencil is a **negative Laplacian**
+(anti-diffusion, `d = 0.2`, verified to 3.5e-18) and a **balanced pump-and-drain** (50.0000 %/50.0000 % of
+`‖s‖₁ = 0.48675`; `max|s| = 0.01866667`).
+
+| candidate | local | power | exact stencil | maintains ρ* | **verdict** |
+|---|---|---|---|---|---|
+| feedback controller | yes | 8.6e-14 W | **yes** | `\|ε\| ≤ 1.25e-6` (1.25e6 steps) | **PHYSICAL** |
+| active diffusion cancellation | yes | 8.6e-14 W | **yes** (an NIC) | component tolerance | **PHYSICAL** |
+| oscillator lattice (node-wise gain) | yes | 8.6e-14 W | no (mode-independent) | minimax error **0.3997858** | **ANALOGUE** |
+| coupled resonators (band-limited) | yes | 8.6e-14 W | only in band | 16 modes → **96.4 %** missing | **ANALOGUE** |
+| pump/loss networks | yes | 8.6e-14 W | no (scalar) | single modes only | **REFUTED** |
+
+- **Error budget = the binding constraint.** Loop `I + ε(I − W)` ⇒ eigenvalue `1 + ε(1 − μ_k)` (verified per
+  step). Hold times at ε = 1e-6/1e-5/1e-4/1e-3/1e-2: **1.25e6 / 125 033 / 12 503 / 1250 / 125** steps for the
+  fastest mode against 5.0e9 / 4.7e8 / 4.7e7 / **4.669e6** / 4.669e5 for the smoothest — a **3734×** split
+  (a 0.1 % device holds the smooth class for 4.67e6 steps but the witness for only 1250). A single broadband
+  gain has minimax error **0.3997858349905463** (1866.7× wrong on the smoothest mode).
+- **A one-step delay is tolerable:** roots `{1, μ_k − 1} ∈ [−0.7997858350, 0]`; a 1e-3 perturbation is retained
+  (0.9986e-3 … 0.9995e-3 after 2000 steps) — still a marginal memory.
+- **Power is not binding:** ΔH = **0.2170247 nats**/step (witness) ⇒ Landauer 8.6295e-20 J/lattice/step =
+  **8.63e-14 W** at 1 µs and free energy 1.5192e-19 J = **1.52e-13 W** — ten orders below a 1 mW controller;
+  the band-top **smooth** profile costs ΔH = **0.0** (thermodynamically free).
+- **Resolution:** `q ≤ 1.0416667e-10` count units for 1 % of ρ̄ over 1e6 steps (~17 bits of 1/96).
+
+**App/Book surfaced:** AT.App Research News + Theory Book ("Gravity Source" part, fourteen chapters) +
+TestGroups; AT.Book `GravityService` (14 executable calculations), fourteen theory objects (Physics layer) and
+fourteen audits g001–g013.
 
 ## Key Unsolved Problems
 
