@@ -18,18 +18,21 @@ namespace AT.Core.ResearchXH;
 ///  (3) EINSTEIN RECOVERY / BIANCHI — with k = 2/d, σ = ln(ρ)/d and the Einstein components
 ///      G_11 = ((d−1)(d−2)/2)(σ′)², G_ii = (d−2)[σ″ + ((d−3)/2)(σ′)²] are EXACTLY the QG197/D2ToD3Bridge
 ///      Bianchi-conserved structure. (Verified in QG197: divergence-free.)
-///  (4) ALTERNATIVE COUNTING-PRESERVING FORMS — the ψ-perturbed metrics
-///      g_00 = −ρ^(2/d)e^(2ψ), g_ii = ρ^(2/d)e^(−2ψ/(d−1)) have the SAME √(−g) = ρ (measure preserved for ANY ψ)
-///      but DIFFERENT geodesics (a changes with ψ) and DIFFERENT Einstein structure — these are exactly the
-///      QG186/QG44 tensor-sector metrics (frame dragging, lensing). So within the CONFORMAL class ρ^a·η the
-///      exponent k = 2/d is unique, but the ansatz is NOT the unique counting-preserving metric: the ψ tensor
-///      sector provides alternatives with different observables.
+///  (4) ALTERNATIVE FORMS — ⚠ CORRECTED BY ResearchY-G_025. This read: "the ψ-perturbed metrics ...
+///      have the SAME √(−g) = ρ (measure preserved for ANY ψ)". That was FALSE — an off-by-one in the
+///      determinant (the spatial block was raised to d−1 instead of d). With the correct count,
+///      √(det g_ij) = ρ·e^(−dψ/(d−1)), so **ψ = 0 is the ONLY member of that family that preserves the
+///      counting measure**. What remains true: the ψ ≠ 0 members have DIFFERENT geodesics and DIFFERENT
+///      Einstein structure (QG186/QG44 — frame dragging, lensing). So they are alternative metrics, but NOT
+///      counting-preserving alternatives. The conformal exponent k = 2/d is still unique within the
+///      conformal class ρ^a·η; and the broader anisotropic measure-preserving freedom (the conformal
+///      invariant k = B − A of ResearchY-G_023) is what prevents full uniqueness.
 ///
 /// CLASSIFICATION: PARTIAL UNIQUE — g = ρ^(2/d)η is UNIQUELY selected within the conformal-flat class
-/// (measure, acceleration, Einstein recovery all force k = 2/d), but it is not the unique counting-preserving
-/// metric: the ψ tensor sector (QG44/186) gives alternative metrics with the same √(−g) = ρ and different
-/// observables. The conformal ansatz is the ψ=0 (isotropic) member; the ψ≠0 sector is the anisotropic
-/// completion.
+/// (measure, acceleration, Einstein recovery all force k = 2/d). It is not the unique measure-preserving
+/// metric in general (the anisotropic family of ResearchY-G_023), and the ψ ≠ 0 family is an alternative
+/// with different observables that BREAKS the counting measure (corrected by G_025). The conformal ansatz
+/// is the ψ=0 (isotropic, measure-preserving) member; the ψ≠0 sector is the anisotropic optics completion.
 /// </summary>
 public static class MetricAnsatzUniqueness
 {
@@ -94,12 +97,27 @@ public static class MetricAnsatzUniqueness
     }
 
     // ── 4. Alternative counting-preserving forms (ψ sector) ───────────────────
+    // ⚠ CORRECTED BY ResearchY-G_025: the ψ-perturbed metrics are NOT counting-preserving. The original text
+    // below claimed "SAME √(−g) = ρ (measure preserved for ANY ψ)" on the basis of an off-by-one in the
+    // determinant (the spatial block was raised to the power d−1 instead of d). With the correct count,
+    //     √(det g_ij) = ρ·e^(−dψ/(d−1))
+    // so ψ = 0 is the ONLY member of the family that preserves the counting measure. This STRENGTHENS the
+    // selectivity of k = 2/d: within the conformal class it is forced three ways, and the ψ family is
+    // excluded outright by the measure. What remains true is that ψ ≠ 0 changes the observables (lensing,
+    // frame dragging), which is the optics content of QG186/QG44.
 
-    /// <summary>√(−g) of the ψ-perturbed metric = ρ (measure preserved for any ψ).</summary>
+    /// <summary>Spatial counting-measure element √(det g_ij) = ρ·e^(−dψ/(d−1)) (corrected).</summary>
     public static double PerturbedVolumeElement(double x, int d = Dimension, double b = 0.3, double a = 1.0)
         => MetricAnsatzAudit.PerturbedVolumeElement(x, d, b, a);
 
-    /// <summary>The ψ-perturbed metric preserves √(−g) = ρ for non-zero ψ.</summary>
+    /// <summary>Relative counting-measure error |√(det g_ij) − ρ| / ρ under the ψ-perturbation.</summary>
+    public static double PerturbedVolumeError(double x, int d = Dimension, double b = 0.3, double a = 1.0)
+        => Math.Abs(PerturbedVolumeElement(x, d, b, a) - Profile(x, a)) / Profile(x, a);
+
+    /// <summary>
+    /// Does the ψ-perturbation preserve the counting measure? NO (corrected): the error is
+    /// |e^(−dψ/(d−1)) − 1| > 0 whenever ψ ≠ 0. The former version returned true for every ψ.
+    /// </summary>
     public static bool PsiPerturbationPreservesMeasure()
     {
         double x = 1.0;
@@ -107,9 +125,19 @@ public static class MetricAnsatzUniqueness
             && Math.Abs(PerturbedVolumeElement(x, Dimension, 0.5) - Profile(x)) < 1e-9;
     }
 
+    /// <summary>The ψ-perturbation BREAKS the counting measure for ψ ≠ 0 (the corrected reading).</summary>
+    public static bool PsiPerturbationBreaksMeasure()
+        => PerturbedVolumeError(1.0, Dimension, 0.3) > 0.01
+           && Math.Abs(PerturbedVolumeElement(1.0, Dimension, 0.0) - Profile(1.0)) < 1e-12;
+
+    /// <summary>The ψ = 0 (conformal) member is the UNIQUE measure-preserving member of the family.</summary>
+    public static bool ConformalIsTheMeasurePreservingMember()
+        => Math.Abs(PerturbedVolumeElement(1.0, Dimension, 0.0) - Profile(1.0)) < 1e-12
+           && PerturbedVolumeError(1.0, Dimension, 0.3) > 0.01;
+
     /// <summary>
     /// The ψ-perturbed acceleration differs from the conformal one (b = 0) — the ψ sector changes the
-    /// observables (frame dragging / lensing, QG186). Hence counting-preserving forms are NOT unique.
+    /// observables (frame dragging / lensing, QG186). Hence the counting-preserving forms are NOT unique.
     /// </summary>
     public static bool PsiSectorChangesObservables()
     {
@@ -125,7 +153,8 @@ public static class MetricAnsatzUniqueness
     /// 1. measure preservation uniquely selects k = 2/d;
     /// 2. geodesic acceleration uniquely selects k = 2/d;
     /// 3. Einstein recovery / Bianchi holds at k = 2/d (QG197);
-    /// 4. the ψ tensor sector provides alternative counting-preserving forms (not unique overall).
+    /// 4. the ψ tensor sector changes the observables (frame dragging / lensing, QG186) — while BREAKING the
+    ///    counting measure (corrected by ResearchY-G_025).
     /// </summary>
     public static int OriginScore()
     {
@@ -141,9 +170,11 @@ public static class MetricAnsatzUniqueness
     /// Data-driven classification:
     ///   NOT UNIQUE    — no selection argument isolates the ansatz;
     ///   PARTIAL UNIQUE — the ansatz is uniquely selected WITHIN the conformal class (measure,
-    ///                    acceleration, Einstein recovery all force k = 2/d), but the ψ tensor sector
-    ///                    provides alternative counting-preserving metrics with different observables;
-    ///   UNIQUE ANSATZ  — the ansatz would be the only counting-preserving metric (not the case: ψ).
+    ///                    acceleration, Einstein recovery all force k = 2/d), but it is not the unique
+    ///                    measure-preserving metric in general (the anisotropic family of ResearchY-G_023)
+    ///                    and the ψ ≠ 0 sector provides an alternative with different observables that
+    ///                    BREAKS the counting measure (corrected by ResearchY-G_025);
+    ///   UNIQUE ANSATZ  — the ansatz would be the only counting-preserving metric (not the case).
     /// </summary>
     public static string Classify()
     {

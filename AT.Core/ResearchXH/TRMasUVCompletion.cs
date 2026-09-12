@@ -32,7 +32,12 @@ public static class TRMasUVCompletion
     /// <summary>Core density ρ(0) for the AT conformal metric — finite (regular core).</summary>
     public static double CoreDensity() => MetricAnsatzAudit.Profile(0.0);
 
-    /// <summary>√(−g)(0) for the ψ-perturbed metric — same ρ(0) (volume-preserving → regular core unchanged).</summary>
+    /// <summary>
+    /// √(det g_ij)(0) for the ψ-perturbed metric. ⚠ CORRECTED BY ResearchY-G_025: the ψ-perturbation is NOT
+    /// volume-preserving, so this is not "the same ρ(0)" in general — it equals ρ(0)·e^(−dψ(0)/(d−1)). At the
+    /// core x = 0 the default ψ = b·x vanishes, so the value coincides with ρ(0) = 1 there; for ψ(0) ≠ 0 it
+    /// does not.
+    /// </summary>
     public static double TrmCoreVolumeElement(int d) => MetricAnsatzAudit.PerturbedVolumeElement(0.0, d);
 
     /// <summary>Is the spin-2 (graviton) degree of freedom confined to the UV? No — GWs propagate at all scales.</summary>

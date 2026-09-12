@@ -10,6 +10,13 @@
 **Depends on:** **AT-QG QG212** (`Docs/Research/ATQG_ConformalOpticsResolution.md` — the canonical optics resolution), QG26 (γ = −1), QG186 (ψ restores frame dragging), QG207 (the ψ-completed metric), QG44 (Fierz–Pauli), QG285 / QG286 (the Difference duality; ψ as the Weyl content), QG292 (the η-removal result); and G_021, G_022, G_023 (the audits this one corrects)
 **Test suite:** `AT.Tests/ResearchY/G_GravitySource/Y_G_024_Tests.cs` (7/7 PASSED, ~0.03 s)
 
+> ⚠ **Cross-reference — ResearchY-G_025.** This audit restored QG212 **on the strength of its own
+> documentation**. The independent verification carried out in G_025 found two real defects in that basis: an
+> off-by-one in the ψ-perturbed determinant (so *"√(-g) = ρ is preserved for ANY ψ"* is FALSE —
+> the error is unbounded in ψ), and a **hard-coded** γ that was never computed from the metric. The optics
+> *conclusion* restored here **stands**, now on derived grounds; the measure-preservation premise and the
+> hard-coded-γ origin-score basis do **not**. See `ResearchY-G_025.md`,
+> `Docs/Research/ATQG_ConformalOpticsDeterminantCorrection.md` (AT-QG phase 320), and the amended QG207/QG212/QG32 docs.
 ## Purpose
 
 The AT-QG programme **resolved conformal optics before the G-chain began**. The G-chain then re-derived part of that result but **mis-stated its status**, treating the tensor field `ψ` as a new primitive and declaring `γ = +1` out of derivational reach. This audit restores the canonical result, retracts the three erroneous claims, and keeps the two G-chain results that genuinely sharpen it.

@@ -3,7 +3,8 @@ namespace AT.Core.ResearchXH;
 /// <summary>
 /// AT-QG Phase 208 — Hawking Temperature With Psi. Known: QG184 (T ∝ 1/R from the mass-radius relation
 /// M ∝ R and area entropy S ∝ R^(d−1)), QG186 (frame dragging restored by ψ), QG207 (the ψ-completed metric
-/// g_00 = −ρ^(2/d)e^(2ψ), g_ii = ρ^(2/d)e^(−2ψ/(d−1)) preserves √(−g) = ρ). Open: derive the Hawking
+/// g_00 = −ρ^(2/d)e^(2ψ), g_ii = ρ^(2/d)e^(−2ψ/(d−1)) — NOTE (ResearchY-G_025): this does NOT preserve the
+/// counting measure; √(det g_ij) = ρ·e^(−dψ/(d−1)), so ψ = 0 is the only measure-preserving member). Open: derive the Hawking
 /// temperature in the ψ sector — does ψ change it, or leave T ∝ 1/R unchanged? No new primitives,
 /// deterministic.
 ///

@@ -83,7 +83,9 @@ public class ATQG_Phase207_MetricAnsatzUniquenessTests : ResearchTestBase
 
         sb.AppendLine("ASSUMPTIONS:");
         sb.AppendLine("  - Within the conformal class ρ^a·η, k = 2/d is uniquely selected.");
-        sb.AppendLine("  - The ψ tensor sector (QG44/186) gives alternative counting-preserving metrics.");
+        sb.AppendLine("  - CORRECTED (G_025): the ψ tensor sector (QG44/186) gives alternative metrics that are NOT");
+        sb.AppendLine("    counting-preserving — √(det g_ij) = ρ·e^(−dψ/(d−1)). ψ=0 is the only measure-preserving");
+        sb.AppendLine("    member of that family.");
         sb.AppendLine();
 
         int score = MetricAnsatzUniqueness.OriginScore();
@@ -95,22 +97,27 @@ public class ATQG_Phase207_MetricAnsatzUniquenessTests : ResearchTestBase
         sb.AppendLine($"    +1 acceleration unique ({MetricAnsatzUniqueness.OnlyMetricPowerMatchesAcceleration()})");
         sb.AppendLine($"    +1 Einstein recovery ({MetricAnsatzUniqueness.EinsteinRecoveredAtMetricPower()})");
         sb.AppendLine($"    +1 ψ sector changes observables ({MetricAnsatzUniqueness.PsiSectorChangesObservables()})");
-        sb.AppendLine($"  ψ-perturbed √(−g) = ρ preserved? {MetricAnsatzUniqueness.PsiPerturbationPreservesMeasure()}");
+        sb.AppendLine($"  ψ-perturbed √(det g_ij) = ρ preserved? {MetricAnsatzUniqueness.PsiPerturbationPreservesMeasure()}  (CORRECTED: false)");
+        sb.AppendLine($"  ψ-perturbation BREAKS the counting measure? {MetricAnsatzUniqueness.PsiPerturbationBreaksMeasure()}");
+        sb.AppendLine($"  ψ=0 is the unique measure-preserving member? {MetricAnsatzUniqueness.ConformalIsTheMeasurePreservingMember()}");
         sb.AppendLine($"  Classification = {classification}");
         sb.AppendLine();
 
         sb.AppendLine("CONCLUSIONS:");
         sb.AppendLine("  - k = 2/d is UNIQUELY selected within the conformal-flat class (three independent");
         sb.AppendLine("    selection arguments: measure, acceleration, Einstein recovery).");
-        sb.AppendLine("  - But the ansatz is NOT the unique counting-preserving metric: the ψ tensor sector");
-        sb.AppendLine("    (QG44/186) provides alternatives with the same √(−g) = ρ and different observables");
-        sb.AppendLine("    (frame dragging, lensing). The conformal ansatz is the ψ = 0 isotropic member.");
+        sb.AppendLine("  - The ansatz is not the unique metric with different observables: the ψ tensor sector");
+        sb.AppendLine("    (QG44/186) provides alternatives (frame dragging, lensing) — but CORRECTED (G_025) they");
+        sb.AppendLine("    do NOT preserve the counting measure. The conformal ansatz is the ψ = 0 isotropic,");
+        sb.AppendLine("    measure-preserving member.");
         sb.AppendLine($"  ⇒ {classification}");
 
         Output.WriteLine(sb.ToString());
 
         Assert.Equal("PARTIAL UNIQUE", classification);
-        Assert.True(MetricAnsatzUniqueness.PsiPerturbationPreservesMeasure(), "ψ perturbation must preserve the measure");
+        Assert.False(MetricAnsatzUniqueness.PsiPerturbationPreservesMeasure(), "CORRECTED (G_025): ψ does NOT preserve the counting measure");
+        Assert.True(MetricAnsatzUniqueness.PsiPerturbationBreaksMeasure(), "the ψ perturbation must break the measure for ψ≠0");
+        Assert.True(MetricAnsatzUniqueness.ConformalIsTheMeasurePreservingMember(), "ψ=0 must be the unique measure-preserving member");
         Assert.True(MetricAnsatzUniqueness.PsiSectorChangesObservables(), "ψ sector must change the observables");
     }
 }

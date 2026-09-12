@@ -5,6 +5,13 @@
 **Result:** ✅ 7/7 PASSED (~0.03 s) — group G total 203/203 PASSED
 **Reproduction:** `dotnet test AT.Tests/AT.Tests.csproj --filter "FullyQualifiedName~Y_G_024"`
 
+> ⚠ **Cross-reference — ResearchY-G_025.** This audit restored QG212 **on the strength of its own
+> documentation**. The independent verification carried out in G_025 found two real defects in that basis: an
+> off-by-one in the ψ-perturbed determinant (so *"√(-g) = ρ is preserved for ANY ψ"* is FALSE —
+> the error is unbounded in ψ), and a **hard-coded** γ that was never computed from the metric. The optics
+> *conclusion* restored here **stands**, now on derived grounds; the measure-preservation premise and the
+> hard-coded-γ origin-score basis do **not**. See `ResearchY-G_025.md`,
+> `Docs/Research/ATQG_ConformalOpticsDeterminantCorrection.md` (AT-QG phase 320), and the amended QG207/QG212/QG32 docs.
 ## Summary
 
 **Why this audit exists:** the AT-QG programme **resolved conformal optics before the G-chain began** — `Docs/Research/ATQG_ConformalOpticsResolution.md` (**QG212**), Status **COMPLETE — OPTICS RESOLVED**, tests `ATQG2120/2121/2122` passing, core class `AT.Core/ResearchXH/ConformalOpticsResolution.cs`. The G-chain re-derived part of it but **mis-stated its status**. This audit restores the canonical result and retracts three erroneous claims.

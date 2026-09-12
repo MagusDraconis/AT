@@ -107,8 +107,10 @@ public class G4A_Phase0_MetricAnsatzAuditTests : ResearchTestBase
         var sb = new StringBuilder();
         PrintHeader("G4-A02: conformal flatness is an assumption, not a derived consequence");
 
-        // √(−g)=ρ fixes only the determinant. A ψ-perturbed metric with the SAME determinant gives a
+        // √(−g)=ρ fixes only the determinant of the CONFORMAL family. A ψ-perturbed metric gives a
         // DIFFERENT acceleration, so the conformally-flat form ρ^(2/d)η is an additional assumption.
+        // ⚠ CORRECTED BY ResearchY-G_025: the ψ-perturbed metric does NOT have the same determinant —
+        // √(det g_ij) = ρ·e^(−dψ/(d−1)), so ψ = 0 is the only measure-preserving member.
         double aFlat = MetricAnsatzAudit.Acceleration(X, 2.0 / D);
         double aPert = MetricAnsatzAudit.PerturbedAcceleration(X, D);
         double volFlat = MetricAnsatzAudit.VolumeElement(X, 2.0 / D, D);
@@ -116,24 +118,26 @@ public class G4A_Phase0_MetricAnsatzAuditTests : ResearchTestBase
 
         sb.AppendLine($"conformally-flat g = ρ^(2/d)η :  a = {aFlat:F6}, √(−g) = {volFlat:F6}");
         sb.AppendLine($"ψ-perturbed (non-flat) metric  :  a = {aPert:F6}, √(−g) = {volPert:F6}");
-        sb.AppendLine($"  (g_00=−ρ^(2/d)e^{{2ψ}}, g_11=ρ^(2/d)e^{{−2ψ/(d−1)}}, ψ=b·x — det unchanged)");
+        sb.AppendLine($"  (g_00=−ρ^(2/d)e^{{2ψ}}, g_11=ρ^(2/d)e^{{−2ψ/(d−1)}}, ψ=b·x — det CHANGED: √(det g_ij)=ρ·e^(−dψ/(d−1)))");
 
-        bool sameVolume = Math.Abs(volFlat - volPert) < 1e-12;
+        bool sameVolume = Math.Abs(volFlat - volPert) < 1e-12;          // FALSE now (corrected)
+        bool psibreaksMeasure = !sameVolume && MetricAnsatzUniqueness.PsiPerturbationBreaksMeasure();
         bool differentAcceleration = Math.Abs(aPert / aFlat) > 2.0;
 
         sb.AppendLine();
-        sb.AppendLine($"same √(−g) = ρ for both metrics: {sameVolume}");
+        sb.AppendLine($"same √(−g) = ρ for both metrics: {sameVolume}  (CORRECTED: false — ψ breaks the measure)");
         sb.AppendLine($"different acceleration (|a_pert/a_flat| = {Math.Abs(aPert / aFlat):F2} > 2): {differentAcceleration}");
         sb.AppendLine();
         sb.AppendLine("CLASSIFICATION: PREFERRED (not UNIQUE, not merely ASSUMED).");
         sb.AppendLine("  • The EXPONENT k = 2/d is UNIQUE — uniquely selected by √(−g) = ρ (G4-A00).");
-        sb.AppendLine("  • CONFORMAL FLATNESS (η) is ASSUMED — √(−g)=ρ fixes only det g, not the full metric;");
+        sb.AppendLine("  • CONFORMAL FLATNESS (η) is ASSUMED — the measure fixes only det g, not the full metric;");
         sb.AppendLine("    a non-flat metric with the same √(−g)=ρ is physically distinct.");
         sb.AppendLine("  • It is PREFERRED because ρ is the only scalar available (minimality): no ψ field exists in");
         sb.AppendLine("    AT, so the metric built from ρ alone is the conformal factor times the vacuum η.");
         Output.WriteLine(sb.ToString());
 
-        Assert.True(sameVolume, "ψ-perturbed metric should preserve √(−g)=ρ");
+        Assert.True(psibreaksMeasure, "CORRECTED (G_025): the ψ-perturbed metric BREAKS √(−g)=ρ; only ψ=0 preserves it");
+        Assert.False(sameVolume, "the ψ-perturbed determinant is NOT equal to the conformal one");
         Assert.True(differentAcceleration, "conformal flatness should be a physically distinct assumption");
     }
 }

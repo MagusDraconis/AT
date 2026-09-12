@@ -2,6 +2,10 @@
 
 **Program:** AT-QG (Unification)
 **Phase:** 32 — which AT derivations break if the TRM (ψ) kernel is added?
+> ⚠ **CORRECTION — ResearchY-G_025 / AT-QG phase 320.** The `"metric-origin"` row of the compatibility
+> matrix is **MODIFIED**, not `UNCHANGED`: the ψ sector does not preserve `√(-g) = ρ`. The corrected
+> matrix is 4 UNCHANGED / 2 MODIFIED / 0 BROKEN.
+
 **Status:** COMPLETED — 3/3 xUnit tests pass (99/99 AT-QG)
 **Constraint:** no new primitives (audit of the effect of the already-identified ψ extension)
 

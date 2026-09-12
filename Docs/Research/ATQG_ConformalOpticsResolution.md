@@ -1,5 +1,19 @@
 # AT-QG Phase 212 — Conformal Optics Resolution
 
+> ⚠ **CORRECTION — ResearchY-G_025 / AT-QG phase 320
+> (`Docs/Research/ATQG_ConformalOpticsDeterminantCorrection.md`).**
+> Two defects in this phase's own basis were found by independent verification and are now fixed:
+> **(1)** the ψ-perturbed determinant was off by one spatial factor — the correct identity is
+> `det g = -ρ^(2(d+1)/d)e^(-2ψ/(d-1))`, `√(-det g) = ρ^((d+1)/d)e^(-ψ/(d-1))`,
+> `√(det g_ij) = ρ·e^(-dψ/(d-1))`; the shipped line `√(-g) = ρ unchanged for ANY ψ` is
+> **FALSE** (error unbounded in ψ: 36.24 % at b = 0.3, 8901.71 % at b = -3). ψ = 0 is the *only*
+> measure-preserving member. **(2)** `GammaPsiNonZero()` was a **hard-coded constant**, never computed from the
+> metric — γ is now derived (`GammaFromPsiMetric`), giving −1 at ψ = 0 and +1 at the **derived**
+> ψ = -4σ (first order; exact value `e^(6σ) = ρ²` at d = 3, so +1 only in the weak field).
+> The optics *conclusion* (full GR at ψ ≠ 0, no lensing at ψ = 0) **STANDS** and is now derived rather
+> than asserted; what is withdrawn is the measure-preservation premise and the hard-coded-γ origin-score basis.
+> See also G_024.
+
 **Status:** COMPLETE — **OPTICS RESOLVED**
 **Tests:** ATQG2120, ATQG2121, ATQG2122 (all passed)
 **Core class:** `AT.Core/ResearchXH/ConformalOpticsResolution.cs`

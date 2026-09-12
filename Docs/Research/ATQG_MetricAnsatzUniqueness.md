@@ -1,5 +1,12 @@
 # AT-QG Phase 207 — Metric Ansatz Uniqueness
 
+> ⚠ **CORRECTION — ResearchY-G_025 / AT-QG phase 320.** The determinant identity asserted here
+> (`det g = -ρ²` for any ψ, hence `√(-g) = ρ` unchanged) is **WRONG by one spatial factor**.
+> Correct: `det g = -ρ^(2(d+1)/d)e^(-2ψ/(d-1))`, `√(-det g) = ρ^((d+1)/d)e^(-ψ/(d-1))`,
+> `√(det g_ij) = ρ·e^(-dψ/(d-1))`. `PsiPerturbationPreservesMeasure()` now correctly returns
+> **false**; ψ = 0 is the unique counting-measure-preserving member of this family, which **strengthens**
+> this phase's selection conclusion even as it refutes its stated premise.
+
 **Status:** COMPLETE — **PARTIAL UNIQUE**
 **Tests:** ATQG2070, ATQG2071, ATQG2072 (all passed)
 **Core class:** `AT.Core/ResearchXH/MetricAnsatzUniqueness.cs`

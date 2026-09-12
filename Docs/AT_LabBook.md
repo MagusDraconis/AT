@@ -2881,6 +2881,98 @@ the G-chain mis-stated that status.
 - **No reclassification of the QG212 result — this audit RESTORES it**; D_040 untouched; no canonical claim,
   value or equation changes; no new primitive; 7/7 PASSED.
 
+### G_025 — Optics Determinant Correction Audit (verifies QG212; finds and fixes two real defects)
+**Status:** Complete. **Why:** G_024 restored QG212 **on the strength of its own documentation**. The instruction
+was explicit — *do not believe the document; verify the old result and try to find errors in it.* Doing so found
+**two real defects** in the AT-QG optics arithmetic.
+
+**DEFECT 1 — OFF-BY-ONE IN THE ψ-PERTURBED DETERMINANT.** `MetricAnsatzAudit` claimed `det g = −ρ²` for
+**ANY** ψ (so `√(−g) = ρ` unchanged), and `PerturbedVolumeElement(x, d, b)` returned `Profile(x, a)` = ρ
+**by construction** — it never computed a determinant, so `PsiPerturbationPreservesMeasure()` could only return
+`true`. **The spatial block has `d` factors, not `d − 1`.** Correct:
+
+```text
+det g       = −ρ^(2(d+1)/d) · e^(−2ψ/(d−1))
+√(−det g)   = ρ^((d+1)/d) · e^(−ψ/(d−1))        4-volume
+√(det g_ij) = ρ · e^(−dψ/(d−1))                spatial — the counting measure
+```
+
+| `b`, `x = 1` | former claim | corrected spatial | error | corrected 4-volume | error |
+|---:|---:|---:|---:|---:|---:|
+| 0.0 | 2.0000000000 | 2.0000000000 | 0.00 % | 2.5198420998 | 25.99 % |
+| 0.3 | 2.0000000000 | 1.2752563032 | **36.24 %** | 2.1688481946 | 8.44 % |
+| 0.5 | 2.0000000000 | 0.9447331055 | **52.76 %** | 1.9624550005 | 1.88 % |
+| −3.0 | 2.0000000000 | 180.0342626010 | **8901.71 %** | 11.2931487976 | 464.66 % |
+
+**The error is unbounded in ψ** — which is exactly why the shipped test (`Assert.True(sameVolume)`) could never
+catch it. **Consequence:** *"√(−g) = ρ is preserved for ANY ψ"* is **FALSE**; **ψ = 0 is the only member that
+preserves the counting measure** — which **strengthens** the selection argument.
+
+**DEFECT 2 — γ WAS A HARD-CODED CONSTANT.** `GammaPsiNonZero() => NonTensorLensing.GrGamma()` (a literal
+`1.0`) and `GammaPsiZero() => ConformalGamma()` (`−1.0`): **no code path computed γ from the metric**, so
+origin-score items 2 and 3 were `(1+1)/2 = 1` and `Shapiro(1) = (1+1)/2·2 = 2` — arithmetic on a literal that
+could not fail. Nothing therefore detected that the **coded** metric `ψ = b·x` has `γ ≠ +1` anywhere:
+`b = 0.3` → **+0.3352 / +0.0022 / −0.0930 / −0.0694** at `x = 0.1 / 0.5 / 1.0 / 2.0`,
+`b = 0.5` → +0.3772 / +0.1054 / +0.0112 / −0.0037. `γ = +1` needs `ψ = −4σ`, i.e. `−(4/3)ln(1+ax²)`
+— **quadratic**, not the **linear** `ψ = b·x`.
+
+**CORRECTIONS APPLIED — 12 SITES ACROSS 5 AT.Core FILES.** The determinant now **computes**; `PerturbedDet` and
+`PerturbedVolumeElement4D` **added**; `PsiPerturbationPreservesMeasure` → **`false`**;
+`PsiPerturbationBreaksMeasure` / `ConformalIsTheMeasurePreservingMember` **added**; **γ is now DERIVED**
+(`GammaFromPsiMetric` = `(g_ii − 1)/(g_00 + 1)`, exact; `GammaPsiZero` = **−1**, `GammaPsiNonZero` = **+1**,
+both computed); `GammaFromPsiMetricFirstOrder`, `PsiForGrOptics`, `GammaPsiNonZeroExact` **added**;
+`ConformalIsRestrictedSector` **rebased** on the corrected member test; the `Redshift` doc corrected with
+`PsiClockShiftFactor` / `PsiSectorShiftsClock` **added**; and **`TRMCompatibilityAudit`'s `"metric-origin"` row moved
+`UNCHANGED` → `MODIFIED`** — the corrected matrix is **4 UNCHANGED / 2 MODIFIED / 0 BROKEN**. `TRMasUVCompletion`
+and the `HawkingTemperatureWithPsi` citation corrected (its own `ψ` exponent `d/(d−1) = 3/2` was independently
+re-derived and **is correct**).
+
+**DERIVED — γ IS NOW COMPUTED, NOT ASSERTED.**
+
+| ρ | γ(ψ = 0, exact) | γ(ψ = −4σ, 1st order) | γ(ψ = −4σ, exact) |
+|---:|---:|---:|---:|
+| 1.000001 | **−1.0000000000** | **+1.0000000000** | +1.0000020001 |
+| 1.5 | **−1.0000000000** | **+1.0000000000** | +2.2500000000 |
+| 2.0 | **−1.0000000000** | **+1.0000000000** | +4.0000000000 |
+
+The exact value is `e^(6σ) = ρ²` at `d = 3`: **`γ = +1` holds only in the weak field.**
+
+**WHAT SURVIVES / WHAT DOES NOT.**
+
+| claim | status |
+|---|---|
+| `γ = −1` for `g = ρ^(2/d)η` | **STANDS** — now computed, exactly −1 in every row |
+| `γ = +1` for `ψ ≠ 0` | **STANDS** — now computed, exactly +1 at the **derived** `ψ = −4σ` (first order) |
+| zero lensing / Shapiro / frame dragging at `ψ = 0`; full GR at `ψ ≠ 0` | **STANDS** |
+| conformal no-lensing is a **restricted sector** | **STANDS**, on corrected grounds |
+| *"the `ψ` sector preserves the counting measure"* | **REFUTED** (off-by-one) |
+| `metric-origin ⇒ UNCHANGED` | **REFUTED** → **MODIFIED** |
+| *"`γ = +1` as a property of the coded `ψ = b·x`"* | **REFUTED** — it was a constant |
+| `OPTICS RESOLVED` (4/4) | **RESTORED** — on the corrected basis, with the boundary below |
+
+**SCORECARD: 1 of QG212's 4 origin-score points was substantive** before the fix (only `γ = −1` for the
+conformal slice, verified independently three times).
+
+**BOUNDARY EXPOSED — UNCHANGED IN PLACE.** At `ψ = −4σ` the **exact** (non-linearised) `γ` drifts as
+`e^(6σ) = ρ²` (+1 only in the weak field), and the same `ψ` shifts the **clock** law
+`√(−g_00) = ρ^(1/d)e^(ψ)` by `e^(−4σ) = ρ^(−4/3)` — 2.784532e−9 at the Earth's surface
+(invisible; the GPS test is only 0.2 %) but **O(1)** at compactness. The `O(x²)` form of the completion is
+therefore **load-bearing and still unspecified**. `AT.Core` now exposes `PsiClockShiftFactor`,
+`PsiSectorShiftsClock`, `PsiSectorBreaksMeasure` and `GammaPsiNonZeroExact` so this can be **exercised** rather
+than assumed.
+
+**CORRECTION RECORD:** `Docs/Research/ATQG_ConformalOpticsDeterminantCorrection.md` (**AT-QG phase 320**) —
+amends QG207, QG212 and QG32; **issues no new physics claim**.
+
+**Verdicts: DERIVED** = the corrected determinant identities · `√(det g_ij) = ρ ⇔ ψ = 0` · `γ = −1` and
+`γ = +1` both computed from the metric · the exact drift `e^(6σ) = ρ²` · the clock factor `e^(−4σ)` ·
+**BOUNDARY** = the exact (non-linearised) `ψ` completion · **REFUTED** = the off-by-one determinant and everything
+resting on it, the hard-coded `γ`, and `metric-origin ⇒ UNCHANGED`.
+**Lesson recorded:** *a document marked RESOLVED with green tests is not the same as a resolved derivation, and a
+test that cannot fail is not a test.*
+**No reclassification**; D_040 untouched; no canonical claim, value or equation changes; no new primitive;
+**7/7 PASSED** (group G total **210/210**).
+
 ## Key Unsolved Problems
 
 1. Numerical values of ℓ, τ, ħ — empirical, not derived

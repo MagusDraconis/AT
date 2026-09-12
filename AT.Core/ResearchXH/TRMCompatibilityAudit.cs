@@ -24,7 +24,7 @@ public static class TRMCompatibilityAudit
     public static string Classify(string derivation) => derivation switch
     {
         "counting-measure" => "UNCHANGED",       // rho counts ticks; psi doesn't change the 1-point rho
-        "metric-origin" => "UNCHANGED",          // det g = -rho^2 is independent of psi (MetricAnsatzAudit)
+        "metric-origin" => "MODIFIED",           // CORRECTED (G_025): det g = -rho^(2(d+1)/d) e^(-2 psi/(d-1)) DOES depend on psi
         "matter-deficit" => "UNCHANGED",         // m = rho-bar - rho is scalar; psi doesn't touch it
         "einstein-structure" => "MODIFIED",      // G_mu-nu gains psi/Weyl terms (extra curvature)
         "alpha-zero-attractor" => "UNCHANGED",   // scale-space diffusion of rho is independent of psi
@@ -32,18 +32,23 @@ public static class TRMCompatibilityAudit
         _ => throw new ArgumentOutOfRangeException(nameof(derivation))
     };
 
-    /// <summary>√(−g) for the ψ-perturbed metric (same √(−g) = ρ as the conformally-flat ansatz).</summary>
+    /// <summary>Spatial counting-measure element √(det g_ij) = ρ·e^(−dψ/(d−1)) (corrected by G_025).</summary>
     public static double PerturbedVolumeElement(int d, double x, double b = 0.3, double a = 1.0)
         => MetricAnsatzAudit.PerturbedVolumeElement(x, d, b, a);
 
     /// <summary>Standard profile ρ = 1 + a·x².</summary>
     public static double Profile(double x, double a = 1.0) => MetricAnsatzAudit.Profile(x, a);
 
-    /// <summary>Relative volume-element error |√(−g) − ρ| / ρ under the ψ-perturbation: must be 0.</summary>
+    /// <summary>Relative counting-measure error |√(det g_ij) − ρ| / ρ under the ψ-perturbation.</summary>
     public static double PerturbedVolumeError(int d, double x, double b = 0.3, double a = 1.0)
         => Math.Abs(PerturbedVolumeElement(d, x, b, a) - Profile(x, a)) / Profile(x, a);
 
-    /// <summary>Is √(−g) = ρ preserved by ψ? Yes (the ψ-perturbation is volume-preserving).</summary>
+    /// <summary>
+    /// Is the metric origin √(det g_ij) = ρ preserved by ψ? ⚠ CORRECTED BY ResearchY-G_025: NO. The original
+    /// version returned true for every ψ because of an off-by-one in the determinant (the spatial block was
+    /// raised to d−1 instead of d). With the correct count √(det g_ij) = ρ·e^(−dψ/(d−1)), so ψ = 0 is the
+    /// only measure-preserving member. A positive result here requires ψ = 0.
+    /// </summary>
     public static bool MetricOriginPreserved(int d, double x, double b = 0.3, double a = 1.0, double tol = 1e-12)
         => PerturbedVolumeError(d, x, b, a) < tol;
 }
