@@ -2068,6 +2068,67 @@ of the spectrum. No canonical AT claim, value, equation or registry entry change
 primitive (the eight previously audited rings come from the shared cache; only the two new rings are
 measured); the D_040 ClassificationRegistry is untouched.
 
+ResearchY-D_058 (Recovery Mechanism Audit, COMPLETE, tests 7/7 PASSED): why is RECOVERY not predicted
+by the rank budget, the multiplicity distribution, the degeneracy count, λ₂ or the near-gap density —
+while capacity is? **THE ANSWER IS A TYPE STATEMENT, NOT A FAILURE.** Capacity is a COUNT (ΔA = A₁ − A₀
+is the number of new DISTINCT eigenvalues, an integer, and the rank budget bounds exactly it); recovery
+is a MAGNITUDE (1 − ‖λ′−λ‖₂/‖λ‖₂ is a relative spectral displacement), and a bound on how MANY new
+levels appear says nothing about HOW FAR they move. TEST (i): ρ(ΔA, relative shift) over 480 samples =
+**0.046 — NEAR-ORTHOGONAL** (per family: delete 0.296, add 0.163, rewire −0.046, weight −0.251; at ring
+level −0.595). The scale contrast is the point: mean ΔA moves 29.9 … 55.4 (capacity 0.42 … 1.00) while
+the relative shift moves only 0.0246 … 0.0802 (recovery 0.9198 … 0.9754). TEST (ii): the IDENTICAL rank
+ceiling gives ρ = **0.873 on capacity** and ρ = **0.409 on recovery** — the count law works for the count
+and has no grip on the magnitude, because the count is invariant under a rescaling of the shift and the
+shift is what recovery reads. **THE MAGNITUDE LAW** (derived the same way as the rank bound, from
+first-order perturbation theory δλ_i = v_iᵀ δA v_i): **1 − recovery ≈ 0.82416·(‖δA‖_F/‖λ‖₂) − 0.002242**
+— ONE coefficient calibrated on D_048/D_050's six source cases only, so the ring result is
+OUT-OF-SAMPLE: ρ = **0.905**, RMSE 0.00928, mean |error| **0.00767**, the best of everything tried. Per
+family the slopes are 1.104 (delete), 1.240 (add), 0.850 (rewire), 0.513 (weight) with R² 0.87 / 0.90 /
+0.85 / 0.80 — structural rather than calibrated to one family. **AND THE SPECTRAL NORM IS EXACT, NOT
+FITTED**: for a d-regular unweighted ring trace L² = dN(d+1), so ‖λ‖₂ = √(N·d·(d+1)) identically —
+measured 122.38 = 122.38 (D96, d = 12), 43.82 = 43.82 (Pair1-47, d = 4), 63.50 = 63.50 (both degree-6
+rings), 240.00 = 240.00 (D96-24, d = 24); the weighted rings deviate as expected (Decay96 50.90 vs
+122.38; Boost96 432.22 vs 122.38). HEAD-TO-HEAD on recovery (the law's coefficient from the sources; the
+correlational candidates by in-family LOO — the more generous protocol): MAGNITUDE LAW ρ = **0.905**,
+mean |error| **0.00767**; ‖δA‖_F ALONE ρ = **−0.738** with error 6.25 (the DENOMINATOR is the content —
+the perturbation's size matters only relative to the spectrum's scale); λ₂ ρ = 0.833, error 0.01106 —
+the best of the FIVE NAMED candidates, because it is the crudest proxy for ‖λ‖₂; near-gap ρ = 0.412,
+error 0.01151; the degeneracy count, max multiplicity and largest share ALL ρ = **0.024** with errors
+0.0117 … 0.0121; the perturbation family as a per-ring average ρ = 0.000. **THE BLIND TEST — THREE
+FROZEN PREDICTIONS, ALL CONFIRMED**, on two new rings carrying EXACTLY D96's offset set at weight 4.0 and
+0.25, verified multiplicity-IDENTICAL to D96 (pattern 6×1, 5×1, 2×42, 1×1; A₀ = 45; headroom identical;
+‖λ‖₂ ratios exactly 4.0000 and 0.2500): (1) capacity IDENTICAL across the three, spread **0.00033** on
+0.9902 — the count mechanism is blind to a global weight scale; (2) recovery under the edge families
+rises with scale, **0.96928 > 0.95771 > 0.83034**; (3) recovery under the weight family is
+scale-invariant, spread **exactly 0.00000** on 0.99055 — the cleanest single result in the audit. **AND A
+SHARPER FINDING THAN PREDICTED: delete recovery is ALSO exactly scale-invariant** (0.95515 × 3), so the
+scale sensitivity of the edge families comes specifically from ADD and REWIRE, because those insert an
+edge at FIXED UNIT WEIGHT while deletion removes weight IN PROPORTION. Measured add-family recovery:
+0.99033 (4×) → 0.95655 (1×) → 0.75829 (1/4×). The magnitude law states this exactly: a proportional
+removal leaves ‖δA‖_F/‖λ‖₂ unchanged, a fixed-weight insertion does not. DERIVED: the count/magnitude
+type distinction; the magnitude law with one coefficient; the exact spectral norm √(N·d·(d+1)); and the
+scale-sensitivity structure. EMERGENT: all three blind predictions confirmed (with delete-invariance
+sharper than predicted); λ₂'s position as the best of the named candidates; and **THE NARROW-BAND
+CAVEAT** — recovery spans only 0.0556 across these rings against capacity's 0.5791, a band **10.4×
+narrower**, so every ρ is inflated and every error deflated and the law's mean |error| of 0.0077 is
+**14 % of the entire recovery range**, not 1 %; the right reading is that the magnitude law captures the
+ORDERING and explains the SCALE SENSITIVITY, not that recovery is predicted to within a percent.
+REFUTED: recovery as a failed case of the count predictors (it is outside their type); any
+multiplicity-distribution grip on recovery (ρ = 0.024); the perturbation norm WITHOUT the spectral scale
+(ρ = −0.738 alone); the perturbation family as a ring-level determinant (ρ = 0.000 as a per-ring average
+— the family effect is real but lives WITHIN a ring, restating D_053 on the other target); and the
+near-gap density as a recovery predictor. SUMMARY: recovery belongs to a **DIFFERENT MECHANISM CLASS** —
+a magnitude governed by the perturbation's norm relative to the spectral norm, exactly as capacity is a
+count governed by the rank budget against the multiplicity structure; both mechanisms are now derived,
+both exact in their structural part (the rank lemma; trace L² = dN(d+1)), and each carries one
+coefficient. New open question for the D group: whether the magnitude law's single coefficient can be
+replaced by a derived value — the residual dependence on the perturbation's projection geometry, not
+just its norm — and whether the same count/magnitude split organises the other D-group observables
+(spectral splitting, attractor shifts) that have so far been treated as one family. No canonical AT
+claim, value, equation or registry entry changed; no new simulation primitive (the eight previously
+audited rings come from the shared cache; only the two scale mirrors are measured); the D_040
+ClassificationRegistry is untouched.
+
 ResearchY-NP_002 (Highest-Value V2.2 Program, COMPLETE): what is the highest-value
 V2.2 physics program? Verdict: MEASUREMENT ORIGIN — it scores 19/20 (impact 5,
 feasibility 4, testability 5, derived-chain dependence 5), the highest of ten

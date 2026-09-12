@@ -89,6 +89,7 @@
 | ResearchY-D_055 | Pair1-47 Anomaly Audit | `D_ResonanceStructure/ResearchY-D_055.md` | `AT.Tests/ResearchY/D_ResonanceStructure/Y_D_055_Tests.cs` (5/5 ✅) | COMPLETE |
 | ResearchY-D_056 | Multiplicity Distribution Audit | `D_ResonanceStructure/ResearchY-D_056.md` | `AT.Tests/ResearchY/D_ResonanceStructure/Y_D_056_Tests.cs` (6/6 ✅) | COMPLETE |
 | ResearchY-D_057 | Rank-Budget Law Audit | `D_ResonanceStructure/ResearchY-D_057.md` | `AT.Tests/ResearchY/D_ResonanceStructure/Y_D_057_Tests.cs` (6/6 ✅) | COMPLETE |
+| ResearchY-D_058 | Recovery Mechanism Audit | `D_ResonanceStructure/ResearchY-D_058.md` | `AT.Tests/ResearchY/D_ResonanceStructure/Y_D_058_Tests.cs` (7/7 ✅) | COMPLETE |
 | ResearchY-NP_001 | V2.2 New Physics Roadmap | `NP_NewPhysics/ResearchY-NP_001.md` | — (roadmap) | COMPLETE |
 | ResearchY-NP_002 | Highest-Value V2.2 Program | `NP_NewPhysics/ResearchY-NP_002.md` | — (ranking) | COMPLETE |
 | ResearchY-NP_003 | Manipulation Lever Audit | `NP_NewPhysics/ResearchY-NP_003.md` | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_003_Tests.cs` (6/6 ✅) | COMPLETE |
