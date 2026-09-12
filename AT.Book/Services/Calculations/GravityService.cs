@@ -427,6 +427,25 @@ public sealed class GravityService : ICalculationService
                 "The clock law is derived and its SUBSTRATE reading is consistent (0.99600 / 0.99668). But taking |psi|^2 literally for a real optical field gives O(1) predictions (77-307 %) where GR gives 1e-47 .. 1e-58 -- a "
                 + "mismatch of 1.900e46 to 4.342e49, with the observation agreeing with GR. The sharpest case is a Sr lattice clock inside its own standing wave (2.439413e8 W/m^2, 1e-18 readability), which excludes the naive reading by 2.303e18. So the identification premise is BOUNDARY and its "
                 + "naive form is REFUTED -- and the failure is structural, because the law is logarithmic. DERIVED / BOUNDARY / REFUTED (ResearchY-G_017)."),
+
+            new("rho-identity",
+                "Rho Identity — what remains after the lab reading is gone?",
+                "I1..I4;  the occupancy measure;  sizes are scale-free;  51/95 = 53.6842 % pure arrangement;  zero imported constants",
+                [
+                    new("the criterion", "Q is the identity of rho iff (I1) counting-defined, (I2) dimensionless/normalised, (I3) survived G_017, (I4) determines rho", "no external physics enters the criterion"),
+                    new("the ledger", "this audit imports NO constant", "contrast G_015/G_017: G, c, finesse, Q, polarizability -- and thereby falsifiable"),
+                    new("DERIVED: occupancy measure", "96 cells, A0 = 45 eigenspaces, free room 51, state dimension N - 1 = 95", "Sigma rho = 1 and rho_min > 0 for every configuration"),
+                    new("I3 is the pivot", "nothing in 'rho = counting' was ever a laboratory number", "so G_017 removed an IDENTIFICATION, not the quantity"),
+                    new("I4 holds uniquely", "it IS rho: zero information loss", "L1(witness, witness) = 0 while L1(witness, uniform) = 0.6666666666666667"),
+                    new("REFUTED: the count is a label", "exact scale invariance: max|a| = 0.6031746016455657 and clock sep 0.9985774245179969", "identical at scales 1, 1e3, 1e-6, 96 -> every observable is a RATIO"),
+                    new("DERIVED content / BOUNDARY dimension", "the degeneracy occupancy is exactly what energy cannot see (DeltaE = 0)", "51/95 = 53.6842 % pure arrangement; 94/95 = 98.9474 % energy-invisible; dimension 51 = Sigma(m - 1) is BOUNDARY"),
+                    new("REFUTED: survivor distribution", "a lossy functional: per-multiplet totals keep 44 of 95, E keeps 1 of 95", "compaction MOVES E, and two different states share the same survivor data"),
+                    new("BOUNDARY: state accessibility", "K = 1..6 give A0 = 49/47/45/47/45/45 (free room N - A0)", "the SAME uniform rho for every lattice: a capacity input (G_007) that bounds the reachable set"),
+                    new("what remains", "rho is an ARRANGEMENT: meaning entirely in the SHAPE of the occupancy, none in its SIZE", "nothing refers to energy, mass, intensity or a Born probability"),
+                    new("the honest limit", "importing no constant makes this the MOST AT-NATIVE audit -- and UNFALSIFIABLE BY ITSELF", "the PROVENANCE ASYMMETRY: boundary-identified audits are falsifiable and where testable have been EXCLUDED or shown to be a RANK-1 SHADOW"),
+                ],
+                "rho's identity survives as the OCCUPANCY MEASURE: a dimensionless counting measure whose content is entirely in the arrangement. The count is a label (exact scale invariance), accessibility is the lattice, the degeneracy occupancy is the DERIVED content under a BOUNDARY dimension (51/95 = 53.6842 % pure arrangement), "
+                + "and the survivor distribution is a lossy readout. The audit imports NO constant -- the most AT-native of the group and correspondingly unfalsifiable by itself -- which yields the provenance asymmetry: the theory's identity content is combinatorial and becomes physics only via a boundary identification. DERIVED / BOUNDARY / REFUTED (ResearchY-G_018)."),
         ];
     }
 

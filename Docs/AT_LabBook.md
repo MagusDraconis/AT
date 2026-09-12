@@ -2076,11 +2076,11 @@ in the historical program counts below.
 | AT-QG | 182 | Complete |
 | **Total** | **289** | |
 
-## ResearchY G-Program — Gravity Source, Control, Magnitude, Calibration, Realizability, Mechanism, Origin, Controlled Suppression, Clock Rate, Time Control, Rho Actuator, Labor Rho, Local Rho Actuator, Physical Actuator, Physical Rho Mapping, Rho To Metric, Watch Ontology, Mass Independence, Metric Coupling (19 audits, 2026-09-12)
+## ResearchY G-Program — Gravity Source, Control, Magnitude, Calibration, Realizability, Mechanism, Origin, Controlled Suppression, Clock Rate, Time Control, Rho Actuator, Labor Rho, Local Rho Actuator, Physical Actuator, Physical Rho Mapping, Rho To Metric, Watch Ontology, Mass Independence, Metric Coupling, Rho Identity (20 audits, 2026-09-12)
 
-New ResearchY group **G — Gravity Source**. Suite: `AT.Tests/ResearchY/G_GravitySource/` (154/154 pass,
+New ResearchY group **G — Gravity Source**. Suite: `AT.Tests/ResearchY/G_GravitySource/` (161/161 pass,
 ~1 s); shared machinery `AT.Tests/Shared/DensityField.cs`, `PhysicalUnits.cs`, `RhoActuators.cs`.
-Detailed docs: `Docs/ResearchY/G_GravitySource/ResearchY-G_001.md` … `ResearchY-G_017.md`.
+Detailed docs: `Docs/ResearchY/G_GravitySource/ResearchY-G_001.md` … `ResearchY-G_018.md`.
 
 ### G_001 — Gravity Source Audit
 **Status:** Complete. **SOURCE = the actualization density ρ** (counting measure), and for the attractive
@@ -2596,9 +2596,30 @@ The observable is a **fractional frequency ratio**, so the ceiling is a clock's 
 - **The identification premise is therefore not merely unproven but experimentally excluded at bench scale** —
   G_011b's "the coupling is not borrowed" promoted from a structural statement to a measured exclusion.
 
-**App/Book surfaced:** AT.App Research News + Theory Book ("Gravity Source" part, nineteen chapters) +
-TestGroups (19 suites); AT.Book `GravityService` (19 executable calculations), nineteen theory objects
-(Physics layer) and nineteen audits g001–g017.
+### G_018 — Rho Identity Audit
+**Status:** Complete. After G_017 excluded the laboratory |ψ|² identification, **which quantity remains as the
+identity of ρ?** The criterion (I1 counting-defined · I2 dimensionless/normalised · I3 survived G_017 ·
+I4 determines ρ) uses **no external physics**, and the audit imports **zero constants**.
+
+| candidate | label | evidence |
+|---|---|---|
+| **occupancy measure** | **DERIVED** | 96 cells, A₀ = 45, free room **51**, state dimension **95**; Σρ = 1, ρ_min > 0 always. **I3 is the pivot**: nothing in "ρ = counting" was ever a lab number, so G_017 removed an *identification*, not the quantity. **I4** holds uniquely — it *is* ρ (zero loss) |
+| **actualization count** | **REFUTED** | exact scale invariance: `max\|a\| = 0.6031746016455657` and clock separation `0.9985774245179969` **identical** at scales 1, 1e3, 1e−6, 96 — every observable is a ratio, so `N·ρ` is a **label with zero content** |
+| **degeneracy occupancy** | **DERIVED** content / **BOUNDARY** dimension | exactly the part of ρ energy cannot see (ΔE = 0; a 0.012 in-multiplet transfer leaves \|ΔE\| < 1e-13): **51/95 = 53.6842 %** of the state is invisible to everything except arrangement (vs **94/95 = 98.9474 %** invisible to energy). Dimension `51 = Σ(m−1)` is BOUNDARY (two-level rule, D_028/D_040) |
+| **survivor distribution** | **REFUTED** | a **lossy functional**: per-multiplet totals keep **44** of 95 dimensions (discarding **exactly the 51-dim room**), `E` keeps 1 of 95 (discarding 94), compaction **moves E** — and two *different* states share the same survivor data |
+| **state accessibility** | **BOUNDARY** | the lattice, not the state: K = 1…6 → A₀ = **49/47/45/47/45/45** (free room N − A₀), with the **same** uniform ρ for every lattice (`L1 = 0`) — a capacity input (G_007) that bounds the reachable set |
+
+- **What remains:** *ρ is an **arrangement*** — a dimensionless counting measure whose meaning is entirely in
+  the **shape** of the occupancy and none in its **size**.
+- **The honest limit:** importing no constant makes this the **most AT-native audit of the group** and
+  correspondingly **unfalsifiable by itself**. The **provenance asymmetry** is the real methodological finding:
+  combinatorial audits import nothing and give DERIVED structure but cannot be tested alone; boundary-identified
+  audits (G_003, G_004, G_009, G_010, G_015, G_017) import `G`, `c`, GM/R, finesse, `Q`, polarizability, 1e-18,
+  *are* falsifiable, and where testable have been **excluded** or shown to be a **rank-1 shadow**.
+
+**App/Book surfaced:** AT.App Research News + Theory Book ("Gravity Source" part, twenty chapters) +
+TestGroups (20 suites); AT.Book `GravityService` (20 executable calculations), twenty theory objects
+(Physics layer) and twenty audits g001–g018.
 
 ## Key Unsolved Problems
 
