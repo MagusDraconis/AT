@@ -3121,6 +3121,17 @@ test that cannot fail is not a test.*
 - **CRITICAL.** All DERIVABLE B fail → **the spatial sector CLOSES AS A DERIVATION**. Exactly one survives the strengthened requirement → **the sector CLOSES ON A POSTULATE**, at an exact and known price.
 - **Opened:** an AT-native principle for `g_rr = 2 − |g₀₀|`? Does 3.437585 break the four-scale calibration, the deficit accounting (QG181/182) or the spectral identification of `occ`? Re-examine the horizon structure and QG208 (Hawking with ψ) on the new B, since `g_rr → 2` while `|g₀₀| → 0`. Core: `AT.Core/ResearchXH/SpatialSectorClosure.cs`; **7/7 PASSED**, group G **237/237**.
 
+### G_030 — No-Go Audit (NO-GO: the spatial sector is not derivable)
+**Question:** is there a theorem that any local `B(r) = F(σ)` must violate one of Newton / Cassini / light deflection / clock sector / no-new-primitive?
+- **SIX OF EIGHT CONSTRAINTS ARE INERT.** Newton, Earth clock, GPS, neutron-star audit and the clock sector depend only on **A**; light deflection is `(1+γ)/2` — the same test as Cassini. Live pair: **{Cassini/deflection} vs {no-new-primitive}**.
+- **TWO EXACT EQUIVALENCES** (via `B(γ) = ½ln(1 − γ(e^(2A) − 1))`, verified by solving): **(i) `γ = −1 ⇔ B = σ`** (the counting measure); **(ii) `γ = +1 ⇔ e^(2B) = 2 − e^(2A)`** (`g_rr = 2 − ρ^(2/d) = 2 − |g₀₀|`). The two special γ values correspond **exactly** to the two special B's — and only the excluded one is AT-derived.
+- **PROOF.** `F = Id` (the counting measure — AT's only determination of B from ρ) → `B = σ` → `γ = −1` → **8.6957e4 σ** outside `[0.9999520, 1.0000900]`, deflection **0**. `F ≠ Id` → no AT-derived value in B → **a new primitive** (G_023). Everything else fixes A, fixes numbers, or supplies free content (ψ). ∎
+- **THE ADMITTED BAND IS A SLIVER ON THE WRONG SIDE OF ZERO:** ~**5.5e−10 wide** at solar compactness, sitting at `B ≈ −σ`, while the derived value sits at `B = σ` — **opposite sides of zero** (wrong **sign**). Established rigorously by **exact inversion** (no sampling) and confirmed by a band-resolving sweep (20 001 points, **zero escapes**).
+- **THE DEPARTURE IS NOT SMALL:** survivor `√det g_ij/ρ` = 1.000000004 (Earth) → 1.000012735 (Sun) → 1.733052388 (x = 0.1) → **3.437584871 (J0740+6620, departure 2.44)** → 51.142808724 (x = 1): growth > 10⁵, **O(1) where it is tested hardest**.
+- **OUTPUT: NO-GO.** **Goal — existence of a surviving spatial sector: REFUTED as a DERIVATION** (G_029's *chosen, not derived* elevated to a theorem), **AFFIRMED as a POSTULATE**.
+- **SHARPEST FORM:** `γ = −1 ⇔ B = σ` (refuted) and `γ = +1 ⇔ g_rr = 2 − |g₀₀|` (underivable). **No third.**
+- **CONSEQUENCE — a two-horned dilemma.** Keep the counting measure (`γ = −1`, excluded at 8.6957e4 σ, zero deflection/Shapiro) **or** abandon it (correct optics, but the volume–count identification is replaced by an input the theory does not supply). The choice is not numerical — it is **which of AT's identifications is primitive**, and both cannot be had. Core: `AT.Core/ResearchXH/NoGoTheorem.cs`; **8/8 PASSED**, group G **245/245**.
+
 ## Key Unsolved Problems
 
 1. Numerical values of ℓ, τ, ħ — empirical, not derived

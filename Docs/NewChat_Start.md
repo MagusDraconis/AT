@@ -1765,6 +1765,36 @@ u2014 amends QG207, QG212 and QG32; **issues no new physics claim**.
 - **Opened:** is there an AT-native principle for `g_rr = 2 − |g₀₀|`? Does the 3.437585 volume cost break the four-scale calibration, the deficit accounting (QG181/182) or the spectral identification of `occ`? Re-examine the horizon structure and the Hawking-temperature chain (QG208) on the new B, since `g_rr → 2` while `|g₀₀| → 0`.
 - Core: `AT.Core/ResearchXH/SpatialSectorClosure.cs`; **7/7 PASSED**, group G total **237/237**.
 
+## NO-GO PROVED — the spatial sector is not derivable (ResearchY-G_030, 2026-09-13)
+**Question:** is there a theorem that any local `B(r) = F(σ)` must violate one of Newton / Cassini / light deflection / clock sector / no-new-primitive? **YES — NO-GO.**
+- **SIX OF THE EIGHT CONSTRAINTS ARE INERT.** Newton, the Earth clock, GPS, the neutron-star audit and the clock sector depend **only on A** (untouched by B); light deflection is `(1+γ)/2` — **the same test as Cassini**. The live pair is **{Cassini/deflection} vs {no-new-primitive}**.
+- **TWO EXACT EQUIVALENCES** (verified by solving, via `B(γ) = ½ln(1 − γ(e^(2A) − 1))`):
+
+  ```text
+  (i)   gamma = -1  <=>  B = sigma              (the counting measure  sqrt(det g_ij) = rho)
+  (ii)  gamma = +1  <=>  e^(2B) = 2 - e^(2A)    (g_rr = 2 - rho^(2/d) = 2 - |g00|)
+  ```
+
+  **The two special γ values correspond EXACTLY to the two special B's — and only the excluded one is AT-derived.**
+- **THE PROOF.** `F = Id` — the counting measure, AT's **only** determination of B from ρ — gives `B = σ`, hence `γ = −1`: **8.6957e4 σ** outside the Cassini band `[0.9999520, 1.0000900]`, deflection **identically 0**. `F ≠ Id` places no AT-derived value in B, so `F`'s specification is an input beyond ρ — **a new primitive** by G_023's accounting. Every other ingredient fixes **A**, fixes **numbers** (`occ`, `Σm`, `#g`), or supplies **free content** (the traceless face ψ); none determines B. ∎
+- **THE ADMITTED BAND IS A SLIVER ON THE WRONG SIDE OF ZERO.** At solar compactness it is **~5.5e−10 wide** and sits at `B ≈ +x = −σ`, while the derived value sits at `B = σ = −x` — **opposite sides of zero**. The derived B has the wrong **sign**, not merely the wrong size. Established **rigorously by exact inversion** (no sampling; true at every body) and confirmed by a **band-resolving sweep** (20 001 points over `[−2x, 2x]` per body, **zero escapes**).
+- **THE DEPARTURE IS NOT A SMALL CORRECTION.** Survivor `√det g_ij/ρ`:
+
+  | body | ratio | departure |
+  |---|---:|---:|
+  | Earth | 1.000000004 | 4.2e−9 |
+  | Sun | 1.000012735 | 1.3e−5 |
+  | x = 0.1 | 1.733052388 | 7.3e−1 |
+  | **J0740+6620** | **3.437584871** | **2.44** |
+  | x = 1 | 51.142808724 | 50.1 |
+
+  Growth beyond **10⁵**, reaching **O(1) exactly where the theory is most discriminating**.
+- **Output: NO-GO.**
+- **Goal — existence of a surviving spatial sector:** **REFUTED as a DERIVATION** (G_029's *"chosen, not derived"* **elevated to a theorem**: G_029 found the survivor by postulate, G_030 proves why no derivation exists); **AFFIRMED as a POSTULATE** (`g_rr = 2 − ρ^(2/d)`).
+- **Sharpest form:** `γ = −1 ⇔ B = σ` (refuted) and `γ = +1 ⇔ g_rr = 2 − |g₀₀|` (underivable). **There is no third.**
+- **Consequence — a dilemma with exactly two horns.** (1) **Keep the counting measure** → `γ = −1` → excluded at 8.6957e4 σ, zero deflection, zero Shapiro. (2) **Abandon it** → correct optics, but the volume–count identification is replaced by an input the theory does not supply. The choice is **not numerical**: it is a choice about **which of AT's identifications is primitive**, and G_030 proves the two cannot be had together.
+- Core: `AT.Core/ResearchXH/NoGoTheorem.cs`; **8/8 PASSED**, group G total **245/245**.
+
 ## Latest Repo Sync
 
 Recent commits from the other machine:
@@ -2024,6 +2054,7 @@ Weak-coupling scale note:
 | Literal Verdict Audit | ResearchY-G_027 | **NO RESULT PATH MAY LET A CLASSIFICATION DEPEND ON A LITERAL.** The rule is now **mechanically enforced**: `LiteralVerdictAudit` re-reads the AT.Core source at test time, so a NEW literal→verdict path **fails the build** until it is computed or adjudicated. **7 paths found, ALL BOUNDARY** (authored judgements and input taxonomies, each with its reason cited in place); **ZERO REFUTED remain** — the one refuted path (`GdaggerOriginAnalyzer`: flags, ratio and score all literals, `Score` feeding the ranking, and a typed `RatioToA0 = 1.0` with a `NaN` numerator) is now **derived from the predicted g†**, reproducing the typed values exactly. The registry structurally forbids a REFUTED entry. |
 | Clock Sector Closure | ResearchY-G_028 | **IS THE CLOCK `ρ^(1/d)` OR `ρ^(1/d)·e^ψ`? ANSWER: `ρ^(1/d)` — CLOCK CLOSED.** The potential IS the time exponent (`A = σ + ψ`), so the source law holds **iff ∇ψ = 0**: **ψ cannot be nonzero without changing the source law**. `γ = +1` fixes `ψ = −4σ` uniquely, forcing `A = +3x > 0` — the potential turns POSITIVE and every body is **blueshifted** (J0740+6620 z = −0.5233658 vs +0.2801817; Earth **2000 σ**). ρ-only satisfies **all five** requirements. **CORRECTS G_024/QG212:** the GPS bound is **1.391e−12**, **1.44e9× tighter** than the quoted 2e−3, and QG212's “physical sector” is **repulsive**. The spatial route is the only `γ = +1` that keeps the clock (volume cost 3.437585). |
 | Spatial Sector Closure | ResearchY-G_029 | **EXACTLY ONE B SURVIVES: `g_rr = 2 − ρ^(2/d) = 2 − |g₀₀|`** — the unique member with γ = +1 at ALL orders (`e^(2B) = 2 − e^(2A)`), the reflection of the temporal metric about 1; non-degenerate everywhere physical with `g_rr ∈ (1,2)`. **`B = σ` — the only member AT DERIVES — is REFUTED at Cassini 8.6957e4 σ** (γ = −1, deflection 0, Shapiro 0), so the sector **CLOSES ON A POSTULATE** at a volume cost of **3.437585**, reproducing G_023's recorded value exactly. The requirements pin γ, not B: Cassini bounds the quadratic coefficient only by |c₂+2| ≲ 22.5. |
+| No-Go Audit | ResearchY-G_030 | **NO-GO PROVED.** With `A = σ` fixed, **six of the eight constraints are inert**, and the live pair `{Cassini/deflection}` vs `{no-new-primitive}` cannot both be satisfied. Two **exact** equivalences: **`γ = −1 ⇔ B = σ`** (the counting measure — AT's only derivation — excluded at **8.6957e4 σ** with deflection 0) and **`γ = +1 ⇔ g_rr = 2 − ρ^(2/d)`** (underivable). The admitted band is ~5.5e−10 wide and sits at `−σ` while the derived `B = σ` — **opposite sides of zero**. The counting-measure departure runs 4.2e−9 (Earth) → **2.44** (J0740+6620). A surviving spatial sector is **REFUTED as a derivation** and **AFFIRMED as a postulate**. |
 | G Bridge (QG6↔QG181) | QG182 | BRIDGE ORIGIN (deficit parameters from D96: m₀ = occ₀/Σm = 4/95 = S param, r₀ = ln(span), ρ̄ = 1 → GM_eff = 1/ln(M_Pl/v) = 1/(3·ln A), 0.0969%; identity occ₀·ln(span)·ln(Σm·#g·occ₂) = Σm; two G constructions are the same physical content) |
 | Planck Scale Robustness | QG183 | ROBUST ORIGIN (physical exponent p = ln(M_Pl/v)/ln(A) = 2.99984, cubic to 1e-4; only A³ reproduces M_Pl (0.2%) while A¹/A²/A⁴ fail by 100%/100%/3.6e7%, nearby exponents 47-260% dev; no alternative A selects cubic; 3-factor/3-band/d=3 structure) |
 | Mass-Radius Relation | QG184 | MASS-RADIUS ORIGIN (observed M ∝ R emerges from counting measure: the deficit is per-octave/log — G4ME flat-rotation-curve profile — giving a ∝ −1/r and GM_eff = m₀·R/(d·L·ρ̄) ∝ R; QG13's E ∝ R^d was the compact-void assumption; with S ∝ R^(d−1) (QG12), T ∝ 1/R — Hawking restored, no new primitives) |
