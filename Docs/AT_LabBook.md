@@ -3132,6 +3132,16 @@ test that cannot fail is not a test.*
 - **SHARPEST FORM:** `γ = −1 ⇔ B = σ` (refuted) and `γ = +1 ⇔ g_rr = 2 − |g₀₀|` (underivable). **No third.**
 - **CONSEQUENCE — a two-horned dilemma.** Keep the counting measure (`γ = −1`, excluded at 8.6957e4 σ, zero deflection/Shapiro) **or** abandon it (correct optics, but the volume–count identification is replaced by an input the theory does not supply). The choice is not numerical — it is **which of AT's identifications is primitive**, and both cannot be had. Core: `AT.Core/ResearchXH/NoGoTheorem.cs`; **8/8 PASSED**, group G **245/245**.
 
+### ResearchY-G_031 - Spatial-Origin Audit (REQUIRED)
+
+Traced every path Difference->Density->Metric->Spatial measure to find where `B = sigma` enters. **It does not enter.**
+The conformal ansatz `g_uv = rho^(2n) eta_uv` gives `A = B = n ln rho`, `sqrt(-g00) = rho^n`, `sqrt(det g_ij) = rho^(n d)`;
+in d = 3 the three statements `n = 1/d`, the clock law, and the counting measure are **one equation**. Sweep 401x401: 0 mismatches.
+Chain provenance: DERIVED / ASSUMED / ASSUMED / DERIVED / CORRESPONDENCE. 5 load-bearing uses, 2 neutral.
+Removal breaks count conservation, deficit accounting, area/entropy and cosmological densities by up to **3.437584871x** (J0740+6620).
+G_023's "two pins" is corrected: one exponent choice, enabled by conformal flatness. G_030's dilemma sharpens to
+**conformal flatness + clock law vs optics**. Verdict computed, not typed (G_027 discipline). Group G 252/252.
+
 ## Key Unsolved Problems
 
 1. Numerical values of ℓ, τ, ħ — empirical, not derived

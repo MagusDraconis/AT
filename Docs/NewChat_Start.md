@@ -1795,6 +1795,25 @@ u2014 amends QG207, QG212 and QG32; **issues no new physics claim**.
 - **Consequence — a dilemma with exactly two horns.** (1) **Keep the counting measure** → `γ = −1` → excluded at 8.6957e4 σ, zero deflection, zero Shapiro. (2) **Abandon it** → correct optics, but the volume–count identification is replaced by an input the theory does not supply. The choice is **not numerical**: it is a choice about **which of AT's identifications is primitive**, and G_030 proves the two cannot be had together.
 - Core: `AT.Core/ResearchXH/NoGoTheorem.cs`; **8/8 PASSED**, group G total **245/245**.
 
+## G_031 - Spatial-Origin Audit (COMPLETE, REQUIRED)
+
+`B = sigma` **does not enter as an assumption anywhere.** With `g_uv = rho^(2n) eta_uv`: `A = B = n ln rho`,
+`sqrt(-g00) = rho^n`, `sqrt(det g_ij) = rho^(n d)`. In d = 3:
+
+  `n = 1/d  <=>  sqrt(-g00) = rho^(1/d)  <=>  sqrt(det g_ij) = rho`
+
+**The clock law and the counting measure are THE SAME EQUATION** - two readings of one exponent choice from
+two slots that conformal flatness already made equal. Verified exhaustively (401 x 401 in (n, rho)): **0 mismatches**.
+
+- Provenance chain: Difference->Density **DERIVED** (QG285/286/292); Density->Metric **ASSUMED** (QG207, source of A=B); exponent `n=1/d` **ASSUMED** (= the clock law); Metric->Spatial measure **DERIVED** (algebra); rho as geometric volume **CORRESPONDENCE** (G_018).
+- Usage: **5 LoadBearing** (metric ansatz; N = int rho dV QG194/222; deficit accounting QG181/182; horizon area->entropy QG185/259; cosmological densities), **2 Neutral** (|psi|^2 = rho QG216; RAR scale QG080).
+- Breakage if removed: geometric/count volume ratio 1.000012735 (Sun) -> **3.437584871 (J0740+6620)** -> 51.142808724 (x=1). Four breakages at 2.44.
+- **Renarrates G_023**: there are NOT two pins. Conformal flatness supplies A = B; one exponent choice supplies both. The counting measure is a theorem, not a premise.
+
+**Sharper dilemma (supersedes G_030 phrasing):** not *counting measure vs optics*, but **conformal flatness + clock law vs optics**.
+
+Tests: `Y_G_031_Tests` 7/7. Group G: **252/252**.
+
 ## Latest Repo Sync
 
 Recent commits from the other machine:
