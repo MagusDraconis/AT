@@ -171,9 +171,32 @@ public static class AdaptabilityAudit
     /// <summary>The D_056 blind set (four multiplicity-distribution rings), by name.</summary>
     public static readonly string[] MultiplicityRingNames = [.. MultiplicityRings.Select(r => r.Name)];
 
-    /// <summary>Every named ring the audit family knows: the canonical ring, D_051's set and D_054's set.</summary>
+    /// <summary>
+    /// D_057's rank-budget rings — a designed CONTRAST pair that isolates the mechanism itself.
+    ///
+    /// Half47 adds the N/4 offset ±24 to Pair1-47. For odd k, ±24 contributes exactly 2, so the
+    /// odd-mode sum becomes 6 = 2 + (2 − 2cos θ) + (2 + 2cos θ): the dominant level should SURVIVE at
+    /// a THIRD value, λ = 6, proving the law tracks the level rather than any particular offset.
+    ///
+    /// Triple47 adds ±23 instead. Here 23 = N/4 − 1, so for odd k the middle term is 2 ∓ 2 sin θ and
+    /// the cosines no longer cancel: the sum is 6 ∓ 2 sin θ, so the dominant level should be DESTROYED
+    /// and the ring should behave like a healthy one. Two rings, one offset apart in spirit, opposite
+    /// verdicts.
+    /// </summary>
+    public static readonly (string Name, string Description, (int Offset, double Weight)[] Offsets)[] BudgetRings =
+    [
+        ("Half47", "offsets ±1, ±24, ±47 (degree 6) — the level should SURVIVE at λ = 6",
+            [(1, 1.0), (24, 1.0), (47, 1.0)]),
+        ("Triple47", "offsets ±1, ±23, ±47 (degree 6) — the level should be DESTROYED",
+            [(1, 1.0), (23, 1.0), (47, 1.0)]),
+    ];
+
+    /// <summary>The D_057 blind set (two rank-budget rings), by name.</summary>
+    public static readonly string[] BudgetRingNames = [.. BudgetRings.Select(r => r.Name)];
+
+    /// <summary>Every named ring the audit family knows: the canonical ring and the D_051–D_057 sets.</summary>
     private static readonly (string Name, string Description, (int Offset, double Weight)[] Offsets)[] AllRings =
-        [.. BlindRings, .. EdgeRings, .. MultiplicityRings];
+        [.. BlindRings, .. EdgeRings, .. MultiplicityRings, .. BudgetRings];
 
     /// <summary>The seven-ring family D_052 audits: the canonical ring plus the six blind rings.</summary>
     public static readonly string[] RingFamilyNames =
