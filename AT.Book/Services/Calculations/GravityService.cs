@@ -188,8 +188,52 @@ public sealed class GravityService : ICalculationService
                 + "appearance is real; entropy-driven is REFUTED (the operator is exactly linear and H is slaved to the Dirichlet energy); "
                 + "branching-driven is REFUTED (arrangement-neutral). Cases at m = 200: D96 33.78, D96³ 7.33, Random witness class EMPTY. "
                 + "The mechanism is arrangement-selective, not lattice-selective (ResearchY-G_006)."),
+
+            new("suppression-origin",
+                "Suppression Origin — is the smoothing derived or imported?",
+                "W = I − d·L;  0 ≤ d ≤ 1/2 (from rho >= 0);  selectivity ~ |1 − 4d|;  factor = f(T = m·d)",
+                [
+                    new("trace", "Difference → measure → coarse-graining → Laplacian flow", "every link canonical; RG invariance exact"),
+                    new("unique up to one rate", "W(b) = b·left + (1−2b)·a + b·right", "W(0.2) ≡ DiffuseStep"),
+                    new("isotropy is forced", "anisotropic weights leak at the reflecting edge", "no antisymmetric coupling (NP_174)"),
+                    new("admissible range (DERIVED)", "0 <= d <= 1/2", "convex combination; d = 0.6 gives min rho < 0"),
+                    new("selectivity |mu_95|/|mu_1|", $"{Selectivity(0.2):F4} (d = 0.2) / {Selectivity(0.25):F6} (d = 1/4) / {Selectivity(0.5):F6} (d = 1/2)", "maximal at 1/4, ZERO at 1/2"),
+                    new("factor at m = 200", string.Join("  ", new[] { 0.1, 0.2, 0.3, 0.4, 0.5 }.Select(d => $"d={d:F1}: {TiltRatioAt(d, 200):F2}")), "collapses at d = 1/2"),
+                    new("factor at fixed T = 40", string.Join("  ", new[] { (0.05, 800), (0.1, 400), (0.2, 200), (0.4, 100) }.Select(p => $"{TiltRatioAt(p.Item1, p.Item2):F2}")), "0.17 % spread over a 20x range of d"),
+                    new("witness dichotomy", "32.4 (canonical) / 1.81 (d = 1/2) / 7.1 (biharmonic) / 1.0 (identity)", "holds for every 0 < d < 1/2"),
+                    new("time", "branching is diagonal: |da| at 2^1000 rho = 0", "TIME REFUTED as the cause"),
+                    new("horizon for 3.746e5", "≈ 729 relaxation steps", "a horizon, not a duration"),
+                ],
+                "The suppressing operator's FORM is DERIVED (the infinitesimal form of the canonical coarse-graining, with exact RG invariance) and it is UNIQUE up to one "
+                + "scalar rate among local, linear, isotropic, count-conserving and scale-free maps; the admissible range 0 ≤ d ≤ ½ is DERIVED from ρ ≥ 0; the values "
+                + "d = 0.2 and m = 200 — hence the 34× — are BOUNDARY (the same flow at fixed T = m·d = 40); the nearest-neighbour average IS d = ½ and destroys the "
+                + "mechanism, the spectral cutoff is non-local and non-positive, the biharmonic is non-positive and unstable beyond κ = 1/16, and the identity suppresses "
+                + "nothing; and TIME is REFUTED as the cause (ResearchY-G_007)."),
         ];
     }
+
+    // ── G_007: the operator family's rate dependence ─────────────────────────────
+
+    /// <summary>Closed-form suppression factor of the canonical D96 witness tilt at rate d after m steps.</summary>
+    private static double TiltRatioAt(double d, int m)
+    {
+        var tilt = D96Tilt();
+        int n = tilt.Length;
+        var w = new double[n];
+        for (int k = 0; k < n; k++)
+        {
+            double s = 0.0;
+            for (int i = 0; i < n; i++) s += tilt[i] * Math.Cos(Math.PI * k * (i + 0.5) / n);
+            w[k] = s;
+        }
+        w[0] = 0.0;
+        double num = 0.0, den = 0.0;
+        for (int k = 1; k < n; k++) { num += w[k] * w[k] * Math.Pow(Mu(k, d, n), 2.0 * m); den += w[k] * w[k]; }
+        return Math.Sqrt(den / num);
+    }
+
+    /// <summary>Selectivity of the relaxation filter: |mu at the fastest mode| / |mu_1|.</summary>
+    private static double Selectivity(double d) => Math.Abs(Mu(95, d)) / Math.Abs(Mu(1, d));
 
     // ── G_006: the relaxation operator's exact spectrum and closed-form contraction ────────────────
 

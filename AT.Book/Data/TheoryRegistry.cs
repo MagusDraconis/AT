@@ -207,6 +207,20 @@ public sealed class TheoryRegistry
             CalculationId: "suppression-mechanism",
             References: ["ResearchY-G_006", "ResearchY-G_005"],
             AuditIds: ["g006"]),
+        new("suppression-origin", "Suppression Origin", "DiffuseStep is not imported: it is the canonical coarse-graining's infinitesimal form, unique up to one scalar rate.",
+            TheoryLayer.Physics, TheoryClassification.Derived, TheoryObjectKind.Derivation,
+            ["gravity-suppression", "gravity-control"],
+            Narrative: "Tracing Difference → Actualization → ρ evolution → DiffuseStep shows every link is canonical: the counting measure (Σρ = 1), the branching flow (arrangement-neutral), the "
+                + "exactly RG-invariant coarse-graining of the per-octave increments, and finally the Euler step of the Laplacian flow on that index. Imposing locality, constant coefficients, "
+                + "symmetry and row-sum conservation leaves exactly one family — W(b) = b·left + (1−2b)·a + b·right — so the operator is UNIQUE up to a single scalar rate, and isotropy is forced "
+                + "(an anisotropic weight leaks at reflecting boundaries). Positivity of ρ forces 0 ≤ d ≤ ½ (DERIVED); at d = ½ the fastest mode oscillates (μ₉₅ = −0.999465) and selectivity "
+                + "vanishes, while the mechanism needs selectivity |1 − 4d|. The values d = 0.2 and m = 200 are BOUNDARY: at fixed T = m·d = 40 the factor varies by 0.17 % across a 20× range of d. "
+                + "Of the four replacements only the nearest-neighbour average is admissible — it IS d = ½ — and it destroys the mechanism (2.01 vs 33.78). Time is not the cause: the branching flow "
+                + "is diagonal on the arrangement and suppresses nothing at any μ.",
+            Formula: "W = I − d·L;  0 <= d <= 1/2;  selectivity ~ |1 − 4d|;  factor = f(T = m·d)",
+            CalculationId: "suppression-origin",
+            References: ["ResearchY-G_007", "QG_194", "NP_174"],
+            AuditIds: ["g007"]),
 
         // ── Layer 5 — Correspondence ───────────────────────────────────────────
         new("thermodynamics", "Thermodynamics", "An added occupancy layer over the structural modes (temperature is BOUNDARY).",
@@ -673,5 +687,25 @@ public sealed class TheoryRegistry
             + "(μ₁^200 = 0.958). No reclassification (D_040 untouched); no canonical claim changes; no new primitive.",
             AuditStatus.Passed, new DateTime(2026, 9, 12), TheoryLayer.Physics, TheoryClassification.Derived,
             ["g002", "g003", "g005"]),
+        new("g007", "Suppression Origin Audit", "Is DiffuseStep derived or imported? And does time have anything to do with the suppression?",
+            "DERIVED FORM, DERIVED RANGE, BOUNDARY VALUES — and TIME REFUTED. TRACE: Difference → counting measure (Σρ = 1, QG194); Actualization → ρ_(k+1) = μρ_k, "
+            + "count-conserving and ARRANGEMENT-NEUTRAL (|Δa| at 10⁶ρ = 0.00e+00); ρ evolution → the per-octave increments' coarse-graining conserves the total and is "
+            + "EXACTLY RG-invariant (CoarseGrainedAlpha(α) = α to 1e-12, α = 0…2.5); DiffuseStep → the Euler step of the Laplacian flow on the occupancy index "
+            + "(tridiagonal support 3, symmetric to 1e-15, rows summing to 1, semigroup to 1e-15). UNIQUENESS: locality + constant coefficients + symmetry + row-sum "
+            + "conservation leave exactly W(b) = b·left + (1−2b)·a + b·right — one free scalar (W(0.2) ≡ DiffuseStep) — and isotropy is FORCED, since an anisotropic weight "
+            + "leaks at reflecting boundaries (Σρ − 1 = (l−r)(a_0 − a_{N−1})) and the canonical chain has no antisymmetric coupling (NP_174). ADMISSIBLE RANGE DERIVED "
+            + "FROM ρ ≥ 0: the update is a convex combination iff 0 ≤ d ≤ ½ (min ρ = +1.04e-2 at d = 0.2 and ½, −8.96e-2 at d = 0.6), with |μ_k| ≤ 1 and μ₉₅ = −0.999465 "
+            + "at d = ½ (oscillation, no decay); selectivity |μ₉₅|/|μ₁| is |1−4d|-like: 0.800, 0.600, 0.200, 0.000268 (d = 0.25, maximal), 0.200, 0.600, 1.000000 (d = ½, "
+            + "flat). SENSITIVITY IN THE RATE: factors at m = 200 are 16.70 / 25.12 / 33.78 / 36.74 / 39.43 / 44.34 / 2.01 (d = 0.05…0.50) but at fixed T = m·d = 40 are "
+            + "33.75 / 33.76 / 33.76 / 33.78 / 33.81 — 0.17 % across a 20× range of d — so (d = 0.2, m = 200) is a BOUNDARY representative of T = 40. REPLACEMENTS: the "
+            + "nearest-neighbour average IS d = ½ (verified to 1e-15) and collapses the witness factor to 2.01 (|μ₉₅|²⁰⁰ = 0.898); the spectral cutoff (k_c = 48) is NON-LOCAL "
+            + "(delta → 96 cells in one step vs 3) and NON-POSITIVE (min ρ = −4.52e-2); the biharmonic is a 5-point next-nearest stencil, non-positive (min ρ = −1.46e-2) and "
+            + "unstable beyond κ = 1/16 (−0.5991 at κ = 0.1), and weaker anyway (7.15); the identity gives 1.00 and contradicts G_004's ≥ 3.746e5. WITNESS DICHOTOMY: 32.4 "
+            + "(DiffuseStep, HOLDS), 1.81 (d = ½, FAILS), 7.1 (biharmonic), 1.0 (identity) — above 8 for every 0 < d < ½. TIME REFUTED: the branching flow is diagonal on the "
+            + "arrangement (support 1 vs 3), leaves the normalised profile and field exactly invariant for any μ over any duration (|Δa| at 2¹⁰⁰⁰ρ = 0.00e+00), the factor "
+            + "carries no rate (scale-free to 2.34e-13) and density/metric are static at criticality — m is a COARSE-GRAINING HORIZON (≈729 steps to reach 3.746e5), not a "
+            + "duration. No reclassification (D_040 untouched; G_006's 'EMERGENT 34' sharpened to BOUNDARY at fixed T = m·d); no canonical claim changes; no new primitive.",
+            AuditStatus.Passed, new DateTime(2026, 9, 12), TheoryLayer.Physics, TheoryClassification.Derived,
+            ["g002", "g005", "g006"]),
     ];
 }

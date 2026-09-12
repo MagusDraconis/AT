@@ -194,6 +194,14 @@ index), not lattice-selective: no property of the D96 spectrum is doing the supp
 
 ## 8. What this closes, and what it opens
 
+> **Refinement (ResearchY-G_007, 2026-09-12).** This audit called the number 34 "EMERGENT". G_007 sharpens
+> that: the operator's **form is DERIVED** (the infinitesimal form of the canonical coarse-graining, unique
+> up to one scalar rate), the **admissible range `0 ≤ d ≤ ½` is DERIVED** from `ρ ≥ 0`, and the number is
+> **BOUNDARY at fixed `T = m·d = 40`** — at fixed `T` it changes by only 0.17 % across a 20× range of `d`
+> (33.75…33.81), so `(d = 0.2, m = 200)` and `T = 40` are interchangeable representatives. G_006's §9 OP1
+> ("why `d = 0.2`?") is thereby re-scoped: the range is derived, the value remains BOUNDARY. See
+> `ResearchY-G_007.md`.
+
 **Closes G_005's open mechanism.** The G_002 free directions are *within-multiplet* rearrangements, i.e.
 **high-k content** in the occupancy index, so they are precisely the modes the coarse-graining filter
 removes fastest. The smooth, scale-free deficit that produces the observed galactic field (G4-ME21's

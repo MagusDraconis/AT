@@ -634,6 +634,60 @@ branching all REFUTED.**
   The exact map from *spatial* smoothness to *occupancy-index* smoothness assumed in the closing argument.
   And the cube's weaker 7.33× suggests multiplicity structure sets the filter's passband — untested.
 
+## Suppression Origin Audit — the smoothing is DERIVED, the rate is BOUNDARY, and time is not the cause (ResearchY-G_007, 2026-09-12)
+
+G_007 asks whether `DiffuseStep` (G_006's suppressing term) is **derived or imported**, tracing
+**Difference → Actualization → ρ evolution → DiffuseStep**, and tests four replacements — nearest-neighbour
+average, spectral cutoff, higher-order (biharmonic) diffusion, identity — measured against the suppression
+factor, the G_006 34× and the G_003/G_005 witnesses. It also answers: **does TIME have anything to do with
+this suppression?**
+
+| link | canonical content | verified |
+|---|---|---|
+| Difference | counting measure, `Σρ = 1` (QG194) | `Σρ = 1.000000000000` |
+| Actualization | `ρ_(k+1) = μρ_k`, count-conserving, **arrangement-neutral** | `|Δa|` at `10⁶ρ` = **0.00e+00** |
+| ρ evolution | increments coarse-grain; **exact RG invariance** | `CoarseGrainedAlpha(α) = α` to 1e-12 (α = 0…2.5) |
+| DiffuseStep | **Euler step of the Laplacian flow** on that index: `W = I − d·L` | tridiagonal (3), symmetric, rows = 1, semigroup to 1e-15 |
+
+- **UNIQUENESS (DERIVED):** locality + constant coefficients + symmetry + row-sum conservation leave exactly
+  the **one-parameter** family `W(b) = b·left + (1−2b)·a + b·right`; `W(0.2) ≡ DiffuseStep`.
+  **Isotropy is forced, not assumed**: an anisotropic weight leaks at reflecting boundaries
+  (`Σρ − 1 = (l−r)(a₀ − a_N₋₁)`), and the canonical chain has no antisymmetric coupling (NP_174).
+- **The admissible RANGE is DERIVED by `ρ ≥ 0`:** the update is a convex combination iff `0 ≤ d ≤ ½`
+  (min ρ = +1.04e-2 at d = 0.2 and ½; **−8.96e-2 at d = 0.6**); `|μ_k| ≤ 1`, with `μ₉₅ = −0.999465` at
+  d = ½ — the fastest mode **oscillates** instead of decaying. Selectivity `|μ₉₅|/|μ₁|`:
+  **0.800 · 0.600 · 0.200 · 0.000268 (d = ¼, maximal) · 0.200 · 0.600 · 1.000000 (d = ½, ZERO)**.
+- **SENSITIVITY IS IN THE RATE:** m = 200 factors 16.70 / 25.12 / **33.78** / 36.74 / 39.43 / 44.34 / **2.01**
+  for d = 0.05…0.50, but at fixed `T = m·d = 40` they are **33.75 / 33.76 / 33.76 / 33.78 / 33.81** — a
+  **0.17 % spread across a 20× range of d**. `T` is the physical control parameter; `(d = 0.2, m = 200)` is a
+  **BOUNDARY** representative of `T = 40`.
+- **The four replacements:** the **nearest-neighbour average IS `d = ½`** (verified to 1e-15) and collapses
+  the mechanism (**2.01**; the worst mode keeps 90 % after 200 steps); the **spectral cutoff** is
+  **non-local** (delta → 96 cells in one step vs 3) and **non-positive** (min ρ = −4.52e-2); the
+  **biharmonic** is a 5-point next-nearest stencil, non-positive (min ρ = −1.46e-2) and **unstable beyond
+  κ = 1/16** (weaker at 7.15); the **identity** gives 1.00 and contradicts G_004's ≥ 3.746e5.
+- **Witness dichotomy** (witness vs observed smooth mode): **32.4 HOLDS** (DiffuseStep) · 1.81 FAILS
+  (d = ½) · 7.1 (biharmonic) · 1.0 REFUTED (identity) — above 8 for **every** `0 < d < ½`.
+- **TIME — REFUTED as the cause.** The branching flow is **diagonal** on the arrangement (support 1 vs 3:
+  the relaxation mixes *adjacent levels*) and leaves the normalised profile and field **exactly invariant**
+  for any μ over any duration (`|Δa|` at `2¹⁰⁰⁰ρ` = 0.0); the factor carries no rate (scale-free to 2.34e-13);
+  density and metric are static at criticality. **`m` is a coarse-graining horizon** (≈729 steps to reach
+  3.746e5 by relaxation alone), **not a duration**; the only temporal readings require identifying one
+  relaxation step with one generation — an extra assumption, and even then μ cancels.
+- **Verdicts.** DERIVED: the form, uniqueness up to one scalar, the admissible range, the qualitative
+  verdict for all `0 < d < ½`. BOUNDARY: `d = 0.2`, `m = 200`, hence 34 (`T = m·d = 40`) and the index
+  identification inherited from G_005/G_006. REFUTED: "DiffuseStep is imported/arbitrary"; the
+  cutoff/biharmonic/identity as canonical operators; the nearest-neighbour average as an equivalent
+  suppressor; **time as the cause**.
+- **Files.** `Docs/ResearchY/G_GravitySource/ResearchY-G_007.md`,
+  `AT.Tests/ResearchY/G_GravitySource/Y_G_007_Tests.cs` (9/9 ✅, ~1 s; group G total 58/58),
+  `Docs/ResearchY/Tests/Results/Y_G_007_Result.md`; AT.App (Research News + Theory Book chapter + TestGroup)
+  and AT.Book (`suppression-origin` calculation, theory object + audit `g007`).
+- **Next open questions (G_007 OP1–OP5).** What fixes `d = 0.2` / `T = 40`? What fixes the step count
+  (`m ≈ 200`)? Is the occupancy-index ↔ octave-chain identification exact or itself BOUNDARY? Do
+  biharmonic-like deformations appear anywhere in the canonical chain (none found)? And is the 0.17 %
+  `T`-invariance exact in the continuum limit?
+
 ## Latest Repo Sync
 
 Recent commits from the other machine:
@@ -868,6 +922,7 @@ Weak-coupling scale note:
 | Gravity Calibration | ResearchY-G_004 | CALIBRATED at 3 of 4 scales with NO free parameters: Earth 0.99600 (GM_⊕/R_⊕² = 9.820250 vs 9.780965; residual = the derived-G offset 0.40%), Sun–Earth 0.99600 (+ψ perihelion 42.98″/century, PPN γ=β=+1; GPS 38.5 vs 38.6 μs/day), Galaxy RAR 0.86850 (g† = cH₀/2π vs the literature mean; 0.9226 vs the project's combined a₀/cH₀) · CORRELATED: the RAR interpolating function (AT-native: the α=0 log deficit) · REFUTED: the cluster modified-gravity channel (Coma a_pred/a_obs = 0.51759, 1.93× short; MOND 0.610) and a uniform cosmic AT gradient (104× above the local bound). Critical: 10⁻⁶ g needs Δln ρ = 0.15151 over 15 kpc, but the realised field is g† = 1.06e-11 g (9.41e4× below); locally a point-like deficit gives exactly Newton with G_AT and no anomaly (G4-ME22) |
 | Control Realizability | ResearchY-G_005 | SUPPRESSED, not FORBIDDEN: the large G_003 modes conserve the count (Σρ = 1, deficit mass 0, QG194), break no symmetry (A₀ = 45, lock 0.80231 exact, block sums L1 = 0) and occupy genuinely free directions (51 of 96) — they are simply never counted. STABILITY: the uniform measure is the exact fixed point of the canonical diffusion and a witness tilt contracts ~34× in 200 steps (std 0.00815358 → 0.000241) with H rising to ln 96 → OFF-ATTRACTOR. ENTROPY is CAPPED (max ΔS = ln 96 ⇒ 1/96 = 0.010417, 3.6e7× short of 3.746e5; the witness costs ΔS = 0.272565 = a factor 1.31) ⇒ NOT thermodynamic. THE MECHANISM IS AT's Poisson law δ = 1/√⟨N⟩ read forward: ⟨N⟩ = 3.8569e11 makes the observed 1.6102e-6 typical (P = 0.61), the 1 % ceiling 4.8867e-6, and the required 3.746e5 suppression is reached at 8.1577e-6 (5.07× observed); witnesses cost −ln P = 1.99e8 … 7.02e10. DYNAMICAL: the flow is arrangement-neutral (ρ_(k+1) = μρ_k, same μ per cell; a(λρ) = a(ρ)) and the attractor erases arrangements ⇒ no internal drive. ACCESSIBLE = attractor + phase + Δ ≤ 4.8867e-6 (incl. the observed field); FORBIDDEN = Σρ ≠ 1, changed A₀/pairing, cell > 1/l_P³, or Δ > ln 96. G_004's CALIBRATED verdict is thereby explained dynamically |
 | Suppression Mechanism | ResearchY-G_006 | The suppressing term is the RELAXATION (coarse-graining) operator RhoDynamics.DiffuseStep — a LINEAR LOW-PASS FILTER on the eigenspace-occupancy index with the exact spectrum μ_k = 1 − 2d(1 − cos(πk/N)), d = 0.2. Every Neumann mode is an EXACT eigenvector decaying geometrically: μ₁ = 0.999785834991 (1/e after 4669 steps, survives 200 steps at 0.958067), μ₄₈ = 0.6 exactly, μ₉₅ = 0.200214165009 (1.99e-140 after 200 steps) — a 10^140 rate spread. THE 34× DERIVED: 1/r(200) = 33.78 = exp(200 × 0.0175991) = exp(3.5198 nats), from the closed form r(m) = sqrt(Σ_{k≥1} w_k²μ_k^{2m}/Σ_{k≥1} w_k²) (w = DCT-II, mean excluded) which reproduces iteration to < 1e-9 at every horizon m = 1…50 000; ladder 2.27 (m = 1) → 16.79 (50) → 33.78 (200) → 65.13 (1000) → 2.49e6 (50 000) ⇒ DERIVED as a law, EMERGENT as a number. POWER LAW REFUTED as the law (tail slope −2.1418813131e-4 = ln μ₁ to 1.85e-10, R² = 1.0; the rate converges to the geometric floor 2.1419e-4 instead of zero) though its finite-window appearance is real (R² 0.9945 vs 0.7579; window rate 37.7× the true rate) ⇒ EMERGENT. ENTROPY DRIVEN REFUTED (operator exactly linear, 3.47e-18; H + (N/2)E → ln 96 with residual 9.7e-7 ⇒ entropy downstream). BRANCHING DRIVEN REFUTED (arrangement-neutral, a(λρ) = a(ρ) to 5.56e-11; basin 1 at every size; field removed only by relaxation, max|a| 0.6032 → 1.8746e-3 = 322×). CASES at m = 200: D96 33.78, D96³ 7.33 (884 736 modes, A₀ = 20 812), Random witness class EMPTY (A₀ = 96, free room 0; extremal alternation 55.13). μ_k depends on N ONLY ⇒ arrangement-selective, not lattice-selective. Closes G_005: the free directions are high-k and erased fastest while the observed smooth deficit survives on the slow mode (μ₁^200 = 0.958) |
+| Suppression Origin | ResearchY-G_007 | DERIVED FORM, DERIVED RANGE, BOUNDARY VALUES, TIME REFUTED. TRACE (canonical): Difference → counting measure (Σρ = 1); Actualization → ρ_(k+1) = μρ_k, ARRANGEMENT-NEUTRAL (|Δa| at 10⁶ρ = 0.00e+00); ρ evolution → increments coarse-grain with EXACT RG invariance (CoarseGrainedAlpha(α) = α to 1e-12); DiffuseStep → the Euler step of the Laplacian flow (tridiagonal, symmetric, rows summing to 1, semigroup to 1e-15). UNIQUENESS: locality + constant coefficients + symmetry + row-sum conservation leave exactly W(b) = b·left + (1−2b)·a + b·right — ONE free scalar (W(0.2) ≡ DiffuseStep) — and isotropy is FORCED (anisotropic weights leak at reflecting boundaries; no antisymmetric coupling, NP_174). RANGE DERIVED FROM ρ ≥ 0: convex combination iff 0 ≤ d ≤ ½ (min ρ = +1.04e-2 at d = 0.2 and ½, −8.96e-2 at d = 0.6); at d = ½ the fastest mode reaches μ₉₅ = −0.999465 and oscillates; selectivity |μ₉₅|/|μ₁| ≈ |1−4d| = 0.800/0.600/0.200/0.000268 (d = ¼ max)/0.200/0.600/1.000000 (d = ½, flat). SENSITIVITY IN THE RATE: m = 200 factors 16.70/25.12/33.78/36.74/39.43/44.34/2.01 (d = 0.05…0.50) but at fixed T = m·d = 40 they are 33.75/33.76/33.76/33.78/33.81 — 0.17 % spread over a 20× range of d ⇒ (d = 0.2, m = 200) is BOUNDARY for T = 40. REPLACEMENTS: nearest-neighbour average IS d = ½ (1e-15) and collapses the mechanism (2.01; worst mode keeps 90 %); spectral cutoff NON-LOCAL (delta → 96 cells) and NON-POSITIVE (min ρ = −4.52e-2); biharmonic 5-point next-nearest, non-positive (−1.46e-2), unstable beyond κ = 1/16 (weaker, 7.15); identity 1.00 contradicts G_004's ≥ 3.746e5. WITNESS DICHOTOMY 32.4 (holds) / 1.81 (fails) / 7.1 / 1.0 — above 8 for every 0 < d < ½. TIME REFUTED: branching is diagonal (support 1 vs 3), leaves profile and field exactly invariant for any μ over any duration (|Δa| at 2¹⁰⁰⁰ρ = 0.0), the factor carries no rate (scale-free to 2.34e-13), density/metric static at criticality ⇒ m is a COARSE-GRAINING HORIZON (≈729 steps for 3.746e5), not a duration |
 | G Bridge (QG6↔QG181) | QG182 | BRIDGE ORIGIN (deficit parameters from D96: m₀ = occ₀/Σm = 4/95 = S param, r₀ = ln(span), ρ̄ = 1 → GM_eff = 1/ln(M_Pl/v) = 1/(3·ln A), 0.0969%; identity occ₀·ln(span)·ln(Σm·#g·occ₂) = Σm; two G constructions are the same physical content) |
 | Planck Scale Robustness | QG183 | ROBUST ORIGIN (physical exponent p = ln(M_Pl/v)/ln(A) = 2.99984, cubic to 1e-4; only A³ reproduces M_Pl (0.2%) while A¹/A²/A⁴ fail by 100%/100%/3.6e7%, nearby exponents 47-260% dev; no alternative A selects cubic; 3-factor/3-band/d=3 structure) |
 | Mass-Radius Relation | QG184 | MASS-RADIUS ORIGIN (observed M ∝ R emerges from counting measure: the deficit is per-octave/log — G4ME flat-rotation-curve profile — giving a ∝ −1/r and GM_eff = m₀·R/(d·L·ρ̄) ∝ R; QG13's E ∝ R^d was the compact-void assumption; with S ∝ R^(d−1) (QG12), T ∝ 1/R — Hawking restored, no new primitives) |

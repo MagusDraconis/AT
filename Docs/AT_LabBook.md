@@ -2076,11 +2076,11 @@ in the historical program counts below.
 | AT-QG | 182 | Complete |
 | **Total** | **289** | |
 
-## ResearchY G-Program — Gravity Source, Control, Magnitude, Calibration, Realizability, Mechanism (6 audits, 2026-09-12)
+## ResearchY G-Program — Gravity Source, Control, Magnitude, Calibration, Realizability, Mechanism, Origin (7 audits, 2026-09-12)
 
-New ResearchY group **G — Gravity Source**. Suite: `AT.Tests/ResearchY/G_GravitySource/` (49/49 pass,
+New ResearchY group **G — Gravity Source**. Suite: `AT.Tests/ResearchY/G_GravitySource/` (58/58 pass,
 ~1 s); shared machinery `AT.Tests/Shared/DensityField.cs`, `AT.Tests/Shared/PhysicalUnits.cs`.
-Detailed docs: `Docs/ResearchY/G_GravitySource/ResearchY-G_00{1..6}.md`.
+Detailed docs: `Docs/ResearchY/G_GravitySource/ResearchY-G_00{1..7}.md`.
 
 ### G_001 — Gravity Source Audit
 **Status:** Complete. **SOURCE = the actualization density ρ** (counting measure), and for the attractive
@@ -2134,9 +2134,6 @@ REFUTED (cluster modified gravity).**
   the ephemeris bound (REFUTED); locally a point-like deficit gives exactly `a = −G_AT M/r²` with no
   anomalous term (G4-ME22) — the 1/r flat-curve regime needs a scale-free extended deficit (G4-ME21).
 
-**App/Book surfaced:** AT.App Research News + Theory Book ("Gravity Source" part, six new chapters) +
-TestGroups; AT.Book `GravityService` (6 executable calculations), six theory objects (Physics layer) and
-six audits g001–g006.
 
 ### G_005 — Control Realizability Audit
 **Status:** Complete. **SUPPRESSED, not FORBIDDEN.** The large G_003 modes violate nothing (count
@@ -2206,6 +2203,37 @@ Random), four candidates.
   exactly what the filter removes fastest — while the smooth scale-free deficit behind the observed galactic
   field (G4-ME21 one void per octave ≈ k = 1) survives on the slow mode (`μ₁²⁰⁰ = 0.958`). **Suppression and
   observability are the two ends of the same filter.**
+
+### G_007 — Suppression Origin Audit
+**Status:** Complete. **DERIVED FORM, DERIVED RANGE, BOUNDARY VALUES — and TIME REFUTED.**
+
+| link | canonical content | verified |
+|---|---|---|
+| Difference | counting measure, `Σρ = 1` (QG194) | 1.000000000000 |
+| Actualization | `ρ_(k+1) = μρ_k`, count-conserving, arrangement-neutral | `\|Δa\|` at `10⁶ρ` = 0.00e+00 |
+| ρ evolution | increments coarse-grain with EXACT RG invariance | `CoarseGrainedAlpha(α) = α` (1e-12) |
+| DiffuseStep | Euler step of the Laplacian flow: `W = I − d·L` | tridiagonal, symmetric, rows = 1, semigroup (1e-15) |
+
+- **Uniqueness (DERIVED):** locality + constant coefficients + symmetry + row-sum conservation ⇒ exactly
+  `W(b) = b·left + (1−2b)·a + b·right`, **one free scalar**; `W(0.2) ≡ DiffuseStep`. Isotropy is **forced**
+  (an anisotropic weight leaks at reflecting boundaries: `Σρ − 1 = (l−r)(a₀ − a_N₋₁)`; NP_174 gives no
+  antisymmetric coupling).
+- **Range DERIVED by `ρ ≥ 0`:** convex combination iff `0 ≤ d ≤ ½` (min ρ = +1.04e-2 at d = 0.2 and ½;
+  **−8.96e-2 at d = 0.6**); `μ₉₅ = −0.999465` at d = ½ (oscillation, not decay). Selectivity
+  `|μ₉₅|/|μ₁| ≈ |1 − 4d|`: 0.800 / 0.600 / 0.200 / **0.000268 (d = ¼)** / 0.200 / 0.600 / **1.000000 (d = ½)**.
+- **Sensitivity in the rate:** m = 200 factors 16.70 / 25.12 / **33.78** / 36.74 / 39.43 / 44.34 / **2.01**;
+  at fixed `T = m·d = 40`: 33.75 / 33.76 / 33.76 / 33.78 / 33.81 — **0.17 % spread over a 20× range of d**.
+- **Replacements:** nearest-neighbour average **IS `d = ½`** (collapses to 2.01); spectral cutoff
+  **non-local** (delta → 96 cells) and **non-positive** (−4.52e-2); biharmonic 5-point, non-positive
+  (−1.46e-2), **unstable beyond κ = 1/16**, weaker (7.15); identity 1.00 (contradicts G_004).
+- **Witness dichotomy:** 32.4 HOLDS / 1.81 FAILS / 7.1 weaker / 1.0 REFUTED — above 8 for every `0 < d < ½`.
+- **TIME REFUTED:** branching is diagonal (support 1 vs 3), profile and field exactly invariant for any μ
+  over any duration, factor carries no rate (scale-free to 2.34e-13), static at criticality ⇒ `m` is a
+  **coarse-graining horizon** (≈729 steps for 3.746e5), not a duration.
+
+**App/Book surfaced:** AT.App Research News + Theory Book ("Gravity Source" part, seven new chapters) +
+TestGroups; AT.Book `GravityService` (7 executable calculations), seven theory objects (Physics layer) and
+seven audits g001–g007.
 
 ## Key Unsolved Problems
 
