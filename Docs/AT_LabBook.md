@@ -2076,11 +2076,11 @@ in the historical program counts below.
 | AT-QG | 182 | Complete |
 | **Total** | **289** | |
 
-## ResearchY G-Program — Gravity Source, Control, Magnitude, Calibration, Realizability, Mechanism, Origin (7 audits, 2026-09-12)
+## ResearchY G-Program — Gravity Source, Control, Magnitude, Calibration, Realizability, Mechanism, Origin, Controlled Suppression (8 audits, 2026-09-12)
 
-New ResearchY group **G — Gravity Source**. Suite: `AT.Tests/ResearchY/G_GravitySource/` (58/58 pass,
+New ResearchY group **G — Gravity Source**. Suite: `AT.Tests/ResearchY/G_GravitySource/` (66/66 pass,
 ~1 s); shared machinery `AT.Tests/Shared/DensityField.cs`, `AT.Tests/Shared/PhysicalUnits.cs`.
-Detailed docs: `Docs/ResearchY/G_GravitySource/ResearchY-G_00{1..7}.md`.
+Detailed docs: `Docs/ResearchY/G_GravitySource/ResearchY-G_00{1..8}.md`.
 
 ### G_001 — Gravity Source Audit
 **Status:** Complete. **SOURCE = the actualization density ρ** (counting measure), and for the attractive
@@ -2231,9 +2231,33 @@ Random), four candidates.
   over any duration, factor carries no rate (scale-free to 2.34e-13), static at criticality ⇒ `m` is a
   **coarse-graining horizon** (≈729 steps for 3.746e5), not a duration.
 
-**App/Book surfaced:** AT.App Research News + Theory Book ("Gravity Source" part, seven new chapters) +
-TestGroups; AT.Book `GravityService` (7 executable calculations), seven theory objects (Physics layer) and
-seven audits g001–g007.
+### G_008 — Controlled Suppression Audit
+**Status:** Complete. **Nothing persists on its own.** Four classes × three measures.
+
+| k | 1 | 5 | 12 | 24 | 48 | 72 | 95 |
+|---|---|---|---|---|---|---|---|
+| μ_k | 0.99978583 | 0.99465733 | 0.96955181 | 0.88284271 | 0.60000000 | 0.31715729 | 0.20021417 |
+| lifetime τ_k | **4668.80** | 186.67 | 32.34 | 8.03 | 1.96 | 0.87 | **0.622** |
+| after 200 steps | **0.9581** | 0.3425 | 2.06e-3 | 1.50e-11 | 4.27e-45 | 1.80e-100 | **1.99e-140** |
+| gain `1/(1 − μ_k)` | **4669.30** | 187.17 | 32.84 | 8.54 | 2.50 | 1.46 | **1.2503** |
+
+- **Stationary:** `μ₀ = 1` unique ⇒ only uniform survives; undriven high-k **SUPPRESSED**, smooth
+  **METASTABLE** (the observed galactic situation).
+- **Driven:** `ρ* = c·v_k/(1 − μ_k)` exact (1.2e-15); `Σs = 0` required; witness-driven state is allowed
+  (`ρ_min = 0.0025`, `Σρ = 1`) ⇒ **STABLE**.
+- **Price tag:** 1566× per unit peak-to-peak contrast, **5354×** per unit L1, pure-mode **3734.4×** — the
+  highest mode needs **0.7998 of its amplitude injected every step** (L1 = 0.4868 ≈ 49 % of the count) vs
+  2.1417e-4 for the smooth class ⇒ **re-created, not maintained**.
+- **Mode matching:** `ρ*` is a filtered copy of the drive — a smooth-only drive holds **zero** high-k content.
+- **Periodic:** `sup_ω \|H_k\|` = the DC gain at ω = 0 for every k; no amplifying band ⇒ **SUPPRESSED**.
+- **Boundary:** an edge dipole holds a **smooth ramp** (high-k share 1.42e-6) with gain **120.0**, contrast
+  capped by `ρ ≥ 0` at **3.09 % of the count**.
+- **Goal:** no gravity-control state persists without a mode-matched structured external agent (which the
+  canonical chain does not supply) — G_005 sharpened from *not realised* to **not maintainable**.
+
+**App/Book surfaced:** AT.App Research News + Theory Book ("Gravity Source" part, eight new chapters) +
+TestGroups; AT.Book `GravityService` (8 executable calculations), eight theory objects (Physics layer) and
+eight audits g001–g008.
 
 ## Key Unsolved Problems
 

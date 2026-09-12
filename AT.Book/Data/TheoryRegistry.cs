@@ -221,6 +221,19 @@ public sealed class TheoryRegistry
             CalculationId: "suppression-origin",
             References: ["ResearchY-G_007", "QG_194", "NP_174"],
             AuditIds: ["g007"]),
+        new("controlled-suppression", "Controlled Suppression", "Nothing holds a high-Δρ state: undriven it dies in 0.622 steps; driven it must be re-created every step at 0.7998 of its amplitude.",
+            TheoryLayer.Physics, TheoryClassification.Derived, TheoryObjectKind.Derivation,
+            ["suppression-origin", "gravity-suppression"],
+            Narrative: "The kernel of the relaxation is one-dimensional, so the only undriven stationary profile is the uniform counting measure; lifetimes τₖ = −1/ln|μₖ| span 4668.80 steps (k = 1, the "
+                + "observed smooth class — METASTABLE) to 0.622 steps (k = 95, the witness class — SUPPRESSED). A driven recursion with a mode-matched drive has the exact steady state "
+                + "c·v_k/(1 − μ_k) and is an allowed configuration (count-conserving, positive), but the price is (1 − μ_k) of the amplitude per step: 2.14e-4 for the smooth class and 0.7998 for the "
+                + "highest mode (a 3734× penalty). Because the steady state is a filtered copy of the drive, an unmode-matched drive holds zero high-k content; periodic forcing never beats DC "
+                + "(sup_ω |H_k| = the DC gain); and boundary-only support holds a smooth ramp whose contrast is capped at 3.09 % of the count by ρ ≥ 0. G_005's SUPPRESSED verdict becomes "
+                + "NOT MAINTAINABLE.",
+            Formula: "rho* = c·v_k/(1 − mu_k);  tau_k = −1/ln|mu_k|;  drive = (1 − mu_k) per step",
+            CalculationId: "controlled-suppression",
+            References: ["ResearchY-G_008", "ResearchY-G_005"],
+            AuditIds: ["g008"]),
 
         // ── Layer 5 — Correspondence ───────────────────────────────────────────
         new("thermodynamics", "Thermodynamics", "An added occupancy layer over the structural modes (temperature is BOUNDARY).",
@@ -707,5 +720,22 @@ public sealed class TheoryRegistry
             + "duration. No reclassification (D_040 untouched; G_006's 'EMERGENT 34' sharpened to BOUNDARY at fixed T = m·d); no canonical claim changes; no new primitive.",
             AuditStatus.Passed, new DateTime(2026, 9, 12), TheoryLayer.Physics, TheoryClassification.Derived,
             ["g002", "g005", "g006"]),
+        new("g008", "Controlled Suppression Audit", "Can any allowed configuration maintain a high-Delta-rho state against DiffuseStep suppression?",
+            "NOTHING PERSISTS ON ITS OWN. ALLOWED = Σρ = 1 (QG194), ρ ≥ 0, no symmetry breaking (D_047), no non-reciprocal coupling (NP_174). STATIONARY: μ₀ = 1 is the UNIQUE unit "
+            + "eigenvalue (ker(I − W) = span(uniform)), so the only undriven stationary profile is uniform; lifetimes τₖ = −1/ln|μₖ| = 4668.80 (k = 1), 186.67 (5), 32.34 (12), 8.03 (24), "
+            + "1.96 (48), 0.87 (72), 0.622 (95) steps, with amplitudes after 200 steps from 0.9581 down to 1.99e-140 ⇒ undriven high-k SUPPRESSED, smooth METASTABLE (the observed galactic "
+            + "situation). DRIVEN: ρ ← Wρ + s with a mode-matched drive s = c·v_k has the EXACT steady state c·v_k/(1 − μ_k) (iterated 0.008535533906 vs analytic 0.008535533906, 1.2e-15) and "
+            + "requires Σs = 0 exactly; the witness-driven state is allowed (ρ_min = 0.0025 > 0, Σρ = 1, reproduces the tilt to 1.9e-15) ⇒ STABLE, with gains 1/(1 − μ_k) from 4669.30 (k = 1) "
+            + "to 1.2503 (k = 95). THE PRICE: per unit peak-to-peak contrast the witness needs 10.247 vs 6.546e-3 (1566×), per unit L1 contrast 0.730125 vs 1.364e-4 (5354×), pure-mode ratio "
+            + "(1 − μ₉₅)/(1 − μ₁) = 3734.4 — the highest mode must be injected at 0.7998 of its amplitude EVERY STEP (L1 = 0.4868 ≈ 49 % of the count) and the lowest only at 2.14e-4: the witness "
+            + "is RE-CREATED, not maintained. MODE MATCHING: ρ* is a filtered copy of the drive, so a smooth-only drive holds exactly zero high-k content (1e-12) while the witness is 78.2 % "
+            + "high-k. PERIODIC: sup_ω |H_k| = 1/|1 − e^{iω}μ_k| equals the DC gain for every k at ω = 0 (4669.2968 / 187.1724 / 8.5355 / 2.5000 / 1.2503), Nyquist strictly worse, no amplifying "
+            + "band ⇒ SUPPRESSED. BOUNDARY: a mean-zero edge dipole holds a SMOOTH ramp (high-k share 1.42e-6, k = 1 share 0.9240) with gain 120.0 per unit L1 drive, capped by ρ ≥ 0 at a "
+            + "contrast of 0.0309 (3.09 % of the count) ⇒ STABLE smooth / SUPPRESSED witness. GOAL: no gravity-control state persists without a mode-matched structured external agent, which the "
+            + "canonical chain does not supply. Classification: DERIVED = the kernel statement, the exact driven fixed point, the gain/lifetime/drive-power laws and mode matching; BOUNDARY = the "
+            + "canonical d = 0.2; SUPPRESSED = undriven high-k, periodic forcing, boundary-only and unmode-matched drives. G_005's verdict sharpened from 'not realised' to 'not maintainable'. No "
+            + "reclassification (D_040 untouched); no canonical claim changes; no new primitive.",
+            AuditStatus.Passed, new DateTime(2026, 9, 12), TheoryLayer.Physics, TheoryClassification.Derived,
+            ["g002", "g005", "g006", "g007"]),
     ];
 }

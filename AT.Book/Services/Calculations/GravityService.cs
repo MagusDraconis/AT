@@ -209,8 +209,31 @@ public sealed class GravityService : ICalculationService
                 + "d = 0.2 and m = 200 — hence the 34× — are BOUNDARY (the same flow at fixed T = m·d = 40); the nearest-neighbour average IS d = ½ and destroys the "
                 + "mechanism, the spectral cutoff is non-local and non-positive, the biharmonic is non-positive and unstable beyond κ = 1/16, and the identity suppresses "
                 + "nothing; and TIME is REFUTED as the cause (ResearchY-G_007)."),
+
+            new("controlled-suppression",
+                "Controlled Suppression — can anything hold a high-Δρ state?",
+                "rho* = c·v_k/(1 − mu_k);  tau_k = −1/ln|mu_k|;  required drive = (1 − mu_k) of the amplitude per step",
+                [
+                    new("lifetime tau_k (steps)", $"k=1: {Lifetime(1):F1}  k=24: {Lifetime(24):F2}  k=48: {Lifetime(48):F2}  k=95: {Lifetime(95):F3}", "4668.8 down to 0.622"),
+                    new("amplitude after 200 steps", $"{Math.Pow(Mu(1), 200):F4} (k=1)  →  {Math.Pow(Mu(95), 200):E2} (k=95)", "smooth survives, witness annihilated"),
+                    new("gain 1/(1 − mu_k)", $"k=1: {GainOf(1):F2}  k=48: {GainOf(48):F4}  k=95: {GainOf(95):F4}", "the DC response of the filter"),
+                    new("drive per step (pure modes)", $"{1 - Mu(95):F4} (k=95) vs {1 - Mu(1):E4} (k=1)", $"ratio {(1 - Mu(95)) / (1 - Mu(1)):F1}"),
+                    new("peak-to-peak / L1 contrast ratios", "1566x / 5354x", "witness vs an equal-contrast smooth target"),
+                    new("sup_omega |H_k|", "= the DC gain at omega = 0 for every k", "no amplifying band"),
+                    new("boundary-supported", "smooth ramp, gain 120.0, contrast capped at 3.09 %", "ρ ≥ 0 caps the drive"),
+                    new("verdict", "undriven high-k SUPPRESSED · smooth METASTABLE · driven STABLE (re-created)", "no gravity-control state persists on its own"),
+                ],
+                "The kernel of the relaxation is one-dimensional, so the only undriven stationary profile is uniform; a driven steady state exists for every mode and is an allowed "
+                + "configuration, but the price is (1 − μ_k) per step — 2.14e-4 for the smooth class and 0.7998 for the highest mode (a 3734× penalty). The steady state is a filtered copy "
+                + "of the drive, so an unmode-matched drive holds no high-k content; periodic forcing never beats DC; boundary-only support holds a smooth ramp whose contrast ρ ≥ 0 caps at "
+                + "3.09 % of the count. G_005's SUPPRESSED verdict becomes NOT MAINTAINABLE (ResearchY-G_008)."),
         ];
     }
+
+    // ── G_008: lifetimes and gains ───────────────────────────────────────────────
+
+    private static double Lifetime(int k) => -1.0 / Math.Log(Math.Abs(Mu(k)));
+    private static double GainOf(int k) => 1.0 / (1.0 - Mu(k));
 
     // ── G_007: the operator family's rate dependence ─────────────────────────────
 

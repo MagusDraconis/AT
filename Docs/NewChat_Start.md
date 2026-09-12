@@ -688,6 +688,51 @@ this suppression?**
   biharmonic-like deformations appear anywhere in the canonical chain (none found)? And is the 0.17 %
   `T`-invariance exact in the continuum limit?
 
+## Controlled Suppression Audit — nothing holds a high-Δρ state (ResearchY-G_008, 2026-09-12)
+
+G_008 asks the engineer's question: can any **allowed** configuration (`Σρ = 1`, `ρ ≥ 0`, no symmetry
+breaking, no non-reciprocal coupling) maintain a high-Δρ state against the relaxation suppression? Four
+classes (stationary, driven, periodic, boundary-supported) × three measures (suppression factor, lifetime,
+required drive power).
+
+**Answer: nothing persists on its own.** Undriven high-k = SUPPRESSED; driven = STABLE but the witness must
+be **re-created**; periodic = SUPPRESSED; boundary support = smooth-only and capped.
+
+| k | 1 | 5 | 12 | 24 | 48 | 72 | 95 |
+|---|---|---|---|---|---|---|---|
+| μ_k | 0.99978583 | 0.99465733 | 0.96955181 | 0.88284271 | 0.60000000 | 0.31715729 | 0.20021417 |
+| lifetime τ_k (steps) | **4668.80** | 186.67 | 32.34 | 8.03 | 1.96 | 0.87 | **0.622** |
+| amplitude after 200 steps | **0.9581** | 0.3425 | 2.06e-3 | 1.50e-11 | 4.27e-45 | 1.80e-100 | **1.99e-140** |
+| gain `1/(1 − μ_k)` | **4669.30** | 187.17 | 32.84 | 8.54 | 2.50 | 1.46 | **1.2503** |
+
+- **Stationary (undriven):** `μ₀ = 1` is the **unique** unit eigenvalue (`ker(I − W) = span(uniform)`,
+  1e-15) ⇒ the only undriven stationary profile is uniform. Undriven high-k **SUPPRESSED**, undriven smooth
+  **METASTABLE** — the observed galactic situation.
+- **Driven:** `ρ* = c·v_k/(1 − μ_k)` **exact** (iterated 0.008535533906 vs analytic 0.008535533906, 1.2e-15);
+  requires `Σs = 0` exactly; the witness-driven state is allowed (`ρ_min = 0.0025`, `Σρ = 1.000000000000`,
+  reproduces the tilt to 1.9e-15) ⇒ **STABLE**.
+- **Price tag:** per unit peak-to-peak contrast **1566×**, per unit L1 contrast **5354×**, pure-mode
+  `(1 − μ₉₅)/(1 − μ₁)` = **3734.4**. The highest mode must be injected at **0.7998 of its amplitude every
+  step** (L1 = 0.4868 ≈ 49 % of the whole count); the lowest needs only 2.1417e-4. **The witness is
+  re-created, not maintained.**
+- **Mode matching:** `ρ* = (I − W)⁻¹s` is a filtered **copy** of the drive — a smooth-only drive holds
+  **exactly zero** high-k content (1e-12) while the witness is 78.2 % high-k (its hold-drive 98.3 %).
+- **Periodic:** `sup_ω \|H_k\|` = the **DC gain** for every k, at `ω = 0` (4669.2968 / 187.1724 / 8.5355 /
+  2.5000 / 1.2503); Nyquist strictly worse (`1/(1 + μ)`); no amplifying band ⇒ **SUPPRESSED**.
+- **Boundary:** an edge dipole holds a **smooth ramp** (high-k share **1.42e-6**, k = 1 share 0.9240) with gain
+  **120.0**, but `ρ ≥ 0` caps the drive at 1.289e-4 ⇒ maximum contrast **0.0309 (3.09 % of the count)**.
+- **Goal answer:** no gravity-control state persists without a mode-matched structured external agent, which
+  the canonical chain does not supply (the branching flow is arrangement-neutral; NP_171's gate is imported;
+  NP_174 closes self-amplification). G_005's verdict is sharpened from "not realised" to **"not maintainable"**.
+- **Files.** `Docs/ResearchY/G_GravitySource/ResearchY-G_008.md`,
+  `AT.Tests/ResearchY/G_GravitySource/Y_G_008_Tests.cs` (8/8 ✅, ~0.2 s; group G total 66/66),
+  `Docs/ResearchY/Tests/Results/Y_G_008_Result.md`; AT.App (Research News + Theory Book chapter + TestGroup)
+  and AT.Book (`controlled-suppression` calculation, theory object + audit `g008`).
+- **Next open questions (G_008 OP1–OP4).** What physical process could supply a mode-matched drive at 0.7998
+  per step? Can a driven smooth state at the 3.1 % contrast cap be distinguished from the ambient galactic
+  field (observed contrast 1.6102e-6)? Is the boundary-dipole Green's function the optimal edge drive? And
+  does the 4669-step metastable lifetime survive the G_007 OP3 index identification?
+
 ## Latest Repo Sync
 
 Recent commits from the other machine:
@@ -923,6 +968,7 @@ Weak-coupling scale note:
 | Control Realizability | ResearchY-G_005 | SUPPRESSED, not FORBIDDEN: the large G_003 modes conserve the count (Σρ = 1, deficit mass 0, QG194), break no symmetry (A₀ = 45, lock 0.80231 exact, block sums L1 = 0) and occupy genuinely free directions (51 of 96) — they are simply never counted. STABILITY: the uniform measure is the exact fixed point of the canonical diffusion and a witness tilt contracts ~34× in 200 steps (std 0.00815358 → 0.000241) with H rising to ln 96 → OFF-ATTRACTOR. ENTROPY is CAPPED (max ΔS = ln 96 ⇒ 1/96 = 0.010417, 3.6e7× short of 3.746e5; the witness costs ΔS = 0.272565 = a factor 1.31) ⇒ NOT thermodynamic. THE MECHANISM IS AT's Poisson law δ = 1/√⟨N⟩ read forward: ⟨N⟩ = 3.8569e11 makes the observed 1.6102e-6 typical (P = 0.61), the 1 % ceiling 4.8867e-6, and the required 3.746e5 suppression is reached at 8.1577e-6 (5.07× observed); witnesses cost −ln P = 1.99e8 … 7.02e10. DYNAMICAL: the flow is arrangement-neutral (ρ_(k+1) = μρ_k, same μ per cell; a(λρ) = a(ρ)) and the attractor erases arrangements ⇒ no internal drive. ACCESSIBLE = attractor + phase + Δ ≤ 4.8867e-6 (incl. the observed field); FORBIDDEN = Σρ ≠ 1, changed A₀/pairing, cell > 1/l_P³, or Δ > ln 96. G_004's CALIBRATED verdict is thereby explained dynamically |
 | Suppression Mechanism | ResearchY-G_006 | The suppressing term is the RELAXATION (coarse-graining) operator RhoDynamics.DiffuseStep — a LINEAR LOW-PASS FILTER on the eigenspace-occupancy index with the exact spectrum μ_k = 1 − 2d(1 − cos(πk/N)), d = 0.2. Every Neumann mode is an EXACT eigenvector decaying geometrically: μ₁ = 0.999785834991 (1/e after 4669 steps, survives 200 steps at 0.958067), μ₄₈ = 0.6 exactly, μ₉₅ = 0.200214165009 (1.99e-140 after 200 steps) — a 10^140 rate spread. THE 34× DERIVED: 1/r(200) = 33.78 = exp(200 × 0.0175991) = exp(3.5198 nats), from the closed form r(m) = sqrt(Σ_{k≥1} w_k²μ_k^{2m}/Σ_{k≥1} w_k²) (w = DCT-II, mean excluded) which reproduces iteration to < 1e-9 at every horizon m = 1…50 000; ladder 2.27 (m = 1) → 16.79 (50) → 33.78 (200) → 65.13 (1000) → 2.49e6 (50 000) ⇒ DERIVED as a law, EMERGENT as a number. POWER LAW REFUTED as the law (tail slope −2.1418813131e-4 = ln μ₁ to 1.85e-10, R² = 1.0; the rate converges to the geometric floor 2.1419e-4 instead of zero) though its finite-window appearance is real (R² 0.9945 vs 0.7579; window rate 37.7× the true rate) ⇒ EMERGENT. ENTROPY DRIVEN REFUTED (operator exactly linear, 3.47e-18; H + (N/2)E → ln 96 with residual 9.7e-7 ⇒ entropy downstream). BRANCHING DRIVEN REFUTED (arrangement-neutral, a(λρ) = a(ρ) to 5.56e-11; basin 1 at every size; field removed only by relaxation, max|a| 0.6032 → 1.8746e-3 = 322×). CASES at m = 200: D96 33.78, D96³ 7.33 (884 736 modes, A₀ = 20 812), Random witness class EMPTY (A₀ = 96, free room 0; extremal alternation 55.13). μ_k depends on N ONLY ⇒ arrangement-selective, not lattice-selective. Closes G_005: the free directions are high-k and erased fastest while the observed smooth deficit survives on the slow mode (μ₁^200 = 0.958) |
 | Suppression Origin | ResearchY-G_007 | DERIVED FORM, DERIVED RANGE, BOUNDARY VALUES, TIME REFUTED. TRACE (canonical): Difference → counting measure (Σρ = 1); Actualization → ρ_(k+1) = μρ_k, ARRANGEMENT-NEUTRAL (|Δa| at 10⁶ρ = 0.00e+00); ρ evolution → increments coarse-grain with EXACT RG invariance (CoarseGrainedAlpha(α) = α to 1e-12); DiffuseStep → the Euler step of the Laplacian flow (tridiagonal, symmetric, rows summing to 1, semigroup to 1e-15). UNIQUENESS: locality + constant coefficients + symmetry + row-sum conservation leave exactly W(b) = b·left + (1−2b)·a + b·right — ONE free scalar (W(0.2) ≡ DiffuseStep) — and isotropy is FORCED (anisotropic weights leak at reflecting boundaries; no antisymmetric coupling, NP_174). RANGE DERIVED FROM ρ ≥ 0: convex combination iff 0 ≤ d ≤ ½ (min ρ = +1.04e-2 at d = 0.2 and ½, −8.96e-2 at d = 0.6); at d = ½ the fastest mode reaches μ₉₅ = −0.999465 and oscillates; selectivity |μ₉₅|/|μ₁| ≈ |1−4d| = 0.800/0.600/0.200/0.000268 (d = ¼ max)/0.200/0.600/1.000000 (d = ½, flat). SENSITIVITY IN THE RATE: m = 200 factors 16.70/25.12/33.78/36.74/39.43/44.34/2.01 (d = 0.05…0.50) but at fixed T = m·d = 40 they are 33.75/33.76/33.76/33.78/33.81 — 0.17 % spread over a 20× range of d ⇒ (d = 0.2, m = 200) is BOUNDARY for T = 40. REPLACEMENTS: nearest-neighbour average IS d = ½ (1e-15) and collapses the mechanism (2.01; worst mode keeps 90 %); spectral cutoff NON-LOCAL (delta → 96 cells) and NON-POSITIVE (min ρ = −4.52e-2); biharmonic 5-point next-nearest, non-positive (−1.46e-2), unstable beyond κ = 1/16 (weaker, 7.15); identity 1.00 contradicts G_004's ≥ 3.746e5. WITNESS DICHOTOMY 32.4 (holds) / 1.81 (fails) / 7.1 / 1.0 — above 8 for every 0 < d < ½. TIME REFUTED: branching is diagonal (support 1 vs 3), leaves profile and field exactly invariant for any μ over any duration (|Δa| at 2¹⁰⁰⁰ρ = 0.0), the factor carries no rate (scale-free to 2.34e-13), density/metric static at criticality ⇒ m is a COARSE-GRAINING HORIZON (≈729 steps for 3.746e5), not a duration |
+| Controlled Suppression | ResearchY-G_008 | Nothing persists on its own. STATIONARY: μ₀ = 1 is the UNIQUE unit eigenvalue (ker(I − W) = span(uniform), 1e-15) ⇒ the only undriven stationary profile is uniform; lifetimes τₖ = −1/ln|μₖ| = 4668.80 (k = 1) · 186.67 · 32.34 · 8.03 · 1.96 · 0.87 · 0.622 (k = 95) steps, amplitudes after 200 steps 0.9581 → 1.99e-140 ⇒ undriven high-k SUPPRESSED, smooth METASTABLE (the observed galactic situation). DRIVEN: ρ* = c·v_k/(1 − μ_k) EXACT (iterated 0.008535533906 vs analytic 0.008535533906, 1.2e-15), requires Σs = 0 exactly, and the witness-driven state is allowed (ρ_min = 0.0025 > 0, Σρ = 1.000000000000, reproduces the tilt to 1.9e-15) ⇒ STABLE; gains 1/(1 − μ_k) = 4669.30 (k = 1) → 1.2503 (k = 95). PRICE TAG: per unit peak-to-peak contrast 1566×, per unit L1 contrast 5354×, pure-mode (1 − μ₉₅)/(1 − μ₁) = 3734.4 — the highest mode must be INJECTED at 0.7998 of its amplitude every step (L1 = 0.4868 ≈ 49 % of the count) and the lowest only at 2.1417e-4 ⇒ the witness is RE-CREATED, not maintained. MODE MATCHING: a smooth-only drive holds exactly zero high-k content (1e-12) while the witness is 78.2 % high-k (its hold-drive 98.3 %). PERIODIC: sup_ω |H_k| = the DC gain for every k at ω = 0 (4669.2968/187.1724/8.5355/2.5000/1.2503), Nyquist strictly worse, no amplifying band ⇒ SUPPRESSED. BOUNDARY: an edge dipole holds a SMOOTH ramp (high-k share 1.42e-6, k = 1 share 0.9240) with gain 120.0, but ρ ≥ 0 caps the drive at 1.289e-4 ⇒ maximum contrast 0.0309 (3.09 % of the count) ⇒ STABLE smooth / SUPPRESSED witness. GOAL: no gravity-control state persists without a mode-matched structured external agent (branching is arrangement-neutral; NP_171's gate g_c = 1.607 is imported; NP_174 closes self-amplification). G_005 sharpened from "not realised" to "NOT MAINTAINABLE" |
 | G Bridge (QG6↔QG181) | QG182 | BRIDGE ORIGIN (deficit parameters from D96: m₀ = occ₀/Σm = 4/95 = S param, r₀ = ln(span), ρ̄ = 1 → GM_eff = 1/ln(M_Pl/v) = 1/(3·ln A), 0.0969%; identity occ₀·ln(span)·ln(Σm·#g·occ₂) = Σm; two G constructions are the same physical content) |
 | Planck Scale Robustness | QG183 | ROBUST ORIGIN (physical exponent p = ln(M_Pl/v)/ln(A) = 2.99984, cubic to 1e-4; only A³ reproduces M_Pl (0.2%) while A¹/A²/A⁴ fail by 100%/100%/3.6e7%, nearby exponents 47-260% dev; no alternative A selects cubic; 3-factor/3-band/d=3 structure) |
 | Mass-Radius Relation | QG184 | MASS-RADIUS ORIGIN (observed M ∝ R emerges from counting measure: the deficit is per-octave/log — G4ME flat-rotation-curve profile — giving a ∝ −1/r and GM_eff = m₀·R/(d·L·ρ̄) ∝ R; QG13's E ∝ R^d was the compact-void assumption; with S ∝ R^(d−1) (QG12), T ∝ 1/R — Hawking restored, no new primitives) |
