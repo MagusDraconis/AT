@@ -17,6 +17,17 @@
 > *conclusion* restored here **stands**, now on derived grounds; the measure-preservation premise and the
 > hard-coded-γ origin-score basis do **not**. See `ResearchY-G_025.md`,
 > `Docs/Research/ATQG_ConformalOpticsDeterminantCorrection.md` (AT-QG phase 320), and the amended QG207/QG212/QG32 docs.
+> ⚠ **CORRECTION — ResearchY-G_028 (Clock Sector Closure Audit).** This audit's conclusion that the
+> QG207 completion produces **"NO solar-system conflict"**, with a GPS bound `|psi| <= 2e-3` called
+> **7.2e5x looser** than required, is **WRONG IN KIND**. It treated the clock shift `e^(4x) - 1 = 2.78e-9` as
+> an *additive* perturbation on a clock of 1. But the observable is the redshift **relative to infinity**, and
+> the conformal law already predicts `z ~ +x = 6.957e-10`. The shift 2.78e-9 is **4x the entire effect** and it
+> **REVERSES ITS SIGN**: `A = sigma + psi` with `psi = -4 sigma` gives `A = +3x > 0`, so the potential becomes
+> POSITIVE and every gravitating body is **blueshifted**. The correct bound is
+> **`|psi| <= 1.391e-12`** (the GPS precision itself) — **1.44e9x TIGHTER** than quoted — and
+> `psi = -4 sigma` is excluded at **2000 sigma** by the Earth redshift alone. It follows that QG212's
+> "physical sector" (psi != 0 at psi = -4 sigma) is a REPULSIVE geometry and is behaviourally refuted, and that
+> the optics fix **cannot** come from the trace-free direction. See `ResearchY-G_028.md`.
 ## Purpose
 
 The AT-QG programme **resolved conformal optics before the G-chain began**. The G-chain then re-derived part of that result but **mis-stated its status**, treating the tensor field `ψ` as a new primitive and declaring `γ = +1` out of derivational reach. This audit restores the canonical result, retracts the three erroneous claims, and keeps the two G-chain results that genuinely sharpen it.

@@ -3072,6 +3072,43 @@ test that cannot fail is not a test.*
 - **WHAT IT DOES NOT CLAIM.** It does not decide whether a verdict is **correct** — only whether it is **computed**, forcing the difference into the open rather than leaving it implied by a method name.
 - **Output: SAFE / BOUNDARY / REFUTED.** **5/5 PASSED**; group G total **223/223**; no reclassification; D_040 untouched.
 
+### G_028 — Clock Sector Closure Audit (CLOCK CLOSED on `dτ/dt = ρ^(1/d)`)
+**Question:** is the physical clock law `ρ^(1/d)` or `ρ^(1/d)·e^ψ`?
+- **THE ONE FACT THAT DECIDES IT.** The Newtonian potential **is** the time exponent:
+
+  ```text
+  g₀₀ = −e^(2A) ,  A = σ + ψ ,  σ = (1/d)ln ρ ,  Φ/c² = A
+  ⇒  a = −∇Φ = −(1/d)∇ln ρ − ∇ψ
+  ```
+
+  So the source law `a = −(1/d)∇ln ρ` holds **iff ∇ψ = 0** — a constant ψ, i.e. only a global time-unit choice.
+- **CRITICAL: can ψ be nonzero without changing the source law? → NO.** `A − σ = ψ` **identically**. Proof, not judgement.
+- **THE OPTICS PRICE.** In the trace-preserving QG207 direction (`A = σ + ψ`, `B = σ − ψ/2`), `γ = +1` (`A + B = 0`)
+  fixes **`ψ = −4σ` UNIQUELY** → **`A = −3σ = +3x > 0`** → the potential is **POSITIVE** → **blueshift at every body**.
+
+  | candidate | body | A | z | γ_exact | z>0? |
+  |---|---|---:|---:|---:|---|
+  | ρ-only | Earth | −6.957e−10 | **+6.957e−10** | −1 | ✅ |
+  | | J0740+6620 | −0.247002 | **+0.2801817** | −1 | ✅ |
+  | QG207 (ψ=−4σ) | Earth | **+2.0871e−9** | **−2.0871e−9** | +1 | ❌ |
+  | | J0740+6620 | +0.741006 | **−0.5233658** | +0.2272 | ❌ |
+  | spatial route | J0740+6620 | −0.247002 | **+0.2801817** | **+1** | ✅ |
+
+- **FIVE REQUIREMENTS.** ρ-only satisfies **all five** (source law; Earth/GPS **0.000 σ**; G_020 neutron-star audit
+  `z_AT = 0.2801817`; positivity at every body; no new primitive). QG207(ψ=−4σ) fails 1 (**4×** off), 2 (**2000.4 σ**),
+  3 and 4 — passing only 5.
+- **CORRECTION TO G_024 / QG212.** G_024's “no solar-system conflict” compared the shift `e^(4x) − 1 = 2.78e−9` to a clock of
+  **1**, but the observable is the redshift **relative to infinity** where the conformal law already gives `z ≈ +x`. The shift is
+  **4× the whole effect** and **reverses its sign** → the correct bound is **`|ψ| ≲ 1.391e−12`**, **1.44e9× tighter** than
+  the quoted 2e−3, and `ψ = −4σ` is excluded at **2000 σ**. QG212's “physical sector” is **repulsive**.
+- **BOUNDARY.** The spatial route (`A` held at `σ`, `B = ½ln(2 − e^(2σ))`) is the only `γ = +1` that keeps the clock:
+  satisfies 1–4, fails 5 (volume measure **3.437585×** the count at J0740+6620).
+- **STRUCTURAL RESULT.** ψ and the clock are **NOT independent**: every repair of γ from the trace-free direction repays the debt
+  in the clock, and the repayment is a **sign inversion**. The optics fix must be spatial.
+- **CLOCK CLOSED — and the closure RELOCATES the failure.** The clock is sound (γ = −1 excluded at Cassini 8.6957e4 σ, but
+  optics is not a clock-sector requirement); the **entire** open problem is the **SPATIAL sector**. Core:
+  `AT.Core/ResearchXH/ClockSectorClosure.cs`; **7/7 PASSED**, group G total **230/230**.
+
 ## Key Unsolved Problems
 
 1. Numerical values of ℓ, τ, ħ — empirical, not derived

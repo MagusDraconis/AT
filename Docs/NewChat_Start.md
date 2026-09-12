@@ -1685,6 +1685,51 @@ u2014 amends QG207, QG212 and QG32; **issues no new physics claim**.
 - **WHAT IT DOES NOT CLAIM.** The audit does not decide whether a verdict is **correct** — only whether it is **computed**, forcing the difference into the open instead of leaving it implied by a method name.
 - **Output: SAFE / BOUNDARY / REFUTED.** **5/5 PASSED**; group G total **223/223**; no reclassification; D_040 untouched.
 
+## CLOCK CLOSED — on `dτ/dt = ρ^(1/d)` (ResearchY-G_028, 2026-09-13)
+**Question:** is the physical clock law `ρ^(1/d)` or `ρ^(1/d)·e^ψ`? **Answer: `ρ^(1/d)` — the clock sector closes.**
+- **THE ONE FACT THAT DECIDES IT.** The Newtonian potential **IS** the time exponent:
+
+  ```text
+  g₀₀ = −e^(2A) ,  A = σ + ψ ,  σ = (1/d)ln ρ ,  Φ/c² = A
+  ⇒  a = −∇Φ = −(1/d)∇ln ρ − ∇ψ
+  ```
+
+  The stated source law `a = −(1/d)∇ln ρ` therefore holds **iff ∇ψ = 0** — a *constant* ψ, which is only a global
+  time-unit choice (it cancels from the redshift ratio).
+- **CRITICAL QUESTION — can ψ be nonzero without changing the source law? → NO.** `A − σ = ψ` **identically**, so any
+  nonzero ψ moves the time exponent. This is a **proof**, not a judgement.
+- **THE OPTICS PRICE.** In the trace-preserving QG207 direction (`A = σ + ψ`, `B = σ − ψ/2` at d = 3), the condition
+  `γ = +1` (i.e. `A + B = 0`) fixes **`ψ = −4σ` UNIQUELY**, forcing **`A = −3σ = +3x > 0`**. The potential becomes
+  **positive**: the surface clock runs FAST and every gravitating body is **BLUESHIFTED**. The sign inverts.
+
+  | body | x | z (ρ-only) | z (QG207, ψ=−4σ) |
+  |---|---:|---:|---:|
+  | Earth | 6.957e−10 | **+6.957e−10** | **−2.087e−9** |
+  | Sun | 2.1225e−6 | +2.1225e−6 | −6.3675e−6 |
+  | 1e−4 | 1e−4 | +1.0000e−4 | −3.0000e−4 |
+  | J0740+6620 | 0.247002 | **+0.2801817** | **−0.5233658** |
+
+- **FIVE REQUIREMENTS.** ρ-only satisfies **ALL FIVE**: (1) source law; (2) Earth/GPS at **0.000 σ**; (3) the G_020
+  neutron-star audit, `z_AT = 0.2801817`; (4) positivity at **every** body including compact objects; (5) no new primitive.
+  QG207(ψ=−4σ) fails 1 (the ψ term is **4×** the ρ term), 2 (**2000.4 σ** at Earth), 3 and 4 — passing only 5.
+- **CORRECTION TO G_024 AND TO THE RESTORED QG212.** G_024 concluded the QG207 completion produces **“no solar-system
+  conflict”**, quoting `|ψ| ≲ 2e−3` as 7.2e5× **loose**. That comparison is **wrong in kind**: it treated the shift
+  `e^(4x) − 1 = 2.78e−9` as *additive* on a clock of 1, but the observable is the redshift **relative to infinity**, where the
+  conformal law already gives `z ≈ +x = 6.957e−10`. The shift is **4× the whole effect** and **reverses its sign**.
+  The correct bound is **`|ψ| ≲ 1.391e−12`** — **1.44e9× TIGHTER** — and `ψ = −4σ` is excluded at **2000 σ** by the
+  Earth redshift alone. So **QG212's “physical sector” is a REPULSIVE geometry** and is observationally refuted.
+- **BOUNDARY — the spatial route.** `A` held at `σ` with `B = ½ln(2 − e^(2σ))` is the **only** `γ = +1` that leaves the
+  clock untouched: it satisfies 1–4 and fails 5 (it leaves the trace-free direction; the volume measure becomes **3.437585×**
+  the count at J0740+6620).
+- **THE STRUCTURAL RESULT.** ψ and the clock are **NOT independent**. Every attempt to repair γ from the trace-free direction
+  repays the debt in the clock, and the repayment is a **sign inversion**. So the optics fix **cannot** come from ψ — it must
+  be spatial.
+- **CLOCK CLOSED — and the closure RELOCATES the failure.** The clock sector is sound (γ = −1 is excluded at Cassini
+  8.6957e4 σ, but optics is **not** a clock-sector requirement); the **entire** open problem is now the **SPATIAL sector**.
+- **Opened:** fix optics spatially (G_023's route, volume cost 3.437585 — decide whether that is a primitive); re-audit QG212's
+  “physical sector”; re-derive the GPS bound for **every** ψ proposal (the 2e−3 error is a **method** error, not a typo).
+  Core: `AT.Core/ResearchXH/ClockSectorClosure.cs`; **7/7 PASSED**, group G total **230/230**.
+
 ## Latest Repo Sync
 
 Recent commits from the other machine:
@@ -1942,6 +1987,7 @@ Weak-coupling scale note:
 | Optics Determinant Correction | ResearchY-G_025 | **WAS THE OPTICS RESULT ACTUALLY DERIVED? NO.** Independent verification of QG212 (never believe the document) found **two real defects**: a `d`-vs-`(d−1)` **off-by-one** in the ψ-perturbed determinant — correct is `det g = −ρ^(2(d+1)/d)e^(−2ψ/(d−1))`, `√(−det g) = ρ^((d+1)/d)e^(−ψ/(d−1))`, `√(det g_ij) = ρ·e^(−dψ/(d−1))` — with error **unbounded in ψ** (0.00 / **36.24** / **52.76** / **8901.71** % at b = 0.0 / 0.3 / 0.5 / −3.0 at x = 1), and a **hard-coded γ** (−1.0 / +1.0) never computed from the metric. **12 sites / 5 AT.Core files corrected**; γ now **DERIVED** (−1 at ψ = 0, +1 at the derived ψ = −4σ first order, exact `e^(6σ) = ρ²` at d = 3 — so +1 only in the weak field). ψ = 0 is now the **unique** counting-measure-preserving member (STRONGER than QG207 claimed); **TRM `metric-origin` UNCHANGED → MODIFIED** (matrix 4 / 2 / 0). The optics **CONCLUSION is RESTORED on derived grounds**; the **measure premise is REFUTED**; `O(x²)` completion remains **BOUNDARY**. Scorecard: **1 of 4** origin-score points was substantive. Record: `Docs/Research/ATQG_ConformalOpticsDeterminantCorrection.md` (QG320). |
 | Authored-Verdict Audit | ResearchY-G_026 | **IS THE G_025 DEFECT CLASS ISOLATED? NO — SYSTEMIC.** Four QG audits (`QuantumGravityClosureAudit`/`ReclosureAudit`/`ReclosureAudit2`/`FinalQuantumGravityAudit`) used **identical method names** and differed only in literals, so PARTIAL → EFFECTIVE → NEAR-COMPLETE → COMPLETE was produced by **editing a literal**; their sub-scores **never read their own criteria**; and their four test suites asserted **mutually contradictory** verdicts and **all passed**. The Born-rule headline "α = 2 UNIQUELY selected" was **DEAD CODE**. Fixed with a `QgCriterion` type (status + mandatory basis + derived score) and an `AlphaInvarianceScreen` that **executes** the uniqueness screen (violation 2.22e−16 at α = 2 vs 0.495–2.344 otherwise). Verdicts unchanged; ψ corrected to canonical (G_024). |
 | Literal Verdict Audit | ResearchY-G_027 | **NO RESULT PATH MAY LET A CLASSIFICATION DEPEND ON A LITERAL.** The rule is now **mechanically enforced**: `LiteralVerdictAudit` re-reads the AT.Core source at test time, so a NEW literal→verdict path **fails the build** until it is computed or adjudicated. **7 paths found, ALL BOUNDARY** (authored judgements and input taxonomies, each with its reason cited in place); **ZERO REFUTED remain** — the one refuted path (`GdaggerOriginAnalyzer`: flags, ratio and score all literals, `Score` feeding the ranking, and a typed `RatioToA0 = 1.0` with a `NaN` numerator) is now **derived from the predicted g†**, reproducing the typed values exactly. The registry structurally forbids a REFUTED entry. |
+| Clock Sector Closure | ResearchY-G_028 | **IS THE CLOCK `ρ^(1/d)` OR `ρ^(1/d)·e^ψ`? ANSWER: `ρ^(1/d)` — CLOCK CLOSED.** The potential IS the time exponent (`A = σ + ψ`), so the source law holds **iff ∇ψ = 0**: **ψ cannot be nonzero without changing the source law**. `γ = +1` fixes `ψ = −4σ` uniquely, forcing `A = +3x > 0` — the potential turns POSITIVE and every body is **blueshifted** (J0740+6620 z = −0.5233658 vs +0.2801817; Earth **2000 σ**). ρ-only satisfies **all five** requirements. **CORRECTS G_024/QG212:** the GPS bound is **1.391e−12**, **1.44e9× tighter** than the quoted 2e−3, and QG212's “physical sector” is **repulsive**. The spatial route is the only `γ = +1` that keeps the clock (volume cost 3.437585). |
 | G Bridge (QG6↔QG181) | QG182 | BRIDGE ORIGIN (deficit parameters from D96: m₀ = occ₀/Σm = 4/95 = S param, r₀ = ln(span), ρ̄ = 1 → GM_eff = 1/ln(M_Pl/v) = 1/(3·ln A), 0.0969%; identity occ₀·ln(span)·ln(Σm·#g·occ₂) = Σm; two G constructions are the same physical content) |
 | Planck Scale Robustness | QG183 | ROBUST ORIGIN (physical exponent p = ln(M_Pl/v)/ln(A) = 2.99984, cubic to 1e-4; only A³ reproduces M_Pl (0.2%) while A¹/A²/A⁴ fail by 100%/100%/3.6e7%, nearby exponents 47-260% dev; no alternative A selects cubic; 3-factor/3-band/d=3 structure) |
 | Mass-Radius Relation | QG184 | MASS-RADIUS ORIGIN (observed M ∝ R emerges from counting measure: the deficit is per-octave/log — G4ME flat-rotation-curve profile — giving a ∝ −1/r and GM_eff = m₀·R/(d·L·ρ̄) ∝ R; QG13's E ∝ R^d was the compact-void assumption; with S ∝ R^(d−1) (QG12), T ∝ 1/R — Hawking restored, no new primitives) |
