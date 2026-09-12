@@ -2743,12 +2743,54 @@ This audit **corrects G_019 §5**.
 - **One recorded consequence:** with `ψ ≠ 0` the clock law is `dτ/dt = ρ^(1/d)e^(ψ)`, and `e^ψ` is **first
   order** — at `ψ = 1e−3` that is **1000.5×** G_019's `x²` term — so any nonzero `ψ` **swamps** the
   second-order signature the G-chain proposes to test.
+- ⚠ **REFINED by `ResearchY-G_022`:** the `ψ = −4σ` result above holds only if `Φ` is defined by `g₀₀`. Once AT's
+  **source law** is required to fix `Φ = σ` independently, the acceleration law `−A′ = −σ′` forces `ψ′ = 0`
+  and the clock law `e^A = e^σ` then forces **`ψ = 0`** — so the `ψ` completion delivers `γ = −1`, not `+1`:
+  the route is **EMPTY**, not merely expensive. At `ψ = −4σ` the surface redshift would be
+  `z = e^(−3x) − 1 = −0.523366` at J0740+6620 — a **blueshift at a bound object**. The `γ = +1` sector
+  must instead be the **reciprocal spatial factor** `g_rr = ρ^(−2/d)` — see the **`G_022`** entry below.
 - **Verdicts: DERIVED** = the conformal spatial metric `g_ij = ρ^(2/d)δ_ij` (class × factor closed) · `γ = −1`
   exactly · all lensing observables and Shapiro delay zero with the redshift surviving · `γ = +1 ⇔ ψ = −4σ`
   (`d = 3`) · **BOUNDARY** = the conformal class (imported theorem) and the `ψ` sector (new primitive) and the
   `Φ = −3σ` conflict · **REFUTED** = the `ψ = 0` conformal optics (8.6957e4 σ Cassini).
 - **No reclassification** (G_019's numbers are `g₀₀`-only and stand); D_040 untouched; no canonical claim,
   value or equation changes; no new primitive introduced by this audit; 7/7 PASSED.
+
+### G_022 — Spatial Metric Audit
+**Status:** Complete. **Question:** can a spatial metric be **derived** that preserves the **clock law**, the
+**source law** and the **acceleration law**, while reproducing **`γ ≈ +1`**?  **Answer: NO — structurally.**
+Refines `G_021` (the `ψ` route is empty).
+- **The three laws are `γ`-BLIND.** With `x = GM/(Rc²) > 0` and `σ = (1/d) ln ρ = −x`: the **clock**
+  `dτ/dt = √(−g₀₀) = ρ^(1/d)` depends on `g₀₀` only, the **source** `a = −(1/d)∇ln ρ` on `ρ` only, and the
+  **slow-particle acceleration** `d²r/dt² ≈ −A′` on `g₀₀` only. **None contains the spatial exponent**, so
+  the question as posed **constrains nothing about `γ`**. The only `B`-dependent quantity is the *proper*
+  acceleration of a held observer, `â = A′e^(−B)`: `1.392e−9` at the Earth's surface — a measure convention.
+- **The fourth condition gives `γ = −1`, FOR ANY CONFORMAL FACTOR.** Conformal flatness `g = Ω²η` forces
+  `g_rr = −g₀₀`, so `γ = −(Ω²−1)/(Ω²−1) = −1` for **every** `Ω² ≠ 1`. Verified for `Ω² = ρ^(2/d)`
+  (0.999998000002), `ρ^(−2/d)` (1.000002000002), `e^(−0.6x)` (0.999999400000), `1.5` and `0.9` — **all −1**. So
+  `γ = −1` is a **theorem about 4D conformal flatness plus `Φ = σ`**, *not* an artefact of the counting-measure
+  factor: **flipping the factor changes nothing**, because conformal flatness ties the sectors together.
+- **`γ = +1` needs TWO DIFFERENT FACTORS.** `g_rr = e^(2βσ)` gives **`γ = −β`** (`β = +1 → −1`, `0 → 0`,
+  `−1 → +1`). So `g₀₀ = −ρ^(2/d)` must be kept **and** `g_rr = +ρ^(−2/d)`. That passes **every**
+  requirement the question sets — all three laws exact, `z_AT = 0.2801817` identical to `G_020`, Cassini
+  0.9130 σ — but `g_rr + g₀₀ = 2 sinh(2x) = 1.028687 ≠ 0`, so it is **not conformally flat**: a **POSTULATE**.
+- **The price:** native `Ω = ρ^(1/d)` has volume measure `Ω³ = ρ` **exactly** (the counting measure); the
+  `γ = +1` sector needs `Ω³ = 1/ρ` — **the reciprocal**. The choice is not "which factor" but "the counting
+  measure or its reciprocal".
+- **The exclusion table:** `γ = −1` → 8.6957e4 / 6.6660e3 / 124.8125 σ **REFUTED**; `γ = 0` (flat space) →
+  4.3479e4 / 3.3327e3 / 62.3125 σ **REFUTED**; `γ = +1` → 0.9130 / 0.6667 / 0.1875 σ **ALLOWED**.
+- **The `ψ` route is EMPTY:** `ψ′ = 0` (acceleration law) then `ψ = 0` (clock law) — **forced by both**. At `ψ = −4σ`
+  the surface redshift is `z = e^(−3x) − 1 = −0.523366` at J0740+6620 — a **blueshift at a bound object**;
+  the clock violation `|e^ψ − 1|` grows from 2.785e−9 (Earth) to **1.685879 (169 %)** at a neutron star.
+- **Nothing earlier is damaged** — the question that motivated this audit. **Every** `G_001–G_020` agreement
+  with GR is `γ`-blind and therefore invariant under **any** spatial sector: `0.99600`, the clock rates and
+  `Δτ = 86 277.089 s/day`, the `x²` signature, `z_AT = 0.2801817`, and the source-law/MOND phenomenology.
+  **`γ` is a SEPARATE observable class** (light bending, Shapiro delay) that no G-chain audit exercised before `G_021`.
+- **Verdicts: DERIVED** = the `γ`-blindness of the three laws · the conformal-flatness theorem for any factor ·
+  the unique native `Ω = ρ^(1/d)` · the explicit `γ = +1` sector · **BOUNDARY** = the `γ = +1` sector is a
+  postulate (cost: volume measure `1/ρ`) and the `ψ` route is empty · **REFUTED** = a *derived* `γ ≈ +1`, and
+  the `ψ` completion (surface blueshift).
+- **No reclassification**; D_040 untouched; no canonical claim, value or equation changes; **no new primitive**; 7/7 PASSED.
 
 ## Key Unsolved Problems
 

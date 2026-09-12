@@ -222,6 +222,46 @@ public static class TheoryBookDataService
                     new("Power scaling", "P ∝ f·(k/N)²: linear in the target (7.436e-18 → 7.436e-9), quadratic in relative frequency (cost(2)/cost(1) = 4.00), N⁻² at fixed wavelength (1024-site 113.7× cheaper); cost per unit shift 6.4250e-4 (k = 1) vs 2.3994 (k = 95).", TheoryBadge.Derived, ["ResearchY-G_010"]),
                     new("Everything needs a driver the theory lacks", "The branching flow is arrangement-neutral, the attractor erases arrangements (basin 1.0), an undriven local state lives 0.622 steps, and the drive must be mode-matched to 1e-18 — so time control is feasible as arithmetic and refuted as what the theory produces on its own.", TheoryBadge.Falsified, ["ResearchY-G_010", "ResearchY-G_008"]),
                 ]),
+            new("spatial-metric", "Can a Better Description of Space Give \u03b3 = +1?",
+                "The spatial-metric audit (**ResearchY-G_022**) asks whether a spatial metric can be **derived** that preserves the **clock law**, the **source law** and the **acceleration law** while reproducing **`\u03b3 \u2248 +1`**. **Answer: NO \u2014 structurally.** The three laws are **`\u03b3`-blind**: the clock `d\u03c4/dt = \u221a(\u2212g\u2080\u2080) = \u03c1^(1/d)` depends on `g\u2080\u2080` only, the source `a = \u2212(1/d)\u2207ln \u03c1` on `\u03c1` only, and the slow-particle acceleration on `g\u2080\u2080` only \u2014 **none mentions the spatial sector**, so the question as posed constrains nothing about `\u03b3`. The condition that does fix it is the **conformal closure**, which gives **`\u03b3 = \u22121` for ANY conformal factor** (a theorem, not an artefact of `\u03c1^(2/d)`). `\u03b3 = +1` therefore requires the two sectors to carry **reciprocal** factors \u2014 a **non-conformally-flat** metric, i.e. a **postulate**, whose cost is a spatial volume measure of **`1/\u03c1`** instead of `\u03c1`. And the `\u03c8` route is **empty**: `\u03c8\u2032 = 0` then `\u03c8 = 0` are forced by both laws (**refines G_021**). Nothing earlier is damaged: every `G_001\u2013G_020` agreement is `\u03b3`-blind and invariant.",
+                [
+                    new("The three laws are \u03b3-blind",
+                        "clock d\u03c4/dt = \u221a(\u2212g\u2080\u2080) = \u03c1^(1/d) (g\u2080\u2080 only) \u00b7 source a = \u2212(1/d)\u2207ln \u03c1 (\u03c1 only) \u00b7 slow-particle acceleration \u2212A\u2032 (g\u2080\u2080 only). "
+                        + "Sliding the spatial exponent B over five values leaves all three laws bitwise identical, so the question as posed CONSTRAINS NOTHING about gamma. The only place B enters is the proper acceleration of a HELD observer, a\u0302 = A\u2032e^(\u2212B): 1.392e\u22129 at the Earth\u2019s surface",
+                        TheoryBadge.Derived, ["ResearchY-G_022", "ResearchY-G_001"]),
+                    new("Conformal flatness forces \u03b3 = \u22121, for ANY factor",
+                        "g = \u03a9\u00b2\u03b7 \u21d2 g\u2080\u2080 = \u2212\u03a9\u00b2 and g_rr = +\u03a9\u00b2, i.e. g_rr = \u2212g\u2080\u2080 ALWAYS; \u03b3 = \u2212(\u03a9\u00b2\u22121)/(\u03a9\u00b2\u22121) = \u22121 for every \u03a9\u00b2 \u2260 1. "
+                        + "Verified for \u03a9\u00b2 = \u03c1^(2/d) (0.999998), \u03c1^(\u22122/d) (1.000002), e^(\u22120.6x) (0.9999994), 1.5 and 0.9 \u2014 ALL \u22121. So \u03b3 = \u22121 is a THEOREM about 4D conformal flatness plus \u03a6 = \u03c3; flipping the factor changes nothing",
+                        TheoryBadge.Derived, ["ResearchY-G_022", "ResearchY-G_021"]),
+                    new("The \u03b2-family: \u03b3 = \u2212\u03b2",
+                        "g_rr = e^(2\u03b2\u03c3): \u03b2 = +1 (conformal) \u2192 \u22121 \u00b7 \u03b2 = 0 (flat space) \u2192 0 \u00b7 \u03b2 = \u22121 (reciprocal) \u2192 +1. "
+                        + "So \u03b3 = +1 needs TWO DIFFERENT FACTORS: g\u2080\u2080 = \u2212\u03c1^(2/d) kept and g_rr = +\u03c1^(\u22122/d)",
+                        TheoryBadge.Derived, ["ResearchY-G_022"]),
+                    new("The exclusion table",
+                        "\u03b3 = \u22121: 8.6957e4 / 6.6660e3 / 124.8125 \u03c3 \u00b7 \u03b3 = 0: 4.3479e4 / 3.3327e3 / 62.3125 \u03c3 \u00b7 \u03b3 = +1: 0.9130 / 0.6667 / 0.1875 \u03c3. "
+                        + "Cassini, VLBA and Gaia. The conformal and flat-space sectors are REFUTED; the reciprocal sector is ALLOWED",
+                        TheoryBadge.Derived, ["ResearchY-G_022", "ResearchY-G_021"]),
+                    new("The \u03b3 = +1 sector passes, but is a POSTULATE",
+                        "clock law exact \u00b7 source law exact \u00b7 slow-particle acceleration exact \u00b7 redshift z_AT = 0.2801817 identical to G_020 \u00b7 \u03b3 = +1 (Cassini 0.913 \u03c3). "
+                        + "BUT g_rr + g\u2080\u2080 = 2 sinh(2x) = 1.028687 \u2260 0 at x = 0.247002: NOT conformally flat, so the causal-order \u2192 conformal-class step does not produce it. Two factors is a postulate",
+                        TheoryBadge.Partial, ["ResearchY-G_022", "ResearchY-G_019"]),
+                    new("The price: the counting measure or its reciprocal",
+                        "native \u03a9 = \u03c1^(1/d) \u21d2 volume measure \u03a9\u00b3 = \u03c1 EXACTLY; \u03b3 = +1 needs \u03a9 = \u03c1^(\u22121/d) \u21d2 \u03a9\u00b3 = 1/\u03c1. "
+                        + "So the choice is not which factor but the counting measure or its reciprocal \u2014 and the native answer is forced",
+                        TheoryBadge.Derived, ["ResearchY-G_022", "ResearchY-G_016"]),
+                    new("The \u03c8 route is EMPTY (refines G_021)",
+                        "A = \u03c3 + \u03c8: acceleration law \u2212A\u2032 = \u2212\u03c3\u2032 \u21d2 \u03c8\u2032 = 0 (\u03c8 constant); clock law e^A = e^\u03c3 \u21d2 \u03c8 = 0. "
+                        + "FORCED BY BOTH LAWS, so the \u03c8 completion gives \u03b3 = \u22121, not +1 \u2014 it cannot be the fix at all. G_021\u2019s \u03c8 = \u22124\u03c3 is valid only if \u03a6 is defined by g\u2080\u2080",
+                        TheoryBadge.Derived, ["ResearchY-G_021", "ResearchY-G_022"]),
+                    new("At \u03c8 = \u22124\u03c3 the surface red shift turns BLUE",
+                        "z = e^(\u22123x) \u2212 1: \u22122.0e\u22129 at Earth \u00b7 \u22126.4e\u22126 at the Sun \u00b7 \u22120.523366 at J0740+6620. "
+                        + "A NEGATIVE surface shift at a bound object \u2014 refuted by any positive measured neutron-star redshift; the clock-law violation |e^\u03c8 \u2212 1| grows from 2.785e\u22129 at Earth to 1.685879 (169 %) at a neutron star",
+                        TheoryBadge.Falsified, ["ResearchY-G_022", "ResearchY-G_021"]),
+                    new("Nothing earlier is damaged",
+                        "every G_001\u2013G_020 agreement with GR is \u03b3-blind. "
+                        + "G_004\u2019s 0.99600, the G_009/G_015/G_017 clock rates and \u0394\u03c4 = 86 277.089 s/day, G_019\u2019s x\u00b2 signature, G_020\u2019s z_AT = 0.2801817, and the source-law/MOND phenomenology are ALL invariant under any spatial sector. \u03b3 is a SEPARATE observable class (light bending, Shapiro delay) never exercised before G_021",
+                        TheoryBadge.Match, ["ResearchY-G_022", "ResearchY-G_020"]),
+                ]),
             new("light-propagation", "Does the Theory Bend Light? \u2014 A Correction",
                 "The light-propagation audit (**ResearchY-G_021**) exists because **G_019 \u00a75 was wrong**. It claimed *\"AT supplies no spatial metric, so no light bending, Shapiro delay or shadow size follows from it \u2014 the theory\'s most distinctive consequence is also its least derivable one.\"* **Both sentences are false**, and false in opposite directions: they understated what AT derives *and* understated the result. AT\'s metric **is** determined and **conformally flat** \u2014 `g_uv = \u03c1^(2/d)\u03b7_uv`, so `g\u2080\u2080 = \u2212\u03c1^(2/d)` **and** `g_rr = +\u03c1^(2/d)` \u2014 with the chain **closed** (`MetricOriginClosure.md`: class \u00d7 factor), the conformal **class** imported (Malament 1977, proven) and the factor **native**. The derived optics are **`\u03b3 = \u22121` exactly**, so **deflection, `\u03ba`, shear and the Shapiro delay all vanish** while the **redshift survives**: **redshift without lensing**. That is a **derived falsification**, excluded by **Cassini at 8.6957e4 \u03c3** (VLBA 6.6660e3 \u03c3, Gaia 1.2481e2 \u03c3). The escape is the **`\u03c8` sector** (`\u03b3 = +1`), and this audit derives that it requires **`\u03c8 = \u22124\u03c3`** in `d = 3` \u2014 which also moves `\u03a6` to `\u22123\u03c3` and therefore **changes the source law**.",
                 [
