@@ -248,8 +248,32 @@ public sealed class GravityService : ICalculationService
                 + "The galactic field is a NEW parameter-free cross-check: the G_003 ambient contrast gives 46.374 ms/day against the rotation curve's 46.528 (0.33 %, equivalent v = 219.63 km/s). The G_002 "
                 + "redistributions move clocks by up to 22.86 % at fixed total mass-energy, but nothing realised or maintainable delivers it — what is realised is exactly GR's galactic depth "
                 + "(ResearchY-G_009)."),
+
+            new("time-control",
+                "Time Control — what clock shift can be sustained?",
+                "Delta ln rho = 3f;  drive/step = (1 - mu_k) * Delta ln rho;  P ~ f * (k/N)^2",
+                [
+                    new("1 ns/day", $"Delta ln rho = {3 * 1e-9 / 86400.0:E3}, drive {G10Drive(1e-9, 1):E3}/step", "well 32.25 m/s — PRACTICAL (numbers)"),
+                    new("1 us/day", $"Delta ln rho = {3 * 1e-6 / 86400.0:E3}, drive {G10Drive(1e-6, 1):E3}/step", "well 1019.91 m/s — PRACTICAL"),
+                    new("1 ms/day", $"Delta ln rho = {3 * 1e-3 / 86400.0:E3}, drive {G10Drive(1e-3, 1):E3}/step", "well 32.25 km/s — PRACTICAL"),
+                    new("1 s/day", $"Delta ln rho = {3 * 1.0 / 86400.0:E3}, drive {G10Drive(1.0, 1):E3}/step", $"7.1x the band — REFUTED (well 1019.91 km/s)"),
+                    new("band top (G_005)", "0.140737 s/day", "Delta ln rho = 4.8867e-6; a 382.62 km/s well"),
+                    new("observed galactic field", "0.046373 s/day", "33 % of the band; a 219.63 km/s well"),
+                    new("positivity", "min rho = 1.041667e-2, excursion <= 1.7e-5", "positivity and count NEVER bind"),
+                    new("power scaling", "6.4250e-4 (k=1) vs 2.3994 (k=95) per unit shift", "P ~ f*(k/N)^2; a 1024-site lattice is 113.7x cheaper"),
+                    new("the driver", "mode-matched to 1e-18; nothing in the chain supplies it", "time control is arithmetic-feasible, physics-refuted"),
+                ],
+                "Inverting the clock law gives Δlnρ = 3f and G_008 prices the drive at (1 − μ_k) of the amplitude per step. 1 ns/day, 1 µs/day and 1 ms/day need contrasts of 3.472222e-14, "
+                + "3.472222e-11 and 3.472222e-8 (drives 7.436285e-18 … 7.436285e-12 per step) to sustain wells of 32 m/s, 1.02 km/s and 32.3 km/s — all ≤7.11e-3 of the accessible band, with "
+                + "positivity never binding. The band's top is 0.140737 s/day and the observed galactic field already uses 33 % of it; 1 s/day (Δlnρ = 3.472222e-5, a 1020 km/s well) is REFUTED "
+                + "spontaneously. Every target still needs an external mode-matched driver, which the canonical chain does not supply (ResearchY-G_010)."),
         ];
     }
+
+    // ── G_010: the feasibility arithmetic ───────────────────────────────────────
+
+    private static double G10Drive(double secondsPerDay, int k)
+        => (1.0 - Mu(k)) * (3.0 * secondsPerDay / 86400.0);
 
     // ── G_009: the clock law ─────────────────────────────────────────────────────
 

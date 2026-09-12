@@ -246,6 +246,18 @@ public sealed class TheoryRegistry
             CalculationId: "clock-rate",
             References: ["ResearchY-G_009", "QG_197", "QG_187"],
             AuditIds: ["g009"]),
+        new("time-control", "Time Control Feasibility", "Priced clock shifts: 1 ns/µs/ms per day are PRACTICAL as numbers, the band tops at 0.1407 s/day, and 1 s/day is refuted.",
+            TheoryLayer.Physics, TheoryClassification.Partial, TheoryObjectKind.Derivation,
+            ["clock-rate", "controlled-suppression"],
+            Narrative: "Inverting dτ/dt = ρ^(1/d) gives Δlnρ = 3f, and G_008 prices the drive at (1 − μ_k) of the amplitude per step. The four targets: 1 ns/day needs Δlnρ = 3.472222e-14 and "
+                + "a 7.436285e-18 per-step drive (a 32.25 m/s well); 1 µs/day 3.472222e-11 and 7.436285e-15 (1.02 km/s); 1 ms/day 3.472222e-8 and 7.436285e-12 (32.25 km/s); 1 s/day 3.472222e-5 "
+                + "and 7.436285e-9 (1019.91 km/s). The G_005 band's top is 0.140737 s/day and the observed galactic field is 0.046373 s/day (33 % of the band, a 219.63 km/s well). Positivity "
+                + "never binds (the largest excursion is 1.7e-5 of ρ̄), power scales as P ∝ f·(k/N)² (cost per unit shift 6.4250e-4 at k = 1 vs 2.3994 at k = 95), and every target needs an "
+                + "external mode-matched driver the canonical chain does not supply — so time control is feasible as arithmetic and refuted as physics.",
+            Formula: "Delta ln rho = 3f;  drive/step = (1 − mu_k)·Delta ln rho;  P ~ f·(k/N)^2",
+            CalculationId: "time-control",
+            References: ["ResearchY-G_010", "ResearchY-G_005", "ResearchY-G_008"],
+            AuditIds: ["g010"]),
 
         // ── Layer 5 — Correspondence ───────────────────────────────────────────
         new("thermodynamics", "Thermodynamics", "An added occupancy layer over the structural modes (temperature is BOUNDARY).",
@@ -767,5 +779,21 @@ public sealed class TheoryRegistry
             + "rearrangement; the phase directions; a uniform rescaling as a relative effect). No reclassification (D_040 untouched); no canonical claim, value or equation changes; no new primitive.",
             AuditStatus.Passed, new DateTime(2026, 9, 12), TheoryLayer.Physics, TheoryClassification.Derived,
             ["g002", "g003", "g004", "g005", "g008"]),
+        new("g010", "Time Control Feasibility Audit", "What sustained clock shift can exist under allowed driving?",
+            "Inverts dτ/dt = ρ^(1/d) (Δlnρ = 3f) and prices the drive with G_008's law ((1 − μ_k) of the amplitude per step). THE FOUR TARGETS: 1 ns/day → f = 1.157407e-14, Δlnρ = "
+            + "3.472222e-14, drive/step 7.436285e-18 (k = 1) / 2.777034e-14 (k = 95), 7.11e-9 of the band, equivalent well 32.25 m/s; 1 µs/day → 1.157407e-11, 3.472222e-11, 7.436285e-15 / "
+            + "2.777034e-11, 7.11e-6, 1019.91 m/s; 1 ms/day → 1.157407e-8, 3.472222e-8, 7.436285e-12 / 2.777034e-8, 7.11e-3, 32.25 km/s; 1 s/day → 1.157407e-5, 3.472222e-5, 7.436285e-9 / "
+            + "2.777034e-5, 7.11 TIMES the band, 1019.91 km/s. Reference rows: the G_005 band top = 4.8867e-6 = 0.140737 s/day (382.62 km/s well) and the observed galactic field = 1.6102e-6 = "
+            + "0.046373 s/day (33 % of the band, 219.63 km/s well). The equivalent well is c√f — the Earth's surface (60.145 µs/day) is 7.91 km/s, so 1 ms/day is 16.63× it. STEADY-STATE PROFILE: "
+            + "a pure Neumann mode ρ = ρ̄(1 + (Δlnρ/2)v_k), Σρ = 1.0000000000, min ρ = 1.041667e-2; the excursion/ρ̄ is 1.736111e-14 … 1.736111e-5, so POSITIVITY AND COUNT NEVER BIND; the driven "
+            + "recursion reproduces c·v_k/(1 − μ_k) to 1e-9 after 150 000 steps and the drive must be mode-matched to 1e-18. POWER SCALING: linear in the target (7.436e-18 → 7.436e-9); quadratic "
+            + "in relative frequency (1 − μ_k ≈ d(πk/N)²: cost(2)/cost(1) = 4.00; the continuum form overestimates at high k — exact 0.4000 vs 0.4935 at k = 48); N⁻² at fixed wavelength (1024-site "
+            + "113.7× cheaper); cost per unit shift d(1 − μ_k) = 6.4250e-4 (k = 1) vs 2.3994 (k = 95) → 3734.4. Accumulated drive over 200 steps at k = 95: 5.554e-12 … 5.554e-3. VERDICTS: PRACTICAL "
+            + "(1 ns/day, 1 µs/day, 1 ms/day — ≤7.11e-3 of the band, drives ≤7.44e-12 smooth, ≥1.2e4× a 1e-18 clock: as NUMBERS, given a driver) · ASTROPHYSICAL ONLY (0.0464 s/day through "
+            + "0.1407 s/day) · REFUTED (1 s/day spontaneously at 7.105× the band and a 1020 km/s well; and ANY sustained shift without an external mode-matched driver — branching is "
+            + "arrangement-neutral, basin 1.0, undriven local lifetime 0.622 steps, Poisson cap 4.8867e-6). The clock channel is length-independent, so only the drive's POWER scales with a physical L. "
+            + "No reclassification (D_040 untouched); no canonical claim, value or equation changes; no new primitive.",
+            AuditStatus.Passed, new DateTime(2026, 9, 12), TheoryLayer.Physics, TheoryClassification.Partial,
+            ["g005", "g008", "g009"]),
     ];
 }

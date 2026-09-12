@@ -93,6 +93,7 @@ ResearchY-G_006   ↔  Y_G_006_Tests.cs    (AT.Tests/ResearchY/G_GravitySource/)
 ResearchY-G_007   ↔  Y_G_007_Tests.cs    (AT.Tests/ResearchY/G_GravitySource/)
 ResearchY-G_008   ↔  Y_G_008_Tests.cs    (AT.Tests/ResearchY/G_GravitySource/)
 ResearchY-G_009   ↔  Y_G_009_Tests.cs    (AT.Tests/ResearchY/G_GravitySource/)
+ResearchY-G_010   ↔  Y_G_010_Tests.cs    (AT.Tests/ResearchY/G_GravitySource/)
 ResearchY-S_001  ↔  Y_S_001_Tests.cs       (AT.Tests/ResearchY/S_Synthesis/)
 ```
 
@@ -231,6 +232,7 @@ ResearchY-S_001  ↔  Y_S_001_Tests.cs       (AT.Tests/ResearchY/S_Synthesis/)
 | ResearchY-G_007 (Suppression Origin Audit) | `AT.Tests/ResearchY/G_GravitySource/Y_G_007_Tests.cs` | ACTIVE | 2026-09-12 | ✅ 9/9 PASSED — `Results/Y_G_007_Result.md` |
 | ResearchY-G_008 (Controlled Suppression Audit) | `AT.Tests/ResearchY/G_GravitySource/Y_G_008_Tests.cs` | ACTIVE | 2026-09-12 | ✅ 8/8 PASSED — `Results/Y_G_008_Result.md` |
 | ResearchY-G_009 (Clock Rate Audit) | `AT.Tests/ResearchY/G_GravitySource/Y_G_009_Tests.cs` | ACTIVE | 2026-09-12 | ✅ 8/8 PASSED — `Results/Y_G_009_Result.md` |
+| ResearchY-G_010 (Time Control Feasibility Audit) | `AT.Tests/ResearchY/G_GravitySource/Y_G_010_Tests.cs` | ACTIVE | 2026-09-12 | ✅ 8/8 PASSED — `Results/Y_G_010_Result.md` |
 | ResearchY-S_001 (Post-V2.1 Theory Architecture Synthesis) | `AT.Tests/ResearchY/S_Synthesis/Y_S_001_Tests.cs` | ACTIVE | 2026-08-30 | ✅ 4/4 PASSED — `Results/Y_S_001_Result.md` |
 
 ## Result Summaries

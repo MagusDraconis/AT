@@ -2076,11 +2076,11 @@ in the historical program counts below.
 | AT-QG | 182 | Complete |
 | **Total** | **289** | |
 
-## ResearchY G-Program — Gravity Source, Control, Magnitude, Calibration, Realizability, Mechanism, Origin, Controlled Suppression, Clock Rate (9 audits, 2026-09-12)
+## ResearchY G-Program — Gravity Source, Control, Magnitude, Calibration, Realizability, Mechanism, Origin, Controlled Suppression, Clock Rate, Time Control (10 audits, 2026-09-12)
 
-New ResearchY group **G — Gravity Source**. Suite: `AT.Tests/ResearchY/G_GravitySource/` (74/74 pass,
+New ResearchY group **G — Gravity Source**. Suite: `AT.Tests/ResearchY/G_GravitySource/` (82/82 pass,
 ~1 s); shared machinery `AT.Tests/Shared/DensityField.cs`, `AT.Tests/Shared/PhysicalUnits.cs`.
-Detailed docs: `Docs/ResearchY/G_GravitySource/ResearchY-G_00{1..9}.md`.
+Detailed docs: `Docs/ResearchY/G_GravitySource/ResearchY-G_00{1..10}.md`.
 
 ### G_001 — Gravity Source Audit
 **Status:** Complete. **SOURCE = the actualization density ρ** (counting measure), and for the attractive
@@ -2278,9 +2278,35 @@ Random), four candidates.
   (G_005 caps realised contrasts at 4.8867e-6; G_008 gives 0.622 steps and 0.7998 injected per step). What
   is realised is exactly GR's depth ⇒ **no new clock effect**; locally AT = GR with the derived `G`.
 
-**App/Book surfaced:** AT.App Research News + Theory Book ("Gravity Source" part, nine new chapters) +
-TestGroups; AT.Book `GravityService` (9 executable calculations), nine theory objects (Physics layer) and
-nine audits g001–g009.
+### G_010 — Time Control Feasibility Audit
+**Status:** Complete. Invert the G_009 clock law and price the drive with the G_008 law:
+`Δlnρ = 3f` (f = fractional rate shift per day) and `drive/step = (1 − μ_k)Δlnρ`; well depth `c√f`.
+
+| target | Δlnρ | drive/step (k = 1) | band share | well | verdict |
+|---|---|---|---|---|---|
+| 1 ns/day | 3.472222e-14 | 7.436285e-18 | 7.11e-9 | 32.25 m/s | **PRACTICAL** (numbers) |
+| 1 µs/day | 3.472222e-11 | 7.436285e-15 | 7.11e-6 | 1019.91 m/s | **PRACTICAL** |
+| 1 ms/day | 3.472222e-8 | 7.436285e-12 | 7.11e-3 | 32.25 km/s | **PRACTICAL** |
+| 1 s/day | 3.472222e-5 | 7.436285e-9 | **7.105** | 1019.91 km/s | **REFUTED** |
+| band top (G_005) | 4.8867e-6 | 1.046557e-9 | 1 | 382.62 km/s | ASTROPHYSICAL |
+| observed galactic | 1.6102e-6 | 3.448536e-10 | 0.3295 | 219.63 km/s | realised |
+
+- **Steady state:** a pure Neumann mode `ρ = ρ̄(1 + (Δlnρ/2)v_k)` — `Σρ = 1.0000000000`,
+  `min ρ = 1.041667e-2`, excursion/ρ̄ ∈ [1.74e-14, 1.74e-5] ⇒ **positivity and count never bind**;
+  the driven recursion reproduces `c·v_k/(1 − μ_k)` to 1e-9 after 150 000 steps and the drive must be
+  **mode-matched to 1e-18**.
+- **Power scaling:** `P ∝ f·(k/N)²` — linear in the target (7.436e-18 → 7.436e-9); quadratic in relative
+  frequency (`cost(2)/cost(1) = 4.00`; the continuum form `d(πk/N)²` overestimates at high k — exact 0.4000
+  vs 0.4935 at k = 48); **N⁻²** at fixed wavelength (1024-site 113.7× cheaper); cost per unit shift
+  `d(1 − μ_k)` = **6.4250e-4** (k = 1) vs **2.3994** (k = 95) ⇒ the 3734.4 selectivity of G_008 again.
+- **Critical:** all three small targets sit ≤7.11e-3 of the accessible band and need drives ≥1.2e4×
+  a 1e-18 clock, so they are *arithmetically* practical — but every one needs an **external mode-matched
+  driver** the canonical chain does not supply (branching is arrangement-neutral, the attractor basin is
+  1.0, and an undriven local state lives 0.622 steps). **Time control is refuted as physics.**
+
+**App/Book surfaced:** AT.App Research News + Theory Book ("Gravity Source" part, ten chapters) +
+TestGroups; AT.Book `GravityService` (10 executable calculations), ten theory objects (Physics layer) and
+ten audits g001–g010.
 
 ## Key Unsolved Problems
 
