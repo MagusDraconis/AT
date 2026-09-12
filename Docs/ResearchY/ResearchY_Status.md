@@ -14,6 +14,7 @@
 | D — Resonance Structure | PLANNED | D_001 D96 Resonance Audit, D_002 Standing Wave Model |
 | S — Architecture Synthesis | ACTIVE | S_001 Post-V2.1 Theory Architecture Synthesis (capstone) |
 | T — Spectral Blueprint | ACTIVE | T_001 Inverse Spectral Design (spectrum → coupling via inverse DFT) |
+| G — Gravity Source | ACTIVE | G_001 Gravity Source Audit (audit + tests, 9/9 ✅) |
 | Tests | ACTIVE | Y_A_001 suite passing (5/5) |
 
 ## Investigation Status
@@ -313,6 +314,10 @@
 | ResearchY-C_002 | Radial Propagation | — | — | PLANNED |
 | ResearchY-D_001 | D96 Resonance Audit | — | — | PLANNED |
 | ResearchY-D_002 | Standing Wave Model | — | — | PLANNED |
+| ResearchY-G_001 | Gravity Source Audit (SOURCE = actualization density rho; CORRELATED = energy density + spectral density; REFUTED = information density + the curvature–density law as a source) | `G_GravitySource/ResearchY-G_001.md` | `AT.Tests/ResearchY/G_GravitySource/Y_G_001_Tests.cs` (9/9 ✅) | COMPLETE |
+| ResearchY-G_002 | Density Control Audit (CONTROLLABLE: ρ changes at fixed total mass-energy via arrangement, degeneracy redistribution, fixed-total compression and lattice choice; REFUTED: phase coherence; CORRELATED: unfixed compression and rescaling) | `G_GravitySource/ResearchY-G_002.md` | `AT.Tests/ResearchY/G_GravitySource/Y_G_002_Tests.cs` (9/9 ✅) | COMPLETE |
+| ResearchY-G_003 | Gravity Magnitude Audit (physical Δa, ΔR, ΔΦ in SI; MEASURABLE potential channel; ASTROPHYSICAL ONLY force channel; threshold lengths at fixed total energy) | `G_GravitySource/ResearchY-G_003.md` | `AT.Tests/ResearchY/G_GravitySource/Y_G_003_Tests.cs` (7/7 ✅) | COMPLETE |
+| ResearchY-G_004 | Gravity Calibration Audit (a_pred/a_obs at four scales without free parameters: Earth 0.99600, Sun-Earth 0.99600, RAR 0.86850/0.9226 with zero fitted parameters, cluster 0.51759 REFUTED; critical question answered) | `G_GravitySource/ResearchY-G_004.md` | `AT.Tests/ResearchY/G_GravitySource/Y_G_004_Tests.cs` (7/7 ✅) | COMPLETE |
 | ResearchY-NP_170 | Lock-Lattice Phase Memory — Physical Realizability Test Proposal (rev. 2, after NP_169 + T_007–T_015) | `NP_NewPhysics/ResearchY-NP_170.md` · `Publication/ResearchY-NP_170-Lock-Lattice-Program.tex`/.pdf | — (numerical precursor: see `ResearchY-NP_171`, `Y_NP_171_Tests.cs`) | CLOSED (superseded by NP_175) |
 | ResearchY-NP_171 | Deterministic Lock-Lattice Simulator (model prediction of H1 before hardware: sharp 23.69 ± 5.28 PASS, width 0.132 ± 0.083 PASS, hysteresis A = 0.0251 ± 0.0074 FAIL at 3.4σ; g_c = 1.607 ± 0.030, f(g = 1) = 0, K ≥ 10.29·ω₁) | `NP_NewPhysics/ResearchY-NP_171.md` | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_171_Tests.cs` (4/4 ✅) | COMPLETE |
 | ResearchY-NP_172 | Retention Null Audit (H2's two-time-scale signature is GENERIC: the generic strongly nonlinear ring passes R = 10.248 ≥ 10 with no barrier, while D96 and the random lattice give R = 6.358 identically and the Q-contrast probe fails — REFUTED as AT-specific) | `NP_NewPhysics/ResearchY-NP_172.md` | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_172_Tests.cs` (5/5 ✅) | COMPLETE |

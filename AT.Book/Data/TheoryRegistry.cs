@@ -139,6 +139,48 @@ public sealed class TheoryRegistry
             Formula: "A = Σm·#g·occ₂ = 95·44·87,  M_Pl = v·A³",
             CalculationId: "planck-scale",
             References: ["QG_181", "QG_183"]),
+        new("gravity-source", "Gravity Source", "Gravity is sourced by the counting measure ρ — the only dimensionless, local candidate; the field equation needs no coupling constant.",
+            TheoryLayer.Physics, TheoryClassification.Derived, TheoryObjectKind.Derivation,
+            ["planck-scale", "occupancy"],
+            Narrative: "Five candidates were adjudicated (energy density, actualization density, spectral density, information density, the curvature–density law). "
+                + "ρ wins because the conformal factor ρ^(2/d) must be dimensionless and local; GR's source is dimensionful and reaches curvature dimensions only "
+                + "through κ. Energy density and spectral density are CORRELATED (the first is an exact re-expression of the deficit whose energy reading is hosted; "
+                + "the second supplies the source's parameters and the magnitude of G but has no position index). Information density and the curvature–density law "
+                + "used as a source are REFUTED.",
+            Formula: "g = ρ^(2/d)·η,  R = F(ρ),  a = −(1/d)·∇ln ρ,  ρ_{k+1} = μ·ρ_k",
+            CalculationId: "gravity-source",
+            References: ["ResearchY-G_001"],
+            AuditIds: ["g001"]),
+        new("density-control", "Density Control", "ρ can be rearranged at fixed total mass-energy; the free room is exactly the degeneracy structure, N − A₀.",
+            TheoryLayer.Physics, TheoryClassification.Derived, TheoryObjectKind.Derivation,
+            ["gravity-source", "d96"],
+            Narrative: "Σm = 0 identically (QG194), so the ARRANGEMENT of ρ is never tied to the energy. The free directions number N − A₀ = 51 of 96 for D96, "
+                + "which equals the D_048 latent fraction L = 0.53125 exactly. Phase coherence is inert (ρ, R, a unchanged) and rescaling moves only the energy.",
+            Formula: "free room = Σ(m_i − 1) = N − A₀ = 51/96 = L",
+            CalculationId: "density-control",
+            References: ["ResearchY-G_002", "D_047", "D_048"],
+            AuditIds: ["g002"]),
+        new("gravity-magnitude", "Gravity Magnitude", "The SI size of a Δρ: a pure-number potential channel and a threshold-length force channel.",
+            TheoryLayer.Physics, TheoryClassification.Derived, TheoryObjectKind.Derivation,
+            ["gravity-source", "density-control"],
+            Narrative: "ΔΦ/c² = Δa_AT needs no length scale (the potential, clock and redshift channel is MEASURABLE); Δa = c²Δa_AT/L and ΔR = ΔR_AT/L² need "
+                + "the physical scale L (ASTROPHYSICAL ONLY: 1e-6 g for L < 9.54 kpc, 1e-9 g < 9.54 Mpc, 1e-12 g < 9.54 Gpc). Phase and rescaling are PRACTICALLY ZERO. "
+                + "The observed galactic field corresponds to Δln ρ = 1.6102e-6, so any realised reconfiguration must be suppressed by ≥ 3.746e5.",
+            Formula: "ΔΦ/c² = Δa_AT;  Δa = c²·Δa_AT/L;  ΔR = ΔR_AT/L²;  ΔM = Δa·L²/G",
+            CalculationId: "gravity-magnitude",
+            References: ["ResearchY-G_003", "QG_187"],
+            AuditIds: ["g003"]),
+        new("gravity-calibration", "Gravity Calibration", "a_pred/a_obs at four scales with no free parameters: Earth 0.99600, Sun–Earth 0.99600, RAR 0.86850, cluster 0.51759.",
+            TheoryLayer.Physics, TheoryClassification.Partial, TheoryObjectKind.Derivation,
+            ["gravity-magnitude", "planck-scale"],
+            Narrative: "Earth and Sun–Earth reproduce measured gravity to 0.40 %, the residual being entirely the derived value of G (QG181). The galaxy RAR scale "
+                + "g† = cH₀/(2π) is parameter-free and lands within 8–13 % of the literature determinations. The cluster modified-gravity channel fails by 1.93× "
+                + "(the project's own X063 finding), so AT leans on the deficit-as-mass channel there. Locally the theory is exactly Newtonian with the derived G, "
+                + "which is why the counterfactual 1e-6 g effects are absent.",
+            Formula: "Earth & Sun–Earth: G_AT/G_CODATA = 0.9959996;  RAR: g† = c·H₀/(2π) = 1.04220e-10 m/s²",
+            CalculationId: "gravity-calibration",
+            References: ["ResearchY-G_004", "QG_080", "QG_181"],
+            AuditIds: ["g004"]),
 
         // ── Layer 5 — Correspondence ───────────────────────────────────────────
         new("thermodynamics", "Thermodynamics", "An added occupancy layer over the structural modes (temperature is BOUNDARY).",
@@ -517,5 +559,52 @@ public sealed class TheoryRegistry
             "Bounded only by failure modes, not the mechanism — coherent softening is a TRUE variable-rigidity technology (10–90%+ reversible). R(x) = max(0, (1−x−p_c)/(1−p_c)): ordered (crystal/metal/ceramic, m = 6) one critical mode → ~33% reduction, two → ~67%, three → ~100% (gel); granite (m = 20) ~10% steps. 1% is below the step size (thermal-scale); 10/50/90% achievable (90% near-gel, unloaded). Bounded by fracture (loaded), heating (power), decoherence (selectivity).",
             AuditStatus.Passed, new DateTime(2026, 9, 7), TheoryLayer.Physics, TheoryClassification.Emergent,
             ["difference", "d96"]),
+
+        // ── G-program — Gravity Source, Control, Magnitude, Calibration (ResearchY-G_001…G_004) ──
+        new("g001", "Gravity Source Audit", "What variable actually sources gravity in AT?",
+            "SOURCE = the actualization density ρ (counting measure), and for the attractive sector its standardised deficit m = ρ̄ − ρ: "
+            + "ρ is the dimensionless, LOCAL input of g = ρ^(2/d)η, R = F(ρ), a = −(1/d)∇ln ρ and ρ_{k+1} = μρ_k, and it needs NO coupling "
+            + "constant (GR's source reaches curvature dimensions only through κ). CORRELATED = energy density (T00 = (ρ̄−ρ)v² is rank-identical "
+            + "to the deficit; Lovelock forces the geometric tensor to G/κ; the energy reading is hosted, QG89) and spectral density (it supplies "
+            + "m₀ = occ₀/Σm = 0.042105, r₀ = ln span = 1.856691 and the magnitude of G = 6.6476e-11, 0.40%, but has no position index — permuting "
+            + "a profile leaves every spectral moment unchanged while the field reverses sign). REFUTED = information density (permutation-invariant "
+            + "global functional; identical I = 0.106440 nats with fields −0.222222 vs +0.095238; it is the non-gravitating surplus ΩΛ = 0.6839) and "
+            + "the curvature–density law R = F(ρ) used as a source (it is the OUTPUT of the law and is not injective in ρ). No reclassification.",
+            AuditStatus.Passed, new DateTime(2026, 9, 12), TheoryLayer.Physics, TheoryClassification.Derived,
+            ["planck-scale", "omega-lambda", "d96"]),
+        new("g002", "Density Control Audit", "Can the actualization density ρ change independently of mass-energy?",
+            "YES — CONTROLLABLE, and for a structural reason: count conservation makes the total deficit vanish identically (Σm = 0 exactly, "
+            + "QG194), so no rearrangement of ρ can change the total mass-energy. Spectral organisation (the same multiset reordered leaves E "
+            + "exactly fixed while a monotone density and its reversal give a of opposite sign at every probe), a redistribution INSIDE degenerate "
+            + "multiplets (spectrum and per-multiplet totals untouched at ΔE = 0, taking the field from EXACTLY zero to max|a| = 0.603175), "
+            + "fixed-total survivor compression (ΔE = 0, L1 up to 5.1569) and the lattice choice (random is an exact zero-field null; D96³ 97.6% vs "
+            + "D96 53.1% energy-free) are all CONTROLLABLE. CORRELATED: unfixed compression (E −47/−73/−86%) and rescaling (E ×3.7 while a is "
+            + "exactly invariant). REFUTED: phase coherence (ρ = |ψ|² is phase-blind). The free room is exactly Σ(m_i − 1) = N − A₀ = 51 of 96 for "
+            + "D96 = the D_048 latent fraction L = 0.53125 exactly.",
+            AuditStatus.Passed, new DateTime(2026, 9, 12), TheoryLayer.Physics, TheoryClassification.Derived,
+            ["d96", "occupancy", "iocc"]),
+        new("g003", "Gravity Magnitude Audit", "What physical gravitational change corresponds to a measured Δρ?",
+            "The canonical chain g₀₀ = −ρ^(2/d) (QG197) → ΔΦ/c² = (1/d)Δln ρ (QG21/QG187) → Δa = −(c²/d)∇ln ρ (G4-O3) gives, with "
+            + "Δln ρ = d·Δa_AT per cell: ΔΦ/c² = Δa_AT (a PURE NUMBER, no length scale), Δa = c²·Δa_AT/L, ΔR = ΔR_AT/L², ΔM = Δa·L²/G. "
+            + "Anchor: the Earth-vs-GPS potential reproduces 45.74 μs/day (QG187: 45.7). The witnesses (Δa_AT = 0.032…0.686) give 3–69 % "
+            + "potential changes and, at 15 kpc, 1.36e-5 g with ΔM = 2.157e17 M_☉. THRESHOLDS AT FIXED TOTAL ENERGY (yes to all three): "
+            + "1e-12 g for L < 9.54 Gpc, 1e-9 g for L < 9.54 Mpc, 1e-6 g for L < 9.54 kpc; the observable-universe radius (~14.3 Gpc) exceeds "
+            + "every 1e-12 g window. Detectability: 1e-12 g = 0.0941 g†, 1e-9 g = 94.1 g†, 1e-6 g = 9.41e4 g†. Falsifiable requirement: the "
+            + "observed galactic field corresponds to Δln ρ = 1.6102e-6 over 15 kpc, so any realised reconfiguration must be suppressed by ≥ 3.746e5.",
+            AuditStatus.Passed, new DateTime(2026, 9, 12), TheoryLayer.Physics, TheoryClassification.Derived,
+            ["g001", "g002", "planck-scale"]),
+        new("g004", "Gravity Calibration Audit", "Can a_AT be calibrated to measured gravity?",
+            "CALIBRATED at three of four scales with NO free parameters (nothing fitted to the data it is compared with): Earth surface "
+            + "a_pred/a_obs = 0.99600 (GM_⊕/R_⊕² = 9.820250 vs 9.780965 m/s²; the entire residual is the derived-G offset "
+            + "G_AT/G_CODATA = 0.9959996, 0.40%), Sun–Earth 0.99600 (plus the ψ-sector perihelion +42.98 ″/century and PPN γ = β = +1), and the "
+            + "galaxy RAR 0.86850 with ZERO fitted parameters (g† = cH₀/(2π) = 1.04220e-10 m/s²; 0.9226 against the project's combined "
+            + "a₀/cH₀ = 0.1725). CORRELATED: the RAR interpolating function (the AT-native statement is the α = 0 log deficit, semi-natural). "
+            + "REFUTED: the cluster modified-gravity channel — Coma gives a_pred/a_obs = 0.51759 (1.93× short; MOND 0.610), the project's own "
+            + "X063 finding that AT modified gravity is insufficient at cluster scale, so AT must use the deficit-as-mass channel (≈ ΛCDM, ~85 % "
+            + "dark, fraction not derived) — and a uniform cosmic AT gradient (104× above the ephemeris bound). CRITICAL: 1e-6 g is a "
+            + "counterfactual (it needs Δln ρ = 0.15151 over 15 kpc); the realised field is g† = 1.06e-11 g, 9.41e4× below, and locally a "
+            + "point-like deficit gives exactly a = −G_AT·M/r² with no anomalous term (G4-ME22).",
+            AuditStatus.Passed, new DateTime(2026, 9, 12), TheoryLayer.Physics, TheoryClassification.Partial,
+            ["g001", "g002", "g003", "planck-scale", "omega-matter"]),
     ];
 }

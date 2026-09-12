@@ -84,6 +84,10 @@ ResearchY-NP_030  ↔  Y_NP_030_Tests.cs     (AT.Tests/ResearchY/NP_NewPhysics/)
 ResearchY-NP_031  ↔  Y_NP_031_Tests.cs     (AT.Tests/ResearchY/NP_NewPhysics/)
 ResearchY-NP_032  ↔  Y_NP_032_Tests.cs     (AT.Tests/ResearchY/NP_NewPhysics/)
 ResearchY-NP_033  ↔  Y_NP_033_Tests.cs     (AT.Tests/ResearchY/NP_NewPhysics/)
+ResearchY-G_001   ↔  Y_G_001_Tests.cs    (AT.Tests/ResearchY/G_GravitySource/)
+ResearchY-G_002   ↔  Y_G_002_Tests.cs    (AT.Tests/ResearchY/G_GravitySource/)
+ResearchY-G_003   ↔  Y_G_003_Tests.cs    (AT.Tests/ResearchY/G_GravitySource/)
+ResearchY-G_004   ↔  Y_G_004_Tests.cs    (AT.Tests/ResearchY/G_GravitySource/)
 ResearchY-S_001  ↔  Y_S_001_Tests.cs       (AT.Tests/ResearchY/S_Synthesis/)
 ```
 
@@ -213,6 +217,10 @@ ResearchY-S_001  ↔  Y_S_001_Tests.cs       (AT.Tests/ResearchY/S_Synthesis/)
 | ResearchY-NP_032 (Thermal-N Search Audit) | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_032_Tests.cs` | ACTIVE | 2026-09-02 | ✅ 9/9 PASSED — `Results/Y_NP_032_Result.md` |
 | ResearchY-NP_033 (D96 Ensemble Audit) | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_033_Tests.cs` | ACTIVE | 2026-09-02 | ✅ 9/9 PASSED — `Results/Y_NP_033_Result.md` |
 | ResearchY-NP_022 (Unique Physics Prediction Search) | `AT.Tests/ResearchY/NP_NewPhysics/Y_NP_022_Tests.cs` | ACTIVE | 2026-08-31 | ✅ 7/7 PASSED — `Results/Y_NP_022_Result.md` |
+| ResearchY-G_001 (Gravity Source Audit) | `AT.Tests/ResearchY/G_GravitySource/Y_G_001_Tests.cs` | ACTIVE | 2026-09-12 | ✅ 9/9 PASSED — `Results/Y_G_001_Result.md` |
+| ResearchY-G_002 (Density Control Audit) | `AT.Tests/ResearchY/G_GravitySource/Y_G_002_Tests.cs` | ACTIVE | 2026-09-12 | ✅ 9/9 PASSED — `Results/Y_G_002_Result.md` |
+| ResearchY-G_003 (Gravity Magnitude Audit) | `AT.Tests/ResearchY/G_GravitySource/Y_G_003_Tests.cs` | ACTIVE | 2026-09-12 | ✅ 7/7 PASSED — `Results/Y_G_003_Result.md` |
+| ResearchY-G_004 (Gravity Calibration Audit) | `AT.Tests/ResearchY/G_GravitySource/Y_G_004_Tests.cs` | ACTIVE | 2026-09-12 | ✅ 7/7 PASSED — `Results/Y_G_004_Result.md` |
 | ResearchY-S_001 (Post-V2.1 Theory Architecture Synthesis) | `AT.Tests/ResearchY/S_Synthesis/Y_S_001_Tests.cs` | ACTIVE | 2026-08-30 | ✅ 4/4 PASSED — `Results/Y_S_001_Result.md` |
 
 ## Result Summaries

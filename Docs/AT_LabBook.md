@@ -2076,6 +2076,68 @@ in the historical program counts below.
 | AT-QG | 182 | Complete |
 | **Total** | **289** | |
 
+## ResearchY G-Program — Gravity Source, Control, Magnitude, Calibration (4 audits, 2026-09-12)
+
+New ResearchY group **G — Gravity Source**. Suite: `AT.Tests/ResearchY/G_GravitySource/` (32/32 pass,
+~0.24 s); shared machinery `AT.Tests/Shared/DensityField.cs`, `AT.Tests/Shared/PhysicalUnits.cs`.
+Detailed docs: `Docs/ResearchY/G_GravitySource/ResearchY-G_00{1..4}.md`.
+
+### G_001 — Gravity Source Audit
+**Status:** Complete. **SOURCE = the actualization density ρ** (counting measure), and for the attractive
+Newtonian sector its standardised deficit m = ρ̄ − ρ.
+- ρ is the dimensionless, LOCAL input of `g = ρ^(2/d)η` (QG197), `R = F(ρ)` (G4-G2),
+  `a = −(1/d)∇lnρ` (G4-O3), `ρ_{k+1} = μρ_k` (QG222); **no coupling constant** (the sharpest new
+  statement: GR's source reaches curvature dimensions only through κ; `a(λρ) = a(ρ)` exactly).
+- CORRELATED: energy density (T₀₀ = (ρ̄−ρ)v² rank-identical to the deficit; only conserved geometric
+  tensor is G/κ — Bianchi 1e−12 vs kinetic divergence 0.0209; energy reading hosted, QG89) and spectral
+  density (supplies m₀ = 0.042105, r₀ = ln span = 1.856691, G = 6.6476e−11 at 0.40%; no position index).
+- REFUTED: information density (permutation-invariant — identical I = 0.106440 nats with fields
+  −0.222222 vs +0.095238; it is the non-gravitating surplus ΩΛ = 0.6839) and `R = F(ρ)` as a source
+  (output of the law, not injective in ρ).
+
+### G_002 — Density Control Audit
+**Status:** Complete. **CONTROLLABLE.** Count conservation makes the total deficit vanish identically
+(Σm = 0, QG194), so ρ's *arrangement* is never tied to the energy.
+- CONTROLLABLE: spectral organisation (permutation at ΔE = 0; a flips sign at every probe),
+  degeneracy redistribution **inside multiplets** (spectrum and per-multiplet totals untouched at
+  ΔE = 0, field from exactly zero to max|a| = 0.603175), fixed-total survivor compression (ΔE = 0,
+  L1 up to 5.1569), lattice choice (random = exact zero-field null; D96³ 97.6% vs D96 53.1% energy-free).
+- CORRELATED: unfixed compression (E −47/−73/−86%); rescaling (E ×3.7, a exactly invariant).
+- REFUTED: phase coherence (ρ = |ψ|² phase-blind; interference still runs 4 → 2 → 0).
+- **Free room = Σ(m_i − 1) = N − A₀ = 51 of 96 = the D_048 latent fraction L = 0.53125 exactly.**
+
+### G_003 — Gravity Magnitude Audit
+**Status:** Complete. MEASURABLE (potential) / ASTROPHYSICAL ONLY (force) / PRACTICALLY ZERO (phase,
+rescaling). Critical answer: **yes to all three thresholds at fixed energy.**
+- Chain: `ΔΦ/c² = Δa_AT` (pure number, no L), `Δa = c²Δa_AT/L`, `ΔR = ΔR_AT/L²`, `ΔM = Δa·L²/G`;
+  anchored on the GPS 45.74 μs/day (QG187: 45.7).
+- Witnesses (at 15 kpc): arrangement 1.358e-5 g with ΔΦ/c² = 0.686 and ΔM = 2.157e17 M_☉; degeneracy
+  1.194e-5 g; D96-vs-random 6.600e-6 g; D96³-vs-D96 5.477e-6 g; compression 6.360e-7 g.
+- Thresholds: **1e-12 g for L < 9.54 Gpc, 1e-9 g < 9.54 Mpc, 1e-6 g < 9.54 kpc** (weakest witness;
+  arrangement 203.66). The horizon (~14.3 Gpc) exceeds every 1e-12 g window.
+- Detectability: 1e-12 g = 0.0941 g†, 1e-9 g = 94.1 g†, 1e-6 g = 9.41e4 g†.
+- **Falsifiable requirement:** the observed galactic field ⟺ Δlnρ = 1.6102e-6 over 15 kpc, so any
+  realised reconfiguration must be suppressed by ≥ 3.746e5 (the quantitative form of G_002 OP2).
+
+### G_004 — Gravity Calibration Audit
+**Status:** Complete. **CALIBRATED (3 of 4 scales, no free parameters) / CORRELATED (RAR form) /
+REFUTED (cluster modified gravity).**
+- Earth 0.99600 (`GM_⊕/R_⊕²` = 9.820250 vs 9.780965 m/s²; the residual IS the derived-G offset
+  `G_AT/G_CODATA = 0.9959996`, 0.40%); Sun–Earth 0.99600 (+ψ perihelion 42.98 ″/century, PPN γ = β = +1,
+  GPS 38.5 vs 38.6 μs/day); galaxy RAR 0.86850 with **zero fitted parameters**
+  (g† = cH₀/2π = 1.04220e-10 m/s²; 0.9226 vs the project's combined a₀/cH₀ = 0.1725).
+- Cluster (Coma): a_obs = 6.3650e-11 m/s² = 0.61 g†; from baryons only the AT/RAR law gives 0.51759
+  (1.93× short; MOND 0.610) — restates X063: AT modified gravity insufficient at cluster scale, so AT
+  uses the deficit-as-mass channel (≈ ΛCDM, ~85% dark, fraction not derived, X065).
+- Critical: 1e-6 g is a counterfactual (needs Δlnρ = 0.15151 over 15 kpc); the realised field is
+  g† = 1.06e-11 g (9.41e4× below); a uniform cosmic gradient would give 1.06e-11 g everywhere, 104× above
+  the ephemeris bound (REFUTED); locally a point-like deficit gives exactly `a = −G_AT M/r²` with no
+  anomalous term (G4-ME22) — the 1/r flat-curve regime needs a scale-free extended deficit (G4-ME21).
+
+**App/Book surfaced:** AT.App Research News + Theory Book ("Gravity Source" part, four new chapters) +
+TestGroups; AT.Book `GravityService` (4 executable calculations), four theory objects (Physics layer) and
+four audits g001–g004.
+
 ## Key Unsolved Problems
 
 1. Numerical values of ℓ, τ, ħ — empirical, not derived

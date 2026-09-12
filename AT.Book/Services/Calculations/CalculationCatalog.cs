@@ -15,9 +15,10 @@ public sealed class CalculationCatalog
         InformationService information,
         CosmologyService cosmology,
         PhysicsService physics,
-        QuantumService quantum)
+        QuantumService quantum,
+        GravityService gravity)
     {
-        ICalculationService[] services = [spectrum, occupancy, information, cosmology, physics, quantum];
+        ICalculationService[] services = [spectrum, occupancy, information, cosmology, physics, quantum, gravity];
         All = services.SelectMany(s => s.Results).ToArray();
         _byId = All.ToDictionary(r => r.Id, StringComparer.OrdinalIgnoreCase);
     }

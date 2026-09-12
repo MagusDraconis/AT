@@ -341,6 +341,195 @@ altered, and no file was deleted.
   domain-specific values (QG313) evidenced on datasets and synthetic cohorts (QG307–QG319).
 - **Files.** `Docs/ResearchY/NP_NewPhysics/ResearchY-NP_175.md` (with FINAL VERDICT section).
 
+## Gravity Source Audit — the source term is the actualization density (ResearchY-G_001, 2026-09-12)
+
+New ResearchY group **G (Gravity Source)**, first investigation G_001: a five-candidate adjudication of
+what actually sources gravity in AT. Verdict: **SOURCE = actualization density ρ** (the counting
+measure) — and, for the attractive Newtonian sector, its standardised **deficit m = ρ̄ − ρ**.
+
+- **Why ρ wins (and the sharpest new statement).** The conformal factor ρ^(2/d) of g = ρ^(2/d)η must be
+  dimensionless, so the variable entering it must be dimensionless and local. ρ is both. GR's source is
+  dimensionful and reaches curvature dimensions only through κ = 8πG/c⁴ (κ·T → [L⁻²]) — a coupling AT
+  would have to import (G4-L12 BDG −2 NO MATCH). **AT's field equation needs no coupling at all**: with
+  ρ dimensionless, [R] = L⁻² comes entirely from ρ's own derivatives. Tested: a(λρ) = a(ρ) exactly while
+  R(λρ) = λ^(−2/d)·R(ρ).
+- **CORRELATED — energy density.** T₀₀ = (ρ̄−ρ)v² is rank-identical to the deficit; the only conserved
+  tensor built from the scalar geometry is G/κ (Lovelock; measured Bianchi residual 1e−12 vs a kinetic
+  candidate's divergence 0.0209). The energy *reading* is HOSTED (QG89/NP_058). Same content, other units.
+- **CORRELATED — spectral density.** It supplies the source's PARAMETERS (m₀ = occ₀/Σm = 0.042105,
+  r₀ = ln span = 1.856691) and the MAGNITUDE of G (A = Σm·#g·occ₂ = 363,660, M_Pl = v·A³, G = 6.6476e−11
+  within 0.40%). It is GLOBAL (no position index): flipping a profile leaves every spectral moment
+  unchanged while the field reverses sign (−0.222222 vs +0.095238) → never the local field.
+- **REFUTED — information density.** Permutation-invariant global functional: identical I = 0.106440
+  nats with fields of opposite sign; and it is the *non-gravitating surplus* (ΩΛ = I_occ/ln K = 0.6839,
+  NP_055–NP_064). The deficit gravitates; the surplus only describes (NP_065).
+- **REFUTED — the curvature–density law R = F(ρ) as a source.** R is the OUTPUT of the law and is not
+  injective in ρ: ρ = 1+0.5x² and ρ = 1+0.5x²+5x⁴ share R(0) = −1.333333. Inverting the law to source ρ
+  is circular. (The law itself remains DERIVED, G4-G2, exact.)
+- **Limits.** vacuum ρ = ρ̄ → a = R = 0 exactly; M_eff(12) = 0.078367 = 94.04% of m₀r₀/(dρ̄) = 0.083333;
+  d ln|a|/d ln r = −1.9703 (target −2) and −1.1524 for the log deficit (target −1); ρ → 0 gives a
+  curvature divergence ∝ ρ^(−2/3) with √(−g) = ρ → 0; μ = 1 is stationary.
+- **Comparison.** g† = cH₀/(2π) = 1.0422e−10 m/s², break ratio √2 at g_bar = g†, deep limit
+  g_obs → √(g_bar g†); α = 0 is the unique flat member (ratios 1.1748/1.4914/1.9022/3.1476/9.0900 for
+  α = 0/0.25/0.5/1/2); the conformal sector has R = 0 at uniform ρ, so lensing/tensor waves remain the
+  separate ψ sector (QG21/24/43/212).
+- **Classification (two-level, no reclassification).** Source *variable* DERIVED (QG197/G4-G2/G4-O3/QG222);
+  the attractive-deficit *reading* is a HYPOTHESIS (G4-ME0); its energy reading HOSTED (QG89); α = 0
+  DERIVED given criticality (QG206) with scale-freeness BOUNDARY (AT-F1/NP_070); SI conversion of G
+  BOUNDARY. The D_040 ClassificationRegistry is untouched.
+- **Files.** `Docs/ResearchY/G_GravitySource/ResearchY-G_001.md`,
+  `AT.Tests/ResearchY/G_GravitySource/Y_G_001_Tests.cs` (9/9 ✅),
+  `Docs/ResearchY/Tests/Results/Y_G_001_Result.md`.
+- **Next open questions (G_001 OP1–OP4).** The dynamical origin of ρ's profile (still OPEN, G4-RHO);
+  why the *deficit* branch rather than the repulsive conserved flux (G4-RHO01); whether a LOCAL spectral
+  functional exists; the ψ boundary.
+
+## Density Control Audit — ρ changes at fixed energy; degeneracy is the free room (ResearchY-G_002, 2026-09-12)
+
+G_002 asks the control question that G_001 leaves open: **can the actualization density ρ change
+independently of mass-energy?** Answer: **YES — CONTROLLABLE**, and the reason is structural.
+
+- **The structural reason.** Count conservation makes the **total deficit vanish identically**
+  (`Σm = 0` exactly, QG194: with ρ̄ = 1/N and Σρ = 1). So no rearrangement of ρ can change the total
+  mass-energy — "fixed total energy" is the *generic* case, and the question becomes which operations
+  move ρ *inside* that constraint.
+- **CONTROLLABLE.** (1) *Spectral organization*: the same occupancy multiset in a different order
+  leaves E exactly fixed (L1 = 0.7583) while a monotone density and its reversal give a of **opposite
+  sign at every interior probe** (max|Δa| = 0.685714) — the density-space analogue of NP_171's
+  arrangement sensitivity (canonical g_c = 1.607 vs sorted 1.746, 9%). (3) *Degeneracy structure* —
+  the mechanism: a redistribution **inside** degenerate multiplets leaves every per-multiplet total
+  identical to 12 dp (spectrum and mode energies untouched) at ΔE = 0 exactly, and takes the field
+  from **exactly zero** to max|a| = 0.603175. (4) *Survivor compression with the total held fixed*:
+  ΔE = 0 exactly, L1 up to 5.1569. (5) *D96 vs random*: same N and same total — the degeneracy-free
+  lattice is an **exact zero-field null** (uniform ρ ⇒ a = R = 0), D96 is not. (6) *D96³ vs D96*: same
+  normalized total, **97.6%** of the cube's directions energy-free (863 924 / 884 736) versus 53.1%
+  for D96.
+- **The free room is exactly the degeneracy structure:** `Σ(m_i − 1) = N − A₀` = **51 of 96 for D96**,
+  which equals the D_048 latent fraction **L = 0.53125 exactly**, and 0 for random. *New cross-link:*
+  L is the fraction of **energy-free reconfiguration directions of the counting measure** — the D_048
+  adaptability ceiling and the free room of ρ are the same number (D_047's release 0.80231 is the
+  entropy of using them).
+- **CORRELATED.** The same compression **without** fixing the total lowers E by 46.8/73.0/86.4%
+  (k = 48/24/12) — ρ and E move together; and the control ρ → 3.7ρ moves E by exactly ×3.7 while **a is
+  exactly invariant** (scale invariance, G_001) and R merely rescales by λ^(−2/d).
+- **REFUTED.** *Phase coherence*: ρ = |ψ|² is phase-blind, so ρ, R and a are unchanged (L1 = 0.0000;
+  Δa < 1e-9, ΔR < 1e-6) under a global phase shift and under a mirror-pair relative-phase flip, while
+  the interference term 2 + 2cos(Δθ) still runs 4 → 2 → 0. Phase is a real observable that does not
+  touch the density.
+- **Consequence — G_001 OP1 is sharpened.** ρ's profile cannot be fixed by conservation: **51 of 96
+  directions are unconstrained at fixed energy**. A dynamical principle is genuinely required (this
+  turns G4-RHO's "dynamical origin of ρ: OPEN" into a counting statement). Also: a degeneracy-free
+  (all-singleton) spectrum has *no* energy-free room — its density is forced uniform and its field
+  vanishes identically.
+- **Classification.** DERIVED: the CONTROLLABLE verdict, the N − A₀ count, the exact-ΔE rearrangements,
+  free-room = L, the zero-field baseline, phase-blindness. BOUNDARY: ρ̄ = 1/N, the exponent 2/d, the
+  cell-lattice definition. EMERGENT: the particular witness tilt (one member of a free family). **No
+  reclassification** — the D_040 ClassificationRegistry is untouched and G_001's verdicts are used, not
+  modified.
+- **Files.** `Docs/ResearchY/G_GravitySource/ResearchY-G_002.md`,
+  `AT.Tests/ResearchY/G_GravitySource/Y_G_002_Tests.cs` (9/9 ✅, 155 ms),
+  `AT.Tests/Shared/DensityField.cs` (shared with G_001),
+  `Docs/ResearchY/Tests/Results/Y_G_002_Result.md`.
+- **Next open questions (G_002 OP1–OP4).** Which of the N − A₀ directions does the actualization flow
+  select? Does any physical AT process realise the witness tilt (the D_047 lock-release mechanism is
+  the natural candidate)? Can the ρ̄ = 1/N reference and the lattice definition be derived? Is a
+  sourceless density reconfiguration observationally distinguishable from a mass redistribution?
+
+## Gravity Magnitude Audit — the physical size of a Δρ, and the threshold lengths (ResearchY-G_003, 2026-09-12)
+
+G_003 converts a G_002-class reconfiguration of ρ into physical units and answers the critical
+threshold question. **Verdicts: MEASURABLE (potential/clock) · ASTROPHYSICAL ONLY (acceleration) ·
+PRACTICALLY ZERO (phase, rescaling). Critical answer: YES to 10⁻¹² g, 10⁻⁹ g and 10⁻⁶ g at fixed
+total energy.**
+
+- **The conversion chain (canonical).** `g₀₀ = −ρ^(2/d)` (QG197) → `ΔΦ/c² = (1/d)Δln ρ` (QG21/QG187) →
+  `Δa = −(c²/d)∇ln ρ` (G4-O3) → `ΔR_phys = ΔR_AT/L²`. Inverting `a = −(1/d)∇ln ρ` over one cell gives
+  `Δln ρ = d·Δa_AT`, hence **`ΔΦ/c² = Δa_AT` (a pure number — NO length scale)**, `Δa_phys = c²Δa_AT/L`,
+  `ΔR_phys = ΔR_AT/L²`, `ΔM_eq = Δa·L²/G`.
+- **Anchor (canonical cross-check).** The Earth-surface vs GPS-orbit potential gives **45.74 μs/day**,
+  matching QG187's 45.7 μs/day; in AT the same potential is a counting-measure contrast
+  `Δln ρ = 1.588e-9`. The chain is anchored on an existing result, not asserted.
+- **Magnitudes are LARGE, not small.** At 15 kpc: arrangement `Δa_AT = 0.685714` → `1.3315e-4 m/s² =
+  1.358e-5 g` with `ΔΦ/c² = 0.686` (**a 68.6 % potential change**) and `ΔM_eq = 2.157e17 M_☉`
+  (3.6e6 Milky Ways); degeneracy `0.603175` → 1.194e-5 g; D96-vs-random `0.333333` → 6.600e-6 g;
+  D96³-vs-D96 `0.276596` → 5.477e-6 g; survivor compression `0.032121` → 6.360e-7 g; phase and
+  rescaling exactly zero.
+- **Structure asserted exactly:** `ΔΦ` is L-free while `Δa ∝ 1/L` (ratio a(1 kpc)/a(1 Mpc) = 1000) and
+  `ΔR ∝ 1/L²` (halving L quadruples R). Rescaling changes R only by the overall `λ^(−2/d)` (deviation
+  < 1e−6) → the observable geometry is untouched.
+- **Threshold lengths at fixed total energy (the critical answer).** 10⁻¹² g for L < **9.54 Gpc**
+  (guaranteed, weakest witness; arrangement 203.66 Gpc), 10⁻⁹ g for L < **9.54 Mpc**, 10⁻⁶ g for
+  L < **9.54 kpc**; phase and rescaling never. The observable-universe radius (~14.3 Gpc) exceeds every
+  10⁻¹² g window, so the practically-zero regime of the force channel lies **beyond the horizon**.
+  The binding constraint is the physical scale L, **not** the energy budget (Σm = 0, QG194).
+- **Detectability.** 10⁻¹² g = **0.0941 g†**, 10⁻⁹ g = **94.1 g†**, 10⁻⁶ g = **9.41e4 g†** with
+  `g† = cH₀/(2π) = 1.04220e-10 m/s²` (itself 1.06e-11 g); the witnesses are **6.03e17×** above an optical
+  clock's 10⁻¹⁸ floor.
+- **Falsifiable requirement (sharpest number).** The whole observed galactic AT field corresponds to
+  `Δln ρ = 1.6102e-6` over 15 kpc, so the G_002 witnesses are **3.746e5×** the observed ambient
+  contrast: any *realised* fixed-energy reconfiguration must be **suppressed by ≥ 3.7e5** — the
+  quantitative form of G_002 OP2 (no known process realises one).
+- **Classification.** DERIVED: the conversion laws and anchors, the threshold lengths/nesting and
+  exact-threshold identities, the exact zeros, the ambient calibration and suppression requirement.
+  BOUNDARY: realising a lattice-level Δa_AT across one physical length L; the values of G and g†;
+  ρ̄ = 1/N and 2/d. EMERGENT: per-case magnitudes. **No reclassification** — D_040 untouched.
+- **Files.** `Docs/ResearchY/G_GravitySource/ResearchY-G_003.md`,
+  `AT.Tests/ResearchY/G_GravitySource/Y_G_003_Tests.cs` (7/7 ✅, 252 ms),
+  `AT.Tests/Shared/PhysicalUnits.cs` (new shared anchors), `Docs/ResearchY/Tests/Results/Y_G_003_Result.md`.
+- **Next open questions (G_003 OP1–OP4).** What fixes the physical coherence length L? Why should a
+  realisable reconfiguration be suppressed by ≥ 3.7e5? Is a Δln ρ ≲ 1.6e-6 superposition distinguishable
+  from a mass redistribution? And the strong-field (ΔΦ/c² ≫ 1) translation is not derived.
+
+## Gravity Calibration Audit — a_pred/a_obs at four scales, and why 10⁻⁶ g is not seen locally (ResearchY-G_004, 2026-09-12)
+
+G_004 closes the G-series by asking whether `a_AT` can be **calibrated to measured gravity**, at four
+scales, with **no free parameters** (no quantity fitted to the data it is compared with).
+**Verdicts: CALIBRATED (Earth, Sun–Earth, Galaxy RAR) · CORRELATED (the RAR interpolating function) ·
+REFUTED (the cluster modified-gravity channel, and a uniform cosmic gradient).**
+
+| # | scale | a_obs [m/s²] | a_pred [m/s²] | **a_pred/a_obs** | fitted params | verdict |
+|---|---|---|---|---|---|---|
+| 1 | Earth surface | 9.820250 | 9.780965 | **0.99600** | M_⊕ | **CALIBRATED** |
+| 2 | Sun–Earth (1 AU) | 5.930084e-3 | 5.906361e-3 | **0.99600** | GM_☉ | **CALIBRATED** |
+| 3 | Galaxy RAR | 1.200e-10 | 1.04220e-10 = cH₀/2π | **0.86850** | **NONE** | **CALIBRATED** |
+| 4 | Cluster (Coma) | 6.3650e-11 | 3.2944e-11 | **0.51759** | f_b = 0.15 | **REFUTED** (mod-gravity) |
+
+- **Earth / Sun–Earth.** The residual IS the derived-`G` offset `G_AT/G_CODATA = 0.9959996` (0.40%,
+  QG181). `GM_⊕/R_⊕² = 9.820250 m/s²` is the like-for-like comparator (the geophysical effective
+  `g = 9.80665` is 0.13% below it — centrifugal + oblateness). Independent checks: GPS **+38.5 vs
+  +38.6 μs/day** (0.26%, QG187; potential term 45.74 vs 45.7), perihelion **+42.98 ″/century** (QG103),
+  PPN **γ = β = +1** via ψ (QG212).
+- **Galaxy RAR — the parameter-free prediction.** `g† = cH₀/(2π)` = 1.04220e-10 m/s²: **0.86850** vs the
+  unweighted literature mean (6 determinations 1.00–1.21e-10; scatter 6.5%, spread 17%) and **0.9226**
+  vs the project's own combined `a₀/cH₀ = 0.1725`. `a₀` is *not* an input.
+- **Cluster — the documented failure.** Coma (`R_500` = 1.48 Mpc, `M_500` = 1e15 M_☉) gives
+  `a_obs = 6.49e-12 g = 0.61 g†`; from **baryons only** the AT/RAR law gives 1.93× **short** (MOND
+  1.64× short). This restates the project's own **X063 / AT_ClusterMassAudit**: AT modified gravity is
+  INSUFFICIENT at cluster scale; AT matches clusters only through the **deficit-as-mass** channel
+  (a mass inventory == ΛCDM, ~85% dark, ratio 4–10×) whose dark fraction is **not derived** (X065).
+- **Critical question — why is a 10⁻⁶ g effect not observed locally?** Because it is a **counterfactual**:
+  (a) it needs `Δln ρ = 0.15151` over 15 kpc — a unit-amplitude whole-lattice reconfiguration; (b) the
+  **realised** field is fixed by the observed RAR to `g† = 1.0627e-11 g`, **9.41e4× below** 10⁻⁶ g
+  (G_003's requirement: ≥3.746e5 against the G_002 witnesses); (c) the ambient gradient is
+  `d ln ρ/dr = d·g†/c² = 3.4788e-27 m⁻¹`; (d) a **uniform** cosmic gradient would give 1.06e-11 g
+  *everywhere*, ~**104× above** the ~10⁻¹² m/s² ephemeris/LLR bound → **REFUTED**; (e) the resolution is
+  the **point-mass reduction** — a point-like deficit gives `M_eff → const` and exactly `a = −G_AT·M/r²`
+  (G4-ME22) with **no anomalous term**, because the flat-curve 1/r regime needs a scale-free **extended**
+  deficit (G4-ME21) absent locally. Local AT signatures are only `G` at 0.40%, the GPS potential at
+  0.26%, and the perihelion at <0.1% — none at 10⁻⁶ g.
+- **Classification.** DERIVED: `G`, `g†`, the redshift/GPS law, the ψ-sector perihelion/PPN,
+  `M_eff → const`, the four ratios, the local no-anomaly statement. BOUNDARY: the masses/radii/`H₀`
+  anchors, the RAR interpolating form, the galactic deficit parameters, `Ω_b/Ω_m`, the cluster dark
+  fraction. EMERGENT: the per-scale residuals. **No reclassification** — D_040 untouched; the cluster
+  result is X063 restated in calibration-ratio form.
+- **Files.** `Docs/ResearchY/G_GravitySource/ResearchY-G_004.md`,
+  `AT.Tests/ResearchY/G_GravitySource/Y_G_004_Tests.cs` (7/7 ✅, 33 ms),
+  `Docs/ResearchY/Tests/Results/Y_G_004_Result.md`; `AT.Tests/Shared/PhysicalUnits.cs` extended with the
+  GM_⊕/GM_☉/AU/GPS and MOND-a₀ anchors.
+- **Next open questions (G_004 OP1–OP4).** Is the 0.40% `G` gap real? Is `cH₀/(2π)` exactly the RAR
+  scale (the combined determination prefers 1.13e-10)? Can AT derive the cluster dark fraction without
+  importing Ω_DM? And what exactly suppresses the cosmic AT gradient inside a bound system?
+
 ## Latest Repo Sync
 
 Recent commits from the other machine:
@@ -569,6 +758,10 @@ Weak-coupling scale note:
 | Neutrino Character (Dirac/Majorana) | QG179 | MAJORANA ORIGIN (self-conjugate T3-only channel 48/95 modes, no antiparticle channel; unique Q=0 no conserved charge; real mass matrix via reflection automorphism; m_ββ = |Σ U_ei²·m_i| = 2.02e-3 eV, within limit) |
 | Oblique Parameters (S,T,U) | QG180 | OBLIQUE ORIGIN (S = occ₀/Σm = 4/95 = 0.0421, 5.3%; T = 2·occ₀/Σm = 8/95 = 0.0842, 5.3%; T = 2S exact; U = 0 via exact SM tree-level ρ = 1) |
 | Newton Constant G | QG181 | GRAVITY ORIGIN (M_Pl = v·(Σm·#g·occ₂)³ = 254.37·(95·44·87)³ = 1.22335e19 GeV, 0.2006%; G = 1/M_Pl² = 6.6476e-11 m³/kg/s², 0.3999%; weak scale × cube of occupation-weighted spectral content) |
+| Gravity Source | ResearchY-G_001 | SOURCE = actualization density ρ (+ its standardised deficit m = ρ̄−ρ for the attractive sector); CORRELATED = energy density (exact re-expression; energy reading hosted) + spectral density (source parameters + G magnitude, non-local); REFUTED = information density (permutation-invariant global functional; the surplus) + the curvature–density law used as a source (output of the law, non-injective) |
+| Density Control | ResearchY-G_002 | CONTROLLABLE — ρ changes at fixed total mass-energy (Σm = 0 exactly, QG194): arrangement (ΔE = 0, a sign flips), degeneracy redistribution inside multiplets (spectrum untouched, field 0 → 0.603175), fixed-total compression (ΔE = 0, L1 up to 5.16), lattice choice (random = exact zero-field null; D96³ 97.6% vs D96 53.1% energy-free). CORRELATED = unfixed compression (E −46.8/−73.0/−86.4%) and rescaling (E ×3.7, a exactly invariant). REFUTED = phase coherence (ρ, R, a bit-unchanged; interference still 4 → 0). The free room is Σ(m_i − 1) = N − A₀ = 51 of 96 for D96 = the D_048 latent fraction L exactly |
+| Gravity Magnitude | ResearchY-G_003 | MEASURABLE (potential/clock: ΔΦ/c² = Δa_AT is a pure number; witnesses 3–69 %, 6.0e17× an optical clock) · ASTROPHYSICAL ONLY (Δa needs L: 10⁻¹² g for L < 9.54 Gpc, 10⁻⁹ g < 9.54 Mpc, 10⁻⁶ g < 9.54 kpc; arrangement 203.66) · PRACTICALLY ZERO (phase = 0 exactly; rescaling Δa = 0 with only the overall λ^(−2/d) curvature factor). Critical answer: YES to all three thresholds at fixed total energy. Falsifiable number: the observed galactic field ⟺ Δln ρ = 1.6102e-6 over 15 kpc, so the G_002 witnesses need suppression ≥ 3.746e5. Anchor: GPS 45.74 μs/day (QG187 45.7) |
+| Gravity Calibration | ResearchY-G_004 | CALIBRATED at 3 of 4 scales with NO free parameters: Earth 0.99600 (GM_⊕/R_⊕² = 9.820250 vs 9.780965; residual = the derived-G offset 0.40%), Sun–Earth 0.99600 (+ψ perihelion 42.98″/century, PPN γ=β=+1; GPS 38.5 vs 38.6 μs/day), Galaxy RAR 0.86850 (g† = cH₀/2π vs the literature mean; 0.9226 vs the project's combined a₀/cH₀) · CORRELATED: the RAR interpolating function (AT-native: the α=0 log deficit) · REFUTED: the cluster modified-gravity channel (Coma a_pred/a_obs = 0.51759, 1.93× short; MOND 0.610) and a uniform cosmic AT gradient (104× above the local bound). Critical: 10⁻⁶ g needs Δln ρ = 0.15151 over 15 kpc, but the realised field is g† = 1.06e-11 g (9.41e4× below); locally a point-like deficit gives exactly Newton with G_AT and no anomaly (G4-ME22) |
 | G Bridge (QG6↔QG181) | QG182 | BRIDGE ORIGIN (deficit parameters from D96: m₀ = occ₀/Σm = 4/95 = S param, r₀ = ln(span), ρ̄ = 1 → GM_eff = 1/ln(M_Pl/v) = 1/(3·ln A), 0.0969%; identity occ₀·ln(span)·ln(Σm·#g·occ₂) = Σm; two G constructions are the same physical content) |
 | Planck Scale Robustness | QG183 | ROBUST ORIGIN (physical exponent p = ln(M_Pl/v)/ln(A) = 2.99984, cubic to 1e-4; only A³ reproduces M_Pl (0.2%) while A¹/A²/A⁴ fail by 100%/100%/3.6e7%, nearby exponents 47-260% dev; no alternative A selects cubic; 3-factor/3-band/d=3 structure) |
 | Mass-Radius Relation | QG184 | MASS-RADIUS ORIGIN (observed M ∝ R emerges from counting measure: the deficit is per-octave/log — G4ME flat-rotation-curve profile — giving a ∝ −1/r and GM_eff = m₀·R/(d·L·ρ̄) ∝ R; QG13's E ∝ R^d was the compact-void assumption; with S ∝ R^(d−1) (QG12), T ∝ 1/R — Hawking restored, no new primitives) |

@@ -35,6 +35,7 @@ builder.Services.AddSingleton<InformationService>();
 builder.Services.AddSingleton<CosmologyService>();
 builder.Services.AddSingleton<PhysicsService>();
 builder.Services.AddSingleton<QuantumService>();
+builder.Services.AddSingleton<GravityService>();
 builder.Services.AddSingleton<CalculationCatalog>();
 
 var app = builder.Build();
