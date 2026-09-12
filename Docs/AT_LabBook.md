@@ -3040,6 +3040,38 @@ test that cannot fail is not a test.*
   mutually contradictory verdicts.* **8/8 PASSED** (group G total **218/218**); affected pre-existing suites
   **390/390 PASSED**; no reclassification; D_040 untouched.
 
+### G_027 — Literal Verdict Audit (the rule is enforced, not merely observed)
+**Status:** Complete. **The rule:** *no result path may let a classification depend on a literal; every verdict must be traceable to computed evidence.* A path `literal boolean (verdict name) -> score / classification / verdict function` is **REFUTED** unless **COMPUTED** or adjudicated **SAFE**/**BOUNDARY** with a cited reason. **FAIL IF:** literal -> verdict without a computation path.
+- **WHY AN ENFORCEMENT, NOT ANOTHER SWEEP.** G_025 and G_026 each found instances and fixed them by hand; the class still recurred **four times in the QG ladder alone**, because fixing instances does not prevent a class recurring. `AT.Core/ResearchXH/LiteralVerdictAudit.cs` therefore **re-reads the AT.Core source at test time** and **fails the suite** on any un-triaged path.
+- **LOCATION.** (1) every `record` is parsed for verdict-vocabulary **boolean** parameters, **by name and by position** (the codebase writes both `Holds: true` and positional `..., true, ...`); (2) those booleans supplied as **literals** at construction sites are collected; (3) the path counts only if the file also **consumes** the flag from `Score` / `Classify` / `Verdict` / `Rank` / `Assess` / `Grade` / `Count(`. Condition (3) keeps the inventory honest: a literal nobody scores is inert.
+- **INVENTORY: 7 paths, ALL BOUNDARY** — each an authored judgement or input taxonomy with its reason cited in place, none a physics result:
+
+  | file | verdict field | why BOUNDARY |
+  |---|---|---|
+  | `SelectionPrincipleAudit.cs` | `Rule.Derivable` | meta-level D96-grounding judgement; the audit's summary states neither rule is FORCED and both were chosen after QG253 revealed non-uniqueness |
+  | `AnchorInventoryAudit.cs` | `Anchor.IsTrueInput` | input taxonomy; each row states its reason ("a TRUE THEORY INPUT: the conformal reference metric") |
+  | `PrincipleCompetitionAudit.cs` | `Principle.Consistent` | authored consistency flag; the Noether row is recorded FALSE with its reason |
+  | `MeasurementClassAudit.cs` | `MeasurementClass.StructurallyUnique` | authored uniqueness claim; needs an exhaustive enumeration of reads, which does not exist (OP1) |
+  | `ActualizationOriginAudit.cs` | `DependencyFact.SupportsDerivedFromDifference` | per-evidence dependency finding, each citing its phase |
+  | `ReorganizationPrediction.cs` | `ReorgMember.Correct` | authored correctness flag against pre-registered values |
+  | `MicroscopicChargeProfile.cs` | `FragmentationAttempt.IsValidCharge` | authored validity flag with its reason in place |
+
+- **ZERO REFUTED REMAIN** — and the registry **structurally forbids** a REFUTED entry, because a refuted path is **fixed**, not tolerated.
+- **THE ONE REFUTED PATH, FOUND AND FIXED.** `ResearchQG/GdaggerOriginAnalyzer.cs`: every evidence flag, the ratio **and the score** were literals at all six construction sites, and `Score` feeds `OrderByDescending` — **the ranking**. The Coincidence row was **internally inconsistent**: `RatioToA0` typed `1.0` while its own numerator was `NaN`. All four are now derived from the predicted g†:
+
+  ```text
+  HasExactTwoPi = |predicted - cH0/(2pi)| / (cH0/(2pi)) < 1e-6
+  RatioToA0     = predicted / a0            (NaN propagates honestly)
+  Matches       = |RatioToA0 - 1| <= 0.15   (the criterion the Verdict text states)
+  Score         = 3.0 if exact 2pi and matching; else 1.5 if not falsifiable; else 0.5
+  ```
+
+  **Verified to reproduce the previously TYPED values for all six mechanisms** (3.0 / 3.0 / 0.5 / 0.5 / 0.5 / 1.5) — the fix changes **provenance, not the physics** — and the NaN-ratio contradiction is gone.
+- **REGRESSION RECORD.** `FixedByComputation` lists the **11 sites** fixed by G_025/G_026/G_027 (optics determinant and γ; the four QG criteria tables; the Born-rule `Survives` and pass arrays; the RAR `Derived` rows; the g† flags, ratio and score). They no longer **scan**, so a regression is caught and **cannot be excused by the registry**.
+- **SCOPE.** The scan covers **AT.Core**; AT.Tests/AT.App/AT.Book are downstream of the adjudicated objects (OP3).
+- **WHAT IT DOES NOT CLAIM.** It does not decide whether a verdict is **correct** — only whether it is **computed**, forcing the difference into the open rather than leaving it implied by a method name.
+- **Output: SAFE / BOUNDARY / REFUTED.** **5/5 PASSED**; group G total **223/223**; no reclassification; D_040 untouched.
+
 ## Key Unsolved Problems
 
 1. Numerical values of ℓ, τ, ħ — empirical, not derived

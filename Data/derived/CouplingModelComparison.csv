@@ -1,5 +1,5 @@
 Mechanism,PredictedGdagger,RatioToA0,HasExactTwoPi,Matches,Falsifiable,Score
-Coincidence,NaN,1.00,0,1,0,1.5
+Coincidence,NaN,NaN,0,0,0,1.5
 Mach-like,6.55E-010,5.46,0,0,1,0.5
 Cosmic-boundary,6.55E-010,5.46,0,0,1,0.5
 Causal-horizon,6.55E-010,5.46,0,0,1,0.5

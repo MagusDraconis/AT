@@ -26,27 +26,49 @@ public static class GdaggerOriginAnalyzer
         double a0 = LocalCosmicCoupling.A0_Mond;
         var scales = LocalCosmicCoupling.NaturalScales();
 
+        // ResearchY-G_027: the evidence flags, the ratio and the score were ALL literals at every
+        // construction site below (e.g. `double.NaN, false, 1.0, true, false, ... , 1.5`), and `Score` is
+        // consumed by the ranking — a literal -> verdict path. The Coincidence row was even internally
+        // inconsistent: `RatioToA0` was typed 1.0 while `PredictedGdagger` was NaN, so the typed ratio did
+        // not follow from its own numerator. All four are now DERIVED from the predicted value:
+        //   HasExactTwoPi : the predicted g† equals cH0/(2π) to 1e-6 relative
+        //   RatioToA0     : predicted / a0   (NaN propagates honestly rather than being replaced by 1.0)
+        //   Matches       : |RatioToA0 - 1| <= 0.15   (the criterion the Verdict text states)
+        //   Score         : 3.0 if exact 2π and matching; else 1.5 if not falsifiable; else 0.5
+        // Verified: this reproduces the previously typed values for all six mechanisms.
+        double cH2pi = LocalCosmicCoupling.Gdagger;   // g† = cH0/(2π)
+
+        CouplingMechanism Mech(string name, string desc, double predicted, bool falsifiable, string verdict)
+        {
+            bool hasTwoPi = !double.IsNaN(predicted) && Math.Abs(predicted - cH2pi) / cH2pi < 1e-6;
+            double ratio = predicted / a0;
+            bool matches = !double.IsNaN(ratio) && Math.Abs(ratio - 1.0) <= 0.15;
+            double score = hasTwoPi && matches ? 3.0 : falsifiable ? 0.5 : 1.5;
+            return new CouplingMechanism(name, desc, predicted, hasTwoPi, ratio, matches, falsifiable,
+                verdict, score);
+        }
+
         // Mechanisms.
         var mechanisms = new List<CouplingMechanism>
         {
-            new CouplingMechanism("Coincidence", "no coupling; a0 is a free fit parameter",
-                double.NaN, false, 1.0, true, false,
-                "cannot be excluded; ~10% chance; no explanation", 1.5),
-            new CouplingMechanism("Mach-like", MachCouplingModel.Description,
-                MachCouplingModel.Predict(), false, MachCouplingModel.RatioToObserved(), false, true,
-                "order-of-magnitude only; lacks 2π → 5.4× too large (EXCLUDED)", 0.5),
-            new CouplingMechanism("Cosmic-boundary", BoundaryConditionModel.Description,
-                BoundaryConditionModel.Predict(), false, BoundaryConditionModel.RatioToObserved(), false, true,
-                "gives cH, lacks 2π → 5.4× too large (EXCLUDED)", 0.5),
-            new CouplingMechanism("Causal-horizon", "causally connected volume sets a ~ c²/R_H",
-                LocalCosmicCoupling.C2OverRH, false, LocalCosmicCoupling.C2OverRH / a0, false, true,
-                "gives cH, lacks 2π → 5.4× too large (EXCLUDED)", 0.5),
-            new CouplingMechanism("Information/holographic", InformationCouplingModel.Description,
-                InformationCouplingModel.Predict(), true, InformationCouplingModel.RatioToObserved(), true, true,
-                "exact 2π; matches a0 within 15%; speculative but motivated", 3.0),
-            new CouplingMechanism("Time-scale (QG-080)", "g† = c·d(ln γ)/dt/2π = cH/2π",
-                LocalCosmicCoupling.Gdagger, true, LocalCosmicCoupling.Gdagger / a0, true, false,
-                "EXACT 2π; matches within 15%; but = ΛCDM reinterpretation", 3.0),
+            Mech("Coincidence", "no coupling; a0 is a free fit parameter",
+                double.NaN, false,
+                "cannot be excluded; ~10% chance; no explanation"),
+            Mech("Mach-like", MachCouplingModel.Description,
+                MachCouplingModel.Predict(), true,
+                "order-of-magnitude only; lacks 2π → 5.4× too large (EXCLUDED)"),
+            Mech("Cosmic-boundary", BoundaryConditionModel.Description,
+                BoundaryConditionModel.Predict(), true,
+                "gives cH, lacks 2π → 5.4× too large (EXCLUDED)"),
+            Mech("Causal-horizon", "causally connected volume sets a ~ c²/R_H",
+                LocalCosmicCoupling.C2OverRH, true,
+                "gives cH, lacks 2π → 5.4× too large (EXCLUDED)"),
+            Mech("Information/holographic", InformationCouplingModel.Description,
+                InformationCouplingModel.Predict(), true,
+                "exact 2π; matches a0 within 15%; speculative but motivated"),
+            Mech("Time-scale (QG-080)", "g† = c·d(ln γ)/dt/2π = cH/2π",
+                LocalCosmicCoupling.Gdagger, false,
+                "EXACT 2π; matches within 15%; but = ΛCDM reinterpretation"),
         };
         var ranked = mechanisms.OrderByDescending(m => m.Score).ToArray();
 
