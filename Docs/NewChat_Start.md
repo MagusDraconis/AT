@@ -2011,6 +2011,63 @@ canonical AT claim, value, equation or registry entry changed; no new simulation
 previously audited rings come from the shared cache; only the four new rings are measured); the D_040
 ClassificationRegistry is untouched.
 
+ResearchY-D_057 (Rank-Budget Law Audit, COMPLETE, tests 6/6 PASSED): does ΔA ≤ Σ_i min(m_i − 1, r),
+the bound D_055 derived from the RANK of an edge operation, DIRECTLY predict capacity — replacing the
+correlations of D_050–D_056 with a derived law? Three frozen law forms, in increasing fitted content:
+L1 pure ceiling with ZERO parameters (C = mean_d min(1, Σ min(m_i−1, 2k_d)/(N−A₀))), L2 effective-rank
+with ONE parameter per family (r_d = round(c·2k_d)), L3 tightness-corrected with ONE parameter per
+family (C = L1·τ) — every parameter from D_048/D_050's six SOURCE cases, so every ring error is
+OUT-OF-SAMPLE. PHASE A (commit bda8e880) verified the lemma synthetically and froze the predictions
+against a frozen table of published values, running NO simulation. **THE LEMMA, VERIFIED OUTSIDE THE
+ENSEMBLE**: 3200 random symmetric rank-r perturbations (m ∈ {4, 8, 16}, r = 1…6) supported on a
+degenerate eigenspace, diagonalized by Jacobi — the split count reaches EXACTLY r + 1 at its maximum
+with ZERO VIOLATIONS, so the bound is arithmetic on ranks. **THE BOUND ON THE REAL ENSEMBLE**: 600
+samples (10 rings × 4 families × 5 doses × 3 seeds), ZERO VIOLATIONS — but INFORMATIVE ONLY WHEN r
+BITES: strictly below full headroom in 100 % of delete/add/rewire samples, and VACUOUS for weight, where
+r = N makes L1 = 1 by construction. **TIGHTNESS IS GOVERNED BY CONCENTRATION**: measured/ceiling runs
+0.9653 … 1.0000 (mean 0.9871) for the eight SPREAD rings and 0.6633 … 0.8945 (mean 0.7789) for the two
+DOMINANT-LEVEL rings, with ρ(share, tightness) = **−0.969** and ρ(max multiplicity, tightness) = −0.969
+— because tens of small levels split simultaneously while one huge level consumes all of r in a single
+eigenspace. The law's accuracy is therefore itself a function of the multiplicity distribution, which
+EXPLAINS D_056: the distribution was predicting the TIGHTNESS, not the bound. **THE SAME-SHARE CONTROL
+IS RESOLVED BY THE RANK, NOT THE DISTRIBUTION**: Pair1-47 and Half47 have IDENTICAL multiplicity
+patterns (50×1, 2×22, 1×2), the same A₀ = 25 and the same headroom 71, so every functional of the
+structure must give them one answer — and D_056's predictors indeed cannot separate them — yet degrees 4
+and 6 (|E| = 192 vs 288) mean the SHARED FRACTIONAL dose grid hands them different ranks: at the top
+dose Pair1-47 gets k = 19 (r = 38 < 49, still trapped) while Half47 gets k = 29 (r = 58 > 49, able to
+split completely). THE LAW IS THE PAIR (multiplicity structure, rank), not the structure alone — which
+also links back to D_053's dose-convention confound. HEAD-TO-HEAD (the laws' errors are OUT-OF-SAMPLE,
+the correlational predictors' are in-family LOO — a protocol difference favouring the correlations):
+L1 (0 params) ρ = **0.873**, RMSE 0.07745, mean |error| **0.03918** — matching the FITTED degeneracy
+count (ρ 0.878, error 0.04052) with no parameters and no in-family information; **L2 (1 param/family)
+ρ = 0.976 — the HIGHEST ordering in the audit — RMSE 0.03885, mean |error| 0.02287**, below the
+degeneracy count's 0.04052, λ₂'s 0.12302 and near-gap's 0.11922; L3 (pooled τ) is the WORST of the three
+at 0.21259 — the pooling error D_051 and D_056 also exposed; max multiplicity and largest share do have
+a slightly smaller error (0.01762) but under the MORE GENEROUS protocol and at a lower ρ. THE HONEST
+LIMIT — per-ring L1 out-of-sample error: the seven spread rings average **0.0143** (D96 0.0098,
+S96-123 0.0160, S96-135 0.0337, Ring48 0.0075, Decay96 **0.0000**, Boost96 0.0048, D96-24 0.0281) versus
+0.1431 for the dominant-level class — a factor of **10**. THE BLIND TEST CALLED BOTH VERDICTS
+CORRECTLY: **Half47** (±1, ±24, ±47) — the ±24 term contributes 2(1 − cos(πk/2)) = 2 for odd k, so the
+odd-mode sum is 2 + (2 − 2cos θ) + (2 + 2cos θ) = 6 and the level SURVIVES at a THIRD value — observed
+λ = **6.000000** with multiplicity 50, capacity **0.61479** (against Pair1-47's 0.42089); **Triple47**
+(±1, ±23, ±47) — 23 = N/4 − 1 gives 6 ∓ 2 sin θ, no cancellation, the level is DESTROYED — observed max
+multiplicity 2, capacity **0.99823**, fully healthy. Two rings differing only in that one offset,
+opposite verdicts, both correct: the law tracks the LEVEL, not any particular offset. REFUTED: the bound
+as a direct equality (missed by up to 10× on concentrated structures); the distribution as a sufficient
+statistic (the controlled pair differs by 0.19390 once ranks differ); L3's pooled correction; the weight
+family as evidence; and rank as complete — at the 0.5 % dose BOTH rings get k = 1, r = 2 and the same
+ceiling 0.3380, yet Half47 measures 0.23005 against Pair1-47's 0.32394, so a residual beyond (structure,
+rank) remains. SUMMARY: the rank budget is a genuine DERIVED law — its lemma verified in 3200 synthetic
+draws, its bound in every real sample, and a ZERO-PARAMETER version already ordering the rings and
+landing within 0.0143 on spread structures — becoming a usable predictor with ONE rank scale per family
+(ρ 0.976); but it is exact only where the multiplicity is spread, and not closed by (structure, rank)
+alone. New open question for the D group: what the residual beyond (structure, rank) consists of — at
+matched rank two rings with identical patterns still differ by 0.094 at the 0.5 % dose, which points at
+the geometry of the perturbation's projection onto the degenerate eigenspace rather than at any scalar
+of the spectrum. No canonical AT claim, value, equation or registry entry changed; no new simulation
+primitive (the eight previously audited rings come from the shared cache; only the two new rings are
+measured); the D_040 ClassificationRegistry is untouched.
+
 ResearchY-NP_002 (Highest-Value V2.2 Program, COMPLETE): what is the highest-value
 V2.2 physics program? Verdict: MEASUREMENT ORIGIN — it scores 19/20 (impact 5,
 feasibility 4, testability 5, derived-chain dependence 5), the highest of ten
