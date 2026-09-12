@@ -409,6 +409,24 @@ public sealed class GravityService : ICalculationService
                 "The two directions are not symmetric. rho is independent OF E (a 94-dimensional kernel: 51 by degeneracy plus 43 by lambda-mixing, both built explicitly) while E is fully determined BY rho. Holding rho fixed moves E only through the "
                 + "capacity: the same uniform rho gives E = 2K exactly for K = 1..6, and K is BOUNDARY. At fixed energy the clock separation a pattern can demand is UNBOUNDED (contrast = 5f/(1 - f) with DeltaE = 0 throughout); the canonical 20 : 1 tilt is exactly the f = 0.8 member. "
                 + "INDEPENDENT / DEPENDENT / REFUTED (ResearchY-G_016b)."),
+
+            new("metric-coupling",
+                "Metric Coupling — can a real |psi|^2 move a clock?",
+                "DeltaTau/tau = (1/d) Delta ln I;  AT-naive 0.7675 .. 3.0701 vs GR 1e-47 .. 1e-58;  exclusion 6.667e17 .. 3.070e18",
+                [
+                    new("three readings", "AT-substrate (rho = actualization density) / AT-naive (rho ~ lab intensity I) / GR (m = U/c^2)", "all share DeltaTau/tau = Delta Phi/c^2 = (1/d) Delta ln rho"),
+                    new("the observable", "a FRACTIONAL FREQUENCY RATIO", "so the ceiling is a clock's fractional resolution: 1e-18 (best), 1e-12 (crude systematic)"),
+                    new("DERIVED: substrate reading", "Earth 2.320443e-10 = 2.320e8 x floor; galactic 5.367333e-7 = 0.046374 s/day = 5.367e11 x floor", "G_004's 0.99600 and G_009's 0.99668 -- NOT refuted"),
+                    new("optical cavity", "F = 1e6, 1 W, 0.3 m; U = 6.370605e-4 J; Gaussian contrast 1e2", "AT-naive 0.6666666667 vs GR 3.509234e-47 -> 1.900e46; exclusion 6.667e17"),
+                    new("resonator array", "Q = 1e7, 1 mW, 1550 nm; U = 8.228698e-12 J; u = 2.209714e6 J/m^3; on/off 1e4", "AT-naive 3.0701134573 vs GR 7.071071e-50 -> 4.342e49; exclusion 3.070e18"),
+                    new("photon lattice", "Sr clock: E_rec = 2.272842e-30 J, 100 E_rec, 300 a.u. -> I = 2.439413e8 W/m^2; node/antinode 1e3", "AT-naive 2.3025850930; exclusion 2.303e18 -- a 230.26 % shift across its own lattice"),
+                    new("oscillator network", "Q = 1e6, 1 pW, 6 GHz; U = 2.652582e-17 J; 10:1", "AT-naive 0.7675283643 vs GR 3.533090e-58 -> 2.17e57; exclusion 7.675e17"),
+                    new("exclusion vs every ceiling", "1e-12 / 1e-15 / 1e-18 / 1e-19 leave 11 to 19 orders of exclusion", "no ceiling exists at which any realizable profile survives"),
+                    new("why it is structural", "the law is LOGARITHMIC: DeltaTau/tau = (1/3) ln(contrast) is O(1) for any contrast > 10", "so the identification premise is EXPERIMENTALLY EXCLUDED at bench scale"),
+                ],
+                "The clock law is derived and its SUBSTRATE reading is consistent (0.99600 / 0.99668). But taking |psi|^2 literally for a real optical field gives O(1) predictions (77-307 %) where GR gives 1e-47 .. 1e-58 -- a "
+                + "mismatch of 1.900e46 to 4.342e49, with the observation agreeing with GR. The sharpest case is a Sr lattice clock inside its own standing wave (2.439413e8 W/m^2, 1e-18 readability), which excludes the naive reading by 2.303e18. So the identification premise is BOUNDARY and its "
+                + "naive form is REFUTED -- and the failure is structural, because the law is logarithmic. DERIVED / BOUNDARY / REFUTED (ResearchY-G_017)."),
         ];
     }
 

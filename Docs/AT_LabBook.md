@@ -2076,11 +2076,11 @@ in the historical program counts below.
 | AT-QG | 182 | Complete |
 | **Total** | **289** | |
 
-## ResearchY G-Program — Gravity Source, Control, Magnitude, Calibration, Realizability, Mechanism, Origin, Controlled Suppression, Clock Rate, Time Control, Rho Actuator, Labor Rho, Local Rho Actuator, Physical Actuator, Physical Rho Mapping, Rho To Metric, Watch Ontology, Mass Independence (18 audits, 2026-09-12)
+## ResearchY G-Program — Gravity Source, Control, Magnitude, Calibration, Realizability, Mechanism, Origin, Controlled Suppression, Clock Rate, Time Control, Rho Actuator, Labor Rho, Local Rho Actuator, Physical Actuator, Physical Rho Mapping, Rho To Metric, Watch Ontology, Mass Independence, Metric Coupling (19 audits, 2026-09-12)
 
-New ResearchY group **G — Gravity Source**. Suite: `AT.Tests/ResearchY/G_GravitySource/` (147/147 pass,
+New ResearchY group **G — Gravity Source**. Suite: `AT.Tests/ResearchY/G_GravitySource/` (154/154 pass,
 ~1 s); shared machinery `AT.Tests/Shared/DensityField.cs`, `PhysicalUnits.cs`, `RhoActuators.cs`.
-Detailed docs: `Docs/ResearchY/G_GravitySource/ResearchY-G_001.md` … `ResearchY-G_016b.md`.
+Detailed docs: `Docs/ResearchY/G_GravitySource/ResearchY-G_001.md` … `ResearchY-G_017.md`.
 
 ### G_001 — Gravity Source Audit
 **Status:** Complete. **SOURCE = the actualization density ρ** (counting measure), and for the attractive
@@ -2557,9 +2557,48 @@ against 0.04637376 s/day observed).
   **REFUTED** = same ρ, different energy as a state change.
 - **Independence is not symmetry:** ρ is independent *of* E while E is fully determined *by* ρ.
 
-**App/Book surfaced:** AT.App Research News + Theory Book ("Gravity Source" part, eighteen chapters) +
-TestGroups (18 suites); AT.Book `GravityService` (18 executable calculations), eighteen theory objects
-(Physics layer) and eighteen audits g001–g016b.
+### G_017 — Metric Coupling Audit
+**Status:** Complete. Does any **experimentally realizable |ψ|²** profile produce a measurable clock shift?
+Systems: optical cavity, resonator array, photon lattice, oscillator network. Measured `Δτ`, `ΔΦ`, the clock
+signal; compared AT, GR and observed limits. **Three readings, one law.**
+
+| reading | law | status |
+|---|---|---|
+| **AT-substrate** | ρ = the actualization density (G_014): `Δτ/τ = ΔΦ/c² = (1/d)Δlnρ` | **DERIVED** (0.99600 / 0.99668) |
+| **AT-naive (lab)** | a lab intensity profile *is* ρ, so `ρ ∝ I` | **BOUNDARY** → **REFUTED** |
+| **GR** | stored energy `U`, `m = U/c²`: `ΔΦ/c² = G U/(R c⁴)` | observation agrees |
+
+The observable is a **fractional frequency ratio**, so the ceiling is a clock's fractional resolution
+(**1e-18** best optical clocks, 1e-12 crude systematic).
+
+| system | contrast | AT-naive `Δτ/τ` | GR `ΔΦ/c²` | AT/GR | exclusion @1e-18 |
+|---|---|---|---|---|---|
+| optical cavity (F = 1e6, 1 W, 0.3 m; `U = 6.370605e-4 J`) | Gaussian 1e2 | **0.6666666667** | 3.509234e-47 | **1.900e46** | **6.667e17** |
+| resonator array (Q = 1e7, 1 mW, 1550 nm; `U = 8.228698e-12 J`, `u = 2.209714e6 J/m³`) | 1e4 | **3.0701134573** | 7.071071e-50 | **4.342e49** | **3.070e18** |
+| photon lattice (Sr, `I = 2.439413e8 W/m²`) | 1e3 | **2.3025850930** | — | large | **2.303e18** |
+| oscillator network (Q = 1e6, 1 pW, 6 GHz; `U = 2.652582e-17 J`) | 10 : 1 | **0.7675283643** | 3.533090e-58 | **2.17e57** | **7.675e17** |
+
+- **The sharpest test** is a **Sr optical lattice clock inside its own standing wave**: it operates at
+  `I = 2.439413e8 W/m²` (`E_rec = 2.272842e-30 J`, depth `100 E_rec`, 300 a.u.) with node/antinode contrast
+  ≥ 1e3 and reads a reproducible frequency to **1e-18 every day** — while AT-naive predicts a **230.26 %**
+  shift across its own lattice. Exclusion **2.303e18**. Contrast ladder 1e2/1e3/1e4/1e6 → 1.53505673 /
+  2.30258509 / 3.07011346 / 4.60517019 (exclusions 1.5351e18 / 2.3026e18 / 3.0701e18 / 4.6052e18).
+- **Exclusion against every ceiling** (cavity / resonator / lattice / network): 1e-12 → 6.667e11 / 3.070e12 /
+  2.303e12 / 7.675e11 · 1e-15 → 6.667e14 / 3.070e15 / 2.303e15 / 7.675e14 · **1e-18 → 6.667e17 / 3.070e18 /
+  2.303e18 / 7.675e17** · 1e-19 → 6.667e18 / 3.070e19 / 2.303e19 / 7.675e18 — **no ceiling exists at which any
+  realizable profile survives.**
+- **Why the failure is structural, not engineering:** the law is **logarithmic**, so
+  `Δτ/τ = (1/3)ln(contrast)` is **O(1) for every realizable contrast** (> 10) and no tuning makes it small.
+- **Verdicts: DERIVED** = the logarithmic clock law and the substrate reading (2.320443e-10 = 2.320e8 × floor;
+  5.367333e-7 = 0.046374 s/day = 5.367e11 × floor) · **BOUNDARY** = the identification of a laboratory |ψ|²
+  with ρ, and the scale invariance · **REFUTED** = any realizable |ψ|² metric clock shift (6.667e17 … 3.070e18;
+  AT-naive vs GR = 1.900e46 … 4.342e49, observation agreeing with GR).
+- **The identification premise is therefore not merely unproven but experimentally excluded at bench scale** —
+  G_011b's "the coupling is not borrowed" promoted from a structural statement to a measured exclusion.
+
+**App/Book surfaced:** AT.App Research News + Theory Book ("Gravity Source" part, nineteen chapters) +
+TestGroups (19 suites); AT.Book `GravityService` (19 executable calculations), nineteen theory objects
+(Physics layer) and nineteen audits g001–g017.
 
 ## Key Unsolved Problems
 
