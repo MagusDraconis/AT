@@ -2076,11 +2076,11 @@ in the historical program counts below.
 | AT-QG | 182 | Complete |
 | **Total** | **289** | |
 
-## ResearchY G-Program — Gravity Source, Control, Magnitude, Calibration, Realizability, Mechanism, Origin, Controlled Suppression, Clock Rate, Time Control, Rho Actuator, Labor Rho, Local Rho Actuator, Physical Actuator, Physical Rho Mapping, Rho To Metric (16 audits, 2026-09-12)
+## ResearchY G-Program — Gravity Source, Control, Magnitude, Calibration, Realizability, Mechanism, Origin, Controlled Suppression, Clock Rate, Time Control, Rho Actuator, Labor Rho, Local Rho Actuator, Physical Actuator, Physical Rho Mapping, Rho To Metric, Watch Ontology (17 audits, 2026-09-12)
 
-New ResearchY group **G — Gravity Source**. Suite: `AT.Tests/ResearchY/G_GravitySource/` (133/133 pass,
+New ResearchY group **G — Gravity Source**. Suite: `AT.Tests/ResearchY/G_GravitySource/` (140/140 pass,
 ~1 s); shared machinery `AT.Tests/Shared/DensityField.cs`, `PhysicalUnits.cs`, `RhoActuators.cs`.
-Detailed docs: `Docs/ResearchY/G_GravitySource/ResearchY-G_001.md` … `ResearchY-G_015.md`.
+Detailed docs: `Docs/ResearchY/G_GravitySource/ResearchY-G_001.md` … `ResearchY-G_016.md`.
 
 ### G_001 — Gravity Source Audit
 **Status:** Complete. **SOURCE = the actualization density ρ** (counting measure), and for the attractive
@@ -2487,9 +2487,42 @@ G_002's 4.8:1 witness is **45 176.138 s/day** needing 1.18 M⊕; 20:1 is **86 27
   contrast · **ASTROPHYSICAL ONLY** = every metric effect that exists (galactic 0.0464 → band top 0.1407
   s/day) · **REFUTED** = a laboratory q profile producing a metric effect.
 
-**App/Book surfaced:** AT.App Research News + Theory Book ("Gravity Source" part, sixteen chapters) +
-TestGroups (16 suites); AT.Book `GravityService` (16 executable calculations), sixteen theory objects
-(Physics layer) and sixteen audits g001–g015.
+### G_016 — Watch Ontology Audit
+**Status:** Complete. Is **mass-energy required to generate ρ?** **No** — ρ is *more primitive*. ρ and the
+spectrum λ are **siblings** off the coupling lattice (capacity and occupancy); energy is their **pairing**.
+
+```
+Difference → distinguishability → the coupling lattice
+   ↓                                    ↓
+CAPACITY: λ, multiplicities m        OCCUPANCY: ρ (counting measure, Σρ = 1)
+   ↓                                    ↓
+        E = ⟨λ, ρ⟩  →  g₀₀ = −ρ^(2/d)  →  clocks dτ/dt = ρ^(1/d)
+```
+
+| test | result |
+|---|---|
+| **1. ρ from primitives only** | **DERIVED** — positivity + `Σρ = 1` need **only** distinguishability (QG194). A₀ = **45**, histogram **{1:1, 2:42, 5:1, 6:1}**, free room **Σ(m−1) = 51**, `Σλ = 1152` (ρ-blind capacity invariant, λ₀ = 0), `Σρ = 1.0000000000000000`. |
+| **2. mass-energy from ρ** | **DERIVED, a PAIRING** — `E = ⟨λ,ρ⟩` (QG180/QG181). `E(uniform) = Σλ/N = 12.0` exactly; on the 95-dim affine set `{Σρ = 1}` **rank 1**, **kernel 94 = 51 (energy-free by degeneracy) + 43**; `E` sees **1.0526 %** of ρ. Non-degeneracy rearrangements do move it: comonotone **13.540176608029563** (+**12.835 %**), anticomonotone 10.015359929915876, reverse-witness 12.095189171364584. |
+| **3. does ρ require mass-energy?** | **REFUTED** — within-multiplet moves (λ constant) keep `Σρ = 1` exact and `E` exactly invariant while ρ moves (m = 6 multiplet, δ = 0.005/0.01: `\|ΔE\| ≤ 1.776e-15`, ratios 2.8462 / 49.0000). The canonical witness is itself such a move: `L1 = 0.6666666666666667`, `ΔE = 0` exactly. **The 51-dim free room is the proof.** |
+| **4. minimal carrier** | **DERIVED** — the **cellwise** counting density. Ladder **95 → 44 (loses exactly the 51-dim room) → 1 (loses 94)**, so every coarser carrier destroys precisely the energy-free room. |
+
+**Candidate verdicts:** actualization density = **SOURCE** · probability density `\|ψ\|²` = **CARRIER** (the
+identity, κ = 1) · occupation density = **CARRIER** (same read by counting) · degeneracy distribution =
+**CORRELATED** (capacity; sizes the room, carries no ρ, block-sum L1 = 0 to 1e-12) · survivor compression =
+**CORRELATED** (a functional of ρ: +4.248925e-3 / −2.959751e-1) · `E = ⟨λ,ρ⟩` = **BOOKKEEPING**.
+
+- **Critical answer:** **YES** — the canonical witness is allowed with `Σρ = 1` and `ΔE = 0`, yet carries a
+  **20 : 1** contrast: clock ratio **2.7144176165949063**, separation **0.9985774245179969 = 86 277.089
+  s/day**, `max\|a\| = 3.7459607502174e5` × the observed contrast (= G_005's 3.746e5 requirement). The
+  **CARRIER exists**; the **DYNAMICS** (G_005/G_008), not the ontology, forbids realisation.
+- **Verdicts: SOURCE = ρ** (DERIVED from counting alone) · **CARRIER = the cellwise counting density (κ = 1)**
+  · **BOOKKEEPING = mass-energy `E = ⟨λ,ρ⟩`** (rank-1, keeps 1.0526 %; BOUNDARY value `Σλ = 1152`).
+- **What this does to G_015:** the imported step was not "ρ needs energy" (false) but "the only laboratory
+  handle on the metric is energy" (true) — now identified as the **rank-1 projection** of a 95-dim object.
+
+**App/Book surfaced:** AT.App Research News + Theory Book ("Gravity Source" part, seventeen chapters) +
+TestGroups (17 suites); AT.Book `GravityService` (17 executable calculations), seventeen theory objects
+(Physics layer) and seventeen audits g001–g016.
 
 ## Key Unsolved Problems
 

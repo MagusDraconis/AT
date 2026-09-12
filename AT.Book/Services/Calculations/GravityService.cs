@@ -372,6 +372,25 @@ public sealed class GravityService : ICalculationService
                 ],
                 "The audit only becomes well-posed once G_014's identity map is used, splitting the question in two. The ANALOGUE contrast channel is MEASURABLE for all four cases (kappa = 1: 0.046374 to 86 277.089 s/day), while the METRIC channel has mass-energy as its only "
                 + "laboratory handle (G_011b) and is REFUTED: the best laboratory case is 3.4611e-26, 3.46e-8 of the 1e-18 floor, and the floor itself needs 13 466 tonnes inside a centimetre (2.889e7x nuclear density). Every metric effect that exists is ASTROPHYSICAL ONLY (ResearchY-G_015)."),
+
+            new("watch-ontology",
+                "Watch Ontology — is mass-energy required to generate rho?",
+                "E = <lambda, rho>;  rank 1 of 95;  kernel 94 = 51 (energy-free by degeneracy) + 43;  free room 51",
+                [
+                    new("the AT-native chain", "Difference -> distinguishability -> lattice -> {capacity lambda, occupancy rho} -> E -> clocks", "rho and lambda are SIBLINGS; E = <lambda, rho> is their PAIRING"),
+                    new("rho from primitives", "positivity and Sigma rho = 1 need ONLY distinguishability (QG194)", "A0 = 45; histogram {1:1, 2:42, 5:1, 6:1}; free room 51; Sigma lambda = 1152 (rho-blind)"),
+                    new("E is a rank-1 pairing", "E = <lambda, rho>; E(uniform) = Sigma lambda / N = 12.0 exactly", "on {Sigma rho = 1} rank 1, kernel 94, so E sees 1.0526 % of rho"),
+                    new("rearrangement does move E", "comonotone 13.540176608029563 (+12.835 %)", "anticomonotone 10.015359929915876; spread 3.5248166781136874"),
+                    new("REFUTED: rho needs mass", "the 51-dim free room: 51 directions in which rho moves and E does not", "m = 6 multiplet, delta = 0.005/0.01: |dE| <= 1.776e-15, ratios 2.8462 / 49.0000"),
+                    new("the witness is energy-free", "the canonical tilt is a PURE within-multiplet move", "L1 = 0.6666666666666667, dE = 0 exactly, max|a| = 0.6031746"),
+                    new("the minimal carrier is cellwise", "dimension ladder 95 -> 44 (loses the 51-dim room) -> 1 (loses 94)", "so any coarser carrier destroys exactly the energy-free room"),
+                    new("degeneracy distribution = CORRELATED", "the CAPACITY side: it sizes the room but carries no rho", "invariant under any within-room move (block-sum L1 = 0 to 1e-12)"),
+                    new("survivor compression = CORRELATED", "a FUNCTIONAL of rho, and not even energy-free", "+4.248925e-3 at 48 kept; -2.959751e-1 at 24 kept"),
+                    new("critical answer", "YES: clock rate changes at fixed Sigma m", "clock ratio 20^(1/3) = 2.7144176165949063 = 86 277.089 s/day separation with dE = 0"),
+                ],
+                "rho is MORE PRIMITIVE than mass-energy: rho and the spectrum lambda are siblings off the coupling lattice (capacity and occupancy) and E = <lambda, rho> is their rank-1 pairing on a 95-dimensional object, keeping only 1.0526 %. "
+                + "51 of the 94 discarded dimensions are energy-free BY DEGENERACY, so the canonical witness rearranges density with dE = 0 exactly while changing the clock ratio between its extreme cells by 2.7144176165949063. SOURCE = rho; CARRIER = the cellwise counting density (kappa = 1); "
+                + "BOOKKEEPING = E = <lambda, rho> (ResearchY-G_016)."),
         ];
     }
 
