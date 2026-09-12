@@ -3109,6 +3109,18 @@ test that cannot fail is not a test.*
   optics is not a clock-sector requirement); the **entire** open problem is the **SPATIAL sector**. Core:
   `AT.Core/ResearchXH/ClockSectorClosure.cs`; **7/7 PASSED**, group G total **230/230**.
 
+### G_029 — Spatial Sector Closure Audit (CLOSED on a postulate: `g_rr = 2 − ρ^(2/d)`)
+**Question:** with `A = σ` fixed by G_028, can any `B(r)` survive all eight constraints without a new primitive?
+- **WHAT THE CONSTRAINTS BIND.** Reqs 1–4 depend only on **A** (passed by every candidate); reqs 5–7 depend only on **γ**; req 8 concerns the primitive base (B's freedom is ψ's traceless face, not a new primitive). So the requirements constrain **one number, not a function**.
+- **CANDIDATE TABLE** (γ at J0740+6620): `B = σ` → **−1.000000**, deflection 0, Shapiro 0, √det g_ij/ρ = 1.000000, **REFUTED at Cassini 8.6957e4 σ**; `B = −σ` → 1.638865; `B = ½ln(2−e^(2σ))` → **1.000000 exactly**, defl/GR = Shapiro/GR = **1.000000**, vol/ρ = **3.437585**; `B = −σ−2σ²` → 0.350133; rational/exponential → ≈1+O(x).
+- **THE UNIQUE SURVIVOR.** `e^(2B) = 2 − e^(2A)` ⇔ **`g_rr = 2 − ρ^(2/d) = 2 − |g₀₀|`** — the spatial metric is the **reflection** of the temporal one about 1 (the conformal member is `g_rr = |g₀₀|`). To first order `g_rr = 1 + 2x`, the GR value.
+- **NON-DEGENERACY, CORRECTED HERE.** `2 − e^(2A)` vanishes only at `A = +½ln2`, i.e. **x = −½ln2 = −0.3465735903** — a *negative* compactness. So the exact member is non-degenerate everywhere physical, with **`g_rr ∈ (1, 2)`** for all `x > 0`, tending to 2 as x → ∞. *(The first derivation in this audit claimed a degeneracy at R = 2.8854 GM/c² — a sign error, corrected before committing.)*
+- **AT DERIVES NO B.** Its only equation (the counting measure) gives `B = σ`, which Cassini excludes. The survivor is selected by **observation**, and the price is exact: the volume cost **3.437584871 reproduces G_023's recorded 3.437585**.
+- **THE COMPLETION IS UNSELECTED.** Cassini bounds the quadratic coefficient only by **`|c₂ + 2| ≲ 22.5`** at 3σ — the requirements pin γ, not B.
+- **VERDICTS.** **SURVIVES** = `g_rr = 2 − ρ^(2/d)` (identified, all eight requirements, unique exact-γ member). **BOUNDARY** = γ pinned but B not; counting measure traded (3.437585); AT derives no B → a **POSTULATE**. **REFUTED** = `B = σ` and the counting measure **as the equation for B**.
+- **CRITICAL.** All DERIVABLE B fail → **the spatial sector CLOSES AS A DERIVATION**. Exactly one survives the strengthened requirement → **the sector CLOSES ON A POSTULATE**, at an exact and known price.
+- **Opened:** an AT-native principle for `g_rr = 2 − |g₀₀|`? Does 3.437585 break the four-scale calibration, the deficit accounting (QG181/182) or the spectral identification of `occ`? Re-examine the horizon structure and QG208 (Hawking with ψ) on the new B, since `g_rr → 2` while `|g₀₀| → 0`. Core: `AT.Core/ResearchXH/SpatialSectorClosure.cs`; **7/7 PASSED**, group G **237/237**.
+
 ## Key Unsolved Problems
 
 1. Numerical values of ℓ, τ, ħ — empirical, not derived

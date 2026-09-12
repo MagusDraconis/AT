@@ -1730,6 +1730,41 @@ u2014 amends QG207, QG212 and QG32; **issues no new physics claim**.
   “physical sector”; re-derive the GPS bound for **every** ψ proposal (the 2e−3 error is a **method** error, not a typo).
   Core: `AT.Core/ResearchXH/ClockSectorClosure.cs`; **7/7 PASSED**, group G total **230/230**.
 
+## THE SPATIAL SECTOR CLOSES — on a postulate: `g_rr = 2 − ρ^(2/d)` (ResearchY-G_029, 2026-09-13)
+**Question:** with `A = σ` **fixed by G_028**, can any spatial metric `B(r)` survive all eight constraints without a new primitive?
+- **THE REQUIREMENTS CONSTRAIN ONE NUMBER, NOT A FUNCTION.** Reqs 1–4 (Newton limit, Earth clock, GPS, neutron-star audit) depend **only on A** and are passed by **every** candidate. Reqs 5–7 (Cassini γ, deflection, Shapiro) depend **only on γ**. So the whole nonlinear completion of `B` stays free.
+- **CANDIDATE TABLE** (γ at J0740+6620):
+
+  | family | B | γ | defl/GR | Shapiro/GR | √det g_ij/ρ | verdict |
+  |---|---|---:|---:|---:|---:|---|
+  | **B = σ** (counting measure) | −0.247002 | **−1.000000** | **0** | **0** | **1.000000** | **REFUTED** — Cassini **8.6957e4 σ** |
+  | B = −σ (linear) | +0.247002 | 1.638865 | 1.319433 | 1.319433 | 4.401793 | SURVIVES (1st order) |
+  | **B = ½ln(2−e^(2σ))** | +0.1645877 | **1.000000** | **1.000000** | **1.000000** | 3.437585 | **SURVIVES — IDENTIFIED** |
+  | B = −σ − 2σ² | +0.12596 | 0.350133 | 0.675067 | 0.675067 | — | SURVIVES (c₂ free) |
+  | rational / exponential | — | ≈1+O(x) | ≈1 | ≈1 | — | SURVIVES (unselected) |
+
+- **THE UNIQUE SURVIVOR, IDENTIFIED:**
+
+  ```text
+  e^(2B) = 2 − e^(2A)   ⇔   g_rr = 2 − ρ^(2/d) = 2 − |g₀₀|
+  ```
+
+  **The spatial metric is the REFLECTION of the temporal one about 1** (the conformal γ = −1 member is `g_rr = |g₀₀|`). To first order `g_rr = 1 + 2x` — the GR value.
+- **NON-DEGENERACY — CORRECTED IN THIS AUDIT.** `2 − e^(2A)` vanishes only at `A = +½ln2`, i.e. **x = −½ln2 = −0.3465735903** — a *negative* compactness (a repulsive object). So the exact member is **non-degenerate everywhere physical**, with **`g_rr ∈ (1, 2)`** for every `x > 0`, tending to 2 as x → ∞: space is uniformly **stretched**. *(My first derivation had a sign error and claimed a degeneracy at R = 2.8854 GM/c²; that was wrong.)*
+- **AT DERIVES NO B.** Its only equation — the counting measure — yields `B = σ`, the member Cassini **excludes**. So the survivor is selected by **observation**, and the price is exact:
+
+  ```text
+  counting measure → B = σ              → γ = −1 → REFUTED (8.6957e4 σ)
+  GR optics        → g_rr = 2 − ρ^(2/d)  → γ = +1 → SURVIVES, volume cost 3.437585
+  ```
+
+  The cost **reproduces G_023's recorded 3.437585 exactly** (computed 3.437584871).
+- **THE COMPLETION IS UNSELECTED.** Cassini bounds the quadratic coefficient only by **`|c₂ + 2| ≲ 22.5`** at 3σ, so the requirements pin **γ**, not **B**.
+- **Output: SURVIVES / BOUNDARY / REFUTED.** **SURVIVES** = the γ = +1 family, exactly one member at all orders — identified above. **BOUNDARY** = γ pinned but B not; the counting measure traded away; and AT deriving no B, so the survivor is a **POSTULATE**. **REFUTED** = `B = σ` and the counting measure **as the equation for B**.
+- **Critical outcomes.** *All DERIVABLE B fail* (only `B = σ` is derivable) → **the spatial sector is CLOSED as a derivation.** *Exactly one survives* the strengthened requirement → **the sector CLOSES ON A POSTULATE**, at an exact and known price.
+- **Opened:** is there an AT-native principle for `g_rr = 2 − |g₀₀|`? Does the 3.437585 volume cost break the four-scale calibration, the deficit accounting (QG181/182) or the spectral identification of `occ`? Re-examine the horizon structure and the Hawking-temperature chain (QG208) on the new B, since `g_rr → 2` while `|g₀₀| → 0`.
+- Core: `AT.Core/ResearchXH/SpatialSectorClosure.cs`; **7/7 PASSED**, group G total **237/237**.
+
 ## Latest Repo Sync
 
 Recent commits from the other machine:
@@ -1988,6 +2023,7 @@ Weak-coupling scale note:
 | Authored-Verdict Audit | ResearchY-G_026 | **IS THE G_025 DEFECT CLASS ISOLATED? NO — SYSTEMIC.** Four QG audits (`QuantumGravityClosureAudit`/`ReclosureAudit`/`ReclosureAudit2`/`FinalQuantumGravityAudit`) used **identical method names** and differed only in literals, so PARTIAL → EFFECTIVE → NEAR-COMPLETE → COMPLETE was produced by **editing a literal**; their sub-scores **never read their own criteria**; and their four test suites asserted **mutually contradictory** verdicts and **all passed**. The Born-rule headline "α = 2 UNIQUELY selected" was **DEAD CODE**. Fixed with a `QgCriterion` type (status + mandatory basis + derived score) and an `AlphaInvarianceScreen` that **executes** the uniqueness screen (violation 2.22e−16 at α = 2 vs 0.495–2.344 otherwise). Verdicts unchanged; ψ corrected to canonical (G_024). |
 | Literal Verdict Audit | ResearchY-G_027 | **NO RESULT PATH MAY LET A CLASSIFICATION DEPEND ON A LITERAL.** The rule is now **mechanically enforced**: `LiteralVerdictAudit` re-reads the AT.Core source at test time, so a NEW literal→verdict path **fails the build** until it is computed or adjudicated. **7 paths found, ALL BOUNDARY** (authored judgements and input taxonomies, each with its reason cited in place); **ZERO REFUTED remain** — the one refuted path (`GdaggerOriginAnalyzer`: flags, ratio and score all literals, `Score` feeding the ranking, and a typed `RatioToA0 = 1.0` with a `NaN` numerator) is now **derived from the predicted g†**, reproducing the typed values exactly. The registry structurally forbids a REFUTED entry. |
 | Clock Sector Closure | ResearchY-G_028 | **IS THE CLOCK `ρ^(1/d)` OR `ρ^(1/d)·e^ψ`? ANSWER: `ρ^(1/d)` — CLOCK CLOSED.** The potential IS the time exponent (`A = σ + ψ`), so the source law holds **iff ∇ψ = 0**: **ψ cannot be nonzero without changing the source law**. `γ = +1` fixes `ψ = −4σ` uniquely, forcing `A = +3x > 0` — the potential turns POSITIVE and every body is **blueshifted** (J0740+6620 z = −0.5233658 vs +0.2801817; Earth **2000 σ**). ρ-only satisfies **all five** requirements. **CORRECTS G_024/QG212:** the GPS bound is **1.391e−12**, **1.44e9× tighter** than the quoted 2e−3, and QG212's “physical sector” is **repulsive**. The spatial route is the only `γ = +1` that keeps the clock (volume cost 3.437585). |
+| Spatial Sector Closure | ResearchY-G_029 | **EXACTLY ONE B SURVIVES: `g_rr = 2 − ρ^(2/d) = 2 − |g₀₀|`** — the unique member with γ = +1 at ALL orders (`e^(2B) = 2 − e^(2A)`), the reflection of the temporal metric about 1; non-degenerate everywhere physical with `g_rr ∈ (1,2)`. **`B = σ` — the only member AT DERIVES — is REFUTED at Cassini 8.6957e4 σ** (γ = −1, deflection 0, Shapiro 0), so the sector **CLOSES ON A POSTULATE** at a volume cost of **3.437585**, reproducing G_023's recorded value exactly. The requirements pin γ, not B: Cassini bounds the quadratic coefficient only by |c₂+2| ≲ 22.5. |
 | G Bridge (QG6↔QG181) | QG182 | BRIDGE ORIGIN (deficit parameters from D96: m₀ = occ₀/Σm = 4/95 = S param, r₀ = ln(span), ρ̄ = 1 → GM_eff = 1/ln(M_Pl/v) = 1/(3·ln A), 0.0969%; identity occ₀·ln(span)·ln(Σm·#g·occ₂) = Σm; two G constructions are the same physical content) |
 | Planck Scale Robustness | QG183 | ROBUST ORIGIN (physical exponent p = ln(M_Pl/v)/ln(A) = 2.99984, cubic to 1e-4; only A³ reproduces M_Pl (0.2%) while A¹/A²/A⁴ fail by 100%/100%/3.6e7%, nearby exponents 47-260% dev; no alternative A selects cubic; 3-factor/3-band/d=3 structure) |
 | Mass-Radius Relation | QG184 | MASS-RADIUS ORIGIN (observed M ∝ R emerges from counting measure: the deficit is per-octave/log — G4ME flat-rotation-curve profile — giving a ∝ −1/r and GM_eff = m₀·R/(d·L·ρ̄) ∝ R; QG13's E ∝ R^d was the compact-void assumption; with S ∝ R^(d−1) (QG12), T ∝ 1/R — Hawking restored, no new primitives) |
