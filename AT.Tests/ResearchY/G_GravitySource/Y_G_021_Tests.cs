@@ -67,6 +67,16 @@ namespace AT.Tests.ResearchY.G_GravitySource;
 /// Deterministic: exact algebra on imported published values.  No reclassification of G_001-G_020's own
 /// results (they are g00-only and stand); D_040 untouched; no canonical claim, value or equation changes;
 /// no new primitive.
+///
+/// ⚠ CORRECTED BY ResearchY-G_024 (Optics Reconciliation Audit). This suite's statements that psi is a
+/// "MINIMAL NEW PRIMITIVE" and that gamma = +1 is out of derivational reach are SUPERSEDED and WITHDRAWN.
+/// The AT-QG optics resolution QG212 (Docs/Research/ATQG_ConformalOpticsResolution.md — Status COMPLETE,
+/// OPTICS RESOLVED; tests ATQG2120/2121/2122) classes the psi = 0 conformal slice as a RESTRICTED SECTOR:
+/// the PHYSICAL sector is psi != 0, which gives gamma = +1 with lensing, Shapiro and frame dragging at full GR
+/// — with NO new primitives, since psi is the TRACELESS FACE of the one Difference read against eta
+/// (minimal primitive set {Difference, eta}; QG285/QG286/QG292). What STANDS here is the quantitative part:
+/// the psi = 0 slice is Cassini-excluded at 8.6957e4 sigma, and the invariant split is
+/// psi = 0 <=> A = B <=> gamma = -1, gamma = +1 <=> A + B = 0.
 /// </summary>
 public class Y_G_021_Tests : ResearchTestBase
 {

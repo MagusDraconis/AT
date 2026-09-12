@@ -222,6 +222,42 @@ public static class TheoryBookDataService
                     new("Power scaling", "P ∝ f·(k/N)²: linear in the target (7.436e-18 → 7.436e-9), quadratic in relative frequency (cost(2)/cost(1) = 4.00), N⁻² at fixed wavelength (1024-site 113.7× cheaper); cost per unit shift 6.4250e-4 (k = 1) vs 2.3994 (k = 95).", TheoryBadge.Derived, ["ResearchY-G_010"]),
                     new("Everything needs a driver the theory lacks", "The branching flow is arrangement-neutral, the attractor erases arrangements (basin 1.0), an undriven local state lives 0.622 steps, and the drive must be mode-matched to 1e-18 — so time control is feasible as arithmetic and refuted as what the theory produces on its own.", TheoryBadge.Falsified, ["ResearchY-G_010", "ResearchY-G_008"]),
                 ]),
+            new("optics-reconciliation", "Was Light Bending Already Solved?",
+                "**Yes \u2014 and this chapter restores it.** The AT-QG programme resolved conformal optics in **QG212** (`Docs/Research/ATQG_ConformalOpticsResolution.md`, Status **COMPLETE \u2014 OPTICS RESOLVED**, tests ATQG2120/2121/2122, core class `AT.Core/ResearchXH/ConformalOpticsResolution.cs`) with the two-sector table: **`\u03c8 = 0`** (conformal `g = \u03c1^(2/d)\u03b7`) gives **`\u03b3 = \u22121`** with lensing = Shapiro = frame dragging = **0** and the redshift surviving; **`\u03c8 \u2260 0`** (the QG207 completion) gives **`\u03b3 = +1`** with lensing and Shapiro at **full GR** and frame dragging **restored**. Verdict: conformal no-lensing is a **RESTRICTED SECTOR** \u2014 *\u201cnot a numerical artifact, not physical GR, the physical sector is \u03c8 \u2260 0\u201d* \u2014 and QG212\u2019s method line reads **\u201cno new primitives\u201d**. The G-chain then mis-stated that status; **ResearchY-G_024** retracts the three erroneous claims and keeps the two results that sharpen QG212.",
+                [
+                    new("The canonical two-sector result",
+                        "QG212, Status COMPLETE \u2014 OPTICS RESOLVED, tests ATQG2120/2121/2122 all passed. "
+                        + "\u03c8 = 0: \u03b3 = \u22121, lensing 0, Shapiro 0, frame dragging 0, redshift yes. \u03c8 \u2260 0 (QG207): \u03b3 = +1, lensing GR, Shapiro GR, frame dragging restored, redshift yes",
+                        TheoryBadge.Derived, ["ResearchY-G_024", "ResearchY-G_021"]),
+                    new("Rebuilt executably",
+                        "In the QG207 parametrisation g\u2080\u2080 = \u2212\u03c1^(2/d)e^(2\u03c8), g_ii = \u03c1^(2/d)e^(\u22122\u03c8/(d\u22121)), \u03b3 = h_ii/h\u2080\u2080"
+                        + "\u03c8 = 0 gives \u03b3 = \u22121 EXACTLY ((1+\u03b3)/2 = 0); \u03c8 = \u22124\u03c3 gives \u03b3 = +1 TO FIRST ORDER ((1+\u03b3)/2 = 1, full GR strength) \u2014 first order being the order at which PPN \u03b3 is defined (exact value e^(\u22126x))",
+                        TheoryBadge.Derived, ["ResearchY-G_024"]),
+                    new("RETRACTION 1 \u2014 \u03c8 is NOT a new primitive",
+                        "G_021/G_022/G_023 called \u03c8 \u201ca MINIMAL NEW PRIMITIVE (QG24)\u201d. WITHDRAWN. "
+                        + "The trace/traceless decomposition of the one Difference at d = 3 gives 6 components = 1 TRACE (\u03c1) + 5 TRACELESS, of which 2 are transverse-traceless (\u03c8, spin-2). Minimal primitive set = {Difference, \u03b7} (QG285/QG286/QG292): \u03c8 is the Weyl content \u2014 the difference from conformal flatness \u2014 read against \u03b7",
+                        TheoryBadge.Derived, ["ResearchY-G_024", "ResearchY-G_016"]),
+                    new("RETRACTION 2 \u2014 the \u03c8 route is NOT empty",
+                        "G_022 \u00a76 concluded \u201cthe \u03c8 route is EMPTY\u201d by deriving \u03c8 = 0 from the clock law and the acceleration law. WITHDRAWN. "
+                        + "The derivation was arithmetically correct and PREMISE-FALSE: it assumed \u221a(\u2212g\u2080\u2080) = \u03c1^(1/d) is non-negotiable \u2014 but that IS the \u03c8 = 0 slice; the physical sector has \u221a(\u2212g\u2080\u2080) = \u03c1^(1/d)e^(\u03c8)",
+                        TheoryBadge.Falsified, ["ResearchY-G_024", "ResearchY-G_022"]),
+                    new("RETRACTION 3 \u2014 G_023\u2019s verdict reason is void",
+                        "G_023\u2019s REFUTED verdict rested on \u03c8 being a new primitive, which RETRACTION 1 removes. "
+                        + "Its technical content SURVIVES: \u03b3 = \u2212B/A first order, so \u03c8 = 0 \u21d4 A = B = \u03c3 \u21d4 \u03b3 = \u22121 (the restricted isotropic slice) and \u03b3 = +1 \u21d4 A + B = 0 (h\u2080\u2080 = h_ii). \u201c\u03c8 = 0 \u21d4 A = B\u201d IS QG212\u2019s word \u2018isotropic\u2019",
+                        TheoryBadge.Falsified, ["ResearchY-G_024", "ResearchY-G_023"]),
+                    new("What survives \u2014 the measured exclusion",
+                        "The \u03c8 = 0 slice is excluded BY MEASUREMENT at a computable significance: Cassini 8.6957e4 \u03c3, VLBA 6.6660e3 \u03c3, Gaia 1.2481e2 \u03c3"
+                        + "QG26 gives the bare \u03b3 = \u22121; G_021 converts it into a number. This is what makes the \u03c8 \u2260 0 sector necessary rather than optional",
+                        TheoryBadge.Derived, ["ResearchY-G_024", "ResearchY-G_021"]),
+                    new("What survives \u2014 the invariant split and its two realisations",
+                        "keep the clock law (A = \u03c3, B = \u2212\u03c3 = +x): G_023\u2019s k = B \u2212 A = 2x. QG207 completion at \u03c8 = \u22124\u03c3: A = \u22123\u03c3, B = +3\u03c3, k = \u22126x"
+                        + "So G_023\u2019s \u03b3 = \u22121 + k/x is the CLOCK-LAW-PRESERVING form and its k = 2x is that special case \u2014 correct, but not the only route to A + B = 0",
+                        TheoryBadge.Derived, ["ResearchY-G_024", "ResearchY-G_023"]),
+                    new("The genuine open item this adds \u2014 a strong-field BOUNDARY",
+                        "\u03b3 = +1 requires \u03c8 = \u22124\u03c3, so the completion is NOT redshift-neutral: the clock shift is e^(4x) \u2212 1 = 2.784532e\u22129 at the Earth\u2019s surface, 8.490012e\u22126 at the Sun"
+                        + "Both are far below the verified tests (GPS +38.5 vs +38.6 \u03bcs/day = 0.2 %; Cassini 2.3e\u22125 on \u03b3), so there is NO solar-system conflict and the GPS bound |\u03c8| \u2272 2e\u22123 is 7.2e5\u00d7 LOOSER than required. BUT at compactness the leading-order z = e^(\u22123x) \u2212 1 turns NEGATIVE (\u22120.523366 at x = 0.247002): PPN fixes only the FIRST-ORDER \u03c8 = \u22124\u03c3, so the O(x\u00b2) form of the completion is LOAD-BEARING AND UNCOMPUTED \u2014 a flag, not a refutation",
+                        TheoryBadge.Partial, ["ResearchY-G_024", "ResearchY-G_020"]),
+                ]),
             new("spatial-closure", "Is One Number All That Stands in the Way?",
                 "The spatial-sector closure audit (**ResearchY-G_023**) asks whether **any** spatial metric can be derived **without new primitives** yielding **`\u03b3 \u2248 +1`** while preserving the clock law, the source law and the acceleration law \u2014 with the success criterion *\u201c`\u03b3 \u2248 +1` without changing `g\u2080\u2080` physics\u201d*. **Answer: NO.** The obstruction is a **single conformal invariant**, `k = B \u2212 A`, and AT's own construction pins it to **zero from two independent directions**: the clock law gives `A = \u03c3` and the counting measure (the spatial volume **is** the count) gives `B = \u03c3`, so `k = 0` identically and `\u03b3 = \u22121` at every compactness. `\u03b3 = +1` would need `k = 2x`, at the price of a spatial volume **3.437585\u00d7** the counting measure at J0740+6620. Every existing AT ingredient is a **scalar**, and the one non-scalar ingredient \u2014 the causal order \u2014 is the **flat** D96 ring order. **Closure.** Nothing earlier is disturbed: the `g\u2080\u2080` half of the criterion **is** satisfiable exactly.",
                 [

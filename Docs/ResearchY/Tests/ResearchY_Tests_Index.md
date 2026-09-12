@@ -109,6 +109,7 @@ ResearchY-G_020   ↔  Y_G_020_Tests.cs    (AT.Tests/ResearchY/G_GravitySource/)
 ResearchY-G_021   ↔  Y_G_021_Tests.cs    (AT.Tests/ResearchY/G_GravitySource/)
 ResearchY-G_022   ↔  Y_G_022_Tests.cs    (AT.Tests/ResearchY/G_GravitySource/)
 ResearchY-G_023   ↔  Y_G_023_Tests.cs    (AT.Tests/ResearchY/G_GravitySource/)
+ResearchY-G_024   ↔  Y_G_024_Tests.cs    (AT.Tests/ResearchY/G_GravitySource/)
 ResearchY-S_001  ↔  Y_S_001_Tests.cs       (AT.Tests/ResearchY/S_Synthesis/)
 ```
 
@@ -263,6 +264,7 @@ ResearchY-S_001  ↔  Y_S_001_Tests.cs       (AT.Tests/ResearchY/S_Synthesis/)
 | ResearchY-G_021 (Light-Propagation Audit) | `AT.Tests/ResearchY/G_GravitySource/Y_G_021_Tests.cs` | ACTIVE | 2026-09-12 | ✅ 7/7 PASSED — `Results/Y_G_021_Result.md` (CORRECTS G_019 §5) |
 | ResearchY-G_022 (Spatial Metric Audit) | `AT.Tests/ResearchY/G_GravitySource/Y_G_022_Tests.cs` | ACTIVE | 2026-09-12 | ✅ 7/7 PASSED — `Results/Y_G_022_Result.md` (REFINES G_021: the psi route is empty) |
 | ResearchY-G_023 (Spatial Sector Closure Audit) | `AT.Tests/ResearchY/G_GravitySource/Y_G_023_Tests.cs` | ACTIVE | 2026-09-12 | ✅ 7/7 PASSED — `Results/Y_G_023_Result.md` (CLOSES G_022: k = B − A is pinned to 0) |
+| ResearchY-G_024 (Optics Reconciliation Audit) | `AT.Tests/ResearchY/G_GravitySource/Y_G_024_Tests.cs` | ACTIVE | 2026-09-12 | ✅ 7/7 PASSED — `Results/Y_G_024_Result.md` (RESTORES QG212; retracts G_022 §6 and G_023's verdict reason) |
 | ResearchY-S_001 (Post-V2.1 Theory Architecture Synthesis) | `AT.Tests/ResearchY/S_Synthesis/Y_S_001_Tests.cs` | ACTIVE | 2026-08-30 | ✅ 4/4 PASSED — `Results/Y_S_001_Result.md` |
 
 ## Result Summaries

@@ -1,5 +1,16 @@
 # ResearchY-G_021 — Light-Propagation Audit
 
+> ⚠ **CORRECTED BY `ResearchY-G_024` — Optics Reconciliation Audit.** This document's statements that `ψ` is
+> the *“MINIMAL NEW PRIMITIVE”* and that `γ = +1` is out of derivational reach are **SUPERSEDED and WITHDRAWN**.
+> The AT-QG optics resolution **QG212** (`Docs/Research/ATQG_ConformalOpticsResolution.md` — Status **COMPLETE**,
+> **OPTICS RESOLVED**; tests `ATQG2120/2121/2122`) classes the `ψ = 0` conformal slice as a **RESTRICTED SECTOR**:
+> the **physical sector is `ψ ≠ 0`**, which gives **`γ = +1`** with lensing, Shapiro and frame dragging at full GR
+> — with **NO new primitives**, since `ψ` is the **traceless face of the one Difference** read against `η`
+> (minimal primitive set `{Difference, η}`; QG285/QG286/QG292). What **STANDS** is the quantitative part: the
+> `ψ = 0` slice is Cassini-excluded at **8.6957e4 σ**, and the invariant split is `ψ = 0 ⇔ A = B ⇔ γ = −1`,
+> `γ = +1 ⇔ A + B = 0`. See `ResearchY-G_024.md`.
+
+
 **Program:** ResearchY — Wave Geometry Program
 **Group:** G — Gravity Source
 **ID:** ResearchY-G_021 (permanent)

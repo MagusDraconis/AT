@@ -2837,6 +2837,50 @@ obstructs it, and AT's construction pins it to zero.  Closes `G_022`.
 - **No reclassification**; D_040 untouched; no canonical claim, value or equation changes; **no new primitive**;
   `G_021`/`G_022` stand; 7/7 PASSED.
 
+### G_024 — Optics Reconciliation Audit (restores QG212; retracts three G-chain errors)
+**Status:** Complete. **Why:** the AT-QG programme **resolved conformal optics before the G-chain began**, and
+the G-chain mis-stated that status.
+- **The canonical result — AT-QG QG212** (`Docs/Research/ATQG_ConformalOpticsResolution.md`): **Status COMPLETE —
+  OPTICS RESOLVED**, tests `ATQG2120/2121/2122` **all passed**, core class
+  `AT.Core/ResearchXH/ConformalOpticsResolution.cs`.
+
+  | Sector | PPN `γ` | Lensing | Shapiro | Frame dragging | Redshift |
+  |---|---|---|---|---|---|
+  | **`ψ = 0`** (conformal `g = ρ^(2/d)η`) | **−1** | **0** | **0** | **0** | yes |
+  | **`ψ ≠ 0`** (QG207 completion) | **+1** | **GR** | **GR** | **restored** | yes |
+
+  Verdict: conformal no-lensing is a **RESTRICTED SECTOR** — *"not a numerical artifact, not physical GR, the
+  physical sector is `ψ ≠ 0`"* — and the method line reads **"no new primitives"**.
+- **THREE RETRACTIONS.**
+  (1) G_021/G_022/G_023 call `ψ` *"a MINIMAL NEW PRIMITIVE (QG24)"* — **SUPERSEDED** by QG285/QG286/QG292: the
+  trace/traceless decomposition of the one Difference at `d = 3` gives **6 = 1 trace (ρ) + 5 traceless**, of which
+  **2 are TT** (`ψ`, spin-2), so the minimal primitive set is **{Difference, η}**. **WITHDRAWN.**
+  (2) **G_022 §6 "the `ψ` route is EMPTY"** — the derivation of `ψ = 0` assumed the `ρ`-only clock law is
+  non-negotiable, but **that IS the `ψ = 0` slice**; the physical sector has `√(−g₀₀) = ρ^(1/d)e^(ψ)`.
+  **WITHDRAWN.**
+  (3) **G_023's REFUTED verdict** rested on (1), so its **reason is void**.
+- **WHAT SURVIVES AND IS SHARPENED.** (a) The `ψ = 0` slice is **excluded by measurement** at a computable
+  significance: **Cassini 8.6957e4 σ**, VLBA 6.6660e3 σ, Gaia 1.2481e2 σ. (b) **The invariant split**: to first
+  order `γ = −B/A`, so **`ψ = 0` ⇔ `A = B = σ` ⇔ `γ = −1`** (the restricted isotropic slice) and
+  **`γ = +1` ⇔ `A + B = 0`** (`h₀₀ = h_ii`). Two realisations: keep the clock law (`A = σ`, `B = −σ = +x`) giving
+  **G_023's `k = 2x`** — the clock-law-preserving special case; or the QG207 completion at `ψ = −4σ` giving
+  `A = −3σ`, `B = +3σ`, **`k = −6x`**. So `ψ = 0 ⇔ A = B` **is** the quantitative content of QG212's word
+  "isotropic".
+- **THE ONE GENUINE OPEN ITEM ADDED.** In the QG207 parametrisation `γ = +1` requires `ψ = −4σ`, so the
+  completion is **NOT redshift-neutral** — the clock shift is `e^(4x) − 1` = **2.784532e−9** at the Earth's
+  surface, 8.490012e−6 at the Sun. Both are far below the verified tests (GPS +38.5 vs +38.6 μs/day = 0.2 %;
+  Cassini 2.3e−5 on `γ`), so **no solar-system conflict**, and the implied bound `|ψ| ≲ 2e−3` from GPS is
+  **7.2e5× looser** than required. **BUT** at compactness the leading-order redshift `z = e^(−3x) − 1` turns
+  **NEGATIVE** (−0.259182 at x = 0.10, −0.403664 at 0.172317, **−0.523366 at 0.247002**). PPN fixes only the
+  **first-order** `ψ = −4σ`, so the `O(x²)` form of the completion is **load-bearing and uncomputed** — a
+  **BOUNDARY flag, NOT a refutation**.
+- **Verdicts: DERIVED** = the two-sector structure as QG212 states it · the `ψ = 0` slice's measured exclusion ·
+  the invariant split · `ψ` introduces no new primitive · **BOUNDARY** = the exact (nonlinear) completion is
+  unspecified (the `O(x²)` form is load-bearing for the strong-field redshift) and `ψ`'s ontological status is a
+  documented boundary (QG299) · **REFUTED** = G_022 §6 and G_023's verdict reason.
+- **No reclassification of the QG212 result — this audit RESTORES it**; D_040 untouched; no canonical claim,
+  value or equation changes; no new primitive; 7/7 PASSED.
+
 ## Key Unsolved Problems
 
 1. Numerical values of ℓ, τ, ħ — empirical, not derived
