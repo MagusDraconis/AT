@@ -267,8 +267,48 @@ public sealed class GravityService : ICalculationService
                 + "3.472222e-11 and 3.472222e-8 (drives 7.436285e-18 … 7.436285e-12 per step) to sustain wells of 32 m/s, 1.02 km/s and 32.3 km/s — all ≤7.11e-3 of the accessible band, with "
                 + "positivity never binding. The band's top is 0.140737 s/day and the observed galactic field already uses 33 % of it; 1 s/day (Δlnρ = 3.472222e-5, a 1020 km/s well) is REFUTED "
                 + "spontaneously. Every target still needs an external mode-matched driver, which the canonical chain does not supply (ResearchY-G_010)."),
+
+            new("rho-actuator",
+                "Rho Actuator — can any physical quantity change rho?",
+                "E = <lambda, rho>;  s = (I - W) rho*;  gains 1/(1 - mu_k)",
+                [
+                    new("energy density (fixed E)", "E = 12.000000000000 both ways; rho moves L1 = 0.6666667", "the field goes 0 -> 0.603175 at zero energy cost"),
+                    new("energy is not injective", "fixed-E fibre contains 51 dims (94 in total)", "re-ordering the multiset moves E by 1.5401766 (12.8 %)"),
+                    new("spectral organization", "DCT-II ||CC^T - I|| = 1.37e-14, round trip 4.2e-16", "95 free coordinates; DC = Sigma rho = 1 is fixed"),
+                    new("phase coherence", "L1(rho, |psi|^2) <= 2.5e-16, |da| < 1e-9", "while |Sigma psi| runs 0.0324196 -> 9.1171822 (281.22x)"),
+                    new("synchronization", "Kuramoto r 8.08e-17 -> 1.0", "the canonical grid is maximally incoherent; rho untouched"),
+                    new("attractor compression", "L1 = 2.8669638, da = 0.032121", "a rho -> rho map; its smooth difference survives 200 steps 1.1207x"),
+                    new("information density", "Delta KL = 0 exactly under permutation", "while rho moves L1 = 0.6583333 and |da| grows to 1.0031746"),
+                    new("rho is fully actuable", $"gains {1.0 / (1.0 - Mu(1)):F6} (k=1) ... {1.0 / (1.0 - Mu(95)):F6} (k=95)", "s = (I - W) rho* is unique, count-neutral, and holds any target"),
+                ],
+                "Five of the seven candidates are FUNCTIONS of rho (energy, spectral organization, degeneracy engineering, compression, information) and two are INDEPENDENT of rho but exactly "
+                + "rho-INERT (phase coherence, synchronization: L1 = 0 to 1e-15 while the psi-sector moves by a factor 281). So no candidate is an actuator — yet rho is completely controllable: the "
+                + "hold-drive s = (I - W) rho* is count-neutral, unique per target and finite in every direction, so the vacancy is a SOURCE (the missing driver of G_008/G_010), not a handle "
+                + "(ResearchY-G_011)."),
+
+            new("labor-rho",
+                "Labor Rho — can a bench system hold a controlled rho profile?",
+                "0 <= d <= 1/2 (CFL);  drive/step = (1 - mu_k) Delta ln rho;  M/r = f c^2/G",
+                [
+                    new("oscillator lattice / D96 controls", $"chain lambda_max = 3.998929, d_max = {2.0 / 3.998929:F6}", "d = 0.2 sits at 0.3999 of the bound; rate spread 3734.44"),
+                    new("resonator network (ring)", "lambda_max = 4.0, d_max = 0.5", "d = 0.2 at 0.4000; rate spread 934.11"),
+                    new("graph diffusion (D96 circulant)", "lambda_max = 15.837372, d_max = 0.126284", "d = 0.2 is 1.5837x OVER the bound"),
+                    new("hub / star (control)", "lambda_max = 96, d_max = 0.020833", "d = 0.2 is 9.6000x over"),
+                    new("drive for 1 ns/day", $"{(1.0 - Mu(1)) * 3e-9 / 86400.0:E3} per step (k=1)", "the G_002 witness class costs 0.48675 per step (49 % of the count)"),
+                    new("steady state", "Sigma rho = 1, excursion <= 1.74e-5 of rhoBar", "positivity never binds; reproduced to < 1e-12 after 20 000 steps"),
+                    new("clock floor (1e-18)", $"M/r = {MassOverRadius(1e-18):E3} kg/m", "1.35 million tonnes per metre"),
+                    new("band top (0.1407 s/day)", $"M/r = {MassOverRadius(4.8867e-6 / 3.0):E3} kg/m", "2340 Earths per metre"),
+                    new("1 kg at 1 m", $"{6.6743e-11 * 1.0 / (2.99792458e8 * 2.99792458e8):E3}", "1.35e9x below the clock floor; exactly Newtonian anyway"),
+                ],
+                "The rho dynamics is PRACTICAL (a 96-site chain with d = 0.2 IS RhoDynamics.DiffuseStep, and the derived 0 <= d <= 1/2 IS the CFL stability bound), every real clock or gravity readout "
+                + "is ASTROPHYSICAL (the 1e-18 floor needs M/r = 1.35e6 t/m), and a bench-side metric effect from a rho rearrangement is REFUTED (a kilogram moved a metre gives 3.7e-28, 2.7e9x below the "
+                + "clock floor, and AT's prediction is exactly Newton's — ResearchY-G_011b)."),
         ];
     }
+
+    // ── G_011b: the gravity ladder M/r = f c^2 / G ───────────────────────────────
+
+    private static double MassOverRadius(double f) => f * 2.99792458e8 * 2.99792458e8 / 6.67430e-11;
 
     // ── G_010: the feasibility arithmetic ───────────────────────────────────────
 

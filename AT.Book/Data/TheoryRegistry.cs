@@ -258,6 +258,40 @@ public sealed class TheoryRegistry
             CalculationId: "time-control",
             References: ["ResearchY-G_010", "ResearchY-G_005", "ResearchY-G_008"],
             AuditIds: ["g010"]),
+        new("rho-actuator", "Rho Actuator", "No physical quantity acts on ρ: five candidates are functions of ρ, two are independent but ρ-inert, and ρ is fully actuable only by an imported source.",
+            TheoryLayer.Physics, TheoryClassification.Partial, TheoryObjectKind.Derivation,
+            ["gravity-source", "density-control"],
+            Narrative: "The actuator criterion: q is an actuator iff it is independent of ρ, determines ρ locally, conserves the count, costs no energy and adds no primitive. ENERGY DENSITY is correlated — "
+                + "E = ⟨λ,ρ⟩ is identical to 1e-12 between the canonical measure and the tilt (every eigenspace total equal to 12 digits) while ρ moves by L1 = 0.6666667 and the field is created out of an exact "
+                + "zero (0 → 0.603175); E is non-injective (the fixed-E fibre contains the whole 51-dimensional degeneracy space) and re-ordering the same multiset moves E by 1.5401766 (12.8 %). SPECTRAL "
+                + "ORGANIZATION is correlated — the orthonormal DCT-II is a bijection (‖CCᵀ − I‖ = 1.37e-14, round trip 4.2e-16) with the DC coefficient equal to the count, leaving 95 free coordinates; the "
+                + "witness is high-k (dominant mode k = 94, k ≥ 48 share 0.7965733) and μ_k carries no ρ-dependence (μ₄₈ = 0.6 exactly). DEGENERACY ENGINEERING is correlated — the 51 within-eigenspace "
+                + "directions conserve count, energy, spectrum and A₀ = 45 while creating the field. PHASE COHERENCE and SYNCHRONIZATION are refuted — the only candidates independent of ρ, and exactly "
+                + "ρ-inert: L1(ρ,|ψ|²) ≤ 2.5e-16 and |Δa| < 1e-9 for the canonical grid, a global shift, the mirror and the locked configuration, while |Σψ| runs 0.0324196281 → 9.1171821879 (a factor 281.22) "
+                + "and Kuramoto r goes 8.0788382e-17 → 1.0. COMPRESSION is refuted as a quantity (a ρ → ρ map whose smooth difference survives 200 steps 1.1207× against the witness's 33.78×) and INFORMATION "
+                + "DENSITY is refuted (exactly permutation- and reversal-invariant, ΔKL = 0, while ρ moves by L1 = 0.6583333 and the field grows to 1.0031746). THE POSITIVE RESULT: ρ is fully actuable — for "
+                + "any target s = (I − W)ρ* is count-neutral (Σs = 2.1e-17) and unique, with all gains finite (4669.296831218 at k = 1, 2.500000000 at k = 48, 1.250334722 at k = 95), the inverse reconstructs "
+                + "to 1.9e-15 and the driven recursion converges to < 1e-12 — so the vacancy is a SOURCE, not a knob. G_002's CONTROLLABLE verdicts concern the operations on ρ and stand unchanged.",
+            Formula: "s = (I − W)·rho*;  gains 1/(1 − mu_k) in [1.250334722, 4669.296831218];  E = <lambda, rho>",
+            CalculationId: "rho-actuator",
+            References: ["ResearchY-G_011", "ResearchY-G_001", "ResearchY-G_002"],
+            AuditIds: ["g011"]),
+        new("labor-rho", "Labor Rho", "A bench chain with d = 0.2 IS DiffuseStep and the derived d ≤ ½ IS the CFL bound — but no bench device can turn a density pattern into a clock.",
+            TheoryLayer.Physics, TheoryClassification.Partial, TheoryObjectKind.Derivation,
+            ["rho-actuator", "suppression-origin"],
+            Narrative: "Five laboratory operator families: oscillator lattice / coupled modes / D96 controls are the Neumann chain (λ_max = 3.998929, admissible d ≤ 0.500134, rate spread 3734.44), the resonator "
+                + "network is a nearest-neighbour ring (λ_max = 4.0, d ≤ 0.5, spread 934.11), graph diffusion on the D96 circulant would need d ≤ 0.126284 and a hub graph d ≤ 0.020833 — so the canonical "
+                + "d = 0.2 is admissible for degree-2 lattices only (0.3999 of the chain bound, 1.5837× over the circulant's, 9.6000× over the hub's). The derived range IS the CFL bound: ρ ≥ 0 ⇔ |1 − dλ| ≤ 1 "
+                + "⇔ d ≤ ½, with cos(πk(i+½)/N) an exact eigenvector of DiffuseStep (2.7e-14) and cos(2πkj/N) of the ring step (≤4.9e-15). The drive is trivial (7.436285e-18 of the held amplitude per step "
+                + "for 1 ns/day at k = 1; 0.48675 for the G_002 witness) and the steady state is exact (Σρ = 1 to 1e-12, excursion ≤ 1.74e-5 of ρ̄, reproduced to < 1e-12 after 20 000 steps; 1 mJ in 1 µs needs "
+                + "7.4363e-15 W). THE GRAVITY LADDER: M/r = f·c²/G — the Earth self-check reproduces 6.9613e-10 with M/r = M⊕/R⊕ = 9.3740e17 kg/m; 1 kg at 1 m gives 7.4262e-28 (1.35e9× below the 1e-18 "
+                + "clock floor); 1 kg moved 1 m at fixed total energy gives 3.7131e-28 (2.69e9× below); the clock floor needs 1.3466e9 kg/m (1.35 Mt/m), 1 ns/day 1.5586e13, 1 ms/day 1.5586e19 and the G_005 "
+                + "band top 2.1935e21 kg/m (2340 Earths/m). AT predicts exactly the Newtonian field for any real mass rearrangement (G_004's 0.99600), so a bench density pattern changes no clock: the analogue "
+                + "readout is a voltage ratio, not the actualization density of spacetime.",
+            Formula: "M/r = f·c^2/G;  0 <= d <= 1/2 (CFL);  drive/step = (1 − mu_k)·Delta ln rho",
+            CalculationId: "labor-rho",
+            References: ["ResearchY-G_011b", "ResearchY-G_007", "ResearchY-G_009"],
+            AuditIds: ["g011b"]),
 
         // ── Layer 5 — Correspondence ───────────────────────────────────────────
         new("thermodynamics", "Thermodynamics", "An added occupancy layer over the structural modes (temperature is BOUNDARY).",
@@ -795,5 +829,48 @@ public sealed class TheoryRegistry
             + "No reclassification (D_040 untouched); no canonical claim, value or equation changes; no new primitive.",
             AuditStatus.Passed, new DateTime(2026, 9, 12), TheoryLayer.Physics, TheoryClassification.Partial,
             ["g005", "g008", "g009"]),
+        new("g011", "Rho Actuator Audit", "Can any physical quantity change rho?",
+            "THE ACTUATOR CRITERION: q is an actuator iff it is INDEPENDENT of rho, determines rho locally, conserves the count, costs no energy and adds no primitive. NO CANDIDATE IS AN ACTUATOR. "
+            + "ENERGY DENSITY (CORRELATED): E = <lambda, rho> is identical to 1e-12 (E = 12.000000000000) between the canonical measure and the tilt with every eigenspace total equal to 12 digits, while rho "
+            + "moves by L1 = 0.6666667 and the field is created out of an exact zero (0 → 0.603175); E is non-injective (the fixed-E fibre contains the whole 51-dimensional degeneracy space, 94 dimensions in "
+            + "total) and re-ordering the SAME multiset moves E by 1.5401766 (12.8 %); density-space reading: a 4.8:1 occupancy contrast, Delta ln rho = ln 4.8 = 1.5686159 ⇒ Delta Phi/c^2 = 0.5228720 = "
+            + "45 176.1 s/day. SPECTRAL ORGANIZATION (CORRELATED): the orthonormal DCT-II is a bijection (||CC^T - I|| = 1.37e-14, round trip 4.2e-16) whose DC coefficient IS the count (Sigma rho = 1), "
+            + "leaving 95 free coordinates; the witness is high-k (dominant mode k = 94, k >= 48 share 0.7965733) and the operator's mu_k carries no rho-dependence at all (mu_48 = 0.6 exactly, "
+            + "1 - mu_1 = 2.141650094e-4, 1 - mu_95 = 0.799785835). DEGENERACY ENGINEERING (CORRELATED): the within-eigenspace redistribution conserves count, every eigenspace total, the energy and "
+            + "A0 = 45 while creating the field 0 → 0.603175 with ||s||_1 = 0.48675 and a 33.7781x contraction. PHASE COHERENCE AND SYNCHRONIZATION (REFUTED): the ONLY candidates independent of rho, and "
+            + "exactly rho-inert — L1(rho, |psi|^2) <= 2.5e-16 and |Delta a| < 1e-9 for the canonical grid theta_j = 2 pi j/N, a global shift, the mirror and the locked configuration, while |Sigma psi| runs "
+            + "0.0324196281 → 9.1171821879 (a factor 281.22) and the canonical grid is the maximally INCOHERENT state (the 96th roots of unity sum to zero: Kuramoto r = 8.0788382e-17 → 1.0 on locking); the "
+            + "two-mode interference term still runs 4 → 2 → 0. ATTRACTOR COMPRESSION (REFUTED as an actuator): a rho → rho map — L1 = 2.8669638 and Delta a = 0.032121 on the G_002/G_003 base profile, with a "
+            + "SMOOTH difference that survives 200 steps essentially unchanged (base std contracting only 1.1207x against the witness's 33.78x). INFORMATION DENSITY (REFUTED): I_occ = KL(rho || uniform) is "
+            + "EXACTLY permutation- and reversal-invariant (Delta KL = 0 to 1e-15) while rho moves by L1 = 0.6583333 and the field can GROW to |Delta a| = 1.0031746; KL(uniform) = 0, KL(tilt) = 0.2725652026 "
+            + "= ln 96 - H, decreasing monotonically under the flow (0.27257 → 1.0873e-3 at 50 → 2.6946e-4 at 200). THE POSITIVE RESULT — rho IS FULLY ACTUABLE: for any target, s = (I - W) rho* is "
+            + "count-neutral (Sigma s = 2.1e-17) and UNIQUE, since (I - W) is diagonal in the DCT basis with all gains finite (4669.296831218 at k = 1, 2.500000000 at k = 48, 1.250334722 at k = 95 — no "
+            + "unreachable direction, no zero-gain mode); the inverse reconstructs the target to 1.9e-15 and the driven recursion converges to < 1e-12; the uniform state is the unique undriven fixed point. "
+            + "Price of the witness: ||s||_1 = 0.48675 per step (49 % of the count), max|s| = 0.01866667. VERDICTS: ACTUATOR = none of the seven; the only handle is the IMPORTED source s (the missing driver of "
+            + "G_008/G_010) · CORRELATED = energy density, spectral organization, degeneracy engineering · REFUTED = phase coherence, synchronization, attractor compression, information density. G_002's "
+            + "CONTROLLABLE verdicts concern the OPERATIONS on rho and stand unchanged (the G_011 labels concern the QUANTITY). No reclassification (D_040 untouched); no canonical claim, value or equation "
+            + "changes; no new primitive.",
+            AuditStatus.Passed, new DateTime(2026, 9, 12), TheoryLayer.Physics, TheoryClassification.Partial,
+            ["g001", "g002", "g008", "g010"]),
+        new("g011b", "Labor Rho Audit", "Can any laboratory system implement a controlled rho profile?",
+            "FIVE LABORATORY OPERATOR FAMILIES: oscillator lattice / coupled modes / D96 controls = the Neumann chain (lambda_max = 3.998929, admissible d <= 0.500134, 0.2/d_max = 0.3999, rate spread "
+            + "3734.44); resonator network = a nearest-neighbour ring (lambda_max = 4.0, d <= 0.5, 0.4000, spread 934.11); graph diffusion on the D96 circulant C96(+-1..+-6) (lambda_max = 15.837372, "
+            + "d <= 0.126284, 1.5837x OVER the bound at d = 0.2); hub/star control (lambda_max = 96, d <= 0.020833, 9.6000x over). The canonical d = 0.2 is admissible for degree-2 lattices only: the "
+            + "occupancy index is an ORDERED CHAIN, not the D96 mutation ring. Eigenvectors: cos(pi k(i+1/2)/N) is exact for RhoDynamics.DiffuseStep (residual 2.7e-14 over k = 1..95) and cos(2 pi k j/N) for "
+            + "the periodic ring step (<= 4.9e-15). THE DERIVED RANGE IS THE CFL BOUND: rho >= 0 ⇔ |1 - d lambda| <= 1 ⇔ d <= 1/2 are the SAME inequality; at d = 0.2 all 96 eigenvalues lie in "
+            + "[0.200214, 1] and d = 0.6 leaves [-1, 1]. REQUIRED DRIVE (k = 1 / k = 95 per step): 1 ns/day 7.436285e-18 / 2.777034e-14; 1 us/day 7.436285e-15 / 2.777034e-11; 1 ms/day 7.436285e-12 / "
+            + "2.777034e-8; 1 s/day 7.436285e-9 / 2.777034e-5; the G_002 witness class 0.48675 (49 % of the count, max|s| = 0.01866667). Kinematic room = the one-cell counting ceiling ln 96 = 4.564348 ⇒ "
+            + "a 1.521449 fractional shift = 131 453 s/day at a k = 1 drive of 9.775237e-4/step. STEADY STATE: the pure Neumann mode rho = rhoBar(1 + (Delta ln rho/2) v_k) with Sigma rho = 1 (1e-12), "
+            + "min rho > 0 and a log contrast of 2 atanh((Delta ln rho/2)|v_1|max) = Delta ln rho · 0.9998661; the excursion/rhoBar is at most 1.74e-5 so positivity never binds; the driven recursion "
+            + "rho <- W rho + s reproduces the target to < 1e-12 after 20 000 steps at exactly (1 - mu_1) of the mode amplitude per step with Sigma s = 0. POWER: 1 mJ held in a 1 us step needs 7.4363e-15 W for "
+            + "a 1 ns/day excursion. GRAVITY LADDER (measured G, M/r = f c^2/G): the Earth self-check reproduces GM_Earth/(R_Earth c^2) = 6.9613e-10 with M/r = M_Earth/R_Earth = 9.3740e17 kg/m; 1 kg at 1 m = "
+            + "7.4262e-28 (1.35e9x BELOW the 1e-18 clock floor); 1 kg moved 1 m from a 1 m separation at fixed total energy = 3.7131e-28 (2.69e9x below); 1000 kg at 1 m = 7.4262e-25; the clock floor needs "
+            + "M/r = 1.3466e9 kg/m (1.35 million tonnes per metre); 1 ns/day 1.5586e13; 1 ms/day 1.5586e19; the G_005 band top 2.1935e21 kg/m (2340 Earths per metre). NO METRIC COUPLING: AT's prediction "
+            + "for any real mass-energy arrangement IS Newtonian (GM_Earth/R_Earth^2 = 9.820250 with the derived G at 0.99600, AT = GR to double precision), so a bench rho rearrangement produces no new effect "
+            + "at any magnitude; the analogue readout (Delta ln rho/3 = 1.157407e-14 for 1 ns/day) is a voltage ratio, not the actualization density of spacetime. VERDICTS: PRACTICAL (the rho dynamics, the "
+            + "drive, the steady state, the analogue readout) · ASTROPHYSICAL (every real clock/gravity readout, 1.35e6 t/m through 2.19e21 kg/m) · REFUTED (a bench-side metric effect from a rho "
+            + "rearrangement). No reclassification (D_040 untouched); no canonical claim, value or equation changes; no new primitive.",
+            AuditStatus.Passed, new DateTime(2026, 9, 12), TheoryLayer.Physics, TheoryClassification.Partial,
+            ["g004", "g005", "g007", "g009"]),
     ];
 }

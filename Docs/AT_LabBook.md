@@ -2076,11 +2076,11 @@ in the historical program counts below.
 | AT-QG | 182 | Complete |
 | **Total** | **289** | |
 
-## ResearchY G-Program — Gravity Source, Control, Magnitude, Calibration, Realizability, Mechanism, Origin, Controlled Suppression, Clock Rate, Time Control (10 audits, 2026-09-12)
+## ResearchY G-Program — Gravity Source, Control, Magnitude, Calibration, Realizability, Mechanism, Origin, Controlled Suppression, Clock Rate, Time Control, Rho Actuator, Labor Rho (12 audits, 2026-09-12)
 
-New ResearchY group **G — Gravity Source**. Suite: `AT.Tests/ResearchY/G_GravitySource/` (82/82 pass,
-~1 s); shared machinery `AT.Tests/Shared/DensityField.cs`, `AT.Tests/Shared/PhysicalUnits.cs`.
-Detailed docs: `Docs/ResearchY/G_GravitySource/ResearchY-G_00{1..10}.md`.
+New ResearchY group **G — Gravity Source**. Suite: `AT.Tests/ResearchY/G_GravitySource/` (98/98 pass,
+~1 s); shared machinery `AT.Tests/Shared/DensityField.cs`, `PhysicalUnits.cs`, `RhoActuators.cs`.
+Detailed docs: `Docs/ResearchY/G_GravitySource/ResearchY-G_001.md` … `ResearchY-G_011b.md`.
 
 ### G_001 — Gravity Source Audit
 **Status:** Complete. **SOURCE = the actualization density ρ** (counting measure), and for the attractive
@@ -2304,9 +2304,64 @@ Random), four candidates.
   driver** the canonical chain does not supply (branching is arrangement-neutral, the attractor basin is
   1.0, and an undriven local state lives 0.622 steps). **Time control is refuted as physics.**
 
-**App/Book surfaced:** AT.App Research News + Theory Book ("Gravity Source" part, ten chapters) +
-TestGroups; AT.Book `GravityService` (10 executable calculations), ten theory objects (Physics layer) and
-ten audits g001–g010.
+### G_011 — Rho Actuator Audit
+**Status:** Complete. **No candidate is an actuator.** Criterion: `q` is an actuator iff it is *independent of
+ρ*, determines ρ locally, conserves the count, costs no energy and adds no primitive.
+
+| candidate | Δρ (L1) | Δa_AT | ΔΦ/c² | Δτ [s/day] | function of ρ? | **label** |
+|---|---|---|---|---|---|---|
+| energy density (fixed E) | 0.6666667 | 0.603175 | 0.201058 | 17 371.4 | yes (`E = ⟨λ,ρ⟩`) | **CORRELATED** |
+| spectral organization | 0.6666667 | 0.603175 | 0.201058 | 17 371.4 | yes (DCT bijection) | **CORRELATED** |
+| degeneracy engineering | 0.6666667 | 0.603175 | 0.201058 | 17 371.4 | yes (free part of ρ) | **CORRELATED** |
+| attractor compression | 2.8669638 | 0.032121 | 0.010707 | 925.1 | yes (a map) | **REFUTED** |
+| information density | 0.6583333 | 1.0031746 | — | — | yes (global) | **REFUTED** |
+| phase coherence / synchronization | **0** (2.5e-16) | **0** | **0** | **0** | **no** | **REFUTED** |
+| *imported source* `s = (I − W)ρ*` | drives any ρ* | — | — | — | external | **ACTUATOR** |
+
+- **Energy is an exact re-expression:** `E = 12.000000000000` both ways (Δ to 1e-12, every eigenspace total
+  equal to 12 digits) while ρ moves by `L1 = 0.6666667` and the field is created out of an **exact zero**
+  (`0 → 0.603175`). Non-injective (the fixed-E fibre contains the whole **51**-dimensional degeneracy space,
+  94 in total); re-ordering the same multiset moves `E` by **1.5401766 (12.8 %)**. Density-space reading:
+  4.8 : 1 contrast, `Δlnρ = ln 4.8 = 1.5686159` ⇒ **45 176.1 s/day**.
+- **Spectral organization is a coordinate system:** `‖CCᵀ − I‖ = 1.37e-14`, round trip **4.2e-16**, DC =
+  `Σρ = 1` fixed ⇒ 95 free coordinates; witness dominant mode `k = 94`, `k ≥ 48` share **0.7965733**; `μ_k`
+  has no ρ-dependence (`μ₄₈ = 0.6` exactly).
+- **Phase and synchronization are the only independent candidates — and exactly ρ-inert:** `L1 ≤ 2.5e-16`
+  and `|Δa| < 1e-9` for canonical/global-shift/mirror/locked, while `|Σψ|` runs `0.0324196 → 9.1171822`
+  (**281.22×**) and Kuramoto `r: 8.08e-17 → 1.0`; interference still 4 → 2 → 0.
+- **Information is exactly permutation-invariant** (`ΔKL = 0`) while ρ moves by 0.6583333 and the field
+  **grows** to 1.0031746; `KL(tilt) = 0.2725652026 = ln 96 − H`, decreasing to 2.6946e-4 at 200 steps.
+- **Compression is a map with a smooth difference** (survives 200 steps 1.1207× against the witness 33.78×).
+- **ρ is fully actuable:** `s = (I − W)ρ*` is count-neutral (`Σs = 2.1e-17`) and unique — gains
+  **4669.296831218 / 2.500000000 / 1.250334722** (k = 1/48/95), inverse reconstruction **1.9e-15**, driven
+  recursion **< 1e-12**, uniform state the unique undriven fixed point. **The vacancy is a source, not a knob.**
+
+### G_011b — Labor Rho Audit
+**Status:** Complete. Five laboratory operator families mapped onto the canonical relaxation.
+
+| system | λ_max | admissible `d` | `0.2/d_max` | rate spread | verdict |
+|---|---|---|---|---|---|
+| oscillator lattice / coupled modes / D96 controls | 3.998929 | **0.500134** | **0.3999** | 3734.44 | PRACTICAL |
+| resonator network (nearest-neighbour ring) | 4.000000 | 0.500000 | 0.4000 | 934.11 | PRACTICAL |
+| graph diffusion (D96 circulant) | 15.837372 | 0.126284 | **1.5837** | 41.00 | unstable at d = 0.2 |
+| hub / star (control) | 96.000000 | 0.020833 | **9.6000** | 96.00 | unstable at d = 0.2 |
+
+- **The derived range IS the CFL bound:** `ρ ≥ 0 ⇔ |1 − dλ| ≤ 1 ⇔ d ≤ ½`. Eigenvectors exact
+  (`2.7e-14` chain, `≤4.9e-15` ring). The occupancy index is an **ordered chain**, not the D96 mutation ring.
+- **Drive:** 1 ns/day `7.436285e-18`/step (k = 1), 1 ms/day `7.436285e-12`, witness class **0.48675**
+  (49 % of the count); steady state exact (`Σρ = 1`, excursion ≤ 1.74e-5 of ρ̄, held to < 1e-12 after
+  20 000 steps); **1 mJ in 1 µs needs 7.4363e-15 W**; kinematic room `ln 96 = 4.564348` = 131 453 s/day.
+- **Gravity ladder** (`M/r = f·c²/G`, measured G): Earth self-check `6.9613e-10` = `M⊕/R⊕ = 9.3740e17`;
+  1 kg at 1 m `7.4262e-28` (**1.35e9× below** the 1e-18 floor); 1 kg moved 1 m at fixed total energy
+  `3.7131e-28` (**2.69e9× below**); floor `1.3466e9` kg/m; 1 ns/day `1.5586e13`; 1 ms/day `1.5586e19`;
+  band top `2.1935e21` kg/m (**2340 Earths/m**).
+- **No metric coupling:** AT predicts exactly Newton for any real mass arrangement (G_004's 0.99600), so a
+  bench pattern's amplitude is a voltage ratio, not a clock. **PRACTICAL** (dynamics) · **ASTROPHYSICAL**
+  (readouts) · **REFUTED** (bench metric effect).
+
+**App/Book surfaced:** AT.App Research News + Theory Book ("Gravity Source" part, twelve chapters) +
+TestGroups; AT.Book `GravityService` (12 executable calculations), twelve theory objects (Physics layer) and
+twelve audits g001–g011b.
 
 ## Key Unsolved Problems
 
