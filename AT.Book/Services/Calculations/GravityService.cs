@@ -447,6 +447,27 @@ public sealed class GravityService : ICalculationService
                 "rho's identity survives as the OCCUPANCY MEASURE: a dimensionless counting measure whose content is entirely in the arrangement. The count is a label (exact scale invariance), accessibility is the lattice, the degeneracy occupancy is the DERIVED content under a BOUNDARY dimension (51/95 = 53.6842 % pure arrangement), "
                 + "and the survivor distribution is a lossy readout. The audit imports NO constant -- the most AT-native of the group and correspondingly unfalsifiable by itself -- which yields the provenance asymmetry: the theory's identity content is combinatorial and becomes physics only via a boundary identification. DERIVED / BOUNDARY / REFUTED (ResearchY-G_018)."),
 
+            new("light-propagation",
+                 "Light Propagation \u2014 does the theory bend light? (corrects G_019)",
+                 "g_uv = \u03c1^(2/d)\u03b7_uv is conformally flat;  g_rr = +(1 + 2\u03c3) = 1 \u2212 2\u03b3\u03a6 with \u03a6 = \u03c3  \u21d2  \u03b3 = \u22121 EXACTLY;  \u03b3 = +1 \u21d4 \u03c8 = \u22124\u03c3 (d = 3)",
+                 [
+                     new("the metric is closed, not missing", "g_uv = \u03c1^(2/d)\u03b7_uv, so g00 = \u2212\u03c1^(2/d) AND g_rr = +\u03c1^(2/d)", "MetricOriginClosure.md: class \u00d7 factor = full g_uv, CLOSED; conformal class IMPORTED (Malament 1977, proven), factor NATIVE (the counting measure)"),
+                     new("the source-law identification", "a = \u2212(1/d)\u2207ln \u03c1 = \u2212\u2207\u03c3 with \u03c3 = (1/d) ln \u03c1", "fixes \u03a6 = \u03c3 - the same identification that gives G_004's 0.99600"),
+                     new("gamma = \u22121 EXACTLY", "g_rr = +(1 + 2\u03c3) = 1 \u2212 2\u03b3\u03a6 \u21d2 \u03b3 = \u22121", "exact, not first order: \u03a6 = (e^(2\u03c3) \u2212 1)/2 gives \u03b3 = \u2212(e^(2\u03c3) \u2212 1)/(e^(2\u03c3) \u2212 1) = \u22121 for every \u03c3 \u2260 0"),
+                     new("no optics at all", "every lensing observable \u221d (1 + \u03b3)/2 (QG26) = 0", "deflection = \u03ba = shear = \u03bc\u22121 = Shapiro delay = 0, while the REDSHIFT survives (g00 alone): redshift WITHOUT lensing"),
+                     new("REFUTED - the exclusion", "Cassini (2003) \u03b3 = 1.0000210 +- 2.3e\u22125", "8.6957e4 sigma; VLBA (2009) 6.6660e3 sigma; Gaia (2022) 1.2481e2 sigma; plus thousands of observed lensing systems"),
+                     new("the escape - and its price", "g00 = \u2212\u03c1^(2/d)e^(2\u03c8), g_ii = \u03c1^(2/d)e^(\u22122\u03c8/(d\u22121)) gives \u03b3 = +1 (QG207/QG212)", "\u03b3(\u03c8) = \u2212[\u03c3 \u2212 \u03c8/(d\u22121)]/(\u03c3 + \u03c8); \u03b3 = +1 \u21d4 \u03c8 = \u22124\u03c3 in d = 3 (\u22123\u03c3 in d = 4; NO solution in d = 2, G_uv = 0)"),
+                     new("the requirement is NOT free", "\u03a6 = \u03c3 + \u03c8 = \u22123\u03c3, not \u03c3", "contradicts a = \u2212(1/d)\u2207ln \u03c1, so restoring \u03b3 = +1 CHANGES THE SOURCING RELATION; \u03c8 is a MINIMAL NEW PRIMITIVE (QG24; QG43: a 1-d.o.f. scalar suffices)"),
+                     new("the clock carries psi at first order", "with \u03c8 \u2260 0, d\u03c4/dt = \u03c1^(1/d)e^(\u03c8) and e^\u03c8 = 1 + \u03c8 + \u2026", "at \u03c8 = 1e\u22123 the contamination is 1000.5\u00d7 G_019's x\u00b2 term, so any nonzero \u03c8 SWAMPS the second-order signature"),
+                     new("why nothing earlier is damaged", "every audit G_001\u2013G_020 used g00 ONLY", "the source law, the clock law, 0.99600, 0.99668, the x\u00b2 signature and z_NICER all STAND; the chain is SILENT on optics, not wrong"),
+                 ],
+                 "CORRECTION: G_019 \u00a75 said AT supplies no spatial metric, so no light bending, Shapiro delay or shadow size follows - the most distinctive consequence being the least derivable one. BOTH PARTS ARE FALSE. "
+                 + "AT DOES supply the full metric and the chain is CLOSED: g_uv = rho^(2/d) eta_uv is CONFORMALLY FLAT, so g00 = -rho^(2/d) AND g_rr = +rho^(2/d); the conformal class is IMPORTED (Malament 1977) and the factor rho^(2/d) NATIVE (the counting measure). "
+                 + "THE OPTICS: with sigma = (1/d) ln rho, the source law fixes Phi = sigma, so g_rr = +(1 + 2 sigma) = 1 - 2 gamma Phi gives gamma = -1 EXACTLY; every lensing observable is proportional to (1 + gamma)/2, so deflection, kappa, shear and the Shapiro delay all vanish while the REDSHIFT survives - AT predicts redshift WITHOUT lensing. "
+                 + "That is a DERIVED FALSIFICATION, not a missing derivation: Cassini separates at 8.6957e4 sigma, VLBA at 6.6660e3 sigma, Gaia at 1.2481e2 sigma. "
+                 + "THE ESCAPE AND ITS PRICE: the psi-completed metric gives gamma = +1, and this audit DERIVES that it requires psi = -2 sigma (d-1)/(d-2) = -4 sigma in d = 3 (no d = 2 solution); along that direction the exact gamma is e^(6 sigma). But Phi = sigma + psi = -3 sigma then contradicts the native source law, so the psi sector necessarily CHANGES THE SOURCING RELATION - it is a new primitive, not a free patch. "
+                 + "Every G_001-G_020 result is g00-only and stands. DERIVED / BOUNDARY / REFUTED (ResearchY-G_021)."),
+
             new("second-order-signature",
                  "Second-Order Signature — is there a test that can decide it?",
                  "AT: e^x vs GR: sqrt(1+2x);  ratio = 1 + x^2 - (4/3)x^3;  z gap 17-31 %;  1.033 sigma now",
@@ -461,10 +482,10 @@ public sealed class GravityService : ICalculationService
                      new("AT SURVIVES", "M = 1.4 +- 0.05 Msun, R = 12 +- 1 km: z_AT = 0.188055 +- 0.024372 vs z_GR = 0.235259 +- 0.038665", "separation 0.047205 against sigma 0.045706 = 1.033 sigma; 3 sigma needs sigma_z <= 8.37 % of z_AT, and current NS redshifts are 20-50 %, short by 2.4x-6.0x"),
                      new("why it survives", "the signal is QUADRATIC, not small", "so only the compact-object test is live, and the deciding measurement is now specified exactly"),
                      new("the horizon corollary", "AT's g00 = -e^(2x) NEVER VANISHES: at y = 1/2 AT gives z = 0.6487213 where GR's DIVERGES", "for y > 1/2 GR has no real surface while AT gives 0.8221188 / 1.718282 / 147.4132"),
-                     new("but it is g00-ONLY", "AT supplies no spatial metric, so no light bending, Shapiro delay or shadow size follows", "the most distinctive consequence is the least derivable one"),
+                     new("but it is g00-ONLY", "every number here uses g00 only - the audit is silent on optics", "CORRECTED by G_021: AT DOES have the spatial metric (g = rho^(2/d) eta, g_rr = +rho^(2/d)); its derived optics are gamma = -1, so all lensing and the Shapiro delay vanish and Cassini excludes that at 8.6957e4 sigma"),
                  ],
                  "OP1 answer: YES - an audit that imports measured constants and SURVIVES. The signature AT/GR = 1 + x^2 - (4/3)x^3 makes the weak-field route useless (2.1x to 3.3e6x short at four imported depths) and makes the neutron-star redshift the only live test, where "
-                 + "the divergence is 17-31 % but the current significance is only 1.033 sigma; 3 sigma needs sigma_z = 8.37 % of z_AT, i.e. 2.4x-6.0x beyond current measurements. The largest discrepancy (no horizon, where GR's z diverges) is g00-only and therefore untestable within AT. "
+                 + "the divergence is 17-31 % but the current significance is only 1.033 sigma; 3 sigma needs sigma_z = 8.37 % of z_AT, i.e. 2.4x-6.0x beyond current measurements. The largest discrepancy (no horizon, where GR's z diverges) is g00-only. CORRECTION (G_021): AT DOES supply the spatial metric g = rho^(2/d) eta, and its derived optics are gamma = -1 EXACTLY - all lensing observables and the Shapiro delay vanish while the redshift survives - which Cassini EXCLUDES at 8.6957e4 sigma; gamma = +1 requires the psi sector with psi = -4 sigma, which also moves Phi to -3 sigma and so changes the source law. Every number in G_019 is g00-only and stands. "
                  + "DERIVED / BOUNDARY / REFUTED (ResearchY-G_019)."),
 
             new("neutron-star-redshift",

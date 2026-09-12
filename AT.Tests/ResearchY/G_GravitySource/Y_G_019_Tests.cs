@@ -22,8 +22,21 @@ namespace AT.Tests.ResearchY.G_GravitySource;
 ///             or white-dwarf depth that is 2.1x to 3.3e6x below the available precision), and the HORIZON
 ///             COROLLARY (g00 = -e^(2x) NEVER VANISHES: AT's clock law has no clock-stopping surface).
 ///   BOUNDARY  the ABSOLUTE-DEPTH ANCHOR (x = GM/(R c^2)): imported M, R and a measured redshift; and the
-///             g00-ONLY boundary — AT supplies no spatial metric, so its largest discrepancy (the horizon,
-///             where GR's z DIVERGES) cannot be tested by light bending, shadow size or ringdown.
+///             g00-ONLY SCOPE of this audit's own numbers.
+///
+/// CORRECTION (added by ResearchY-G_021). This header originally read: "the g00-ONLY boundary — AT supplies no
+/// spatial metric, so its largest discrepancy (the horizon, where GR's z DIVERGES) cannot be tested by light
+/// bending, shadow size or ringdown." THE FIRST HALF IS FALSE. AT DOES supply the full g_uv: the metric is
+/// conformally flat, g = rho^(2/d) eta, so g00 = -rho^(2/d) AND g_rr = +rho^(2/d); the project classifies the
+/// chain as CLOSED (Docs/Audits/MetricOriginClosure.md: class x factor = full g_uv), the class being imported
+/// from Malament (1977) and the conformal factor being native. Light bending IS therefore derivable — and the
+/// derived answer is ZERO, because g_rr = +(1 + 2 sigma) with Phi = sigma gives PPN gamma = -1 exactly, so
+/// (1 + gamma)/2 = 0 and deflection, convergence, shear, magnification and the Shapiro delay all vanish while
+/// the redshift survives. That prediction is EXCLUDED by Cassini at 8.6957e4 sigma (see ResearchY-G_021).
+/// So the problem was not a missing derivation but a derived falsification; the audit's other verdicts stand
+/// because every number in it is g00-only. Reason this cannot be read as a deflection of the horizon corollary:
+/// restoring gamma = +1 requires the psi sector, whose psi = -4 sigma also moves Phi to -3 sigma and therefore
+/// changes the SOURCING relation — an open problem, not a patch.
 ///   REFUTED   the WEAK-FIELD ROUTE as a discriminator: Earth's surface signature is 4.845934e-19, i.e. 0.4846x
 ///             the 1e-18 clock floor; the ground-against-GPS differential is 4.567944e-19; the Sun is
 ///             4.505017e-12 against 1e-5 (2.2e6x short); Sirius B is 6.619702e-8 against a 2 % measured
@@ -271,7 +284,7 @@ public class Y_G_019_Tests : ResearchTestBase
         Assert.True(0.20 > need / zA);
     }
 
-    // ── 6. the horizon corollary and the g00-only boundary ──────────────────────
+    // ── 6. the horizon corollary and the g00-only scope ──────────────────────
 
     [Fact]
     public void Y_G_019_HorizonCorollary()
@@ -303,9 +316,11 @@ public class Y_G_019_Tests : ResearchTestBase
         }
         Assert.True(Math.Abs(RedshiftAt(-5.0) - 147.4132) < 0.001);
 
-        // BUT this — AT's largest discrepancy with GR — is g00-ONLY: AT supplies no spatial metric, so no
-        // light bending, no Shapiro delay and no shadow size can be derived from it. The single strongest
-        // difference is therefore outside AT's own derivational reach (the audit's BOUNDARY result).
+        // CORRECTION (ResearchY-G_021): this block originally claimed "AT supplies no spatial metric, so no
+        // light bending, no Shapiro delay and no shadow size can be derived from it … outside AT's own
+        // derivational reach." That is FALSE. AT supplies the spatial metric g_ij = rho^(2/d) d_ij, and the
+        // derived optics are gamma = -1 (no bending, no Shapiro), which Cassini excludes at 8.7e4 sigma. What
+        // is true is narrower: the numbers BELOW are g00-only, so this audit is silent on optics either way.
         Assert.True(1.0 + 2.0 * (-0.4999) > 0.0);                 // GR still finite just inside 1/2
         Assert.True(RedshiftGr(-0.4999) > 60.0);                  // GR z blows up
         Assert.True(RedshiftAt(-0.4999) < 0.66);                  // AT z stays O(1)
@@ -397,7 +412,7 @@ public class Y_G_019_Tests : ResearchTestBase
         sb.AppendLine("  => AT is NOT excluded by any compactness or redshift measurement, and the required precision");
         sb.AppendLine("     is now stated exactly. THIS IS THE OP1 RESULT: an imported-constant audit that survives.");
 
-        PrintHeader(sb, "6. THE HORIZON COROLLARY — and the g00-only BOUNDARY");
+        PrintHeader(sb, "6. THE HORIZON COROLLARY — and the g00-only SCOPE");
         sb.AppendLine("   y = GM/(Rc^2)   AT g00 = -e^-2y      z_AT          GR 1 - 2y      z_GR");
         foreach (double y in new[] { 0.10, 0.25, 0.40, 0.4999, 0.50 })
         {
@@ -407,9 +422,12 @@ public class Y_G_019_Tests : ResearchTestBase
         }
         sb.AppendLine("  AT's g00 NEVER VANISHES, so AT's clock law has no clock-stopping surface; GR's vanishes at");
         sb.AppendLine("  y = 1/2, where its redshift DIVERGES (and no real surface exists beyond it).");
-        sb.AppendLine("  BUT this — AT's LARGEST discrepancy with GR — is g00-ONLY: AT supplies no spatial metric, so no");
-        sb.AppendLine("  light bending, Shapiro delay or shadow size follows from it. The single strongest difference is");
-        sb.AppendLine("  therefore OUTSIDE AT's own derivational reach.");
+        sb.AppendLine("  NOTE (corrected by G_021): the numbers above are g00-ONLY, so this audit is silent on optics.");
+        sb.AppendLine("  It originally claimed that AT supplies no spatial metric and therefore that the horizon corollary");
+        sb.AppendLine("  was outside AT's reach. THAT WAS WRONG: AT's metric is conformally flat, g = rho^(2/d) eta, with");
+        sb.AppendLine("  g_rr = +rho^(2/d); gamma = -1 exactly, so all lensing observables and the Shapiro delay vanish");
+        sb.AppendLine("  (Cassini excludes this at 8.6957e4 sigma), and gamma = +1 requires the psi sector, whose");
+        sb.AppendLine("  psi = -4 sigma also shifts Phi to -3 sigma. See ResearchY-G_021.");
 
         PrintHeader(sb, "7. CONCLUSIONS");
         sb.AppendLine("  C1  DERIVED — the signature law AT/GR = 1 + x^2 - (4/3)x^3: first order identical, second order");
@@ -423,16 +441,18 @@ public class Y_G_019_Tests : ResearchTestBase
         sb.AppendLine("      object the current separation is 1.033 sigma, and 3 sigma needs sigma_z <= 0.015735 = 8.37 %");
         sb.AppendLine("      of z_AT — 2.4x to 6.0x beyond current determinations. So AT is NOT excluded, and the");
         sb.AppendLine("      measurement that would decide it is now specified.");
-        sb.AppendLine("  C5  THE HONEST BOUNDARY: AT's largest discrepancy with GR — no horizon, GR's z DIVERGING at");
-        sb.AppendLine("      y = 1/2 where AT's stays finite (0.6487213) — cannot be tested within AT, because the");
-        sb.AppendLine("      theory supplies g00 only. Its most distinctive consequence is its least derivable one.");
+        sb.AppendLine("  C5  SCOPE (corrected by G_021): every number in this audit is g00-only, so AT's largest");
+        sb.AppendLine("      discrepancy with GR here — no horizon, GR's z DIVERGING at y = 1/2 where AT's stays finite");
+        sb.AppendLine("      (0.6487213) — is not itself a lensing problem. But AT DOES supply the spatial metric");
+        sb.AppendLine("      g_ij = rho^(2/d) d_ij, and its derived optics (gamma = -1: zero bending, zero Shapiro) are");
+        sb.AppendLine("      excluded by Cassini at 8.6957e4 sigma. The missing piece is not the spatial metric but psi.");
         sb.AppendLine("  C6  OP1 ANSWER: yes — an audit that imports measured constants and survives. The reason it");
         sb.AppendLine("      survives is not luck: the signature is x^2, and no two-object measurement in the solar system");
         sb.AppendLine("      or on a white dwarf reaches x^2, so only the compact-object test is live.");
 
         PrintHeader(sb, "8. CLASSIFICATION");
         sb.AppendLine("  DERIVED   the signature law and its series · the weak-field no-go · the horizon corollary.");
-        sb.AppendLine("  BOUNDARY  the absolute-depth anchor x = GM/(R c^2) (imported M, R, z) · the g00-only reach.");
+        sb.AppendLine("  BOUNDARY  the absolute-depth anchor x = GM/(R c^2) (imported M, R, z) · the g00-only reach of this audit.");
         sb.AppendLine("  REFUTED   the weak-field route as a discriminator (2.1x to 3.3e6x short at every such depth).");
         sb.AppendLine("  OP1 OUTCOME: AT SURVIVES the compact-object test — 1.033 sigma now, 3 sigma at sigma_z = 8.37 % of");
         sb.AppendLine("  z_AT, i.e. 2.4x–6.0x beyond current measurements.");

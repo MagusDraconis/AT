@@ -68,7 +68,7 @@ M = 1.4 ± 0.05 M☉, R = 12 ± 1 km → `x = −0.172317 ± 0.020514` (11.90 %)
 3σ needs `σ_z ≤ 0.015735` = **8.37 % of `z_AT`** (6.69 % of `z_GR`). Current NS redshift determinations are
 20–50 % relative → **short by 2.4× to 6.0×**.
 
-## Detail — the horizon corollary and the g₀₀-only boundary
+## Detail — the horizon corollary and the g₀₀-only scope
 
 | y | AT `g₀₀ = −e^(−2y)` | `z_AT` | GR `1 − 2y` | `z_GR` |
 |---|---|---|---|---|
@@ -77,16 +77,23 @@ M = 1.4 ± 0.05 M☉, R = 12 ± 1 km → `x = −0.172317 ± 0.020514` (11.90 %)
 | **0.50** | **−0.36787944** | **0.6487213** | **0.000000** | **DIVERGES** |
 | 0.60 / 1.0 / 5.0 | finite | 0.8221188 / 1.718282 / 147.4132 | negative | **no real surface** |
 
-AT's `g₀₀` **never vanishes**: no clock-stopping surface. But this — AT's largest discrepancy — is **g₀₀-only**:
-AT supplies no spatial metric, so no light bending, Shapiro delay or shadow size follows. **The most distinctive
-consequence is the least derivable one.**
+AT's `g₀₀` **never vanishes**: no clock-stopping surface. Every number above is **`g₀₀`-only**, so this audit
+is silent on optics.
+
+> **Correction (`G_021`).** This previously read "AT supplies no spatial metric, so no light bending, Shapiro
+> delay or shadow size follows. The most distinctive consequence is the least derivable one." **That was
+> wrong.** AT's metric is conformally flat, `g = ρ^(2/d)η`, hence `g_rr = +ρ^(2/d)`; the conformal class is
+> imported (Malament 1977) and the factor native, and the project classes the chain as **closed**. Lensing
+> *is* derivable — and `γ = −1` exactly, so deflection, `κ`, shear and Shapiro delay vanish while the redshift
+> survives. That is **excluded by Cassini at 8.6957e4 σ** (VLBA 6.6660e3 σ, Gaia 124.8 σ). See
+> **ResearchY-G_021**; the fix is the `ψ` sector, which requires `ψ = −4σ` and thereby changes the source law.
 
 ## Verdicts
 
 | label | content |
 |-------|---------|
 | **DERIVED** | the signature law · the weak-field no-go · the horizon corollary |
-| **BOUNDARY** | the absolute-depth anchor `x = GM/(Rc²)` (imported M, R, z) · the g₀₀-only reach |
+| **BOUNDARY** | the absolute-depth anchor `x = GM/(Rc²)` (imported M, R, z) · the `g₀₀`-only scope of these numbers |
 | **REFUTED** | the weak-field route as a discriminator (2.1× to 3.3e6× short) |
 
 **OP1 outcome:** an audit that imports measured constants **and survives** — 17–31 % divergence, 1.033 σ now,
@@ -113,8 +120,9 @@ Deterministic: exact algebra on imported published values.
 3. Is NICER's joint posterior tight enough in some source for `σ_x/x ≤ 3 %` without a new redshift measurement?
 4. Any **strong-field electrodynamic** observable (magnetar QPOs, burst oscillations) that avoids
    atmosphere-model systematics?
-5. Is there an AT-native derivation of the **spatial metric**, which would bring the horizon corollary
-   (y = 1/2: AT finite against GR divergent) into play?
+5. **RESOLVED by `G_021`** — the premise was false. AT *does* derive the spatial metric
+   (`g = ρ^(2/d)η`); the derived optics are `γ = −1`, **excluded** by Cassini at 8.6957e4 σ. The live question
+   is now whether `ψ` is physical and whether the `ψ` sector preserves AT's source law.
 
 ## References
 

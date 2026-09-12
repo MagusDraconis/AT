@@ -2653,13 +2653,21 @@ at x = −0.15). At `x = 1e-9` the true difference (1e-18) is **below one ulp of
   `σ_z ≤ 0.015735` = **8.37 % of `z_AT`**, while current NS redshifts are 20–50 % → **short by 2.4× to 6.0×**.
 - **Why it survives is not luck:** the signal is **quadratic**, and no solar-system or white-dwarf measurement
   reaches `x²`.
-- **Horizon corollary (and the g₀₀-only boundary):** AT's `g₀₀ = −e^(2x)` **never vanishes** — at `y = 1/2`,
+- **Horizon corollary (and the g₀₀-only scope):** AT's `g₀₀ = −e^(2x)` **never vanishes** — at `y = 1/2`,
   `z_AT = 0.6487213` where GR's **DIVERGES** (and for `y > 1/2` GR has no real surface while AT gives
-  0.8221188 / 1.718282 / 147.4132). **But that largest discrepancy is g₀₀-only**: AT supplies no spatial metric,
-  so no light bending, Shapiro delay or shadow size follows. **The most distinctive consequence is the least
-  derivable one.**
+  0.8221188 / 1.718282 / 147.4132). Every number in this entry is **`g₀₀`-only**. ⚠ **CORRECTED by `ResearchY-G_021`** — this entry originally
+  said "AT supplies no spatial metric, so no light bending, Shapiro delay or shadow size follows. **The most
+  distinctive consequence is the least derivable one.**" **Both sentences are false.** AT's metric is
+  **conformally flat**, `g = ρ^(2/d)η`, so `g₀₀ = −ρ^(2/d)` **and** `g_rr = +ρ^(2/d)`; the chain is
+  **closed** (`MetricOriginClosure.md`: class × factor) with the conformal class **imported** (Malament 1977)
+  and the factor **native**. Lensing *is* derivable, and the derived answer is **`γ = −1` exactly** — so
+  deflection, `κ`, shear and the Shapiro delay all vanish while the redshift survives (**redshift without
+  lensing**). That is a **derived falsification**, excluded by **Cassini at 8.6957e4 σ** (VLBA 6.6660e3 σ,
+  Gaia 1.2481e2 σ). The escape is the `ψ` sector (`γ = +1`), and `G_021` derives that it requires
+  **`ψ = −4σ`** in `d = 3` — which also moves `Φ` to `−3σ` and therefore **changes the source law**. The
+  missing piece is `ψ`, not the spatial metric; the `g₀₀`-only results stand.
 - **Verdicts: DERIVED** = the signature, the weak-field no-go, the horizon corollary · **BOUNDARY** = the
-  absolute-depth anchor `x = GM/(Rc²)` (imported M, R, z) and the g₀₀-only reach · **REFUTED** = the weak-field
+  absolute-depth anchor `x = GM/(Rc²)` (imported M, R, z) and the `g₀₀`-only scope of its own numbers · **REFUTED** = the weak-field
   route as a discriminator.
 
 ### G_020 — Neutron-Star Redshift Audit
@@ -2704,6 +2712,43 @@ one — so **no `z` precision whatsoever reaches 3σ, let alone 5σ**.
 **App/Book surfaced:** AT.App Research News + Theory Book ("Gravity Source" part, twenty-two chapters) +
 TestGroups (22 suites); AT.Book `GravityService` (22 executable calculations), twenty-two theory objects
 (Physics layer) and twenty-two audits g001–g020.
+
+### G_021 — Light-Propagation Audit (corrects G_019)
+**Status:** Complete. **Question:** does AT supply the spatial metric, and what optics does it deliver?
+**Answer: it does — and the derived optics are `γ = −1` exactly, which Cassini excludes at 8.6957e4 σ.**
+This audit **corrects G_019 §5**.
+- **Correction.** G_019 said "AT supplies no spatial metric, so no light bending, Shapiro delay or shadow size
+  follows — the theory's most distinctive consequence is its least derivable one." **Both sentences are false.**
+- **AT has the full metric and the chain is closed:** `g_uv = ρ^(2/d)η_uv` (conformally flat), so
+  `g₀₀ = −ρ^(2/d)` **and** `g_rr = +ρ^(2/d)`. `MetricOriginClosure.md`: class × factor = full `g_uv`, **closed** —
+  conformal **class** imported (Malament 1977 / Hawking–King–McCarthy 1976, proven), conformal **factor**
+  **native** (the counting measure).
+- **The optics:** with `σ = (1/d) ln ρ` the source law `a = −(1/d)∇ln ρ = −∇σ` fixes `Φ = σ`, so
+  `g_rr = +(1 + 2σ) = 1 − 2γΦ` gives **`γ = −1`** — exactly, not merely to first order: with
+  `Φ = (e^(2σ) − 1)/2`, `γ = −(e^(2σ) − 1)/(e^(2σ) − 1) = −1`. Since every lensing observable is
+  `∝ (1 + γ)/2` (QG26), **deflection = κ = shear = μ−1 = Shapiro delay = 0** while the **redshift survives**
+  (`g₀₀` alone). **AT predicts redshift without lensing.**
+- **Excluded:** **Cassini 8.6957e4 σ** (Bertotti/Iess/Tortora 2003, `γ = 1.0000210 ± 2.3e−5`), VLBA 6.6660e3 σ
+  (Fomalont 2009), Gaia 1.2481e2 σ (2022); plus thousands of observed lensing systems. A **derived
+  falsification, not a missing derivation**.
+- **The escape and its price (derived here):** the `ψ`-completed metric `g₀₀ = −ρ^(2/d)e^(2ψ)`,
+  `g_ii = ρ^(2/d)e^(−2ψ/(d−1))` gives `γ = +1`; because a timelike geodesic's acceleration is fixed by `g₀₀`
+  alone, `Φ = σ + ψ` and `γ(ψ) = −[σ − ψ/(d−1)]/(σ + ψ)`, so **`γ = +1 ⇔ ψ = −2σ(d−1)/(d−2)`** —
+  **`ψ = −4σ` in `d = 3`**, `−3σ` in `d = 4`, **no solution in `d = 2`** (`G_uv ≡ 0`, QG180). Along that direction
+  the exact `γ` is `e^(6σ)`. **But `Φ = σ + ψ = −3σ` then contradicts `a = −∇σ`**, so restoring
+  `γ = +1` **changes the sourcing relation**: `ψ` is a minimal new primitive (QG24), not a free patch
+  (QG43: a 1-d.o.f. scalar suffices for `γ` and the Shapiro delay).
+- **Why the G-chain is unaffected:** every audit G_001–G_020 used `g₀₀` only (source law, clock law, 0.99600,
+  0.99668, the `x²` signature, `z_NICER`), so those results **stand** and the chain is **silent** on optics.
+- **One recorded consequence:** with `ψ ≠ 0` the clock law is `dτ/dt = ρ^(1/d)e^(ψ)`, and `e^ψ` is **first
+  order** — at `ψ = 1e−3` that is **1000.5×** G_019's `x²` term — so any nonzero `ψ` **swamps** the
+  second-order signature the G-chain proposes to test.
+- **Verdicts: DERIVED** = the conformal spatial metric `g_ij = ρ^(2/d)δ_ij` (class × factor closed) · `γ = −1`
+  exactly · all lensing observables and Shapiro delay zero with the redshift surviving · `γ = +1 ⇔ ψ = −4σ`
+  (`d = 3`) · **BOUNDARY** = the conformal class (imported theorem) and the `ψ` sector (new primitive) and the
+  `Φ = −3σ` conflict · **REFUTED** = the `ψ = 0` conformal optics (8.6957e4 σ Cassini).
+- **No reclassification** (G_019's numbers are `g₀₀`-only and stand); D_040 untouched; no canonical claim,
+  value or equation changes; no new primitive introduced by this audit; 7/7 PASSED.
 
 ## Key Unsolved Problems
 

@@ -122,16 +122,39 @@ GR's `1 + 2x` vanishes at `y = GM/(Rc²) = 1/2`, where its redshift **diverges**
 
 Beyond `y = 1/2` GR has **no real surface at all**, while AT still does.
 
-**But this — AT's largest discrepancy with GR — is g₀₀-only.** AT supplies **no spatial metric**, so no light
-bending, no Shapiro delay and no shadow size follows from it. **The theory's single most distinctive
-consequence is also its least derivable one.**
+**Correction (ResearchY-G_021).** This section originally claimed that "AT supplies **no spatial metric**, so
+no light bending, no Shapiro delay and no shadow size follows from it" — **that is false**, and it is false in a
+way that inverts the conclusion. AT **does** supply the full metric: it is **conformally flat**,
+`g = ρ^(2/d) η`, so `g₀₀ = −ρ^(2/d)` **and** `g_rr = +ρ^(2/d)`. The project already classifies the chain as
+**closed** (`Docs/Audits/MetricOriginClosure.md`: "class × factor — closed"), with the **conformal class
+imported** (Malament 1977) and the **conformal factor native** (the counting measure).
+
+So light bending **is** derivable — and the derived answer is **zero**. With `σ = (1/d) ln ρ` and `Φ = σ`, the
+spatial part is `g_rr = +(1 + 2σ)` while `g₀₀ = −(1 + 2σ)`; PPN is `g_rr = 1 − 2γΦ`, so
+
+```text
+γ = −1  exactly,  hence  (1 + γ)/2 = 0
+```
+
+and **deflection, convergence κ, shear and the Shapiro delay all vanish identically** (`μ = 1`), while the
+**redshift survives** because it is governed by `g₀₀` alone. AT predicts *redshift without lensing*. That is a
+**derived falsification, not a missing derivation**, and it is excluded by **Cassini at 8.6957e4 σ**, VLBA at
+6.6660e3 σ and Gaia at 124.8 σ — see **ResearchY-G_021**.
+
+The escape (project result, QG207/QG212) is the `ψ ≠ 0` tensor completion
+`g₀₀ = −ρ^(2/d)e^(2ψ)`, `g_ii = ρ^(2/d)e^(−2ψ/(d−1))`, where `γ = +1`; but `G_021` derives that this requires
+`ψ = −4σ` in `d = 3`, which also moves `Φ` from `σ` to `−3σ` and therefore **changes the sourcing relation** —
+so `ψ` is a new primitive (QG24), not a free patch.
+
+What *remains* true about this audit is narrower and untouched: **every number in it is `g₀₀`-only**, so the
+audit is silent on optics either way.
 
 ## 6. Verdicts
 
 | label | content |
 |-------|---------|
 | **DERIVED** | the **signature law** `AT/GR = 1 + x² − (4/3)x³` (first order identical, second order opposite sign, AT clocks faster, AT redshift always smaller) · the **weak-field no-go** (the discriminator is `x²`, unreachable at every solar-system and white-dwarf depth) · the **horizon corollary** (`g₀₀` never vanishes). |
-| **BOUNDARY** | the **absolute-depth anchor** `x = GM/(Rc²)` — imported `M`, `R` and a measured redshift; the test is live only at neutron-star compactness. And the **g₀₀-only reach**: the horizon consequence cannot be tested within AT. |
+| **BOUNDARY** | the **absolute-depth anchor** `x = GM/(Rc²)` — imported `M`, `R` and a measured redshift; the test is live only at neutron-star compactness. And the **`g₀₀`-only scope of this audit's own numbers**. |
 | **REFUTED** | the **weak-field route as a discriminator** — Earth 4.845934e-19 (0.4846× the clock floor, 2.1× short), ground-vs-GPS 4.567944e-19, the Sun 4.505017e-12 against 1e-5 (2.2e6× short), Sirius B 6.619702e-8 against a 2 % measured redshift (3.3e6× short). |
 
 ## 7. The OP1 answer
@@ -148,9 +171,10 @@ It comes with two honest riders:
 
 1. **The reachable arena is one object class** (neutron stars), and the requirement is a *joint* measurement on
    the *same* object: an independent `M`–`R` giving `x` to ≈3 %, **and** a surface redshift to ≈8 %.
-2. **The largest discrepancy is unreachable**: at `y = 1/2` GR's `z` diverges while AT's stays finite
-   (0.6487213), but AT has no spatial metric, so no observation of light bending or shadows can be brought to
-   bear. AT's most distinctive consequence is outside AT.
+2. **The largest discrepancy is not a lensing problem** (corrected by `G_021`): at `y = 1/2` GR's `z` diverges
+   while AT's stays finite (0.6487213). This audit originally called that consequence "outside AT" because it
+   believed AT had no spatial metric. It does: `g = ρ^(2/d)η` gives `γ = −1`, so lensing and Shapiro delay
+   vanish — excluded by Cassini at 8.6957e4 σ. The missing piece is the `ψ` sector, not the spatial metric.
 
 ## 8. Classification and caveats
 
@@ -179,8 +203,10 @@ Sirius B's mass and radius, the 1e-18 clock floor, a 2 % HST redshift).
    even without a new redshift measurement?
 4. Does any **strong-field electrodynamic** observable (magnetar QPOs, burst oscillations) depend on the
    surface rate in a way that avoids the atmosphere-model systematics?
-5. Can AT's g₀₀-only reach be extended — is there an AT-native derivation of the spatial metric, which would
-   put the horizon corollary (y = 1/2, AT finite against GR divergent) into play?
+5. **RESOLVED by `G_021`** (this stated premise was false): AT *does* derive the spatial metric —
+   `g = ρ^(2/d)η`, `g_rr = +ρ^(2/d)`. The derived optics are `γ = −1`, which is **excluded** by Cassini at
+   8.6957e4 σ, so the open question is no longer "is there a spatial metric?" but **"is `ψ` physical, and does
+   the `ψ` sector preserve AT's own source law?"** (see ResearchY-G_021).
 
 ## Result summary
 
