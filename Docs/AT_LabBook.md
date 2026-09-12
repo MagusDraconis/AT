@@ -2076,11 +2076,11 @@ in the historical program counts below.
 | AT-QG | 182 | Complete |
 | **Total** | **289** | |
 
-## ResearchY G-Program — Gravity Source, Control, Magnitude, Calibration, Realizability, Mechanism, Origin, Controlled Suppression, Clock Rate, Time Control, Rho Actuator, Labor Rho (12 audits, 2026-09-12)
+## ResearchY G-Program — Gravity Source, Control, Magnitude, Calibration, Realizability, Mechanism, Origin, Controlled Suppression, Clock Rate, Time Control, Rho Actuator, Labor Rho, Local Rho Actuator (13 audits, 2026-09-12)
 
-New ResearchY group **G — Gravity Source**. Suite: `AT.Tests/ResearchY/G_GravitySource/` (98/98 pass,
+New ResearchY group **G — Gravity Source**. Suite: `AT.Tests/ResearchY/G_GravitySource/` (108/108 pass,
 ~1 s); shared machinery `AT.Tests/Shared/DensityField.cs`, `PhysicalUnits.cs`, `RhoActuators.cs`.
-Detailed docs: `Docs/ResearchY/G_GravitySource/ResearchY-G_001.md` … `ResearchY-G_011b.md`.
+Detailed docs: `Docs/ResearchY/G_GravitySource/ResearchY-G_001.md` … `ResearchY-G_012.md`.
 
 ### G_001 — Gravity Source Audit
 **Status:** Complete. **SOURCE = the actualization density ρ** (counting measure), and for the attractive
@@ -2359,9 +2359,43 @@ Random), four candidates.
   bench pattern's amplitude is a voltage ratio, not a clock. **PRACTICAL** (dynamics) · **ASTROPHYSICAL**
   (readouts) · **REFUTED** (bench metric effect).
 
-**App/Book surfaced:** AT.App Research News + Theory Book ("Gravity Source" part, twelve chapters) +
-TestGroups; AT.Book `GravityService` (12 executable calculations), twelve theory objects (Physics layer) and
-twelve audits g001–g011b.
+### G_012 — Local Rho Actuator Audit
+**Status:** Complete. Five local candidates against four requirements (local, finite drive, survives
+DiffuseStep, no imported primitive). **The first ACTUATOR in the group** — and it is marginal.
+
+| requirement | result |
+|---|---|
+| (1) local | `s = (I − W)ρ*` is a **three-point stencil** (perturbing `ρ_j` moves only `s_{j−1}, s_j, s_{j+1}`) |
+| (2) finite | `‖s‖₁ = 0.48675` (witness), `max|s| = 0.01866667`; `3.331453e-10` (band top) |
+| (3) survives DiffuseStep | any target held to < 1e-12 over 20 000 steps |
+| (4) no primitive | `s = ρ − Wρ` is linear in the local state |
+
+- **ACTUATOR — the incremental local feedback `s = ρ − Wρ` freezes ANY configuration exactly** (closed loop =
+  the **identity**): the witness tilt to **4.336809e-18** over 5000 steps, the uniform measure and the highest
+  mode to < 1e-15, and a 1e-6 perturbation retained **100.000 %**. It is **MARGINAL** (95/95 modes neutral) —
+  a perfect **memory** with no restoring force: it holds a configuration, it cannot create one.
+- **Three-point theorem:** for the count-conserving family `s = β(Wρ − ρ)` the closed-loop eigenvalues are
+  `c_k = μ_k(1 + β) − β`, and `c_k = 1` for every k **only at β = −1** (95/95 neutral vs 0/95 at β = 0).
+- **The restoring family `s = λ(ρ − ρ̄)` holds only the smoothest mode:** stability requires
+  `λ ≤ 1 − μ_1 = 2.141650094e-4` (window `[−1.200214165, 2.141650094e-4]`), so k = 1 is exact while k = 2
+  decays at 6.422657e-4/step (τ = 1556.99) and the k = 48 attempt at λ = 0.4 gives `μ_1 + λ = 1.3998`
+  (unstable); above threshold the smooth mode **runs away** at 1.000214165/step (saturation from a Poisson
+  seed in 64 516 steps).
+- **No local creation:** `HighKShare ≤ 2.8666657e-7·D_high/w_1²`; compact masks are smooth (block w = 2:
+  6.630273e-3 → w = 64: 6.368861e-9; edge dipole 0.1888945; staggered global 3.281127e-4); the best
+  **structured** mask reaches 0.6117676 (77 % of the witness) but is prescribed data; the **cellwise test**
+  kills the witness for state-dependent generators (spread 1.58e-3 … 9.5e-3 within equal-ρ groups against
+  `max|s| = 0.01866667`) while a pure mode is exactly linear (9.3e-15).
+- **REFUTED:** mode injection (full support, 98.3 % high-k for the witness) and synchronization (a locked
+  patch leaves ρ bit-identical, `L1 = 2.45e-16`). **CORRELATED:** the driven D96 lattice (the medium;
+  responses 2.5–120, undriven attractor uniform) and a NESS (`s = (I − W)ρ*` by definition).
+- **Readouts:** Δτ/τ = Δlnρ/3 — band top 0.140737 s/day, 3:1 contrast 31 640.03 s/day, 10:1 66 314.45 s/day.
+- **Refinement note (not a reclassification):** G_010's "the canonical chain supplies no driver" stands —
+  G_012 shows an **engineered** local feedback realises one, marginally and only as a memory.
+
+**App/Book surfaced:** AT.App Research News + Theory Book ("Gravity Source" part, thirteen chapters) +
+TestGroups; AT.Book `GravityService` (13 executable calculations), thirteen theory objects (Physics layer) and
+thirteen audits g001–g012.
 
 ## Key Unsolved Problems
 

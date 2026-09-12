@@ -303,6 +303,25 @@ public sealed class GravityService : ICalculationService
                 "The rho dynamics is PRACTICAL (a 96-site chain with d = 0.2 IS RhoDynamics.DiffuseStep, and the derived 0 <= d <= 1/2 IS the CFL stability bound), every real clock or gravity readout "
                 + "is ASTROPHYSICAL (the 1e-18 floor needs M/r = 1.35e6 t/m), and a bench-side metric effect from a rho rearrangement is REFUTED (a kilogram moved a metre gives 3.7e-28, 2.7e9x below the "
                 + "clock floor, and AT's prediction is exactly Newton's — ResearchY-G_011b)."),
+
+            new("local-actuator",
+                "Local Rho Actuator — is there a local handle on the density?",
+                "s = rho - W rho (identity closed loop);  c_k = mu_k(1 + beta) - beta;  HighKShare <= 2.8666657e-7 D_high/w_1^2",
+                [
+                    new("(1) local", "s = (I - W) rho* is a three-point stencil", "perturbing one cell moves exactly three source entries"),
+                    new("(2) finite", $"||s||_1 = 0.48675 (witness); max|s| = 0.01866667", "3.331453e-10 for the band-top profile"),
+                    new("(3) survives W", "held to < 1e-12 over 20 000 steps", "freeze: 4.336809e-18 over 5000 steps"),
+                    new("(4) no primitive", "s = rho - W rho is linear in the local state", "the closed loop is the IDENTITY (a MEMORY, no restoring force)"),
+                    new("three-point theorem", "c_k = mu_k(1+beta) - beta; c_k = 1 for all k only at beta = -1", "95/95 modes neutral against 0/95 at beta = 0"),
+                    new("restoring family", $"stability lambda <= {1.0 - Mu(1):E3} = 1 - mu_1", "only k = 1 holdable; k = 2 decays 6.422657e-4/step; k = 48 at 0.4 is unstable"),
+                    new("runaway above threshold", $"growth {Mu(1) + 2.0 * (1.0 - Mu(1)):F9}/step", "saturation from a Poisson seed in 64 516 steps"),
+                    new("compact masks", "block w = 2: 6.630273e-3 ... w = 64: 6.368861e-9", "best structured mask 0.6117676 = 77 % of the witness (prescribed data)"),
+                    new("sync / lattice", "locked patch L1 = 2.45e-16; responses 2.5 ... 120.0", "synchronization REFUTED; the lattice and a NESS are the MEDIUM"),
+                ],
+                "Five local candidates tested against four requirements. The hold-drive is a local three-point stencil; the incremental feedback s = rho - W rho freezes ANY configuration exactly (the witness to 4.3e-18, a "
+                + "perturbation retained 100.000 %) because its closed loop is the identity, and it is the UNIQUE non-trivial member of its three-point family (c_k = 1 for all k only at beta = -1). It is marginal — a memory, not "
+                + "a creator. The restoring family holds only the smoothest mode (lambda <= 1 - mu_1), mode injection and synchronization are REFUTED, and the lattice/NESS framing is the medium rather than the source "
+                + "(ResearchY-G_012)."),
         ];
     }
 

@@ -292,6 +292,26 @@ public sealed class TheoryRegistry
             CalculationId: "labor-rho",
             References: ["ResearchY-G_011b", "ResearchY-G_007", "ResearchY-G_009"],
             AuditIds: ["g011b"]),
+        new("local-actuator", "Local Rho Actuator", "A three-point local feedback freezes any density profile exactly — the first ACTUATOR in the group — but it is marginal, so it holds and cannot create.",
+            TheoryLayer.Physics, TheoryClassification.Partial, TheoryObjectKind.Derivation,
+            ["rho-actuator", "labor-rho"],
+            Narrative: "Five local candidates against four requirements (local, finite drive, survives DiffuseStep, no imported primitive). THE HOLD-DRIVE IS LOCAL: s = (I − W)ρ* is a three-point stencil (perturbing ρ_j moves only "
+                + "s_{j−1}, s_j, s_{j+1}), count-neutral (Σs = 2.1e-17), finite (‖s‖₁ = 0.48675 for the witness, max|s| = 0.01866667; 3.331453e-10 for the band top) and exact to < 1e-12 over 20 000 steps. ACTUATOR — the incremental "
+                + "local feedback s = ρ − Wρ makes the closed loop the IDENTITY, freezing ANY configuration exactly: the witness tilt to 4.336809e-18 over 5000 steps, the uniform measure and the highest mode to < 1e-15, and a 1e-6 "
+                + "perturbation retained 100.000 % (8.674e-19). It is MARGINAL (95/95 modes neutral) — a perfect MEMORY with no restoring force. THE THREE-POINT THEOREM: for the count-conserving family s = β(Wρ − ρ) the closed-loop "
+                + "eigenvalues are c_k = μ_k(1 + β) − β, and c_k = 1 for every k only at β = −1 (95/95 neutral against 0/95 at β = 0). THE RESTORING FAMILY s = λ(ρ − ρ̄) IS LIMITED TO THE SMOOTHEST MODE: the closed-loop spectrum is "
+                + "μ_k + λ, so stability requires λ in [−1.200214165, 2.141650094e-4] and a fixed point carrying mode k needs λ = 1 − μ_k — only k = 1 fits (k = 2 needs 8.564307e-4; the k = 48 attempt at λ = 0.4 gives "
+                + "μ_1 + λ = 1.3998 > 1). k = 1 is exact to 1e-15 over 20 000 steps, k = 2 decays at 6.422657e-4/step (τ = 1556.99), a mixture resolves onto its k = 1 part (2.4e-12), and above threshold the smooth mode runs away at "
+                + "1.000214165/step, saturating from a Poisson seed in 64 516 steps. NO LOCAL CREATION: the gain of (I − W)⁻¹ decreases with k (4669.2968 → 1.2503), giving HighKShare(ρ*) ≤ 2.8666657e-7·D_high/w_1²; compact masks "
+                + "hold smooth profiles (block w = 2: 6.630273e-3 → w = 64: 6.368861e-9; edge dipole 0.1888945; staggered global 3.281127e-4) and the best structured ±1 mask reaches 0.6117676 (77 % of the witness) but is prescribed "
+                + "data; the cellwise test kills the witness for state-dependent generators (spread 1.58e-3 … 9.5e-3 within equal-ρ groups against max|s| = 0.01866667) while a pure mode is exactly linear (9.3e-15). Mode injection is "
+                + "REFUTED (full support; 98.3 % high-k for the witness), synchronization is REFUTED (a locked patch leaves ρ bit-identical, L1 = 2.45e-16, max|Δa| < 1e-9), and the lattice/NESS framing is CORRELATED (the medium: "
+                + "undriven attractor uniform, responses 2.5–120; a NESS *is* s = (I − W)ρ*). READOUTS: Δτ/τ = Δlnρ/3 — band top 0.140737 s/day, 3:1 31 640.03 s/day, 10:1 66 314.45 s/day, all inside the SUPPRESSED band. REFINEMENT "
+                + "(not a reclassification): G_010's 'the canonical chain supplies no driver' stands — an ENGINEERED local feedback realises one, marginally; G_011 labels the QUANTITY, G_012 the LOCAL GENERATOR.",
+            Formula: "s = rho - W rho (identity closed loop);  c_k = mu_k(1 + beta) - beta;  HighKShare <= 2.8666657e-7 D_high/w_1^2",
+            CalculationId: "local-actuator",
+            References: ["ResearchY-G_012", "ResearchY-G_008", "ResearchY-G_011"],
+            AuditIds: ["g012"]),
 
         // ── Layer 5 — Correspondence ───────────────────────────────────────────
         new("thermodynamics", "Thermodynamics", "An added occupancy layer over the structural modes (temperature is BOUNDARY).",
@@ -872,5 +892,28 @@ public sealed class TheoryRegistry
             + "rearrangement). No reclassification (D_040 untouched); no canonical claim, value or equation changes; no new primitive.",
             AuditStatus.Passed, new DateTime(2026, 9, 12), TheoryLayer.Physics, TheoryClassification.Partial,
             ["g004", "g005", "g007", "g009"]),
+        new("g012", "Local Rho Actuator Audit", "Can any physically realizable local process act as a rho source?",
+            "FOUR REQUIREMENTS: (1) local implementation, (2) finite drive, (3) survives DiffuseStep, (4) no imported primitive. REQUIREMENT 1: s = (I - W) rho* is a THREE-POINT stencil (perturbing rho_j moves only "
+            + "s_{j-1}, s_j, s_{j+1}), count-neutral (Sigma s = 2.1e-17) and exact. REQUIREMENTS 2 AND 3: ||s||_1 = 0.48675 per step for the witness (max|s| = 0.01866667), 3.331453e-10 for the band-top profile, and the driven "
+            + "recursion reproduces any target to < 1e-12 over 20 000 steps. ACTUATOR — THE INCREMENTAL LOCAL FEEDBACK: s = rho - W rho makes the closed loop the IDENTITY, so it FREEZES ANY CONFIGURATION EXACTLY (the witness tilt "
+            + "to 4.336809e-18 over 5000 steps; the uniform measure and the highest mode to < 1e-15; a 1e-6 perturbation retained 100.000 %, 8.674e-19). It is MARGINAL — all 95 closed-loop eigenvalues are 1 — so it is a perfect "
+            + "MEMORY with no restoring force: it holds a configuration, it cannot create one. THE THREE-POINT THEOREM: for the count-conserving family s = beta(W rho - rho) the closed-loop eigenvalues are "
+            + "c_k = mu_k(1 + beta) - beta, and c_k = 1 for EVERY k only at beta = -1 (95/95 neutral against 0/95 at beta = 0, and 0.999893/0.800000/0.600107 at beta = -0.5). THE RESTORING FAMILY s = lambda(rho - rhoBar) IS "
+            + "LIMITED TO THE SMOOTHEST MODE: the closed-loop spectrum is mu_k + lambda, so stability requires lambda in [-(1 + mu_95), 1 - mu_1] = [-1.200214165, 2.141650094e-4], and a fixed point carrying mode k needs "
+            + "lambda = 1 - mu_k — only k = 1 fits (k = 2 needs 8.564307e-4; the k = 48 attempt at lambda = 0.4 gives mu_1 + lambda = 1.3998 > 1). k = 1 is exact to 1e-15 over 20 000 steps while k = 2 decays at 6.422657e-4 per "
+            + "step (tau = 1556.99, matching (mu_2 + lambda)^5000 = 0.0402614767) and a k = 1 + k = 2 mixture resolves onto its k = 1 part (2.4e-12); above threshold (lambda = 2(1 - mu_1)) the smooth mode RUNS AWAY at "
+            + "1.000214165 per step, saturating from a Poisson seed in 64 516 steps. NO LOCAL CREATION: the gain of (I - W)^-1 decreases with k (4669.2968 to 1.2503), giving HighKShare(rho*) <= 2.8666657e-7 D_high/w_1^2 "
+            + "(verified for every family); compact masks hold SMOOTH profiles (block w = 2: 6.630273e-3 down to w = 64: 6.368861e-9; edge dipole 0.1888945 with max|rho*| = 4.9479167; fully staggered global source "
+            + "3.281127e-4) and the best STRUCTURED +-1 mask reaches 0.6117676 (77 % of the witness's 0.7965733) but a prescribed mask is imported information; the CELLWISE TEST excludes the witness for state-dependent "
+            + "generators (spread 1.583333e-3 ... 9.5e-3 within groups of equal rho against max|s| = 0.01866667) while a pure mode is exactly linear (9.3e-15). MODE INJECTION REFUTED (s = (1 - mu_k)c v_k has full support; "
+            + "the witness drive is 98.3 % high-k against the profile's 79.7 %). SYNCHRONIZED OSCILLATORS REFUTED (a locally locked patch leaves rho bit-identical: L1 = 2.45e-16, max|Delta a| < 1e-9, coherent sum 0.7537609). "
+            + "DRIVEN D96 LATTICE and NON-EQUILIBRIUM STEADY STATES CORRELATED (the lattice is the MEDIUM — undriven attractor uniform, L1 0.6666667 to 0.0201006 in 200 steps, response ratios 2.5, 5.0, 10.0, 20.0, 40.0, "
+            + "120.0 — and a NESS is *defined* by s = (I - W) rho*, so its taxonomy IS the source taxonomy). READOUTS: Delta tau/tau = Delta ln rho/3 — band top 0.140737 s/day, a 3:1 contrast 31 640.03 s/day, 10:1 "
+            + "66 314.45 s/day, all inside G_005's SUPPRESSED band. VERDICTS: ACTUATOR = the incremental local feedback (any profile, marginal/memory) · CORRELATED = the driven lattice and the NESS framing · REFUTED = mode "
+            + "injection, synchronized oscillators, every restoring gain beyond k = 1, and local creation of the witness class. REFINEMENT (not a reclassification): G_010's 'the canonical chain supplies no driver' stands — "
+            + "an ENGINEERED local feedback realises one, marginally and only as a memory; G_011 labels the QUANTITY, G_012 the LOCAL GENERATOR. No reclassification (D_040 untouched); no canonical claim, value or equation "
+            + "changes; no new primitive.",
+            AuditStatus.Passed, new DateTime(2026, 9, 12), TheoryLayer.Physics, TheoryClassification.Partial,
+            ["g005", "g008", "g010", "g011", "g011b"]),
     ];
 }
