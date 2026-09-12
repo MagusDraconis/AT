@@ -446,6 +446,26 @@ public sealed class GravityService : ICalculationService
                 ],
                 "rho's identity survives as the OCCUPANCY MEASURE: a dimensionless counting measure whose content is entirely in the arrangement. The count is a label (exact scale invariance), accessibility is the lattice, the degeneracy occupancy is the DERIVED content under a BOUNDARY dimension (51/95 = 53.6842 % pure arrangement), "
                 + "and the survivor distribution is a lossy readout. The audit imports NO constant -- the most AT-native of the group and correspondingly unfalsifiable by itself -- which yields the provenance asymmetry: the theory's identity content is combinatorial and becomes physics only via a boundary identification. DERIVED / BOUNDARY / REFUTED (ResearchY-G_018)."),
+
+            new("second-order-signature",
+                 "Second-Order Signature — is there a test that can decide it?",
+                 "AT: e^x vs GR: sqrt(1+2x);  ratio = 1 + x^2 - (4/3)x^3;  z gap 17-31 %;  1.033 sigma now",
+                 [
+                     new("the signature", "AT dtau/dt = e^x against GR sqrt(1 + 2x)", "first order IDENTICAL, second order OPPOSITE SIGN: ratio = 1 + x^2 - (4/3)x^3 + ..."),
+                     new("the discriminator is x squared", "which decides the whole strategy", "no solar-system or white-dwarf measurement can reach x^2"),
+                     new("sign and series", "AT clocks run FASTER, so AT's redshift is always SMALLER", "(ratio-1)/x^2 = 1.0000889006 at -1e-6, 1.0135879522 at -1e-2, 1.2774576758 at -0.15"),
+                     new("REFUTED: the weak-field route", "Earth 4.845934e-19 = 0.4846x the 1e-18 floor (2.1x short)", "ground-vs-GPS 4.567944e-19; Sun 4.505017e-12 vs 1e-5 (2.2e6x short); Sirius B 6.619702e-8 vs 2 % (3.3e6x short)"),
+                     new("unrepresentable", "at x = 1e-9 the difference 1e-18 is below one ulp of 1.0 (1.11e-16)", "the arithmetic cannot express the signature at solar-system depths"),
+                     new("the live arena", "NICER neutron stars: J0030+0451 -17.367 %, J0740+6620 (Riley) -30.957 %, (Miller) -27.463 %", "3-10 % in the rate and 17-31 % in the redshift; the J0740 z gap is 0.1256 absolute"),
+                     new("the inverse map", "for a measured z, AT needs a smaller radius: z = 0.35 gives 6.890 km against GR's 9.164 km", "so a NICER-compatible object (R ~ 11-14 km) cannot have z = 0.35 under AT"),
+                     new("AT SURVIVES", "M = 1.4 +- 0.05 Msun, R = 12 +- 1 km: z_AT = 0.188055 +- 0.024372 vs z_GR = 0.235259 +- 0.038665", "separation 0.047205 against sigma 0.045706 = 1.033 sigma; 3 sigma needs sigma_z <= 8.37 % of z_AT, and current NS redshifts are 20-50 %, short by 2.4x-6.0x"),
+                     new("why it survives", "the signal is QUADRATIC, not small", "so only the compact-object test is live, and the deciding measurement is now specified exactly"),
+                     new("the horizon corollary", "AT's g00 = -e^(2x) NEVER VANISHES: at y = 1/2 AT gives z = 0.6487213 where GR's DIVERGES", "for y > 1/2 GR has no real surface while AT gives 0.8221188 / 1.718282 / 147.4132"),
+                     new("but it is g00-ONLY", "AT supplies no spatial metric, so no light bending, Shapiro delay or shadow size follows", "the most distinctive consequence is the least derivable one"),
+                 ],
+                 "OP1 answer: YES - an audit that imports measured constants and SURVIVES. The signature AT/GR = 1 + x^2 - (4/3)x^3 makes the weak-field route useless (2.1x to 3.3e6x short at four imported depths) and makes the neutron-star redshift the only live test, where "
+                 + "the divergence is 17-31 % but the current significance is only 1.033 sigma; 3 sigma needs sigma_z = 8.37 % of z_AT, i.e. 2.4x-6.0x beyond current measurements. The largest discrepancy (no horizon, where GR's z diverges) is g00-only and therefore untestable within AT. "
+                 + "DERIVED / BOUNDARY / REFUTED (ResearchY-G_019)."),
         ];
     }
 

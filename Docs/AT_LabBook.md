@@ -2076,11 +2076,11 @@ in the historical program counts below.
 | AT-QG | 182 | Complete |
 | **Total** | **289** | |
 
-## ResearchY G-Program — Gravity Source, Control, Magnitude, Calibration, Realizability, Mechanism, Origin, Controlled Suppression, Clock Rate, Time Control, Rho Actuator, Labor Rho, Local Rho Actuator, Physical Actuator, Physical Rho Mapping, Rho To Metric, Watch Ontology, Mass Independence, Metric Coupling, Rho Identity (20 audits, 2026-09-12)
+## ResearchY G-Program — Gravity Source, Control, Magnitude, Calibration, Realizability, Mechanism, Origin, Controlled Suppression, Clock Rate, Time Control, Rho Actuator, Labor Rho, Local Rho Actuator, Physical Actuator, Physical Rho Mapping, Rho To Metric, Watch Ontology, Mass Independence, Metric Coupling, Rho Identity, Second-Order Signature (21 audits, 2026-09-12)
 
-New ResearchY group **G — Gravity Source**. Suite: `AT.Tests/ResearchY/G_GravitySource/` (161/161 pass,
+New ResearchY group **G — Gravity Source**. Suite: `AT.Tests/ResearchY/G_GravitySource/` (168/168 pass,
 ~1 s); shared machinery `AT.Tests/Shared/DensityField.cs`, `PhysicalUnits.cs`, `RhoActuators.cs`.
-Detailed docs: `Docs/ResearchY/G_GravitySource/ResearchY-G_001.md` … `ResearchY-G_018.md`.
+Detailed docs: `Docs/ResearchY/G_GravitySource/ResearchY-G_001.md` … `ResearchY-G_019.md`.
 
 ### G_001 — Gravity Source Audit
 **Status:** Complete. **SOURCE = the actualization density ρ** (counting measure), and for the attractive
@@ -2617,9 +2617,54 @@ I4 determines ρ) uses **no external physics**, and the audit imports **zero con
   audits (G_003, G_004, G_009, G_010, G_015, G_017) import `G`, `c`, GM/R, finesse, `Q`, polarizability, 1e-18,
   *are* falsifiable, and where testable have been **excluded** or shown to be a **rank-1 shadow**.
 
-**App/Book surfaced:** AT.App Research News + Theory Book ("Gravity Source" part, twenty chapters) +
-TestGroups (20 suites); AT.Book `GravityService` (20 executable calculations), twenty theory objects
-(Physics layer) and twenty audits g001–g018.
+### G_019 — Second-Order Signature Audit
+**Status:** Complete. **G_018 OP1 answered: YES — an audit that imports measured constants and SURVIVES.**
+AT's `dτ/dt = ρ^(1/d)` gives `e^σ` where GR gives `√(1 + 2σ)`, so
+
+```
+AT/GR = e^x / √(1 + 2x) = 1 + x² − (4/3)x³ + …          x = Φ/c² < 0 for a bound object
+```
+
+**First order identical, second order opposite sign — the discriminator is `x²`**, which decides the strategy.
+AT clocks run **faster**, so AT's redshift is **always smaller** (`z_AT = 0.1618342427` vs `z_GR = 0.1952286093`
+at x = −0.15). At `x = 1e-9` the true difference (1e-18) is **below one ulp of 1.0 (1.11e-16)** — the signature is
+*unrepresentable* at solar-system depths.
+
+| route | signature `x²` | precision | short by |
+|---|---|---|---|
+| Earth's surface | **4.845934e-19** | 1e-18 clock floor | **2.1×** |
+| ground vs GPS (differential) | 4.567944e-19 | 1e-18 | 2.2× |
+| Sun's surface | 4.505017e-12 | 1e-5 | **2.2e6×** |
+| Sirius B (HST, 2 %) | 6.619702e-8 | 0.02 | **3.3e6×** |
+
+**The live arena — NICER neutron stars** (3–10 % in the rate, **17–31 % in the redshift**):
+
+| object | `x` | rate AT/GR − 1 | `z_AT` | `z_GR` | `Δz/z` |
+|---|---|---|---|---|---|
+| J0030+0451 | −0.152011 | +0.029638 | 0.1641732 | 0.1986775 | **−17.367 %** |
+| J0740+6620 (Riley) | −0.247002 | +0.098133 | 0.2801814 | 0.4058088 | **−30.957 %** |
+| J0740+6620 (Miller) | −0.224246 | +0.076057 | 0.2513786 | 0.3465546 | **−27.463 %** |
+
+**The inverse map is sharper:** a measured `z = 0.35` needs `R = 6.890 km` under AT against `9.164 km` under GR
+(−24.81 %) — while every NICER radius is 11–14 km. So **a NICER-compatible object cannot have z = 0.35 under AT.**
+
+- **AT SURVIVES:** M = 1.4 ± 0.05 M☉, R = 12 ± 1 km gives `z_AT = 0.188055 ± 0.024372` vs
+  `z_GR = 0.235259 ± 0.038665` → separation **0.047205** vs σ **0.045706** = **1.033 σ**. 3σ needs
+  `σ_z ≤ 0.015735` = **8.37 % of `z_AT`**, while current NS redshifts are 20–50 % → **short by 2.4× to 6.0×**.
+- **Why it survives is not luck:** the signal is **quadratic**, and no solar-system or white-dwarf measurement
+  reaches `x²`.
+- **Horizon corollary (and the g₀₀-only boundary):** AT's `g₀₀ = −e^(2x)` **never vanishes** — at `y = 1/2`,
+  `z_AT = 0.6487213` where GR's **DIVERGES** (and for `y > 1/2` GR has no real surface while AT gives
+  0.8221188 / 1.718282 / 147.4132). **But that largest discrepancy is g₀₀-only**: AT supplies no spatial metric,
+  so no light bending, Shapiro delay or shadow size follows. **The most distinctive consequence is the least
+  derivable one.**
+- **Verdicts: DERIVED** = the signature, the weak-field no-go, the horizon corollary · **BOUNDARY** = the
+  absolute-depth anchor `x = GM/(Rc²)` (imported M, R, z) and the g₀₀-only reach · **REFUTED** = the weak-field
+  route as a discriminator.
+
+**App/Book surfaced:** AT.App Research News + Theory Book ("Gravity Source" part, twenty-one chapters) +
+TestGroups (21 suites); AT.Book `GravityService` (21 executable calculations), twenty-one theory objects
+(Physics layer) and twenty-one audits g001–g019.
 
 ## Key Unsolved Problems
 
