@@ -234,6 +234,18 @@ public sealed class TheoryRegistry
             CalculationId: "controlled-suppression",
             References: ["ResearchY-G_008", "ResearchY-G_005"],
             AuditIds: ["g008"]),
+        new("clock-rate", "Clock Rate", "dτ/dt = ρ^(1/d) from g₀₀ = −ρ^(2/d): AT ≡ GR to first order, ±½ at second (1e-19), and a 0.33 % galactic cross-check.",
+            TheoryLayer.Physics, TheoryClassification.Derived, TheoryObjectKind.Derivation,
+            ["gravity-source", "controlled-suppression"],
+            Narrative: "The clock law dτ/dt = √(−g₀₀) = ρ^(1/d) gives (1/d)Δlnρ = ΔΦ/c², the canonical redshift law. Earth surface: −6.9613e-10 → −60.145 μs/day, identical to GR to double precision; GPS gravitational "
+                + "+5.2940e-10 → +45.740 μs/day (QG187: 45.7), with the total +38.537 vs the observed 38.6 only once the imported SR term is added (CORRELATED). The Galactic field is a NEW cross-check: the "
+                + "G_003 ambient contrast gives 5.367333e-7 = 46.374 ms/day versus the rotation curve's v²/c² = 5.385226e-7 (220 km/s) — 0.33 %, equivalent v = 219.63 km/s. AT and GR agree to first order "
+                + "and split at second order (±½ x²: 4.846e-19 at the Earth's surface, 2.803e-19 at GPS — below the 1e-18 optical-clock floor). The G_002 redistributions would move clocks by up to 22.86 % at "
+                + "fixed total mass-energy, but nothing realised or maintainable delivers it (G_005/G_008): what is realised is exactly the potential depth GR already predicts.",
+            Formula: "dtau/dt = rho^(1/d);  (1/d)Delta ln rho = Delta Phi/c^2;  AT: exp(x) vs GR: sqrt(1+2x)",
+            CalculationId: "clock-rate",
+            References: ["ResearchY-G_009", "QG_197", "QG_187"],
+            AuditIds: ["g009"]),
 
         // ── Layer 5 — Correspondence ───────────────────────────────────────────
         new("thermodynamics", "Thermodynamics", "An added occupancy layer over the structural modes (temperature is BOUNDARY).",
@@ -737,5 +749,23 @@ public sealed class TheoryRegistry
             + "reclassification (D_040 untouched); no canonical claim changes; no new primitive.",
             AuditStatus.Passed, new DateTime(2026, 9, 12), TheoryLayer.Physics, TheoryClassification.Derived,
             ["g002", "g005", "g006", "g007"]),
+        new("g009", "Clock Rate Audit", "Does the actualization density rho change clock rates?",
+            "dτ/dt = ρ^(1/d) FROM g₀₀ = −ρ^(2/d), whose first-order form is the canonical redshift law (1/d)Δlnρ = ΔΦ/c². CASE 1 EARTH SURFACE: ΔΦ/c² = −6.9613e-10 and the AT rate deviation "
+            + "−6.9613e-10 equal the GR value −GM/(Rc²) to double precision ⇒ −60.145 μs/day (measured −60.15). CASE 2 GPS ORBIT: gravitational +5.2940e-10 ⇒ +45.740 μs/day (QG187: 45.7), with AT's "
+            + "own input Δlnρ = 1.5882e-9 (G_003's 1.588e-9); the imported SR term −8.3365e-11 ⇒ −7.203 μs/day gives TOTAL +38.537 vs the observed 38.6 (0.9984) — CORRELATED, since the kinematic half "
+            + "is not AT content. CASE 3 GALACTIC FIELD (NEW CROSS-CHECK): the G_003 ambient contrast 1.6102e-6 gives Δlnρ/d = 5.367333e-7 = 46.374 ms/day versus the kinematic v²/c² = 5.385226e-7 for "
+            + "220 km/s — ratio 0.99668 (−0.33 %), equivalent v = 219.63 km/s, exact match needing Δlnρ = 1.615568e-6, detectability 5.367e11× a 1e-18 clock. CASE 4 G_002 REDISTRIBUTIONS at FIXED total "
+            + "mass-energy (Σρ = 1, Σ(ρ̄−ρ) = 0 exactly): rate changes 0.228571 / 0.201058 / 0.111111 / 0.092199 / 0.010707 = 19 748.6 / 17 371.4 / 9 600.0 / 7 966.0 / 925.1 s/day and 2.29e17 / "
+            + "2.01e17 / 1.11e17 / 9.22e16 / 1.07e16 × the clock floor; the REALISED band (G_005 ceiling 4.8867e-6) tops out at 1.629e-6 = 0.1407 s/day (3.03× the observed 5.367e-7 = 0.0464 s/day), and "
+            + "the witnesses are 3.746e5× the observed level. AT vs GR: AT = exp(x) = 1 + x + x²/2 against GR = √(1+2x) = 1 + x − x²/2 (coefficients +0.500001 / −0.499995 at x = 1e-5, difference x² = "
+            + "1.0000e-10): first order IDENTICAL, second order OPPOSITE SIGN (AT clocks run slightly fast), in situ 4.846e-19 (Earth) and 2.803e-19 (GPS) — 2–4× BELOW the 1e-18 optical-clock floor. "
+            + "The derived G at 0.40 % is a common factor that cancels in any rate ratio; scale invariance is exact (ρ → λρ moves every clock by λ^(1/d) with zero RELATIVE change) and the phase directions "
+            + "change nothing. CRITICAL QUESTION: YES in the theory (Σm = 0 yet up to 22.86 %, 2.3e17× the clock floor — the rate follows the ARRANGEMENT, and the degeneracy freedom needs no new mass) but "
+            + "NO physically (G_005 caps realised contrasts at 4.8867e-6; G_008 gives a 0.622-step lifetime and 0.7998 injection per step), and what IS realised (46.4 ms/day) is exactly the potential depth "
+            + "GR predicts from the rotation curve to 0.33 % ⇒ no NEW clock effect; locally AT = GR with the derived G. VERDICTS: DERIVED (the law, the identity, the Earth/GPS magnitudes, the galactic "
+            + "cross-check, the redistribution rates) · CORRELATED (the GPS total via the imported SR term; the ±½ second-order coefficient) · REFUTED (a realised sustained clock effect from a ρ "
+            + "rearrangement; the phase directions; a uniform rescaling as a relative effect). No reclassification (D_040 untouched); no canonical claim, value or equation changes; no new primitive.",
+            AuditStatus.Passed, new DateTime(2026, 9, 12), TheoryLayer.Physics, TheoryClassification.Derived,
+            ["g002", "g003", "g004", "g005", "g008"]),
     ];
 }

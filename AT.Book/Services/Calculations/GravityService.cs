@@ -227,8 +227,42 @@ public sealed class GravityService : ICalculationService
                 + "configuration, but the price is (1 − μ_k) per step — 2.14e-4 for the smooth class and 0.7998 for the highest mode (a 3734× penalty). The steady state is a filtered copy "
                 + "of the drive, so an unmode-matched drive holds no high-k content; periodic forcing never beats DC; boundary-only support holds a smooth ramp whose contrast ρ ≥ 0 caps at "
                 + "3.09 % of the count. G_005's SUPPRESSED verdict becomes NOT MAINTAINABLE (ResearchY-G_008)."),
+
+            new("clock-rate",
+                "Clock Rate — does ρ move clocks?",
+                "dtau/dt = rho^(1/d);  (1/d)Delta ln rho = Delta Phi/c^2;  AT: exp(x)  vs  GR: sqrt(1 + 2x)",
+                [
+                    new("Earth surface", $"{UsPerDayOf(-EarthDepth):F3} us/day", "AT == GR to double precision"),
+                    new("GPS gravitational", $"{UsPerDayOf(GpsDepth):F3} us/day", "QG187: 45.7"),
+                    new("GPS total (with SR)", $"{UsPerDayOf(GpsDepth - SrTerm):F3} us/day", "observed 38.6 (ratio 0.9984)"),
+                    new("Galactic field (AT)", $"{GalacticAt * 86400 * 1e3:F3} ms/day", "from the G_003 ambient contrast"),
+                    new("Galactic field (v^2/c^2)", $"{GalacticKin * 86400 * 1e3:F3} ms/day", "220 km/s; ratio 0.99668"),
+                    new("equivalent rotation velocity", $"{Math.Sqrt(GalacticAt) * C / 1e3:F2} km/s", "0.33 % agreement, nothing fitted"),
+                    new("arrangement redistribution", $"{UsPerDayOf(0.685714 / 3.0) / 1e6:F1} s/day", "22.86 % at fixed total mass-energy"),
+                    new("realised band (G_005 ceiling)", $"{4.8867e-6 / 3.0 * 86400:F4} s/day", "3.03x the observed level"),
+                    new("AT vs GR second order", "±1/2 x^2", "4.846e-19 (Earth), below the 1e-18 clock floor"),
+                    new("scale invariance", "ρ → λρ: RELATIVE change exactly 0", "only ratios of ρ are physical"),
+                ],
+                "The clock law is DERIVED from g₀₀ = −ρ^(2/d): dτ/dt = ρ^(1/d) with (1/d)Δlnρ = ΔΦ/c². AT and GR agree to first order exactly (Earth −60.145 μs/day; GPS gravitational +45.740 vs QG187's "
+                + "45.7) and split at second order by ±½(Φ/c²)² (4.8e-19 at the Earth's surface — 2–4× below the 1e-18 optical-clock floor). The GPS total needs the imported SR term, so it is CORRELATED. "
+                + "The galactic field is a NEW parameter-free cross-check: the G_003 ambient contrast gives 46.374 ms/day against the rotation curve's 46.528 (0.33 %, equivalent v = 219.63 km/s). The G_002 "
+                + "redistributions move clocks by up to 22.86 % at fixed total mass-energy, but nothing realised or maintainable delivers it — what is realised is exactly GR's galactic depth "
+                + "(ResearchY-G_009)."),
         ];
     }
+
+    // ── G_009: the clock law ─────────────────────────────────────────────────────
+
+    private static double EarthDepth => GM_Earth / (R_Earth * C * C);
+    private static double GpsDepth => GM_Earth / (C * C) * (1.0 / R_Earth - 1.0 / R_GpsOrbit);
+    private static double GpsSpeed => Math.Sqrt(GM_Earth / R_GpsOrbit);
+    private static double SrTerm => GpsSpeed * GpsSpeed / (2.0 * C * C);
+    private static double GalacticAt => (1.6102e-6) / 3.0;
+    private static double GalacticKin => Math.Pow(220e3 / C, 2.0);
+    private const double R_GpsOrbit = 2.66e7;
+
+    /// <summary>Fractional rate deviation in microseconds per day.</summary>
+    private static double UsPerDayOf(double fractional) => fractional * 86400.0 * 1e6;
 
     // ── G_008: lifetimes and gains ───────────────────────────────────────────────
 

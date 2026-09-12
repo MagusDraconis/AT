@@ -2076,11 +2076,11 @@ in the historical program counts below.
 | AT-QG | 182 | Complete |
 | **Total** | **289** | |
 
-## ResearchY G-Program — Gravity Source, Control, Magnitude, Calibration, Realizability, Mechanism, Origin, Controlled Suppression (8 audits, 2026-09-12)
+## ResearchY G-Program — Gravity Source, Control, Magnitude, Calibration, Realizability, Mechanism, Origin, Controlled Suppression, Clock Rate (9 audits, 2026-09-12)
 
-New ResearchY group **G — Gravity Source**. Suite: `AT.Tests/ResearchY/G_GravitySource/` (66/66 pass,
+New ResearchY group **G — Gravity Source**. Suite: `AT.Tests/ResearchY/G_GravitySource/` (74/74 pass,
 ~1 s); shared machinery `AT.Tests/Shared/DensityField.cs`, `AT.Tests/Shared/PhysicalUnits.cs`.
-Detailed docs: `Docs/ResearchY/G_GravitySource/ResearchY-G_00{1..8}.md`.
+Detailed docs: `Docs/ResearchY/G_GravitySource/ResearchY-G_00{1..9}.md`.
 
 ### G_001 — Gravity Source Audit
 **Status:** Complete. **SOURCE = the actualization density ρ** (counting measure), and for the attractive
@@ -2255,9 +2255,32 @@ Random), four candidates.
 - **Goal:** no gravity-control state persists without a mode-matched structured external agent (which the
   canonical chain does not supply) — G_005 sharpened from *not realised* to **not maintainable**.
 
-**App/Book surfaced:** AT.App Research News + Theory Book ("Gravity Source" part, eight new chapters) +
-TestGroups; AT.Book `GravityService` (8 executable calculations), eight theory objects (Physics layer) and
-eight audits g001–g008.
+### G_009 — Clock Rate Audit
+**Status:** Complete. `g₀₀ = −ρ^(2/d)` ⇒ `dτ/dt = ρ^(1/d)` ⇒ `(1/d)Δlnρ = ΔΦ/c²`.
+
+| case | ΔΦ/c² | rate dev | clock | comparator |
+|---|---|---|---|---|
+| Earth surface vs ∞ | −6.9613e-10 | −6.9613e-10 | **−60.145 μs/day** | −60.15 measured; AT ≡ GR |
+| GPS orbit (grav.) | 5.2940e-10 | 5.2940e-10 | **+45.740 μs/day** | 45.7 (QG187); Δlnρ = 1.5882e-9 |
+| GPS (SR, imported) | −8.3365e-11 | — | −7.203 μs/day | −7.2 |
+| GPS total | 4.4603e-10 | 4.4603e-10 | **+38.537 μs/day** | 38.6 (0.9984) — CORRELATED |
+| **Galactic field** | 5.367333e-7 | 5.367333e-7 | **46.374 ms/day** | `v²/c²` = 5.385226e-7 → **0.99668**; v_eq = **219.63 km/s** |
+| arrangement | 0.228571 | 0.228571 | **19 748.6 s/day** | 2.29e17× the clock floor, at `Σm = 0` |
+| degeneracy / random / D96³ / compression | 0.201058 / 0.111111 / 0.092199 / 0.010707 | — | 17 371 / 9 600 / 7 966 / 925 s/day | |
+| realised band (G_005 ceiling) | ≤1.629e-6 | — | 0.1407 s/day | 3.03× the observed level |
+
+- **AT vs GR:** `exp(x) = 1 + x + x²/2` vs `√(1+2x) = 1 + x − x²/2` (coefficients **+0.500001 / −0.499995**
+  at x = 1e-5; difference `x² = 1.0000e-10`): first order **identical**, second order **opposite sign** —
+  in situ **4.846e-19** (Earth), **2.803e-19** (GPS), **2–4× below the 1e-18 clock floor**.
+- **NEW:** the G_003 ambient contrast (nothing fitted) reproduces the rotation-curve depth to **0.33 %**
+  (equivalent v = 219.63 km/s, 46 ms/day, 5.37e11× the clock floor).
+- **Critical question:** YES in the theory (up to **22.86 %** at fixed total mass-energy), NO physically
+  (G_005 caps realised contrasts at 4.8867e-6; G_008 gives 0.622 steps and 0.7998 injected per step). What
+  is realised is exactly GR's depth ⇒ **no new clock effect**; locally AT = GR with the derived `G`.
+
+**App/Book surfaced:** AT.App Research News + Theory Book ("Gravity Source" part, nine new chapters) +
+TestGroups; AT.Book `GravityService` (9 executable calculations), nine theory objects (Physics layer) and
+nine audits g001–g009.
 
 ## Key Unsolved Problems
 
