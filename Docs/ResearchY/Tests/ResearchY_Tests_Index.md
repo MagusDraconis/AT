@@ -88,6 +88,7 @@ ResearchY-G_001   ↔  Y_G_001_Tests.cs    (AT.Tests/ResearchY/G_GravitySource/)
 ResearchY-G_002   ↔  Y_G_002_Tests.cs    (AT.Tests/ResearchY/G_GravitySource/)
 ResearchY-G_003   ↔  Y_G_003_Tests.cs    (AT.Tests/ResearchY/G_GravitySource/)
 ResearchY-G_004   ↔  Y_G_004_Tests.cs    (AT.Tests/ResearchY/G_GravitySource/)
+ResearchY-G_005   ↔  Y_G_005_Tests.cs    (AT.Tests/ResearchY/G_GravitySource/)
 ResearchY-S_001  ↔  Y_S_001_Tests.cs       (AT.Tests/ResearchY/S_Synthesis/)
 ```
 
@@ -221,6 +222,7 @@ ResearchY-S_001  ↔  Y_S_001_Tests.cs       (AT.Tests/ResearchY/S_Synthesis/)
 | ResearchY-G_002 (Density Control Audit) | `AT.Tests/ResearchY/G_GravitySource/Y_G_002_Tests.cs` | ACTIVE | 2026-09-12 | ✅ 9/9 PASSED — `Results/Y_G_002_Result.md` |
 | ResearchY-G_003 (Gravity Magnitude Audit) | `AT.Tests/ResearchY/G_GravitySource/Y_G_003_Tests.cs` | ACTIVE | 2026-09-12 | ✅ 7/7 PASSED — `Results/Y_G_003_Result.md` |
 | ResearchY-G_004 (Gravity Calibration Audit) | `AT.Tests/ResearchY/G_GravitySource/Y_G_004_Tests.cs` | ACTIVE | 2026-09-12 | ✅ 7/7 PASSED — `Results/Y_G_004_Result.md` |
+| ResearchY-G_005 (Control Realizability Audit) | `AT.Tests/ResearchY/G_GravitySource/Y_G_005_Tests.cs` | ACTIVE | 2026-09-12 | ✅ 8/8 PASSED — `Results/Y_G_005_Result.md` |
 | ResearchY-S_001 (Post-V2.1 Theory Architecture Synthesis) | `AT.Tests/ResearchY/S_Synthesis/Y_S_001_Tests.cs` | ACTIVE | 2026-08-30 | ✅ 4/4 PASSED — `Results/Y_S_001_Result.md` |
 
 ## Result Summaries

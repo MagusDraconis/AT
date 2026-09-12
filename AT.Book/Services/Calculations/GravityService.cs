@@ -141,6 +141,38 @@ public sealed class GravityService : ICalculationService
                 + "modified-gravity channel (1.93× short) and a uniform cosmic AT gradient (104× above the local bound). The 1e-6 g figure "
                 + "is a counterfactual — the realised field is g† = 1.06e-11 g and locally the prediction is exactly Newton with the derived G "
                 + "(ResearchY-G_004)."),
+
+            new("gravity-control",
+                "Gravity Control — why the large modes are never realised",
+                "P(Δ) = exp(−⟨N⟩·Δ²/2);  ⟨N⟩ = 1/δ²;  max ΔS = ln 96  ⇒  suppression ≤ 1/96",
+                [
+                    new("observed Δln ρ", ObservedContrast.ToString("0.000e0", CultureInfo.InvariantCulture), "G_003 ambient (g† over 15 kpc)"),
+                    new("⟨N⟩ = 1/δ²", (1.0 / (ObservedContrast * ObservedContrast)).ToString("0.000e0", CultureInfo.InvariantCulture), "events per coherence cell"),
+                    new("P(observed)", Math.Exp(-0.5).ToString("0.0000", CultureInfo.InvariantCulture), "the observed field is TYPICAL"),
+                    new("1 % contrast cut", ContrastAtProbability(0.01).ToString("0.000e0", CultureInfo.InvariantCulture), "the accessibility ceiling"),
+                    new("Δ at the 3.746e5 requirement", ContrastAtProbability(1.0 / 3.746e5).ToString("0.000e0", CultureInfo.InvariantCulture), "5.07× the observed level"),
+                    new("−ln P at the witness 0.15151", MinusLogProbability(0.15151).ToString("0.000e0", CultureInfo.InvariantCulture), "probability 10^−1.9e9"),
+                    new("max entropy suppression", (1.0 / n).ToString("0.000000", CultureInfo.InvariantCulture), "max ΔS = ln 96 ⇒ 1/96"),
+                    new("witness tilt ΔS", "0.272565", "a factor 1.31 only — 3.6e7× short"),
+                    new("tilt contraction, 200 steps", "0.0296", "std 0.008154 → 0.000241"),
+                ],
+                "SUPPRESSED, not forbidden: the large G_003 modes conserve the count exactly (Σρ = 1), break no symmetry (the D_047 lattice "
+                + "invariants are untouched) and occupy genuinely free directions (51 of 96) — they are simply never counted. The entropy "
+                + "channel is CAPPED (max ΔS = ln 96 ⇒ 1/96 = 0.010417, 3.6e7× short of the required 3.746e5), so the mechanism is AT's own "
+                + "mandatory Poisson law δ = 1/√⟨N⟩ read forward from the observed contrast. The internal flow is arrangement-neutral "
+                + "(ρ_(k+1) = μρ_k with the same μ per cell and a(λρ) = a(ρ)), and the attractor erases arrangements, so the modes need an "
+                + "external drive (NP_171 gate g_c = 1.607). ACCESSIBLE = the attractor, the phase directions and Δ ≤ 4.8867e-6 including the "
+                + "observed galactic field; FORBIDDEN = Σρ ≠ 1, a changed A₀ or mirror pairing, a cell above 1/l_P³, or Δ > ln 96 "
+                + "(ResearchY-G_005)."),
         ];
     }
+
+    // The G_003 ambient calibration: the observed galactic field as a counting-measure contrast.
+    private const double ObservedContrast = 1.6102e-6;
+
+    private static double MinusLogProbability(double contrast)
+        => contrast * contrast / (2.0 * ObservedContrast * ObservedContrast);
+
+    private static double ContrastAtProbability(double p)
+        => ObservedContrast * Math.Sqrt(2.0 * -Math.Log(p));
 }

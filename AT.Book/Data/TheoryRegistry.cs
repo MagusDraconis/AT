@@ -181,6 +181,18 @@ public sealed class TheoryRegistry
             CalculationId: "gravity-calibration",
             References: ["ResearchY-G_004", "QG_080", "QG_181"],
             AuditIds: ["g004"]),
+        new("gravity-control", "Gravity Control Realizability", "The large G_003 modes are SUPPRESSED, not forbidden: Poisson counting, not entropy, is what makes them unobservable.",
+            TheoryLayer.Physics, TheoryClassification.Derived, TheoryObjectKind.Derivation,
+            ["gravity-calibration", "gravity-magnitude"],
+            Narrative: "The large fixed-energy reconfigurations violate no conservation law, break no symmetry and occupy genuinely free directions — they are simply never counted. "
+                + "The entropy channel is capped (max ΔS = ln 96 = 4.564348 ⇒ a suppression of only 1/96 = 0.010417, 3.6e7× short of the required 3.746e5; the witness tilt costs a mere 0.272565 nats), "
+                + "so the mechanism is AT's own mandatory Poisson law δ = 1/√⟨N⟩: the observed contrast 1.6102e-6 implies ⟨N⟩ = 3.8569e11, making the observed field typical (P = 0.61), "
+                + "and the required suppression is reached already at 8.1577e-6 (5.07× observed). The internal flow is arrangement-neutral (ρ_(k+1) = μρ_k with the same μ per cell; a(λρ) = a(ρ)) "
+                + "and the attractor erases arrangements, so the modes have no internal drive and a witness tilt contracts ~34× in 200 canonical steps.",
+            Formula: "P(Δ) = exp(−⟨N⟩Δ²/2);  ⟨N⟩ = 1/δ²;  ΔS ≤ ln 96",
+            CalculationId: "gravity-control",
+            References: ["ResearchY-G_005", "QG_194", "D_047"],
+            AuditIds: ["g005"]),
 
         // ── Layer 5 — Correspondence ───────────────────────────────────────────
         new("thermodynamics", "Thermodynamics", "An added occupancy layer over the structural modes (temperature is BOUNDARY).",
@@ -606,5 +618,23 @@ public sealed class TheoryRegistry
             + "point-like deficit gives exactly a = −G_AT·M/r² with no anomalous term (G4-ME22).",
             AuditStatus.Passed, new DateTime(2026, 9, 12), TheoryLayer.Physics, TheoryClassification.Partial,
             ["g001", "g002", "g003", "planck-scale", "omega-matter"]),
+        new("g005", "Control Realizability Audit", "Why are the large G_003 gravity-control modes not realised?",
+            "SUPPRESSED, not forbidden. The large modes conserve the count exactly (Σρ = 1, deficit mass Σ(1/N − ρ) = 0, QG194), break no symmetry (the D_047 lattice invariants — "
+            + "A₀ = 45, lock release 0.80231 nats — are exact and untouched: the witness tilt leaves every within-multiplet block sum bit-identical, L1 = 0), and occupy genuinely free "
+            + "directions (G_002: 51 of 96). STABILITY: the uniform counting measure is the exact fixed point of the canonical diffusion (< 1e-15) while a witness tilt is OFF-ATTRACTOR and "
+            + "contracts ~34× in 200 steps (std 0.00815358 → 0.000241, ratio 0.0296) with the entropy rising 4.291783 → 4.564079 toward ln 96 = 4.564348 and the total conserved to 12 dp. "
+            + "ENTROPY COST (the key negative): the Boltzmann channel is CAPPED — max ΔS = ln 96 = 4.564348 gives only 1/96 = 0.010417, i.e. 3.6e7× SHORT of the required 3.746e5, and the "
+            + "witness tilt costs only ΔS = 0.272565 (a factor 1.31). THE MECHANISM IS POISSON COUNTING: AT's mandatory δ = 1/√⟨N⟩ (QG15/QG228/QG231) read forward from the observed contrast "
+            + "1.6102e-6 gives ⟨N⟩ = 3.8569e11, so the observed field is TYPICAL (P = 0.6065), the 10 %/1 % cuts are 3.4554e-6/4.8867e-6, the required 3.746e5 suppression is reached at "
+            + "8.1577e-6 (5.07× observed), and the witnesses cost −ln P = 1.99e8 (0.032121) … 7.02e10 (0.603175) — the canonical 0.15151 witness having probability 10^−1.9e9. "
+            + "DYNAMICAL ACCESSIBILITY: branching continuity ρ_(k+1) = μρ_k uses the SAME μ for every cell and the metric inherits it conformally (g_(k+1) = μ^(2/d)g_k, residual < 1e-15), "
+            + "so the flow scales the density and never moves occupancy — a uniform rescaling is a gauge transformation (a(λρ) = a(ρ) to < 1e-6 at λ = 10⁶) — and the attractor erases "
+            + "initial arrangement data (basin ≥ 0.9); the only route to a large mode is an external drive (NP_171 gate g_c = 1.607, K ≥ 10.29 ω₁, f(g=1) = 0 — IMPORTED). VERDICTS: "
+            + "ACCESSIBLE = the attractor state, the phase directions and every fluctuation Δ ≤ 4.8867e-6 including the observed galactic field; SUPPRESSED = all five G_003 witnesses; "
+            + "FORBIDDEN = Σρ ≠ 1 / dM ≠ 0, a changed A₀ or mirror pairing without a symmetry-breaking agent, a cell above the Planck floor 1/l_P³ = 2.3687e104 m⁻³, or a contrast above "
+            + "ln 96. CONSEQUENCE: G_004's CALIBRATED verdict is explained dynamically — the observable gravity source is the Poisson-natural part of the counting measure and the huge "
+            + "G_003 modes are an empty tail. No reclassification (D_040 untouched); no canonical claim changes; no new primitive.",
+            AuditStatus.Passed, new DateTime(2026, 9, 12), TheoryLayer.Physics, TheoryClassification.Derived,
+            ["g001", "g002", "g003", "g004", "planck-scale"]),
     ];
 }

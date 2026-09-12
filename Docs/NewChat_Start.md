@@ -530,6 +530,48 @@ REFUTED (the cluster modified-gravity channel, and a uniform cosmic gradient).**
   scale (the combined determination prefers 1.13e-10)? Can AT derive the cluster dark fraction without
   importing Ω_DM? And what exactly suppresses the cosmic AT gradient inside a bound system?
 
+## Control Realizability Audit — the large modes are SUPPRESSED, not forbidden (ResearchY-G_005, 2026-09-12)
+
+G_005 answers the question G_003 left open: **why are the large fixed-energy gravity-control modes not
+realised?** Four channels are tested — stability, entropy cost, conservation constraints, dynamical
+accessibility — and every configuration is classified **ACCESSIBLE / SUPPRESSED / FORBIDDEN**.
+**Verdict: SUPPRESSED (they violate nothing — they are simply never counted).**
+
+| channel | probe | result |
+|---|---|---|
+| 1 stability | canonical `RhoDynamics.DiffuseStep(·, 0.2)` | witness tilt **contracts ~34×** in 200 steps (std 0.00815358 → 0.000241, ratio **0.0296**), H rises 4.291783 → 4.564079 toward ln 96 = 4.564348, total conserved to 12 dp; uniform is the **exact** fixed point (< 1e-15) → **OFF-ATTRACTOR** |
+| 2 entropy cost | `ΔS = ln 96 − H(ρ)` | uniform H = **4.564348** (max); witness tilt `ΔS = 0.272565` ⇒ `e^−ΔS = 0.761424` (a factor 1.31); absolute max `ΔS = ln 96` ⇒ **1/96 = 0.010417** → **3.6e7× SHORT** of the required 3.746e5 |
+| 3 conservation | count / structure / Planck | `Σρ = 1` and deficit mass `Σ(1/N−ρ) = 0` **exactly** for every operation (QG194); `A₀ = 45`, lock `0.80231` nats untouched, witness tilt block sums `L1 = 0`; `ρ_max = 1/l_P³ = 2.3687e104 m⁻³`; one-cell ceiling `Δln ρ ≤ ln 96` |
+| 4 dynamical accessibility | canonical flow | `ρ_(k+1) = μρ_k` (**same μ per cell**) with `g_(k+1) = μ^(2/d)g_k` (residual < 1e-15) ⇒ **arrangement-neutral**; `a(λρ) = a(ρ)` < 1e-6 at λ = 10⁶; attractor erases arrangements (basin ≥ 0.9); **no internal drive** |
+
+- **The mechanism is AT's own Poisson counting law** (`δ = 1/√⟨N⟩`, QG15/QG228/QG231) **read forward**:
+  the observed contrast 1.6102e-6 gives **⟨N⟩ = 3.8569176e11**; then `P(Δ) = exp(−⟨N⟩Δ²/2)` makes the
+  observed field **typical (P = 0.6065**, median 1.8959e-6), puts the 1 % ceiling at **4.8867e-6**, and
+  reaches the required 3.746e5 suppression already at **8.1577e-6 (5.07× observed)**.
+  Witness costs: `−ln P` = 1.99e8 (0.032121), 1.47e10 (0.276596), 2.14e10 (0.333333), 7.02e10
+  (0.603175), 4.43e9 (0.15151 — probability 10^−1.9e9).
+- **Verdicts.** **ACCESSIBLE**: the attractor/uniform state (zero field), the phase directions, and every
+  fluctuation `Δ ≤ 4.8867e-6` **including the observed galactic field**. **SUPPRESSED**: all five G_003
+  witnesses. **FORBIDDEN**: `Σρ ≠ 1` / `dM ≠ 0`; a changed `A₀`/mirror pairing without a
+  symmetry-breaking agent (D_047); `ρ > 1/l_P³`; `Δ > ln 96` — none is a ρ-operation.
+- **Consequence.** G_004's CALIBRATED verdict is now explained **dynamically** rather than merely
+  observed: the gravity source is `ρ` (G_001), its controllable part is real but statistically
+  inaccessible (G_002/G_005), and the observable magnitude is set by the counting law — nature exhibits
+  the Poisson-natural part of the counting measure and the huge G_003 modes are an empty tail.
+- **Classification.** DERIVED: the Poisson window, the entropy ceiling, the conservation invariants,
+  arrangement-neutrality, the band partition. IMPORTED/EMERGENT inputs: the observed contrast, the
+  anchors, NP_171's lock gate (`g_c = 1.607`, `K ≥ 10.29 ω₁`, `f(g=1) = 0`). **No reclassification** —
+  D_040 untouched; no canonical claim or equation changes; no new primitive.
+- **Files.** `Docs/ResearchY/G_GravitySource/ResearchY-G_005.md`,
+  `AT.Tests/ResearchY/G_GravitySource/Y_G_005_Tests.cs` (8/8 ✅, ~0.3 s; group G total 40/40),
+  `Docs/ResearchY/Tests/Results/Y_G_005_Result.md`; AT.App (Research News + Theory Book + TestGroup) and
+  AT.Book (`gravity-control` calculation, theory object + audit `g005`).
+- **Next open questions (G_005 OP1–OP4).** The 0.40% `G` gap and the 7.7–13% RAR offset are still
+  unexplained. `L` is still a BOUNDARY. Could a *driven* mode (not a spontaneous one) be realised in a
+  laboratory — the only route that could falsify the suppression claim? And the diffusive contraction
+  rate and the Poisson counting window, though both rooted in the counting measure, are not yet derived
+  from a single principle.
+
 ## Latest Repo Sync
 
 Recent commits from the other machine:
@@ -762,6 +804,7 @@ Weak-coupling scale note:
 | Density Control | ResearchY-G_002 | CONTROLLABLE — ρ changes at fixed total mass-energy (Σm = 0 exactly, QG194): arrangement (ΔE = 0, a sign flips), degeneracy redistribution inside multiplets (spectrum untouched, field 0 → 0.603175), fixed-total compression (ΔE = 0, L1 up to 5.16), lattice choice (random = exact zero-field null; D96³ 97.6% vs D96 53.1% energy-free). CORRELATED = unfixed compression (E −46.8/−73.0/−86.4%) and rescaling (E ×3.7, a exactly invariant). REFUTED = phase coherence (ρ, R, a bit-unchanged; interference still 4 → 0). The free room is Σ(m_i − 1) = N − A₀ = 51 of 96 for D96 = the D_048 latent fraction L exactly |
 | Gravity Magnitude | ResearchY-G_003 | MEASURABLE (potential/clock: ΔΦ/c² = Δa_AT is a pure number; witnesses 3–69 %, 6.0e17× an optical clock) · ASTROPHYSICAL ONLY (Δa needs L: 10⁻¹² g for L < 9.54 Gpc, 10⁻⁹ g < 9.54 Mpc, 10⁻⁶ g < 9.54 kpc; arrangement 203.66) · PRACTICALLY ZERO (phase = 0 exactly; rescaling Δa = 0 with only the overall λ^(−2/d) curvature factor). Critical answer: YES to all three thresholds at fixed total energy. Falsifiable number: the observed galactic field ⟺ Δln ρ = 1.6102e-6 over 15 kpc, so the G_002 witnesses need suppression ≥ 3.746e5. Anchor: GPS 45.74 μs/day (QG187 45.7) |
 | Gravity Calibration | ResearchY-G_004 | CALIBRATED at 3 of 4 scales with NO free parameters: Earth 0.99600 (GM_⊕/R_⊕² = 9.820250 vs 9.780965; residual = the derived-G offset 0.40%), Sun–Earth 0.99600 (+ψ perihelion 42.98″/century, PPN γ=β=+1; GPS 38.5 vs 38.6 μs/day), Galaxy RAR 0.86850 (g† = cH₀/2π vs the literature mean; 0.9226 vs the project's combined a₀/cH₀) · CORRELATED: the RAR interpolating function (AT-native: the α=0 log deficit) · REFUTED: the cluster modified-gravity channel (Coma a_pred/a_obs = 0.51759, 1.93× short; MOND 0.610) and a uniform cosmic AT gradient (104× above the local bound). Critical: 10⁻⁶ g needs Δln ρ = 0.15151 over 15 kpc, but the realised field is g† = 1.06e-11 g (9.41e4× below); locally a point-like deficit gives exactly Newton with G_AT and no anomaly (G4-ME22) |
+| Control Realizability | ResearchY-G_005 | SUPPRESSED, not FORBIDDEN: the large G_003 modes conserve the count (Σρ = 1, deficit mass 0, QG194), break no symmetry (A₀ = 45, lock 0.80231 exact, block sums L1 = 0) and occupy genuinely free directions (51 of 96) — they are simply never counted. STABILITY: the uniform measure is the exact fixed point of the canonical diffusion and a witness tilt contracts ~34× in 200 steps (std 0.00815358 → 0.000241) with H rising to ln 96 → OFF-ATTRACTOR. ENTROPY is CAPPED (max ΔS = ln 96 ⇒ 1/96 = 0.010417, 3.6e7× short of 3.746e5; the witness costs ΔS = 0.272565 = a factor 1.31) ⇒ NOT thermodynamic. THE MECHANISM IS AT's Poisson law δ = 1/√⟨N⟩ read forward: ⟨N⟩ = 3.8569e11 makes the observed 1.6102e-6 typical (P = 0.61), the 1 % ceiling 4.8867e-6, and the required 3.746e5 suppression is reached at 8.1577e-6 (5.07× observed); witnesses cost −ln P = 1.99e8 … 7.02e10. DYNAMICAL: the flow is arrangement-neutral (ρ_(k+1) = μρ_k, same μ per cell; a(λρ) = a(ρ)) and the attractor erases arrangements ⇒ no internal drive. ACCESSIBLE = attractor + phase + Δ ≤ 4.8867e-6 (incl. the observed field); FORBIDDEN = Σρ ≠ 1, changed A₀/pairing, cell > 1/l_P³, or Δ > ln 96. G_004's CALIBRATED verdict is thereby explained dynamically |
 | G Bridge (QG6↔QG181) | QG182 | BRIDGE ORIGIN (deficit parameters from D96: m₀ = occ₀/Σm = 4/95 = S param, r₀ = ln(span), ρ̄ = 1 → GM_eff = 1/ln(M_Pl/v) = 1/(3·ln A), 0.0969%; identity occ₀·ln(span)·ln(Σm·#g·occ₂) = Σm; two G constructions are the same physical content) |
 | Planck Scale Robustness | QG183 | ROBUST ORIGIN (physical exponent p = ln(M_Pl/v)/ln(A) = 2.99984, cubic to 1e-4; only A³ reproduces M_Pl (0.2%) while A¹/A²/A⁴ fail by 100%/100%/3.6e7%, nearby exponents 47-260% dev; no alternative A selects cubic; 3-factor/3-band/d=3 structure) |
 | Mass-Radius Relation | QG184 | MASS-RADIUS ORIGIN (observed M ∝ R emerges from counting measure: the deficit is per-octave/log — G4ME flat-rotation-curve profile — giving a ∝ −1/r and GM_eff = m₀·R/(d·L·ρ̄) ∝ R; QG13's E ∝ R^d was the compact-void assumption; with S ∝ R^(d−1) (QG12), T ∝ 1/R — Hawking restored, no new primitives) |

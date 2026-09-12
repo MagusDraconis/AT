@@ -2076,11 +2076,11 @@ in the historical program counts below.
 | AT-QG | 182 | Complete |
 | **Total** | **289** | |
 
-## ResearchY G-Program — Gravity Source, Control, Magnitude, Calibration (4 audits, 2026-09-12)
+## ResearchY G-Program — Gravity Source, Control, Magnitude, Calibration, Realizability (5 audits, 2026-09-12)
 
-New ResearchY group **G — Gravity Source**. Suite: `AT.Tests/ResearchY/G_GravitySource/` (32/32 pass,
-~0.24 s); shared machinery `AT.Tests/Shared/DensityField.cs`, `AT.Tests/Shared/PhysicalUnits.cs`.
-Detailed docs: `Docs/ResearchY/G_GravitySource/ResearchY-G_00{1..4}.md`.
+New ResearchY group **G — Gravity Source**. Suite: `AT.Tests/ResearchY/G_GravitySource/` (40/40 pass,
+~0.3 s); shared machinery `AT.Tests/Shared/DensityField.cs`, `AT.Tests/Shared/PhysicalUnits.cs`.
+Detailed docs: `Docs/ResearchY/G_GravitySource/ResearchY-G_00{1..5}.md`.
 
 ### G_001 — Gravity Source Audit
 **Status:** Complete. **SOURCE = the actualization density ρ** (counting measure), and for the attractive
@@ -2134,9 +2134,45 @@ REFUTED (cluster modified gravity).**
   the ephemeris bound (REFUTED); locally a point-like deficit gives exactly `a = −G_AT M/r²` with no
   anomalous term (G4-ME22) — the 1/r flat-curve regime needs a scale-free extended deficit (G4-ME21).
 
-**App/Book surfaced:** AT.App Research News + Theory Book ("Gravity Source" part, four new chapters) +
-TestGroups; AT.Book `GravityService` (4 executable calculations), four theory objects (Physics layer) and
-four audits g001–g004.
+**App/Book surfaced:** AT.App Research News + Theory Book ("Gravity Source" part, five new chapters) +
+TestGroups; AT.Book `GravityService` (5 executable calculations), five theory objects (Physics layer) and
+five audits g001–g005.
+
+### G_005 — Control Realizability Audit
+**Status:** Complete. **SUPPRESSED, not FORBIDDEN.** The large G_003 modes violate nothing (count
+conserved, no symmetry broken, 51 of 96 directions genuinely free) — they are simply never counted.
+Four channels were tested:
+
+| # | channel | probe | result |
+|---|---|---|---|
+| 1 | stability | `RhoDynamics.DiffuseStep(·, 0.2)` | uniform ρ is the **exact** fixed point (< 1e-15); a witness tilt is OFF-ATTRACTOR and contracts ~34× in 200 steps (std 0.00815358 → 0.000485 → 0.000241, ratio 0.0296) with H rising 4.291783 → 4.564079 toward ln 96 = 4.564348, total conserved to 12 dp |
+| 2 | entropy cost | `ΔS = ln 96 − H(ρ)` | uniform H = **4.564348** (max); witness tilt `ΔS = 0.272565` ⇒ `e^−ΔS = 0.761424` (a factor 1.31); absolute max `ΔS = ln 96` (one cell) ⇒ **1/96 = 0.010417** → **3.6e7× SHORT** of 3.746e5 |
+| 3 | conservation | count / structure / Planck | `Σρ = 1` and `Σ(1/N − ρ) = 0` **exactly** for every operation (QG194); `A₀ = 45` and lock `0.80231` nats exact and untouched (cube control: 884 736 modes, 20 812 eigenspaces, lock 3.948614, L = 0.97648); witness tilt leaves every within-multiplet block sum bit-identical (`L1 = 0`); `ρ_max = 1/l_P³ = 2.3687e104 m⁻³`; one-cell contrast ceiling `Δln ρ = ln 96` |
+| 4 | dynamical accessibility | canonical flow | `ρ_(k+1) = μρ_k` with the **same μ per cell** and `g_(k+1) = μ^(2/d)g_k` (residual < 1e-15) ⇒ **arrangement-neutral**: `a(λρ) = a(ρ)` < 1e-6 at λ = 10⁶, so a uniform rescaling is a gauge transformation; the attractor erases arrangements (basin ≥ 0.9); the only route to a large mode is an external drive (NP_171 gate `g_c = 1.607`, `K ≥ 10.29 ω₁`, `f(g=1) = 0` — IMPORTED) |
+
+- **The mechanism is AT's own mandatory Poisson counting law** (`δ = 1/√⟨N⟩`, QG15/QG228/QG231) read in
+  the **forward** direction. The observed contrast 1.6102e-6 (G_003's ambient calibration) measures
+  `⟨N⟩ = 1/δ² = 3.8569176e11` events per coherence cell; then `P(Δ) = exp(−⟨N⟩Δ²/2)` gives:
+
+| Δ | −ln P | P | note |
+|---|---|---|---|
+| 1.6102e-6 | 0.500 | 0.6065 | **observed — typical** |
+| 1.8959e-6 | 0.693 | 0.500 | median |
+| 3.4554e-6 / 4.8867e-6 | 2.303 / 4.605 | 0.10 / 0.01 | 10 % / 1 % cuts — **the accessibility ceiling** |
+| 8.1577e-6 | 12.834 | 2.7e-6 | **the required 3.746e5 suppression is reached here** (5.07× observed) |
+| 0.032121 … 0.685714 | 1.99e8 … 9.07e10 | 10^(−8.6e7) … | the five G_003 witnesses |
+| 0.15151 | 4.43e9 | 10^(−1.9e9) | the canonical witness |
+
+- **Verdicts.** ACCESSIBLE = the attractor/uniform state (exactly zero field), the phase directions, and
+  every fluctuation `Δ ≤ 4.8867e-6` **including the observed galactic field** (P = 0.61).
+  SUPPRESSED = all five G_003 witnesses. FORBIDDEN = `Σρ ≠ 1` / `dM ≠ 0`; a changed `A₀` or mirror
+  pairing without a symmetry-breaking agent (D_047); a cell above the Planck floor; `Δ > ln 96` — none is
+  a ρ-operation. The bands are disjoint and exhaustive on the contrast axis.
+- **Key negative result:** the suppression is **not thermodynamic**. The entropy channel's ceiling is
+  `1/96`, 3.6e7× short; the witness tilt costs only 0.272565 nats. It is statistical (Poisson) plus
+  dynamical (no drive).
+- **Consequence:** G_004's CALIBRATED verdict is explained **dynamically** — the observably sourced
+  gravity is the Poisson-natural part of the counting measure, and the huge G_003 modes are an empty tail.
 
 ## Key Unsolved Problems
 
