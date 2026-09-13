@@ -3,6 +3,87 @@
 All notable changes to THE Q-MODEL (AT) are documented here. Versions follow the
 repository's release cadence; this file covers the publication-relevant milestones.
 
+## [2.2.0] — 2026-09-13
+
+**Release status: AUDIT LINES COMPLETE — NOT YET TAGGED; no Zenodo deposit for V2.2** (the archived,
+citable monograph remains V2.0, DOI 10.5281/zenodo.20681734). See
+`Docs/Publication/RELEASE_NOTES_V2_2.md` for the tag recommendation: re-run G_027/G_033/G_035 with
+`AtSourceScan`, and fix the `D_ResonanceStructure` hang, before tagging.
+
+### Added
+- **ResearchY V2.2 New Physics program (NP)** — 172 audits, NP_001–NP_175. A lock-lattice hardware
+  proposal (NP_170), the mechanism in a deterministic model (NP_171), a retention null audit showing
+  the signature is generic (NP_172), a discriminator audit establishing that **no AT-specific
+  observable remains** (NP_173), and a synthesis (NP_174) leading to **formal program closure
+  (NP_175, 2026-09-11)** — status/archival labels only, no claim or registry entry modified.
+- **G_028 — CLOCK CLOSED.** The physical clock law is `dτ/dt = ρ^(1/d)`; the **source law is the
+  clock law** (`a = −(1/d)∇ln ρ = −∇A`), and the clock law needs **g₀₀ only**.
+- **G_029 — the spatial sector closes on a POSTULATE:** `g_rr = 2 − ρ^(2/d)` (i.e.
+  `B = ½ln(2 − e^(−2x))`), reproducing **γ = +1**, and **non-conformal** (A ≠ B).
+- **G_030 — NO-GO theorem:** no local `B(r) = F(σ)` satisfies Newton + Cassini + light deflection +
+  the clock sector + the no-new-primitive rule. The spatial sector is **not derivable**.
+- **G_031** — conformal flatness **IS** the counting measure (`√det g_ij = ρ`).
+- **G_035 — TEMPORAL INDEPENDENCE:** of 37 group-G suites, **25 need g₀₀ only, 9 need g_ij, 3 are
+  the conformal assumption**; the boundary is exactly **G_020 → G_021**; the minimal time sector is
+  one metric function + one scalar + one exponent.
+- **G_036 — TEMPORAL CORE TEST (BOUNDARY):** the observed redshift `z = 1/√(−g₀₀) − 1` is a **pure**
+  g₀₀ quantity; `Δz = 0.125628` at J0740+6620 (44.8 % of z_AT); the arena is **neutron stars only**
+  and the limiting factor is **compactness precision** (σ_x/x = 13.73 % vs 3.661 % needed).
+- **E_001 — Electromagnetism Inventory (new group E, BOUNDARY):** the EM **kinematics is derived**
+  (U(1) = Z₉₆ ⊂ D96; 1 + 3 + 8 = 12; topological charge; emergent c = ℓ/τ) while the **dynamics is
+  declared but never computed** (Noether currents, F^a_μν, −¼F² and the full Lagrangian all exist as
+  **string-returning members**); the sourced Maxwell equation and any spin-1 wave equation are
+  **missing**; α is **self-contradictory** and U(1) has **two incompatible origins**.
+- **`AtSourceScan`** (`AT.Core/ResearchXH/`) — a whole-file literal/comment stripper handling
+  ordinary, verbatim, interpolated and raw strings, char literals and both comment forms.
+- **`AT.Tests/Unit/RenderingBackendTests.cs`** — always-on rendering-backend smoke tests (4).
+- **G_027** — verdict discipline enforced mechanically: **no literal may reach a verdict**.
+- Release artifact `Docs/Publication/RELEASE_NOTES_V2_2.md`; root `README.md` rewritten for V2.2.
+
+### Changed
+- **Research/audit only — no canonical AT V2.0 values, equations, predictions or claim statuses are
+  altered**, and the D_040 classification registry is untouched.
+- **The spatial sector is reclassified as POSTULATED**, not derived (G_029/G_030).
+- **G_036 registered** in the G_035 classification registry as Spatial/BOUNDARY (triaged
+  `ScanDetectsIt: false`): the counts become **25/9/3 of 37**, boundary index still 23. G_033's
+  D96-free era count moved 13 → 14.
+- **`AtlasDataService.Version` = `"2.2.0"`** (displayed in the app bar, nav menu and home hero).
+- **SixLabors.ImageSharp replaced by SkiaSharp 3.119.0.** ImageSharp's targets ran a licence check
+  with `ContinueOnError` true only for Debug, so **every Release build hard-failed** while Debug
+  built fine. SkiaSharp is MIT and imposes no such check; the imaging backend is now confined to
+  `AtBitmap` behind the library-neutral `AtColor`, and ~20 callers reference no imaging library.
+- `AtNumerics.ExpM1` extracted as the single cancellation-free `e^x − 1` implementation.
+
+### Fixed
+- **Three G-chain optics errors retracted** (G_024) and the defect class shown to be **systemic**
+  (G_026): four QG audits carrying four contradictory test suites, all passing.
+- **G_025** corrected an off-by-one and a **hard-coded γ** in the optics derivation.
+- **G_034** replaced exact-`double` keying with tolerance clustering; every conclusion UNCHANGED —
+  the A0 dependence was a floating-point degeneracy artefact.
+- **A per-line stripping defect** in the G_027/G_033/G_035 scanners, which counted multi-line
+  verbatim-string **prose** as executable **code** (live proof: `J_Q`). `AtSourceScan` is the fix.
+
+### Verification
+- **4,590 tests discovered** across 1,167 files in `AT.Tests`; group G **283/283**, group E **7/7**,
+  `Unit` + `ResearchQG` **161 passed** (13 skipped as FITS-data-gated).
+- **Release build clean** (0 errors); AT.App and AT.Book clean.
+- Determinism: the E_001 scan is exact, cached, and excludes the audit's own source.
+
+### Open (documented, non-blocking)
+- **The full test suite hangs** in `D_ResonanceStructure` (`Y_D_022`) and one legacy `Research`
+  suite. Hang dumps in `AT.Tests/TestResults` date from **2026-09-01** — pre-existing, not caused by
+  V2.2.
+- The 16 `T_SpectralBlueprint` suites are **not registered** in `ResearchY_Index.md`.
+- **G_027, G_033 and G_035 should be re-run** with `AtSourceScan` (their prose/code separation was
+  unreliable).
+- The electromagnetic **sourced field equation and spin-1 wave equation remain absent** (E_001), and
+  **α remains self-contradictory**.
+
+### Migration
+- None required — V2.2 is additive research; canonical consumers are unaffected. Consumers that
+  referenced `RARPlotter.Series`/`ImageMapExporter` with `SixLabors.ImageSharp` types should switch
+  to `AtColor`.
+
 ## [2.1.0] — 2026-08-30
 
 **Release status: READY FOR TAGGING — ResearchY V2.1 Boundary Program (origin chain complete).**

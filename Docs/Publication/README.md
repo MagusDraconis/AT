@@ -1,6 +1,8 @@
 # THE ACTUALIZATION THEORY — Publication Package
 
 **Publication status: V2.0 RELEASED (2026-08-27) · Prediction Registry v1.0 RELEASED (companion).**
+**Repository line: V2.2 (2026-09-13) — audit lines complete, NOT yet tagged, no V2.2 Zenodo deposit.**
+The archived, citable artifact remains the V2.0 monograph under DOI https://doi.org/10.5281/zenodo.20681734.
 
 This directory contains the Zenodo publication package for The Actualization Theory
 (formerly THE Q-MODEL, TQM). It is organized into two versioned subdirectories plus the
@@ -13,8 +15,13 @@ shared metadata at this root.
 | `V1.0/` | Superseded v1.0 publication package (white paper + reference monograph, "four primitives" era) |
 | `V2.0/` | Canonical v2.0 monograph chapters + compiled PDF (The Actualization Theory, primitives {Difference, η}) |
 | `V2.0/ActualizationTheory_PredictionRegistry.tex/.pdf` | Companion Prediction Registry v1.0 (standalone Zenodo publication) |
-| `Zenodo_Metadata.json` | Zenodo upload metadata (title, authors, keywords, license) |
-| `Zenodo_Abstract_V2_0.md` | Zenodo abstract for V2.0 |
+| `Zenodo_Metadata.json` | Zenodo upload metadata (title, authors, keywords, license) — current release line (V2.2) |
+| `Zenodo_Metadata_V1_0.json` | Zenodo upload metadata as deposited for V1.0 (archived) |
+| `Zenodo_Abstract.md` | Zenodo abstract for the current release line (V2.2) |
+| `Zenodo_Abstract_V2_0.md` | Zenodo abstract for V2.0 (archived) |
+| `Zenodo_Abstract_V1_0.md` | Zenodo abstract for V1.0 (archived, "four primitives" era) |
+| `RELEASE_NOTES_V2_2.md` | V2.2 release notes (current audit line) |
+| `RELEASE_NOTES_V2_1.md` | V2.1 release notes |
 | `RELEASE_NOTES_V2_0.md` | V2.0 release notes |
 | `CITATION.cff` | Citation File Format metadata |
 | `CHANGELOG.md` | Version history |
@@ -64,10 +71,33 @@ status, and falsification criterion. Statuses: CONSISTENT 32, PENDING 8, BOUNDAR
 FALSIFIED 0. The three pre-registered frontier predictions (P1 106 GeV, P2 0νββ,
 P3 sector ladder) are recorded with frozen values and explicit falsification criteria.
 
+## V2.1 and V2.2 (research releases — no new Zenodo deposit)
+
+| Version | Date | Content | Deposit |
+|---|---|---|---|
+| **V2.1** | 2026-08-30 | Boundary Program — the origin chain traced end to end and closed with exactly **five irreducible boundaries**; 13 boundary items reclassified | none |
+| **V2.2** | 2026-09-13 | New Physics (NP_001–NP_175, **formally closed**) + the gravity/time audits G_021–G_036 and the new electromagnetism group E_001 | none |
+
+Neither V2.1 nor V2.2 adds a publication artifact, so **the archived, citable monograph remains
+V2.0** and the DOI is unchanged. V2.2's headline results are deliberately negative and are recorded
+in full in `RELEASE_NOTES_V2_2.md`:
+
+- AT's **derived** spatial structure (the counting measure) is **excluded by measurement** —
+  γ = −1 gives zero light bending, refuted at 8.6957×10⁴ σ by Cassini.
+- The spatial sector **cannot be derived** (G_030 no-go) and closes instead on the postulate
+  `g_rr = 2 − ρ^(2/d)`, which reproduces γ = +1.
+- The electromagnetic **dynamics is declared but never computed** (E_001): the currents, `F^a_μν`,
+  `−¼F²` and the full Lagrangian exist only as **string-returning members**, and the sourced Maxwell
+  equation is absent.
+- Light bending is **resolved**: time dilation alone gives exactly **half** the deflection, excluded
+  at 43,479 σ, so the spatial half is required.
+
 ## Source repository
 
 https://github.com/MagusDraconis/AT
 
-Build & test: `dotnet build AT.Core/AT.Core.csproj` then
-`dotnet test AT.Tests/AT.Tests.csproj` (.NET 10, MathNet.Numerics 5.0).
+Build & test: `dotnet build -c Debug` then `dotnet test AT.Tests/AT.Tests.csproj -c Debug`
+(.NET 10; FITS.Lib 5.0.381, MathNet.Numerics 5.0.0, SkiaSharp 3.119.0). Release builds are
+supported. Note that the **full test suite currently hangs** in `D_ResonanceStructure` — run
+targeted filters; see the Known Issues section of the repository `README.md`.
 

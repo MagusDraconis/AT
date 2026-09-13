@@ -11,7 +11,7 @@ public static class AtlasDataService
     /// <summary>The current AT research-atlas version (single source of truth).</summary>
     public const string Version = "2.2.0";
 
-    /// <summary>Human-readable version label, e.g. "v2.1".</summary>
+    /// <summary>Human-readable version label, e.g. "v2.2".</summary>
     public static string VersionLabel => $"v{Version}";
 
     public static IReadOnlyList<string> WhyQuestions { get; } =
@@ -62,8 +62,8 @@ public static class AtlasDataService
         new("V2.1", "The origin program",
             "The ResearchY audits: N=96 derived from the observable sector, the complex state, reciprocity, su(2) compact-form, the five-item boundary set (D_020–D_045, R_001).",
             "bi-diagram-3", "amber"),
-        new("V2.2", "New physics & the ρ bridge",
-            "Measurement chain (M), lever & coupling audits (NP), and the geometry bridge (QG): one object ρ with an information face and a geometric face; ΩΛ = 0.6839; O(2) doublets; horizon bookkeeping.",
+        new("V2.2", "New physics, closed",
+            "The New Physics program (NP_001–NP_175) found no AT-specific observable and formally closed the lock-lattice hardware program. The gravity/time audits (G_021–G_036) closed the clock sector on dτ/dt = ρ^(1/d), refuted the derived spatial structure (Cassini, 8.6957e4σ), proved the spatial sector is not derivable (no-go), and opened the electromagnetism inventory (E_001).",
             "bi-boxes", "orange"),
     ];
 

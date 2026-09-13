@@ -34,9 +34,19 @@ license: CC-BY-4.0
 Monograph: CC-BY-4.0
 Code: MIT
 
-version: "2.0"
+version: "2.2"
 
-date-released: "2026-08-27"
+date-released: "2026-09-13"
+
+notes: >-
+  The repository development line is V2.2 (New Physics program; audit lines complete
+  2026-09-13). The archived, citable artifact remains the V2.0 monograph, and
+  preferred-citation below points at its DOI. V2.2 adds no publication artifact and has no
+  Zenodo deposit of its own. Note also that version 2.2 records three negative headline
+  results: the theory's derived spatial structure is excluded by measurement (gamma = -1,
+  Cassini 8.6957e4 sigma), the spatial sector cannot be derived (G_030 no-go), and the
+  electromagnetic dynamics is declared but never computed (E_001). See
+  Docs/Publication/RELEASE_NOTES_V2_2.md.
 
 repository-code: "https://github.com/MagusDraconis/AT"
 

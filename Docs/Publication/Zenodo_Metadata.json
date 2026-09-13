@@ -1,20 +1,22 @@
 {
   "metadata": {
-    "title": "THE Q-MODEL — From Q to Cosmology: A Theory of Structure, Complexity and Random Actualization (Version 1.0, revised)",
-    "description": "THE Q-MODEL (AT) is a theory of structure and content that compresses observable physics to four primitives — the individuation principle Q, Random Actualization, the scale triad (l, tau, hbar), and a single continuous nonlinearity parameter M^2 — and holds that the form of every structure is derivable from these primitives while the content (specific masses, couplings, multiplicities, the Koide angle) is realized by contingent draw. The derivation program yields U(1) as a theorem, spatial dimensionality d=3+1, the multiplicity lower bound N>=3, the log-normal abundance law, and phase-gradient gravity whose leading order is the Einstein equations. The dynamical layer is the graph Laplacian L_Q, whose reversible dynamics yield the Schrodinger equation. The theory makes quantitative, falsifiable predictions (zero-parameter radial acceleration, a specific w(z), a time-varying Lambda(t), the log-normal abundance form), one of which (neutrino-Koide) was already falsified. Publication status: READY_FOR_WHITEPAPER — NOT_READY_FOR_JOURNAL.",
+    "title": "The Actualization Theory — A Reconstruction of Physics from Difference, Actualization and Spectrum (V2.2, New Physics Program)",
+    "description": "The Actualization Theory (AT, formerly THE Q-MODEL) reconstructs physics from the primitive Difference and the tensor reference eta through the hierarchy Difference -> Actualization -> Inevitable Spectrum -> Physics, with the D96 spectrum as the source of quantum mechanics, gravity, standard-model observables and cosmology. Its central claim is the structure/content split: the form of observable structure (topology, symmetry, distribution shape, lower bounds) is provable from the primitives, while the content (masses, couplings, multiplicities, angles) is a contingent draw, classified rather than derived. Version 2.1 closed the origin chain end to end, leaving exactly five irreducible boundaries: {Difference, eta}, the Z2-paired (complex) sector, the three octave families, {SU(2) gauge, j = 1/2}, and {v, m_e}. Version 2.2 is the New Physics program (172 audits, NP_001-NP_175); it established that no AT-specific observable remains and formally closed the lock-lattice physical-realizability program. In parallel it extended the gravity/time audits (G_021-G_036) and opened an electromagnetism group (E_001), whose headline results are deliberately negative and are recorded in full: the derived spatial structure is excluded by measurement (the conformal form gives gamma = -1, i.e. zero light bending, refuted by Cassini at 8.6957e4 sigma); the spatial sector cannot be derived (G_030 no-go) and closes instead on the postulate g_rr = 2 - rho^(2/d), which reproduces gamma = +1; and the electromagnetic dynamics is declared but never computed (E_001), with the sourced Maxwell equation and any spin-1 wave equation absent, alpha self-contradictory, and U(1) carrying two incompatible origins. Also resolved: light bending requires the spatial half, since time dilation alone gives exactly half the observed deflection and is excluded at 43,479 sigma. Publication status: the ARCHIVED, CITABLE ARTIFACT REMAINS THE V2.0 MONOGRAPH (DOI 10.5281/zenodo.20681734); V2.2 adds no publication artifact and has no deposit of its own.",
     "keywords": [
-      "THE Q-MODEL",
+      "The Actualization Theory",
       "AT",
       "emergence",
       "quantum foundations",
-      "causal set theory",
-      "graph Laplacian",
-      "Schrodinger equation",
+      "Difference",
+      "Actualization",
+      "D96 spectrum",
       "gauge structure",
       "radial acceleration relation",
       "dark energy",
       "structure/content split",
-      "falsifiability"
+      "falsifiability",
+      "light bending",
+      "electromagnetism"
     ],
     "creators": [
       {
@@ -23,10 +25,10 @@
         "orcid": ""
       }
     ],
-    "license": "MIT",
-    "version": "1.0.0",
-    "publication_date": "2026-08-15",
-    "publication_type": "whitepaper",
+    "license": "CC-BY-4.0",
+    "version": "2.2.0",
+    "publication_date": "2026-09-13",
+    "publication_type": "other",
     "upload_type": "publication",
     "access_right": "open",
     "access_status": "open",
@@ -43,8 +45,14 @@
         "identifier": "https://github.com/MagusDraconis/AT",
         "relation": "isSupplementTo",
         "scheme": "url"
+      },
+      {
+        "identifier": "10.5281/zenodo.20681734",
+        "relation": "isVersionOf",
+        "scheme": "doi"
       }
     ],
-    "notes": "Publication status: READY_FOR_WHITEPAPER — NOT_READY_FOR_JOURNAL. The central derivation claim (Einstein recovery from Q-events) remains logical, not mathematical: the metric and the BDG action are imported, G = l^2 c^3 / hbar is dimensional analysis, and no unique sharp prediction yet discriminates AT from SM + LambdaCDM. See Docs/Audits/PublicationReadiness_Final.md."
+    "notes": "V2.2 (2026-09-13) is a research release: audit lines complete, NOT yet tagged, and NO Zenodo deposit. The archived, citable monograph remains V2.0 under DOI 10.5281/zenodo.20681734. Monograph text: CC-BY-4.0; code: MIT. V2.2 records three negative headline results honestly (a refuted spatial structure, a no-go theorem, and a declared-but-uncomputed electromagnetic dynamics) alongside one resolution (light bending requires the spatial sector). Before tagging, two items are recommended: re-run the G_027/G_033/G_035 source scanners with AtSourceScan (their per-line stripping counted multi-line verbatim-string prose as code), and fix the D_ResonanceStructure full-suite hang recorded in AT.Tests/TestResults since 2026-09-01. See Docs/Publication/RELEASE_NOTES_V2_2.md."
   }
 }
+
