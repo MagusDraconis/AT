@@ -400,6 +400,15 @@ public static class TemporalIndependenceAudit
             + "counts. NOT symbol-detectable: the suite names no B, g_rr or GammaOf — its vocabulary is "
             + "dimensions, bivectors, rotations, polarisations and clocks",
             ScanDetectsIt: false),
+
+        // ── G_043: why stop at the first working dimension? ──
+        new SectorClaim("Y_G_043", "Minimality", MetricRequirement.ClockOnly,
+            "it asks why the substrate stops at d = 3 rather than continuing to d = 4, 5, and every statement "
+            + "is a count, a growth law or the clock law rho^(1/d): polarisation counts, the Hodge mismatch, "
+            + "irrep-dimension growth, the state-space size 96^d, the orbital count C(48+d, d), and the rate the "
+            + "same rho gives at each d. NOT symbol-detectable: the suite names no B, g_rr or GammaOf — its "
+            + "vocabulary is dimensions, polarisations, orbitals and clocks",
+            ScanDetectsIt: false),
     };
 
     // ── The computed classification summaries ───────────────────────────────

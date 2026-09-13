@@ -3557,6 +3557,50 @@ separate lines. Splitting them restored the table — and the G_041 row had been
 
 Registry: `ClockOnly` → **SURVIVES**, `ScanDetectsIt: false`; counts **29/11/3 of 43**. No reclassification. G_033's
 live classifier now reads **24** substrate suites (41 classified in total).
+### ResearchY-G_043 - Minimality Audit (BOUNDARY)
+
+Why does nature stop at the first working dimension (d = 3) instead of continuing to d = 4, 5, ...? Is there a
+quantity optimal **only** at d = 3? Compared D96³/D96⁴/D96⁵ and measured nine families.
+
+**Nine families measured: seven are monotone (no optimum at all), and exactly one is uniquely zero at d = 3** — the
+**Hodge mismatch** |dim Λ² − dim V| = 1, **0**, 2, 5, 9 for d = 2..6. That is **G_042's root**, so it is not a new
+mechanism.
+
+**The stop is not an economy optimum.** Every growth family gets worse with d: representation growth 2, 3, 8, 20,
+80; the state space 96^d − 1; the observability fraction (orbitals over state space) 0.516, 0.133, 0.0235, 0.00319;
+states per observable 1.94, 7.52, 42.5, 314, 2841. An economy principle would have stopped at d = 1 or 2 — and
+those do not work.
+
+**The one other extremal quantity is the same family.** The count bound that the graviton's polarisations fit
+within the number of directions holds through d = 3, i.e. `d² − 3d − 2 ≤ 0` — the same quadratic as the Hodge
+equality `d² − 3d = 0` at a different offset. One family, two members, no second mechanism.
+
+**The real finding: five criteria turn over at the same dimension.**
+
+| criterion | holds at | direction |
+|---|---|---|
+| a dimension-3 irrep is supplied | {3 … 8} | turns **ON** at 3 |
+| the graviton count is positive | {3 … 8} | turns **ON** at 3 |
+| the Hodge mismatch vanishes | {3} | turns **ON** at 3 |
+| the graviton fits within the dimensions | {1, 2, 3} | turns **OFF** after 3 |
+| the vector is the largest irrep | {1, 2, 3} | turns **OFF** after 3 |
+
+Their **intersection is exactly {3}**. So *"the first dimension that works"* and *"the only dimension where the
+mismatch vanishes"* are the **same dimension**, and no measured quantity can separate the explanations: the audit
+can say *why* each candidate fails at d = 4, but not *which* is doing the work. **The outcome is over-determined;
+the mechanism is not.**
+
+**But the outcome is robust, not knife-edge.** The whole family `d² − 3d − c` separates 3 from 4 for **c = 0, 1,
+2, 3** — a window containing both selected members (the equality at c = 0 and the bound at c = 2). So d = 4 is
+excluded by a family of conditions, not by one tuned coincidence.
+
+**Cross-audit check.** The orbital count of the D96^d lattice is `C(48 + d, d)`, which gives **49 at d = 1** —
+exactly the centralizer dimension **G_040** computed for the ring from the dihedral group. Two audits, two routes,
+the same integer.
+
+Registry: `ClockOnly` → **SURVIVES**, `ScanDetectsIt: false`; counts **30/11/3 of 44**. No reclassification —
+G_042's root is **reproduced, not extended**. G_033's live classifier now reads **25** substrate suites (42
+classified in total).
 ### ResearchY-G_037 - Refractive Lens Audit (REFUTED)
 
 Can light bend WITHOUT space bending, via an effective refractive index (the TRM-era idea,

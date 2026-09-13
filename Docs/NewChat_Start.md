@@ -2502,6 +2502,41 @@ rho^(1/d).
 Registry: added as **ClockOnly -> SURVIVES**, `ScanDetectsIt: false`; counts become **29/11/3 of 43**. No
 reclassification. G_033's live classifier now reads **24** substrate suites (41 classified in total). Tests:
 `Y_G_042_Tests` 7/7; group G 328/328.
+## ResearchY-G_043 - Minimality Audit (COMPLETE, BOUNDARY: outcome over-determined, mechanism not)
+
+**Question.** Why does nature stop at the first working dimension (d = 3) instead of continuing to d = 4, 5, ...?
+Is there a quantity optimal ONLY at d = 3? Compared D96^3/D96^4/D96^5; measured photon and graviton
+polarisations, the Hodge mismatch, representation growth, state-space growth, clock-law scaling, plus two
+observability measures and one count bound.
+
+**Answer: BOUNDARY - the OUTCOME is over-determined and the MECHANISM is undetermined.**
+
+- **NINE FAMILIES MEASURED: SEVEN MONOTONE (no optimum), ONE UNIQUELY ZERO AT d = 3.** The only optimal-at-3
+  family is the **Hodge mismatch** |dim Lambda^2 - dim V| = 1, **0**, 2, 5, 9 for d = 2..6 - which is **G_042's
+  root**, so it is not a new mechanism.
+- **THE STOP IS NOT AN ECONOMY OPTIMUM.** Every growth family gets WORSE with d: representation growth 2, 3, 8,
+  20, 80; state space 96^d - 1; observability fraction (orbitals/state) 0.516, 0.133, 0.0235, 0.00319; states per
+  observable 1.94, 7.52, 42.5, 314, 2841. An economy principle would stop at d = 1 or 2 - **which do not work**.
+- **THE ONE OTHER EXTREMAL QUANTITY IS THE SAME FAMILY.** The count bound "the graviton's polarisations fit
+  within the number of directions" holds through d = 3 (`d^2 - 3d - 2 <= 0`) - the same quadratic as the Hodge
+  equality (`d^2 - 3d = 0`) at a different offset. One family, two members.
+- **THE REAL FINDING - FIVE CRITERIA TURN OVER AT THE SAME DIMENSION.** Three turn **ON at d = 3** (a dimension-3
+  irrep is supplied {3..8}, the graviton count becomes positive {3..8}, the Hodge mismatch vanishes {3}); two
+  turn **OFF after it** (the graviton fits within the dimensions {1,2,3}, the vector is the largest irrep
+  {1,2,3}). Their **intersection is exactly {3}**. So "the first dimension that works" and "the only dimension
+  where the mismatch vanishes" are the SAME dimension, and no measured quantity can separate them: the audit can
+  say WHY each candidate fails at d = 4, but not WHICH is doing the work.
+- **BUT THE OUTCOME IS ROBUST, NOT KNIFE-EDGE.** The whole family `d^2 - 3d - c` separates 3 from 4 for
+  **c = 0, 1, 2, 3**, a window containing both selected members (equality c = 0, bound c = 2). So d = 4 is
+  excluded by a family of conditions, not one tuned coincidence.
+- **CROSS-AUDIT CHECK.** The orbital count of the D96^d lattice is `C(48 + d, d)`, which gives **49 at d = 1** -
+  exactly the centralizer dimension **G_040** computed for the ring from the dihedral group. Two audits, two
+  different routes, the same integer.
+
+Registry: added as **ClockOnly -> SURVIVES**, `ScanDetectsIt: false`; counts become **30/11/3 of 44**. No
+reclassification - G_042's root is **reproduced, not extended**; G_041 and G_033 are unchanged inputs. G_033's
+live classifier now reads **25** substrate suites (42 classified in total). Tests: `Y_G_043_Tests` 8/8; group G
+336/336.
 ## Build Dependency — ImageSharp replaced by SkiaSharp (2026-09-13, architectural)
 
 **RELEASE BUILDS WERE IMPOSSIBLE AND NOTHING SAID SO.** `SixLabors.ImageSharp` 4.1.0's build targets run a licence
