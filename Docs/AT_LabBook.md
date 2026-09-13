@@ -4015,3 +4015,49 @@ re-probing with a non-separable organisation gave 0.626. And an unsubstituted `.
 
 **Status:** COMPLETE. Tests `Y_E_008_Tests` **7/7**; group E **55/55**. No group-G registry claim, so no counts
 change. Open: which coupling, and what makes the organisation non-uniform - the dynamics layer.
+
+
+### ResearchY-E_009 - Coupling Function Audit (DERIVED)
+
+**Question.** What determines h(rho)? Candidates: constant, rho, rho^2, exp(rho), derived occupancy law, actualization
+law. Requirements: produces non-zero F, compatible with T1 and T2, no new primitive. Measure: field strength, gauge
+structure, minimality. **Goal: derive h(rho).**
+
+**Answer: DERIVED** - **`h(rho) = (2 pi / 96) rho^(1/d)`, zero free parameters**, from AT's own clock law
+(`GpsCorrectionOrigin.ClockRate(d, rho) = rho^(1/d)`, G_016b; exponent `ClockExponent(d) = 1/d`; unit = AT's phase
+quantum 2 pi / 96). A live scan finds **5** AT members computing a clock rate/exponent/law.
+
+#### The candidates
+
+| candidate | max |F| | free params | source |
+|---|---|---|---|
+| constant | **0.000E+000** | 1 | chosen (value) - **REFUTED** |
+| rho | 7.510E-001 | 1 | chosen (ansatz) |
+| rho^2 | 2.216E+000 | 1 | chosen (ansatz) |
+| exp(rho) | 3.362E+000 | 1 | chosen (ansatz) |
+| **derived occupancy law** | 1.793E-002 | **0** | AT's clock law + phase quantum |
+| actualization law | 1.793E-002 | **0** | the same law - a degeneracy |
+
+#### The exponent sweep, and the honest negative
+
+`h = rho^p`: **0** (p = 0), 0.145 (1/6), **0.274 (1/3)**, 0.390 (1/2), 0.751 (1), 2.216 (2), 5.062 (3).
+Exactly one exponent gives zero - the constant. **"Produces non-zero F" does not select the exponent; the clock law
+does.**
+
+#### Gauge structure and the boundary
+
+max |F_0i| (electric) **1.424E-002**, max |F_ij| (magnetic) **0.000E+000** -> **purely electric**; closed form
+residual **0.000E+000**; gauge invariance **1.11E-016**; Bianchi **0.00E+000**. The clock law fixes the **time-like**
+component only - the **magnetic half is still an input**.
+
+#### Errors caught by the tests
+
+`rho^(1/3)` of E_008's **sign-changing** scalar gave **NaN** - which is how the **domain constraint** was found
+(`rho^(1/d)` needs a non-negative organisation; automatic for a density, and E_008's own results are unaffected because
+its couplings were polynomials and exponentials). And a first version of the "not a difference" check compared the
+derived **local** coupling against another *local* coupling and expected zero - a conceptual error, since a local
+function of rho is never a difference whatever function it is; the comparison now runs against E_008's **difference**
+form.
+
+**Status:** COMPLETE. Tests `Y_E_009_Tests` **7/7**; group E **62/62**. No group-G registry claim, so no counts
+change.

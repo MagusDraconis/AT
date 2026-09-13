@@ -85,7 +85,8 @@ public static class FieldExcitationAudit
 
     public delegate double LinkField(int x, int y, int z, int mu);
 
-    private static double Difference(Func<int, int, int, double> f, int mu, int x, int y, int z)
+    /// <summary>The forward difference on the torus, public so later audits reuse it rather than re-implement it.</summary>
+    public static double Difference(Func<int, int, int, double> f, int mu, int x, int y, int z)
     {
         var (nx, ny, nz) = (x, y, z);
         switch (mu)

@@ -2689,6 +2689,34 @@ NON-DIFFERENCE coupling. The survivor is NON-UNIFORM RHO read LOCALLY.**
   unsubstituted `.Replace()` placeholder printed `{NoNewPrimitiveIsNeeded()}` into the report.
 
 No group-G registry claim, so claim counts are unchanged. Tests: `Y_E_008_Tests` 7/7; group E 55/55.
+## ResearchY-E_009 - Coupling Function Audit (COMPLETE, DERIVED)
+
+**Question.** What determines h(rho)? Candidates: constant, rho, rho^2, exp(rho), derived occupancy law,
+actualization law. Requirements: produces non-zero F, compatible with T1 and T2, no new primitive. Measure: field
+strength, gauge structure, minimality. **Goal: derive h(rho) instead of choosing it.**
+
+**Answer: DERIVED - h is not free. AT already computes it: `h(rho) = (2 pi / 96) rho^(1/d)`, ZERO free parameters.**
+
+- **THE COUPLING IS AT'S OWN CLOCK LAW:** `GpsCorrectionOrigin.ClockRate(d, rho) = rho^(1/d)` (G_016b, d tau/dt =
+  rho^(1/d)), exponent from `ClockExponent(d) = 1/d`, unit from AT's phase quantum 2 pi / 96 (E_003). Live scan: **5**
+  AT members computing a clock rate/exponent/law.
+- **CANDIDATES:** constant -> **0.000E+000** (REFUTED - it IS the gradient); rho -> 0.751; rho^2 -> 2.216; exp(rho) ->
+  3.362 (all with **1** free parameter); **derived occupancy law -> 1.793E-002, 0 free parameters**; actualization law
+  -> the same law (DEGENERACY: no AT member is named for it).
+- **THE HONEST NEGATIVE:** `h = rho^p` over seven exponents gives zero at EXACTLY ONE (p = 0); every other exponent
+  works (1/3 -> 0.274). So "produces non-zero F" rules out the constant and leaves the rest indistinguishable - the
+  CLOCK LAW selects the exponent, not the requirement.
+- **MINIMALITY:** countable - only the clock-law candidate has 0 free parameters.
+- **GAUGE STRUCTURE + BOUNDARY:** with A_0 from the clock law the field strength is **PURELY ELECTRIC**
+  (max |F_0i| = **1.424E-002** vs max |F_ij| = **0.000E+000**), gauge invariant (**1.11E-016**), Bianchi-consistent
+  (**0.00E+000**), and exactly minus the gradient of the clock rate (closed form **0.000E+000**). The clock law fixes
+  the TIME-LIKE component only: the MAGNETIC half is still an input.
+- **TWO ERRORS CAUGHT BY THE TESTS:** `rho^(1/3)` of E_008's sign-changing scalar gave **NaN** - which is how the
+  DOMAIN constraint was found (rho^(1/d) needs a non-negative organisation; automatic for a density, and E_008's
+  results are unaffected); and the "not a difference" check first compared the derived LOCAL coupling against another
+  LOCAL coupling expecting zero - a conceptual error, since a local function of rho is never a difference.
+
+No group-G registry claim, so claim counts are unchanged. Tests: `Y_E_009_Tests` 7/7; group E 62/62.
 ## ResearchY-G_045 - Observed vs Hidden Dimension Audit (COMPLETE, REFUTED)
 
 **Question.** Can the apparent 3D world emerge as a PROJECTION of a higher-dimensional ACTUALIZATION SPACE?
