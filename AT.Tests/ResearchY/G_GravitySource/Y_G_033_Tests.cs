@@ -56,10 +56,10 @@ public class Y_G_033_Tests : ResearchTestBase
         Assert.Equal(classified.Length, withSubstrate.Length + commentOnly.Length + without.Length);
 
         // The metric / closure era is exactly the D96-FREE one — sixteen audits (thirteen through G_035;
-        // G_036, G_037 and G_038 added the rest, and none uses a substrate). G_039 is a DENSITY-era audit:
-        // it recomputes the D96 ring spectrum, so it belongs on the other side of the line.
+        // G_036, G_037 and G_038 added the rest, and none uses a substrate). G_039 and G_040 are DENSITY-era
+        // audits: both recompute the D96 ring spectrum, so they belong on the other side of the line.
         Assert.Equal(16, without.Length);
-        Assert.Equal(21, withSubstrate.Length);
+        Assert.Equal(22, withSubstrate.Length);
         Assert.Equal(1, commentOnly.Length);                 // G_001 names D96 only in comments
 
         // The metric / closure era is the D96-FREE one. Spot-check its members by name.

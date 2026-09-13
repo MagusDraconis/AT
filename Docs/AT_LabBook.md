@@ -3404,6 +3404,58 @@ Registry: **ClockOnly → SURVIVES**, `ScanDetectsIt: false`; counts **26/11/3 o
 slips were caught by its own tests (the link-count arithmetic, a 9th-decimal equality on the rounding boundary, a
 truncated `(int)` cast). Verdict computed from seven checks. Suite 7/7. Group G 304/304.
 
+### ResearchY-G_040 - Rho Observable Audit (REFUTED)
+
+Can any measurable quantity retain all 95 dimensions of ρ? Candidates: occupancy patterns, mode populations,
+detector counts, attractor occupancy, survivor occupancy.
+
+**REFUTED — and the ceiling is a SYMMETRY THEOREM rather than a detector limitation.** G_039 identified the
+carrier and found measurability the one unmet requirement; G_040 asks the sharper question and answers it with a
+dimension count.
+
+**One number decides it.** Every operator AT can construct commutes with the substrate's dihedral symmetry, so the
+observables live in the **centralizer algebra**, whose dimension is the number of **orbitals** — computed four
+independent ways, all **49**: brute-force enumeration of the 9216 ordered cell pairs; Burnside
+(1/|G|) Σ fix(g)² = **9408/192**; the multiplicity-free irrep decomposition (49 irreps, each appearing once); and
+the sum over the 45 levels of the algebra's restricted rank (**1 + 42·1 + 3 + 3**). The group itself is built, not
+asserted: **192** permutations, distinct, closed under composition, transitive on 96 cells.
+
+**A 49-dimensional operator algebra on a 95-dimensional state space leaves 47 dimensions unreachable — and they
+have a name.** The real state splits as **48 magnitudes + 47 intra-doublet orientations**: one angle per
+two-dimensional irrep, and D96 has exactly **47** of those. By Schur's lemma a centralizer operator is a scalar
+inside each irrep, so the orientations are invisible to everything AT can build.
+
+**The ladder, computed rather than argued:**
+
+| class | retained | loss |
+|---|---|---|
+| site-addressed cell counts | **95** | **0** — but that *is* ρ, and naming every cell is what G_017 excluded |
+| distance-class contractions ⟨ρ, A_d ρ⟩ | **48** | **47** — the ceiling |
+| spectral level populations | **44** | **51** — exactly G_039's free room |
+| on a four-channel state | **4** | **91** — the regime caveat |
+
+The two audits meet on the same number: the spectral loss **is** G_039's free room Σ(m−1) = 51. The 4 dimensions
+the contraction rung reclaims are the only two multi-irrep levels (m = 5 and m = 6, three irreps each).
+
+**Invertibility fails exactly, not statistically.** Rotating one doublet's orientation by 1.1 rad moves the state
+by **1.997e−1** in L1 (contrasty state) or **6.93e−3** (flat generic state) while moving every contraction by at
+most **2.78e−17**; and all **192** group images of a generic state report **one** identical reading (spread
+**3.12e−17**) while sitting up to **9.23e−2** apart.
+
+**Five slips caught and recorded rather than absorbed.** The important one is numerical and general: **a rank
+threshold must be relative to the whole matrix, not to each row.** With a per-row tolerance, a row of pure
+roundoff was accepted — A₂₄ restricted to channel 1 is *exactly* zero, since 2cos(2π·24/96) = 0, so its computed
+norm 2.8e−32 exceeded 1e-8 times itself — which read every doublet as rank 2 and summed the 45 levels to **143**
+instead of 49. The others: a level's real block is **one cos/sin pair per channel** (a per-mode guard doubles the
+±k pair and the "projector" is not idempotent, |P² − P| = 1/24); a level projector lives in the **mode** basis,
+not a cell-indexed mask; the witness must use the **invariant** contraction ⟨ρ, A_d ρ⟩, not the equivariant vector
+A_d ρ (which the group permutes, showing a spurious 2.1e−2 "difference"); and the retained dimension is a
+**generic-state** statement, so both regimes are asserted.
+
+Registry: `ClockOnly` → **SURVIVES**, `ScanDetectsIt: false`; counts **27/11/3 of 41**. G_039's BOUNDARY verdict
+stands — G_040 explains its measurability finding rather than revising it. No reclassification. G_033's live
+classifier now reads **22** substrate suites (39 classified in total), because this suite recomputes the D96 ring
+spectrum.
 ### ResearchY-G_037 - Refractive Lens Audit (REFUTED)
 
 Can light bend WITHOUT space bending, via an effective refractive index (the TRM-era idea,

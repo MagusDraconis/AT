@@ -2364,13 +2364,54 @@ the clock law.
   rounding boundary, and a truncated `(int)` cast of a floating-point trace.
 - **A FOURTH WAS CAUGHT BY ANOTHER AUDIT — G_033'S LIVE SCANNER.** The constants were named `Cells`/`Radius`, so
   the D96 scanner filed this audit with the **D96-free** (metric / closure) era even though it recomputes the D96
-  ring spectrum. Renamed to **`D96Cells`**; G_033's counts move to **21 substrate / 16 D96-free / 1 comment-only**
-  (38 classified suites) and `Y_G_033_Tests` was updated with them.
+  ring spectrum. Renamed to **`D96Cells`**; G_033's counts move to **22 substrate / 16 D96-free / 1 comment-only**
+  (39 classified suites) and `Y_G_033_Tests` was updated with them.
 
 Registry: added as **ClockOnly -> SURVIVES** (rho, the source law and the clock law are all g00 statements),
 triaged `ScanDetectsIt: false`; counts become **26/11/3 of 40**; boundary index unchanged; no prior
 classification changed. Tests: `Y_G_039_Tests` 7/7. Group G: **304/304**.
 
+## ResearchY-G_040 - Rho Observable Audit (COMPLETE, REFUTED)
+
+**Question.** Can any measurable quantity retain all 95 dimensions of rho? Candidates: occupancy patterns, mode
+populations, detector counts, attractor occupancy, survivor occupancy. Test: dimension retained, information
+loss, invertibility.
+
+**Answer: REFUTED — and the ceiling is a SYMMETRY THEOREM, not a detector limitation.**
+
+- **THE GROUND IS RECOMPUTED**: 96 cells, 45 levels, {1:1, 2:42, 5:1, 6:1}, trace 1152, state space **95**.
+- **THE SUBSTRATE'S SYMMETRY IS BUILT, NOT ASSERTED**: the 192 permutations of the dihedral group, checked in
+  code for distinctness, closure under composition and transitivity (1 orbit on the cells).
+- **ONE NUMBER DECIDES THE QUESTION**: the **centralizer algebra** — the space of operators AT can construct —
+  has dimension the number of orbitals, computed FOUR independent ways, all **49**: brute-force enumeration of the
+  9216 ordered cell pairs; Burnside (1/|G|) Sum fix(g)^2 = **9408/192**; the multiplicity-free irrep
+  decomposition (49 irreps, each appearing once); and the sum over the 45 levels of the algebra's restricted rank
+  (**1 + 42 x 1 + 3 + 3**).
+- **47 DIMENSIONS ARE UNREACHABLE, AND THE AUDIT NAMES THEM**: the state splits as **48 magnitudes + 47
+  intra-doublet orientations** — one angle per two-dimensional irrep, and D96 has exactly **47** of those. By
+  Schur's lemma a centralizer operator is a scalar inside each irrep.
+- **THE LADDER, COMPUTED**: site-addressed cell counts retain **95, loss 0** (but that IS rho, and naming every
+  cell is what G_017 excluded); **distance-class contractions** <rho, A_d rho> retain **48, loss 47** (the ceiling
+  for anything AT can build); **spectral level populations** retain **44, loss 51** — **exactly G_039's free
+  room**. The 4 extra dimensions the contraction rung reclaims are the two multi-irrep levels (m = 5, m = 6,
+  three irreps each).
+- **TWO WITNESSES MAKE INVERTIBILITY FAIL EXACTLY**: rotating one doublet's orientation by 1.1 rad moves the
+  state by **1.997e-1** (L1, contrasty state) or **6.93e-3** (flat state) while moving EVERY contraction by at
+  most **2.78e-17**; and all **192** group images of a generic state report ONE distinct reading (spread
+  **3.12e-17**) while sitting up to **9.23e-2** apart — a fibre of at least 192-to-1.
+- **REGIME CAVEAT, SELF-CAUGHT**: the retained dimension is a GENERIC-STATE statement — a state confined to four
+  channels collapses to rank **4**. Both regimes are asserted rather than the convenient one.
+- **FIVE SLIPS CAUGHT AND RECORDED, NOT ABSORBED**: (1) the rank threshold must be relative to the WHOLE matrix,
+  not to each row — a per-row tolerance accepted a row of pure roundoff (A_24 restricted to channel 1 is exactly
+  zero, so its norm 2.8e-32 exceeded 1e-8 times itself), which read every doublet as rank 2 and summed the levels
+  to **143** instead of 49; (2) a level's real block is ONE cos/sin pair per channel — a per-mode guard doubles
+  the pair and the "projector" is not idempotent (|P^2 - P| = 1/24); (3) a level projector lives in the MODE
+  basis, not a cell-indexed mask; (4) the witness must use the invariant contraction <rho, A_d rho>, not the
+  equivariant vector A_d rho, which the group permutes and which showed a spurious 2.1e-2 "difference".
+
+Registry: added as **ClockOnly -> SURVIVES**, `ScanDetectsIt: false`; counts become **27/11/3 of 41**. G_039's
+BOUNDARY verdict STANDS — G_040 explains its measurability finding rather than revising it. No reclassification.
+G_033's live classifier now reads **22** substrate suites (39 classified in total). Tests: `Y_G_040_Tests` 9/9.
 ## Build Dependency — ImageSharp replaced by SkiaSharp (2026-09-13, architectural)
 
 **RELEASE BUILDS WERE IMPOSSIBLE AND NOTHING SAID SO.** `SixLabors.ImageSharp` 4.1.0's build targets run a licence

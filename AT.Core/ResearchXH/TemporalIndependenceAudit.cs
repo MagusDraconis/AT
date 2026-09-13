@@ -374,6 +374,14 @@ public static class TemporalIndependenceAudit
             + "rho and g00. NOT symbol-detectable: the suite's vocabulary is rho, energy, entropy and phase, not "
             + "B/g_rr/GammaOf",
             ScanDetectsIt: false),
+
+        // ── G_040: the rho observable — how much of rho any constructible measurement can retain ──
+        new SectorClaim("Y_G_040", "Rho Observable", MetricRequirement.ClockOnly,
+            "it bounds what a measurement can know about rho by the centralizer algebra of the substrate's own "
+            + "symmetry — 49 dimensions of operator against a 95-dimensional state space, so 47 are lost — and "
+            + "every statement is about rho, the spectral substrate and its group. NOT symbol-detectable: the "
+            + "suite's vocabulary is cells, channels, irreps, ranks and contractions, not B/g_rr/GammaOf",
+            ScanDetectsIt: false),
     };
 
     // ── The computed classification summaries ───────────────────────────────

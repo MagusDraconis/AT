@@ -40,10 +40,10 @@ The core **re-reads the group-G sources at test time** (the G_027 pattern), so t
 | **no D96 reference at all** | **13** | **G_015, G_017, G_019, G_020, G_021, G_022, G_025, G_027, G_028, G_029, G_030, G_031, G_032** |
 
 > **Refinement (live scan, after G_039).** This table is G_033's own snapshot. The scanner is live, so later
-> audits are classified on their own. As of **G_039** the counts are **38 classified suites** → **21 in code / 1
+> audits are classified on their own. As of **G_040** the counts are **39 classified suites** → **22 in code / 1
 > comment-only / 16 with no reference** (G_034 and G_035 joined the meta-audits; G_036, G_037 and G_038 added
-> three D96-free suites; **G_039 — the ρ-test audit — recomputes the D96 ring spectrum and so belongs on the
-> substrate side**, which the scanner only saw after its `Cells` constant was renamed `D96Cells`).
+> three D96-free suites; **G_039 and G_040 — the ρ audits — recompute the D96 ring spectrum and so belong on the
+> substrate side**, which the scanner only saw for G_039 after its `Cells` constant was renamed `D96Cells`).
 
 The 13 are exactly the **metric / closure era**: G_017 (metric coupling), G_019–G_022 (redshift/spatial metric), G_025, G_027 (literal verdict), and the whole G_028–G_032 closure sequence (clock, spatial, no-go, spatial origin, conformal assumption). Those audits are pure continuum PPN calculations — a scalar ρ, an exponent, a conformal factor, γ.
 
