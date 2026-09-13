@@ -4410,3 +4410,52 @@ supplies none.
 **It changes this.** E_014 located the occupation outside AT; E_015 closes every **counting-based** route to a
 preferred sector: the measure is flat as a theorem, so no multiplicity, entropy or free-room argument can prefer a
 label. The theory derives a flat measure rather than a preferred sector, and the normalisation remains an input.
+
+---
+
+### ResearchY-E_016 - Sector Population Principle Audit (REFUTED)
+
+**Question.** Do any existing AT quantities break the flat sector measure of E_015? Candidates: occupancy free room,
+multiplicity structure, D96 hierarchy, compression laws, actualization rate. Goal: the first non-flat weighting without
+new primitives.
+
+**Verdict: REFUTED** - no existing AT quantity breaks the measure, and the detector was validated before it was
+trusted.
+
+**1. The detector, validated first.** The search is a sector-restricted sum of a weight over every configuration of a
+finite model; a breaker shows as a non-zero relative spread.
+
+| weight | relative spread |
+|---|---|
+| trivial (control) | 0.000E+000 |
+| a potential uniform in the phase (sanity) | 0.000E+000 |
+| **a NON-uniform local potential (breaker one)** | **1.6E-001** |
+| **a recipe-phase BRIDGE (breaker two)** | **3.3E-001** |
+
+**2. The five candidates fail for two distinct reasons.** THREE ARE RECIPE-SIDE - occupancy free room, D96 hierarchy,
+compression laws: the sector labels the **phase** half and the halves are decoupled (census **0**), so the sector sums
+**factorise** - free room per sector **4096, 4096, 4096, 4096** at (k,l) = (4,6), spread **0.000E+000**, factorisation
+residual **0.000E+000**. TWO ARE PHASE-SIDE AND SECTOR-SYMMETRIC: multiplicity spread over the sectors **0.000E+000**
+(E_015's bijection, reused) and the update rule's spatial part **0.000E+000** against a time-like part of **1.424E-002**,
+with E_014's blindness residual at **4.163E-017**.
+
+**3. A prediction withdrawn.** The first draft expected a coarse phase observable's conditional distribution to differ
+across sectors. Measured, it does **not**: the global **half-period shift** maps the lower half of the phase range onto
+the upper half while leaving the class unchanged whenever (k/2)L is a multiple of k, so the mean is **forced to L/2** in
+every class (conditional spread **0.000E+000**). A symmetry, not an accident.
+
+**4. The real nearest miss is a weight, not an observable:** a phase-reading weight breaks the class sums at
+**1.6E-001**, so the configuration space does not prevent a non-flat measure - AT simply supplies no such weight.
+
+**5. What a breaker would have to be:** a **potential** for the link phase (1.6E-001) or a **coupling** between the
+recipe sector and the phase sector (3.3E-001, census 0) - both **new primitives**.
+
+**Status:** COMPLETE. Tests `Y_E_016_Tests` **7/7**; group E **110/110**. Registry: added as **Refuted**
+(`sector-population-principle-audit`), reclassifying nothing. Core:
+`AT.Core/ResearchXH/SectorPopulationPrincipleAudit.cs`; suite
+`AT.Tests/ResearchY/E_Electromagnetism/Y_E_016_Tests.cs`; doc
+`Docs/ResearchY/E_Electromagnetism/ResearchY-E_016.md`.
+
+**It changes this.** E_015's flat measure invited this search; E_016 closes it for every quantity AT currently has and
+names the two doors a breaker would have to come through. The verdict has a live branch: a phase-reading quantity with
+a non-uniform local factor, or a non-zero recipe-phase census, would make the weighting DERIVED.

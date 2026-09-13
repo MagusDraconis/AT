@@ -2902,6 +2902,36 @@ preferred sector. The verdict is computed with a **live branch in every directio
 No group-G registry claim, so claim counts are unchanged. Registry: added as **Boundary** (`sector-weight-audit`),
 reclassifying nothing. Tests: `Y_E_015_Tests` 7/7; group E **103/103**.
 
+## ResearchY-E_016 - Sector Population Principle Audit (COMPLETE, REFUTED)
+
+**Question.** Do any existing AT quantities break the flat sector measure of E_015? Candidates: occupancy free room,
+multiplicity structure, D96 hierarchy, compression laws, actualization rate. Goal: the first non-flat weighting without
+new primitives.
+
+**Answer: REFUTED - no existing AT quantity breaks the measure, and the detector was validated before it was trusted.**
+
+- **The detector, validated first.** The search is a sector-restricted sum of a weight: synthetic breaker one - a
+  **non-uniform local factor** on the link phase (a potential) - breaks it at **1.6E-001**; breaker two - a
+  **recipe-phase bridge** - at **3.3E-001**; controls are **0.000E+000** for the trivial weight and a phase-uniform
+  potential. The machinery can find a breaker and finds **none** among the five.
+- **The five fail for two distinct reasons.** Three are **recipe-side** (free room, hierarchy, compression laws): the
+  sector labels the **phase** half and the halves are decoupled (census **0**), so the sums **factorise** - free room
+  per sector **4096, 4096, 4096, 4096**, spread **0.000E+000**. Two are **phase-side and sector-symmetric**:
+  multiplicity spread **0.000E+000** (E_015's bijection) and a purely electric update (spatial **0.000E+000** against
+  time-like **1.424E-002**).
+- **A prediction withdrawn:** the coarse-observable conditional distribution is **forced flat** by the **half-period
+  symmetry** (spread **0.000E+000**) - my first draft was wrong, and it is recorded as withdrawn.
+- **The real nearest miss is a weight, not an observable:** a phase-reading weight breaks the class sums at
+  **1.6E-001**. AT supplies no such weight.
+- **What a breaker would have to be:** a **potential** for the link phase or a **recipe-phase coupling** - both **new
+  primitives**. Open in principle, closed in practice, and now in a testable form.
+
+**What this changes.** E_015's flat measure invited exactly this search; E_016 closes it for every quantity AT
+currently has, and states the two doors a breaker would have to come through. The verdict has a **live branch**.
+
+No group-G registry claim, so claim counts are unchanged. Registry: added as **Refuted**
+(`sector-population-principle-audit`), reclassifying nothing. Tests: `Y_E_016_Tests` 7/7; group E **110/110**.
+
 ## ResearchY-G_045 - Observed vs Hidden Dimension Audit (COMPLETE, REFUTED)
 
 **Question.** Can the apparent 3D world emerge as a PROJECTION of a higher-dimensional ACTUALIZATION SPACE?
