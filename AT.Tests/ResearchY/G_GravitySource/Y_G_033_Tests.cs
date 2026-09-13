@@ -60,7 +60,7 @@ public class Y_G_033_Tests : ResearchTestBase
         // audits: both recompute the D96 ring spectrum, so they belong on the other side of the line. G_041 joined
         // them: it asks whether d = 3 is selected, which means computing the D96^d family.
         Assert.Equal(16, without.Length);
-        Assert.Equal(23, withSubstrate.Length);
+        Assert.Equal(24, withSubstrate.Length);
         Assert.Equal(1, commentOnly.Length);                 // G_001 names D96 only in comments
 
         // The metric / closure era is the D96-FREE one. Spot-check its members by name.

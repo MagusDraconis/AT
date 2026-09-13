@@ -2364,8 +2364,8 @@ the clock law.
   rounding boundary, and a truncated `(int)` cast of a floating-point trace.
 - **A FOURTH WAS CAUGHT BY ANOTHER AUDIT — G_033'S LIVE SCANNER.** The constants were named `Cells`/`Radius`, so
   the D96 scanner filed this audit with the **D96-free** (metric / closure) era even though it recomputes the D96
-  ring spectrum. Renamed to **`D96Cells`**; G_033's counts move to **23 substrate / 16 D96-free / 1 comment-only**
-  (40 classified suites) and `Y_G_033_Tests` was updated with them.
+  ring spectrum. Renamed to **`D96Cells`**; G_033's counts move to **24 substrate / 16 D96-free / 1 comment-only**
+  (41 classified suites) and `Y_G_033_Tests` was updated with them.
 
 Registry: added as **ClockOnly -> SURVIVES** (rho, the source law and the clock law are all g00 statements),
 triaged `ScanDetectsIt: false`; counts become **26/11/3 of 40**; boundary index unchanged; no prior
@@ -2411,7 +2411,7 @@ loss, invertibility.
 
 Registry: added as **ClockOnly -> SURVIVES**, `ScanDetectsIt: false`; counts become **27/11/3 of 41**. G_039's
 BOUNDARY verdict STANDS — G_040 explains its measurability finding rather than revising it. No reclassification.
-G_033's live classifier now reads **23** substrate suites (39 classified in total). Tests: `Y_G_040_Tests` 9/9.
+G_033's live classifier now reads **24** substrate suites (39 classified in total). Tests: `Y_G_040_Tests` 9/9.
 ## ResearchY-G_041 - Substrate Dimension Audit (COMPLETE, BOUNDARY: one half strengthens, one half weakens)
 
 **Question.** AT needs the ring (d = 1) and, per G_033, the cube (d = 3). What about D96^2 and D96^4 - and is
@@ -2454,8 +2454,54 @@ the group E_003/E_004/G_033 used. d = 1 is NOT B_1: AT's ring is PERIODIC, so it
   problem G_033 documented for spectral level counting.
 
 Registry: added as **ClockOnly -> SURVIVES**, `ScanDetectsIt: false`; counts become **28/11/3 of 42**. No
-reclassification. G_033's live classifier now reads **23** substrate suites (40 classified in total). Tests:
+reclassification. G_033's live classifier now reads **24** substrate suites (40 classified in total). Tests:
 `Y_G_041_Tests` 8/8; group G 321/321.
+## ResearchY-G_042 - Three-Dimensionality Dependency Audit (COMPLETE, REDUNDANT: ONE ROOT)
+
+**Question.** Are the known selectors of d = 3 independent, or the same structure viewed differently - one root
+mechanism or several? INPUTS 1 rotation self-duality d(d-1)/2 = d | 2 Hodge dim Lambda^2 = dim V | 3
+polarisation equality d-1 = (d+1)(d-2)/2 | 4 the D96^d representation structure | 5 the clock exponent
+rho^(1/d).
+
+**Answer: REDUNDANT - ONE ROOT MECHANISM. The number of INDEPENDENT selectors of d = 3 is 1, not several.**
+
+- **THE DECISIVE IDENTITY, verified for EVERY d:** the graviton carries **dim Lambda^2 - 1 = dim so(d) - 1**
+  polarisations against the photon's **dim V - 1**. Subtracting one from each side turns "the polarisations are
+  equal" into "dim Lambda^2 = dim V" - **identically, not merely at the shared root**. So input 3 is not a
+  coincidence that shares the root; it is the SAME EQUATION reached by a different derivation (little-group
+  counting instead of tensor algebra).
+- **INPUTS 1 AND 2 ARE THE SAME FORMULA**: dim Lambda^2 = d(d-1)/2 = the number of independent rotations. All
+  three geometric inputs reduce to **d(d-3) = 0**, roots **{0, 3}** - physically: *the number of directions
+  equals the number of independent rotations* (the cross product / Hodge dual).
+- **THE DEPENDENCY GRAPH IS COMPUTED, NOT DRAWN** (A implies B iff S(A) is contained in S(B); all solution sets
+  obtained by EVALUATING the predicates over d = 1..12): S1 = S2 = S3 = **{3}**; S4a (supplies a 3-dim irrep) =
+  **{3..12}**; S4b (the vector is the largest irrep) = **{1,2,3}**; S5 (clock) = **{1..12}**. Nothing implies
+  selector 1.
+- **4a AND 4b = {3}**: the representation conjunction **reproduces the root exactly** - which is why G_033/G_041
+  treated it as a second mechanism - but the root implies both halves, so it is **DERIVED FROM**, not
+  independent.
+- **CLASSIFICATION: 1 INDEPENDENT** (rotation self-duality - the root); **2 REDUNDANT** (Hodge duality; the
+  polarisation equality - same solution set AND same equation); **2 DERIVED FROM** (4a, 4b); **1 REDUNDANT**
+  (the clock law - it holds at EVERY d, so it is a LAW, not a selector: rho^(1/d) is what makes the choice
+  OBSERVABLE, REDUNDANT as a selector and INDEPENDENT in role).
+- **THE ACCIDENTS BELONG TO DIFFERENT DIMENSIONS - checked, not assumed:** bivectors collapse to a **scalar** at
+  d = 2 (dim Lambda^2 = 1), **ARE** the vectors at d = 3, split **self-dual / anti-self-dual** at d = 4 (dim 6 =
+  3 + 3; even Lambda^2 also at d = 5, 8, 9, 12), and the cross product returns at **d = 7** (Hurwitz - cited,
+  not computed). The family of special dimensions is real and its memberships differ, but **only one membership
+  selects d = 3, and it does so once**.
+- **REFINES / WEAKENS G_041.** G_041 called the eps/Hodge accident and the polarisation match "two independent
+  accidents". **They are one condition with two derivations, so the number of independent reasons for d = 3 is
+  1, not 2.** G_041's positive results and its **BOUNDARY verdict STAND UNCHANGED** (d = 4 is still not excluded
+  by the representations). Carried in code as `SubstrateDimensionAudit.RefinementFromG042()`, printed in G_041's
+  own report, and noted in the G_041 doc and registry narrative.
+- **A MARKDOWN DEFECT FOUND AND FIXED WHILE WRITING THIS:** the `ResearchY_Index.md` rows inserted by G_041 and
+  G_042 had been mashed onto one physical line (the row separators were lost on insertion), so the table rows
+  were not separate lines. Splitting them restored the table; the G_041 row had been affected since its own
+  commit.
+
+Registry: added as **ClockOnly -> SURVIVES**, `ScanDetectsIt: false`; counts become **29/11/3 of 43**. No
+reclassification. G_033's live classifier now reads **24** substrate suites (41 classified in total). Tests:
+`Y_G_042_Tests` 7/7; group G 328/328.
 ## Build Dependency — ImageSharp replaced by SkiaSharp (2026-09-13, architectural)
 
 **RELEASE BUILDS WERE IMPOSSIBLE AND NOTHING SAID SO.** `SixLabors.ImageSharp` 4.1.0's build targets run a licence

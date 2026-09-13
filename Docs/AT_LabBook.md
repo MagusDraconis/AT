@@ -3506,6 +3506,57 @@ for spectral level counting.
 
 Registry: `ClockOnly` → **SURVIVES**, `ScanDetectsIt: false`; counts **28/11/3 of 42**. No reclassification. G_033's
 live classifier now reads **23** substrate suites (40 classified in total).
+### ResearchY-G_042 - Three-Dimensionality Dependency Audit (REDUNDANT: one root)
+
+Are the d = 3 selectors independent, or the same structure viewed differently? Inputs: 1 rotation self-duality
+`d(d−1)/2 = d`; 2 Hodge `dim Λ² = dim V`; 3 the polarisation equality `d−1 = (d+1)(d−2)/2`; 4 the D96^d
+representation structure; 5 the clock exponent `ρ^(1/d)`.
+
+**One root mechanism. The number of independent selectors is 1.**
+
+**The decisive identity.** The graviton carries **dim Λ² − 1 = dim so(d) − 1** polarisations for **every** d, against
+the photon's **dim V − 1**. Subtract one from each side and *"the polarisations are equal"* **is** *"dim Λ² =
+dim V"* — identically, not merely at the shared root. Input 3 is therefore the **same equation reached by a
+different derivation** (little-group counting instead of tensor algebra); inputs 1 and 2 are literally the same
+formula, since dim Λ² = d(d−1)/2 = the number of independent rotations. All three reduce to **`d(d−3) = 0`**, roots
+**{0, 3}** — the statement that *the number of directions equals the number of independent rotations*.
+
+**The graph is computed, not drawn** (A ⟹ B iff S(A) ⊆ S(B); every solution set obtained by *evaluating* the
+predicate over d = 1..12):
+
+| selector | S |
+|---|---|
+| 1 rotation self-duality | **{3}** |
+| 2 Hodge duality | **{3}** |
+| 3 polarisation equality | **{3}** |
+| 4a supplies a 3-dim irrep | {3 … 12} |
+| 4b the vector is the largest irrep | {1, 2, 3} |
+| 5 clock law | {1 … 12} |
+
+**4a ∧ 4b = {3}** — the representation conjunction **reproduces the root exactly**, which is exactly why G_033/G_041
+treated it as a second mechanism; but the root implies both halves, so it is **DERIVED FROM**, not independent.
+Nothing implies selector 1.
+
+**Classification: 1 INDEPENDENT** (rotation self-duality — the root) · **2 REDUNDANT** (Hodge; polarisations — same
+solution set *and* same equation) · **2 DERIVED FROM** (4a, 4b) · **1 REDUNDANT** (the clock law, which holds at
+every d: a **law, not a selector** — its role is that ρ^(1/d) makes the choice **observable**).
+
+**The accidents belong to different dimensions** — checked, not assumed: bivectors collapse to a **scalar** at
+d = 2, **are** the vectors at d = 3, split **self-dual / anti-self-dual** at d = 4 (even Λ² also at d = 5, 8, 9,
+12), and the cross product returns at **d = 7** (Hurwitz — cited, not computed). The family of special dimensions is
+real and its memberships differ, but only one membership selects d = 3, and it does so once.
+
+**Refines G_041.** G_041 called the ε/Hodge accident and the polarisation match "two independent accidents": they
+are **one condition with two derivations**, so the number of independent reasons for d = 3 is **1, not 2**. G_041's
+positive results and its **BOUNDARY verdict stand unchanged**. Carried in code as
+`SubstrateDimensionAudit.RefinementFromG042()` and printed in G_041's own report.
+
+**A markdown defect found and fixed while writing this:** the `ResearchY_Index.md` rows inserted by G_041 and G_042
+had been mashed onto one physical line (the row separators were lost on insertion), so the table rows were not
+separate lines. Splitting them restored the table — and the G_041 row had been affected since its own commit.
+
+Registry: `ClockOnly` → **SURVIVES**, `ScanDetectsIt: false`; counts **29/11/3 of 43**. No reclassification. G_033's
+live classifier now reads **24** substrate suites (41 classified in total).
 ### ResearchY-G_037 - Refractive Lens Audit (REFUTED)
 
 Can light bend WITHOUT space bending, via an effective refractive index (the TRM-era idea,

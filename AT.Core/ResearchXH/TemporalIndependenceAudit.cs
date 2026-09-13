@@ -391,6 +391,15 @@ public static class TemporalIndependenceAudit
             + "polarisation counts, and the rate the same rho gives at d = 2, 3 and 4. NOT symbol-detectable: "
             + "the suite names no B, g_rr or GammaOf — its vocabulary is groups, irreps, characters and clocks",
             ScanDetectsIt: false),
+
+        // ── G_042: is three-dimensionality one root mechanism or several? ──
+        new SectorClaim("Y_G_042", "Dimensionality Dependency", MetricRequirement.ClockOnly,
+            "it asks whether the selectors of d = 3 are independent, and every statement is group theory, tensor "
+            + "algebra or a statement about the clock law rho^(1/d): solution sets of predicates on d, the "
+            + "identity graviton = dim(so(d)) - 1, the inclusion graph between those sets, and the polarisation "
+            + "counts. NOT symbol-detectable: the suite names no B, g_rr or GammaOf — its vocabulary is "
+            + "dimensions, bivectors, rotations, polarisations and clocks",
+            ScanDetectsIt: false),
     };
 
     // ── The computed classification summaries ───────────────────────────────

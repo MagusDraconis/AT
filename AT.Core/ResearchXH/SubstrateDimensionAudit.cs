@@ -368,6 +368,20 @@ public static class SubstrateDimensionAudit
         => Selectors().Where(s => s.Status == "REFUTED").Select(s => s.Candidate).ToArray();
 
     /// <summary>
+    /// THE REFINEMENT THIS AUDIT OWES THE NEXT ONE. G_041 called the eps/Hodge accident and the polarisation
+    /// match "two independent accidents". G_042 computes them to be ONE condition reached by two derivations —
+    /// the identity graviton = dim(so(d)) - 1 makes the polarisation equality identical to dim(Lambda^2) = dim(V)
+    /// for EVERY d — so the number of INDEPENDENT selectors of d = 3 is 1, not 2.
+    /// </summary>
+    public static string RefinementFromG042()
+        => "REFINEMENT (G_042 -> G_041): the two accidents below are ONE condition, reached by two derivations. "
+         + "The identity graviton polarisations = dim(Lambda^2) - 1 = dim(so(d)) - 1 holds for every d, so the "
+         + "polarisation equality IS dim(Lambda^2) = dim(V) identically rather than coincidentally, and the "
+         + "number of INDEPENDENT reasons for d = 3 is 1, not 2. G_041's positive results stand (the ladder, the "
+         + "minimality of the cube, the open window at d = 4, the BOUNDARY verdict); only the COUNT of "
+         + "independent reasons is corrected. See ResearchY-G_042.";
+
+    /// <summary>
     /// BOUNDARY (computed). The floor is recomputed first — Burnside's sum rule for every dimension on the
     /// ladder, the group construction's distinctness, the ring's own dihedral budget, and the character inner
     /// products. On that floor: d = 3 is DERIVED by two independent accidents, the exclusion of d = 4 is NOT

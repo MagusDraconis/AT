@@ -72,6 +72,15 @@ irrep-supply argument **selects** d = 3 is **REFUTED as a selector**: it selects
 is that the **vector stops being the largest irrep** — max irrep dim equals d for d = 1, 2, 3, then jumps to **8**
 at d = 4 and **20** at d = 5.
 
+> **REFINEMENT (G_042 → G_041).** G_042 computes that these two accidents are **one condition with two
+> derivations**, not two independent ones: the identity
+> `graviton polarisations = dim(Λ²) − 1 = dim(so(d)) − 1` holds for **every** d, so subtracting one from the
+> photon's count turns "the polarisations are equal" into `dim(Λ²) = dim(V)` **identically** rather than
+> coincidentally. The **number of independent reasons for d = 3 is therefore 1, not 2.** Everything else in this
+> audit stands unchanged, including its verdict: d = 4 is still not excluded by the representations, only by
+> this single accident, by the polarisation mismatch, by the clock exponent and by cost. The heading below is
+> left in its original form so the correction is visible rather than silent; read "accidents" as "faces of one
+> accident". Carried in code as `SubstrateDimensionAudit.RefinementFromG042()`.
 ## 4. Two independent accidents *do* pin d = 3
 
 | selector | holds at | d = 2 | d = 4 |
@@ -128,5 +137,5 @@ irrep-supply argument alone. Per the project's memory rules this is recorded in 
 g₀₀ clock law), triaged `ScanDetectsIt: false`. Counts become **28 / 11 / 3 of 42**; the boundary index is
 unchanged; no prior classification changed.
 
-**Scanner side-effect, recorded:** G_033's live classifier now reads **23** substrate suites (40 classified in
+**Scanner side-effect, recorded:** G_033's live classifier now reads **24** substrate suites (40 classified in
 total), because this suite works with the D96ᵈ family explicitly.
