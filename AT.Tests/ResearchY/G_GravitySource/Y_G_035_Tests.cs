@@ -40,13 +40,13 @@ public class Y_G_035_Tests : ResearchTestBase
     {
         // The registry covers every group-G suite the scanner finds.
         Assert.Empty(TemporalIndependenceAudit.UnregisteredSuites());
-        Assert.Equal(38, TemporalIndependenceAudit.Registry().Length);
+        Assert.Equal(39, TemporalIndependenceAudit.Registry().Length);
 
         var (survives, boundary, refuted) = TemporalIndependenceAudit.Counts();
         Assert.Equal(25, survives);
-        Assert.Equal(10, boundary);   // 8 as G_035 audited; G_036 and G_037 added a ninth and tenth
+        Assert.Equal(11, boundary);   // 8 as G_035 audited; G_036, G_037 and G_038 added three more
         Assert.Equal(3, refuted);
-        Assert.Equal(38, survives + boundary + refuted);
+        Assert.Equal(39, survives + boundary + refuted);
 
         // THE SHARP BOUNDARY: the first audit requiring more than g₀₀ is G_021 — light propagation.
         var first = TemporalIndependenceAudit.ConformalBoundary();

@@ -2008,6 +2008,45 @@ solved long ago" confusion quantitatively.
   **-29.7 % at neutron-star compactness x = 0.247002** - so the spatial sector is indistinguishable from GR in the
   solar system and sharply distinguishable at compact objects.
 
+## G_038 - Measure-Decomposition Audit: can the clock bend light on its own? (COMPLETE, REFUTED + DERIVED)
+
+**TIME DOES BEND LIGHT - IT SUPPLIES EXACTLY HALF - BUT THE REDSHIFT FORBIDS IT SUPPLYING THE OTHER HALF, AND THIS
+MAKES THE FIRST-ORDER SPATIAL COEFFICIENT DERIVED RATHER THAN POSTULATED.** Raised by the observation that
+curvature is a change in MEASURE ("space is distance bending a little") and that time is a measure too, so time
+"should be able to do the same".
+
+- **LIGHT RESPONDS ONLY TO THE DIFFERENCE:** with `n = e^(B-A)`, `n - 1 = B - A = (+B distance) + (-A clock)`. The
+  clock's share is exactly **1/(1+gamma)**: **100 % at gamma = 0**, **50 % at gamma = 1**, and at **gamma = -1 the
+  halves are equal and opposite so the net is ZERO** - AT's case. **The intuition is correct: time does bend light.**
+- **BUT A CONFORMAL CHANGE CANNOT BEND LIGHT AT ALL:** `B = A` for ANY conformal factor gives `n = e^(B-A) = 1`
+  EXACTLY - verified across x = 1e-12, 1e-6, 1e-3, 0.1, 0.3, where n - 1 is identically zero. This is a THEOREM,
+  not a numerical accident: **a conformal factor maps null geodesics to null geodesics.** So "time and space
+  bending equally" is INVISIBLE to light, and making the clock bend harder makes space bend equally harder - the
+  two cancel. That is precisely AT's position (A = B = sigma).
+- **THE COMPENSATION ROUTE WORKS - AND IS EXCLUDED BY THE REDSHIFT.** Keeping space FLAT (B = 0) and doubling the
+  clock (A = -2x) gives n - 1 = 2x, hence the FULL deflection (a = 2) - at **TWICE the redshift** (z = 4.24e-6 vs
+  the measured 2.12e-6). The solar-limb redshift is measured as `GM/(Rc^2) = 2.12e-6` to about **1 %**
+  (Pound-Rebka first order, GPS, solar lines), and AT already reproduces it with A = -x (which is why the G_009
+  clock law passes). **A is PINNED - the redshift is what forbids compensating via time.**
+- **THEREFORE B = +x IS FORCED - A REFINEMENT OF G_029/G_030 (the two-level rule).** With A measured as -x, the
+  deflection B - A = 2x leaves exactly one choice. **B's FIRST-ORDER COEFFICIENT IS DERIVED** (jointly from the
+  measured redshift and the measured deflection - no freedom at O(x)); only **its O(x^2) COMPLETION IS BOUNDARY**.
+  Same structure the project already uses for the 3-family window (D_028/D_040): a derived VALUE with a boundary
+  WINDOW. Remaining freedom, measured: `g_rr` survivor vs GR = **-2.697e-11** relative at solar compactness,
+  **-29.68 %** at neutron-star x = 0.247002.
+- **THE MEDIUM ESCAPE IS UNAVAILABLE IN AT (not merely excluded).** AT has **no graviton** - the tensor sector is
+  the massless **spin-2 psi field** (`Box psi_mu_nu = 0`, MinimalPsiEquation), against which GW170817 bounds
+  light's propagation. But any AT-natural index is built from **rho**, and rho sources the metric INCLUDING that
+  sector, so a rho-based index acts on light and on the metric sector IDENTICALLY - it IS a metric, and
+  `n - 1 = -(1+gamma)*Phi/c^2` applies directly (G_037).
+
+**CONSEQUENCE FOR THE SPATIAL SECTOR:** the measure intuition does not remove the need for a spatial sector - it
+explains IN ONE LINE why AT's spatial sector is wrong by a **sign** and a **factor of two** at first order
+(`B = -x` where `+x` is required), and why the clock cannot repair it. It also shows the G_029 postulate is far
+less arbitrary than G_029 alone suggested: its leading behaviour is fixed by two measurements.
+
+Tests: `Y_G_038_Tests` 7/7. Group G: **296/296**.
+
 ## G_037 - Refractive Lens Audit: can light bend without space bending? (COMPLETE, REFUTED)
 
 **AT CANNOT GET BENDING FROM A REFRACTIVE INDEX WITHOUT SPACE CURVATURE - THE INDEX *IS* THE PPN gamma.**

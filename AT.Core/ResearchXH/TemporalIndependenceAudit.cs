@@ -358,6 +358,14 @@ public static class TemporalIndependenceAudit
             + "the suite names no B, g_rr or GammaOf — its subject is a coefficient, and its only metric "
             + "vocabulary is the NEGATIVE test that a conformal metric (A = B) cannot bend light at all",
             ScanDetectsIt: false),
+
+        // ── G_038: the measure decomposition — A is measured, so B is forced at first order ──
+        new SectorClaim("Y_G_038", "Measure Decomposition", MetricRequirement.Spatial,
+            "it partitions the deflection into the clock's half (−A) and the distance's half (+B) and shows the "
+            + "first-order spatial coefficient B = +x is FORCED by the measured redshift and deflection — a "
+            + "statement about the spatial block. NOT symbol-detectable: the suite's metric vocabulary is a "
+            + "coefficient plus the NEGATIVE conformal test (B = A ⟹ n = 1), not B/g_rr/GammaOf symbols",
+            ScanDetectsIt: false),
     };
 
     // ── The computed classification summaries ───────────────────────────────

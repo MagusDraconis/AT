@@ -3281,6 +3281,28 @@ genuine escapes are dispersion, birefringence and time dependence. WHAT SURVIVES
 (`n − 1 = −(1+γ)Φ/c²` is the cleanest statement of AT's γ problem), the rate-dependent term as a genuinely
 non-metric COMPACT-OBJECT effect, and a new falsification handle (GW170817). Verdict computed. Group G 289/289.
 
+### ResearchY-G_038 - Measure-Decomposition Audit (REFUTED, with a DERIVED by-product)
+
+Can the CLOCK measure alone supply the observed light deflection, so that no spatial postulate is needed?
+**YES FOR HALF — AND THE OTHER HALF IS FORBIDDEN BY THE REDSHIFT.** Light responds only to the difference:
+`n − 1 = B − A = (+B distance measure) + (−A clock measure)`, and **the clock's share is exactly 1/(1+γ)** — 100 %
+at γ = 0, **50 % at γ = 1**, and at γ = −1 the halves are equal and opposite so the net is ZERO (AT's case). **The
+intuition is right: time DOES bend light.** BUT **a conformal change cannot bend light at all**: B = A for ANY
+conformal factor ⟹ `n = e^(B−A) = 1` exactly (verified from x = 1e-12 to 0.3) — a theorem, since a conformal factor
+maps null geodesics to null geodesics — so "time and space bending equally" is invisible to light, and making the
+clock bend harder makes space bend equally harder. **THE COMPENSATION ROUTE WORKS AND IS EXCLUDED:** keeping space
+flat and doubling the clock (A = −2x, B = 0) gives n − 1 = 2x, hence the FULL deflection (a = 2) — at **TWICE the
+redshift** (z = 4.24e-6 instead of 2.12e-6). The solar-limb redshift is measured as `GM/(Rc²) = 2.12e-6` to about
+1 % (Pound-Rebka first order, GPS, solar lines), and AT already reproduces it with A = −x — **so A is PINNED and
+the redshift is what forbids compensating via time. THEREFORE B = +x IS FORCED, and this REFINES G_029/G_030:** B's
+**first-order coefficient is DERIVED** (forced jointly by the measured redshift fixing A = −x and the measured
+deflection fixing B − A = 2x), and only its **O(x²) completion is BOUNDARY** — the project's two-level rule
+(D_028/D_040). The remaining freedom, measured: `g_rr` survivor vs GR = **−2.697e-11** relative at solar
+compactness but **−29.7 %** at neutron-star x = 0.247002. **AND THE MEDIUM ESCAPE IS UNAVAILABLE IN AT:** there is
+no graviton (the tensor sector is the massless spin-2 psi field, `Box psi_μν = 0`), and any AT-natural index is
+built from rho, which sources the metric INCLUDING that sector — so it IS a metric. Verdict computed. Group G
+296/296.
+
 ## Key Unsolved Problems
 
 1. Numerical values of ℓ, τ, ħ — empirical, not derived
