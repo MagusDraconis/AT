@@ -150,6 +150,21 @@ defect in this repository; the canonical exemplars are given so the rule can be 
    declaring a change done**, and do not let a data-gated test suite be the only guard on a code path — the
    FITS-dependent image tests all *skip* on a clean checkout, so `AT.Tests/Unit/RenderingBackendTests.cs` exists to
    exercise the renderer unconditionally. If a component's only tests can skip, add one that cannot.
+9. **A validator certifies only at its own tolerance and in its own regime — read the assertions and the parameter
+   range, not the test name.** `EL04_EulerAndTransport_Should_Be_Bounded_AgainstSchwarzschildReference` reads like a
+   passed GR check; it asserts `ratio ∈ [0.95, 1.08]`, `ratioEuler ∈ [0.85, 1.25]` and `|EL − TRM|/Schw ≤ 0.30` —
+   i.e. it accepts **γ ∈ [0.40, 1.50]**, a window **23,913× looser than Cassini's 1 ± 2.3e−5** — and it ran at
+   `G = c = b = 1` with ε = 1e−3…1e−2, **472×–4,717× outside** the solar compactness (2.12e−6) the claim was about.
+   Called "a deflection matching general relativity", this was neither at the measurement's precision nor in the
+   measurement's regime. **When a source is said to match a measurement, quote the asserted band beside the
+   measurement's precision, and state the parameter range actually exercised.**
+10. **A hardcoded leading constant is a claim, not a coincidence.** TRM's `n_eff = 2 + λ_t·φ + λ_s·φ²·|μ̇|` is used
+   as `ar = −n_eff·G·M/r²`, so the literal `2` **is** the deflection — and by G_037's identity `a = 1 + γ`, a
+   literal `2` is `γ = 1`. The formula therefore *contained* the spatial factor it claimed to avoid. When a
+   derivation reproduces a known result, **look for the constant that is the answer** — and if a quantity is
+   treated as physical in one line and as a removable offset in another (`(n_eff − 2)·v` vs `n_eff·G·M/r²`), that
+   is a defect to report, not a convention to accept. Corollary of rule 5: the same audit must be re-checked
+   **against the source**, not only against the prose, whenever the source still exists.
 
 # AT Project Memory Rules
 
