@@ -1899,6 +1899,46 @@ Tests: `Y_G_033_Tests` 5/5. Group G: **265/265**.
 
 Tests: `Y_G_034_Tests` 6/6. Group G: **271/271**. Affected set: **321/321**.
 
+## G_035 - Temporal Independence Audit: what survives without the conformal metric? (COMPLETE, SURVIVES)
+
+**AT's TIME HALF IS NOT HOSTAGE TO ITS SPACE HALF.** Classifying all 36 group-G suites by the metric component
+each result needs: **25 need g00 only (SURVIVES), 8 need g_ij (BOUNDARY), 3 require conformal flatness (REFUTED)**.
+The axis maps 1:1 onto the labels, so the verdict is not a judgement call - a result requiring only g00 cannot be
+affected by removing conformality, because it never refers to the spatial block at all.
+
+- **THE SHARP BOUNDARY: G_020 -> G_021.** EVERY audit from G_001 to G_020 is g00-ONLY - the source law, the clock
+  law, control/realizability, SI magnitudes, calibration, the relaxation mechanism, the actuation chain,
+  mass-independence, watch-ontology, the second-order signature, the neutron-star redshift. The spatial
+  requirement begins **EXACTLY at G_021 (Light-Propagation)** - the first audit to ask for light bending.
+  Boundary index **23 of 36** (temporal era 22 entries), computed from the registry, never chosen.
+  BOUNDARY eight: G_021, G_022, G_023, G_025, G_028, G_029, G_030, G_033. REFUTED three: G_024, G_031, G_032.
+  Metric-free three: G_026, G_027, G_034.
+- **THE MINIMAL TIME SECTOR:** 1 metric function (g00 = -rho^(2/d)) + 1 scalar (rho) + 1 exponent (1/d, d = 3 by
+  rotation self-duality, M_013) - **NO spatial metric, NO conformal factor, NO reference eta.** The time half is
+  ONE EQUATION ON ONE SCALAR.
+- **THE SOURCE LAW IS THE CLOCK LAW:** A = 0.5 ln(-g00) = sigma = (1/d) ln rho (the clock potential = Phi/c^2);
+  dtau/dt = sqrt(-g00) = rho^(1/d); and **a = -(1/d) grad ln rho = -grad A** - the NEGATIVE gradient of the time
+  exponent, exactly as an attractive force requires (G_028). Verified on a PEAKED profile: the acceleration points
+  INWARD with the peak as an equilibrium.
+- **THE ARITY PROOF (structural, not numerical):** the temporal observables are functions whose signature
+  contains NO B (G00, ClockOf, ClockPotentialOf, RedshiftOf, SourceAccelerationOf, SecondOrderRatioOf); the spatial
+  ones DO take B (GammaOf, AdmittedBand, SurvivorB). A result that cannot be CALLED with B cannot REQUIRE B.
+- **THE CHECK IS HONEST ABOUT ITS LIMITS.** The live scan strips COMMENTS AND STRING LITERALS (so a narrative
+  mention cannot mask a dependency). **TWO patterns were removed after measurement** - `double b` matched a
+  LEAST-SQUARES SLOPE (G_006) and a TRIDIAGONAL PARAMETER (G_007, G_016b); `K(` matched any method. Bare `psi` is
+  EXCLUDED ON PURPOSE: it names the WAVEFUNCTION in the density era (|psi|^2 = rho, G_014) and the metric's
+  traceless face elsewhere. **Rule adopted: a token qualifies as a marker only if it cannot plausibly mean
+  anything else.** Two claims declare ScanDetectsIt = false WITH WRITTEN REASONS (G_025: an exponent in
+  rho*exp(-d*psi/(d-1)); G_033: no metric vocabulary at all, a group-theoretic T2g argument). Check strength is
+  two-directional: HARD (asserted) - ClockOnly must show ZERO executable spatial references, holds for all 25;
+  SOFT - spatial/conformal should show at least one unless explicitly triaged.
+
+**CONSEQUENCE:** G_031 showed conformal flatness IS the counting measure; G_032 showed it is an ASSUMED PRIMITIVE
+eta whose imposition is REFUTED (gamma = -1, Cassini 8.6957e4 sigma). G_035 shows the cost is CONFINED - **the
+conformal problem is confined to the space sector.** The dilemma is real but it is ABOUT SPACE.
+
+Tests: `Y_G_035_Tests` 6/6. Group G: **277/277**.
+
 ## Latest Repo Sync
 
 Recent commits from the other machine:

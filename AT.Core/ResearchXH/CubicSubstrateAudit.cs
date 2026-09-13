@@ -115,11 +115,12 @@ public static class CubicSubstrateAudit
     }
 
     /// <summary>
-    /// The audits that are ABOUT the substrate rather than users of it. They compute the D96³ spectrum in
-    /// order to audit it, so counting them would inflate the substrate era — the self-reference the live
-    /// scanner exposed as soon as the first such audit existed.
+    /// The audits that are ABOUT the substrate or about the group's structure rather than users of it. They
+    /// compute the spectrum (or audit the whole group) in order to do so, so counting them would inflate the
+    /// substrate era — the self-reference the live scanner exposed as soon as the first such audit existed, and
+    /// again when each subsequent meta-audit was added.
     /// </summary>
-    public static readonly string[] MetaAudits = { "Y_G_033", "Y_G_034" };
+    public static readonly string[] MetaAudits = { "Y_G_033", "Y_G_034", "Y_G_035" };
 
     /// <summary>Is this audit a substrate meta-audit (excluded from the era classification)?</summary>
     public static bool IsMetaAudit(string audit) => MetaAudits.Contains(audit, StringComparer.Ordinal);

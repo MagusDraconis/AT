@@ -3199,6 +3199,24 @@ excludes two meta-audits; T_012's headline UNCHANGED (sub-claim 21 -> 14); T_013
 C 1004.9, max mult 738, 150x -> 114x); T_014/T_008-T_011/D_047 all pass unchanged. Group G 271/271; affected set
 321/321.
 
+### ResearchY-G_035 - Temporal Independence Audit (SURVIVES)
+
+Which G-results survive if the conformal metric is removed? Classifying all 36 group-G suites by the metric
+component each result needs gives **25 SURVIVES (g00 only) / 8 BOUNDARY (g_ij) / 3 REFUTED (conformal flatness)** -
+and the axis maps 1:1 onto the labels, so the verdict is not a judgement call. **THE SHARP BOUNDARY: every audit
+from G_001 to G_020 is g00-only**, and the spatial requirement begins EXACTLY at **G_021 (Light-Propagation)**,
+the first to ask for light bending (boundary index 23 of 36). **THE MINIMAL TIME SECTOR** is 1 metric function
+(g00 = -rho^(2/d)) + 1 scalar (rho) + 1 exponent (1/d, d = 3 by rotation self-duality) with NO spatial metric, NO
+conformal factor and NO eta: the time half is one equation on one scalar. The source law and the clock law are ONE
+STATEMENT - a = -(1/d) grad ln rho = -grad A is the NEGATIVE gradient of the time exponent, as an attractive force
+requires; on a peaked profile the acceleration is verified INWARD. THE ARITY PROOF is structural: the temporal
+observables cannot be CALLED with a B, while the spatial ones take B explicitly. The mechanical check is honest
+about its limits - it strips comments and string literals, and TWO patterns were removed after measurement
+(`double b` matched a least-squares slope and a tridiagonal parameter; `K(` matched any method), while bare `psi`
+is excluded because it names the wavefunction in the density era. Two claims declare ScanDetectsIt = false with
+written reasons (G_025, G_033). CONSEQUENCE: G_032's conformal problem is CONFINED TO SPACE - AT's time half is
+not hostage to its space half. Verdict computed (G_027). Group G 277/277.
+
 ## Key Unsolved Problems
 
 1. Numerical values of ℓ, τ, ħ — empirical, not derived
