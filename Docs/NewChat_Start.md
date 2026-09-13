@@ -2717,6 +2717,30 @@ strength, gauge structure, minimality. **Goal: derive h(rho) instead of choosing
   LOCAL coupling expecting zero - a conceptual error, since a local function of rho is never a difference.
 
 No group-G registry claim, so claim counts are unchanged. Tests: `Y_E_009_Tests` 7/7; group E 62/62.
+## ResearchY-E_010 - Magnetic Sector Audit (COMPLETE, REFUTED)
+
+**Question.** What AT structure can generate non-zero F_ij? Requirements: local, gauge-compatible, no new primitive,
+acts on T1/T2. **Determine: can magnetic components emerge from occupancy dynamics alone?**
+
+**Answer: REFUTED - no, and the measurement that decides it is a SCALING one.**
+
+- **E_009's purely-electric result was a CHOICE, not a theorem** (it set A_i = 0). Completing the coupling covariantly
+  - `A_mu = h(rho) Delta_mu rho`, the only vector a scalar can build - switches the magnetic sector ON:
+  **max |F_23| = 1.422E-003** with the derived coupling, against **0.000E+000** for the linear coupling (the gradient
+  E_008 excluded). **The magnetic sector exists because the clock law is NONLINEAR.**
+- **BUT IT IS A FINITE-SIZE ARTEFACT:** refining the lattice at a fixed physical profile, the covariant form falls as
+  **a^2.92** (1.42E-003 / 2.06E-004 / 2.61E-005 / 3.32E-006 at L = 8/16/32/64) and the site-local form as **a^0.99**
+  (9.91E-003 / 5.05E-003 / 2.55E-003 / 1.27E-003). Both vanish in the physical limit - the same standard E_004
+  applied to masslessness (the gap closes because mu_min n^2 settles).
+- **WHAT SURVIVES:** E_007's uniform flux with the physical strength held fixed reads **0.785398 at every lattice
+  size** - local, gauge-compatible (1.78E-015), Bianchi-consistent, no new primitive, acting on T1/T2 - but
+  **independently assigned**: the non-gradient structure E_008 identified.
+- **THREE ERRORS CAUGHT BY THE TESTS:** E_007's flux is an ELECTRIC field under this convention (its A_1 = f y sits in
+  the (1,2) pair; the magnetic analogue is A_2 = f z); the WRAP belongs on the SUM of the four link phases, not on
+  each term (the first version read the seam artefact 5.497787, the second a branch artefact); and a cross-audit check
+  that compared two different profiles now runs on E_009's own organisation, reproducing its published 1.424E-002.
+
+No group-G registry claim, so claim counts are unchanged. Tests: `Y_E_010_Tests` 7/7; group E 69/69.
 ## ResearchY-G_045 - Observed vs Hidden Dimension Audit (COMPLETE, REFUTED)
 
 **Question.** Can the apparent 3D world emerge as a PROJECTION of a higher-dimensional ACTUALIZATION SPACE?

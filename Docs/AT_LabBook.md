@@ -4061,3 +4061,49 @@ form.
 
 **Status:** COMPLETE. Tests `Y_E_009_Tests` **7/7**; group E **62/62**. No group-G registry claim, so no counts
 change.
+
+
+### ResearchY-E_010 - Magnetic Sector Audit (REFUTED)
+
+**Question.** What AT structure can generate a non-zero F_ij? Requirements: local, gauge-compatible, no new primitive,
+acts on T1/T2. **Determine: can magnetic components emerge from occupancy dynamics alone?**
+
+**Answer: REFUTED** - no, and the measurement that decides it is a **scaling** one.
+
+#### The covariant completion (E_009's choice undone)
+
+| configuration | max |F_23| |
+|---|---|---|
+| `A_mu = h(rho) Delta_mu rho`, derived coupling | **1.422E-003** |
+| the same form with the LINEAR coupling | **0.000E+000** |
+| electric field of the same configuration | 2.203E-003 |
+
+The magnetic sector exists **because the clock law is nonlinear**.
+
+#### The decisive measurement - refining the lattice at a fixed physical profile
+
+| form | L = 8 | L = 16 | L = 32 | L = 64 | F ~ |
+|---|---|---|---|---|---|
+| `A_mu = h(rho) Delta_mu rho` | 1.42E-003 | 2.06E-004 | 2.61E-005 | 3.32E-006 | **a^2.92** |
+| `A_mu = h(rho(x))` local | 9.91E-003 | 5.05E-003 | 2.55E-003 | 1.27E-003 | **a^0.99** |
+
+Both **vanish in the physical limit** - the diagnosis E_004 gave the spectral gap, by the same standard.
+
+#### What survives
+
+E_007's uniform flux, physical strength held fixed: **0.785398 at every L = 8, 16, 32, 64**. Local (support 2),
+gauge-compatible (**1.78E-015**), Bianchi-consistent, no new primitive, acting on T1/T2 - but **independently
+assigned**.
+
+#### Errors caught by the tests
+
+1. E_007's flux is an **electric** field under this convention (its `A_1 = f y` sits in the (1,2) pair); the magnetic
+   analogue is `A_2 = f z`.
+2. The **wrap belongs on the SUM** of the four link phases, not on each term: the unwrapped version read the seam
+   artefact **5.497787**, wrapping each term moved the artefact instead of removing it, and wrapping the sum gives the
+   correct Abelian holonomy 0.785398 uniformly.
+3. A cross-audit check compared two different profiles; it now runs on **E_009's own organisation** and reproduces its
+   published **1.424E-002** exactly.
+
+**Status:** COMPLETE. Tests `Y_E_010_Tests` **7/7**; group E **69/69**. No group-G registry claim, so no counts
+change.
