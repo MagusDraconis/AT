@@ -2045,7 +2045,7 @@ explains IN ONE LINE why AT's spatial sector is wrong by a **sign** and a **fact
 (`B = -x` where `+x` is required), and why the clock cannot repair it. It also shows the G_029 postulate is far
 less arbitrary than G_029 alone suggested: its leading behaviour is fixed by two measurements.
 
-Tests: `Y_G_038_Tests` 7/7. Group G: **296/296**.
+Tests: `Y_G_038_Tests` 7/7. Group G: **297/297**.
 
 ## G_037 - Refractive Lens Audit: can light bend without space bending? (COMPLETE, REFUTED)
 
@@ -2083,12 +2083,51 @@ genuine non-metric compact-object effect (within an order of magnitude at neutro
 FALSIFICATION HANDLE - any EM-only lens must beat GW170817's 1.7 s bound, which no astrophysically natural
 strength does.
 
-**CAVEATS:** (1) phi is read as the dimensionless potential `Phi/c^2`; if TRM's phi is an order-1 order parameter
-the O(phi^2) conclusion changes and the specific `f(kappa,b)` would need the TRM definitions. (2) TRM's
-`{beta,gamma} -> {1,1}` at kappa->0.3, b->1.248 is a TUNED-TO-TARGET statement; whether `f(kappa,b) -> 1` is
-derived or fitted cannot be settled from the published formula.
+**CAVEATS (both now CLOSED - see provenance below):** (1) phi is read as the dimensionless potential `Phi/c^2`;
+if TRM's phi is an order-1 order parameter the O(phi^2) conclusion changes. (2) TRM's `{beta,gamma} -> {1,1}` at
+kappa->0.3, b->1.248 is a TUNED-TO-TARGET statement; whether `f(kappa,b) -> 1` is derived or fitted cannot be
+settled from the published formula.
 
-Tests: `Y_G_037_Tests` 6/6. Group G: **289/289**.
+**TRM PROVENANCE - AND A FALSIFICATION OF MY OWN FIRST READING (2026-09-13).** The TRM code is still on disk, so
+the two caveats above were CHECKED directly. The check falsified my first reading and STRENGTHENED the conclusion.
+- **`phi` IS the dimensionless potential.** `TRM.Core/Shared/PhotonTransportModel.cs` defines
+  `Phi(G,M,c,r) = G*M/(c*c*r)`, so the G_037 reading `phi = Phi/c^2` is CANONICAL. (Caveat 1 closed.)
+- **CORRECTION - `lambda_time = 1` does NOT give half.** The acceleration is `ar = -nEff*G*M/(r*r)` and `nEff`
+  INCLUDES the leading `2.0`, so the multiplier is `nEff` itself, not `lambda_time`: at the solar limb
+  `nEff = 2.000002122`, ratio 1.000001 - **FULL deflection**. My earlier sentence "lambda_time = 1 gives half" read
+  `lambda_time` as the index coefficient; the code uses the whole `nEff` as the force multiplier.
+- **THE FILE USES BOTH CONVENTIONS AT ONCE.** Time accumulation writes `(nEff - 2.0) * v` (physical index is
+  `nEff - 2` -> HALF); the acceleration writes `-nEff*G*M/(r*r)` (full). One function, two conventions. The
+  reported result depends on which line you read, so the model is not well-defined until one is chosen.
+- **SO THE FULL DEFLECTION COMES FROM A LITERAL `2.0`.** `ar = -nEff*G*M/r^2` with `nEff ~ 2` is the "2x Newton"
+  flat-space photon law. By G_037's identity (`a = 1 + gamma`) that literal 2 **IS `gamma = 1`**. So "no space
+  bending" is false - it is space bending typed in as a constant, and it is exactly AT's G_029 postulate in other
+  variables, so it removes nothing.
+- **THE TEST SUITE CANNOT SUPPORT "MATCHES GR".** `EL04` asserts `ratio in [0.95, 1.08]` (gamma 0.90..1.16),
+  `ratioEuler in [0.85, 1.25]` (gamma 0.70..1.50) and `|EL-TRM|/Schw <= 0.30` (branches may disagree by 30%);
+  `EL03` allows `[0.70, 1.25]` (gamma 0.40..1.50) with `relDiff <= 0.35`. Widest accepted gamma window = 1.10 wide
+  vs Cassini's 4.6e-5 - **23,913x looser**. And every one runs `G=1, c=1, b=1` at `epsilon = 1e-3..1e-2`, i.e.
+  **472x..4,717x OUTSIDE the solar regime** (phi_sun = 2.12e-6). Solar-compactness deflection was never tested.
+- **THE ONE NON-METRIC CHANNEL IS DEAD.** To lift `lambda_s*phi^2*|mu_dot|` to first order needs
+  `|mu_dot| = lambda_t/(lambda_s*phi) = 1.57e4` at solar compactness; the code's own `ComputeAbsDmuDtBase` gives
+  `|mu_dot| ~ O(1.8e-6 .. 0.43)` /s there -> **shortfall >= 3.6e4**. With `|mu_dot| ~ 1` the term is `1.35e-10`
+  against the `2.12e-6` it must match (1.57e4x short).
+- **TWO MORE BLOCKERS.** `|mu_dot|` is a NEW PRIMITIVE (a directional-change rate field); AT's temporal core is
+  `rho -> g00 -> clock` (G_035) with no such variable and G_029/G_030's no-new-primitive rule forbids adding one.
+  And AT's DERIVED metric is conformal (`A = B` -> `n = 1` exactly, gamma = -1, G_032), so any nonzero index
+  coefficient BREAKS conformality - which by G_037 means it IS the spatial metric.
+- **TRM'S OWN DOCS ALREADY SAID SO.** `docs/Archive/TRM_Geodesic_Derivation.md` calls the second term "a natural
+  **candidate** for the missing spatial / **curvature-like** contribution" and lists *"`lambda_s` can be derived
+  from a dimensionless coupling structure"* as the NEXT OPEN STEP (`20/17` itself is section 12, "Open Derivation
+  Task"). `V3_4/main.tex` nonclaims: *"No GR replacement is claimed."* Slide content (n_eff, PPN, deflection)
+  reflects the TRANSPORT SUBSYSTEM (TRM34-41, TRM78), which the published paper chose not to claim.
+- **NET (checked, not assumed): the TRM index does NOT replace space curvature in AT.** Full deflection -> it IS
+  `gamma = 1`, i.e. AT's G_029 postulate renamed. Half -> 43,479 sigma. Recovering the second half -> needs a
+  primitive AT's no-go forbids, and is 3.6e4x short even if granted. **This is an independent HISTORICAL
+  confirmation of G_029/G_030: the only ingredient that ever worked was the literal `gamma = 1`, which G_030
+  proved cannot be derived.**
+
+Tests: `Y_G_037_Tests` 7/7. Group G: **297/297**.
 
 ## ResearchY-E_001 - Electromagnetism Inventory Audit (COMPLETE, BOUNDARY)
 

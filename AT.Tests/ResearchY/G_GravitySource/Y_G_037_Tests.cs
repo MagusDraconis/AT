@@ -1,3 +1,4 @@
+using System.Globalization;
 using System.Text;
 using AT.Core.ResearchXH;
 using AT.Tests.Shared;
@@ -20,8 +21,9 @@ namespace AT.Tests.ResearchY.G_GravitySource;
 ///      object in different variables.
 ///  (2) AT's **derived** conformal sector (G_031) has A = B ⟹ n = 1 ⟹ **zero** bending. This is G_032's
 ///      Cassini refutation restated optically, and a conformal factor maps null geodesics to null geodesics.
-///  (3) THE RATE TERM CANNOT CARRY THE HALF. The needed n − 1 = 2φ is FIRST order; `λ_space·φ²|μ̇|` is second:
-///      **9.43e5× too small at the Sun**, 2.0e4× at a white dwarf, 8.1× at J0740+6620.
+///  (3) THE RATE TERM CANNOT CARRY AN INDEPENDENT SPATIAL TERM. The needed n − 1 = 2φ is FIRST order;
+///      `λ_space·φ²|μ̇|` is second: **9.43e5× too small at the Sun**, 2.0e4× at a white dwarf, 8.1× at
+///      J0740+6620.
 ///  (4) THE EM-ONLY READING IS EXCLUDED. If the mechanism bends light but not space, gravitons do not see it:
 ///      over GW170817's 40 Mpc a galactic-scale index delays light by ~131 yr against a **1.7 s** bound —
 ///      **2.4e9×**. The surviving strength is n − 1 ≲ **4.13e−16**.
@@ -29,6 +31,13 @@ namespace AT.Tests.ResearchY.G_GravitySource;
 ///      Shapiro delay, from the same function.
 ///  (6) THE THREE GENUINE ESCAPES are dispersion, birefringence and time dependence — each an observational
 ///      commitment, not a free choice. The last is exactly the TRM φ²|μ̇| term.
+///  (7) THE SOURCE CHECK — AND A CORRECTION. Reading `TRM.Core/Shared/PhotonTransportModel.cs` *in situ*
+///      falsified this audit's first reading and strengthened the verdict: `λ_time = 1` does **NOT** give half,
+///      because the code accelerates by `ar = −n_eff·G·M/(r·r)` and `n_eff` includes the leading `2.0`. That
+///      literal 2 **is** (1+γ) = 2, i.e. γ = 1 — the spatial factor is already in the formula, hardcoded. The
+///      file also uses both conventions at once (`(n_eff − 2)·v` for travel time, `n_eff·G·M/r²` for the
+///      acceleration), its own tests accept γ ∈ [0.40, 1.50] (**23,913× looser than Cassini**) and never ran at
+///      solar compactness, and the rate channel needs |μ̇| = 1.57e4 against a physical ≤ 0.43/s.
 /// </summary>
 public class Y_G_037_Tests : ResearchTestBase
 {
@@ -67,7 +76,7 @@ public class Y_G_037_Tests : ResearchTestBase
     }
 
     [Fact]
-    public void Y_G_037_TheRateDependentTermCannotSupplyTheMissingHalf()
+    public void Y_G_037_TheRateDependentTermCannotSupplyAnIndependentSpatialTerm()
     {
         // The needed index shift is FIRST order; the phi^2 term is second order and orders of magnitude short.
         var rows = RefractiveLensAudit.QuadraticReach();
@@ -86,8 +95,10 @@ public class Y_G_037_Tests : ResearchTestBase
         Assert.True(rows[0].Shortfall > rows[1].Shortfall);
         Assert.True(rows[1].Shortfall > rows[2].Shortfall);
 
-        // And the first-order carrier is the linear term, which the identity says IS the spatial metric function.
-        Assert.Contains("λ_time = (1+γ)", RefractiveLensAudit.FirstOrderCarrier());
+        // And the first-order carrier is the formula's LEADING CONSTANT (2), not lambda_time — which by the
+        // identity means that constant IS the spatial metric function.
+        Assert.Contains("LEADING CONSTANT (2)", RefractiveLensAudit.FirstOrderCarrier());
+        Assert.Contains("γ = 1", RefractiveLensAudit.FirstOrderCarrier());
     }
 
     [Fact]
@@ -149,8 +160,52 @@ public class Y_G_037_Tests : ResearchTestBase
     }
 
     [Fact]
+    public void Y_G_037_TheSourceCheckFalsifiesTheHalfReading()
+    {
+        // ── (7) THE SOURCE CHECK. The code accelerates by ar = -n_eff*G*M/(r*r), and n_eff INCLUDES the
+        //        leading 2.0 — so the first-order coefficient is n_eff itself, NOT lambda_time.
+        Assert.Equal(2.0, RefractiveLensAudit.TrmLeadingConstant);
+        Assert.Equal(2.00000212, RefractiveLensAudit.TrmEffectiveIndexAtSolar(), 8);
+        Assert.Equal(1.000001, RefractiveLensAudit.TrmEffectiveIndexAtSolar() / 2.0, 6);   // FULL, not half
+
+        // By the identity a = 1 + gamma, a leading constant of 2 means gamma = 1: the spatial factor is
+        // already in the formula, hardcoded.
+        Assert.Equal(1.0, RefractiveLensAudit.GammaImpliedByLeadingConstant());
+        Assert.Equal(2.0, RefractiveLensAudit.IndexCoefficient(RefractiveLensAudit.GammaImpliedByLeadingConstant()));
+
+        // The other convention the same function uses: travel time subtracts the 2, which IS half.
+        Assert.Equal(2.12e-6, RefractiveLensAudit.TrmPhysicalIndexShiftAtSolar(), 12);
+        Assert.Equal(1.06e-6, RefractiveLensAudit.TrmPhysicalIndexShiftAtSolar() / 2.0, 12);   // half
+
+        // ── TRM's own deflection tests: what they actually accept.
+        var bands = RefractiveLensAudit.TrmTestBands();
+        Assert.Equal(3, bands.Length);
+        Assert.Equal(0.40, bands[0].GammaLow, 10);      // EL03 low  = 2(0.70) - 1
+        Assert.Equal(1.50, bands[0].GammaHigh, 10);     // EL03 high = 2(1.25) - 1
+        Assert.Equal(1.10, bands[0].GammaHigh - bands[0].GammaLow, 10);
+        Assert.Equal(1.50, bands[2].GammaHigh, 10);     // EL04 Euler high
+
+        // Cassini pins gamma to 1 +/- 2.3e-5; TRM's widest band is 23,913x looser.
+        Assert.Equal(1.1 / (2.0 * RefractiveLensAudit.CassiniSigmaGamma), RefractiveLensAudit.BandLooseness(), 3);
+        Assert.True(RefractiveLensAudit.BandLooseness() > 2.3e4);
+
+        // And every run is G = 1, c = 1, b = 1 at eps = 1e-3..1e-2 — never the solar regime.
+        Assert.Equal(471.7, RefractiveLensAudit.TestRegimeOutsideSolarLow(), 1);
+        Assert.Equal(4717.0, RefractiveLensAudit.TestRegimeOutsideSolarHigh(), 0);
+        Assert.True(RefractiveLensAudit.TestRegimeOutsideSolarLow() > 400.0);
+
+        // ── The one non-metric channel: |mu_dot| needed vs |mu_dot| available.
+        Assert.Equal(1.0 / (30.0 * RefractiveLensAudit.SolarX), RefractiveLensAudit.RequiredMuDot(RefractiveLensAudit.SolarX), 6);
+        Assert.True(RefractiveLensAudit.RequiredMuDot(RefractiveLensAudit.SolarX) > 1.5e4);
+        Assert.True(RefractiveLensAudit.MuDotFromRadialSweep() < 1.0);
+        Assert.True(RefractiveLensAudit.MuDotFromAcceleration() < 1.0e-5);
+        Assert.True(RefractiveLensAudit.RateTermShortfallAtSolar() > 3.6e4);
+    }
+
+    [Fact]
     public void Y_G_037_Run()
     {
+        Thread.CurrentThread.CurrentCulture = CultureInfo.InvariantCulture;
         var sb = new StringBuilder();
         PrintHeader("Y_G_037 — Refractive Lens Audit: can light bend without space bending?");
 
@@ -188,7 +243,7 @@ public class Y_G_037_Tests : ResearchTestBase
         sb.AppendLine("    geodesics to null geodesics, so it cannot bend light at all.");
         sb.AppendLine();
 
-        PrintHeader("2. THE RATE-DEPENDENT TERM CANNOT SUPPLY THE MISSING HALF");
+        PrintHeader("2. THE RATE-DEPENDENT TERM CANNOT CARRY AN INDEPENDENT SPATIAL TERM");
         sb.AppendLine("  the observed deflection needs n − 1 = 2φ — FIRST order in φ;");
         sb.AppendLine("  λ_space·φ²·|μ̇| is SECOND order:");
         sb.AppendLine();
@@ -196,10 +251,10 @@ public class Y_G_037_Tests : ResearchTestBase
         foreach (var r in RefractiveLensAudit.QuadraticReach())
             sb.AppendLine($"  {r.Arena,-34}{r.Phi,11:E3}{r.Needed,14:E3}{r.Quadratic,13:E3}{r.Shortfall,13:E3}");
         sb.AppendLine();
-        sb.AppendLine("  ⇒ only the LINEAR φ term can carry the first-order half — and by the identity that");
-        sb.AppendLine("    term IS the spatial metric function. The φ² term is nevertheless genuinely");
-        sb.AppendLine("    interesting: it depends on a RATE, which no static metric can, so it is a real");
-        sb.AppendLine("    non-metric ingredient — but only where φ is O(1), i.e. at compact objects.");
+        sb.AppendLine("  ⇒ the first-order coefficient is the formula's LEADING CONSTANT (2), not λ_time — and by");
+        sb.AppendLine("    the identity a = 1+γ that constant IS the spatial metric function. The φ² term is");
+        sb.AppendLine("    nevertheless genuinely interesting: it depends on a RATE, which no static metric can,");
+        sb.AppendLine("    so it is a real non-metric ingredient — but only where φ is O(1), at compact objects.");
         sb.AppendLine();
 
         PrintHeader("3. THE DICHOTOMY — AND ITS OBSERVATIONAL KILL");
@@ -229,6 +284,58 @@ public class Y_G_037_Tests : ResearchTestBase
             sb.AppendLine($"      why not a metric: {e.Why}");
             sb.AppendLine($"      constraint:       {e.Constraint}");
         }
+        sb.AppendLine();
+
+        PrintHeader("6. THE SOURCE CHECK — THE FORMULA ALREADY CONTAINS THE SPATIAL FACTOR");
+        sb.AppendLine("  TRM.Core/Shared/PhotonTransportModel.cs was still on disk, so the formula was read");
+        sb.AppendLine("  in situ rather than inferred:");
+        sb.AppendLine("      ar = −n_eff·G·M/(r·r),    n_eff = 2 + λ_time·φ + λ_space·φ²·|μ̇|");
+        sb.AppendLine("  The force multiplier is n_eff ITSELF — it includes the leading 2.0. At the solar limb:");
+        sb.AppendLine($"      n_eff = {RefractiveLensAudit.TrmEffectiveIndexAtSolar():F9}"
+                      + $"   ->   ratio vs GR = {RefractiveLensAudit.TrmEffectiveIndexAtSolar() / 2.0:F9}");
+        sb.AppendLine("  ⇒ λ_time = 1 gives FULL deflection, NOT half. This audit's first reading treated λ_time");
+        sb.AppendLine("    as the index coefficient; the code uses the whole n_eff. CORRECTED.");
+        sb.AppendLine();
+        sb.AppendLine("  AND THE FILE USES BOTH CONVENTIONS AT ONCE:");
+        sb.AppendLine($"      travel time : (n_eff − 2)·v = {RefractiveLensAudit.TrmPhysicalIndexShiftAtSolar():E3}"
+                      + "   -> HALF");
+        sb.AppendLine("      acceleration:  n_eff·G·M/r²                     -> FULL");
+        sb.AppendLine("  one function, two conventions; the reported result depends on which line is read.");
+        sb.AppendLine();
+        sb.AppendLine("  SO THE FULL DEFLECTION COMES FROM A LITERAL 2.0 — and by the identity that IS γ = 1:");
+        sb.AppendLine($"      leading constant {RefractiveLensAudit.TrmLeadingConstant:F1}"
+                      + $"   ->   gamma = {RefractiveLensAudit.GammaImpliedByLeadingConstant():F1}");
+        sb.AppendLine("  the formula is therefore not an alternative to space curvature — the spatial factor is");
+        sb.AppendLine("  already in it, hardcoded. 'No space bending' is false.");
+        sb.AppendLine();
+        sb.AppendLine("  coefficients as they stand (TRM Parameters defaults):");
+        foreach (var t in RefractiveLensAudit.TrmCoefficients())
+            sb.AppendLine($"      {t.Symbol,-18}{t.Value,22:G17}   {t.Status}");
+        sb.AppendLine();
+        sb.AppendLine("  TRM's OWN TESTS CANNOT SUPPORT 'MATCHES GR':");
+        sb.AppendLine("      test                ratio band        gamma accepted");
+        foreach (var b in RefractiveLensAudit.TrmTestBands())
+            sb.AppendLine($"      {b.Test,-18}[{b.RatioLow:F2}, {b.RatioHigh:F2}]      "
+                        + $"[{b.GammaLow:+0.00;-0.00}, {b.GammaHigh:+0.00;-0.00}]");
+        sb.AppendLine($"  ⇒ Cassini pins γ to 1 ± {RefractiveLensAudit.CassiniSigmaGamma:E1}; the widest accepted");
+        sb.AppendLine($"    TRM window is {RefractiveLensAudit.BandLooseness():N0}x LOOSER. And every run is");
+        sb.AppendLine($"    G = 1, c = 1, b = 1 at ε = 1e−3 … 1e−2 — that is {RefractiveLensAudit.TestRegimeOutsideSolarLow():N0}x to "
+                      + $"{RefractiveLensAudit.TestRegimeOutsideSolarHigh():N0}x");
+        sb.AppendLine("    OUTSIDE the solar regime. Solar-compactness deflection was never tested.");
+        sb.AppendLine();
+        sb.AppendLine("  THE ONE NON-METRIC CHANNEL IS DEAD:");
+        sb.AppendLine($"      required |μ̇| at the Sun = λ_time/(λ_space·φ) = "
+                      + $"{RefractiveLensAudit.RequiredMuDot(RefractiveLensAudit.SolarX):E4}");
+        sb.AppendLine($"      physical  |μ̇| from the code's own definition = O("
+                      + $"{RefractiveLensAudit.MuDotFromAcceleration():E2} … "
+                      + $"{RefractiveLensAudit.MuDotFromRadialSweep():E2}) /s");
+        sb.AppendLine($"      ⇒ shortfall {RefractiveLensAudit.RateTermShortfallAtSolar():E3}x");
+        sb.AppendLine("  and |μ̇| is a NEW PRIMITIVE — AT's temporal core is ρ → g₀₀ → clock (G_035) with no");
+        sb.AppendLine("  such variable, and G_029/G_030's no-new-primitive rule forbids adding one.");
+        sb.AppendLine();
+        sb.AppendLine("  TRM's own documents agree: TRM_Geodesic_Derivation.md calls the second term 'a natural");
+        sb.AppendLine("  CANDIDATE for the missing spatial / CURVATURE-LIKE contribution' and lists λ_s's");
+        sb.AppendLine("  derivation as the next open step; V3_4/main.tex nonclaims: 'No GR replacement is claimed.'");
         sb.AppendLine();
 
         PrintHeader("VERDICT");

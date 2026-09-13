@@ -43,9 +43,13 @@ namespace AT.Core.ResearchXH;
 ///     | white dwarf | 1e−4 | 2e−4 | 1e−8 | 2.0e4× |
 ///     | neutron star J0740+6620 | 0.247002 | 0.494 | 0.061 | 8.1× |
 ///
-///     Only the **linear** φ term can carry the first-order half, and that term is γ in disguise. The φ² term
-///     is nonetheless genuinely interesting: it depends on a **rate**, which no static metric can, so it is a
-///     real non-metric ingredient — but it can contribute only where φ is O(1), i.e. at compact objects.
+///     **The deficit is not in the formula, though.** The slide's leading constant is the literal `2.0`, and the
+///     code accelerates by `ar = −n_eff·GM/r²` — so the first-order coefficient the deflection sees is `n_eff`
+///     itself, i.e. `2`, not `λ_time`. **The literal 2 IS (1+γ) = 2, i.e. γ = 1**, so the spatial factor is
+///     already present, hardcoded (see section 6). What the φ² term would have to supply is therefore not "the
+///     missing half" but an *independent* spatial term — and it cannot. The term is nonetheless genuinely
+///     interesting: it depends on a **rate**, which no static metric can, so it is a real non-metric ingredient —
+///     but it can contribute only where φ is O(1), i.e. at compact objects.
 ///
 /// (3) THE DICHOTOMY, AND ITS OBSERVATIONAL KILL. If the index is truly a **medium** rather than a metric, it
 ///     affects **light but not gravitational waves** — and that is testable. Along the line of sight to
@@ -71,10 +75,42 @@ namespace AT.Core.ResearchXH;
 ///     limits), and **time dependence** (n varies while the ray crosses — which reintroduces a rate, the φ²|μ̇|
 ///     signature). Each is an observational commitment, not a free choice.
 ///
+/// (6) THE SOURCE CHECK — AND A CORRECTION TO THIS AUDIT'S OWN FIRST READING. `TRM.Core/Shared/`
+///     `PhotonTransportModel.cs` was still on disk, so the formula was read *in situ* instead of inferred.
+///     Two things changed, and the conclusion got stronger.
+///     - **`λ_time = 1` does NOT give half.** The acceleration is `ar = −n_eff·G·M/(r·r)` with
+///       `n_eff = 2 + λ_time·φ + λ_space·φ²|μ̇|`, so at the solar limb `n_eff = 2.000002122` → ratio 1.000001
+///       → **FULL deflection**. An earlier reading of this audit treated `λ_time` as the index coefficient;
+///       the code uses the whole `n_eff` as the force multiplier. Half would require `grad(n_eff − 2)`.
+///     - **The file uses BOTH conventions at once.** Travel time is `(n_eff − 2)·v` (physical index is
+///       `n_eff − 2` ⟹ HALF); the acceleration keeps the `2` (⟹ FULL). One function, two conventions, so the
+///       reported result depends on which line is read — the model is not well defined until one is chosen.
+///     - **The literal 2 is the whole first-order physics.** At solar compactness every other term is ≲1e−5
+///       relative: `KBase = 2 + 2Aφ + 3Bφ²` with `A = −0.1701452243330672`, `B = −8.484408441898648` moves the
+///       factor by −7.2e−7. The deflection is 1.75″ *because the code multiplies GM/r² by the literal 2* —
+///       which is exactly γ = 1, i.e. AT's G_029 postulate in other variables. **"No space bending" is false:
+///       the space bending is typed in as a constant.**
+///     - **TRM's own deflection tests cannot support "matches GR".** `EL04` asserts `ratio ∈ [0.95, 1.08]`
+///       (γ ∈ [0.90, 1.16]) and `ratioEuler ∈ [0.85, 1.25]` (γ ∈ [0.70, 1.50]) with `|EL − TRM|/Schw ≤ 0.30`;
+///       `EL03` allows `[0.70, 1.25]` (γ ∈ [0.40, 1.50]). The widest window is 1.10 wide against Cassini's
+///       4.6e−5 — **23,913× looser**. And every run is `G = 1, c = 1, b = 1` at ε = 1e−3…1e−2, i.e.
+///       **471×–4,717× outside the solar regime**: solar-compactness deflection was never tested.
+///     - **The one non-metric channel needs a primitive AT does not have.** Reaching first order needs
+///       `|μ̇| = λ_time/(λ_space·φ) = 1.57e4` at solar compactness; the code's own `ComputeAbsDmuDtBase` yields
+///       `|μ̇| ~ O(1.8e−6 … 0.43)` /s there → **shortfall ≥ 3.6e4**. And `|μ̇|` is a new field: AT's temporal
+///       core is `ρ → g₀₀ → clock` (G_035) with no such variable, and G_029/G_030's no-new-primitive rule
+///       forbids introducing one.
+///     - **TRM's own documents already said so.** `docs/Archive/TRM_Geodesic_Derivation.md` calls the second
+///       term "a natural **candidate** for the missing spatial / **curvature-like** contribution" and lists
+///       `λ_s`'s derivation as the NEXT OPEN THEORETICAL STEP; `V3_4/main.tex` nonclaims read *"No GR
+///       replacement is claimed."*
+///
 /// VERDICT: **REFUTED** — a static refractive index cannot release AT from γ, because it *is* γ; the
 /// rate-dependent term is six orders too small in the solar system; and an EM-only medium is excluded by
-/// GW170817 at ~10⁹. What SURVIVES from the TRM idea is the *rate-dependent* (non-metric) term as a compact-object
-/// effect, and the optical language as a clean way to state the γ problem.
+/// GW170817 at ~10⁹. Reading the TRM source strengthens this rather than weakening it: the only ingredient
+/// that ever produced the observed deflection is the literal constant `2`, i.e. γ = 1 — the very quantity
+/// G_030 proved cannot be derived. What SURVIVES from the TRM idea is the *rate-dependent* (non-metric) term as
+/// a compact-object effect, and the optical language as a clean way to state the γ problem.
 /// </summary>
 public static class RefractiveLensAudit
 {
@@ -162,9 +198,13 @@ public static class RefractiveLensAudit
                 QuadraticShortfall(0.247002)),
         };
 
-    /// <summary>Only the linear φ term can carry the first-order half — and it is γ in disguise.</summary>
+    /// <summary>
+    /// The first-order coefficient is the formula's leading constant, not λ_time — and that constant is γ in
+    /// disguise.
+    /// </summary>
     public static string FirstOrderCarrier()
-        => "only λ_time·φ is first order; and λ_time = (1+γ) by the identity, so it IS the spatial metric function";
+        => "the first-order coefficient is the formula's LEADING CONSTANT (2), not λ_time; and by the identity "
+         + "a coefficient of 2 means γ = 1, so that constant IS the spatial metric function";
 
     // ── (3) The dichotomy: an EM-only medium is excluded ────────────────────
 
@@ -220,6 +260,101 @@ public static class RefractiveLensAudit
                 + "compact-object effect only"),
         };
 
+    // ── (6) The source check: the slide's formula already contains the spatial factor ──────
+
+    /// <summary>
+    /// The leading constant of the TRM formula. The code accelerates by `ar = −n_eff·G·M/(r·r)`, so this
+    /// constant — not λ_time — is the first-order coefficient the deflection sees.
+    /// </summary>
+    public const double TrmLeadingConstant = 2.0;
+
+    /// <summary>Solar radius, m — used only to put a scale on |μ̇|.</summary>
+    public const double SolarRadius = 6.96e8;
+
+    /// <summary>Cassini's 1σ uncertainty on γ — the measurement TRM's tests would have had to match.</summary>
+    public const double CassiniSigmaGamma = 2.3e-5;
+
+    /// <summary>
+    /// The coefficients as they stand in `TRM.Core/Shared/PhotonTransportModel.Parameters` (defaults), with the
+    /// source's own status annotation. Three are fitted to 16 significant digits; the file's own summary says
+    /// the λ terms are CALIBRATED, and it annotates EulerBridgeScale as "NOT a fundamental physical constant".
+    /// </summary>
+    public static (string Symbol, double Value, string Status)[] TrmCoefficients()
+        => new[]
+        {
+            ("LambdaTime", 1.0, "hardcoded 1.0 — NOT the index coefficient"),
+            ("LambdaSpace", 30.0, "hardcoded 30.0; summary says 'CALIBRATED (lambda terms)'"),
+            ("A", -0.1701452243330672, "fitted to 16 digits"),
+            ("B", -8.484408441898648, "fitted to 16 digits"),
+            ("Lambda", 30.79445857638716, "fitted to 16 digits"),
+            ("EulerBridgeScale", 0.85, "'17/20 ... NOT a fundamental physical constant'"),
+        };
+
+    /// <summary>
+    /// n_eff at solar compactness WITH the leading constant — what the acceleration actually uses. It is
+    /// 2.000002122, so the deflection ratio against GR is 1.000001: <b>FULL, not half</b>.
+    /// </summary>
+    public static double TrmEffectiveIndexAtSolar() => TrmLeadingConstant + 1.0 * SolarX;
+
+    /// <summary>
+    /// The same quantity WITHOUT the leading constant — the convention the travel-time line uses,
+    /// `timeAccumDerivative = (n_eff − 2)·v`. Under this reading the deflection is HALF.
+    /// The file uses both conventions in one function.
+    /// </summary>
+    public static double TrmPhysicalIndexShiftAtSolar() => 1.0 * SolarX;
+
+    /// <summary>
+    /// The γ implied by the leading constant, via this audit's identity a = 1 + γ. A constant of 2 means γ = 1:
+    /// the formula already contains the spatial factor, hardcoded.
+    /// </summary>
+    public static double GammaImpliedByLeadingConstant() => TrmLeadingConstant - 1.0;
+
+    /// <summary>
+    /// The γ window TRM's own deflection tests accept, from `EL03`/`EL04` in
+    /// `TRM.Tests/RealityTests/PhotonTransportModel_GeodesicSolverTests.cs`, converted by γ = 2·ratio − 1.
+    /// </summary>
+    public static (string Test, double RatioLow, double RatioHigh, double GammaLow, double GammaHigh)[] TrmTestBands()
+        => new[] { ("EL03 TRM", 0.70, 1.25), ("EL04 transport", 0.95, 1.08), ("EL04 Euler", 0.85, 1.25) }
+            .Select(t => (t.Item1, t.Item2, t.Item3, 2.0 * t.Item2 - 1.0, 2.0 * t.Item3 - 1.0))
+            .ToArray();
+
+    /// <summary>How many times looser the widest accepted TRM γ window is than Cassini's 1σ.</summary>
+    public static double BandLooseness()
+    {
+        var bands = TrmTestBands();
+        double widest = bands.Max(b => b.GammaHigh - b.GammaLow);
+        return widest / (2.0 * CassiniSigmaGamma);
+    }
+
+    /// <summary>
+    /// The lower end of TRM's tested compactness range (ε = 1e−3 with G = c = b = 1), expressed as how far
+    /// outside the solar regime the deflection validation sits.
+    /// </summary>
+    public static double TestRegimeOutsideSolarLow() => 1.0e-3 / SolarX;
+
+    /// <summary>The upper end of the same gap (ε = 1e−2).</summary>
+    public static double TestRegimeOutsideSolarHigh() => 1.0e-2 / SolarX;
+
+    /// <summary>|μ̇| required for λ_space·φ²|μ̇| to reach first order at a compactness φ.</summary>
+    public static double RequiredMuDot(double phi, double lambdaTime = 1.0, double lambdaSpace = 30.0)
+        => lambdaTime / (lambdaSpace * phi);
+
+    /// <summary>
+    /// |d(v̂)/dt| = a_⊥/c ≈ 2GM/(R²c) = 2·φ_sun·c/R at the solar limb — from the code's own
+    /// `ComputeAbsDmuDtBase`, which divides the baseline acceleration by |v| = c.
+    /// </summary>
+    public static double MuDotFromAcceleration() => 2.0 * SolarX * C / SolarRadius;
+
+    /// <summary>|d(ê_r)/dt| ≈ c/R at the solar limb — the other term of the same expression.</summary>
+    public static double MuDotFromRadialSweep() => C / SolarRadius;
+
+    /// <summary>
+    /// How far short the rate channel falls at the Sun: the required |μ̇| over the largest physically
+    /// available one.
+    /// </summary>
+    public static double RateTermShortfallAtSolar()
+        => RequiredMuDot(SolarX) / Math.Max(MuDotFromAcceleration(), MuDotFromRadialSweep());
+
     // ── Verdict, COMPUTED ───────────────────────────────────────────────────
 
     /// <summary>
@@ -235,7 +370,13 @@ public static class RefractiveLensAudit
          + "(G_032's Cassini refutation, optically restated), while a term n = 1 + 2x would be pure GR. The "
          + "TRM formula's second term, λ_space·φ²|μ̇|, is genuinely non-metric — it depends on a RATE — but it "
          + "is second order: 9.4e5× too small at the Sun, reaching parity only at neutron-star compactness. "
-         + "And reading the mechanism as an EM-only medium fails GW170817 by ~2.4e9. What survives from the "
-         + "TRM idea is the rate-dependent term as a compact-object effect, and the optical language as the "
-         + "cleanest way to state the γ problem AT actually faces.";
+         + "And reading the mechanism as an EM-only medium fails GW170817 by ~2.4e9. READING THE SOURCE "
+         + "STRENGTHENS THIS. The slide's leading constant is the literal 2.0, and the code accelerates by "
+         + "ar = −n_eff·G·M/(r·r), so the deflection is full *only because a hardcoded 2 supplies γ = 1* — the "
+         + "same content as AT's G_029 postulate, renamed. TRM's own tests accept γ ∈ [0.40, 1.50] (23,913× "
+         + "looser than Cassini) and never ran at solar compactness, and the rate channel needs |μ̇| = 1.57e4 "
+         + "against a physical ≤ 0.43/s. So the only ingredient that ever produced the observed deflection is "
+         + "the literal γ = 1 — which G_030 proved cannot be derived. What survives from the TRM idea is the "
+         + "rate-dependent term as a compact-object effect, and the optical language as the cleanest way to "
+         + "state the γ problem AT actually faces.";
 }

@@ -10,7 +10,7 @@
 **Depends on:** G_021 (light propagation), G_029/G_030 (the spatial sector closes on a postulate; no-go), G_031 (conformal flatness IS the counting measure), G_032 (imposing it is refuted — γ = −1, Cassini)
 **Provenance:** the **TRM-era** programme, which reported a deflection matching GR from an effective index
 `n_eff = 2 + λ_time·φ + λ_space·φ²·|μ̇|` with `c_eff = c₀/n_eff` and `{β,γ} → {1,1}` at κ→0.3, b→1.248
-**Test suite:** `AT.Tests/ResearchY/G_GravitySource/Y_G_037_Tests.cs` (6/6 PASSED)
+**Test suite:** `AT.Tests/ResearchY/G_GravitySource/Y_G_037_Tests.cs` (7/7 PASSED)
 **Core:** `AT.Core/ResearchXH/RefractiveLensAudit.cs`
 
 ## The question
@@ -51,7 +51,7 @@ And AT's derived sector sits in the first row. This is not a new result — it i
 restated optically**, and it has a one-line reason: a conformal factor maps null geodesics to null geodesics, so
 `A = B ⟹ n = 1` and the ray is undeflected.
 
-## The rate-dependent term cannot supply the missing half
+## The rate-dependent term cannot supply an independent spatial term
 
 Reproducing the observed deflection needs `n − 1 = (1+γ)φ = 2φ` — **first order** in φ. The TRM formula's second
 term, `λ_space·φ²·|μ̇|`, is **second order**. With `|μ̇| ~ 1`:
@@ -62,10 +62,74 @@ term, `λ_space·φ²·|μ̇|`, is **second order**. With `|μ̇| ~ 1`:
 | white dwarf | 1e−4 | 2e−4 | 1e−8 | 2.0×10⁴ |
 | neutron star J0740+6620 | 0.247002 | 0.494 | 0.061 | 8.1× |
 
-Only the **linear** φ term can carry the first-order half — and by the identity that term *is* the spatial metric
-function. The φ² term is nevertheless genuinely interesting, because it depends on a **rate**, which no static
-metric can: it is a real non-metric ingredient, but it can matter only where φ is O(1), i.e. at **compact
-objects**.
+The first-order coefficient is the formula's **leading constant** (2), not `λ_time` — and by the identity that
+constant *is* the spatial metric function (see the source check below). The φ² term is nevertheless genuinely
+interesting, because it depends on a **rate**, which no static metric can: it is a real non-metric ingredient, but
+it can matter only where φ is O(1), i.e. at **compact objects**.
+
+## The source check — the formula already contains the spatial factor
+
+`TRM.Core/Shared/PhotonTransportModel.cs` was still on disk, so the formula was read *in situ* rather than
+inferred. That **falsified this audit's own first reading** and strengthened the verdict.
+
+```csharp
+double nEff = 2.0 + parameters.LambdaTime * phi + parameters.LambdaSpace * localMemory;
+double ar   = -nEff * G * M / (r * r);           // the force multiplier is nEff, NOT lambda_time
+double timeAccumDerivative = (nEff - 2.0) * v;   // ... but here the 2 is subtracted back
+```
+
+**`λ_time = 1` does not give half.** `n_eff` *includes* the leading `2.0`, so the coefficient the deflection sees
+is `n_eff` itself: at the solar limb `n_eff = 2.000002120` → ratio 1.000001 → **full deflection**. An earlier
+reading of this audit treated `λ_time` as the index coefficient; the code uses the whole `n_eff` as the force
+multiplier. **Corrected.**
+
+**And the file uses both conventions at once** — `(n_eff − 2)·v` for travel time (physical index is `n_eff − 2`,
+⟹ half) and `n_eff·G·M/r²` for the acceleration (⟹ full). One function, two conventions, so the reported result
+depends on which line is read.
+
+**So the full deflection comes from a literal `2.0`.** `ar = −n_eff·GM/r²` with `n_eff ≈ 2` is the flat-space
+"2× Newton" photon law. By this audit's identity (`a = 1 + γ`), a constant of 2 **is γ = 1** — the spatial factor is
+already in the formula, hardcoded. **"No space bending" is therefore false: the space bending is typed in as a
+constant**, and it is exactly AT's G_029 postulate in other variables, so it removes nothing.
+
+At solar compactness every other term is ≲10⁻⁵ relative — `KBase = 2 + 2Aφ + 3Bφ²` with
+`A = −0.1701452243330672`, `B = −8.484408441898648` moves the factor by −7.2×10⁻⁷ — so the leading 2 is the entire
+first-order physics. The remaining coefficients are declared or fitted, not derived:
+
+| symbol | value | source's own status |
+|---|---|---|
+| `LambdaTime` | 1.0 | hardcoded; **not** the index coefficient |
+| `LambdaSpace` | 30.0 | summary says *"CALIBRATED (lambda terms)"* |
+| `A` | −0.1701452243330672 | fitted to 16 digits |
+| `B` | −8.484408441898648 | fitted to 16 digits |
+| `Lambda` | 30.79445857638716 | fitted to 16 digits |
+| `EulerBridgeScale` | 0.85 | *"17/20 … NOT a fundamental physical constant"* |
+
+**TRM's own tests cannot support "matches GR".** They assert order-of-magnitude bands:
+
+| test | ratio band | γ accepted |
+|---|---|---|
+| `EL03` | [0.70, 1.25] | [+0.40, +1.50] |
+| `EL04` transport | [0.95, 1.08] | [+0.90, +1.16] |
+| `EL04` Euler | [0.85, 1.25] | [+0.70, +1.50] |
+
+Cassini pins γ to 1 ± 2.3×10⁻⁵; the widest accepted TRM window is 1.10 wide — **23,913× looser**. And every run is
+`G = 1, c = 1, b = 1` at ε = 10⁻³…10⁻², i.e. **472× to 4,717× outside the solar regime**: solar-compactness
+deflection was never tested.
+
+**The rate channel is dead on its own terms.** Reaching first order needs
+`|μ̇| = λ_time/(λ_space·φ) = 1.57×10⁴` at solar compactness; the code's own `ComputeAbsDmuDtBase` yields
+`|μ̇| ~ O(1.8×10⁻⁶ … 0.43)` /s there → **shortfall ≥ 3.65×10⁴**. And `|μ̇|` is a new field: AT's temporal core is
+`ρ → g₀₀ → clock` (G_035) with no such variable, and G_029/G_030's no-new-primitive rule forbids adding one.
+
+**TRM's own documents already said so.** `docs/Archive/TRM_Geodesic_Derivation.md` separates the channels into
+`λ_t∇φ` ("the local **time-rate gradient**") and `λ_s|μ̇|∇(φ²)`, calls the latter *"a natural **candidate** for the
+missing spatial / **curvature-like** contribution"*, states that the Euler–Lagrange track does *"not close the full
+formal derivation chain yet"*, and lists *"λ_s can be derived from a dimensionless coupling structure"* as the
+**next open theoretical step** — with `20/17` itself an "Open Derivation Task" (§12). The published
+`V3_4/main.tex` nonclaims read *"No GR replacement is claimed"* and *"Any mapping to gravitational or cosmological
+observables requires a physical frequency scale not currently provided."* The slide reflects the **transport
+subsystem** (TRM34–41, TRM78), which the paper chose not to claim.
 
 ## The dichotomy — and its observational kill
 
@@ -117,6 +181,10 @@ The audit is a refutation, but it is not a dismissal. Three things carry forward
 **REFUTED** — a static refractive index cannot release AT from γ, because it *is* γ; the rate-dependent term is
 ≈10⁶ too small in the solar system; and the EM-only reading is excluded at ≈10⁹. Verdict computed.
 
+**Reading the TRM source strengthens this rather than weakening it.** The only ingredient that ever produced the
+observed deflection is the literal constant `2` — i.e. **γ = 1**, the very quantity G_030 proved cannot be
+derived. TRM's "no space bending" was space bending entered as a constant.
+
 ## Classification and caveats
 
 **Registry:** added to the G_035 classification registry as `Spatial` → **BOUNDARY** (it is a statement about γ,
@@ -125,11 +193,15 @@ subject is a *coefficient*, and its only metric vocabulary is the negative test 
 bend light. Registry counts become **25 / 10 / 3 of 38**; the boundary index is still **23**, and no prior
 classification changed.
 
-**Caveats.** (1) φ is read as the dimensionless potential Φ/c² — the natural reading for a weak-field PPN
-statement. If TRM's φ is an order-1 order parameter instead, the O(φ²) conclusion changes and the specific
-`f(κ,b)` would need the TRM definitions. (2) The TRM report that `{β,γ} → {1,1}` at κ→0.3, b→1.248 is a
-**tuned→target** statement; whether `f(κ,b) → 1` is derived or fitted cannot be settled from the published
-formula alone. (3) Deterministic: exact algebra and one numerical check.
+**Caveats — BOTH NOW CLOSED by the source check.**
+(1) **`φ` is the dimensionless potential.** `PhotonTransportModel.Phi(G,M,c,r) = G·M/(c·c·r)` is the canonical TRM
+definition, so the `Φ/c²` reading is correct and the O(φ²) conclusion stands. *(Closed.)*
+(2) **`f(κ,b) → 1` was fitted, not derived.** The deflection path multiplies by `EulerBridgeScale = 0.85`, which
+the code annotates as the reciprocal of the mid-band rational `20/17` and *"NOT a fundamental physical constant"*,
+and uses to make the Euler/Fermat branch *"comparable to the established transport RK4 branch"* — a
+self-consistency calibration between two code paths. The λ's are declared **CALIBRATED** by the file's own summary,
+and `A`, `B`, `Lambda` are fitted to 16 digits. *(Closed.)*
+(3) Deterministic: exact algebra, one numerical check, and invariant-culture formatting.
 
 **No reclassification.** G_021, G_029, G_030, G_031 and G_032 are unchanged inputs; the D_040 registry is
 untouched; no canonical claim, value or equation changes; no new primitive.

@@ -3271,15 +3271,41 @@ metric `n = e^(B−A)`, and with `A = Φ/c²`, `B = −γΦ/c²`, **n − 1 = �
 numerically: 4.000000 for a = 2, 2.000000 for a = 1). **A static, non-dispersive index is not an alternative to
 space curvature — it is the same object in different variables.** AT's DERIVED conformal sector (G_031, A = B)
 therefore has **n = 1 and bends NOTHING** — G_032's Cassini refutation restated optically — while time-only gives
-+1·x (exactly half) and GR gives +2·x. **THE RATE TERM CANNOT SUPPLY THE HALF:** the needed n − 1 = 2φ is FIRST
++1·x (exactly half) and GR gives +2·x. **THE RATE TERM CANNOT SUPPLY AN INDEPENDENT SPATIAL TERM:** the needed n − 1 = 2φ is FIRST
 order, while `λ_space·φ²|μ̇|` is second — **9.43e5× too small at the Sun**, 2.0e4× at a white dwarf, 8.1× at
 J0740+6620. **THE EM-ONLY READING IS EXCLUDED:** if the index is a medium rather than a metric it affects light
 but not gravitons, and over GW170817's 40 Mpc a galactic-scale index delays light by **131 yr against a 1.7 s
 bound — 2.4e9×**; the surviving strength is n − 1 ≲ **4.13e-16**. Bending and delay are ONE function (any static
 index reproducing the bending reproduces the GR Shapiro delay), so they are not independently tunable. The only
-genuine escapes are dispersion, birefringence and time dependence. WHAT SURVIVES: the optical language
+genuine escapes are dispersion, birefringence and time dependence.
+
+**THE SOURCE CHECK — AND A CORRECTION TO THIS AUDIT'S OWN FIRST READING.** Reading the TRM code in situ
+(`TRM.Core/Shared/PhotonTransportModel.cs`) **falsified the audit's first estimate** and strengthened the verdict.
+The formula's leading constant is a literal `2.0`, and the code accelerates by `ar = −n_eff·G·M/(r·r)` with
+`n_eff` **including** that 2 — so `λ_time = 1` does **NOT** give half: at the solar limb
+`n_eff = 2.000002120` → **full deflection**. Half would require `grad(n_eff − 2)`. Worse, the same routine uses
+**both conventions at once** (`(n_eff − 2)·v` for travel time, `n_eff·G·M/r²` for the acceleration), so its
+result depends on which line one reads. The bending is full **only because a hardcoded 2 supplies γ = 1** — which
+by the identity *is* the spatial metric function, i.e. AT's G_029 postulate in other variables: **"no space
+bending" is false.** At solar compactness every other term is ≲1e-5 relative (`KBase = 2 + 2Aφ + 3Bφ²`,
+`A = −0.1701452243330672`, `B = −8.484408441898648` moves the factor by −7.2e-7). The coefficients are declared
+or fitted, not derived: `λ_time = 1.0` hardcoded, `λ_space = 30.0` with the file's summary saying *"CALIBRATED
+(lambda terms)"*, `A`, `B`, `Lambda` fitted to 16 digits, and `EulerBridgeScale = 0.85` annotated
+*"17/20 … NOT a fundamental physical constant"*. **TRM's own tests cannot support "matches GR":** `EL03` accepts
+γ ∈ [0.40, 1.50], `EL04` transport [0.90, 1.16] and Euler [0.70, 1.50], with the two branches allowed to disagree
+by 30 % — Cassini pins γ to 1 ± 2.3e-5, so the widest window is **23,913× looser** — and every run is
+`G = 1, c = 1, b = 1` at ε = 1e-3…1e-2, **472× to 4,717× outside the solar regime**. The rate channel is dead on
+its own terms too: first order needs `|μ̇| = 1.57e4` at solar compactness while the code's own
+`ComputeAbsDmuDtBase` yields `|μ̇| ~ O(1.83e-6 … 0.431)` /s → **shortfall 3.65e4**, and `|μ̇|` is a new primitive AT
+does not have (G_035's core is ρ → g₀₀ → clock; G_029/G_030's no-new-primitive rule). TRM's own derivation notes
+agree — they call the second term "a natural **candidate** for the missing spatial / **curvature-like**
+contribution" and list `λ_s`'s derivation as the next open step — and `V3_4/main.tex` nonclaims say *"No GR
+replacement is claimed."*
+
+WHAT SURVIVES: the optical language
 (`n − 1 = −(1+γ)Φ/c²` is the cleanest statement of AT's γ problem), the rate-dependent term as a genuinely
-non-metric COMPACT-OBJECT effect, and a new falsification handle (GW170817). Verdict computed. Group G 289/289.
+non-metric COMPACT-OBJECT effect, and a new falsification handle (GW170817). Verdict computed; the source check
+strengthens it. Suite 7/7. Group G 297/297.
 
 ### ResearchY-G_038 - Measure-Decomposition Audit (REFUTED, with a DERIVED by-product)
 
@@ -3301,7 +3327,7 @@ deflection fixing B − A = 2x), and only its **O(x²) completion is BOUNDARY** 
 compactness but **−29.7 %** at neutron-star x = 0.247002. **AND THE MEDIUM ESCAPE IS UNAVAILABLE IN AT:** there is
 no graviton (the tensor sector is the massless spin-2 psi field, `Box psi_μν = 0`), and any AT-natural index is
 built from rho, which sources the metric INCLUDING that sector — so it IS a metric. Verdict computed. Group G
-296/296.
+297/297.
 
 ## Key Unsolved Problems
 
