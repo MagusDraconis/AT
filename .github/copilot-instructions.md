@@ -128,6 +128,13 @@ defect in this repository; the canonical exemplars are given so the rule can be 
    be rewritten (conjugate form, `expm1`-style helper, series for small arguments) and the rewrite documented.
    *Exemplar:* a conformality deficit `√(2 − e^(−2x)) − (1 + x)` returned −1.499911e−12 at x = 1e−6 where the
    true value is −1.4999978e−12 — wrong in the 5th digit from cancellation alone.
+   *Exemplar (G_036, the sharpest case so far):* `Math.Exp(x) − 1` carries ~1 ulp of 1.0 of **absolute** error, so
+   its relative error is ~1.1e−16/x. At the Pound–Rebka compactness x = 2.45e−15 it loses 0.3 %, and it returns
+   **exactly 0.0 in Python but 2.4425e−15 in .NET** for the *same input* — a **100 % cross-language disagreement**
+   (rule 2's domain). Use `AtNumerics.ExpM1`. Worse, the AT–GR redshift split `z_GR − z_AT` cannot be computed by
+   subtraction in the weak field **at all**: at x = 2.45e−15 the direct form returns **−7.5093e−18** where the
+   truth is **+6.0025e−30** — wrong magnitude *and* **wrong sign**. State the split from the series
+   (`Δz = x² + (7/3)x³ + …`) and say that it is unrepresentable, not merely small.
 5. **A number in a comment or a doc is not evidence.** Comments are the most common place for an artifact to
    survive: `A₀ = 20 812` was quoted in code comments, XML docs and four downstream surfaces while **no test ever
    asserted it**. If a figure "looks computed", **trace it to the computation** before relying on it.
@@ -136,6 +143,13 @@ defect in this repository; the canonical exemplars are given so the rule can be 
 7. **Prefer a failing test to a prose rule.** When a new numerical hazard class is found, add a **scanner** that
    re-reads the source at test time (the G_027 / G_033 pattern) so the hazard cannot silently return. A rule in
    this file is the weaker form; say so in the audit and build the guard.
+8. **Validate in the configuration you ship — a Debug-only test habit hides Release-only failures.** The whole
+   suite was habitually run as `dotnet test -c Debug`, which concealed that `SixLabors.ImageSharp`'s build targets
+   **hard-failed every Release build** (`ContinueOnError` was true only when `Configuration.StartsWith("Debug")`).
+   The dependency is gone (SkiaSharp, 2026-09-13), but the lesson is general: **build and test Release before
+   declaring a change done**, and do not let a data-gated test suite be the only guard on a code path — the
+   FITS-dependent image tests all *skip* on a clean checkout, so `AT.Tests/Unit/RenderingBackendTests.cs` exists to
+   exercise the renderer unconditionally. If a component's only tests can skip, add one that cannot.
 
 # AT Project Memory Rules
 

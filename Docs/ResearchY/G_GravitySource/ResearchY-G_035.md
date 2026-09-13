@@ -19,6 +19,11 @@
 | **BOUNDARY** | g_ij (but not conformality) | **8** |
 | **REFUTED** | conformal flatness (A = B) | **3** |
 
+> **Registry extension (2026-09-13):** G_036 (Temporal Core Test) has since been added to the live registry as
+> `Spatial` → **BOUNDARY**, triaged `ScanDetectsIt: false` with a written reason. The counts become **25 / 9 / 3
+> of 37**; the numbers above are the state G_035 itself audited (G_001–G_034). No prior classification changed,
+> and the boundary index is still **23**.
+
 The classification axis maps 1:1 onto the output labels, so the verdict is not a judgement call: a result requiring only g₀₀ *cannot* be affected by removing conformality, because it never refers to the spatial block at all.
 
 ## The sharp boundary: G_020 → G_021

@@ -342,6 +342,14 @@ public static class TemporalIndependenceAudit
             "metric-free: audits verdict provenance across AT.Core"),
         new SectorClaim("Y_G_034", "A0 Robustness", MetricRequirement.ClockOnly,
             "metric-free: a numerical robustness audit of the spectral substrate"),
+
+        // ── G_036: the core's testability — needs the spatial sector to READ it, not to state it ──
+        new SectorClaim("Y_G_036", "Temporal Core Test", MetricRequirement.Spatial,
+            "its observable z = 1/√(−g₀₀) − 1 is g₀₀-only, but its BOUNDARY verdict rests on the compactness "
+            + "being READ from light bending — a g_ij fact. NOT symbol-detectable: the suite's metric vocabulary "
+            + "lives entirely inside report string literals (0/0/0 after stripping), because the audit asks which "
+            + "quantities the MEASUREMENT needs, not which metric symbols the code spells",
+            ScanDetectsIt: false),
     };
 
     // ── The computed classification summaries ───────────────────────────────

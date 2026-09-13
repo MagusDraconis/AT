@@ -3217,6 +3217,51 @@ is excluded because it names the wavefunction in the density era. Two claims dec
 written reasons (G_025, G_033). CONSEQUENCE: G_032's conformal problem is CONFINED TO SPACE - AT's time half is
 not hostage to its space half. Verdict computed (G_027). Group G 277/277.
 
+### ResearchY-G_036 - Temporal Core Test Audit (BOUNDARY)
+
+Can the surviving temporal core be tested **without any spatial metric**, using only g00, the clock law and the
+source law? **BOUNDARY - testable in principle, not yet isolated in practice, and the obstacle is NOT the signal.**
+**THE OBSERVABLE IS PURE:** AT `z = e^x - 1` against GR `z = 1/sqrt(1-2x) - 1`; the series agree at O(x) and first
+differ at **O(x^2)** (`dz = x^2 + (7/3)x^3 + ...`), and `z = 1/sqrt(-g00) - 1` needs **g00 ALONE** - no gamma, no
+lensing, no Shapiro delay. G_020's published figures are reproduced EXACTLY (dz = 0.125628 vs G_020's 0.1256; at
+x = 0.187982, z_AT = 0.206812 and z_GR = 0.265888). **THE ARENA IS NEUTRON STARS ONLY:** reaching |dz| > sigma_z
+needs x >= 0.030494 (sigma_z = 1e-3) up to 0.133350 (0.025125); the weak field (tower 2.45e-15, optical clock
+1.1e-18, Sun 2.12e-6, binary pulsar 1e-6, white dwarf 1e-4) would need sigma_z between 1e-30 and 1e-12 - nine to
+twelve orders out of reach. **THE WEAK-FIELD SPLIT IS UNREPRESENTABLE, not merely unmeasurable:** each law carries
+~1 ulp = 2.2204e-16 of absolute error while the true split at the Pound-Rebka compactness is 6.0025e-30, so the
+DIRECT subtraction returns **-7.5093e-18** - wrong magnitude AND wrong SIGN - and at x = 1.1e-18 `z_GR` is
+annihilated outright (exactly 0); the split must come from the series. **THE BOTTLENECK IS THE COMPACTNESS:** G_020's
+sigma_x/x = 13.73 % against 3.661 % needed (3.75x, 1.334 sigma attainable today) while the signal is 44.84 % of
+z_AT - and **for a neutron star the compactness is itself obtained from LIGHT BENDING** (pulse-profile modelling),
+so the observable is pure but the number required to READ it is not. A PURE ROUTE EXISTS and is ~3x short:
+`R_inf = R/sqrt(1-2x)` from a thermal flux plus a parallax distance is a g00 effect, not bending. THE FIRST
+EXPERIMENT probing the core at all is **Pound & Rebka (1960)**, x = 2.45e-15 - pure g00, but it reaches only the
+first-order term AT shares with GR (x^2 = 6.0e-30); **no experiment has yet probed the core's distinctive
+content.** Verdict computed (G_027). Group G 283/283.
+
+### ResearchY-E_001 - Electromagnetism Inventory Audit (BOUNDARY)
+
+What EM structure is already derived inside AT? **EM KINEMATICS DERIVED, DYNAMICS DECLARED BUT NEVER COMPUTED.**
+A first draft claimed the dynamics was absent - no current, no kinetic term, no Lagrangian - and **the live scan
+refuted it**: `ResearchXH/LagrangianOrigin.cs` (QG244) contains the Noether currents J^μ_em/J^μ_W/J^μ_s,
+`F^a_μν = ∂_μA^a_ν - ∂_νA^a_μ + g f^abc A^b_μ A^c_ν`, `L_gauge = -(1/4)F^a F^a`, `D_μ`, the matter term and the
+full density `L = -(1/4)F^aF^a + i psi-bar gamma^mu D_mu psi - m psi-bar psi` - **every one as a STRING-returning
+member**, with "derived" asserted by ANDing other audits' booleans. **QG242 had already recorded the gauge dynamics
+as HOSTED/OPEN** before QG243/244 closed it by declaration - so the status is ASSUMED, not DERIVED. What AT offers
+as its field equation is **current CONSERVATION ∂_μJ^μ = 0 (kinematic)**, not the SOURCED **∂_μF^μν = J^ν**; and no
+**spin-1** wave equation exists (AT's one massless wave equation is spin-2, Fierz-Pauli). The Lagrangian FORM is
+**selected by a minimality argument** ("the unique minimal action consistent with the D96 symmetries") and is the
+conventional minimal one - AT derives the symmetries and couplings, not the functional form. **TWO CONTRADICTIONS:**
+U(1) is derived TWICE from incompatible origins (Z_96 ⊂ D96 vs Aut(S^1) of the vortex moduli space), and α has TWO
+values (QG162: 1/α = 95 + 42 = 137; FineStructureAnalyzer: α^-1 ≈ 100, "not a precise derivation", α named AT's
+largest remaining free parameter). **ONE CLAIM IS NOT EVIDENCE:** `SimulateEmergence` is `new Random(42)` with
+hand-picked thresholds (0.15/0.07/0.18/0.02) presented as an experiment. **MINIMAL ROUTE TO MAXWELL - three steps,
+only the third new physics:** (i) compute the declared Noether current; (ii) make the action a real functional;
+(iii) elevate from conservation to the sourced field equation and read off `Box A_μ = 0`. **INSTRUMENT DEFECT
+FOUND - affects G_027/G_033/G_035:** their per-line stripper cannot see a multi-line verbatim string, so report
+PROSE counts as executable CODE (live proof: `J_Q`, per-line >= 1 vs whole-file 0); fixed by
+`AT.Core/ResearchXH/AtSourceScan.cs` and they should be re-run with it. Verdict computed (G_027). Group E 7/7.
+
 ## Key Unsolved Problems
 
 1. Numerical values of ℓ, τ, ħ — empirical, not derived

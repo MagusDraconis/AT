@@ -270,11 +270,9 @@ public static class ConformalAssumptionAudit
 
     /// <summary>
     /// e^x − 1 computed without cancellation for small x (the framework has no Math.ExpM1).
+    /// Delegates to <see cref="AtNumerics.ExpM1"/> so the cancellation-free form has one implementation.
     /// </summary>
-    public static double ExpM1(double x)
-        => Math.Abs(x) > 1.0e-5
-            ? Math.Exp(x) - 1.0
-            : x * (1.0 + x * (0.5 + x * (1.0 / 6.0 + x * (1.0 / 24.0 + x / 120.0))));
+    public static double ExpM1(double x) => AtNumerics.ExpM1(x);
 
     /// <summary>
     /// The survivor's departure from conformal flatness, in area gauge: e^B − (1 − R·A_R) with A = σ = −x.

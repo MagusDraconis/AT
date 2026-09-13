@@ -1903,6 +1903,8 @@ Tests: `Y_G_034_Tests` 6/6. Group G: **271/271**. Affected set: **321/321**.
 
 **AT's TIME HALF IS NOT HOSTAGE TO ITS SPACE HALF.** Classifying all 36 group-G suites by the metric component
 each result needs: **25 need g00 only (SURVIVES), 8 need g_ij (BOUNDARY), 3 require conformal flatness (REFUTED)**.
+*(Registry extension: G_036 was later added as Spatial/BOUNDARY, triaged `ScanDetectsIt: false` - the counts become
+**25/9/3 of 37**, boundary index still 23, no prior classification changed.)*
 The axis maps 1:1 onto the labels, so the verdict is not a judgement call - a result requiring only g00 cannot be
 affected by removing conformality, because it never refers to the spatial block at all.
 
@@ -1938,6 +1940,131 @@ eta whose imposition is REFUTED (gamma = -1, Cassini 8.6957e4 sigma). G_035 show
 conformal problem is confined to the space sector.** The dilemma is real but it is ABOUT SPACE.
 
 Tests: `Y_G_035_Tests` 6/6. Group G: **277/277**.
+
+## G_036 - Temporal Core Test Audit: can the core be tested without any spatial metric? (COMPLETE, BOUNDARY)
+
+**THE OBSERVABLE IS PURE BUT THE PRECISION IS BORROWED.** G_035 proved the temporal core is **independent**;
+G_036 asks whether it is **testable** using only g00, the clock law and the source law (gamma, lensing, Shapiro
+delay and g_ij all rejected). Answer: a sharp **BOUNDARY**, and the obstacle is **not the signal**.
+
+- **THE OBSERVABLE IS PURE:** AT `z = e^x - 1` from `g00 = -e^(-2x)`; GR `z = 1/sqrt(1-2x) - 1`. They **agree at
+  O(x)** and **first differ at O(x^2)**: `dz = x^2 + (7/3)x^3 + (13/3)x^4`. `z` depends on **g00 ALONE** - no
+  gamma, no lensing, no Shapiro, no g_ij anywhere in the measurement. The temporal observables are functions whose
+  **signature contains no B** (G_035's arity argument). **G_020's published figures reproduced EXACTLY:**
+  dz = **0.125628** (G_020: 0.1256) at x = 0.247002; at x = 0.187982, z_AT = 0.206812 and z_GR = 0.265888.
+- **THE ARENA IS NEUTRON STARS ONLY.** `|dz| > sigma_z` needs a compactness threshold that CLIMBS with precision:
+  sigma_z = 1e-3 -> **x >= 0.030494**; 0.01 -> 0.089439; G_020's equal split 0.017766 -> **0.115094**;
+  0.025125 -> 0.133350. Weak-field arenas (tower 2.45e-15, optical clock 1.1e-18, Sun 2.12e-6, binary pulsar
+  1e-6, white dwarf 1e-4) would need sigma_z between **1e-30 and 1e-12** - nine to twelve orders out of reach.
+  This is the arithmetic behind G_019's "only neutron stars are a live arena".
+- **THE WEAK-FIELD SPLIT IS UNREPRESENTABLE, NOT JUST UNMEASURABLE.** Each law carries ~1 ulp = **2.2204e-16** of
+  absolute error while the true split at the Pound-Rebka compactness is **6.0025e-30**. **Measured:** the direct
+  subtraction `z_GR - z_AT` returns **-7.5093e-18** at x = 2.45e-15 - **wrong magnitude AND wrong sign** - and at
+  x = 1.1e-18, `z_GR` is **annihilated outright** (exactly 0). The split can be STATED but not COMPUTED BY
+  SUBTRACTION; the audit uses the series below x = 1e-3.
+- **THE BOTTLENECK IS THE COMPACTNESS, NOT THE REDSHIFT.** G_020's budget re-derived: **sigma_x/x = 13.73 %**
+  achieved against **3.661 %** needed for 5 sigma - still **3.75x** - with **1.334 sigma** attainable today. The
+  signal is **44.84 %** of z_AT. **AND FOR A NEUTRON STAR THE COMPACTNESS IS ITSELF OBTAINED FROM LIGHT BENDING:**
+  pulse-profile modelling fits thermal emission from hot spots *including bending* - the spatial sector G_032
+  showed to be an ASSUMED PRIMITIVE. **CENTRAL FINDING: the observable is pure, but the number required to READ
+  it is not.** Hence BOUNDARY rather than TESTABLE.
+- **A PURE ROUTE EXISTS AND IS ~3x SHORT:** `R_inf = R/sqrt(1-2x)` from a thermal flux plus a parallax distance is
+  a **g00 effect** (photon energy and arrival rate, NOT bending), so `{z, R_inf}` solves `{M, R}` with **no light
+  bending at all**. Distance and atmosphere systematics keep sigma_x/x above the ~3.7 % needed.
+- **THE FIRST EXPERIMENT: Pound & Rebka (1960)** - the 22.5 m tower redshift, x = 2.45e-15. **Pure g00**, no light
+  bending anywhere in the measurement, and the first probe of the core at all - but it reaches only the
+  **first-order** term, the one AT **shares with GR** (x^2 = 6.0e-30). **No experiment has yet probed the core's
+  distinctive content.** Frontier: a compact-object `{z, R_inf}` measurement at **sigma_x/x <= 3.7 %**.
+
+**CONSEQUENCE:** the temporal core is the one part of the theory that is both **independent** (G_035) and, in
+principle, **cleanly testable** (G_036) - which makes closing the sigma_x gap more valuable than adding another
+weak-field clock in a regime the theory was never going to be distinguished in.
+
+Tests: `Y_G_036_Tests` 6/6. Group G: **283/283**.
+
+## Light Bending - does AT need space curvature, or can time alone do it? (answered 2026-09-13)
+
+**AT NEEDS A SPATIAL SECTOR, AND TIME ALONE CANNOT REPLACE IT.** This settles the recurring "light bending was
+solved long ago" confusion quantitatively.
+
+| candidate spatial rule | gamma | solar grazing deflection | Cassini (1.0000210 +/- 2.3e-5) |
+|---|---|---|---|
+| **time-tick only** (no space curvature) | 0 | **0.8750 arcsec** (half) | **43,479 sigma** - EXCLUDED |
+| **AT's DERIVED conformal metric** (the counting measure) | **-1** | **0.0000 arcsec** (none) | **86,957 sigma** - EXCLUDED |
+| AT's surviving spatial rule (G_029) `g_rr = 2 - rho^(2/d)` | **+1** | 1.7500 arcsec | 1 sigma - PASSES |
+| GR `g_rr = (1-2x)^-1` | +1 | 1.7500 arcsec | 1 sigma |
+
+- Measured deflection is `((1+gamma)/2) x 4GM/(c^2 b)`. The **spatial half is required**: gamma = 0 (time dilation
+  alone) gives exactly **half** the observed bending, excluded at **43,479 sigma**. A changing tick rate cannot
+  explain light bending.
+- AT does **NOT** import GR's space curvature. It DERIVES its spatial structure (G_021/G_031), and the derived form
+  is **conformal**, giving **gamma = -1 exactly** - zero bending, zero Shapiro delay - which is why the G-chain had
+  to retract it (G_024/G_025) and why G_032 calls imposing it REFUTED.
+- What survives every constraint is **G_029's postulate `g_rr = 2 - rho^(2/d)`** (i.e. `B = 0.5 ln(2 - e^(-2x))`),
+  which gives **gamma = +1 exactly** - Cassini passes at 1 sigma - and is **NOT conformal** (A != B). It is a
+  POSTULATE: G_030 proved the NO-GO that the spatial sector is not derivable.
+- **Same O(x^2) theme as the rest of the theory:** AT's survivor and GR agree at O(x) and differ at O(x^2). In
+  `g_rr` the relative difference is **-2.7e-11 at solar compactness** (invisible, far below Cassini's 2.3e-5) but
+  **-29.7 % at neutron-star compactness x = 0.247002** - so the spatial sector is indistinguishable from GR in the
+  solar system and sharply distinguishable at compact objects.
+
+## ResearchY-E_001 - Electromagnetism Inventory Audit (COMPLETE, BOUNDARY)
+
+**AT'S ELECTROMAGNETIC KINEMATICS IS DERIVED; ITS DYNAMICS IS DECLARED BUT NEVER COMPUTED.** Group E opens with an
+inventory of charge, current, gauge symmetry, Maxwell equations, vector potential, photon sector and wave equation.
+
+- **A FIRST DRAFT GOT IT WRONG, AND THE LIVE SCAN CAUGHT IT.** The draft claimed the EM dynamics was absent - no
+  current, no kinetic term, no Lagrangian. FALSE: `ResearchXH/LagrangianOrigin.cs` (QG244) contains ALL of them -
+  the Noether currents J^μ_em/J^μ_W/J^μ_s, `F^a_μν = ∂_μA^a_ν - ∂_νA^a_μ + g f^abc A^b_μ A^c_ν`, the kinetic term
+  `L_gauge = -(1/4)F^a F^a`, `D_μ`, the matter term and the full density `L = -(1/4)F^aF^a + i psi-bar gamma^mu D_mu psi - m psi-bar psi`
+  - **every one as a member returning a STRING.** And the "derived" booleans are CONJUNCTIONS of other audits'
+  predicates (`NoetherCurrentsExist`, `QedLagrangianDerived`). Both facts are checked mechanically.
+- **THE PROGRAM ALREADY KNEW:** QG242 recorded the gauge dynamics (interaction Lagrangian, vertices, propagators)
+  as **HOSTED/OPEN**; QG243/244 close it by declaration. Hence ASSUMED, not DERIVED.
+- **CONSERVATION IS NOT THE FIELD EQUATION.** What QG243 offers as its field equation is **∂_μJ^μ = 0** - kinematic.
+  The **sourced Maxwell equation ∂_μF^μν = J^ν** is never written or solved, and **no massless spin-1 wave equation
+  exists** (AT's one massless wave equation is the spin-2 Fierz-Pauli `Box psi_μν = 0`).
+- **THE LAGRANGIAN IS SELECTED, NOT DERIVED:** the file says its form is "the unique minimal action consistent with
+  the D96 symmetries" - a minimality argument, and the form written IS the conventional minimal one. AT derives the
+  SYMMETRIES and the COUPLINGS (its real achievement); the functional form is selected.
+- **TWO CONTRADICTIONS:** (a) **U(1) has two incompatible origins** - Z_96 ⊂ D96 (QG161) vs Aut(S^1) of the vortex
+  moduli space (AT-X050), neither referencing the other (the G_026 pattern); (b) **α disagrees with itself** -
+  QG162 gives `1/α = 95 + 42 = 137` (0.03 % of 137.036) while `FineStructureAnalyzer` gives **α^-1 ≈ 100**, concedes
+  "not a precise derivation", and names α "the LARGEST REMAINING FREE PARAMETER in AT".
+- **ONE CLAIM IS NOT EVIDENCE:** `GaugeSymmetryAnalyzer.SimulateEmergence` is `new Random(42)` with hand-picked
+  thresholds (0.15/0.07/0.18/0.02) presented as a "COMPUTATIONAL EXPERIMENT"; its conclusion is a function of the
+  literals. The mechanism claim stands; the simulation is not support (G_027 applied to group E).
+- **MINIMAL ROUTE TO MAXWELL - three steps, only the third is new physics:** (i) COMPUTE what is declared (turn
+  `ConservedCurrents()` into a real Noether current); (ii) make the action a real functional, not a string;
+  (iii) elevate from ∂_μJ^μ = 0 to the SOURCED ∂_μF^μν = J^ν and read off `Box A_μ = 0`.
+- **INSTRUMENT DEFECT FOUND - IT AFFECTS G_027 / G_033 / G_035.** Those scanners strip with a PER-LINE regex, which
+  cannot see a verbatim (`@"..."`) string spanning lines - and this repo writes most report text in exactly such
+  blocks, so PROSE IS COUNTED AS EXECUTABLE CODE. Live proof on `J_Q` (pure prose): per-line strip counts >= 1,
+  whole-file state machine counts 0. The fix is `AT.Core/ResearchXH/AtSourceScan.cs`; **the three named audits
+  should be re-run with it.**
+- *Related:* `J_Q` is AT's only current-like object - a **proto-matter condensate** current (continuity equation plus
+  a Fick/drift form), stated ONLY in prose, with no gauge index and no coupling to A_μ. A candidate PRECURSOR of the
+  electromagnetic current, not that current.
+
+Tests: `Y_E_001_Tests` 7/7. Group E: **7/7**.
+
+## Build Dependency — ImageSharp replaced by SkiaSharp (2026-09-13, architectural)
+
+**RELEASE BUILDS WERE IMPOSSIBLE AND NOTHING SAID SO.** `SixLabors.ImageSharp` 4.1.0's build targets run a licence
+check before `CoreCompile` with `ContinueOnError="$(Configuration.StartsWith('Debug'))"` - so it **hard-failed
+every Release build** while Debug built fine, and because `dotnet test` was habitually run in Debug the failure was
+invisible for the whole session.
+
+- **Decision:** ImageSharp was removed and replaced by **SkiaSharp 3.119.0** (MIT, no licence check). Release now
+  builds clean - verified.
+- **Coupling removed, not just swapped.** SkiaSharp is confined to one internal helper (`AT.Core/AtBitmap.cs`);
+  the plotter APIs (`RARPlotter.Series`, `ImageMapExporter`) now take a library-neutral `AtColor`
+  (`AT.Core/AtColor.cs`). ~20 audit classes reference only that type, so the backend can change again without
+  touching a single caller.
+- **Guard added.** Every other image-producing test is FITS-data-gated and SKIPS on a clean checkout, which is why
+  a broken backend went unnoticed. `AT.Tests/Unit/RenderingBackendTests.cs` (4 tests) runs unconditionally:
+  valid PNG signature, IHDR dimensions, non-empty IDAT, and drawn colours deterministically reaching the raster.
+- **Rule:** validate in the configuration you ship. A Debug-only test habit hid a Release-only hard failure.
 
 ## Latest Repo Sync
 
