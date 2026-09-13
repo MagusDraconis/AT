@@ -4503,3 +4503,36 @@ against **48**): the 48 is a **ceiling over states**, a refinement not a contrad
 **Status:** COMPLETE. Tests `Y_G_046_Tests` **7/7**. Registry: added as **Derived** (`rho-accessibility-audit`) with a
 refinement note back to G_040. Core: `AT.Core/ResearchXH/RhoAccessibilityAudit.cs`; suite
 `AT.Tests/ResearchY/G_GravitySource/Y_G_046_Tests.cs`; doc `Docs/ResearchY/G_GravitySource/ResearchY-G_046.md`.
+
+---
+
+### ResearchY-G_047 - Kernel Observable Audit (DERIVED)
+
+**Question.** Which observable detects the kernel directions directly? Requirements: responds to hidden directions,
+distinguishes kernel states, independent of the contraction observables. Measure clock, acceleration, field change.
+
+**Verdict: DERIVED** - the first observable is AT's own clock law **read at each cell**; the minimal basis is **one
+reading per kernel dimension**.
+
+**1. The kernel, built at the audited state.** State **96** (95 on the simplex), contraction rank **42** (43 with the
+simplex direction), **kernel 53** against G_040's ceiling of **47**; every basis direction changes no contraction
+(**5.684E-013**).
+
+**2. The candidate readings.**
+
+| reading | response to the kernel | rank on the kernel |
+|---|---|---|
+| addressed clock | **1.726E-002** | **53** |
+| acceleration | **3.298E-002** | **53** |
+| field strength | **6.479E-003** | (responds, smaller amplitude) |
+| every contraction | **5.684E-013** | 0, by definition |
+
+**3. The minimal observable basis.** The addressed clock-rate pattern, **53** readings from a maximum of **96** cells;
+two different kernel states differ by **2.338E-002**. Minimality is **structural**: one cell gradient per direction.
+
+**4. Against G_040.** The kernel measures **53** at the audited state against the **ceiling of 47**; the basis is sized
+to the measurement, and both numbers are reported.
+
+**Status:** COMPLETE. Tests `Y_G_047_Tests` **7/7**. Registry: added as **Derived** (`kernel-observable-audit`), with
+the group-G consistency counts updated. Core: `AT.Core/ResearchXH/KernelObservableAudit.cs`; suite
+`AT.Tests/ResearchY/G_GravitySource/Y_G_047_Tests.cs`; doc `Docs/ResearchY/G_GravitySource/ResearchY-G_047.md`.

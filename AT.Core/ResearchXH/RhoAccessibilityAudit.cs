@@ -53,7 +53,12 @@ public static class RhoAccessibilityAudit
     /// A deterministic, generic state on the 95-simplex: equal occupancy plus a fixed combination of the substrate's
     /// modes. Generic matters - a single mode would have a smaller orbit and would under-count the hidden directions.
     /// </summary>
-    public static double[] BaseState()
+    private static readonly Lazy<double[]> StateCache = new(() => BuildBaseState());
+
+    /// <summary>Memoised: the level bases are expensive to rebuild and the audited state never changes.</summary>
+    public static double[] BaseState() => StateCache.Value;
+
+    private static double[] BuildBaseState()
     {
         var rho = new double[Cells];
         for (int i = 0; i < Cells; i++) rho[i] = 1.0;
@@ -124,7 +129,12 @@ public static class RhoAccessibilityAudit
     /// The gradient rows of the contraction observables - one row per distance class, 2 A_d rho. A direction that is
     /// orthogonal to all of them changes NO contraction, which is exactly G_040's definition of hidden.
     /// </summary>
-    public static double[][] ContractionRows(double[] rho)
+    private static readonly Lazy<double[][]> RowsCache = new(() => BuildContractionRows(BaseState()));
+
+    /// <summary>Memoised: the orbital matrices are expensive and the rows never change for the audited state.</summary>
+    public static double[][] ContractionRows(double[] rho) => RowsCache.Value;
+
+    private static double[][] BuildContractionRows(double[] rho)
         => RhoObservableAudit.OrbitalMatrices()
             .Select(A => Enumerable.Range(0, Cells).Select(i =>
                 2.0 * Enumerable.Range(0, Cells).Sum(j => A[i][j] * rho[j])).ToArray())

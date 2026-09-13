@@ -435,6 +435,13 @@ public static class TemporalIndependenceAudit
             + "NOT symbol-detectable: the suite names no B, g_rr or GammaOf — its vocabulary is orbits, kernels and "
             + "clocks",
             ScanDetectsIt: false),
+        // ── G_047: which observable detects the kernel directions directly? ──
+        new SectorClaim("Y_G_047", "Kernel Observable", MetricRequirement.ClockOnly,
+            "it reads the clock law at every cell and measures the rank of that reading on the kernel of the "
+            + "contraction observables, so the metric content is the clock alone: the kernel basis, the three candidate "
+            + "response amplitudes, the reading ranks and the minimal basis size. NOT symbol-detectable: the suite "
+            + "names no B, g_rr or GammaOf — its vocabulary is kernels, ranks and clocks",
+            ScanDetectsIt: false),
     };
 
     // ── The computed classification summaries ───────────────────────────────

@@ -167,11 +167,39 @@ public static class AtlasDataService
         new("Y_G_044_Tests", 7, "PASS", "Gravity Source"),
         new("Y_G_045_Tests", 7, "PASS", "Gravity Source"),
         new("Y_G_046_Tests", 7, "PASS", "Gravity Source"),
+        new("Y_G_047_Tests", 7, "PASS", "Gravity Source"),
         ]),
     ];
 
     public static IReadOnlyList<ResearchNewsModel> ResearchNews { get; } =
     [
+        new(
+            "researchy-g047-kernel-observable-audit",
+            "Naming the Instrument \u2014 The Observable That Reads the Hidden Directions",
+            "ResearchY Milestone \u00b7 G_047 (Kernel Observable Audit; which observable sees the kernel directly?)",
+            "The previous entry in this group showed that the part of the state which the standard measurements cannot see is not simply decorative: moving the state along one of those hidden directions changes the spectrum of clock rates, the spectrum of accelerations and the field strengths built from the organisation, all while leaving every standard measurement untouched. That left an obvious gap, and this entry fills it: if those directions are readable at all, which reading reads them, and how many readings does it take? The answer is the least exotic object available. The theory already has a clock law, and the reading that resolves the hidden directions is that same law read at each cell individually rather than averaged or aggregated. No new ingredient is introduced, which matters because the whole point of the exercise had been to find out whether the hidden content is reachable without inventing anything. The entry then does three measurements to show that the reading is a genuine instrument rather than a coincidence. First, it responds: moving along a hidden direction changes the clock pattern by about two per cent while every standard measurement changes by less than a trillionth. The two numbers together answer a subtler question than mere responsiveness. A quantity that stayed fixed while the standard measurements moved would plainly be a function of them; this one moves precisely while they are fixed, which is what independence means here. Second, it distinguishes: the map from hidden directions to readings has full rank, so two different hidden states always give different readings and no pair of them is conflated. The smallest separation the entry measures between neighbouring directions is about two per cent. Third, and most usefully, the rank of that map is the size of the instrument: because a single cell's clock rate has a gradient pointing along one direction, resolving a given number of hidden dimensions requires that same number of independent cell readings, and the clock pattern supplies exactly that many and no more. The acceleration pattern turns out to resolve them as well and the field strength responds at a smaller amplitude, so the clock is the first reading rather than the only one. One number is reported against the earlier result rather than smoothed away. The hidden sector measures fifty-three dimensions at the state this entry audits, not the forty-seven the earlier entry capped it at, because that forty-seven was a ceiling taken over all states rather than the value at any particular one. The instrument is therefore sized to the measurement, and both numbers are stated side by side so that a future entry auditing a different state can compare. The verdict is that the hidden sector is resolvable, the reading that resolves it is the theory's own clock law applied cell by cell, and the cost is one reading per hidden dimension.",
+            "KERNEL OBSERVABLE AUDIT. Question: which observable detects the kernel directions directly? Given G_040 (95 = 48 + 47) and G_046 (the hidden set is the kernel). Requirements: responds to hidden directions, distinguishes kernel states, independent of the contraction observables; measure clock, acceleration and field change. ANSWER: DERIVED - the first observable is AT's own clock law READ AT EACH CELL, and the minimal basis is UNE READING PER KERNEL DIMENSION. "
+            + "THE KERNEL IS BUILT AT THE AUDITED STATE: state 96 (95 on the simplex), contraction rank 42 (43 with the simplex direction), KERNEL 53 against G_040's ceiling of 47, and every basis direction changes no contraction (5.684E-013). "
+            + "THE CANDIDATE READINGS: addressed clock 1.726E-002, acceleration 3.298E-002, field strength 6.479E-003, while every contraction stays at 5.684E-013 - and that pair answers the third requirement: a quantity fixed while the contractions moved would be a function of them, whereas this one moves while they are fixed. "
+            + "FULL RANK: the reading map on the kernel has rank 53 on a 53-dimensional kernel (the acceleration resolves it too), and two different kernel directions differ by 2.338E-002. "
+            + "THE MINIMAL BASIS IS STRUCTURAL, NOT FITTED: a single cell's clock rate has a gradient along one direction, so resolving d kernel dimensions needs d independent cell readings - 53 readings from a maximum of 96 cells. "
+            + "AGAINST G_040: the kernel measures 53 at the audited state against the ceiling of 47; the basis is sized to the MEASUREMENT. "
+            + "OUTPUT: DERIVED. Core: AT.Core/ResearchXH/KernelObservableAudit.cs. 7/7 PASSED.",
+            "Naming the instrument \u2014 the clock law read cell by cell, and one reading per hidden dimension.",
+            "The clock pattern responds to hidden directions (1.726E-002) while every contraction stays at 5.684E-013, has full rank on the kernel, and needs one reading per hidden dimension.",
+            "The hidden sector is resolvable without any new primitive: the theory's own clock law, read per cell rather than in aggregate, is the observable that reads it.",
+            false,
+            [
+                new("ResearchY-G_047", "KERNEL OBSERVABLE",
+                    "The built kernel, the candidate readings with their ranks, the minimal basis and the ceiling-versus-measurement note.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/G_GravitySource/ResearchY-G_047.md"),
+                new("ResearchY-G_046", "INPUT",
+                    "The kernel identification and the validated hidden step this audit reuses.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/G_GravitySource/ResearchY-G_046.md"),
+                new("ResearchY-G_040", "INPUT",
+                    "The 95/48/47 split whose ceiling this audit sizes its basis against - and reports both numbers for.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/G_GravitySource/ResearchY-G_040.md"),
+            ]),
         new(
             "researchy-g046-rho-accessibility-audit",
             "An Orbit Is Not a Kernel \u2014 Reaching the Hidden Half of rho",

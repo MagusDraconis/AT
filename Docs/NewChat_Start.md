@@ -2902,6 +2902,34 @@ preferred sector. The verdict is computed with a **live branch in every directio
 No group-G registry claim, so claim counts are unchanged. Registry: added as **Boundary** (`sector-weight-audit`),
 reclassifying nothing. Tests: `Y_E_015_Tests` 7/7; group E **103/103**.
 
+## ResearchY-G_047 - Kernel Observable Audit (COMPLETE, DERIVED)
+
+**Question.** Which observable detects the kernel directions directly? Given G_040 (95 = 48 + 47) and G_046 (the hidden
+set is the kernel). Requirements: responds to hidden directions, distinguishes kernel states, independent of the
+contractions. Measure clock, acceleration and field change; construct the minimal observable basis.
+
+**Answer: DERIVED - the first observable is AT's own clock law read at each cell; the minimal basis is one reading per
+kernel dimension.**
+
+- **The kernel is built at the audited state:** state **96** (95 on the simplex), contraction rank **42** (43 with the
+  simplex direction), **kernel 53** against G_040's ceiling of **47**; every basis direction changes no contraction
+  (**5.684E-013**).
+- **The readings:** addressed clock **1.726E-002**, acceleration **3.298E-002**, field strength **6.479E-003**, while
+  every contraction stays at **5.684E-013** - that pair answers the independence requirement (a quantity fixed while
+  the contractions moved would be a function of them).
+- **Full rank:** the reading map on the kernel has rank **53** on a **53**-dimensional kernel (the acceleration resolves
+  it too); two different kernel directions differ by **2.338E-002**.
+- **The minimal basis is structural, not fitted:** a single cell's clock rate has a gradient along one direction, so
+  resolving d kernel dimensions needs d independent cell readings - **53 readings** from a maximum of 96 cells.
+- **Against G_040:** the kernel measures **53** at the audited state against the **ceiling 47**; the basis is sized to
+  the measurement, and both numbers are reported.
+
+**What this changes.** G_046 showed the hidden 47 reach the local laws; G_047 names the observable that reads them
+directly and sizes the instrument - the clock pattern, one reading per hidden dimension, no new primitive.
+
+Registry: added as **Derived** (`kernel-observable-audit`); group-G consistency counts updated. Tests:
+`Y_G_047_Tests` 7/7.
+
 ## ResearchY-G_046 - Rho Accessibility Audit (COMPLETE, OBSERVABLE)
 
 **Question.** Can the hidden 47 dimensions of rho ever influence an observable? Given G_040 (95 = 48 retained + 47
