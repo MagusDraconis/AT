@@ -32,7 +32,7 @@ The occupancy route `A_mu = h(rho) Delta_mu rho` loses its curvature as the subs
 | 32 | 1.124E-003 |
 | 64 | 2.820E-004 |
 
-The fitted exponent is **a^2.00**. The occupancy can **move flux around**; it cannot **put any in**.
+The fitted exponent is **a^1.97**. The occupancy can **move flux around**; it cannot **put any in**.
 
 ## 2. The flux content is an ASSIGNMENT with a GLOBAL CONSTRAINT
 
@@ -67,7 +67,7 @@ surviving amplitude **exists**; what does not exist is anything inside AT that *
 
 | candidate | status | basis |
 |---|---|---|
-| occupancy defects | **REFUTED** | the route falls as a^2.00; it moves flux, it does not add it |
+| occupancy defects | **REFUTED** | the route falls as a^1.97; it moves flux, it does not add it |
 | topological defects | **BOUNDARY** | a balanced pair is legitimate and survives, but nothing creates one |
 | winding sectors | **REFUTED** | a winding is a gradient: zero curvature (E_008), whole-turn closed holonomy (E_011) |
 | boundary conditions | **BOUNDARY** | the answer: the sector is populated by an ASSIGNMENT under the global constraint |

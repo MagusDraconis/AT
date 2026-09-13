@@ -2775,7 +2775,7 @@ continuum limit, no new primitive.
 **Answer: BOUNDARY - nothing inside AT populates the sector, and the constraint on what MAY populate it is exact.**
 
 - **The organisation cannot, re-measured rather than cited.** The occupancy route `A_mu = h(rho) Delta_mu rho` falls
-  as **a^2.00** (max |F| 1.691E-002, 4.442E-003, 1.124E-003, 2.820E-004 at L = 8/16/32/64). The occupancy **moves** flux;
+  as **a^1.97** (max |F| 1.691E-002, 4.442E-003, 1.124E-003, 2.820E-004 at L = 8/16/32/64). The occupancy **moves** flux;
   it cannot **put any in**.
 - **The flux content is an assignment with a global constraint, and this is the sharpest result of the audit.**
   Summing plaquette holonomies over the **whole torus** counts every link **twice with opposite signs**, so the reduced
@@ -2804,6 +2804,40 @@ derives nothing that **selects** one.
 
 No group-G registry claim, so claim counts are unchanged. Registry: added as **Boundary** (`flux-excitation-audit`),
 reclassifying nothing. Tests: `Y_E_012_Tests` 6/6; group E **82/82**.
+
+## ResearchY-E_013 - Flux Population Audit (COMPLETE, BOUNDARY; form DERIVED)
+
+**Question.** What mechanism populates the allowed balanced flux sectors, given that a single fluxon is forbidden and a
+balanced pair allowed? Candidates: occupancy rearrangement, defect pairs, boundary conditions, actualization
+transitions, spectral transitions. Requirements: local, gauge compatible, survives the continuum limit, no new
+primitive. Measure: sector population probability, sector stability, flux lifetime.
+
+**Answer: BOUNDARY for the population, with the mechanism's FORM DERIVED** - the two levels kept apart as the
+D_028/D_040 rule requires.
+
+- **The pairing is forced and the measurement is exact.** Increment **one** link phase and the plaquette content changes
+  **only in pairs**: minimum **4** plaquettes touched, moves touching a single plaquette **0**, signed sum
+  **0.000E+000** (36 configurations over 3 directions, 3 increments, L = 8/16/32/64). So E_012's forbidden case is not
+  merely disallowed but **unreachable by any local move**: **P(single) = 0.0**, **P(pair) = 1.0**.
+- **Stability is exact and is not a lifetime.** Pair amplitude **3.141593 at every L**; a pure gauge field changes its
+  content by **6.939E-017**; a single member decayed alone leaves **3.141593** (forbidden) while annihilating the pair
+  leaves **0.000E+000**.
+- **The lifetime is undefined, not merely long.** The clock law's sensitivity to the flux is **0.000E+000** against
+  **1.061E-001** for the organisation (the control): no potential, so every flux value is degenerate and a lifetime is
+  an **input**.
+- **The activation is missing, measured three ways.** The update rule is purely electric (**max |F_ij| = 0.000E+000**
+  vs **max |F_0i| = 1.424E-002**); a live census finds **0** members coupling a spectral index to a link phase against
+  **25** touching a link field and a non-zero spectral count (a disjointness, not an absence); and the occupancy's
+  constant-coupling limit is an exact gradient with plaquette content **6.939E-017**.
+- **Candidates.** occupancy rearrangement **REFUTED** (a^1.97); **defect pairs DERIVED**; boundary conditions
+  **BOUNDARY**; actualization transitions **REFUTED**; spectral transitions **REFUTED**.
+
+**What this changes.** E_012 established that nothing creates a pair; E_013 establishes that anything which ever does
+must be a pair, because the alternative is not forbidden but **unreachable**. The open item narrows once more: AT
+derives the **shape** of any populating move and derives nothing that makes one, sizes one or times one.
+
+No group-G registry claim, so claim counts are unchanged. Registry: added as **Boundary**
+(`flux-population-audit`), reclassifying nothing. Tests: `Y_E_013_Tests` 7/7; group E **89/89**.
 
 ## ResearchY-G_045 - Observed vs Hidden Dimension Audit (COMPLETE, REFUTED)
 

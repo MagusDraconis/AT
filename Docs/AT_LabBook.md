@@ -4149,7 +4149,8 @@ the **existence** of the configuration, not its magnitude. **The origin is ident
 how coarse the loop is.**
 
 **Status:** COMPLETE. Tests `Y_E_011_Tests` **7/7**; group E **76/76**. No group-G registry claim, so no counts
-change.
+change.
+
 
 ---
 
@@ -4172,7 +4173,7 @@ curvature as the substrate is refined:
 | 32 | 1.124E-003 |
 | 64 | 2.820E-004 |
 
-Fitted exponent **a^2.00**. E_010's conclusion reproduced on this audit's own construction - a control, not a
+Fitted exponent **a^1.97**. E_010's conclusion reproduced on this audit's own construction - a control, not a
 quotation. The occupancy **moves** flux; it cannot **put any in**.
 
 **2. The flux content is an assignment with a global constraint.** Summing plaquette holonomies over the **whole
@@ -4222,3 +4223,73 @@ whole-torus sum, which is the constraint that actually forbids the single fluxon
 **It changes this.** E_011 identified the flux's origin and left the integer sector as a boundary assignment; E_012
 refines it: the assignment is itself subject to a **global constraint** forbidding a single half-turn. AT derives the
 quantum, its gauge-proofness and the allowed-pattern constraint - and derives nothing that **selects** a pattern.
+
+---
+
+### ResearchY-E_013 - Flux Population Audit (BOUNDARY; form DERIVED)
+
+**Question.** What mechanism populates the allowed balanced flux sectors, given E_012's findings - a single fluxon
+forbidden, a balanced pair allowed? Requirements: local, gauge compatible, survives the continuum limit, no new
+primitive. Candidates: occupancy rearrangement, defect pairs, boundary conditions, actualization transitions, spectral
+transitions. Measure: sector population probability, sector stability, flux lifetime.
+
+**Verdict: BOUNDARY for the population, with the mechanism's FORM DERIVED.** The two levels are kept apart as the
+D_028/D_040 rule requires: locality and E_012's constraint force the **shape** of any populating move, while nothing in
+AT performs it, sizes it or times it.
+
+**1. The pair-creation law - the population probability is computed, not assumed.** Increment **one** link phase and
+the plaquette content changes **only in pairs**: for each orientation containing that direction, the plaquette at the
+site and the one before it move by **+delta** and **-delta**. Over 3 directions, 3 increments and 4 lattice sizes (36
+configurations):
+
+| quantity | value |
+|---|---|
+| minimum plaquettes changed by any local move | **4** |
+| local moves populating a **single** plaquette | **0** |
+| signed sum of what a move changes | **0.000E+000** |
+| P(single fluxon) | **0.0** |
+| P(balanced pair) | **1.0** |
+
+E_012's forbidden case is therefore not merely **disallowed** but **unreachable by any local move**.
+
+**2. Stability is exact - and it is not a lifetime.**
+
+| quantity | value |
+|---|---|
+| pair amplitude at L = 8 / 16 / 32 / 64 | 3.141593 at every size |
+| pure gauge field changes the content by | 6.939E-017 |
+| single member decayed alone, residual | 3.141593 -> **forbidden** |
+| pair annihilated, residual | 0.000E+000 -> **allowed** |
+
+**3. The lifetime is undefined, not merely long.**
+
+| quantity | value |
+|---|---|
+| clock law sensitivity to the **flux** | 0.000E+000 |
+| clock law sensitivity to the **organisation** (control) | 1.061E-001 |
+
+The only AT law that could time anything is the clock law, and the flux is invisible to it. With no potential every
+flux value is degenerate: a lifetime is an **input**.
+
+**4. The activation is missing - three independent measurements.** The update rule's own field strength is purely
+electric (**max |F_ij| = 0.000E+000** against **max |F_0i| = 1.424E-002**); a live census finds **0** AT members
+coupling a spectral index to a link phase, against **25** touching a link field and a non-zero count touching a
+spectral index (both sectors exist, the intersection is empty); and the occupancy's constant-coupling limit is an
+exact gradient with plaquette content **6.939E-017**, the floating-point floor of a telescoping sum.
+
+**5. The candidates.** occupancy rearrangement **REFUTED** (scales away as a^1.97); **defect pairs DERIVED** (forced,
+not chosen); boundary conditions **BOUNDARY** (amount, pattern and lifetime all unselected); actualization transitions
+**REFUTED** (purely electric); spectral transitions **REFUTED** (disjoint sectors).
+
+**Status:** COMPLETE. Tests `Y_E_013_Tests` **7/7**; group E **89/89**. Registry: added as **Boundary**
+(`flux-population-audit`), reclassifying nothing; no group-G registry claim, so counts are unchanged. Core:
+`AT.Core/ResearchXH/FluxPopulationAudit.cs`; suite `AT.Tests/ResearchY/E_Electromagnetism/Y_E_013_Tests.cs`; doc
+`Docs/ResearchY/E_Electromagnetism/ResearchY-E_013.md`.
+
+**It changes this.** E_012 established that nothing creates a pair; E_013 establishes that anything which ever does
+must be a pair, because the alternative is not forbidden but **unreachable**. AT derives the shape of any populating
+move and derives nothing that makes one, sizes one or times one.
+
+**One correction carried back into E_012.** This audit's own machinery re-measures E_012's fitted occupancy exponent
+and reads **a^1.97**, not the **a^2.00** that entry's prose rounded to; E_012's documentation, index row, research
+news and memory entries are corrected to the measured value here.

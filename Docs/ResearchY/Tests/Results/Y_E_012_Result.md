@@ -18,7 +18,7 @@ constrained**, and the smallest non-trivial assignment is a **balanced pair** wh
 | single half-turn flux, constraint residual | 3.141593 -> FORBIDDEN |
 | balanced pair, constraint residual | 0.000E+000 -> ALLOWED |
 | occupancy route max \|F\| at L = 8 / 16 / 32 / 64 | 1.691E-002 / 4.442E-003 / 1.124E-003 / 2.820E-004 |
-| occupancy route fitted exponent | a^2.00 |
+| occupancy route fitted exponent | a^1.97 |
 | balanced pair max \|F\| at every size | 3.141593 = pi |
 
 ## Candidates
