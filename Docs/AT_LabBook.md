@@ -3872,3 +3872,55 @@ vs symmetric dim 5).
 
 **Status:** COMPLETE. Tests `Y_E_005_Tests` **7/7**; group E **33/33**. No group-G registry claim, so no counts
 change. No reclassification of E_001-E_004.
+
+
+### ResearchY-E_006 - Connection Origin Audit (DERIVED)
+
+**Question.** What AT structure could supply the missing direction index? Requirements: local / directional /
+first-order / acts on T1 and T2 / no new primitive. Candidates: D96 ring derivative, D96^3 edge connection,
+occupancy gradients, actualization flow, causal-order links.
+
+**Answer: DERIVED** - the unique missing object is the **D96^3 edge connection**, and it needs **no new primitive**.
+
+#### The candidate matrix
+
+| candidate | local | dir rank | first-order | acts on T1/T2 | no new prim | verdict |
+|---|---|---|---|---|---|---|
+| D96 ring derivative | yes | **1** | yes | **no** | yes | REFUTED |
+| **D96^3 edge connection** | **yes** | **3** | **yes** | **yes** | **yes** | **DERIVED** |
+| occupancy gradients | yes | **1** | yes | **no** | yes | REFUTED |
+| actualization flow | **no** | 1 | **no** | no | yes | REFUTED |
+| causal-order links | **no** | 1 | **no** | no | yes | REFUTED |
+
+#### The object
+
+- **local** support 2 per row - **directional** rank 3 - **first-order** identity to 8.88E-016
+  (`|sigma(k)|/k` -> 1.000000, `|sigma(k)|/k^2` 9.996 -> 1000.0)
+- **acts on T1 and T2:** the tensor square of the vector irrep, separated by the octahedral characters -
+  **antisymmetric = T1** (dim 3) and **symmetric = A1 + E + T2** (dims 1+2+3 = 6), total 9 = 3x3
+- **no new primitive:** the tensor product of the ring's own difference operators
+
+#### The refutations, measured
+
+Ring: rank 1 and largest irrep 2. Occupancy gradients: domain = scalars, double gradient antisymmetric part
+**1.11E-016** against a traceless part of **0.879** - a scalar-derived connection can never carry a field strength,
+the same mechanism that made E_005's phase pure gauge. Flow: **0** members returning a flow field. Causal-order links:
+closure reaches **95 of 96** cells against a direct support of **2**.
+
+#### Layers and the boundary inside the verdict
+
+representation **SATISFIED** (already) | **kinematics DERIVED HERE** | dynamics **STILL MISSING** | gauge **STILL
+MISSING**. Live scan: **0** product-lattice constructions in AT's code, so the object is **derivable but not
+instantiated** (G_033 from the code side); **0** members compute a field strength, so nothing couples it.
+
+#### Errors caught by the audit itself
+
+1. The product-lattice scan counted **its own token list** - rule 11, fixed by excluding the audit's own file.
+2. A helper named `MembersThatComputeAFieldStrength` matched **E_002's signature regex**, so the coupling count read
+   **1** instead of **0** - rule 11 again; renamed.
+3. An **over-claim**: "a gradient can never reach the symmetric traceless sector" is false (a Hessian's traceless part
+   is 0.879). Corrected to the statement the measurement supports - the antisymmetric part vanishes identically.
+4. A linearity threshold of 10 sat just above the k = 0.1 sample's **9.996**; the criterion now also requires growth.
+
+**Status:** COMPLETE. Tests `Y_E_006_Tests` **8/8**; group E **41/41**. No group-G registry claim, so no counts
+change. E_005 remains BOUNDARY; refined, not reclassified.

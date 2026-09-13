@@ -138,3 +138,14 @@ derivative acting on the field, neither can even be written. So they are not ind
 verdict is **BOUNDARY** because the location and the uniqueness are *computed here*, while the ingredient itself
 must be **supplied**: AT's first-order structure is one-directional (rank 1) and its built-in connection is exactly
 pure gauge.
+
+## Resolved by E_006 (no reclassification)
+
+**E_006 - Connection Origin Audit** (DERIVED) takes this audit's bottleneck and asks what AT already has that could be
+it. The answer: the **D96^3 edge connection**, the tensor product of the ring's own difference operators - local,
+directional (rank **3**), first-order, and acting on both sectors (antisymmetric part = T1, symmetric part =
+A1 + E + T2). So the ingredient this audit said "has to be supplied" **need not be invented - no new primitive is
+required** - but it does have to be **built and coupled**, which AT has never done (a live scan finds 0
+product-lattice constructions; 0 members compute a field strength). **E_005 remains BOUNDARY**; its bottleneck is
+resolved at the kinematic level, not reclassified.
+

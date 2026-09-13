@@ -2602,6 +2602,36 @@ derivative carrying a DIRECTION INDEX (a field-valued connection).**
 
 No group-G registry claim (the registry is group-G only), so no counts change. Tests: `Y_E_005_Tests` 7/7;
 group E 33/33.
+## ResearchY-E_006 - Connection Origin Audit (COMPLETE, DERIVED)
+
+**Question.** What AT structure could supply the missing direction index that E_005 located? Requirements: (1) local,
+(2) directional, (3) first-order, (4) acts on T1 and T2, (5) no new primitive. Candidates: D96 ring derivative,
+D96^3 edge connection, occupancy gradients, actualization flow, causal-order links.
+
+**Answer: DERIVED - the unique missing object between representation and field theory is the D96^3 EDGE CONNECTION,
+and it needs NO NEW PRIMITIVE.**
+
+- **FOUR REFUTED, ONE DERIVES.** Ring derivative: rank **1**, largest ring irrep **2**. Occupancy gradients: domain =
+  scalars; double gradient antisymmetric part **1.11E-016** vs traceless **0.879** (the same mechanism as E_005's
+  pure-gauge phase). Actualization flow: **0** members returning a flow field. Causal-order links: closure reaches
+  **95 of 96** cells vs a direct support of **2**.
+- **THE OBJECT, ALL FIVE MARKS COMPUTED:** local (support **2** per row); directional (rank **3**); first-order
+  (identity to **8.88E-016**; `|sigma(k)|/k` -> 1.000000 while `|sigma(k)|/k^2` diverges 9.996 -> 1000.0);
+  **acts on T1 and T2 - antisymmetric = T1 (dim 3), symmetric = A1 + E + T2 (dims 1+2+3 = 6)** from the octahedral
+  characters of the tensor square; and no new primitive (the tensor product of the ring's own differences).
+- **ONE DERIVATIVE ACTING ON THE VECTOR SECTOR REPRODUCES BOTH SECTORS** - the photon's field strength in the vector
+  irrep itself (G_042's Hodge identity) and the graviton's traceless sector.
+- **LAYERS:** representation SATISFIED already; **KINEMATICS DERIVED HERE**; dynamics and gauge STILL MISSING.
+- **BOUNDARY INSIDE THE VERDICT:** a live scan finds **0** product-lattice constructions in AT's code (derivable but
+  NOT INSTANTIATED, G_033's finding from the code side) and **0** members compute a field strength (nothing couples
+  it). Derived, not built, and not coupled.
+- **FOUR ERRORS CAUGHT BY THE AUDIT ITSELF:** the scan counted its own token list (rule 11); the helper named
+  `MembersThatComputeAFieldStrength` matched E_002's own signature regex and changed its own count 0 -> 1 (rule 11
+  again); an over-claim that a gradient cannot reach the traceless sector was **false** (0.879) and was corrected; a
+  linearity threshold of 10 sat above the k = 0.1 sample's 9.996.
+- **REFINES E_005** (ingredient need not be invented, only built and coupled). No reclassification.
+
+No group-G registry claim, so claim counts are unchanged. Tests: `Y_E_006_Tests` 8/8; group E 41/41.
 ## ResearchY-G_045 - Observed vs Hidden Dimension Audit (COMPLETE, REFUTED)
 
 **Question.** Can the apparent 3D world emerge as a PROJECTION of a higher-dimensional ACTUALIZATION SPACE?
