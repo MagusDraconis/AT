@@ -4350,3 +4350,63 @@ seam cell reported **1.257E+001** and a uniform sector looked non-uniform. Label
 **It changes this.** E_011 called the integer a label, E_012 constrained the allowed patterns, E_013 showed nothing
 makes a pair; E_014 locates the **occupation** itself and shows it cannot be inside AT. AT derives the label and its
 quantisation; the occupation is a boundary, with a live branch - a single sector-dependent law would make it DERIVED.
+
+---
+
+### ResearchY-E_015 - Sector Weight Audit (BOUNDARY over a DERIVED FLATNESS)
+
+**Question.** Can AT assign a probability or weight to flux sectors n? Candidates: occupancy measure, actualization
+count, entropy, free room, multiplicity structure, sector topology. Compute P(n). Does any AT-derived quantity prefer
+n = 0 or |n| > 0?
+
+**Verdict: BOUNDARY** over a **derived flatness** - the measure is exactly flat, so the sector is completely free.
+
+**1. The measure is counted rather than argued.** Every configuration of a periodic chain (link phases on k equally
+spaced values) enumerated and binned by holonomy class:
+
+| (k, l) | configurations per sector | total | uniform |
+|---|---|---|---|
+| (4, 6) | **1024** | 4096 | True |
+| (6, 5) | **1296** | 7776 | True |
+| (8, 4) | **512** | 4096 | True |
+| (5, 7) | **15625** | 78125 | True |
+
+Bin counts at (4,6): **1024, 1024, 1024, 1024**. **P(n) = 0.250000000**, **P(n)/P(m) = 1.000000**.
+
+**The equality is a theorem, not a coincidence of the sizes tested:** the shift that adds one quantum to one link is a
+**bijection** moving the class by exactly one - verified on every model - so the bins must be equal.
+
+**2. Three of the six candidates are one quantity under three names.**
+
+| quantity | value |
+|---|---|
+| largest entropy spread across sectors | **0.000E+000** |
+| smallest free-room ratio | **1.000000** |
+| multiplicity | constant (the table above) |
+
+Entropy, free room and multiplicity structure are all the number of configurations per sector. They assign a weight -
+the **uniform** one, with no preference in it.
+
+**3. The other three are refuted, each on its own measurement.**
+
+| candidate | measurement | value |
+|---|---|---|
+| occupancy measure | weight read in both sectors | spread **0.000E+000** (control **1.000000** quanta) |
+| actualization count | update rule's spatial part | **0.000E+000** (time-like **1.424E-002**) - no transition exists |
+| sector topology | cycle holonomy phase distance | **4.899E-016** for **every** n, while the strength differs |
+
+**4. The free-energy difference between sectors:** AT's sector-blindness residual (E_014, reused) = **4.163E-017** -
+zero at machine precision.
+
+**5. P(n) and what is derived about it.** The **ratio** P(n)/P(m) = 1 is derived exactly, by bijection and by
+enumeration; the **absolute normalisation** is not - a flat measure over an unbounded label needs a regulator and AT
+supplies none.
+
+**Status:** COMPLETE. Tests `Y_E_015_Tests` **7/7**; group E **103/103**. Registry: added as **Boundary**
+(`sector-weight-audit`), reclassifying nothing. Core: `AT.Core/ResearchXH/SectorWeightAudit.cs`; suite
+`AT.Tests/ResearchY/E_Electromagnetism/Y_E_015_Tests.cs`; doc
+`Docs/ResearchY/E_Electromagnetism/ResearchY-E_015.md`.
+
+**It changes this.** E_014 located the occupation outside AT; E_015 closes every **counting-based** route to a
+preferred sector: the measure is flat as a theorem, so no multiplicity, entropy or free-room argument can prefer a
+label. The theory derives a flat measure rather than a preferred sector, and the normalisation remains an input.

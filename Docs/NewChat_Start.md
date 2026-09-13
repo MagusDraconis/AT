@@ -2873,6 +2873,35 @@ branch**: a single sector-dependent law would move it to **DERIVED**.
 No group-G registry claim, so claim counts are unchanged. Registry: added as **Boundary** (`sector-selection-audit`),
 reclassifying nothing. Tests: `Y_E_014_Tests` 7/7; group E **96/96**.
 
+## ResearchY-E_015 - Sector Weight Audit (COMPLETE, BOUNDARY over a DERIVED FLATNESS)
+
+**Question.** Can AT assign a probability or weight to flux sectors n? Candidates: occupancy measure, actualization
+count, entropy, free room, multiplicity structure, sector topology. Compute P(n). Does any AT-derived quantity prefer
+n = 0 or |n| > 0?
+
+**Answer: BOUNDARY over a DERIVED FLATNESS - the measure is exactly flat, so the sector is completely free.**
+
+- **The measure is counted rather than argued.** Every configuration of a finite model, binned by holonomy class:
+  **(4,6) gives 1024 per bin of 4096**, (6,5) 1296 of 7776, (8,4) 512 of 4096, (5,7) 15625 of 78125; bin counts at
+  (4,6) are **1024, 1024, 1024, 1024**; **P(n) = 0.250000000** and **P(n)/P(m) = 1.000000**.
+- **The equality is a theorem, not a coincidence of the sizes tested:** the shift adding one quantum to one link is a
+  **bijection** moving the class by exactly one, verified on every model.
+- **Three of the six candidates are one quantity under three names:** entropy, free room and multiplicity structure are
+  all the number of configurations per sector (**spread 0.000E+000**, **free-room ratio 1.000000**) - they assign the
+  **uniform** weight, with no preference in it.
+- **The other three are refuted, each measured:** occupancy measure sector-blind (**0.000E+000** against a
+  **1.000000** control); actualization count does not exist (spatial part **0.000E+000**); sector topology identical for
+  every sector (holonomy distance **4.899E-016** while the strength differs).
+- **Free-energy difference between sectors: 4.163E-017** (E_014's sector-blindness residual, reused).
+- **The honest split:** the **ratio** P(n)/P(m) = 1 is derived exactly; the **absolute normalisation** is not (a flat
+  measure over an unbounded label needs a regulator, and AT supplies none).
+
+**What this changes.** E_014 located the occupation outside AT; E_015 closes every **counting-based** route to a
+preferred sector. The verdict is computed with a **live branch in every direction**.
+
+No group-G registry claim, so claim counts are unchanged. Registry: added as **Boundary** (`sector-weight-audit`),
+reclassifying nothing. Tests: `Y_E_015_Tests` 7/7; group E **103/103**.
+
 ## ResearchY-G_045 - Observed vs Hidden Dimension Audit (COMPLETE, REFUTED)
 
 **Question.** Can the apparent 3D world emerge as a PROJECTION of a higher-dimensional ACTUALIZATION SPACE?
