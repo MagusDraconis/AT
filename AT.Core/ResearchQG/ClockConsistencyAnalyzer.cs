@@ -1,7 +1,5 @@
 using System.Globalization;
 using System.Text;
-using SixLabors.ImageSharp;
-using SixLabors.ImageSharp.PixelFormats;
 
 namespace AT.Core.ResearchQG;
 
@@ -13,10 +11,10 @@ namespace AT.Core.ResearchQG;
 /// </summary>
 public static class ClockConsistencyAnalyzer
 {
-    static readonly Rgb24 Blue = new(30, 100, 220);
-    static readonly Rgb24 Red = new(220, 40, 40);
-    static readonly Rgb24 Green = new(40, 160, 60);
-    static readonly Rgb24 Orange = new(230, 140, 20);
+    static readonly AtColor Blue = new(30, 100, 220);
+    static readonly AtColor Red = new(220, 40, 40);
+    static readonly AtColor Green = new(40, 160, 60);
+    static readonly AtColor Orange = new(230, 140, 20);
 
     public static ClockNonUniversalityReport Run(string outDir)
     {
@@ -230,7 +228,7 @@ public static class ClockConsistencyAnalyzer
     // Plots
     // ---------------------------------------------------------------------
 
-    private static void PlotDrift(string path, string name, double eps, Rgb24 color)
+    private static void PlotDrift(string path, string name, double eps, AtColor color)
     {
         double[] z = { 0, 1, 2, 3 };
         double[] upper = z.Select(zz => 1.0 + eps * zz / 3.0).ToArray();

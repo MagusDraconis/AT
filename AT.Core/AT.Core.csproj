@@ -9,7 +9,10 @@
   <ItemGroup>
     <PackageReference Include="FITS.Lib" Version="5.0.381" />
     <PackageReference Include="MathNet.Numerics" Version="5.0.0" />
-    <PackageReference Include="SixLabors.ImageSharp" Version="4.1.0" />
+    <!-- SkiaSharp replaced SixLabors.ImageSharp: ImageSharp's build targets hard-fail a Release build without a
+         commercial licence key (ContinueOnError was true only for Debug), which silently made Release builds
+         impossible. SkiaSharp is MIT and needs no key. -->
+    <PackageReference Include="SkiaSharp" Version="3.119.0" />
   </ItemGroup>
 
 </Project>

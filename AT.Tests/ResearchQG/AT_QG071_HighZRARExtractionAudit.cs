@@ -1,6 +1,6 @@
 using System.Globalization;
 using System.Text;
-using SixLabors.ImageSharp.PixelFormats;
+using AT.Core;
 using AT.Core.FitsAnalysis;
 using AT.Core.ResearchQG;
 using AT.Tests.Shared;
@@ -94,10 +94,10 @@ public class AT_QG071_HighZRARExtractionAudit : ResearchTestBase
 
     private static string[] GeneratePlots(string plotDir, SPARCReport sparc, HighZRARExtractionReport r)
     {
-        var blue = new Rgb24(40, 80, 220);
-        var red = new Rgb24(220, 60, 60);
-        var green = new Rgb24(40, 160, 60);
-        var orange = new Rgb24(230, 140, 40);
+        var blue = new AtColor(40, 80, 220);
+        var red = new AtColor(220, 60, 60);
+        var green = new AtColor(40, 160, 60);
+        var orange = new AtColor(230, 140, 40);
 
         double g0 = 299792.458 * (67.4 / 3.0857e19 * 1e3) / (2.0 * Math.PI);
 

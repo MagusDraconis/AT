@@ -1,7 +1,5 @@
 using System.Globalization;
 using System.Text;
-using SixLabors.ImageSharp;
-using SixLabors.ImageSharp.PixelFormats;
 
 namespace AT.Core.ResearchQG;
 
@@ -14,10 +12,10 @@ namespace AT.Core.ResearchQG;
 /// </summary>
 public static class DetectabilityLimitAnalyzer
 {
-    static readonly Rgb24 Blue = new(30, 100, 220);
-    static readonly Rgb24 Red = new(220, 40, 40);
-    static readonly Rgb24 Green = new(40, 160, 60);
-    static readonly Rgb24 Grey = new(150, 150, 150);
+    static readonly AtColor Blue = new(30, 100, 220);
+    static readonly AtColor Red = new(220, 40, 40);
+    static readonly AtColor Green = new(40, 160, 60);
+    static readonly AtColor Grey = new(150, 150, 150);
 
     const double IntrinsicRARScatterDex = 0.10; // SPARC intrinsic RAR scatter floor
 

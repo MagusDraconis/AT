@@ -1,7 +1,5 @@
 using System.Globalization;
 using System.Text;
-using SixLabors.ImageSharp;
-using SixLabors.ImageSharp.PixelFormats;
 using AT.Core.FitsAnalysis;
 
 namespace AT.Core.ResearchQG;
@@ -16,10 +14,10 @@ namespace AT.Core.ResearchQG;
 /// </summary>
 public static class HiddenSystematicsAnalyzer
 {
-    static readonly Rgb24 Blue = new(30, 100, 220);
-    static readonly Rgb24 Red = new(220, 40, 40);
-    static readonly Rgb24 Green = new(40, 160, 60);
-    static readonly Rgb24 Purple = new(140, 60, 180);
+    static readonly AtColor Blue = new(30, 100, 220);
+    static readonly AtColor Red = new(220, 40, 40);
+    static readonly AtColor Green = new(40, 160, 60);
+    static readonly AtColor Purple = new(140, 60, 180);
 
     public static HiddenSystematicsReport Run(string fitsDir, string kinematicCatalogCsv,
         string massCatalogCsv, string largeSampleCsv, string outDir)
@@ -407,7 +405,7 @@ public static class HiddenSystematicsAnalyzer
     // ---------------------------------------------------------------------
 
     private static void PlotScatter(string path, GalaxyResidual[] gals,
-        Func<GalaxyResidual, double?> xval, Rgb24 color)
+        Func<GalaxyResidual, double?> xval, AtColor color)
     {
         var xs = new List<double>(); var ys = new List<double>();
         foreach (var g in gals)
