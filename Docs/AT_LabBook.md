@@ -3142,6 +3142,24 @@ Removal breaks count conservation, deficit accounting, area/entropy and cosmolog
 G_023's "two pins" is corrected: one exponent choice, enabled by conformal flatness. G_030's dilemma sharpens to
 **conformal flatness + clock law vs optics**. Verdict computed, not typed (G_027 discipline). Group G 252/252.
 
+### ResearchY-G_032 - Conformal Assumption Audit (BOUNDARY)
+
+Is `g = Omega^2 eta` derived, or only assumed? **ASSUMED.** Tracing Difference -> Counting -> rho -> metric, the
+conformal ansatz first becomes necessary at the **rho -> metric** step - the **TENSOR face** - and the imported
+object is **eta**, which QG289's anchor inventory itself calls a TRUE THEORY INPUT (QG77). QG288: "the tensor face
+requires eta, the scalar face does not."
+**Criterion proved:** `g = Omega^2 eta <=> A = B` (0 mismatches; Weyl W = 1e-30 for A = B vs 0.25-15.4 for A != B).
+The G_029 survivor is therefore **not conformally flat** (deficit -1.5x^2 + (13/6)x^3; W = 0.2537).
+**No primitive forces it:** setting eta aside, the forcing set is empty - rho, psi, d, pi are rank 0; 10 metric
+components reduce to 1 conformal function, discarding 9, and AT supplies 0 of the 5 traceless components.
+Counting is a **determinant** condition, not a shape condition (same sqrt(det) = rho, different conformal status);
+with A = sigma fixed, conformality <=> counting measure <=> B = sigma.
+**Decisive:** imposing the ansatz forces B = sigma, hence **gamma = -1 exactly**, excluded by Cassini at
+**86957.4348 sigma** with zero deflection and Shapiro; the admitted band sits at ~ -sigma (opposite side of zero),
+violated by a factor of 2.000013. If the ansatz were entailed, AT would be refuted. AT's own metric form
+g = rho^(2/d) eta IS the conformal member. This restates G_030's dilemma as **conformal flatness vs optics** and
+locates G_031's theorem's premise in the primitive eta. Verdict computed (G_027). Group G 260/260.
+
 ## Key Unsolved Problems
 
 1. Numerical values of ℓ, τ, ħ — empirical, not derived

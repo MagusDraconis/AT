@@ -1814,6 +1814,24 @@ two slots that conformal flatness already made equal. Verified exhaustively (401
 
 Tests: `Y_G_031_Tests` 7/7. Group G: **252/252**.
 
+## G_032 - Conformal Assumption Audit (COMPLETE, BOUNDARY)
+
+**`g = Omega^2 eta` is ASSUMED, not derived.** It first becomes necessary at the **rho -> metric** step - the step
+where the Difference acquires its **TENSOR face**. The chain is metric-free for its first two steps
+(Difference -> Counting, Counting -> rho). The imported object is **eta**, AT's second primitive.
+
+- Grounded in the repo's own records: QG288 - "the tensor face requires eta [conformal reference, QG285], the scalar face does not"; QG289/QG77 (AnchorInventoryAudit) - eta is a **TRUE THEORY INPUT**: "part of the geometry, not a choice".
+- **The criterion, proved:** `g = Omega^2 eta  <=>  A = B` (area gauge: `e^(B_area) = 1 - R A_R`, iff B' = A'). 0 mismatches; Weyl W = 1.0e-30 (A=B) vs 0.25-15.4 (A!=B).
+- **The G_029 survivor is NOT conformally flat:** deficit `-1.5x^2 + (13/6)x^3 - ...` - conformal to first order, violated at second (W = 0.2537).
+- **NO primitive forces it.** Setting eta aside (self-referential), the forcing set is EMPTY: rho, psi, d, pi are all rank 0. 10 metric components -> 1 conformal function, discarding 9; AT supplies 0 of 5 traceless components. G_029's family B = F(sigma) IS that leftover freedom.
+- **Counting is a determinant, not a shape:** diag(rho^2,1,1) and diag(rho^(2/3),...) share sqrt(det) = rho but differ in conformal status. With A = sigma fixed: **conformality <=> counting measure <=> B = sigma** (0 mismatches).
+- **DECISIVE:** A = B + A = sigma => B = sigma => **gamma = -1 EXACTLY at every body** => **Cassini 86957.4348 sigma**, zero deflection and Shapiro. The band (~1.84e-10 wide) sits at ~ -sigma while conformality demands +sigma: opposite sides of zero, violated by a **factor of 2.000013**. If the ansatz were entailed, AT would be refuted.
+- **AT's own metric form `g = rho^(2/d) eta` IS the conformal member**, so it predicts gamma = -1 (no light bending) - the earlier programme concern now traced to its primitive root.
+
+**Amends G_029/G_030/G_031:** the survivor is non-conformal; G_030's dilemma restates as **"conformal flatness vs optics"** (root = eta); G_031's theorem's premise is eta, an input.
+
+Tests: `Y_G_032_Tests` 8/8. Group G: **260/260**.
+
 ## Latest Repo Sync
 
 Recent commits from the other machine:
