@@ -3262,6 +3262,25 @@ FOUND - affects G_027/G_033/G_035:** their per-line stripper cannot see a multi-
 PROSE counts as executable CODE (live proof: `J_Q`, per-line >= 1 vs whole-file 0); fixed by
 `AT.Core/ResearchXH/AtSourceScan.cs` and they should be re-run with it. Verdict computed (G_027). Group E 7/7.
 
+### ResearchY-G_037 - Refractive Lens Audit (REFUTED)
+
+Can light bend WITHOUT space bending, via an effective refractive index (the TRM-era idea,
+`n_eff = 2 + λ_time·φ + λ_space·φ²|μ̇|` with `c_eff = c₀/n_eff`)? **REFUTED — by an identity.** For a static
+metric `n = e^(B−A)`, and with `A = Φ/c²`, `B = −γΦ/c²`, **n − 1 = −(1+γ)Φ/c²** — so the coefficient `a` in
+`n = 1 + a·GM/(c²r)` is **exactly a = 1 + γ**, and the deflection is `Δθ = 2a·GM/(c²b)` (closed form checked
+numerically: 4.000000 for a = 2, 2.000000 for a = 1). **A static, non-dispersive index is not an alternative to
+space curvature — it is the same object in different variables.** AT's DERIVED conformal sector (G_031, A = B)
+therefore has **n = 1 and bends NOTHING** — G_032's Cassini refutation restated optically — while time-only gives
++1·x (exactly half) and GR gives +2·x. **THE RATE TERM CANNOT SUPPLY THE HALF:** the needed n − 1 = 2φ is FIRST
+order, while `λ_space·φ²|μ̇|` is second — **9.43e5× too small at the Sun**, 2.0e4× at a white dwarf, 8.1× at
+J0740+6620. **THE EM-ONLY READING IS EXCLUDED:** if the index is a medium rather than a metric it affects light
+but not gravitons, and over GW170817's 40 Mpc a galactic-scale index delays light by **131 yr against a 1.7 s
+bound — 2.4e9×**; the surviving strength is n − 1 ≲ **4.13e-16**. Bending and delay are ONE function (any static
+index reproducing the bending reproduces the GR Shapiro delay), so they are not independently tunable. The only
+genuine escapes are dispersion, birefringence and time dependence. WHAT SURVIVES: the optical language
+(`n − 1 = −(1+γ)Φ/c²` is the cleanest statement of AT's γ problem), the rate-dependent term as a genuinely
+non-metric COMPACT-OBJECT effect, and a new falsification handle (GW170817). Verdict computed. Group G 289/289.
+
 ## Key Unsolved Problems
 
 1. Numerical values of ℓ, τ, ħ — empirical, not derived

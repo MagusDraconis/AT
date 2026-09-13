@@ -2008,6 +2008,49 @@ solved long ago" confusion quantitatively.
   **-29.7 % at neutron-star compactness x = 0.247002** - so the spatial sector is indistinguishable from GR in the
   solar system and sharply distinguishable at compact objects.
 
+## G_037 - Refractive Lens Audit: can light bend without space bending? (COMPLETE, REFUTED)
+
+**AT CANNOT GET BENDING FROM A REFRACTIVE INDEX WITHOUT SPACE CURVATURE - THE INDEX *IS* THE PPN gamma.**
+This settles the TRM-era idea (`n_eff = 2 + lambda_time*phi + lambda_space*phi^2*|mu_dot|`, `c_eff = c0/n_eff`),
+which reported a deflection matching GR.
+
+- **THE IDENTITY:** for a static metric, `n = e^(B-A)`, and with `A = phi/c^2`, `B = -gamma*phi/c^2`:
+  **`n - 1 = -(1+gamma)*phi/c^2`**, so the coefficient `a` in `n = 1 + a*GM/(c^2 r)` is **exactly `a = 1 + gamma`**,
+  and **`dtheta = 2a*GM/(c^2 b)`** (closed form checked numerically: 4.000000 at a = 2, 2.000000 at a = 1).
+  **A static, non-dispersive index is not an alternative to space curvature - it is the SAME OBJECT in different
+  variables.** So "bending without space bending" has only two readings, and both are already decided.
+- **AT's DERIVED conformal sector (A = B; G_031) has n = 1 and bends NOTHING** - this is G_032's Cassini
+  refutation (8.6957e4 sigma) restated optically, with a one-line reason: a conformal factor maps null geodesics
+  to null geodesics. The three cases: conformal `gamma = -1, n-1 = 0, deflection 0`; time-only `gamma = 0,
+  n-1 = +1x, HALF`; GR `gamma = +1, n-1 = +2x, full`.
+- **THE RATE TERM CANNOT SUPPLY THE MISSING HALF.** The needed `n - 1 = 2*phi` is FIRST order; the TRM second
+  term `lambda_space*phi^2*|mu_dot|` is SECOND order: **9.43e5x too small at the solar surface** (phi = 2.12e-6,
+  needed 4.24e-6 vs phi^2 = 4.49e-12), 2.0e4x at a white dwarf, **8.1x at J0740+6620**. Only the LINEAR term can
+  carry the half - and by the identity that term IS the spatial metric function.
+- **THE EM-ONLY READING IS EXCLUDED by GW170817.** If the index is a MEDIUM rather than a metric, it affects
+  light but not gravitons. Over GW170817/GRB170817A's 40 Mpc (130 Myr light-travel): a galactic-scale index
+  (1e-6) delays light by **4.12e9 s = 131 yr against the 1.7 s bound = 2.4e9x**; solar-scale 5.1e9x; cluster-scale
+  7.3e10x; even 1e-12 fails by 2.4e3x. The surviving strength is `n - 1 <= 1.7*c/D = 4.13e-16` - nothing like the
+  `2*phi` a deflection requires.
+- **BENDING AND DELAY ARE NOT INDEPENDENT:** any static index reproducing the bending also reproduces the GR
+  Shapiro delay `2GM/c^3*ln(4 r1 r2/b^2)` - one function, so they cannot be tuned separately.
+- **THE THREE GENUINE ESCAPES (and only these):** **dispersion** `n(omega)` (lensing is achromatic to ~1 % from
+  radio to optical), **birefringence** (vacuum-birefringence limits), and **time dependence** - which is exactly
+  the TRM `phi^2*|mu_dot|` signature, a genuinely NON-METRIC ingredient, but O(phi^2), hence compact-object only.
+
+**WHAT SURVIVES FROM THE TRM IDEA:** the OPTICAL LANGUAGE - `n - 1 = -(1+gamma)*phi/c^2` is the cleanest
+statement of AT's actual gamma problem and shows the problem is NOT notation; the RATE-DEPENDENT term as a
+genuine non-metric compact-object effect (within an order of magnitude at neutron-star compactness); and a NEW
+FALSIFICATION HANDLE - any EM-only lens must beat GW170817's 1.7 s bound, which no astrophysically natural
+strength does.
+
+**CAVEATS:** (1) phi is read as the dimensionless potential `Phi/c^2`; if TRM's phi is an order-1 order parameter
+the O(phi^2) conclusion changes and the specific `f(kappa,b)` would need the TRM definitions. (2) TRM's
+`{beta,gamma} -> {1,1}` at kappa->0.3, b->1.248 is a TUNED-TO-TARGET statement; whether `f(kappa,b) -> 1` is
+derived or fitted cannot be settled from the published formula.
+
+Tests: `Y_G_037_Tests` 6/6. Group G: **289/289**.
+
 ## ResearchY-E_001 - Electromagnetism Inventory Audit (COMPLETE, BOUNDARY)
 
 **AT'S ELECTROMAGNETIC KINEMATICS IS DERIVED; ITS DYNAMICS IS DECLARED BUT NEVER COMPUTED.** Group E opens with an

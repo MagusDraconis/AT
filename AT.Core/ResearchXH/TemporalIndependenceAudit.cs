@@ -350,6 +350,14 @@ public static class TemporalIndependenceAudit
             + "lives entirely inside report string literals (0/0/0 after stripping), because the audit asks which "
             + "quantities the MEASUREMENT needs, not which metric symbols the code spells",
             ScanDetectsIt: false),
+
+        // ── G_037: the refractive route to bending — the index IS gamma, so it needs g_ij ──
+        new SectorClaim("Y_G_037", "Refractive Lens", MetricRequirement.Spatial,
+            "the result is about γ ITSELF: a static refractive index obeys n − 1 = −(1+γ)Φ/c², so it IS the "
+            + "spatial metric function written optically, and the deflection needs a = 1+γ. NOT symbol-detectable: "
+            + "the suite names no B, g_rr or GammaOf — its subject is a coefficient, and its only metric "
+            + "vocabulary is the NEGATIVE test that a conformal metric (A = B) cannot bend light at all",
+            ScanDetectsIt: false),
     };
 
     // ── The computed classification summaries ───────────────────────────────

@@ -55,9 +55,9 @@ public class Y_G_033_Tests : ResearchTestBase
         Assert.True(CubicSubstrateAudit.SubstrateUseIsEraLocal());
         Assert.Equal(classified.Length, withSubstrate.Length + commentOnly.Length + without.Length);
 
-        // The metric / closure era is exactly the D96-FREE one — fourteen audits (thirteen through G_035;
-        // G_036 added the fourteenth, and it uses no substrate either).
-        Assert.Equal(14, without.Length);
+        // The metric / closure era is exactly the D96-FREE one — fifteen audits (thirteen through G_035;
+        // G_036 and G_037 added the fourteenth and fifteenth, and neither uses a substrate).
+        Assert.Equal(15, without.Length);
         Assert.Equal(20, withSubstrate.Length);
         Assert.Equal(1, commentOnly.Length);                 // G_001 names D96 only in comments
 
