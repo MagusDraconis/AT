@@ -185,3 +185,13 @@ phase, so the missing primitive is the spacetime index and the dynamics, not the
 **No reclassification.** E_001, E_002, M_011, M_012, G_032 and G_033 are unchanged inputs; the D_040 registry is
 untouched; no canonical claim, value or equation changes; no new primitive is added by this audit — it identifies
 the one AT would need.
+
+## Located by E_005 (no reclassification)
+
+**E_005 - Propagation Origin Audit** (BOUNDARY) takes this audit's missing primitive - *a phase on spacetime links
+with its own dynamics*, i.e. the **spacetime index** and the **fluctuation** - and locates it in the four-layer
+scheme as the **KINEMATICS** layer, the **first missing step**. The spacetime index **is** the direction index, and
+E_005 adds the computed reason the existing phase cannot stand in for it: the built-in connection is **exactly pure
+gauge** (step 2*pi/96 = 0.065449847, holonomy 6.283185 = 2*pi = the identity, conjugation residual 2.45E-016), so its
+field strength is identically zero and the only gauge-invariant content a phase on a closed line could have is
+exactly the residue that vanishes. **E_003 remains BOUNDARY; nothing here is reclassified.**

@@ -135,3 +135,14 @@ choice, not a consequence of the representation.
 **No reclassification.** E_001, E_002, E_003, M_011, M_012, G_032 and G_033 are unchanged inputs; the D_040
 registry is untouched; no canonical claim, value or equation changes; no new primitive is added — the audit
 locates the one the theory would need.
+
+## Refinement after E_005 (no reclassification)
+
+**E_005 - Propagation Origin Audit** (BOUNDARY) sharpens WHERE the shortfall is rather than WHICH forms compete.
+This audit located it at *the choice of kinetic form* that takes three states to two. E_005 refines that to the
+**second** missing step: a kinetic form is a functional of a **field strength**, and there is no field strength until
+a first-order derivative carrying the **direction index** exists - at a direction rank of 1 the antisymmetric square
+is exactly 0. E_005 also reproduces this audit's finding that the **representation supplies no gauge orbit**, and
+its computed observation that AT's built-in link phase is **exactly pure gauge** (holonomy 2*pi = the identity,
+conjugation residual 2.45E-016) explains why no kinetic form could act on it in the first place. **E_004 remains
+BOUNDARY; nothing here is reclassified.**

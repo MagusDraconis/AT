@@ -3817,3 +3817,58 @@ checks, all reproduced rather than assumed.
 
 **Status:** COMPLETE. Tests `Y_G_045_Tests` **7/7**. Registry `ClockOnly -> SURVIVES` (counts 32/11/3 of 46).
 No reclassification of any prior audit.
+
+
+### ResearchY-E_005 - Propagation Origin Audit (BOUNDARY)
+
+**Question.** What is the minimal missing ingredient that turns **T1(3)** into a propagating photon sector and
+**T2(3)** into a propagating graviton sector? Separate **representation / kinematics / dynamics / gauge**;
+determine the **first missing step**; locate the **unique bottleneck**.
+
+**Answer: BOUNDARY** - the first failing layer is **KINEMATICS**, and the bottleneck is **one object**: a
+first-order derivative carrying a **direction index**.
+
+#### The ladder
+
+| layer | photon | graviton | status |
+|---|---|---|---|
+| representation | T1, 3 x 1 | E + T2 = 2 + 3 = 5 | **SATISFIED** |
+| kinematics | direction index needed | same index space | **MISSING - FIRST** |
+| dynamics | field strength needed | linearised curvature needed | MISSING - blocked |
+| gauge | image of the derivative | symmetrised derivatives | MISSING - blocked |
+
+#### Three localisations that agree
+
+1. **The index spaces collapse.** directions 1/2/3 -> antisymmetric **0**/1/3, traceless symmetric **0**/2/5.
+2. **The derivative is one-directional.** `L = sum_r D_r^T D_r` exactly (residual **0.000E+000**); direction rank
+   **1** vs **3** needed. Loops ring **481**, cube **1 769 473**, plaquettes **27 648**.
+3. **The built-in connection is exactly pure gauge.** Step **0.065449847**; holonomy
+   **6.283185** = 2*pi; residue **0.000E+000**; conjugation residual **2.45E-016**.
+
+#### The shared count and the refuted rivals
+
+| sector | components | orbit | physical |
+|---|---|---|---|
+| photon | 3 | 1 | **2** |
+| graviton | 5 | 3 | **2** |
+
+REFUTED: the representation (complete) and the exterior complex (the graviton is not a form: antisymmetric dim 3
+vs symmetric dim 5).
+
+#### Refinements
+
+- **E_003** named the spacetime index and the fluctuation; **E_005 locates it** as the kinematics layer, the first
+  missing step, and shows the existing phase cannot stand in for it.
+- **E_004** located the kinetic-form choice; **E_005 refines it to the second step** - downstream of a field
+  strength that does not yet exist. No reclassification.
+
+#### Errors caught by the audit itself
+
+1. `total % 2*pi` is **not** a holonomy reduction - it returns a whole turn when the value lands just below the
+   modulus. Replaced by counting turns.
+2. A **real** exponential was used where a **complex** phase was needed; the residual read **534** before the fix.
+3. The shared `PhotonOntologyAudit.RankOf` indexes eight columns unconditionally and cannot take a
+   one-component vector; ranking is done locally and the observation recorded.
+
+**Status:** COMPLETE. Tests `Y_E_005_Tests` **7/7**; group E **33/33**. No group-G registry claim, so no counts
+change. No reclassification of E_001-E_004.

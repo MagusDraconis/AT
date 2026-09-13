@@ -2574,6 +2574,34 @@ observability fraction, states per observable.
 Registry: added as **ClockOnly -> SURVIVES**, `ScanDetectsIt: false`; counts become **31/11/3 of 45**. No
 reclassification; G_041/G_042/G_043/G_033 are unchanged inputs. G_033's live classifier now reads **26**
 substrate suites (43 classified in total). Tests: `Y_G_044_Tests` 7/7; group G 343/343.
+## ResearchY-E_005 - Propagation Origin Audit (COMPLETE, BOUNDARY)
+
+**Question.** What is the minimal missing ingredient that turns T1(3) into a PROPAGATING photon sector and T2(3)
+into a PROPAGATING graviton sector? Separate representation / kinematics / dynamics / gauge.
+**Goal.** Locate the UNIQUE bottleneck shared by photon and graviton.
+
+**Answer: BOUNDARY - the first failing layer is KINEMATICS, and the bottleneck is ONE object: a first-order
+derivative carrying a DIRECTION INDEX (a field-valued connection).**
+
+- **THE LADDER, RUN IN ORDER:** representation SATISFIED (T1 3 x 1; E + T2 = 2 + 3 = 5; the ring tops out at 2) -
+  KINEMATICS **MISSING, THE FIRST FAILURE** - dynamics and gauge **MISSING BUT BLOCKED**, because a kinetic form is
+  a functional of a field strength and a gauge orbit is the image of the derivative.
+- **LOCALISATION ONE - THE INDEX SPACES COLLAPSE.** At a direction rank of 1 the antisymmetric square is exactly
+  **0** and the traceless symmetric is exactly **0**; directions 1/2/3 -> 0/1/3 and 0/2/5.
+- **LOCALISATION TWO - THE DERIVATIVE IS ONE-DIRECTIONAL.** `L = sum_r D_r^T D_r` holds exactly (residual
+  **0.000E+000**), so first-order operators exist - but the direction rank is **1** against the **3** needed.
+  Loops: ring **481**, cube **1 769 473** (elementary plaquettes **27 648**).
+- **LOCALISATION THREE - THE BUILT-IN CONNECTION IS EXACTLY PURE GAUGE.** Step **0.065449847**, holonomy
+  **6.283185** = 2*pi = the identity, conjugation residual **2.45E-016**. Its field strength is identically zero.
+- **TWO RIVALS REFUTED:** the representation (complete) and the exterior complex (antisymmetric 3 vs symmetric 5 -
+  the graviton is not a form). **THE SHARED COUNT:** 3 - 1 = **2** (photon) and 5 - 3 = **2** (graviton).
+- **REFINEMENTS:** E_004's "choice of kinetic form" is the **second** step, not the first; E_003's "spacetime
+  index" **is** the direction index. No reclassification - both remain BOUNDARY.
+- **THREE ERRORS CAUGHT BY THE TESTS:** `%` is not a holonomy reduction; a real exponential was used where a
+  complex phase was needed (534 before the fix); the shared `RankOf` helper cannot take one-component vectors.
+
+No group-G registry claim (the registry is group-G only), so no counts change. Tests: `Y_E_005_Tests` 7/7;
+group E 33/33.
 ## ResearchY-G_045 - Observed vs Hidden Dimension Audit (COMPLETE, REFUTED)
 
 **Question.** Can the apparent 3D world emerge as a PROJECTION of a higher-dimensional ACTUALIZATION SPACE?
