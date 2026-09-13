@@ -61,7 +61,7 @@ So **first-order operators exist** - but all six strides lie along a single line
 | directions a vector index needs | **3** |
 | ring independent loops (E - V + 1) | **481** |
 | cube independent loops | **1 769 473** |
-| cube elementary plaquettes | **27 648** |
+| cube elementary plaquettes | **2 654 208** |
 
 Only the cube can carry a **local** field strength rather than a single global number.
 
@@ -148,4 +148,13 @@ A1 + E + T2). So the ingredient this audit said "has to be supplied" **need not 
 required** - but it does have to be **built and coupled**, which AT has never done (a live scan finds 0
 product-lattice constructions; 0 members compute a field strength). **E_005 remains BOUNDARY**; its bottleneck is
 resolved at the kinematic level, not reclassified.
+
+## Corrected by E_007 (arithmetic, no verdict change)
+
+This audit reported **27 648** elementary plaquettes on the cube as `3L^2`. That is wrong by a factor of `L`: there is
+one elementary plaquette per site **and per orientation pair**, so the count is `3L^3` = **2 654 208** at L = 96. The
+audit's own cycle count already used the correct edge count `3L^3`, so the two numbers in this document disagreed with
+each other. **ResearchY-E_007** caught it by recounting the cycles independently and has corrected the code, the test
+and every text that quoted the figure. **The verdict and every other number are unchanged** - and the corrected value
+strengthens rather than weakens the point, since the cube's plaquette supply is a thousand times the ring's (zero).
 

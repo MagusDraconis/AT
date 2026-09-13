@@ -3841,7 +3841,7 @@ first-order derivative carrying a **direction index**.
 
 1. **The index spaces collapse.** directions 1/2/3 -> antisymmetric **0**/1/3, traceless symmetric **0**/2/5.
 2. **The derivative is one-directional.** `L = sum_r D_r^T D_r` exactly (residual **0.000E+000**); direction rank
-   **1** vs **3** needed. Loops ring **481**, cube **1 769 473**, plaquettes **27 648**.
+   **1** vs **3** needed. Loops ring **481**, cube **1 769 473**, plaquettes **2 654 208**.
 3. **The built-in connection is exactly pure gauge.** Step **0.065449847**; holonomy
    **6.283185** = 2*pi; residue **0.000E+000**; conjugation residual **2.45E-016**.
 
@@ -3924,3 +3924,49 @@ instantiated** (G_033 from the code side); **0** members compute a field strengt
 
 **Status:** COMPLETE. Tests `Y_E_006_Tests` **8/8**; group E **41/41**. No group-G registry claim, so no counts
 change. E_005 remains BOUNDARY; refined, not reclassified.
+
+
+### ResearchY-E_007 - Field Strength Origin Audit (BOUNDARY)
+
+**Question.** Can the D96^3 edge connection produce a non-zero field strength? Construct closed plaquette loops, a
+discrete curvature and a discrete curl; measure F != 0; compare pure gauge against a non-trivial loop.
+
+**Answer: BOUNDARY** - both halves are exact: **the connection alone produces nothing, and the cube is the first
+substrate on which anything can exist at all.**
+
+#### F != 0 ?
+
+| quantity | value | status |
+|---|---|---|
+| commutator of the edge connection's differences | 1.73E-018 | **ZERO** - flat |
+| pure gauge link field | 6.94E-017 | **ZERO** (telescoping) |
+| curl versus holonomy (Abelian) | 0.00E+000 | **EQUAL** - the curvature *is* the curl |
+| minimal non-trivial loop | **0.065449847** | **NON-ZERO** |
+| gauge invariance | 1.11E-015 | **INVARIANT** |
+| discrete Bianchi (flux / pure gauge) | 0.00E+000 / 8.33E-017 | **EXACT** |
+| link periodicity for the minimal flux | 2.45E-016 | **PERIODIC** |
+
+#### The census
+
+| | ring | cube |
+|---|---|---|
+| elementary plaquettes | **0** | **2 654 208** |
+| independent cycles | 481 | **1 769 473** |
+
+The ring has no 2-cycle at all, so F has nowhere to live. The cube has one plaquette per site and per orientation
+pair.
+
+#### The first non-trivial field quantity
+
+`F = 2 pi n / L`; smallest non-zero value **2 pi / 96 = 0.065449847** - exactly AT's phase quantum. **The number that
+is pure gauge on the ring is the minimal real field strength on the cube.**
+
+#### Correction to E_005
+
+E_005 reported `3L^2` = **27 648** plaquettes while its own cycle count used the correct `3L^3` edges - a
+factor-of-`L` inconsistency, caught by recounting the cycles independently. Corrected to **2 654 208** in the code,
+the test and eight texts. E_005's verdict and all its other numbers are unchanged.
+
+**Status:** COMPLETE. Tests `Y_E_007_Tests` **7/7**; group E **48/48**. No group-G registry claim, so no counts
+change. Layers: kinematics DERIVED (E_006, flat on its own) | field-strength detection DERIVED HERE | dynamics STILL
+MISSING.

@@ -703,6 +703,18 @@ public static class FieldEquationDerivationAudit
     /// <summary>This audit's own file, excluded from the scans below so it cannot certify itself.</summary>
     private static readonly string[] SelfFiles = { "FieldEquationDerivationAudit.cs" };
 
+    /// <summary>
+    /// Rule 11, GENERALISED. This scanner counts AT's physics, so the audits that measure AT are not part of what it
+    /// counts - they are the apparatus. Three separate audits have now perturbed the count by naming a member after
+    /// the thing being counted: E_006's first helper was called MembersThatComputeAFieldStrength, and E_007 carries
+    /// PureGaugeFieldStrength, both of which the signature regex below matches, so the reading became 1 instead of 0.
+    /// Excluding every file whose name ends in "Audit.cs" makes the count immune to the apparatus, which is what the
+    /// rule is for.
+    /// </summary>
+    private static bool IsAuditScaffolding(string fileName)
+        => fileName.EndsWith("Audit.cs", StringComparison.Ordinal)
+        || SelfFiles.Contains(fileName, StringComparer.Ordinal);
+
     /// <summary>E_001's mechanical proof, reused: AT's EM dynamics is returned as strings, not computed.</summary>
     public static string[] AtDeclaresRatherThanComputes() => ElectromagnetismInventoryAudit.EmDynamicsIsStringReturning();
 
@@ -736,6 +748,7 @@ public static class FieldEquationDerivationAudit
             if (file.Contains($"{Path.DirectorySeparatorChar}obj{Path.DirectorySeparatorChar}")
                 || file.Contains($"{Path.DirectorySeparatorChar}bin{Path.DirectorySeparatorChar}")) continue;
             if (SelfFiles.Contains(Path.GetFileName(file), StringComparer.Ordinal)) continue;
+            if (IsAuditScaffolding(Path.GetFileName(file))) continue;
             n += pat.Matches(AtSourceScan.StripLiteralsAndComments(File.ReadAllText(file))).Count;
         }
         return n;

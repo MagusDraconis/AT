@@ -2590,7 +2590,7 @@ derivative carrying a DIRECTION INDEX (a field-valued connection).**
   **0** and the traceless symmetric is exactly **0**; directions 1/2/3 -> 0/1/3 and 0/2/5.
 - **LOCALISATION TWO - THE DERIVATIVE IS ONE-DIRECTIONAL.** `L = sum_r D_r^T D_r` holds exactly (residual
   **0.000E+000**), so first-order operators exist - but the direction rank is **1** against the **3** needed.
-  Loops: ring **481**, cube **1 769 473** (elementary plaquettes **27 648**).
+  Loops: ring **481**, cube **1 769 473** (elementary plaquettes **2 654 208**).
 - **LOCALISATION THREE - THE BUILT-IN CONNECTION IS EXACTLY PURE GAUGE.** Step **0.065449847**, holonomy
   **6.283185** = 2*pi = the identity, conjugation residual **2.45E-016**. Its field strength is identically zero.
 - **TWO RIVALS REFUTED:** the representation (complete) and the exterior complex (antisymmetric 3 vs symmetric 5 -
@@ -2632,6 +2632,35 @@ and it needs NO NEW PRIMITIVE.**
 - **REFINES E_005** (ingredient need not be invented, only built and coupled). No reclassification.
 
 No group-G registry claim, so claim counts are unchanged. Tests: `Y_E_006_Tests` 8/8; group E 41/41.
+## ResearchY-E_007 - Field Strength Origin Audit (COMPLETE, BOUNDARY)
+
+**Question.** Can the D96^3 edge connection that E_006 derived produce a non-zero field strength? Construct closed
+plaquette loops, discrete curvature, discrete curl; measure F != 0; compare pure gauge against a non-trivial loop.
+
+**Answer: BOUNDARY - both halves are exact: the connection alone produces NOTHING, and the cube is the FIRST substrate
+that can carry a field strength at all.**
+
+- **THE CONNECTION IS FLAT.** It is a product of lattice differences and differences commute on a uniform lattice
+  (commutator **1.73E-018**); in link language its content is a gradient, whose plaquette holonomy vanishes by
+  telescoping (**6.94E-017**).
+- **THE CENSUS DECIDES THE OTHER HALF.** Ring elementary plaquettes: **0**. Cube: **2 654 208** (one per site per
+  orientation pair) inside **1 769 473** independent cycles.
+- **THE FIRST NON-TRIVIAL QUANTITY IS THE QUANTISED PLAQUETTE FLUX.** A_1 = f y gives F = -f, and torus
+  periodicity forces f = 2 pi n / L, so the smallest non-zero field strength is **2 pi / 96 = 0.065449847** - exactly
+  AT's phase quantum. The number E_005 found pure gauge on the ring is the minimal real field strength on the cube.
+- **THE APPARATUS IS EXACT:** the discrete curvature IS the antisymmetrised difference (residual **0.00E+000**);
+  gauge invariance **1.11E-015**; discrete Bianchi **0.00E+000** (flux) and **8.33E-017** (pure gauge); periodicity
+  **2.45E-016**.
+- **BOUNDARY FOR A SPECIFIC REASON:** everything that DETECTS F is derived and the first non-trivial quantity is
+  exhibited, but the connection does not produce it - it takes a chosen fluctuation, and nothing in AT selects one
+  (the dynamics layer).
+- **CORRECTION TO E_005:** that audit reported 3L^2 = **27 648** plaquettes while its own cycle count used the
+  correct 3L^3 edges (inconsistent by a factor of L). Corrected to **2 654 208** here, in the code, the test and eight
+  texts; E_005's verdict and other numbers unchanged.
+- **TWO SYNTAX ERRORS in my own first draft of the core**, caught by the compiler.
+
+Layers: kinematics DERIVED (E_006) but flat on its own; field-strength detection DERIVED HERE; dynamics STILL MISSING.
+No group-G registry claim, so claim counts are unchanged. Tests: `Y_E_007_Tests` 7/7; group E 48/48.
 ## ResearchY-G_045 - Observed vs Hidden Dimension Audit (COMPLETE, REFUTED)
 
 **Question.** Can the apparent 3D world emerge as a PROJECTION of a higher-dimensional ACTUALIZATION SPACE?

@@ -127,3 +127,19 @@ resolved at the kinematic level rather than reclassified.
 **Located and derived: the D96^3 edge connection** - local, directional (rank 3), first-order, and acting on both
 T1 and T2 (antisymmetric part = T1; symmetric part = A1 + E + T2), built from AT's own structures with **no new
 primitive**. It is **derived but not instantiated**, so what remains is the construction and the coupling.
+
+## Corrected dependency (E_007)
+
+E_007 recounts the cube's cycles independently and found that E_005's plaquette figure was wrong by a factor of `L`
+(`3L^2` instead of `3L^3`, i.e. **2 654 208** rather than 27 648 at L = 96). This audit quotes the corrected figure.
+Nothing here depended on the wrong number: the instantiation scan, the candidate matrix and the tensor-square
+decomposition are unchanged.
+
+## Rule 11 made permanent (E_007's fallout)
+
+E_007's first draft named a member `PureGaugeFieldStrength`, which matched **E_002's** signature regex and moved this
+audit's coupling count from 0 back to 1 - breaking a test in *this* audit without touching its code. That was the third
+instance of the same defect. Rather than rename again, E_002's scanner was generalised to exclude every `*Audit.cs`
+file, since the audits are the apparatus and not the physics. `CouplingMemberCount()` reads 0 again, and it can no
+longer be perturbed by what any future audit names its members.
+

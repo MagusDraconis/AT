@@ -111,7 +111,7 @@ public class Y_E_005_Tests : ResearchTestBase
         // the ring's loop structure: local field strength needs plaquettes
         Assert.Equal(481, RingIndependentLoops());
         Assert.Equal(1769473, CubeIndependentLoops());
-        Assert.Equal(27648, CubeElementaryPlaquettes());
+        Assert.Equal(2654208, CubeElementaryPlaquettes());   // corrected by E_007: 3L^3, not 3L^2
     }
 
     [Fact]

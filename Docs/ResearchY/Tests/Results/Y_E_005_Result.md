@@ -24,7 +24,7 @@ derivative that carries a **direction index** (a field-valued connection).
    symmetric **0** / 2 / 5. At one direction there is nowhere to put a field strength.
 2. **The substrate's derivative is one-directional.** `L = sum_r D_r^T D_r` holds exactly (residual
    **0.000E+000**), so first-order operators exist - but the direction rank is **1** (ring) against **3** needed
-   (cube). Loops: ring **481**, cube **1 769 473**, elementary plaquettes **27 648**.
+   (cube). Loops: ring **481**, cube **1 769 473**, elementary plaquettes **2 654 208**.
 3. **The built-in connection is exactly pure gauge.** Step 2*pi/96 = **0.065449847**; holonomy **6.283185** =
    2*pi = the identity; residue **0.000E+000**; gauge conjugation residual **2.45E-016**. Nothing to propagate.
 

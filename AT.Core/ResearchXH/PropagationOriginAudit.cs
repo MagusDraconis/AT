@@ -254,7 +254,12 @@ public static class PropagationOriginAudit
         return e - v + 1;
     }
 
-    public static long CubeElementaryPlaquettes() => 3L * N96 * N96;
+    /// <summary>
+    /// One elementary plaquette per site AND per orientation pair: 3L^3, not 3L^2. This audit first wrote 3L^2 while
+    /// its own cycle count already used the correct 3L^3 edges, so the two numbers disagreed by a factor of L;
+    /// ResearchY-E_007 caught it by recounting the cycles independently.
+    /// </summary>
+    public static long CubeElementaryPlaquettes() => 3L * N96 * N96 * N96;
 
     // ===================== 5. THE LADDER AND ITS ORDER =====================
 
