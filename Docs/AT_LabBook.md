@@ -4459,3 +4459,47 @@ recipe sector and the phase sector (3.3E-001, census 0) - both **new primitives*
 **It changes this.** E_015's flat measure invited this search; E_016 closes it for every quantity AT currently has and
 names the two doors a breaker would have to come through. The verdict has a live branch: a phase-reading quantity with
 a non-uniform local factor, or a non-zero recipe-phase census, would make the weighting DERIVED.
+
+---
+
+### ResearchY-G_046 - Rho Accessibility Audit (OBSERVABLE)
+
+**Question.** Can the hidden 47 dimensions of rho ever influence an observable? Given G_040 (95 = 48 + 47): clocks,
+acceleration, flux sectors, field strengths?
+
+**Verdict: OBSERVABLE** - a validated hidden step reaches three of the four; the first identification was withdrawn.
+
+**1. The withdrawn identification.** The first draft took the hidden directions to be the substrate-symmetry **orbit**
+(span measured at **84**, not **47**). A symmetry move is gauge because it **relabels**; the hidden set is the
+**kernel** of the contractions.
+
+**2. Symmetry moves are relabelling-only (the gauge control).**
+
+| observable | multiset change over the orbit | addressed change |
+|---|---|---|
+| clocks | **0.000E+000** | 1.719E-001 |
+| acceleration | **0.000E+000** | 1.603E-001 |
+| field strengths | **5.140E-016** | 5.823E-002 |
+| flux sectors | **0.000E+000** | (label reads the link phases) |
+
+**3. The decisive measurement - a validated hidden step** (sum-neutral, in the kernel):
+
+| measurement | value |
+|---|---|
+| contraction change | **5.116E-013** |
+| clock-rate multiset | **3.764E-003** |
+| acceleration multiset | **3.010E-003** |
+| field strength | **6.327E-004** |
+| flux sector | **0.000E+000** (census 0) |
+
+**Bug caught by the measurement:** a first version renormalised the perturbed state, moving it along observable
+directions too and making a "hidden" step change a contraction by **2.061**.
+
+**4. Targets.** clocks, acceleration, field strengths **OBSERVABLE**; flux sectors **HIDDEN**.
+
+**5. Against G_040.** The kernel measures **53** at the audited state against the ceiling of **47** (retained **43**
+against **48**): the 48 is a **ceiling over states**, a refinement not a contradiction.
+
+**Status:** COMPLETE. Tests `Y_G_046_Tests` **7/7**. Registry: added as **Derived** (`rho-accessibility-audit`) with a
+refinement note back to G_040. Core: `AT.Core/ResearchXH/RhoAccessibilityAudit.cs`; suite
+`AT.Tests/ResearchY/G_GravitySource/Y_G_046_Tests.cs`; doc `Docs/ResearchY/G_GravitySource/ResearchY-G_046.md`.

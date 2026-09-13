@@ -2902,6 +2902,38 @@ preferred sector. The verdict is computed with a **live branch in every directio
 No group-G registry claim, so claim counts are unchanged. Registry: added as **Boundary** (`sector-weight-audit`),
 reclassifying nothing. Tests: `Y_E_015_Tests` 7/7; group E **103/103**.
 
+## ResearchY-G_046 - Rho Accessibility Audit (COMPLETE, OBSERVABLE)
+
+**Question.** Can the hidden 47 dimensions of rho ever influence an observable? Given G_040 (95 = 48 retained + 47
+hidden) - do they affect clocks, acceleration, flux sectors, field strengths?
+
+**Answer: OBSERVABLE - and the first identification of the hidden directions was withdrawn.**
+
+- **The first answer was wrong and is recorded.** The draft identified the hidden directions with the substrate-symmetry
+  **orbit**; the measurement refused it - the span is **84 dimensions, not 47**. A symmetry move is gauge-like because it
+  **relabels**; the hidden set is the **kernel** of the contractions.
+- **Symmetry moves are relabelling-only (the gauge control):** multisets unchanged over the whole orbit (clocks
+  **0.000E+000**, acceleration **0.000E+000**, fields **5.140E-016**, flux **0.000E+000**) while the addressed reports
+  move (1.719E-001 / 1.603E-001 / 5.823E-002); controls hold (addressed pattern **4.937E-001**; phase moves the label
+  **1.000000**).
+- **The decisive measurement - a validated hidden step:** a **sum-neutral** kernel direction changes a contraction by
+  **5.116E-013** and still moves the **clock-rate multiset 3.764E-003**, **acceleration 3.010E-003**, **field strength
+  6.327E-004**, while the **flux sector stays 0.000E+000** (census **0**).
+- **A bug caught by the measurement:** a first version renormalised the perturbed state, moving it along *observable*
+  directions too and making a "hidden" step change a contraction by **2.061**; the sum-neutral projection makes the step
+  honest.
+- **Targets:** clocks, acceleration, field strengths **OBSERVABLE**; flux sectors **HIDDEN** - as the theory's own
+  decoupling requires.
+- **One number recorded against G_040:** the kernel measures **53** at the audited state against the **ceiling 47**
+  (retained **43** against **48**) - so G_040's 48 is a **ceiling over states**, a refinement rather than a
+  contradiction.
+
+**What this changes.** G_040 capped the non-addressed algebra at 48 and lost 47; G_046 shows the 47 are **not**
+permanent gauge - they reach the local laws. The flux sector's hidden status follows from E_013's decoupling.
+
+Registry: added as **Derived** (`rho-accessibility-audit`), with a refinement note back to G_040. Tests:
+`Y_G_046_Tests` 7/7.
+
 ## ResearchY-E_016 - Sector Population Principle Audit (COMPLETE, REFUTED)
 
 **Question.** Do any existing AT quantities break the flat sector measure of E_015? Candidates: occupancy free room,

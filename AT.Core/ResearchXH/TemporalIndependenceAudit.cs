@@ -427,6 +427,14 @@ public static class TemporalIndependenceAudit
             + "measure, the orbit order 2^d d! and a density-of-states exponent. NOT symbol-detectable: the "
             + "suite names no B, g_rr or GammaOf — its vocabulary is dimensions, spectra, boxes and clocks",
             ScanDetectsIt: false),
+        // ── G_046: can the hidden 47 dimensions of rho ever reach an observable? ──
+        new SectorClaim("Y_G_046", "Rho Accessibility", MetricRequirement.ClockOnly,
+            "it reads the clock law at every cell and asks whether a hidden direction can move the spectrum, so the "
+            + "metric content is the clock alone: the doublet and contraction counts, the symmetry orbit span, the "
+            + "multisets of rates, accelerations and field strengths, and the kernel of the contraction observables. "
+            + "NOT symbol-detectable: the suite names no B, g_rr or GammaOf — its vocabulary is orbits, kernels and "
+            + "clocks",
+            ScanDetectsIt: false),
     };
 
     // ── The computed classification summaries ───────────────────────────────

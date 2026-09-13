@@ -166,11 +166,40 @@ public static class AtlasDataService
         new("Y_G_043_Tests", 8, "PASS", "Gravity Source"),
         new("Y_G_044_Tests", 7, "PASS", "Gravity Source"),
         new("Y_G_045_Tests", 7, "PASS", "Gravity Source"),
+        new("Y_G_046_Tests", 7, "PASS", "Gravity Source"),
         ]),
     ];
 
     public static IReadOnlyList<ResearchNewsModel> ResearchNews { get; } =
     [
+        new(
+            "researchy-g046-rho-accessibility-audit",
+            "An Orbit Is Not a Kernel \u2014 Reaching the Hidden Half of rho",
+            "ResearchY Milestone \u00b7 G_046 (Rho Accessibility Audit; can the hidden dimensions reach an observable?)",
+            "An earlier entry in this group took the state of the substrate apart and produced a clean arithmetic fact: of the ninety-five dimensions the state has, forty-eight are recovered by the non-addressed measurements the theory permits and forty-seven are not, and those forty-seven are one angle per two-dimensional symmetry pattern. This entry asks the obvious follow-up in its sharpest form: can those forty-seven ever influence anything, or are they decoration? Its first answer was confident and wrong, and the failure is the most useful thing in it. The draft reasoned that the hidden directions must be the directions of the substrate's own symmetry - the textbook motion that changes nothing real - so a symmetry move and a hidden direction were taken to be the same object. Measuring instead of assuming, it found the span of the symmetry orbit is eighty-four dimensions, not forty-seven. The two are not the same, and the difference is the whole point: a symmetry move is invisible because it relabels which cell is which, while a hidden direction is invisible because no invariant measurement can tell it apart. The entry withdrew the identification and built the object it needed - a direction that changes no measurement in the contraction algebra, made sum-preserving so a step along it stays on the simplex. The step is real and exact. It changes every contraction at the level of floating-point noise, and it nevertheless moves the spectrum of clock rates, the spectrum of accelerations and the field strengths built from the organisation. Three of the four targets are reached by the hidden directions. The fourth is not: the flux sector label is carried by the phase on links rather than by the organisation, and not one member of the theory couples the two, so the flux sector is hidden in a stronger sense - disconnected rather than merely unmeasured. The entry also records a number that cuts against the result it depends on: the directions it builds measure fifty-three dimensions at the state it audits, not forty-seven, and the retained side measures forty-three rather than forty-eight. The earlier entry's forty-eight is a ceiling taken over states, not a value any particular state attains, and reporting both side by side is the honest thing to do. One bug is worth recording because the measurement caught it: a first version of the hidden step renormalised the state after moving it, which silently moved it along observable directions as well, and the step appeared to change a contraction by more than two - removing the renormalisation and projecting the direction to preserve the sum is what made the step honest. The verdict is that the hidden dimensions are not permanent gauge: they reach three of the four laws tested, and the one they do not reach is the one the theory's own decoupling says they should not.",
+            "RHO ACCESSIBILITY AUDIT. Question: can the hidden 47 dimensions of rho ever influence an observable? Given G_040 (95 = 48 retained + 47 hidden): do they affect clocks, acceleration, flux sectors, field strengths? ANSWER: OBSERVABLE - and the first identification of the hidden directions was WITHDRAWN. "
+            + "THE FIRST ANSWER WAS WRONG AND IS RECORDED: the draft identified the hidden directions with the substrate-symmetry ORBIT, and the measurement refused it - the orbit span is 84 dimensions, not 47. A symmetry move is gauge because it RELABELS; the hidden set is the KERNEL of the contractions. "
+            + "SYMMETRY MOVES ARE RELABELLING-ONLY (the gauge control): multisets unchanged over the whole orbit - clocks 0.000E+000, acceleration 0.000E+000, fields 5.140E-016, flux 0.000E+000 - while the addressed reports move (1.719E-001, 1.603E-001, 5.823E-002); controls hold (addressed pattern 4.937E-001; the phase moves the flux label by 1.000000). "
+            + "THE DECISIVE MEASUREMENT IS A VALIDATED HIDDEN STEP: a SUM-NEUTRAL direction in the kernel changes a contraction by 5.116E-013 and still moves the clock-rate multiset by 3.764E-003, the acceleration multiset by 3.010E-003 and the field strength by 6.327E-004, while the flux sector stays at 0.000E+000 with 0 members coupling the two sectors. "
+            + "A BUG WAS CAUGHT BY THE MEASUREMENT: a first version renormalised the perturbed state, moving it along observable directions too and making a hidden step change a contraction by 2.061; the sum-neutral projection makes the step honest. "
+            + "THE TARGETS: clocks, acceleration and field strengths OBSERVABLE; flux sectors HIDDEN. "
+            + "ONE NUMBER AGAINST G_040, RECORDED NOT SMOOTHED: the kernel measures 53 dimensions at the audited state against the ceiling of 47, retaining 43 against 48 - so 48 is a CEILING OVER STATES, a refinement rather than a contradiction. "
+            + "OUTPUT: OBSERVABLE. Core: AT.Core/ResearchXH/RhoAccessibilityAudit.cs. 7/7 PASSED.",
+            "An orbit is not a kernel \u2014 and the measurement that refused the obvious answer.",
+            "The hidden directions move the clock, acceleration and field-strength spectra while changing no contraction; only the flux sector stays untouched, because its label is carried by the link phases.",
+            "The hidden half of rho is not permanent gauge: the ceiling is the price of not addressing cells, and the local laws do address them.",
+            false,
+            [
+                new("ResearchY-G_046", "RHO ACCESSIBILITY",
+                    "The withdrawn orbit identification, the gauge control, the validated hidden step, the split result and the kernel-versus-ceiling note.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/G_GravitySource/ResearchY-G_046.md"),
+                new("ResearchY-G_040", "INPUT",
+                    "The 95/48/47 split and the contraction ceiling this audit starts from and refines.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/G_GravitySource/ResearchY-G_040.md"),
+                new("ResearchY-E_013", "INPUT",
+                    "Zero members couple the spectral sector to the link sector - why the flux sector stays hidden.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/E_Electromagnetism/ResearchY-E_013.md"),
+            ]),
         new(
             "researchy-e016-sector-population-principle-audit",
             "A Null Result Worth Having \u2014 Testing the Detector Before Trusting Its Silence",

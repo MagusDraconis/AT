@@ -61,7 +61,7 @@ public class Y_G_033_Tests : ResearchTestBase
         // them: it asks whether d = 3 is selected, which means computing the D96^d family.
         Assert.Equal(16, without.Length);
         Assert.Equal(27, withSubstrate.Length);
-        Assert.Equal(1, commentOnly.Length);                 // G_001 names D96 only in comments
+        Assert.Equal(2, commentOnly.Length);                 // G_001 names D96 only in comments; G_046 uses it indirectly, through G_040
 
         // The metric / closure era is the D96-FREE one. Spot-check its members by name.
         var bare = without.Select(u => u.Audit).ToHashSet(StringComparer.Ordinal);
