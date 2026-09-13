@@ -147,6 +147,7 @@ public static class AtlasDataService
         new("Y_E_004_Tests", 6, "PASS", "Electromagnetism"),
         new("Y_G_037_Tests", 7, "PASS", "Gravity Source"),
         new("Y_G_038_Tests", 7, "PASS", "Gravity Source"),
+        new("Y_G_039_Tests", 7, "PASS", "Gravity Source"),
         ]),
     ];
 

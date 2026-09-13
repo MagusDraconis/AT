@@ -2319,6 +2319,58 @@ polarisations, gauge redundancy, massless propagation, Maxwell limit. Compare si
 
 Tests: `Y_E_004_Tests` 6/6. Group E: **26/26**.
 
+## ResearchY-G_039 - Rho Realization Audit (COMPLETE, BOUNDARY)
+
+**FOUR OF FIVE REQUIREMENTS MET BY COMPUTATION, ONE CARRIER IDENTIFIED, AND THE FILTER REDUCES TO ONE BINDING
+CONSTRAINT.** *(Requested as G_036, which is already taken by the Temporal Core Test Audit delivered earlier in
+this session; the group-G ID space is permanent and is keyed by the index and the classification registry, so the
+next free number was used.)* What observable can carry rho while remaining compatible with G_016, G_016b, G_017,
+G_018 and G_035? Candidates: occupancy distributions, state populations, degeneracy occupation, attractor
+occupation, survivor distributions. Requirements: measurable, not energy, not phase, not information, preserves
+the clock law.
+
+- **THE SPECTRUM IS RECOMPUTED, NOT CITED - AND ALL FOUR FIGURES REPRODUCE THE RECORD.** 96 cells; **45** distinct
+  levels (A0, matching G_016); multiplicity histogram **{1:1, 2:42, 5:1, 6:1}** (exact match); free room
+  **51 = 96 - 45** (G_016/G_018); state dimension **95**; Laplacian trace **1152 = 2 x 576 links**. The audit
+  therefore stands on recomputed ground rather than on citations.
+- **REQUIREMENTS 2-4 FALL OUT OF A SINGLE OBSERVATION.** Energy is the pairing `E = <lambda, rho>`, ONE number on
+  a **95**-dimensional space, so its kernel has dimension **94** - and the audit shows the split is exact:
+  **51 (within-multiplet, where lambda is CONSTANT so the energy cannot move) + 43 (level mixing, 45 levels less
+  normalisation and energy) = 94**. The same argument applies one level up: the entropy is ALSO one number on the
+  same space, so it is lossy by the same **94** dimensions. **Energy and information cannot carry rho.**
+- **THE COMPUTED WITNESS** (on the unique m = 6 multiplet, lambda = -2): a 20:1 tilt gives **energy change
+  0.000e0 EXACTLY** and **rho change L1 = 1.2666666667**, while shifting the clock by **0.9985774245 =
+  86 277.089 s/day**. A 20:1 tilt moves NO energy and nearly a full day per day of clock.
+- **THE INFORMATION WITNESS IS CONSTRUCTED, NOT ASSERTED** (bisection): two DIFFERENT occupancy vectors,
+  (0.5000000000, 0.5000000000) and (0.7729078048, 0.1135460976, 0.1135460976), share **H = ln 2 = 0.6931471806**
+  exactly and separate by **0.7729** in L1. The entropy is a FUNCTION of rho but NOT injective.
+- **PHASE IS SEPARATED SECTORIALLY, NOT NUMERICALLY.** rho counts **SITES** while the phase lives on **LINKS**
+  (E_003): a phase rotation leaves the counts invariant (**rho change 0.0e0**) while moving the holonomy by
+  **0.065450**. The clock law is reproduced to G_016b's own figure.
+- **THE CANDIDATES ARE DECIDED BY LOSS, NOT BY MEASURABILITY.** Zero-loss: **occupancy distributions**,
+  **attractor occupation**, **survivor distributions** - and these are **ONE object read at three stages**, since
+  the dynamics selects one attractor from all initial conditions (G_005/G_008). Refuted as the identity:
+  **state populations** and **degeneracy occupation**, because averaging over a multiplet discards the
+  **51-dimensional within-multiplet room** - which is the FREE ROOM, and the only part an actuator can actually
+  move (G_002/G_012/G_013).
+- **THE ONE UNMET REQUIREMENT IS MEASURABILITY, AND THAT IS THE WHOLE POINT OF ASKING SEPARATELY.** G_018 could
+  conclude DERIVED for the **IDENTITY** of rho, because for that question G_017 removed an **identification**
+  rather than the **quantity**. A **REALIZATION** asks for an **observable**, and the natural laboratory
+  realization - reading rho off an optical intensity - is exactly what **G_017 EXCLUDED**. What remains is the
+  clock signature, priced by G_004/G_009 as real but orders of magnitude below local sensitivity. **The identity
+  is DERIVED (G_018); the realization is BOUNDARY.**
+- **THREE OF THE AUDIT'S OWN SLIPS WERE CAUGHT BY ITS OWN TESTS AND RECORDED RATHER THAN ABSORBED:** the
+  link-count arithmetic in the report (288 for 576), an equality at the 9th decimal sitting exactly on the
+  rounding boundary, and a truncated `(int)` cast of a floating-point trace.
+- **A FOURTH WAS CAUGHT BY ANOTHER AUDIT — G_033'S LIVE SCANNER.** The constants were named `Cells`/`Radius`, so
+  the D96 scanner filed this audit with the **D96-free** (metric / closure) era even though it recomputes the D96
+  ring spectrum. Renamed to **`D96Cells`**; G_033's counts move to **21 substrate / 16 D96-free / 1 comment-only**
+  (38 classified suites) and `Y_G_033_Tests` was updated with them.
+
+Registry: added as **ClockOnly -> SURVIVES** (rho, the source law and the clock law are all g00 statements),
+triaged `ScanDetectsIt: false`; counts become **26/11/3 of 40**; boundary index unchanged; no prior
+classification changed. Tests: `Y_G_039_Tests` 7/7. Group G: **304/304**.
+
 ## Build Dependency — ImageSharp replaced by SkiaSharp (2026-09-13, architectural)
 
 **RELEASE BUILDS WERE IMPOSSIBLE AND NOTHING SAID SO.** `SixLabors.ImageSharp` 4.1.0's build targets run a licence

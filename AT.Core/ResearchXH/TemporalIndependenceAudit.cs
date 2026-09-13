@@ -366,6 +366,14 @@ public static class TemporalIndependenceAudit
             + "statement about the spatial block. NOT symbol-detectable: the suite's metric vocabulary is a "
             + "coefficient plus the NEGATIVE conformal test (B = A ⟹ n = 1), not B/g_rr/GammaOf symbols",
             ScanDetectsIt: false),
+
+        // ── G_039: the rho realization — which observable carries rho, and why measurability binds ──
+        new SectorClaim("Y_G_039", "Rho Realization", MetricRequirement.ClockOnly,
+            "it identifies the observable that carries rho (the occupancy of the reachable set) and tests it "
+            + "against energy, phase, information and the clock law dtau/dt = rho^(1/d) — every statement is about "
+            + "rho and g00. NOT symbol-detectable: the suite's vocabulary is rho, energy, entropy and phase, not "
+            + "B/g_rr/GammaOf",
+            ScanDetectsIt: false),
     };
 
     // ── The computed classification summaries ───────────────────────────────

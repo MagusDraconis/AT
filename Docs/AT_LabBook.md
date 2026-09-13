@@ -3368,6 +3368,42 @@ phase (E_003 found AT has one), not the group, not the vector representation. **
 at the level of REPRESENTATION, and insufficient at the level of DYNAMICS.** Verdict computed from nine checks.
 Suite 6/6. Group E 26/26.
 
+### ResearchY-G_039 - Rho Realization Audit (BOUNDARY)
+
+What observable can carry ρ while remaining compatible with G_016, G_016b, G_017, G_018 and G_035?
+**FOUR OF FIVE REQUIREMENTS MET BY COMPUTATION, ONE CARRIER IDENTIFIED, AND THE FILTER REDUCES TO ONE BINDING
+CONSTRAINT.** *(Requested as G_036; that ID is taken by the Temporal Core Test Audit, so the next free group-G
+number was used.)*
+
+**The spectrum is recomputed, not cited** — and **all four figures reproduce the record**: **45** distinct levels
+(A₀, matching G_016), multiplicity histogram **{1:1, 2:42, 5:1, 6:1}**, free room **51 = 96 − 45**, state
+dimension **95**, Laplacian trace **1152 = 2 × 576 links**. On that recomputed ground:
+
+**Requirements 2–4 fall out of ONE observation.** Energy is `E = ⟨λ,ρ⟩`, **one number on a 95-dimensional space**,
+so its kernel has dimension **94** — and the split is exact: **51 (within-multiplet, λ constant) + 43 (level
+mixing, 45 − 2) = 94**. The entropy is *also* one number on the same space, lossy by the same **94**. The computed
+witness on the unique m = 6 multiplet (λ = −2) moves **no energy at all (0.000e0)** while shifting the clock by
+**86 277.089 s/day**; and two *different* occupancy vectors — (0.5, 0.5) and (0.7729078048, 0.1135460976,
+0.1135460976) — share **H = ln 2** exactly, separating by **0.7729** in L1. **Phase** is separated sectorially:
+ρ counts **sites**, the phase lives on **links** (E_003), so a phase rotation leaves ρ unchanged (**0.0e0**) while
+moving the holonomy by **0.065450**. The **clock law** reproduces G_016b's own figure.
+
+**The candidates are decided by LOSS.** Zero-loss: **occupancy distributions**, **attractor occupation**,
+**survivor distributions** — and these are **ONE object read at three stages**, since the dynamics selects one
+attractor from all initial conditions. Refuted as the identity: **state populations** and **degeneracy
+occupation**, which each discard the **51-dimensional within-multiplet room** — the free room, and the only part
+an actuator can move.
+
+**The unmet requirement is measurability, and that is why asking this question separately was worth it.** G_018
+could conclude DERIVED for the **identity** of ρ, because for that question G_017 removed an *identification*
+rather than the *quantity*. A **realization** asks for an *observable*, and the natural laboratory realization is
+exactly what **G_017 excluded**; what remains is the clock signature, priced by G_004/G_009 as real but far below
+local sensitivity. **Identity DERIVED; realization BOUNDARY.**
+
+Registry: **ClockOnly → SURVIVES**, `ScanDetectsIt: false`; counts **26/11/3 of 40**. Three of the audit's own
+slips were caught by its own tests (the link-count arithmetic, a 9th-decimal equality on the rounding boundary, a
+truncated `(int)` cast). Verdict computed from seven checks. Suite 7/7. Group G 304/304.
+
 ### ResearchY-G_037 - Refractive Lens Audit (REFUTED)
 
 Can light bend WITHOUT space bending, via an effective refractive index (the TRM-era idea,
