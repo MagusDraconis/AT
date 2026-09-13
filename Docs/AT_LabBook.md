@@ -3744,3 +3744,76 @@ built from rho, which sources the metric INCLUDING that sector — so it IS a me
     consistent with the EW global fit)
 17. Experimental validation of the 106 GeV resonance (QG132) — unobserved
 18. Collider test of sector-ladder physics (QG130) — no data yet
+
+
+### ResearchY-G_045 - Observed vs Hidden Dimension Audit (REFUTED)
+
+**Question.** Can the apparent 3D world emerge as a **projection** of a higher-dimensional **actualization
+space**? Compared the **3D host space** against the **N-dimensional state space**; measured **observable
+dimension**, **spectral dimension**, **information dimension**, **attractor dimension**.
+
+**Answer: REFUTED** - the two "dimensions" are different indices, and the one that could hide is measured exactly.
+
+#### The ground, recomputed rather than cited
+
+| d | 96^d modes | distinct levels A0 | reachable room 96^d - A0 | state space |
+|---|---|---|---|---|
+| 1 | 96 | **45** | **51** | 95 |
+| 2 | 9 216 | 1 032 | 8 184 | 9 215 |
+| 3 | 884 736 | **16 080** | **868 656** | 884 735 |
+
+`A0(1) = 45` and the room `51` are **G_039's** numbers; `A0(3) = 16 080` is **G_033's** robust level count -
+which fixes the reachable room at `d = 3` to **868 656**, the figure project memory quotes. Three cross-audit
+checks, all reproduced rather than assumed.
+
+#### The four measured dimensions
+
+| family | d = 1 | d = 2 | d = 3 | verdict |
+|---|---|---|---|---|
+| observable (families) | 48 | 1 224 | 20 824 | resolvable, not hidden |
+| spectral (density of states) | 1.261 | 2.283 | 2.986 | **UNRELIABLE** (biased; truth 1, 2, 3) |
+| spectral (the gap) | 0.3863509 | 0.3863509 | 0.3863509 | **cannot reveal d** |
+| information (box counting) | 1.000 | 2.000 | 3.000 | **exactly d** |
+| attractor / reachable | 51 | 8 184 | 868 656 | the configuration space |
+| symmetry group order 2^d*d! | 2 | 8 | 48 | **exactly d** |
+
+#### Two exact probes
+
+- **Information dimension = the factor count, exactly.** Box counting by **walking every lattice site**:
+  2/4/8/16 occupied boxes at 2/4/8/16 boxes per axis, so `ln N / ln n` = 1.000, 2.000, 3.000.
+- **Symmetry group = the factor count, exactly.** `|B_d| = 2^d d!` -> 2, 8, 48; the order 48 occurs at exactly
+  one dimension (as does 8).
+
+#### Two failed probes, recorded as failures
+
+- **The gap is dimension-independent:** `0.3863508934` at every `d`, because a **single tensor factor may be
+  excited while the others stay at zero**. A gap cannot count directions.
+- **The density-of-states estimator is biased:** fitted over the lowest 6/10/20/40 levels it returns
+  1.279/1.261/1.428/1.808 for d = 1, 2.614/2.283/2.395/2.243 for d = 2 and n/a/2.986/3.723/3.107 for d = 3 -
+  up to **80 % off** the true 1, 2, 3, in **both** directions.
+- **And it divides by zero** on a legitimate window: the lowest six levels of the d = 3 torus are not distinct
+  enough to fit a slope (`sxx*k - sx^2 = 0`). The first implementation printed **Infinity** into the report; it is
+  now a recorded degenerate window (`EstimatorIsDegenerate`, printed `n/a`). *A probe that returns Infinity for a
+  legitimate window is not a probe.*
+
+#### Verdict: a specific refutation
+
+1. The apparent **three IS the tensor-factor count**, named exactly twice (information dimension, symmetry group).
+2. The higher-dimensional object carries a **different index**: the reachable room counts **configurations over**
+   the substrate, not **directions of** it.
+3. A hidden direction **could not hide** - it would have to evade two exact probes; the only probe that cannot
+   resolve the factor count is the spectral one, which certifies nothing here.
+4. So the projection reading **fails as an explanation of the apparent 3**: AT's higher-dimensionality is real,
+   growing (51 -> 8 184 -> 868 656) and largely observable - and it is **not** what the world's three dimensions
+   are.
+
+#### What this changes elsewhere
+
+- G_039's room is reproduced from a second route (the torus spectrum) rather than assumed; G_033's 16 080 is
+  reproduced exactly.
+- A methodological rule is strengthened: a dimension estimate is evidence only **inside its own regime**
+  (copilot-instructions rule 9) - the density-of-states route is regime-limited on a finite substrate, and the
+  audit says so instead of quoting the estimate.
+
+**Status:** COMPLETE. Tests `Y_G_045_Tests` **7/7**. Registry `ClockOnly -> SURVIVES` (counts 32/11/3 of 46).
+No reclassification of any prior audit.

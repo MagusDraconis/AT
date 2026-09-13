@@ -2574,6 +2574,40 @@ observability fraction, states per observable.
 Registry: added as **ClockOnly -> SURVIVES**, `ScanDetectsIt: false`; counts become **31/11/3 of 45**. No
 reclassification; G_041/G_042/G_043/G_033 are unchanged inputs. G_033's live classifier now reads **26**
 substrate suites (43 classified in total). Tests: `Y_G_044_Tests` 7/7; group G 343/343.
+## ResearchY-G_045 - Observed vs Hidden Dimension Audit (COMPLETE, REFUTED)
+
+**Question.** Can the apparent 3D world emerge as a PROJECTION of a higher-dimensional ACTUALIZATION SPACE?
+Compared the 3D host space against the N-dimensional state space; measured observable dimension, spectral
+dimension, information dimension, attractor dimension.
+
+**Answer: REFUTED - the two "dimensions" are different INDICES, and the one that could hide is measured exactly.**
+
+- **THE GROUND IS RECOMPUTED, NOT CITED.** Rebuilding the whole d-torus spectrum (96 cells, radius-6 Laplacian,
+  tensor powers) reproduces THREE NUMBERS FROM THREE OTHER AUDITS: the ring's **45** distinct levels and the
+  reachable room **51** (G_039), and the cube's **16 080** distinct levels (G_033) - which fixes the reachable room
+  at d = 3 to **868 656**, the figure project memory quotes. Rooms: 51 -> 8 184 -> 868 656.
+- **TWO EXACT PROBES NAME d UNAMBIGUOUSLY.** (1) **THE INFORMATION DIMENSION IS EXACTLY THE FACTOR COUNT** - box
+  counting by walking every lattice site gives 2/4/8/16 occupied boxes at 2/4/8/16 boxes per axis, so
+  ln N / ln n = **1.000, 2.000, 3.000** exactly. (2) **THE SYMMETRY GROUP IS EXACT TOO** - order 2^d*d! =
+  **2, 8, 48**, and the order 48 occurs at exactly one dimension. A hidden fourth direction would evade neither.
+- **THE SPECTRAL PROBES FAIL, AND THE AUDIT RECORDS ITS OWN FAILURE.** The gap is **DIMENSION-INDEPENDENT** -
+  0.3863508934 at every d, because a single tensor factor may be excited while the others stay at zero, so a gap
+  cannot count directions; and the density-of-states estimate N(mu) ~ mu^(d_s/2) is **BIASED BY UP TO 80 %** -
+  1.26-1.81 (d = 1), 2.28-2.61 (d = 2), 2.99-3.72 (d = 3) against the true 1, 2, 3, wrong in BOTH directions with
+  the window - and it **DIVIDES BY ZERO** on a legitimate window (the lowest six levels of the d = 3 torus are not
+  distinct enough). The first implementation printed **Infinity**; that is now recorded as a degenerate window.
+  So the spectral dimension is NOT usable evidence on a finite substrate (copilot-instructions rule 9).
+- **THE OBSERVABLE DIMENSION IS NEITHER 3 NOR THE STATE SPACE:** families C(48 + d, d) - 1 = **48, 1 224,
+  20 824** - the extra dimensions are largely RESOLVABLE in principle, not hidden behind a 3D window.
+- **VERDICT - A SPECIFIC REFUTATION, NOT A GENERAL DISCOMFORT.** The apparent three IS the tensor-factor count
+  (named exactly twice); the higher-dimensional actualization space is the space of **CONFIGURATIONS OVER** that
+  substrate - a different index, not the same quantity at two sizes; and the only probe that genuinely cannot
+  resolve the factor count is the spectral one, which is precisely the probe that certifies nothing here.
+- **OPEN:** unchanged - G_043's mechanism question (why the working set begins at 3).
+
+Registry: added as **ClockOnly -> SURVIVES**, `ScanDetectsIt: false`; counts become **32/11/3 of 46**. No
+reclassification. G_033's live classifier now reads **27** substrate suites (44 classified in total).
+Tests: `Y_G_045_Tests` 7/7; group G 350/350.
 ## Build Dependency — ImageSharp replaced by SkiaSharp (2026-09-13, architectural)
 
 **RELEASE BUILDS WERE IMPOSSIBLE AND NOTHING SAID SO.** `SixLabors.ImageSharp` 4.1.0's build targets run a licence

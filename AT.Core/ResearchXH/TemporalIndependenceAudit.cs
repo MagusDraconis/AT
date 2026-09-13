@@ -418,6 +418,15 @@ public static class TemporalIndependenceAudit
             + "orbital count C(48+d, d), and the observability measures built from them. NOT symbol-detectable: "
             + "the suite names no B, g_rr or GammaOf — its vocabulary is dimensions, sectors, orbitals and costs",
             ScanDetectsIt: false),
+
+        // ── G_045: is the apparent 3 a projection of a bigger actualization space? ──
+        new SectorClaim("Y_G_045", "Observed vs Hidden Dimension", MetricRequirement.ClockOnly,
+            "it asks whether the apparent 3D world is a projection of a higher-dimensional actualization space, "
+            + "and every statement is a spectrum or a count: the d-torus eigenvalues, the distinct-level count "
+            + "A0, the reachable room 96^d - A0, the orbital count C(48+d, d) - 1, box counts of the uniform "
+            + "measure, the orbit order 2^d d! and a density-of-states exponent. NOT symbol-detectable: the "
+            + "suite names no B, g_rr or GammaOf — its vocabulary is dimensions, spectra, boxes and clocks",
+            ScanDetectsIt: false),
     };
 
     // ── The computed classification summaries ───────────────────────────────
