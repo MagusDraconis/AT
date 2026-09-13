@@ -3297,6 +3297,44 @@ performed the variation, so AT never earned what it wrote down. Three of the aud
 own tests (the 1e-6 → 1e-2 brute-force step; a non-periodic control; a Euclidean dispersion check) and are
 recorded rather than silently fixed. Verdict computed (G_027). Suite 6/6. Group E 13/13.
 
+### ResearchY-E_003 - Photon Ontology Audit (BOUNDARY)
+
+What would the photon BE in AT? Trace Difference → Actualization → Spectrum → ? and test massless, spin-1, gauge
+invariance, Maxwell limit, propagation. **AT NEED NOT IMPORT U(1) AS AN AXIOM — AND IT CANNOT SUPPLY THE PHOTON
+WITHOUT THE CUBIC SUBSTRATE. THE PHOTON AND THE GRAVITON ARE BLOCKED BY THE SAME MISSING SUBSTRATE.**
+
+The obstruction is representation-theoretic and decisive. The photon is spin-1, hence `l = 1`, hence **three
+dimensions** — and the single ring's group D_96 is the **dihedral group of order 192** (verified on the
+permutations: rotation order 96, reflection order 2, `s r s⁻¹ = r⁻¹`, generated order 192), whose irreps are
+**4 one-dimensional + 47 two-dimensional** with **4·1 + 47·4 = 192 = the group order** (checked for every even n
+from 4 to 200). **Maximum irrep dimension 2, so the vector sector is IMPOSSIBLE on the ring.** The ring spectrum
+pairs `k` with `96−k` — the 47 doublets — and is scalar: **45** distinct eigenvalues. AT's own audits already
+contain both halves: **M_011** found no vector sector on a ring, **M_012** found a genuine dimension-3 sector
+`T1(3)` with `⟨χ,χ⟩ = 1` on the cubic network `C96 □ C96 □ C96`. **And the graviton's traceless part is
+`l = 2 → E(2) + T2(3)`, needing a dimension-3 irrep for the same reason** — so the two are blocked by the same
+thing, and G_033 established that the requirement was **absorbed into the assumed primitive η** (G_032).
+**The photon inherits exactly gravity's gap.**
+
+**U(1) itself needs no axiom:** it is `Z_96` = the rotation subgroup of `Aut(C96(1..6))`, and because `Z_96` is
+finite the emergent U(1) is **COMPACT** — the property that lets a compact U(1) with a conserved current carry a
+massless vector without a Goldstone. But the symmetry is **GLOBAL**: the rigid rotation is an adjacency
+automorphism while **0 of 6** site-dependent transpositions are. **A programme claim is falsified:** "the 12
+link-directions ARE the 12 gauge generators" — the offsets are not closed under addition (witness `1 + 95 = 0`),
+their additive closure is **96 not 12**, and the algebra is **abelian** against an **11-dimensional non-abelian**
+gauge algebra. **But the su(2)-from-doublets claim PASSES**, with Lie closure dimension **3**.
+
+**A correction that matters: AT ALREADY HAS A LINK PHASE.** `PhaseOrigin` assigns `2π/96` per ring link, with a
+path phase over a full cycle of exactly `2π`, a **compact** loop holonomy, a two-slit law `2 + 2cos δ` (4.000 at
+δ = 0, 0.000 at π) and a phased Born rule. So the missing primitive is **not the phase** but the **spacetime
+index** and the **dynamics**. AT's Laplacian `μ_k = 2k − λ_k` has **exactly one zero eigenvalue** — the constant
+mode, **spin 0** — with gap **0.386351**; its computed massless waves are **both scalars**, and the spin-2
+`□ψ_μν = 0` is **POSTULATED** (`Derived() = false`), which corrects E_001/E_002. **Spin-1 is absent**, and the
+polarisation count pins the gap: scalar phase → **1**, `∇ρ` → **1**, gauge-reduced **A_μ → 2**, Proca → 3.
+
+**Three self-corrections, all caught by the audit's own tests:** a site-dependent family that degenerated to the
+rigid rotation; a **one-sided** degeneracy bound (49 upper, 45 measured); and the link phase that reconnaissance
+found AT already has. Verdict computed from ten checks. Suite 7/7. Group E 20/20.
+
 ### ResearchY-G_037 - Refractive Lens Audit (REFUTED)
 
 Can light bend WITHOUT space bending, via an effective refractive index (the TRM-era idea,

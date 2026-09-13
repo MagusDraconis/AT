@@ -2167,7 +2167,7 @@ inventory of charge, current, gauge symmetry, Maxwell equations, vector potentia
   a Fick/drift form), stated ONLY in prose, with no gauge index and no coupling to A_μ. A candidate PRECURSOR of the
   electromagnetic current, not that current.
 
-Tests: `Y_E_001_Tests` 7/7. Group E: **13/13**.
+Tests: `Y_E_001_Tests` 7/7. Group E: **20/20**.
 
 ## ResearchY-E_002 - Field Equation Derivation Audit (COMPLETE, BOUNDARY)
 
@@ -2225,7 +2225,64 @@ premises the derivation needs are not AT's.**
   `SelfFiles`, reason recorded in the code). **General rule: an audit that DERIVES a standard result will
   otherwise be read as evidence that the theory CONTAINS it.**
 
-Tests: `Y_E_002_Tests` 6/6. Group E: **13/13**.
+Tests: `Y_E_002_Tests` 6/6. Group E: **20/20**.
+
+## ResearchY-E_003 - Photon Ontology Audit (COMPLETE, BOUNDARY)
+
+**AT NEED NOT IMPORT U(1) AS AN AXIOM - AND IT CANNOT SUPPLY THE PHOTON WITHOUT THE CUBIC SUBSTRATE. THE PHOTON
+AND THE GRAVITON ARE BLOCKED BY THE SAME MISSING SUBSTRATE.** What would the photon be in AT? Trace
+Difference -> Actualization -> Spectrum -> ? and test massless / spin-1 / gauge invariance / Maxwell limit /
+propagation.
+
+- **THE OBSTRUCTION IS REPRESENTATION-THEORETIC AND IT IS DECISIVE.** The photon is spin-1, hence the `l = 1`
+  (vector / p-wave) sector, hence **THREE dimensions**. The single ring's group D_96 is the **dihedral group of
+  order 192** - verified ON THE PERMUTATIONS: rotation order 96, reflection order 2, `s r s^-1 = r^-1`, generated
+  order 192 - and its irreps are **4 one-dimensional + 47 two-dimensional** with **4*1 + 47*4 = 192 = the group
+  order** (checked for every even n from 4 to 200). **Maximum irrep dimension 2, so the vector sector is
+  IMPOSSIBLE on the ring.** The ring's adjacency spectrum pairs `k` with `96-k` (the 47 doublets) and is purely
+  scalar: **45 distinct eigenvalues**.
+- **AT'S OWN AUDITS ALREADY CONTAIN BOTH HALVES.** M_011 found no O(3) and no vector sector on a single ring;
+  M_012 found a genuine dimension-3 irreducible sector on the CUBIC network `C96 □ C96 □ C96` - `l = 1 -> T1(3)`
+  with `(chi, chi) = 1` - with group O_h. **And the graviton's traceless part is `l = 2 -> E(2) + T2(3)`, so it
+  needs a dimension-3 irrep for the same reason. The photon and the graviton are blocked by the SAME thing.**
+  G_033 established what became of that requirement: the metric era **never instantiates 96^3**, because it
+  imports 3D space through the primitive **eta**, which G_032 proved is an **assumed input**. **The photon
+  therefore inherits exactly gravity's gap.**
+- **U(1) IS DERIVED AND COMPACT - BUT GLOBAL.** U(1) = `Z_96` = the rotation subgroup of `Aut(C96(1..6))`: no
+  axiom needed, and because `Z_96` is FINITE the emergent U(1) is **COMPACT** - the property that lets a compact
+  U(1) with a conserved current carry a massless vector without a Goldstone boson. But the symmetry is **RIGID**:
+  the rotation IS an adjacency automorphism while **0 of 6** site-local transpositions are.
+- **A PROGRAMME CLAIM FALSIFIED: "the 12 link-directions ARE the 12 gauge generators" (QG161, matching 1+3+8).**
+  The offsets `{+-1..+-6}` are **NOT closed under addition** (witness `1 + 95 = 0`, outside the set), their
+  additive closure inside Z_96 is **96 not 12**, and the algebra is **abelian** - against `u(1)+su(2)+su(3)`,
+  which is **11-dimensional NON-abelian**. Cardinality match, no algebraic map. **BUT the su(2)-from-doublets
+  claim PASSES**: the Lie closure of the doublet generators has dimension **3** (genuine su(2)), so the weak
+  sector has a real basis while "12 = 12" does not.
+- **A CORRECTION TO A FIRST READING, AND IT MATTERS: AT ALREADY HAS A LINK PHASE.** `PhaseOrigin` assigns
+  `2*pi/96` per ring link, with a path phase over a full cycle of exactly `2*pi`, a **compact** loop holonomy,
+  a two-slit law `2 + 2 cos(delta)` (4.000 at delta = 0, 0.000 at pi) and a phased Born rule. So the missing
+  primitive is **NOT the phase** - it is the **SPACETIME INDEX** (these are 1-D ring links, not 4-D) and the
+  **DYNAMICS** (the step is the fixed constant `2*pi/N`, not a fluctuating field).
+- **AT'S MASSLESS CONTENT, AND ITS SPIN.** The substrate's Laplacian `mu_k = 2k - lambda_k` has **EXACTLY ONE
+  zero eigenvalue** - the constant mode, **spin 0** - with gap **0.386351**. The computed massless waves are
+  **both scalars** (the zero mode and the `TemporalField` scalar wave equation); the spin-2 `Box psi_mu_nu = 0`
+  is **POSTULATED** (`Derived() = false`, `Postulated() = true`); **spin-1 is ABSENT**. This corrects E_001/E_002,
+  which described the spin-2 as AT's computable massless wave equation.
+- **THE POLARISATION COUNT PINS THE GAP.** A massless spin-1 has exactly TWO transverse polarisations. A scalar
+  phase gives **1** (longitudinal); `grad(rho)` gives **1**; a gauge-reduced `A_mu` gives **2**; Proca gives 3.
+  **So the cheap AT-native routes are excluded by counting, and the missing primitive is pinned to a
+  spacetime-indexed connection.**
+- **THREE SELF-CORRECTIONS, ALL CAUGHT BY THE AUDIT'S OWN TESTS AND RECORDED RATHER THAN ABSORBED:** (i) the
+  site-dependent test family `p[i] = i + 1 + (a*i) mod 5` degenerates to the RIGID rotation at a = 5, reporting
+  one phase that "worked"; (ii) the spectral-degeneracy bound is ONE-SIDED - `k <-> 96-k` makes 49 an UPPER bound
+  and the measured count is 45; (iii) AT **does** already have a link phase, found by reconnaissance.
+- **THE NATIVE ROUTE, IF TAKEN:** (i) instantiate the cubic `C96 □ C96 □ C96` instead of importing 3D space as
+  eta - the SAME step gravity needs; (ii) promote the rigid rotation to a local one (an independent phase per
+  link, which is genuinely new structure since a site-dependent phase is not an automorphism); (iii) verify the
+  longitudinal mode is removed - which a **compact** U(1) with a conserved current can do without a Goldstone,
+  making AT's finite Z_96 an advantage; (iv) the Maxwell limit is then E_002's derivation, needing no new work.
+
+Tests: `Y_E_003_Tests` 7/7. Group E: **20/20**.
 
 ## Build Dependency — ImageSharp replaced by SkiaSharp (2026-09-13, architectural)
 

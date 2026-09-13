@@ -136,6 +136,7 @@ public static class ElectromagnetismInventoryAudit
         "ElectromagnetismInventoryAudit.cs",
         "AtSourceScan.cs",
         "FieldEquationDerivationAudit.cs",
+        "PhotonOntologyAudit.cs",
     };
 
     // ── The inventory ───────────────────────────────────────────────────────
