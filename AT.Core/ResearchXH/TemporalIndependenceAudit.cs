@@ -409,6 +409,15 @@ public static class TemporalIndependenceAudit
             + "same rho gives at each d. NOT symbol-detectable: the suite names no B, g_rr or GammaOf — its "
             + "vocabulary is dimensions, polarisations, orbitals and clocks",
             ScanDetectsIt: false),
+
+        // ── G_044: is D96^3 minimal, optimal, or merely first? ──
+        new SectorClaim("Y_G_044", "Minimal Working Substrate", MetricRequirement.ClockOnly,
+            "it asks whether D96^3 is selected for being the first working substrate or for minimising "
+            + "complexity, and every statement is a count, a growth law or a symmetry fact about D96^d: the "
+            + "state space 96^d, the number of irreps of B_d, the photon and graviton sector dimensions, the "
+            + "orbital count C(48+d, d), and the observability measures built from them. NOT symbol-detectable: "
+            + "the suite names no B, g_rr or GammaOf — its vocabulary is dimensions, sectors, orbitals and costs",
+            ScanDetectsIt: false),
     };
 
     // ── The computed classification summaries ───────────────────────────────

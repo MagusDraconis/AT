@@ -3601,6 +3601,52 @@ the same integer.
 Registry: `ClockOnly` → **SURVIVES**, `ScanDetectsIt: false`; counts **30/11/3 of 44**. No reclassification —
 G_042's root is **reproduced, not extended**. G_033's live classifier now reads **25** substrate suites (42
 classified in total).
+### ResearchY-G_044 - Minimal Working Substrate Audit (EMERGENT)
+
+Is D96³ selected because it is the **first working** substrate, or because it **minimises complexity**? Compared
+D96²/D96³/D96⁴/D96⁵ over six measures.
+
+**The two explanations are one statement, and the third is refuted.**
+
+**The working set is an up-set, computed:** a substrate works when both sectors carry **propagating** states
+(photons d−1 > 0, gravitons (d+1)(d−2)/2 > 0) **and** the symmetry supplies a dimension-3 irrep — giving
+**{3, 4, 5, 6}**, one lower edge with no gaps. **Why d = 2 fails, precisely:** the graviton's sector **exists**
+there (the traceless rank-2 is 2-dimensional in two dimensions) but carries **0 propagating states** —
+*availability is not physics*.
+
+**All six measures are monotone in cost:**
+
+| measure | D96² | D96³ | D96⁴ | D96⁵ |
+|---|---|---|---|---|
+| state space 96^d − 1 | 9 215 | 884 735 | 84 934 655 | 8 153 726 975 |
+| irreps of B_d | 5 | 10 | 20 | 36 |
+| photon support | 2 | 3 | 4 | 5 |
+| graviton support | 2 | 5 | 9 | 14 |
+| observability fraction | 0.1329 | 0.02354 | 0.00319 | 0.00035 |
+| states per observable | 7.522 | 42.484 | 313.730 | 2 841.332 |
+
+**Minimality is identical to firstness — a theorem, not a finding.** With strictly increasing costs the cheapest
+member of ANY set is that set's smallest element, so the minimum-complexity working substrate **is** the first
+working substrate for all six measures at once — not because they agree here but because **they cannot
+disagree**. *"Selected for being first"* and *"selected for minimising complexity"* are **one statement**, which
+is why the minimality is **emergent** (a corollary of first-ness) rather than an independent optimum.
+
+**Optimality is refuted:** the unconstrained optimum of **every** measure lies at **d = 1 or 2, outside the
+working set** — D96³ is **96×** the state space of D96², **5.65×** its states per observable and **5.65×** less
+observable. The best *working* substrate, and a poor substrate outright.
+
+**Computed aside:** the observability cost factor per step is **3.88** (1→2), **5.65** (2→3), **7.38** (3→4),
+**9.11** (4→5), so among the steps the theory is *allowed* to take, the **mandatory** one (2→3) is the **least
+expensive** — the compulsory move is the cheapest move. A convenience, not a selection argument.
+
+**The options:** MINIMAL → **EMERGENT** · OPTIMAL → **REFUTED** · FIRST → **DERIVED**.
+
+**What remains open:** G_043's question of *why* the working set begins at 3. This audit shows only that
+**everything above the lower edge is irrelevant to the choice** — under monotonically increasing costs no
+substrate beyond the first working one can ever be preferred, whatever weighting is used.
+
+Registry: `ClockOnly` → **SURVIVES**, `ScanDetectsIt: false`; counts **31/11/3 of 45**. G_033's live classifier
+now reads **26** substrate suites (43 classified in total).
 ### ResearchY-G_037 - Refractive Lens Audit (REFUTED)
 
 Can light bend WITHOUT space bending, via an effective refractive index (the TRM-era idea,

@@ -2535,8 +2535,45 @@ observability measures and one count bound.
 
 Registry: added as **ClockOnly -> SURVIVES**, `ScanDetectsIt: false`; counts become **30/11/3 of 44**. No
 reclassification - G_042's root is **reproduced, not extended**; G_041 and G_033 are unchanged inputs. G_033's
-live classifier now reads **25** substrate suites (42 classified in total). Tests: `Y_G_043_Tests` 8/8; group G
+live classifier now reads **26** substrate suites (43 classified in total). Tests: `Y_G_043_Tests` 8/8; group G
 336/336.
+## ResearchY-G_044 - Minimal Working Substrate Audit (COMPLETE, EMERGENT)
+
+**Question.** Is D96^3 selected because it is the FIRST WORKING substrate, or because it MINIMISES COMPLEXITY?
+Compared D96^2/D96^3/D96^4/D96^5; measured state-space size, irreps, photon support, graviton support,
+observability fraction, states per observable.
+
+**Answer: EMERGENT - the two proposed explanations are the SAME statement, and the third is REFUTED.**
+
+- **THE WORKING SET IS AN UP-SET, COMPUTED:** a substrate works when both sectors carry **propagating** states
+  (photons d-1 > 0, gravitons (d+1)(d-2)/2 > 0) AND the symmetry supplies a dimension-3 irrep - giving
+  **{3, 4, 5, 6}**, one lower edge with no gaps.
+- **WHY d = 2 FAILS, PRECISELY:** the graviton's sector **EXISTS** there (the traceless symmetric rank-2 is
+  2-dimensional in two dimensions) but carries **0 propagating states**. Availability is not physics.
+- **ALL SIX MEASURES ARE MONOTONE IN COST:** state space 9 215 -> 884 735 -> 84 934 655 -> 8 153 726 975; irreps
+  5 -> 10 -> 20 -> 36; photon support 2 -> 3 -> 4 -> 5; graviton support 2 -> 5 -> 9 -> 14; observability fraction
+  **falls** 0.1329 -> 0.02354 -> 0.00319 -> 0.00035; states per observable rises 7.522 -> 42.484 -> 313.730 ->
+  2 841.332.
+- **THEREFORE MINIMALITY IS IDENTICAL TO FIRSTNESS - A THEOREM, NOT A FINDING.** With strictly increasing costs
+  the cheapest member of ANY set is that set's smallest element, so the minimum-complexity working substrate IS
+  the first working substrate for all six measures at once - not because they agree here but because **they
+  cannot disagree**. *"Selected for being first"* and *"selected for minimising complexity"* are ONE STATEMENT,
+  which is why the minimality is **EMERGENT** (a corollary of first-ness) rather than an independent optimum.
+- **OPTIMALITY IS REFUTED:** the unconstrained optimum of EVERY measure lies at **d = 1 or 2, outside the working
+  set** - D96^3 is **96x** the state space of D96^2, **5.65x** its states per observable and **5.65x** less
+  observable. The best WORKING substrate, and a poor substrate outright.
+- **COMPUTED ASIDE:** the observability cost factor per step is **3.88** (1->2), **5.65** (2->3), **7.38** (3->4),
+  **9.11** (4->5), so among the steps the theory is ALLOWED to take, the MANDATORY one (2->3) is the LEAST
+  expensive - the compulsory move is the cheapest move. A convenience, not a selection argument.
+- **THE OPTIONS:** MINIMAL -> **EMERGENT**; OPTIMAL -> **REFUTED**; FIRST -> **DERIVED** (the working set is
+  {3,4,5,6}, an up-set).
+- **WHAT REMAINS OPEN:** G_043's question of WHY the working set begins at 3. This audit shows only that
+  **everything above the lower edge is irrelevant to the choice** - under monotonically increasing costs no
+  substrate beyond the first working one can ever be preferred, whatever weighting is used.
+
+Registry: added as **ClockOnly -> SURVIVES**, `ScanDetectsIt: false`; counts become **31/11/3 of 45**. No
+reclassification; G_041/G_042/G_043/G_033 are unchanged inputs. G_033's live classifier now reads **26**
+substrate suites (43 classified in total). Tests: `Y_G_044_Tests` 7/7; group G 343/343.
 ## Build Dependency — ImageSharp replaced by SkiaSharp (2026-09-13, architectural)
 
 **RELEASE BUILDS WERE IMPOSSIBLE AND NOTHING SAID SO.** `SixLabors.ImageSharp` 4.1.0's build targets run a licence

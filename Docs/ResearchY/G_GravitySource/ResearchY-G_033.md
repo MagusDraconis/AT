@@ -39,14 +39,14 @@ The core **re-reads the group-G sources at test time** (the G_027 pattern), so t
 | **comment-only** | 1 | G_001 |
 | **no D96 reference at all** | **13** | **G_015, G_017, G_019, G_020, G_021, G_022, G_025, G_027, G_028, G_029, G_030, G_031, G_032** |
 
-> **Refinement (live scan, after G_041).** This table is G_033's own snapshot. The scanner is live, so later
-> audits are classified on their own. As of **G_042** the counts are **41 classified suites** → **24 in code / 1
+> **Refinement (live scan, after G_044).** This table is G_033's own snapshot. The scanner is live, so later
+> audits are classified on their own. As of **G_044** the counts are **43 classified suites** → **26 in code / 1
 > comment-only / 16 with no reference** (G_034 and G_035 joined the meta-audits; G_036, G_037 and G_038 added
 > three D96-free suites; **G_039 and G_040 — the ρ audits — recompute the D96 ring spectrum and so belong on the
 > substrate side**, which the scanner only saw for G_039 after its `Cells` constant was renamed `D96Cells`; and
-> **G_041 works with the D96^d family explicitly**, asking whether d = 3 is selected; and **G_042 does
-> too** — it audits the dependency between the d = 3 selectors, and states the ring constant explicitly so
-> that the dependence is visible to this scan rather than hidden in prose).
+> **G_041, G_042, G_043 and G_044** work with the D96^d family explicitly — the substrate dimension, the
+> dependency between the d = 3 selectors, the minimality ladder, and the minimal-working-substrate comparison —
+> each stating the ring constant so that the dependence is visible to this scan rather than hidden in prose).
 
 The 13 are exactly the **metric / closure era**: G_017 (metric coupling), G_019–G_022 (redshift/spatial metric), G_025, G_027 (literal verdict), and the whole G_028–G_032 closure sequence (clock, spatial, no-go, spatial origin, conformal assumption). Those audits are pure continuum PPN calculations — a scalar ρ, an exponent, a conformal factor, γ.
 

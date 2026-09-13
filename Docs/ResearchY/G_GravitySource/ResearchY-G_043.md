@@ -128,5 +128,5 @@ is unchanged; no prior classification changed.
 G_042 root is *reproduced* here rather than extended. The D_040 registry is untouched; no canonical claim, value
 or equation changes; no new primitive is added.
 
-**Scanner side-effect, recorded:** G_033's live classifier now reads **25** substrate suites (42 classified in
+**Scanner side-effect, recorded:** G_033's live classifier now reads **26** substrate suites (42 classified in
 total).
