@@ -114,12 +114,19 @@ public static class CubicSubstrateAudit
         return n;
     }
 
-    /// <summary>This audit's own id — excluded from the era classification (it computes the spectrum in order to audit it, so counting itself would inflate the substrate era).</summary>
-    public const string SelfId = "Y_G_033";
+    /// <summary>
+    /// The audits that are ABOUT the substrate rather than users of it. They compute the D96³ spectrum in
+    /// order to audit it, so counting them would inflate the substrate era — the self-reference the live
+    /// scanner exposed as soon as the first such audit existed.
+    /// </summary>
+    public static readonly string[] MetaAudits = { "Y_G_033", "Y_G_034" };
 
-    /// <summary>The audits subject to the era classification — every group-G suite except this one.</summary>
+    /// <summary>Is this audit a substrate meta-audit (excluded from the era classification)?</summary>
+    public static bool IsMetaAudit(string audit) => MetaAudits.Contains(audit, StringComparer.Ordinal);
+
+    /// <summary>The audits subject to the era classification — every group-G suite except the meta-audits.</summary>
     public static SubstrateUse[] AuditsSubjectToClassification()
-        => ScanAudits().Where(u => !string.Equals(u.Audit, SelfId, StringComparison.Ordinal)).ToArray();
+        => ScanAudits().Where(u => !IsMetaAudit(u.Audit)).ToArray();
 
     /// <summary>Audits whose CODE references the D96 substrate.</summary>
     public static SubstrateUse[] AuditsUsingSubstrate()

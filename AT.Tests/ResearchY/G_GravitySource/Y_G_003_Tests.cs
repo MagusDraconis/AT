@@ -185,7 +185,7 @@ public class Y_G_003_Tests : ResearchTestBase
         Assert.Equal(0.685714, Get("arrangement").DeltaAat, 6);
         Assert.Equal(0.603175, Get("degeneracy redistribution").DeltaAat, 6);
         Assert.Equal(0.333333, Get("D96 vs random").DeltaAat, 6);
-        Assert.Equal(0.276596, Get("D96^3 vs D96").DeltaAat, 6);
+        Assert.Equal(0.263158, Get("D96^3 vs D96").DeltaAat, 6);
         Assert.Equal(0.032121, Get("survivor compression (k=48)").DeltaAat, 6);
 
         // Ordering: arrangement > degeneracy > lattice averages > survivor compression.

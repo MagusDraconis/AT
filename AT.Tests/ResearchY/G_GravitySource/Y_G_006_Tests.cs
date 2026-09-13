@@ -279,7 +279,7 @@ public class Y_G_006_Tests : ResearchTestBase
         double f96 = 1.0 / ClosedFormRatio(d96, 200);
         Assert.True(f96 > 25.0 && f96 < 40.0, $"D96 factor = {f96}");
 
-        // (b) D96^3 (884 736 modes, A0 = 20 812, lock 3.948614, L = 0.97648) — same construction on the cube
+        // (b) D96^3 (884 736 modes, A0 = 16 080, lock 4.165691, L = 0.981825) — same construction on the cube
         //     multiplicities. Its witness is much weaker: the tilt lives inside a few thousand blocks that are
         //     individually SHORTER-lived (multiplicities up to 562 push the within-block content to higher k).
         var (_, mcube) = CubeSpaces;
@@ -290,7 +290,7 @@ public class Y_G_006_Tests : ResearchTestBase
         double fcube = s0c / Std(c200);
         Assert.True(fcube > 1.0 && fcube < f96, $"D96^3 factor = {fcube} vs D96 {f96}");
         Assert.Equal(1.0, cubeTilt.Sum(), 6);                            // count conservation holds
-        Assert.True(1.0 - CubeSpaces.Distinct.Length / 884736.0 > 0.97); // L = 0.97648: plenty of free room
+        Assert.True(1.0 - CubeSpaces.Distinct.Length / 884736.0 > 0.97); // L = 0.981825: plenty of free room
 
         // (c) Random — the degeneracy-free control has A0 = 96, i.e. EVERY multiplicity is 1, so the free room
         //     sum(m_i - 1) = 0: the G_002 within-multiplet witness class is EMPTY there. Its extremal
@@ -514,7 +514,7 @@ public class Y_G_006_Tests : ResearchTestBase
         sb.AppendLine("      eigenspace-occupancy index (Neumann boundaries) — the same operator G_005 used.");
         sb.AppendLine("  A2  The witness is the G_002 within-multiplet tilt (80 % of each multiplet share on its first cell).");
         sb.AppendLine("  A3  'Suppression' = the standard-deviation ratio of the arrangement, with the mean (k = 0) excluded.");
-        sb.AppendLine("  A4  D96^3 uses the cube multiplicity pattern (884 736 modes, A0 = 20 812); Random is the");
+        sb.AppendLine("  A4  D96^3 uses the cube multiplicity pattern (884 736 modes, A0 = 16 080); Random is the");
         sb.AppendLine("      degeneracy-free control (A0 = 96, every multiplicity 1, free room 0).");
         sb.AppendLine();
 
@@ -607,7 +607,7 @@ public class Y_G_006_Tests : ResearchTestBase
         sb.AppendLine("   case     modes      A0       free room    witness                     factor at m = 200");
         sb.AppendLine("   -------- ---------- -------- ----------- --------------------------- ------------------");
         sb.AppendLine($"   D96      96         45       51          within-multiplet 80/20 tilt  {f(200),18:F2}");
-        sb.AppendLine($"   D96^3    884 736    20 812   863 924     within-multiplet 80/20 tilt  {fcube,18:F2}");
+        sb.AppendLine($"   D96^3    884 736    16 080   868 656     within-multiplet 80/20 tilt  {fcube,18:F2}");
         sb.AppendLine($"   random   96         96       0           EMPTY (no degeneracy)        n/a");
         sb.AppendLine($"   random*  96         96       0           cell-scale alternation (max) {fchk,18:F2}");
         sb.AppendLine("   * the random lattice has zero free room, so the G_002 witness class is EMPTY there; the");

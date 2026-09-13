@@ -100,10 +100,13 @@ public class Y_T_012_Tests : ResearchTestBase
         Assert.True(dA.Length > 0 && dT.Length > 0 && dG.Length > 0);
         Assert.All(new[] { s1, s2, s3, sA, sT, sG }, x => Assert.True(x > 0));
 
-        // The 3-axis (cubic) sector dominates the survivor set — it is the densest sub-spectrum
-        // and yields the count nearest 19 (S∞=21, distance 2).
+        // The 3-axis (cubic) sector dominates the survivor set — it is the densest sub-spectrum.
+        // CORRECTION (ResearchY-G_034, tolerance-clustered D96^3 spectrum): S∞ = 14, distance 5 — NOT the
+        // previously recorded 21 / distance 2. The old figure was an artifact of exact-double degeneracy
+        // keying, so the sector is no longer the sub-count nearest 19. The audit's headline is unaffected:
+        // the full D96^3 spectrum still gives S∞ = 16 (distance 3), and random 17 remains nearest.
         Assert.True(d3.Length > d1.Length && d3.Length > d2.Length, "3-axis sector is the densest");
-        Assert.InRange(Math.Abs(s3 - 19), 0, 3);
+        Assert.Equal(5, Math.Abs(s3 - 19));
     }
 
     // ── 3. Cumulative discovery (fittest-init) ──────────────────────────────
@@ -240,7 +243,8 @@ public class Y_T_012_Tests : ResearchTestBase
         sb.AppendLine("[7] Verdict");
         sb.AppendLine($"  D96^3 raises the survivor count from D96's 5 to {s3d} (distance {Math.Abs(s3d - 19)} from 19),");
         sb.AppendLine($"  but does NOT hit 19 without tuning; random ({sRandom}, distance {Math.Abs(sRandom - 19)}) is");
-        sb.AppendLine($"  the nearest natural value. The cubic 3-axis sector gives 21 (distance 2).");
+        sb.AppendLine("  the nearest natural value. The cubic 3-axis sector gives 14 (distance 5; CORRECTED by");
+        sb.AppendLine("  ResearchY-G_034 — the previously recorded 21 was an exact-double keying artifact).");
         sb.AppendLine($"  Verdict: D96^3 → 16 is DERIVED (3D DOS raise) + CORRESPONDENCE (within ±5 of 19,");
         sb.AppendLine($"  the AT-139 tolerance); 'D96^3 exactly derives 19' is REFUTED.");
         sb.AppendLine();

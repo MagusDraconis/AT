@@ -23,7 +23,7 @@ namespace AT.Tests.ResearchY.G_GravitySource;
 ///   (3) degeneracy structure — a redistribution INSIDE degenerate multiplets;
 ///   (4) survivor compression — keep only the k largest occupancies;
 ///   (5) D96 vs random — two lattices (45 vs 96 eigenspaces) at the same N and the same total;
-///   (6) D96^3 vs D96 — the tensor cube (884 736 modes, 20 812 eigenspaces) at the same total per mode.
+///   (6) D96^3 vs D96 — the tensor cube (884 736 modes, 16 080 eigenspaces) at the same total per mode.
 ///   (control) global rescaling rho -> lambda rho.
 ///
 /// VERDICTS
@@ -35,7 +35,7 @@ namespace AT.Tests.ResearchY.G_GravitySource;
 ///                  latent fraction!) and 0 for random. (4) survivor compression with the total held
 ///                  fixed: dE = 0 exactly at L1 up to 5.16. (5) D96 vs random: same N and same total —
 ///                  random is the exact zero-field null, D96 is not. (6) D96^3 vs D96: same total per
-///                  mode, 97.6% of the cube's directions are energy-free versus 53.1% for D96.
+///                  mode, 98.2% of the cube's directions are energy-free versus 53.1% for D96.
 ///   CORRELATED   — (4b) the same compression WITHOUT fixing the total moves rho and E together
 ///                  (-47% to -86%); (control) a global rescaling changes E by x3.7 while leaving a
 ///                  EXACTLY invariant and merely rescaling R by lambda^(-2/d) — energy moves, the
@@ -290,8 +290,8 @@ public class Y_G_002_Tests : ResearchTestBase
         int modes = N * N * N;
         Assert.Equal(884736, mcube.Sum());
         Assert.Equal(modes, mcube.Sum());
-        Assert.True(cube.Length > 20_000 && cube.Length < 21_000, $"distinct = {cube.Length}");
-        Assert.True(mcube.Max() > 550, $"max multiplicity = {mcube.Max()}");
+        Assert.True(cube.Length == 16080, $"distinct = {cube.Length}");
+        Assert.True(mcube.Max() == 738, $"max multiplicity = {mcube.Max()}");
 
         // Same total energy PER MODE (both normalized), radically different structure.
         var rhoD96 = m96.Select(m => m / (double)N).ToArray();
@@ -299,7 +299,7 @@ public class Y_G_002_Tests : ResearchTestBase
         Assert.Equal(1.0, rhoD96.Sum(), 12);
         Assert.Equal(1.0, rhoCube.Sum(), 10);
 
-        // The cube has far more energy-free room: Sigma (m_i - 1) / N is 97.7% versus D96's 53.1%.
+        // The cube has far more energy-free room: Sigma (m_i - 1) / N is 98.2% versus D96's 53.1%.
         double freeCube = mcube.Sum(m => m - 1);
         double freeD96 = m96.Sum(m => m - 1);
         Assert.Equal(modes - cube.Length, freeCube);
@@ -429,7 +429,7 @@ public class Y_G_002_Tests : ResearchTestBase
         sb.AppendLine("      Same mode count and the same total: the degeneracy-free lattice is an exact zero-field");
         sb.AppendLine("      configuration (uniform rho => a = 0, R = 0), the structured lattice is not.");
         sb.AppendLine("    6 D96^3 vs D96 ............... CONTROLLABLE");
-        sb.AppendLine("      Same normalized total per mode; 97.6% of the cube's directions are energy-free versus 53.1%");
+        sb.AppendLine("      Same normalized total per mode; 98.2% of the cube's directions are energy-free versus 53.1%");
         sb.AppendLine("      for D96, and the same total yields a different field.");
         sb.AppendLine("    c RESCALING .................. CORRELATED (control)");
         sb.AppendLine("      rho -> lambda rho moves E (x3.7) while a is EXACTLY invariant and R merely rescales by");

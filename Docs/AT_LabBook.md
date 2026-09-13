@@ -3178,6 +3178,27 @@ decimal places, spread 0 under noise - is **16 080**, M_012's own figure and the
 (lock release 3.948614, L = 0.97648) do not. Not fixed deliberately - shared infrastructure; registered as an
 open item. Verdict computed (G_027). Group G 265/265.
 
+### ResearchY-G_034 - A0 Robustness Audit (REFUTED for six values; no conclusion breaks)
+
+Which gravity/time conclusions depend quantitatively on A0? The exact-double keying is REPLACED by tolerance
+clustering and the fallout measured. The replacement is not invented: it is the rule **D_047 already documents
+and applies** (`TolCube = 1e-8; // 3-factor sums carry ~1e-14 noise; tol above it`) - so this was never two
+lineages that never met, but two equality rules inside one programme. The corrected spectrum reproduces D_047 on
+**5/5 independent figures** (A0 16 080, A0(m>1) 16 079, max multiplicity 738, lock release 4.165691, free room
+868 656) and M_012's 16 080. ROOT CAUSE: D96's own spectrum arrives via a real TOLERANT eigensolver (A0 = 45,
+lock 0.802314, free room 51); D96^3 was keyed on exact doubles. WHAT MOVED: A0 20 812 -> 16 080 (-22.7%),
+free room 863 924 -> 868 656, L 0.976477 -> 0.981825, lock release 3.948614 -> 4.165691 (+5.50%), max
+multiplicity 562 -> 738. **The asymmetry is the point: the count moves 23%, the fractions 0.55% - so conclusions
+survive and counts do not.** Fifteen G-series claims classified by computation: **7 UNCHANGED / 2 BOUNDARY /
+6 REFUTED**. The refuted six are pinned numbers (G_002's A0 and max multiplicity; G_003's 0.276596 -> 0.263158;
+G_005's cube lock 3.948614 -> 4.165691 and L 0.97648 -> 0.981825; G_006's restatement) - one of them asserted to
+5 decimals and moved **21 708x its own tolerance**. Every inequality, identity and ordering survives: the cube is
+still ~98% energy-free, free room is still exactly N - A0 and still the D_048 latent fraction, D96's invariants
+never moved, and the regime is still CONTROLLABLE. BLAST RADIUS: four G assertions updated; G_033's scanner now
+excludes two meta-audits; T_012's headline UNCHANGED (sub-claim 21 -> 14); T_013's figures updated (A 16 079,
+C 1004.9, max mult 738, 150x -> 114x); T_014/T_008-T_011/D_047 all pass unchanged. Group G 271/271; affected set
+321/321.
+
 ## Key Unsolved Problems
 
 1. Numerical values of ℓ, τ, ħ — empirical, not derived

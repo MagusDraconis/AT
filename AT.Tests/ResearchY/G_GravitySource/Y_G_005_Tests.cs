@@ -246,8 +246,8 @@ public class Y_G_005_Tests : ResearchTestBase
         // total is bit-identical (`Spread` divides each eigenspace share among its own cells).
         Assert.Equal(45, D96Spaces.Distinct.Length);
         Assert.True(Math.Abs(LockRelease(D96Spaces) - 0.80231) < 1e-5, $"D96 lock = {LockRelease(D96Spaces)}");
-        Assert.True(Math.Abs(LockRelease(CubeSpaces) - 3.948614) < 1e-5, $"cube lock = {LockRelease(CubeSpaces)}");
-        Assert.True(Math.Abs((1.0 - CubeSpaces.Distinct.Length / (double)CubeSpaces.Mult.Sum()) - 0.97648) < 1e-5);
+        Assert.True(Math.Abs(LockRelease(CubeSpaces) - 4.165691) < 1e-5, $"cube lock = {LockRelease(CubeSpaces)}");
+        Assert.True(Math.Abs((1.0 - CubeSpaces.Distinct.Length / (double)CubeSpaces.Mult.Sum()) - 0.981825) < 1e-5);
         Assert.Equal(0.0, L1(BlockSums(D96Spaces.Mult, canonical), BlockSums(D96Spaces.Mult, tilt)), 12);
         // ⇒ leaving the lattice (changing A0 / the mirror pairing) is not a ρ-operation at all: FORBIDDEN
         // without a symmetry-breaking agent, which by D_047 does not exist inside the canonical chain.
@@ -345,7 +345,7 @@ public class Y_G_005_Tests : ResearchTestBase
         var witnesses = new (string Name, double Contrast)[]
         {
             ("arrangement", 0.685714), ("degeneracy redistribution", 0.603175),
-            ("D96 vs random", 0.333333), ("D96^3 vs D96", 0.276596), ("survivor compression", 0.032121)
+            ("D96 vs random", 0.333333), ("D96^3 vs D96", 0.263158), ("survivor compression", 0.032121)
         };
         foreach (var (name, c) in witnesses)
         {
@@ -481,7 +481,7 @@ public class Y_G_005_Tests : ResearchTestBase
         sb.AppendLine("  SUPPRESSED arrangement               0.685714                        -ln P = 9.07e10, contraction");
         sb.AppendLine("  SUPPRESSED degeneracy redistribution 0.603175                        -ln P = 7.02e10, contraction");
         sb.AppendLine("  SUPPRESSED D96 vs random             0.333333                        -ln P = 2.14e10, no internal drive");
-        sb.AppendLine("  SUPPRESSED D96^3 vs D96              0.276596                        -ln P = 1.47e10, no internal drive");
+        sb.AppendLine("  SUPPRESSED D96^3 vs D96              0.263158                        -ln P = 1.47e10, no internal drive");
         sb.AppendLine("  SUPPRESSED survivor compression      0.032121                        -ln P = 1.99e8, gauge-free but undriven");
         sb.AppendLine("  FORBIDDEN  Sigma rho != 1 / dM != 0                                  count conservation (QG194)");
         sb.AppendLine("  FORBIDDEN  changed A0 or mirror pairing (no symmetry-breaking agent)  structural invariants exact (D_047)");

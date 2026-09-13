@@ -37,12 +37,13 @@ public class Y_G_033_Tests : ResearchTestBase
         // The scanner must actually find the suites — otherwise the audit is vacuously green (G_027's rule).
         Assert.True(all.Length >= 34, $"scanner found only {all.Length} group-G suites; the audit would be vacuous");
 
-        // This audit is excluded from the classification: it computes the D96³ spectrum in order to audit it,
-        // so counting itself would inflate the substrate era.
-        Assert.Contains(all, u => u.Audit == CubicSubstrateAudit.SelfId);
+        // The substrate META-audits are excluded from the classification: they compute the D96³ spectrum in
+        // order to audit it, so counting them would inflate the substrate era (a self-reference the live
+        // scanner exposed as soon as the first such audit existed — and again when G_034 was added).
+        Assert.Contains(all, u => CubicSubstrateAudit.IsMetaAudit(u.Audit));
         var classified = CubicSubstrateAudit.AuditsSubjectToClassification();
-        Assert.DoesNotContain(classified, u => u.Audit == CubicSubstrateAudit.SelfId);
-        Assert.Equal(all.Length - 1, classified.Length);
+        Assert.DoesNotContain(classified, u => CubicSubstrateAudit.IsMetaAudit(u.Audit));
+        Assert.Equal(all.Length - CubicSubstrateAudit.MetaAudits.Length, classified.Length);
 
         var withSubstrate = CubicSubstrateAudit.AuditsUsingSubstrate();
         var commentOnly = CubicSubstrateAudit.AuditsCommentOnly();
@@ -209,7 +210,7 @@ public class Y_G_033_Tests : ResearchTestBase
         PrintHeader("1. IN CODE: THE SUBSTRATE IS ERA-LOCAL");
         var all = CubicSubstrateAudit.ScanAudits();
         sb.AppendLine($"  suites scanned: {all.Length}   (classified: {CubicSubstrateAudit.AuditsSubjectToClassification().Length};"
-                      + $" this audit excluded as self-referential)");
+                      + $" the {CubicSubstrateAudit.MetaAudits.Length} substrate meta-audits excluded as self-referential)");
         sb.AppendLine($"  reference D96 in CODE    : {CubicSubstrateAudit.AuditsUsingSubstrate().Length}   <- the density era");
         sb.AppendLine($"  comment-only (named only): {CubicSubstrateAudit.AuditsCommentOnly().Length}");
         sb.AppendLine($"  NO D96 reference at all  : {CubicSubstrateAudit.AuditsWithoutReference().Length}   <- the metric / closure era");
@@ -217,7 +218,7 @@ public class Y_G_033_Tests : ResearchTestBase
         sb.AppendLine("  audit       code-refs   comment-refs");
         foreach (var u in all)
         {
-            bool self = u.Audit == CubicSubstrateAudit.SelfId;
+            bool self = CubicSubstrateAudit.IsMetaAudit(u.Audit);
             sb.AppendLine($"  {u.Audit,-12}{u.CodeRefs,8}{u.CommentRefs,14}"
                         + (u.UsesInCode ? (self ? "   (this audit)" : "") : "   (substrate-free)"));
         }

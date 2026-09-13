@@ -1866,6 +1866,39 @@ A0 programme-wide and is a programme-level decision. Registered as an open item.
 
 Tests: `Y_G_033_Tests` 5/5. Group G: **265/265**.
 
+## G_034 - A0 Robustness Audit: which conclusions depend on A0? (COMPLETE, REFUTED-for-values)
+
+**The keying is REPLACED and the fallout measured: NO G-series conclusion breaks, but SIX pinned values were artifacts.**
+
+- **THE REPLACEMENT, APPLIED.** `SpectralCaseCatalog.D96CubedBreakdown` keyed its 49^3 triple sums on EXACT
+  binary64 equality; it now CLUSTERS at a tolerance - and the tolerance is not invented: it is the rule **D_047
+  already documents and applies** (`private const double TolCube = 1e-8; // 3-factor sums carry ~1e-14 noise;
+  tol above it`). **This was never "two lineages that never met" - it was two equality rules in one programme.**
+- **5/5 INDEPENDENT MATCH.** The corrected spectrum reproduces D_047 exactly: A0 = **16 080** (16 080),
+  A0(m>1) = **16 079** (16 079), max multiplicity = **738** (738), lock release = **4.165691** (4.16569),
+  free room = **868 656** (868 656) - plus M_012's independently reported 16 080.
+- **ROOT CAUSE - MIXED EQUALITY DISCIPLINE.** D96's own spectrum arrives via a real TOLERANT eigensolver
+  (A0 = 45, lock 0.802314, free room 51); D96^3's construction used exact-double keying. Same quantity, two rules.
+- **WHAT MOVED:** A0 20 812 -> 16 080 (-22.7%); free room 863 924 -> 868 656 (+0.55%); L 0.976477 -> 0.981825
+  (+0.55%); **lock release 3.948614 -> 4.165691 (+5.50%)**; max multiplicity 562 -> 738 (+31.3%).
+  **The asymmetry is the point:** the count moves 23% while the fractions move 0.55% - which is why the
+  conclusions survive and the counts do not.
+- **7 UNCHANGED / 2 BOUNDARY / 6 REFUTED** over fifteen G-series claims (computed, never typed - G_027).
+  REFUTED: G_002 A0 = 20 812; G_002 max mult 562; G_003 D96^3-vs-D96 0.276596 -> **0.263158**; G_005 cube lock
+  3.948614 -> **4.165691**; G_005 cube L 0.97648 -> **0.981825**; G_006 restatement. **In their own tolerances:**
+  G_003 **13 438x**, G_005 lock **21 708x**, G_005 L **535x**. BOUNDARY: "97.6% energy-free" -> **98.2%**;
+  cube contraction at m = 200 **7.33 -> 7.10**.
+- **UNCHANGED = every inequality, identity and ordering.** Cube still ~98% energy-free (> 0.97 either way);
+  free room still exactly N - A0 and still the D_048 latent fraction L; **D96's own invariants never moved**;
+  the ordering arrangement > degeneracy > lattice-average > survivor compression is intact; still CONTROLLABLE.
+  **The refuted items are numbers, not conclusions.**
+- **BLAST RADIUS (shared infrastructure), measured:** G_002/003/005/006 - four assertions updated; G_033 - live
+  scanner now excludes TWO meta-audits; **T_012 - headline UNCHANGED** (D96^3 -> S-inf = 16, distance 3; random 17
+  nearest), sub-claim 21 -> **14**; **T_013** - assertions pass, A = **16 079**, C = **1004.9**, max mult **738**,
+  "~150x" -> "~114x"; **T_014, T_008-T_011, D_047 - ALL PASS UNCHANGED** (D_047 needed nothing; it was correct).
+
+Tests: `Y_G_034_Tests` 6/6. Group G: **271/271**. Affected set: **321/321**.
+
 ## Latest Repo Sync
 
 Recent commits from the other machine:

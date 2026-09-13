@@ -122,39 +122,62 @@ public static class SpectralCaseCatalog
     /// and per-sector (n1,n2,n3) and per-irrep (nA,nT,nG) multiplicities. Built over the 49³
     /// reduced indices with the doublet degeneracy folded exactly (avoids floating-point
     /// splitting of the λ_j = λ_{96−j} pairs).
+    ///
+    /// THE SUMS ARE CLUSTERED AT A TOLERANCE (default 1e-8 — the same rule D_047 applies, with the same
+    /// reason recorded there: "3-factor sums carry ~1e-14 noise; tol above it"). Keying them on EXACT double
+    /// equality instead makes A₀ an implementation artifact: the same IEEE-754 algorithm yields 20 812 under
+    /// .NET and 20 440 under Python, and one ulp (1e-16) of noise moves the count by ~900. Clustering gives
+    /// the stable value A₀ = 16 080, Σ(m−1) = 868 656, max multiplicity 738 and lock release 4.165691 —
+    /// matching D_047 (16 080 / 868 656 / 738 / 4.16569) and M_012's 16 080.
     /// </summary>
     public static (double[] Distinct, int[] Total, int[] N1, int[] N2, int[] N3, int[] NA, int[] NT, int[] NG)
-        D96CubedBreakdown()
+        D96CubedBreakdown(double tolerance = 1.0e-8)
     {
         double[] f = D96Spectrum1DReduced();
-        var d = new Dictionary<double, int[]>();   // [total, n1, n2, n3, nA, nT, nG]
+        var rows = new List<(double E, int M, int Sec, int Irr)>(117_649);
         for (int r1 = 0; r1 <= 48; r1++)
             for (int r2 = 0; r2 <= 48; r2++)
                 for (int r3 = 0; r3 <= 48; r3++)
-                {
-                    double e = f[r1] + f[r2] + f[r3];
-                    int m = Mult1DReduced(r1) * Mult1DReduced(r2) * Mult1DReduced(r3);
-                    int sec = D96CubedSector(r1, r2, r3);
-                    int irr = D96CubedIrrep(r1, r2, r3);
-                    if (!d.TryGetValue(e, out var b)) { b = new int[7]; d[e] = b; }
-                    b[0] += m;
-                    if (sec == 1) b[1] += m;
-                    else if (sec == 2) b[2] += m;
-                    else if (sec == 3) b[3] += m;
-                    if (irr == 0) b[4] += m;
-                    else if (irr == 1) b[5] += m;
-                    else b[6] += m;
-                }
-        var order = d.Keys.OrderBy(x => x).ToArray();
-        double[] distinct = order.ToArray();
-        int[] total = order.Select(e => d[e][0]).ToArray();
-        int[] n1 = order.Select(e => d[e][1]).ToArray();
-        int[] n2 = order.Select(e => d[e][2]).ToArray();
-        int[] n3 = order.Select(e => d[e][3]).ToArray();
-        int[] nA = order.Select(e => d[e][4]).ToArray();
-        int[] nT = order.Select(e => d[e][5]).ToArray();
-        int[] nG = order.Select(e => d[e][6]).ToArray();
-        return (distinct, total, n1, n2, n3, nA, nT, nG);
+                    rows.Add((f[r1] + f[r2] + f[r3],
+                              Mult1DReduced(r1) * Mult1DReduced(r2) * Mult1DReduced(r3),
+                              D96CubedSector(r1, r2, r3), D96CubedIrrep(r1, r2, r3)));
+        rows.Sort((x, y) => x.E.CompareTo(y.E));
+
+        var keys = new List<double>();
+        var stats = new List<int[]>();
+        var bucket = new List<double>();
+        var acc = new int[7];
+        double anchor = rows[0].E;
+        foreach (var (e, m, sec, irr) in rows)
+        {
+            if (e - anchor > tolerance)
+            {
+                keys.Add(bucket.Average());
+                stats.Add(acc);
+                bucket = new List<double>();
+                acc = new int[7];
+                anchor = e;
+            }
+            bucket.Add(e);
+            acc[0] += m;
+            if (sec == 1) acc[1] += m;
+            else if (sec == 2) acc[2] += m;
+            else if (sec == 3) acc[3] += m;
+            if (irr == 0) acc[4] += m;
+            else if (irr == 1) acc[5] += m;
+            else acc[6] += m;
+        }
+        keys.Add(bucket.Average());
+        stats.Add(acc);
+
+        return (keys.ToArray(),
+                stats.Select(s => s[0]).ToArray(),
+                stats.Select(s => s[1]).ToArray(),
+                stats.Select(s => s[2]).ToArray(),
+                stats.Select(s => s[3]).ToArray(),
+                stats.Select(s => s[4]).ToArray(),
+                stats.Select(s => s[5]).ToArray(),
+                stats.Select(s => s[6]).ToArray());
     }
 
     /// <summary>Distinct eigenvalues and their multiplicities of D96⊗D96⊗D96 (plain spectrum).</summary>

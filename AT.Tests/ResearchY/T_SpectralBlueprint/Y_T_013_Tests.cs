@@ -8,7 +8,7 @@ namespace AT.Tests.ResearchY.T_SpectralBlueprint;
 /// <summary>
 /// ResearchY-T_013 — Compression Origin Audit.
 ///
-/// Question: why does D96^3 compress 20,811 distinct eigenvalues into 16 survivors?
+/// Question: why does D96^3 compress 16,079 distinct eigenvalues into 16 survivors?
 ///
 /// Measure the fitness distribution, multiplicity hierarchy, near-gap density, entropy
 /// reduction, and survivor basin volume for D96 / D96^3 / random, and derive the compression
@@ -124,7 +124,7 @@ public class Y_T_013_Tests : ResearchTestBase
         var d963 = Measure(SpectralCaseCatalog.D96Cubed());
         var random = Measure(SpectralCaseCatalog.Random());
 
-        // D96^3's A is huge because 3-way sums of 49 1D eigenvalues yield ~20k distinct values.
+        // D96^3's A is huge because 3-way sums of 49 1D eigenvalues yield ~16k distinct values.
         Assert.True(d963.A > 100 * random.A, "D96^3 A dwarfs random's A");
 
         // The survivors are essentially the near-gap modes: S∞ ≈ near-gap density.
@@ -132,7 +132,8 @@ public class Y_T_013_Tests : ResearchTestBase
 
         // Compression is dominated by A, NOT fitness peakedness: the 1D D96 has the HIGHEST
         // entropy reduction (0.88, most peaked fitness) yet the LOWEST compression (8.8), while
-        // D96^3 has a moderate entropy reduction (0.20) but compresses 150× more (1300).
+        // D96^3 has a flatter entropy reduction (0.16) but compresses ~114× more (C = 1004.9).
+        // (CORRECTED by ResearchY-G_034: the previous 20,811 / 1300 / 0.20 were exact-double keying artifacts.)
         Assert.True(d96.EntropyReduction > d963.EntropyReduction,
             "D96 has the most peaked fitness, yet compresses less");
         Assert.True(d963.C > 100 * d96.C, "D96^3 compresses far more despite flatter fitness");
@@ -153,7 +154,7 @@ public class Y_T_013_Tests : ResearchTestBase
         Assert.NotEqual((int)d96.C, (int)d963.C);
         Assert.NotEqual((int)d963.C, (int)random.C);
 
-        // REFUTED: "C is a universal constant" — it varies from ~6 (random) to ~1300 (D96^3).
+        // REFUTED: "C is a universal constant" — it varies from ~6 (random) to ~1005 (D96^3).
         Assert.True(d963.C > 100 * random.C, "C is not universal");
     }
 
@@ -173,7 +174,7 @@ public class Y_T_013_Tests : ResearchTestBase
         var sb = new StringBuilder();
         PrintHeader("ResearchY-T_013 — Compression Origin Audit");
 
-        sb.AppendLine("Question: why does D96^3 compress 20,811 eigenvalues into 16 survivors?");
+        sb.AppendLine("Question: why does D96^3 compress 16,079 eigenvalues into 16 survivors?");
         sb.AppendLine("Measure fitness, multiplicity hierarchy, near-gap density, entropy reduction,");
         sb.AppendLine("and survivor basin volume; derive C = A/S∞.");
         sb.AppendLine();
@@ -192,18 +193,18 @@ public class Y_T_013_Tests : ResearchTestBase
         var d96 = Measure(SpectralCaseCatalog.D96());
         sb.AppendLine($"  D96^3 has A = {d963.A} distinct eigenvalues (3-way sums of 49 1D values),");
         sb.AppendLine($"  and S∞ = {d963.SInf} ≈ its near-gap density ({d963.NearGap}) — the survivors are");
-        sb.AppendLine("  essentially the near-gap modes; the other ~20k eigenvalues go extinct.");
+        sb.AppendLine("  essentially the near-gap modes; the other ~16k eigenvalues go extinct.");
         sb.AppendLine($"  Compression ratio C = A/S∞ = {d963.C:F1}.");
         sb.AppendLine($"  Compression is dominated by A, NOT fitness peakedness: the 1D D96 has the");
         sb.AppendLine($"  highest entropy reduction ({d96.EntropyReduction:F2}) yet compresses least");
         sb.AppendLine($"  (C = {d96.C:F1}); D96^3 has a flatter fitness (ent-red {d963.EntropyReduction:F2})");
-        sb.AppendLine("  but compresses ~150× more because its 3D sum structure creates a huge A.");
+        sb.AppendLine("  but compresses ~114× more because its 3D sum structure creates a huge A.");
         sb.AppendLine();
 
         sb.AppendLine("[3] Verdict");
         sb.AppendLine("  DERIVED: C = A/S∞ is a deterministic function of the spectrum (A = distinct-sum");
         sb.AppendLine("           count; S∞ = mutation–selection reach ≈ near-gap density, T_008/T_009).");
-        sb.AppendLine("  EMERGENT: the value C ≈ 1300 for D96^3 (vs ~9 for D96, ~6 for random).");
+        sb.AppendLine("  EMERGENT: the value C ≈ 1005 for D96^3 (vs ~9 for D96, ~6 for random).");
         sb.AppendLine("  REFUTED:  'C is set by fitness peakedness' (D96 is most peaked yet compresses");
         sb.AppendLine("            least — A, the landscape size, is the dominant factor).");
         sb.AppendLine();

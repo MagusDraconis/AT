@@ -42,7 +42,7 @@ with multiplicity the product of the 1D multiplicities. Built exactly from the r
 | model | modes | distinct non-zero eigenvalues | S∞ (μ=0.01, β=1) |
 |---|---|---|---|
 | D96 (1D) | 96 | 44 | **5** |
-| D96^3 (cubic ⊗) | 884,736 | 20,811 | **16** |
+| D96^3 (cubic ⊗) | 884,736 | 16,079 | **16** |
 | random control | 96 | 95 | **17** |
 | target | — | — | **19** |
 
@@ -79,9 +79,9 @@ cumulative = 8, survivor = 8.
 
 1. **D96^3 substantially raises diversity toward 19.** The 3D density of states lifts the
    survivor count from D96's 5 to **16** — a DERIVED consequence of the cubic spectrum's far
-   denser low-lying structure (20,811 distinct eigenvalues).
+   denser low-lying structure (16,079 distinct eigenvalues).
 
-2. **But 19 is not hit exactly.** D96^3 gives 16 (distance 3); the cubic 3-axis sector gives 21
+2. **But 19 is not hit exactly.** D96^3 gives 16 (distance 3); the cubic 3-axis sector gives 14
    (distance 2); the random control gives 17 (distance 2) — still the nearest natural value.
 
 3. **The match is a CORRESPONDENCE, not a derivation.** 16 is within the legacy ±5 consistency
@@ -92,7 +92,7 @@ cumulative = 8, survivor = 8.
 
 | Item | Classification |
 |---|---|
-| D96^3 spectrum (20,811 eigenvalues) and S∞ = 16 are deterministic (T_008/T_009) | DERIVED |
+| D96^3 spectrum (16,079 eigenvalues) and S∞ = 16 are deterministic (T_008/T_009) | DERIVED |
 | The raise 5 → 16 from the 3D density of states | DERIVED |
 | D96^3 ≈ 19 within the legacy ±5 tolerance | CORRESPONDENCE |
 | The exact value 16 (or 21 in the cubic sector) | EMERGENT |
@@ -105,9 +105,16 @@ cumulative = 8, survivor = 8.
 D96^3 does **not** cleanly reproduce the historical ~19 species — but it gets much closer than
 the 1D D96 ring. The cubic tensor product raises the survivor count from 5 to **16** (distance 3
 from 19), a DERIVED effect of the 3D density of states, and the cubic 3-axis sector alone gives
-21 (distance 2). The value 16 is within the legacy ±5 tolerance, so D96^3 **corresponds** to the
+14 (distance 5). The value 16 is within the legacy ±5 tolerance, so D96^3 **corresponds** to the
 historical ~19 at order-of-magnitude, but it does not **derive** 19: the random control (17)
 remains the nearest natural value, and the exact integer is EMERGENT, not pinned. The historical
 "~19 stable species" therefore remains ambiguous between D96^3 (16), its cubic sector (21), and a
 random-like landscape (17) — none reproduces 19 without parameter tuning. No new primitive;
 canonical AT unchanged.
+**Correction (ResearchY-G_034, 2026-09-13).** The D96³/eigenspace count was keyed on EXACT double
+equality in the shared catalog, which split physically degenerate 3-way sums; it is now clustered at a
+tolerance (the rule D_047 documents). **No headline here changes** — D96³ still gives S∞ = 16
+(distance 3 from 19), random 17 is still nearest, and "19 is exactly derived" is still REFUTED. Two
+figures moved: the distinct-eigenvalue count 20,811 → **16,079**, and the cubic 3-axis sub-sector
+S∞ 21 → **14** (distance 5), so that sector is no longer the sub-count nearest 19.
+

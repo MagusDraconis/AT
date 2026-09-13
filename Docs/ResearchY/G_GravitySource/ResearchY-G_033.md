@@ -144,4 +144,10 @@ Decimal-place profile of the tolerant count — a genuine plateau at 7–10 plac
 | `Y_G_033_VerdictIsPartialAndTheRequirementLivesInEta` | computed verdict PARTIAL; the locus is η (G_032) |
 | `Y_G_033_Run` | the full report |
 
+**SUPERSEDED IN PART by ResearchY-G_034** (A₀ Robustness Audit): the replacement was **applied** — the
+shared helper now clusters at a tolerance and reproduces D_047 on five independent figures. Six G-series
+pinned values were REFUTED as artifacts (up to 21 708× their own tolerances); no qualitative conclusion
+broke. Also note: D_047 already carried the robust values, so this was never "two lineages that never
+met" but two different equality rules in one programme.
+
 **Opens:** OP1 decide the shared-substrate question — should `SpectralCaseCatalog.TensorProductSpectrum96` cluster at a tolerance (A₀ = 16 080) and re-run every dependent group, or should A₀ be redefined as a robust invariant with a stated tolerance?; OP2 reconstruct the lock-release 3.948614 and the L-based figures from the robust A₀ and see which conclusions move; OP3 audit the remaining shared spectral counts for the same artifact class — any count keyed on exact `double` equality over algebraic values is suspect.
