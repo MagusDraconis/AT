@@ -4149,4 +4149,76 @@ the **existence** of the configuration, not its magnitude. **The origin is ident
 how coarse the loop is.**
 
 **Status:** COMPLETE. Tests `Y_E_011_Tests` **7/7**; group E **76/76**. No group-G registry claim, so no counts
-change.
+change.
+
+---
+
+### ResearchY-E_012 - Flux Excitation Audit (BOUNDARY)
+
+**Question.** What AT mechanism populates a non-trivial flux sector? Candidates: occupancy defects, topological
+defects, winding sectors, boundary conditions, actualization transitions. Requirements: create F != 0, survive the
+continuum limit, no new primitive. Measure flux, holonomy, field strength.
+
+**Verdict: BOUNDARY.** Nothing inside AT populates the sector. The population is an **assignment**, it is **globally
+constrained**, and the smallest non-trivial assignment is a **balanced pair** whose amplitude does not scale away.
+
+**1. The organisation cannot - re-measured, not cited.** The occupancy route `A_mu = h(rho) Delta_mu rho` loses its
+curvature as the substrate is refined:
+
+| L | occupancy route max \|F\| |
+|---|---|
+| 8 | 1.691E-002 |
+| 16 | 4.442E-003 |
+| 32 | 1.124E-003 |
+| 64 | 2.820E-004 |
+
+Fitted exponent **a^2.00**. E_010's conclusion reproduced on this audit's own construction - a control, not a
+quotation. The occupancy **moves** flux; it cannot **put any in**.
+
+**2. The flux content is an assignment with a global constraint.** Summing plaquette holonomies over the **whole
+torus** counts every link **twice with opposite signs**, so the reduced fluxes must sum to a multiple of `2 pi` -
+measured at **0.00E+000** for a uniform field.
+
+| pattern | constraint residual | verdict |
+|---|---|---|
+| **single half-turn flux** | 3.141593 | **FORBIDDEN** |
+| **balanced pair (pi, -pi)** | 0.000E+000 | **ALLOWED** |
+
+A single fluxon is forbidden by the **shape of the substrate**, and the smallest non-trivial configuration is a
+**balanced pair**. The constraint is a **global balance**: the partner may sit on another slice, because a **slice's
+product is free** - a slice's boundary is a **non-contractible cycle**, and with one half-turn on it the product sits
+**2.000000** away from the identity.
+
+**3. The pair meets the requirement the occupancy route fails.**
+
+| L | balanced pair max \|F\| | occupancy route max \|F\| |
+|---|---|---|---|
+| 8 | 3.141593 | 1.691E-002 |
+| 16 | 3.141593 | 4.442E-003 |
+| 32 | 3.141593 | 1.124E-003 |
+| 64 | 3.141593 | 2.820E-004 |
+
+The pair's amplitude is **pi at every lattice size** - it does not scale away. A non-trivial flux with a surviving
+amplitude **exists**; what does not exist is anything inside AT that **creates** it.
+
+**4. The candidates.** occupancy defects **REFUTED** (the scaling); topological defects **BOUNDARY** (a legitimate
+pair without a creator); winding sectors **REFUTED twice over** (a scalar winding is a gradient - zero curvature by
+E_008, whole-turn closed holonomy by E_011); boundary conditions **BOUNDARY** - and it is the **answer**; actualization
+transitions **REFUTED** (the process supplies the time-like component only, which cannot add flux content to a spatial
+slice).
+
+**5. A claim withdrawn while doing this.** A first draft held that the product of plaquette holonomies around a single
+**slice** is the identity, so a single half-turn flux would be impossible for that reason. The identity is true for the
+**whole torus** and **false for a slice**, whose boundary is a non-contractible **cycle**. The first version of the
+probe appeared to **confirm** the wrong claim, and the reason is instructive: it **folded the configuration at the
+seam** before summing, which silently destroys exactly the quantity being tested. The audit now measures the
+whole-torus sum, which is the constraint that actually forbids the single fluxon.
+
+**Status:** COMPLETE. Tests `Y_E_012_Tests` **6/6**; group E **82/82**. Registry: added as **Boundary**
+(`flux-excitation-audit`), reclassifying nothing; no group-G registry claim, so counts are unchanged. Core:
+`AT.Core/ResearchXH/FluxExcitationAudit.cs`; suite `AT.Tests/ResearchY/E_Electromagnetism/Y_E_012_Tests.cs`; doc
+`Docs/ResearchY/E_Electromagnetism/ResearchY-E_012.md`.
+
+**It changes this.** E_011 identified the flux's origin and left the integer sector as a boundary assignment; E_012
+refines it: the assignment is itself subject to a **global constraint** forbidding a single half-turn. AT derives the
+quantum, its gauge-proofness and the allowed-pattern constraint - and derives nothing that **selects** a pattern.

@@ -2766,6 +2766,45 @@ substrate's cycle length speaking.**
   its magnitude.
 
 No group-G registry claim, so claim counts are unchanged. Tests: `Y_E_011_Tests` 7/7; group E 76/76.
+## ResearchY-E_012 - Flux Excitation Audit (COMPLETE, BOUNDARY)
+
+**Question.** What AT mechanism populates a non-trivial flux sector? Candidates: occupancy defects, topological
+defects, winding sectors, boundary conditions, actualization transitions. Requirements: create F != 0, survive the
+continuum limit, no new primitive.
+
+**Answer: BOUNDARY - nothing inside AT populates the sector, and the constraint on what MAY populate it is exact.**
+
+- **The organisation cannot, re-measured rather than cited.** The occupancy route `A_mu = h(rho) Delta_mu rho` falls
+  as **a^2.00** (max |F| 1.691E-002, 4.442E-003, 1.124E-003, 2.820E-004 at L = 8/16/32/64). The occupancy **moves** flux;
+  it cannot **put any in**.
+- **The flux content is an assignment with a global constraint, and this is the sharpest result of the audit.**
+  Summing plaquette holonomies over the **whole torus** counts every link **twice with opposite signs**, so the reduced
+  fluxes must sum to a multiple of `2 pi` (measured **0.00E+000** for a uniform field). Consequence: a **SINGLE
+  half-turn flux is FORBIDDEN** (residual **3.141593**) while a **BALANCED PAIR (pi, -pi) is ALLOWED exactly**
+  (**0.000E+000**). A single fluxon is forbidden by the **shape of the substrate**; the smallest non-trivial
+  configuration is a **pair**. The constraint is a **global balance** - the partner may sit on another slice, because a
+  **slice's product is free** (its boundary is a **non-contractible cycle**: **2.000000** from the identity with one
+  half-turn on it).
+- **The pair meets the requirement the occupancy route fails.** Its amplitude is **pi at every lattice size**
+  (3.141593 at L = 8/16/32/64), so a non-trivial flux with a **surviving amplitude** exists; what does not exist is
+  anything in AT that **creates** one.
+- **The candidates.** occupancy defects **REFUTED** (the scaling); topological defects **BOUNDARY** (a legitimate pair
+  without a creator); winding sectors **REFUTED twice over** (a gradient: zero curvature by E_008, whole-turn holonomy
+  by E_011); boundary conditions **BOUNDARY** and it is the **answer**; actualization transitions **REFUTED** (the
+  time-like component only, E_009).
+- **A first-draft claim was withdrawn.** The draft held the product of holonomies around a single **slice** to be the
+  identity, which would forbid the single half-turn a second time. It is true for the **whole torus** and false for a
+  slice. The first probe **appeared to confirm** the wrong claim because it **folded the configuration at the seam**
+  before summing - silently destroying exactly the quantity under test. The audit measures the whole-torus sum instead.
+
+**What this changes.** E_011 identified the flux's **origin** and left the integer sector as a boundary assignment;
+E_012 refines that: the assignment is itself subject to a **global constraint** that forbids a single half-turn. The
+open item sharpens again - AT derives the flux quantum, its gauge-proofness and the constraint on allowed patterns, but
+derives nothing that **selects** one.
+
+No group-G registry claim, so claim counts are unchanged. Registry: added as **Boundary** (`flux-excitation-audit`),
+reclassifying nothing. Tests: `Y_E_012_Tests` 6/6; group E **82/82**.
+
 ## ResearchY-G_045 - Observed vs Hidden Dimension Audit (COMPLETE, REFUTED)
 
 **Question.** Can the apparent 3D world emerge as a PROJECTION of a higher-dimensional ACTUALIZATION SPACE?
