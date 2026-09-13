@@ -3160,6 +3160,24 @@ violated by a factor of 2.000013. If the ansatz were entailed, AT would be refut
 g = rho^(2/d) eta IS the conformal member. This restates G_030's dilemma as **conformal flatness vs optics** and
 locates G_031's theorem's premise in the primitive eta. Verdict computed (G_027). Group G 260/260.
 
+### ResearchY-G_033 - Cubic Substrate Audit (PARTIAL)
+
+Does the gravity/time search need D96^3 the way the rest of physics does (M_012: a genuine 3D sector exists on
+the cubic lattice but is absent from a single D96 ring)? **PARTIAL - same requirement, different locus.**
+A live scan (G_027 pattern) of the 34 group-G suites finds **20 referencing D96 in code**, 1 comment-only, and
+**13 with no reference at all** - exactly the metric / closure era (G_015, G_017, G_019-G_022, G_025,
+G_027-G_032). Structurally the requirement is nevertheless INHERITED: the spatial metric is 6 = 1 (trace, l=0) +
+5 (traceless, l=2), and l = 2 subducts as **Eg(2) + T2g(3)**, so gravity needs a dimension-3 irrep that a single
+D96 ring (dihedral D_96, dim 1-2) cannot supply; the subduction reproduces M_012 exactly. d = 3 is the unique
+fixed point of d(d-1)/2 = d. The locus of the requirement is the primitive **eta** (G_032) - G_032 and G_033 are
+one fact seen twice.
+**DEFECT:** the cited **A0 = 20 812** for D96^3 is a binary64-keying artifact (same algorithm gives 20 812 in
+.NET and 20 440 in Python; one-ulp noise swings it 20 488...21 369), whereas the ROBUST count - plateau at 7-10
+decimal places, spread 0 under noise - is **16 080**, M_012's own figure and the value used elsewhere in the repo
+(868 656 = 884 736 - 16 080). The qualitative claim survives; the specific numbers and anything derived from A0
+(lock release 3.948614, L = 0.97648) do not. Not fixed deliberately - shared infrastructure; registered as an
+open item. Verdict computed (G_027). Group G 265/265.
+
 ## Key Unsolved Problems
 
 1. Numerical values of ℓ, τ, ħ — empirical, not derived

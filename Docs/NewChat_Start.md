@@ -1832,6 +1832,40 @@ where the Difference acquires its **TENSOR face**. The chain is metric-free for 
 
 Tests: `Y_G_032_Tests` 8/8. Group G: **260/260**.
 
+## G_033 - Cubic Substrate Audit: does gravity/time need D96^3? (COMPLETE, PARTIAL)
+
+Question: the programme established that D96 (x) D96 (x) D96 ("D96^3") is required to explain physics (M_012:
+a genuine 3D sector exists on the cubic lattice but is ABSENT from a single D96 ring, max irrep dim 2). Does
+the gravity/time search (group G) show the same behaviour? **Answer: PARTIAL - same requirement, different locus.**
+
+- **IN CODE, ERA-LOCAL.** The audit re-reads the group-G sources at test time (G_027 pattern). 34 suites
+  classified: **20 reference D96 in code** (the density era, G_002-G_011b, G_012-G_014, G_016, G_016b, G_018,
+  G_023, G_024, G_026), **1 comment-only** (G_001), **13 with NO reference at all** - exactly the metric /
+  closure era: **G_015, G_017, G_019-G_022, G_025, G_027-G_032**.
+- **IN STRUCTURE, INHERITED.** The spatial metric is a symmetric rank-2 tensor in d = 3: 6 = 1 (trace, l=0) +
+  5 (traceless, l=2), and l = 2 subducts as **Eg(2) + T2g(3)**. So gravity REQUIRES a dimension-3 irrep - the
+  same structure a single D96 ring (dihedral D_96, irreps of dim 1-2) cannot supply. Reproduces M_012 exactly
+  (norms^2 = 1,1,2,3,4; l=2 -> 2+3; l=1 -> 3). d = 3 is the UNIQUE fixed point of rotation self-duality
+  d(d-1)/2 = d (M_013).
+- **THE LOCUS IS eta (G_032).** The metric era imports 3D space through the primitive eta instead of generating
+  it from a 96^3 spectrum. G_032 and G_033 are ONE FACT SEEN TWICE: the shape of space is an input, and that
+  input is what the cubic lattice would otherwise have supplied. The D96^3 requirement was ABSORBED, not removed.
+
+**DEFECT FOUND WHILE CHECKING.** The figure **A0 = 20 812 eigenspaces** that group G cites for D96^3 (G_002,
+G_005, G_006, DensityField, SpectralCaseCatalog, AT.App, AT.Book) is **NOT an invariant**. It is the count of
+distinct binary64 sums from the implementation's `Dictionary<double,int>` keying, so it depends on the last bits
+of `Math.Cos`: the SAME IEEE-754 algorithm gives **20 812** (.NET) and **20 440** (Python), and a one-ulp
+(1e-16) perturbation of the 1D spectrum swings it over **20 488 ... 21 369** (range 881). The **ROBUST** count -
+plateau across 7-10 decimal places, spread **0** under 1e-16 and 1e-13 noise - is **16 080**, which is M_012's
+own figure AND the value the repo uses elsewhere (`NewChat_Start`: "D96^3 136 005 of **868 656**";
+868 656 = 884 736 - 16 080). The two lineages never met. Free room / L: 863 924 / 0.976477 (artifact) versus
+868 656 / 0.981825 (robust). The QUALITATIVE conclusion (D96^3 is ~98 % energy-free) SURVIVES; the specific
+numbers (20 812, 863 924, L = 0.97648, and lock release 3.948614 derived from them) do NOT. NOT FIXED here
+deliberately: the keying is shared infrastructure consumed by other research groups, so changing it renumbers
+A0 programme-wide and is a programme-level decision. Registered as an open item.
+
+Tests: `Y_G_033_Tests` 5/5. Group G: **265/265**.
+
 ## Latest Repo Sync
 
 Recent commits from the other machine:
