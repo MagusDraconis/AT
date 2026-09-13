@@ -165,6 +165,14 @@ defect in this repository; the canonical exemplars are given so the rule can be 
    treated as physical in one line and as a removable offset in another (`(n_eff − 2)·v` vs `n_eff·G·M/r²`), that
    is a defect to report, not a convention to accept. Corollary of rule 5: the same audit must be re-checked
    **against the source**, not only against the prose, whenever the source still exists.
+11. **A scanner must exclude the audit's own derivation — and every audit source that reproduces a result.**
+   E_002's core file derives the sourced Maxwell equation and a massless vacuum wave equation *by hand*, in order
+   to test whether AT has them. E_001's whole-tree scan counted them, and **two E_001 tests failed**: its two
+   `Missing` components acquired `DocumentedCount 3/7` and `ExecutableCount 0/2`, so E_001 momentarily concluded
+   AT *has* a computable massless spin-1 wave equation — the exact opposite of its own finding. Adding the file to
+   E_001's `SelfFiles` fixed it. This is the G_033/G_035 `SelfId` pattern and it generalises: **an audit that
+   DERIVES a standard result will otherwise be read as evidence that the theory CONTAINS it.** Whenever a new
+   audit source is added under `AT.Core`, check every existing whole-tree scanner for a self-reference shift.
 
 # AT Project Memory Rules
 

@@ -124,10 +124,18 @@ public static class ElectromagnetismInventoryAudit
     /// vocabulary as evidence (`MinimalRouteToMaxwell()` alone would make "Maxwell" look computed). The same
     /// self-reference G_033 had to triage out of its substrate scan.
     /// </summary>
+    /// <summary>
+    /// Audit sources are EXCLUDED from the scan: an audit's own vocabulary is not evidence about AT, and an audit
+    /// that derives a standard result must not be counted as the theory containing that result. This is the
+    /// self-reference hazard G_033/G_035 handle with an explicit exclusion, and E_002's core file matters here
+    /// especially — it reproduces a massless vacuum wave equation and a sourced Maxwell divergence BY HAND, to
+    /// test whether AT has them. Counting it would invert E_002's own conclusion.
+    /// </summary>
     private static readonly string[] SelfFiles =
     {
         "ElectromagnetismInventoryAudit.cs",
         "AtSourceScan.cs",
+        "FieldEquationDerivationAudit.cs",
     };
 
     // ── The inventory ───────────────────────────────────────────────────────

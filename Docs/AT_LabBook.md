@@ -3262,6 +3262,41 @@ FOUND - affects G_027/G_033/G_035:** their per-line stripper cannot see a multi-
 PROSE counts as executable CODE (live proof: `J_Q`, per-line >= 1 vs whole-file 0); fixed by
 `AT.Core/ResearchXH/AtSourceScan.cs` and they should be re-run with it. Verdict computed (G_027). Group E 7/7.
 
+### ResearchY-E_002 - Field Equation Derivation Audit (BOUNDARY)
+
+Can AT derive an actual field equation — `dF = 0` and `∂F = J` — with **computed** dynamics rather than declared
+strings? **BOTH ARE DERIVABLE, AND THIS AUDIT DERIVES THEM BY COMPUTATION — BUT NOT FROM AT'S PREMISES.** This is
+the follow-up E_001 asked for, and it changes E_001's conclusion from "absent" to "unearned".
+
+`dF = 0` is an **identity**: with F = dA the cyclic sum vanishes for ANY A because partials commute, and on a
+uniform grid it vanishes **EXACTLY** — the cross second-differences cancel term by term — so the residual is
+**roundoff and flat in h** (2.776e-16 at h = 0.4 to 5.551e-15 at h = 0.01). It is an *algebraic cancellation*, not
+a converging discretisation error, and **it is not a dynamical achievement**: it costs nothing and is available to
+anyone who writes F = dA. Its only content is *no magnetic charge*, exhibited by fields that FAIL it — a
+directly-built antisymmetric F (residual 2.0, constant in h) and the radial `B = r̂`, whose divergence is `2/r`
+(computed 4.64–4.78).
+
+`∂F = J` is derived **in full** by actually performing the variation: on a periodic 4-D lattice the action
+`S = Σh⁴[−¼F² − J·A]` is differentiated link by link by brute force (perturb one link, recompute S twice), giving
+**3.945e-12** relative agreement with the closed form, and a stationarity residual of **4.036e-12** when J is built
+from A against **33.76** when it is not. Since `dS/dA_ν(y) = h³Σ_μ[F_μν(y) − F_μν(y−μ̂)] − h⁴J_ν(y)`,
+**stationarity of the action IS the sourced Maxwell equation.** Continuity follows twice over: by antisymmetry
+(**1.554e-14**, with the field-sourced current conserved to **3.309e-16**) and by gauge invariance (direct
+**8.917034e-1** vs divergence form **8.917034e-1**, agreement **8.771e-15**), the control being a periodic
+non-conserved current with `|∂J| = 2.5` against the analytic `2π/L = 2.618`. Gauge invariance also forbids the
+photon mass (Maxwell density invariant to **2.235e-13**, Proca moving by **5.017e-1**), and the dispersion
+`ω = c|k|` follows from the field equation (**8.327e-9** null vs **1.539e-1** non-null, analytic 0.1539, in
+**Minkowski** signature). But AT's only computable massless wave equation is the **spin-2** `□ψ_μν = 0`.
+
+**WHY BOUNDARY.** The derivation runs on the action principle, locality, 4-D counting and Lorentz invariance —
+premises AT does not supply — and the coupling that would fix the normalisation contradicts itself inside AT
+(QG162's `1/α = 95 + 42 = 137` against `FineStructureAnalyzer`'s ~100). AT computes **0** field strengths and
+declares **6** as strings. **E_001's defect is therefore one of METHOD, not impossibility:** the Lagrangian AT
+writes down is the standard one, its field equation is the standard one, and both are correct — nobody had
+performed the variation, so AT never earned what it wrote down. Three of the audit's own errors were caught by its
+own tests (the 1e-6 → 1e-2 brute-force step; a non-periodic control; a Euclidean dispersion check) and are
+recorded rather than silently fixed. Verdict computed (G_027). Suite 6/6. Group E 13/13.
+
 ### ResearchY-G_037 - Refractive Lens Audit (REFUTED)
 
 Can light bend WITHOUT space bending, via an effective refractive index (the TRM-era idea,

@@ -2167,7 +2167,65 @@ inventory of charge, current, gauge symmetry, Maxwell equations, vector potentia
   a Fick/drift form), stated ONLY in prose, with no gauge index and no coupling to A_μ. A candidate PRECURSOR of the
   electromagnetic current, not that current.
 
-Tests: `Y_E_001_Tests` 7/7. Group E: **7/7**.
+Tests: `Y_E_001_Tests` 7/7. Group E: **13/13**.
+
+## ResearchY-E_002 - Field Equation Derivation Audit (COMPLETE, BOUNDARY)
+
+**AT CAN DERIVE THE FIELD EQUATION - BY STANDARD MEANS, WHICH IS NOT THE SAME AS DERIVING IT.** E_001 found the
+dynamics *declared, never computed*. E_002 asks the follow-up directly: can AT derive `dF = 0` and
+`∂F = J`? **Both are derivable, and this audit derives them by computation rather than asserting them - but the
+premises the derivation needs are not AT's.**
+
+- **`dF = 0` IS AN IDENTITY, AND IT IS FREE.** With F = dA the cyclic sum vanishes for ANY A because partials
+  commute - and on a uniform grid it vanishes **EXACTLY**, because the cross second-differences cancel term by
+  term. The computed residual is **5.551e-15, ROUNDOFF and FLAT in h** (2.776e-16 at h = 0.4, 5.551e-15 at
+  h = 0.01) - an *algebraic cancellation*, not a converging discretisation error. **It is not a dynamical
+  achievement**: it costs nothing and is available to anyone who writes F = dA. Its only CONTENT is *"no magnetic
+  charge"*, demonstrated by fields that FAIL it - a directly-built antisymmetric F (residual **2.0**, constant in
+  h) and the radial `B = r̂`, whose divergence is `2/r` (computed **4.64-4.78**), so `B = r̂` is not any curl.
+- **`∂F = J` IS DERIVED HERE, IN FULL - BY ACTUALLY DOING THE VARIATION.** The audit builds
+  `S = Σ h⁴[−¼F_μνF_μν − J_μA_μ]` on a periodic 4-D lattice and computes `∂S/∂A_ν(y)` by **brute force**
+  (perturb one link, recompute the whole action twice). Brute force vs the closed form agrees to **3.945e-12**
+  relative (absolute 1.364e-12), and with `J` built from `A` the stationarity residual is **4.036e-12** against
+  **33.76** when the EOM is not satisfied. Since `dS/dA_ν(y) = h³Σ_μ[F_μν(y) − F_μν(y−μ̂)] − h⁴J_ν(y)`,
+  **stationarity of the action IS `∂_μF^μν = J^ν`.** Computed dynamics - the element E_001 found missing.
+- **CONTINUITY IS DERIVED TWICE, INDEPENDENTLY.** (a) Antisymmetry: `∂_ν∂_μF^μν = 0` (residual **1.554e-14**), and
+  the field-sourced current `J := ∂F` is automatically conserved (relative divergence **3.309e-16**).
+  (b) Gauge invariance: `ΔS_c = −Σh⁴χ ∂_μJ^μ`, direct change **8.917034e-1** against the divergence form
+  **8.917034e-1**, agreement **8.771e-15** - so invariance for every χ forces `∂_μJ^μ = 0`. Control: a
+  lattice-periodic non-conserved current has `|∂J| = 2.5` against the analytic `2π/L = 2.618`.
+- **THE PHOTON SECTOR IS DERIVED-FROM-GIVEN, ABSENT-AS-DERIVED.** Gauge invariance forbids the mass: the Maxwell
+  density moves by **2.235e-13** under `A → A + ∂χ` while the Proca density moves by **5.017e-1**. The
+  dispersion follows from the field equation - for `A_ν = ε_νcos(k·x)`, `ε·k = 0`, in **Minkowski** signature the
+  divergence is `ε_ν(ω² − κ²)cos(k·x)`, so **8.327e-9** at the null wave vector against **1.539e-1** (analytic
+  0.1539) for a non-null one. So `ω = c|k|` and the photon is **exactly massless** - *if* U(1) is a gauge
+  symmetry. But AT's only computable massless wave equation is the **spin-2** `□ψ_μν = 0`; numeric massless
+  spin-1 wave equations in AT.Core: **0**.
+- **WHY BOUNDARY RATHER THAN DERIVED.** The derivation runs on the **action principle, locality, 4-D dimensional
+  counting and Lorentz invariance** - premises AT does not supply - and the coupling that would fix the
+  normalisation **contradicts itself inside AT** (QG162: `1/α = 95 + 42 = 137`, 0.03 % of 137.036, against
+  `FineStructureAnalyzer`'s ~100, whose own review calls α "the LARGEST REMAINING FREE PARAMETER"). AT computes
+  **0** field strengths and declares **6** as strings.
+- **THE FINDING THAT MATTERS: E_001's defect is one of METHOD, NOT IMPOSSIBILITY.** The Lagrangian AT writes down
+  is the standard one, its field equation is the standard one, and both are **correct** - nobody had performed the
+  variation. AT never *earned* what it wrote down.
+- **THREE OF THE AUDIT'S OWN ERRORS WERE CAUGHT BY ITS OWN TESTS WHILE RUNNING IT**, and are recorded rather than
+  silently fixed: (1) the brute-force step must be **1e-2, not 1e-6** - `S` is exactly quadratic in `A`, so the
+  central difference is exact for any step and 1e-6 reported the roundoff floor (3.6e-8) as a disagreement;
+  (2) the non-conserved control must be **lattice-periodic**, since `J_0 = x₀` makes the forward difference report
+  the wrap jump (5) instead of the derivative; (3) the dispersion check must use **Minkowski** signs - Euclidean
+  `k² = ω² + κ²` has no real null vector, and a Euclidean draft reported 1.62 where zero was expected.
+
+- **A FOURTH SELF-INFLICTED FINDING, AND IT IS METHODOLOGICAL: AN AUDIT'S OWN DERIVATION MUST BE EXCLUDED FROM
+  OTHER AUDITS' SCANS.** This audit's core file reproduces a sourced Maxwell divergence and a massless vacuum
+  wave equation *by hand*, to test whether AT has them. E_001's whole-tree scan counted them and **two E_001 tests
+  failed** — its two `Missing` components picked up `DocumentedCount 3/7` and `ExecutableCount 0/2`, i.e. E_001
+  briefly concluded AT *has* a computable massless spin-1 wave equation, the exact opposite of its own finding.
+  Fixed with the established self-reference exclusion (`FieldEquationDerivationAudit.cs` added to E_001's
+  `SelfFiles`, reason recorded in the code). **General rule: an audit that DERIVES a standard result will
+  otherwise be read as evidence that the theory CONTAINS it.**
+
+Tests: `Y_E_002_Tests` 6/6. Group E: **13/13**.
 
 ## Build Dependency — ImageSharp replaced by SkiaSharp (2026-09-13, architectural)
 
