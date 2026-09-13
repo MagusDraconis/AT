@@ -382,6 +382,15 @@ public static class TemporalIndependenceAudit
             + "every statement is about rho, the spectral substrate and its group. NOT symbol-detectable: the "
             + "suite's vocabulary is cells, channels, irreps, ranks and contractions, not B/g_rr/GammaOf",
             ScanDetectsIt: false),
+
+        // ── G_041: the substrate dimension — is d = 3 selected, or assumed? ──
+        new SectorClaim("Y_G_041", "Substrate Dimension", MetricRequirement.ClockOnly,
+            "it asks whether d = 3 is selected by the substrate, and every statement is group-theoretic or a "
+            + "statement about the clock law rho^(1/d): the signed-permutation groups B_d and their irrep "
+            + "dimension spectra, character inner products over those groups, the eps/Hodge dimension accident, "
+            + "polarisation counts, and the rate the same rho gives at d = 2, 3 and 4. NOT symbol-detectable: "
+            + "the suite names no B, g_rr or GammaOf — its vocabulary is groups, irreps, characters and clocks",
+            ScanDetectsIt: false),
     };
 
     // ── The computed classification summaries ───────────────────────────────

@@ -3456,6 +3456,56 @@ Registry: `ClockOnly` → **SURVIVES**, `ScanDetectsIt: false`; counts **27/11/3
 stands — G_040 explains its measurability finding rather than revising it. No reclassification. G_033's live
 classifier now reads **22** substrate suites (39 classified in total), because this suite recomputes the D96 ring
 spectrum.
+### ResearchY-G_041 - Substrate Dimension Audit (BOUNDARY)
+
+Is the substrate dimension d = 3 selected by the theory, or assumed? AT needs the ring (d = 1) and, per G_033,
+the cube (d = 3) — what do D96^2 and D96^4 do? The family is **D96^d**, the d-fold tensor product of the same
+96-cell circulant, whose symmetry is the **signed-permutation group B_d = C2^d : S_d** of order 2^d·d! — and
+**B_3 is exactly the cubic group O_h of order 48**, the group E_003/E_004/G_033 used. The d = 1 row is different:
+AT's ring is **periodic**, so its symmetry is **dihedral of order 192** (E_003's 4 + 47 budget).
+
+**The two halves of the answer point opposite ways.**
+
+**The ladder, computed.** The groups are constructed and checked for distinctness; the irrep dimension spectra come
+from the pair-of-partitions classification, `dim(λ,μ) = C(d,|λ|)·f^λ·f^μ` by hook lengths; and **Burnside's sum
+rule Σ d_i² = |G| is verified as an identity for every d** rather than assumed. Maximum irrep dimension: **2** (ring,
+order 192) · **2** (d = 2, order 8) · **3** (d = 3, order 48) · **8** (d = 4, order 384) · **20** (d = 5) · **80**
+(d = 6).
+
+**D96² fails exactly as the ring fails — G_033 strengthened.** A dimension-3 irrep is what the photon (T1) and the
+trace-free metric sector (T2) need, and the square torus supplies at most 2. So **the cube is the minimal working
+dimension, not merely the chosen one.**
+
+**But the irrep-supply argument does not *select* d = 3 — the negative result, and the part the programme has been
+leaning on.** Character inner products over the group give the **same signature at every d ≥ 2**: `⟨V,V⟩ = 1` (the
+vector is irreducible everywhere), `⟨W,W⟩ = 2` (the traceless sector always splits into exactly two pieces — so
+E_003's E + T2 was never a d = 3 coincidence), `⟨V,W⟩ = 0` and `⟨V,A⟩ = 0` (the sectors never mix). That signature
+is **dimension-blind**: it selects **d ≥ 3**, not d = 3. The only property that does break is that the vector stops
+being the largest irrep — max irrep dimension equals d for d = 1, 2, 3 and then jumps to 8 and 20.
+
+**Two independent accidents do pin d = 3, and both are computed over the whole ladder:**
+
+| selector | unique to | d = 2 | d = 4 |
+|---|---|---|---|
+| **ε/Hodge**: dim Λ² = dim V | **d = 3** (3 = 3) | **1 — a scalar** | 6 |
+| **polarisation match**: photon d−1 = graviton (d+1)(d−2)/2 | **d = 3** (2 = 2) | **1 vs 0 — no graviton** | 3 vs 5 |
+
+The ε accident is precisely the axial T2(3) structure E_003 and G_033 require; the polarisation match is why
+electromagnetism and gravity share the two-polarisation story in four dimensions.
+
+**And the choice is observable.** The clock law is `dτ/dt = ρ^(1/d)`, so the exponent *is* the dimension: the same
+20:1 contrast gives **129 415.634 / 86 277.089 / 64 707.817 s/day** at d = 2/3/4, with **9 216 / 884 736 /
+84 934 656 modes**. The 86 277.089 figure quoted by G_016b, G_039 and G_040 **is a d = 3 number**.
+
+**Hypothesis weakened and recorded rather than smoothed over.** G_033's positive claim stands and is strengthened;
+what is weakened is any reading that treats "the cube supplies T1(3) and T2(3)" as *selecting* d = 3 — d = 4 is not
+excluded by the representation theory, only by the two accidents, the polarisation mismatch, the clock exponent and
+cost (96×). Caveats: the d = 1 row must use the dihedral group (a periodic ring is not B₁), and the irrep spectra
+here are **exact** finite-group quantities, so this audit is immune to the A₀ robustness problem G_033 documented
+for spectral level counting.
+
+Registry: `ClockOnly` → **SURVIVES**, `ScanDetectsIt: false`; counts **28/11/3 of 42**. No reclassification. G_033's
+live classifier now reads **23** substrate suites (40 classified in total).
 ### ResearchY-G_037 - Refractive Lens Audit (REFUTED)
 
 Can light bend WITHOUT space bending, via an effective refractive index (the TRM-era idea,

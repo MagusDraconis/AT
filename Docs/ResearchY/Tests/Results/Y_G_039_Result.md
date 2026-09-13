@@ -86,4 +86,4 @@ Counts become **26 / 11 / 3 of 40**; boundary index unchanged.
   cast of a floating-point trace.
 - **A fourth slip was caught by G_033's live scanner**: the constants were named `Cells`/`Radius`, so the D96
   scanner filed this audit with the D96-free (metric / closure) era even though it recomputes the D96 ring
-  spectrum. Renamed to `D96Cells`; G_033 counts become **22 substrate / 16 D96-free / 1 comment-only**.
+  spectrum. Renamed to `D96Cells`; G_033 counts become **23 substrate / 16 D96-free / 1 comment-only**.

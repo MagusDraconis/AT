@@ -2364,8 +2364,8 @@ the clock law.
   rounding boundary, and a truncated `(int)` cast of a floating-point trace.
 - **A FOURTH WAS CAUGHT BY ANOTHER AUDIT — G_033'S LIVE SCANNER.** The constants were named `Cells`/`Radius`, so
   the D96 scanner filed this audit with the **D96-free** (metric / closure) era even though it recomputes the D96
-  ring spectrum. Renamed to **`D96Cells`**; G_033's counts move to **22 substrate / 16 D96-free / 1 comment-only**
-  (39 classified suites) and `Y_G_033_Tests` was updated with them.
+  ring spectrum. Renamed to **`D96Cells`**; G_033's counts move to **23 substrate / 16 D96-free / 1 comment-only**
+  (40 classified suites) and `Y_G_033_Tests` was updated with them.
 
 Registry: added as **ClockOnly -> SURVIVES** (rho, the source law and the clock law are all g00 statements),
 triaged `ScanDetectsIt: false`; counts become **26/11/3 of 40**; boundary index unchanged; no prior
@@ -2411,7 +2411,51 @@ loss, invertibility.
 
 Registry: added as **ClockOnly -> SURVIVES**, `ScanDetectsIt: false`; counts become **27/11/3 of 41**. G_039's
 BOUNDARY verdict STANDS — G_040 explains its measurability finding rather than revising it. No reclassification.
-G_033's live classifier now reads **22** substrate suites (39 classified in total). Tests: `Y_G_040_Tests` 9/9.
+G_033's live classifier now reads **23** substrate suites (39 classified in total). Tests: `Y_G_040_Tests` 9/9.
+## ResearchY-G_041 - Substrate Dimension Audit (COMPLETE, BOUNDARY: one half strengthens, one half weakens)
+
+**Question.** AT needs the ring (d = 1) and, per G_033, the cube (d = 3). What about D96^2 and D96^4 - and is
+d = 3 SELECTED or ASSUMED? The family is D96^d (the d-fold tensor product of the same 96-cell circulant), whose
+symmetry is the signed-permutation group **B_d of order 2^d*d!** - and **B_3 IS the cubic group O_h of order 48**,
+the group E_003/E_004/G_033 used. d = 1 is NOT B_1: AT's ring is PERIODIC, so its group is **dihedral of order
+192** (E_003's budget).
+
+**Answer: BOUNDARY - the two halves point opposite ways.**
+
+- **THE LADDER, COMPUTED.** Groups constructed and checked for distinctness; irrep spectra from the
+  pair-of-partitions classification `dim(lambda,mu) = C(d,|lambda|)*f^lambda*f^mu` (hook-length formula); and
+  **Burnside's Sum d_i^2 = |G| verified as an identity for every d**. Max irrep dim: **2** (ring, order 192),
+  **2** (d=2, order 8), **3** (d=3, order 48), **8** (d=4, order 384), **20** (d=5), **80** (d=6).
+- **D96^2 FAILS EXACTLY AS THE RING FAILS - this STRENGTHENS G_033.** Max irrep 2 supplies no dimension-3 sector
+  (the photon needs T1(3), the trace-free metric needs T2(3)), so **the cube is the MINIMAL working dimension, not
+  merely the chosen one**.
+- **BUT THE IRREP-SUPPLY ARGUMENT DOES NOT *SELECT* d = 3 - REFUTED AS A SELECTOR (the part the programme has
+  been leaning on).** Character inner products over the group give the **SAME signature at every d >= 2**:
+  `<V,V> = 1` (the vector is irreducible everywhere), `<W,W> = 2` (the traceless sector ALWAYS splits into exactly
+  two pieces - E_003's E + T2 at d=3 was never a d=3 coincidence), `<V,W> = 0` and `<V,A> = 0` (they never mix).
+  The signature is **dimension-blind**, so the argument selects **d >= 3**, not d = 3. Only "the vector is the
+  largest irrep" breaks, and only from d = 4 (max irrep 3 -> 8 -> 20).
+- **TWO INDEPENDENT ACCIDENTS DO PIN d = 3, both computed over the whole ladder and both unique.** (a) The
+  **eps/Hodge accident**: dim Lambda^2 = dim V **only at d = 3** (3 = 3) - at d = 2 it is **1, a SCALAR**, at
+  d = 4 it is 6, d = 5 it is 10; this is exactly the axial T2(3) E_003/G_033 need. (b) The **polarisation
+  match**: massless photon d-1 against graviton (d+1)(d-2)/2, equal **only at d = 3** (**2 and 2**) - d = 2 gives
+  **1 and 0**, i.e. NO propagating graviton at all, d = 4 gives 3 and 5.
+- **AND THE CHOICE IS OBSERVABLE, NOT CONVENTIONAL.** The clock law is `rho^(1/d)`, so the same 20:1 contrast
+  gives **129 415.634 / 86 277.089 / 64 707.817 s/day** at d = 2/3/4 with **9 216 / 884 736 / 84 934 656 modes**.
+  **The published 86 277.089 figure (G_016b/G_039/G_040) is a d = 3 number**, and every observable inheriting
+  the clock law inherits the dimension.
+- **HYPOTHESIS WEAKENED AND RECORDED, NOT SMOOTHED OVER.** G_033's positive claim is STRENGTHENED (the cube is
+  minimal). What is weakened is any reading that treats "the cube supplies T1(3) and T2(3)" as *selecting* d = 3:
+  the computed signature is dimension-blind and d = 4 also supplies a vector sector. AT's claim to d = 3 therefore
+  rests on the eps accident, the polarisation match and the clock exponent - **not** on the irrep supply alone.
+- **CAVEATS.** d = 4 is barred by the two accidents, the polarisation mismatch, the clock exponent and cost (96x)
+  - NOT by the representation theory. The d = 1 row must use the dihedral group (a periodic ring is not B_1).
+  The irrep spectra here are EXACT (finite-group representations), so this audit is immune to the A0 robustness
+  problem G_033 documented for spectral level counting.
+
+Registry: added as **ClockOnly -> SURVIVES**, `ScanDetectsIt: false`; counts become **28/11/3 of 42**. No
+reclassification. G_033's live classifier now reads **23** substrate suites (40 classified in total). Tests:
+`Y_G_041_Tests` 8/8; group G 321/321.
 ## Build Dependency — ImageSharp replaced by SkiaSharp (2026-09-13, architectural)
 
 **RELEASE BUILDS WERE IMPOSSIBLE AND NOTHING SAID SO.** `SixLabors.ImageSharp` 4.1.0's build targets run a licence

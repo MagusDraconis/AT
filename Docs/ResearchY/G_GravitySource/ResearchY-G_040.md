@@ -150,4 +150,4 @@ BOUNDARY verdict. The D_040 registry is untouched; no canonical claim, value or 
 primitive is added.
 
 **One scanner side-effect, recorded:** the new suite recomputes the D96 ring spectrum, so G_033's live classifier
-now reads **22** substrate suites instead of 21 (39 classified suites in total).
+now reads **23** substrate suites instead of 21 (39 classified suites in total).

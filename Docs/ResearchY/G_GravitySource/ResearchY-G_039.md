@@ -146,7 +146,7 @@ rounding boundary, and a truncated `(int)` cast of a floating-point trace.
 group-G suites and separates code from comments, so that a new audit is classified automatically rather than by
 hand. This audit's constants were named `Cells`/`Radius`, so the scanner filed it with the **D96-free** audits —
 the metric / closure era — even though it recomputes the D96 ring spectrum. Renaming the constant to `D96Cells`
-restores the correct reading and moves the G_033 counts to **22 substrate / 16 D96-free / 1 comment-only**. The
+restores the correct reading and moves the G_033 counts to **23 substrate / 16 D96-free / 1 comment-only**. The
 mistake was a naming one, and it is precisely what G_033's live scan exists to expose: a classifier is only as
 good as the names the audited code uses.
 
