@@ -4107,3 +4107,46 @@ assigned**.
 
 **Status:** COMPLETE. Tests `Y_E_010_Tests` **7/7**; group E **69/69**. No group-G registry claim, so no counts
 change.
+
+
+### ResearchY-E_011 - Flux Origin Audit (DERIVED)
+
+**Question.** What generates the surviving non-trivial loop flux `F = 2 pi / 96`? Candidates: occupancy structure, D96
+topology, winding number, actualization process, boundary assignment. Requirements: survives continuum limit, gauge
+compatible, local, acts on T1/T2. Measure flux, holonomy, field strength.
+
+**Answer: DERIVED** - the origin is **D96's closed topology** plus the **compactness of the phase**; `2 pi / 96` is
+the substrate's **cycle length speaking**.
+
+#### The two ingredients
+
+| ingredient | measurement |
+|---|---|
+| closed cycle makes the holonomy gauge-proof | gauge contribution telescopes to **2.498E-016** (L = 96), **0.000E+000** (L = 17) |
+| compact phase quantises the flux | residuals **2.4E-016 / 4.9E-016 / 7.3E-016** for n = 1/2/3; **half a sector NOT periodic** |
+
+#### The quantum is the cycle length
+
+| L | 8 | 16 | 32 | **96** |
+|---|---|---|---|---|
+| `2 pi / L` | 0.785398163 | 0.392699082 | 0.196349541 | **0.065449847** |
+| quantum x L | 6.283185307 | 6.283185307 | 6.283185307 | 6.283185307 |
+
+E_007's figure **reproduced**, not quoted.
+
+#### Candidates
+
+occupancy structure **REFUTED** (E_010 exponents 2.92 / 0.99) | **D96 topology DERIVED** | winding number **REFUTED**
+(a gradient: zero curvature AND a whole-turn holonomy) | actualization process **REFUTED** (time-like only) |
+boundary assignment **BOUNDARY** (the integer sector).
+
+#### What exactly survives
+
+cycle holonomy **6.283185307** = one whole turn = the identity (**2.45E-016** from it); plaquette holonomy
+**6.544E-002** - **local curvature, not a topological charge**. At fixed sector the strength falls as **1/L**
+(0.785398163 → 0.065449847), and a non-trivial configuration exists at **every** size: what survives refinement is
+the **existence** of the configuration, not its magnitude. **The origin is identified; the magnitude is a property of
+how coarse the loop is.**
+
+**Status:** COMPLETE. Tests `Y_E_011_Tests` **7/7**; group E **76/76**. No group-G registry claim, so no counts
+change.

@@ -2741,6 +2741,31 @@ acts on T1/T2. **Determine: can magnetic components emerge from occupancy dynami
   that compared two different profiles now runs on E_009's own organisation, reproducing its published 1.424E-002.
 
 No group-G registry claim, so claim counts are unchanged. Tests: `Y_E_010_Tests` 7/7; group E 69/69.
+## ResearchY-E_011 - Flux Origin Audit (COMPLETE, DERIVED)
+
+**Question.** What generates the surviving non-trivial loop flux F = 2 pi / 96? Candidates: occupancy structure, D96
+topology, winding number, actualization process, boundary assignment. Requirements: survives continuum limit, gauge
+compatible, local, acts on T1/T2. Measure flux, holonomy, field strength.
+
+**Answer: DERIVED - the origin is D96's own CLOSED TOPOLOGY plus the COMPACTNESS OF THE PHASE; 2 pi / 96 is the
+substrate's cycle length speaking.**
+
+- **TWO INGREDIENTS, BOTH COMPUTED.** (1) A CLOSED CYCLE makes the holonomy gauge-proof: a single-valued gauge
+  function's contribution telescopes to zero - **2.498E-016** at L = 96, **0.000E+000** at L = 17 - the exact
+  complement of E_008's theorem for contractible loops. (2) A COMPACT PHASE quantises the flux: `f L = 2 pi n`, with
+  periodicity residuals 2.4E-016 / 4.9E-016 / 7.3E-016 for n = 1/2/3 and **half a sector NOT periodic**.
+- **THE QUANTUM IS THE CYCLE LENGTH:** 2 pi/L = 0.785398163 (8), 0.392699082 (16), 0.196349541 (32), **0.065449847
+  (96)**, with quantum x L = 6.283185307 every time; E_007's figure **reproduced** (agreement 1E-15).
+- **CANDIDATES:** occupancy structure **REFUTED** (E_010 exponents 2.92 / 0.99); **D96 topology DERIVED**; winding
+  number **REFUTED twice over** (a gradient - zero curvature - and a whole-turn holonomy, 2.45E-016 from the
+  identity); actualization process **REFUTED** (time-like component only); boundary assignment **BOUNDARY** (the
+  integer sector label).
+- **WHAT SURVIVES IS MEASURED:** cycle holonomy **6.283185307** = one whole turn = the IDENTITY, while the plaquette
+  holonomy is non-trivial at **6.544E-002** - so the flux's content is **local curvature, not a topological charge**;
+  and at fixed sector the strength falls as **1/L**, so what survives is the **existence** of the configuration, not
+  its magnitude.
+
+No group-G registry claim, so claim counts are unchanged. Tests: `Y_E_011_Tests` 7/7; group E 76/76.
 ## ResearchY-G_045 - Observed vs Hidden Dimension Audit (COMPLETE, REFUTED)
 
 **Question.** Can the apparent 3D world emerge as a PROJECTION of a higher-dimensional ACTUALIZATION SPACE?
