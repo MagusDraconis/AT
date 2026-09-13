@@ -3970,3 +3970,48 @@ the test and eight texts. E_005's verdict and all its other numbers are unchange
 **Status:** COMPLETE. Tests `Y_E_007_Tests` **7/7**; group E **48/48**. No group-G registry claim, so no counts
 change. Layers: kinematics DERIVED (E_006, flat on its own) | field-strength detection DERIVED HERE | dynamics STILL
 MISSING.
+
+
+### ResearchY-E_008 - Field Excitation Audit (DERIVED)
+
+**Question.** What AT mechanism produces a non-zero field strength F? Requirements: local / gauge-compatible / acts on
+T1 and T2 / no new primitive. Candidates: occupancy gradients, actualization gradients, deficit gradients, non-uniform
+rho, topological defects.
+
+**Answer: DERIVED** - a dichotomy exact on both sides.
+
+#### F = 0 versus F != 0
+
+| form | coupling | max |F| | verdict |
+|---|---|---|---|
+| `Delta_mu H(rho)` | H = rho / rho^2 / exp / sin | 2.22E-016 - 2.50E-016 | **F = 0** |
+| `h(rho) Delta_mu rho` | h = 1 (constant) | 2.22E-016 | **F = 0** - that *is* the gradient |
+| `h(rho) Delta_mu rho` | h = rho / rho^2 / exp | **0.626 / 0.778 / 1.126** | **F != 0** |
+| `h(rho(x))` site-local | h = rho / rho^2 | **1.063 / 1.595** | **F != 0** |
+| `mu h(rho(x))` directional | h = rho | **2.583** | **F != 0** |
+
+Closed form of the survivor, verified against the plaquette sum (residual **3.33E-016**):
+**`F_mu_nu = h(rho(x+mu)) - h(rho(x+nu))`**.
+
+#### Candidate verdicts
+
+occupancy gradients **REFUTED** | actualization gradients **REFUTED** | deficit gradients **REFUTED** |
+**non-uniform rho DERIVED** (read locally, not through its gradient) | topological defects **REFUTED as a gradient
+construction** (winding phase pure gauge at **6.11E-016** over all plaquettes, cut included; the wrapped variant's
+**16** lit plaquettes are all whole turns - largest **6.283185**, total **0** - i.e. the identity, so a real defect
+needs an independently assigned link configuration, the same mechanism).
+
+#### Requirements
+
+local (support 2) | gauge-compatible (**5.55E-016**) | acts on T1 and T2 (antisymmetric square = vector irrep at
+d = 3; symmetric square = A1 + E + T2) | no new primitive (organisation **30** members, link phase **5**, winding
+**1** - AT already computes a winding number).
+
+#### Errors caught by the tests
+
+A **separable** test field made the product form look like F = 0 - an artefact of the test function, not a theorem;
+re-probing with a non-separable organisation gave 0.626. And an unsubstituted `.Replace()` placeholder printed
+`{NoNewPrimitiveIsNeeded()}` into the report.
+
+**Status:** COMPLETE. Tests `Y_E_008_Tests` **7/7**; group E **55/55**. No group-G registry claim, so no counts
+change. Open: which coupling, and what makes the organisation non-uniform - the dynamics layer.

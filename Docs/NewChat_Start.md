@@ -2661,6 +2661,34 @@ that can carry a field strength at all.**
 
 Layers: kinematics DERIVED (E_006) but flat on its own; field-strength detection DERIVED HERE; dynamics STILL MISSING.
 No group-G registry claim, so claim counts are unchanged. Tests: `Y_E_007_Tests` 7/7; group E 48/48.
+## ResearchY-E_008 - Field Excitation Audit (COMPLETE, DERIVED)
+
+**Question.** What AT mechanism produces a non-zero field strength F? Requirements: local, gauge-compatible, acts on
+T1 and T2, no new primitive. Candidates: occupancy gradients, actualization gradients, deficit gradients, non-uniform
+rho, topological defects.
+
+**Answer: DERIVED - a dichotomy exact on both sides: every gradient is exactly pure gauge, and F != 0 requires a
+NON-DIFFERENCE coupling. The survivor is NON-UNIFORM RHO read LOCALLY.**
+
+- **THE NEGATIVE SIDE IS A THEOREM.** `Delta_mu H(rho)` for ANY single-valued H telescopes to zero around every
+  plaquette: residual **2.50E-016** across H = rho, rho^2, exp(rho), sin(rho) on a NON-SEPARABLE organisation. That
+  refutes occupancy, actualization and deficit gradients for every coupling function at once.
+- **THE POSITIVE SIDE IS EQUALLY EXACT.** `h(rho)Delta rho` with h constant -> **2.22E-016** (that IS the gradient);
+  h = rho/rho^2/exp -> **0.626 / 0.778 / 1.126**; site-local `h(rho(x))` -> **1.063** (rho^2: 1.595; directional:
+  2.583), with the verified closed form **F_mu_nu = h(rho(x+mu)) - h(rho(x+nu))** (residual 3.33E-016).
+- **THE DEFECT CANDIDATE COLLAPSES INTO IT.** A winding phase is PURE GAUGE (`U_mu = exp(i Delta_mu theta)` IS
+  g(x)^-1 g(x+mu) by construction: **6.11E-016** over all plaquettes, cut included); the wrapped variant's **16** lit
+  plaquettes are all WHOLE TURNS (largest **6.283185** = one turn, total 0) - the identity. A genuine defect needs an
+  independently assigned link configuration: one mechanism, not two.
+- **ALL FOUR REQUIREMENTS HOLD:** local (support 2); gauge-compatible (**5.55E-016**); acts on T1 and T2 (F is in the
+  antisymmetric square = the vector irrep at d = 3; the symmetric square is A1 + E + T2); no new primitive
+  (organisation **30** members, link phase **5**, winding **1** - AT already computes a winding number via
+  `InternalStateAnalyzer.ComputeWindingNumber`).
+- **OPEN:** which coupling, and what makes rho non-uniform - the dynamics layer.
+- **TWO ERRORS CAUGHT BY THE TESTS:** a SEPARABLE test field made the product form falsely look like F = 0; and an
+  unsubstituted `.Replace()` placeholder printed `{NoNewPrimitiveIsNeeded()}` into the report.
+
+No group-G registry claim, so claim counts are unchanged. Tests: `Y_E_008_Tests` 7/7; group E 55/55.
 ## ResearchY-G_045 - Observed vs Hidden Dimension Audit (COMPLETE, REFUTED)
 
 **Question.** Can the apparent 3D world emerge as a PROJECTION of a higher-dimensional ACTUALIZATION SPACE?
