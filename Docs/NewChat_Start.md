@@ -2167,7 +2167,7 @@ inventory of charge, current, gauge symmetry, Maxwell equations, vector potentia
   a Fick/drift form), stated ONLY in prose, with no gauge index and no coupling to A_μ. A candidate PRECURSOR of the
   electromagnetic current, not that current.
 
-Tests: `Y_E_001_Tests` 7/7. Group E: **20/20**.
+Tests: `Y_E_001_Tests` 7/7. Group E: **26/26**.
 
 ## ResearchY-E_002 - Field Equation Derivation Audit (COMPLETE, BOUNDARY)
 
@@ -2225,7 +2225,7 @@ premises the derivation needs are not AT's.**
   `SelfFiles`, reason recorded in the code). **General rule: an audit that DERIVES a standard result will
   otherwise be read as evidence that the theory CONTAINS it.**
 
-Tests: `Y_E_002_Tests` 6/6. Group E: **20/20**.
+Tests: `Y_E_002_Tests` 6/6. Group E: **26/26**.
 
 ## ResearchY-E_003 - Photon Ontology Audit (COMPLETE, BOUNDARY)
 
@@ -2282,7 +2282,42 @@ propagation.
   longitudinal mode is removed - which a **compact** U(1) with a conserved current can do without a Goldstone,
   making AT's finite Z_96 an advantage; (iv) the Maxwell limit is then E_002's derivation, needing no new work.
 
-Tests: `Y_E_003_Tests` 7/7. Group E: **20/20**.
+Tests: `Y_E_003_Tests` 7/7. Group E: **26/26**.
+
+## ResearchY-E_004 - Vector Sector Audit (COMPLETE, BOUNDARY)
+
+**THE T1(3) SECTOR IS A REAL VECTOR SECTOR, AND IT IS NOT YET A GAUGE FIELD.** E_003 located the photon's
+obstruction in representation theory; E_004 shows how far the representation takes you and where it stops. Can
+the D96^3 T1(3) sector support a genuine spin-1 FIELD? Requirements: vector degrees of freedom, two physical
+polarisations, gauge redundancy, massless propagation, Maxwell limit. Compare single D96 against D96^3.
+
+- **REQUIREMENT 1 MET - ON D96^3 ONLY.** `l = 1` subducts onto the octahedral group as a SINGLE multiplet **T1**,
+  dimension **3**, multiplicity **1** - so it is IRREDUCIBLE. The single ring's maximum irrep dimension is **2**,
+  so it has **no vector sector at all**. Requirement 1 is satisfied, by the cubic substrate only.
+- **A LORENTZ 4-VECTOR NEEDS *BOTH* SUBSTRATES - SHARPER THAN E_003.** `A_mu = (A_0, A_i)` reduces as
+  **A1(1) + T1(3) = 4**. The single ring can supply only the timelike `A_0`; the cubic substrate only the spatial
+  `A_i`. **Neither substrate alone can carry a Lorentz vector.**
+- **REQUIREMENT 2 MET GIVEN A REASON TO PROJECT.** The transverse projector `P = I - k k^T` has rank **2** for
+  every one of 12 momentum directions tested, so the three components reduce to two physical states with one
+  removed - *if* there is a reason to remove it.
+- **REQUIREMENT 3 NOT MET - AND THIS IS THE DECISIVE COMPUTATION.** Two quadratic forms live on the SAME
+  three-dimensional space: the **IDENTITY** form `V.V` (rank **3**, kernel **0** -> **three** physical states, a
+  **PROCA** field - and it is the representation's own NATURAL INVARIANT) and the **CURL** form `F_ij F_ij`
+  (matrix `2(I - k k^T)`, rank **2**, kernel **1** -> **two** states, MAXWELL-capable). Evaluated on the modes:
+  the curl form ANNIHILATES the longitudinal mode EXACTLY (**0.000e0**, against 1.000000 for the identity). An
+  irreducible representation has **NO GAUGE ORBIT** - gauge directions: **0 from the representation**, **1 from
+  the field space** (the curl form's gradient kernel). **So T1(3) alone delivers a MASSIVE vector**, and the
+  gauge redundancy must be imposed from outside.
+- **REQUIREMENT 4 MET IN THE LIMIT, NOT ON ANY LATTICE.** The vector sector is gapped: **0.386351** at N = 96.
+  But `mu_min * n^2` settles to **~3591** (12.0 -> 0.02435 as n goes 12 -> 384; spread **0.84 %** for n >= 96),
+  so `mu_min ~ 3591/n^2 -> 0`. **The gap is a FINITE-SIZE ARTEFACT, not a predicted mass.** The cubic gap is
+  **3x** the ring's, by the Cartesian-product sum rule, so it closes too.
+- **REQUIREMENT 5 IMPORTED** - E_002's derivation, from premises that are not AT's.
+- **WHAT IS MISSING IS NOW LOCATED EXACTLY: THE CHOICE OF KINETIC FORM THAT TAKES THREE STATES TO TWO.** Not the
+  phase (E_003 found AT already has one), not the group, and not the vector representation. D96^3 is necessary
+  AND sufficient at the level of REPRESENTATION and insufficient at the level of DYNAMICS.
+
+Tests: `Y_E_004_Tests` 6/6. Group E: **26/26**.
 
 ## Build Dependency — ImageSharp replaced by SkiaSharp (2026-09-13, architectural)
 

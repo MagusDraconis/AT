@@ -3333,7 +3333,40 @@ polarisation count pins the gap: scalar phase → **1**, `∇ρ` → **1**, gaug
 
 **Three self-corrections, all caught by the audit's own tests:** a site-dependent family that degenerated to the
 rigid rotation; a **one-sided** degeneracy bound (49 upper, 45 measured); and the link phase that reconnaissance
-found AT already has. Verdict computed from ten checks. Suite 7/7. Group E 20/20.
+found AT already has. Verdict computed from ten checks. Suite 7/7. Group E 26/26.
+
+### ResearchY-E_004 - Vector Sector Audit (BOUNDARY)
+
+Can the D96³ **T1(3)** sector support a genuine spin-1 **field**? E_003 located the obstruction in representation
+theory; E_004 shows how far the representation takes you and where it stops. **THE T1(3) SECTOR IS A REAL VECTOR
+SECTOR, AND IT IS NOT YET A GAUGE FIELD.**
+
+**Requirement 1 is met — on D96³ only.** `l = 1` subducts onto the octahedral group as a **single** multiplet
+**T1**, dimension **3**, multiplicity **1**, hence **irreducible**; the single ring's maximum irrep dimension is
+**2**, so it has **no vector sector at all**. And a Lorentz 4-vector needs **both** substrates: `A_μ = (A_0, A_i)`
+reduces as **A1(1) + T1(3) = 4**, so the ring can carry only the timelike `A_0` and the cubic substrate only the
+spatial `A_i` — **neither substrate alone can carry a Lorentz vector.**
+
+**Requirement 2 is met given a reason to project:** the transverse projector `P = I − k̂k̂ᵀ` has rank **2** in all
+12 momentum directions tested.
+
+**Requirement 3 is not met, and this is the decisive computation.** Two quadratic forms live on the **same**
+three-dimensional space: the **identity** form (rank **3**, kernel **0** → **three** states, a **PROCA** field —
+and it is the representation's own **natural invariant**) and the **curl** form (matrix `2(I − k̂k̂ᵀ)`, rank **2**,
+kernel **1** → **two** states). On the modes, the curl form **annihilates the longitudinal mode exactly**
+(**0.000e0** against **1.000000** for the identity). An irreducible representation has **no gauge orbit** — gauge
+directions: **0 from the representation**, **1 from the field space**. **So T1(3) alone delivers a massive
+vector.**
+
+**Requirement 4 is met in the limit only.** The sector is gapped — **0.386351** at N = 96 — but `μ_min·n²` settles
+to **≈3591** (12.0 → 0.02435 as n goes 12 → 384; spread **0.84 %** for n ≥ 96), so `μ_min ~ 3591/n² → 0`: the gap
+is a **finite-size artefact, not a predicted mass**. The cubic gap is **3×** the ring's by the Cartesian-product
+sum rule. **Requirement 5 is imported** (E_002).
+
+**What is missing is now located exactly: the CHOICE OF KINETIC FORM that takes three states to two** — not the
+phase (E_003 found AT has one), not the group, not the vector representation. **D96³ is necessary and sufficient
+at the level of REPRESENTATION, and insufficient at the level of DYNAMICS.** Verdict computed from nine checks.
+Suite 6/6. Group E 26/26.
 
 ### ResearchY-G_037 - Refractive Lens Audit (REFUTED)
 

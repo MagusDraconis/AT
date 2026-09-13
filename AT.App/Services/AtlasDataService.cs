@@ -144,6 +144,7 @@ public static class AtlasDataService
         new("Y_E_001_Tests", 7, "PASS", "Electromagnetism"),
         new("Y_E_002_Tests", 6, "PASS", "Electromagnetism"),
         new("Y_E_003_Tests", 7, "PASS", "Electromagnetism"),
+        new("Y_E_004_Tests", 6, "PASS", "Electromagnetism"),
         new("Y_G_037_Tests", 7, "PASS", "Gravity Source"),
         new("Y_G_038_Tests", 7, "PASS", "Gravity Source"),
         ]),
@@ -299,6 +300,35 @@ public static class AtlasDataService
             new("ResearchY-G_033", "PRECEDENT",
                 "G_033 showed the cubic-substrate requirement was absorbed into the primitive eta rather than filled \u2014 the reason the photon inherits gravity's gap.",
                 "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/G_GravitySource/ResearchY-G_033.md"),
+            ]),
+        new(
+            "researchy-e004-vector-sector-audit",
+            "A Vector Sector, Not Yet a Gauge Field \u2014 What the Cubic Substrate Does and Does Not Supply",
+            "ResearchY Milestone \u00b7 E_004 (Vector Sector Audit; the field question behind E_003's representation)",
+            "The previous entry ended on a clean result: a photon has spin one, so it needs a three-dimensional representation, and only the cubic substrate has one. That is a statement about representations, and this entry asks the question one step further on, because a representation is not a field. Given a genuine three-dimensional vector sector, can it actually carry a spin-one field? The answer is a precise split. The representation is real and it is irreducible, and it is exactly what the spatial part of a vector field needs \u2014 but it turns out that a four-component vector field needs both substrates at once: the timelike component is a scalar, which the single ring supplies, and the spatial components are the vector, which only the cube supplies. Neither substrate alone can carry a vector field. Having got that far, the audit runs into the interesting obstruction. Two different quadratic forms \u2014 the two ways of measuring the size of the field \u2014 live on the very same three-dimensional space, and they disagree about how many physical states there are. The identity form, which is the representation's own natural invariant, leaves three states: that is a massive vector, the Proca case. The curl form leaves two, by annihilating the longitudinal mode exactly, and two is what a massless photon has. The representation does not choose between them. Worse, an irreducible representation has no gauge orbit at all \u2014 the redundancy that removes the third state lives in the space of fields, not in the fibre. So the sector on its own delivers a massive vector. There is one more thing to check, and it goes the friendly way: the sector is gapped, but the gap behaves like one over the square of the lattice size, which means it is a finite-size artefact that disappears in the limit rather than a mass the theory predicts. Masslessness survives, but only in the continuum limit. So the honest summary is that the cubic substrate is necessary and sufficient at the level of representation, and insufficient at the level of dynamics \u2014 and what is missing is not the phase, not the group and not the vector representation, but the choice of kinetic form that takes three states down to two.",
+            "VECTOR SECTOR AUDIT. Question: can the D96^3 T1(3) sector support a genuine spin-1 field? Requirements: vector degrees of freedom, two physical polarisations, gauge redundancy, massless propagation, Maxwell limit. Compare single D96 against D96^3. ANSWER: BOUNDARY - the T1(3) sector is a real vector sector, and it is not yet a gauge field. "
+            + "(1) REQUIREMENT 1 MET, ON D96^3 ONLY. l = 1 subducts onto the octahedral group as a SINGLE multiplet T1, dimension 3, multiplicity 1 - IRREDUCIBLE. The single ring's maximum irrep dimension is 2, so it has NO vector sector at all. "
+            + "(2) A LORENTZ 4-VECTOR NEEDS BOTH SUBSTRATES - SHARPER THAN E_003. A_mu = (A_0, A_i) reduces as A1(1) + T1(3) = 4. The single ring supplies only the timelike A_0; the cubic substrate only the spatial A_i. NEITHER SUBSTRATE ALONE CAN CARRY A LORENTZ VECTOR. "
+            + "(3) REQUIREMENT 2 MET GIVEN A REASON TO PROJECT. The transverse projector P = I - k k^T has rank 2 for every one of 12 momentum directions tested, so 3 components -> 2 physical states with 1 removed - IF there is a reason to remove it. "
+            + "(4) REQUIREMENT 3 NOT MET - THE DECISIVE COMPUTATION. Two quadratic forms live on the SAME three-dimensional space. The IDENTITY form V.V has rank 3 and kernel 0 -> THREE physical states, a PROCA field - and it is the representation's own NATURAL INVARIANT. The CURL form F_ij F_ij has matrix 2(I - k k^T), rank 2 and kernel 1 -> TWO states. Evaluated on the modes, the curl form ANNIHILATES the longitudinal mode EXACTLY (0.000e0, against 1.000000 for the identity). An irreducible representation has NO GAUGE ORBIT - gauge directions: 0 FROM THE REPRESENTATION, 1 FROM THE FIELD SPACE (the curl form's gradient kernel). So T1(3) ALONE DELIVERS A MASSIVE VECTOR. "
+            + "(5) REQUIREMENT 4 MET IN THE LIMIT, NOT ON ANY LATTICE. The sector is gapped: 0.386351 at N = 96. But mu_min * n^2 settles to ~3591 (12.0 -> 0.02435 as n goes 12 -> 384; spread 0.84 % for n >= 96), so mu_min ~ 3591/n^2 -> 0. THE GAP IS A FINITE-SIZE ARTEFACT, NOT A PREDICTED MASS. The cubic gap is 3x the ring's by the Cartesian-product sum rule. "
+            + "(6) REQUIREMENT 5 IMPORTED - E_002's derivation, from premises that are not AT's. "
+            + "(7) WHAT IS MISSING IS NOW LOCATED EXACTLY: THE CHOICE OF KINETIC FORM THAT TAKES THREE STATES TO TWO. Not the phase (E_003 found AT already has one), not the group, and not the vector representation. D96^3 is NECESSARY AND SUFFICIENT AT THE LEVEL OF REPRESENTATION and INSUFFICIENT AT THE LEVEL OF DYNAMICS. "
+            + "OUTPUT: BOUNDARY. The verdict is COMPUTED from nine independent checks, never a literal (the G_027 discipline). No reclassification; E_001/E_002/E_003/M_011/M_012/G_032/G_033 are unchanged inputs; D_040 untouched; no canonical claim, value or equation changes; NO NEW PRIMITIVE IS ADDED - the audit LOCATES the one the theory would need.",
+            "The cubic substrate supplies a genuine, irreducible three-dimensional vector sector \u2014 the thing the single ring cannot supply \u2014 and it turns out a four-component vector field needs both substrates at once, since the timelike part is a scalar. But the sector is not yet a gauge field: two different ways of measuring the field live on the same three-dimensional space, and they disagree about how many physical states there are. The natural one leaves three, which is a massive vector; the curl one leaves two, which is a photon. The representation does not choose. What does go the friendly way is masslessness \u2014 the sector is gapped, but the gap shrinks like one over the square of the lattice size, so it is a finite-size artefact rather than a mass.",
+            "A real vector sector \u2014 but the choice of kinetic form is still missing.",
+            "Three states or two \u2014 the representation does not decide.",
+            false,
+            [
+                new("ResearchY-E_004", "VECTOR SECTOR",
+                "The irreducible T1(3), the Lorentz split across both substrates, the two competing forms, and the 1/n^2 gap that makes masslessness a limit statement.",
+                "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/E_Electromagnetism/ResearchY-E_004.md"),
+            new("ResearchY-E_003", "PRECEDENT",
+                "E_003 located the obstruction in representation theory and identified the missing primitive; E_004 shows how far the representation takes you and where it stops.",
+                "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/E_Electromagnetism/ResearchY-E_003.md"),
+            new("ResearchY-M_012", "PRECEDENT",
+                "M_012 supplies the cubic dimension-3 sector this audit tests \u2014 the positive half of the obstruction.",
+                "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/M_Measurement/ResearchY-M_012.md"),
             ]),
         new(
             "researchy-g036-temporal-core-test-audit",
