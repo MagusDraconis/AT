@@ -168,11 +168,41 @@ public static class AtlasDataService
         new("Y_G_045_Tests", 7, "PASS", "Gravity Source"),
         new("Y_G_046_Tests", 7, "PASS", "Gravity Source"),
         new("Y_G_047_Tests", 7, "PASS", "Gravity Source"),
+        new("Y_G_048_Tests", 7, "PASS", "Gravity Source"),
         ]),
     ];
 
     public static IReadOnlyList<ResearchNewsModel> ResearchNews { get; } =
     [
+        new(
+            "researchy-g048-clock-completeness-audit",
+            "Complete, and Not Alone \u2014 Which Readings Actually Determine the State",
+            "ResearchY Milestone \u00b7 G_048 (Clock Completeness Audit; is the clock pattern the maximal observable?)",
+            "The previous two entries established two things in sequence: that the part of the state which the theory\u2019s standard measurements cannot see is reachable after all, and that the reading which reaches it is the theory\u2019s own clock law applied to every cell. This entry asks the natural question that follows, and it is a question about ranking rather than existence. If one reading reads the state, which readings read the MOST of it? The entry compares four: the clock pattern, a pattern of neighbouring differences that plays the role of an acceleration, a field strength built from the organisation, and the family of standard non-addressed measurements the theory has always used. It measures each one the same way, by asking how many independent directions of the state each reading can distinguish, and how much of the state that amounts to. The answer is clean and slightly surprising in a way that matters. All three of the addressed readings - the clock, the differences, and the field strength - distinguish EVERY direction of the state: each of them determines the organisation completely, and neither loses a thing. The entry checks this rather than trusting the rank alone: it reconstructs the organisation from the clock readings and finds it back to the last digit, so the completeness is a property and not a numerical accident. The fourth reading is the odd one out, and it is the one the theory has been using. The standard non-addressed measurements retain less than half the state, and they are not a competitor to the other three but a small part of what those three already resolve. That is exactly what the earlier ceiling of forty-eight always was: the ceiling of the non-addressed readings, not of observation as such. So the question\u2019s own proposed ordering - clock better than acceleration better than contraction - is refuted on both of its strict steps, and so is the opposite suggestion that everything is equivalent, because the contractions are strictly weaker. What the measurement shows instead is a two-level structure, and the entry states it that way. It also records a prediction it got wrong, because the wrongness is informative. It expected the field-strength pattern to be partial, reasoning that the coupling is evaluated afresh at each cell and the pattern is therefore nonlinear in the organisation. The measurement refused it: the pattern\u2019s local responsiveness has exactly the right structure to be invertible, and its dimension comes out the same as the other two. The expectation is written down as withdrawn rather than quietly removed. The last thing the entry does is guard its own headline. If the clock pattern\u2019s completeness came from the clock law alone, aggregating that law would preserve it - and aggregating destroys almost everything, leaving a single number where there were ninety-five directions. So the completeness lives in the addressing: reading every cell is what makes the state recoverable, which is the same distinction that separates the old ceiling from this floor, and the reason both results are true at the same time.",
+            "CLOCK COMPLETENESS AUDIT. Question: is the clock pattern the maximal observable of rho? Compare the clock, acceleration, field-strength and contraction readings; measure kernel rank, information retained and observable dimension; decide clock > acceleration > contraction or equivalence. ANSWER: MAXIMAL - the clock pattern resolves the whole state and is invertible, but it is MAXIMAL AND TIED WITH TWO OTHERS: the contraction observables are the only reading measured here that loses information. "
+            + "THE FOUR READINGS ON A 95-DIMENSIONAL SIMPLEX TANGENT SPACE: clock 95 / 1.000 / kernel rank 53; acceleration 95 / 1.000 / 53; field-strength 95 / 1.000 / 53; contractions 43 / 0.453 / 0. "
+            + "THE CLOCK PATTERN IS COMPLETE AND INVERTIBLE, NOT MERELY OF FULL RANK: rho = rate^d with a residual of 4.441E-016. "
+            + "THE ACCELERATION PATTERN TIES AT THE TOP: differences lose the global constant on an ARBITRARY vector, but the simplex already excludes it, so the difference map is injective on the tangent space - dimension 95. "
+            + "THE FIELD-STRENGTH PATTERN TIES TOO, AND THE AUDIT'S PREDICTION OF PARTIALITY WAS WITHDRAWN: the draft expected a shortfall because the coupling is evaluated at each cell; the measurement refused it - the tangent map is diagonal-plus-difference with a positive coupling, hence generically invertible, dimension 95. "
+            + "THE CONTRACTIONS ARE REDUNDANT AND THE ONLY READING THAT LOSES ANYTHING: 43 against 95 - a proper sub-algebra of what the clock resolves, which is what G_040's ceiling of 48 always was. "
+            + "THE CONTROL KEEPS THE HEADLINE HONEST: aggregating the same law gives observable dimension 1 out of 95, so the completeness is a property of ADDRESSING the cells. "
+            + "THE ORDERING IS NEITHER A CHAIN NOR TOTAL EQUIVALENCE: clock 95 = acceleration 95 = field 95 > contractions 43; 'clock > acceleration > contraction' is refuted on both strict steps and 'all equivalent' by the contractions. "
+            + "OUTPUT: MAXIMAL. Core: AT.Core/ResearchXH/ClockCompletenessAudit.cs. 7/7 PASSED.",
+            "Exactly one reading loses information \u2014 and it is the one the theory had been using.",
+            "The clock, acceleration and field-strength patterns each determine the organisation completely, while the non-addressed contractions retain under half of it.",
+            "The clock pattern is maximal and invertible, tied with two other addressed readings; the contractions are a sub-algebra of what it already resolves.",
+            false,
+            [
+                new("ResearchY-G_048", "CLOCK COMPLETENESS",
+                    "The four readings and their ranks, the invertibility test, the aggregation control, the ordering and the withdrawn field-pattern prediction.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/G_GravitySource/ResearchY-G_048.md"),
+                new("ResearchY-G_047", "INPUT",
+                    "The clock pattern as the first observable that resolves the kernel - the reading this audit ranks.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/G_GravitySource/ResearchY-G_047.md"),
+                new("ResearchY-G_040", "INPUT",
+                    "The non-addressed ceiling of 48, shown here to be a sub-algebra of what the addressed readings resolve.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/G_GravitySource/ResearchY-G_040.md"),
+            ]),
         new(
             "researchy-g047-kernel-observable-audit",
             "Naming the Instrument \u2014 The Observable That Reads the Hidden Directions",

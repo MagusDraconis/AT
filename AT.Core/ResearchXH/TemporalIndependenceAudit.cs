@@ -442,6 +442,13 @@ public static class TemporalIndependenceAudit
             + "response amplitudes, the reading ranks and the minimal basis size. NOT symbol-detectable: the suite "
             + "names no B, g_rr or GammaOf — its vocabulary is kernels, ranks and clocks",
             ScanDetectsIt: false),
+        // ── G_048: is the clock pattern the maximal observable of rho? ──
+        new SectorClaim("Y_G_048", "Clock Completeness", MetricRequirement.ClockOnly,
+            "it measures the observable dimension of the clock, acceleration and field-strength patterns against the "
+            + "contraction sub-algebra, so the metric content is the clock alone: the responses of four readings on the "
+            + "simplex tangent space and on the kernel, their ranks, and the invertibility of the clock map. NOT "
+            + "symbol-detectable: the suite names no B, g_rr or GammaOf — its vocabulary is readings, ranks and clocks",
+            ScanDetectsIt: false),
     };
 
     // ── The computed classification summaries ───────────────────────────────

@@ -4536,3 +4536,42 @@ to the measurement, and both numbers are reported.
 **Status:** COMPLETE. Tests `Y_G_047_Tests` **7/7**. Registry: added as **Derived** (`kernel-observable-audit`), with
 the group-G consistency counts updated. Core: `AT.Core/ResearchXH/KernelObservableAudit.cs`; suite
 `AT.Tests/ResearchY/G_GravitySource/Y_G_047_Tests.cs`; doc `Docs/ResearchY/G_GravitySource/ResearchY-G_047.md`.
+
+---
+
+### ResearchY-G_048 - Clock Completeness Audit (MAXIMAL)
+
+**Question.** Is the clock pattern the maximal observable of rho? Compare the clock, acceleration, field-strength and
+contraction readings; measure kernel rank, information retained, observable dimension.
+
+**Verdict: MAXIMAL** - and the clock pattern is **maximal and tied with two others**.
+
+**1. The four readings on the 95-dimensional simplex tangent space.**
+
+| reading | observable dim | information retained | kernel rank |
+|---|---|---|---|
+| clock pattern | **95** | **1.000** | **53** |
+| acceleration pattern | **95** | **1.000** | **53** |
+| field-strength pattern | **95** | **1.000** | **53** |
+| contraction observables | **43** | **0.453** | **0** |
+
+**2. The clock pattern is complete and invertible** - rho = rate^d with a residual of **4.441E-016**, so the full rank
+is a property rather than a sampling coincidence. **The control:** aggregating the same law gives observable dimension
+**1** of 95 - the completeness lives in **addressing** the cells.
+
+**3. Two other readings tie at the top.** The acceleration pattern: differences lose the global constant on an
+arbitrary vector, but the **simplex** already excludes it, so the difference map is injective on the tangent space. The
+field-strength pattern: the draft predicted **partiality** because the coupling is evaluated at each cell; the
+measurement refused it - the tangent map is diagonal-plus-difference with a positive coupling, hence generically
+invertible. **The prediction is recorded as withdrawn.**
+
+**4. The contractions are redundant** - 43 against 95, a proper sub-algebra of what the clock already resolves, which is
+what G_040's ceiling of 48 always was.
+
+**5. Ordering:** clock 95 = acceleration 95 = field 95 > contractions 43. "clock > acceleration > contraction" is
+refuted on **both** strict steps; "all are equivalent" is refuted by the contractions.
+
+**Status:** COMPLETE. Tests `Y_G_048_Tests` **7/7**; group G **371/371**. Registry: added as **Derived**
+(`clock-completeness-audit`), with the group-G consistency counts updated. Core:
+`AT.Core/ResearchXH/ClockCompletenessAudit.cs`; suite `AT.Tests/ResearchY/G_GravitySource/Y_G_048_Tests.cs`; doc
+`Docs/ResearchY/G_GravitySource/ResearchY-G_048.md`.

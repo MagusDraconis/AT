@@ -2902,6 +2902,42 @@ preferred sector. The verdict is computed with a **live branch in every directio
 No group-G registry claim, so claim counts are unchanged. Registry: added as **Boundary** (`sector-weight-audit`),
 reclassifying nothing. Tests: `Y_E_015_Tests` 7/7; group E **103/103**.
 
+## ResearchY-G_048 - Clock Completeness Audit (COMPLETE, MAXIMAL)
+
+**Question.** Is the clock pattern the maximal observable of rho? Compare the clock, acceleration, field-strength and
+contraction readings; measure kernel rank, information retained and observable dimension; decide
+clock > acceleration > contraction or equivalence.
+
+**Answer: MAXIMAL - and it is maximal AND TIED WITH TWO OTHERS.**
+
+| reading | observable dim | information retained | kernel rank |
+|---|---|---|---|
+| clock pattern | **95** | **1.000** | **53** |
+| acceleration pattern | **95** | **1.000** | **53** |
+| field-strength pattern | **95** | **1.000** | **53** |
+| contraction observables | **43** | **0.453** | **0** |
+
+- **The clock pattern is complete and invertible:** rho = rate^d with a residual of **4.441E-016** - not merely of full
+  rank.
+- **The acceleration pattern ties at the top:** differences lose the global constant on an arbitrary vector, but the
+  simplex already excludes it, so the difference map is injective on the tangent space.
+- **The field-strength pattern ties too, and my prediction of partiality was withdrawn and recorded:** the draft
+  expected a shortfall because the coupling is evaluated at each cell; the tangent map is diagonal-plus-difference with
+  a positive coupling, hence generically invertible.
+- **The contractions are redundant** and the only reading that loses anything: 43 against 95 - a sub-algebra of what
+  the clock resolves, which is what G_040's ceiling of 48 always was (the non-addressed ceiling).
+- **The control:** aggregating the same law gives observable dimension **1** of 95 - the completeness lives in
+  **addressing** the cells.
+- **Ordering:** clock 95 = acceleration 95 = field 95 > contractions 43, so the proposed chain is refuted on both
+  strict steps and "all equivalent" is refuted by the contractions.
+
+**What this changes.** G_040's ceiling is placed as the ceiling of the **non-addressed** sub-algebra, not of
+observation; G_047's clock is shown to be complete rather than only kernel-resolving; and the ordering question is
+answered with a two-level structure.
+
+Registry: added as **Derived** (`clock-completeness-audit`); group-G consistency counts updated. Tests:
+`Y_G_048_Tests` 7/7.
+
 ## ResearchY-G_047 - Kernel Observable Audit (COMPLETE, DERIVED)
 
 **Question.** Which observable detects the kernel directions directly? Given G_040 (95 = 48 + 47) and G_046 (the hidden
