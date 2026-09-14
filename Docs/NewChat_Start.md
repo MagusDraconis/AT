@@ -2902,6 +2902,38 @@ preferred sector. The verdict is computed with a **live branch in every directio
 No group-G registry claim, so claim counts are unchanged. Registry: added as **Boundary** (`sector-weight-audit`),
 reclassifying nothing. Tests: `Y_E_015_Tests` 7/7; group E **103/103**.
 
+## ResearchY-G_049 - Clock Primacy Audit (COMPLETE, LOSSLESS but NOT UNIQUE)
+
+**Question.** Is the clock pattern the unique lossless observable of rho? Compare clock, acceleration, field-strength
+and contractions on invertibility, retained information, rank, kernel. Goal: test whether time is the primary
+observable of rho.
+
+**Answer: LOSSLESS - but NOT UNIQUE. Three of the four readings are information-equivalent to rho.**
+
+| reading | rank | retained | inverse | verdict |
+|---|---|---|---|---|
+| clock pattern | **95** | **1.000** | closed form rho = rate^d, residual **4.441E-016** | **LOSSLESS** |
+| acceleration pattern | **95** | **1.000** | **0** collisions, residual **0.000E+000** | **LOSSLESS** |
+| field-strength pattern | **95** | **1.000** | **0** collisions, residual **0.000E+000** | **LOSSLESS** |
+| contraction observables | **43** | **0.453** | 52 dimensions missing | **LOSSY** |
+
+- **The test is honest in both directions:** each inverse is attempted by projected gradient descent from three
+  displaced starts with the audited state as the **control**, which recovers itself - so the machinery can succeed
+  before its failures are believed.
+- **A proof was withdrawn:** the intended collision (reflecting the state through its mean) failed because the
+  reflection reverses differences of **rho** while the acceleration pattern uses differences of the **rate**, and the
+  cube root is not linear - the reflected pair sat **1.951E-002** apart.
+- **A hypothesis was NOT confirmed:** no full-rank reading was measured lossy; rank and invertibility **coincided**
+  here - an **empirical outcome of this state, not a theorem**.
+- **Two bugs caught by the measurement:** the search originally mutated the memoised base state in place (producing
+  NaNs), and it followed configurations that left the positive simplex; it now clones the state and **rejects** invalid
+  configurations.
+- **What distinguishes the clock** is **invertibility in closed form** - one call per cell - not uniqueness of
+  information. Time is **a** primary observable; the primacy is one of convenience.
+
+Registry: added as **Derived** (`clock-primacy-audit`); group-G consistency counts updated. Tests:
+`Y_G_049_Tests` 6/6.
+
 ## ResearchY-G_048 - Clock Completeness Audit (COMPLETE, MAXIMAL)
 
 **Question.** Is the clock pattern the maximal observable of rho? Compare the clock, acceleration, field-strength and

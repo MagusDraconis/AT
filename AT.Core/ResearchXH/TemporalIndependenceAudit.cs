@@ -449,6 +449,13 @@ public static class TemporalIndependenceAudit
             + "simplex tangent space and on the kernel, their ranks, and the invertibility of the clock map. NOT "
             + "symbol-detectable: the suite names no B, g_rr or GammaOf — its vocabulary is readings, ranks and clocks",
             ScanDetectsIt: false),
+        // ── G_049: is the clock pattern the unique lossless observable of rho? ──
+        new SectorClaim("Y_G_049", "Clock Primacy", MetricRequirement.ClockOnly,
+            "it reads the clock law at every cell and tests the inversion of four readings by search, so the metric "
+            + "content is the clock alone: the patterns, their ranks, the closed-form inverse rho = rate^d and the "
+            + "collision counts from displaced starts. NOT symbol-detectable: the suite names no B, g_rr or GammaOf — "
+            + "its vocabulary is invertibility, ranks and clocks",
+            ScanDetectsIt: false),
     };
 
     // ── The computed classification summaries ───────────────────────────────

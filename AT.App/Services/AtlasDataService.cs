@@ -169,11 +169,39 @@ public static class AtlasDataService
         new("Y_G_046_Tests", 7, "PASS", "Gravity Source"),
         new("Y_G_047_Tests", 7, "PASS", "Gravity Source"),
         new("Y_G_048_Tests", 7, "PASS", "Gravity Source"),
+        new("Y_G_049_Tests", 6, "PASS", "Gravity Source"),
         ]),
     ];
 
     public static IReadOnlyList<ResearchNewsModel> ResearchNews { get; } =
     [
+        new(
+            "researchy-g049-clock-primacy-audit",
+            "Lossless, Not Alone \u2014 What the Measurement Refused to Let the Clock Claim",
+            "ResearchY Milestone \u00b7 G_049 (Clock Primacy Audit; is the clock pattern the unique lossless observable?)",
+            "The previous entry ranked four readings of the substrate by how much of it each one captures, and three of them came out level at the top: the clock pattern, a pattern of neighbouring differences, and a field strength built from the organisation all distinguished every direction of the state, while the standard non-addressed measurements captured less than half. Ranking by dimensions is one thing; whether a reading can actually be inverted to give the state back is another, and this entry tests the second question. Its first instrument was an elegant argument that failed, and the failure is worth the whole entry. The idea was to find two different states that produce exactly the same pattern - a collision - which would prove that a reading loses information no matter how many dimensions it distinguishes. The natural candidate was the difference pattern: reflect the state through its own mean and every difference reverses, so a pattern built from absolute differences should be blind to the sign and collide. The measurement refused it, and the reason is instructive: the reflection reverses the differences of the organisation, but the pattern is built from differences of the cube root of the organisation, and a cube root is not linear. The two patterns sat about two per cent apart instead of coinciding. The entry records that withdrawn argument rather than deleting it, because a plausible proof that fails is more useful to a reader than a paragraph that only states the conclusion. The replacement is a search. For each reading it tries to invert the pattern numerically, starting the search from three deliberately different states and seeing whether the search walks back to the true one or lands somewhere else entirely. The control - starting from the truth - recovers the truth, so the machinery is known to work before its failures are believed. The result is that all three of the full-rank readings invert: no collisions anywhere, with the search returning the original state from every displaced start. So the hypothesis the entry was built to test - that a reading can distinguish every direction yet still lose information - is not confirmed, and the entry says so plainly, marking it as a fact about the state examined rather than a general theorem. Three of the four readings are therefore information-equivalent to the organisation, and only the standard non-addressed measurements lose anything, retaining under half of it. For the question that motivated all of this, that is a precise and slightly deflating answer. Time is not the unique lossless observable: the hierarchy it might have headed is not a hierarchy. What is left to the clock is a different kind of distinction, and a real one: its inverse is a single closed-form step per cell, the organisation recovered by raising each rate to the power of the dimension, whereas the other two lossless readings have to be inverted by search. Time is a primary observable; the primacy is one of convenience, not of information.",
+            "CLOCK PRIMACY AUDIT. Question: is the clock pattern the UNIQUE lossless observable of rho? Compare clock, acceleration, field-strength and contraction readings on invertibility, retained information, rank and kernel. ANSWER: LOSSLESS - but NOT UNIQUE: three of the four readings are information-equivalent to rho, and only the contractions lose information. What is special about the clock is that its inverse is CLOSED-FORM. "
+            + "THE FOUR READINGS: clock 95 / 1.000 / closed form rho = rate^d with residual 4.441E-016; acceleration 95 / 1.000 / 0 collisions at residual 0.000E+000; field-strength 95 / 1.000 / 0 collisions at 0.000E+000; contractions 43 / 0.453 / 52 dimensions missing. Lossless readings: 3. "
+            + "THE UNIFORM TEST IS HONEST IN BOTH DIRECTIONS: each reading's inverse is attempted by projected gradient descent on the simplex from three displaced starts, with the audited state as the CONTROL - which recovers itself (True) - so the machinery can succeed before its failures are believed. "
+            + "A WITHDRAWN PROOF: the audit set out to show rank does not imply invertibility, first via an explicit COLLISION (reflecting the state through its own mean reverses every difference, and the pattern uses absolute differences). The measurement REFUSED it - the reflection reverses differences of RHO while the pattern uses differences of the RATE, and the cube root is not linear - so the reflected pair sat 1.951E-002 apart. Recorded as withdrawn. "
+            + "THE HYPOTHESIS WAS NOT CONFIRMED: the search found zero collisions for all three full-rank readings and converged back onto the audited state from every start, so full rank and invertibility COINCIDED here - an empirical outcome of this state, not a theorem. "
+            + "THE CONTRACTIONS ARE LOSSY BY DIMENSION: 43 of 95 retained, 52 unrecoverable in principle. "
+            + "OUTPUT: LOSSLESS. Core: AT.Core/ResearchXH/ClockPrimacyAudit.cs. 6/6 PASSED.",
+            "A plausible proof that failed \u2014 and the search that replaced it.",
+            "All three full-rank readings invert with zero collisions, so the clock is not unique; only the non-addressed contractions lose information.",
+            "Time is a primary observable of the organisation but not the unique one: what distinguishes the clock is a closed-form inverse, one call per cell.",
+            false,
+            [
+                new("ResearchY-G_049", "CLOCK PRIMACY",
+                    "The four readings, the closed-form inverse, the uniform inversion search, the withdrawn collision and the unconfirmed hypothesis.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/G_GravitySource/ResearchY-G_049.md"),
+                new("ResearchY-G_048", "INPUT",
+                    "The ranks this audit tests for invertibility - 95, 95, 95 and 43.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/G_GravitySource/ResearchY-G_048.md"),
+                new("ResearchY-G_047", "INPUT",
+                    "The clock pattern as the reading that resolves the kernel - the candidate whose primacy is tested here.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/G_GravitySource/ResearchY-G_047.md"),
+            ]),
         new(
             "researchy-g048-clock-completeness-audit",
             "Complete, and Not Alone \u2014 Which Readings Actually Determine the State",

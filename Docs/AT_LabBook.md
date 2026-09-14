@@ -4575,3 +4575,43 @@ refuted on **both** strict steps; "all are equivalent" is refuted by the contrac
 (`clock-completeness-audit`), with the group-G consistency counts updated. Core:
 `AT.Core/ResearchXH/ClockCompletenessAudit.cs`; suite `AT.Tests/ResearchY/G_GravitySource/Y_G_048_Tests.cs`; doc
 `Docs/ResearchY/G_GravitySource/ResearchY-G_048.md`.
+
+---
+
+### ResearchY-G_049 - Clock Primacy Audit (LOSSLESS, not unique)
+
+**Question.** Is the clock pattern the unique lossless observable of rho? Measure invertibility, retained information,
+rank, kernel for the clock, acceleration, field-strength and contraction readings.
+
+**Verdict: LOSSLESS** - and **not unique**: three of the four readings are information-equivalent to rho.
+
+**1. The four readings.**
+
+| reading | rank | retained | inverse | verdict |
+|---|---|---|---|---|
+| clock pattern | **95** | **1.000** | closed form rho = rate^d, residual **4.441E-016** | **LOSSLESS** |
+| acceleration pattern | **95** | **1.000** | **0** collisions, residual **0.000E+000** | **LOSSLESS** |
+| field-strength pattern | **95** | **1.000** | **0** collisions, residual **0.000E+000** | **LOSSLESS** |
+| contraction observables | **43** | **0.453** | 52 dimensions missing | **LOSSY** |
+
+**2. The uniform inversion test.** Projected gradient descent on the simplex from three deterministic displaced
+starts, with the audited state as the **control** - which recovers itself, so the machinery is known to be able to
+succeed before its failures are believed.
+
+**3. A withdrawn proof and an unconfirmed hypothesis.** The intended **collision** (reflect the state through its own
+mean: every difference reverses) was refused by the measurement - **1.951E-002** apart - because the reflection
+reverses differences of **rho** while the acceleration pattern uses differences of the **rate**. The replacement search
+found **zero collisions** for all three full-rank readings, so full rank and invertibility **coincided** here: an
+**empirical outcome of this state, not a theorem**.
+
+**4. The contractions are lossy by dimension:** 43 of 95 retained, 52 unrecoverable in principle.
+
+**5. The goal.** Time is **a** primary observable, not the unique one; what distinguishes the clock is
+**invertibility in closed form** (one call per cell) rather than primacy in information.
+
+**Two bugs caught by the measurement:** the search mutated the memoised base state in place (giving NaNs), and it
+followed configurations that left the positive simplex - it now clones the state and rejects invalid configurations.
+
+**Status:** COMPLETE. Tests `Y_G_049_Tests` **6/6**. Registry: added as **Derived** (`clock-primacy-audit`), with the
+group-G consistency counts updated. Core: `AT.Core/ResearchXH/ClockPrimacyAudit.cs`; suite
+`AT.Tests/ResearchY/G_GravitySource/Y_G_049_Tests.cs`; doc `Docs/ResearchY/G_GravitySource/ResearchY-G_049.md`.
