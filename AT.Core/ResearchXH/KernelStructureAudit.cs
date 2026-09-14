@@ -140,6 +140,12 @@ public static class KernelStructureAudit
         => ModeTable().Where(t => t.Class == "visible").Select(t => t.Channel).Distinct().OrderBy(c => c).ToArray();
 
     public static int HiddenModes() => ModeTable().Count(t => t.Class == "HIDDEN");
+
+    /// <summary>The 53 hidden modes as explicit unit directions, for the audits that need the vectors themselves.</summary>
+    public static (int Channel, string Kind, double[] Mode)[] HiddenModeVectors()
+        => ModeTable().Where(t => t.Class == "HIDDEN")
+                      .Select(t => (t.Channel, t.Kind, ModeOf(t.Channel, t.Kind == "sin")))
+                      .ToArray();
     public static int VisibleModes() => ModeTable().Count(t => t.Class == "visible");
 
     /// <summary>Channels whose cosine is hidden and whose sine is visible (or the reverse) - the first draft's blind spot.</summary>

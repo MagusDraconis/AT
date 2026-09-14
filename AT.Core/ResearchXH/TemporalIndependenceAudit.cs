@@ -463,6 +463,13 @@ public static class TemporalIndependenceAudit
             + "count relation, the empty channels and the signatures. NOT symbol-detectable: the suite names no B, g_rr "
             + "or GammaOf — its vocabulary is modes, quadratures and clocks",
             ScanDetectsIt: false),
+        // ── G_051: do the 53 phase directions carry physical or gauge information? ──
+        new SectorClaim("Y_G_051", "Phase Sector", MetricRequirement.ClockOnly,
+            "it steps along each of the 53 phase modes and reads the clock, acceleration and field multisets plus the "
+            + "decoupled flux label, so the metric content is the clock alone: the responses, their scaling in the step, "
+            + "the gauge control and the coupling census. NOT symbol-detectable: the suite names no B, g_rr or GammaOf — "
+            + "its vocabulary is responses, multisets and clocks",
+            ScanDetectsIt: false),
     };
 
     // ── The computed classification summaries ───────────────────────────────

@@ -2902,6 +2902,30 @@ preferred sector. The verdict is computed with a **live branch in every directio
 No group-G registry claim, so claim counts are unchanged. Registry: added as **Boundary** (`sector-weight-audit`),
 reclassifying nothing. Tests: `Y_E_015_Tests` 7/7; group E **103/103**.
 
+## ResearchY-G_051 - Phase Sector Audit (COMPLETE, PHYSICAL)
+
+**Question.** Do the 53 phase-sector directions carry physical or gauge information? Measure the clock, acceleration,
+field and flux-sector responses; separate observable phase directions from pure gauge ones.
+
+**Answer: PHYSICAL - all 53 are observable and none is gauge.**
+
+- **The responses are uniformly non-zero:** stepping along each of the 53 modes, the clock-rate **multiset** moves for
+  all of them - smallest clock **2.136E-003**, acceleration **4.859E-004**, field **5.204E-005**. The multiset is the
+  right object (what a law *reports*, not which cell carries what - G_048's distinction).
+- **First-order, which separates physical from nearly gauge:** a second-order response would be invisible to linear
+  response; halving the step shows every direction scales as the step.
+- **The flux zero is a DECOUPLING, not gauge-ness:** the label reads the **link phases** and the coupling census is
+  **0**, so no organisation move can change it. The verdict criterion **excludes** the flux silence - counting it would
+  have made every direction in the theory look gauge the moment a decoupled probe was added.
+- **The control is a real gauge direction:** a symmetry-orbit move leaves every multiset at **0.000E+000**, and the
+  test finds **none** among the 53.
+
+**What this changes.** G_050 named the phase sector; G_051 settles its status: the quadratures completing each
+channel's magnitude are hidden from the **invariant distance-class algebra**, not from observation. The organisation's
+phase is physics.
+
+Registry: added as **Derived** (`phase-sector-audit`); group-G consistency counts updated. Tests: `Y_G_051_Tests` 6/6.
+
 ## ResearchY-G_050 - Kernel Structure Audit (COMPLETE, DERIVED)
 
 **Question.** What physical structure do the 53 kernel directions represent? Measure basis vectors, symmetry classes,

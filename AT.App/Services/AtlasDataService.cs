@@ -171,11 +171,38 @@ public static class AtlasDataService
         new("Y_G_048_Tests", 7, "PASS", "Gravity Source"),
         new("Y_G_049_Tests", 6, "PASS", "Gravity Source"),
         new("Y_G_050_Tests", 6, "PASS", "Gravity Source"),
+        new("Y_G_051_Tests", 6, "PASS", "Gravity Source"),
         ]),
     ];
 
     public static IReadOnlyList<ResearchNewsModel> ResearchNews { get; } =
     [
+        new(
+            "researchy-g051-phase-sector-audit",
+            "Physics, Not Bookkeeping \u2014 Why the Hidden Phases Are Real",
+            "ResearchY Milestone \u00b7 G_051 (Phase Sector Audit; physical or gauge information?)",
+            "The previous entry identified the hidden part of the organisation: it is the phase sector, the quadratures that complete each oscillation channel\u2019s magnitude, together with the whole of the five channels the state leaves empty and the special alternating mode, fifty-three directions in all. That raises the question this entry answers, and it is a question about status rather than about size. Are those directions real physics, or are they the kind of bookkeeping that can be changed at will without altering anything measurable? The theory has a precedent for the second possibility. Moving a configuration along the orbit of the substrate\u2019s own symmetry changes which cell is called which and alters nothing that any law reports, which is exactly what a gauge freedom looks like. So the entry tests all fifty-three directions the same way: step along each one and watch four quantities. Three of them are the laws the theory already has - the clock rate at every cell, a neighbouring-difference pattern, a field strength built from the organisation - and the fourth is the flux sector, which turns out to matter for a reason that is more interesting than the result. Every one of the fifty-three directions moves all three responsive quantities. The entry reports the smallest response rather than an average, so the claim is a floor: no phase direction is quietly silent. It also checks the responses are linear rather than quadratic, because a direction whose effect only appeared at second order would be invisible to small perturbations - as close to gauge as a direction can get without being gauge - and every direction scales with the size of the step as a linear response must. The flux sector is silent for all fifty-three, and the entry spends real effort insisting on why. The flux label is carried by the phase on the links between cells, and not one member of the theory couples the links to the organisation. No move of the organisation, gauge or otherwise, can change the label, so its silence is a decoupling between two parts of the theory rather than a sign that the organisation\u2019s phase is unphysical. The distinction is not pedantry: had the entry counted the flux silence as evidence of gauge-ness, then every direction in the theory would have become gauge the moment a decoupled probe was added, and the word would have lost its meaning. To show the test can recognise a genuine gauge direction when it sees one, the entry runs the same measurement on a move along the symmetry orbit, which leaves every quantity untouched, and the test identifies it immediately. So the answer is that the phase sector is physics. All fifty-three directions are observable and none is gauge. What the earlier entry had called hidden was hidden in a specific and now precise sense: invisible to the family of distance-class measurements that the earlier analysis was built on, and perfectly visible to the local laws that read the organisation cell by cell. The phase of the organisation is real; it is simply invisible to the instruments that were designed to ignore it.",
+            "PHASE SECTOR AUDIT. Question: do the 53 phase-sector directions carry physical or gauge information? Measure the clock, acceleration, field and flux-sector responses; separate observable phase directions from pure gauge ones. ANSWER: PHYSICAL - all 53 directions are observable and none is gauge, and the audit's real contribution is the distinction that makes the word gauge mean something: a DECOUPLED PROBE'S SILENCE IS NOT A GAUGE SIGNATURE. "
+            + "THE RESPONSES ARE UNIFORMLY NON-ZERO: stepping along each of the 53 modes in turn, the clock-rate MULTISET moves for all of them - smallest clock response 2.136E-003, acceleration 4.859E-004, field 5.204E-005 - and the multiset is the right object because it is what a law REPORTS rather than which cell carries what. "
+            + "FIRST-ORDER, WHICH SEPARATES PHYSICAL FROM NEARLY GAUGE: a second-order response would be invisible to linear response; the audit halves the step and every direction scales as the step (True). "
+            + "THE FLUX RESPONSE IS ZERO FOR ALL 53, AND WHY MATTERS: the label is carried by the LINK phases and the census of AT members coupling them to the organisation is 0, so no organisation move can change it - a DECOUPLING, not a gauge signature - and the criterion EXCLUDES it; counting it would have made every direction in the theory look gauge. "
+            + "THE CONTROL IS AN ACTUAL GAUGE DIRECTION: a symmetry-orbit move leaves every multiset unchanged at 0.000E+000, so the test recognises a real gauge direction and finds NONE among the 53. "
+            + "OUTPUT: PHYSICAL. Core: AT.Core/ResearchXH/PhaseSectorAudit.cs. 6/6 PASSED.",
+            "Fifty-three directions stepped one at a time \u2014 and the zero that had to be explained rather than counted.",
+            "Every phase direction moves the clock, acceleration and field multisets linearly, while the flux sector is silent for all of them because nothing couples the links to the organisation.",
+            "The organisation's phase is physics: invisible to the invariant distance-class algebra, perfectly visible to the local laws.",
+            false,
+            [
+                new("ResearchY-G_051", "PHASE SECTOR",
+                    "The four responses direction by direction, the first-order scaling test, the gauge control and the flux decoupling.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/G_GravitySource/ResearchY-G_051.md"),
+                new("ResearchY-G_050", "INPUT",
+                    "The phase-sector identification - 47 quadratures + 5 empty channels x 2 + the alternating mode - whose status this audit settles.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/G_GravitySource/ResearchY-G_050.md"),
+                new("ResearchY-E_013", "INPUT",
+                    "Zero members couple the spectral sector to the link sector: why the flux silence is structural.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/E_Electromagnetism/ResearchY-E_013.md"),
+            ]),
         new(
             "researchy-g050-kernel-structure-audit",
             "The Phase Sector \u2014 What the Hidden Directions Actually Are",

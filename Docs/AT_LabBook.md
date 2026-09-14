@@ -4659,3 +4659,36 @@ frequency ordering exists.
 **Status:** COMPLETE. Tests `Y_G_050_Tests` **6/6**. Registry: added as **Derived** (`kernel-structure-audit`), with
 the group-G consistency counts updated. Core: `AT.Core/ResearchXH/KernelStructureAudit.cs`; suite
 `AT.Tests/ResearchY/G_GravitySource/Y_G_050_Tests.cs`; doc `Docs/ResearchY/G_GravitySource/ResearchY-G_050.md`.
+
+---
+
+### ResearchY-G_051 - Phase Sector Audit (PHYSICAL)
+
+**Question.** Do the 53 phase-sector directions carry physical or gauge information? Measure the clock, acceleration,
+field and flux-sector responses.
+
+**Verdict: PHYSICAL** - all 53 are observable, none is gauge.
+
+**1. The four responses, direction by direction.**
+
+| quantity | value |
+|---|---|
+| smallest clock multiset response | **2.136E-003** |
+| smallest acceleration response | **4.859E-004** |
+| smallest field response | **5.204E-005** |
+| every direction observable / first-order | **True / True** |
+| directions silent to the flux sector | **53 of 53** |
+
+**2. First-order, which separates physical from nearly gauge.** Halving the step halves the response for every
+direction; a second-order response would be invisible to linear response.
+
+**3. The flux zero is a DECOUPLING, not gauge-ness.** The label reads the **link phases**; the coupling census is
+**0**; the criterion **excludes** this silence. Counting it would have made every direction in the theory look gauge as
+soon as one decoupled probe existed.
+
+**4. The control is a real gauge direction:** a symmetry-orbit move leaves every multiset at **0.000E+000**, and the
+test finds **none** among the 53.
+
+**Status:** COMPLETE. Tests `Y_G_051_Tests` **6/6**. Registry: added as **Derived** (`phase-sector-audit`), with the
+group-G consistency counts updated. Core: `AT.Core/ResearchXH/PhaseSectorAudit.cs`; suite
+`AT.Tests/ResearchY/G_GravitySource/Y_G_051_Tests.cs`; doc `Docs/ResearchY/G_GravitySource/ResearchY-G_051.md`.
