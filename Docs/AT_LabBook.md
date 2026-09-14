@@ -4615,3 +4615,47 @@ followed configurations that left the positive simplex - it now clones the state
 **Status:** COMPLETE. Tests `Y_G_049_Tests` **6/6**. Registry: added as **Derived** (`clock-primacy-audit`), with the
 group-G consistency counts updated. Core: `AT.Core/ResearchXH/ClockPrimacyAudit.cs`; suite
 `AT.Tests/ResearchY/G_GravitySource/Y_G_049_Tests.cs`; doc `Docs/ResearchY/G_GravitySource/ResearchY-G_049.md`.
+
+---
+
+### ResearchY-G_050 - Kernel Structure Audit (DERIVED)
+
+**Question.** What physical structure do the 53 kernel directions represent? Measure basis vectors, symmetry classes,
+multiplicity relation, clock / acceleration / field signatures.
+
+**Verdict: DERIVED** - the kernel is the **phase sector**, and the number is **47 + 5 + 1 = 53**.
+
+**1. Two hypotheses refuted before the right one was named.**
+
+| hypothesis | argument | measurement |
+|---|---|---|
+| whole doublets hidden | dihedral: a commuting operator cannot mix irreducibles | **REFUTED** - **42 of 47** doublets are **half hidden** (a real 2-dim irrep admits a 2x2 commutant) |
+| short-wavelength sector | distance-class contractions average over cells | **REFUTED** - hidden and visible modes are **interleaved** (separated in frequency: **False**, correlation **-0.0279**) |
+
+The **correct** argument is the sharper one: the contractions are **circulant**, hence diagonal in the individual
+Fourier modes - **translation invariance**, not reflection symmetry, forbids mixing. Measured per mode: **no mode is
+split anywhere**.
+
+**2. The count relation, and the name.**
+
+| quantity | value |
+|---|---|
+| hidden / visible Fourier modes | **53 / 42** (= 95) |
+| half-hidden doublet channels | **42** |
+| empty channels (= doubly-hidden set) | **5** |
+| **47 + 5 + 1** | **53** |
+
+The **visible 42** are the **magnitudes**; the hidden 53 are the **phases** (quadratures) plus the whole of each empty
+channel plus the alternating mode.
+
+**3. This reconciles G_040:** its loss of **47** is the **generic** case - 47 orientations, no empty channel - while
+this state hides five extra channels' worth because the state carries nothing in them.
+
+**4. The signatures.** Every one of the 53 hidden modes carries a response from all three lossless readings; no
+frequency ordering exists.
+
+**5. What it is not:** not a gauge orbit (**84** dims, G_046), not a numerical artefact, not the whole remainder.
+
+**Status:** COMPLETE. Tests `Y_G_050_Tests` **6/6**. Registry: added as **Derived** (`kernel-structure-audit`), with
+the group-G consistency counts updated. Core: `AT.Core/ResearchXH/KernelStructureAudit.cs`; suite
+`AT.Tests/ResearchY/G_GravitySource/Y_G_050_Tests.cs`; doc `Docs/ResearchY/G_GravitySource/ResearchY-G_050.md`.

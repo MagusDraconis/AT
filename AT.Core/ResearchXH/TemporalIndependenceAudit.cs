@@ -456,6 +456,13 @@ public static class TemporalIndependenceAudit
             + "collision counts from displaced starts. NOT symbol-detectable: the suite names no B, g_rr or GammaOf — "
             + "its vocabulary is invertibility, ranks and clocks",
             ScanDetectsIt: false),
+        // ── G_050: what physical structure do the 53 kernel directions represent? ──
+        new SectorClaim("Y_G_050", "Kernel Structure", MetricRequirement.ClockOnly,
+            "it decomposes the kernel of the contraction observables into Fourier modes and measures the three "
+            + "readings' signatures one mode at a time, so the metric content is the clock alone: the mode classes, the "
+            + "count relation, the empty channels and the signatures. NOT symbol-detectable: the suite names no B, g_rr "
+            + "or GammaOf — its vocabulary is modes, quadratures and clocks",
+            ScanDetectsIt: false),
     };
 
     // ── The computed classification summaries ───────────────────────────────

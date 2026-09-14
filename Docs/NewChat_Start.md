@@ -2902,6 +2902,31 @@ preferred sector. The verdict is computed with a **live branch in every directio
 No group-G registry claim, so claim counts are unchanged. Registry: added as **Boundary** (`sector-weight-audit`),
 reclassifying nothing. Tests: `Y_E_015_Tests` 7/7; group E **103/103**.
 
+## ResearchY-G_050 - Kernel Structure Audit (COMPLETE, DERIVED)
+
+**Question.** What physical structure do the 53 kernel directions represent? Measure basis vectors, symmetry classes,
+multiplicity relation, clock / acceleration / field signatures.
+
+**Answer: DERIVED - the kernel is the PHASE SECTOR: one hidden quadrature per populated doublet, both quadratures of
+each empty channel, and the alternating mode - 47 + 5 + 1 = 53.**
+
+- **Two hypotheses were refuted before the right one was named.** (a) The **dihedral** argument predicted whole doublets
+  and the measurement refused it: **42 of the 47 doublets are HALF hidden**, because a real 2-dim irreducible admits a
+  2x2 commutant. The correct argument is the **sharper** one - the contractions are **circulant**, so **translation
+  invariance** (not reflection) forbids mixing - and measured per mode **no mode is split anywhere**. (b) The
+  **short-wavelength** hypothesis was refused too: hidden and visible modes are **interleaved** (separated in
+  frequency: **False**, correlation against frequency **-0.0279**).
+- **The count relation names the kernel:** hidden **53** modes, visible **42** (= 95), **42** half-hidden doublets,
+  **5** **empty** channels whose set is **identical** to the doubly-hidden ones: **47 + 5 + 1 = 53**, with the visible
+  42 being the **magnitudes**.
+- **This reconciles G_040 exactly:** its loss of **47** is the **generic** case (47 orientations, no empty channel);
+  this state hides five extra channels' worth because it carries nothing in them.
+- **Signatures:** every one of the 53 hidden modes responds to all three lossless readings - the interpretation does
+  not depend on which reading is used; no frequency ordering exists.
+
+Registry: added as **Derived** (`kernel-structure-audit`); group-G consistency counts updated. Tests:
+`Y_G_050_Tests` 6/6.
+
 ## ResearchY-G_049 - Clock Primacy Audit (COMPLETE, LOSSLESS but NOT UNIQUE)
 
 **Question.** Is the clock pattern the unique lossless observable of rho? Compare clock, acceleration, field-strength
