@@ -173,11 +173,38 @@ public static class AtlasDataService
         new("Y_G_050_Tests", 6, "PASS", "Gravity Source"),
         new("Y_G_051_Tests", 6, "PASS", "Gravity Source"),
         new("Y_G_052_Tests", 7, "PASS", "Gravity Source"),
+        new("Y_G_053_Tests", 6, "PASS", "Gravity Source"),
         ]),
     ];
 
     public static IReadOnlyList<ResearchNewsModel> ResearchNews { get; } =
     [
+        new(
+            "researchy-g053-phase-sector-dynamics-audit",
+            "Resize and Rotate \u2014 Why the Phases Are Not a Re-Parameterisation",
+            "ResearchY Milestone \u00b7 G_053 (Phase Sector Dynamics Audit; do phase modes have independent effects?)",
+            "The three previous entries produced and then certified a division of the organisation into two halves: forty-two directions that the theory\u2019s distance-based measurements can see, and fifty-three that they cannot, with the boundary between them shown to be exact rather than approximate. This entry asks whether the second half does anything of its own, and it turns out that the answer depends on asking the question carefully. The first measurement rules out the easy version of the question. Both kinds of perturbation - one purely within the visible half and one purely within the hidden half - change every law that was tested, the clock rates, the neighbouring-difference pattern and the field strength. So the phase half is not silent, and \u201cdo the phases matter\u201d is not settled by pointing at a non-zero response. What matters is whether the phase effect could be produced some other way, by a move within the visible half. That is a question about imitation, and the entry answers it by trying to imitate. It builds the full family of responses that amplitude moves can produce, projects the phase response onto that family, and measures the part that is left over. For the clock and the difference pattern nothing at all is left over\u2019s complement - essentially the entire phase effect lies outside what amplitudes can do - and for the field strength all but a fraction of a per cent does. The phases therefore have effects that amplitudes cannot counterfeit. The reason is geometric, and it is the most satisfying result in the entry. In the two-dimensional plane that describes one oscillation channel, the two kinds of move do visibly different things. The amplitude move changes how long the channel\u2019s content is and leaves its direction exactly untouched, to the last digit the arithmetic allows. The phase move turns the direction, changing the angle by about as much as the amplitude move changes the length, and it also lengthens the vector a little. So the clean statement is not the one the entry first guessed - that one resizes and the other rotates, by a factor of a hundred - but the sharper one: the visible half is exactly the half that never rotates a channel, and the hidden half is what turns it. The entry recorded the correction rather than the guess. The last part of the audit names the observable that isolates the phases exactly, and it is not a new invention. It is the projection of the state onto one of the hidden directions - the quadrature, in the earlier entry\u2019s language, that completes each channel\u2019s magnitude. That projection is exactly zero for all forty-two amplitude moves, by the orthogonality the previous entry proved, and non-zero for the phase move. It is therefore perfectly phase-sensitive, and the entry is careful to note what it is not: the theory\u2019s own laws, the clock, the difference pattern and the field strength, are all mixed - each takes a contribution from both halves. The answer is that the phase modes have independent effects beyond amplitudes, they do so because resizing and rotating are different operations, and the quantity that isolates them is the quadrature projection.",
+            "PHASE SECTOR DYNAMICS AUDIT. Question: do phase modes have independent physical effects beyond amplitudes? Construct a pure amplitude and a pure phase perturbation; measure the clock, acceleration and field responses. ANSWER: DERIVED - the phase effects are independent and the reason is GEOMETRIC: the amplitude sector is exactly the NO-ROTATION sector while the phase sector turns the Fourier content. The first uniquely phase-sensitive observable is the QUADRATURE FUNCTIONAL. "
+            + "ORTHOGONAL AND BOTH REAL: perturbation overlap 2.168E-018, and all three readings respond to both - clock 6.678E-003 vs 6.772E-003, acceleration 8.904E-004 vs 7.024E-004, field 1.128E-004 vs 9.971E-005 - so the question is not silence but IMITATION. "
+            + "THE INDEPENDENCE TEST IS A REPRODUCIBILITY TEST: the span of each reading's responses to ALL 42 amplitude directions (rank 42 of 42, verified) is built, the PHASE response is projected onto it, and the residual measured - non-reproducible fraction 1.0000 for the clock, 1.0000 for the acceleration and 0.9926 for the field. "
+            + "THE GEOMETRY: in channel 1 the amplitude move changes the magnitude by 3.464E-001 and the angle by 2.220E-015 - machine zero - while the phase move changes the angle by 3.463E-001 and the magnitude by 6.059E-002. The draft expected a 100x resize-versus-rotate split; the measurement is sharper in one place and weaker in another, and the criterion was corrected to what is measured. "
+            + "THE FIRST UNIQUELY PHASE-SENSITIVE OBSERVABLE is the quadrature functional: response to the phase move 2.000E-002, largest response to ANY of the 42 amplitude moves 3.272E-015 (zero by orthogonality). AT's own laws are MIXED - clock, acceleration and field each take from both sectors. "
+            + "OUTPUT: DERIVED. Core: AT.Core/ResearchXH/PhaseSectorDynamicsAudit.cs. 6/6 PASSED.",
+            "The visible half never rotates a channel; the hidden half is what turns it.",
+            "Phase responses are essentially unreachable from amplitude moves (1.0000 / 1.0000 / 0.9926), and the amplitude move leaves the channel angle at machine zero.",
+            "The phases are not a re-parameterisation of the amplitudes: they rotate what the amplitudes resize, and the quadrature projection isolates them exactly.",
+            false,
+            [
+                new("ResearchY-G_053", "PHASE SECTOR DYNAMICS",
+                    "The two perturbations, the reproducibility test with its span rank, the resize/rotate geometry and the quadrature functional.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/G_GravitySource/ResearchY-G_053.md"),
+                new("ResearchY-G_052", "INPUT",
+                    "The exact amplitude/phase interface this audit perturbs along.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/G_GravitySource/ResearchY-G_052.md"),
+                new("ResearchY-G_050", "INPUT",
+                    "The phase sector as the quadrature carrying each channel's phase - the object the first phase-sensitive observable projects onto.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/G_GravitySource/ResearchY-G_050.md"),
+            ]),
         new(
             "researchy-g052-amplitude-phase-audit",
             "The Boundary Is the Answer \u2014 Where Amplitudes End and Phases Begin",

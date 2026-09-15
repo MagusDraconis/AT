@@ -2902,6 +2902,30 @@ preferred sector. The verdict is computed with a **live branch in every directio
 No group-G registry claim, so claim counts are unchanged. Registry: added as **Boundary** (`sector-weight-audit`),
 reclassifying nothing. Tests: `Y_E_015_Tests` 7/7; group E **103/103**.
 
+## ResearchY-G_053 - Phase Sector Dynamics Audit (COMPLETE, DERIVED)
+
+**Question.** Do phase modes have independent physical effects beyond amplitudes? Construct a pure amplitude and a pure
+phase perturbation; measure the clock, acceleration and field responses; which observable is uniquely phase-sensitive?
+
+**Answer: DERIVED - the phase effects are independent, and the reason is GEOMETRIC.**
+
+- **Orthogonal and both real:** perturbation overlap **2.168E-018**; all three readings respond to both (clock
+  **6.678E-003** vs **6.772E-003**, acceleration **8.904E-004** vs **7.024E-004**, field **1.128E-004** vs
+  **9.971E-005**) - so the question is not **silence** but **imitation**.
+- **The independence test is a reproducibility test:** projecting each reading's phase response onto the span of its
+  responses to all **42** amplitude directions (span rank **42 of 42**, verified) leaves a non-reproducible fraction of
+  **1.0000 / 1.0000 / 0.9926** (clock / acceleration / field).
+- **The geometry:** in channel 1 the amplitude move changes the magnitude by **3.464E-001** and the angle by
+  **2.220E-015** - **machine zero** - while the phase move changes the angle by **3.463E-001** and the magnitude by
+  **6.059E-002**. **The amplitude sector is exactly the no-rotation sector.** (Draft expected a 100× resize/rotate
+  split; the measurement is sharper in one place, weaker in another - criterion corrected to what is measured.)
+- **First uniquely phase-sensitive observable = the quadrature functional** (projection onto a hidden mode):
+  **2.000E-002** on the phase move vs **3.272E-015** on every amplitude move. AT's own laws are **MIXED** (all three
+  take from both sectors).
+
+Registry: added as **Derived** (`phase-sector-dynamics-audit`); group-G consistency counts updated. Tests:
+`Y_G_053_Tests` 6/6.
+
 ## ResearchY-G_052 - Amplitude Phase Audit (COMPLETE, DERIVED)
 
 **Question.** Can rho be decomposed uniquely into an amplitude sector (42) and a phase sector (53)? Measure

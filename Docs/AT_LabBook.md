@@ -4741,3 +4741,37 @@ response **vectors** with an unclamped step, giving the true **0.25**.
 **Status:** COMPLETE. Tests `Y_G_052_Tests` **7/7**. Registry: added as **Derived** (`amplitude-phase-audit`), with the
 group-G consistency counts updated. Core: `AT.Core/ResearchXH/AmplitudePhaseAudit.cs`; suite
 `AT.Tests/ResearchY/G_GravitySource/Y_G_052_Tests.cs`; doc `Docs/ResearchY/G_GravitySource/ResearchY-G_052.md`.
+
+---
+
+### ResearchY-G_053 - Phase Sector Dynamics Audit (DERIVED)
+
+**Question.** Do phase modes have independent physical effects beyond amplitudes? Construct a pure amplitude and a pure
+phase perturbation; measure the three responses.
+
+**Verdict: DERIVED** - the phase effects are independent; the reason is **geometric**.
+
+**1. Orthogonal perturbations, both real.** Overlap **2.168E-018**; responses:
+
+| reading | amplitude | phase |
+|---|---|---|
+| clock | **6.678E-003** | **6.772E-003** |
+| acceleration | **8.904E-004** | **7.024E-004** |
+| field strength | **1.128E-004** | **9.971E-005** |
+
+So the question is not **silence** but **imitation**.
+
+**2. Independence = reproducibility.** Projecting the phase response onto the span of the responses to all **42**
+amplitude directions (rank **42 of 42**) leaves non-reproducible fractions **1.0000 / 1.0000 / 0.9926**.
+
+**3. The geometry (the physical answer).** Channel 1: amplitude → magnitude **3.464E-001**, angle **2.220E-015**
+(machine zero); phase → angle **3.463E-001**, magnitude **6.059E-002**. **The amplitude sector is exactly the
+no-rotation sector.** (Draft expected 100×; criterion corrected to the measurement.)
+
+**4. First uniquely phase-sensitive observable: the quadrature functional** - **2.000E-002** on the phase move,
+**3.272E-015** on every amplitude move. AT's own laws are **mixed**.
+
+**Status:** COMPLETE. Tests `Y_G_053_Tests` **6/6**. Registry: added as **Derived**
+(`phase-sector-dynamics-audit`), with the group-G consistency counts updated. Core:
+`AT.Core/ResearchXH/PhaseSectorDynamicsAudit.cs`; suite `AT.Tests/ResearchY/G_GravitySource/Y_G_053_Tests.cs`; doc
+`Docs/ResearchY/G_GravitySource/ResearchY-G_053.md`.

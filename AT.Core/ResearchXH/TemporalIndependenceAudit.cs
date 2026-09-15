@@ -477,6 +477,13 @@ public static class TemporalIndependenceAudit
             + "cross term, so the metric content is the clock alone. NOT symbol-detectable: the suite names no B, g_rr or "
             + "GammaOf — its vocabulary is sectors, projections and clocks",
             ScanDetectsIt: false),
+        // ── G_053: do phase modes have independent effects beyond amplitudes? ──
+        new SectorClaim("Y_G_053", "Phase Sector Dynamics", MetricRequirement.ClockOnly,
+            "it applies a pure amplitude and a pure phase perturbation and measures the clock, acceleration and field "
+            + "responses, the residual of the phase response against the span of the amplitude responses, the channel "
+            + "rotation and the quadrature functional, so the metric content is the clock alone. NOT symbol-detectable: "
+            + "the suite names no B, g_rr or GammaOf — its vocabulary is perturbations, rotations and clocks",
+            ScanDetectsIt: false),
     };
 
     // ── The computed classification summaries ───────────────────────────────
