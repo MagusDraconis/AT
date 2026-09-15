@@ -526,6 +526,13 @@ public static class TemporalIndependenceAudit
             + "clock alone. NOT symbol-detectable: the suite names no B, g_rr or GammaOf — its vocabulary is push "
             + "vectors, multipliers and clocks",
             ScanDetectsIt: false),
+        // ── G_060: can the phase push be promoted to an update rule? ──
+        new SectorClaim("Y_G_060", "Phase Evolution", MetricRequirement.ClockOnly,
+            "it measures each candidate update's complex Fourier multiplier - which fixes its stability - together with "
+            + "the reachable phase rank, the amplitude rank and the fixed points, and it uses the clock law nowhere, so "
+            + "the metric content is the clock alone. NOT symbol-detectable: the suite names no B, g_rr or GammaOf "
+            + "— its vocabulary is multipliers, ranks and clocks",
+            ScanDetectsIt: false),
     };
 
     // ── The computed classification summaries ───────────────────────────────

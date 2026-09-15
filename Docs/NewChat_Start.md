@@ -2902,6 +2902,45 @@ preferred sector. The verdict is computed with a **live branch in every directio
 No group-G registry claim, so claim counts are unchanged. Registry: added as **Boundary** (`sector-weight-audit`),
 reclassifying nothing. Tests: `Y_E_015_Tests` 7/7; group E **103/103**.
 
+## ResearchY-G_060 - Phase Evolution Audit (COMPLETE, DERIVED - the promotion exists, in the norm-preserving form)
+
+**Question.** Can the difference-generated phase push (**G_059**) be **promoted to an actual update rule**? Test
+`rho(t+1) = rho(t) + eps*D*rho` and other AT-native updates. Measure the **phase evolution rank**, the **amplitude
+evolution rank**, **stability** and **fixed points**. Critical: does any AT-native update generate non-trivial phase
+dynamics?
+
+**Answer: DERIVED - the promotion exists and it is the norm-preserving form; the form the question names is the one that
+fails.** Every candidate is circulant, so **one complex multiplier per channel is the whole update** and nothing is
+estimated.
+
+1. **The question's own step is stable, and that is exactly why it fails.** `rho + eps*D*rho` has
+   `|mu|^2 = 1 - 2 eps x (1 - eps)`, so its symmetric part is **negative semi-definite**: a **dissipative** step, not the
+   skew step the name suggests. Its attractor is the kernel of D - **the constant** - measured as a deviation norm falling
+   **1.005E+000 -> 2.424E-001** over 20000 steps. **The closure with G_059: the canonical state has no phase content
+   because this is where the flow stops.**
+2. **A claim is withdrawn.** The draft asserted a monotone decay; measured, the phase content **oscillates** on the way
+   down (0.065 at 100 steps, **0.303** at 1000) while the envelope falls.
+3. **The phase survives only where |mu| = 1, and exactly one form has it.** Backward difference
+   (**1.000002 .. 1.002000**) and centred difference (**1.000000 .. 1.000001**) amplify every non-constant mode and leave
+   the simplex in measured step counts (backward: **796 / 80 / 9** at eps = 1E-3 / 1E-2 / 1E-1); the difference's own
+   exact flow `exp(eps D)` contracts like the forward step; the **UNITARY** form (the exact flow of the **centred**
+   difference) has |mu| = **1.000000000 exactly**, sustains all **42** phase directions, conserves the deviation norm
+   exactly (**1.005011E+000**) and the sum, and keeps every cell positive over **20000** steps.
+4. **The rank is 42 of 53 by two independent routes**, and the **11 unreachable** directions are channels **14, 19, 24,
+   32, 40** (both quadratures) plus **the alternating mode**. The centred family **annihilates** the alternating mode -
+   `(S - S^-1) e_48 = 0` - so its fixed-point dimension is **2**; the control fixes all **96**.
+5. **The AT-native positivity guard never fires** (agreement with the unclipped step to **5E-15**, minimum cell
+   **7.086E-001**).
+6. **Three defects recorded rather than hidden:** a guard that divided by a near-zero mean (and annihilated a zero-mean
+   probe - a **probe** defect, not a finding about AT); a rank scan that counted **63**, then **54**, directions inside a
+   **53**-dimensional space; and a difference-of-orbits construction with a **measured 2.329E-008 leak** into the
+   unreachable directions. Reachability is now measured from the **linear** response in the phase sector's own
+   coordinates.
+
+**Status.** COMPLETE. Tests `Y_G_060_Tests` **7/7**. Core `AT.Core/ResearchXH/PhaseEvolutionAudit.cs`; doc
+`Docs/ResearchY/G_GravitySource/ResearchY-G_060.md`. Registry: added as **Derived** (`phase-evolution-audit`); group-G
+consistency counts 30/**61** registry/**47** survives/**47** minimal time sector. **No reclassification.**
+
 ## ResearchY-G_059 - Flow Source Audit (COMPLETE, DERIVED - the source is the difference itself)
 
 **Question.** What AT **object** can produce a **non-zero push rank**? Given **G_058** that all admissible dynamics have

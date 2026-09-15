@@ -59,7 +59,7 @@ public class Y_G_033_Tests : ResearchTestBase
         // G_036, G_037 and G_038 added the rest, and none uses a substrate). G_039 and G_040 are DENSITY-era
         // audits: both recompute the D96 ring spectrum, so they belong on the other side of the line. G_041 joined
         // them: it asks whether d = 3 is selected, which means computing the D96^d family.
-        Assert.Equal(29, without.Length);
+        Assert.Equal(30, without.Length);
         Assert.Equal(27, withSubstrate.Length);
         Assert.Equal(2, commentOnly.Length);                 // G_001 names D96 only in comments; G_046 uses it indirectly, through G_040
 

@@ -5016,3 +5016,52 @@ reason for it does not.**
 consistency counts 29 without-substrate / **60** registry / **46** survives / **46** minimal time sector. Core:
 `AT.Core/ResearchXH/FlowSourceAudit.cs`; suite `AT.Tests/ResearchY/G_GravitySource/Y_G_059_Tests.cs`; doc
 `Docs/ResearchY/G_GravitySource/ResearchY-G_059.md`.
+
+### ResearchY-G_060 - Phase Evolution Audit (DERIVED)
+
+**Question.** Can the difference-generated phase push be **promoted to an actual update rule**? Test
+`rho(t+1) = rho(t) + eps*D*rho` and other AT-native updates; measure phase evolution rank, amplitude evolution rank,
+stability, fixed points.
+
+**1. Every candidate is circulant**, so one complex multiplier per channel is the whole update: the audit drives its
+analysis and its iteration from that number, and measures the reachable rank twice (per channel and by Krylov).
+
+| update | \|mu\| at eps = 1E-3 | reachable phase | decay / sustain / grow | off-simplex |
+|---|---|---|---|---|
+| forward difference | 0.998000 .. 0.999998 | 42 | 42 / 0 / 0 | > 4000 |
+| backward difference | 1.000002 .. 1.002000 | 42 | 0 / 0 / 42 | **796** |
+| centred (skew) difference | 1.000000 .. 1.000001 | 42 | 0 / 0 / 42 | > 4000 |
+| exact flow exp(eps D) | 0.998002 .. 0.999998 | 42 | 42 / 0 / 0 | > 4000 |
+| **unitary (Cayley)** | **1.000000 .. 1.000000** | **42** | **0 / 42 / 0** | > 4000 |
+| positivity-clipped | same as forward | 42 | 42 / 0 / 0 | > 4000 |
+| actualization (CONTROL) | 1.000000 | 0 | 0 / 0 / 0 | > 4000 |
+
+**2. The question's own step is stable, and that is why it fails.** `rho + eps*D*rho` has
+`|mu|^2 = 1 - 2 eps x(1 - eps)`, so its symmetric part is negative semi-definite: a **dissipative** step whose attractor
+is the **constant**. Measured over 20000 steps the deviation norm falls **1.005E+000 -> 2.424E-001**: the flow reaches
+the **phase-free** state, which is why the canonical state (G_059) has no phase content.
+
+**3. A claim is withdrawn.** The phase content does not decay monotonically - it **oscillates** (0.065 at 100 steps,
+**0.303** at 1000) while the envelope falls.
+
+**4. The phase survives only at |mu| = 1**, and exactly one form has it: the **unitary** form (the exact flow of the
+centred difference) sustains all **42** phase directions, conserves the deviation norm (**1.005011E+000**) and the sum,
+and keeps every cell positive over 20000 steps. The amplifying forms leave the simplex in measured step counts
+(backward: **796 / 80 / 9**).
+
+**5. The rank is bounded at 42 of 53** by two independent routes; the **11 unreachable** directions are channels
+**14, 19, 24, 32, 40** (both quadratures) plus the **alternating mode**, which the centred family **annihilates**
+(`(S - S^-1) e_48 = 0`) so its fixed-point dimension is **2**. The control fixes all **96**; a first version counted
+channels and reported 49 for the identity, which moves nothing.
+
+**6. Three defects are recorded rather than hidden.** The positivity guard divided by a near-zero mean and annihilated a
+zero-mean probe - a **probe** defect, not a finding about AT; it now restores the mass by a bounded uniform shift. The
+rank scan counted **63**, then **54**, directions inside a **53**-dimensional space. And the difference-of-orbits
+construction carries a **measured 2.329E-008 leak** into the unreachable directions - identical for the linear and
+clipped updates, which is how the audit knows it is its own arithmetic. Reachability is measured from the **linear**
+response in the phase sector's own coordinates.
+
+**Status:** COMPLETE. Tests `Y_G_060_Tests` **7/7**. Registry: added as **Derived** (`phase-evolution-audit`); group-G
+consistency counts 30 without-substrate / **61** registry / **47** survives / **47** minimal time sector. Core:
+`AT.Core/ResearchXH/PhaseEvolutionAudit.cs`; suite `AT.Tests/ResearchY/G_GravitySource/Y_G_060_Tests.cs`; doc
+`Docs/ResearchY/G_GravitySource/ResearchY-G_060.md`.
