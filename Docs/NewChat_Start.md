@@ -2902,6 +2902,43 @@ preferred sector. The verdict is computed with a **live branch in every directio
 No group-G registry claim, so claim counts are unchanged. Registry: added as **Boundary** (`sector-weight-audit`),
 reclassifying nothing. Tests: `Y_E_015_Tests` 7/7; group E **103/103**.
 
+## ResearchY-G_059 - Flow Source Audit (COMPLETE, DERIVED - the source is the difference itself)
+
+**Question.** What AT **object** can produce a **non-zero push rank**? Given **G_058** that all admissible dynamics have
+identical local rank. Candidates: occupancy imbalance, phase imbalance, amplitude-phase coupling, actualization pressure
+(uniform and local-rate readings), spectral mismatch, boundary assignment. Measure the **push vector**, the **flow
+source**, the **fixed points**. Goal: the first genuine source term.
+
+**Answer: DERIVED - the source is the DIFFERENCE ITSELF, derived exactly rather than argued.**
+
+1. **The canonical state has no phase content: 9.246E-015**, the floating-point floor. The phase sector is not where the
+   state **is** but where a source **sends** it. This explains what **G_054** recorded and refused to count - its
+   addressed-state determination was a tautology because **the phase coordinates are zero**, so the statement was
+   `0 = 0` - and it names **G_052's reconstruction residual (2.442E-015) as the phase part itself**.
+2. **The mechanism is exact.** The cyclic difference's Fourier multiplier is `1 − e^(−iδ_c)` - a rotation **composed with
+   a rescale** - so its action on a single visible mode returns exactly `{|sin δ_c|, 2 sin²(δ_c/2)}`: one amplitude part,
+   one phase part, no third term. **Verified on 42 of 42 visible modes to 1E-12.** The phase share is `cot(δ_c/2)`:
+   phase-heavy at channel **1** (30.6 : 1), amplitude-heavy at channel **47** (0.033 : 1); residue **2.141E-003 …
+   1.998E+000**. **A filter cannot create phase content at all** - its multiplier is real and symmetric under
+   `c → −c`, which is exactly what preserves the visible subspace.
+3. **The push table.** occupancy imbalance 1.368E+000 / phase **7.155E-001** / rank 1; phase imbalance 9.246E-015 /
+   rank 0; amplitude-phase coupling 8.295E-016 / rank 0; actualization (**uniform**) 9.798E+000 / phase **0.000E+000** /
+   rank 0; actualization (**local rate**) 3.407E-001 / phase **6.969E-003** / rank 1; spectral mismatch 2.572E-002 /
+   phase 2.388E-016 / rank 0; boundary assignment 1.575E-002 / phase **9.282E-003** / rank 1.
+4. **Creating versus amplifying, measured** over a 192-state deterministic family: creating sources (occupancy
+   imbalance, local-rate advance, seam pair) push from **any** non-uniform state and are **fixed only at the uniform
+   state** (191 of 192); amplifiers (phase imbalance, amplitude-phase coupling, spectral mismatch) move **exactly** the
+   106 phase-bearing states. At the canonical state only the **three creating sources** push.
+5. **No candidate is a pure phase source** (phase-heaviest: the seam pair, **7.296E-001**) and **no two coincide**.
+6. **A claim is withdrawn** (the difference is not a pure rotation) and **an accounting is corrected**: G_057 returned
+   **0.000E+000** from **two side conditions** without measuring the time-like component it names; the uniform reading
+   is **0.000E+000** (its conclusion holds) while the local clock-rate reading is **6.969E-003**, and **AT defines no
+   update rule for the organisation at all**. **The number survives; the reason for it does not.**
+
+**Status.** COMPLETE. Tests `Y_G_059_Tests` **7/7**. Core `AT.Core/ResearchXH/FlowSourceAudit.cs`; doc
+`Docs/ResearchY/G_GravitySource/ResearchY-G_059.md`. Registry: added as **Derived** (`flow-source-audit`); group-G
+consistency counts 29/**60** registry/**46** survives/**46** minimal time sector. **No reclassification.**
+
 ## ResearchY-G_058 - Phase Dynamics Closure Audit (COMPLETE, BOUNDARY - the requested criterion cannot discriminate)
 
 **Question.** Can any AT **update rule** generate a **non-trivial phase evolution**? Tests: single scalar flow, multiple

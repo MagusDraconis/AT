@@ -518,6 +518,14 @@ public static class TemporalIndependenceAudit
             + "show that the running rule has no generator at all, so the metric content is the clock alone. NOT "
             + "symbol-detectable: the suite names no B, g_rr or GammaOf — its vocabulary is ranks, generators and clocks",
             ScanDetectsIt: false),
+        // ── G_059: what AT object can produce a non-zero push rank? ──
+        new SectorClaim("Y_G_059", "Flow Source", MetricRequirement.ClockOnly,
+            "it measures each candidate's push vector split into mean, amplitude and phase, derives the difference "
+            + "operator's exact Fourier multiplier and tests it on all 42 visible modes, and uses the clock law's cube "
+            + "root only in the local clock-rate reading of the actualization pressure, so the metric content is the "
+            + "clock alone. NOT symbol-detectable: the suite names no B, g_rr or GammaOf — its vocabulary is push "
+            + "vectors, multipliers and clocks",
+            ScanDetectsIt: false),
     };
 
     // ── The computed classification summaries ───────────────────────────────

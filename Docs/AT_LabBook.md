@@ -4965,3 +4965,54 @@ found the defect; without it the audit would have concluded that the identity *f
 (`phase-dynamics-closure-audit`); group-G consistency counts 28 without-substrate / **59** registry / **45** survives /
 **45** minimal time sector. Core: `AT.Core/ResearchXH/PhaseDynamicsClosureAudit.cs`; suite
 `AT.Tests/ResearchY/G_GravitySource/Y_G_058_Tests.cs`; doc `Docs/ResearchY/G_GravitySource/ResearchY-G_058.md`.
+
+### ResearchY-G_059 - Flow Source Audit (DERIVED)
+
+**Question.** What AT **object** can produce a non-zero **push rank**? Given G_058 that all admissible dynamics have
+identical local rank. Candidates: occupancy imbalance, phase imbalance, amplitude-phase coupling, actualization pressure
+(uniform and local-rate readings), spectral mismatch, boundary assignment. Measure the push vector, the flow source, the
+fixed points.
+
+**1. The measure.** G_058 showed a rank cannot separate the candidates - every rule with a generator linearises to full
+rank and pushes one direction - so this audit measures the **push vector** itself, split by G_052's identity into mean,
+amplitude and phase. A candidate is a source when its push has a non-zero **phase** part (floor 1E-9).
+
+**2. The canonical state has no phase content: 9.246E-015**, the floating-point floor. The phase sector is where a source
+**sends** the state, not where the state is. This explains G_054's excluded tautology (the phase coordinates are zero, so
+"the state determines the phases" was `0 = 0`) and names G_052's reconstruction residual as the phase part itself.
+
+**3. The mechanism, exact.** The cyclic difference's Fourier multiplier is `1 − e^(−iδ_c)` with `δ_c = 2πc/96`: a rotation
+**composed with a rescale**. On a single visible mode it returns exactly `{|sin δ_c|, 2 sin²(δ_c/2)}` - one amplitude
+part, one phase part, no third term - verified on **42 of 42** visible modes to **1E-12**. The phase share is `cot(δ_c/2)`
+(channel 1: 30.6 : 1 phase-heavy; channel 47: 0.033 : 1). **A filter cannot do this**: a real, `c`-symmetric multiplier is
+exactly what preserves the visible subspace - which is why the filter-shaped candidates measure at the floor.
+
+| candidate | \|push\| | phase | amplitude | rank |
+|---|---|---|---|---|
+| 1 occupancy imbalance | 1.368E+000 | **7.155E-001** | 1.166E+000 | 1 |
+| 2 phase imbalance | 9.246E-015 | 9.246E-015 | 6.391E-029 | 0 |
+| 3 amplitude-phase coupling | 8.295E-016 | 7.000E-016 | 4.450E-016 | 0 |
+| 4a actualization pressure (uniform) | 9.798E+000 | **0.000E+000** | 0.000E+000 | 0 |
+| 4b actualization pressure (local rate) | 3.407E-001 | **6.969E-003** | 3.407E-001 | 1 |
+| 5 spectral mismatch | 2.572E-002 | 2.388E-016 | 2.572E-002 | 0 |
+| 6 boundary assignment | 1.575E-002 | **9.282E-003** | 1.272E-002 | 1 |
+
+**4. Creating versus amplifying**, measured over a 192-state deterministic family: creating sources (occupancy imbalance,
+local-rate advance, seam pair) push from any non-uniform state and are **fixed only at the uniform state** (191 of 192
+moved); amplifiers (phase imbalance, amplitude-phase coupling, spectral mismatch) move **exactly** the 106 phase-bearing
+states and no others. At the canonical state only the three creating sources push.
+
+**5. No candidate is a pure phase source** - every source pushes amplitude too, the phase-heaviest being the seam pair at
+**7.296E-001** - and **no two candidates coincide** (0 degenerate pairs).
+
+**6. A claim is withdrawn, and an accounting is corrected.** The draft called the difference a **pure rotation**; the
+measurement refused it at **1.998E+000**, the near-maximum `2 sin²(δ/2)`. And G_057's recorded **0.000E+000** is returned
+from **two side conditions** without measuring the phase content of the time-like component it names: measured directly
+the uniform reading is **0.000E+000** (so G_057's conclusion holds) while the **local clock-rate** reading is
+**6.969E-003**, not a floor - and **AT defines no update rule for the organisation at all**. **The number survives; the
+reason for it does not.**
+
+**Status:** COMPLETE. Tests `Y_G_059_Tests` **7/7**. Registry: added as **Derived** (`flow-source-audit`); group-G
+consistency counts 29 without-substrate / **60** registry / **46** survives / **46** minimal time sector. Core:
+`AT.Core/ResearchXH/FlowSourceAudit.cs`; suite `AT.Tests/ResearchY/G_GravitySource/Y_G_059_Tests.cs`; doc
+`Docs/ResearchY/G_GravitySource/ResearchY-G_059.md`.
