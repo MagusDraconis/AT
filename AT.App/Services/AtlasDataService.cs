@@ -177,11 +177,39 @@ public static class AtlasDataService
         new("Y_G_054_Tests", 7, "PASS", "Gravity Source"),
         new("Y_G_055_Tests", 6, "PASS", "Gravity Source"),
         new("Y_G_056_Tests", 6, "PASS", "Gravity Source"),
+        new("Y_G_057_Tests", 7, "PASS", "Gravity Source"),
         ]),
     ];
 
     public static IReadOnlyList<ResearchNewsModel> ResearchNews { get; } =
     [
+        new(
+            "researchy-g057-phase-flow-audit",
+            "Nothing Acts On What It Sees \u2014 Why No Process Moves the Phases",
+            "ResearchY Milestone \u00b7 G_057 (Phase Flow Audit; can an AT process change the phase coordinates?)",
+            "The previous entry ended on a striking asymmetry: the theory contains structures that are sensitive to every one of the fifty-three phase directions, yet nothing in its dynamics touches them. This entry closes the loop by asking about processes rather than structures, and it produces the sentence that summarises the whole run of entries: the theory contains ways of seeing the phases and runs none of them. The audit begins by distinguishing two things that sound alike. A structure's sensitivity is how many independent directions it can distinguish; a process's reach is how much of the state it can actually move. The previous entry measured the first and found full coverage. A process, though, has to be driven by something with a value - a potential - and a potential is a single number per state, whose change is a single direction. So however large a structure's reach, the process that uses it can only ever push the state along one direction at a time. That is the same counting argument as two entries ago, applied one level up, and it gives every candidate flow a phase rank of one and a selection power of one fifty-third. The five candidates all turn out to move the phase, and the entry reports their speeds rather than asserting the fact. The clock's potential, the difference-based acceleration, the field strength, the connection and the two-gradient coupling all have a component pointing into the phase sector, the largest by far being the coupling. So the phases are not inert to what the theory can define. What the theory does not have is a driver: the rule that advances the substrate turns out to be completely blind here - its spatial part is zero and nothing couples the links to the organisation, which the entry re-measures rather than citing - so its phase velocity is exactly zero. That is the answer to the question the entry was asked: no process in the theory generates a phase flow. Two further measurements make the answer quantitative rather than merely negative. First, the union of all five flows, run together, would constrain four of the fifty-three phase directions and leave forty-nine free - so even the most generous reading of what the theory's own potentials could ever pin falls far short. Second, and pleasingly, two of the five candidates turn out to be the same flow: the field strength the theory builds is exactly the product of the coupling and the occupancy difference, which is exactly the connection it builds, so the two names describe one potential. The entry records that degeneracy rather than counting it twice, in the same spirit as an earlier entry that found two coupling candidates to be one law. The verdict is that no running process changes the phases, that the potentials exist and each could constrain exactly one direction, and that the theory's total reach over the phase sector - if everything that could be run were run at once - is four directions out of fifty-three. The phases are freely assigned, and the reason is now sharp: not that the theory cannot see them, but that nothing it does acts on what it can see.",
+            "PHASE FLOW AUDIT. Question: can any existing AT process change the phase coordinates? Candidates: clock flow, acceleration flow, field flow, connection flow, T1/T2 coupling. Measure phase velocity, phase rank, selection power. ANSWER: BOUNDARY - no AT process the theory RUNS changes the phase coordinates (actualization phase velocity 0.000E+000), while five POTENTIALS it defines would move them; and no single flow can ever suffice, because A FLOW NEEDS A POTENTIAL, A POTENTIAL IS A SCALAR, AND A SCALAR'S GRADIENT IS ONE VECTOR - every candidate has PHASE RANK 1 and SELECTION POWER 1/53. "
+            + "ALL FIVE MOVE THE PHASE, MEASURED AS A VELOCITY: clock 1.241E-002 (fraction 3.768E-003), acceleration 2.933E-002 (5.204E-002), field 1.678E-003 (8.572E-002), connection 1.678E-003 (8.572E-002), T1/T2 coupling 4.813E-001 (4.272E-001). "
+            + "A DEGENERACY IS MEASURED: the field flow and the connection flow coincide (gap 0.000E+000), because the field strength AT builds IS h(rho)*Delta rho - exactly the connection AT builds - so five candidate names describe 4 distinct flows. "
+            + "THE PROCESS THE THEORY ACTUALLY RUNS IS PHASE-STATIC: the update rule's spatial part is 0.000E+000 and the coupling census is 0, so the actualization supplies only the time-like component - no AT process generates a phase flow. "
+            + "THE UNION IS THE HONEST UPPER BOUND: all five flows run simultaneously would constrain 4 of the 53 phase directions, leaving 49 free. "
+            + "THE SERIES SAYS SOMETHING COMPLETE: G_056 showed AT contains STRUCTURES SENSITIVE TO EVERY PHASE DIRECTION; G_057 shows the PROCESSES IT RUNS are sensitive to NONE - the phases are freely assigned not because the theory is blind to them, but because NOTHING THE THEORY DOES ACTS ON WHAT IT CAN SEE. "
+            + "OUTPUT: BOUNDARY. Core: AT.Core/ResearchXH/PhaseFlowAudit.cs. 7/7 PASSED.",
+            "The theory sees every phase direction and runs nothing that acts on them.",
+            "Every candidate potential moves the phase (rank 1, selection power 1/53) while the running process has phase velocity exactly zero, and the union still leaves 49 directions free.",
+            "No process in the theory changes the phases, and none could ever pin more than one direction at a time.",
+            false,
+            [
+                new("ResearchY-G_057", "PHASE FLOW",
+                    "The five potentials with their velocities and ranks, the phase-static actualization, the union bound and the field/connection degeneracy.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/G_GravitySource/ResearchY-G_057.md"),
+                new("ResearchY-G_056", "INPUT",
+                    "Non-scalar structures span the phase sector - the sensitivity this audit shows no process acts on.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/G_GravitySource/ResearchY-G_056.md"),
+                new("ResearchY-G_054", "INPUT",
+                    "No AT process runs a phase flow - here restated as a velocity and measured directly.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/G_GravitySource/ResearchY-G_054.md"),
+            ]),
         new(
             "researchy-g056-non-scalar-selection-audit",
             "Seventeen Times Over the Ceiling \u2014 The Structures That See Every Phase",

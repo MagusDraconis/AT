@@ -2902,6 +2902,33 @@ preferred sector. The verdict is computed with a **live branch in every directio
 No group-G registry claim, so claim counts are unchanged. Registry: added as **Boundary** (`sector-weight-audit`),
 reclassifying nothing. Tests: `Y_E_015_Tests` 7/7; group E **103/103**.
 
+## ResearchY-G_057 - Phase Flow Audit (COMPLETE, BOUNDARY)
+
+**Question.** Can any existing AT process change the phase coordinates? Candidates: clock flow, acceleration flow, field
+flow, connection flow, T1/T2 coupling. Measure phase velocity, phase rank, selection power.
+
+**Answer: BOUNDARY - no AT process the theory RUNS changes the phases, while five POTENTIALS would; and a flow needs a
+potential, a potential is a scalar, so every candidate has phase rank 1 and selection power 1/53.**
+
+| candidate | velocity | fraction | rank | selection power |
+|---|---|---|---|---|
+| clock flow | 1.241E-002 | 3.768E-003 | 1 | 0.0189 |
+| acceleration flow | 2.933E-002 | 5.204E-002 | 1 | 0.0189 |
+| field flow | 1.678E-003 | 8.572E-002 | 1 | 0.0189 |
+| connection flow | 1.678E-003 | 8.572E-002 | 1 | 0.0189 |
+| T1/T2 coupling | 4.813E-001 | 4.272E-001 | 1 | 0.0189 |
+
+- **The running process is phase-static:** actualization phase velocity **0.000E+000** (update-rule spatial part
+  **0.000E+000**, census **0**) - so **no AT process generates a phase flow**.
+- **Union:** all five flows together constrain **4 of 53**, leaving **49** free.
+- **Degeneracy measured:** the **field and connection flows coincide** (gap **0.000E+000**) - the field strength AT builds
+  *is* `h(ρ)·Δρ` - so five names describe **4** distinct flows.
+- **The series now says something complete:** G_056 showed AT contains **structures sensitive to every phase direction**;
+  G_057 shows the **processes it runs are sensitive to none** - the phases are freely assigned not because the theory is
+  blind to them, but because **nothing the theory does acts on what it can see**.
+
+Registry: added as **Boundary** (`phase-flow-audit`); group-G consistency counts updated. Tests: `Y_G_057_Tests` 7/7.
+
 ## ResearchY-G_056 - Non-Scalar Selection Audit (COMPLETE, DERIVED)
 
 **Question.** Can any existing non-scalar AT structure span the 53-dimensional phase sector? Candidates: phase vector

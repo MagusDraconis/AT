@@ -504,6 +504,13 @@ public static class TemporalIndependenceAudit
             + "phase directions - against G_055's scalar ceiling, so the metric content is the clock alone. NOT "
             + "symbol-detectable: the suite names no B, g_rr or GammaOf — its vocabulary is ranks, gradients and clocks",
             ScanDetectsIt: false),
+        // ── G_057: can any AT process change the phase coordinates? ──
+        new SectorClaim("Y_G_057", "Phase Flow", MetricRequirement.ClockOnly,
+            "it measures each candidate flow's phase velocity, phase rank and selection power, and re-measures the "
+            + "actualization's spatial part and the coupling census to show that the running process is phase-static, so "
+            + "the metric content is the clock alone. NOT symbol-detectable: the suite names no B, g_rr or GammaOf — its "
+            + "vocabulary is potentials, velocities and clocks",
+            ScanDetectsIt: false),
     };
 
     // ── The computed classification summaries ───────────────────────────────

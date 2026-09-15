@@ -4886,3 +4886,38 @@ stay **freely assigned**. G_055's deficiency of 50 is explained: a deficiency of
 (`non-scalar-selection-audit`), with the group-G consistency counts updated. Core:
 `AT.Core/ResearchXH/NonScalarSelectionAudit.cs`; suite `AT.Tests/ResearchY/G_GravitySource/Y_G_056_Tests.cs`; doc
 `Docs/ResearchY/G_GravitySource/ResearchY-G_056.md`.
+
+---
+
+### ResearchY-G_057 - Phase Flow Audit (BOUNDARY)
+
+**Question.** Can any existing AT process change the phase coordinates? Candidates: clock, acceleration, field,
+connection and T1/T2 coupling flows.
+
+**Verdict: BOUNDARY** - the running process is phase-static; five potentials would move the phase; no single flow can
+suffice.
+
+**1. The five potentials, measured as velocities.**
+
+| candidate | velocity | fraction | rank | selection power |
+|---|---|---|---|---|
+| clock flow | 1.241E-002 | 3.768E-003 | **1** | 0.0189 |
+| acceleration flow | 2.933E-002 | 5.204E-002 | **1** | 0.0189 |
+| field flow | 1.678E-003 | 8.572E-002 | **1** | 0.0189 |
+| connection flow | 1.678E-003 | 8.572E-002 | **1** | 0.0189 |
+| T1/T2 coupling | 4.813E-001 | 4.272E-001 | **1** | 0.0189 |
+
+A flow needs a potential, a potential is a scalar, and a scalar's gradient is one vector - so **rank 1** for every
+candidate and selection power **1/53**.
+
+**2. The running process is phase-static.** Actualization phase velocity **0.000E+000** (update-rule spatial part
+**0.000E+000**, census **0**): **no AT process generates a phase flow**.
+
+**3. The union.** All five together constrain **4 of 53** directions, leaving **49** free.
+
+**4. A degeneracy, measured.** The **field and connection flows coincide** (gap **0.000E+000**) - the field strength AT
+builds *is* `h(ρ)·Δρ` - so five names describe **4** distinct flows.
+
+**Status:** COMPLETE. Tests `Y_G_057_Tests` **7/7**. Registry: added as **Boundary** (`phase-flow-audit`), with the
+group-G consistency counts updated. Core: `AT.Core/ResearchXH/PhaseFlowAudit.cs`; suite
+`AT.Tests/ResearchY/G_GravitySource/Y_G_057_Tests.cs`; doc `Docs/ResearchY/G_GravitySource/ResearchY-G_057.md`.
