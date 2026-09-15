@@ -491,6 +491,13 @@ public static class TemporalIndependenceAudit
             + "symbol-detectable: the suite names no B, g_rr or GammaOf — its vocabulary is coordinates, flows and "
             + "clocks",
             ScanDetectsIt: false),
+        // ── G_055: can any existing AT quantity assign a preferred phase state? ──
+        new SectorClaim("Y_G_055", "Phase Selection Principle", MetricRequirement.ClockOnly,
+            "it projects the gradients of six AT functionals into the phase sector and measures the rank of what they "
+            + "can constrain, plus the directional derivatives that decide whether the state is a critical point, so the "
+            + "metric content is the clock alone. NOT symbol-detectable: the suite names no B, g_rr or GammaOf — its "
+            + "vocabulary is gradients, ranks and clocks",
+            ScanDetectsIt: false),
     };
 
     // ── The computed classification summaries ───────────────────────────────

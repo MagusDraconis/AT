@@ -2902,6 +2902,33 @@ preferred sector. The verdict is computed with a **live branch in every directio
 No group-G registry claim, so claim counts are unchanged. Registry: added as **Boundary** (`sector-weight-audit`),
 reclassifying nothing. Tests: `Y_E_015_Tests` 7/7; group E **103/103**.
 
+## ResearchY-G_055 - Phase Selection Principle Audit (COMPLETE, BOUNDARY - deficiency measured)
+
+**Question.** Can any existing AT quantity assign a preferred phase state? Candidates: entropy, free room, actualization
+density, flux sector, clock functional, field functional. Critical question: why this phase instead of another?
+
+**Answer: BOUNDARY - none can, and the deficiency is measured: a scalar functional's gradient is ONE vector, so it
+constrains at most one phase direction; measured rank 3, deficiency 50.**
+
+- **Three of the six constrain nothing at all** (stronger than weakness): free room IS the simplex constraint (constant
+  gradient, phase projection **3.952E-014**), actualization density's scalar level IS that constant (**4.104E-016**),
+  flux sector decoupled (**0.000E+000**, census 0).
+- **The other three contribute one direction each:** entropy **3.334E-004**, clock functional **1.241E-002**, field
+  functional **1.678E-003**.
+- **Counting:** 53 phase dimensions, 6 candidates, **rank 3**, **deficiency 50** - free for every combination.
+- **No sensitive candidate is stationary** at the audited state (2.808E-004 / 1.038E-002 / 6.252E-004), so nothing is
+  extremised either.
+- **The critical question:** "why this phase instead of another" has **NO answer inside AT** for the 50 unconstrained
+  directions. What would break it: 53 independent scalars, or one non-scalar structure spanning the phase sector.
+- **Three defects caught by the measurements:** (1) **cancellation** - free room's exactly-constant gradient differenced
+  at step 1E-6 left a **2.540E-008** floor and made a phase-blind candidate look sensitive; gradients are now analytic
+  where trivial, differenced at step 1E-4 otherwise; (2) the exact-zero floor (~**4E-14**) is stated with its origin
+  rather than tuned away; (3) a **delegate-identity** bug (`ReferenceEquals` on a method group never matches) - the
+  candidate lookup is now **by name**.
+
+Registry: added as **Boundary** (`phase-selection-principle-audit`); group-G consistency counts updated. Tests:
+`Y_G_055_Tests` 6/6.
+
 ## ResearchY-G_054 - Phase Determination Audit (COMPLETE, BOUNDARY - freely assigned)
 
 **Question.** What fixes the 53 phase coordinates? Candidates: symmetry, occupancy, multiplicity, attractor structure,

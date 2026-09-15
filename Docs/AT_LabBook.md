@@ -4809,3 +4809,41 @@ actualization history **REFUTED**; **boundary assignment** - the answer.
 (`phase-determination-audit`), with the group-G consistency counts updated. Core:
 `AT.Core/ResearchXH/PhaseDeterminationAudit.cs`; suite `AT.Tests/ResearchY/G_GravitySource/Y_G_054_Tests.cs`; doc
 `Docs/ResearchY/G_GravitySource/ResearchY-G_054.md`.
+
+---
+
+### ResearchY-G_055 - Phase Selection Principle Audit (BOUNDARY)
+
+**Question.** Can any existing AT quantity assign a preferred phase state? Candidates: entropy, free room,
+actualization density, flux sector, clock functional, field functional.
+
+**Verdict: BOUNDARY** - none can; **rank 3, deficiency 50**.
+
+**1. The candidates, measured.**
+
+| candidate | phase projection norm | directions | class |
+|---|---|---|---|
+| entropy | **3.334E-004** | 1 | phase-sensitive |
+| free room | **3.952E-014** | 0 | **PHASE-BLIND** |
+| actualization density | **4.104E-016** | 0 | **PHASE-BLIND** |
+| flux sector | **0.000E+000** | 0 | **PHASE-BLIND** |
+| clock functional | **1.241E-002** | 1 | phase-sensitive |
+| field functional | **1.678E-003** | 1 | phase-sensitive |
+
+**2. The counting fact.** A scalar's gradient is one vector → at most one phase direction each. Measured **rank 3**;
+**DEFICIENCY 50** of 53 directions free for any combination.
+
+**3. Criticality.** No sensitive candidate is stationary (2.808E-004 / 1.038E-002 / 6.252E-004), so nothing is
+extremised at the audited state.
+
+**4. The critical question.** "Why this phase instead of another" has **NO answer inside AT** for the 50 unconstrained
+directions.
+
+**5. Three defects caught:** (1) **cancellation** - free room's exactly-constant gradient differenced at step 1E-6 gave
+**2.540E-008** (now analytic where trivial, step 1E-4 otherwise); (2) the exact-zero floor (**~4E-14**) is documented
+with its origin; (3) **delegate-identity** lookup never matched method groups - now **by name**.
+
+**Status:** COMPLETE. Tests `Y_G_055_Tests` **6/6**. Registry: added as **Boundary**
+(`phase-selection-principle-audit`), with the group-G consistency counts updated. Core:
+`AT.Core/ResearchXH/PhaseSelectionPrincipleAudit.cs`; suite `AT.Tests/ResearchY/G_GravitySource/Y_G_055_Tests.cs`; doc
+`Docs/ResearchY/G_GravitySource/ResearchY-G_055.md`.

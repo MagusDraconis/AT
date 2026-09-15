@@ -175,11 +175,40 @@ public static class AtlasDataService
         new("Y_G_052_Tests", 7, "PASS", "Gravity Source"),
         new("Y_G_053_Tests", 6, "PASS", "Gravity Source"),
         new("Y_G_054_Tests", 7, "PASS", "Gravity Source"),
+        new("Y_G_055_Tests", 6, "PASS", "Gravity Source"),
         ]),
     ];
 
     public static IReadOnlyList<ResearchNewsModel> ResearchNews { get; } =
     [
+        new(
+            "researchy-g055-phase-selection-principle-audit",
+            "Fifty Free Directions \u2014 Why There Is No Answer to \u201cWhy This Phase?\u201d",
+            "ResearchY Milestone \u00b7 G_055 (Phase Selection Principle Audit; can any AT quantity prefer a phase?)",
+            "The previous entry concluded that the fifty-three phase coordinates of the organisation are freely assigned - nothing in the theory fixes them - and it put the question off in a way that demanded a follow-up: not whether the phases are assigned, but whether any quantity the theory already contains could possibly have assigned them. This entry settles that, and the answer turns on a piece of counting so simple that it is easy to miss. A quantity that could prefer one phase over another would have to be something with a value - a single number per state - because preferring means being extremal somewhere. The change of such a quantity is a single direction in the space of states, and the phase sector is a part of that space: so a single quantity can only ever constrain one direction inside it, no matter how useful it is elsewhere. Six candidates therefore cannot pin down fifty-three directions, and the measurements confirm not merely that the bound holds but that it is barely approached. Three of the six candidates turn out to constrain nothing whatsoever, which is a stronger statement than being weak. Free room is the constraint that the occupancies sum to a fixed total, and its change is the same everywhere - a constant, which lies exactly along the direction that adjusting the overall level moves in and has no component in any oscillation direction at all. The actualization density\u2019s scalar level is that same constant. And the flux sector is silent about the organisation entirely, because its label is carried by the phases on the links and nothing in the theory couples the two, a decoupling an earlier entry established. The remaining three - the entropy of the occupancy distribution, the summed clock rate and the summed field strength - do have genuine phase sensitivity, each along one direction, and the entry reports their magnitudes rather than dismissing them: the phase sector is not uniformly unselectable. It is unselectable in all but three of its directions. The audit then asks the most useful version of the critical question. If a quantity saw a phase direction, one might hope that the state sits at an extremum of it, which would be an actual preference. It does not: the directional derivatives of all three sensitive quantities are non-zero, so the state is not a critical point of anything that feels the phases. That closes the argument. Asked why this phase rather than another, the theory has no answer for fifty of the fifty-three directions, because nothing it contains is sensitive to them, and for the remaining three the answer would have to be that a quantity is extremal there - which it is not. The entry states positively what would break the deadlock: fifty-three independent scalar quantities, or one structure that is not a scalar and whose sensitivity spans the phase sector. The theory has neither, which is why the verdict is that the phase sector is free in a measured number of directions rather than free in a vague sense. Three defects were caught in the process and recorded, one of them the kind that produces confident wrong answers: a quantity whose change is exactly constant was being differenced numerically, and the cancellation in that arithmetic made it look as though it cared about one phase direction when it cares about none.",
+            "PHASE SELECTION PRINCIPLE AUDIT. Question: can any existing AT quantity assign a preferred phase state? Candidates: entropy, free room, actualization density, flux sector, clock functional, field functional. ANSWER: BOUNDARY - none can, and the DEFICIENCY IS MEASURED: a scalar functional's gradient is ONE VECTOR, so it constrains at most one phase direction - measured rank 3, deficiency 50. "
+            + "THREE OF THE SIX CONSTRAIN NOTHING AT ALL, which is stronger than weakness: free room IS the simplex constraint (constant gradient, projection 3.952E-014), actualization density's scalar level IS that same constant (4.104E-016), and the flux sector is decoupled from the organisation (0.000E+000, census 0). "
+            + "THE OTHER THREE CONTRIBUTE ONE DIRECTION EACH: entropy 3.334E-004, clock functional 1.241E-002, field functional 1.678E-003 - so the phase sector is unselectable in all but a measured handful of directions. "
+            + "THE COUNTING FACT: 53 phase dimensions, 6 candidates, constraint rank 3 (measured, not bounded), DEFICIENCY 50. "
+            + "IS THE STATE A CRITICAL POINT OF ANYTHING? No - the largest phase directional derivatives are non-zero for every sensitive candidate (entropy 2.808E-004, clock 1.038E-002, field 6.252E-004), so nothing is extremised here either. "
+            + "THE CRITICAL QUESTION IS ANSWERED IN ITS OWN TERMS: why this phase instead of another has NO answer inside AT for the 50 unconstrained directions. What would break the degeneracy: 53 independent scalar functionals, or one non-scalar structure whose gradient spans the phase sector. "
+            + "THREE DEFECTS CAUGHT BY THE MEASUREMENTS: (1) cancellation - free room's gradient is exactly constant yet differencing an order-96 function at step 1E-6 left a 2.540E-008 floor and made a phase-blind candidate look sensitive; gradients are now analytic where trivial and differenced at step 1E-4 otherwise. (2) The exact-zero floor is stated with its origin (about 4E-14, the modes' own sum residual times 96). (3) A delegate-identity bug: ReferenceEquals on a method group never matches, so the candidate lookup is now by name. "
+            + "OUTPUT: BOUNDARY. Core: AT.Core/ResearchXH/PhaseSelectionPrincipleAudit.cs. 6/6 PASSED.",
+            "Six candidates, one direction each \u2014 and fifty phase directions nothing can reach.",
+            "Three candidates constrain nothing at all and the rest contribute one direction each, so 50 of 53 phase directions are unreachable by any combination.",
+            "There is no answer inside AT to why this phase rather than another: the theory's own quantities are blind to almost the whole phase sector.",
+            false,
+            [
+                new("ResearchY-G_055", "PHASE SELECTION PRINCIPLE",
+                    "The six candidates and their phase projections, the counting bound, the measured deficiency, the critical-point test and the three recorded defects.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/G_GravitySource/ResearchY-G_055.md"),
+                new("ResearchY-G_054", "INPUT",
+                    "The phases are freely assigned - which this audit makes quantitative by counting what could have assigned them.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/G_GravitySource/ResearchY-G_054.md"),
+                new("ResearchY-E_015", "INPUT",
+                    "The flat sector measure: the same shape of no-selection result for the flux sector.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/E_Electromagnetism/ResearchY-E_015.md"),
+            ]),
         new(
             "researchy-g054-phase-determination-audit",
             "Conserved, Not Determined \u2014 What Sets the Phases",
