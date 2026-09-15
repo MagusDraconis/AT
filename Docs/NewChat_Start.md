@@ -2902,6 +2902,39 @@ preferred sector. The verdict is computed with a **live branch in every directio
 No group-G registry claim, so claim counts are unchanged. Registry: added as **Boundary** (`sector-weight-audit`),
 reclassifying nothing. Tests: `Y_E_015_Tests` 7/7; group E **103/103**.
 
+## ResearchY-G_061 - Residual Phase Audit (COMPLETE, DERIVED - the eleven are coordinates, not structure)
+
+**Question.** What is **special** about the **11 unreachable phase directions** of G_060? Identify the **alternating mode**,
+the **empty channels**, the **kernel relation** and the **symmetry properties**. Test: can any existing AT operator reach
+them? Goal: explain the **53 = 42 + 11** split.
+
+**Answer: DERIVED - they are NOT special directions of the substrate: they are the modes the canonical state does not
+occupy, and the split is a property of SHIFT-INVARIANCE.**
+
+1. **The kernel relation is exact.** A contraction row is `A_d rho` with `A_d` the distance-`d` relation, and **`A_d` is
+   circulant**, so on a single mode it acts as `lambda_d(c) x <rho, e>` with `lambda_0(c) = 1`. Hence **hidden if and only
+   if zero occupancy**, measured over all **95** non-constant modes. Occupied modes **42**, occupied span **43**, kernel
+   **53**. The phase directions are hidden because the **state** says nothing about them.
+2. **The eleven:** channels **14, 19, 24, 32, 40** (both quadratures) + the **alternating mode**, all occupancies at the
+   floor. **Accounting closes 7 + 4 = 11, disjoint:** **Sigma(m-1) = 51** modes are empty for ANY one-vector-per-level
+   state (free room, 96 - 45); the only two degenerate levels are index **13** (lambda **12.0**, mult **5**, channels
+   16, 32, 48) and index **35** (lambda **14.0**, mult **6**, channels 8, 24, 40), leaving **7** of the eleven; and two
+   levels carry a **construction weight of exactly zero** (indices **8, 31**) emptying channels **14 and 19** (**4**).
+3. **Reachability, both halves measured:** circulant operators (difference, centred difference) give projection
+   **9.512E-015 / 3.675E-015**, rank **0**; state-dependent ones (connection `h(rho) Delta rho`, T1/T2 coupling) give
+   **2.968E-003 / 1.455E-001**, rank **11** - they reach **all** of them. A circulant operator cannot mix channels;
+   multiplication by a non-constant `h(rho)` can.
+4. **The decisive experiment - the set MOVES.** Rebuilding from the **last** basis vector of each level gives empty
+   channels **8, 14, 16, 19, 24, 32** and **12** directions, so the eleven are **not substrate-invariant**. Only the
+   degeneracy count (**51**) is; the other two come from a weight that vanishes - a **chosen formula**, not substrate.
+5. **Symmetry:** group order **192**, the eleven form an invariant set **as a span** (a rotation carries a mode into a
+   combination of its quadratures - the test must be a span test), the alternating mode's orbit **2**, channel 32's
+   cosine **3**.
+
+**Status.** COMPLETE. Tests `Y_G_061_Tests` **7/7**. Core `AT.Core/ResearchXH/ResidualPhaseAudit.cs`; doc
+`Docs/ResearchY/G_GravitySource/ResearchY-G_061.md`. Registry: added as **Derived** (`residual-phase-audit`); group-G
+consistency counts 31/**62** registry/**48** survives/**48** minimal time sector. **No reclassification.**
+
 ## ResearchY-G_060 - Phase Evolution Audit (COMPLETE, DERIVED - the promotion exists, in the norm-preserving form)
 
 **Question.** Can the difference-generated phase push (**G_059**) be **promoted to an actual update rule**? Test

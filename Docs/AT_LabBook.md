@@ -5065,3 +5065,60 @@ response in the phase sector's own coordinates.
 consistency counts 30 without-substrate / **61** registry / **47** survives / **47** minimal time sector. Core:
 `AT.Core/ResearchXH/PhaseEvolutionAudit.cs`; suite `AT.Tests/ResearchY/G_GravitySource/Y_G_060_Tests.cs`; doc
 `Docs/ResearchY/G_GravitySource/ResearchY-G_060.md`.
+
+### ResearchY-G_061 - Residual Phase Audit (DERIVED)
+
+**Question.** What is **special** about the **11 unreachable phase directions** of G_060? Identify the alternating mode,
+the empty channels, the kernel relation, the symmetry properties; test whether any existing AT operator can reach them;
+explain the **53 = 42 + 11** split.
+
+**1. The kernel relation is exact, not approximate.** A contraction row is `A_d rho` with `A_d` the distance-`d` relation,
+and `A_d` is **circulant**, so on a single mode `e` of channel `c` it acts as `<A_d rho, e> = lambda_d(c) <rho, e>` with
+`lambda_0(c) = 1` (the identity is a distance class). The row vanishes on `e` **exactly** when the state has no content
+there: measured over all **95** non-constant modes, **hidden iff zero occupancy**. So the phase directions are hidden
+because the **state** says nothing about them, and the kernel of **53** is the orthogonal complement of the state's
+**43**-dimensional span (mean + 42 occupied modes).
+
+**2. The eleven, identified.** Channels **14, 19, 24, 32, 40** (both quadratures each) + the **alternating mode**
+(channel 48); every occupancy at the **1E-15** floor. The group has order **192**; the eleven form an invariant set **as a
+span**; the alternating mode's orbit is **2** (a shift by two fixes it) and channel 32's cosine has orbit **3** (its
+rotation angle is 2pi/3).
+
+**3. Where they come from - the accounting closes 7 + 4 = 11, disjoint.**
+
+| measurement | value |
+|---|---|
+| levels / Sigma(m-1) (free room) | **45 / 51** = 96 - 45 |
+| degenerate levels | index **13** (lambda **12.0**, mult **5**, channels 16, 32, 48) and index **35** (lambda **14.0**, mult **6**, channels 8, 24, 40) |
+| vanishing construction weights | levels **8, 31** -> channels **14, 19** |
+| from degeneracy | **7** (six quadratures of channels 32, 24, 40 + the alternating mode) |
+| from vanishing weights | **4** (channels 14 and 19, both quadratures) |
+
+The two degenerate levels leave **9** modes empty, of which **7** are in the eleven; the other two fall in channels the
+level *does* occupy and are among the 42. The parts are disjoint because channels 14 and 19 are not in a degenerate level.
+
+**4. Can an existing AT operator reach them? YES and NO - and both halves are measured.**
+
+| operator | projection onto the eleven | rank |
+|---|---|---|
+| difference (circulant) | 9.512E-015 | **0** |
+| centred difference (circulant) | 3.675E-015 | **0** |
+| connection `h(rho) Delta rho` (state-dependent) | **2.968E-003** | **11** |
+| T1/T2 coupling (state-dependent) | **1.455E-001** | **11** |
+
+A circulant operator is diagonal in the Fourier basis and can never mix channels; the connection AT builds is a
+**multiplication** by `h(rho)` composed with the difference, and multiplication by a non-constant function **does** mix
+channels.
+
+**5. The decisive experiment - the set MOVES.** Rebuilding the same construction from the **last** basis vector of each
+level gives empty channels **8, 14, 16, 19, 24, 32** and **12** directions (the alternating mode becomes occupied and
+channels 8, 16, 24, 32 lose their content). So the eleven are **not substrate-invariant** - they are **coordinates**, not
+structure. What *is* invariant is the count the degeneracy forces, **51** modes; the two extra come from a weight that
+**vanishes**, a property of a **chosen formula**. One defect was caught here: the symmetry test first compared group
+images with the eleven **vectors** and reported False, because a rotation carries a mode into a **combination** of its
+quadratures - the test must be a **span** test.
+
+**Status:** COMPLETE. Tests `Y_G_061_Tests` **7/7**. Registry: added as **Derived** (`residual-phase-audit`); group-G
+consistency counts 31 without-substrate / **62** registry / **48** survives / **48** minimal time sector. Core:
+`AT.Core/ResearchXH/ResidualPhaseAudit.cs`; suite `AT.Tests/ResearchY/G_GravitySource/Y_G_061_Tests.cs`; doc
+`Docs/ResearchY/G_GravitySource/ResearchY-G_061.md`.

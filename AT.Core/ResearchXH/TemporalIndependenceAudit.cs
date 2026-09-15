@@ -533,6 +533,14 @@ public static class TemporalIndependenceAudit
             + "the metric content is the clock alone. NOT symbol-detectable: the suite names no B, g_rr or GammaOf "
             + "— its vocabulary is multipliers, ranks and clocks",
             ScanDetectsIt: false),
+        // ── G_061: what is special about the eleven unreachable phase directions? ──
+        new SectorClaim("Y_G_061", "Residual Phase", MetricRequirement.ClockOnly,
+            "it identifies the eleven unreachable phase directions by measuring the canonical state's occupancy mode by "
+            + "mode, reads the level structure and the construction weights that leave them empty, and measures which "
+            + "AT operators reach them - circulant ones do not, state-dependent ones do - so the metric content is the "
+            + "clock alone. NOT symbol-detectable: the suite names no B, g_rr or GammaOf — its vocabulary is "
+            + "occupancy, levels and clocks",
+            ScanDetectsIt: false),
     };
 
     // ── The computed classification summaries ───────────────────────────────

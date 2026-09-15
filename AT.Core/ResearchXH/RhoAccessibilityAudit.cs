@@ -78,6 +78,20 @@ public static class RhoAccessibilityAudit
         return rho;
     }
 
+    /// <summary>
+    /// The deterministic weight <see cref="BuildBaseState"/> gives each level. Exposed so later audits READ the
+    /// construction instead of copying its formula: G_061 has to say which levels contribute nothing, and a copied
+    /// expression would be a claim that can drift from the thing it describes (project rule 5).
+    /// </summary>
+    public static double BaseStateWeight(int level) => (((level + 1) * 37) % 23 - 11) / 23.0;
+
+    /// <summary>The one vector <see cref="BuildBaseState"/> actually takes from each level - always the FIRST.</summary>
+    public static double[] BaseStateSeed(int level)
+    {
+        var basis = RhoObservableAudit.LevelBasis(level);
+        return basis.Length == 0 ? Array.Empty<double>() : basis[0];
+    }
+
     public static int[][] Group() => RhoObservableAudit.SymmetryGroup();
 
     public static double[] Apply(int[] g, double[] rho)
