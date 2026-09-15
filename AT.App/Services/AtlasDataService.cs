@@ -172,11 +172,40 @@ public static class AtlasDataService
         new("Y_G_049_Tests", 6, "PASS", "Gravity Source"),
         new("Y_G_050_Tests", 6, "PASS", "Gravity Source"),
         new("Y_G_051_Tests", 6, "PASS", "Gravity Source"),
+        new("Y_G_052_Tests", 7, "PASS", "Gravity Source"),
         ]),
     ];
 
     public static IReadOnlyList<ResearchNewsModel> ResearchNews { get; } =
     [
+        new(
+            "researchy-g052-amplitude-phase-audit",
+            "The Boundary Is the Answer \u2014 Where Amplitudes End and Phases Begin",
+            "ResearchY Milestone \u00b7 G_052 (Amplitude Phase Audit; is the split of rho unique?)",
+            "The two previous entries produced a division of the organisation into halves: forty-two directions that the theory\u2019s standard measurements can see, which were called amplitudes, and fifty-three that they cannot, called phases, whose status was then settled as real physics rather than bookkeeping. This entry asks whether that division is actually a division - whether the state can be taken apart into the two halves cleanly and uniquely - and it ends up answering a sharper question than it was asked. The first measurement is the obvious one and it comes out exactly: the two sets of directions share nothing, and adding the two halves back together, with the average which belongs to neither, returns the state to the last digit. Uniqueness, though, needs more than orthogonality, because a reader could reasonably object that any split into perpendicular pieces is unique only relative to the way the pieces were chosen. So the entry rebuilds the amplitude half from a completely different set of spanning directions and recomputes the split; the answer is the same to within twelve decimal places, which is what makes the decomposition a property of the state rather than of the basis. The second measurement is the one that answers the question the entry actually cares about, which is where the boundary lies. The theory has a family of measurements built from distances between cells, and the previous entries established both that this family is exactly the thing that cannot see the phases and that it retains forty-three dimensions. Forty-three is one more than the forty-two amplitudes, and the missing piece is the average occupancy itself. That is not a coincidence to be noted and passed over: it says the family of distance measurements sees precisely the amplitudes plus the total, and nothing else whatsoever. So the interface is not described approximately anywhere; it is an identity. The phase directions are exactly what the distance measurements cannot distinguish, and the amplitude directions are exactly what they can, once the overall level is set aside. The third part of the entry is about observables rather than about states, and it is where the entry refuses to overclaim. If a quantity is a plain average, then its change under a combined move is exactly the sum of the changes under each move separately - the arithmetic is trivial. But the theory\u2019s own laws are not averages, and they do not split that way: a clock rate is a cube root of the occupancy and a field strength multiplies a coupling by an occupancy difference, so their responses to a combined move miss the sum of the separate responses by a small amount. The entry reports that amount and then asks what kind of small it is, by halving the move and watching. The answer is that it drops by a factor of four, which means the leftover is proportional to the square of the move - a curvature effect rather than a failure. So the split is exact as a statement about small changes of any observable, and the residual is the ordinary nonlinearity that any curved quantity has. Two mistakes had to be fixed to get that measurement right, and the entry records both because they are the kind of error that would have produced a confident wrong answer: the first alternative basis used only thirty directions to span a forty-two-dimensional space and could never have agreed, and the response was first compared by taking its largest component rather than by subtracting the whole response, which makes even a perfectly additive quantity look non-additive. The verdict is that the decomposition is unique, orthogonal and exact, the interface is an identity rather than an approximation, and every observable splits exactly to first order with its curvature reported honestly.",
+            "AMPLITUDE PHASE AUDIT. Question: can rho be decomposed uniquely into an amplitude sector (42) and a phase sector (53)? Measure orthogonality, invertibility, reconstruction accuracy and the clock / acceleration / field responses. ANSWER: DERIVED - the split is unique, orthogonal and exact, and the INTERFACE IS AN IDENTITY: (phase) = kernel of the contraction observables (53) and (amplitude) = the contractions' row space minus the mean (42 = 43 - 1). "
+            + "ORTHOGONAL AND EXACT: amplitude 42 + phase 53 = 95, sector overlap 4.418E-015, reconstruction rho = mean + A + P at 2.442E-015. "
+            + "UNIQUENESS IS NOT INFERRED FROM ORTHOGONALITY: the audit rebuilds the amplitude subspace from a different deterministic spanning set and recomputes the projection - agreement 3.349E-012 - so the decomposition is CANONICAL rather than an artefact of the modal basis. "
+            + "THE INTERFACE IS AN IDENTITY: the contraction row space has rank 43 = the 42 amplitude modes plus the mean, and every contraction row is orthogonal to every phase mode (7.111E-014), so the spans are EQUAL - the phase sector IS the kernel of the invariant algebra. "
+            + "AN OBSERVABLE SPLITS EXACTLY ONLY WHEN IT IS LINEAR: the mean occupancy's additivity residual is 2.220E-016, while AT's readings carry a cross term (clock 1.128E-006, acceleration 4.588E-007, field 2.812E-008) whose ORDER is measured by halving the step - scaling 0.2498 / 0.2503 / 0.2502, i.e. QUADRATIC, a curvature effect rather than a failure. "
+            + "EVERY READING TAKES FROM BOTH SECTORS: clock amplitude 1.168E-003 vs phase 1.031E-003; acceleration 3.464E-004 vs 1.937E-004. "
+            + "TWO HARNESS BUGS CAUGHT BY THE MEASUREMENTS: the alternative basis used 30 combinations for a 42-dimensional subspace (0.172), and additivity was first measured on MAXIMA of responses, which is not additive even when every component is (spurious scaling 0.499); now measured on response VECTORS with an unclamped step, giving the true 0.25. "
+            + "OUTPUT: DERIVED. Core: AT.Core/ResearchXH/AmplitudePhaseAudit.cs. 7/7 PASSED.",
+            "The boundary is not described \u2014 it is the answer.",
+            "The 42 amplitudes plus the mean are exactly what the distance measurements span, so the 53 phases are exactly their kernel: an identity, not an approximation.",
+            "rho splits uniquely and orthogonally into amplitude and phase, and the interface between them is computable exactly.",
+            false,
+            [
+                new("ResearchY-G_052", "AMPLITUDE PHASE",
+                    "The orthogonal split, the basis-independence check, the interface identity and the observable-level additivity with its measured cross terms.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/G_GravitySource/ResearchY-G_052.md"),
+                new("ResearchY-G_050", "INPUT",
+                    "The 53-mode phase sector and the 42-mode amplitude sector this audit decomposes rho into.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/G_GravitySource/ResearchY-G_050.md"),
+                new("ResearchY-G_051", "INPUT",
+                    "The phase sector is physical, not gauge - which is what makes the split worth computing.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/G_GravitySource/ResearchY-G_051.md"),
+            ]),
         new(
             "researchy-g051-phase-sector-audit",
             "Physics, Not Bookkeeping \u2014 Why the Hidden Phases Are Real",

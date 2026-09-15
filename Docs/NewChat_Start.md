@@ -2902,6 +2902,32 @@ preferred sector. The verdict is computed with a **live branch in every directio
 No group-G registry claim, so claim counts are unchanged. Registry: added as **Boundary** (`sector-weight-audit`),
 reclassifying nothing. Tests: `Y_E_015_Tests` 7/7; group E **103/103**.
 
+## ResearchY-G_052 - Amplitude Phase Audit (COMPLETE, DERIVED)
+
+**Question.** Can rho be decomposed uniquely into an amplitude sector (42) and a phase sector (53)? Measure
+orthogonality, invertibility, reconstruction accuracy, clock / acceleration / field responses. Goal: the exact
+interface between visible amplitudes and physical phases.
+
+**Answer: DERIVED - the split is unique, orthogonal and exact, and the interface is an IDENTITY.**
+
+- **Orthogonal and exact:** amplitude **42** + phase **53** = **95**; sector overlap **4.418E-015**; reconstruction
+  rho = mean + A + P at **2.442E-015**.
+- **Uniqueness is checked, not inferred:** rebuilding the amplitude subspace from a different deterministic spanning
+  set reproduces the projection to **3.349E-012** - canonical, not basis-dependent.
+- **The interface (the goal):** the contraction row space has rank **43** = the **42** amplitude modes **+ the mean**,
+  and is orthogonal to every phase mode (**7.111E-014**), so the spans are **equal**:
+  **(phase) = kernel of the contractions (53)** · **(amplitude) = row space minus the mean (42 = 43 - 1)**.
+- **Observables:** a **linear** functional splits exactly (**2.220E-016**); AT's readings carry a cross term
+  (clock **1.128E-006**, acceleration **4.588E-007**, field **2.812E-008**) that scales as **s²** (halving ratios
+  **0.2498 / 0.2503 / 0.2502**) - **second order**, i.e. curvature rather than failure. Every reading takes from **both**
+  sectors (clock **1.168E-003** vs **1.031E-003**).
+- **Two harness bugs caught by the measurements:** the alternative basis used 30 combinations for a 42-dim subspace
+  (**0.172**), and additivity was first measured on **maxima** of responses (**0.499** spurious first order); it is now
+  measured on response **vectors** with an unclamped step, giving the true **0.25**.
+
+Registry: added as **Derived** (`amplitude-phase-audit`); group-G consistency counts updated. Tests: `Y_G_052_Tests`
+7/7.
+
 ## ResearchY-G_051 - Phase Sector Audit (COMPLETE, PHYSICAL)
 
 **Question.** Do the 53 phase-sector directions carry physical or gauge information? Measure the clock, acceleration,

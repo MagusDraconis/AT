@@ -141,6 +141,12 @@ public static class KernelStructureAudit
 
     public static int HiddenModes() => ModeTable().Count(t => t.Class == "HIDDEN");
 
+    /// <summary>The 42 visible modes as explicit unit directions, the amplitude sector of G_052.</summary>
+    public static (int Channel, string Kind, double[] Mode)[] VisibleModeVectors()
+        => ModeTable().Where(t => t.Class == "visible")
+                      .Select(t => (t.Channel, t.Kind, ModeOf(t.Channel, t.Kind == "sin")))
+                      .ToArray();
+
     /// <summary>The 53 hidden modes as explicit unit directions, for the audits that need the vectors themselves.</summary>
     public static (int Channel, string Kind, double[] Mode)[] HiddenModeVectors()
         => ModeTable().Where(t => t.Class == "HIDDEN")

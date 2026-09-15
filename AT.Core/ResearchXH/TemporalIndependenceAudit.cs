@@ -470,6 +470,13 @@ public static class TemporalIndependenceAudit
             + "the gauge control and the coupling census. NOT symbol-detectable: the suite names no B, g_rr or GammaOf — "
             + "its vocabulary is responses, multisets and clocks",
             ScanDetectsIt: false),
+        // ── G_052: can rho be decomposed uniquely into amplitude (42) and phase (53)? ──
+        new SectorClaim("Y_G_052", "Amplitude Phase", MetricRequirement.ClockOnly,
+            "it splits the state into the visible and hidden Fourier sectors, measures the interface against the "
+            + "contraction row space and reads each observable's amplitude and phase contributions with the order of the "
+            + "cross term, so the metric content is the clock alone. NOT symbol-detectable: the suite names no B, g_rr or "
+            + "GammaOf — its vocabulary is sectors, projections and clocks",
+            ScanDetectsIt: false),
     };
 
     // ── The computed classification summaries ───────────────────────────────

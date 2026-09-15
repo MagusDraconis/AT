@@ -4692,3 +4692,52 @@ test finds **none** among the 53.
 **Status:** COMPLETE. Tests `Y_G_051_Tests` **6/6**. Registry: added as **Derived** (`phase-sector-audit`), with the
 group-G consistency counts updated. Core: `AT.Core/ResearchXH/PhaseSectorAudit.cs`; suite
 `AT.Tests/ResearchY/G_GravitySource/Y_G_051_Tests.cs`; doc `Docs/ResearchY/G_GravitySource/ResearchY-G_051.md`.
+
+---
+
+### ResearchY-G_052 - Amplitude Phase Audit (DERIVED)
+
+**Question.** Can rho be decomposed uniquely into an amplitude sector (42) and a phase sector (53)? Measure
+orthogonality, invertibility, reconstruction accuracy and the three responses.
+
+**Verdict: DERIVED** - unique, orthogonal, exact; **the interface is an identity**.
+
+**1. Orthogonality, reconstruction, uniqueness.**
+
+| quantity | value |
+|---|---|
+| amplitude / phase / state | **42 / 53 / 95** |
+| sector overlap | **4.418E-015** |
+| reconstruction rho = mean + A + P | **2.442E-015** |
+| basis-independence residual | **3.349E-012** |
+
+**2. The exact interface (the answer to the goal).**
+
+| quantity | value |
+|---|---|
+| contraction row-space rank | **43** |
+| amplitude modes + the mean | **43** |
+| contraction-phase overlap | **7.111E-014** |
+
+**(phase) = kernel of the contraction observables (53)** · **(amplitude) = the contractions' row space minus the mean
+(42 = 43 - 1)** - an identity, not an approximation.
+
+**3. Does an observable split?**
+
+| reading | additivity residual | order |
+|---|---|---|
+| linear functional | **2.220E-016** | exact |
+| clock | **1.128E-006** | **0.2498** quadratic |
+| acceleration | **4.588E-007** | **0.2503** quadratic |
+| field strength | **2.812E-008** | **0.2502** quadratic |
+
+Exact for **linear** functionals; a **second-order cross term** otherwise - curvature, not failure. Contributions:
+clock amplitude **1.168E-003** vs phase **1.031E-003**; acceleration **3.464E-004** vs **1.937E-004**.
+
+**Two harness bugs caught by the measurements:** the alternative basis used 30 combinations for a 42-dim subspace
+(**0.172**), and additivity was first measured on **maxima** of responses (**0.499** spurious first order) - now on
+response **vectors** with an unclamped step, giving the true **0.25**.
+
+**Status:** COMPLETE. Tests `Y_G_052_Tests` **7/7**. Registry: added as **Derived** (`amplitude-phase-audit`), with the
+group-G consistency counts updated. Core: `AT.Core/ResearchXH/AmplitudePhaseAudit.cs`; suite
+`AT.Tests/ResearchY/G_GravitySource/Y_G_052_Tests.cs`; doc `Docs/ResearchY/G_GravitySource/ResearchY-G_052.md`.
