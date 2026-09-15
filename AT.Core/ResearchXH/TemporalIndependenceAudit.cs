@@ -498,6 +498,12 @@ public static class TemporalIndependenceAudit
             + "metric content is the clock alone. NOT symbol-detectable: the suite names no B, g_rr or GammaOf — its "
             + "vocabulary is gradients, ranks and clocks",
             ScanDetectsIt: false),
+        // ── G_056: can a non-scalar AT structure span the phase sector? ──
+        new SectorClaim("Y_G_056", "Non-Scalar Selection", MetricRequirement.ClockOnly,
+            "it measures the phase rank of five AT structures - the rank of each structure's derivative along the 53 "
+            + "phase directions - against G_055's scalar ceiling, so the metric content is the clock alone. NOT "
+            + "symbol-detectable: the suite names no B, g_rr or GammaOf — its vocabulary is ranks, gradients and clocks",
+            ScanDetectsIt: false),
     };
 
     // ── The computed classification summaries ───────────────────────────────

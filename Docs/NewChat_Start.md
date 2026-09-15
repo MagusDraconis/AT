@@ -2902,6 +2902,38 @@ preferred sector. The verdict is computed with a **live branch in every directio
 No group-G registry claim, so claim counts are unchanged. Registry: added as **Boundary** (`sector-weight-audit`),
 reclassifying nothing. Tests: `Y_E_015_Tests` 7/7; group E **103/103**.
 
+## ResearchY-G_056 - Non-Scalar Selection Audit (COMPLETE, DERIVED)
+
+**Question.** Can any existing non-scalar AT structure span the 53-dimensional phase sector? Candidates: phase vector
+field, connection structure, T1/T2 sector coupling, edge-holonomy network, causal-order tensor. Require phase rank > 3.
+
+**Answer: DERIVED - the gradient-based structures span the phase sector EXACTLY (rank 53 of 53), a factor of 17 above
+G_055's scalar ceiling of 3.**
+
+| candidate | outputs | phase rank | verdict |
+|---|---|---|---|
+| **phase vector field** | 96 | **53** | DERIVED |
+| **connection structure** | 96 | **53** | DERIVED |
+| **T1/T2 sector coupling** | 288 | **53** | DERIVED |
+| edge-holonomy network | 96 | **0** | REFUTED |
+| causal-order tensor | 96 | **0** | REFUTED |
+
+- **The phase rank generalises G_055's count:** a scalar has one output so its rank cannot exceed 1.
+- **Why the full rank is reached (structural, not numerical):** differentiation is **injective on every non-constant
+  mode** and the phase sector contains only non-constant modes - **53 of 53** directions have a non-zero derivative.
+- **Null candidates reported rather than omitted:** the **edge-holonomy** network read from the **link phases** is
+  decoupled (**census 0**) and the occupancy-derived holonomy is the **same candidate renamed**; the **causal-order
+  tensor** from **signs** is **piecewise constant**.
+- **Two honesty notes:** the coupling's **T1 half vanishes identically** (**0.000E+000**) so its rank comes from the
+  symmetric half; the candidate table carries **no verdict literals** (computed from the measured rank - project rule 6).
+- **Spanning is NOT selecting:** G_054's no-process measurement holds (spatial **0.000E+000**, census **0**), so the
+  phases stay **freely assigned** and G_055's deficiency of 50 is explained as a deficiency of **scalars**.
+- **The sharpest statement of the thread:** AT contains structures sensitive to every phase direction and runs none of
+  them.
+
+Registry: added as **Derived** (`non-scalar-selection-audit`); group-G consistency counts updated. Tests:
+`Y_G_056_Tests` 6/6.
+
 ## ResearchY-G_055 - Phase Selection Principle Audit (COMPLETE, BOUNDARY - deficiency measured)
 
 **Question.** Can any existing AT quantity assign a preferred phase state? Candidates: entropy, free room, actualization

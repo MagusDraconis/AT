@@ -4847,3 +4847,42 @@ with its origin; (3) **delegate-identity** lookup never matched method groups - 
 (`phase-selection-principle-audit`), with the group-G consistency counts updated. Core:
 `AT.Core/ResearchXH/PhaseSelectionPrincipleAudit.cs`; suite `AT.Tests/ResearchY/G_GravitySource/Y_G_055_Tests.cs`; doc
 `Docs/ResearchY/G_GravitySource/ResearchY-G_055.md`.
+
+---
+
+### ResearchY-G_056 - Non-Scalar Selection Audit (DERIVED)
+
+**Question.** Can any existing non-scalar AT structure span the 53-dimensional phase sector? Require phase rank > 3.
+
+**Verdict: DERIVED** - the gradient-based structures span it exactly.
+
+**1. The candidates and their measured phase rank.**
+
+| candidate | outputs | phase rank | verdict |
+|---|---|---|---|
+| phase vector field | 96 | **53** | DERIVED |
+| connection structure | 96 | **53** | DERIVED |
+| T1/T2 sector coupling | 288 | **53** | DERIVED |
+| edge-holonomy network | 96 | **0** | REFUTED |
+| causal-order tensor | 96 | **0** | REFUTED |
+
+Scalar ceiling (G_055): **3**; phase dimensions: **53** - cleared by a factor of **17**.
+
+**2. Why the full rank is reached.** Differentiation is **injective on every non-constant mode** and the phase sector
+contains only non-constant modes: **53 of 53** phase directions have a non-zero derivative. Structural, not numerical.
+
+**3. Null candidates, reported.** The **edge-holonomy network** from the **link phases** is decoupled (**census 0**) and
+the occupancy-derived holonomy is the **same candidate renamed**; the **causal-order tensor** from **signs** is
+**piecewise constant**.
+
+**4. Two honesty notes.** The coupling's **T1 half vanishes identically** (**0.000E+000**, commuting shifts) so its rank
+comes from the symmetric half; and the candidate table carries **no verdict literals** - each verdict is computed from
+the measured rank against the ceiling.
+
+**5. Spanning is not selecting.** No AT process runs such a flow (spatial **0.000E+000**, census **0**), so the phases
+stay **freely assigned**. G_055's deficiency of 50 is explained: a deficiency of **scalars**, not of AT.
+
+**Status:** COMPLETE. Tests `Y_G_056_Tests` **6/6**. Registry: added as **Derived**
+(`non-scalar-selection-audit`), with the group-G consistency counts updated. Core:
+`AT.Core/ResearchXH/NonScalarSelectionAudit.cs`; suite `AT.Tests/ResearchY/G_GravitySource/Y_G_056_Tests.cs`; doc
+`Docs/ResearchY/G_GravitySource/ResearchY-G_056.md`.
