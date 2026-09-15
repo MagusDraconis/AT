@@ -541,6 +541,14 @@ public static class TemporalIndependenceAudit
             + "clock alone. NOT symbol-detectable: the suite names no B, g_rr or GammaOf — its vocabulary is "
             + "occupancy, levels and clocks",
             ScanDetectsIt: false),
+        // ── G_062: what determines which modes the canonical state occupies? ──
+        new SectorClaim("Y_G_062", "Mode Occupation", MetricRequirement.ClockOnly,
+            "it measures which Fourier modes the canonical state occupies - reading the level seed and the construction "
+            + "weight rather than copying them - compares six constructions by their occupied counts, empty channels and "
+            + "kernel dimensions, and bounds the row space by the number of distance classes, so the metric content is "
+            + "the clock alone. NOT symbol-detectable: the suite names no B, g_rr or GammaOf — its vocabulary is "
+            + "occupancy, weights and clocks",
+            ScanDetectsIt: false),
     };
 
     // ── The computed classification summaries ───────────────────────────────

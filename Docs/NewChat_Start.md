@@ -2902,6 +2902,38 @@ preferred sector. The verdict is computed with a **live branch in every directio
 No group-G registry claim, so claim counts are unchanged. Registry: added as **Boundary** (`sector-weight-audit`),
 reclassifying nothing. Tests: `Y_E_015_Tests` 7/7; group E **103/103**.
 
+## ResearchY-G_062 - Mode Occupation Audit (COMPLETE, DERIVED - the boundary is bookkeeping down to a floor of 47)
+
+**Question.** What **determines** which Fourier modes are **occupied** in the canonical state? Measure the occupied
+modes, the empty modes, the **construction weights** and the **degeneracy structure**. Test: **can the empty 11 be
+populated without changing the theory?**
+
+**Answer: DERIVED - the occupancy is set by the CONSTRUCTION, and the eleven CAN be populated by changing only the
+state; what survives is an algebraic floor of 47.**
+
+1. **The rule is arithmetic:** the state takes **one seed per level** (`basis[0]`) weighted, so its span is the mean plus
+   one mode per level of **non-zero weight** and the count is `(levels with non-zero weight) − 1`. Measured: **45 levels,
+   43 non-zero weights, rule 42, measurement 42**; with *every* weight non-zero it becomes **44** - so **42 belongs to a
+   chosen formula**.
+2. **The phrasing is corrected:** the state occupies 42 **visible** modes and leaves the whole **53-direction phase
+   sector** empty; of those 53 the **eleven** lie in channels it does not occupy at all.
+3. **The empty channels follow the formula's zeros.** Canonical weight vanishes on levels **8, 31** (channels **14, 19**);
+   a **shifted** formula `w' = ((k+1)·41 mod 23 − 11)/23` vanishes on levels **6, 29** and empties channels **6, 23**
+   instead - while **24, 32, 40, 48 stay empty under both**, being the **degenerate levels'** doing.
+4. **The eleven can be populated, and nothing but the state moves:** an all-modes state gives **95 occupied, 0 empty,
+   11 of 11**, while the **levels, distance classes, contraction rows and the eleven are the same objects** for every
+   state. The walk toward them: canonical **0**, alternative seed **2**, full weight **2**, shifted formula **2**, full
+   weight + alternative seed **4**, all modes **11**.
+5. **The floor is the structure:** the row space is one row per **distance class**, so its rank cannot exceed **49**;
+   measured, the smallest kernel any state reaches is **47** and the canonical **53** sits **six** above it.
+
+**A probe defect is recorded:** a first all-modes state used a weight formula with its own zeros and left **eight** modes
+empty, making the audit report that one of the eleven could not be occupied - false, and a defect in the **probe**.
+
+**Status.** COMPLETE. Tests `Y_G_062_Tests` **7/7**. Core `AT.Core/ResearchXH/ModeOccupationAudit.cs`; doc
+`Docs/ResearchY/G_GravitySource/ResearchY-G_062.md`. Registry: added as **Derived** (`mode-occupation-audit`); group-G
+consistency counts 32/**63** registry/**49** survives/**49** minimal time sector. **No reclassification.**
+
 ## ResearchY-G_061 - Residual Phase Audit (COMPLETE, DERIVED - the eleven are coordinates, not structure)
 
 **Question.** What is **special** about the **11 unreachable phase directions** of G_060? Identify the **alternating mode**,

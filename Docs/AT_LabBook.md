@@ -5122,3 +5122,56 @@ quadratures - the test must be a **span** test.
 consistency counts 31 without-substrate / **62** registry / **48** survives / **48** minimal time sector. Core:
 `AT.Core/ResearchXH/ResidualPhaseAudit.cs`; suite `AT.Tests/ResearchY/G_GravitySource/Y_G_061_Tests.cs`; doc
 `Docs/ResearchY/G_GravitySource/ResearchY-G_061.md`.
+
+### ResearchY-G_062 - Mode Occupation Audit (DERIVED)
+
+**Question.** What **determines** which Fourier modes are **occupied** in the canonical state? Measure occupied modes,
+empty modes, construction weights, degeneracy structure. Test: can the empty **11** be populated without changing the
+theory?
+
+**1. The rule is arithmetic.** The canonical state takes **one seed per level** (`basis[0]`) weighted, so its span is the
+mean plus one mode per level of **non-zero construction weight**, and the count is `(levels with non-zero weight) − 1`.
+Measured: **45 levels**, **43 non-zero weights**, rule **42**, measurement **42**. With *every* weight non-zero the count
+becomes **44** and nothing else changes - so the number 42 belongs to a **chosen formula**. The seed and the weight are
+**read** from G_046's core (`BaseStateSeed`, `BaseStateWeight`) rather than copied.
+
+**2. The phrasing is corrected.** The canonical state occupies 42 **visible** modes and leaves the whole **53-direction
+phase sector** empty; of those 53, the **eleven** are the ones lying in channels it does not occupy at all.
+
+**3. The empty channels follow the formula's zeros.**
+
+| state | occupied | empty | empty channels | of the eleven |
+|---|---|---|---|---|
+| canonical (`basis[0]`, weights w) | 42 | 53 | **14, 19, 24, 32, 40, 48** | **0** |
+| alternative seed (`basis[^1]`) | 42 | 53 | 6 channels | 2 |
+| full weight (all weights 1) | **44** | 51 | 4 channels | 2 |
+| **shifted formula w'** | 42 | 53 | **6, 23, 24, 32, 40, 48** | 2 |
+| full weight + alternative seed | 44 | 51 | 4 channels | 4 |
+| **all modes occupied** | **95** | **0** | **none** | **11** |
+
+Channels **24, 32, 40 and 48 stay empty under both formulas**, because the two **degenerate levels** empty them (index
+**13**: λ **12.0**, mult **5**, channels 16, 32, 48; index **35**: λ **14.0**, mult **6**, channels 8, 24, 40).
+
+**4. The eleven can be populated, and nothing but the state moves.** An all-modes state occupies **11 of 11**, and the
+audit asserts that no other object changed: **45 levels**, **49 distance classes**, the contraction rows and the eleven
+are the same for every state.
+
+**5. What survives is the algebra.** The row space is one row per **distance class** (`A_d ρ`, d = 0…48, plus the simplex
+direction), so its rank cannot exceed **49** and the kernel cannot fall below **96 − 49 = 47**.
+
+| state | row rank | kernel |
+|---|---|---|
+| canonical | **43** | **53** |
+| full weight | 45 | 51 |
+| **all modes** | **49** | **47** |
+
+The canonical state leaves **six** dimensions more hidden than the algebra requires.
+
+**A probe defect is recorded:** a first all-modes state used a weight formula with zeros of its own
+(`((i·7) mod 11 − 5)/11`) and left **eight** modes empty, so the audit reported that one of the eleven could not be
+occupied by any state - false, and a defect in the **probe** rather than a finding.
+
+**Status:** COMPLETE. Tests `Y_G_062_Tests` **7/7**. Registry: added as **Derived** (`mode-occupation-audit`); group-G
+consistency counts 32 without-substrate / **63** registry / **49** survives / **49** minimal time sector. Core:
+`AT.Core/ResearchXH/ModeOccupationAudit.cs`; suite `AT.Tests/ResearchY/G_GravitySource/Y_G_062_Tests.cs`; doc
+`Docs/ResearchY/G_GravitySource/ResearchY-G_062.md`.
