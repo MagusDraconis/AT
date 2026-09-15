@@ -4921,3 +4921,47 @@ builds *is* `h(ρ)·Δρ` - so five names describe **4** distinct flows.
 **Status:** COMPLETE. Tests `Y_G_057_Tests` **7/7**. Registry: added as **Boundary** (`phase-flow-audit`), with the
 group-G consistency counts updated. Core: `AT.Core/ResearchXH/PhaseFlowAudit.cs`; suite
 `AT.Tests/ResearchY/G_GravitySource/Y_G_057_Tests.cs`; doc `Docs/ResearchY/G_GravitySource/ResearchY-G_057.md`.
+
+### ResearchY-G_058 - Phase Dynamics Closure Audit (BOUNDARY)
+
+**Question.** Can any AT **update rule** generate a non-trivial **phase evolution**? Tests: single scalar flow, multiple
+coupled scalar flows, vector-valued flow, connection-driven flow, T1/T2-coupled flow; measure the **phase-rank of the
+evolution operator**; critical: can any existing AT process reach **rank 53**?
+
+**1. The requested criterion cannot discriminate, and the audit says so first.** Three ranks are measured. The
+**linearisation** rank and the **operator** rank are **53 for every rule tested - the do-nothing identity included** -
+while the **push** rank is **1** for any rule that moves and **0** for the process AT runs.
+
+| rule | push | linearisation | operator |
+|---|---|---|---|
+| single scalar flow | 1 | 53 | 53 |
+| multiple coupled scalar flows | 1 | 53 | 53 |
+| vector-valued flow | 1 | 53 | 53 |
+| connection-driven flow | 1 | 53 | 53 |
+| T1/T2-coupled flow | 1 | 53 | 53 |
+| identity update (CONTROL) | **0** | **0** | **53** |
+
+Two structural reasons: any state update is the **identity** plus a small term, and the identity is invertible on the
+phase sector; and **a scalar flow's linearisation is its potential's Hessian** - positive definite, hence full rank on
+every subspace.
+
+**2. The push rank is the only column that separates.** One vector per instant, so all five candidates push **1**
+direction and the identity pushes **0**. **Coupling several scalar flows does not help**: a sum of gradients is still one
+vector. The ceiling belongs to being a **push**, not to being **scalar**.
+
+**3. The process the theory runs has nothing to push with.** Update-rule spatial part **0.000E+000**, coupling census
+**0**, **actualization push rank 0**.
+
+**4. An expectation withdrawn.** The premise of a hierarchy (vector generators at **53**, scalar rules at **1**) is
+**REFUTED** - no rank measure separates the scalar from the vector-valued rules, in either column.
+
+**5. A bug caught by the audit's own control.** The first implementation of the operator rank applied the update to the
+**fixed base state** (`map(r) = rho - s*V(r)`) instead of to its argument, which made the "identity" a **constant
+erasure map** and reported operator rank **0** for it. A flow must act on the argument, `map(r) = r - s*V(r)`: with the
+fix the control reports **53**, which is exactly the counter-intuitive result the audit exists to report. The control
+found the defect; without it the audit would have concluded that the identity *fails* the criterion.
+
+**Status:** COMPLETE. Tests `Y_G_058_Tests` **6/6**; group G **434/434**. Registry: added as **Boundary**
+(`phase-dynamics-closure-audit`); group-G consistency counts 28 without-substrate / **59** registry / **45** survives /
+**45** minimal time sector. Core: `AT.Core/ResearchXH/PhaseDynamicsClosureAudit.cs`; suite
+`AT.Tests/ResearchY/G_GravitySource/Y_G_058_Tests.cs`; doc `Docs/ResearchY/G_GravitySource/ResearchY-G_058.md`.

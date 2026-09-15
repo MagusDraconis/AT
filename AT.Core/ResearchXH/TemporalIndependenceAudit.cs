@@ -511,6 +511,13 @@ public static class TemporalIndependenceAudit
             + "the metric content is the clock alone. NOT symbol-detectable: the suite names no B, g_rr or GammaOf — its "
             + "vocabulary is potentials, velocities and clocks",
             ScanDetectsIt: false),
+        // ── G_058: can any AT update rule generate a non-trivial phase evolution? ──
+        new SectorClaim("Y_G_058", "Phase Dynamics Closure", MetricRequirement.ClockOnly,
+            "it measures three phase ranks per candidate update rule - push, linearisation and operator - against an "
+            + "explicit identity control, and re-measures the actualization's spatial part and the coupling census to "
+            + "show that the running rule has no generator at all, so the metric content is the clock alone. NOT "
+            + "symbol-detectable: the suite names no B, g_rr or GammaOf — its vocabulary is ranks, generators and clocks",
+            ScanDetectsIt: false),
     };
 
     // ── The computed classification summaries ───────────────────────────────

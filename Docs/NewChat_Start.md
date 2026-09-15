@@ -2902,6 +2902,48 @@ preferred sector. The verdict is computed with a **live branch in every directio
 No group-G registry claim, so claim counts are unchanged. Registry: added as **Boundary** (`sector-weight-audit`),
 reclassifying nothing. Tests: `Y_E_015_Tests` 7/7; group E **103/103**.
 
+## ResearchY-G_058 - Phase Dynamics Closure Audit (COMPLETE, BOUNDARY - the requested criterion cannot discriminate)
+
+**Question.** Can any AT **update rule** generate a **non-trivial phase evolution**? Tests: single scalar flow, multiple
+coupled scalar flows, vector-valued flow, connection-driven flow, T1/T2-coupled flow. Measure the **phase-rank of the
+evolution operator**. Critical: can any existing AT process reach **rank 53**?
+
+**Answer: BOUNDARY - and the closure's first result is that the requested measure cannot discriminate.** **Three ranks
+are measured, because the question asks for one.**
+
+| rule | push | linearisation | operator |
+|---|---|---|---|
+| single scalar flow | 1 | 53 | 53 |
+| multiple coupled scalar flows | 1 | 53 | 53 |
+| vector-valued flow | 1 | 53 | 53 |
+| connection-driven flow | 1 | 53 | 53 |
+| T1/T2-coupled flow | 1 | 53 | 53 |
+| identity update (**CONTROL**) | **0** | **0** | **53** |
+
+1. **The warning is stated before any figure from that column is quoted.** Every generator linearises to full rank
+   (**True**) and every operator rank is full (**True**) - the identity reaching **53** operator rank while pushing
+   **0**. Two structural reasons: any state update is the **identity** plus a small term and the identity is invertible
+   on the phase sector; and **a scalar flow's linearisation is its potential's Hessian** - positive definite, hence full
+   rank on **every** subspace. **A criterion the do-nothing rule satisfies is not a criterion.**
+2. **The push rank is the only column that separates.** The state moves along **one** vector per instant, so all five
+   candidate rules push **1** direction and the identity pushes **0**; and **coupling several scalar flows does not
+   help** - a sum of gradients is still one vector. **The ceiling belongs to being a push, not to being scalar.**
+3. **The process the theory runs has nothing to push with.** Update-rule spatial part **0.000E+000**, coupling census
+   **0**, **actualization push rank 0** - so no AT process reaches the phase sector, sharper than a rank count: none
+   supplies a generator with phase content.
+4. **An expectation is withdrawn.** The premise of a hierarchy (vector generators at **53**, scalar rules at **1**) is
+   **REFUTED** - no rank measure separates the scalar from the vector-valued rules, in either column.
+5. **The thread closes.** G_046-G_051: the kernel **is** the phase sector, physical not gauge. G_052-G_053: the split is
+   unique and phases have unreproducible effects. G_054-G_055: freely assigned; no scalar prefers one. G_056-G_057:
+   structures span all 53, processes act on none. **AT contains structures sensitive to every phase direction and runs
+   none of them** - and the one rank that would show a rule acting on the phase is **0** for the process and **1** for
+   every hypothetical rule alike.
+
+**Status.** COMPLETE. Tests `Y_G_058_Tests` **6/6**; group G **434/434**. Core
+`AT.Core/ResearchXH/PhaseDynamicsClosureAudit.cs`; doc `Docs/ResearchY/G_GravitySource/ResearchY-G_058.md`. Registry:
+added as **Boundary** (`phase-dynamics-closure-audit`); group-G consistency counts 28/**59** registry/**45** survives/
+**45** minimal time sector. **No reclassification.**
+
 ## ResearchY-G_057 - Phase Flow Audit (COMPLETE, BOUNDARY)
 
 **Question.** Can any existing AT process change the phase coordinates? Candidates: clock flow, acceleration flow, field

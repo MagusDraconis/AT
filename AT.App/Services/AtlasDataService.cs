@@ -178,11 +178,40 @@ public static class AtlasDataService
         new("Y_G_055_Tests", 6, "PASS", "Gravity Source"),
         new("Y_G_056_Tests", 6, "PASS", "Gravity Source"),
         new("Y_G_057_Tests", 7, "PASS", "Gravity Source"),
+        new("Y_G_058_Tests", 6, "PASS", "Gravity Source"),
         ]),
     ];
 
     public static IReadOnlyList<ResearchNewsModel> ResearchNews { get; } =
     [
+        new(
+            "researchy-g058-phase-dynamics-closure-audit",
+            "The Criterion That Proves Nothing \u2014 Closing the Phase Thread With the Right Rank",
+            "ResearchY Milestone \u00b7 G_058 (Phase Dynamics Closure Audit; can any AT update rule generate a phase evolution?)",
+            "This entry closes a long run about the fifty-three hidden phase directions of the organisation, and it closes it by reporting a defect in its own question. The question asked whether an update rule can reach rank fifty-three on the phase sector, and the honest answer turned out to be that reaching rank fifty-three proves nothing, because everything reaches it - including the rule that does nothing at all. The audit therefore measures three different ranks instead of one. The first is the linearisation, how a rule's own derivative acts on the phase sector; the second is the operator, how a perturbation of the phase propagates under the update; the third is the push, how much phase the state actually acquires in an instant. The first two come back at fifty-three for every candidate - the single scalar flow, several coupled scalar flows, the vector-valued flow, the connection-driven flow and the coupling - and they also come back at fifty-three for the control: a deliberately included identity update that moves nothing whatsoever. The reasons are structural rather than accidental. Any state update is the identity plus a small term, and the identity is invertible on the phase sector, so the operator column is full for anything. A scalar flow does not escape either, because its linearisation is the Hessian of its potential, which is positive definite and therefore full rank on every subspace one might restrict it to. So the column the question asked for is a column no rule can fail, and the audit states that before quoting a single figure from it. The third rank is the one that carries content, and it says something simple. At any instant the state moves along one vector, so its phase displacement is rank one whatever the generator is, scalar or vector-valued alike. The audit's second test makes this sharper in the negative: coupling several scalar flows together does not raise the ceiling at all, because a sum of gradients is still a single vector. The ceiling belongs to being a push, not to being scalar - which quietly withdraws the expectation the question was built on, namely that vector-valued rules would reach the full sector while scalar rules would be capped. Measured, no rank measure separates the two families. The audit records that refutation instead of the hierarchy it expected to write. What makes the closure is the last measurement. The rule the theory actually runs has nothing to push with: its spatial part is zero, nothing couples the links to the organisation, and its push rank is zero. So the answer to the critical question is that no process in the theory reaches the phase sector - not because it falls short of a number, but because it has no generator with phase content at all. Read together with the preceding entries, the thread now closes cleanly: the theory contains structures sensitive to every phase direction, and runs none of them, and the one rank that would have shown a rule acting on the phase is the rank that is zero for the process and one for every hypothetical rule alike.",
+            "PHASE DYNAMICS CLOSURE AUDIT. Question: can any AT update rule generate a non-trivial phase evolution? Tests: single scalar flow, multiple coupled scalar flows, vector-valued flow, connection-driven flow, T1/T2-coupled flow. Measure the phase-rank of the evolution operator. Critical: can any existing AT process reach rank 53? ANSWER: BOUNDARY - AND THE CLOSURE'S FIRST RESULT IS THAT THE REQUESTED MEASURE CANNOT DISCRIMINATE. "
+            + "THREE RANKS ARE MEASURED, BECAUSE THE QUESTION ASKS FOR ONE. The LINEARISATION rank and the OPERATOR rank are 53 FOR EVERY RULE TESTED - the do-nothing identity included - while the PUSH rank is 1 for any rule that moves and 0 for the process AT actually runs. "
+            + "THE TABLE: single scalar flow 1/53/53; multiple coupled scalar flows 1/53/53; vector-valued flow 1/53/53; connection-driven flow 1/53/53; T1/T2-coupled flow 1/53/53; identity update (CONTROL) 0/0/53. "
+            + "THE WARNING, STATED FIRST: every generator linearises to full rank (True) and every operator rank is full (True) - the identity reaches 53 operator rank while pushing 0. Two structural reasons: any state update is the identity plus a small term and the identity is invertible on the phase sector; and a SCALAR FLOW'S LINEARISATION IS ITS POTENTIAL'S HESSIAN - positive definite, hence full rank on every subspace. A criterion the do-nothing rule satisfies is not a criterion. "
+            + "THE PUSH RANK IS THE ONLY COLUMN THAT SEPARATES: the state moves along ONE vector per instant, so all five candidate rules push 1 direction and the identity pushes 0. COUPLING SEVERAL SCALAR FLOWS DOES NOT HELP (True) - a sum of gradients is still one vector - so the ceiling belongs to being a push, not to being scalar. "
+            + "THE PROCESS THE THEORY RUNS HAS NOTHING TO PUSH WITH: update-rule spatial part 0.000E+000, coupling census 0, actualization push rank 0. No AT process reaches the phase sector because none supplies a generator with phase content - sharper than a rank count. "
+            + "AN EXPECTATION IS WITHDRAWN: the premise of a hierarchy (vector generators at 53, scalar rules at 1) is REFUTED - no rank measure separates the scalar from the vector-valued rules, in either column. "
+            + "OUTPUT: BOUNDARY. Core: AT.Core/ResearchXH/PhaseDynamicsClosureAudit.cs. 6/6 PASSED.",
+            "The rank the question asked for is reached by everything, the do-nothing rule included; the rank that separates is the push rank, and it is zero for the process the theory runs.",
+            "Every rule that has a generator linearises to rank 53 and pushes exactly one direction, the identity control reaches rank 53 operator rank while moving nothing, and the actualization has no spatial generator at all - so its push rank is 0.",
+            "AT contains structures sensitive to every phase direction and runs none of them; the one rank that would show a rule acting on the phase is 0 for the process and 1 for every hypothetical rule alike.",
+            false,
+            [
+                new("ResearchY-G_058", "PHASE DYNAMICS CLOSURE",
+                    "The three ranks per rule, the identity control, the push-rank ceiling and the actualization with no spatial generator.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/G_GravitySource/ResearchY-G_058.md"),
+                new("ResearchY-G_057", "INPUT",
+                    "Five potentials at rank 1 and a phase-static running process - here re-measured one level up, at the level of update rules.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/G_GravitySource/ResearchY-G_057.md"),
+                new("ResearchY-G_056", "INPUT",
+                    "Non-scalar structures span the phase sector - the sensitivity this audit shows no process acts on.",
+                    "https://github.com/MagusDraconis/AT/blob/feature/v2.2-new-physics/Docs/ResearchY/G_GravitySource/ResearchY-G_056.md"),
+            ]),
         new(
             "researchy-g057-phase-flow-audit",
             "Nothing Acts On What It Sees \u2014 Why No Process Moves the Phases",
