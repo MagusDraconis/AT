@@ -4775,3 +4775,37 @@ no-rotation sector.** (Draft expected 100×; criterion corrected to the measurem
 (`phase-sector-dynamics-audit`), with the group-G consistency counts updated. Core:
 `AT.Core/ResearchXH/PhaseSectorDynamicsAudit.cs`; suite `AT.Tests/ResearchY/G_GravitySource/Y_G_053_Tests.cs`; doc
 `Docs/ResearchY/G_GravitySource/ResearchY-G_053.md`.
+
+---
+
+### ResearchY-G_054 - Phase Determination Audit (BOUNDARY, freely assigned)
+
+**Question.** What fixes the 53 phase coordinates? Candidates: symmetry, occupancy, multiplicity, attractor structure,
+actualization history, boundary assignment.
+
+**Verdict: BOUNDARY** - freely assigned.
+
+**1. The conservation theorem.** Invariant gradients lie in the amplitude-plus-mean subspace, so invariant-driven flows
+cannot touch the phases:
+
+| measurement | value |
+|---|---|
+| amplitude moves change the coordinates by | **3.232E-015** |
+| symmetry moves change them by | **2.540E-001** |
+| **invariant-driven flow** | **1.431E-015** (conserved) |
+| invariant gradient's phase component | **7.625E-012** |
+
+**2. Sensitivity is not determination.** Clock functional phase fraction **3.768E-003**, field **8.572E-002** - but the
+update rule's spatial part is **0.000E+000** and the coupling census is **0**.
+
+**3. The candidates.** symmetry **REFUTED** (moves them); occupancy as an invariant **REFUTED** (tautology, not
+counted); multiplicity **REFUTED** (**45 levels, 96 modes**, Laplacian-fixed); attractor structure **REFUTED**;
+actualization history **REFUTED**; **boundary assignment** - the answer.
+
+**4. A bug caught by the measurement:** `DerivedSectorSplit` returns **Electric first**; my accessor read it as the
+**spatial** part (**1.424E-002**) and flipped the verdict to DERIVED. The spatial part is genuinely **0.000E+000**.
+
+**Status:** COMPLETE. Tests `Y_G_054_Tests` **7/7**. Registry: added as **Boundary**
+(`phase-determination-audit`), with the group-G consistency counts updated. Core:
+`AT.Core/ResearchXH/PhaseDeterminationAudit.cs`; suite `AT.Tests/ResearchY/G_GravitySource/Y_G_054_Tests.cs`; doc
+`Docs/ResearchY/G_GravitySource/ResearchY-G_054.md`.

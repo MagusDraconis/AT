@@ -2902,6 +2902,31 @@ preferred sector. The verdict is computed with a **live branch in every directio
 No group-G registry claim, so claim counts are unchanged. Registry: added as **Boundary** (`sector-weight-audit`),
 reclassifying nothing. Tests: `Y_E_015_Tests` 7/7; group E **103/103**.
 
+## ResearchY-G_054 - Phase Determination Audit (COMPLETE, BOUNDARY - freely assigned)
+
+**Question.** What fixes the 53 phase coordinates? Candidates: symmetry, occupancy, multiplicity, attractor structure,
+actualization history, boundary assignment. Requirements: no new primitive; clock, acceleration and field laws
+preserved.
+
+**Answer: BOUNDARY - freely assigned.** What would have to be added: a coupling whose **gradient has a phase component**
+*and* which the theory **actually runs**. AT has the first without the second.
+
+- **The conservation theorem (centre of the audit):** invariant gradients lie in the **amplitude-plus-mean** subspace
+  (G_052's identity), so an invariant-driven flow **cannot change** the phase coordinates - measured at **1.431E-015**
+  (an invariant gradient's phase component: **7.625E-012**). This disposes of **attractor structure** and
+  **actualization history** at once.
+- **Symmetry does not fix them - it is defined by not seeing them:** its invariants ARE the amplitudes plus the mean, so
+  a symmetry move changes the coordinates by **2.540E-001**, while an amplitude move changes them by **3.232E-015**.
+- **Sensitivity is not determination:** the clock functional's gradient carries a phase fraction of **3.768E-003** and
+  the field's **8.572E-002**, but no AT process runs such a flow (spatial part **0.000E+000**, census **0**).
+- **Multiplicity fails bluntly:** the recorded spectrum (**45 levels, 96 modes**) is Laplacian-fixed, not state-dependent.
+  The addressed state's determination is a **tautology**, recorded and explicitly **not counted**.
+- **A bug caught by the measurement:** `DerivedSectorSplit` returns **Electric first**; my accessor read it as the
+  **spatial** part (**1.424E-002**) and flipped the verdict to DERIVED. The spatial part is genuinely **0.000E+000**.
+
+Registry: added as **Boundary** (`phase-determination-audit`); group-G consistency counts updated. Tests:
+`Y_G_054_Tests` 7/7.
+
 ## ResearchY-G_053 - Phase Sector Dynamics Audit (COMPLETE, DERIVED)
 
 **Question.** Do phase modes have independent physical effects beyond amplitudes? Construct a pure amplitude and a pure

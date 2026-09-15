@@ -484,6 +484,13 @@ public static class TemporalIndependenceAudit
             + "rotation and the quadrature functional, so the metric content is the clock alone. NOT symbol-detectable: "
             + "the suite names no B, g_rr or GammaOf — its vocabulary is perturbations, rotations and clocks",
             ScanDetectsIt: false),
+        // ── G_054: what fixes the 53 phase coordinates? ──
+        new SectorClaim("Y_G_054", "Phase Determination", MetricRequirement.ClockOnly,
+            "it measures how much each candidate moves the phase coordinates and how much of the clock and field "
+            + "functionals' gradients points along the phase sector, so the metric content is the clock alone. NOT "
+            + "symbol-detectable: the suite names no B, g_rr or GammaOf — its vocabulary is coordinates, flows and "
+            + "clocks",
+            ScanDetectsIt: false),
     };
 
     // ── The computed classification summaries ───────────────────────────────
