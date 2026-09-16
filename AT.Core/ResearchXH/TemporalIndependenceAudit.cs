@@ -556,6 +556,13 @@ public static class TemporalIndependenceAudit
             + "content is the clock alone. NOT symbol-detectable: the suite names no B, g_rr or GammaOf — its "
             + "vocabulary is weights, occupancies and clocks",
             ScanDetectsIt: false),
+        // ── G_064: why these weights, and what the recipe decides? ──
+        new SectorClaim("Y_G_064", "Canonical Recipe Origin", MetricRequirement.ClockOnly,
+            "it tests five weight formulas, two seed policies and one all-modes construction against five stated "
+            + "requirements, measuring each state's orbit, occupied modes, visible and hidden content and kernel, so the "
+            + "metric content is the clock alone. NOT symbol-detectable: the suite names no B, g_rr or GammaOf — its "
+            + "vocabulary is formulas, seeds and clocks",
+            ScanDetectsIt: false),
     };
 
     // ── The computed classification summaries ───────────────────────────────

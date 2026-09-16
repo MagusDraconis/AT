@@ -2902,6 +2902,38 @@ preferred sector. The verdict is computed with a **live branch in every directio
 No group-G registry claim, so claim counts are unchanged. Registry: added as **Boundary** (`sector-weight-audit`),
 reclassifying nothing. Tests: `Y_E_015_Tests` 7/7; group E **103/103**.
 
+## ResearchY-G_064 - Canonical Recipe Origin Audit (COMPLETE, DERIVED - pinned by phase-freeness)
+
+**Question.** **Why** these specific level weights? Test the **basis[0] choice**, the **level-weight formula**, the
+**zero-weight levels**; measure which conclusions change when the recipe changes. Goal: **separate the recipe from theory
+content**.
+
+**Answer: DERIVED - the construction is PINNED, and by a requirement its own comment does NOT name.**
+
+1. **The count law is exact:** `occupied = 44 − (zero-weight NON-CONSTANT levels)`, verified on five formulas - ramp **(0
+   zeros) 44**, mod-17 **(3) 41**, **canonical mod-23 (2) 42**, mod-15 **(6) 38**, mod-11 **(8) 36**. **The 42 is 44 minus
+   the canonical formula's two zeros**, and why the formula has two zeros is a property of its **modulus**. The
+   **constant level is special** (it carries the simplex direction, not a mode), so zeroing it removes no occupied mode -
+   a first version of the law was **off by one** on exactly those formulas.
+2. **The seed choice swaps the two sectors:** `basis[0]` → **42 visible, 0 hidden**; `basis[^1]` → **0 visible, 42
+   hidden** - the **same totals** (occupied 42, kernel **53**) with the sectors **swapped**. So the recipe decides **which
+   sector the state lives in**, not how much of it. The cause is exact: `basis[0]` is **always a cosine**, `basis[^1]` is
+   **sometimes a sine**, and the sines are the hidden quadratures.
+3. **The requirements, per substance (recipe up to scale; 8 substances):** **R3 phase-free - 1 of 8, the canonical
+   construction alone - PINS IT**; R4 hidden count = 47 - 1 of 8, pinning the **all-modes** construction, **not** the
+   canonical one; R2 full visible sector - 3; R1 generic (orbit ≥ 84 of 95) - **4**; R5 union of whole modes - 7.
+4. **Three findings:** the **named justification does not pin it** (genericity is shared by 4 of 8, and the largest orbit
+   of **95** belongs to a construction that is **not** phase-free - the recipe **trades orbit size for phase-freeness**);
+   **one requirement pins something else** (**47 ≠ 53** - G_040's hidden count and the canonical kernel are different
+   quantities); and the **magnitudes are irrelevant**.
+5. **The separation:** the **recipe** decides which sector the state occupies, how many modes it fills and the kernel's
+   dimension; the **theory** decides everything downstream plus the levels, the distance classes, the bound of 49 and the
+   floor of 47.
+
+**Status.** COMPLETE. Tests `Y_G_064_Tests` **6/6**. Core `AT.Core/ResearchXH/CanonicalRecipeAudit.cs`; doc
+`Docs/ResearchY/G_GravitySource/ResearchY-G_064.md`. Registry: added as **Derived** (`canonical-recipe-origin-audit`);
+group-G consistency counts 34/**65** registry/**51** survives/**51** minimal time sector. **No reclassification.**
+
 ## ResearchY-G_063 - Canonical State Audit (COMPLETE, BOUNDARY - one invariant out of thirteen)
 
 **Question.** **Why** does the canonical construction choose exactly the observed **weights**? Measure the level weights,

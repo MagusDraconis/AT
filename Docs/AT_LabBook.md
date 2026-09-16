@@ -5235,3 +5235,60 @@ conclusions were constants in disguise**, replaced before any classification was
 consistency counts 33 without-substrate / **64** registry / **50** survives / **50** minimal time sector. Core:
 `AT.Core/ResearchXH/CanonicalStateAudit.cs`; suite `AT.Tests/ResearchY/G_GravitySource/Y_G_063_Tests.cs`; doc
 `Docs/ResearchY/G_GravitySource/ResearchY-G_063.md`.
+
+### ResearchY-G_064 - Canonical Recipe Origin Audit (DERIVED)
+
+**Question.** **Why** these specific weights? Test the **basis[0]** choice, the **weight formula** and the **zero-weight
+levels**; measure which conclusions change. Goal: separate the recipe from theory content.
+
+**1. The count law is exact.** `occupied = 44 - (zero-weight NON-CONSTANT levels)`:
+
+| formula | zeros (total / non-constant) | predicted | measured |
+|---|---|---|---|
+| ramp (no modulus) | 0 / 0 | 44 | 44 |
+| mod-17 | 3 / 3 | 41 | 41 |
+| **canonical mod-23** | **2 / 2** | **42** | **42** |
+| mod-15 | 7 / 6 | 38 | 38 |
+| mod-11 | 9 / 8 | 36 | 36 |
+
+The **42 is 44 minus the canonical formula's two zeros**, and the zeros are a property of the **modulus**. The **constant
+level is special** - it carries the simplex direction, which is not a mode - so zeroing it removes no occupied mode; a
+first version of the law wrote `44 - zeros` and was **off by one** on exactly those formulas.
+
+**2. The seed choice swaps the two sectors.**
+
+| seed | visible occupied | hidden occupied | occupied total | kernel |
+|---|---|---|---|---|
+| **basis[0]** (cosine seeds) | **42** | **0** | 42 | 53 |
+| **basis[^1]** (sometimes sine) | **0** | **42** | 42 | 53 |
+
+Identical totals, **sectors swapped**. So the recipe decides **WHICH SECTOR** the state lives in, not how much of it - and
+that is why the canonical state is the right one for the phase-sector programme: it fills the visible sector while leaving
+the hidden one empty.
+
+**3. The requirements, measured per substance (8 substances: a recipe up to the scale of its weights).**
+
+| id | requirement | holds | pins |
+|---|---|---|---|
+| **R3** | **phase-free** | **1** | **the canonical construction** |
+| R4 | hidden count = the doublet count (**47**) | 1 | the **all-modes** construction, not the canonical one |
+| R2 | occupies the full visible sector | 3 | - |
+| R1 | **generic**: orbit >= **84** of **95** | 4 | - |
+| R5 | the kernel is a union of whole modes | 7 | - |
+
+**Exactly one requirement is satisfied by exactly one substance, and it is phase-freeness** - not the **genericity** the
+code comment names, which four substances share, with the largest orbit of all (**95**) belonging to a construction that
+is **not** phase-free. The recipe **trades orbit size for phase-freeness**.
+
+**4. Three findings.** The named justification does not pin it; one requirement pins a **different** construction, so
+**G_040's 47 and the canonical kernel of 53 are different quantities**; and the magnitudes are irrelevant (the same
+weights at twice the scale are the same construction).
+
+**5. The separation.** The **recipe** decides which sector the state occupies, how many modes it fills (44 - zeros) and
+the kernel's dimension. The **theory** decides everything downstream - the amplitude/phase split, the reachable rank, the
+interactions, the laws - plus the levels, the distance classes, the bound of 49 and the floor of 47.
+
+**Status:** COMPLETE. Tests `Y_G_064_Tests` **6/6**. Registry: added as **Derived** (`canonical-recipe-origin-audit`);
+group-G consistency counts 34 without-substrate / **65** registry / **51** survives / **51** minimal time sector. Core:
+`AT.Core/ResearchXH/CanonicalRecipeAudit.cs`; suite `AT.Tests/ResearchY/G_GravitySource/Y_G_064_Tests.cs`; doc
+`Docs/ResearchY/G_GravitySource/ResearchY-G_064.md`.
