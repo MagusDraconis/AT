@@ -598,6 +598,13 @@ public static class TemporalIndependenceAudit
             + "the clock alone. NOT symbol-detectable: the suite names no B, g_rr or GammaOf — its vocabulary is "
             + "compactness, separations and clocks",
             ScanDetectsIt: false),
+        // ── G_070: the observing program that decides AT vs GR ──
+        new SectorClaim("Y_G_070", "Observational Decision", MetricRequirement.ClockOnly,
+            "it converts the clock law's redshift separation into an observing program - each target's compactness, "
+            + "separation and required redshift precision are read through the clock rate and the compactness "
+            + "x = -GM/(Rc^2) - so the metric content is the clock alone. NOT symbol-detectable: the suite names no B, "
+            + "g_rr or GammaOf — its vocabulary is targets, precisions and clocks",
+            ScanDetectsIt: false),
     };
 
     // ── The computed classification summaries ───────────────────────────────

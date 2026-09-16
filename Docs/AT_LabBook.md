@@ -5541,3 +5541,48 @@ the difference.
 group-G consistency counts 39 without-substrate / **70** registry / **56** survives / **56** minimal time sector. Core:
 `AT.Core/ResearchXH/NeutronStarDecisionAudit.cs`; suite `AT.Tests/ResearchY/G_GravitySource/Y_G_069_Tests.cs`; doc
 `Docs/ResearchY/G_GravitySource/ResearchY-G_069.md`.
+
+### ResearchY-G_070 - Observational Decision Audit (DERIVED)
+
+**Question.** What exact neutron-star measurements would decide AT vs GR first, with current NICER limits and the
+published mass-radius ranges?
+
+**Answer.** **Measure the surface redshift of J0740+6620 to 7.55 % (5σ) or 14.14 % (3σ)** with its published NICER
+mass and radius: one measurement **decides the question at 6.4σ**. Published determinations run 20-50 %, so this is a
+**stated factor of 2.6×-6.6×**, not a new instrument.
+
+**The catalogue, recomputed not imported** (x = −1.4770 M/M☉ / (R/km), verified against G_019/G_069):
+
+| target | x | σ_x/x | separation | 20 % / 5 % / perfect timing |
+|---|---|---|---|---|
+| J0740+6620 (Riley 2021) | **−0.247001** | 3.661 % | **1.256E-001** | 2.18 / **6.45** / 9.27σ |
+| J0740+6620 (Miller 2021) | −0.224245 | 3.477 % | 9.518E-002 | 1.86 / 6.09 / 10.26σ |
+| J0030+0451 (Riley 2019) | −0.152011 | **2.636 %** | 3.450E-002 | 1.05 / 4.06 / **15.43σ** |
+| J0030+0451 (Miller 2019) | −0.163355 | 2.790 % | 4.125E-002 | 1.16 / 4.42 / 14.31σ |
+
+**Requirements at J0740+6620** (redshift precision at the published compactness / compactness precision at 5 %
+timing): 1σ **44.58 %** / 33.74 %; 3σ **14.14 %** / 10.66 %; 5σ **7.55 %** / 5.64 %. At J0030+0451: 20.97 / 39.50,
+6.87 / 9.50, 3.98 / **undefined**.
+
+**Budget shares at 5σ:** J0740+6620 timing **31.1 %** against compactness **29.1 %** - **comparable**, so no single
+axis binds; the two requirement numbers are **equivalent conditions**. J0030+0451 timing **141.5 %** (**breached**)
+against compactness 10.5 %.
+
+**Withdrawn draft claim.** The draft assumed the most compact target wins on **both** counts. The measurement refused
+it: the **largest separation** belongs to J0740+6620 and the **best-constrained compactness** to J0030+0451 (2.636 %
+against 3.661 %). The audit therefore **computes the crossing**: J0740+6620 wins at 20 % and 5 % timing, J0030+0451
+wins with **perfect** timing, and they **swap at a 2.051 % timing precision** (both 8.54σ). A first version of the
+bisection had its comparison **inverted** and returned the search window's boundary - the same class of defect as
+G_064's constants-in-disguise, fixed by asserting the **ordering** at three precisions and reporting the crossing as a
+computed number.
+
+**The program.** Step 1: J0740+6620's surface redshift to **7.55 %** (5σ) / **14.14 %** (3σ) with its published
+NICER mass and radius - **excludes whichever theory the measurement does not fit**. Step 2: the same measurement on
+J0030+0451 as a method check, which **becomes the better target once timing reaches 2.051 %**. Step 3: a NICER-class
+mass-radius improvement, which excludes nothing alone but lowers the timing the other steps need.
+
+**Status.** COMPLETE. Tests `Y_G_070_Tests` **7/7**. Core `AT.Core/ResearchXH/ObservationalDecisionAudit.cs`; doc
+`Docs/ResearchY/G_GravitySource/ResearchY-G_070.md`. Registry: added as **Derived**
+(`observational-decision-audit`); group-G consistency counts **40** without-substrate / **71** registry /
+**57** survives / **57** minimal time sector.
+
