@@ -5791,3 +5791,54 @@ count and reported order **0** — that measurement is **kept**, because it is t
 `Docs/ResearchY/QM_ManyBody/ResearchY-QM_003.md`. Registry: added as **Boundary** (`dispersion-closure-audit`).
 **No group-G count moves**, verified by re-running the G_027, G_033 and G_035 scanners after the new core was added.
 
+### ResearchY-QM_004 - Schrodinger Correspondence Audit (PARTIAL)
+
+**Question.** Does AT's unitary flow reproduce the dispersion of the **Schrodinger equation** (reference **ω = k²**)?
+Compare the local difference, the centred difference, the Cayley flow and the spectral derivative, measuring the phase
+velocity, the group velocity and the dispersion error.
+
+**Answer.** **PARTIAL - the candidate list contains the WRONG DIFFERENTIAL ORDER.** All four named candidates are
+**first-order** generators (**ω ∝ k**); the reference is **second-order**. **The generator that does correspond is one
+the question does not list: AT's own Laplacian.**
+
+**The decisive measure — the power law `d log ω / d log k`:**
+
+| candidate | power law | Schrodinger-like? |
+|---|---|---|
+| local difference, centred difference, Cayley flow | **1.0000** | no |
+| **spectral derivative** | **1.0000** | **no - exact about the WRONG operator** |
+| **AT-native Laplacian (C96(1..6))** | **2.0000** | **yes** |
+| nearest-neighbour Laplacian | **2.0000** | yes |
+
+**The velocities** (channel 24, k = π/2; reference **1.570796 / 3.141593**): local & centred **0.636620 / 0.000000**,
+Cayley **1.273239 / 0.000000**, spectral **1.000000 / 1.000000**, **native Laplacian 8.912677 / 6.000000**, one-shell
+**1.273240 / 2.000000**. The first-order group velocity is **exactly zero** at a quarter of the zone. **The raw error
+diverges:** **1426 %** at the first channel (local difference), **2954 %** (Cayley, carrying the factor-two generator
+QM_002 measured).
+
+**The native generator, verified rather than assumed.** AT's mode operator is the graph Laplacian of **C96(1..6)**,
+symbol `μ(δ) = Σ_{r=1..6}(2 − 2cos rδ)`, which **reproduces the recorded spectrum to 7.11E-15** over 49 channels —
+zero mode at channel 0, recorded gap **0.386350893**, **μ(π) = 12**, maximum **15.837372 at channel 11**. Its
+long-wavelength expansion is **`ω = D k²` with D = Σr² = 91**: **a Schrodinger propagator with a coefficient the shell
+set supplies.**
+
+**The window, taken contiguously from the longest wavelength (10 %):** the four named candidates **0 channels**; the
+**native Laplacian 3 channels and 3 of the 42 occupied modes** (0.89 %, 3.51 %, 7.73 %, then 13.35 %); the **one-shell
+Laplacian 17 channels and 16 of 42**. Because **six shells interfere**: the native group velocity **peaks at channel 5
+and folds at channel 11**, then oscillates with **5 sign changes** and **23** reversed channels.
+
+**Two fold mechanisms, named:** **oddness** (antisymmetry → the symbol vanishes at the zone edge) for the first-order
+family; **even-symbol shell interference** for the native Laplacian, whose **μ(π) = 12**.
+
+**Three defects in the audit's own first version, recorded.** (1) The sign-change counter **missed a reversal through
+an exact zero** — the first-order family turns over exactly at the fold — so those candidates were counted as having
+**no** reversal. (2) **"Does not reverse" was conflated with "is monotone"**: the one-shell Laplacian never reverses
+and still peaks at π/2. (3) **The window count was not contiguous**, so the local difference "passed" at **2 interior
+channels** (and the spectral derivative at 3) where `sin δ/δ²` crosses unity — **a coincidence of the ratio, not a
+correspondence**; the window is now a contiguous run and the excluded passes are reported.
+
+**Status.** COMPLETE. Tests `Y_QM_004_Tests` **8/8**. Core `AT.Core/ResearchXH/SchrodingerCorrespondenceAudit.cs`; doc
+`Docs/ResearchY/QM_ManyBody/ResearchY-QM_004.md`. Registry: added as **Partial**
+(`schrodinger-correspondence-audit`). **No group-G count moves**, verified by re-running the G_027, G_033 and G_035
+scanners after the new core was added.
+
