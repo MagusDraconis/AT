@@ -605,6 +605,13 @@ public static class TemporalIndependenceAudit
             + "x = -GM/(Rc^2) - so the metric content is the clock alone. NOT symbol-detectable: the suite names no B, "
             + "g_rr or GammaOf — its vocabulary is targets, precisions and clocks",
             ScanDetectsIt: false),
+        // ── G_071: the observer-facing roadmap, with the mass and radius split ──
+        new SectorClaim("Y_G_071", "Observational Roadmap", MetricRequirement.ClockOnly,
+            "it decomposes the clock law's required redshift precision into a mass precision, a radius precision and "
+            + "the correlation between them - every quantity read through the clock rate and the compactness "
+            + "x = -GM/(Rc^2) - so the metric content is the clock alone. NOT symbol-detectable: the suite names no B, "
+            + "g_rr or GammaOf — its vocabulary is marginals, correlations and clocks",
+            ScanDetectsIt: false),
     };
 
     // ── The computed classification summaries ───────────────────────────────

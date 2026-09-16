@@ -2902,6 +2902,54 @@ preferred sector. The verdict is computed with a **live branch in every directio
 No group-G registry claim, so claim counts are unchanged. Registry: added as **Boundary** (`sector-weight-audit`),
 reclassifying nothing. Tests: `Y_E_015_Tests` 7/7; group E **103/103**.
 
+## ResearchY-G_071 - Observational Roadmap Audit (COMPLETE, DERIVED - one object, three precisions, a frontier)
+
+**Question.** What exact observations are required to decide AT redshift vs GR redshift first - with the target
+object, the required timing, **mass** and **radius** precisions, and the resulting significance? Output
+CURRENT / 3SIGMA / 5SIGMA.
+
+**Answer.** The target is **J0740+6620 (Riley 2021)**; the program is a **5 % surface-redshift determination** with the
+mass and the radius **each to 7.54 % (3σ) or 3.99 % (5σ) if their errors are independent** - **±0.156 / ±0.083 M☉**
+and **±0.934 / ±0.494 km** - or **5.33 % / 2.82 % each if the errors add**.
+
+| row | timing | compactness | each axis (ρ = 0) | σ_M | σ_R | worst case each | significance |
+|---|---|---|---|---|---|---|---|
+| **CURRENT** | 20 % | 3.661 % (published) | 2.59 % | 0.054 M☉ | 0.321 km | 1.83 % | **2.1791 σ** |
+| **3SIGMA** | **5 %** | 10.66 % | **7.54 %** | **0.156 M☉** | **0.934 km** | **5.33 %** | 3.0000 σ |
+| **5SIGMA** | **5 %** | 5.64 % | **3.99 %** | **0.083 M☉** | **0.494 km** | **2.82 %** | 5.0000 σ |
+
+**The decomposition the earlier audits never made.** For `x = −kM/R`, `(σ_x/x)² = u² + v² − 2ρuv` with `u = σ_M/M`,
+`v = σ_R/R` - so **a single compactness number does not determine the two axis requirements**; the split is fixed only
+once the **correlation** is named, which no prior audit carried. The repository carries marginals for **exactly one
+object** (G_068's deciding experiment, M = 1.4 ± 0.05 M☉, R = 12 ± 1 km): `u = 3.5714 %`, `v = 8.3333 %`, **v/u = 2.333**.
+
+**The audit refutes its own input.** G_069's scenario table carries the literal **`0.1190`**, called "a generic NICER
+compactness (11.90 %)". The **worst-case extreme** of those marginals is **11.9048 %** (agreement **4.76E-5**, implied
+**ρ = −0.998096**) - the recorded value is the **worst case presented as generic**. The **independent** form is
+**9.0664 %** (**1.313×** smaller), so the current significance rises from **1.0534 σ** (reproducing G_069's 1.05 σ, the
+cross-check that the trace is right) to **1.1255 σ** - **6.9 % higher than recorded**. Same defect class as the
+corrected **A₀ = 20 812** artifact.
+
+**The frontier at 3σ (10.66 %):** worst case `u + v` (each 5.33 %), independent `√(u²+v²)` (each 7.54 %), cancellation
+`|u − v|` (**the split is free**) - so the worst case demands **each axis 1.414× better**.
+
+**Two counter-intuitive results, both measured.**
+1. **A better timing RELAXES the mass-and-radius requirement** (3σ compactness 8.41 % at 10 % timing, 10.66 % at 5 %,
+   **11.32 % at perfect**), and **at the published 20 % timing it is UNDEFINED (NaN)** - the timing term alone exceeds
+   the budget, so no mass-radius precision reaches it. **The timing is therefore the first step**, and the requirement
+   has a **floor of 11.32 % (3σ) / 6.79 % (5σ)**.
+2. **The radius carries the leverage:** radius to perfection **2.539×**, equalising down **1.795×**, mass to
+   perfection **1.088×**, and **equalising up makes it 0.769× worse**.
+
+**Two of the audit's own assertions are recorded as wrong** rather than quietly fixed: the perfect-timing limit is
+**not model-independent** (requirement ∝ 1/|slope|), and at this target the single-theory model's **shallower** slope
+demands a **looser** compactness (**13.24 %** against **11.32 %**).
+
+**Status.** COMPLETE. Tests `Y_G_071_Tests` **8/8**. Core `AT.Core/ResearchXH/ObservationalRoadmapAudit.cs`; doc
+`Docs/ResearchY/G_GravitySource/ResearchY-G_071.md`. Registry: added as **Derived**
+(`observational-roadmap-audit`); group-G consistency counts **41** without-substrate / **72** registry /
+**58** survives / **58** minimal time sector.
+
 ## ResearchY-G_070 - Observational Decision Audit (COMPLETE, DERIVED - one target, one measurement)
 
 **Question.** What exact neutron-star measurements would decide AT vs GR first, with current NICER limits and the
