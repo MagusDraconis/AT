@@ -5634,3 +5634,56 @@ demands a **looser** compactness (**13.24 %** against **11.32 %**).
 (`observational-roadmap-audit`); group-G consistency counts **41** without-substrate / **72** registry /
 **58** survives / **58** minimal time sector.
 
+### ResearchY-QM_001 - ManyBody Correspondence Audit (PARTIAL, new group QM)
+
+**Question.** Does the AT decomposition rho = mean + amplitude + phase have an analogue in many-body quantum states?
+Compare amplitudes, phases, the density matrix, the reduced density matrix and occupation numbers, measuring
+dimension, kernel and observable rank. Output ANALOGOUS / PARTIAL / REFUTED.
+
+**Answer.** **PARTIAL** - **two** structures analogous, **three** refuted - and the **goal is answered: rho behaves more
+like |Psi|^2.** rho is a non-negative real vector of 96 cells with total 96, reconstructed as **|Psi|^2 with error
+2.22E-016**, of operator rank **1** - the rank of |Psi><Psi|. The one density-matrix-like feature it has is the pair
+**(rank 43, kernel 53)**, and that belongs to its **observable algebra**, not its state.
+
+**The AT side:** **1 (mean) + 42 (amplitude) + 53 (phase) = 96**, observable rank **43 = 1 + 42**, kernel
+**53 = 96 - 43 = the phase sector**, state rank **1**, canonical phase content **9.246E-015**.
+
+**The deciding measurements:**
+
+| finding | value |
+|---|---|
+| modulus reconstruction rho = \|Psi\|^2, Psi = sqrt(rho) | **2.22E-016** |
+| AT's occupancy total | **96** = the cell count (a density normalisation, not a trace of 1) |
+| cell census | **96 strictly positive, 0 zero** |
+| mode-weight census | **2 zeros of 44** - empty MODES with no empty CELLS |
+| dimension: AT vs one particle on 96 modes | **96 / 96** parameters against **96 / 9 216** for the density matrix (**96x**) |
+| the rank AT's kernel implies | **43**, i.e. **43x** the state's own rank |
+| 1-RDM trace vs the particle number | **equal to 12 digits** (2, 3 and 4 bosons; 3 and 4 fermions) |
+| fermionic occupations | inside **[0, 1]** (the Pauli bound) |
+| AT's spectral levels | **45 distinct**, multiplicities summing to **96**, maximum **above 1** |
+| the reduced density matrix | product pair rank **1**, entropy **0**; straddling pair rank **2**, entropy **log 2 = 0.693147** |
+
+**Two structures are analogous** - the **amplitudes** (42-dim sector) and the **phases** (53-dim sector) - and the
+correspondence is **structural rather than numerical**: a wavefunction carries two real degrees of freedom *per
+configuration* (D magnitudes and D polar angles of the same vectors), while AT splits one real 96-dimensional space
+into orthogonal **subspaces**. `1 + 42 + 53 = 96` is a **dimension** identity; `D amplitudes + D phases` is a
+**component** identity.
+
+**Three are refuted, by measurement rather than argument:** the **density matrix** (the total is the cell count, and
+AT carries 1/D of the parameters), the **reduced density matrix** (the 96 cells carry **no tensor factor**, so no
+partial trace exists on D96 - the nearest AT object is D96³, whole 96³ = 884 736 and one-factor reduced 96² = 9 216),
+and the **occupation numbers** (integer multiplicities summing to the state dimension, not reals summing to a particle
+number).
+
+**A probe defect is recorded.** The first version built its superposition from the Fock enumeration's first two
+configurations, which left the kept block **empty in every system** - so the reduced density matrix was rank 1 with
+zero entropy every time and the entanglement question was never being asked. Same class as G_063: a helper whose
+**domain** silently excluded the case under test. Both regimes are now asserted on explicitly chosen pairs.
+
+**New group.** **QM** is added to the group registry. **No group-G count moves** - the group-G consistency counts and
+the `TemporalIndependenceAudit` registry are unchanged, verified by re-running the G_027, G_033 and G_035 scanners
+after the new core was added (16/16 passing).
+
+**Status.** COMPLETE. Tests `Y_QM_001_Tests` **8/8**. Core `AT.Core/ResearchXH/ManyBodyCorrespondenceAudit.cs`; doc
+`Docs/ResearchY/QM_ManyBody/ResearchY-QM_001.md`. Registry: added as **Partial** (`many-body-correspondence-audit`).
+
