@@ -85,7 +85,21 @@ public static class PhaseEvolutionAudit
     public static System.Numerics.Complex SkewMultiplier(int c) => new System.Numerics.Complex(0, Math.Sin(Delta(c)));
 
     /// <summary>Every candidate's multiplier: one complex number per channel, which is all a circulant update needs.</summary>
-    public static System.Numerics.Complex Multiplier(string update, int c, double eps) => update switch
+    /// <summary>
+    /// Memoised: the multiplier is a pure function of (update, channel, eps), and the exact flow and the unitary form each
+    /// evaluate a complex exponential per channel per step otherwise - which is where a 20000-step scan spent its time.
+    /// </summary>
+    private static readonly Dictionary<(string, int, double), System.Numerics.Complex> MultiplierCache = new();
+
+    public static System.Numerics.Complex Multiplier(string update, int c, double eps)
+    {
+        if (MultiplierCache.TryGetValue((update, c, eps), out var cached)) return cached;
+        var built = MultiplierUncached(update, c, eps);
+        MultiplierCache[(update, c, eps)] = built;
+        return built;
+    }
+
+    private static System.Numerics.Complex MultiplierUncached(string update, int c, double eps) => update switch
     {
         "forward difference" => 1.0 + eps * DifferenceMultiplier(c),
         "backward difference" => 1.0 - eps * DifferenceMultiplier(c),

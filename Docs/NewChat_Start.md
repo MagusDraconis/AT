@@ -2902,6 +2902,39 @@ preferred sector. The verdict is computed with a **live branch in every directio
 No group-G registry claim, so claim counts are unchanged. Registry: added as **Boundary** (`sector-weight-audit`),
 reclassifying nothing. Tests: `Y_E_015_Tests` 7/7; group E **103/103**.
 
+## ResearchY-G_066 - Physical Flow Audit (COMPLETE, REFUTED - phase-freeness belongs to dissipation, not to AT)
+
+**Question.** Which **update rule is physically privileged**? Compare the **forward difference**, **backward difference**,
+**centred difference**, **exact flow** and **Cayley flow**; measure **positivity**, **norm conservation**, **phase
+evolution**, **attractors** and **law compatibility**. Goal: is phase-freeness a property of **AT itself** or only of one
+**chosen flow**?
+
+**Answer: REFUTED - phase-freeness is a property of the DISSIPATIVE flows, not of AT.**
+
+1. **The five names describe four behaviours**, fixed by the multiplier: forward difference and exact flow **contractive**;
+   backward difference **amplifying**; centred difference a bare **rotation generator**; Cayley flow **unitary**.
+2. **Four of the five are admissible, and they do not agree.** At 4000 steps, eps = 1E-3: forward difference min cell
+   **9.390E-001**, deviation ratio **0.381**, phase ratio **0.253** (DECAYS TO UNIFORM); exact flow **0.381 / 0.253** (the
+   same to three digits); centred **1.001 / 0.800** (PRESERVES); **UNITARY 1.000 / 0.682** (PRESERVES); backward drives
+   cells to **-2.597E+002** (LEAVES THE SIMPLEX).
+3. **The laws rule out the amplifying form**, its worst law residual being **1.000E+000**, while every admissible form
+   keeps them below **1E-13**.
+4. **The decisive measurement:** the **unitary** form - total-conserving, uniform state stationary, every law intact -
+   **preserves the phase content indefinitely** (**0.699** at 8000 steps). So **an admissible, law-abiding,
+   total-conserving flow keeps the phase**, and phase-freeness belongs to **dissipation**.
+5. **The dissipative forms erase everything, not only the phase** (deviation **0.381** vs phase **0.253**): their attractor
+   is the **uniform state**, and the two agree to three digits (**0.3810 / 0.3809**), confirming G_060.
+6. **No form is privileged by the measures usually taken** (total, uniform fixed point, laws), so **G_065's attractor
+   argument cannot be promoted** to a requirement of the theory.
+
+**A performance defect is recorded:** the first suite took **4m38s** because the exact and unitary forms evaluated **48
+complex exponentials per step**; memoising the multiplier and the table brought it to **19s**.
+
+**Status.** COMPLETE. Tests `Y_G_066_Tests` **7/7**. Core `AT.Core/ResearchXH/PhysicalFlowAudit.cs`; doc
+`Docs/ResearchY/G_GravitySource/ResearchY-G_066.md`. Registry: added as **Refuted** (`physical-flow-audit`); group-G
+consistency counts 36/**67** registry/**53** survives/**53** minimal time sector. **No reclassification**, but a
+restriction: G_065's finding stands as a measurement of the dissipative flow.
+
 ## ResearchY-G_065 - Phase-Free Principle Audit (COMPLETE, BOUNDARY - no law needs it, the flow produces it)
 
 **Question.** Is phase-freeness a **derived requirement** or only a **preferred convention**? Test the phase-free

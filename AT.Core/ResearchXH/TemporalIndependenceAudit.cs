@@ -570,6 +570,13 @@ public static class TemporalIndependenceAudit
             + "the attractor, so the metric content is the clock alone. NOT symbol-detectable: the suite names no B, g_rr "
             + "or GammaOf — its vocabulary is laws, residuals and clocks",
             ScanDetectsIt: false),
+        // ── G_066: which update rule is physically privileged? ──
+        new SectorClaim("Y_G_066", "Physical Flow", MetricRequirement.ClockOnly,
+            "it compares five circulant update forms by their complex multiplier, their positivity over 4000 steps, "
+            + "their deviation and phase ratios and their law residuals, all of which are read through the clock rate "
+            + "and the occupancy, so the metric content is the clock alone. NOT symbol-detectable: the suite names no B, "
+            + "g_rr or GammaOf — its vocabulary is multipliers, ratios and clocks",
+            ScanDetectsIt: false),
     };
 
     // ── The computed classification summaries ───────────────────────────────

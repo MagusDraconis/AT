@@ -5348,3 +5348,49 @@ breaks the interface is **saturation**, not phase content.
 group-G consistency counts 35 without-substrate / **66** registry / **52** survives / **52** minimal time sector. Core:
 `AT.Core/ResearchXH/PhaseFreePrincipleAudit.cs`; suite `AT.Tests/ResearchY/G_GravitySource/Y_G_065_Tests.cs`; doc
 `Docs/ResearchY/G_GravitySource/ResearchY-G_065.md`.
+
+### ResearchY-G_066 - Physical Flow Audit (REFUTED)
+
+**Question.** Which **update rule is physically privileged**? Compare the **forward difference**, **backward
+difference**, **centred difference**, **exact flow** and **Cayley flow**; measure positivity, norm conservation, phase
+evolution, attractors and law compatibility. Goal: is phase-freeness a property of **AT** or of **one chosen flow**?
+
+**1. The five forms, measured over 4000 steps at eps = 1E-3.**
+
+| flow | min cell (canonical) | min cell (bearing) | admissible | deviation ratio | phase ratio | long run |
+|---|---|---|---|---|---|---|
+| forward difference | 9.390E-001 | 8.910E-001 | **True** | **0.381** | **0.253** | DECAYS TO UNIFORM |
+| exact flow `exp(eps D)` | 9.390E-001 | 8.911E-001 | **True** | 0.381 | 0.253 | DECAYS TO UNIFORM |
+| centred (skew) difference | 7.803E-001 | 7.060E-001 | **True** | **1.001** | **0.800** | PRESERVES THE STATE |
+| **unitary (Cayley)** | 7.136E-001 | 7.357E-001 | **True** | **1.000** | **0.682** | **PRESERVES THE STATE** |
+| backward difference | **-2.597E+002** | **-2.087E+002** | **False** | 1.058E+003 | 8.547E+002 | LEAVES THE SIMPLEX |
+
+**The five names describe four behaviours**, fixed by the multiplier: forward difference and exact flow **contractive**,
+backward difference **amplifying**, centred difference a **rotation generator**, Cayley flow **unitary**.
+
+**2. The laws rule out the amplifying form rather than the audit doing it:** its worst law residual is **1.000E+000**
+because it drives cells negative, while every admissible form keeps the laws below **1E-13**. Every form conserves the
+**total** in exact arithmetic (the difference annihilates the constant), the amplifying one losing it only to floating
+point as its magnitude explodes.
+
+**3. The decisive measurement: the phase ratio.** Forward **0.253 -> 0.214** at 8000 steps and exact flow the same;
+**centred 0.800 -> 0.785**; **unitary 0.682 -> 0.699**. The unitary form conserves the total, fixes the uniform state and
+keeps every law - and **preserves the phase content indefinitely**. **An admissible, law-abiding, total-conserving flow
+keeps the phase, so phase-freeness is a property of DISSIPATION, not of the theory.**
+
+**4. The dissipative forms erase everything, not only the phase.** Forward deviation ratio **0.381** against phase ratio
+**0.253**: the attractor is the **uniform state**. The two dissipative forms agree to three digits (**0.3810 / 0.3809**),
+confirming G_060's identification of the exact flow as the forward step's flow.
+
+**5. No form is privileged by the measures usually taken** (total conserved, uniform state stationary, laws intact), so
+**G_065's attractor argument cannot be promoted** from *the admitted flow converges to the phase-free state* to *the theory
+requires it*.
+
+**A performance defect is recorded:** the first suite took **4m38s** because the exact and unitary forms evaluated **48
+complex exponentials per step** and the table was rebuilt per call; memoising the multiplier (pure in update, channel and
+eps) and the table brought it to **19s**.
+
+**Status:** COMPLETE. Tests `Y_G_066_Tests` **7/7**. Registry: added as **Refuted** (`physical-flow-audit`); group-G
+consistency counts 36 without-substrate / **67** registry / **53** survives / **53** minimal time sector. Core:
+`AT.Core/ResearchXH/PhysicalFlowAudit.cs`; suite `AT.Tests/ResearchY/G_GravitySource/Y_G_066_Tests.cs`; doc
+`Docs/ResearchY/G_GravitySource/ResearchY-G_066.md`.
