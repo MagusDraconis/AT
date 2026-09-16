@@ -5447,3 +5447,55 @@ laws. **The selection is available but unmade.**
 consistency counts 37 without-substrate / **68** registry / **54** survives / **54** minimal time sector. Core:
 `AT.Core/ResearchXH/FlowSelectionAudit.cs`; suite `AT.Tests/ResearchY/G_GravitySource/Y_G_067_Tests.cs`; doc
 `Docs/ResearchY/G_GravitySource/ResearchY-G_067.md`.
+
+### ResearchY-G_068 - Temporal Prediction Audit (DERIVED)
+
+**Question.** What **unique measurable prediction** does the surviving AT time sector make that differs from GR? Output
+the observable, its magnitude and the current measurement status. Goal: return from rho-structure to experimental time
+physics.
+
+**1. The prediction is one line.**
+
+| theory | metric | redshift |
+|---|---|---|
+| **AT** | `g00 = -e^(2x)` | **`1 + z = e^(-x)`** |
+| **GR** | `g00 = -(1 + 2x)` | **`1 + z = (1 + 2x)^(-1/2)`** |
+
+with `x = -GM/(Rc^2)` the surface potential. **The observable is a compact object's surface redshift.** Both exact;
+neither fitted. The constants are **recomputed**: the Sun's potential is **-2.123047E-6** against G_019's recorded
+**2.122503E-6**, agreement **2.6E-4**, the residual being the choice of solar mass.
+
+**2. The magnitude is second order.** `z_AT = -x + x^2/2 - x^3/6`, `z_GR = -x + 3x^2/2 - 5x^3/2`, so the split is
+**`-x^2 + (7/3)x^3`** (the next term sets the measured relative deviation **2.333E-6** at `x = -1E-6`).
+
+| regime | x | split | precision | short by |
+|---|---|---|---|---|
+| Earth's surface | -6.961E-10 | **-4.846E-19** | 1E-18 | **2.1x** |
+| the Sun's surface | -2.123E-06 | -4.507E-12 | 1E-5 | **2.2E+6x** |
+| Sirius B | -2.573E-04 | -6.620E-08 | 0.02 | **3.0E+5x** |
+| J0030+0451 (NICER) | -0.152011 | **-17.367 %** | 3-10 % | **live** |
+| **J0740+6620 (Riley)** | -0.247002 | **-30.957 %** | 17-31 % | **live** |
+
+At `x = -1E-9` the split (**-1.000E-18**) is **below one ulp of unity** (2.220E-16): not small but
+**unrepresentable** - so the split comes from the **series** and the redshift through `AtNumerics.ExpM1`. **The naive
+route is measured, not cautioned:** it returns **-8.224E-17** where the truth is **-1.000E-18**, **inflated by 82.2x**,
+while the series route holds to **6E-8 relative**.
+
+**3. The measurement status: ALLOWED but UNDECIDED.**
+
+| quantity | value |
+|---|---|
+| separation (M = 1.4, R = 12 km) | **0.047205** |
+| combined uncertainty | 0.046394 |
+| **significance now** | **1.017 sigma** |
+| **3 sigma needs** | **8.37 %** of z_AT (0.015735) |
+| **5 sigma needs** | **5.02 %** (0.009441) |
+| published determinations | 20-50 % -> **2.4x-6.0x short** |
+
+**4. A qualitative difference needing no precision:** AT's `g00` **never vanishes** (no clock-stopping surface); GR's
+`1 + 2x` vanishes at `y = 0.5` where its redshift diverges.
+
+**Status:** COMPLETE. Tests `Y_G_068_Tests` **7/7**. Registry: added as **Derived** (`temporal-prediction-audit`); group-G
+consistency counts 38 without-substrate / **69** registry / **55** survives / **55** minimal time sector. Core:
+`AT.Core/ResearchXH/TemporalPredictionAudit.cs`; suite `AT.Tests/ResearchY/G_GravitySource/Y_G_068_Tests.cs`; doc
+`Docs/ResearchY/G_GravitySource/ResearchY-G_068.md`.

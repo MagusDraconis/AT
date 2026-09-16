@@ -2902,6 +2902,36 @@ preferred sector. The verdict is computed with a **live branch in every directio
 No group-G registry claim, so claim counts are unchanged. Registry: added as **Boundary** (`sector-weight-audit`),
 reclassifying nothing. Tests: `Y_E_015_Tests` 7/7; group E **103/103**.
 
+## ResearchY-G_068 - Temporal Prediction Audit (COMPLETE, DERIVED - one line, second order, undecided)
+
+**Question.** What **unique measurable prediction** does the surviving AT time sector make that **differs from GR**?
+Output the **observable**, its **magnitude** and the **current measurement status**. Goal: return from ρ-structure to
+experimental time physics.
+
+**Answer: DERIVED - the prediction is exact, unique and undecided.**
+
+1. **The prediction is one line.** AT has `g₀₀ = −e^(2x)` so **`1 + z = e^(−x)`**; GR has `g₀₀ = −(1 + 2x)` so
+   **`1 + z = (1 + 2x)^(−1/2)`**, with `x = −GM/(Rc²)` the surface potential. **The observable is a compact object's
+   surface redshift** (equivalently a clock's rate at its surface). Neither is fitted.
+2. **The magnitude is SECOND ORDER:** `z_AT = −x + x²/2 − x³/6` and `z_GR = −x + 3x²/2 − 5x³/2`, so the split is
+   **`−x² + (7/3)x³`** (the next term sets the measured 2.333E-6 relative deviation at `x = −1E-6`). **No weak-field
+   measurement can see it:** Earth **2.1× short** (−4.846E-19 vs a 1E-18 floor), Sun **2.2E+6× short**, Sirius B
+   **3.0E+5× short**; at `x = −1E-9` the split is **below one ulp of unity** → **unrepresentable**.
+3. **The live arena:** J0030+0451 **−17.367 %**; J0740+6620 (Riley) **−30.957 %**; Miller **−27.464 %**; generic NICER
+   **−20.065 %**. **The sign is uniform: AT's redshift is always SMALLER.**
+4. **The status is ALLOWED but UNDECIDED:** separation **0.047205** against a combined **0.046394** → **1.017σ now**;
+   **3σ needs σ_z ≤ 0.015735 = 8.37 % of z_AT** and 5σ **0.009441 = 5.02 %**, against published **20–50 %** (short by
+   **2.4×–6.0×**). **Allowed everywhere, preferred nowhere.**
+5. **A qualitative difference needing no precision:** AT's `g₀₀` **never vanishes** (no clock-stopping surface) while
+   GR's `1 + 2x` vanishes at `y = 0.5` where its redshift diverges.
+6. **Two numerical facts are measured, not cautioned:** the naive subtraction at `x = −1E-9` is **inflated by 82.2×**
+   (−8.224E-17 vs −1.000E-18) while the series route holds to **6E-8 relative**; the constants are **recomputed**, the
+   Sun's potential agreeing with G_019's recorded value to **2.6E-4** (the residual being the choice of solar mass).
+
+**Status.** COMPLETE. Tests `Y_G_068_Tests` **7/7**. Core `AT.Core/ResearchXH/TemporalPredictionAudit.cs`; doc
+`Docs/ResearchY/G_GravitySource/ResearchY-G_068.md`. Registry: added as **Derived** (`temporal-prediction-audit`); group-G
+consistency counts 38/**69** registry/**55** survives/**55** minimal time sector. **No reclassification.**
+
 ## ResearchY-G_067 - Flow Selection Audit (COMPLETE, REFUTED - nothing in AT selects a flow)
 
 **Question.** Can any **existing AT quantity** select between the **dissipative** and the **unitary** flows? Candidates:

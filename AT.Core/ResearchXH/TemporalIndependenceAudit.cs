@@ -584,6 +584,13 @@ public static class TemporalIndependenceAudit
             + "content is the clock alone. NOT symbol-detectable: the suite names no B, g_rr or GammaOf — its "
             + "vocabulary is contrasts, ratios and clocks",
             ScanDetectsIt: false),
+        // ── G_068: the unique temporal prediction, with its magnitude and measurement status ──
+        new SectorClaim("Y_G_068", "Temporal Prediction", MetricRequirement.ClockOnly,
+            "its subject IS the clock law - the prediction is the redshift that g00 = -e^(2x) implies, computed through "
+            + "the clock rate with AtNumerics.ExpM1, and its magnitude is the second-order split of two exact "
+            + "redshift functions, so the metric content is the clock alone. NOT symbol-detectable: the suite names no B "
+            + "or g_rr outside the two laws it contrasts — its vocabulary is potentials, redshifts and clocks",
+            ScanDetectsIt: false),
     };
 
     // ── The computed classification summaries ───────────────────────────────
