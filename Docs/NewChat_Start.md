@@ -2902,6 +2902,71 @@ preferred sector. The verdict is computed with a **live branch in every directio
 No group-G registry claim, so claim counts are unchanged. Registry: added as **Boundary** (`sector-weight-audit`),
 reclassifying nothing. Tests: `Y_E_015_Tests` 7/7; group E **103/103**.
 
+## ResearchY-QM_007 - Generator Selection Audit (COMPLETE, BOUNDARY - the constraint is an input, not a law)
+
+**Question.** Why does AT use the six-shell generator **{1..6}** instead of the Schrodinger-compatible **{1}**?
+Compare {1}, {1,2} and {1..6}, measuring **locality**, the **dispersion error**, the **fold position**, **packet
+evolution** and **the existing AT requirements**, and identify which AT constraint forces the native generator away
+from the Schrodinger optimum.
+
+**Answer.** **BOUNDARY - the constraint is the SUBSTRATE'S OWN SPECTRAL FINGERPRINT, and it is an INPUT rather than a
+dynamical law.** **The identification is computed:** the recorded **trace 1152 = 2 x 6 x 96** fixes the shell
+**count** at six, and the recorded **45 levels** with maximum **15.837372** fix **which** six. **No propagation
+requirement is involved anywhere in that selection.**
+
+**The trace alone counts the shells.** A circulant Laplacian's trace is **2 |S| x 96**: {1} gives **192**, {1,2} gives
+**384**, {1..6} gives **1152** against the recorded **1152** - out by factors of six and three. Of the **63** subsets,
+**1** matches.
+
+**And the rest of the fingerprint fixes which six:**
+
+| requirement | recorded | {1} | {1,2} | {1..6} | discriminates |
+|---|---|---|---|---|---|
+| trace | 1152 | 192 | 384 | **1152** | yes |
+| distinct levels | 45 | 49 | 47 | **45** | yes |
+| free room | 51 | 47 | 49 | **51** | yes |
+| maximum eigenvalue | 15.837372 | 4.000000 | 6.249689 | **15.837372** | yes |
+| reproduces all 96 eigenvalues | yes | no | no | **yes** | yes |
+| amplitude/phase split 42/53 | 42 / 53 | 42 / 53 | 42 / 53 | 42 / 53 | **NO** |
+
+Census: **1** matches the trace, **9** match the level count, **exactly 1** reproduces the whole spectrum.
+
+**And one required structure does not discriminate at all, which is reported rather than omitted.** The **42/53
+amplitude/phase split is |S|-INDEPENDENT** - it follows from the ring's reflection pairing and the canonical state's
+construction rather than from which neighbours are summed - so **a requirement that looks load-bearing here selects
+nothing**.
+
+**Nothing dynamical selects the native set.** Only **two** of the five measures prefer it - **locality** (**2 / 4 /
+12** non-zeros per row) and **the requirements themselves** - **and the first follows from the second**, because a
+12-regular graph is local by construction. Everything else prefers the singleton: dispersal error at the zone edge
+**59.47 % / 91.89 % / 98.66 %**, folds **none / 28 / 11**, packet windows **514 / 153 / 23** (a factor of **22**),
+distances at t = 20 of **0.004149 / 0.013906 / 0.088008**.
+
+| | t = 10 | 20 | 40 |
+|---|---|---|---|
+| **reference (ω = k²)** | 4.7170 | 6.4031 | 10.7702 |
+| **{1}** | 4.7067 | 6.3729 | 10.6983 |
+| {1,2} | 4.6829 | 6.3024 | 10.5299 |
+| native {1..6} | 4.5122 | 5.7828 | 9.2609 |
+
+The ordering is **monotone in the shell count** at every time. **The question's premise is confirmed: {1} really is the
+Schrodinger optimum, and what AT cannot do is use it** - the substrate's spectrum is the record from which the free
+room **51**, the mode table and the 42/53 decomposition were derived. **The fold is the signature of the substrate the
+theory actually has.**
+
+**Two defects in the audit's own first version are recorded.** (1) The trace comparison used **exact `double`
+equality**; the record stores the rounded integer **1152** while the computed symbol sum lands on
+**1151.9999999999998**, so a **match was reported as a mismatch** - the repository's rule-1 trap in miniature - and
+the comparison now carries a **1e-6** tolerance, with the same helper serving the census and the table. (2) The
+table's trace cell was fed the **mask** rather than the trace (**1, 3, 63** instead of **192, 384, 1152**), from a
+helper whose parameter was renamed but whose call sites were not; the cells now go through `TraceMatchesTheRecord`,
+so **the table and the census cannot disagree by construction**.
+
+**Status.** COMPLETE. Tests `Y_QM_007_Tests` **8/8**. Core `AT.Core/ResearchXH/GeneratorSelectionAudit.cs`; doc
+`Docs/ResearchY/QM_ManyBody/ResearchY-QM_007.md`. Registry: added as **Boundary** (`generator-selection-audit`),
+reclassifying nothing. **No group-G count moves**, verified by re-running the G_027, G_033 and G_035 scanners after
+the new core was added.
+
 ## ResearchY-QM_006 - Schrodinger Propagator Audit (COMPLETE, PARTIAL - {1} is analogous, the theory is not)
 
 **Question.** Can the **nearest-neighbour generator {1}** produce **`psi(t) = exp(-iHt)psi(0)`** with **Schrodinger-like
