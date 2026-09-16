@@ -5394,3 +5394,56 @@ eps) and the table brought it to **19s**.
 consistency counts 36 without-substrate / **67** registry / **53** survives / **53** minimal time sector. Core:
 `AT.Core/ResearchXH/PhysicalFlowAudit.cs`; suite `AT.Tests/ResearchY/G_GravitySource/Y_G_066_Tests.cs`; doc
 `Docs/ResearchY/G_GravitySource/ResearchY-G_066.md`.
+
+### ResearchY-G_067 - Flow Selection Audit (REFUTED)
+
+**Question.** Can any **existing AT quantity** select between the **dissipative** and the **unitary** flow? Candidates:
+clock, acceleration, field, occupancy conservation, phase sector, free room. Goal: the first principle that selects a
+flow.
+
+**1. The candidates, measured over 4000 steps from the phase-bearing state.**
+
+| id | quantity | start | dissipative | unitary | class |
+|---|---|---|---|---|---|
+| Q1 | clock contrast | 9.485E-002 | 3.754E-002 | 9.829E-002 | changes under both |
+| Q2 | acceleration contrast | 1.399E-001 | 1.165E-002 | 1.450E-001 | changes under both |
+| Q3 | field contrast | 2.745E-002 | 2.370E-003 | 2.891E-002 | changes under both |
+| Q4 | occupancy total | 9.600E+001 | 9.600E+001 | 9.600E+001 | invariant under both |
+| Q5 | phase norm | 1.048E+000 | 2.648E-001 | 7.143E-001 | changes under both |
+| Q6 | free room | 5.100E+001 | 5.100E+001 | 5.100E+001 | invariant under both |
+| Q7 | *control* deviation | 1.048E+000 | 3.992E-001 | 1.048E+000 | **SELECTS** |
+| Q8 | *control* entropy | 9.987E-001 | 9.998E-001 | 9.987E-001 | changes under both |
+
+**A quantity can only select three ways:** invariant under both (cannot select), changing under both (no preference), or
+**invariant under exactly one**. **Among the question's six candidates, none selects.** The free room's invariance is a
+property of the **substrate** (`96 - 45 = 51`), which no state and no flow can move.
+
+**2. The requirement test.** On the evolved states the worst law residual is **5.122E-014** (dissipative) and
+**5.773E-014** (unitary): **every law holds under both** because the laws are **identities in rho**, so the theory's own
+content is **blind to the replacement**.
+
+**3. A correction to the audit's own expectation, and a refinement of G_065.** The difference's multiplier is **complex**,
+so every step rotates visible content into hidden and **both** flows create phase content from the phase-free state:
+
+| steps | dissipative phase norm | unitary phase norm |
+|---|---|---|
+| 0 | 9.246E-015 | 9.246E-015 |
+| 1000 | 3.033E-001 | 8.505E-001 |
+| 4000 | **3.118E-001** (peak) | 7.560E-001 |
+| 20000 | 1.863E-001 | 7.492E-001 |
+| 50000 | **3.672E-002** | ~0.75 |
+
+The **attractor remains the uniform state** so G_065's conclusion stands, but **its phrasing must not be read as
+phase-freeness being preserved**. **Transience versus permanence** is what separates the flows.
+
+**4. Two near-misses, neither answering the question.** The selector **pattern** appears only in the audit's own control
+(the deviation is fixed by the unitary flow, so **norm conservation would select**), and the **entropy** is monotone only
+under the dissipative flow (**0.99874 -> 0.99982** against unmoved) - **AT states neither requirement**.
+
+**5. What would select is a MONOTONICITY requirement about the state**, not a conservation requirement derived from the
+laws. **The selection is available but unmade.**
+
+**Status:** COMPLETE. Tests `Y_G_067_Tests` **7/7**. Registry: added as **Refuted** (`flow-selection-audit`); group-G
+consistency counts 37 without-substrate / **68** registry / **54** survives / **54** minimal time sector. Core:
+`AT.Core/ResearchXH/FlowSelectionAudit.cs`; suite `AT.Tests/ResearchY/G_GravitySource/Y_G_067_Tests.cs`; doc
+`Docs/ResearchY/G_GravitySource/ResearchY-G_067.md`.

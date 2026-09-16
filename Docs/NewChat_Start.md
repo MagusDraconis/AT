@@ -2902,6 +2902,40 @@ preferred sector. The verdict is computed with a **live branch in every directio
 No group-G registry claim, so claim counts are unchanged. Registry: added as **Boundary** (`sector-weight-audit`),
 reclassifying nothing. Tests: `Y_E_015_Tests` 7/7; group E **103/103**.
 
+## ResearchY-G_067 - Flow Selection Audit (COMPLETE, REFUTED - nothing in AT selects a flow)
+
+**Question.** Can any **existing AT quantity** select between the **dissipative** and the **unitary** flows? Candidates:
+clock law, acceleration law, field law, occupancy conservation, phase sector, free room. Measure whether any quantity
+**changes under admissible flow replacement**. Goal: the **first principle that selects a physical flow**.
+
+**Answer: REFUTED - no existing AT quantity selects.**
+
+1. **A quantity can only select three ways:** invariant under both (cannot select), changing under both (distinguishes
+   but states no preference), or **invariant under exactly one** - the only pattern a requirement could turn into a
+   selection. Measured, the six candidates give: clock **9.485E-002 -> 3.754E-002 / 9.829E-002**; acceleration
+   **1.399E-001 -> 1.165E-002 / 1.450E-001**; field **2.745E-002 -> 2.370E-003 / 2.891E-002**; occupancy total
+   **96 / 96**; phase norm **1.048E+000 -> 2.648E-001 / 7.143E-001**; free room **51 / 51**. **None selects.**
+2. **The free room cannot select anything:** it is `96 - 45 = 51` for every state and every flow - a property of the
+   **spectrum**, not of the state.
+3. **The requirement test:** on the evolved states the worst law residual is **5.122E-014** (dissipative) and
+   **5.773E-014** (unitary) - **every law holds under both**, because the laws are **identities in rho**. The theory's own
+   content is blind to the replacement.
+4. **A correction and a refinement.** The difference's multiplier is **complex**, so **both** flows create phase content
+   from the phase-free state: the phase norm rises **9.246E-015 -> 3.033E-001 (1000 steps) -> a peak near 3.118E-001
+   (4000)**, decaying to **1.863E-001 (20000)** and **3.672E-002 (50000)**. The **attractor remains the uniform state**
+   (G_065 stands) but **its phrasing must not be read as phase-freeness being preserved**; the unitary flow holds
+   **~0.75** indefinitely - **transience versus permanence**.
+5. **Two near-misses, neither answering the question:** the selector **pattern** appears only in the audit's control
+   (the deviation is fixed by the unitary flow, so **norm conservation** would select), and the **entropy** is monotone
+   under the dissipative flow only (**0.99874 -> 0.99982** vs unmoved) - and AT states neither requirement.
+6. **What would select is a MONOTONICITY requirement about the state**, not a conservation requirement derived from the
+   laws. **The selection is available but unmade.**
+
+**Status.** COMPLETE. Tests `Y_G_067_Tests` **7/7**. Core `AT.Core/ResearchXH/FlowSelectionAudit.cs`; doc
+`Docs/ResearchY/G_GravitySource/ResearchY-G_067.md`. Registry: added as **Refuted** (`flow-selection-audit`); group-G
+consistency counts 37/**68** registry/**54** survives/**54** minimal time sector. **No reclassification**, one phrasing
+refined.
+
 ## ResearchY-G_066 - Physical Flow Audit (COMPLETE, REFUTED - phase-freeness belongs to dissipation, not to AT)
 
 **Question.** Which **update rule is physically privileged**? Compare the **forward difference**, **backward difference**,

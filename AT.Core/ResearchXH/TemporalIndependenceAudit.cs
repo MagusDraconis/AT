@@ -577,6 +577,13 @@ public static class TemporalIndependenceAudit
             + "and the occupancy, so the metric content is the clock alone. NOT symbol-detectable: the suite names no B, "
             + "g_rr or GammaOf — its vocabulary is multipliers, ratios and clocks",
             ScanDetectsIt: false),
+        // ── G_067: can any AT quantity select a flow? ──
+        new SectorClaim("Y_G_067", "Flow Selection", MetricRequirement.ClockOnly,
+            "it evaluates eight quantities - the clock, acceleration and field contrasts among them - on the states "
+            + "evolved by two admissible flows, and measures the law residuals on those evolved states, so the metric "
+            + "content is the clock alone. NOT symbol-detectable: the suite names no B, g_rr or GammaOf — its "
+            + "vocabulary is contrasts, ratios and clocks",
+            ScanDetectsIt: false),
     };
 
     // ── The computed classification summaries ───────────────────────────────
