@@ -64,15 +64,10 @@ public static class PhaseEvolutionAudit
     // ===================== 1. THE CHANNEL ALGEBRA (EXACT) =====================
 
     /// <summary>Memoised: the step is called tens of thousands of times and the basis never changes.</summary>
-    private static readonly Dictionary<int, double[][]> BasisCache = new();
+    private static readonly System.Collections.Concurrent.ConcurrentDictionary<int, double[][]> BasisCache = new();
     public static double[][] Basis(int channel)
     {
-        if (!BasisCache.TryGetValue(channel, out var b))
-        {
-            b = KernelStructureAudit.ChannelBasis(channel);
-            BasisCache[channel] = b;
-        }
-        return b;
+        return BasisCache.GetOrAdd(channel, KernelStructureAudit.ChannelBasis);
     }
 
     public static int[] Channels() => Enumerable.Range(1, Cells / 2).ToArray();
@@ -89,14 +84,11 @@ public static class PhaseEvolutionAudit
     /// Memoised: the multiplier is a pure function of (update, channel, eps), and the exact flow and the unitary form each
     /// evaluate a complex exponential per channel per step otherwise - which is where a 20000-step scan spent its time.
     /// </summary>
-    private static readonly Dictionary<(string, int, double), System.Numerics.Complex> MultiplierCache = new();
+    private static readonly System.Collections.Concurrent.ConcurrentDictionary<(string, int, double), System.Numerics.Complex> MultiplierCache = new();
 
     public static System.Numerics.Complex Multiplier(string update, int c, double eps)
     {
-        if (MultiplierCache.TryGetValue((update, c, eps), out var cached)) return cached;
-        var built = MultiplierUncached(update, c, eps);
-        MultiplierCache[(update, c, eps)] = built;
-        return built;
+        return MultiplierCache.GetOrAdd((update, c, eps), key => MultiplierUncached(key.Item1, key.Item2, key.Item3));
     }
 
     private static System.Numerics.Complex MultiplierUncached(string update, int c, double eps) => update switch

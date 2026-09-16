@@ -76,16 +76,13 @@ public static class PhysicalFlowAudit
     // ===================== 1. THE MEASURES =====================
 
     /// <summary>Memoised by horizon: each table runs two full orbits per form, and the suite asks for it repeatedly.</summary>
-    private static readonly Dictionary<int, (string Flow, string Kind, double MinCellCanonical, double MinCellPhaseBearing,
+    private static readonly System.Collections.Concurrent.ConcurrentDictionary<int, (string Flow, string Kind, double MinCellCanonical, double MinCellPhaseBearing,
         bool Admissible, double DeviationRatio, double PhaseRatio, double TotalResidual, string LongRun)[]> TableCache = new();
 
     public static (string Flow, string Kind, double MinCellCanonical, double MinCellPhaseBearing, bool Admissible,
                    double DeviationRatio, double PhaseRatio, double TotalResidual, string LongRun)[] MeasureTable(int steps = Horizon)
     {
-        if (TableCache.TryGetValue(steps, out var cached)) return cached;
-        var built = BuildMeasureTable(steps);
-        TableCache[steps] = built;
-        return built;
+        return TableCache.GetOrAdd(steps, BuildMeasureTable);
     }
 
     private static (string Flow, string Kind, double MinCellCanonical, double MinCellPhaseBearing, bool Admissible,

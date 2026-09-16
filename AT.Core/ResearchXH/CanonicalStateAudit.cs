@@ -124,7 +124,7 @@ public static class CanonicalStateAudit
     private static readonly Lazy<(string Name, double[] State)[]> RecipeCache = new(() => BuildRecipes());
     public static (string Name, double[] State)[] Recipes() => RecipeCache.Value;
 
-    private static readonly Dictionary<double[], double[][]> KernelCache = new(ReferenceEqualityComparer.Instance);
+    private static readonly System.Collections.Concurrent.ConcurrentDictionary<double[], double[][]> KernelCache = new(ReferenceEqualityComparer.Instance);
 
     private static (string Name, double[] State)[] BuildRecipes() => new[]
     {
@@ -163,10 +163,7 @@ public static class CanonicalStateAudit
     /// </summary>
     public static double[][] KernelBasisOf(double[] state)
     {
-        if (KernelCache.TryGetValue(state, out var cached)) return cached;
-        var built = BuildKernelBasisOf(state);
-        KernelCache[state] = built;
-        return built;
+        return KernelCache.GetOrAdd(state, BuildKernelBasisOf);
     }
 
     private static double[][] BuildKernelBasisOf(double[] state)

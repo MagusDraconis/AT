@@ -591,6 +591,13 @@ public static class TemporalIndependenceAudit
             + "redshift functions, so the metric content is the clock alone. NOT symbol-detectable: the suite names no B "
             + "or g_rr outside the two laws it contrasts — its vocabulary is potentials, redshifts and clocks",
             ScanDetectsIt: false),
+        // ── G_069: the compactness at which the decision becomes reachable ──
+        new SectorClaim("Y_G_069", "Neutron Star Decision", MetricRequirement.ClockOnly,
+            "it maps the AT-GR redshift separation and its three uncertainty models across a grid of compact objects, "
+            + "all read through the clock law's redshift and the compactness x = -GM/(Rc^2), so the metric content is "
+            + "the clock alone. NOT symbol-detectable: the suite names no B, g_rr or GammaOf — its vocabulary is "
+            + "compactness, separations and clocks",
+            ScanDetectsIt: false),
     };
 
     // ── The computed classification summaries ───────────────────────────────

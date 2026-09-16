@@ -2902,6 +2902,34 @@ preferred sector. The verdict is computed with a **live branch in every directio
 No group-G registry claim, so claim counts are unchanged. Registry: added as **Boundary** (`sector-weight-audit`),
 reclassifying nothing. Tests: `Y_E_015_Tests` 7/7; group E **103/103**.
 
+## ResearchY-G_069 - Neutron Star Decision Audit (COMPLETE, REACHABLE - at x = -0.121, and the compactness assumption matters as much)
+
+**Question.** For which **compactness** does AT differ from GR by **1σ, 3σ, 5σ** given **current and projected NICER-class
+uncertainties**? Measure **Δz** and **σ_obs**. Output **CURRENTLY UNDECIDED / REACHABLE / EXCLUDED**. Goal: the **first
+realistic observation** that decides AT vs GR.
+
+**Answer: REACHABLE - 3σ at x = −0.121, and the verdict leans on the compactness assumption too.**
+
+1. **Three uncertainty models are carried**, because the earlier audits used a third one and the choice matters: the
+   **single-theory** test (what *excluding* AT means), the **shared-x difference** (the tightest legitimate model, since
+   the slopes agree to first order and the compactness uncertainty **cancels**), and the **quadrature** form the earlier
+   audits used. At the earlier deciding object: **0.044812 / 0.040233 / 0.070118** → **1.05 / 1.17 / 0.67 σ** — a factor
+   of nearly two. The single-theory form **reproduces the earlier audit's 1.03σ**, so it is **modelling, not arithmetic**.
+2. **Slopes:** `dz_AT/dx = −1.1881`, `dz_GR/dx = −1.8848`, difference **−0.6968**.
+3. **Thresholds (projected: 5 % timing, best current NICER compactness 3.661 %):** **1σ at x = −0.046**, **3σ at
+   −0.121**, **5σ at −0.188**. The **current quadrature** form would need **x = −0.490** even for 3σ.
+4. **The map:** **3 CURRENTLY UNDECIDED** (0.4, 0.6, 0.8 M☉ at 12 km), **10 REACHABLE** (from 1.0 M☉ up), **NONE
+   EXCLUDED** (current significances reach only **1.96σ** at 2.2 M☉). **The first realistic observation is ~1.0 M☉ at
+   12 km (x = −0.123)** — inside the published NICER mass range.
+5. **The requirement is timing:** at 1.0 M☉, **1σ needs 15.81 %**, **3σ 5.11 %**, **5σ 2.86 %**; at 1.8 M☉, 3σ 11.77 %.
+6. **And the assumption is measured:** the 3σ threshold is **−0.121** with the best current compactness, **−0.118** with
+   perfect compactness knowledge, **−0.490** with a **generic** one — so **with a generic compactness the decision is
+   unreachable inside the physical range** (x = −0.5 is GR's horizon).
+
+**Status.** COMPLETE. Tests `Y_G_069_Tests` **7/7**. Core `AT.Core/ResearchXH/NeutronStarDecisionAudit.cs`; doc
+`Docs/ResearchY/G_GravitySource/ResearchY-G_069.md`. Registry: added as **Boundary** (`neutron-star-decision-audit`);
+group-G consistency counts 39/**70** registry/**56** survives/**56** minimal time sector. **No reclassification.**
+
 ## ResearchY-G_068 - Temporal Prediction Audit (COMPLETE, DERIVED - one line, second order, undecided)
 
 **Question.** What **unique measurable prediction** does the surviving AT time sector make that **differs from GR**?

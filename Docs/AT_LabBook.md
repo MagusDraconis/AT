@@ -5499,3 +5499,45 @@ while the series route holds to **6E-8 relative**.
 consistency counts 38 without-substrate / **69** registry / **55** survives / **55** minimal time sector. Core:
 `AT.Core/ResearchXH/TemporalPredictionAudit.cs`; suite `AT.Tests/ResearchY/G_GravitySource/Y_G_068_Tests.cs`; doc
 `Docs/ResearchY/G_GravitySource/ResearchY-G_068.md`.
+
+### ResearchY-G_069 - Neutron Star Decision Audit (REACHABLE)
+
+**Question.** For which **compactness** does AT differ from GR by 1σ, 3σ and 5σ, given current and projected NICER-class
+uncertainties? Goal: the first realistic observation that decides AT vs GR.
+
+**1. Three uncertainty models, because the choice matters.**
+
+| model | σ at x = −0.172317 | significance |
+|---|---|---|
+| **single theory** (what excluding AT means) | **0.044812** | **1.05σ** |
+| **shared-x difference** (slopes cancel) | **0.040233** | **1.17σ** |
+| **quadrature** (the earlier audits' form) | **0.070118** | **0.67σ** |
+
+The single-theory form **reproduces the earlier audit's 1.03σ**, so the spread is **modelling, not arithmetic**. Slopes:
+`dz_AT/dx = −1.1881`, `dz_GR/dx = −1.8848`, difference **−0.6968** → the compactness uncertainty **largely cancels** in
+the difference.
+
+**2. The separation map** (radius fixed, compactness from the mass): Δz from **2.730E-003** at x = −0.0492 to
+**1.659E-001** at x = −0.2708.
+
+**3. Thresholds (projected: 5 % timing, best current compactness 3.661 %).**
+
+| significance | threshold |
+|---|---|
+| **1σ** | **x = −0.046** |
+| **3σ** | **x = −0.121** |
+| **5σ** | **x = −0.188** |
+| current quadrature, 3σ | **x = −0.490** (beyond any object) |
+
+**4. The decision map:** **3 undecided** (0.4/0.6/0.8 M☉ at 12 km), **10 reachable** (from 1.0 M☉ up), **none excluded**
+(current significances ≤ **1.96σ**). **First reachable: ~1.0 M☉ at 12 km, x = −0.123.**
+
+**5. The requirement is timing:** at 1.0 M☉, **15.81 % / 5.11 % / 2.86 %** for 1σ/3σ/5σ; at 1.8 M☉, **11.77 %** for 3σ.
+
+**6. The assumption, measured:** the 3σ threshold is **−0.121** (best compactness), **−0.118** (perfect), **−0.490**
+(**generic**) — so with a generic compactness the decision is **unreachable** inside the physical range.
+
+**Status:** COMPLETE. Tests `Y_G_069_Tests` **7/7**. Registry: added as **Boundary** (`neutron-star-decision-audit`);
+group-G consistency counts 39 without-substrate / **70** registry / **56** survives / **56** minimal time sector. Core:
+`AT.Core/ResearchXH/NeutronStarDecisionAudit.cs`; suite `AT.Tests/ResearchY/G_GravitySource/Y_G_069_Tests.cs`; doc
+`Docs/ResearchY/G_GravitySource/ResearchY-G_069.md`.
