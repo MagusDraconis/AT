@@ -5687,3 +5687,57 @@ after the new core was added (16/16 passing).
 **Status.** COMPLETE. Tests `Y_QM_001_Tests` **8/8**. Core `AT.Core/ResearchXH/ManyBodyCorrespondenceAudit.cs`; doc
 `Docs/ResearchY/QM_ManyBody/ResearchY-QM_001.md`. Registry: added as **Partial** (`many-body-correspondence-audit`).
 
+### ResearchY-QM_002 - Unitary Correspondence Audit (PARTIAL)
+
+**Question.** Can any AT flow reproduce unitary Schrodinger evolution on the occupied mode sector? Compare the unitary
+Cayley flow, the centred difference flow and the dissipative flow, measuring norm conservation, phase evolution and
+mode occupation.
+
+**Answer.** **PARTIAL - and the reason is a TRADE-OFF rather than a defect.** Schrodinger evolution needs **two** things:
+a norm conserved at every step, and a phase **linear** in the mode momentum. **Of the four flows carried, 1 is unitary
+and 1 has the clean dispersion - and they are different flows, so no flow has both.**
+
+| measure | verdict | basis |
+|---|---|---|
+| **norm conservation** | **ANALOGOUS** | Cayley `|m| = 1` on all 48 channels at every ε, worst deviation **2.220E-016** |
+| **mode occupation** | **ANALOGOUS** | circulant, hence diagonal; drift **< 1E-12** under the unitary flow - **equivalent to unitarity** |
+| **phase evolution** | **REFUTED** | the symbol is **sin δ**, not δ: the zone edge is stationary and **21 of 42** occupied modes are past the fold |
+
+**The other flows:** centred amplifies (**4.988E-003**) and drifts (**4.98E-007**/step); the forward difference
+dissipates (**2.000E-001**); the **exact flow** dissipates (**1.813E-001**) but has `arg m = ε sin δ` **exactly** - it is
+the flow with the clean dispersion.
+
+**The three independent deviations of the unitary flow** (channel 24, ε = 1E-3):
+
+| source | magnitude | ε-order | removable by smaller steps |
+|---|---|---|---|
+| **Cayley generator convention** | **1.999999** (→ 2) | none | **NO** |
+| **time discretisation** | **3.333331E-007** | **2** (coefficient 1/3) | yes |
+| **lattice symbol sin δ vs δ** | **0.363380** = 1 − 2/π | none | **NO** |
+
+**The factor two is a finding about the flow's own definition:** `(1 + iεs)/(1 − iεs) = exp(2i arctan(εs))`, so the
+Cayley update **unitarises twice the skew generator** the other flows advance — its phase advance is `2ε sin δ` against
+their `ε sin δ`. Since **G_066 and G_067 compared flows at equal ε**, that factor is part of what those comparisons
+measured; it is now on the record as a **convention with a measurable consequence**.
+
+**The step ladder separates the removable from the irreducible:** the discretisation gap falls by **100 per decade**
+(order **ε²**) while the lattice gap sits at **1 − 2/π = 0.363380** and **does not move**.
+
+**The fold answers the question as asked:** `sin δ` peaks at **channel 24** and returns to **2E-019** at the **zone
+edge**, so the highest mode never advances; **23** adjacent pairs advance in the continuum's order against **24 in
+reverse**; and **21 of the 42 occupied modes lie at or above the fold** — **half the populated sector**, untouched by
+any choice of step size.
+
+**The mode count hides the rest:** the mode occupations are constants while the **amplitude/phase split is not
+conserved even by the unitary flow** (phase **9.246E-015 → 0.6392**, amplitude **1.005011 → 0.775567** over 2000
+steps). A **real** Hamiltonian could not do that, so the generator is Hermitian and **not real** in that basis.
+
+**Two of the audit's own first assertions were wrong and are recorded:** the dispersion table's first version compared
+the Cayley advance against the symbol **without dividing out the flow's own generator convention**, reporting a 100 %
+deviation at every channel and hiding the ε² behaviour underneath; and the discretisation order's first version had its
+log-ratio **inverted** and returned **−2.0**.
+
+**Status.** COMPLETE. Tests `Y_QM_002_Tests` **8/8**. Core `AT.Core/ResearchXH/UnitaryCorrespondenceAudit.cs`; doc
+`Docs/ResearchY/QM_ManyBody/ResearchY-QM_002.md`. Registry: added as **Partial** (`unitary-correspondence-audit`).
+**No group-G count moves**, verified by re-running the G_027, G_033 and G_035 scanners after the new core was added.
+
