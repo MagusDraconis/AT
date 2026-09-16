@@ -563,6 +563,13 @@ public static class TemporalIndependenceAudit
             + "metric content is the clock alone. NOT symbol-detectable: the suite names no B, g_rr or GammaOf — its "
             + "vocabulary is formulas, seeds and clocks",
             ScanDetectsIt: false),
+        // ── G_065: is phase-freeness required, or chosen? ──
+        new SectorClaim("Y_G_065", "Phase-Free Principle", MetricRequirement.ClockOnly,
+            "it measures seven AT laws on five states - the clock law and its dependants explicitly, with every residual "
+            + "taken through the clock rate rho^(1/d) - and runs both AT-native flows to test the density constraint and "
+            + "the attractor, so the metric content is the clock alone. NOT symbol-detectable: the suite names no B, g_rr "
+            + "or GammaOf — its vocabulary is laws, residuals and clocks",
+            ScanDetectsIt: false),
     };
 
     // ── The computed classification summaries ───────────────────────────────

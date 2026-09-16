@@ -5292,3 +5292,59 @@ interactions, the laws - plus the levels, the distance classes, the bound of 49 
 group-G consistency counts 34 without-substrate / **65** registry / **51** survives / **51** minimal time sector. Core:
 `AT.Core/ResearchXH/CanonicalRecipeAudit.cs`; suite `AT.Tests/ResearchY/G_GravitySource/Y_G_064_Tests.cs`; doc
 `Docs/ResearchY/G_GravitySource/ResearchY-G_064.md`.
+
+### ResearchY-G_065 - Phase-Free Principle Audit (BOUNDARY)
+
+**Question.** Is phase-freeness a **derived requirement** or a **preferred convention**? Test the phase-free canonical
+state against phase-bearing alternatives; compare clock, acceleration, field, kernel, flux; measure whether **any AT law
+fails** when the phase content is non-zero.
+
+**1. Seven laws on five states.** L1 clock `rho = rate^d`; L2 metric `g00 = -rate^2`; L3 potential (cross-route); L4
+source `a = -grad A` by a second route; L5 field `F = h(rho) Delta rho`; L6 simplex; L7 flux.
+
+| state | phase-free | phase norm | hidden occupied | worst law residual |
+|---|---|---|---|---|
+| canonical | **True** | 9.246E-015 | 0 | **4.441E-016** |
+| alternative seed | False | 1.048E+000 | **42** | 4.394E-016 |
+| shifted w' | False | 2.285E-001 | 1 | 4.411E-016 |
+| ramp | False | 3.657E-001 | 2 | 8.882E-016 |
+| all modes | False | 1.166E+000 | **53** | 4.396E-016 |
+
+**No law fails for any state and no law separates the phase-free from the phase-bearing ones** - the worst residual
+anywhere is **8.882E-016**. The laws are **identities in the occupancy**, so they cannot fail for a positive state; the
+audit measures them anyway.
+
+**2. Three of the seven laws were mis-stated at first, and the measurement caught all three** - each gave **1E-2 for
+*every* state**, including the phase-free one, which is the signature of a defect in the law's statement:
+
+- the **potential** law subtracted one term too many;
+- the **source** law compared a **clamped** helper against a **periodic** difference (charging a seam convention to the
+  law);
+- the **field** law took the **magnitude** of a **signed** quantity.
+
+The **linearised** source law (`Delta rho / rho`) is reported **separately**: the exact log form is **0** everywhere, while
+the linearised residual runs **1.441E-002** (canonical) to **5.980E-001** (all modes) - it measures **roughness**.
+
+**3. The one dynamical law** - a density must stay a density - was measured by **running both AT-native flows**: every
+state survives 4000 steps (minimum cell **2.223E-001** at the worst), so it does not separate them either, and the
+phase-free state is **not privileged**.
+
+**4. The main result: the flow erases phase content.**
+
+| steps | phase norm | hidden occupied |
+|---|---|---|
+| 0 | **1.048E+000** | **42** |
+| 1000 | 4.937E-001 | 43 |
+| 5000 | 2.445E-001 | 43 |
+| **20000** | **1.610E-001** | **18** |
+
+**The phase-free state is the attractor of the flow AT admits**, and it is already there.
+
+**5. The interface is not phase-freeness' doing.** Kernel-as-union-of-modes and hidden-iff-empty hold for **every
+one-seed state**, phase-free or not, and fail **only** where the row space **saturates** the distance-class bound. What
+breaks the interface is **saturation**, not phase content.
+
+**Status:** COMPLETE. Tests `Y_G_065_Tests` **7/7**. Registry: added as **Boundary** (`phase-free-principle-audit`);
+group-G consistency counts 35 without-substrate / **66** registry / **52** survives / **52** minimal time sector. Core:
+`AT.Core/ResearchXH/PhaseFreePrincipleAudit.cs`; suite `AT.Tests/ResearchY/G_GravitySource/Y_G_065_Tests.cs`; doc
+`Docs/ResearchY/G_GravitySource/ResearchY-G_065.md`.

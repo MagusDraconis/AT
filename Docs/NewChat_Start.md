@@ -2902,6 +2902,37 @@ preferred sector. The verdict is computed with a **live branch in every directio
 No group-G registry claim, so claim counts are unchanged. Registry: added as **Boundary** (`sector-weight-audit`),
 reclassifying nothing. Tests: `Y_E_015_Tests` 7/7; group E **103/103**.
 
+## ResearchY-G_065 - Phase-Free Principle Audit (COMPLETE, BOUNDARY - no law needs it, the flow produces it)
+
+**Question.** Is phase-freeness a **derived requirement** or only a **preferred convention**? Test the phase-free
+canonical state against **phase-bearing alternatives**; compare the **clock**, the **acceleration**, the **field**, the
+**kernel** and the **flux**; measure whether **any AT law fails** when the phase content is non-zero.
+
+**Answer: BOUNDARY - no AT law fails, and phase-freeness is still not a mere convention: the dissipative flow erases
+phase content, so the phase-free configuration is its ATTRACTOR.**
+
+1. **Seven laws on five states.** L1 clock (`rho = rate^d`), L2 metric (`g00 = -rate^2`), L3 potential (cross-route), L4
+   source (`a = -grad A` by a second route), L5 field (`F = h(rho) Delta rho`), L6 simplex, L7 flux.
+2. **No law fails and no law separates the states:** the worst residual anywhere in the family is **8.882E-016**, and the
+   phase-free and phase-bearing states agree to that order. **The phase sector is invisible to the laws.**
+3. **Three of the seven laws were mis-stated at first and the measurement caught all three** - each gave **1E-2 for
+   *every* state** including the phase-free one: a term subtracted twice (potential), a **clamped** helper compared with a
+   **periodic** difference (source), and the **magnitude** of a **signed** quantity (field). The **linearised** source law
+   is reported separately as a **discretisation order** (1.441E-002 to 5.980E-001, measuring **roughness**).
+4. **The one dynamical law** - a density must stay a density - was measured by **running both AT-native flows**: every
+   state survives 4000 steps (minimum cell **2.223E-001** at the worst), and the phase-free state is **not even the most
+   robust**.
+5. **The main result is dynamical:** the dissipative flow **erases phase content** - from the alternative-seed state
+   (**1.048E+000**, 42 hidden directions) the phase norm falls to **4.937E-001** at 1000 steps and **1.610E-001** at
+   20000, hidden occupancy **42 -> 18**. **The phase-free state is the attractor and is already there.**
+6. **The interface is not phase-freeness' doing:** kernel-as-union-of-modes and hidden-iff-empty hold for **every
+   one-seed state** and fail **only** at distance-class **saturation**. What breaks the interface is saturation, not
+   phase content.
+
+**Status.** COMPLETE. Tests `Y_G_065_Tests` **7/7**. Core `AT.Core/ResearchXH/PhaseFreePrincipleAudit.cs`; doc
+`Docs/ResearchY/G_GravitySource/ResearchY-G_065.md`. Registry: added as **Boundary** (`phase-free-principle-audit`);
+group-G consistency counts 35/**66** registry/**52** survives/**52** minimal time sector. **No reclassification.**
+
 ## ResearchY-G_064 - Canonical Recipe Origin Audit (COMPLETE, DERIVED - pinned by phase-freeness)
 
 **Question.** **Why** these specific level weights? Test the **basis[0] choice**, the **level-weight formula**, the
