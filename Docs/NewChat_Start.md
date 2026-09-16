@@ -2902,6 +2902,56 @@ preferred sector. The verdict is computed with a **live branch in every directio
 No group-G registry claim, so claim counts are unchanged. Registry: added as **Boundary** (`sector-weight-audit`),
 reclassifying nothing. Tests: `Y_E_015_Tests` 7/7; group E **103/103**.
 
+## ResearchY-QM_003 - Dispersion Closure Audit (COMPLETE, BOUNDARY - the fold is the price of locality)
+
+**Question.** Can the lattice dispersion sin(δ) be replaced or derived into δ without introducing a **new primitive**?
+Compare the ring, D96³, the continuum limit and modified generators; measure arg(m), the group velocity and the
+zone-edge behaviour.
+
+**Answer.** **BOUNDARY** - the replacement **exists** and is **exact**, and it costs the one thing the difference
+primitive supplies. **LOCATED: the fold is the price of LOCALITY, not of discreteness**, and it is forced by the
+conjunction of **antisymmetry + locality + periodicity**.
+
+**The theorem, checked rather than cited.** A real **antisymmetric** operator on a periodic ring has an **odd** symbol,
+and oddness gives `f(π) = f(−π) = −f(π)`, so **`f(π) = 0` identically** — **the zone edge is stationary for every
+antisymmetric lattice generator**.
+
+| candidate | band | f(π) | linear window | fold channel | **reversed occupied** |
+|---|---|---|---|---|---|
+| nearest-neighbour (the AT difference) | 1 | **1.22E-016** | **1** | **24.00** | **21 of 42** |
+| 5-point antisymmetric (4th order) | 2 | **2.04E-016** | **6** | 27.46 | 18 of 42 |
+| 7-point antisymmetric (6th order) | 3 | **2.69E-016** | **11** | 29.58 | 16 of 42 |
+| **spectral (exact) derivative**, same 96 sites | 48 | **3.14E+000** | **48** | **none** | **0 of 42** |
+| D96³, per axis | 1 | **1.22E-016** | 1 | 24.00 | 21 of 42 |
+
+**A wider stencil buys linearity (1 → 6 → 11 channels) and only PUSHES the fold (24.00 → 27.46 → 29.58)**, with the
+zone edge still exactly stationary at every order — at the cost of **one more neighbour shell per order**, a new
+primitive.
+
+**The replacement that needs no new primitive:** the **spectral derivative on the same 96 cells** — symbol **exactly δ**,
+no fold, unit group velocity everywhere — available because the **Fourier basis is already AT's amplitude/phase
+decomposition** (G_052). It costs **locality: 96 non-zeros per row against 2**. **The fold and the locality are in exact
+opposition**, verified candidate by candidate.
+
+**Neither of the other two routes helps.**
+- **D96³** keeps the same per-axis symbol while the folded fraction of the zone grows as **`1 − (1/2)^d`**: **0.5000 in
+  1D against 0.8750 in 3D**. The cube does not fix the fold; it **multiplies** it.
+- **The continuum limit** leaves the fold at a **fixed zone fraction**: at a **fixed physical wavenumber** the mode
+  number rises with the cell count, so δ is constant and the deviation **does not move at all** (**9.968E-002** at 96,
+  192, 384 and 768 cells). It falls as **1/N^1.97** only at a fixed **mode index** — a **different state**, not the same
+  one measured better. Zone-edge deviation **1.000E+000**, fold at channel **N/4** at every resolution.
+
+**Three defects in the audit's own first version, recorded.** (1) The fold test bisected to machine zero and then
+asked whether the final velocity was negative — which **fails because `cos(π/2 + 1e-60)` evaluates to −0.0 and
+`−0.0 < 0.0` is false in IEEE**, so every local candidate was reported as having **no** fold and the locality claim
+came out **False**. (2) The fold position needed its own tolerance (`23.99999999` not `24.0`) because the symmetric
+finite difference of `sin` vanishes **exactly** at π/2. (3) The refinement table's first version cancelled the cell
+count and reported order **0** — that measurement is **kept**, because it is the correct and important one.
+
+**Status.** COMPLETE. Tests `Y_QM_003_Tests` **8/8**. Core `AT.Core/ResearchXH/DispersionClosureAudit.cs`; doc
+`Docs/ResearchY/QM_ManyBody/ResearchY-QM_003.md`. Registry: added as **Boundary** (`dispersion-closure-audit`).
+**No group-G count moves**, verified by re-running the G_027, G_033 and G_035 scanners after the new core was added.
+
 ## ResearchY-QM_002 - Unitary Correspondence Audit (COMPLETE, PARTIAL - unitary but not Schrodinger)
 
 **Question.** Can any AT flow reproduce unitary Schrodinger evolution on the occupied mode sector? Compare the unitary
