@@ -2902,6 +2902,43 @@ preferred sector. The verdict is computed with a **live branch in every directio
 No group-G registry claim, so claim counts are unchanged. Registry: added as **Boundary** (`sector-weight-audit`),
 reclassifying nothing. Tests: `Y_E_015_Tests` 7/7; group E **103/103**.
 
+## ResearchY-G_063 - Canonical State Audit (COMPLETE, BOUNDARY - one invariant out of thirteen)
+
+**Question.** **Why** does the canonical construction choose exactly the observed **weights**? Measure the level weights,
+the zero weights, the occupied modes, the kernel size; compare the canonical, full-weight and alternative-seed
+constructions; determine **which conclusions depend on the canonical recipe**. Goal: **separate state-construction
+effects from algebraic invariants**.
+
+**Answer: BOUNDARY - the separation is achieved, and it cuts the series' own conclusions in two: ONE algebraic invariant
+survives, TWELVE are state-construction effects.**
+
+1. **Nothing selects the weights.** The weight is uncorrelated with the level's **eigenvalue** (|r| = **3.846E-002**), the
+   degenerate levels' weights are **ordinary** members of the distribution, and the **multiplicity correlation (0.176) is
+   REFUSED AS EVIDENCE** - multiplicity takes only **two** distinct values across the 45 levels. The zeros are an artifact
+   of the modulus: `w` vanishes on levels **8, 31**, `w'` on **6, 29**, the ramp formula on **none**. G_046's own comment
+   gives the design reason: **the state must be generic**.
+2. **Thirteen conclusions were turned into predicates and evaluated on nine deterministic recipes.** The **one** survivor
+   is the **distance-class bound** (row space ≤ **49**, 9 of 9). The twelve effects include **phase-freeness** (**2** of 9),
+   **42 occupied** (**5**), **kernel 53** (**5**), **none of the eleven occupied** (**2**), and **hidden-iff-zero-occupancy**
+   (**8**).
+3. **Why the canonical state is phase-free:** every seed it takes is the **FIRST** entry of its level and the first entry is
+   **always a cosine**, while the **last** entry is **sometimes a sine** - the alternative-seed state acquires phase
+   content (**1.048E+000**). The **coefficient is irrelevant** (**1.076E-014** at twice the scale, still phase-free).
+4. **A measured refinement:** hidden-iff-zero-occupancy and the union-of-modes property fail for **exactly one** recipe -
+   the all-modes state - where the row space **saturates** the bound. So **G_061's central relation is a consequence of
+   staying below the bound**, not a separate law.
+5. **Substrate facts are reported separately:** levels **45**, free room **51**, distance classes **49**, the eleven **11**,
+   degenerate levels **2**, kernel floor **47**.
+6. **Two defects recorded:** the per-state kernel basis was first built from seeds `sin(a*seed + b*i)`, which span only
+   **TWO** dimensions (they equal sin(a·seed)cos(b·i) + cos(a·seed)sin(b·i)) - it returned **2** vectors where it needed
+   **53** and produced **51 false mismatches**; and **three conclusions were constants in disguise**.
+
+**Status.** COMPLETE. Tests `Y_G_063_Tests` **8/8**. Core `AT.Core/ResearchXH/CanonicalStateAudit.cs`; doc
+`Docs/ResearchY/G_GravitySource/ResearchY-G_063.md`. Registry: added as **Boundary** (`canonical-state-audit`); group-G
+consistency counts 33/**64** registry/**50** survives/**50** minimal time sector. **No reclassification**, but a
+qualification of G_059-G_062: those measured the canonical state correctly and their headline numbers are properties of
+the recipe.
+
 ## ResearchY-G_062 - Mode Occupation Audit (COMPLETE, DERIVED - the boundary is bookkeeping down to a floor of 47)
 
 **Question.** What **determines** which Fourier modes are **occupied** in the canonical state? Measure the occupied

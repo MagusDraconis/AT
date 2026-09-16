@@ -5175,3 +5175,63 @@ occupied by any state - false, and a defect in the **probe** rather than a findi
 consistency counts 32 without-substrate / **63** registry / **49** survives / **49** minimal time sector. Core:
 `AT.Core/ResearchXH/ModeOccupationAudit.cs`; suite `AT.Tests/ResearchY/G_GravitySource/Y_G_062_Tests.cs`; doc
 `Docs/ResearchY/G_GravitySource/ResearchY-G_062.md`.
+
+### ResearchY-G_063 - Canonical State Audit (BOUNDARY)
+
+**Question.** **Why** exactly these weights, and **which conclusions depend on the canonical recipe**? Goal: separate
+state-construction effects from algebraic invariants.
+
+**1. Nothing selects the weights.** |correlation| with the level's **eigenvalue** = **3.846E-002**; the degenerate levels'
+weights are **ordinary** members of the distribution (**True**); the **multiplicity correlation (0.176) is REFUSED AS
+EVIDENCE** because multiplicity takes only **two** distinct values across 45 levels - a coefficient on it describes those
+two points, not a trend. The zeros are an artifact of the modulus: `w` vanishes on levels **8, 31**, `w'` on **6, 29**,
+the ramp formula on **none**. G_046's own comment states the design reason: the state must be **generic**.
+
+**2. Nine recipes, measured.**
+
+| recipe | occupied | kernel | row rank | phase norm | of the eleven | empty channels |
+|---|---|---|---|---|---|---|
+| canonical (`basis[0]`, w) | 42 | **53** | 43 | **9.246E-015** | 0 | 6 |
+| alternative seed (`basis[^1]`, w) | 42 | 53 | 43 | **1.048E+000** | 2 | 6 |
+| full weight (all 1) | 44 | 51 | 45 | 7.402E-001 | 2 | 4 |
+| shifted w' | 42 | 53 | 43 | 3.487E-001 | 2 | 6 |
+| narrow w'' | 42 | 53 | 43 | 2.632E-001 | 2 | 6 |
+| ramp (no zeros) | 44 | 51 | 45 | 3.657E-001 | 2 | 4 |
+| alternating | 44 | 51 | 45 | 5.253E-001 | 2 | 4 |
+| **coefficient 0.30 (same weights)** | 42 | 53 | 43 | **1.076E-014** | 0 | 6 |
+| **all modes** | **95** | **47** | **49** | 1.166E+000 | **11** | 0 |
+
+**3. Why the canonical state is phase-free.** The **first** entry of every level is a **cosine** (**True**) and the
+**last** is sometimes a **sine** (**True**), so the alternative seed acquires phase content. The **coefficient** is
+irrelevant: **1.076E-014** at twice the scale. So G_059's phase-freeness is a property of the **seed choice**.
+
+**4. The separation: 13 conclusions as predicates over 9 recipes.**
+
+| id | holds | classification | conclusion |
+|---|---|---|---|
+| **C8** | **9 / 9** | **ALGEBRAIC INVARIANT** | row space ≤ **49 distance classes** |
+| C6 | 8 / 9 | recipe effect | at least 51 modes empty (free room) |
+| C9 | 8 / 9 | recipe effect | row rank = occupied modes + 1 |
+| C10 | 8 / 9 | recipe effect | **hidden iff zero occupancy** |
+| C12 | 8 / 9 | recipe effect | a channel of each degenerate level empty |
+| C13 | 8 / 9 | recipe effect | no mode split |
+| C2 / C3 / C5 / C7 | 5 / 9 | recipe effect | occupies 42 / kernel 53 / occupied = non-zero-weight levels − 1 / reachable rank 42 |
+| C11 | 3 / 9 | recipe effect | channels 14 and 19 empty in both quadratures |
+| C1 / C4 | 2 / 9 | recipe effect | the state is **phase-free** / **none** of the eleven occupied |
+
+**5. A measured refinement.** C10 and C13 fail for **exactly one** recipe - the all-modes state - where the row space
+**saturates** the distance-class bound and a mode can be part kernel and part row space. So **G_061's central relation is
+a consequence of staying below the bound**, not a separate law.
+
+**6. Substrate facts, reported separately** (rule 6: a predicate ignoring its state is a literal in disguise): levels
+**45**, free room **51**, distance classes **49**, the eleven **11**, degenerate levels **2**, kernel floor **47**.
+
+**7. Two defects recorded.** The per-state kernel basis was first built from seeds `sin(a·seed + b·i)`, which span only
+**two** dimensions (`sin(a·seed + b·i) = sin(a·seed)cos(b·i) + cos(a·seed)sin(b·i)`) - it returned **2** vectors where it
+needed **53** and produced **51 false mismatches** on the very state where the equivalence is known to hold. And **three
+conclusions were constants in disguise**, replaced before any classification was read.
+
+**Status:** COMPLETE. Tests `Y_G_063_Tests` **8/8**. Registry: added as **Boundary** (`canonical-state-audit`); group-G
+consistency counts 33 without-substrate / **64** registry / **50** survives / **50** minimal time sector. Core:
+`AT.Core/ResearchXH/CanonicalStateAudit.cs`; suite `AT.Tests/ResearchY/G_GravitySource/Y_G_063_Tests.cs`; doc
+`Docs/ResearchY/G_GravitySource/ResearchY-G_063.md`.

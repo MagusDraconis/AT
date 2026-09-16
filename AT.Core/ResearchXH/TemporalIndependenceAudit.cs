@@ -549,6 +549,13 @@ public static class TemporalIndependenceAudit
             + "the clock alone. NOT symbol-detectable: the suite names no B, g_rr or GammaOf — its vocabulary is "
             + "occupancy, weights and clocks",
             ScanDetectsIt: false),
+        // ── G_063: which conclusions depend on the canonical recipe? ──
+        new SectorClaim("Y_G_063", "Canonical State", MetricRequirement.ClockOnly,
+            "it evaluates thirteen conclusions as predicates over a nine-recipe family, measuring each state's occupied "
+            + "modes, kernel size, phase content and empty channels against that state's OWN kernel basis, so the metric "
+            + "content is the clock alone. NOT symbol-detectable: the suite names no B, g_rr or GammaOf — its "
+            + "vocabulary is weights, occupancies and clocks",
+            ScanDetectsIt: false),
     };
 
     // ── The computed classification summaries ───────────────────────────────
