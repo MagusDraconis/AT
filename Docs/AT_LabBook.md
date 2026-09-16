@@ -5906,3 +5906,55 @@ quartic coefficient is **2400× larger**, and the analytic k-regime tracks the m
 `Docs/ResearchY/QM_ManyBody/ResearchY-QM_005.md`. Registry: added as **Boundary** (`laplacian-dispersion-audit`).
 **No group-G count moves**, verified by re-running the G_027, G_033 and G_035 scanners after the new core was added.
 
+### ResearchY-QM_006 - Schrodinger Propagator Audit (PARTIAL)
+
+**Question.** Can the **nearest-neighbour generator {1}** produce **`psi(t) = exp(-iHt)psi(0)`** with **Schrodinger-like
+dispersion**? Compare the native {1..6}, {1} and the spectral derivative; measure ω(k), the group velocity, **packet
+spreading** and **norm conservation** against the reference of **Schrodinger packet evolution**.
+
+**Answer.** **PARTIAL at the level of the theory, and ANALOGOUS for the generator the question asks about.** The
+answer to the question as asked is **YES**: **{1} produces `exp(-iHt)psi(0)` with the lattice Schrodinger dispersion**,
+norm conservation **exact**, the packet **tracks the continuum spreading law to half a per cent**, and its distance
+from the exact Schrodinger solution stays inside **10 %** for **t up to 514.0**. **The theory is PARTIAL because it
+does not use {1}.**
+
+**The audit evolves a packet, not a table.** Every generator is **circulant ⇒ diagonal in the Fourier basis**, so the
+evolution is **exact** (no time-stepping error), and the reference is the **same packet** under ω = k² — every
+difference measured is a lattice effect.
+
+| | t = 5 | 10 | 20 | 40 | 80 |
+|---|---|---|---|---|---|
+| **reference (ω = k²)** | 4.1908 | 4.7170 | 6.4031 | 10.7702 | 19.8236 |
+| **analytic law** | 4.1908 | 4.7170 | 6.4031 | 10.7703 | 20.3961 |
+| **{1}** | 4.1879 | 4.7067 | 6.3729 | 10.6983 | 19.7511 |
+| native {1..6} | 4.1340 | 4.5122 | 5.7828 | 9.2609 | 17.1761 |
+| **spectral** | **4.0000** | **4.0000** | **4.0000** | 4.9323 (seam) | **4.0000** |
+
+The law reproduces the exact reference to **five digits** (and the ring's finite size makes it lag at t = 80).
+
+**Norm conservation:** **6.66E-016** (native), **6.66E-016** ({1}), **0.00E+000** (spectral) — because their symbols are
+**real**, hence Hermitian. The **dissipative control** is the only failure at **1.83E-001**, carried **so the test
+cannot pass vacuously**.
+
+**The measure that decides — the packet's width:** a Schrödinger propagator **spreads** (ω ∝ k²); an advection
+operator **drives** rigidly (ω ∝ k). The spectral candidate's centroid moves **20.000000 cells in t = 20** with width
+growth **1.000000** — pure translation.
+
+**The window (10 % distance, bisected):** **{1} 514.0**, native **23.0**, spectral **0.8**, control 2.9. Window ratio
+**22.39** vs quartic contamination ratio **25.00** — the same measurement from the dynamical side, **not identically**.
+
+**Distances at t = 20:** {1} **0.004149**, native **0.088008**, spectral **1.384233**.
+
+**Power laws recovered from the propagator side:** 2.0000 ({1}, native, reference) vs **1.0000** (spectral).
+
+**Three defects in the audit's own first version, all in the measure the audit rests on.** (1) The packet's RMS width
+was the parameter **over √2**, so it was compared against a law for a different width. (2) The analytic spreading law
+had a coefficient **four times too large** — and **the measured reference refused it by 41 %**; the law is now checked
+*against* the exact evolution. (3) The second moment was **not unwrapped** about the centroid, inflating the spread
+(**6.09 where the truth was 2.83**); the residual seam artefact at t = 40 is **reported, not hidden**. A fourth
+correction is textual: the window ratio **tracks** the contamination ratio rather than **being** it.
+
+**Status.** COMPLETE. Tests `Y_QM_006_Tests` **8/8**. Core `AT.Core/ResearchXH/SchrodingerPropagatorAudit.cs`; doc
+`Docs/ResearchY/QM_ManyBody/ResearchY-QM_006.md`. Registry: added as **Partial** (`schrodinger-propagator-audit`).
+**No group-G count moves**, verified by re-running the G_027, G_033 and G_035 scanners after the new core was added.
+
