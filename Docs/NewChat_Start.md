@@ -2902,6 +2902,70 @@ preferred sector. The verdict is computed with a **live branch in every directio
 No group-G registry claim, so claim counts are unchanged. Registry: added as **Boundary** (`sector-weight-audit`),
 reclassifying nothing. Tests: `Y_E_015_Tests` 7/7; group E **103/103**.
 
+## ResearchY-QM_005 - Laplacian Dispersion Audit (COMPLETE, BOUNDARY - the power law is forced, the fold is chosen)
+
+**Question.** Can the native **D96(1..6) Laplacian** produce a **Schrodinger-compatible dispersion in any physical
+regime**? Is the fold a consequence of the **six-shell geometry** or an **avoidable representation choice**?
+
+**Answer.** **BOUNDARY - the two halves separate cleanly.** The audit enumerates **all 63 non-empty subsets** of the six
+shells, and **every one of them is a Laplacian**, so every one is a candidate generator of the same pedigree.
+
+**Half one, DERIVED: the exponent is forced.** Every Laplacian's symbol is a sum of terms `2 − 2cos(rδ)`, each starting
+at `(rδ)²`, so the power law is **2.0000 for all 63 subsets** and the coefficient is **D = Σr²** for all 63 — verified
+as the small-k limit and as a limit identity (halving δ divides ω by four, to eight digits). **Schrodinger
+compatibility at long wavelength is a property of the operator's ORDER, not of the shell choice.**
+
+**Half two, BOUNDARY: the fold is not forced.** A single shell's group velocity is `2r sin(rδ)`, non-negative until
+**rδ passes π**, i.e. until **channel 48/r**:
+
+| shell | measured fold | closed form 48/r |
+|---|---|---|
+| **{1}** | **0 - never** | 48.0 |
+| **{2}** | **25** | 24.0 |
+| {3} | 17 | 16.0 |
+| {4} | 13 | 12.0 |
+| {5} | 10 | 9.6 |
+| {6} | 9 | 8.0 |
+
+Each is **exactly one channel past** the closed form. **The fold arrives with the second shell** and moves inward.
+
+**The census:** **62 of 63 fold, exactly one never does ({1})**; the **latest fold any subset achieves is channel 28
+({1,2})**; the native set folds at **channel 11** with 23 reversed channels. **No shell choice removes the fold from
+the band — the choice moves it.**
+
+**The cure and its price:**
+
+| subset | D | fold | window | occupied in window |
+|---|---|---|---|---|
+| NATIVE {1..6} | 91 | 11 | 3 | **3 of 42** |
+| {1,2} | 5 | 28 | 9 | 9 of 42 |
+| {2,3,4} | 29 | 15 | 4 | 4 of 42 |
+| **one shell {1}** | **1** | **none** | **17** | **16 of 42** |
+
+**Best coverage 16 of 42 at `{1}` — 5.33× the native 3 — at a coefficient of 1 against 91.** Since the cure changes
+the effective mass, it is a **different generator**, which is why avoiding the fold is **not free**.
+
+**The continuum expansion predicts the window:** `ω = Dk² − Ek⁴`, `E = Σr⁴/12` → native **D = 91, E = 189.58,
+k at 10 % = 0.2191** (window 3) against one-shell **D = 1, E = 0.08, k at 10 % = 1.0954** (window 17): the native
+quartic coefficient is **2400× larger**, and the analytic k-regime tracks the measured window **and its order**.
+
+**Three defects in the audit's own first version, recorded.**
+
+1. **The power-law fit was taken at δ = 1e-3 and 2e-3**, where the six-shell quartic term already contributes ~**9E-6**
+   — pushing the exponent outside a 1E-6 tolerance so the representation-independence test came out **False**. It is
+   now taken at 1E-4 and 2E-4.
+2. **The single-shell fold was predicted at 24/r instead of 48/r** — a factor two from conflating the two zone
+   normalisations — and **the measurement refused it**.
+3. **The dispersion was computed as `2 − 2cos(rδ)` directly, which loses digits to cancellation** in exactly the
+   small-δ regime the fit consumes, so the δ → 0 limit test failed. The **half-angle identity**
+   `2 − 2cos(rδ) = 4sin²(rδ/2)` is now used **and the error it removes is measured**: the direct form is exact to the
+   printed digits at δ = 1E-4…1E-6 and **0.01 % low at δ = 1E-7**. My first prediction of that error was **too
+   pessimistic by an order of magnitude**, and the test asserts the measured value.
+
+**Status.** COMPLETE. Tests `Y_QM_005_Tests` **8/8**. Core `AT.Core/ResearchXH/LaplacianDispersionAudit.cs`; doc
+`Docs/ResearchY/QM_ManyBody/ResearchY-QM_005.md`. Registry: added as **Boundary** (`laplacian-dispersion-audit`).
+**No group-G count moves**, verified by re-running the G_027, G_033 and G_035 scanners after the new core was added.
+
 ## ResearchY-QM_004 - Schrodinger Correspondence Audit (COMPLETE, PARTIAL - the candidate list has the wrong order)
 
 **Question.** Does AT's unitary flow reproduce the dispersion of the **Schrodinger equation** (reference **ω = k²**)?
