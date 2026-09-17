@@ -6177,3 +6177,75 @@ decorrelated where 0.981666 would have said the shape survives. **Rule 5 in mini
 reclassifying nothing. **No group-G count moves**, verified by re-running the G_027, G_033 and G_035 scanners after the
 new core was added.
 
+
+### ResearchY-QM_010 - Fingerprint Load Audit (COMPLETE, FINGERPRINT - numerical realisation, not physical content)
+
+**Question.** Which surviving AT claims **actually depend** on the native **{1..6}** spectrum? For the **clock law**,
+the **redshift law**, the **source law**, the **amplitude/phase split**, the **kernel theorem**, the **observability
+theorem**, the **phase accessibility** and the **flux quantisation**: remove the fingerprint-specific constants, compare
+**theorem content only**, and classify **UNCHANGED / NUMERICALLY_CHANGED / STRUCTURALLY_CHANGED / REFUTED** with a load
+label **CORE / FINGERPRINT / ARTEFACT**.
+
+**Answer.** **FINGERPRINT - THE SPECTRUM CARRIES NUMERICAL REALISATION AND NOT PHYSICAL CONTENT: 3 CORE +
+5 FINGERPRINT + 0 ARTEFACT**, and by theorem classification **3 UNCHANGED + 3 NUMERICALLY_CHANGED +
+2 STRUCTURALLY_CHANGED + 0 REFUTED**. **The zero REFUTED is the central positive result, not an absence of findings:**
+for every claim the fingerprint touches, the claim is still **true** on the replacement - it supplies the
+**realisation** of every claim it touches and the **truth** of none.
+
+**The rules come first and are functions of measured booleans and measured constants**, so no claim is classified by
+reading its own text:
+
+```
+UNCHANGED  the theorem holds on both and its constants are identical
+NUMERICALLY_CHANGED  it holds and its constants move
+STRUCTURALLY_CHANGED  it holds but the OBJECTS it names change identity
+REFUTED  it fails on the replacement
+CORE  nothing it quotes moves | FINGERPRINT  its constants or objects move
+ARTEFACT  its predicate is vacuous over the 63-subset family while its number moves
+```
+
+| claim | holds {1..6} | holds {1} | constants | objects | classification | load |
+|---|---|---|---|---|---|---|
+| **clock law** | yes | yes | no | no | **UNCHANGED** | **CORE** |
+| **redshift law** | yes | yes | no | no | **UNCHANGED** | **CORE** |
+| **flux quantisation** | yes | yes | no | no | **UNCHANGED** | **CORE** |
+| source law | yes | yes | yes | yes | **STRUCTURALLY_CHANGED** | FINGERPRINT |
+| amplitude/phase split | yes | yes | yes | yes | **STRUCTURALLY_CHANGED** | FINGERPRINT |
+| kernel theorem | yes | yes | yes | no | **NUMERICALLY_CHANGED** | FINGERPRINT |
+| observability theorem | yes | yes | yes | no | **NUMERICALLY_CHANGED** | FINGERPRINT |
+| phase accessibility | yes | yes | yes | no | **NUMERICALLY_CHANGED** | FINGERPRINT |
+
+**The CORE block is the physical content and it is substrate-free:** the clock law (`d = 3`, `rate(8) = 2`, with the
+redshift identity following from it), the redshift law (`z_AT = 2.123049E-006` always below `z_GR = 2.123054E-006`)
+and the **flux quantisation**. **The flux is the sharpest case:** its quantum **2π/96 = 0.065449846950** and its unit
+holonomy **2π = 6.283185307180** are functions of the ring's **length**, so **the same 96 cells would quantise the
+flux identically under any admissible generator** - the fingerprint is not merely unneeded there, it is
+**unreachable**, and the statement is **topological** rather than numerical.
+
+**The FINGERPRINT block is true claims with substrate-fixed realisations:** the source law and the amplitude/phase
+split are **STRUCTURALLY_CHANGED** (`1 + 42 + 53` against `1 + 46 + 49`), while the kernel theorem, the observability
+theorem and the phase accessibility are **NUMERICALLY_CHANGED** (`53` against `49`).
+
+**And the audit's own draft prediction was refuted.** I put the **observability theorem** in the CORE block, reasoning
+that its content quotes no substrate number. Its **predicate is indeed substrate-free** (zero silent directions on
+both, minimum clock response **6.531E-003** against **6.557E-003**, every response first order) - **but the kernel it
+quantifies over is not**, so the claim as stated is **NUMERICALLY_CHANGED** with load **FINGERPRINT**. Stripping the
+number leaves the predicate intact, which is why it is near-CORE; the measured label is the one reported.
+
+**No named claim is an artefact, and the audit says so rather than forcing the category.** The label is mechanical -
+a predicate **vacuous over the whole 63-subset family** carrying a number that **moves** - and three **controls**
+demonstrate it: **the free room** (51 against 47, **14** distinct values), **the trace** (1152 against 192, **6**),
+**the level count** (45 against 49, **14**). Each is true for every one of the 63 subsets **by definition** while its
+number is a pure function of the substrate choice: **a number dressed as content.** The label is not free - a
+predicate that **can** fail is not an artefact whatever its number does.
+
+**A performance defect in QM_008 was found and fixed.** `SeenDirections` was rebuilt inside `ModeShare` **once per
+Fourier mode** (**96 Gram-Schmidt rebuilds per candidate**). It is now memoised per substrate, together with the
+canonical state, the kernel basis and the observability reading. **The QM block fell from ~30 s to 10 s for 22 tests
+with no result changing.**
+
+**Status.** COMPLETE. Tests `Y_QM_010_Tests` **6/6**. Core `AT.Core/ResearchXH/FingerprintLoadAudit.cs`; doc
+`Docs/ResearchY/QM_ManyBody/ResearchY-QM_010.md`. Registry: added as **Boundary** (`fingerprint-load-audit`),
+reclassifying nothing. **No group-G count moves**, verified by re-running the G_027, G_033 and G_035 scanners after
+the new core was added.
+

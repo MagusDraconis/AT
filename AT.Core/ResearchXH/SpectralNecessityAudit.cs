@@ -147,8 +147,15 @@ public static class SpectralNecessityAudit
     /// perturbation per LEVEL, the deterministic weight ((k+1)*37 mod 23 - 11)/23, the first basis vector of the level,
     /// then the shift onto the simplex at 0.2 and the normalisation to the cell count.
     /// </summary>
+    /// <summary>The state, memoised: the rebuild is deterministic and several audits ask for it repeatedly.</summary>
+    private static readonly Dictionary<int, double[]> StateCache = new();
+
     public static double[] CanonicalState(int mask)
     {
+        lock (StateCache)
+        {
+            if (StateCache.TryGetValue(mask, out var cached)) return cached;
+        }
         var rho = new double[Cells];
         for (int i = 0; i < Cells; i++) rho[i] = 1.0;
         var levels = LevelsOf(mask);
@@ -165,6 +172,7 @@ public static class SpectralNecessityAudit
         for (int i = 0; i < Cells; i++) rho[i] = rho[i] - min + 0.2;
         double sum = rho.Sum();
         for (int i = 0; i < Cells; i++) rho[i] *= Cells / sum;
+        lock (StateCache) { StateCache[mask] = rho; }
         return rho;
     }
 
@@ -211,6 +219,23 @@ public static class SpectralNecessityAudit
                 2.0 * Enumerable.Range(0, Cells).Sum(j => A[i][j] * rho[j])).ToArray())
             .ToArray();
 
+    private static readonly Dictionary<int, List<double[]>> SeenCache = new();
+
+    /// <summary>
+    /// The independent directions a contraction reading can see, memoised per SUBSTRATE: ModeCensus asks for this
+    /// once per Fourier mode, so an unmemoised version rebuilds the Gram-Schmidt basis ninety-six times per candidate.
+    /// </summary>
+    public static List<double[]> SeenDirectionsFor(int mask)
+    {
+        lock (SeenCache)
+        {
+            if (SeenCache.TryGetValue(mask, out var cached)) return cached;
+        }
+        var basis = SeenDirections(CanonicalState(mask));
+        lock (SeenCache) { SeenCache[mask] = basis; }
+        return basis;
+    }
+
     /// <summary>The independent directions a contraction reading can see: the row space, plus the simplex direction.</summary>
     public static List<double[]> SeenDirections(double[] rho)
     {
@@ -239,7 +264,7 @@ public static class SpectralNecessityAudit
     /// </summary>
     public static (int ObservableRank, int Mean, int Amplitude, int Phase, int Kernel) SplitOf(int mask)
     {
-        var seen = SeenDirections(CanonicalState(mask));
+        var seen = SeenDirectionsFor(mask);
         int observable = seen.Count;
         int amplitude = observable - 1;                  // minus the mean direction
         int hidden = Cells - seen.Count;                 // the complement of the observed directions
@@ -259,7 +284,7 @@ public static class SpectralNecessityAudit
         for (int i = 0; i < Cells; i++)
             mode[i] = (sine ? Math.Sin(2.0 * Math.PI * channel * i / Cells) : Math.Cos(2.0 * Math.PI * channel * i / Cells)) / norm;
         double seen = 0.0;
-        foreach (var b in SeenDirections(CanonicalState(mask)))
+        foreach (var b in SeenDirectionsFor(mask))
         {
             double dot = mode.Zip(b, (a, c) => a * c).Sum();
             seen += dot * dot;
