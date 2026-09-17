@@ -5990,6 +5990,13 @@ Census: **1** matches the trace, **9** match the level count, **exactly 1** repr
 
 **And one required structure does not discriminate at all, which is reported rather than omitted.** The **42/53
 amplitude/phase split is |S|-INDEPENDENT** - it follows from the ring's reflection pairing and the canonical state's
+
+> **REFINEMENT (QM_008, 2026-09-17).** The `|S|`-independence claim above was read from a **mask-free helper**, which
+> returns the native answer by construction. QM_008 rebuilt the levels, the level basis, the canonical state and the
+> observable split from each candidate spectrum, and the split **MOVES**: **1 + 46 + 49** for `{1}`, **1 + 44 + 51**
+> for `{1,2}` and **1 + 42 + 53** natively. **QM_007's `|S|`-independence claim is REFUTED.** What survives is the
+> structural half - every candidate's kernel is still a union of Fourier modes, with zero split modes and an exact
+> partition. The rest of this section is unaffected. **SEE QM_008.**
 construction rather than from which neighbours are summed - so **a requirement that looks load-bearing here selects
 nothing**.
 
@@ -6373,6 +6380,13 @@ wrong** - I expected 1.05–1.2σ from G_071 and the measurement gives **1.9235�
 **generic** 1.4 M☉, 12 km object at its **worst-case correlated** error of 11.9048 % while this row is the **target**
 at the **quadrature** error of 9.0664 %. (3) **A bookkeeping error**: I compared the class census (counting classes)
 with the length of the FirstDecider list (returning only the first decider).
+
+> **REFINEMENT (G_072, 2026-09-17): THE OPERATION MATTERS.** The radius leverage above is about **equalising the two
+> marginals at a FIXED significance**. G_072 measured the complementary operation - **improving one capability alone
+> at the current budget** - and there the **timing** leads by **1.7200** (gain 1.9400 against the radius's 1.1292 and
+> the mass's 1.0211), because **at the recorded 20 % timing the required compactness is NaN**: no compactness
+> precision decides the question until the timing improves. **Both statements are measurements of different
+> questions, and neither supersedes the other.**
 
 **Honest limits.** The classes are **capability triples, not mission commitments**; the correlation is **zero**, so
 the numbers are **floors**; and class E assumes a resolved surface feature exists - the strongest route by two orders

@@ -13,6 +13,33 @@ of physics validation status.
 
 ---
 
+## Status of the two research frontiers closed in this sequence (2026-09-17)
+
+**The spectral fingerprint (group QM, QM_007 - QM_011).** The native six-shell spectrum is an **input** to the theory
+rather than a consequence of a law (QM_007: the recorded trace **1152 = 2 x 6 x 96** fixes the shell count and the
+**45 levels** fix which six - **exactly 1 of 63** subsets reproduces the record). It is **operative**: indispensable
+for the numbers AT quotes and dispensable for the relations it states (QM_008: **5 UNCHANGED + 5 BOUNDARY +
+2 REFUTED** of twelve conclusions). **No prediction fails without it** (QM_009), it carries **numerical realisation
+and not physical content** (QM_010: **3 CORE + 5 FINGERPRINT + 0 ARTEFACT**), and **no genuinely physical
+consequence requires it** (QM_011: **0 observables** require the native spectrum, out of a repo inventory of 11 that
+names no spectral object). **The one physical difference it does make is the dispersion fold's group-velocity
+reversal (23 channels against 0), and no observable reads the dispersion at high wavenumber.**
+
+**The time sector (group G, G_068 - G_074).** The theory's unique time prediction is the surface redshift
+**1 + z = exp(-x)** against GR's **(1 + 2x)^(-1/2)**, differing at **second order**. It is **decidable by one
+measurement on one object** (G_072): the redshift of **J0740+6620** to **14.1422 % (3 sigma)** or **7.5524 %
+(5 sigma)**, reached by a **next-generation timing** capability at **4.1374 sigma**, with a **direct surface-redshift
+measurement** to 1 % at **44.8377 sigma**. **The leverage is the timing, not the mass** (the published row and the
+radio-timing row both fail). And the clock law's **form** is decidable by the same programme (G_074): the logarithmic
+candidate shifts the redshift by **+4.784E-002**, a third of the AT-vs-GR separation of **1.256E-001**.
+
+**The two current open questions this leaves.** (1) **Does any observable read the lattice dispersion inside the
+band?** If one does, the fold's position becomes observable and QM_011's verdict becomes conditional - it is stated
+as conditional rather than as a theorem. (2) **Can the clock law's map be derived rather than assumed?** G_073 and
+G_074 both find that the form is fixed only up to the density-to-potential map, which the surviving audits take as an
+input: the metric's exponential and the rate's power are **the same statement**, so the open question is what fixes
+the map.
+
 ## Reclassified Solved Problems
 
 - **"Why three generations?" — REMOVED from open problems.**
@@ -3065,6 +3092,13 @@ wrong** - I expected 1.05–1.2σ from G_071 and the measurement gives **1.9235�
 at the **quadrature** error of 9.0664 %. (3) **A bookkeeping error**: I compared the class census (counting classes)
 with the length of the FirstDecider list (returning only the first decider).
 
+> **REFINEMENT (G_072, 2026-09-17): THE OPERATION MATTERS.** The radius leverage above is about **equalising the two
+> marginals at a FIXED significance**. G_072 measured the complementary operation - **improving one capability alone
+> at the current budget** - and there the **timing** leads by **1.7200** (gain 1.9400 against the radius's 1.1292 and
+> the mass's 1.0211), because **at the recorded 20 % timing the required compactness is NaN**: no compactness
+> precision decides the question until the timing improves. **Both statements are measurements of different
+> questions, and neither supersedes the other.**
+
 **Honest limits.** The classes are **capability triples, not mission commitments**; the correlation is **zero**, so
 the numbers are **floors**; and class E assumes a resolved surface feature exists - the strongest route by two orders
 of magnitude and the one with no current instrument behind it.
@@ -3389,6 +3423,13 @@ Census: **1** matches the trace, **9** match the level count, **exactly 1** repr
 
 **And one required structure does not discriminate at all, which is reported rather than omitted.** The **42/53
 amplitude/phase split is |S|-INDEPENDENT** - it follows from the ring's reflection pairing and the canonical state's
+
+> **REFINEMENT (QM_008, 2026-09-17).** The `|S|`-independence claim above was read from a **mask-free helper**, which
+> returns the native answer by construction. QM_008 rebuilt the levels, the level basis, the canonical state and the
+> observable split from each candidate spectrum, and the split **MOVES**: **1 + 46 + 49** for `{1}`, **1 + 44 + 51**
+> for `{1,2}` and **1 + 42 + 53** natively. **QM_007's `|S|`-independence claim is REFUTED.** What survives is the
+> structural half - every candidate's kernel is still a union of Fourier modes, with zero split modes and an exact
+> partition. The rest of this section is unaffected. **SEE QM_008.**
 construction rather than from which neighbours are summed - so **a requirement that looks load-bearing here selects
 nothing**.
 
