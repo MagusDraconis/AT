@@ -2902,6 +2902,88 @@ preferred sector. The verdict is computed with a **live branch in every directio
 No group-G registry claim, so claim counts are unchanged. Registry: added as **Boundary** (`sector-weight-audit`),
 reclassifying nothing. Tests: `Y_E_015_Tests` 7/7; group E **103/103**.
 
+## ResearchY-QM_008 - Spectral Necessity Audit (COMPLETE, BOUNDARY - indispensable for the numbers, dispensable for the structure)
+
+**Question.** Which AT conclusions **actually require** the native **{1..6}** spectrum? Recompute each using **{1}**,
+**{1,2}** and **{1..6}**, classify every QM/G result **UNCHANGED / BOUNDARY / REFUTED**, and determine whether the
+spectral fingerprint is **physically indispensable** or only **historically inherited**.
+
+**Answer.** **BOUNDARY - THE FINGERPRINT IS INDISPENSABLE FOR THE NUMBERS AND DISPENSABLE FOR THE STRUCTURE.** Of the
+**12** conclusions recomputed on all three generators, **5 are UNCHANGED**, **5 are BOUNDARY** and **2 are REFUTED** -
+so **5 of 12 do not mention the spectrum anywhere, and 7 require it** (5 for their value, 2 for their existence).
+
+**The recomputation had to rebuild the state, and that is the whole difficulty.** The canonical state is built by
+walking the **spectrum's levels**, so **replacing the generator replaces the state**. The audit rebuilds the levels,
+the level basis, the canonical state and the observable split from each candidate spectrum, and checks the rebuild
+twice: the rebuilt native state reproduces the **recorded state bitwise (0.000E+000)**, and the rebuilt native split
+lands on **all five** quantities other audits recorded independently (observable rank **43**, amplitude **42**, phase
+**53**, kernel **53**, contraction rank **42**).
+
+**The state is not perturbed, it is replaced:**
+
+| pair | max shift | L2 shift | correlation |
+|---|---|---|---|
+| {1} vs {1,2} | 0.370396 | 1.419953 | **0.221376** |
+| {1} vs {1..6} | 0.346756 | 1.274251 | **0.236824** |
+| {1,2} vs {1..6} | 0.420200 | 1.419054 | **0.189997** |
+
+The three canonical states are **nearly orthogonal**. **An assumption of my own draft - that the replacement would be
+a small perturbation, asserted at a correlation above 0.9 - is refuted by that measurement and recorded.**
+
+**The partition:**
+
+| conclusion | source | **{1}** | **{1,2}** | **{1..6}** | classification |
+|---|---|---|---|---|---|
+| the split is mean + amplitude + phase | QM_001 | 1+46+49 | 1+44+51 | 1+42+53 | **BOUNDARY** |
+| the observable rank is 43 | QM_001 | 47 | 45 | 43 | **BOUNDARY** |
+| ρ = \|Ψ\|² exactly | QM_001 | 2.2E-016 | 2.2E-016 | 2.2E-016 | UNCHANGED |
+| the state totals the cell count | QM_001 | 96.0000 | 96.0000 | 96.0000 | UNCHANGED |
+| the flow conserves the norm exactly | QM_002/QM_006 | 1.3E-015 | 8.9E-016 | 8.9E-016 | UNCHANGED |
+| the mode occupation is conserved | QM_002 | 8.9E-016 | 1.6E-015 | 1.3E-015 | UNCHANGED |
+| the power law is 2 | QM_004/QM_005 | 2.0000 | 2.0000 | 2.0000 | UNCHANGED |
+| the Schrödinger coefficient is Σr² | QM_004 | 1 | 5 | 91 | **BOUNDARY** |
+| the quartic coefficient is Σr⁴/12 | QM_005 | 0.08 | 1.42 | 189.58 | **BOUNDARY** |
+| the dispersion folds inside the band | QM_003/QM_005 | none | ch 28 | ch 11 | **REFUTED** |
+| the packet tracks Schrödinger for a window | QM_006/QM_007 | 514 | 153 | 23 | **BOUNDARY** |
+| the recorded fingerprint | QM_007 | 192/49/47/4.000 | 384/47/49/6.250 | 1152/45/51/15.837 | **REFUTED** |
+
+The **five structural rows are facts about the ring** (96 cells, a reflection pairing, a circulant structure, a **real**
+symbol) and every candidate has all four. The **numerical rows keep their form and lose their values** - what a
+dimensional constant does when its substrate moves.
+
+**One row's tolerance is not the comparison floor, and the audit says so rather than rounding it away:** the power-law
+fits give **1.999999996 / 1.999999988 / 1.999999910**, differing in the **eighth digit** because the quartic term
+contaminates each fit differently. That is the fit's own noise, so the row is compared at the fit's **1E-6** and the
+raw values are printed beside the table.
+
+**The split moves, which refutes a claim of QM_007.** QM_007 asserted the **42/53 split is `|S|`-independent** - read
+from a **mask-free helper**, which returns the native answer by construction - whereas the split is a property of the
+**state's kernel** and the state is spectrum-derived. The measurement: **1 + 46 + 49** for `{1}`, **1 + 44 + 51** for
+`{1,2}`, **1 + 42 + 53** natively. **What survives is the structural half:** every candidate's kernel is still a
+**union of Fourier modes** (**zero split modes**, exact partition, in all three) - so the classification *mechanism* is
+`|S|`-independent while the *membership* is not. A **refinement note** is attached to the QM_007 doc and registry entry.
+
+**REFUTED means "does not survive the replacement", NOT "false".** The fold **does not exist on `{1}` at all**
+(folds **none / ch 28 / ch 11**), so the fold is a property of the six-shell **choice** rather than of AT's flow; and
+the **recorded fingerprint** is not re-derivable from any other generator - QM_007's identification stated from the
+other side.
+
+**Six defects in the audit's own first version are recorded.** (1) **The leakage helper evolved the packet, not the
+mode** - `EvolveUnder` ignores its argument, so feeding it a single Fourier mode measured the packet's overlap with
+channel 5 (**1.9E+000**) and **would have reported occupation conservation REFUTED on all three candidates**; the mode
+is now evolved explicitly (**8.9E-016 to 1.6E-015**). (2) The power law was compared at **1E-9**, tighter than the
+fit's own precision, so the row classified BOUNDARY **on noise**. (3) My own draft assertion of a state correlation
+**above 0.9** is refuted by the measured **0.19 to 0.24**. (4) **A literal reached a verdict**: the quartic coefficient
+of `{1}` was asserted as QM_005's **printed** `0.08` where the value is **1/12 = 0.083333**, and the test failed - it
+is now asserted against the **closed form** recomputed in the test. (5) An **off-by-one** in the rebuilt split gave
+the native **42 / 41 / 54** against the recorded **43 / 42 / 53**; the correct reading is observable = seen,
+amplitude = seen − 1, phase = 96 − seen.
+
+**Status.** COMPLETE. Tests `Y_QM_008_Tests` **8/8**. Core `AT.Core/ResearchXH/SpectralNecessityAudit.cs`; doc
+`Docs/ResearchY/QM_ManyBody/ResearchY-QM_008.md`. Registry: added as **Boundary** (`spectral-necessity-audit`), with a
+refinement note on QM_007. **No group-G count moves**, verified by re-running the G_027, G_033 and G_035 scanners
+after the new core was added.
+
 ## ResearchY-QM_007 - Generator Selection Audit (COMPLETE, BOUNDARY - the constraint is an input, not a law)
 
 **Question.** Why does AT use the six-shell generator **{1..6}** instead of the Schrodinger-compatible **{1}**?

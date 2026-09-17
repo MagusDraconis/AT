@@ -53,6 +53,15 @@ No propagation requirement is involved anywhere in that selection.
 
 **And one requirement that looks like a constraint is not one:** the **42/53 amplitude/phase split is
 |S|-independent** - it follows from the ring's reflection pairing and the canonical state's construction - so it is
+
+> **REFINEMENT (QM_008, 2026-09-17).** The `|S|`-independence claim above was made by reading a **mask-free helper**,
+> which by construction returns the native answer, rather than by rebuilding the split on another generator. QM_008
+> rebuilt it - levels, level basis, canonical state and observable split, all from the candidate spectrum - and the
+> split **MOVES**: **1 + 46 + 49** for `{1}`, **1 + 44 + 51** for `{1,2}` and **1 + 42 + 53** natively, tied to the
+> recorded 43 / 42 / 53 / 53 through five independent quantities. **QM_007's `|S|`-independence claim is REFUTED.**
+> What survives of it is the structural half: every candidate's kernel is still a union of Fourier modes (zero split
+> modes in all three) and the partition is exact in all three. QM_008 supersedes this one row; the rest of QM_007 -
+> the trace identification, the 63-subset census and the five measures - is unaffected.
 the same for every shell set and **cannot select a generator**. The audit reports that rather than omitting it.
 
 ## 3. Nothing dynamical selects the native set
