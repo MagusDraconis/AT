@@ -612,6 +612,13 @@ public static class TemporalIndependenceAudit
             + "x = -GM/(Rc^2) - so the metric content is the clock alone. NOT symbol-detectable: the suite names no B, "
             + "g_rr or GammaOf — its vocabulary is marginals, correlations and clocks",
             ScanDetectsIt: false),
+        // ── G_072: the observer-facing program, capability class by capability class ──
+        new SectorClaim("Y_G_072", "Observational Program", MetricRequirement.ClockOnly,
+            "the program is stated in a target, a redshift precision and two marginals - every quantity is a g00 "
+            + "reading through the clock rate and the compactness x = -GM/(Rc^2) - so the metric content is the clock "
+            + "alone. NOT symbol-detectable: the suite names no B, g_rr or GammaOf — its vocabulary is capability "
+            + "classes, gains and decisions",
+            ScanDetectsIt: false),
     };
 
     // ── The computed classification summaries ───────────────────────────────

@@ -1,0 +1,72 @@
+## ResearchY-G_072 - Observational Program Audit (COMPLETE, DERIVED - one measurement on one object)
+
+**Note on the ID.** G_071 was already taken by the **Observational Roadmap Audit** (complete, commit `6893facb`). This
+audit was assigned the **next free ID, G_072**, and G_071 is preserved under its own.
+
+**Question.** **What exact future measurement can first decide AT vs GR using a neutron-star redshift?** Output
+**target**, **precision**, **instrument class** and **decision significance**, as a realistic observer-facing test
+plan, from G_068, G_069, G_070 and G_071.
+
+**Answer.** **DERIVED - THE PROGRAM IS ONE MEASUREMENT ON ONE OBJECT, AND THE FIRST REALISTIC DECIDER IS A
+NEXT-GENERATION TIMING MEASUREMENT.**
+
+| output | value |
+|---|---|
+| **Target** | **J0740+6620 (Riley 2021)**, M = 2.072 M☉, R = 12.39 km, **x = −0.24704** |
+| **Precision** | surface redshift / compactness to **14.1422 %** (3σ) and **7.5524 %** (5σ) |
+| **Instrument class** | **large-area X-ray timing**: 10 % timing with 1 % and 3 % marginals |
+| **Decision significance** | **4.1374σ**, rising to **44.8377σ** for a direct surface-redshift measurement to 1 % |
+
+**The target is the earlier audits' choice and is not re-opened: J0740+6620 is the most compact published object, so
+the second-order AT-vs-GR split is largest on it.** The correlation is taken at **ZERO - the conservative choice**, so
+every significance is a **floor**.
+
+| instrument class | timing | compactness | significance | reaches |
+|---|---|---|---|---|
+| A. current X-ray timing (NICER-class) | 20 % | 9.0664 % | **1.9235** | 1σ |
+| B. A plus radio pulsar timing | 20 % | 8.3339 % | **1.9641** | 1σ |
+| **C. next-generation X-ray timing** | **10 %** | **3.1623 %** | **4.1374** | **3σ** |
+| D. next-generation timing and spectroscopy | 5 % | 1.5811 % | **8.2749** | **5σ** |
+| **E. a direct surface-redshift measurement** | **1 %** | — | **44.8377** | **5σ** |
+
+**The precision the decision needs** reproduces G_070's recorded numbers from the decision side: **14.1422 % timing at
+3σ** and **7.5524 % at 5σ** - **and its third column is a null that matters more than the other two: the required
+compactness is NaN at the recorded 20 % timing, i.e. no compactness precision decides the question until the timing
+improves.** That is **G_071's "timing is step 1" recovered as a computation rather than quoted**.
+
+**And the leverage refuted the audit's own draft, which expected the radius.** Each capability improved **alone**:
+
+| capability | significance | gain |
+|---|---|---|
+| **timing alone to 1 %** | 3.7316 | **1.9400** |
+| mass alone to 0.1 % | 1.9641 | 1.0211 |
+| radius alone to 1.5 % | 2.1720 | 1.1292 |
+| everything together | 8.2749 | 4.3020 |
+
+**Timing leads the radius by a factor of 1.7200 and the mass is nearly useless alone** - and that is **G_071's finding
+recovered rather than contradicted**, because improving one capability at the current budget is a **timing** question
+while equalising the marginals **at a fixed significance** is the **radius** question. The two audits agree once the
+**operation** is named.
+
+**The plan in phases:** 1 (in hand) 1.9235σ, **no**; 2 (near term, radio-timing masses) 1.9641σ, **no - the mass is
+not what binds**; 3 (next generation, 10 % timing) **4.1374σ, 3σ**; 4 (with spectroscopy) **8.2749σ, 5σ**;
+5 (the redshift itself to 1 %) **44.8377σ, 5σ**. **The first two phases fail, and better masses do not buy the
+decision.**
+
+**Three defects in the audit's own first version.** (1) **The draft headline was refuted**: I claimed the decision
+"is not bought with timing" and that the radius carries the leverage. (2) **My expectation for the current row was
+wrong** - I expected 1.05–1.2σ from G_071 and the measurement gives **1.9235σ**, because G_071's 1.0534σ is the
+**generic** 1.4 M☉, 12 km object at its **worst-case correlated** error of 11.9048 % while this row is the **target**
+at the **quadrature** error of 9.0664 %. (3) **A bookkeeping error**: I compared the class census (counting classes)
+with the length of the FirstDecider list (returning only the first decider).
+
+**Honest limits.** The classes are **capability triples, not mission commitments**; the correlation is **zero**, so
+the numbers are **floors**; and class E assumes a resolved surface feature exists - the strongest route by two orders
+of magnitude and the one with no current instrument behind it.
+
+**Status.** COMPLETE. Tests `Y_G_072_Tests` **7/7**. Core `AT.Core/ResearchXH/ObservationalProgramAudit.cs`; doc
+`Docs/ResearchY/G_GravitySource/ResearchY-G_072.md`. Registry: added as **Derived** (`observational-program-audit`),
+reclassifying nothing. **Group-G count guards bumped and verified:** `Y_G_033` 41 → **42**, and `Y_G_035` 72 → **73**
+with survives 58 → **59** in **both** the registry census and the `MinimalTimeSector` view - the second of which the
+guard itself caught.
+
