@@ -6249,3 +6249,65 @@ with no result changing.**
 reclassifying nothing. **No group-G count moves**, verified by re-running the G_027, G_033 and G_035 scanners after
 the new core was added.
 
+
+### ResearchY-QM_011 - Fingerprint Justification Audit (COMPLETE, NONE - no physical consequence is native-specific)
+
+**Question.** **What surviving result requires the exact native spectrum rather than only its existence?** Compare the
+native **{1..6}** against the nearest-neighbour **{1}**, search **all** surviving claims, classify each
+**REQUIRES_NATIVE / REQUIRES_SPECTRUM_ONLY / INDEPENDENT**, and find the **first genuinely physical consequence** of
+the native fingerprint - **and if none exists, state that explicitly**.
+
+**Answer.** **NONE - AND THE AUDIT STATES IT EXPLICITLY: NO GENUINELY PHYSICAL CONSEQUENCE OF THE NATIVE FINGERPRINT
+EXISTS.** **7 REQUIRES_NATIVE + 2 REQUIRES_SPECTRUM_ONLY + 4 INDEPENDENT, and the count of claims that BOTH require
+the native spectrum AND carry an observable is 0.**
+
+**The classification is a rule with three measured inputs** - whether the predicate **fails on {1}**, whether the
+claim's own files **name eigen-spectral objects** (a code-only scan), and whether its symbol appears in the
+**repository's own observable inventory** - so nothing is classified by reading a claim's prose.
+
+| claim | holds {1..6} | holds {1} | native value | {1} value | need | observable |
+|---|---|---|---|---|---|---|
+| **the clock law ρ^(1/d)** | yes | yes | `d = 3`, `rate(8) = 2` | identical | **INDEPENDENT** | **yes** |
+| **the redshift law 1 + z = exp(−x)** | yes | yes | 2.123049E-006 | 2.123049E-006 | **INDEPENDENT** | **yes** |
+| the flux quantum 2π/96 | yes | yes | 0.065449846950 | 0.065449846950 | **INDEPENDENT** | no |
+| the flow conserves the norm | yes | yes | 8.9E-016 | 1.3E-015 | **INDEPENDENT** | no |
+| the long-wavelength power law is 2 | yes | yes | 2.0000 | 2.0000 | SPECTRUM_ONLY | no |
+| the kernel is a union of Fourier modes | yes | yes | no split modes | no split modes | SPECTRUM_ONLY | no |
+| the amplitude/phase split is 1 + 42 + 53 | yes | **no** | 1 + 42 + 53 | 1 + 46 + 49 | **REQUIRES_NATIVE** | no |
+| the free room is 51 | yes | **no** | 51 | 47 | **REQUIRES_NATIVE** | no |
+| the trace is 1152 | yes | **no** | 1152 | 192 | **REQUIRES_NATIVE** | no |
+| the level count is 45 | yes | **no** | 45 | 49 | **REQUIRES_NATIVE** | no |
+| the maximum eigenvalue is 15.837372 | yes | **no** | 15.837372 | 4.000000 | **REQUIRES_NATIVE** | no |
+| the Schrödinger coefficient is 91 | yes | **no** | 91 | 1 | **REQUIRES_NATIVE** | no |
+| the dispersion folds at channel 11 | yes | **no** | 11 | 0 (no fold) | **REQUIRES_NATIVE** | no |
+
+**And the reason is structural and measured rather than interpretive: the repository's 11-entry observable inventory
+contains NO SPECTRAL OBJECT** - six external observables (`lensing-deflection`, `time-delay`, `magnification`,
+`horizon-shadow`, `hawking-temperature`, `gw-strain`) and five pure temporal ones (`ClockRateAT`, `ClockRateGR`,
+`RedshiftAT`, `RedshiftGR`, `Discriminator`), every one a clock reading, a redshift, a deflection, a delay, a
+magnification, a shadow, a temperature or a strain. **A claim can only require the exact spectrum by quantifying over
+spectral objects, so the observability test cannot be passed by anything the fingerprint fixes.**
+
+**The near miss is named rather than glossed:** the fold at **11 against 0**, **23 channels with a reversed group
+velocity against 0**, peak **|group velocity| 36.859293 against 2.000000** - a **real dynamical difference**, and
+**none of it observable**, because no inventory observable reads the dispersion at high wavenumber. **And my own
+expectation there was refuted:** I expected every channel from the fold to the zone edge (**37**) to reverse; the
+measurement gives **23**, because the symbol is a sum of **six** sinusoids and the group velocity **oscillates back
+above zero** - a single fold position does not bound the reversed region.
+
+**What the fingerprint is actually justified by is the realisation**, named in full: the mode table (**42 + 53** against
+**46 + 49**), the free room (**51** against **47**), the trace (**1152** against **192**), the level count (**45** against
+**49**), the maximum eigenvalue (**15.837372** against **4.000000**) and the fold position (**channel 11** against **no
+fold**). **Every one is a number the theory quotes and not one is a number an observer measures** - so the native
+spectrum is **an input the theory is entitled to take and not a physical necessity.**
+
+**The qualification is stated rather than buried:** this is a statement about the **current** observable inventory, not
+a theorem about all conceivable ones. An observable whose value depended on the dispersion inside the band would make
+the fold's position **observable** and this verdict **conditional**, which is why the fold's dynamical signature is
+reported explicitly.
+
+**Status.** COMPLETE. Tests `Y_QM_011_Tests` **6/6**. Core `AT.Core/ResearchXH/FingerprintJustificationAudit.cs`; doc
+`Docs/ResearchY/QM_ManyBody/ResearchY-QM_011.md`. Registry: added as **Boundary** (`fingerprint-justification-audit`),
+reclassifying nothing. **No group-G count moves**, verified by re-running the G_027, G_033 and G_035 scanners after the
+new core was added.
+
