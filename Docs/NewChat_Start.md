@@ -2902,6 +2902,75 @@ preferred sector. The verdict is computed with a **live branch in every directio
 No group-G registry claim, so claim counts are unchanged. Registry: added as **Boundary** (`sector-weight-audit`),
 reclassifying nothing. Tests: `Y_E_015_Tests` 7/7; group E **103/103**.
 
+## ResearchY-QM_009 - Fingerprint Necessity Audit (COMPLETE, BOUNDARY - no prediction fails)
+
+**Question.** Which AT predictions **fail** if the spectral fingerprint is replaced by the Schrodinger-optimal
+generator **{1}**? Compare the native **{1..6}** against **{1}** across five sectors - the **redshift sector**, the
+**clock law**, the **source law**, the **phase sector** and the **observable algebra** - and classify each
+**UNCHANGED / BOUNDARY / REFUTED**.
+
+**Answer.** **BOUNDARY - AND THE SHARP FORM OF THE ANSWER IS THAT NO AT PREDICTION FAILS: 1 UNCHANGED + 4 BOUNDARY +
+0 REFUTED.** The sector that is unchanged is the only one whose output is a **measurement**, and the four that move
+move for one reason: the canonical **state** is spectrum-derived, so every quantity evaluated **on** the state moves,
+while every **law** stated in terms of the state's scalars does not.
+
+**The first instrument is a live source scan** (the G_027/G_033 pattern), reading each sector's own files at test time
+and counting substrate tokens in **code** and in **comments** separately:
+
+| sector | in code | in comments | files | scan verdict |
+|---|---|---|---|---|
+| **redshift sector** | **0** | 0 | 2 | **LATTICE-FREE** |
+| **clock law** | **0** | 0 | 2 | **LATTICE-FREE** |
+| source law | 5 | 0 | 1 | READS THE SUBSTRATE |
+| phase sector | 8 | 0 | 2 | READS THE SUBSTRATE |
+| observable algebra | 59 | 0 | 2 | READS THE SUBSTRATE |
+
+**A zero is negative evidence and the audit treats it as such** - a sector whose code cannot name the spectrum cannot
+fail when the spectrum is replaced - while noting that **a lattice-free file can still produce a moving quantity when
+the thing that moves is its input**.
+
+**The redshift sector is completely immune.** Solar compactness **−2.123047E-006**, AT redshift **2.123049E-006**, GR
+redshift **2.123054E-006**, the ratio law **0.2599210499**, the second-order coefficients **0.5 / 1.5** and the
+required compactness precision **0.03661** are the **same numbers on both substrata**, because the chain consumes a
+**dimension** and **occupancies** and the one scalar the state supplies - the density normalisation, **96** - is itself
+`|S|`-independent (QM_008).
+
+**The clock law is the cleanest illustration of the whole finding.** Its own file is **LATTICE-FREE** and the law
+`ρ^(1/d)` is the same function of the same two numbers on both substrata, **yet the pattern it induces moves** -
+maximum relative shift **1.013E-001** and correlation **0.222310**, i.e. nearly **decorrelated**, matching QM_008's
+state correlations of 0.19 to 0.24.
+
+**The source law is where the audit's own draft hypothesis was refuted, and it is reported as refuted.** The draft
+assumed the **ranking** of the candidate sources and the **phase-null classification** were the structural content.
+**Both move:** the phase-imbalance candidate goes from **exactly 0.0000000000** to **0.4671052634** and the
+amplitude-phase-coupling candidate from **exactly 0.0000000000** to **0.0813500268**, so the ranking is not preserved,
+and the phase-null membership falls from **4 candidates to 1**. **What survives is the fixed point and only the fixed
+point:** the uniform actualization pressure has norm **9.7979589711 = √96 on both substrata**, because a constant push
+has no phase part and no occupancy gradient. **That is a weaker structural core than G_059 assumed, and it is reported
+as weaker.**
+
+**The observable algebra shows both directions at once.** Its **dimension is 49 on both**, and that is a **theorem
+rather than a coincidence**: every `|k|` belongs to exactly one level, so restricting the orbital algebra to the levels
+counts each `|k|` once whatever the partition - **49 from 45 levels** natively and **49 from 49 levels** for `{1}`,
+from two genuinely different partitions. The multiplicity-weighted **content** moves: sum of multiplicity squares
+**230 → 190**, protected dimensions **181 → 141**, level-population observable **45 → 49**. The phase sector moves
+**53 → 49** and **42 → 46**, with **0** partially hidden modes on both.
+
+**Six defects in the audit's own first version are recorded.** (1) The **redshift comparison was backwards** - I
+asserted `z_AT > z_GR` and AT is the **smaller**, which G_068 recorded. (2) The **ratio-law literal was wrong**:
+**2^(1/3) − 1 = 0.259921049895**, not 1.0. (3) The **mean clock rate was asserted as exactly 1** from the mean
+occupancy being 1; it is **0.99879755714637009**, and the gap is **Jensen's inequality**. (4) A **mistyped computed
+constant**: the Jensen gap is **0.99639700730968433**, first written 0.9963974978. (5) The **structural hypothesis
+about the source law is refuted by the measurement**. (6) **Two clock numbers were written into the document before
+being measured** - **1.484E-001** and **0.981666** against the measured **1.013E-001** and **0.222310** - and the
+second is not a rounding difference but the **opposite conclusion**, since 0.222310 says the patterns are nearly
+decorrelated where 0.981666 would have said the shape survives. **Rule 5 in miniature.**
+
+**Status.** COMPLETE. Tests `Y_QM_009_Tests` **8/8**. Core `AT.Core/ResearchXH/FingerprintNecessityAudit.cs`; doc
+`Docs/ResearchY/QM_ManyBody/ResearchY-QM_009.md`. Registry: added as **Boundary** (`fingerprint-necessity-audit`),
+reclassifying nothing. **No group-G count moves**, verified by re-running the G_027, G_033 and G_035 scanners after the
+new core was added.
+
 ## ResearchY-QM_008 - Spectral Necessity Audit (COMPLETE, BOUNDARY - indispensable for the numbers, dispensable for the structure)
 
 **Question.** Which AT conclusions **actually require** the native **{1..6}** spectrum? Recompute each using **{1}**,
