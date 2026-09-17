@@ -2902,6 +2902,51 @@ preferred sector. The verdict is computed with a **live branch in every directio
 No group-G registry claim, so claim counts are unchanged. Registry: added as **Boundary** (`sector-weight-audit`),
 reclassifying nothing. Tests: `Y_E_015_Tests` 7/7; group E **103/103**.
 
+## ResearchY-G_074 - Clock Law Necessity Audit (COMPLETE, BOUNDARY - monotonicity shapes it, the map numbers it)
+
+**Question.** Does any surviving AT result require **dtau/dt = rho^(1/d)** specifically, or only a **monotonic
+function of rho**? Candidates: **rho^(1/d)**, **ln(rho)**, **exp(rho)**, **Pade forms**; recompute **g00**, the
+**redshift** and the **compact-star prediction**.
+
+**Answer.** **BOUNDARY - MONOTONICITY DRIVES THE SHAPE AND THE MAP DRIVES THE NUMBERS.** And the sharpest measured
+form: **the recorded second-order constraint admits exactly 2 of the 4 candidates, and those two are the SAME LAW.**
+
+| law | monotone | positive | rate x^1 | x^1 in 1+z | **x^2 in 1+z** |
+|---|---|---|---|---|---|
+| **rho^(1/d)** | yes | yes | 1.0 | -1.0 | **+0.5** |
+| **ln(rho)** | yes | yes | 1.0 | -1.0 | **+1.0** |
+| **exp(rho), linear map** | yes | yes | 1.0 | -1.0 | **+0.5** |
+| **Pade [1/1]** | **no** | **no** | 1.0 | -1.0 | **-2.5** |
+
+**The shape requirements admit everything** - positive and monotone **4 of 4**, the redshift a ratio of rates **4 of
+4**, the rate's first order **1 + x** for **4 of 4** (the redshift's own first coefficient is **-1.0**, being the
+negative of the rate's) - so **the structure names no functional form**.
+
+**And the candidates are not four theories:** the reparametrisation identity **exp(rho) with a LINEAR map IS rho^(1/d)
+with a LOGARITHMIC map** is measured at **0.000E+000**. What distinguishes them is the **MAP**, and the map is what
+the surviving audits take as an **input**.
+
+**Only the second order discriminates**, and it admits **2 of 4 - the two descriptions of one law**. The **Pade [1/1]**
+fails positivity and monotonicity at its **pole at rho = 5/2** inside the physical range, and `ln(rho)` turns
+**negative below unit density**.
+
+**The compact-star prediction confirms the class dynamically:** the two survivors give **1 + z = 1.280180559309**,
+agreeing to **2.220E-016**, while `ln(rho)` gives **1.328023241157** - a shift of **+4.784E-002, comparable to a third
+of the AT-vs-GR separation of 1.256E-001** (GR 1.405807032086). **So the G_072 programme could resolve the clock
+law's FORM at the same time as it decides AT vs GR, making the power law a decidable input rather than a convention.**
+
+**Four defects in the audit's own first version are recorded.** (1) **The maps were not normalised to a common first
+order**, so the first table compared **my parametrisations** instead of the laws - I reported the *logarithm* as
+failing the first-order constraint when it was **my own map** that failed. (2) **The reparametrisation identity was
+mis-stated**, measuring **1.054** where the truth is **0.000E+000**. (3) **The first-order requirement was tested on
+the redshift** (coefficient -1.0) instead of on the **rate**. (4) **I asserted the pairwise monotonicity check cannot
+see a pole; the measurement refused it** - both checks catch the Pade pole, and the correction needed a correction.
+
+**Status.** COMPLETE. Tests `Y_G_074_Tests` **6/6**. Core `AT.Core/ResearchXH/ClockLawNecessityAudit.cs`; doc
+`Docs/ResearchY/G_GravitySource/ResearchY-G_074.md`. Registry: added as **Boundary**
+(`clock-law-necessity-audit`). **Group-G count guards bumped:** `Y_G_033` 43 -> **44** and `Y_G_035` 74 -> **75** with
+survives 60 -> **61**.
+
 ## ResearchY-G_073 - Exponential Uniqueness Audit (COMPLETE, BOUNDARY - unique conditionally)
 
 **Question.** **Why exactly g00 = exp(2x) rather than alternative positive metrics?** Candidates: **exp(2x)**,

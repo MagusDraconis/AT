@@ -626,6 +626,13 @@ public static class TemporalIndependenceAudit
             + "whether g00 = exp(2x) IS the clock law. NOT symbol-detectable: the suite names no B, g_rr or GammaOf — "
             + "its vocabulary is Taylor coefficients, Pade approximants and compositions",
             ScanDetectsIt: false),
+        // ── G_074: the clock law's necessity, form by form ──
+        new SectorClaim("Y_G_074", "Clock Law Necessity", MetricRequirement.ClockOnly,
+            "the audit compares candidate clock laws through the clock rate, g00 and the redshift alone - and its "
+            + "answer is that the rate law and the density-to-potential map are one pairing, so the metric content is "
+            + "the clock. NOT symbol-detectable: the suite names no B, g_rr or GammaOf — its vocabulary is rate laws, "
+            + "maps and equivalence classes",
+            ScanDetectsIt: false),
     };
 
     // ── The computed classification summaries ───────────────────────────────
