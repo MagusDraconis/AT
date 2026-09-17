@@ -6384,3 +6384,60 @@ reclassifying nothing. **Group-G count guards bumped and verified:** `Y_G_033` 4
 with survives 58 → **59** in **both** the registry census and the `MinimalTimeSector` view - the second of which the
 guard itself caught.
 
+
+### ResearchY-G_073 - Exponential Uniqueness Audit (COMPLETE, BOUNDARY - unique conditionally)
+
+**Question.** **Why exactly g00 = exp(2x) rather than alternative positive metrics?** Candidates: **exp(2x)**,
+**(1+x)^2**, **1/(1-2x)** and **Pade approximants**, against the surviving constraints G_019, G_020, G_035, G_068,
+G_069 and G_070. Goal: determine whether the surviving time prediction is **mathematically unique**.
+
+**Answer.** **BOUNDARY - THE SURVIVING CONSTRAINTS SELECT THE EXPONENTIAL AMONG THE NAMED ALTERNATIVES AND CANNOT
+SELECT IT AGAINST THE PADE FAMILY.**
+
+**The constraint ladder is measured coefficient by coefficient.** For (x^1, x^2, x^3) with the implied PPN beta:
+**exp(2x) 2, 2, 1.333333, beta = 1**; **(1+x)^2 2, 1, 0, beta = 1/2**; **1/(1-2x) 2, 4, 7.999998, beta = 2**;
+**Pade [1/1] 2, 2, 2, beta = 1**; **Pade [2/2] 2, 2, 1.333333, beta = 1**.
+
+| constraints to order | survivors | which |
+|---|---|---|
+| 1 (the Newtonian limit) | **5 of 5** | all - **the constraint everybody checks buys nothing** |
+| 2 (PPN beta = +1) | **3 of 5** | exp(2x), Pade [1/1], Pade [2/2] |
+| 3 | **2 of 5** | exp(2x), Pade [2/2] |
+
+**The named alternatives die at order 2** - exp gives beta = 1, (1+x)^2 gives 1/2, 1/(1-2x) gives 2 - the same
+splitting G_019/G_020 recorded in the **redshift** quadratic as **AT 0.5 against GR 1.5**.
+
+**And the PADE FAMILY SURVIVES, which is the audit's real result:** the **[1/1]** approximant (1+x)/(1-x) has the
+**same x^2 coefficient** as the exponential and **[2/2]** matches it to order four, so **coefficient matching can
+never single the exponential out - for every finite order some Pade form matches to that order and diverges beyond
+it.**
+
+**The uniqueness is therefore STRUCTURAL rather than expansionary**, and the structural property is
+**multiplicativity of the clock group**: residual **4.441E-016** for the exponential against **5.439E-001** ((1+x)^2),
+a **pole at x = 1/2** (1/(1-2x)), **2.000E+000** (Pade [1/1]) and **4.633E-002** (Pade [2/2]). **And that row's source
+is NOT in the surviving list**, which the constraint table states rather than hides.
+
+**And the exponential IS the clock law - the question's answer.** AT's metric is conformally flat with
+**g00 = -rho^(2/d)**, so with **x = (1/d) ln rho**, g00 = exp(2x) is the **same statement** as the clock rate
+**rho^(1/d)** - measured as a residual of **0.0E+000**. **The exponential is a restatement rather than a derivation**,
+and the answer to *why exp* is **because the clock rate is a power of the density**: a power is an exponential of a
+logarithm.
+
+**The discrimination lives in the compact regime:** the spread across the five candidates is **6.761E-012** in the
+solar weak field against **1.057E-001** at the compact object, **eight orders of magnitude apart** - so **no
+solar-system observation can separate the candidates**, and the exponential is confirmed only where a neutron star
+can be measured (G_069/G_070). **And one constraint that looked discriminating is not:** the G_068 ordering excludes
+**nothing**, every candidate sitting below the GR redshift (**exp 1.280180559309** against **GR 1.405807032087**).
+
+**Five defects in the audit's own first version are recorded**, and one is the defect class this repository has a
+standing rule about: **a numerical artefact rather than a coefficient excluded the exponential from the very
+constraint row that pins it**, because the redshift was differenced with one step whose **~4E-6** truncation exceeded
+the **1E-6** tolerance. The stencil also used the **backward-difference sign convention** (every odd coefficient came
+back negative); a single step size left an **O(h^2) truncation of 1E-4**; the redshift-quadratic row used the **g00
+coefficient as a proxy**; and a bound of mine (**1E-12** against the measured **6.761E-012**) was wrong.
+
+**Status.** COMPLETE. Tests `Y_G_073_Tests` **6/6**. Core `AT.Core/ResearchXH/ExponentialUniquenessAudit.cs`; doc
+`Docs/ResearchY/G_GravitySource/ResearchY-G_073.md`. Registry: added as **Boundary**
+(`exponential-uniqueness-audit`), reclassifying nothing. **Group-G count guards bumped:** `Y_G_033` 42 -> **43** and
+`Y_G_035` 73 -> **74** with survives 59 -> **60** in both the registry census and the `MinimalTimeSector` view.
+

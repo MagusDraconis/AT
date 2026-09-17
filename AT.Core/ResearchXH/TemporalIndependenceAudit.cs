@@ -619,6 +619,13 @@ public static class TemporalIndependenceAudit
             + "alone. NOT symbol-detectable: the suite names no B, g_rr or GammaOf — its vocabulary is capability "
             + "classes, gains and decisions",
             ScanDetectsIt: false),
+        // ── G_073: the exponential's uniqueness, constraint by constraint ──
+        new SectorClaim("Y_G_073", "Exponential Uniqueness", MetricRequirement.ClockOnly,
+            "the audit compares candidates for g00 through the clock rate and the redshift alone - the candidate list "
+            + "is metrics but every measured quantity is a clock reading or a redshift, and the verdict turns on "
+            + "whether g00 = exp(2x) IS the clock law. NOT symbol-detectable: the suite names no B, g_rr or GammaOf — "
+            + "its vocabulary is Taylor coefficients, Pade approximants and compositions",
+            ScanDetectsIt: false),
     };
 
     // ── The computed classification summaries ───────────────────────────────
