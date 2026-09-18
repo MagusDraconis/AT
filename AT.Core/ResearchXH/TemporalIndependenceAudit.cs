@@ -648,6 +648,13 @@ public static class TemporalIndependenceAudit
             + "the clock. NOT symbol-detectable: the suite names no B, g_rr or GammaOf — its vocabulary is "
             + "functional equations, selection counts and composition laws",
             ScanDetectsIt: false),
+        // G_077: what sources a local clock change, and whether the source can be operated without gravity
+        new SectorClaim("Y_G_077", "Clock Source", MetricRequirement.ClockOnly,
+            "the audit asks what produces a local clock change, and every quantity it measures is a reading of the "
+            + "occupancy - the clock rate, the acceleration from the surviving source law, and the redshift as a ratio "
+            + "of rates - so the metric content is the clock alone. NOT symbol-detectable: the suite names no B, g_rr "
+            + "or GammaOf — its vocabulary is potentials, response ranks and transports",
+            ScanDetectsIt: false),
     };
 
     // ── The computed classification summaries ───────────────────────────────

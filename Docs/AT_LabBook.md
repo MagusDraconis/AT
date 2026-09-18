@@ -6456,6 +6456,65 @@ coefficient as a proxy**; and a bound of mine (**1E-12** against the measured **
 `Y_G_035` 73 -> **74** with survives 59 -> **60** in both the registry census and the `MinimalTimeSector` view.
 
 
+### ResearchY-G_077 - Clock Source Audit (COMPLETE, REFUTED - the clock has no independent source)
+
+**Question.** Starting only from the surviving AT primitives - **Difference**, **Actualization**, **the density ρ**,
+**causal structure**, **count conservation** and the surviving **G_035 temporal sector**, with the **GR field
+equations, a specific clock law, multiplicativity, neutron-star fitting and any time-aether concept all excluded** -
+what produces **local clock-rate changes**? Define the minimal object, decide the driver, derive **clock change →
+redshift without assuming an F**, decide whether local clock changes are **passive observables or manipulable states**,
+identify the **required source term**, test whether **controlled clock gradients imply controlled gravitational
+gradients**, and ask whether AT can permit **time manipulation without gravity manipulation**.
+
+**Answer.** **REFUTED - THE CLOCK HAS NO INDEPENDENT SOURCE, AND TIME CONTROL IS GRAVITY CONTROL.**
+
+**The minimal object is one scalar and the clock adds no field.** Of the sector's **6 temporal observables**, **5 take
+the occupancy** and **1 the potential**, and **0 take anything else** - a second driver has no argument to enter
+through. The readout is **LOCAL**: a one-part-in-a-thousand occupancy change moves the rate by **3.045E-002** at that
+site and by **0.000E+000** everywhere else. **THE RESPONSE RANKS:** the **clock rate reads 9 of 9 directions**, the
+**acceleration reads 8** (blind to the **uniform** one), the redshift between the ends is one number.
+
+**Driver census.** The **actualization rate is the same quantity** (inversion residual **9.100E-016**); **connectivity
+is not a driver** (two graphs, same occupancy, same clock and same acceleration; the connectivity bridge is an **open
+problem**); **information density is not a driver** (same local occupancy, different entropy, same local clock); the
+**phase sector is not available** (G_049: the clock pattern is lossless in ρ with a closed-form inverse).
+
+**Redshift without a clock law.** **1 + z = W(A_s)/W(A_o)** for an **arbitrary monotone W**, **A = (1/d) ln ρ** -
+measured over **33 law/pair combinations** with the pinned data, the exponential as **one member among others** and a
+**non-analytic** member included. A local measurement fixes only the **logarithmic derivative**, reported at two steps
+(exponential: **9.564E-013** vs **4.057E-013**, at the round-off floor; stiff member: **3.042E-002** vs **3.0E-003**,
+falling ~10× per decade). **Successive redshift factors telescope for every law** - the reason **G_076's constraint is
+about potentials adding**, not about redshifts composing.
+
+**The decisive F-free measurement.** The acceleration integral between two points **is minus their potential difference
+for any clock law**, and the clock offset is `g(A_s) − g(A_o)`: **the two readings share their zero set for every law**
+(True over **11 laws × 4 configurations**, the vacuum at **0.000E+000** for both). Their **ratio** is not fixed - so AT
+says the accompanying gravity **cannot be zero** and cannot say how large it is.
+
+**Manipulable only through the density.** The perturbation moves the rate (**3.045E-002**), nothing elsewhere, and the
+**acceleration by 1.666E-004**; no clock change without an occupancy change. The source census: **four quantities, ONE
+field, ONE transport, TWO readouts**; **count conservation makes it a transport** (total stays **7.000000** exactly
+while the clock at the probe and the acceleration at the source rise by the same act).
+
+**The boundary splits in three.** (a) **No LOCAL acceleration is PERMITTED** - shell: interior acceleration
+**0.000E+000** with an offset of **2.000E-001**, the whole difference on **one wall link**. (b) **No observable
+redshift only if the total count may change** - a uniform shift moves the clock by **3.045E-002**, every pairwise
+redshift by **0.000E+000**, and the total occupancy by **4.709E-001**. (c) **Under count conservation it is REFUTED.**
+(d) **No acceleration on any path is REFUTED.** Support is free (**one-cell wall carries the whole transition**),
+integral is not.
+
+**Six defects are recorded**: the uniform direction was first reported through the **rank of the redshift, which is 1**
+(a rank cannot show which directions a single observable is blind to - the uniform shift is now measured directly, and
+count conservation closes it); the suppression witness was carried as **F rather than a rate** (g' = **1.201** instead
+of 1); the mesh witness was **rebuilt at an amplitude that broke monotonicity** (0.6 against **2δ/π = 0.0064**); the
+width trade used a **central difference**, which **smooths a one-cell step**; the first-order law was asserted with a
+**fixed tolerance** the stiff member failed for being stiff; and the rate→ρ inversion was bisected **outside the
+physical band**.
+
+**Status.** COMPLETE. Tests `Y_G_077_Tests` **9/9**. Core `AT.Core/ResearchXH/ClockSourceAudit.cs`; doc
+`Docs/ResearchY/G_GravitySource/ResearchY-G_077.md`. Registry: added as **Refuted** (`clock-source-audit`).
+**Group-G count guards bumped:** `Y_G_033` 46 -> **47** and `Y_G_035` 77 -> **78** with survives 63 -> **64**.
+
 ### ResearchY-G_076 - Clock-Law Selection Audit (COMPLETE, REFUTED - the clock sector is structurally underdetermined)
 
 **Question.** With G_075's result in hand - **F(0) = 1**, **F'(0) = 2** and the family **F = 1 + 2x + x²G(x)** with

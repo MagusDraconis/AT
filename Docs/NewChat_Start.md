@@ -25,7 +25,7 @@ consequence requires it** (QM_011: **0 observables** require the native spectrum
 names no spectral object). **The one physical difference it does make is the dispersion fold's group-velocity
 reversal (23 channels against 0), and no observable reads the dispersion at high wavenumber.**
 
-**The time sector (group G, G_068 - G_076).** The theory's unique time prediction is the surface redshift
+**The time sector (group G, G_068 - G_077).** The theory's unique time prediction is the surface redshift
 **1 + z = exp(-x)** against GR's **(1 + 2x)^(-1/2)**, differing at **second order**. It is **decidable by one
 measurement on one object** (G_072): the redshift of **J0740+6620** to **14.1422 % (3 sigma)** or **7.5524 %
 (5 sigma)**, reached by a **next-generation timing** capability at **4.1374 sigma**, with a **direct surface-redshift
@@ -60,6 +60,20 @@ interpolant satisfies every mesh composition exactly** while differing between t
 unbounded near the vacuum** (**F = 2.411E-031 at x = -3.589E-004**) so **regularity**, not the composition law, closes
 it. **The cost from the infinite family to one law is THREE primitives - multiplicativity, regularity and a fixed map -
 and none of the three is derived by any surviving result.**
+**AND THE CLOCK HAS NO SOURCE OF ITS OWN EITHER (G_077, REFUTED): the source side of the same gap.** Starting only from
+the surviving primitives, the **minimal object that changes a clock rate is ONE SCALAR** - the local occupancy: of the
+sector's **6 temporal observables**, **5 take the occupancy** and **1 its derived potential**, and **0 take anything
+else**. The **response ranks** are the sharpest measurement - the **clock rate reads 9 of 9 directions** while the
+**acceleration reads 8 and is blind to the uniform one** - and the **redshift is a ratio of rates for an arbitrary
+monotone law** (**1 + z = W(A_s)/W(A_o)**), which the audit derives **without any clock law**, the exponential being
+**one member among others** in the corpus. The **decisive measurement is F-free**: the surviving source law makes the
+acceleration the gradient of the **same** potential, so the **clock offset and the acceleration integral share their
+zero set for every law** - while their **ratio**, the mean logarithmic derivative, is **not fixed**. The clock is
+**manipulable, but only through the density** (measurably: the same perturbation moves the rate and the acceleration),
+**count conservation makes the source a transport**, and the **boundary question splits in three**: a clock offset with
+**no LOCAL acceleration is permitted** (the shell measures it), one with **no observable redshift is permitted only if
+the total count may change - which count conservation forbids** - and one with **no acceleration on any path is
+refuted**. **So time control is not impossible; it is not separate: time engineering is gravity engineering.**
 
 **The two current open questions this leaves.** (1) **Does any observable read the lattice dispersion inside the
 band?** If one does, the fold's position becomes observable and QM_011's verdict becomes conditional - it is stated
@@ -2963,6 +2977,79 @@ preferred sector. The verdict is computed with a **live branch in every directio
 
 No group-G registry claim, so claim counts are unchanged. Registry: added as **Boundary** (`sector-weight-audit`),
 reclassifying nothing. Tests: `Y_E_015_Tests` 7/7; group E **103/103**.
+
+## ResearchY-G_077 - Clock Source Audit (COMPLETE, REFUTED - the clock has no independent source)
+
+**Question.** Starting only from the surviving AT primitives - **Difference**, **Actualization**, **the density ρ**,
+**causal structure**, **count conservation** and the surviving **G_035 temporal sector**, with the **GR field
+equations, a specific clock law, multiplicativity, neutron-star fitting and any time-aether concept all excluded** -
+what produces **local clock-rate changes**? Define the minimal object, decide which quantity drives it, derive **clock
+change → redshift without assuming an F**, decide whether local clock changes are **passive observables or manipulable
+states**, identify the **required source term**, test whether **controlled clock gradients imply controlled
+gravitational gradients**, and analyse whether AT can permit **time manipulation without gravity manipulation**.
+
+**Answer.** **REFUTED - THE CLOCK HAS NO INDEPENDENT SOURCE, AND TIME CONTROL IS GRAVITY CONTROL.**
+
+**The minimal object is one scalar, and the clock adds no field.** Of the sector's **6 temporal observables**, **5 take
+the occupancy** and **1 takes the potential** (the same field re-expressed), and **0 take anything else** - so a second
+driver has **no argument to enter through**. The readout is **LOCAL**, measured: a one-part-in-a-thousand occupancy
+change at one site moves the rate there (**3.045E-002**) and the largest change anywhere else is **0.000E+000**.
+**The response ranks are the sharpest measurement:** the **clock rate reads 9 of 9 directions** of the occupancy, the
+**acceleration reads 8** (blind to the **uniform** one) and the redshift between the ends is a single number.
+
+**The driver is the density and every alternative is measured.** The **actualization rate is the same quantity**
+(reconstructing the occupancy from the rate by bisection has a residual of **9.100E-016**); **causal connectivity is
+not a driver** (two graphs with the same occupancy give the same clock *and* the same acceleration, and the
+connectivity-to-gravity bridge is an **open problem**); **information density is not a driver** (same local occupancy,
+different global entropy, same local clock); the **phase sector is not available** (G_049: the clock pattern is
+**lossless in ρ** with a closed-form inverse).
+
+**The redshift, with no clock law assumed.** **1 + z = W(A_s)/W(A_o)** for an **arbitrary positive monotone W**, with
+**A = (1/d) ln ρ** - measured over **33 law/pair combinations** carrying the pinned data, the **exponential as one
+member among others** and a **non-analytic** member among them. A local measurement fixes only the **logarithmic
+derivative** of W, reported at **two steps** so the first-order law is a **limit** - the exponential sits at the
+round-off floor (**9.564E-013** against **4.057E-013**) and the stiff non-analytic member falls **~10× per decade**.
+**Successive redshift factors telescope for every law**, which is why **G_076's composition constraint is about
+potentials adding** and not about redshifts composing.
+
+**The decisive measurement is a counting one and it is F-free.** The surviving source law makes the acceleration the
+gradient of the **same** logarithmic potential, so the **acceleration integral between two points IS minus their
+potential difference for any clock law**, while the clock offset is `g(A_s) − g(A_o)`. **The two readings share their
+zero set for every law** (True over **11 laws and 4 configurations**; the vacuum gives **0.000E+000** for both), and
+what is **not** fixed is their **ratio** - the mean logarithmic derivative - so **AT says the accompanying gravity
+cannot be zero and cannot say how large it is**.
+
+**Manipulable, but only through the density.** The perturbation moves the rate (**3.045E-002**), nothing elsewhere,
+and the **acceleration profile by 1.666E-004**; **no clock change is available without an occupancy change**. The
+**source term census** is **four quantities, ONE field, ONE transport, TWO readouts**, and **count conservation makes
+the source a transport** (a redistribution keeps the total at **7.000000** exactly while raising the clock at the probe
+and the acceleration at the source **by the same act**).
+
+**The boundary splits in three, and the audit refuses to collapse it.** (a) A clock offset with **no LOCAL
+acceleration** is **PERMITTED** - the shell gives interior acceleration **0.000E+000** with an offset of **2.000E-001**,
+the whole difference carried by **one wall link**. (b) A clock change with **no observable redshift** is permitted
+**only if the total count may change** (a uniform shift moves the clock by **3.045E-002** and every pairwise redshift
+by **0.000E+000** while changing the total occupancy by **4.709E-001**). (c) **Under count conservation it is
+REFUTED** - the uniform direction is the only one nobody can see, and it is the one the conserved count forbids.
+(d) A clock offset with **no acceleration on any path** is **REFUTED**. The gradient's **support is free and its
+integral is not** (the width-versus-strength trade, measured on the gradient each **lattice link** carries).
+
+**Six defects in the audit's own first version are recorded.** (1) **The uniform direction was first reported through
+the rank of the redshift, which is 1** because the redshift between two fixed points is **one number** - a rank cannot
+show *which* directions a single observable is blind to; the audit now measures the uniform shift directly, and **count
+conservation is what closes the argument**. (2) The suppression witness was carried as **F rather than as a rate**, so
+its logarithmic derivative came out **1.201** instead of 1. (3) The mesh witness was **rebuilt at an amplitude that
+broke monotonicity** (0.6 against G_076's bound **2δ/π = 0.0064**), so the audit's own non-analytic member was not a
+viable clock law. (4) The width trade measured the peak with a **central difference**, which **smooths a one-cell
+step** and made a one-cell and a two-cell wall indistinguishable. (5) The first-order law was asserted with a **fixed
+tolerance** that the stiff member failed **for being stiff rather than for being wrong**. (6) The rate→ρ inversion was
+bisected **outside the physical band**, reporting two laws as non-invertible where they invert perfectly where the
+theory is used.
+
+**Status.** COMPLETE. Tests `Y_G_077_Tests` **9/9**. Core `AT.Core/ResearchXH/ClockSourceAudit.cs`; doc
+`Docs/ResearchY/G_GravitySource/ResearchY-G_077.md`. Registry: added as **Refuted** (`clock-source-audit`),
+reclassifying nothing. **Group-G count guards bumped:** `Y_G_033` 46 -> **47** and `Y_G_035` 77 -> **78** with survives
+63 -> **64** in both the registry census and the `MinimalTimeSector` view.
 
 ## ResearchY-G_076 - Clock-Law Selection Audit (COMPLETE, REFUTED - the clock sector is structurally underdetermined)
 
