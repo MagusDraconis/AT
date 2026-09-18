@@ -25,7 +25,7 @@ consequence requires it** (QM_011: **0 observables** require the native spectrum
 names no spectral object). **The one physical difference it does make is the dispersion fold's group-velocity
 reversal (23 channels against 0), and no observable reads the dispersion at high wavenumber.**
 
-**The time sector (group G, G_068 - G_077).** The theory's unique time prediction is the surface redshift
+**The time sector (group G, G_068 - G_078).** The theory's unique time prediction is the surface redshift
 **1 + z = exp(-x)** against GR's **(1 + 2x)^(-1/2)**, differing at **second order**. It is **decidable by one
 measurement on one object** (G_072): the redshift of **J0740+6620** to **14.1422 % (3 sigma)** or **7.5524 %
 (5 sigma)**, reached by a **next-generation timing** capability at **4.1374 sigma**, with a **direct surface-redshift
@@ -74,6 +74,31 @@ zero set for every law** - while their **ratio**, the mean logarithmic derivativ
 **no LOCAL acceleration is permitted** (the shell measures it), one with **no observable redshift is permitted only if
 the total count may change - which count conservation forbids** - and one with **no acceleration on any path is
 refuted**. **So time control is not impossible; it is not separate: time engineering is gravity engineering.**
+**AND THE SHARED SOURCE CAN BE MOVED BUT NOT MADE (G_078, REFUTED - and the audit refutes its own headline).**
+Starting only from **actualization, density transport, count conservation and causal structure** (new fields,
+imported matter sectors and imported field equations excluded): **NO SOURCE TERM IS SUPPLIED**, because every natural
+operator of the update class is a **DIVERGENCE** and leaks **0.000E+000** of the count on a closed ring while a
+deliberately non-divergent **control** leaks **8.166E+000** - so the detector works and the class contains no source,
+which makes a source term an **import**: **absent, not excluded**. **THE UPLIFT CAP IS ROBUST AND THE CONTRAST CAP IS
+NOT.** Positivity caps concentration at the total, so on the canonical lattice the maximum uplift is **1.5214** in the
+potential, **4.5789** in the rate and **20.9659** in the metric magnitude if everything is concentrated, against
+**1.5249 / 4.5947 / 21.1113** for a **one-unit floor plus surplus** - the two readings agree to **2.270E-003
+relative**, so the cap is a property of positivity rather than of the reading - and the uplift is **logarithmic** in
+the count, each **e^3 = 20.09x** of count adding exactly **1.0** (so enhancement is expensive: **20 000x** the count
+per unit of potential). **But the asymmetry the audit first claimed does not survive**: under a **unit floor** the
+maximum contrast between a well and a hill of the **same count** is **4.5947 - the same number as the uplift cap - so
+the uplift/depression asymmetry VANISHES**, and it exists **only if an EMPTY CELL is admitted**, where the contrast is
+**unbounded** (**1.260E+002** at a well occupancy of **1.000E-006** with the total held fixed) and the reason is
+**A = (1/d) ln rho diverging rather than anything the count does**. **A BOUNDED REGION CAN NEVER CHANGE ALONE**: the
+change inside a region **equals minus its net boundary flux to 4.857E-017 over 8 cells with 0 exceptions**, so the
+compensation is **compulsory** and only its **location** is free. **AND THE TWO SIGNATURES DO NOT DECOUPLE**: every
+**gravitational** manipulation carries a clock signature - **9 clock laws x 4 depths, 0 counterexamples**, because an
+acceleration change needs a **gradient of the occupancy** and the clock is a **strictly monotone readout** of it - and
+every **clock** manipulation carries a gravitational signature too, with **exactly one exception**, the **UNIFORM**
+direction, which moves every clock by **6.623E-003** and the acceleration by **0.000E+000** while changing the **total
+count by 1.920E+000** - and **count conservation forbids exactly that move**. **The reachable clock contrast is a
+factor of a few under a floor, and the one channel that would have separated time from gravity is the channel the
+theory closes.**
 
 **The two current open questions this leaves.** (1) **Does any observable read the lattice dispersion inside the
 band?** If one does, the fold's position becomes observable and QM_011's verdict becomes conditional - it is stated
@@ -87,7 +112,11 @@ structural principle (**multiplicativity**, if the clock composition can be deri
 half of that question as far as the allowed sources go:** every source that is not the composition law is either
 satisfied by everything, refuted, or the same equation in another language, so **the clock sector is structurally
 underdetermined and the one constraint that selects presupposes the composition law it would have to derive**. The
-sector's own next question is therefore now sharply stated: **why does the clock composition multiply?**
+sector's own next question is therefore now sharply stated: **why does the clock composition multiply?** **G_078 adds a
+second, blunter question to that list: MAY A CELL BE EMPTY?** Every bound the new audit derives is **conditional** on
+it - under a unit floor the uplift and the contrast are capped by the **same** logarithmic number, and the asymmetry
+between them exists **only** if an empty cell is admissible - and **no surviving datum probes that regime**, so the
+bounds are structural statements rather than measured predictions.
 
 ## Reclassified Solved Problems
 
@@ -3050,6 +3079,81 @@ theory is used.
 `Docs/ResearchY/G_GravitySource/ResearchY-G_077.md`. Registry: added as **Refuted** (`clock-source-audit`),
 reclassifying nothing. **Group-G count guards bumped:** `Y_G_033` 46 -> **47** and `Y_G_035` 77 -> **78** with survives
 63 -> **64** in both the registry census and the `MinimalTimeSector` view.
+
+## ResearchY-G_078 - Source Manipulation Audit (COMPLETE, REFUTED - and the audit refuted its own headline)
+
+**Question.** G_077 established that the clock and the acceleration **share one source**, the local occupancy ρ whose
+logarithm is the potential. Can that source be **changed locally**? Allowed: **actualization, density transport,
+count conservation, causal structure**. Forbidden and not used: **new fields, imported matter sectors, imported GR
+equations**. (1) Which processes alter local ρ? (2) Redistribution, amplification or suppression? (3) Under count
+conservation, the **maximum local enhancement**? (4) Can a bounded region hold `Δρ ≠ 0` with **no compensating
+deficit**? (5) Does every **clock** manipulation create a gravitational signature? (6) Does every **gravitational**
+manipulation create a clock signature?
+
+**Verdict: REFUTED - redistribution is the only elementary channel, and the symmetry of its bounds turns on one
+assumption the audit refuses to make silently.**
+
+**No source term is supplied.** Every natural operator of the update class is a **DIVERGENCE**: upwind, centred and
+Laplacian all leak **0.000E+000** of the count on a **closed ring**, while the deliberately non-divergent **CONTROL**
+leaks **8.166E+000** - so **the detector can see a source and there is none in the class**. A source term would be an
+**import**, which the question forbids: **absent rather than excluded**. On an **open chain** the two first-order forms
+leak **exactly the boundary term the chain drops** (1.971E-001), which is **question 4's answer arriving already**.
+
+**The uplift cap is robust.** Positivity caps concentration at the total, so the cap is computed in **two readings
+that must agree if the cap is real**:
+
+| reading | max occupancy | uplift `ΔA` | rate ratio | metric ratio |
+|---|---|---|---|---|
+| all of the count in one cell (others empty) | 96 | 1.5214 | 4.5789 | 20.9659 |
+| one unit in every cell + the surplus in one | 97 | 1.5249 | 4.5947 | 21.1113 |
+
+They differ by **2.270E-003 relative**, so **the cap is a property of positivity rather than of the reading**. The
+uplift is **logarithmic** - each **e³ = 20.09×** of count adds exactly **1.0** (96 cells → 1.5214, 9 216 → 3.0429,
+1 000 000 → 4.6052) - so **enhancement is expensive: 20 000× the count per unit of potential**.
+
+**The contrast cap is conditional, and this refutes the audit's own first headline.** The first version claimed *the
+depression is unbounded where the uplift is capped*, and therefore that redistribution leaves a balanced pair whose
+ends diverge without limit. **That is not a result of count conservation**: under a **unit floor** in every cell the
+maximum contrast between a well and a hill of the **same count** is **4.5947 - the same number as the uplift cap - so
+the asymmetry VANISHES**. It exists **only if an EMPTY CELL is admitted**, where the contrast is **unbounded**
+(**1.260E+002** at a well occupancy of **1.000E-006** with the total held fixed) and **the reason is A = (1/d) ln ρ
+diverging rather than anything the count does**. The audit reports both branches and **refutes its unconditional
+formulation**.
+
+**A bounded region can never change alone.** The change inside a region **equals minus its net boundary flux to
+4.857E-017 over 8 cells**, with **0** regions changed and no boundary flux. **The compensation is compulsory; only its
+location is free** - the flux decides the distance.
+
+**The two implications are asymmetric, and that is the sharpest pair.**
+
+| claim | answer | measurement |
+|---|---|---|
+| every gravitational manipulation carries a clock signature | **YES** | **9 clock laws × 4 depths, 0 counterexamples** |
+| every clock manipulation carries a gravitational signature | **NO - exactly one exception** | uniform scaling moves the clock **6.623E-003**, the acceleration **0.000E+000**, the total count **1.920E+000** |
+| a bounded region can change alone | **NO** | the ledger identity, 0 exceptions |
+
+**Count conservation forbids exactly the one move that would have decoupled the clock from gravity.**
+
+**Seven defects in the audit's own first version are recorded.** (1) **A ledger of zeros proves nothing** - the region
+table used fixed starts against a flux pattern that left those regions unchanged, so every row read **0.000E+000** and
+the identity was satisfied **vacuously**; the regions now start at cell 0 and the rows are **asserted non-trivial**.
+(2) **An inverted verdict row** - `MirrorImplication`'s third row encoded `Answer` as `residual > 1e-12`, answering
+**true exactly when the identity failed**. (3) **The verdict was culture-dependent** - its figures were interpolated
+with the machine's culture (`1,5214`), so a test that re-formatted a computed number **passed on en-US and failed on
+de-DE**: the never-compare-formatted-strings rule biting in a **new place, locale rather than format**; fixed by
+invariant formatting **and** by a `VerdictFigures()` accessor returning the quantities **as numbers**. (4) **A wrong
+growth law** - the contrast was asserted to grow **10× per decade of depth** when the truth is **10^(1/3) = 2.15×**,
+because the contrast is a **cube root**. (5) **The open-chain identity is form-specific** - it holds for the two
+first-order divergence forms and not for the control or the end-duplicated Laplacian, so that column is labelled
+**convention-sensitive**. (6) **The headline was conditional with the condition invisible.** (7) A missing method
+signature lost to a mechanical edit and caught by the compiler.
+
+**Status.** COMPLETE. Tests `Y_G_078_Tests` **9/9**. Core `AT.Core/ResearchXH/SourceManipulationAudit.cs`; doc
+`Docs/ResearchY/G_GravitySource/ResearchY-G_078.md`. Registry: added as **Refuted** (`source-manipulation-audit`),
+reclassifying nothing. **Group-G count guards bumped:** `Y_G_033` 47 -> **48** and `Y_G_035` 78 -> **79** with survives
+64 -> **65** in both the registry census and the `MinimalTimeSector` view. **Surfaces updated:** AT.Book
+`TheoryRegistry`, AT.App Theory Book chapter + **new Open Problem "May a cell be empty?"** + Research News + suite
+table.
 
 ## ResearchY-G_076 - Clock-Law Selection Audit (COMPLETE, REFUTED - the clock sector is structurally underdetermined)
 

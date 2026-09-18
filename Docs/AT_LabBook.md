@@ -6515,6 +6515,113 @@ physical band**.
 `Docs/ResearchY/G_GravitySource/ResearchY-G_077.md`. Registry: added as **Refuted** (`clock-source-audit`).
 **Group-G count guards bumped:** `Y_G_033` 46 -> **47** and `Y_G_035` 77 -> **78** with survives 63 -> **64**.
 
+### ResearchY-G_078 - Source Manipulation Audit (COMPLETE, REFUTED - and the audit refuted its own headline)
+
+**Question.** G_077 established that the clock and the acceleration **share one source**, the local occupancy ρ whose
+logarithm is the potential. Can that source be **changed locally**? Allowed: **actualization, density transport, count
+conservation, causal structure**. Forbidden: **new fields, imported matter sectors, imported GR equations**.
+
+**Verdict: REFUTED - redistribution is the only elementary channel, and the symmetry of its bounds turns on one
+assumption the audit refuses to make silently.** Six measurements:
+
+**1. Which processes alter local ρ - and there is no source.** The update class on one state (count change of
+`sum L(ρ)`):
+
+| operator | closed ring | open chain | dropped boundary | leak = dropped |
+|---|---|---|---|---|
+| local difference (upwind) | 0.000E+000 | 1.971E-001 | 1.971E-001 | True |
+| centred difference | 0.000E+000 | 1.971E-001 | 1.971E-001 | True |
+| second difference (Laplacian) | 0.000E+000 | 0.000E+000 | 1.971E-001 | False |
+| **CONTROL: growth (not a divergence)** | **8.166E+000** | 8.166E+000 | 1.971E-001 | False |
+
+Every divergence conserves the count on a **closed ring** while the **control** changes it, so **the detector can see
+a source and the class contains none**. The channel census is therefore: **density transport AVAILABLE** (the
+elementary channel, residual **4.857E-017**), **actualization COUNT-PRESERVING** (not a source), **a source term NOT
+SUPPLIED** (it would be an **import**, hence **absent rather than excluded**), **causal structure ORIENTS AND
+SUPPRESSES** (a channel test that found a **constraint**: it removes reachable configurations rather than adding
+occupancy).
+
+**2. Redistribution, not amplification.** The pair ρ = (0.5, 1.5, …) carries the **same total** as the uniform state
+(**16.000000** vs **16.000000**), with a well potential of **-0.231049** and a hill potential of **0.135155** - **one
+statement containing both an amplification and a suppression**. The region ledger (the other half must be somewhere):
+
+| region | change inside | net boundary flux | residual |
+|---|---|---|---|
+| one cell | -6.000E-002 | -6.000E-002 | 4.857E-017 |
+| three cells | -2.000E-002 | -2.000E-002 | 1.735E-017 |
+| seven cells | 6.000E-002 | 6.000E-002 | 4.857E-017 |
+| the whole ring | 0.000E+000 | -0.000E+000 | 0.000E+000 |
+
+**3. The maximum local enhancement - robust on the uplift, conditional on the contrast.**
+
+| reading | max occupancy | uplift `ΔA` | rate ratio | metric ratio |
+|---|---|---|---|---|
+| all of the count in one cell (others empty) | 96 | 1.5214 | 4.5789 | 20.9659 |
+| one unit in every cell + the surplus in one | 97 | 1.5249 | 4.5947 | 21.1113 |
+
+The two readings differ by **2.270E-003 relative**, so the cap is a property of **positivity** rather than of the
+reading. The uplift is **logarithmic** in the count: 4 cells → **0.4621**, 16 → **0.9242**, 48 → **1.2904**,
+**96 → 1.5214**, 9 216 → **3.0429**, 1 000 000 → **4.6052**, each **e³ = 20.09×** of count adding exactly **1.0**, so
+**20 000× the count per unit of potential**.
+
+The **contrast** is the assumption:
+
+| branch | well occupancy | max contrast | status |
+|---|---|---|---|
+| unit floor in every cell | 1.0 | **4.5947** | **BOUNDED - and equal to the uplift cap, so the asymmetry VANISHES** |
+| empty cell admitted (occupancy 0) | 0.0 | **∞** | UNBOUNDED - where `A = (1/d) ln ρ` itself diverges |
+| integer counts, surplus over the floor | 1.0 | 4.5947 | a genuine integer count cannot fund more than the total |
+
+The floorless branch (carried **only** to show where the divergence comes from; **not** integer counts) holds the
+total at 2 in every row: well `1.000E-001` → contrast **2.668E+000**, `1.000E-004` → **2.714E+001**,
+`1.000E-006` → **1.260E+002**. **100× of well depth raises the contrast by only 4.642× - the cube root** - so a
+"linear response" claim would have been wrong.
+
+**4. A bounded region cannot change alone.** Measured over three transport patterns × four regions, the change inside
+**equals minus** the net boundary flux to **4.857E-017** in every non-degenerate row, and **0** regions changed with
+no boundary flux. The whole ring is the **one** region with no boundary and its change is zero, because the transport
+is a divergence. **The compensation is compulsory; its location is free** - the flux decides the distance.
+
+**5. Every gravitational manipulation carries a clock signature.** **9 clock laws × 4 depths = 36 configurations, 0
+counterexamples** - an acceleration change needs a **gradient of the occupancy** and the clock is a **strictly monotone
+readout** of it.
+
+**6. Every clock manipulation carries a gravitational signature, with exactly one exception.** Uniform escape:
+
+| cells | clock change | acceleration change | count change |
+|---|---|---|---|
+| 8 | 6.623E-003 | 0.000E+000 | 1.600E-001 |
+| 96 | 6.623E-003 | 0.000E+000 | 1.920E+000 |
+
+The **uniform** direction moves every clock and no acceleration - and it is the one move that **changes the total
+count**, so **count conservation forbids it**. **The only channel that would have decoupled the clock from gravity is
+the channel the theory closes.**
+
+**Seven defects in the audit's own first version are recorded.** (1) **A ledger of zeros proves nothing** - fixed
+starts against an unchanged flux pattern made every region row read **0.000E+000**, satisfying the identity
+**vacuously**; the regions now start at cell 0 and the rows are **asserted non-trivial**. (2) **An inverted verdict
+row** - `Answer` was encoded as `residual > 1e-12`, i.e. **true exactly when the identity failed**. (3) **The verdict
+was culture-dependent** - figures interpolated with the machine's culture (`1,5214`) made a re-formatting check
+**pass on en-US and fail on de-DE**: the never-compare-formatted-strings rule in a **new place (locale)**; fixed by
+invariant formatting **and** by `VerdictFigures()` returning numbers. (4) **A wrong growth law** - the contrast was
+asserted at **10× per decade** when it is **10^(1/3) = 2.15×**, a **cube root**. (5) **The open-chain identity is
+form-specific** - it holds for the two first-order forms, not for the control or the end-duplicated Laplacian, so the
+column is **convention-sensitive**. (6) **The headline was conditional with the condition invisible** - now two
+branches, with the unconditional form refuted. (7) A missing method signature lost to a mechanical edit and caught by
+the compiler.
+
+**What it does not settle.** Whether an **empty cell** is a legitimate configuration - the whole conditional structure
+of the bounds rests on it, and **no surviving datum probes that regime**. Four limits travel with the verdict: the
+contrast asymmetry is an **artifact of the empty cell** rather than a result of count conservation; a source term is
+**absent but not excluded**; **causal structure is a constraint, not a channel**; and the open-chain column is
+**convention-sensitive**.
+
+**Status.** COMPLETE. Tests `Y_G_078_Tests` **9/9**. Core `AT.Core/ResearchXH/SourceManipulationAudit.cs`; doc
+`Docs/ResearchY/G_GravitySource/ResearchY-G_078.md`. Registry: added as **Refuted** (`source-manipulation-audit`).
+**Group-G count guards bumped:** `Y_G_033` 47 -> **48** and `Y_G_035` 78 -> **79** with survives 64 -> **65**.
+AT.App gained a Theory Book chapter, a **new Open Problem ("May a cell be empty?")**, a Research News entry and a
+suite-table row; AT.Book gained the registry object.
+
 ### ResearchY-G_076 - Clock-Law Selection Audit (COMPLETE, REFUTED - the clock sector is structurally underdetermined)
 
 **Question.** With G_075's result in hand - **F(0) = 1**, **F'(0) = 2** and the family **F = 1 + 2x + x²G(x)** with

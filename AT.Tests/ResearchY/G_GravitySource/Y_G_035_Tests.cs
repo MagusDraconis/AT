@@ -40,13 +40,13 @@ public class Y_G_035_Tests : ResearchTestBase
     {
         // The registry covers every group-G suite the scanner finds.
         Assert.Empty(TemporalIndependenceAudit.UnregisteredSuites());
-        Assert.Equal(78, TemporalIndependenceAudit.Registry().Length);
+        Assert.Equal(79, TemporalIndependenceAudit.Registry().Length);
 
         var (survives, boundary, refuted) = TemporalIndependenceAudit.Counts();
-        Assert.Equal(64, survives);   // G_046 added one; G_070-G_072 one each; G_075-G_077 one more each
+        Assert.Equal(65, survives);   // G_046 added one; G_070-G_072 one each; G_075-G_078 one more each
         Assert.Equal(11, boundary);   // 8 as G_035 audited; G_036, G_037 and G_038 added three more
         Assert.Equal(3, refuted);
-        Assert.Equal(78, survives + boundary + refuted);
+        Assert.Equal(79, survives + boundary + refuted);
 
         // THE SHARP BOUNDARY: the first audit requiring more than g₀₀ is G_021 — light propagation.
         var first = TemporalIndependenceAudit.ConformalBoundary();
@@ -178,7 +178,7 @@ public class Y_G_035_Tests : ResearchTestBase
         Assert.True(TemporalIndependenceAudit.NoTemporalObservableTakesB());
 
         // The three ingredients of the minimal time sector.
-        Assert.Equal(64, TemporalIndependenceAudit.MinimalTimeSector().Length);   // G_072 and G_075-G_077 added to this filtered view too
+        Assert.Equal(65, TemporalIndependenceAudit.MinimalTimeSector().Length);   // G_072 and G_075-G_078 added to this filtered view too
         Assert.Equal((1, 1, 1), TemporalIndependenceAudit.MinimalTimeSectorContent());
         string statement = TemporalIndependenceAudit.MinimalTimeSectorStatement();
         Assert.Contains("no spatial metric, no conformal factor, no reference", statement);

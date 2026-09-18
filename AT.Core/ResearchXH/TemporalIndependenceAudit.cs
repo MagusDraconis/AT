@@ -655,6 +655,14 @@ public static class TemporalIndependenceAudit
             + "of rates - so the metric content is the clock alone. NOT symbol-detectable: the suite names no B, g_rr "
             + "or GammaOf — its vocabulary is potentials, response ranks and transports",
             ScanDetectsIt: false),
+        // G_078: whether the shared source can be changed locally, and whether the two signatures decouple
+        new SectorClaim("Y_G_078", "Source Manipulation", MetricRequirement.ClockOnly,
+            "the audit asks whether the shared source - the occupancy rho whose logarithm is the potential - can be "
+            + "changed locally, and every quantity it measures is a reading of the occupancy: the clock rate, the "
+            + "acceleration from the surviving source law, count ledgers and the two implication tables - so the metric "
+            + "content is the clock alone. NOT symbol-detectable: the suite names no B, g_rr or GammaOf — its "
+            + "vocabulary is operators, ledgers, caps and channels",
+            ScanDetectsIt: false),
     };
 
     // ── The computed classification summaries ───────────────────────────────
