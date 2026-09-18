@@ -663,6 +663,14 @@ public static class TemporalIndependenceAudit
             + "content is the clock alone. NOT symbol-detectable: the suite names no B, g_rr or GammaOf — its "
             + "vocabulary is operators, ledgers, caps and channels",
             ScanDetectsIt: false),
+        // G_079: whether the continuity law d_t rho + div J = 0 is forced, and what its premises are
+        new SectorClaim("Y_G_079", "Continuity Law", MetricRequirement.ClockOnly,
+            "the audit asks whether the continuity law is forced, and every quantity it measures is a property of the "
+            + "occupancy: the discrete divergence of a link flux, the rank and nullity of the divergence operator on the "
+            + "substrate, count ledgers and the state-versus-observable map - so the metric content is the clock alone. "
+            + "NOT symbol-detectable: the suite names no B, g_rr or GammaOf — its vocabulary is divergences, images, "
+            + "kernels and cuts",
+            ScanDetectsIt: false),
     };
 
     // ── The computed classification summaries ───────────────────────────────

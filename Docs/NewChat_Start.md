@@ -25,7 +25,7 @@ consequence requires it** (QM_011: **0 observables** require the native spectrum
 names no spectral object). **The one physical difference it does make is the dispersion fold's group-velocity
 reversal (23 channels against 0), and no observable reads the dispersion at high wavenumber.**
 
-**The time sector (group G, G_068 - G_078).** The theory's unique time prediction is the surface redshift
+**The time sector (group G, G_068 - G_079).** The theory's unique time prediction is the surface redshift
 **1 + z = exp(-x)** against GR's **(1 + 2x)^(-1/2)**, differing at **second order**. It is **decidable by one
 measurement on one object** (G_072): the redshift of **J0740+6620** to **14.1422 % (3 sigma)** or **7.5524 %
 (5 sigma)**, reached by a **next-generation timing** capability at **4.1374 sigma**, with a **direct surface-redshift
@@ -99,6 +99,27 @@ direction, which moves every clock by **6.623E-003** and the acceleration by **0
 count by 1.920E+000** - and **count conservation forbids exactly that move**. **The reachable clock contrast is a
 factor of a few under a floor, and the one channel that would have separated time from gravity is the channel the
 theory closes.**
+**AND THE CONTINUITY LAW IS DERIVED ON THE SUBSTRATE, WITH ONE PREMISE IT CANNOT SUPPLY FOR ITSELF (G_079, BOUNDARY).**
+Asked whether **∂tρ + ∇·J = 0** is forced, the audit proves it for the surviving class **in exact integer
+arithmetic**: every conserving operator **is** a divergence, with its flux written down (`J_i = ρ[i]`,
+`2J_i = ρ[i+1] + ρ[i]`, `J_i = ρ[i+1] − ρ[i]`), reconstructed by prefix sums and verified at **residual 0**, while
+the non-divergent **control fails** the membership test - so the criterion is **live** rather than vacuous. **The flux
+is a gauge:** `rank = n − 1` and **nullity 1 on every ring size** (4, 8, 16, 48, 96), so the flux is fixed only up to
+**one circulation** - and that circulation is **unobservable**, since **0 of 6** temporal observables read a flux.
+**But conservation does NOT imply continuity, and the counterexample is a cut:** on a connected ring the zero-sum
+subspace **is** the image (**8 of 8** conserving witnesses are transports); on a substrate of c components the image
+requires **each component's sum** to vanish, so a **transfer across the cut** conserves the total and **is not any
+flux** - a **source/sink pair** (**2 of 10** witnesses on two rings, **4 of 12** on four). So the equivalence rests on
+**connectivity**, and the audit states plainly that it does **not** derive that premise. **A source could be added
+without breaking a single surviving measurement** - the pinned rows constrain the **map from state to observables**
+(**9 of 9** laws carry the pinned slope) and not the dynamics - and the sector supplies a **detector** rather than a
+prohibition: the **ledger residual equals the source exactly** (**0.030** for a source of `0.03`), so the identity is
+**falsifiable**. **The observables need one mode the flux cannot supply:** the kernel of the divergence is the
+**uniform mode**, so ratios and differences (the **redshift** and the **acceleration**) are determined and the
+**absolute clock rate is not** - and the **conserved total** fixes exactly that mode on a connected substrate (**0**
+free modes) while a **disconnected** one leaves **c − 1 relative levels** free that no measurement can reach. **So a
+source-free conserved theory does limit manipulation to redistribution - conditionally.** The open question handed on:
+**is connectivity a consequence of the theory or an input to it?**
 
 **The two current open questions this leaves.** (1) **Does any observable read the lattice dispersion inside the
 band?** If one does, the fold's position becomes observable and QM_011's verdict becomes conditional - it is stated
@@ -116,7 +137,11 @@ sector's own next question is therefore now sharply stated: **why does the clock
 second, blunter question to that list: MAY A CELL BE EMPTY?** Every bound the new audit derives is **conditional** on
 it - under a unit floor the uplift and the contrast are capped by the **same** logarithmic number, and the asymmetry
 between them exists **only** if an empty cell is admissible - and **no surviving datum probes that regime**, so the
-bounds are structural statements rather than measured predictions.
+bounds are structural statements rather than measured predictions. **G_079 adds a third: IS CONNECTIVITY A CONSEQUENCE
+OF THE THEORY OR AN INPUT TO IT?** The continuity law's equivalence to count conservation is **measured** to rest on
+it - on a connected ring **8 of 8** conserving witnesses are transports, while on two components **2 of 10 are not**
+(a transfer across a cut is a **source/sink pair**) - so the audit derives the law **on the canonical substrate** and
+explicitly does **not** derive the premise.
 
 ## Reclassified Solved Problems
 
@@ -3154,6 +3179,73 @@ reclassifying nothing. **Group-G count guards bumped:** `Y_G_033` 47 -> **48** a
 64 -> **65** in both the registry census and the `MinimalTimeSector` view. **Surfaces updated:** AT.Book
 `TheoryRegistry`, AT.App Theory Book chapter + **new Open Problem "May a cell be empty?"** + Research News + suite
 table.
+
+## ResearchY-G_079 - Continuity Law Audit (COMPLETE, BOUNDARY - the law is derived and one premise is an input)
+
+**Question.** G_077 made ρ the sole surviving clock source and G_078 found transport only, with **no source and no
+sink**. Is **∂tρ + ∇·J = 0** forced? (1) Can every surviving update be rewritten as a continuity equation? (2) Is count
+conservation equivalent to continuity? (3) Does any surviving update create local source terms? (4) Can source terms
+be added without breaking previous audits? (5) Are the observables uniquely determined once `J` is specified? (6) Does
+a source-free theory limit gravity engineering to redistribution?
+
+**Verdict: BOUNDARY - THE CONTINUITY LAW IS DERIVED FOR THE SURVIVING CLASS, AND ITS THREE PREMISES ARE MEASURED
+RATHER THAN ASSUMED.**
+
+**1. The law is a theorem, not a tolerance.** The flux of each operator is **written down** — `J_i = ρ[i]` (upwind),
+`2 J_i = ρ[i+1] + ρ[i]` (centred, at twice scale), `J_i = ρ[i+1] − ρ[i]` (Laplacian) — reconstructed by prefix sums
+and verified as an **integer equality**: **residual 0** for all three. The non-divergent **control fails** the
+membership test (`rank([M|v]) == rank(M)`), so the criterion is **live**.
+
+**2. The flux is a gauge.** `rank = n − c`, `nullity = c`:
+
+| substrate | cells | components | rank | nullity |
+|---|---|---|---|---|
+| one connected ring | 8 | 1 | 7 | 1 |
+| two rings | 8 | 2 | 6 | 2 |
+| four rings | 8 | 4 | 4 | 4 |
+| one ring, canonical | 96 | 1 | 95 | 1 |
+
+**Nullity 1 on every ring size** (4, 8, 16, 48, 96) — and the circulation is **unobservable**: **0 of 6** temporal
+observables read a flux.
+
+**3. Conservation is NOT continuity — connectivity is the missing premise.**
+
+| substrate | witnesses | conserving & transport | conserving & **not** transport |
+|---|---|---|---|
+| one connected ring | 8 | **8** | **0** |
+| two rings | 10 | 8 | **2** |
+| four rings | 12 | 8 | **4** |
+
+A **transfer across a cut** conserves the total and is **not any flux** — a **source/sink pair**. The check must be a
+**rank** check and not a sum: the failing witness has total `0`.
+
+**4. A source could be added without breaking a single surviving measurement.** The pinned rows are functions of the
+**state** (9 of 9 laws carry the pinned slope, all 9 target rows) — so what a source breaks is the **closure**. The
+sector supplies a **detector**, and it is **live**: a source of `0.03` makes the ledger residual **exactly 0.030**, and
+**declaring** it restores the identity to `0.0E+000`.
+
+**5. The observables need one mode the flux cannot supply — the conserved count supplies it.** The kernel of the
+divergence is the **uniform mode** (dim `1`), so ratios and differences are determined and the **absolute clock rate is
+not**; the total fixes exactly that mode (**0** free on a connected ring). A **disconnected** substrate leaves
+**c − 1** relative levels free (**1** with two rings, **3** with four).
+
+**6. Interior versus boundary.** The class supplies **no** interior source; a **boundary flux** — the one genuinely
+source-like term the framework can express — is exactly the open-chain leak (**0.000E+000** closed against
+**1.971E-001** open). **A source is available to any substrate with an edge.**
+
+**Five defects are recorded**: the control's residual printed as **0** (the number that means "reconstructed exactly")
+where a non-divergent change has **no flux at all**, now rendered **n/a**; every cross-transfer was **counted twice**
+(8 of 16 instead of 2 of 10); `Single` was used where the substrate name is **not unique** (`"one connected ring"`
+matches both the 8-cell and the 96-cell rows), throwing in three report functions and caught **by the tests**; a
+garbage assertion would have **passed vacuously** on an empty string; and the centred operator's **halves** nearly put
+floating point into the one place the audit claims **exactness**, so its flux stays at twice scale.
+
+**Status.** COMPLETE. Tests `Y_G_079_Tests` **9/9**. Core `AT.Core/ResearchXH/ContinuityLawAudit.cs`; doc
+`Docs/ResearchY/G_GravitySource/ResearchY-G_079.md`. Registry: added as **Boundary**
+(`continuity-law-audit`) — the two-level pattern of D_028/D_040: **derived law, boundary requirement**. **Group-G count
+guards bumped:** `Y_G_033` 48 -> **49** and `Y_G_035` 79 -> **80** with survives 65 -> **66**. **Surfaces updated:**
+AT.Book `TheoryRegistry`, AT.App Theory Book chapter + **new Open Problem "Is connectivity a consequence of the theory
+or an input to it?"** + Research News + suite table.
 
 ## ResearchY-G_076 - Clock-Law Selection Audit (COMPLETE, REFUTED - the clock sector is structurally underdetermined)
 

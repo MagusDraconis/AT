@@ -6622,6 +6622,64 @@ contrast asymmetry is an **artifact of the empty cell** rather than a result of 
 AT.App gained a Theory Book chapter, a **new Open Problem ("May a cell be empty?")**, a Research News entry and a
 suite-table row; AT.Book gained the registry object.
 
+### ResearchY-G_079 - Continuity Law Audit (COMPLETE, BOUNDARY - the law is derived, one premise is an input)
+
+**Question.** G_077 made ρ the sole surviving clock source and G_078 found transport only, with **no source and no
+sink**. Is **∂tρ + ∇·J = 0** forced? A proof of continuity elevates transport from an **observation** to a **law**;
+any surviving source term would refute the transport-only conclusion.
+
+**Verdict: BOUNDARY - the law is derived for the surviving class and its three premises are measured rather than
+assumed.**
+
+**1. Every conserving operator IS a continuity equation, in exact integers.** The flux is written down —
+`J_i = ρ[i]` (upwind), `2 J_i = ρ[i+1] + ρ[i]` (centred, at twice scale so its halves stay integral),
+`J_i = ρ[i+1] − ρ[i]` (Laplacian) — reconstructed by prefix sums and verified with **residual 0**:
+
+| operator | conserves | is a transport | residual | flux ambiguity | exact |
+|---|---|---|---|---|---|
+| upwind / centred / Laplacian / one-link transport | True | True | 0 | 1 | True |
+| **CONTROL: growth** | False | **False** | **n/a** | 0 | False |
+
+The criterion is `rank([M|v]) == rank(M)` and it is **live**: the control fails it.
+
+**2. The flux is a gauge.** `rank = n − c`, `nullity = c` (7/1, 6/2, 4/4, 95/1) — **nullity 1 on every ring size**
+(4, 8, 16, 48, 96) — and the circulation is **unobservable**: **0 of 6** temporal observables read a flux.
+
+**3. Conservation is NOT continuity; connectivity is the missing premise.**
+
+| substrate | witnesses | conserving & transport | conserving & NOT transport |
+|---|---|---|---|
+| one connected ring | 8 | **8** | **0** |
+| two rings | 10 | 8 | **2** |
+| four rings | 12 | 8 | **4** |
+
+A **transfer across a cut** conserves the total and is **not any flux** — a **source/sink pair**. The check must be a
+**rank** check and not a sum (the failing witness has total `0`).
+
+**4. A source could be added without breaking any surviving measurement.** The pinned rows are **state functions**
+(9 of 9 laws carry the pinned slope; all 9 target rows), so a source breaks the **closure**, not a measurement, and
+the sector supplies a **live detector**: a source of `0.03` gives residual **exactly 0.030**, and declaring it restores
+`0.0E+000`.
+
+**5. The observables need one mode the flux cannot supply.** The kernel is the **uniform mode** (dim `1`), so ratios
+and differences are determined and the **absolute clock rate is not**; the conserved total fixes exactly that mode
+(**0** free). A **disconnected** substrate leaves **c − 1** relative levels free (**1**, **3**).
+
+**6. Interior versus boundary.** No interior source in the class; a **boundary flux** is exactly the open-chain leak
+(**0.000E+000** closed vs **1.971E-001** open) — so a source exists for any substrate with an **edge**.
+
+**Five defects are recorded**: the control's residual printed as **0** where it has **no flux at all** (now **n/a**);
+cross-transfers **counted twice** (8 of 16 instead of 2 of 10); `Single` used where the substrate name is **not
+unique**, throwing in three report functions and caught **by the tests**; a garbage assertion that would have **passed
+vacuously**; and the centred operator's **halves** nearly putting floating point into the one place the audit claims
+**exactness**.
+
+**Status.** COMPLETE. Tests `Y_G_079_Tests` **9/9**. Core `AT.Core/ResearchXH/ContinuityLawAudit.cs`; doc
+`Docs/ResearchY/G_GravitySource/ResearchY-G_079.md`. Registry: added as **Boundary** (`continuity-law-audit`).
+**Group-G count guards bumped:** `Y_G_033` 48 -> **49** and `Y_G_035` 79 -> **80** with survives 65 -> **66**.
+AT.App gained a Theory Book chapter, a **new Open Problem ("Is connectivity a consequence of the theory or an input to
+it?")**, a Research News entry and a suite-table row; AT.Book gained the registry object.
+
 ### ResearchY-G_076 - Clock-Law Selection Audit (COMPLETE, REFUTED - the clock sector is structurally underdetermined)
 
 **Question.** With G_075's result in hand - **F(0) = 1**, **F'(0) = 2** and the family **F = 1 + 2x + x²G(x)** with
