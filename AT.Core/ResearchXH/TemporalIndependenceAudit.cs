@@ -633,6 +633,21 @@ public static class TemporalIndependenceAudit
             + "the clock. NOT symbol-detectable: the suite names no B, g_rr or GammaOf — its vocabulary is rate laws, "
             + "maps and equivalence classes",
             ScanDetectsIt: false),
+        // ── G_075: the maximal clock-law family the surviving constraints admit ──
+        new SectorClaim("Y_G_075", "Clock Law Uniqueness", MetricRequirement.ClockOnly,
+            "the audit compares candidate clock laws F in g00 = -F(x) through the rate, the redshift and the "
+            + "coefficient ladder, and its answer turns on how far up the expansion the surviving rows can see - so "
+            + "the metric content is the clock. NOT symbol-detectable: the suite names no B, g_rr or GammaOf — its "
+            + "vocabulary is families, free rooms and envelopes",
+            ScanDetectsIt: false),
+        // ── G_076: which structural constraint, if any, selects one clock law ──
+        new SectorClaim("Y_G_076", "Clock Law Selection", MetricRequirement.ClockOnly,
+            "the audit tests candidate STRUCTURAL constraints as functional equations on the clock rate - "
+            + "composition, path independence, transport, locality, synchronization, count conservation and the "
+            + "actualization composition - so every quantity it measures is a clock reading and the metric content is "
+            + "the clock. NOT symbol-detectable: the suite names no B, g_rr or GammaOf — its vocabulary is "
+            + "functional equations, selection counts and composition laws",
+            ScanDetectsIt: false),
     };
 
     // ── The computed classification summaries ───────────────────────────────

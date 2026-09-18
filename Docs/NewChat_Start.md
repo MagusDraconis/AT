@@ -25,20 +25,55 @@ consequence requires it** (QM_011: **0 observables** require the native spectrum
 names no spectral object). **The one physical difference it does make is the dispersion fold's group-velocity
 reversal (23 channels against 0), and no observable reads the dispersion at high wavenumber.**
 
-**The time sector (group G, G_068 - G_074).** The theory's unique time prediction is the surface redshift
+**The time sector (group G, G_068 - G_076).** The theory's unique time prediction is the surface redshift
 **1 + z = exp(-x)** against GR's **(1 + 2x)^(-1/2)**, differing at **second order**. It is **decidable by one
 measurement on one object** (G_072): the redshift of **J0740+6620** to **14.1422 % (3 sigma)** or **7.5524 %
 (5 sigma)**, reached by a **next-generation timing** capability at **4.1374 sigma**, with a **direct surface-redshift
 measurement** to 1 % at **44.8377 sigma**. **The leverage is the timing, not the mass** (the published row and the
 radio-timing row both fail). And the clock law's **form** is decidable by the same programme (G_074): the logarithmic
 candidate shifts the redshift by **+4.784E-002**, a third of the AT-vs-GR separation of **1.256E-001**.
+**AND THE SURVIVING CONSTRAINT LIST DOES NOT FORCE THE LAW (G_075, REFUTED).** Assume only the **weak-field solar
+redshift**, **GPS time dilation**, the **first-order agreement with GR** and the surviving **G_035 clock-only sector**,
+with **no conformal-optics argument** and **no spatial-sector derivation**: what is forced is a **form and two
+numbers** - g00 = -F(x) with F positive and monotone in the clock potential alone, **F(0) = 1** and **F'(0) = 2** -
+and **nothing above the first order**, because **no realised measurement reaches it** (the solar row resolves **0**
+orders beyond the first and so does the GPS row, so the solar redshift would have to improve by **~4 711x** in F''(0)
+to see the AT-vs-GR difference of **4**). The **maximal family is F = 1 + 2x + x^2 G(x) with G arbitrary**, its
+**J0740+6620 prediction is bounded below (1.142288) and NOT bounded above (2.266E+013)**, and **it contains GR's own
+clock law** - so the surviving sector cannot separate the two theories the programme was built to decide between. The
+part of **g00 = -exp(2x)** the surviving sector forces is **exactly the part AT shares with GR**, and uniqueness is
+restorable only at a measured price: the single structural constraint **multiplicativity**, which admits exactly **1**
+of the 9 laws.
+**AND NO STRUCTURAL ROUTE FROM THE ALLOWED SOURCES SELECTS THE LAW EITHER (G_076, REFUTED - STRUCTURALLY
+UNDERDETERMINED).** Of the **10 allowed sources** turned into functional equations - **composition of successive
+redshifts**, **synchronization consistency**, **path independence**, **group properties**, **conservation laws**,
+**locality**, the **actualization-density reading**, **multiplicativity** and **operational clock transport** - **3 are
+NON-SELECTIVE** (locality, synchronization transitivity and count conservation each give **13 of 13 survivors at a
+spread of 0.000E+000**, because the family is by construction a function of the potential alone), **1 is REFUTED** (the
+actualization rule "all subsystems must advance" makes the rate the **minimum** of the parts while the occupancy
+multiplies, contradicting the recorded rate by **6.046E-002**, while the **product** rule reproduces it exactly),
+**5 are PARTIAL** and **1 SELECTS UNIQUELY - and that one is the CONJUNCTION of the composition law with the pinned
+measurement**, so it selects by **assuming** the composition law. The **four rows that do any work have the SAME ZERO
+SET** (the list is **one equation in four languages**), the composition law **alone** leaves **exp(kx)** with a free
+constant, **approximate multiplicativity leaves an interval** (at 1e-3: **|c| ≤ 4.871E-003**), a **viable mesh
+interpolant satisfies every mesh composition exactly** while differing between the points, and the **subgroup witness is
+unbounded near the vacuum** (**F = 2.411E-031 at x = -3.589E-004**) so **regularity**, not the composition law, closes
+it. **The cost from the infinite family to one law is THREE primitives - multiplicativity, regularity and a fixed map -
+and none of the three is derived by any surviving result.**
 
 **The two current open questions this leaves.** (1) **Does any observable read the lattice dispersion inside the
 band?** If one does, the fold's position becomes observable and QM_011's verdict becomes conditional - it is stated
-as conditional rather than as a theorem. (2) **Can the clock law's map be derived rather than assumed?** G_073 and
-G_074 both find that the form is fixed only up to the density-to-potential map, which the surviving audits take as an
-input: the metric's exponential and the rate's power are **the same statement**, so the open question is what fixes
-the map.
+as conditional rather than as a theorem. (2) **Can the clock law's map be derived rather than assumed?** G_073, G_074
+and G_075 all find that the form is fixed only up to the density-to-potential map, which the surviving audits take as
+an input: the metric's exponential and the rate's power are **the same statement**, G_075 measures the consequence
+(the surviving constraints force only the first order, and the family that remains contains GR), and the open question
+is therefore sharper than before: **the answer cannot come from the weak field at all**, so it must come either from a
+structural principle (**multiplicativity**, if the clock composition can be derived rather than assumed) or from the
+**compact-object measurement**, the only surviving row that reaches the second order. **G_076 closes the structural
+half of that question as far as the allowed sources go:** every source that is not the composition law is either
+satisfied by everything, refuted, or the same equation in another language, so **the clock sector is structurally
+underdetermined and the one constraint that selects presupposes the composition law it would have to derive**. The
+sector's own next question is therefore now sharply stated: **why does the clock composition multiply?**
 
 ## Reclassified Solved Problems
 
@@ -2928,6 +2963,182 @@ preferred sector. The verdict is computed with a **live branch in every directio
 
 No group-G registry claim, so claim counts are unchanged. Registry: added as **Boundary** (`sector-weight-audit`),
 reclassifying nothing. Tests: `Y_E_015_Tests` 7/7; group E **103/103**.
+
+## ResearchY-G_076 - Clock-Law Selection Audit (COMPLETE, REFUTED - the clock sector is structurally underdetermined)
+
+**Question.** With G_075's result in hand - **F(0) = 1**, **F'(0) = 2** and the family **F = 1 + 2x + x²G(x)** with
+**GR a member** - is there any **independent structural constraint**, drawn only from the allowed sources
+(**composition of successive redshifts**, **clock synchronization consistency**, **path independence**, **group
+properties**, **conservation laws**, **locality**, the **actualization-density interpretation**, **multiplicativity**,
+**operational clock transport**), that selects a unique clock law? **No fitting, no assumed exponential, no imported
+GR.** Determine which constraints force a unique F, whether multiplicativity uniquely yields exp(2x), whether any
+weaker law survives, and the **cost of every added constraint**.
+
+**Answer.** **REFUTED - NO INDEPENDENT SELECTOR EXISTS, AND THE CLOCK SECTOR IS STRUCTURALLY UNDERDETERMINED.** Of the
+**10 allowed sources as functional equations**, **3 are NON-SELECTIVE**, **1 is REFUTED**, **5 are PARTIAL** and **1
+SELECTS UNIQUELY - and the one that selects is the CONJUNCTION of the composition law with the pinned measurement**,
+so it selects by **assuming** the composition law.
+
+**The allowed sources are not independent, which is the first measurement.** Four rows from four different sources have
+the **same zero set** on the 13-law corpus, so the list is **one equation in four languages**:
+
+| law | composition | (1+z) factor | metric magnitude | log-additivity | path independence | same zero set |
+|---|---|---|---|---|---|---|
+| **exp(2x)** | **2.155E-016** | 2.288E-016 | 2.091E-016 | 2.949E-016 | 4.250E-016 | **yes** |
+| (1+x)^2 | 1.459E-001 | 1.459E-001 | 2.705E-001 | 1.577E-001 | 1.830E-002 | yes |
+| 1/(1-2x) | 1.489E-001 | 1.489E-001 | 1.289E+000 | 1.612E-001 | 7.156E-002 | yes |
+| Pade [2/2] | 4.627E-003 | 4.627E-003 | 9.233E-003 | 4.638E-003 | 1.930E-005 | yes |
+
+**The non-selective sources are measured as LAW-INDEPENDENT, not merely satisfied:** **locality** (the gradient enters
+nothing - the family is by construction a function of the potential alone), **synchronization transitivity** (equality
+of rates is an equivalence relation for any function of the potential) and **count conservation** (the residual
+contains **no F at all**) each give **13 of 13 survivors at a spread of 0.000E+000**.
+
+**The actualization composition is refuted rather than selecting.** With the occupancy multiplying: the **product**
+rule reproduces the recorded rate exactly (**0.000E+000**), the **minimum** - what "all subsystems must advance"
+implies - contradicts it by **6.046E-002**, the arithmetic mean by **1.029E-001** and the geometric mean by
+**1.019E-001**. So **the rule is constrained, but to the product, which is multiplicativity again**; the row is carried
+as **REFUTED (0 of 13)**, and a law not carrying the pinned data is marked **∞ (not an admissible candidate)** rather
+than scored as a pass.
+
+**And the composition law alone does not select.** exp(0.5x), exp(x), exp(1.5x), exp(2x) and exp(3x) all satisfy it to
+machine precision (**~2E-016**) and predict **1.063696687867**, **1.131450643780**, **1.203520302273**,
+**1.280180559309** and **1.448461117984** at J0740+6620 - **the constant is fixed by the measurement and the law by
+the assumption.**
+
+**Every weaker form survives, measured.** (a) **The mesh witness:** **e^(2x)(1 + β sin²(πx/δ))** with **β at 99.9 % of
+the monotonicity bound 2δ/π** is positive, monotone, carries the pinned data, satisfies **every mesh composition
+EXACTLY (1.110E-016)** while failing **between** the points by **4.145E-003** (worst deviation **6.227E-003**, **1 + z
+shift 2.655E-003** at the target) - and **monotonicity bounds the modulation**, so the strength of the constraint is
+set by the **operational resolution**. (b) **Approximate multiplicativity leaves a continuum**: at tolerance 1e-2 the
+surviving interval is **|c| ≤ 4.893E-002** (1 + z span **3.822E-003**), at 1e-3 **4.871E-003** (**3.805E-004**), at
+1e-4 **4.869E-004** and at 1e-6 **4.869E-006** - a tighter tolerance buys a **narrower interval, never a point**.
+(c) **The subgroup witness:** with the exponent additive on the subgroup generated by **1** and **√2** the law is
+multiplicative there and carries **F(0) = 1** exactly, while its values are **unbounded in every neighbourhood of the
+vacuum** (**F = 2.411E-031 at x = -3.589E-004**); the only exponent keeping it bounded, monotone and continuous is the
+**linear** one, **λ = 2√2 = 2.828427** - so **regularity is doing the closing, not the composition law**.
+
+**The cost table has a running total.** From the surviving empirical sector alone (**10** survivors of the corpus,
+spread **2.590E+001**, **0** primitives) to the composition law alone (**4** survivors, **4.485E-001**, **1** primitive
+- and it does **not** finish the job) to composition **plus** the pinned data (**1** survivor, **0.000E+000**) to the
+continuum form (**2** primitives) to a fixed map (**3** primitives, spread zero). **Three primitives take the infinite
+family to one law, and none of the three is derived by any surviving result.**
+
+**Six defects in the audit's own first version are recorded, and three are the same defect class.** (1) **The
+composition residual was ABSOLUTE**, so it cannot see a multiplicative constraint in the deep field where both rates are
+tinier than any tolerance: the free-room law exp(2x - 100x²) was reported as satisfying it at **1.786E-001** while its
+log-additivity residual was **12.5**. (2) **The pair set was made of mesh points** - (0.01, 0.02), (0.05, −0.02) and so
+on are all multiples of the mesh spacing - **so the audit's own witness satisfied every composition test exactly** and
+was invisible to the measurement that existed to catch it. (3) **The path-independence routes had the same defect**
+(0.24, 0.12 and 0.06 are mesh points). (4) **The pinned data was measured with the standard stencil**, whose step is
+half the mesh spacing and therefore read the modulator as a slope (**2(1+β)** instead of 2), excluding the witness by
+**the step of the probe** rather than by its own behaviour; the pinned residual now uses **h = 1E-5**. (5) **The
+conjunction had to be added as its own row because the first version labelled the composition row itself as selecting
+uniquely, which was FALSE** - the free constant of exp(kx) refutes it. (6) **The actualization row was a constant**, so
+the law-independent branch classified it as non-selective even though **no admissible law passes it**.
+
+**Status.** COMPLETE. Tests `Y_G_076_Tests` **9/9**. Core `AT.Core/ResearchXH/ClockLawSelectionAudit.cs`; doc
+`Docs/ResearchY/G_GravitySource/ResearchY-G_076.md`. Registry: added as **Refuted** (`clock-law-selection-audit`),
+reclassifying nothing - **G_075's family, G_074's map result and G_073's conditional uniqueness all stand**. **Group-G
+count guards bumped:** `Y_G_033` 45 -> **46** and `Y_G_035` 76 -> **77** with survives 62 -> **63** in both the registry
+census and the `MinimalTimeSector` view. Group G **562/562** after the change.
+
+## ResearchY-G_075 - Clock-Law Uniqueness Audit (COMPLETE, REFUTED - the forced part is the part shared with GR)
+
+**Question.** Assume **only the surviving empirical constraints** - the **weak-field solar redshift**, **GPS time
+dilation**, the **first-order agreement with GR** and the surviving **G_035 temporal sector**, with **no
+conformal-optics argument** and **no discarded spatial-sector derivation**. Which parts of **g00 = -exp(2x)** are
+forced? What is the **maximal family g00 = -F(x)**? Compute the **surface redshift of J0740+6620** for every surviving
+F(x), quantify the spread, and decide whether AT makes a **unique observable prediction**. Preference: refutation.
+
+**Answer.** **REFUTED - THE SURVIVING CONSTRAINT SET DOES NOT FORCE A UNIQUE CLOCK LAW, AND THE PART OF
+g00 = -exp(2x) THAT IT DOES FORCE IS EXACTLY THE PART AT SHARES WITH GR.**
+
+**What is forced is a form and two numbers.** The form **g00 = -F(x)** with F positive and monotone in the clock
+potential alone, from **G_035's arity proof** (no temporal observable can be *called* with a spatial quantity); then
+**F(0) = 1** and **F'(0) = 2**, carried by **9 of 9 laws** the audit compares - because the weak-field solar
+redshift, the GPS correction and the first-order agreement with GR are **all three the same number**.
+
+| feature | laws with it | status |
+|---|---|---|
+| the form g00 = -F(x), F positive and monotone | 9 of 9 | **UNIQUELY FORCED** (structure, not a measurement) |
+| **F(0) = 1** | 9 of 9 | **UNIQUELY FORCED** |
+| **F'(0) = 2** | 9 of 9 | **UNIQUELY FORCED** |
+| **F''(0) = 4** (the redshift quadratic 0.5) | 3 of 9 | **WEAKLY CONSTRAINED, by a projection only** |
+| **F'''(0) = 4/3** | 2 of 9 | **WEAKLY CONSTRAINED, by a projection only** |
+| **multiplicativity** F(a+b) = F(a)F(b) | **1 of 9** | **COMPLETELY FREE** - absent from the surviving list |
+
+**Nothing above the first order is pinned, because no realised measurement reaches it.** The measured reach rule: a
+redshift known to a relative precision eps at a potential x resolves the k-th term exactly when **|x|^(k-1) > eps**.
+
+| realised constraint | x | precision | orders beyond the first | bound on \|delta b2\| |
+|---|---|---|---|---|
+| **weak-field solar redshift** | **-2.123E-006** | 1.000E-002 | **0** | **9.420E+003** |
+| **GPS time dilation** | **-6.961E-010** | 2.000E-003 | **0** | **5.746E+006** |
+| first-order agreement with GR | 0 | - | 0 | unbounded |
+
+**The AT-vs-GR difference is |F''(0)_AT - F''(0)_GR| = |4 - 0| = 4**, so the solar redshift would have to improve by
+about **4 711x** to see it and the GPS row by a further **610x**. **The compact object is the only row that reaches
+the second order at all - and it is a projection of G_072's programme rather than an input to it.** So the
+classification is **2 UNIQUELY FORCED (orders 0, 1) + 3 WEAKLY CONSTRAINED (2, 3, 4 - by projections) + 2 COMPLETELY
+FREE (5, 6)**.
+
+**The maximal family, and the free room that never closes.** **F(x) = 1 + 2x + x^2 G(x) for an ARBITRARY G** - two
+numbers pinned and a whole function free. The free-room ladder exhibits, **for every order k**, two **viable** laws
+(**exp(2x)** and **exp(2x + 0.5 x^k)**) that are **identical below order k** and **different at order k**. **The
+physical range is OPEN at x = -1/2, and the audit says why:** GR's own clock law F = 1 + 2x reaches **zero** exactly
+there - that is its horizon - so a grid touching the endpoint would exclude the comparison theory by an endpoint
+convention and the comparison would be vacuous.
+
+**The prediction at J0740+6620, and the unbounded spread.** At **x = -0.247001**:
+
+| law | 1 + z | shift from AT |
+|---|---|---|
+| **exp(2x) - the recorded AT law** | **1.280180559309** | - |
+| **1 + 2x - GR's own clock law** | **1.405807032086** | **+1.256E-001** |
+| (1+x)^2 (G_074's logarithmic law) | 1.328023241157 | +4.784E-002 |
+| 1/(1-2x) | 1.222293851693 | -5.789E-002 |
+| Pade [1/1] | 1.286874695654 | +6.694E-003 |
+| Pade [2/2] | 1.280154024836 | -2.653E-005 |
+| exp(2x - 100x^2) | **2.704E+001** | +2.576E+001 |
+| **exp(2x - 1000x^2)** | **2.266E+013** | **+2.266E+013** |
+| **flat-then-rising (m = 3)** | **1.142287863594** | -1.379E-001 |
+
+**All nine are viable under ONE criterion, measured identically for each**: positive on the interval's interior,
+**non-decreasing to within double resolution**, F(0) = 1, and the pinned slope held to **the stencil's own measured
+refinement drift** (printed per law, because a typed 1e-6 can never be met by a law with a large fifth derivative).
+**Bounded below: True. Bounded above: False. Bounded: False.** The family **brackets GR's prediction from both
+sides**, and the finite comparison is already wider than the effect it was built to measure: the **six named laws span
+1.835E-001 = 1.46x** the AT-vs-GR separation. The three classical values **reproduce G_073 exactly**.
+
+**The decisive row: the family contains GR.** **GR's clock law F = 1 + 2x is a member** - positive, monotone,
+carrying F(0) = 1 and F'(0) = 2, predicting **1.405807032086** against AT's **1.280180559309**. So **the surviving
+sector cannot separate AT from GR**, which is what G_068-G_072 was built to do: the separation it measures is a
+separation between **two members of one family** - and the AT-below-GR ordering is not a consequence of the surviving
+sector either.
+
+**The repair, priced.** The single structural constraint **multiplicativity** admits **exactly 1 of the 9 laws** with
+the pinned data - **4.441E-016** for exp(2x) against **8.400E-001** (1 + 2x), **5.439E-001** ((1+x)^2), an infinity
+(1/(1-2x), through its pole), **2.000E+000** (Pade [1/1]), **4.633E-002** (Pade [2/2]) and **3.960E-002**
+(exp(2x - 100x^2)) - **and that is exactly the constraint G_073 found ABSENT from the surviving list**.
+
+**Five defects in the audit's own first version are recorded, and the first would have made the whole comparison
+vacuous.** (1) **The physical range was CLOSED at x = -1/2, which made GR's clock law non-viable** - F reaches zero
+exactly there, because that IS its horizon - so the comparison theory was excluded by an endpoint convention rather
+than by a measurement. (2) **The pinned slope was held to a typed 1e-6 while viability was held to a measured drift**,
+so a witness passed viability and was then uncounted in the feature table (**8 of 9**); one criterion now feeds both.
+(3) **The stencil's Richardson step divided by h a second time**, giving a drift of **466.7** for a linear law whose
+true drift is **2.2E-014**. (4) **The second-order comparison mixed two languages**, differencing b2 (2 against 0)
+where the forced-set difference is F''(0) = 2 b2 (4 against 0). (5) **The suppression witness was first run at m = 50
+and m = 1000**, where successive samples of F round to the same double so the monotonicity test called a monotone law
+non-monotone; the witnesses are now at m = 1, 2, 3 and the **m -> infinity limit is stated as a limit** rather than
+quoted as a number the grid cannot see.
+
+**Status.** COMPLETE. Tests `Y_G_075_Tests` **8/8**. Core `AT.Core/ResearchXH/ClockLawUniquenessAudit.cs`; doc
+`Docs/ResearchY/G_GravitySource/ResearchY-G_075.md`. Registry: added as **Refuted** (`clock-law-uniqueness-audit`),
+reclassifying nothing - **G_073 and G_074 keep their own verdicts, which are conditional on their own constraint
+lists**. **Group-G count guards bumped:** `Y_G_033` 44 -> **45** and `Y_G_035` 75 -> **76** with survives 61 -> **62**
+in both the registry census and the `MinimalTimeSector` view. Group G **553/553** after the change.
 
 ## ResearchY-G_074 - Clock Law Necessity Audit (COMPLETE, BOUNDARY - monotonicity shapes it, the map numbers it)
 
