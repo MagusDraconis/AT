@@ -94,12 +94,14 @@ public static class CubicSubstrateAudit
             int code = 0, comment = 0;
             foreach (var line in File.ReadLines(file))
             {
-                int n = CountOccurrences(line, "D96");
-                if (n == 0) continue;
-                var s = line.TrimStart();
-                bool isComment = s.StartsWith("//", StringComparison.Ordinal)
-                              || s.StartsWith("*", StringComparison.Ordinal);
-                if (isComment) comment += n; else code += n;
+                int raw = CountOccurrences(line, "D96");
+                if (raw == 0) continue;
+                // CODE, not prose: literals and comments are stripped before the token is counted (G_081's lesson —
+                // a pattern scan over this tree counts ordinary text otherwise), so a suite that merely NAMES the
+                // substrate in its report string or in a comment is not classified as a user of it.
+                int executable = CountOccurrences(AtSourceScan.StripLiteralsAndComments(line), "D96");
+                code += executable;
+                comment += raw - executable;
             }
             var name = Path.GetFileName(file).Replace("_Tests.cs", "");
             uses.Add(new SubstrateUse(name, code, comment));

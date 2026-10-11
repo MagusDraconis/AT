@@ -59,9 +59,14 @@ public class Y_G_033_Tests : ResearchTestBase
         // G_036, G_037 and G_038 added the rest, and none uses a substrate). G_039 and G_040 are DENSITY-era
         // audits: both recompute the D96 ring spectrum, so they belong on the other side of the line. G_041 joined
         // them: it asks whether d = 3 is selected, which means computing the D96^d family.
-        Assert.Equal(53, without.Length);   // G_072 and G_075-G_083 add suites whose code names no substrate object
-        Assert.Equal(27, withSubstrate.Length);
-        Assert.Equal(2, commentOnly.Length);                 // G_001 names D96 only in comments; G_046 uses it indirectly, through G_040
+        // THE SCANNER WAS CORRECTED BY THIS AUDIT (G_084): the code/comment split used to test only whether a LINE
+        // begins with // or *, so a D96 mention inside a report STRING or a /* */ block was counted as CODE. Three
+        // suites were misclassified by that rule — Y_G_004 (its report string names the substrate), Y_G_024 (a quoted
+        // method line) and Y_G_043 (its compared-family lines are literals) — and they now sit in the comment bucket,
+        // with G_034's meta-audit exclusion unchanged. with-substrate therefore reads 24 and comment-only 6.
+        Assert.Equal(53, without.Length);
+        Assert.Equal(24, withSubstrate.Length);
+        Assert.Equal(6, commentOnly.Length);                 // G_001, G_004, G_024, G_043, G_046, G_084: named in prose, computed with nowhere
 
         // The metric / closure era is the D96-FREE one. Spot-check its members by name.
         var bare = without.Select(u => u.Audit).ToHashSet(StringComparer.Ordinal);

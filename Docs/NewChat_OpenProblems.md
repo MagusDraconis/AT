@@ -25,20 +25,24 @@ Audit catalogue: `Docs/AuditIndex.md`.
      observable is `c`-invariant — **`c` is unphysical**, with one disclosed exception: a **global** reachability test
      can read it. **The question this handed on was "is the continuity law part of the theory or of the coordinate
      choice?", and G_083 answered it: COORDINATE CHOICE** — see below.
-  5. **Does anything in the theory require the transport picture?** G_083 classified the continuity law as
-     **COORDINATE CHOICE**: it is **exact** (**3 of 3** operators of the class reconstruct with residual **0**, so it is
-     not an effective law), it is **carried by no observable** (**0 of 29** claims need a flux value; **23** need the
-     occupation only and the **6** that need more need the operator's **structure**, i.e. the **assumed** connectivity),
-     and **removing the transport layer changes 0 of 4** recomputed quantities, with conservation becoming **vacuous**
-     rather than violated. It is also **not a gauge fixing**: it does not remove a freedom — the circulation survives it
-     with **nullity 1** on every ring size — so it **carries** a gauge. `FailureCore(continuity)` is **empty in
-     observables** (**0** observable, **3** structural). Its one assertion beyond count conservation is the **absence of
-     sources**, and what it supplies for that is a **detector**, not a measurement: the ledger residual becomes **exactly
-     the source**. **So the open question is whether anything requires the source-free, connected case at all** — either
-     something in the state or the update class **selects** it (in which case the transport layer is derived after all
-     and G_080-G_083 are superseded), or the clock, redshift and acceleration are carried entirely by the **occupation**
-     and the transport vocabulary is a description of a description. Referee test: **any measurement not expressible in
-     the occupation alone refutes G_083; any state whose evolution requires a source refutes the source-free premise.**
+  5. **What does the surviving sector's structure actually buy?** G_084 stripped every non-observable layer —
+     connectivity, the component count, the transport layer, the continuity law, the flux — and measured the smallest
+     theory that reproduces every surviving observable: **one state variable and three equations**, with **8 of 8**
+     readouts reproduced at difference **0.000E+000**, **observable fidelity 1.000** and **0** observable loss. **7 of
+     10** named quantities are removable — **2 coordinates** (the adjacency, which 2 readouts must be written along
+     while **0 of 8** move under a reversing relabelling that carries the state with it, and the scale, which moves **4
+     absolute** and **0 frame-invariant** readouts), **2 gauges** (the component count and the flux: the configuration
+     really differs and no readout moves) and **3 redundant descriptors** (the divergence, the transport capacity and
+     the ledger residual) — and **3 of 6** equations supply **no readout at all**, so the minimum cover is **3** (**5**
+     if the conservation row counts as an observable, and the audit reports both). The cost is **dissolution, not
+     refutation**: **23 of 29** claims hold (**0.793**) and **6 are dissolved** (rank `n − c`, nullity `c`, the failure
+     count `c − 1`, the `c − 1` free levels, the ledger's region conclusion, the finite path length), with **0**
+     refuted, measured at the readouts. **So the sharp form of the open question is: where does the direction in the
+     theory come from, if the transport picture is bookkeeping and the minimal core is `(ρ, A)`?** Either something in
+     the state or the update class **selects** the source-free, connected case (in which case G_080-G_084 are
+     superseded), or the clock, redshift and acceleration are carried entirely by the **occupation**. Referee test: a
+     readout not reproducible from `(ρ, A)` refutes G_084; a state whose evolution requires a source refutes the
+     source-free premise.
 
   G_080 also **answered** the question that previously stood here ("is connectivity a consequence of the theory or an
   input to it?"): **an input**, at the level of the allowed primitives, with both alternatives (derived, emergent)

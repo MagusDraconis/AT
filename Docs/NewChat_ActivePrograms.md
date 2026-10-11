@@ -18,7 +18,7 @@ D_028/D_040 is standard: a **value** may be DERIVED while the **window or input*
 
 | Front | State |
 |---|---|
-| Group G — gravity source | **at G_083** (continuity gauge: the law is exact, falsifiable and carried by no observable — a coordinate choice). The chain G_068-G_083 closed the time sector. |
+| Group G — gravity source | **at G_084** (minimal gravity core: one state variable and three equations, 0 observable loss, CoreCompressionRatio 2.667). The chain G_068-G_084 closed the time sector and then weighed it. |
 | Group QM — many-body correspondence | **closed** at QM_011 (the spectral fingerprint is an input, not a law). |
 | Group E — electromagnetism | **complete** at E_016. |
 | Groups A, B, C, D, M, NP, QG, R, S, T | complete or closed; catalogue in `Docs/AuditIndex.md`. |

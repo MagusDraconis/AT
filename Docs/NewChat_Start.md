@@ -29,17 +29,19 @@ gauge structure and cosmology are **downstream realizations**, not primitives.
    reversal (23 channels against 0), and no observable reads the dispersion at high wavenumber.
    Detail: [Archive Part 3](Archive/NewChat_Part3_QM.md) · [QM_007](ResearchY/QM_ManyBody/ResearchY-QM_007.md) …
    [QM_011](ResearchY/QM_ManyBody/ResearchY-QM_011.md).
-2. **The time sector (group G, G_068-G_083).** The theory's unique time prediction is the surface redshift
+2. **The time sector (group G, G_068-G_084).** The theory's unique time prediction is the surface redshift
    **1 + z = exp(−x)** against GR's **(1 + 2x)^(−1/2)**, differing at **second order**, and it is **decidable by one
    measurement on one object** (J0740+6620). The sector's own audits then showed that the *law* is not forced by
    anything that survives: the clock's form, its source and the substrate's connectivity are **inputs**, and
    redistribution is the only elementary channel — G_081 measured what connectivity costs (**6 of 29** claims, the
    transport layer), G_082 classified the component count it acts through as **gauge-like** (**0** local observables
-   read it), and G_083 closed the chain by classifying the **continuity law itself** as a **coordinate choice**:
+   read it), and G_083 closed that chain by classifying the **continuity law itself** as a **coordinate choice**:
    **exact**, **falsifiable** (its ledger is a live source-detector) and required by **no observable**
-   (**0 of 29** claims need a flux value).
+   (**0 of 29** claims need a flux value). G_084 then stripped every layer at once and **measured the size of what is
+   left**: the **minimal core is one state variable and three equations**, reproducing **8 of 8** readouts with
+   **0** observable loss at **CoreCompressionRatio 2.667** — and the cost is **6 dissolved claims and 0 refutations**.
    Detail: [Archive Part 2](Archive/NewChat_Part2_Gravity.md) · [G_072](ResearchY/G_GravitySource/ResearchY-G_072.md) …
-   [G_083](ResearchY/G_GravitySource/ResearchY-G_083.md).
+   [G_084](ResearchY/G_GravitySource/ResearchY-G_084.md).
 
 **The boundary is the theory's real content.** Five canonical inputs (R_001) plus three structural boundaries
 (QG_008/009/011); the deepest single boundary is the **discreteness of the actualization tick**. The weakest of the
@@ -173,7 +175,12 @@ Ranked weakest first. Each is an input the theory consumes rather than derives:
    flux value; removing the layer changes **0 of 4** recomputed quantities, conservation becoming **vacuous** rather
    than violated) and its **failure core is empty in observables** (**0** observable, **3** structural) — so it is a
    **coordinate choice**, whose one assertion beyond count conservation is the **absence of sources**, detected but not
-   required: [G_083](ResearchY/G_GravitySource/ResearchY-G_083.md).
+   required: [G_083](ResearchY/G_GravitySource/ResearchY-G_083.md). **And the whole sector has now been weighed**
+   (G_084): strip connectivity, the component count, the transport layer, the continuity law and the flux and the
+   **minimal core is one state variable and three equations** — **8 of 8** readouts reproduced with difference **0**,
+   **3 of 6** equations supplying no readout at all, **7 of 10** named quantities removable (2 coordinates, 2 gauges,
+   3 redundant descriptors), **CoreCompressionRatio 2.667** at **fidelity 1.000**, and a cost of **6 dissolved claims
+   and 0 refutations**: [G_084](ResearchY/G_GravitySource/ResearchY-G_084.md).
 3. **The empty cell.** Every G_078 bound is conditional on a cell being allowed to be empty, and **no surviving datum
    probes that regime**: [G_078](ResearchY/G_GravitySource/ResearchY-G_078.md).
 4. **The density-to-potential map.** The metric's exponential and the rate's power are the **same statement**, and
@@ -193,10 +200,11 @@ Ranked weakest first. Each is an input the theory consumes rather than derives:
 
 ## 4. Open Problems
 
-Four questions. The first three are the sector's own; the fourth follows the chain G_080-G_083, whose three
+Four questions. The first three are the sector's own; the fourth follows the chain G_080-G_084, whose four
 successive questions (**is connectivity an input?**, **what sets the component count?**, **is the continuity law
-physics or bookkeeping?**) were each **answered** — **an input**, **nothing the theory contains and a gauge for
-everything local**, and **a coordinate choice**.
+physics or bookkeeping?**, **what is the smallest theory that reproduces everything?**) were each **answered** —
+**an input**, **nothing the theory contains and a gauge for everything local**, **a coordinate choice**, and
+**one state variable and three equations with 0 observable loss**.
 
 1. Does any observable read the **lattice dispersion inside the band**? QM_011's verdict is conditional on "no"; if
    one does, the fold's position becomes observable.
@@ -205,14 +213,17 @@ everything local**, and **a coordinate choice**.
    reaches the second order.
 3. **May a cell be empty?** Every [G_078](ResearchY/G_GravitySource/ResearchY-G_078.md) bound is conditional on it,
    and no surviving datum probes the regime.
-4. **Does anything in the theory require the transport picture?** G_083 classified the continuity law as a
-   **coordinate choice** whose only content beyond count conservation is the **absence of sources** — detected by the
-   ledger (its residual becomes exactly the source) but **required by nothing**. Either something in the state or the
-   update class **selects** the source-free, connected case, or the sector's clock, redshift and acceleration are
-   carried entirely by the **occupation** and the transport vocabulary is a description of a description. The referee
-   test is sharp: any measurement not expressible in the occupation alone refutes G_083, and any state needing a source
-   refutes the premise. The answered questions it follows (**what sets the component count**, **is the continuity law
-   physics or bookkeeping**) are recorded in [NewChat_OpenProblems.md](NewChat_OpenProblems.md).
+4. **What does the surviving sector's structure actually buy?** G_084 stripped every non-observable layer and measured
+   the smallest theory that reproduces every observable: **one state variable and three equations**, with **0**
+   observable loss and **6** claims dissolved rather than refuted. So every statement that needs more than the
+   occupation and a **labelling** is a statement about structure the observables do not read. The sharp form of the
+   question: **where does the direction in the theory come from, if the transport picture is bookkeeping and the
+   minimal core is `(ρ, A)`?** Either something in the state or the update class **selects** the source-free, connected
+   case (in which case G_080-G_084 are superseded), or the sector's clock, redshift and acceleration are carried
+   entirely by the **occupation**. Referee test: a readout not reproducible from `(ρ, A)` refutes G_084; a state whose
+   evolution needs a source refutes the source-free premise. The three questions it follows (**is connectivity an
+   input?**, **what sets the component count?**, **is the continuity law physics or bookkeeping?**) were each
+   **answered** — recorded in [NewChat_OpenProblems.md](NewChat_OpenProblems.md).
 
 Full statements, the working hypothesis they sit under, and the reclassified (solved) problems:
 [NewChat_OpenProblems.md](NewChat_OpenProblems.md).

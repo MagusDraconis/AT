@@ -702,6 +702,13 @@ public static class TemporalIndependenceAudit
             + "alone. NOT symbol-detectable: the suite names no B, g_rr or GammaOf — its vocabulary is flux orbits, "
             + "bookkeepings, detectors and gauges",
             ScanDetectsIt: false),
+        // G_084: the minimal gravity core — what the surviving observables actually require
+        new SectorClaim("Y_G_084", "Minimal Gravity Core", MetricRequirement.ClockOnly,
+            "the audit strips every non-observable layer and asks what reproduces the sector's readouts: its entire "
+            + "vocabulary is the count density, a labelling, the potential map, the clock law, the gradient definition "
+            + "and the transport operators it removes, so the metric content is the clock alone. NOT symbol-detectable: "
+            + "the suite names no B, g_rr or GammaOf — its words are readouts, equations, covers and roles",
+            ScanDetectsIt: false),
     };
 
     // ── The computed classification summaries ───────────────────────────────

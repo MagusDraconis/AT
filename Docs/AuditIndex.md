@@ -15,6 +15,7 @@ numbers within a group are never reused. Groups are topics, not chronological or
 for that era, and only then the lifecycle status (`COMPLETE`). A `COMPLETE` therefore means the doc states no verdict
 token — the result is in the document's prose.
 
+
 ## Group summary
 
 | Group | Topic | Audits | Suites |
@@ -24,7 +25,7 @@ token — the result is in the document's prose.
 | C | Source Geometry | 2 | 2 |
 | D | Resonance Structure | 58 | 58 |
 | E | Electromagnetism | 16 | 16 |
-| G | Gravity Source | 85 | 85 |
+| G | Gravity Source | 86 | 86 |
 | M | Measurement | 16 | 16 |
 | NP | New Physics | 172 | 167 |
 | QG | Geometry Bridge | 18 | 18 |
@@ -33,7 +34,7 @@ token — the result is in the document's prose.
 | S | Synthesis | 1 | 1 |
 | T | Spectral Blueprint | 15 | 15 |
 
-## ResearchY audits (404 investigations, 398 suites)
+## ResearchY audits (405 investigations, 399 suites)
 
 | AuditNumber | Title | Status | Location |
 |---|---|---|---|---|
@@ -206,6 +207,7 @@ token — the result is in the document's prose.
 | G_081 | ResearchY-G_081 — Connectivity Dependency Audit | GLOBAL INPUT | [ResearchY-G_081.md](ResearchY/G_GravitySource/ResearchY-G_081.md) · [Y_G_081_Tests.cs](../AT.Tests/ResearchY/G_GravitySource/Y_G_081_Tests.cs) |
 | G_082 | ResearchY-G_082 — Component Count Audit | GAUGE-LIKE | [ResearchY-G_082.md](ResearchY/G_GravitySource/ResearchY-G_082.md) · [Y_G_082_Tests.cs](../AT.Tests/ResearchY/G_GravitySource/Y_G_082_Tests.cs) |
 | G_083 | ResearchY-G_083 — Continuity Gauge Audit | COORDINATE CHOICE | [ResearchY-G_083.md](ResearchY/G_GravitySource/ResearchY-G_083.md) · [Y_G_083_Tests.cs](../AT.Tests/ResearchY/G_GravitySource/Y_G_083_Tests.cs) |
+| G_084 | ResearchY-G_084 — Minimal Gravity Core Audit | MINIMAL CORE | [ResearchY-G_084.md](ResearchY/G_GravitySource/ResearchY-G_084.md) · [Y_G_084_Tests.cs](../AT.Tests/ResearchY/G_GravitySource/Y_G_084_Tests.cs) |
 | M_001 | ResearchY-M_001 — Measurement Origin Audit | COMPLETE | [ResearchY-M_001.md](ResearchY/M_Measurement/ResearchY-M_001.md) · [Y_M_001_Tests.cs](../AT.Tests/ResearchY/M_Measurement/Y_M_001_Tests.cs) |
 | M_002 | ResearchY-M_002 — Measurement Disturbance Audit | COMPLETE | [ResearchY-M_002.md](ResearchY/M_Measurement/ResearchY-M_002.md) · [Y_M_002_Tests.cs](../AT.Tests/ResearchY/M_Measurement/Y_M_002_Tests.cs) |
 | M_003 | ResearchY-M_003 — Measurement Feedback Audit | COMPLETE | [ResearchY-M_003.md](ResearchY/M_Measurement/ResearchY-M_003.md) · [Y_M_003_Tests.cs](../AT.Tests/ResearchY/M_Measurement/Y_M_003_Tests.cs) |

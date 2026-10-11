@@ -7140,3 +7140,95 @@ audit's own vocabulary being **COORDINATE CHOICE**. **Group-G count guards bumpe
 `Y_G_035` 83 -> **84** with survives 69 -> **70**. AT.App gained a Theory Book chapter, a Research News entry and a
 suite-table row; AT.Book gained the registry object. The open question handed on is **whether anything in the theory
 requires the transport picture** - or whether the absence of sources is an untestable premise.
+
+
+---
+
+### ResearchY-G_084 - Minimal Gravity Core Audit (COMPLETE, MINIMAL CORE - one state variable and three equations, 0 observable loss)
+
+**Question.** G_080 classified the substrate's connectivity as **ASSUMED**, G_082 the component count as
+**GAUGE-LIKE** and G_083 the continuity law as **COORDINATE CHOICE** - each audit removed a layer without breaking
+anything. So: **strip everything no surviving observable requires - connectivity, the component count, the transport
+layer, the continuity law and the flux variables - and find the smallest theory that reproduces every surviving
+observable.** The licence is removal only.
+
+**0. The three decisions.** (i) The canonical state is **one cosine mode** on the 96-cell ring (mean 1, total 96,
+strictly positive): on a **uniform** occupancy the gradient, every redshift and the uplift are identically zero, so
+"no readout moves" would be true and **meaningless** - the uniformity trap, the analogue of G_081's direction-count
+defect. (ii) The readout set is the **sector's own**: the six temporal observables G_035 declares **by signature** plus
+the two pair readouts, so it cannot be tuned to flatter the strip. (iii) The six equations are **switches on a
+description record**, so each can be removed and its supply **measured** rather than declared.
+
+**1. The reproduction test (tasks 3 and 4).** The transport layer is **carried into** the readout computation rather
+than bypassed (its contribution is the divergence's gauge residual, which the circulation identity makes exactly 0), so
+the test is a measurement. **8 of 8** readouts agree between the full and the minimal description with difference
+**0.000E+000**: G00 -1.367981E+000, the clock rate 1.169607E+000, the potential 1.566679E-001, the site redshift
+-1.450120E-001, the field gradient 1.634219E-002, the second-order AT/GR ratio 1.098132E+000, the link gradient
+2.677421E-004, the pair redshift -1.450120E-001. The **conservation row** is kept out of the observable set and reported
+separately: 0 in both descriptions, **VACUOUS** in the minimal one, with its ledger detecting a declared source of
+**0.0300** exactly.
+
+**2. The inventory (tasks 1 and 5).** Each quantity is varied over a family built from the surviving audits' own
+objects and the readouts that move are counted:
+**ESSENTIAL 3** - the count density (3 frame-invariant readouts move; 8 lost without it), the potential map (6 lost, 4
+absolute moved), the clock law (4 lost, 3 moved across G_075's 9 laws);
+**COORDINATE 2** - the adjacency (2 readouts must be written along an adjacency; **0 of 8** move under a reversing
+relabelling that carries the state with it) and the scale (a change of units moves **4 absolute** and **0
+frame-invariant** readouts);
+**GAUGE 2** - the component count and the flux (the configuration really differs - 96 -> 192 cells, J -> J + one
+circulation - and **0 of 8** readouts move);
+**REDUNDANT 3** - the divergence, the transport capacity and the ledger's source residual, functions of the removed
+layer with no readout and no independent variation.
+
+**3. The equations (task 2).** Supplies measured by removal: the potential map **6**, the clock law **4**, the gradient
+definition **2**, and **count conservation, the transport operator and the ledger each 0** - so **3 of 6** equations
+supply no readout at all. The **MINIMUM COVER over all 64 subsets is 3** (the potential map, the clock law, the
+gradient definition). Counting the conservation row as an observable gives **5** - and because that choice is a
+judgement rather than a measurement, the audit computes **both** and prefers neither.
+
+**4. The size (task 6).** **CoreCompressionRatio = 2.667** (16 named items -> 6: 10 quantities + 6 equations -> 3 + 3)
+with **observable fidelity 1.000**, **observable loss 0** and claims held **0.793**.
+
+**5. The loss is dissolution (task 4).** **23 of 29** claims hold unchanged and **6 are dissolved**: the rank `n - c`,
+the nullity `c`, the law's failure count `c - 1`, the `c - 1` free relative levels, the ledger's region conclusion, the
+finite path length. **0 are refuted** - each is a **true statement about the removed layer** whose **subject** is gone,
+and refutation is counted where it can be measured, at the readouts. The survivors and the dissolved set are exactly
+G_081's two groups.
+
+**6. Symbols that never appear in an observable (task 5).** The flux, the divergence, the component count, the
+transport capacity and the ledger residual: **5 symbols, 0 appearances**, established by the **arity proof executed**
+(every parameter of every temporal observable's signature is the occupation or the compactness) and **not** by a token
+scan - G_081 measured that pattern scans over this tree inflate counts on ordinary arithmetic.
+
+**7. What resists elimination (task 6).** The minimal description is **`(rho, A)`**: two readouts must be written along
+**some** adjacency. The audit measures that **no adjacency is privileged** (0 of 8 readouts move under the relabelling),
+which is why the labelling is the **coordinate system** and not a primitive, and it reports the 2 absolute readouts that
+a change of units moves rather than calling the scale invisible.
+
+**Seven defects are recorded**: a **vacuous "no readout moves"** where the c-family read the pair readout at a
+placeholder distance derived from the cell count (so at c = 2 it compared a different pair); **"no flux at all" that
+kept the displaced flux**, leaving the layer's gauge residual non-zero and moving a readout for a bookkeeping reason; a
+**hardcoded supply column** (now measured by removal); the **uniform-state trap** that would have made the whole audit
+empty; a cover that could be **tuned by a judgement** (now both are reported); a claim-loss row that counted
+**dissolution as refutation**; and a **test assertion about the number of maps** that the measurement corrected (the
+audit was right, the test was wrong).
+
+**And an eighth, in a PRE-EXISTING guard, rebuilt rather than worked around.** `CubicSubstrateAudit.ScanAudits` (G_033)
+split code from comments by testing only whether a **line** begins with `//` or `*`, so a substrate mention inside a
+**report string** or a `/* */` block counted as an executable reference. This audit's own suite was the trigger (its
+report states the substrate rule, and the scanner read that sentence as *using* the lattice), but the same rule had
+already misclassified **Y_G_004**, **Y_G_024** and **Y_G_043**. The scanner now strips literals and comments with the
+project's own **`AtSourceScan`** helper before counting, and the G_033 guard reads **24** suites whose code names the
+substrate, **6** that name it in prose only and **53** not at all. This is the **G_081 defect class** - a pattern scan
+counting ordinary text - and the correction is a **mechanical guard**, not a rule in prose. **The caveat travels with
+it:** the scanner detects the **token**, not the **dependency** (a suite that reaches the substrate through a helper
+names nothing in its executable lines), so the bucket is a statement about vocabulary, and the G_033 comment now says so.
+
+**Status.** COMPLETE. Tests `Y_G_084_Tests` **10/10**. Core `AT.Core/ResearchXH/MinimalGravityCoreAudit.cs`; doc
+`Docs/ResearchY/G_GravitySource/ResearchY-G_084.md`. Registry: added as **Derived** (`minimal-gravity-core-audit`) -
+unlike G_081-G_083, which are Boundary entries: those measured what an **input** costs, this one **derives** what the
+observables require. **Group-G count guards bumped:** `Y_G_033` 53 -> **54** and `Y_G_035` 84 -> **85** with survives
+70 -> **71**. AT.App gained a Theory Book chapter, a Research News entry and a suite-table row; AT.Book gained the
+registry object. The open question handed on is **structural**: the minimal core is `(rho, A)`, so every statement that
+needs more than the occupation and a labelling is a statement about structure the observables do not read, and the
+direction in the theory has to come from the state and its labelling alone.
