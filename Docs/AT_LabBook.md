@@ -8262,3 +8262,96 @@ AT.App gained a Theory Book chapter, a Research News entry and a suite-table row
 observable (through the potential's non-uniformity, as a parity of differences), while the handedness of the source and
 the direction of a transfer are **not** — the chirality account is zero, measured source by source, and the one bit
 G_098 found missing is confirmed **absent rather than hidden**.
+---
+
+### ResearchY-G_100 - Orientation Coupling Audit (COMPLETE, ORIENTATION-FIELD COUPLING IS DECOUPLED - THE ORIENTATION FIELD IS CARRIED, NOT ACTUATED)
+
+**Question.** G_097 measured that the law **diffuses** (width **sqrt(t)**, centroid shift zero, symbols non-positive);
+G_098 that directed transport is **absent** and the direction **not represented**; G_099 that the orientation **field**
+is **derived** and **observable** while the chirality and the transport rule are **assumed**. This audit asks the only
+question left: **does the derived orientation field couple to surviving dynamics strongly enough to generate directed
+propagation?** Every count names its object and is computed on the **96-cell ring alone**; the **cubic substrate is
+forbidden**; no new primitive, field, source term, topology axiom, action, Lagrangian, carrier, vector structure,
+orientation tag or transport rule is introduced. A negative result is acceptable.
+
+**0. The design is the difficulty.** The orientation field is a **function of the state**, so it cannot be varied while
+the state is held fixed: reversing it necessarily moves the state and the update moves with it, and a correlation
+between a field and an update is therefore **guaranteed by construction and measures nothing**. What decides the
+question is **(a)** whether the field has **independent degrees of freedom** and **(b)** whether the **transport
+measure** moves with it.
+
+**1. The orientation-field inventory (task 1).** **6** derived quantities: **3** read by an observable, **0**
+dynamical, and **0** with **independent degrees of freedom**. The field's peak is **7.438E-002**, its content
+**2.001E-001**, the odd part of the configuration **1.250E-001**, and the flux's magnitude column carries its **reader
+count**, which is **0**.
+
+**2. The coupling table (task 2), two halves and only one of them dynamical.** The descriptive half is **strong**:
+mean normalized product **0.0191**, peak **1.000**, Pearson **r = 0.909**, signed overlap **0.912**. The dynamical half
+reads **exactly zero**: the operator is a function of `(cells, links)` with **no state argument**, so its **9 216**
+matrix entries, its mode **symbol spectrum** and its **conservation** statement are **0.000E+000** apart under the same
+variation — and the law leaks **no parity** in either direction (**even -> odd 0.000E+000**, **odd -> even
+0.000E+000**).
+
+**3. The partition by equal orientation field (task 3) has DIMENSION 1.** The field fixes the potential up to one
+additive constant by telescoping, hence the state up to a positive **scale**. Measured on two **different** states
+that share the field: residual **2.776E-017** against the **1e-12** rule, and inside the partition the evolution
+differs by **exactly** that scale (**0.000E+000**). So the one free direction is the count's own scale — the
+**coordinate G_085 named** — and the field adds **no second dynamical mode**. The control row (the even part alone) is
+**not** in the partition: field residual **3.926E-002**, evolution residual **2.500E-001**.
+
+**4. The orientation reversal (task 4), by TWO faithful operations.** The **ring reflection** (a relabelling the law
+commutes with) and the **mean-preserving density inversion** `rho -> c/rho` (which flips the potential's sign
+**exactly** and is non-linear). **0 of 2 LAW objects change.** The reflection moves **every** state output by
+**0.000E+000**; the inversion leaves one visible residue of **1.866E-002**, which is its **own second-order term**
+(1/rho is not -rho) and is reported as a **state output** for exactly that reason. The field's sign flip is
+**1.388E-017** under the inversion (a ln/exp round trip) and **0.000E+000** under the reflection — because the same
+two values are subtracted in the opposite order.
+
+**5. The transport sensitivity (task 5): zero at the equality rule.** **7** members (five skews plus the two
+reversals, so both signs of the field are covered), **7 of 7** widths defined, **max |dT/dO| = 5.334E-013** against the
+**1e-12** rule, largest numerator **1.066E-014**. The derivative is zero **at the rule and not merely small**: the
+first moment of the update vanishes **identically by summation by parts** (`sum i (L rho)_i = 0` for every rho), so
+what remains is that vanishing's **rounding**, ~1e-16 **relative to the pattern's extent** of ~48 cells. Two choices
+are stated because each could have hidden the answer: the sweep is keyed on the field's **content**, because the
+**peak is constant** over the family (**7.438E-002 at every member** — the second bump never displaces the maximum);
+and every member's pattern is **sign-definite**, because a second moment exists only for one.
+
+**6. The observables (task 6), TWO readings.** **(a)** at the sector's **fixed canonical site**: **1** of **8**
+readouts changes — the two-site redshift, **7.722E-002** — and its difference **closes** to **1.925E-002** over 8 ticks,
+an amplification factor of **0.249 < 1**; **0** readouts amplify. **(b)** at each orientation's **own mirrored site**:
+**0** of **8** differ, at t = 0 **and** after 8 ticks — the two orientations are **bit-identical**. Reading (b) is the
+stronger and correct statement: the reversal is a **relabelling**, and what reading (a) measures is the **coordinate**
+it moves.
+
+**7. The reduction test (task 7).** Removing the orientation (projecting onto the even part) costs **2 observables**
+(the parity-odd readouts), **0 LAW objects** (no rate, damping or frequency depends on the field) and **0 transport
+quantities**, and leaves a **state-term residual of 2.500E-001** — the removed component carried by the same operator
+at the same rate as everything else.
+
+**Classification.** DESCRIPTIVE correlate — **COUPLED**; INDEPENDENT dynamical variable — **DECOUPLED**; SOURCE OF
+TRANSPORT — **DECOUPLED**; DYNAMICAL INPUT to the law — **DECOUPLED**; OBSERVABLE-ONLY effect — **COUPLED**.
+**SUCCESS CRITERION NOT MET; FAILURE CRITERION MET; TRANSPORT REMAINS ABSENT.**
+
+**Six defects are recorded.** (1) **A pattern measured against the state's own mean has total zero by construction**,
+so the centroid was **undefined**: the first draft read a "centroid shift" of **1.0** and a **NaN** width; fixed by
+measuring the flat background as the state's value **diametrically opposite its own maximum**, fixed once and held.
+(2) **A sweep keyed on the field's peak did not sweep**: `max |d_i|` is **7.438E-002 at every member**, so `dT/dO`
+would have divided by a constant; fixed by keying on the **content**. (3) **A second moment exists only for a
+sign-definite pattern**: a negative skew put a deficit two cells from the bump and the width came back **NaN**; fixed
+by sweeping a sign-definite family and carrying a **`WidthIsDefined`** flag. (4) **A state-output change was counted
+as a dynamical change**: the inversion's own residue made the success criterion read **MET**; fixed by separating
+**LAW objects** from **STATE OUTPUTS**. (5) **A record boolean supplied as a literal** was replaced by a **scope
+enum** with the derived booleans computed, so **G_027** stays green without a registry exception. (6) **The first
+task-6 reading drew a conclusion from a coordinate**; both readings are now reported and the phrasing that depended on
+the first was removed.
+
+**Status.** COMPLETE. Tests `Y_G_100_Tests` **9/9**. Core `AT.Core/ResearchXH/OrientationCouplingAudit.cs`; doc
+`Docs/ResearchY/G_GravitySource/ResearchY-G_100.md`. Registry: added as **Derived** (`orientation-coupling-audit`).
+**Group-G count guards bumped:** `Y_G_033` without 68 -> **69** (this suite names no substrate token anywhere),
+with-substrate 24, comment-only 6; `Y_G_035` 100 -> **101** with survives 86 -> **87** and MinimalTimeSector 86 ->
+**87**. AT.App gained a Theory Book chapter, a Research News entry and a suite-table row; AT.Book gained the registry
+object. **The coupling question is now closed:** the orientation field is **real, observable, strongly correlated with
+the update and connected to nothing** — it has no independent degrees of freedom, the only dynamical object in the
+sector does not read it, the geometry of its reversal is a relabelling, and the transport measure it would have to
+move is zero at the equality rule on **every** member of the family it parametrizes. **Directed propagation is not
+generated, and the field is carried rather than actuated.**

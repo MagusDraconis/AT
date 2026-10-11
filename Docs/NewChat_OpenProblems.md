@@ -228,7 +228,27 @@ Audit catalogue: `Docs/AuditIndex.md`.
    derived while no handedness of the source is. **So the question is split into two levels and the audit refuses to
    collapse it:** orientation as a **FIELD** is **DERIVED**; the **chirality of the configuration** is **ASSUMED**
    (measured absent); orientation as a **TRANSPORT RULE** remains **ASSUMED**. Referee test: a chirality of the
-   configuration **above** the equality rule, an orientation carried by the link set, or a readout of the flux.
+   configuration **above** the equality rule, an orientation carried by the link set, or a readout of the flux. **And
+   G_100 asked whether that derived, observable field ACTS** — the only question the chain had left — with the design
+   stated first, because it is the difficulty: **the field is a function of the state**, so it cannot be varied while
+   the state is held fixed, and a correlation between a field and an update is **guaranteed by construction and
+   measures nothing**. What decides it is whether the field has **independent degrees of freedom** and whether the
+   **transport measure** moves with it. **The partition the field defines has DIMENSION 1**, measured on two
+   **different** states that share the field (**2.776E-017** against the **1e-12** rule): the field fixes the state up
+   to a positive **scale** — the coordinate G_085 named — and inside the partition the evolution differs by **exactly**
+   that scale (**0.000E+000**). **The sensitivity is zero at the rule:** **max |dT/dO| = 5.334E-013** over **7** swept
+   members with **7 of 7** widths defined and the largest numerator **1.066E-014**, because the first moment of the
+   update vanishes **identically by summation by parts** and what remains is that vanishing's rounding. **The coupling
+   table has two halves and only one is dynamical:** the descriptive half is **strong** (Pearson **r = 0.909**, signed
+   overlap **0.912**), the dynamical half reads **exactly zero** — the operator's **9 216** entries, its symbol
+   spectrum and its conservation statement are **state-independent** — and the law leaks **no parity**. **The reversal
+   is a symmetry of the law:** the ring reflection moves **every** state output by **0.000E+000**, read at each
+   orientation's **own mirrored site** the two are **bit-identical in all 8 readouts**, and the one difference visible
+   at the sector's fixed site **closes** by a factor of **4**. **So the field is CORRELATED with the update and
+   CONNECTED to nothing**, and removing the orientation costs **2 observables, 0 law objects and 0 transport
+   quantities**. Referee test: a **state-dependent law** (an update that takes the field as an argument), a **transport
+   quantity with a non-zero numerator** on some member of the family, a **parity leak** in the update, or an
+   **observable that reads the flux**.
 
   G_080 also **answered** the question that previously stood here ("is connectivity a consequence of the theory or an
   input to it?"): **an input**, at the level of the allowed primitives, with both alternatives (derived, emergent)

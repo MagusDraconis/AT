@@ -29,7 +29,7 @@ gauge structure and cosmology are **downstream realizations**, not primitives.
    reversal (23 channels against 0), and no observable reads the dispersion at high wavenumber.
    Detail: [Archive Part 3](Archive/NewChat_Part3_QM.md) · [QM_007](ResearchY/QM_ManyBody/ResearchY-QM_007.md) …
    [QM_011](ResearchY/QM_ManyBody/ResearchY-QM_011.md).
-2. **The time sector (group G, G_068-G_099).** The theory's unique time prediction is the surface redshift
+2. **The time sector (group G, G_068-G_100).** The theory's unique time prediction is the surface redshift
    **1 + z = exp(−x)** against GR's **(1 + 2x)^(−1/2)**, differing at **second order**, and it is **decidable by one
    measurement on one object** (J0740+6620). The sector's own audits then showed that the *law* is not forced by
    anything that survives: the clock's form, its source and the substrate's connectivity are **inputs**, and
@@ -51,8 +51,13 @@ gauge structure and cosmology are **downstream realizations**, not primitives.
    **exactly zero**, **48! = 10^61.094** histories identical); the structure does not even **represent** a direction
    (G_098); and orientation is **derived as a FIELD** but **not as a HANDEDNESS** (G_099: the state is **parity-even to
    the rounding**, the chirality account is **0 bit source by source**, and one added bit buys **no observable**).
+   G_100 then asked whether that field **acts**: **DECOUPLED** — **0** independent degrees of freedom (its partition
+   has dimension **1**, and that dimension is the count's **scale**), **max |dT/dO| = 5.334E-013** over a
+   **seven-member** sweep (zero at the **1e-12** rule, the numerator being the rounding of a first moment that vanishes
+   **by summation by parts**), the two orientations **bit-identical in all 8 readouts** at their **own mirrored
+   sites** — so the field is **CORRELATED with the update and CONNECTED to nothing**.
    Detail: [Archive Part 2](Archive/NewChat_Part2_Gravity.md) · [G_072](ResearchY/G_GravitySource/ResearchY-G_072.md) …
-   [G_099](ResearchY/G_GravitySource/ResearchY-G_099.md).
+   [G_100](ResearchY/G_GravitySource/ResearchY-G_100.md).
 
 **The boundary is the theory's real content.** Five canonical inputs (R_001) plus three structural boundaries
 (QG_008/009/011); the deepest single boundary is the **discreteness of the actualization tick**. The weakest of the
@@ -173,20 +178,15 @@ Ranked weakest first. Each is an input the theory consumes rather than derives:
    Actualization, the generation relation, count conservation) detect a cut, and the **component count is a conserved
    integer the theory never sets** — an initial datum like the count itself:
    [G_080](ResearchY/G_GravitySource/ResearchY-G_080.md). **And its price is now measured** (G_081): connectivity is a
-   **GLOBAL INPUT** with a **small failure core** — **6 of 29** surviving claims depend on it directly, **4 of 29**
-   (0.138) are functions of the rank identity `n − c`, **23 of 29** (0.793) survive without it, and the whole core is
-   triggered by **2 link removals**. Only **4 of the 14** surviving audits even name a ring, path or neighbour
-   assumption, and the undeclared ones all sit in the single audit that owns the core:
-   [G_081](ResearchY/G_GravitySource/ResearchY-G_081.md). **And the component count itself is a gauge for everything
+   **GLOBAL INPUT** with a **small failure core** — **6 of 29** claims depend on it directly, **23 of 29** survive
+   without it, and the whole core is triggered by **2 link removals**: [G_081](ResearchY/G_GravitySource/ResearchY-G_081.md). **And the component count itself is a gauge for everything
    local** (G_082): **0** observables read it, changing it changes the local read shape by **0** and every ratio by
    **0**, and the only local quantity that moves under normalization is a **uniform shift** (`c^(−1/d)`) that no
    observable reads — so `c = 1` is a **coordinate choice for 23 of 29 claims** and a physical statement for the 6 in
    the transport layer: [G_082](ResearchY/G_GravitySource/ResearchY-G_082.md). **And the transport layer's own law is
    bookkeeping** (G_083): the continuity equation is **exact**, **carried by no observable** (**0 of 29** claims need a
-   flux value; removing the layer changes **0 of 4** recomputed quantities, conservation becoming **vacuous** rather
-   than violated) and its **failure core is empty in observables** (**0** observable, **3** structural) — so it is a
-   **coordinate choice**, whose one assertion beyond count conservation is the **absence of sources**, detected but not
-   required: [G_083](ResearchY/G_GravitySource/ResearchY-G_083.md). **And the whole sector has now been weighed**
+   flux value) and its **failure core is empty in observables** — so it is a **coordinate choice**, whose one
+   assertion beyond count conservation is the **absence of sources**: [G_083](ResearchY/G_GravitySource/ResearchY-G_083.md). **And the whole sector has now been weighed**
    (G_084): strip connectivity, the component count, the transport layer, the continuity law and the flux and the
    **minimal core is one state variable and three equations** — **8 of 8** readouts reproduced with difference **0**,
    **3 of 6** equations supplying no readout at all, **7 of 10** named quantities removable (2 coordinates, 2 gauges,

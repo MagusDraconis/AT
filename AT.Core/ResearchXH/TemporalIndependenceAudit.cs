@@ -816,6 +816,13 @@ public static class TemporalIndependenceAudit
             + "under reversal, so the metric content is the clock alone. NOT symbol-detectable: the suite names no B, "
             + "g_rr or GammaOf — its words are automorphism, reflection, chirality, parity and reversal",
             ScanDetectsIt: false),
+
+        new SectorClaim("Y_G_100", "Orientation Coupling", MetricRequirement.ClockOnly,
+            "the audit asks whether the derived orientation field couples to the dynamics: its vocabulary is the signed "
+            + "link difference, the transport/diffusion ratio, the partition by equal field and the parity channels of "
+            + "the update, so the metric content is the clock alone. NOT symbol-detectable: the suite names no B, g_rr or "
+            + "GammaOf — its words are coupling, sensitivity, reversal, partition and transport",
+            ScanDetectsIt: false),
     };
 
     // ── The computed classification summaries ───────────────────────────────

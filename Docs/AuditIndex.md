@@ -32,7 +32,7 @@ token — the result is in the document's prose.
 | C | Source Geometry | 2 | 2 |
 | D | Resonance Structure | 58 | 58 |
 | E | Electromagnetism | 16 | 16 |
-| G | Gravity Source | 101 | 101 |
+| G | Gravity Source | 102 | 102 |
 | M | Measurement | 16 | 16 |
 | NP | New Physics | 172 | 167 |
 | QG | Geometry Bridge | 18 | 18 |
@@ -41,7 +41,7 @@ token — the result is in the document's prose.
 | S | Synthesis | 1 | 1 |
 | T | Spectral Blueprint | 15 | 15 |
 
-## ResearchY audits (420 investigations, 414 suites)
+## ResearchY audits (421 investigations, 415 suites)
 
 | AuditNumber | Title | Status | Location |
 |---|---|---|---|---|
@@ -230,6 +230,7 @@ token — the result is in the document's prose.
 | G_097 | ResearchY-G_097 — Pattern Kinematics Audit | MOTION IS EMERGENT; ITS KINEMATICS IS ASSUMED | [ResearchY-G_097.md](ResearchY/G_GravitySource/ResearchY-G_097.md) · [Y_G_097_Tests.cs](../AT.Tests/ResearchY/G_GravitySource/Y_G_097_Tests.cs) |
 | G_098 | ResearchY-G_098 — Directed Transport Audit | DIRECTED TRANSPORT IS ASSUMED — THE SURVIVING STRUCTURE DOES NOT EVEN REPRESENT A DIRECTION | [ResearchY-G_098.md](ResearchY/G_GravitySource/ResearchY-G_098.md) · [Y_G_098_Tests.cs](../AT.Tests/ResearchY/G_GravitySource/Y_G_098_Tests.cs) |
 | G_099 | ResearchY-G_099 — Orientation Origin Audit | ORIENTATION IS DERIVED AS A FIELD, ASSUMED AS A TRANSPORT RULE | [ResearchY-G_099.md](ResearchY/G_GravitySource/ResearchY-G_099.md) · [Y_G_099_Tests.cs](../AT.Tests/ResearchY/G_GravitySource/Y_G_099_Tests.cs) |
+| G_100 | ResearchY-G_100 — Orientation Coupling Audit | ORIENTATION-FIELD COUPLING IS DECOUPLED — THE ORIENTATION FIELD IS CARRIED, NOT ACTUATED | [ResearchY-G_100.md](ResearchY/G_GravitySource/ResearchY-G_100.md) · [Y_G_100_Tests.cs](../AT.Tests/ResearchY/G_GravitySource/Y_G_100_Tests.cs) |
 | M_001 | ResearchY-M_001 — Measurement Origin Audit | COMPLETE | [ResearchY-M_001.md](ResearchY/M_Measurement/ResearchY-M_001.md) · [Y_M_001_Tests.cs](../AT.Tests/ResearchY/M_Measurement/Y_M_001_Tests.cs) |
 | M_002 | ResearchY-M_002 — Measurement Disturbance Audit | COMPLETE | [ResearchY-M_002.md](ResearchY/M_Measurement/ResearchY-M_002.md) · [Y_M_002_Tests.cs](../AT.Tests/ResearchY/M_Measurement/Y_M_002_Tests.cs) |
 | M_003 | ResearchY-M_003 — Measurement Feedback Audit | COMPLETE | [ResearchY-M_003.md](ResearchY/M_Measurement/ResearchY-M_003.md) · [Y_M_003_Tests.cs](../AT.Tests/ResearchY/M_Measurement/Y_M_003_Tests.cs) |
