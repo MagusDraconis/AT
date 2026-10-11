@@ -716,6 +716,13 @@ public static class TemporalIndependenceAudit
             + "so the metric content is the clock alone. NOT symbol-detectable: the suite names no B, g_rr or GammaOf "
             + "— its words are maps, variations, roles and anchors",
             ScanDetectsIt: false),
+        // G_086: whether the observable kernel can be reduced to one function of the density
+        new SectorClaim("Y_G_086", "Observable Kernel", MetricRequirement.ClockOnly,
+            "the audit asks whether the rate kernel alone carries the sector's content: its vocabulary is the density, "
+            + "the rate, the source, the logarithmic derivative and the readouts computed from them, so the metric "
+            + "content is the clock alone. NOT symbol-detectable: the suite names no B, g_rr or GammaOf — its words are "
+            + "kernels, mismatches, dimensions and anchors",
+            ScanDetectsIt: false),
     };
 
     // ── The computed classification summaries ───────────────────────────────

@@ -30,24 +30,23 @@ Audit catalogue: `Docs/AuditIndex.md`.
      smallest theory that reproduces every surviving observable: **one state variable and three equations**, with
      **8 of 8** readouts reproduced, **observable fidelity 1.000** and **0** loss (7 of 10 named quantities removable;
      **3 of 6** equations supply no readout; a minimum cover of 3; the cost **6 dissolved claims and 0 refutations**).
-     G_085 then weighed the **two maps** that core keeps (`A = f(ρ)` and `clock = W(A)`) and found that they are
-     observable **only through the composition `W ∘ f` and the source `f′`**: the **compensated shift**
-     (`f → f + b, W → W(· − b)`) leaves the **rate field** and the **source field** **bit-identical** while the maps
-     differ — **0 predictions** move, only the potential's own level, which is a **convention** — so the **split of the
-     composition into a potential map and a clock map is not observable** and the pair carries a **one-parameter
-     gauge**. The **count's unit** and the **clock's unit** are **coordinates** (the latter definitional: the variation
-     makes the pinned data fail); the potential's **scale** and every **non-affine distortion** are **excluded** by the
-     acceleration and by a value the sector already quotes (the uplift cap, by **5.000E-001** and **5.000E-002**); and
-     the clock law's **shape** is **physical and undetermined** — across `c ∈ {−0.4 … 0.4}` every member satisfies the
-     pinned data below **1E-09** while the target comparison moves by more than **1E-03**, with no quoted value moving.
-     `MapRedundancyRatio = 3.000` (3 parameters carried, 1 required, 2 conventions removed). **And the readout set has
-     a redundancy of its own:** `g00 = −rate²` **exactly**, so the metric readout and the clock readout are **one
-     statement**. **So the open question is: does any surviving statement read more than the rate field and the source,
-     or depend on where the potential's zero is put?** Anything that does is a statement about the **description**
-     rather than about the observables. Beside it stands the sector's live prediction: the free room is decided by the
-     **compact-object measurement** (J0740+6620), not by anything already in hand. Referee test: a prediction that
-     moves under the compensated shift, a quoted value that moves with the free room, or a readout not reproducible
-     from the rate and source fields would each change the verdict.
+     G_085 weighed the **two maps** that core keeps and found them observable **only through the composition `W ∘ f`
+     and the source `f′`** (one **gauge** — the compensated shift — two **coordinates**, one **undetermined** physical
+     parameter, the free room; `MapRedundancyRatio = 3.000`). G_086 then asked whether those two objects are really
+     two, and the answer is **ONE FUNCTION OF THE DENSITY**: every readout is recomputed from the **rate kernel
+     `K(ρ) = W(f(ρ))`** with **no potential map and no clock map** — the potential **defined** as `ln K` (the sector's
+     own statement `g00 = −K²`) and the source as its gradient — and **8 of 8** come back (six bit-identical, two at the
+     1-ulp `ln∘exp` rounding). So `S = (ln K)′` holds for the sector's law to **9.021E-013** and fails by a **measured
+     field** for the free room (**7.636E-002**) and a GR-shaped law (**1.308E+000**), with the failure confined to the
+     source-carrying readouts; the λ family (the same rate, a different split) shows the collapse is a property of the
+     sector's content, the acceleration excluding every member but `λ = 1`. **And the mismatch field is proportional to
+     `ln ρ`, so it vanishes at the mean density — exactly where the pinned data live** (**1.671E-010** against
+     **7.636E-002** elsewhere): the structural reason the anchors are blind to the free room, which G_085 measured
+     without explaining. `ObservableKernelDimension = 1` for the sector's law and **2** in general, and the deciding
+     parameter is the free room. **So the open question is no longer a reduction but a measurement:** does a
+     second-order redshift at the target confirm the one-function kernel (**free room zero**), or restore the source as
+     an **independent gravity object**? Referee test: a readout not reproducible from `K` alone, a non-zero mismatch
+     for the sector's law, or a mismatch that failed to vanish at the mean density would each change the verdict.
 
   G_080 also **answered** the question that previously stood here ("is connectivity a consequence of the theory or an
   input to it?"): **an input**, at the level of the allowed primitives, with both alternatives (derived, emergent)

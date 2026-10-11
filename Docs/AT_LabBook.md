@@ -7301,3 +7301,68 @@ Book chapter, a Research News entry and a suite-table row; AT.Book gained the re
 handed on is sharper than G_084's: the sector's content is **two fields of the density** - the rate and the source -
 so any statement that reads more than those two, or that depends on where the potential's zero is put, is a statement
 about the **description** rather than about the observables.
+
+
+---
+
+### ResearchY-G_086 - Observable Kernel Audit (COMPLETE, OBSERVABLE KERNEL COLLAPSE - one function of the density, conditionally)
+
+**Question.** G_084 derived the minimal gravity core and G_085 showed that the maps are observable only through their
+composition and their derivative, leaving two observable objects: the rate `K(rho) = W(f(rho))` and the source
+`S(rho) = f'(rho)`. **Can the observable kernel be reduced further?** A successful reduction removes the distinction
+between `f` and `W`; a failure proves the kernel minimal.
+
+**1. Every readout as a function of the density (tasks 1 and 2).** The readouts are recomputed from the kernel with
+**no potential map and no clock map anywhere** - the potential is **defined** as `ln K` (which is what
+`A = 1/2 ln(-g00)` says once `g00 = -K^2`) and the source is the gradient of that. **8 of 8 reproduced**: g00
+-1.265883E+000, the clock rate 1.125115E+000, the potential 1.178851E-001 (difference **2.776E-017**), the site
+redshift -1.112018E-001, the field gradient 1.068823E-003, the AT/GR ratio 1.799687E+000, the link gradient
+2.760186E-004 (**5.551E-017**), the pair redshift 3.954467E-002. Six rows are bit-identical and **two sit at the 1-ulp
+rounding of the `ln o exp` round trip** - reported rather than called zero, because the kernel route writes the
+potential as a logarithm of an exponential while the maps route carries it directly. The identity `A = ln K` holds to
+1e-12, so **both maps are INDIVIDUALLY ELIMINABLE**.
+
+**2. The collapse and its exact condition (tasks 3 and 4).** The source equals the rate's logarithmic derivative **iff**
+the clock law's logarithmic derivative is 1 - that is, **iff the clock law is exponential**, which the recorded law is.
+So `K` **is the only observable clock object**, and for the sector's law `S` is **not** an independent gravity object:
+it *is* `(ln K)'`. **The failure is measured rather than argued:** the mismatch field `S - (ln K)'` is **9.021E-013**
+for the sector's law (the numerical floor of the central difference, `h = 1e-4`), **7.636E-002** for the free room and
+**1.308E+000** for a GR-shaped law. What fails is **exactly the source-carrying readouts** - the potential's level and
+the two gradients - and **the clock readouts never fail in any description**. For the free room the mismatch is the
+exact field `-c ln rho / (d^2 rho)`, checked cell by cell on 96 cells.
+
+**3. Further redundancy, and why the anchors are blind (task 5).** `g00 = -K^2` **exactly**; the site redshift is
+`1/K - 1`; the pair redshift is a ratio of `K`. And the audit's sharpest observation: the mismatch field is
+proportional to `ln rho`, so it **vanishes at the mean density** - exactly where the pinned data live. Measured:
+**1.671E-010** at the mean against **7.636E-002** elsewhere for the free room, while `K(1) = 1` and
+`d(K^2)/dA(0) = 2` hold for **every** member. That is the **structural reason** the anchors cannot select the free
+room: G_085 measured the blindness, this audit **explains** it. (The slope is `d(K^2)/dA` at `A = 0`, i.e. `d` times
+`d(K^2)/d rho` at `rho = 1`, the chain rule written out.)
+
+**4. The collapse is not a reparametrization artefact.** The lambda family (`f -> l f`, `W -> W(. / l)`) shares the
+**rate exactly** at every member while the source scales with `l` (the source's ratio 0.500 / 0.750 / 1.000 / 1.500 /
+2.000 for `l` = 0.5 / 0.75 / 1 / 1.5 / 2), and the **acceleration excludes every member but `l = 1`**, the sector's own
+split. So the collapse follows from the sector's content and not from how it was written down.
+
+**5. The dimension and the representation (tasks 6 and 7).** `ObservableKernelDimension = 1` for the sector's law and
+**2** in general (free room, GR shape), and **the deciding parameter is the free room** - the one thing the surviving
+data leave open. The minimal representation: one **State** (the count density), one **Observable map** (the rate
+kernel, a second only in the non-exponential case), and seven **Predictions** - the clock, the metric `g00 = -K^2`, the
+gravity `a = grad ln K`, the AT/GR discrimination - plus the **Anchor** `K(1) = 1`.
+
+**Five defects are recorded**: a `Single` lookup for "the cell at the mean density" **throws** because the symmetric
+profile has two such cells (the anchors are now evaluated from the kernel itself); the **pinned slope was
+differentiated with respect to the wrong variable** (`d(K^2)/d rho` reported as `d(K^2)/dA`, an error of the factor
+`d = 3`); a **cross-check compared a pointwise derivative with a ring gradient** (the two are related by the density
+gradient, not equal - the cross-check now asserts the two exact identities); an **assertion about a count that was not
+the count in question** (three map parts where the inventory has six - the same slip as G_084's suite); and a
+**garbled symbol in the Theory Book text** (`1/2 ln(-g00)` written as `1/2l n(-g00)`), caught by reading the rendered
+output rather than the diff.
+
+**Status.** COMPLETE. Tests `Y_G_086_Tests` **10/10**. Core `AT.Core/ResearchXH/ObservableKernelAudit.cs`; doc
+`Docs/ResearchY/G_GravitySource/ResearchY-G_086.md`. Registry: added as **Derived** (`observable-kernel-audit`).
+**Group-G count guards bumped:** `Y_G_033` without 54 -> **55** (this suite names no substrate token anywhere),
+with-substrate 24, comment-only 6; `Y_G_035` 86 -> **87** with survives 72 -> **73**. AT.App gained a Theory Book
+chapter, a Research News entry and a suite-table row; AT.Book gained the registry object. **The chain has reached the
+point where the next step is data:** a second-order redshift at the target either confirms the one-function kernel
+(the free room zero) or restores the source as an independent gravity object.

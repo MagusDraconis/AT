@@ -29,7 +29,7 @@ gauge structure and cosmology are **downstream realizations**, not primitives.
    reversal (23 channels against 0), and no observable reads the dispersion at high wavenumber.
    Detail: [Archive Part 3](Archive/NewChat_Part3_QM.md) · [QM_007](ResearchY/QM_ManyBody/ResearchY-QM_007.md) …
    [QM_011](ResearchY/QM_ManyBody/ResearchY-QM_011.md).
-2. **The time sector (group G, G_068-G_085).** The theory's unique time prediction is the surface redshift
+2. **The time sector (group G, G_068-G_086).** The theory's unique time prediction is the surface redshift
    **1 + z = exp(−x)** against GR's **(1 + 2x)^(−1/2)**, differing at **second order**, and it is **decidable by one
    measurement on one object** (J0740+6620). The sector's own audits then showed that the *law* is not forced by
    anything that survives: the clock's form, its source and the substrate's connectivity are **inputs**, and
@@ -186,7 +186,13 @@ Ranked weakest first. Each is an input the theory consumes rather than derives:
    the count's and the clock's units are **coordinates**, the potential's scale and every non-affine distortion are
    **excluded by the acceleration**, and the clock law's shape is **physical and undetermined** (five free-room members
    satisfy the pinned data below **1E-09** while the target prediction moves): `MapRedundancyRatio = 3.000`
-   ([G_085](ResearchY/G_GravitySource/ResearchY-G_085.md)).
+   ([G_085](ResearchY/G_GravitySource/ResearchY-G_085.md)). **And the two surviving objects have now been collapsed to
+   one** (G_086): every readout is a function of the density through the **rate kernel alone** (**8 of 8**,
+   difference **0** up to the 1-ulp `ln∘exp` rounding), the potential being **defined** as `ln K` and the source as its
+   gradient — so `S = (ln K)′` holds for the sector's law (**9.021E-013**) and fails by a measured field for the free
+   room (**7.636E-002**) and a GR-shaped law (**1.308E+000**), with the mismatch **vanishing at the mean density**,
+   where the pinned data live: `ObservableKernelDimension = 1`, **2** in general
+   ([G_086](ResearchY/G_GravitySource/ResearchY-G_086.md)).
 3. **The empty cell.** Every G_078 bound is conditional on a cell being allowed to be empty, and **no surviving datum
    probes that regime**: [G_078](ResearchY/G_GravitySource/ResearchY-G_078.md).
 4. **The density-to-potential map.** The metric's exponential and the rate's power are the **same statement**, and
@@ -206,12 +212,13 @@ Ranked weakest first. Each is an input the theory consumes rather than derives:
 
 ## 4. Open Problems
 
-Four questions. The first three are the sector's own; the fourth follows the chain G_080-G_085, whose five
+Four questions. The first three are the sector's own; the fourth follows the chain G_080-G_086, whose six
 successive questions (**is connectivity an input?**, **what sets the component count?**, **is the continuity law
 physics or bookkeeping?**, **what is the smallest theory that reproduces everything?**, **which parts of its two maps
-are observable?**) were each **answered** — **an input**, **nothing the theory contains and a gauge for everything
-local**, **a coordinate choice**, **one state variable and three equations with 0 observable loss**, and **the rate
-field and the source field, with one gauge, two units and one undetermined physical parameter**.
+are observable?**, **can the kernel be reduced to one function?**) were each **answered** — **an input**, **nothing the
+theory contains and a gauge for everything local**, **a coordinate choice**, **one state variable and three equations
+with 0 observable loss**, **the rate field and the source field, with one gauge, two units and one undetermined
+physical parameter**, and **one function of the density, conditional on the clock law being exponential**.
 
 1. Does any observable read the **lattice dispersion inside the band**? QM_011's verdict is conditional on "no"; if
    one does, the fold's position becomes observable.
@@ -221,18 +228,18 @@ field and the source field, with one gauge, two units and one undetermined physi
 3. **May a cell be empty?** Every [G_078](ResearchY/G_GravitySource/ResearchY-G_078.md) bound is conditional on it,
    and no surviving datum probes the regime.
 4. **What is the surviving sector's content, after the structure is stripped?** G_084 stripped every non-observable
-   layer and G_085 then weighed the two maps the core keeps. The answer is now **two fields of the count density**:
-   the **rate field** `W(f(ρ))` and the **source field** `∇f` — and the split of the former into a potential map and a
-   clock map is a **gauge** (the compensated shift leaves both fields bit-identical while the maps differ). So the
-   sharp form of the question: **does any surviving statement read more than those two fields, or depend on where the
-   potential's zero is put?** Anything that does is a statement about the **description** rather than about the
-   observables. Beside it stands the one genuinely undetermined parameter: the clock law's **shape** (the free room),
-   which no surviving datum fixes — five members satisfy the pinned data below **1E-09** while the target prediction
-   moves — so **the compact-object measurement (J0740+6620) decides it**, and it is the sector's live prediction.
-   Referee test: a prediction that moves under the compensated shift, or a quoted sector value that moves with the free
-   room, would change the verdict. The three questions the chain answered (**is connectivity an input?**, **what sets
-   the component count?**, **is the continuity law physics or bookkeeping?**) are recorded in
-   [NewChat_OpenProblems.md](NewChat_OpenProblems.md).
+   layer, G_085 weighed the two maps the core keeps, and G_086 then asked whether those two objects are really two.
+   The answer is **one function of the density — the rate kernel `K(ρ) = W(f(ρ))`** — because the potential is
+   **defined** as `ln K` (the sector's own statement that `g00 = −K²`) and the source is its gradient: every readout is
+   reproduced from the kernel alone (**8 of 8**), and `S = (ln K)′` holds for the sector's law to **9.021E-013**.
+   **`ObservableKernelDimension = 1`, with a single well-identified condition for 2:** the clock law's departure from
+   the exponential — the **free room** — which the surviving data leave undetermined (its mismatch field vanishes at
+   the mean density, where the pinned data live). **So the open question is no longer a reduction but a measurement:
+   does a second-order redshift at the target confirm the one-function kernel (free room zero), or restore the source
+   as an independent gravity object?** Referee test: a readout not reproducible from `K` alone, a non-zero mismatch for
+   the sector's law, or a mismatch that failed to vanish at the mean density would each change the verdict. The
+   questions the chain answered (**is connectivity an input?**, **what sets the component count?**, **is the continuity
+   law physics or bookkeeping?**) are recorded in [NewChat_OpenProblems.md](NewChat_OpenProblems.md).
 
 Full statements, the working hypothesis they sit under, and the reclassified (solved) problems:
 [NewChat_OpenProblems.md](NewChat_OpenProblems.md).

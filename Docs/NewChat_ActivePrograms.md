@@ -18,7 +18,7 @@ D_028/D_040 is standard: a **value** may be DERIVED while the **window or input*
 
 | Front | State |
 |---|---|
-| Group G — gravity source | **at G_085** (map redundancy: the maps are observable only through the composition and the source — 1 gauge, 2 units, 1 undetermined physical parameter). The chain G_068-G_085 closed the time sector, weighed it, and then weighed its two maps. |
+| Group G — gravity source | **at G_086** (observable kernel: one function of the density — the rate — for the sector's own clock law, with the free room the only parameter that would restore a second; the chain has reached data). The chain G_068-G_086 closed the time sector, weighed the core and then collapsed its two maps to one. |
 | Group QM — many-body correspondence | **closed** at QM_011 (the spectral fingerprint is an input, not a law). |
 | Group E — electromagnetism | **complete** at E_016. |
 | Groups A, B, C, D, M, NP, QG, R, S, T | complete or closed; catalogue in `Docs/AuditIndex.md`. |
