@@ -679,6 +679,14 @@ public static class TemporalIndependenceAudit
             + "content is the clock alone. NOT symbol-detectable: the suite names no B, g_rr or GammaOf — its "
             + "vocabulary is components, cuts, link sets and certificates",
             ScanDetectsIt: false),
+        // G_081: how much of the surviving gravity/time sector depends on the substrate's connectivity
+        new SectorClaim("Y_G_081", "Connectivity Dependency", MetricRequirement.ClockOnly,
+            "the audit asks how much of the surviving sector depends on connectivity, and every quantity it measures is a "
+            + "property of the occupancy and of the link set: the rank of the divergence, the nullity, the free modes, the "
+            + "gradient inside a component, and a scan of the surviving sources for undeclared assumptions - so the metric "
+            + "content is the clock alone. NOT symbol-detectable: the suite names no B, g_rr or GammaOf — its vocabulary "
+            + "is dependency maps, failure cores, loads and scans",
+            ScanDetectsIt: false),
     };
 
     // ── The computed classification summaries ───────────────────────────────

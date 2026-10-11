@@ -18,7 +18,7 @@ D_028/D_040 is standard: a **value** may be DERIVED while the **window or input*
 
 | Front | State |
 |---|---|
-| Group G — gravity source | **at G_080** (connectivity origin). The chain G_068-G_080 closed the time sector. |
+| Group G — gravity source | **at G_081** (connectivity dependency: the load is small and confined to the transport layer). The chain G_068-G_081 closed the time sector. |
 | Group QM — many-body correspondence | **closed** at QM_011 (the spectral fingerprint is an input, not a law). |
 | Group E — electromagnetism | **complete** at E_016. |
 | Groups A, B, C, D, M, NP, QG, R, S, T | complete or closed; catalogue in `Docs/AuditIndex.md`. |

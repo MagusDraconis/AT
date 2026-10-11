@@ -6941,3 +6941,74 @@ input to it?" - answered)**, a **new Open Problem ("What sets the component coun
 suite-table row; AT.Book gained the registry object. The question G_079 handed on is answered; the question G_080
 hands on is whether any principle fixes `c = 1`.
 
+### ResearchY-G_081 - Connectivity Dependency Audit (COMPLETE, GLOBAL INPUT - small failure core, transport layer only)
+
+**Question.** G_079 proved the continuity law needs the substrate's connectivity; G_080 classified that connectivity as
+**ASSUMED** and exhibited two frozen disconnected universes. How much of the surviving gravity/time sector actually
+**depends** on connectivity? Asked adversarially: a small failure core strengthens AT, a large one promotes
+connectivity to a fundamental assumption. Allowed: Difference, Actualization, the generation relation, count
+conservation, and connectivity as an **explicit input parameter**. Forbidden: deriving connectivity, adding
+primitives, importing topology, repairing disconnected sectors.
+
+**Verdict: GLOBAL INPUT - small failure core, localised entirely in the transport layer.**
+
+**1. The counterfactual universe (task 2).** The same cells, split into c = 1, 2, 4, 8 closed rings (the link set is
+built, never assumed). On eight cells:
+
+| components | directions | nullity | free modes | witnesses | transports | NOT transports |
+|---|---|---|---|---|---|---|
+| 1 | **7** | 1 | 0 | 8 | 8 | **0** |
+| 2 | **6** | 2 | 1 | 9 | 8 | **1** |
+| 4 | **4** | 4 | 3 | 11 | 8 | **3** |
+| 8 | **0** | 8 | 7 | 7 | **0** | **7** |
+
+`rank = n - c`, `nullity = c`, free modes `c - 1`, and the law's failure count **c - 1**. The limit case is
+**G_080's frozen pair, generalised**: when every component is a single cell, no transport exists. On the read side
+(canonical 96 cells): the gradient **inside** a component stays **4.993E-001** with **96** cells reading one at every
+c, the gradient **across** the cut is exactly **0.000E+000** with **0** links across it, the path is **-1**, and a
+cross-transfer conserves the **total** (0.000E+000) while changing each component by **1**.
+
+**2. The dependency map (task 1).** 29 surviving claims of G_035 and G_068-G_080, each re-evaluated at c = 1, 2, 4, 8
+**through the owning audit's own API**, with a mechanical classification: moves with c → **DIRECT**; unchanged
+path-dependent → **INDIRECT**; local → **INDEPENDENT**. Result: **6 DIRECT, 2 INDIRECT, 21 INDEPENDENT**. The ground
+of the INDEPENDENT rows is **measured**: the set of local reads is **one and the same set** on every component count.
+
+**3. The minimal failure set (task 3).** FailureCore(connectivity) = **6 claims**, all owned by G_078-G_080: the rank
+`n - c`, the nullity `c`, the failure count `c - 1`, the free modes `c - 1`, the ledger's "a bounded region cannot
+change alone" conclusion, and cross-substrate reachability. **Trigger cost: c = 2, i.e. 2 links or 2 cells** - the
+smallest disconnection G_080 found by exhaustive search. CoreWithoutConnectivity = the other **23 of 29**.
+
+**4. The connectivity load (task 4).** A quantity is rank-loaded if it is **linear in c** on the counts actually
+evaluated: **4 of 29 (0.138)** are, against **6 direct (0.207)**. The sector is rank-**decorated**, not rank-loaded.
+
+**5. The hidden-connectivity scan (task 5).** A live scan of the 14 surviving audits with literals and comments
+stripped, excluding its own source: **105 sites in 4 sources, 19 undeclared** - RING 18 (**9 hidden**), PATH 41 (2),
+TRANSPORT 33 (8), NEIGHBOUR 7 (**0**) and LAPLACIAN 6 (**0**). The undeclared ring closures are **all in one audit**,
+`SourceManipulationAudit.cs` (the operator class as ring differences at 105-107, the region ledger's `% n` wraps at
+140-165, and `Acceleration(..., ring: true)` at 279) - the audit that **owns the failure core**. **12 of 14 surviving
+audits name no ring, path or neighbour assumption at all.**
+
+**6. The structural classification (task 6).** **GLOBAL INPUT**, with all three alternatives refuted by a number:
+NEW PRIMITIVE refuted (**0** observables read the component count), LOCAL INPUT refuted (**0 of 96** cells change a
+local read at the cut, canonical state), BOUNDARY CONDITION refuted (**0 of 96** cells beside the cut read anything
+new), GLOBAL INPUT supported (**4 of 4** global descriptors move). Caveat measured: a state that **varies** at the cut
+moves **4** cells' reads.
+
+**7. The referee answer (task 7).** **23 of 29 claims (0.793)** survive unchanged without connectivity: the entire
+local sector, count conservation, the divergence identity and the union-invariance. What fails is the transport layer.
+
+**Six defects are recorded**: a **per-component cell count printed as a direction count** ("falls from 7 to 48
+directions" where the answer is 6) - the same class as G_079's control residual, caught by reading the printed verdict;
+a **rank-load test that could never pass** (equal successive differences, impossible on counts 1/2/4/8); a
+**non-linearity in the nullity formula** (`2c - n`); an assertion that the audit's own exclusion had **failed** when
+the scan was in fact correct; **two scan patterns firing on ordinary arithmetic** (`(i - 1) * 0.005`, `Path.GetFileName`)
+which inflated the undeclared count from 19 to 22 and the source count from 4 to 7; and an **over-strong category
+assertion** replaced by the finding that NEIGHBOUR and LAPLACIAN appear only in the declared users.
+
+**Status.** COMPLETE. Tests `Y_G_081_Tests` **10/10**. Core `AT.Core/ResearchXH/ConnectivityDependencyAudit.cs`; doc
+`Docs/ResearchY/G_GravitySource/ResearchY-G_081.md`. Registry: added as **Boundary** (`connectivity-dependency-audit`),
+the audit's own vocabulary being **GLOBAL INPUT**. **Group-G count guards bumped:** `Y_G_033` 50 -> **51** and
+`Y_G_035` 81 -> **82** with survives 67 -> **68**. AT.App gained a Theory Book chapter, a Research News entry and a
+suite-table row; AT.Book gained the registry object. The open question handed on is **what sets the component count** -
+now with a price: six claims and two defects.
+

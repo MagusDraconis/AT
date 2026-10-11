@@ -19,7 +19,9 @@ Audit catalogue: `Docs/AuditIndex.md`.
   4. **What sets the component count?** G_080 measured that the theory **conserves** the component count and never
      sets it (0 of 4 allowed primitives detect a cut, 0.000E+000 Laplacian weight between components), so it is an
      **initial datum like the count**; the open question is whether any principle fixes `c = 1`, or only the
-     canonical single-ring initial condition.
+       canonical single-ring initial condition. **G_081 attached the price:** the component count is decoupled from
+       **23 of 29** surviving claims, so fixing it is a question about **6 transport-layer claims** and two defects, not
+       about the sector as a whole.
 
   G_080 also **answered** the question that previously stood here ("is connectivity a consequence of the theory or an
   input to it?"): **an input**, at the level of the allowed primitives, with both alternatives (derived, emergent)
