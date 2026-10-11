@@ -11,9 +11,9 @@ and **each audit appears in detail exactly once**; the current state is `NewChat
 numbers within a group are never reused. Groups are topics, not chronological order.
 
 **The Status column** is extracted mechanically: the audit's own **verdict** token (`DERIVED`, `EMERGENT`, `BOUNDARY`,
-`REFUTED`, `PARTIAL`, `GLOBAL INPUT`, …) where its header states one, otherwise the project-memory verdict for that era,
-and only then the lifecycle status (`COMPLETE`). A `COMPLETE` therefore means the doc states no verdict token — the
-result is in the document's prose.
+`REFUTED`, `PARTIAL`, `GLOBAL INPUT`, `GAUGE-LIKE`, …) where its header states one, otherwise the project-memory verdict
+for that era, and only then the lifecycle status (`COMPLETE`). A `COMPLETE` therefore means the doc states no verdict
+token — the result is in the document's prose.
 ## Group summary
 
 | Group | Topic | Audits | Suites |
@@ -23,7 +23,7 @@ result is in the document's prose.
 | C | Source Geometry | 2 | 2 |
 | D | Resonance Structure | 58 | 58 |
 | E | Electromagnetism | 16 | 16 |
-| G | Gravity Source | 83 | 83 |
+| G | Gravity Source | 84 | 84 |
 | M | Measurement | 16 | 16 |
 | NP | New Physics | 172 | 167 |
 | QG | Geometry Bridge | 18 | 18 |
@@ -32,7 +32,7 @@ result is in the document's prose.
 | S | Synthesis | 1 | 1 |
 | T | Spectral Blueprint | 15 | 15 |
 
-## ResearchY audits (402 investigations, 396 suites)
+## ResearchY audits (403 investigations, 397 suites)
 
 | AuditNumber | Title | Status | Location |
 |---|---|---|---|---|
@@ -203,6 +203,7 @@ result is in the document's prose.
 | G_079 | ResearchY-G_079 — Continuity Law Audit | BOUNDARY | [ResearchY-G_079.md](ResearchY/G_GravitySource/ResearchY-G_079.md) · [Y_G_079_Tests.cs](../AT.Tests/ResearchY/G_GravitySource/Y_G_079_Tests.cs) |
 | G_080 | ResearchY-G_080 — Connectivity Origin Audit | ASSUMED | [ResearchY-G_080.md](ResearchY/G_GravitySource/ResearchY-G_080.md) · [Y_G_080_Tests.cs](../AT.Tests/ResearchY/G_GravitySource/Y_G_080_Tests.cs) |
 | G_081 | ResearchY-G_081 — Connectivity Dependency Audit | GLOBAL INPUT | [ResearchY-G_081.md](ResearchY/G_GravitySource/ResearchY-G_081.md) · [Y_G_081_Tests.cs](../AT.Tests/ResearchY/G_GravitySource/Y_G_081_Tests.cs) |
+| G_082 | ResearchY-G_082 — Component Count Audit | GAUGE-LIKE | [ResearchY-G_082.md](ResearchY/G_GravitySource/ResearchY-G_082.md) · [Y_G_082_Tests.cs](../AT.Tests/ResearchY/G_GravitySource/Y_G_082_Tests.cs) |
 | M_001 | ResearchY-M_001 — Measurement Origin Audit | COMPLETE | [ResearchY-M_001.md](ResearchY/M_Measurement/ResearchY-M_001.md) · [Y_M_001_Tests.cs](../AT.Tests/ResearchY/M_Measurement/Y_M_001_Tests.cs) |
 | M_002 | ResearchY-M_002 — Measurement Disturbance Audit | COMPLETE | [ResearchY-M_002.md](ResearchY/M_Measurement/ResearchY-M_002.md) · [Y_M_002_Tests.cs](../AT.Tests/ResearchY/M_Measurement/Y_M_002_Tests.cs) |
 | M_003 | ResearchY-M_003 — Measurement Feedback Audit | COMPLETE | [ResearchY-M_003.md](ResearchY/M_Measurement/ResearchY-M_003.md) · [Y_M_003_Tests.cs](../AT.Tests/ResearchY/M_Measurement/Y_M_003_Tests.cs) |
@@ -385,7 +386,7 @@ result is in the document's prose.
 | NP_167 | ResearchY-NP_167 — Unknown Organization States Audit | COMPLETE | [ResearchY-NP_167.md](ResearchY/NP_NewPhysics/ResearchY-NP_167.md) · [Y_NP_167_Tests.cs](../AT.Tests/ResearchY/NP_NewPhysics/Y_NP_167_Tests.cs) |
 | NP_168 | ResearchY-NP_168 — Yang–Mills Existence and Mass Gap Audit | COMPLETE | [ResearchY-NP_168.md](ResearchY/NP_NewPhysics/ResearchY-NP_168.md) · [Y_NP_168_Tests.cs](../AT.Tests/ResearchY/NP_NewPhysics/Y_NP_168_Tests.cs) |
 | NP_169 | ResearchY-NP_169 — Natural Scaling vs Mass Gap Audit | COMPLETE | [ResearchY-NP_169.md](ResearchY/NP_NewPhysics/ResearchY-NP_169.md) · [Y_NP_169_Tests.cs](../AT.Tests/ResearchY/NP_NewPhysics/Y_NP_169_Tests.cs) |
-| NP_170 | ResearchY-NP_170 — Lock-Lattice Phase Memory (Physical Realizability Test) | No AT | [ResearchY-NP_170.md](ResearchY/NP_NewPhysics/ResearchY-NP_170.md) · — |
+| NP_170 | ResearchY-NP_170 — Lock-Lattice Phase Memory (Physical Realizability Test) | No AT-specific discri | [ResearchY-NP_170.md](ResearchY/NP_NewPhysics/ResearchY-NP_170.md) · — |
 | NP_171 | ResearchY-NP_171 — Deterministic Lock-Lattice Simulator | COMPLETE | [ResearchY-NP_171.md](ResearchY/NP_NewPhysics/ResearchY-NP_171.md) · [Y_NP_171_Tests.cs](../AT.Tests/ResearchY/NP_NewPhysics/Y_NP_171_Tests.cs) |
 | NP_172 | ResearchY-NP_172 — Retention Null Audit | COMPLETE | [ResearchY-NP_172.md](ResearchY/NP_NewPhysics/ResearchY-NP_172.md) · [Y_NP_172_Tests.cs](../AT.Tests/ResearchY/NP_NewPhysics/Y_NP_172_Tests.cs) |
 | NP_173 | ResearchY-NP_173 — Discriminator Audit | COMPLETE | [ResearchY-NP_173.md](ResearchY/NP_NewPhysics/ResearchY-NP_173.md) · [Y_NP_173_Tests.cs](../AT.Tests/ResearchY/NP_NewPhysics/Y_NP_173_Tests.cs) |

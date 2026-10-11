@@ -687,6 +687,13 @@ public static class TemporalIndependenceAudit
             + "content is the clock alone. NOT symbol-detectable: the suite names no B, g_rr or GammaOf — its vocabulary "
             + "is dependency maps, failure cores, loads and scans",
             ScanDetectsIt: false),
+        // G_082: what sets the component count, and whether c is physical or a coordinate choice
+        new SectorClaim("Y_G_082", "Component Count", MetricRequirement.ClockOnly,
+            "the audit asks what sets the component count and whether it is physical, and every quantity it measures is a "
+            + "property of the occupancy and of the union of components: local read shapes, ratios, the absolute level, and "
+            + "the link set of the union - so the metric content is the clock alone. NOT symbol-detectable: the suite names "
+            + "no B, g_rr or GammaOf — its vocabulary is shapes, ratios, levels and gauges",
+            ScanDetectsIt: false),
     };
 
     // ── The computed classification summaries ───────────────────────────────

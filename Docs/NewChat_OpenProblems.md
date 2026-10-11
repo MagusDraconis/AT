@@ -16,12 +16,16 @@ Audit catalogue: `Docs/AuditIndex.md`.
   2. **Why does the clock composition multiply?** The clock law's form is fixed only up to the density-to-potential
      map; the weak field cannot answer it, so the route is multiplicativity or the compact-object measurement (G_072).
   3. **May a cell be empty?** Every G_078 bound is conditional on it, and no surviving datum probes that regime.
-  4. **What sets the component count?** G_080 measured that the theory **conserves** the component count and never
-     sets it (0 of 4 allowed primitives detect a cut, 0.000E+000 Laplacian weight between components), so it is an
-     **initial datum like the count**; the open question is whether any principle fixes `c = 1`, or only the
-       canonical single-ring initial condition. **G_081 attached the price:** the component count is decoupled from
-       **23 of 29** surviving claims, so fixing it is a question about **6 transport-layer claims** and two defects, not
-       about the sector as a whole.
+  4. **What sets the component count? — ANSWERED BY G_082: NOTHING THE THEORY CONTAINS.** No allowed primitive detects
+     a cut, the class **conserves** the component count and never produces it, and the union of a solution is a solution,
+     so it is an **initial datum of the substrate**. And it is a **gauge for everything local**: **0** observables read
+     it, changing it changes the local read shape by **0** and every ratio by **0**, and the only moving local quantity
+     is a **uniform shift** (`c^(−1/d)`) that no observable reads — so `c = 1` is a **coordinate choice for 23 of 29
+     claims (0.793)** and a physical statement for the **6** in the transport layer. By the stated rule — every local
+     observable is `c`-invariant — **`c` is unphysical**, with one disclosed exception: a **global** reachability test
+     can read it. **The open question this leaves is not about `c` but about the transport layer:** the six claims that
+     need `c = 1` are exactly the claims G_079's continuity law added — so **is the continuity law part of the theory or
+     of the coordinate choice?**
 
   G_080 also **answered** the question that previously stood here ("is connectivity a consequence of the theory or an
   input to it?"): **an input**, at the level of the allowed primitives, with both alternatives (derived, emergent)

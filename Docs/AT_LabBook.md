@@ -6941,6 +6941,69 @@ input to it?" - answered)**, a **new Open Problem ("What sets the component coun
 suite-table row; AT.Book gained the registry object. The question G_079 handed on is answered; the question G_080
 hands on is whether any principle fixes `c = 1`.
 
+### ResearchY-G_082 - Component Count Audit (COMPLETE, GAUGE-LIKE - c has no local physical content)
+
+**Question.** G_080 established that the substrate's connectivity is **ASSUMED** and that 0 of 4 allowed primitives
+detect a cut; G_081 measured that connectivity acts on the surviving sector **only through the component count** (6 of
+29 claims depend on it, 23 are independent). **What sets c - and is c physical or a coordinate choice?** Allowed:
+Difference, Actualization, the generation relation, count conservation. Forbidden: assuming connectedness, importing
+topology, **fixing c = 1**.
+
+**Verdict: GAUGE-LIKE - c has no local physical content, with one global exception the audit measures and discloses.**
+
+**0. The instrument.** A counterfactual that fixes the **total cell count** would shrink each component and change
+local physics for a trivial reason (a smaller ring, not a statement about c). The audit therefore **copies one
+component** of **24 cells**: 24, 48, 96 and 192 cells at c = 1, 2, 4, 8, with the component held fixed.
+
+**1. The redundancy map (tasks 2 and 5).** The local reads are the **relative** ones the sector makes - potential
+differences, clock ratios, gradients - because the potential shifts additively and the clock multiplicatively under a
+rescale.
+
+| reading | c | total cells | shape changes | ratio changes | global descriptors | absolute scale |
+|---|---|---|---|---|---|---|
+| unnormalized | 1, 2, 4, 8 | 24, 48, 96, 192 | **0** | **0** | 0, 3, 3, 3 | 1.000 |
+| normalized | 2, 4, 8 | 48, 96, 192 | **0** | **0** | **3** | **7.937E-001 / 6.300E-001 / 5.000E-001** |
+
+The read **shape is one and the same shape at every c** (72 readouts at c = 1, 144 at c = 2, 288 at c = 4, 576 at
+c = 8), in both readings. What moves is the **three global descriptors** and, under the theory's own normalization, a
+single **uniform shift** of the absolute level - the factor **c^(-1/d)** - and a uniform scale is exactly what the
+sector cannot read: **0 of 6** temporal observables read an absolute scale (G_079).
+
+**2. The census of readouts (tasks 1 and 3).** 8 readouts: 3 local (clock, potential, gradient), 1 ratio
+(intra-component redshift), 1 cross-component (which has **no value at all**: 0 links across the cut), and 3 global.
+**0 of the local or ratio readouts read c; the 3 that do are global** - the transport rank `n - c`, a transfer
+attempted across a cut (which needs two components at once), and the total count, which the theory's own Born
+normalization **normalizes away** (the normalized union has total **1** and each component **1/c**, measured).
+
+**3. The classification (task 4).** **GAUGE-LIKE**, with the other three refuted by a number each: not **DERIVED**
+(**0 of 4** primitives detect a cut, and the union of a solution is a solution), not **EMERGENT** (**0** Laplacian
+entries between components over **6** disconnected substrates, against a **LIVE CONTROL of 4** entries on the connected
+one), not a **PHYSICAL INPUT** in the local sense (**0** observables read c).
+
+**4. Physical or coordinate (task 6).** The split is G_081's own map: **23 of 29** claims (**0.793**) are unaffected by
+c - a **coordinate choice** - and **6** depend on it - a **physical statement** (the transport layer: the rank, the
+nullity, the failure count, the free levels, the region ledger, reachability). By the stated rule, since every local
+observable is c-invariant, **c IS UNPHYSICAL**, with the **one global exception disclosed**: a global reachability test
+really can read it, so GAUGE-LIKE is **not 'pure gauge'**.
+
+**5. What sets c.** **Nothing the theory contains:** no primitive detects it, the class conserves it and never produces
+it, and the union of a solution is a solution - so c is an **initial datum of the substrate**, and c = 1 is the
+**coordinate** in which the transport layer is defined.
+
+**Six defects are recorded**, including a flag that confused "the vector grew" with "the values changed"; an
+invariance measured on **absolute** reads where only the **relative** ones are observable; an EMERGENT predicate that
+was not a measurement and made GAUGE-LIKE unreachable; a **vacuous** measurement comparing a quantity with itself; a
+normalization that left the total at **71** instead of 1; and a census whose parts summed to 7 of 8 because of a kind
+string mismatch.
+
+**Status.** COMPLETE. Tests `Y_G_082_Tests` **10/10**. Core `AT.Core/ResearchXH/ComponentCountAudit.cs`; doc
+`Docs/ResearchY/G_GravitySource/ResearchY-G_082.md`. Registry: added as **Boundary** (`component-count-audit`), the
+audit's own vocabulary being **GAUGE-LIKE**. **Group-G count guards bumped:** `Y_G_033` 51 -> **52** and `Y_G_035`
+82 -> **83** with survives 68 -> **69**. AT.App gained a Theory Book chapter, the **answered** Open Problem "What sets
+the component count?", a Research News entry and a suite-table row; AT.Book gained the registry object. The open
+question handed on: the six claims that need c = 1 are exactly the claims G_079's continuity law added, so **is the
+continuity law part of the theory or of the coordinate choice?**
+
 ### ResearchY-G_081 - Connectivity Dependency Audit (COMPLETE, GLOBAL INPUT - small failure core, transport layer only)
 
 **Question.** G_079 proved the continuity law needs the substrate's connectivity; G_080 classified that connectivity as
