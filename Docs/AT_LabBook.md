@@ -8034,3 +8034,82 @@ names no substrate token anywhere), with-substrate 24, comment-only 6; `Y_G_035`
 the registry object. **The closure thread is now closed in the negative at its last step:** the coefficient is
 free, the one principle that would fix it is absent, and the surviving structure cannot derive that principle -
 it carries independent information of 47 dimensions of admissible clock law.
+
+### ResearchY-G_097 - Pattern Kinematics Audit (COMPLETE, MOTION IS EMERGENT; ITS KINEMATICS IS ASSUMED)
+
+**Question.** G_084 reduced the sector to **one state variable and three equations**, G_086 collapsed the kernel to
+one function, and G_096 showed the coefficient's selecting principle is **assumed**. This audit asks the question
+those leave untouched: **can observed spatial motion be derived as pattern propagation on the 96-cell ring, or is
+kinematics independent information?** A **pattern** is any configuration distinguishable by the surviving
+observables, **motion** is the change of its apparent position, and **distance must be DERIVED, not assumed**.
+Every count is on the ring, the **cubic substrate is not used**, and no new structure is introduced. The audit
+**leans on NP_092** rather than re-deriving it: propagation in AT is not transport, everything appears to move, and
+the velocity is the group velocity in units of **one link per tick** - so the question becomes what those units
+are.
+
+**1. The structure inventory (task 1).** 5 candidates, of which **1 state variable** (the occupation) and **2
+evolution maps** (the update relation and the class's operations) can carry a pattern; the **flux** is derived
+(written by an operation, read by 0 observables) and the **phase** is excluded by **arity**. So the ring's pattern
+is a configuration of one scalar carried by two maps.
+
+**2. What the law does to a pattern - the measurement the whole question turns on.** The step is
+`rho -> rho + eps L rho`, and **the step size is a CONVENTION the sector does not supply**; its admissible range is
+**derived** from the spectrum through the alternating mode (**eps <= 0.5**). Over 8 ticks: the peak falls
+**1.250 -> 1.049**, the bump's width grows **0.000 -> 2.000 as sqrt(t)** with coefficient equal to the step size to
+0.1 per cent, the excess is **conserved exactly** at 0.250000, and **the centroid moves by exactly 0.000E+000 at
+every tick**. The mode symbols are 0.000, -0.004, -0.017, -0.038, -0.068 - **non-positive**, so the map is
+**dissipative and not a wave**. **Motion cannot come from the law**; only the chosen operations can move a
+pattern.
+
+**3. Distance (task 2): ASSUMED.** Of four candidates exactly **one** is derived - the **potential difference** -
+and it is a difference of **states, not positions**, being the acceleration integral the observables already read
+(G_077). The graph distance is derived **given** the link set, which is **assumed** (G_080); the index difference
+is the **labelling**, a coordinate; and the **physical length of a hop** is supplied by nothing (the link-length
+programme records `LinkLengthDeterminesValues = false`).
+
+**4. Worldline (task 3): BOUNDARY.** The pattern is **identifiable** (all 8 readouts are functions of the
+occupation), a **position** is not (4 of 8 readouts read the labelling and 4 are frame-invariant), and a **time
+parameter** is not - the tick is the sector's recorded **deepest structural boundary**.
+
+**5. Velocity (task 4): family dimension 1 with 2 directions.** The **bound** is derived - the largest cyclic
+distance between the two sites any witness touches is **1** over all witnesses, so |v| <= 1 hop per tick - and the
+**value** is not (a continuum in the amount), and the **unit** is not: one link per tick, both halves unsupplied,
+which is exactly the unit NP_092's group velocity is stated in.
+
+**6. Without spatial assumptions (task 5).** With **no link set** there are **0 operations** and apparent
+transport **stops**; with **no labelling** the physics survives and only the **identity** of a site is lost; and the
+**order** of the operations is invisible.
+
+**7. Degeneracy (task 6): 48! = 10^61.094.** The ring admits **48 mutually independent transfers** (disjoint
+adjacent pairs); they **commute**, so the reverse order gives a **bit-identical state** - and the observables are
+functions of the state alone. The missing information is **not recoverable** from the readouts. The count is
+reported as a **power** because it exceeds a 64-bit integer.
+
+**8. Reduction (task 7): loss 0 with the labelling kept, 4 without.** 8 readouts, **4 positional**, **4 reading the
+labelling** - and there is **no readout of a pattern's absolute position**, so the reconstruction has nothing else
+to lose. **Motion is the motion of a LABEL.**
+
+**Final classification: propagation EMERGENT, distance ASSUMED, worldline BOUNDARY, velocity ASSUMED.** SUCCESS
+criterion NOT MET; FAILURE criterion MET.
+
+**Five defects are recorded.** The **propagation step replaced the state by its Laplacian** (`UpdateAt` returns
+`L rho`, not `rho + eps L rho`), so the total collapsed to 0 and the amplitude exploded (peak 3217, spread NaN);
+the step is now `rho + eps L rho` with eps named as a convention and its range derived. The **stability bound
+sampled one mode short**: it took the minimum over k = 0..47, missing the alternating mode k = N/2, and reported
+0.500536 where the bound is exactly **0.5** - a test caught it. An **adjacency test that was not an adjacency
+test**: the one-hop character was measured by the first moment of the change, which reads 95 for the witness
+between cells 0 and 95; the support is now measured directly as the largest **cyclic** distance, which is 1 for
+every witness. A **profile-wide width hid the bump** (27.78 is the ring's second moment, not the bump's), so the
+audit tracks the **excess** over the flat background. And the **degeneracy count overflowed** a 64-bit integer and
+was reported as 0, so it is now a **power of ten** with the overflow stated. **The G_027 literal-verdict guard also
+fired a second time**, on `CarrierRow.Survives` supplied as a literal; the fix was to make it a **computed
+property** (`IsAStateVariable || IsAnEvolutionMap`), so no registry exemption was needed in either audit.
+
+**Status.** COMPLETE. Tests `Y_G_097_Tests` **9/9**. Core `AT.Core/ResearchXH/PatternKinematicsAudit.cs`; doc
+`Docs/ResearchY/G_GravitySource/ResearchY-G_097.md`. Registry: added as **Derived** (`pattern-kinematics-audit`).
+**Group-G count guards bumped:** `Y_G_033` without 65 -> **66** (this suite names no substrate token anywhere),
+with-substrate 24, comment-only 6; `Y_G_035` 97 -> **98** with survives 83 -> **84**. AT.App gained a Theory Book
+chapter, a Research News entry and a suite-table row; AT.Book gained the registry object. **The motion question is
+now answered two-level:** motion as a phenomenon is emergent from the network updating, and its kinematics - the
+link's length, the tick and the transferred amount - is independent information the surviving sector does not
+contain.

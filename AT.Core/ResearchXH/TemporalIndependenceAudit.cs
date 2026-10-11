@@ -794,6 +794,14 @@ public static class TemporalIndependenceAudit
             + "clock alone. NOT symbol-detectable: the suite names no B, g_rr or GammaOf — its words are family, "
             + "coefficient, selector and defect",
             ScanDetectsIt: false),
+
+        new SectorClaim("Y_G_097", "Pattern Kinematics", MetricRequirement.ClockOnly,
+            "the audit asks whether observed spatial motion can be derived as pattern propagation on the ring, or whether "
+            + "kinematics is independent information: its vocabulary is the pattern, the evolution step, the distance "
+            + "candidates, the velocity family and the degeneracy of histories, so the metric content is the clock alone. "
+            + "NOT symbol-detectable: the suite names no B, g_rr or GammaOf — its words are pattern, propagation, "
+            + "distance, worldline and velocity",
+            ScanDetectsIt: false),
     };
 
     // ── The computed classification summaries ───────────────────────────────

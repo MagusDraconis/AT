@@ -182,7 +182,24 @@ Audit catalogue: `Docs/AuditIndex.md`.
      Actualization, the generation relation, count conservation) can produce a composition law, which no surviving
      derivation does.** Referee test: a derivation of the composition law from the primitives (which would turn the
      failure into a success), or a surviving constraint that removes family dimensions, which the cascade measures as
-     empty.
+     empty. **And G_097 asked the motion question the chain had left untouched** — whether observed spatial motion can be
+     derived as **pattern propagation on the 96-cell ring**, with the sharpest constraint coming from the question itself:
+     **distance must be derived, not assumed**. It leans on **NP_092** rather than re-deriving it: propagation is not
+     transport, everything appears to move, and the velocity is the group velocity in units of **one link per tick**. **The
+     measurement the whole question turns on is what the law does to a pattern:** the excess is **conserved exactly**, the
+     peak **falls**, the width grows **as √t** with coefficient equal to the step size, and **the centroid moves by exactly
+     0.000E+000 at every tick**, while the mode symbols are **non-positive** — so the evolution is a **diffusion** and
+     **motion cannot come from the law**. **Distance is ASSUMED**: of four candidates exactly one is derived — the
+     potential difference — and it is a difference of **states, not positions**; the graph distance inherits the assumed
+     link set and the hop's **physical length** is supplied by nothing. **The worldline is BOUNDARY**: the pattern is
+     identifiable, a **position** is not (**4** of 8 readouts read the labelling and **4** are frame-invariant), and the
+     **tick** is the sector's deepest structural boundary. **The velocity's bound is derived and its value and unit are
+     not** (a 1-dimensional amount, two directions, in units of one link per tick). **And the information is not
+     recoverable:** the ring's **48** mutually independent transfers commute, so **48! = 10^61.094** histories give
+     bit-identical observables. **The reduction costs nothing (loss 0)** — because the sector has **no readout of a
+     pattern's absolute position**, so **motion is the motion of a label**. **So the open question is two-level and the
+     audit refuses to collapse it:** what would be needed is a structure that fixes the **physical length of a link**, a
+     **derivation of the tick**, or a **positional readout**. Referee test: any of those three.
 
   G_080 also **answered** the question that previously stood here ("is connectivity a consequence of the theory or an
   input to it?"): **an input**, at the level of the allowed primitives, with both alternatives (derived, emergent)
