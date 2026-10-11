@@ -164,7 +164,25 @@ Audit catalogue: `Docs/AuditIndex.md`.
      separation. **So the open question is not a number but a derivation, and it is the sector's oldest: why does the
      clock composition multiply?** Referee test: a derivation of the composition law (which would force the coefficient
      to zero and turn the failure into a success), a measurement fine enough to see the second order at the target, or a
-     flow that takes the coefficient as a variable.
+     flow that takes the coefficient as a variable. **And G_096 tested whether the surviving structure can DERIVE that
+     principle** — every count computed on the **96-cell ring alone**, the cubic substrate unused, and no new primitive,
+     field, source term, action or mechanism, with a negative result explicitly acceptable. **Task 1:** of the **5**
+     objects of the minimal core, **0** implies the requirement. **Task 2:** the ring carries **49** distinct potentials
+     (clustered at **1e-12**; **78** exact-keyed and reported as artifact-prone), so the admissible family's dimension is
+     **47 — exactly, without a tolerance** — while the coefficient matrix's rank is **9 and drifts across its band**,
+     making it a resolvability measurement that is **not quoted** as a dimension. **Task 3, the family-dimension
+     evolution table: 47 → 47 → 47 → 47 → 47 → 47 → 0** — six surviving constraints remove **zero** dimensions, and the
+     two rows that *would* collapse the family are the **same premise** as multiplicativity, since all three say
+     `ln K = A`; what genuinely survives is the **zero set**, which **4 of 4** configurations satisfy across all **11**
+     tested laws and which therefore constrains nothing, while the ratio is measured as **free**. **Task 4:** the defect
+     on the ring's own pairs is **2.798629E-002** for the reference member against **5.551115E-017** for the sector's law
+     — the `ln∘exp` **rounding**, not exact zero. **Task 5: 7 selectors, 4 surviving, 3 forcing, intersection 0.**
+     **Task 6: 47 before, 0 after.** **Task 7: ASSUMED.** **So the requirement is independent information that the
+     surviving structure does not have — and the remaining question is whether the primitives themselves (Difference,
+     Actualization, the generation relation, count conservation) can produce a composition law, which no surviving
+     derivation does.** Referee test: a derivation of the composition law from the primitives (which would turn the
+     failure into a success), or a surviving constraint that removes family dimensions, which the cascade measures as
+     empty.
 
   G_080 also **answered** the question that previously stood here ("is connectivity a consequence of the theory or an
   input to it?"): **an input**, at the level of the allowed primitives, with both alternatives (derived, emergent)

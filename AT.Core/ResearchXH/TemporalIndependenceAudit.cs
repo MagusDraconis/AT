@@ -786,6 +786,14 @@ public static class TemporalIndependenceAudit
             + "order, so the metric content is the clock alone. NOT symbol-detectable: the suite names no B, g_rr or "
             + "GammaOf — its words are coefficient, composition, boundary and viability",
             ScanDetectsIt: false),
+
+        new SectorClaim("Y_G_096", "Multiplicativity Origin", MetricRequirement.ClockOnly,
+            "the audit asks whether the surviving structure can DERIVE that the clock composition multiplies, or whether "
+            + "it is independent information: its vocabulary is the minimal core's objects, the admissible family of "
+            + "clock laws, the coefficient matrix's rank and the multiplicativity defect, so the metric content is the "
+            + "clock alone. NOT symbol-detectable: the suite names no B, g_rr or GammaOf — its words are family, "
+            + "coefficient, selector and defect",
+            ScanDetectsIt: false),
     };
 
     // ── The computed classification summaries ───────────────────────────────

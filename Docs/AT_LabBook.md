@@ -7959,3 +7959,78 @@ chapter, a Research News entry and a suite-table row; AT.Book gained the registr
 now closed in the strongest form available**: the memory channel is the one gap that carries physics, its
 coefficient is what would have to be fixed, and the theory does not fix it - the one principle that would is the
 sector's oldest open question, measured absent.
+
+### ResearchY-G_096 - Multiplicativity Origin Audit (COMPLETE, MULTIPLICATIVITY IS INDEPENDENT INFORMATION - IT IS ASSUMED, NOT DERIVED)
+
+**Question.** G_086 collapsed the observable kernel to one function; G_095 measured that **multiplicativity** -
+the requirement that the clock composition multiply, `K(A+B) = K(A)K(B)` - is the only known principle that
+would force the free coefficient to zero, and that the surviving theory does not contain it. This audit asks
+whether the surviving AT structure can **derive** it. Constraints obeyed literally: every multiplicity,
+dimension, rank and count computed on the **96-cell ring alone**; the **cubic substrate not used** (the vector
+sector is not part of this question); and **no** new primitive, field, source term, topology axiom, gauge
+sector, action, Lagrangian or memory mechanism introduced, assumed, fitted or postulated. A negative result is
+fully acceptable.
+
+**1. Every surviving object tested (task 1).** Of the **5** objects of the G_084 minimal core, **0** implies the
+requirement: the state is the **argument** (its defect is 4.68E-003 for the free room), the labelling is
+**invariant**, the potential map **fixes the coordinate** in which the requirement is stated (and is an INPUT by
+G_075/G_076), the clock law is the object **constrained**, and the gradient definition reads the potential
+difference **for any clock law** (G_077).
+
+**2. The admissible family (task 2).** Satisfying only `K(0) = 1` and `K\'(0) = 1` (the chain\'s own UNIQUELY
+FORCED orders 0 and 1): the ring carries **96 cells** and **49 distinct potentials** clustered at **1e-12**
+(**78** by exact double equality - an artifact-prone count, reported rather than used), so the family
+`ln K = A + sum c_n A^n` has **49 - 2 = 47** free coefficients - **exactly, without a tolerance**. The coefficient
+matrix\'s **rank is 9 and drifts across its tolerance band**, because the ring\'s potentials span the narrow
+interval [-3.054E-001, 1.567E-001] where high powers alias - so the rank is a **resolvability** measurement and is
+**not quoted** as a dimension. The chain\'s own ladder reach is a truncation of the same family and gives **5**.
+
+**3. The family-dimension evolution table (task 3): 47 -> 47 -> 47 -> 47 -> 47 -> 47 -> 0.** Six surviving
+constraints (count conservation, the kernel collapse, the source relation, observable equivalence, the gauge and
+coordinate reductions) remove **zero** dimensions between them, and the audit\'s central collapse is that the two
+rows which WOULD collapse the family are the **SAME PREMISE** as multiplicativity: the kernel collapse holds
+exactly when the source IS the logarithmic derivative of the rate, and the strong source relation says the same -
+they all say `ln K = A`. The source sharing that genuinely **survives** is the **ZERO SET**, which agrees for
+**4 of 4** configurations across all **11** tested laws and therefore constrains nothing, while the
+derivative-level **ratio** it would need is measured as **unselected**. Observable equivalence removes nothing
+either, because the free room **moves predictions**.
+
+**4. The defect on the ring\'s own pairs (task 4).** `R(A,B) = lnK(A+B) - lnK(A) - lnK(B)` maximised over the
+ring\'s own potential pairs: **2.798629E-002** for the reference member (lambda = 0.3, i.e. the family coefficient
+0.15, matching the closed form lambda*A*B at the deepest pair) against **5.551115E-017** for the sector\'s own law
+- which is the ln-exp **ROUNDING** and not exact zero, so the vanishing is claimed against the rounding scale and
+never against equality. The defect grows with the coefficient (0.5 gives 4.664E-002, -1 gives 9.329E-002).
+
+**5. The selector inventory (task 5): 7 candidates, 4 surviving, 3 forcing R = 0, INTERSECTION 0.** No surviving
+structure forces the defect to vanish - and the three forcing rows (multiplicativity, the strong source relation,
+the kernel collapse) are **one premise in three guises**. The surviving rows are exactly those blind to the clock
+law: count conservation (arity), observable equivalence (the directions move readouts), the gauge and coordinate
+reductions (they act on the map space), and the source sharing (the zero set).
+
+**6. The family before and after (task 6): 47 -> 0.** The requirement forces every higher coefficient to vanish,
+so the removed fraction is **complete** - it carries the whole of the sector\'s remaining freedom.
+
+**7. The classification (task 7): ASSUMED.** Not DERIVED (0 objects, 0 surviving selectors, 0 dimensions
+removed), not EMERGENT (nothing generates it - there is no flow for the coefficient), not BOUNDARY (it names an
+**interior** point rather than constraining the family\'s edge), and not even a **unique** assumption, since the
+forcing rows form an equivalence class of size 3.
+
+**Four defects are recorded.** A **rank that drifts was about to be published as a dimension**: the family\'s
+dimension was first taken from the coefficient matrix\'s rank (9), which moves with its tolerance, so the audit
+now quotes the **tolerance-free** count (47), reports the band, and applies the rule that a number moving with
+its tolerance cannot be a dimension. A **factor of two in the convention**: the family was first built as
+`ln K = A + c A^2`, making the audit\'s c equal to lambda/2 and doubling every defect (5.597E-002 where the
+chain\'s own value is 2.798629E-002); the convention is now stated once with lambda = 2 c_2. A **`Single` keyed on
+a shared prefix** threw "Sequence contains more than one matching element" because four rows begin with "the free
+room" - the class G_092 recorded - and the lookups now use full names through named accessors. And a **count keyed
+on exact double equality**: the ring\'s computed potentials give 78 by exact keying and 49 clustered at 1e-12, so
+the clustered count is quoted and the exact one reported as artifact-prone.
+
+**Status.** COMPLETE. Tests `Y_G_096_Tests` **9/9**. Core `AT.Core/ResearchXH/MultiplicativityOriginAudit.cs`; doc
+`Docs/ResearchY/G_GravitySource/ResearchY-G_096.md`. Registry: added as **Derived**
+(`multiplicativity-origin-audit`). **Group-G count guards bumped:** `Y_G_033` without 64 -> **65** (this suite
+names no substrate token anywhere), with-substrate 24, comment-only 6; `Y_G_035` 96 -> **97** with survives
+82 -> **83**. AT.App gained a Theory Book chapter, a Research News entry and a suite-table row; AT.Book gained
+the registry object. **The closure thread is now closed in the negative at its last step:** the coefficient is
+free, the one principle that would fix it is absent, and the surviving structure cannot derive that principle -
+it carries independent information of 47 dimensions of admissible clock law.
