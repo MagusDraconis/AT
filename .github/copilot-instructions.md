@@ -178,16 +178,20 @@ defect in this repository; the canonical exemplars are given so the rule can be 
 
 ## Persistent Project Memory
 
-This repository contains a persistent cross-chat memory document:
+This repository contains a persistent cross-chat memory **set**:
 
-Docs/NewChat_Start.md
-
-This file is the authoritative project context.
+- `Docs/NewChat_Start.md` — the authoritative current state and status table (**read this first**, max ~400 lines);
+- `Docs/NewChat_OpenProblems.md` — open problems, the next questions, reclassified (solved) problems;
+- `Docs/NewChat_ActivePrograms.md` — what is running: audits, predictions awaiting data, publication work;
+- `Docs/AuditIndex.md` — the audit catalogue (identifier, verdict, doc, suite);
+- `Docs/AT_LabBook.md` — the detailed experiment log;
+- `Docs/Archive/NewChat_Part1_History.md` … `NewChat_Part6_RepoChangelog.md` — the verbatim history
+  (mission, gravity era, QM era, QG phase log, theory evolution, repo changelog).
 
 Before implementing any feature, experiment, simulation, theory extension, or research test:
 
-1. Read Docs/NewChat_Start.md
-2. Treat it as the current state of the AT project
+1. Read Docs/NewChat_Start.md (and the OpenProblems / ActivePrograms files it points to)
+2. Treat them as the current state of the AT project
 3. Preserve all documented decisions and hypotheses
 4. Ensure all new work remains consistent with the documented research direction
 
@@ -203,7 +207,13 @@ Whenever one of the following occurs:
 - a major architectural decision is made
 - a significant scientific insight is discovered
 
-the file Docs/NewChat_Start.md MUST be updated.
+the project-memory set MUST be updated:
+
+- `Docs/NewChat_Start.md` — the current state and status table;
+- `Docs/NewChat_OpenProblems.md` — when a problem is opened, sharpened or resolved;
+- `Docs/NewChat_ActivePrograms.md` — when a programme starts, changes phase or closes;
+- `Docs/AuditIndex.md` — when an audit is added;
+- and `Docs/AT_LabBook.md` for the result itself.
 
 **If the finding is a new defect CLASS** (a way results can be silently wrong — a float artifact, an
 implementation-dependent count, a literal verdict path, a hardcoded number standing in for a calculation), also
@@ -218,19 +228,18 @@ Never close a defect finding with prose alone and call it prevented.
 
 ## Update Philosophy
 
-Keep NewChat_Start.md concise.
+Keep the memory set small and current, and split it by purpose:
 
-It should contain only:
+- `Docs/NewChat_Start.md` (**max 200-400 lines**) — mission, core hypothesis, research path, the current-state
+  block, the status table, and pointers to the rest. Nothing else.
+- `Docs/NewChat_OpenProblems.md` — the open problems, the working hypothesis they sit under, the reclassified
+  (solved) problems, and the next question(s).
+- `Docs/NewChat_ActivePrograms.md` — running audits, predictions awaiting data, publication work, closed programmes.
+- `Docs/AuditIndex.md` — the mechanical audit catalogue.
+- `Docs/Archive/NewChat_Part1_History.md` … `Part6_RepoChangelog.md` — history, moved **verbatim**; never grow these
+  files by editing, only by appending a completed era.
 
-- mission
-- current core hypothesis
-- current research path
-- important decisions
-- completed experiments and conclusions
-- current working hypothesis
-- next open question
-
-Do NOT turn it into a research log or full documentation.
+Do NOT turn the start file into a research log or full documentation.
 
 ## Research Documentation
 
@@ -246,10 +255,11 @@ Docs/NewChat_Start.md
 
 For every new AT experiment, simulation, theory extension, or research task:
 
-- Read Docs/NewChat_Start.md first
+- Read `Docs/NewChat_Start.md` first, then the two files it points to (`NewChat_OpenProblems.md`,
+  `NewChat_ActivePrograms.md`)
 - Perform the requested work
 - Determine whether the project knowledge changed
-- If knowledge changed, update Docs/NewChat_Start.md
+- If knowledge changed, update the memory set (state, open problems, active programs, audit index, lab book)
 - Mention the update in the final summary
 
-NewChat_Start.md is considered mandatory project memory and must remain current.
+The memory set is mandatory project memory and must remain current.
