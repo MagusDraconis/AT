@@ -7232,3 +7232,72 @@ observables require. **Group-G count guards bumped:** `Y_G_033` 53 -> **54** and
 registry object. The open question handed on is **structural**: the minimal core is `(rho, A)`, so every statement that
 needs more than the occupation and a labelling is a statement about structure the observables do not read, and the
 direction in the theory has to come from the state and its labelling alone.
+
+
+---
+
+### ResearchY-G_085 - Map Redundancy Audit (COMPLETE, REPARAMETERIZATION GAUGE - the maps are observable only through the composition and the source)
+
+**Question.** G_084 reduced the gravity core to the count density, the potential map `A = f(rho)` and the clock map
+`clock = W(A)`, and left the maps themselves unexamined. **Which parts of `f` and `W` are observable, and which are
+pure reparameterization?** Prefer reduction: any redundancy found reduces the core further.
+
+**0. The instrument.** Three decisions decide whether the audit can find anything. The readouts are computed
+**through the maps** (a readout computed from the density directly is blind to what is being tested); they are split
+into **predictions** (the comparisons the theory makes) and **levels** (absolute magnitudes), which is what tells a
+unit change from a physical one; and every variation is applied **exactly**, with the non-affine distortion composed
+with its **exact inverse**, because a first-order expansion cannot distinguish a free parameter from a truncated one.
+**And the sites had to be chosen:** at the profile's **peak** the two neighbours carry the same potential so a link
+gradient read there is **identically zero**, and at the **steepest slope** the potential is exactly **0** so the level
+readouts were **blind to the clock law's shape**. The readouts are taken at site **12**, which carries both a non-zero
+potential and a non-zero gradient.
+
+**1. The variation table (task 1).** | variation | predictions | levels | invariant pair | pinned data | sector values
+| verdict |: **the compensated shift of the potential** 0 / 1 / **identical** / fail / 0.000E+000 / **GAUGE**; **the
+unit of the count** 0 / 4 / changed / hold / 0 / **COORDINATE**; **the unit of time** 1 / 3 / changed / **fail** / 0 /
+OBSERVABLE (excluded); **the potential's scale** **2** / 1 / changed / fail / **5.000E-001** / OBSERVABLE (excluded);
+**a non-affine distortion** **2** / 1 / changed / hold / **5.000E-002** / OBSERVABLE (excluded); **the clock law's
+free room** **2** / 3 / changed / **hold** / 0 / **EFFECTIVE (undetermined)**. By name: the shift moves only the
+potential's level; the count unit moves four levels and no prediction; the potential's scale and the distortion move
+**exactly the two gradient readouts**; the free room moves the AT/GR prediction, the pair redshift and three levels.
+
+**2. The invariant pair.** The pair **(the rate field `W(f(rho))`, the source field `grad f`)** is the content: the
+compensated shift leaves both fields **bit-identical** while the maps differ (so the **split is not observable** and
+the pair carries a **one-parameter gauge**); the potential's scale preserves the rate field and multiplies the source
+by exactly **1.5**; the distortion preserves it and multiplies the source by the exact **field**
+`1 + e (A_i + A_j)` - verified cell by cell over **96** cells against the **weighted** neighbour average.
+
+**3. `f` and `W` (tasks 2 and 3).** **`f` is unique up to its ZERO POINT** (the count's unit) and its **derivative is
+observable** - the scale and the distortion move the gradients *and* a value the sector already quotes. **`W` is unique
+up to its UNIT and its SHAPE**: the unit is **definitional** (the variation makes the pinned data fail), and the shape
+is **physical and undetermined** - across `c in {-0.4, -0.2, 0, 0.2, 0.4}` every member satisfies the pinned data
+below **1E-09** while the target comparison moves by more than **1E-03**, with no quoted value moving.
+
+**4. The smallest observable core (task 5).** **The rate field `W(f(rho))` and the source field `grad f`.** The
+reconstruction rebuilds the predictions from those two objects alone, for the canonical pair **and its gauge orbit**,
+with difference **0.000E+000**; and the one readout **outside** the core is named - the AT/GR comparison evaluates the
+clock law at a compactness the state does not contain. **And the readout set carries a redundancy of its own:**
+`g00 = -rate^2` **exactly** (residual **0.000E+000**), so the metric readout and the clock readout are **one
+statement**: **4 predictions and 4 levels**, not eight independent quantities.
+
+**5. The classification (task 6).** The composition **PHYSICAL**, the source **PHYSICAL**, the zero point **GAUGE**,
+the count unit **COORDINATE**, the time unit **COORDINATE**, the shape **EFFECTIVE** - all four roles exercised, each
+decided by a measured column. `MapRedundancyRatio = 3.000`: **2 conventions removed**, one parameter required.
+
+**Six defects are recorded**: the first version treated the target as a **bare potential value**, so the compensated
+shift moved a readout that is physically invariant and the **gauge would have been reported as a physical freedom**;
+a readout sited at the **peak** is identically zero and blind to every variation; a readout sited at the **steepest
+slope** loses the levels (the potential is exactly 0 there); the **invariant-preservation test could be fooled by a
+state variation** (it compared one `(maps, state)` pair with itself, so the count unit - a state change - registered
+as preserved and was misclassified as a gauge; it now takes two pairs); the non-affine law was **asserted in its
+unweighted form** where the exact law is the **weighted** neighbour average (the audit was right, the test was wrong);
+and a verdict assertion carried a **literal count** instead of the computed one.
+
+**Status.** COMPLETE. Tests `Y_G_085_Tests` **10/10**. Core `AT.Core/ResearchXH/MapRedundancyAudit.cs`; doc
+`Docs/ResearchY/G_GravitySource/ResearchY-G_085.md`. Registry: added as **Derived** (`map-redundancy-audit`), like
+G_084. **Group-G count guards bumped:** `Y_G_033` without 53 -> **54** (this suite names no substrate token anywhere),
+with-substrate **24**, comment-only **6**; `Y_G_035` 85 -> **86** with survives 71 -> **72**. AT.App gained a Theory
+Book chapter, a Research News entry and a suite-table row; AT.Book gained the registry object. The open question
+handed on is sharper than G_084's: the sector's content is **two fields of the density** - the rate and the source -
+so any statement that reads more than those two, or that depends on where the potential's zero is put, is a statement
+about the **description** rather than about the observables.

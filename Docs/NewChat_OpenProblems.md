@@ -25,24 +25,29 @@ Audit catalogue: `Docs/AuditIndex.md`.
      observable is `c`-invariant — **`c` is unphysical**, with one disclosed exception: a **global** reachability test
      can read it. **The question this handed on was "is the continuity law part of the theory or of the coordinate
      choice?", and G_083 answered it: COORDINATE CHOICE** — see below.
-  5. **What does the surviving sector's structure actually buy?** G_084 stripped every non-observable layer —
-     connectivity, the component count, the transport layer, the continuity law, the flux — and measured the smallest
-     theory that reproduces every surviving observable: **one state variable and three equations**, with **8 of 8**
-     readouts reproduced at difference **0.000E+000**, **observable fidelity 1.000** and **0** observable loss. **7 of
-     10** named quantities are removable — **2 coordinates** (the adjacency, which 2 readouts must be written along
-     while **0 of 8** move under a reversing relabelling that carries the state with it, and the scale, which moves **4
-     absolute** and **0 frame-invariant** readouts), **2 gauges** (the component count and the flux: the configuration
-     really differs and no readout moves) and **3 redundant descriptors** (the divergence, the transport capacity and
-     the ledger residual) — and **3 of 6** equations supply **no readout at all**, so the minimum cover is **3** (**5**
-     if the conservation row counts as an observable, and the audit reports both). The cost is **dissolution, not
-     refutation**: **23 of 29** claims hold (**0.793**) and **6 are dissolved** (rank `n − c`, nullity `c`, the failure
-     count `c − 1`, the `c − 1` free levels, the ledger's region conclusion, the finite path length), with **0**
-     refuted, measured at the readouts. **So the sharp form of the open question is: where does the direction in the
-     theory come from, if the transport picture is bookkeeping and the minimal core is `(ρ, A)`?** Either something in
-     the state or the update class **selects** the source-free, connected case (in which case G_080-G_084 are
-     superseded), or the clock, redshift and acceleration are carried entirely by the **occupation**. Referee test: a
-     readout not reproducible from `(ρ, A)` refutes G_084; a state whose evolution requires a source refutes the
-     source-free premise.
+  5. **What is the surviving sector's content, after the structure is stripped?** G_084 stripped every non-observable
+     layer — connectivity, the component count, the transport layer, the continuity law, the flux — and measured the
+     smallest theory that reproduces every surviving observable: **one state variable and three equations**, with
+     **8 of 8** readouts reproduced, **observable fidelity 1.000** and **0** loss (7 of 10 named quantities removable;
+     **3 of 6** equations supply no readout; a minimum cover of 3; the cost **6 dissolved claims and 0 refutations**).
+     G_085 then weighed the **two maps** that core keeps (`A = f(ρ)` and `clock = W(A)`) and found that they are
+     observable **only through the composition `W ∘ f` and the source `f′`**: the **compensated shift**
+     (`f → f + b, W → W(· − b)`) leaves the **rate field** and the **source field** **bit-identical** while the maps
+     differ — **0 predictions** move, only the potential's own level, which is a **convention** — so the **split of the
+     composition into a potential map and a clock map is not observable** and the pair carries a **one-parameter
+     gauge**. The **count's unit** and the **clock's unit** are **coordinates** (the latter definitional: the variation
+     makes the pinned data fail); the potential's **scale** and every **non-affine distortion** are **excluded** by the
+     acceleration and by a value the sector already quotes (the uplift cap, by **5.000E-001** and **5.000E-002**); and
+     the clock law's **shape** is **physical and undetermined** — across `c ∈ {−0.4 … 0.4}` every member satisfies the
+     pinned data below **1E-09** while the target comparison moves by more than **1E-03**, with no quoted value moving.
+     `MapRedundancyRatio = 3.000` (3 parameters carried, 1 required, 2 conventions removed). **And the readout set has
+     a redundancy of its own:** `g00 = −rate²` **exactly**, so the metric readout and the clock readout are **one
+     statement**. **So the open question is: does any surviving statement read more than the rate field and the source,
+     or depend on where the potential's zero is put?** Anything that does is a statement about the **description**
+     rather than about the observables. Beside it stands the sector's live prediction: the free room is decided by the
+     **compact-object measurement** (J0740+6620), not by anything already in hand. Referee test: a prediction that
+     moves under the compensated shift, a quoted value that moves with the free room, or a readout not reproducible
+     from the rate and source fields would each change the verdict.
 
   G_080 also **answered** the question that previously stood here ("is connectivity a consequence of the theory or an
   input to it?"): **an input**, at the level of the allowed primitives, with both alternatives (derived, emergent)

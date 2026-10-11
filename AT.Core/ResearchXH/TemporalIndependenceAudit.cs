@@ -709,6 +709,13 @@ public static class TemporalIndependenceAudit
             + "and the transport operators it removes, so the metric content is the clock alone. NOT symbol-detectable: "
             + "the suite names no B, g_rr or GammaOf — its words are readouts, equations, covers and roles",
             ScanDetectsIt: false),
+        // G_085: which parts of the two maps are observable and which are reparameterization
+        new SectorClaim("Y_G_085", "Map Redundancy", MetricRequirement.ClockOnly,
+            "the audit asks which parts of the potential map and the clock map the observables fix: its vocabulary is "
+            + "the two maps, the rate field, the source field, the readouts computed through them and the pinned data, "
+            + "so the metric content is the clock alone. NOT symbol-detectable: the suite names no B, g_rr or GammaOf "
+            + "— its words are maps, variations, roles and anchors",
+            ScanDetectsIt: false),
     };
 
     // ── The computed classification summaries ───────────────────────────────

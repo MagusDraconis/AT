@@ -29,7 +29,7 @@ gauge structure and cosmology are **downstream realizations**, not primitives.
    reversal (23 channels against 0), and no observable reads the dispersion at high wavenumber.
    Detail: [Archive Part 3](Archive/NewChat_Part3_QM.md) · [QM_007](ResearchY/QM_ManyBody/ResearchY-QM_007.md) …
    [QM_011](ResearchY/QM_ManyBody/ResearchY-QM_011.md).
-2. **The time sector (group G, G_068-G_084).** The theory's unique time prediction is the surface redshift
+2. **The time sector (group G, G_068-G_085).** The theory's unique time prediction is the surface redshift
    **1 + z = exp(−x)** against GR's **(1 + 2x)^(−1/2)**, differing at **second order**, and it is **decidable by one
    measurement on one object** (J0740+6620). The sector's own audits then showed that the *law* is not forced by
    anything that survives: the clock's form, its source and the substrate's connectivity are **inputs**, and
@@ -180,7 +180,13 @@ Ranked weakest first. Each is an input the theory consumes rather than derives:
    **minimal core is one state variable and three equations** — **8 of 8** readouts reproduced with difference **0**,
    **3 of 6** equations supplying no readout at all, **7 of 10** named quantities removable (2 coordinates, 2 gauges,
    3 redundant descriptors), **CoreCompressionRatio 2.667** at **fidelity 1.000**, and a cost of **6 dissolved claims
-   and 0 refutations**: [G_084](ResearchY/G_GravitySource/ResearchY-G_084.md).
+   and 0 refutations**: [G_084](ResearchY/G_GravitySource/ResearchY-G_084.md). **And the core's own two maps have now
+   been weighed** (G_085): they are observable **only through the composition `W ∘ f` and the source `f′`** — the
+   compensated shift leaves the rate field and the source field **bit-identical** while the maps differ (a **gauge**),
+   the count's and the clock's units are **coordinates**, the potential's scale and every non-affine distortion are
+   **excluded by the acceleration**, and the clock law's shape is **physical and undetermined** (five free-room members
+   satisfy the pinned data below **1E-09** while the target prediction moves): `MapRedundancyRatio = 3.000`
+   ([G_085](ResearchY/G_GravitySource/ResearchY-G_085.md)).
 3. **The empty cell.** Every G_078 bound is conditional on a cell being allowed to be empty, and **no surviving datum
    probes that regime**: [G_078](ResearchY/G_GravitySource/ResearchY-G_078.md).
 4. **The density-to-potential map.** The metric's exponential and the rate's power are the **same statement**, and
@@ -200,11 +206,12 @@ Ranked weakest first. Each is an input the theory consumes rather than derives:
 
 ## 4. Open Problems
 
-Four questions. The first three are the sector's own; the fourth follows the chain G_080-G_084, whose four
+Four questions. The first three are the sector's own; the fourth follows the chain G_080-G_085, whose five
 successive questions (**is connectivity an input?**, **what sets the component count?**, **is the continuity law
-physics or bookkeeping?**, **what is the smallest theory that reproduces everything?**) were each **answered** —
-**an input**, **nothing the theory contains and a gauge for everything local**, **a coordinate choice**, and
-**one state variable and three equations with 0 observable loss**.
+physics or bookkeeping?**, **what is the smallest theory that reproduces everything?**, **which parts of its two maps
+are observable?**) were each **answered** — **an input**, **nothing the theory contains and a gauge for everything
+local**, **a coordinate choice**, **one state variable and three equations with 0 observable loss**, and **the rate
+field and the source field, with one gauge, two units and one undetermined physical parameter**.
 
 1. Does any observable read the **lattice dispersion inside the band**? QM_011's verdict is conditional on "no"; if
    one does, the fold's position becomes observable.
@@ -213,17 +220,19 @@ physics or bookkeeping?**, **what is the smallest theory that reproduces everyth
    reaches the second order.
 3. **May a cell be empty?** Every [G_078](ResearchY/G_GravitySource/ResearchY-G_078.md) bound is conditional on it,
    and no surviving datum probes the regime.
-4. **What does the surviving sector's structure actually buy?** G_084 stripped every non-observable layer and measured
-   the smallest theory that reproduces every observable: **one state variable and three equations**, with **0**
-   observable loss and **6** claims dissolved rather than refuted. So every statement that needs more than the
-   occupation and a **labelling** is a statement about structure the observables do not read. The sharp form of the
-   question: **where does the direction in the theory come from, if the transport picture is bookkeeping and the
-   minimal core is `(ρ, A)`?** Either something in the state or the update class **selects** the source-free, connected
-   case (in which case G_080-G_084 are superseded), or the sector's clock, redshift and acceleration are carried
-   entirely by the **occupation**. Referee test: a readout not reproducible from `(ρ, A)` refutes G_084; a state whose
-   evolution needs a source refutes the source-free premise. The three questions it follows (**is connectivity an
-   input?**, **what sets the component count?**, **is the continuity law physics or bookkeeping?**) were each
-   **answered** — recorded in [NewChat_OpenProblems.md](NewChat_OpenProblems.md).
+4. **What is the surviving sector's content, after the structure is stripped?** G_084 stripped every non-observable
+   layer and G_085 then weighed the two maps the core keeps. The answer is now **two fields of the count density**:
+   the **rate field** `W(f(ρ))` and the **source field** `∇f` — and the split of the former into a potential map and a
+   clock map is a **gauge** (the compensated shift leaves both fields bit-identical while the maps differ). So the
+   sharp form of the question: **does any surviving statement read more than those two fields, or depend on where the
+   potential's zero is put?** Anything that does is a statement about the **description** rather than about the
+   observables. Beside it stands the one genuinely undetermined parameter: the clock law's **shape** (the free room),
+   which no surviving datum fixes — five members satisfy the pinned data below **1E-09** while the target prediction
+   moves — so **the compact-object measurement (J0740+6620) decides it**, and it is the sector's live prediction.
+   Referee test: a prediction that moves under the compensated shift, or a quoted sector value that moves with the free
+   room, would change the verdict. The three questions the chain answered (**is connectivity an input?**, **what sets
+   the component count?**, **is the continuity law physics or bookkeeping?**) are recorded in
+   [NewChat_OpenProblems.md](NewChat_OpenProblems.md).
 
 Full statements, the working hypothesis they sit under, and the reclassified (solved) problems:
 [NewChat_OpenProblems.md](NewChat_OpenProblems.md).

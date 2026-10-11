@@ -16,6 +16,7 @@ for that era, and only then the lifecycle status (`COMPLETE`). A `COMPLETE` ther
 token — the result is in the document's prose.
 
 
+
 ## Group summary
 
 | Group | Topic | Audits | Suites |
@@ -25,7 +26,7 @@ token — the result is in the document's prose.
 | C | Source Geometry | 2 | 2 |
 | D | Resonance Structure | 58 | 58 |
 | E | Electromagnetism | 16 | 16 |
-| G | Gravity Source | 86 | 86 |
+| G | Gravity Source | 87 | 87 |
 | M | Measurement | 16 | 16 |
 | NP | New Physics | 172 | 167 |
 | QG | Geometry Bridge | 18 | 18 |
@@ -34,7 +35,7 @@ token — the result is in the document's prose.
 | S | Synthesis | 1 | 1 |
 | T | Spectral Blueprint | 15 | 15 |
 
-## ResearchY audits (405 investigations, 399 suites)
+## ResearchY audits (406 investigations, 400 suites)
 
 | AuditNumber | Title | Status | Location |
 |---|---|---|---|---|
@@ -132,8 +133,8 @@ token — the result is in the document's prose.
 | G_008 | ResearchY-G_008 — Controlled Suppression Audit | COMPLETE | [ResearchY-G_008.md](ResearchY/G_GravitySource/ResearchY-G_008.md) · [Y_G_008_Tests.cs](../AT.Tests/ResearchY/G_GravitySource/Y_G_008_Tests.cs) |
 | G_009 | ResearchY-G_009 — Clock Rate Audit | COMPLETE | [ResearchY-G_009.md](ResearchY/G_GravitySource/ResearchY-G_009.md) · [Y_G_009_Tests.cs](../AT.Tests/ResearchY/G_GravitySource/Y_G_009_Tests.cs) |
 | G_010 | ResearchY-G_010 — Time Control Feasibility Audit | COMPLETE | [ResearchY-G_010.md](ResearchY/G_GravitySource/ResearchY-G_010.md) · [Y_G_010_Tests.cs](../AT.Tests/ResearchY/G_GravitySource/Y_G_010_Tests.cs) |
-| G_011 | ResearchY-G_011 — Rho Actuator Audit | COMPLETE | [ResearchY-G_011.md](ResearchY/G_GravitySource/ResearchY-G_011.md) · [Y_G_011_Tests.cs](../AT.Tests/ResearchY/G_GravitySource/Y_G_011_Tests.cs) |
 | G_011 | ResearchY-G_011b — Labor Rho Audit | COMPLETE | [ResearchY-G_011b.md](ResearchY/G_GravitySource/ResearchY-G_011b.md) · [Y_G_011_Tests.cs](../AT.Tests/ResearchY/G_GravitySource/Y_G_011_Tests.cs) |
+| G_011 | ResearchY-G_011 — Rho Actuator Audit | COMPLETE | [ResearchY-G_011.md](ResearchY/G_GravitySource/ResearchY-G_011.md) · [Y_G_011_Tests.cs](../AT.Tests/ResearchY/G_GravitySource/Y_G_011_Tests.cs) |
 | G_012 | ResearchY-G_012 — Local Rho Actuator Audit | COMPLETE | [ResearchY-G_012.md](ResearchY/G_GravitySource/ResearchY-G_012.md) · [Y_G_012_Tests.cs](../AT.Tests/ResearchY/G_GravitySource/Y_G_012_Tests.cs) |
 | G_013 | ResearchY-G_013 — Physical Actuator Audit | COMPLETE | [ResearchY-G_013.md](ResearchY/G_GravitySource/ResearchY-G_013.md) · [Y_G_013_Tests.cs](../AT.Tests/ResearchY/G_GravitySource/Y_G_013_Tests.cs) |
 | G_014 | ResearchY-G_014 — Physical Rho Mapping Audit | COMPLETE | [ResearchY-G_014.md](ResearchY/G_GravitySource/ResearchY-G_014.md) · [Y_G_014_Tests.cs](../AT.Tests/ResearchY/G_GravitySource/Y_G_014_Tests.cs) |
@@ -208,6 +209,7 @@ token — the result is in the document's prose.
 | G_082 | ResearchY-G_082 — Component Count Audit | GAUGE-LIKE | [ResearchY-G_082.md](ResearchY/G_GravitySource/ResearchY-G_082.md) · [Y_G_082_Tests.cs](../AT.Tests/ResearchY/G_GravitySource/Y_G_082_Tests.cs) |
 | G_083 | ResearchY-G_083 — Continuity Gauge Audit | COORDINATE CHOICE | [ResearchY-G_083.md](ResearchY/G_GravitySource/ResearchY-G_083.md) · [Y_G_083_Tests.cs](../AT.Tests/ResearchY/G_GravitySource/Y_G_083_Tests.cs) |
 | G_084 | ResearchY-G_084 — Minimal Gravity Core Audit | MINIMAL CORE | [ResearchY-G_084.md](ResearchY/G_GravitySource/ResearchY-G_084.md) · [Y_G_084_Tests.cs](../AT.Tests/ResearchY/G_GravitySource/Y_G_084_Tests.cs) |
+| G_085 | ResearchY-G_085 — Map Redundancy Audit | REPARAMETERIZATION GAUGE | [ResearchY-G_085.md](ResearchY/G_GravitySource/ResearchY-G_085.md) · [Y_G_085_Tests.cs](../AT.Tests/ResearchY/G_GravitySource/Y_G_085_Tests.cs) |
 | M_001 | ResearchY-M_001 — Measurement Origin Audit | COMPLETE | [ResearchY-M_001.md](ResearchY/M_Measurement/ResearchY-M_001.md) · [Y_M_001_Tests.cs](../AT.Tests/ResearchY/M_Measurement/Y_M_001_Tests.cs) |
 | M_002 | ResearchY-M_002 — Measurement Disturbance Audit | COMPLETE | [ResearchY-M_002.md](ResearchY/M_Measurement/ResearchY-M_002.md) · [Y_M_002_Tests.cs](../AT.Tests/ResearchY/M_Measurement/Y_M_002_Tests.cs) |
 | M_003 | ResearchY-M_003 — Measurement Feedback Audit | COMPLETE | [ResearchY-M_003.md](ResearchY/M_Measurement/ResearchY-M_003.md) · [Y_M_003_Tests.cs](../AT.Tests/ResearchY/M_Measurement/Y_M_003_Tests.cs) |
@@ -390,7 +392,7 @@ token — the result is in the document's prose.
 | NP_167 | ResearchY-NP_167 — Unknown Organization States Audit | COMPLETE | [ResearchY-NP_167.md](ResearchY/NP_NewPhysics/ResearchY-NP_167.md) · [Y_NP_167_Tests.cs](../AT.Tests/ResearchY/NP_NewPhysics/Y_NP_167_Tests.cs) |
 | NP_168 | ResearchY-NP_168 — Yang–Mills Existence and Mass Gap Audit | COMPLETE | [ResearchY-NP_168.md](ResearchY/NP_NewPhysics/ResearchY-NP_168.md) · [Y_NP_168_Tests.cs](../AT.Tests/ResearchY/NP_NewPhysics/Y_NP_168_Tests.cs) |
 | NP_169 | ResearchY-NP_169 — Natural Scaling vs Mass Gap Audit | COMPLETE | [ResearchY-NP_169.md](ResearchY/NP_NewPhysics/ResearchY-NP_169.md) · [Y_NP_169_Tests.cs](../AT.Tests/ResearchY/NP_NewPhysics/Y_NP_169_Tests.cs) |
-| NP_170 | ResearchY-NP_170 — Lock-Lattice Phase Memory (Physical Realizability Test) | No AT-specific discri | [ResearchY-NP_170.md](ResearchY/NP_NewPhysics/ResearchY-NP_170.md) · — |
+| NP_170 | ResearchY-NP_170 — Lock-Lattice Phase Memory (Physical Realizability Test) | No AT-specific discriminator remained | [ResearchY-NP_170.md](ResearchY/NP_NewPhysics/ResearchY-NP_170.md) · — |
 | NP_171 | ResearchY-NP_171 — Deterministic Lock-Lattice Simulator | COMPLETE | [ResearchY-NP_171.md](ResearchY/NP_NewPhysics/ResearchY-NP_171.md) · [Y_NP_171_Tests.cs](../AT.Tests/ResearchY/NP_NewPhysics/Y_NP_171_Tests.cs) |
 | NP_172 | ResearchY-NP_172 — Retention Null Audit | COMPLETE | [ResearchY-NP_172.md](ResearchY/NP_NewPhysics/ResearchY-NP_172.md) · [Y_NP_172_Tests.cs](../AT.Tests/ResearchY/NP_NewPhysics/Y_NP_172_Tests.cs) |
 | NP_173 | ResearchY-NP_173 — Discriminator Audit | COMPLETE | [ResearchY-NP_173.md](ResearchY/NP_NewPhysics/ResearchY-NP_173.md) · [Y_NP_173_Tests.cs](../AT.Tests/ResearchY/NP_NewPhysics/Y_NP_173_Tests.cs) |
