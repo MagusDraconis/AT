@@ -772,6 +772,13 @@ public static class TemporalIndependenceAudit
             + "the operation set and the input ledger, so the metric content is the clock alone. NOT symbol-detectable: "
             + "the suite names no B, g_rr or GammaOf — its words are core, closure, necessity and input",
             ScanDetectsIt: false),
+
+        new SectorClaim("Y_G_094", "Physics versus Elegance", MetricRequirement.ClockOnly,
+            "the audit asks whether closing the gaps G_093 left open would change a physical prediction: its vocabulary "
+            + "is the surviving readouts, the kernel's coefficient window, the recorded instrument classes and the "
+            + "vector sector's representation, so the metric content is the clock alone. NOT symbol-detectable: the "
+            + "suite names no B, g_rr or GammaOf — its words are closure, gap, gain and threshold",
+            ScanDetectsIt: false),
     };
 
     // ── The computed classification summaries ───────────────────────────────

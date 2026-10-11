@@ -7829,3 +7829,72 @@ with-substrate 24, comment-only 6; `Y_G_035` 93 -> **94** with survives 79 -> **
 chapter, a Research News entry and a suite-table row; AT.Book gained the registry object. **The reduction chain
 is now closed on all four axes** - observables, evolution, control and closure - where the first three axes were
 already closed by G_084 and G_092, and the closure axis is closed in the negative: the gaps were already open.
+
+### ResearchY-G_094 - Physics versus Elegance Audit (COMPLETE, PHYSICS, NOT ELEGANCE - BUT ONLY THROUGH ONE GAP)
+
+**Question.** G_093 measured the closure surplus: **three** structures required for first-principles completion
+while being neither observable nor dynamical - a **memory channel** carrying the kernel's free coefficient, the
+**vector sector** and the **unified action** - and the theory has none of them. The question takes the next step:
+**if the gaps were completely closed, would any physical prediction change, or would only the mathematical
+description become more complete?** Neither easy answer is permitted - closure is not assumed to change physics
+and not assumed to be only elegance - so each gap is closed **hypothetically** in the strongest form the
+surviving audits support, and the effect is measured on the surviving readouts.
+
+**1. The four forms (task 1).** The memory channel as a structure **carrying the coefficient** (its local value
+**is** the kernel's second component - exactly the actuator G_091 named); the vector sector as E_004's **T1(3)**
+with the **curl** form; the theta sector as the **derived** grid; the unified action as the object that would
+**derive** the map and the kernel. The operating point is the **window's edge**, `|c| = 0.216` (shared
+compactness; `0.749` with its error), so every figure is the **smallest** the closure could matter by.
+
+**2. The six readout sets (task 2).** **Four move:** the redshift (2.802E-001 -> 2.718E-001), the acceleration
+(**6.584E-002** relative), the neutron-star comparison (0 -> **8.405E-003** against a **1.256E-001** separation)
+and the manipulation results (**one channel**). **Two do not, for measured reasons:** the **clock rate** because
+at the **mean density** the kernel is **exactly 1** for *every* coefficient, and the **cosmology** set because its
+change is **1.666E-010** against the redshift's **8.405E-003** - **eight orders of magnitude** smaller.
+
+**3. The classification (task 3).** **1** gap changes an observable (the memory channel: **7** of 8 readouts,
+largest **3.109E-001** relative per unit coefficient, the neutron-star verdict decisive above `|c| = 3.386`),
+**2** change the interpretation only (the vector sector and the theta sector), and **1** changes nothing on this
+substrate (the unified action). The vector sector is **not** filed as elegance: it is a **physics gap for the
+group that owns it** (ring maximum irrep dimension **2** against a needed **3**; the curl form has rank **2**,
+kernel **1**, and gives **0** longitudinal and **2** transverse modes).
+
+**4. The gap kinds (task 4).** **2 physics, 0 dynamical, 2 mathematical, 0 documentation.** The dynamical kind is
+empty **by measurement**: none of the four forms is an argument of the update relation and the reduction's
+residual is **exactly 0.000E+000**. And the unified action's physics content is **inherited**: the map's own
+freedom is already excluded by the readouts (2 of its 3 variations ruled out by contradiction, one moving a quoted
+value by **5.000E-001**), while the **one** variation that stays undetermined is the clock law's free room.
+
+**5. The three gains (task 5).** **ObservableGain 7** readouts, **all** through the one gap; **DynamicGain 0**;
+**ManipulationGain 1** channel - and the observable and manipulation gains have the **same carrier**. A closed
+memory channel **is** a coefficient an operation can act on, so the actuatable channel count rises from **1** to
+**2**, the curvature's coupling stops being exactly zero, and the **manipulation thread reopens**.
+
+**6. The counterfactual (task 6), ordered by threshold:** first a **capability** (no instrument at all), then the
+compact-object redshift at `|c| >= 0.216`, then the **decisive** comparison at `|c| >= 3.386`, and a **cosmology**
+consequence **never** - the closure is invisible at the mean density, where every kernel agrees to better than
+**1E-9**.
+
+**7. The final classification (task 7):** closure changes **physics** (yes), changes **dynamics** (no), and
+changes **only elegance** (no). The hypothesis is refuted in one direction and confirmed in the other: one gap
+carries every observable and every manipulation consequence the closure has, and the other three carry **a proof
+rather than a prediction**.
+
+**Four defects are recorded.** The **decisive coefficient was first read off a local slope** of a function that
+**saturates** (`exp(-x)*expm1(-c x^2/2)`), which made the threshold **4.6 % too low** (3.232 against **3.386** by
+bisection, residual below 1e-6 of the separation); this is a **variant of rule 6** rather than a new defect class,
+and the judgement is recorded in the audit. **Two columns would have told the wrong story**: the neutron-star row
+reported the **gap to the separation** as its "change" while flagging `moves = false`, and now reports the
+signature itself; the cosmology row now states the **ratio** to the redshift's change. A **boolean threshold could
+have hidden a real change** (1.666E-010 against a 1e-9 cut), so the note carries the ratio. And a **pattern-match
+assertion on the curl form's longitudinal count was inverted** (1 where the measurement is **0**, because the curl
+form **removes** the mode), through assuming the reading instead of reading it.
+
+**Status.** COMPLETE. Tests `Y_G_094_Tests` **9/9**. Core `AT.Core/ResearchXH/PhysicsVersusEleganceAudit.cs`; doc
+`Docs/ResearchY/G_GravitySource/ResearchY-G_094.md`. Registry: added as **Derived** (`physics-versus-elegance-audit`).
+**Group-G count guards bumped:** `Y_G_033` without 62 -> **63** (this suite names no substrate token anywhere),
+with-substrate 24, comment-only 6; `Y_G_035` 94 -> **95** with survives 80 -> **81**. AT.App gained a Theory Book
+chapter, a Research News entry and a suite-table row; AT.Book gained the registry object. **The closure thread is
+now answered in both directions**: G_093 showed the gaps were already open and cost the reduction nothing, and
+G_094 shows that closing them is physics through exactly one of them - the memory channel - which is the same
+gap that reopens the manipulation channel the previous chain had closed.

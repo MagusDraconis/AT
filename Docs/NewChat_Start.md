@@ -29,7 +29,7 @@ gauge structure and cosmology are **downstream realizations**, not primitives.
    reversal (23 channels against 0), and no observable reads the dispersion at high wavenumber.
    Detail: [Archive Part 3](Archive/NewChat_Part3_QM.md) · [QM_007](ResearchY/QM_ManyBody/ResearchY-QM_007.md) …
    [QM_011](ResearchY/QM_ManyBody/ResearchY-QM_011.md).
-2. **The time sector (group G, G_068-G_093).** The theory's unique time prediction is the surface redshift
+2. **The time sector (group G, G_068-G_094).** The theory's unique time prediction is the surface redshift
    **1 + z = exp(−x)** against GR's **(1 + 2x)^(−1/2)**, differing at **second order**, and it is **decidable by one
    measurement on one object** (J0740+6620). The sector's own audits then showed that the *law* is not forced by
    anything that survives: the clock's form, its source and the substrate's connectivity are **inputs**, and
@@ -232,13 +232,14 @@ Ranked weakest first. Each is an input the theory consumes rather than derives:
 
 ## 4. Open Problems
 
-Four questions. The first three are the sector's own; the fourth follows the chain G_080-G_093, whose twelve
+Four questions. The first three are the sector's own; the fourth follows the chain G_080-G_094, whose thirteen
 successive questions (**is connectivity an input?**, **what sets the component count?**, **is the continuity law
 physics or bookkeeping?**, **what is the smallest theory that reproduces everything?**, **which parts of its two maps
 are observable?**, **can the kernel be reduced to one function?**, **can any measurement decide how many functions the
 kernel needs?**, **is any other observable free of the same degeneracy?**, **assuming manipulation is possible, which
 channel would permit it?**, **can a parameter of the law be actuated?**, **did anything the reduction removed remain
-necessary for control?**, **did the reduction remove anything needed for evolution, control or completion?**) were each
+necessary for control?**, **did the reduction remove anything needed for evolution, control or completion?**, **would
+closing the remaining gaps change physics or only the description?**) were each
 **answered** — **an input**; **nothing the theory contains, and a gauge for everything local**; **a coordinate
 choice**; **one state variable and three equations with 0 observable loss**; **the
 rate field and the source field, with one gauge, two units and one undetermined physical parameter**; **one function of
@@ -246,8 +247,9 @@ the density, conditional on the clock law being exponential**; **no — not at a
 **no — the degeneracy is structural and the one independent probe is unmeasured**; **one actuatable channel, the
 theory's own count transfer, with the required operation stated as a requirement**; **no — the curvature is a
 parameter of the law**; **no — the actuatable set is a subset of the observable core, and the full pre-reduction
-theory adds nothing**; and **no — the reduction moved none of the four axes, and what the three cores do not share is
-three structures the theory never had**.
+theory adds nothing**; **no — the reduction moved none of the four axes, and what the three cores do not share is
+three structures the theory never had**; and **physics, not elegance — but only through one gap, which reopens the
+manipulation channel**.
 
 1. Does any observable read the **lattice dispersion inside the band**? QM_011's verdict is conditional on "no"; if
    one does, the fold's position becomes observable.
@@ -311,7 +313,14 @@ three structures the theory never had**.
    for completion while being neither observable nor dynamical — a **memory channel** carrying the kernel's free
    coefficient, the **vector sector** (which needs the cubic substrate) and the **unified action** (the join of the
    substrates) — and the theory has **none** of them, so the reduction **neither created nor closed** a gap
-   ([G_093](ResearchY/G_GravitySource/ResearchY-G_093.md)).** The
+   ([G_093](ResearchY/G_GravitySource/ResearchY-G_093.md)). **And closing those gaps has now been priced** (G_094): of the
+   **four** forms, **one** changes an observable — the **memory channel**, which moves **7 of 8** readouts, adds **one**
+   actuatable channel (so the manipulation thread **reopens**) and makes the neutron-star comparison **decisive** above
+   **|c| = 3.386** — while the other three move **nothing** on this substrate (the vector sector is its own group's
+   physics gap, and the theta sector moves no value because the interference term is set by the phase *difference*), and
+   **cosmology never moves** because every kernel is **exactly 1** at the mean density: **ObservableGain 7** readouts,
+   **DynamicGain 0**, **ManipulationGain 1** channel — the observable and manipulation gains having the **same carrier**
+   ([G_094](ResearchY/G_GravitySource/ResearchY-G_094.md)).** The
    questions the chain answered (**is connectivity an input?**, **what sets the component count?**, **is the continuity
    law physics or bookkeeping?**) are recorded in [NewChat_OpenProblems.md](NewChat_OpenProblems.md).
 

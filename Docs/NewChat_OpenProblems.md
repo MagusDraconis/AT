@@ -125,7 +125,28 @@ Audit catalogue: `Docs/AuditIndex.md`.
      reduction removed derived bookkeeping only, and what completion lacks is three structures the theory never had.
      Referee test: a derivation of connectivity, of the map, of the clock law's shape or of the phase grid from the
      surviving vocabulary; a measurement deciding the kernel's second component; or a demonstration that the vector
-     sector follows from the ring, which E_004 refutes by the irrep dimension.
+     sector follows from the ring, which E_004 refutes by the irrep dimension. **And G_094 priced the closure itself**
+     — whether filling those gaps would change a physical prediction or only the description — with neither easy answer
+     allowed (**closure is not assumed to change physics**, and **not assumed to be only elegance**). Each gap was
+     closed **hypothetically** in the strongest form the surviving audits support: a structure **carrying the
+     coefficient** for the memory channel, E_004's **T1(3) with the curl form** for the vector sector, the **derived
+     grid** for the theta sector, and the object that would **derive the map and the kernel** for the unified action.
+     **Four of the six readout sets move** — the redshift (**2.802E-001 → 2.718E-001**), the acceleration
+     (**6.584E-002** relative), the neutron-star comparison (reaching **8.405E-003** against a **1.256E-001**
+     separation) and the manipulation results (**one channel**) — while the **clock rate** does not move at all
+     (at the mean density the kernel is **exactly 1** for *every* coefficient) and the **cosmology** set moves by
+     **1.666E-010** against the redshift's **8.405E-003**, **eight orders of magnitude** smaller. **The classification:**
+     **1** gap changes an observable (**7** of 8 readouts, largest **3.109E-001** relative per unit coefficient), **2**
+     change the interpretation only, **1** changes nothing here; the kinds are **2 physics / 0 dynamical** (measured as
+     empty) **/ 2 mathematical / 0 documentation**; and the gains are **7 readouts / 0 / 1 channel**. **The counterfactual,
+     ordered by threshold:** a **capability** first (no instrument at all), then the redshift at **|c| ≥ 0.216**, then the
+     **decisive** comparison at **|c| ≥ 3.386**, and a **cosmology consequence never**. **So the remaining question is
+     conditional rather than open:** the theory carries coefficient **zero** today, so a closure returning that value
+     would change **nothing** and only improve the derivation — while any other value **reopens the manipulation
+     thread** through the one gap that carries every observable consequence the closure has. Referee test: a closed
+     memory channel returning coefficient zero (which would make the answer *elegance only*), a demonstration that the
+     vector sector couples to the time sector's readouts, or a cosmological observable sensitive to the kernel **away**
+     from the mean density.
 
   G_080 also **answered** the question that previously stood here ("is connectivity a consequence of the theory or an
   input to it?"): **an input**, at the level of the allowed primitives, with both alternatives (derived, emergent)

@@ -32,7 +32,7 @@ token — the result is in the document's prose.
 | C | Source Geometry | 2 | 2 |
 | D | Resonance Structure | 58 | 58 |
 | E | Electromagnetism | 16 | 16 |
-| G | Gravity Source | 95 | 95 |
+| G | Gravity Source | 96 | 96 |
 | M | Measurement | 16 | 16 |
 | NP | New Physics | 172 | 167 |
 | QG | Geometry Bridge | 18 | 18 |
@@ -41,7 +41,7 @@ token — the result is in the document's prose.
 | S | Synthesis | 1 | 1 |
 | T | Spectral Blueprint | 15 | 15 |
 
-## ResearchY audits (414 investigations, 408 suites)
+## ResearchY audits (415 investigations, 409 suites)
 
 | AuditNumber | Title | Status | Location |
 |---|---|---|---|---|
@@ -224,6 +224,7 @@ token — the result is in the document's prose.
 | G_091 | ResearchY-G_091 — Kernel Curvature Actuation Audit | A PARAMETER, NOT A CONTROLLABLE VARIABLE | [ResearchY-G_091.md](ResearchY/G_GravitySource/ResearchY-G_091.md) · [Y_G_091_Tests.cs](../AT.Tests/ResearchY/G_GravitySource/Y_G_091_Tests.cs) |
 | G_092 | ResearchY-G_092 — Actuator versus Observable Audit | NO ACTUATABLE STRUCTURE IS UNOBSERVABLE | [ResearchY-G_092.md](ResearchY/G_GravitySource/ResearchY-G_092.md) · [Y_G_092_Tests.cs](../AT.Tests/ResearchY/G_GravitySource/Y_G_092_Tests.cs) |
 | G_093 | ResearchY-G_093 — Dynamic Core Recovery Audit | NOTHING NECESSARY WAS REMOVED, AND NOTHING ABSENT WAS CLOSED | [ResearchY-G_093.md](ResearchY/G_GravitySource/ResearchY-G_093.md) · [Y_G_093_Tests.cs](../AT.Tests/ResearchY/G_GravitySource/Y_G_093_Tests.cs) |
+| G_094 | ResearchY-G_094 — Physics versus Elegance Audit | PHYSICS, NOT ELEGANCE — BUT ONLY THROUGH ONE GAP | [ResearchY-G_094.md](ResearchY/G_GravitySource/ResearchY-G_094.md) · [Y_G_094_Tests.cs](../AT.Tests/ResearchY/G_GravitySource/Y_G_094_Tests.cs) |
 | M_001 | ResearchY-M_001 — Measurement Origin Audit | COMPLETE | [ResearchY-M_001.md](ResearchY/M_Measurement/ResearchY-M_001.md) · [Y_M_001_Tests.cs](../AT.Tests/ResearchY/M_Measurement/Y_M_001_Tests.cs) |
 | M_002 | ResearchY-M_002 — Measurement Disturbance Audit | COMPLETE | [ResearchY-M_002.md](ResearchY/M_Measurement/ResearchY-M_002.md) · [Y_M_002_Tests.cs](../AT.Tests/ResearchY/M_Measurement/Y_M_002_Tests.cs) |
 | M_003 | ResearchY-M_003 — Measurement Feedback Audit | COMPLETE | [ResearchY-M_003.md](ResearchY/M_Measurement/ResearchY-M_003.md) · [Y_M_003_Tests.cs](../AT.Tests/ResearchY/M_Measurement/Y_M_003_Tests.cs) |
