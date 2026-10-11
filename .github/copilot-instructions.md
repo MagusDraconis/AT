@@ -173,6 +173,16 @@ defect in this repository; the canonical exemplars are given so the rule can be 
    E_001's `SelfFiles` fixed it. This is the G_033/G_035 `SelfId` pattern and it generalises: **an audit that
    DERIVES a standard result will otherwise be read as evidence that the theory CONTAINS it.** Whenever a new
    audit source is added under `AT.Core`, check every existing whole-tree scanner for a self-reference shift.
+12. **A counterfactual that varies two structures at once must not be attributed to one of them.** G_092's
+   component-count row was first given the readout movement a **cut** produces (**2.304E-001**) and the cut's update
+   residual (**1.200E+000**). Both belong to the **links**: a cut removes links *and* raises the component count `c`,
+   so the movement is evidence about the link set, not about `c` — and `c`'s own gauge was already measured by G_082's
+   union construction, which holds the component-internal link set fixed and varies only `c` (shape **0**, values **0**,
+   ratio **0**, readers **0**). The row was moved to that instrument and the cut's numbers reported in the links row.
+   **Before attributing a measurement to a structure, name every quantity the intervention moves** — and when one
+   instrument varies two of them, use the instrument that varies one (the union construction here; the kernel re-cut
+   versus the map held in G_085/G_091). *(This rule was added **instead of** a mechanical guard: a guard would have to
+   know which structures each intervention touches, and no surviving scanner carries that map.)*
 
 # AT Project Memory Rules
 

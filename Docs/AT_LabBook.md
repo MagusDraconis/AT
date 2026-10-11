@@ -7691,3 +7691,75 @@ AT.App gained a Theory Book chapter, a Research News entry and a suite-table row
 **The manipulation thread is now closed at every level the surviving vocabulary offers**: one actuatable channel (the
 class's own transfer), every pump collapsing, and the one surviving exception - the curvature - a parameter with a
 zero coupling that is computed rather than searched for.
+
+### ResearchY-G_092 - Actuator versus Observable Audit (COMPLETE, NO ACTUATABLE STRUCTURE IS UNOBSERVABLE)
+
+**Question.** G_084-G_091 removed connectivity, the component count, the transport layer, the continuity law, the
+flux, the second kernel component and every candidate pump, each time on the ground that **the surviving
+observables did not move**. This audit asks the converse question: **did any eliminated structure remain
+necessary for dynamics or for control?** Two of the easy answers are forbidden - an **observable-reduction
+argument** ("the reduction kept the readouts") is not evidence about dynamics, and **"not observed, therefore
+irrelevant"** is not an argument at all. Prefer refutation: success would be a structure removed by the reduction
+and still required for control while invisible to observation; failure would be that the observable and actuator
+cores coincide.
+
+**1. The three roles are three procedures, measured on three objects.** OBSERVABLE: remove or move the structure
+in the description and re-read the surviving readouts, counting those **lost** and those **moved** beyond the
+equality rule **1e-12**. DYNAMICAL: remove or change it in the **update relation** (`UpdateAt`, the Laplacian
+action on the state - the sector's only evolution map), in the **class's reach `n - c`**, and in the
+**operation set**. ACTUATABLE: count the class's own operations that **write** it. A fourth question, whether the
+structure is REQUIRED FOR CONTROL, is kept apart on purpose, because **a precondition is not a knob**. The roles
+separate **in the inventory**: the **maps** are read through **6** readouts of 8 and leave the update at exactly
+**0.0**, while density counted six ways leaves every readout at exactly **0.0** and moves the reach.
+
+**2. The inventory is 17 structures and the columns come apart in both directions.** Observable **7**, dynamical
+**5**, actuatable **1**; boundary condition **1** (the link set: read by the along-a-link gradient AND an operand of
+the update, settable by nothing); dynamical-only **3** (the component count, topology, the operation's rule);
+observable-only **5** (the two maps, the gradient definition, the curvature, the phase); inert **6** (the flux, the
+continuity law, the ledger, mode locking, the distribution's functionals, the actualization rate); absent **1**
+(memory channels). **INVISIBLE ACTUATORS: 0.**
+
+**3. The chain re-run on the full pre-reduction theory gains nothing.** G_089's eight channels are re-run unchanged
+and joined by the structures the reduction removed - the component count, the flux, the continuity law, the ledger,
+the transport's own **rule** and memory channels: **14** rows, each judged by the only question that decides
+actuatability, **does an operation of the class write it?** **1** actuatable channel on the full theory against **1**
+on the reduced one: a gain of **0**, because the reduction changed no **operation** - it removed bookkeeping.
+
+**4. The two failure cores do not coincide, in either direction.** FailureCore(observables) has **7** members;
+FailureCore(actuation) - the structures whose removal kills the **operations** - has **3** (the state, the link set
+and the **rule itself**); intersection **2**, **actuation-only 1** (the rule), **observables-only 5**. What matters is
+which way the **actuatable** members lie, and the answer is one-way: **the only actuatable structure is in the
+observable core.** The reason is the audit's centre: **an operation writes the state and nothing else**, so the
+operation's **output** is the observable's **input**.
+
+**5. Dynamics without observables is not a channel.** **3** structures move the evolution and no readout - the
+**component count**, **density topology** and the operation's **rule** - and **none** is actuatable. The direction
+settles it: the reach is **`n - c`** of the **`n - 1`** conserving directions (**95/95** at c = 1, **94/95** at c = 2,
+**92/95** at c = 4), so such a structure can only **take reach away**, never grant it.
+
+**6. The substance of the failure: an invisible rule, not an invisible actuator.** Stripping the **transport operator**
+moves **0.0** of a readout - the layer's gauge residual is **exactly 0** - while it removes the operations
+themselves, so **the reduction was observation-safe exactly where it was control-fatal**. But what it removed is a
+**rule**, not a knob: no operation writes the rule it obeys. **There is no invisible actuator, only an invisible RULE
+whose effect is always visible.**
+
+**Five defects are recorded.** The **component-count row was first given the cut's readout movement** (**2.304E-001**)
+and the cut's update residual (**1.200E+000**) - both belong to the **links**, because a cut changes the link set as
+well as `c`; the row now uses **G_082's union construction**, which holds the component-internal link set fixed and
+varies only `c` (shape **0**, values **0**, ratio **0**, readers **0**). A **literal count** stood where a measurement
+was available: the state row asserted "**8** of 8 readouts move with it" from `8 - lost`, while the measured number of
+readouts that **move** is **3**. **"Written by an operation" was conflated with "is the operation"**: the transport
+operator's row first carried `OperationsChangingIt = 95`, making the operations appear to write the rule they obey;
+the column is **0** for every row but the state. An **undefined column was read as a false one**: the "decidable in
+situ" flag was `false` for every non-observable row, where the question is vacuous, and is now the **one** row that is
+read and **not** decidable - the curvature - with G_087's own ratio (**0.093**) as the independent confirmation. And a
+**verdict clause could have rested on one reading**: "the cores differ" is now computed in **both** directions (**1** one
+way, **5** the other) rather than argued from the actuation-only member alone.
+
+**Status.** COMPLETE. Tests `Y_G_092_Tests` **10/10**. Core `AT.Core/ResearchXH/ActuatorVersusObservableAudit.cs`; doc
+`Docs/ResearchY/G_GravitySource/ResearchY-G_092.md`. Registry: added as **Derived** (`actuator-versus-observable-audit`).
+**Group-G count guards bumped:** `Y_G_033` without 60 -> **61** (this suite names no substrate token anywhere),
+with-substrate 24, comment-only 6; `Y_G_035` 92 -> **93** with survives 78 -> **79**. AT.App gained a Theory Book
+chapter, a Research News entry and a suite-table row; AT.Book gained the registry object. **The reduction chain's
+control side is now closed**: there is no structure that is actuatable and unobservable, and the one structure
+required for control and not read is the operation's own rule.

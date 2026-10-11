@@ -90,7 +90,22 @@ Audit catalogue: `Docs/AuditIndex.md`.
      to every state-based process is **exactly zero because it has no state-dependence** — the same at every density,
      potential and site — while its effect on **both** clock and gravity is large (**3.109E-001** per unit curvature at
      the largest), and it is **observable in principle and not in practice**; so it is a **parameter**, and an actuator
-     would have to change a **coefficient of the law**.
+     would have to change a **coefficient of the law**. **And G_092 closed the reduction's control side:** the three
+     roles were separated and **measured on three different objects** (the readouts, the update relation with the class's
+     reach `n − c`, and the operation set), with **observable-reduction arguments** and **"not observed, therefore
+     irrelevant"** both forbidden. Of **17** structures removed or demoted across G_080–G_091, **7** are observable,
+     **5** dynamical and **1** actuatable — and the columns come apart in **both** directions (the maps are read through
+     **6** readouts and leave the update at exactly **0**; the count leaves every readout at **0** and moves the reach
+     **95 → 94**) — but **no structure is actuatable and unobservable**. **Control needs three and can set one:** the
+     state, the link set and the operation's **own rule** are preconditions, and the single settable structure is the
+     **state**, the object the readouts already read — because an operation's **output** is the observable's **input**.
+     **The full pre-reduction theory adds 0 actuatable channels** (the reduction changed no operation, only bookkeeping),
+     and the three structures that move the evolution without moving a readout can only **take reach away**
+     (`n − c`: **95/95**, **94/95**, **92/95** at `c = 1, 2, 4`). **The residual question is narrow:** an operation
+     whose **argument list** contains a link, a count, a flux or a phase — which would make one of them actuatable — or a
+     measurement that decides the **kernel's second component**, the one row where **read** and **decidable** come apart.
+     Referee test: an operation that writes the link set or the rule, or a surface-redshift measurement below the
+     compactness veto.
 
   G_080 also **answered** the question that previously stood here ("is connectivity a consequence of the theory or an
   input to it?"): **an input**, at the level of the allowed primitives, with both alternatives (derived, emergent)

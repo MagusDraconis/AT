@@ -18,7 +18,7 @@ D_028/D_040 is standard: a **value** may be DERIVED while the **window or input*
 
 | Front | State |
 |---|---|
-| Group G — gravity source | **at G_091** (kernel curvature actuation: the one surviving exception is closed — the curvature's coupling to every state-based process is exactly zero because it has no state-dependence, while its effect on both clock and gravity is large, so it is a parameter and not a controllable variable). The chain G_068-G_091 closed the time sector, weighed the core, collapsed its two maps to one, showed the restoration is undecidable, and then closed the manipulation thread at every level the surviving vocabulary offers. |
+| Group G — gravity source | **at G_092** (actuator versus observable: the reduction's control side is closed — of 17 structures removed or demoted across G_080–G_091, 7 are observable, 5 dynamical and 1 actuatable, and **no structure is actuatable and unobservable**; control needs three and can set one, the state the readouts already read, because an operation's output is the observable's input). The chain G_068-G_092 closed the time sector, weighed the core, collapsed its two maps to one, showed the restoration is undecidable, closed the manipulation thread at every level the surviving vocabulary offers, and then re-weighed every removal for dynamical and control necessity. |
 | Group QM — many-body correspondence | **closed** at QM_011 (the spectral fingerprint is an input, not a law). |
 | Group E — electromagnetism | **complete** at E_016. |
 | Groups A, B, C, D, M, NP, QG, R, S, T | complete or closed; catalogue in `Docs/AuditIndex.md`. |

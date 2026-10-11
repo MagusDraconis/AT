@@ -758,6 +758,13 @@ public static class TemporalIndependenceAudit
             + "the metric content is the clock alone. NOT symbol-detectable: the suite names no B, g_rr or GammaOf — its "
             + "words are curvature, coupling, actuation and lever arms",
             ScanDetectsIt: false),
+
+        new SectorClaim("Y_G_092", "Actuator versus Observable", MetricRequirement.ClockOnly,
+            "the audit asks whether any structure eliminated by G_084-G_091 stayed necessary for dynamics or control: "
+            + "its vocabulary is the readout set, the update relation, the transport rank and the operation set, so the "
+            + "metric content is the clock alone. NOT symbol-detectable: the suite names no B, g_rr or GammaOf — its "
+            + "words are role, actuator, necessity and reach",
+            ScanDetectsIt: false),
     };
 
     // ── The computed classification summaries ───────────────────────────────
