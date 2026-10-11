@@ -723,6 +723,13 @@ public static class TemporalIndependenceAudit
             + "content is the clock alone. NOT symbol-detectable: the suite names no B, g_rr or GammaOf — its words are "
             + "kernels, mismatches, dimensions and anchors",
             ScanDetectsIt: false),
+        // G_087: whether any surviving measurement can distinguish the one-function kernel from the two-function one
+        new SectorClaim("Y_G_087", "Kernel Discriminability", MetricRequirement.ClockOnly,
+            "the audit asks whether the kernel's dimension is measurable: its vocabulary is the rate kernel, its smallest "
+            + "extension, the readouts derived from it, the compactness and the instrument classes, so the metric content "
+            + "is the clock alone. NOT symbol-detectable: the suite names no B, g_rr or GammaOf — its words are "
+            + "signatures, thresholds, vetoes and degeneracies",
+            ScanDetectsIt: false),
     };
 
     // ── The computed classification summaries ───────────────────────────────

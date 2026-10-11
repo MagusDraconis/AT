@@ -41,12 +41,19 @@ Audit catalogue: `Docs/AuditIndex.md`.
      source-carrying readouts; the λ family (the same rate, a different split) shows the collapse is a property of the
      sector's content, the acceleration excluding every member but `λ = 1`. **And the mismatch field is proportional to
      `ln ρ`, so it vanishes at the mean density — exactly where the pinned data live** (**1.671E-010** against
-     **7.636E-002** elsewhere): the structural reason the anchors are blind to the free room, which G_085 measured
-     without explaining. `ObservableKernelDimension = 1` for the sector's law and **2** in general, and the deciding
-     parameter is the free room. **So the open question is no longer a reduction but a measurement:** does a
-     second-order redshift at the target confirm the one-function kernel (**free room zero**), or restore the source as
-     an **independent gravity object**? Referee test: a readout not reproducible from `K` alone, a non-zero mismatch
-     for the sector's law, or a mismatch that failed to vanish at the mean density would each change the verdict.
+     **7.636E-002** elsewhere): the structural reason the anchors are blind to the free room. `ObservableKernelDimension
+     = 1` for the sector's law and **2** in general, the deciding parameter being the free room. **And G_087 refuted the
+     possibility of deciding it by measurement:** the free room's signature at **J0740+6620** is **1.166E-002** against
+     the AT/GR separation **1.256E-001** — a factor **10.8 below** the effect the same programme is already chasing — the
+     smallest detectable extension at 3σ is **|c| = 4.6** for the current NICER-class timing (**no constraint**) and
+     **0.7** for a direct 1 % surface-redshift measurement, and **below |c| = 0.72 the recorded compactness error alone
+     vetoes the decision at any redshift precision** (a unit extension mimics **16.65 %** of compactness against the
+     recorded **3.661 %** error). The most sensitive probe is the **AT/GR comparison itself** (**3.109E-001** per unit
+     `c`), since its own value is already second order. **So the open question is a measurement that does not yet
+     exist:** a surface redshift better than about **half a per cent** at the target with a compactness known far better
+     than it is — or a **second target at a different compactness**, which would break the degeneracy. Referee test: a
+     signature larger than the separation (an extension of order ten or more), a precision an order of magnitude beyond
+     the recorded classes, or a second target.
 
   G_080 also **answered** the question that previously stood here ("is connectivity a consequence of the theory or an
   input to it?"): **an input**, at the level of the allowed primitives, with both alternatives (derived, emergent)

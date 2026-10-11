@@ -64,7 +64,7 @@ public class Y_G_033_Tests : ResearchTestBase
         // suites were misclassified by that rule — Y_G_004 (its report string names the substrate), Y_G_024 (a quoted
         // method line) and Y_G_043 (its compared-family lines are literals) — and they now sit in the comment bucket,
         // with G_034's meta-audit exclusion unchanged. with-substrate therefore reads 24 and comment-only 6.
-        Assert.Equal(55, without.Length);   // G_072 and G_075-G_084 add suites whose code names no substrate object; G_085 and G_086 name it nowhere
+        Assert.Equal(56, without.Length);   // G_072 and G_075-G_084 add suites whose code names no substrate object; G_085-G_087 name it nowhere
         Assert.Equal(24, withSubstrate.Length);
         Assert.Equal(6, commentOnly.Length);                 // G_001, G_004, G_024, G_043, G_046, G_084: named in prose, computed with nowhere
 

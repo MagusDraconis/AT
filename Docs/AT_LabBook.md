@@ -7366,3 +7366,69 @@ with-substrate 24, comment-only 6; `Y_G_035` 86 -> **87** with survives 72 -> **
 chapter, a Research News entry and a suite-table row; AT.Book gained the registry object. **The chain has reached the
 point where the next step is data:** a second-order redshift at the target either confirms the one-function kernel
 (the free room zero) or restores the source as an independent gravity object.
+
+
+---
+
+### ResearchY-G_087 - Kernel Discriminability Audit (COMPLETE, KERNEL DIMENSION UNDECIDABLE - refuted at every recorded and planned capability)
+
+**Question.** G_086 collapsed the observable kernel to the rate `K(rho)` alone and identified the free room
+`ln K = A + c A^2 / 2` as the smallest extension restoring a second function. **Can any surviving measurement
+distinguish the one-function kernel from the two-function one?** Prefer refutation.
+
+**1. Every readout from K alone, in TWO READINGS (task 1).** The kernel is what **defines** the potential in the
+reduced representation, so the source-carrying readouts are reported both ways: under the **kernel re-cut** the
+potential and the acceleration move (signals 1.399E-002 and 9.776E-005), while with the **map held** (G_085's
+convention) they are **exactly** unchanged (0.000E+000). The rate-based readouts move in both readings: the rate at the
+well 7.368063E-001 -> 7.471890E-001, `1 + z` 1.357209E+000 -> 1.338349E+000, `g00` -5.428835E-001 -> -5.582914E-001,
+the hill-well redshift 5.932562E-001 -> 5.711168E-001, and the AT/GR comparison -1.256265E-001 -> -1.372885E-001.
+**The redshift moves in either reading, which is why it is the robust discriminator.**
+
+**2. The smallest extension (task 2).** One parameter, second order in the potential, the first surviving coefficient:
+`K(1) = 1` at every member and the effect **exactly proportional to c** (a doubling of c doubles the increment to nine
+digits).
+
+**3. The first sensitive observable (task 3).** Relative sensitivity per unit `c`, by a central difference with
+h = 1e-6: **the AT/GR comparison at the target 3.109E-001** - because its own value is **already second order** - then
+the kernel re-cut acceleration 3.049E-001, the kernel re-cut potential 1.527E-001, `g00` 9.329E-002, the hill-well
+redshift 9.197E-002, the rate at the well 4.664E-002, and `1 + z` at the well 4.664E-002, with **both map-held source
+readouts exactly 0.000E+000**.
+
+**4. The minimum precision (task 4).** For |c| = 1 at three sigma: **4.5759 per cent** under a shared-compactness
+comparison and **3.4398 per cent** for a single prediction against data. The sweep: 0.4639 per cent at |c| = 0.1,
+1.3874 at 0.3, 4.5759 at 1, 13.32 at 3, 40.04 at 10 - and for **|c| <= 0.3 the conservative model is UNREACHABLE**,
+because the compactness error alone vetoes it. The signature is a difference of nearly equal exponentials and is
+computed with `AtNumerics.ExpM1`; the naive subtraction is **carried and measured**: exact down to c ~ 1e-6, failing
+below it.
+
+**5. J0740 re-evaluated (task 5).** Target **J0740+6620 (Riley 2021)**, |x| = 2.470011E-001, relative compactness error
+3.661 per cent. Smallest detectable |c| at three sigma, solved by bisection: **4.6** for the current NICER-class timing,
+**4.6** with radio pulsar timing, **2.3** for next-generation X-ray timing, **1.1** for next-generation timing and
+spectroscopy, and **0.7** for a **direct 1-per-cent surface-redshift measurement**. The current class therefore offers
+**NO CONSTRAINT**, and no recorded class reaches a natural extension of order 0.1 to 0.3.
+
+**6. Can any current or planned experiment decide it? (task 6) REFUTED, quantitatively.** The extension's signature at
+the target is **1.166E-002** against the AT/GR separation **1.256E-001** - a factor **10.8** *below* the effect the same
+programme is already chasing, so the measurement that decides the theory does not decide the kernel. A unit extension
+mimics a compactness shift of **4.114E-002**, i.e. **16.65 per cent** of the compactness, against the recorded
+**3.661 per cent** error. And there is a **veto independent of the instrument**: below **|c| = 0.72** the compactness
+error alone forbids a three-sigma decision at **any** redshift precision. The decisive measurement is named in the
+programme's own form: a surface redshift better than about **half a per cent** at the target, with a far better
+compactness - or a **second target at a different compactness**, which would break the degeneracy.
+
+**Five defects are recorded**: an **AXIS error** - whether the source-carrying readouts are sensitive depends on which
+convention is used, so the first version reported the largest signature in its own instrument as exactly zero, and the
+audit now reports both readings; the audit's own **prose contradicted its table** about which observable is the first
+sensitive one; the **compactness is NEGATIVE** in the project's convention (`X = -GM/(Rc^2)`), so a signed ratio
+compared the wrong way and every figure is now a magnitude; a **monotonicity assertion written backwards** (a smaller
+extension needs a *finer*, not a looser, measurement); and a **file corruption in the toolchain** - a PowerShell rewrite
+collapsed the test file onto one line, so every `///` comment swallowed the code and the suite vanished from discovery,
+which was caught because the *filter* found nothing rather than because a test failed.
+
+**Status.** COMPLETE. Tests `Y_G_087_Tests` **10/10**. Core `AT.Core/ResearchXH/KernelDiscriminabilityAudit.cs`; doc
+`Docs/ResearchY/G_GravitySource/ResearchY-G_087.md`. Registry: added as **Derived** (`kernel-discriminability-audit`).
+**Group-G count guards bumped:** `Y_G_033` without 55 -> **56** (this suite names no substrate token anywhere),
+with-substrate 24, comment-only 6; `Y_G_035` 87 -> **88** with survives 73 -> **74**. AT.App gained a Theory Book
+chapter, a Research News entry and a suite-table row; AT.Book gained the registry object. **The chain has reached data,
+and the data cannot answer it:** the kernel's dimension needs a sub-half-per-cent surface redshift with a far better
+compactness, or a second target - neither of which any recorded or planned capability provides.

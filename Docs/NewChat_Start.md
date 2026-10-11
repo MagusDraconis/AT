@@ -29,7 +29,7 @@ gauge structure and cosmology are **downstream realizations**, not primitives.
    reversal (23 channels against 0), and no observable reads the dispersion at high wavenumber.
    Detail: [Archive Part 3](Archive/NewChat_Part3_QM.md) · [QM_007](ResearchY/QM_ManyBody/ResearchY-QM_007.md) …
    [QM_011](ResearchY/QM_ManyBody/ResearchY-QM_011.md).
-2. **The time sector (group G, G_068-G_086).** The theory's unique time prediction is the surface redshift
+2. **The time sector (group G, G_068-G_087).** The theory's unique time prediction is the surface redshift
    **1 + z = exp(−x)** against GR's **(1 + 2x)^(−1/2)**, differing at **second order**, and it is **decidable by one
    measurement on one object** (J0740+6620). The sector's own audits then showed that the *law* is not forced by
    anything that survives: the clock's form, its source and the substrate's connectivity are **inputs**, and
@@ -192,7 +192,12 @@ Ranked weakest first. Each is an input the theory consumes rather than derives:
    gradient — so `S = (ln K)′` holds for the sector's law (**9.021E-013**) and fails by a measured field for the free
    room (**7.636E-002**) and a GR-shaped law (**1.308E+000**), with the mismatch **vanishing at the mean density**,
    where the pinned data live: `ObservableKernelDimension = 1`, **2** in general
-   ([G_086](ResearchY/G_GravitySource/ResearchY-G_086.md)).
+   ([G_086](ResearchY/G_GravitySource/ResearchY-G_086.md)). **And the second function's restoration is not measurable**
+   (G_087): the free room's signature at J0740+6620 is **1.166E-002** against the AT/GR separation **1.256E-001** — a
+   factor **10.8 below** the effect the programme is already chasing — the smallest extension any recorded instrument
+   class could detect at 3σ is **|c| = 4.6** (current) to **0.7** (a direct 1 % surface redshift), and **below
+   |c| = 0.72 the compactness error alone vetoes the decision at any redshift precision**
+   ([G_087](ResearchY/G_GravitySource/ResearchY-G_087.md)).
 3. **The empty cell.** Every G_078 bound is conditional on a cell being allowed to be empty, and **no surviving datum
    probes that regime**: [G_078](ResearchY/G_GravitySource/ResearchY-G_078.md).
 4. **The density-to-potential map.** The metric's exponential and the rate's power are the **same statement**, and
@@ -212,13 +217,14 @@ Ranked weakest first. Each is an input the theory consumes rather than derives:
 
 ## 4. Open Problems
 
-Four questions. The first three are the sector's own; the fourth follows the chain G_080-G_086, whose six
+Four questions. The first three are the sector's own; the fourth follows the chain G_080-G_087, whose seven
 successive questions (**is connectivity an input?**, **what sets the component count?**, **is the continuity law
 physics or bookkeeping?**, **what is the smallest theory that reproduces everything?**, **which parts of its two maps
-are observable?**, **can the kernel be reduced to one function?**) were each **answered** — **an input**, **nothing the
-theory contains and a gauge for everything local**, **a coordinate choice**, **one state variable and three equations
-with 0 observable loss**, **the rate field and the source field, with one gauge, two units and one undetermined
-physical parameter**, and **one function of the density, conditional on the clock law being exponential**.
+are observable?**, **can the kernel be reduced to one function?**, **can any measurement decide how many functions the
+kernel needs?**) were each **answered** — **an input**, **nothing the theory contains and a gauge for everything
+local**, **a coordinate choice**, **one state variable and three equations with 0 observable loss**, **the rate field
+and the source field with one gauge, two units and one undetermined physical parameter**, **one function of the density
+conditional on the clock law being exponential**, and **no — not at any recorded or planned capability**.
 
 1. Does any observable read the **lattice dispersion inside the band**? QM_011's verdict is conditional on "no"; if
    one does, the fold's position becomes observable.
@@ -234,12 +240,17 @@ physical parameter**, and **one function of the density, conditional on the cloc
    reproduced from the kernel alone (**8 of 8**), and `S = (ln K)′` holds for the sector's law to **9.021E-013**.
    **`ObservableKernelDimension = 1`, with a single well-identified condition for 2:** the clock law's departure from
    the exponential — the **free room** — which the surviving data leave undetermined (its mismatch field vanishes at
-   the mean density, where the pinned data live). **So the open question is no longer a reduction but a measurement:
-   does a second-order redshift at the target confirm the one-function kernel (free room zero), or restore the source
-   as an independent gravity object?** Referee test: a readout not reproducible from `K` alone, a non-zero mismatch for
-   the sector's law, or a mismatch that failed to vanish at the mean density would each change the verdict. The
-   questions the chain answered (**is connectivity an input?**, **what sets the component count?**, **is the continuity
-   law physics or bookkeeping?**) are recorded in [NewChat_OpenProblems.md](NewChat_OpenProblems.md).
+   the mean density, where the pinned data live). **And G_087 asked whether any measurement can tell which, and refuted
+   it quantitatively:** the free room's signature at **J0740+6620** is **1.166E-002** against the AT/GR separation
+   **1.256E-001** — a factor **10.8 below** the effect the same programme is already chasing — the smallest detectable
+   extension at 3σ is **|c| = 4.6** for the current NICER-class timing (so the current class gives **no constraint**) and
+   **0.7** for a direct 1 % surface-redshift measurement, and **below |c| = 0.72 the recorded compactness error alone
+   vetoes the decision at any redshift precision**. **So the open question is a measurement that does not yet exist:** a
+   surface redshift better than about **half a per cent** at the target *with a far better compactness*, or a **second
+   target at a different compactness** to break the degeneracy. Referee test: a signature larger than the separation (an
+   extension of order ten or more), a precision an order of magnitude beyond the recorded classes, or a second target.
+   The questions the chain answered (**is connectivity an input?**, **what sets the component count?**, **is the
+   continuity law physics or bookkeeping?**) are recorded in [NewChat_OpenProblems.md](NewChat_OpenProblems.md).
 
 Full statements, the working hypothesis they sit under, and the reclassified (solved) problems:
 [NewChat_OpenProblems.md](NewChat_OpenProblems.md).
