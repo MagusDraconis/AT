@@ -65,7 +65,21 @@ Audit catalogue: `Docs/AuditIndex.md`.
      **drift whose rate the theory fixes** would reverse the verdict; alternatively a surface redshift better than about
      **half a per cent** with a far better compactness, or a **second target with an independently measured
      compactness**. Referee test: a non-collinear observable that is measurable and not routed through the compactness,
-     a signature larger than the separation, or an independent compactness for a second target.
+     a signature larger than the separation, or an independent      compactness for a second target. **And G_089 answered the manipulation question for the CHANNEL rather than for
+     the possibility** (the hypothesis was assumed true, and arguing from the previous refusals was forbidden): the
+     inverse problem gives the lever arm — **1 %** of clock costs **3.030 %** of local count, so the clock is **damped**
+     — the uniform gravity direction is **not in the class** while a transfer between neighbours **is**, of **8**
+     channels **1** is actuatable (the class's own count transfer) and **3** control the kernel **without an actuator**
+     (the link structure, which no primitive detects; the component count, conserved in **0** operations; the kernel's
+     curvature, which **is** the extension and which nothing measures). **The general result is that the unobservable
+     controls are exactly the CONSERVED INPUTS, so among the controls nothing is actuatable, while every actuatable
+     quantity is one the observables read** — because the actuator is a transfer of count and a transfer **is** a change
+     in the density. The sector prices a **source exactly** (residual **0.0300**) and a **redistribution at nothing**.
+     **So the open question is a requirement rather than a primitive:** an operation that changes a **conserved input**
+     (the link structure, the component count, the total) or one that changes a **parameter of the law** (the kernel's
+     curvature, the only channel that would be both effective and unobservable in situ). Referee test: an operation that
+     creates or removes count (which the ledger would detect and which would give a global clock shift), one that
+     changes the link structure or the component count, or a measurement-free channel through the curvature.
 
   G_080 also **answered** the question that previously stood here ("is connectivity a consequence of the theory or an
   input to it?"): **an input**, at the level of the allowed primitives, with both alternatives (derived, emergent)

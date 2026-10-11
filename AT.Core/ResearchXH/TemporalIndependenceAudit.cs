@@ -737,6 +737,13 @@ public static class TemporalIndependenceAudit
             + "metric content is the clock alone. NOT symbol-detectable: the suite names no B, g_rr or GammaOf — its "
             + "words are powers, collinearity, reachability and equation counts",
             ScanDetectsIt: false),
+        // G_089: which physical channel would permit a local manipulation of time or gravity
+        new SectorClaim("Y_G_089", "Manipulation Channels", MetricRequirement.ClockOnly,
+            "the audit assumes manipulation is possible and asks which channel would permit it: its vocabulary is the "
+            + "density, the kernel, the class's transfer operators, the conservation laws and the instrument routes, so "
+            + "the metric content is the clock alone. NOT symbol-detectable: the suite names no B, g_rr or GammaOf — its "
+            + "words are channels, actuators, controls and pathways",
+            ScanDetectsIt: false),
     };
 
     // ── The computed classification summaries ───────────────────────────────

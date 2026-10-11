@@ -7489,3 +7489,73 @@ with-substrate 24, comment-only 6; `Y_G_035` 88 -> **89** with survives 74 -> **
 chapter, a Research News entry and a suite-table row; AT.Book gained the registry object. **The chain's measurement
 question is now closed in the negative at every route the surviving sector offers**, and the two routes that would
 reverse it are named.
+
+
+---
+
+### ResearchY-G_089 - Manipulation Channel Audit (COMPLETE, ONE ACTUATABLE CHANNEL - and it is the theory's own elementary operation)
+
+**Question.** WORKING HYPOTHESIS, ASSUMED TRUE: local manipulation of time and/or gravity IS physically possible. The
+question is **which physical channel would permit it**, inside the surviving vocabulary - Difference, Actualization,
+rho, K(rho), all surviving audits. Arguing from previous negative verdicts is forbidden, as is adding primitives
+immediately or assuming impossibility. Success criterion: a surviving channel not already eliminated. Failure
+criterion: every logically possible channel collapses back to the existing kernel without adding a controllable
+variable.
+
+**1. The inverse problem, solved (task 1).** A fractional clock change needs a local count change of
+`(1 + Delta)^(d/(1+cA)) - 1`, computed in closed form: **1 per cent of clock needs 3.030 per cent of local count**
+(density per unit clock 3.0301), 10 per cent needs 33.100, 100 per cent needs 700.000. **The density is the lever arm
+and the clock is DAMPED by d/(1+cA)**. The gravity side: the **uniform** direction (adding a constant potential
+everywhere) changes the acceleration by **5.551E-017** - the rounding of a zero - while moving the clock, and the class
+does **not** contain it; a **differential** change (a transfer between neighbouring cells) moves the acceleration by
+**6.734E-003** with no clock change, and the class **does** contain it.
+
+**2. The channel search (task 2).** Of the eight candidates, **one is ACTUATABLE** (the local density, through the
+class's own conserving transfers - `ConservingWitnesses` is non-empty and at least one is a genuine transport), **three
+are controls WITHOUT an actuator** (density topology: 0 of 4 primitives detect a cut and no operation changes the link
+set; the kernel's curvature: it IS `c` and nothing measures it; boundary conditions: the total and the component count
+are both conserved by the class in 0 operations), **three are not independent controls** (correlation, variance, drift:
+functions of the density or of its own evolution), and **one is excluded by arity** (the phase structure: the temporal
+observables take the density and nothing else).
+
+**3. The hidden variables still act (task 3).** The eliminated structures were re-examined as CONTROL variables: **three
+still control the kernel** - the link structure, the component count and the kernel's curvature - and **all three are
+unobservable AND unactuatable**. The transport layer is the one row where the actuation and its observable coincide:
+the OPERATOR is actuatable and what it changes is the density, which the observables read.
+
+**4. Control versus observable (task 4).** Measured counts: controlling the kernel 3, of which unobservable 3;
+actuatable 1, of which unobservable 0; actuatable AND observable 1. **So the answer is YES in principle and NO within
+the class**: unobservable controls exist, but **among the controls nothing is actuatable** - the unobservable controls
+are exactly the CONSERVED inputs, and conservation is what makes them uncontrollable.
+
+**5. Energy scaling (task 5).** In the sector's own terms a redistribution costs **0** in the ledger while a **source**
+would be **detected exactly** (residual 0.0300 for a declared 0.0300) rather than produced, and the class's operators
+reconstruct with residual 0.000E+000. The practical cost is therefore the calibration's: the ordinary cost of moving
+mass-energy. The requirement is the same fraction at the surface and in a shallow field - the channel is scale-free in
+the theory.
+
+**6. Technology classification (task 6).** **impossible** for the conserved inputs; **principle-only** for the kernel's
+curvature (effective and unobservable in situ, but a parameter of the LAW); **astrophysical-only** for large
+redistributions; **laboratory-feasible** only as the ordinary gravitational shift - which IS the kernel, so it confirms
+the channel rather than manipulating the clock independently of the density.
+
+**7. The minimal pathway (task 7).** a human action moves count along the links, the density changes, the kernel reads
+it, and the clock and gravity follow - bounded by count conservation, by the damping `d/(1+cA)`, and by the ledger,
+which would detect any count that appeared without being transferred.
+
+**Four defects are recorded.** The **inverse-problem ratio was reported as a "gain below one" and the measurement
+refuted it** (it is about 3: the density must move MORE than the clock - the audit now reports the DAMPING); the
+**control-versus-observable count was taken over all rows instead of the controls**, so the transport layer and the flux
+landed in the intersection and contradicted the audit's own conclusion - resolved by fixing the **mislabeled row** (the
+transport layer is the operation set, and what the actuation changes is the density, which is observable); "EXACTLY"
+printed beside the **rounding** 5.551E-017; and two **scripted-edit corruptions** of the test file (a mangled string
+literal and a duplicate line), both caught by the compiler.
+
+**Status.** COMPLETE. Tests `Y_G_089_Tests` **10/10**. Core `AT.Core/ResearchXH/ManipulationChannelAudit.cs`; doc
+`Docs/ResearchY/G_GravitySource/ResearchY-G_089.md`. Registry: added as **Derived** (`manipulation-channel-audit`) -
+the verdict is a statement about the **operation set**, which is computed. **Group-G count guards bumped:** `Y_G_033`
+without 57 -> **58** (this suite names no substrate token anywhere), with-substrate 24, comment-only 6; `Y_G_035`
+89 -> **90** with survives 75 -> **76**. AT.App gained a Theory Book chapter, a Research News entry and a suite-table
+row; AT.Book gained the registry object. **The failure criterion is met for pathways and the success criterion only in
+the sense that the channel that would be needed is IDENTIFIED** - an operation that changes a conserved input, or one
+that changes a parameter of the law - stated as a requirement on the theory rather than assumed as a primitive.

@@ -29,7 +29,7 @@ gauge structure and cosmology are **downstream realizations**, not primitives.
    reversal (23 channels against 0), and no observable reads the dispersion at high wavenumber.
    Detail: [Archive Part 3](Archive/NewChat_Part3_QM.md) · [QM_007](ResearchY/QM_ManyBody/ResearchY-QM_007.md) …
    [QM_011](ResearchY/QM_ManyBody/ResearchY-QM_011.md).
-2. **The time sector (group G, G_068-G_088).** The theory's unique time prediction is the surface redshift
+2. **The time sector (group G, G_068-G_089).** The theory's unique time prediction is the surface redshift
    **1 + z = exp(−x)** against GR's **(1 + 2x)^(−1/2)**, differing at **second order**, and it is **decidable by one
    measurement on one object** (J0740+6620). The sector's own audits then showed that the *law* is not forced by
    anything that survives: the clock's form, its source and the substrate's connectivity are **inputs**, and
@@ -205,7 +205,14 @@ Ranked weakest first. Each is an input the theory consumes rather than derives:
    *is* the compactness, the interior's **×4.7** larger signature is hidden, the transport telescopes (residual
    **2.776E-017**), and the drift's rate is unfixed. A second target gives `N` equations in `N + 1` unknowns (gain only
    `√N`), and the mixed route reaches **|c| = 0.89**, G_087's veto recovered from the compactness side
-   ([G_088](ResearchY/G_GravitySource/ResearchY-G_088.md)).
+   ([G_088](ResearchY/G_GravitySource/ResearchY-G_088.md)). **And the manipulation question has been answered for the
+   channel rather than for the possibility** (G_089): assuming local manipulation **is** possible, the inverse problem
+   gives the lever arm (**1 %** of clock costs **3.030 %** of local count — the clock is **damped**), **8** channels are
+   searched and **1** is actuatable (the class's own count transfer), **3** control the kernel **without an actuator**
+   (the link structure, the component count, the kernel's curvature), and the general result is that **the unobservable
+   controls are exactly the conserved inputs** — so **among the controls nothing is actuatable**, while every actuatable
+   quantity is one the observables read: the required operation (changing a conserved input, or a parameter of the law)
+   is **stated as a requirement** ([G_089](ResearchY/G_GravitySource/ResearchY-G_089.md)).
 3. **The empty cell.** Every G_078 bound is conditional on a cell being allowed to be empty, and **no surviving datum
    probes that regime**: [G_078](ResearchY/G_GravitySource/ResearchY-G_078.md).
 4. **The density-to-potential map.** The metric's exponential and the rate's power are the **same statement**, and
@@ -225,16 +232,17 @@ Ranked weakest first. Each is an input the theory consumes rather than derives:
 
 ## 4. Open Problems
 
-Four questions. The first three are the sector's own; the fourth follows the chain G_080-G_088, whose eight
+Four questions. The first three are the sector's own; the fourth follows the chain G_080-G_089, whose nine
 successive questions (**is connectivity an input?**, **what sets the component count?**, **is the continuity law
 physics or bookkeeping?**, **what is the smallest theory that reproduces everything?**, **which parts of its two maps
 are observable?**, **can the kernel be reduced to one function?**, **can any measurement decide how many functions the
-kernel needs?**, **is any other observable free of the same degeneracy?**) were each **answered** — **an input**,
-**nothing the theory contains and a gauge for everything local**, **a coordinate choice**, **one state variable and
-three equations with 0 observable loss**, **the rate field and the source field with one gauge, two units and one
-undetermined physical parameter**, **one function of the density conditional on the clock law being exponential**,
-**no — not at any recorded or planned capability**, and **no — the degeneracy is structural and the one independent
-probe (the kernel's curvature, which is `c` exactly) is unmeasured**.
+kernel needs?**, **is any other observable free of the same degeneracy?**, **assuming manipulation is possible, which
+channel would permit it?**) were each **answered** — **an input**; **nothing the theory contains, and a gauge for
+everything local**; **a coordinate choice**; **one state variable and three equations with 0 observable loss**; **the
+rate field and the source field, with one gauge, two units and one undetermined physical parameter**; **one function of
+the density, conditional on the clock law being exponential**; **no — not at any recorded or planned capability**;
+**no — the degeneracy is structural and the one independent probe is unmeasured**; and **one actuatable channel, the
+theory's own count transfer, with the required operation stated as a requirement**.
 
 1. Does any observable read the **lattice dispersion inside the band**? QM_011's verdict is conditional on "no"; if
    one does, the fold's position becomes observable.
