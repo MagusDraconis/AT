@@ -29,7 +29,7 @@ gauge structure and cosmology are **downstream realizations**, not primitives.
    reversal (23 channels against 0), and no observable reads the dispersion at high wavenumber.
    Detail: [Archive Part 3](Archive/NewChat_Part3_QM.md) · [QM_007](ResearchY/QM_ManyBody/ResearchY-QM_007.md) …
    [QM_011](ResearchY/QM_ManyBody/ResearchY-QM_011.md).
-2. **The time sector (group G, G_068-G_090).** The theory's unique time prediction is the surface redshift
+2. **The time sector (group G, G_068-G_091).** The theory's unique time prediction is the surface redshift
    **1 + z = exp(−x)** against GR's **(1 + 2x)^(−1/2)**, differing at **second order**, and it is **decidable by one
    measurement on one object** (J0740+6620). The sector's own audits then showed that the *law* is not forced by
    anything that survives: the clock's form, its source and the substrate's connectivity are **inputs**, and
@@ -283,9 +283,13 @@ theory's own count transfer, with the required operation stated as a requirement
    **one is impossible by the clock's arity** and **one has no actuator**; the oscillation family's net effect is **zero
    by averaging** (the summed modulation is **0.0**); and the sector has **no energy functional** for the density. **The
    requirement for a channel that would survive is precise: a NON-DIVERGENCE operation, an actuator for a CONSERVED
-   INPUT, or one for a PARAMETER OF THE LAW.** The questions the chain answered (**is connectivity an input?**, **what
-   sets the component count?**, **is the continuity law physics or bookkeeping?**) are recorded in
-   [NewChat_OpenProblems.md](NewChat_OpenProblems.md).
+   INPUT, or one for a PARAMETER OF THE LAW. **And G_091 closed the surviving exception** — the kernel's **curvature**:
+   its coupling to every state-based process is **exactly zero because it has NO state-dependence** (the same at every
+   density, potential and site), its effect on **both** clock and gravity is large (**3.109E-001** per unit curvature at
+   the largest), and it is **observable in principle but not in practice** — so it is a **parameter**, and an actuator
+   would have to change a **coefficient of the law** ([G_091](ResearchY/G_GravitySource/ResearchY-G_091.md)).** The
+   questions the chain answered (**is connectivity an input?**, **what sets the component count?**, **is the continuity
+   law physics or bookkeeping?**) are recorded in [NewChat_OpenProblems.md](NewChat_OpenProblems.md).
 
 Full statements, the working hypothesis they sit under, and the reclassified (solved) problems:
 [NewChat_OpenProblems.md](NewChat_OpenProblems.md).

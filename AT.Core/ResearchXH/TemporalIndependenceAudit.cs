@@ -751,6 +751,13 @@ public static class TemporalIndependenceAudit
             + "mechanisms, so the metric content is the clock alone. NOT symbol-detectable: the suite names no B, g_rr or "
             + "GammaOf — its words are candidates, pumps, averaging and requirements",
             ScanDetectsIt: false),
+        // G_091: whether the kernel's curvature can be actuated by a known physical process
+        new SectorClaim("Y_G_091", "Kernel Curvature Actuation", MetricRequirement.ClockOnly,
+            "the audit asks whether the one surviving exception — the kernel's curvature — can be actuated: its "
+            + "vocabulary is the log-rate, its second derivative, the candidate processes and their state-dependence, so "
+            + "the metric content is the clock alone. NOT symbol-detectable: the suite names no B, g_rr or GammaOf — its "
+            + "words are curvature, coupling, actuation and lever arms",
+            ScanDetectsIt: false),
     };
 
     // ── The computed classification summaries ───────────────────────────────

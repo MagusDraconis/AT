@@ -7628,3 +7628,66 @@ substrate token anywhere), with-substrate 24, comment-only 6; `Y_G_035` 90 -> **
 AT.App gained a Theory Book chapter, a Research News entry and a suite-table row; AT.Book gained the registry object.
 **The demand for a channel that survives is now precise**: an operation that is not a divergence, an actuator for a
 conserved input, or one for a parameter of the law.
+
+
+---
+
+### ResearchY-G_091 - Kernel Curvature Actuation Audit (COMPLETE, A PARAMETER, NOT A CONTROLLABLE VARIABLE)
+
+**Question.** G_090 left ONE exception standing - the kernel's curvature, the only amplifying regime, a parameter of the
+law, effective yet unobservable in situ. **Can it be actuated by known physical processes?** Allowed: the surviving
+kernel, the surviving audits, known physical processes. Forbidden: new primitives, source terms, component-count
+manipulation. Prefer refutation: success = a physical actuator; failure = the curvature is a PARAMETER.
+
+**1. The operational definition is a PROCEDURE, executed twice (task 1).** The curvature is the second derivative of the
+log-rate with respect to the potential, equivalently the slope of the acceleration against it: the central second
+difference (h = 1e-4) reproduces it to **2.618E-009** over three potentials, and the acceleration's slope to
+**2.498E-015** over three potential pairs. The definition is a procedure rather than a symbol.
+
+**2. The question has FOUR separate answers (task 2).** Observable **IN PRINCIPLE**: yes (the procedures exist).
+Observable **IN PRACTICE**: NO - the signature at the target is **1.166E-002** against an AT/GR separation of
+**1.256E-001**, and below **|c| = 0.72** the compactness error vetoes a decision at any precision. **CONTROLLABLE**: NO -
+the class's operations are transfers, and nothing changes a coefficient of the law. **EFFECTIVE**: yes, and on BOTH
+sectors.
+
+**3. The coupling search is all zeros, and the zero is a COMPUTATION (task 3).** The curvature is the SAME at every
+density, every potential and every site - its state-dependence is identically zero - so **energy, coherence, phase,
+information and resonance** all couple through the state and their coupling strength is exactly **0.0**; the maximum
+over the five surviving candidates is **0.0**. The ONE candidate that could couple is a **memory-channel structure** (a
+structure that carries a coefficient), and it is a **NEW PRIMITIVE**, which the rules forbid this audit to introduce: it
+is **named rather than used**.
+
+**4. The asymmetry is the whole finding (task 4).** On the ACTUATION side **five** candidates stand at **0.0**; on the
+EFFECT side **seven** readouts move per unit curvature, the largest at **3.109E-001** - an effectively INFINITE LEVER
+ARM with an actuation gain of ZERO.
+
+**5. The effect is on BOTH (task 5).** The clock readouts move - g00, the clock rate, the site redshift, the
+second-order AT/GR ratio and the pair redshift (**five**) - and the gravity readout moves too (the kernel re-cut
+acceleration, **one**), because the curvature multiplies the potential squared in the rate and the potential in the
+gradient.
+
+**6. The classification (task 6) exercises all four classes.** IMPOSSIBLE for every state-based process (the zero is
+arithmetic, not a failed search); INDIRECT for a process that changes the STATE and thereby the potential at which the
+curvature is read (it moves the argument, not the coefficient); ASTROPHYSICAL in the regime of its largest effect (the
+effect grows with the potential squared, and the interior's signature is a factor 4.7 larger); and LABORATORY-FEASIBLE:
+**NONE**, stated rather than filled.
+
+**7. The failure criterion is met, and the requirement is named.** A physical actuator would have to be **a process that
+changes a COEFFICIENT OF THE LAW** - a requirement on the theory rather than a mechanism inside it.
+
+**Three defects are recorded.** The **gravity side of the "both" claim was first taken from the map-held convention**,
+where a free-room change leaves the gradients exactly untouched (G_085's own finding), so the list came back empty; it is
+now read from the **kernel re-cut** ranking, and the audit says which convention it uses because the two differ. **Two
+assertions confused the log-rate with the rate** (`ln K = 1` where the pinned datum is `K = 1`), and both now test the
+pinned data instead of restating a symbol. And a **"both sectors" claim nearly rested on a single readout**: the gravity
+side has ONE measuring readout in the collapsed representation, so the audit reports the counts (5 clock, 1 gravity)
+rather than saying "both" without quantities.
+
+**Status.** COMPLETE. Tests `Y_G_091_Tests` **10/10**. Core `AT.Core/ResearchXH/KernelCurvatureActuationAudit.cs`; doc
+`Docs/ResearchY/G_GravitySource/ResearchY-G_091.md`. Registry: added as **Derived**
+(`kernel-curvature-actuation-audit`). **Group-G count guards bumped:** `Y_G_033` without 59 -> **60** (this suite names
+no substrate token anywhere), with-substrate 24, comment-only 6; `Y_G_035` 91 -> **92** with survives 77 -> **78**.
+AT.App gained a Theory Book chapter, a Research News entry and a suite-table row; AT.Book gained the registry object.
+**The manipulation thread is now closed at every level the surviving vocabulary offers**: one actuatable channel (the
+class's own transfer), every pump collapsing, and the one surviving exception - the curvature - a parameter with a
+zero coupling that is computed rather than searched for.

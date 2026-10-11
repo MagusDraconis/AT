@@ -18,7 +18,7 @@ D_028/D_040 is standard: a **value** may be DERIVED while the **window or input*
 
 | Front | State |
 |---|---|
-| Group G — gravity source | **at G_090** (direct density control: assuming it exists, the inverse requirement is derived — the transports span all 95 conserving changes, so a conserving density change IS a redistribution — and every candidate collapses; the requirement for a surviving channel is named). The chain G_068-G_090 closed the time sector, weighed the core, collapsed its two maps to one, showed the restoration is undecidable, and then took the manipulation question from the channel to the mechanism. |
+| Group G — gravity source | **at G_091** (kernel curvature actuation: the one surviving exception is closed — the curvature's coupling to every state-based process is exactly zero because it has no state-dependence, while its effect on both clock and gravity is large, so it is a parameter and not a controllable variable). The chain G_068-G_091 closed the time sector, weighed the core, collapsed its two maps to one, showed the restoration is undecidable, and then closed the manipulation thread at every level the surviving vocabulary offers. |
 | Group QM — many-body correspondence | **closed** at QM_011 (the spectral fingerprint is an input, not a law). |
 | Group E — electromagnetism | **complete** at E_016. |
 | Groups A, B, C, D, M, NP, QG, R, S, T | complete or closed; catalogue in `Docs/AuditIndex.md`. |

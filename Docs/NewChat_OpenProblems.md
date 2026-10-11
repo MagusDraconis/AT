@@ -86,7 +86,11 @@ Audit catalogue: `Docs/AuditIndex.md`.
      actuator), the oscillation family refuted by **averaging** (the summed modulation is **0.0**), the absence of any
      **energy functional** for the density, and the single amplifying regime being the **unmeasured curvature**. **The
      requirement for a channel that would survive is therefore precise: a NON-DIVERGENCE operation, an actuator for a
-     CONSERVED INPUT, or one for a PARAMETER OF THE LAW.**
+     CONSERVED INPUT, or one for a PARAMETER OF THE LAW.** **And G_091 closed that exception:** the curvature's coupling
+     to every state-based process is **exactly zero because it has no state-dependence** — the same at every density,
+     potential and site — while its effect on **both** clock and gravity is large (**3.109E-001** per unit curvature at
+     the largest), and it is **observable in principle and not in practice**; so it is a **parameter**, and an actuator
+     would have to change a **coefficient of the law**.
 
   G_080 also **answered** the question that previously stood here ("is connectivity a consequence of the theory or an
   input to it?"): **an input**, at the level of the allowed primitives, with both alternatives (derived, emergent)
