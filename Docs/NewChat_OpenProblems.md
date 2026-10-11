@@ -199,7 +199,22 @@ Audit catalogue: `Docs/AuditIndex.md`.
      bit-identical observables. **The reduction costs nothing (loss 0)** — because the sector has **no readout of a
      pattern's absolute position**, so **motion is the motion of a label**. **So the open question is two-level and the
      audit refuses to collapse it:** what would be needed is a structure that fixes the **physical length of a link**, a
-     **derivation of the tick**, or a **positional readout**. Referee test: any of those three.
+     **derivation of the tick**, or a **positional readout**. Referee test: any of those three. **And G_098 asked the
+   narrower question that leaves open** — whether the surviving structure contains a **derived carrier for DIRECTED
+   propagation** — with every count on the ring, the cubic substrate forbidden, and a negative result explicitly
+   acceptable. **The answer is stronger than a negative result about selection: the direction is not REPRESENTED.**
+   Every link is written as an **ordered pair** with `a ≤ b`, so the orientation is discarded when the link set is
+   written down, and the operator built from it is **symmetric, measured four independent ways**: `max |L[i][j] −
+   L[j][i]| = 0`, `max |symbol(k) − symbol(N−k)| = 2.665E-015` (no mode rotates), every cell has **2** links with a
+   single distinct degree, and the link set stores **no orientation**. **The transport/diffusion ratio says it in one
+   number:** **T = 0.000E+000** for every mode the surviving structure supports (the numerator never leaves zero while
+   the width grows **2.000**) and **0.368** once an orientation is supplied from outside. **The missing information is
+   ONE BIT** (a global chirality; **96** bits link by link) and the sector supplies **none**. **Without labels the
+   transport measure disappears** — a centroid is a function of the index — leaving **2** of **4** quantities and **0**
+   transport quantities. **And it costs no observable:** the loss with diffusion alone is **0**, because the flux, the
+   sector's one directed object, is read by **0** observables. **So the remaining question is a single bit of structure
+   whose price in observables is zero.** Referee test: an orientation carried by the link set, a surviving rule that
+   fixes which transfer happens, or an observable that reads the flux.
 
   G_080 also **answered** the question that previously stood here ("is connectivity a consequence of the theory or an
   input to it?"): **an input**, at the level of the allowed primitives, with both alternatives (derived, emergent)

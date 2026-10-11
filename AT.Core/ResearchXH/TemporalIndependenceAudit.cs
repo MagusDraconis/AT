@@ -802,6 +802,13 @@ public static class TemporalIndependenceAudit
             + "NOT symbol-detectable: the suite names no B, g_rr or GammaOf — its words are pattern, propagation, "
             + "distance, worldline and velocity",
             ScanDetectsIt: false),
+
+        new SectorClaim("Y_G_098", "Directed Transport", MetricRequirement.ClockOnly,
+            "the audit asks whether the surviving structure contains a derived carrier for DIRECTED propagation: its "
+            + "vocabulary is the carrier inventory, the operator's symmetry, the transport/diffusion ratio and the bits of "
+            + "orientation the link set does not store, so the metric content is the clock alone. NOT symbol-detectable: "
+            + "the suite names no B, g_rr or GammaOf — its words are carrier, transport, diffusion, orientation and ratio",
+            ScanDetectsIt: false),
     };
 
     // ── The computed classification summaries ───────────────────────────────

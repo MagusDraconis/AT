@@ -8113,3 +8113,64 @@ chapter, a Research News entry and a suite-table row; AT.Book gained the registr
 now answered two-level:** motion as a phenomenon is emergent from the network updating, and its kinematics - the
 link's length, the tick and the transferred amount - is independent information the surviving sector does not
 contain.
+
+### ResearchY-G_098 - Directed Transport Audit (COMPLETE, DIRECTED TRANSPORT IS ASSUMED - THE SURVIVING STRUCTURE DOES NOT EVEN REPRESENT A DIRECTION)
+
+**Question.** G_096 left the kernel's coefficient assembled from an assumed principle; G_097 measured that the
+evolution **diffuses** (the width grows as **sqrt(t)**), that the **centroid shift is exactly zero**, and that
+**48!** histories are observationally identical. This audit asks the narrower question: **does the surviving AT
+structure contain a DERIVED carrier for DIRECTED propagation, or is transport independent information?** Every
+count, rank, dimension and multiplicity is on the **96-cell ring alone**; the **cubic substrate is forbidden**; no
+new primitive, field, source term, topology axiom, action, Lagrangian, memory channel, carrier or vector structure
+is introduced. A negative result is acceptable.
+
+**1. The carrier inventory (tasks 1 and 2).** 7 candidates covering state, excess, phase, label and a conserved
+quantity plus the sector's two directed objects: **5 derived and 3 directed**, and every directed one is a
+**coordinate**, a **derived output read by nothing**, or a **static field**, so none PROPAGATES. The state-like
+carriers have their excess conserved to the rounding, a **centroid shift of exactly zero**, and a width growth of
+**2.000** over 8 ticks. The **phase is not a carrier at all** (arity). The **flux** is read by **0** observables; the
+**acceleration** is directed and derived and static, with no update relation taking it as an argument; and the
+**label** is the only entry that can show a non-zero shift, because the centroid is a function of the labelling.
+
+**2. The transport/diffusion table (task 4), T = |centroid shift| / width growth.** The surviving operator alone:
+shift **0.000E+000**, growth 2.000, **T = 0.000**. A **symmetric transfer**: T = 0.000 (a symmetric pair cancels in
+the first moment, so the class's operations are individually directed and collectively UNBIASED). A **drift supplied
+from outside**: shift **8.000E-001**, growth 2.173, **T = 0.368** — and the step that produces it needs the link
+ORIENTATION, so the mode is marked SUPPLIED rather than derived. **MAX T over the surviving modes is 0.000E+000;**
+over all modes it is 0.368, and the difference is the orientation.
+
+**3. The directional bias (task 5), FOUR independent instruments.** `max |L[i][j] - L[j][i]| = 0` (the operator is
+**symmetric**); `max |symbol(k) - symbol(N-k)| = 2.665E-015` (the dispersion is **even**, so no mode rotates); every
+cell has **2** links with a single distinct degree (the substrate is **isotropic**); and the orientation the link set
+**STORES is zero**, because every link is written as an **ORDERED PAIR** with `a <= b` — the direction is not merely
+unselected, it is **NOT REPRESENTED**. Directed transport needs **1 bit** of global chirality (or **96 bits** for an
+independent orientation of every link) and the sector supplies **0**.
+
+**4. Without labels (task 6).** The centroid shift is a function of the **INDEX**, so removing the labels makes it
+**UNDEFINED rather than zero**: of **4** propagation quantities **2** survive and **0** of them is a transport
+quantity — the measure of transport does not survive its own coordinate.
+
+**5. The reduction test (task 7).** **8 readouts, 0 of them reads a DIRECTED object** (the flux, the sector's one
+directed object, is read by **0** observables), so the observable loss with **diffusion alone is 0**; the only loss
+is **4** when the labelling is removed, which is a **coordinate** loss and not a transport loss.
+
+**6. Classification:** the state, the excess and a conserved quantity are **EMERGENT**; the label is **ASSUMED**;
+the flux and the acceleration are **BOUNDARY** (derived and directed, but propagating nothing); the phase is
+**BOUNDARY** (not a carrier). **SUCCESS CRITERION NOT MET; FAILURE CRITERION MET.**
+
+**Four defects are recorded.** A **degree row reported a count of counts**: the uniformity instrument printed
+`degrees.Distinct().Single()` as its measured value while passing the distinct-count, so the verdict read "every
+cell has **1** links" where the degree is **2** and the number of distinct degree values is 1. A **carrier row
+attributed an external drift's shift to a derived carrier**, so the label's row now says in its own measurement
+that the shift is the supplied drift's. A **"measured" value was an instrument's own scale** — the symbol's
+evenness is a `cos` round-trip — and is now reported as the rounding scale rather than as exact zero. And two
+structural declarations were removed from a positional record so that no column is a declaration the audit chose.
+
+**Status.** COMPLETE. Tests `Y_G_098_Tests` **9/9**. Core `AT.Core/ResearchXH/DirectedTransportAudit.cs`; doc
+`Docs/ResearchY/G_GravitySource/ResearchY-G_098.md`. Registry: added as **Derived** (`directed-transport-audit`).
+**Group-G count guards bumped:** `Y_G_033` without 66 -> **67** (this suite names no substrate token anywhere),
+with-substrate 24, comment-only 6; `Y_G_035` 98 -> **99** with survives 84 -> **85**. AT.App gained a Theory Book
+chapter, a Research News entry and a suite-table row; AT.Book gained the registry object. **The motion question is
+now closed at its second level:** G_097 showed the law moves nothing and the operations do; this audit shows that
+nothing in the surviving structure SUPPLIES the direction those operations need — the link set is an unordered set,
+the operator is symmetric, and the missing information is one bit.
