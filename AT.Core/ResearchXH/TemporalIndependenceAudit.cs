@@ -809,6 +809,13 @@ public static class TemporalIndependenceAudit
             + "orientation the link set does not store, so the metric content is the clock alone. NOT symbol-detectable: "
             + "the suite names no B, g_rr or GammaOf — its words are carrier, transport, diffusion, orientation and ratio",
             ScanDetectsIt: false),
+
+        new SectorClaim("Y_G_099", "Orientation Origin", MetricRequirement.ClockOnly,
+            "the audit asks whether orientation emerges from the surviving structure: its vocabulary is the ring's "
+            + "automorphism group, the parity of the state, the chirality bits each source supplies and the readouts "
+            + "under reversal, so the metric content is the clock alone. NOT symbol-detectable: the suite names no B, "
+            + "g_rr or GammaOf — its words are automorphism, reflection, chirality, parity and reversal",
+            ScanDetectsIt: false),
     };
 
     // ── The computed classification summaries ───────────────────────────────

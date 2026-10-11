@@ -8174,3 +8174,91 @@ chapter, a Research News entry and a suite-table row; AT.Book gained the registr
 now closed at its second level:** G_097 showed the law moves nothing and the operations do; this audit shows that
 nothing in the surviving structure SUPPLIES the direction those operations need — the link set is an unordered set,
 the operator is symmetric, and the missing information is one bit.
+
+---
+
+### ResearchY-G_099 - Orientation Origin Audit (COMPLETE, ORIENTATION SURVIVES ONLY AS A PARITY OF DIFFERENCES - THE CONFIGURATION SUPPLIES ZERO CHIRALITY BITS, AND THE TRANSPORT DIRECTION REMAINS ASSUMED)
+
+**Question.** G_097 measured that motion is **emergent** while its kinematics is **assumed** (the centroid shift is
+exactly zero, the width grows as **sqrt(t)**); G_098 measured that the transport/diffusion ratio is **zero** for every
+surviving mode and that the surviving **link set does not represent a direction**, so directed transport needs one bit
+of chirality the sector does not supply. This audit asks the symmetry question that leaves open: **can orientation
+emerge from the surviving AT structure, or is orientation independent boundary information?** The instrument is the
+ring's own **automorphism group**: the cycle has **192** automorphisms (**96 rotations and 96 reflections**) and a
+reflection is exactly the map that swaps **A -> B** for **B -> A**, so whether orientation is represented is whether any
+surviving object **breaks** that symmetry. Every count names its object and is computed on the **96-cell ring alone**;
+the **cubic substrate is forbidden**; no new primitive, field, source term, topology axiom, action, Lagrangian,
+carrier, orientation tag or external coordinate is introduced. A negative result is acceptable.
+
+**1. The orientation inventory (task 1).** **8** objects tested: **3** can tell A->B from B->A and **5** of the 8 are
+**derived** — but every distinguishing object is a **potential difference** or the **unobserved flux**, and none of
+them is a transport rule. The state's configuration, the link set and the phase **cannot** distinguish the two
+directions at all. The distinction the audit keeps throughout, because collapsing it would be the easy error: an
+object can carry orientation as a **field** while carrying none as a **transport rule**. **"Derived" is computed,
+never typed**: a carrier is derived exactly when its content is computed from the surviving primitives, adjudicated by
+`OrientationOrigin` and computed from it, so no boolean column is a declaration the audit chose.
+
+**2. The symmetry-breaking measurement (task 2) — and the audit's decisive refutation.** The surviving **state**
+preserves **2** of the 192 automorphisms (exactly **one rotation and one reflection**) and breaks **190**; the **law**
+commutes with **192 of 192** (worst residual **2.220E-016**). **The draft's story died here:** the first reading was
+"the state breaks 190 automorphisms, so the configuration distinguishes A->B from B->A" — and its own measurement
+refutes it, because `max |rho_i - rho_(N-i)| = **6.661E-016**`, **below the equality rule 1e-12**, so the surviving
+state is **PARITY-EVEN**. The one reflection it preserves is the one through **its own axis**, and **the 190 broken
+elements measure the field's LOCALISATION, not a handedness** — they are the reason the gradient has a direction at
+all. **The configuration supplies no chirality bit.** A second measurement of the same kind: the first reversal census
+**chose the reflection the state happens to preserve** and therefore read "**0 of 8 readouts change**" — a **convention
+masquerading as a measurement**; a ring has **96** orientation-reversing maps, so the audit now sweeps them all.
+
+**3. Orientation reversal applied to every observable (task 3).** At the strongest reversal: g00 changes by
+**8.251E-001**, the clock rate by 4.328E-001, the site potential by 4.621E-001 and the site redshift by 5.022E-001 —
+all **frame-dependent**; the source acceleration and the **AT/GR ratio** are **unchanged** (and frame-invariant); the
+**gradient along a link** changes by **1.337E-003** and the **two-site redshift** by **5.022E-001**, both
+**frame-invariant**. Over all **96** reversals: **1** leaves every readout unchanged, the change count ranges **0 ... 6**,
+and the largest single change is **8.251E-001**. **The effect of a reversal depends on WHICH reversal is meant.**
+
+**4. The chirality-bit table (task 4).** **Total 0 bit**, measured source by source: the configuration (**6.661E-016**,
+parity-even to the rounding), the spectrum (G_098's even dispersion, **2.665E-015**), the update law (commutes with
+192 of 192), conservation (a sum is invariant under relabelling), and the observable set (the readouts change only
+because the **state** is relabelled).
+
+**5. Parity-odd quantities and their survivors (task 5).** **3 of 6** are parity-odd and **all 3 survive** the gauge
+and coordinate reductions — the acceleration, the along-a-link gradient and the two-site redshift. But the audit
+refuses the easy reading: **an odd functional is not a handedness**, because the three survivors are **two-site
+differences**, and a difference is odd under reversal **by construction**. The sector's **unique prediction, the
+second-order AT/GR ratio, is EVEN**.
+
+**6. With every label removed (task 6).** Of **5** quantities recomputed with all labels, indices and ordering
+conventions removed, **3** survive and **3** of them are parity-odd. A **relative** position is not a label: comparing
+two sites survives, indexing one does not.
+
+**7. The reduction test (task 7): what one added orientation bit buys.** **0** new observables, **0** reduction of the
+**48!** degeneracy (G_097), **1** transport quantity with a ratio of **0.3682** — a quantity no observable reads — and
+therefore **DeltaI = 0** in observable terms. The bit is added to the **link set**, which is where G_098 found the
+orientation missing. **Gain and cost are both zero, measured.**
+
+**Classification.** Orientation as a **FIELD** — **DERIVED**; the **CHIRALITY of the configuration** — **ASSUMED**
+(measured absent, 0 bits); orientation as a **TRANSPORT RULE** — **ASSUMED**; one **ADDED global orientation bit** —
+**BOUNDARY**. **SUCCESS CRITERION MET at the field level; FAILURE CRITERION MET at the chirality level**, and the two
+are not the same object — which is the audit's core contribution: it stops either "chirality is derived" or
+"orientation is absent" from being overclaimed.
+
+**Six defects are recorded.** (1) A **convention masquerading as a measurement**: the first reversal census chose the
+single reflection the state preserves and read "0 of 8 readouts change". (2) **The draft's own narrative refuted by
+the draft's own measurement**: a carrier row asserted "the state is not parity-even ... a chiral configuration is a
+direction-bearing object" beside a measurement of **6.661E-016**; the verdict, classification and criteria were
+rewritten to match the number rather than the story. (3) A **literal verdict beside a computation**: the chirality
+row carried the fixed narrative "carries ONE bit" next to a computed expression that evaluated to **0**. (4) A
+**record boolean supplied as a literal** (`OrientationCarrier.Derived`), caught by **G_027**'s source scan — fixed by
+adjudicating where the content comes from and **computing** the boolean from it. (5) A **`Single()` keyed on a shared
+prefix** matched both "the state (its configuration)" and "the conservation **state**ment". (6) A **summary that
+overclaimed**: "the sector does contain derived, observable chirality" is refuted by the audit's own finding.
+
+**Status.** COMPLETE. Tests `Y_G_099_Tests` **9/9**. Core `AT.Core/ResearchXH/OrientationOriginAudit.cs`; doc
+`Docs/ResearchY/G_GravitySource/ResearchY-G_099.md`. Registry: added as **Derived** (`orientation-origin-audit`).
+**Group-G count guards bumped:** `Y_G_033` without 67 -> **68** (this suite names no substrate token anywhere),
+with-substrate 24, comment-only 6; `Y_G_035` 99 -> **100** with survives 85 -> **86** and MinimalTimeSector 85 -> **86**.
+AT.App gained a Theory Book chapter, a Research News entry and a suite-table row; AT.Book gained the registry object.
+**The orientation question is now separated into its two levels:** a direction at a place **is** derived and **is**
+observable (through the potential's non-uniformity, as a parity of differences), while the handedness of the source and
+the direction of a transfer are **not** — the chirality account is zero, measured source by source, and the one bit
+G_098 found missing is confirmed **absent rather than hidden**.

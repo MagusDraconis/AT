@@ -29,7 +29,7 @@ gauge structure and cosmology are **downstream realizations**, not primitives.
    reversal (23 channels against 0), and no observable reads the dispersion at high wavenumber.
    Detail: [Archive Part 3](Archive/NewChat_Part3_QM.md) · [QM_007](ResearchY/QM_ManyBody/ResearchY-QM_007.md) …
    [QM_011](ResearchY/QM_ManyBody/ResearchY-QM_011.md).
-2. **The time sector (group G, G_068-G_098).** The theory's unique time prediction is the surface redshift
+2. **The time sector (group G, G_068-G_099).** The theory's unique time prediction is the surface redshift
    **1 + z = exp(−x)** against GR's **(1 + 2x)^(−1/2)**, differing at **second order**, and it is **decidable by one
    measurement on one object** (J0740+6620). The sector's own audits then showed that the *law* is not forced by
    anything that survives: the clock's form, its source and the substrate's connectivity are **inputs**, and
@@ -40,8 +40,19 @@ gauge structure and cosmology are **downstream realizations**, not primitives.
    (**0 of 29** claims need a flux value). G_084 then stripped every layer at once and **measured the size of what is
    left**: the **minimal core is one state variable and three equations**, reproducing **8 of 8** readouts with
    **0** observable loss at **CoreCompressionRatio 2.667** — and the cost is **6 dissolved claims and 0 refutations**.
+   Five further audits took the reduction to its floor and asked what the floor **means**: the observable kernel
+   collapsed to **one function** (G_086) and its restoration (G_087) and every alternative observable (G_088) turned
+   out **undecidable**; the manipulation thread closed (G_089–G_091) — one actuatable channel whose candidates all
+   collapse to ordinary mass redistribution, with **kernel curvature** the single survivor at a coupling of
+   **exactly 0.0**; every removed structure was reweighed (G_092–G_094) and **no invisible actuator** exists, closure
+   being **purely internal** except for the **memory coefficient**, which remains **free** (G_095);
+   **multiplicativity** is **ASSUMED, not derived** (G_096: a **47-dimensional** family, six surviving constraints
+   removing **0**); motion is **EMERGENT** but its kinematics is **ASSUMED** (G_097: **diffusion**, centroid shift
+   **exactly zero**, **48! = 10^61.094** histories identical); the structure does not even **represent** a direction
+   (G_098); and orientation is **derived as a FIELD** but **not as a HANDEDNESS** (G_099: the state is **parity-even to
+   the rounding**, the chirality account is **0 bit source by source**, and one added bit buys **no observable**).
    Detail: [Archive Part 2](Archive/NewChat_Part2_Gravity.md) · [G_072](ResearchY/G_GravitySource/ResearchY-G_072.md) …
-   [G_084](ResearchY/G_GravitySource/ResearchY-G_084.md).
+   [G_099](ResearchY/G_GravitySource/ResearchY-G_099.md).
 
 **The boundary is the theory's real content.** Five canonical inputs (R_001) plus three structural boundaries
 (QG_008/009/011); the deepest single boundary is the **discreteness of the actualization tick**. The weakest of the

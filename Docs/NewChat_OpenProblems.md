@@ -214,7 +214,21 @@ Audit catalogue: `Docs/AuditIndex.md`.
    transport quantities. **And it costs no observable:** the loss with diffusion alone is **0**, because the flux, the
    sector's one directed object, is read by **0** observables. **So the remaining question is a single bit of structure
    whose price in observables is zero.** Referee test: an orientation carried by the link set, a surviving rule that
-   fixes which transfer happens, or an observable that reads the flux.
+   fixes which transfer happens, or an observable that reads the flux. **And G_099 asked whether orientation itself is
+   derived or supplied** — with the ring's own **automorphism group** as the instrument: **192** automorphisms, **96
+   rotations and 96 reflections**, a reflection being exactly the map that swaps A→B for B→A. **Its answer refutes the
+   obvious reading.** The state preserves **2** of the 192 and breaks **190** — which looks like a handedness until the
+   reflection it preserves turns out to be the one through **its own axis**: **max |ρ_i − ρ_(N−i)| = 6.661E-016**,
+   below the **1e-12** equality rule, so the configuration is **PARITY-EVEN** and the 190 broken elements measure the
+   field's **localisation**, not a handedness. The **law** commutes with **192 of 192** (worst **2.220E-016**). The
+   chirality account is therefore **0 bit**, measured source by source, and one **added** orientation bit buys **0
+   observables**, reduces **none** of the **48!** degeneracy and enables **1** transport quantity at ratio **0.3682**
+   that nothing reads. **What survives is parity, not handedness:** **3** parity-odd readouts pass every reduction —
+   and all three are **two-site differences**, which are odd **by construction**, so a signed field direction is
+   derived while no handedness of the source is. **So the question is split into two levels and the audit refuses to
+   collapse it:** orientation as a **FIELD** is **DERIVED**; the **chirality of the configuration** is **ASSUMED**
+   (measured absent); orientation as a **TRANSPORT RULE** remains **ASSUMED**. Referee test: a chirality of the
+   configuration **above** the equality rule, an orientation carried by the link set, or a readout of the flux.
 
   G_080 also **answered** the question that previously stood here ("is connectivity a consequence of the theory or an
   input to it?"): **an input**, at the level of the allowed primitives, with both alternatives (derived, emergent)
