@@ -39,6 +39,19 @@ The core **re-reads the group-G sources at test time** (the G_027 pattern), so t
 | **comment-only** | 1 | G_001 |
 | **no D96 reference at all** | **13** | **G_015, G_017, G_019, G_020, G_021, G_022, G_025, G_027, G_028, G_029, G_030, G_031, G_032** |
 
+> **Refinement (live scan, after G_084 — the code/comment split was corrected).** The scanner used to decide
+> *code vs comment* by testing only whether a **line** begins with `//` or `*`, so a substrate mention inside a
+> **report string** or a `/* */` block counted as an executable reference. **G_084 found this** (its own report text
+> states the substrate rule, and the scan read that sentence as *using* the lattice) and **rebuilt the split**: the
+> line is now passed through `AtSourceScan.StripLiteralsAndComments` before the token is counted — the **G_081 defect
+> class**, a pattern scan counting ordinary text, mechanically guarded rather than noted in prose. As of **G_084** the
+> counts are **83 classified suites** → **24 in code / 6 comment-only / 53 with no reference**. The three suites that
+> moved out of the *in code* class are **G_004** (its report string names the derived coupling), **G_024** (a quoted
+> method line) and **G_043** (its compared-family lines are literals) — and the correction exposes the scan's honest
+> limit, which the note above G_044 did not state: the buckets measure **vocabulary, not computation**. G_043 in
+> particular computes the D96^d ladder through helpers and names no token in executable code, so "no reference in code"
+> means *not named*, not *not used*.
+>
 > **Refinement (live scan, after G_044).** This table is G_033's own snapshot. The scanner is live, so later
 > audits are classified on their own. As of **G_044** the counts are **43 classified suites** → **26 in code / 1
 > comment-only / 16 with no reference** (G_034 and G_035 joined the meta-audits; G_036, G_037 and G_038 added
