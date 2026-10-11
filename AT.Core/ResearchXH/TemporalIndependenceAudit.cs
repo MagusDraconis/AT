@@ -779,6 +779,13 @@ public static class TemporalIndependenceAudit
             + "vector sector's representation, so the metric content is the clock alone. NOT symbol-detectable: the "
             + "suite names no B, g_rr or GammaOf — its words are closure, gap, gain and threshold",
             ScanDetectsIt: false),
+
+        new SectorClaim("Y_G_095", "Memory Coefficient", MetricRequirement.ClockOnly,
+            "the audit asks what fixes the kernel's second-order coefficient, and what would fix it: its vocabulary is "
+            + "the clock law's own variable, the composition residual, the viability interval and the AT/GR second "
+            + "order, so the metric content is the clock alone. NOT symbol-detectable: the suite names no B, g_rr or "
+            + "GammaOf — its words are coefficient, composition, boundary and viability",
+            ScanDetectsIt: false),
     };
 
     // ── The computed classification summaries ───────────────────────────────

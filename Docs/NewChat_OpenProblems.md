@@ -146,7 +146,25 @@ Audit catalogue: `Docs/AuditIndex.md`.
      thread** through the one gap that carries every observable consequence the closure has. Referee test: a closed
      memory channel returning coefficient zero (which would make the answer *elegance only*), a demonstration that the
      vector sector couples to the time sector's readouts, or a cosmological observable sensitive to the kernel **away**
-     from the mean density.
+     from the mean density. **And G_095 asked what fixes the memory coefficient itself** — the one value the whole
+     closure thread turns on — with two routes **excluded by the question**: the coefficient may **not be set to zero**
+     and may **not be fitted**. Of **7** candidate **selecting principles**, **4** are in the surviving theory, **1**
+     would select a unique value, and the **intersection is 0**. **The one that would select is multiplicativity** — the
+     clock composition multiplying — and it selects **uniquely**: the sector's law composes to **4.441E-016** while the
+     best competitor fails at **3.960E-002**; but the chain's own uniqueness audit classes the property
+     **'COMPLETELY FREE' at 1 of 9 laws** and states it is **absent rather than imported**. **The coefficient is bounded
+     on one side only:** monotonicity requires **λ < 2.002** (measured by bisection against **2.000** analytically, the
+     **0.1 per cent** gap being the sampler's), while the **negative side has no bound at all**; the second-order
+     coefficient is a **class** shared by **3 of 9** laws; conservation **cannot see** the coefficient at all (it is
+     applied at **read** time); there is **no flow** for it, so **'fixed-point selected' is undefined rather than
+     false**; and at **λ = −2** the second order **coincides with GR's**, so the theory fixes a **point to avoid**
+     rather than a value to take. **The classification is empirical on all four counts**, the coefficient introduces
+     **0** new observables and reopens **no** channel by itself (coupling exactly **0.0**), and it is **empirically
+     consequential** all the same — the target prediction spreads from **1.280** to **27.044**, **207 times** the AT/GR
+     separation. **So the open question is not a number but a derivation, and it is the sector's oldest: why does the
+     clock composition multiply?** Referee test: a derivation of the composition law (which would force the coefficient
+     to zero and turn the failure into a success), a measurement fine enough to see the second order at the target, or a
+     flow that takes the coefficient as a variable.
 
   G_080 also **answered** the question that previously stood here ("is connectivity a consequence of the theory or an
   input to it?"): **an input**, at the level of the allowed primitives, with both alternatives (derived, emergent)

@@ -7898,3 +7898,64 @@ chapter, a Research News entry and a suite-table row; AT.Book gained the registr
 now answered in both directions**: G_093 showed the gaps were already open and cost the reduction nothing, and
 G_094 shows that closing them is physics through exactly one of them - the memory channel - which is the same
 gap that reopens the manipulation channel the previous chain had closed.
+
+### ResearchY-G_095 - Memory Coefficient Audit (COMPLETE, THE COEFFICIENT REMAINS FREE - AND THE ONE PRINCIPLE THAT WOULD FIX IT IS ABSENT)
+
+**Question.** G_093 found a **memory channel carrying the kernel's coefficient** required for completion and
+**absent**; G_094 found it the **only** gap whose closure changes a prediction, **conditionally** on the value
+delivered. This audit asks what fixes that value, with two routes **excluded by the question itself**: the
+coefficient may **not be set to zero** and may **not be fitted** to observations. Neither is used as an answer -
+every candidate selecting principle is measured against the chain's own instruments instead.
+
+**1. Which principles select (task 4).** **7** measured, **4** contained, **1** would select, intersection **0**.
+**MULTIPLICATIVITY** - the clock composition multiplying - would select **uniquely**: the sector's law has a
+composition residual of **4.441E-016** against a best competitor at **3.960E-002**. **But the theory does not
+contain it**: the chain's own uniqueness audit classes the property **'COMPLETELY FREE'** at **1 of 9** laws and
+states it is **absent rather than imported**. Nothing else selects: viability holds on both sides, the
+second-order coefficient is a **class** shared by 3 of 9 laws, conservation **cannot see** the coefficient (it is
+applied at **read** time), there is **no flow** for it, and the data route is excluded by the task as a fit.
+
+**2. The boundary analysis (task 2) is ONE-SIDED.** lambda = 0, +0.5 and -0.5 are all **viable**; the positive
+side **is** bounded, monotonicity requiring `1 + lambda x > 0` on the physical range, the edge found by
+**bisection** being **2.002** against an analytic **2.000** - and the **0.1 per cent** gap is the **sampler's**,
+reported rather than smoothed away. The **negative side has no bound at all** (every value down to -100 viable,
+the extreme failure being an **underflow** of the clock rather than a physical limit). The **only exclusion** in
+the whole analysis is the strong positive region, where the clock stops being monotone; and at **lambda = -2** the
+clock law's second order **coincides with GR's**, destroying the sector's distinctive signature - so the surviving
+theory fixes a **point to avoid** rather than a value to take.
+
+**3. The stability analysis (task 3) is UNDEFINED RATHER THAN NEGATIVE.** A fixed point needs a **flow**, and the
+sector has none for the coefficient: no update relation and no operation takes it as an argument. What can be
+measured is bounded and smooth - the largest slope drift over the family is **1.443E-006**.
+
+**4. New observables and channels (tasks 5 and 6).** **ZERO** new observables (it moves **7** that already exist,
+largest **3.109E-001** relative per unit coefficient, while the description still has **8**) and **no** channel from
+the value alone (the coupling is exactly **0.0** and the actuatable count stays **1**) - so **G_094's reopening
+needs the STRUCTURE, not the value**. And the coefficient is **empirically consequential** all the same: the target
+prediction moves from **1.280** to **27.044**, a spread **207 times** the AT/GR separation of **0.126**.
+
+**5. The classification (task 1) is EMPIRICAL on all four counts:** not derived (**0** contained principle
+selects), not emergent (nothing generates it), not fixed-point selected (no flow), only empirical. **FAILURE
+CRITERION MET, SUCCESS CRITERION NOT** - and the value that would be forced is **named without being assumed**:
+zero, by multiplicativity. **So the open question is not a number but a derivation, and it is the sector's oldest:
+why does the clock composition multiply?**
+
+**Three defects are recorded.** The **bound was first reported as absent on BOTH sides**: the "bounded" flag was
+computed as `viable == tested`, which is **inverted**, and the sweep had been read as "every value viable" when
+the positive side in fact contains **two exclusions** (lambda = 10 and 100) because **monotonicity** fails there;
+the bound is now found by **bisection** and compared against the analytic value. A **tolerance was tighter than
+the instrument**: the GR-point check used 1e-9 while the **numerically-differenced** coefficients carry about
+1e-9 of noise, so a law with a coefficient of -3.6E-9 was reported as not matching GR's 0 - the comparison is now
+made at **1e-6** with the tolerance stated in the row. And a **record was built as a tuple**: two methods returned
+tuple literals where records and named arrays were declared, so the audit had to be rebuilt with explicit
+constructors - the **measurement** was right and the **declaration** wrong, which is worth recording because the
+reverse is the usual failure here.
+
+**Status.** COMPLETE. Tests `Y_G_095_Tests` **9/9**. Core `AT.Core/ResearchXH/MemoryCoefficientAudit.cs`; doc
+`Docs/ResearchY/G_GravitySource/ResearchY-G_095.md`. Registry: added as **Derived** (`memory-coefficient-audit`).
+**Group-G count guards bumped:** `Y_G_033` without 63 -> **64** (this suite names no substrate token anywhere),
+with-substrate 24, comment-only 6; `Y_G_035` 95 -> **96** with survives 81 -> **82**. AT.App gained a Theory Book
+chapter, a Research News entry and a suite-table row; AT.Book gained the registry object. **The closure thread is
+now closed in the strongest form available**: the memory channel is the one gap that carries physics, its
+coefficient is what would have to be fixed, and the theory does not fix it - the one principle that would is the
+sector's oldest open question, measured absent.
