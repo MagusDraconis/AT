@@ -7559,3 +7559,72 @@ without 57 -> **58** (this suite names no substrate token anywhere), with-substr
 row; AT.Book gained the registry object. **The failure criterion is met for pathways and the success criterion only in
 the sense that the channel that would be needed is IDENTIFIED** - an operation that changes a conserved input, or one
 that changes a parameter of the law - stated as a requirement on the theory rather than assumed as a primitive.
+
+
+---
+
+### ResearchY-G_090 - Direct Density Control Audit (COMPLETE, EVERY CANDIDATE COLLAPSES - to mass transport or to an unactuatable variable)
+
+**Question.** ASSUMED TRUE: direct control of the density exists - a process that changes `rho` WITHOUT moving ordinary
+mass. The audit determines **what mechanism it would require**, inside the surviving vocabulary. Ordinary mass
+relocation is excluded as an ANSWER, primitives may not be added at the outset, and arguing from previous negative
+audits is forbidden. Prefer refutation: success = a physically real process that changes `rho` without ordinary mass
+redistribution; failure = every candidate collapses to mass transport or to an unactuatable variable.
+
+**1. The inverse requirement is DERIVED (task 1).** On a CONNECTED substrate the class's transports span **all 95
+conserving changes** - the conserving dimension **95** against an image of rank **95**, with the nullity 1 and the
+complement **0** - so a conserving change of the density is ALWAYS a redistribution, which is ordinary mass motion, and
+the only change left outside is a **NON-DIVERGENCE operation**. The complement is **0** at c = 1 (rank 95 of a
+96-dimensional change space), **1** at c = 2 (rank 94) and **3** at c = 4 (rank 92), and *every* conserving witness is
+a transport on the connected substrate (measured on the witness census). The clock's response to the density is
+COMPRESSIVE: a fractional density change produces **1/d** of the clock change.
+
+**2. The candidate scan (task 2) - the pattern is structural.** Of the ten mechanisms: **EIGHT are functions of the
+distribution** (coherent oscillation, synchronization, information density, correlation structure, mode locking,
+resonance, oscillation amplitude and oscillation frequency), so acting through them **is** redistributing; **ONE is
+excluded by the clock's arity** (phase coherence: the temporal observables take the occupancy and nothing else); and
+**ONE would act but has no actuator** (the actualization rate - a parameter of the law). And the oscillation family is
+refuted by **AVERAGING** rather than by arity: the clock reads the OCCUPANCY, so a modulation of the occupancy gives a
+modulation of the clock whose **mean is unchanged** (the summed modulation over the state is **0.0**) - a periodic
+change is not a manipulation.
+
+**3. The conservation audit (task 3).** On a connected substrate redistribution and local creation **coincide in the
+small**: there is no third option. On a cut substrate a complement of **c - 1** appears - conserving changes that are
+NOT transports, each changing a component's total while conserving the global one - and those are exactly what the
+ledger flags. So effective LOCAL creation without mass transport exists in the structure and requires a **CUT
+SUBSTRATE**.
+
+**4. The hidden-energy audit (task 4) - there is no energy functional.** The ledger prices a redistribution at **ZERO**
+(the class reconstructs its changes with residual **0.000E+000**) and **DETECTS** a source exactly (the residual becomes
+the source, **0.0300** for a declared 0.0300), so `Delta rho` per unit energy is **UNDEFINED** except through the
+calibration. The oscillation route is **zero** (the modulation's mean is conserved) and ordinary mass relocation is the
+**identity 1.0** against which the others are measured.
+
+**5. The amplification search (task 5).** Exactly **ONE** regime amplifies: the kernel's **curvature** - a parameter of
+the law, unobservable in situ (G_088) and changed by no operation. The linear regime is compressive with gain **1/d**,
+resonance changes only the EFFICIENCY of a redistribution, and the ratio-readout "amplification" is a measurement
+artefact.
+
+**6. The reality classification (task 6)** exercises all five classes: **impossible** (arity), **equivalent to mass
+motion** (eight), **effective only** (the actualization rate, and any operation on the link structure or the component
+count), **astrophysical** (the deep-potential regime of the free room), **laboratory viable** (a redistribution driven
+by any of the mechanisms - the ordinary gravitational shift).
+
+**7. The minimal engineering pathway (task 7).** operator action -> physical process -> `Delta rho` -> `Delta clock` ->
+`Delta gravity`, with each step's REQUIREMENT named; the first is the audit's own inverse result (a non-divergence
+operation, or an actuator for an assumed input). **The failure criterion is met, and the success criterion's
+requirement is stated rather than assumed.**
+
+**Three defects are recorded.** The **oscillation-frequency row was first labelled arity-excluded while its own flags
+classified it as a shape-function**, so the candidate split and its measurement string disagreed; the row was fixed
+rather than the assertion. The candidate-split assertions carried **literal counts** that the measurement corrected
+(8/1/1, not 7/2/1). And a cross-check referenced **another audit's type** (G_087's observable record where G_088's
+catalogue was meant), caught by the compiler.
+
+**Status.** COMPLETE. Tests `Y_G_090_Tests` **10/10**. Core `AT.Core/ResearchXH/DirectDensityControlAudit.cs`; doc
+`Docs/ResearchY/G_GravitySource/ResearchY-G_090.md`. Registry: added as **Derived**
+(`direct-density-control-audit`). **Group-G count guards bumped:** `Y_G_033` without 58 -> **59** (this suite names no
+substrate token anywhere), with-substrate 24, comment-only 6; `Y_G_035` 90 -> **91** with survives 76 -> **77**.
+AT.App gained a Theory Book chapter, a Research News entry and a suite-table row; AT.Book gained the registry object.
+**The demand for a channel that survives is now precise**: an operation that is not a divergence, an actuator for a
+conserved input, or one for a parameter of the law.

@@ -79,7 +79,14 @@ Audit catalogue: `Docs/AuditIndex.md`.
      (the link structure, the component count, the total) or one that changes a **parameter of the law** (the kernel's
      curvature, the only channel that would be both effective and unobservable in situ). Referee test: an operation that
      creates or removes count (which the ledger would detect and which would give a global clock shift), one that
-     changes the link structure or the component count, or a measurement-free channel through the curvature.
+     changes the link structure or the component count, or a measurement-free channel through the curvature. **And G_090
+     derived the mechanism** for direct density control without ordinary mass movement: the inverse requirement (the
+     transports span **all 95** conserving changes on a connected substrate, so a conserving density change **is** a
+     redistribution), the candidate split (**8** functions of the distribution, **1** impossible by arity, **1** with no
+     actuator), the oscillation family refuted by **averaging** (the summed modulation is **0.0**), the absence of any
+     **energy functional** for the density, and the single amplifying regime being the **unmeasured curvature**. **The
+     requirement for a channel that would survive is therefore precise: a NON-DIVERGENCE operation, an actuator for a
+     CONSERVED INPUT, or one for a PARAMETER OF THE LAW.**
 
   G_080 also **answered** the question that previously stood here ("is connectivity a consequence of the theory or an
   input to it?"): **an input**, at the level of the allowed primitives, with both alternatives (derived, emergent)

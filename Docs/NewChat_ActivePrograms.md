@@ -18,7 +18,7 @@ D_028/D_040 is standard: a **value** may be DERIVED while the **window or input*
 
 | Front | State |
 |---|---|
-| Group G — gravity source | **at G_089** (manipulation channels: assuming manipulation is possible, the inverse problem gives the lever arm, exactly one channel is actuatable — the theory's own count transfer — and the unobservable controls are the conserved inputs). The chain G_068-G_089 closed the time sector, weighed the core, collapsed its two maps to one, showed the restoration is undecidable, and then answered the manipulation question for the channel rather than for the possibility. |
+| Group G — gravity source | **at G_090** (direct density control: assuming it exists, the inverse requirement is derived — the transports span all 95 conserving changes, so a conserving density change IS a redistribution — and every candidate collapses; the requirement for a surviving channel is named). The chain G_068-G_090 closed the time sector, weighed the core, collapsed its two maps to one, showed the restoration is undecidable, and then took the manipulation question from the channel to the mechanism. |
 | Group QM — many-body correspondence | **closed** at QM_011 (the spectral fingerprint is an input, not a law). |
 | Group E — electromagnetism | **complete** at E_016. |
 | Groups A, B, C, D, M, NP, QG, R, S, T | complete or closed; catalogue in `Docs/AuditIndex.md`. |

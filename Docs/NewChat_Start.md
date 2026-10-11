@@ -29,7 +29,7 @@ gauge structure and cosmology are **downstream realizations**, not primitives.
    reversal (23 channels against 0), and no observable reads the dispersion at high wavenumber.
    Detail: [Archive Part 3](Archive/NewChat_Part3_QM.md) · [QM_007](ResearchY/QM_ManyBody/ResearchY-QM_007.md) …
    [QM_011](ResearchY/QM_ManyBody/ResearchY-QM_011.md).
-2. **The time sector (group G, G_068-G_089).** The theory's unique time prediction is the surface redshift
+2. **The time sector (group G, G_068-G_090).** The theory's unique time prediction is the surface redshift
    **1 + z = exp(−x)** against GR's **(1 + 2x)^(−1/2)**, differing at **second order**, and it is **decidable by one
    measurement on one object** (J0740+6620). The sector's own audits then showed that the *law* is not forced by
    anything that survives: the clock's form, its source and the substrate's connectivity are **inputs**, and
@@ -212,7 +212,7 @@ Ranked weakest first. Each is an input the theory consumes rather than derives:
    (the link structure, the component count, the kernel's curvature), and the general result is that **the unobservable
    controls are exactly the conserved inputs** — so **among the controls nothing is actuatable**, while every actuatable
    quantity is one the observables read: the required operation (changing a conserved input, or a parameter of the law)
-   is **stated as a requirement** ([G_089](ResearchY/G_GravitySource/ResearchY-G_089.md)).
+   is **stated as a requirement** ([G_089](ResearchY/G_GravitySource/ResearchY-G_089.md)). **And the mechanism that would surpass it has been derived** (G_090): on a connected substrate the transports span **all 95** conserving changes, so a conserving density change **is** a redistribution; of the **ten** candidate mechanisms **eight are functions of the distribution** (so acting through them *is* moving mass), **one is impossible by the clock's arity**, and **one has no actuator** — and the oscillation family's net effect is **zero by averaging** (the summed modulation is **0.0**), while the sector has **no energy functional** for the density at all ([G_090](ResearchY/G_GravitySource/ResearchY-G_090.md)).
 3. **The empty cell.** Every G_078 bound is conditional on a cell being allowed to be empty, and **no surviving datum
    probes that regime**: [G_078](ResearchY/G_GravitySource/ResearchY-G_078.md).
 4. **The density-to-potential map.** The metric's exponential and the rate's power are the **same statement**, and
@@ -277,8 +277,14 @@ theory's own count transfer, with the required operation stated as a requirement
    the number **by precision only** (**|c| = 0.89**, G_087's veto from the other side). **So the classification
    applies: `KernelDimension` is EMPIRICALLY UNDECIDABLE within the surviving sector** — the mathematical separation is
    real and named, the measurement is absent; a reading of the clock law's **curvature** or a **drift whose rate the
-   theory fixes** would reverse it. The questions the chain answered (**is connectivity an input?**, **what sets the
-   component count?**, **is the continuity law physics or bookkeeping?**) are recorded in
+   theory fixes** would reverse it. **And G_090 derived the mechanism for direct density control without ordinary mass
+   movement:** the transports span **all 95** conserving changes on a connected substrate, so a conserving density
+   change **is** a redistribution; of the **ten** candidate mechanisms **eight are functions of the distribution**,
+   **one is impossible by the clock's arity** and **one has no actuator**; the oscillation family's net effect is **zero
+   by averaging** (the summed modulation is **0.0**); and the sector has **no energy functional** for the density. **The
+   requirement for a channel that would survive is precise: a NON-DIVERGENCE operation, an actuator for a CONSERVED
+   INPUT, or one for a PARAMETER OF THE LAW.** The questions the chain answered (**is connectivity an input?**, **what
+   sets the component count?**, **is the continuity law physics or bookkeeping?**) are recorded in
    [NewChat_OpenProblems.md](NewChat_OpenProblems.md).
 
 Full statements, the working hypothesis they sit under, and the reclassified (solved) problems:

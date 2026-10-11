@@ -744,6 +744,13 @@ public static class TemporalIndependenceAudit
             + "the metric content is the clock alone. NOT symbol-detectable: the suite names no B, g_rr or GammaOf — its "
             + "words are channels, actuators, controls and pathways",
             ScanDetectsIt: false),
+        // G_090: whether the density can be controlled directly, and what mechanism it would require
+        new SectorClaim("Y_G_090", "Direct Density Control", MetricRequirement.ClockOnly,
+            "the audit assumes direct density control exists and derives the actuator's minimum property: its vocabulary "
+            + "is the density, the kernel, the divergence's image and complement, the ledger's pricing and the candidate "
+            + "mechanisms, so the metric content is the clock alone. NOT symbol-detectable: the suite names no B, g_rr or "
+            + "GammaOf — its words are candidates, pumps, averaging and requirements",
+            ScanDetectsIt: false),
     };
 
     // ── The computed classification summaries ───────────────────────────────
