@@ -7432,3 +7432,60 @@ with-substrate 24, comment-only 6; `Y_G_035` 87 -> **88** with survives 73 -> **
 chapter, a Research News entry and a suite-table row; AT.Book gained the registry object. **The chain has reached data,
 and the data cannot answer it:** the kernel's dimension needs a sub-half-per-cent surface redshift with a far better
 compactness, or a second target - neither of which any recorded or planned capability provides.
+
+
+---
+
+### ResearchY-G_088 - Alternative Observable Audit (COMPLETE, EMPIRICALLY UNDECIDABLE - the degeneracy is structural and the one independent probe is unmeasured)
+
+**Question.** G_087 measured that the kernel's dimension is undecidable by the redshift route - the signature is second
+order in the potential and collinear with the compactness error, with a veto below |c| = 0.72. **Is there an observable
+NOT proportional to that same signature?** Seven domains are searched, preferring refutation.
+
+**1. The measure of independence (task 1).** The power of the potential in an observable's c-signature, MEASURED by
+fitting the relative signature at the surface potential (2.470E-001) and a core potential (5.365E-001, a central density
+five times the mean). Two observables are collinear - degenerate at one target - exactly when their powers agree. The
+catalogue: the surface redshift **2.00**; the acceleration (first gradient) **1.00**, NOT collinear - so **the first
+non-degenerate observable is a DERIVATIVE**, first order in the potential where the redshift's is second; the kernel's
+**second derivative 0.00**, because `d^2(ln K)/dA^2 = c` **EXACTLY** (checked to twelve decimals), so a curvature would
+read the extension directly and **nothing measures one** (its relative signature is *undefined*, having no c = 0
+baseline); the clock transport **2.00** - it telescopes into the value difference, residual **2.776E-017**, so it
+carries nothing new; the core-to-surface ratio **2.00** with a signature a factor **4.7 LARGER** and **hidden**; the
+two-target ratio **2.00**; the redshift's drift **1.00** but with a rate **no surviving datum fixes**; and the mixed
+ratio **0.00**, exactly **A/2**. **Of the 8 observables, 4 are mathematically independent and 0 are independently
+measurable.**
+
+**2. A second compactness target is not sufficient (task 3) - by a COUNT.** 1 target gives 1 equation in **2 unknowns**
+(c-error 0.296), 2 gives 2 in 3 (0.210), 3 gives 3 in 4 (0.171), 5 gives 5 in 6 (0.133), 10 gives 10 in 11 (0.094):
+rank-deficient at every count, the c-signature collinear with the free offsets, and the gain exactly the square root of
+the target count (**2.24 at five**) - not a new axis.
+
+**3. The mixed route moves the number by precision only.** The ratio of the value signature to the gradient's is exactly
+**A/2**, so (rate, gradient) at ONE target gives two equations in (c, A) - but the gradient **IS** the compactness, whose
+error already vetoes the redshift route. Its reach: a c-error of **0.296** and a three-sigma threshold near
+**|c| = 0.89**, which is **G_087's veto (0.72) recovered from the compactness side**.
+
+**4. Question 4: structural, not specific to J0740.** The powers are the same at every target tried (0.100 to 0.536) and
+the offset structure is target-independent, because the extension is a function of the potential alone and every
+measurement route in the surviving sector reduces to the surface redshift and the compactness.
+
+**5. The classification applies.** **KernelDimension is EMPIRICALLY UNDECIDABLE within the surviving sector** - and the
+audit reports both halves: the **mathematical separation is real and named** (the kernel's second derivative IS c), the
+**empirical one is absent**. A measurement of the clock law's curvature, or of a drift whose rate the theory fixes,
+would reverse the verdict.
+
+**Five defects are recorded**: the **independence criterion was incomplete and the audit's own count caught it** - the
+first version counted ONE independent axis (the acceleration route) where the conclusion needs zero, because the
+criterion was missing the question THROUGH WHAT the route is measured; the flag is now reported in the catalogue. Also:
+the verdict said the transport telescopes "EXACTLY" beside a printed residual of 2.776E-017 (the rounding of the
+logarithmic route); a power fit was asserted at four decimals where the finite-c truncation gives 2.0001; a
+**tautological assertion** in a cross-check (`x/x == 0.3`); and a PowerShell rewrite inserted **literal backtick-n
+sequences** into the C# source while adding a field, breaking the build.
+
+**Status.** COMPLETE. Tests `Y_G_088_Tests` **10/10**. Core `AT.Core/ResearchXH/AlternativeObservableAudit.cs`; doc
+`Docs/ResearchY/G_GravitySource/ResearchY-G_088.md`. Registry: added as **Derived** (`alternative-observable-audit`).
+**Group-G count guards bumped:** `Y_G_033` without 56 -> **57** (this suite names no substrate token anywhere),
+with-substrate 24, comment-only 6; `Y_G_035` 88 -> **89** with survives 74 -> **75**. AT.App gained a Theory Book
+chapter, a Research News entry and a suite-table row; AT.Book gained the registry object. **The chain's measurement
+question is now closed in the negative at every route the surviving sector offers**, and the two routes that would
+reverse it are named.

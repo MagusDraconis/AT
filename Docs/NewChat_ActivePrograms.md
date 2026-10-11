@@ -18,7 +18,7 @@ D_028/D_040 is standard: a **value** may be DERIVED while the **window or input*
 
 | Front | State |
 |---|---|
-| Group G — gravity source | **at G_087** (kernel discriminability: the kernel's dimension is undecidable at every recorded and planned capability, with a compactness-error veto below \|c\| = 0.72 — the chain has reached data and the data cannot answer it). The chain G_068-G_087 closed the time sector, weighed the core, collapsed its two maps to one and then measured that the restored second function is beyond reach. |
+| Group G — gravity source | **at G_088** (alternative observables: seven domains searched, and no route free of the redshift's degeneracy — the one mathematically independent probe, the kernel's curvature, is exactly `c` and unmeasured). The chain G_068-G_088 closed the time sector, weighed the core, collapsed its two maps to one, and then showed the restoration is undecidable by every available route. |
 | Group QM — many-body correspondence | **closed** at QM_011 (the spectral fingerprint is an input, not a law). |
 | Group E — electromagnetism | **complete** at E_016. |
 | Groups A, B, C, D, M, NP, QG, R, S, T | complete or closed; catalogue in `Docs/AuditIndex.md`. |

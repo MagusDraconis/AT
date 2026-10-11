@@ -49,11 +49,23 @@ Audit catalogue: `Docs/AuditIndex.md`.
      **0.7** for a direct 1 % surface-redshift measurement, and **below |c| = 0.72 the recorded compactness error alone
      vetoes the decision at any redshift precision** (a unit extension mimics **16.65 %** of compactness against the
      recorded **3.661 %** error). The most sensitive probe is the **AT/GR comparison itself** (**3.109E-001** per unit
-     `c`), since its own value is already second order. **So the open question is a measurement that does not yet
-     exist:** a surface redshift better than about **half a per cent** at the target with a compactness known far better
-     than it is — or a **second target at a different compactness**, which would break the degeneracy. Referee test: a
-     signature larger than the separation (an extension of order ten or more), a precision an order of magnitude beyond
-     the recorded classes, or a second target.
+     `c`), since its own value is already second order. **And G_088 searched seven domains for an observable not
+     degenerate with the redshift and refuted every one:** of **8** observables across higher derivatives, tidal
+     effects, clock transport, compact-object profiles, multi-compactness comparisons, dynamics and mixed
+     gravity/clock, **4 are mathematically independent — the measure being the POWER of the potential (the rate 2, a
+     first gradient 1, and the kernel's second derivative 0 because `d²(ln K)/dA² = c` EXACTLY) — and 0 are
+     independently measurable**, because the derivative route *is* the compactness whose error vetoes the redshift, the
+     interior's **×4.7** larger signature is **hidden**, the transport **telescopes** into the value difference
+     (residual **2.776E-017**), and the drift's rate is **unfixed**. **A second target is not sufficient, by a count**
+     (`N` equations in `N + 1` unknowns; the gain only `√N`, **2.24** at five), and the mixed route separates the
+     unknowns **by precision alone** (**|c| = 0.89**, which is G_087's veto from the compactness side). **So the
+     classification applies: `KernelDimension` is EMPIRICALLY UNDECIDABLE within the surviving sector** — the
+     mathematical separation is real and named, the measurement is absent. **The open question is therefore a
+     measurement that does not exist:** a reading of the clock law's **curvature** (which would read `c` directly) or a
+     **drift whose rate the theory fixes** would reverse the verdict; alternatively a surface redshift better than about
+     **half a per cent** with a far better compactness, or a **second target with an independently measured
+     compactness**. Referee test: a non-collinear observable that is measurable and not routed through the compactness,
+     a signature larger than the separation, or an independent compactness for a second target.
 
   G_080 also **answered** the question that previously stood here ("is connectivity a consequence of the theory or an
   input to it?"): **an input**, at the level of the allowed primitives, with both alternatives (derived, emergent)

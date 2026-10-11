@@ -29,7 +29,7 @@ gauge structure and cosmology are **downstream realizations**, not primitives.
    reversal (23 channels against 0), and no observable reads the dispersion at high wavenumber.
    Detail: [Archive Part 3](Archive/NewChat_Part3_QM.md) · [QM_007](ResearchY/QM_ManyBody/ResearchY-QM_007.md) …
    [QM_011](ResearchY/QM_ManyBody/ResearchY-QM_011.md).
-2. **The time sector (group G, G_068-G_087).** The theory's unique time prediction is the surface redshift
+2. **The time sector (group G, G_068-G_088).** The theory's unique time prediction is the surface redshift
    **1 + z = exp(−x)** against GR's **(1 + 2x)^(−1/2)**, differing at **second order**, and it is **decidable by one
    measurement on one object** (J0740+6620). The sector's own audits then showed that the *law* is not forced by
    anything that survives: the clock's form, its source and the substrate's connectivity are **inputs**, and
@@ -197,7 +197,15 @@ Ranked weakest first. Each is an input the theory consumes rather than derives:
    factor **10.8 below** the effect the programme is already chasing — the smallest extension any recorded instrument
    class could detect at 3σ is **|c| = 4.6** (current) to **0.7** (a direct 1 % surface redshift), and **below
    |c| = 0.72 the compactness error alone vetoes the decision at any redshift precision**
-   ([G_087](ResearchY/G_GravitySource/ResearchY-G_087.md)).
+   ([G_087](ResearchY/G_GravitySource/ResearchY-G_087.md)). **And no alternative observable escapes it** (G_088): of
+   **8** observables across **seven domains** (higher derivatives, tidal effects, clock transport, compact-object
+   profiles, multi-compactness, dynamics, mixed gravity/clock) **4 are mathematically independent of the redshift** —
+   the measure being the **power of the potential**, with the rate at 2, a first gradient at 1, and the kernel's
+   **second derivative at 0 because it IS `c` exactly** — and **0 are independently measurable**: the derivative route
+   *is* the compactness, the interior's **×4.7** larger signature is hidden, the transport telescopes (residual
+   **2.776E-017**), and the drift's rate is unfixed. A second target gives `N` equations in `N + 1` unknowns (gain only
+   `√N`), and the mixed route reaches **|c| = 0.89**, G_087's veto recovered from the compactness side
+   ([G_088](ResearchY/G_GravitySource/ResearchY-G_088.md)).
 3. **The empty cell.** Every G_078 bound is conditional on a cell being allowed to be empty, and **no surviving datum
    probes that regime**: [G_078](ResearchY/G_GravitySource/ResearchY-G_078.md).
 4. **The density-to-potential map.** The metric's exponential and the rate's power are the **same statement**, and
@@ -217,14 +225,16 @@ Ranked weakest first. Each is an input the theory consumes rather than derives:
 
 ## 4. Open Problems
 
-Four questions. The first three are the sector's own; the fourth follows the chain G_080-G_087, whose seven
+Four questions. The first three are the sector's own; the fourth follows the chain G_080-G_088, whose eight
 successive questions (**is connectivity an input?**, **what sets the component count?**, **is the continuity law
 physics or bookkeeping?**, **what is the smallest theory that reproduces everything?**, **which parts of its two maps
 are observable?**, **can the kernel be reduced to one function?**, **can any measurement decide how many functions the
-kernel needs?**) were each **answered** — **an input**, **nothing the theory contains and a gauge for everything
-local**, **a coordinate choice**, **one state variable and three equations with 0 observable loss**, **the rate field
-and the source field with one gauge, two units and one undetermined physical parameter**, **one function of the density
-conditional on the clock law being exponential**, and **no — not at any recorded or planned capability**.
+kernel needs?**, **is any other observable free of the same degeneracy?**) were each **answered** — **an input**,
+**nothing the theory contains and a gauge for everything local**, **a coordinate choice**, **one state variable and
+three equations with 0 observable loss**, **the rate field and the source field with one gauge, two units and one
+undetermined physical parameter**, **one function of the density conditional on the clock law being exponential**,
+**no — not at any recorded or planned capability**, and **no — the degeneracy is structural and the one independent
+probe (the kernel's curvature, which is `c` exactly) is unmeasured**.
 
 1. Does any observable read the **lattice dispersion inside the band**? QM_011's verdict is conditional on "no"; if
    one does, the fold's position becomes observable.
@@ -249,8 +259,19 @@ conditional on the clock law being exponential**, and **no — not at any record
    surface redshift better than about **half a per cent** at the target *with a far better compactness*, or a **second
    target at a different compactness** to break the degeneracy. Referee test: a signature larger than the separation (an
    extension of order ten or more), a precision an order of magnitude beyond the recorded classes, or a second target.
-   The questions the chain answered (**is connectivity an input?**, **what sets the component count?**, **is the
-   continuity law physics or bookkeeping?**) are recorded in [NewChat_OpenProblems.md](NewChat_OpenProblems.md).
+   **And G_088 searched seven domains for an observable not degenerate with the redshift, and refuted every one:** of
+   **8** observables **4 are mathematically independent** — the measure is the **power of the potential**, the rate's
+   being 2, a first derivative's 1, and the kernel's **second derivative's 0 because it IS `c` exactly** — and **0 are
+   independently measurable**, because the derivative route *is* the compactness whose error vetoes the redshift, the
+   interior's **×4.7** larger signature is hidden, the clock transport telescopes into the value difference (residual
+   **2.776E-017**), and the drift's rate is fixed by no surviving datum. **A second target is not sufficient by a
+   count** (`N` equations in `N + 1` unknowns, gain only **`√N`**), and the mixed (redshift, compactness) route moves
+   the number **by precision only** (**|c| = 0.89**, G_087's veto from the other side). **So the classification
+   applies: `KernelDimension` is EMPIRICALLY UNDECIDABLE within the surviving sector** — the mathematical separation is
+   real and named, the measurement is absent; a reading of the clock law's **curvature** or a **drift whose rate the
+   theory fixes** would reverse it. The questions the chain answered (**is connectivity an input?**, **what sets the
+   component count?**, **is the continuity law physics or bookkeeping?**) are recorded in
+   [NewChat_OpenProblems.md](NewChat_OpenProblems.md).
 
 Full statements, the working hypothesis they sit under, and the reclassified (solved) problems:
 [NewChat_OpenProblems.md](NewChat_OpenProblems.md).

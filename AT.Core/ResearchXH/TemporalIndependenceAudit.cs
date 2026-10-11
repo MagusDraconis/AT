@@ -730,6 +730,13 @@ public static class TemporalIndependenceAudit
             + "is the clock alone. NOT symbol-detectable: the suite names no B, g_rr or GammaOf — its words are "
             + "signatures, thresholds, vetoes and degeneracies",
             ScanDetectsIt: false),
+        // G_088: whether any alternative observable escapes the same degeneracy
+        new SectorClaim("Y_G_088", "Alternative Observables", MetricRequirement.ClockOnly,
+            "the audit searches seven domains for an observable not collinear with the redshift signature: its "
+            + "vocabulary is the kernel, the powers of the potential, the compactness and the instrument routes, so the "
+            + "metric content is the clock alone. NOT symbol-detectable: the suite names no B, g_rr or GammaOf — its "
+            + "words are powers, collinearity, reachability and equation counts",
+            ScanDetectsIt: false),
     };
 
     // ── The computed classification summaries ───────────────────────────────
