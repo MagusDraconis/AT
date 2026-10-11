@@ -29,15 +29,17 @@ gauge structure and cosmology are **downstream realizations**, not primitives.
    reversal (23 channels against 0), and no observable reads the dispersion at high wavenumber.
    Detail: [Archive Part 3](Archive/NewChat_Part3_QM.md) · [QM_007](ResearchY/QM_ManyBody/ResearchY-QM_007.md) …
    [QM_011](ResearchY/QM_ManyBody/ResearchY-QM_011.md).
-2. **The time sector (group G, G_068-G_082).** The theory's unique time prediction is the surface redshift
+2. **The time sector (group G, G_068-G_083).** The theory's unique time prediction is the surface redshift
    **1 + z = exp(−x)** against GR's **(1 + 2x)^(−1/2)**, differing at **second order**, and it is **decidable by one
    measurement on one object** (J0740+6620). The sector's own audits then showed that the *law* is not forced by
    anything that survives: the clock's form, its source and the substrate's connectivity are **inputs**, and
    redistribution is the only elementary channel — G_081 measured what connectivity costs (**6 of 29** claims, the
-   transport layer) and G_082 classified the component count it acts through as **gauge-like** (**0** local observables
-   read it).
+   transport layer), G_082 classified the component count it acts through as **gauge-like** (**0** local observables
+   read it), and G_083 closed the chain by classifying the **continuity law itself** as a **coordinate choice**:
+   **exact**, **falsifiable** (its ledger is a live source-detector) and required by **no observable**
+   (**0 of 29** claims need a flux value).
    Detail: [Archive Part 2](Archive/NewChat_Part2_Gravity.md) · [G_072](ResearchY/G_GravitySource/ResearchY-G_072.md) …
-   [G_082](ResearchY/G_GravitySource/ResearchY-G_082.md).
+   [G_083](ResearchY/G_GravitySource/ResearchY-G_083.md).
 
 **The boundary is the theory's real content.** Five canonical inputs (R_001) plus three structural boundaries
 (QG_008/009/011); the deepest single boundary is the **discreteness of the actualization tick**. The weakest of the
@@ -166,7 +168,12 @@ Ranked weakest first. Each is an input the theory consumes rather than derives:
    local** (G_082): **0** observables read it, changing it changes the local read shape by **0** and every ratio by
    **0**, and the only local quantity that moves under normalization is a **uniform shift** (`c^(−1/d)`) that no
    observable reads — so `c = 1` is a **coordinate choice for 23 of 29 claims** and a physical statement for the 6 in
-   the transport layer: [G_082](ResearchY/G_GravitySource/ResearchY-G_082.md).
+   the transport layer: [G_082](ResearchY/G_GravitySource/ResearchY-G_082.md). **And the transport layer's own law is
+   bookkeeping** (G_083): the continuity equation is **exact**, **carried by no observable** (**0 of 29** claims need a
+   flux value; removing the layer changes **0 of 4** recomputed quantities, conservation becoming **vacuous** rather
+   than violated) and its **failure core is empty in observables** (**0** observable, **3** structural) — so it is a
+   **coordinate choice**, whose one assertion beyond count conservation is the **absence of sources**, detected but not
+   required: [G_083](ResearchY/G_GravitySource/ResearchY-G_083.md).
 3. **The empty cell.** Every G_078 bound is conditional on a cell being allowed to be empty, and **no surviving datum
    probes that regime**: [G_078](ResearchY/G_GravitySource/ResearchY-G_078.md).
 4. **The density-to-potential map.** The metric's exponential and the rate's power are the **same statement**, and
@@ -186,8 +193,10 @@ Ranked weakest first. Each is an input the theory consumes rather than derives:
 
 ## 4. Open Problems
 
-Four questions. The first three are the sector's own; the fourth is new with G_080, which **answered** the question
-that previously stood here ("is connectivity a consequence of the theory, or an input to it?") with **an input**.
+Four questions. The first three are the sector's own; the fourth follows the chain G_080-G_083, whose three
+successive questions (**is connectivity an input?**, **what sets the component count?**, **is the continuity law
+physics or bookkeeping?**) were each **answered** — **an input**, **nothing the theory contains and a gauge for
+everything local**, and **a coordinate choice**.
 
 1. Does any observable read the **lattice dispersion inside the band**? QM_011's verdict is conditional on "no"; if
    one does, the fold's position becomes observable.
@@ -196,9 +205,14 @@ that previously stood here ("is connectivity a consequence of the theory, or an 
    reaches the second order.
 3. **May a cell be empty?** Every [G_078](ResearchY/G_GravitySource/ResearchY-G_078.md) bound is conditional on it,
    and no surviving datum probes the regime.
-4. **What sets the component count?** The theory **conserves** it and never sets it
-   ([G_080](ResearchY/G_GravitySource/ResearchY-G_080.md)); the open question is whether any principle fixes `c = 1`,
-   or only the canonical single-ring initial condition.
+4. **Does anything in the theory require the transport picture?** G_083 classified the continuity law as a
+   **coordinate choice** whose only content beyond count conservation is the **absence of sources** — detected by the
+   ledger (its residual becomes exactly the source) but **required by nothing**. Either something in the state or the
+   update class **selects** the source-free, connected case, or the sector's clock, redshift and acceleration are
+   carried entirely by the **occupation** and the transport vocabulary is a description of a description. The referee
+   test is sharp: any measurement not expressible in the occupation alone refutes G_083, and any state needing a source
+   refutes the premise. The answered questions it follows (**what sets the component count**, **is the continuity law
+   physics or bookkeeping**) are recorded in [NewChat_OpenProblems.md](NewChat_OpenProblems.md).
 
 Full statements, the working hypothesis they sit under, and the reclassified (solved) problems:
 [NewChat_OpenProblems.md](NewChat_OpenProblems.md).

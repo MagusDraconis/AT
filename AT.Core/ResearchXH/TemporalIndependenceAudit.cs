@@ -694,6 +694,14 @@ public static class TemporalIndependenceAudit
             + "the link set of the union - so the metric content is the clock alone. NOT symbol-detectable: the suite names "
             + "no B, g_rr or GammaOf — its vocabulary is shapes, ratios, levels and gauges",
             ScanDetectsIt: false),
+        // G_083: whether the continuity equation is part of the physics or of the coordinate choice
+        new SectorClaim("Y_G_083", "Continuity Gauge", MetricRequirement.ClockOnly,
+            "the audit asks whether the continuity equation is physics or bookkeeping, and every quantity it measures is a "
+            + "property of the occupancy and of the flux of the class: the readouts with the flux present, displaced and "
+            + "absent, the divergence and its circulation, and the ledger's residual - so the metric content is the clock "
+            + "alone. NOT symbol-detectable: the suite names no B, g_rr or GammaOf — its vocabulary is flux orbits, "
+            + "bookkeepings, detectors and gauges",
+            ScanDetectsIt: false),
     };
 
     // ── The computed classification summaries ───────────────────────────────

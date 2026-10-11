@@ -23,9 +23,22 @@ Audit catalogue: `Docs/AuditIndex.md`.
      is a **uniform shift** (`c^(−1/d)`) that no observable reads — so `c = 1` is a **coordinate choice for 23 of 29
      claims (0.793)** and a physical statement for the **6** in the transport layer. By the stated rule — every local
      observable is `c`-invariant — **`c` is unphysical**, with one disclosed exception: a **global** reachability test
-     can read it. **The open question this leaves is not about `c` but about the transport layer:** the six claims that
-     need `c = 1` are exactly the claims G_079's continuity law added — so **is the continuity law part of the theory or
-     of the coordinate choice?**
+     can read it. **The question this handed on was "is the continuity law part of the theory or of the coordinate
+     choice?", and G_083 answered it: COORDINATE CHOICE** — see below.
+  5. **Does anything in the theory require the transport picture?** G_083 classified the continuity law as
+     **COORDINATE CHOICE**: it is **exact** (**3 of 3** operators of the class reconstruct with residual **0**, so it is
+     not an effective law), it is **carried by no observable** (**0 of 29** claims need a flux value; **23** need the
+     occupation only and the **6** that need more need the operator's **structure**, i.e. the **assumed** connectivity),
+     and **removing the transport layer changes 0 of 4** recomputed quantities, with conservation becoming **vacuous**
+     rather than violated. It is also **not a gauge fixing**: it does not remove a freedom — the circulation survives it
+     with **nullity 1** on every ring size — so it **carries** a gauge. `FailureCore(continuity)` is **empty in
+     observables** (**0** observable, **3** structural). Its one assertion beyond count conservation is the **absence of
+     sources**, and what it supplies for that is a **detector**, not a measurement: the ledger residual becomes **exactly
+     the source**. **So the open question is whether anything requires the source-free, connected case at all** — either
+     something in the state or the update class **selects** it (in which case the transport layer is derived after all
+     and G_080-G_083 are superseded), or the clock, redshift and acceleration are carried entirely by the **occupation**
+     and the transport vocabulary is a description of a description. Referee test: **any measurement not expressible in
+     the occupation alone refutes G_083; any state whose evolution requires a source refutes the source-free premise.**
 
   G_080 also **answered** the question that previously stood here ("is connectivity a consequence of the theory or an
   input to it?"): **an input**, at the level of the allowed primitives, with both alternatives (derived, emergent)

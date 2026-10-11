@@ -7075,3 +7075,68 @@ the audit's own vocabulary being **GLOBAL INPUT**. **Group-G count guards bumped
 suite-table row; AT.Book gained the registry object. The open question handed on is **what sets the component count** -
 now with a price: six claims and two defects.
 
+
+
+---
+
+### ResearchY-G_083 - Continuity Gauge Audit (COMPLETE, COORDINATE CHOICE - the law is exact, falsifiable and required by no observable)
+
+**Question.** G_079 derived the continuity law `d_t rho + div J = 0` for the surviving update class and showed its
+equivalence with count conservation needs the substrate's **connectivity**; G_080 classified that connectivity as
+**ASSUMED**; G_081 measured that only **6 of 29** claims depend on it, all in the transport layer; G_082 classified the
+component count as **GAUGE-LIKE**. **Is the continuity equation part of the PHYSICS or part of the COORDINATE
+CHOICE?** Allowed: Difference, Actualization, the generation relation, count conservation. Forbidden: assuming
+connectedness, fixing `c = 1`, importing topology, **adding source terms**.
+
+**0. The instrument (a three-way comparison, not a with/without).** A with/without comparison is worthless on its own,
+because the law's own bookkeeping appears in both. So the flux is carried through every readout in **three** forms -
+**present**, **displaced along its gauge orbit**, **absent** - and the four readouts are the clock rate, the potential,
+the gradient (acceleration) and the inter-site redshift, all computed from one state (the uniform 24-cell occupation)
+through the same calls.
+
+**1. The re-expression is exact (task 1).** All four readouts agree **to the last bit** in all three descriptions
+(difference `0.000E+000`), and **0** observables read a flux (G_079's own measurement, re-run). The displacement is the
+**circulation**, not a constant, and its divergence-invariance is re-verified in integer arithmetic on **every ring
+size** (4, 8, 16, 48, 96): maximum divergence change **0**, **nullity 1** in all of them.
+
+**2. The flux requirement census (task 2).** The 29 surviving claims are run through G_081's own dependency map:
+**0 require a flux value**, **23 need the occupation only**, and the **6** that need more need the operator's
+**structure** - a rank (`n - c`), a nullity, a free-mode count, a reachability - which is connectivity, an **input**.
+The census is cross-checked rather than asserted: the two groups are **exactly** `CoreWithoutConnectivity()` and
+`FailureCore()`.
+
+**3. The transport layer removed (task 3).** **0 of 4** quantities changes - clock, redshift and acceleration are
+identical to the last bit, and count conservation becomes **VACUOUS rather than violated**, because there is no
+evolution left for it to govern. `PhysicalVersusBookkeeping()` separates the two sides directly: physical difference
+`0.000E+000` in **all 4** comparisons, bookkeeping difference non-zero in **3 of 4** (flux **5.000**, source **0.030**),
+and the row that moves nothing is the removal itself.
+
+**4. The equivalence classes (task 4).** **3** explicit classes - the flux's **gauge orbit**, the **source-annotated**
+bookkeeping of the same history, and **two histories reaching the same final state** - each with observable difference
+`0.000E+000` against a non-zero bookkeeping difference.
+
+**5. The classification (task 6).** **COORDINATE CHOICE**, with the other three candidates each refuted by a number:
+not a **PHYSICAL LAW** (**0** flux readers, **0 of 29** claims needing a flux value); not an **EFFECTIVE LAW** (it is
+**EXACT**: **3 of 3** operators of the class reconstruct with residual **0** - no regime boundary); not a **GAUGE
+FIXING** (it does not **remove** a freedom - the circulation survives it with **nullity 1** everywhere, so the law
+**carries** a gauge). `Classify()` computes the verdict from those predicates, so no literal reaches it.
+
+**6. FailureCore(continuity) (task 7).** **0 observable** claims fail, against **3 structural** ones: the divergence
+identity, the flux's gauge, and the **ledger** - which is a **detector**, not a measurement (its residual becomes
+**exactly the source**, 0.030 for 0.03). That is the honest limit of the verdict: the law's one assertion beyond count
+conservation is the **absence of sources**, and it is **falsifiable** without being **required**.
+
+**Six defects are recorded**: a **comparison count printed as a physical count** (asserted 2 bookkeeping-moving
+comparisons, measured 3 - the G_081 class); the conservation row's legitimately-zero difference reported **without the
+word VACUOUS**, which would have been true and misleading; a census that could have been a **restatement** of G_081
+(now cross-checked against its two groups); a displacement first chosen as an **arbitrary constant** rather than the
+circulation, which would have made the orbit a property of the audit; a classification that initially carried the
+verdict as **text**; and a "two histories" class that initially compared **two identical objects** - a vacuous
+self-comparison that would have passed forever.
+
+**Status.** COMPLETE. Tests `Y_G_083_Tests` **10/10**. Core `AT.Core/ResearchXH/ContinuityGaugeAudit.cs`; doc
+`Docs/ResearchY/G_GravitySource/ResearchY-G_083.md`. Registry: added as **Boundary** (`continuity-gauge-audit`), the
+audit's own vocabulary being **COORDINATE CHOICE**. **Group-G count guards bumped:** `Y_G_033` 52 -> **53** and
+`Y_G_035` 83 -> **84** with survives 69 -> **70**. AT.App gained a Theory Book chapter, a Research News entry and a
+suite-table row; AT.Book gained the registry object. The open question handed on is **whether anything in the theory
+requires the transport picture** - or whether the absence of sources is an untestable premise.
