@@ -4396,3 +4396,167 @@ dimension, information dimension, attractor dimension.
 Registry: added as **ClockOnly -> SURVIVES**, `ScanDetectsIt: false`; counts become **32/11/3 of 46**. No
 reclassification. G_033's live classifier now reads **27** substrate suites (44 classified in total).
 Tests: `Y_G_045_Tests` 7/7; group G 350/350.
+
+---
+
+## Frontier status snapshot at 2026-09-17 (carried over verbatim from the project-memory file)
+
+The summary the project-memory file carried at the close of the G_068-G_080 and QM_007-QM_011 sequence. Kept here
+because the state file now states the current status in compact form and links here instead of repeating it.
+
+## Status of the two research frontiers closed in this sequence (2026-09-17)
+
+**The spectral fingerprint (group QM, QM_007 - QM_011).** The native six-shell spectrum is an **input** to the theory
+rather than a consequence of a law (QM_007: the recorded trace **1152 = 2 x 6 x 96** fixes the shell count and the
+**45 levels** fix which six - **exactly 1 of 63** subsets reproduces the record). It is **operative**: indispensable
+for the numbers AT quotes and dispensable for the relations it states (QM_008: **5 UNCHANGED + 5 BOUNDARY +
+2 REFUTED** of twelve conclusions). **No prediction fails without it** (QM_009), it carries **numerical realisation
+and not physical content** (QM_010: **3 CORE + 5 FINGERPRINT + 0 ARTEFACT**), and **no genuinely physical
+consequence requires it** (QM_011: **0 observables** require the native spectrum, out of a repo inventory of 11 that
+names no spectral object). **The one physical difference it does make is the dispersion fold's group-velocity
+reversal (23 channels against 0), and no observable reads the dispersion at high wavenumber.**
+
+**The time sector (group G, G_068 - G_079).** The theory's unique time prediction is the surface redshift
+**1 + z = exp(-x)** against GR's **(1 + 2x)^(-1/2)**, differing at **second order**. It is **decidable by one
+measurement on one object** (G_072): the redshift of **J0740+6620** to **14.1422 % (3 sigma)** or **7.5524 %
+(5 sigma)**, reached by a **next-generation timing** capability at **4.1374 sigma**, with a **direct surface-redshift
+measurement** to 1 % at **44.8377 sigma**. **The leverage is the timing, not the mass** (the published row and the
+radio-timing row both fail). And the clock law's **form** is decidable by the same programme (G_074): the logarithmic
+candidate shifts the redshift by **+4.784E-002**, a third of the AT-vs-GR separation of **1.256E-001**.
+**AND THE SURVIVING CONSTRAINT LIST DOES NOT FORCE THE LAW (G_075, REFUTED).** Assume only the **weak-field solar
+redshift**, **GPS time dilation**, the **first-order agreement with GR** and the surviving **G_035 clock-only sector**,
+with **no conformal-optics argument** and **no spatial-sector derivation**: what is forced is a **form and two
+numbers** - g00 = -F(x) with F positive and monotone in the clock potential alone, **F(0) = 1** and **F'(0) = 2** -
+and **nothing above the first order**, because **no realised measurement reaches it** (the solar row resolves **0**
+orders beyond the first and so does the GPS row, so the solar redshift would have to improve by **~4 711x** in F''(0)
+to see the AT-vs-GR difference of **4**). The **maximal family is F = 1 + 2x + x^2 G(x) with G arbitrary**, its
+**J0740+6620 prediction is bounded below (1.142288) and NOT bounded above (2.266E+013)**, and **it contains GR's own
+clock law** - so the surviving sector cannot separate the two theories the programme was built to decide between. The
+part of **g00 = -exp(2x)** the surviving sector forces is **exactly the part AT shares with GR**, and uniqueness is
+restorable only at a measured price: the single structural constraint **multiplicativity**, which admits exactly **1**
+of the 9 laws.
+**AND NO STRUCTURAL ROUTE FROM THE ALLOWED SOURCES SELECTS THE LAW EITHER (G_076, REFUTED - STRUCTURALLY
+UNDERDETERMINED).** Of the **10 allowed sources** turned into functional equations - **composition of successive
+redshifts**, **synchronization consistency**, **path independence**, **group properties**, **conservation laws**,
+**locality**, the **actualization-density reading**, **multiplicativity** and **operational clock transport** - **3 are
+NON-SELECTIVE** (locality, synchronization transitivity and count conservation each give **13 of 13 survivors at a
+spread of 0.000E+000**, because the family is by construction a function of the potential alone), **1 is REFUTED** (the
+actualization rule "all subsystems must advance" makes the rate the **minimum** of the parts while the occupancy
+multiplies, contradicting the recorded rate by **6.046E-002**, while the **product** rule reproduces it exactly),
+**5 are PARTIAL** and **1 SELECTS UNIQUELY - and that one is the CONJUNCTION of the composition law with the pinned
+measurement**, so it selects by **assuming** the composition law. The **four rows that do any work have the SAME ZERO
+SET** (the list is **one equation in four languages**), the composition law **alone** leaves **exp(kx)** with a free
+constant, **approximate multiplicativity leaves an interval** (at 1e-3: **|c| ≤ 4.871E-003**), a **viable mesh
+interpolant satisfies every mesh composition exactly** while differing between the points, and the **subgroup witness is
+unbounded near the vacuum** (**F = 2.411E-031 at x = -3.589E-004**) so **regularity**, not the composition law, closes
+it. **The cost from the infinite family to one law is THREE primitives - multiplicativity, regularity and a fixed map -
+and none of the three is derived by any surviving result.**
+**AND THE CLOCK HAS NO SOURCE OF ITS OWN EITHER (G_077, REFUTED): the source side of the same gap.** Starting only from
+the surviving primitives, the **minimal object that changes a clock rate is ONE SCALAR** - the local occupancy: of the
+sector's **6 temporal observables**, **5 take the occupancy** and **1 its derived potential**, and **0 take anything
+else**. The **response ranks** are the sharpest measurement - the **clock rate reads 9 of 9 directions** while the
+**acceleration reads 8 and is blind to the uniform one** - and the **redshift is a ratio of rates for an arbitrary
+monotone law** (**1 + z = W(A_s)/W(A_o)**), which the audit derives **without any clock law**, the exponential being
+**one member among others** in the corpus. The **decisive measurement is F-free**: the surviving source law makes the
+acceleration the gradient of the **same** potential, so the **clock offset and the acceleration integral share their
+zero set for every law** - while their **ratio**, the mean logarithmic derivative, is **not fixed**. The clock is
+**manipulable, but only through the density** (measurably: the same perturbation moves the rate and the acceleration),
+**count conservation makes the source a transport**, and the **boundary question splits in three**: a clock offset with
+**no LOCAL acceleration is permitted** (the shell measures it), one with **no observable redshift is permitted only if
+the total count may change - which count conservation forbids** - and one with **no acceleration on any path is
+refuted**. **So time control is not impossible; it is not separate: time engineering is gravity engineering.**
+**AND THE SHARED SOURCE CAN BE MOVED BUT NOT MADE (G_078, REFUTED - and the audit refutes its own headline).**
+Starting only from **actualization, density transport, count conservation and causal structure** (new fields,
+imported matter sectors and imported field equations excluded): **NO SOURCE TERM IS SUPPLIED**, because every natural
+operator of the update class is a **DIVERGENCE** and leaks **0.000E+000** of the count on a closed ring while a
+deliberately non-divergent **control** leaks **8.166E+000** - so the detector works and the class contains no source,
+which makes a source term an **import**: **absent, not excluded**. **THE UPLIFT CAP IS ROBUST AND THE CONTRAST CAP IS
+NOT.** Positivity caps concentration at the total, so on the canonical lattice the maximum uplift is **1.5214** in the
+potential, **4.5789** in the rate and **20.9659** in the metric magnitude if everything is concentrated, against
+**1.5249 / 4.5947 / 21.1113** for a **one-unit floor plus surplus** - the two readings agree to **2.270E-003
+relative**, so the cap is a property of positivity rather than of the reading - and the uplift is **logarithmic** in
+the count, each **e^3 = 20.09x** of count adding exactly **1.0** (so enhancement is expensive: **20 000x** the count
+per unit of potential). **But the asymmetry the audit first claimed does not survive**: under a **unit floor** the
+maximum contrast between a well and a hill of the **same count** is **4.5947 - the same number as the uplift cap - so
+the uplift/depression asymmetry VANISHES**, and it exists **only if an EMPTY CELL is admitted**, where the contrast is
+**unbounded** (**1.260E+002** at a well occupancy of **1.000E-006** with the total held fixed) and the reason is
+**A = (1/d) ln rho diverging rather than anything the count does**. **A BOUNDED REGION CAN NEVER CHANGE ALONE**: the
+change inside a region **equals minus its net boundary flux to 4.857E-017 over 8 cells with 0 exceptions**, so the
+compensation is **compulsory** and only its **location** is free. **AND THE TWO SIGNATURES DO NOT DECOUPLE**: every
+**gravitational** manipulation carries a clock signature - **9 clock laws x 4 depths, 0 counterexamples**, because an
+acceleration change needs a **gradient of the occupancy** and the clock is a **strictly monotone readout** of it - and
+every **clock** manipulation carries a gravitational signature too, with **exactly one exception**, the **UNIFORM**
+direction, which moves every clock by **6.623E-003** and the acceleration by **0.000E+000** while changing the **total
+count by 1.920E+000** - and **count conservation forbids exactly that move**. **The reachable clock contrast is a
+factor of a few under a floor, and the one channel that would have separated time from gravity is the channel the
+theory closes.**
+**AND THE CONTINUITY LAW IS DERIVED ON THE SUBSTRATE, WITH ONE PREMISE IT CANNOT SUPPLY FOR ITSELF (G_079, BOUNDARY).**
+Asked whether **∂tρ + ∇·J = 0** is forced, the audit proves it for the surviving class **in exact integer
+arithmetic**: every conserving operator **is** a divergence, with its flux written down (`J_i = ρ[i]`,
+`2J_i = ρ[i+1] + ρ[i]`, `J_i = ρ[i+1] − ρ[i]`), reconstructed by prefix sums and verified at **residual 0**, while
+the non-divergent **control fails** the membership test - so the criterion is **live** rather than vacuous. **The flux
+is a gauge:** `rank = n − 1` and **nullity 1 on every ring size** (4, 8, 16, 48, 96), so the flux is fixed only up to
+**one circulation** - and that circulation is **unobservable**, since **0 of 6** temporal observables read a flux.
+**But conservation does NOT imply continuity, and the counterexample is a cut:** on a connected ring the zero-sum
+subspace **is** the image (**8 of 8** conserving witnesses are transports); on a substrate of c components the image
+requires **each component's sum** to vanish, so a **transfer across the cut** conserves the total and **is not any
+flux** - a **source/sink pair** (**2 of 10** witnesses on two rings, **4 of 12** on four). So the equivalence rests on
+**connectivity**, and the audit states plainly that it does **not** derive that premise. **A source could be added
+without breaking a single surviving measurement** - the pinned rows constrain the **map from state to observables**
+(**9 of 9** laws carry the pinned slope) and not the dynamics - and the sector supplies a **detector** rather than a
+prohibition: the **ledger residual equals the source exactly** (**0.030** for a source of `0.03`), so the identity is
+**falsifiable**. **The observables need one mode the flux cannot supply:** the kernel of the divergence is the
+**uniform mode**, so ratios and differences (the **redshift** and the **acceleration**) are determined and the
+**absolute clock rate is not** - and the **conserved total** fixes exactly that mode on a connected substrate (**0**
+free modes) while a **disconnected** one leaves **c − 1 relative levels** free that no measurement can reach. **So a
+source-free conserved theory does limit manipulation to redistribution - conditionally.** The open question handed on:
+**is connectivity a consequence of the theory or an input to it?**
+
+**The two current open questions this leaves.** (1) **Does any observable read the lattice dispersion inside the
+band?** If one does, the fold's position becomes observable and QM_011's verdict becomes conditional - it is stated
+as conditional rather than as a theorem. (2) **Can the clock law's map be derived rather than assumed?** G_073, G_074
+and G_075 all find that the form is fixed only up to the density-to-potential map, which the surviving audits take as
+an input: the metric's exponential and the rate's power are **the same statement**, G_075 measures the consequence
+(the surviving constraints force only the first order, and the family that remains contains GR), and the open question
+is therefore sharper than before: **the answer cannot come from the weak field at all**, so it must come either from a
+structural principle (**multiplicativity**, if the clock composition can be derived rather than assumed) or from the
+**compact-object measurement**, the only surviving row that reaches the second order. **G_076 closes the structural
+half of that question as far as the allowed sources go:** every source that is not the composition law is either
+satisfied by everything, refuted, or the same equation in another language, so **the clock sector is structurally
+underdetermined and the one constraint that selects presupposes the composition law it would have to derive**. The
+sector's own next question is therefore now sharply stated: **why does the clock composition multiply?** **G_078 adds a
+second, blunter question to that list: MAY A CELL BE EMPTY?** Every bound the new audit derives is **conditional** on
+it - under a unit floor the uplift and the contrast are capped by the **same** logarithmic number, and the asymmetry
+between them exists **only** if an empty cell is admissible - and **no surviving datum probes that regime**, so the
+bounds are structural statements rather than measured predictions. **G_079 adds a third: IS CONNECTIVITY A CONSEQUENCE
+OF THE THEORY OR AN INPUT TO IT? - AND G_080 ANSWERS IT: AN INPUT.** The continuity law's equivalence to count
+conservation is **measured** to rest on it - on a connected ring **8 of 8** conserving witnesses are transports, while
+on two components **2 of 10 are not** (a transfer across a cut is a **source/sink pair**) - so G_079 derives the law
+**on the canonical substrate** and explicitly does **not** derive the premise. G_080 then answers the origin question
+by measurement, under a licence that allows **Difference, Actualization, the generation relation and count
+conservation** and forbids a **graph-connectivity axiom** and an **imported topology**: every substrate is **built**
+from an explicit link set and its component count **computed** from it. **NOT DERIVED - THE FOUR ALLOWED PRIMITIVES
+ARE BLIND TO THE CUT:** adjoin a **disjoint copy** of a substrate to itself and **0 of 4** change the content of
+their certificate (the same differences `{-5,-3,1,2,3,4}`, ticks `{-6,-3,0,5,6,7}`, in-degrees `{0,1}`, component
+sums `{47}` with leak 0), while **every** global descriptor moves (components **1 -> 2**, transport rank **7 -> 14**,
+roots **1 -> 2**) - because **three of the four are LOCAL (radius one link) and the fourth is a SUM, and a sum cannot
+see which component its terms came from**. **NOT EMERGENT - THE UPDATE CLASS CONSERVES THE COMPONENT COUNT INSTEAD OF
+PRODUCING IT:** the class is written on the link set, so its Laplacian is **block diagonal** across a cut
+(**0.000E+000** weight between components against a **live control** of **4** entries joining the two halves of the
+connected ring, a partition no link set can influence), and the pair that is a **link** on the 8-cell ring and a
+**cut** on two 4-cell rings has influence **1 against 0**. **The generation relation does not repair it** - one root
+can generate **both** components (**1** generation component against **2** transport components) - **and the generative
+rule presupposes the ring**: `(i + d) mod n` never tests a link because it computes one, so on the smallest split pair
+it **manufactures the very link** whose absence froze the pair (**1** crossing link, returning **1** component where
+the substrate has **2**). **THE SMALLEST DISCONNECTED SURVIVOR IS TWO CELLS AND IT IS FROZEN:** rank **0**, no
+non-zero transport, the one non-trivial count-conserving change it admits is the **forbidden** transfer, while the
+same two cells **connected** admit **1** direction; transport capacity is `n - c` throughout, so every cut costs
+exactly one direction, and the smallest cut of the canonical substrate is **2 links or 2 cells** - **a single defect
+can never cut it**. **THE SIGNATURE IS A FROZEN, UNREADABLE OFFSET:** the per-component-uniform state is an **exact
+fixed point** (max update 0) with a potential gap of **0.270**; the smallest survivor has **no acceleration observable
+at all** (a gradient along links, and it has none); and the **redshift between components is defined and moves** with
+the free level (**-0.370 to +0.310**) while being **UNREACHABLE** - **0 links across the cut**, infinite path length,
+**0 of 6** observables reading a flux. **So the COMPONENT COUNT is a conserved integer the theory never sets, and
+G_080 adds a fourth question: WHAT SETS THE COMPONENT COUNT?**
+
+
