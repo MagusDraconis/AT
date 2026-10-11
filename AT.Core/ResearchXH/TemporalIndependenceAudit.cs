@@ -671,6 +671,14 @@ public static class TemporalIndependenceAudit
             + "NOT symbol-detectable: the suite names no B, g_rr or GammaOf — its vocabulary is divergences, images, "
             + "kernels and cuts",
             ScanDetectsIt: false),
+        // G_080: whether the substrate's connectivity is derived, emergent or an input to the theory
+        new SectorClaim("Y_G_080", "Connectivity Origin", MetricRequirement.ClockOnly,
+            "the audit asks where the substrate's connectivity comes from, and every quantity it measures is a property "
+            + "of the occupancy and of the link set: the divergence's rank, the Laplacian's block structure, the "
+            + "disjoint-union certificates of the four allowed primitives, and the reads a cut silences - so the metric "
+            + "content is the clock alone. NOT symbol-detectable: the suite names no B, g_rr or GammaOf — its "
+            + "vocabulary is components, cuts, link sets and certificates",
+            ScanDetectsIt: false),
     };
 
     // ── The computed classification summaries ───────────────────────────────

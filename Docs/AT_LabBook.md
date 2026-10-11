@@ -6868,3 +6868,76 @@ see a pole; the measurement refused it** - both checks catch the Pade pole, and 
 (`clock-law-necessity-audit`). **Group-G count guards bumped:** `Y_G_033` 43 -> **44** and `Y_G_035` 74 -> **75** with
 survives 60 -> **61**.
 
+### ResearchY-G_080 - Connectivity Origin Audit (COMPLETE, ASSUMED - connectivity is an input at the level of the primitives)
+
+**Question.** G_079 derived the continuity law for the surviving update class and proved that its equivalence with
+count conservation rests on **one premise** the law cannot supply for itself - the **connectivity** of the substrate.
+Is that connectivity **derived** from the theory's own primitives, **emergent** from the update relation, or
+**assumed** as an input? Allowed as evidence: Difference, Actualization, the generation relation, count conservation.
+Forbidden: a graph-connectivity axiom, an imported topology.
+
+**Verdict: ASSUMED - connectivity is an input at the level of the primitives, and BOTH alternatives are refuted by
+measurement.** The substrate is the 1D ring family, one ring per component, from 2 cells to the canonical 96; every
+substrate is **built** from an explicit link set, its component count is **computed** from that set by union-find, and
+only then is each allowed primitive asked whether it can see the difference.
+
+**1. NOT DERIVED - the four allowed primitives are blind to the cut.** Adjoin a **disjoint copy** of a substrate to
+itself: **0 of 4** primitives changes the content of its certificate, while **every** global descriptor does.
+
+| primitive | content on the substrate | on the disjoint union | reach |
+|---|---|---|---|
+| Difference | `{−5,−3,1,2,3,4}` | identical | **local**: one link |
+| Actualization | `{−6,−3,0,5,6,7}` | identical | **local**: one link |
+| Generation relation | `{0,1}` | identical | **local**: one generator |
+| Count conservation | `{47}` with leak 0 | identical | **global, but only a SUM** |
+
+| descriptor | substrate | union |
+|---|---|---|
+| connected components | **1** | **2** |
+| transport directions (rank of the divergence) | **7** | **14** |
+| generation roots | **1** | **2** |
+
+**Three of the four primitives are LOCAL - radius one link - and the fourth is a SUM, and a sum cannot see which
+component its terms came from.** Swept over 8 (state, decomposition) instances with 0 content changes.
+
+**2. NOT EMERGENT - the update class conserves the component count instead of producing it.** The class is written on
+the link set, so its Laplacian is **block diagonal** across a cut: the weight between different components is
+**0.000E+000** against a **live control** of **4** entries joining the two **halves** of the connected ring - a
+partition no link set can influence. The pair that is a **link** on the 8-cell ring and a **cut** on two 4-cell rings
+has influence **1 against 0**; transport capacity is `n − c` across the family (1/0 at 2 cells, 7/6/4 at 8 cells,
+95/94 at the canonical 96), so **every cut costs exactly one direction**.
+
+**3. The generation relation does not repair it, and the generative rule presupposes the ring.** One root can
+generate **both** components: **1** generation component against **2** transport components. And the actualization
+link rule is `(i + d) mod n` - arithmetic that never tests a link because it computes one - so applied to a
+disconnected substrate it **silently reconnects it**: **1** crossing link on the smallest split pair (returning **1**
+component where the substrate has **2**), **9** on two 4-cell rings, **13** on the canonical split.
+
+**4. The smallest disconnected survivor is two cells, and it is frozen.** One cell per component: transport rank
+**0**, **no non-zero transport**, and the single non-trivial count-conserving change it admits is the **forbidden**
+transfer (1 of 1 witness) - while the same two cells **connected** admit **1** direction. Exhaustive search gives the
+smallest cut of the canonical substrate as **2 links or 2 cells**, with one removal verified not to suffice: **a single
+defect can never cut it.**
+
+**5. The signature is a frozen, unreadable offset.** The per-component-uniform configuration is an **exact fixed
+point** (max update **0.000E+000**) with a potential gap of **0.270**; on the smallest survivor there is **no
+acceleration observable at all** (max **0.000E+000** over a state sweep, 0 cells reading one, against a positive
+reading on the connected pair); and the **redshift between components is defined and moves** with the free level
+(**−0.370 to +0.310**) while being **unreachable** - **0 links across the cut**, infinite path length - with **0 of 6**
+temporal observables reading a flux.
+
+**Five defects are recorded**, two of them the same class: a control that was **zero by construction** (twice - the
+"other component" of a one-component substrate, then `EntriesJoiningDifferentComponents(cells, 1)`), replaced by a
+partition no link set can influence; a smallest-cut search that counted **removed cells as components** and so
+reported a disconnection it had created; a **nonsense assertion** that would have passed vacuously; and a helper left
+behind by an edit and found by reading the file **after** the tests were green.
+
+**Status.** COMPLETE. Tests `Y_G_080_Tests` **10/10**. Core `AT.Core/ResearchXH/ConnectivityOriginAudit.cs`; doc
+`Docs/ResearchY/G_GravitySource/ResearchY-G_080.md`. Registry: added as **Boundary** (`connectivity-origin-audit`),
+with the audit's own vocabulary recorded as **ASSUMED**.
+**Group-G count guards bumped:** `Y_G_033` 49 -> **50** and `Y_G_035` 80 -> **81** with survives 66 -> **67**.
+AT.App gained a Theory Book chapter, an **updated Open Problem ("Is connectivity a consequence of the theory or an
+input to it?" - answered)**, a **new Open Problem ("What sets the component count?")**, a Research News entry and a
+suite-table row; AT.Book gained the registry object. The question G_079 handed on is answered; the question G_080
+hands on is whether any principle fixes `c = 1`.
+
