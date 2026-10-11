@@ -765,6 +765,13 @@ public static class TemporalIndependenceAudit
             + "metric content is the clock alone. NOT symbol-detectable: the suite names no B, g_rr or GammaOf — its "
             + "words are role, actuator, necessity and reach",
             ScanDetectsIt: false),
+
+        new SectorClaim("Y_G_093", "Dynamic Core Recovery", MetricRequirement.ClockOnly,
+            "the audit asks whether observable minimization removed structure needed for evolution, control or "
+            + "first-principles completion: its vocabulary is the readout set, the update relation, the transport rank, "
+            + "the operation set and the input ledger, so the metric content is the clock alone. NOT symbol-detectable: "
+            + "the suite names no B, g_rr or GammaOf — its words are core, closure, necessity and input",
+            ScanDetectsIt: false),
     };
 
     // ── The computed classification summaries ───────────────────────────────

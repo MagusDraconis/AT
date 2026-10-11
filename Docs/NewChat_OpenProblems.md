@@ -105,7 +105,27 @@ Audit catalogue: `Docs/AuditIndex.md`.
      whose **argument list** contains a link, a count, a flux or a phase — which would make one of them actuatable — or a
      measurement that decides the **kernel's second component**, the one row where **read** and **decidable** come apart.
      Referee test: an operation that writes the link set or the rule, or a surface-redshift measurement below the
-     compactness veto.
+     compactness veto. **And G_093 weighed the reduction on the four axes together** — observables, evolution, control
+     and **closure** — with the question's three rules in force (**no observable-reduction argument**, **no "not
+     measured therefore irrelevant"**, and **no assumption that the minimal core is complete**). Theory **A** (the
+     observable-minimal core) and theory **B** (the full pre-reduction theory) **differ on no measured axis**: the same
+     readouts (worst difference **0.000E+000**), the same evolution (**exactly 0.000E+000**), the same **95** reachable
+     operations and the same **7** inputs — because the flux, the conservation statement and the ledger are **implied by
+     the operations themselves** (the layer's identity holds exactly). The matrix has **four** measured columns over
+     **19** structures — observable **7**, dynamic **5**, actuator **1**, **closure 10** — with the first three **read
+     from G_092's rows** so the two audits cannot drift, removal costing closure in exactly **2** **definitional**
+     places, and **3** structures **absent**. **The search finds 3 structures** dynamically essential and observably
+     redundant, so the success criterion is met while adding no channel; and of the four paths the question names,
+     **3 are required for closure** (the memory channel, the theta chain and the unified action) and **1 is closed**
+     (mode locking, because a locked mode **is** the occupancy). **The three cores are three different sets** —
+     **7**, **5** and **10**, surpluses **1 · 1 · 3** — so the failure criterion is refuted; and **the closure
+     surplus is absent**: exactly **3** structures are required for completion while being neither observable nor
+     dynamical **nor actuatable** — **memory channels**, the **vector sector** (on the cubic substrate M_012) and the
+     **unified action** — and the theory has **none** of them. **So the open concern is answered in the negative:** the
+     reduction removed derived bookkeeping only, and what completion lacks is three structures the theory never had.
+     Referee test: a derivation of connectivity, of the map, of the clock law's shape or of the phase grid from the
+     surviving vocabulary; a measurement deciding the kernel's second component; or a demonstration that the vector
+     sector follows from the ring, which E_004 refutes by the irrep dimension.
 
   G_080 also **answered** the question that previously stood here ("is connectivity a consequence of the theory or an
   input to it?"): **an input**, at the level of the allowed primitives, with both alternatives (derived, emergent)

@@ -29,7 +29,7 @@ gauge structure and cosmology are **downstream realizations**, not primitives.
    reversal (23 channels against 0), and no observable reads the dispersion at high wavenumber.
    Detail: [Archive Part 3](Archive/NewChat_Part3_QM.md) · [QM_007](ResearchY/QM_ManyBody/ResearchY-QM_007.md) …
    [QM_011](ResearchY/QM_ManyBody/ResearchY-QM_011.md).
-2. **The time sector (group G, G_068-G_092).** The theory's unique time prediction is the surface redshift
+2. **The time sector (group G, G_068-G_093).** The theory's unique time prediction is the surface redshift
    **1 + z = exp(−x)** against GR's **(1 + 2x)^(−1/2)**, differing at **second order**, and it is **decidable by one
    measurement on one object** (J0740+6620). The sector's own audits then showed that the *law* is not forced by
    anything that survives: the clock's form, its source and the substrate's connectivity are **inputs**, and
@@ -212,7 +212,7 @@ Ranked weakest first. Each is an input the theory consumes rather than derives:
    (the link structure, the component count, the kernel's curvature), and the general result is that **the unobservable
    controls are exactly the conserved inputs** — so **among the controls nothing is actuatable**, while every actuatable
    quantity is one the observables read: the required operation (changing a conserved input, or a parameter of the law)
-   is **stated as a requirement** ([G_089](ResearchY/G_GravitySource/ResearchY-G_089.md)). **And the mechanism that would surpass it has been derived** (G_090): on a connected substrate the transports span **all 95** conserving changes, so a conserving density change **is** a redistribution; of the **ten** candidate mechanisms **eight are functions of the distribution** (so acting through them *is* moving mass), **one is impossible by the clock's arity**, and **one has no actuator** — and the oscillation family's net effect is **zero by averaging** (the summed modulation is **0.0**), while the sector has **no energy functional** for the density at all ([G_090](ResearchY/G_GravitySource/ResearchY-G_090.md)). **And its price for CONTROL is now measured too** (G_092): of **17** structures the reduction removed or demoted, **7** are observable, **5** dynamical and **1** actuatable, and the columns come apart in **both** directions — but **no structure is actuatable and unobservable**, the one settable structure being the **state** the readouts already read, while the link set and the operation's **own rule** are **preconditions** that can only **take reach away** (`n − c`): [G_092](ResearchY/G_GravitySource/ResearchY-G_092.md).
+   is **stated as a requirement** ([G_089](ResearchY/G_GravitySource/ResearchY-G_089.md)). **And the mechanism that would surpass it has been derived** (G_090): on a connected substrate the transports span **all 95** conserving changes, so a conserving density change **is** a redistribution; of the **ten** candidate mechanisms **eight are functions of the distribution** (so acting through them *is* moving mass), **one is impossible by the clock's arity**, and **one has no actuator** — and the oscillation family's net effect is **zero by averaging** (the summed modulation is **0.0**), while the sector has **no energy functional** for the density at all ([G_090](ResearchY/G_GravitySource/ResearchY-G_090.md)). **And its price for CONTROL is now measured too** (G_092): of **17** structures the reduction removed or demoted, **7** are observable, **5** dynamical and **1** actuatable, and the columns come apart in **both** directions — but **no structure is actuatable and unobservable**, the one settable structure being the **state** the readouts already read, while the link set and the operation's **own rule** are **preconditions** that can only **take reach away** (`n − c`): [G_092](ResearchY/G_GravitySource/ResearchY-G_092.md). **And on the four axes together the reduction has now been weighed** (G_093): theory **A** (the observable-minimal core) and theory **B** (the full pre-reduction theory) **differ on no measured axis** — the same readouts (worst difference **0.000E+000**), the same evolution (**exactly 0.000E+000**), the same **95** operations and the same **7** inputs — while the three cores are **three different sets** (observable **7**, dynamic **5**, closure **10**, surpluses **1·1·3**), so the reduction removed **derived bookkeeping only**; and what is required for closure while being **neither observable nor dynamical** is exactly **three structures the theory never had** — a memory channel for the kernel's free coefficient, the **vector sector** (on the cubic substrate) and the **unified action**: [G_093](ResearchY/G_GravitySource/ResearchY-G_093.md).
 3. **The empty cell.** Every G_078 bound is conditional on a cell being allowed to be empty, and **no surviving datum
    probes that regime**: [G_078](ResearchY/G_GravitySource/ResearchY-G_078.md).
 4. **The density-to-potential map.** The metric's exponential and the rate's power are the **same statement**, and
@@ -232,20 +232,22 @@ Ranked weakest first. Each is an input the theory consumes rather than derives:
 
 ## 4. Open Problems
 
-Four questions. The first three are the sector's own; the fourth follows the chain G_080-G_092, whose eleven
+Four questions. The first three are the sector's own; the fourth follows the chain G_080-G_093, whose twelve
 successive questions (**is connectivity an input?**, **what sets the component count?**, **is the continuity law
 physics or bookkeeping?**, **what is the smallest theory that reproduces everything?**, **which parts of its two maps
 are observable?**, **can the kernel be reduced to one function?**, **can any measurement decide how many functions the
 kernel needs?**, **is any other observable free of the same degeneracy?**, **assuming manipulation is possible, which
 channel would permit it?**, **can a parameter of the law be actuated?**, **did anything the reduction removed remain
-necessary for control?**) were each **answered** — **an input**; **nothing the theory contains, and a gauge for
-everything local**; **a coordinate choice**; **one state variable and three equations with 0 observable loss**; **the
+necessary for control?**, **did the reduction remove anything needed for evolution, control or completion?**) were each
+**answered** — **an input**; **nothing the theory contains, and a gauge for everything local**; **a coordinate
+choice**; **one state variable and three equations with 0 observable loss**; **the
 rate field and the source field, with one gauge, two units and one undetermined physical parameter**; **one function of
 the density, conditional on the clock law being exponential**; **no — not at any recorded or planned capability**;
 **no — the degeneracy is structural and the one independent probe is unmeasured**; **one actuatable channel, the
 theory's own count transfer, with the required operation stated as a requirement**; **no — the curvature is a
-parameter of the law**; and **no — the actuatable set is a subset of the observable core, and the full pre-reduction
-theory adds nothing**.
+parameter of the law**; **no — the actuatable set is a subset of the observable core, and the full pre-reduction
+theory adds nothing**; and **no — the reduction moved none of the four axes, and what the three cores do not share is
+three structures the theory never had**.
 
 1. Does any observable read the **lattice dispersion inside the band**? QM_011's verdict is conditional on "no"; if
    one does, the fold's position becomes observable.
@@ -299,7 +301,17 @@ theory adds nothing**.
    **preconditions** (**control needs three and can set one**), the full pre-reduction theory adds **0** actuatable
    channels, and the three structures that move the evolution without moving a readout can only **take reach away**
    (`n − c`: **95/95**, **94/95**, **92/95** at `c = 1, 2, 4`) — so there is no invisible actuator, only an invisible
-   **rule** whose effect is always visible ([G_092](ResearchY/G_GravitySource/ResearchY-G_092.md)).** The
+   **rule** whose effect is always visible ([G_092](ResearchY/G_GravitySource/ResearchY-G_092.md)). **And the reduction
+   has now been weighed on four axes at once** (G_093): theory **A** (the observable-minimal core) and theory **B** (the
+   full pre-reduction theory) **differ on no measured axis** — the same readouts (worst difference **0.000E+000**), the
+   same evolution (**exactly 0.000E+000**), the same **95** reachable operations and the same **7** inputs — because what
+   the reduction dropped (the flux, the conservation statement, the ledger) is **implied by the operations themselves**;
+   and the three cores are **three different sets** — observable **7**, dynamic **5**, **closure 10**, with surpluses
+   **1 · 1 · 3** — so **no two coincide**. **And the closure surplus is absent:** exactly **3** structures are required
+   for completion while being neither observable nor dynamical — a **memory channel** carrying the kernel's free
+   coefficient, the **vector sector** (which needs the cubic substrate) and the **unified action** (the join of the
+   substrates) — and the theory has **none** of them, so the reduction **neither created nor closed** a gap
+   ([G_093](ResearchY/G_GravitySource/ResearchY-G_093.md)).** The
    questions the chain answered (**is connectivity an input?**, **what sets the component count?**, **is the continuity
    law physics or bookkeeping?**) are recorded in [NewChat_OpenProblems.md](NewChat_OpenProblems.md).
 

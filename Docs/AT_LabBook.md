@@ -7763,3 +7763,69 @@ with-substrate 24, comment-only 6; `Y_G_035` 92 -> **93** with survives 78 -> **
 chapter, a Research News entry and a suite-table row; AT.Book gained the registry object. **The reduction chain's
 control side is now closed**: there is no structure that is actuatable and unobservable, and the one structure
 required for control and not read is the operation's own rule.
+
+### ResearchY-G_093 - Dynamic Core Recovery Audit (COMPLETE, NOTHING NECESSARY WAS REMOVED, AND NOTHING ABSENT WAS CLOSED)
+
+**Question.** G_084-G_091 reduced the observable sector to `rho -> K(rho)` and G_092 found no invisible
+actuator. The concern neither tested is that an observable minimization may have removed structure the
+OBSERVABLES never needed: structure required for the **evolution**, for **control**, or for first-principles
+**completion**. Three rules forbid the easy answers - no observable-reduction argument, no "not measured
+therefore irrelevant", and **no assumption that the minimal core is complete**. Prefer refutation: success
+would be a structure dynamically essential and observably redundant; failure would be that the observable,
+dynamic and closure cores coincide.
+
+**1. Two theories, four axes (tasks 1 and 2).** A = the observable-minimal core, B = the full pre-reduction
+theory, both built from the chain's own factories. They **differ on no measured axis**: the same readouts
+(worst difference **0.000E+000**), the same evolution (residual **exactly 0.000E+000** - the update takes the
+state and the links, and the reduction leaves both untouched), the same **95** reachable operations (the class
+belongs to the substrate, not the description), and the same **7** inputs. What the reduction removed - the
+flux, the conservation statement, the ledger and the transport operator's bookkeeping - is **implied by the
+operations themselves**: the layer's identity holds **exactly** (residual **0**).
+
+**2. The matrix has four measured columns** (tasks 3 and 4) over **19** structures: observable **7**, dynamic
+**5**, actuator **1**, **closure 10**. The first three are **read from G_092's rows** rather than restated, so
+the two audits cannot drift apart. The closure column is **measured**: a structure is closure-necessary when
+the surviving vocabulary does not determine it - connectivity (4 of 4 certificates unchanged by a cut, and a
+cut silences the acceleration read), the count (read by 0 observables, changed by 0 operations), the map (an
+input by G_075/G_076), the clock law's shape (5 free-room members fit the pinned data), the curvature
+(signature 1.166E-002 against a 1.256E-001 separation), the phase grid (the interference term moves while the
+density is fixed), and the absent memory channel, vector sector and unified action. Removal costs closure in
+exactly **2** places, both **definitional** (the rule and the conservation statement), and the reduction
+performed neither: it removed their bookkeeping, and the class still has its 95 operations.
+
+**3. The search (task 5) finds 3 structures** that are dynamically essential and observably redundant - the
+component count, density topology and the operation's own rule - the same set G_092 found. So the **success
+criterion is MET**; what is not added is a **channel**, since none is actuatable and the reach effect is
+restrictive (`n - c` can only fall: 95/95, 94/95, 92/95).
+
+**4. The first-principles gap audit (task 6)** judges the four named paths by one criterion: the
+**memory-channel path** is REQUIRED (the only carrier for the kernel's free coefficient, whose coupling is
+exactly 0.0) and absent; the **mode-locking path** is NOT (a locked mode **is** the occupancy, renamed); the
+**theta chain** is REQUIRED (the phase grid is not determined by the density); the **unified action** is
+REQUIRED and ABSENT (E_004: the Lorentz vector's parts come from 2 different substrates). **3 of 4 open.**
+
+**5. The three cores (tasks 7 and 8) are three different sets** - ObservableCore **7**, DynamicCore **5**,
+ClosureCore **10** - three different numbers, and each holds members the other two do not (surpluses **1**,
+**1**, **3**), so the **failure criterion is REFUTED** by containment as well as by size. **And the closure
+surplus is absent:** exactly **3** structures are required for completion while being neither observable, nor
+dynamical, nor actuatable - **memory channels**, the **vector sector** (which lives on the cubic substrate)
+and the **unified action** (the join of the substrates) - and the theory has **none** of them.
+
+**Four defects are recorded.** The **core-surplus formula reported the whole core**: it computed
+`core \ (union \ core)`, which returns all 7 observable structures instead of the members held **alone**, and
+would have made "no two coincide" rest on the dimensions alone; it is now derived from the three sets directly
+(1, 1, 3). A **ratio was read in the wrong direction**: the curvature's witness asserted
+`AgainstTheSeparation().Ratio < 1` while that ratio is **separation / signature**, so the undecidable case is
+`> 1` (measured 10.8). **The absence of three structures could have been hidden as inertness**, since the
+prompt forbids exactly that; `PresentInTheTheory` is therefore a third column, and the whole closure surplus is
+marked present **no**. And a **first draft made removal the definition of closure**, which would have emptied
+the column and lost the distinction between a structure that **is** an input and one that **defines** an object;
+both are now measured, and they disagree in exactly the two definitional rows.
+
+**Status.** COMPLETE. Tests `Y_G_093_Tests` **9/9**. Core `AT.Core/ResearchXH/DynamicCoreRecoveryAudit.cs`; doc
+`Docs/ResearchY/G_GravitySource/ResearchY-G_093.md`. Registry: added as **Derived** (`dynamic-core-recovery-audit`).
+**Group-G count guards bumped:** `Y_G_033` without 61 -> **62** (this suite names no substrate token anywhere),
+with-substrate 24, comment-only 6; `Y_G_035` 93 -> **94** with survives 79 -> **80**. AT.App gained a Theory Book
+chapter, a Research News entry and a suite-table row; AT.Book gained the registry object. **The reduction chain
+is now closed on all four axes** - observables, evolution, control and closure - where the first three axes were
+already closed by G_084 and G_092, and the closure axis is closed in the negative: the gaps were already open.
