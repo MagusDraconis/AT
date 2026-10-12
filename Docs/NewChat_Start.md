@@ -29,7 +29,7 @@ gauge structure and cosmology are **downstream realizations**, not primitives.
    reversal (23 channels against 0), and no observable reads the dispersion at high wavenumber.
    Detail: [Archive Part 3](Archive/NewChat_Part3_QM.md) · [QM_007](ResearchY/QM_ManyBody/ResearchY-QM_007.md) …
    [QM_011](ResearchY/QM_ManyBody/ResearchY-QM_011.md).
-2. **The time sector (group G, G_068-G_100).** The theory's unique time prediction is the surface redshift
+2. **The time sector (group G, G_068-G_101).** The theory's unique time prediction is the surface redshift
    **1 + z = exp(−x)** against GR's **(1 + 2x)^(−1/2)**, differing at **second order**, and it is **decidable by one
    measurement on one object** (J0740+6620). The sector's own audits then showed that the *law* is not forced by
    anything that survives: the clock's form, its source and the substrate's connectivity are **inputs**, and
@@ -41,23 +41,25 @@ gauge structure and cosmology are **downstream realizations**, not primitives.
    left**: the **minimal core is one state variable and three equations**, reproducing **8 of 8** readouts with
    **0** observable loss at **CoreCompressionRatio 2.667** — and the cost is **6 dissolved claims and 0 refutations**.
    Five further audits took the reduction to its floor and asked what the floor **means**: the observable kernel
-   collapsed to **one function** (G_086) and its restoration (G_087) and every alternative observable (G_088) turned
-   out **undecidable**; the manipulation thread closed (G_089–G_091) — one actuatable channel whose candidates all
-   collapse to ordinary mass redistribution, with **kernel curvature** the single survivor at a coupling of
-   **exactly 0.0**; every removed structure was reweighed (G_092–G_094) and **no invisible actuator** exists, closure
-   being **purely internal** except for the **memory coefficient**, which remains **free** (G_095);
+   collapsed to **one function** (G_086) with its restoration (G_087) and every alternative observable (G_088) left
+   **undecidable**; the manipulation thread closed (G_089–G_091) — one actuatable channel whose candidates all
+   collapse to ordinary mass redistribution, with **kernel curvature** the single survivor at **exactly 0.0**; the
+   removals were reweighed (G_092–G_094) with **no invisible actuator**, closure being **purely internal** except for
+   the **memory coefficient**, left **free** (G_095);
    **multiplicativity** is **ASSUMED, not derived** (G_096: a **47-dimensional** family, six surviving constraints
-   removing **0**); motion is **EMERGENT** but its kinematics is **ASSUMED** (G_097: **diffusion**, centroid shift
+   removing **0**); motion is **EMERGENT**, its kinematics **ASSUMED** (G_097: **diffusion**, centroid shift
    **exactly zero**, **48! = 10^61.094** histories identical); the structure does not even **represent** a direction
-   (G_098); and orientation is **derived as a FIELD** but **not as a HANDEDNESS** (G_099: the state is **parity-even to
-   the rounding**, the chirality account is **0 bit source by source**, and one added bit buys **no observable**).
+   (G_098); orientation is **derived as a FIELD**, not as a **HANDEDNESS** (G_099: the state **parity-even to the
+   rounding**, the chirality account **0 bit**).
    G_100 then asked whether that field **acts**: **DECOUPLED** — **0** independent degrees of freedom (its partition
-   has dimension **1**, and that dimension is the count's **scale**), **max |dT/dO| = 5.334E-013** over a
-   **seven-member** sweep (zero at the **1e-12** rule, the numerator being the rounding of a first moment that vanishes
-   **by summation by parts**), the two orientations **bit-identical in all 8 readouts** at their **own mirrored
-   sites** — so the field is **CORRELATED with the update and CONNECTED to nothing**.
+   having dimension **1**, the count's **scale**), **max |dT/dO| = 5.334E-013** over a **seven-member** sweep, and the
+   two orientations **bit-identical in all 8 readouts** at their **own mirrored sites**. G_101 then counted the state
+   space: **ONE DEGREE OF FREEDOM** — **96** components, **95** moved and **1** conserved, **4** of **11** state-like
+   quantities **invertible reparametrisations** and **6** functionals, one structure family entering the evolution
+   (the **link set**, an input), and a reduction to the state alone costing **0** observables, **0** evolution and
+   **0** control.
    Detail: [Archive Part 2](Archive/NewChat_Part2_Gravity.md) · [G_072](ResearchY/G_GravitySource/ResearchY-G_072.md) …
-   [G_100](ResearchY/G_GravitySource/ResearchY-G_100.md).
+   [G_101](ResearchY/G_GravitySource/ResearchY-G_101.md).
 
 **The boundary is the theory's real content.** Five canonical inputs (R_001) plus three structural boundaries
 (QG_008/009/011); the deepest single boundary is the **discreteness of the actualization tick**. The weakest of the
@@ -223,12 +225,9 @@ Ranked weakest first. Each is an input the theory consumes rather than derives:
    (the link structure, the component count, the kernel's curvature), and the general result is that **the unobservable
    controls are exactly the conserved inputs** — so **among the controls nothing is actuatable**, while every actuatable
    quantity is one the observables read: the required operation (changing a conserved input, or a parameter of the law)
-   is **stated as a requirement** ([G_089](ResearchY/G_GravitySource/ResearchY-G_089.md)). **And the mechanism that would surpass it has been derived** (G_090): on a connected substrate the transports span **all 95** conserving changes, so a conserving density change **is** a redistribution; of the **ten** candidate mechanisms **eight are functions of the distribution** (so acting through them *is* moving mass), **one is impossible by the clock's arity**, and **one has no actuator** — and the oscillation family's net effect is **zero by averaging** (the summed modulation is **0.0**), while the sector has **no energy functional** for the density at all ([G_090](ResearchY/G_GravitySource/ResearchY-G_090.md)). **And its price for CONTROL is now measured too** (G_092): of **17** structures the reduction removed or demoted, **7** are observable, **5** dynamical and **1** actuatable, and the columns come apart in **both** directions — but **no structure is actuatable and unobservable**, the one settable structure being the **state** the readouts already read, while the link set and the operation's **own rule** are **preconditions** that can only **take reach away** (`n − c`): [G_092](ResearchY/G_GravitySource/ResearchY-G_092.md). **And on the four axes together the reduction has now been weighed** (G_093): theory **A** (the observable-minimal core) and theory **B** (the full pre-reduction theory) **differ on no measured axis** — the same readouts (worst difference **0.000E+000**), the same evolution (**exactly 0.000E+000**), the same **95** operations and the same **7** inputs — while the three cores are **three different sets** (observable **7**, dynamic **5**, closure **10**, surpluses **1·1·3**), so the reduction removed **derived bookkeeping only**; and what is required for closure while being **neither observable nor dynamical** is exactly **three structures the theory never had** — a memory channel for the kernel's free coefficient, the **vector sector** (on the cubic substrate) and the **unified action**: [G_093](ResearchY/G_GravitySource/ResearchY-G_093.md).
-3. **The empty cell.** Every G_078 bound is conditional on a cell being allowed to be empty, and **no surviving datum
-   probes that regime**: [G_078](ResearchY/G_GravitySource/ResearchY-G_078.md).
-4. **The density-to-potential map.** The metric's exponential and the rate's power are the **same statement**, and
-   the map is taken as an input: [G_073](ResearchY/G_GravitySource/ResearchY-G_073.md),
-   [G_074](ResearchY/G_GravitySource/ResearchY-G_074.md).
+   is **stated as a requirement** ([G_089](ResearchY/G_GravitySource/ResearchY-G_089.md)). **And the mechanism that would surpass it has been derived** (G_090): on a connected substrate the transports span **all 95** conserving changes, so a conserving density change **is** a redistribution; of the **ten** candidate mechanisms **eight are functions of the distribution** (so acting through them *is* moving mass), **one is impossible by the clock's arity**, and **one has no actuator** — and the oscillation family's net effect is **zero by averaging** (the summed modulation is **0.0**), while the sector has **no energy functional** for the density at all ([G_090](ResearchY/G_GravitySource/ResearchY-G_090.md)). **And its price for CONTROL is now measured too** (G_092): of **17** structures the reduction removed or demoted, **7** are observable, **5** dynamical and **1** actuatable, and the columns come apart in **both** directions — but **no structure is actuatable and unobservable**, the one settable structure being the **state** the readouts already read, while the link set and the operation's **own rule** are **preconditions** that can only **take reach away** (`n − c`): [G_092](ResearchY/G_GravitySource/ResearchY-G_092.md). **And the four axes together were weighed** (G_093): theory **A** and theory **B** **differ on no measured axis**, while the three cores are **three different sets** (observable **7**, dynamic **5**, closure **10** — surpluses **1·1·3**): [G_093](ResearchY/G_GravitySource/ResearchY-G_093.md).
+3. **The empty cell.** Every G_078 bound is conditional on a cell allowed to be empty, and **no surviving datum probes that regime**: [G_078](ResearchY/G_GravitySource/ResearchY-G_078.md).
+4. **The density-to-potential map.** The metric's exponential and the rate's power are the **same statement**, taken as an input: [G_073](ResearchY/G_GravitySource/ResearchY-G_073.md), [G_074](ResearchY/G_GravitySource/ResearchY-G_074.md).
 5. **The five canonical inputs (R_001).** {Difference, η}, {Z2-paired sector}, {3 octave families},
    {SU(2) gauge + j = 1/2}, {v, m_e}.
 6. **The three structural boundaries (QG_008/009/011).** Finite N (only the uniform-reference information observable

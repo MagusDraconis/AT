@@ -823,6 +823,13 @@ public static class TemporalIndependenceAudit
             + "the update, so the metric content is the clock alone. NOT symbol-detectable: the suite names no B, g_rr or "
             + "GammaOf — its words are coupling, sensitivity, reversal, partition and transport",
             ScanDetectsIt: false),
+
+        new SectorClaim("Y_G_101", "State Degrees of Freedom", MetricRequirement.ClockOnly,
+            "the audit asks how many independent dynamical degrees of freedom the state space has: its vocabulary is the "
+            + "Jacobian rank of each surviving quantity against the occupation, the symbol spectrum's multiplicities and "
+            + "the partition of the state's directions, so the metric content is the clock alone. NOT symbol-detectable: "
+            + "the suite names no B, g_rr or GammaOf — its words are rank, kernel, Jacobian, coordinate and multiplicities",
+            ScanDetectsIt: false),
     };
 
     // ── The computed classification summaries ───────────────────────────────

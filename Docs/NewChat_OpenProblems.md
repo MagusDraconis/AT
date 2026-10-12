@@ -248,7 +248,29 @@ Audit catalogue: `Docs/AuditIndex.md`.
    CONNECTED to nothing**, and removing the orientation costs **2 observables, 0 law objects and 0 transport
    quantities**. Referee test: a **state-dependent law** (an update that takes the field as an argument), a **transport
    quantity with a non-zero numerator** on some member of the family, a **parity leak** in the update, or an
-   **observable that reads the flux**.
+   **observable that reads the flux**. **And G_101 counted the state space itself** — the one question the whole chain
+   had left — and the instrument is deliberately unglamorous: **the Jacobian of each surviving quantity against the
+   state, with the tolerance written down**, because a rank is only a dimension when it does not move with the rule it
+   was taken at (G_096). **The answer requires three counts that are easy to conflate, and the audit keeps them
+   apart:** **96** COMPONENTS, **95** MOVING directions (the dynamics' rank) and **1** CONSERVED direction (the uniform
+   mode, whose symbol is **exactly 0.0**) — with **ONE INDEPENDENT STATE COORDINATE**. **Of 11 state-like quantities,
+   1 IS the state, 4 are INVERTIBLE REPARAMETRISATIONS** with full rank **96** and kernel **0** — the potential
+   `A = (1/d) ln ρ`, the rate kernel `K`, `g00 = −ρ^(2/d)` and the clock rate `ρ^(1/d)`, every one a strictly monotone
+   cell-by-cell map whose inverse is **closed form**, so **a change of variable cannot add a degree of freedom** — **and
+   6 are functionals with a kernel**: **1** for every operator that differences (the constant, i.e. the count's
+   **SCALE** — the very direction G_100's partition lost), **95** for the total count, and **92** for the readouts,
+   which see only **4** directions of **96** (G_086's kernel collapse, as a rank). **The rank is flat across nine
+   decades of tolerance** because the band's edges are the **spectrum's own magnitudes** (**4.282154E-003**), not the
+   rule. **And the removal test agrees:** of **10** structures removed one at a time, **exactly one family — the link
+   set — enters the evolution** (residuals **1.200E+000** for a cut and **2.569E-003** for complete removal), and the
+   three maps supply **12 readout-losses over three parts** while moving **no** update. **Rebuilding the whole sector
+   from the state alone costs 0 observables, 0.000E+000 of evolution and 0 control** (the reach unchanged at **95**,
+   the one actuatable structure being the state). **So the answer is ONE DEGREE OF FREEDOM — the sector is a FIELD, not
+   a collection of fields** — and the audit reports **beside it** the description's **6** independent inputs, of which
+   **1** is a state coordinate and **5** are not (the tick, the step, the law's coefficient — the free room, **5**
+   members — the link set and the labelling), so that "one degree of freedom" is not misread as "a self-contained
+   theory". Referee test: a quantity that is **not** a function of the occupation, a **second field** the readouts
+   depend on, or a **structure that enters the evolution and is not an input**.
 
   G_080 also **answered** the question that previously stood here ("is connectivity a consequence of the theory or an
   input to it?"): **an input**, at the level of the allowed primitives, with both alternatives (derived, emergent)

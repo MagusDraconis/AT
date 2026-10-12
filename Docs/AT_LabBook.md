@@ -8355,3 +8355,89 @@ the update and connected to nothing** — it has no independent degrees of freed
 sector does not read it, the geometry of its reversal is a relabelling, and the transport measure it would have to
 move is zero at the equality rule on **every** member of the family it parametrizes. **Directed propagation is not
 generated, and the field is carried rather than actuated.**
+---
+
+### ResearchY-G_101 - State Degrees-of-Freedom Audit (COMPLETE, ONE DEGREE OF FREEDOM)
+
+**Question.** G_097 measured that the law **diffuses** and that transport is absent; G_098 that the direction is **not
+represented**; G_099 that the orientation field is **derived and observable**; G_100 that the field is **dynamically
+decoupled with 0 independent degrees of freedom**. This audit asks the question that leaves standing — **does the
+surviving G-sector contain more than one independent dynamical degree of freedom?** — and it is about the **STATE SPACE**
+rather than about any object in it. Every count, dimension and rank names its object and is computed on the **96-cell
+ring alone**; the **cubic substrate is forbidden**; no new primitive, field, source term, topology axiom, action,
+Lagrangian, transport rule or hidden variable is introduced. A negative result is acceptable.
+
+**0. The instrument, and why it is a rank.** **The Jacobian of each surviving quantity against the state, with the
+tolerance WRITTEN DOWN**, because a rank is only a dimension when it does not move with the rule it was taken at
+(G_096). A quantity with **full rank** is an **invertible reparametrisation** and cannot add a degree of freedom; a
+quantity with a **non-trivial kernel** is a functional that loses directions. The audit therefore keeps three counts
+apart that are easy to conflate: **COMPONENTS**, the dynamics' **RANK**, and the number of **INDEPENDENT STATE
+COORDINATES**.
+
+**1. The state-like quantities (task 1): 11 of them, ranked.** **1** IS the state (the occupation — an **initial
+datum**, G_080, with the sector supplying no rule that fixes it); **4** are **invertible reparametrisations** with full
+rank **96** and kernel **0** — the potential `A = (1/d) ln rho`, the rate kernel `K = exp(A + lambda A^2/2)`,
+`g00 = -rho^(2/d)` and the clock rate `rho^(1/d)`, each a **strictly monotone cell-by-cell map** whose inverse is
+**closed form**, so a change of variable cannot add a degree of freedom; and **6** are **functionals with a kernel** —
+the acceleration field **95/1**, the orientation field **95/1**, the excess **95/1**, the flux's divergence **95/1**, the
+total count **1/95** and the **eight readouts 4/92** (G_086's kernel collapse, as a rank). **Every rank is flat between
+the rule and the loose end of its band**, so no classification turns on the rule.
+
+**2. The dependency table (tasks 2 and 4).** The **forward** direction is an **identity** for every row, because each
+quantity is *defined* from the state, so the informative direction is the **inverse** — and that is what the rank
+measures. The partition is **three-way** (the state **1**, the invertible reparametrisations **4**, the functionals
+**6**) and the binary split the task asks for is the **state alone**: **independent = 1**. **The kernels are the
+content**: **1** for every operator that differences — the constant, i.e. the count's **SCALE**, the same direction
+G_100's partition lost — **95** for the total count (which fixes the scale and nothing else) and **92** for the
+readouts.
+
+**3. The dynamical state-space rank (task 3), with its band.** The update is the ring's Laplacian, so its modes are the
+ring's own Fourier modes; the multiplicities are **1** at *k* = 0, **2** for the interior and **1** at the alternating
+mode, **summing to 96** (asserted, not assumed). The symbol at *k* = 0 is **exactly 0.000000E+000** and the smallest
+non-zero magnitude is **4.282154E-003**, so the rank is **95 at every tolerance from the stated rule 1e-12 up to
+1e-3** — **nine decades** — and **93 at 1e-2**, which is *above* the first non-zero magnitude. **The band's edges are
+the spectrum's own magnitudes, named rather than assumed.**
+
+**4. What the sector still needs (reported so that nothing is hidden).** **6** independent inputs: the occupation
+(**1**, the only state coordinate), the **tick** (the independent variable), the **step** (a convention with a derived
+range, G_097), the **clock law's coefficient** (G_075's free room, **5** members, left free by G_095 — a parameter of
+the **map**), the **link set** (G_080's input) and the **labelling** (a coordinate system). **Five of the six are not
+state coordinates**: a parameter or a structure indexes the **description**, and only a field indexes the **state
+space**.
+
+**5. The removal test (task 6), 10 structures one at a time.** **Exactly one structure FAMILY enters the evolution —
+the link set** — in its two forms: a two-component cut (update residual **1.200E+000**) and complete removal
+(**2.569E-003**); the other **8** parts leave the update at **exactly 0.000E+000**. The three maps supply **12
+readout-losses over three parts** (the potential map 6, the clock law 4, the gradient definition 2) and move **no**
+update; the largest movement of any readout is **1 of 8**.
+
+**6. The reduction test (task 7).** Rebuilding the whole surviving sector from the state alone (the state, the link set
+and the three maps) costs **0 observables**, **0.000E+000** of evolution and **0 control** — the reach is unchanged at
+**95** elementary directions and the **one** actuatable structure is the state itself. The operations act on the
+**state**, so removing every derived description part costs no reach.
+
+**Classification.** **SUCCESS CRITERION NOT MET** (no coordinate beyond the state); **FAILURE CRITERION MET** (every
+surviving quantity is a function of the state, measured by rank, by kernel and by removal); **THE STATE SPACE IS NOT
+TRIVIAL** — **96** components with **95** moved and **1** conserved. **FINAL VERDICT: ONE DEGREE OF FREEDOM.**
+
+**Five defects are recorded.** (1) **A rank above its own component count**: at the first draft's difference step
+`h = 1e-6` the instrument's rounding floor (~1e-16/h ≈ **1e-10**) sat **exactly on** the 1e-10 rule, so the centring
+projection — whose exact kernel is one dimensional — read rank **96** with kernel **1**, i.e. **rank + kernel = 97 >
+96**, an impossible pair; fixed by `h = 1e-4` (noise ~1e-12, truncation ~1e-8) with a **stated** Jacobian rule of 1e-8
+and an assertion that rank and kernel **partition** the components. (2) **A rank quoted without its band**; every rank
+is now reported at the rule **and** at the loose end, with flatness asserted for every row. (3) **A false "ten decades"
+claim**: the rank is 93 at 1e-2, above the smallest non-zero magnitude; the claim now names the band's edges and
+reports **nine** decades. (4) **One structure counted twice** (the link set's two forms), which made the success
+criterion read **MET**; rows are now keyed on a structure **family** — G_092's rule 12 applied to this audit's own
+bookkeeping. (5) **A sum reported as a count**: "12 readout(s)" against a sector with **8** readouts; the number is
+**12 readout-losses over three description parts**.
+
+**Status.** COMPLETE. Tests `Y_G_101_Tests` **9/9**. Core `AT.Core/ResearchXH/StateDegreesOfFreedomAudit.cs`; doc
+`Docs/ResearchY/G_GravitySource/ResearchY-G_101.md`. Registry: added as **Derived**
+(`state-degrees-of-freedom-audit`). **Group-G count guards bumped:** `Y_G_033` without 69 -> **70** (this suite names no
+substrate token anywhere), with-substrate 24, comment-only 6; `Y_G_035` 101 -> **102** with survives 87 -> **88** and
+MinimalTimeSector 87 -> **88**. AT.App gained a Theory Book chapter, a Research News entry and a suite-table row;
+AT.Book gained the registry object. **The degree-of-freedom question is now closed:** the sector is a **FIELD** — one
+state coordinate with **96** components, **95** of them moved by the law and **1** conserved — and every one of the
+other ten state-like quantities is either a change of variable that recovers the state in closed form or a many-to-one
+functional whose kernel is the scale.
