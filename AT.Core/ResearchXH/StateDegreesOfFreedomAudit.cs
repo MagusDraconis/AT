@@ -120,8 +120,17 @@ public static class StateDegreesOfFreedomAudit
     public static int Rank(double[][] vectors, double tolerance)
     {
         if (vectors.Length == 0) return 0;
-        int width = vectors[0].Length;
-        var m = vectors.Select(v => v.ToArray()).ToArray();
+        // the rows need NOT all be the same width: stacking quantities with different component counts is exactly how
+        // task 2 and task 3 measure a rank contribution, and the first draft of this helper assumed a rectangle and
+        // threw an IndexOutOfRangeException on a stacked [96-wide; 1-wide] matrix. A short row is read as zero-padded,
+        // which is the correct extension — a quantity with fewer components has zeros where the state has directions.
+        int width = vectors.Max(v => v.Length);
+        var m = vectors.Select(v =>
+        {
+            var row = new double[width];
+            Array.Copy(v, row, v.Length);
+            return row;
+        }).ToArray();
         int rank = 0;
         for (int col = 0; col < width && rank < m.Length; col++)
         {

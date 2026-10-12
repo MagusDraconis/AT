@@ -830,6 +830,14 @@ public static class TemporalIndependenceAudit
             + "the partition of the state's directions, so the metric content is the clock alone. NOT symbol-detectable: "
             + "the suite names no B, g_rr or GammaOf — its words are rank, kernel, Jacobian, coordinate and multiplicities",
             ScanDetectsIt: false),
+
+        new SectorClaim("Y_G_102", "Freedom Closure", MetricRequirement.ClockOnly,
+            "the audit asks whether the surviving sector can generate a second degree of freedom: its vocabulary is the "
+            + "stacked Jacobian rank of each surviving quantity against the occupation, the effect of an independent "
+            + "variation on the update, and the reconstruction residuals, so the metric content is the clock alone. NOT "
+            + "symbol-detectable: the suite names no B, g_rr or GammaOf — its words are stack, rank, obstruction, "
+            + "supplied and closure",
+            ScanDetectsIt: false),
     };
 
     // ── The computed classification summaries ───────────────────────────────

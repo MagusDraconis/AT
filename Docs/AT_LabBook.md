@@ -8441,3 +8441,79 @@ AT.Book gained the registry object. **The degree-of-freedom question is now clos
 state coordinate with **96** components, **95** of them moved by the law and **1** conserved — and every one of the
 other ten state-like quantities is either a change of variable that recovers the state in closed form or a many-to-one
 functional whose kernel is the scale.
+---
+
+### ResearchY-G_102 - Freedom Closure Audit (COMPLETE, CLOSED - RANK 1)
+
+**Question.** G_101 counted the state space: **96** components, **95** moving directions, **1** conserved direction and
+**ONE INDEPENDENT STATE COORDINATE**, every surviving quantity being either an invertible reparametrisation of the
+occupation or a many-to-one functional of it. This audit asks the sharper question about **generation**: **can the
+surviving G-sector generate an independent degree of freedom internally, or is the one-degree-of-freedom reduction
+exact?** Every count, dimension and rank names its object and is computed on the **96-cell ring alone**; the **cubic
+substrate is forbidden**; no new primitive, field, source term, topology axiom, action, Lagrangian or hidden variable is
+introduced. A negative result is acceptable.
+
+**0. The instrument has two arms, because two claims are in play.** A quantity that **IS** a function of the state
+**cannot add a direction**: its Jacobian has **96** columns, so **stacking** it with the state leaves the rank where it
+was. A quantity that is **NOT** a function of the state **can** be varied while the state is held fixed, and then the
+only thing that makes it a **dynamical** degree of freedom is whether the **evolution** reads it. The audit therefore
+separates what the first draft bundled: **generated internally**, **supplied to the description**, **absent**.
+
+**1. The candidate table (task 1): 16 candidates.** **6** are **FUNCTIONS** of the state — the orientation field
+**95/1**, the acceleration **95/1**, the excess **95/1**, the total count **1/95**, the flux's divergence **95/1** and
+the eight readouts **4/92**. **7** are **SUPPLIED**: the flux's circulation and the component count move the readouts
+by **0.000E+000**, the labelling by **3.680E-001** and the free room by **2.183E-002** — all four moving the update by
+**0** — while the step moves the update by **2.500E-001**, the tick by **5.000E-001** and the link set by
+**1.200E+000**. **3** are **ABSENT**: the memory channel, the vector sector and the unified action. **The three roles of
+"how the evolution sees it" are distinguished**: exactly **ONE** candidate is a structure the evolution takes as an
+**ARGUMENT** (the link set), while the step is its **COEFFICIENT** and the tick its **INDEX** — the first draft folded
+all three into one flag and reported **three** structures as read by the evolution.
+
+**2. The rank contribution and the maximum rank (tasks 2 and 3).** **13** stacked measurements, **ALL rank 96** against
+96 for the state alone — **an increase of ZERO** — and the **maximum state-space rank obtainable from all surviving
+structures together is 96**, with **5 supplied inputs** reported beside it. **The stacking works for a supplied
+structure too, and that is the audit's sharpest step:** a supplied structure has no Jacobian against the state, so what
+is stacked is its measured **effect** — and an effect is a **vector in the 96-dimensional state space**, so stacking it
+cannot raise the space's rank either. It can add a **parameter dimension to the description**, which is a different
+count. **The rank helper had to be fixed for this:** stacking a **1-wide** quantity with the state's **96-wide**
+identity threw an `IndexOutOfRangeException`; short rows are now **zero-padded**.
+
+**3. The three groups (tasks 4, 5 and 6).** The **orientation** quantities (2 members), the **observables** (1) and the
+**evolution** (1) each contribute a **max rank increase of 0**, with the evolution's **own rank 95** reported as the
+state's rank rather than as an increase.
+
+**4. The reconstruction residuals (task 7).** **4 of 11** quantities rebuild the state in **CLOSED FORM** — the
+potential (**1.388E-016**), the kernel (**2.776E-016**), g00 (**1.388E-016**) and the clock rate (**2.776E-016**). Of
+the rest, **1** is obstructed by a **SCALE** (the orientation field: ρ and 2ρ share it, residual **6.939E-017**), **1**
+by a **KERNEL DIMENSION** (the readouts, **92**), **4** by a measured **MOVEMENT** (the circulation, the labelling
+**3.680E-001**, the free room **2.183E-002**, the link set **1.200E+000**) and **1** by **ABSENCE**. **The obstruction's
+KIND is named**, because a count is not a magnitude — the first draft averaged them into **1.337E+001**, a statistic of
+nothing.
+
+**Classification.** **SUCCESS CRITERION NOT MET**; **FAILURE CRITERION MET**; the supplied inputs are reported rather
+than hidden; and the closures G_093 named remain **ABSENT**. **FINAL VERDICT: CLOSED — rank 1.**
+
+**Five defects are recorded.** (1) **A relabelling test that was the identity**: the audit reflected the *canonical*
+state, which G_099 measured to be **parity-even to the rounding**, so the reflection fixes it and the test read 0; it
+now runs on the audit's own **skewed pattern** (**3.680E-001** measured). (2) **A rank helper that assumed a
+rectangle**: stacking a **1-wide** quantity with the state's **96-wide** identity threw; short rows are now
+**zero-padded**. (3) **Three roles bundled into one flag** (ε, the tick and the link set all "read by the evolution"):
+the record now carries an **`EvolutionRole`** and exactly one structure is an argument. (4) **A count printed where a
+magnitude was meant**: the free room's readout effect printed **3.000E+000**, the *number* of readouts that move rather
+than the movement — every effect is now a magnitude and every count lives in the reading. (5) **A units mash in one
+column**: the group table put the evolution's **rank** (95) beside the other groups' **increase** (0), and the
+reconstruction table averaged a kernel dimension with displacements; both are split, with the rank in its reading and
+the obstruction carrying its **kind**.
+
+**Status.** COMPLETE. Tests `Y_G_102_Tests` **9/9**. Core `AT.Core/ResearchXH/FreedomClosureAudit.cs`; doc
+`Docs/ResearchY/G_GravitySource/ResearchY-G_102.md`. Registry: added as **Derived** (`freedom-closure-audit`).
+**Group-G count guards bumped:** `Y_G_033` without 70 -> **71** (this suite names no substrate token anywhere),
+with-substrate 24, comment-only 6; `Y_G_035` 102 -> **103** with survives 88 -> **89** and MinimalTimeSector 88 ->
+**89**. AT.App gained a Theory Book chapter, a Research News entry and a suite-table row; AT.Book gained the registry
+object. **The generation question is now closed:** nothing the surviving sector **derives** adds a direction beyond its
+one state coordinate — every functional's Jacobian stacked with the state leaves the rank unchanged, every supplied
+structure's effect is a vector **inside** the state space, exactly **one** structure is an argument of the evolution
+and it is an **input**, and the four closed-form reconstructions return the state at the rounding while every remaining
+obstruction is measured and **classified by kind**. The three closures G_093 named — the memory channel, the vector
+sector and the unified action — are **ABSENT** rather than generated, which is what keeps the verdict about the
+**surviving sector** and not about completeness.

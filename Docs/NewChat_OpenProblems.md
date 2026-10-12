@@ -270,7 +270,25 @@ Audit catalogue: `Docs/AuditIndex.md`.
    **1** is a state coordinate and **5** are not (the tick, the step, the law's coefficient — the free room, **5**
    members — the link set and the labelling), so that "one degree of freedom" is not misread as "a self-contained
    theory". Referee test: a quantity that is **not** a function of the occupation, a **second field** the readouts
-   depend on, or a **structure that enters the evolution and is not an input**.
+   depend on, or a **structure that enters the evolution and is not an input**. **And G_102 asked whether anything
+   GENERATES a second direction** — a two-armed test, because two claims are in play: a quantity that **IS** a function
+   of the state cannot add one (its Jacobian has **96** columns, so **stacking** it with the state leaves the rank
+   unchanged), and a quantity that is **NOT** can be varied with the state held fixed, where the only thing that makes
+   it dynamical is whether the **evolution** reads it. **16 candidates**: **6** functions of the state (the orientation
+   field **95/1**, the acceleration **95/1**, the excess **95/1**, the total count **1/95**, the flux's divergence
+   **95/1**, the readouts **4/92**), **7** supplied (the circulation and the component count moving the readouts by
+   **0.000E+000**, the labelling **3.680E-001**, the free room **2.183E-002** — all moving the update by **0** — while
+   the step moves it by **2.500E-001**, the tick by **5.000E-001** and the link set by **1.200E+000**) and **3**
+   **ABSENT** (the memory channel, the vector sector, the unified action). **13 stacked rank measurements all leave the
+   rank at 96** — an increase of **ZERO**, the **maximum state-space rank obtainable from all surviving structures
+   together being 96** — **because a supplied structure's effect is a VECTOR INSIDE the state space**, so it can add a
+   **parameter** dimension to the description but no state direction; and exactly **ONE** candidate is a structure the
+   evolution takes as an **ARGUMENT** (the **link set**), while the step is its **COEFFICIENT** and the tick its
+   **INDEX**. **The reconstruction agrees:** **4 of 11** quantities rebuild the state in **closed form** (worst
+   **2.776E-016**), and of the rest **1** is obstructed by a **scale**, **1** by a **kernel dimension** (**92**), **4**
+   by a measured **movement** (largest **1.200E+000**) and **1** by **absence** — the **kind named**, because a count is
+   not a magnitude. **So the verdict is CLOSED — rank 1**, and the three closures G_093 named are **ABSENT rather than
+   generated**, which keeps the verdict about the **surviving sector** and not about completeness.
 
   G_080 also **answered** the question that previously stood here ("is connectivity a consequence of the theory or an
   input to it?"): **an input**, at the level of the allowed primitives, with both alternatives (derived, emergent)

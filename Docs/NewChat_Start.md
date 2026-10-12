@@ -29,7 +29,7 @@ gauge structure and cosmology are **downstream realizations**, not primitives.
    reversal (23 channels against 0), and no observable reads the dispersion at high wavenumber.
    Detail: [Archive Part 3](Archive/NewChat_Part3_QM.md) · [QM_007](ResearchY/QM_ManyBody/ResearchY-QM_007.md) …
    [QM_011](ResearchY/QM_ManyBody/ResearchY-QM_011.md).
-2. **The time sector (group G, G_068-G_101).** The theory's unique time prediction is the surface redshift
+2. **The time sector (group G, G_068-G_102).** The theory's unique time prediction is the surface redshift
    **1 + z = exp(−x)** against GR's **(1 + 2x)^(−1/2)**, differing at **second order**, and it is **decidable by one
    measurement on one object** (J0740+6620). The sector's own audits then showed that the *law* is not forced by
    anything that survives: the clock's form, its source and the substrate's connectivity are **inputs**, and
@@ -57,9 +57,11 @@ gauge structure and cosmology are **downstream realizations**, not primitives.
    space: **ONE DEGREE OF FREEDOM** — **96** components, **95** moved and **1** conserved, **4** of **11** state-like
    quantities **invertible reparametrisations** and **6** functionals, one structure family entering the evolution
    (the **link set**, an input), and a reduction to the state alone costing **0** observables, **0** evolution and
-   **0** control.
+   **0** control. G_102 then asked whether anything **generates** a second direction: **CLOSED — rank 1** — **13**
+   stacked measurements all leave the rank at **96**, **one** candidate is an **argument** of the evolution (the
+   **link set**, supplied), and the closures G_093 named remain **ABSENT**.
    Detail: [Archive Part 2](Archive/NewChat_Part2_Gravity.md) · [G_072](ResearchY/G_GravitySource/ResearchY-G_072.md) …
-   [G_101](ResearchY/G_GravitySource/ResearchY-G_101.md).
+   [G_102](ResearchY/G_GravitySource/ResearchY-G_102.md).
 
 **The boundary is the theory's real content.** Five canonical inputs (R_001) plus three structural boundaries
 (QG_008/009/011); the deepest single boundary is the **discreteness of the actualization tick**. The weakest of the
@@ -232,8 +234,7 @@ Ranked weakest first. Each is an input the theory consumes rather than derives:
    {SU(2) gauge + j = 1/2}, {v, m_e}.
 6. **The three structural boundaries (QG_008/009/011).** Finite N (only the uniform-reference information observable
    needs it), information, and the discrete actualization tick.
-7. **N = 96.** Inevitable within the accepted structural class (period-3 seed, Z2 half-shift, three-family octave
-   window), but a global proof excluding every alternative closure is **open**.
+7. **N = 96.** Inevitable within the accepted structural class (period-3 seed, Z2 half-shift, three-family octave window), but a global proof excluding every alternative closure is **open**.
 8. **The first-peak 5/4 factor.** A documented **FIT** (QG297, removable QG289), not a mechanism; only ℓ₁ carries it.
 9. **The Bekenstein quarter.** The structure `S ∝ A` is derived, but the exact `1/4` needs the quantum factor `2π`,
    which is **imported** (QG196 impossibility proof).
